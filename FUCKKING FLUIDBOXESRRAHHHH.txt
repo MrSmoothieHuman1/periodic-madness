@@ -1,0 +1,161 @@
+
+            {
+              production_type = "input",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = -1,
+              pipe_connections = {{ type="input", position = {2.4 + 0.1, 0} }},
+            },
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {-1, 2.4 + 0.1}}}
+            },
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {0, 2.4 + 0.1}}}
+            },
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {1, 2.4 + 0.1}}}
+            },
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {2, 2.4 + 0.1}}}
+            },
+
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {-1, -2.4 + 0.1}}}
+            },
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {0, -2.4 + 0.1}}}
+            },
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {1, -2.4 + 0.1}}}
+            },
+            {
+              production_type = "output",
+              pipe_covers = pipecoverspictures(),
+              base_area = 10,
+              base_level = 1,
+              pipe_connections = {{ type = "output", position = {2, -2.4 + 0.1}}}
+            },
+
+               {
+        type = "recipe",
+        name = "pm-steel-melting",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/steel-melting.png",
+        subgroup = "pm-alloys",
+        order = "e",
+        category = "pm-moltening",
+        energy_required = 9,
+        enabled = false,
+        allow_decomposition = false,
+        ingredients = 
+        {
+            {"steel-plate", 10},
+            {type = "fluid", name = "steam", amount = 50},
+            
+        },
+        results = 
+        {
+            {type = "fluid", name = "pm-molten-steel", amount = 4 + 1}
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-stainless-steel-melting",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/stainless-steel-melting.png",
+        subgroup = "pm-alloys",
+        order = "e",
+        category = "pm-moltening",
+        energy_required = 9,
+        enabled = false,
+        allow_decomposition = false,
+        ingredients = 
+        {
+            {"pm-stainless-steel-alloy", 10},
+            {type = "fluid", name = "steam", amount = 50}
+        },
+        results = 
+        {
+            {type = "fluid", name = "pm-molten-stainless-steel", amount = 4 + 1}
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-brass-melting",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/brass-melting.png",
+        subgroup = "pm-alloys",
+        order = "e",
+        category = "pm-moltening",
+        energy_required = 9,
+        enabled = false,
+        allow_decomposition = false,
+        ingredients = 
+        {
+            {"pm-brass-plate", 10},
+            {type = "fluid", name = "steam", amount = 50}
+        },
+        results = 
+        {
+            {type = "fluid", name = "pm-molten-brass", amount = 4 + 1}
+        }
+    },
+
+    ---------------------------------------------------------------------------------------------------
+Version: 0.4.62
+  The "how was there no errors" Update:
+
+  Additions:
+    - Added Integrated Circuit molding in Reactive Non-Metal pack.
+    - Added Post-Transition Metal science pack.
+    - Added Flourine.
+    - Added -inator's tier 2.
+    - Added Tempature framing, a new multiproperty multimetal.
+    - Added Stainless steel chests.
+
+  Changes:
+    - Changed Reactive Non-Metal pack technology take 80 seconds, not 120.
+    - Changed the early game, Chlorine now has its own technology and row.
+    - Changed molten melting and cooling recipes to 9 seconds, instead of 6.
+    - Reworked Phosphorous's processing chain.
+    - Gave Washing plant 2's 2 module slots.
+    - Renamed heating and cooling plating.
+
+  Fixes:
+    - Made calcium possible. I forgor
+    - Fixed Cold-inators hitboxes not matching Molten-inators.
+    - Fixed Cadmium processing tehcnology not having a locale.
+    - Fixed Salt electrolysis locale.
+    - Fixed Sulfuric dioxide cracking locale.
+    - Fixed Fuel oil Hydrosulferization locale.
+    - Fixed Kerosene Hydrosulferization locale.
+    - Fixed Rail chain signals and rail signals recipes being borked.
+    - Fixed locale names.

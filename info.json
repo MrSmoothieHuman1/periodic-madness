@@ -1,0 +1,9 @@
+{
+    "name": "periodic-madness",
+    "version": "0.5.200",
+    "title": "Periodic Madness",
+    "author": "Mr.SmoothieHuman",
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1", "(?) bzzirconium >= 0.7.3", "(?) bzchlorine >= 0.1.4", "(?) Krastorio2 >= 1.3.23", "(?) BrimStuff >= 1.0.6"],
+    "description": "This mod aims to add most, if not all elements of the periodic table to Factorio."
+}

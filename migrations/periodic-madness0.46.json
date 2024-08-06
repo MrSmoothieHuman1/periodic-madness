@@ -1,0 +1,11 @@
+{
+    "recipe":
+    [
+        ["pm-slag-decomposition", "pm-transition-slag-decomposition"]
+    ],
+    
+    "item":
+    [
+        ["plastic-bar", "pm-polyethylene-plastic"]
+    ]
+}

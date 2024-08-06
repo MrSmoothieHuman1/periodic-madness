@@ -1,0 +1,39 @@
+{
+    "Lua.runtime.builtin": {
+        "io": "disable",
+        "os": "disable",
+        "math": "disable",
+        "debug": "disable",
+        "coroutine": "disable",
+        "package": "disable"
+    },
+    "Lua.runtime.version": "Lua 5.2",
+    "Lua.diagnostics.globals": [
+        "__Profiler",
+        "name",
+        "ingredients",
+        "robot_animations"
+    ],
+    "Lua.runtime.special": {
+        "__object_name": "type"
+    },
+    "Lua.runtime.plugin": "c:/Users/BlackATM/AppData/Roaming/Code/User/workspaceStorage/b4ba9021ee959d94f7e33e304adee9dd/justarandomgeek.factoriomod-debug/sumneko-3rd/factorio/plugin.lua",
+    "Lua.workspace.library": [
+        "c:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\data",
+        "c:/Users/BlackATM/AppData/Roaming/Code/User/workspaceStorage/b4ba9021ee959d94f7e33e304adee9dd/justarandomgeek.factoriomod-debug/sumneko-3rd/factorio/library"
+    ],
+    "Lua.diagnostics.disable": [
+        "newfield-call"
+    ],
+    "factorio.versions": [
+        {
+            "name": "Steam",
+            "factorioPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\bin\\x64\\factorio.exe",
+            "active": true
+        }
+    ],
+    "Lua.workspace.userThirdParty": [
+        "c:\\Users\\BlackATM\\AppData\\Roaming\\Code\\User\\workspaceStorage\\0c8fe843d6b7afeb6ca9262378d5864a\\justarandomgeek.factoriomod-debug\\sumneko-3rd"
+    ],
+    "Lua.workspace.checkThirdParty": "ApplyInMemory"
+}
