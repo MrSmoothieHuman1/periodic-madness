@@ -12,3 +12,4 @@
 - Absolutely everything else: [@MrSmoothieHuman1](https://github.com/MrSmoothieHuman1)
 - Helped create models for the mod and name is referenced:
 - [@ArchEzekiel]
+(https://github.com/ArchEzekiel)
