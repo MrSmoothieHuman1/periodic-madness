@@ -10,6 +10,4 @@
 - French translation: [@TheFrenchTechMan](https://github.com/TheFrenchTechMan)
 - Spanish translation: @Korgak on Discord
 - Absolutely everything else: [@MrSmoothieHuman1](https://github.com/MrSmoothieHuman1)
-- Helped create models for the mod and name is referenced:
-- [@ArchEzekiel]
-(https://github.com/ArchEzekiel)
+- Helped create models for the mod: [@ArchEzekiel](https://github.com/ArchEzekiel)
