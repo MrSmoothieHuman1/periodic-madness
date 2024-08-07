@@ -31,7 +31,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-copper-tailings-sludging",
-        --enabled = false,
+        enabled = false,
         energy_required = 1,
         category = "pm-washing",
         subgroup = "pm-tellurium-mt",
@@ -49,7 +49,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-sodium-tellurite",
-        --enabled = false,
+        enabled = false,
         energy_required = 4,
         category = "pm-moltening",
         subgroup = "pm-tellurium-mt",
@@ -86,7 +86,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-sodium-bicarbonate-tellurite",
-        --enabled = false,
+        enabled = false,
         energy_required = 2,
         category = "pm-moltening",
         subgroup = "pm-tellurium-mt",
@@ -122,7 +122,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-hydrotellurites",
-        --enabled = false,
+        enabled = false,
         energy_required = 4,
         category = "chemistry",
         subgroup = "pm-tellurium-mt",
@@ -141,8 +141,8 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-tellerium-oxide-seperation",
-        --enabled = false,
+        name = "pm-tellurium-oxide-seperation",
+        enabled = false,
         energy_required = 8,
         category = "chemistry",
         subgroup = "pm-tellurium-mt",

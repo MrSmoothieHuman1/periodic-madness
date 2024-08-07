@@ -2632,13 +2632,8 @@ data:extend({
           },
         crafting_categories = {"pm-evaporation"},
         crafting_speed = 0.75,
-        energy_usage = "125kW",
-        energy_source =
-        {
-          type = "electric",
-          usage_priority = "secondary-input",
-          emissions_per_minute = 0.5,
-        },
+        energy_usage = "1kW",
+        energy_source = {type = "void"},
         working_sound =
         {
           sound =
@@ -7075,7 +7070,7 @@ data:extend({
               frame_count = 1,
               animation_speed = electric_drill_animation_speed,
               direction_count = 1,
-              shift = util.by_pixel(3, 2),
+              shift = util.by_pixel(3, 2), 
               repeat_count = 5,
               scale = 0.5
             }

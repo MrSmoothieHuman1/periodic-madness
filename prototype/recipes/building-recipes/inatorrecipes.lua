@@ -31,7 +31,7 @@ data:extend({
         order = "aa",
         ingredients = 
         {
-            {type = "fluid", name = "pm-molten-iron", amount = 5},
+            {type = "fluid", name = "pm-molten-zinc", amount = 5},
             {"pm-potassium", 5},
             {"pm-sodium", 10}
         },

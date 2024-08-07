@@ -814,7 +814,7 @@ data:extend({
             subgroup = "production-machine",
             order = "y",
             energy_required = 10,
-            enabled = false,
+            enabled = false, --this means NO CRAFTING!!
             ingredients = 
             {
                 {"pm-radiation-resistant-panelling", 10},
@@ -823,7 +823,7 @@ data:extend({
                 {"processing-unit", 20},
                 {"pm-thallium-plate", 16}
             },
-            results =
+            results = --hi smelloy
             {
                 {"pm-francium-ultracool-centrifugal-kabbalism", 1}
             }

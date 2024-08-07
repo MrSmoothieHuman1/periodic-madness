@@ -16,7 +16,7 @@ data:extend({
         },
         results = 
         {
-            {name = "pm-sea-salt", amount_min = 2, amount_max = 3},
+            {"pm-sea-salt", 3},
             {type = "fluid", name = "water", amount = 25}
         }
     },
@@ -45,7 +45,7 @@ data:extend({
         order = "d",
         category = "pm-evaporation",
         main_product = "pm-chlorine",
-        energy_required = 2,
+        energy_required = 1,
         enabled = false,
         ingredients = 
         {

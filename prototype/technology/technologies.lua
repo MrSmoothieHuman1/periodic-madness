@@ -4937,7 +4937,7 @@ data:extend({
             recipe = "pm-metalloid-science-pack"
         }
     },
-    prerequisites = {"pm-boron-processing"},
+    prerequisites = {"pm-boron-processing", "pm-tellurium-processing"},
     unit = 
     {
         count = 300,
@@ -5095,7 +5095,49 @@ data:extend({
             {"automation-science-pack", 1},
             {"logistic-science-pack", 1},
             {"pm-advanced-advanced-transition-metal-science-pack", 1},
-            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+        },
+        time = 60
+    }
+},
+{
+    type = "technology",
+    name = "pm-tellurium-processing",
+    icon_size = 272 - 16,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+        {
+            type = "unlock-recipe",
+            recipe = "pm-copper-tailings-sludging"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-sodium-tellurite"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-sodium-bicarbonate-tellurite"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-hydrotellurites"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-tellurium-oxide-seperation"
+        },
+    },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    unit = 
+    {
+        count = 375,
+        ingredients = 
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
         },
         time = 60
     }

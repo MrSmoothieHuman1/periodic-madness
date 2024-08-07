@@ -57,7 +57,7 @@ data:extend({
         subgroup = "pm-acid-crafting",
         category = "pm-evaporation",
         hide_from_player_crafting = true,
-        energy_required = 1,
+        energy_required = 0.325,
         ingredients = 
         {
             {type = "fluid", name = "pm-oxygen-gas", amount = 10},

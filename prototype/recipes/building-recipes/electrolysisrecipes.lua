@@ -9,7 +9,7 @@ data:extend({
         subgroup = "pm-hydrogen-rnm",
         order = "a",
         category = "pm-electrolysis",
-        energy_required = 1,
+        energy_required = 0.5,
         crafting_machine_tint = 
         {{
             type = "recipe",
@@ -97,8 +97,8 @@ data:extend({
         },
         results =
         {
-            {type = "fluid", name = "pm-oxygen-gas", amount = 5},
-            {type = "fluid", name = "pm-hydrogen-gas", amount = 10},
+            {type = "fluid", name = "pm-oxygen-gas", amount = 10},
+            {type = "fluid", name = "pm-hydrogen-gas", amount = 20},
         }
     },
     -- a relic, from a kinder past
@@ -111,11 +111,11 @@ data:extend({
         subgroup = "pm-chlorine-rnm",
         order = "b",
         category = "pm-electrolysis",
-        energy_required = 2,
+        energy_required = 1,
         enabled = false,
         ingredients = 
         {
-            {"pm-sea-salt", 5}
+            {"pm-sea-salt", 3} --when the fuck did you guys get here
         },
         results = 
         {
