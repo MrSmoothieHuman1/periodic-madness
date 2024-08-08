@@ -9,4 +9,5 @@
 # Credits:
 - French translation: [@TheFrenchTechMan](https://github.com/TheFrenchTechMan)
 - Spanish translation: @Korgak on Discord
+- Helped create models for the mod: [@ArchEzekiel](https://github.com/ArchEzekiel)
 - Absolutely everything else: [@MrSmoothieHuman1](https://github.com/MrSmoothieHuman1)
