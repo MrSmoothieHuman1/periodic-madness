@@ -23,7 +23,7 @@ data:extend({
         icons = 
         {
             {
-                icon = "__base__/graphics/icons/copper-ore.png",
+                icon = "__base__/graphics/icons/iron-ore.png",
                 icon_size = 64,
             },
             {

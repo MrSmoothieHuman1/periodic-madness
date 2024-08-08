@@ -127,7 +127,7 @@ data:extend({
         icons = 
         {
             {
-                icon = "__base__/graphics/icons/iron-ore.png",
+                icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",
                 icon_size = 64,
             },
             {
@@ -164,7 +164,7 @@ data:extend({
         icons = 
         {
             {
-                icon = "__base__/graphics/icons/copper-ore.png",
+                icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",
                 icon_size = 64,
             },
             {
@@ -201,7 +201,7 @@ data:extend({
         icons = 
         {
             {
-                icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
+                icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
                 icon_size = 64,
             },
             {
@@ -238,7 +238,7 @@ data:extend({
         icons = 
         {
             {
-                icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
+                icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
                 icon_size = 64,
             },
             {

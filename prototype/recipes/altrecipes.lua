@@ -590,7 +590,7 @@ data:extend({
     },
     results = 
     {
-        {"pm-advanced-integrated-circuit-mold", 3},
+        {"pm-processing-integrated-circuit-mold", 3},
         {name = "pm-advanced-integrated-circuits", amount_min = 2, amount_max = 3}
     }
 },

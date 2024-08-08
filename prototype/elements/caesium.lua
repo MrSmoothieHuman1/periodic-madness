@@ -219,7 +219,7 @@ data:extend({
         {
             {"pm-caesium-iodine-chloride", 4},
             {
-                name = "pm-antimony",
+                name = "pm-antimony-ore",
                 amount_min = 0,
                 amount_max = 4
             }

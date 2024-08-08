@@ -21,6 +21,8 @@ Version: 0.5.200
     - Made some attempts to curb the file size, but idk chief im gonna have to split these into graphic mods soon
     - Changed solar panel equipment 2 into solar panel equipment MK2.
     - Fixed some leeching icons having wrong stuff in it in my crusade to make this mod smaller.
+    - Fixed some locale issues.
+    - (#3) Fixed processing integrated circuit molding giving advanced integrated circuits.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.115

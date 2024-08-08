@@ -5142,6 +5142,28 @@ data:extend({
         time = 60
     }
 },
+{
+    type = "technology",
+    name = "pm-rsenic-antimony-processing",
+    icon_size = 273 - 17,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    unit = 
+    {
+        count = 375,
+        ingredients = 
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+        },
+        time = 60
+    }
+},
 
 {
     type = "technology",
