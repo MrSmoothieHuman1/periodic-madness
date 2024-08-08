@@ -527,7 +527,7 @@ data:extend({
     energy_required = 6,
     ingredients = 
     {    
-        {"pm-antimony", 6},
+        {"pm-antimony-ore", 6},
         {"pm-arsenic-ore", 6},
         {type = "fluid", name = "pm-boron", amount = 16},
         {"pm-science-bottle", 1}
@@ -2521,7 +2521,7 @@ data:extend({
     ingredients =
     {
         {"pm-vacuum-tube", 1},
-        {"pm-borosillicate-glass", 4},
+        {"pm-borosilicate-glass", 4},
         {"copper-cable", 10}
     },
     results = 
@@ -2548,7 +2548,7 @@ data:extend({
     enabled = false,
     ingredients = 
     {
-        {"pm-borosillicate-glass", 4}
+        {"pm-borosilicate-glass", 4}
     },
     results = 
     {

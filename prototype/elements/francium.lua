@@ -52,7 +52,7 @@ data:extend({
         ingredients = 
         {
             {"pm-glass-pane", 8},
-            {"pm-antimony", 2},
+            {"pm-antimony-ore", 2},
             {"pm-basic-wiring", 24},
             {"pm-polyethylene-plastic", 6},
             {"pm-gallium-arsenide", 2},

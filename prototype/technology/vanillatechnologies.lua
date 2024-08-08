@@ -1003,7 +1003,6 @@ data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
     {"logistic-science-pack", 1},
     {"pm-advanced-advanced-transition-metal-science-pack", 1},
     {"pm-post-transition-metal-science-pack", 1},
-    {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["utility-science-pack"].unit.ingredients = 
 {
@@ -1057,7 +1056,8 @@ data.raw["technology"]["speed-module-3"].unit.ingredients =
     {"pm-advanced-advanced-transition-metal-science-pack", 1},
     {"chemical-science-pack", 1},
     {"pm-post-transition-metal-science-pack", 1},
-    {"pm-alkali-metal-science-pack", 1}
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["speed-module"].icon_size = 256
@@ -1099,7 +1099,7 @@ data.raw["technology"]["speed-module-3"].effects =
         recipe = "pm-speed-module-2-crushing"
     },
 }
-data.raw["technology"]["speed-module-3"].prerequisites = {"speed-module-2", "pm-alkali-metal-pack-unlock"}
+data.raw["technology"]["speed-module-3"].prerequisites = {"speed-module-2", "pm-alkali-metal-pack-unlock", "pm-boron-processing"}
 local ProdMod1Fix = data.raw["module"]["productivity-module"]
 
 ProdMod1Fix.icon_size = 128
@@ -1138,7 +1138,8 @@ data.raw["technology"]["productivity-module-3"].unit.ingredients =
     {"pm-advanced-advanced-transition-metal-science-pack", 1},
     {"chemical-science-pack", 1},
     {"pm-post-transition-metal-science-pack", 1},
-    {"pm-alkali-metal-science-pack", 1}
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["productivity-module"].icon_size = 256
@@ -1180,7 +1181,7 @@ data.raw["technology"]["productivity-module-3"].effects =
         recipe = "pm-productivity-module-2-crushing"
     },
 }
-data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock"}
+data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock", "pm-boron-processing"}
 data.raw["module"]["effectivity-module"].icon_size = 128
 data.raw["module"]["effectivity-module"].icon = "__periodic-madness__/graphics/icons/effectivity-module-1.png"
 data.raw["module"]["effectivity-module-2"].icon_size = 128
@@ -1226,7 +1227,7 @@ data.raw["technology"]["effectivity-module-3"].effects =
         recipe = "pm-efficiency-module-2-crushing"
     },
 }
-data.raw["technology"]["effectivity-module-3"].prerequisites = {"effectivity-module-2", "pm-alkali-metal-pack-unlock"}
+data.raw["technology"]["effectivity-module-3"].prerequisites = {"effectivity-module-2", "pm-alkali-metal-pack-unlock", "pm-boron-processing"}
 data.raw["technology"]["effectivity-module"].unit.ingredients = 
 {
     {"automation-science-pack", 1}, 
@@ -1250,5 +1251,6 @@ data.raw["technology"]["effectivity-module-3"].unit.ingredients =
     {"pm-advanced-advanced-transition-metal-science-pack", 1},
     {"chemical-science-pack", 1},
     {"pm-post-transition-metal-science-pack", 1},
-    {"pm-alkali-metal-science-pack", 1}
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1}
 }

@@ -83,7 +83,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-borosillicate-glass-cooling",
+        name = "pm-borosilicate-glass-cooling",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/borosillicate-glass-cooling.png",
         enabled = false,
@@ -98,7 +98,7 @@ data:extend({
         },
         results = 
         {
-            {"pm-borosillicate-glass", 5},
+            {"pm-borosilicate-glass", 5},
             {
                 name = "pm-crucible",
                 amount_min = 1,
@@ -108,7 +108,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-borosillicate-glass-fibers",
+        name = "pm-borosilicate-glass-fibers",
         icons = 
         {
             {

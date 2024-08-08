@@ -3825,7 +3825,8 @@ data:extend({
             {"pm-advanced-advanced-transition-metal-science-pack", 1},
             {"chemical-science-pack", 1},
             {"pm-post-transition-metal-science-pack", 1},
-            {"pm-alkali-metal-science-pack", 1}
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1}
         },
         time = 60
     }
@@ -3853,7 +3854,8 @@ data:extend({
             {"pm-advanced-advanced-transition-metal-science-pack", 1},
             {"chemical-science-pack", 1},
             {"pm-post-transition-metal-science-pack", 1},
-            {"pm-alkali-metal-science-pack", 1}
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1}
         },
         time = 60
     }
@@ -3870,7 +3872,7 @@ data:extend({
             recipe = "pm-productivity-module-4"
         }
     },
-    prerequisites = {"productivity-module-3"},
+    prerequisites = {"productivity-module-3"}, 
     unit = 
     {
         count = 600,
@@ -3881,7 +3883,8 @@ data:extend({
             {"pm-advanced-advanced-transition-metal-science-pack", 1},
             {"chemical-science-pack", 1},
             {"pm-post-transition-metal-science-pack", 1},
-            {"pm-alkali-metal-science-pack", 1}
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1}
         },
         time = 60
     }
@@ -5017,7 +5020,7 @@ data:extend({
 },
 {
     type = "technology",
-    name = "pm-borosillicate-glass",
+    name = "pm-borosilicate-glass",
     icon_size = 270 - 14,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
@@ -5028,7 +5031,7 @@ data:extend({
         },
         {
             type = "unlock-recipe",
-            recipe = "pm-borosillicate-glass-cooling"
+            recipe = "pm-borosilicate-glass-cooling"
         },
         {
             type = "unlock-recipe",
@@ -5036,7 +5039,7 @@ data:extend({
         },
         {
             type = "unlock-recipe",
-            recipe = "pm-borosillicate-glass-fibers"
+            recipe = "pm-borosilicate-glass-fibers"
         }
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
@@ -5369,7 +5372,8 @@ data:extend({
             {"automation-science-pack", 1},
             {"logistic-science-pack", 1},
             {"pm-advanced-advanced-transition-metal-science-pack", 1},
-            {"pm-post-transition-metal-science-pack", 1}
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1}
         },
         time = 100
     },
@@ -5397,7 +5401,8 @@ data:extend({
             {"automation-science-pack", 1},
             {"logistic-science-pack", 1},
             {"pm-advanced-advanced-transition-metal-science-pack", 1},
-            {"pm-post-transition-metal-science-pack", 1}
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1}
         },
         time = 100
     },

@@ -120,9 +120,9 @@ data:extend({
     },
     {
       type = "item",
-      name = "pm-borosillicate-glass",
+      name = "pm-borosilicate-glass",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/borosillicate-glass-pane.png",
+      icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
       subgroup = "pm-glassing",
       order = "e", 
       stack_size = 50
