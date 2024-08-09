@@ -1,3 +1,5 @@
+local hit_effects = require("__base__.prototypes.entity.hit-effects")
+local sounds = require("__base__.prototypes.entity.sounds")
 data:extend({
 
 
@@ -1024,7 +1026,8 @@ data:extend({
                   sticker = "pm-bio-poison-sticker",
                   duration_in_ticks = 10 * 60,
                   damage_interval = 60,
-                  damage_per_tick = 4
+                  damage_per_tick = 4,
+                  show_in_tooltip = true
                 }
               }
             }
@@ -1236,6 +1239,73 @@ data:extend({
   icon = "__periodic-madness__/graphics/icons/TWAT.png",
   stack_size = 20,
 },
+{
+  type = "capsule",
+  name = "pm-sodium-grenade",
+  icon = "__periodic-madness__/graphics/icons/bath-bomb.png",
+  icon_size = 64, 
+  capsule_action =
+  {
+    type = "throw",
+    attack_parameters =
+    {
+      type = "projectile",
+      activation_type = "throw",
+      ammo_category = "grenade",
+      cooldown = 25,
+      projectile_creation_distance = 0.6,
+      range = 15,
+      ammo_type =
+      {
+        category = "grenade",
+        target_type = "position",
+        action =
+        {
+          {
+            type = "direct",
+            action_delivery =
+            {
+              type = "projectile",
+              projectile = "pm-sodium-grenade",
+              starting_speed = 0.5
+            }
+          },
+          {
+            type = "direct",
+            action_delivery =
+            {
+              type = "instant",
+              target_effects =
+              {
+                {
+                  type = "play-sound",
+                  sound = sounds.throw_projectile
+                },
+                {
+                  type = "create-fire",
+                  entity_name = "fire-flame",
+                  show_in_tooltip = true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },     
+  subgroup = "capsule",
+  order = "a[grenade]-a[normal]",
+  stack_size = 150
+},
+{
+  type = "item",
+  name = "pm-nitrogen-doped-nickle-molybdenum-phosphide-catalyst",
+  icon_size = 64,
+  icon = "__periodic-madness__/graphics/icons/NiMoP.png",
+  subgroup = "pm-refined-items",
+  stack_size = 50
+},
+
 {
   type = "item",
   name = "pm-personal-robostasher-equipment",

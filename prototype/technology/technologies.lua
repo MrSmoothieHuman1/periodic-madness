@@ -5176,6 +5176,53 @@ data:extend({
         time = 60
     }
 },
+{
+    type = "technology",
+    name = "pm-yttrium-processing",
+    icon_size = 274 - 18,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+        {
+            type = "unlock-recipe",
+            recipe = "pm-basic-bastnäsite"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-mixed-bastnäsite-seperation"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-bastnäsite-Y-seperation"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-bastnäsite-C-seperation"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-yttrium-fluoride"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-yttrium"
+        },
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+        count = 500,
+        ingredients = 
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1}
+        },
+        time = 60
+    }
+},
 
 {
     type = "technology",

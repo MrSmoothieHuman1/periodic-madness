@@ -157,7 +157,7 @@ data:extend({
         results = 
         {
             {"pm-tellurium-ore", 6},
-            {type = "fluid", name = "sulfuric-acid", amount = 15}
+            {type = "fluid", name = "sulfuric-acid", amount = 7.5}
         }
     }
 })

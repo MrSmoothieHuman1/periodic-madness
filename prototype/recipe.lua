@@ -530,6 +530,7 @@ data:extend({
         {"pm-antimony-ore", 6},
         {"pm-arsenic-ore", 6},
         {type = "fluid", name = "pm-boron", amount = 16},
+        {"pm-tellurium-plate", 10},
         {"pm-science-bottle", 1}
     },
     enabled = false,
@@ -2585,6 +2586,25 @@ data:extend({
     results = 
     {
         {type = "fluid", name = "pm-styrene", amount = 10}
+    }
+},
+{
+    type = "recipe",
+    name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
+    enabled = false,
+    energy_required = 35,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+        {"pm-molybdenum-ore", 20},
+        {type = "fluid", name = "pm-nitrogen-gas", amount = 15},
+        {"pm-nickel-plate", 12},
+        {"pm-red-phosphorus", 6},
+        {"pm-lightweight-panelling", 16}
+    },
+    results = 
+    {
+        {"pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1}
     }
 },
 

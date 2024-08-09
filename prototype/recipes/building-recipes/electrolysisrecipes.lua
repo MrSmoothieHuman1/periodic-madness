@@ -93,7 +93,7 @@ data:extend({
         },
         ingredients =
         {
-            {type = "fluid", name = "water", amount = 50},
+            {type = "fluid", name = "pm-seawater", amount = 50},
         },
         results =
         {
@@ -141,6 +141,32 @@ data:extend({
         {
             {type = "fluid", name = "pm-oxygen-gas", amount = 20},
             {type = "fluid", name = "pm-hydrogen-gas", amount = 40},
+        },
+    },
+    {
+        type = "recipe",
+        name = "pm-nimop-gas-water-electroylsis",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/gas-water-electroylsis.png",
+        energy_required = 0.5,
+        enabled = false,
+        category = "pm-electrolysis",
+        subgroup = "pm-hydrogen-rnm",
+        order = "ba",
+        ingredients = 
+        {
+            {type = "fluid", name = "water", amount = 150},
+            {"pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1}
+        },
+        results = 
+        {
+            {type = "fluid", name = "pm-oxygen-gas", amount = 50},
+            {type = "fluid", name = "pm-hydrogen-gas", amount = 100},
+            {
+                name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
+                amount = 1,
+                probability = 0.999
+            }
         },
     },
     {

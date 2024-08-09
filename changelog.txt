@@ -8,14 +8,16 @@ Version: 0.5.200
     - Added Tellerium.
     - Added Germanium.
     - Added Yttrium.
-    - Added two new ways to make glass and glass products: borosillicate glass and molten potassium. One allows for betterer recipes of stuff like glass bottles and fibers, and the other allows for more efficient glass recipes.
+    - Added two new ways to make glass and glass products: borosilicate glass and molten potassium. One allows for betterer recipes of stuff like glass bottles and fibers, and the other allows for more efficient glass recipes.
     - Added robochargers and robostashers, like the thing from that one mod.
+    - Added an even better tier of water electrolysis, using a Nitrogen-doped nickel-molybdenum-phosphide catalyst. Why? because i wouldnt be a good devman if i wasnt sitting here talking to you, now would i?
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
     - Changed vacuum tubes crafting time from 5 to 7 seconds, and CRT's from 20 to 28.
     - Changed the science pack requirements for Francium Ultracool Centrifugal Kabbalism, now requiring all prerequisite science packs as to lower confusion for new players.
     - Upped Magneto orbital traps glass input from 8 to 24.
+    - Changed all recipes that use white phosphorous to red phosphorous, which was like 3 but still
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

@@ -59,7 +59,7 @@ data:extend({
         ingredients = 
         {
             {type = "fluid", name = "pm-ammonia-gas", amount = 20},
-            {"pm-white-phosphorus", 6},
+            {"pm-red-phosphorus", 6},
             {"pm-polyethylene-plastic", 4},
         },
         results = 
@@ -92,7 +92,7 @@ data:extend({
         ingredients = 
         {
             {type = "fluid", name = "pm-ammonia-gas", amount = 10},
-            {"pm-white-phosphorus", 4},
+            {"pm-red-phosphorus", 4},
             {"pm-polyethylene-plastic", 6},
             {"pm-potassium", 4}
         },
