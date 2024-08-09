@@ -535,7 +535,7 @@ data:extend ({
     },
     {
         type = "fluid",
-        name = "pm-molten-borosillicate-glass",
+        name = "pm-molten-borosilicate-glass",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/fluids/liquid-borosillicate-glass.png",
         subgroup = "pm-glassing",

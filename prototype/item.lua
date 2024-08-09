@@ -123,6 +123,11 @@ data:extend({
       name = "pm-borosilicate-glass",
       icon_size = 64,
       icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+      pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png", size = 64, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/borosilicate-glass-pane-2.png", size = 64, scale = 0.25},
+        },
       subgroup = "pm-glassing",
       order = "e", 
       stack_size = 50
@@ -627,6 +632,14 @@ data:extend({
         subgroup = "pm-biostuff-rnm",
         stack_size = 200
     },
+    {
+      type = "item",
+      name = "pm-cyanobacteriaed-petri-dish",
+      icon_size = 128,
+      icon = "__periodic-madness__/graphics/icons/cyanobacteria'ed-petri-dish.png",
+      subgroup = "pm-biostuff-rnm",
+      stack_size = 200
+  },
     {
         type = "item",
         name = "pm-flux-container",

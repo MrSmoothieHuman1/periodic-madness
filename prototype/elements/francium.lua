@@ -51,7 +51,27 @@ data:extend({
         category = "crafting-with-fluid",
         ingredients = 
         {
-            {"pm-glass-pane", 8},
+            {"pm-glass-pane", 24},
+            {"pm-antimony-ore", 2},
+            {"pm-basic-wiring", 24},
+            {"pm-polyethylene-plastic", 6},
+            {"pm-gallium-arsenide", 2},
+            {type = "fluid", name = "pm-coolant", amount = 10}
+        },
+        results = 
+        {
+            {"pm-magneto-orbital-trap", 1}
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-borosilicate-magneto-orbital-trap",
+        enabled = false,
+        energy_required = 12,
+        category = "crafting-with-fluid",
+        ingredients = 
+        {
+            {"pm-borosilicate-glass", 6},
             {"pm-antimony-ore", 2},
             {"pm-basic-wiring", 24},
             {"pm-polyethylene-plastic", 6},

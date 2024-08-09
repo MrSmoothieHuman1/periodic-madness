@@ -251,6 +251,24 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "pm-cyanobacteriaed-petri-dish",
+        energy_required = 1,
+        enabled = false,
+        category = "crafting-with-fluid",
+        subgroup = "pm-biostuff-rnm",
+        order = "ea",
+        ingredients = 
+        {
+            {"pm-empty-petri-dish", 1},
+            {type = "fluid", name = "pm-cyanobacteriaed-agar-solution", amount = 20 + 10 / 2}
+        },
+        results = 
+        {
+            {"pm-cyanobacteriaed-petri-dish", 1}
+        }
+    },
+    {
+        type = "recipe",
         name = "pm-agar-dish-emptying",
         energy_required = 1,
         enabled = false,
@@ -284,6 +302,25 @@ data:extend({
         results = 
         {
             {type = "fluid", name = "pm-bacteriaed-agar-solution", amount = 20 + 10 / 2},
+            {"pm-empty-petri-dish", 1}
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-cyanobacteriaed-dish-emptying",
+        energy_required = 1,
+        enabled = false,
+        category = "crafting-with-fluid",
+        main_product = "pm-cyanobacteriaed-agar-solution",
+        subgroup = "pm-biostuff-rnm",
+        order = "ga",
+        ingredients = 
+        {
+            {"pm-cyanobacteriaed-petri-dish", 1}
+        },
+        results = 
+        {
+            {type = "fluid", name = "pm-cyanobacteriaed-agar-solution", amount = 20 + 10 / 2},
             {"pm-empty-petri-dish", 1}
         }
     },

@@ -14,6 +14,8 @@ Version: 0.5.200
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
     - Changed vacuum tubes crafting time from 5 to 7 seconds, and CRT's from 20 to 28.
+    - Changed the science pack requirements for Francium Ultracool Centrifugal Kabbalism, now requiring all prerequisite science packs as to lower confusion for new players.
+    - Upped Magneto orbital traps glass input from 8 to 24.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -23,6 +25,7 @@ Version: 0.5.200
     - Fixed some leeching icons having wrong stuff in it in my crusade to make this mod smaller.
     - Fixed some locale issues.
     - (#3) Fixed processing integrated circuit molding giving advanced integrated circuits.
+    - Fixed a lot of minor locale issues, like capatalisation and random bs like that.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.115

@@ -2531,7 +2531,7 @@ data:extend({
 },
 {
     type = "recipe",
-    name = "pm-borosillicate-science-bottle",
+    name = "pm-borosilicate-science-bottle",
     icon_size = 64,
     icons =
     {
@@ -2540,7 +2540,7 @@ data:extend({
             icon_size = 64
         },
         {
-            icon = "__periodic-madness__/graphics/icons/borosillicate-glass-pane.png",
+            icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
             icon_size = 64
         },
     },

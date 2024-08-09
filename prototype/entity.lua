@@ -8622,7 +8622,7 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/buildings/leaching-field.png",
         icon_size = 128,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
-        minable = {mining_time = 0.9, result = "pm-washing-plant-2"},
+        minable = {mining_time = 0.9, result = "pm-leaching-field"},
         max_health = 800,
         corpse = "pm-evaporator-2",
         dying_explosion = "assembling-machine-1-explosion",
@@ -8636,7 +8636,7 @@ data:extend({
         allowed_effects = {"consumption", "speed", "pollution", "productivity"},
         module_specification = 
         {
-            module_slots = 1,
+            module_slots = 2,
         },
         animation =
         {
@@ -9320,9 +9320,58 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   off_when_no_fluid_recipe = true
 }
 
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "pm-diesel", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "pm-petrol", damage_modifier = 2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "pm-diesel", damage_modifier = 1.1})
+data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids = 
+{
+  {type = "crude-oil", damage_modifier = 0.5},
+  {type = "pm-petrol", damage_modifer = 1.1},
+  {type = "pm-naptha", damage_modifier = 1.5},
+  {type = "pm-kerosene", damager_modifier = 1.3}
+}
+data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluid_consumption = 0.2 * 2
+data.raw["fluid-turret"]["flamethrower-turret"].attacking_speed = 0.75
+data.raw["fluid-turret"]["flamethrower-turret"].max_health = 1000
+data.raw["fluid-turret"]["flamethrower-turret"].prepare_range = 30
+data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.range = 25
+data.raw["stream"]["flamethrower-fire-stream"].action.radius = 2
+data.raw["stream"]["flamethrower-fire-stream"].action =
+{
+  {
+    type = "area",
+    radius = 2,
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        {
+          type = "create-sticker",
+          sticker = "fire-sticker",
+          show_in_tooltip = true
+        },
+        {
+          type = "damage",
+          damage = { amount = 2.5, type = "fire" },
+          apply_damage_to_trees = false
+        }
+      }
+    }
+  },
+  {
+    type = "direct",
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        {
+          type = "create-fire",
+          entity_name = "fire-flame",
+          show_in_tooltip = true
+        }
+      }
+    }
+  }
+}
 
 data.raw["storage-tank"]["storage-tank"].next_upgrade = "pm-stainless-steel-storage-tank"
 data.raw["storage-tank"]["storage-tank"].fast_replaceable_group = "pm-storage-tank"

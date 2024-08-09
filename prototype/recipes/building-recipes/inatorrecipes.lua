@@ -60,7 +60,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-molten-borosillicate-glass",
+        name = "pm-molten-borosilicate-glass",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/borosillicate-glass-melting.png",
         enabled = false,
@@ -78,7 +78,7 @@ data:extend({
         },
         results = 
         {
-            {type = "fluid", name = "pm-molten-borosillicate-glass", amount = 5}
+            {type = "fluid", name = "pm-molten-borosilicate-glass", amount = 5}
         }
     },
     {
@@ -93,7 +93,7 @@ data:extend({
         order = "f",
         ingredients = 
         {
-            {type = "fluid", name = "pm-molten-borosillicate-glass", amount = 5},
+            {type = "fluid", name = "pm-molten-borosilicate-glass", amount = 5},
             {"pm-crucible", 2}
         },
         results = 
@@ -116,7 +116,7 @@ data:extend({
                 icon_size = 64
             },
             {
-                icon = "__periodic-madness__/graphics/icons/borosillicate-glass-pane.png",
+                icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
                 icon_size = 64
             },
         },
@@ -126,7 +126,7 @@ data:extend({
         category = "pm-moltening",
         ingredients = 
         {
-            {type = "fluid", name = "pm-molten-borosillicate-glass", amount = 2.5},
+            {type = "fluid", name = "pm-molten-borosilicate-glass", amount = 2.5},
             {"pm-filled-flux-container", 1}
         },
         results = 

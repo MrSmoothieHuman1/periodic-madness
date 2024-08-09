@@ -2749,11 +2749,19 @@ data:extend({
         },
         {
             type = "unlock-recipe",
+            recipe = "pm-cyanobacteriaed-petri-dish"
+        },
+        {
+            type = "unlock-recipe",
             recipe = "pm-agar-dish-emptying"
         },
         {
             type = "unlock-recipe",
             recipe = "pm-bacteriaed-dish-emptying"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pm-cyanobacteriaed-dish-emptying"
         }
     },
     prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering"},
@@ -5027,7 +5035,7 @@ data:extend({
     {
         {
             type = "unlock-recipe",
-            recipe = "pm-molten-borosillicate-glass"
+            recipe = "pm-molten-borosilicate-glass"
         },
         {
             type = "unlock-recipe",
@@ -5035,7 +5043,7 @@ data:extend({
         },
         {
             type = "unlock-recipe",
-            recipe = "pm-borosillicate-science-bottle"
+            recipe = "pm-borosilicate-science-bottle"
         },
         {
             type = "unlock-recipe",
@@ -5147,11 +5155,12 @@ data:extend({
 },
 {
     type = "technology",
-    name = "pm-rsenic-antimony-processing",
+    name = "pm-arsenic-antimony-processing",
     icon_size = 273 - 17,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit = 
@@ -5215,6 +5224,10 @@ data:extend({
         ingredients = 
         {
             {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1}
         },
         time = 30
     }
@@ -5235,11 +5248,14 @@ data:extend({
     upgrade = true,
     unit =
     {
-        count = 400,
+        count = 350,
         ingredients = 
         {
-            {"automation-science-pack", 1},
+            {"automation-science-pack", 2},
             {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1}
         },
         time = 30
     }
@@ -5260,12 +5276,14 @@ data:extend({
     upgrade = true,
     unit =
     {
-        count = 400,
+        count = 450,
         ingredients = 
         {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
+            {"automation-science-pack", 2},
+            {"logistic-science-pack", 2},
             {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1}
         },
         time = 60
     }
@@ -5286,12 +5304,12 @@ data:extend({
     upgrade = true,
     unit =
     {
-        count = 800,
+        count = 650,
         ingredients = 
         {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"automation-science-pack", 2},
+            {"logistic-science-pack", 2},
+            {"pm-advanced-advanced-transition-metal-science-pack", 2},
             {"pm-post-transition-metal-science-pack", 1},
         },
         time = 60
@@ -5313,12 +5331,12 @@ data:extend({
     upgrade = true,
     unit =
     {
-        count = 800,
+        count = 650,
         ingredients = 
         {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"automation-science-pack", 2},
+            {"logistic-science-pack", 2},
+            {"pm-advanced-advanced-transition-metal-science-pack", 2},
             {"chemical-science-pack", 1},
         },
         time = 60
