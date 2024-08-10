@@ -53,14 +53,15 @@ data:extend({
     name = "pm-gas-water-electroylsis",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/gas-water-electroylsis.png",
-    energy_required = 1,
+    energy_required = 0.5,
     enabled = false,
     category = "pm-electrolysis",
     subgroup = "pm-hydrogen-rnm",
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "water", amount = 50 }
+      { type = "fluid", name = "water", amount = 50 },
+      {"pm-platinum-plate", 3}
     },
     results =
     {
