@@ -923,7 +923,7 @@ data:extend({
                 {"pm-battery-discharger", 1}
             }
         },
-})
+}--[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["boiler"].enabled = false
 

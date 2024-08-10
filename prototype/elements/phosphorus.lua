@@ -46,7 +46,7 @@ data:extend({
             {"pm-phosphate-rock", 4},
             {name = "pm-sand", amount_min = 2, amount_max = 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-phosphor-vapour",
@@ -65,7 +65,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-phosphor-vapour", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-phosphor-vapour-cooling",
@@ -91,7 +91,7 @@ data:extend({
                 amount_max = 4
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-phosphoric-acid-filtering",
@@ -117,7 +117,7 @@ data:extend({
                 probability = 0.2
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-white-to-red-phosphorus",
@@ -136,7 +136,7 @@ data:extend({
         {
             {"pm-red-phosphorus", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -163,5 +163,5 @@ data:extend({
                 amount = 1,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

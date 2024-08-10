@@ -68,7 +68,7 @@ data:extend({
         {
             {"pm-lead-chunks", 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-lead-crushing",
@@ -91,7 +91,7 @@ data:extend({
                 probability = 0.4 + 0.1
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-lead-frothing",
@@ -111,7 +111,7 @@ data:extend({
             {type = "fluid", name = "pm-lead-froth", amount = 20},
             {type = "fluid", name = "pm-acidic-water", amount_min = 10, amount_max = 20},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-lead-froth-skimming",
@@ -136,7 +136,7 @@ data:extend({
             {name = "pm-flux-container", amount_min = 1, amount_max = 2},
             {"pm-impure-lead", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-lead-purifying",
@@ -156,5 +156,5 @@ data:extend({
         {
             {"pm-lead-ore", 4}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

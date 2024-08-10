@@ -53,7 +53,7 @@ data:extend({
         {
             {"pm-gold-chunks", 5},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-gold-chunk-refining",
@@ -84,7 +84,7 @@ data:extend({
             {type = "item", name = "pm-gold-ore", amount = 10},
             {type = "fluid", name = "pm-mercury-vapour", amount = 5}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-gold-plating",
@@ -130,5 +130,5 @@ data:extend({
         {
             {"pm-gold-chunks", 5},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

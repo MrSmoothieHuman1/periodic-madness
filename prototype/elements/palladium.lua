@@ -28,7 +28,7 @@ data:extend({
                 probability = 0.4 + 0.1
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-fluxed-palladium-nickel-froth-seperation",
@@ -59,5 +59,5 @@ data:extend({
                 amount = 1,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

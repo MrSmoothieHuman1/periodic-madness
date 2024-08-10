@@ -54,7 +54,7 @@ data:extend({
                 probability = 0.6
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-bismuth-210-decaying",
@@ -78,5 +78,5 @@ data:extend({
                 probability = 0.55
             },
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

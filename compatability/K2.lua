@@ -55,7 +55,7 @@ if mods["Krastorio2"]then
         },
     }
     data.raw["technology"]["kr-stone-processing"].prerequisites = {"pm-burner-crusher"}
-    data.raw["furnace"]["kr-crusher"].crafting_category = {"pm-crushing"}
+    data.raw["furnace"]["kr-crusher"].crafting_categories = {"pm-crushing"}
     data.raw["furnace"]["kr-crusher"].crafting_speed = 10
     data.raw["furnace"]["kr-crusher"].energy_source = 
     {

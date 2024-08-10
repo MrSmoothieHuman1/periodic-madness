@@ -22,9 +22,6 @@
         "c:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\data",
         "c:/Users/BlackATM/AppData/Roaming/Code/User/workspaceStorage/b4ba9021ee959d94f7e33e304adee9dd/justarandomgeek.factoriomod-debug/sumneko-3rd/factorio/library"
     ],
-    "Lua.diagnostics.disable": [
-        "newfield-call"
-    ],
     "factorio.versions": [
         {
             "name": "Steam",

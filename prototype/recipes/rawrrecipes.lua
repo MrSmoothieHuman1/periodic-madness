@@ -153,7 +153,7 @@ data:extend({
             {
                 name = "pm-ore-slag",
                 amount = 1,
-                probability = "0.5"
+                probability = 0.5
             }
         }
     },
@@ -190,7 +190,7 @@ data:extend({
             {
                 name = "pm-ore-slag",
                 amount = 1,
-                probability = "0.5"
+                probability = 0.5
             }
         }
     },
@@ -227,7 +227,7 @@ data:extend({
             {
                 name = "pm-ore-slag",
                 amount = 1,
-                probability = "0.5"
+                probability = 0.5
             }
         }
     },
@@ -264,11 +264,11 @@ data:extend({
             {
                 name = "pm-ore-slag",
                 amount = 1,
-                probability = "0.5"
+                probability = 0.5
             }
         }
     },
-})
+}--[[@as data.RecipePrototype[] ]])
 
 
 

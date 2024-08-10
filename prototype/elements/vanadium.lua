@@ -50,7 +50,7 @@ data:extend({
         {
             {"pm-magnetite", 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-ferrovanadium",
@@ -74,7 +74,7 @@ data:extend({
                 amount_max = 2
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-vanadate-solution",
@@ -93,7 +93,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-vanadate-solution", amount = 5}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-vanadate-solution-seperation",
@@ -116,7 +116,7 @@ data:extend({
                 amount_max = 10
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -136,7 +136,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-vanadate-solution", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-iodine-vanadate-solution-seperation",
@@ -161,5 +161,5 @@ data:extend({
                 amount_max = 4
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

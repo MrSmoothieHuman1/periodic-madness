@@ -66,7 +66,7 @@ data:extend({
         {
             {"pm-molybdenite", 8},
         }
-    }, 
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-molybdenite-crushing",
@@ -87,10 +87,10 @@ data:extend({
             {
                 name = "stone",
                 amount = 2,
-                probability = "0.5"
+                probability = 0.5
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-molybdenum-floating",
@@ -115,7 +115,7 @@ data:extend({
                 probability = 0.1
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -154,5 +154,5 @@ data:extend({
         {
             {"pm-molybdenite", 8},
         }
-    }, 
+    }--[[@as data.RecipePrototype]],
 })

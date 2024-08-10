@@ -117,7 +117,7 @@ data:extend({
         {
             {"pm-pollucite", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-pollucite-crushing",
@@ -145,7 +145,7 @@ data:extend({
                 probability = 0.6
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-pollucite-seperation",
@@ -176,7 +176,7 @@ data:extend({
                 probability = 0.6
             },
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-caesium-iodine-to-antimony",
@@ -302,5 +302,5 @@ data:extend({
             {type = "fluid", name = "pm-caesium", amount = 5},
             {type = "fluid", name = "pm-chlorine", amount = 10}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

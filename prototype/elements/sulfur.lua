@@ -26,7 +26,7 @@ data:extend({
                 amount_max = 2,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-kerosene-hydrosulfurisation",
@@ -53,7 +53,7 @@ data:extend({
                 amount_max = 2,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sulfur-dioxide-cracking",
@@ -75,11 +75,11 @@ data:extend({
             {"sulfur", 2},
             {
                 name = "pm-catalyst-container",
-                probability = "0.9",
+                probability = 0.9,
                 amount = 1
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -105,7 +105,7 @@ data:extend({
                 amount_max = 3,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sulfur-trioxide",
@@ -133,7 +133,7 @@ data:extend({
                 amount_max = 4,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-oleum",
@@ -151,7 +151,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-oleum", amount_min = 10, amount_max = 15}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-better-sulfuric-acid",
@@ -169,6 +169,6 @@ data:extend({
         {
             {type = "fluid", name = "sulfuric-acid", amount = 30}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 
 })

@@ -80,7 +80,7 @@ data:extend({
     {
         {"pm-tungsten-chunks", 8}
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-tungsten-crushing",
@@ -97,7 +97,7 @@ data:extend({
     {
         {"pm-wolframite", 6}
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-wolframite-washing",
@@ -118,7 +118,7 @@ data:extend({
         {"pm-tungsten-crystals", 3},
         {"pm-scheelite", 2}
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-tungsten-seperation",
@@ -138,7 +138,7 @@ data:extend({
     {
         {"pm-tungsten-ore", 4},
     }
-},
+}--[[@as data.RecipePrototype]],
 
 {
     type = "recipe",
@@ -159,7 +159,7 @@ data:extend({
     {
         {type = "fluid", name = "pm-molten-tungsten", amount = 4 + 1}
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-chromic-tungsten-leeching",
@@ -189,7 +189,7 @@ data:extend({
     {
         {"pm-tungsten-chunks", 8}
     }
-},
+}--[[@as data.RecipePrototype]],
 
 {
     type = "recipe",
@@ -211,5 +211,5 @@ data:extend({
         {"pm-tungsten-crystals", 14 + 1},
         {"pm-scheelite", 10}
     }
-},
+}--[[@as data.RecipePrototype]],
 })

@@ -74,7 +74,7 @@ data:extend({
             amount_max = 6,
         },
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-sassolite-seperation",
@@ -100,7 +100,7 @@ data:extend({
             amount_max = 6
         }
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-ethylolamine",
@@ -125,7 +125,7 @@ data:extend({
             amount_max = 3
         }
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-boron-extraction",
@@ -143,7 +143,7 @@ data:extend({
     {
         {type = "fluid", name = "pm-boron", amount = 20},
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-borax",
@@ -162,7 +162,7 @@ data:extend({
     {
         {"pm-borax", 5}
     }
-},
+}--[[@as data.RecipePrototype]],
 {
     type = "recipe",
     name = "pm-boric-oxide",
@@ -180,5 +180,5 @@ data:extend({
     {
         {"pm-boric-oxide", 4}
     }
-}
+}--[[@as data.RecipePrototype]]
 })

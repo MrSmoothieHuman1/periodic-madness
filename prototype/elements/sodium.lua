@@ -55,7 +55,7 @@ data:extend({
             {"pm-sodium-bicarbonate", 10},
             {"pm-ammonium-chloride", 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-ammonium-chloride-seperation",
@@ -81,7 +81,7 @@ data:extend({
                 amount_max = 5
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sodium-bicarbonate-heating",
@@ -106,7 +106,7 @@ data:extend({
                 amount_max = 10
             },
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sodium-carbonate-seperation",
@@ -127,5 +127,5 @@ data:extend({
             {"pm-sodium", 30},
             {type = "fluid", name = "pm-carbon-monoxide", amount = 30}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

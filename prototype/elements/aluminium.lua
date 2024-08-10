@@ -26,7 +26,7 @@ data:extend({
         {
             {"pm-aluminium-ore", 8},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -65,5 +65,5 @@ data:extend({
         {
             {"pm-aluminium-ore", 8},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

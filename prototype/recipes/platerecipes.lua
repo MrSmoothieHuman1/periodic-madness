@@ -290,7 +290,7 @@ data:extend({
         {"pm-kasethal-plate", 2}
     }
 }
-})
+}--[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["iron-plate"].subgroup = "pm-iron-tm"
 data.raw["recipe"]["iron-plate"].order = "e"

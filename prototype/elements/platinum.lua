@@ -40,7 +40,7 @@ data:extend({
             {type = "fluid", name = "pm-nickel-froth", amount = 6 - 1},
             {type = "fluid", name = "pm-nickel-tailings", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-platinum-nickel-froth-seperation",
@@ -68,7 +68,7 @@ data:extend({
                 probability = 0.4 + 0.1
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-platinum-powder-seperation",
@@ -100,7 +100,7 @@ data:extend({
                 amount_max = 4,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-nickel-tailings-looping",
@@ -121,7 +121,7 @@ data:extend({
             {type = "fluid", name = "pm-nickel-tailings", amount_min = 2, amount_max = 8},
             {type = "fluid", name = "pm-nickel-froth", amount = 8 - 3, probability = 0.9}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -153,5 +153,5 @@ data:extend({
                 amount = 1,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

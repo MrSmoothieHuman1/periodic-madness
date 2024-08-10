@@ -19,7 +19,7 @@ data:extend({
             {"pm-sea-salt", 3},
             {type = "fluid", name = "water", amount = 25}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-seawater-desaltination",
@@ -37,7 +37,7 @@ data:extend({
             {type = "fluid", name = "water", amount = 50},
             {type = "item", name = "pm-sea-salt", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sodium-looping",
@@ -62,7 +62,7 @@ data:extend({
             },
             {name = "pm-sodium", amount_min = 0, amount_max = 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-hydrochloric-acid",
@@ -87,7 +87,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-hydrochloric-acid", amount = 5}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -106,7 +106,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-methyl-chloride", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-carbon-tetrachloride-seperation",
@@ -137,5 +137,5 @@ data:extend({
                 amount_max = 12
             }
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

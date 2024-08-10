@@ -49,7 +49,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-brine", amount = 20}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sodium-brine",
@@ -69,7 +69,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-brine", amount = 20}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-low-concentration-lithium-leeching",
@@ -92,7 +92,7 @@ data:extend({
                 amount_max = 4,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-medium-concentration-lithium-leeching",
@@ -115,7 +115,7 @@ data:extend({
                 amount_max = 6,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-high-concentration-lithium-leeching",
@@ -138,7 +138,7 @@ data:extend({
                 amount_max = 12,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-oversaturated-concentration-lithium-leeching",
@@ -162,7 +162,7 @@ data:extend({
             --},
             {"pm-lithium-chloride", 12}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-lithium-chloride-electrolysis",
@@ -187,7 +187,7 @@ data:extend({
                 amount_max = 5
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-lithium-hydroxide",
@@ -213,7 +213,7 @@ data:extend({
                 probability = 0.5
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-lithium-bromide",
@@ -231,5 +231,5 @@ data:extend({
         {
             {"pm-lithium-bromide", 5}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

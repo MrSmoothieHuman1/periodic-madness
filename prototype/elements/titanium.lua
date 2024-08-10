@@ -63,7 +63,7 @@ data:extend({
         {
             {"pm-titanium-chunks", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-titanium-chunk-oxidising",
@@ -81,7 +81,7 @@ data:extend({
         {
             {"pm-titanium-oxide", 6}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-titanium-chlorination",
@@ -102,7 +102,7 @@ data:extend({
             {"pm-titanium-chloride", 2},
             {type = "fluid", name = "pm-oxygen-gas", amount = 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-titanium-chloride-seperation",
@@ -123,7 +123,7 @@ data:extend({
             {type = "fluid", name = "pm-chlorine", amount = 5},
             {"pm-ferrum", 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 --titanium plate is order f
     {
         type = "recipe",
@@ -144,7 +144,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-molten-titanium", amount = 4 + 1}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-chromic-titanium-leeching",
@@ -174,5 +174,5 @@ data:extend({
         {
             {"pm-titanium-chunks", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

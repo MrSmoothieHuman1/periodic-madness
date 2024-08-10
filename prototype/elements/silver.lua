@@ -43,7 +43,7 @@ data:extend({
         {
             {"pm-silver-chunks", 5},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe", 
         name = "pm-silver-chunk-refining",
@@ -81,7 +81,7 @@ data:extend({
             {type = "item", name = "pm-silver-ore", amount = 10},
             {type = "fluid", name = "pm-mercury-vapour", amount = 5}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -127,5 +127,5 @@ data:extend({
         {
             {"pm-silver-chunks", 5},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

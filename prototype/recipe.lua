@@ -279,22 +279,22 @@ data:extend({
     {
         {
             name = "iron-ore",
-            probability = "0.2",
+            probability = 0.2,
             amount = 5,
         },
         {
             name = "pm-nickel-ore",
-            probability = "0.2",
+            probability = 0.2,
             amount = 5,
         },
         {
             name = "pm-zinc-ore",
-            probability = "0.2",
+            probability = 0.2,
             amount = 5,
         },
         {
             name = "copper-ore",
-            probability = "0.2",
+            probability = 0.2,
             amount = 5,
         }
     }
@@ -317,22 +317,22 @@ data:extend({
     {
         {
             name = "iron-ore",
-            probability = "0.4",
+            probability = 0.4,
             amount = 5,
         },
         {
             name = "pm-nickel-ore",
-            probability = "0.4",
+            probability = 0.4,
             amount = 5,
         },
         {
             name = "pm-zinc-ore",
-            probability = "0.4",
+            probability = 0.4,
             amount = 5,
         },
         {
             name = "copper-ore",
-            probability = "0.4",
+            probability = 0.4,
             amount = 5,
         },
     }
@@ -356,27 +356,27 @@ data:extend({
     {
         {
             name = "iron-ore",
-            probability = "0.5",
+            probability = 0.5,
             amount = 5,
         },
         {
             name = "pm-nickel-ore",
-            probability = "0.5",
+            probability = 0.5,
             amount = 5,
         },
         {
             name = "pm-zinc-ore",
-            probability = "0.5",
+            probability = 0.5,
             amount = 5,
         },
         {
             name = "copper-ore",
-            probability = "0.5",
+            probability = 0.5,
             amount = 5,
         },
         {
             name = "pm-manganese-ore",
-            probability = "0.5",
+            probability = 0.5,
             amount = 5,
         },
     }
@@ -766,7 +766,7 @@ data:extend({
 
         {
             name = "pm-glass-shards",
-            probability = "0.5",
+            probability = 0.5,
             amount = 2,
         },
     }
@@ -2881,7 +2881,7 @@ data:extend({
     }
 },
 
-})
+} --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["chemical-science-pack"].order = "e"
 data.raw["recipe"]["production-science-pack"].order = "x"

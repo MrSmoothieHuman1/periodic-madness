@@ -164,4 +164,4 @@ data:extend({
           }
         })
       },
-})
+}--[[@as data.CorpsePrototype[] ]])

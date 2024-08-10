@@ -30,7 +30,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-zinc-tailings", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-zinc-tailings-condensing",
@@ -57,7 +57,7 @@ data:extend({
                 probability = 0.4 + 0.1
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-cadnium-red",
@@ -75,5 +75,5 @@ data:extend({
         {
             {"pm-cadnium-red", 6}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

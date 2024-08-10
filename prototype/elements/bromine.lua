@@ -20,7 +20,7 @@ data:extend({
             {type = "fluid", name = "pm-hydrogen-bromide", amount_min = 14, amount_max = 28},
             {type = "fluid", name = "pm-trace-gas", amount = 5}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-hydrogen-bromide-seperation",
@@ -46,7 +46,7 @@ data:extend({
                 amount_max = 2,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-bromide-ion-oxidisation",
@@ -65,7 +65,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-trace-bromine", amount = 6}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-trace-bromine-condensation",
@@ -82,7 +82,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-bromine", amount = 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-vinyl-bromide",
@@ -102,7 +102,7 @@ data:extend({
             {type = "fluid", name = "pm-vinyl-bromide", amount = 10},
             {type = "fluid", name = "pm-hydrogen-bromide", amount_min = 1, amount_max = 3}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -122,5 +122,5 @@ data:extend({
         {
             {type = "fluid", name = "pm-bromine-ions", amount_min = 20, amount_max = 40}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

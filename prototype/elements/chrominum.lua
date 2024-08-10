@@ -46,7 +46,7 @@ data:extend({
         {
             {"pm-chromite", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-chromite-seperation",
@@ -65,7 +65,7 @@ data:extend({
         {
             {"pm-ferrochrominum", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-ferrochrominum-carbon-seperation",
@@ -89,7 +89,7 @@ data:extend({
                 probability = 0.8
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-chromic-acid",
@@ -108,7 +108,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-chromic-acid", amount = 100}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -139,7 +139,7 @@ data:extend({
         {
             {"pm-chromite", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-chrome-green",
@@ -158,7 +158,7 @@ data:extend({
         {
             {"pm-chrome-green", 6}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })
 
 -- 10 chromic acid = fifty acidic water

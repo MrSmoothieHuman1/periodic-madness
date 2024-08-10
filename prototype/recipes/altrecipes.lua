@@ -64,7 +64,7 @@ data:extend({
     {
         {
             name = "pm-basic-breadboard-mold",
-            probability = "0.7",
+            probability = 0.7,
             amount = 1
         },
         {"pm-basic-breadboard", 2}
@@ -113,7 +113,7 @@ data:extend({
     {
         {
             name = "pm-fluid-breadboard-mold",
-            probability = "0.6",
+            probability = 0.6,
             amount = 1
         },
         {"pm-fluid-breadboard", 2}
@@ -162,7 +162,7 @@ data:extend({
     {
         {
             name = "pm-advanced-breadboard-mold",
-            probability = "0.5",
+            probability = 0.5,
             amount = 1
         },
         {"pm-advanced-circuit-breadboard", 2}
@@ -211,7 +211,7 @@ data:extend({
     {
         {
             name = "pm-processing-breadboard-mold",
-            probability = "0.4",
+            probability = 0.4,
             amount = 1
         },
         {"pm-processing-breadboard", 2}
@@ -470,7 +470,7 @@ data:extend({
     {
         {
             name = "pm-basic-integrated-circuit-mold",
-            probability = "0.6",
+            probability = 0.6,
             amount = 3
         },
         {"pm-basic-integrated-circuits", 3}
@@ -518,7 +518,7 @@ data:extend({
     {
         {
             name = "pm-fluid-integrated-circuit-mold",
-            probability = "0.5",
+            probability = 0.5,
             amount = 3
         },
         {"pm-fluid-integrated-circuits", 3}
@@ -566,7 +566,7 @@ data:extend({
     {
         {
             name = "pm-advanced-integrated-circuit-mold",
-            probability = "0.4",
+            probability = 0.4,
             amount = 3
         },
         {"pm-advanced-integrated-circuits", 3}
@@ -614,7 +614,7 @@ data:extend({
     {
         {
             name = "pm-processing-integrated-circuit-mold",
-            probability = "0.3",
+            probability = 0.3,
             amount = 3
         },
         {"pm-processing-integrated-circuits", 3}
@@ -641,4 +641,4 @@ data:extend({
         {type = "fluid", name = "pm-oxygen-gas", amount = 20}
     }
 },
-})
+}--[[@as data.RecipePrototype[] ]])

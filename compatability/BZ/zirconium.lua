@@ -5,7 +5,7 @@ for _, name in pairs{"zircon"} do
     data.raw["autoplace-control"][name] = nil
     data.raw["resource"][name].autoplace = nil
     -- Autoplace removal fucks presets
-    for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
+    for _, preset in pairs(data.raw["map-gen-presets"]["default"] --[[@as {[string]:data.MapGenPreset}]]) do
         if preset.basic_settings and preset.basic_settings.autoplace_controls then preset.basic_settings.autoplace_controls[name] = nil end
     end
 end
@@ -14,8 +14,8 @@ end
     
     data.raw["autoplace-control"]["zircon"] = nil
     data.raw["resource"]["zircon"] = nil
-    data.raw["item"]["zircon"].hidden = true
-    data.raw["item"]["zirconia"].hidden = true
+    lib.set_flag(data.raw["item"]["zircon"], "hidden")
+    lib.set_flag(data.raw["item"]["zirconia"], "hidden")
     data.raw["item"]["zirconium-plate"].subgroup = "pm-zirconium-tm"
     data.raw["item"]["zirconium-plate"].order = "g"
 

@@ -1282,8 +1282,9 @@ data:extend({
           burning_cooldown = 20,
           water_reflection = boiler_reflection()
         },
-})
-
+} --[[@as data.EntityPrototype]])
+-- NOTE: What the fuck is this? Why do you split the data:extend?
+--- I can understand if you wanted to separate ideas, but without any comments helping with that? useless!
 data:extend({
 
           {
@@ -5640,7 +5641,7 @@ data:extend({
     
             -- light
             --electric_mining_drill_primary_light,
-            electric_mining_drill_secondary_light
+            -- electric_mining_drill_secondary_light
           }
         },
     
@@ -7015,7 +7016,7 @@ data:extend({
     
             -- light
             --electric_mining_drill_primary_light,
-            electric_mining_drill_secondary_light
+            -- electric_mining_drill_secondary_light
           }
         },
     
@@ -9347,7 +9348,7 @@ data:extend({
         }
       },
   
-  })
+  } --[[@as data.EntityPrototype]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
 -- selection_box = {{-2.2, -2.2}, {2.5, 2.6}}, first two are up and down, third is left, fourth is right
