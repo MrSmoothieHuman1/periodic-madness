@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --the recipe chain for Titanium
 
 data:extend({
@@ -56,12 +57,12 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { "pm-transition-metals-ore", 12 },
-      { type = "fluid",             name = "pm-acidic-water", amount = 50 }
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-acidic-water", 50, "fluid")
     },
     results =
     {
-      { "pm-titanium-chunks", 8 }
+      PM.product("pm-titanium-chunks", 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -74,12 +75,12 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { "pm-titanium-chunks", 4 },
-      { "pm-coke",            10 }
+      PM.ingredient("pm-titanium-chunks", 4),
+      PM.ingredient("pm-coke", 10)
     },
     results =
     {
-      { "pm-titanium-oxide", 6 }
+      PM.product("pm-titanium-oxide", 6)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -94,13 +95,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-titanium-oxide", 3 },
-      { type = "fluid",      name = "pm-chlorine", amount = 10 }
+      PM.ingredient("pm-titanium-oxide", 3),
+      PM.ingredient("pm-chlorine", 10, "fluid")
     },
     results =
     {
-      { "pm-titanium-chloride", 2 },
-      { type = "fluid",         name = "pm-oxygen-gas", amount = 4 }
+      PM.product("pm-titanium-chloride", 2),
+      PM.product("pm-oxygen-gas", 4, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -115,13 +116,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-titanium-chloride", 2 }
+      PM.ingredient("pm-titanium-chloride", 2)
     },
     results =
     {
-      { "pm-titanium-ore", 4 },
-      { type = "fluid",    name = "pm-chlorine", amount = 5 },
-      { "pm-ferrum",       4 }
+      PM.product("pm-titanium-ore", 4),
+      PM.product("pm-chlorine", 5, "fluid"),
+      PM.product("pm-ferrum", 4)
     }
   } --[[@as data.RecipePrototype]],
   --titanium plate is order f
@@ -137,12 +138,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",      name = "pm-argon-gas", amount = 40 },
-      { "pm-titanium-oxide", 14 + 1 }
+      PM.ingredient("pm-argon-gas", 40, "fluid"),
+      PM.ingredient("pm-titanium-oxide", 15)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-titanium", amount = 4 + 1 }
+      PM.product("pm-molten-titanium", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -167,12 +168,12 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-transition-metals-ore", 12 },
-      { type = "fluid",             name = "pm-chromic-acid", amount = 10 }
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
     },
     results =
     {
-      { "pm-titanium-chunks", 8 }
+      PM.product("pm-titanium-chunks", 8)
     }
   } --[[@as data.RecipePrototype]],
 })

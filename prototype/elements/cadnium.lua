@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -22,12 +23,12 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-zinc-chunk", 4 },
-      { type = "fluid",  name = "steam", amount = 20 + 1 + 4 }
+      PM.ingredient("pm-zinc-chunk", 4),
+      PM.ingredient("steam", 25, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-zinc-tailings", amount = 10 }
+      PM.product("pm-zinc-tailings", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -43,18 +44,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "fluid", name = "pm-zinc-tailings", amount = 10 },
+      PM.ingredient("pm-zinc-tailings", 10, "fluid"),
     },
     results =
     {
-      { "pm-cadnium-ore", 2 },
-      { "pm-zinc-ore",    2 },
-      {
-        name = "pm-ferrum",
-        amount_min = 1,
-        amount_max = 3,
-        probability = 0.4 + 0.1
-      }
+      PM.product("pm-cadnium-ore", 2),
+      PM.product("pm-zinc-ore", 2),
+      PM.product_range_chance("pm-ferrum", 1, 3, 0.5),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -67,12 +63,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-cadnium-ore", 6 },
-      { "sulfur",         6 },
+      PM.ingredient("pm-cadnium-ore", 6),
+      PM.ingredient("sulfur", 6),
     },
     results =
     {
-      { "pm-cadnium-red", 6 }
+      PM.product("pm-cadnium-red", 6)
     }
   } --[[@as data.RecipePrototype]],
 })

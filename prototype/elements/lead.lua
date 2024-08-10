@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -60,12 +61,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-post-transition-metals-ore", 12 },
-      { type = "fluid",                  name = "pm-chromic-acid", amount = 10 }
+      PM.ingredient("pm-post-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
     },
     results =
     {
-      { "pm-lead-chunks", 4 }
+      PM.product("pm-lead-chunks", 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -79,16 +80,12 @@ data:extend({
     main_product = "pm-lead-powder",
     ingredients =
     {
-      { "pm-lead-chunks", 4 }
+      PM.ingredient("pm-lead-chunks", 4)
     },
     results =
     {
-      { name = "pm-lead-powder", amount_min = 6, amount_max = 8 },
-      {
-        name = "pm-mixed-ore-slag",
-        amount = 2,
-        probability = 0.4 + 0.1
-      }
+      PM.product_range("pm-lead-powder", 6, 8),
+      PM.product_chance("pm-mixed-ore-slag", 2, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -102,13 +99,13 @@ data:extend({
     main_product = "pm-lead-froth",
     ingredients =
     {
-      { "pm-lead-powder", 4 },
-      { type = "fluid",   name = "water", amount = 100 },
+      PM.ingredient("pm-lead-powder", 4),
+      PM.ingredient("water", 100, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-lead-froth",   amount = 20 },
-      { type = "fluid", name = "pm-acidic-water", amount_min = 10, amount_max = 20 },
+      PM.product("pm-lead-froth", 20, "fluid"),
+      PM.product_range("pm-acidic-water", 10, 20, "fluid"),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -122,18 +119,14 @@ data:extend({
     main_product = "pm-impure-lead",
     ingredients =
     {
-      { type = "fluid",             name = "pm-lead-froth", amount = 10 },
-      { "pm-filled-flux-container", 2 }
+      PM.ingredient("pm-lead-froth", 10, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
     {
-      {
-        name = "pm-thallium-ore",
-        amount = 2,
-        probability = 0.2
-      },
-      { name = "pm-flux-container", amount_min = 1, amount_max = 2 },
-      { "pm-impure-lead",           2 }
+      PM.product_chance("pm-thallium-ore", 2, 0.2),
+      PM.product_range("pm-flux-container", 1, 2),
+      PM.product("pm-impure-lead", 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -147,13 +140,13 @@ data:extend({
     main_product = "pm-lead-ore",
     ingredients =
     {
-      { "pm-impure-lead", 2 },
-      { "pm-carbon",      4 },
-      { type = "fluid",   name = "steam", amount = 10 }
+      PM.ingredient("pm-impure-lead", 2),
+      PM.ingredient("pm-carbon", 4),
+      PM.ingredient("steam", 10, "fluid")
     },
     results =
     {
-      { "pm-lead-ore", 4 }
+      PM.product("pm-lead-ore", 4)
     }
   } --[[@as data.RecipePrototype]]
 })

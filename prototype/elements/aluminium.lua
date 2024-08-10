@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -16,21 +17,20 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item", name = "pm-post-transition-metals-ore", amount = 12 },
-      { "pm-sodium",   6 }
+      PM.ingredient("pm-post-transition-metals-ore", 12),
+      PM.ingredient("pm-sodium",   6)
     },
     allow_decomposition = false,
     enabled = false,
     results =
     {
-      { "pm-aluminium-ore", 8 },
+      PM.product("pm-aluminium-ore", 8),
     }
   } --[[@as data.RecipePrototype]],
 
   {
     type = "recipe",
     name = "pm-chromic-transition-aluminium-leeching",
-    icon_size = 64,
     icons =
     {
       {
@@ -55,14 +55,14 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-post-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-chromic-acid",               amount = 2 }
+      PM.ingredient("pm-post-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 2, "fluid")
     },
     allow_decomposition = false,
     enabled = false,
     results =
     {
-      { "pm-aluminium-ore", 8 },
+      PM.product("pm-aluminium-ore", 8),
     }
   } --[[@as data.RecipePrototype]],
 })

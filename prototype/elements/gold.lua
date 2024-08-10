@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --I LOVE GOLLLLLLLD
 
 data:extend({
@@ -45,13 +46,13 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-acidic-water",          amount = 25 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-acidic-water", 25, "fluid"),
     },
     enabled = false,
     results =
     {
-      { "pm-gold-chunks", 5 },
+      PM.product("pm-gold-chunks", 5),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -75,14 +76,14 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-gold-chunks",    amount = 5 },
-      { type = "fluid", name = "pm-liquid-mercury", amount = 10 },
+      PM.ingredient("pm-gold-chunks", 5),
+      PM.ingredient("pm-liquid-mercury", 10, "fluid"),
     },
     enabled = false,
     results =
     {
-      { type = "item",  name = "pm-gold-ore",       amount = 10 },
-      { type = "fluid", name = "pm-mercury-vapour", amount = 5 }
+      PM.product("pm-gold-ore", 10),
+      PM.product("pm-mercury-vapour", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -90,8 +91,11 @@ data:extend({
     name = "pm-gold-plating",
     energy_required = 1,
     enabled = false,
-    ingredients = { { "pm-gold-plate", 2 } },
-    result = "pm-gold-plating"
+    ingredients =
+    {
+      PM.ingredient("pm-gold-plate", 2)
+    },
+    result = "pm-gold-plating" -- FIXME: I think this isn't in 2.0 -@PennyJim
   },
 
   {
@@ -122,13 +126,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-chromic-acid",          amount = 5 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 5, "fluid"),
     },
     enabled = false,
     results =
     {
-      { "pm-gold-chunks", 5 },
+      PM.product("pm-gold-chunks", 5),
     }
   } --[[@as data.RecipePrototype]],
 })

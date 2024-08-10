@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -57,23 +58,15 @@ data:extend({
     main_product = "pm-caesium-rubidium-alum",
     ingredients =
     {
-      { "pm-pollucite",       5 },
-      { type = "fluid",       name = "pm-caesium", amount = 2 },
-      { "pm-potassium",       5 },
-      { "pm-aluminium-plate", 10 }
+      PM.ingredient("pm-pollucite", 5),
+      PM.ingredient("pm-caesium", 2, "fluid"),
+      PM.ingredient("pm-potassium", 5),
+      PM.ingredient("pm-aluminium-plate", 10)
     },
     results =
     {
-      {
-        name = "pm-caesium-rubidium-alum",
-        amount_min = 1,
-        amount_max = 3
-      },
-      {
-        name = "pm-fine-pollucite-powder",
-        amount_min = 2,
-        amount_max = 5
-      }
+      PM.product_range("pm-caesium-rubidium-alum", 1, 3),
+      PM.product_range("pm-fine-pollucite-powder", 2, 5)
     }
   } --[[@as data.RecipePrototype]],
   --fr fr
@@ -98,30 +91,14 @@ data:extend({
     energy_required = 16,
     ingredients =
     {
-      { "pm-caesium-rubidium-alum", 6 }
+      PM.ingredient("pm-caesium-rubidium-alum", 6)
     },
     results =
     {
-      {
-        name = "pm-30-rubidium-alum",
-        amount_min = 0,
-        amount_max = 4,
-      },
-      {
-        name = "pm-50-rubidium-alum",
-        amount_min = 0,
-        amount_max = 3,
-      },
-      {
-        name = "pm-70-rubidium-alum",
-        amount_min = 0,
-        amount_max = 2,
-      },
-      {
-        name = "pm-rubidium-alum",
-        amount = 1,
-        probability = 0.5
-      },
+      PM.product_range("pm-30-rubidium-alum", 0, 4),
+      PM.product_range("pm-50-rubidium-alum", 0, 3),
+      PM.product_range("pm-70-rubidium-alum", 0, 2),
+      PM.product_chance("pm-rubidium-alum", 1, 0.5),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -134,12 +111,12 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-70-rubidium-alum", 2 },
-      { "pm-rubidium-alum",    1 }
+      PM.ingredient("pm-70-rubidium-alum", 2),
+      PM.ingredient("pm-rubidium-alum", 1)
     },
     results =
     {
-      { "pm-rubidium-alum", 2 }
+      PM.product("pm-rubidium-alum", 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -152,12 +129,12 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-50-rubidium-alum", 2 },
-      { "pm-70-rubidium-alum", 1 }
+      PM.ingredient("pm-50-rubidium-alum", 2),
+      PM.ingredient("pm-70-rubidium-alum", 1)
     },
     results =
     {
-      { "pm-70-rubidium-alum", 2 }
+      PM.product("pm-70-rubidium-alum", 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -170,12 +147,12 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-30-rubidium-alum", 2 },
-      { "pm-50-rubidium-alum", 1 }
+      PM.ingredient("pm-30-rubidium-alum", 2),
+      PM.ingredient("pm-50-rubidium-alum", 1)
     },
     results =
     {
-      { "pm-50-rubidium-alum", 2 }
+      PM.product("pm-50-rubidium-alum", 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -189,23 +166,14 @@ data:extend({
     main_product = "pm-rubidium",
     ingredients =
     {
-      { "pm-rubidium-alum", 3 },
-      { type = "fluid",     name = "sulfuric-acid", amount = 15 }
+      PM.ingredient("pm-rubidium-alum", 3),
+      PM.ingredient("sulfuric-acid", 15, "fluid")
     },
     results =
     {
-      { "pm-rubidium", 1 },
-      {
-        type = "fluid",
-        name = "pm-sulfur-trioxide",
-        amount_min = 2,
-        amount_max = 8
-      },
-      {
-        name = "pm-aluminium-plate",
-        amount_min = 0,
-        amount_max = 5
-      },
+      PM.product("pm-rubidium", 1),
+      PM.product_range("pm-sulfur-trioxide", 2, 8, "fluid"),
+      PM.product_range("pm-aluminium-plate", 0, 5),
     }
   } --[[@as data.RecipePrototype]]
 })

@@ -4,6 +4,8 @@ if ... ~= "__periodic-madness__/library" then
   return require("__periodic-madness__/library")
 end
 
+---@alias item_type "fluid"|"item"
+
 ---@class PeriodicLibrary
 local PM = {}
 
@@ -83,8 +85,8 @@ end
 ---Quickly makes the IngredientPrototype as if by using shorthand
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
----@param type "fluid"|"item"?
----@return data.IngredientPrototype
+---@param type item_type?
+---@return data.FluidIngredientPrototype|data.ItemIngredientPrototype.struct
 function PM.ingredient(name, amount, type)
   return {
     name = name,
@@ -92,45 +94,102 @@ function PM.ingredient(name, amount, type)
     type = type or "item"
   }
 end
----Quickly makes the Prodcut result as if using shorthand
+
+---A local function to localize the product function implementaton
 ---@param name data.ItemID|data.FluidID
----@param amount number
----@param type "fluid"|"item"?
----@return data.ProductPrototype
-function PM.product(name, amount, type)
+---@param type item_type?
+---@param amount number?
+---@param amount_min number?
+---@param amount_max number?
+---@param probability number?
+---@param catalyst_amount number?
+---@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+local function super_product(name, type, amount, amount_min, amount_max, probability, catalyst_amount)
   return {
     name = name,
     type = type or "item",
     amount = amount,
-  } --[[@as data.ProductPrototype]]
+    amount_min = amount_min,
+    amount_max = amount_max,
+    probability = probability,
+    catalyst_amount = catalyst_amount,
+  }--[[@as data.ProductPrototype]]
+end
+---Quickly makes the Prodcut result as if using shorthand
+---@param name data.ItemID|data.FluidID
+---@param amount number
+---@param type item_type?
+---@return data.ProductPrototype
+function PM.product(name, amount, type)
+  return super_product(name, type, amount)
 end
 ---Acts like its own short-hand for a product with a range of possible amounts
 ---@param name data.ItemID|data.FluidID
 ---@param amount_min number
 ---@param amount_max number
----@param type "fluid"|"item"?
+---@param type item_type?
 ---@return data.ProductPrototype
 function PM.product_range(name, amount_min, amount_max, type)
-  return {
-    name = name,
-    type = type or "item",
-    amount_min = amount_min,
-    amount_max = amount_max,
-  } --[[@as data.ProductPrototype]]
+  return super_product(name, type, nil, amount_min, amount_max)
 end
 ---Acts like its own short-hand for a probabilistic product
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param probability number
----@param type "fluid"|"item"?
+---@param type item_type?
 ---@return data.ProductPrototype
 function PM.product_chance(name, amount, probability, type)
-  return {
-    name = name,
-    type = type or "item",
-    amount = amount,
-    probability = probability
-  } --[[@as data.ProductPrototype]]
+  return super_product(name, type, amount, nil, nil, probability)
+end
+---Builds a probabilistic product with a range of output
+---@param name data.ItemID|data.FluidID
+---@param amount_min number
+---@param amount_max number
+---@param probability number
+---@param type item_type?
+---@return data.ProductPrototype
+function PM.product_range_chance(name, amount_min, amount_max, probability, type)
+  return super_product(name, type, nil, amount_min, amount_max, probability)
+end
+---Builds a product that acts as a catalyst
+---@param name data.ItemID|data.FluidID
+---@param amount number
+---@param catalyst_amount number
+---@param type item_type?
+---@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+function PM.catalyst(name, amount, catalyst_amount, type)
+  return super_product(name, type, amount, nil, nil, nil, catalyst_amount)
+end
+---Builds a catalyst product that has a range of results
+---@param name data.ItemID|data.FluidID
+---@param amount_min number
+---@param amount_max number
+---@param catalyst_amount number
+---@param type item_type?
+---@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+function PM.catalyst_range(name, amount_min, amount_max, catalyst_amount, type)
+  return super_product(name, type, nil, amount_min, amount_max, nil, catalyst_amount)
+end
+---Builds a catalyst product that has a chance of being returned
+---@param name data.ItemID|data.FluidID
+---@param amount number
+---@param probability number
+---@param catalyst_amount number
+---@param type item_type?
+---@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+function PM.catalyst_chance(name, amount, probability, catalyst_amount, type)
+  return super_product(name, type, amount, nil, nil, probability, catalyst_amount)
+end
+---Builds a catalyst product that has a chance to return a range of results
+---@param name data.ItemID|data.FluidID
+---@param amount_min number
+---@param amount_max number
+---@param probability number
+---@param catalyst_amount number
+---@param type item_type?
+---@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+function PM.catalyst_range_chance(name, amount_min, amount_max, probability, catalyst_amount, type)
+  return super_product(name, type, nil, amount_min, amount_max, probability, catalyst_amount)
 end
 
 -- MARK: Entity Functions

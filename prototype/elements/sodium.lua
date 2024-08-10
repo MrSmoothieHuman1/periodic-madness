@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -45,14 +46,14 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      { "pm-sea-salt",  10 },
-      { type = "fluid", name = "pm-ammonia-gas", amount = 10 },
-      { type = "fluid", name = "water",          amount = 10 }
+      PM.ingredient("pm-sea-salt", 10),
+      PM.ingredient("pm-ammonia-gas", 10, "fluid"),
+      PM.ingredient("water", 10, "fluid")
     },
     results =
     {
-      { "pm-sodium-bicarbonate", 10 },
-      { "pm-ammonium-chloride",  10 }
+      PM.product("pm-sodium-bicarbonate", 10),
+      PM.product("pm-ammonium-chloride", 10)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -67,18 +68,14 @@ data:extend({
     energy_required = 5,
     ingredients =
     {
-      { "pm-ammonium-chloride", 10 },
-      { "pm-calcium-ore",       6 }
+      PM.ingredient("pm-ammonium-chloride", 10),
+      PM.ingredient("pm-calcium-ore", 6)
     },
     results =
     {
-      { type = "fluid", name = "pm-ammonia-gas", amount = 10 },
-      { type = "fluid", name = "pm-chlorine",    amount = 20 },
-      {
-        name = "pm-calcium-chloride",
-        amount_min = 2,
-        amount_max = 5
-      }
+      PM.product("pm-ammonia-gas", 10, "fluid"),
+      PM.product("pm-chlorine", 20 , "fluid"),
+      PM.product_range("pm-calcium-chloride", 2, 5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -92,18 +89,13 @@ data:extend({
     main_product = "pm-sodium-carbonate",
     ingredients =
     {
-      { "pm-sodium-bicarbonate", 10 },
-      { type = "fluid",          name = "steam", amount = 10 }
+      PM.ingredient("pm-sodium-bicarbonate", 10),
+      PM.ingredient("steam", 10, "fluid")
     },
     results =
     {
-      { "pm-sodium-carbonate", 5 },
-      {
-        type = "fluid",
-        name = "pm-carbon-dioxide-gas",
-        amount_min = 4,
-        amount_max = 10
-      },
+      PM.product("pm-sodium-carbonate", 5),
+      PM.product_range("pm-carbon-dioxide-gas", 4, 10, "fluid"),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -118,13 +110,13 @@ data:extend({
     energy_required = 9,
     ingredients =
     {
-      { "pm-sodium-carbonate", 15 },
-      { "pm-carbon",           10 }
+      PM.ingredient("pm-sodium-carbonate", 15),
+      PM.ingredient("pm-carbon", 10)
     },
     results =
     {
-      { "pm-sodium",    30 },
-      { type = "fluid", name = "pm-carbon-monoxide", amount = 30 }
+      PM.product("pm-sodium", 30),
+      PM.product("pm-carbon-monoxide", 30, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })

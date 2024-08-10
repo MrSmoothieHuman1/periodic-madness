@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -41,12 +42,12 @@ data:extend({
     main_product = "pm-sodium-hydroxide",
     ingredients =
     {
-      { "pm-sea-salt", 20 },
+      PM.ingredient("pm-sea-salt", 20),
     },
     results =
     {
-      { type = "fluid", name = "pm-sodium-hydroxide", amount = 10 },
-      { type = "fluid", name = "pm-chlorine",         probability = 0.8, amount = 10 }
+      PM.product("pm-sodium-hydroxide", 10, "fluid"),
+      PM.product_chance("pm-chlorine", 10, 0.8, "fluid")
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -60,13 +61,13 @@ data:extend({
     main_product = "pm-gallium-chunks",
     ingredients =
     {
-      { "pm-aluminium-ore",              4 },
-      { "pm-post-transition-metals-ore", 12 }
+      PM.ingredient("pm-aluminium-ore", 4),
+      PM.ingredient("pm-post-transition-metals-ore", 12)
     },
     results =
     {
-      { name = "pm-gallium-chunks", amount_min = 6, amount_max = 8 },
-      { "pm-aluminium-ore",         2 }
+      PM.product_range("pm-gallium-chunks", 6, 8),
+      PM.product("pm-aluminium-ore", 2)
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -80,13 +81,13 @@ data:extend({
     main_product = "pm-gallium-liqour",
     ingredients =
     {
-      { type = "fluid",      name = "pm-sodium-hydroxide", amount = 2 },
-      { "pm-gallium-chunks", 4 }
+      PM.ingredient("pm-sodium-hydroxide", 2, "fluid"),
+      PM.ingredient("pm-gallium-chunks", 4)
     },
     results =
     {
-      { type = "fluid", name = "pm-gallium-liqour", amount = 6 },
-      { "pm-sodium",    2 }
+      PM.product("pm-gallium-liqour", 6, "fluid"),
+      PM.product("pm-sodium", 2)
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -101,37 +102,32 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { "pm-sodium",    6 },
-      { type = "fluid", name = "water", amount = 10 }
+      PM.ingredient("pm-sodium", 6),
+      PM.ingredient("water", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-sodium-hydroxide", amount = 10 },
-      {
-        type = "fluid",
-        name = "pm-hydrogen-gas",
-        amount = 4,
-        probability = 0.8
-      }
+      PM.product("pm-sodium-hydroxide", 10, "fluid"),
+      PM.product_chance("pm-hydrogen-gas", 4, 0.8, "fluid")
     }
   }--[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-resin-ion-exchange-beads",
     enabled = false,
-    energy_required = 7.4 + 0.1,
+    energy_required = 7.5,
     category = "chemistry",
     subgroup = "pm-gallium-ptm",
     order = "e",
     ingredients =
     {
-      { type = "fluid", name = "pm-resin",      amount = 80 },
-      { type = "fluid", name = "pm-butane-gas", amount = 20 },
-      { "sulfur",       2 }
+      PM.ingredient("pm-resin", 80, "fluid"),
+      PM.ingredient("pm-butane-gas", 20, "fluid"),
+      PM.ingredient("sulfur", 2)
     },
     results =
     {
-      { "pm-ion-exchange-beads", 10 }
+      PM.product("pm-ion-exchange-beads", 10)
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -145,18 +141,13 @@ data:extend({
     main_product = "pm-liquid-gallium",
     ingredients =
     {
-      { type = "fluid",          name = "pm-gallium-liqour", amount = 20 },
-      { "pm-ion-exchange-beads", 4 + 1 }
+      PM.ingredient("pm-gallium-liqour", 20, "fluid"),
+      PM.ingredient("pm-ion-exchange-beads", 5)
     },
     results =
     {
-      { type = "fluid", name = "pm-liquid-gallium", amount = 4 + 1 },
-      {
-        name = "pm-ion-exchange-beads",
-        catalyst_amount = 4 + 1,
-        amount_min = 2,
-        amount_max = 3 + 2
-      }
+      PM.product("pm-liquid-gallium", 5, "fluid"),
+      PM.catalyst_range("pm-ion-exchange-beads", 2, 5, 5)
     }
   }--[[@as data.RecipePrototype]]
 })

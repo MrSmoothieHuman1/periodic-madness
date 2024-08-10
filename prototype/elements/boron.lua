@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -58,21 +59,13 @@ data:extend({
     main_product = "pm-sassolite",
     ingredients =
     {
-      { type = "fluid",     name = "pm-seawater", amount = 50 },
-      { "pm-metalloid-ore", 6 }
+      PM.ingredient("pm-seawater", 50, "fluid"),
+      PM.ingredient("pm-metalloid-ore", 6)
     },
     results =
     {
-      {
-        name = "pm-sassolite",
-        amount_min = 2,
-        amount_max = 5
-      },
-      {
-        name = "pm-calcite",
-        amount_min = 1,
-        amount_max = 6,
-      },
+      PM.product_range("pm-sassolite", 2, 5),
+      PM.product_range("pm-calcite", 1, 6),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -86,19 +79,15 @@ data:extend({
     main_product = "pm-diluted-boric-acid",
     ingredients =
     {
-      { "pm-sassolite", 6 },
-      { type = "fluid", name = "water",                amount = 50 },
-      { type = "fluid", name = "pm-hydrochloric-acid", amount = 50 }
+      PM.ingredient("pm-sassolite", 6),
+      PM.ingredient("water", 50, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-diluted-boric-acid", amount = 20 },
-      { "sulfur",       4 },
-      {
-        name = "pm-ferrum",
-        amount_min = 2,
-        amount_max = 6
-      }
+      PM.product("pm-diluted-boric-acid", 20, "fluid"),
+      PM.product("sulfur", 4),
+      PM.product_range("pm-ferrum", 2, 6)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -112,18 +101,14 @@ data:extend({
     main_product = "pm-ethylolamine",
     ingredients =
     {
-      { type = "fluid",               name = "pm-ethylene-glycol", amount = 20 },
-      { "pm-indium-plate",            3 },
-      { "pm-vanadium-oxide-catalyst", 3 }
+      PM.ingredient("pm-ethylene-glycol", 20, "fluid"),
+      PM.ingredient("pm-indium-plate", 3),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 3)
     },
     results =
     {
-      { type = "fluid", name = "pm-ethylolamine", amount = 10 },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 1,
-        amount_max = 3
-      }
+      PM.product("pm-ethylolamine", 10, "fluid"),
+      PM.product_range("pm-catalyst-container", 1, 3)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -136,12 +121,12 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { type = "fluid", name = "pm-diluted-boric-acid", amount = 10 },
-      { type = "fluid", name = "pm-ethylolamine",       amount = 10 }
+      PM.ingredient("pm-diluted-boric-acid", 10, "fluid"),
+      PM.ingredient("pm-ethylolamine", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-boron", amount = 20 },
+      PM.product("pm-boron", 20, "fluid"),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -154,13 +139,13 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { type = "fluid", name = "pm-boron",      amount = 5 },
-      { type = "fluid", name = "pm-oxygen-gas", amount = 5 },
-      { "pm-sodium",    10 }
+      PM.ingredient("pm-boron", 5, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 5, "fluid"),
+      PM.ingredient("pm-sodium", 10)
     },
     results =
     {
-      { "pm-borax", 5 }
+      PM.product("pm-borax", 5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -173,12 +158,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-borax",     2 },
-      { type = "fluid", name = "sulfuric-acid", amount = 12 }
+      PM.ingredient("pm-borax",     2),
+      PM.ingredient("sulfuric-acid", 12, "fluid")
     },
     results =
     {
-      { "pm-boric-oxide", 4 }
+      PM.product("pm-boric-oxide", 4)
     }
   } --[[@as data.RecipePrototype]]
 })

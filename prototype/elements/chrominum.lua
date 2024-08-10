@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -38,12 +39,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-transition-metals-ore", 12 },
-      { type = "fluid",             name = "pm-acidic-water", amount = 40 + 10 }
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-acidic-water", 50, "fluid")
     },
     results =
     {
-      { "pm-chromite", 8 }
+      PM.product("pm-chromite", 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -56,13 +57,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-chromite",  2 },
-      { "pm-carbon",    6 },
-      { type = "fluid", name = "steam", amount = 20 }
+      PM.ingredient("pm-chromite", 2),
+      PM.ingredient("pm-carbon", 6),
+      PM.ingredient("steam", 20, "fluid")
     },
     results =
     {
-      { "pm-ferrochrominum", 4 },
+      PM.product("pm-ferrochrominum", 4),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -76,17 +77,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-ferrochrominum", 4 },
-      { "pm-calcium-ore",    2 },
+      PM.ingredient("pm-ferrochrominum", 4),
+      PM.ingredient("pm-calcium-ore", 2),
     },
     results =
     {
-      { name = "pm-chrominum-ore", amount_min = 2, amount_max = 4 },
-      {
-        name = "pm-ferrum",
-        amount = 2,
-        probability = 0.8
-      }
+      PM.product_range("pm-chrominum-ore", 2, 4),
+      PM.product_chance("pm-ferrum", 2, 0.8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -99,13 +96,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-chrominum-ore", 12 },
-      { type = "fluid",     name = "sulfuric-acid", amount = 10 },
-      { "pm-sodium",        10 }
+      PM.ingredient("pm-chrominum-ore", 12),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-sodium", 10)
     },
     results =
     {
-      { type = "fluid", name = "pm-chromic-acid", amount = 100 }
+      PM.product("pm-chromic-acid", 100, "fluid")
     }
   } --[[@as data.RecipePrototype]],
 
@@ -131,12 +128,12 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { "pm-transition-metals-ore", 12 },
-      { type = "fluid",             name = "pm-chromic-acid", amount = 10 }
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
     },
     results =
     {
-      { "pm-chromite", 8 }
+      PM.product("pm-chromite", 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -149,13 +146,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-chrominum-ore", 12 },
-      { "sulfur",           6 },
-      { type = "fluid",     name = "pm-oxygen-gas", amount = 18 }
+      PM.ingredient("pm-chrominum-ore", 12),
+      PM.ingredient("sulfur", 6),
+      PM.ingredient("pm-oxygen-gas", 18, "fluid")
     },
     results =
     {
-      { "pm-chrome-green", 6 }
+      PM.product("pm-chrome-green", 6)
     }
   } --[[@as data.RecipePrototype]],
 })

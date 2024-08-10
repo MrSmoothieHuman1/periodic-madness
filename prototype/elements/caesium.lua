@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -109,12 +110,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-alkali-metals-ore", 16 },
-      { type = "fluid",         name = "pm-chromic-acid", amount = 20 }
+      PM.ingredient("pm-alkali-metals-ore", 16),
+      PM.ingredient("pm-chromic-acid", 20, "fluid")
     },
     results =
     {
-      { "pm-pollucite", 8 }
+      PM.product("pm-pollucite", 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -128,21 +129,12 @@ data:extend({
     main_product = "pm-fine-pollucite-powder",
     ingredients =
     {
-      { "pm-pollucite", 12 },
+      PM.ingredient("pm-pollucite", 12),
     },
     results =
     {
-      {
-        name = "pm-fine-pollucite-powder",
-        amount_min = 6,
-        amount_max = 8
-      },
-      {
-        name = "pm-alkali-metals-ore",
-        amount_min = 0,
-        amount_max = 2,
-        probability = 0.6
-      }
+      PM.product_range("pm-fine-pollucite-powder", 6, 8),
+      PM.product_range_chance("pm-alkali-metals-ore", 0, 2, 0.6)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -156,24 +148,14 @@ data:extend({
     main_product = "pm-caesium-hexachlorocerate",
     ingredients =
     {
-      { "pm-fine-pollucite-powder", 12 },
-      { type = "fluid",             name = "pm-hydrochloric-acid", amount = 50 }
+      PM.ingredient("pm-fine-pollucite-powder", 12),
+      PM.ingredient("pm-hydrochloric-acid", 50, "fluid")
     },
     results =
     {
-      { "pm-caesium-hexachlorocerate", 2 },
-      {
-        name = "pm-caesium-iodine-chloride",
-        amount_min = 2,
-        amount_max = 5,
-        probability = 0.4
-      },
-      {
-        name = "pm-caesium-antimony-chloride",
-        amount_min = 2,
-        amount_max = 5,
-        probability = 0.6
-      },
+      PM.product("pm-caesium-hexachlorocerate", 2),
+      PM.product_range_chance("pm-caesium-iodine-chloride", 2, 5, 0.4),
+      PM.product_range_chance("pm-caesium-antimony-chloride", 2, 5, 0.6),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -187,17 +169,13 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { "pm-caesium-iodine-chloride",  4 },
-      { "pm-caesium-hexachlorocerate", 4 }
+      PM.ingredient("pm-caesium-iodine-chloride", 4),
+      PM.ingredient("pm-caesium-hexachlorocerate", 4)
     },
     results =
     {
-      { "pm-caesium-antimony-chloride", 4 },
-      {
-        name = "pm-iodine",
-        amount_min = 0,
-        amount_max = 4
-      }
+      PM.product("pm-caesium-antimony-chloride", 4),
+      PM.product_range("pm-iodine", 0, 4)
     }
   },
   {
@@ -211,17 +189,13 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { "pm-caesium-antimony-chloride", 4 },
-      { "pm-caesium-hexachlorocerate",  2 }
+      PM.ingredient("pm-caesium-antimony-chloride", 4),
+      PM.ingredient("pm-caesium-hexachlorocerate", 2)
     },
     results =
     {
-      { "pm-caesium-iodine-chloride", 4 },
-      {
-        name = "pm-antimony-ore",
-        amount_min = 0,
-        amount_max = 4
-      }
+      PM.product("pm-caesium-iodine-chloride", 4),
+      PM.product_range("pm-antimony-ore", 0, 4)
     }
   },
   {
@@ -235,12 +209,12 @@ data:extend({
     order = "ea",
     ingredients =
     {
-      { "pm-caesium-hexachlorocerate", 20 }
+      PM.ingredient("pm-caesium-hexachlorocerate", 20)
     },
     results =
     {
-      { "pm-caesium-iodine-chloride",   4 },
-      { "pm-caesium-antimony-chloride", 4 },
+      PM.product("pm-caesium-iodine-chloride", 4),
+      PM.product("pm-caesium-antimony-chloride", 4),
     }
   },
   {
@@ -253,13 +227,13 @@ data:extend({
     main_product = "pm-caesium-chloride",
     ingredients =
     {
-      { "pm-caesium-iodine-chloride",   6 },
-      { "pm-caesium-antimony-chloride", 3 },
-      { "pm-calcium-ore",               6 }
+      PM.ingredient("pm-caesium-iodine-chloride", 6),
+      PM.ingredient("pm-caesium-antimony-chloride", 3),
+      PM.ingredient("pm-calcium-ore", 6)
     },
     results =
     {
-      { "pm-caesium-chloride", 4 }
+      PM.product("pm-caesium-chloride", 4)
     }
   },
   {
@@ -272,13 +246,13 @@ data:extend({
     main_product = "pm-caesium-chloride",
     ingredients =
     {
-      { "pm-caesium-iodine-chloride",   6 },
-      { "pm-caesium-antimony-chloride", 3 },
-      { "pm-calcium-chloride",          3 }
+      PM.ingredient("pm-caesium-iodine-chloride", 6),
+      PM.ingredient("pm-caesium-antimony-chloride", 3),
+      PM.ingredient("pm-calcium-chloride", 3)
     },
     results =
     {
-      { "pm-caesium-chloride", 6 }
+      PM.product("pm-caesium-chloride", 6)
     }
   },
   {
@@ -292,14 +266,14 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { "pm-caesium-chloride", 6 },
-      { type = "fluid",        name = "pm-ammonia-gas", amount = 10 },
-      { "pm-potassium",        5 }
+      PM.ingredient("pm-caesium-chloride", 6),
+      PM.ingredient("pm-ammonia-gas", 10, "fluid"),
+      PM.ingredient("pm-potassium", 5)
     },
     results =
     {
-      { type = "fluid", name = "pm-caesium",  amount = 5 },
-      { type = "fluid", name = "pm-chlorine", amount = 10 }
+      PM.product("pm-caesium", 5, "fluid"),
+      PM.product("pm-chlorine", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })

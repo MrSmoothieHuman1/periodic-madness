@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -41,12 +42,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-post-transition-metals-ore", 12 },
-      { type = "fluid",                  name = "pm-chromic-acid", amount = 10 }
+      PM.ingredient("pm-post-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
     },
     results =
     {
-      { "pm-bismuth-chunks", 4 }
+      PM.product("pm-bismuth-chunks", 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -60,21 +61,17 @@ data:extend({
     main_product = "pm-bismite",
     ingredients =
     {
-      { "pm-molybdenum-ore",        4 },
-      { "pm-tin-ore",               4 },
-      { "pm-filled-flux-container", 1 },
-      { "pm-bismuth-chunks",        6 },
-      { type = "fluid",             name = "pm-chlorine", amount = 12 }
+      PM.ingredient("pm-molybdenum-ore", 4),
+      PM.ingredient("pm-tin-ore", 4),
+      PM.ingredient("pm-filled-flux-container", 1),
+      PM.ingredient("pm-bismuth-chunks", 6),
+      PM.ingredient("pm-chlorine", 12, "fluid")
     },
     results =
     {
-      { "pm-bismite",        4 },
-      { "pm-flux-container", 1 },
-      {
-        name = "pm-tin-ore",
-        amount_min = 1,
-        amount_max = 3
-      }
+      PM.product("pm-bismite", 4),
+      PM.product("pm-flux-container", 1),
+      PM.product_range("pm-tin-ore", 1, 3)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -88,17 +85,13 @@ data:extend({
     main_product = "pm-bismuth-ore",
     ingredients =
     {
-      { type = "fluid", name = "pm-liquid-mercury", amount = 40 + 10 },
-      { "pm-bismite",   4 }
+      PM.ingredient("pm-liquid-mercury", 50, "fluid"),
+      PM.ingredient("pm-bismite", 4)
     },
     results =
     {
-      { "pm-bismuth-ore", 8 },
-      {
-        name = "pm-mixed-ore-slag",
-        amount_min = 2,
-        amount_max = 4 + 1
-      }
+      PM.product("pm-bismuth-ore", 8),
+      PM.product_range("pm-mixed-ore-slag", 2, 5)
     }
   } --[[@as data.RecipePrototype]]
 })

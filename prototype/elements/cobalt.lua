@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -37,14 +38,14 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-copper-chunk", 4 },
-      { type = "fluid",    name = "water",           amount = 20 + 1 + 4 },
-      { type = "fluid",    name = "pm-acidic-water", amount = 10 }
+      PM.ingredient("pm-copper-chunk", 4),
+      PM.ingredient("water", 25, "fluid"),
+      PM.ingredient("pm-acidic-water", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-copper-froth",    amount = 6 - 1 },
-      { type = "fluid", name = "pm-copper-tailings", amount = 10 }
+      PM.product("pm-copper-froth", 5, "fluid"),
+      PM.product("pm-copper-tailings", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -59,23 +60,15 @@ data:extend({
     energy_required = 6.4,
     ingredients =
     {
-      { type = "fluid", name = "pm-copper-froth", amount = 4 + 1 },
-      { "pm-sand",      6 },
-      { "pm-coke",      4 }
+      PM.ingredient("pm-copper-froth", 5, "fluid"),
+      PM.ingredient("pm-sand", 6),
+      PM.ingredient("pm-coke", 4)
     },
     results =
     {
-      { "copper-ore", 2 },
-      {
-        name = "pm-cobaltite",
-        amount_min = 1,
-        amount_max = 3,
-        probability = 0.69
-      },
-      {
-        name = "pm-cobalt-blue",
-        amount = 2,
-      }
+      PM.product("copper-ore", 2),
+      PM.product_range_chance("pm-cobaltite", 1, 3, 0.69),
+      PM.product("pm-cobalt-blue", 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -90,16 +83,12 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      { "pm-cobalt-blue", 4 }
+      PM.ingredient("pm-cobalt-blue", 4)
     },
     results =
     {
-      { "pm-cobalt-ore", 2 },
-      {
-        name = "pm-aluminium-ore",
-        amount_min = 1,
-        amount_max = 4
-      }
+      PM.product("pm-cobalt-ore", 2),
+      PM.product_range("pm-aluminium-ore", 1, 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -114,13 +103,13 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { type = "fluid", name = "pm-copper-tailings", amount = 10 },
-      { type = "fluid", name = "pm-acidic-water",    amount = 7 - 2 }
+      PM.ingredient("pm-copper-tailings", 10, "fluid"),
+      PM.ingredient("pm-acidic-water", 5, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-copper-tailings", amount_min = 2, amount_max = 8 },
-      { type = "fluid", name = "pm-copper-froth",    amount = 8 - 3, probability = 0.7 }
+      PM.product_range("pm-copper-tailings", 2, 8, "fluid"),
+      PM.product_chance("pm-copper-froth", 5, 0.7, "fluid")
     }
   } --[[@as data.RecipePrototype]],
 
@@ -136,26 +125,15 @@ data:extend({
     energy_required = 3.2,
     ingredients =
     {
-      { type = "fluid",             name = "pm-copper-froth", amount = 4 + 1 },
-      { "pm-filled-flux-container", 1 }
+      PM.ingredient("pm-copper-froth", 5, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
-      { "copper-ore", 2 },
-      {
-        name = "pm-cobaltite",
-        amount = 1,
-        probability = 0.69
-      },
-      {
-        name = "pm-cobalt-blue",
-        amount = 3,
-      },
-      {
-        name = "pm-flux-container",
-        probability = 0.66,
-        amount = 1,
-      }
+      PM.product("copper-ore", 2),
+      PM.product_chance("pm-cobaltite", 1, 0.69),
+      PM.product("pm-cobalt-blue", 3),
+      PM.product_chance("pm-flux-container", 1, 0.66),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -168,13 +146,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-cobalt-plate",    6 },
-      { "pm-aluminium-plate", 12 },
-      { type = "fluid",       name = "pm-oxygen-gas", amount = 24 }
+      PM.ingredient("pm-cobalt-plate", 6),
+      PM.ingredient("pm-aluminium-plate", 12),
+      PM.ingredient("pm-oxygen-gas", 24, "fluid")
     },
     results =
     {
-      { "pm-cobalt-blue", 6 }
+      PM.product("pm-cobalt-blue", 6)
     }
   } --[[@as data.RecipePrototype]],
 })

@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -12,12 +13,12 @@ data:extend({
     energy_required = 0.74 + 0.01,
     ingredients =
     {
-      { type = "fluid", name = "pm-seawater", amount = 50 }
+      PM.ingredient("pm-seawater", 50, "fluid")
     },
     results =
     {
-      { "pm-sea-salt",  3 },
-      { type = "fluid", name = "water", amount = 25 }
+      PM.product("pm-sea-salt",  3),
+      PM.product("water", 25, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -31,11 +32,14 @@ data:extend({
     hide_from_player_crafting = true,
     enabled = false,
     energy_required = 0.74 + 0.01,
-    ingredients = { { type = "fluid", name = "pm-seawater", amount = 20 * 2 + 30 + 4 + 1 } },
+    ingredients =
+    {
+      PM.ingredient("pm-seawater", 75, "fluid")
+    },
     results =
     {
-      { type = "fluid", name = "water",       amount = 50 },
-      { type = "item",  name = "pm-sea-salt", amount = 10 }
+      PM.product("water", 50, "fluid"),
+      PM.product("pm-sea-salt", 10)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -49,18 +53,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-sodium", 4 }
+      PM.ingredient("pm-sodium", 4)
     },
     results =
     {
-      {
-        type = "fluid",
-        name = "pm-chlorine",
-        probability = 0.2,
-        amount_min = 2,
-        amount_max = 5,
-      },
-      { name = "pm-sodium", amount_min = 0, amount_max = 2 }
+      PM.product_range_chance("pm-chlorine", 2, 5, 0.2, "fluid"),
+      PM.product_range("pm-sodium", 0, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -80,12 +78,12 @@ data:extend({
     energy_required = 0.25,
     ingredients =
     {
-      { type = "fluid", name = "pm-hydrogen-gas", amount = 5 },
-      { type = "fluid", name = "pm-chlorine",     amount = 5 },
+      PM.ingredient("pm-hydrogen-gas", 5, "fluid"),
+      PM.ingredient("pm-chlorine", 5, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-hydrochloric-acid", amount = 5 }
+      PM.product("pm-hydrochloric-acid", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
 
@@ -99,12 +97,12 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { type = "fluid", name = "pm-methanol",          amount = 5 },
-      { type = "fluid", name = "pm-hydrochloric-acid", amount = 15 }
+      PM.ingredient("pm-methanol", 5, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 15, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-methyl-chloride", amount = 10 }
+      PM.product("pm-methyl-chloride", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -118,24 +116,14 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-hydrogen-gas",         amount = 10 },
-      { type = "fluid", name = "pm-carbon-tetrachloride", amount = 20 },
-      { "iron-plate",   6 } --should be catalyst for hard mode
+      PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
+      PM.ingredient("pm-carbon-tetrachloride", 20, "fluid"),
+      PM.ingredient("iron-plate", 6) --should be catalyst for hard mode
     },
     results =
     {
-      {
-        type = "fluid",
-        name = "pm-chlorine",
-        amount_min = 8,
-        amount_max = 12
-      },
-      {
-        type = "fluid",
-        name = "pm-chloroform",
-        amount_min = 6,
-        amount_max = 12
-      }
+      PM.product_range("pm-chlorine", 8, 12, "fluid"),
+      PM.product_range("pm-chloroform", 6, 12, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })
