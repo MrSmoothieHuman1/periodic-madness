@@ -1,5 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.200
+Date: 2024-08-09
   The metalloid? i hardly know her! Update:
 
   Additions:
@@ -31,6 +32,7 @@ Version: 0.5.200
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.115
+Date: 2023-08-02
   The clockman reference Update:
 
   Fixes:
@@ -39,6 +41,7 @@ Version: 0.5.115
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.114
+Date: 2023-07-26
   The hawaii: part 1 1 Update:
 
   Changes:
@@ -50,12 +53,14 @@ Version: 0.5.114
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.113
+Date: 2023-07-25
   The hello, i like money Update:
 
   Fixes:
     - Fixed assembler 3's not hiding its fluid boxes when no fluid recipe is selected.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.112
+Date: 2023-07-21
   The pennyjim if you read this you have to play PM, i dont make the rules Update:
 
   Fixes:
@@ -63,6 +68,7 @@ Version: 0.5.112
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.111
+Date: 2023-07-21
   The weird al coalovic Update:
 
   Fixes:
@@ -70,6 +76,7 @@ Version: 0.5.111
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.110
+Date: 2023-07-20
   The you'd think i'd have actually added a way to deal with byproducts in a 2 month long update but Whoospies! Update:
 
   Additions:
@@ -77,6 +84,7 @@ Version: 0.5.110
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.100
+Date: 2023-07-19
   The i was gonna take a break but you cant take the modding out of a autist Update:
 
   Additions:
@@ -87,6 +95,7 @@ Version: 0.5.100
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.000
+Date: 2023-07-18
   The rushed Update:
 
   Additions:
@@ -145,6 +154,7 @@ Version: 0.5.000
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.800
+Date: 2023-07-18
   The i was eepy Update:
 
   Changes:
@@ -152,6 +162,7 @@ Version: 0.4.800
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.799
+Date: 2023-07-17
   The main content update like today or tommorow Update:
 
   Changes:
@@ -159,6 +170,7 @@ Version: 0.4.799
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.797
+Date: 2023-07-09
   The finally interacted with other players Update:
 
   Additions:
@@ -169,6 +181,7 @@ Version: 0.4.797
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.796
+Date: 2023-07-07
   The im cooking im cooking wait till like mid july Update:
 
   Changes:
@@ -179,6 +192,7 @@ Version: 0.4.796
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.795
+Date: 2023-07-05
   The meant to do it ages ago but mehhh Update:
 
   Fixes:
@@ -186,6 +200,7 @@ Version: 0.4.795
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.794
+Date: 2023-07-03
   The i think i got bromine poisoning from pouring it in public Update:
 
   Changes:
@@ -198,6 +213,7 @@ Version: 0.4.794
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.793
+Date: 2023-07-01
   The please put a sock in it PatosTobi Update:
 
   Fixes:
@@ -207,6 +223,7 @@ Version: 0.4.793
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.792
+Date: 2023-06-30
   The put a sock in it PatosTobi Update:
 
   Fixes:
@@ -214,6 +231,7 @@ Version: 0.4.792
     - Fixed PMMA being a prerequisite of bromine.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.791
+Date: 2023-06-29
   The you see what i mean by rushed right Update:
 
   Fixes:
@@ -221,6 +239,7 @@ Version: 0.4.791
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.790
+Date: 2023-06-29
   The pouring bromine into the public Update:
 
   Additions:
@@ -233,6 +252,7 @@ Version: 0.4.790
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.787
+Date: 2023-06-26
   The idk anymore man Update:
 
   Changes:
@@ -240,6 +260,7 @@ Version: 0.4.787
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.786
+Date: 2023-06-23
   The i'll add tier 2's to buildings i swear Update:
 
   Fixes:
@@ -247,6 +268,7 @@ Version: 0.4.786
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.785
+Date: 2023-06-0322
   The DEAR GOD I NEED TO CHECK MORE STUFF Update:
 
   Changes:
@@ -261,6 +283,7 @@ Version: 0.4.785
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.784
+Date: 2023-06-22
   The  Update:
 
   Changes:
@@ -268,6 +291,7 @@ Version: 0.4.784
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.783
+Date: 2023-06-22
   The im stealing content from the main content update im working on IM COOKING Update:
 
   Fixes:
@@ -278,6 +302,7 @@ Version: 0.4.783
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.782
+Date: 2023-06-20
   The gyulp Update:
 
   Additions:
@@ -291,6 +316,7 @@ Version: 0.4.782
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.781
+Date: 2023-06-15
   The nose candy Update:
 
   Changes:
@@ -302,6 +328,7 @@ Version: 0.4.781
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.78
+Date: 2023-06-11
   The Monkeys Paw Update:
   Changes:
     - Nerfed prod mods, by increasing speed loss, pollution and power draw.
@@ -312,6 +339,7 @@ Version: 0.4.78
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.77
+Date: 2023-06-09
   The AND THIS Update:
 
   Fixes:
@@ -319,6 +347,7 @@ Version: 0.4.77
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.76
+Date: 2023-06-08
   The how did i miss THIS Update:
 
   Fixes:
@@ -326,6 +355,7 @@ Version: 0.4.76
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.75
+Date: 2023-06-05
   The deary me! that will need a tetanus shot! Update:
 
   Fixes:
@@ -333,6 +363,7 @@ Version: 0.4.75
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.74
+Date: 2023-06-04
   The update fr Update:
 
   Changes:
@@ -349,6 +380,7 @@ Version: 0.4.74
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.73
+Date: 2023-06-03
   The i only did this to feel better about updating Update:
 
   Changes:
@@ -358,6 +390,7 @@ Version: 0.4.73
     - Fixed whatever the fuck is going on in the huge modpacks people are making with PM. i see you.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.72
+Date: 2023-06-03
   The K248K Update:
 
   Fixes:
@@ -365,6 +398,7 @@ Version: 0.4.72
     - Fixed 248 (and probably other overhauls) solar panel-related errors.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.71
+Date: 2023-06-03
   The I CAN LOAD HR WOOHOO Update:
 
   Fixes:
@@ -374,6 +408,7 @@ Version: 0.4.71
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.70
+Date: 2023-06-02
   The ihew;ufgufefuef Update:
 
   Additions:
@@ -437,6 +472,7 @@ Version: 0.4.70
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.66
+Date: 2023-05-01
   The im still working just let me cook Update:
 
   Additions:
@@ -444,6 +480,7 @@ Version: 0.4.66
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.65
+Date: 2023-03-31
   The thousand bug stare Update:
 
   Fixes:
@@ -451,6 +488,7 @@ Version: 0.4.65
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.64
+Date: 2023-03-27
   The guys please im a good modder guys please Update:
 
   Fixes:
@@ -458,6 +496,7 @@ Version: 0.4.64
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.63
+Date: 2023-03-24
   The I dont understand version numbers and theres nowhere to learn Update:
 
   Fixes:
@@ -466,6 +505,7 @@ Version: 0.4.63
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.62
+Date: 2023-03-23
   There is No Update in Sa Sing Bae:
 
   Additions:
@@ -497,6 +537,7 @@ Version: 0.4.62
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.6
+Date: 2023-03-13
   The Freedom Overhaul Update:
 
   Additions:
@@ -598,6 +639,7 @@ Version: 0.4.6
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.52
+Date: 2023-09-21
   The Final Preprations Update:
 
   Additions:
@@ -609,6 +651,7 @@ Version: 0.4.52
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.51
+Date: 2023-09-19
   The Brass Beast Update:
 
   Bugfixes:
@@ -625,6 +668,7 @@ Version: 0.4.51
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.5
+Date: 2023-09-18
   The Pulling Bootstraps Update:
 
   Additions:
@@ -644,6 +688,7 @@ Version: 0.4.5
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.4
+Date: 2023-09-17
   The last time i swear before oil gets changed Update:
 
   Bugfixes:
@@ -661,6 +706,7 @@ Version: 0.4.4
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.3
+Date: 2023-09-17
   The "I swear im still working" Update:
 
   Additions:
@@ -670,7 +716,7 @@ Version: 0.4.3
     - Added a handful of new techs.
     - Overhauled Resin production, now needing to turn Resin into either Rubber Resin or Phoenlic Resin to create new products.
     - Added a new glass byproduct, Glass Shards. They can be melted down and reformed back into Glass Panes.
-    - Added a sulfur Runtime Fee, anytime you look at the mod you get charged 2 sulfur. 
+    - Added a sulfur Runtime Fee, anytime you look at the mod you get charged 2 sulfur.
 
   Fixes:
     - Hid the Periodic Table tab.
@@ -680,6 +726,7 @@ Version: 0.4.3
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.2
+Date: 2023-09-10
   The Second of Many - Reboot Update:
 
   Bugfixes:
@@ -687,13 +734,15 @@ Version: 0.4.2
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.1
+Date: 2023-09-09
   The First of Many - Reboot Update:
 
   Bugfixes:
     - Fixed the game not running due to small lamps. I hate lamps.
 
 ---------------------------------------------------------------------------------------------------
-Version: 0.4
+Version: 0.4.0
+Date: 2023-09-09
   The Conccusion VS Production Update:
 
   Bugfixes:
@@ -725,6 +774,7 @@ Version: 0.4
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.8
+Date: 2023-09-04
   The Actual Content 3: The Contenting Update:
 
   Bugfixes:
@@ -745,6 +795,7 @@ Version: 0.3.8
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.71
+Date: 2023-09-04
   The Testament to not coding at night Update:
 
   Bugfixes:
@@ -753,6 +804,7 @@ Version: 0.3.71
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
+Date: 2023-09-04
   The Fourth of Many Update:
 
   Bugfixes:
@@ -761,6 +813,7 @@ Version: 0.3.7
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.6
+Date: 2023-09-04
   The Limes and The Lemons Update:
 
   Bugfixes:
@@ -781,6 +834,7 @@ Version: 0.3.6
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.5
+Date: 2023-09-03
   The Actual Content 2: Factory Boogaloo Update:
 
   Fixes:
@@ -801,6 +855,7 @@ Version: 0.3.5
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.3
+Date: 2023-09-02
   The Third of Many Update:
 
   Bugfixes:
@@ -816,13 +871,14 @@ Version: 0.3.3
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.2
+Date: 2023-09-02
   The Second of Many Update:
 
   Bugfixes:
     - Fixed Silica not having a name.
     - Fixed Water distillation to not lock Water Desalination.
     - Fixed Sulfur Processing.
-    - Fixed Assembling Machine 1's not taking fluids. 
+    - Fixed Assembling Machine 1's not taking fluids.
 
   Fixes:
     - Deleted Silicon from Stone Crushing. again.
@@ -830,10 +886,11 @@ Version: 0.3.2
     - Fixed Mercury Powdering from being visible in hand crafting.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
+Date: 2023-09-01
   The First of Many Update:
 
   Bugfixes:
-    - Fixed HR-welder entity. 
+    - Fixed HR-welder entity.
 
   Fixes:
     - Fixed ratios, again.
@@ -845,7 +902,8 @@ Version: 0.3.1
     - 10% more worry of how many of these i'll have to do added.
 
 ---------------------------------------------------------------------------------------------------
-Version: 0.3
+Version: 0.3.0
+Date: 2023-09-01
   The Fixing-Fleshing Out Update:
 
   Inital Public Release:
@@ -854,7 +912,7 @@ Version: 0.3
 
   Additions:
     - Added Advanced Transition Metal processes. (Orange science, or second science pack.)
-    - Added Welder. 
+    - Added Welder.
 
 
   Ores:
@@ -876,7 +934,8 @@ Version: 0.3
     - Changed vanilla recipes to use PM items.
 
 ---------------------------------------------------------------------------------------------------
-Version: 0.2
+Version: 0.2.0
+Date: 2023-01-01
   The Actual Content Update:
 
   Additons:
@@ -892,16 +951,17 @@ Version: 0.2
     - Refactored recipe code to make the mod run betterer.
 
 ---------------------------------------------------------------------------------------------------
-Version: 0.1
+Version: 0.1.0
+Date: 2023-01-01
   Additions:
     - Basic Transition Metal processes added.
 
   Ores:
     - Added Maganese.
     - Added Zinc.
-    - Added Nickel. 
+    - Added Nickel.
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.0
+Version: 0.0.1
+Date: 2023-01-01
   Inital Release:
     - Mod idea made. All hell breaks loose.
-
