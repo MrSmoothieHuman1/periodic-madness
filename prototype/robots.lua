@@ -12,7 +12,7 @@ robot_animations.sparks =
     height = 34,
     frame_count = 19,
     line_length = 19,
-    shift = {-0.109375, 0.3125},
+    shift = { -0.109375, 0.3125 },
     tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
     animation_speed = 0.3
   },
@@ -23,7 +23,7 @@ robot_animations.sparks =
     height = 32,
     frame_count = 19,
     line_length = 19,
-    shift = {0.03125, 0.125},
+    shift = { 0.03125, 0.125 },
     tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
     animation_speed = 0.3
   },
@@ -34,7 +34,7 @@ robot_animations.sparks =
     height = 29,
     frame_count = 19,
     line_length = 19,
-    shift = {-0.0625, 0.203125},
+    shift = { -0.0625, 0.203125 },
     tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
     animation_speed = 0.3
   },
@@ -45,7 +45,7 @@ robot_animations.sparks =
     height = 35,
     frame_count = 19,
     line_length = 19,
-    shift = {-0.0625, 0.234375},
+    shift = { -0.0625, 0.234375 },
     tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
     animation_speed = 0.3
   },
@@ -56,7 +56,7 @@ robot_animations.sparks =
     height = 29,
     frame_count = 19,
     line_length = 19,
-    shift = {-0.109375, 0.171875},
+    shift = { -0.109375, 0.171875 },
     tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
     animation_speed = 0.3
   },
@@ -67,7 +67,7 @@ robot_animations.sparks =
     height = 36,
     frame_count = 19,
     line_length = 19,
-    shift = {0.03125, 0.3125},
+    shift = { 0.03125, 0.3125 },
     tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
     animation_speed = 0.3
   }
@@ -247,7 +247,7 @@ robot_animations.logistic_robot =
       frame_count = 1,
       shift = util.by_pixel(31.75, 19.75),
       direction_count = 16,
-      y = 57*3,
+      y = 57 * 3,
       scale = 0.5,
       draw_as_shadow = true
     }
@@ -290,7 +290,7 @@ robot_animations.construction_robot =
     width = 32,
     height = 36,
     frame_count = 1,
-    shift = util.by_pixel(0,-4.5),
+    shift = util.by_pixel(0, -4.5),
     direction_count = 16,
     hr_version =
     {
@@ -300,7 +300,7 @@ robot_animations.construction_robot =
       width = 66,
       height = 76,
       frame_count = 1,
-      shift = util.by_pixel(0,-4.5),
+      shift = util.by_pixel(0, -4.5),
       direction_count = 16,
       scale = 0.5
     }
@@ -332,7 +332,8 @@ robot_animations.construction_robot =
   },
   shadow_idle =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 53,
@@ -343,7 +344,8 @@ robot_animations.construction_robot =
     draw_as_shadow = true,
     hr_version =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
       priority = "high",
       line_length = 16,
       width = 104,
@@ -357,7 +359,8 @@ robot_animations.construction_robot =
   },
   shadow_in_motion =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 53,
@@ -368,7 +371,8 @@ robot_animations.construction_robot =
     draw_as_shadow = true,
     hr_version =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
       priority = "high",
       line_length = 16,
       width = 104,
@@ -382,7 +386,8 @@ robot_animations.construction_robot =
   },
   working =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-working.png",
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-working.png",
     priority = "high",
     line_length = 2,
     width = 28,
@@ -393,7 +398,8 @@ robot_animations.construction_robot =
     animation_speed = 0.3,
     hr_version =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-working.png",
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-working.png",
       priority = "high",
       line_length = 2,
       width = 57,
@@ -407,7 +413,8 @@ robot_animations.construction_robot =
   },
   shadow_working =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 53,
@@ -419,7 +426,8 @@ robot_animations.construction_robot =
     draw_as_shadow = true,
     hr_version =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
       priority = "high",
       line_length = 16,
       width = 104,
@@ -441,8 +449,8 @@ local robots =
     name = "pm-lithium-construction-robot",
     icon = "__periodic-madness__/graphics/icons/lithium-construction-robot.png",
     icon_size = 64,
-    flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
-    minable = {mining_time = 0.1, result = "pm-lithium-construction-robot"},
+    flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
+    minable = { mining_time = 0.1, result = "pm-lithium-construction-robot" },
     resistances =
     {
       {
@@ -451,9 +459,9 @@ local robots =
       }
     },
     max_health = 200,
-    collision_box = {{0, 0}, {0, 0}},
-    selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
-    hit_visualization_box = {{-0.1, -1.1}, {0.1, -1.0}},
+    collision_box = { { 0, 0 }, { 0, 0 } },
+    selection_box = { { -0.5, -1.5 }, { 0.5, -0.5 } },
+    hit_visualization_box = { { -0.1, -1.1 }, { 0.1, -1.0 } },
     damaged_trigger_effect = hit_effects.flying_robot(),
     dying_explosion = "construction-robot-explosion",
     corspe = "pm-lithium-construction-robot-remnants",
@@ -473,7 +481,7 @@ local robots =
       height = 32,
       frame_count = 19,
       line_length = 19,
-      shift = {0.078125, -0.15625},
+      shift = { 0.078125, -0.15625 },
       animation_speed = 0.3
     },
     sparks = robot_animations.sparks,
@@ -487,8 +495,8 @@ local robots =
       { filename = "__base__/sound/robot-repair-6.ogg", volume = 0.6 },
     },
     working_sound = sounds.construction_robot(0.47),
-    cargo_centered = {0.0, 0.2},
-    construction_vector = {0.30, 0.22},
+    cargo_centered = { 0.0, 0.2 },
+    construction_vector = { 0.30, 0.22 },
     water_reflection = robot_reflection(1),
     idle = robot_animations.construction_robot.idle,
     idle_with_cargo = robot_animations.construction_robot.idle_with_cargo,
@@ -505,9 +513,10 @@ local robots =
     type = "logistic-robot",
     name = "pm-lithium-logistic-robot",
     icon = "__periodic-madness__/graphics/icons/lithium-logistic-robot.png",
-    icon_size = 64, icon_mipmaps = 4,
-    flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
-    minable = {mining_time = 0.1, result = "pm-lithium-logistic-robot"},
+    icon_size = 64,
+    icon_mipmaps = 4,
+    flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
+    minable = { mining_time = 0.1, result = "pm-lithium-logistic-robot" },
     resistances =
     {
       {
@@ -516,9 +525,9 @@ local robots =
       }
     },
     max_health = 200,
-    collision_box = {{0, 0}, {0, 0}},
-    selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
-    hit_visualization_box = {{-0.1, -1.1}, {0.1, -1.0}},
+    collision_box = { { 0, 0 }, { 0, 0 } },
+    selection_box = { { -0.5, -1.5 }, { 0.5, -0.5 } },
+    hit_visualization_box = { { -0.1, -1.1 }, { 0.1, -1.0 } },
     damaged_trigger_effect = hit_effects.flying_robot(),
     dying_explosion = "logistic-robot-explosion",
     corspe = "pm-lithium-logistic-robot-remnants",
@@ -531,7 +540,7 @@ local robots =
     min_to_charge = 0.2,
     max_to_charge = 0.9,
     working_sound = sounds.flying_robot(0.48),
-    cargo_centered = {0.0, 0.2},
+    cargo_centered = { 0.0, 0.2 },
     water_reflection = robot_reflection(1),
     idle = robot_animations.logistic_robot.idle,
     idle_with_cargo = robot_animations.logistic_robot.idle_with_cargo,
