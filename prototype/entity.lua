@@ -5641,7 +5641,7 @@ data:extend({
     
             -- light
             --electric_mining_drill_primary_light,
-            electric_mining_drill_secondary_light
+            -- electric_mining_drill_secondary_light
           }
         },
     
@@ -7016,7 +7016,7 @@ data:extend({
     
             -- light
             --electric_mining_drill_primary_light,
-            electric_mining_drill_secondary_light
+            -- electric_mining_drill_secondary_light
           }
         },
     
