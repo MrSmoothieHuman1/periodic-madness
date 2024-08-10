@@ -50,7 +50,7 @@ data:extend({
             {"pm-lorándite", 6},
             {"sulfur", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-thallium-mixing",
@@ -84,7 +84,7 @@ data:extend({
                 amount_max = 7,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-thallium-sulfate-electrolysis",
@@ -109,6 +109,6 @@ data:extend({
                 amount_max = 4
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
 })

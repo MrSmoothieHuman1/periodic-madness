@@ -329,4 +329,4 @@ data:extend({
         }
     }
     
-})
+}--[[@as data.RecipePrototype[] ]])

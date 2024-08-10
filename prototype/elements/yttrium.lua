@@ -77,7 +77,7 @@ data:extend({
                 amount_max = 6
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-mixed-bastnäsite-seperation",
@@ -106,7 +106,7 @@ data:extend({
                 probability = 0.5
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-bastnäsite-Y-seperation",
@@ -140,7 +140,7 @@ data:extend({
                 probability = 0.456
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-bastnäsite-C-seperation",
@@ -175,7 +175,7 @@ data:extend({
                 amount_max = 10
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-yttrium-fluoride",
@@ -195,7 +195,7 @@ data:extend({
             {type = "fluid", name = "pm-aqueous-yttrium-fluoride", amount = 5},
             {type = "fluid", name = "water", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-yttrium",
@@ -213,5 +213,5 @@ data:extend({
         {
             {"pm-yttrium-ore", 5}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

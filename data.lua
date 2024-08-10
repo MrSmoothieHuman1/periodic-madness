@@ -102,11 +102,11 @@ data:extend({
     localised_name = {"","[entity=pm-transition-metals] ", {"entity-name.pm-transition-metals"}},
     richness = true,
     order = "b-e"
-	},
+	}--[[@as data.AutoplaceControl]],
 	{
     type = "noise-layer",
     name = "pm-transition-metals"
-	},
+	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -157,7 +157,7 @@ data:extend({
       }
           }
     },
-  },
+  }--[[@as data.ResourceEntityPrototype]],
   {
     type = "autoplace-control",
     category = "resource",
@@ -165,11 +165,11 @@ data:extend({
     localised_name = {"","[entity=pm-post-transition-metals] ", {"entity-name.pm-post-transition-metals"}},
     richness = true,
     order = "b-e"
-	},
+	}--[[@as data.AutoplaceControl]],
 	{
     type = "noise-layer",
     name = "pm-post-transition-metals"
-	},
+	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -221,7 +221,7 @@ data:extend({
       }
           }
     },
-  },
+  }--[[@as data.ResourceEntityPrototype]],
   {
     type = "autoplace-control",
     category = "resource",
@@ -229,11 +229,11 @@ data:extend({
     localised_name = {"","[entity=pm-alkali-metals] ", {"entity-name.pm-alkali-metals"}},
     richness = true,
     order = "b-e"
-	},
+	}--[[@as data.AutoplaceControl]],
 	{
     type = "noise-layer",
     name = "pm-alkali-metals"
-	},
+	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -284,7 +284,7 @@ data:extend({
       }
           }
     },
-  },
+  }--[[@as data.ResourceEntityPrototype]],
   {
     type = "autoplace-control",
     category = "resource",
@@ -292,11 +292,11 @@ data:extend({
     localised_name = {"","[entity=pm-metalloid-ore] ", {"entity-name.pm-metalloid-ore"}},
     richness = true,
     order = "b-e"
-	},
+	}--[[@as data.AutoplaceControl]],
 	{
     type = "noise-layer",
     name = "pm-metalloid-ore"
-	},
+	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -347,7 +347,7 @@ data:extend({
       }
           }
     },
-  },
+  }--[[@as data.ResourceEntityPrototype]],
 
 --nickel ore
 
@@ -358,11 +358,11 @@ data:extend({
     localised_name = {"", "[entity=pm-nickel-ore] ", {"entity-name.pm-nickel-ore"}},
     richness = true,
     order = "b-e"
-	},
+	}--[[@as data.AutoplaceControl]],
 	{
     type = "noise-layer",
     name = "pm-nickel-ore"
-	},
+	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -414,7 +414,7 @@ data:extend({
       }
           }
     },
-  },
+  }--[[@as data.ResourceEntityPrototype]],
 
   {
     type = "autoplace-control",
@@ -423,11 +423,11 @@ data:extend({
     localised_name = {"", "[entity=pm-zinc-ore] ", {"entity-name.pm-zinc-ore"}},
     richness = true,
     order = "b-e"
-	},
+	}--[[@as data.AutoplaceControl]],
 	{
     type = "noise-layer",
     name = "pm-zinc-ore"
-	},
+	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -478,7 +478,7 @@ data:extend({
       }
           }
     }
-  }
+  }--[[@as data.ResourceEntityPrototype]]
 })
 local ChunkChangeIron = data.raw["resource"]["iron-ore"]
 

@@ -1052,7 +1052,7 @@ data:extend({
     },
     -- Solid Lubricant > Heavy Lubricant > light Lubricant
     -- some recipes *can* take multiple, but im gonna try to restrict it 
-})
+}--[[@as data.RecipePrototype[] ]])
 
 local LubricantFix = data.raw["recipe"]["lubricant"]
 LubricantFix.subgroup = "pm-oil"

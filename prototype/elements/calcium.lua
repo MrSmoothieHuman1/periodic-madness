@@ -54,7 +54,7 @@ data:extend({
             {"pm-calcite", 4},
             {type = "fluid", name = "water", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-calcite-crushing",
@@ -71,7 +71,7 @@ data:extend({
         {
             {"pm-calcium-dust", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-calcium-dust-washing",
@@ -95,7 +95,7 @@ data:extend({
                 probability = "0.5"
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-chalk-forming",
@@ -112,5 +112,5 @@ data:extend({
         {
             {"pm-chalk", 1}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

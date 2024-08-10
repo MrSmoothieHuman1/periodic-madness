@@ -73,7 +73,7 @@ data:extend({
             },
             {"pm-sylvite", 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sylvite-seperation",
@@ -100,7 +100,7 @@ data:extend({
                 probability = 0.65
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-anhydrite-seperation",
@@ -134,7 +134,7 @@ data:extend({
                 probability = 0.1
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-potash-potassium",
@@ -154,5 +154,5 @@ data:extend({
             {"pm-sea-salt", 6},
             {"pm-potassium", 6}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

@@ -46,7 +46,7 @@ data:extend({
                 amount = 4 + 1
             },
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-indium-electrolysis",
@@ -76,6 +76,6 @@ data:extend({
                 amount = 2
             },
         }
-    }
+    }--[[@as data.RecipePrototype]]
 
 })

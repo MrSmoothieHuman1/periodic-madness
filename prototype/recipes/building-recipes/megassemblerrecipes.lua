@@ -61,4 +61,4 @@ data:extend({
             {"advanced-circuit", 1}
         }
     },
-})
+}--[[@as data.RecipePrototype[] ]])

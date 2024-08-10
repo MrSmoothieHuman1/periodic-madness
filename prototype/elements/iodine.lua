@@ -18,7 +18,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-acidic-brine", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-iodine-solution",
@@ -37,7 +37,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-iodine-solution", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-iodine-solution-concentration",
@@ -55,7 +55,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-hydrogen-iodide", amount = 20}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-hydrogen-iodide-seperation",
@@ -80,5 +80,5 @@ data:extend({
             },
             {type = "fluid", name = "pm-hydrochloric-acid", amount = 5}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

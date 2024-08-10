@@ -75,7 +75,7 @@ data:extend({
                 probaility = 0.7
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-zirconium-sand-filtering",
@@ -103,7 +103,7 @@ data:extend({
                 probaility = 0.22
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-zirconia",
@@ -138,7 +138,7 @@ data:extend({
         {
             {"pm-zirconium-ore", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
 
 })

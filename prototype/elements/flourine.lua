@@ -61,7 +61,7 @@ data:extend({
                 amount_max = 14 + 1,
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-hydrogen-flouride",
@@ -81,7 +81,7 @@ data:extend({
             {name = "pm-calcium-sulfate", amount_min = 4, amount_max = 8},
             {type = "fluid", name = "pm-hydrogen-flouride", amount = 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-hydroflouric-acid",
@@ -102,7 +102,7 @@ data:extend({
             {type = "fluid", name = "pm-hydroflouric-acid", amount = 20},
             {name = "pm-catalyst-container", amount_min = 1, amount_max = 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-hydroflouric-acid-filtering",
@@ -121,7 +121,7 @@ data:extend({
             {"pm-flourine", 3},
             {type = "fluid", name = "pm-sulfur-dioxide", amount_min = 2, amount_max = 4 + 1}
         },
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -143,5 +143,5 @@ data:extend({
         {
             {"pm-flourite", 16},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

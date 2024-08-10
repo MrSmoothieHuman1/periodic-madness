@@ -49,7 +49,7 @@ data:extend({
         {
             {"pm-bismuth-chunks", 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-bismuth-mixing",
@@ -77,7 +77,7 @@ data:extend({
                 amount_max = 3
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-bismuth-crystallisation",
@@ -101,5 +101,5 @@ data:extend({
                 amount_max = 4 + 1
             }
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

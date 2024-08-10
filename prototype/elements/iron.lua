@@ -54,7 +54,7 @@ data:extend({
             {"iron-ore", 8},
             {"pm-ferrum", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -94,5 +94,5 @@ data:extend({
             {"iron-ore", 8},
             {"pm-ferrum", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

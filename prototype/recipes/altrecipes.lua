@@ -641,4 +641,4 @@ data:extend({
         {type = "fluid", name = "pm-oxygen-gas", amount = 20}
     }
 },
-})
+}--[[@as data.RecipePrototype[] ]])

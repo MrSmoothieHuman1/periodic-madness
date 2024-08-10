@@ -49,7 +49,7 @@ data:extend({
             {type = "fluid", name = "pm-sodium-hydroxide", amount = 10},
             {type = "fluid", name = "pm-chlorine", probability = 0.8, amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-bauxite-mixing",
@@ -69,7 +69,7 @@ data:extend({
             {name = "pm-gallium-chunks", amount_min = 6, amount_max = 8},
             {"pm-aluminium-ore", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-gallium-liqouring",
@@ -89,7 +89,7 @@ data:extend({
             {type = "fluid", name = "pm-gallium-liqour", amount = 6},
             {"pm-sodium", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-metal-sodium-hydroxide",
@@ -114,7 +114,7 @@ data:extend({
                 probability = 0.8
             }
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-resin-ion-exchange-beads",
@@ -133,7 +133,7 @@ data:extend({
         {
             {"pm-ion-exchange-beads", 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-gallium-filtering",
@@ -158,5 +158,5 @@ data:extend({
                 amount_max = 3 + 2
             }
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

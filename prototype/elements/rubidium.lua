@@ -75,7 +75,8 @@ data:extend({
                 amount_max = 5
             }
         }
-    },--fr fr
+    }--[[@as data.RecipePrototype]],
+    --fr fr
     --enjoy me bug fixing for hours HAHAH
     --can you hear my music btw tell me if you want to put something on
     --cant use images but thousand yard stare
@@ -122,7 +123,7 @@ data:extend({
                 probability = 0.5
             },
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-70-to-100-rubidium-alum",
@@ -140,7 +141,7 @@ data:extend({
         {
             {"pm-rubidium-alum", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-50-to-70-rubidium-alum",
@@ -158,7 +159,7 @@ data:extend({
         {
             {"pm-70-rubidium-alum", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-30-to-50-rubidium-alum",
@@ -176,7 +177,7 @@ data:extend({
         {
             {"pm-50-rubidium-alum", 2}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-rubidium-alum-seperation",
@@ -206,7 +207,7 @@ data:extend({
                 amount_max = 5
             },
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })
 
 --oh neat (cueless)

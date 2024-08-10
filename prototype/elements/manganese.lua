@@ -38,7 +38,7 @@ data:extend({
             {"pm-manganese-ore", 8},
             {"iron-ore", 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -78,5 +78,5 @@ data:extend({
             {"pm-manganese-ore", 8},
             {"iron-ore", 4}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

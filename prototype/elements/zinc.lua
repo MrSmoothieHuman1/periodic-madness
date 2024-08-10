@@ -54,7 +54,7 @@ data:extend({
             {"pm-zinc-ore", 8},
             {"sulfur", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -94,5 +94,5 @@ data:extend({
             {"pm-zinc-ore", 8},
             {"sulfur", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

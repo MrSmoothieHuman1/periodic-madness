@@ -2881,7 +2881,7 @@ data:extend({
     }
 },
 
-})
+} --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["chemical-science-pack"].order = "e"
 data.raw["recipe"]["production-science-pack"].order = "x"

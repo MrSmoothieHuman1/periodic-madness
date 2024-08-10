@@ -79,7 +79,7 @@ data:extend({
         {
             {"pm-cassiterite", 2},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-cassiterite-crushing",
@@ -99,7 +99,7 @@ data:extend({
         {
             {"pm-tin-chunks", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-tin-chunk-leeching",
@@ -131,7 +131,7 @@ data:extend({
             {"pm-black-tin", 3},
             {"pm-white-tin", 3},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-coloured-tin-combining",
@@ -153,7 +153,7 @@ data:extend({
             {"pm-tin-ore", 6},
             {"pm-cassiterite", 1}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 -- tin plate is order f
     {
         type = "recipe",
@@ -191,5 +191,5 @@ data:extend({
         {
             {"pm-cassiterite", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

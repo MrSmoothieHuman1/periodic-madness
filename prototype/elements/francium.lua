@@ -62,7 +62,7 @@ data:extend({
         {
             {"pm-magneto-orbital-trap", 1}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-borosilicate-magneto-orbital-trap",
@@ -82,7 +82,7 @@ data:extend({
         {
             {"pm-magneto-orbital-trap", 1}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-francium-forming",
@@ -101,7 +101,7 @@ data:extend({
         {
             {"pm-francium-magneto-orbital-trap", 1}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-magneto-orbital-trap-seperation",
@@ -157,5 +157,5 @@ data:extend({
         {
             {type = "fluid", name = "pm-francium", amount_min = 2, amount_max = 5}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

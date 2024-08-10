@@ -45,7 +45,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-copper-sludge", amount = 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sodium-tellurite",
@@ -82,7 +82,7 @@ data:extend({
                 amount_max = 5
             },
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-sodium-bicarbonate-tellurite",
@@ -118,7 +118,7 @@ data:extend({
                 amount_max = 5
             },
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-hydrotellurites",
@@ -138,7 +138,7 @@ data:extend({
             {"pm-tellurium-oxide", 6},
             {type = "fluid", name = "pm-sulfur-dioxide", amount = 15}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-tellurium-oxide-seperation",
@@ -159,5 +159,5 @@ data:extend({
             {"pm-tellurium-ore", 6},
             {type = "fluid", name = "sulfuric-acid", amount = 7.5}
         }
-    }
+    }--[[@as data.RecipePrototype]]
 })

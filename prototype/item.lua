@@ -271,7 +271,7 @@ data:extend({
         category = "pm-nonassembling-gases",
         order = "b",
         stack_size = 100
-    },
+    }--[[@as data.ItemPrototype]],
    {
         type = "item",
         name = "pm-sodium",
@@ -872,7 +872,7 @@ data:extend({
               }
             }
           },
-      },
+      }--[[@as data.ModulePrototype]],
       {
         type = "module",
         name = "pm-effectivity-module-4",
@@ -910,7 +910,7 @@ data:extend({
               }
             }
           },
-      },
+      }--[[@as data.ModulePrototype]],
       {
         type = "module",
         name = "pm-productivity-module-4",
@@ -949,7 +949,7 @@ data:extend({
               }
             }
           },
-      },
+      }--[[@as data.ModulePrototype]],
       {
         type = "ammo",
         name = "pm-high-density-magazine",

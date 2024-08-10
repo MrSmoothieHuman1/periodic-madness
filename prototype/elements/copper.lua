@@ -54,7 +54,7 @@ data:extend({
             {"copper-ore", 8},
             {"pm-patina", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -94,5 +94,5 @@ data:extend({
             {"copper-ore", 8},
             {"pm-patina", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })

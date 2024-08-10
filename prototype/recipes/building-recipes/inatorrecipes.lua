@@ -2004,4 +2004,4 @@ data:extend({
         },
         results = {}
     },
-})
+}--[[@as data.RecipePrototype[] ]])

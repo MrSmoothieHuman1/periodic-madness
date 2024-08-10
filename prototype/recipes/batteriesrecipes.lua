@@ -313,7 +313,7 @@ data:extend({
             {"pm-charged-lithium-sulfur-battery", 1}
         }
     },
-})
+}--[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["battery"].subgroup = "pm-batteries"
 data.raw["recipe"]["battery"].order = "m"

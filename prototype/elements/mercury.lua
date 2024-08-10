@@ -50,7 +50,7 @@ data:extend({
         {
             {"pm-mercury-ore", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-mercury-powdering",
@@ -67,7 +67,7 @@ data:extend({
             {"pm-mercury-powder", 4},
             {"pm-red-mercury", 4},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-mercury-liquifying",
@@ -88,7 +88,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-liquid-mercury", amount = 50},
         }
-    },
+    }--[[@as data.RecipePrototype]],
     {
         type = "recipe",
         name = "pm-mercury-vapour-condensing",
@@ -108,7 +108,7 @@ data:extend({
         {
             {type = "fluid", name = "pm-liquid-mercury", amount = 10}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 
     {
         type = "recipe",
@@ -139,5 +139,5 @@ data:extend({
         {
             {"pm-mercury-ore", 8}
         }
-    },
+    }--[[@as data.RecipePrototype]],
 })
