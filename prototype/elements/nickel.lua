@@ -18,7 +18,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-transition-nickel-decomposition",
+    name = "pm-transition-nickel-leeching",
     icon_size = 64,
     icons =
     {
@@ -58,7 +58,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-nickel-decomposition",
+    name = "pm-chromic-transition-nickel-leeching",
     icon_size = 64,
     icons =
     {

@@ -332,7 +332,7 @@ data.raw["technology"]["steel-processing"].effects =
   },
   {
     type = "unlock-recipe",
-    recipe = "pm-transition-manganese-decomposition"
+    recipe = "pm-transition-manganese-leeching"
   }
 }
 

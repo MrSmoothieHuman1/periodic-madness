@@ -105,19 +105,19 @@ data:extend({
 
       {
         type = "unlock-recipe",
-        recipe = "pm-ferrum-decomposition"
+        recipe = "pm-ferrum-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-patina-decomposition"
+        recipe = "pm-patina-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-transition-slag-decomposition"
+        recipe = "pm-transition-slag-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chunk-slag-decomposition"
+        recipe = "pm-chunk-slag-leeching"
       }
 
     },
@@ -541,27 +541,27 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "pm-transition-iron-decomposition"
+        recipe = "pm-transition-iron-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-transition-copper-decomposition"
+        recipe = "pm-transition-copper-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-transition-nickel-decomposition"
+        recipe = "pm-transition-nickel-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-transition-zinc-decomposition"
+        recipe = "pm-transition-zinc-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-transition-manganese-decomposition"
+        recipe = "pm-transition-manganese-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-transition-aluminium-decomposition"
+        recipe = "pm-transition-aluminium-leeching"
       },
     },
     prerequisites = { "automation", "pm-ezekiel-ore-purifying" },
@@ -2324,27 +2324,27 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-transition-iron-decomposition"
+        recipe = "pm-chromic-transition-iron-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-transition-copper-decomposition"
+        recipe = "pm-chromic-transition-copper-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-transition-nickel-decomposition"
+        recipe = "pm-chromic-transition-nickel-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-transition-zinc-decomposition"
+        recipe = "pm-chromic-transition-zinc-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-transition-manganese-decomposition"
+        recipe = "pm-chromic-transition-manganese-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-transition-aluminium-decomposition"
+        recipe = "pm-chromic-transition-aluminium-leeching"
       },
       {
         type = "unlock-recipe",
@@ -3540,11 +3540,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-ferrum-decomposition"
+        recipe = "pm-chromic-ferrum-leeching"
       },
       {
         type = "unlock-recipe",
-        recipe = "pm-chromic-patina-decomposition"
+        recipe = "pm-chromic-patina-leeching"
       },
       {
         type = "unlock-recipe",

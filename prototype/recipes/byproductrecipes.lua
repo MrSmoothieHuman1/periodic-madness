@@ -4,7 +4,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-ferrum-decomposition",
+    name = "pm-ferrum-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrum-decomposition.png",
     subgroup = "pm-advanced-ore-decomposition",
@@ -34,7 +34,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-patina-decomposition",
+    name = "pm-patina-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/patina-decomposition.png",
     subgroup = "pm-advanced-ore-decomposition",
@@ -64,7 +64,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-transition-slag-decomposition",
+    name = "pm-transition-slag-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ore-slag-transition-decomposition.png",
     subgroup = "pm-tm-tm",
@@ -83,7 +83,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-chunk-slag-decomposition",
+    name = "pm-chunk-slag-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ore-slag-chunk-decomposition.png",
     subgroup = "pm-tm-tm",
@@ -223,7 +223,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-chromic-ferrum-decomposition",
+    name = "pm-chromic-ferrum-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/chromic-ferrum-decomposition.png",
     subgroup = "pm-advanced-ore-decomposition",
@@ -257,7 +257,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-chromic-patina-decomposition",
+    name = "pm-chromic-patina-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/chromic-patina-decomposition.png",
     subgroup = "pm-advanced-ore-decomposition",

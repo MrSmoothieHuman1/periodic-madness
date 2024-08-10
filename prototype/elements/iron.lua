@@ -17,7 +17,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-transition-iron-decomposition",
+    name = "pm-transition-iron-leeching",
     icon_size = 64,
     icons =
     {
@@ -57,7 +57,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-iron-decomposition",
+    name = "pm-chromic-transition-iron-leeching",
     icon_size = 64,
     icons =
     {
