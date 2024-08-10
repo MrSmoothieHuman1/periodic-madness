@@ -1,4 +1,5 @@
 if not mods["Krastorio2"] then return end
+local PM = require("__periodic-madness__/library")
 
 data.raw["recipe"]["glass"].hidden = true
 data.raw["recipe"]["sand"].hidden = true
@@ -13,19 +14,19 @@ data.raw["recipe"]["kr-crusher"].subgroup = "pm-crushing-machine"
 data.raw["recipe"]["kr-crusher"].order = "d"
 data.raw["recipe"]["kr-filtration-plant"].ingredients =
 {
-  { "pm-glass-pane",                 10 },
-  { "steel-plate",                   4 },
-  { "automation-core",               2 },
-  { "pm-corrosion-resistant-tubing", 10 },
-  { "pm-heavyweight-panelling",      8 }
+  PM.ingredient("pm-glass-pane", 10),
+  PM.ingredient("steel-plate", 4),
+  PM.ingredient("automation-core", 2),
+  PM.ingredient("pm-corrosion-resistant-tubing", 10),
+  PM.ingredient("pm-heavyweight-panelling", 8)
 }
 data.raw["recipe"]["kr-crusher"].ingredients =
 {
-  { "electric-engine-unit",     6 },
-  { "advanced-circuit",         15 },
-  { "concrete",                 15 },
-  { "pm-lightweight-framing",   30 },
-  { "pm-heavyweight-panelling", 12 },
+  PM.ingredient("electric-engine-unit", 6),
+  PM.ingredient("advanced-circuit", 15),
+  PM.ingredient("concrete", 15),
+  PM.ingredient("pm-lightweight-framing", 30),
+  PM.ingredient("pm-heavyweight-panelling", 12),
 }
 data.raw["recipe"]["sand"].category = "pm-crushing"
 
@@ -35,10 +36,10 @@ data.raw["technology"]["pm-alternative-science-pack-unlock"].icon =
 "__periodic-madness__/graphics/compat/K2/alternative-recipe-data.png"
 data.raw["technology"]["kr-crusher"].unit.ingredients =
 {
-  { "automation-science-pack",                            1 },
-  { "logistic-science-pack",                              1 },
-  { "pm-advanced-advanced-transition-metal-science-pack", 1 },
-  { "pm-post-transition-metal-science-pack",              1 }
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("pm-post-transition-metal-science-pack", 1)
 }
 data.raw["technology"]["kr-crusher"].unit.count = 350
 data.raw["technology"]["kr-crusher"].unit.time = 100
@@ -47,14 +48,8 @@ data.raw["technology"]["kr-fluids-chemistry"].prerequisites = { "kr-basic-fluid-
   "kr-stone-processing" }
 data.raw["technology"]["kr-steam-engine"].effects =
 {
-  {
-    type = "unlock-recipe",
-    recipe = "pm-dirty-boiler"
-  },
-  {
-    type = "unlock-recipe",
-    recipe = "steam-engine"
-  },
+  PM.unlock_recipe("pm-dirty-boiler"),
+  PM.unlock_recipe("steam-engine"),
 }
 data.raw["technology"]["kr-stone-processing"].prerequisites = { "pm-burner-crusher" }
 data.raw["furnace"]["kr-crusher"].crafting_categories = { "pm-crushing" }
@@ -87,10 +82,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/compat/K2/technology/burner-crusher.png",
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "pm-burner-crusher"
-      }
+      PM.unlock_recipe("pm-burner-crusher")
     },
     prerequisites = { "kr-automation-core" },
     unit =
@@ -98,7 +90,7 @@ data:extend({
       count = 30,
       ingredients =
       {
-        { "basic-tech-card", 1 }
+        PM.ingredient("basic-tech-card", 1)
       },
       time = 30
     }
