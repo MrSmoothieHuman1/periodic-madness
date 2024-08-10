@@ -11,85 +11,11 @@ data:extend({
         category = "pm-electrolysis",
         energy_required = 0.5,
         crafting_machine_tint = 
-        {{
-            type = "recipe",
-            name = "pm-cinnabar-processing",
-            icon_size = 64,
-            icon = "__periodic-madness__/graphics/icons/recipes/cinnabar-processing.png",
-            subgroup = "pm-mercury-processing",
-            category = "pm-acids",
-            order = "a",
-            energy_required = 4,
-            ingredients =
-            {
-                {type = "item", name = "pm-transition-metals-ore", amount = 5},
-                {type = "fluid", name = "pm-hydrochloric-acid", amount = 50}
-            },
-            enabled = false,
-            results = 
-            {
-                {"pm-mercury-ore", 4}
-            }
-        },
         {
-            type = "recipe",
-            name = "pm-mercury-powdering",
-            energy_required = 3,
-            ingredients = {{"pm-mercury-ore", 2}},
-            icon_size = 64,
-            category = "pm-crushing",
-            subgroup = "pm-mercury-processing",
-            order = "c",
-            enabled = false,
-            icon = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon.png",
-            results =
-            {
-                {"pm-mercury-powder", 4},
-                {"pm-red-mercury", 4},
-                
-            }
-        },
-        {
-            type = "recipe",
-            name = "pm-mercury-liquifying",
-            icon_size = 64,
-            icon = "__periodic-madness__/graphics/icons/recipes/mercury-liquifying.png",
-            energy_required = 2,
-            subgroup = "pm-mercury-processing",
-            category = "crafting-with-fluid",
-            order = "d",
-            enabled = false,
-            ingredients = 
-            {
-                {type = "item", name = "pm-mercury-powder", amount = 4},
-                {type = "item", name = "pm-red-mercury", amount = 4},
-                {type = "fluid", name = "water", amount = 100}
-            },
-            results =
-            {
-                {type = "fluid", name = "pm-liquid-mercury", amount = 50},
-            }
-        },
-        {
-            type = "recipe",
-            name = "pm-mercury-powder-to-red-mercury",
-            icon_size = 64,
-            icon = "__periodic-madness__/graphics/icons/recipes/mercury-powder-to-red-mercury.png",
-            energy_required = 4,
-            subgroup = "pm-mercury-processing",
-            order = "e",
-            enabled = false,
-            ingredients = 
-            {
-                {"pm-mercury-powder", 8},
-            },
-            result = "pm-red-mercury",
-            result_count = 2,
-        },
-             primary = {r=0,g=0.2,b=0.6,a=1}, --main visible colour
-             secondary = {r=1,g=0,b=0,a=1},--background visible colour
-             tertiary = {r=0.4,g=0.4,b=0.4,a=0.5}, -- smoke afteraffects
-             quaternary = {r=0.5,g=0.5,b=0.5,a=1} --smoke 
+            primary = {r=0,g=0.2,b=0.6,a=1}, --main visible colour
+            secondary = {r=1,g=0,b=0,a=1},--background visible colour
+            tertiary = {r=0.4,g=0.4,b=0.4,a=0.5}, -- smoke afteraffects
+            quaternary = {r=0.5,g=0.5,b=0.5,a=1} --smoke 
         },
         ingredients =
         {

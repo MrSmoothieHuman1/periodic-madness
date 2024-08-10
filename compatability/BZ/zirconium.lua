@@ -14,8 +14,8 @@ end
     
     data.raw["autoplace-control"]["zircon"] = nil
     data.raw["resource"]["zircon"] = nil
-    data.raw["item"]["zircon"].hidden = true
-    data.raw["item"]["zirconia"].hidden = true
+    lib.set_flag(data.raw["item"]["zircon"], "hidden")
+    lib.set_flag(data.raw["item"]["zirconia"], "hidden")
     data.raw["item"]["zirconium-plate"].subgroup = "pm-zirconium-tm"
     data.raw["item"]["zirconium-plate"].order = "g"
 
