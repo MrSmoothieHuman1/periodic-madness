@@ -10,9 +10,6 @@
     "Lua.runtime.version": "Lua 5.2",
     "Lua.diagnostics.globals": [
         "__Profiler",
-        "name",
-        "ingredients",
-        "robot_animations"
     ],
     "Lua.runtime.special": {
         "__object_name": "type"
@@ -31,5 +28,6 @@
     "Lua.workspace.userThirdParty": [
         "c:\\Users\\BlackATM\\AppData\\Roaming\\Code\\User\\workspaceStorage\\0c8fe843d6b7afeb6ca9262378d5864a\\justarandomgeek.factoriomod-debug\\sumneko-3rd"
     ],
-    "Lua.workspace.checkThirdParty": "ApplyInMemory"
+    "Lua.workspace.checkThirdParty": "ApplyInMemory",
+    "editor.tabSize": 2,
 }

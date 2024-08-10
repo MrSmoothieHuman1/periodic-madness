@@ -1,6 +1,6 @@
 data:extend({
 
-{
+  {
     type = "item",
     name = "pm-tungsten-ore",
     icon_size = 64,
@@ -8,8 +8,8 @@ data:extend({
     subgroup = "pm-tungsten-tm",
     order = "e",
     stack_size = 200
-},
-{
+  },
+  {
     type = "item",
     name = "pm-wolframite",
     icon_size = 128,
@@ -17,8 +17,8 @@ data:extend({
     subgroup = "pm-tungsten-tm",
     order = "b",
     stack_size = 100
-},
-{
+  },
+  {
     type = "item",
     name = "pm-tungsten-crystals",
     icon_size = 128,
@@ -26,8 +26,8 @@ data:extend({
     subgroup = "pm-tungsten-tm",
     order = "c",
     stack_size = 100
-},
-{
+  },
+  {
     type = "item",
     name = "pm-scheelite",
     icon_size = 128,
@@ -35,53 +35,53 @@ data:extend({
     subgroup = "pm-tungsten-tm",
     order = "d",
     stack_size = 100
-},
-{
+  },
+  {
     type = "item",
     name = "pm-tungsten-chunks",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
-    pictures = 
+    pictures =
     {
-        {filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png", size = 64, scale = 0.25},
-        {filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks-2.png", size = 64, scale = 0.25}
+      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",   size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks-2.png", size = 64, scale = 0.25 }
     },
     subgroup = "pm-tungsten-tm",
     order = "a",
     stack_size = 150
-},
+  },
 
-{
+  {
     type = "recipe",
     name = "pm-tungsten-leeching",
     icon_size = 64,
-        icons = 
-        {
-            {
-                icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
-                icon_size = 64,
-            },
-            {
-                icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
-                icon_size = 64,
-            },
-        },
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon_size = 64,
+      },
+    },
     category = "pm-acids",
     subgroup = "pm-tungsten-tm",
     order = "a",
     enabled = false,
     energy_required = 8,
-    ingredients = 
+    ingredients =
     {
-        {"pm-transition-metals-ore", 12},
-        {type = "fluid", name = "pm-acidic-water", amount = 50}
+      { "pm-transition-metals-ore", 12 },
+      { type = "fluid",             name = "pm-acidic-water", amount = 50 }
     },
-    results = 
+    results =
     {
-        {"pm-tungsten-chunks", 8}
+      { "pm-tungsten-chunks", 8 }
     }
-}--[[@as data.RecipePrototype]],
-{
+  } --[[@as data.RecipePrototype]],
+  {
     type = "recipe",
     name = "pm-tungsten-crushing",
     category = "pm-crushing",
@@ -89,16 +89,16 @@ data:extend({
     order = "c",
     energy_required = 12,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-tungsten-chunks", 4}
+      { "pm-tungsten-chunks", 4 }
     },
-    results = 
+    results =
     {
-        {"pm-wolframite", 6}
+      { "pm-wolframite", 6 }
     }
-}--[[@as data.RecipePrototype]],
-{
+  } --[[@as data.RecipePrototype]],
+  {
     type = "recipe",
     name = "pm-wolframite-washing",
     icon_size = 128,
@@ -108,18 +108,18 @@ data:extend({
     order = "d",
     energy_required = 2,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-wolframite", 2},
-        {type = "fluid", name = "water", amount = 40}
+      { "pm-wolframite", 2 },
+      { type = "fluid",  name = "water", amount = 40 }
     },
-    results = 
+    results =
     {
-        {"pm-tungsten-crystals", 3},
-        {"pm-scheelite", 2}
+      { "pm-tungsten-crystals", 3 },
+      { "pm-scheelite",         2 }
     }
-}--[[@as data.RecipePrototype]],
-{
+  } --[[@as data.RecipePrototype]],
+  {
     type = "recipe",
     name = "pm-tungsten-seperation",
     icon_size = 64,
@@ -129,18 +129,18 @@ data:extend({
     order = "e",
     energy_required = 6,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-tungsten-crystals", 6},
-        {"pm-scheelite", 4}
+      { "pm-tungsten-crystals", 6 },
+      { "pm-scheelite",         4 }
     },
-    results = 
+    results =
     {
-        {"pm-tungsten-ore", 4},
+      { "pm-tungsten-ore", 4 },
     }
-}--[[@as data.RecipePrototype]],
+  } --[[@as data.RecipePrototype]],
 
-{
+  {
     type = "recipe",
     name = "pm-argon-tungsten-melting",
     icon_size = 64,
@@ -150,48 +150,48 @@ data:extend({
     category = "pm-moltening",
     energy_required = 4.4 + 0.1,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {type = "fluid", name = "pm-argon-gas", amount = 40},
-        {"pm-wolframite", 14 + 1}
+      { type = "fluid",  name = "pm-argon-gas", amount = 40 },
+      { "pm-wolframite", 14 + 1 }
     },
-    results = 
+    results =
     {
-        {type = "fluid", name = "pm-molten-tungsten", amount = 4 + 1}
+      { type = "fluid", name = "pm-molten-tungsten", amount = 4 + 1 }
     }
-}--[[@as data.RecipePrototype]],
-{
+  } --[[@as data.RecipePrototype]],
+  {
     type = "recipe",
     name = "pm-chromic-tungsten-leeching",
     icon_size = 64,
-    icons = 
+    icons =
     {
-        {
-            icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
-            icon_size = 64,
-        },
-        {
-            icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
-            icon_size = 64,
-        },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon_size = 64,
+      },
     },
     category = "pm-acids",
     subgroup = "pm-tungsten-tm",
     order = "b",
     enabled = false,
     energy_required = 4,
-    ingredients = 
+    ingredients =
     {
-        {"pm-transition-metals-ore", 12},
-        {type = "fluid", name = "pm-chromic-acid", amount = 10}
+      { "pm-transition-metals-ore", 12 },
+      { type = "fluid",             name = "pm-chromic-acid", amount = 10 }
     },
-    results = 
+    results =
     {
-        {"pm-tungsten-chunks", 8}
+      { "pm-tungsten-chunks", 8 }
     }
-}--[[@as data.RecipePrototype]],
+  } --[[@as data.RecipePrototype]],
 
-{
+  {
     type = "recipe",
     name = "pm-wolframite-crystallisation",
     icon_size = 128,
@@ -201,15 +201,15 @@ data:extend({
     order = "da",
     energy_required = 2,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-wolframite", 10},
-        {type = "fluid", name = "pm-liquid-mercury", amount = 40}
+      { "pm-wolframite", 10 },
+      { type = "fluid",  name = "pm-liquid-mercury", amount = 40 }
     },
-    results = 
+    results =
     {
-        {"pm-tungsten-crystals", 14 + 1},
-        {"pm-scheelite", 10}
+      { "pm-tungsten-crystals", 14 + 1 },
+      { "pm-scheelite",         10 }
     }
-}--[[@as data.RecipePrototype]],
+  } --[[@as data.RecipePrototype]],
 })
