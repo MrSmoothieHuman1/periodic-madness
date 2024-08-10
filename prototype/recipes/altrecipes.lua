@@ -1,7 +1,7 @@
 --for all alternative recipes for items
 
 data:extend({
-{
+  {
     type = "recipe",
     name = "pm-circuit-mold",
     icon_size = 64,
@@ -12,16 +12,16 @@ data:extend({
     order = "a",
     enabled = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {type = "fluid", name = "pm-pheonlic-resin", amount = 25},
+      { type = "fluid", name = "pm-pheonlic-resin", amount = 25 },
     },
-    results = 
+    results =
     {
-        {"pm-circuit-mold", 2}
+      { "pm-circuit-mold", 2 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-green-circuit-molding",
     icon_size = 64,
@@ -33,18 +33,18 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-circuit-mold", 1},
-        {"pm-basic-breadboard", 1}
+      { "pm-circuit-mold",     1 },
+      { "pm-basic-breadboard", 1 }
     },
-    results = 
+    results =
     {
-        {"pm-basic-breadboard-mold", 1},
-        {"pm-basic-breadboard", 1}
+      { "pm-basic-breadboard-mold", 1 },
+      { "pm-basic-breadboard",      1 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-basic-breadboard-molding",
     icon_size = 64,
@@ -55,22 +55,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-basic-breadboard-mold", 1},
-        {"pm-nickel-plate", 1}
+      { "pm-basic-breadboard-mold", 1 },
+      { "pm-nickel-plate",          1 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-basic-breadboard-mold",
-            probability = "0.7",
-            amount = 1
-        },
-        {"pm-basic-breadboard", 2}
+      {
+        name = "pm-basic-breadboard-mold",
+        probability = 0.7,
+        amount = 1
+      },
+      { "pm-basic-breadboard", 2 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-orange-circuit-molding",
     icon_size = 64,
@@ -82,18 +82,18 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-circuit-mold", 1},
-        {"pm-fluid-breadboard", 1}
+      { "pm-circuit-mold",     1 },
+      { "pm-fluid-breadboard", 1 }
     },
-    results = 
+    results =
     {
-        {"pm-fluid-breadboard-mold", 1},
-        {"pm-fluid-breadboard", 1}
+      { "pm-fluid-breadboard-mold", 1 },
+      { "pm-fluid-breadboard",      1 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-orange-breadboard-molding",
     icon_size = 64,
@@ -104,22 +104,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-fluid-breadboard-mold", 1},
-        {"pm-vulcanised-rubber", 1}
+      { "pm-fluid-breadboard-mold", 1 },
+      { "pm-vulcanised-rubber",     1 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-fluid-breadboard-mold",
-            probability = "0.6",
-            amount = 1
-        },
-        {"pm-fluid-breadboard", 2}
+      {
+        name = "pm-fluid-breadboard-mold",
+        probability = 0.6,
+        amount = 1
+      },
+      { "pm-fluid-breadboard", 2 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-advanced-circuit-molding",
     icon_size = 64,
@@ -131,18 +131,18 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-circuit-mold", 1},
-        {"pm-advanced-circuit-breadboard", 1}
+      { "pm-circuit-mold",                1 },
+      { "pm-advanced-circuit-breadboard", 1 }
     },
-    results = 
+    results =
     {
-        {"pm-advanced-breadboard-mold", 1},
-        {"pm-advanced-circuit-breadboard", 1}
+      { "pm-advanced-breadboard-mold",    1 },
+      { "pm-advanced-circuit-breadboard", 1 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-advanced-breadboard-molding",
     icon_size = 64,
@@ -153,22 +153,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-advanced-breadboard-mold", 1},
-        {"pm-palladium-plate", 2}
+      { "pm-advanced-breadboard-mold", 1 },
+      { "pm-palladium-plate",          2 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-advanced-breadboard-mold",
-            probability = "0.5",
-            amount = 1
-        },
-        {"pm-advanced-circuit-breadboard", 2}
+      {
+        name = "pm-advanced-breadboard-mold",
+        probability = 0.5,
+        amount = 1
+      },
+      { "pm-advanced-circuit-breadboard", 2 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-processing-circuit-molding",
     icon_size = 64,
@@ -180,18 +180,18 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-circuit-mold", 1},
-        {"pm-processing-breadboard", 1}
+      { "pm-circuit-mold",          1 },
+      { "pm-processing-breadboard", 1 }
     },
-    results = 
+    results =
     {
-        {"pm-processing-breadboard-mold", 1},
-        {"pm-processing-breadboard", 1}
+      { "pm-processing-breadboard-mold", 1 },
+      { "pm-processing-breadboard",      1 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-processing-breadboard-molding",
     icon_size = 64,
@@ -202,22 +202,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-processing-breadboard-mold", 1},
-        {"pm-indium-plate", 2}
+      { "pm-processing-breadboard-mold", 1 },
+      { "pm-indium-plate",               2 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-processing-breadboard-mold",
-            probability = "0.4",
-            amount = 1
-        },
-        {"pm-processing-breadboard", 2}
+      {
+        name = "pm-processing-breadboard-mold",
+        probability = 0.4,
+        amount = 1
+      },
+      { "pm-processing-breadboard", 2 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-coke-iron-smelting",
     icon_size = 64,
@@ -228,17 +228,17 @@ data:extend({
     hide_from_player_crafting = true,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-coke", 2},
-        {"iron-ore", 2}
+      { "pm-coke",  2 },
+      { "iron-ore", 2 }
     },
-    results = 
+    results =
     {
-        {"iron-plate", 4}
+      { "iron-plate", 4 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-coke-zinc-smelting",
     icon_size = 64,
@@ -249,18 +249,18 @@ data:extend({
     hide_from_player_crafting = true,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-coke", 2},
-        {"pm-zinc-ore", 2}
+      { "pm-coke",     2 },
+      { "pm-zinc-ore", 2 }
     },
-    results = 
+    results =
     {
-        {"pm-zinc-plate", 4}
+      { "pm-zinc-plate", 4 }
     }
-},
+  },
 
-{
+  {
     type = "recipe",
     name = "pm-alloyed-steel",
     icon_size = 64,
@@ -271,28 +271,28 @@ data:extend({
     enabled = false,
     hide_from_player_crafting = true,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-manganese-plate", 2},
-        {"pm-nickel-plate", 2},
-        {"pm-zinc-plate", 1}
+      { "pm-manganese-plate", 2 },
+      { "pm-nickel-plate",    2 },
+      { "pm-zinc-plate",      1 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-alloyed-steel",
-            amount_min = 2,
-            amount_max = 6,
-        },
+      {
+        name = "pm-alloyed-steel",
+        amount_min = 2,
+        amount_max = 6,
+      },
 
-        {
-            name = "pm-ore-slag",
-            probability = 0.5,
-            amount = 2
-        }
+      {
+        name = "pm-ore-slag",
+        probability = 0.5,
+        amount = 2
+      }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-alloyed-steel-to-steel",
     icon_size = 64,
@@ -301,21 +301,21 @@ data:extend({
     subgroup = "pm-alloys",
     energy_required = 3,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-alloyed-steel", 2},
-        {"iron-plate", 2}
+      { "pm-alloyed-steel", 2 },
+      { "iron-plate",       2 }
     },
-    results = 
+    results =
     {
-        {
-            name = "steel-plate",
-            amount_min = 1,
-            amount_max = 2,
-        }
+      {
+        name = "steel-plate",
+        amount_min = 1,
+        amount_max = 2,
+      }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-copper-fiberoptic-cable",
     icon_size = 64,
@@ -324,18 +324,18 @@ data:extend({
     category = "crafting-with-fluid",
     energy_required = 5,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {type = "fluid", name = "pm-pheonlic-resin", amount = 10},
-        {"pm-glass-fibers", 20},
-        {"copper-cable", 4}
+      { type = "fluid",    name = "pm-pheonlic-resin", amount = 10 },
+      { "pm-glass-fibers", 20 },
+      { "copper-cable",    4 }
     },
-    results = 
+    results =
     {
-        {"pm-fiberoptic-cable", 2}
+      { "pm-fiberoptic-cable", 2 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-sulfuric-acid-to-acidic-water",
     icon_size = 64,
@@ -345,18 +345,18 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "e",
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {type = "fluid", name = "sulfuric-acid", amount = 10},
-        {"pm-calcium-ore", 6}
+      { type = "fluid",   name = "sulfuric-acid", amount = 10 },
+      { "pm-calcium-ore", 6 }
     },
-    results = 
+    results =
     {
-        {type = "fluid", name = "pm-acidic-water", amount = 50},
-        {name = "sulfur", amount_min = 2, amount_max = 5}
+      { type = "fluid",  name = "pm-acidic-water", amount = 50 },
+      { name = "sulfur", amount_min = 2,           amount_max = 5 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-cadnium-zinc-solder",
     icon_size = 64,
@@ -365,18 +365,18 @@ data:extend({
     category = "pm-moltening",
     energy_required = 9,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-zinc-plate", 10},
-        {"pm-cadnium-plate", 4 + 1},
-        {type = "fluid", name = "pm-molten-iron", amount = 2.4 + 0.1}
+      { "pm-zinc-plate",    10 },
+      { "pm-cadnium-plate", 4 + 1 },
+      { type = "fluid",     name = "pm-molten-iron", amount = 2.4 + 0.1 }
     },
-    results = 
+    results =
     {
-        {type = "fluid", name = "pm-molten-solder", amount = 10}
+      { type = "fluid", name = "pm-molten-solder", amount = 10 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-water-deacifying",
     category = "pm-acids",
@@ -386,29 +386,29 @@ data:extend({
     enabled = false,
     crafting_machine_tint =
     {
-        primary = {r=0.98,g=0.87,b=0.09,a=1}, --main visible colour
-        secondary = {r=0,g=0.4,b=0,a=1},--background visible colour
-        tertiary = {r=0.76,g=0.89,b=0.4,a=0.5}, -- smoke afteraffects
-        quaternary = {r=0.5,g=0.8,b=0.5,a=1} --smoke 
+      primary = { r = 0.98, g = 0.87, b = 0.09, a = 1 }, --main visible colour
+      secondary = { r = 0, g = 0.4, b = 0, a = 1 }, --background visible colour
+      tertiary = { r = 0.76, g = 0.89, b = 0.4, a = 0.5 }, -- smoke afteraffects
+      quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 } --smoke
     },
     energy_required = 4,
-    ingredients = 
+    ingredients =
     {
-        {"pm-calcium-ore", 6},
-        {type = "fluid", name = "pm-acidic-water", amount = 50},
+      { "pm-calcium-ore", 6 },
+      { type = "fluid",   name = "pm-acidic-water", amount = 50 },
     },
     results =
     {
-        {type = "fluid", name = "water", amount = 50},
-        {
-            name = "sulfur",
-            amount_min = 2,
-            amount_max = 4 + 1
-        }
+      { type = "fluid", name = "water", amount = 50 },
+      {
+        name = "sulfur",
+        amount_min = 2,
+        amount_max = 4 + 1
+      }
     }
-},
+  },
 
-{
+  {
     type = "recipe",
     name = "pm-integrated-circuit-mold",
     icon_size = 64,
@@ -419,16 +419,16 @@ data:extend({
     order = "b",
     enabled = false,
     allow_decomposition = false,
-    ingredients = 
+    ingredients =
     {
-        {type = "fluid", name = "pm-pheonlic-resin", amount = 40 + 10},
+      { type = "fluid", name = "pm-pheonlic-resin", amount = 40 + 10 },
     },
-    results = 
+    results =
     {
-        {"pm-integrated-circuit-mold", 3}
+      { "pm-integrated-circuit-mold", 3 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-green-integrated-circuit-molding",
     icon_size = 64,
@@ -439,18 +439,18 @@ data:extend({
     order = "e",
     enabled = false,
     allow_decomposition = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-integrated-circuit-mold", 3},
-        {"pm-basic-integrated-circuits", 3}
+      { "pm-integrated-circuit-mold",   3 },
+      { "pm-basic-integrated-circuits", 3 }
     },
-    results = 
+    results =
     {
-        {"pm-basic-integrated-circuit-mold", 3},
-        {name = "pm-basic-integrated-circuits", amount_min = 2, amount_max = 3}
+      { "pm-basic-integrated-circuit-mold",    3 },
+      { name = "pm-basic-integrated-circuits", amount_min = 2, amount_max = 3 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-basic-integrated-circuit-molding",
     icon_size = 64,
@@ -461,22 +461,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-basic-integrated-circuit-mold", 3},
-        {"copper-cable", 1}
+      { "pm-basic-integrated-circuit-mold", 3 },
+      { "copper-cable",                     1 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-basic-integrated-circuit-mold",
-            probability = "0.6",
-            amount = 3
-        },
-        {"pm-basic-integrated-circuits", 3}
+      {
+        name = "pm-basic-integrated-circuit-mold",
+        probability = 0.6,
+        amount = 3
+      },
+      { "pm-basic-integrated-circuits", 3 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-fluid-integrated-circuit-pressing",
     icon_size = 64,
@@ -487,18 +487,18 @@ data:extend({
     order = "i",
     enabled = false,
     allow_decomposition = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-integrated-circuit-mold", 3},
-        {"pm-fluid-integrated-circuits", 3}
+      { "pm-integrated-circuit-mold",   3 },
+      { "pm-fluid-integrated-circuits", 3 }
     },
-    results = 
+    results =
     {
-        {"pm-fluid-integrated-circuit-mold", 3},
-        {name = "pm-fluid-integrated-circuits", amount_min = 2, amount_max = 3}
+      { "pm-fluid-integrated-circuit-mold",    3 },
+      { name = "pm-fluid-integrated-circuits", amount_min = 2, amount_max = 3 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-fluid-integrated-circuit-molding",
     icon_size = 64,
@@ -509,22 +509,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-fluid-integrated-circuit-mold", 3},
-        {"pm-gold-wire", 2}
+      { "pm-fluid-integrated-circuit-mold", 3 },
+      { "pm-gold-wire",                     2 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-fluid-integrated-circuit-mold",
-            probability = "0.5",
-            amount = 3
-        },
-        {"pm-fluid-integrated-circuits", 3}
+      {
+        name = "pm-fluid-integrated-circuit-mold",
+        probability = 0.5,
+        amount = 3
+      },
+      { "pm-fluid-integrated-circuits", 3 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-advanced-integrated-circuit-pressing",
     icon_size = 64,
@@ -535,18 +535,18 @@ data:extend({
     order = "m",
     enabled = false,
     allow_decomposition = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-integrated-circuit-mold", 3},
-        {"pm-advanced-integrated-circuits", 3}
+      { "pm-integrated-circuit-mold",      3 },
+      { "pm-advanced-integrated-circuits", 3 }
     },
-    results = 
+    results =
     {
-        {"pm-advanced-integrated-circuit-mold", 3},
-        {name = "pm-advanced-integrated-circuits", amount_min = 2, amount_max = 3}
+      { "pm-advanced-integrated-circuit-mold",    3 },
+      { name = "pm-advanced-integrated-circuits", amount_min = 2, amount_max = 3 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-advanced-integrated-circuit-molding",
     icon_size = 64,
@@ -557,22 +557,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-advanced-integrated-circuit-mold", 3},
-        {"pm-gold-wire", 2}
+      { "pm-advanced-integrated-circuit-mold", 3 },
+      { "pm-gold-wire",                        2 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-advanced-integrated-circuit-mold",
-            probability = "0.4",
-            amount = 3
-        },
-        {"pm-advanced-integrated-circuits", 3}
+      {
+        name = "pm-advanced-integrated-circuit-mold",
+        probability = 0.4,
+        amount = 3
+      },
+      { "pm-advanced-integrated-circuits", 3 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-processing-integrated-circuit-pressing",
     icon_size = 64,
@@ -583,18 +583,18 @@ data:extend({
     order = "o",
     enabled = false,
     allow_decomposition = false,
-    ingredients = 
+    ingredients =
     {
-        {"pm-integrated-circuit-mold", 3},
-        {"pm-processing-integrated-circuits", 3}
+      { "pm-integrated-circuit-mold",        3 },
+      { "pm-processing-integrated-circuits", 3 }
     },
-    results = 
+    results =
     {
-        {"pm-processing-integrated-circuit-mold", 3},
-        {name = "pm-advanced-integrated-circuits", amount_min = 2, amount_max = 3}
+      { "pm-processing-integrated-circuit-mold",  3 },
+      { name = "pm-advanced-integrated-circuits", amount_min = 2, amount_max = 3 }
     }
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-processing-integrated-circuit-molding",
     icon_size = 64,
@@ -605,22 +605,22 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
-    ingredients = 
+    ingredients =
     {
-        {"pm-processing-integrated-circuit-mold", 3},
-        {"pm-gold-wire", 2}
+      { "pm-processing-integrated-circuit-mold", 3 },
+      { "pm-gold-wire",                          2 }
     },
-    results = 
+    results =
     {
-        {
-            name = "pm-processing-integrated-circuit-mold",
-            probability = "0.3",
-            amount = 3
-        },
-        {"pm-processing-integrated-circuits", 3}
+      {
+        name = "pm-processing-integrated-circuit-mold",
+        probability = 0.3,
+        amount = 3
+      },
+      { "pm-processing-integrated-circuits", 3 }
     },
-},
-{
+  },
+  {
     type = "recipe",
     name = "pm-bismuth-carbon-dioxide-electrolysis",
     icon_size = 64,
@@ -629,16 +629,16 @@ data:extend({
     enabled = false,
     category = "pm-electrolysis",
     main_product = "pm-carbon-monoxide",
-    ingredients = 
+    ingredients =
     {
-        {type = "fluid", name = "pm-carbon-dioxide-gas", amount = 40},
-        {"pm-zirconia", 4},
-        {"pm-bismuth-ore", 4}
+      { type = "fluid",   name = "pm-carbon-dioxide-gas", amount = 40 },
+      { "pm-zirconia",    4 },
+      { "pm-bismuth-ore", 4 }
     },
-    results = 
+    results =
     {
-        {type = "fluid", name = "pm-carbon-monoxide", amount = 40},
-        {type = "fluid", name = "pm-oxygen-gas", amount = 20}
+      { type = "fluid", name = "pm-carbon-monoxide", amount = 40 },
+      { type = "fluid", name = "pm-oxygen-gas",      amount = 20 }
     }
-},
-})
+  },
+} --[[@as data.RecipePrototype[] ]])
