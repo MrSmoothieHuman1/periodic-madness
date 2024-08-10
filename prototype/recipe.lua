@@ -2518,6 +2518,7 @@ data:extend({
     type = "recipe",
     name = "pm-travelling-wave-amplifier-tube",
     energy_required = 10,
+    subgroup = "pm-refined-items",
     enabled = false,
     ingredients =
     {

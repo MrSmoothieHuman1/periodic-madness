@@ -98,7 +98,6 @@ data:extend({
         category = "pm-electrolysis",
         subgroup = "pm-gallium-ptm",
         order = "d",
-        main_product = "pm-sodium-hydroxide",
         ingredients = 
         {
             {"pm-sodium", 6},

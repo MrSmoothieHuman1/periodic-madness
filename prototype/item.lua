@@ -1299,7 +1299,7 @@ data:extend({
 },
 {
   type = "item",
-  name = "pm-nitrogen-doped-nickle-molybdenum-phosphide-catalyst",
+  name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
   icon_size = 64,
   icon = "__periodic-madness__/graphics/icons/NiMoP.png",
   subgroup = "pm-refined-items",
