@@ -69,13 +69,13 @@ data:extend({
             {
                 type = "fluid",
                 name = "pm-butane-gas",
-                probability = "0.5",
+                probability = 0.5,
                 amount = 15
             },
             {
                 type = "fluid",
                 name = "pm-butene-gas",
-                probability = "0.5",
+                probability = 0.5,
                 amount = 15
             }
         }    
@@ -205,7 +205,7 @@ data:extend({
         },
         results = 
         {
-            {name = "pm-bitumen", amount_min = 0, amount_max = 2, probability = "0.9"},
+            {name = "pm-bitumen", amount_min = 0, amount_max = 2, probability = 0.9},
             {name = "pm-coke", amount_min = 1, amount_max = 3},
             {"pm-carbon", 4}
         }
@@ -227,7 +227,7 @@ data:extend({
         },
         results = 
         {
-            {type = "fluid", name = "pm-acidic-water", amount = 10, probability = "0.6"},
+            {type = "fluid", name = "pm-acidic-water", amount = 10, probability = 0.6},
             {name = "pm-carbon", amount_min = 8, amount_max = 12},
             {"pm-coke", 4}
         }
@@ -455,10 +455,10 @@ data:extend({
             {type = "fluid", name = "pm-hydrogen-gas", amount_min = 4, amount_max = 6},
             {
                 name = "pm-catalyst-container",
-                probability = "0.9",
+                probability = 0.9,
                 amount = 1
             },
-            {name = "pm-palladium-hydride", amount_min = 1, amount_max = 3, probability = "0.5"},
+            {name = "pm-palladium-hydride", amount_min = 1, amount_max = 3, probability = 0.5},
             {type = "fluid", name = "pm-butane-gas", amount_min = 20, amount_max = 30}
         }
     },

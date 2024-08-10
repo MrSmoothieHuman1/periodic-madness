@@ -75,7 +75,7 @@ data:extend({
             {"sulfur", 2},
             {
                 name = "pm-catalyst-container",
-                probability = "0.9",
+                probability = 0.9,
                 amount = 1
             }
         }

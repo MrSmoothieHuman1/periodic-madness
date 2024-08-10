@@ -92,7 +92,7 @@ data:extend({
             {
                 name = "pm-carbon",
                 amount = 1,
-                probability = "0.5"
+                probability = 0.5
             }
         }
     }--[[@as data.RecipePrototype]],
