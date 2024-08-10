@@ -45,6 +45,19 @@ function lib.set_flag(flagged_obj, flag)
   end
 end
 
+---Quickly makes the IngredientPrototype as if by using shorthand
+---@param name data.ItemID
+---@param amount uint
+---@param type "fluid"|"item"?
+---@return data.IngredientPrototype
+lib.ingredient = function (name, amount, type)
+  return {
+    name = name,
+    amount = amount,
+    type = type or "item"
+  }
+end
+
 require("prototype.item")
 require("prototype.fluids")
 require("prototype.items.circuits")
