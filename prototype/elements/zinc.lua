@@ -17,7 +17,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-transition-zinc-decomposition",
+    name = "pm-transition-zinc-leeching",
     icon_size = 64,
     icons =
     {
@@ -57,7 +57,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-zinc-decomposition",
+    name = "pm-chromic-transition-zinc-leeching",
     icon_size = 64,
     icons =
     {

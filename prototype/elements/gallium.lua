@@ -38,6 +38,7 @@ data:extend({
     category = "pm-electrolysis",
     subgroup = "pm-gallium-ptm",
     order = "a",
+    main_product = "pm-sodium-hydroxide",
     ingredients =
     {
       { "pm-sea-salt", 20 },
@@ -91,6 +92,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-metal-sodium-hydroxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/metal-sodium-hydroxide.png",
     enabled = false,
     energy_required = 4,
     category = "pm-electrolysis",

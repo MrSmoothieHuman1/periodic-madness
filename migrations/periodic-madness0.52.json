@@ -1,0 +1,26 @@
+{
+    "recipe":
+    [
+        ["pm-transition-iron-decomposition", "pm-transition-iron-leeching"],
+        ["pm-transition-copper-decomposition", "pm-transition-copper-leeching"],
+        ["pm-transition-nickel-decomposition", "pm-transition-nickel-leeching"],
+        ["pm-transition-zinc-decomposition", "pm-transition-zinc-leeching"],
+        ["pm-transition-manganese-decomposition", "pm-transition-manganese-leeching"],
+        ["pm-transition-aluminium-decomposition", "pm-transition-aluminium-leeching"],
+        ["pm-transition-slag-decomposition", "pm-transition-slag-leeching"],
+        ["pm-ferrum-decomposition", "pm-ferrum-leeching"],
+        ["pm-patina-decomposition", "pm-ferrum-leeching"],
+        ["pm-chunk-slag-decomposition", "pm-chunk-slag-leeching"],
+
+
+        ["pm-chromic-transition-iron-decomposition", "pm-chromic-transition-iron-leeching"],
+        ["pm-chromic-transition-copper-decomposition", "pm-chromic-transition-copper-leeching"],
+        ["pm-chromic-transition-nickel-decomposition", "pm-chromic-transition-nickel-leeching"],
+        ["pm-chromic-transition-zinc-decomposition", "pm-chromic-transition-zinc-leeching"],
+        ["pm-chromic-transition-manganese-decomposition", "pm-chromic-transition-manganese-leeching"],
+        ["pm-chromic--aluminium-decomposition", "pm-chromic-aluminium-leeching"],
+        ["pm-chromic-ferrum-decomposition", "pm-chromic-ferrum-leeching"],
+        ["pm-chromic-patina-decomposition", "pm-chromic-ferrum-leeching"]
+
+    ]
+}

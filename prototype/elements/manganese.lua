@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "recipe",
-    name = "pm-transition-manganese-decomposition",
+    name = "pm-transition-manganese-leeching",
     icon_size = 64,
     icons =
     {
@@ -41,7 +41,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-manganese-decomposition",
+    name = "pm-chromic-transition-manganese-leeching",
     icon_size = 64,
     icons =
     {

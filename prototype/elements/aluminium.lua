@@ -2,7 +2,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-transition-aluminium-decomposition",
+    name = "pm-transition-aluminium-leeching",
     subgroup = "pm-aluminium-ptm",
     order = "a",
     category = "pm-acids",
@@ -29,7 +29,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-aluminium-decomposition",
+    name = "pm-chromic-transition-aluminium-leeching",
     icon_size = 64,
     icons =
     {

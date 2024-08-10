@@ -17,7 +17,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-transition-copper-decomposition",
+    name = "pm-transition-copper-leeching",
     icon_size = 64,
     icons =
     {
@@ -57,7 +57,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-copper-decomposition",
+    name = "pm-chromic-transition-copper-leeching",
     icon_size = 64,
     icons =
     {
