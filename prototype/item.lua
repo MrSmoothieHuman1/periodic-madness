@@ -1292,13 +1292,12 @@ data:extend({
           }
         }
       }
-<<<<<<< HEAD
-    }
+    },
+    subgroup = "capsule",
+    order = "a[grenade]-a[normal]",
+    stack_size = 150
   },     
-  subgroup = "capsule",
-  order = "a[grenade]-a[normal]",
-  stack_size = 150
-},
+  
 {
   type = "item",
   name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
@@ -1307,21 +1306,6 @@ data:extend({
   subgroup = "pm-refined-items",
   stack_size = 50
 },
-=======
-    },
-    subgroup = "capsule",
-    order = "a[grenade]-a[normal]",
-    stack_size = 150
-  },
-  {
-    type = "item",
-    name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/NiMoP.png",
-    subgroup = "pm-refined-items",
-    stack_size = 50
-  },
->>>>>>> 692364614e6a49f2e6bd3a04d513aac391bafc74
 
   {
     type = "item",
