@@ -300,12 +300,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-air-filter", 1 },
-      { "pm-chalk",      4 }
+      {"pm-air-filter", 1},
+      {"pm-chalk", 4}
     },
     results =
     {
-      { "pm-trace-gas-air-filter", 1 }
+      {"pm-trace-gas-air-filter", 1}
     }
   },
 
@@ -324,7 +324,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      { type = "fluid", name = "pm-oxygen-gas", amount = 25 }
+      {type = "fluid", name = "pm-oxygen-gas", amount = 25}
     },
     results = {}
   },
@@ -341,7 +341,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      { type = "fluid", name = "pm-chlorine", amount = 25 }
+      {type = "fluid", name = "pm-chlorine", amount = 25}
     },
     results = {}
   },
@@ -358,7 +358,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      { type = "fluid", name = "pm-nitrogen-gas", amount = 25 }
+      {type = "fluid", name = "pm-nitrogen-gas", amount = 25}
     },
     results = {}
   },
@@ -375,7 +375,7 @@ data:extend({
     emissions_multiplier = 0.5,
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 25 }
+      {type = "fluid", name = "pm-carbon-dioxide-gas", amount = 25}
     },
     results = {}
   },
@@ -392,7 +392,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      { type = "fluid", name = "pm-trace-gas", amount = 25 }
+      {type = "fluid", name = "pm-trace-gas", amount = 25}
     },
     results = {}
   },
@@ -409,7 +409,7 @@ data:extend({
     emissions_multiplier = 0.5,
     ingredients =
     {
-      { type = "fluid", name = "pm-helium-gas", amount = 25 }
+      {type = "fluid", name = "pm-helium-gas", amount = 25}
     },
     results = {}
   },
@@ -426,7 +426,7 @@ data:extend({
     emissions_multiplier = -1,
     ingredients =
     {
-      { type = "fluid", name = "pm-argon-gas", amount = 25 }
+      {type = "fluid", name = "pm-argon-gas", amount = 25}
     },
     results = {}
   },
@@ -443,7 +443,7 @@ data:extend({
     emissions_multiplier = -2,
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-monoxide", amount = 25 }
+      {type = "fluid", name = "pm-carbon-monoxide", amount = 25}
     },
     results = {}
   },
@@ -460,7 +460,7 @@ data:extend({
     emissions_multiplier = -1,
     ingredients =
     {
-      { type = "fluid", name = "pm-ammonia-gas", amount = 25 }
+      {type = "fluid", name = "pm-ammonia-gas", amount = 25}
     },
     results = {}
   },
@@ -476,12 +476,12 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 10 },
+      {type = "fluid", name = "pm-carbon-dioxide-gas", amount = 10},
     },
     results =
     {
-      { type = "fluid", name = "pm-oxygen-gas", amount = 20 },
-      { type = "item",  name = "pm-carbon",     amount = 10 }
+      {type = "fluid", name = "pm-oxygen-gas", amount = 20},
+      {type = "item",  name = "pm-carbon", amount = 10}
     }
   },
   {
@@ -495,12 +495,12 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-trioxide", amount = 10 },
+      {type = "fluid", name = "pm-carbon-trioxide", amount = 10},
     },
     results =
     {
-      { type = "fluid", name = "pm-oxygen-gas",         amount = 20 },
-      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 10 }
+      {type = "fluid", name = "pm-oxygen-gas", amount = 20},
+      {type = "fluid", name = "pm-carbon-dioxide-gas", amount = 10}
     }
   },
   {
@@ -516,13 +516,13 @@ data:extend({
     main_product = "pm-helium-gas",
     ingredients =
     {
-      { type = "fluid", name = "pm-trace-gas", amount = 24 + 1 }
+      {type = "fluid", name = "pm-trace-gas", amount = 24 + 1 }
     },
     results =
     {
-      { type = "fluid", name = "pm-helium-gas",   amount = 20 },
-      { type = "fluid", name = "pm-argon-gas",    amount = 20 },
-      { type = "fluid", name = "pm-water-vapour", amount = 4 + 1 }
+      {type = "fluid", name = "pm-helium-gas", amount = 20},
+      {type = "fluid", name = "pm-argon-gas", amount = 20},
+      {type = "fluid", name = "pm-water-vapour", amount = 4 + 1}
     }
   },
   {
@@ -536,13 +536,13 @@ data:extend({
     main_product = "pm-ammonia-gas",
     ingredients =
     {
-      { type = "fluid",           name = "pm-trace-gas", amount = 24 + 1 },
-      { "pm-nitrogen-air-filter", 1 }
+      {type = "fluid", name = "pm-trace-gas", amount = 25},
+      {"pm-nitrogen-air-filter", 1}
     },
     results =
     {
-      { type = "fluid", name = "pm-ammonia-gas",  amount = 14 + 1 },
-      { type = "fluid", name = "pm-water-vapour", amount = 4 + 1 },
+      {type = "fluid", name = "pm-ammonia-gas",  amount = 15},
+      {type = "fluid", name = "pm-water-vapour", amount = 5},
       {
         type = "fluid",
         name = "pm-nitrogen-gas",
@@ -561,11 +561,11 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { "pm-carbon-dioxide-air-filter", 1 }
+      {"pm-carbon-dioxide-air-filter", 1}
     },
     results =
     {
-      { "pm-dirty-carbon-dioxide-air-filter", 1 }
+      {"pm-dirty-carbon-dioxide-air-filter", 1}
     }
   },
   {
@@ -577,11 +577,11 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      { "pm-advanced-air-filter", 1 }
+      {"pm-advanced-air-filter", 1}
     },
     results =
     {
-      { "pm-dirty-advanced-air-filter", 1 }
+      {"pm-dirty-advanced-air-filter", 1}
     }
   },
   {
@@ -596,13 +596,13 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-dirty-carbon-dioxide-air-filter", 1 },
-      { type = "fluid",                       name = "water", amount = 20 }
+      {"pm-dirty-carbon-dioxide-air-filter", 1},
+      {type = "fluid", name = "water", amount = 20}
     },
     results =
     {
       { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 20 },
-      { type = "fluid", name = "pm-carbon-monoxide",    amount = 10, probability = 0.2 },
+      { type = "fluid", name = "pm-carbon-monoxide", amount = 10, probability = 0.2 },
       {
         name = "pm-carbon-dioxide-air-filter",
         probability = 0.85,
