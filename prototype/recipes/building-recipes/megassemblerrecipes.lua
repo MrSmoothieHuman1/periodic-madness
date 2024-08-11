@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -10,13 +11,13 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { "copper-cable",                 2 },
-      { "pm-basic-integrated-circuits", 3 },
-      { "pm-basic-breadboard",          1 }
+      PM.ingredient("copper-cable", 2),
+      PM.ingredient("pm-basic-integrated-circuits", 3),
+      PM.ingredient("pm-basic-breadboard", 1)
     },
     results =
     {
-      { "electronic-circuit", 1 }
+      PM.product("electronic-circuit", 1)
     },
   },
   {
@@ -29,14 +30,14 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { "pm-gold-wire",                 3 },
-      { "pm-fluid-breadboard",          1 },
-      { "pm-fluid-integrated-circuits", 3 },
-      { "pm-transistors",               5 },
+      PM.ingredient("pm-gold-wire", 3),
+      PM.ingredient("pm-fluid-breadboard", 1),
+      PM.ingredient("pm-fluid-integrated-circuits", 3),
+      PM.ingredient("pm-transistors", 5),
     },
     results =
     {
-      { "pm-fluid-circuit", 1 }
+      PM.product("pm-fluid-circuit", 1)
     }
   },
   {
@@ -49,15 +50,15 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { "pm-gold-wire",                    3 },
-      { "pm-advanced-circuit-breadboard",  1 },
-      { "pm-advanced-integrated-circuits", 3 },
-      { "pm-solder",                       1 },
-      { "pm-transistors",                  5 }
+      PM.ingredient("pm-gold-wire", 3),
+      PM.ingredient("pm-advanced-circuit-breadboard", 1),
+      PM.ingredient("pm-advanced-integrated-circuits", 3),
+      PM.ingredient("pm-solder", 1),
+      PM.ingredient("pm-transistors", 5)
     },
     results =
     {
-      { "advanced-circuit", 1 }
+      PM.product("advanced-circuit", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
