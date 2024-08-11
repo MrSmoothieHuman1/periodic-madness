@@ -13,7 +13,7 @@ data:extend({
     ingredients =
     {
       { type = "fluid",          name = "pm-oxygen-gas", amount = 30 },
-      { "iron-plate",            10 },
+      { "iron-plate",10 },
       { "pm-sodium-bicarbonate", 5 }
     },
     results =
@@ -93,12 +93,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-borosilicate-glass", amount = 5 },
-      { "pm-crucible",  2 }
+      {type = "fluid", name = "pm-molten-borosilicate-glass", amount = 5},
+      {"pm-crucible", 2}
     },
     results =
     {
-      { "pm-borosilicate-glass", 5 },
+      {"pm-borosilicate-glass", 5},
       {
         name = "pm-crucible",
         amount_min = 1,
@@ -126,7 +126,7 @@ data:extend({
     category = "pm-moltening",
     ingredients =
     {
-      { type = "fluid",             name = "pm-molten-borosilicate-glass", amount = 2.5 },
+      { type = "fluid", name = "pm-molten-borosilicate-glass", amount = 2.5 },
       { "pm-filled-flux-container", 1 }
     },
     results =
@@ -1384,10 +1384,10 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-tin-plate",             6 },
+      { "pm-tin-plate", 6 },
       { "pm-bismuth-ore",           4 },
       { "pm-filled-flux-container", 2 },
-      { type = "fluid",             name = "pm-molten-iron", amount = 5 }
+      { type = "fluid", name = "pm-molten-iron", amount = 5 }
     },
     results =
     {
@@ -1439,14 +1439,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "iron-plate",               8 },
+      { "iron-plate",   8 },
       { "pm-manganese-plate",       8 },
       { "pm-vanadium-oxide",        4 },
       { "pm-filled-flux-container", 2 }
     },
     results =
     {
-      { type = "fluid",             name = "pm-molten-steel", amount = 10 },
+      { type = "fluid", name = "pm-molten-steel", amount = 10 },
       { name = "pm-flux-container", amount_min = 1,           amount_max = 2 },
     }
   },
@@ -1489,13 +1489,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "copper-plate",             10 },
-      { "pm-zinc-plate",            10 },
+      { "copper-plate", 10 },
+      { "pm-zinc-plate",10 },
       { "pm-filled-flux-container", 2 }
     },
     results =
     {
-      { type = "fluid",             name = "pm-molten-brass", amount = 10 },
+      { type = "fluid", name = "pm-molten-brass", amount = 10 },
       { name = "pm-flux-container", amount_min = 1,           amount_max = 2 },
     }
   },
@@ -1538,15 +1538,15 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "steel-plate",              8 },
+      { "steel-plate",  8 },
       { "pm-manganese-plate",       8 },
       { "pm-chrominum-ore",         4 },
       { "pm-filled-flux-container", 2 }
     },
     results =
     {
-      { type = "fluid",             name = "pm-molten-stainless-steel", amount = 10 },
-      { name = "pm-flux-container", amount_min = 1,                     amount_max = 2 },
+      { type = "fluid", name = "pm-molten-stainless-steel", amount = 10 },
+      { name = "pm-flux-container", amount_min = 1,         amount_max = 2 },
     }
   },
   {
@@ -1588,15 +1588,15 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "iron-plate",               3 },
+      { "iron-plate",   3 },
       { "pm-aluminium-plate",       3 },
       { "pm-chrominum-ore",         4 },
       { "pm-filled-flux-container", 2 }
     },
     results =
     {
-      { type = "fluid",             name = "pm-molten-kasethal", amount = 10 },
-      { name = "pm-flux-container", amount_min = 1,              amount_max = 2 },
+      { type = "fluid", name = "pm-molten-kasethal", amount = 10 },
+      { name = "pm-flux-container", amount_min = 1,  amount_max = 2 },
     }
   },
   {

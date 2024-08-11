@@ -18,10 +18,10 @@ data:extend({
       count = 174 + 1,
       ingredients =
       {
-        { "automation-science-pack",                            1 },
-        { "logistic-science-pack",                              1 },
-        { "pm-advanced-advanced-transition-metal-science-pack", 1 },
-        { "chemical-science-pack",                              1 }
+        { "automation-science-pack",                            1},
+        { "logistic-science-pack",                              1},
+        { "pm-advanced-advanced-transition-metal-science-pack", 1},
+        { "chemical-science-pack",                              1}
       },
       time = 33 + 12
     }
@@ -50,7 +50,7 @@ data:extend({
       count = 100,
       ingredients =
       {
-        { "pm-agility-bio-module", 1 },
+        { "pm-agility-bio-module", 1},
       },
       time = 30
     }
@@ -79,7 +79,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        { "pm-agility-bio-module", 1 },
+        { "pm-agility-bio-module", 1},
       },
       time = 60
     }
@@ -108,7 +108,7 @@ data:extend({
       count = 700,
       ingredients =
       {
-        { "pm-agility-bio-module", 1 },
+        { "pm-agility-bio-module", 1},
       },
       time = 120
     }
@@ -137,7 +137,7 @@ data:extend({
       count = 1400,
       ingredients =
       {
-        { "pm-agility-bio-module", 1 },
+        { "pm-agility-bio-module", 1},
       },
       time = 240
     }
@@ -166,7 +166,7 @@ data:extend({
       count = 100,
       ingredients =
       {
-        { "pm-strength-bio-module", 1 },
+        { "pm-strength-bio-module", 1},
       },
       time = 30
     }
@@ -195,7 +195,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        { "pm-strength-bio-module", 1 },
+        { "pm-strength-bio-module", 1},
       },
       time = 60
     }
@@ -224,7 +224,7 @@ data:extend({
       count = 700,
       ingredients =
       {
-        { "pm-strength-bio-module", 1 },
+        { "pm-strength-bio-module", 1},
       },
       time = 120
     }
@@ -253,7 +253,7 @@ data:extend({
       count = 1400,
       ingredients =
       {
-        { "pm-strength-bio-module", 1 },
+        { "pm-strength-bio-module", 1},
       },
       time = 240
     }
@@ -278,7 +278,7 @@ data:extend({
       count = 100,
       ingredients =
       {
-        { "pm-health-bio-module", 1 },
+        { "pm-health-bio-module", 1},
       },
       time = 30
     }
@@ -303,7 +303,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        { "pm-health-bio-module", 1 },
+        { "pm-health-bio-module", 1},
       },
       time = 60
     }
@@ -328,7 +328,7 @@ data:extend({
       count = 700,
       ingredients =
       {
-        { "pm-health-bio-module", 1 },
+        { "pm-health-bio-module", 1},
       },
       time = 120
     }
@@ -353,7 +353,7 @@ data:extend({
       count = 1400,
       ingredients =
       {
-        { "pm-health-bio-module", 1 },
+        { "pm-health-bio-module", 1},
       },
       time = 240
     }
