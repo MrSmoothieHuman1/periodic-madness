@@ -691,7 +691,7 @@ data:extend({
     ingredients =
     {
       { "pm-yttrium-ore",        2 },
-      { type = "fluid",          name = "pm-oxygen-gas", amount = 20 },
+      { type = "fluid", name = "pm-oxygen-gas", amount = 20 },
       { "pm-catalyst-container", 1 }
     },
     result = "pm-yttrium-catalyst"
