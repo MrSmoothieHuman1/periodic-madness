@@ -4379,7 +4379,7 @@ data:extend({
             height = 256,
             frame_count = 60,
             line_length = 8,
-            scale = 0.12 + 0.004 + 0.001
+            scale = 0.75 / 2
           }
         },
         {
@@ -4402,7 +4402,7 @@ data:extend({
             line_length = 8,
             draw_as_shadow = true,
             shift = util.by_pixel(14, 0),
-            scale = 0.12 + 0.004 + 0.001
+            scale = 0.75 / 2
           }
         }
       }
@@ -8211,7 +8211,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 0.1, result = "heat-pipe" },
+    minable = { mining_time = 0.1, result = "pm-heat-pipe-1" },
     max_health = 300,
     corpse = "heat-pipe-remnants",
     dying_explosion = "heat-pipe-explosion",
@@ -8316,18 +8316,18 @@ data:extend({
       }, true)
   },
   {
-    type                     = "reactor",
-    name                     = "pm-polonium-reactor",
-    icon                     = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
-    icon_size                = 128,
-    flags                    = { "placeable-neutral", "player-creation" },
-    minable                  = { mining_time = 0.7, result = "pm-polonium-reactor" },
-    max_health               = 200,
-    corpse                   = "nuclear-reactor-remnants",
-    dying_explosion          = "nuclear-reactor-explosion",
-    consumption              = "40MW",
-    neighbour_bonus          = 1.25,
-    energy_source            =
+    type = "reactor",
+    name = "pm-polonium-reactor",
+    icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+    icon_size = 128,
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.7, result = "pm-polonium-reactor" },
+    max_health = 250,
+    corpse = "nuclear-reactor-remnants",
+    dying_explosion  = "nuclear-reactor-explosion",
+    consumption = "40MW",
+    neighbour_bonus = 1.25,
+    energy_source =
     {
       type = "burner",
       fuel_category = "pm-polonium",
@@ -8341,9 +8341,9 @@ data:extend({
         maximum_intensity = 0.95
       }
     },
-    collision_box            = { { -2.3, -2.3 }, { 2.3, 2.3 } },
-    selection_box            = { { -2.5, -2.5 }, { 2.5, 2.5 } },
-    lower_layer_picture      =
+    collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
+    selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+    lower_layer_picture =
     {
       filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
       width = 156,
@@ -8373,7 +8373,7 @@ data:extend({
             shift = util.by_pixel(-0.5, -4.5)
           }
         },
-    picture                  =
+    picture =
     {
       layers =
       {
@@ -8419,7 +8419,7 @@ data:extend({
         }
       }
     },
-    working_light_picture    =
+    working_light_picture =
     {
       filename = "__base__/graphics/entity/nuclear-reactor/reactor-lights-color.png",
       blend_mode = "additive",
@@ -8438,7 +8438,7 @@ data:extend({
         shift = { -0.03125, -0.1875 },
       }
     },
-    heat_buffer              =
+    heat_buffer =
     {
       max_temperature = 1000,
       specific_heat = "10MJ",
@@ -8677,6 +8677,7 @@ data:extend({
             repeat_count = 32,
             draw_as_shadow = true,
             shift = util.by_pixel(20, 0),
+            scale = 0.5
 
           }
         }
@@ -8709,7 +8710,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/evaporator-2.png",
     icon_size = 128,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.5, result = "pm-evaporator" },
+    minable = { mining_time = 0.5, result = "pm-evaporator-2" },
     max_health = 400,
     corpse = "pm-evaporator-2",
     dying_explosion = "assembling-machine-1-explosion",

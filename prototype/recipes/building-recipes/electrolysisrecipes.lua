@@ -8,7 +8,7 @@ data:extend({
     subgroup = "pm-hydrogen-rnm",
     order = "a",
     category = "pm-electrolysis",
-    energy_required = 0.5,
+    energy_required = 1,
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.2, b = 0.6, a = 1 }, --main visible colour
@@ -40,12 +40,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-sea-salt", 3 }     --when the fuck did you guys get here
+      {"pm-sea-salt", 3 }     --when the fuck did you guys get here
     },
     results =
     {
-      { name = "pm-sodium", amount_min = 2,       amount_max = 4 },
-      { type = "fluid",     name = "pm-chlorine", amount = 10 }
+      {name = "pm-sodium", amount_min = 2, amount_max = 4},
+      {type = "fluid", name = "pm-chlorine", amount = 10}
     }
   },
   {
@@ -53,20 +53,20 @@ data:extend({
     name = "pm-gas-water-electroylsis",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/gas-water-electroylsis.png",
-    energy_required = 0.5,
+    energy_required = 1,
     enabled = false,
     category = "pm-electrolysis",
     subgroup = "pm-hydrogen-rnm",
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "water", amount = 50 },
+      {type = "fluid", name = "water", amount = 50},
       {"pm-platinum-plate", 3}
     },
     results =
     {
-      { type = "fluid", name = "pm-oxygen-gas",   amount = 20 },
-      { type = "fluid", name = "pm-hydrogen-gas", amount = 40 },
+      {type = "fluid", name = "pm-oxygen-gas",   amount = 20},
+      {type = "fluid", name = "pm-hydrogen-gas", amount = 40},
     },
   },
   {
@@ -74,20 +74,20 @@ data:extend({
     name = "pm-nimop-gas-water-electroylsis",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/gas-water-electroylsis.png",
-    energy_required = 0.5,
-    enabled = false,
+    energy_required = 1.5,
+    --enabled = false,
     category = "pm-electrolysis",
     subgroup = "pm-hydrogen-rnm",
     order = "ba",
     ingredients =
     {
-      { type = "fluid",                                           name = "water", amount = 150 },
-      { "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1 }
+      {type = "fluid", name = "water", amount = 150},
+      {"pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1}
     },
     results =
     {
-      { type = "fluid", name = "pm-oxygen-gas",   amount = 50 },
-      { type = "fluid", name = "pm-hydrogen-gas", amount = 100 },
+      {type = "fluid", name = "pm-oxygen-gas", amount = 50},
+      {type = "fluid", name = "pm-hydrogen-gas", amount = 100},
       {
         name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
         amount = 1,
@@ -106,13 +106,13 @@ data:extend({
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 20 },
-      { "pm-zirconia",  12 }
+      {type = "fluid", name = "pm-carbon-dioxide-gas", amount = 20},
+      {"pm-zirconia", 12}
     },
     results =
     {
-      { type = "fluid", name = "pm-carbon-monoxide", amount = 20 },
-      { type = "fluid", name = "pm-oxygen-gas",      amount = 10 }
+      {type = "fluid", name = "pm-carbon-monoxide", amount = 20},
+      {type = "fluid", name = "pm-oxygen-gas", amount = 10}
     }
   },
 } --[[@as data.RecipePrototype[] ]])

@@ -2592,20 +2592,24 @@ data:extend({
   {
     type = "recipe",
     name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
-    enabled = false,
-    energy_required = 35,
+    --enabled = false,
+    energy_required = 60,
     category = "crafting-with-fluid",
     ingredients =
     {
-      { "pm-molybdenum-ore",        20 },
-      { type = "fluid",             name = "pm-nitrogen-gas", amount = 15 },
-      { "pm-nickel-plate",          12 },
-      { "pm-red-phosphorus",        6 },
+      { "pm-molybdenum-ore", 20 },
+      { type = "fluid", name = "pm-nitrogen-gas", amount = 15 },
+      { "pm-nickel-plate", 12 },
+      { "pm-red-phosphorus", 6 },
       { "pm-lightweight-panelling", 16 }
     },
     results =
     {
-      { "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1 }
+      { 
+        name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
+        amount = 1,
+        probability = 0.7
+      }
     }
   },
 
