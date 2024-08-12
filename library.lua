@@ -231,7 +231,7 @@ function PM.give_item(item, count)
     count = count
   } --[[@as data.GiveItemModifier]]
 end
----@alias SimpleModifierTypes 
+---@alias SimpleModifierTypes
 ---| "artillery-range"
 ---| "character-build-distance"
 ---| "character-crafting-speed"
@@ -250,6 +250,7 @@ end
 ---| "ghost-time-to-live"
 ---| "inserter-stack-size-bonus"
 ---| "laboratory-productivity"
+---| "laboratory-speed"
 ---| "max-failed-attempts-per-tick-per-construction-queue"
 ---| "max-successful-attempts-per-tick-per-construction-queue"
 ---| "maximum-following-robots-count"
@@ -259,15 +260,44 @@ end
 ---| "worker-robot-battery"
 ---| "worker-robot-speed"
 ---| "worker-robot-storage"
+---@alias SimpleModifiers
+---| data.ArtilleryRangeModifier
+---| data.CharacterBuildDistanceModifier
+---| data.CharacterCraftingSpeedModifier
+---| data.CharacterHealthBonusModifier
+---| data.CharacterInventorySlotsBonusModifier
+---| data.CharacterItemDropDistanceModifier
+---| data.CharacterItemPickupDistanceModifier
+---| data.CharacterLogisticTrashSlotsModifier
+---| data.CharacterLootPickupDistanceModifier
+---| data.CharacterMiningSpeedModifier
+---| data.CharacterReachDistanceModifier
+---| data.CharacterResourceReachDistanceModifier
+---| data.CharacterRunningSpeedModifier
+---| data.DeconstructionTimeToLiveModifier
+---| data.FollowerRobotLifetimeModifier
+---| data.GhostTimeToLiveModifier
+---| data.InserterStackSizeBonusModifier
+---| data.LaboratoryProductivityModifier
+---| data.LaboratorySpeedModifier
+---| data.MaxFailedAttemptsPerTickPerConstructionQueueModifier
+---| data.MaxSuccessfulAttemptsPerTickPerConstructionQueueModifier
+---| data.MaximumFollowingRobotsCountModifier
+---| data.MiningDrillProductivityBonusModifier
+---| data.StackInserterCapacityBonusModifier
+---| data.TrainBrakingForceBonusModifier
+---| data.WorkerRobotBatteryModifier
+---| data.WorkerRobotSpeedModifier
+---| data.WorkerRobotStorageModifier
 ---Shorthand for technology modifiers
 ---@param property SimpleModifierTypes
 ---@param modifier number
----@return data.SimpleModifier
+---@return SimpleModifiers
 function PM.modify(property, modifier)
   return {
     type = property,
     modifier = modifier
-  } --[[@as data.SimpleModifier]]
+  } --[[@as SimpleModifiers]]
 end
 ---Shorthand for modifying the damage or shooting speed of ammo
 ---@param type "ammo-damage"|"gun-speed"
