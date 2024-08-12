@@ -105,15 +105,43 @@ async function readFile(filepath) {
 }
 
 (async () => {
-  let file_contents = await readFile(process.argv[2])
-  
-  const startTime = performance.now()
-  for (const regex_and_replace of regex_and_replace_array) {
-    file_contents = file_contents.replace(regex_and_replace[0], regex_and_replace[1])
+  debugger
+  let given_path = process.argv[2]
+  let path_type = await fs.stat(given_path)
+
+  let files
+  if (path_type.isFile()) {
+    files = [given_path]
+    given_path = ""
+
+  } else if (path_type.isDirectory()) {
+    files = await fs.readdir(given_path)
+
+  } else {
+    console.error("The given path has to either be a directory or file")
+    process.exit(1)
   }
-  const endTime = performance.now()
-  console.log(`Replaced all ingredients and products in ${endTime-startTime} milliseconds`)
-  
-  await fs.writeFile(`${process.argv[2]}-new`, file_contents)
-  console.log(`Replaced output saved to '${process.argv[2]}-new'`)
+
+  let promises = []
+  for (let index = 0; index < files.length; index++) {
+    const file = given_path+files[index];
+    if ((await fs.stat(file)).isDirectory()) continue
+
+    promises[promises.length] = (async () => {
+      let file_contents = await readFile(file)
+      
+      const startTime = performance.now()
+      for (const regex_and_replace of regex_and_replace_array) {
+        file_contents = file_contents.replace(regex_and_replace[0], regex_and_replace[1])
+      }
+      const endTime = performance.now()
+      console.log(`Replaced all ingredients and products within ${file} in ${endTime-startTime} milliseconds`)
+
+      await fs.rename(file, file+".bak")
+      await fs.writeFile(file, file_contents)
+    })();
+  }
+
+  await Promise.all(promises)
+  console.log(`Files backed up and replaced with processed versions.`)
 })();
