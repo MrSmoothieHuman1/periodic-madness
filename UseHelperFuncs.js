@@ -17,6 +17,7 @@ const regex_and_replace_array = [
     'PM.ingredient($<name>, $<amount>, "fluid")'
   ],
 
+  //MARK: Product Items
   [ // Product Shorthand
     /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?<name>"[^"]*")\s*,\s*(?<amount>\d+)\s*}/g,
     'PM.product($<name>, $<amount>)'
@@ -38,6 +39,7 @@ const regex_and_replace_array = [
     'PM.product_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>)'
   ],
 
+  //MARK: Product Fluids
   [ // Product Fluid
     /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
     'PM.product($<name>, $<amount>, "fluid")'
@@ -56,6 +58,7 @@ const regex_and_replace_array = [
   ],
 
 
+  //MARK: Catalyst Items
   [ // Catalyst Item
     /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
     'PM.catalyst_a($<name>, $<amount>, $<catalyst_amount>)'
@@ -73,6 +76,7 @@ const regex_and_replace_array = [
     'PM.catalyst_a_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, $<catalyst_amount>)'
   ],
 
+  //MARK: Catalyst Fluids
   [ // Catalyst Fluid
     /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
     'PM.catalyst_a($<name>, $<amount>, $<catalyst_amount>, "fluid")'
@@ -88,6 +92,35 @@ const regex_and_replace_array = [
   [ // Catalyst Fluid Range Chance
     /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
     'PM.catalyst_a_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, $<catalyst_amount>, "fluid")'
+  ],
+
+  //MARK: Technology Effects
+  [ // Unlock Recipe
+    /{\s*(?=[^{}]*type = "unlock-recipe")(?=[^{}]*recipe = (?<recipe>"[^"]+"))[^{}]*}/g,
+    'PM.unlock_recipe($<recipe>)'
+  ],
+
+  [ // Give Item //FIXME: Split into two so the count can truly be optional
+    /{\s*(?=[^{}]*type = "give-item")(?=[^{}]*item = (?<item>"[^"]+"))(?:[^{}]*count = (?<count>\d+))?[^{}]*}/g,
+    'PM.give_item($<item>, $<count>)'
+  ],
+
+  [ // Modify Parameter
+    /{\s*(?=[^{}]*type = (?<type>"[^"]+"))(?![^{}]*ammo_category =)(?![^{}]*turret_id =)(?=[^{}]*modifier = (?<modifier>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.modify($<type>, $<modifier>)'
+  ],
+  [ // Modify Ammo
+    /{\s*(?=[^{}]*type = (?<type>"(?:ammo-damage|gun-speed)"))(?=[^{}]*ammo_category = (?<ammo_category>"[^"]+"))(?=[^{}]*modifier = (?<modifier>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.modify_ammo($<type>, $<ammo_category>, $<modifier>)'
+  ],
+  [ // Modify Turret attack
+    /{\s*(?=[^{}]*type = "turret-attack")(?=[^{}]*turret_id = )(?=[^{}]*modifier = (?<modifier>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.modify_turret($<turret_id>, $<modifier>)'
+  ],
+
+  [ // Modify nothing
+    /{\s*(?=[^{}]*type = "nothing")[^{}]*}/g,
+    'PM.modify_nothing()'
   ],
 ]
 if (process.argv.length !== 3) {
