@@ -220,6 +220,85 @@ function PM.unlock_recipe(recipe)
     recipe = recipe
   }--[[@as data.UnlockRecipeModifier]]
 end
+---Shorthand for giving an item
+---@param item data.ItemID
+---@param count int?
+---@return data.GiveItemModifier
+function PM.give_item(item, count)
+  return {
+    type = "give-item",
+    item = item,
+    count = count
+  } --[[@as data.GiveItemModifier]]
+end
+---@alias SimpleModifierTypes 
+---| "artillery-range"
+---| "character-build-distance"
+---| "character-crafting-speed"
+---| "character-health-bonus"
+---| "character-inventory-slots-bonus"
+---| "character-item-drop-distance"
+---| "character-item-pickup-distance"
+---| "character-logistic-trash-slots"
+---| "character-loot-pickup-distance"
+---| "character-mining-speed"
+---| "character-reach-distance"
+---| "character-resource-reach-distance"
+---| "character-running-speed"
+---| "deconstruction-time-to-live"
+---| "follower-robot-lifetime"
+---| "ghost-time-to-live"
+---| "inserter-stack-size-bonus"
+---| "laboratory-productivity"
+---| "max-failed-attempts-per-tick-per-construction-queue"
+---| "max-successful-attempts-per-tick-per-construction-queue"
+---| "maximum-following-robots-count"
+---| "mining-drill-productivity-bonus"
+---| "stack-inserter-capacity-bonus"
+---| "train-braking-force-bonus"
+---| "worker-robot-battery"
+---| "worker-robot-speed"
+---| "worker-robot-storage"
+---Shorthand for technology modifiers
+---@param property SimpleModifierTypes
+---@param modifier number
+---@return data.SimpleModifier
+function PM.modify(property, modifier)
+  return {
+    type = property,
+    modifier = modifier
+  } --[[@as data.SimpleModifier]]
+end
+---Shorthand for modifying the damage or shooting speed of ammo
+---@param type "ammo-damage"|"gun-speed"
+---@param ammo_category data.AmmoCategoryID
+---@param modifier number
+---@return data.AmmoDamageModifier|data.GunSpeedModifier
+function PM.modify_ammo(type, ammo_category, modifier)
+  return {
+    type = type,
+    ammo_category = ammo_category,
+    modifier = modifier
+  } --[[@as data.AmmoDamageModifier|data.GunSpeedModifier]]
+end
+---Shorthand for modifying the turret damage(?)
+---@param turret_id data.EntityID
+---@param modifier number
+---@return data.TurretAttackModifier
+function PM.modify_turret(turret_id, modifier)
+  return {
+    type = "turret-attack",
+    turret_id = turret_id,
+    modifier = modifier
+  } --[[@as data.TurretAttackModifier]]
+end
+---Shorthand for an dummy modifier
+---@return data.NothingModifier
+function PM.modify_nothing()
+  return {
+    type = "nothing"
+  } --[[@as data.NothingModifier]]
+end
 
 
 return PM
