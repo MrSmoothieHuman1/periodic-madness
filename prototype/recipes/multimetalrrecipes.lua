@@ -882,7 +882,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("copper-plate", 1),
-      PM.ingredient("copper-cable", 1)
     },
     results =
     {
@@ -900,7 +899,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 1),
-      PM.ingredient("copper-cable", 1)
     },
     results =
     {

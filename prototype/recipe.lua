@@ -18,7 +18,7 @@ data:extend({
     name = "pm-coal-crushing",
     subgroup = "pm-processing",
     category = "pm-crushing",
-    ingredients = { { "coal", 2 } },
+    ingredients = {{"coal", 2}},
     energy_required = 2,
     result = "pm-carbon",
     result_count = 10
@@ -847,12 +847,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-arsenic-ore", 4 },
-      { type = "fluid",   name = "pm-liquid-gallium", amount = 10 }
+      {"pm-arsenic-ore", 4},
+      {type = "fluid", name = "pm-liquid-gallium", amount = 10}
     },
     results =
     {
-      { "pm-gallium-arsenide", 6 }
+      {"pm-gallium-arsenide", 6}
     }
   },
   {

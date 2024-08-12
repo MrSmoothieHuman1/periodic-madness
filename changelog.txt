@@ -19,6 +19,7 @@ Date: 2024-08-09
     - Changed the science pack requirements for Francium Ultracool Centrifugal Kabbalism, now requiring all prerequisite science packs as to lower confusion for new players.
     - Upped Magneto orbital traps glass input from 8 to 24.
     - Changed all recipes that use white phosphorous to red phosphorous, which was like 3 but still
+    - Changed wiring to only need the metal and not another prerequisite item.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
