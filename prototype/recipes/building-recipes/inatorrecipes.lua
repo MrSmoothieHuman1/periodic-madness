@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --im going insane
 
 data:extend({
@@ -12,7 +13,7 @@ data:extend({
     category = "pm-moltening",
     ingredients =
     {
-      { type = "fluid",          name = "pm-oxygen-gas", amount = 30 },
+      { type = "fluid",          name = "pm-oxygen-gas", amount = 30, },
       { "iron-plate",10 },
       { "pm-sodium-bicarbonate", 5 }
     },
@@ -172,7 +173,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-iron", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-iron", amount = 5 }
     }
   },
   {
@@ -207,7 +208,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-copper", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-copper", amount = 5 }
     }
   },
   {
@@ -242,7 +243,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-nickel", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-nickel", amount = 5 }
     }
   },
   {
@@ -277,7 +278,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-zinc", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-zinc", amount = 5 }
     }
   },
   {
@@ -312,7 +313,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-manganese", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-manganese", amount = 5 }
     }
   },
   {
@@ -347,7 +348,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-gold", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-gold", amount = 5 }
     }
   },
   {
@@ -382,7 +383,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-silver", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-silver", amount = 5 }
     }
   },
   {
@@ -417,7 +418,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-tin", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-tin", amount = 5 }
     }
   },
   {
@@ -452,7 +453,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-titanium", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-titanium", amount = 5 }
     }
   },
   {
@@ -487,7 +488,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-tungsten", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-tungsten", amount = 5 }
     }
   },
   {
@@ -522,7 +523,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-cadnium", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-cadnium", amount = 5 }
     }
   },
 
@@ -559,7 +560,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-aluminium", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-aluminium", amount = 5 }
     }
   },
   {
@@ -594,7 +595,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-platinum", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-platinum", amount = 5 }
     }
   },
   {
@@ -615,7 +616,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-glass", amount_min = 3, amount_max = 4 + 1 },
+      { type = "fluid", name = "pm-molten-glass", amount_min = 3, amount_max = 5 },
       {
         name = "pm-glass-shards",
         amount_min = 4,
@@ -655,7 +656,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-lead", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-lead", amount = 5 }
     }
   },
   {
@@ -690,7 +691,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-thallium", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-thallium", amount = 5 }
     }
   },
   {
@@ -725,7 +726,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-indium", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-indium", amount = 5 }
     }
   },
   {
@@ -760,7 +761,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-cobalt", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-cobalt", amount = 5 }
     }
   },
   {
@@ -795,7 +796,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-palladium", amount = 4 + 1 }
+      { type = "fluid", name = "pm-molten-palladium", amount = 5 }
     }
   },
   {
@@ -837,7 +838,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-iron", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-iron", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -863,7 +864,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-copper", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-copper", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -889,7 +890,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-nickel", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-nickel", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -915,7 +916,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-zinc", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-zinc", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -941,7 +942,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-manganese", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-manganese", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -967,7 +968,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-gold", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-gold", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -993,7 +994,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-silver", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-silver", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1019,7 +1020,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-tin", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-tin", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1045,7 +1046,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-titanium", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-titanium", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1071,7 +1072,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-tungsten", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-tungsten", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1097,7 +1098,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-cadnium", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-cadnium", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1123,7 +1124,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-aluminium", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-aluminium", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1149,7 +1150,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-platinum", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-platinum", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1175,7 +1176,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-lead", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-lead", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1201,7 +1202,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-thallium", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-thallium", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1227,7 +1228,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-indium", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-indium", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1253,7 +1254,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-glass", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-glass", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1279,7 +1280,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-cobalt", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-cobalt", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1305,7 +1306,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-palladium", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-palladium", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1334,7 +1335,7 @@ data:extend({
     {
       { "pm-tin-plate",         10 },
       { "copper-plate",         10 },
-      { type = "fluid",         name = "pm-molten-iron", amount = 2.4 + 0.1 },
+      { type = "fluid",         name = "pm-molten-iron", amount = 2.5 },
       { "pm-ammonium-chloride", 3 }
     },
     results =
@@ -1413,7 +1414,7 @@ data:extend({
     main_product = "pm-solder-plate",
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-solder", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-solder", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1463,7 +1464,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-steel", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-steel", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1512,7 +1513,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-brass", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-brass", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1562,7 +1563,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-stainless-steel", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-stainless-steel", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
@@ -1612,7 +1613,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-kasethal", amount = 20 / 4 },
+      { type = "fluid", name = "pm-molten-kasethal", amount = 5 },
       { "pm-crucible",  1 },
     },
     results =
