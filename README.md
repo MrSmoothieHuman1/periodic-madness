@@ -1,13 +1,8 @@
-# If you're here, then you're probably a nerd and I don't know what to tell you.
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
+# Periodic Madness
 # Credits:
-- French translation: [@TheFrenchTechMan](https://github.com/TheFrenchTechMan)
+- French translation (WIP): [@TheFrenchTechMan](https://github.com/TheFrenchTechMan)
 - Spanish translation: @Korgak on Discord
+- Turkish translation: [@RemiHinanawi](https://github.com/RemiHinanawi)
 - Helped create models for the mod: [@ArchEzekiel](https://github.com/ArchEzekiel)
+- Code cleanup: [@PennyJim](https://github.com/PennyJim)
 - Absolutely everything else: [@MrSmoothieHuman1](https://github.com/MrSmoothieHuman1)
