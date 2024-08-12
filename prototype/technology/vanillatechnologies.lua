@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data.raw["technology"]["automation"].effects =
 {
   {

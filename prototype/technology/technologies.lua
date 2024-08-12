@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "technology",
@@ -377,7 +378,7 @@ data:extend({
     prerequisites = {"pm-wood-processing", "pm-water-distillation", "pm-tempature-plating" },
     unit =
     {
-      count = 100 / 2,
+      count = 50,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -866,7 +867,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -895,7 +896,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -932,7 +933,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -969,7 +970,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -994,7 +995,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -1027,7 +1028,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -1056,7 +1057,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -1085,7 +1086,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -1114,7 +1115,7 @@ data:extend({
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30 / 2
+      time = 15
     }
   },
   {
@@ -1987,7 +1988,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-cadnium-processing",
-    icon_size = 12 * 4 + 2 + 206,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/cadnium-processing.png",
     effects =
     {
@@ -2015,7 +2016,7 @@ data:extend({
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
     unit =
     {
-      count = 40 + 10,
+      count = 50,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2028,7 +2029,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-molten-alloys",
-    icon_size = 206 + 10 * 4 + 10,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/molten-alloys.png",
     effects =
     {
@@ -2083,7 +2084,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-trace-gas-refining", --you come up with a better name.
-    icon_size = 206 + 20 * 2 + 10,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/trace-gas-refining.png",
     effects =
     {
@@ -2129,7 +2130,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-chemical-resin",
-    icon_size = 207 + 49,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/chemical-based-resin.png",
     effects =
     {
@@ -2167,7 +2168,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-advanced-polyethylene-plastic",
-    icon_size = 207 + 49,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-polyethylene-plastic.png",
     effects =
     {
@@ -2187,13 +2188,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 44 + 1
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-pollution-filtering",
-    icon_size = 208 + 48,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/air-filterer-tech.png",
     effects =
     {
@@ -2213,7 +2214,7 @@ data:extend({
     prerequisites = {"pm-CO2-nullifying" },
     unit =
     {
-      count = 249 + 1,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2228,7 +2229,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-washing-plant-1",
-    icon_size = 209 + 47,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/washing-plant-1-tech.png",
     effects =
     {
@@ -2240,7 +2241,7 @@ data:extend({
     prerequisites = {"pm-fluid-circuit" },
     unit =
     {
-      count = 74 - 24,
+      count = 50,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2252,7 +2253,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-washing-plant-2",
-    icon_size = 209 + 47,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/washing-plant-tech.png",
     effects =
     {
@@ -2268,7 +2269,7 @@ data:extend({
     prerequisites = {"fluid-handling" },
     unit =
     {
-      count = 74 + 1,
+      count = 75,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2281,7 +2282,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-chrominum-processing",
-    icon_size = 210 + 46,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/chromium-processing.png",
     effects =
     {
@@ -2305,7 +2306,7 @@ data:extend({
     prerequisites = {"pm-oil-residual-recipes", "pm-tempature-inators" },
     unit =
     {
-      count = 74 + 1,
+      count = 75,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2318,7 +2319,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-chromic-acid-leeching",
-    icon_size = 211 + 44 + 1,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/chromic-acid-leeching.png",
     effects =
     {
@@ -2382,20 +2383,20 @@ data:extend({
     prerequisites = {"pm-chrominum-processing" },
     unit =
     {
-      count = 249 + 1,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 40 + 2 + 3
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-palladium-processing",
-    icon_size = 212 + 44,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/palladium-processing.png",
     effects =
     {
@@ -2432,7 +2433,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-vanadium-processing",
-    icon_size = 213 + 43,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/vanadium-processing.png",
     effects =
     {
@@ -2456,7 +2457,7 @@ data:extend({
     prerequisites = {"pm-oil-residual-recipes", "sulfur-processing" },
     unit =
     {
-      count = 70 + 6 - 1,
+      count = 75,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2469,7 +2470,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-greenhouse",
-    icon_size = 214 + 42,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/greenhouse-tech.png",
     effects =
     {
@@ -2485,7 +2486,7 @@ data:extend({
     prerequisites = {"chemical-science-pack", "pm-anti-bacterial-multiproperty-multimetals", "pm-wood-processing" },
     unit =
     {
-      count = 70 - 20,
+      count = 50,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2499,7 +2500,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-vacuum-former-2",
-    icon_size = 216 + 40,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/vacuum-former-2-tech.png",
     effects =
     {
@@ -2519,13 +2520,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 44 + 1
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-anti-bacterial-multiproperty-multimetals",
-    icon_size = 217 + 39,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/anti-bacterial-mutlimetals.png",
     effects =
     {
@@ -2557,7 +2558,7 @@ data:extend({
     prerequisites = {"chemical-science-pack" },
     unit =
     {
-      count = 74 + 1,
+      count = 75,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2565,13 +2566,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 44 + 1
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-phosphor-processing",
-    icon_size = 218 + 38,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/phosphorus-processing.png",
     effects =
     {
@@ -2613,7 +2614,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-fertiliser",
-    icon_size = 219 + 37,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/fertiliser-tech.png",
     effects =
     {
@@ -2646,7 +2647,7 @@ data:extend({
     prerequisites = {"pm-phosphor-processing", "pm-greenhouse" },
     unit =
     {
-      count = 100 + 20 * 3 - 10,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2654,13 +2655,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 40 + 4 + 1
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-biomass-processing",
-    icon_size = 220 + 36,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/biomass-processing.png",
     effects =
     {
@@ -2676,7 +2677,7 @@ data:extend({
     prerequisites = {"pm-greenhouse" },
     unit =
     {
-      count = 100 + 20 * 2 + 10 + 14 + 1,
+      count = 165,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2684,13 +2685,12 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 40 + 4 + 1
-    }
+      time = 45    }
   },
   {
     type = "technology",
     name = "pm-agar-bacteria-filtering",
-    icon_size = 221 + 34 + 1,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/agar-solution-tech.png",
     effects =
     {
@@ -2729,7 +2729,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-agar-storage",
-    icon_size = 222 + 34,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/agar-storage.png",
     effects =
     {
@@ -2773,13 +2773,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 33 + 12
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-bio-modules",
-    icon_size = 223 + 33,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/bio-module-tech.png",
     effects =
     {
@@ -2839,7 +2839,7 @@ data:extend({
     prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering", "pm-phosphor-processing", "sulfur-processing", "pm-fertiliser" },
     unit =
     {
-      count = 140 + 10,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2847,13 +2847,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 33 + 12
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-glass-melting",
-    icon_size = 224 + 32,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/glass-melting.png",
     effects =
     {
@@ -2883,7 +2883,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-post-transition-metal-pack-unlock",
-    icon_size = 224 + 1 + 31,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/post-transition-metal-unlock.png",
     effects =
     {
@@ -2956,13 +2956,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack",1}
       },
-      time = 41 + 4
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-chlorine-processing",
-    icon_size = 226 + 30,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/chlorine-processing.png",
     effects =
     {
@@ -2990,7 +2990,7 @@ data:extend({
     prerequisites = {},
     unit =
     {
-      count = 4 + 1,
+      count = 5,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3001,7 +3001,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-tempature-framing",
-    icon_size = 227 + 29,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/tempature-framing.png",
     effects =
     {
@@ -3017,7 +3017,7 @@ data:extend({
     prerequisites = {"pm-indium-processing" },
     unit =
     {
-      count = 124 + 1,
+      count = 125,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3031,7 +3031,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-flourine-processing",
-    icon_size = 228 + 28,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/flourine-processing.png",
     effects =
     {
@@ -3079,7 +3079,7 @@ data:extend({
     prerequisites = {"chemical-science-pack" },
     unit =
     {
-      count = 124 + 1,
+      count = 125,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3087,7 +3087,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack",   1}
       },
-      time = 30 + 14 + 1
+      time = 45
     }
   },
   {
@@ -3105,7 +3105,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock" },
     unit =
     {
-      count = 160 - 10,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3113,13 +3113,13 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack",1}
       },
-      time = 44 + 1
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-crystallisation",
-    icon_size = 229 + 27,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/crystallisation-tech.png",
     effects =
     {
@@ -3228,7 +3228,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-indium-processing",
-    icon_size = 230 + 26,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/indium-processing.png",
     effects =
     {
@@ -3262,7 +3262,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-solar-energy-2",
-    icon_size = 231 + 24 + 1,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/solar-energy-2.png",
     effects =
     {
@@ -3316,7 +3316,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-zirconium-processing",
-    icon_size = 232 + 24,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/zirconium-processing.png",
     effects =
     {
@@ -3348,20 +3348,20 @@ data:extend({
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
     unit =
     {
-      count = 124 + 1,
+      count = 125,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack",   1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
       },
-      time = 30 + 14 + 1
+      time = 45
     }
   },
   {
     type = "technology",
     name = "pm-radiation-resistant-multimetals",
-    icon_size = 233 + 23,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/radiation-resistant-multimetals.png",
     effects =
     {
@@ -3391,7 +3391,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-polonium-processing",
-    icon_size = 234 + 22,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/polonium-processing.png",
     effects =
     {
@@ -3453,7 +3453,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-polymethyl-methacrylate",
-    icon_size = 235 + 21,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/PMMA-tech.png",
     effects =
     {
@@ -3495,7 +3495,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-grouped-plastic-science-tier-1",
-    icon_size = 236 + 20,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/plastic-science-tier-1.png",
     effects =
     {
@@ -3526,7 +3526,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-advanced-byproduct-handling",
-    icon_size = 237 + 19,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-byproduct-handling.png",
     effects =
     {
@@ -3573,7 +3573,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-platinum-processing",
-    icon_size = 238 + 18,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/platinum-processing.png",
     effects =
     {
@@ -3622,7 +3622,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-crystal-seeding",
-    icon_size = 239 + 17,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/crystal-seeding.png",
     effects =
     {
@@ -3673,7 +3673,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-cobalt-processing",
-    icon_size = 240 + 16,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/cobalt-processing.png",
     effects =
     {
@@ -3722,7 +3722,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-burn-inators",
-    icon_size = 241 + 15,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/burn-inator.png",
     effects =
     {
@@ -3747,7 +3747,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-alkali-metal-pack-unlock",
-    icon_size = 242 + 14,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/alkali-metal-unlock.png",
     effects =
     {
@@ -3773,7 +3773,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-francium-processing",
-    icon_size = 243 + 13,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/francium-processing.png",
     effects =
     {
@@ -3812,7 +3812,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-speed-module-4",
-    icon_size = 244 + 12,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/speed-module-4-tech.png",
     effects =
     {
@@ -3841,7 +3841,7 @@ data:extend({
   { --tbf i should ask the guy im basing my schedule around if he has a specific date, but the fear of the unknown keeps me moticated
     type = "technology",
     name = "pm-effectivity-module-4",
-    icon_size = 244 + 12,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/effectivity-module-4-tech.png",
     effects =
     {
@@ -3870,7 +3870,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-productivity-module-4",
-    icon_size = 244 + 12,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/productivity-module-4-tech.png",
     effects =
     {
@@ -3899,7 +3899,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-potassium-processing",
-    icon_size = 245 + 11,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
     effects =
     {
@@ -3941,7 +3941,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-evaporator-2",
-    icon_size = 246 + 10,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/evaporator-2.png",
     effects =
     {
@@ -3967,7 +3967,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-better-sodium-extraction",
-    icon_size = 247 + 9,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/sodium-processing.png",
     effects =
     {
@@ -4010,7 +4010,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-vacuum-tubes",
-    icon_size = 248 + 8,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/vacuum-tubes.png",
     effects =
     {
@@ -4037,7 +4037,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-caesium-processing",
-    icon_size = 249 + 7,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/caesium-processing.png",
     effects =
     {
@@ -4137,7 +4137,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-basic-battery-charging",
-    icon_size = 250 + 6,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/battery-charging.png",
     effects =
     {
@@ -4170,7 +4170,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-lithium-ion-battery",
-    icon_size = 251 + 5,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/lithium-ion-battery.png",
     effects =
     {
@@ -4197,7 +4197,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-lithium-sulfur-battery",
-    icon_size = 252 + 4,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/lithium-sulfur-battery.png",
     effects =
     {
@@ -4224,7 +4224,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-advanced-battery-charging-1",
-    icon_size = 253 + 3,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-battery-charging.png",
     effects =
     {
@@ -4278,7 +4278,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-lithium-ion-logistic-robotics",
-    icon_size = 252 + 4,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/lithium-logistic-robotics.png",
     effects =
     {
@@ -4306,7 +4306,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-lithium-ion-construction-robotics",
-    icon_size = 253 + 3,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/lithium-construction-robotics.png",
     effects =
     {
@@ -4440,7 +4440,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-advanced-pollution-filtering",
-    icon_size = 255 + 1,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/air-filterer-2.png",
     effects =
     {
@@ -4483,7 +4483,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-advanced-atmospheric-condensation",
-    icon_size = 256 + 0,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/better-atmospheric-condensation.png",
     effects =
     {
@@ -4531,7 +4531,7 @@ data:extend({
     prerequisites = {"pm-alkali-metal-pack-unlock", "pm-atmospheric-condensation" },
     unit =
     {
-      count = 150 * 2.5,
+      count = 375,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4546,7 +4546,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-bromine-processing",
-    icon_size = 257 - 1,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/bromine-processing.png",
     effects =
     {
@@ -4588,7 +4588,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-vanadium-chromium-alloying",
-    icon_size = 258 - 2,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/vanadium-chromium-alloying.png",
     effects =
     {
@@ -4608,7 +4608,7 @@ data:extend({
     prerequisites = {"pm-vanadium-processing", "pm-chrominum-processing" },
     unit =
     {
-      count = 74 + 1,
+      count = 75,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4621,7 +4621,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-polytetrafluoroethylene-plastic",
-    icon_size = 259 - 3,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/polytetrafluoroethylene-plastic.png",
     effects =
     {
@@ -4668,7 +4668,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-lithium-processing",
-    icon_size = 260 - 4,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/lithium-processing.png",
     effects =
     {
@@ -4726,7 +4726,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-electrolysis-plant-2",
-    icon_size = 261 - 5,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/electrolysis-plant-tech.png",
     effects =
     {
@@ -4752,7 +4752,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-better-sulfur-extraction",
-    icon_size = 262 - 6,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/better-sulfur-extraction.png",
     effects =
     {
@@ -4791,7 +4791,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-rubidium-processing",
-    icon_size = 263 - 7,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/rubidium-processing.png",
     effects =
     {
@@ -4837,7 +4837,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-tin-molten-glass-casting",
-    icon_size = 264 - 8,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/tinned-glass-melting.png",
     effects =
     {
@@ -4864,7 +4864,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-iodine-processing",
-    icon_size = 265 - 9,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/iodine-processing.png",
     effects =
     {
@@ -4907,7 +4907,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-lead-bismuth-solder",
-    icon_size = 266 - 10,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/lead-bismuth-solder.png",
     effects =
     {
@@ -4938,7 +4938,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-metalloid-pack-unlock",
-    icon_size = 267 - 11,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/metalloid-unlock.png",
     effects =
     {
@@ -4964,7 +4964,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-grouped-plastic-science-tier-2",
-    icon_size = 268 - 12,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/plastic-science-tier-2.png",
     effects =
     {
@@ -4997,7 +4997,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-molten-potassium-glass",
-    icon_size = 269 - 13, --nice
+    icon_size = 256, --nice
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
@@ -5028,7 +5028,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-borosilicate-glass",
-    icon_size = 270 - 14,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
@@ -5067,7 +5067,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-boron-processing",
-    icon_size = 271 - 15,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
@@ -5113,7 +5113,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-tellurium-processing",
-    icon_size = 272 - 16,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
@@ -5155,7 +5155,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-arsenic-antimony-processing",
-    icon_size = 273 - 17,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
@@ -5178,7 +5178,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-yttrium-processing",
-    icon_size = 274 - 18,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
@@ -5226,7 +5226,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-FUCK",
-    icon_size = 266 - 10,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/FUCK-tech.png",
     effects =
     {
@@ -5385,7 +5385,6 @@ data:extend({
         {"automation-science-pack", 2 },
         {"logistic-science-pack", 2 },
         {"pm-advanced-advanced-transition-metal-science-pack", 2 },
-        {"chemical-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1}
       },

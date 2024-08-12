@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --all technologies related to Alternative Recipe Pack
 
 data:extend({
@@ -106,7 +107,7 @@ data:extend({
     prerequisites = { "pm-fluid-circuit-molding" },
     unit =
     {
-      count = 200 - 40 - 10,
+      count = 150,
       ingredients =
       {
         { "automation-science-pack",                            1},
@@ -243,7 +244,7 @@ data:extend({
     prerequisites = { "pm-alternative-science-pack-unlock", "sulfur-processing" },
     unit =
     {
-      count = 74 + 1,
+      count = 75,
       ingredients =
       {
         { "automation-science-pack",                            1},
@@ -286,7 +287,7 @@ data:extend({
         { "pm-advanced-advanced-transition-metal-science-pack", 1},
         { "chemical-science-pack",                              1}
       },
-      time = 30 + 14 + 1
+      time = 45
     }
   },
   {
@@ -308,7 +309,7 @@ data:extend({
     prerequisites = { "pm-basic-integrated-circuit-molding" },
     unit =
     {
-      count = 100 + 40 + 10,
+      count = 150,
       ingredients =
       {
         { "automation-science-pack",                            1},
@@ -317,7 +318,7 @@ data:extend({
         { "pm-advanced-advanced-transition-metal-science-pack", 1},
         { "chemical-science-pack",                              1}
       },
-      time = 30 + 14 + 1
+      time = 45
     }
   },
   {
@@ -348,7 +349,7 @@ data:extend({
         { "pm-advanced-advanced-transition-metal-science-pack", 1},
         { "chemical-science-pack",                              1}
       },
-      time = 30 + 14 + 1
+      time = 45
     }
   },
   {
@@ -380,7 +381,7 @@ data:extend({
         { "pm-post-transition-metal-science-pack",              1},
         { "pm-alternative-science-pack",                        1}
       },
-      time = 30 + 14 + 1
+      time = 45
     }
   },
   {
@@ -412,7 +413,7 @@ data:extend({
         { "pm-post-transition-metal-science-pack",              1},
         { "pm-alternative-science-pack",                        1}
       },
-      time = 30 + 14 + 1,
+      time = 45,
     }
   },
   {
@@ -430,7 +431,7 @@ data:extend({
     prerequisites = { "pm-CO2-nullifying", "pm-post-transition-metal-pack-unlock" },
     unit =
     {
-      count = 40 + 10,
+      count = 50,
       ingredients =
       {
         { "automation-science-pack",                            1},
@@ -446,7 +447,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-alternative-advanced-air-filter-cleaning",
-    icon_size = 255 + 1,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/sodium-air-filter-cleaning.png",
     effects =
     {
