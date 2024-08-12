@@ -15,7 +15,7 @@
   "description": "This mod aims to add most, if not all elements of the periodic table to Factorio.",
   "package": {
     "sync_portal_details": true,
-    "readme": "long_description.md",
+    "readme": "README.md",
     "faq": "faq.md",
     "prune_gallery": true,
     "gallery": [
@@ -25,7 +25,8 @@
       "gallery/**"
     ],
     "markdown": {
-      "images": "gallery"
+      "images": "gallery",
+      "strip_first_header": true
     }
   }
 }
