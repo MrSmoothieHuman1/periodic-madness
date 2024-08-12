@@ -11,14 +11,14 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 50 },
-      { type = "fluid", name = "pm-oxygen-gas",         amount = 25 },
-      { type = "fluid", name = "water",                 amount = 50 },
-      { "wood",         20 }
+      PM.ingredient("pm-carbon-dioxide-gas", 50, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 25, "fluid"),
+      PM.ingredient("water", 50, "fluid"),
+      PM.ingredient("wood", 20)
     },
     results =
     {
-      { "wood", 50 }
+      PM.product("wood", 50)
     }
   },
   {
@@ -33,15 +33,15 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid",  name = "pm-carbon-dioxide-gas", amount = 50 },
-      { type = "fluid",  name = "pm-oxygen-gas",         amount = 12 },
-      { type = "fluid",  name = "water",                 amount = 25 },
-      { "wood",          10 },
-      { "pm-fertiliser", 1 }
+      PM.ingredient("pm-carbon-dioxide-gas", 50, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 12, "fluid"),
+      PM.ingredient("water", 25, "fluid"),
+      PM.ingredient("wood", 10),
+      PM.ingredient("pm-fertiliser", 1)
     },
     results =
     {
-      { "wood", 50 }
+      PM.product("wood", 50)
     }
 
   },
@@ -58,13 +58,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",            name = "pm-ammonia-gas", amount = 20 },
-      { "pm-red-phosphorus",       6 },
-      { "pm-polyethylene-plastic", 4 },
+      PM.ingredient("pm-ammonia-gas", 20, "fluid"),
+      PM.ingredient("pm-red-phosphorus", 6),
+      PM.ingredient("pm-polyethylene-plastic", 4),
     },
     results =
     {
-      { "pm-fertiliser", 1 }
+      PM.product("pm-fertiliser", 1)
     }
   },
 
@@ -91,14 +91,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",            name = "pm-ammonia-gas", amount = 10 },
-      { "pm-red-phosphorus",       4 },
-      { "pm-polyethylene-plastic", 6 },
-      { "pm-potassium",            4 }
+      PM.ingredient("pm-ammonia-gas", 10, "fluid"),
+      PM.ingredient("pm-red-phosphorus", 4),
+      PM.ingredient("pm-polyethylene-plastic", 6),
+      PM.ingredient("pm-potassium", 4)
     },
     results =
     {
-      { "pm-fertiliser", 2 }
+      PM.product("pm-fertiliser", 2)
     }
   },
   {
@@ -112,13 +112,13 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { "pm-wood-strips", 5 },
-      { type = "fluid",   name = "water", amount = 20 }
+      PM.ingredient("pm-wood-strips", 5),
+      PM.ingredient("water", 20, "fluid")
     },
     results =
     {
-      { type = "fluid",          name = "pm-cellouse-pulp", amount = 5 },
-      { name = "pm-wood-strips", amount_min = 2,            amount_max = 4 }
+      PM.product("pm-cellouse-pulp", 5, "fluid"),
+      PM.product_range("pm-wood-strips", 2, 4)
     }
   },
   {
@@ -131,12 +131,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid",   name = "pm-cellouse-pulp", amount = 5 },
-      { "pm-wood-strips", 8 }
+      PM.ingredient("pm-cellouse-pulp", 5, "fluid"),
+      PM.ingredient("pm-wood-strips", 8)
     },
     results =
     {
-      { "pm-biomass", 2 }
+      PM.product("pm-biomass", 2)
     }
   },
   {
@@ -149,14 +149,14 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-chlorine", amount = 10 },
-      { "wood",         6 },
-      { "sulfur",       2 },
-      { type = "fluid", name = "water",       amount = 10 }
+      PM.ingredient("pm-chlorine", 10, "fluid"),
+      PM.ingredient("wood", 6),
+      PM.ingredient("sulfur", 2),
+      PM.ingredient("water", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-agar-solution", amount = 50 }
+      PM.product("pm-agar-solution", 50, "fluid")
     }
   },
   {
@@ -169,12 +169,12 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "pm-agar-solution", amount = 10 },
-      { "pm-biomass",   1 }
+      PM.ingredient("pm-agar-solution", 10, "fluid"),
+      PM.ingredient("pm-biomass", 1)
     },
     results =
     {
-      { type = "fluid", name = "pm-bacteriaed-agar-solution", amount = 10 }
+      PM.product("pm-bacteriaed-agar-solution", 10, "fluid")
     }
   },
   {
@@ -187,12 +187,12 @@ data:extend({
     order = "ba",
     ingredients =
     {
-      { type = "fluid",   name = "pm-agar-solution", amount = 10 },
-      { "pm-wood-strips", 5 }
+      PM.ingredient("pm-agar-solution", 10, "fluid"),
+      PM.ingredient("pm-wood-strips", 5)
     },
     results =
     {
-      { type = "fluid", name = "pm-cyanobacteriaed-agar-solution", amount = 10 }
+      PM.product("pm-cyanobacteriaed-agar-solution", 10, "fluid")
     }
   },
 
@@ -205,12 +205,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { "pm-glass-pane",               4 },
-      { "pm-anti-bacterial-panelling", 1 }
+      PM.ingredient("pm-glass-pane", 4),
+      PM.ingredient("pm-anti-bacterial-panelling", 1)
     },
     results =
     {
-      { "pm-empty-petri-dish", 1 }
+      PM.product("pm-empty-petri-dish", 1)
     }
   },
   {
@@ -223,12 +223,12 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { "pm-empty-petri-dish", 1 },
-      { type = "fluid",        name = "pm-agar-solution", amount = 25 }
+      PM.ingredient("pm-empty-petri-dish", 1),
+      PM.ingredient("pm-agar-solution", 25, "fluid")
     },
     results =
     {
-      { "pm-agar-petri-dish", 1 }
+      PM.product("pm-agar-petri-dish", 1)
     }
   },
   {
@@ -241,12 +241,12 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { "pm-empty-petri-dish", 1 },
-      { type = "fluid",        name = "pm-bacteriaed-agar-solution", amount = 25 }
+      PM.ingredient("pm-empty-petri-dish", 1),
+      PM.ingredient("pm-bacteriaed-agar-solution", 25, "fluid")
     },
     results =
     {
-      { "pm-bacteriaed-petri-dish", 1 }
+      PM.product("pm-bacteriaed-petri-dish", 1)
     }
   },
   {
@@ -259,12 +259,12 @@ data:extend({
     order = "ea",
     ingredients =
     {
-      { "pm-empty-petri-dish", 1 },
-      { type = "fluid",        name = "pm-cyanobacteriaed-agar-solution", amount = 25 }
+      PM.ingredient("pm-empty-petri-dish", 1),
+      PM.ingredient("pm-cyanobacteriaed-agar-solution", 25, "fluid")
     },
     results =
     {
-      { "pm-cyanobacteriaed-petri-dish", 1 }
+      PM.product("pm-cyanobacteriaed-petri-dish", 1)
     }
   },
   {
@@ -278,12 +278,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-agar-petri-dish", 1 }
+      PM.ingredient("pm-agar-petri-dish", 1)
     },
     results =
     {
-      { type = "fluid",        name = "pm-agar-solution", amount = 25 },
-      { "pm-empty-petri-dish", 1 }
+      PM.product("pm-agar-solution", 25, "fluid"),
+      PM.product("pm-empty-petri-dish", 1)
     }
   },
   {
@@ -297,12 +297,12 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { "pm-bacteriaed-petri-dish", 1 }
+      PM.ingredient("pm-bacteriaed-petri-dish", 1)
     },
     results =
     {
-      { type = "fluid",        name = "pm-bacteriaed-agar-solution", amount = 25 },
-      { "pm-empty-petri-dish", 1 }
+      PM.product("pm-bacteriaed-agar-solution", 25, "fluid"),
+      PM.product("pm-empty-petri-dish", 1)
     }
   },
   {
@@ -316,12 +316,12 @@ data:extend({
     order = "ga",
     ingredients =
     {
-      { "pm-cyanobacteriaed-petri-dish", 1 }
+      PM.ingredient("pm-cyanobacteriaed-petri-dish", 1)
     },
     results =
     {
-      { type = "fluid",        name = "pm-cyanobacteriaed-agar-solution", amount = 25 },
-      { "pm-empty-petri-dish", 1 }
+      PM.product("pm-cyanobacteriaed-agar-solution", 25, "fluid"),
+      PM.product("pm-empty-petri-dish", 1)
     }
   },
   {
@@ -337,12 +337,12 @@ data:extend({
     order = "h",
     ingredients =
     {
-      { type = "fluid", name = "pm-bacteriaed-agar-solution", amount = 5 },
+      PM.ingredient("pm-bacteriaed-agar-solution", 5, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-gene-base", amount = 10 },
-      --{name = "pm-dead-bacteriaed-biomass", probability = 0.6, amount = 2}
+      PM.product("pm-gene-base", 10, "fluid"),
+      --PM.product_chance("pm-dead-bacteriaed-biomass", 2, 0.6)
     }
   },
   {
@@ -358,12 +358,12 @@ data:extend({
     order = "i",
     ingredients =
     {
-      { type = "fluid", name = "pm-cyanobacteriaed-agar-solution", amount = 5 },
+      PM.ingredient("pm-cyanobacteriaed-agar-solution", 5, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-melatonin",                amount = 10 },
-      { type = "fluid", name = "pm-bacteriaed-agar-solution", amount = 2, probability = 0.2 }
+      PM.product("pm-melatonin", 10, "fluid"),
+      PM.product_chance("pm-bacteriaed-agar-solution", 2, 0.2, "fluid")
 
     }
   },

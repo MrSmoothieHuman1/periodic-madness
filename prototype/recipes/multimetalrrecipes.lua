@@ -15,12 +15,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-gold-plating", 1 },
-      { "pm-gold-wire",    2 }
+      PM.ingredient("pm-gold-plating", 1),
+      PM.ingredient("pm-gold-wire", 2)
     },
     results =
     {
-      { "pm-heating-plating", 2 }
+      PM.product("pm-heating-plating", 2)
     }
   },
   {
@@ -35,12 +35,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-gold-plating", 1 },
-      { "copper-cable",    2 }
+      PM.ingredient("pm-gold-plating", 1),
+      PM.ingredient("copper-cable", 2)
     },
     results =
     {
-      { "pm-heating-plating", 2 }
+      PM.product("pm-heating-plating", 2)
     }
   },
   {
@@ -55,12 +55,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-gold-plating", 1 },
-      { "pm-brass-plate",  1 }
+      PM.ingredient("pm-gold-plating", 1),
+      PM.ingredient("pm-brass-plate", 1)
     },
     results =
     {
-      { "pm-heating-plating", 2 }
+      PM.product("pm-heating-plating", 2)
     }
   },
 
@@ -76,12 +76,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-silver-plating", 1 },
-      { "pm-silver-plate",   1 }
+      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("pm-silver-plate", 1)
     },
     results =
     {
-      { "pm-cooling-plating", 2 }
+      PM.product("pm-cooling-plating", 2)
     }
   },
   {
@@ -96,12 +96,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-silver-plating", 1 },
-      { "copper-cable",      2 }
+      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("copper-cable", 2)
     },
     results =
     {
-      { "pm-cooling-plating", 2 }
+      PM.product("pm-cooling-plating", 2)
     }
   },
   {
@@ -116,12 +116,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-silver-plating", 1 },
-      { "steel-plate",       1 }
+      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("steel-plate", 1)
     },
     results =
     {
-      { "pm-cooling-plating", 2 }
+      PM.product("pm-cooling-plating", 2)
     }
   },
   {
@@ -136,12 +136,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-silver-plating",  1 },
-      { "pm-manganese-plate", 2 }
+      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("pm-manganese-plate", 2)
     },
     results =
     {
-      { "pm-cooling-plating", 2 }
+      PM.product("pm-cooling-plating", 2)
     }
   },
 
@@ -157,12 +157,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "iron-plate", 1 },
-      { "iron-stick", 1 }
+      PM.ingredient("iron-plate", 1),
+      PM.ingredient("iron-stick", 1)
     },
     results =
     {
-      { "pm-basic-tubing", 2 }
+      PM.product("pm-basic-tubing", 2)
     }
   },
   {
@@ -175,12 +175,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-nickel-plate", 1 },
-      { "iron-stick",      1 }
+      PM.ingredient("pm-nickel-plate", 1),
+      PM.ingredient("iron-stick", 1)
     },
     results =
     {
-      { "pm-basic-tubing", 2 }
+      PM.product("pm-basic-tubing", 2)
     }
   },
   {
@@ -193,12 +193,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "copper-plate", 1 },
-      { "iron-stick",   1 }
+      PM.ingredient("copper-plate", 1),
+      PM.ingredient("iron-stick", 1)
     },
     results =
     {
-      { "pm-basic-tubing", 2 }
+      PM.product("pm-basic-tubing", 2)
     }
   },
   {
@@ -212,12 +212,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-brass-plate", 1 },
-      { "iron-stick",     1 }
+      PM.ingredient("pm-brass-plate", 1),
+      PM.ingredient("iron-stick", 1)
     },
     results =
     {
-      { "pm-basic-tubing", 4 }
+      PM.product("pm-basic-tubing", 4)
     }
   },
   {
@@ -231,12 +231,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "steel-plate", 1 },
-      { "iron-stick",  1 }
+      PM.ingredient("steel-plate", 1),
+      PM.ingredient("iron-stick", 1)
     },
     results =
     {
-      { "pm-basic-tubing", 4 }
+      PM.product("pm-basic-tubing", 4)
     }
   },
   {
@@ -250,12 +250,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-stainless-steel-alloy", 1 },
-      { "pm-basic-tubing",          1 }
+      PM.ingredient("pm-stainless-steel-alloy", 1),
+      PM.ingredient("pm-basic-tubing", 1)
     },
     results =
     {
-      { "pm-corrosion-resistant-tubing", 4 }
+      PM.product("pm-corrosion-resistant-tubing", 4)
     }
   },
   {
@@ -269,12 +269,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-gold-plate",   1 },
-      { "pm-basic-tubing", 1 }
+      PM.ingredient("pm-gold-plate", 1),
+      PM.ingredient("pm-basic-tubing", 1)
     },
     results =
     {
-      { "pm-corrosion-resistant-tubing", 2 }
+      PM.product("pm-corrosion-resistant-tubing", 2)
     }
   },
   {
@@ -288,12 +288,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-silver-plate", 1 },
-      { "pm-basic-tubing", 1 }
+      PM.ingredient("pm-silver-plate", 1),
+      PM.ingredient("pm-basic-tubing", 1)
     },
     results =
     {
-      { "pm-corrosion-resistant-tubing", 2 }
+      PM.product("pm-corrosion-resistant-tubing", 2)
     }
   },
   {
@@ -307,12 +307,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-brass-plate",  1 },
-      { "pm-basic-tubing", 1 }
+      PM.ingredient("pm-brass-plate", 1),
+      PM.ingredient("pm-basic-tubing", 1)
     },
     results =
     {
-      { "pm-corrosion-resistant-tubing", 4 }
+      PM.product("pm-corrosion-resistant-tubing", 4)
     }
   },
 
@@ -326,12 +326,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-silver-plate", 1 },
-      { "pm-basic-tubing", 1 },
+      PM.ingredient("pm-silver-plate", 1),
+      PM.ingredient("pm-basic-tubing", 1),
     },
     results =
     {
-      { "pm-anti-bacterial-tubing", 4 }
+      PM.product("pm-anti-bacterial-tubing", 4)
     }
   },
   {
@@ -344,12 +344,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "copper-plate",    1 },
-      { "pm-basic-tubing", 1 },
+      PM.ingredient("copper-plate", 1),
+      PM.ingredient("pm-basic-tubing", 1),
     },
     results =
     {
-      { "pm-anti-bacterial-tubing", 2 }
+      PM.product("pm-anti-bacterial-tubing", 2)
     }
   },
   {
@@ -362,12 +362,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-brass-plate",  1 },
-      { "pm-basic-tubing", 1 },
+      PM.ingredient("pm-brass-plate", 1),
+      PM.ingredient("pm-basic-tubing", 1),
     },
     results =
     {
-      { "pm-anti-bacterial-tubing", 2 }
+      PM.product("pm-anti-bacterial-tubing", 2)
     }
   },
   {
@@ -380,12 +380,12 @@ data:extend({
     subgroup = "pm-multimetal-tubing",
     ingredients =
     {
-      { "pm-lead-plate",   1 },
-      { "pm-basic-tubing", 1 },
+      PM.ingredient("pm-lead-plate", 1),
+      PM.ingredient("pm-basic-tubing", 1),
     },
     results =
     {
-      { "pm-radiation-resistant-tubing", 4 }
+      PM.product("pm-radiation-resistant-tubing", 4)
     }
   },
 
@@ -401,12 +401,12 @@ data:extend({
     subgroup = "pm-multimetal-framing",
     ingredients =
     {
-      { "iron-plate", 1 },
-      { "iron-stick", 2 }
+      PM.ingredient("iron-plate", 1),
+      PM.ingredient("iron-stick", 2)
     },
     results =
     {
-      { "pm-basic-framing", 2 }
+      PM.product("pm-basic-framing", 2)
     }
   },
   {
@@ -419,12 +419,12 @@ data:extend({
     subgroup = "pm-multimetal-framing",
     ingredients =
     {
-      { "pm-nickel-plate", 1 },
-      { "iron-stick",      2 }
+      PM.ingredient("pm-nickel-plate", 1),
+      PM.ingredient("iron-stick", 2)
     },
     results =
     {
-      { "pm-basic-framing", 2 }
+      PM.product("pm-basic-framing", 2)
     }
   },
   {
@@ -438,12 +438,12 @@ data:extend({
     subgroup = "pm-multimetal-framing",
     ingredients =
     {
-      { "steel-plate", 1 },
-      { "iron-stick",  2 }
+      PM.ingredient("steel-plate", 1),
+      PM.ingredient("iron-stick", 2)
     },
     results =
     {
-      { "pm-basic-framing", 4 }
+      PM.product("pm-basic-framing", 4)
     }
   },
   {
@@ -457,12 +457,12 @@ data:extend({
     subgroup = "pm-multimetal-framing",
     ingredients =
     {
-      { "pm-brass-plate", 1 },
-      { "iron-stick",     2 }
+      PM.ingredient("pm-brass-plate", 1),
+      PM.ingredient("iron-stick", 2)
     },
     results =
     {
-      { "pm-basic-framing", 4 }
+      PM.product("pm-basic-framing", 4)
     }
   },
   {
@@ -476,12 +476,12 @@ data:extend({
     subgroup = "pm-multimetal-framing",
     ingredients =
     {
-      { "pm-stainless-steel-alloy", 1 },
-      { "iron-stick",               2 }
+      PM.ingredient("pm-stainless-steel-alloy", 1),
+      PM.ingredient("iron-stick", 2)
     },
     results =
     {
-      { "pm-basic-framing", 6 }
+      PM.product("pm-basic-framing", 6)
     }
   },
   {
@@ -496,12 +496,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-tungsten-plate", 1 },
-      { "pm-basic-framing",  1 }
+      PM.ingredient("pm-tungsten-plate", 1),
+      PM.ingredient("pm-basic-framing", 1)
     },
     results =
     {
-      { "pm-heavyweight-framing", 2 }
+      PM.product("pm-heavyweight-framing", 2)
     }
   },
   {
@@ -516,12 +516,12 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { "pm-chrominum-ore", 1 },
-      { "pm-basic-framing", 1 }
+      PM.ingredient("pm-chrominum-ore", 1),
+      PM.ingredient("pm-basic-framing", 1)
     },
     results =
     {
-      { "pm-heavyweight-framing", 2 }
+      PM.product("pm-heavyweight-framing", 2)
     }
   },
   {
@@ -536,12 +536,12 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { "pm-titanium-plate", 1 },
-      { "pm-basic-framing",  1 }
+      PM.ingredient("pm-titanium-plate", 1),
+      PM.ingredient("pm-basic-framing", 1)
     },
     results =
     {
-      { "pm-lightweight-framing", 4 }
+      PM.product("pm-lightweight-framing", 4)
     }
   },
   {
@@ -556,12 +556,12 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { "pm-tin-plate",     1 },
-      { "pm-basic-framing", 1 }
+      PM.ingredient("pm-tin-plate", 1),
+      PM.ingredient("pm-basic-framing", 1)
     },
     results =
     {
-      { "pm-lightweight-framing", 2 }
+      PM.product("pm-lightweight-framing", 2)
     }
   },
   {
@@ -576,12 +576,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { "pm-aluminium-plate", 1 },
-      { "pm-basic-framing",   1 }
+      PM.ingredient("pm-aluminium-plate", 1),
+      PM.ingredient("pm-basic-framing", 1)
     },
     results =
     {
-      { "pm-lightweight-framing", 4 }
+      PM.product("pm-lightweight-framing", 4)
     }
   },
 
@@ -595,12 +595,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-heating-plating", 1 },
-      { "pm-basic-framing",   1 }
+      PM.ingredient("pm-heating-plating", 1),
+      PM.ingredient("pm-basic-framing", 1)
     },
     results =
     {
-      { "pm-molten-framing", 2 }
+      PM.product("pm-molten-framing", 2)
     }
   },
   {
@@ -613,12 +613,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-cooling-plating", 1 },
-      { "pm-basic-framing",   1 }
+      PM.ingredient("pm-cooling-plating", 1),
+      PM.ingredient("pm-basic-framing", 1)
     },
     results =
     {
-      { "pm-cooling-framing", 2 }
+      PM.product("pm-cooling-framing", 2)
     }
   },
 
@@ -635,11 +635,11 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "iron-plate", 2 }
+      PM.ingredient("iron-plate", 2)
     },
     results =
     {
-      { "pm-basic-panelling", 2 }
+      PM.product("pm-basic-panelling", 2)
     }
   },
   {
@@ -654,12 +654,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "steel-plate", 1 },
-      { "iron-plate",  1 }
+      PM.ingredient("steel-plate", 1),
+      PM.ingredient("iron-plate", 1)
     },
     results =
     {
-      { "pm-basic-panelling", 4 }
+      PM.product("pm-basic-panelling", 4)
     }
   },
   {
@@ -674,12 +674,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-stainless-steel-alloy", 1 },
-      { "iron-plate",               1 }
+      PM.ingredient("pm-stainless-steel-alloy", 1),
+      PM.ingredient("iron-plate", 1)
     },
     results =
     {
-      { "pm-basic-panelling", 6 }
+      PM.product("pm-basic-panelling", 6)
     }
   },
   {
@@ -693,12 +693,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-zinc-plate", 1 },
-      { "iron-plate",    1 }
+      PM.ingredient("pm-zinc-plate", 1),
+      PM.ingredient("iron-plate", 1)
     },
     results =
     {
-      { "pm-basic-panelling", 2 }
+      PM.product("pm-basic-panelling", 2)
     }
   },
   {
@@ -712,12 +712,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-titanium-plate",  1 },
-      { "pm-basic-panelling", 1 }
+      PM.ingredient("pm-titanium-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1)
     },
     results =
     {
-      { "pm-lightweight-panelling", 4 }
+      PM.product("pm-lightweight-panelling", 4)
     }
   },
   {
@@ -731,12 +731,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-tin-plate",       1 },
-      { "pm-basic-panelling", 1 }
+      PM.ingredient("pm-tin-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1)
     },
     results =
     {
-      { "pm-lightweight-panelling", 2 }
+      PM.product("pm-lightweight-panelling", 2)
     }
   },
   {
@@ -750,12 +750,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-aluminium-plate", 1 },
-      { "pm-basic-panelling", 1 }
+      PM.ingredient("pm-aluminium-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1)
     },
     results =
     {
-      { "pm-lightweight-panelling", 4 }
+      PM.product("pm-lightweight-panelling", 4)
     }
   },
   {
@@ -769,12 +769,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-tungsten-plate",  1 },
-      { "pm-basic-panelling", 1 }
+      PM.ingredient("pm-tungsten-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1)
     },
     results =
     {
-      { "pm-heavyweight-panelling", 2 }
+      PM.product("pm-heavyweight-panelling", 2)
     }
   },
   {
@@ -788,12 +788,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-chrominum-ore",   1 },
-      { "pm-basic-panelling", 1 }
+      PM.ingredient("pm-chrominum-ore", 1),
+      PM.ingredient("pm-basic-panelling", 1)
     },
     results =
     {
-      { "pm-heavyweight-panelling", 2 }
+      PM.product("pm-heavyweight-panelling", 2)
     }
   },
   {
@@ -806,12 +806,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-silver-plate",    1 },
-      { "pm-basic-panelling", 1 },
+      PM.ingredient("pm-silver-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1),
     },
     results =
     {
-      { "pm-anti-bacterial-panelling", 4 }
+      PM.product("pm-anti-bacterial-panelling", 4)
     }
   },
   {
@@ -824,12 +824,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "copper-plate",       1 },
-      { "pm-basic-panelling", 1 },
+      PM.ingredient("copper-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1),
     },
     results =
     {
-      { "pm-anti-bacterial-panelling", 2 }
+      PM.product("pm-anti-bacterial-panelling", 2)
     }
   },
   {
@@ -842,12 +842,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-brass-plate",     1 },
-      { "pm-basic-panelling", 1 },
+      PM.ingredient("pm-brass-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1),
     },
     results =
     {
-      { "pm-anti-bacterial-panelling", 2 }
+      PM.product("pm-anti-bacterial-panelling", 2)
     }
   },
   {
@@ -860,12 +860,12 @@ data:extend({
     subgroup = "pm-multimetal-panelling",
     ingredients =
     {
-      { "pm-lead-plate",      1 },
-      { "pm-basic-panelling", 1 },
+      PM.ingredient("pm-lead-plate", 1),
+      PM.ingredient("pm-basic-panelling", 1),
     },
     results =
     {
-      { "pm-radiation-resistant-panelling", 2 }
+      PM.product("pm-radiation-resistant-panelling", 2)
     }
   },
 
@@ -881,12 +881,12 @@ data:extend({
     subgroup = "pm-multimetal-wiring",
     ingredients =
     {
-      { "copper-plate", 1 },
-      { "copper-cable", 1 }
+      PM.ingredient("copper-plate", 1),
+      PM.ingredient("copper-cable", 1)
     },
     results =
     {
-      { "pm-basic-wiring", 2 }
+      PM.product("pm-basic-wiring", 2)
     }
   },
   {
@@ -899,12 +899,12 @@ data:extend({
     subgroup = "pm-multimetal-wiring",
     ingredients =
     {
-      { "pm-aluminium-plate", 1 },
-      { "copper-cable",       1 }
+      PM.ingredient("pm-aluminium-plate", 1),
+      PM.ingredient("copper-cable", 1)
     },
     results =
     {
-      { "pm-basic-wiring", 4 }
+      PM.product("pm-basic-wiring", 4)
     }
   },
 })

@@ -15,13 +15,13 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { type = "fluid", name = "crude-oil", amount = 100 }
+      PM.ingredient("crude-oil", 100, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-refinery-gases", amount = 30 },
-      { type = "fluid", name = "pm-naptha",         amount = 30 },
-      { type = "fluid", name = "pm-oil-residuals",  amount = 30 }
+      PM.product("pm-refinery-gases", 30, "fluid"),
+      PM.product("pm-naptha", 30, "fluid"),
+      PM.product("pm-oil-residuals", 30, "fluid")
     }
   },
   {
@@ -36,19 +36,15 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "fluid", name = "pm-oil-residuals", amount = 30 },
-      { type = "fluid", name = "pm-naptha",        amount = 30 }
+      PM.ingredient("pm-oil-residuals", 30, "fluid"),
+      PM.ingredient("pm-naptha", 30, "fluid")
     },
     results =
     {
-      {
-        name = "pm-residual-chunks",
-        amount_min = 4,
-        amount_max = 6
-      },
-      { type = "fluid", name = "pm-refinery-gases", amount = 15 },
-      { "pm-bitumen",   2 },
-      { "sulfur",       4 }
+      PM.product_range("pm-residual-chunks", 4, 6),
+      PM.product("pm-refinery-gases", 15, "fluid"),
+      PM.product("pm-bitumen", 2),
+      PM.product("sulfur", 4)
     }
   },
   {
@@ -63,22 +59,12 @@ data:extend({
     order = "A",
     ingredients =
     {
-      { type = "fluid", name = "pm-refinery-gases", amount = 30 },
+      PM.ingredient("pm-refinery-gases", 30, "fluid"),
     },
     results =
     {
-      {
-        type = "fluid",
-        name = "pm-butane-gas",
-        probability = 0.5,
-        amount = 15
-      },
-      {
-        type = "fluid",
-        name = "pm-butene-gas",
-        probability = 0.5,
-        amount = 15
-      }
+      PM.product_chance("pm-butane-gas", 15, 0.5, "fluid"),
+      PM.product_chance("pm-butene-gas", 15, 0.5, "fluid")
     }
   },
   {
@@ -93,12 +79,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-butene-gas", amount = 10 },
+      PM.ingredient("pm-butene-gas", 10, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-ethylene-gas",   amount_min = 4, amount_max = 8 },
-      { type = "fluid", name = "pm-refinery-gases", amount = 5 }
+      PM.product_range("pm-ethylene-gas", 4, 8, "fluid"),
+      PM.product("pm-refinery-gases", 5, "fluid")
     }
   },
   {
@@ -111,12 +97,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",    name = "pm-butene-gas", amount = 15 },  --the number between 4 and 6 key isnt working, best i got
-      { "pm-nickel-plate", 3 }
+      PM.ingredient("pm-butene-gas", 15, "fluid"),  --the number between 4 and 6 key isnt working, best i got
+      PM.ingredient("pm-nickel-plate", 3)
     },
     results =
     {
-      { type = "fluid", name = "pm-butane-gas", amount = 15 }
+      PM.product("pm-butane-gas", 15, "fluid")
     }
   },
   {
@@ -131,13 +117,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-ethylene-gas", amount = 6 },
-      { "pm-carbon",    2 },
-      { type = "fluid", name = "pm-hydrogen-gas", amount = 4 }
+      PM.ingredient("pm-ethylene-gas", 6, "fluid"),
+      PM.ingredient("pm-carbon", 2),
+      PM.ingredient("pm-hydrogen-gas", 4, "fluid")
     },
     results =
     {
-      { "pm-plastic-pellets", 2 }
+      PM.product("pm-plastic-pellets", 2)
     }
   },
   {
@@ -152,19 +138,15 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",        name = "pm-ethylene-gas", amount = 12 },
-      { "pm-carbon",           4 },
-      { type = "fluid",        name = "pm-hydrogen-gas", amount = 8 },
-      { "pm-yttrium-catalyst", 1 }
+      PM.ingredient("pm-ethylene-gas", 12, "fluid"),
+      PM.ingredient("pm-carbon", 4),
+      PM.ingredient("pm-hydrogen-gas", 8, "fluid"),
+      PM.ingredient("pm-yttrium-catalyst", 1)
     },
     results =
     {
-      { "pm-plastic-pellets", 10 },
-      {
-        name = "pm-catalyst-container",
-        amount = 1,
-        probability = 0.98
-      }
+      PM.product("pm-plastic-pellets", 10),
+      PM.product_chance("pm-catalyst-container", 1, 0.98)
     }
   },
 
@@ -180,14 +162,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-residual-chunks",      10 },
-      { "pm-molybdenum-disulfide", 4 }
+      PM.ingredient("pm-residual-chunks", 10),
+      PM.ingredient("pm-molybdenum-disulfide", 4)
     },
     results =
     {
-      { name = "pm-chrominum-ore", amount_min = 2, amount_max = 5 },
-      { name = "pm-vanadium-ore",  amount_min = 1, amount_max = 4 },
-      { "sulfur",                  8 }
+      PM.product_range("pm-chrominum-ore", 2, 5),
+      PM.product_range("pm-vanadium-ore", 1, 4),
+      PM.product("sulfur", 8)
     }
   },
   {
@@ -202,13 +184,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-bitumen", 6 }
+      PM.ingredient("pm-bitumen", 6)
     },
     results =
     {
-      { name = "pm-bitumen", amount_min = 0, amount_max = 2, probability = 0.9 },
-      { name = "pm-coke",    amount_min = 1, amount_max = 3 },
-      { "pm-carbon",         4 }
+      PM.product_range_chance("pm-bitumen", 0, 2, 0.9),
+      PM.product_range("pm-coke", 1, 3),
+      PM.product("pm-carbon", 4)
     }
   },
   {
@@ -223,14 +205,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-bitumen",   2 },
-      { type = "fluid", name = "water", amount = 20 }
+      PM.ingredient("pm-bitumen", 2),
+      PM.ingredient("water", 20, "fluid")
     },
     results =
     {
-      { type = "fluid",     name = "pm-acidic-water", amount = 10,    probability = 0.6 },
-      { name = "pm-carbon", amount_min = 8,           amount_max = 12 },
-      { "pm-coke",          4 }
+      PM.product_chance("pm-acidic-water", 10, 0.6, "fluid"),
+      PM.product_range("pm-carbon", 8, 12),
+      PM.product("pm-coke", 4)
     }
   },
   {
@@ -243,12 +225,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-molybdenum-ore", 1 },
-      { "sulfur",            2 }
+      PM.ingredient("pm-molybdenum-ore", 1),
+      PM.ingredient("sulfur", 2)
     },
     results =
     {
-      { "pm-molybdenum-disulfide", 1 }
+      PM.product("pm-molybdenum-disulfide", 1)
     }
   },
   {
@@ -263,18 +245,18 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "crude-oil", amount = 250 }
+      PM.ingredient("crude-oil", 250, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-oil-residuals",    amount = 50 },
-      { type = "fluid", name = "pm-fuel-oils",        amount = 50 },
-      { type = "fluid", name = "pm-lubricating-oils", amount = 50 },
-      { type = "fluid", name = "pm-diesel",           amount = 50 },
-      { type = "fluid", name = "pm-kerosene",         amount = 50 },
-      { type = "fluid", name = "pm-naptha",           amount = 50 },
-      { type = "fluid", name = "pm-petrol",           amount = 50 },
-      { type = "fluid", name = "pm-refinery-gases",   amount = 50 }
+      PM.product("pm-oil-residuals", 50, "fluid"),
+      PM.product("pm-fuel-oils", 50, "fluid"),
+      PM.product("pm-lubricating-oils", 50, "fluid"),
+      PM.product("pm-diesel", 50, "fluid"),
+      PM.product("pm-kerosene", 50, "fluid"),
+      PM.product("pm-naptha", 50, "fluid"),
+      PM.product("pm-petrol", 50, "fluid"),
+      PM.product("pm-refinery-gases", 50, "fluid")
     }
   },
   {
@@ -289,13 +271,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-diesel", amount = 20 },
-      { type = "fluid", name = "steam",     amount = 10 }
+      PM.ingredient("pm-diesel", 20, "fluid"),
+      PM.ingredient("steam", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-legendary-diesel", amount = 10 },
-      { type = "fluid", name = "pm-common-diesel",    amount = 12 }
+      PM.product("pm-legendary-diesel", 10, "fluid"),
+      PM.product("pm-common-diesel", 12, "fluid")
 
     }
   },
@@ -311,11 +293,11 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-legendary-diesel", amount = 10 }
+      PM.ingredient("pm-legendary-diesel", 10, "fluid")
     },
     results =
     {
-      { "solid-fuel", 2 }
+      PM.product("solid-fuel", 2)
     }
   },
   {
@@ -330,11 +312,11 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-common-diesel", amount = 40 }
+      PM.ingredient("pm-common-diesel", 40, "fluid")
     },
     results =
     {
-      { "solid-fuel", 2 }
+      PM.product("solid-fuel", 2)
     }
   },
   {
@@ -349,11 +331,11 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-kerosene", amount = 20 }
+      PM.ingredient("pm-kerosene", 20, "fluid")
     },
     results =
     {
-      { "solid-fuel", 2 }
+      PM.product("solid-fuel", 2)
     }
   },
   {
@@ -368,11 +350,11 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-petrol", amount = 20 }
+      PM.ingredient("pm-petrol", 20, "fluid")
     },
     results =
     {
-      { "solid-fuel", 2 }
+      PM.product("solid-fuel", 2)
     }
   },
   {
@@ -385,9 +367,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-molybdenum-ore", 2 },
-      { "sulfur",            2 },
-      { type = "fluid",      name = "lubricant", amount = 20 }
+      PM.ingredient("pm-molybdenum-ore", 2),
+      PM.ingredient("sulfur", 2),
+      PM.ingredient("lubricant", 20, "fluid")
     },
     result = "pm-solid-lubricant"
   },
@@ -405,12 +387,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-acidic-water", amount = 50 },
-      { "sulfur",       5 }
+      PM.ingredient("pm-acidic-water", 50, "fluid"),
+      PM.ingredient("sulfur", 5)
     },
     results =
     {
-      { type = "fluid", name = "sulfuric-acid", amount = 10 }
+      PM.product("sulfuric-acid", 10, "fluid")
     }
   },
 
@@ -426,14 +408,14 @@ data:extend({
     order = "A",
     ingredients =
     {
-      { type = "fluid", name = "pm-common-diesel", amount = 6 },
-      { type = "fluid", name = "steam",            amount = 20 }
+      PM.ingredient("pm-common-diesel", 6, "fluid"),
+      PM.ingredient("steam", 20, "fluid")
     },
     results =
     {
-      { name = "pm-palladium-ore", amount_min = 2, amount_max = 4 },
-      { "pm-residual-chunks",      4 },
-      { type = "fluid",            name = "water", amount_min = 18, amount_max = 20 }
+      PM.product_range("pm-palladium-ore", 2, 4),
+      PM.product("pm-residual-chunks", 4),
+      PM.product_range("water", 18, 20, "fluid")
     }
   },
   {
@@ -448,19 +430,15 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid",          name = "pm-refinery-gases", amount = 25 },
-      { "pm-palladium-catalyst", 1 }
+      PM.ingredient("pm-refinery-gases", 25, "fluid"),
+      PM.ingredient("pm-palladium-catalyst", 1)
     },
     results =
     {
-      { type = "fluid",                name = "pm-hydrogen-gas", amount_min = 4,  amount_max = 6 },
-      {
-        name = "pm-catalyst-container",
-        probability = 0.9,
-        amount = 1
-      },
-      { name = "pm-palladium-hydride", amount_min = 1,           amount_max = 3,  probability = 0.5 },
-      { type = "fluid",                name = "pm-butane-gas",   amount_min = 20, amount_max = 30 }
+      PM.product_range("pm-hydrogen-gas", 4, 6, "fluid"),
+      PM.product_chance("pm-catalyst-container", 1, 0.9),
+      PM.product_range_chance("pm-palladium-hydride", 1, 3, 0.5),
+      PM.product_range("pm-butane-gas", 20, 30, "fluid")
     }
   },
   {
@@ -475,12 +453,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-butane-gas", amount = 10 },
+      PM.ingredient("pm-butane-gas", 10, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-ethylene-gas", amount = 18 },
-      { type = "fluid", name = "pm-hydrogen-gas", amount_min = 3, amount_max = 6 }
+      PM.product("pm-ethylene-gas", 18, "fluid"),
+      PM.product_range("pm-hydrogen-gas", 3, 6, "fluid")
     }
   },
   {
@@ -493,13 +471,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",   name = "lubricant",         amount = 10 },
-      { type = "fluid",   name = "pm-liquid-gallium", amount = 10 },
-      { "pm-cadnium-ore", 6 }
+      PM.ingredient("lubricant", 10, "fluid"),
+      PM.ingredient("pm-liquid-gallium", 10, "fluid"),
+      PM.ingredient("pm-cadnium-ore", 6)
     },
     results =
     {
-      { type = "fluid", name = "pm-heavy-lubricant", amount = 15 }
+      PM.product("pm-heavy-lubricant", 15, "fluid")
     }
   },
   {
@@ -513,13 +491,13 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      { type = "fluid", name = "pm-fuel-oils", amount = 75 }
+      PM.ingredient("pm-fuel-oils", 75, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-petrol",   amount = 25 },
-      { type = "fluid", name = "pm-diesel",   amount = 25 },
-      { type = "fluid", name = "pm-kerosene", amount = 25 },
+      PM.product("pm-petrol", 25, "fluid"),
+      PM.product("pm-diesel", 25, "fluid"),
+      PM.product("pm-kerosene", 25, "fluid"),
     }
   },
   {
@@ -534,14 +512,14 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { type = "fluid", name = "pm-naptha", amount = 60 },
-      { type = "fluid", name = "steam",     amount = 20 },
+      PM.ingredient("pm-naptha", 60, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-benzene",      amount = 10 },
-      { type = "fluid", name = "pm-ethylene-gas", amount_min = 2, amount_max = 6 },
-      { "sulfur",       4 }
+      PM.product("pm-benzene", 10, "fluid"),
+      PM.product_range("pm-ethylene-gas", 2, 6, "fluid"),
+      PM.product("sulfur", 4)
     }
   },
   {
@@ -554,13 +532,13 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "fluid",     name = "pm-petrol",  amount = 45 },
-      { type = "fluid",     name = "pm-benzene", amount = 10 },
-      { "pm-hydrogen-fuel", 5 }
+      PM.ingredient("pm-petrol", 45, "fluid"),
+      PM.ingredient("pm-benzene", 10, "fluid"),
+      PM.ingredient("pm-hydrogen-fuel", 5)
     },
     results =
     {
-      { type = "fluid", name = "pm-acetone", amount = 20 },
+      PM.product("pm-acetone", 20, "fluid"),
     }
   },
   {
@@ -574,13 +552,13 @@ data:extend({
     main_product = "pm-bisphenol-A",
     ingredients =
     {
-      { type = "fluid", name = "pm-acetone",           amount = 10 },
-      { type = "fluid", name = "pm-hydrochloric-acid", amount = 10 },
+      PM.ingredient("pm-acetone", 10, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-bisphenol-A", amount = 20 },
-      { type = "fluid", name = "pm-chlorine",    amount = 5 }
+      PM.product("pm-bisphenol-A", 20, "fluid"),
+      PM.product("pm-chlorine", 5, "fluid")
     }
   },
   {
@@ -591,14 +569,14 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      { type = "fluid", name = "pm-bisphenol-A",   amount = 30 },
-      { type = "fluid", name = "pm-vinyl-bromide", amount = 5 },
-      { "sulfur",       4 },
-      { "pm-carbon",    4 },
+      PM.ingredient("pm-bisphenol-A", 30, "fluid"),
+      PM.ingredient("pm-vinyl-bromide", 5, "fluid"),
+      PM.ingredient("sulfur", 4),
+      PM.ingredient("pm-carbon", 4),
     },
     results =
     {
-      { type = "fluid", name = "pm-resin", amount = 100 }
+      PM.product("pm-resin", 100, "fluid")
     }
   },
   {
@@ -613,13 +591,13 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      { type = "fluid",       name = "pm-bisphenol-A",   amount = 30 },
-      { type = "fluid",       name = "pm-vinyl-bromide", amount = 10 },
-      { "pm-plastic-pellets", 10 },
+      PM.ingredient("pm-bisphenol-A", 30, "fluid"),
+      PM.ingredient("pm-vinyl-bromide", 10, "fluid"),
+      PM.ingredient("pm-plastic-pellets", 10),
     },
     results =
     {
-      { "pm-polyethylene-plastic", 5 }
+      PM.product("pm-polyethylene-plastic", 5)
     }
   },
   {
@@ -632,11 +610,11 @@ data:extend({
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
-      { type = "fluid", name = "pm-butene-gas", amount = 5 },
+      PM.ingredient("pm-butene-gas", 5, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-carbon-monoxide", amount_min = 2, amount_max = 5 }
+      PM.product_range("pm-carbon-monoxide", 2, 5, "fluid")
     }
   },
 
@@ -650,8 +628,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-vanadium-oxide",     1 },
-      { "pm-catalyst-container", 1 }
+      PM.ingredient("pm-vanadium-oxide", 1),
+      PM.ingredient("pm-catalyst-container", 1)
     },
     result = "pm-vanadium-oxide-catalyst"
   },
@@ -663,9 +641,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-palladium-ore",      4 },
-      { "pm-carbon",             2 },
-      { "pm-catalyst-container", 1 }
+      PM.ingredient("pm-palladium-ore", 4),
+      PM.ingredient("pm-carbon", 2),
+      PM.ingredient("pm-catalyst-container", 1)
     },
     result = "pm-palladium-catalyst"
   },
@@ -677,8 +655,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-cobalt-plate",       2 },
-      { "pm-catalyst-container", 1 }
+      PM.ingredient("pm-cobalt-plate", 2),
+      PM.ingredient("pm-catalyst-container", 1)
     },
     result = "pm-cobalt-catalyst"
   },
@@ -691,9 +669,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-yttrium-ore",        2 },
-      { type = "fluid", name = "pm-oxygen-gas", amount = 20 },
-      { "pm-catalyst-container", 1 }
+      PM.ingredient("pm-yttrium-ore", 2),
+      PM.ingredient("pm-oxygen-gas", 20, "fluid"),
+      PM.ingredient("pm-catalyst-container", 1)
     },
     result = "pm-yttrium-catalyst"
   },
@@ -705,8 +683,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "empty-barrel",            1 },
-      { "pm-polyethylene-plastic", 2 }
+      PM.ingredient("empty-barrel", 1),
+      PM.ingredient("pm-polyethylene-plastic", 2)
     },
     result = "pm-empty-fuel-canister"
   },
@@ -719,9 +697,9 @@ data:extend({
     category = "chemistry",
     ingredients =
     {
-      { "pm-empty-fuel-canister", 1 },
-      { "solid-fuel",             1 },
-      { type = "fluid",           name = "pm-legendary-diesel", amount = 40 }
+      PM.ingredient("pm-empty-fuel-canister", 1),
+      PM.ingredient("solid-fuel", 1),
+      PM.ingredient("pm-legendary-diesel", 40, "fluid")
     },
     result = "pm-diesel-canister"
   },
@@ -734,9 +712,9 @@ data:extend({
     category = "chemistry",
     ingredients =
     {
-      { "pm-empty-fuel-canister", 1 },
-      { "solid-fuel",             1 },
-      { type = "fluid",           name = "pm-kerosene", amount = 40 }
+      PM.ingredient("pm-empty-fuel-canister", 1),
+      PM.ingredient("solid-fuel", 1),
+      PM.ingredient("pm-kerosene", 40, "fluid")
     },
     result = "pm-kerosene-canister"
   },
@@ -749,9 +727,9 @@ data:extend({
     category = "chemistry",
     ingredients =
     {
-      { "pm-empty-fuel-canister", 1 },
-      { "solid-fuel",             1 },
-      { type = "fluid",           name = "pm-petrol", amount = 40 }
+      PM.ingredient("pm-empty-fuel-canister", 1),
+      PM.ingredient("solid-fuel", 1),
+      PM.ingredient("pm-petrol", 40, "fluid")
     },
     result = "pm-petrol-canister"
   },
@@ -763,7 +741,7 @@ data:extend({
     subgroup = "pm-refined-items",
     ingredients =
     {
-      { "pm-vulcanised-rubber", 4 },
+      PM.ingredient("pm-vulcanised-rubber", 4),
     },
     result = "pm-catalyst-container"
   },
@@ -782,12 +760,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-oil-residuals", amount = 20 },
-      { type = "fluid", name = "steam",            amount = 20 },
+      PM.ingredient("pm-oil-residuals", 20, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-fuel-oils", amount = 30 }
+      PM.product("pm-fuel-oils", 30, "fluid")
     }
   },
   {
@@ -802,12 +780,12 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "pm-fuel-oils", amount = 30 },
-      { type = "fluid", name = "steam",        amount = 20 },
+      PM.ingredient("pm-fuel-oils", 30, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-lubricating-oils", amount = 40 }
+      PM.product("pm-lubricating-oils", 40, "fluid")
     }
   },
   {
@@ -822,12 +800,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { type = "fluid", name = "pm-lubricating-oils", amount = 40 },
-      { type = "fluid", name = "steam",               amount = 20 },
+      PM.ingredient("pm-lubricating-oils", 40, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-diesel", amount = 50 }
+      PM.product("pm-diesel", 50, "fluid")
     }
   },
   {
@@ -842,12 +820,12 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { type = "fluid", name = "pm-diesel", amount = 50 },
-      { type = "fluid", name = "steam",     amount = 20 },
+      PM.ingredient("pm-diesel", 50, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-kerosene", amount = 60 }
+      PM.product("pm-kerosene", 60, "fluid")
     }
   },
   {
@@ -862,12 +840,12 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { type = "fluid", name = "pm-kerosene", amount = 60 },
-      { type = "fluid", name = "steam",       amount = 20 },
+      PM.ingredient("pm-kerosene", 60, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-naptha", amount = 70 }
+      PM.product("pm-naptha", 70, "fluid")
     }
   },
   {
@@ -882,12 +860,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-naptha", amount = 70 },
-      { type = "fluid", name = "steam",     amount = 20 },
+      PM.ingredient("pm-naptha", 70, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-petrol", amount = 80 }
+      PM.product("pm-petrol", 80, "fluid")
     }
   },
   {
@@ -902,12 +880,12 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { type = "fluid", name = "pm-petrol", amount = 80 },
-      { type = "fluid", name = "steam",     amount = 20 },
+      PM.ingredient("pm-petrol", 80, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-refinery-gases", amount = 90 }
+      PM.product("pm-refinery-gases", 90, "fluid")
     }
   },
 
@@ -923,12 +901,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-refinery-gases", amount = 100 },
-      { type = "fluid", name = "pm-petrol",         amount = 20 }
+      PM.ingredient("pm-refinery-gases", 100, "fluid"),
+      PM.ingredient("pm-petrol", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-petrol", amount = 90 }
+      PM.product("pm-petrol", 90, "fluid")
     }
   },
   {
@@ -943,12 +921,12 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "pm-petrol", amount = 90 },
-      { type = "fluid", name = "pm-naptha", amount = 20 }
+      PM.ingredient("pm-petrol", 90, "fluid"),
+      PM.ingredient("pm-naptha", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-naptha", amount = 80 }
+      PM.product("pm-naptha", 80, "fluid")
     }
   },
   {
@@ -963,12 +941,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { type = "fluid", name = "pm-naptha",   amount = 80 },
-      { type = "fluid", name = "pm-kerosene", amount = 20 }
+      PM.ingredient("pm-naptha", 80, "fluid"),
+      PM.ingredient("pm-kerosene", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-kerosene", amount = 70 }
+      PM.product("pm-kerosene", 70, "fluid")
     }
   },
   {
@@ -983,12 +961,12 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { type = "fluid", name = "pm-kerosene", amount = 70 },
-      { type = "fluid", name = "pm-diesel",   amount = 20 }
+      PM.ingredient("pm-kerosene", 70, "fluid"),
+      PM.ingredient("pm-diesel", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-diesel", amount = 60 }
+      PM.product("pm-diesel", 60, "fluid")
     }
   },
   {
@@ -1003,12 +981,12 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { type = "fluid", name = "pm-diesel",           amount = 60 },
-      { type = "fluid", name = "pm-lubricating-oils", amount = 20 }
+      PM.ingredient("pm-diesel", 60, "fluid"),
+      PM.ingredient("pm-lubricating-oils", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-lubricating-oils", amount = 50 }
+      PM.product("pm-lubricating-oils", 50, "fluid")
     }
   },
   {
@@ -1023,12 +1001,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-lubricating-oils", amount = 50 },
-      { type = "fluid", name = "pm-fuel-oils",        amount = 20 }
+      PM.ingredient("pm-lubricating-oils", 50, "fluid"),
+      PM.ingredient("pm-fuel-oils", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-fuel-oils", amount = 40 }
+      PM.product("pm-fuel-oils", 40, "fluid")
     }
   },
   {
@@ -1043,12 +1021,12 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { type = "fluid", name = "pm-fuel-oils",     amount = 40 },
-      { type = "fluid", name = "pm-oil-residuals", amount = 20 }
+      PM.ingredient("pm-fuel-oils", 40, "fluid"),
+      PM.ingredient("pm-oil-residuals", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-oil-residuals", amount = 30 }
+      PM.product("pm-oil-residuals", 30, "fluid")
     }
   },
   -- Solid Lubricant > Heavy Lubricant > light Lubricant
@@ -1060,12 +1038,12 @@ LubricantFix.subgroup = "pm-oil"
 LubricantFix.order = "e"
 LubricantFix.ingredients =
 {
-  { type = "fluid",            name = "pm-lubricating-oils", amount = 12 },
-  { "pm-molybdenum-disulfide", 2 }
+  PM.ingredient("pm-lubricating-oils", 12, "fluid"),
+  PM.ingredient("pm-molybdenum-disulfide", 2)
 }
 LubricantFix.results =
 {
-  { type = "fluid", name = "lubricant", amount = 10 },
+  PM.product("lubricant", 10, "fluid"),
 }
 
 local HeavyOilSolidFuelFix = data.raw["recipe"]["solid-fuel-from-heavy-oil"]
@@ -1076,7 +1054,7 @@ HeavyOilSolidFuelFix.subgroup = "pm-fuels"
 HeavyOilSolidFuelFix.order = "g"
 HeavyOilSolidFuelFix.ingredients =
 {
-  { type = "fluid", name = "pm-fuel-oils", amount = 20 }
+  PM.ingredient("pm-fuel-oils", 20, "fluid")
 }
 
 data.raw["recipe"]["coal-liquefaction"].subgroup = "pm-oil"

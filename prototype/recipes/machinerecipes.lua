@@ -10,9 +10,9 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-air-filter",      1 },
-      { "pm-basic-panelling", 8 },
-      { "pm-basic-tubing",    4 },
+      PM.ingredient("pm-air-filter", 1),
+      PM.ingredient("pm-basic-panelling", 8),
+      PM.ingredient("pm-basic-tubing", 4),
     },
     result = "pm-acid-plant"
   },
@@ -24,9 +24,9 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-basic-framing",   4 },
-      { "pm-basic-panelling", 4 },
-      { "stone-furnace",      1 }
+      PM.ingredient("pm-basic-framing", 4),
+      PM.ingredient("pm-basic-panelling", 4),
+      PM.ingredient("stone-furnace", 1)
     },
     result = "pm-assembling-machine-0"
   },
@@ -37,9 +37,9 @@ data:extend({
     energy_required = 1.5,
     ingredients =
     {
-      { "pm-basic-panelling", 5 },
-      { "stone-furnace",      1 },
-      { "pm-basic-framing",   4 }
+      PM.ingredient("pm-basic-panelling", 5),
+      PM.ingredient("stone-furnace", 1),
+      PM.ingredient("pm-basic-framing", 4)
     },
     result = "pm-welder",
   },
@@ -51,9 +51,9 @@ data:extend({
     enabled = true,
     ingredients =
     {
-      { "pm-basic-panelling", 4 },
-      { "pm-basic-tubing",    2 },
-      { "iron-gear-wheel",    2 }
+      PM.ingredient("pm-basic-panelling", 4),
+      PM.ingredient("pm-basic-tubing", 2),
+      PM.ingredient("iron-gear-wheel", 2)
     },
     result = "pm-water-extractor",
   },
@@ -63,9 +63,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-heavyweight-panelling",      8 },
-      { "pm-basic-framing",              16 },
-      { "pm-corrosion-resistant-tubing", 2 }
+      PM.ingredient("pm-heavyweight-panelling", 8),
+      PM.ingredient("pm-basic-framing", 16),
+      PM.ingredient("pm-corrosion-resistant-tubing", 2)
     },
     result = "pm-stainless-steel-storage-tank"
   },
@@ -75,8 +75,8 @@ data:extend({
     enabled = true,
     ingredients =
     {
-      { "pm-nickel-plate", 5 },
-      { "pm-basic-tubing", 4 }
+      PM.ingredient("pm-nickel-plate", 5),
+      PM.ingredient("pm-basic-tubing", 4)
     },
     result = "pm-dirty-boiler",
   },
@@ -88,10 +88,10 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      { "express-transport-belt", 1 },
-      { "low-density-structure",  2 },
-      { "processing-unit",        3 },
-      { type = "fluid",           name = "pm-heavy-lubricant", amount = 5 }
+      PM.ingredient("express-transport-belt", 1),
+      PM.ingredient("low-density-structure", 2),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-heavy-lubricant", 5, "fluid")
     },
     result = "pm-high-density-transport-belt"
   },
@@ -104,9 +104,9 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      { "express-underground-belt", 2 },
-      { "low-density-structure",    4 },
-      { type = "fluid",             name = "pm-heavy-lubricant", amount = 10 }
+      PM.ingredient("express-underground-belt", 2),
+      PM.ingredient("low-density-structure", 4),
+      PM.ingredient("pm-heavy-lubricant", 10, "fluid")
     },
     result = "pm-high-density-underground-belt",
     result_count = 2
@@ -119,10 +119,10 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      { "express-splitter",      1 },
-      { "low-density-structure", 2 },
-      { "processing-unit",       6 },
-      { type = "fluid",          name = "pm-heavy-lubricant", amount = 15 }
+      PM.ingredient("express-splitter", 1),
+      PM.ingredient("low-density-structure", 2),
+      PM.ingredient("processing-unit", 6),
+      PM.ingredient("pm-heavy-lubricant", 15, "fluid")
     },
     result = "pm-high-density-splitter"
   },
@@ -135,10 +135,10 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-heating-plating", 4 },
-      { "pm-basic-tubing",    4 },
-      { "pm-fluid-circuit",   6 },
-      { "pm-brass-cog",       2 }
+      PM.ingredient("pm-heating-plating", 4),
+      PM.ingredient("pm-basic-tubing", 4),
+      PM.ingredient("pm-fluid-circuit", 6),
+      PM.ingredient("pm-brass-cog", 2)
     },
     result = "pm-vacuum-former-1"
   },
@@ -151,9 +151,9 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-basic-tubing",  10 },
-      { "steel-plate",      4 },
-      { "pm-fluid-circuit", 3 }
+      PM.ingredient("pm-basic-tubing", 10),
+      PM.ingredient("steel-plate", 4),
+      PM.ingredient("pm-fluid-circuit", 3)
     },
     result = "pm-washing-plant-1"
   },
@@ -165,9 +165,9 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "iron-gear-wheel",  2 },
-      { "pm-basic-framing", 8 },
-      { "pm-nickel-plate",  1 }
+      PM.ingredient("iron-gear-wheel", 2),
+      PM.ingredient("pm-basic-framing", 8),
+      PM.ingredient("pm-nickel-plate", 1)
     },
     result = "pm-burner-crusher"
   },
@@ -180,11 +180,11 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { "pm-heating-plating",            8 },
-      { "pm-corrosion-resistant-tubing", 8 },
-      { "pm-heavyweight-framing",        10 },
-      { "pm-fluid-circuit",              2 },
-      { "pm-polyethylene-plastic",       4 }
+      PM.ingredient("pm-heating-plating", 8),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("pm-heavyweight-framing", 10),
+      PM.ingredient("pm-fluid-circuit", 2),
+      PM.ingredient("pm-polyethylene-plastic", 4)
     },
     result = "pm-fractional-distillator"
   },
@@ -197,10 +197,10 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "steel-plate",        6 },
-      { "pm-basic-framing",   4 },
-      { "pm-basic-panelling", 8 },
-      { "electronic-circuit", 3 }
+      PM.ingredient("steel-plate", 6),
+      PM.ingredient("pm-basic-framing", 4),
+      PM.ingredient("pm-basic-panelling", 8),
+      PM.ingredient("electronic-circuit", 3)
     },
     result = "pm-crusher-1"
   },
@@ -213,11 +213,11 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-stainless-steel-alloy", 6 },
-      { "pm-heavyweight-framing",   4 },
-      { "pm-heavyweight-panelling", 8 },
-      { "electric-engine-unit",     2 },
-      { "processing-unit",          3 }
+      PM.ingredient("pm-stainless-steel-alloy", 6),
+      PM.ingredient("pm-heavyweight-framing", 4),
+      PM.ingredient("pm-heavyweight-panelling", 8),
+      PM.ingredient("electric-engine-unit", 2),
+      PM.ingredient("processing-unit", 3)
     },
     result = "pm-crusher-2"
   },
@@ -230,11 +230,11 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-brass-cog",                  2 },
-      { "pm-heavyweight-panelling",      16 },
-      { "pm-heavyweight-framing",        8 },
-      { "pm-corrosion-resistant-tubing", 6 },
-      { "pm-fluid-circuit",              2 }
+      PM.ingredient("pm-brass-cog", 2),
+      PM.ingredient("pm-heavyweight-panelling", 16),
+      PM.ingredient("pm-heavyweight-framing", 8),
+      PM.ingredient("pm-corrosion-resistant-tubing", 6),
+      PM.ingredient("pm-fluid-circuit", 2)
     },
     result = "pm-fluid-catalyst-cracker"
   },
@@ -246,9 +246,9 @@ data:extend({
     energy_required = 1.5,
     ingredients =
     {
-      { "pm-basic-framing", 2 },
-      { "pm-glass-pane",    1 },
-      { "pm-basic-tubing",  4 },
+      PM.ingredient("pm-basic-framing", 2),
+      PM.ingredient("pm-glass-pane", 1),
+      PM.ingredient("pm-basic-tubing", 4),
     },
     result = "pm-evaporator"
   },
@@ -261,9 +261,9 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-heating-plating",      10 },
-      { "pm-stainless-steel-pipe", 2 },
-      { "pm-gold-plate",           6 }
+      PM.ingredient("pm-heating-plating", 10),
+      PM.ingredient("pm-stainless-steel-pipe", 2),
+      PM.ingredient("pm-gold-plate", 6)
     },
     result = "pm-molten-inator"
   },
@@ -276,9 +276,9 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-cooling-plating",      10 },
-      { "pm-stainless-steel-pipe", 2 },
-      { "pm-silver-plate",         6 }
+      PM.ingredient("pm-cooling-plating", 10),
+      PM.ingredient("pm-stainless-steel-pipe", 2),
+      PM.ingredient("pm-silver-plate", 6)
     },
     result = "pm-cold-inator"
   },
@@ -291,10 +291,10 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-cooling-framing", 4 },
-      { "pm-cold-inator",     1 },
-      { "pm-silver-plating",  4 },
-      { "pm-fluid-circuit",   3 }
+      PM.ingredient("pm-cooling-framing", 4),
+      PM.ingredient("pm-cold-inator", 1),
+      PM.ingredient("pm-silver-plating", 4),
+      PM.ingredient("pm-fluid-circuit", 3)
     },
     result = "pm-cold-inator-2"
   },
@@ -307,10 +307,10 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-molten-framing", 4 },
-      { "pm-molten-inator",  1 },
-      { "pm-gold-plating",   4 },
-      { "pm-fluid-circuit",  3 }
+      PM.ingredient("pm-molten-framing", 4),
+      PM.ingredient("pm-molten-inator", 1),
+      PM.ingredient("pm-gold-plating", 4),
+      PM.ingredient("pm-fluid-circuit", 3)
     },
     result = "pm-molten-inator-2"
   },
@@ -323,13 +323,13 @@ data:extend({
     energy_required = 14,
     ingredients =
     {
-      { "pm-heavyweight-framing",        12 },
-      { "pm-lightweight-panelling",      30 },
-      { "pm-corrosion-resistant-tubing", 20 },
-      { "advanced-circuit",              15 },
-      { "assembling-machine-2",          2 },
-      { "concrete",                      10 },
-      { "electric-engine-unit",          9 }
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-lightweight-panelling", 30),
+      PM.ingredient("pm-corrosion-resistant-tubing", 20),
+      PM.ingredient("advanced-circuit", 15),
+      PM.ingredient("assembling-machine-2", 2),
+      PM.ingredient("concrete", 10),
+      PM.ingredient("electric-engine-unit", 9)
     },
     result = "pm-circuit-megassembler"
   },
@@ -342,10 +342,10 @@ data:extend({
     energy_required = 5,
     ingredients =
     {
-      { "pm-corrosion-resistant-tubing", 8 },
-      { "pm-heavyweight-framing",        12 },
-      { "pm-air-filter",                 8 },
-      { "advanced-circuit",              5 },
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-air-filter", 8),
+      PM.ingredient("advanced-circuit", 5),
     },
     result = "pm-atmospheric-condenser"
   },
@@ -358,9 +358,9 @@ data:extend({
     energy_required = 0.5,
     ingredients =
     {
-      { "electronic-circuit",   4 },
-      { "pm-vulcanised-rubber", 1 },
-      { "long-handed-inserter", 1 }
+      PM.ingredient("electronic-circuit", 4),
+      PM.ingredient("pm-vulcanised-rubber", 1),
+      PM.ingredient("long-handed-inserter", 1)
     },
     result = "pm-filter-long-handed-inserter"
   },
@@ -373,12 +373,12 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-corrosion-resistant-tubing", 1 },
-      { "pm-stainless-steel-alloy",      2 }
+      PM.ingredient("pm-corrosion-resistant-tubing", 1),
+      PM.ingredient("pm-stainless-steel-alloy", 2)
     },
     results =
     {
-      { "pm-stainless-steel-pipe", 1 }
+      PM.product("pm-stainless-steel-pipe", 1)
     }
   },
   {
@@ -390,12 +390,12 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-corrosion-resistant-tubing", 10 },
-      { "pm-stainless-steel-alloy",      5 }
+      PM.ingredient("pm-corrosion-resistant-tubing", 10),
+      PM.ingredient("pm-stainless-steel-alloy", 5)
     },
     results =
     {
-      { "pm-stainless-steel-pipe-to-ground", 2 }
+      PM.product("pm-stainless-steel-pipe-to-ground", 2)
     }
   },
   {
@@ -406,16 +406,16 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-glass-pane",                 10 },
-      { "lab",                           1 },
-      { "advanced-circuit",              5 },
-      { "pm-corrosion-resistant-tubing", 8 },
-      { "pm-heavyweight-panelling",      12 },
-      { "pm-heavyweight-framing",        6 }
+      PM.ingredient("pm-glass-pane", 10),
+      PM.ingredient("lab", 1),
+      PM.ingredient("advanced-circuit", 5),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("pm-heavyweight-panelling", 12),
+      PM.ingredient("pm-heavyweight-framing", 6)
     },
     results =
     {
-      { "pm-science-center", 1 }
+      PM.product("pm-science-center", 1)
     }
   },
   {
@@ -427,14 +427,14 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-basic-panelling", 4 },
-      { "pm-basic-framing",   2 },
-      { "copper-cable",       4 },
-      { "electronic-circuit", 1 }
+      PM.ingredient("pm-basic-panelling", 4),
+      PM.ingredient("pm-basic-framing", 2),
+      PM.ingredient("copper-cable", 4),
+      PM.ingredient("electronic-circuit", 1)
     },
     results =
     {
-      { "pm-voltatic-charger", 1 }
+      PM.product("pm-voltatic-charger", 1)
     }
   },
   {
@@ -446,14 +446,14 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-basic-panelling", 4 },
-      { "pm-basic-framing",   2 },
-      { "copper-cable",       4 },
-      { "electronic-circuit", 1 }
+      PM.ingredient("pm-basic-panelling", 4),
+      PM.ingredient("pm-basic-framing", 2),
+      PM.ingredient("copper-cable", 4),
+      PM.ingredient("electronic-circuit", 1)
     },
     results =
     {
-      { "pm-voltatic-discharger", 1 }
+      PM.product("pm-voltatic-discharger", 1)
     }
   },
   {
@@ -465,16 +465,16 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      { "pm-glass-pane",                 8 },
-      { "wood",                          12 },
-      { "pm-silver-plate",               6 },
-      { "pm-lightweight-panelling",      8 },
-      { "pm-heavyweight-framing",        12 },
-      { "pm-corrosion-resistant-tubing", 4 }
+      PM.ingredient("pm-glass-pane", 8),
+      PM.ingredient("wood", 12),
+      PM.ingredient("pm-silver-plate", 6),
+      PM.ingredient("pm-lightweight-panelling", 8),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-corrosion-resistant-tubing", 4)
     },
     results =
     {
-      { "pm-CO2-nullifer", 1 }
+      PM.product("pm-CO2-nullifer", 1)
     }
   },
   {
@@ -486,11 +486,11 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { "pm-heating-plating",            8 },
-      { "pm-corrosion-resistant-tubing", 12 },
-      { "advanced-circuit",              6 },
-      { "pm-brass-cog",                  4 },
-      { "pm-heavyweight-panelling",      4 }
+      PM.ingredient("pm-heating-plating", 8),
+      PM.ingredient("pm-corrosion-resistant-tubing", 12),
+      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("pm-brass-cog", 4),
+      PM.ingredient("pm-heavyweight-panelling", 4)
     },
     result = "pm-vacuum-former-2"
   },
@@ -503,10 +503,10 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { "pm-air-filter",            4 },
-      { "pm-lightweight-panelling", 12 },
-      { "advanced-circuit",         4 },
-      { "pm-platinum-plate",        6 },
+      PM.ingredient("pm-air-filter", 4),
+      PM.ingredient("pm-lightweight-panelling", 12),
+      PM.ingredient("advanced-circuit", 4),
+      PM.ingredient("pm-platinum-plate", 6),
     },
     result = "pm-air-filterer"
   },
@@ -519,10 +519,10 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-corrosion-resistant-tubing", 10 },
-      { "pm-stainless-steel-alloy",      2 },
-      { "advanced-circuit",              6 },
-      { "pm-heavyweight-panelling",      12 }
+      PM.ingredient("pm-corrosion-resistant-tubing", 10),
+      PM.ingredient("pm-stainless-steel-alloy", 2),
+      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("pm-heavyweight-panelling", 12)
     },
     result = "pm-washing-plant-2"
   },
@@ -535,11 +535,11 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      { "pm-silver-plate",             6 },
-      { "pm-glass-pane",               12 },
-      { "pm-anti-bacterial-tubing",    4 },
-      { "pm-anti-bacterial-panelling", 8 },
-      { "landfill",                    4 }
+      PM.ingredient("pm-silver-plate", 6),
+      PM.ingredient("pm-glass-pane", 12),
+      PM.ingredient("pm-anti-bacterial-tubing", 4),
+      PM.ingredient("pm-anti-bacterial-panelling", 8),
+      PM.ingredient("landfill", 4)
     },
     result = "pm-greenhouse"
   },
@@ -552,11 +552,11 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-anti-bacterial-tubing",    8 },
-      { "pm-anti-bacterial-panelling", 6 },
-      { "pm-heavyweight-framing",      12 },
-      { "pm-glass-pane",               16 },
-      { "advanced-circuit",            4 }
+      PM.ingredient("pm-anti-bacterial-tubing", 8),
+      PM.ingredient("pm-anti-bacterial-panelling", 6),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-glass-pane", 16),
+      PM.ingredient("advanced-circuit", 4)
     },
     result = "pm-factorian-bacteria-greenhouse"
   },
@@ -569,15 +569,15 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { "pm-lightweight-framing",      16 },
-      { "pm-anti-bacterial-panelling", 12 },
-      { "advanced-circuit",            6 },
-      { "pm-tungsten-plate",           4 },
-      { "electric-engine-unit",        2 }
+      PM.ingredient("pm-lightweight-framing", 16),
+      PM.ingredient("pm-anti-bacterial-panelling", 12),
+      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("pm-tungsten-plate", 4),
+      PM.ingredient("electric-engine-unit", 2)
     },
     results =
     {
-      { "pm-bio-lab", 1 }
+      PM.product("pm-bio-lab", 1)
     }
   },
   {
@@ -588,11 +588,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-stainless-steel-alloy", 8 }
+      PM.ingredient("pm-stainless-steel-alloy", 8)
     },
     results =
     {
-      { "pm-stainless-steel-chest", 1 }
+      PM.product("pm-stainless-steel-chest", 1)
     }
   },
   {
@@ -604,15 +604,15 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "advanced-circuit",         5 },
-      { "pm-lead-plate",            6 },
-      { "pm-basic-wiring",          10 },
-      { "pm-heavyweight-framing",   12 },
-      { "pm-heavyweight-panelling", 6 }
+      PM.ingredient("advanced-circuit", 5),
+      PM.ingredient("pm-lead-plate", 6),
+      PM.ingredient("pm-basic-wiring", 10),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-heavyweight-panelling", 6)
     },
     results =
     {
-      { "pm-electric-mining-drill-2", 1 }
+      PM.product("pm-electric-mining-drill-2", 1)
     }
   },
   {
@@ -624,14 +624,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "copper-plate",       2 },
-      { "pm-zinc-plate",      2 },
-      { "pm-basic-tubing",    6 },
-      { "pm-basic-panelling", 8 }
+      PM.ingredient("copper-plate", 2),
+      PM.ingredient("pm-zinc-plate", 2),
+      PM.ingredient("pm-basic-tubing", 6),
+      PM.ingredient("pm-basic-panelling", 8)
     },
     results =
     {
-      { "pm-electrolysis-plant", 1 }
+      PM.product("pm-electrolysis-plant", 1)
     }
   },
   {
@@ -642,15 +642,15 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      { "pm-heavyweight-framing",        8 },
-      { "pm-heating-plating",            6 },
-      { "pm-cooling-plating",            6 },
-      { "advanced-circuit",              3 },
-      { "pm-corrosion-resistant-tubing", 14 }
+      PM.ingredient("pm-heavyweight-framing", 8),
+      PM.ingredient("pm-heating-plating", 6),
+      PM.ingredient("pm-cooling-plating", 6),
+      PM.ingredient("advanced-circuit", 3),
+      PM.ingredient("pm-corrosion-resistant-tubing", 14)
     },
     results =
     {
-      { "pm-crystallizer", 1 }
+      PM.product("pm-crystallizer", 1)
     }
   },
   {
@@ -663,15 +663,15 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "solar-panel",     1 },
-      { "pm-solar-cell",   4 },
-      { "pm-indium-plate", 4 },
-      { "processing-unit", 2 },
-      { type = "fluid",    name = "pm-liquid-gallium", amount = 8 }
+      PM.ingredient("solar-panel", 1),
+      PM.ingredient("pm-solar-cell", 4),
+      PM.ingredient("pm-indium-plate", 4),
+      PM.ingredient("processing-unit", 2),
+      PM.ingredient("pm-liquid-gallium", 8, "fluid")
     },
     results =
     {
-      { "pm-solar-panel-2", 1 }
+      PM.product("pm-solar-panel-2", 1)
     }
   },
   {
@@ -684,14 +684,14 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "processing-unit",          3 },
-      { "pm-solar-cell",            4 },
-      { "pm-lightweight-panelling", 20 },
-      { type = "fluid",             name = "pm-liquid-gallium", amount = 6 }
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-solar-cell", 4),
+      PM.ingredient("pm-lightweight-panelling", 20),
+      PM.ingredient("pm-liquid-gallium", 6, "fluid")
     },
     results =
     {
-      { "pm-walkable-solar-panel-1", 1 }
+      PM.product("pm-walkable-solar-panel-1", 1)
     }
   },
   {
@@ -704,15 +704,15 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-walkable-solar-panel-1", 1 },
-      { "processing-unit",           6 },
-      { "pm-solar-cell",             6 },
-      { "pm-lightweight-panelling",  20 },
-      { type = "fluid",              name = "pm-liquid-gallium", amount = 10 }
+      PM.ingredient("pm-walkable-solar-panel-1", 1),
+      PM.ingredient("processing-unit", 6),
+      PM.ingredient("pm-solar-cell", 6),
+      PM.ingredient("pm-lightweight-panelling", 20),
+      PM.ingredient("pm-liquid-gallium", 10, "fluid")
     },
     results =
     {
-      { "pm-walkable-solar-panel-2", 1 }
+      PM.product("pm-walkable-solar-panel-2", 1)
     }
   },
   {
@@ -722,16 +722,16 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "electric-engine-unit",             4 },
-      { "advanced-circuit",                 5 },
-      { "pm-heavyweight-framing",           16 },
-      { "pm-vanadium-redox-battery",        3 },
-      { "pm-radiation-resistant-tubing",    4 },
-      { "pm-radiation-resistant-panelling", 8 }
+      PM.ingredient("electric-engine-unit", 4),
+      PM.ingredient("advanced-circuit", 5),
+      PM.ingredient("pm-heavyweight-framing", 16),
+      PM.ingredient("pm-vanadium-redox-battery", 3),
+      PM.ingredient("pm-radiation-resistant-tubing", 4),
+      PM.ingredient("pm-radiation-resistant-panelling", 8)
     },
     results =
     {
-      { "pm-cyclotron", 1 }
+      PM.product("pm-cyclotron", 1)
     }
   },
   {
@@ -741,13 +741,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-heating-plating", 40 },
-      { "pm-gold-plate",      50 },
-      { "heat-exchanger",     1 }
+      PM.ingredient("pm-heating-plating", 40),
+      PM.ingredient("pm-gold-plate", 50),
+      PM.ingredient("heat-exchanger", 1)
     },
     results =
     {
-      { "pm-heat-exchanger-2", 1 }
+      PM.product("pm-heat-exchanger-2", 1)
     }
   },
   {
@@ -759,15 +759,15 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-platinum-plate",             4 },
-      { "pm-air-filter",                 6 },
-      { "pm-corrosion-resistant-tubing", 12 },
-      { "pm-heavyweight-framing",        16 },
-      { "pm-fluid-circuit",              8 }
+      PM.ingredient("pm-platinum-plate", 4),
+      PM.ingredient("pm-air-filter", 6),
+      PM.ingredient("pm-corrosion-resistant-tubing", 12),
+      PM.ingredient("pm-heavyweight-framing", 16),
+      PM.ingredient("pm-fluid-circuit", 8)
     },
     results =
     {
-      { "pm-burn-inator", 1 }
+      PM.product("pm-burn-inator", 1)
     }
   },
   {
@@ -779,13 +779,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-heating-plating", 20 },
-      { "pm-aluminium-plate", 8 },
-      { "copper-plate",       10 }
+      PM.ingredient("pm-heating-plating", 20),
+      PM.ingredient("pm-aluminium-plate", 8),
+      PM.ingredient("copper-plate", 10)
     },
     results =
     {
-      { "pm-heat-pipe-1", 1 }
+      PM.product("pm-heat-pipe-1", 1)
     }
   },
   {
@@ -797,16 +797,16 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-radiation-resistant-panelling", 20 },
-      { "concrete",                         100 },
-      { "advanced-circuit",                 40 },
-      { "pm-radiation-resistant-tubing",    30 },
-      { "electric-engine-unit",             10 },
-      { "pm-cadnium-plate",                 20 }
+      PM.ingredient("pm-radiation-resistant-panelling", 20),
+      PM.ingredient("concrete", 100),
+      PM.ingredient("advanced-circuit", 40),
+      PM.ingredient("pm-radiation-resistant-tubing", 30),
+      PM.ingredient("electric-engine-unit", 10),
+      PM.ingredient("pm-cadnium-plate", 20)
     },
     results =
     {
-      { "pm-polonium-reactor", 1 }
+      PM.product("pm-polonium-reactor", 1)
     }
   },
   {
@@ -818,11 +818,11 @@ data:extend({
     enabled = false,         --this means NO CRAFTING!!
     ingredients =
     {
-      { "pm-radiation-resistant-panelling", 10 },
-      { "pm-radiation-resistant-tubing",    20 },
-      { "electric-engine-unit",             4 },
-      { "processing-unit",                  20 },
-      { "pm-thallium-plate",                16 }
+      PM.ingredient("pm-radiation-resistant-panelling", 10),
+      PM.ingredient("pm-radiation-resistant-tubing", 20),
+      PM.ingredient("electric-engine-unit", 4),
+      PM.ingredient("processing-unit", 20),
+      PM.ingredient("pm-thallium-plate", 16)
     },
     results =         --hi smelloy
     {
@@ -838,16 +838,16 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-evaporator",                 1 },
-      { "pm-corrosion-resistant-tubing", 12 },
-      { "pm-glass-pane",                 8 },
-      { "pm-thallium-plate",             3 },
-      { "pm-heavyweight-panelling",      8 },
-      { "pm-heating-plating",            10 }
+      PM.ingredient("pm-evaporator", 1),
+      PM.ingredient("pm-corrosion-resistant-tubing", 12),
+      PM.ingredient("pm-glass-pane", 8),
+      PM.ingredient("pm-thallium-plate", 3),
+      PM.ingredient("pm-heavyweight-panelling", 8),
+      PM.ingredient("pm-heating-plating", 10)
     },
     results =
     {
-      { "pm-evaporator-2", 1 }
+      PM.product("pm-evaporator-2", 1)
     }
   },
   {
@@ -859,15 +859,15 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      { "pm-electrolysis-plant",         1 },
-      { "processing-unit",               3 },
-      { "pm-zirconia",                   6 },
-      { "pm-heavyweight-panelling",      5 },
-      { "pm-corrosion-resistant-tubing", 12 }
+      PM.ingredient("pm-electrolysis-plant", 1),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-zirconia", 6),
+      PM.ingredient("pm-heavyweight-panelling", 5),
+      PM.ingredient("pm-corrosion-resistant-tubing", 12)
     },
     results =
     {
-      { "pm-electrolysis-plant-2", 1 }
+      PM.product("pm-electrolysis-plant-2", 1)
     }
   },
   {
@@ -878,14 +878,14 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { "pm-corrosion-resistant-tubing", 24 },
-      { "pm-fluid-circuit",              8 },
-      { "pm-heavyweight-framing",        12 },
-      { "pm-heavyweight-panelling",      16 },
+      PM.ingredient("pm-corrosion-resistant-tubing", 24),
+      PM.ingredient("pm-fluid-circuit", 8),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-heavyweight-panelling", 16),
     },
     results =
     {
-      { "pm-leaching-field", 1 }
+      PM.product("pm-leaching-field", 1)
     }
   },
   {
@@ -896,14 +896,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-basic-wiring",         10 },
-      { "pm-polyethylene-plastic", 4 },
-      { "pm-fluid-circuit",        2 },
-      { "pm-heavyweight-framing",  8 }
+      PM.ingredient("pm-basic-wiring", 10),
+      PM.ingredient("pm-polyethylene-plastic", 4),
+      PM.ingredient("pm-fluid-circuit", 2),
+      PM.ingredient("pm-heavyweight-framing", 8)
     },
     results =
     {
-      { "pm-battery-charger", 1 }
+      PM.product("pm-battery-charger", 1)
     }
   },
   {
@@ -914,14 +914,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-basic-wiring",         10 },
-      { "pm-polyethylene-plastic", 4 },
-      { "pm-fluid-circuit",        2 },
-      { "pm-heavyweight-framing",  8 }
+      PM.ingredient("pm-basic-wiring", 10),
+      PM.ingredient("pm-polyethylene-plastic", 4),
+      PM.ingredient("pm-fluid-circuit", 2),
+      PM.ingredient("pm-heavyweight-framing", 8)
     },
     results =
     {
-      { "pm-battery-discharger", 1 }
+      PM.product("pm-battery-discharger", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
