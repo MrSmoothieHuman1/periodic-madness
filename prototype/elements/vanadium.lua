@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -41,13 +42,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-residual-chunks", 3 },
-      { "pm-ferrum",          6 },
-      { "pm-vanadium-oxide",  2 }
+      PM.ingredient("pm-residual-chunks", 3),
+      PM.ingredient("pm-ferrum", 6),
+      PM.ingredient("pm-vanadium-oxide", 2)
     },
     results =
     {
-      { "pm-magnetite", 4 }
+      PM.product("pm-magnetite", 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -61,17 +62,13 @@ data:extend({
     main_product = "pm-ferrovanadium",
     ingredients =
     {
-      { "pm-magnetite", 2 },
-      { type = "fluid", name = "pm-oxygen-gas", amount = 6 }
+      PM.ingredient("pm-magnetite", 2),
+      PM.ingredient("pm-oxygen-gas", 6, "fluid")
     },
     results =
     {
-      { "pm-ferrovanadium", 4 },
-      {
-        name = "iron-ore",
-        amount_min = 0,
-        amount_max = 2
-      }
+      PM.product("pm-ferrovanadium", 4),
+      PM.product_range("iron-ore", 0, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -84,13 +81,13 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { "pm-ferrovanadium", 2 },
-      { type = "fluid",     name = "sulfuric-acid", amount = 10 },
-      { type = "fluid",     name = "pm-chlorine",   amount = 10 }
+      PM.ingredient("pm-ferrovanadium", 2),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-chlorine", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-vanadate-solution", amount = 5 }
+      PM.product("pm-vanadate-solution", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -105,15 +102,11 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { type = "fluid", name = "pm-vanadate-solution", amount = 5 },
+      PM.ingredient("pm-vanadate-solution", 5, "fluid"),
     },
     results =
     {
-      {
-        name = "pm-vanadium-ore",
-        amount_min = 6,
-        amount_max = 10
-      }
+      PM.product_range("pm-vanadium-ore", 6, 10)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -127,13 +120,13 @@ data:extend({
     order = "ca",
     ingredients =
     {
-      { "pm-ferrovanadium",     2 },
-      { type = "fluid",         name = "sulfuric-acid", amount = 10 },
-      { "pm-ammonium-chloride", 4 }
+      PM.ingredient("pm-ferrovanadium", 2),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-ammonium-chloride", 4)
     },
     results =
     {
-      { type = "fluid", name = "pm-vanadate-solution", amount = 10 }
+      PM.product("pm-vanadate-solution", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -148,17 +141,13 @@ data:extend({
     order = "da",
     ingredients =
     {
-      { type = "fluid", name = "pm-vanadate-solution", amount = 5 },
-      { "pm-iodine",    4 }
+      PM.ingredient("pm-vanadate-solution", 5, "fluid"),
+      PM.ingredient("pm-iodine", 4)
     },
     results =
     {
-      { "pm-vanadium-ore", 10 },
-      {
-        name = "pm-vanadium-ore",
-        amount_min = 0,
-        amount_max = 4
-      }
+      PM.product("pm-vanadium-ore", 10),
+      PM.product_range("pm-vanadium-ore", 0, 4)
     }
   } --[[@as data.RecipePrototype]],
 })

@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -51,16 +52,16 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      { "pm-glass-pane",           24 },
-      { "pm-antimony-ore",         2 },
-      { "pm-basic-wiring",         24 },
-      { "pm-polyethylene-plastic", 6 },
-      { "pm-gallium-arsenide",     2 },
-      { type = "fluid",            name = "pm-coolant", amount = 10 }
+      PM.ingredient("pm-glass-pane", 24),
+      PM.ingredient("pm-antimony-ore", 2),
+      PM.ingredient("pm-basic-wiring", 24),
+      PM.ingredient("pm-polyethylene-plastic", 6),
+      PM.ingredient("pm-gallium-arsenide", 2),
+      PM.ingredient("pm-coolant", 10, "fluid")
     },
     results =
     {
-      { "pm-magneto-orbital-trap", 1 }
+      PM.product("pm-magneto-orbital-trap", 1)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -71,16 +72,16 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      { "pm-borosilicate-glass",   6 },
-      { "pm-antimony-ore",         2 },
-      { "pm-basic-wiring",         24 },
-      { "pm-polyethylene-plastic", 6 },
-      { "pm-gallium-arsenide",     2 },
-      { type = "fluid",            name = "pm-coolant", amount = 10 }
+      PM.ingredient("pm-borosilicate-glass", 6),
+      PM.ingredient("pm-antimony-ore", 2),
+      PM.ingredient("pm-basic-wiring", 24),
+      PM.ingredient("pm-polyethylene-plastic", 6),
+      PM.ingredient("pm-gallium-arsenide", 2),
+      PM.ingredient("pm-coolant", 10, "fluid")
     },
     results =
     {
-      { "pm-magneto-orbital-trap", 1 }
+      PM.product("pm-magneto-orbital-trap", 1)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -93,13 +94,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-gold-plate",           25 },
-      { type = "fluid",            name = "pm-oxygen-gas", amount = 50 },
-      { "pm-magneto-orbital-trap", 1 }
+      PM.ingredient("pm-gold-plate", 25),
+      PM.ingredient("pm-oxygen-gas", 50, "fluid"),
+      PM.ingredient("pm-magneto-orbital-trap", 1)
     },
     results =
     {
-      { "pm-francium-magneto-orbital-trap", 1 }
+      PM.product("pm-francium-magneto-orbital-trap", 1)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -113,29 +114,14 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { "pm-francium-magneto-orbital-trap", 2 }
+      PM.ingredient("pm-francium-magneto-orbital-trap", 2)
     },
     results =
     {
-      {
-        name = "pm-francium-209",
-        amount = 2,
-        probability = 0.5
-      },
-      {
-        name = "pm-francium-210",
-        amount = 2,
-        probability = 0.5
-      },
-      {
-        name = "pm-francium-211",
-        amount = 2,
-        probability = 0.5
-      },
-      {
-        name = "pm-magneto-orbital-trap",
-        amount = 2
-      }
+      PM.product_chance("pm-francium-209", 2, 0.5),
+      PM.product_chance("pm-francium-210", 2, 0.5),
+      PM.product_chance("pm-francium-211", 2, 0.5),
+      PM.product("pm-magneto-orbital-trap", 2)
     }
   },
   {
@@ -148,14 +134,14 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { "pm-francium-209", 1 },
-      { "pm-francium-210", 1 },
-      { "pm-francium-211", 1 },
-      { type = "fluid",    name = "pm-helium-gas", amount = 20 }
+      PM.ingredient("pm-francium-209", 1),
+      PM.ingredient("pm-francium-210", 1),
+      PM.ingredient("pm-francium-211", 1),
+      PM.ingredient("pm-helium-gas", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-francium", amount_min = 2, amount_max = 5 }
+      PM.product_range("pm-francium", 2, 5, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })

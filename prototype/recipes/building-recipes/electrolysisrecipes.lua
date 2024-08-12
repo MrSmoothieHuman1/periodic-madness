@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -18,12 +19,12 @@ data:extend({
     },
     ingredients =
     {
-      { type = "fluid", name = "pm-seawater", amount = 50 },
+      PM.ingredient("pm-seawater", 50 , "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-oxygen-gas",   amount = 10 },
-      { type = "fluid", name = "pm-hydrogen-gas", amount = 20 },
+      PM.product("pm-oxygen-gas",   10 , "fluid"),
+      PM.product("pm-hydrogen-gas", 20 , "fluid"),
     }
   },
   -- a relic, from a kinder past
@@ -40,12 +41,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"pm-sea-salt", 3 }     --when the fuck did you guys get here
+      PM.ingredient("pm-sea-salt", 3 )     --when the fuck did you guys get here
     },
     results =
     {
-      {name = "pm-sodium", amount_min = 2, amount_max = 4},
-      {type = "fluid", name = "pm-chlorine", amount = 10}
+      PM.product_range("pm-sodium", 2, 4),
+      PM.product("pm-chlorine", 10, "fluid")
     }
   },
   {
@@ -60,13 +61,13 @@ data:extend({
     order = "b",
     ingredients =
     {
-      {type = "fluid", name = "water", amount = 50},
-      {"pm-platinum-plate", 3}
+      PM.ingredient("water", 50, "fluid"),
+      PM.ingredient("pm-platinum-plate", 3)
     },
     results =
     {
-      {type = "fluid", name = "pm-oxygen-gas",   amount = 20},
-      {type = "fluid", name = "pm-hydrogen-gas", amount = 40},
+      PM.product("pm-oxygen-gas",   20, "fluid"),
+      PM.product("pm-hydrogen-gas", 40, "fluid"),
     },
   },
   {
@@ -81,18 +82,14 @@ data:extend({
     order = "ba",
     ingredients =
     {
-      {type = "fluid", name = "water", amount = 150},
-      {"pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1}
+      PM.ingredient("water", 150, "fluid"),
+      PM.ingredient("pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1)
     },
     results =
     {
-      {type = "fluid", name = "pm-oxygen-gas", amount = 50},
-      {type = "fluid", name = "pm-hydrogen-gas", amount = 100},
-      {
-        name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
-        amount = 1,
-        probability = 0.999
-      }
+      PM.product("pm-oxygen-gas", 50, "fluid"),
+      PM.product("pm-hydrogen-gas", 100, "fluid"),
+      PM.product_chance("pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1, 0.999)
     },
   },
   {
@@ -106,13 +103,13 @@ data:extend({
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
-      {type = "fluid", name = "pm-carbon-dioxide-gas", amount = 20},
-      {"pm-zirconia", 12}
+      PM.ingredient("pm-carbon-dioxide-gas", 20, "fluid"),
+      PM.ingredient("pm-zirconia", 12)
     },
     results =
     {
-      {type = "fluid", name = "pm-carbon-monoxide", amount = 20},
-      {type = "fluid", name = "pm-oxygen-gas", amount = 10}
+      PM.product("pm-carbon-monoxide", 20, "fluid"),
+      PM.product("pm-oxygen-gas", 10, "fluid")
     }
   },
 } --[[@as data.RecipePrototype[] ]])

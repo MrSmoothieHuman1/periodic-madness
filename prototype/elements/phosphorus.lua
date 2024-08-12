@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -7,7 +8,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/phosphate-rock.png",
     subgroup = "pm-phosphorus-rnm",
     order = "a",
-    stack_size = 44 + 6
+    stack_size = 50
   },
   {
     type = "item",
@@ -38,12 +39,12 @@ data:extend({
     main_product = "pm-phosphate-rock",
     ingredients =
     {
-      { "stone", 6 },
+      PM.ingredient("stone", 6),
     },
     results =
     {
-      { "pm-phosphate-rock", 4 },
-      { name = "pm-sand",    amount_min = 2, amount_max = 4 }
+      PM.product("pm-phosphate-rock", 4),
+      PM.product_range("pm-sand", 2, 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -56,39 +57,33 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { "pm-phosphate-rock", 4 },
-      { "pm-coke",           2 },
-      { "pm-sand",           4 }
+      PM.ingredient("pm-phosphate-rock", 4),
+      PM.ingredient("pm-coke", 2),
+      PM.ingredient("pm-sand", 4)
     },
     results =
     {
-      { type = "fluid", name = "pm-phosphor-vapour", amount = 10 }
+      PM.product("pm-phosphor-vapour", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-phosphor-vapour-cooling",
     enabled = false,
-    energy_required = 4.4 + 0.1,
+    energy_required = 4.5,
     category = "pm-washing",
     subgroup = "pm-phosphorus-rnm",
     order = "c",
     main_product = "pm-phosphoric-acid",
     ingredients =
     {
-      { type = "fluid", name = "pm-phosphor-vapour", amount = 4 + 1 },
-      { type = "fluid", name = "sulfuric-acid",      amount = 6 }
+      PM.ingredient("pm-phosphor-vapour", 5, "fluid"),
+      PM.ingredient("sulfuric-acid", 6, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-phosphoric-acid", amount = 10 },
-      {
-        type = "fluid",
-        name = "pm-oxygen-gas",
-        probability = 0.4,
-        amount_min = 2,
-        amount_max = 4
-      }
+      PM.product("pm-phosphoric-acid", 10, "fluid"),
+      PM.product_range_chance("pm-oxygen-gas", 2, 4, 0.4, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -103,18 +98,13 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { type = "fluid",   name = "pm-phosphoric-acid", amount = 10 },
-      { "pm-calcium-ore", 3 }
+      PM.ingredient("pm-phosphoric-acid", 10, "fluid"),
+      PM.ingredient("pm-calcium-ore", 3)
     },
     results =
     {
-      { "pm-white-phosphorus", 4 },
-      {
-        name = "pm-red-phosphorus",
-        amount_min = 2,
-        amount_max = 4,
-        probability = 0.2
-      }
+      PM.product("pm-white-phosphorus", 4),
+      PM.product_range_chance("pm-red-phosphorus", 2, 4, 0.2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -129,11 +119,11 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-white-phosphorus", 2 }
+      PM.ingredient("pm-white-phosphorus", 2)
     },
     results =
     {
-      { "pm-red-phosphorus", 2 }
+      PM.product("pm-red-phosphorus", 2)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -143,24 +133,20 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/flux-phosphor-vapour.png",
     enabled = false,
-    energy_required = 4.4 + 0.1,
+    energy_required = 4.5,
     category = "pm-moltening",
     subgroup = "pm-phosphorus-rnm",
     order = "ba",
     ingredients =
     {
-      { "pm-phosphate-rock",        4 },
-      { "pm-coke",                  2 },
-      { "pm-filled-flux-container", 1 }
+      PM.ingredient("pm-phosphate-rock", 4),
+      PM.ingredient("pm-coke", 2),
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
-      { type = "fluid", name = "pm-phosphor-vapour", amount = 10 },
-      {
-        name = "pm-flux-container",
-        probability = 0.66,
-        amount = 1,
-      }
+      PM.product("pm-phosphor-vapour", 10, "fluid"),
+      PM.product_chance("pm-flux-container", 1, 0.66)
     }
   } --[[@as data.RecipePrototype]],
 })

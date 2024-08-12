@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for any recipes that relate to byproducts
 
 data:extend({
@@ -15,8 +16,8 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item",  name = "pm-ferrum",       amount = 4 },
-      { type = "fluid", name = "pm-acidic-water", amount = 10 }
+      PM.ingredient("pm-ferrum", 4),
+      PM.ingredient("pm-acidic-water", 10, "fluid")
     },
     crafting_machine_tint =
     {
@@ -27,9 +28,9 @@ data:extend({
     },
     results =
     {
-      { "iron-ore",     2 },
-      { type = "fluid", name = "pm-acidic-water", amount = 15 },
-      { "pm-ore-slag",  2 }
+      PM.product("iron-ore", 2),
+      PM.product("pm-acidic-water", 15, "fluid"),
+      PM.product("pm-ore-slag", 2)
     }
   },
   {
@@ -45,8 +46,8 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item",  name = "pm-patina",       amount = 4 },
-      { type = "fluid", name = "pm-acidic-water", amount = 10 }
+      PM.ingredient("pm-patina", 4),
+      PM.ingredient("pm-acidic-water", 10, "fluid")
     },
     crafting_machine_tint =
     {
@@ -57,9 +58,9 @@ data:extend({
     },
     results =
     {
-      { "copper-ore",   2 },
-      { type = "fluid", name = "pm-acidic-water", amount = 15 },
-      { "pm-ore-slag",  2 }
+      PM.product("copper-ore", 2),
+      PM.product("pm-acidic-water", 15, "fluid"),
+      PM.product("pm-ore-slag", 2)
     }
   },
   {
@@ -74,11 +75,11 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-ore-slag", 16 }
+      PM.ingredient("pm-ore-slag", 16)
     },
     results =
     {
-      { "pm-transition-metals-ore", 10 },
+      PM.product("pm-transition-metals-ore", 10),
     }
   },
   {
@@ -93,14 +94,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-ore-slag", 16 }
+      PM.ingredient("pm-ore-slag", 16)
     },
     results =
     {
-      { name = "pm-iron-chunk",   probability = 0.4 + 0.1, amount = 4 },
-      { name = "pm-copper-chunk", probability = 0.4 + 0.1, amount = 4 },
-      { name = "pm-nickel-chunk", probability = 0.4 + 0.1, amount = 4 },
-      { name = "pm-zinc-chunk",   probability = 0.4 + 0.1, amount = 4 },
+      PM.product_chance("pm-iron-chunk", 4, 0.5),
+      PM.product_chance("pm-copper-chunk", 4, 0.5),
+      PM.product_chance("pm-nickel-chunk", 4, 0.5),
+      PM.product_chance("pm-zinc-chunk", 4, 0.5),
     }
   },
   {
@@ -117,11 +118,11 @@ data:extend({
     order = "da",
     ingredients =
     {
-      { "pm-glass-shards", 4 }
+      PM.ingredient("pm-glass-shards", 4)
     },
     results =
     {
-      { "pm-glass-pane", 1 }
+      PM.product("pm-glass-pane", 1)
     }
   },
   {
@@ -136,12 +137,12 @@ data:extend({
     order = "Aa",
     ingredients =
     {
-      { "pm-palladium-hydride", 8 }
+      PM.ingredient("pm-palladium-hydride", 8)
     },
     results =
     {
-      { "pm-palladium-ore", 4 },
-      { type = "fluid",     name = "pm-hydrogen-gas", amount_min = 2, amount_max = 4 }
+      PM.product("pm-palladium-ore", 4),
+      PM.product_range("pm-hydrogen-gas", 2, 4, "fluid")
     }
   },
   {
@@ -155,31 +156,13 @@ data:extend({
     subgroup = "pm-ptm-ptm",
     ingredients =
     {
-      { "pm-mixed-ore-slag", 3 }
+      PM.ingredient("pm-mixed-ore-slag", 3)
     },
     results =
     {
-      {
-        type = "item",
-        name = "pm-ferrum",
-        amount_min = 3,
-        amount_max = 9,
-        probability = 0.5
-      },
-      {
-        type = "item",
-        name = "pm-patina",
-        amount_min = 3,
-        amount_max = 9,
-        probability = 0.5
-      },
-      {
-        type = "item",
-        name = "pm-post-transition-metals-ore",
-        amount_min = 3,
-        amount_max = 9,
-        probability = 0.5
-      },
+      PM.product_range_chance("pm-ferrum", 3, 9, 0.5),
+      PM.product_range_chance("pm-patina", 3, 9, 0.5),
+      PM.product_range_chance("pm-post-transition-metals-ore", 3, 9, 0.5),
     }
   },
   {
@@ -193,32 +176,14 @@ data:extend({
     subgroup = "pm-ptm-ptm",
     ingredients =
     {
-      { "pm-mixed-ore-slag", 9 },
-      { type = "fluid",      name = "pm-chromic-acid", amount = 20 }
+      PM.ingredient("pm-mixed-ore-slag", 9),
+      PM.ingredient("pm-chromic-acid", 20, "fluid")
     },
     results =
     {
-      {
-        type = "item",
-        name = "pm-arsenic-ore",
-        probability = 0.4,
-        amount_min = 2,
-        amount_max = 8
-      },
-      {
-        type = "item",
-        name = "pm-lead-ore",
-        probability = 0.5,
-        amount_min = 3,
-        amount_max = 5
-      },
-      {
-        type = "item",
-        name = "pm-bismuth-ore",
-        probability = 0.5,
-        amount_min = 3,
-        amount_max = 5
-      },
+      PM.product_range_chance("pm-arsenic-ore", 2, 8, 0.4),
+      PM.product_range_chance("pm-lead-ore", 3, 5, 0.5),
+      PM.product_range_chance("pm-bismuth-ore", 3, 5, 0.5),
     }
   },
   {
@@ -235,8 +200,8 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-ferrum",       amount = 8 },
-      { type = "fluid", name = "pm-chromic-acid", amount = 2 }
+      PM.ingredient("pm-ferrum", 8),
+      PM.ingredient("pm-chromic-acid", 2, "fluid")
     },
     crafting_machine_tint =
     {
@@ -247,12 +212,8 @@ data:extend({
     },
     results =
     {
-      { "iron-ore", 4 },
-      {
-        name = "pm-ore-slag",
-        amount_min = 2,
-        amount_max = 3
-      }
+      PM.product("iron-ore", 4),
+      PM.product_range("pm-ore-slag", 2, 3)
     }
   },
   {
@@ -269,8 +230,8 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-patina",       amount = 8 },
-      { type = "fluid", name = "pm-chromic-acid", amount = 2 }
+      PM.ingredient("pm-patina", 8),
+      PM.ingredient("pm-chromic-acid", 2, "fluid")
     },
     crafting_machine_tint =
     {
@@ -281,12 +242,8 @@ data:extend({
     },
     results =
     {
-      { "copper-ore", 4 },
-      {
-        name = "pm-ore-slag",
-        amount_min = 2,
-        amount_max = 3,
-      }
+      PM.product("copper-ore", 4),
+      PM.product_range("pm-ore-slag", 2, 3)
     }
   },
   {
@@ -301,31 +258,14 @@ data:extend({
     order = "cb",
     ingredients =
     {
-      { "pm-cobaltite", 12 }
+      PM.ingredient("pm-cobaltite", 12)
     },
     results =
     {
-      {
-        name = "pm-cobalt-ore",
-        amount_min = 7,
-        amount_max = 12,
-      },
-      {
-        name = "pm-arsenic-ore",
-        amount_min = 6,
-        amount_max = 8,
-      },
-      {
-        name = "sulfur",
-        amount_min = 7,
-        amount_max = 12
-      },
-      {
-        name = "pm-ferrum",
-        probability = 0.12,
-        amount_min = 2,
-        amount_max = 4
-      }
+      PM.product_range("pm-cobalt-ore", 7, 12),
+      PM.product_range("pm-arsenic-ore", 6, 8),
+      PM.product_range("sulfur", 7, 12),
+      PM.product_range_chance("pm-ferrum", 2, 4, 0.12)
     }
   }
 

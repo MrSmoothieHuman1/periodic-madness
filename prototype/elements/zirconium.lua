@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -60,19 +61,14 @@ data:extend({
     main_product = "pm-zirconium-sand",
     ingredients =
     {
-      { "pm-transition-metals-ore", 12 },
-      { type = "fluid",             name = "pm-seawater",     amount = 20 },
-      { type = "fluid",             name = "pm-acidic-water", amount = 24 + 1 }
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-seawater", 20, "fluid"),
+      PM.ingredient("pm-acidic-water", 25, "fluid")
     },
     results =
     {
-      { "pm-zirconium-sand", 8 },
-      {
-        name = "water",
-        type = "fluid",
-        amount = 10,
-        probaility = 0.7
-      }
+      PM.product("pm-zirconium-sand", 8),
+      PM.product_chance("water", 10, 0.7, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -86,21 +82,13 @@ data:extend({
     main_product = "pm-zircon",
     ingredients =
     {
-      { "pm-zirconium-sand", 4 }
+      PM.ingredient("pm-zirconium-sand", 4)
     },
     results =
     {
-      { "pm-zircon", 2 },
-      {
-        name = "pm-sand",
-        amount_min = 1,
-        amount_max = 4
-      },
-      {
-        name = "pm-titanium-ore",
-        amount = 2,
-        probaility = 0.22
-      }
+      PM.product("pm-zircon", 2),
+      PM.product_range("pm-sand", 1, 4),
+      PM.product_chance("pm-titanium-ore", 2, 0.22)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -112,12 +100,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { "pm-zircon", 8 },
-      { "pm-coke",   4 }
+      PM.ingredient("pm-zircon", 8),
+      PM.ingredient("pm-coke", 4)
     },
     results =
     {
-      { "pm-zirconia", 6 }
+      PM.product("pm-zirconia", 6)
     }
   },
   {
@@ -130,12 +118,12 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { "pm-zircon",    2 },
-      { type = "fluid", name = "pm-chlorine", amount = 10 }
+      PM.ingredient("pm-zircon", 2),
+      PM.ingredient("pm-chlorine", 10, "fluid")
     },
     results =
     {
-      { "pm-zirconium-ore", 4 },
+      PM.product("pm-zirconium-ore", 4),
     }
   } --[[@as data.RecipePrototype]],
 

@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "item",
@@ -66,16 +67,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-transition-metals-ore", 25 },
-      { type = "fluid",             name = "pm-chromic-acid", amount = 20 }
+      PM.ingredient("pm-transition-metals-ore", 25),
+      PM.ingredient("pm-chromic-acid", 20, "fluid")
     },
     results =
     {
-      {
-        name = "pm-mixed-bastnäsite",
-        amount_min = 2,
-        amount_max = 6
-      }
+      PM.product_range("pm-mixed-bastnäsite", 6, 2 )
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -89,22 +86,13 @@ data:extend({
     main_product = "pm-bastnäsite-Y",
     ingredients =
     {
-      { "pm-mixed-bastnäsite",   6 },
-      { "pm-ion-exchange-beads", 9 }
+      PM.ingredient("pm-mixed-bastnäsite", 6),
+      PM.ingredient("pm-ion-exchange-beads", 9)
     },
     results =
     {
-      {
-        name = "pm-bastnäsite-Y",
-        amount = 2,
-        probability = 0.5
-      },
-      {
-        name = "pm-bastnäsite-C",
-        amount_min = 2,
-        amount_max = 4,
-        probability = 0.5
-      }
+      PM.product_chance("pm-bastnäsite-Y", 2, 0.5),
+      PM.product_range_chance("pm-bastnäsite-C", 2, 4, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -118,27 +106,15 @@ data:extend({
     main_product = "pm-yttrium-oxide",
     ingredients =
     {
-      { "pm-bastnäsite-Y",            6 },
-      { type = "fluid",               name = "sulfuric-acid", amount = 20 },
-      { "pm-vanadium-oxide-catalyst", 4 }
+      PM.ingredient("pm-bastnäsite-Y", 6),
+      PM.ingredient("sulfuric-acid", 20, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 4)
     },
     results =
     {
-      {
-        name = "pm-yttrium-oxide",
-        amount_min = 1,
-        amount_max = 3,
-      },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 2,
-        amount_max = 4,
-      },
-      {
-        name = "pm-flourine",
-        amount = 5,
-        probability = 0.456
-      }
+      PM.product_range("pm-yttrium-oxide", 1, 3),
+      PM.product_range("pm-catalyst-container", 2, 4),
+      PM.product_chance("pm-flourine", 5, 0.456)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -152,28 +128,15 @@ data:extend({
     main_product = "pm-yttrium-oxide",
     ingredients =
     {
-      { "pm-bastnäsite-C",            6 },
-      { type = "fluid",               name = "sulfuric-acid", amount = 20 },
-      { "pm-vanadium-oxide-catalyst", 4 }
+      PM.ingredient("pm-bastnäsite-C", 6),
+      PM.ingredient("sulfuric-acid", 20, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 4)
     },
     results =
     {
-      {
-        name = "pm-yttrium-oxide",
-        amount_min = 0,
-        amount_max = 1,
-      },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 2,
-        amount_max = 4,
-      },
-      {
-        type = "fluid",
-        name = "pm-carbon-trioxide",
-        amount_min = 8,
-        amount_max = 10
-      }
+      PM.product_range("pm-yttrium-oxide", 0, 1),
+      PM.product_range("pm-catalyst-container", 2, 4),
+      PM.product_range("pm-carbon-trioxide", 8, 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -187,13 +150,13 @@ data:extend({
     main_product = "pm-aqueous-yttrium-fluoride",
     ingredients =
     {
-      { "pm-yttrium-oxide", 2 },
-      { type = "fluid",     name = "pm-hydrogen-flouride", amount = 10 }
+      PM.ingredient("pm-yttrium-oxide", 2),
+      PM.ingredient("pm-hydrogen-flouride", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-aqueous-yttrium-fluoride", amount = 5 },
-      { type = "fluid", name = "water",                       amount = 10 }
+      PM.product("pm-aqueous-yttrium-fluoride", 5, "fluid"),
+      PM.product("water", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -206,12 +169,12 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { type = "fluid",         name = "pm-aqueous-yttrium-fluoride", amount = 5 },
-      { "pm-ammonium-chloride", 2 }
+      PM.ingredient("pm-aqueous-yttrium-fluoride", 5, "fluid"),
+      PM.ingredient("pm-ammonium-chloride", 2)
     },
     results =
     {
-      { "pm-yttrium-ore", 5 }
+      PM.product("pm-yttrium-ore", 5)
     }
   } --[[@as data.RecipePrototype]]
 })

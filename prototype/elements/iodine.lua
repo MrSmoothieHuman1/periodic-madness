@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -10,13 +11,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-biomass",   5 },
-      { type = "fluid", name = "pm-brine",      amount = 40 },
-      { type = "fluid", name = "sulfuric-acid", amount = 20 }
+      PM.ingredient("pm-biomass", 5),
+      PM.ingredient("pm-brine", 40, "fluid"),
+      PM.ingredient("sulfuric-acid", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-acidic-brine", amount = 10 }
+      PM.product("pm-acidic-brine", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -29,13 +30,13 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "pm-acidic-brine", amount = 5 },
-      { type = "fluid", name = "pm-chlorine",     amount = 20 },
-      { "pm-iodine",    3 }
+      PM.ingredient("pm-acidic-brine", 5, "fluid"),
+      PM.ingredient("pm-chlorine", 20, "fluid"),
+      PM.ingredient("pm-iodine", 3)
     },
     results =
     {
-      { type = "fluid", name = "pm-iodine-solution", amount = 10 }
+      PM.product("pm-iodine-solution", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -48,12 +49,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { type = "fluid", name = "pm-iodine-solution", amount = 10 },
-      { type = "fluid", name = "pm-sulfur-dioxide",  amount = 10 }
+      PM.ingredient("pm-iodine-solution", 10, "fluid"),
+      PM.ingredient("pm-sulfur-dioxide", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-hydrogen-iodide", amount = 20 }
+      PM.product("pm-hydrogen-iodide", 20, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -68,17 +69,13 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { type = "fluid", name = "pm-hydrogen-iodide", amount = 10 },
-      { type = "fluid", name = "pm-chlorine",        amount = 10 }
+      PM.ingredient("pm-hydrogen-iodide", 10, "fluid"),
+      PM.ingredient("pm-chlorine", 10, "fluid")
     },
     results =
     {
-      {
-        name = "pm-iodine",
-        amount_min = 5,
-        amount_max = 8
-      },
-      { type = "fluid", name = "pm-hydrochloric-acid", amount = 5 }
+      PM.product_range("pm-iodine", 5, 8),
+      PM.product("pm-hydrochloric-acid", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })

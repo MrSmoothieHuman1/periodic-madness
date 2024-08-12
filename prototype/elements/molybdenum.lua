@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -56,14 +57,14 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-acidic-water",          amount = 50 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-acidic-water", 50, "fluid"),
     },
     hide_from_player_crafting = true,
     enabled = false,
     results =
     {
-      { "pm-molybdenite", 8 },
+      PM.product("pm-molybdenite", 8),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -78,16 +79,12 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-molybdenite", 4 }
+      PM.ingredient("pm-molybdenite", 4)
     },
     results =
     {
-      { "pm-molybdenite-powder", 2 },
-      {
-        name = "stone",
-        amount = 2,
-        probability = 0.5
-      }
+      PM.product("pm-molybdenite-powder", 2),
+      PM.product_chance("stone", 2, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -102,17 +99,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-molybdenite-powder", 2 },
-      { type = "fluid",          name = "water", amount = 10 }
+      PM.ingredient("pm-molybdenite-powder", 2),
+      PM.ingredient("water", 10, "fluid")
     },
     results =
     {
-      { "pm-molybdenum-ore", 2 },
-      {
-        name = "pm-molybdenum-disulfide",
-        amount = 1,
-        probability = 0.1
-      }
+      PM.product("pm-molybdenum-ore", 2),
+      PM.product_chance("pm-molybdenum-disulfide", 1, 0.1)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -144,14 +137,14 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-chromic-acid",          amount = 10 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid"),
     },
     hide_from_player_crafting = true,
     enabled = false,
     results =
     {
-      { "pm-molybdenite", 8 },
+      PM.product("pm-molybdenite", 8),
     }
   } --[[@as data.RecipePrototype]],
 })

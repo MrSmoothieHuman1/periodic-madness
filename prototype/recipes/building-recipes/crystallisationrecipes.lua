@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -13,18 +14,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      {"pm-seed-crystal", 1},
-      {"pm-crucible", 4},
-      {"pm-flourite", 20}
+      PM.ingredient("pm-seed-crystal", 1),
+      PM.ingredient("pm-crucible", 4),
+      PM.ingredient("pm-flourite", 20)
     },
     results =
     {
-      {"pm-seed-crystal", 1},
-      {
-        name = "pm-flourite",
-        amount_min = 40,
-        amount_max = 80
-      }
+      PM.product("pm-seed-crystal", 1),
+      PM.product_range("pm-flourite", 40, 80)
     }
   },
   {
@@ -40,18 +37,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      {"pm-seed-crystal", 1},
-      {"pm-crucible", 4},
-      {"pm-tungsten-crystals", 20}
+      PM.ingredient("pm-seed-crystal", 1),
+      PM.ingredient("pm-crucible", 4),
+      PM.ingredient("pm-tungsten-crystals", 20)
     },
     results =
     {
-      {"pm-seed-crystal", 1},
-      {
-        name = "pm-tungsten-crystals",
-        amount_min = 40,
-        amount_max = 80
-      }
+      PM.product("pm-seed-crystal", 1),
+      PM.product_range("pm-tungsten-crystals", 40, 80)
     }
   },
   {
@@ -67,18 +60,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      {"pm-seed-crystal", 1},
-      {"pm-crucible", 4},
-      {"pm-scheelite", 20}
+      PM.ingredient("pm-seed-crystal", 1),
+      PM.ingredient("pm-crucible", 4),
+      PM.ingredient("pm-scheelite", 20)
     },
     results =
     {
-      {"pm-seed-crystal", 1},
-      {
-        name = "pm-scheelite",
-        amount_min = 40,
-        amount_max = 80
-      }
+      PM.product("pm-seed-crystal", 1),
+      PM.product_range("pm-scheelite", 40, 80)
     }
   },
   {
@@ -94,18 +83,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"pm-seed-crystal", 1},
-      {"pm-crucible", 4},
-      {"pm-calcite", 20}
+      PM.ingredient("pm-seed-crystal", 1),
+      PM.ingredient("pm-crucible", 4),
+      PM.ingredient("pm-calcite", 20)
     },
     results =
     {
-      {"pm-seed-crystal", 1},
-      {
-        name = "pm-calcite",
-        amount_min = 40,
-        amount_max = 80
-      }
+      PM.product("pm-seed-crystal", 1),
+      PM.product_range("pm-calcite", 40, 80)
     }
   },
   {
@@ -121,18 +106,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"pm-seed-crystal", 1},
-      {"pm-crucible", 4},
-      {"pm-bismuth-ore", 20}
+      PM.ingredient("pm-seed-crystal", 1),
+      PM.ingredient("pm-crucible", 4),
+      PM.ingredient("pm-bismuth-ore", 20)
     },
     results =
     {
-      {"pm-seed-crystal", 1},
-      {
-        name = "pm-bismuth-ore",
-        amount_min = 40,
-        amount_max = 80
-      }
+      PM.product("pm-seed-crystal", 1),
+      PM.product_range("pm-bismuth-ore", 40, 80)
     }
   },
   {
@@ -147,18 +128,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      {"pm-seed-crystal", 1},
-      {"pm-crucible", 4},
-      {"pm-molybdenite", 20}
+      PM.ingredient("pm-seed-crystal", 1),
+      PM.ingredient("pm-crucible", 4),
+      PM.ingredient("pm-molybdenite", 20)
     },
     results =
     {
-      {"pm-seed-crystal", 1},
-      {
-        name = "pm-molybdenite",
-        amount_min = 40,
-        amount_max = 80
-      }
+      PM.product("pm-seed-crystal", 1),
+      PM.product_range("pm-molybdenite", 40, 80)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

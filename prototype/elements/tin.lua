@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -70,13 +71,13 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-acidic-water",          amount = 50 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-acidic-water", 50, "fluid"),
     },
     enabled = false,
     results =
     {
-      { "pm-cassiterite", 2 },
+      PM.product("pm-cassiterite", 2),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -91,12 +92,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-carbon",      4 },
-      { "pm-cassiterite", 2 }
+      PM.ingredient("pm-carbon", 4),
+      PM.ingredient("pm-cassiterite", 2)
     },
     results =
     {
-      { "pm-tin-chunks", 4 },
+      PM.product("pm-tin-chunks", 4),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -121,14 +122,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-chalk",      2 },
-      { "pm-tin-chunks", 4 },
-      { type = "fluid",  name = "pm-hydrochloric-acid", amount = 25 }
+      PM.ingredient("pm-chalk", 2),
+      PM.ingredient("pm-tin-chunks", 4),
+      PM.ingredient("pm-hydrochloric-acid", 25, "fluid")
     },
     results =
     {
-      { "pm-black-tin", 3 },
-      { "pm-white-tin", 3 },
+      PM.product("pm-black-tin", 3),
+      PM.product("pm-white-tin", 3),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -144,13 +145,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-black-tin", 4 },
-      { "pm-white-tin", 4 }
+      PM.ingredient("pm-black-tin", 4),
+      PM.ingredient("pm-white-tin", 4)
     },
     results =
     {
-      { "pm-tin-ore",     6 },
-      { "pm-cassiterite", 1 }
+      PM.product("pm-tin-ore", 6),
+      PM.product("pm-cassiterite", 1)
     }
   } --[[@as data.RecipePrototype]],
   -- tin plate is order f
@@ -182,13 +183,13 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-chromic-acid",          amount = 10 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid"),
     },
     enabled = false,
     results =
     {
-      { "pm-cassiterite", 4 },
+      PM.product("pm-cassiterite", 4),
     }
   } --[[@as data.RecipePrototype]],
 })

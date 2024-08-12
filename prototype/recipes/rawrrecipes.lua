@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for any recipes related to raw ores
 
 data:extend({
@@ -27,7 +28,7 @@ data:extend({
     energy_required = 3.2,
     ingredients =
     {
-      { "pm-iron-chunk", 2 }
+      PM.ingredient("pm-iron-chunk", 2)
     },
     result = "iron-plate"
   },
@@ -56,7 +57,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-copper-chunk", 2 }
+      PM.ingredient("pm-copper-chunk", 2)
     },
     result = "copper-plate"
   },
@@ -85,7 +86,7 @@ data:extend({
     energy_required = 3.2,
     ingredients =
     {
-      { "pm-nickel-chunk", 2 }
+      PM.ingredient("pm-nickel-chunk", 2)
     },
     result = "pm-nickel-plate"
   },
@@ -114,7 +115,7 @@ data:extend({
     energy_required = 3.2,
     ingredients =
     {
-      { "pm-zinc-chunk", 2 }
+      PM.ingredient("pm-zinc-chunk", 2)
     },
     result = "pm-zinc-plate"
   },
@@ -143,18 +144,14 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-iron-chunk", 1 },
-      { type = "fluid",  name = "pm-hydrochloric-acid", amount = 5 }
+      PM.ingredient("pm-iron-chunk", 1),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid")
     },
     results =
     {
-      { "iron-ore", 2 },
+      PM.product("iron-ore", 2),
 
-      {
-        name = "pm-ore-slag",
-        amount = 1,
-        probability = 0.5
-      }
+      PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },
   {
@@ -180,18 +177,14 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-copper-chunk", 1 },
-      { type = "fluid",    name = "pm-hydrochloric-acid", amount = 5 }
+      PM.ingredient("pm-copper-chunk", 1),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid")
     },
     results =
     {
-      { "copper-ore", 2 },
+      PM.product("copper-ore", 2),
 
-      {
-        name = "pm-ore-slag",
-        amount = 1,
-        probability = 0.5
-      }
+      PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },
   {
@@ -217,18 +210,14 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-nickel-chunk", 1 },
-      { type = "fluid",    name = "pm-hydrochloric-acid", amount = 5 }
+      PM.ingredient("pm-nickel-chunk", 1),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid")
     },
     results =
     {
-      { "pm-nickel-ore", 2 },
+      PM.product("pm-nickel-ore", 2),
 
-      {
-        name = "pm-ore-slag",
-        amount = 1,
-        probability = 0.5
-      }
+      PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },
   {
@@ -254,18 +243,14 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-zinc-chunk", 1 },
-      { type = "fluid",  name = "pm-hydrochloric-acid", amount = 5 }
+      PM.ingredient("pm-zinc-chunk", 1),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid")
     },
     results =
     {
-      { "pm-zinc-ore", 2 },
+      PM.product("pm-zinc-ore", 2),
 
-      {
-        name = "pm-ore-slag",
-        amount = 1,
-        probability = 0.5
-      }
+      PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

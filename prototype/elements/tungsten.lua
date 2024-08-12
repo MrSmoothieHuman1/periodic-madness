@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -73,12 +74,12 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      { "pm-transition-metals-ore", 12 },
-      { type = "fluid",             name = "pm-acidic-water", amount = 50 }
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-acidic-water", 50, "fluid")
     },
     results =
     {
-      { "pm-tungsten-chunks", 8 }
+      PM.product("pm-tungsten-chunks", 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -91,11 +92,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-tungsten-chunks", 4 }
+      PM.ingredient("pm-tungsten-chunks", 4)
     },
     results =
     {
-      { "pm-wolframite", 6 }
+      PM.product("pm-wolframite", 6)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -110,13 +111,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-wolframite", 2 },
-      { type = "fluid",  name = "water", amount = 40 }
+      PM.ingredient("pm-wolframite", 2),
+      PM.ingredient("water", 40, "fluid")
     },
     results =
     {
-      { "pm-tungsten-crystals", 3 },
-      { "pm-scheelite",         2 }
+      PM.product("pm-tungsten-crystals", 3),
+      PM.product("pm-scheelite", 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -131,12 +132,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-tungsten-crystals", 6 },
-      { "pm-scheelite",         4 }
+      PM.ingredient("pm-tungsten-crystals", 6),
+      PM.ingredient("pm-scheelite", 4)
     },
     results =
     {
-      { "pm-tungsten-ore", 4 },
+      PM.product("pm-tungsten-ore", 4),
     }
   } --[[@as data.RecipePrototype]],
 
@@ -148,16 +149,16 @@ data:extend({
     subgroup = "pm-tungsten-tm",
     order = "h",
     category = "pm-moltening",
-    energy_required = 4.4 + 0.1,
+    energy_required = 4.5,
     enabled = false,
     ingredients =
     {
-      { type = "fluid",  name = "pm-argon-gas", amount = 40 },
-      { "pm-wolframite", 14 + 1 }
+      PM.ingredient("pm-argon-gas", 40, "fluid"),
+      PM.ingredient("pm-wolframite", 15)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-tungsten", amount = 4 + 1 }
+      PM.product("pm-molten-tungsten", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -182,12 +183,12 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-transition-metals-ore", 12 },
-      { type = "fluid",             name = "pm-chromic-acid", amount = 10 }
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
     },
     results =
     {
-      { "pm-tungsten-chunks", 8 }
+      PM.product("pm-tungsten-chunks", 8)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -203,13 +204,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-wolframite", 10 },
-      { type = "fluid",  name = "pm-liquid-mercury", amount = 40 }
+      PM.ingredient("pm-wolframite", 10),
+      PM.ingredient("pm-liquid-mercury", 40, "fluid")
     },
     results =
     {
-      { "pm-tungsten-crystals", 14 + 1 },
-      { "pm-scheelite",         10 }
+      PM.product("pm-tungsten-crystals", 15),
+      PM.product("pm-scheelite", 10)
     }
   } --[[@as data.RecipePrototype]],
 })

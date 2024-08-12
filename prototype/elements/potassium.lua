@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -55,22 +56,14 @@ data:extend({
     main_product = "pm-sylvite",
     ingredients =
     {
-      { type = "fluid",         name = "pm-seawater", amount = 50 },
-      { "pm-alkali-metals-ore", 6 }
+      PM.ingredient("pm-seawater", 50, "fluid"),
+      PM.ingredient("pm-alkali-metals-ore", 6)
     },
     results =
     {
-      {
-        name = "pm-calcite",
-        amount_min = 1,
-        amount_max = 6,
-      },
-      {
-        name = "pm-anhydrite",
-        amount_min = 2,
-        amount_max = 5
-      },
-      { "pm-sylvite", 4 }
+      PM.product_range("pm-calcite", 1, 6),
+      PM.product_range("pm-anhydrite", 2, 5),
+      PM.product("pm-sylvite", 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -84,20 +77,12 @@ data:extend({
     main_product = "pm-potash",
     ingredients =
     {
-      { "pm-sylvite", 5 }
+      PM.ingredient("pm-sylvite", 5)
     },
     results =
     {
-      {
-        name = "pm-potash",
-        amount_min = 2,
-        amount_max = 4,
-      },
-      {
-        name = "stone",
-        amount = 5,
-        probability = 0.65
-      }
+      PM.product_range("pm-potash", 2, 4),
+      PM.product_chance("stone", 5, 0.65)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -111,27 +96,13 @@ data:extend({
     main_product = "pm-calcium-sulfate",
     ingredients =
     {
-      { "pm-anhydrite", 10 }
+      PM.ingredient("pm-anhydrite", 10)
     },
     results =
     {
-      {
-        name = "pm-calcium-sulfate",
-        amount_min = 1,
-        amount_max = 5,
-        probability = 0.9
-      },
-      {
-        name = "pm-potash",
-        amount = 2,
-        probability = 0.22
-      },
-      {
-        name = "pm-sodium",
-        amount_min = 0,
-        amount_max = 3,
-        probability = 0.1
-      }
+      PM.product_range_chance("pm-calcium-sulfate", 1, 5, 0.9),
+      PM.product_chance("pm-potash", 2, 0.22),
+      PM.product_range_chance("pm-sodium", 0, 3, 0.1)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -145,13 +116,13 @@ data:extend({
     main_product = "pm-potassium",
     ingredients =
     {
-      { "pm-potash", 6 },
-      { "pm-sodium", 6 }
+      PM.ingredient("pm-potash", 6),
+      PM.ingredient("pm-sodium", 6)
     },
     results =
     {
-      { "pm-sea-salt",  6 },
-      { "pm-potassium", 6 }
+      PM.product("pm-sea-salt", 6),
+      PM.product("pm-potassium", 6)
     }
   } --[[@as data.RecipePrototype]]
 })

@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for all alternative recipes for items
 
 data:extend({
@@ -14,11 +15,11 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-pheonlic-resin", amount = 25 },
+      PM.ingredient("pm-pheonlic-resin", 25, "fluid"),
     },
     results =
     {
-      { "pm-circuit-mold", 2 }
+      PM.product("pm-circuit-mold", 2)
     }
   },
   {
@@ -35,13 +36,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-circuit-mold",     1 },
-      { "pm-basic-breadboard", 1 }
+      PM.ingredient("pm-circuit-mold", 1),
+      PM.ingredient("pm-basic-breadboard", 1)
     },
     results =
     {
-      { "pm-basic-breadboard-mold", 1 },
-      { "pm-basic-breadboard",      1 }
+      PM.product("pm-basic-breadboard-mold", 1),
+      PM.product("pm-basic-breadboard", 1)
     }
   },
   {
@@ -57,17 +58,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-basic-breadboard-mold", 1 },
-      { "pm-nickel-plate",          1 }
+      PM.ingredient("pm-basic-breadboard-mold", 1),
+      PM.ingredient("pm-nickel-plate", 1)
     },
     results =
     {
-      {
-        name = "pm-basic-breadboard-mold",
-        probability = 0.7,
-        amount = 1
-      },
-      { "pm-basic-breadboard", 2 }
+      PM.product_chance("pm-basic-breadboard-mold", 1, 0.7),
+      PM.product("pm-basic-breadboard", 2)
     },
   },
   {
@@ -84,13 +81,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-circuit-mold",     1 },
-      { "pm-fluid-breadboard", 1 }
+      PM.ingredient("pm-circuit-mold", 1),
+      PM.ingredient("pm-fluid-breadboard", 1)
     },
     results =
     {
-      { "pm-fluid-breadboard-mold", 1 },
-      { "pm-fluid-breadboard",      1 }
+      PM.product("pm-fluid-breadboard-mold", 1),
+      PM.product("pm-fluid-breadboard", 1)
     }
   },
   {
@@ -106,17 +103,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-fluid-breadboard-mold", 1 },
-      { "pm-vulcanised-rubber",     1 }
+      PM.ingredient("pm-fluid-breadboard-mold", 1),
+      PM.ingredient("pm-vulcanised-rubber", 1)
     },
     results =
     {
-      {
-        name = "pm-fluid-breadboard-mold",
-        probability = 0.6,
-        amount = 1
-      },
-      { "pm-fluid-breadboard", 2 }
+      PM.product_chance("pm-fluid-breadboard-mold", 1, 0.6),
+      PM.product("pm-fluid-breadboard", 2)
     },
   },
   {
@@ -133,13 +126,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-circuit-mold",                1 },
-      { "pm-advanced-circuit-breadboard", 1 }
+      PM.ingredient("pm-circuit-mold", 1),
+      PM.ingredient("pm-advanced-circuit-breadboard", 1)
     },
     results =
     {
-      { "pm-advanced-breadboard-mold",    1 },
-      { "pm-advanced-circuit-breadboard", 1 }
+      PM.product("pm-advanced-breadboard-mold", 1),
+      PM.product("pm-advanced-circuit-breadboard", 1)
     }
   },
   {
@@ -155,17 +148,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-advanced-breadboard-mold", 1 },
-      { "pm-palladium-plate",          2 }
+      PM.ingredient("pm-advanced-breadboard-mold", 1),
+      PM.ingredient("pm-palladium-plate", 2)
     },
     results =
     {
-      {
-        name = "pm-advanced-breadboard-mold",
-        probability = 0.5,
-        amount = 1
-      },
-      { "pm-advanced-circuit-breadboard", 2 }
+      PM.product_chance("pm-advanced-breadboard-mold", 1, 0.5),
+      PM.product("pm-advanced-circuit-breadboard", 2)
     },
   },
   {
@@ -182,13 +171,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-circuit-mold",          1 },
-      { "pm-processing-breadboard", 1 }
+      PM.ingredient("pm-circuit-mold", 1),
+      PM.ingredient("pm-processing-breadboard", 1)
     },
     results =
     {
-      { "pm-processing-breadboard-mold", 1 },
-      { "pm-processing-breadboard",      1 }
+      PM.product("pm-processing-breadboard-mold", 1),
+      PM.product("pm-processing-breadboard", 1)
     }
   },
   {
@@ -204,17 +193,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-processing-breadboard-mold", 1 },
-      { "pm-indium-plate",               2 }
+      PM.ingredient("pm-processing-breadboard-mold", 1),
+      PM.ingredient("pm-indium-plate", 2)
     },
     results =
     {
-      {
-        name = "pm-processing-breadboard-mold",
-        probability = 0.4,
-        amount = 1
-      },
-      { "pm-processing-breadboard", 2 }
+      PM.product_chance("pm-processing-breadboard-mold", 1, 0.4),
+      PM.product("pm-processing-breadboard", 2)
     },
   },
   {
@@ -230,12 +215,12 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-coke",  2 },
-      { "iron-ore", 2 }
+      PM.ingredient("pm-coke", 2),
+      PM.ingredient("iron-ore", 2)
     },
     results =
     {
-      { "iron-plate", 4 }
+      PM.product("iron-plate", 4)
     }
   },
   {
@@ -251,12 +236,12 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-coke",     2 },
-      { "pm-zinc-ore", 2 }
+      PM.ingredient("pm-coke", 2),
+      PM.ingredient("pm-zinc-ore", 2)
     },
     results =
     {
-      { "pm-zinc-plate", 4 }
+      PM.product("pm-zinc-plate", 4)
     }
   },
 
@@ -273,23 +258,15 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-manganese-plate", 2 },
-      { "pm-nickel-plate",    2 },
-      { "pm-zinc-plate",      1 }
+      PM.ingredient("pm-manganese-plate", 2),
+      PM.ingredient("pm-nickel-plate", 2),
+      PM.ingredient("pm-zinc-plate", 1)
     },
     results =
     {
-      {
-        name = "pm-alloyed-steel",
-        amount_min = 2,
-        amount_max = 6,
-      },
+      PM.product_range("pm-alloyed-steel", 2, 6),
 
-      {
-        name = "pm-ore-slag",
-        probability = 0.5,
-        amount = 2
-      }
+      PM.product_chance("pm-ore-slag", 2, 0.5)
     }
   },
   {
@@ -303,16 +280,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-alloyed-steel", 2 },
-      { "iron-plate",       2 }
+      PM.ingredient("pm-alloyed-steel", 2),
+      PM.ingredient("iron-plate", 2)
     },
     results =
     {
-      {
-        name = "steel-plate",
-        amount_min = 1,
-        amount_max = 2,
-      }
+      PM.product_range("steel-plate", 1, 2)
     }
   },
   {
@@ -326,13 +299,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",    name = "pm-pheonlic-resin", amount = 10 },
-      { "pm-glass-fibers", 20 },
-      { "copper-cable",    4 }
+      PM.ingredient("pm-pheonlic-resin", 10, "fluid"),
+      PM.ingredient("pm-glass-fibers", 20),
+      PM.ingredient("copper-cable", 4)
     },
     results =
     {
-      { "pm-fiberoptic-cable", 2 }
+      PM.product("pm-fiberoptic-cable", 2)
     }
   },
   {
@@ -347,13 +320,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",   name = "sulfuric-acid", amount = 10 },
-      { "pm-calcium-ore", 6 }
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-calcium-ore", 6)
     },
     results =
     {
-      { type = "fluid",  name = "pm-acidic-water", amount = 50 },
-      { name = "sulfur", amount_min = 2,           amount_max = 5 }
+      PM.product("pm-acidic-water", 50, "fluid"),
+      PM.product_range("sulfur", 2, 5)
     }
   },
   {
@@ -367,13 +340,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-zinc-plate",    10 },
-      { "pm-cadnium-plate", 4 + 1 },
-      { type = "fluid",     name = "pm-molten-iron", amount = 2.4 + 0.1 }
+      PM.ingredient("pm-zinc-plate", 10),
+      PM.ingredient("pm-cadnium-plate", 5),
+      PM.ingredient("pm-molten-iron", 2.5, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-solder", amount = 10 }
+      PM.product("pm-molten-solder", 10, "fluid")
     }
   },
   {
@@ -394,17 +367,13 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { "pm-calcium-ore", 6 },
-      { type = "fluid",   name = "pm-acidic-water", amount = 50 },
+      PM.ingredient("pm-calcium-ore", 6),
+      PM.ingredient("pm-acidic-water", 50, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "water", amount = 50 },
-      {
-        name = "sulfur",
-        amount_min = 2,
-        amount_max = 4 + 1
-      }
+      PM.product("water", 50, "fluid"),
+      PM.product_range("sulfur", 2, 5)
     }
   },
 
@@ -421,11 +390,11 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-pheonlic-resin", amount = 40 + 10 },
+      PM.ingredient("pm-pheonlic-resin", 50, "fluid"),
     },
     results =
     {
-      { "pm-integrated-circuit-mold", 3 }
+      PM.product("pm-integrated-circuit-mold", 3)
     }
   },
   {
@@ -441,13 +410,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-integrated-circuit-mold",   3 },
-      { "pm-basic-integrated-circuits", 3 }
+      PM.ingredient("pm-integrated-circuit-mold", 3),
+      PM.ingredient("pm-basic-integrated-circuits", 3)
     },
     results =
     {
-      { "pm-basic-integrated-circuit-mold",    3 },
-      { name = "pm-basic-integrated-circuits", amount_min = 2, amount_max = 3 }
+      PM.product("pm-basic-integrated-circuit-mold", 3),
+      PM.product_range("pm-basic-integrated-circuits", 2, 3)
     }
   },
   {
@@ -463,17 +432,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-basic-integrated-circuit-mold", 3 },
-      { "copper-cable",                     1 }
+      PM.ingredient("pm-basic-integrated-circuit-mold", 3),
+      PM.ingredient("copper-cable", 1)
     },
     results =
     {
-      {
-        name = "pm-basic-integrated-circuit-mold",
-        probability = 0.6,
-        amount = 3
-      },
-      { "pm-basic-integrated-circuits", 3 }
+      PM.product_chance("pm-basic-integrated-circuit-mold", 3, 0.6),
+      PM.product("pm-basic-integrated-circuits", 3)
     },
   },
   {
@@ -489,13 +454,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-integrated-circuit-mold",   3 },
-      { "pm-fluid-integrated-circuits", 3 }
+      PM.ingredient("pm-integrated-circuit-mold", 3),
+      PM.ingredient("pm-fluid-integrated-circuits", 3)
     },
     results =
     {
-      { "pm-fluid-integrated-circuit-mold",    3 },
-      { name = "pm-fluid-integrated-circuits", amount_min = 2, amount_max = 3 }
+      PM.product("pm-fluid-integrated-circuit-mold", 3),
+      PM.product_range("pm-fluid-integrated-circuits", 2, 3)
     }
   },
   {
@@ -511,17 +476,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-fluid-integrated-circuit-mold", 3 },
-      { "pm-gold-wire",                     2 }
+      PM.ingredient("pm-fluid-integrated-circuit-mold", 3),
+      PM.ingredient("pm-gold-wire", 2)
     },
     results =
     {
-      {
-        name = "pm-fluid-integrated-circuit-mold",
-        probability = 0.5,
-        amount = 3
-      },
-      { "pm-fluid-integrated-circuits", 3 }
+      PM.product_chance("pm-fluid-integrated-circuit-mold", 3, 0.5),
+      PM.product("pm-fluid-integrated-circuits", 3)
     },
   },
   {
@@ -537,13 +498,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-integrated-circuit-mold",      3 },
-      { "pm-advanced-integrated-circuits", 3 }
+      PM.ingredient("pm-integrated-circuit-mold", 3),
+      PM.ingredient("pm-advanced-integrated-circuits", 3)
     },
     results =
     {
-      { "pm-advanced-integrated-circuit-mold",    3 },
-      { name = "pm-advanced-integrated-circuits", amount_min = 2, amount_max = 3 }
+      PM.product("pm-advanced-integrated-circuit-mold", 3),
+      PM.product_range("pm-advanced-integrated-circuits", 2, 3)
     }
   },
   {
@@ -559,17 +520,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-advanced-integrated-circuit-mold", 3 },
-      { "pm-gold-wire",                        2 }
+      PM.ingredient("pm-advanced-integrated-circuit-mold", 3),
+      PM.ingredient("pm-gold-wire", 2)
     },
     results =
     {
-      {
-        name = "pm-advanced-integrated-circuit-mold",
-        probability = 0.4,
-        amount = 3
-      },
-      { "pm-advanced-integrated-circuits", 3 }
+      PM.product_chance("pm-advanced-integrated-circuit-mold", 3, 0.4),
+      PM.product("pm-advanced-integrated-circuits", 3)
     },
   },
   {
@@ -585,13 +542,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-integrated-circuit-mold",        3 },
-      { "pm-processing-integrated-circuits", 3 }
+      PM.ingredient("pm-integrated-circuit-mold", 3),
+      PM.ingredient("pm-processing-integrated-circuits", 3)
     },
     results =
     {
-      { "pm-processing-integrated-circuit-mold",  3 },
-      { name = "pm-advanced-integrated-circuits", amount_min = 2, amount_max = 3 }
+      PM.product("pm-processing-integrated-circuit-mold", 3),
+      PM.product_range("pm-advanced-integrated-circuits", 2, 3)
     }
   },
   {
@@ -607,17 +564,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      { "pm-processing-integrated-circuit-mold", 3 },
-      { "pm-gold-wire",                          2 }
+      PM.ingredient("pm-processing-integrated-circuit-mold", 3),
+      PM.ingredient("pm-gold-wire", 2)
     },
     results =
     {
-      {
-        name = "pm-processing-integrated-circuit-mold",
-        probability = 0.3,
-        amount = 3
-      },
-      { "pm-processing-integrated-circuits", 3 }
+      PM.product_chance("pm-processing-integrated-circuit-mold", 3, 0.3),
+      PM.product("pm-processing-integrated-circuits", 3)
     },
   },
   {
@@ -631,14 +584,14 @@ data:extend({
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
-      { type = "fluid",   name = "pm-carbon-dioxide-gas", amount = 40 },
-      { "pm-zirconia",    4 },
-      { "pm-bismuth-ore", 4 }
+      PM.ingredient("pm-carbon-dioxide-gas", 40, "fluid"),
+      PM.ingredient("pm-zirconia", 4),
+      PM.ingredient("pm-bismuth-ore", 4)
     },
     results =
     {
-      { type = "fluid", name = "pm-carbon-monoxide", amount = 40 },
-      { type = "fluid", name = "pm-oxygen-gas",      amount = 20 }
+      PM.product("pm-carbon-monoxide", 40, "fluid"),
+      PM.product("pm-oxygen-gas", 20, "fluid")
     }
   },
 } --[[@as data.RecipePrototype[] ]])

@@ -1,47 +1,39 @@
-if not mods["bzchlorine"] then return end
+if not mods["bzchlorine"] then return end -- Leave if not relevant
+local PM = require("__periodic-madness__/library")
 
 data.raw["recipe"]["pm-seawater-evaporation"].ingredients =
 {
-  { type = "fluid", name = "pm-seawater", amount = 50 }
+  PM.ingredient("pm-seawater", 50, "fluid")
 }
 data.raw["recipe"]["pm-seawater-evaporation"].results =
 {
-  { "salt",         4 + 1 },
-  { type = "fluid", name = "water", amount = 24 + 1 },
+  PM.product("salt", 5),
+  PM.product("water", 25, "fluid"),
 }
 data.raw["recipe"]["pm-seawater-desaltination"].ingredients =
 {
-  { type = "fluid", name = "pm-seawater", amount = 100 }
+  PM.ingredient("pm-seawater", 100, "fluid")
 }
 data.raw["recipe"]["pm-seawater-desaltination"].results =
 {
-  { type = "fluid", name = "water", amount = 50 },
-  { "salt",         10 }
+  PM.product("water", 50, "fluid"),
+  PM.product("salt", 10),
 }
 
 data.raw["technology"]["chlorine-processing"].effects =
 {
-  {
-    type = "unlock-recipe",
-    recipe = "pm-seawater-evaporation"
-  },
-  {
-    type = "unlock-recipe",
-    recipe = "pm-salt-electroylsis"
-  },
-  {
-    type = "unlock-recipe",
-    recipe = "pm-hydrochloric-acid"
-  }
+  PM.unlock_recipe("pm-seawater-evaporation"),
+  PM.unlock_recipe("pm-salt-electroylsis"),
+  PM.unlock_recipe("pm-hydrochloric-acid")
 }
 data.raw["technology"]["chlorine-processing"].unit =
 {
   count = 10,
   ingredients =
   {
-    { "automation-science-pack", 1 }
+    PM.ingredient("automation-science-pack", 1)
   },
-  time = 4 + 1
+  time = 5
 }
 data.raw["technology"]["chlorine-processing"].prerequisites = {}
 data.raw["technology"]["pm-ezekiel-ore-purifying"].prerequisites = { "automation", "chlorine-processing" }
@@ -57,22 +49,16 @@ data:extend({
     mipmap_count = 4,
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "ferric-chloride"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "ferric-chloride-hcl"
-      },
+      PM.unlock_recipe("ferric-chloride"),
+      PM.unlock_recipe("ferric-chloride-hcl"),
     },
     prerequisites = { "chlorine-processing" },
     unit =
     {
-      count = 24 + 1,
+      count = 25,
       ingredients =
       {
-        { "automation-science-pack", 1 }
+        PM.ingredient("automation-science-pack", 1)
       },
       time = 10
     }
@@ -84,70 +70,67 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "hydrogen-chloride-salt"
-      },
+      PM.unlock_recipe("hydrogen-chloride-salt"),
     },
     prerequisites = { "chlorine-processing", "oil-processing" },
     unit =
     {
-      count = 24 + 1,
+      count = 25,
       ingredients =
       {
-        { "automation-science-pack",                            1 },
-        { "logistic-science-pack",                              1 },
-        { "pm-advanced-advanced-transition-metal-science-pack", 1 }
+        PM.ingredient("automation-science-pack", 1),
+        PM.ingredient("logistic-science-pack", 1),
+        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
       },
       time = 10
     }
   },
 })
-data.raw["technology"]["pm-advanced-transition-metal-refining"].prerequisites = { "pm-mercury-processing",
-  "pm-ferric-chloride-processing", "pm-transition-metal-refining" }
+data.raw["technology"]["pm-advanced-transition-metal-refining"].prerequisites =
+{
+  "pm-mercury-processing",
+  "pm-ferric-chloride-processing",
+  "pm-transition-metal-refining"
+}
 
 data.raw["recipe"]["pm-water-acifying"].ingredients =
 {
-  { type = "fluid",    name = "water", amount = 40 + 10 },
-  { "ferric-chloride", 2 },
-  { "sulfur",          3 }
+  PM.ingredient("water", 50, "fluid"),
+  PM.ingredient("ferric-chloride", 2),
+  PM.ingredient("sulfur", 3)
 }
 data.raw["recipe"]["ferric-chloride"].ingredients =
 {
-  { "pm-ferrum",    2 },
-  { type = "fluid", name = "pm-chlorine", amount = 10 }
+  PM.ingredient("pm-ferrum", 2),
+  PM.ingredient("pm-chlorine", 10, "fluid")
 }
 data.raw["recipe"]["ferric-chloride-hcl"].ingredients =
 {
-  { "pm-ferrum",    4 },
-  { type = "fluid", name = "pm-hydrochloric-acid", amount = 30 }
+  PM.ingredient("pm-ferrum", 4),
+  PM.ingredient("pm-hydrochloric-acid", 30, "fluid")
 }
 data.raw["recipe"]["hydrogen-chloride-salt"].ingredients =
 {
-  { "salt",         2 },
-  { "pm-hydrogen",  10 },
-  { type = "fluid", name = "sulfuric-acid", amount = 4 + 1 }
+  PM.ingredient("salt", 2),
+  PM.ingredient("pm-hydrogen", 10),
+  PM.ingredient("sulfuric-acid", 5, "fluid")
 }
 data.raw["recipe"]["ferric-chloride"].category = "pm-acids"
 data.raw["recipe"]["ferric-chloride-hcl"].category = "pm-acids"
 data.raw["recipe"]["hydrogen-chloride-salt"].results =
 {
-  { type = "fluid", name = "pm-hydrochloric-acid", amount = 10 },
-  {
-    name = "pm-oxygen",
-    amount_min = 2,
-    amount_max = 4 + 1
-  }
+  PM.product("pm-hydrochloric-acid", 10, "fluid"),
+  PM.product_range("pm-oxygen", 2, 5, "item")
 }
 data.raw["recipe"]["hydrogen-chloride-salt"].icon_size = 64
 data.raw["recipe"]["hydrogen-chloride-salt"].icon =
 "__periodic-madness__/graphics/icons/recipes/hydrochloric-acid-salt.png"
 data.raw["recipe"]["accumulator"].ingredients =
 {
-  { "pm-vanadium-redox-battery", 4 },
-  { "pm-basic-wiring",           4 + 1 },
-  { "pm-heavyweight-framing",    8 },
-  { "ferric-chloride",           2 }
+  PM.ingredient("pm-vanadium-redox-battery", 4),
+  PM.ingredient("pm-basic-wiring", 5),
+  PM.ingredient("pm-heavyweight-framing", 8),
+  PM.ingredient("ferric-chloride", 2)
 }
 
 data.raw["technology"]["pm-chlorine-processing"] = nil

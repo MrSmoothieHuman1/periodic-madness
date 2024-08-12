@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -36,22 +37,12 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-bismuth-ore", 30 }
+      PM.ingredient("pm-bismuth-ore", 30)
     },
     results =
     {
-      {
-        name = "pm-bismuth-ore",
-        amount_min = 8,
-        amount_max = 14,
-        probability = 0.8
-      },
-      {
-        name = "pm-bismuth-210",
-        amount_min = 2,
-        amount_max = 10,
-        probability = 0.6
-      }
+      PM.product_range_chance("pm-bismuth-ore", 8, 14, 0.8),
+      PM.product_range_chance("pm-bismuth-210", 2, 10, 0.6)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -66,16 +57,11 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { "pm-bismuth-210", 6 - 1 }
+      PM.ingredient("pm-bismuth-210", 5)
     },
     results =
     {
-      {
-        name = "pm-polonium-210",
-        amount_min = 2,
-        amount_max = 3,
-        probability = 0.55
-      },
+      PM.product_range_chance("pm-polonium-210", 2, 3, 0.55),
     }
   } --[[@as data.RecipePrototype]]
 })

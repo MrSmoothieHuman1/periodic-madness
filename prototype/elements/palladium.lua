@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -12,20 +13,15 @@ data:extend({
     energy_required = 3.2,
     ingredients =
     {
-      { type = "fluid", name = "pm-nickel-froth", amount = 4 + 1 },
-      { "pm-sand",      6 },
-      { "pm-coke",      4 }
+      PM.ingredient("pm-nickel-froth", 5, "fluid"),
+      PM.ingredient("pm-sand", 6),
+      PM.ingredient("pm-coke", 4)
     },
     results =
     {
-      { "pm-nickel-ore",    2 },
-      { "pm-palladium-ore", 2 },
-      {
-        name = "pm-ferrum",
-        amount_min = 1,
-        amount_max = 3,
-        probability = 0.4 + 0.1
-      }
+      PM.product("pm-nickel-ore", 2),
+      PM.product("pm-palladium-ore", 2),
+      PM.product_range_chance("pm-ferrum", 1, 3, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -40,23 +36,15 @@ data:extend({
     energy_required = 1.6,
     ingredients =
     {
-      { type = "fluid",             name = "pm-nickel-froth", amount = 4 + 1 },
-      { "pm-filled-flux-container", 1 }
+      PM.ingredient("pm-nickel-froth", 5, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
-      { "pm-nickel-ore",    2 },
-      { "pm-palladium-ore", 2 },
-      {
-        name = "pm-ferrum",
-        amount = 1,
-        probability = 0.4 + 0.1
-      },
-      {
-        name = "pm-flux-container",
-        probability = 0.66,
-        amount = 1,
-      }
+      PM.product("pm-nickel-ore", 2),
+      PM.product("pm-palladium-ore", 2),
+      PM.product_chance("pm-ferrum", 1, 0.5),
+      PM.product_chance("pm-flux-container", 1, 0.66)
     }
   } --[[@as data.RecipePrototype]],
 })

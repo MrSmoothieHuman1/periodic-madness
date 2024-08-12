@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -46,12 +47,12 @@ data:extend({
     main_product = "pm-calcite",
     ingredients =
     {
-      { type = "fluid", name = "pm-seawater", amount = 20 },
+      PM.ingredient("pm-seawater", 20, "fluid"),
     },
     results =
     {
-      { "pm-calcite",   4 },
-      { type = "fluid", name = "water", amount = 10 }
+      PM.product("pm-calcite", 4),
+      PM.product("water", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -64,11 +65,11 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-calcite", 4 }
+      PM.ingredient("pm-calcite", 4)
     },
     results =
     {
-      { "pm-calcium-dust", 8 }
+      PM.product("pm-calcium-dust", 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -82,17 +83,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-calcium-dust", 4 },
-      { type = "fluid",    name = "water", amount = 20 }
+      PM.ingredient("pm-calcium-dust", 4),
+      PM.ingredient("water", 20, "fluid")
     },
     results =
     {
-      { "pm-calcium-ore", 2 },
-      {
-        name = "pm-carbon",
-        amount = 1,
-        probability = 0.5
-      }
+      PM.product("pm-calcium-ore", 2),
+      PM.product_chance("pm-carbon", 1, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -105,11 +102,11 @@ data:extend({
     enabled = true,
     ingredients =
     {
-      { "pm-calcium-dust", 4 }
+      PM.ingredient("pm-calcium-dust", 4)
     },
     results =
     {
-      { "pm-chalk", 1 }
+      PM.product("pm-chalk", 1)
     }
   } --[[@as data.RecipePrototype]],
 })

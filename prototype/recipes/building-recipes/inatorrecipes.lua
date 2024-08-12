@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --im going insane
 
 data:extend({
@@ -12,13 +13,13 @@ data:extend({
     category = "pm-moltening",
     ingredients =
     {
-      { type = "fluid",          name = "pm-oxygen-gas", amount = 30 },
-      { "iron-plate",10 },
-      { "pm-sodium-bicarbonate", 5 }
+      PM.ingredient("pm-oxygen-gas", 30, "fluid"),
+      PM.ingredient("iron-plate", 10),
+      PM.ingredient("pm-sodium-bicarbonate", 5)
     },
     results =
     {
-      { "pm-ferrum", 10 }
+      PM.product("pm-ferrum", 10)
     }
   },
   {
@@ -31,13 +32,13 @@ data:extend({
     order = "aa",
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-zinc", amount = 5 },
-      { "pm-potassium", 5 },
-      { "pm-sodium",    10 }
+      PM.ingredient("pm-molten-zinc", 5, "fluid"),
+      PM.ingredient("pm-potassium", 5),
+      PM.ingredient("pm-sodium", 10)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-potassium-salts", amount = 12 }
+      PM.product("pm-molten-potassium-salts", 12, "fluid")
     }
   },
   {
@@ -50,12 +51,12 @@ data:extend({
     order = "ba",
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-potassium-salts", amount = 3 },
-      { "pm-sand",      8 }
+      PM.ingredient("pm-molten-potassium-salts", 3, "fluid"),
+      PM.ingredient("pm-sand", 8)
     },
     results =
     {
-      { "pm-glass-pane", 4 }
+      PM.product("pm-glass-pane", 4)
     }
   },
   {
@@ -70,15 +71,15 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { "pm-glass-pane",      10 },
-      { "pm-boric-oxide",     8 },
-      { "pm-aluminium-plate", 4 },
-      { "pm-sea-salt",        8 },
-      { type = "fluid",       name = "pm-molten-tin", amount = 5 }
+      PM.ingredient("pm-glass-pane", 10),
+      PM.ingredient("pm-boric-oxide", 8),
+      PM.ingredient("pm-aluminium-plate", 4),
+      PM.ingredient("pm-sea-salt", 8),
+      PM.ingredient("pm-molten-tin", 5, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-borosilicate-glass", amount = 5 }
+      PM.product("pm-molten-borosilicate-glass", 5, "fluid")
     }
   },
   {
@@ -93,17 +94,13 @@ data:extend({
     order = "f",
     ingredients =
     {
-      {type = "fluid", name = "pm-molten-borosilicate-glass", amount = 5},
-      {"pm-crucible", 2}
+      PM.ingredient("pm-molten-borosilicate-glass", 5, "fluid"),
+      PM.ingredient("pm-crucible", 2)
     },
     results =
     {
-      {"pm-borosilicate-glass", 5},
-      {
-        name = "pm-crucible",
-        amount_min = 1,
-        amount_max = 2,
-      }
+      PM.product("pm-borosilicate-glass", 5),
+      PM.product_range("pm-crucible", 1, 2)
     }
   },
   {
@@ -126,17 +123,13 @@ data:extend({
     category = "pm-moltening",
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-borosilicate-glass", amount = 2.5 },
-      { "pm-filled-flux-container", 1 }
+      PM.ingredient("pm-molten-borosilicate-glass", 2.5, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
-      { "pm-glass-fibers", 15 },
-      {
-        name = "pm-flux-container",
-        amount = 1,
-        probability = 0.9
-      },
+      PM.product("pm-glass-fibers", 15),
+      PM.product_chance("pm-flux-container", 1, 0.9),
     }
   },
 
@@ -167,12 +160,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "iron-plate",   10 },
-      { type = "fluid", name = "steam", amount = 50 }
+      PM.ingredient("iron-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-iron", amount = 4 + 1 }
+      PM.product("pm-molten-iron", 5, "fluid")
     }
   },
   {
@@ -202,12 +195,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "copper-plate", 10 },
-      { type = "fluid", name = "steam", amount = 50 }
+      PM.ingredient("copper-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-copper", amount = 4 + 1 }
+      PM.product("pm-molten-copper", 5, "fluid")
     }
   },
   {
@@ -237,12 +230,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-nickel-plate", 10 },
-      { type = "fluid",    name = "steam", amount = 50 }
+      PM.ingredient("pm-nickel-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-nickel", amount = 4 + 1 }
+      PM.product("pm-molten-nickel", 5, "fluid")
     }
   },
   {
@@ -272,12 +265,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-zinc-plate", 10 },
-      { type = "fluid",  name = "steam", amount = 50 }
+      PM.ingredient("pm-zinc-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-zinc", amount = 4 + 1 }
+      PM.product("pm-molten-zinc", 5, "fluid")
     }
   },
   {
@@ -307,12 +300,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-manganese-plate", 10 },
-      { type = "fluid",       name = "steam", amount = 50 }
+      PM.ingredient("pm-manganese-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-manganese", amount = 4 + 1 }
+      PM.product("pm-molten-manganese", 5, "fluid")
     }
   },
   {
@@ -342,12 +335,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-gold-plate", 10 },
-      { type = "fluid",  name = "steam", amount = 50 }
+      PM.ingredient("pm-gold-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-gold", amount = 4 + 1 }
+      PM.product("pm-molten-gold", 5, "fluid")
     }
   },
   {
@@ -377,12 +370,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-silver-plate", 10 },
-      { type = "fluid",    name = "steam", amount = 50 }
+      PM.ingredient("pm-silver-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-silver", amount = 4 + 1 }
+      PM.product("pm-molten-silver", 5, "fluid")
     }
   },
   {
@@ -412,12 +405,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-tin-plate", 10 },
-      { type = "fluid", name = "steam", amount = 50 }
+      PM.ingredient("pm-tin-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-tin", amount = 4 + 1 }
+      PM.product("pm-molten-tin", 5, "fluid")
     }
   },
   {
@@ -447,12 +440,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-titanium-plate", 10 },
-      { type = "fluid",      name = "steam", amount = 50 }
+      PM.ingredient("pm-titanium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-titanium", amount = 4 + 1 }
+      PM.product("pm-molten-titanium", 5, "fluid")
     }
   },
   {
@@ -482,12 +475,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-tungsten-plate", 10 },
-      { type = "fluid",      name = "steam", amount = 50 }
+      PM.ingredient("pm-tungsten-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-tungsten", amount = 4 + 1 }
+      PM.product("pm-molten-tungsten", 5, "fluid")
     }
   },
   {
@@ -517,12 +510,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-cadnium-plate", 10 },
-      { type = "fluid",     name = "steam", amount = 50 }
+      PM.ingredient("pm-cadnium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-cadnium", amount = 4 + 1 }
+      PM.product("pm-molten-cadnium", 5, "fluid")
     }
   },
 
@@ -554,12 +547,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-aluminium-plate", 10 },
-      { type = "fluid",       name = "steam", amount = 50 }
+      PM.ingredient("pm-aluminium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-aluminium", amount = 4 + 1 }
+      PM.product("pm-molten-aluminium", 5, "fluid")
     }
   },
   {
@@ -589,12 +582,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-platinum-plate", 10 },
-      { type = "fluid",      name = "steam", amount = 50 }
+      PM.ingredient("pm-platinum-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-platinum", amount = 4 + 1 }
+      PM.product("pm-molten-platinum", 5, "fluid")
     }
   },
   {
@@ -610,17 +603,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-glass-pane", 10 },
-      { type = "fluid",  name = "steam", amount = 50 }
+      PM.ingredient("pm-glass-pane", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-glass", amount_min = 3, amount_max = 4 + 1 },
-      {
-        name = "pm-glass-shards",
-        amount_min = 4,
-        amount_max = 6,
-      }
+      PM.product_range("pm-molten-glass", 3, 5, "fluid"),
+      PM.product_range("pm-glass-shards", 4, 6)
     }
   },
   {
@@ -650,12 +639,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-lead-plate", 10 },
-      { type = "fluid",  name = "steam", amount = 50 }
+      PM.ingredient("pm-lead-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-lead", amount = 4 + 1 }
+      PM.product("pm-molten-lead", 5, "fluid")
     }
   },
   {
@@ -685,12 +674,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-thallium-plate", 10 },
-      { type = "fluid",      name = "steam", amount = 50 }
+      PM.ingredient("pm-thallium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-thallium", amount = 4 + 1 }
+      PM.product("pm-molten-thallium", 5, "fluid")
     }
   },
   {
@@ -720,12 +709,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-indium-plate", 10 },
-      { type = "fluid",    name = "steam", amount = 50 }
+      PM.ingredient("pm-indium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-indium", amount = 4 + 1 }
+      PM.product("pm-molten-indium", 5, "fluid")
     }
   },
   {
@@ -755,12 +744,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-cobalt-plate", 10 },
-      { type = "fluid",    name = "steam", amount = 50 }
+      PM.ingredient("pm-cobalt-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-cobalt", amount = 4 + 1 }
+      PM.product("pm-molten-cobalt", 5, "fluid")
     }
   },
   {
@@ -790,12 +779,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-palladium-plate", 10 },
-      { type = "fluid",       name = "steam", amount = 50 }
+      PM.ingredient("pm-palladium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-palladium", amount = 4 + 1 }
+      PM.product("pm-molten-palladium", 5, "fluid")
     }
   },
   {
@@ -811,12 +800,12 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-glass-pane", 10 },
-      { type = "fluid",  name = "pm-molten-tin", amount = 10 }
+      PM.ingredient("pm-glass-pane", 10),
+      PM.ingredient("pm-molten-tin", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-glass", amount = 5 },     --im sweating tf out URGHHH literally
+      PM.product("pm-molten-glass", 5, "fluid"),     --im sweating tf out URGHHH literally
       --the amount o time i spent staring at my code in disgust is TOO damn long
       -- fr!! comments, who needs those? i just Dont Stop.
       --tbf when i worked on my first game in unity the ariable for ground detection was called "GroundDontHurtMeNoMo"
@@ -837,17 +826,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-iron", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-iron", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "iron-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("iron-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -863,17 +848,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-copper", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-copper", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "copper-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("copper-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -889,17 +870,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-nickel", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-nickel", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-nickel-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-nickel-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -915,17 +892,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-zinc", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-zinc", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-zinc-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-zinc-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -941,17 +914,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-manganese", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-manganese", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-manganese-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-manganese-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -967,17 +936,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-gold", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-gold", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-gold-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-gold-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -993,17 +958,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-silver", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-silver", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-silver-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-silver-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1019,17 +980,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-tin", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-tin", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-tin-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-tin-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1045,17 +1002,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-titanium", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-titanium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-titanium-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-titanium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1071,17 +1024,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-tungsten", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-tungsten", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-tungsten-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-tungsten-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1097,17 +1046,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-cadnium", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-cadnium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-cadnium-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-cadnium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1123,17 +1068,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-aluminium", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-aluminium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-aluminium-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-aluminium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1149,17 +1090,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-platinum", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-platinum", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-platinum-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-platinum-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1175,17 +1112,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-lead", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-lead", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-lead-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-lead-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1201,17 +1134,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-thallium", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-thallium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-thallium-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-thallium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1227,17 +1156,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-indium", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-indium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-indium-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-indium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1253,17 +1178,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-glass", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-glass", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-glass-pane", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-glass-pane", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1279,17 +1200,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-cobalt", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-cobalt", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-cobalt-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-cobalt-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1305,17 +1222,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-palladium", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-palladium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-palladium-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-palladium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
 
@@ -1332,14 +1245,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-tin-plate",         10 },
-      { "copper-plate",         10 },
-      { type = "fluid",         name = "pm-molten-iron", amount = 2.4 + 0.1 },
-      { "pm-ammonium-chloride", 3 }
+      PM.ingredient("pm-tin-plate", 10),
+      PM.ingredient("copper-plate", 10),
+      PM.ingredient("pm-molten-iron", 2.5, "fluid"),
+      PM.ingredient("pm-ammonium-chloride", 3)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-solder", amount = 10 }
+      PM.product("pm-molten-solder", 10, "fluid")
     }
   },
   {
@@ -1356,19 +1269,15 @@ data:extend({
     emissions_multiplier = 2.5,
     ingredients =
     {
-      { "pm-tin-plate",    6 },
-      { "pm-lead-plate",   4 },
-      { "pm-nickel-plate", 4 },
-      { type = "fluid",    name = "pm-molten-iron", amount = 1 },
+      PM.ingredient("pm-tin-plate", 6),
+      PM.ingredient("pm-lead-plate", 4),
+      PM.ingredient("pm-nickel-plate", 4),
+      PM.ingredient("pm-molten-iron", 1, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-solder", amount = 10 },
-      {
-        name = "pm-polonium-210",
-        amount_min = 0,
-        amount_max = 2,
-      }
+      PM.product("pm-molten-solder", 10, "fluid"),
+      PM.product_range("pm-polonium-210", 0, 2)
     }
   },
   {
@@ -1384,19 +1293,15 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "pm-tin-plate", 6 },
-      { "pm-bismuth-ore",           4 },
-      { "pm-filled-flux-container", 2 },
-      { type = "fluid", name = "pm-molten-iron", amount = 5 }
+      PM.ingredient("pm-tin-plate", 6),
+      PM.ingredient("pm-bismuth-ore", 4),
+      PM.ingredient("pm-filled-flux-container", 2),
+      PM.ingredient("pm-molten-iron", 5, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-solder", amount = 10 },
-      {
-        name = "pm-flux-container",
-        amount_min = 1,
-        amount_max = 2,
-      },
+      PM.product("pm-molten-solder", 10, "fluid"),
+      PM.product_range("pm-flux-container", 1, 2),
     }
   },
   {
@@ -1413,17 +1318,13 @@ data:extend({
     main_product = "pm-solder-plate",
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-solder", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-solder", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-solder-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-solder-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1439,15 +1340,15 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "iron-plate",   8 },
-      { "pm-manganese-plate",       8 },
-      { "pm-vanadium-oxide",        4 },
-      { "pm-filled-flux-container", 2 }
+      PM.ingredient("iron-plate", 8),
+      PM.ingredient("pm-manganese-plate", 8),
+      PM.ingredient("pm-vanadium-oxide", 4),
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-steel", amount = 10 },
-      { name = "pm-flux-container", amount_min = 1,           amount_max = 2 },
+      PM.product("pm-molten-steel", 10, "fluid"),
+      PM.product_range("pm-flux-container", 1, 2),
     }
   },
   {
@@ -1463,17 +1364,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-steel", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-steel", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "steel-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("steel-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1489,14 +1386,14 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "copper-plate", 10 },
-      { "pm-zinc-plate",10 },
-      { "pm-filled-flux-container", 2 }
+      PM.ingredient("copper-plate", 10),
+      PM.ingredient("pm-zinc-plate", 10),
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-brass", amount = 10 },
-      { name = "pm-flux-container", amount_min = 1,           amount_max = 2 },
+      PM.product("pm-molten-brass", 10, "fluid"),
+      PM.product_range("pm-flux-container", 1, 2),
     }
   },
   {
@@ -1512,17 +1409,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-brass", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-brass", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-brass-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-brass-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1538,15 +1431,15 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "steel-plate",  8 },
-      { "pm-manganese-plate",       8 },
-      { "pm-chrominum-ore",         4 },
-      { "pm-filled-flux-container", 2 }
+      PM.ingredient("steel-plate", 8),
+      PM.ingredient("pm-manganese-plate", 8),
+      PM.ingredient("pm-chrominum-ore", 4),
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-stainless-steel", amount = 10 },
-      { name = "pm-flux-container", amount_min = 1,         amount_max = 2 },
+      PM.product("pm-molten-stainless-steel", 10, "fluid"),
+      PM.product_range("pm-flux-container", 1, 2),
     }
   },
   {
@@ -1562,17 +1455,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-stainless-steel", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-stainless-steel", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-stainless-steel-alloy", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-stainless-steel-alloy", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
   {
@@ -1588,15 +1477,15 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { "iron-plate",   3 },
-      { "pm-aluminium-plate",       3 },
-      { "pm-chrominum-ore",         4 },
-      { "pm-filled-flux-container", 2 }
+      PM.ingredient("iron-plate", 3),
+      PM.ingredient("pm-aluminium-plate", 3),
+      PM.ingredient("pm-chrominum-ore", 4),
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-molten-kasethal", amount = 10 },
-      { name = "pm-flux-container", amount_min = 1,  amount_max = 2 },
+      PM.product("pm-molten-kasethal", 10, "fluid"),
+      PM.product_range("pm-flux-container", 1, 2),
     }
   },
   {
@@ -1612,17 +1501,13 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-molten-kasethal", amount = 20 / 4 },
-      { "pm-crucible",  1 },
+      PM.ingredient("pm-molten-kasethal", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
     },
     results =
     {
-      { "pm-kasethal-plate", 10 },
-      {
-        name = "pm-crucible",
-        amount = 1,
-        probability = 0.8
-      }
+      PM.product("pm-kasethal-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
 
@@ -1649,7 +1534,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-refinery-gases", amount = 25 },
+      PM.ingredient("pm-refinery-gases", 25, "fluid"),
     },
     results = {}
   },
@@ -1674,7 +1559,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-petrol", amount = 25 },
+      PM.ingredient("pm-petrol", 25, "fluid"),
     },
     results = {}
   },
@@ -1699,7 +1584,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-naptha", amount = 25 },
+      PM.ingredient("pm-naptha", 25, "fluid"),
     },
     results = {}
   },
@@ -1724,7 +1609,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-diesel", amount = 25 },
+      PM.ingredient("pm-diesel", 25, "fluid"),
     },
     results = {}
   },
@@ -1749,7 +1634,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-kerosene", amount = 25 },
+      PM.ingredient("pm-kerosene", 25, "fluid"),
     },
     results = {}
   },
@@ -1774,7 +1659,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-fuel-oils", amount = 25 },
+      PM.ingredient("pm-fuel-oils", 25, "fluid"),
     },
     results = {}
   },
@@ -1799,7 +1684,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-lubricating-oils", amount = 25 },
+      PM.ingredient("pm-lubricating-oils", 25, "fluid"),
     },
     results = {}
   },
@@ -1824,7 +1709,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-oil-residuals", amount = 25 },
+      PM.ingredient("pm-oil-residuals", 25, "fluid"),
     },
     results = {}
   },
@@ -1850,7 +1735,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-common-diesel", amount = 25 },
+      PM.ingredient("pm-common-diesel", 25, "fluid"),
     },
     results = {}
   },
@@ -1875,7 +1760,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-legendary-diesel", amount = 25 },
+      PM.ingredient("pm-legendary-diesel", 25, "fluid"),
     },
     results = {}
   },
@@ -1900,7 +1785,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-butene-gas", amount = 25 },
+      PM.ingredient("pm-butene-gas", 25, "fluid"),
     },
     results = {}
   },
@@ -1925,7 +1810,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-butane-gas", amount = 25 },
+      PM.ingredient("pm-butane-gas", 25, "fluid"),
     },
     results = {}
   },
@@ -1950,7 +1835,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-ethylene-gas", amount = 25 },
+      PM.ingredient("pm-ethylene-gas", 25, "fluid"),
     },
     results = {}
   },
@@ -1975,7 +1860,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-methanol", amount = 25 },
+      PM.ingredient("pm-methanol", 25, "fluid"),
     },
     results = {}
   },
@@ -2000,7 +1885,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      { type = "fluid", name = "pm-acetone", amount = 25 },
+      PM.ingredient("pm-acetone", 25, "fluid"),
     },
     results = {}
   },

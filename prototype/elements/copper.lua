@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -43,15 +44,15 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-hydrochloric-acid",     amount = 10 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
     results =
     {
-      { "copper-ore", 8 },
-      { "pm-patina",  4 },
+      PM.product("copper-ore", 8),
+      PM.product("pm-patina", 4),
     }
   } --[[@as data.RecipePrototype]],
 
@@ -83,15 +84,15 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-chromic-acid",          amount = 2 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 2, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
     results =
     {
-      { "copper-ore", 8 },
-      { "pm-patina",  4 },
+      PM.product("copper-ore", 8),
+      PM.product("pm-patina", 4),
     }
   } --[[@as data.RecipePrototype]],
 })

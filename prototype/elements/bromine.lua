@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -12,13 +13,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-seawater",   amount = 100 },
-      { type = "fluid", name = "pm-atmosphere", amount = 20 }
+      PM.ingredient("pm-seawater", 100, "fluid"),
+      PM.ingredient("pm-atmosphere", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-hydrogen-bromide", amount_min = 14, amount_max = 28 },
-      { type = "fluid", name = "pm-trace-gas",        amount = 5 }
+      PM.product_range("pm-hydrogen-bromide", 14, 28, "fluid"),
+      PM.product("pm-trace-gas", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -33,18 +34,14 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid",          name = "pm-hydrogen-bromide", amount = 14 },
-      { "pm-palladium-catalyst", 2 }
+      PM.ingredient("pm-hydrogen-bromide", 14, "fluid"),
+      PM.ingredient("pm-palladium-catalyst", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-bromine-ions", amount = 8 },
-      { type = "fluid", name = "pm-hydrogen-gas", amount = 8 },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 1,
-        amount_max = 2,
-      }
+      PM.product("pm-bromine-ions", 8, "fluid"),
+      PM.product("pm-hydrogen-gas", 8, "fluid"),
+      PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -58,12 +55,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { type = "fluid", name = "pm-bromine-ions", amount = 8 },
-      { type = "fluid", name = "pm-chlorine",     amount = 24 }
+      PM.ingredient("pm-bromine-ions", 8, "fluid"),
+      PM.ingredient("pm-chlorine", 24, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-trace-bromine", amount = 6 }
+      PM.product("pm-trace-bromine", 6, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -76,11 +73,11 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { type = "fluid", name = "pm-trace-bromine", amount = 6 },
+      PM.ingredient("pm-trace-bromine", 6, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-bromine", amount = 4 }
+      PM.product("pm-bromine", 4, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -94,13 +91,13 @@ data:extend({
     main_product = "pm-vinyl-bromide",
     ingredients =
     {
-      { type = "fluid", name = "pm-ethylene-gas", amount = 5 },
-      { type = "fluid", name = "pm-bromine",      amount = 4 }
+      PM.ingredient("pm-ethylene-gas", 5, "fluid"),
+      PM.ingredient("pm-bromine", 4, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-vinyl-bromide",    amount = 10 },
-      { type = "fluid", name = "pm-hydrogen-bromide", amount_min = 1, amount_max = 3 }
+      PM.product("pm-vinyl-bromide", 10, "fluid"),
+      PM.product_range("pm-hydrogen-bromide", 1, 3, "fluid")
     }
   } --[[@as data.RecipePrototype]],
 
@@ -114,13 +111,13 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-potash",    25 },
-      { "pm-sea-salt",  30 },
-      { type = "fluid", name = "pm-high-brine", amount = 50 }
+      PM.ingredient("pm-potash", 25),
+      PM.ingredient("pm-sea-salt", 30),
+      PM.ingredient("pm-high-brine", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-bromine-ions", amount_min = 20, amount_max = 40 }
+      PM.product_range("pm-bromine-ions", 20, 40, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })

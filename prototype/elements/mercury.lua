@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -41,13 +42,13 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-hydrochloric-acid",     amount = 4 * 6 + 1 } --i would do factorials but lua doesnt support it. i think. also, that would require typing 4 + 1.
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-hydrochloric-acid", 25, "fluid") -- Was 4*6+1
     },
     enabled = false,
     results =
     {
-      { "pm-mercury-ore", 8 }
+      PM.product("pm-mercury-ore", 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -56,15 +57,18 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/mercury-powdering.png",
     energy_required = 2,
-    ingredients = { { "pm-mercury-ore", 2 } },
+    ingredients =
+    {
+      PM.ingredient("pm-mercury-ore", 2)
+    },
     category = "pm-crushing",
     subgroup = "pm-mercury-tm",
     order = "c",
     enabled = false,
     results =
     {
-      { "pm-mercury-powder", 4 },
-      { "pm-red-mercury",    4 },
+      PM.product("pm-mercury-powder", 4),
+      PM.product("pm-red-mercury", 4),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -79,9 +83,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "item",  name = "pm-mercury-powder", amount = 4 },
-      { type = "item",  name = "pm-red-mercury",    amount = 4 },
-      { type = "fluid", name = "water",             amount = 40 + 10 }
+      PM.ingredient("pm-mercury-powder", 4),
+      PM.ingredient("pm-red-mercury", 4),
+      PM.ingredient("water", 50, "fluid")
     },
     results =
     {
@@ -101,11 +105,11 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "fluid", name = "pm-mercury-vapour", amount = 5 }
+      PM.ingredient("pm-mercury-vapour", 5, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-liquid-mercury", amount = 10 }
+      PM.product("pm-liquid-mercury", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
 
@@ -130,13 +134,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-chromic-acid",          amount = 4 + 1 } --i would do factorials but lua doesnt support it. i think. also, that would require typing 4 + 1.
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 5, "fluid")
     },
     enabled = false,
     results =
     {
-      { "pm-mercury-ore", 8 }
+      PM.product("pm-mercury-ore", 8)
     }
   } --[[@as data.RecipePrototype]],
 })

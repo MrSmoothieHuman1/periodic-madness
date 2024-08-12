@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --all recipes related to silver
 
 data:extend({
@@ -35,13 +36,13 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-acidic-water",          amount = 25 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-acidic-water", 25, "fluid"),
     },
     enabled = false,
     results =
     {
-      { "pm-silver-chunks", 5 },
+      PM.product("pm-silver-chunks", 5 )
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -73,13 +74,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "item",  name = "pm-silver-chunks",  amount = 5 },
-      { type = "fluid", name = "pm-liquid-mercury", amount = 10 }
+      PM.ingredient("pm-silver-chunks", 5),
+      PM.ingredient("pm-liquid-mercury", 10, "fluid")
     },
     results =
     {
-      { type = "item",  name = "pm-silver-ore",     amount = 10 },
-      { type = "fluid", name = "pm-mercury-vapour", amount = 5 }
+      PM.product("pm-silver-ore", 10),
+      PM.product("pm-mercury-vapour", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
 
@@ -88,8 +89,11 @@ data:extend({
     name = "pm-silver-plating",
     energy_required = 1,
     enabled = false,
-    ingredients = { { "pm-silver-plate", 2 } },
-    result = "pm-silver-plating"
+    ingredients =
+    {
+      PM.ingredient("pm-silver-plate", 2)
+    },
+    result = "pm-silver-plating" -- FIXME: I think this isn't in 2.0 -@PennyJim
   },
   {
     type = "recipe",
@@ -119,13 +123,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "item",  name = "pm-transition-metals-ore", amount = 12 },
-      { type = "fluid", name = "pm-chromic-acid",          amount = 4 + 1 },
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 5, "fluid"),
     },
     enabled = false,
     results =
     {
-      { "pm-silver-chunks", 5 },
+      PM.product("pm-silver-chunks", 5),
     }
   } --[[@as data.RecipePrototype]],
 })

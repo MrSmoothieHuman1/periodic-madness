@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -12,19 +13,15 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-fuel-oils", amount = 15 },
-      { type = "fluid", name = "steam", amount = 20 },
-      { "pm-cobalt-catalyst", 2 }
+      PM.ingredient("pm-fuel-oils", 15, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
+      PM.ingredient("pm-cobalt-catalyst", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-sulfur-dioxide", amount = 10 },
-      { type = "fluid", name = "water", amount_min = 18, amount_max = 20 },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 1,
-        amount_max = 2,
-      }
+      PM.product("pm-sulfur-dioxide", 10, "fluid"),
+      PM.product_range("water", 18, 20, "fluid"),
+      PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -39,19 +36,15 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid", name = "pm-kerosene", amount = 15 },
-      { type = "fluid", name = "steam", amount = 20 },
-      { "pm-cobalt-catalyst", 2 }
+      PM.ingredient("pm-kerosene", 15, "fluid"),
+      PM.ingredient("steam", 20, "fluid"),
+      PM.ingredient("pm-cobalt-catalyst", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-sulfur-dioxide", amount = 10 },
-      { type = "fluid", name = "water", amount_min = 18, amount_max = 20 },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 1,
-        amount_max = 2,
-      }
+      PM.product("pm-sulfur-dioxide", 10, "fluid"),
+      PM.product_range("water", 18, 20, "fluid"),
+      PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -66,18 +59,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-sulfur-dioxide", amount = 10 },
-      { "pm-vanadium-oxide-catalyst", 1 }
+      PM.ingredient("pm-sulfur-dioxide", 10, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 1)
     },
     results =
     {
-      { type = "fluid", name = "sulfuric-acid", amount = 10 },
-      { "sulfur", 2 },
-      {
-        name = "pm-catalyst-container",
-        probability = 0.9,
-        amount = 1
-      }
+      PM.product("sulfuric-acid", 10, "fluid"),
+      PM.product("sulfur", 2),
+      PM.product_chance("pm-catalyst-container", 1, 0.9)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -92,18 +81,14 @@ data:extend({
     main_product = "pm-sulfur-dioxide",
     ingredients =
     {
-      { "sulfur", 10 },
-      { type = "fluid", name = "pm-oxygen-gas", amount = 10 },
-      { "pm-cobalt-catalyst", 3 }
+      PM.ingredient("sulfur", 10),
+      PM.ingredient("pm-oxygen-gas", 10, "fluid"),
+      PM.ingredient("pm-cobalt-catalyst", 3)
     },
     results =
     {
-      { type = "fluid", name = "pm-sulfur-dioxide", amount = 20 },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 1,
-        amount_max = 3,
-      }
+      PM.product("pm-sulfur-dioxide", 20, "fluid"),
+      PM.product_range("pm-catalyst-container", 1, 3)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -118,20 +103,16 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { type = "fluid", name = "pm-sulfur-dioxide", amount = 10 },
-      { type = "fluid", name = "pm-oxygen-gas", amount = 20 },
-      { "pm-vanadium-oxide-catalyst", 4 },
-      { "pm-potassium", 2 }
+      PM.ingredient("pm-sulfur-dioxide", 10, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 20, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 4),
+      PM.ingredient("pm-potassium", 2)
     },
     results =
     {
-      { type = "fluid", name = "pm-sulfur-trioxide", amount = 10 },
-      { type = "fluid", name = "pm-oxygen-gas", amount_min = 5, amount_max = 10, probability = 0.5 },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 2,
-        amount_max = 4,
-      }
+      PM.product("pm-sulfur-trioxide", 10, "fluid"),
+      PM.product_range_chance("pm-oxygen-gas", 5, 10, 0.5, "fluid"),
+      PM.product_range("pm-catalyst-container", 2, 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -144,12 +125,12 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid", name = "pm-sulfur-trioxide", amount = 5 },
-      { type = "fluid", name = "sulfuric-acid", amount = 10 }
+      PM.ingredient("pm-sulfur-trioxide", 5, "fluid"),
+      PM.ingredient("sulfuric-acid", 10, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-oleum", amount_min = 10, amount_max = 15 }
+      PM.product_range("pm-oleum", 10, 15, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -162,12 +143,12 @@ data:extend({
     order = "g",
     ingredients =
     {
-      { type = "fluid", name = "pm-oleum",   amount = 5 },
-      { type = "fluid", name = "pm-caesium", amount = 2 }
+      PM.ingredient("pm-oleum", 5, "fluid"),
+      PM.ingredient("pm-caesium", 2, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "sulfuric-acid", amount = 30 }
+      PM.product("sulfuric-acid", 30, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 

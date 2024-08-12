@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -41,13 +42,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "pm-post-transition-metals-ore", 12 },
-      { type = "fluid",                  name = "pm-chromic-acid", amount = 10 }
+      PM.ingredient("pm-post-transition-metals-ore", 12),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
     },
     results =
     {
-      { "pm-lorándite", 6 },
-      { "sulfur",       2 }
+      PM.product("pm-lorándite", 6),
+      PM.product("sulfur", 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -62,26 +63,17 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { "pm-gold-ore",  8 },
-      { "copper-ore",   8 },
-      { "pm-zinc-ore",  8 },
-      { "pm-lorándite", 12 },
-      { type = "fluid", name = "sulfuric-acid", amount = 12 }
+      PM.ingredient("pm-gold-ore", 8),
+      PM.ingredient("copper-ore", 8),
+      PM.ingredient("pm-zinc-ore", 8),
+      PM.ingredient("pm-lorándite", 1),
+      PM.ingredient("sulfuric-acid", 12, "fluid")
     },
     results =
     {
-      { "pm-thallium-sulfate", 4 },
-      {
-        name = "pm-arsenic-ore",
-        probability = 0.7,
-        amount_min = 1,
-        amount_max = 4,
-      },
-      {
-        name = "copper-ore",
-        amount_min = 4,
-        amount_max = 7,
-      }
+      PM.product("pm-thallium-sulfate", 4),
+      PM.product_range_chance("pm-arsenic-ore", 1, 4, 0.7),
+      PM.product_range("copper-ore", 4, 7)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -96,17 +88,13 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { "pm-thallium-sulfate",      4 },
-      { "pm-stainless-steel-alloy", 6 }
+      PM.ingredient("pm-thallium-sulfate", 4),
+      PM.ingredient("pm-stainless-steel-alloy", 6)
     },
     results =
     {
-      { "pm-thallium-ore", 2 },
-      {
-        name = "sulfur",
-        amount_min = 2,
-        amount_max = 4
-      }
+      PM.product("pm-thallium-ore", 2),
+      PM.product_range("sulfur", 2, 4)
     }
   } --[[@as data.RecipePrototype]],
 

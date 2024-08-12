@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "item",
@@ -40,13 +41,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",        name = "pm-seawater", amount = 20 },
-      { "pm-calcium-chloride", 5 },
-      { "pm-sea-salt",         5 }
+      PM.ingredient("pm-seawater", 20, "fluid"),
+      PM.ingredient("pm-calcium-chloride", 5),
+      PM.ingredient("pm-sea-salt", 5)
     },
     results =
     {
-      { type = "fluid", name = "pm-brine", amount = 20 }
+      PM.product("pm-brine", 20, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -61,12 +62,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-seawater", amount = 20 },
-      { "pm-sea-salt",  15 }
+      PM.ingredient("pm-seawater", 20, "fluid"),
+      PM.ingredient("pm-sea-salt", 15)
     },
     results =
     {
-      { type = "fluid", name = "pm-brine", amount = 20 }
+      PM.product("pm-brine", 20, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -80,16 +81,12 @@ data:extend({
     main_product = "pm-low-brine",
     ingredients =
     {
-      { type = "fluid", name = "pm-brine", amount = 150 }
+      PM.ingredient("pm-brine", 150, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-low-brine", amount = 150 },
-      {
-        name = "pm-lithium-chloride",
-        amount_min = 2,
-        amount_max = 4,
-      }
+      PM.product("pm-low-brine", 150, "fluid"),
+      PM.product_range("pm-lithium-chloride", 2, 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -103,16 +100,12 @@ data:extend({
     main_product = "pm-med-brine",
     ingredients =
     {
-      { type = "fluid", name = "pm-low-brine", amount = 150 }
+      PM.ingredient("pm-low-brine", 150, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-med-brine", amount = 150 },
-      {
-        name = "pm-lithium-chloride",
-        amount_min = 4,
-        amount_max = 6,
-      }
+      PM.product("pm-med-brine", 150, "fluid"),
+      PM.product_range("pm-lithium-chloride", 4, 6)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -126,16 +119,12 @@ data:extend({
     main_product = "pm-high-brine",
     ingredients =
     {
-      { type = "fluid", name = "pm-med-brine", amount = 150 }
+      PM.ingredient("pm-med-brine", 150, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-high-brine", amount = 100 },
-      {
-        name = "pm-lithium-chloride",
-        amount_min = 8,
-        amount_max = 12,
-      }
+      PM.product("pm-high-brine", 100, "fluid"),
+      PM.product_range("pm-lithium-chloride", 8, 12)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -149,17 +138,12 @@ data:extend({
     main_product = "pm-lithium-chloride",
     ingredients =
     {
-      { type = "fluid", name = "pm-high-brine", amount = 100 }
+      PM.ingredient("pm-high-brine", 100, "fluid")
     },
     results =
     {
-      --{
-      --    type = "fluid",
-      --    name = "pm-low-brine",
-      --    amount_min = 10,
-      --    amount_max = 30
-      --},
-      { "pm-lithium-chloride", 12 }
+      -- PM.product_range("pm-low-brine", 10, 30, "fluid"),
+      PM.product("pm-lithium-chloride", 12)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -173,18 +157,13 @@ data:extend({
     main_product = "pm-lithium-ore",
     ingredients =
     {
-      { "pm-lithium-chloride", 5 },
-      { type = "fluid",        name = "steam", amount = 10 }
+      PM.ingredient("pm-lithium-chloride", 5),
+      PM.ingredient("steam", 10, "fluid")
     },
     results =
     {
-      { "pm-lithium-ore", 5 },
-      {
-        type = "fluid",
-        name = "pm-chlorine",
-        amount_min = 3,
-        amount_max = 5
-      }
+      PM.product("pm-lithium-ore", 5),
+      PM.product_range("pm-chlorine", 3, 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -198,19 +177,14 @@ data:extend({
     main_product = "pm-lithium-hydroxide",
     ingredients =
     {
-      { "pm-lithium-ore", 5 },
-      { "sulfur",         6 },
-      { "pm-calcite",     3 }
+      PM.ingredient("pm-lithium-ore", 5),
+      PM.ingredient("sulfur", 6),
+      PM.ingredient("pm-calcite", 3)
     },
     results =
     {
-      { type = "fluid", name = "pm-lithium-hydroxide", amount = 10 },
-      {
-        name = "pm-calcium-sulfate",
-        amount_min = 1,
-        amount_max = 3,
-        probability = 0.5
-      }
+      PM.product("pm-lithium-hydroxide", 10, "fluid"),
+      PM.product_range_chance("pm-calcium-sulfate", 1, 3, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -223,12 +197,12 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "fluid", name = "pm-lithium-hydroxide", amount = 10 },
-      { type = "fluid", name = "pm-bromine",           amount = 10 }
+      PM.ingredient("pm-lithium-hydroxide", 10, "fluid"),
+      PM.ingredient("pm-bromine", 10, "fluid")
     },
     results =
     {
-      { "pm-lithium-bromide", 5 }
+      PM.product("pm-lithium-bromide", 5)
     }
   } --[[@as data.RecipePrototype]]
 })

@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for all recipes related to batteries
 
 data:extend({
@@ -11,8 +12,8 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { "pm-copper-disc", 8 },
-      { "pm-zinc-disc",   8 },
+      PM.ingredient("pm-copper-disc", 8),
+      PM.ingredient("pm-zinc-disc", 8),
     },
     result = "pm-uncharged-voltatic-pile"
   },
@@ -28,20 +29,12 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      { "pm-uncharged-voltatic-pile", 1 }
+      PM.ingredient("pm-uncharged-voltatic-pile", 1)
     },
     results =
     {
-      {
-        name = "pm-charged-voltatic-pile",
-        probability = 0.8,
-        amount = 1
-      },
-      {
-        name = "pm-broken-voltatic-pile",
-        probability = 0.25,
-        amount = 1
-      }
+      PM.product_chance("pm-charged-voltatic-pile", 1, 0.8),
+      PM.product_chance("pm-broken-voltatic-pile", 1, 0.25)
     }
   },
   {
@@ -53,9 +46,9 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "pm-broken-voltatic-pile", 1 },
-      { "pm-copper-disc",          4 },
-      { "pm-zinc-disc",            4 },
+      PM.ingredient("pm-broken-voltatic-pile", 1),
+      PM.ingredient("pm-copper-disc", 4),
+      PM.ingredient("pm-zinc-disc", 4),
     },
     result = "pm-uncharged-voltatic-pile"
   },
@@ -69,11 +62,11 @@ data:extend({
     order = "c",
     ingredients =
     {
-      { "pm-copper-disc", 1 }
+      PM.ingredient("pm-copper-disc", 1)
     },
     results =
     {
-      { "pm-copper-anode", 1 }
+      PM.product("pm-copper-anode", 1)
     }
   },
   {
@@ -86,11 +79,11 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { "copper-plate", 1 }
+      PM.ingredient("copper-plate", 1)
     },
     results =
     {
-      { "pm-copper-disc", 4 }
+      PM.product("pm-copper-disc", 4)
     }
   },
   {
@@ -103,11 +96,11 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { "pm-zinc-plate", 1 }
+      PM.ingredient("pm-zinc-plate", 1)
     },
     results =
     {
-      { "pm-zinc-disc", 4 }
+      PM.product("pm-zinc-disc", 4)
     }
   },
   {
@@ -120,11 +113,11 @@ data:extend({
     order = "d",
     ingredients =
     {
-      { "pm-zinc-disc", 1 }
+      PM.ingredient("pm-zinc-disc", 1)
     },
     results =
     {
-      { "pm-zinc-cathode", 1 }
+      PM.product("pm-zinc-cathode", 1)
     }
   },
   {
@@ -137,12 +130,12 @@ data:extend({
     order = "i",
     ingredients =
     {
-      { "pm-vanadium-ore", 4 },
-      { type = "fluid",    name = "pm-oxygen-gas", amount = 2 }
+      PM.ingredient("pm-vanadium-ore", 4),
+      PM.ingredient("pm-oxygen-gas", 2, "fluid")
     },
     results =
     {
-      { "pm-vanadium-oxide", 1 }
+      PM.product("pm-vanadium-oxide", 1)
     }
   },
   {
@@ -155,12 +148,12 @@ data:extend({
     order = "j",
     ingredients =
     {
-      { "pm-vanadium-oxide", 2 },
-      { type = "fluid",      name = "water", amount = 50 }
+      PM.ingredient("pm-vanadium-oxide", 2),
+      PM.ingredient("water", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-vanadium-oxide-positive-solution", amount = 60 }
+      PM.product("pm-vanadium-oxide-positive-solution", 60, "fluid")
     }
   },
   {
@@ -173,12 +166,12 @@ data:extend({
     order = "k",
     ingredients =
     {
-      { "pm-vanadium-oxide", 2 },
-      { type = "fluid",      name = "pm-acidic-water", amount = 50 }
+      PM.ingredient("pm-vanadium-oxide", 2),
+      PM.ingredient("pm-acidic-water", 50, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-vanadium-oxide-negative-solution", amount = 60 }
+      PM.product("pm-vanadium-oxide-negative-solution", 60, "fluid")
     }
   },
   {
@@ -190,13 +183,13 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { "pm-aluminium-plate",      2 },
-      { "pm-nickel-plate",         2 },
-      { "pm-polyethylene-plastic", 4 }
+      PM.ingredient("pm-aluminium-plate", 2),
+      PM.ingredient("pm-nickel-plate", 2),
+      PM.ingredient("pm-polyethylene-plastic", 4)
     },
     results =
     {
-      { "pm-battery-casing", 1 }
+      PM.product("pm-battery-casing", 1)
     }
   },
   {
@@ -209,15 +202,15 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-battery-casing", 1 },
-      { type = "fluid",      name = "pm-vanadium-oxide-negative-solution", amount = 20 },
-      { type = "fluid",      name = "pm-vanadium-oxide-positive-solution", amount = 20 },
-      { "pm-copper-anode",   2 },
-      { "pm-zinc-cathode",   2 }
+      PM.ingredient("pm-battery-casing", 1),
+      PM.ingredient("pm-vanadium-oxide-negative-solution", 20, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-positive-solution", 20, "fluid"),
+      PM.ingredient("pm-copper-anode", 2),
+      PM.ingredient("pm-zinc-cathode", 2)
     },
     results =
     {
-      { "pm-vanadium-redox-battery", 1 }
+      PM.product("pm-vanadium-redox-battery", 1)
     }
   },
   {
@@ -230,12 +223,12 @@ data:extend({
     order = "m",
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 10 },
-      { type = "fluid", name = "pm-ethylene-gas",       amount = 10 },
+      PM.ingredient("pm-carbon-dioxide-gas", 10, "fluid"),
+      PM.ingredient("pm-ethylene-gas", 10, "fluid"),
     },
     results =
     {
-      { type = "fluid", name = "pm-ethylene-carbonate", amount = 10 }
+      PM.product("pm-ethylene-carbonate", 10, "fluid")
     }
   },
   {
@@ -248,14 +241,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-battery-casing", 1 },
-      { type = "fluid",      name = "pm-ethylene-carbonate", amount = 20 },
-      { "pm-cobalt-plate",   4 },
-      { "pm-lithium-ore",    6 }
+      PM.ingredient("pm-battery-casing", 1),
+      PM.ingredient("pm-ethylene-carbonate", 20, "fluid"),
+      PM.ingredient("pm-cobalt-plate", 4),
+      PM.ingredient("pm-lithium-ore", 6)
     },
     results =
     {
-      { "pm-lithium-ion-battery", 1 }
+      PM.product("pm-lithium-ion-battery", 1)
     }
   },
   {
@@ -268,14 +261,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-battery-casing", 2 },
-      { type = "fluid",      name = "pm-ethylene-carbonate", amount = 20 },
-      { "sulfur",            6 },
-      { "pm-lithium-ore",    8 }
+      PM.ingredient("pm-battery-casing", 2),
+      PM.ingredient("pm-ethylene-carbonate", 20, "fluid"),
+      PM.ingredient("sulfur", 6),
+      PM.ingredient("pm-lithium-ore", 8)
     },
     results =
     {
-      { "pm-lithium-sulfur-battery", 1 }
+      PM.product("pm-lithium-sulfur-battery", 1)
     }
   },
 
@@ -289,11 +282,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-vanadium-redox-battery", 1 }
+      PM.ingredient("pm-vanadium-redox-battery", 1)
     },
     results =
     {
-      { "pm-charged-vanadium-redox-battery", 1 }
+      PM.product("pm-charged-vanadium-redox-battery", 1)
     }
   },
   {
@@ -306,11 +299,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-lithium-sulfur-battery", 1 }
+      PM.ingredient("pm-lithium-sulfur-battery", 1)
     },
     results =
     {
-      { "pm-charged-lithium-sulfur-battery", 1 }
+      PM.product("pm-charged-lithium-sulfur-battery", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

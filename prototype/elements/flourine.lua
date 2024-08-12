@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -45,20 +46,15 @@ data:extend({
     main_product = "pm-flourite",
     ingredients =
     {
-      { "stone",                         20 },
-      { "pm-calcium-ore",                10 },
-      { type = "fluid",                  name = "water", amount = 60 },
-      { "pm-post-transition-metals-ore", 5 }
+      PM.ingredient("stone", 20),
+      PM.ingredient("pm-calcium-ore", 10),
+      PM.ingredient("water", 60, "fluid"),
+      PM.ingredient("pm-post-transition-metals-ore", 5)
     },
     results =
     {
-      { "pm-flourite", 8 },
-      {
-        name = "stone",
-        probability = 0.8,
-        amount_min = 10,
-        amount_max = 14 + 1,
-      }
+      PM.product("pm-flourite", 8),
+      PM.product_range_chance("stone", 10, 15, 0.8),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -73,13 +69,13 @@ data:extend({
     main_product = "pm-hydrogen-flouride",
     ingredients =
     {
-      { "pm-flourite",  2 },
-      { type = "fluid", name = "sulfuric-acid", amount = 4 + 1 }
+      PM.ingredient("pm-flourite", 2),
+      PM.ingredient("sulfuric-acid", 5, "fluid")
     },
     results =
     {
-      { name = "pm-calcium-sulfate", amount_min = 4,                amount_max = 8 },
-      { type = "fluid",              name = "pm-hydrogen-flouride", amount = 8 }
+      PM.product_range("pm-calcium-sulfate", 4, 8),
+      PM.product("pm-hydrogen-flouride", 8, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -93,14 +89,14 @@ data:extend({
     main_product = "pm-hydroflouric-acid",
     ingredients =
     {
-      { type = "fluid",          name = "pm-hydrogen-flouride", amount = 8 },
-      { "pm-palladium-catalyst", 2 },
-      { type = "fluid",          name = "pm-acidic-water",      amount = 10 }
+      PM.ingredient("pm-hydrogen-flouride", 8, "fluid"),
+      PM.ingredient("pm-palladium-catalyst", 2),
+      PM.ingredient("pm-acidic-water", 10, "fluid")
     },
     results =
     {
-      { type = "fluid",                 name = "pm-hydroflouric-acid", amount = 20 },
-      { name = "pm-catalyst-container", amount_min = 1,                amount_max = 2 }
+      PM.product("pm-hydroflouric-acid", 20, "fluid"),
+      PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -114,12 +110,12 @@ data:extend({
     main_product = "pm-flourine",
     ingredients =
     {
-      { type = "fluid", name = "pm-hydroflouric-acid", amount = 10 },
+      PM.ingredient("pm-hydroflouric-acid", 10, "fluid"),
     },
     results =
     {
-      { "pm-flourine",  3 },
-      { type = "fluid", name = "pm-sulfur-dioxide", amount_min = 2, amount_max = 4 + 1 }
+      PM.product("pm-flourine", 3),
+      PM.product_range("pm-sulfur-dioxide", 2, 5, "fluid")
     },
   } --[[@as data.RecipePrototype]],
 
@@ -134,14 +130,14 @@ data:extend({
     main_product = "pm-flourite",
     ingredients =
     {
-      { "stone",                         20 / 2 },
-      { "pm-calcium-ore",                10 / 2 },
-      { "pm-post-transition-metals-ore", 5 },
-      { type = "fluid",                  name = "pm-liquid-mercury", amount = 60 / 2 }
+      PM.ingredient("stone", 10),
+      PM.ingredient("pm-calcium-ore", 5),
+      PM.ingredient("pm-post-transition-metals-ore", 5),
+      PM.ingredient("pm-liquid-mercury", 30, "fluid")
     },
     results =
     {
-      { "pm-flourite", 16 },
+      PM.product("pm-flourite", 16),
     }
   } --[[@as data.RecipePrototype]],
 })

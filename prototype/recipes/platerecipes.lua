@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for all smelting recipes, e.g plates, glass, etc
 
 data:extend({
@@ -8,7 +9,7 @@ data:extend({
     order = "e",
     category = "smelting",
     energy_required = 3.2,
-    ingredients = { { "pm-nickel-ore", 1 } },
+    ingredients = { PM.ingredient("pm-nickel-ore", 1) },
     result = "pm-nickel-plate"
   },
   {
@@ -18,7 +19,7 @@ data:extend({
     order = "e",
     category = "smelting",
     energy_required = 3.2,
-    ingredients = { { "pm-zinc-ore", 1 } },
+    ingredients = { PM.ingredient("pm-zinc-ore", 1) },
     result = "pm-zinc-plate"
   },
   {
@@ -29,7 +30,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-manganese-ore", 1 } },
+    ingredients = { PM.ingredient("pm-manganese-ore", 1) },
     result = "pm-manganese-plate"
   },
   {
@@ -40,7 +41,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-gold-ore", 1 } },
+    ingredients = { PM.ingredient("pm-gold-ore", 1) },
     result = "pm-gold-plate"
   },
   {
@@ -51,7 +52,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-silver-ore", 1 } },
+    ingredients = { PM.ingredient("pm-silver-ore", 1) },
     result = "pm-silver-plate"
   },
   {
@@ -62,7 +63,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-titanium-ore", 1 } },
+    ingredients = { PM.ingredient("pm-titanium-ore", 1) },
     result = "pm-titanium-plate"
   },
   {
@@ -73,7 +74,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-tungsten-ore", 1 } },
+    ingredients = { PM.ingredient("pm-tungsten-ore", 1) },
     result = "pm-tungsten-plate"
   },
   {
@@ -83,7 +84,7 @@ data:extend({
     subgroup = "pm-glassing",
     order = "b",
     energy_required = 3.2,
-    ingredients = { { "pm-sand", 4 } },
+    ingredients = { PM.ingredient("pm-sand", 4) },
     result = "pm-glass-pane"
   },
 
@@ -95,7 +96,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-tin-ore", 1 } },
+    ingredients = { PM.ingredient("pm-tin-ore", 1) },
     result = "pm-tin-plate"
   },
   {
@@ -105,7 +106,7 @@ data:extend({
     order = "c",
     category = "smelting",
     energy_required = 3.2,
-    ingredients = { { "pm-aluminium-ore", 1 } },
+    ingredients = { PM.ingredient("pm-aluminium-ore", 1) },
     result = "pm-aluminium-plate"
   },
   {
@@ -116,7 +117,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-cadnium-ore", 1 } },
+    ingredients = { PM.ingredient("pm-cadnium-ore", 1) },
     result = "pm-cadnium-plate"
   },
   {
@@ -127,7 +128,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-palladium-ore", 1 } },
+    ingredients = { PM.ingredient("pm-palladium-ore", 1) },
     result = "pm-palladium-plate"
   },
   {
@@ -138,7 +139,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-lead-ore", 1 } },
+    ingredients = { PM.ingredient("pm-lead-ore", 1) },
     result = "pm-lead-plate"
   },
   {
@@ -149,7 +150,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-thallium-ore", 1 } },
+    ingredients = { PM.ingredient("pm-thallium-ore", 1) },
     result = "pm-thallium-plate"
   },
   {
@@ -160,7 +161,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-indium-ore", 1 } },
+    ingredients = { PM.ingredient("pm-indium-ore", 1) },
     result = "pm-indium-plate"
   },
   {
@@ -171,7 +172,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-platinum-ore", 1 } },
+    ingredients = { PM.ingredient("pm-platinum-ore", 1) },
     result = "pm-platinum-plate"
   },
   {
@@ -182,7 +183,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
-    ingredients = { { "pm-cobalt-ore", 1 } },
+    ingredients = { PM.ingredient("pm-cobalt-ore", 1) },
     result = "pm-cobalt-plate"
   },
   {
@@ -193,7 +194,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     --enabled = false,
-    ingredients = { { "pm-tellurium-ore", 1 } },
+    ingredients = { PM.ingredient("pm-tellurium-ore", 1) },
     result = "pm-tellurium-plate"
   },
 
@@ -209,8 +210,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "copper-plate",  1 },
-      { "pm-zinc-plate", 1 },
+      PM.ingredient("copper-plate", 1),
+      PM.ingredient("pm-zinc-plate", 1),
     },
     result = "pm-brass-plate",
     result_count = 2
@@ -225,12 +226,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "steel-plate",        2 },
-      { "pm-manganese-plate", 3 },
+      PM.ingredient("steel-plate", 2),
+      PM.ingredient("pm-manganese-plate", 3),
     },
     results =
     {
-      { "pm-stainless-steel-alloy", 2 }
+      PM.product("pm-stainless-steel-alloy", 2)
     }
   },
   {
@@ -243,13 +244,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "steel-plate",        3 },
-      { "pm-manganese-plate", 4 },
-      { "pm-chrominum-ore",   4 }
+      PM.ingredient("steel-plate", 3),
+      PM.ingredient("pm-manganese-plate", 4),
+      PM.ingredient("pm-chrominum-ore", 4)
     },
     results =
     {
-      { "pm-stainless-steel-alloy", 5 }
+      PM.product("pm-stainless-steel-alloy", 5)
     }
   },
   {
@@ -262,13 +263,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "iron-plate",         4 },
-      { "pm-manganese-plate", 4 },
-      { "pm-vanadium-oxide",  4 }
+      PM.ingredient("iron-plate", 4),
+      PM.ingredient("pm-manganese-plate", 4),
+      PM.ingredient("pm-vanadium-oxide", 4)
     },
     results =
     {
-      { "steel-plate", 4 }
+      PM.product("steel-plate", 4)
     }
   },
   {
@@ -281,13 +282,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "iron-plate",         4 },
-      { "pm-chrominum-ore",   3 },
-      { "pm-aluminium-plate", 2 }
+      PM.ingredient("iron-plate", 4),
+      PM.ingredient("pm-chrominum-ore", 3),
+      PM.ingredient("pm-aluminium-plate", 2)
     },
     results =
     {
-      { "pm-kasethal-plate", 2 }
+      PM.product("pm-kasethal-plate", 2)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

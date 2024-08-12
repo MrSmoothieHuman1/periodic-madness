@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
 
@@ -13,13 +14,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { type = "fluid", name = "pm-seawater", amount = 150 },
+      PM.ingredient("pm-seawater", 150, "fluid"),
     },
     results =
     {
-      { name = "sulfur",      amount_min = 1, amount_max = 2 },
-      { type = "fluid",       name = "water", amount = 24 + 1 },
-      { name = "pm-sea-salt", amount = 2 }
+      PM.product_range("sulfur", 1, 2),
+      PM.product("water", 25, "fluid"),
+      PM.product("pm-sea-salt", 2)
     }
   },
   {
@@ -33,7 +34,7 @@ data:extend({
     energy_required = 0.5,
     ingredients =
     {
-      { type = "fluid", name = "water", amount = 25 }
+      PM.ingredient("water", 25, "fluid")
     },
     results = {}
   },
@@ -59,7 +60,7 @@ data:extend({
     energy_required = 0.325,
     ingredients =
     {
-      { type = "fluid", name = "pm-oxygen-gas", amount = 10 },
+      PM.ingredient("pm-oxygen-gas", 10, "fluid"),
     },
     results = {}
   },
