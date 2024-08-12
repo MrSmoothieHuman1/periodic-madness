@@ -8,10 +8,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/bio-laboratory.png",
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "pm-bio-lab"
-      }
+      PM.unlock_recipe("pm-bio-lab")
     },
     prerequisites = { "pm-bio-modules", "chemical-science-pack" },
     unit =
@@ -19,10 +16,10 @@ data:extend({
       count = 175,
       ingredients =
       {
-        { "automation-science-pack",                            1},
-        { "logistic-science-pack",                              1},
-        { "pm-advanced-advanced-transition-metal-science-pack", 1},
-        { "chemical-science-pack",                              1}
+        PM.ingredient("automation-science-pack", 1),
+        PM.ingredient("logistic-science-pack", 1),
+        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+        PM.ingredient("chemical-science-pack", 1)
       },
       time = 45
     }
@@ -36,14 +33,8 @@ data:extend({
     use_icon_overlay_constant = true,
     effects =
     {
-      {
-        type = "character-reach-distance",
-        modifier = 1
-      },
-      {
-        type = "character-running-speed",
-        modifier = 0.1
-      }
+      PM.modify("character-reach-distance", 1),
+      PM.modify("character-running-speed", 0.1)
     },
     prerequisites = { "pm-bio-laboratory" },
     unit =
@@ -51,7 +42,7 @@ data:extend({
       count = 100,
       ingredients =
       {
-        { "pm-agility-bio-module", 1},
+        PM.ingredient("pm-agility-bio-module", 1),
       },
       time = 30
     }
@@ -65,14 +56,8 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-reach-distance",
-        modifier = 1
-      },
-      {
-        type = "character-running-speed",
-        modifier = 0.1
-      }
+      PM.modify("character-reach-distance", 1),
+      PM.modify("character-running-speed", 0.1)
     },
     prerequisites = { "pm-bio-module-agility-1" },
     unit =
@@ -80,7 +65,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        { "pm-agility-bio-module", 1},
+        PM.ingredient("pm-agility-bio-module", 1),
       },
       time = 60
     }
@@ -94,14 +79,8 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-reach-distance",
-        modifier = 2
-      },
-      {
-        type = "character-running-speed",
-        modifier = 0.2
-      }
+      PM.modify("character-reach-distance", 2),
+      PM.modify("character-running-speed", 0.2)
     },
     prerequisites = { "pm-bio-module-agility-2" },
     unit =
@@ -109,7 +88,7 @@ data:extend({
       count = 700,
       ingredients =
       {
-        { "pm-agility-bio-module", 1},
+        PM.ingredient("pm-agility-bio-module", 1),
       },
       time = 120
     }
@@ -123,14 +102,8 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-reach-distance",
-        modifier = 2
-      },
-      {
-        type = "character-running-speed",
-        modifier = 0.2
-      }
+      PM.modify("character-reach-distance", 2),
+      PM.modify("character-running-speed", 0.2)
     },
     prerequisites = { "pm-bio-module-agility-3" },
     unit =
@@ -138,7 +111,7 @@ data:extend({
       count = 1400,
       ingredients =
       {
-        { "pm-agility-bio-module", 1},
+        PM.ingredient("pm-agility-bio-module", 1),
       },
       time = 240
     }
@@ -152,14 +125,8 @@ data:extend({
     use_icon_overlay_constant = true,
     effects =
     {
-      {
-        type = "character-mining-speed",
-        modifier = 0.1
-      },
-      {
-        type = "character-inventory-slots-bonus",
-        modifier = 10
-      }
+      PM.modify("character-mining-speed", 0.1),
+      PM.modify("character-inventory-slots-bonus", 10)
     },
     prerequisites = { "pm-bio-laboratory" },
     unit =
@@ -167,7 +134,7 @@ data:extend({
       count = 100,
       ingredients =
       {
-        { "pm-strength-bio-module", 1},
+        PM.ingredient("pm-strength-bio-module", 1),
       },
       time = 30
     }
@@ -181,14 +148,8 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-mining-speed",
-        modifier = 0.1
-      },
-      {
-        type = "character-inventory-slots-bonus",
-        modifier = 10
-      }
+      PM.modify("character-mining-speed", 0.1),
+      PM.modify("character-inventory-slots-bonus", 10)
     },
     prerequisites = { "pm-bio-module-strength-1" },
     unit =
@@ -196,7 +157,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        { "pm-strength-bio-module", 1},
+        PM.ingredient("pm-strength-bio-module", 1),
       },
       time = 60
     }
@@ -210,14 +171,8 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-mining-speed",
-        modifier = 0.2
-      },
-      {
-        type = "character-inventory-slots-bonus",
-        modifier = 12
-      }
+      PM.modify("character-mining-speed", 0.2),
+      PM.modify("character-inventory-slots-bonus", 12)
     },
     prerequisites = { "pm-bio-module-strength-2" },
     unit =
@@ -225,7 +180,7 @@ data:extend({
       count = 700,
       ingredients =
       {
-        { "pm-strength-bio-module", 1},
+        PM.ingredient("pm-strength-bio-module", 1),
       },
       time = 120
     }
@@ -239,14 +194,8 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-mining-speed",
-        modifier = 0.2
-      },
-      {
-        type = "character-inventory-slots-bonus",
-        modifier = 12
-      }
+      PM.modify("character-mining-speed", 0.2),
+      PM.modify("character-inventory-slots-bonus", 12)
     },
     prerequisites = { "pm-bio-module-strength-3" },
     unit =
@@ -254,7 +203,7 @@ data:extend({
       count = 1400,
       ingredients =
       {
-        { "pm-strength-bio-module", 1},
+        PM.ingredient("pm-strength-bio-module", 1),
       },
       time = 240
     }
@@ -268,10 +217,7 @@ data:extend({
     use_icon_overlay_constant = true,
     effects =
     {
-      {
-        type = "character-health-bonus",
-        modifier = 25
-      },
+      PM.modify("character-health-bonus", 25),
     },
     prerequisites = { "pm-bio-laboratory" },
     unit =
@@ -279,7 +225,7 @@ data:extend({
       count = 100,
       ingredients =
       {
-        { "pm-health-bio-module", 1},
+        PM.ingredient("pm-health-bio-module", 1),
       },
       time = 30
     }
@@ -293,10 +239,7 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-health-bonus",
-        modifier = 25
-      },
+      PM.modify("character-health-bonus", 25),
     },
     prerequisites = { "pm-bio-module-health-1" },
     unit =
@@ -304,7 +247,7 @@ data:extend({
       count = 300,
       ingredients =
       {
-        { "pm-health-bio-module", 1},
+        PM.ingredient("pm-health-bio-module", 1),
       },
       time = 60
     }
@@ -318,10 +261,7 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-health-bonus",
-        modifier = 50
-      },
+      PM.modify("character-health-bonus", 50),
     },
     prerequisites = { "pm-bio-module-health-2" },
     unit =
@@ -329,7 +269,7 @@ data:extend({
       count = 700,
       ingredients =
       {
-        { "pm-health-bio-module", 1},
+        PM.ingredient("pm-health-bio-module", 1),
       },
       time = 120
     }
@@ -343,10 +283,7 @@ data:extend({
     upgrade = true,
     effects =
     {
-      {
-        type = "character-health-bonus",
-        modifier = 50
-      },
+      PM.modify("character-health-bonus", 50),
     },
     prerequisites = { "pm-bio-module-health-3" },
     unit =
@@ -354,7 +291,7 @@ data:extend({
       count = 1400,
       ingredients =
       {
-        { "pm-health-bio-module", 1},
+        PM.ingredient("pm-health-bio-module", 1),
       },
       time = 240
     }
