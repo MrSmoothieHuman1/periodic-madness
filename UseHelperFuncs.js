@@ -4,16 +4,17 @@ const fs = require('fs').promises
  * @type [RegExp, string][]
  */
 const regex_and_replace_array = [
+  //MARK: Ingredients
   [ // Ingredient Shorthand
     /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?<name>"[^"]*")\s*,\s*(?<amount>\d+)\s*}/g,
     "PM.ingredient($<name>, $<amount>)"
   ],
   [ // Ingredient Item
-    /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.ingredient($<name>, $<amount>)'
   ],
   [ // Ingredient Fluid
-    /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.ingredient($<name>, $<amount>, "fluid")'
   ],
 
@@ -23,74 +24,74 @@ const regex_and_replace_array = [
     'PM.product($<name>, $<amount>)'
   ],
   [ // Product Item
-    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product($<name>, $<amount>)'
   ],
   [ // Product Item Range
-    /{\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_range($<name>, $<amount_min>, $<amount_max>)'
   ],
   [ // Product Item Chance
-    /{\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_chance($<name>, $<amount>, $<probability>)'
   ],
   [ // Product Item Rance Chance
-    /{\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>)'
   ],
 
   //MARK: Product Fluids
   [ // Product Fluid
-    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product($<name>, $<amount>, "fluid")'
   ],
   [ // Product Fluid Range
-    /{\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_range($<name>, $<amount_min>, $<amount_max>, "fluid")'
   ],
   [ // Product Fluid Chance
-    /{\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_chance($<name>, $<amount>, $<probability>, "fluid")'
   ],
   [ // Product Fluid Range Chance
-    /{\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount = \d+(?:.\d+)?)(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, "fluid")'
   ],
 
 
   //MARK: Catalyst Items
   [ // Catalyst Item
-    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a($<name>, $<amount>, $<catalyst_amount>)'
   ],
   [ // Catalyst Item Range
-    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a_range($<name>, $<amount_min>, $<amount_max>, $<catalyst_amount>)'
   ],
   [ // Catalyst Item Chance
-    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a_chance($<name>, $<amount>, $<probability>, $<catalyst_amount>)'
   ],
   [ // Catalyst Item Rance Chance
-    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, $<catalyst_amount>)'
   ],
 
   //MARK: Catalyst Fluids
   [ // Catalyst Fluid
-    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a($<name>, $<amount>, $<catalyst_amount>, "fluid")'
   ],
   [ // Catalyst Fluid Range
-    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?![^{}]*probability = \d+(?:.\d+)?)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a_range($<name>, $<amount_min>, $<amount_max>, $<catalyst_amount>, "fluid")'
   ],
   [ // Catalyst Fluid Chance
-    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a_chance($<name>, $<amount>, $<probability>, $<catalyst_amount>, "fluid")'
   ],
   [ // Catalyst Fluid Range Chance
-    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:.\d+)?))[^{}]*}/g,
+    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, $<catalyst_amount>, "fluid")'
   ],
 
