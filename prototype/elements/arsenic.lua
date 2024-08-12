@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -10,12 +11,12 @@ data:extend({
     order = "a",
     ingredients = 
     {
-      {"pm-metalloid-ore", 16},
-      {type = "fluid", name = "pm-chromic-acid", amount = 20}
+      PM.ingredient("pm-metalloid-ore", 16), --yipee
+      PM.ingredient("pm-chromic-acid", 20, "fluid")
     },
     results = 
     {
-      {"pm-arsenopyrite", 4}
+      PM.product("pm-arsenopyrite", 4)
     }
   },
   {
@@ -28,22 +29,14 @@ data:extend({
     order = "b",
     ingredients = 
     {
-      {"pm-arsenopyrite", 3},
-      {type = "fluid", name = "pm-oxygen-gas", amount = 25},
-      {"pm-vanadium-oxide-catalyst", 2}
+      PM.ingredient("pm-arsenopyrite", 3),
+      PM.ingredient("pm-oxygen-gas", 20, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 2)
     },
     results = 
     {
-      {
-        name = "pm-impure-arsenic",
-        amount_min = 2,
-        amount__max = 6
-      },
-      {
-        name = "pm-catalyst-container",
-        amount_min = 1,
-        amount__max = 2
-      },
+      PM.product_range("pm-impure-arsenic", 2, 6),
+      PM.product_range("pm-catalyst-container", 1, 2),
     }
   },
   {
@@ -56,22 +49,15 @@ data:extend({
     order = "c",
     ingredients = 
     {
-      {"pm-impure-arsenic", 4},
-      {type = "fluid", name = "pm-molten-lead", amount = 12.5}
+      PM.ingredient("pm-impure-arsenic", 4),
+      PM.ingredient("pm-molten-lead", 5, "fluid"),
     },
     results = 
     {
-      {"pm-arsenic-oxide", 6},
-      {
-        name = "pm-ferrum",
-        amount_min = 2,
-        amount_max = 4
-      },
-      {
-        name = "pm-impure-lead-ore",
-        amount_min = 0,
-        amount_max = 3
-      },
+      PM.product("pm-arseinc-oxide", 6),
+      PM.product_range("pm-ferrum", 2, 4),
+      PM.product_range("pm-impure-lead-ore", 1, 5),
+
     }
   },
   {
@@ -84,19 +70,14 @@ data:extend({
     order = "d",
     ingredients = 
     {
-      {"pm-arsenic-oxide", 3},
-      {"pm-zinc-plate", 12}, --catalyst for hard mode
-      {type = "fluid", name = "pm-hydrochloric-acid", amount = 24}
+      PM.ingredient("pm-arsenic-oxide", 3),
+      PM.ingredient("pm-zinc-plate", 12), --catalyst for hard mode
+      PM.ingredient("pm-hydrochloric-acid", 24, "fluid"),
     },
     results = 
     {
-      {type = "fluid", name = "pm-arsine", amount = 5},
-      {
-        type = "fluid",
-        name = "water",
-        amount_min = 12,
-        amoun_max = 20
-      }
+      PM.product("pm-arsine", 5, "fluid"),
+      PM.product_range("water", 18, 20, "fluid"),
     }
   },
   {
@@ -109,16 +90,12 @@ data:extend({
     order = "e",
     ingredients =
     {
-      {type = "fluid", name = "pm-arsine", amount = 10},
+      PM.ingredient("pm-arsine", 5, "fluid"),
     },
     results = 
     {
-      {
-        name = "pm-arsenic",
-        amount_min = 6,
-        amount_max = 10
-      },
-      {type = "fluid", name = "pm-hydrogen-gas", amount = 30}
+      PM.product_range("pm-arsenic", 6, 10),
+      PM.product("water", 30, "fluid"),
     }
   }
 
