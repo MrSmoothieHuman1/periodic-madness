@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for all recipes related to batteries
 
 data:extend({

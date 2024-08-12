@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for any recipes related to raw ores
 
 data:extend({

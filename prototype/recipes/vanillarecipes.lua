@@ -1,9 +1,13 @@
+local PM = require("__periodic-madness__/library")
 --for all vanilla changed recipes
 local recipes = data.raw.recipe
+---@param recipe data.RecipePrototype
+---@return data.RecipePrototype
 local function sanitize_recipe(recipe)
   local difficulty = recipe.normal or recipe.expensive
   if difficulty then
-    for k, v in pairs(difficulty) do
+    for k, v in pairs(difficulty --[[@as {[string]:any}]]) do
+---@diagnostic disable-next-line: no-unknown
       recipe[k] = v
     end
     recipe.normal, recipe.expensive = nil, nil
@@ -67,7 +71,7 @@ sanitize_recipe(recipes["utility-science-pack"]).ingredients =
 sanitize_recipe(recipes["lab"]).ingredients =
 {
   { "pm-glass-pane",      8 },
-  { "iron-gear-wheel",    4 + 1 },
+  { "iron-gear-wheel",    5 },
   { "pm-basic-framing",   4 },
   { "electronic-circuit", 5 }
 }
@@ -284,7 +288,7 @@ sanitize_recipe(recipes["rocket-fuel"]).ingredients =
 {
   { "solid-fuel",               10 },
   { "pm-stainless-steel-alloy", 4 },
-  { type = "fluid",             name = "pm-fuel-oils", amount = 40 + 10 }
+  { type = "fluid",             name = "pm-fuel-oils", amount = 50 }
 }
 data.raw["recipe"]["rocket-fuel"].category = "crafting-with-fluid"
 
@@ -337,7 +341,7 @@ sanitize_recipe(recipes["logistic-robot"]).ingredients =
 }
 sanitize_recipe(recipes["electric-furnace"]).ingredients =
 {
-  { "advanced-circuit",         4 + 1 }, --basic, i know
+  { "advanced-circuit",         5 }, --basic, i know
   { "pm-heating-plating",       6 },
   { "pm-heavyweight-panelling", 8 },
   { "pm-heavyweight-framing",   6 },
@@ -353,7 +357,7 @@ sanitize_recipe(recipes["exoskeleton-equipment"]).ingredients =
 sanitize_recipe(recipes["solar-panel-equipment"]).ingredients =
 {
   { "pm-solar-cell",          2 },
-  { "pm-lightweight-framing", 4 + 1 },
+  { "pm-lightweight-framing", 5 },
   { "advanced-circuit",       2 },
 }
 sanitize_recipe(recipes["personal-roboport-equipment"]).ingredients =
@@ -362,12 +366,12 @@ sanitize_recipe(recipes["personal-roboport-equipment"]).ingredients =
   { "pm-heavyweight-panelling",  4 },
   { "pm-basic-wiring",           8 },
   { "advanced-circuit",          12 },
-  { "pm-vanadium-redox-battery", 14 + 1 }
+  { "pm-vanadium-redox-battery", 15 }
 }
 sanitize_recipe(recipes["roboport"]).ingredients =
 {
   { "pm-basic-wiring",          20 },
-  { "advanced-circuit",         24 + 1 },
+  { "advanced-circuit",         25 },
   { "pm-heavyweight-framing",   10 },
   { "pm-heavyweight-panelling", 16 },
   { "pm-polyethylene-plastic",  8 }
@@ -375,7 +379,7 @@ sanitize_recipe(recipes["roboport"]).ingredients =
 sanitize_recipe(recipes["accumulator"]).ingredients =
 {
   { "pm-vanadium-redox-battery", 4 },
-  { "pm-basic-wiring",           4 + 1 },
+  { "pm-basic-wiring",           5 },
   { "pm-heavyweight-framing",    8 }
 }
 sanitize_recipe(recipes["engine-unit"]).ingredients =
@@ -417,14 +421,14 @@ sanitize_recipe(recipes["rail-chain-signal"]).ingredients =
 sanitize_recipe(recipes["flamethrower-turret"]).ingredients =
 {
   { "pm-stainless-steel-alloy", 20 },
-  { "pm-fluid-circuit",         14 + 1 },
-  { "engine-unit",              4 + 1 },
+  { "pm-fluid-circuit",         15 },
+  { "engine-unit",              5 },
   { "pm-brass-cog",             10 },
   { "pm-heating-plating",       20 }
 }
 sanitize_recipe(recipes["modular-armor"]).ingredients =
 {
-  { "pm-lightweight-framing",  24 + 1 },
+  { "pm-lightweight-framing",  25 },
   { "pm-tungsten-plate",       10 },
   { "advanced-circuit",        20 },
   { "pm-cadnium-plate",        12 },
@@ -434,7 +438,7 @@ sanitize_recipe(recipes["power-armor"]).ingredients =
 {
   { "processing-unit",          30 },
   { "electric-engine-unit",     20 },
-  { "pm-lightweight-framing",   49 + 1 },
+  { "pm-lightweight-framing",   50 },
   { "pm-stainless-steel-alloy", 20 },
   { "pm-cadnium-plate",         24 },
   { "pm-lead-plate",            12 }
@@ -450,69 +454,69 @@ sanitize_recipe(recipes["speed-module"]).ingredients =
 {
   { "pm-module-case",        1 },
   { "pm-module-speed-light", 1 },
-  { "electronic-circuit",    4 + 1 },
+  { "electronic-circuit",    5 },
   { "pm-cobalt-blue",        5 }
 }
 sanitize_recipe(recipes["productivity-module"]).ingredients =
 {
   { "pm-module-case",               1 },
   { "pm-module-productivity-light", 1 },
-  { "electronic-circuit",           4 + 1 },
+  { "electronic-circuit",           5 },
   { "pm-cadnium-red",               5 }
 }
 sanitize_recipe(recipes["effectivity-module"]).ingredients =
 {
   { "pm-module-case",             1 },
   { "pm-module-efficiency-light", 1 },
-  { "electronic-circuit",         4 + 1 },
+  { "electronic-circuit",         5 },
   { "pm-chrome-green",            5 }
 }
 sanitize_recipe(recipes["speed-module-2"]).ingredients =
 {
   { "pm-module-case",        1 },
   { "pm-module-speed-light", 1 },
-  { "electronic-circuit",    4 + 1 },
-  { "pm-fluid-circuit",      4 + 1 },
+  { "electronic-circuit",    5 },
+  { "pm-fluid-circuit",      5 },
   { "pm-cobalt-blue",        5 }
 }
 sanitize_recipe(recipes["productivity-module-2"]).ingredients =
 {
   { "pm-module-case",               1 },
   { "pm-module-productivity-light", 1 },
-  { "electronic-circuit",           4 + 1 },
-  { "pm-fluid-circuit",             4 + 1 },
+  { "electronic-circuit",           5 },
+  { "pm-fluid-circuit",             5 },
   { "pm-cadnium-red",               5 }
 }
 sanitize_recipe(recipes["effectivity-module-2"]).ingredients =
 {
   { "pm-module-case",             1 },
   { "pm-module-efficiency-light", 1 },
-  { "electronic-circuit",         4 + 1 },
-  { "pm-fluid-circuit",           4 + 1 },
+  { "electronic-circuit",         5 },
+  { "pm-fluid-circuit",           5 },
   { "pm-chrome-green",            5 }
 }
 sanitize_recipe(recipes["speed-module-3"]).ingredients =
 {
   { "pm-module-case",        1 },
   { "pm-module-speed-light", 1 },
-  { "pm-fluid-circuit",      4 + 1 },
-  { "advanced-circuit",      4 + 1 },
+  { "pm-fluid-circuit",      5 },
+  { "advanced-circuit",      5 },
   { "pm-cobalt-blue",        5 }
 }
 sanitize_recipe(recipes["productivity-module-3"]).ingredients =
 {
   { "pm-module-case",               1 },
   { "pm-module-productivity-light", 1 },
-  { "pm-fluid-circuit",             4 + 1 },
-  { "advanced-circuit",             4 + 1 },
+  { "pm-fluid-circuit",             5 },
+  { "advanced-circuit",             5 },
   { "pm-cadnium-red",               5 }
 }
 sanitize_recipe(recipes["effectivity-module-3"]).ingredients =
 {
   { "pm-module-case",             1 },
   { "pm-module-efficiency-light", 1 },
-  { "pm-fluid-circuit",           4 + 1 },
-  { "advanced-circuit",           4 + 1 },
+  { "pm-fluid-circuit",           5 },
+  { "advanced-circuit",           5 },
   { "pm-chrome-green",            5 }
 }
 sanitize_recipe(recipes["processing-unit"]).ingredients =
@@ -628,9 +632,9 @@ data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
   },
   { "uranium-238", 3 }
 }
-data.raw["recipe"]["speed-module-2"].energy_required = 14 + 1
-data.raw["recipe"]["effectivity-module-2"].energy_required = 14 + 1
-data.raw["recipe"]["productivity-module-2"].energy_required = 14 + 1
+data.raw["recipe"]["speed-module-2"].energy_required = 15
+data.raw["recipe"]["effectivity-module-2"].energy_required = 15
+data.raw["recipe"]["productivity-module-2"].energy_required = 15
 data.raw["recipe"]["speed-module-3"].energy_required = 30
 data.raw["recipe"]["effectivity-module-3"].energy_required = 30
 data.raw["recipe"]["productivity-module-3"].energy_required = 30

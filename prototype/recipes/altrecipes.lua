@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for all alternative recipes for items
 
 data:extend({
@@ -368,8 +369,8 @@ data:extend({
     ingredients =
     {
       { "pm-zinc-plate",    10 },
-      { "pm-cadnium-plate", 4 + 1 },
-      { type = "fluid",     name = "pm-molten-iron", amount = 2.4 + 0.1 }
+      { "pm-cadnium-plate", 5 },
+      { type = "fluid",     name = "pm-molten-iron", amount = 2.5 }
     },
     results =
     {
@@ -403,7 +404,7 @@ data:extend({
       {
         name = "sulfur",
         amount_min = 2,
-        amount_max = 4 + 1
+        amount_max = 5
       }
     }
   },
@@ -421,7 +422,7 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      { type = "fluid", name = "pm-pheonlic-resin", amount = 40 + 10 },
+      { type = "fluid", name = "pm-pheonlic-resin", amount = 50 },
     },
     results =
     {

@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for any recipes that relate to byproducts
 
 data:extend({
@@ -97,10 +98,10 @@ data:extend({
     },
     results =
     {
-      { name = "pm-iron-chunk",   probability = 0.4 + 0.1, amount = 4 },
-      { name = "pm-copper-chunk", probability = 0.4 + 0.1, amount = 4 },
-      { name = "pm-nickel-chunk", probability = 0.4 + 0.1, amount = 4 },
-      { name = "pm-zinc-chunk",   probability = 0.4 + 0.1, amount = 4 },
+      { name = "pm-iron-chunk",   probability = 0.5, amount = 4 },
+      { name = "pm-copper-chunk", probability = 0.5, amount = 4 },
+      { name = "pm-nickel-chunk", probability = 0.5, amount = 4 },
+      { name = "pm-zinc-chunk",   probability = 0.5, amount = 4 },
     }
   },
   {

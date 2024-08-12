@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --im so sorry gal-man
 
 data:extend({
@@ -320,7 +321,7 @@ data:extend({
     name = "pm-silver-anti-bacterial-tubing",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/silver-ab-tubing.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-tubing",
     ingredients =
@@ -338,7 +339,7 @@ data:extend({
     name = "pm-copper-anti-bacterial-tubing",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/copper-ab-tubing.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-tubing",
     ingredients =
@@ -356,7 +357,7 @@ data:extend({
     name = "pm-brass-anti-bacterial-tubing",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/brass-ab-tubing.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-tubing",
     ingredients =
@@ -374,7 +375,7 @@ data:extend({
     name = "pm-lead-radiation-resistant-tubing",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/lead-rr-tubing.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-tubing",
     ingredients =
@@ -800,7 +801,7 @@ data:extend({
     name = "pm-silver-anti-bacterial-panelling",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/silver-ab-panelling.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-panelling",
     ingredients =
@@ -818,7 +819,7 @@ data:extend({
     name = "pm-copper-anti-bacterial-panelling",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/copper-ab-panelling.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-panelling",
     ingredients =
@@ -836,7 +837,7 @@ data:extend({
     name = "pm-brass-anti-bacterial-panelling",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/brass-ab-panelling.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-panelling",
     ingredients =
@@ -854,7 +855,7 @@ data:extend({
     name = "pm-lead-radiation-resistant-panelling",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/lead-rr-panelling.png",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     enabled = false,
     subgroup = "pm-multimetal-panelling",
     ingredients =

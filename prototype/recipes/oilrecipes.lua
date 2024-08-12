@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for all recipes related to oil
 
 data:extend({
@@ -110,12 +111,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { type = "fluid",    name = "pm-butene-gas", amount = 10 + 4 + 1 },  --the number between 4 and 6 key isnt working, best i got
+      { type = "fluid",    name = "pm-butene-gas", amount = 15 },  --the number between 4 and 6 key isnt working, best i got
       { "pm-nickel-plate", 3 }
     },
     results =
     {
-      { type = "fluid", name = "pm-butane-gas", amount = 10 + 4 + 1 }
+      { type = "fluid", name = "pm-butane-gas", amount = 15 }
     }
   },
   {
@@ -553,7 +554,7 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      { type = "fluid",     name = "pm-petrol",  amount = 40 + 6 - 1 },
+      { type = "fluid",     name = "pm-petrol",  amount = 45 },
       { type = "fluid",     name = "pm-benzene", amount = 10 },
       { "pm-hydrogen-fuel", 5 }
     },
@@ -579,7 +580,7 @@ data:extend({
     results =
     {
       { type = "fluid", name = "pm-bisphenol-A", amount = 20 },
-      { type = "fluid", name = "pm-chlorine",    amount = 4 + 1 }
+      { type = "fluid", name = "pm-chlorine",    amount = 5 }
     }
   },
   {
@@ -618,7 +619,7 @@ data:extend({
     },
     results =
     {
-      { "pm-polyethylene-plastic", 4 + 1 }
+      { "pm-polyethylene-plastic", 5 }
     }
   },
   {
@@ -627,15 +628,15 @@ data:extend({
     category = "pm-moltening",
     enabled = false,
     energy_required = 1,
-    emissions_multiplier = 1.4 + 0.1,
+    emissions_multiplier = 1.5,
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
-      { type = "fluid", name = "pm-butene-gas", amount = 4 + 1 },
+      { type = "fluid", name = "pm-butene-gas", amount = 5 },
     },
     results =
     {
-      { type = "fluid", name = "pm-carbon-monoxide", amount_min = 2, amount_max = 8 - 2 - 1 }
+      { type = "fluid", name = "pm-carbon-monoxide", amount_min = 2, amount_max = 5 }
     }
   },
 

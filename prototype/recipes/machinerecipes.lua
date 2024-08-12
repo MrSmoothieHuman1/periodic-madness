@@ -1,3 +1,4 @@
+local PM = require("__periodic-madness__/library")
 --for all recipes to make buildings
 
 data:extend({
@@ -603,7 +604,7 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      { "advanced-circuit",         4 + 1 },
+      { "advanced-circuit",         5 },
       { "pm-lead-plate",            6 },
       { "pm-basic-wiring",          10 },
       { "pm-heavyweight-framing",   12 },
@@ -722,7 +723,7 @@ data:extend({
     ingredients =
     {
       { "electric-engine-unit",             4 },
-      { "advanced-circuit",                 4 + 1 },
+      { "advanced-circuit",                 5 },
       { "pm-heavyweight-framing",           16 },
       { "pm-vanadium-redox-battery",        3 },
       { "pm-radiation-resistant-tubing",    4 },

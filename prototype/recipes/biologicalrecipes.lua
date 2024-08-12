@@ -1,23 +1,24 @@
+local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
     type = "recipe",
     name = "pm-basic-wood-growth",
-    energy_required = 44 + 1,
+    energy_required = 45,
     enabled = false,
     category = "pm-greenhousing",
     subgroup = "pm-greenhousing-rnm",
     order = "a",
     ingredients =
     {
-      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 49 + 2 - 1 },
-      { type = "fluid", name = "pm-oxygen-gas",         amount = 24 + 1 },
-      { type = "fluid", name = "water",                 amount = 49 + 2 - 1 },
+      { type = "fluid", name = "pm-carbon-dioxide-gas", amount = 50 },
+      { type = "fluid", name = "pm-oxygen-gas",         amount = 25 },
+      { type = "fluid", name = "water",                 amount = 50 },
       { "wood",         20 }
     },
     results =
     {
-      { "wood", 40 + 10 }
+      { "wood", 50 }
     }
   },
   {
@@ -32,15 +33,15 @@ data:extend({
     order = "b",
     ingredients =
     {
-      { type = "fluid",  name = "pm-carbon-dioxide-gas", amount = 48 + 2 },
+      { type = "fluid",  name = "pm-carbon-dioxide-gas", amount = 50 },
       { type = "fluid",  name = "pm-oxygen-gas",         amount = 12 },
-      { type = "fluid",  name = "water",                 amount = 24 + 1 },
+      { type = "fluid",  name = "water",                 amount = 25 },
       { "wood",          10 },
       { "pm-fertiliser", 1 }
     },
     results =
     {
-      { "wood", 20 * 2 + 2 * 4 + 2 }
+      { "wood", 50 }
     }
 
   },
@@ -50,7 +51,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-fertiliser",
-    energy_required = 4 + 1,
+    energy_required = 5,
     category = "crafting-with-fluid",
     subgroup = "pm-greenhousing-rnm",
     order = "c",
@@ -83,7 +84,7 @@ data:extend({
         icon_size = 64
       }
     },
-    energy_required = 4 + 1,
+    energy_required = 5,
     category = "crafting-with-fluid",
     subgroup = "pm-greenhousing-rnm",
     order = "ca",
@@ -111,12 +112,12 @@ data:extend({
     order = "e",
     ingredients =
     {
-      { "pm-wood-strips", 4 + 1 },
+      { "pm-wood-strips", 5 },
       { type = "fluid",   name = "water", amount = 20 }
     },
     results =
     {
-      { type = "fluid",          name = "pm-cellouse-pulp", amount = 4 + 1 },
+      { type = "fluid",          name = "pm-cellouse-pulp", amount = 5 },
       { name = "pm-wood-strips", amount_min = 2,            amount_max = 4 }
     }
   },
@@ -130,7 +131,7 @@ data:extend({
     order = "f",
     ingredients =
     {
-      { type = "fluid",   name = "pm-cellouse-pulp", amount = 4 + 1 },
+      { type = "fluid",   name = "pm-cellouse-pulp", amount = 5 },
       { "pm-wood-strips", 8 }
     },
     results =
@@ -155,7 +156,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid", name = "pm-agar-solution", amount = 40 + 10 }
+      { type = "fluid", name = "pm-agar-solution", amount = 50 }
     }
   },
   {
@@ -223,7 +224,7 @@ data:extend({
     ingredients =
     {
       { "pm-empty-petri-dish", 1 },
-      { type = "fluid",        name = "pm-agar-solution", amount = 20 + 10 / 2 }
+      { type = "fluid",        name = "pm-agar-solution", amount = 25 }
     },
     results =
     {
@@ -241,7 +242,7 @@ data:extend({
     ingredients =
     {
       { "pm-empty-petri-dish", 1 },
-      { type = "fluid",        name = "pm-bacteriaed-agar-solution", amount = 20 + 10 / 2 }
+      { type = "fluid",        name = "pm-bacteriaed-agar-solution", amount = 25 }
     },
     results =
     {
@@ -259,7 +260,7 @@ data:extend({
     ingredients =
     {
       { "pm-empty-petri-dish", 1 },
-      { type = "fluid",        name = "pm-cyanobacteriaed-agar-solution", amount = 20 + 10 / 2 }
+      { type = "fluid",        name = "pm-cyanobacteriaed-agar-solution", amount = 25 }
     },
     results =
     {
@@ -281,7 +282,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid",        name = "pm-agar-solution", amount = 20 + 10 / 2 },
+      { type = "fluid",        name = "pm-agar-solution", amount = 25 },
       { "pm-empty-petri-dish", 1 }
     }
   },
@@ -300,7 +301,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid",        name = "pm-bacteriaed-agar-solution", amount = 20 + 10 / 2 },
+      { type = "fluid",        name = "pm-bacteriaed-agar-solution", amount = 25 },
       { "pm-empty-petri-dish", 1 }
     }
   },
@@ -319,7 +320,7 @@ data:extend({
     },
     results =
     {
-      { type = "fluid",        name = "pm-cyanobacteriaed-agar-solution", amount = 20 + 10 / 2 },
+      { type = "fluid",        name = "pm-cyanobacteriaed-agar-solution", amount = 25 },
       { "pm-empty-petri-dish", 1 }
     }
   },
@@ -336,7 +337,7 @@ data:extend({
     order = "h",
     ingredients =
     {
-      { type = "fluid", name = "pm-bacteriaed-agar-solution", amount = 4 + 1 },
+      { type = "fluid", name = "pm-bacteriaed-agar-solution", amount = 5 },
     },
     results =
     {
@@ -357,7 +358,7 @@ data:extend({
     order = "i",
     ingredients =
     {
-      { type = "fluid", name = "pm-cyanobacteriaed-agar-solution", amount = 4 + 1 },
+      { type = "fluid", name = "pm-cyanobacteriaed-agar-solution", amount = 5 },
     },
     results =
     {
