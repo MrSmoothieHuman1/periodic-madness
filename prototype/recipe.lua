@@ -529,7 +529,7 @@ data:extend({
     {
       { "pm-antimony-ore",    6 },
       { "pm-arsenic-ore",     6 },
-      { type = "fluid",       name = "pm-boron", amount = 16 },
+      { type = "fluid", name = "pm-boron", amount = 16 },
       { "pm-tellurium-plate", 10 },
       { "pm-science-bottle",  1 }
     },
@@ -2610,6 +2610,23 @@ data:extend({
         amount = 1,
         probability = 0.7
       }
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sodium-grenade",
+    enabled = false,
+    energy_required = 2,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      {"pm-sodium", 6},
+      {type = "fluid", name = "water", amount = 10},
+      {"pm-basic-panelling", 4}
+    },
+    results = 
+    {
+      {"pm-sodium-grenade", 1}
     }
   },
 

@@ -1356,7 +1356,6 @@ data:extend({
     stack_size = 20
   },
 
-
   --fuel categories
   {
     type = "fuel-category",

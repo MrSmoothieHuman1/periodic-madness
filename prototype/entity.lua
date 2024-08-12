@@ -9479,7 +9479,7 @@ data:extend({
           {
             {
               type = "damage",
-              damage = { amount = 20, type = "explosion" }
+              damage = {amount = 10, type = "explosion"}
             },
             {
               type = "create-entity",
@@ -9720,3 +9720,81 @@ data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "115kW"
 data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 500
 
 data.raw["combat-robot"]["defender"].time_to_live = 60 * 60
+
+data.raw["unit"]["big-biter"].resistances =
+  {
+    {
+      type = "physical",
+      decrease = 8,
+      percent = 10
+    },
+    {
+      type = "explosion",
+      percent = 10
+    },
+    {
+      type = "fire",
+      percent = 15
+    }
+  }
+  data.raw["unit"]["big-spitter"].resistances =
+  {
+    {
+      type = "explosion",
+      percent = 15
+    },
+    {
+      type = "fire",
+      percent = 5
+    },
+    {
+      type = "poison",
+      decrease = 10,
+      percent = 25
+    },
+    {
+      type = "acid",
+      decrease = 10 * 1.5,
+      percent = 25 * 1.4
+    },
+  }
+  data.raw["unit"]["behemoth-biter"].resistances =
+  {
+    {
+      type = "physical",
+      decrease = 12,
+      percent = 10
+    },
+    {
+      type = "explosion",
+      decrease = 12,
+      percent = 10
+    },
+    {
+      type = "fire",
+      decrease = 10,
+      percent = 25
+    }
+  }
+  data.raw["unit"]["behemoth-spitter"].resistances =
+  {
+    {
+      type = "explosion",
+      percent = 30
+    },
+    {
+      type = "fire",
+      decrease = 2,
+      percent = 15
+    },
+    {
+      type = "poison",
+      decrease = 15,
+      percent = 40
+    },
+    {
+      type = "acid",
+      decrease = 40 * 1.5,
+      percent = 50 * 1.4
+    }
+  }

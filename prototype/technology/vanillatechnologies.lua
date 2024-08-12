@@ -808,6 +808,13 @@ data.raw["technology"]["utility-science-pack"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
   PM.ingredient("pm-post-transition-metal-science-pack", 1)
 }
+data.raw["technology"]["military"].effects =
+{
+  PM.unlock_recipe("submachine-gun"),
+  PM.unlock_recipe("shotgun"),
+  PM.unlock_recipe("shotgun-shell"),
+  PM.unlock_recipe("pm-sodium-grenade"),
+}
 
 
 data.raw["technology"]["military-2"].prerequisites = { "pm-rubber-processing" }
@@ -946,8 +953,7 @@ data.raw["technology"]["productivity-module-3"].effects =
   PM.unlock_recipe("productivity-module-3"),
   PM.unlock_recipe("pm-productivity-module-2-crushing"),
 }
-data.raw["technology"]["productivity-module-3"].prerequisites = { "productivity-module-2", "pm-alkali-metal-pack-unlock",
-  "pm-boron-processing" }
+data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock", "pm-boron-processing"}
 data.raw["module"]["effectivity-module"].icon_size = 128
 data.raw["module"]["effectivity-module"].icon = "__periodic-madness__/graphics/icons/effectivity-module-1.png"
 data.raw["module"]["effectivity-module-2"].icon_size = 128
