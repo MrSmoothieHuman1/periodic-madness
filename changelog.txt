@@ -12,6 +12,8 @@ Date: 2024-08-09
     - Added two new ways to make glass and glass products: borosilicate glass and molten potassium. One allows for betterer recipes of stuff like glass bottles and fibers, and the other allows for more efficient glass recipes.
     - Added robochargers and robostashers, like the thing from that one mod.
     - Added an even better tier of water electrolysis, using a Nitrogen-doped nickel-molybdenum-phosphide catalyst. Why? because i wouldnt be a good devman if i wasnt sitting here talking to you, now would i?
+    - Added a more efficient way to make plastic pellets using yttrium catalysts.
+    - Added polystyrene and polystyrene packaging, as a more efficient way to transport certain items.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -20,6 +22,9 @@ Date: 2024-08-09
     - Upped Magneto orbital traps glass input from 8 to 24.
     - Changed all recipes that use white phosphorous to red phosphorous, which was like 3 but still
     - Changed wiring to only need the metal and not another prerequisite item.
+    - Gave big and behemoth biters fire resistance, and gave big and behemoth spitters acid/poison resistances.
+    - Nerfed flamethrowers. Plus changed their usable fluids.
+    - Buffed tier 4 producitvity modules to have 14% productivity instead of 12.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

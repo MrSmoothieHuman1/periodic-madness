@@ -89,7 +89,7 @@ require("prototype.robots")
 require("prototype.itemgroups")
 require("prototype.equipment")
 
-require("compatability.testcompat")
+require("compatibility.testcompat")
 
 local resource_autoplace = require('resource-autoplace');
 local noise = require('noise');

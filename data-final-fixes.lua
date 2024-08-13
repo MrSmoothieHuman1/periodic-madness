@@ -1,4 +1,4 @@
-require("compatability.K2")
-require("compatability.BZ.foundry")
-require("compatability.BZ.zirconium")
-require("compatability.colour-theory-circuits")
+require("compatibility.K2")
+require("compatibility.BZ.foundry")
+require("compatibility.BZ.zirconium")
+require("compatibility.colour-theory-circuits")
