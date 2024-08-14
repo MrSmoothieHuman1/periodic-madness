@@ -24,6 +24,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-ferrum",
+    enabled = false,
+    energy_required = 18,
+    subgroup = "pm-copper-tm",
+    order = "x",
+    category = "pm-moltening",
+    ingredients =
+    {
+      PM.ingredient("sulfuric-acid", 30, "fluid"),
+      PM.ingredient("copper-plate", 10),
+    },
+    results =
+    {
+      PM.product("pm-patina", 10)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,

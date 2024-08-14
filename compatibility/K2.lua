@@ -1,3 +1,4 @@
+if not mods["bzzirconium"] then return end
 if not mods["Krastorio2"] then return end
 local PM = require("__periodic-madness__/library")
 

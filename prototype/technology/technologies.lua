@@ -112,9 +112,6 @@ data:extend({
       PM.unlock_recipe("pm-gold-plate"),
       PM.unlock_recipe("pm-gold-leeching"),
       PM.unlock_recipe("pm-gold-chunk-refining"),
-      PM.unlock_recipe("pm-molybdenum-leeching"),
-      PM.unlock_recipe("pm-molybdenite-crushing"),
-      PM.unlock_recipe("pm-molybdenum-floating")
     },
     prerequisites = {"pm-transition-metal-refining", "pm-mercury-processing" },
     unit =
@@ -962,7 +959,6 @@ data:extend({
       PM.unlock_recipe("pm-battery-casing"),
       PM.unlock_recipe("pm-copper-disk-anodization"),
       PM.unlock_recipe("pm-zinc-disk-cathodization"),
-      PM.unlock_recipe("pm-vanadium-oxide"),
       PM.unlock_recipe("pm-vanadium-oxide-positive-solution"),
       PM.unlock_recipe("pm-vanadium-oxide-negative-solution"),
       PM.unlock_recipe("pm-vanadium-redox-battery")
@@ -3516,6 +3512,30 @@ data:extend({
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "pm-molybdenum-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/molybdenum-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-molybdenum-leeching"),
+      PM.unlock_recipe("pm-molybdenite-crushing"),
+      PM.unlock_recipe("pm-molybdenum-floating")
+    },
+    prerequisites = {"pm-washing-plant-1"},
+    unit =
+    {
+      count = 300,
+      ingredients =
+      {
+        PM.ingredient("automation-science-pack", 1),
+        PM.ingredient("logistic-science-pack", 1),
+      },
+      time = 60
+    }
+  },
+
   {
     type = "technology",
     name = "pm-FUCK-transition-metal-science-pack",

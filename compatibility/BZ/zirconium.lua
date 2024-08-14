@@ -1,6 +1,11 @@
-if not mods["bzzirconium"] then return end -- Leave if not relevant
 local PM = require("__periodic-madness__/library")
-
+---@type string
+    local explosive_rounds_magazine
+    if mods["Krastorio2"] then
+      explosive_rounds_magazine = "explosive-rounds-rifle-magazine"
+    else
+      explosive_rounds_magazine = "explosive-rounds-magazine"
+    end
 -- Autoplace
 for _, name in pairs { "zircon" } do
   data.raw["autoplace-control"][name] = nil
@@ -18,6 +23,7 @@ data.raw["recipe"]["zirconium-plate"].expensive.ingredients = { PM.ingredient("p
 
 data.raw["autoplace-control"]["zircon"] = nil
 data.raw["resource"]["zircon"] = nil
+
 PM.set_flag(data.raw["item"]["zircon"], "hidden")
 PM.set_flag(data.raw["item"]["zirconia"], "hidden")
 data.raw["item"]["zirconium-plate"].subgroup = "pm-zirconium-tm"
@@ -50,15 +56,16 @@ data.raw["technology"]["military-3"].effects =
   PM.unlock_recipe("slowdown-capsule"),
   PM.unlock_recipe("combat-shotgun"),
   PM.unlock_recipe("pm-high-density-magazine"),
-  PM.unlock_recipe("explosive-rounds-magazine")
+  PM.unlock_recipe(explosive_rounds_magazine)
 }
 
-data.raw["recipe"]["explosive-rounds-magazine"].ingredients =
+data.raw["recipe"][explosive_rounds_magazine].ingredients =
 {
   PM.ingredient("zirconium-plate", 1),
   PM.ingredient("piercing-rounds-magazine", 1),
   PM.ingredient("pm-naptha", 2, "fluid")
 }
+
 data.raw["recipe"]["zirconium-plate"].subgroup = "pm-zirconium-tm"
 data.raw["recipe"]["zirconium-plate"].order = "g"
 data.raw["recipe"]["electric-furnace"].ingredients =
@@ -81,7 +88,6 @@ data.raw["recipe"]["low-density-structure"].ingredients =
   PM.ingredient("steel-plate", 2),
   PM.ingredient("pm-polyethylene-plastic", 5)
 }
-
 data.raw["recipe"]["stone-furnace"].ingredients =
 {
   PM.ingredient("stone", 5)

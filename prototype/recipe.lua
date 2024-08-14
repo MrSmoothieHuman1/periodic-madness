@@ -2685,7 +2685,7 @@ data:extend({
       { "pm-titanium-ore",           8 },
       { "pm-tungsten-ore",           8 },
       { "pm-silver-plate",           15 },
-      { "copper-plate",              14 + 1 },
+      { "copper-plate",              15 },
       { "pm-plastic-science-bottle", 1 }
     },
     enabled = false,

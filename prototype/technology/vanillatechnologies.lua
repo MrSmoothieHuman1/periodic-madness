@@ -45,11 +45,12 @@ local SulfurFix = data.raw["technology"]["sulfur-processing"]
 
 SulfurFix.effects =
 {
+  PM.unlock_recipe("pm-vanadium-oxide"),
   PM.unlock_recipe("pm-vanadium-oxide-catalyst"),
   PM.unlock_recipe("pm-sulfur-dioxide-cracking"),
   PM.unlock_recipe("pm-acidic-water-to-sulfuric-acid")
 }
-SulfurFix.prerequisites = { "pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes" }
+SulfurFix.prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes"}
 
 data.raw["technology"]["sulfur-processing"].unit.ingredients =
 {
@@ -211,13 +212,13 @@ data.raw["technology"]["fluid-wagon"].unit.ingredients =
   PM.ingredient("logistic-science-pack", 1),
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
 }
+data.raw["technology"]["automobilism"].unit.count = 125
+data.raw["technology"]["automobilism"].prerequisites = {"pm-rubber-processing"}
 data.raw["technology"]["automobilism"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),
   PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
 }
-
 data.raw["technology"]["concrete"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),

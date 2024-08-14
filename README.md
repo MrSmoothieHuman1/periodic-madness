@@ -19,6 +19,7 @@ Sift through new "group ores", containing the elements of each separate periodic
 * Whole buncha recipe complexity, or your money back.
 
 * Separated technologies at an earlier stage, so you can pick and choose what you want to unlock without needing to get every science pack at 60SPM.
+
 * Complete lack of maturity.
 
 * Complete overhaul of petrochem (just like every other overhaul) and oil processing, separating crude oil into 8 fractions that each have their own uses.

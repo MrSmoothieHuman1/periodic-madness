@@ -177,7 +177,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
-    map_color = {r=0.3, g=0.3, b=1.0},
+    map_color = {r=0.5, g=0.84, b=1},
     minable =
     {
       hardness = 1,

@@ -267,9 +267,9 @@ sanitize_recipe(recipes["locomotive"]).ingredients =
 sanitize_recipe(recipes["car"]).ingredients =
 {
   PM.ingredient("pm-vulcanised-rubber", 8),
-  PM.ingredient("engine-unit", 4),
-  PM.ingredient("pm-lightweight-panelling", 4),
-  PM.ingredient("pm-lightweight-framing", 12)
+  PM.ingredient("pm-mini-motor", 4),
+  PM.ingredient("pm-basic-panelling", 8),
+  PM.ingredient("pm-basic-framing", 16)
 }
 sanitize_recipe(recipes["tank"]).ingredients =
 {
