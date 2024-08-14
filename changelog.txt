@@ -6,7 +6,7 @@ Date: 2024-08-09
   Additions:
     - Added Boron.
     - Added Silicon.
-    - Added Tellerium.
+    - Added Tellurium.
     - Added Germanium.
     - Added Yttrium.
     - Added two new ways to make glass and glass products: borosilicate glass and molten potassium. One allows for betterer recipes of stuff like glass bottles and fibers, and the other allows for more efficient glass recipes.
@@ -25,6 +25,7 @@ Date: 2024-08-09
     - Gave big and behemoth biters fire resistance, and gave big and behemoth spitters acid/poison resistances.
     - Nerfed flamethrowers. Plus changed their usable fluids.
     - Buffed tier 4 producitvity modules to have 14% productivity instead of 12.
+    - Remade molybdenite powder's icon.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -36,6 +37,103 @@ Date: 2024-08-09
     - (#3) Fixed processing integrated circuit molding giving advanced integrated circuits.
     - Fixed a lot of minor locale issues, like capatalisation and random bs like that.
 
+---------------------------------------------------------------------------------------------------
+Version: 0.5.125
+Date: 2024-08-14
+  The just like the old days Update:
+
+  Changes:
+    - Made cars unlockable by orange science, and only need rubber processing as a prerequisite.
+    - Made Molybdenum processing unlockable in orange science, and is now a prerequisite to yellow science.
+    - Lowered automoblism technology cost to 125.
+    - Changed the map colour of post-transition metals to be more visually distinct.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.124
+Date: 2024-08-13
+  The thank you pennyjim i would have never fixed this Update:
+
+  Fixes:
+    - Fixed an issue with K2 and BZ Zirconium when loading the explosive round magazines.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.123
+Date: 2024-08-13
+  The [sounds of various swears as guy runs to fix error] Update:
+
+  Fixes:
+    - Fixed vanadium oxide catalysts being uncraftable.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.122
+Date: 2024-08-11
+  The i get these every month to remind myself i have no idea what im doing Update:
+
+  Fixes:
+    - Fixed picking up an evaporator 2 giving you a tier 1.
+    - Fixed picking up a heat pipe 1 giving you a tier 2.
+    - Fixed(?) vacuum former 2 being teeny tiny in HR mode.
+    - Fixed FUCK having a unnaturally large shadow in HR mode.
+    - Fixed processing unit integrated circuit molding recipes giving advanced integrated circuits.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.121
+Date: 2024-08-10
+  The i swear one more fix will make it good one more fix guys please Update:
+
+  Changes:
+    - Made electrolysis take seawater, this should make HCl easier to do for me and for you. 
+    - Buffed water voiding.
+    - Buffed oxygen voiding. again.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.120
+Date: 2024-08-08
+  The HOW DID I NOT NOTICE THIS I SPENT SO LONG PICKING THEM UP Update:
+
+  Changes:
+    - Gave the leeching field an extra module slot. It will have a more interesting way to speed them up in the future, but thats for 2.0
+
+  Fixes:
+    - Fixed the leeching field giving you a washing plant 2 when picked up.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.119
+Date: 2024-08-07
+  The me? plan ahead? what am i, a good modder? Update:
+
+  Changes:
+    - Reworked the reworked HCl building ratios. I still might change how it works completely, but this is so much better.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.118
+Date: 2024-08-06
+  The ordered some bigger glasses from specsavers Update:
+
+  Changes:
+    - Redid the glass icon to make it better to see. Any icons contianing it, will be changed in the next content update.
+    - Made evaporator 1's take no energy.
+    - Doubled the output from the first electrolysis recipe.
+
+  Fixes:
+    - Lowered pickup time for the electrolysis plant from 0.6s to 0.45s.
+    - Made the HCl loop cheaper in building sense? idk man, i tried to improve it but i think i need to rework it and i can feel my brain melting
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.117
+Date: 2024-08-04
+  The who knew playing your own mod would help balance it, not me Update:
+
+  Changes:
+    - Changed sea salt amount from 5 to 2.5 in the first desaltination recipe.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.116
+Date: 2024-08-04
+  The i checked this 3 times i swear to goob Update:
+
+  Fixes:
+    - Fixed the FUCK being craftable withouth unlocking its technology.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.115
 Date: 2023-08-02

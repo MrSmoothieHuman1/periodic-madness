@@ -2,6 +2,34 @@ local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
+    type = "item",
+    name = "pm-arsenopyrite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/arsenopyrite.png",
+    subgroup = "pm-arsenic-mt",
+    order = "a",
+    stack_size = 300
+  },
+  {
+    type = "item",
+    name = "pm-impure-arsenic",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/impure-arsenic.png",
+    subgroup = "pm-arsenic-mt",
+    order = "b",
+    stack_size = 250
+  },
+  {
+    type = "item",
+    name = "pm-arsenic-oxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/arsenic-oxide.png",
+    subgroup = "pm-arsenic-mt",
+    order = "c",
+    stack_size = 200
+  },
+  
+  {
     type = "recipe",
     name = "pm-arsenopyrite-leeching",
     enabled = false,
@@ -54,7 +82,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-arseinc-oxide", 6),
+      PM.product("pm-arsenic-oxide", 6),
       PM.product_range("pm-ferrum", 2, 4),
       PM.product_range("pm-impure-lead-ore", 1, 5),
 

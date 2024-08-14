@@ -183,10 +183,10 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      { "pm-indium-plate",                3 },
-      { type = "fluid",                   name = "pm-ferric-chloride", amount = 10 },
-      { "pm-advanced-circuit-breadboard", 1 },
-      { "pm-cobalt-blue",                 6 }
+      {"pm-indium-plate", 3},
+      {type = "fluid", name = "pm-ferric-chloride", amount = 10},
+      {"pm-advanced-circuit-breadboard", 1},
+      {"pm-cobalt-blue", 6}
     },
     result = "pm-processing-breadboard",
   },
@@ -1060,13 +1060,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      { type = "fluid",          name = "pm-ammonia-gas", amount = 20 },
+      { type = "fluid", name = "pm-ammonia-gas", amount = 20 },
       { "pm-palladium-catalyst", 1 },
     },
     results =
     {
       { "pm-catalyst-container", 1 },
-      { type = "fluid",          name = "pm-trace-acetonitrile", amount = 10 },
+      { type = "fluid", name = "pm-trace-acetonitrile", amount = 10 },
     }
   },
   {

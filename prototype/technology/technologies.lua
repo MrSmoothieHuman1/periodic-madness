@@ -3442,9 +3442,18 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-arsenopyrite-leeching"),
+      PM.unlock_recipe("pm-arsenopyrite-sublimation"),
+      PM.unlock_recipe("pm-arsenic-purifying"),
+      PM.unlock_recipe("pm-arsine"),
+      PM.unlock_recipe("pm-arsine-seperation"),
+      PM.unlock_recipe("pm-crude-antimony-sulfide"),
+      PM.unlock_recipe("pm-low-quality-antimony-sulfide-filtering"),
+      PM.unlock_recipe("pm-high-quality-antimony-sulfide-filtering"),
+      PM.unlock_recipe("pm-crude-antimony-sulfide-mixing"),
+      PM.unlock_recipe("pm-antimony-sulfide-seperation"),
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 375,
@@ -3526,13 +3535,13 @@ data:extend({
     prerequisites = {"pm-washing-plant-1"},
     unit =
     {
-      count = 300,
+      count = 50,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
       },
-      time = 60
+      time = 30
     }
   },
 

@@ -1,4 +1,5 @@
 local PM = require("__periodic-madness__/library")
+if not mods["bzzirconium"] then return end
 ---@type string
     local explosive_rounds_magazine
     if mods["Krastorio2"] then
