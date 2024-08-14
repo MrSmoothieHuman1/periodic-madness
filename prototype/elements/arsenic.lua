@@ -6,6 +6,11 @@ data:extend({
     name = "pm-arsenopyrite",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/arsenopyrite.png",
+    pictures = 
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/arsenopyrite.png", size = 64, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/ores/arsenopyrite-2.png", size = 64, scale = 0.25},
+    },
     subgroup = "pm-arsenic-mt",
     order = "a",
     stack_size = 300
@@ -24,11 +29,17 @@ data:extend({
     name = "pm-arsenic-oxide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/arsenic-oxide.png",
+    pictures = 
+    {
+      { filename = "__periodic-madness__/graphics/icons/arsenic-oxide.png", size = 64, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/arsenic-oxide-2.png", size = 64, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/arsenic-oxide-3.png", size = 64, scale = 0.25},
+    },
     subgroup = "pm-arsenic-mt",
     order = "c",
     stack_size = 200
   },
-  
+
   {
     type = "recipe",
     name = "pm-arsenopyrite-leeching",

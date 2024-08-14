@@ -80,6 +80,8 @@ require("prototype.elements.francium")
 require("prototype.elements.boron")
 require("prototype.elements.yttrium")
 require("prototype.elements.tellurium")
+require("prototype.elements.antimony")
+require("prototype.elements.arsenic")
 
 require("prototype.entity")
 require("prototype.remnants")

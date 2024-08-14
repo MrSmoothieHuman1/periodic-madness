@@ -8,9 +8,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/flourite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/flourite.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/flourite-2.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/flourite-3.png", size = 128, scale = 0.125 },
+      {filename = "__periodic-madness__/graphics/icons/ores/flourite.png",   size = 128, scale = 0.125},
+      {filename = "__periodic-madness__/graphics/icons/ores/flourite-2.png", size = 128, scale = 0.125},
+      {filename = "__periodic-madness__/graphics/icons/ores/flourite-3.png", size = 128, scale = 0.125},
     },
     subgroup = "pm-flourine-rnm",
     order = "a",

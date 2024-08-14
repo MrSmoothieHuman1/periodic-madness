@@ -1,5 +1,50 @@
 local PM = require("__periodic-madness__/library")
 data:extend({
+    {
+        type = "item",
+        name = "pm-low-quality-crude-antimony-sulfide",
+        icon_size = 64,
+        icon = "__periodic-madness/graphics/icons/ores/low-quality-crude-antimony-sulfide.png",
+        subgroup = "pm-antimony-mt",
+        order = "a",
+        stack_size = 500
+    },
+    {
+        type = "item",
+        name = "pm-high-quality-crude-antimony-sulfide",
+        icon_size = 64,
+        icon = "__periodic-madness/graphics/icons/ores/high-quality-crude-antimony-sulfide.png",
+        subgroup = "pm-antimony-mt",
+        order = "b",
+        stack_size = 500
+    },
+    {
+        type = "item",
+        name = "pm-crude-antimony-sulfide",
+        icon_size = 64,
+        icon = "__periodic-madness/graphics/icons/ores/crude-antimony-sulfide.png",
+        subgroup = "pm-antimony-mt",
+        order = "c",
+        stack_size = 250
+    },
+    {
+        type = "item",
+        name = "pm-stibnite",
+        icon_size = 64,
+        icon = "__periodic-madness/graphics/icons/ores/stibnite.png",
+        subgroup = "pm-antimony-mt",
+        order = "d",
+        stack_size = 250
+    },
+    {
+        type = "item",
+        name = "pm-antimony-sulfide",
+        icon_size = 64,
+        icon = "__periodic-madness/graphics/icons/ores/antimony-sulfide.png",
+        subgroup = "pm-antimony-mt",
+        order = "e",
+        stack_size = 200
+    },
 
     {
         type = "recipe",
