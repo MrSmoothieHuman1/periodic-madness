@@ -30,8 +30,15 @@ data:extend({
     {
         type = "item",
         name = "pm-stibnite",
-        icon_size = 64,
+        icon_size = 128,
         icon = "__periodic-madness/graphics/icons/ores/stibnite.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite.png", size = 128, scale = 0.125},
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-2.png", size = 128, scale = 0.125},
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-3.png", size = 128, scale = 0.125},
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-4.png", size = 128, scale = 0.125},
+        },
         subgroup = "pm-antimony-mt",
         order = "d",
         stack_size = 250
@@ -75,7 +82,8 @@ data:extend({
         energy_required = 8,
         category = "pm-washing",
         subgroup = "pm-antimony-mt",
-        order = "b",
+        order = "b",    
+        main_product = "pm-crude-antimony-sulfide",
         ingredients =
         {
             PM.ingredient("pm-low-quality-crude-antimony-sulfide", 6),
@@ -96,6 +104,7 @@ data:extend({
         category = "pm-moltening",
         subgroup = "pm-antimony-mt",
         order = "c",
+        main_product = "pm-stibnite",
         ingredients =
         {
             PM.ingredient("pm-low-quality-crude-antimony-sulfide", 6),
@@ -116,6 +125,7 @@ data:extend({
         category = "pm-crushing",
         subgroup = "pm-antimony-mt",
         order = "d",
+        main_product = "pm-antimony-sulfide",
         ingredients = 
         {
             PM.ingredient("pm-stibnite", 4),
@@ -136,6 +146,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-antimony-mt",
         order = "e",
+        main_product = "pm-antimony-ore",
         ingredients = 
         {
             PM.ingredient("pm-antimony-sulfide", 4),
