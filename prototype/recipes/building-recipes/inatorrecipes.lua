@@ -1450,8 +1450,9 @@ data:extend({
     ingredients =
     {
       PM.ingredient("steel-plate", 8),
-      PM.ingredient("pm-manganese-plate", 8),
+      PM.ingredient("pm-manganese-plate", 6),
       PM.ingredient("pm-chrominum-ore", 4),
+      PM.ingredient("pm-molybdenum-ore", 4),
       PM.ingredient("pm-filled-flux-container", 2)
     },
     results =

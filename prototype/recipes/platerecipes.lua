@@ -227,7 +227,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("steel-plate", 2),
-      PM.ingredient("pm-manganese-plate", 3),
+      PM.ingredient("pm-manganese-plate", 2),
+      PM.ingredient("pm-molybdenum-ore", 2)
     },
     results =
     {
@@ -245,8 +246,9 @@ data:extend({
     ingredients =
     {
       PM.ingredient("steel-plate", 3),
-      PM.ingredient("pm-manganese-plate", 4),
-      PM.ingredient("pm-chrominum-ore", 4)
+      PM.ingredient("pm-manganese-plate", 3),
+      PM.ingredient("pm-chrominum-ore", 3),
+      PM.ingredient("pm-molybdenum-ore", 2)
     },
     results =
     {

@@ -125,11 +125,6 @@ data:extend({
     name = "pm-borosilicate-glass",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/borosilicate-glass-pane-2.png", size = 64, scale = 0.25 },
-    },
     subgroup = "pm-glassing",
     order = "e",
     stack_size = 50
@@ -290,7 +285,7 @@ data:extend({
   {
     type = "item",
     name = "pm-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/air-filter.png",
     subgroup = "intermediate-product",
     order = "a",
@@ -645,14 +640,13 @@ data:extend({
   {
     type = "item",
     name = "pm-flux-container",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/flux-container.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/flux-container.png",   size = 128, scale = 0.124 + 0.001 },
-      { filename = "__periodic-madness__/graphics/icons/flux-container-2.png", size = 128, scale = 0.124 + 0.001 },
-      { filename = "__periodic-madness__/graphics/icons/flux-container-3.png", size = 128, scale = 0.124 + 0.001 },
-      { filename = "__periodic-madness__/graphics/icons/flux-container-4.png", size = 128, scale = 0.124 + 0.001 },
+      {filename = "__periodic-madness__/graphics/icons/flux-container.png",   size = 64, scale = 0.24 + 0.001},
+      {filename = "__periodic-madness__/graphics/icons/flux-container-2.png", size = 64, scale = 0.24 + 0.001},
+      {filename = "__periodic-madness__/graphics/icons/flux-container-3.png", size = 64, scale = 0.24 + 0.001},
     },
     subgroup = "pm-refined-items",
     stack_size = 100
@@ -660,7 +654,7 @@ data:extend({
   {
     type = "item",
     name = "pm-filled-flux-container",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/filled-flux-container.png",
     subgroup = "pm-refined-items",
     stack_size = 100 / 2
@@ -924,10 +918,10 @@ data:extend({
     stack_size = 50,
     effect =
     {
-      productivity = { bonus = 0.12 },
-      consumption = { bonus = 0.75 },
-      pollution = { bonus = 0.20 },
-      speed = { bonus = -0.25 }
+      productivity = {bonus = 0.14},
+      consumption = {bonus = 0.75},
+      pollution = {bonus = 0.20},
+      speed =  {bonus = -0.25}
     },
     limitation = productivity_module_limitation(),
     limitation_message_key = "production-module-usable-only-on-intermediates",

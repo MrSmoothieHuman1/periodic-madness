@@ -135,7 +135,7 @@ data:extend({
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
-      additional_richness = 2500
+      additional_richness = 1500
     },
 
     stage_counts = {1000000, 40000, 24000, 20000, 12000, 10000, 7000, 3000},
@@ -198,7 +198,7 @@ data:extend({
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
-      additional_richness = 2500
+      additional_richness = 1500
     },
 
     stage_counts = {1000000, 40000, 24000, 20000, 12000, 10000, 7000, 3000},
@@ -262,7 +262,7 @@ data:extend({
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
-      additional_richness = 2500
+      additional_richness = 1500
     },
 
     stage_counts = {80000, 40000, 26000, 17000, 15200, 12000, 6500, 1000},
@@ -325,7 +325,7 @@ data:extend({
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
-      additional_richness = 2500
+      additional_richness = 1500
     },
 
     stage_counts = {80000, 40000, 26000, 17000, 15200, 12000, 6500, 1000},

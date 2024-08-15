@@ -27,6 +27,7 @@ Date: 2024-08-09
     - Buffed tier 4 producitvity modules to have 14% productivity instead of 12.
     - Remade molybdenite powder's icon.
     - Rerendered almost every item in the game to use HDRI's. WHERE HAVE THESE BEEN MY ENTIRE LIFE SWEET GOOGLILY
+    - Changed stainless steel to also take molybdenum.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -37,7 +38,24 @@ Date: 2024-08-09
     - Fixed some locale issues.
     - (#3) Fixed processing integrated circuit molding giving advanced integrated circuits.
     - Fixed a lot of minor locale issues, like capatalisation and random bs like that.
+    - Fixed the burn-inator being unlocked twice.
 
+---------------------------------------------------------------------------------------------------
+Version: 0.5.127
+Date: 2024-08-15
+  The you will join the discord server, you will join the discord server, you w- Update:
+
+  Additions:
+    - Added the discord server link to the in-game mod page.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.126
+Date: 2024-08-15
+  The old me was so smrt- i mean smart Update:
+
+  Fixes:
+    - Fixed voltatic piles being net positive.
+    - Deleted the alternative recipe pack, any technologies using it now only take the base science packs.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.125
 Date: 2024-08-14

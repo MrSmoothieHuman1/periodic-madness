@@ -1496,6 +1496,18 @@ data:extend({
     base_color = { r = 0.56, g = 0.422, b = 0.23 },
     flow_color = { r = 0.56, g = 0.422, b = 0.23 }
   },
+  {
+    type = "fluid",
+    name = "pm-arsine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/arsine.png",
+    subgroup = "pm-arsenic-mt",
+    order = "a",
+    default_temperature = 15,
+    auto_barrel = false,
+    base_color = { r = 1, g = 0.68, b = 0.88 },
+    flow_color = { r = 1, g = 0.68, b = 0.88 }
+  },
 })
 
 local SulfuricAcidIcon = data.raw["fluid"]["sulfuric-acid"]

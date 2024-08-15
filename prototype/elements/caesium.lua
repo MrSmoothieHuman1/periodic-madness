@@ -4,12 +4,12 @@ data:extend({
   {
     type = "item",
     name = "pm-pollucite",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/pollucite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/pollucite.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pollucite-2.png", size = 118, scale = 0.125 },
+      {filename = "__periodic-madness__/graphics/icons/ores/pollucite.png",   size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/pollucite-2.png", size = 64, scale = 0.25},
     },
     subgroup = "pm-caesium-am",
     order = "A",

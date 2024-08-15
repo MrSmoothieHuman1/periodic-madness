@@ -28,7 +28,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/cinnabar.png",
+        icon = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon.png",
         icon_size = 64,
       },
       {
@@ -120,7 +120,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/cinnabar.png",
+        icon = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon.png",
         icon_size = 64,
       },
       {

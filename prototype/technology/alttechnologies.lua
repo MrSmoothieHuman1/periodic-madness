@@ -4,27 +4,6 @@ local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "technology",
-    name = "pm-alternative-science-pack-unlock",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/alt-science-pack-unlock.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-alternative-science-pack")
-    },
-
-    prerequisites = { "steel-processing" },
-    unit =
-    {
-      count = 15,
-      ingredients =
-      {
-        PM.ingredient("automation-science-pack", 1)
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
     name = "pm-green-circuit-molding",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/green-circuit-molding.png",
@@ -34,7 +13,7 @@ data:extend({
       PM.unlock_recipe("pm-green-circuit-molding"),
       PM.unlock_recipe("pm-basic-breadboard-molding")
     },
-    prerequisites = { "pm-alternative-science-pack-unlock", "pm-pheonlic-resin-processing" },
+    prerequisites = {"pm-pheonlic-resin-processing" },
     unit =
     {
       count = 50,
@@ -42,7 +21,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 30
     }
@@ -65,7 +43,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 30
     }
@@ -89,7 +66,6 @@ data:extend({
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 30
     }
@@ -115,7 +91,6 @@ data:extend({
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1),
         PM.ingredient("pm-post-transition-metal-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 30
     }
@@ -129,7 +104,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-coke-iron-smelting")
     },
-    prerequisites = { "pm-alternative-science-pack-unlock", "pm-wood-processing" },
+    prerequisites = {"pm-wood-processing"},
     unit =
     {
       count = 50,
@@ -137,7 +112,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 15
     }
@@ -159,7 +133,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 20
     }
@@ -173,7 +146,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-copper-fiberoptic-cable")
     },
-    prerequisites = { "pm-fiberoptics", "pm-alternative-science-pack-unlock", "electronics" },
+    prerequisites = { "pm-fiberoptics", "electronics" },
     unit =
     {
       count = 50,
@@ -181,7 +154,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 20
     }
@@ -196,7 +168,7 @@ data:extend({
       PM.unlock_recipe("pm-sulfuric-acid-to-acidic-water"),
       PM.unlock_recipe("pm-water-deacifying")
     },
-    prerequisites = { "pm-alternative-science-pack-unlock", "sulfur-processing" },
+    prerequisites = {"sulfur-processing" },
     unit =
     {
       count = 75,
@@ -205,7 +177,6 @@ data:extend({
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
       },
       time = 30
     }
@@ -229,7 +200,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1),
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1)
       },
@@ -254,7 +224,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1),
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1)
       },
@@ -279,7 +248,6 @@ data:extend({
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1),
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1)
       },
@@ -307,7 +275,7 @@ data:extend({
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1),
         PM.ingredient("pm-post-transition-metal-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
+        
       },
       time = 45
     }
@@ -333,7 +301,7 @@ data:extend({
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1),
         PM.ingredient("pm-post-transition-metal-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
+        
       },
       time = 45,
     }
@@ -358,7 +326,7 @@ data:extend({
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1),
         PM.ingredient("pm-post-transition-metal-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
+        
       },
       time = 40,
     }
@@ -385,7 +353,7 @@ data:extend({
         PM.ingredient("chemical-science-pack", 1),
         PM.ingredient("pm-post-transition-metal-science-pack", 1),
         PM.ingredient("pm-alkali-metal-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
+        
       },
       time = 30
     }
@@ -409,7 +377,7 @@ data:extend({
         PM.ingredient("logistic-science-pack", 1),
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1)
+        
       },
       time = 45,
     }

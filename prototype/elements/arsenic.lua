@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-arsenopyrite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/arsenopyrite.png",
+    icon = "__periodic-madness__/graphics/icons/ores/arsenopyrite.png",
     pictures = 
     {
       {filename = "__periodic-madness__/graphics/icons/ores/arsenopyrite.png", size = 64, scale = 0.25},
@@ -19,7 +19,7 @@ data:extend({
     type = "item",
     name = "pm-impure-arsenic",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/impure-arsenic.png",
+    icon = "__periodic-madness__/graphics/icons/ores/impure-arsenic.png",
     subgroup = "pm-arsenic-mt",
     order = "b",
     stack_size = 250
@@ -66,6 +66,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-arsenic-mt",
     order = "b",
+    main_product = "pm-impure-arsenic",
     ingredients =
     {
       PM.ingredient("pm-arsenopyrite", 3),
@@ -86,6 +87,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-arsenic-mt",
     order = "c",
+    main_product = "pm-arsenic-oxide",
     ingredients =
     {
       PM.ingredient("pm-impure-arsenic", 4),
@@ -95,7 +97,7 @@ data:extend({
     {
       PM.product("pm-arsenic-oxide", 6),
       PM.product_range("pm-ferrum", 2, 4),
-      PM.product_range("pm-impure-lead-ore", 1, 5),
+      PM.product_range("pm-impure-lead", 1, 5),
 
     }
   } --[[@as data.RecipePrototype]],
@@ -107,6 +109,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-arsenic-mt",
     order = "d",
+    main_product = "pm-arsine",
     ingredients =
     {
       PM.ingredient("pm-arsenic-oxide", 3),
@@ -127,13 +130,14 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-arsenic-mt",
     order = "e",
+    main_product = "pm-arsenic-ore",
     ingredients =
     {
       PM.ingredient("pm-arsine", 5, "fluid"),
     },
     results =
     {
-      PM.product_range("pm-arsenic", 6, 10),
+      PM.product_range("pm-arsenic-ore", 6, 10),
       PM.product("water", 30, "fluid"),
     }
   } --[[@as data.RecipePrototype]]

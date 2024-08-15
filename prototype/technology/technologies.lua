@@ -159,9 +159,7 @@ data:extend({
       PM.unlock_recipe("pm-seawater-desaltination"),
       PM.unlock_recipe("pump")
     },
-
-
-    prerequisites = {"automation-2", "pm-cleaner-power-generation" },
+    prerequisites = {"automation-2", "pm-cleaner-power-generation"},
     unit =
     {
       count = 50,
@@ -920,7 +918,6 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-fluid-catalyst-cracker"),
-      PM.unlock_recipe("pm-burn-inator"),
       PM.unlock_recipe("pm-oil-residual-cracking"),
       PM.unlock_recipe("pm-fuel-oils-cracking"),
       PM.unlock_recipe("pm-lubricating-oils-cracking"),
@@ -3296,7 +3293,7 @@ data:extend({
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1)
+        PM.ingredient("pm-post-transition-metal-science-pack", 1)
       },
       time = 120
     }
