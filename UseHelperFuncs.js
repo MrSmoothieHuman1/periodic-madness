@@ -109,8 +109,12 @@ const regex_and_replace_array = [
     'PM.unlock_recipe($<recipe>)'
   ],
 
-  [ // Give Item //FIXME: Split into two so the count can truly be optional
-    /{\s*(?=[^{}]*type = "give-item")(?=[^{}]*item = (?<item>"[^"]+"))(?:[^{}]*count = (?<count>\d+))?[^{}]*}/g,
+  [ // Give Item
+    /{\s*(?=[^{}]*type = "give-item")(?=[^{}]*item = (?<item>"[^"]+"))(?![^{}]*count =)[^{}]*}/g,
+    'PM.give_item($<item>)'
+  ],
+  [ // Give Item w/ count
+    /{\s*(?=[^{}]*type = "give-item")(?=[^{}]*item = (?<item>"[^"]+"))(?=[^{}]*count = (?<count>\d+))[^{}]*}/g,
     'PM.give_item($<item>, $<count>)'
   ],
 
