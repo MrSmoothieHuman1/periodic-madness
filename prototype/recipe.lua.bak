@@ -1,4 +1,3 @@
-local PM = require("__periodic-madness__/library")
 data:extend({
 
   {
@@ -9,8 +8,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-oxygen-gas", 5, "fluid"),
-      PM.ingredient("iron-plate", 2)
+      { type = "fluid", name = "pm-oxygen-gas", amount = 5 },
+      { "iron-plate",   2 }
     },
     result = "pm-hydrogen-fuel",
   },
@@ -19,7 +18,7 @@ data:extend({
     name = "pm-coal-crushing",
     subgroup = "pm-processing",
     category = "pm-crushing",
-    ingredients = {PM.ingredient("coal", 2)},
+    ingredients = {{"coal", 2}},
     energy_required = 2,
     result = "pm-carbon",
     result_count = 10
@@ -28,7 +27,7 @@ data:extend({
     type = "recipe",
     name = "pm-stone-crushing",
     energy_required = 2,
-    ingredients = { PM.ingredient("stone", 4) },
+    ingredients = { { "stone", 4 } },
     icon_size = 64,
     category = "pm-crushing",
     subgroup = "pm-glassing",
@@ -36,7 +35,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/stone-crushing.png",
     results =
     {
-      PM.product("pm-sand", 8),
+      { "pm-sand", 8 },
     }
   },
 
@@ -48,7 +47,7 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-nickel-plate", 2),
+      { "pm-nickel-plate", 2 },
     },
     result = "pm-basic-breadboard",
     result_count = 2
@@ -62,8 +61,8 @@ data:extend({
     show_amount_in_title = true,
     ingredients =
     {
-      PM.ingredient("iron-plate", 1),
-      PM.ingredient("copper-cable", 1),
+      { "iron-plate",   1 },
+      { "copper-cable", 1 },
     },
     result = "pm-basic-integrated-circuits",
     result_count = 3
@@ -80,12 +79,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-basic-breadboard", 1),
-      PM.ingredient("pm-vulcanised-rubber", 2)
+      { "pm-basic-breadboard",  1 },
+      { "pm-vulcanised-rubber", 2 }
     },
     results =
     {
-      PM.product("pm-fluid-breadboard", 1)
+      { "pm-fluid-breadboard", 1 }
     }
   },
   {
@@ -97,8 +96,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-basic-wiring", 2),
-      PM.ingredient("pm-carbon", 8),
+      { "pm-basic-wiring", 2 },
+      { "pm-carbon",       8 },
     },
     result = "pm-transistors",
     result_count = 2
@@ -113,12 +112,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-silver-plate", 1),
-      PM.ingredient("pm-gold-wire", 2)
+      { "pm-silver-plate", 1 },
+      { "pm-gold-wire",    2 }
     },
     results =
     {
-      PM.product("pm-fluid-integrated-circuits", 3)
+      { "pm-fluid-integrated-circuits", 3 }
     }
   },
   {
@@ -130,14 +129,14 @@ data:extend({
     order = "g",
     ingredients =
     {
-      PM.ingredient("pm-fluid-breadboard", 1),
-      PM.ingredient("pm-fluid-integrated-circuits", 3),
-      PM.ingredient("pm-transistors", 5),
-      PM.ingredient("pm-gold-wire", 3)
+      { "pm-fluid-breadboard",          1 },
+      { "pm-fluid-integrated-circuits", 3 },
+      { "pm-transistors",               5 },
+      { "pm-gold-wire",                 3 }
     },
     results =
     {
-      PM.product("pm-fluid-circuit", 1)
+      { "pm-fluid-circuit", 1 }
     }
   },
   {
@@ -149,9 +148,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-platinum-plate", 2),
-      PM.ingredient("pm-palladium-plate", 2),
-      PM.ingredient("pm-fluid-breadboard", 1),
+      { "pm-platinum-plate",   2 },
+      { "pm-palladium-plate",  2 },
+      { "pm-fluid-breadboard", 1 },
     },
     result = "pm-advanced-circuit-breadboard",
   },
@@ -165,8 +164,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-polyethylene-plastic", 1),
-      PM.ingredient("pm-gold-wire", 2),
+      { "pm-polyethylene-plastic", 1 },
+      { "pm-gold-wire",            2 },
     },
     result = "pm-advanced-integrated-circuits",
     result_count = 3
@@ -184,10 +183,10 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-indium-plate", 3),
-      PM.ingredient("pm-ferric-chloride", 10, "fluid"),
-      PM.ingredient("pm-advanced-circuit-breadboard", 1),
-      PM.ingredient("pm-cobalt-blue", 6)
+      {"pm-indium-plate", 3},
+      {type = "fluid", name = "pm-ferric-chloride", amount = 10},
+      {"pm-advanced-circuit-breadboard", 1},
+      {"pm-cobalt-blue", 6}
     },
     result = "pm-processing-breadboard",
   },
@@ -200,13 +199,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-titanium-plate", 4),
-      PM.ingredient("pm-gallium-arsenide", 1),
-      PM.ingredient("pm-indium-wire", 3),
+      { "pm-titanium-plate",   4 },
+      { "pm-gallium-arsenide", 1 },
+      { "pm-indium-wire",      3 },
     },
     results =
     {
-      PM.product("pm-processing-integrated-circuits", 3)
+      { "pm-processing-integrated-circuits", 3 }
     }
   },
   {
@@ -219,14 +218,14 @@ data:extend({
     order = "n",
     ingredients =
     {
-      PM.ingredient("pm-advanced-integrated-circuits", 3),
-      PM.ingredient("pm-gold-plating", 2),
-      PM.ingredient("pm-thallium-plate", 3),
-      PM.ingredient("pm-phosphoric-acid", 4, "fluid")
+      { "pm-advanced-integrated-circuits", 3 },
+      { "pm-gold-plating",                 2 },
+      { "pm-thallium-plate",               3 },
+      { type = "fluid",                    name = "pm-phosphoric-acid", amount = 4 }
     },
     results =
     {
-      PM.product("pm-semiconductor", 2)
+      { "pm-semiconductor", 2 }
     }
   },
   {
@@ -236,11 +235,11 @@ data:extend({
     subgroup = "pm-refined-items",
     ingredients =
     {
-      PM.ingredient("pm-indium-plate", 2)
+      { "pm-indium-plate", 2 }
     },
     results =
     {
-      PM.product("pm-indium-wire", 2)
+      { "pm-indium-wire", 2 }
     }
   },
 
@@ -252,7 +251,7 @@ data:extend({
     energy_required = 3,
     subgroup = "pm-glassing",
     order = "c",
-    ingredients = { PM.ingredient("pm-glass-pane", 2) },
+    ingredients = { { "pm-glass-pane", 2 } },
     result = "pm-science-bottle"
   },
   {
@@ -261,8 +260,8 @@ data:extend({
     show_amount_in_title = true,
     ingredients =
     {
-      PM.ingredient("pm-carbon", 50),
-      PM.ingredient("iron-plate", 2),
+      { "pm-carbon",  50 },
+      { "iron-plate", 2 },
     },
     result = "pm-air-filter",
     result_count = 2,
@@ -275,13 +274,29 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/transition-metals-cleared.png",
     subgroup = "pm-tm-tm",
     order = "a",
-    ingredients = { PM.ingredient("pm-transition-metals-ore", 5) },
+    ingredients = { { "pm-transition-metals-ore", 5 } },
     results =
     {
-      PM.product_chance("iron-ore", 5, 0.2),
-      PM.product_chance("pm-nickel-ore", 5, 0.2),
-      PM.product_chance("pm-zinc-ore", 5, 0.2),
-      PM.product_chance("copper-ore", 5, 0.2)
+      {
+        name = "iron-ore",
+        probability = 0.2,
+        amount = 5,
+      },
+      {
+        name = "pm-nickel-ore",
+        probability = 0.2,
+        amount = 5,
+      },
+      {
+        name = "pm-zinc-ore",
+        probability = 0.2,
+        amount = 5,
+      },
+      {
+        name = "copper-ore",
+        probability = 0.2,
+        amount = 5,
+      }
     }
   },
   {
@@ -295,15 +310,31 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 10),
-      PM.ingredient("pm-seawater", 100, "fluid"),
+      { "pm-transition-metals-ore", 10 },
+      { type = "fluid",             name = "pm-seawater", amount = 100 },
     },
     results =
     {
-      PM.product_chance("iron-ore", 5, 0.4),
-      PM.product_chance("pm-nickel-ore", 5, 0.4),
-      PM.product_chance("pm-zinc-ore", 5, 0.4),
-      PM.product_chance("copper-ore", 5, 0.4),
+      {
+        name = "iron-ore",
+        probability = 0.4,
+        amount = 5,
+      },
+      {
+        name = "pm-nickel-ore",
+        probability = 0.4,
+        amount = 5,
+      },
+      {
+        name = "pm-zinc-ore",
+        probability = 0.4,
+        amount = 5,
+      },
+      {
+        name = "copper-ore",
+        probability = 0.4,
+        amount = 5,
+      },
     }
   },
   {
@@ -318,16 +349,36 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 15),
-      PM.ingredient("water", 100, "fluid"),
+      { "pm-transition-metals-ore", 15 },
+      { type = "fluid",             name = "water", amount = 100 },
     },
     results =
     {
-      PM.product_chance("iron-ore", 5, 0.5),
-      PM.product_chance("pm-nickel-ore", 5, 0.5),
-      PM.product_chance("pm-zinc-ore", 5, 0.5),
-      PM.product_chance("copper-ore", 5, 0.5),
-      PM.product_chance("pm-manganese-ore", 5, 0.5),
+      {
+        name = "iron-ore",
+        probability = 0.5,
+        amount = 5,
+      },
+      {
+        name = "pm-nickel-ore",
+        probability = 0.5,
+        amount = 5,
+      },
+      {
+        name = "pm-zinc-ore",
+        probability = 0.5,
+        amount = 5,
+      },
+      {
+        name = "copper-ore",
+        probability = 0.5,
+        amount = 5,
+      },
+      {
+        name = "pm-manganese-ore",
+        probability = 0.5,
+        amount = 5,
+      },
     }
   },
   {
@@ -337,12 +388,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-solder-wire", 4),
-      PM.ingredient("pm-solder-case", 1)
+      { "pm-solder-wire", 4 },
+      { "pm-solder-case", 1 }
     },
     results =
     {
-      PM.product("pm-solder", 2)
+      { "pm-solder", 2 }
     }
   },
   {
@@ -352,12 +403,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-polyethylene-plastic", 2),
-      PM.ingredient("pm-silver-plate", 1)
+      { "pm-polyethylene-plastic", 2 },
+      { "pm-silver-plate",         1 }
     },
     results =
     {
-      PM.product("pm-solder-case", 2)
+      { "pm-solder-case", 2 }
     }
   },
   {
@@ -376,13 +427,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      PM.ingredient("sulfur", 5),
-      PM.ingredient("water", 50, "fluid"),
+      { type = "item",  name = "sulfur", amount = 5 },
+      { type = "fluid", name = "water",  amount = 50 },
     },
     hide_from_player_crafting = true,
     results =
     {
-      PM.product("pm-acidic-water", 50, "fluid")
+      { type = "fluid", name = "pm-acidic-water", amount = 50 }
     }
   },
   {
@@ -393,13 +444,13 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("automation-science-pack", 1),
-      PM.ingredient("steel-plate", 2)
+      { "automation-science-pack", 1 },
+      { "steel-plate",             2 }
     },
     enabled = false,
     results =
     {
-      PM.product("pm-alternative-science-pack", 1),
+      { "pm-alternative-science-pack", 1 },
     }
   },
   {
@@ -410,16 +461,16 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-titanium-ore", 8),
-      PM.ingredient("pm-tungsten-ore", 8),
-      PM.ingredient("pm-silver-plate", 15),
+      { "pm-titanium-ore",   8 },
+      { "pm-tungsten-ore",   8 },
+      { "pm-silver-plate",   15 },
       { "copper-plate",      14 + 1 },
-      PM.ingredient("pm-science-bottle", 1)
+      { "pm-science-bottle", 1 }
     },
     enabled = false,
     results =
     {
-      PM.product("pm-advanced-advanced-transition-metal-science-pack", 1),
+      { "pm-advanced-advanced-transition-metal-science-pack", 1 },
     }
   },
   {
@@ -431,18 +482,18 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-aluminium-plate", 10),
+      { "pm-aluminium-plate", 10 },
       { "pm-tin-plate",       4 + 1 },
-      PM.ingredient("pm-lead-plate", 10),
-      PM.ingredient("pm-thallium-ore", 3),
-      PM.ingredient("pm-bismuth-ore", 8),
-      PM.ingredient("pm-liquid-gallium", 40, "fluid"),
-      PM.ingredient("pm-science-bottle", 1)
+      { "pm-lead-plate",      10 },
+      { "pm-thallium-ore",    3 },
+      { "pm-bismuth-ore",     8 },
+      { type = "fluid",       name = "pm-liquid-gallium", amount = 40 },
+      { "pm-science-bottle",  1 }
     },
     enabled = false,
     results =
     {
-      PM.product("pm-post-transition-metal-science-pack", 1),
+      { "pm-post-transition-metal-science-pack", 1 },
     }
   },
   {
@@ -454,17 +505,17 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-caesium", 5, "fluid"),
-      PM.ingredient("pm-potassium", 12),
-      PM.ingredient("pm-sodium", 20),
-      PM.ingredient("pm-lithium-ore", 10),
-      PM.ingredient("pm-rubidium", 2),
-      PM.ingredient("pm-science-bottle", 1)
+      { type = "fluid",      name = "pm-caesium", amount = 5 },
+      { "pm-potassium",      12 },
+      { "pm-sodium",         20 },
+      { "pm-lithium-ore",    10 },
+      { "pm-rubidium",       2 },
+      { "pm-science-bottle", 1 }
     },
     enabled = false,
     results =
     {
-      PM.product("pm-alkali-metal-science-pack", 1),
+      { "pm-alkali-metal-science-pack", 1 },
     }
   },
   {
@@ -476,16 +527,16 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-antimony-ore", 6),
-      PM.ingredient("pm-arsenic-ore", 6),
-      PM.ingredient("pm-boron", 16, "fluid"),
-      PM.ingredient("pm-tellurium-plate", 10),
-      PM.ingredient("pm-science-bottle", 1)
+      { "pm-antimony-ore",    6 },
+      { "pm-arsenic-ore",     6 },
+      { type = "fluid", name = "pm-boron", amount = 16 },
+      { "pm-tellurium-plate", 10 },
+      { "pm-science-bottle",  1 }
     },
     enabled = false,
     results =
     {
-      PM.product("pm-metalloid-science-pack", 1),
+      { "pm-metalloid-science-pack", 1 },
     }
   },
 
@@ -498,11 +549,11 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("wood", 1)
+      { "wood", 1 }
     },
     results =
     {
-      PM.product("pm-wood-strips", 5)
+      { "pm-wood-strips", 5 }
     }
   },
   {
@@ -517,7 +568,7 @@ data:extend({
     order = "A",
     ingredients =
     {
-      PM.ingredient("pm-wood-strips", 10)
+      { "pm-wood-strips", 10 }
     },
     results =
     {
@@ -534,7 +585,7 @@ data:extend({
     order = "Aa",
     ingredients =
     {
-      PM.ingredient("coal", 8),
+      { "coal", 8 },
     },
     results =
     {
@@ -553,12 +604,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("water", 100, "fluid"),
-      PM.ingredient("pm-wood-strips", 10)
+      { type = "fluid",   name = "water", amount = 100 },
+      { "pm-wood-strips", 10 }
     },
     results =
     {
-      PM.product("pm-resin", 50, "fluid")
+      { type = "fluid", name = "pm-resin", amount = 50 }
     }
   },
   {
@@ -572,12 +623,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-resin", 50, "fluid"),
-      PM.ingredient("pm-carbon", 10)
+      { type = "fluid", name = "pm-resin", amount = 50 },
+      { "pm-carbon",    10 }
     },
     results =
     {
-      PM.product("pm-rubber-resin", 50, "fluid")
+      { type = "fluid", name = "pm-rubber-resin", amount = 50 }
     }
 
   },
@@ -592,12 +643,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-resin", 50, "fluid"),
-      PM.ingredient("pm-glass-fibers", 10)
+      { type = "fluid",    name = "pm-resin", amount = 50 },
+      { "pm-glass-fibers", 10 }
     },
     results =
     {
-      PM.product("pm-pheonlic-resin", 50, "fluid")
+      { type = "fluid", name = "pm-pheonlic-resin", amount = 50 }
     }
 
   },
@@ -614,11 +665,11 @@ data:extend({
     always_show_products = true,
     ingredients =
     {
-      PM.ingredient("pm-rubber-resin", 50, "fluid")
+      { type = "fluid", name = "pm-rubber-resin", amount = 50 }
     },
     results =
     {
-      PM.product("pm-rubber", 10)
+      { "pm-rubber", 10 }
     }
   },
   {
@@ -633,13 +684,13 @@ data:extend({
     order = "f",
     ingredients =
     {
-      PM.ingredient("pm-rubber", 5),
-      PM.ingredient("sulfur", 2)
+      { "pm-rubber", 5 },
+      { "sulfur",    2 }
     },
     results =
     {
-      PM.product("pm-vulcanised-rubber", 5),
-      PM.product("pm-acidic-water", 20, "fluid")
+      { "pm-vulcanised-rubber", 5 },
+      { type = "fluid",         name = "pm-acidic-water", amount = 20 }
     }
   },
   {
@@ -650,8 +701,8 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      PM.ingredient("iron-stick", 1),
-      PM.ingredient("pm-nickel-plate", 2)
+      { "iron-stick",      1 },
+      { "pm-nickel-plate", 2 }
     },
     result = "pm-basic-motor"
   },
@@ -665,13 +716,13 @@ data:extend({
     show_amount_in_title = true,
     ingredients =
     {
-      PM.ingredient("copper-cable", 1),
-      PM.ingredient("iron-stick", 1),
-      PM.ingredient("pm-nickel-plate", 2)
+      { "copper-cable",    1 },
+      { "iron-stick",      1 },
+      { "pm-nickel-plate", 2 }
     },
     results =
     {
-      PM.product("pm-mini-motor", 2)
+      { "pm-mini-motor", 2 }
     }
   },
   {
@@ -679,7 +730,7 @@ data:extend({
     name = "pm-brass-cog",
     energy_required = 1,
     enabled = false,
-    ingredients = { PM.ingredient("pm-brass-plate", 2) },
+    ingredients = { { "pm-brass-plate", 2 } },
     result = "pm-brass-cog"
   },
   {
@@ -688,10 +739,10 @@ data:extend({
     energy_required = 0.4 + 0.1,
     show_amount_in_title = true,
     enabled = false,
-    ingredients = { PM.ingredient("pm-gold-plate", 1) },
+    ingredients = { { "pm-gold-plate", 1 } },
     results =
     {
-      PM.product("pm-gold-wire", 2)
+      { "pm-gold-wire", 2 }
     }
   },
 
@@ -707,13 +758,17 @@ data:extend({
     show_amount_in_title = true,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 1)
+      { "pm-glass-pane", 1 }
     },
     results =
     {
-      PM.product("pm-glass-fibers", 5),
+      { "pm-glass-fibers", 5 },
 
-      PM.product_chance("pm-glass-shards", 2, 0.5),
+      {
+        name = "pm-glass-shards",
+        probability = 0.5,
+        amount = 2,
+      },
     }
   },
   {
@@ -724,13 +779,13 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      PM.ingredient("pm-gold-wire", 2),
-      PM.ingredient("pm-glass-fibers", 20),
-      PM.ingredient("pm-pheonlic-resin", 10, "fluid")
+      { "pm-gold-wire",    2 },
+      { "pm-glass-fibers", 20 },
+      { type = "fluid",    name = "pm-pheonlic-resin", amount = 10 }
     },
     results =
     {
-      PM.product("pm-fiberoptic-cable", 2)
+      { "pm-fiberoptic-cable", 2 }
     }
   },
   {
@@ -740,11 +795,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-solder-plate", 1)
+      { "pm-solder-plate", 1 }
     },
     results =
     {
-      PM.product("pm-solder-wire", 2)
+      { "pm-solder-wire", 2 }
     }
   },
   {
@@ -755,13 +810,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-cadnium-plate", 2),
+      { "pm-cadnium-plate", 2 },
       { "pm-glass-pane",    6 - 1 },
-      PM.ingredient("pm-gold-wire", 3)
+      { "pm-gold-wire",     3 }
     },
     results =
     {
-      PM.product("pm-solar-cell", 2)
+      { "pm-solar-cell", 2 }
     }
   },
   {
@@ -774,12 +829,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-ammonia-gas", 4, "fluid"),
-      PM.ingredient("pm-liquid-gallium", 10, "fluid")
+      { type = "fluid", name = "pm-ammonia-gas",    amount = 4 + 1 },
+      { type = "fluid", name = "pm-liquid-gallium", amount = 10 }
     },
     results =
     {
-      PM.product("pm-gallium-nitride", 6)
+      { "pm-gallium-nitride", 6 }
     }
   },
   {
@@ -792,12 +847,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-arsenic-ore", 4),
-      PM.ingredient("pm-liquid-gallium", 10, "fluid")
+      {"pm-arsenic-ore", 4},
+      {type = "fluid", name = "pm-liquid-gallium", amount = 10}
     },
     results =
     {
-      PM.product("pm-gallium-arsenide", 6)
+      {"pm-gallium-arsenide", 6}
     }
   },
   {
@@ -811,15 +866,19 @@ data:extend({
     main_product = "pm-aluminium-gallium-indium-phosphide",
     ingredients =
     {
-      PM.ingredient("pm-gallium-arsenide", 1),
-      PM.ingredient("pm-phosphoric-acid", 10, "fluid"),
-      PM.ingredient("pm-indium-plate", 5),
-      PM.ingredient("pm-aluminium-plate", 5)
+      { "pm-gallium-arsenide", 1 },
+      { type = "fluid",        name = "pm-phosphoric-acid", amount = 10 },
+      { "pm-indium-plate",     5 },
+      { "pm-aluminium-plate",  5 }
     },
     results =
     {
-      PM.product("pm-aluminium-gallium-indium-phosphide", 6),
-      PM.product_chance("pm-gallium-arsenide", 1, 0.6)
+      { "pm-aluminium-gallium-indium-phosphide", 6 },
+      {
+        name = "pm-gallium-arsenide",
+        amount = 1,
+        probability = 0.6
+      }
     }
   },
   {
@@ -831,13 +890,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 6),
-      PM.ingredient("pm-basic-wiring", 20),
-      PM.ingredient("pm-gallium-nitride", 3),
+      { "pm-glass-pane",      6 },
+      { "pm-basic-wiring",    20 },
+      { "pm-gallium-nitride", 3 },
     },
     results =
     {
-      PM.product("pm-module-speed-light", 1)
+      { "pm-module-speed-light", 1 }
     }
   },
   {
@@ -849,13 +908,13 @@ data:extend({
     order = "g",
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 6),
-      PM.ingredient("pm-basic-wiring", 20),
-      PM.ingredient("pm-gallium-arsenide", 3),
+      { "pm-glass-pane",       6 },
+      { "pm-basic-wiring",     20 },
+      { "pm-gallium-arsenide", 3 },
     },
     results =
     {
-      PM.product("pm-module-efficiency-light", 1)
+      { "pm-module-efficiency-light", 1 }
     }
   },
   {
@@ -867,13 +926,13 @@ data:extend({
     order = "l",
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 6),
-      PM.ingredient("pm-basic-wiring", 20),
-      PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
+      { "pm-glass-pane",                         6 },
+      { "pm-basic-wiring",                       20 },
+      { "pm-aluminium-gallium-indium-phosphide", 3 },
     },
     results =
     {
-      PM.product("pm-module-productivity-light", 1)
+      { "pm-module-productivity-light", 1 }
     }
   },
   {
@@ -886,14 +945,14 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-helium-gas", 40, "fluid"),
-      PM.ingredient("pm-platinum-plate", 4),
-      PM.ingredient("pm-vulcanised-rubber", 2),
-      PM.ingredient("pm-lightweight-panelling", 6),
+      { type = "fluid",             name = "pm-helium-gas", amount = 40 },
+      { "pm-platinum-plate",        4 },
+      { "pm-vulcanised-rubber",     2 },
+      { "pm-lightweight-panelling", 6 },
     },
     results =
     {
-      PM.product("pm-module-case", 1)
+      { "pm-module-case", 1 }
     }
   },
   {
@@ -907,11 +966,11 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      PM.ingredient("pm-water-vapour", 5, "fluid")
+      { type = "fluid", name = "pm-water-vapour", amount = 5 }
     },
     results =
     {
-      PM.product("water", 10, "fluid")
+      { type = "fluid", name = "water", amount = 10 }
     }
   },
   {
@@ -923,13 +982,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-anti-bacterial-panelling", 8),
-      PM.ingredient("advanced-circuit", 6),
+      { "pm-anti-bacterial-panelling", 8 },
+      { "advanced-circuit",            6 },
       { "pm-basic-wiring",             14 + 1 },
     },
     results =
     {
-      PM.product("pm-blank-bio-module", 1)
+      { "pm-blank-bio-module", 1 }
     }
   },
   {
@@ -942,13 +1001,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-blank-bio-module", 1),
-      PM.ingredient("pm-phosphoramidite", 4, "fluid"),
-      PM.ingredient("pm-gene-base", 20, "fluid")
+      { "pm-blank-bio-module", 1 },
+      { type = "fluid",        name = "pm-phosphoramidite", amount = 4 + 1 },
+      { type = "fluid",        name = "pm-gene-base",       amount = 20 }
     },
     results =
     {
-      PM.product("pm-agility-bio-module", 1)
+      { "pm-agility-bio-module", 1 }
     }
   },
   {
@@ -961,13 +1020,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-blank-bio-module", 1),
-      PM.ingredient("pm-CISD2", 4, "fluid"),
-      PM.ingredient("pm-gene-base", 20, "fluid")
+      { "pm-blank-bio-module", 1 },
+      { type = "fluid",        name = "pm-CISD2",     amount = 4 + 1 },
+      { type = "fluid",        name = "pm-gene-base", amount = 20 }
     },
     results =
     {
-      PM.product("pm-health-bio-module", 1)
+      { "pm-health-bio-module", 1 }
     }
   },
   {
@@ -980,13 +1039,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-blank-bio-module", 1),
-      PM.ingredient("pm-legendary-myostatin", 4, "fluid"),
-      PM.ingredient("pm-gene-base", 20, "fluid")
+      { "pm-blank-bio-module", 1 },
+      { type = "fluid",        name = "pm-legendary-myostatin", amount = 4 + 1 },
+      { type = "fluid",        name = "pm-gene-base",           amount = 20 }
     },
     results =
     {
-      PM.product("pm-strength-bio-module", 1)
+      { "pm-strength-bio-module", 1 }
     }
   },
 
@@ -1001,13 +1060,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-ammonia-gas", 20, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 1),
+      { type = "fluid", name = "pm-ammonia-gas", amount = 20 },
+      { "pm-palladium-catalyst", 1 },
     },
     results =
     {
-      PM.product("pm-catalyst-container", 1),
-      PM.product("pm-trace-acetonitrile", 10, "fluid"),
+      { "pm-catalyst-container", 1 },
+      { type = "fluid", name = "pm-trace-acetonitrile", amount = 10 },
     }
   },
   {
@@ -1022,12 +1081,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-trace-acetonitrile", 40, "fluid"),
+      { type = "fluid", name = "pm-trace-acetonitrile", amount = 40 },
     },
     results =
     {
-      PM.product("pm-acetonitrile", 10, "fluid"),
-      PM.product("pm-trace-acetonitrile", 20, "fluid")
+      { type = "fluid", name = "pm-acetonitrile",       amount = 10 },
+      { type = "fluid", name = "pm-trace-acetonitrile", amount = 20 }
     }
   },
   {
@@ -1041,15 +1100,15 @@ data:extend({
     main_product = "pm-phosphoramidite",
     ingredients =
     {
-      PM.ingredient("pm-acetonitrile", 10, "fluid"),
-      PM.ingredient("pm-oxygen-gas", 20, "fluid"),
-      PM.ingredient("pm-red-phosphorus", 6),
-      PM.ingredient("pm-carbon", 6)
+      { type = "fluid",      name = "pm-acetonitrile", amount = 10 },
+      { type = "fluid",      name = "pm-oxygen-gas",   amount = 20 },
+      { "pm-red-phosphorus", 6 },
+      { "pm-carbon",         6 }
     },
     results =
     {
-      PM.product("pm-phosphoramidite", 2.4, "fluid"),
-      PM.product_range("pm-trace-acetonitrile", 2, 8, "fluid")
+      { type = "fluid", name = "pm-phosphoramidite",    amount = 2.4 + 0.1 },
+      { type = "fluid", name = "pm-trace-acetonitrile", amount_min = 2,    amount_max = 8 }
     }
   },
   {
@@ -1063,13 +1122,13 @@ data:extend({
     main_product = "pm-common-myostatin",
     ingredients =
     {
-      PM.ingredient("pm-benzene", 40, "fluid"),
-      PM.ingredient("pm-vanadium-oxide-catalyst", 1)
+      { type = "fluid",               name = "pm-benzene", amount = 40 + 10 },
+      { "pm-vanadium-oxide-catalyst", 1 }
     },
     results =
     {
-      PM.product("pm-common-myostatin", 10, "fluid"),
-      PM.product("pm-catalyst-container", 1)
+      { type = "fluid",          name = "pm-common-myostatin", amount = 10 },
+      { "pm-catalyst-container", 1 }
     }
   },
   {
@@ -1082,11 +1141,11 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-broken-myostatin", 10, "fluid"),
+      { type = "fluid", name = "pm-broken-myostatin", amount = 10 },
     },
     results =
     {
-      PM.product("pm-benzene", 40, "fluid")
+      { type = "fluid", name = "pm-benzene", amount = 40 }
     }
   },
   {
@@ -1101,13 +1160,18 @@ data:extend({
     order = "c",
     ingredients =
     {
-      PM.ingredient("pm-common-myostatin", 4, "fluid"),
-      PM.ingredient("pm-oxygen-gas", 24, "fluid")
+      { type = "fluid", name = "pm-common-myostatin", amount = 4 + 1 },
+      { type = "fluid", name = "pm-oxygen-gas",       amount = 24 + 1 }
     },
     results =
     {
-      PM.product_chance("pm-rare-myostatin", 4, 0.4, "fluid"),
-      PM.product_chance("pm-broken-myostatin", 4, 0.4, "fluid")
+      { type = "fluid", name = "pm-rare-myostatin", amount = 4 + 1, probability = 0.4 + 0.1 },
+      {
+        type = "fluid",
+        name = "pm-broken-myostatin",
+        amount = 4 + 1,
+        probability = 0.4 + 0.1
+      }
     }
   },
   {
@@ -1122,13 +1186,18 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("pm-rare-myostatin", 4, "fluid"),
-      PM.ingredient("pm-nitrogen-gas", 24, "fluid"),
+      { type = "fluid", name = "pm-rare-myostatin", amount = 4 + 1 },
+      { type = "fluid", name = "pm-nitrogen-gas",   amount = 24 + 1 },
     },
     results =
     {
-      PM.product_chance("pm-legendary-myostatin", 4, 0.4, "fluid"),
-      PM.product_chance("pm-broken-myostatin", 4, 0.4, "fluid")
+      { type = "fluid", name = "pm-legendary-myostatin", amount = 4 + 1, probability = 0.4 + 0.1 },
+      {
+        type = "fluid",
+        name = "pm-broken-myostatin",
+        amount = 4 + 1,
+        probability = 0.4 + 0.1
+      }
     }
   },
   {
@@ -1143,12 +1212,17 @@ data:extend({
     ingredients =
     {
       { "iron-plate",   4 + 1 },
-      PM.ingredient("sulfuric-acid", 20, "fluid")
+      { type = "fluid", name = "sulfuric-acid", amount = 20 }
     },
     results =
     {
-      PM.product("pm-iron-sulfur-cluster", 1),
-      PM.product_range_chance("sulfur", 1, 3, 0.24)
+      { "pm-iron-sulfur-cluster", 1 },
+      {
+        name = "sulfur",
+        amount_min = 1,
+        amount_max = 3,
+        probability = 0.24 + 0.01
+      }
     }
   },
   {
@@ -1162,15 +1236,24 @@ data:extend({
     main_product = "pm-CISD2",
     ingredients =
     {
-      PM.ingredient("pm-iron-sulfur-cluster", 2),
-      PM.ingredient("pm-zinc-plate", 8),
-      PM.ingredient("pm-benzene", 20, "fluid")
+      { "pm-iron-sulfur-cluster", 2 },
+      { "pm-zinc-plate",          8 },
+      { type = "fluid",           name = "pm-benzene", amount = 20 }
     },
     results =
     {
-      PM.product("pm-CISD2", 4, "fluid"),
-      PM.product_range_chance("pm-zinc-plate", 2, 4, 0.2),
-      PM.product_chance("pm-ferrum", 3, 0.4)
+      { type = "fluid", name = "pm-CISD2", amount = 4 + 1 },
+      {
+        name = "pm-zinc-plate",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.2,
+      },
+      {
+        name = "pm-ferrum",
+        amount = 3,
+        probability = 0.4
+      }
     }
   },
   {
@@ -1183,15 +1266,15 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      PM.ingredient("pm-heavy-lubricant", 10, "fluid"),
-      PM.ingredient("pm-basic-wiring", 10),
-      PM.ingredient("engine-unit", 1),
-      PM.ingredient("advanced-circuit", 2),
-      PM.ingredient("pm-kasethal-plate", 4)
+      { type = "fluid",      name = "pm-heavy-lubricant", amount = 10 },
+      { "pm-basic-wiring",   10 },
+      { "engine-unit",       1 },
+      { "advanced-circuit",  2 },
+      { "pm-kasethal-plate", 4 }
     },
     results =
     {
-      PM.product("electric-engine-unit", 1)
+      { "electric-engine-unit", 1 }
     }
   },
   {
@@ -1206,15 +1289,29 @@ data:extend({
     order = "fa",
     ingredients =
     {
-      PM.ingredient("pm-gold-wire", 3),
+      { "pm-gold-wire",       3 },
       { "electronic-circuit", 4 + 1 },
-      PM.ingredient("pm-resin", 20, "fluid")
+      { type = "fluid",       name = "pm-resin", amount = 20 + 20 + 10 }
     },
     results =
     {
-      PM.product_range_chance("pm-fluid-circuit", 1, 3, 0.4),
-      PM.product_range_chance("electronic-circuit", 1, 3, 0.7),
-      PM.product_chance("copper-cable", 2, 0.2)
+      {
+        name = "pm-fluid-circuit",
+        probability = 0.4,
+        amount_min = 1,
+        amount_max = 3
+      },
+      {
+        name = "electronic-circuit",
+        probability = 0.7,
+        amount_min = 1,
+        amount_max = 3,
+      },
+      {
+        name = "copper-cable",
+        probability = 0.2,
+        amount = 2
+      }
     }
 
   },
@@ -1226,7 +1323,7 @@ data:extend({
     subgroup = "pm-refined-items",
     ingredients =
     {
-      PM.ingredient("pm-polyethylene-plastic", 4),
+      { "pm-polyethylene-plastic", 4 },
     },
     result = "pm-flux-container"
   },
@@ -1238,10 +1335,10 @@ data:extend({
     subgroup = "pm-refined-items",
     ingredients =
     {
-      PM.ingredient("pm-flux-container", 1),
-      PM.ingredient("pm-sand", 8),
-      PM.ingredient("pm-coke", 2),
-      PM.ingredient("pm-flourine", 4)
+      { "pm-flux-container", 1 },
+      { "pm-sand",           8 },
+      { "pm-coke",           2 },
+      { "pm-flourine",       4 }
     },
     result = "pm-filled-flux-container"
   },
@@ -1254,13 +1351,13 @@ data:extend({
     main_product = "pm-ethylene-glycol",
     ingredients =
     {
-      PM.ingredient("pm-ethylene-gas", 12, "fluid"),
-      PM.ingredient("water", 24, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 2)
+      { type = "fluid",          name = "pm-ethylene-gas", amount = 12 },
+      { type = "fluid",          name = "water",           amount = 24 },
+      { "pm-palladium-catalyst", 2 }
     },
     results =
     {
-      PM.product("pm-ethylene-glycol", 10, "fluid"),
+      { type = "fluid", name = "pm-ethylene-glycol", amount = 10 },
     }
   },
   {
@@ -1271,12 +1368,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-ethylene-glycol", 10, "fluid"),
-      PM.ingredient("pm-nitrogen-gas", 10, "fluid"),
+      { type = "fluid", name = "pm-ethylene-glycol", amount = 10 },
+      { type = "fluid", name = "pm-nitrogen-gas",    amount = 10 },
     },
     results =
     {
-      PM.product("pm-coolant", 10, "fluid")
+      { type = "fluid", name = "pm-coolant", amount = 10 + 4 + 1 }
     }
   },
   {
@@ -1288,14 +1385,14 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-gallium-arsenide", 2),
-      PM.ingredient("solar-panel-equipment", 1),
-      PM.ingredient("pm-lightweight-panelling", 10),
-      PM.ingredient("processing-unit", 8)
+      { "pm-gallium-arsenide",      2 },
+      { "solar-panel-equipment",    1 },
+      { "pm-lightweight-panelling", 10 },
+      { "processing-unit",          8 }
     },
     results =
     {
-      PM.product("pm-solar-panel-equipment-2", 1)
+      { "pm-solar-panel-equipment-2", 1 }
     }
   },
   {
@@ -1310,13 +1407,26 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("speed-module", 1)
+      { "speed-module", 1 }
     },
     results =
     {
-      PM.product_chance("pm-module-case", 1, 0.9),
-      PM.product_chance("pm-module-speed-light", 1, 0.9),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.8)
+      {
+        name = "pm-module-case",
+        amount = 1,
+        probability = 0.9
+      },
+      {
+        name = "pm-module-speed-light",
+        amount = 1,
+        probability = 0.9
+      },
+      {
+        name = "electronic-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.8
+      }
     }
   },
   {
@@ -1331,14 +1441,32 @@ data:extend({
     order = "e",
     ingredients =
     {
-      PM.ingredient("speed-module", 1)
+      { "speed-module", 1 }
     },
     results =
     {
-      PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-module-speed-light", 1, 0.8),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.7),
-      PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.7),
+      {
+        name = "pm-module-case",
+        amount = 1,
+        probability = 0.8
+      },
+      {
+        name = "pm-module-speed-light",
+        amount = 1,
+        probability = 0.8
+      },
+      {
+        name = "electronic-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.7
+      },
+      {
+        name = "pm-fluid-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.7
+      },
     }
   },
   {
@@ -1353,13 +1481,26 @@ data:extend({
     order = "h",
     ingredients =
     {
-      PM.ingredient("effectivity-module", 1)
+      { "effectivity-module", 1 }
     },
     results =
     {
-      PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-module-efficiency-light", 1, 0.8),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
+      {
+        name = "pm-module-case",
+        amount = 1,
+        probability = 0.8
+      },
+      {
+        name = "pm-module-efficiency-light",
+        amount = 1,
+        probability = 0.8
+      },
+      {
+        name = "electronic-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.7
+      }
     }
   },
   {
@@ -1374,14 +1515,32 @@ data:extend({
     order = "i",
     ingredients =
     {
-      PM.ingredient("effectivity-module-2", 1)
+      { "effectivity-module-2", 1 }
     },
     results =
     {
-      PM.product_chance("pm-module-case", 1, 0.7),
-      PM.product_chance("pm-module-efficiency-light", 1, 0.7),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.6),
-      PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.6),
+      {
+        name = "pm-module-case",
+        amount = 1,
+        probability = 0.7
+      },
+      {
+        name = "pm-module-efficiency-light",
+        amount = 1,
+        probability = 0.7
+      },
+      {
+        name = "electronic-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.6
+      },
+      {
+        name = "pm-fluid-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.6
+      },
     }
   },
   {
@@ -1396,13 +1555,26 @@ data:extend({
     order = "m",
     ingredients =
     {
-      PM.ingredient("productivity-module", 1)
+      { "productivity-module", 1 }
     },
     results =
     {
-      PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-module-speed-light", 1, 0.8),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
+      {
+        name = "pm-module-case",
+        amount = 1,
+        probability = 0.8
+      },
+      {
+        name = "pm-module-speed-light",
+        amount = 1,
+        probability = 0.8
+      },
+      {
+        name = "electronic-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.7
+      }
     }
   },
   {
@@ -1417,14 +1589,32 @@ data:extend({
     order = "n",
     ingredients =
     {
-      PM.ingredient("productivity-module-2", 1)
+      { "productivity-module-2", 1 }
     },
     results =
     {
-      PM.product_chance("pm-module-case", 1, 0.7),
-      PM.product_chance("pm-module-speed-light", 1, 0.7),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.6),
-      PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.6),
+      {
+        name = "pm-module-case",
+        amount = 1,
+        probability = 0.7
+      },
+      {
+        name = "pm-module-speed-light",
+        amount = 1,
+        probability = 0.7
+      },
+      {
+        name = "electronic-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.6
+      },
+      {
+        name = "pm-fluid-circuit",
+        amount_min = 2,
+        amount_max = 4,
+        probability = 0.6
+      },
     }
   },
   {
@@ -1437,13 +1627,13 @@ data:extend({
     order = "e",
     ingredients =
     {
-      PM.ingredient("pm-seawater", 100, "fluid"),
-      PM.ingredient("pm-sand", 10),
-      PM.ingredient("wood", 4)
+      { type = "fluid", name = "pm-seawater", amount = 100 },
+      { "pm-sand",      10 },
+      { "wood",         4 }
     },
     results =
     {
-      PM.product("pm-creosote", 40, "fluid")
+      { type = "fluid", name = "pm-creosote", amount = 40 + 10 }
     }
   },
   {
@@ -1456,13 +1646,13 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      PM.ingredient("pm-seawater", 100, "fluid"),
-      PM.ingredient("pm-bitumen", 5),
-      PM.ingredient("wood", 2)
+      { type = "fluid", name = "pm-seawater", amount = 100 },
+      { "pm-bitumen",   5 },
+      { "wood",         2 }
     },
     results =
     {
-      PM.product("pm-creosote", 40, "fluid")
+      { type = "fluid", name = "pm-creosote", amount = 40 + 10 }
     }
   },
   {
@@ -1475,13 +1665,13 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-aluminium-plate", 2),
-      PM.ingredient("pm-zirconia", 2),
-      PM.ingredient("pm-creosote", 10, "fluid")
+      { "pm-aluminium-plate", 2 },
+      { "pm-zirconia",        2 },
+      { type = "fluid",       name = "pm-creosote", amount = 10 }
     },
     results =
     {
-      PM.product("pm-crucible", 2)
+      { "pm-crucible", 2 }
     }
   },
   {
@@ -1494,11 +1684,11 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-hydrogen-gas", 20, "fluid")
+      { type = "fluid", name = "pm-hydrogen-gas", amount = 20 }
     },
     results =
     {
-      PM.product("pm-proton-beam", 20, "fluid")
+      { type = "fluid", name = "pm-proton-beam", amount = 20 }
     }
   },
   {
@@ -1511,13 +1701,13 @@ data:extend({
     order = "x",
     ingredients =
     {
-      PM.ingredient("pm-zirconium-ore", 10),
-      PM.ingredient("pm-zirconia", 10),
-      PM.ingredient("pm-polyethylene-plastic", 2)
+      { "pm-zirconium-ore",        10 },
+      { "pm-zirconia",             10 },
+      { "pm-polyethylene-plastic", 2 }
     },
     results =
     {
-      PM.product("pm-zirconium-pants", 1)
+      { "pm-zirconium-pants", 1 }
     }
   },
   {
@@ -1529,14 +1719,14 @@ data:extend({
     order = "f",
     ingredients =
     {
-      PM.ingredient("copper-plate", 2),
-      PM.ingredient("pm-zinc-plate", 2),
-      PM.ingredient("pm-aluminium-plate", 2),
-      PM.ingredient("pm-catalyst-container", 2)
+      { "copper-plate",          2 },
+      { "pm-zinc-plate",         2 },
+      { "pm-aluminium-plate",    2 },
+      { "pm-catalyst-container", 2 }
     },
     results =
     {
-      PM.product("pm-copper-zinc-aluminium-catalyst", 2)
+      { "pm-copper-zinc-aluminium-catalyst", 2 }
     }
   },
   {
@@ -1550,15 +1740,19 @@ data:extend({
     main_product = "pm-methanol",
     ingredients =
     {
-      PM.ingredient("pm-carbon-monoxide", 10, "fluid"),
-      PM.ingredient("pm-hydrogen-gas", 30, "fluid"),
-      PM.ingredient("pm-copper-zinc-aluminium-catalyst", 1)
+      { type = "fluid",                      name = "pm-carbon-monoxide", amount = 10 },
+      { type = "fluid",                      name = "pm-hydrogen-gas",    amount = 30 },
+      { "pm-copper-zinc-aluminium-catalyst", 1 }
     },
     results =
     {
-      PM.product("pm-methanol", 10, "fluid"),
-      PM.product("water", 10, "fluid"),
-      PM.product_chance("pm-catalyst-container", 1, 0.98)
+      { type = "fluid", name = "pm-methanol", amount = 10 },
+      { type = "fluid", name = "water",       amount = 10 },
+      {
+        name = "pm-catalyst-container",
+        amount = 1,
+        probability = 0.98
+      }
     }
   },
   {
@@ -1572,14 +1766,18 @@ data:extend({
     main_product = "pm-methyl-methacrylate",
     ingredients =
     {
-      PM.ingredient("pm-methanol", 20, "fluid"),
-      PM.ingredient("sulfuric-acid", 4, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 1)
+      { type = "fluid",          name = "pm-methanol",   amount = 20 },
+      { type = "fluid",          name = "sulfuric-acid", amount = 4 + 1 },
+      { "pm-palladium-catalyst", 1 }
     },
     results =
     {
-      PM.product("pm-methyl-methacrylate", 15, "fluid"),
-      PM.product_chance("pm-catalyst-container", 1, 0.98)
+      { type = "fluid", name = "pm-methyl-methacrylate", amount = 15 },
+      {
+        name = "pm-catalyst-container",
+        amount = 1,
+        probability = 0.98
+      }
     }
   },
   {
@@ -1592,12 +1790,12 @@ data:extend({
     order = "i",
     ingredients =
     {
-      PM.ingredient("pm-plastic-pellets", 5),
-      PM.ingredient("pm-methyl-methacrylate", 20, "fluid"),
+      { "pm-plastic-pellets", 5 },
+      { type = "fluid",       name = "pm-methyl-methacrylate", amount = 20 },
     },
     results =
     {
-      PM.product("pm-polymethyl-methacrylate", 2)
+      { "pm-polymethyl-methacrylate", 2 }
     }
   },
   {
@@ -1625,14 +1823,14 @@ data:extend({
     main_product = "pm-polymethyl-methacrylate",
     ingredients =
     {
-      PM.ingredient("pm-plastic-pellets", 8),
-      PM.ingredient("pm-methyl-methacrylate", 25, "fluid"),
-      PM.ingredient("pm-vinyl-bromide", 10, "fluid")
+      { "pm-plastic-pellets", 8 },
+      { type = "fluid",       name = "pm-methyl-methacrylate", amount = 25 },
+      { type = "fluid",       name = "pm-vinyl-bromide",       amount = 10 }
     },
     results =
     {
-      PM.product("pm-polymethyl-methacrylate", 4),
-      PM.product_chance("pm-hydrogen-gas", 5, 0.5, "fluid")
+      { "pm-polymethyl-methacrylate", 4 },
+      { type = "fluid",               name = "pm-hydrogen-gas", amount = 5, probability = 0.5 }
     }
   },
 
@@ -1647,13 +1845,13 @@ data:extend({
     main_product = "pm-chloronated-solution",
     ingredients =
     {
-      PM.ingredient("pm-methyl-chloride", 10, "fluid"),
-      PM.ingredient("pm-chlorine", 20, "fluid")
+      { type = "fluid", name = "pm-methyl-chloride", amount = 10 },
+      { type = "fluid", name = "pm-chlorine",        amount = 20 }
     },
     results =
     {
-      PM.product_range("pm-hydrochloric-acid", 2, 5, "fluid"),
-      PM.product("pm-chloronated-solution", 12, "fluid")
+      { type = "fluid", name = "pm-hydrochloric-acid",    amount_min = 2, amount_max = 5 },
+      { type = "fluid", name = "pm-chloronated-solution", amount = 12 }
     }
   },
   {
@@ -1668,14 +1866,18 @@ data:extend({
     order = "k",
     ingredients =
     {
-      PM.ingredient("pm-chloronated-solution", 6, "fluid"),
-      PM.ingredient("pm-vanadium-oxide-catalyst", 2)
+      { type = "fluid",               name = "pm-chloronated-solution", amount = 6 },
+      { "pm-vanadium-oxide-catalyst", 2 }
     },
     results =
     {
-      PM.product_range("pm-chloroform", 6, 8, "fluid"),
-      PM.product_range("pm-carbon-tetrachloride", 2, 6, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 2)
+      { type = "fluid", name = "pm-chloroform",           amount_min = 6, amount_max = 8 },
+      { type = "fluid", name = "pm-carbon-tetrachloride", amount_min = 2, amount_max = 6 },
+      {
+        name = "pm-catalyst-container",
+        amount_min = 1,
+        amount_max = 2
+      }
     }
   },
   {
@@ -1689,12 +1891,12 @@ data:extend({
     main_product = "pm-tetrafluoroethylene",
     ingredients =
     {
-      PM.ingredient("pm-chloroform", 24, "fluid"),
-      PM.ingredient("pm-hydroflouric-acid", 20, "fluid")
+      { type = "fluid", name = "pm-chloroform",        amount = 24 },
+      { type = "fluid", name = "pm-hydroflouric-acid", amount = 20 }
     },
     results =
     {
-      PM.product("pm-tetrafluoroethylene", 5, "fluid")
+      { type = "fluid", name = "pm-tetrafluoroethylene", amount = 5 }
     }
   },
   {
@@ -1707,12 +1909,12 @@ data:extend({
     order = "l",
     ingredients =
     {
-      PM.ingredient("pm-tetrafluoroethylene", 5, "fluid"),
-      PM.ingredient("pm-vinyl-bromide", 10, "fluid")
+      { type = "fluid", name = "pm-tetrafluoroethylene", amount = 5 },
+      { type = "fluid", name = "pm-vinyl-bromide",       amount = 10 }
     },
     results =
     {
-      PM.product("pm-polytetrafluoroethylene", 2)
+      { "pm-polytetrafluoroethylene", 2 }
     }
   },
 
@@ -1726,13 +1928,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-calcium-sulfate", 8),
-      PM.ingredient("pm-resin", 20, "fluid"),
-      PM.ingredient("water", 40, "fluid"),
+      { "pm-calcium-sulfate", 8 },
+      { type = "fluid",       name = "pm-resin", amount = 20 },
+      { type = "fluid",       name = "water",    amount = 40 },
     },
     results =
     {
-      PM.product("pm-plaster-of-nauvis", 20, "fluid")
+      { type = "fluid", name = "pm-plaster-of-nauvis", amount = 20 }
     }
   },
   {
@@ -1745,11 +1947,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-plaster-of-nauvis", 10, "fluid")
+      { type = "fluid", name = "pm-plaster-of-nauvis", amount = 10 }
     },
     results =
     {
-      PM.product("pm-plastic-science-mold", 2)
+      { "pm-plastic-science-mold", 2 }
     }
   },
   {
@@ -1762,12 +1964,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      PM.ingredient("pm-plastic-science-mold", 1),
-      PM.ingredient("pm-polymethyl-methacrylate", 4)
+      { "pm-plastic-science-mold",    1 },
+      { "pm-polymethyl-methacrylate", 4 }
     },
     results =
     {
-      PM.product("pm-filled-plastic-science-mold", 1)
+      { "pm-filled-plastic-science-mold", 1 }
     }
   },
   {
@@ -1780,13 +1982,17 @@ data:extend({
     main_product = "pm-plastic-science-bottle",
     ingredients =
     {
-      PM.ingredient("pm-science-bottle", 1),
-      PM.ingredient("pm-filled-plastic-science-mold", 1)
+      { "pm-science-bottle",              1 },
+      { "pm-filled-plastic-science-mold", 1 }
     },
     results =
     {
-      PM.product("pm-plastic-science-bottle", 1),
-      PM.product_chance("pm-plastic-science-mold", 1, 0.75)
+      { "pm-plastic-science-bottle", 1 },
+      {
+        name = "pm-plastic-science-mold",
+        amount = 1,
+        probability = 0.75
+      }
     }
   },
   {
@@ -1798,12 +2004,12 @@ data:extend({
     subgroup = "pm-circuits",
     ingredients =
     {
-      PM.ingredient("pm-ferrum", 4),
-      PM.ingredient("pm-chlorine", 20, "fluid")
+      { "pm-ferrum",    4 },
+      { type = "fluid", name = "pm-chlorine", amount = 20 }
     },
     results =
     {
-      PM.product("pm-ferric-chloride", 20, "fluid")
+      { type = "fluid", name = "pm-ferric-chloride", amount = 20 }
     }
   },
   {
@@ -1815,12 +2021,12 @@ data:extend({
     subgroup = "pm-circuits",
     ingredients =
     {
-      PM.ingredient("iron-plate", 4),
-      PM.ingredient("pm-chlorine", 10, "fluid")
+      { "iron-plate",   4 },
+      { type = "fluid", name = "pm-chlorine", amount = 10 }
     },
     results =
     {
-      PM.product("pm-ferric-chloride", 10, "fluid")
+      { type = "fluid", name = "pm-ferric-chloride", amount = 10 }
     }
   },
   {
@@ -1834,13 +2040,13 @@ data:extend({
     energy_required = 0.3,
     ingredients =
     {
-      PM.ingredient("pm-gallium-arsenide", 2),
-      PM.ingredient("pm-polyethylene-plastic", 3),
-      PM.ingredient("pm-basic-wiring", 4)
+      { "pm-gallium-arsenide",     2 },
+      { "pm-polyethylene-plastic", 3 },
+      { "pm-basic-wiring",         4 }
     },
     results =
     {
-      PM.product("pm-transistors", 6)
+      { "pm-transistors", 6 }
     }
   },
   {
@@ -1853,12 +2059,12 @@ data:extend({
     order = "ca",
     ingredients =
     {
-      PM.ingredient("pm-ammonia-gas", 10, "fluid"),
-      PM.ingredient("pm-hydrochloric-acid", 20, "fluid")
+      { type = "fluid", name = "pm-ammonia-gas",       amount = 10 },
+      { type = "fluid", name = "pm-hydrochloric-acid", amount = 20 }
     },
     results =
     {
-      PM.product("pm-ammonium-chloride", 10)
+      { "pm-ammonium-chloride", 10 }
     }
   },
   {
@@ -1868,14 +2074,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-platinum-plate", 3),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-polyethylene-plastic", 4),
-      PM.ingredient("pm-stainless-steel-alloy", 2),
+      { "pm-platinum-plate",        3 },
+      { "pm-gold-plate",            3 },
+      { "pm-polyethylene-plastic",  4 },
+      { "pm-stainless-steel-alloy", 2 },
     },
     results =
     {
-      PM.product("pm-air-filter", 8)
+      { "pm-air-filter", 8 }
     }
   },
   {
@@ -1886,13 +2092,13 @@ data:extend({
     energy_required = 20,
     ingredients =
     {
-      PM.ingredient("pm-ammonium-chloride", 20),
-      PM.ingredient("pm-argon-gas", 40, "fluid"),
-      PM.ingredient("pm-heavyweight-framing", 12),
+      { "pm-ammonium-chloride",   20 },
+      { type = "fluid",           name = "pm-argon-gas", amount = 40 },
+      { "pm-heavyweight-framing", 12 },
     },
     results =
     {
-      PM.product("pm-seed-crystal", 2)
+      { "pm-seed-crystal", 2 }
     }
   },
   {
@@ -1902,13 +2108,13 @@ data:extend({
     energy_reqiured = 10,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 16),
-      PM.ingredient("pm-lead-plate", 8),
-      PM.ingredient("pm-zirconia", 12)
+      { "pm-glass-pane", 16 },
+      { "pm-lead-plate", 8 },
+      { "pm-zirconia",   12 }
     },
     results =
     {
-      PM.product("pm-empty-reactor-cell", 10)
+      { "pm-empty-reactor-cell", 10 }
     }
   },
   {
@@ -1920,12 +2126,12 @@ data:extend({
     order = "c",
     ingredients =
     {
-      PM.ingredient("pm-polonium-210", 20),
-      PM.ingredient("pm-empty-reactor-cell", 2)
+      { "pm-polonium-210",       20 },
+      { "pm-empty-reactor-cell", 2 }
     },
     results =
     {
-      PM.product("pm-polonium-fuel-cell", 2)
+      { "pm-polonium-fuel-cell", 2 }
     }
   },
   {
@@ -1940,14 +2146,31 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("pm-used-up-polonium-fuel-cell", 10),
+      { "pm-used-up-polonium-fuel-cell", 10 },
     },
     results =
     {
-      PM.product_range("pm-empty-reactor-cell", 3, 5),
-      PM.product_range("pm-lead-ore", 1, 5),
-      PM.product_range("pm-helium-gas", 2, 5, "fluid"),
-      PM.product_chance("pm-bismuth-210", 4, 0.7)
+      {
+        name = "pm-empty-reactor-cell",
+        amount_min = 3,
+        amount_max = 5,
+      },
+      {
+        name = "pm-lead-ore",
+        amount_min = 1,
+        amount_max = 5
+      },
+      {
+        type = "fluid",
+        name = "pm-helium-gas",
+        amount_min = 2,
+        amount_max = 5
+      },
+      {
+        name = "pm-bismuth-210",
+        amount = 4,
+        probability = 0.7
+      }
     }
   },
   {
@@ -1959,15 +2182,15 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("pm-cobalt-blue", 5),
-      PM.ingredient("speed-module", 1),
-      PM.ingredient("pm-module-speed-light", 1),
-      PM.ingredient("pm-fluid-circuit", 10),
-      PM.ingredient("processing-unit", 10)
+      { "pm-cobalt-blue",        5 },
+      { "speed-module",          1 },
+      { "pm-module-speed-light", 1 },
+      { "pm-fluid-circuit",      10 },
+      { "processing-unit",       10 }
     },
     results =
     {
-      PM.product("pm-speed-module-4", 1)
+      { "pm-speed-module-4", 1 }
     }
   },
   {
@@ -1979,15 +2202,15 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("pm-chrome-green", 5),
-      PM.ingredient("effectivity-module", 1),
-      PM.ingredient("pm-module-efficiency-light", 1),
-      PM.ingredient("pm-fluid-circuit", 10),
-      PM.ingredient("processing-unit", 10)
+      { "pm-chrome-green",            5 },
+      { "effectivity-module",         1 },
+      { "pm-module-efficiency-light", 1 },
+      { "pm-fluid-circuit",           10 },
+      { "processing-unit",            10 }
     },
     results =
     {
-      PM.product("pm-effectivity-module-4", 1)
+      { "pm-effectivity-module-4", 1 }
     }
   },
   {
@@ -1999,15 +2222,15 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("pm-cadnium-red", 5),
-      PM.ingredient("productivity-module", 1),
-      PM.ingredient("pm-module-productivity-light", 1),
-      PM.ingredient("pm-fluid-circuit", 10),
-      PM.ingredient("processing-unit", 10)
+      { "pm-cadnium-red",               5 },
+      { "productivity-module",          1 },
+      { "pm-module-productivity-light", 1 },
+      { "pm-fluid-circuit",             10 },
+      { "processing-unit",              10 }
     },
     results =
     {
-      PM.product("pm-productivity-module-4", 1)
+      { "pm-productivity-module-4", 1 }
     }
   },
   {
@@ -2019,14 +2242,14 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      PM.ingredient("piercing-rounds-magazine", 1),
-      PM.ingredient("pm-lead-plate", 3),
-      PM.ingredient("sulfur", 2),
-      PM.ingredient("pm-polyethylene-plastic", 2)
+      { "piercing-rounds-magazine", 1 },
+      { "pm-lead-plate",            3 },
+      { "sulfur",                   2 },
+      { "pm-polyethylene-plastic",  2 }
     },
     results =
     {
-      PM.product("pm-high-density-magazine", 1)
+      { "pm-high-density-magazine", 1 }
     }
   },
   {
@@ -2038,15 +2261,15 @@ data:extend({
     energy_required = 7,
     ingredients =
     {
-      PM.ingredient("pm-platinum-plate", 6),
-      PM.ingredient("pm-nickel-plate", 6),
-      PM.ingredient("pm-glass-pane", 10),
-      PM.ingredient("pm-zinc-disc", 12),
-      PM.ingredient("pm-caesium", 4, "fluid")
+      { "pm-platinum-plate", 6 },
+      { "pm-nickel-plate",   6 },
+      { "pm-glass-pane",     10 },
+      { "pm-zinc-disc",      12 },
+      { type = "fluid",      name = "pm-caesium", amount = 4 }
     },
     results =
     {
-      PM.product("pm-vacuum-tube", 2)
+      { "pm-vacuum-tube", 2 }
     }
   },
   {
@@ -2057,15 +2280,15 @@ data:extend({
     energy_required = 28,
     ingredients =
     {
-      PM.ingredient("pm-vacuum-tube", 4),
-      PM.ingredient("pm-glass-pane", 10),
-      PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-cadnium-plate", 8),
-      PM.ingredient("pm-aluminium-plate", 12)
+      { "pm-vacuum-tube",     4 },
+      { "pm-glass-pane",      10 },
+      { "processing-unit",    3 },
+      { "pm-cadnium-plate",   8 },
+      { "pm-aluminium-plate", 12 }
     },
     results =
     {
-      PM.product("pm-CRT", 1)
+      { "pm-CRT", 1 }
     }
   },
   {
@@ -2076,15 +2299,15 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      PM.ingredient("pm-CRT", 1),
-      PM.ingredient("pm-polyethylene-plastic", 8),
-      PM.ingredient("pm-stainless-steel-alloy", 5),
-      PM.ingredient("pm-gold-plate", 6),
-      PM.ingredient("pm-fluid-circuit", 3)
+      { "pm-CRT",                   1 },
+      { "pm-polyethylene-plastic",  8 },
+      { "pm-stainless-steel-alloy", 5 },
+      { "pm-gold-plate",            6 },
+      { "pm-fluid-circuit",         3 }
     },
     results =
     {
-      PM.product("pm-oscilloscope", 1)
+      { "pm-oscilloscope", 1 }
     }
   },
   {
@@ -2097,15 +2320,15 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      PM.ingredient("pm-phosgene", 10, "fluid"),
-      PM.ingredient("piercing-rounds-magazine", 1),
-      PM.ingredient("pm-thallium-plate", 4),
-      PM.ingredient("pm-flourine", 6),
-      PM.ingredient("pm-polyethylene-plastic", 2)
+      { type = "fluid",             name = "pm-phosgene", amount = 10 },
+      { "piercing-rounds-magazine", 1 },
+      { "pm-thallium-plate",        4 },
+      { "pm-flourine",              6 },
+      { "pm-polyethylene-plastic",  2 }
     },
     results =
     {
-      PM.product("pm-geneva's-neglection-magazine", 2)
+      { "pm-geneva's-neglection-magazine", 2 }
     }
   },
   {
@@ -2118,13 +2341,13 @@ data:extend({
     order = "x",
     ingredients =
     {
-      PM.ingredient("pm-carbon-monoxide", 10, "fluid"),
-      PM.ingredient("pm-chlorine", 20, "fluid"),
-      PM.ingredient("pm-carbon", 5)
+      { type = "fluid", name = "pm-carbon-monoxide", amount = 10 },
+      { type = "fluid", name = "pm-chlorine",        amount = 20 },
+      { "pm-carbon",    5 }
     },
     results =
     {
-      PM.product("pm-phosgene", 20, "fluid")
+      { type = "fluid", name = "pm-phosgene", amount = 20 }
     }
   },
   {
@@ -2134,14 +2357,19 @@ data:extend({
     main_product = "pm-lithium-logistic-robot",
     ingredients =
     {
-      PM.ingredient("logistic-robot", 1),
-      PM.ingredient("processing-unit", 2),
-      PM.ingredient("pm-lithium-ion-battery", 2)
+      { "logistic-robot",         1 },
+      { "processing-unit",        2 },
+      { "pm-lithium-ion-battery", 2 }
     },
     results =
     {
-      PM.product("pm-lithium-logistic-robot", 1),
-      PM.product_range_chance("pm-vanadium-redox-battery", 1, 2, 0.66)
+      { "pm-lithium-logistic-robot", 1 },
+      {
+        name = "pm-vanadium-redox-battery",
+        amount_min = 1,
+        amount_max = 2,
+        probability = 0.66
+      }
     }
   },
   {
@@ -2151,14 +2379,19 @@ data:extend({
     main_product = "pm-lithium-construction-robot",
     ingredients =
     {
-      PM.ingredient("construction-robot", 1),
-      PM.ingredient("processing-unit", 2),
-      PM.ingredient("pm-lithium-ion-battery", 2)
+      { "construction-robot",     1 },
+      { "processing-unit",        2 },
+      { "pm-lithium-ion-battery", 2 }
     },
     results =
     {
-      PM.product("pm-lithium-construction-robot", 1),
-      PM.product_range_chance("pm-vanadium-redox-battery", 1, 2, 0.66)
+      { "pm-lithium-construction-robot", 1 },
+      {
+        name = "pm-vanadium-redox-battery",
+        amount_min = 1,
+        amount_max = 2,
+        probability = 0.66
+      }
     }
   },
   {
@@ -2171,14 +2404,14 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      PM.ingredient("pm-air-filter", 4),
-      PM.ingredient("pm-lithium-bromide", 8),
-      PM.ingredient("pm-gold-plate", 4),
-      PM.ingredient("pm-silver-plate", 4)
+      { "pm-air-filter",      4 },
+      { "pm-lithium-bromide", 8 },
+      { "pm-gold-plate",      4 },
+      { "pm-silver-plate",    4 }
     },
     results =
     {
-      PM.product("pm-advanced-air-filter", 1)
+      { "pm-advanced-air-filter", 1 }
     }
   },
   {
@@ -2191,14 +2424,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-oxygen-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      { "pm-oxygen-air-filter",   1 },
+      { "pm-gold-plate",          3 },
+      { "pm-iodine",              2 },
+      { "pm-lightweight-framing", 6 }
     },
     results =
     {
-      PM.product("pm-advanced-oxygen-air-filter", 1)
+      { "pm-advanced-oxygen-air-filter", 1 }
     }
   },
   {
@@ -2211,14 +2444,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-nitrogen-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      { "pm-nitrogen-air-filter", 1 },
+      { "pm-gold-plate",          3 },
+      { "pm-iodine",              2 },
+      { "pm-lightweight-framing", 6 }
     },
     results =
     {
-      PM.product("pm-advanced-nitrogen-air-filter", 1)
+      { "pm-advanced-nitrogen-air-filter", 1 }
     }
   },
   {
@@ -2231,14 +2464,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-chlorine-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      { "pm-chlorine-air-filter", 1 },
+      { "pm-gold-plate",          3 },
+      { "pm-iodine",              2 },
+      { "pm-lightweight-framing", 6 }
     },
     results =
     {
-      PM.product("pm-advanced-chlorine-air-filter", 1)
+      { "pm-advanced-chlorine-air-filter", 1 }
     }
   },
   {
@@ -2251,14 +2484,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-carbon-dioxide-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      { "pm-carbon-dioxide-air-filter", 1 },
+      { "pm-gold-plate",                3 },
+      { "pm-iodine",                    2 },
+      { "pm-lightweight-framing",       6 }
     },
     results =
     {
-      PM.product("pm-advanced-carbon-dioxide-air-filter", 1)
+      { "pm-advanced-carbon-dioxide-air-filter", 1 }
     }
   },
   {
@@ -2271,14 +2504,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-trace-gas-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      { "pm-trace-gas-air-filter", 1 },
+      { "pm-gold-plate",           3 },
+      { "pm-iodine",               2 },
+      { "pm-lightweight-framing",  6 }
     },
     results =
     {
-      PM.product("pm-advanced-trace-gas-air-filter", 1)
+      { "pm-advanced-trace-gas-air-filter", 1 }
     }
   },
   {
@@ -2289,13 +2522,13 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-vacuum-tube", 1),
-      PM.ingredient("pm-borosilicate-glass", 4),
-      PM.ingredient("copper-cable", 10)
+      { "pm-vacuum-tube",        1 },
+      { "pm-borosilicate-glass", 4 },
+      { "copper-cable",          10 }
     },
     results =
     {
-      PM.product("pm-travelling-wave-amplifier-tube", 1)
+      { "pm-travelling-wave-amplifier-tube", 1 }
     }
   },
   {
@@ -2317,11 +2550,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-borosilicate-glass", 4)
+      { "pm-borosilicate-glass", 4 }
     },
     results =
     {
-      PM.product("pm-science-bottle", 4)
+      { "pm-science-bottle", 4 }
     }
   },
   {
@@ -2332,12 +2565,12 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      PM.ingredient("pm-ethylene-gas", 20, "fluid"),
-      PM.ingredient("pm-benzene", 20, "fluid"),
+      { type = "fluid", name = "pm-ethylene-gas", amount = 20 },
+      { type = "fluid", name = "pm-benzene",      amount = 20 },
     },
     results =
     {
-      PM.product("pm-ethylbenzene", 10, "fluid")
+      { type = "fluid", name = "pm-ethylbenzene", amount = 10 }
     }
   },
   {
@@ -2348,12 +2581,12 @@ data:extend({
     category = "pm-moltening",
     ingredients =
     {
-      PM.ingredient("pm-ethylbenzene", 5, "fluid"),
-      PM.ingredient("iron-plate", 5)
+      { type = "fluid", name = "pm-ethylbenzene", amount = 5 },
+      { "iron-plate",   5 }
     },
     results =
     {
-      PM.product("pm-styrene", 10, "fluid")
+      { type = "fluid", name = "pm-styrene", amount = 10 }
     }
   },
   {
@@ -2364,15 +2597,19 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      PM.ingredient("pm-molybdenum-ore", 20),
-      PM.ingredient("pm-nitrogen-gas", 15, "fluid"),
-      PM.ingredient("pm-nickel-plate", 12),
-      PM.ingredient("pm-red-phosphorus", 6),
-      PM.ingredient("pm-lightweight-panelling", 16)
+      { "pm-molybdenum-ore", 20 },
+      { type = "fluid", name = "pm-nitrogen-gas", amount = 15 },
+      { "pm-nickel-plate", 12 },
+      { "pm-red-phosphorus", 6 },
+      { "pm-lightweight-panelling", 16 }
     },
     results =
     {
-      PM.product_chance("pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1, 0.7)
+      { 
+        name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
+        amount = 1,
+        probability = 0.7
+      }
     }
   },
   {
@@ -2383,13 +2620,13 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients = 
     {
-      PM.ingredient("pm-sodium", 6),
-      PM.ingredient("water", 10, "fluid"),
-      PM.ingredient("pm-basic-panelling", 4)
+      {"pm-sodium", 6},
+      {type = "fluid", name = "water", amount = 10},
+      {"pm-basic-panelling", 4}
     },
     results = 
     {
-      PM.product("pm-sodium-grenade", 1)
+      {"pm-sodium-grenade", 1}
     }
   },
 
@@ -2404,13 +2641,13 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("iron-plate", 1),
-      PM.ingredient("pm-plastic-science-bottle", 1),
-      PM.ingredient("pm-nickel-plate", 1),
+      { "iron-plate",                1 },
+      { "pm-plastic-science-bottle", 1 },
+      { "pm-nickel-plate",           1 },
     },
     results =
     {
-      PM.product("automation-science-pack", 2)
+      { "automation-science-pack", 2 }
     }
   },
   {
@@ -2425,14 +2662,14 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-gold-plate", 5),
-      PM.ingredient("pm-plastic-science-bottle", 1),
-      PM.ingredient("pm-liquid-mercury", 25, "fluid"),
-      PM.ingredient("pm-manganese-plate", 5),
+      { "pm-gold-plate",             5 },
+      { "pm-plastic-science-bottle", 1 },
+      { type = "fluid",              name = "pm-liquid-mercury", amount = 25 },
+      { "pm-manganese-plate",        5 },
     },
     results =
     {
-      PM.product("logistic-science-pack", 2)
+      { "logistic-science-pack", 2 }
     }
   },
   {
@@ -2445,16 +2682,16 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-titanium-ore", 8),
-      PM.ingredient("pm-tungsten-ore", 8),
-      PM.ingredient("pm-silver-plate", 15),
-      PM.ingredient("copper-plate", 15),
-      PM.ingredient("pm-plastic-science-bottle", 1)
+      { "pm-titanium-ore",           8 },
+      { "pm-tungsten-ore",           8 },
+      { "pm-silver-plate",           15 },
+      { "copper-plate",              15 },
+      { "pm-plastic-science-bottle", 1 }
     },
     enabled = false,
     results =
     {
-      PM.product("pm-advanced-advanced-transition-metal-science-pack", 2),
+      { "pm-advanced-advanced-transition-metal-science-pack", 2 },
     }
   },
   {
@@ -2469,14 +2706,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-plastic-science-bottle", 1),
-      PM.ingredient("pm-nitrogen-gas", 25, "fluid"),
-      PM.ingredient("pm-carbon", 15),
-      PM.ingredient("sulfur", 8)
+      { "pm-plastic-science-bottle", 1 },
+      { type = "fluid",              name = "pm-nitrogen-gas", amount = 25 },
+      { "pm-carbon",                 15 },
+      { "sulfur",                    8 }
     },
     results =
     {
-      PM.product("chemical-science-pack", 2)
+      { "chemical-science-pack", 2 }
     }
   },
   {
@@ -2490,18 +2727,18 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-aluminium-plate", 10),
-      PM.ingredient{"pm-tin-plate", 5},
-      PM.ingredient("pm-lead-plate", 10),
-      PM.ingredient("pm-thallium-ore", 3),
-      PM.ingredient("pm-bismuth-ore", 8),
-      PM.ingredient("pm-liquid-gallium", 40, "fluid"),
-      PM.ingredient("pm-plastic-science-bottle", 1)
+      { "pm-aluminium-plate",        10 },
+      { "pm-tin-plate",              4 + 1 },
+      { "pm-lead-plate",             10 },
+      { "pm-thallium-ore",           3 },
+      { "pm-bismuth-ore",            8 },
+      { type = "fluid",              name = "pm-liquid-gallium", amount = 40 },
+      { "pm-plastic-science-bottle", 1 }
     },
     enabled = false,
     results =
     {
-      PM.product("pm-post-transition-metal-science-pack", 2),
+      { "pm-post-transition-metal-science-pack", 2 },
     }
   },
 
@@ -2528,13 +2765,13 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-francium", 3, "fluid"),
-      PM.ingredient("pm-science-bottle", 5),
-      PM.ingredient("pm-transition-metals-ore", 10)
+      { type = "fluid",             name = "pm-francium", amount = 3 },
+      { "pm-science-bottle",        5 },
+      { "pm-transition-metals-ore", 10 }
     },
     results =
     {
-      PM.product("automation-science-pack", 5)
+      { "automation-science-pack", 5 }
     }
   },
   {
@@ -2560,13 +2797,13 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-francium", 3, "fluid"),
-      PM.ingredient("pm-science-bottle", 5),
-      PM.ingredient("pm-transition-metals-ore", 20)
+      { type = "fluid",             name = "pm-francium", amount = 3 },
+      { "pm-science-bottle",        5 },
+      { "pm-transition-metals-ore", 20 }
     },
     results =
     {
-      PM.product("logistic-science-pack", 5)
+      { "logistic-science-pack", 5 }
     }
   },
   {
@@ -2592,13 +2829,13 @@ data:extend({
     order = "c",
     ingredients =
     {
-      PM.ingredient("pm-francium", 3, "fluid"),
-      PM.ingredient("pm-science-bottle", 5),
-      PM.ingredient("pm-transition-metals-ore", 40)
+      { type = "fluid",             name = "pm-francium", amount = 3 },
+      { "pm-science-bottle",        5 },
+      { "pm-transition-metals-ore", 40 }
     },
     results =
     {
-      PM.product("pm-advanced-advanced-transition-metal-science-pack", 5)
+      { "pm-advanced-advanced-transition-metal-science-pack", 5 }
     }
   },
   {
@@ -2624,13 +2861,13 @@ data:extend({
     order = "e",
     ingredients =
     {
-      PM.ingredient("pm-francium", 3, "fluid"),
-      PM.ingredient("pm-science-bottle", 5),
-      PM.ingredient("pm-chlorine", 50, "fluid")
+      { type = "fluid",      name = "pm-francium", amount = 3 },
+      { "pm-science-bottle", 5 },
+      { type = "fluid",      name = "pm-chlorine", amount = 50 }
     },
     results =
     {
-      PM.product("chemical-science-pack", 5)
+      { "chemical-science-pack", 5 }
     }
   },
   {
@@ -2656,13 +2893,13 @@ data:extend({
     order = "d",
     ingredients =
     {
-      PM.ingredient("pm-francium", 3, "fluid"),
-      PM.ingredient("pm-science-bottle", 5),
-      PM.ingredient("pm-post-transition-metals-ore", 20)
+      { type = "fluid",                  name = "pm-francium", amount = 3 },
+      { "pm-science-bottle",             5 },
+      { "pm-post-transition-metals-ore", 20 }
     },
     results =
     {
-      PM.product("pm-post-transition-metal-science-pack", 5)
+      { "pm-post-transition-metal-science-pack", 5 }
     }
   },
 

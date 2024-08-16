@@ -5,9 +5,6 @@ local PM = require("__periodic-madness__/library")
 data.raw["recipe"]["glass"].hidden = true
 data.raw["recipe"]["sand"].hidden = true
 
-data.raw["tool"]["pm-alternative-science-pack"].icon =
-"__periodic-madness__/graphics/compat/K2/alternative-recipe-data.png"
-
 data.raw["recipe"]["pm-dirty-boiler"].enabled = false
 data.raw["recipe"]["pm-science-bottle"].enabled = false
 data.raw["recipe"]["pm-burner-crusher"].enabled = false
@@ -32,9 +29,6 @@ data.raw["recipe"]["kr-crusher"].ingredients =
 data.raw["recipe"]["sand"].category = "pm-crushing"
 
 data.raw["technology"]["pm-cleaner-power-generation"].prerequisites = { "kr-steam-engine" }
-data.raw["technology"]["pm-alternative-science-pack-unlock"].icon_size = 64
-data.raw["technology"]["pm-alternative-science-pack-unlock"].icon =
-"__periodic-madness__/graphics/compat/K2/alternative-recipe-data.png"
 data.raw["technology"]["kr-crusher"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),

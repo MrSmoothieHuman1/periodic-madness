@@ -924,6 +924,26 @@ data:extend({
       PM.product("pm-battery-discharger", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-stainless-steel-pump",
+    subgroup = "energy-pipe-distribution",
+    order = "b[pipe]-c[pump]",
+    enabled = false,
+    energy_required = 1,
+    ingredients =
+    {
+      PM.ingredient("pm-stainless-steel-alloy", 6),
+      PM.ingredient("engine-unit", 2),
+      PM.ingredient("pm-heavyweight-framing", 8),
+      PM.ingredient("pm-heavyweight-panelling", 8),
+    },
+    results =
+    {
+      PM.product("pm-stainless-steel-pump", 1)
+    }
+  },
+
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["boiler"].enabled = false

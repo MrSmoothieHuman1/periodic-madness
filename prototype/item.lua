@@ -98,14 +98,14 @@ data:extend({
   {
     type = "item",
     name = "pm-sand",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sand.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/sand.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/sand-2.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/sand-3.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/sand-4.png", size = 128, scale = 0.125 }
+      { filename = "__periodic-madness__/graphics/icons/sand.png",   size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/sand-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/sand-3.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/sand-4.png", size = 64, scale = 0.25 }
     },
     subgroup = "pm-glassing",
     order = "a",
@@ -223,7 +223,7 @@ data:extend({
   {
     type = "item",
     name = "pm-solder-case",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/solder-case.png",
     subgroup = "pm-refined-items",
     stack_size = 100
@@ -1167,12 +1167,12 @@ data:extend({
   {
     type = "item",
     name = "pm-magneto-orbital-trap",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/MOT.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/MOT.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/MOT-2.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/MOT.png",   size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/MOT-2.png", size = 64, scale = 0.25 },
     },
     subgroup = "pm-francium-am",
     order = "A",
@@ -1190,16 +1190,15 @@ data:extend({
         {
           {
             filename = "__periodic-madness__/graphics/icons/filled-MOT.png",
-            size = 128,
-            scale = 0.125,
-            mipmap_count = 4
+            size = 64,
+            scale = 0.25,
           },
           {
             filename = "__periodic-madness__/graphics/light/filled-MOT-light.png",
             flags = { "light" },
             draw_as_light = true,
-            size = 128,
-            scale = 0.125,
+            size = 64,
+            scale = 0.25,
           },
         }
       },
@@ -1208,16 +1207,15 @@ data:extend({
         {
           {
             filename = "__periodic-madness__/graphics/icons/filled-MOT-2.png",
-            size = 128,
-            scale = 0.125,
-            mipmap_count = 4
+            size = 64,
+            scale = 0.25,
           },
           {
             filename = "__periodic-madness__/graphics/light/filled-MOT-2-light.png",
             flags = { "light" },
             draw_as_light = true,
-            size = 128,
-            scale = 0.125,
+            size = 64,
+            scale = 0.25,
           },
         }
       },

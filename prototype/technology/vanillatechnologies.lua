@@ -105,7 +105,8 @@ data.raw["technology"]["fluid-handling"].effects =
 {
   PM.unlock_recipe("pm-stainless-steel-tank"),
   PM.unlock_recipe("pm-stainless-steel-pipe"),
-  PM.unlock_recipe("pm-stainless-steel-pipe-to-ground")
+  PM.unlock_recipe("pm-stainless-steel-pipe-to-ground"),
+  PM.unlock_recipe("pm-stainless-steel-pump"),
 }
 data.raw["technology"]["fluid-handling"].prerequisites = { "pm-multimetal-multiproperty" }
 data.raw["technology"]["fluid-handling"].unit.ingredients =

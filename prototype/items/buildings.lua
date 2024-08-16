@@ -539,6 +539,16 @@ data:extend({
     place_result = "pm-battery-discharger",
     stack_size = 20,
   },
+  {
+    type = "item",
+    name = "pm-stainless-steel-pump",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-pump.png",
+    subgroup = "energy-pipe-distribution",
+    order = "b[pipe]-c[pump]",
+    place_result = "pump",
+    stack_size = 50,
+  },
 })
 
 local OilRefinerySubgroup = data.raw["item"]["oil-refinery"]

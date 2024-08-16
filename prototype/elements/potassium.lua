@@ -22,7 +22,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/sylvite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/sylvite.png",   size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/sylvite.png", size = 64, scale = 0.25 },
       { filename = "__periodic-madness__/graphics/icons/sylvite-2.png", size = 64, scale = 0.25 },
       { filename = "__periodic-madness__/graphics/icons/sylvite-3.png", size = 64, scale = 0.25 },
     },
@@ -33,12 +33,12 @@ data:extend({
   {
     type = "item",
     name = "pm-potash",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/potash.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/potash.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/potash-2.png", size = 128, scale = 0.125 },
+      {filename = "__periodic-madness__/graphics/icons/potash.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/potash-2.png", size = 64, scale = 0.25},
     },
     subgroup = "pm-potassium-am",
     order = "c",

@@ -39,6 +39,13 @@ Date: 2024-08-09
     - (#3) Fixed processing integrated circuit molding giving advanced integrated circuits.
     - Fixed a lot of minor locale issues, like capatalisation and random bs like that.
     - Fixed the burn-inator being unlocked twice.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.129
+Date: 2024-08-16
+  The dont code when your tired, heed my warning Update:
+
+  Fixes:
+    - Fixed an error with K2 after deleting alternative recipe packs.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.127

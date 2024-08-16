@@ -23,9 +23,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/borax.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/borax.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/borax-2.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/borax-3.png", size = 64, scale = 0.25 },
+      {filename = "__periodic-madness__/graphics/icons/borax.png",   size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/borax-2.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/borax-3.png", size = 64, scale = 0.25},
     },
     subgroup = "pm-boron-mt",
     order = "a",
@@ -34,14 +34,14 @@ data:extend({
   {
     type = "item",
     name = "pm-boric-oxide",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/boric-oxide.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/boric-oxide.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/boric-oxide-2.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/boric-oxide-3.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/boric-oxide-4.png", size = 128, scale = 0.125 },
+      {filename = "__periodic-madness__/graphics/icons/boric-oxide.png",   size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/boric-oxide-2.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/boric-oxide-3.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/boric-oxide-4.png", size = 64, scale = 0.25},
     },
     subgroup = "pm-boron-mt",
     order = "c",
