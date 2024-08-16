@@ -13,9 +13,17 @@ const regex_and_replace_array = [
     /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.ingredient($<name>, $<amount>)'
   ],
+  [ // Catalyst Ingredient Item
+    /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.catalyst_ingredient($<name>, $<amount>, $<catalyst_amount>)'
+  ],
   [ // Ingredient Fluid
     /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?![^{}]*catalyst_amount =)(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.ingredient($<name>, $<amount>, "fluid")'
+  ],
+  [ // Catalyst Ingredient Fluid
+    /(?<=ingredients =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.catalyst_ingredient($<name>, $<amount>, $<catalyst_amount>, "fluid")'
   ],
 
   //MARK: Product Items
@@ -61,7 +69,7 @@ const regex_and_replace_array = [
 
   //MARK: Catalyst Items
   [ // Catalyst Item
-    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a($<name>, $<amount>, $<catalyst_amount>)'
   ],
   [ // Catalyst Item Range
@@ -79,7 +87,7 @@ const regex_and_replace_array = [
 
   //MARK: Catalyst Fluids
   [ // Catalyst Fluid
-    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?=[^{}]*catalyst_amount = (?<catalyst_amount>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_a($<name>, $<amount>, $<catalyst_amount>, "fluid")'
   ],
   [ // Catalyst Fluid Range
