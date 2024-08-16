@@ -142,7 +142,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-gallium-liqour", 20, "fluid"),
-      PM.ingredient("pm-ion-exchange-beads", 5)
+      PM.catalyst_ingredient("pm-ion-exchange-beads", 5, 5),
     },
     results =
     {
