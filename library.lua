@@ -94,6 +94,20 @@ function PM.ingredient(name, amount, type)
     type = type or "item"
   }
 end
+---Shorthand for an catalyst ingredient
+---@param name data.ItemID|data.FluidID
+---@param amount number
+---@param catalyst_amount number
+---@param type item_type?
+---@return data.FluidIngredientPrototype|data.ItemIngredientPrototype.struct
+function PM.catalyst_ingredient(name, amount, catalyst_amount, type)
+  return {
+    name = name,
+    amount = amount,
+    catalyst_amount = catalyst_amount,
+    type = type or "item"
+  }--[[@as data.FluidIngredientPrototype|data.ItemIngredientPrototype.struct]]
+end
 
 ---A local function to localize the product function implementaton
 ---@param name data.ItemID|data.FluidID
