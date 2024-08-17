@@ -15,7 +15,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-gold-plating", 1),
+      PM.ingredient("pm-basic-panelling", 2),
       PM.ingredient("pm-gold-wire", 2)
     },
     results =
@@ -35,7 +35,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-gold-plating", 1),
+      PM.ingredient("pm-basic-panelling", 2),
       PM.ingredient("copper-cable", 2)
     },
     results =
@@ -55,7 +55,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-gold-plating", 1),
+      PM.ingredient("pm-basic-panelling", 2),
       PM.ingredient("pm-brass-plate", 1)
     },
     results =
@@ -76,7 +76,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("pm-basic-panelling", 2),
       PM.ingredient("pm-silver-plate", 1)
     },
     results =
@@ -96,7 +96,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("pm-basic-panelling", 2),
       PM.ingredient("copper-cable", 2)
     },
     results =
@@ -116,7 +116,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("pm-basic-panelling", 2),
       PM.ingredient("steel-plate", 1)
     },
     results =
@@ -136,7 +136,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-silver-plating", 1),
+      PM.ingredient("pm-basic-panelling", 2),
       PM.ingredient("pm-manganese-plate", 2)
     },
     results =
@@ -158,7 +158,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("iron-plate", 1),
-      PM.ingredient("iron-stick", 1)
     },
     results =
     {
@@ -176,7 +175,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-nickel-plate", 1),
-      PM.ingredient("iron-stick", 1)
     },
     results =
     {
@@ -194,7 +192,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("copper-plate", 1),
-      PM.ingredient("iron-stick", 1)
     },
     results =
     {
@@ -213,7 +210,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-brass-plate", 1),
-      PM.ingredient("iron-stick", 1)
     },
     results =
     {
@@ -232,7 +228,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("steel-plate", 1),
-      PM.ingredient("iron-stick", 1)
     },
     results =
     {
@@ -312,7 +307,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-corrosion-resistant-tubing", 4)
+      PM.product("pm-corrosion-resistant-tubing", 6)
     }
   },
 
@@ -367,7 +362,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-tubing", 2)
+      PM.product("pm-anti-bacterial-tubing", 4)
     }
   },
   {
@@ -401,8 +396,7 @@ data:extend({
     subgroup = "pm-multimetal-framing",
     ingredients =
     {
-      PM.ingredient("iron-plate", 1),
-      PM.ingredient("iron-stick", 2)
+      PM.ingredient("iron-plate", 2),
     },
     results =
     {
@@ -419,8 +413,7 @@ data:extend({
     subgroup = "pm-multimetal-framing",
     ingredients =
     {
-      PM.ingredient("pm-nickel-plate", 1),
-      PM.ingredient("iron-stick", 2)
+      PM.ingredient("pm-nickel-plate", 2),
     },
     results =
     {
@@ -439,7 +432,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("steel-plate", 1),
-      PM.ingredient("iron-stick", 2)
     },
     results =
     {
@@ -458,7 +450,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-brass-plate", 1),
-      PM.ingredient("iron-stick", 2)
     },
     results =
     {
@@ -477,7 +468,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-stainless-steel-alloy", 1),
-      PM.ingredient("iron-stick", 2)
     },
     results =
     {
@@ -655,7 +645,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("steel-plate", 1),
-      PM.ingredient("iron-plate", 1)
     },
     results =
     {
@@ -675,7 +664,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-stainless-steel-alloy", 1),
-      PM.ingredient("iron-plate", 1)
     },
     results =
     {
@@ -694,7 +682,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-zinc-plate", 1),
-      PM.ingredient("iron-plate", 1)
     },
     results =
     {
@@ -847,7 +834,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-panelling", 2)
+      PM.product("pm-anti-bacterial-panelling", 4)
     }
   },
   {

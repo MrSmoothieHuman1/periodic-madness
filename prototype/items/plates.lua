@@ -156,6 +156,47 @@ data:extend({
     stack_size = 100
   },
 
+  {
+    type = "item",
+    name = "pm-brass-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+    subgroup = "pm-alloys",
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-stainless-steel-alloy",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/steel-plate.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/steel-plate-2.png", size = 64, scale = 0.25},
+    },
+    subgroup = "pm-alloys",
+    order = "c",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-solder-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
+    subgroup = "pm-alloys",
+    order = "e",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-kasethal-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
+    subgroup = "pm-alloys",
+    order = "d",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["iron-plate"].subgroup = "pm-iron-tm"
@@ -164,5 +205,11 @@ data.raw["item"]["copper-plate"].subgroup = "pm-copper-tm"
 data.raw["item"]["iron-plate"].order = "c"
 data.raw["item"]["steel-plate"].subgroup = "pm-alloys"
 data.raw["item"]["steel-plate"].order = "a"
-data.raw["item"]["steel-plate"].icon_size = 128
+data.raw["item"]["steel-plate"].icon_size = 64
 data.raw["item"]["steel-plate"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
+data.raw["item"]["steel-plate"].pictures = 
+{
+  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate.png", size = 64, scale = 0.25},
+  {filename = "__periodic-madness__/graphics/icons/ores/steel-plate-2.png", size = 64, scale = 0.25},
+  {filename = "__periodic-madness__/graphics/icons/ores/steel-plate-3.png", size = 64, scale = 0.25},
+}

@@ -432,11 +432,11 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 10),
-      { "pm-tin-plate",       4 + 1 },
+      PM.ingredient("pm-tin-plate", 5),
       PM.ingredient("pm-lead-plate", 10),
       PM.ingredient("pm-thallium-ore", 3),
       PM.ingredient("pm-bismuth-ore", 8),
-      PM.ingredient("pm-liquid-gallium", 40, "fluid"),
+      PM.ingredient("pm-liquid-gallium", 20, "fluid"),
       PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
@@ -2491,11 +2491,11 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 10),
-      PM.ingredient{"pm-tin-plate", 5},
+      PM.ingredient("pm-tin-plate", 5),
       PM.ingredient("pm-lead-plate", 10),
       PM.ingredient("pm-thallium-ore", 3),
       PM.ingredient("pm-bismuth-ore", 8),
-      PM.ingredient("pm-liquid-gallium", 40, "fluid"),
+      PM.ingredient("pm-liquid-gallium", 20, "fluid"),
       PM.ingredient("pm-plastic-science-bottle", 1)
     },
     enabled = false,

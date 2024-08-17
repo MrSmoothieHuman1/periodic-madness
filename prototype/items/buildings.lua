@@ -546,7 +546,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-pump.png",
     subgroup = "energy-pipe-distribution",
     order = "b[pipe]-c[pump]",
-    place_result = "pump",
+    place_result = "pm-stainless-steel-pump",
     stack_size = 50,
   },
 })

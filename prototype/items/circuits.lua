@@ -189,7 +189,7 @@ data:extend({
   {
     type = "item",
     name = "pm-solder",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/solder.png",
     subgroup = "pm-circuits",
     order = "i",

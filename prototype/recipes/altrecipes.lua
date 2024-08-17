@@ -244,50 +244,6 @@ data:extend({
       PM.product("pm-zinc-plate", 4)
     }
   },
-
-  {
-    type = "recipe",
-    name = "pm-alloyed-steel",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/alloyed-steel-plate.png",
-    category = "pm-alloying",
-    subgroup = "pm-alloys",
-    energy_required = 6,
-    enabled = false,
-    hide_from_player_crafting = true,
-    always_show_made_in = true,
-    ingredients =
-    {
-      PM.ingredient("pm-manganese-plate", 2),
-      PM.ingredient("pm-nickel-plate", 2),
-      PM.ingredient("pm-zinc-plate", 1)
-    },
-    results =
-    {
-      PM.product_range("pm-alloyed-steel", 2, 6),
-
-      PM.product_chance("pm-ore-slag", 2, 0.5)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-alloyed-steel-to-steel",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/alloyed-steel-to-steel.png",
-    category = "pm-alloying",
-    subgroup = "pm-alloys",
-    energy_required = 3,
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-alloyed-steel", 2),
-      PM.ingredient("iron-plate", 2)
-    },
-    results =
-    {
-      PM.product_range("steel-plate", 1, 2)
-    }
-  },
   {
     type = "recipe",
     name = "pm-copper-fiberoptic-cable",

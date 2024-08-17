@@ -325,7 +325,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      PM.ingredient("pm-oxygen-gas", 2, "fluid")
+      PM.ingredient("pm-oxygen-gas", 25, "fluid")
     },
     results = {}
   },
@@ -342,7 +342,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      PM.ingredient("pm-chlorine", 2, "fluid")
+      PM.ingredient("pm-chlorine", 25, "fluid")
     },
     results = {}
   },
@@ -359,7 +359,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      PM.ingredient("pm-nitrogen-gas", 2, "fluid")
+      PM.ingredient("pm-nitrogen-gas", 25, "fluid")
     },
     results = {}
   },
@@ -376,7 +376,7 @@ data:extend({
     emissions_multiplier = 0.5,
     ingredients =
     {
-      PM.ingredient("pm-carbon-dioxide-gas", 2, "fluid")
+      PM.ingredient("pm-carbon-dioxide-gas", 25, "fluid")
     },
     results = {}
   },
@@ -393,7 +393,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      PM.ingredient("pm-trace-gas", 2, "fluid")
+      PM.ingredient("pm-trace-gas", 25, "fluid")
     },
     results = {}
   },
@@ -410,7 +410,7 @@ data:extend({
     emissions_multiplier = 0.5,
     ingredients =
     {
-      PM.ingredient("pm-helium-gas", 2, "fluid")
+      PM.ingredient("pm-helium-gas", 25, "fluid")
     },
     results = {}
   },
@@ -427,7 +427,7 @@ data:extend({
     emissions_multiplier = -1,
     ingredients =
     {
-      PM.ingredient("pm-argon-gas", 2, "fluid")
+      PM.ingredient("pm-argon-gas", 25, "fluid")
     },
     results = {}
   },
@@ -444,7 +444,7 @@ data:extend({
     emissions_multiplier = -2,
     ingredients =
     {
-      PM.ingredient("pm-carbon-monoxide", 2, "fluid")
+      PM.ingredient("pm-carbon-monoxide", 25, "fluid")
     },
     results = {}
   },
@@ -461,7 +461,7 @@ data:extend({
     emissions_multiplier = -1,
     ingredients =
     {
-      PM.ingredient("pm-ammonia-gas", 2, "fluid")
+      PM.ingredient("pm-ammonia-gas", 25, "fluid")
     },
     results = {}
   },
@@ -477,7 +477,7 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      PM.ingredient("pm-carbon-dioxide-gas", 1, "fluid"),
+      PM.ingredient("pm-carbon-dioxide-gas", 10, "fluid"),
     },
     results =
     {
@@ -496,7 +496,7 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      PM.ingredient("pm-carbon-trioxide", 1, "fluid"),
+      PM.ingredient("pm-carbon-trioxide", 10, "fluid"),
     },
     results =
     {
@@ -537,7 +537,7 @@ data:extend({
     main_product = "pm-ammonia-gas",
     ingredients =
     {
-      PM.ingredient("pm-trace-gas", 2, "fluid"),
+      PM.ingredient("pm-trace-gas", 25, "fluid"),
       PM.ingredient("pm-nitrogen-air-filter", 1)
     },
     results =
@@ -593,7 +593,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-dirty-carbon-dioxide-air-filter", 1),
-      PM.ingredient("water", 2, "fluid")
+      PM.ingredient("water", 20, "fluid")
     },
     results =
     {

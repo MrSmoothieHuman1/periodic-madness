@@ -4,51 +4,7 @@ data:extend({
 
 
   --alloys
-  {
-    type = "item",
-    name = "pm-brass-plate",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
-    subgroup = "pm-alloys",
-    order = "b",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "pm-stainless-steel-alloy",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
-    subgroup = "pm-alloys",
-    order = "c",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "pm-alloyed-steel",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/plates/alloyed-steel-plate.png",
-    subgroup = "pm-alloys",
-    order = "x",
-    stack_size = 150
-  },
-  {
-    type = "item",
-    name = "pm-solder-plate",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
-    subgroup = "pm-alloys",
-    order = "e",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "pm-kasethal-plate",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
-    subgroup = "pm-alloys",
-    order = "d",
-    stack_size = 100
-  },
+
 
   {
     type = "item",
@@ -161,7 +117,7 @@ data:extend({
     type = "item",
     name = "pm-vanadium-oxide-catalyst",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/vanadium-catalyst.png",
+    icon = "__periodic-madness__/graphics/icons/vanadium-oxide-catalyst.png",
     subgroup = "pm-refined-items",
     stack_size = 25
   },
@@ -184,7 +140,7 @@ data:extend({
   {
     type = "item",
     name = "pm-catalyst-container",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/catalyst-container.png",
     subgroup = "pm-refined-items",
     stack_size = 10
@@ -211,14 +167,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/tin-wire.png",
     subgroup = "pm-refined-items",
     stack_size = 250
-  },
-  {
-    type = "item",
-    name = "pm-solder",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/solder.png",
-    subgroup = "pm-refined-items",
-    stack_size = 100
   },
   {
     type = "item",
@@ -728,7 +676,7 @@ data:extend({
   {
     type = "item",
     name = "pm-copper-zinc-aluminium-catalyst",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/CuZnAl-catalyst.png",
     subgroup = "pm-plastics",
     stack_size = 25
@@ -1181,7 +1129,7 @@ data:extend({
   {
     type = "item",
     name = "pm-francium-magneto-orbital-trap",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/filled-MOT.png",
     pictures =
     {
@@ -1227,7 +1175,7 @@ data:extend({
   {
     type = "item",
     name = "pm-travelling-wave-amplifier-tube",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/TWAT.png",
     stack_size = 20,
   },

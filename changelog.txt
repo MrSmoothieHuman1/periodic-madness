@@ -28,6 +28,8 @@ Date: 2024-08-09
     - Remade molybdenite powder's icon.
     - Rerendered almost every item in the game to use HDRI's. WHERE HAVE THESE BEEN MY ENTIRE LIFE SWEET GOOGLILY
     - Changed stainless steel to also take molybdenum.
+    - Changed all Multi-metals to only take their specific element and not an element + intermediate.
+    - Redesigned Multi-metal item's icons.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
