@@ -86,17 +86,6 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-silver-plating",
-    energy_required = 1,
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-silver-plate", 2)
-    },
-    result = "pm-silver-plating" -- FIXME: I think this isn't in 2.0 -@PennyJim
-  },
-  {
-    type = "recipe",
     name = "pm-chromic-silver-leeching",
     icon_size = 64,
     icons =

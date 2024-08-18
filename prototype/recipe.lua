@@ -220,9 +220,9 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-advanced-integrated-circuits", 3),
-      PM.ingredient("pm-gold-plating", 2),
+      PM.ingredient("pm-gold-plate", 6),
       PM.ingredient("pm-thallium-plate", 3),
-      PM.ingredient("pm-phosphoric-acid", 4, "fluid")
+      PM.ingredient("pm-phosphoric-acid", 8, "fluid")
     },
     results =
     {

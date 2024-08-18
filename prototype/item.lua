@@ -176,26 +176,6 @@ data:extend({
     subgroup = "pm-refined-items",
     stack_size = 100
   },
-  --gold items
-  {
-    type = "item",
-    name = "pm-gold-plating",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/gold-plating.png",
-    subgroup = "pm-refined-items",
-    order = "e",
-    stack_size = 100,
-  },
-  --silver items
-  {
-    type = "item",
-    name = "pm-silver-plating",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/silver-plating.png",
-    subgroup = "pm-refined-items",
-    order = "e",
-    stack_size = 100
-  },
   {
     type = "item",
     name = "pm-science-bottle",

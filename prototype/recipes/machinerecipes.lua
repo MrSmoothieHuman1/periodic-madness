@@ -293,7 +293,7 @@ data:extend({
     {
       PM.ingredient("pm-cooling-framing", 4),
       PM.ingredient("pm-cold-inator", 1),
-      PM.ingredient("pm-silver-plating", 4),
+      PM.ingredient("pm-silver-plate", 8),
       PM.ingredient("pm-fluid-circuit", 3)
     },
     result = "pm-cold-inator-2"
@@ -309,7 +309,7 @@ data:extend({
     {
       PM.ingredient("pm-molten-framing", 4),
       PM.ingredient("pm-molten-inator", 1),
-      PM.ingredient("pm-gold-plating", 4),
+      PM.ingredient("pm-gold-plate", 8),
       PM.ingredient("pm-fluid-circuit", 3)
     },
     result = "pm-molten-inator-2"

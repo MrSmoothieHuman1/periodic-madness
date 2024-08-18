@@ -107,7 +107,7 @@ data:extend({
   {
     type = "item",
     name = "pm-molten-framing",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/molten-framing.png",
     subgroup = "pm-multimetal-framing",
     order = "d",
@@ -116,7 +116,7 @@ data:extend({
   {
     type = "item",
     name = "pm-cooling-framing",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cooling-framing.png",
     subgroup = "pm-multimetal-framing",
     order = "e",

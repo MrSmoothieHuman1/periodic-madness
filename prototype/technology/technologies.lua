@@ -264,34 +264,12 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-silver-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/silver-processing.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-silver-plating"),
-    },
-    prerequisites = {"logistic-science-pack" },
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1)
-      },
-      time = 15
-    }
-  },
-  {
-    type = "technology",
     name = "pm-gold-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/gold-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-gold-wire"),
-      PM.unlock_recipe("pm-gold-plating"),
     },
     prerequisites = {"logistic-science-pack" },
     unit =
@@ -467,7 +445,7 @@ data:extend({
       PM.unlock_recipe("pm-steel-cooling-plating"),
       PM.unlock_recipe("pm-manganese-cooling-plating"),
     },
-    prerequisites = {"logistic-science-pack", "pm-gold-processing", "pm-silver-processing" },
+    prerequisites = {"logistic-science-pack", "pm-gold-processing"},
     unit =
     {
       count = 100,
@@ -898,7 +876,7 @@ data:extend({
       PM.unlock_recipe("pm-tungsten-seperation"),
       PM.unlock_recipe("pm-tungsten-plate")
     },
-    prerequisites = {"pm-advanced-transition-metal-refining", "pm-washing-plant-1", "pm-silver-processing", "pm-gold-processing" },
+    prerequisites = {"pm-advanced-transition-metal-refining", "pm-washing-plant-1", "pm-gold-processing" },
     unit =
     {
       count = 150,

@@ -857,26 +857,95 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-multimetal-framing",
+    name = "pm-multimetal-cr-tubing",
     group = "pm-multimetal-items",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "pm-multimetal-panelling",
+    name = "pm-multimetal-ab-tubing",
     group = "pm-multimetal-items",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "pm-multimetal-wiring",
+    name = "pm-multimetal-rr-tubing",
     group = "pm-multimetal-items",
     order = "d"
+  },
+
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-framing",
+    group = "pm-multimetal-items",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-hw-framing",
+    group = "pm-multimetal-items",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-lw-framing",
+    group = "pm-multimetal-items",
+    order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-ht-framing",
+    group = "pm-multimetal-items",
+    order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-cd-framing",
+    group = "pm-multimetal-items",
+    order = "i"
+  },
+
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-panelling",
+    group = "pm-multimetal-items",
+    order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-hw-panelling",
+    group = "pm-multimetal-items",
+    order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-lw-panelling",
+    group = "pm-multimetal-items",
+    order = "l"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-ab-panelling",
+    group = "pm-multimetal-items",
+    order = "m"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-rr-panelling",
+    group = "pm-multimetal-items",
+    order = "n"
+  },
+
+  {
+    type = "item-subgroup",
+    name = "pm-multimetal-wiring",
+    group = "pm-multimetal-items",
+    order = "o"
   },
   {
     type = "item-subgroup",
     name = "pm-multimetal-temp-plates",
     group = "pm-multimetal-items",
-    order = "e"
+    order = "p"
   },
 })

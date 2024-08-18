@@ -86,17 +86,6 @@ data:extend({
       PM.product("pm-mercury-vapour", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-gold-plating",
-    energy_required = 1,
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-gold-plate", 2)
-    },
-    result = "pm-gold-plating" -- FIXME: I think this isn't in 2.0 -@PennyJim
-  },
 
   {
     type = "recipe",
