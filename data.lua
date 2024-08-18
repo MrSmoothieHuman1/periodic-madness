@@ -651,3 +651,7 @@ AcidPlant.crafting_categories = {"pm-acids"}
 AcidPlant.minable = {mining_time = 0.1, result = "pm-acid-plant"}
 AcidPlant.module_specification.module_slots = 3
 data:extend{(AcidPlant)}
+
+if data.raw["utility-constants"].default.select_slot_row_count == 10 then
+  data.raw["utility-constants"].default.select_slot_row_count = 12
+end

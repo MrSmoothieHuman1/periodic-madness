@@ -30,6 +30,8 @@ Date: 2024-08-09
     - Changed stainless steel to also take molybdenum.
     - Changed all Multi-metals to only take their specific element and not an element + intermediate.
     - Redesigned Multi-metal item's icons.
+    - Changed the crafting menu length to 12.
+    - Made all alloy recipes for Multi-metals be faster than the non-alloy recipes.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -41,6 +43,7 @@ Date: 2024-08-09
     - (#3) Fixed processing integrated circuit molding giving advanced integrated circuits.
     - Fixed a lot of minor locale issues, like capatalisation and random bs like that.
     - Fixed the burn-inator being unlocked twice.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.129
 Date: 2024-08-16
