@@ -4,7 +4,7 @@ data:extend({
   {
     type = "item",
     name = "pm-caesium-rubidium-alum",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/caesium-rubidium-alum.png",
     subgroup = "pm-rubidium-am",
     order = "a",
@@ -13,8 +13,13 @@ data:extend({
   {
     type = "item",
     name = "pm-30-rubidium-alum",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/31-rubidium-alum.png", size = 64, scale = 0.25}
+    },
     subgroup = "pm-rubidium-am",
     order = "b",
     stack_size = 350
@@ -22,8 +27,13 @@ data:extend({
   {
     type = "item",
     name = "pm-50-rubidium-alum",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/51-rubidium-alum.png", size = 64, scale = 0.25}
+    },
     subgroup = "pm-rubidium-am",
     order = "c",
     stack_size = 300
@@ -31,8 +41,13 @@ data:extend({
   {
     type = "item",
     name = "pm-70-rubidium-alum",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.25}
+    },
     subgroup = "pm-rubidium-am",
     order = "d",
     stack_size = 250
@@ -40,7 +55,7 @@ data:extend({
   {
     type = "item",
     name = "pm-rubidium-alum",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
     subgroup = "pm-rubidium-am",
     order = "b",
