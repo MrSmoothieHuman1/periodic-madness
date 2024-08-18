@@ -64,8 +64,9 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-heavyweight-panelling", 8),
-      PM.ingredient("pm-basic-framing", 16),
-      PM.ingredient("pm-corrosion-resistant-tubing", 2)
+      PM.ingredient("pm-basic-framing", 11),
+      PM.ingredient("pm-corrosion-resistant-tubing", 2),
+      PM.ingredient("pm-stainless-steel-alloy", 6)
     },
     result = "pm-stainless-steel-storage-tank"
   },
@@ -933,7 +934,7 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      PM.ingredient("pm-stainless-steel-alloy", 6),
+      PM.ingredient("pm-stainless-steel-alloy", 4),
       PM.ingredient("engine-unit", 2),
       PM.ingredient("pm-heavyweight-framing", 8),
       PM.ingredient("pm-heavyweight-panelling", 8),

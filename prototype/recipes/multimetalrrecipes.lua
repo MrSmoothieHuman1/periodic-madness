@@ -741,7 +741,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-framing.png",
+        icon = "__periodic-madness__/graphics/icons/heavyweight-framing.png",
         icon_size = 64,
       },
       {

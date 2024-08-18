@@ -1404,8 +1404,10 @@ data:extend({
     allow_decomposition = false,
     ingredients =
     {
-      PM.ingredient("copper-plate", 10),
-      PM.ingredient("pm-zinc-plate", 10),
+      PM.ingredient("copper-plate", 8),
+      PM.ingredient("pm-zinc-plate", 8),
+      PM.ingredient("pm-lead-plate", 2),
+      PM.ingredient("pm-arsenic-ore", 2),
       PM.ingredient("pm-filled-flux-container", 2)
     },
     results =

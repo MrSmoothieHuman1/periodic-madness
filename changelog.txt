@@ -14,6 +14,7 @@ Date: 2024-08-09
     - Added an even better tier of water electrolysis, using a Nitrogen-doped nickel-molybdenum-phosphide catalyst. Why? because i wouldnt be a good devman if i wasnt sitting here talking to you, now would i?
     - Added a more efficient way to make plastic pellets using yttrium catalysts.
     - Added polystyrene and polystyrene packaging, as a more efficient way to transport certain items.
+    - Added a better recipe for brass plates to fit in with the other alloys, which takes lead and arsenic.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -32,6 +33,7 @@ Date: 2024-08-09
     - Redesigned Multi-metal item's icons.
     - Changed the crafting menu length to 12.
     - Made all alloy recipes for Multi-metals be faster than the non-alloy recipes.
+    - Made molten brass recipes line up with the better brass plate recipe.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

@@ -203,7 +203,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-brass-plate",
-    energy_required = 12,
+    energy_required = 8,
     category = "pm-alloying",
     subgroup = "pm-alloys",
     order = "c",
@@ -212,6 +212,23 @@ data:extend({
     {
       PM.ingredient("copper-plate", 1),
       PM.ingredient("pm-zinc-plate", 1),
+    },
+    result = "pm-brass-plate",
+  },
+  {
+    type = "recipe",
+    name = "pm-better-brass-plate",
+    energy_required = 12,
+    category = "pm-alloying",
+    subgroup = "pm-alloys",
+    order = "ca",
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("copper-plate", 3),
+      PM.ingredient("pm-zinc-plate", 3),
+      PM.ingredient("pm-lead-plate", 2),
+      PM.ingredient("pm-arsenic-ore", 2)
     },
     result = "pm-brass-plate",
     result_count = 2
@@ -267,7 +284,7 @@ data:extend({
     {
       PM.ingredient("iron-plate", 4),
       PM.ingredient("pm-manganese-plate", 4),
-      PM.ingredient("pm-vanadium-oxide", 4)
+      PM.ingredient("pm-vanadium-oxide", 3)
     },
     results =
     {

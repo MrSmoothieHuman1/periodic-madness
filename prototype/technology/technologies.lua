@@ -876,7 +876,7 @@ data:extend({
       PM.unlock_recipe("pm-tungsten-seperation"),
       PM.unlock_recipe("pm-tungsten-plate")
     },
-    prerequisites = {"pm-advanced-transition-metal-refining", "pm-washing-plant-1", "pm-gold-processing" },
+    prerequisites = {"pm-advanced-transition-metal-refining", "pm-washing-plant-1", "pm-gold-processing"},
     unit =
     {
       count = 150,
