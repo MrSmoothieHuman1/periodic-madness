@@ -1,9 +1,5 @@
 if not mods["bzzirconium"] then return end
 if not mods["Krastorio2"] then return end
-local PM = require("__periodic-madness__/library")
-
-data.raw["recipe"]["glass"].hidden = true
-data.raw["recipe"]["sand"].hidden = true
 
 data.raw["recipe"]["pm-dirty-boiler"].enabled = false
 data.raw["recipe"]["pm-science-bottle"].enabled = false
@@ -12,103 +8,52 @@ data.raw["recipe"]["kr-crusher"].subgroup = "pm-crushing-machine"
 data.raw["recipe"]["kr-crusher"].order = "d"
 data.raw["recipe"]["kr-filtration-plant"].ingredients =
 {
-  PM.ingredient("pm-glass-pane", 10),
-  PM.ingredient("steel-plate", 4),
-  PM.ingredient("automation-core", 2),
-  PM.ingredient("pm-corrosion-resistant-tubing", 10),
-  PM.ingredient("pm-heavyweight-panelling", 8)
+  {"pm-glass-pane", 10},
+  {"steel-plate", 4},
+  {"automation-core", 2},
+  {"pm-corrosion-resistant-tubing", 10},
+  {"pm-heavyweight-panelling", 8}
 }
 data.raw["recipe"]["kr-crusher"].ingredients =
 {
-  PM.ingredient("electric-engine-unit", 6),
-  PM.ingredient("advanced-circuit", 15),
-  PM.ingredient("concrete", 15),
-  PM.ingredient("pm-lightweight-framing", 30),
-  PM.ingredient("pm-heavyweight-panelling", 12),
+  {"electric-engine-unit", 6},
+  {"advanced-circuit", 15},
+  {"concrete", 15},
+  {"pm-lightweight-framing", 30},
+  {"pm-heavyweight-panelling", 12},
 }
-data.raw["recipe"]["sand"].category = "pm-crushing"
-
 data.raw["technology"]["pm-cleaner-power-generation"].prerequisites = { "kr-steam-engine" }
-data.raw["technology"]["kr-crusher"].unit.ingredients =
-{
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
-}
-data.raw["technology"]["kr-crusher"].unit.count = 350
-data.raw["technology"]["kr-crusher"].unit.time = 100
-data.raw["technology"]["kr-crusher"].prerequisites = { "lubricant" }
 data.raw["technology"]["kr-fluids-chemistry"].prerequisites = { "kr-basic-fluid-handling", "steel-processing",
   "kr-stone-processing" }
 data.raw["technology"]["kr-steam-engine"].effects =
 {
-  PM.unlock_recipe("pm-dirty-boiler"),
-  PM.unlock_recipe("steam-engine"),
-}
-data.raw["technology"]["kr-stone-processing"].prerequisites = { "pm-burner-crusher" }
-data.raw["furnace"]["kr-crusher"].crafting_categories = { "pm-crushing" }
-data.raw["furnace"]["kr-crusher"].crafting_speed = 10
-data.raw["furnace"]["kr-crusher"].energy_source =
-{
-  type = "fluid",
-  effectivity = 1,
-  burns_fluid = true,
-  destroy_non_fuel_fluid = true,
-  emissions_per_minute = 10,
-  fluid_box =
   {
-    production_type = "input",
-    pipe_picture = assembler2pipepictures(),
-    pipe_covers = pipecoverspictures(),
-    base_area = 10,
-    base_level = -1,
-    filter = "pm-heavy-lubricant",
-    pipe_connections = { { type = "input", position = { 0, 4.1 } } },
-  }
-}
-data.raw["furnace"]["kr-crusher"].energy_usage = "375kW"
-data:extend({
-
+    type = "unlock-recipe",
+    recipe = "pm-dirty-boiler"
+  },
   {
-    type = "technology",
-    name = "pm-burner-crusher",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/compat/K2/technology/burner-crusher.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-burner-crusher")
-    },
-    prerequisites = { "kr-automation-core" },
-    unit =
-    {
-      count = 30,
-      ingredients =
-      {
-        PM.ingredient("basic-tech-card", 1)
-      },
-      time = 30
-    }
-  }
-})
+    type = "unlock-recipe",
+    recipe = "steam-engine"
+  },
+}
 
 
 
 -- credit to KingArthur for this monstrosity, i love it
 -- replace an item/fluid in every recipes ingredients/results
 -- best used to merge items that are duplicated in mods that should be the same
---function overrides.global_item_replacer(old, new, blackrecipe)
+--function overrides.global_item_replacer{old, new, blackrecipe}
 --    if not data.raw.item[old] and not data.raw.fluid[old] then return end
 --    if not data.raw.item[new] and not data.raw.fluid[new] then return end
 --
---    local recipes = table.deepcopy(data.raw.recipe)
---    if type(blackrecipe) ~= 'table' and blackrecipe ~= nil then blackrecipe = {blackrecipe} end
+--    local recipes = table.deepcopy{data.raw.recipe}
+--    if type{blackrecipe} ~= 'table' and blackrecipe ~= nil then blackrecipe = {blackrecipe} end
 --    local brecipeset = {}
---    if blackrecipe ~= nil then for _, brecipe in pairs(blackrecipe) do brecipeset[brecipe] = true end end
---    for recipe in pairs(recipes) do
+--    if blackrecipe ~= nil then for _, brecipe in pairs{blackrecipe} do brecipeset[brecipe] = true end end
+--    for recipe in pairs{recipes} do
 --        if not recipe.ignored_by_recipe_replacement and not brecipeset[recipe] then
---            overrides.ingredient_replace(recipe, old, new)
---            overrides.results_replacer(recipe, old, new)
+--            overrides.ingredient_replace{recipe, old, new}
+--            overrides.results_replacer{recipe, old, new}
 --        end
 --    end
 --end

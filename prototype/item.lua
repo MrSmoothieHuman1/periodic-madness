@@ -536,7 +536,7 @@ data:extend({
   {
     type = "item",
     name = "pm-empty-petri-dish",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/empty-petri-dish.png",
     subgroup = "pm-biostuff-rnm",
     stack_size = 200
@@ -544,7 +544,7 @@ data:extend({
   {
     type = "item",
     name = "pm-agar-petri-dish",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/agar-petri-dish.png",
     subgroup = "pm-biostuff-rnm",
     stack_size = 200
@@ -552,7 +552,7 @@ data:extend({
   {
     type = "item",
     name = "pm-bacteriaed-petri-dish",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/bacteria'ed-petri-dish.png",
     subgroup = "pm-biostuff-rnm",
     stack_size = 200
@@ -560,7 +560,7 @@ data:extend({
   {
     type = "item",
     name = "pm-cyanobacteriaed-petri-dish",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cyanobacteria'ed-petri-dish.png",
     subgroup = "pm-biostuff-rnm",
     stack_size = 200

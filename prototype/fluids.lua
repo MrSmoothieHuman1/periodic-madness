@@ -726,7 +726,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-agar-solution",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/agar-solution.png",
     default_temperature = 15,
     base_color = { r = 0.99, g = 0.98, b = 0.6 },
@@ -737,7 +737,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-bacteriaed-agar-solution",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/bacteria'ed-agar-solution.png",
     default_temperature = 15,
     base_color = { r = 0.99, g = 0.6, b = 0.98 },
@@ -1122,7 +1122,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-cyanobacteriaed-agar-solution",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/cyanobacteria'ed-agar-solution.png",
     default_temperature = 15,
     base_color = { r = 0.6, g = 0.6, b = 0.98 },

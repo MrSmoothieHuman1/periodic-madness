@@ -296,7 +296,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 10),
-      PM.ingredient("pm-seawater", 100, "fluid"),
+      PM.ingredient("pm-seawater", 50, "fluid"),
     },
     results =
     {
@@ -319,7 +319,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 15),
-      PM.ingredient("water", 100, "fluid"),
+      PM.ingredient("water", 50, "fluid"),
     },
     results =
     {

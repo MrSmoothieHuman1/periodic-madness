@@ -34,6 +34,7 @@ Date: 2024-08-09
     - Changed the crafting menu length to 12.
     - Made all alloy recipes for Multi-metals be faster than the non-alloy recipes.
     - Made molten brass recipes line up with the better brass plate recipe.
+    - Rebalanced TM washing/seawater washing to take 50 of each fluid, instead of 100.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

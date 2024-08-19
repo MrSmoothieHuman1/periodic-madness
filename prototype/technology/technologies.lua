@@ -966,7 +966,7 @@ data:extend({
       PM.unlock_recipe("pm-plastic-advanced-transition-metal-science-pack"),
       PM.unlock_recipe("pm-plastic-advanced-advanced-transition-metal-science-pack"),
     },
-    prerequisites = {"pm-flourine-processing", "pm-polymethyl-methacrylate" },
+    prerequisites = {"pm-flourine-processing", "pm-polymethyl-methacrylate"},
     unit =
     {
       count = 125,
