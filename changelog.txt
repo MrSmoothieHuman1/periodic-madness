@@ -35,6 +35,9 @@ Date: 2024-08-09
     - Made all alloy recipes for Multi-metals be faster than the non-alloy recipes.
     - Made molten brass recipes line up with the better brass plate recipe.
     - Rebalanced TM washing/seawater washing to take 50 of each fluid, instead of 100.
+    - Finally remade the fertiliser icon, and while it is what i actually wanted it to look like... mehhh? i might change it back, idk - its iconic.
+    - Halved the amount of fluid needed to reform oil fractions.
+    - Changed processing unit board molding to take ferric chloride and indium.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -46,6 +49,7 @@ Date: 2024-08-09
     - (#3) Fixed processing integrated circuit molding giving advanced integrated circuits.
     - Fixed a lot of minor locale issues, like capatalisation and random bs like that.
     - Fixed the burn-inator being unlocked twice.
+    - Fixed the stainless steel tank not actually taking.. stainless steel.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.129

@@ -1613,7 +1613,7 @@ data:extend({
     type = "technology",
     name = "pm-anti-bacterial-multiproperty-multimetals",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/anti-bacterial-mutlimetals.png",
+    icon = "__periodic-madness__/graphics/technology/anti-bacterial-multimetals.png",
     effects =
     {
       PM.unlock_recipe("pm-silver-anti-bacterial-tubing"),

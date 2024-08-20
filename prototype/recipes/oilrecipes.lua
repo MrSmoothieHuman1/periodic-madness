@@ -902,7 +902,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-refinery-gases", 100, "fluid"),
-      PM.ingredient("pm-petrol", 20, "fluid")
+      PM.ingredient("pm-petrol", 10, "fluid")
     },
     results =
     {
@@ -922,7 +922,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-petrol", 90, "fluid"),
-      PM.ingredient("pm-naptha", 20, "fluid")
+      PM.ingredient("pm-naptha", 10, "fluid")
     },
     results =
     {
@@ -942,7 +942,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-naptha", 80, "fluid"),
-      PM.ingredient("pm-kerosene", 20, "fluid")
+      PM.ingredient("pm-kerosene", 10, "fluid")
     },
     results =
     {
@@ -962,7 +962,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-kerosene", 70, "fluid"),
-      PM.ingredient("pm-diesel", 20, "fluid")
+      PM.ingredient("pm-diesel", 10, "fluid")
     },
     results =
     {
@@ -982,7 +982,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-diesel", 60, "fluid"),
-      PM.ingredient("pm-lubricating-oils", 20, "fluid")
+      PM.ingredient("pm-lubricating-oils", 10, "fluid")
     },
     results =
     {
@@ -1002,7 +1002,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-lubricating-oils", 50, "fluid"),
-      PM.ingredient("pm-fuel-oils", 20, "fluid")
+      PM.ingredient("pm-fuel-oils", 10, "fluid")
     },
     results =
     {
@@ -1022,7 +1022,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-fuel-oils", 40, "fluid"),
-      PM.ingredient("pm-oil-residuals", 20, "fluid")
+      PM.ingredient("pm-oil-residuals", 10, "fluid")
     },
     results =
     {

@@ -13,7 +13,7 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-fuel-oils", 15, "fluid"),
+      PM.ingredient("pm-fuel-oils", 20, "fluid"),
       PM.ingredient("steam", 20, "fluid"),
       PM.ingredient("pm-cobalt-catalyst", 2)
     },
@@ -36,7 +36,7 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-kerosene", 15, "fluid"),
+      PM.ingredient("pm-kerosene", 20, "fluid"),
       PM.ingredient("steam", 20, "fluid"),
       PM.ingredient("pm-cobalt-catalyst", 2)
     },
@@ -64,7 +64,7 @@ data:extend({
     },
     results =
     {
-      PM.product("sulfuric-acid", 10, "fluid"),
+      PM.product("sulfuric-acid", 15, "fluid"),
       PM.product("sulfur", 2),
       PM.product_chance("pm-catalyst-container", 1, 0.9)
     }

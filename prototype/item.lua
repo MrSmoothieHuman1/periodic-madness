@@ -527,7 +527,7 @@ data:extend({
   {
     type = "item",
     name = "pm-fertiliser",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fertiliser.png",
     subgroup = "pm-biostuff-rnm",
     order = "a",

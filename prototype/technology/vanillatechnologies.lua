@@ -136,34 +136,27 @@ data.raw["technology"]["oil-processing"].unit.ingredients =
 }
 
 
-local SteelAlloyPreReq = data.raw["technology"]["steel-processing"]
-
-SteelAlloyPreReq.prerequisites = { "pm-alloying" }
-
-
-local ConcretePreReq = data.raw["technology"]["concrete"]
-
-ConcretePreReq.prerequisites = { "pm-oil-residual-recipes", "advanced-material-processing", "automation-2" }
+data.raw["technology"]["steel-processing"].prerequisites = {"pm-alloying"}
+data.raw["technology"]["steel-processing"].icon_size = 64
+data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
 
 
-local Electronics1Fix = data.raw["technology"]["electronics"]
+data.raw["technology"]["concrete"].prerequisites = { "pm-oil-residual-recipes", "advanced-material-processing", "automation-2" }
 
-Electronics1Fix.effects =
+
+data.raw["technology"]["electronics"].effects =
 {
   PM.unlock_recipe("pm-mini-motor")
 }
 
-local AdvancedOilOverhaul = data.raw["technology"]["advanced-oil-processing"]
-
-AdvancedOilOverhaul.icon_size = 256
-AdvancedOilOverhaul.icon = "__periodic-madness__/graphics/technology/fractional-distillation.png"
-AdvancedOilOverhaul.effects =
+data.raw["technology"]["advanced-oil-processing"].icon = "__periodic-madness__/graphics/technology/fractional-distillation.png"
+data.raw["technology"]["advanced-oil-processing"].effects =
 {
   PM.unlock_recipe("pm-fractional-distillator"),
   PM.unlock_recipe("pm-crude-oil-fractional-distillation")
 }
-AdvancedOilOverhaul.prerequisites = { "oil-processing", "pm-basic-polyethylene-plastic" }
-AdvancedOilOverhaul.unit =
+data.raw["technology"]["advanced-oil-processing"].prerequisites = { "oil-processing", "pm-basic-polyethylene-plastic" }
+data.raw["technology"]["advanced-oil-processing"].unit =
 {
   count = 200,
   ingredients =

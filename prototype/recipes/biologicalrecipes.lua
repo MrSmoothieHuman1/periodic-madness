@@ -76,8 +76,7 @@ data:extend({
     {
       {
         icon = "__periodic-madness__/graphics/icons/fertiliser.png",
-        icon_size = 128,
-        scale = 0.35
+        icon_size = 64,
       },
       {
         icon = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",

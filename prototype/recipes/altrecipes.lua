@@ -194,6 +194,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-processing-breadboard-mold", 1),
+      PM.ingredient("pm-ferric-chloride", 10, "fluid"),
       PM.ingredient("pm-indium-plate", 2)
     },
     results =
