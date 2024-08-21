@@ -948,4 +948,12 @@ data:extend({
     group = "pm-multimetal-items",
     order = "p"
   },
+
+  {
+    type = "item-subgroup",
+    name = "pm-shotgun-ammo",
+    group = "combat",
+    order = "ba",
+
+  }
 })

@@ -2645,6 +2645,7 @@ data:extend({
       PM.unlock_recipe("pm-melatonin-harvesting"),
       PM.unlock_recipe("pm-phosgene"),
       PM.unlock_recipe("pm-geneva's-neglection-magazine"),
+      PM.unlock_recipe("pm-geneva's-neglection-shotgun-shell"),
       PM.unlock_recipe("poison-capsule"),
       PM.unlock_recipe("slowdown-capsule")
     },

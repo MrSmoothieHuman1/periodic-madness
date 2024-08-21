@@ -11,6 +11,7 @@ data.raw["technology"]["automation-2"].effects =
   PM.unlock_recipe("assembling-machine-2"),
   PM.unlock_recipe("pm-crusher-1")
 }
+
 data.raw["technology"]["automation-2"].prerequisites = { "steel-processing", "pm-advanced-basic-tubing",
   "logistic-science-pack" }
 
@@ -19,6 +20,7 @@ data.raw["technology"]["automation-3"].effects =
   PM.unlock_recipe("assembling-machine-3"),
   PM.unlock_recipe("pm-crusher-2")
 }
+
 data.raw["technology"]["automation-3"].prerequisites = { "advanced-electronics-2", "electric-engine" }
 data.raw["technology"]["automation-3"].unit.ingredients =
 {
@@ -28,30 +30,20 @@ data.raw["technology"]["automation-3"].unit.ingredients =
   PM.ingredient("pm-post-transition-metal-science-pack", 1)
 }
 
-local ATMSTech = data.raw["technology"]["logistic-science-pack"]
-
-ATMSTech.icon_size = 256
-ATMSTech.icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-unlock.png"
-ATMSTech.prerequisites = { "pm-advanced-transition-metal-refining", "pm-mercury-processing" }
-
-
-local AdvancedTMScience = data.raw["tool"]["logistic-science-pack"]
-
-AdvancedTMScience.icon = "__periodic-madness__/graphics/icons/science/advanced-transition-metal-pack.png"
-AdvancedTMScience.icon_size = 64
-
-
-local SulfurFix = data.raw["technology"]["sulfur-processing"]
-
-SulfurFix.effects =
+data.raw["technology"]["logistic-science-pack"].icon_size = 256
+data.raw["technology"]["logistic-science-pack"].icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-unlock.png"
+data.raw["technology"]["logistic-science-pack"].prerequisites = {"pm-advanced-transition-metal-refining", "pm-mercury-processing"}
+data.raw["tool"]["logistic-science-pack"].icon = "__periodic-madness__/graphics/icons/science/advanced-transition-metal-pack.png"
+data.raw["tool"]["logistic-science-pack"].icon_size = 64
+data.raw["technology"]["sulfur-processing"].effects =
 {
   PM.unlock_recipe("pm-vanadium-oxide"),
   PM.unlock_recipe("pm-vanadium-oxide-catalyst"),
   PM.unlock_recipe("pm-sulfur-dioxide-cracking"),
   PM.unlock_recipe("pm-acidic-water-to-sulfuric-acid")
 }
-SulfurFix.prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes"}
 
+data.raw["technology"]["sulfur-processing"].prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes"}
 data.raw["technology"]["sulfur-processing"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),
@@ -59,15 +51,13 @@ data.raw["technology"]["sulfur-processing"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
 }
 
-local RedCircuitFix = data.raw["technology"]["advanced-electronics"]
-
-RedCircuitFix.effects =
+data.raw["technology"]["advanced-electronics"].effects =
 {
   PM.unlock_recipe("pm-advanced-circuit-breadboard"),
   PM.unlock_recipe("pm-advanced-integrated-circuits"),
   PM.unlock_recipe("advanced-circuit")
 }
-RedCircuitFix.prerequisites = { "pm-fluid-circuit", "pm-basic-polyethylene-plastic", "pm-copper-tin-solder" }
+data.raw["technology"]["advanced-electronics"].prerequisites = { "pm-fluid-circuit", "pm-basic-polyethylene-plastic", "pm-copper-tin-solder" }
 data.raw["technology"]["advanced-electronics"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),
@@ -75,10 +65,8 @@ data.raw["technology"]["advanced-electronics"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
 }
 
-local BlueBeltEarly = data.raw["technology"]["logistics-3"]
-
-BlueBeltEarly.prerequisites = { "logistics-2", "pm-lubricating-oils-recipes" }
-BlueBeltEarly.unit =
+data.raw["technology"]["logistics-3"].prerequisites = { "logistics-2", "pm-lubricating-oils-recipes" }
+data.raw["technology"]["logistics-3"].unit =
 {
   count = 150,
   ingredients =
@@ -90,16 +78,8 @@ BlueBeltEarly.unit =
   time = 15
 }
 
-
-local PowerPoleChange = data.raw["technology"]["electric-energy-distribution-1"]
-
-PowerPoleChange.prerequisites = { "pm-fiberoptics" }
-
-
-local PowerPoleChange2 = data.raw["technology"]["electric-energy-distribution-2"]
-
-PowerPoleChange2.prerequisites = { "chemical-science-pack", "electric-energy-distribution-1", "pm-gold-processing" }
-
+data.raw["technology"]["electric-energy-distribution-1"].prerequisites = {"pm-fiberoptics"}
+data.raw["technology"]["electric-energy-distribution-2"].prerequisites = {"chemical-science-pack", "electric-energy-distribution-1", "pm-gold-processing"}
 
 data.raw["technology"]["fluid-handling"].effects =
 {
@@ -492,6 +472,7 @@ data.raw["technology"]["military-3"].effects =
   PM.unlock_recipe("slowdown-capsule"),
   PM.unlock_recipe("combat-shotgun"),
   PM.unlock_recipe("pm-high-density-magazine"),
+  PM.unlock_recipe("pm-high-density-shotgun-shell"),
 }
 data.raw["technology"]["military-3"].unit.ingredients =
 {
@@ -810,9 +791,75 @@ data.raw["technology"]["military"].effects =
   PM.unlock_recipe("shotgun-shell"),
   PM.unlock_recipe("pm-sodium-grenade"),
 }
+data.raw["technology"]["military-2"].prerequisites = { "pm-rubber-processing", "military" }
+data.raw["technology"]["military-2"].effects =
+{
+  PM.unlock_recipe("piercing-rounds-magazine"),
+  PM.unlock_recipe("piercing-shotgun-shell"),
+  PM.unlock_recipe("grenade")
+}
+data.raw["technology"]["research-speed-2"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+}
+data.raw["technology"]["research-speed-5"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("chemical-science-pack", 1),
+  PM.ingredient("pm-alkali-metal-science-pack", 1)
+}data.raw["technology"]["research-speed-6"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("chemical-science-pack", 1),
+  PM.ingredient("pm-alkali-metal-science-pack", 1)
+}
 
+data.raw["technology"]["mining-productivity-1"].effects =
+{
+  PM.modify("mining-drill-productivity-bonus", 0.05)
+}
+data.raw["technology"]["mining-productivity-1"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+}
+data.raw["technology"]["mining-productivity-2"].effects =
+{
+  PM.modify("mining-drill-productivity-bonus", 0.05)
+}
+data.raw["technology"]["mining-productivity-2"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+}
+data.raw["technology"]["mining-productivity-2"].effects =
+{
+  PM.modify("mining-drill-productivity-bonus", 0.05)
+}
+data.raw["technology"]["mining-productivity-3"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+}
+data.raw["technology"]["power-armor-mk2"].prerequisites = {"pm-metalloid-pack-unlock"}
+data.raw["technology"]["power-armor-mk2"].unit.ingredients =
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("pm-post-transition-metal-science-pack", 1),
+  PM.ingredient("pm-metalloid-science-pack", 1)
+}
 
-data.raw["technology"]["military-2"].prerequisites = { "pm-rubber-processing" }
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"

@@ -165,7 +165,7 @@ data:extend({
     energy_required = 1,
     category = "pm-molding",
     subgroup = "pm-molded-circuits",
-    order = "na",
+    order = "n",
     enabled = false,
     allow_decomposition = false,
     always_show_made_in = true,
@@ -185,8 +185,9 @@ data:extend({
     name = "pm-processing-breadboard-molding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/processing-circuitboard-mold.png",
+    category = "crafting-with-fluid",
     subgroup = "pm-molded-circuits",
-    order = "n",
+    order = "na",
     energy_required = 1,
     enabled = false,
     allow_decomposition = false,
@@ -522,7 +523,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-processing-integrated-circuit-mold", 3),
-      PM.ingredient("pm-gold-wire", 2)
+      PM.ingredient("pm-indium-wire", 2)
     },
     results =
     {

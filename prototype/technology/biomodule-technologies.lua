@@ -218,6 +218,7 @@ data:extend({
     effects =
     {
       PM.modify("character-health-bonus", 25),
+      PM.modify("character-crafting-speed", 0.10)
     },
     prerequisites = { "pm-bio-laboratory" },
     unit =
@@ -240,6 +241,7 @@ data:extend({
     effects =
     {
       PM.modify("character-health-bonus", 25),
+      PM.modify("character-crafting-speed", 0.10)
     },
     prerequisites = { "pm-bio-module-health-1" },
     unit =
@@ -262,6 +264,7 @@ data:extend({
     effects =
     {
       PM.modify("character-health-bonus", 50),
+      PM.modify("character-crafting-speed", 0.10)
     },
     prerequisites = { "pm-bio-module-health-2" },
     unit =
@@ -284,6 +287,7 @@ data:extend({
     effects =
     {
       PM.modify("character-health-bonus", 50),
+      PM.modify("character-crafting-speed", 0.20)
     },
     prerequisites = { "pm-bio-module-health-3" },
     unit =

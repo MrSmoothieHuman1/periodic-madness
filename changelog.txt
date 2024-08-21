@@ -15,6 +15,9 @@ Date: 2024-08-09
     - Added a more efficient way to make plastic pellets using yttrium catalysts.
     - Added polystyrene and polystyrene packaging, as a more efficient way to transport certain items.
     - Added a better recipe for brass plates to fit in with the other alloys, which takes lead and arsenic.
+    - Added some more technology descriptions.
+    - Gave Health Bio-Module technologies a crafting speed bost, with 4 tiers giving you 1.5 crafting speed.
+    - Added new shotgun shell ammos, so it now matches with normal ammo. (normal, piercing, high density, geneva neglection).
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -32,12 +35,15 @@ Date: 2024-08-09
     - Changed all Multi-metals to only take their specific element and not an element + intermediate.
     - Redesigned Multi-metal item's icons.
     - Changed the crafting menu length to 12.
-    - Made all alloy recipes for Multi-metals be faster than the non-alloy recipes.
     - Made molten brass recipes line up with the better brass plate recipe.
     - Rebalanced TM washing/seawater washing to take 50 of each fluid, instead of 100.
     - Finally remade the fertiliser icon, and while it is what i actually wanted it to look like... mehhh? i might change it back, idk - its iconic.
     - Halved the amount of fluid needed to reform oil fractions.
     - Changed processing unit board molding to take ferric chloride and indium.
+    - Added another 3 tiers of mining productivity, but nerfed tiers 1-4 to only give +5% productivity.
+    - Moved power armour MK2 into Metalloids science pack.
+    - Nerfed solid fuel to make it less useful for vehicles.
+    - Changed Geneva's neglection magazine to take 2 seconds to craft instead of 4.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -50,6 +56,7 @@ Date: 2024-08-09
     - Fixed a lot of minor locale issues, like capatalisation and random bs like that.
     - Fixed the burn-inator being unlocked twice.
     - Fixed the stainless steel tank not actually taking.. stainless steel.
+    - Fixed mining productivity and research speed not being unlocked by their respective tech trees.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.129

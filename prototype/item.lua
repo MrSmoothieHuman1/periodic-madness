@@ -873,94 +873,6 @@ data:extend({
     },
   } --[[@as data.ModulePrototype]],
   {
-    type = "ammo",
-    name = "pm-high-density-magazine",
-    icon = "__periodic-madness__/graphics/icons/high-density-magazine.png",
-    icon_size = 64,
-    ammo_type =
-    {
-      category = "bullet",
-      action =
-      {
-        type = "direct",
-        action_delivery =
-        {
-          type = "instant",
-          source_effects =
-          {
-            type = "create-explosion",
-            entity_name = "explosion-gunshot"
-          },
-          target_effects =
-          {
-            {
-              type = "create-entity",
-              entity_name = "explosion-hit",
-              offsets = { { 0, 1 } },
-              offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } }
-            },
-            {
-              type = "damage",
-              damage = { amount = 14, type = "physical" }
-            }
-          }
-        }
-      }
-    },
-    magazine_size = 15,
-    subgroup = "ammo",
-    order = "a[basic-clips]-ca",
-    stack_size = 200
-  },
-  {
-    type = "ammo",
-    name = "pm-geneva's-neglection-magazine",
-    icon = "__periodic-madness__/graphics/icons/geneva's-neglection-magazine.png",
-    icon_size = 64,
-    ammo_type =
-    {
-      category = "bullet",
-      action =
-      {
-        type = "direct",
-        action_delivery =
-        {
-          type = "instant",
-          source_effects =
-          {
-            type = "create-explosion",
-            entity_name = "explosion-gunshot"
-          },
-          target_effects =
-          {
-            {
-              type = "create-entity",
-              entity_name = "explosion-hit",
-              offsets = { { 0, 1 } },
-              offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } }
-            },
-            {
-              type = "damage",
-              damage = { amount = 10, type = "physical" }
-            },
-            {
-              type = "create-sticker",
-              sticker = "pm-bio-poison-sticker",
-              duration_in_ticks = 10 * 60,
-              damage_interval = 60,
-              damage_per_tick = 4,
-              show_in_tooltip = true
-            }
-          }
-        }
-      }
-    },
-    magazine_size = 12,
-    subgroup = "ammo",
-    order = "a[basic-clips]-c",
-    stack_size = 200
-  },
-  {
     type = "item",
     name = "pm-CRT",
     icon_size = 128,
@@ -1582,6 +1494,9 @@ data.raw["projectile"]["destroyer-capsule"].action =
     }
   }
 }
+data.raw["item"]["solid-fuel"].fuel_emissions_multiplier = 1.5
+data.raw["item"]["solid-fuel"].fuel_acceleration_multiplier = 1
+data.raw["item"]["solid-fuel"].fuel_top_speed_multiplier = 1.1
 
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice

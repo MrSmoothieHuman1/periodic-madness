@@ -621,7 +621,12 @@ sanitize_recipe(recipes["beacon"]).ingredients =
   PM.ingredient("advanced-circuit", 8),
   PM.ingredient("pm-chrominum-ore", 12)
 }
-
+sanitize_recipe(recipes["piercing-shotgun-shell"]).ingredients = 
+{
+  PM.ingredient("pm-brass-plate", 3),
+  PM.ingredient("shotgun-shell", 1),
+  PM.ingredient("pm-vulcanised-rubber", 3)
+}
 
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 {

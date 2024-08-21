@@ -2094,7 +2094,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "ammo",
     order = "a[basic-clips]-ca",
-    energy_required = 4,
+    energy_required = 2,
     ingredients =
     {
       PM.ingredient("pm-phosgene", 10, "fluid"),
@@ -2390,6 +2390,44 @@ data:extend({
     results = 
     {
       PM.product("pm-sodium-grenade", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-high-density-shotgun-shell",
+    enabled = false,
+    subgroup = "ammo",
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("piercing-shotgun-shell", 1),
+      PM.ingredient("pm-bismuth-ore", 6),
+      PM.ingredient("sulfur", 2),
+      PM.ingredient("pm-polyethylene-plastic", 2)
+    },
+    results =
+    {
+      PM.product("pm-high-density-shotgun-shell", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-geneva's-neglection-shotgun-shell",
+    enabled = false,
+    category = "crafting-with-fluid",
+    subgroup = "ammo",
+    energy_required = 2,
+    ingredients =
+    {
+      PM.ingredient("pm-phosgene", 10, "fluid"),
+      PM.ingredient("piercing-shotgun-shell", 1),
+      PM.ingredient("pm-thallium-plate", 4),
+      PM.ingredient("pm-flourine", 6),
+      PM.ingredient("pm-polyethylene-plastic", 2)
+    },
+    results =
+    {
+      PM.product("pm-geneva's-neglection-shotgun-shell", 2)
     }
   },
 

@@ -13,6 +13,7 @@ require("prototype.items.plastic")
 require("prototype.items.multimetalitems")
 require("prototype.items.fuel")
 require("prototype.items.science")
+require("prototype.items.ammo")
 
 require("prototype.technology.technologies")
 require("prototype.technology.alttechnologies")
