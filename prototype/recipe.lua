@@ -2421,8 +2421,8 @@ data:extend({
     {
       PM.ingredient("pm-phosgene", 10, "fluid"),
       PM.ingredient("piercing-shotgun-shell", 1),
-      PM.ingredient("pm-thallium-plate", 4),
-      PM.ingredient("pm-flourine", 6),
+      PM.ingredient("pm-thallium-plate", 6),
+      PM.ingredient("pm-flourine", 4),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results =

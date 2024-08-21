@@ -122,19 +122,19 @@ data:extend({
               action_delivery =
               {
                 type = "projectile",
-                projectile = "shotgun-pellet",
+                projectile = "piercing-shotgun-pellet",
                 starting_speed = 1,
-                starting_speed_deviation = 0.08,
-                direction_deviation = 0.4,
-                range_deviation = 0.4,
-                max_range = 15
+                starting_speed_deviation = 0.12,
+                direction_deviation = 0.55,
+                range_deviation = 0.55,
+                max_range = 20
               }
             }
           }
         },
         magazine_size = 15,
-        subgroup = "ammo",
-        order = "b[shotgun]-a[basic]",
+        subgroup = "pm-shotgun-ammo",
+        order = "c",
         stack_size = 100
     },
     {
@@ -161,17 +161,6 @@ data:extend({
                     entity_name = "explosion-gunshot",
                   },
                 },
-                target_effects = 
-                {
-                    {
-                        type = "create-sticker",
-                        sticker = "pm-bio-poison-sticker",
-                        duration_in_ticks = 10 * 60,
-                        damage_interval = 60,
-                        damage_per_tick = 4,
-                        show_in_tooltip = true
-                      }
-                }
               }
             },
             {
@@ -180,19 +169,19 @@ data:extend({
               action_delivery =
               {
                 type = "projectile",
-                projectile = "shotgun-pellet",
+                projectile = "pm-poison-shotgun-pellet",
                 starting_speed = 1,
                 starting_speed_deviation = 0.1,
                 direction_deviation = 0.3,
                 range_deviation = 0.3,
-                max_range = 15
+                max_range = 20
               },
             }
           }
         },
-        magazine_size = 8,
-        subgroup = "ammo",
-        order = "b[shotgun]-a[basic]",
+        magazine_size = 12,
+        subgroup = "pm-shotgun-ammo",
+        order = "c",
         stack_size = 200
     },
     

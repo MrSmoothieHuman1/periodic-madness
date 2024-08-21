@@ -9834,8 +9834,48 @@ data:extend({
       }
     }
   },
-
-} --[[@as data.EntityPrototype]])
+  {
+    type = "projectile",
+    name = "pm-poison-shotgun-pellet",
+    flags = {"not-on-map"},
+    collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
+    acceleration = 0,
+    direction_only = true,
+    action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "damage",
+            damage = {amount = 5, type = "physical"}
+          },
+          {
+            type = "create-sticker",
+            sticker = "pm-bio-poison-sticker",
+            duration_in_ticks = 10 * 60,
+            damage_interval = 60,
+            damage_per_tick = 4,
+            show_in_tooltip = true
+          }
+        }
+      },   
+    },
+    animation =
+    {
+      filename = "__base__/graphics/entity/bullet/bullet.png",
+      tint = {r = 1, g = 0, b = 1},
+      draw_as_glow = true,
+      frame_count = 1,
+      width = 3,
+      height = 50,
+      priority = "high"
+    }
+  }
+--[[@as data.EntityPrototype]]})
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
 -- selection_box = {{-2.2, -2.2}, {2.5, 2.6}}, first two are up and down, third is left, fourth is right
