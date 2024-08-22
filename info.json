@@ -10,9 +10,10 @@
     "(?) bzzirconium >= 0.7.3",
     "(?) bzchlorine >= 0.1.4",
     "(?) Krastorio2 >= 1.3.23",
-    "(?) BrimStuff >= 1.0.6"
+    "(?) BrimStuff >= 1.0.6",
+    "(?) icon_badges >= 1.1.9"
   ],
-  "description": "This mod aims to add most, if not all elements of the periodic table to Factorio.",
+  "description": "This mod aims to add every element in the periodic table to Factorio.",
   "package": {
     "sync_portal_details": true,
     "readme": "README.md",

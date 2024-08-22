@@ -44,6 +44,7 @@ Date: 2024-08-09
     - Moved power armour MK2 into Metalloids science pack.
     - Nerfed solid fuel to make it less useful for vehicles.
     - Changed Geneva's neglection magazine to take 2 seconds to craft instead of 4.
+    - increased the health of the Circuit Megassembler MK1 from 350 to 1150.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

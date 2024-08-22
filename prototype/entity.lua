@@ -3181,7 +3181,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
     minable = { mining_time = 0.7, result = "pm-circuit-megassembler" },
-    max_health = 350,
+    max_health = 1150,
     collision_box = { { -3.4, -3.4 }, { 3.4, 3.4 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     corpse = "pm-circuit-megassembler",
@@ -9858,7 +9858,6 @@ data:extend({
             sticker = "pm-bio-poison-sticker",
             duration_in_ticks = 10 * 60,
             damage_interval = 60,
-            damage_per_tick = 4,
             show_in_tooltip = true
           }
         }
@@ -9874,7 +9873,76 @@ data:extend({
       height = 50,
       priority = "high"
     }
-  }
+  },
+  {
+    type = "projectile",
+    name = "pm-slug-pellet",
+    flags = {"not-on-map"},
+    collision_box = {{-0.1, -0.3}, {0.1, 0.3 }},
+    acceleration = 0,
+    direction_only = true,
+    action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          type = "damage",
+          damage = {amount = 16, type = "physical"}
+        }
+      }
+    },
+    animation =
+    {
+      filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+      draw_as_glow = true,
+      frame_count = 1,
+      width = 3,
+      height = 50,
+      priority = "high"
+    }
+  },
+  {
+    type = "projectile",
+    name = "pm-poison-slug-pellet",
+    flags = {"not-on-map"},
+    collision_box = {{-0.1, -0.3}, {0.1, 0.3 }},
+    acceleration = 0,
+    direction_only = true,
+    action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "damage",
+            damage = {amount = 12, type = "physical"}
+          },
+          {
+            type = "create-sticker",
+            sticker = "pm-bio-poison-sticker",
+            duration_in_ticks = 10 * 60,
+            damage_interval = 60,
+            show_in_tooltip = true
+          }
+        }
+      }
+    },
+    animation =
+    {
+      filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+      draw_as_glow = true,
+      frame_count = 1,
+      width = 3,
+      height = 50,
+      priority = "high"
+    }
+  },
 --[[@as data.EntityPrototype]]})
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down

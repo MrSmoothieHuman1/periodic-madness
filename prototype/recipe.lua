@@ -2396,7 +2396,8 @@ data:extend({
     type = "recipe",
     name = "pm-high-density-shotgun-shell",
     enabled = false,
-    subgroup = "ammo",
+    subgroup = "pm-shotgun-ammo",
+    order = "c",
     energy_required = 4,
     ingredients =
     {
@@ -2415,7 +2416,8 @@ data:extend({
     name = "pm-geneva's-neglection-shotgun-shell",
     enabled = false,
     category = "crafting-with-fluid",
-    subgroup = "ammo",
+    subgroup = "pm-shotgun-ammo",
+    order = "d",
     energy_required = 2,
     ingredients =
     {
@@ -2540,6 +2542,48 @@ data:extend({
     results =
     {
       PM.product("pm-post-transition-metal-science-pack", 2),
+    }
+  },{
+    type = "recipe",
+    name = "pm-plastic-alkali-metal-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "pm-plastic-science-pack",
+    order = "f",
+    energy_required = 6,
+    ingredients =
+    {
+      PM.ingredient("pm-caesium", 5, "fluid"),
+      PM.ingredient("pm-potassium", 12),
+      PM.ingredient("pm-sodium", 20),
+      PM.ingredient("pm-lithium-ore", 10),
+      PM.ingredient("pm-rubidium", 2),
+      PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+      PM.product("pm-alkali-metal-science-pack", 2),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-plastic-metalloid-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "pm-plastic-science-pack",
+    order = "g",
+    energy_required = 6,
+    ingredients =
+    {
+      PM.ingredient("pm-antimony-ore", 6),
+      PM.ingredient("pm-arsenic-ore", 6),
+      PM.ingredient("pm-boron", 16, "fluid"),
+      PM.ingredient("pm-tellurium-plate", 10),
+      PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+      PM.product("pm-metalloid-science-pack", 2),
     }
   },
 

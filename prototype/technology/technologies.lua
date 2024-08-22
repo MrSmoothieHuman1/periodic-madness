@@ -3284,8 +3284,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/plastic-science-tier-2.png",
     effects =
     {
-      PM.unlock_recipe("pm-plastic-reactive-non-metals-science-pack"),
-      PM.unlock_recipe("pm-plastic-post-transition-metal-science-pack"),
+      PM.unlock_recipe("pm-plastic-alkali-metal-science-pack"),
+      PM.unlock_recipe("pm-plastic-metalloid-science-pack"),
     },
     prerequisites = {"pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock" },
     unit =

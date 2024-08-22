@@ -118,7 +118,7 @@ data:extend({
             },
             {
               type = "direct",
-              repeat_count = 24,
+              repeat_count = 20,
               action_delivery =
               {
                 type = "projectile",
@@ -184,7 +184,101 @@ data:extend({
         order = "c",
         stack_size = 200
     },
-    
+--slugs
+{
+  type = "ammo",
+  name = "pm-shotgun-slug",
+  icon = "__periodic-madness__/graphics/icons/basic-slug.png",
+  icon_size = 64, 
+  ammo_type =
+  {
+    category = "shotgun-shell",
+    target_type = "direction",
+    clamp_position = true,
+    action =
+    {
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          source_effects =
+          {
+            {
+              type = "create-explosion",
+              entity_name = "explosion-gunshot"
+            },
+          }
+        }
+      },
+      {
+        type = "direct",
+        repeat_count = 2,
+        action_delivery =
+        {
+          type = "projectile",
+          projectile = "pm-slug-pellet",
+          starting_speed = 1,
+          starting_speed_deviation = 0.2,
+          direction_deviation = 0.7,
+          range_deviation = 0.7,
+          max_range = 18
+        }
+      }
+    }
+  },
+  magazine_size = 6,
+  subgroup = "pm-shotgun-ammo",
+  order = "aa",
+  stack_size = 200
+},
+{
+  type = "ammo",
+  name = "pm-piercing-shotgun-slug",
+  icon = "__periodic-madness__/graphics/icons/piercing-slug.png",
+  icon_size = 64, 
+  ammo_type =
+  {
+    category = "shotgun-shell",
+    target_type = "direction",
+    clamp_position = true,
+    action =
+    {
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          source_effects =
+          {
+            {
+              type = "create-explosion",
+              entity_name = "explosion-gunshot"
+            },
+          }
+        }
+      },
+      {
+        type = "direct",
+        repeat_count = 1,
+        action_delivery =
+        {
+          type = "projectile",
+          projectile = "pm-slug-pellet",
+          starting_speed = 1,
+          starting_speed_deviation = 0.2,
+          direction_deviation = 0.55,
+          range_deviation = 0.55,
+          max_range = 25
+        }
+      }
+    }
+  },
+  magazine_size = 6,
+  subgroup = "pm-shotgun-ammo",
+  order = "ba",
+  stack_size = 200
+},
 })
 
 data.raw["ammo"]["shotgun-shell"].icon = "__periodic-madness__/graphics/icons/shotgun-shell.png"
