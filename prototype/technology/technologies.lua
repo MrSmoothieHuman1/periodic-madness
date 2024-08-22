@@ -2646,6 +2646,7 @@ data:extend({
       PM.unlock_recipe("pm-phosgene"),
       PM.unlock_recipe("pm-geneva's-neglection-magazine"),
       PM.unlock_recipe("pm-geneva's-neglection-shotgun-shell"),
+      PM.unlock_recipe("pm-geneva's-neglection-shotgun-slug"),
       PM.unlock_recipe("poison-capsule"),
       PM.unlock_recipe("slowdown-capsule")
     },
@@ -3530,7 +3531,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-FUCK-transition-metal-science-pack")
     },
-    prerequisites = {"pm-FUCK" },
+    prerequisites = {"pm-FUCK"},
     upgrade = true,
     unit =
     {

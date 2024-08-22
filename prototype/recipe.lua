@@ -2402,8 +2402,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("piercing-shotgun-shell", 1),
-      PM.ingredient("pm-bismuth-ore", 6),
-      PM.ingredient("sulfur", 2),
+      PM.ingredient("pm-bismuth-ore", 4),
+      PM.ingredient("pm-tungsten-plate", 2),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results =
@@ -2430,6 +2430,80 @@ data:extend({
     results =
     {
       PM.product("pm-geneva's-neglection-shotgun-shell", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-shotgun-slug",
+    enabled = false,
+    subgroup = "pm-shotgun-ammo",
+    order = "aa",
+    energy_required = 2.5,
+    ingredients = 
+    {
+      PM.ingredient("copper-plate", 4),
+      PM.ingredient("pm-nickel-plate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-shotgun-slug", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-heavy-piercing-shotgun-slug",
+    enabled = false,
+    subgroup = "pm-shotgun-ammo",
+    order = "ba",
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-shotgun-slug", 4),
+      PM.ingredient("pm-nickel-plate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-heavy-piercing-shotgun-slug", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-high-density-shotgun-slug",
+    enabled = false,
+    subgroup = "pm-shotgun-ammo",
+    order = "ca",
+    energy_required = 7,
+    ingredients =
+    {
+      PM.ingredient("pm-heavy-piercing-shotgun-slug", 1),
+      PM.ingredient("pm-lead-plate", 4),
+      PM.ingredient("pm-tungsten-plate", 8),
+      PM.ingredient("pm-polyethylene-plastic", 4)
+    },
+    results =
+    {
+      PM.product("pm-high-density-shotgun-slug", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-geneva's-neglection-shotgun-slug",
+    enabled = false,
+    category = "crafting-with-fluid",
+    subgroup = "pm-shotgun-ammo",
+    order = "da",
+    energy_required = 7,
+    ingredients =
+    {
+      PM.ingredient("pm-phosgene", 20, "fluid"),
+      PM.ingredient("pm-heavy-piercing-shotgun-slug", 1),
+      PM.ingredient("pm-thallium-plate", 6),
+      PM.ingredient("pm-flourine", 4),
+      PM.ingredient("pm-polyethylene-plastic", 4)
+    },
+    results =
+    {
+      PM.product("pm-geneva's-neglection-shotgun-slug", 1)
     }
   },
 

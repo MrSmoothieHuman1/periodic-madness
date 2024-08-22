@@ -18,6 +18,8 @@ Date: 2024-08-09
     - Added some more technology descriptions.
     - Gave Health Bio-Module technologies a crafting speed bost, with 4 tiers giving you 1.5 crafting speed.
     - Added new shotgun shell ammos, so it now matches with normal ammo. (normal, piercing, high density, geneva neglection).
+    - Added a sidegrade to shotgun shells, shotgun slugs. Single (up to 4, depending on the type), fast firing and high damaging bullets that have a wide cone of firing and are more expensive than their normal counterparts.
+    - A bunch of mini things i did over the course of this update instead of.. actually working on the main content?
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -45,6 +47,7 @@ Date: 2024-08-09
     - Nerfed solid fuel to make it less useful for vehicles.
     - Changed Geneva's neglection magazine to take 2 seconds to craft instead of 4.
     - increased the health of the Circuit Megassembler MK1 from 350 to 1150.
+    - Changed battery chargers/discharger MK1's to take advanced and fluid-resistant circuits.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

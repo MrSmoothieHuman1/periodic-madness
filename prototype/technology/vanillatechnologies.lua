@@ -473,6 +473,7 @@ data.raw["technology"]["military-3"].effects =
   PM.unlock_recipe("combat-shotgun"),
   PM.unlock_recipe("pm-high-density-magazine"),
   PM.unlock_recipe("pm-high-density-shotgun-shell"),
+  PM.unlock_recipe("pm-high-density-shotgun-slug"),
 }
 data.raw["technology"]["military-3"].unit.ingredients =
 {
@@ -796,7 +797,9 @@ data.raw["technology"]["military-2"].effects =
 {
   PM.unlock_recipe("piercing-rounds-magazine"),
   PM.unlock_recipe("piercing-shotgun-shell"),
-  PM.unlock_recipe("grenade")
+  PM.unlock_recipe("grenade"),
+  PM.unlock_recipe("pm-shotgun-slug"),
+  PM.unlock_recipe("pm-heavy-piercing-shotgun-slug")
 }
 data.raw["technology"]["research-speed-2"].unit.ingredients = 
 {

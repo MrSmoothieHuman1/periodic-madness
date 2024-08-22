@@ -900,6 +900,7 @@ data:extend({
       PM.ingredient("pm-basic-wiring", 10),
       PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-fluid-circuit", 2),
+      PM.ingredient("advanced-circuit", 4),
       PM.ingredient("pm-heavyweight-framing", 8)
     },
     results =
@@ -917,7 +918,8 @@ data:extend({
     {
       PM.ingredient("pm-basic-wiring", 10),
       PM.ingredient("pm-polyethylene-plastic", 4),
-      PM.ingredient("pm-fluid-circuit", 2),
+      PM.ingredient("pm-fluid-circuit", 4),
+      PM.ingredient("advanced-circuit", 2),
       PM.ingredient("pm-heavyweight-framing", 8)
     },
     results =
