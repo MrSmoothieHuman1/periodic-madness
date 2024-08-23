@@ -3,12 +3,12 @@ data:extend({
   {
     type = "item",
     name = "pm-mixed-bastnäsite",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.125 },
     },
     subgroup = "pm-yttrium-tm",
     order = "a",
@@ -17,12 +17,12 @@ data:extend({
   {
     type = "item",
     name = "pm-bastnäsite-Y",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.125 },
     },
     subgroup = "pm-yttrium-tm",
     order = "b",
@@ -31,12 +31,12 @@ data:extend({
   {
     type = "item",
     name = "pm-bastnäsite-C",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.125 },
     },
     subgroup = "pm-yttrium-tm",
     order = "c",
@@ -45,12 +45,12 @@ data:extend({
   {
     type = "item",
     name = "pm-yttrium-oxide",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.125 },
     },
     subgroup = "pm-yttrium-tm",
     order = "d",

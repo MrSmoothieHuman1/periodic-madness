@@ -995,7 +995,7 @@ data:extend({
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
     unit =
     {
-      count = 100,
+      count = 125,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),
@@ -1264,7 +1264,7 @@ data:extend({
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
     unit =
     {
-      count = 50,
+      count = 100,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),
@@ -2043,7 +2043,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock" },
     unit =
     {
-      count = 75,
+      count = 200,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),
@@ -3334,7 +3334,7 @@ data:extend({
     type = "technology",
     name = "pm-borosilicate-glass",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/borosilicate-glass.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-borosilicate-glass"),
@@ -3374,7 +3374,7 @@ data:extend({
     prerequisites = {"pm-indium-processing" },
     unit =
     {
-      count = 375,
+      count = 350,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),
@@ -3401,7 +3401,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock" },
     unit =
     {
-      count = 375,
+      count = 350,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),

@@ -219,7 +219,8 @@ data.raw["technology"]["chemical-science-pack"].unit.time = 80
 data.raw["technology"]["chemical-science-pack"].prerequisites = { "pm-atmospheric-condensation", "pm-science-center" }
 data.raw["technology"]["chemical-science-pack"].unit.count = 150
 
-data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/technology/steel-tech.png"
+data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
+data.raw["technology"]["steel-processing"].icon_size = 64
 data.raw["technology"]["steel-processing"].effects =
 {
   PM.unlock_recipe("steel-plate"),

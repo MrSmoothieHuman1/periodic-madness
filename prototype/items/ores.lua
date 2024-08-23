@@ -345,7 +345,7 @@ data:extend({
     type = "item",
     name = "pm-antimony-ore",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/arsenic-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/antimony-ore-icon.png",
     subgroup = "pm-potassium-am",
     order = "d",
     stack_size = 200

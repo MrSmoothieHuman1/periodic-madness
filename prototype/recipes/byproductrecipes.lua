@@ -256,6 +256,7 @@ data:extend({
     energy_required = 4,
     subgroup = "pm-cobalt-tm",
     order = "cb",
+    allow_decomposition = false,
     ingredients =
     {
       PM.ingredient("pm-cobaltite", 12)

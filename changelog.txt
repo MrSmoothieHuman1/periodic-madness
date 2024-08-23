@@ -48,6 +48,13 @@ Date: 2024-08-09
     - Changed Geneva's neglection magazine to take 2 seconds to craft instead of 4.
     - increased the health of the Circuit Megassembler MK1 from 350 to 1150.
     - Changed battery chargers/discharger MK1's to take advanced and fluid-resistant circuits.
+    - Moved the combat shotgun to military 4.
+    - Increased military 3's cost from 100 to 300.
+    - Increased Indium processing's cost from 75(??) to 200.
+    - Increased Bimsuth CO2 electrolysis's cost from 50(????) to 250.
+    - Re-textured the fiberglass icon.
+    - Figured out how to mimicry the copper wire model, and rerendered everything that used a recolour of that icon.
+    - Remade bismite to also have the same colour-changing effect as the bismuth itself.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

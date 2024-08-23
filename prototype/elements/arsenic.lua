@@ -119,7 +119,6 @@ data:extend({
     results =
     {
       PM.product("pm-arsine", 5, "fluid"),
-      PM.product_range("water", 18, 20, "fluid"),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -134,11 +133,12 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-arsine", 5, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 10, "fluid")
     },
     results =
     {
       PM.product_range("pm-arsenic-ore", 6, 10),
-      PM.product("water", 30, "fluid"),
+      PM.product("water", 10, "fluid"),
     }
   } --[[@as data.RecipePrototype]]
 

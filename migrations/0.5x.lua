@@ -4,5 +4,17 @@ for index, force in pairs(game.forces) do
 
     if technologies["pm-polytetrafluoroethylene-plastic"].researched then
         recipes["pm-carbon-tetrachloride-seperation"].enabled = true
+        if technologies["military-3"].researched then
+            recipes["pm-high-density-shotgun-shell"].enabled = true
+            if technologies["military-3"].researched then
+                recipes["pm-high-density-shotgun-slug"].enabled = true
+                if technologies["pm-chemical-weaponry"].researched then
+                    recipes["pm-geneva's-neglection-shotgun-shell"].enabled = true
+                    if technologies["pm-chemical-weaponry"].researched then
+                        recipes["pm-geneva's-neglection-shotgun-slug"].enabled = true
+                    end
+                end
+            end
+        end
     end
 end

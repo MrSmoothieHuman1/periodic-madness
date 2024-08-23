@@ -358,7 +358,7 @@ data:extend({
         action_delivery =
         {
           type = "projectile",
-          projectile = "pm-slug-pellet",
+          projectile = "pm-poison-slug-pellet",
           starting_speed = 1,
           starting_speed_deviation = 0.2,
           direction_deviation = 0.7,

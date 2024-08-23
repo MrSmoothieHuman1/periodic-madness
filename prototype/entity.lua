@@ -10062,8 +10062,8 @@ data.raw["stream"]["flamethrower-fire-stream"].action =
         },
         {
           type = "damage",
-          damage = { amount = 2.5, type = "fire" },
-          apply_damage_to_trees = false
+          damage = { amount = 2, type = "fire" },
+          apply_damage_to_trees = true
         }
       }
     }

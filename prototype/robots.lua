@@ -470,7 +470,7 @@ local robots =
     max_energy = "2MJ",
     energy_per_tick = "0.03kJ",
     speed_multiplier_when_out_of_energy = 0.4,
-    energy_per_move = "3kJ",
+    energy_per_move = "2kJ",
     min_to_charge = 0.2,
     max_to_charge = 0.9,
     --working_light = {intensity = 0.8, size = 3, color = {r = 0.8, g = 0.8, b = 0.8}},
@@ -536,7 +536,7 @@ local robots =
     max_energy = "2MJ",
     energy_per_tick = "0.03kJ",
     speed_multiplier_when_out_of_energy = 0.4,
-    energy_per_move = "3kJ",
+    energy_per_move = "2kJ",
     min_to_charge = 0.2,
     max_to_charge = 0.9,
     working_sound = sounds.flying_robot(0.48),
@@ -557,10 +557,10 @@ data:extend(robots)
 
 data.raw["construction-robot"]["construction-robot"].max_energy = "3.5MJ"
 data.raw["construction-robot"]["construction-robot"].speed = 0.035
-data.raw["construction-robot"]["construction-robot"].speed_multiplier_when_out_of_energy = 0.1
+data.raw["construction-robot"]["construction-robot"].speed_multiplier_when_out_of_energy = 0.12
 data.raw["construction-robot"]["construction-robot"].max_payload_size = 2
 
 data.raw["logistic-robot"]["logistic-robot"].max_energy = "3.5MJ"
 data.raw["logistic-robot"]["logistic-robot"].speed = 0.035
-data.raw["logistic-robot"]["logistic-robot"].speed_multiplier_when_out_of_energy = 0.1
+data.raw["logistic-robot"]["logistic-robot"].speed_multiplier_when_out_of_energy = 0.12
 data.raw["logistic-robot"]["logistic-robot"].max_payload_size = 2
