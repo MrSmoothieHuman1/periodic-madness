@@ -33,7 +33,7 @@ data:extend({
     type = "recipe",
     name = "pm-copper-tailings-sludging",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     category = "pm-washing",
     subgroup = "pm-tellurium-mt",
     order = "a",

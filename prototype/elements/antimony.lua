@@ -4,7 +4,12 @@ data:extend({
         type = "item",
         name = "pm-low-quality-crude-antimony-sulfide",
         icon_size = 64,
-        icon = "__periodic-madness/graphics/icons/ores/low-quality-crude-antimony-sulfide.png",
+        icon = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide.png", size = 64, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide-2.png", size = 64, scale = 0.25},
+        },
         subgroup = "pm-antimony-mt",
         order = "a",
         stack_size = 500
@@ -13,7 +18,12 @@ data:extend({
         type = "item",
         name = "pm-high-quality-crude-antimony-sulfide",
         icon_size = 64,
-        icon = "__periodic-madness/graphics/icons/ores/high-quality-crude-antimony-sulfide.png",
+        icon = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide.png", size = 64, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide-2.png", size = 64, scale = 0.25},
+        },
         subgroup = "pm-antimony-mt",
         order = "b",
         stack_size = 500
@@ -22,7 +32,7 @@ data:extend({
         type = "item",
         name = "pm-crude-antimony-sulfide",
         icon_size = 64,
-        icon = "__periodic-madness/graphics/icons/ores/crude-antimony-sulfide.png",
+        icon = "__periodic-madness__/graphics/icons/ores/crude-antimony-sulfide.png",
         subgroup = "pm-antimony-mt",
         order = "c",
         stack_size = 250
@@ -31,7 +41,7 @@ data:extend({
         type = "item",
         name = "pm-stibnite",
         icon_size = 128,
-        icon = "__periodic-madness/graphics/icons/ores/stibnite.png",
+        icon = "__periodic-madness__/graphics/icons/ores/stibnite.png",
         pictures =
         {
             {filename = "__periodic-madness__/graphics/icons/ores/stibnite.png", size = 128, scale = 0.125},
@@ -47,7 +57,7 @@ data:extend({
         type = "item",
         name = "pm-antimony-sulfide",
         icon_size = 64,
-        icon = "__periodic-madness/graphics/icons/ores/antimony-sulfide.png",
+        icon = "__periodic-madness__/graphics/icons/ores/antimony-sulfide.png",
         subgroup = "pm-antimony-mt",
         order = "e",
         stack_size = 200
@@ -56,6 +66,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-crude-antimony-sulfide",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/crude-antimony-seperation.png",
         enabled = false,
         energy_required = 4,
         category = "pm-acids",
@@ -92,7 +104,7 @@ data:extend({
         results = 
         {
             PM.product_range("pm-crude-antimony-sulfide", 1, 5),
-            PM.product_range("pm-lead-powder", 0, 4, 0.56),
+            PM.product_range_chance("pm-lead-powder", 0, 4, 0.56),
             PM.product_chance("pm-ferrum", 3, 0.7)
         }
     },

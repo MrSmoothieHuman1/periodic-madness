@@ -890,10 +890,10 @@ data:extend({
   {
     type = "item",
     name = "pm-vacuum-tube",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/vacuum-tube.png",
     subgroup = "pm-refined-items",
-    stack_size = 50
+    stack_size = 75
   },
   {
     type = "item",
@@ -1498,8 +1498,8 @@ data.raw["item"]["solid-fuel"].fuel_emissions_multiplier = 1.5
 data.raw["item"]["solid-fuel"].fuel_acceleration_multiplier = 1
 data.raw["item"]["solid-fuel"].fuel_top_speed_multiplier = 1.1
 
-data.raw["gun"]["shotgun"].min_range = 0.5
-data.raw["gun"]["combat-shotgun"].min_range = 1.25
+data.raw["gun"]["shotgun"].minimum_range = 0.5
+data.raw["gun"]["combat-shotgun"].minimum_range = 1.25
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it

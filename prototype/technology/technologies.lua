@@ -3424,11 +3424,11 @@ data:extend({
       PM.unlock_recipe("pm-arsenic-purifying"),
       PM.unlock_recipe("pm-arsine"),
       PM.unlock_recipe("pm-arsine-seperation"),
-      --PM.unlock_recipe("pm-crude-antimony-sulfide"),
-      --PM.unlock_recipe("pm-low-quality-antimony-sulfide-filtering"),
-      --PM.unlock_recipe("pm-high-quality-antimony-sulfide-filtering"),
-      --PM.unlock_recipe("pm-crude-antimony-sulfide-mixing"),
-      --PM.unlock_recipe("pm-antimony-sulfide-seperation"),
+      PM.unlock_recipe("pm-crude-antimony-sulfide"),
+      PM.unlock_recipe("pm-low-quality-antimony-sulfide-filtering"),
+      PM.unlock_recipe("pm-high-quality-antimony-sulfide-filtering"),
+      PM.unlock_recipe("pm-crude-antimony-sulfide-mixing"),
+      PM.unlock_recipe("pm-antimony-sulfide-seperation"),
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
@@ -3726,6 +3726,80 @@ data:extend({
     },
     upgrade = true,
     order = "c-k-g-a"
+  },
+  {
+    type = "technology",
+    name = "pm-mining-productivity-4",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+        PM.modify("mining-drill-productivity-bonus", 0.1)
+    },
+    prerequisites = {"mining-productivity-3"},
+    unit =
+    {
+      count = 1200,
+      ingredients =
+      {
+        PM.ingredient{"automation-science-pack", 1},
+        PM.ingredient{"logistic-science-pack", 1},
+        PM.ingredient{"chemical-science-pack", 1},
+        PM.ingredient("pm-post-transition-metal-science-pack", 1),
+      },
+      time = 80
+    },
+    upgrade = true,
+  },
+  {
+    type = "technology",
+    name = "pm-mining-productivity-5",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+        PM.modify("mining-drill-productivity-bonus", 0.1)
+    },
+    prerequisites = {"mining-productivity-5"},
+    unit =
+    {
+      count = 1600,
+      ingredients =
+      {
+        PM.ingredient{"automation-science-pack", 1},
+        PM.ingredient{"logistic-science-pack", 1},
+        PM.ingredient{"chemical-science-pack", 1},
+        PM.ingredient("pm-post-transition-metal-science-pack", 1),
+        PM.ingredient("pm-metalloid-science-pack", 1)
+      },
+      time = 80
+    },
+    upgrade = true,
+  },
+  {
+    type = "technology",
+    name = "pm-mining-productivity-6",
+    icon_size = 256, icon_mipmaps = 4,
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+        PM.modify("mining-drill-productivity-bonus", 0.15)
+    },
+    prerequisites = {"mining-productivity-5"},
+    unit =
+    {
+      count = 2000,
+      ingredients =
+      {
+        PM.ingredient{"automation-science-pack", 1},
+        PM.ingredient{"logistic-science-pack", 1},
+        PM.ingredient{"chemical-science-pack", 1},
+        PM.ingredient("pm-post-transition-metal-science-pack", 1),
+        PM.ingredient("pm-metalloid-science-pack", 1)
+      },
+      time = 80
+    },
+    upgrade = true,
   },
   -- {
   --    type = "technology",
