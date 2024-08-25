@@ -848,6 +848,17 @@ data.raw["technology"]["mining-productivity-3"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
   PM.ingredient("pm-post-transition-metal-science-pack", 1)
 }
+data.raw["technology"]["mining-productivity-4"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("pm-post-transition-metal-science-pack", 1),
+}
+data.raw["technology"]["mining-productivity-4"].max_level = "4"
+data.raw["technology"]["mining-productivity-4"].unit.time = 80
+data.raw["technology"]["mining-productivity-4"].unit.count_formula = 1200
+
 
 data.raw["technology"]["power-armor-mk2"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["power-armor-mk2"].unit.ingredients =

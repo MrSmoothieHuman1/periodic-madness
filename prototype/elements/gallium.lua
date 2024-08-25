@@ -57,7 +57,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-gallium-ptm",
     order = "b",
-    energy_required = 8,
+    energy_required = 4,
     main_product = "pm-gallium-chunks",
     ingredients =
     {
@@ -66,7 +66,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-gallium-chunks", 6, 8),
+      PM.product_range("pm-gallium-chunks", 6, 12),
       PM.product("pm-aluminium-ore", 2)
     }
   }--[[@as data.RecipePrototype]],

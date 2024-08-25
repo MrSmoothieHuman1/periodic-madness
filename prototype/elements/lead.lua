@@ -92,7 +92,7 @@ data:extend({
     type = "recipe",
     name = "pm-lead-frothing",
     enabled = false,
-    energy_required = 16,
+    energy_required = 8,
     category = "pm-washing",
     subgroup = "pm-lead-ptm",
     order = "c",
@@ -104,7 +104,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lead-froth", 20, "fluid"),
+      PM.product("pm-lead-froth", 30, "fluid"),
       PM.product_range("pm-acidic-water", 10, 20, "fluid"),
     }
   } --[[@as data.RecipePrototype]],

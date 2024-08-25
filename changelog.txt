@@ -68,6 +68,37 @@ Date: 2024-08-09
     - Fixed the burn-inator being unlocked twice.
     - Fixed the stainless steel tank not actually taking.. stainless steel.
     - Fixed mining productivity and research speed not being unlocked by their respective tech trees.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.133
+  The why couldnt assembling machines just have more fluid slots Update:
+
+  Changes:
+    - Changed lead and gallium ratios to be cheaper and smaller-scale in comparison to the amount needed for science.
+    - Made the Reactive-Non Metal pack more expensive.
+
+  Fixes:
+    - Fixed plastic Reactive-Non Metal pack recipe using nitrogen instead of chlorine.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.132
+  The that one spock quote, yknow the one Update:
+
+  Fixes:
+    - Reverted partial K2 compatibility to fix you insane people playing giant modpacks with PM
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.131
+  The im hasamentally insane Update:
+
+  Changes:
+    - Halved the amount of gallium needed for Post-transition metal packs.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.5.130
+  The i wonder if i'll use the next 870 version numbers Update:
+
+  Fixes:
+    - Fixed ANOTHER error with K2 after deleting alternative recipe packs.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.129

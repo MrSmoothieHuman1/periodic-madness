@@ -247,9 +247,9 @@ sanitize_recipe(recipes["offshore-pump"]).ingredients =
 sanitize_recipe(recipes["chemical-science-pack"]).ingredients =
 {
   PM.ingredient("pm-science-bottle", 1),
-  PM.ingredient("pm-chlorine", 25, "fluid"),
-  PM.ingredient("pm-carbon", 15),
-  PM.ingredient("sulfur", 8)
+  PM.ingredient("pm-chlorine", 14 * 3, "fluid"),
+  PM.ingredient("pm-carbon", 28),
+  PM.ingredient("sulfur", 14)
 }
 sanitize_recipe(recipes["storage-tank"]).ingredients =
 {
