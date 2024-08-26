@@ -69,31 +69,21 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-rubidium-am",
     order = "a",
-    energy_required = 16,
+    energy_required = 6,
     main_product = "pm-caesium-rubidium-alum",
     ingredients =
     {
-      PM.ingredient("pm-pollucite", 5),
+      PM.ingredient("pm-pollucite", 4),
       PM.ingredient("pm-caesium", 2, "fluid"),
-      PM.ingredient("pm-potassium", 5),
-      PM.ingredient("pm-aluminium-plate", 10)
+      PM.ingredient("pm-potassium", 4),
+      PM.ingredient("pm-aluminium-plate", 6)
     },
     results =
     {
-      PM.product_range("pm-caesium-rubidium-alum", 1, 3),
-      PM.product_range("pm-fine-pollucite-powder", 2, 5)
+      PM.product_range("pm-caesium-rubidium-alum", 2, 5),
+      PM.product_range_chance("pm-fine-pollucite-powder", 2, 4, 0.6)
     }
   } --[[@as data.RecipePrototype]],
-  --fr fr
-  --enjoy me bug fixing for hours HAHAH
-  --can you hear my music btw tell me if you want to put something on
-  --cant use images but thousand yard stare
-  -- i think this is the quickest a new recipe chain has been fixed
-  --until i check the ratios :sob:
-  -- hell geniune hell
-  -- i wouldbt be suprrised with the shit i cooked in this file
-  -- one item turns into 4, that gotta be turned into a speciffic item that then gies the wanted ore
-  -- tbf thats not THAT bad
   {
     type = "recipe",
     name = "pm-caesium-rubidium-alum-seperation",
@@ -103,7 +93,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-rubidium-am",
     order = "b",
-    energy_required = 16,
+    energy_required = 12,
     ingredients =
     {
       PM.ingredient("pm-caesium-rubidium-alum", 6)
@@ -177,7 +167,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-rubidium-am",
     order = "f",
-    energy_required = 12,
+    energy_required = 8,
     main_product = "pm-rubidium",
     ingredients =
     {
@@ -192,12 +182,3 @@ data:extend({
     }
   } --[[@as data.RecipePrototype]]
 })
-
---oh neat (cueless)
---im also procrasitnating by doing work, idk
---cba to work on my mod, so to pass the time i'll work on my mod
---woooo!! fucking shit uop!!
---i do got a mod idea thats SIMILAR, but its literally just "what if ultrakill in actorio"
--- i got plans, lemme cookkm
--- deciding what to do next out o my million things to do next
---ofc!!! instead of meeting self-imposed deadlines, i'll just do soemthing else

@@ -68,6 +68,7 @@ Date: 2024-08-09
     - Fixed the burn-inator being unlocked twice.
     - Fixed the stainless steel tank not actually taking.. stainless steel.
     - Fixed mining productivity and research speed not being unlocked by their respective tech trees.
+    - Fixed rubidium's ratios being fucked in comparison to the amount needed in science.
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133
   The why couldnt assembling machines just have more fluid slots Update:
