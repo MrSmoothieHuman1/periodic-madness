@@ -346,8 +346,8 @@ data:extend({
     name = "pm-antimony-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/antimony-ore-icon.png",
-    subgroup = "pm-potassium-am",
-    order = "d",
+    subgroup = "pm-antimony-mt",
+    order = "e",
     stack_size = 200
   },
   {
@@ -355,7 +355,7 @@ data:extend({
     name = "pm-iodine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
-    subgroup = "pm-potassium-am",
+    subgroup = "pm-iodine-rnm",
     order = "d",
     stack_size = 200
   },
@@ -432,7 +432,15 @@ data:extend({
     order = "c",
     stack_size = 200
   },
-
+  {
+    type = "item",
+    name = "pm-germanium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+    subgroup = "pm-germanium-mt",
+    order = "e",
+    stack_size = 200
+  },
 })
 
 local StackIron = data.raw["item"]["iron-ore"]
