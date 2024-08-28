@@ -2621,6 +2621,8 @@ data:extend({
   },{
     type = "recipe",
     name = "pm-plastic-alkali-metal-science-pack",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/plastic-alkali-metals-pack.png",
     category = "crafting-with-fluid",
     subgroup = "pm-plastic-science-pack",
     order = "f",
@@ -2643,6 +2645,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-plastic-metalloid-science-pack",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/plastic-metalloid-pack.png",
     category = "crafting-with-fluid",
     subgroup = "pm-plastic-science-pack",
     order = "g",
