@@ -13,7 +13,7 @@ data:extend({
   {
     type = "item",
     name = "pm-ammonium-chloride",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ammonium-chloride.png",
     subgroup = "pm-platinum-tm",
     order = "x",

@@ -627,6 +627,13 @@ sanitize_recipe(recipes["piercing-shotgun-shell"]).ingredients =
   PM.ingredient("shotgun-shell", 1),
   PM.ingredient("pm-vulcanised-rubber", 3)
 }
+sanitize_recipe(recipes["distractor-capsule"]).ingredients = 
+{
+  PM.ingredient("pm-titanium-plate", 2),
+  PM.ingredient("piercing-rounds-magazine", 2),
+  PM.ingredient("electronic-circuit", 4),
+  PM.ingredient("pm-basic-panelling", 10)
+}
 
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 {

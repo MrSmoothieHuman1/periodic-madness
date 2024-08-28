@@ -9952,20 +9952,17 @@ data:extend({
 
 
 local PowerPoleEnlargementPills = data.raw["electric-pole"]["big-electric-pole"]
-
 PowerPoleEnlargementPills.maximum_wire_distance = 32
 
 
 local ShorePumpBanishment = data.raw["recipe"]["offshore-pump"]
-
 ShorePumpBanishment.enabled = false
 ShorePumpBanishment.subgroup = "pm-water-machine"
 ShorePumpBanishment.order = "b"
 
 
 local QuickFluidFix = data.raw["assembling-machine"]["assembling-machine-1"]
-
-QuickFluidFix.crafting_categories = { "basic-crafting", "crafting", "crafting-with-fluid" }
+QuickFluidFix.crafting_categories = {"basic-crafting", "crafting", "crafting-with-fluid"}
 QuickFluidFix.fluid_boxes =
 {
   {
@@ -9974,8 +9971,8 @@ QuickFluidFix.fluid_boxes =
     pipe_covers = pipecoverspictures(),
     base_area = 10,
     base_level = -1,
-    pipe_connections = { { type = "input", position = { 0, -2 } } },
-    secondary_draw_orders = { north = -1 }
+    pipe_connections = {{type = "input", position = {0, -2}}},
+    secondary_draw_orders = {north = -1}
   },
   {
     production_type = "output",
@@ -9983,8 +9980,8 @@ QuickFluidFix.fluid_boxes =
     pipe_covers = pipecoverspictures(),
     base_area = 10,
     base_level = 1,
-    pipe_connections = { { type = "output", position = { 0, 2 } } },
-    secondary_draw_orders = { north = -1 }
+    pipe_connections = {{type = "output", position = {0, 2}}},
+    secondary_draw_orders = {north = -1}
   },
   off_when_no_fluid_recipe = true
 }
@@ -10034,10 +10031,10 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
 
 data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids =
 {
-  { type = "crude-oil",   damage_modifier = 0.5 },
-  { type = "pm-petrol",   damage_modifer = 1.1 },
-  { type = "pm-naptha",   damage_modifier = 1.5 },
-  { type = "pm-kerosene", damager_modifier = 1.3 }
+  {type = "crude-oil", damage_modifier = 0.5},
+  {type = "pm-petrol", damage_modifer = 1.1},
+  {type = "pm-naptha", damage_modifier = 1.5},
+  {type = "pm-kerosene", damager_modifier = 1.3}
 }
 data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluid_consumption = 0.2 * 2
 data.raw["fluid-turret"]["flamethrower-turret"].attacking_speed = 0.75

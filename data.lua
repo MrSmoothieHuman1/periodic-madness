@@ -83,6 +83,7 @@ require("prototype.elements.yttrium")
 require("prototype.elements.tellurium")
 require("prototype.elements.antimony")
 require("prototype.elements.arsenic")
+require("prototype.elements.germanium")
 
 require("prototype.entity")
 require("prototype.remnants")
