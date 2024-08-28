@@ -634,6 +634,10 @@ sanitize_recipe(recipes["distractor-capsule"]).ingredients =
   PM.ingredient("electronic-circuit", 4),
   PM.ingredient("pm-basic-panelling", 10)
 }
+sanitize_recipe(recipes["destroyer-capsule"]).ingredients =
+{
+  PM.ingredient("robot-frame", 1)
+}
 
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 {
