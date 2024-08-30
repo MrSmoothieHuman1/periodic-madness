@@ -757,12 +757,31 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-cadnium-plate", 2),
-      { "pm-glass-pane",    6 - 1 },
-      PM.ingredient("pm-gold-wire", 3)
+      PM.ingredient("pm-glass-pane", 4),
+      PM.ingredient("pm-gold-wire", 3),
+      PM.ingredient("pm-solid-lubricant", 4)
     },
     results =
     {
       PM.product("pm-solar-cell", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-heavy-lube-solar-cell",
+    energy_required = 4,
+    show_amount_in_title = true,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-cadnium-plate", 2),
+      PM.ingredient("pm-glass-pane", 4),
+      PM.ingredient("pm-gold-wire", 3),
+      PM.ingredient("pm-heavy-lubricant", 8, "fluid"),
+    },
+    results =
+    {
+      PM.product("pm-solar-cell", 3)
     }
   },
   {
@@ -2078,9 +2097,10 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-CRT", 1),
-      PM.ingredient("pm-polyethylene-plastic", 8),
+      PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-stainless-steel-alloy", 5),
-      PM.ingredient("pm-gold-plate", 6),
+      PM.ingredient("pm-gold-plate", 5),
+      PM.ingredient("pm-heavy-lubricant", 15, "fluid"),
       PM.ingredient("pm-fluid-circuit", 3)
     },
     results =

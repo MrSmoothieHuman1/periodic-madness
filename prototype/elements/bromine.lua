@@ -7,7 +7,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/hydrogen-bromide-leeching.png",
     enabled = false,
-    energy_required = 12,
+    energy_required = 10,
     category = "pm-washing",
     subgroup = "pm-bromine-rnm",
     order = "a",
@@ -28,7 +28,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/hydrogen-bromide-seperation.png",
     enabled = false,
-    energy_required = 8,
+    energy_required = 5,
     category = "pm-electrolysis",
     subgroup = "pm-bromine-rnm",
     order = "b",
@@ -60,14 +60,14 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-trace-bromine", 6, "fluid")
+      PM.product("pm-trace-bromine", 8, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-trace-bromine-condensation",
     enabled = false,
-    energy_required = 4,
+    energy_required = 3,
     category = "pm-atmospheric-condensing",
     subgroup = "pm-bromine-rnm",
     order = "d",

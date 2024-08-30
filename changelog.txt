@@ -20,6 +20,7 @@ Date: 2024-08-09
     - Added new shotgun shell ammos, so it now matches with normal ammo. (normal, piercing, high density, geneva neglection).
     - Added a sidegrade to shotgun shells, shotgun slugs. Single (up to 4, depending on the type), fast firing and high damaging bullets that have a wide cone of firing and are more expensive than their normal counterparts.
     - A bunch of mini things i did over the course of this update instead of.. actually working on the main content?
+    - Added a heavy lube recipe for solar cells.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -55,6 +56,8 @@ Date: 2024-08-09
     - Re-textured the fiberglass icon.
     - Figured out how to mimicry the copper wire model, and rerendered everything that used a recolour of that icon.
     - Remade bismite to also have the same colour-changing effect as the bismuth itself.
+    - Changed Oscilliscopes to be slightly cheaper, but take lubricant.
+    - Changed solar cells to also take solid lubricant.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -69,6 +72,7 @@ Date: 2024-08-09
     - Fixed the stainless steel tank not actually taking.. stainless steel.
     - Fixed mining productivity and research speed not being unlocked by their respective tech trees.
     - Fixed rubidium's ratios being fucked in comparison to the amount needed in science.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133
   The why couldnt assembling machines just have more fluid slots Update:
