@@ -636,7 +636,7 @@ sanitize_recipe(recipes["distractor-capsule"]).ingredients =
 }
 sanitize_recipe(recipes["destroyer-capsule"]).ingredients =
 {
-  PM.ingredient("robot-frame", 1)
+  PM.ingredient("flying-robot-frame", 1)
 }
 
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
