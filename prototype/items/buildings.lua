@@ -225,7 +225,7 @@ data:extend({
   {
     type = "item",
     name = "pm-circuit-megassembler",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
     subgroup = "production-machine",
     order = "h",

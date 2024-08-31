@@ -1,5 +1,8 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
+local red_belt = {r = 0.878, g = 0.169, b = 0.169}
+local blue_belt = {r = 0.169, g = 0.608, b = 0.878}
+local purple_belt = {r = 0.616, g = 0.169, b = 0.878}
 
 local pm_lab_inputs =
 {
@@ -1318,6 +1321,7 @@ data:extend({
     corpse = "express-underground-belt-remnants",
     dying_explosion = "express-underground-belt-explosion",
     max_distance = 11,
+    map_color = purple_belt,
     underground_sprite =
     {
       filename = "__core__/graphics/arrows/underground-lines.png",
@@ -1530,6 +1534,7 @@ data:extend({
     max_health = 250,
     corpse = "express-splitter-remnants",
     dying_explosion = "express-splitter-explosion",
+    map_color = purple_belt,
     resistances =
     {
       {
@@ -1727,6 +1732,7 @@ data:extend({
     max_health = 250,
     corpse = "express-transport-belt-remnants",
     dying_explosion = "express-transport-belt-explosion",
+    map_color = purple_belt,
     resistances =
     {
       {
@@ -3178,7 +3184,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "pm-circuit-megassembler",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
     minable = { mining_time = 0.7, result = "pm-circuit-megassembler" },
     max_health = 1150,
@@ -3222,20 +3228,20 @@ data:extend({
           filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
           width = 32 * 7,
           height = 32 * 7,
-          frame_count = 56,
+          frame_count = 32,
           line_length = 8,
-          animation_speed = 0.5,
+          animation_speed = 0.25,
           scale = 1.15,
           shift = util.by_pixel(-2, 0),
           hr_version =
           {
             filename =
-            "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler.png",
-            width = (32 * 7) * 2,
-            height = (32 * 7) * 2,
-            frame_count = 56,
+            "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
+            width = 32 * 7,
+            height = 32 * 7,
+            frame_count = 32,
             line_length = 8,
-            animation_speed = 0.5,
+            animation_speed = 0.25,
             shift = util.by_pixel(-2, 0),
             scale = 0.575,
           }
@@ -3245,20 +3251,22 @@ data:extend({
           "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
           width = 32 * 7,
           height = 32 * 7,
-          frame_count = 56,
+          frame_count = 32,
           line_length = 8,
           shift = util.by_pixel(64, 10),
           draw_as_shadow = true,
+          animation_speed = 0.25,
           hr_version =
           {
             filename =
             "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler-shadow.png",
             width = (32 * 7) * 2,
             height = (32 * 7) * 2,
-            frame_count = 56,
+            frame_count = 32,
             line_length = 8,
             draw_as_shadow = true,
             shift = util.by_pixel(64, 10),
+            animation_speed = 0.25,
             scale = 0.575
           }
         }
@@ -7580,6 +7588,7 @@ data:extend({
     collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     fast_replaceable_group = "solar-panel",
+    map_color = {r = 0.341, g = 0.353, b = 0.63},
     energy_source =
     {
       type = "electric",
@@ -10197,3 +10206,13 @@ data.raw["unit"]["big-biter"].resistances =
       percent = 50 * 1.4
     }
   }
+
+
+data.raw["transport-belt"]["fast-transport-belt"].map_color = red_belt
+data.raw["underground-belt"]["fast-underground-belt"].map_color = red_belt
+data.raw["splitter"]["fast-splitter"].map_color = red_belt
+data.raw["transport-belt"]["express-transport-belt"].map_color = blue_belt
+data.raw["underground-belt"]["express-underground-belt"].map_color = blue_belt
+data.raw["splitter"]["express-splitter"].map_color = blue_belt
+
+data.raw["solar-panel"]["solar-panel"].map_color = {r = 0.356, g = 0.495, b = 0.62}

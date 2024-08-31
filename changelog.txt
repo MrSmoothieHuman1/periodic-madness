@@ -58,6 +58,7 @@ Date: 2024-08-09
     - Remade bismite to also have the same colour-changing effect as the bismuth itself.
     - Changed Oscilliscopes to be slightly cheaper, but take lubricant.
     - Changed solar cells to also take solid lubricant.
+    - Changed transport belts map colour to match their tier colour.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

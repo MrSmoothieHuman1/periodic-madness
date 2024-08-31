@@ -1096,7 +1096,7 @@ data:extend({
     unit =
     {
       count = 350,
-      ingredients =
+      ingredients = 
       {
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
@@ -3433,7 +3433,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
-      count = 375,
+      count = 350,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),
@@ -3461,7 +3461,7 @@ data:extend({
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
     {
-      count = 500,
+      count = 400,
       ingredients =
       {
         PM.ingredient("automation-science-pack", 1),
@@ -3469,6 +3469,29 @@ data:extend({
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("pm-post-transition-metal-science-pack", 1),
         PM.ingredient("pm-metalloid-science-pack", 1)
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-germanium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        PM.ingredient("automation-science-pack", 1),
+        PM.ingredient("logistic-science-pack", 1),
+        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+        PM.ingredient("pm-post-transition-metal-science-pack", 1),
       },
       time = 60
     }

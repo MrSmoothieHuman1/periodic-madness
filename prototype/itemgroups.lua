@@ -137,7 +137,7 @@ data:extend({
   {
     type = "item-group",
     name = "pm-circuitry",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
   },
 

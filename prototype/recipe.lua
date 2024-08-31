@@ -770,6 +770,7 @@ data:extend({
     type = "recipe",
     name = "pm-heavy-lube-solar-cell",
     energy_required = 4,
+    category = "crafting-with-fluid",
     show_amount_in_title = true,
     enabled = false,
     ingredients =
@@ -2092,6 +2093,7 @@ data:extend({
     type = "recipe",
     name = "pm-oscilloscope",
     enabled = false,
+    category = "crafting-with-fluid",
     subgroup = "pm-refined-items",
     energy_required = 10,
     ingredients =
