@@ -549,6 +549,14 @@ data:extend({
     place_result = "pm-stainless-steel-pump",
     stack_size = 50,
   },
+  {
+    type = "item",
+    name = "pm-chemical-plant-2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/chemical-plant-2.png",
+    place_result = "pm-chemical-plant-2",
+    stack_size = 50
+  }
 })
 
 local OilRefinerySubgroup = data.raw["item"]["oil-refinery"]
@@ -567,3 +575,5 @@ data.raw["item"]["lab"].order = "a"
 
 data.raw["item"]["offshore-pump"].subgroup = "pm-water-machine"
 data.raw["item"]["offshore-pump"].order = "b"
+
+data.raw["item"]["beacon"].stack_size = 25

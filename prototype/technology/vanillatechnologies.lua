@@ -18,7 +18,8 @@ data.raw["technology"]["automation-2"].prerequisites = { "steel-processing", "pm
 data.raw["technology"]["automation-3"].effects =
 {
   PM.unlock_recipe("assembling-machine-3"),
-  PM.unlock_recipe("pm-crusher-2")
+  PM.unlock_recipe("pm-crusher-2"),
+  PM.unlock_recipe("pm-chemical-plant-2")
 }
 
 data.raw["technology"]["automation-3"].prerequisites = { "advanced-electronics-2", "electric-engine" }

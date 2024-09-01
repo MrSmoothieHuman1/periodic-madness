@@ -931,7 +931,7 @@ data:extend({
     type = "recipe",
     name = "pm-stainless-steel-pump",
     subgroup = "energy-pipe-distribution",
-    order = "b[pipe]-c[pump]",
+    order = "b[pipe]-d[pump]",
     enabled = false,
     energy_required = 1,
     ingredients =
@@ -946,6 +946,25 @@ data:extend({
       PM.product("pm-stainless-steel-pump", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-chemical-plant-2",
+    enabled = false,
+    energy_required = 2.5,
+    ingredients = 
+    {
+      PM.ingredient("chemical-plant", 1),
+      PM.ingredient("pm-stainless-steel-alloy", 6),
+      PM.ingredient("pm-fluid-circuit", 6),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("electric-engine-unit", 2)
+    },
+    results = 
+    {
+      PM.product("pm-chemical-plant-2", 1)
+    }
+  }
 
 } --[[@as data.RecipePrototype[] ]])
 

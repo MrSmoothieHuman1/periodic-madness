@@ -21,6 +21,7 @@ Date: 2024-08-09
     - Added a sidegrade to shotgun shells, shotgun slugs. Single (up to 4, depending on the type), fast firing and high damaging bullets that have a wide cone of firing and are more expensive than their normal counterparts.
     - A bunch of mini things i did over the course of this update instead of.. actually working on the main content?
     - Added a heavy lube recipe for solar cells.
+    - Added chemical plants 2, unlocked at P-TM science.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -59,6 +60,12 @@ Date: 2024-08-09
     - Changed Oscilliscopes to be slightly cheaper, but take lubricant.
     - Changed solar cells to also take solid lubricant.
     - Changed transport belts map colour to match their tier colour.
+    - Slightly changed solar panels map colour, to match the tiered thing im doing.
+    - Changed the Circuit Megassemblers MK1 fluid power demand from 475kW to 625kW.
+    - Changed the map color of molten and cold-inators.
+    - Changed the map color of heat pipe tiers to match their respective colours.
+    - FINALLY MADE ACID PLANTS LOOK DIFFERENT OH MY GOD
+    - Changed chemical plants to only have 2 module slots.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
