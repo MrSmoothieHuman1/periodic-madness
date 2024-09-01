@@ -64,7 +64,6 @@ Date: 2024-08-09
     - Changed the Circuit Megassemblers MK1 fluid power demand from 475kW to 625kW.
     - Changed the map color of molten and cold-inators.
     - Changed the map color of heat pipe tiers to match their respective colours.
-    - FINALLY MADE ACID PLANTS LOOK DIFFERENT OH MY GOD
     - Changed chemical plants to only have 2 module slots.
 
   Fixes:
@@ -80,6 +79,7 @@ Date: 2024-08-09
     - Fixed the stainless steel tank not actually taking.. stainless steel.
     - Fixed mining productivity and research speed not being unlocked by their respective tech trees.
     - Fixed rubidium's ratios being fucked in comparison to the amount needed in science.
+    - FINALLY MADE ACID PLANTS LOOK DIFFERENT OH MY GOD
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

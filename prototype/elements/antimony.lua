@@ -119,7 +119,7 @@ data:extend({
         main_product = "pm-stibnite",
         ingredients =
         {
-            PM.ingredient("pm-low-quality-crude-antimony-sulfide", 6),
+            PM.ingredient("pm-high-quality-crude-antimony-sulfide", 6),
             PM.ingredient("pm-molten-cobalt", 10, "fluid")
         },
         results = 

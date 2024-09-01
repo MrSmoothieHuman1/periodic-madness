@@ -12,6 +12,9 @@ for index, force in pairs(game.forces) do
                     recipes["pm-geneva's-neglection-shotgun-shell"].enabled = true
                     if technologies["pm-chemical-weaponry"].researched then
                         recipes["pm-geneva's-neglection-shotgun-slug"].enabled = true
+                        if technologies["automation-3"].researched then
+                            recipes["pm-chemical-plant-2"].enabled = true
+                        end
                     end
                 end
             end

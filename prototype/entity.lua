@@ -9971,6 +9971,7 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-1.5, -1.9}, {1.5, 1.5}},
+    fast_replaceable_group = "pm-chemical-plant"
     module_specification =
     {
       module_slots = 4
@@ -10267,14 +10268,14 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    crafting_speed = 1,
+    crafting_speed = 2,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 4
+      emissions_per_minute = 6
     },
-    energy_usage = "210kW",
+    energy_usage = "350kW",
     crafting_categories = {"chemistry"},
     fluid_boxes =
     {
@@ -10515,6 +10516,8 @@ data.raw["boiler"]["heat-exchanger"].next_upgrade = "pm-heat-exchanger-2"
 data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 240
 
 data.raw["assembling-machine"]["chemical-plant"].module_specification = {module_slots = 2}
+data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-chemical-plant"
+data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-plant-2"
 
 data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "115kW"
 
