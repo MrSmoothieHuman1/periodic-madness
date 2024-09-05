@@ -9,7 +9,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-oxygen-gas", 5, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 15, "fluid"),
       PM.ingredient("iron-plate", 2)
     },
     result = "pm-hydrogen-fuel",
@@ -1084,13 +1084,13 @@ data:extend({
     main_product = "pm-common-myostatin",
     ingredients =
     {
-      PM.ingredient("pm-benzene", 40, "fluid"),
-      PM.ingredient("pm-vanadium-oxide-catalyst", 1)
+      PM.ingredient("pm-benzene", 25, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 5)
     },
     results =
     {
       PM.product("pm-common-myostatin", 10, "fluid"),
-      PM.product("pm-catalyst-container", 1)
+      PM.product_range("pm-catalyst-container", 2, 5)
     }
   },
   {
@@ -1115,19 +1115,19 @@ data:extend({
     name = "pm-myostatin-oxygenation",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/myostatin-oxygenation.png",
-    energy_required = 3,
+    energy_required = 6,
     enabled = false,
     category = "chemistry",
     subgroup = "pm-myostatin-rnm",
     order = "c",
     ingredients =
     {
-      PM.ingredient("pm-common-myostatin", 4, "fluid"),
+      PM.ingredient("pm-common-myostatin", 10, "fluid"),
       PM.ingredient("pm-oxygen-gas", 24, "fluid")
     },
     results =
     {
-      PM.product_chance("pm-rare-myostatin", 4, 0.4, "fluid"),
+      PM.product_chance("pm-rare-myostatin", 10, 0.4, "fluid"),
       PM.product_chance("pm-broken-myostatin", 4, 0.4, "fluid")
     }
   },
@@ -1136,19 +1136,19 @@ data:extend({
     name = "pm-myostatin-nitrogenation",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/myostatin-nitrogenation.png",
-    energy_required = 6,
+    energy_required = 3,
     enabled = false,
     category = "chemistry",
     subgroup = "pm-myostatin-rnm",
     order = "d",
     ingredients =
     {
-      PM.ingredient("pm-rare-myostatin", 4, "fluid"),
+      PM.ingredient("pm-rare-myostatin", 10, "fluid"),
       PM.ingredient("pm-nitrogen-gas", 24, "fluid"),
     },
     results =
     {
-      PM.product_chance("pm-legendary-myostatin", 4, 0.4, "fluid"),
+      PM.product_chance("pm-legendary-myostatin", 10, 0.4, "fluid"),
       PM.product_chance("pm-broken-myostatin", 4, 0.4, "fluid")
     }
   },
@@ -1163,7 +1163,7 @@ data:extend({
     main_product = "pm-iron-sulfur-cluster",
     ingredients =
     {
-      { "iron-plate",   4 + 1 },
+      {"iron-plate", 4 + 1},
       PM.ingredient("sulfuric-acid", 20, "fluid")
     },
     results =

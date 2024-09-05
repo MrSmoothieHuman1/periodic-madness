@@ -638,7 +638,14 @@ sanitize_recipe(recipes["destroyer-capsule"]).ingredients =
 {
   PM.ingredient("flying-robot-frame", 1)
 }
-
+sanitize_recipe(recipes["energy-shield-equipment"]).ingredients = 
+{
+  PM.ingredient("pm-argon-gas", 15, "fluid"),
+  PM.ingredient("pm-gold-wire", 10),
+  PM.ingredient("advanced-circuit", 8),
+  PM.ingredient("pm-heavyweight-panelling", 8)
+}
+data.raw["recipe"]["energy-shield-equipment"].category = "crafting-with-fluid"
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 {
   PM.product_range("pm-empty-reactor-cell", 3, 5),

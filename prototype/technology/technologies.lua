@@ -1067,7 +1067,7 @@ data:extend({
       PM.unlock_recipe("pm-aluminium-plate-cooling"),
       PM.unlock_recipe("pm-palladium-plate-cooling"),
     },
-    prerequisites = {"pm-zirconium-processing" },
+    prerequisites = {"pm-zirconium-processing"},
     unit =
     {
       count = 150,
@@ -1092,7 +1092,7 @@ data:extend({
       PM.unlock_recipe("pm-megassembler-fluid-resistant-circuit"),
       PM.unlock_recipe("pm-megassembler-advanced-circuit"),
     },
-    prerequisites = {"lubricant" },
+    prerequisites = {"lubricant"},
     unit =
     {
       count = 350,
@@ -3706,7 +3706,7 @@ data:extend({
     {
       PM.modify("worker-robot-storage", 1)
     },
-    prerequisites = {"worker-robots-storage-3" },
+    prerequisites = {"worker-robots-storage-3"},
     unit =
     {
       count = 450,

@@ -65,6 +65,9 @@ Date: 2024-08-09
     - Changed the map color of molten and cold-inators.
     - Changed the map color of heat pipe tiers to match their respective colours.
     - Changed chemical plants to only have 2 module slots.
+    - Changed Oil refineries crafting speed.
+    - Changed Vanadium-redox robots to have a high fire resistance.
+    - Didnt want to do it this update but if i didnt, i would never get around to it: rerendered (and remodelled) a lot of buildings. Not all however, some need some more time to be finalised.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

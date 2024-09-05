@@ -325,7 +325,7 @@ data:extend({
   {
     type = "item",
     name = "pm-washing-plant-2",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-2.png",
     subgroup = "pm-water-machine",
     order = "e",
@@ -385,7 +385,7 @@ data:extend({
   {
     type = "item",
     name = "pm-electrolysis-plant",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant.png",
     subgroup = "pm-water-machine",
     order = "f",
@@ -512,7 +512,7 @@ data:extend({
   {
     type = "item",
     name = "pm-leaching-field",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/leaching-field.png",
     subgroup = "pm-water-machine",
     order = "g",

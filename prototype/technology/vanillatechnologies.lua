@@ -1,4 +1,5 @@
 local PM = require("__periodic-madness__/library")
+
 data.raw["technology"]["automation"].effects =
 {
   PM.unlock_recipe("assembling-machine-1"),
@@ -12,8 +13,7 @@ data.raw["technology"]["automation-2"].effects =
   PM.unlock_recipe("pm-crusher-1")
 }
 
-data.raw["technology"]["automation-2"].prerequisites = { "steel-processing", "pm-advanced-basic-tubing",
-  "logistic-science-pack" }
+data.raw["technology"]["automation-2"].prerequisites = {"steel-processing", "pm-advanced-basic-tubing", "logistic-science-pack"}
 
 data.raw["technology"]["automation-3"].effects =
 {
@@ -870,7 +870,14 @@ data.raw["technology"]["power-armor-mk2"].unit.ingredients =
   PM.ingredient("pm-post-transition-metal-science-pack", 1),
   PM.ingredient("pm-metalloid-science-pack", 1)
 }
-
+data.raw["technology"]["energy-shield-equipment"].prerequisites = {"pm-trace-gas-refining"}
+data.raw["technology"]["energy-shield-equipment"].unit.ingredients = 
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("chemical-science-pack", 1),
+}
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"

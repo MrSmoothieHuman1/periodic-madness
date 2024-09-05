@@ -1980,7 +1980,6 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 2,
         base_level = -1,
@@ -1989,7 +1988,6 @@ data:extend({
       {
 
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 2,
         base_level = -1,
@@ -1998,7 +1996,6 @@ data:extend({
       {
 
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 2,
         base_level = 1,
@@ -2007,7 +2004,6 @@ data:extend({
       {
 
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 2,
         base_level = 1,
@@ -4641,7 +4637,6 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 6,
         base_level = -1,
@@ -4650,7 +4645,6 @@ data:extend({
       {
 
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 6,
         base_level = -1,
@@ -4659,7 +4653,6 @@ data:extend({
       {
 
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 6,
         base_level = 1,
@@ -4668,7 +4661,6 @@ data:extend({
       {
 
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         base_area = 6,
         base_level = 1,
@@ -7397,9 +7389,9 @@ data:extend({
           priority = "high",
           width = 108,
           height = 114,
-          frame_count = 30,
+          frame_count = 24,
           line_length = 6,
-          animation_speed = 0.7,
+          animation_speed = 0.6,
           shift = util.by_pixel(0, -4),
           hr_version =
           {
@@ -7407,9 +7399,9 @@ data:extend({
             priority = "high",
             width = 214,
             height = 226,
-            frame_count = 30,
+            frame_count = 24,
             line_length = 6,
-            animation_speed = 0.7,
+            animation_speed = 0.6,
             shift = util.by_pixel(0, -4),
             scale = 0.5
           }
@@ -7421,7 +7413,7 @@ data:extend({
           height = 108,
           line_length = 1,
           frame_count = 1,
-          repeat_count = 30,
+          repeat_count = 24,
           draw_as_shadow = true,
           shift = util.by_pixel(16, -4),
           hr_version =
@@ -7433,7 +7425,7 @@ data:extend({
             height = 214,
             line_length = 1,
             frame_count = 1,
-            repeat_count = 30,
+            repeat_count = 24,
             draw_as_shadow = true,
             shift = util.by_pixel(16, -4),
             scale = 0.5
@@ -9963,7 +9955,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/chemical-plant-2.png",
     icon_size = 64,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {mining_time = 0.25, result = "chemical-plant"},
+    minable = {mining_time = 0.375, result = "chemical-plant"},
     max_health = 650,
     corpse = "chemical-plant-remnants",
     dying_explosion = "chemical-plant-explosion",
@@ -9971,7 +9963,7 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-1.5, -1.9}, {1.5, 1.5}},
-    fast_replaceable_group = "pm-chemical-plant"
+    fast_replaceable_group = "pm-chemical-plant",
     module_specification =
     {
       module_slots = 4
