@@ -4672,7 +4672,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "pm-greenhouse",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/greenhouse.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.4 + 0.1, result = "pm-greenhouse" },
@@ -9216,7 +9216,7 @@ data:extend({
           line_length = 1,
           repeat_count = 12,
           animation_speed = 0.5,
-          shift = util.by_pixel(40, -16),
+          shift = util.by_pixel(40, -12),
           draw_as_shadow = true,
           hr_version =
           {
@@ -9227,7 +9227,7 @@ data:extend({
             line_length = 1,
             repeat_count = 12,
             animation_speed = 0.5,
-            shift = util.by_pixel(40, -16),
+            shift = util.by_pixel(40, -12),
             scale = 0.5,
             draw_as_shadow = true,
           }
