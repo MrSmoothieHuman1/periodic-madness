@@ -2616,7 +2616,7 @@ data:extend({
     type = "assembling-machine",
     name = "pm-evaporator",
     icon = "__periodic-madness__/graphics/icons/buildings/evaporator.png",
-    icon_size = 128,
+    icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.2, result = "pm-evaporator" },
     max_health = 125,
@@ -2763,8 +2763,8 @@ data:extend({
           priority = "high",
           width = 81,
           height = 84,
-          frame_count = 36,
-          line_length = 6,
+          frame_count = 32,
+          line_length = 8,
           animation_speed = 0.3,
           hr_version =
           {
@@ -2772,8 +2772,8 @@ data:extend({
             priority = "high",
             width = 171,
             height = 174,
-            frame_count = 36,
-            line_length = 6,
+            frame_count = 32,
+            line_length = 8,
             animation_speed = 0.3,
             scale = 0.5
           }
@@ -2785,7 +2785,7 @@ data:extend({
           height = 81,
           frame_count = 1,
           line_length = 1,
-          repeat_count = 36,
+          repeat_count = 32,
           draw_as_shadow = true,
           shift = util.by_pixel(39.5, 5),
           hr_version =
@@ -2796,7 +2796,7 @@ data:extend({
             height = 171,
             frame_count = 1,
             line_length = 1,
-            repeat_count = 36,
+            repeat_count = 32,
             draw_as_shadow = true,
             shift = util.by_pixel(39.25, 5),
             scale = 0.5
@@ -2866,8 +2866,8 @@ data:extend({
           priority = "high",
           width = 81,
           height = 84,
-          frame_count = 36,
-          line_length = 6,
+          frame_count = 32,
+          line_length = 8,
           animation_speed = 0.3,
           hr_version =
           {
@@ -2875,8 +2875,8 @@ data:extend({
             priority = "high",
             width = 171,
             height = 174,
-            frame_count = 36,
-            line_length = 6,
+            frame_count = 32,
+            line_length = 8,
             animation_speed = 0.3,
             scale = 0.5
           }
@@ -2888,7 +2888,7 @@ data:extend({
           height = 81,
           frame_count = 1,
           line_length = 1,
-          repeat_count = 36,
+          repeat_count = 32,
           draw_as_shadow = true,
           shift = util.by_pixel(39.5, 5),
           hr_version =
@@ -2899,7 +2899,7 @@ data:extend({
             height = 171,
             frame_count = 1,
             line_length = 1,
-            repeat_count = 36,
+            repeat_count = 32,
             draw_as_shadow = true,
             shift = util.by_pixel(39.25, 5),
             scale = 0.5
@@ -2998,8 +2998,8 @@ data:extend({
           priority = "high",
           width = 81,
           height = 84,
-          frame_count = 36,
-          line_length = 6,
+          frame_count = 32,
+          line_length = 8,
           animation_speed = 0.3,
           hr_version =
           {
@@ -3007,8 +3007,8 @@ data:extend({
             priority = "high",
             width = 171,
             height = 174,
-            frame_count = 36,
-            line_length = 6,
+            frame_count = 32,
+            line_length = 8,
             animation_speed = 0.3,
             scale = 0.5
           }
@@ -3020,7 +3020,7 @@ data:extend({
           height = 81,
           frame_count = 1,
           line_length = 1,
-          repeat_count = 36,
+          repeat_count = 32,
           draw_as_shadow = true,
           shift = util.by_pixel(39.5, 5),
           hr_version =
@@ -3031,7 +3031,7 @@ data:extend({
             height = 171,
             frame_count = 1,
             line_length = 1,
-            repeat_count = 36,
+            repeat_count = 32,
             draw_as_shadow = true,
             shift = util.by_pixel(39.25, 5),
             scale = 0.5
@@ -3105,8 +3105,8 @@ data:extend({
           priority = "high",
           width = 81,
           height = 84,
-          frame_count = 36,
-          line_length = 6,
+          frame_count = 32,
+          line_length = 8,
           animation_speed = 0.3,
           hr_version =
           {
@@ -3114,8 +3114,8 @@ data:extend({
             priority = "high",
             width = 171,
             height = 174,
-            frame_count = 36,
-            line_length = 6,
+            frame_count = 32,
+            line_length = 8,
             animation_speed = 0.3,
             scale = 0.5
           }
@@ -3127,7 +3127,7 @@ data:extend({
           height = 81,
           frame_count = 1,
           line_length = 1,
-          repeat_count = 36,
+          repeat_count = 32,
           draw_as_shadow = true,
           shift = util.by_pixel(39.5, 5),
           hr_version =
@@ -3138,7 +3138,7 @@ data:extend({
             height = 171,
             frame_count = 1,
             line_length = 1,
-            repeat_count = 36,
+            repeat_count = 32,
             draw_as_shadow = true,
             shift = util.by_pixel(39.25, 5),
             scale = 0.5
@@ -4250,7 +4250,7 @@ data:extend({
   {
     type = "furnace",
     name = "pm-CO2-nullifer",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/CO2-nullifer.png",
     minable = { mining_time = 0.4 + 0.1, result = "pm-CO2-nullifer" },
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
@@ -4549,7 +4549,7 @@ data:extend({
     type = "assembling-machine",
     name = "pm-washing-plant-2",
     icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-2.png",
-    icon_size = 128,
+    icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.4, result = "pm-washing-plant-2" },
     max_health = 600,
@@ -7359,7 +7359,7 @@ data:extend({
     type = "assembling-machine",
     name = "pm-electrolysis-plant",
     icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant.png",
-    icon_size = 128,
+    icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.5, result = "pm-electrolysis-plant" },
     max_health = 350,
@@ -8717,7 +8717,7 @@ data:extend({
     type = "assembling-machine",
     name = "pm-evaporator-2",
     icon = "__periodic-madness__/graphics/icons/buildings/evaporator-2.png",
-    icon_size = 128,
+    icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.5, result = "pm-evaporator-2" },
     max_health = 400,
@@ -8824,7 +8824,7 @@ data:extend({
     type = "assembling-machine",
     name = "pm-leaching-field",
     icon = "__periodic-madness__/graphics/icons/buildings/leaching-field.png",
-    icon_size = 128,
+    icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.9, result = "pm-leaching-field" },
     map_color = { 0.5, 0, 1 },
@@ -8957,7 +8957,7 @@ data:extend({
     type = "assembling-machine",
     name = "pm-electrolysis-plant-2",
     icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant-2.png",
-    icon_size = 128,
+    icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.8, result = "pm-electrolysis-plant-2" },
     max_health = 700,

@@ -175,7 +175,7 @@ data:extend({
   {
     type = "item",
     name = "pm-evaporator",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/evaporator.png",
     subgroup = "pm-water-machine",
     order = "c",
@@ -295,7 +295,7 @@ data:extend({
   {
     type = "item",
     name = "pm-CO2-nullifer",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/CO2-nullifer.png",
     subgroup = "pm-atmospheric-machine",
     order = "b",
@@ -492,7 +492,7 @@ data:extend({
   {
     type = "item",
     name = "pm-evaporator-2",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/evaporator-2.png",
     subgroup = "pm-water-machine",
     order = "c",
