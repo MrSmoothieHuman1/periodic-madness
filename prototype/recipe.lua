@@ -2529,6 +2529,24 @@ data:extend({
       PM.product("pm-geneva's-neglection-shotgun-slug", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-polonium-fuel-rod",
+    --enabled = false,
+    category = "crafting-with-fluid",
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-polonium-fuel-cell", 1),
+      PM.ingredient("pm-boron", 25, "fluid"),
+      PM.ingredient("pm-zircon", 12),
+      PM.ingredient("processing-unit", 5)
+    },
+    results = 
+    {
+      PM.product("pm-polonium-fuel-rod", 5)
+    }
+  },
 
   {
     type = "recipe",

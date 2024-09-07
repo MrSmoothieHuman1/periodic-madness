@@ -64,6 +64,17 @@ data:extend({
     fuel_value = "64MJ",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-polonium-fuel-rod",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/polonium-fuel-rod.png",
+    subgroup = "pm-fuels",
+    order = "x",
+    fuel_category = "pm-fuel-rods",
+    fuel_value = "10MJ",
+    stack_size = 10
+  },
 })
 
 data.raw["item"]["rocket-fuel"].subgroup = "pm-fuels"

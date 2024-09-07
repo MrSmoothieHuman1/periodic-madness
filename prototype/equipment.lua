@@ -269,11 +269,18 @@ data:extend({
 
 data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/icons/vanadium-battery-equipment.png"
 data.raw["item"]["battery-mk2-equipment"].icon = "__periodic-madness__/graphics/icons/vanadium-battery-mk2-equipment.png"
-data.raw["battery-equipment"]["battery-equipment"].sprite.filename =
-"__periodic-madness__/graphics/icons/vanadium-battery-equipment-icon.png"
-data.raw["battery-equipment"]["battery-equipment"].sprite.hr_version.filename =
-"__periodic-madness__/graphics/icons/hr-vanadium-battery-equipment-icon.png"
-data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename =
-"__periodic-madness__/graphics/icons/vanadium-battery-mk2-equipment-icon.png"
-data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filename =
-"__periodic-madness__/graphics/icons/hr-vanadium-battery-mk2-equipment-icon.png"
+data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__periodic-madness__/graphics/icons/vanadium-battery-equipment-icon.png"
+data.raw["battery-equipment"]["battery-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/icons/hr-vanadium-battery-equipment-icon.png"
+data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__periodic-madness__/graphics/icons/vanadium-battery-mk2-equipment-icon.png"
+data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/icons/hr-vanadium-battery-mk2-equipment-icon.png"
+
+data.raw["generator-equipment"]["fusion-reactor-equipment"].burner = 
+{
+  usage_priority = "primary-output",
+  fuel_category = "pm-polonium",
+  fuel_inventory_size = 1,
+  burnt_inventory_size = 1,
+  
+}
+
+
