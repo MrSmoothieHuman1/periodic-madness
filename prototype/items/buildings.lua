@@ -452,7 +452,7 @@ data:extend({
   {
     type = "item",
     name = "pm-burn-inator",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/burninator.png",
     subgroup = "pm-oil-machine",
     place_result = "pm-burn-inator",

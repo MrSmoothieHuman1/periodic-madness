@@ -8119,7 +8119,7 @@ data:extend({
   {
     type = "furnace",
     name = "pm-burn-inator",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/burninator.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.2, result = "pm-burn-inator" },
@@ -8152,12 +8152,16 @@ data:extend({
           filename = "__periodic-madness__/graphics/entities/buildings/burninator/burninator.png",
           width = 114,
           height = 138,
+          line_length = 6,
+          frame_count = 24,
           shift = util.by_pixel(0, -25),
           hr_version =
           {
             filename = "__periodic-madness__/graphics/entities/buildings/burninator/hr-burninator.png",
             width = 114 * 2,
             height = 138 * 2,
+            line_length = 6,
+            frame_count = 24,
             shift = util.by_pixel(0, -25),
             scale = 0.5
           }
@@ -8166,6 +8170,9 @@ data:extend({
           filename = "__periodic-madness__/graphics/entities/buildings/burninator/burninator-shadow.png",
           width = 138,
           height = 114,
+          line_length = 1,
+          frame_count = 1,
+          repeat_count = 24,
           draw_as_shadow = true,
           shift = util.by_pixel(32, 0),
           hr_version =
@@ -8173,6 +8180,9 @@ data:extend({
             filename = "__periodic-madness__/graphics/entities/buildings/burninator/hr-burninator-shadow.png",
             width = 135 * 2,
             height = 114 * 2,
+            line_length = 1,
+            frame_count = 1,
+            repeat_count = 24,
             scale = 0.5,
             shift = util.by_pixel(32, 0),
             draw_as_shadow = true,
