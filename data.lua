@@ -89,9 +89,9 @@ require("prototype.entity")
 require("prototype.remnants")
 require("prototype.achievements")
 require("prototype.robots")
-
 require("prototype.itemgroups")
 require("prototype.equipment")
+require("prototype.equipment-grid")
 
 require("compatibility.testcompat")
 
@@ -631,6 +631,7 @@ local pm_productivity_list = {
   "pm-vanadate-solution",
   "pm-iodine-vanadate-solution-seperation",
   "pm-ammonium-vanadate-solution",
+  "pm-polonium-fuel-cell",
 }
 
 for _, module in pairs(data.raw.module) do

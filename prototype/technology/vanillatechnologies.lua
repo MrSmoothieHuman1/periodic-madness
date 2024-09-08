@@ -879,6 +879,23 @@ data.raw["technology"]["energy-shield-equipment"].unit.ingredients =
   PM.ingredient("chemical-science-pack", 1),
 }
 
+data.raw["technology"]["fusion-reactor-equipment"].effects = 
+{
+  PM.ingredient("pm-empty-fuel-rod"),
+  PM.ingredient("pm-polonium-fuel-rod"),
+  PM.ingredient("pm-spent-fuel-rod-reprocessing"),
+  PM.ingredient("fusion-reactor-equipment"), 
+}
+data.raw["technology"]["fusion-reactor-equipment"].unit.ingredients =
+{
+  PM.ingredient("automation-science-pack", 1),
+  PM.ingredient("logistic-science-pack", 1),
+  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  PM.ingredient("pm-post-transition-metal-science-pack", 1),
+  PM.ingredient("pm-metalloid-science-pack", 1)
+}
+data.raw["technology"]["fusion-reactor-equipment"].prerequisites = {"pm-metalloid-science-pack-unlock"}
+
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"
 

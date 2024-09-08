@@ -8345,7 +8345,7 @@ data:extend({
     corpse = "nuclear-reactor-remnants",
     dying_explosion  = "nuclear-reactor-explosion",
     consumption = "40MW",
-    neighbour_bonus = 1.25,
+    neighbour_bonus = 0.25,
     energy_source =
     {
       type = "burner",

@@ -34,4 +34,4 @@ data.raw["equipment-grid"]["spidertron-equipment-grid"].height = 8
 
 data.raw["armor"]["modular-armor"].equipment_grid = "pm-modular-armor-equipment-grid"
 data.raw["armor"]["power-armor"].equipment_grid = "pm-power-armor-equipment-grid"
-data.raw["armor"]["power-armor-mk2"].equipment_grid = "pm-power-armor-mk2-equipment-grid"
+data.raw["armor"]["power-armor-mk2"].equipment_grid = "pm-power-armor-MK2-equipment-grid"

@@ -2524,7 +2524,8 @@ data:extend({
     {
       PM.ingredient("pm-boron", 25, "fluid"),
       PM.ingredient("pm-zircon", 12),
-      PM.ingredient("processing-unit", 5)
+      PM.ingredient("processing-unit", 5),
+      PM.ingredient("pm-radiation-resitant-panelling", 12)
     },
     results = 
     {

@@ -68,7 +68,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-210-decay.png",
     enabled = false,
-    energy_required = 50,
+    energy_required = 45,
     category = "advanced-crafting",
     subgroup = "pm-polonium-ptm",
     order = "b",
@@ -78,19 +78,19 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-polonium-210", 2, 3, 0.55),
+      PM.product_range_chance("pm-polonium-210", 2, 4, 0.75),
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-polonium-fuel-cell",
     enabled = false,
-    energy_required = 10,
+    energy_required = 15,
     subgroup = "pm-polonium-ptm",
     order = "c",
     ingredients =
     {
-      PM.ingredient("pm-polonium-210", 20),
+      PM.ingredient("pm-polonium-210", 10),
       PM.ingredient("pm-empty-reactor-cell", 2)
     },
     results =
@@ -127,7 +127,7 @@ data:extend({
     --enabled = false,
     subgroup = "pm-fuel-rods",
     order = "c",
-    energy_required = 10,
+    energy_required = 15,
     ingredients = 
     {
       PM.ingredient("pm-polonium-fuel-cell", 1),

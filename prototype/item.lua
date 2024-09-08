@@ -1503,7 +1503,7 @@ data.raw["item"]["solid-fuel"].fuel_acceleration_multiplier = 1
 data.raw["item"]["solid-fuel"].fuel_top_speed_multiplier = 1.1
 
 data.raw["gun"]["shotgun"].attack_parameters.min_range = 0.5
-data.raw["gun"]["combat-shotgun"].attack_paramters.min_range = 1.25
+data.raw["gun"]["combat-shotgun"].attack_parameters.min_range = 1.25
 
 
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
