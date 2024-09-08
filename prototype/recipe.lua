@@ -2515,7 +2515,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-empty-fuel-rod",
-    --enabled = false,
+    enabled = false,
     category = "crafting-with-fluid",
     subgroup = "pm-fuel-rods",
     order = "a",
@@ -2525,7 +2525,7 @@ data:extend({
       PM.ingredient("pm-boron", 25, "fluid"),
       PM.ingredient("pm-zircon", 12),
       PM.ingredient("processing-unit", 5),
-      PM.ingredient("pm-radiation-resitant-panelling", 12)
+      PM.ingredient("pm-radiation-resistant-panelling", 12)
     },
     results = 
     {
@@ -2537,7 +2537,7 @@ data:extend({
     name = "pm-spent-fuel-rod-reprocessing",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/spent-fuel-rod-reprocessing.png",
-   --enabled = false,
+   enabled = false,
     energy_required = 10,
     category = "pm-advanced-crafting-with-fluid",
     subgroup = "pm-fuel-rods",

@@ -870,6 +870,7 @@ data.raw["technology"]["power-armor-mk2"].unit.ingredients =
   PM.ingredient("pm-post-transition-metal-science-pack", 1),
   PM.ingredient("pm-metalloid-science-pack", 1)
 }
+data.raw["technology"]["power-armor-mk2"].unit.time = 80
 data.raw["technology"]["energy-shield-equipment"].prerequisites = {"pm-trace-gas-refining"}
 data.raw["technology"]["energy-shield-equipment"].unit.ingredients = 
 {
@@ -881,10 +882,10 @@ data.raw["technology"]["energy-shield-equipment"].unit.ingredients =
 
 data.raw["technology"]["fusion-reactor-equipment"].effects = 
 {
-  PM.ingredient("pm-empty-fuel-rod"),
-  PM.ingredient("pm-polonium-fuel-rod"),
-  PM.ingredient("pm-spent-fuel-rod-reprocessing"),
-  PM.ingredient("fusion-reactor-equipment"), 
+  PM.unlock_recipe("pm-empty-fuel-rod"),
+  PM.unlock_recipe("pm-polonium-fuel-rod"),
+  PM.unlock_recipe("pm-spent-fuel-rod-reprocessing"),
+  PM.unlock_recipe("fusion-reactor-equipment"), 
 }
 data.raw["technology"]["fusion-reactor-equipment"].unit.ingredients =
 {
@@ -894,7 +895,9 @@ data.raw["technology"]["fusion-reactor-equipment"].unit.ingredients =
   PM.ingredient("pm-post-transition-metal-science-pack", 1),
   PM.ingredient("pm-metalloid-science-pack", 1)
 }
-data.raw["technology"]["fusion-reactor-equipment"].prerequisites = {"pm-metalloid-science-pack-unlock"}
+data.raw["technology"]["fusion-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
+data.raw["technology"]["fusion-reactor-equipment"].unit.time = 60
+data.raw["technology"]["fusion-reactor-equipment"].unit.count = 350
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"

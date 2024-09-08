@@ -281,8 +281,9 @@ sanitize_recipe(recipes["tank"]).ingredients =
 sanitize_recipe(recipes["low-density-structure"]).ingredients =
 {
   PM.ingredient("pm-polytetrafluoroethylene", 5),
-  PM.ingredient("copper-plate", 20),
-  PM.ingredient("steel-plate", 2)
+  PM.ingredient("pm-antimony-ore", 5),
+  PM.ingredient("pm-lightweight-framing", 20),
+  PM.ingredient("pm-aluminium-plate", 10)
 }
 sanitize_recipe(recipes["rocket-fuel"]).ingredients =
 {
@@ -644,6 +645,16 @@ sanitize_recipe(recipes["energy-shield-equipment"]).ingredients =
   PM.ingredient("pm-gold-wire", 10),
   PM.ingredient("advanced-circuit", 8),
   PM.ingredient("pm-heavyweight-panelling", 8)
+}
+sanitize_recipe(recipes["fusion-reactor-equipment"]).ingredients = 
+{
+  PM.ingredient("processing-unit", 30),
+  PM.ingredient("low-density-structure", 15),
+  PM.ingredient("pm-molybdenum-ore", 80),
+  PM.ingredient("pm-radiation-resistant-panelling", 20),
+  PM.ingredient("pm-radiation-resistant-tubing", 20),
+  PM.ingredient("pm-heavyweight-framing", 15)
+
 }
 data.raw["recipe"]["energy-shield-equipment"].category = "crafting-with-fluid"
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =

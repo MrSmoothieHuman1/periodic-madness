@@ -265,6 +265,71 @@ data:extend({
     charging_threshold_distance = 8,
     categories = { "armor" }
   },
+
+  {
+    type = "battery-equipment",
+    name = "pm-lithium-ion-battery-equipment",
+    sprite =
+    {
+      filename = "__periodic-madness__/graphics/equipment/lithium-battery-equipment-icon.png",
+      width = 32,
+      height = 64,
+      priority = "medium",
+      hr_version =
+      {
+        filename = "__base__/graphics/equipment/hr-lithium-battery-equipment-icon.png",
+        width = 64,
+        height = 128,
+        priority = "medium",
+        scale = 0.5
+      }
+    },
+    shape =
+    {
+      width = 1,
+      height = 2,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "25MJ",
+      usage_priority = "tertiary"
+    },
+    categories = {"armor"}
+  },
+  {
+    type = "battery-equipment",
+    name = "battery-mk2-equipment",
+    sprite =
+    {
+      filename = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment.png",
+      width = 32,
+      height = 64,
+      priority = "medium",
+      hr_version =
+      {
+        filename = "__periodic-madness__/graphics/equipment/hr-lithium-battery-mk2-equipment.png",
+        width = 64,
+        height = 128,
+        priority = "medium",
+        scale = 0.5
+      }
+    },
+    shape =
+    {
+      width = 1,
+      height = 2,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "120MJ",
+      usage_priority = "tertiary"
+    },
+    categories = {"armor"}
+  },
 })
 
 data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/icons/vanadium-battery-equipment.png"
@@ -273,6 +338,18 @@ data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__periodic
 data.raw["battery-equipment"]["battery-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/icons/hr-vanadium-battery-equipment-icon.png"
 data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__periodic-madness__/graphics/icons/vanadium-battery-mk2-equipment-icon.png"
 data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/icons/hr-vanadium-battery-mk2-equipment-icon.png"
+data.raw["battery-equipment"]["battery-equipment"].shape =
+    {
+      width = 2,
+      height = 2,
+      type = "full"
+    }
+data.raw["battery-equipment"]["battery-mk2-equipment"].shape =
+    {
+      width = 2,
+      height = 2,
+      type = "full"
+    }
 
 data.raw["generator-equipment"]["fusion-reactor-equipment"].burner = 
 {
