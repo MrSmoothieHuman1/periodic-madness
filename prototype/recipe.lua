@@ -1507,23 +1507,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-hydrogen-gas-ionizing",
-    energy_required = 10,
-    enabled = false,
-    category = "pm-electrolysis",
-    subgroup = "pm-polonium-ptm",
-    order = "a",
-    ingredients =
-    {
-      PM.ingredient("pm-hydrogen-gas", 20, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-proton-beam", 20, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-zirconium-pants",
     energy_required = 30,
     enabled = false,
@@ -2531,20 +2514,40 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-polonium-fuel-rod",
+    name = "pm-empty-fuel-rod",
     --enabled = false,
     category = "crafting-with-fluid",
     energy_required = 10,
     ingredients = 
     {
-      PM.ingredient("pm-polonium-fuel-cell", 1),
       PM.ingredient("pm-boron", 25, "fluid"),
       PM.ingredient("pm-zircon", 12),
       PM.ingredient("processing-unit", 5)
     },
     results = 
     {
-      PM.product("pm-polonium-fuel-rod", 5)
+      PM.product("pm-empty-fuel-rod", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-spent-fuel-rod-reprocessing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/spent-fuel-rod-reprocessing.png",
+   --enabled = false,
+    energy_required = 20,
+    category = "pm-advanced-crafting-with-fluid",
+    ingredients =
+    {
+      PM.ingredient("pm-spent-fuel-rod", 2),
+      PM.ingredient("pm-boron", 7.5, "fluid")
+    },
+    results =
+    {
+      PM.product_range("pm-empty-fuel-rod", 1, 2),
+      PM.product_range("pm-helium-gas", 3, 6, "fluid"),
+      PM.product_range_chance("pm-carbon-dioxide-gas", 5, 9, "fluid")
+
     }
   },
 

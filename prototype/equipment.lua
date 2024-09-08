@@ -277,7 +277,7 @@ data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filenam
 data.raw["generator-equipment"]["fusion-reactor-equipment"].burner = 
 {
   usage_priority = "primary-output",
-  fuel_category = "pm-polonium",
+  fuel_category = "pm-fuel-rods",
   fuel_inventory_size = 1,
   burnt_inventory_size = 1,
   

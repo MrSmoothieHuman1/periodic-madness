@@ -1204,7 +1204,11 @@ data:extend({
   {
     type = "fuel-category",
     name = "pm-charged-batteries"
-  }
+  },
+  {
+    type = "fuel-category",
+    name = "pm-fuel-rods"
+  },
 })
 
 local PMRefItems = data.raw["item"]["copper-cable"]

@@ -28,6 +28,23 @@ data:extend({
 
   {
     type = "recipe",
+    name = "pm-hydrogen-gas-ionizing",
+    energy_required = 10,
+    enabled = false,
+    category = "pm-electrolysis",
+    subgroup = "pm-polonium-ptm",
+    order = "a",
+    ingredients =
+    {
+      PM.ingredient("pm-hydrogen-gas", 20, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-proton-beam", 20, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-bismuth-proton-bombardment",
     enabled = false,
     energy_required = 60,
@@ -63,5 +80,62 @@ data:extend({
     {
       PM.product_range_chance("pm-polonium-210", 2, 3, 0.55),
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-polonium-fuel-cell",
+    enabled = false,
+    energy_required = 10,
+    subgroup = "pm-polonium-ptm",
+    order = "c",
+    ingredients =
+    {
+      PM.ingredient("pm-polonium-210", 20),
+      PM.ingredient("pm-empty-reactor-cell", 2)
+    },
+    results =
+    {
+      PM.product("pm-polonium-fuel-cell", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-polonium-cell-reprocessing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/polonium-fuel-reprocessing.png",
+    enabled = false,
+    energy_required = 30,
+    category = "crafting-with-fluid",
+    subgroup = "pm-polonium-ptm",
+    order = "d",
+    ingredients =
+    {
+      PM.ingredient("pm-used-up-polonium-fuel-cell", 10),
+    },
+    results =
+    {
+      PM.product_range("pm-empty-reactor-cell", 3, 5),
+      PM.product_range("pm-lead-ore", 1, 5),
+      PM.product_range("pm-helium-gas", 2, 5, "fluid"),
+      PM.product_chance("pm-bismuth-210", 4, 0.7)
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "pm-polonium-fuel-rod",
+    --enabled = false,
+    subgroup = "pm-polonium-ptm",
+    order = "ca",
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-polonium-fuel-cell", 1),
+      PM.ingredient("pm-empty-fuel-rod", 5)
+    },
+    results = 
+    {
+      PM.product("pm-polonium-fuel-rod", 5)
+    }
+  },
 })

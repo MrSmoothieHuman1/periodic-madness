@@ -69,10 +69,29 @@ data:extend({
     name = "pm-polonium-fuel-rod",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/polonium-fuel-rod.png",
-    subgroup = "pm-fuels",
-    order = "x",
+    subgroup = "pm-fuel-rods",
+    order = "c",
     fuel_category = "pm-fuel-rods",
+    burnt_result = "pm-spent-fuel-rod",
     fuel_value = "10MJ",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "pm-empty-fuel-rod",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/empty-fuel-rod.png",
+    subgroup = "pm-fuel-rods",
+    order = "a",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "pm-spent-fuel-rod",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/spent-fuel-rod.png",
+    subgroup = "pm-fuel-rods",
+    order = "b",
     stack_size = 10
   },
 })
