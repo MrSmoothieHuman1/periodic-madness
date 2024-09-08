@@ -2517,6 +2517,8 @@ data:extend({
     name = "pm-empty-fuel-rod",
     --enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "pm-fuel-rods",
+    order = "a",
     energy_required = 10,
     ingredients = 
     {
@@ -2535,8 +2537,10 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/spent-fuel-rod-reprocessing.png",
    --enabled = false,
-    energy_required = 20,
+    energy_required = 10,
     category = "pm-advanced-crafting-with-fluid",
+    subgroup = "pm-fuel-rods",
+    order = "b",
     ingredients =
     {
       PM.ingredient("pm-spent-fuel-rod", 2),
@@ -2546,7 +2550,7 @@ data:extend({
     {
       PM.product_range("pm-empty-fuel-rod", 1, 2),
       PM.product_range("pm-helium-gas", 3, 6, "fluid"),
-      PM.product_range_chance("pm-carbon-dioxide-gas", 5, 9, "fluid")
+      PM.product_range_chance("pm-carbon-dioxide-gas", 5, 9, 0.67, "fluid")
 
     }
   },

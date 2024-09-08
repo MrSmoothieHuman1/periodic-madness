@@ -280,7 +280,7 @@ data.raw["generator-equipment"]["fusion-reactor-equipment"].burner =
   fuel_category = "pm-fuel-rods",
   fuel_inventory_size = 1,
   burnt_inventory_size = 1,
-  
 }
+data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "500kW"
 
 

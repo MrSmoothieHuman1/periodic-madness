@@ -954,6 +954,11 @@ data:extend({
     name = "pm-shotgun-ammo",
     group = "combat",
     order = "ba",
-
-  }
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-fuel-rods",
+    group = "combat",
+    order = "ea",
+  },
 })

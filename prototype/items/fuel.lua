@@ -73,7 +73,7 @@ data:extend({
     order = "c",
     fuel_category = "pm-fuel-rods",
     burnt_result = "pm-spent-fuel-rod",
-    fuel_value = "10MJ",
+    fuel_value = "20MJ",
     stack_size = 10
   },
   {

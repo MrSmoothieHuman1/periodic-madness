@@ -125,8 +125,8 @@ data:extend({
     type = "recipe",
     name = "pm-polonium-fuel-rod",
     --enabled = false,
-    subgroup = "pm-polonium-ptm",
-    order = "ca",
+    subgroup = "pm-fuel-rods",
+    order = "c",
     energy_required = 10,
     ingredients = 
     {

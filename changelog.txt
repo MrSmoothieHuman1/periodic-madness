@@ -23,6 +23,7 @@ Date: 2024-08-09
     - Added a heavy lube recipe for solar cells.
     - Added chemical plants 2, unlocked at P-TM science.
     - Gave burn-inators an animation.
+    - Added lithium-sulfur modular batteries, MK1 and MK2.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -69,6 +70,10 @@ Date: 2024-08-09
     - Changed Oil refineries crafting speed.
     - Changed Vanadium-redox robots to have a high fire resistance.
     - Didnt want to do it this update but if i didnt, i would never get around to it: rerendered (and remodelled) a lot of buildings. Not all however, some need some more time to be finalised.
+    - Changed storage values on Vanaidum-oxide modular batteries.
+    - Changed Vanadium-oxide modular batteries to be 2x2.
+    - Buffed Modular armor's grid size to 7x7, Power armors to 10x10 and Power armor MK2's to 15x15.
+    - Buffed Spidertron's equipmen grid to 14x8.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
