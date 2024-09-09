@@ -3544,6 +3544,85 @@ data:extend({
       time = 30
     }
   },
+  {
+    type = "technology",
+    name = "pm-lithium-battery-equipment",
+    icon_size = 256,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/technology/lithium-battery-equipment.png",
+        icon_size = 256
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+        icon_mipmaps = 3,
+        icon_size = 128,
+        shift = {
+          100,
+          100
+        }
+      }
+    },
+    effects = 
+    {
+      PM.unlock_recipe("pm-lithium-battery-equipment")
+    },
+    prerequisites = {"pm-lithium-sulfur-battery"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        PM.ingredient("automation-science-pack", 1),
+        PM.ingredient("logistic-science-pack", 1),
+        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+        PM.ingredient("chemical-science-pack", 1),
+        PM.ingredient("pm-alkali-metal-science-pack", 1)
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-lithium-battery-mk2-equipment",
+    icon_size = 256,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/technology/lithium-battery-mk2-equipment.png",
+        icon_size = 256
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+        icon_mipmaps = 3,
+        icon_size = 128,
+        shift = {
+          100,
+          100
+        }
+      }
+    },
+    effects = 
+    {
+      PM.unlock_recipe("pm-lithium-battery-mk2-equipment")
+    },
+    prerequisites = {"pm-lithium-battery-equipment", "low-density-structure"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        PM.ingredient("automation-science-pack", 1),
+        PM.ingredient("logistic-science-pack", 1),
+        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+        PM.ingredient("chemical-science-pack", 1),
+        PM.ingredient("pm-alkali-metal-science-pack", 1),
+        PM.ingredient("pm-metalloid-science-pack", 1),
+      },
+      time = 80
+    }
+  },
 
   {
     type = "technology",

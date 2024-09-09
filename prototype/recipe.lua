@@ -2537,7 +2537,7 @@ data:extend({
     name = "pm-spent-fuel-rod-reprocessing",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/spent-fuel-rod-reprocessing.png",
-   enabled = false,
+    enabled = false,
     energy_required = 10,
     category = "pm-advanced-crafting-with-fluid",
     subgroup = "pm-fuel-rods",
@@ -2553,6 +2553,41 @@ data:extend({
       PM.product_range("pm-helium-gas", 3, 6, "fluid"),
       PM.product_range_chance("pm-carbon-dioxide-gas", 5, 9, 0.67, "fluid")
 
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lithium-battery-equipment",
+    enabled = false,
+    energy_required = 12.5,
+    ingredients = 
+    {
+      PM.ingredient("pm-lithium-sulfur-battery", 4),
+      PM.ingredient("pm-fluid-circuit", 5),
+      PM.ingredient("advanced-circuit", 5),
+      PM.ingredient("pm-vulcanised-rubber", 10),
+      PM.ingredient("pm-glass-pane", 10)
+    },
+    results = 
+    {
+      PM.product("pm-lithium-sulfur-battery-equipment", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lithium-battery-mk2-equipment",
+    enabled = false,
+    energy_required = 12.5,
+    ingredients = 
+    {
+      PM.ingredient("pm-lithium-sulfur-battery-equipment", 4),
+      PM.ingredient("pm-module-speed-light", 1),
+      PM.ingredient("low-density-structure", 2),
+      PM.ingredient("processing-unit", 5)
+    },
+    results = 
+    {
+      PM.product("pm-lithium-sulfur-battery-mk2-equipment", 1)
     }
   },
 
