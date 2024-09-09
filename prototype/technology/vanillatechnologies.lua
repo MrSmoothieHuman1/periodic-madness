@@ -371,6 +371,7 @@ data.raw["technology"]["battery-mk2-equipment"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
   PM.ingredient("pm-post-transition-metal-science-pack", 1)
 }
+data.raw["technology"]["battery-mk2-equipment"].prerequisites = {"battery-equipment", "advanced-electronics-2"}
 data.raw["technology"]["battery-mk2-equipment"].icons = 
 {
   {
