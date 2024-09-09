@@ -341,12 +341,28 @@ data.raw["technology"]["belt-immunity-equipment"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
 }
 
-data.raw["technology"]["battery-equipment"].prerequisites = { "pm-vanadium-oxide-redox-batteries", "modular-armor" }
+data.raw["technology"]["battery-equipment"].prerequisites = {"pm-vanadium-oxide-redox-batteries", "modular-armor"}
 data.raw["technology"]["battery-equipment"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),
   PM.ingredient("logistic-science-pack", 1),
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+}
+data.raw["technology"]["battery-equipment"].icons = 
+{
+  {
+    icon = "__periodic-madness__/graphics/technology/vanadium-battery-equipment.png",
+    icon_size = 256
+  },
+  {
+    icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+    icon_mipmaps = 3,
+    icon_size = 128,
+    shift = {
+      100,
+      100
+    }
+  }
 }
 data.raw["technology"]["battery-mk2-equipment"].unit.ingredients =
 {
@@ -355,7 +371,22 @@ data.raw["technology"]["battery-mk2-equipment"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
   PM.ingredient("pm-post-transition-metal-science-pack", 1)
 }
-
+data.raw["technology"]["battery-mk2-equipment"].icons = 
+{
+  {
+    icon = "__periodic-madness__/graphics/technology/vanadium-battery-mk2-equipment.png",
+    icon_size = 256
+  },
+  {
+    icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+    icon_mipmaps = 3,
+    icon_size = 128,
+    shift = {
+      100,
+      100
+    }
+  }
+}
 data.raw["technology"]["night-vision-equipment"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),
@@ -390,9 +421,10 @@ data.raw["technology"]["low-density-structure"].unit.ingredients =
   PM.ingredient("logistic-science-pack", 1),
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
   PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1)
+  PM.ingredient("pm-alkali-metal-science-pack", 1),
+  PM.ingredient("pm-metalloid-science-pack", 1)
 }
-data.raw["technology"]["low-density-structure"].prerequisites = { "pm-polytetrafluoroethylene-plastic" }
+data.raw["technology"]["low-density-structure"].prerequisites = {"pm-polytetrafluoroethylene-plastic", "pm-metalloid-pack-unlock"}
 
 data.raw["technology"]["laser"].unit.ingredients =
 {
@@ -965,8 +997,7 @@ data.raw["technology"]["speed-module-3"].effects =
   PM.unlock_recipe("speed-module-3"),
   PM.unlock_recipe("pm-speed-module-2-crushing"),
 }
-data.raw["technology"]["speed-module-3"].prerequisites = { "speed-module-2", "pm-alkali-metal-pack-unlock",
-  "pm-boron-processing" }
+data.raw["technology"]["speed-module-3"].prerequisites = { "speed-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 local ProdMod1Fix = data.raw["module"]["productivity-module"]
 
 ProdMod1Fix.icon_size = 128
@@ -1033,7 +1064,7 @@ data.raw["technology"]["productivity-module-3"].effects =
   PM.unlock_recipe("productivity-module-3"),
   PM.unlock_recipe("pm-productivity-module-2-crushing"),
 }
-data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock", "pm-boron-processing"}
+data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 data.raw["module"]["effectivity-module"].icon_size = 128
 data.raw["module"]["effectivity-module"].icon = "__periodic-madness__/graphics/icons/effectivity-module-1.png"
 data.raw["module"]["effectivity-module-2"].icon_size = 128
@@ -1064,8 +1095,7 @@ data.raw["technology"]["effectivity-module-3"].effects =
   PM.unlock_recipe("effectivity-module-3"),
   PM.unlock_recipe("pm-efficiency-module-2-crushing"),
 }
-data.raw["technology"]["effectivity-module-3"].prerequisites = { "effectivity-module-2", "pm-alkali-metal-pack-unlock",
-  "pm-boron-processing" }
+data.raw["technology"]["effectivity-module-3"].prerequisites = { "effectivity-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["effectivity-module"].unit.ingredients =
 {
   PM.ingredient("automation-science-pack", 1),

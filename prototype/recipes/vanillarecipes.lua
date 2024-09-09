@@ -283,7 +283,7 @@ sanitize_recipe(recipes["low-density-structure"]).ingredients =
   PM.ingredient("pm-polytetrafluoroethylene", 5),
   PM.ingredient("pm-antimony-ore", 5),
   PM.ingredient("pm-lightweight-framing", 20),
-  PM.ingredient("pm-aluminium-plate", 10)
+  PM.ingredient("pm-titanium-plate", 15)
 }
 sanitize_recipe(recipes["rocket-fuel"]).ingredients =
 {
@@ -612,7 +612,16 @@ sanitize_recipe(recipes["battery-equipment"]).ingredients =
 {
   PM.ingredient("pm-vanadium-redox-battery", 5),
   PM.ingredient("pm-vulcanised-rubber", 10),
-  PM.ingredient("pm-glass-pane", 5)
+  PM.ingredient("pm-glass-pane", 5),
+  PM.ingredient("pm-tungsten-plate", 3),
+  PM.ingredient("advanced-circuit", 5)
+}
+sanitize_recipe(recipes["battery-mk2-equipment"]).ingredients =
+{
+  PM.ingredient("battery-equipment", 5),
+  PM.ingredient("processing-unit", 5),
+  PM.ingredient("pm-module-speed-light", 1),
+  PM.ingredient("pm-module-efficiency-light", 1)
 }
 sanitize_recipe(recipes["beacon"]).ingredients =
 {

@@ -83,8 +83,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-low-quality-crude-antimony-sulfide", 4, 8),
-            PM.product_range("pm-high-quality-crude-antimony-sulfide", 2, 4),
+            PM.product_range("pm-low-quality-crude-antimony-sulfide", 3, 6),
+            PM.product_range("pm-high-quality-crude-antimony-sulfide", 3, 6),
         }
     },
     {
@@ -103,7 +103,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-crude-antimony-sulfide", 1, 5),
+            PM.product_range("pm-crude-antimony-sulfide", 2, 5),
             PM.product_range_chance("pm-lead-powder", 0, 4, 0.56),
             PM.product_chance("pm-ferrum", 3, 0.7)
         }

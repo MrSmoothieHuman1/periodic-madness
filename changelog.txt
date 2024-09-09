@@ -23,8 +23,8 @@ Date: 2024-08-09
     - Added a heavy lube recipe for solar cells.
     - Added chemical plants 2, unlocked at P-TM science.
     - Gave burn-inators an animation.
-    - Added lithium-sulfur modular batteries, MK1 and MK2.
-    - Gave a bunch more recipe producitvity.
+    - Added lithium-sulfur modular batteries, which are smaller then vanadium-oxide modular batteries but hold less charge.
+    - Gave a bunch more recipes producitvity.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -91,6 +91,8 @@ Date: 2024-08-09
     - Fixed mining productivity and research speed not being unlocked by their respective tech trees.
     - Fixed rubidium's ratios being fucked in comparison to the amount needed in science.
     - FINALLY MADE ACID PLANTS LOOK DIFFERENT OH MY GOD
+    - Fixed the vanadium modular battery technologies not having the correct color.
+    - Fixed the vanadium modular batterie MK2's recipe.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

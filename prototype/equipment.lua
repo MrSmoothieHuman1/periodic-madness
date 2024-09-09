@@ -5,13 +5,13 @@ data:extend({
     name = "pm-solar-panel-equipment-2",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/icons/solar-panel-equipment-2.png",
+      filename = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2.png",
       width = 32,
       height = 32,
       priority = "medium",
       hr_version =
       {
-        filename = "__periodic-madness__/graphics/icons/hr-solar-panel-equipment-2.png",
+        filename = "__periodic-madness__/graphics/equipment/hr-solar-panel-equipment-2.png",
         width = 64,
         height = 64,
         priority = "medium",
@@ -39,13 +39,13 @@ data:extend({
     take_result = "pm-personal-robostasher-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/icons/personal-robostasher-equipment.png",
+      filename = "__periodic-madness__/graphics/equipment/personal-robostasher-equipment.png",
       width = 64,
       height = 64,
       priority = "medium",
       hr_version =
       {
-        filename = "__periodic-madness__/graphics/icons/hr-personal-robostasher-equipment.png",
+        filename = "__periodic-madness__/graphics/equipment/hr-personal-robostasher-equipment.png",
         width = 128,
         height = 128,
         priority = "medium",
@@ -97,13 +97,13 @@ data:extend({
     take_result = "pm-personal-robostasher-mk2-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/icons/personal-robostasher-mk2-equipment.png",
+      filename = "__periodic-madness__/graphics/equipment/personal-robostasher-mk2-equipment.png",
       width = 64,
       height = 64,
       priority = "medium",
       hr_version =
       {
-        filename = "__periodic-madness__/graphics/icons/hr-personal-robostasher-mk2-equipment.png",
+        filename = "__periodic-madness__/graphics/equipment/hr-personal-robostasher-mk2-equipment.png",
         width = 128,
         height = 128,
         priority = "medium",
@@ -155,13 +155,13 @@ data:extend({
     take_result = "pm-personal-robocharger-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/icons/personal-robocharger-equipment.png",
+      filename = "__periodic-madness__/graphics/equipment/personal-robocharger-equipment.png",
       width = 64,
       height = 128,
       priority = "medium",
       hr_version =
       {
-        filename = "__periodic-madness__/graphics/icons/hr-personal-robocharger-equipment.png",
+        filename = "__periodic-madness__/graphics/equipment/hr-personal-robocharger-equipment.png",
         width = 128,
         height = 256,
         priority = "medium",
@@ -213,13 +213,13 @@ data:extend({
     take_result = "pm-personal-robocharger-mk2-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/icons/personal-robocharger-mk2-equipment.png",
+      filename = "__periodic-madness__/graphics/equipment/personal-robocharger-mk2-equipment.png",
       width = 64,
       height = 128,
       priority = "medium",
       hr_version =
       {
-        filename = "__periodic-madness__/graphics/icons/hr-personal-robocharger-mk2-equipment.png",
+        filename = "__periodic-madness__/graphics/equipment/hr-personal-robocharger-mk2-equipment.png",
         width = 128,
         height = 256,
         priority = "medium",
@@ -268,7 +268,7 @@ data:extend({
 
   {
     type = "battery-equipment",
-    name = "pm-lithium-ion-battery-equipment",
+    name = "pm-lithium-sulfur-battery-equipment",
     sprite =
     {
       filename = "__periodic-madness__/graphics/equipment/lithium-battery-equipment-icon.png",
@@ -300,16 +300,16 @@ data:extend({
   },
   {
     type = "battery-equipment",
-    name = "battery-mk2-equipment",
+    name = "pm-lithium-sulfur-battery-mk2-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment.png",
+      filename = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment-icon.png",
       width = 32,
       height = 64,
       priority = "medium",
       hr_version =
       {
-        filename = "__periodic-madness__/graphics/equipment/hr-lithium-battery-mk2-equipment.png",
+        filename = "__periodic-madness__/graphics/equipment/hr-lithium-battery-mk2-equipment-icon.png",
         width = 64,
         height = 128,
         priority = "medium",
@@ -332,12 +332,12 @@ data:extend({
   },
 })
 
-data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/icons/vanadium-battery-equipment.png"
-data.raw["item"]["battery-mk2-equipment"].icon = "__periodic-madness__/graphics/icons/vanadium-battery-mk2-equipment.png"
-data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__periodic-madness__/graphics/icons/vanadium-battery-equipment-icon.png"
-data.raw["battery-equipment"]["battery-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/icons/hr-vanadium-battery-equipment-icon.png"
-data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__periodic-madness__/graphics/icons/vanadium-battery-mk2-equipment-icon.png"
-data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/icons/hr-vanadium-battery-mk2-equipment-icon.png"
+data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment.png"
+data.raw["item"]["battery-mk2-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment.png"
+data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment-icon.png"
+data.raw["battery-equipment"]["battery-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/equipment/hr-vanadium-battery-equipment-icon.png"
+data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment-icon.png"
+data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/equipment/hr-vanadium-battery-mk2-equipment-icon.png"
 data.raw["battery-equipment"]["battery-equipment"].shape =
     {
       width = 2,
@@ -350,6 +350,10 @@ data.raw["battery-equipment"]["battery-mk2-equipment"].shape =
       height = 2,
       type = "full"
     }
+data.raw["battery-equipment"]["battery-equipment"].energy_source.buffer_capacity = "50MJ"
+data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.buffer_capacity = "200MJ"
+data.raw["battery-equipment"]["battery-equipment"].energy_source.output_flow_limit = "750kW"
+data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.output_flow_limit = "1200kW"
 
 data.raw["generator-equipment"]["fusion-reactor-equipment"].burner = 
 {
