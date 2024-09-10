@@ -1305,7 +1305,7 @@ data:extend({
     name = "pm-solar-panel-equipment-2",
     energy_required = 20,
     enabled = false,
-    subgroup = "equipment",
+    subgroup = "pm-modular-power",
     order = "b",
     ingredients =
     {
@@ -2558,6 +2558,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-battery-equipment",
+    subgroup = "pm-modular-storage",
+    order = "c",
     enabled = false,
     energy_required = 12.5,
     ingredients = 
@@ -2576,6 +2578,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-battery-mk2-equipment",
+    subgroup = "pm-modular-storage",
+    order = "d",
     enabled = false,
     energy_required = 12.5,
     ingredients = 

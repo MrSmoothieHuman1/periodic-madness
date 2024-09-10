@@ -1135,8 +1135,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2-icon.png",
     icon_size = 64,
     placed_as_equipment_result = "pm-solar-panel-equipment-2",
-    subgroup = "equipment",
-    order = "a",
+    subgroup = "pm-modular-power",
+    order = "b",
     stack_size = 20
   },
   {

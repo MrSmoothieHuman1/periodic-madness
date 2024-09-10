@@ -354,6 +354,10 @@ data.raw["battery-equipment"]["battery-equipment"].energy_source.buffer_capacity
 data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.buffer_capacity = "200MJ"
 data.raw["battery-equipment"]["battery-equipment"].energy_source.output_flow_limit = "750kW"
 data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.output_flow_limit = "1200kW"
+data.raw["item"]["battery-equipment"].subgroup = "pm-modular-storage"
+data.raw["item"]["battery-equipment"].order = "a"
+data.raw["item"]["battery-mk2-equipment"].subgroup = "pm-modular-storage"
+data.raw["item"]["battery-mk2-equipment"].order = "b"
 
 data.raw["generator-equipment"]["fusion-reactor-equipment"].burner = 
 {
@@ -363,5 +367,8 @@ data.raw["generator-equipment"]["fusion-reactor-equipment"].burner =
   burnt_inventory_size = 1,
 }
 data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "500kW"
+data.raw["item"]["fusion-reactor-equipment"].subgroup = "pm-modular-power"
+data.raw["item"]["fusion-reactor-equipment"].order = "c"
 
-
+data.raw["item"]["solar-panel-equipment"].subgroup = "pm-modular-power"
+data.raw["item"]["solar-panel-equipment"].order = "a"

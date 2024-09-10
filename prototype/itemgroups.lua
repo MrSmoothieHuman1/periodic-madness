@@ -957,8 +957,26 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-fuel-rods",
+    name = "pm-modular-equipment",
+    group = "combat",
+    order = "e",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-modular-power",
     group = "combat",
     order = "ea",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-modular-storage",
+    group = "combat",
+    order = "eb",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-fuel-rods",
+    group = "combat",
+    order = "ec",
   },
 })

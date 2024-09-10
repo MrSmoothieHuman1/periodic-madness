@@ -361,6 +361,8 @@ sanitize_recipe(recipes["solar-panel-equipment"]).ingredients =
   PM.ingredient("pm-lightweight-framing", 5),
   PM.ingredient("advanced-circuit", 2),
 }
+data.raw["recipe"]["solar-panel-equipment"].subgroup = "pm-modular-power"
+data.raw["recipe"]["solar-panel-equipment"].order = "a"
 sanitize_recipe(recipes["personal-roboport-equipment"]).ingredients =
 {
   PM.ingredient("pm-lightweight-framing", 12),
@@ -616,6 +618,8 @@ sanitize_recipe(recipes["battery-equipment"]).ingredients =
   PM.ingredient("pm-tungsten-plate", 3),
   PM.ingredient("advanced-circuit", 5)
 }
+data.raw["recipe"]["battery-equipment"].subgroup = "pm-modular-storage"
+data.raw["recipe"]["battery-equipment"].order = "a"
 sanitize_recipe(recipes["battery-mk2-equipment"]).ingredients =
 {
   PM.ingredient("battery-equipment", 5),
@@ -623,6 +627,9 @@ sanitize_recipe(recipes["battery-mk2-equipment"]).ingredients =
   PM.ingredient("pm-module-speed-light", 1),
   PM.ingredient("pm-module-efficiency-light", 1)
 }
+data.raw["recipe"]["battery-equipment"].subgroup = "pm-modular-storage"
+data.raw["recipe"]["battery-equipment"].order = "b"
+
 sanitize_recipe(recipes["beacon"]).ingredients =
 {
   PM.ingredient("pm-travelling-wave-amplifier-tube", 1),
