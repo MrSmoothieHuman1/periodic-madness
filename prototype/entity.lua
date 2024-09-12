@@ -2438,7 +2438,7 @@ data:extend({
       emissions_per_minute = 2.5,
       fuel_inventory_size = 1,
       fuel_category = "chemical",
-      light_flicker = false,
+      light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
     },
     crafting_categories = { "pm-crushing" },
     crafting_speed = 1,
@@ -4655,7 +4655,7 @@ data:extend({
         },
       }
     }
-  },
+  }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "furnace",
     name = "pm-CO2-nullifer",
@@ -4902,7 +4902,7 @@ data:extend({
     energy_usage = "1kW",
     crafting_speed = 1,
     energy_source = { type = "void" },
-    emissions_per_minute = -40 + -10,
+    emissions_per_minute = -50,
     animation =
     {
       layers =
@@ -4953,7 +4953,7 @@ data:extend({
         }
       }
     }
-  },
+  }--[[@as data.FurnacePrototype]],
   {
     type = "assembling-machine",
     name = "pm-washing-plant-2",
@@ -8238,7 +8238,7 @@ data:extend({
       {
         {
           position = { 0, 0.5 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         }
       },
       pipe_covers =
@@ -8685,19 +8685,19 @@ data:extend({
       {
         {
           position = { 0, 0 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 0, 0 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 0, 0 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { 0, 0 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         }
       }
     },
@@ -8876,51 +8876,51 @@ data:extend({
       {
         {
           position = { -2, -2 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 0, -2 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 2, -2 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 2, -2 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 2, 0 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 2, 2 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 2, 2 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { 0, 2 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { -2, 2 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { -2, 2 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         },
         {
           position = { -2, 0 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         },
         {
           position = { -2, -2 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         }
       },
       connection_patches_connected =
@@ -9371,7 +9371,7 @@ data:extend({
         pipe_connections = { { type = "output", position = { 3.5, 0.5 } } },
       },
     }
-  },
+  }--[[@as data.AssemblingMachinePrototype]],
   {
     type = "assembling-machine",
     name = "pm-electrolysis-plant-2",
@@ -9653,7 +9653,7 @@ data:extend({
         },
       }
     }
-  },
+  }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "solar-panel",
     name = "pm-walkable-solar-panel-1",
