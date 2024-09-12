@@ -506,7 +506,7 @@ data:extend({
     results =
     {
       PM.product("pm-processing-integrated-circuit-mold", 3),
-      PM.product_range("pm-advanced-integrated-circuits", 2, 3)
+      PM.product_range("pm-processing-integrated-circuits", 2, 3)
     }
   },
   {

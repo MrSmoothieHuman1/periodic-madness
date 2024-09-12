@@ -94,6 +94,7 @@ require("prototype.equipment")
 require("prototype.equipment-grid")
 
 require("compatibility.testcompat")
+require("compatibility.icon-badges")
 
 local resource_autoplace = require('resource-autoplace');
 local noise = require('noise');
