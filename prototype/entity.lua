@@ -3235,10 +3235,9 @@ data:extend({
           shift = util.by_pixel(-2, 0),
           hr_version =
           {
-            filename =
-            "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
-            width = 32 * 7,
-            height = 32 * 7,
+            filename ="__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler.png",
+            width = (32 * 7) * 2,
+            height = (32 * 7) * 2,
             frame_count = 32,
             line_length = 8,
             animation_speed = 0.25,

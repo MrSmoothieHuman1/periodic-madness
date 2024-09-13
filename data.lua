@@ -95,6 +95,7 @@ require("prototype.equipment-grid")
 
 require("compatibility.testcompat")
 require("compatibility.icon-badges")
+Ib_global.badge_vanilla = false
 
 local resource_autoplace = require('resource-autoplace');
 local noise = require('noise');
@@ -695,7 +696,8 @@ AcidPlant.animation = make_4way_animation_from_spritesheet({ layers =
       scale = 0.5
       }
   }
-}}),
+}})
+
 data:extend{(AcidPlant)}
 
 if data.raw["utility-constants"].default.select_slot_row_count == 10 then
