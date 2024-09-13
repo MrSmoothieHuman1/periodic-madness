@@ -71,7 +71,7 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-post-transition-metals-ore", 12),
       PM.ingredient("pm-acidic-water", 50, "fluid"),
     },
     enabled = false,
@@ -183,7 +183,7 @@ data:extend({
     energy_required = 3,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-post-transition-metals-ore", 12),
       PM.ingredient("pm-chromic-acid", 10, "fluid"),
     },
     enabled = false,

@@ -7,7 +7,6 @@ local purple_belt = {r = 0.616, g = 0.169, b = 0.878}
 local pm_lab_inputs =
 {
   "automation-science-pack",
-  "pm-alternative-science-pack",
   "military-science-pack",
   "logistic-science-pack",
   "pm-advanced-advanced-transition-metal-science-pack",
@@ -8343,7 +8342,7 @@ data:extend({
     max_health = 250,
     corpse = "nuclear-reactor-remnants",
     dying_explosion  = "nuclear-reactor-explosion",
-    consumption = "40MW",
+    consumption = "50MW",
     neighbour_bonus = 0.25,
     energy_source =
     {
@@ -10274,7 +10273,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 6
+      emissions_per_minute = 3
     },
     energy_usage = "350kW",
     crafting_categories = {"chemistry"},
@@ -10491,7 +10490,7 @@ data.raw["storage-tank"]["storage-tank"].fast_replaceable_group = "pm-storage-ta
 
 data.raw["container"]["steel-chest"].next_upgrade = "pm-stainless-steel-chest"
 
-data.raw["lab"]["lab"].inputs = { "automation-science-pack", "pm-alternative-science-pack", "logistic-science-pack",
+data.raw["lab"]["lab"].inputs = { "automation-science-pack", "logistic-science-pack",
   "military-science-pack", "pm-advanced-advanced-transition-metal-science-pack" }
 
 data.raw["solar-panel"]["solar-panel"].production = "120kW"

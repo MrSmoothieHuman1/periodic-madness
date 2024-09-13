@@ -387,23 +387,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-alternative-science-pack",
-    subgroup = "science-pack",
-    order = "b",
-    energy_required = 6,
-    ingredients =
-    {
-      PM.ingredient("automation-science-pack", 1),
-      PM.ingredient("steel-plate", 2)
-    },
-    enabled = false,
-    results =
-    {
-      PM.product("pm-alternative-science-pack", 1),
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-advanced-advanced-transition-metal-science-pack",
     subgroup = "science-pack",
     order = "c",
@@ -413,7 +396,7 @@ data:extend({
       PM.ingredient("pm-titanium-ore", 8),
       PM.ingredient("pm-tungsten-ore", 8),
       PM.ingredient("pm-silver-plate", 15),
-      { "copper-plate",      14 + 1 },
+      PM.ingredient("copper-plate", 15),
       PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,

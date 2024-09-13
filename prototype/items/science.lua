@@ -13,18 +13,6 @@ data:extend({
   },
   {
     type = "tool",
-    name = "pm-alternative-science-pack",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/alternative-recipe-pack.png",
-    subgroup = "science-pack",
-    order = "c",
-    stack_size = 200,
-    durability = 1,
-    durability_description_key = "description.science-pack-remaining-amount-key",
-    durability_description_value = "description.science-pack-remaining-amount-value"
-  },
-  {
-    type = "tool",
     name = "pm-advanced-advanced-transition-metal-science-pack",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/science/advanced-advanced-transition-metal-pack.png",
