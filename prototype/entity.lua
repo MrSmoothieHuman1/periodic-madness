@@ -3643,17 +3643,18 @@ data:extend({
           animation_speed = 0.25,
           scale = 1.15,
           shift = util.by_pixel(-2, 0),
-          hr_version =
-          {
-            filename ="__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler.png",
-            width = (32 * 7) * 2,
-            height = (32 * 7) * 2,
-            frame_count = 32,
-            line_length = 8,
-            animation_speed = 0.25,
-            shift = util.by_pixel(-2, 0),
-            scale = 0.575,
-          }
+          -- hr_version =
+          -- {
+          --   filename =
+          --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler.png",
+          --   width = 32 * 7 * 2,
+          --   height = 32 * 7 * 2,
+          --   frame_count = 32,
+          --   line_length = 8,
+          --   animation_speed = 0.25,
+          --   shift = util.by_pixel(-2, 0),
+          --   scale = 0.575,
+          -- }
         },
         {
           filename =
@@ -3665,19 +3666,19 @@ data:extend({
           shift = util.by_pixel(64, 10),
           draw_as_shadow = true,
           animation_speed = 0.25,
-          hr_version =
-          {
-            filename =
-            "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler-shadow.png",
-            width = (32 * 7) * 2,
-            height = (32 * 7) * 2,
-            frame_count = 32,
-            line_length = 8,
-            draw_as_shadow = true,
-            shift = util.by_pixel(64, 10),
-            animation_speed = 0.25,
-            scale = 0.575
-          }
+          -- hr_version =
+          -- {
+          --   filename =
+          --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler-shadow.png",
+          --   width = 32 * 7 * 2,
+          --   height = 32 * 7 * 2,
+          --   frame_count = 32,
+          --   line_length = 8,
+          --   draw_as_shadow = true,
+          --   shift = util.by_pixel(64, 10),
+          --   animation_speed = 0.25,
+          --   scale = 0.575
+          -- }
         }
       }
     },
