@@ -345,4 +345,20 @@ function PM.modify_nothing()
 end
 
 
+--MARK: Global variables:
+
+---@class PM.beltTier
+---@field [1] string Belt
+---@field [2] string Underground
+---@field [3] string Splitter
+
+---@type PM.beltTier[]
+PM.belts = {
+  {"transport-belt",                  "underground-belt",                 "splitter"                },
+  {"fast-transport-belt",             "fast-underground-belt",            "fast-splitter"           },
+  {"pm-advanced-transport-belt",      "pm-advanced-underground-belt",     "pm-advanced-splitter"    },
+  {"express-transport-belt",          "express-underground-belt",         "express-splitter"        },
+  {"pm-high-density-transport-belt",  "pm-high-density-underground-belt", "pm-high-density-splitter"},
+}
+
 return PM
