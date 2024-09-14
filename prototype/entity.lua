@@ -1684,7 +1684,7 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
-          width = 94,
+          width = 90,
           height = 86,
           shift = util.by_pixel(5, 12),
           scale = 0.5
@@ -1735,7 +1735,7 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
-          width = 94,
+          width = 90,
           height = 96,
           shift = util.by_pixel(5, -18),
           scale = 0.5
