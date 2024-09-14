@@ -964,10 +964,74 @@ data:extend({
     {
       PM.product("pm-chemical-plant-2", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-transport-belt",
+    enabled = false,
+    energy_required = 1,
+    ingredients =
+    {
+      PM.ingredient("pm-polyethylene-plastic", 2),
+      PM.ingredient("pm-solid-lubricant", 2),
+      PM.ingredient("pm-stainless-steel-alloy", 2),
+      PM.ingredient("fast-transport-belt", 1),
+    },
+    result = "pm-advanced-transport-belt"
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-underground-belt",
+    enabled = false,
+    energy_required = 1,
+    show_amount_in_title = true,
+    ingredients =
+    {
+      PM.ingredient("fast-underground-belt", 2),
+      PM.ingredient("pm-solid-lubricant", 4),
+      PM.ingredient("pm-stainless-steel-alloy", 2),
+    },
+    result = "pm-advanced-underground-belt",
+    result_count = 2
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-splitter",
+    enabled = false,
+    energy_required = 1,
+    ingredients =
+    {
+      PM.ingredient("fast-splitter", 2),
+      PM.ingredient("pm-polyethylene-plastic", 4),
+      PM.ingredient("pm-solid-lubricant", 6),
+      PM.ingredient("pm-mini-motor", 2)
+    },
+    result = "pm-advanced-splitter"
+  },
 
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["boiler"].enabled = false
 
 data.raw["recipe"]["centrifuge"].order = "x"
+
+data.raw["recipe"]["transport-belt"].subgroup = "pm-belts"
+data.raw["recipe"]["transport-belt"].order = "a"
+data.raw["recipe"]["underground-belt"].subgroup = "pm-undergrounds"
+data.raw["recipe"]["underground-belt"].order = "a"
+data.raw["recipe"]["splitter"].subgroup = "pm-splitters"
+data.raw["recipe"]["splitter"].order = "a"
+data.raw["recipe"]["fast-transport-belt"].subgroup = "pm-belts"
+data.raw["recipe"]["fast-transport-belt"].order = "b"
+data.raw["recipe"]["fast-underground-belt"].subgroup = "pm-undergrounds"
+data.raw["recipe"]["fast-underground-belt"].order = "b"
+data.raw["recipe"]["fast-splitter"].subgroup = "pm-splitters"
+data.raw["recipe"]["fast-splitter"].order = "b"
+data.raw["recipe"]["express-transport-belt"].subgroup = "pm-belts"
+data.raw["recipe"]["express-transport-belt"].order = "d"
+data.raw["recipe"]["express-underground-belt"].subgroup = "pm-undergrounds"
+data.raw["recipe"]["express-underground-belt"].order = "d"
+data.raw["recipe"]["express-splitter"].subgroup = "pm-splitters"
+data.raw["recipe"]["express-splitter"].order = "d"
+
+

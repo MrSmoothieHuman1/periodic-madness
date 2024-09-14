@@ -66,7 +66,14 @@ data.raw["technology"]["advanced-electronics"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
 }
 
-data.raw["technology"]["logistics-3"].prerequisites = { "logistics-2", "pm-lubricating-oils-recipes" }
+data.raw["technology"]["logistics-3"].icon = "__base__/graphics/technology/logistics-2.png"
+data.raw["technology"]["logistics-3"].prerequisites = {"logistics-2", "pm-lubricating-oils-recipes"}
+data.raw["technology"]["logistics-3"].effects = 
+{
+  PM.unlock_recipe("pm-advanced-transport-belt"),
+  PM.unlock_recipe("pm-advanced-underground-belt"),
+  PM.unlock_recipe("pm-advanced-splitter"),
+}
 data.raw["technology"]["logistics-3"].unit =
 {
   count = 150,
@@ -931,6 +938,8 @@ data.raw["technology"]["fusion-reactor-equipment"].unit.ingredients =
 data.raw["technology"]["fusion-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["fusion-reactor-equipment"].unit.time = 60
 data.raw["technology"]["fusion-reactor-equipment"].unit.count = 350
+
+data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"

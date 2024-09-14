@@ -14,6 +14,7 @@ my_data =
     {type = "ammo", name = "pm-high-density-shotgun-slug", ib_data = {ib_let_badge ="HSS", ib_img_corner = "top-left"} },
     {type = "ammo", name = "pm-geneva's-neglection-shotgun-slug", ib_data = {ib_let_badge ="GSS", ib_img_corner = "top-left"} },
     
+
     {type = "module", name = "speed-module", ib_data = {ib_let_badge ="S1"} },
     {type = "module", name = "speed-module-2", ib_data = {ib_let_badge ="S2"} },
     {type = "module", name = "speed-module-3", ib_data = {ib_let_badge ="S3"} },
@@ -26,6 +27,7 @@ my_data =
     {type = "module", name = "productivity-module-2", ib_data = {ib_let_badge ="P2"} },
     {type = "module", name = "productivity-module-3", ib_data = {ib_let_badge ="P3"} },
     {type = "module", name = "pm-productivity-module-4", ib_data = {ib_let_badge ="P4"} },
+
 
     {type = "item", name = "iron-plate", ib_data = {ib_let_badge ="Fe"} },
     {type = "item", name = "copper-plate", ib_data = {ib_let_badge ="Cu"} },
@@ -79,6 +81,22 @@ my_data =
     {type = "item", name = "pm-francium-209", ib_data = {ib_let_badge ="209"} },
     {type = "item", name = "pm-francium-210", ib_data = {ib_let_badge ="210"} },
     {type = "item", name = "pm-francium-211", ib_data = {ib_let_badge ="211"} },
+
+    {type = "item", name = "battery-equipment", ib_data = {ib_let_badge ="VB"} },
+    {type = "item", name = "battery-mk2-equipment", ib_data = {ib_let_badge ="VB2",  ib_img_corner = "top-left"} },
+    {type = "item", name = "pm-lithium-sulfur-battery-equipment", ib_data = {ib_let_badge ="LB"} },
+    {type = "item", name = "pm-lithium-sulfur-battery-mk2-equipment", ib_data = {ib_let_badge ="LB2",  ib_img_corner = "top-left"} },
+    {type = "item", name = "solar-panel-equipment", ib_data = {ib_let_badge ="SE"} },
+    {type = "item", name = "pm-solar-panel-equipment-2", ib_data = {ib_let_badge ="SE2",  ib_img_corner = "top-left"} },
+
+    {type = "item", name = "solar-panel", ib_data = {ib_let_badge ="SP"} },
+    {type = "item", name = "pm-solar-panel-2", ib_data = {ib_let_badge ="SP2",  ib_img_corner = "top-left"} },
+    {type = "item", name = "chemical-plant", ib_data = {ib_let_badge ="CP"} },
+    {type = "item", name = "pm-chemical-plant-2", ib_data = {ib_let_badge ="CP2",  ib_img_corner = "top-left"} },
+    {type = "item", name = "pm-washing-plant-1", ib_data = {ib_let_badge ="WP"} },
+    {type = "item", name = "pm-washing-plant-2", ib_data = {ib_let_badge ="WP2",  ib_img_corner = "top-left"} },
+    {type = "item", name = "pm-crusher-1", ib_data = {ib_let_badge ="CR"} },
+    {type = "item", name = "pm-crusher-2", ib_data = {ib_let_badge ="CR2",  ib_img_corner = "top-left"} },
 
 
     {type = "fluid", name = "pm-francium", ib_data = {ib_let_badge ="Fr"} },

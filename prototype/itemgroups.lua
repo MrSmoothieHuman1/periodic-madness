@@ -979,4 +979,23 @@ data:extend({
     group = "combat",
     order = "ec",
   },
+
+  {
+    type = "item-subgroup",
+    name = "pm-belts",
+    group = "logistics",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-undergrounds",
+    group = "logistics",
+    order = "ba"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-splitters",
+    group = "logistics",
+    order = "bb"
+  },
 })

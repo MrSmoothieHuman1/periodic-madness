@@ -104,34 +104,34 @@ sanitize_recipe(recipes["fast-transport-belt"]).ingredients =
 sanitize_recipe(recipes["fast-underground-belt"]).ingredients =
 {
   PM.ingredient("underground-belt", 2),
-  PM.ingredient("pm-brass-cog", 10)
+  PM.ingredient("pm-brass-cog", 8),
 }
 sanitize_recipe(recipes["fast-splitter"]).ingredients =
 {
   PM.ingredient("splitter", 1),
-  PM.ingredient("pm-brass-cog", 2),
-  PM.ingredient("electronic-circuit", 5)
+  PM.ingredient("electronic-circuit", 3),
+  PM.ingredient("pm-silver-plate", 2),
+  PM.ingredient("pm-brass-cog", 2)
 }
 sanitize_recipe(recipes["express-transport-belt"]).ingredients =
 {
-  PM.ingredient("pm-polyethylene-plastic", 2),
-  PM.ingredient("pm-solid-lubricant", 2),
-  PM.ingredient("pm-stainless-steel-alloy", 2),
   PM.ingredient("fast-transport-belt", 1),
+  PM.ingredient("low-density-structure", 2),
+  PM.ingredient("processing-unit", 3),
+  PM.ingredient("pm-heavy-lubricant", 5, "fluid")
 }
 sanitize_recipe(recipes["express-underground-belt"]).ingredients =
 {
-  PM.ingredient("express-transport-belt", 1),
   PM.ingredient("fast-underground-belt", 2),
-  PM.ingredient("pm-solid-lubricant", 4)
+  PM.ingredient("low-density-structure", 4),
+  PM.ingredient("pm-heavy-lubricant", 10, "fluid")
 }
 sanitize_recipe(recipes["express-splitter"]).ingredients =
 {
-  PM.ingredient("express-transport-belt", 2),
-  PM.ingredient("pm-stainless-steel-alloy", 2),
-  PM.ingredient("pm-polyethylene-plastic", 4),
-  PM.ingredient("pm-solid-lubricant", 6),
-  PM.ingredient("pm-mini-motor", 2)
+  PM.ingredient("fast-splitter", 1),
+  PM.ingredient("low-density-structure", 2),
+  PM.ingredient("processing-unit", 6),
+  PM.ingredient("pm-heavy-lubricant", 15, "fluid")
 }
 sanitize_recipe(recipes["splitter"]).ingredients =
 {

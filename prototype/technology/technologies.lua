@@ -335,25 +335,27 @@ data:extend({
     name = "pm-logistics-4",
     icon_size = 256,
     icon_mipmaps = 4,
-    icon = "__periodic-madness__/graphics/technology/logistics-4.png",
+    icon = "__base__/graphics/technology/logistics-3.png",
     effects =
     {
-      PM.unlock_recipe("pm-high-density-transport-belt"),
-      PM.unlock_recipe("pm-high-density-underground-belt"),
-      PM.unlock_recipe("pm-high-density-splitter")
+      PM.unlock_recipe("express-transport-belt"),
+      PM.unlock_recipe("express-underground-belt"),
+      PM.unlock_recipe("express-splitter")
     },
-    prerequisites = {"logistics-3", "low-density-structure", "advanced-electronics-2", "production-science-pack" },
+    prerequisites = {"logistics-3", "advanced-electronics-2", "production-science-pack" },
     unit =
     {
       count = 350,
       ingredients =
-      {
+      {  
         PM.ingredient("automation-science-pack", 1),
         PM.ingredient("logistic-science-pack", 1),
+        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
         PM.ingredient("chemical-science-pack", 1),
-        PM.ingredient("production-science-pack", 1)
+        PM.ingredient("pm-alkali-metal-science-pack", 1),
+        PM.ingredient("pm-metalloid-science-pack", 1)
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -3619,6 +3621,32 @@ data:extend({
         PM.ingredient("chemical-science-pack", 1),
         PM.ingredient("pm-alkali-metal-science-pack", 1),
         PM.ingredient("pm-metalloid-science-pack", 1),
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-logistics-4",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    icon = "__base__/graphics/technology/logistics-3.png",
+    effects =
+    {
+      PM.unlock_recipe("express-transport-belt"),
+      PM.unlock_recipe("express-underground-belt"),
+      PM.unlock_recipe("express-splitter")
+    },
+    prerequisites = {"logistics-3", "low-density-structure", "advanced-electronics-2", "production-science-pack" },
+    unit =
+    {
+      count = 600,
+      ingredients =
+      {
+        PM.ingredient("automation-science-pack", 1),
+        PM.ingredient("logistic-science-pack", 1),
+        PM.ingredient("chemical-science-pack", 1),
+        PM.ingredient("production-science-pack", 1)
       },
       time = 80
     }

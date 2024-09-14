@@ -556,7 +556,37 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/chemical-plant-2.png",
     place_result = "pm-chemical-plant-2",
     stack_size = 50
-  }
+  },
+  {
+    type = "item",
+    name = "pm-advanced-transport-belt",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/fast-transport-belt.png",
+    subgroup = "pm-belts",
+    order = "c",
+    place_result = "pm-advanced-transport-belt",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-advanced-underground-belt",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/fast-underground-belt.png",
+    subgroup = "pm-undergrounds",
+    order = "c",
+    place_result = "pm-advanced-underground-belt",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-advanced-splitter",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/fast-splitter.png",
+    subgroup = "pm-splitters",
+    order = "c",
+    place_result = "pm-advanced-splitter",
+    stack_size = 100
+  },
 })
 
 local OilRefinerySubgroup = data.raw["item"]["oil-refinery"]
@@ -577,3 +607,27 @@ data.raw["item"]["offshore-pump"].subgroup = "pm-water-machine"
 data.raw["item"]["offshore-pump"].order = "b"
 
 data.raw["item"]["beacon"].stack_size = 25
+
+data.raw["item"]["fast-transport-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+data.raw["item"]["fast-underground-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-underground-belt.png"
+data.raw["item"]["fast-splitter"].icon = "__periodic-madness__/graphics/icons/buildings/fast-splitter.png"
+
+data.raw["item"]["transport-belt"].subgroup = "pm-belts"
+data.raw["item"]["transport-belt"].order = "a"
+data.raw["item"]["underground-belt"].subgroup = "pm-undergrounds"
+data.raw["item"]["underground-belt"].order = "a"
+data.raw["item"]["splitter"].subgroup = "pm-splitters"
+data.raw["item"]["splitter"].order = "a"
+data.raw["item"]["fast-transport-belt"].subgroup = "pm-belts"
+data.raw["item"]["fast-transport-belt"].order = "b"
+data.raw["item"]["fast-underground-belt"].subgroup = "pm-undergrounds"
+data.raw["item"]["fast-underground-belt"].order = "b"
+data.raw["item"]["fast-splitter"].subgroup = "pm-splitters"
+data.raw["item"]["fast-splitter"].order = "b"
+data.raw["item"]["express-transport-belt"].subgroup = "pm-belts"
+data.raw["item"]["express-transport-belt"].order = "d"
+data.raw["item"]["express-underground-belt"].subgroup = "pm-undergrounds"
+data.raw["item"]["express-underground-belt"].order = "d"
+data.raw["item"]["express-splitter"].subgroup = "pm-splitters"
+data.raw["item"]["express-splitter"].order = "d"
+
