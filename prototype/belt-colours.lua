@@ -10,7 +10,7 @@ local splitters = data.raw["splitter"]
 local function belt_animation_set(colour)
 	return {
 		animation_set = {
-			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/transport/belt.png",
+			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/belt.png",
 			priority = "extra-high",
 			width = 64,
 			height = 64,
@@ -18,7 +18,7 @@ local function belt_animation_set(colour)
 			direction_count = 20,
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/transport/hr-belt.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/hr-belt.png",
 				priority = "extra-high",
 				width = 128,
 				height = 128,
@@ -36,14 +36,14 @@ local function underground_structure(colour)
 	return {
 		direction_in = {
 			sheet = {
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/underground-structure.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
 				priority = "extra-high",
 				width = 96,
 				height = 96,
 				y = 96,
 				hr_version =
 				{
-					filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/hr-underground-structure.png",
+					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -56,13 +56,13 @@ local function underground_structure(colour)
 		{
 			sheet =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/underground-structure.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
 				priority = "extra-high",
 				width = 96,
 				height = 96,
 				hr_version =
 				{
-					filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/hr-underground-structure.png",
+					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height =192,
@@ -74,14 +74,14 @@ local function underground_structure(colour)
 		{
 			sheet =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/underground-structure.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
 				priority = "extra-high",
 				width = 96,
 				height = 96,
 				y = 96*3,
 				hr_version =
 				{
-					filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/hr-underground-structure.png",
+					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -94,14 +94,14 @@ local function underground_structure(colour)
 		{
 			sheet =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/underground-structure.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
 				priority = "extra-high",
 				width = 96,
 				height = 96,
 				y = 96*2,
 				hr_version =
 				{
-					filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/hr-underground-structure.png",
+					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
 					priority = "extra-high",
 					width = 192,
 					height = 192,
@@ -115,13 +115,13 @@ local function underground_structure(colour)
 		-- {
 		-- 	sheet =
 		-- 	{
-		-- 		filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/underground-structure-back-patch.png",
+		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground-structure-back-patch.png",
 		-- 		priority = "extra-high",
 		-- 		width = 96,
 		-- 		height = 96,
 		-- 		hr_version =
 		-- 		{
-		-- 			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/hr-underground-structure-back-patch.png",
+		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/hr-underground-structure-back-patch.png",
 		-- 			priority = "extra-high",
 		-- 			width = 192,
 		-- 			height = 192,
@@ -133,13 +133,13 @@ local function underground_structure(colour)
 		-- {
 		-- 	sheet =
 		-- 	{
-		-- 		filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/underground-structure-front-patch.png",
+		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground-structure-front-patch.png",
 		-- 		priority = "extra-high",
 		-- 		width = 96,
 		-- 		height = 96,
 		-- 		hr_version =
 		-- 		{
-		-- 			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/hr-underground-structure-front-patch.png",
+		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/hr-underground-structure-front-patch.png",
 		-- 			priority = "extra-high",
 		-- 			width = 192,
 		-- 			height = 192,
@@ -156,7 +156,7 @@ function splitter_structure(colour)
 	return {
 		north =
 		{
-			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/north.png",
+			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/north.png",
 			frame_count = 32,
 			line_length = 8,
 			priority = "extra-high",
@@ -165,7 +165,7 @@ function splitter_structure(colour)
 			shift = util.by_pixel(6, 0),
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/hr-north.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-north.png",
 				frame_count = 32,
 				line_length = 8,
 				priority = "extra-high",
@@ -177,7 +177,7 @@ function splitter_structure(colour)
 		},
 		east =
 		{
-			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/east.png",
+			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/east.png",
 			frame_count = 32,
 			line_length = 8,
 			priority = "extra-high",
@@ -186,7 +186,7 @@ function splitter_structure(colour)
 			shift = util.by_pixel(4, 12),
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/hr-east.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-east.png",
 				frame_count = 32,
 				line_length = 8,
 				priority = "extra-high",
@@ -198,7 +198,7 @@ function splitter_structure(colour)
 		},
 		south =
 		{
-			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/south.png",
+			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/south.png",
 			frame_count = 32,
 			line_length = 8,
 			priority = "extra-high",
@@ -207,7 +207,7 @@ function splitter_structure(colour)
 			shift = util.by_pixel(4, 0),
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/hr-south.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-south.png",
 				frame_count = 32,
 				line_length = 8,
 				priority = "extra-high",
@@ -219,7 +219,7 @@ function splitter_structure(colour)
 		},
 		west =
 		{
-			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/west.png",
+			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/west.png",
 			frame_count = 32,
 			line_length = 8,
 			priority = "extra-high",
@@ -228,7 +228,7 @@ function splitter_structure(colour)
 			shift = util.by_pixel(6, 12),
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/hr-west.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-west.png",
 				frame_count = 32,
 				line_length = 8,
 				priority = "extra-high",
@@ -248,7 +248,7 @@ function splitter_patch(colour)
 		north = util.empty_sprite(),
 		east =
 		{
-			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/east-top_patch.png",
+			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/east-top_patch.png",
 			frame_count = 32,
 			line_length = 8,
 			priority = "extra-high",
@@ -257,7 +257,7 @@ function splitter_patch(colour)
 			shift = util.by_pixel(4, -20),
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/hr-east-top_patch.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-east-top_patch.png",
 				frame_count = 32,
 				line_length = 8,
 				priority = "extra-high",
@@ -270,7 +270,7 @@ function splitter_patch(colour)
 		south = util.empty_sprite(),
 		west =
 		{
-			filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/west-top_patch.png",
+			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/west-top_patch.png",
 			frame_count = 32,
 			line_length = 8,
 			priority = "extra-high",
@@ -279,7 +279,7 @@ function splitter_patch(colour)
 			shift = util.by_pixel(6, -18),
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/entities/belt-colours/"..colour.."/splitter/hr-west-top_patch.png",
+				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-west-top_patch.png",
 				frame_count = 32,
 				line_length = 8,
 				priority = "extra-high",
