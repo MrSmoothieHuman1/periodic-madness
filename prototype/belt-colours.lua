@@ -320,7 +320,7 @@ function set_variations(pictures, type, colour)
 	pictures.mipmap_count = 4
 end
 
----@param item data.ItemPrototype
+---@param item data.ItemPrototype|data.EntityPrototype
 ---@param type "transport"|"splitter"|"underground"
 ---@param colour PM.belt_colours
 function set_icon(item, type, colour)
@@ -372,6 +372,10 @@ local function handle_tier(beltTier, colour)
 	underground.structure = underground_structure(colour)
 	splitter.structure = splitter_structure(colour)
 	splitter.structure_patch = splitter_patch(colour)
+
+	set_icon(belt, "transport", colour)
+	set_icon(underground, "underground", colour)
+	set_icon(splitter, "splitter", colour)
 
 	set_icon(belt_item, "transport", colour)
 	set_icon(underground_item, "underground", colour)
