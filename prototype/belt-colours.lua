@@ -1,9 +1,6 @@
 local PM = require("__periodic-madness__/library")
 
-local belts = data.raw["transport-belt"]
-local undergrounds = data.raw["underground-belt"]
-local splitters = data.raw["splitter"]
-
+--MARK: Belt sets
 
 ---@param colour PM.belt_colours
 ---@return data.TransportBeltAnimationSetWithCorners
@@ -292,6 +289,70 @@ function splitter_patch(colour)
 	}--[[@as data.Animation4Way]]
 end
 
+--MARK: Icon manipulation
+
+---@param pictures data.Sprite[]|data.SpriteSheet|data.Sprite
+---@param type "transport"|"splitter"|"underground"
+---@param colour PM.belt_colours
+function set_variations(pictures, type, colour)
+	--- Handle every variations in an array of sprites
+	if pictures[1] then
+		for _, picture in pairs(pictures) do
+			set_variations(picture, type, colour)
+		end
+		return
+
+	--- Handle only the first layer
+	elseif pictures.layers then
+		set_variations(pictures.layers[1], type, colour)
+		return
+	end
+
+	--- Clear any old data
+	for key in pairs(pictures--[[@as table<any,any>]]) do
+		pictures[key] = nil
+	end
+
+	---@cast pictures data.SpriteParameters
+	pictures.filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/"..type.."/icon.png"
+	pictures.size = 64
+	pictures.scale = 0.25
+	pictures.mipmap_count = 4
+end
+
+---@param item data.ItemPrototype
+---@param type "transport"|"splitter"|"underground"
+---@param colour PM.belt_colours
+function set_icon(item, type, colour)
+	if not item.icons then
+		item.icons = {}
+		item.icon = nil
+		item.icon_size = nil
+		item.icon_mipmaps = nil
+	end
+
+	item.icons[1] = {
+		icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/"..type.."/icon.png",
+		icon_size = 64,
+		scale = 0.5,
+		icon_mipmaps = 4
+	}
+
+	local pictures = item.pictures
+	if pictures then
+		if pictures.sheet then
+			pictures = pictures.sheet
+			item.pictures = pictures
+		end
+
+		set_variations(pictures, type, colour)
+	end
+end
+
+local belts = data.raw["transport-belt"]
+local undergrounds = data.raw["underground-belt"]
+local splitters = data.raw["splitter"]
+local items = data.raw["item"]
 
 ---@param beltTier any
 ---@param colour PM.belt_colours
@@ -300,6 +361,10 @@ local function handle_tier(beltTier, colour)
 	local underground = undergrounds[beltTier[2]]
 	local splitter = splitters[beltTier[3]]
 
+	local belt_item = items[beltTier[1]]
+	local underground_item = items[beltTier[2]]
+	local splitter_item = items[beltTier[3]]
+
 	belt.belt_animation_set = belt_animation_set(colour)
 	underground.belt_animation_set = belt_animation_set(colour)
 	splitter.belt_animation_set = belt_animation_set(colour)
@@ -307,6 +372,10 @@ local function handle_tier(beltTier, colour)
 	underground.structure = underground_structure(colour)
 	splitter.structure = splitter_structure(colour)
 	splitter.structure_patch = splitter_patch(colour)
+
+	set_icon(belt_item, "transport", colour)
+	set_icon(underground_item, "underground", colour)
+	set_icon(splitter_item, "splitter", colour)
 end
 
 for tier, beltTier in pairs(PM.belts) do
