@@ -112,13 +112,13 @@ local function underground_structure(colour)
 		-- {
 		-- 	sheet =
 		-- 	{
-		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground-structure-back-patch.png",
+		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure-back-patch.png",
 		-- 		priority = "extra-high",
 		-- 		width = 96,
 		-- 		height = 96,
 		-- 		hr_version =
 		-- 		{
-		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/hr-underground-structure-back-patch.png",
+		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure-back-patch.png",
 		-- 			priority = "extra-high",
 		-- 			width = 192,
 		-- 			height = 192,
@@ -130,13 +130,13 @@ local function underground_structure(colour)
 		-- {
 		-- 	sheet =
 		-- 	{
-		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground-structure-front-patch.png",
+		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure-front-patch.png",
 		-- 		priority = "extra-high",
 		-- 		width = 96,
 		-- 		height = 96,
 		-- 		hr_version =
 		-- 		{
-		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/hr-underground-structure-front-patch.png",
+		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure-front-patch.png",
 		-- 			priority = "extra-high",
 		-- 			width = 192,
 		-- 			height = 192,
