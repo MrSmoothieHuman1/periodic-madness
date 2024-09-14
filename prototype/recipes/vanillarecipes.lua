@@ -115,20 +115,20 @@ sanitize_recipe(recipes["fast-splitter"]).ingredients =
 }
 sanitize_recipe(recipes["express-transport-belt"]).ingredients =
 {
-  PM.ingredient("fast-transport-belt", 1),
+  PM.ingredient("pm-advanced-transport-belt", 1),
   PM.ingredient("low-density-structure", 2),
   PM.ingredient("processing-unit", 3),
   PM.ingredient("pm-heavy-lubricant", 5, "fluid")
 }
 sanitize_recipe(recipes["express-underground-belt"]).ingredients =
 {
-  PM.ingredient("fast-underground-belt", 2),
+  PM.ingredient("pm-advanced-underground-belt", 2),
   PM.ingredient("low-density-structure", 4),
   PM.ingredient("pm-heavy-lubricant", 10, "fluid")
 }
 sanitize_recipe(recipes["express-splitter"]).ingredients =
 {
-  PM.ingredient("fast-splitter", 1),
+  PM.ingredient("pm-advanced-splitter", 1),
   PM.ingredient("low-density-structure", 2),
   PM.ingredient("processing-unit", 6),
   PM.ingredient("pm-heavy-lubricant", 15, "fluid")

@@ -37,7 +37,7 @@ Date: 2024-08-09
     - Changed wiring to only need the metal and not another prerequisite item.
     - Gave big and behemoth biters fire resistance, and gave big and behemoth spitters acid/poison resistances.
     - Nerfed flamethrowers. Plus changed their usable fluids.
-    - Buffed tier 4 producitvity modules to have 14% productivity instead of 12.
+    - Buffed tier 4 producitvity modules to have 14% productivity instead of 12%.
     - Remade molybdenite powder's icon.
     - Rerendered almost every item in the game to use HDRI's. WHERE HAVE THESE BEEN MY ENTIRE LIFE SWEET GOOGLILY
     - Changed stainless steel to also take molybdenum.
@@ -78,6 +78,7 @@ Date: 2024-08-09
     - Buffed Modular armor's grid size to 7x7, Power armors to 10x10 and Power armor MK2's to 15x15.
     - Buffed Spidertron's equipmen grid to 14x8.
     - Changed Polonium reactors neighbour bonus to 25%.
+    - Buffed max length of the max tier undergrounds to 12.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

@@ -1343,7 +1343,7 @@ data:extend({
     max_health = 250,
     corpse = "express-underground-belt-remnants",
     dying_explosion = "express-underground-belt-explosion",
-    max_distance = 11,
+    max_distance = 15,
     map_color = purple_belt,
     underground_sprite =
     {
@@ -11269,3 +11269,4 @@ data.raw["splitter"]["fast-splitter"].map_color = orange_belt
 data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
 data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
 data.raw["splitter"]["express-splitter"].speed = 0.125
+data.raw["splitter"]["express-splitter"].max_length = 12
