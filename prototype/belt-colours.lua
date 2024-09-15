@@ -376,6 +376,10 @@ local function handle_tier(beltTier, colour)
 	underground.corpse = "pm-"..colour.."-underground-remnant"
 	splitter.corpse = "pm-"..colour.."-splitter-remnant"
 
+	belt.dying_explosion = "pm-"..colour.."-transport-explosion"
+	underground.dying_explosion = "pm-"..colour.."-underground-explosion"
+	splitter.dying_explosion = "pm-"..colour.."-splitter-explosion"
+
 	set_icon(belt, "transport", colour)
 	set_icon(underground, "underground", colour)
 	set_icon(splitter, "splitter", colour)
@@ -527,6 +531,656 @@ local function make_remnants(colour, order)
 	}--[[@as data.CorpsePrototype[] ]]
 end
 
+local sounds = require("__base__.prototypes.entity.sounds")
+local explosion_animations = require("__base__.prototypes.entity.explosion-animations")
+
+---@param colour PM.belt_colours
+---@param order {[1]:string,[2]:string,[3]:string}
+---@return data.EntityPrototype[]
+local function make_explosions(colour, order)
+	return {
+		{
+			type = "explosion",
+			name = "pm-"..colour.."-transport-explosion",
+			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/icon.png",
+			icon_size = 64, icon_mipmaps = 4,
+			flags = {"not-on-map", "hidden"},
+			subgroup = "belt-explosions",
+			order = order[1],
+			height = 0,
+			animations = util.empty_sprite(),
+			--light = default_light(20),
+			smoke = "smoke-fast",
+			smoke_count = 2,
+			smoke_slow_down_factor = 1,
+			sound = sounds.small_explosion(0.5),
+			created_effect = { type = "direct", action_delivery = { type = "instant", target_effects = {
+				{
+					type = "create-particle",
+					repeat_count = 1,
+					particle_name = "pm-"..colour.."-transport-metal-particle-medium",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.1,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.09,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.04,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 4,
+					particle_name = "pm-"..colour.."-transport-metal-particle-small",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.1,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.071,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.03,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 5,
+					particle_name = "pm-"..colour.."-transport-mechanical-component-particle-medium",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.1,
+					initial_height_deviation = 0.32,
+					initial_vertical_speed = 0.041,
+					initial_vertical_speed_deviation = 0.042,
+					speed_from_center = 0.01,
+					speed_from_center_deviation = 0.05
+				}
+			}}}
+		},
+		{
+			type = "explosion",
+			name = "pm-"..colour.."-underground-explosion",
+			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/icon.png",
+			icon_size = 64, icon_mipmaps = 4,
+			flags = {"not-on-map", "hidden"},
+			subgroup = "belt-explosions",
+			order = order[2],
+			height = 0,
+			animations = explosion_animations.small_explosion(),
+			--light = default_light(20),
+			smoke = "smoke-fast",
+			smoke_count = 2,
+			smoke_slow_down_factor = 1,
+			sound = sounds.small_explosion(0.5),
+			created_effect = { type = "direct", action_delivery = { type = "instant", target_effects = {
+				{
+					type = "create-particle",
+					repeat_count = 10,
+					particle_name = "pm-"..colour.."-underground-metal-particle-medium",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.2,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.081,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.03,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 25,
+					particle_name = "pm-"..colour.."-underground-metal-particle-small",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.2,
+					initial_height_deviation = 0.43,
+					initial_vertical_speed = 0.087,
+					initial_vertical_speed_deviation = 0.048,
+					speed_from_center = 0.05,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 2,
+					particle_name = "pm-"..colour.."-underground-metal-particle-medium-colored",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.2,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.042,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.02,
+					speed_from_center_deviation = 0.05
+				}
+			}}}
+		},
+		{
+			type = "explosion",
+			name = "pm-"..colour.."-splitter-explosion",
+			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/icon.png",
+			icon_size = 64, icon_mipmaps = 4,
+			flags = {"not-on-map", "hidden"},
+			subgroup = "belt-explosions",
+			order = order[3],
+			height = 0,
+			animations = explosion_animations.small_explosion(),
+			--light = default_light(20),
+			smoke = "smoke-fast",
+			smoke_count = 2,
+			smoke_slow_down_factor = 1,
+			sound = sounds.small_explosion(0.5),
+			created_effect = { type = "direct", action_delivery = { type = "instant", target_effects = {
+				{
+					type = "create-particle",
+					repeat_count = 13,
+					particle_name = "pm-"..colour.."-splitter-metal-particle-medium",
+					offset_deviation = { { -0.5, -0.5977 }, { 0.5, 0.5977 } },
+					initial_height = 0.3,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.047,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.05,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 25,
+					particle_name = "pm-"..colour.."-splitter-metal-particle-small",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.6,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.049,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.05,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 3,
+					particle_name = "pm-"..colour.."-splitter-long-metal-particle-medium",
+					offset_deviation = { { -0.6953, -0.5977 }, { 0.6953, 0.5977 } },
+					initial_height = 0.4,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.072,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.03,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 3,
+					particle_name = "pm-"..colour.."-splitter-metal-particle-big",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.2,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.05,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.05,
+					speed_from_center_deviation = 0.05
+				},
+				{
+					type = "create-particle",
+					repeat_count = 3,
+					particle_name = "pm-"..colour.."-splitter-mechanical-component-particle-medium",
+					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+					initial_height = 0.2,
+					initial_height_deviation = 0.5,
+					initial_vertical_speed = 0.029,
+					initial_vertical_speed_deviation = 0.05,
+					speed_from_center = 0.04,
+					speed_from_center_deviation = 0.05
+				}
+			}}}
+		}
+	}--[[@as data.EntityPrototype[] ]]
+end
+
+---MARK: Particle.lua
+--#region Stolen from particles.lua
+local function default_ended_in_water_trigger_effect()
+  return
+  {
+    {
+      type = "create-particle",
+      probability = 1,
+      affects_target = false,
+      show_in_tooltip = false,
+      particle_name = "deep-water-particle",
+      offset_deviation = { { -0.05, -0.05 }, { 0.05, 0.05 } },
+      tile_collision_mask = nil,
+      initial_height = 0,
+      initial_height_deviation = 0.02,
+      initial_vertical_speed = 0.05,
+      initial_vertical_speed_deviation = 0.05,
+      speed_from_center = 0.01,
+      speed_from_center_deviation = 0.006,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      tail_length = 2,
+      tail_length_deviation = 1,
+      tail_width = 3
+    },
+    {
+      type = "create-particle",
+      repeat_count = 10,
+      repeat_count_deviation = 6,
+      probability = 0.03,
+      affects_target = false,
+      show_in_tooltip = false,
+      particle_name = "water-particle",
+      offsets =
+      {
+        { 0, 0 },
+        { 0.01563, -0.09375 },
+        { 0.0625, 0.09375 },
+        { -0.1094, 0.0625 }
+      },
+      offset_deviation = { { -0.2969, -0.1992 }, { 0.2969, 0.1992 } },
+      tile_collision_mask = nil,
+      initial_height = 0,
+      initial_height_deviation = 0.02,
+      initial_vertical_speed = 0.053,
+      initial_vertical_speed_deviation = 0.005,
+      speed_from_center = 0.02,
+      speed_from_center_deviation = 0.006,
+      frame_speed = 1,
+      frame_speed_deviation = 0,
+      tail_length = 9,
+      tail_length_deviation = 0,
+      tail_width = 1
+    },
+    {
+      type = "play-sound",
+      sound = sounds.small_splash
+    }
+  }--[[@as data.TriggerEffect]]
+end
+local function default_smoke_trigger_effect()
+  return
+  {
+    type = "create-trivial-smoke",
+    smoke_name = "smoke-explosion-particle",
+    starting_frame_deviation = 5,
+    starting_frame_speed_deviation = 5,
+    offset_deviation = {{-0.06, -0.06}, {0.06, 0.06}},
+    speed_from_center = 0.007
+  }--[[@as data.TriggerEffect]]
+end
+local function small_smoke_trigger_effect()
+  return
+  {
+    type = "create-trivial-smoke",
+    smoke_name = "smoke-explosion-particle-small",
+    starting_frame_deviation = 0,
+    starting_frame_speed_deviation = 0,
+    offset_deviation = {{-0.03, -0.03}, {0.03, 0.03}},
+    speed_from_center = nil
+  }--[[@as data.TriggerEffect]]
+end
+local function shadowtint()
+	return {r = 0, g = 0, b = 0}
+end
+
+local particle_animations = {}
+---@param options {tint:Color,shift:Vector}
+---@return data.SpriteSheet
+function particle_animations.get_metal_particle_small_pictures(options)
+  local options = options or {}
+  return
+  {
+		filename = "__base__/graphics/particle/metal-particle/metal-particle-small.png",
+		priority = "extra-high",
+		width = 10,
+		height = 8,
+		tint = options.tint,
+		frame_count = 12,
+		animation_speed = 0.5,
+		variation_count = 10,
+		shift = util.add_shift(util.by_pixel(2.5,-0.5), options.shift),
+		hr_version =
+		{
+			filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-small.png",
+			priority = "extra-high",
+			width = 20,
+			height = 16,
+			tint = options.tint,
+			frame_count = 12,
+			animation_speed = 0.5,
+			variation_count = 10,
+			shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
+			scale = 0.5
+		}
+  }
+end
+---@param options {tint:Color,shift:Vector}
+---@return data.SpriteSheet
+function particle_animations.get_mechanical_component_particle_medium_pictures(options)
+  local options = options or {}
+  return
+	{
+		filename = "__base__/graphics/particle/mechanical-components-particle/mechanical-components-particle-medium.png",
+		priority = "extra-high",
+		width = 12,
+		height = 10,
+		tint = options.tint,
+		frame_count = 12,
+		animation_speed = 0.5,
+		variation_count = 10,
+		shift = util.add_shift(util.by_pixel(2.5,-0.5), options.shift),
+		hr_version =
+		{
+			filename = "__base__/graphics/particle/mechanical-components-particle/hr-mechanical-components-particle-medium.png",
+			priority = "extra-high",
+			width = 22,
+			height = 22,
+			tint = options.tint,
+			frame_count = 12,
+			animation_speed = 0.5,
+			variation_count = 10,
+			shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
+			scale = 0.5
+		}
+	}
+end
+---@param options {tint:Color,shift:Vector}
+---@return data.SpriteSheet
+function particle_animations.get_metal_particle_medium_pictures(options)
+  local options = options or {}
+  return
+  {
+		filename = "__base__/graphics/particle/metal-particle/metal-particle-medium.png",
+		priority = "extra-high",
+		width = 16,
+		height = 14,
+		tint = options.tint,
+		frame_count = 12,
+		animation_speed = 0.5,
+		variation_count = 10,
+		shift = util.add_shift(util.by_pixel(2.5,0.5), options.shift),
+		hr_version =
+		{
+			filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-medium.png",
+			priority = "extra-high",
+			width = 30,
+			height = 30,
+			tint = options.tint,
+			frame_count = 12,
+			animation_speed = 0.5,
+			variation_count = 10,
+			shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
+			scale = 0.5
+		}
+	}
+end
+---@param options {tint:Color,shift:Vector}
+---@return data.SpriteSheet
+function particle_animations.get_metal_particle_medium_long_pictures(options)
+  local options = options or {}
+  return
+	{
+		filename = "__base__/graphics/particle/metal-particle/long-metal-particle-medium.png",
+		priority = "extra-high",
+		width = 50,
+		height = 46,
+		tint = options.tint,
+		frame_count = 12,
+		animation_speed = 0.5,
+		variation_count = 10,
+		shift = util.add_shift(util.by_pixel(3.5,0.5), options.shift),
+		hr_version =
+		{
+			filename = "__base__/graphics/particle/metal-particle/hr-long-metal-particle-medium.png",
+			priority = "extra-high",
+			width = 100,
+			height = 92,
+			tint = options.tint,
+			frame_count = 12,
+			animation_speed = 0.5,
+			variation_count = 10,
+			shift = util.add_shift(util.by_pixel(3.75,0.25), options.shift),
+			scale = 0.5
+		}
+	}
+end
+---@param options {tint:Color,shift:Vector}
+---@return data.SpriteSheet
+function particle_animations.get_metal_particle_big_pictures(options)
+  local options = options or {}
+  return
+	{
+		filename = "__base__/graphics/particle/metal-particle/metal-particle-big.png",
+		priority = "extra-high",
+		width = 26,
+		height = 22,
+		frame_count = 12,
+		tint = options.tint,
+		animation_speed = 0.5,
+		variation_count = 10,
+		shift = util.add_shift(util.by_pixel(2.5,0.5), options.shift),
+		hr_version =
+		{
+			filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-big.png",
+			priority = "extra-high",
+			width = 50,
+			height = 44,
+			frame_count = 12,
+			tint = options.tint,
+			animation_speed = 0.5,
+			variation_count = 10,
+			shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
+			scale = 0.5
+		}
+	}
+end
+
+---@class make_particle_params
+---@field name string
+---@field ended_in_water_trigger_effect? data.TriggerEffect|false
+---@field life_time? int
+---@field fade_away_duration? int
+---@field render_layer? data.RenderLayer
+---@field render_layer_when_on_ground? data.RenderLayer
+---@field regular_trigger_effect_frequency? int
+---@field regular_trigger_effect? data.TriggerEffect
+---@field pictures data.SpriteVariations
+---@field shadows? data.SpriteVariations
+---@field draw_shadow_when_on_ground? boolean
+---@field movement_modifier_when_on_ground? float
+---@field movement_modifier? float
+---@field vertical_acceleration? float
+---@field mining_particle_frame_speed? float
+---@param params make_particle_params
+---@return data.ParticlePrototype
+local function make_particle(params)
+
+  if not params then error("No params given to make_particle function") end
+  local name = params.name or error("No name given")
+
+	---@type data.TriggerEffect?
+  local ended_in_water_trigger_effect = params.ended_in_water_trigger_effect or default_ended_in_water_trigger_effect()
+  if params.ended_in_water_trigger_effect == false then
+    ended_in_water_trigger_effect = nil
+  end
+
+  local particle =
+  {
+
+    type = "optimized-particle",
+    name = name,
+
+    life_time = params.life_time or (60 * 15),
+    fade_away_duration = params.fade_away_duration,
+
+    render_layer = params.render_layer or "projectile",
+    render_layer_when_on_ground = params.render_layer_when_on_ground or "corpse",
+
+    regular_trigger_effect_frequency = params.regular_trigger_effect_frequency or 2,
+    regular_trigger_effect = params.regular_trigger_effect,
+    ended_in_water_trigger_effect = ended_in_water_trigger_effect or default_ended_in_water_trigger_effect(),
+
+    pictures = params.pictures,
+    shadows = params.shadows,
+    draw_shadow_when_on_ground = params.draw_shadow_when_on_ground,
+
+    movement_modifier_when_on_ground = params.movement_modifier_when_on_ground,
+    movement_modifier = params.movement_modifier,
+    vertical_acceleration = params.vertical_acceleration,
+
+    mining_particle_frame_speed = params.mining_particle_frame_speed,
+
+  }--[[@as data.ParticlePrototype]]
+
+  return particle
+
+end
+--#endregion
+---MARK: Color Math >:(
+
+---@param color Color
+---@return number h
+---@return number s
+---@return number l
+local function rgb_to_hsv(color)
+	---@type number,number,number
+	local r,g,b = table.unpack(color)
+	local min, max = math.min(r,g,b), math.max(r,g,b)
+	local v = max
+	local delta = max-min
+	if delta < 0.00001 or max <= 0.00001 then
+		return 0,0,max
+	end
+	local s = delta/max
+	local h = 0
+	if r >= max then
+		h = (g-b)/delta
+	elseif g >= max then
+		h = 2 + (b-r)/delta
+	else
+		h = 4 + (r-g)/delta
+	end
+	h = h * 60
+	if h < 0 then
+		h = h + 360
+	end
+	return h,s,v
+end
+---@type table<int,fun(q:number,v:number,t:number,p:number):Color>
+hsv_switch = {
+	[1] = function(q,v,t,p) return {r=v,g=t,b=p}	end,
+	[2] = function(q,v,t,p) return {r=q,g=v,b=t}	end,
+	[3] = function(q,v,t,p) return {r=p,g=v,b=t}	end,
+	[4] = function(q,v,t,p) return {r=p,g=q,b=v}	end,
+	[5] = function(q,v,t,p) return {r=t,g=p,b=v}	end,
+	[6] = function(q,v,t,p) return {r=v,g=p,b=q}	end,
+}
+---@param h number
+---@param s number
+---@param v number
+---@return Color
+local function hsv_to_rgb(h,s,v)
+	---@type number, number, number, number
+	local p, q, t, fract
+	if s <= 0.0 then
+		return {r=v,g=v,b=v}
+	end
+	if h >= 360 then
+		h = h - 360
+	end
+	h = h/60
+	fract = h%1
+	p = v*(1 - s)
+	q = v*(1 - s*fract)
+	t = v*(1 - s*(1-fract))
+	local return_func = hsv_switch[math.floor(h)+1]
+	return return_func and return_func(q,v,t,p) or {r=0,g=0,b=0}
+end
+---@param color Color
+---@param ... Color
+---@return Color ...
+local function multiply_hsv_on_rgb(color, ...)
+	local h,s,v = rgb_to_hsv(color)
+	---@type Color[]
+	local output = {}
+---@diagnostic disable-next-line: no-unknown
+	for index, hsl in pairs{...} do
+		output[index] = hsv_to_rgb(h * hsl[1], s * hsl[2], v * hsl[3])
+	end
+	return table.unpack(output)
+end
+
+--MARK: Particles
+
+---@param colour PM.belt_colours
+---@param color1 Color
+---@return data.EntityPrototype[]
+local function make_particles(colour, color1)
+	local color2, color3 = multiply_hsv_on_rgb(color1, {1,0.7,1}, {1,0.5,1})
+	local silver =	{0.764, 0.764, 0.764}
+	local dark =		{0.279, 0.275, 0.267}
+	local tan = 		{0.832, 0.654, 0.592}
+	return {
+		-- The transport belt particles
+		make_particle{
+			name = "pm-"..colour.."-transport-metal-particle-small",
+			pictures = particle_animations.get_metal_particle_small_pictures{tint = color1},
+			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+		},
+		make_particle{
+			name = "pm-"..colour.."-transport-mechanical-component-particle-medium",
+			pictures = particle_animations.get_mechanical_component_particle_medium_pictures{tint = silver},
+			shadows = particle_animations.get_mechanical_component_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+			regular_trigger_effect = small_smoke_trigger_effect(),
+		},
+		make_particle{
+			name = "pm-"..colour.."-transport-metal-particle-medium",
+			pictures = particle_animations.get_metal_particle_small_pictures{tint = color1},
+			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+		},
+
+		-- The underground belt particles
+		make_particle{
+			name = "pm-"..colour.."-underground-metal-particle-small",
+			pictures = particle_animations.get_metal_particle_small_pictures{tint = color2},
+			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+		},
+		make_particle{
+			name = "pm-"..colour.."-underground-metal-particle-medium",
+			pictures = particle_animations.get_metal_particle_medium_pictures{tint = silver},
+			shadows = particle_animations.get_metal_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+			regular_trigger_effect = small_smoke_trigger_effect(),
+		},
+		make_particle{
+			name = "pm-"..colour.."-underground-metal-particle-medium-colored",
+			pictures = particle_animations.get_metal_particle_medium_pictures{tint = color2},
+			shadows = particle_animations.get_metal_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+			regular_trigger_effect = small_smoke_trigger_effect(),
+		},
+
+		-- The splitter particles
+		make_particle{
+			name = "pm-"..colour.."-splitter-metal-particle-medium",
+			pictures = particle_animations.get_metal_particle_medium_pictures{tint = tan},
+			shadows = particle_animations.get_metal_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+			regular_trigger_effect = small_smoke_trigger_effect(),
+		},
+		make_particle{
+			name = "pm-"..colour.."-splitter-metal-particle-small",
+			pictures = particle_animations.get_metal_particle_small_pictures{tint = color3},
+			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+		},
+		make_particle{
+			name = "pm-"..colour.."-splitter-long-metal-particle-medium",
+			pictures = particle_animations.get_metal_particle_medium_long_pictures{tint = silver},
+			shadows = particle_animations.get_metal_particle_medium_long_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+			regular_trigger_effect = small_smoke_trigger_effect(),
+		},
+		make_particle{
+			name = "pm-"..colour.."-splitter-metal-particle-big",
+			pictures = particle_animations.get_metal_particle_big_pictures{tint = color3},
+			shadows = particle_animations.get_metal_particle_big_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+			regular_trigger_effect = default_smoke_trigger_effect(),
+		},
+		make_particle{
+			name = "pm-"..colour.."-splitter-mechanical-component-particle-medium",
+			pictures = particle_animations.get_mechanical_component_particle_medium_pictures{tint = dark},
+			shadows = particle_animations.get_mechanical_component_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
+		}
+	}
+end
+
 ---@type table<PM.belt_colours,{[1]:string,[2]:string,[3]:string}>
 local order_table = {
   ["red"]			= {"b-a-a", "b-b-a", "b-c-a"},
@@ -536,8 +1190,20 @@ local order_table = {
   ["blue"]		= {"b-a-e", "b-b-e", "b-c-e"},
   ["purple"]	= {"b-a-f", "b-b-f", "b-c-f"},
 }
+---@type table<PM.belt_colours, Color>
+local color_table = {
+  ["red"]			= {0.886, 0.090, 0.024},
+  ["orange"]	= {0.898, 0.435, 0.031},
+  ["yellow"]	= {0.898, 0.659, 0.031},
+  ["green"]		= {0.302, 0.847, 0.196},
+  ["blue"]		= {0.024, 0.596, 0.816},
+  ["purple"]	= {0.322, 0.086, 1.000},
+}
 
 for colour in pairs(coloured) do
 	local colour_order = order_table[colour]
+	local colour_code = color_table[colour]
 	data:extend(make_remnants(colour, colour_order))
+	data:extend(make_explosions(colour, colour_order))
+	data:extend(make_particles(colour, colour_code))
 end
