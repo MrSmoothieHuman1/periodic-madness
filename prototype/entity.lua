@@ -1845,6 +1845,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = fast_belt_animation_set,
     fast_replaceable_group = "transport-belt",
+    next_upgrade = "express-underground-belt",
     speed = 0.09375,
     structure =
     {
@@ -1990,6 +1991,7 @@ data:extend({
     structure_animation_movement_cooldown = 10,
     belt_animation_set = fast_belt_animation_set,
     fast_replaceable_group = "transport-belt",
+    next_upgrade = "express-splitter",
     speed = 0.09375,
     structure =
     {
@@ -11270,3 +11272,6 @@ data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
 data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
 data.raw["splitter"]["express-splitter"].speed = 0.125
 data.raw["splitter"]["express-splitter"].max_length = 12
+data.raw["splitter"]["fast-splitter"].next_upgrade = "pm-advanced-splitter"
+data.raw["transport-belt"]["fast-transport-belt"].next_upgrade = "pm-advanced-transport-belt"
+data.raw["underground-belt"]["fast-underground-belt"].next_upgrade = "pm-advanced-underground-belt"

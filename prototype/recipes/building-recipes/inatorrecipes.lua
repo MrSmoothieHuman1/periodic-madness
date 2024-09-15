@@ -63,13 +63,13 @@ data:extend({
     type = "recipe",
     name = "pm-potassium-salt-glass",
     enabled = false,
-    energy_required = 6,
+    energy_required = 3,
     category = "pm-coldening",
     subgroup = "pm-glassing",
     order = "ba",
     ingredients =
     {
-      PM.ingredient("pm-molten-potassium-salts", 3, "fluid"),
+      PM.ingredient("pm-molten-potassium-salts", 2, "fluid"),
       PM.ingredient("pm-sand", 8)
     },
     results =
