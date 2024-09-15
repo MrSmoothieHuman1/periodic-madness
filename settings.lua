@@ -4,7 +4,7 @@ local belt_colours = {
   "red",
   "orange",
   "yellow",
-  "green",
+  -- "green",
   "blue",
   "purple",
 }
@@ -22,8 +22,7 @@ data:extend({
     type = "string-setting",
     name = "pm-belt-colour-tier-1",
     setting_type = "startup",
-    -- default_value = "yellow",
-    default_value = "orange",
+    default_value = "yellow",
     allowed_values = belt_colours,
     order = "a1"
   },
@@ -31,7 +30,6 @@ data:extend({
     type = "string-setting",
     name = "pm-belt-colour-tier-2",
     setting_type = "startup",
-    -- default_value = "orange",
     default_value = "orange",
     allowed_values = belt_colours,
     order = "a2"
@@ -40,8 +38,7 @@ data:extend({
     type = "string-setting",
     name = "pm-belt-colour-tier-3",
     setting_type = "startup",
-    -- default_value = "red",
-    default_value = "orange",
+    default_value = "red",
     allowed_values = belt_colours,
     order = "a3"
   },
@@ -49,8 +46,7 @@ data:extend({
     type = "string-setting",
     name = "pm-belt-colour-tier-4",
     setting_type = "startup",
-    -- default_value = "blue",
-    default_value = "orange",
+    default_value = "blue",
     allowed_values = belt_colours,
     order = "a4"
   },
@@ -58,8 +54,7 @@ data:extend({
     type = "string-setting",
     name = "pm-belt-colour-tier-5",
     setting_type = "startup",
-    -- default_value = "purple",
-    default_value = "orange",
+    default_value = "purple",
     allowed_values = belt_colours,
     order = "a5"
   },
@@ -69,7 +64,7 @@ data:extend({
     hidden = true, -- So we can conditonally support another tier of belts
     setting_type = "startup",
     -- default_value = "green",
-    default_value = "orange",
+    default_value = "yellow",
     allowed_values = belt_colours,
     order = "a6"
   }
