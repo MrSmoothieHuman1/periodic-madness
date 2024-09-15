@@ -26,6 +26,7 @@ local function belt_animation_set(colour)
 		}
 	}--[[@as data.TransportBeltAnimationSetWithCorners]]
 end
+--MARK: Underground
 ---@param colour PM.belt_colours
 ---@return data.UndergroundBeltStructure
 local function underground_structure(colour)
@@ -145,6 +146,7 @@ local function underground_structure(colour)
 		-- }
 	}--[[@as data.UndergroundBeltStructure]]
 end
+--MARK: Splitter
 ---@param colour PM.belt_colours
 ---@return data.Animation4Way
 function splitter_structure(colour)
@@ -288,7 +290,7 @@ end
 
 --MARK: Icon manipulation
 
----@alias belt_type "transport"|"splitter"|"underground"
+---@alias belt_type "transport"|"splitter"|"underground"|"loader"
 ---@param pictures data.Sprite[]|data.SpriteSheet|data.Sprite
 ---@param type belt_type
 ---@param colour PM.belt_colours
@@ -349,6 +351,8 @@ end
 local belts = data.raw["transport-belt"]
 local undergrounds = data.raw["underground-belt"]
 local splitters = data.raw["splitter"]
+local loadersx2 = data.raw["loader"]
+local loadersx1 = data.raw["loader-1x1"]
 local items = data.raw["item"]
 
 --MARK: Belt modification
@@ -364,29 +368,43 @@ local function handle_tier(beltTier, colour)
 	local underground_item = items[beltTier[2]]
 	local splitter_item = items[beltTier[3]]
 
+	---@type data.LoaderPrototype, data.ItemPrototype
+---@diagnostic disable-next-line: missing-fields
+	local loader,loader_item = {},{}
+	if beltTier[4] then
+		loader = loadersx2[beltTier[4]] or loadersx1[beltTier[4]]
+		loader_item = items[beltTier[4]]
+	end
+
 	belt.belt_animation_set = belt_animation_set(colour)
 	underground.belt_animation_set = belt_animation_set(colour)
 	splitter.belt_animation_set = belt_animation_set(colour)
+	loader.belt_animation_set = belt_animation_set(colour)
 
 	underground.structure = underground_structure(colour)
 	splitter.structure = splitter_structure(colour)
 	splitter.structure_patch = splitter_patch(colour)
+	-- loader.structure = loader_structure(colour)
 
 	belt.corpse = "pm-"..colour.."-transport-remnant"
 	underground.corpse = "pm-"..colour.."-underground-remnant"
 	splitter.corpse = "pm-"..colour.."-splitter-remnant"
+	-- loader.corpse = "pm-"..colour.."-loader-remnant"
 
 	belt.dying_explosion = "pm-"..colour.."-transport-explosion"
 	underground.dying_explosion = "pm-"..colour.."-underground-explosion"
 	splitter.dying_explosion = "pm-"..colour.."-splitter-explosion"
+	-- loader.dying_explosion = "pm-"..colour.."-loader-explosion"
 
 	set_icon(belt, "transport", colour)
 	set_icon(underground, "underground", colour)
 	set_icon(splitter, "splitter", colour)
+	set_icon(loader, "loader", colour)
 
 	set_icon(belt_item, "transport", colour)
 	set_icon(underground_item, "underground", colour)
 	set_icon(splitter_item, "splitter", colour)
+	set_icon(loader_item, "loader", colour)
 end
 
 ---@type table<PM.belt_colours,true>
@@ -534,6 +552,7 @@ end
 local sounds = require("__base__.prototypes.entity.sounds")
 local explosion_animations = require("__base__.prototypes.entity.explosion-animations")
 
+--MARK: Explosions
 ---@param colour PM.belt_colours
 ---@param order {[1]:string,[2]:string,[3]:string}
 ---@return data.EntityPrototype[]
@@ -729,6 +748,7 @@ local function make_explosions(colour, order)
 end
 
 ---MARK: Particle.lua
+
 --#region Stolen from particles.lua
 local function default_ended_in_water_trigger_effect()
   return
@@ -1180,6 +1200,8 @@ local function make_particles(colour, color1)
 		}
 	}
 end
+
+--MARK: Dynamic Color
 
 ---@type table<PM.belt_colours,{[1]:string,[2]:string,[3]:string}>
 local order_table = {
