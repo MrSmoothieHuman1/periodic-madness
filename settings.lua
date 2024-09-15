@@ -1,13 +1,27 @@
 ---@diagnostic disable: assign-type-mismatch, missing-fields
 ---@enum PM.belt_colours
 local belt_colours = {
-  "red",
+  "red", -- Finished
   "orange",
+  -- [ ] Fix the mipmaps
+  -- [ ] Add the underground patches
+  -- [ ] Make remnant graphics
+  -- [ ] Add a (temp) loader icon?
   "yellow",
+  -- [ ] Remake to make the arrows match
   -- "green",
-  "blue",
+  -- TODO: Make (also make sure the arbitrary color I picked isn't bad)
+  "blue", -- Finished
   "purple",
+  -- [ ] Fix the mipmaps
+  -- [ ] Add a (temp) loader icon?
 }
+--[[NOTE:
+  When adding a color, you need to also add it to the
+  order and colour table at the bottom of belt-colours.lua.
+
+  I feel like the *how* is pretty self explanatory
+]]
 
 data:extend({
   {
