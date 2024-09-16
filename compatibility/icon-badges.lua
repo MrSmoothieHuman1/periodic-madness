@@ -134,6 +134,11 @@ my_data =
     {type = "item", name = "pm-advanced-integrated-circuit-mold", ib_data = {ib_let_badge ="RIM",  ib_img_corner = "left-top"} },
     {type = "item", name = "pm-processing-integrated-circuit-mold", ib_data = {ib_let_badge ="BIM",  ib_img_corner = "left-top"} },
 
+    {type = "item", name = "pm-vanadium-oxide-catalyst", ib_data = {ib_let_badge ="VC"} },
+    {type = "item", name = "pm-palladium-catalyst", ib_data = {ib_let_badge ="PC"} },
+    {type = "item", name = "pm-yttria-catalyst", ib_data = {ib_let_badge ="YC"} },
+    {type = "item", name = "pm-cobalt-catalyst", ib_data = {ib_let_badge ="CC"} },
+
 
     {type = "fluid", name = "pm-francium", ib_data = {ib_let_badge ="Fr"} },
     {type = "fluid", name = "pm-liquid-mercury", ib_data = {ib_let_badge ="Hg"} },

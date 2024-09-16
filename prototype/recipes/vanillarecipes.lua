@@ -649,11 +649,14 @@ sanitize_recipe(recipes["distractor-capsule"]).ingredients =
   PM.ingredient("pm-titanium-plate", 2),
   PM.ingredient("piercing-rounds-magazine", 2),
   PM.ingredient("electronic-circuit", 4),
-  PM.ingredient("pm-basic-panelling", 10)
+  PM.ingredient("pm-basic-panelling", 8)
 }
 sanitize_recipe(recipes["destroyer-capsule"]).ingredients =
 {
-  PM.ingredient("flying-robot-frame", 1)
+  PM.ingredient("flying-robot-frame", 1),
+  PM.ingredient("advanced-circuit", 2),
+  PM.ingredient("pm-lightweight-framing", 4),
+  PM.ingredient("pm-heavyweight-panelling", 6)
 }
 sanitize_recipe(recipes["energy-shield-equipment"]).ingredients = 
 {
