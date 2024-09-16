@@ -1,23 +1,7 @@
 local PM = require("__periodic-madness__/library")
-
----@type table<PM.belt_colours,{[1]:string,[2]:string,[3]:string}>
-local order_table = {
-  ["red"]			= {"b-a-a", "b-b-a", "b-c-a"},
-  ["orange"]	= {"b-a-b", "b-b-b", "b-c-b"},
-  ["yellow"]	= {"b-a-c", "b-b-c", "b-c-c"},
-  ["green"]		= {"b-a-d", "b-b-d", "b-c-d"},
-  ["blue"]		= {"b-a-e", "b-b-e", "b-c-e"},
-  ["purple"]	= {"b-a-f", "b-b-f", "b-c-f"},
-}
----@type table<PM.belt_colours, Color>
-local colour_table = {
-  ["red"]			= {0.886, 0.090, 0.024},
-  ["orange"]	= {0.898, 0.435, 0.031},
-  ["yellow"]	= {0.898, 0.659, 0.031},
-  ["green"]		= {0.302, 0.847, 0.196},
-  ["blue"]		= {0.024, 0.596, 0.816},
-  ["purple"]	= {0.322, 0.086, 1.000},
-}
+local colors = require("__periodic-madness__/colours")
+local order_table = colors.orders
+local colour_table = colors.values
 
 --MARK: Belt sets
 

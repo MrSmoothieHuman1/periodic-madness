@@ -1,27 +1,8 @@
 ---@diagnostic disable: assign-type-mismatch, missing-fields
----@enum PM.belt_colours
-local belt_colours = {
-  "red", -- Finished
-  "orange",
-  -- [ ] Fix the mipmaps
-  -- [ ] Add the underground patches
-  -- [ ] Make remnant graphics
-  -- [ ] Add a (temp) loader icon?
-  "yellow",
-  -- [ ] Remake to make the arrows match
-  -- "green",
-  -- TODO: Make (also make sure the arbitrary color I picked isn't bad)
-  "blue", -- Finished
-  "purple",
-  -- [ ] Fix the mipmaps
-  -- [ ] Add a (temp) loader icon?
-}
---[[NOTE:
-  When adding a color, you need to also add it to the
-  order and colour table at the bottom of belt-colours.lua.
+local colours = require("__periodic-madness__/colours")
+local colour_list = colours.list
 
-  I feel like the *how* is pretty self explanatory
-]]
+local is_debug = not not mods["debugadapter"]
 
 data:extend({
   {
@@ -37,8 +18,8 @@ data:extend({
     name = "pm-belt-colour-tier-1",
     localised_name = {"mod-setting-name.pm-belt-colour-tier", 1},
     setting_type = "startup",
-    default_value = "yellow",
-    allowed_values = belt_colours,
+    default_value = is_debug and "debug" or "yellow",
+    allowed_values = colour_list,
     order = "a1"
   },
   {
@@ -47,7 +28,7 @@ data:extend({
     localised_name = {"mod-setting-name.pm-belt-colour-tier", 2},
     setting_type = "startup",
     default_value = "orange",
-    allowed_values = belt_colours,
+    allowed_values = colour_list,
     order = "a2"
   },
   {
@@ -56,7 +37,7 @@ data:extend({
     localised_name = {"mod-setting-name.pm-belt-colour-tier", 3},
     setting_type = "startup",
     default_value = "red",
-    allowed_values = belt_colours,
+    allowed_values = colour_list,
     order = "a3"
   },
   {
@@ -65,7 +46,7 @@ data:extend({
     localised_name = {"mod-setting-name.pm-belt-colour-tier", 4},
     setting_type = "startup",
     default_value = "blue",
-    allowed_values = belt_colours,
+    allowed_values = colour_list,
     order = "a4"
   },
   {
@@ -74,7 +55,7 @@ data:extend({
     localised_name = {"mod-setting-name.pm-belt-colour-tier", 5},
     setting_type = "startup",
     default_value = "purple",
-    allowed_values = belt_colours,
+    allowed_values = colour_list,
     order = "a5"
   },
   {
@@ -85,7 +66,15 @@ data:extend({
     setting_type = "startup",
     -- default_value = "green",
     default_value = "yellow",
-    allowed_values = belt_colours,
+    allowed_values = colour_list,
     order = "a6"
-  }
+  },
+
+  is_debug and {
+    type = "color-setting",
+    name = "pm-debug-colour",
+    setting_type = "startup",
+    default_value = colours.values["debug"],
+    order = "z"
+  } or nil,
 })
