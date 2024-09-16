@@ -27,6 +27,7 @@ Date: 2024-08-09
     - Gave a bunch more recipes producitvity.
     - Finalised LDS's recipe (for now..)
     - Added Icon Badge functionality! still in early stages, so feel free to contact me if anything is off.
+    - (everyone say "Thank you PennyJim" in unison) added a way to personalise belt tiers in the mod settings! you can change them to the colours on the rainbow, plus a couple others.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.

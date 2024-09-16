@@ -1,3 +1,4 @@
+if not mods["icon-badges"]then return end
 my_data =
 {
     {type = "ammo", name = "firearm-magazine", ib_data = {ib_let_badge ="FR"} },
@@ -195,3 +196,4 @@ my_data =
 for _,i in ipairs(my_data) do
     Build_badge(data.raw[i.type][i.name], i.ib_data)
 end
+Ib_global.badge_vanilla = false

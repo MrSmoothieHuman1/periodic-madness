@@ -95,7 +95,7 @@ require("prototype.equipment-grid")
 
 require("compatibility.testcompat")
 require("compatibility.icon-badges")
-Ib_global.badge_vanilla = false
+
 
 local resource_autoplace = require('resource-autoplace');
 local noise = require('noise');

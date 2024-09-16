@@ -505,7 +505,7 @@ data:extend({
     },
     results =
     {
-      { "pm-coke", 4 + 1 }
+      PM.ingredient("pm-coke", 5),
     }
   },
   {
@@ -522,7 +522,7 @@ data:extend({
     },
     results =
     {
-      { "pm-coke", 4 + 1 }
+      PM.ingredient("pm-coke", 5)
     }
   },
   {
@@ -669,7 +669,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gold-wire",
-    energy_required = 0.4 + 0.1,
+    energy_required = 0.5,
     show_amount_in_title = true,
     enabled = false,
     ingredients = { PM.ingredient("pm-gold-plate", 1) },
@@ -734,7 +734,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solar-cell",
-    energy_required = 4.9 + 0.1,
+    energy_required = 5,
     show_amount_in_title = true,
     enabled = false,
     ingredients =
@@ -829,7 +829,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-module-speed-lights",
-    energy_required = 4 + 1,
+    energy_required = 5,
     subgroup = "pm-modules",
     order = "c",
     enabled = false,
@@ -847,7 +847,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-module-efficiency-lights",
-    energy_required = 4 + 1,
+    energy_required = 5,
     enabled = false,
     subgroup = "pm-modules",
     order = "g",
@@ -865,7 +865,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-module-productivity-lights",
-    energy_required = 4 + 1,
+    energy_required = 5,
     enabled = false,
     subgroup = "pm-modules",
     order = "l",
@@ -883,7 +883,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-module-case",
-    energy_required = 4 + 1,
+    energy_required = 5,
     enabled = false,
     category = "crafting-with-fluid",
     subgroup = "pm-modules",
@@ -923,13 +923,13 @@ data:extend({
     name = "pm-blank-bio-module",
     subgroup = "science-pack",
     order = "a",
-    energy_required = 7.4 + 0.1,
+    energy_required = 7.5,
     enabled = false,
     ingredients =
     {
       PM.ingredient("pm-anti-bacterial-panelling", 8),
       PM.ingredient("advanced-circuit", 6),
-      { "pm-basic-wiring",             14 + 1 },
+      PM.ingredient("pm-basic-wiring", 15),
     },
     results =
     {
@@ -939,7 +939,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-agility-bio-module",
-    energy_required = 7.4 + 0.1,
+    energy_required = 7.5,
     category = "chemistry",
     subgroup = "pm-acetonitrile-rnm",
     order = "x",
@@ -958,7 +958,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-health-bio-module",
-    energy_required = 7.4 + 0.1,
+    energy_required = 7.5,
     category = "chemistry",
     subgroup = "pm-CISD2-rnm",
     order = "x",
@@ -977,7 +977,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-strength-bio-module",
-    energy_required = 7.4 + 0.1,
+    energy_required = 7.5,
     category = "chemistry",
     subgroup = "pm-myostatin-rnm",
     order = "x",
@@ -1146,7 +1146,7 @@ data:extend({
     main_product = "pm-iron-sulfur-cluster",
     ingredients =
     {
-      {"iron-plate", 4 + 1},
+      PM.ingredient("iron-plate", 5),
       PM.ingredient("sulfuric-acid", 20, "fluid")
     },
     results =
@@ -1204,14 +1204,14 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/green-circuit-dipping.png",
     enabled = false,
-    energy_required = 2.24 + 0.01,
+    energy_required = 2.25,
     category = "crafting-with-fluid",
     subgroup = "pm-circuits",
     order = "fa",
     ingredients =
     {
       PM.ingredient("pm-gold-wire", 3),
-      { "electronic-circuit", 4 + 1 },
+      PM.ingredient("electronic-circuit", 5),
       PM.ingredient("pm-resin", 20, "fluid")
     },
     results =
@@ -1220,7 +1220,6 @@ data:extend({
       PM.product_range_chance("electronic-circuit", 1, 3, 0.7),
       PM.product_chance("copper-cable", 2, 0.2)
     }
-
   },
   {
     type = "recipe",
