@@ -173,42 +173,36 @@ end
 ---@alias belt_type "transport"|"splitter"|"underground"|"loader"
 ---@param pictures data.Sprite[]|data.SpriteSheet|data.Sprite
 ---@param type belt_type
----@param colour Color
-function set_variations(pictures, type, colour)
+---@param colour_name PM.belt_colours
+function set_variations(pictures, type, colour_name)
 	--- Handle every variations in an array of sprites
 	if pictures[1] then
 		for _, picture in pairs(pictures) do
-			set_variations(picture, type, colour)
+			set_variations(picture, type, colour_name)
 		end
 		return
 
-	--- Make it layered if it wasn't before
-	elseif not pictures.layers then
-		--- Clear any old data
-		for key in pairs(pictures--[[@as table<any,any>]]) do
-			pictures[key] = nil
-		end
-		pictures.layers = {}
+	--- Handle only the first layer
+	elseif pictures.layers then
+		set_variations(pictures.layers[1], type, colour_name)
+		return
 	end
 
-	pictures.layers[1] = {
-		filename = "__periodic-madness__/graphics/icons/buildings/"..type.."-base.png",
-		size = 64,
-		mipmap_count = 4,
-		scale = 0.25,
-	}
-	table.insert(pictures.layers, 2, {
-		filename = "__periodic-madness__/graphics/icons/buildings/"..type.."-mask.png",
-		size = 64,
-		mipmap_count = 4,
-		scale = 0.25,
-		tint = colour
-	}--[[@as data.SpriteParameters]])
+	--- Clear any old data
+	for key in pairs(pictures--[[@as table<any,any>]]) do
+		pictures[key] = nil
+	end
+
+	---@cast pictures data.SpriteParameters
+	pictures.filename = "__periodic-madness__/graphics/icons/buildings/"..type.."/"..colour_name..".png"
+	pictures.size = 64
+	pictures.scale = 0.25
+	pictures.mipmap_count = 4
 end
 ---@param item data.ItemPrototype|data.EntityPrototype
 ---@param type belt_type
----@param colour Color
-function set_icon(item, type, colour)
+---@param colour_name PM.belt_colours
+function set_icon(item, type, colour_name)
 	if not item.icons then
 		item.icons = {}
 		item.icon = nil
@@ -217,16 +211,11 @@ function set_icon(item, type, colour)
 	end
 
 	item.icons[1] = {
-		icon = "__periodic-madness__/graphics/icons/buildings/"..type.."-base.png",
+		icon = "__periodic-madness__/graphics/icons/buildings/"..type.."/"..colour_name..".png",
 		icon_size = 64,
+		scale = 0.5,
 		icon_mipmaps = 4
 	}
-	table.insert(item.icons, 2, {
-		icon = "__periodic-madness__/graphics/icons/buildings/"..type.."-mask.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		tint = colour
-	}--[[@as data.IconData]])
 
 	local pictures = item.pictures
 	if pictures then
@@ -235,7 +224,7 @@ function set_icon(item, type, colour)
 			item.pictures = pictures
 		end
 
-		set_variations(pictures, type, colour)
+		set_variations(pictures, type, colour_name)
 	end
 end
 
@@ -293,14 +282,14 @@ local function handle_tier(beltTier, colour_name, colour)
 	splitter.dying_explosion = "pm-"..colour_name.."-splitter-explosion"
 	-- loader.dying_explosion = "pm-"..colour.."-loader-explosion"
 
-	set_icon(belt, "transport", colour)
-	set_icon(underground, "underground", colour)
-	set_icon(splitter, "splitter", colour)
+	set_icon(belt, "transport", colour_name)
+	set_icon(underground, "underground", colour_name)
+	set_icon(splitter, "splitter", colour_name)
 	-- set_icon(loader, "loader", colour)
 
-	set_icon(belt_item, "transport", colour)
-	set_icon(underground_item, "underground", colour)
-	set_icon(splitter_item, "splitter", colour)
+	set_icon(belt_item, "transport", colour_name)
+	set_icon(underground_item, "underground", colour_name)
+	set_icon(splitter_item, "splitter", colour_name)
 	-- set_icon(loader_item, "loader", colour)
 end
 
@@ -342,7 +331,7 @@ local function make_remnants(colour_name, colour, orders)
 			final_render_layer = "remnants",
 			animation = animation
 		}--[[@as data.CorpsePrototype]]
-		set_icon(remnant, type, colour)
+		set_icon(remnant, type, colour_name)
 		return remnant
 	end
 	---@param type belt_type
@@ -417,7 +406,7 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local explosion_animations = require("__base__.prototypes.entity.explosion-animations")
 
 --MARK: Explosions
----@param colour_name string
+---@param colour_name PM.belt_colours
 ---@param colour Color
 ---@param orders {[1]:string,[2]:string,[3]:string}
 ---@return data.EntityPrototype[]
@@ -448,7 +437,7 @@ local function make_explosions(colour_name, colour, orders)
 				}
 			}
 		}--[[@as data.ExplosionPrototype]]
-		set_icon(explosion, type, colour)
+		set_icon(explosion, type, colour_name)
 		return explosion
 	end
 	---@param type belt_type
@@ -899,10 +888,11 @@ end
 
 --MARK: Particles
 
----@param colour Color
----@param color1 Color
+---@param colour_name Color
+---@param color Color
 ---@return data.EntityPrototype[]
-local function make_particles(colour, color1)
+local function make_particles(colour_name, color)
+	local color1 = {color[1]/255, color[2]/255, color[3]/255}
 	local color2, color3 = multiply_hsv_on_rgb(color1, {1,0.7,1}, {1,0.5,1})
 	local silver =	{0.764, 0.764, 0.764}
 	local dark =		{0.279, 0.275, 0.267}
@@ -910,36 +900,36 @@ local function make_particles(colour, color1)
 	return {
 		-- The transport belt particles
 		make_particle{
-			name = "pm-"..colour.."-transport-metal-particle-small",
+			name = "pm-"..colour_name.."-transport-metal-particle-small",
 			pictures = particle_animations.get_metal_particle_small_pictures{tint = color1},
 			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 		},
 		make_particle{
-			name = "pm-"..colour.."-transport-mechanical-component-particle-medium",
+			name = "pm-"..colour_name.."-transport-mechanical-component-particle-medium",
 			pictures = particle_animations.get_mechanical_component_particle_medium_pictures{tint = silver},
 			shadows = particle_animations.get_mechanical_component_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 			regular_trigger_effect = small_smoke_trigger_effect(),
 		},
 		make_particle{
-			name = "pm-"..colour.."-transport-metal-particle-medium",
+			name = "pm-"..colour_name.."-transport-metal-particle-medium",
 			pictures = particle_animations.get_metal_particle_small_pictures{tint = color1},
 			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 		},
 
 		-- The underground belt particles
 		make_particle{
-			name = "pm-"..colour.."-underground-metal-particle-small",
+			name = "pm-"..colour_name.."-underground-metal-particle-small",
 			pictures = particle_animations.get_metal_particle_small_pictures{tint = color2},
 			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 		},
 		make_particle{
-			name = "pm-"..colour.."-underground-metal-particle-medium",
+			name = "pm-"..colour_name.."-underground-metal-particle-medium",
 			pictures = particle_animations.get_metal_particle_medium_pictures{tint = silver},
 			shadows = particle_animations.get_metal_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 			regular_trigger_effect = small_smoke_trigger_effect(),
 		},
 		make_particle{
-			name = "pm-"..colour.."-underground-metal-particle-medium-colored",
+			name = "pm-"..colour_name.."-underground-metal-particle-medium-colored",
 			pictures = particle_animations.get_metal_particle_medium_pictures{tint = color2},
 			shadows = particle_animations.get_metal_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 			regular_trigger_effect = small_smoke_trigger_effect(),
@@ -947,30 +937,30 @@ local function make_particles(colour, color1)
 
 		-- The splitter particles
 		make_particle{
-			name = "pm-"..colour.."-splitter-metal-particle-medium",
+			name = "pm-"..colour_name.."-splitter-metal-particle-medium",
 			pictures = particle_animations.get_metal_particle_medium_pictures{tint = tan},
 			shadows = particle_animations.get_metal_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 			regular_trigger_effect = small_smoke_trigger_effect(),
 		},
 		make_particle{
-			name = "pm-"..colour.."-splitter-metal-particle-small",
+			name = "pm-"..colour_name.."-splitter-metal-particle-small",
 			pictures = particle_animations.get_metal_particle_small_pictures{tint = color3},
 			shadows = particle_animations.get_metal_particle_small_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 		},
 		make_particle{
-			name = "pm-"..colour.."-splitter-long-metal-particle-medium",
+			name = "pm-"..colour_name.."-splitter-long-metal-particle-medium",
 			pictures = particle_animations.get_metal_particle_medium_long_pictures{tint = silver},
 			shadows = particle_animations.get_metal_particle_medium_long_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 			regular_trigger_effect = small_smoke_trigger_effect(),
 		},
 		make_particle{
-			name = "pm-"..colour.."-splitter-metal-particle-big",
+			name = "pm-"..colour_name.."-splitter-metal-particle-big",
 			pictures = particle_animations.get_metal_particle_big_pictures{tint = color3},
 			shadows = particle_animations.get_metal_particle_big_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 			regular_trigger_effect = default_smoke_trigger_effect(),
 		},
 		make_particle{
-			name = "pm-"..colour.."-splitter-mechanical-component-particle-medium",
+			name = "pm-"..colour_name.."-splitter-mechanical-component-particle-medium",
 			pictures = particle_animations.get_mechanical_component_particle_medium_pictures{tint = dark},
 			shadows = particle_animations.get_mechanical_component_particle_medium_pictures{tint = shadowtint(), shift = util.by_pixel (1,0)},
 		}
