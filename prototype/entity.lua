@@ -2677,7 +2677,7 @@ data:extend({
           height = 114,
           frame_count = 32,
           line_length = 8,
-          shift = util.by_pixel(0, -2),
+          shift = util.by_pixel(0, 2),
           animation_speed = 0.5,
           hr_version =
           {
@@ -2686,7 +2686,7 @@ data:extend({
             height = 226,
             frame_count = 32,
             line_length = 8,
-            shift = util.by_pixel(0, -2),
+            shift = util.by_pixel(0, 2),
             animation_speed = 0.5,
             scale = 0.5
           }
@@ -2697,7 +2697,7 @@ data:extend({
           height = 108,
           frame_count = 32,
           line_length = 4,
-          shift = util.by_pixel(20, 6),
+          shift = util.by_pixel(20, 5),
           animation_speed = 0.5,
           draw_as_shadow = true,
           hr_version =
@@ -2707,7 +2707,7 @@ data:extend({
             height = 214,
             frame_count = 32,
             line_length = 4,
-            shift = util.by_pixel(20, 6),
+            shift = util.by_pixel(20, 5),
             animation_speed = 0.5,
             draw_as_shadow = true,
             scale = 0.5
@@ -2774,7 +2774,7 @@ data:extend({
           height = 108,
           frame_count = 32,
           line_length = 4,
-          shift = util.by_pixel(20, 4),
+          shift = util.by_pixel(20, 5),
           animation_speed = 0.5,
           draw_as_shadow = true,
           hr_version =
@@ -2784,7 +2784,7 @@ data:extend({
             height = 214,
             frame_count = 32,
             line_length = 4,
-            shift = util.by_pixel(20, 4),
+            shift = util.by_pixel(20, 5),
             animation_speed = 0.5,
             draw_as_shadow = true,
             scale = 0.5

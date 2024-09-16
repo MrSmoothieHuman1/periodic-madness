@@ -136,7 +136,7 @@ my_data =
 
     {type = "item", name = "pm-vanadium-oxide-catalyst", ib_data = {ib_let_badge ="VC"} },
     {type = "item", name = "pm-palladium-catalyst", ib_data = {ib_let_badge ="PC"} },
-    {type = "item", name = "pm-yttria-catalyst", ib_data = {ib_let_badge ="YC"} },
+    {type = "item", name = "pm-yttrium-catalyst", ib_data = {ib_let_badge ="YC"} },
     {type = "item", name = "pm-cobalt-catalyst", ib_data = {ib_let_badge ="CC"} },
 
 
