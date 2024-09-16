@@ -2756,17 +2756,18 @@ data:extend({
           line_length = 8,
           shift = util.by_pixel(0, 2),
           animation_speed = 0.5,
-          hr_version =
-          {
-            filename = "__periodic-madness__/graphics/entities/buildings/crusher-2/hr-crusher-2.png",
-            width = 214,
-            height = 226,
-            frame_count = 32,
-            line_length = 8,
-            shift = util.by_pixel(0, 2),
-            animation_speed = 0.5,
-            scale = 0.5
-          }
+          -- FIXME: File is missing
+          -- hr_version =
+          -- {
+          --   filename = "__periodic-madness__/graphics/entities/buildings/crusher-2/hr-crusher-2.png",
+          --   width = 214,
+          --   height = 226,
+          --   frame_count = 32,
+          --   line_length = 8,
+          --   shift = util.by_pixel(0, 2),
+          --   animation_speed = 0.5,
+          --   scale = 0.5
+          -- }
         },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-shadow.png",
@@ -3643,6 +3644,7 @@ data:extend({
           animation_speed = 0.25,
           scale = 1.15,
           shift = util.by_pixel(-2, 0),
+          -- FIXME: File is bad
           -- hr_version =
           -- {
           --   filename =
@@ -3666,6 +3668,7 @@ data:extend({
           shift = util.by_pixel(64, 10),
           draw_as_shadow = true,
           animation_speed = 0.25,
+          -- FIXME: File is bad
           -- hr_version =
           -- {
           --   filename =
