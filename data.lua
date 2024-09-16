@@ -294,19 +294,19 @@ data:extend({
   {
     type = "autoplace-control",
     category = "resource",
-    name = "pm-metalloid-ore",
+    name = "pm-metalloids",
     localised_name = {"","[entity=pm-metalloid-ore] ", {"entity-name.pm-metalloid-ore"}},
     richness = true,
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "noise-layer",
-    name = "pm-metalloid-ore"
+    name = "pm-metalloids"
 	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
-    name = "pm-metalloid-ore",
+    name = "pm-metalloids",
     icon = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
