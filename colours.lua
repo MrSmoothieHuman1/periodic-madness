@@ -3,20 +3,15 @@ local colors = {}
 
 ---@enum PM.belt_colours
 colors.list = {
-  "red", -- Finished
+  "red",
   "orange",
-  -- [ ] Fix the mipmaps
-  -- [ ] Add the underground patches
-  -- [ ] Make remnant graphics
-  -- [ ] Add a (temp) loader icon?
   "yellow",
-  -- [ ] Remake to make the arrows match
-  -- "green",
-  -- TODO: Make (also make sure the arbitrary color I picked isn't bad)
-  "blue", -- Finished
+  "green",
+  "blue",
   "purple",
-  -- [ ] Fix the mipmaps
-  -- [ ] Add a (temp) loader icon?
+  "pink",
+  "black",
+  "white",
 }
 
 ---The order of the corpse prototypes
@@ -28,6 +23,10 @@ colors.orders = {
   ["green"]		= {"b-a-d", "b-b-d", "b-c-d"},
   ["blue"]		= {"b-a-e", "b-b-e", "b-c-e"},
   ["purple"]	= {"b-a-f", "b-b-f", "b-c-f"},
+  ["pink"]    = {"b-a-g", "b-b-g", "b-c-g"},
+
+  ["black"]   = {"b-a-h", "b-b-h", "b-c-h"},
+  ["white"]   = {"b-a-i", "b-b-i", "b-c-i"},
 }
 ---@type table<PM.belt_colours, Color>
 colors.values = {
@@ -42,7 +41,7 @@ colors.values = {
   ["black"]   = {  0,   0,   0},
   ["white"]   = {255, 255, 255},
 
-  ["debug"]   = {0.5, 0.5, 0.5},
+  ["debug"]   = {0.5, 0.5, 0.5}, -- So you can set the default.
 }
 
 if mods["debugadapter"] then
