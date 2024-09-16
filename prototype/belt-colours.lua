@@ -1,290 +1,186 @@
 local PM = require("__periodic-madness__/library")
 
+---@type table<PM.belt_colours,{[1]:string,[2]:string,[3]:string}>
+local order_table = {
+  ["red"]			= {"b-a-a", "b-b-a", "b-c-a"},
+  ["orange"]	= {"b-a-b", "b-b-b", "b-c-b"},
+  ["yellow"]	= {"b-a-c", "b-b-c", "b-c-c"},
+  ["green"]		= {"b-a-d", "b-b-d", "b-c-d"},
+  ["blue"]		= {"b-a-e", "b-b-e", "b-c-e"},
+  ["purple"]	= {"b-a-f", "b-b-f", "b-c-f"},
+}
+---@type table<PM.belt_colours, Color>
+local colour_table = {
+  ["red"]			= {0.886, 0.090, 0.024},
+  ["orange"]	= {0.898, 0.435, 0.031},
+  ["yellow"]	= {0.898, 0.659, 0.031},
+  ["green"]		= {0.302, 0.847, 0.196},
+  ["blue"]		= {0.024, 0.596, 0.816},
+  ["purple"]	= {0.322, 0.086, 1.000},
+}
+
 --MARK: Belt sets
 
----@param colour PM.belt_colours
+---@param colour Color
 ---@return data.TransportBeltAnimationSetWithCorners
 local function belt_animation_set(colour)
-	return {
-		animation_set = {
-			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/belt.png",
+	---@param file string
+	---@param tint? Color
+	---@return table
+	local function make_anim(file, tint)
+		return {
+			filename = "__periodic-madness__/graphics/entities/buildings/transport/"..file..".png",
 			priority = "extra-high",
 			width = 64,
 			height = 64,
 			frame_count = 32,
 			direction_count = 20,
+			tint = tint,
 			hr_version =
 			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/hr-belt.png",
+				filename = "__periodic-madness__/graphics/entities/buildings/transport/hr-"..file..".png",
 				priority = "extra-high",
 				width = 128,
 				height = 128,
 				scale = 0.5,
 				frame_count = 32,
-				direction_count = 20
+				direction_count = 20,
+				tint = tint
+			}
+		}
+	end
+	return {
+		animation_set = {
+			layers = {
+				make_anim("base"),
+				make_anim("arrows", colour)
 			}
 		}
 	}--[[@as data.TransportBeltAnimationSetWithCorners]]
 end
 --MARK: Underground
----@param colour PM.belt_colours
+---@param colour Color
 ---@return data.UndergroundBeltStructure
 local function underground_structure(colour)
+	---@param file "base"|"arrows"
+	---@param yoff int
+	---@param tint? Color
+	---@return data.SpriteNWaySheet
+	local function offset(file, yoff, tint)
+		return {
+			filename = "__periodic-madness__/graphics/entities/buildings/underground/"..file..".png",
+			priority = "extra-high",
+			width = 96,
+			height = 96,
+			y = yoff,
+			tint = tint,
+			hr_version =
+			{
+				filename = "__periodic-madness__/graphics/entities/buildings/underground/hr-"..file..".png",
+				priority = "extra-high",
+				width = 192,
+				height = 192,
+				y = yoff * 2,
+				tint = tint,
+				scale = 0.5
+			}
+		}--[[@as data.SpriteNWaySheet]]
+	end
 	return {
 		direction_in = {
-			sheet = {
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
-				priority = "extra-high",
-				width = 96,
-				height = 96,
-				y = 96,
-				hr_version =
-				{
-					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
-					priority = "extra-high",
-					width = 192,
-					height = 192,
-					y = 192,
-					scale = 0.5
-				}
+			sheets = {
+				offset("base", 96*1),
+				offset("arrows", 96*1, colour)
 			}
 		},
-		direction_out =
-		{
-			sheet =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
-				priority = "extra-high",
-				width = 96,
-				height = 96,
-				hr_version =
-				{
-					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
-					priority = "extra-high",
-					width = 192,
-					height =192,
-					scale = 0.5
-				}
+		direction_out = {
+			sheets = {
+				offset("base", 96*0),
+				offset("arrows", 96*0, colour)
 			}
 		},
-		direction_in_side_loading =
-		{
-			sheet =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
-				priority = "extra-high",
-				width = 96,
-				height = 96,
-				y = 96*3,
-				hr_version =
-				{
-					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
-					priority = "extra-high",
-					width = 192,
-					height = 192,
-					y = 192*3,
-					scale = 0.5
-				}
+		direction_in_side_loading = {
+			sheets = {
+				offset("base", 96*3),
+				offset("arrows", 96*3, colour)
 			}
 		},
-		direction_out_side_loading =
-		{
-			sheet =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure.png",
-				priority = "extra-high",
-				width = 96,
-				height = 96,
-				y = 96*2,
-				hr_version =
-				{
-					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure.png",
-					priority = "extra-high",
-					width = 192,
-					height = 192,
-					y = 192*2,
-					scale = 0.5
-				}
+		direction_out_side_loading = {
+			sheets = {
+				offset("base", 96*2),
+				offset("arrows", 96*2, colour)
 			}
 		},
-		--TODO: add patches to undergrounds
-		-- back_patch =
-		-- {
-		-- 	sheet =
-		-- 	{
-		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure-back-patch.png",
-		-- 		priority = "extra-high",
-		-- 		width = 96,
-		-- 		height = 96,
-		-- 		hr_version =
-		-- 		{
-		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure-back-patch.png",
-		-- 			priority = "extra-high",
-		-- 			width = 192,
-		-- 			height = 192,
-		-- 			scale = 0.5
-		-- 		}
-		-- 	}
-		-- },
-		-- front_patch =
-		-- {
-		-- 	sheet =
-		-- 	{
-		-- 		filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/structure-front-patch.png",
-		-- 		priority = "extra-high",
-		-- 		width = 96,
-		-- 		height = 96,
-		-- 		hr_version =
-		-- 		{
-		-- 			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/hr-structure-front-patch.png",
-		-- 			priority = "extra-high",
-		-- 			width = 192,
-		-- 			height = 192,
-		-- 			scale = 0.5
-		-- 		}
-		-- 	}
-		-- }
 	}--[[@as data.UndergroundBeltStructure]]
 end
 --MARK: Splitter
----@param colour PM.belt_colours
+---@param colour Color
 ---@return data.Animation4Way
 function splitter_structure(colour)
+	---@param file "north"|"south"|"east"|"west"|"north-mask"|"south-mask"|"east-mask"|"west-mask"
+	---@param width int
+	---@param height int
+	---@param shiftx int
+	---@param shifty int
+	---@param tint? Color
+	---@param is_sheet? boolean Default is true
+	---@return data.Animation
+	local function make_direction(file, width, height, shiftx, shifty, tint, is_sheet)
+		---@type int?,int?,int?
+		local frame_count, line_length, repeat_count
+		if is_sheet ~= false then
+			frame_count = 32
+			line_length = 8
+		else
+			repeat_count = 32
+		end
+		return {
+			filename = "__periodic-madness__/graphics/entities/buildings/splitter/"..file..".png",
+			priority = "extra-high",
+			width = width, height = height,
+			shift = util.by_pixel(shiftx, shifty),
+			frame_count = frame_count,
+			line_length = line_length,
+			repeat_count = repeat_count,
+			tint = tint,
+			hr_version = {
+				filename = "__periodic-madness__/graphics/entities/buildings/splitter/hr-"..file..".png",
+				priority = "extra-high",
+				width = width*2, height = height*2,
+				shift = util.by_pixel(shiftx, shifty),
+				frame_count = frame_count,
+				line_length = line_length,
+				repeat_count = repeat_count,
+				tint = tint,
+				scale = 0.5
+			}
+		}--[[@as data.Animation]]
+	end
 	return {
-		north =
-		{
-			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/north.png",
-			frame_count = 32,
-			line_length = 8,
-			priority = "extra-high",
-			width = 82,
-			height = 36,
-			shift = util.by_pixel(6, 0),
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-north.png",
-				frame_count = 32,
-				line_length = 8,
-				priority = "extra-high",
-				width = 160,
-				height = 70,
-				shift = util.by_pixel(7, 0),
-				scale = 0.5
+		north = {
+			layers = {
+				make_direction("north", 82, 35, 8, -1),
+				make_direction("north-mask", 82, 35, 8, -1, colour, false),
 			}
 		},
-		east =
-		{
-			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/east.png",
-			frame_count = 32,
-			line_length = 8,
-			priority = "extra-high",
-			width = 46,
-			height = 44,
-			shift = util.by_pixel(4, 12),
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-east.png",
-				frame_count = 32,
-				line_length = 8,
-				priority = "extra-high",
-				width = 90,
-				height = 84,
-				shift = util.by_pixel(4, 13),
-				scale = 0.5
+		east = {
+			layers = {
+				make_direction("east", 45, 80, 4, -4),
+				make_direction("east-mask", 45, 80, 4, -4, colour, false),
 			}
 		},
-		south =
-		{
-			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/south.png",
-			frame_count = 32,
-			line_length = 8,
-			priority = "extra-high",
-			width = 82,
-			height = 32,
-			shift = util.by_pixel(4, 0),
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-south.png",
-				frame_count = 32,
-				line_length = 8,
-				priority = "extra-high",
-				width = 164,
-				height = 64,
-				shift = util.by_pixel(4, 0),
-				scale = 0.5
+		south = {
+			layers = {
+				make_direction("south", 82, 35, 4, 0),
+				make_direction("south-mask", 82, 35, 4, 0, colour, false),
 			}
 		},
-		west =
-		{
-			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/west.png",
-			frame_count = 32,
-			line_length = 8,
-			priority = "extra-high",
-			width = 46,
-			height = 44,
-			shift = util.by_pixel(6, 12),
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-west.png",
-				frame_count = 32,
-				line_length = 8,
-				priority = "extra-high",
-				width = 90,
-				height = 86,
-				shift = util.by_pixel(5, 12),
-				scale = 0.5
-			}
-		}
-	}--[[@as data.Animation4Way]]
-end
----@param colour PM.belt_colours
----@return data.Animation4Way
-function splitter_patch(colour)
-	return {
-		north = util.empty_sprite(),
-		east =
-		{
-			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/east-top_patch.png",
-			frame_count = 32,
-			line_length = 8,
-			priority = "extra-high",
-			width = 46,
-			height = 52,
-			shift = util.by_pixel(4, -20),
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-east-top_patch.png",
-				frame_count = 32,
-				line_length = 8,
-				priority = "extra-high",
-				width = 90,
-				height = 104,
-				shift = util.by_pixel(4, -20),
-				scale = 0.5
+		west = {
+			layers = {
+				make_direction("west", 45, 80, 6, -4),
+				make_direction("west-mask", 45, 80, 6, -4, colour, false),
 			}
 		},
-		south = util.empty_sprite(),
-		west =
-		{
-			filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/west-top_patch.png",
-			frame_count = 32,
-			line_length = 8,
-			priority = "extra-high",
-			width = 46,
-			height = 48,
-			shift = util.by_pixel(6, -18),
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/hr-west-top_patch.png",
-				frame_count = 32,
-				line_length = 8,
-				priority = "extra-high",
-				width = 90,
-				height = 96,
-				shift = util.by_pixel(5, -18),
-				scale = 0.5
-			}
-		}
 	}--[[@as data.Animation4Way]]
 end
 
@@ -293,7 +189,7 @@ end
 ---@alias belt_type "transport"|"splitter"|"underground"|"loader"
 ---@param pictures data.Sprite[]|data.SpriteSheet|data.Sprite
 ---@param type belt_type
----@param colour PM.belt_colours
+---@param colour Color
 function set_variations(pictures, type, colour)
 	--- Handle every variations in an array of sprites
 	if pictures[1] then
@@ -302,26 +198,32 @@ function set_variations(pictures, type, colour)
 		end
 		return
 
-	--- Handle only the first layer
-	elseif pictures.layers then
-		set_variations(pictures.layers[1], type, colour)
-		return
+	--- Make it layered if it wasn't before
+	elseif not pictures.layers then
+		--- Clear any old data
+		for key in pairs(pictures--[[@as table<any,any>]]) do
+			pictures[key] = nil
+		end
+		pictures.layers = {}
 	end
 
-	--- Clear any old data
-	for key in pairs(pictures--[[@as table<any,any>]]) do
-		pictures[key] = nil
-	end
-
-	---@cast pictures data.SpriteParameters
-	pictures.filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/"..type.."/icon.png"
-	pictures.size = 64
-	pictures.scale = 0.25
-	pictures.mipmap_count = 4
+	pictures.layers[1] = {
+		filename = "__periodic-madness__/graphics/icons/buildings/"..type.."-base.png",
+		size = 64,
+		mipmap_count = 4,
+		scale = 0.25,
+	}
+	table.insert(pictures.layers, 2, {
+		filename = "__periodic-madness__/graphics/icons/buildings/"..type.."-mask.png",
+		size = 64,
+		mipmap_count = 4,
+		scale = 0.25,
+		tint = colour
+	}--[[@as data.SpriteParameters]])
 end
 ---@param item data.ItemPrototype|data.EntityPrototype
 ---@param type belt_type
----@param colour PM.belt_colours
+---@param colour Color
 function set_icon(item, type, colour)
 	if not item.icons then
 		item.icons = {}
@@ -331,11 +233,16 @@ function set_icon(item, type, colour)
 	end
 
 	item.icons[1] = {
-		icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/"..type.."/icon.png",
+		icon = "__periodic-madness__/graphics/icons/buildings/"..type.."-base.png",
 		icon_size = 64,
-		scale = 0.5,
 		icon_mipmaps = 4
 	}
+	table.insert(item.icons, 2, {
+		icon = "__periodic-madness__/graphics/icons/buildings/"..type.."-mask.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		tint = colour
+	}--[[@as data.IconData]])
 
 	local pictures = item.pictures
 	if pictures then
@@ -358,8 +265,9 @@ local items = data.raw["item"]
 --MARK: Belt modification
 
 ---@param beltTier any
----@param colour PM.belt_colours
-local function handle_tier(beltTier, colour)
+---@param colour_name PM.belt_colours
+---@param colour Color
+local function handle_tier(beltTier, colour_name, colour)
 	local belt = belts[beltTier[1]]
 	local underground = undergrounds[beltTier[2]]
 	local splitter = splitters[beltTier[3]]
@@ -381,171 +289,143 @@ local function handle_tier(beltTier, colour)
 	splitter.belt_animation_set = belt_animation_set(colour)
 	loader.belt_animation_set = belt_animation_set(colour)
 
+	belt.map_color = colour
+	underground.map_color = colour
+	splitter.map_color = colour
+	loader.map_color = colour
+
 	underground.structure = underground_structure(colour)
 	splitter.structure = splitter_structure(colour)
-	splitter.structure_patch = splitter_patch(colour)
+	splitter.structure_patch = nil
 	-- loader.structure = loader_structure(colour)
 
-	belt.corpse = "pm-"..colour.."-transport-remnant"
-	underground.corpse = "pm-"..colour.."-underground-remnant"
-	splitter.corpse = "pm-"..colour.."-splitter-remnant"
+	belt.corpse = "pm-"..colour_name.."-transport-remnant"
+	underground.corpse = "pm-"..colour_name.."-underground-remnant"
+	splitter.corpse = "pm-"..colour_name.."-splitter-remnant"
 	-- loader.corpse = "pm-"..colour.."-loader-remnant"
 
-	belt.dying_explosion = "pm-"..colour.."-transport-explosion"
-	underground.dying_explosion = "pm-"..colour.."-underground-explosion"
-	splitter.dying_explosion = "pm-"..colour.."-splitter-explosion"
+	belt.dying_explosion = "pm-"..colour_name.."-transport-explosion"
+	underground.dying_explosion = "pm-"..colour_name.."-underground-explosion"
+	splitter.dying_explosion = "pm-"..colour_name.."-splitter-explosion"
 	-- loader.dying_explosion = "pm-"..colour.."-loader-explosion"
 
 	set_icon(belt, "transport", colour)
 	set_icon(underground, "underground", colour)
 	set_icon(splitter, "splitter", colour)
-	set_icon(loader, "loader", colour)
+	-- set_icon(loader, "loader", colour)
 
 	set_icon(belt_item, "transport", colour)
 	set_icon(underground_item, "underground", colour)
 	set_icon(splitter_item, "splitter", colour)
-	set_icon(loader_item, "loader", colour)
+	-- set_icon(loader_item, "loader", colour)
 end
 
 ---@type table<PM.belt_colours,true>
 local coloured = {}
 
 for tier, beltTier in pairs(PM.belts) do
-	local colour = settings.startup["pm-belt-colour-tier-"..tier]
-	if colour then
-		coloured[colour.value--[[@as PM.belt_colours]]] = true
-		handle_tier(beltTier, colour.value--[[@as PM.belt_colours]])
+	local colour_setting = settings.startup["pm-belt-colour-tier-"..tier]
+	if colour_setting then
+		local colour_name = colour_setting.value--[[@as PM.belt_colours]]
+		local colour = colour_table[colour_name]
+		coloured[colour_name] = true
+		handle_tier(beltTier, colour_name, colour)
 	end
 end
 
 ---MARK: Remnants
 
----@param colour PM.belt_colours
----@param order {[1]:string,[2]:string,[3]:string}
+---@param colour Color
+---@param orders {[1]:string,[2]:string,[3]:string}
 ---@return data.CorpsePrototype[]
-local function make_remnants(colour, order)
+local function make_remnants(colour_name, colour, orders)
+	---@param type belt_type
+	---@param order string
+	---@param animation data.RotatedAnimation
+	---@return data.CorpsePrototype
+	local function specific_remnant(type, order, animation)
+		local remnant = {
+			type = "corpse",
+			name = "pm-"..colour_name.."-"..type.."-remnant",
+			order = order,
+			flags = {"placeable-neutral", "not-on-map"},
+			subgroup = "belt-remnants",
+			selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+			tile_width = 1,
+			tile_height = 1,
+			selectable_in_game = false,
+			time_before_removed = 60 * 60 * 15, -- 15 minutes
+			final_render_layer = "remnants",
+			animation = animation
+		}--[[@as data.CorpsePrototype]]
+		set_icon(remnant, type, colour)
+		return remnant
+	end
+	---@param type belt_type
+	---@param is_mask boolean
+	---@param size {[1]:int,[2]:int}
+	---@param shift {[1]:int,[2]:int}
+	---@param hr_size {[1]:int,[2]:int}
+	---@param hr_shift {[1]:int,[2]:int}
+	---@return data.RotatedAnimation
+	local function make_anim(type, is_mask, size, shift, hr_size, hr_shift)
+		local variation = is_mask and "mask.png" or "base.png"
+		local direction_count = type == "underground" and 8 or 4
+		return {
+			filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/remnants-"..variation,
+			line_length = 1,
+			width = size[1], height = size[2],
+			frame_count = 1, variation_count = 1,
+			axially_symmetrical = false,
+			direction_count = direction_count,
+			shift = shift,
+			tint = colour,
+			hr_version = {
+				filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/hr-remnants-"..variation,
+				line_length = 1,
+				width = hr_size[1], height = hr_size[2],
+				frame_count = 1, variation_count = 1,
+				axially_symmetrical = false,
+				direction_count = direction_count,
+				shift = hr_shift,
+				tint = colour,
+				scale = 0.5,
+			}
+		}--[[@as data.RotatedAnimation]]
+	end
 	return {
-		{
-			type = "corpse",
-			name = "pm-"..colour.."-transport-remnant",
-			order = order[1],
-			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/icon.png",
-			icon_size = 64, icon_mipmaps = 4,
-			flags = {"placeable-neutral", "not-on-map"},
-			subgroup = "belt-remnants",
-			selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-			tile_width = 1,
-			tile_height = 1,
-			selectable_in_game = false,
-			time_before_removed = 60 * 60 * 15, -- 15 minutes
-			final_render_layer = "remnants",
-			animation = make_rotated_animation_variations_from_sheet(2,{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/remnants/remnants.png",
-				line_length = 1,
-				width = 54,
-				height = 52,
-				frame_count = 1,
-				variation_count = 1,
-				axially_symmetrical = false,
-				direction_count = 4,
-				shift = util.by_pixel(1, 0),
-				hr_version =
-				{
-					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/remnants/hr-remnants.png",
-					line_length = 1,
-					width = 106,
-					height = 102,
-					frame_count = 1,
-					variation_count = 1,
-					axially_symmetrical = false,
-					direction_count = 4,
-					shift = util.by_pixel(1, -0.5),
-					scale = 0.5
-				}
-			}--[[@as data.SpriteSheet]]),
-		},
-		{
-			type = "corpse",
-			name = "pm-"..colour.."-underground-remnant",
-			order=order[2],
-			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/icon.png",
-			icon_size = 64, icon_mipmaps = 4,
-			flags = {"placeable-neutral", "not-on-map", "building-direction-8-way"},
-			subgroup = "belt-remnants",
-			selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-			tile_width = 1,
-			tile_height = 1,
-			selectable_in_game = false,
-			time_before_removed = 60 * 60 * 15, -- 15 minutes
-			final_render_layer = "remnants",
-			remove_on_tile_placement = false,
-			animation =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/remnants/remnants.png",
-				line_length = 1,
-				width = 78,
-				height =72,
-				frame_count = 1,
-				variation_count = 1,
-				axially_symmetrical = false,
-				direction_count = 8,
-				shift = util.by_pixel(10, 3),
-				hr_version =
-				{
-					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/remnants/hr-remnants.png",
-					line_length = 1,
-					width = 156,
-					height = 144,
-					frame_count = 1,
-					variation_count = 1,
-					axially_symmetrical = false,
-					direction_count = 8,
-					shift = util.by_pixel(10.5, 3),
-					scale = 0.5
-				}
+		specific_remnant("transport", orders[1], make_rotated_animation_variations_from_sheet(2, {
+			layers = {
+				make_anim("transport", false,
+					{54, 52}, util.by_pixel(1, 0),
+					{106, 102}, util.by_pixel(1, -0.5)
+				),
+				make_anim("transport", true,
+					{54, 52}, util.by_pixel(1, 0),
+					{106, 102}, util.by_pixel(1, -0.5)
+				),
 			}
-		},
-		{
-			type = "corpse",
-			name = "pm-"..colour.."-splitter-remnant",
-			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/icon.png",
-			icon_size = 64, icon_mipmaps = 4,
-			flags = {"placeable-neutral", "not-on-map"},
-			subgroup = "belt-remnants",
-			order = "a-g-a",
-			selection_box = {{-0.9, -0.5}, {0.9, 0.5}},
-			tile_width = 2,
-			tile_height = 1,
-			selectable_in_game = false,
-			time_before_removed = 60 * 60 * 15, -- 15 minutes
-			final_render_layer = "remnants",
-			remove_on_tile_placement = false,
-			animation =
-			{
-				filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/remnants/remnants.png",
-				line_length = 1,
-				width = 96,
-				height = 96,
-				frame_count = 1,
-				variation_count = 1,
-				axially_symmetrical = false,
-				direction_count = 4,
-				shift = util.by_pixel(4, 1.5),
-				hr_version =
-				{
-					filename = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/remnants/hr-remnants.png",
-					line_length = 1,
-					width = 190,
-					height = 190,
-					frame_count = 1,
-					variation_count = 1,
-					axially_symmetrical = false,
-					direction_count = 4,
-					shift = util.by_pixel(3.5, 1.5),
-					scale = 0.5
-				}
+		})),
+		specific_remnant("underground", orders[2], {
+			layers = {
+				make_anim("underground", false,
+					{78, 72}, util.by_pixel(10, 3),
+					{156, 144}, util.by_pixel(10.5, 3)
+				),
+				make_anim("underground", true,
+					{78, 72}, util.by_pixel(10, 3),
+					{156, 144}, util.by_pixel(10.5, 3)
+				)
 			}
-		}
+		}),
+		specific_remnant("splitter", orders[3], {
+			layers = {
+				make_anim("splitter", false,
+					{96, 96}, util.by_pixel(4, 1.5),
+					{190, 190}, util.by_pixel(3.5, 1.5)
+				),
+			}
+		}),
 	}--[[@as data.CorpsePrototype[] ]]
 end
 
@@ -553,197 +433,109 @@ local sounds = require("__base__.prototypes.entity.sounds")
 local explosion_animations = require("__base__.prototypes.entity.explosion-animations")
 
 --MARK: Explosions
----@param colour PM.belt_colours
----@param order {[1]:string,[2]:string,[3]:string}
+---@param colour_name string
+---@param colour Color
+---@param orders {[1]:string,[2]:string,[3]:string}
 ---@return data.EntityPrototype[]
-local function make_explosions(colour, order)
+local function make_explosions(colour_name, colour, orders)
+	---@param type belt_type
+	---@param order string
+	---@param animation data.Animation
+	---@param effects data.TriggerEffect[]
+	---@return data.ExplosionPrototype
+	local function create_explosion(type, order, animation, effects)
+		local explosion = {
+			type = "explosion",
+			name = "pm-"..colour_name.."-"..type.."-explosion",
+			flags = {"not-on-map", "hidden"},
+			subgroup = "belt-explosions",
+			order = order,
+			height = 0,
+			animations = animation,
+			smoke = "smoke-fast",
+			smoke_count = 2,
+			smoke_slow_down_factor = 1,
+			sound = sounds.small_explosion(0.5),
+			created_effect = {
+				type = "direct",
+				action_delivery = {
+					type = "instant",
+					target_effects = effects
+				}
+			}
+		}--[[@as data.ExplosionPrototype]]
+		set_icon(explosion, type, colour)
+		return explosion
+	end
+	---@param type belt_type
+	---@param name string
+	---@param height float
+	---@param height_deviation float
+	---@param speed float
+	---@param speed_deviation float
+	---@param center float
+	---@param center_deviation float
+	---@param offset_deviation? {[1]:{[1]:float,[2]:float},[2]:{[1]:float,[2]:float}}
+	---@return data.CreateParticleTriggerEffectItem
+	local function create_particle(type, name, height, height_deviation, speed, speed_deviation, center, center_deviation, offset_deviation)
+		offset_deviation = offset_deviation or {{-0.5, -0.5}, {0.5, 0.5}}
+		return {
+			type = "create-particle",
+			repeat_count = 1,
+			particle_name = "pm-"..colour_name.."-"..type.."-"..name,
+			offset_deviation = offset_deviation,
+			initial_height = height,
+			initial_height_deviation = height_deviation,
+			initial_vertical_speed = speed,
+			initial_vertical_speed_deviation = speed_deviation,
+			speed_from_center = center,
+			speed_from_center_deviation = center_deviation
+		}--[[@as data.CreateParticleTriggerEffectItem]]
+	end
 	return {
-		{
-			type = "explosion",
-			name = "pm-"..colour.."-transport-explosion",
-			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/transport/icon.png",
-			icon_size = 64, icon_mipmaps = 4,
-			flags = {"not-on-map", "hidden"},
-			subgroup = "belt-explosions",
-			order = order[1],
-			height = 0,
-			animations = util.empty_sprite(),
-			--light = default_light(20),
-			smoke = "smoke-fast",
-			smoke_count = 2,
-			smoke_slow_down_factor = 1,
-			sound = sounds.small_explosion(0.5),
-			created_effect = { type = "direct", action_delivery = { type = "instant", target_effects = {
-				{
-					type = "create-particle",
-					repeat_count = 1,
-					particle_name = "pm-"..colour.."-transport-metal-particle-medium",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.1,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.09,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.04,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 4,
-					particle_name = "pm-"..colour.."-transport-metal-particle-small",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.1,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.071,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.03,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 5,
-					particle_name = "pm-"..colour.."-transport-mechanical-component-particle-medium",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.1,
-					initial_height_deviation = 0.32,
-					initial_vertical_speed = 0.041,
-					initial_vertical_speed_deviation = 0.042,
-					speed_from_center = 0.01,
-					speed_from_center_deviation = 0.05
-				}
-			}}}
-		},
-		{
-			type = "explosion",
-			name = "pm-"..colour.."-underground-explosion",
-			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/underground/icon.png",
-			icon_size = 64, icon_mipmaps = 4,
-			flags = {"not-on-map", "hidden"},
-			subgroup = "belt-explosions",
-			order = order[2],
-			height = 0,
-			animations = explosion_animations.small_explosion(),
-			--light = default_light(20),
-			smoke = "smoke-fast",
-			smoke_count = 2,
-			smoke_slow_down_factor = 1,
-			sound = sounds.small_explosion(0.5),
-			created_effect = { type = "direct", action_delivery = { type = "instant", target_effects = {
-				{
-					type = "create-particle",
-					repeat_count = 10,
-					particle_name = "pm-"..colour.."-underground-metal-particle-medium",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.2,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.081,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.03,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 25,
-					particle_name = "pm-"..colour.."-underground-metal-particle-small",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.2,
-					initial_height_deviation = 0.43,
-					initial_vertical_speed = 0.087,
-					initial_vertical_speed_deviation = 0.048,
-					speed_from_center = 0.05,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 2,
-					particle_name = "pm-"..colour.."-underground-metal-particle-medium-colored",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.2,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.042,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.02,
-					speed_from_center_deviation = 0.05
-				}
-			}}}
-		},
-		{
-			type = "explosion",
-			name = "pm-"..colour.."-splitter-explosion",
-			icon = "__periodic-madness__/graphics/belt-colours/"..colour.."/splitter/icon.png",
-			icon_size = 64, icon_mipmaps = 4,
-			flags = {"not-on-map", "hidden"},
-			subgroup = "belt-explosions",
-			order = order[3],
-			height = 0,
-			animations = explosion_animations.small_explosion(),
-			--light = default_light(20),
-			smoke = "smoke-fast",
-			smoke_count = 2,
-			smoke_slow_down_factor = 1,
-			sound = sounds.small_explosion(0.5),
-			created_effect = { type = "direct", action_delivery = { type = "instant", target_effects = {
-				{
-					type = "create-particle",
-					repeat_count = 13,
-					particle_name = "pm-"..colour.."-splitter-metal-particle-medium",
-					offset_deviation = { { -0.5, -0.5977 }, { 0.5, 0.5977 } },
-					initial_height = 0.3,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.047,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.05,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 25,
-					particle_name = "pm-"..colour.."-splitter-metal-particle-small",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.6,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.049,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.05,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 3,
-					particle_name = "pm-"..colour.."-splitter-long-metal-particle-medium",
-					offset_deviation = { { -0.6953, -0.5977 }, { 0.6953, 0.5977 } },
-					initial_height = 0.4,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.072,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.03,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 3,
-					particle_name = "pm-"..colour.."-splitter-metal-particle-big",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.2,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.05,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.05,
-					speed_from_center_deviation = 0.05
-				},
-				{
-					type = "create-particle",
-					repeat_count = 3,
-					particle_name = "pm-"..colour.."-splitter-mechanical-component-particle-medium",
-					offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-					initial_height = 0.2,
-					initial_height_deviation = 0.5,
-					initial_vertical_speed = 0.029,
-					initial_vertical_speed_deviation = 0.05,
-					speed_from_center = 0.04,
-					speed_from_center_deviation = 0.05
-				}
-			}}}
-		}
+		create_explosion("transport", orders[1], util.empty_sprite(), {
+			create_particle("transport", "metal-particle-medium",
+				0.1, 0.50, 0.090, 0.050, 0.04, 0.05
+			),
+			create_particle("transport", "metal-particle-small",
+				0.1, 0.50, 0.071, 0.050, 0.03, 0.05
+			),
+			create_particle("transport", "mechanical-component-particle-medium",
+				0.1, 0.32, 0.041, 0.042, 0.01, 0.05
+			)
+		}),
+
+		create_explosion("underground", orders[2], explosion_animations.small_explosion(), {
+			create_particle("underground", "metal-particle-medium",
+				0.2, 0.50, 0.081, 0.050, 0.03, 0.05
+			),
+			create_particle("underground", "metal-particle-small",
+				0.2, 0.43, 0.087, 0.048, 0.05, 0.05
+			),
+			create_particle("underground", "metal-particle-medium-colored",
+				0.2, 0.50, 0.042, 0.050, 0.02, 0.05
+			)
+		}),
+
+		create_explosion("splitter", orders[3], explosion_animations.small_explosion(), {
+			create_particle("splitter", "metal-particle-medium",
+				0.3, 0.50, 0.047, 0.050, 0.05, 0.05,
+				{ { -0.5000, -0.5977 }, { 0.5000, 0.5977 } }
+			),
+			create_particle("splitter", "metal-particle-small",
+				0.6, 0.50, 0.049, 0.050, 0.05, 0.05
+			),
+			create_particle("splitter", "long-metal-particle-medium",
+				0.4, 0.50, 0.072, 0.050, 0.03, 0.05,
+				{ { -0.6953, -0.5977 }, { 0.6953, 0.5977 } } -- Why are these different?
+			),
+			create_particle("splitter", "metal-particle-big",
+				0.2, 0.50, 0.050, 0.050, 0.05, 0.05
+			),
+			create_particle("splitter", "mechanical-component-particle-medium",
+				0.2, 0.50, 0.029, 0.050, 0.04, 0.05
+			)
+		}),
 	}--[[@as data.EntityPrototype[] ]]
 end
 
@@ -1123,7 +915,7 @@ end
 
 --MARK: Particles
 
----@param colour PM.belt_colours
+---@param colour Color
 ---@param color1 Color
 ---@return data.EntityPrototype[]
 local function make_particles(colour, color1)
@@ -1203,29 +995,10 @@ end
 
 --MARK: Dynamic Color
 
----@type table<PM.belt_colours,{[1]:string,[2]:string,[3]:string}>
-local order_table = {
-  ["red"]			= {"b-a-a", "b-b-a", "b-c-a"},
-  ["orange"]	= {"b-a-b", "b-b-b", "b-c-b"},
-  ["yellow"]	= {"b-a-c", "b-b-c", "b-c-c"},
-  ["green"]		= {"b-a-d", "b-b-d", "b-c-d"},
-  ["blue"]		= {"b-a-e", "b-b-e", "b-c-e"},
-  ["purple"]	= {"b-a-f", "b-b-f", "b-c-f"},
-}
----@type table<PM.belt_colours, Color>
-local color_table = {
-  ["red"]			= {0.886, 0.090, 0.024},
-  ["orange"]	= {0.898, 0.435, 0.031},
-  ["yellow"]	= {0.898, 0.659, 0.031},
-  ["green"]		= {0.302, 0.847, 0.196},
-  ["blue"]		= {0.024, 0.596, 0.816},
-  ["purple"]	= {0.322, 0.086, 1.000},
-}
-
-for colour in pairs(coloured) do
-	local colour_order = order_table[colour]
-	local colour_code = color_table[colour]
-	data:extend(make_remnants(colour, colour_order))
-	data:extend(make_explosions(colour, colour_order))
-	data:extend(make_particles(colour, colour_code))
+for colour_name in pairs(coloured) do
+	local colour_order = order_table[colour_name]
+	local colour = colour_table[colour_name]
+	data:extend(make_remnants(colour_name, colour, colour_order))
+	data:extend(make_explosions(colour_name, colour, colour_order))
+	data:extend(make_particles(colour_name, colour))
 end
