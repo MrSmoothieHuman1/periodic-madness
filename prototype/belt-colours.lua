@@ -352,7 +352,7 @@ local function make_remnants(colour_name, colour, orders)
 			axially_symmetrical = false,
 			direction_count = direction_count,
 			shift = shift,
-			tint = colour,
+			tint = is_mask and colour or nil,
 			hr_version = {
 				filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/hr-remnants-"..variation,
 				line_length = 1,
@@ -361,7 +361,7 @@ local function make_remnants(colour_name, colour, orders)
 				axially_symmetrical = false,
 				direction_count = direction_count,
 				shift = hr_shift,
-				tint = colour,
+				tint = is_mask and colour or nil,
 				scale = 0.5,
 			}
 		}--[[@as data.RotatedAnimation]]
@@ -394,6 +394,10 @@ local function make_remnants(colour_name, colour, orders)
 		specific_remnant("splitter", orders[3], {
 			layers = {
 				make_anim("splitter", false,
+					{96, 96}, util.by_pixel(4, 1.5),
+					{190, 190}, util.by_pixel(3.5, 1.5)
+				),
+				make_anim("splitter", true,
 					{96, 96}, util.by_pixel(4, 1.5),
 					{190, 190}, util.by_pixel(3.5, 1.5)
 				),
