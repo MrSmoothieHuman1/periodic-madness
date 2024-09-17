@@ -1,1 +1,1 @@
-
+require("prototype.belt-colours")
