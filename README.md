@@ -1,5 +1,6 @@
 # Periodic Madness
-[![shield](https://img.shields.io/badge/Ko--fi-Donate%20-orange?logo=kofi&logoColor=orange)](https://ko-fi.com/blackatm38526)
+[![shield](https://img.shields.io/badge/Ko--fi-Donate%20-ff0000?logo=kofi&logoColor=ffffff)](https://ko-fi.com/blackatm38526)
+[![shield](https://img.shields.io/badge/dynamic/json?color=orange&label=Factorio&query=downloads_count&suffix=%20downloads&url=https%3A%2F%2Fmods.factorio.com%2Fapi%2Fmods%2Fperiodic-madness)](https://mods.factorio.com/mod/periodic-madness)
 
 (WIP: expect bugs and the like.)
 This mod aims to add most, if not all elements of the periodic table to Factorio. Complex new production chains to refine and produce new ores and resources for your growing factory, and delving deeper into chemistry and production chains than a normal vanilla playthrough.
