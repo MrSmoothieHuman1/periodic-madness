@@ -682,13 +682,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-glass-fibers",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/glass-fiberisation.png",
     subgroup = "pm-glassing",
     order = "d",
     enabled = false,
     energy_required = 1,
     show_amount_in_title = true,
+    main_product = "pm-glass-fibers",
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 1)
@@ -696,7 +695,6 @@ data:extend({
     results =
     {
       PM.product("pm-glass-fibers", 5),
-
       PM.product_chance("pm-glass-shards", 2, 0.5),
     }
   },

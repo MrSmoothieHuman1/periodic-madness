@@ -295,7 +295,7 @@ data:extend({
     type = "autoplace-control",
     category = "resource",
     name = "pm-metalloids",
-    localised_name = {"","[entity=pm-metalloid-ore] ", {"entity-name.pm-metalloid-ore"}},
+    localised_name = {"","[entity=pm-metalloids] ", {"entity-name.pm-metalloids"}},
     richness = true,
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
@@ -323,7 +323,7 @@ data:extend({
 
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "pm-metalloid-ore",
+      name = "pm-metalloids",
       order = "b-z",
       base_density = 7,
       base_spots_per_km2 = 1,
@@ -597,6 +597,8 @@ local pm_productivity_list = {
   "pm-plastic-advanced-advanced-transition-metal-science-pack",
   "pm-plastic-reactive-non-metals-science-pack",
   "pm-plastic-post-transition-metal-science-pack",
+  "pm-plastic-alkali-metal-science-pack",
+  "pm-plastic-metalloid-science-pack",
   "pm-transition-iron-leeching",
   "pm-chromic-transition-iron-leeching",
   "pm-transition-copper-leeching",

@@ -289,26 +289,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-cadnium-zinc-solder",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/iron-melting.png",
-    subgroup = "pm-metal-melting",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-zinc-plate", 10),
-      PM.ingredient("pm-cadnium-plate", 5),
-      PM.ingredient("pm-molten-iron", 2.5, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-solder", 10, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-water-deacifying",
     category = "pm-acids",
     subgroup = "pm-sulfur-rnm",

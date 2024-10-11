@@ -110,9 +110,9 @@ my_data =
     {type = "item", name = "express-transport-belt", ib_data = {ib_let_badge ="B4"} },
     {type = "item", name = "express-underground-belt", ib_data = {ib_let_badge ="U4"} },
     {type = "item", name = "express-splitter", ib_data = {ib_let_badge ="S4"} },
-    {type = "item", name = "pm-high-denisty-transport-belt", ib_data = {ib_let_badge ="B5"} },
+    {type = "item", name = "pm-high-density-transport-belt", ib_data = {ib_let_badge ="B5"} },
     {type = "item", name = "pm-high-density-underground-belt", ib_data = {ib_let_badge ="U5"} },
-    {type = "item", name = "pm-high-denisty-splitter", ib_data = {ib_let_badge ="S5"} },
+    {type = "item", name = "pm-high-density-splitter", ib_data = {ib_let_badge ="S5"} },
 
     {type = "item", name = "electronic-circuit", ib_data = {ib_let_badge ="GC"} },
     {type = "item", name = "pm-basic-breadboard", ib_data = {ib_let_badge ="GB"} },
