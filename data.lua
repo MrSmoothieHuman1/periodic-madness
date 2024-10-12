@@ -486,9 +486,7 @@ data:extend({
     }
   }--[[@as data.ResourceEntityPrototype]]
 })
-local ChunkChangeIron = data.raw["resource"]["iron-ore"]
-
-ChunkChangeIron.minable = 
+data.raw["resource"]["iron-ore"].minable = 
 {
     hardness = 1,
     mining_particle = "iron-ore-particle",
@@ -496,15 +494,13 @@ ChunkChangeIron.minable =
     result = "pm-iron-chunk"
 }
 
-local ChunkChangeCopper = data.raw["resource"]["copper-ore"]
-
-ChunkChangeCopper.minable =
-    {
-        hardness = 1,
-        mining_particle = "copper-ore-particle",
-        mining_time = 1,
-        result = "pm-copper-chunk"
-    }
+data.raw["resource"]["copper-ore"].minable =
+{
+    hardness = 1,
+    mining_particle = "copper-ore-particle",
+    mining_time = 1,
+    result = "pm-copper-chunk"
+}
 
 
 local pm_productivity_list = {

@@ -277,7 +277,7 @@ data:extend({
       priority = "medium",
       hr_version =
       {
-        filename = "__base__/graphics/equipment/hr-lithium-battery-equipment-icon.png",
+        filename = "__periodic-madness__/graphics/equipment/hr-lithium-battery-equipment-icon.png",
         width = 64,
         height = 128,
         priority = "medium",

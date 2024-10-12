@@ -1684,7 +1684,7 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
-          width = 94,
+          width = 90,
           height = 86,
           shift = util.by_pixel(5, 12),
           scale = 0.5
@@ -1735,7 +1735,7 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
-          width = 94,
+          width = 90,
           height = 96,
           shift = util.by_pixel(5, -18),
           scale = 0.5
@@ -2438,7 +2438,7 @@ data:extend({
       emissions_per_minute = 2.5,
       fuel_inventory_size = 1,
       fuel_category = "chemical",
-      light_flicker = false,
+      light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
     },
     crafting_categories = { "pm-crushing" },
     crafting_speed = 1,
@@ -2756,17 +2756,18 @@ data:extend({
           line_length = 8,
           shift = util.by_pixel(0, 2),
           animation_speed = 0.5,
-          hr_version =
-          {
-            filename = "__periodic-madness__/graphics/entities/buildings/crusher-2/hr-crusher-2.png",
-            width = 214,
-            height = 226,
-            frame_count = 32,
-            line_length = 8,
-            shift = util.by_pixel(0, 2),
-            animation_speed = 0.5,
-            scale = 0.5
-          }
+          -- FIXME: File is missing
+          -- hr_version =
+          -- {
+          --   filename = "__periodic-madness__/graphics/entities/buildings/crusher-2/hr-crusher-2.png",
+          --   width = 214,
+          --   height = 226,
+          --   frame_count = 32,
+          --   line_length = 8,
+          --   shift = util.by_pixel(0, 2),
+          --   animation_speed = 0.5,
+          --   scale = 0.5
+          -- }
         },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-shadow.png",
@@ -3643,17 +3644,19 @@ data:extend({
           animation_speed = 0.25,
           scale = 1.15,
           shift = util.by_pixel(-2, 0),
-          hr_version =
-          {
-            filename ="__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler.png",
-            width = (32 * 7) * 2,
-            height = (32 * 7) * 2,
-            frame_count = 32,
-            line_length = 8,
-            animation_speed = 0.25,
-            shift = util.by_pixel(-2, 0),
-            scale = 0.575,
-          }
+          -- FIXME: File is bad
+          -- hr_version =
+          -- {
+          --   filename =
+          --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler.png",
+          --   width = 32 * 7 * 2,
+          --   height = 32 * 7 * 2,
+          --   frame_count = 32,
+          --   line_length = 8,
+          --   animation_speed = 0.25,
+          --   shift = util.by_pixel(-2, 0),
+          --   scale = 0.575,
+          -- }
         },
         {
           filename =
@@ -3665,19 +3668,20 @@ data:extend({
           shift = util.by_pixel(64, 10),
           draw_as_shadow = true,
           animation_speed = 0.25,
-          hr_version =
-          {
-            filename =
-            "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler-shadow.png",
-            width = (32 * 7) * 2,
-            height = (32 * 7) * 2,
-            frame_count = 32,
-            line_length = 8,
-            draw_as_shadow = true,
-            shift = util.by_pixel(64, 10),
-            animation_speed = 0.25,
-            scale = 0.575
-          }
+          -- FIXME: File is bad
+          -- hr_version =
+          -- {
+          --   filename =
+          --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/hr-circuit-megassembler-shadow.png",
+          --   width = 32 * 7 * 2,
+          --   height = 32 * 7 * 2,
+          --   frame_count = 32,
+          --   line_length = 8,
+          --   draw_as_shadow = true,
+          --   shift = util.by_pixel(64, 10),
+          --   animation_speed = 0.25,
+          --   scale = 0.575
+          -- }
         }
       }
     },
@@ -4655,7 +4659,7 @@ data:extend({
         },
       }
     }
-  },
+  }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "furnace",
     name = "pm-CO2-nullifer",
@@ -4902,7 +4906,7 @@ data:extend({
     energy_usage = "1kW",
     crafting_speed = 1,
     energy_source = { type = "void" },
-    emissions_per_minute = -40 + -10,
+    emissions_per_minute = -50,
     animation =
     {
       layers =
@@ -4953,7 +4957,7 @@ data:extend({
         }
       }
     }
-  },
+  }--[[@as data.FurnacePrototype]],
   {
     type = "assembling-machine",
     name = "pm-washing-plant-2",
@@ -8238,7 +8242,7 @@ data:extend({
       {
         {
           position = { 0, 0.5 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         }
       },
       pipe_covers =
@@ -8685,19 +8689,19 @@ data:extend({
       {
         {
           position = { 0, 0 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 0, 0 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 0, 0 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { 0, 0 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         }
       }
     },
@@ -8876,51 +8880,51 @@ data:extend({
       {
         {
           position = { -2, -2 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 0, -2 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 2, -2 },
-          direction = defines.direction.north
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 2, -2 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 2, 0 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 2, 2 },
-          direction = defines.direction.east
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = { 2, 2 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { 0, 2 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { -2, 2 },
-          direction = defines.direction.south
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { -2, 2 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         },
         {
           position = { -2, 0 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         },
         {
           position = { -2, -2 },
-          direction = defines.direction.west
+          direction = defines.direction.west --[[@as int]]
         }
       },
       connection_patches_connected =
@@ -9371,7 +9375,7 @@ data:extend({
         pipe_connections = { { type = "output", position = { 3.5, 0.5 } } },
       },
     }
-  },
+  }--[[@as data.AssemblingMachinePrototype]],
   {
     type = "assembling-machine",
     name = "pm-electrolysis-plant-2",
@@ -9653,7 +9657,7 @@ data:extend({
         },
       }
     }
-  },
+  }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "solar-panel",
     name = "pm-walkable-solar-panel-1",
