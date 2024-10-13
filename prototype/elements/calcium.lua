@@ -26,15 +26,6 @@ data:extend({
     order = "b",
     stack_size = 150
   },
-  {
-    type = "item",
-    name = "pm-chalk",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/chalk.png",
-    subgroup = "pm-calcium-aem",
-    order = "c",
-    stack_size = 500
-  },
 
   {
     type = "recipe",
@@ -90,23 +81,6 @@ data:extend({
     {
       PM.product("pm-calcium-ore", 2),
       PM.product_chance("pm-carbon", 1, 0.5)
-    }
-  } --[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-chalk-forming",
-    subgroup = "pm-calcium-aem",
-    category = "crafting",
-    order = "c",
-    energy_required = 2,
-    enabled = true,
-    ingredients =
-    {
-      PM.ingredient("pm-calcium-dust", 4)
-    },
-    results =
-    {
-      PM.product("pm-chalk", 1)
     }
   } --[[@as data.RecipePrototype]],
 })

@@ -122,7 +122,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-chalk", 2),
+      PM.ingredient("pm-calcium-ore", 4),
       PM.ingredient("pm-tin-chunks", 4),
       PM.ingredient("pm-hydrochloric-acid", 25, "fluid")
     },
