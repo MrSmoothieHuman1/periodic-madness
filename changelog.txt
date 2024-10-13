@@ -13,7 +13,6 @@ Date: 2024-08-09
     - Added robochargers and robostashers, like the thing from that one mod.
     - Added an even better tier of water electrolysis, using a Nitrogen-doped nickel-molybdenum-phosphide catalyst. Why? because i wouldnt be a good devman if i wasnt sitting here talking to you, now would i?
     - Added a more efficient way to make plastic pellets using yttrium catalysts.
-    - Added polystyrene and polystyrene packaging, as a more efficient way to transport certain items.
     - Added a better recipe for brass plates to fit in with the other alloys, which takes lead and arsenic.
     - Added some more technology descriptions.
     - Gave Health Bio-Module technologies a crafting speed bost, with 4 tiers giving you 1.5 crafting speed.
@@ -39,7 +38,6 @@ Date: 2024-08-09
     - Changed wiring to only need the metal and not another prerequisite item.
     - Gave big and behemoth biters fire resistance, and gave big and behemoth spitters acid/poison resistances.
     - Nerfed flamethrowers. Plus changed their usable fluids.
-    - Buffed tier 4 producitvity modules to have 14% productivity instead of 12%.
     - Remade molybdenite powder's icon.
     - Rerendered almost every item in the game to use HDRI's. WHERE HAVE THESE BEEN MY ENTIRE LIFE SWEET GOOGLILY
     - Changed stainless steel to also take molybdenum.
@@ -61,7 +59,6 @@ Date: 2024-08-09
     - Increased military 3's cost from 100 to 300.
     - Increased Indium processing's cost from 75(??) to 200.
     - Increased Bimsuth CO2 electrolysis's cost from 50(????) to 250.
-    - Re-textured the fiberglass icon.
     - Figured out how to mimicry the copper wire model, and rerendered everything that used a recolour of that icon.
     - Remade bismite to also have the same colour-changing effect as the bismuth itself.
     - Changed Oscilliscopes to be slightly cheaper, but take lubricant.
