@@ -55,7 +55,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-germanium-ore-concentrate",
-        --enabled = false,
+        enabled = false,
         energy_required = 18,
         category = "pm-crushing",
         subgroup = "pm-germanium-mt",
@@ -78,7 +78,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-concentrate-seperation",
-       --enabled = false,
+       enabled = false,
         energy_required = 9,
         category = "pm-acids",
         subgroup = "pm-germanium-mt",
@@ -98,7 +98,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-germanium-sulfide-to-oxide",
-        --enabled = false,
+        enabled = false,
         energy_required = 6,
         category = "chemistry",
         subgroup = "pm-germanium-mt",
@@ -118,7 +118,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-germanium-oxide-to-tetrachloride",
-        --enabled = false,
+        enabled = false,
         energy_required = 6,
         category = "chemistry",
         subgroup = "pm-germanium-mt",
@@ -138,7 +138,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-germanium-tetrachloride-seperation",
-        --enabled = false,
+        enabled = false,
         energy_required = 3,
         category = "chemistry",
         subgroup = "pm-germanium-mt",

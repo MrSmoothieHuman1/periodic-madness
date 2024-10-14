@@ -3482,7 +3482,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("germanium-ore-concentrate"),
+      PM.unlock_recipe("pm-concentrate-seperation"),
+      PM.unlock_recipe("pm-germanium-sulfide-to-oxide"),
+      PM.unlock_recipe("pm-germanium-oxide-to-tetrachloride"),
+      PM.unlock_recipe("pm-germanium-tetrachloride-seperation")
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock" },
     unit =

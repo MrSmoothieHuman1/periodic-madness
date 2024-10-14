@@ -302,7 +302,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-air-filter", 1),
-      PM.ingredient("pm-chalk", 4)
+      PM.ingredient("pm-calcium-ore", 4)
     },
     results =
     {
