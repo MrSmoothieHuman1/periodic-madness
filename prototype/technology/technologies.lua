@@ -3488,7 +3488,7 @@ data:extend({
       PM.unlock_recipe("pm-germanium-oxide-to-tetrachloride"),
       PM.unlock_recipe("pm-germanium-tetrachloride-seperation")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 350,
