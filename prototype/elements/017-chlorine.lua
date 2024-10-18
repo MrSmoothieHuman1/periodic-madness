@@ -125,5 +125,27 @@ data:extend({
       PM.product_range("pm-chlorine", 8, 12, "fluid"),
       PM.product_range("pm-chloroform", 6, 12, "fluid")
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-hydrochloric-acid-neutralisation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/HCl-neutralisation.png",
+    energy_required = 1,
+    enabled = false,
+    category = "pm-washing",
+    subgroup = "pm-chlorine-rnm",
+    order = "ca",
+    ingredients = 
+    {
+      PM.ingredient("pm-hydrochloric-acid", 20, "fluid"),
+      PM.ingredient("pm-calcium-ore", 6)
+    },
+    results = 
+    {
+      PM.product_range_chance("pm-calcium-chloride", 0, 3, 0.5),
+      PM.product_range("pm-hydrogen-gas", 14, 20),
+      PM.product_range("pm-chlorine", 8, 16)
+    }
+  }
 })

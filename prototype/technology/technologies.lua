@@ -794,29 +794,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-sulfuric-acid-dilution",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/sulfuric-acid-dilution",
-    effects =
-    {
-      PM.unlock_recipe("pm-sulfuric-acid-to-acidic-water")
-    },
-    prerequisites = {"pm-alternative-science-pack-unlock", "sulfur-processing" },
-    unit =
-    {
-      count = 100,
-      ingredients =
-      {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-alternative-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
-      },
-      time = 30
-    }
-  },
-  {
-    type = "technology",
     name = "pm-advanced-advanced-transition-metal-pack-unlock",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-advanced-transition-metal-unlock.png",

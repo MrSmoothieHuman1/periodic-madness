@@ -166,7 +166,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-sulfuric-acid-to-acidic-water"),
-      PM.unlock_recipe("pm-water-deacifying")
+      PM.unlock_recipe("pm-water-deacifying"),
+      PM.unlock_recipe("pm-hydrochloric-acid-neutralisation")
     },
     prerequisites = {"sulfur-processing" },
     unit =
