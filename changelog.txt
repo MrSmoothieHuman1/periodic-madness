@@ -79,6 +79,7 @@ Date: 2024-08-09
     - Changed Polonium reactors neighbour bonus to 25%.
     - Buffed max length of the max tier undergrounds to 12.
     - Deleted chalk.
+    - Changed oleum-based sulfur to take 3 vanadium-oxide catalyts instead of 4.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

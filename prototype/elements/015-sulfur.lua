@@ -20,7 +20,7 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
-      PM.product_range("water", 18, 20, "fluid"),
+      PM.product_range("water", 12, 20, "fluid"),
       PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
@@ -43,7 +43,7 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
-      PM.product_range("water", 18, 20, "fluid"),
+      PM.product_range("water", 12, 20, "fluid"),
       PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
@@ -105,14 +105,14 @@ data:extend({
     {
       PM.ingredient("pm-sulfur-dioxide", 10, "fluid"),
       PM.ingredient("pm-oxygen-gas", 20, "fluid"),
-      PM.ingredient("pm-vanadium-oxide-catalyst", 4),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 3),
       PM.ingredient("pm-potassium", 2)
     },
     results =
     {
       PM.product("pm-sulfur-trioxide", 10, "fluid"),
       PM.product_range_chance("pm-oxygen-gas", 5, 10, 0.5, "fluid"),
-      PM.product_range("pm-catalyst-container", 2, 4)
+      PM.product_range("pm-catalyst-container", 1, 3)
     }
   } --[[@as data.RecipePrototype]],
   {
