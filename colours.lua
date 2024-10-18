@@ -38,7 +38,7 @@ colors.values = {
   ["purple"]	= {142,  97, 218},
   ["pink"]    = {238,  84, 187},
 
-  ["black"]   = {  0,   0,   0},
+  ["black"]   = {40, 40, 40},
   ["white"]   = {255, 255, 255},
 
   ["debug"]   = {0.5, 0.5, 0.5}, -- So you can set the default.
