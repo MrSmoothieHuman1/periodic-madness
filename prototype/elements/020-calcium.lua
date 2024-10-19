@@ -26,6 +26,20 @@ data:extend({
     order = "b",
     stack_size = 150
   },
+  {
+    type = "item",
+    name = "pm-calcium-chloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/calcium-chloride.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/calcium-chloride.png",   size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.25 }
+    },
+    subgroup = "pm-calcium-aem",
+    order = "c",
+    stack_size = 100
+  },
 
   {
     type = "recipe",

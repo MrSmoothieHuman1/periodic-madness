@@ -155,6 +155,27 @@ data:extend({
       PM.product("pm-chrome-green", 6)
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-chromic-acid-neutralisation",
+    energy_required = 2,
+    category = "chemistry",
+    subgroup = "pm-chrominum-tm",
+    order = "ea",
+    enabled = false,
+    ingredients = 
+    {
+      PM.ingredient("pm-sodium-sulfite", 6),
+      PM.ingredient("pm-chromic-acid", 20, "fluid"),
+      PM.ingredient("water", 25, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-chrominum-ore", 4, 6),
+      PM.product_range("pm-sulfur-dioxide", 8, 15, "fluid"),
+      PM.product_range_chance("pm-carbon-dioxide-gas", 6, 15, 0.65, "fluid")
+    }
+  }
 })
 
 -- 10 chromic acid = fifty acidic water

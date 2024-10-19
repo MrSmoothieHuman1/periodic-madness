@@ -28,6 +28,7 @@ Date: 2024-08-09
     - Added Icon Badge functionality! still in early stages, so feel free to contact me if anything is off.
     - (everyone say "Thank you PennyJim" in unison) added a way to personalise belt tiers in the mod settings! you can change them to the colours on the rainbow, plus a couple others.
     - Added Fuel Rods, as the power source for personal reactors. Currently, only Polonium fuel cells exist.
+    - Added new recipes to acid dilution, and PModernised it slightly (post-0.4.6 modernisation)
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
@@ -95,6 +96,7 @@ Date: 2024-08-09
     - FINALLY MADE ACID PLANTS LOOK DIFFERENT OH MY GOD
     - Fixed the vanadium modular battery technologies not having the correct color.
     - Fixed the vanadium modular batterie MK2's recipe.
+    - Moved calcium chloride into the calcium subgroup.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

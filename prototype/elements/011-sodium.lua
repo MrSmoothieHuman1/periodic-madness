@@ -21,14 +21,9 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-calcium-chloride",
+    name = "pm-sodium-sulfite",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/calcium-chloride.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/calcium-chloride.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.25 }
-    },
     subgroup = "pm-sodium-am",
     order = "c",
     stack_size = 100
@@ -118,5 +113,23 @@ data:extend({
       PM.product("pm-sodium", 30),
       PM.product("pm-carbon-monoxide", 30, "fluid")
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-sodium-sulfite",
+    enabled = false,
+    category = "pm-acids",
+    subgroup = "pm-sodium-am",
+    order = "e",
+    ingredients = 
+    {
+      PM.ingredient("pm-sodium", 5),
+      PM.ingredient("pm-oxygen-gas", 10, "fluid"),
+      PM.ingredient("pm-sulfur-dioxide", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-sodium-sulfite", 5)
+    }
+  }
 })
