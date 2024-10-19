@@ -170,7 +170,7 @@ data:extend({
       PM.unlock_recipe("pm-hydrochloric-acid-neutralisation"),
       PM.unlock_recipe("pm-chromic-acid-neutralisation"),
     },
-    prerequisites = {"sulfur-processing" },
+    prerequisites = {"sulfur-processing"},
     unit =
     {
       count = 75,
