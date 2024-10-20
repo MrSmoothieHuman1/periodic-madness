@@ -682,6 +682,9 @@ data:extend({
   {
     type = "recipe",
     name = "pm-glass-fibers",
+    -- FIXME: add a proper icon!!
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/acidic-water-to-sulfuric-acid.png",
     subgroup = "pm-glassing",
     order = "d",
     enabled = false,

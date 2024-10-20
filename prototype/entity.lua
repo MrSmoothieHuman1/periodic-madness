@@ -2768,31 +2768,32 @@ data:extend({
     {
       layers =
       {
-        {
-          -- FIXME: File is bad
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
-          width = 32 * 7 * 2,
-          height = 32 * 7 * 2,
-          frame_count = 32,
-          line_length = 8,
-          animation_speed = 0.25,
-          shift = util.by_pixel(-2, 0),
-          scale = 0.575,
-        },
-        {
-          -- FIXME: File is bad
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
-          width = 32 * 7 * 2,
-          height = 32 * 7 * 2,
-          frame_count = 32,
-          line_length = 8,
-          draw_as_shadow = true,
-          shift = util.by_pixel(64, 10),
-          animation_speed = 0.25,
-          scale = 0.575
-        }
+        -- FIXME: File is bad
+        -- {
+        --   filename =
+        --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
+        --   width = 32 * 7 * 2,
+        --   height = 32 * 7 * 2,
+        --   frame_count = 32,
+        --   line_length = 8,
+        --   animation_speed = 0.25,
+        --   shift = util.by_pixel(-2, 0),
+        --   scale = 0.575,
+        -- },
+        -- FIXME: File is bad
+        -- {
+        --   filename =
+        --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+        --   width = 32 * 7 * 2,
+        --   height = 32 * 7 * 2,
+        --   frame_count = 32,
+        --   line_length = 8,
+        --   draw_as_shadow = true,
+        --   shift = util.by_pixel(64, 10),
+        --   animation_speed = 0.25,
+        --   scale = 0.575
+        -- },
+        util.empty_sprite(32)
       }
     },
   },
@@ -5796,13 +5797,14 @@ data:extend({
     {
       layers =
       {
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
-          width = 448,
-          height = 448,
-          line_length = 6,
-          frame_count = 30,
-        },
+        --FIXME: The file is bad
+        -- {
+        --   filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
+        --   width = 448,
+        --   height = 448,
+        --   line_length = 6,
+        --   frame_count = 30,
+        -- },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
           width = 448,
