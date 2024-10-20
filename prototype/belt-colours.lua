@@ -46,7 +46,7 @@ local function underground_structure(colour)
 			priority = "extra-high",
 			width = 192,
 			height = 192,
-			y = yoff * 2,
+			y = yoff,
 			tint = tint,
 			scale = 0.5
 		}--[[@as data.SpriteNWaySheet]]
@@ -54,26 +54,26 @@ local function underground_structure(colour)
 	return {
 		direction_in = {
 			sheets = {
-				offset("base", 96*1),
-				offset("arrows", 96*1, colour)
+				offset("base",   192*1),
+				offset("arrows", 192*1, colour)
 			}
 		},
 		direction_out = {
 			sheets = {
-				offset("base", 96*0),
-				offset("arrows", 96*0, colour)
+				offset("base",   192*0),
+				offset("arrows", 192*0, colour)
 			}
 		},
 		direction_in_side_loading = {
 			sheets = {
-				offset("base", 96*3),
-				offset("arrows", 96*3, colour)
+				offset("base",   192*3),
+				offset("arrows", 192*3, colour)
 			}
 		},
 		direction_out_side_loading = {
 			sheets = {
-				offset("base", 96*2),
-				offset("arrows", 96*2, colour)
+				offset("base",   192*2),
+				offset("arrows", 192*2, colour)
 			}
 		},
 	}--[[@as data.UndergroundBeltStructure]]
@@ -102,7 +102,7 @@ function splitter_structure(colour)
 		return {
 			filename = "__periodic-madness__/graphics/entities/buildings/splitter/hr-"..file..".png",
 			priority = "extra-high",
-			width = width*2, height = height*2,
+			width = width, height = height,
 			shift = util.by_pixel(shiftx, shifty),
 			frame_count = frame_count,
 			line_length = line_length,
@@ -114,26 +114,26 @@ function splitter_structure(colour)
 	return {
 		north = {
 			layers = {
-				make_direction("north", 82, 35, 8, -1),
-				make_direction("north-mask", 82, 35, 8, -1, colour, false),
+				make_direction("north",      164, 70, 8, -1),
+				make_direction("north-mask", 164, 70, 8, -1, colour, false),
 			}
 		},
 		east = {
 			layers = {
-				make_direction("east", 45, 80, 4, -4),
-				make_direction("east-mask", 45, 80, 4, -4, colour, false),
+				make_direction("east",      90, 160, 4, -4),
+				make_direction("east-mask", 90, 160, 4, -4, colour, false),
 			}
 		},
 		south = {
 			layers = {
-				make_direction("south", 82, 35, 4, 0),
-				make_direction("south-mask", 82, 35, 4, 0, colour, false),
+				make_direction("south",      164, 70, 4, 0),
+				make_direction("south-mask", 164, 70, 4, 0, colour, false),
 			}
 		},
 		west = {
 			layers = {
-				make_direction("west", 45, 80, 6, -4),
-				make_direction("west-mask", 45, 80, 6, -4, colour, false),
+				make_direction("west",      90, 160, 6, -4),
+				make_direction("west-mask", 90, 160, 6, -4, colour, false),
 			}
 		},
 	}--[[@as data.Animation4Way]]
@@ -307,12 +307,10 @@ local function make_remnants(colour_name, colour, orders)
 	end
 	---@param type belt_type
 	---@param is_mask boolean
-	---@param size {[1]:int,[2]:int}
-	---@param shift {[1]:int,[2]:int}
 	---@param hr_size {[1]:int,[2]:int}
 	---@param hr_shift {[1]:int,[2]:int}
 	---@return data.RotatedAnimation
-	local function make_anim(type, is_mask, size, shift, hr_size, hr_shift)
+	local function make_anim(type, is_mask, hr_size, hr_shift)
 		local variation = is_mask and "mask.png" or "base.png"
 		local direction_count = type == "underground" and 8 or 4
 		return {
@@ -331,11 +329,9 @@ local function make_remnants(colour_name, colour, orders)
 		specific_remnant("transport", orders[1], make_rotated_animation_variations_from_sheet(2, {
 			layers = {
 				make_anim("transport", false,
-					{54, 52}, util.by_pixel(1, 0),
 					{106, 102}, util.by_pixel(1, -0.5)
 				),
 				make_anim("transport", true,
-					{54, 52}, util.by_pixel(1, 0),
 					{106, 102}, util.by_pixel(1, -0.5)
 				),
 			}
@@ -343,11 +339,9 @@ local function make_remnants(colour_name, colour, orders)
 		specific_remnant("underground", orders[2], {
 			layers = {
 				make_anim("underground", false,
-					{78, 72}, util.by_pixel(10, 3),
 					{156, 144}, util.by_pixel(10.5, 3)
 				),
 				make_anim("underground", true,
-					{78, 72}, util.by_pixel(10, 3),
 					{156, 144}, util.by_pixel(10.5, 3)
 				)
 			}
@@ -355,11 +349,9 @@ local function make_remnants(colour_name, colour, orders)
 		specific_remnant("splitter", orders[3], {
 			layers = {
 				make_anim("splitter", false,
-					{96, 96}, util.by_pixel(4, 1.5),
 					{190, 190}, util.by_pixel(3.5, 1.5)
 				),
 				make_anim("splitter", true,
-					{96, 96}, util.by_pixel(4, 1.5),
 					{190, 190}, util.by_pixel(3.5, 1.5)
 				),
 			}
