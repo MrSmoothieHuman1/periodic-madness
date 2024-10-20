@@ -13,24 +13,14 @@ local function belt_animation_set(colour)
 	---@return table
 	local function make_anim(file, tint)
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/transport/"..file..".png",
+			filename = "__periodic-madness__/graphics/entities/buildings/transport/hr-"..file..".png",
 			priority = "extra-high",
-			width = 64,
-			height = 64,
+			width = 128,
+			height = 128,
+			scale = 0.5,
 			frame_count = 32,
 			direction_count = 20,
-			tint = tint,
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/entities/buildings/transport/hr-"..file..".png",
-				priority = "extra-high",
-				width = 128,
-				height = 128,
-				scale = 0.5,
-				frame_count = 32,
-				direction_count = 20,
-				tint = tint
-			}
+			tint = tint
 		}
 	end
 	return {
@@ -52,22 +42,13 @@ local function underground_structure(colour)
 	---@return data.SpriteNWaySheet
 	local function offset(file, yoff, tint)
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/underground/"..file..".png",
+			filename = "__periodic-madness__/graphics/entities/buildings/underground/hr-"..file..".png",
 			priority = "extra-high",
-			width = 96,
-			height = 96,
-			y = yoff,
+			width = 192,
+			height = 192,
+			y = yoff * 2,
 			tint = tint,
-			hr_version =
-			{
-				filename = "__periodic-madness__/graphics/entities/buildings/underground/hr-"..file..".png",
-				priority = "extra-high",
-				width = 192,
-				height = 192,
-				y = yoff * 2,
-				tint = tint,
-				scale = 0.5
-			}
+			scale = 0.5
 		}--[[@as data.SpriteNWaySheet]]
 	end
 	return {
@@ -119,25 +100,15 @@ function splitter_structure(colour)
 			repeat_count = 32
 		end
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/splitter/"..file..".png",
+			filename = "__periodic-madness__/graphics/entities/buildings/splitter/hr-"..file..".png",
 			priority = "extra-high",
-			width = width, height = height,
+			width = width*2, height = height*2,
 			shift = util.by_pixel(shiftx, shifty),
 			frame_count = frame_count,
 			line_length = line_length,
 			repeat_count = repeat_count,
 			tint = tint,
-			hr_version = {
-				filename = "__periodic-madness__/graphics/entities/buildings/splitter/hr-"..file..".png",
-				priority = "extra-high",
-				width = width*2, height = height*2,
-				shift = util.by_pixel(shiftx, shifty),
-				frame_count = frame_count,
-				line_length = line_length,
-				repeat_count = repeat_count,
-				tint = tint,
-				scale = 0.5
-			}
+			scale = 0.5
 		}--[[@as data.Animation]]
 	end
 	return {
@@ -345,25 +316,15 @@ local function make_remnants(colour_name, colour, orders)
 		local variation = is_mask and "mask.png" or "base.png"
 		local direction_count = type == "underground" and 8 or 4
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/remnants-"..variation,
+			filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/hr-remnants-"..variation,
 			line_length = 1,
-			width = size[1], height = size[2],
+			width = hr_size[1], height = hr_size[2],
 			frame_count = 1, variation_count = 1,
 			axially_symmetrical = false,
 			direction_count = direction_count,
-			shift = shift,
+			shift = hr_shift,
 			tint = is_mask and colour or nil,
-			hr_version = {
-				filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/hr-remnants-"..variation,
-				line_length = 1,
-				width = hr_size[1], height = hr_size[2],
-				frame_count = 1, variation_count = 1,
-				axially_symmetrical = false,
-				direction_count = direction_count,
-				shift = hr_shift,
-				tint = is_mask and colour or nil,
-				scale = 0.5,
-			}
+			scale = 0.5,
 		}--[[@as data.RotatedAnimation]]
 	end
 	return {
@@ -610,28 +571,16 @@ function particle_animations.get_metal_particle_small_pictures(options)
   local options = options or {}
   return
   {
-		filename = "__base__/graphics/particle/metal-particle/metal-particle-small.png",
+		filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-small.png",
 		priority = "extra-high",
-		width = 10,
-		height = 8,
+		width = 20,
+		height = 16,
 		tint = options.tint,
 		frame_count = 12,
 		animation_speed = 0.5,
 		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.5,-0.5), options.shift),
-		hr_version =
-		{
-			filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-small.png",
-			priority = "extra-high",
-			width = 20,
-			height = 16,
-			tint = options.tint,
-			frame_count = 12,
-			animation_speed = 0.5,
-			variation_count = 10,
-			shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
-			scale = 0.5
-		}
+		shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
+		scale = 0.5
   }
 end
 ---@param options {tint:Color,shift:Vector}
@@ -640,28 +589,16 @@ function particle_animations.get_mechanical_component_particle_medium_pictures(o
   local options = options or {}
   return
 	{
-		filename = "__base__/graphics/particle/mechanical-components-particle/mechanical-components-particle-medium.png",
+		filename = "__base__/graphics/particle/mechanical-components-particle/hr-mechanical-components-particle-medium.png",
 		priority = "extra-high",
-		width = 12,
-		height = 10,
+		width = 22,
+		height = 22,
 		tint = options.tint,
 		frame_count = 12,
 		animation_speed = 0.5,
 		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.5,-0.5), options.shift),
-		hr_version =
-		{
-			filename = "__base__/graphics/particle/mechanical-components-particle/hr-mechanical-components-particle-medium.png",
-			priority = "extra-high",
-			width = 22,
-			height = 22,
-			tint = options.tint,
-			frame_count = 12,
-			animation_speed = 0.5,
-			variation_count = 10,
-			shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
-			scale = 0.5
-		}
+		shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
+		scale = 0.5
 	}
 end
 ---@param options {tint:Color,shift:Vector}
@@ -670,28 +607,16 @@ function particle_animations.get_metal_particle_medium_pictures(options)
   local options = options or {}
   return
   {
-		filename = "__base__/graphics/particle/metal-particle/metal-particle-medium.png",
+		filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-medium.png",
 		priority = "extra-high",
-		width = 16,
-		height = 14,
+		width = 30,
+		height = 30,
 		tint = options.tint,
 		frame_count = 12,
 		animation_speed = 0.5,
 		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.5,0.5), options.shift),
-		hr_version =
-		{
-			filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-medium.png",
-			priority = "extra-high",
-			width = 30,
-			height = 30,
-			tint = options.tint,
-			frame_count = 12,
-			animation_speed = 0.5,
-			variation_count = 10,
-			shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
-			scale = 0.5
-		}
+		shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
+		scale = 0.5
 	}
 end
 ---@param options {tint:Color,shift:Vector}
@@ -700,28 +625,16 @@ function particle_animations.get_metal_particle_medium_long_pictures(options)
   local options = options or {}
   return
 	{
-		filename = "__base__/graphics/particle/metal-particle/long-metal-particle-medium.png",
+		filename = "__base__/graphics/particle/metal-particle/hr-long-metal-particle-medium.png",
 		priority = "extra-high",
-		width = 50,
-		height = 46,
+		width = 100,
+		height = 92,
 		tint = options.tint,
 		frame_count = 12,
 		animation_speed = 0.5,
 		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(3.5,0.5), options.shift),
-		hr_version =
-		{
-			filename = "__base__/graphics/particle/metal-particle/hr-long-metal-particle-medium.png",
-			priority = "extra-high",
-			width = 100,
-			height = 92,
-			tint = options.tint,
-			frame_count = 12,
-			animation_speed = 0.5,
-			variation_count = 10,
-			shift = util.add_shift(util.by_pixel(3.75,0.25), options.shift),
-			scale = 0.5
-		}
+		shift = util.add_shift(util.by_pixel(3.75,0.25), options.shift),
+		scale = 0.5
 	}
 end
 ---@param options {tint:Color,shift:Vector}
@@ -730,28 +643,16 @@ function particle_animations.get_metal_particle_big_pictures(options)
   local options = options or {}
   return
 	{
-		filename = "__base__/graphics/particle/metal-particle/metal-particle-big.png",
+		filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-big.png",
 		priority = "extra-high",
-		width = 26,
-		height = 22,
+		width = 50,
+		height = 44,
 		frame_count = 12,
 		tint = options.tint,
 		animation_speed = 0.5,
 		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.5,0.5), options.shift),
-		hr_version =
-		{
-			filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-big.png",
-			priority = "extra-high",
-			width = 50,
-			height = 44,
-			frame_count = 12,
-			tint = options.tint,
-			animation_speed = 0.5,
-			variation_count = 10,
-			shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
-			scale = 0.5
-		}
+		shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
+		scale = 0.5
 	}
 end
 

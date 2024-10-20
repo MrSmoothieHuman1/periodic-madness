@@ -18,30 +18,18 @@ data:extend({
     animation = make_rotated_animation_variations_from_sheet(4,
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/filter-long-handed-inserter/remnants/filter-long-handed-inserter-remnants.png",
+        "__periodic-madness__/graphics/entities/buildings/filter-long-handed-inserter/remnants/hr-filter-long-handed-inserter-remnants.png",
         line_length = 1,
-        width = 68,
-        height = 48,
+        width = 134,
+        height = 94,
         frame_count = 1,
         variation_count = 1,
         axially_symmetrical = false,
         direction_count = 1,
-        shift = util.by_pixel(4, -2),
-        hr_version =
-        {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/filter-long-handed-inserter/remnants/hr-filter-long-handed-inserter-remnants.png",
-          line_length = 1,
-          width = 134,
-          height = 94,
-          frame_count = 1,
-          variation_count = 1,
-          axially_symmetrical = false,
-          direction_count = 1,
-          shift = util.by_pixel(3.5, -2),
-          scale = 0.5
-        }
-      })
+        shift = util.by_pixel(3.5, -2),
+        scale = 0.5
+      }
+    )
   },
   {
     type = "corpse",
@@ -61,30 +49,19 @@ data:extend({
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet(2,
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-2/remnants/solar-panel-remnants.png",
+        filename =
+        "__periodic-madness__/graphics/entities/buildings/solar-panel-2/remnants/hr-solar-panel-remnants.png",
         line_length = 1,
-        width = 146,
-        height = 142,
+        width = 290,
+        height = 282,
         frame_count = 1,
         variation_count = 1,
         axially_symmetrical = false,
         direction_count = 1,
-        shift = util.by_pixel(4, 0),
-        hr_version =
-        {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/solar-panel-2/remnants/hr-solar-panel-remnants.png",
-          line_length = 1,
-          width = 290,
-          height = 282,
-          frame_count = 1,
-          variation_count = 1,
-          axially_symmetrical = false,
-          direction_count = 1,
-          shift = util.by_pixel(3.5, 0),
-          scale = 0.5
-        }
-      })
+        shift = util.by_pixel(3.5, 0),
+        scale = 0.5
+      }
+    )
   },
   {
     type = "corpse",
@@ -105,30 +82,18 @@ data:extend({
     animation = make_rotated_animation_variations_from_sheet(3,
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/remnants/construction-robot-remnants.png",
+        "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/remnants/hr-construction-robot-remnants.png",
         line_length = 1,
-        width = 60,
-        height = 58,
+        width = 120,
+        height = 114,
         frame_count = 1,
         variation_count = 1,
         axially_symmetrical = false,
         direction_count = 1,
         shift = util.by_pixel(2, 1),
-        hr_version =
-        {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/remnants/hr-construction-robot-remnants.png",
-          line_length = 1,
-          width = 120,
-          height = 114,
-          frame_count = 1,
-          variation_count = 1,
-          axially_symmetrical = false,
-          direction_count = 1,
-          shift = util.by_pixel(2, 1),
-          scale = 0.5
-        }
-      })
+        scale = 0.5
+      }
+    )
   },
   {
     type = "corpse",
@@ -149,29 +114,17 @@ data:extend({
     animation = make_rotated_animation_variations_from_sheet(3,
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/remnants/logistic-robot-remnants.png",
+        "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/remnants/hr-logistic-robot-remnants.png",
         line_length = 1,
-        width = 58,
-        height = 58,
+        width = 116,
+        height = 114,
         frame_count = 1,
         variation_count = 1,
         axially_symmetrical = false,
         direction_count = 1,
         shift = util.by_pixel(1, 1),
-        hr_version =
-        {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/remnants/hr-logistic-robot-remnants.png",
-          line_length = 1,
-          width = 116,
-          height = 114,
-          frame_count = 1,
-          variation_count = 1,
-          axially_symmetrical = false,
-          direction_count = 1,
-          shift = util.by_pixel(1, 1),
-          scale = 0.5
-        }
-      })
+        scale = 0.5
+      }
+    )
   },
 } --[[@as data.CorpsePrototype[] ]])
