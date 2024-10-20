@@ -19,6 +19,41 @@ local pm_lab_inputs =
   "space-science-pack",
 }
 
+-- HACK: Remove this when we finally get 2.0 and official deprecation of hr
+---@param pictures data.ConnectableEntityGraphics
+---@return data.ConnectableEntityGraphics
+local function fix_heatpipes(pictures)
+  ---@param sprite data.Sprite|data.SpriteSheet
+  local function fix(sprite)
+    if sprite.layers then
+      for _, sprite_layer in pairs(sprite.layers) do
+        fix(sprite_layer)
+      end
+      return
+    end
+
+    sprite.hr_version = nil
+    sprite.width = sprite.width * 2
+    sprite.height = sprite.height * 2
+    sprite.scale = 0.5
+  end
+  for key, variations in pairs(pictures--[[@as table<string,data.SpriteVariations>]]) do
+    if variations[1] then
+      ---@cast variations data.Sprite[]
+      for _, variation in pairs(variations) do
+        fix(variation)
+      end
+    elseif variations.sheet then
+      ---@cast variations data.SpriteVariations.struct
+      fix(variations.sheet)
+    else
+      ---@cast variations data.SpriteSheet
+      fix(variations)
+    end
+  end
+  return pictures
+end
+
 function pm_electric_mining_drill2_animation()
   return
   {
@@ -6223,8 +6258,8 @@ data:extend({
       }
     },
 
-    connection_sprites = make_heat_pipe_pictures("__periodic-madness__/graphics/entities/buildings/heat-pipe-1/",
-      "heat-pipe",
+    connection_sprites = fix_heatpipes(make_heat_pipe_pictures(
+      "__periodic-madness__/graphics/entities/buildings/heat-pipe-1/", "heat-pipe",
       {
         single = { name = "straight-vertical-single", ommit_number = true },
         straight_vertical = { variations = 6 },
@@ -6242,9 +6277,11 @@ data:extend({
         ending_down = {},
         ending_right = {},
         ending_left = {}
-      }),
+      }
+    )),
 
-    heat_glow_sprites = make_heat_pipe_pictures("__base__/graphics/entity/heat-pipe/", "heated",
+    heat_glow_sprites = make_heat_pipe_pictures(
+      "__base__/graphics/entity/heat-pipe/", "heated",
       {
         single = { empty = true },
         straight_vertical = { variations = 6 },
