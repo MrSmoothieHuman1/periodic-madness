@@ -13,7 +13,7 @@ local function belt_animation_set(colour)
 	---@return table
 	local function make_anim(file, tint)
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/transport/hr-"..file..".png",
+			filename = "__periodic-madness__/graphics/entities/buildings/transport/"..file..".png",
 			priority = "extra-high",
 			width = 128,
 			height = 128,
@@ -42,7 +42,7 @@ local function underground_structure(colour)
 	---@return data.SpriteNWaySheet
 	local function offset(file, yoff, tint)
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/underground/hr-"..file..".png",
+			filename = "__periodic-madness__/graphics/entities/buildings/underground/"..file..".png",
 			priority = "extra-high",
 			width = 192,
 			height = 192,
@@ -100,7 +100,7 @@ function splitter_structure(colour)
 			repeat_count = 32
 		end
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/splitter/hr-"..file..".png",
+			filename = "__periodic-madness__/graphics/entities/buildings/splitter/"..file..".png",
 			priority = "extra-high",
 			width = width, height = height,
 			shift = util.by_pixel(shiftx, shifty),
@@ -314,7 +314,7 @@ local function make_remnants(colour_name, colour, orders)
 		local variation = is_mask and "mask.png" or "base.png"
 		local direction_count = type == "underground" and 8 or 4
 		return {
-			filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/hr-remnants-"..variation,
+			filename = "__periodic-madness__/graphics/entities/buildings/"..type.."/remnants-"..variation,
 			line_length = 1,
 			width = hr_size[1], height = hr_size[2],
 			frame_count = 1, variation_count = 1,
