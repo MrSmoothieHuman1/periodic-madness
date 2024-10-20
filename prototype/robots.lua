@@ -77,7 +77,7 @@ robot_animations.logistic_robot =
 {
   idle =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot.png",
     priority = "high",
     line_length = 16,
     width = 80,
@@ -90,7 +90,7 @@ robot_animations.logistic_robot =
   },
   idle_with_cargo =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot.png",
     priority = "high",
     line_length = 16,
     width = 80,
@@ -102,7 +102,7 @@ robot_animations.logistic_robot =
   },
   in_motion =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot.png",
     priority = "high",
     line_length = 16,
     width = 80,
@@ -115,7 +115,7 @@ robot_animations.logistic_robot =
   },
   in_motion_with_cargo =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot.png",
     priority = "high",
     line_length = 16,
     width = 80,
@@ -128,7 +128,7 @@ robot_animations.logistic_robot =
   },
   shadow_idle =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot-shadow.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 115,
@@ -142,7 +142,7 @@ robot_animations.logistic_robot =
   },
   shadow_idle_with_cargo =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot-shadow.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 115,
@@ -155,7 +155,7 @@ robot_animations.logistic_robot =
   },
   shadow_in_motion =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot-shadow.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 115,
@@ -169,7 +169,7 @@ robot_animations.logistic_robot =
   },
   shadow_in_motion_with_cargo =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/hr-logistic-robot-shadow.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/logistic-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 115,
@@ -187,7 +187,7 @@ robot_animations.construction_robot =
 {
   idle =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot.png",
     priority = "high",
     line_length = 16,
     width = 66,
@@ -199,7 +199,7 @@ robot_animations.construction_robot =
   },
   in_motion =
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot.png",
     priority = "high",
     line_length = 16,
     width = 66,
@@ -213,7 +213,7 @@ robot_animations.construction_robot =
   shadow_idle =
   {
     filename =
-    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 104,
@@ -227,7 +227,7 @@ robot_animations.construction_robot =
   shadow_in_motion =
   {
     filename =
-    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 104,
@@ -241,7 +241,7 @@ robot_animations.construction_robot =
   working =
   {
     filename =
-    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-working.png",
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-working.png",
     priority = "high",
     line_length = 2,
     width = 57,
@@ -255,7 +255,7 @@ robot_animations.construction_robot =
   shadow_working =
   {
     filename =
-    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/hr-construction-robot-shadow.png",
+    "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/construction-robot-shadow.png",
     priority = "high",
     line_length = 16,
     width = 104,

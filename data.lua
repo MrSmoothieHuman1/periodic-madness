@@ -147,7 +147,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/hr-transition-metals-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -203,7 +203,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/hr-post-transition-metals-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/post-transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -258,7 +258,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/hr-alkali-metals-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/alkali-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -313,7 +313,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/hr-metalloid-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/metalloid-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -372,7 +372,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/hr-nickel-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/nickel-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -428,7 +428,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/hr-zinc-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/zinc-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -609,7 +609,7 @@ AcidPlant.icon = "__periodic-madness__/graphics/icons/buildings/acid-plant.png"
 AcidPlant.animation = make_4way_animation_from_spritesheet({ layers =
 {
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/hr-acid-plant.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/acid-plant.png",
     width = 220,
     height = 292,
     frame_count = 24,
