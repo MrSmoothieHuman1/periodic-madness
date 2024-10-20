@@ -2008,7 +2008,6 @@ data:extend({
       layers =
       {
         {
-          -- FIXME: File is missing
           filename = "__periodic-madness__/graphics/entities/buildings/crusher-2/hr-crusher-2.png",
           width = 214,
           height = 226,
@@ -5763,9 +5762,9 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
-          width = 224,
-          height = 224,
+          filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/hr-cyclotron.png",
+          width = 448,
+          height = 448,
           line_length = 6,
           frame_count = 30,
         },
