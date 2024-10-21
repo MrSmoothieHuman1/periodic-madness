@@ -1790,10 +1790,7 @@ data:extend({
     dying_explosion = "oil-refinery-explosion",
     collision_box = { { -1.9, -1.9 }, { 1.9, 1.9 } },
     selection_box = { { -2, -2 }, { 2, 2 } },
-    module_specification =
-    {
-      module_slots = 3
-    },
+    module_slots = 3,
     scale_entity_info_icon = true,
     allowed_effects = { "consumption", "speed", "pollution", "productivity" },
     crafting_categories = { "pm-fractional-distillation" },
@@ -1923,10 +1920,7 @@ data:extend({
     corpse = "pm-crusher-1",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-crushing" },
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     allowed_effects = { "speed", "consumption", "pollution", "productivity" },
     crafting_speed = 1.5,
     energy_source =
@@ -1981,10 +1975,7 @@ data:extend({
     corpse = "pm-crusher-2",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-crushing" },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = { "speed", "consumption", "pollution", "productivity" },
     crafting_speed = 2.5,
     energy_source =
@@ -2037,10 +2028,7 @@ data:extend({
     corpse = "pm-atmospheric-condenser",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-atmospheric-condensing" },
-    module_specification =
-    {
-      module_slots = 3
-    },
+    module_slots = 3,
     allowed_effects = { "speed", "consumption", "pollution" },
     crafting_speed = 1,
     energy_source =
@@ -2129,10 +2117,7 @@ data:extend({
     corpse = "pm-fluid-catalyst-cracker",
     crafting_categories = { "pm-cracking" },
     crafting_speed = 1,
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     energy_source =
     {
@@ -2497,10 +2482,7 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = { "consumption", "speed", "pollution", "productivity" },
     map_color = {r = 0.659, g = 0.106, b = 0.106},
-    module_specification =
-    {
-      module_slots = 1,
-    },
+    module_slots = 1,
     working_sound =
     {
       sound =
@@ -2593,10 +2575,7 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = { "consumption", "speed", "pollution", "productivity" },
     map_color = {r = 0.106, g = 0.647, b = 0.659},
-    module_specification =
-    {
-      module_slots = 1,
-    },
+    module_slots = 1,
     working_sound =
     {
       sound =
@@ -2695,10 +2674,7 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     crafting_categories = { "pm-circuitry" },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = { "speed", "consumption", "productivity", "pollution" },
     crafting_speed = 2.5,
     energy_source =
@@ -3112,10 +3088,7 @@ data:extend({
     max_health = 600,
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     energy_source =
     {
       type = "electric",
@@ -3414,10 +3387,7 @@ data:extend({
     crafting_categories = { "pm-molding", "pm-advanced-molding" },
     crafting_speed = 1,
     energy_usage = "320kW",
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     allowed_effects = { "speed", "consumption", "pollution" },
     energy_source =
     {
@@ -3473,10 +3443,7 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     allowed_effects = { "speed", "consumption", "pollution" },
     source_inventory_size = 1,
     result_inventory_size = 1,
@@ -3564,10 +3531,7 @@ data:extend({
     crafting_speed = 1,
     energy_usage = "420kW",
     allowed_effects = { "speed", "consumption", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     energy_source =
     {
       type = "electric",
@@ -3792,10 +3756,7 @@ data:extend({
     collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     allowed_effects = { "speed", "consumption", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     energy_source =
     {
       type = "electric",
@@ -5373,10 +5334,7 @@ data:extend({
     energy_usage = "120kW",
     resource_searching_radius = 2.49 * 1.24 + 0.01,
     vector_to_place_result = { 0, -1.85 },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     radius_visualisation_picture =
     {
       filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
@@ -5411,10 +5369,7 @@ data:extend({
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
-    module_specification =
-    {
-      module_slots = 3
-    },
+    module_slots = 3,
     animation =
     {
       layers =
@@ -5513,10 +5468,7 @@ data:extend({
     corpse = "pm-crystallizer",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-crystallisation" },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = { "speed", "consumption", "pollution", "productivity" },
     crafting_speed = 1,
     energy_usage = "400KW",
@@ -5640,10 +5592,7 @@ data:extend({
     corpse = "pm-cyclotron",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-cyclotroning" },
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     allowed_effects = { "speed", "consumption", "pollution", "productivity" },
     crafting_speed = 1,
     energy_usage = "800KW",
@@ -5971,10 +5920,7 @@ data:extend({
     crafting_categories = { "pm-burnining" },
     source_inventory_size = 0,
     result_inventory_size = 1,
-    module_specification =
-    {
-      module_slots = 2
-    },
+    module_slots = 2,
     allowed_effects = { "speed", "consumption" },
     crafting_speed = 0.5,
     energy_usage = "800KW",
@@ -6391,10 +6337,7 @@ data:extend({
     alert_icon_shift = util.by_pixel(-3, -12),
     crafting_speed = 1,
     crafting_categories = { "pm-franciuming" },
-    module_specification =
-    {
-      module_slots = 6
-    },
+    module_slots = 6,
     allowed_effects = { "speed", "consumption", "pollution", "productivity" },
     energy_usage = "1.17MW",
     energy_source =
@@ -6461,10 +6404,7 @@ data:extend({
     corpse = "pm-evaporator-2",
     dying_explosion = "assembling-machine-1-explosion",
     allowed_effects = { "consumption", "speed", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2,
-    },
+    module_slots = 2,
     resistances =
     {
       {
@@ -6559,10 +6499,7 @@ data:extend({
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
     allowed_effects = { "consumption", "speed", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2,
-    },
+    module_slots = 2,
     animation =
     {
       layers =
@@ -6677,10 +6614,7 @@ data:extend({
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     animation =
     {
       layers =
@@ -7410,10 +7344,7 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-1.5, -1.9}, {1.5, 1.5}},
     fast_replaceable_group = "pm-chemical-plant",
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 
     animation = make_4way_animation_from_spritesheet({
@@ -7844,7 +7775,7 @@ data.raw["boiler"]["heat-exchanger"].fast_replaceable_group = "pm-heat-exchanger
 data.raw["boiler"]["heat-exchanger"].next_upgrade = "pm-heat-exchanger-2"
 data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 240
 
-data.raw["assembling-machine"]["chemical-plant"].module_specification = {module_slots = 2}
+data.raw["assembling-machine"]["chemical-plant"].module_slots = 2
 data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-chemical-plant"
 data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-plant-2"
 
