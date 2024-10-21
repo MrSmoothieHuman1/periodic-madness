@@ -16,7 +16,7 @@ data:extend({
   {
     type = "string-setting",
     name = "pm-belt-colour-tier-1",
-    localised_name = {"mod-setting-name.pm-belt-colour-tier", 1},
+    localised_name = "mod-setting-name.pm-belt-colour-tier", 1,
     setting_type = "startup",
     default_value = is_debug and "debug" or "yellow",
     allowed_values = colour_list,
@@ -25,7 +25,7 @@ data:extend({
   {
     type = "string-setting",
     name = "pm-belt-colour-tier-2",
-    localised_name = {"mod-setting-name.pm-belt-colour-tier", 2},
+    localised_name = "mod-setting-name.pm-belt-colour-tier", 2,
     setting_type = "startup",
     default_value = "orange",
     allowed_values = colour_list,
@@ -34,7 +34,7 @@ data:extend({
   {
     type = "string-setting",
     name = "pm-belt-colour-tier-3",
-    localised_name = {"mod-setting-name.pm-belt-colour-tier", 3},
+    localised_name = "mod-setting-name.pm-belt-colour-tier", 3,
     setting_type = "startup",
     default_value = "red",
     allowed_values = colour_list,
@@ -43,7 +43,7 @@ data:extend({
   {
     type = "string-setting",
     name = "pm-belt-colour-tier-4",
-    localised_name = {"mod-setting-name.pm-belt-colour-tier", 4},
+    localised_name = "mod-setting-name.pm-belt-colour-tier", 4,
     setting_type = "startup",
     default_value = "blue",
     allowed_values = colour_list,
@@ -52,7 +52,7 @@ data:extend({
   {
     type = "string-setting",
     name = "pm-belt-colour-tier-5",
-    localised_name = {"mod-setting-name.pm-belt-colour-tier", 5},
+    localised_name = "mod-setting-name.pm-belt-colour-tier", 5,
     setting_type = "startup",
     default_value = "purple",
     allowed_values = colour_list,
@@ -61,7 +61,7 @@ data:extend({
   {
     type = "string-setting",
     name = "pm-belt-colour-tier-6",
-    localised_name = {"mod-setting-name.pm-belt-colour-tier", 6},
+    localised_name = "mod-setting-name.pm-belt-colour-tier", 6,
     hidden = true, -- So we can conditonally support another tier of belts
     setting_type = "startup",
     -- default_value = "green",

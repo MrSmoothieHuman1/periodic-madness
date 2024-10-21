@@ -3287,7 +3287,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-molten-potassium-glass",
-    icon_size = 256, --nice
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
