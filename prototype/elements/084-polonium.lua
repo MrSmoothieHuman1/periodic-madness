@@ -34,6 +34,7 @@ data:extend({
     category = "pm-electrolysis",
     subgroup = "pm-polonium-ptm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-hydrogen-gas", 20, "fluid")
@@ -72,6 +73,7 @@ data:extend({
     category = "advanced-crafting",
     subgroup = "pm-polonium-ptm",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-bismuth-210", 5)
@@ -88,6 +90,7 @@ data:extend({
     energy_required = 15,
     subgroup = "pm-polonium-ptm",
     order = "c",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-polonium-210", 10),

@@ -37,6 +37,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-chrominum-tm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),
@@ -94,6 +95,7 @@ data:extend({
     order = "e",
     enabled = false,
     energy_required = 2,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-chrominum-ore", 12),
@@ -126,6 +128,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-chrominum-tm",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),
@@ -144,6 +147,7 @@ data:extend({
     subgroup = "pm-chrominum-tm",
     order = "c",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-chrominum-ore", 12),

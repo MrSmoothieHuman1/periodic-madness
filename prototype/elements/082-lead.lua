@@ -59,6 +59,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-lead-ptm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
@@ -97,6 +98,7 @@ data:extend({
     subgroup = "pm-lead-ptm",
     order = "c",
     main_product = "pm-lead-froth",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-lead-powder", 4),
@@ -117,6 +119,7 @@ data:extend({
     subgroup = "pm-lead-ptm",
     order = "d",
     main_product = "pm-impure-lead",
+    allow_productivty = true,
     ingredients =
     {
       PM.ingredient("pm-lead-froth", 10, "fluid"),
@@ -125,7 +128,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-thallium-ore", 2, 0.2),
-      PM.product_range("pm-flux-container", 1, 2),
+      PM.catalyst_range("pm-flux-container", 1, 2, 2),
       PM.product("pm-impure-lead", 2)
     }
   } --[[@as data.RecipePrototype]],

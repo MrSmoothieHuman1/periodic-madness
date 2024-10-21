@@ -9,6 +9,7 @@ data:extend({
     order = "e",
     category = "smelting",
     energy_required = 3.2,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-nickel-ore", 1) },
     result = "pm-nickel-plate"
   },
@@ -19,6 +20,7 @@ data:extend({
     order = "e",
     category = "smelting",
     energy_required = 3.2,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-zinc-ore", 1) },
     result = "pm-zinc-plate"
   },
@@ -30,6 +32,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-manganese-ore", 1) },
     result = "pm-manganese-plate"
   },
@@ -41,6 +44,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-gold-ore", 1) },
     result = "pm-gold-plate"
   },
@@ -52,6 +56,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-silver-ore", 1) },
     result = "pm-silver-plate"
   },
@@ -63,6 +68,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-titanium-ore", 1) },
     result = "pm-titanium-plate"
   },
@@ -74,6 +80,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-tungsten-ore", 1) },
     result = "pm-tungsten-plate"
   },
@@ -84,6 +91,7 @@ data:extend({
     subgroup = "pm-glassing",
     order = "b",
     energy_required = 3.2,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-sand", 4) },
     result = "pm-glass-pane"
   },
@@ -96,6 +104,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-tin-ore", 1) },
     result = "pm-tin-plate"
   },
@@ -106,6 +115,7 @@ data:extend({
     order = "c",
     category = "smelting",
     energy_required = 3.2,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-aluminium-ore", 1) },
     result = "pm-aluminium-plate"
   },
@@ -117,6 +127,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-cadnium-ore", 1) },
     result = "pm-cadnium-plate"
   },
@@ -128,6 +139,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-palladium-ore", 1) },
     result = "pm-palladium-plate"
   },
@@ -139,6 +151,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-lead-ore", 1) },
     result = "pm-lead-plate"
   },
@@ -150,6 +163,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-thallium-ore", 1) },
     result = "pm-thallium-plate"
   },
@@ -161,6 +175,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-indium-ore", 1) },
     result = "pm-indium-plate"
   },
@@ -172,6 +187,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-platinum-ore", 1) },
     result = "pm-platinum-plate"
   },
@@ -183,6 +199,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-cobalt-ore", 1) },
     result = "pm-cobalt-plate"
   },
@@ -194,6 +211,7 @@ data:extend({
     category = "smelting",
     energy_required = 3.2,
     --enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-tellurium-ore", 1) },
     result = "pm-tellurium-plate"
   },

@@ -37,6 +37,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-tellurium-mt",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-copper-tailings", 5, "fluid"),
@@ -120,6 +121,7 @@ data:extend({
     subgroup = "pm-tellurium-mt",
     order = "d",
     main_product = "pm-tellurium-ore",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-tellurium-oxide", 3),

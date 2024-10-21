@@ -32,6 +32,7 @@ data:extend({
     hide_from_player_crafting = true,
     enabled = false,
     energy_required = 0.74 + 0.01,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-seawater", 75, "fluid")
@@ -76,6 +77,7 @@ data:extend({
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 }    --smoke
     },
     energy_required = 0.25,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-hydrogen-gas", 5, "fluid"),

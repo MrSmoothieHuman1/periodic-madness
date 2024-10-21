@@ -57,6 +57,7 @@ data:extend({
     subgroup = "pm-boron-mt",
     order = "a",
     main_product = "pm-sassolite",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-seawater", 50, "fluid"),
@@ -99,6 +100,7 @@ data:extend({
     subgroup = "pm-boron-mt",
     order = "c",
     main_product = "pm-ethylolamine",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ethylene-glycol", 20, "fluid"),
@@ -108,7 +110,7 @@ data:extend({
     results =
     {
       PM.product("pm-ethylolamine", 10, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 3)
+      PM.catalyst_range("pm-catalyst-container", 1, 3, 3)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -137,6 +139,7 @@ data:extend({
     category = "pm-advanced-crafting-with-fluid",
     subgroup = "pm-boron-mt",
     order = "e",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-boron", 5, "fluid"),
@@ -156,6 +159,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-boron-mt",
     order = "f",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-borax",     2),

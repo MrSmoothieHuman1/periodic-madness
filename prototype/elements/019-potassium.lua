@@ -57,7 +57,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-seawater", 50, "fluid"),
-      PM.ingredient("pm-alkali-metals-ore", 6)
+      PM.ingredient("pm-alkali-metals-ore", 8)
     },
     results =
     {
@@ -75,6 +75,7 @@ data:extend({
     subgroup = "pm-potassium-am",
     order = "b",
     main_product = "pm-potash",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-sylvite", 5)
@@ -94,6 +95,7 @@ data:extend({
     subgroup = "pm-potassium-am",
     order = "c",
     main_product = "pm-calcium-sulfate",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-anhydrite", 10)

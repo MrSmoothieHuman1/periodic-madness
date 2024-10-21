@@ -11,6 +11,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-bromine-rnm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-seawater", 100, "fluid"),
@@ -32,6 +33,7 @@ data:extend({
     category = "pm-electrolysis",
     subgroup = "pm-bromine-rnm",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-hydrogen-bromide", 14, "fluid"),
@@ -41,7 +43,7 @@ data:extend({
     {
       PM.product("pm-bromine-ions", 8, "fluid"),
       PM.product("pm-hydrogen-gas", 8, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 2)
+      PM.catalyst_range("pm-catalyst-container", 1, 2, 2)
     }
   } --[[@as data.RecipePrototype]],
   {

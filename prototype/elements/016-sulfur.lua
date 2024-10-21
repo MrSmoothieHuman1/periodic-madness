@@ -57,6 +57,7 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "c",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-sulfur-dioxide", 10, "fluid"),
@@ -66,7 +67,7 @@ data:extend({
     {
       PM.product("sulfuric-acid", 15, "fluid"),
       PM.product("sulfur", 2),
-      PM.product_chance("pm-catalyst-container", 1, 0.9)
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.9, 1)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -123,6 +124,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-sulfur-rnm",
     order = "f",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-sulfur-trioxide", 5, "fluid"),
@@ -141,6 +143,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-sulfur-rnm",
     order = "g",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-oleum", 5, "fluid"),

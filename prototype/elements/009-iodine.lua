@@ -9,6 +9,7 @@ data:extend({
     category = "pm-leaching",
     subgroup = "pm-iodine-rnm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-biomass", 5),
@@ -28,6 +29,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-iodine-rnm",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-acidic-brine", 5, "fluid"),

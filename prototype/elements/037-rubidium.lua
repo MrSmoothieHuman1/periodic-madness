@@ -169,6 +169,7 @@ data:extend({
     order = "f",
     energy_required = 8,
     main_product = "pm-rubidium",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-rubidium-alum", 3),

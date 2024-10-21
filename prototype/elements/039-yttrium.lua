@@ -65,6 +65,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-yttrium-tm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 25),
@@ -84,6 +85,7 @@ data:extend({
     subgroup = "pm-yttrium-tm",
     order = "b",
     main_product = "pm-bastnäsite-Y",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-mixed-bastnäsite", 6),

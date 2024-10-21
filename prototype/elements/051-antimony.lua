@@ -96,6 +96,7 @@ data:extend({
         subgroup = "pm-antimony-mt",
         order = "b",    
         main_product = "pm-crude-antimony-sulfide",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-low-quality-crude-antimony-sulfide", 6),
@@ -117,6 +118,7 @@ data:extend({
         subgroup = "pm-antimony-mt",
         order = "c",
         main_product = "pm-stibnite",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-high-quality-crude-antimony-sulfide", 6),
@@ -159,6 +161,7 @@ data:extend({
         subgroup = "pm-antimony-mt",
         order = "e",
         main_product = "pm-antimony-ore",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-antimony-sulfide", 4),

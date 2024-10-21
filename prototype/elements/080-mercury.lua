@@ -43,9 +43,10 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),
-      PM.ingredient("pm-hydrochloric-acid", 25, "fluid") -- Was 4*6+1
+      PM.ingredient("pm-hydrochloric-acid", 25, "fluid") 
     },
     enabled = false,
+    allow_productivity = true,
     results =
     {
       PM.product("pm-mercury-ore", 8)
@@ -81,6 +82,7 @@ data:extend({
     category = "crafting-with-fluid",
     order = "d",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-mercury-powder", 4),
@@ -132,6 +134,7 @@ data:extend({
     category = "pm-acids",
     order = "b",
     energy_required = 2,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),

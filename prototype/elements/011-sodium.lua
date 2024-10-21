@@ -82,6 +82,7 @@ data:extend({
     order = "c",
     energy_required = 6,
     main_product = "pm-sodium-carbonate",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-sodium-bicarbonate", 10),
@@ -103,6 +104,7 @@ data:extend({
     subgroup = "pm-sodium-am",
     order = "d",
     energy_required = 9,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-sodium-carbonate", 15),
@@ -121,6 +123,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-sodium-am",
     order = "e",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-sodium", 5),

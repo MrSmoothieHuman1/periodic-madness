@@ -13,6 +13,7 @@ data:extend({
     order = "a",
     enabled = false,
     energy_required = 8,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("crude-oil", 100, "fluid")
@@ -57,6 +58,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-plastics",
     order = "A",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-refinery-gases", 30, "fluid"),
@@ -115,6 +117,7 @@ data:extend({
     subgroup = "pm-plastics",
     order = "c",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ethylene-gas", 6, "fluid"),
@@ -136,6 +139,7 @@ data:extend({
     subgroup = "pm-plastics",
     order = "ca",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ethylene-gas", 12, "fluid"),
@@ -223,6 +227,7 @@ data:extend({
     subgroup = "pm-oil",
     order = "g",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-molybdenum-ore", 1),
@@ -243,6 +248,7 @@ data:extend({
     category = "pm-fractional-distillation",
     subgroup = "pm-oil",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("crude-oil", 250, "fluid")
@@ -365,6 +371,7 @@ data:extend({
     energy_required = 4,
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-molybdenum-ore", 2),
@@ -428,6 +435,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-plastics",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-refinery-gases", 25, "fluid"),
@@ -469,6 +477,7 @@ data:extend({
     subgroup = "pm-oil",
     order = "f",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("lubricant", 10, "fluid"),
@@ -489,6 +498,7 @@ data:extend({
     subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-fuel-oils", 75, "fluid")
@@ -510,6 +520,7 @@ data:extend({
     order = "d",
     enabled = false,
     energy_required = 8,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-naptha", 60, "fluid"),
@@ -530,6 +541,7 @@ data:extend({
     order = "g",
     enabled = false,
     energy_required = 4,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-petrol", 45, "fluid"),
@@ -550,6 +562,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     main_product = "pm-bisphenol-A",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-acetone", 10, "fluid"),
@@ -567,6 +580,7 @@ data:extend({
     category = "pm-washing",
     enabled = false,
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-bisphenol-A", 30, "fluid"),
@@ -589,6 +603,7 @@ data:extend({
     order = "e",
     enabled = false,
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-bisphenol-A", 30, "fluid"),
@@ -626,6 +641,7 @@ data:extend({
     energy_required = 4,
     subgroup = "pm-refined-items",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vanadium-oxide", 1),
@@ -639,6 +655,7 @@ data:extend({
     energy_required = 4,
     subgroup = "pm-refined-items",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-palladium-ore", 4),
@@ -653,6 +670,7 @@ data:extend({
     energy_required = 4,
     subgroup = "pm-refined-items",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-cobalt-plate", 2),
@@ -667,6 +685,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-refined-items",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-yttrium-ore", 2),

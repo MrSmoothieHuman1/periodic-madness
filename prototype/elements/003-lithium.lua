@@ -79,6 +79,7 @@ data:extend({
     enabled = false,
     energy_required = 30,
     main_product = "pm-low-brine",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-brine", 150, "fluid")
@@ -98,6 +99,7 @@ data:extend({
     enabled = false,
     energy_required = 30,
     main_product = "pm-med-brine",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-low-brine", 150, "fluid")
@@ -117,6 +119,7 @@ data:extend({
     enabled = false,
     energy_required = 30,
     main_product = "pm-high-brine",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-med-brine", 150, "fluid")
@@ -142,7 +145,6 @@ data:extend({
     },
     results =
     {
-      -- PM.product_range("pm-low-brine", 10, 30, "fluid"),
       PM.product("pm-lithium-chloride", 12)
     }
   } --[[@as data.RecipePrototype]],

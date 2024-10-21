@@ -59,6 +59,7 @@ data:extend({
     order = "b",
     energy_required = 4,
     main_product = "pm-gallium-chunks",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-aluminium-ore", 4),
@@ -119,6 +120,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-gallium-ptm",
     order = "e",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-resin", 80, "fluid"),
@@ -139,6 +141,7 @@ data:extend({
     subgroup = "pm-gallium-ptm",
     order = "f",
     main_product = "pm-liquid-gallium",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gallium-liqour", 20, "fluid"),

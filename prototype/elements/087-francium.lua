@@ -50,6 +50,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     category = "crafting-with-fluid",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 24),
@@ -70,6 +71,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     category = "crafting-with-fluid",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
@@ -132,6 +134,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-francium-am",
     order = "c",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium-209", 1),

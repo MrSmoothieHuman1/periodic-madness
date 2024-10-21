@@ -55,6 +55,7 @@ data:extend({
     order = "a",
     enabled = false,
     energy_required = 8,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),
@@ -166,6 +167,7 @@ data:extend({
     order = "b",
     enabled = false,
     energy_required = 4,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),

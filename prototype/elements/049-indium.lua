@@ -25,6 +25,7 @@ data:extend({
     order = "a",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-zinc-tailings", 10, "fluid"),
@@ -47,6 +48,7 @@ data:extend({
     order = "b",
     energy_required = 20,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-indium-chunks", 12),

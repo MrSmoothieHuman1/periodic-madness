@@ -61,6 +61,7 @@ data:extend({
         subgroup = "pm-germanium-mt",
         order = "a",
         main_product = "pm-germanium-ore-concentrate",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-zinc-chunk", 8),
@@ -104,6 +105,7 @@ data:extend({
         subgroup = "pm-germanium-mt",
         main_product = "pm-germanium-oxide",
         order = "c",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-germanium-sulfide", 8),
@@ -124,6 +126,7 @@ data:extend({
         subgroup = "pm-germanium-mt",
         order = "d",
         main_product = "pm-germanium-tetrachloride",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-germanium-oxide", 6),

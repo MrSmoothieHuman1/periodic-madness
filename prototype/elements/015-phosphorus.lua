@@ -37,6 +37,7 @@ data:extend({
     subgroup = "pm-phosphorus-rnm",
     order = "a",
     main_product = "pm-phosphate-rock",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("stone", 6),
@@ -55,6 +56,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-phosphorus-rnm",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-phosphate-rock", 4),
@@ -137,6 +139,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-phosphorus-rnm",
     order = "ba",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-phosphate-rock", 4),

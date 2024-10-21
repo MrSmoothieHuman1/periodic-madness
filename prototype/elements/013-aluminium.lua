@@ -15,6 +15,7 @@ data:extend({
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 }  --smoke
     },
     energy_required = 4,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
@@ -53,6 +54,7 @@ data:extend({
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 }  --smoke
     },
     energy_required = 2,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),

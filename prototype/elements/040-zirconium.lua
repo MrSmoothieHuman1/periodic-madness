@@ -59,6 +59,7 @@ data:extend({
     subgroup = "pm-zirconium-tm",
     order = "a",
     main_product = "pm-zirconium-sand",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),
@@ -98,6 +99,7 @@ data:extend({
     energy_required = 9,
     subgroup = "pm-zirconium-tm",
     order = "c",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-zircon", 8),
@@ -116,6 +118,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-zirconium-tm",
     order = "d",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-zircon", 2),

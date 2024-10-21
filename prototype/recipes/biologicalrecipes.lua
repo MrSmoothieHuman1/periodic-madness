@@ -56,6 +56,7 @@ data:extend({
     subgroup = "pm-greenhousing-rnm",
     order = "c",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ammonia-gas", 20, "fluid"),
@@ -88,6 +89,7 @@ data:extend({
     subgroup = "pm-greenhousing-rnm",
     order = "ca",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ammonia-gas", 10, "fluid"),
@@ -128,6 +130,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-greenhousing-rnm",
     order = "f",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-cellouse-pulp", 5, "fluid"),
@@ -146,6 +149,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-biostuff-rnm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-chlorine", 10, "fluid"),
@@ -202,6 +206,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-biostuff-rnm",
     order = "c",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 4),
@@ -334,6 +339,7 @@ data:extend({
     category = "pm-bacteria-incubating",
     subgroup = "pm-biostuff-rnm",
     order = "h",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-bacteriaed-agar-solution", 5, "fluid"),
@@ -355,6 +361,7 @@ data:extend({
     category = "pm-bacteria-incubating",
     subgroup = "pm-biostuff-rnm",
     order = "i",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-cyanobacteriaed-agar-solution", 5, "fluid"),

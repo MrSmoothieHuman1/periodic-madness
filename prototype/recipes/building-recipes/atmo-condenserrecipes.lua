@@ -227,6 +227,7 @@ data:extend({
     order = "a",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-air-filter", 1),
@@ -245,6 +246,7 @@ data:extend({
     order = "b",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-air-filter", 1),
@@ -263,6 +265,7 @@ data:extend({
     order = "c",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-air-filter", 1),
@@ -281,6 +284,7 @@ data:extend({
     order = "d",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-air-filter", 1),
@@ -299,6 +303,7 @@ data:extend({
     order = "e",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-air-filter", 1),

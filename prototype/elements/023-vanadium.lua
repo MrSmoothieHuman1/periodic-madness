@@ -79,6 +79,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-vanadium-tm",
     order = "c",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
@@ -100,6 +101,7 @@ data:extend({
     category = "pm-coldening",
     subgroup = "pm-vanadium-tm",
     order = "d",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vanadate-solution", 5, "fluid"),
@@ -118,6 +120,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-vanadium-tm",
     order = "ca",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
@@ -139,6 +142,7 @@ data:extend({
     category = "pm-coldening",
     subgroup = "pm-vanadium-tm",
     order = "da",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vanadate-solution", 5, "fluid"),

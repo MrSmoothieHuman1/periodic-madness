@@ -40,6 +40,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-bismuth-ptm",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
@@ -70,8 +71,8 @@ data:extend({
     results =
     {
       PM.product("pm-bismite", 4),
-      PM.product("pm-flux-container", 1),
-      PM.product_range("pm-tin-ore", 1, 3)
+      PM.catalyst_product("pm-flux-container", 1, 1),
+      PM.catalyst_range("pm-tin-ore", 1, 3, 3)
     }
   } --[[@as data.RecipePrototype]],
   {

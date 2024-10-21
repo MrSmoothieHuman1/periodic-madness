@@ -9,6 +9,7 @@ data:extend({
     enabled = false,
     energy_required = 0.5,
     hide_from_player_crafting = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("copper-cable", 2),
@@ -28,6 +29,7 @@ data:extend({
     enabled = false,
     energy_required = 1.5,
     hide_from_player_crafting = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gold-wire", 3),
@@ -48,6 +50,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     hide_from_player_crafting = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gold-wire", 3),

@@ -61,6 +61,7 @@ data:extend({
     subgroup = "pm-cadnium-tm",
     order = "ba",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-cadnium-ore", 6),

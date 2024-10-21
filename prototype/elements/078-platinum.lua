@@ -52,6 +52,7 @@ data:extend({
     order = "b",
     enabled = false,
     energy_required = 6.4,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-nickel-froth", 5, "fluid"),
@@ -118,6 +119,7 @@ data:extend({
     order = "ba",
     enabled = false,
     energy_required = 3.2,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-nickel-froth", 5, "fluid"),

@@ -48,9 +48,10 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-arsenic-mt",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-metalloid-ore", 16), --yipee
+      PM.ingredient("pm-metalloid-ore", 16),
       PM.ingredient("pm-chromic-acid", 20, "fluid")
     },
     results =
@@ -130,6 +131,7 @@ data:extend({
     subgroup = "pm-arsenic-mt",
     order = "e",
     main_product = "pm-arsenic-ore",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-arsine", 5, "fluid"),

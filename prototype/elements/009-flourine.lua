@@ -44,6 +44,7 @@ data:extend({
     subgroup = "pm-flourine-rnm",
     order = "a",
     main_product = "pm-flourite",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("stone", 20),
@@ -62,8 +63,7 @@ data:extend({
     name = "pm-hydrogen-flouride",
     enabled = false,
     energy_required = 3,
-    category = "pm-acids",
-    "crafting-with-fluid",
+    category = "pm-acids", "crafting-with-fluid",
     subgroup = "pm-flourine-rnm",
     order = "c",
     main_product = "pm-hydrogen-flouride",
@@ -128,6 +128,7 @@ data:extend({
     subgroup = "pm-flourine-rnm",
     order = "b",
     main_product = "pm-flourite",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("stone", 10),

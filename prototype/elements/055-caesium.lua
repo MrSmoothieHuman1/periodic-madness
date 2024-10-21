@@ -108,6 +108,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-caesium-am",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-alkali-metals-ore", 16),
@@ -146,6 +147,7 @@ data:extend({
     subgroup = "pm-caesium-am",
     order = "c",
     main_product = "pm-caesium-hexachlorocerate",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-fine-pollucite-powder", 12),
@@ -225,6 +227,7 @@ data:extend({
     subgroup = "pm-caesium-am",
     order = "f",
     main_product = "pm-caesium-chloride",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-caesium-iodine-chloride", 6),
@@ -244,6 +247,7 @@ data:extend({
     subgroup = "pm-caesium-am",
     order = "fa",
     main_product = "pm-caesium-chloride",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-caesium-iodine-chloride", 6),

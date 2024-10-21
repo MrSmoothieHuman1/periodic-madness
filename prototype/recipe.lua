@@ -19,6 +19,7 @@ data:extend({
     name = "pm-coal-crushing",
     subgroup = "pm-processing",
     category = "pm-crushing",
+    allow_productivity = true,
     ingredients = {PM.ingredient("coal", 2)},
     energy_required = 2,
     result = "pm-carbon",
@@ -28,6 +29,7 @@ data:extend({
     type = "recipe",
     name = "pm-stone-crushing",
     energy_required = 2,
+    allow_productivity = true,
     ingredients = { PM.ingredient("stone", 4) },
     icon_size = 64,
     category = "pm-crushing",
@@ -46,12 +48,16 @@ data:extend({
     energy_required = 1,
     subgroup = "pm-circuits",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-nickel-plate", 2),
     },
-    result = "pm-basic-breadboard",
-    result_count = 2
+    results =
+    {
+      PM.product("pm-basic-breadboard", 1)
+    }
+ 
   },
   {
     type = "recipe",
@@ -60,13 +66,15 @@ data:extend({
     subgroup = "pm-circuits",
     order = "b",
     show_amount_in_title = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("iron-plate", 1),
       PM.ingredient("copper-cable", 1),
     },
-    result = "pm-basic-integrated-circuits",
-    result_count = 3
+    {
+      PM.product("pm-basic-integrated-circuit", 3)
+    }
   },
 
   -- green circuits are order "c" for pm-circuits
@@ -78,6 +86,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "d",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-basic-breadboard", 1),
@@ -95,6 +104,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "e",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-basic-wiring", 2),
@@ -111,6 +121,7 @@ data:extend({
     order = "f",
     show_amount_in_title = true,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-silver-plate", 1),
@@ -128,6 +139,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-circuits",
     order = "g",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-fluid-breadboard", 1),
@@ -147,6 +159,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "h",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-platinum-plate", 2),
@@ -163,6 +176,7 @@ data:extend({
     order = "i",
     show_amount_in_title = true,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-polyethylene-plastic", 1),
@@ -182,6 +196,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "k",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-indium-plate", 3),
@@ -198,6 +213,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "l",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-titanium-plate", 4),
@@ -217,6 +233,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-circuits",
     order = "n",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-advanced-integrated-circuits", 3),
@@ -234,6 +251,7 @@ data:extend({
     name = "pm-indium-wire",
     enabled = false,
     subgroup = "pm-refined-items",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-indium-plate", 2)
@@ -252,6 +270,7 @@ data:extend({
     energy_required = 3,
     subgroup = "pm-glassing",
     order = "c",
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-glass-pane", 2) },
     result = "pm-science-bottle"
   },
@@ -259,6 +278,7 @@ data:extend({
     type = "recipe",
     name = "pm-air-filter",
     show_amount_in_title = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-carbon", 50),
@@ -335,6 +355,7 @@ data:extend({
     name = "pm-solder",
     energy_required = 3,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-solder-wire", 4),
@@ -350,6 +371,7 @@ data:extend({
     name = "pm-solder-case",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-polyethylene-plastic", 2),
@@ -391,6 +413,7 @@ data:extend({
     subgroup = "science-pack",
     order = "c",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-titanium-ore", 8),
@@ -412,6 +435,7 @@ data:extend({
     subgroup = "science-pack",
     order = "e",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 10),
@@ -435,6 +459,7 @@ data:extend({
     subgroup = "science-pack",
     order = "fa",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-caesium", 5, "fluid"),
@@ -457,6 +482,7 @@ data:extend({
     subgroup = "science-pack",
     order = "g",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-antimony-ore", 6),
@@ -663,6 +689,7 @@ data:extend({
     name = "pm-brass-cog",
     energy_required = 1,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-brass-plate", 2) },
     result = "pm-brass-cog"
   },
@@ -672,6 +699,7 @@ data:extend({
     energy_required = 0.5,
     show_amount_in_title = true,
     enabled = false,
+    allow_productivity = true,
     ingredients = { PM.ingredient("pm-gold-plate", 1) },
     results =
     {
@@ -682,15 +710,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-glass-fibers",
-    -- FIXME: add a proper icon!!
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/acidic-water-to-sulfuric-acid.png",
     subgroup = "pm-glassing",
     order = "d",
     enabled = false,
     energy_required = 1,
     show_amount_in_title = true,
     main_product = "pm-glass-fibers",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 1)
@@ -707,6 +733,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     category = "crafting-with-fluid",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gold-wire", 2),
@@ -723,6 +750,7 @@ data:extend({
     name = "pm-solder-wire",
     energy_required = 1,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-solder-plate", 1)
@@ -738,6 +766,7 @@ data:extend({
     energy_required = 5,
     show_amount_in_title = true,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-cadnium-plate", 2),
@@ -757,6 +786,7 @@ data:extend({
     category = "crafting-with-fluid",
     show_amount_in_title = true,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-cadnium-plate", 2),
@@ -777,6 +807,7 @@ data:extend({
     subgroup = "pm-modules",
     order = "b",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ammonia-gas", 4, "fluid"),
@@ -795,6 +826,7 @@ data:extend({
     subgroup = "pm-modules",
     order = "fa",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-arsenic-ore", 4),
@@ -814,6 +846,7 @@ data:extend({
     order = "ka",
     enabled = false,
     main_product = "pm-aluminium-gallium-indium-phosphide",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gallium-arsenide", 1),
@@ -834,6 +867,7 @@ data:extend({
     subgroup = "pm-modules",
     order = "c",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 6),
@@ -852,6 +886,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-modules",
     order = "g",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 6),
@@ -870,6 +905,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-modules",
     order = "l",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 6),
@@ -889,6 +925,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-modules",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-helium-gas", 40, "fluid"),
@@ -926,6 +963,7 @@ data:extend({
     order = "a",
     energy_required = 7.5,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-anti-bacterial-panelling", 8),
@@ -1186,6 +1224,7 @@ data:extend({
     energy_required = 8,
     enabled = false,
     category = "crafting-with-fluid",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-heavy-lubricant", 10, "fluid"),
@@ -1228,6 +1267,7 @@ data:extend({
     energy_required = 4,
     enabled = false,
     subgroup = "pm-refined-items",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-polyethylene-plastic", 4),
@@ -1256,6 +1296,7 @@ data:extend({
     energy_required = 4,
     category = "chemistry",
     main_product = "pm-ethylene-glycol",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ethylene-gas", 12, "fluid"),
@@ -1273,6 +1314,7 @@ data:extend({
     category = "chemistry",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ethylene-glycol", 10, "fluid"),
@@ -1439,6 +1481,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-zirconium-tm",
     order = "e",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-seawater", 100, "fluid"),
@@ -1458,6 +1501,7 @@ data:extend({
     subgroup = "pm-zirconium-tm",
     order = "f",
     energy_required = 1,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-seawater", 100, "fluid"),
@@ -1477,6 +1521,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-refined-items",
     order = "b",
+
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 2),
@@ -1514,6 +1559,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-plastics",
     order = "f",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("copper-plate", 2),
@@ -1535,6 +1581,7 @@ data:extend({
     subgroup = "pm-plastics",
     order = "g",
     main_product = "pm-methanol",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-carbon-monoxide", 10, "fluid"),
@@ -1545,7 +1592,7 @@ data:extend({
     {
       PM.product("pm-methanol", 10, "fluid"),
       PM.product("water", 10, "fluid"),
-      PM.product_chance("pm-catalyst-container", 1, 0.98)
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.98, 1)
     }
   },
   {
@@ -1557,6 +1604,7 @@ data:extend({
     subgroup = "pm-plastics",
     order = "h",
     main_product = "pm-methyl-methacrylate",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-methanol", 20, "fluid"),
@@ -1566,7 +1614,7 @@ data:extend({
     results =
     {
       PM.product("pm-methyl-methacrylate", 15, "fluid"),
-      PM.product_chance("pm-catalyst-container", 1, 0.98)
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.98, 1)
     }
   },
   {
@@ -1577,6 +1625,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-plastics",
     order = "i",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-plastic-pellets", 5),
@@ -1711,6 +1760,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-plastic-science-process",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-calcium-sulfate", 8),
@@ -1730,6 +1780,7 @@ data:extend({
     subgroup = "pm-plastic-science-process",
     order = "b",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-plaster-of-nauvis", 10, "fluid")
@@ -1765,6 +1816,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     main_product = "pm-plastic-science-bottle",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-science-bottle", 1),
@@ -1853,6 +1905,7 @@ data:extend({
     name = "pm-better-air-filter",
     show_amount_in_title = true,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-platinum-plate", 3),
@@ -1887,6 +1940,7 @@ data:extend({
     name = "pm-empty-reactor-cell",
     enabled = false,
     energy_reqiured = 10,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 16),
@@ -1896,45 +1950,6 @@ data:extend({
     results =
     {
       PM.product("pm-empty-reactor-cell", 10)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-polonium-fuel-cell",
-    enabled = false,
-    energy_required = 10,
-    subgroup = "pm-polonium-ptm",
-    order = "c",
-    ingredients =
-    {
-      PM.ingredient("pm-polonium-210", 20),
-      PM.ingredient("pm-empty-reactor-cell", 2)
-    },
-    results =
-    {
-      PM.product("pm-polonium-fuel-cell", 2)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-polonium-cell-reprocessing",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/polonium-fuel-reprocessing.png",
-    enabled = false,
-    energy_required = 30,
-    category = "crafting-with-fluid",
-    subgroup = "pm-polonium-ptm",
-    order = "d",
-    ingredients =
-    {
-      PM.ingredient("pm-used-up-polonium-fuel-cell", 10),
-    },
-    results =
-    {
-      PM.product_range("pm-empty-reactor-cell", 3, 5),
-      PM.product_range("pm-lead-ore", 1, 5),
-      PM.product_range("pm-helium-gas", 2, 5, "fluid"),
-      PM.product_chance("pm-bismuth-210", 4, 0.7)
     }
   },
   {
@@ -2023,6 +2038,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-refined-items",
     energy_required = 7,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-platinum-plate", 6),
@@ -2042,6 +2058,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-refined-items",
     energy_required = 28,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vacuum-tube", 4),
@@ -2062,6 +2079,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-refined-items",
     energy_required = 10,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-CRT", 1),
@@ -2105,6 +2123,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-chlorine-rnm",
     order = "x",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-carbon-monoxide", 10, "fluid"),
@@ -2158,6 +2177,7 @@ data:extend({
     order = "a",
     enabled = false,
     energy_required = 4,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-air-filter", 4),
@@ -2178,6 +2198,7 @@ data:extend({
     order = "b",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-oxygen-air-filter", 1),
@@ -2198,6 +2219,7 @@ data:extend({
     order = "c",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-nitrogen-air-filter", 1),
@@ -2218,6 +2240,7 @@ data:extend({
     order = "d",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-chlorine-air-filter", 1),
@@ -2238,6 +2261,7 @@ data:extend({
     order = "e",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-carbon-dioxide-air-filter", 1),
@@ -2258,6 +2282,7 @@ data:extend({
     order = "e",
     energy_required = 4,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-trace-gas-air-filter", 1),
@@ -2304,6 +2329,7 @@ data:extend({
     },
     energy_required = 1.5,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 4)
@@ -2348,7 +2374,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
-    --enabled = false,
+    enabled = false,
     energy_required = 60,
     category = "crafting-with-fluid",
     ingredients =
@@ -2587,6 +2613,7 @@ data:extend({
     order = "b",
     enabled = false,
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("iron-plate", 1),
@@ -2608,6 +2635,7 @@ data:extend({
     order = "c",
     enabled = false,
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gold-plate", 5),
@@ -2628,6 +2656,7 @@ data:extend({
     subgroup = "pm-plastic-science-pack",
     order = "d",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-titanium-ore", 8),
@@ -2652,6 +2681,7 @@ data:extend({
     order = "e",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-plastic-science-bottle", 1),
@@ -2673,6 +2703,7 @@ data:extend({
     subgroup = "pm-plastic-science-pack",
     order = "e",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 10),
@@ -2697,6 +2728,7 @@ data:extend({
     subgroup = "pm-plastic-science-pack",
     order = "f",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-caesium", 5, "fluid"),
@@ -2721,6 +2753,7 @@ data:extend({
     subgroup = "pm-plastic-science-pack",
     order = "g",
     energy_required = 6,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-antimony-ore", 6),
@@ -2758,6 +2791,7 @@ data:extend({
     category = "pm-franciuming",
     subgroup = "pm-francium-science",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium", 3, "fluid"),
@@ -2790,6 +2824,7 @@ data:extend({
     category = "pm-franciuming",
     subgroup = "pm-francium-science",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium", 3, "fluid"),
@@ -2822,6 +2857,7 @@ data:extend({
     category = "pm-franciuming",
     subgroup = "pm-francium-science",
     order = "c",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium", 3, "fluid"),
@@ -2854,6 +2890,7 @@ data:extend({
     category = "pm-franciuming",
     subgroup = "pm-francium-science",
     order = "e",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium", 3, "fluid"),
@@ -2886,6 +2923,7 @@ data:extend({
     category = "pm-franciuming",
     subgroup = "pm-francium-science",
     order = "d",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium", 3, "fluid"),
