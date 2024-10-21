@@ -144,8 +144,8 @@ data:extend({
     results = 
     {
       PM.product_range_chance("pm-calcium-chloride", 0, 3, 0.5),
-      PM.product_range("pm-hydrogen-gas", 14, 20),
-      PM.product_range("pm-chlorine", 8, 16)
+      PM.product_range("pm-hydrogen-gas", 14, 20, "fluid"),
+      PM.product_range("pm-chlorine", 8, 16, "fluid")
     }
   }
 })

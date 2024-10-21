@@ -143,25 +143,17 @@ data:extend({
     },
 
     stage_counts = {1000000, 40000, 24000, 20000, 12000, 10000, 7000, 3000},
-        stages =
-        {
-          sheet =
-          {
-      filename = "__periodic-madness__/graphics/entities/ores/transition-metals-ore.png",
-      priority = "extra-high",
-      size = 64,
-      frame_count = 8,
-      variation_count = 8,
-      hr_version =
+    stages =
+    {
+      sheet =
       {
-      filename = "__periodic-madness__/graphics/entities/ores/hr-transition-metals-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
         variation_count = 8,
         scale = 0.5
       }
-          }
     },
   }--[[@as data.ResourceEntityPrototype]],
   {
@@ -207,25 +199,17 @@ data:extend({
 
     stage_counts = {1000000, 40000, 24000, 20000, 12000, 10000, 7000, 3000},
 
-        stages =
-        {
-          sheet =
-          {
-      filename = "__periodic-madness__/graphics/entities/ores/post-transition-metals-ore.png",
-      priority = "extra-high",
-      size = 64,
-      frame_count = 8,
-      variation_count = 8,
-      hr_version =
+    stages =
+    {
+      sheet =
       {
-      filename = "__periodic-madness__/graphics/entities/ores/hr-post-transition-metals-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/post-transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
         variation_count = 8,
         scale = 0.5
       }
-          }
     },
   }--[[@as data.ResourceEntityPrototype]],
   {
@@ -270,25 +254,17 @@ data:extend({
     },
 
     stage_counts = {80000, 40000, 26000, 17000, 15200, 12000, 6500, 1000},
-        stages =
-        {
-          sheet =
-          {
-      filename = "__periodic-madness__/graphics/entities/ores/alkali-metals-ore.png",
-      priority = "extra-high",
-      size = 64,
-      frame_count = 8,
-      variation_count = 8,
-      hr_version =
+    stages =
+    {
+      sheet =
       {
-      filename = "__periodic-madness__/graphics/entities/ores/hr-alkali-metals-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/alkali-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
         variation_count = 8,
         scale = 0.5
       }
-          }
     },
   }--[[@as data.ResourceEntityPrototype]],
   {
@@ -333,25 +309,17 @@ data:extend({
     },
 
     stage_counts = {80000, 40000, 26000, 17000, 15200, 12000, 6500, 1000},
-        stages =
-        {
-          sheet =
-          {
-      filename = "__periodic-madness__/graphics/entities/ores/metalloid-ore.png",
-      priority = "extra-high",
-      size = 64,
-      frame_count = 8,
-      variation_count = 8,
-      hr_version =
+    stages =
+    {
+      sheet =
       {
-      filename = "__periodic-madness__/graphics/entities/ores/hr-metalloid-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/metalloid-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
         variation_count = 8,
         scale = 0.5
       }
-          }
     },
   }--[[@as data.ResourceEntityPrototype]],
 
@@ -400,25 +368,17 @@ data:extend({
     },
 
     stage_counts = {15000, 10000, 5500, 3000, 1300, 400, 200, 100},
-        stages =
-        {
-          sheet =
-          {
-      filename = "__periodic-madness__/graphics/entities/ores/nickel-ore.png",
-      priority = "extra-high",
-      size = 64,
-      frame_count = 8,
-      variation_count = 8,
-      hr_version =
+    stages =
+    {
+      sheet =
       {
-      filename = "__periodic-madness__/graphics/entities/ores/hr-nickel-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/nickel-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
         variation_count = 8,
         scale = 0.5
       }
-          }
     },
   }--[[@as data.ResourceEntityPrototype]],
 
@@ -464,25 +424,17 @@ data:extend({
     },
 
     stage_counts = {20000, 10000, 6500, 3000, 1500, 500, 220, 50},
-        stages =
-        {
-          sheet =
-          {
-      filename = "__periodic-madness__/graphics/entities/ores/zinc-ore.png",
-      priority = "extra-high",
-      size = 64,
-      frame_count = 8,
-      variation_count = 8,
-      hr_version =
+    stages =
+    {
+      sheet =
       {
-      filename = "__periodic-madness__/graphics/entities/ores/hr-zinc-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/zinc-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
         variation_count = 8,
         scale = 0.5
       }
-          }
     }
   }--[[@as data.ResourceEntityPrototype]]
 })
@@ -658,41 +610,22 @@ AcidPlant.animation = make_4way_animation_from_spritesheet({ layers =
 {
   {
     filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/acid-plant.png",
-    width = 108,
-    height = 148,
+    width = 220,
+    height = 292,
     frame_count = 24,
     line_length = 12,
-    shift = util.by_pixel(1, -9),
-    hr_version =
-    {
-      filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/hr-acid-plant.png",
-      width = 220,
-      height = 292,
-      frame_count = 24,
-      line_length = 12,
-      shift = util.by_pixel(0.5, -9),
-      scale = 0.5
-      }
+    shift = util.by_pixel(0.5, -9),
+    scale = 0.5
   },
   {
-    filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
-    width = 154,
-    height = 112,
+    filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
+    width = 312,
+    height = 222,
     repeat_count = 24,
     frame_count = 1,
-    shift = util.by_pixel(28, 6),
+    shift = util.by_pixel(27, 6),
     draw_as_shadow = true,
-    hr_version =
-    {
-      filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
-      width = 312,
-      height = 222,
-      repeat_count = 24,
-      frame_count = 1,
-      shift = util.by_pixel(27, 6),
-      draw_as_shadow = true,
-      scale = 0.5
-      }
+    scale = 0.5
   }
 }})
 
