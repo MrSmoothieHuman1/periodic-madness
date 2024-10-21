@@ -753,7 +753,7 @@ data:extend({
     tier = 4,
     order = "d",
     stack_size = 50,
-    effect = { speed = { bonus = 0.7 }, consumption = { bonus = 0.9 } },
+    effect = { speed = 0.7, consumption = 0.9 },
     beacon_tint =
     {
       primary = { r = 0.441, g = 0.514, b = 1.000, a = 1.000 },     -- #70b6ffff
@@ -791,7 +791,7 @@ data:extend({
     tier = 4,
     order = "d",
     stack_size = 50,
-    effect = { consumption = { bonus = -0.6 }, speed = { bonus = 0.25 } },
+    effect = { consumption = -0.6, speed = 0.25},
     beacon_tint =
     {
       primary = { 0, 1, 0 },
@@ -831,13 +831,11 @@ data:extend({
     stack_size = 50,
     effect =
     {
-      productivity = {bonus = 0.14},
-      consumption = {bonus = 0.75},
-      pollution = {bonus = 0.20},
-      speed =  {bonus = -0.25}
+      productivity = 0.14,
+      consumption = 0.75,
+      pollution = 0.20,
+      speed = -0.25
     },
-    limitation = productivity_module_limitation(),
-    limitation_message_key = "production-module-usable-only-on-intermediates",
     pictures =
     {
       layers =
