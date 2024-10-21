@@ -86,7 +86,7 @@ end
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param type item_type?
----@return data.FluidIngredientPrototype|data.ItemIngredientPrototype.struct
+---@return data.IngredientPrototype
 function PM.ingredient(name, amount, type)
   return {
     name = name,
@@ -99,14 +99,14 @@ end
 ---@param amount number
 ---@param catalyst_amount number
 ---@param type item_type?
----@return data.FluidIngredientPrototype|data.ItemIngredientPrototype.struct
+---@return data.IngredientPrototype
 function PM.catalyst_ingredient(name, amount, catalyst_amount, type)
   return {
     name = name,
     amount = amount,
     catalyst_amount = catalyst_amount,
     type = type or "item"
-  }--[[@as data.FluidIngredientPrototype|data.ItemIngredientPrototype.struct]]
+  }--[[@as data.IngredientPrototype]]
 end
 
 ---A local function to localize the product function implementaton
@@ -117,7 +117,7 @@ end
 ---@param amount_max number?
 ---@param probability number?
 ---@param catalyst_amount number?
----@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+---@return data.ProductPrototype
 local function super_product(name, type, amount, amount_min, amount_max, probability, catalyst_amount)
   return {
     name = name,
@@ -170,7 +170,7 @@ end
 ---@param amount number
 ---@param catalyst_amount number
 ---@param type item_type?
----@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+---@return data.ProductPrototype
 function PM.catalyst(name, amount, catalyst_amount, type)
   return super_product(name, type, amount, nil, nil, nil, catalyst_amount)
 end
@@ -180,7 +180,7 @@ end
 ---@param amount_max number
 ---@param catalyst_amount number
 ---@param type item_type?
----@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+---@return data.ProductPrototype
 function PM.catalyst_range(name, amount_min, amount_max, catalyst_amount, type)
   return super_product(name, type, nil, amount_min, amount_max, nil, catalyst_amount)
 end
@@ -190,7 +190,7 @@ end
 ---@param probability number
 ---@param catalyst_amount number
 ---@param type item_type?
----@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+---@return data.ProductPrototype
 function PM.catalyst_chance(name, amount, probability, catalyst_amount, type)
   return super_product(name, type, amount, nil, nil, probability, catalyst_amount)
 end
@@ -201,7 +201,7 @@ end
 ---@param probability number
 ---@param catalyst_amount number
 ---@param type item_type?
----@return data.FluidProductPrototype|data.ItemProductPrototype.struct
+---@return data.ProductPrototype
 function PM.catalyst_range_chance(name, amount_min, amount_max, probability, catalyst_amount, type)
   return super_product(name, type, nil, amount_min, amount_max, probability, catalyst_amount)
 end
@@ -261,7 +261,6 @@ end
 ---| "character-running-speed"
 ---| "deconstruction-time-to-live"
 ---| "follower-robot-lifetime"
----| "ghost-time-to-live"
 ---| "inserter-stack-size-bonus"
 ---| "laboratory-productivity"
 ---| "laboratory-speed"
@@ -269,7 +268,7 @@ end
 ---| "max-successful-attempts-per-tick-per-construction-queue"
 ---| "maximum-following-robots-count"
 ---| "mining-drill-productivity-bonus"
----| "stack-inserter-capacity-bonus"
+---| "bulk-inserter-capacity-bonus"
 ---| "train-braking-force-bonus"
 ---| "worker-robot-battery"
 ---| "worker-robot-speed"
@@ -290,7 +289,6 @@ end
 ---| data.CharacterRunningSpeedModifier
 ---| data.DeconstructionTimeToLiveModifier
 ---| data.FollowerRobotLifetimeModifier
----| data.GhostTimeToLiveModifier
 ---| data.InserterStackSizeBonusModifier
 ---| data.LaboratoryProductivityModifier
 ---| data.LaboratorySpeedModifier
@@ -298,7 +296,7 @@ end
 ---| data.MaxSuccessfulAttemptsPerTickPerConstructionQueueModifier
 ---| data.MaximumFollowingRobotsCountModifier
 ---| data.MiningDrillProductivityBonusModifier
----| data.StackInserterCapacityBonusModifier
+---| data.BulkInserterCapacityBonusModifier
 ---| data.TrainBrakingForceBonusModifier
 ---| data.WorkerRobotBatteryModifier
 ---| data.WorkerRobotSpeedModifier
