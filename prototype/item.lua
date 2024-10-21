@@ -1112,7 +1112,6 @@ data:extend({
     order = "a[grenade]-a[normal]",
     stack_size = 150
   },
-
   {
     type = "item",
     name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
@@ -1120,6 +1119,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/NiMoP.png",
     subgroup = "pm-refined-items",
     stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-rocket-control-unit",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+    subgroup = "pm-refined-items",
+    stack_size = 100
   },
 
   {

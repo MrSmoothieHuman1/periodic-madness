@@ -3614,7 +3614,7 @@ data:extend({
     type = "technology",
     name = "pm-rocket-control-unit",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/rocket-control-unit.png",
     effects = 
     {
       PM.unlock_recipe("pm-CRT"),

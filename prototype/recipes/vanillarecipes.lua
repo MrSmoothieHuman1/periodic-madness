@@ -144,25 +144,6 @@ data.raw["recipe"]["long-handed-inserter"].ingredients =
   PM.ingredient("pm-basic-wiring", 2),
   PM.ingredient("iron-plate", 1)
 }
-data.raw["recipe"]["filter-inserter"].ingredients =
-{
-  PM.ingredient("electronic-circuit", 2),
-  PM.ingredient("fast-inserter", 1),
-}
-data.raw["recipe"]["stack-inserter"].ingredients =
-{
-  PM.ingredient("pm-vulcanised-rubber", 2),
-  PM.ingredient("pm-solid-lubricant", 1),
-  PM.ingredient("fast-inserter", 1),
-  PM.ingredient("advanced-circuit", 2)
-}
-data.raw["recipe"]["stack-filter-inserter"].ingredients =
-{
-  PM.ingredient("pm-vulcanised-rubber", 2),
-  PM.ingredient("pm-solid-lubricant", 1),
-  PM.ingredient("filter-inserter", 1),
-  PM.ingredient("advanced-circuit", 4)
-}
 data.raw["recipe"]["big-electric-pole"].ingredients =
 {
   PM.ingredient("pm-basic-framing", 8),
@@ -438,7 +419,6 @@ data.raw["recipe"]["medium-electric-pole"].ingredients =
   PM.ingredient("steel-plate", 2),
   PM.ingredient("copper-cable", 4)
 }
-
 data.raw["recipe"]["speed-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
@@ -453,7 +433,7 @@ data.raw["recipe"]["productivity-module"].ingredients =
   PM.ingredient("electronic-circuit", 5),
   PM.ingredient("pm-cadnium-red", 5)
 }
-data.raw["recipe"]["effectivity-module"].ingredients =
+data.raw["recipe"]["efficiency-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-efficiency-light", 1),
@@ -476,7 +456,7 @@ data.raw["recipe"]["productivity-module-2"].ingredients =
   PM.ingredient("pm-fluid-circuit", 5),
   PM.ingredient("pm-cadnium-red", 5)
 }
-data.raw["recipe"]["effectivity-module-2"].ingredients =
+data.raw["recipe"]["efficiency-module-2"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-efficiency-light", 1),
@@ -500,7 +480,7 @@ data.raw["recipe"]["productivity-module-3"].ingredients =
   PM.ingredient("advanced-circuit", 5),
   PM.ingredient("pm-cadnium-red", 5)
 }
-data.raw["recipe"]["effectivity-module-3"].ingredients =
+data.raw["recipe"]["efficiency-module-3"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-efficiency-light", 1),
@@ -646,7 +626,7 @@ data.raw["recipe"]["energy-shield-equipment"].ingredients =
   PM.ingredient("advanced-circuit", 8),
   PM.ingredient("pm-heavyweight-panelling", 8)
 }
-data.raw["recipe"]["fusion-reactor-equipment"].ingredients = 
+data.raw["recipe"]["fission-reactor-equipment"].ingredients = 
 {
   PM.ingredient("processing-unit", 30),
   PM.ingredient("low-density-structure", 15),
@@ -684,7 +664,7 @@ data.raw["recipe"]["coal-liquefaction"].ingredients =
   PM.ingredient("pm-oil-residuals", 25, "fluid"),
   PM.ingredient("steam", 50, "fluid")
 }
-data.raw["recipe"]["coal-liquefaction"].x.results =
+data.raw["recipe"]["coal-liquefaction"].results =
 {
   PM.product("pm-oil-residuals", 90, "fluid"),
   PM.product("pm-refinery-gases", 20, "fluid"),
