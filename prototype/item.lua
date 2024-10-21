@@ -1230,56 +1230,53 @@ data:extend({
 })
 
 local PMRefItems = data.raw["item"]["copper-cable"]
-
 PMRefItems.subgroup = "pm-refined-items"
 
 local PMRefIronBar = data.raw["item"]["iron-stick"]
-
 PMRefIronBar.subgroup = "pm-refined-items"
 
 local PMRefItemsGear = data.raw["item"]["iron-gear-wheel"]
-
 PMRefItemsGear.subgroup = "pm-refined-items"
 
 local SolidFuelFuel = data.raw["item"]["solid-fuel"]
-
 SolidFuelFuel.subgroup = "pm-fuels"
 SolidFuelFuel.order = "e"
+
 data.raw["module"]["productivity-module"].effect =
 {
-  productivity = { bonus = 0.04 },
-  consumption = { bonus = 0.4 },
-  pollution = { bonus = 0.10 },
-  speed = { bonus = -0.1 }
+  productivity = 0.04,
+  consumption = 0.4,
+  pollution = 0.10,
+  speed = -0.1
 }
 data.raw["module"]["productivity-module-2"].effect =
 {
-  productivity = { bonus = 0.06 },
-  consumption = { bonus = 0.5 },
-  pollution = { bonus = 0.12 },
-  speed = { bonus = -0.15 }
+  productivity = 0.06,
+  consumption =  0.5,
+  pollution = 0.12,
+  speed =-0.15
 }
 data.raw["module"]["productivity-module-3"].effect =
 {
-  productivity = { bonus = 0.1 },
-  consumption = { bonus = 0.6 },
-  pollution = { bonus = 0.16 },
-  speed = { bonus = -0.20 }
+  productivity = 0.1,
+  consumption = 0.6,
+  pollution = 0.16,
+  speed = -0.20
 }
 data.raw["module"]["effectivity-module"].effect =
 {
-  consumption = { bonus = -0.3 },
-  speed = { bonus = 0.05 }
+  consumption = -0.3,
+  speed = 0.05
 }
 data.raw["module"]["effectivity-module-2"].effect =
 {
-  consumption = { bonus = -0.4 },
-  speed = { bonus = 0.1 }
+  consumption = -0.4,
+  speed = 0.1
 }
 data.raw["module"]["effectivity-module-3"].effect =
 {
-  consumption = { bonus = -0.5 },
-  speed = { bonus = 0.15 }
+  consumption = -0.5,
+  speed = 0.15
 }
 data.raw["module"]["speed-module"].subgroup = "pm-speed"
 data.raw["module"]["speed-module"].order = "a"
