@@ -71,7 +71,7 @@ data:extend({
     results =
     {
       PM.product("pm-bismite", 4),
-      PM.catalyst_product("pm-flux-container", 1, 1),
+      PM.catalyst("pm-flux-container", 1, 1),
       PM.catalyst_range("pm-tin-ore", 1, 3, 3)
     }
   } --[[@as data.RecipePrototype]],

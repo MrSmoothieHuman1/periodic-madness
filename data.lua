@@ -98,7 +98,6 @@ require("compatibility.icon-badges")
 
 
 local resource_autoplace = require('resource-autoplace');
-local noise = require('noise');
 
 data:extend({
 	{
@@ -109,10 +108,6 @@ data:extend({
     richness = true,
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
-	{
-    type = "noise-layer",
-    name = "pm-transition-metals"
-	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -164,10 +159,6 @@ data:extend({
     richness = true,
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
-	{
-    type = "noise-layer",
-    name = "pm-post-transition-metals"
-	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -221,10 +212,6 @@ data:extend({
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
 	{
-    type = "noise-layer",
-    name = "pm-alkali-metals"
-	}--[[@as data.NoiseLayer]],
-	{
     type = "resource",
     icon_size = 64,
     name = "pm-alkali-metals",
@@ -275,10 +262,6 @@ data:extend({
     richness = true,
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
-	{
-    type = "noise-layer",
-    name = "pm-metalloids"
-	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,
@@ -334,10 +317,6 @@ data:extend({
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
 	{
-    type = "noise-layer",
-    name = "pm-nickel-ore"
-	}--[[@as data.NoiseLayer]],
-	{
     type = "resource",
     icon_size = 64,
     name = "pm-nickel-ore",
@@ -390,10 +369,6 @@ data:extend({
     richness = true,
     order = "b-e"
 	}--[[@as data.AutoplaceControl]],
-	{
-    type = "noise-layer",
-    name = "pm-zinc-ore"
-	}--[[@as data.NoiseLayer]],
 	{
     type = "resource",
     icon_size = 64,

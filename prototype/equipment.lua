@@ -286,9 +286,7 @@ data:extend({
 data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment.png"
 data.raw["item"]["battery-mk2-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment.png"
 data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment-icon.png"
-data.raw["battery-equipment"]["battery-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment-icon.png"
 data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment-icon.png"
-data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.hr_version.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment-icon.png"
 data.raw["battery-equipment"]["battery-equipment"].shape =
     {
       width = 2,
@@ -310,16 +308,16 @@ data.raw["item"]["battery-equipment"].order = "a"
 data.raw["item"]["battery-mk2-equipment"].subgroup = "pm-modular-storage"
 data.raw["item"]["battery-mk2-equipment"].order = "b"
 
-data.raw["generator-equipment"]["fusion-reactor-equipment"].burner = 
+data.raw["generator-equipment"]["fission-reactor-equipment"].burner = 
 {
   usage_priority = "primary-output",
   fuel_category = "pm-fuel-rods",
   fuel_inventory_size = 1,
   burnt_inventory_size = 1,
 }
-data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "500kW"
-data.raw["item"]["fusion-reactor-equipment"].subgroup = "pm-modular-power"
-data.raw["item"]["fusion-reactor-equipment"].order = "c"
+data.raw["generator-equipment"]["fission-reactor-equipment"].power = "500kW"
+data.raw["item"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
+data.raw["item"]["fission-reactor-equipment"].order = "c"
 
 data.raw["item"]["solar-panel-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["solar-panel-equipment"].order = "a"
