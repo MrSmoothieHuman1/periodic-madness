@@ -110,7 +110,7 @@ data:extend({
       type = "burner",
       fuel_category = "pm-oxidiser",
       effectivity = 1,
-      emissions_per_minute = 3,
+      emissions_per_minute = {pollution = 3},
       fuel_inventory_size = 1,
       light_flicker =
       {
@@ -304,7 +304,7 @@ data:extend({
       fuel_category = "chemical",
       effectivity = 1,
       fuel_inventory_size = 1,
-      emissions_per_minute = 6,
+      emissions_per_minute = {pollution = 6},
     },
     working_sound =
     {
@@ -679,7 +679,7 @@ data:extend({
       fuel_category = "chemical",
       effectivity = 1,
       fuel_inventory_size = 1,
-      emissions_per_minute = 30,
+      emissions_per_minute = {pollution = 30},
       light_flicker =
       {
         color = { 0, 0, 0 },
@@ -1609,7 +1609,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 1.5,
+      emissions_per_minute = {pollution = 1.5},
     },
     working_sound =
     {
@@ -1678,7 +1678,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
     },
     working_sound =
     {
@@ -1744,7 +1744,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      emissions_per_minute = 2.5,
+      emissions_per_minute = {pollution = 2.5},
       fuel_inventory_size = 1,
       fuel_category = "chemical",
       light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
@@ -1799,7 +1799,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 12
+      emissions_per_minute = {pollution = 12}
     },
     energy_usage = "500kW",
     animation =
@@ -1927,7 +1927,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
     },
     energy_usage = "150KW",
     next_upgrade = "pm-crusher-2",
@@ -1982,7 +1982,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 1,
+      emissions_per_minute = {pollution = 1},
     },
     energy_usage = "300KW",
     fast_replaceable_group = "pm-crusher",
@@ -2324,7 +2324,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 6,
+      emissions_per_minute = {pollution = 6},
     },
     animation =
     {
@@ -2457,7 +2457,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
       fluid_box =
       {
         production_type = "input",
@@ -2513,7 +2513,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 8,
+      emissions_per_minute = {pollution = 8},
     },
     animation =
     {
@@ -2647,7 +2647,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      emissions_per_minute = 1,
+      emissions_per_minute = {pollution = 1},
       fluid_box =
       {
         production_type = "input",
@@ -2683,7 +2683,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
       fluid_box =
       {
         production_type = "input",
@@ -3536,7 +3536,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 1,
+      emissions_per_minute = {pollution = 1},
     },
     working_sound =
     {
@@ -3607,7 +3607,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 0,
+      emissions_per_minute = {pollution = 0},
     },
     animation =
     {
@@ -5328,7 +5328,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      emissions_per_minute = 14,
+      emissions_per_minute = {pollution = 14},
       usage_priority = "secondary-input"
     },
     energy_usage = "120kW",
@@ -5407,7 +5407,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 3,
+      emissions_per_minute = {pollution = 3},
     },
     working_sound =
     {
@@ -5928,7 +5928,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 30,
+      emissions_per_minute = {pollution = 30},
     },
     animation =
     {
@@ -6344,7 +6344,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 4,
+      emissions_per_minute = {pollution = 4},
     },
     animation =
     {
@@ -6464,7 +6464,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 0.25,
+      emissions_per_minute = {pollution = 0.25},
     },
     working_sound =
     {
@@ -6495,7 +6495,7 @@ data:extend({
     energy_source = { type = "void" },
     crafting_speed = 2,
     crafting_categories = { "pm-leaching" },
-    emissions_per_minute = 10,
+    emissions_per_minute = {pollution = 10},
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
     allowed_effects = { "consumption", "speed", "pollution", "productivity" },
@@ -6652,7 +6652,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 3.5,
+      emissions_per_minute = {pollution = 3.5},
     },
     working_sound =
     {
@@ -7533,7 +7533,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 3
+      emissions_per_minute = {pollution = 3}
     },
     energy_usage = "350kW",
     crafting_categories = {"chemistry"},
