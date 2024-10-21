@@ -787,7 +787,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
     icon_size = 128,
     subgroup = "pm-effectivity",
-    category = "effectivity",
+    category = "efficiency",
     tier = 4,
     order = "d",
     stack_size = 50,
@@ -1261,17 +1261,17 @@ data.raw["module"]["productivity-module-3"].effect =
   pollution = 0.16,
   speed = -0.20
 }
-data.raw["module"]["effectivity-module"].effect =
+data.raw["module"]["efficiency-module"].effect =
 {
   consumption = -0.3,
   speed = 0.05
 }
-data.raw["module"]["effectivity-module-2"].effect =
+data.raw["module"]["efficiency-module-2"].effect =
 {
   consumption = -0.4,
   speed = 0.1
 }
-data.raw["module"]["effectivity-module-3"].effect =
+data.raw["module"]["efficiency-module-3"].effect =
 {
   consumption = -0.5,
   speed = 0.15
@@ -1283,12 +1283,12 @@ data.raw["module"]["speed-module-2"].order = "b"
 data.raw["module"]["speed-module-3"].subgroup = "pm-speed"
 data.raw["module"]["speed-module-3"].order = "c"
 
-data.raw["module"]["effectivity-module"].subgroup = "pm-effectivity"
-data.raw["module"]["effectivity-module"].order = "a"
-data.raw["module"]["effectivity-module-2"].subgroup = "pm-effectivity"
-data.raw["module"]["effectivity-module-2"].order = "b"
-data.raw["module"]["effectivity-module-3"].subgroup = "pm-effectivity"
-data.raw["module"]["effectivity-module-3"].order = "c"
+data.raw["module"]["efficiency-module"].subgroup = "pm-efficiency"
+data.raw["module"]["efficiency-module"].order = "a"
+data.raw["module"]["efficiency-module-2"].subgroup = "pm-efficiency"
+data.raw["module"]["efficiency-module-2"].order = "b"
+data.raw["module"]["efficiency-module-3"].subgroup = "pm-efficiency"
+data.raw["module"]["efficiency-module-3"].order = "c"
 
 data.raw["module"]["productivity-module"].subgroup = "pm-productivity"
 data.raw["module"]["productivity-module"].order = "a"
@@ -1351,7 +1351,7 @@ smodule3.pictures = {
   }
 }
 
-local emodule1 = data.raw["module"]["effectivity-module"]
+local emodule1 = data.raw["module"]["efficiency-module"]
 emodule1.pictures = {
   layers =
   {
@@ -1369,7 +1369,7 @@ emodule1.pictures = {
     }
   }
 }
-local emodule2 = data.raw["module"]["effectivity-module-2"]
+local emodule2 = data.raw["module"]["efficiency-module-2"]
 emodule2.pictures = {
   layers =
   {
@@ -1387,7 +1387,7 @@ emodule2.pictures = {
     }
   }
 }
-local emodule3 = data.raw["module"]["effectivity-module-3"]
+local emodule3 = data.raw["module"]["efficiency-module-3"]
 emodule3.pictures = {
   layers =
   {
