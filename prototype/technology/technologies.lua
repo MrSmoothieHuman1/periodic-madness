@@ -342,7 +342,7 @@ data:extend({
       PM.unlock_recipe("express-underground-belt"),
       PM.unlock_recipe("express-splitter")
     },
-    prerequisites = {"logistics-3", "advanced-electronics-2", "production-science-pack" },
+    prerequisites = {"logistics-3", "processing-unit"},
     unit =
     {
       count = 350,
@@ -1110,7 +1110,7 @@ data:extend({
       PM.unlock_recipe("pm-carbon-dioxide-atmospheric-voiding"),
       PM.unlock_recipe("pm-trace-gas-atmospheric-voiding"),
     },
-    prerequisites = {"advanced-electronics" },
+    prerequisites = {"advanced-circuit" },
     unit =
     {
       count = 150,
@@ -1121,27 +1121,6 @@ data:extend({
         PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
       },
       time = 45
-    }
-  },
-  {
-    type = "technology",
-    name = "pm-filter-long-handed-inserter",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/filter-long-handed-inserter.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-filter-long-handed-inserter")
-    },
-    prerequisites = {"fast-inserter", "pm-rubber-processing" },
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-      },
-      time = 15,
     }
   },
   {
@@ -1189,7 +1168,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-science-center")
     },
-    prerequisites = {"advanced-electronics" },
+    prerequisites = {"advanced-circuit" },
     unit =
     {
       count = 200,
@@ -1995,7 +1974,7 @@ data:extend({
       PM.unlock_recipe("pm-resin-ion-exchange-beads"),
       PM.unlock_recipe("pm-gallium-filtering"),
     },
-    prerequisites = {"advanced-electronics" },
+    prerequisites = {"advanced-circuit" },
     unit =
     {
       count = 150,
@@ -2042,7 +2021,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-solar-panel-2"),
     },
-    prerequisites = {"advanced-electronics-2", "solar-energy" },
+    prerequisites = {"processing-unit", "solar-energy" },
     unit =
     {
       count = 400,
@@ -2654,7 +2633,7 @@ data:extend({
       PM.unlock_recipe("pm-battery-discharger"),
       PM.unlock_recipe("pm-vanadium-battery-charging"),
     },
-    prerequisites = {"pm-voltatic-piles", "advanced-electronics", "pm-vanadium-oxide-redox-batteries" },
+    prerequisites = {"pm-voltatic-piles", "advanced-circuit", "pm-vanadium-oxide-redox-batteries" },
     unit =
     {
       count = 200,
@@ -2772,7 +2751,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-logistic-robot")
     },
-    prerequisites = {"pm-lithium-ion-battery", "advanced-electronics-2", "logistic-robotics" },
+    prerequisites = {"pm-lithium-ion-battery", "processing-unit", "logistic-robotics" },
     unit =
     {
       count = 400,
@@ -2797,7 +2776,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-construction-robot")
     },
-    prerequisites = {"pm-lithium-ion-battery", "advanced-electronics-2", "construction-robotics" },
+    prerequisites = {"pm-lithium-ion-battery", "processing-unit", "construction-robotics" },
     unit =
     {
       count = 400,
@@ -3610,7 +3589,6 @@ data:extend({
     type = "technology",
     name = "pm-logistics-4",
     icon_size = 256,
-    icon_mipmaps = 4,
     icon = "__base__/graphics/technology/logistics-3.png",
     effects =
     {
@@ -3618,7 +3596,7 @@ data:extend({
       PM.unlock_recipe("express-underground-belt"),
       PM.unlock_recipe("express-splitter")
     },
-    prerequisites = {"logistics-3", "low-density-structure", "advanced-electronics-2", "production-science-pack" },
+    prerequisites = {"logistics-3", "low-density-structure", "advanced-circuit", "production-science-pack" },
     unit =
     {
       count = 600,
@@ -3632,6 +3610,32 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-rocket-control-unit",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-CRT"),
+      PM.unlock_recipe("pm-oscilloscope"),
+      PM.unlock_recipe("pm-rocket-control-unit")
+    },
+    prerequisites = {"pm-vacuum-tubes"},
+    unit =
+      {
+        count = 350,
+        ingredients = 
+        {
+          PM.ingredient("automation-science-pack", 1),
+          PM.ingredient("logistic-science-pack", 1),
+          PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+          PM.ingredient("chemical-science-pack", 1),
+          PM.ingredient("pm-alkali-metal-science-pack", 1)
+        },
+        time = 60,
+      }
+    },
 
   {
     type = "technology",
@@ -3759,12 +3763,10 @@ data:extend({
       time = 60
     }
   },
-
   {
     type = "technology",
     name = "toolbelt-2",
     icon_size = 256,
-    icon_mipmaps = 4,
     icons = util.technology_icon_constant_capacity("__base__/graphics/technology/toolbelt.png"),
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "toolbelt" },
     effects =
@@ -3788,7 +3790,6 @@ data:extend({
     type = "technology",
     name = "pm-worker-robots-storage-4",
     icon_size = 256,
-    icon_mipmaps = 4,
     icons = util.technology_icon_constant_capacity("__base__/graphics/technology/worker-robots-storage.png"),
     effects =
     {
@@ -3815,7 +3816,6 @@ data:extend({
     type = "technology",
     name = "pm-worker-robots-storage-5",
     icon_size = 256,
-    icon_mipmaps = 4,
     icons = util.technology_icon_constant_capacity("__base__/graphics/technology/worker-robots-storage.png"),
     effects =
     {
@@ -3841,7 +3841,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-mining-productivity-5",
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
     effects =
     {

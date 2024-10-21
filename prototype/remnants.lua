@@ -2,37 +2,6 @@ data:extend({
 
   {
     type = "corpse",
-    name = "pm-filter-long-handed-inserter-remnants",
-    icon = "__base__/graphics/icons/long-handed-inserter.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    flags = { "placeable-neutral", "not-on-map" },
-    subgroup = "inserter-remnants",
-    order = "a-c-a",
-    selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-    tile_width = 1,
-    tile_height = 1,
-    selectable_in_game = false,
-    time_before_removed = 60 * 60 * 15,     -- 15 minutes
-    final_render_layer = "remnants",
-    animation = make_rotated_animation_variations_from_sheet(4,
-      {
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/filter-long-handed-inserter/remnants/filter-long-handed-inserter-remnants.png",
-        line_length = 1,
-        width = 134,
-        height = 94,
-        frame_count = 1,
-        variation_count = 1,
-        axially_symmetrical = false,
-        direction_count = 1,
-        shift = util.by_pixel(3.5, -2),
-        scale = 0.5
-      }
-    )
-  },
-  {
-    type = "corpse",
     name = "pm-solar-panel-2-remnants",
     icon = "__base__/graphics/icons/solar-panel.png",
     icon_size = 64,

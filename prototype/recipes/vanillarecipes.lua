@@ -589,12 +589,7 @@ sanitize_recipe(recipes["piercing-rounds-magazine"]).ingredients =
   PM.ingredient("steel-plate", 2),
   PM.ingredient("copper-plate", 2)
 }
-sanitize_recipe(recipes["rocket-control-unit"]).ingredients =
-{
-  PM.ingredient("pm-oscilloscope", 1),
-  PM.ingredient("pm-polyethylene-plastic", 8),
-  PM.ingredient("pm-basic-wiring", 10)
-}
+
 sanitize_recipe(recipes["cluster-grenade"]).ingredients =
 {
   PM.ingredient("explosives", 4),
@@ -682,31 +677,27 @@ data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
   PM.product("uranium-238", 3)
 }
 data.raw["recipe"]["speed-module-2"].energy_required = 15
-data.raw["recipe"]["effectivity-module-2"].energy_required = 15
+data.raw["recipe"]["efficiency-module-2"].energy_required = 15
 data.raw["recipe"]["productivity-module-2"].energy_required = 15
 data.raw["recipe"]["speed-module-3"].energy_required = 30
-data.raw["recipe"]["effectivity-module-3"].energy_required = 30
+data.raw["recipe"]["efficiency-module-3"].energy_required = 30
 data.raw["recipe"]["productivity-module-3"].energy_required = 30
 
 data.raw["recipe"]["processing-unit"].energy_required = 6
-local RCCraftingFix = data.raw["recipe"]["advanced-circuit"]
 
+local RCCraftingFix = data.raw["recipe"]["advanced-circuit"]
 RCCraftingFix.energy_required = 3
 
 local BlueBeltTime = data.raw["recipe"]["express-transport-belt"]
-
 BlueBeltTime.energy_required = 2
 
 local BlueSplitterTime = data.raw["recipe"]["express-splitter"]
-
 BlueSplitterTime.energy_required = 3
 
 local BlueUBeltTime = data.raw["recipe"]["express-underground-belt"]
-
 BlueUBeltTime.energy_required = 2
 
 data.raw["recipe"]["chemical-science-pack"].category = "crafting-with-fluid"
-
 data.raw["recipe"]["logistic-science-pack"].category = "crafting-with-fluid"
 
 local CoalLiquefactionDirtyFix = data.raw["recipe"]["coal-liquefaction"]

@@ -6,14 +6,6 @@ local is_debug = not not mods["debugadapter"]
 
 data:extend({
   {
-    type = "bool-setting",
-    name = "pm-zirconium-pants",
-    setting_type = "startup",
-    default_value = false,
-    order = "z"
-  },
-
-  {
     type = "string-setting",
     name = "pm-belt-colour-tier-1",
     localised_name = "mod-setting-name.pm-belt-colour-tier", 1,

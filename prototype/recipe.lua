@@ -2603,6 +2603,22 @@ data:extend({
       PM.product("pm-lithium-sulfur-battery-mk2-equipment", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-rocket-control-unit",
+    enabled = false,
+    energy_reqiured = 30,
+    ingredients =
+      {
+        PM.ingredient("pm-oscilloscope", 1),
+        PM.ingredient("pm-polyethylene-plastic", 8),
+        PM.ingredient("pm-basic-wiring", 10)
+      },
+    results = 
+    {
+      PM.product("pm-rocket-control-unit", 1)
+    }
+  },
 
   {
     type = "recipe",
