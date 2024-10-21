@@ -307,7 +307,6 @@ data:extend({
     type = "technology",
     name = "pm-fiberoptics",
     icon_size = 256,
-    icon_mipmaps = 4,
     icon = "__base__/graphics/technology/optics.png",
     effects =
     {
@@ -334,7 +333,6 @@ data:extend({
     type = "technology",
     name = "pm-logistics-4",
     icon_size = 256,
-    icon_mipmaps = 4,
     icon = "__base__/graphics/technology/logistics-3.png",
     effects =
     {
@@ -3518,7 +3516,6 @@ data:extend({
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-        icon_mipmaps = 3,
         icon_size = 128,
         shift = {
           100,
@@ -3557,7 +3554,6 @@ data:extend({
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-        icon_mipmaps = 3,
         icon_size = 128,
         shift = {
           100,

@@ -462,7 +462,6 @@ data:extend({
     type = "item",
     name = "pm-heat-pipe-1",
     icon_size = 64,
-    icon_mipmaps = 4,
     icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-1.png",
     subgroup = "pm-heat-machines",
     order = "a",

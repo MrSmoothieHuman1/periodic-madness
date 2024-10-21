@@ -336,7 +336,6 @@ data.raw["technology"]["battery-equipment"].icons =
   },
   {
     icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-    icon_mipmaps = 3,
     icon_size = 128,
     shift = {
       100,
@@ -360,7 +359,6 @@ data.raw["technology"]["battery-mk2-equipment"].icons =
   },
   {
     icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-    icon_mipmaps = 3,
     icon_size = 128,
     shift = {
       100,

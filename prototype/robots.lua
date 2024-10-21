@@ -341,7 +341,6 @@ local robots =
     name = "pm-lithium-logistic-robot",
     icon = "__periodic-madness__/graphics/icons/lithium-logistic-robot.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
     minable = { mining_time = 0.1, result = "pm-lithium-logistic-robot" },
     resistances =
