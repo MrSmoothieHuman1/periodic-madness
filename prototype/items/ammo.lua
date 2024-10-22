@@ -5,9 +5,9 @@ data:extend({
         name = "pm-high-density-magazine",
         icon = "__periodic-madness__/graphics/icons/high-density-magazine.png",
         icon_size = 64,
+        ammo_category = "bullet",
         ammo_type =
         {
-          category = "bullet",
           action =
           {
             type = "direct",
@@ -45,9 +45,9 @@ data:extend({
         name = "pm-genevas-neglection-magazine",
         icon = "__periodic-madness__/graphics/icons/geneva's-neglection-magazine.png",
         icon_size = 64,
+        ammo_category = "bullet",
         ammo_type =
         {
-          category = "bullet",
           action =
           {
             type = "direct",
@@ -95,9 +95,9 @@ data:extend({
         name = "pm-high-density-shotgun-shell",
         icon = "__base__/graphics/icons/piercing-shotgun-shell.png",
         icon_size = 64, 
+        ammo_category = "shotgun-shell",
         ammo_type =
         {
-          category = "shotgun-shell",
           target_type = "direction",
           clamp_position = true,
           action =
@@ -142,9 +142,9 @@ data:extend({
         name = "pm-genevas-neglection-shotgun-shell",
         icon = "__periodic-madness__/graphics/icons/geneva's-neglection-shell.png",
         icon_size = 64, 
+        ammo_category = "shotgun-shell",
         ammo_type =
         {
-          category = "shotgun-shell",
           target_type = "direction",
           clamp_position = true,
           action =
@@ -190,9 +190,9 @@ data:extend({
   name = "pm-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/basic-slug.png",
   icon_size = 64, 
+  ammo_category = "shotgun-shell",
   ammo_type =
   {
-    category = "shotgun-shell",
     target_type = "direction",
     clamp_position = true,
     action =
@@ -237,9 +237,9 @@ data:extend({
   name = "pm-heavy-piercing-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/piercing-slug.png",
   icon_size = 64, 
+  ammo_category = "shotgun-shell",
   ammo_type =
   {
-    category = "shotgun-shell",
     target_type = "direction",
     clamp_position = true,
     action =
@@ -284,9 +284,9 @@ data:extend({
   name = "pm-high-density-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/high-density-slug.png",
   icon_size = 64, 
+  ammo_category = "shotgun-shell",
   ammo_type =
   {
-    category = "shotgun-shell",
     target_type = "direction",
     clamp_position = true,
     action =
@@ -331,9 +331,9 @@ data:extend({
   name = "pm-genevas-neglection-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/geneva's-neglection-slug.png",
   icon_size = 64, 
+  ammo_category = "shotgun-shell",
   ammo_type =
   {
-    category = "shotgun-shell",
     target_type = "direction",
     clamp_position = true,
     action =
