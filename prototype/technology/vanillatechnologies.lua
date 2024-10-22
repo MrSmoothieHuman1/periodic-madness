@@ -353,7 +353,7 @@ data.raw["technology"]["battery-mk2-equipment"].unit.ingredients =
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {}"pm-post-transition-metal-science-pack", 1}
+  {"pm-post-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["battery-mk2-equipment"].prerequisites = {"battery-equipment", "processing-unit"}
 data.raw["technology"]["battery-mk2-equipment"].icons = 
@@ -492,7 +492,7 @@ data.raw["technology"]["laser-turret"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
-  ("military-science-pack", 1)
+  {"military-science-pack", 1}
 }
 
 data.raw["technology"]["electric-energy-distribution-2"].unit.ingredients =
@@ -538,7 +538,7 @@ data.raw["technology"]["land-mine"].unit.ingredients =
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  ("military-science-pack", 1)
+  {"military-science-pack", 1}
 }
 
 data.raw["technology"]["braking-force-1"].unit.ingredients =
