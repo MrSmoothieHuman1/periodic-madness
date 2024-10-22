@@ -342,6 +342,54 @@ function PM.modify_nothing()
   } --[[@as data.NothingModifier]]
 end
 
+--MARK: Module Effects
+
+---Returns an effect type limitation of every effect
+---@return data.EffectTypeLimitation
+function PM.all_effects()
+  return {
+    "speed",
+    "productivity",
+    "consumption",
+    "pollution",
+    "quality",
+  }--[[@as data.EffectTypeLimitation]]
+end
+
+---Returns all effects except the given ones
+---@param ... data.EffectTypeLimitation
+---@return data.EffectTypeLimitation[]
+function PM.all_effects_but(...)
+  ---@type table<data.EffectTypeLimitation,true>
+  local effects = {
+    ["speed"] = true,
+    ["productivity"] = true,
+    ["consumption"] = true,
+    ["pollution"] = true,
+    ["quality"] = true,
+  }
+  for _, effect in pairs({...}--[[@as table<int,data.EffectTypeLimitation>]]) do
+    effects[effect] = nil
+  end
+  ---@type data.EffectTypeLimitation[]
+  local limitation, count = {}, 0
+  for effect in pairs(effects) do
+    count = count + 1
+    limitation[count] = effect
+  end
+
+  return limitation
+end
+
+---Returns an array of the given effects
+---
+---Only exists to get intellisense to help you fill the values,
+---as well as to match the other functions
+---@param ... data.EffectTypeLimitation
+---@return data.EffectTypeLimitation[]
+function PM.effects(...)
+  return {...}
+end
 
 --MARK: Global variables:
 
