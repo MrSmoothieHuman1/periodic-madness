@@ -63,29 +63,21 @@ data:extend({
 
 })
 
-local TMScienceFix = data.raw["recipe"]["automation-science-pack"]
+ data.raw["recipe"]["automation-science-pack"].energy_required = 6
 
-TMScienceFix.energy_required = 6
-
-local ATMScienceFix = data.raw["recipe"]["logistic-science-pack"]
-
-ATMScienceFix.energy_required = 6
-ATMScienceFix.results =
+data.raw["recipe"]["logistic-science-pack"].energy_required = 6
+data.raw["recipe"]["logistic-science-pack"].results =
 {
   PM.product("logistic-science-pack", 1)
 }
 
-local RNMScienceFix = data.raw["recipe"]["chemical-science-pack"]
-
-RNMScienceFix.energy_required = 6
-RNMScienceFix.results =
+data.raw["recipe"]["chemical-science-pack"].energy_required = 6
+data.raw["recipe"]["chemical-science-pack"].results =
 {
   PM.product("chemical-science-pack", 1)
 }
-
 data.raw["tool"]["chemical-science-pack"].order = "e"
-data.raw["tool"]["chemical-science-pack"].icon =
-"__periodic-madness__/graphics/icons/science/reactive-non-metals-pack.png"
+data.raw["tool"]["chemical-science-pack"].icon ="__periodic-madness__/graphics/icons/science/reactive-non-metals-pack.png"
 
 data.raw["tool"]["production-science-pack"].order = "x"
 data.raw["tool"]["utility-science-pack"].order = "xa"

@@ -121,9 +121,9 @@ data:extend({
         percent = 100
       }
     },
-    collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } }, --
-    selection_box = { { -1, -1 }, { 1, 1 } },
-    crafting_categories = { "pm-alloying" },
+    collision_box = {{ -0.9, -0.9},  {0.9, 0.9}},
+    selection_box = {{-1, -1}, {1, 1}},
+    crafting_categories = {"pm-alloying"},
     energy_usage = "250kW",
     crafting_speed = 2,
     energy_source =
@@ -135,7 +135,7 @@ data:extend({
       fuel_inventory_size = 1,
       light_flicker =
       {
-        color = { 0, 0, 1 },
+        color = {0, 0, 1},
         minimum_intensity = 0.9,
         maximum_intensity = 0.95
       },
@@ -144,7 +144,7 @@ data:extend({
         {
           name = "smoke",
           frequency = 10,
-          position = { 0.7, -1.2 },
+          position = {0.7, -1.2},
           starting_vertical_speed = 0.08,
           starting_frame_deviation = 60
         }
@@ -164,7 +164,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__base__/graphics/entity/steel-furnace/hr-steel-furnace-shadow.png",
+          filename = "__base__/graphics/entity/steel-furnace/steel-furnace-shadow.png",
           priority = "high",
           width = 277,
           height = 85,
@@ -183,7 +183,7 @@ data:extend({
         effect = "flicker",
         animation =
         {
-          filename = "__base__/graphics/entity/steel-furnace/hr-steel-furnace-fire.png",
+          filename = "__base__/graphics/entity/steel-furnace/steel-furnace-fire.png",
           priority = "high",
           line_length = 8,
           width = 57,
@@ -215,7 +215,7 @@ data:extend({
         effect = "flicker",
         animation =
         {
-          filename = "__base__/graphics/entity/steel-furnace/hr-steel-furnace-working.png",
+          filename = "__base__/graphics/entity/steel-furnace/steel-furnace-working.png",
           priority = "high",
           line_length = 1,
           width = 128,
@@ -234,7 +234,7 @@ data:extend({
         effect = "flicker",
         animation =
         {
-          filename = "__base__/graphics/entity/steel-furnace/hr-steel-furnace-ground-light.png",
+          filename = "__base__/graphics/entity/steel-furnace/steel-furnace-ground-light.png",
           priority = "high",
           line_length = 1,
           draw_as_sprite = false,
@@ -276,15 +276,8 @@ data:extend({
     max_health = 100,
     corpse = "assembling-machine-1-remnants",
     dying_explosion = "assembling-machine-1-explosion",
-    resistances =
-    {
-      {
-        type = "fire",
-        percent = 70
-      }
-    },
-    collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
-    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2 }},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     fast_replaceable_group = "assembling-machine",
     next_upgrade = "assembling-machine-1",
     alert_icon_shift = util.by_pixel(-3, -12),
@@ -303,7 +296,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
+          filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
           priority = "high",
           width = 190,
           height = 165,
@@ -316,7 +309,7 @@ data:extend({
         }
       }
     },
-    crafting_categories = { "crafting", "basic-crafting" },
+    crafting_categories = {"crafting", "basic-crafting"},
     crafting_speed = 0.25,
     energy_usage = "75kW",
     energy_source =
@@ -359,7 +352,7 @@ data:extend({
       {area = {{-0.4, -0.4}, {0.4, 0.4}}, required_tiles = {layers={ground_tile=true}}, colliding_tiles = {layers={water_tile=true}}, remove_on_collision = true},
       {area = {{-1, -2}, {1, -1}}, required_tiles = {layers={water_tile=true}}, colliding_tiles = {layers={}}},
     },
-    minable = { mining_time = 0.1, result = "pm-water-extractor" },
+    minable = { mining_time = 0.1, result = "pm-water-extractor"},
     max_health = 150,
     corpse = "offshore-pump-remnants",
     dying_explosion = "offshore-pump-explosion",
@@ -368,12 +361,8 @@ data:extend({
     {
       {
         type = "fire",
-        percent = 70
+        percent = -25
       },
-      {
-        type = "impact",
-        percent = 30
-      }
     },
     collision_box = { { -0.6, -1.05 }, { 0.6, 0.3 } },
     selection_box = { { -0.6, -1.49 }, { 0.6, 0.49 } },
@@ -566,7 +555,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/storage-tank/hr-storage-tank-shadow.png",
+            filename = "__base__/graphics/entity/storage-tank/storage-tank-shadow.png",
             priority = "extra-high",
             frames = 2,
             width = 291,
@@ -586,7 +575,7 @@ data:extend({
       },
       window_background =
       {
-        filename = "__base__/graphics/entity/storage-tank/hr-window-background.png",
+        filename = "__base__/graphics/entity/storage-tank/window-background.png",
         priority = "extra-high",
         width = 34,
         height = 48,
@@ -601,7 +590,7 @@ data:extend({
       },
       gas_flow =
       {
-        filename = "__base__/graphics/entity/pipe/hr-steam.png",
+        filename = "__base__/graphics/entity/pipe/steam.png",
         priority = "extra-high",
         line_length = 10,
         width = 48,
@@ -676,27 +665,23 @@ data:extend({
     target_temperature = 165,
     fluid_box =
     {
-      base_area = 1,
-      height = 2,
-      base_level = -1,
+      volume = 200,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { type = "input-output", position = { -2, 0.5 } },
-        { type = "input-output", position = { 2, 0.5 } }
+        {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0.5}},
+        {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
       production_type = "input-output",
       filter = "pm-seawater"
     },
     output_fluid_box =
     {
-      base_area = 1,
-      height = 2,
-      base_level = 1,
+      volume = 200,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { type = "output", position = { 0, -1.5 } }
+        {flow_direction = "input-output", direction = defines.direction.north, position = {0, 0.5}}
       },
       production_type = "output",
       filter = "steam"
@@ -748,7 +733,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-N-idle.png",
+            filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
             priority = "extra-high",
             width = 269,
             height = 221,
@@ -756,7 +741,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-N-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
             priority = "extra-high",
             width = 274,
             height = 164,
@@ -771,7 +756,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-E-idle.png",
+            filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
             priority = "extra-high",
             width = 216,
             height = 301,
@@ -779,7 +764,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-E-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
             priority = "extra-high",
             width = 184,
             height = 194,
@@ -794,7 +779,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-S-idle.png",
+            filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
             priority = "extra-high",
             width = 260,
             height = 192,
@@ -802,7 +787,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-S-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
             priority = "extra-high",
             width = 311,
             height = 131,
@@ -817,7 +802,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-W-idle.png",
+            filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
             priority = "extra-high",
             width = 196,
             height = 273,
@@ -825,7 +810,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-W-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
             priority = "extra-high",
             width = 206,
             height = 218,
@@ -841,7 +826,7 @@ data:extend({
     {
       east =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-E-patch.png",
+        filename = "__base__/graphics/entity/boiler/boiler-E-patch.png",
         width = 6,
         height = 36,
         shift = util.by_pixel(33.5, -13.5),
@@ -854,7 +839,7 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-N-fire.png",
+        filename = "__base__/graphics/entity/boiler/boiler-N-fire.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 64,
@@ -867,7 +852,7 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-E-fire.png",
+        filename = "__base__/graphics/entity/boiler/boiler-E-fire.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 64,
@@ -880,7 +865,7 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-S-fire.png",
+        filename = "__base__/graphics/entity/boiler/boiler-S-fire.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 64,
@@ -893,7 +878,7 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-W-fire.png",
+        filename = "__base__/graphics/entity/boiler/boiler-W-fire.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 64,
@@ -912,7 +897,7 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-N-light.png",
+        filename = "__base__/graphics/entity/boiler/boiler-N-light.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 1,
@@ -924,7 +909,7 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-E-light.png",
+        filename = "__base__/graphics/entity/boiler/boiler-E-light.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 1,
@@ -936,7 +921,7 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-S-light.png",
+        filename = "__base__/graphics/entity/boiler/boiler-S-light.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 1,
@@ -948,7 +933,7 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/boiler/hr-boiler-W-light.png",
+        filename = "__base__/graphics/entity/boiler/boiler-W-light.png",
         draw_as_glow = true,
         priority = "extra-high",
         frame_count = 1,
@@ -1316,7 +1301,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png",
+          filename = "__base__/graphics/entity/fast-underground-belt/fast-underground-belt-structure.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1328,7 +1313,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png",
+          filename = "__base__/graphics/entity/fast-underground-belt/fast-underground-belt-structure.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1339,7 +1324,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png",
+          filename = "__base__/graphics/entity/fast-underground-belt/fast-underground-belt-structure.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1351,7 +1336,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure.png",
+          filename = "__base__/graphics/entity/fast-underground-belt/fast-underground-belt-structure.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1363,7 +1348,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure-back-patch.png",
+          filename = "__base__/graphics/entity/fast-underground-belt/fast-underground-belt-structure-back-patch.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1374,7 +1359,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/fast-underground-belt/hr-fast-underground-belt-structure-front-patch.png",
+          filename = "__base__/graphics/entity/fast-underground-belt/fast-underground-belt-structure-front-patch.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1414,7 +1399,7 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/fast-splitter/hr-fast-splitter-north.png",
+        filename = "__base__/graphics/entity/fast-splitter/fast-splitter-north.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1425,7 +1410,7 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/fast-splitter/hr-fast-splitter-east.png",
+        filename = "__base__/graphics/entity/fast-splitter/fast-splitter-east.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1436,7 +1421,7 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/fast-splitter/hr-fast-splitter-south.png",
+        filename = "__base__/graphics/entity/fast-splitter/fast-splitter-south.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1447,7 +1432,7 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/fast-splitter/hr-fast-splitter-west.png",
+        filename = "__base__/graphics/entity/fast-splitter/fast-splitter-west.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1462,7 +1447,7 @@ data:extend({
       north = util.empty_sprite(),
       east =
       {
-        filename = "__base__/graphics/entity/fast-splitter/hr-fast-splitter-east-top_patch.png",
+        filename = "__base__/graphics/entity/fast-splitter/fast-splitter-east-top_patch.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1474,7 +1459,7 @@ data:extend({
       south = util.empty_sprite(),
       west =
       {
-        filename = "__base__/graphics/entity/fast-splitter/hr-fast-splitter-west-top_patch.png",
+        filename = "__base__/graphics/entity/fast-splitter/fast-splitter-west-top_patch.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1552,17 +1537,18 @@ data:extend({
     fluid_boxes =
     {
       {
+        volume = 1000,
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, 2 } } },
+        pipe_connections = 
+        {
+          {flow_direction = "input", direction = defines.direction.south, position = {0, 1}}
+        }
       },
     },
     animation =
     {
-      animation_speed = 2,
       layers =
       {
         {
@@ -1683,33 +1669,29 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -2, 0 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
       },
       {
 
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -2 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 2 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2, 0 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
       },
     },
   },
@@ -1814,76 +1796,66 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 5000,
         filter = "crude-oil",
-        pipe_connections = { { type = "input", position = { 1.4 + 0.1, 2.3 } } },
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0.5, 2.3}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 5000,
         filter = "crude-oil",
-        pipe_connections = { { type = "input", position = { -1.4 + -0.1, 2.3 } } },
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-0.5, -2.3}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { -2.4, 1.4 + 0.1 } } },
+        volume = 5000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {-1.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { -2.4, 0.4 + 0.1 } } },
+        volume = 5000,
+        pipe_connections = { { flow_direction="output", direction = defines.direction.east, position = {-1.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { -2.4, -0.4 + -0.1 } } },
+        volume = 5000,
+        pipe_connections = { flow_direction="output", direction = defines.direction.east, position = {-1.5, -0.5}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { -2.4, -1.4 + -0.1 } } },
+        volume = 5000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {-1.5, -1.5}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2.4, 1.4 + 0.1 } } },
+        volume = 5000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {1.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2.4, 0.4 + 0.1 } } },
+        volume = 5000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {1.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2.4, -0.4 + -0.1 } } },
+        volume = 5000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {1.5, -0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2.4, -1.4 + -0.1 } } },
+        volume = 5000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {1.5, -1.5}},
       },
     },
     -- if ANYONE reads this, i hope you know i hate this. I hate fluid boxes and you should too.
@@ -2052,38 +2024,30 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -3, 0 } } },
+        volume = 1500,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2} }},
+      },
+      {
+
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 1500,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -2} }},
       },
       {
 
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, -3 } } },
+        volume = 1500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
       },
       {
 
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 3 } } },
-      },
-      {
-
-        production_type = "output",
-        pipe_picture = assembler2pipepictures(),
-        pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 3, 0 } } },
+        volume = 1500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {2, 0} }},
       },
     },
   },
@@ -2136,51 +2100,37 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 1000,
         pipe_connections =
         {
-          {
-            type = "input",
-            position = { -1, -2 }
-          }
+          {flow_direction = "input", direction = defines.direction.north, position = {-1, -1}}
         }
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 1000,
         pipe_connections =
         {
-          {
-            type = "input",
-            position = { 1, -2 }
-          }
+          {flow_direction = "input", direction = defines.direction.north, position = {-1, 1}}
         }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_level = 1,
+        volume = 1000,
         pipe_connections =
         {
-          {
-            type = "output",
-            position = { -1, 2 }
-          }
+          {flow_direction = "output", direction = defines.direction.south, position = {1, -1}}
         }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_level = 1,
+        volume = 1000,
         pipe_connections =
         {
-          {
-            type = "output",
-            position = { 1, 2 }
-          }
+          {flow_direction = "output", direction = defines.direction.south, position = {1, 1}}
         }
       }
     },
@@ -2233,24 +2183,22 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         priority = "medium",
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -1.6, 0.5 } } },
+        volume = 200,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         priority = "medium",
-        base_area = 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 1.6, 0.5 } } },
+        volume = 200,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
     },
-    crafting_categories = { "pm-evaporation" },
+    crafting_categories = {"pm-evaporation"},
     crafting_speed = 0.75,
     energy_usage = "1kW",
-    energy_source = { type = "void" },
+    energy_source = {type = "void"},
     working_sound =
     {
       sound =
@@ -2341,22 +2289,21 @@ data:extend({
     fluid_boxes =
     {
       {
-
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0.5, -1.5 } } },
+        priority = "medium",
+        volume = 1000,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0.5, 1.5 } } },
+        priority = "medium",
+        volume = 1000,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
-    }
+    },
   },
   {
     type = "assembling-machine",
@@ -2423,16 +2370,15 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -0.5, -1.5 } } },
+        priority = "medium",
+        volume = 1000,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
     },
-    collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
-    selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
-    crafting_categories = { "pm-coldening" },
+    collision_box = {{-0.9, -0.9 }, { 0.9, 0.9 }},
+    selection_box = {{-1.1, -1.1 }, { 1.1, 1.1 }},
+    crafting_categories = {"pm-coldening"},
     energy_usage = "550kW",
     crafting_speed = 1,
     energy_source =
@@ -2447,10 +2393,9 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 1000,
         filter = "water",
-        pipe_connections = { { type = "input", position = { 0.5, -1.5 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0.5, -0.5}}},
       },
     },
   },
@@ -2530,22 +2475,21 @@ data:extend({
     fluid_boxes =
     {
       {
-
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0.5, -1.5 } } },
+        priority = "medium",
+        volume = 2000,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0.5, 1.5 } } },
+        priority = "medium",
+        volume = 2000,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
-    }
+    },
   },
   {
     type = "assembling-machine",
@@ -2613,16 +2557,15 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -0.5, -1.5 } } },
+        priority = "medium",
+        volume = 2000,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
     },
-    collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
-    selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
-    crafting_categories = { "pm-coldening" },
+    collision_box = {{-0.9, -0.9 }, { 0.9, 0.9 }},
+    selection_box = {{-1.1, -1.1 }, { 1.1, 1.1 }},
+    crafting_categories = {"pm-coldening"},
     energy_usage = "750kW",
     crafting_speed = 1.4 + 0.1,
     energy_source =
@@ -2637,10 +2580,9 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 2000,
         filter = "pm-coolant",
-        pipe_connections = { { type = "input", position = { 0.5, -1.5 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0.5, -0.5}}},
       },
     },
   },
@@ -2673,10 +2615,9 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 1500,
         filter = "pm-heavy-lubricant",
-        pipe_connections = { { type = "input", position = { 0, 4.1 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {0, -3.4}}},
       },
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
@@ -2727,7 +2668,7 @@ data:extend({
     {
       {
         type = "fire",
-        percent = 90,
+        percent = 75,
       },
       {
         type = "impact",
@@ -2735,7 +2676,7 @@ data:extend({
       },
       {
         type = "acid",
-        percent = 100
+        percent = 85,
       }
     },
     fast_replaceable_group = "pipe",
@@ -2743,15 +2684,16 @@ data:extend({
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     fluid_box =
     {
-      base_area = 1,
-      height = 2,
+      volume = 100,
+      pipe_covers = pipecoverspictures(), -- in case a real pipe is connected to a ghost
       pipe_connections =
       {
-        { position = { 0, -1 } },
-        { position = { 1, 0 } },
-        { position = { 0, 1 } },
-        { position = { -1, 0 } },
+        { direction = defines.direction.north, position = {0, 0} },
+        { direction = defines.direction.east, position = {0, 0} },
+        { direction = defines.direction.south, position = {0, 0} },
+        { direction = defines.direction.west, position = {0, 0} }
       },
+      hide_connection_info = true
     },
     impact_category = "metal",
     pictures =
@@ -2938,7 +2880,7 @@ data:extend({
       },
       fluid_background =
       {
-        filename = "__base__/graphics/entity/pipe/hr-fluid-background.png",
+        filename = "__base__/graphics/entity/pipe/fluid-background.png",
         priority = "extra-high",
         width = 64,
         height = 40,
@@ -2967,7 +2909,7 @@ data:extend({
       },
       gas_flow =
       {
-        filename = "__base__/graphics/entity/pipe/hr-steam.png",
+        filename = "__base__/graphics/entity/pipe/steam.png",
         priority = "extra-high",
         line_length = 10,
         width = 48,
@@ -2992,7 +2934,7 @@ data:extend({
     resistances = {
       {
         type = "fire",
-        percent = 90,
+        percent = 75,
       },
       {
         type = "impact",
@@ -3000,7 +2942,7 @@ data:extend({
       },
       {
         type = "acid",
-        percent = 100
+        percent = 85
       }
     },
     fast_replaceable_group = "pipe",
@@ -3008,17 +2950,19 @@ data:extend({
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     fluid_box =
     {
-      base_area = 1,
-      height = 2,
+      volume = 200,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { position = { 0, -1 } },
+        { direction = defines.direction.north, position = {0, 0} },
         {
-          position = { 0, 1 },
-          max_underground_distance = 20,
-        },
+          connection_type = "underground",
+          direction = defines.direction.south,
+          position = {0, 0},
+          max_underground_distance = 20
+        }
       },
+      hide_connection_info = true
     },
     impact_category = "metal",
     pictures =
@@ -3242,8 +3186,8 @@ data:extend({
     name = "pm-CO2-nullifer",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/CO2-nullifer.png",
-    minable = { mining_time = 0.4 + 0.1, result = "pm-CO2-nullifer" },
-    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 0.4 + 0.1, result = "pm-CO2-nullifer"},
+    flags = { "placeable-neutral", "placeable-player", "player-creation"},
     max_health = 500,
     corpse = "assembling-machine-1-remnants",
     dying_explosion = "assembling-machine-1-explosion",
@@ -3251,7 +3195,7 @@ data:extend({
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
     crafting_speed = 1,
-    crafting_categories = { "pm-CO2-nullifying" },
+    crafting_categories = {"pm-CO2-nullifying"},
     source_inventory_size = 1,
     result_inventory_size = 1,
     fluid_boxes =
@@ -3259,16 +3203,14 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -2 } } },
+        volume = 100,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = { 0, -1 }}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 2 } } },
+        volume = 100,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = { 0, 1 }}},
       },
     },
     energy_source =
@@ -3281,10 +3223,9 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 5,
-        base_level = -1,
+        volume = 500,
         filter = "water",
-        pipe_connections = { { type = "input", position = { 2, 0 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = { 1, 0}}},
       },
     },
     energy_usage = "400kW",
@@ -3333,16 +3274,16 @@ data:extend({
     collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     fluid_boxes =
-    {
       {
+        volume = 2000,
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, 2 } } },
+        pipe_connections = 
+        {
+          {flow_direction = "input", direction = defines.direction.south, position = {0, 1}}
+        }
       },
-    },
     animation =
     {
       layers =
@@ -3384,10 +3325,9 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 1000,
         filter = "pm-argon-gas",
-        pipe_connections = { { type = "input", position = { 0, -2 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direciton.north, position = { 0, -1 } } },
       },
     },
     working_sound =
@@ -3541,35 +3481,32 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 6,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -2, 0 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
       },
       {
 
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 6,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -2 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 6,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 2 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 6,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2, 0 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
       },
     },
+
   },
 
   {
@@ -3619,37 +3556,32 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -3, 0 } } },
+        volume = 1500,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2} }},
       },
       {
+
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -3 } } },
+        volume = 1500,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -2} }},
       },
       {
-        production_type = "input",
-        pipe_picture = assembler3pipepictures(),
-        pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 3, 0 } } },
-      },
-      {
+
         production_type = "output",
-        pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = -1,
-        pipe_connections = { { type = "output", position = { 0, 3 } } },
+        volume = 1500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
       },
-    }
+      {
+
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 1500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {2, 0} }},
+      },
+    },
   },
   {
     type = "furnace",
@@ -3676,12 +3608,10 @@ data:extend({
       fluid_box =
       {
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 1000,
         filter = "pm-agar-solution",
-        pipe_connections = { { type = "input", position = { 3, 0 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {2, 0}}},
       },
     },
     energy_usage = "500KW",
@@ -3712,21 +3642,17 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1 + 4,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -3, 0 } } },
+        volume = 100,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {0, -2}}},
       },
       {
         production_type = "output",
-        pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 1,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, -3 } } },
+        volume = 100,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {0, 2}}},
       },
-    }
+    },
   },
   {
     type = "lab",
@@ -3849,7 +3775,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__base__/graphics/entity/steel-chest/hr-steel-chest-shadow.png",
+          filename = "__base__/graphics/entity/steel-chest/steel-chest-shadow.png",
           priority = "extra-high",
           width = 110,
           height = 46,
@@ -3878,17 +3804,14 @@ data:extend({
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     input_fluid_box =
     {
-      production_type = "input-output",
       pipe_picture = assembler2pipepictures(),
       pipe_covers = pipecoverspictures(),
-      base_area = 1,
-      height = 2,
-      base_level = -1,
+      volume = 200,
       pipe_connections =
       {
-        { position = { -2, 0 } },
-        { position = { 2, 0 } },
-        { position = { 0, 2 } }
+        { direction = defines.direction.west, position = {-1, 0}},
+        { direction = defines.direction.east, position = {1, 0}},
+        { direction = defines.direction.south, position = {0, 1}}
       }
     },
     working_sound =
@@ -3937,7 +3860,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-output.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-output.png",
               line_length = 5,
               width = 60,
               height = 66,
@@ -3949,7 +3872,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-shadow.png",
               line_length = 1,
               width = 212,
               height = 204,
@@ -3982,7 +3905,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-output.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-output.png",
               line_length = 5,
               width = 50,
               height = 74,
@@ -3994,7 +3917,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-shadow.png",
               line_length = 1,
               width = 222,
               height = 182,
@@ -4027,7 +3950,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-shadow.png",
               line_length = 1,
               width = 212,
               height = 204,
@@ -4060,7 +3983,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-output.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-output.png",
               line_length = 5,
               width = 50,
               height = 60,
@@ -4072,7 +3995,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-shadow.png",
               line_length = 1,
               width = 200,
               height = 182,
@@ -4129,7 +4052,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-smoke.png",
                 line_length = 5,
                 width = 42,
                 height = 58,
@@ -4209,7 +4132,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-smoke.png",
                 line_length = 5,
                 width = 46,
                 height = 56,
@@ -4227,7 +4150,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-smoke.png",
                 line_length = 5,
                 width = 48,
                 height = 36,
@@ -4245,7 +4168,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-smoke.png",
                 line_length = 5,
                 width = 46,
                 height = 54,
@@ -4342,7 +4265,6 @@ data:extend({
         -- electric_mining_drill_secondary_light
       }
     },
-
     wet_mining_graphics_set =
     {
       drilling_vertical_movement_duration = 10 / electric_drill_animation_speed,
@@ -4377,7 +4299,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-output.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-output.png",
               line_length = 5,
               width = 60,
               height = 66,
@@ -4389,7 +4311,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-wet-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-wet-shadow.png",
               line_length = 1,
               width = 248,
               height = 222,
@@ -4422,7 +4344,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-output.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-output.png",
               line_length = 5,
               width = 50,
               height = 60,
@@ -4434,7 +4356,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-wet-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-wet-shadow.png",
               line_length = 1,
               width = 260,
               height = 202,
@@ -4467,7 +4389,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-wet-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-wet-shadow.png",
               line_length = 1,
               width = 248,
               height = 192,
@@ -4500,7 +4422,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-output.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-output.png",
               line_length = 5,
               width = 50,
               height = 74,
@@ -4512,7 +4434,7 @@ data:extend({
             },
             {
               priority = "high",
-              filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-wet-shadow.png",
+              filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-wet-shadow.png",
               line_length = 1,
               width = 226,
               height = 202,
@@ -4569,7 +4491,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-smoke.png",
                 line_length = 5,
                 width = 42,
                 height = 58,
@@ -4645,7 +4567,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-smoke.png",
                 line_length = 5,
                 width = 46,
                 height = 56,
@@ -4663,7 +4585,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-smoke.png",
                 line_length = 5,
                 width = 48,
                 height = 36,
@@ -4681,7 +4603,7 @@ data:extend({
             {
               {
                 priority = "high",
-                filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-smoke.png",
+                filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-smoke.png",
                 line_length = 5,
                 width = 46,
                 height = 54,
@@ -4708,7 +4630,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-wet-window-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-wet-window-background.png",
                 line_length = 1,
                 width = 22,
                 height = 14,
@@ -4727,7 +4649,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-wet-window-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-wet-window-background.png",
                 line_length = 1,
                 width = 30,
                 height = 20,
@@ -4746,7 +4668,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-wet-window-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-wet-window-background.png",
                 line_length = 1,
                 width = 22,
                 height = 14,
@@ -4774,7 +4696,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-wet-fluid-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-wet-fluid-background.png",
                 line_length = 1,
                 width = 22,
                 height = 14,
@@ -4793,7 +4715,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-wet-fluid-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-wet-fluid-background.png",
                 line_length = 1,
                 width = 28,
                 height = 18,
@@ -4812,7 +4734,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-wet-fluid-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-wet-fluid-background.png",
                 line_length = 1,
                 width = 22,
                 height = 14,
@@ -4840,7 +4762,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-wet-fluid-flow.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-wet-fluid-flow.png",
                 line_length = 1,
                 width = 24,
                 height = 14,
@@ -4859,7 +4781,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-wet-fluid-flow.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-wet-fluid-flow.png",
                 line_length = 1,
                 width = 26,
                 height = 16,
@@ -4878,7 +4800,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-wet-fluid-flow.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-wet-fluid-flow.png",
                 line_length = 1,
                 width = 24,
                 height = 14,
@@ -4912,7 +4834,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-wet-window-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-wet-window-background.png",
                 line_length = 1,
                 width = 172,
                 height = 90,
@@ -4931,7 +4853,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-wet-window-background-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-wet-window-background-front.png",
                 line_length = 1,
                 width = 80,
                 height = 106,
@@ -4950,7 +4872,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-wet-window-background-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-wet-window-background-front.png",
                 line_length = 1,
                 width = 172,
                 height = 22,
@@ -4969,7 +4891,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-wet-window-background-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-wet-window-background-front.png",
                 line_length = 1,
                 width = 82,
                 height = 110,
@@ -4994,7 +4916,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-wet-fluid-background.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-wet-fluid-background.png",
                 line_length = 1,
                 width = 178,
                 height = 94,
@@ -5013,7 +4935,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-wet-fluid-background-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-wet-fluid-background-front.png",
                 line_length = 1,
                 width = 80,
                 height = 102,
@@ -5032,7 +4954,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-wet-fluid-background-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-wet-fluid-background-front.png",
                 line_length = 1,
                 width = 178,
                 height = 28,
@@ -5051,7 +4973,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-wet-fluid-background-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-wet-fluid-background-front.png",
                 line_length = 1,
                 width = 82,
                 height = 106,
@@ -5076,7 +4998,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-wet-fluid-flow.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-wet-fluid-flow.png",
                 line_length = 1,
                 width = 172,
                 height = 88,
@@ -5095,7 +5017,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-wet-fluid-flow-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-wet-fluid-flow-front.png",
                 line_length = 1,
                 width = 78,
                 height = 102,
@@ -5114,7 +5036,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-wet-fluid-flow-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-wet-fluid-flow-front.png",
                 line_length = 1,
                 width = 172,
                 height = 22,
@@ -5133,7 +5055,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-wet-fluid-flow-front.png",
+                "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-wet-fluid-flow-front.png",
                 line_length = 1,
                 width = 78,
                 height = 106,
@@ -5254,7 +5176,7 @@ data:extend({
       north =
       {
         priority = "high",
-        filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-N-integration.png",
+        filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-N-integration.png",
         line_length = 1,
         width = 216,
         height = 218,
@@ -5268,7 +5190,7 @@ data:extend({
       east =
       {
         priority = "high",
-        filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-E-integration.png",
+        filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-E-integration.png",
         line_length = 1,
         width = 236,
         height = 214,
@@ -5282,7 +5204,7 @@ data:extend({
       south =
       {
         priority = "high",
-        filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-S-integration.png",
+        filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-S-integration.png",
         line_length = 1,
         width = 214,
         height = 230,
@@ -5296,7 +5218,7 @@ data:extend({
       west =
       {
         priority = "high",
-        filename = "__base__/graphics/entity/electric-mining-drill/hr-electric-mining-drill-W-integration.png",
+        filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-W-integration.png",
         line_length = 1,
         width = 234,
         height = 214,
@@ -5410,33 +5332,29 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -2, 0 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
       },
       {
 
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -2 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 2 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2, 0 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
       },
     },
   },
@@ -5483,9 +5401,8 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 3, 0 } } },
+        volume = 200,
+        pipe_connections = {{ type = "input", direction = defines.direction.west, position = { 2, 0 } } },
       },
     },
     energy_source =
@@ -5499,10 +5416,9 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 8,
-        base_level = -1,
+        volume = 1000,
         filter = "pm-coolant",
-        pipe_connections = { { type = "input", position = { -3, 0 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = { -2, 0 }} },
       },
     },
   },
@@ -5538,7 +5454,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
           priority = "high",
           width = 220,
           height = 180,
@@ -5553,7 +5469,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
           priority = "high",
           width = 214,
           height = 180,
@@ -5611,23 +5527,20 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -4 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 3}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, 4 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -3}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 4, 0 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-3, 0}}},
       },
     },
     energy_source =
@@ -5640,10 +5553,8 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 8,
-        base_level = -1,
-        filter = "pm-proton-beam",
-        pipe_connections = { { type = "input", position = { -4, 0 } } },
+        volume = 1000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {3, 0}}},
       },
     },
   },
@@ -5679,27 +5590,23 @@ data:extend({
     target_temperature = 1000,
     fluid_box =
     {
-      base_area = 1,
-      height = 4,
-      base_level = -1,
+      volume = 200,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { type = "input-output", position = { -2, 0.5 } },
-        { type = "input-output", position = { 2, 0.5 } }
+        {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0.5}},
+        {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
-      production_type = "input-output",
+      production_type = "input",
       filter = "water"
     },
     output_fluid_box =
     {
-      base_area = 1,
-      height = 4,
-      base_level = 1,
+      volume  = 200,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { type = "output", position = { 0, -1.5 } }
+        {flow_direction = "output", direction = defines.direction.north, position = {0, -0.5}}
       },
       production_type = "output",
       filter = "steam"
@@ -5723,7 +5630,7 @@ data:extend({
       pipe_covers =
           make_4way_animation_from_spritesheet(
             {
-              filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings.png",
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-endings.png",
               width = 64,
               height = 64,
               direction_count = 4,
@@ -5732,7 +5639,7 @@ data:extend({
       heat_pipe_covers =
           make_4way_animation_from_spritesheet(
             apply_heat_pipe_glow {
-              filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings-heated.png",
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-endings-heated.png",
               width = 64,
               height = 64,
               direction_count = 4,
@@ -5742,7 +5649,7 @@ data:extend({
       {
         north = apply_heat_pipe_glow
             {
-              filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-N-heated.png",
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-N-heated.png",
               priority = "extra-high",
               width = 44,
               height = 96,
@@ -5751,7 +5658,7 @@ data:extend({
             },
         east = apply_heat_pipe_glow
             {
-              filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-E-heated.png",
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-E-heated.png",
               priority = "extra-high",
               width = 80,
               height = 80,
@@ -5760,7 +5667,7 @@ data:extend({
             },
         south = apply_heat_pipe_glow
             {
-              filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-S-heated.png",
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-S-heated.png",
               priority = "extra-high",
               width = 28,
               height = 40,
@@ -5769,7 +5676,7 @@ data:extend({
             },
         west = apply_heat_pipe_glow
             {
-              filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-W-heated.png",
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-W-heated.png",
               priority = "extra-high",
               width = 64,
               height = 76,
@@ -5805,7 +5712,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-N-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
             priority = "extra-high",
             width = 274,
             height = 164,
@@ -5828,7 +5735,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-E-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
             priority = "extra-high",
             width = 184,
             height = 194,
@@ -5851,7 +5758,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-S-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
             priority = "extra-high",
             width = 311,
             height = 131,
@@ -5874,7 +5781,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__base__/graphics/entity/boiler/hr-boiler-W-shadow.png",
+            filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
             priority = "extra-high",
             width = 206,
             height = 218,
@@ -5946,32 +5853,31 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10 / 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -2 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
       },
       {
-        production_type = "output",
+
+        production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10 / 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { -2, 0 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
       },
       {
+
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10 / 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 2 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
       },
       {
+
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10 / 2,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2, 0 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
       },
-    }
+    },
   },
   {
     type = "heat-pipe",
@@ -6116,7 +6022,7 @@ data:extend({
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     lower_layer_picture =
     {
-      filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes.png",
+      filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
       width = 320,
       height = 316,
       scale = 0.5,
@@ -6124,7 +6030,7 @@ data:extend({
     },
     heat_lower_layer_picture = apply_heat_pipe_glow
         {
-          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes-heated.png",
+          filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png",
           width = 320,
           height = 316,
           scale = 0.5,
@@ -6158,7 +6064,7 @@ data:extend({
     },
     working_light_picture =
     {
-      filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-lights-color.png",
+      filename = "__base__/graphics/entity/nuclear-reactor/reactor-lights-color.png",
       blend_mode = "additive",
       draw_as_glow = true,
       width = 320,
@@ -6227,7 +6133,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches.png",
+          filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -6239,7 +6145,7 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches.png",
+          filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
           width = 64,
           height = 64,
           variation_count = 12,
@@ -6252,7 +6158,7 @@ data:extend({
       {
         sheet = apply_heat_pipe_glow
             {
-              filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+              filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
               width = 64,
               height = 64,
               variation_count = 12,
@@ -6264,7 +6170,7 @@ data:extend({
       {
         sheet = apply_heat_pipe_glow
             {
-              filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+              filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
               width = 64,
               height = 64,
               variation_count = 12,
@@ -6362,19 +6268,14 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        priority = "medium",
-        base_area = 5,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -3, 0 } } },
+        volume = 2500,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2}},
       },
       {
-
-        production_type = "input",
+        production_type = "output",
         pipe_covers = pipecoverspictures(),
-        priority = "medium",
-        base_area = 5,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 3, 0 } } },
+        volume = 2500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
       },
     },
   },
@@ -6428,18 +6329,16 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         priority = "medium",
-        base_area = 5,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -1.6, 0.5 } } },
+        volume = 200,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         priority = "medium",
-        base_area = 5,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 1.6, 0.5 } } },
+        volume = 200,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
     },
     crafting_categories = { "pm-evaporation" },
@@ -6474,7 +6373,7 @@ data:extend({
     minable = { mining_time = 0.9, result = "pm-leaching-field" },
     map_color = { 0.5, 0, 1 },
     max_health = 800,
-    corpse = "pm-evaporator-2",
+    corpse = "pm-leaching-field",
     dying_explosion = "assembling-machine-1-explosion",
     energy_usage = "1kW",
     energy_source = { type = "void" },
@@ -6514,67 +6413,57 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10 / 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0.5, -3.5 } } },
+        volume = 750,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {0.5, -2.5 }}}
       },
       {
         production_type = "output",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0.5, 3.5 } } },
+        volume = 750,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.east, position = {-0.5, 2.5 }}},
       },
       {
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -3.5, -0.5 } } },
-
+        volume = 750,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.west, position = { -0.5, -2.5 }}}
       },
       {
         production_type = "output",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 3.5, -0.5 } } },
+        volume = 750,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = { 0.5, -2.5 }}},
       },
       {
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10 / 2,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -0.5, -3.5 } } },
+        volume = 750,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -2.5 }}}
       },
       {
         production_type = "output",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { -0.5, 3.5 } } },
+        volume = 750,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.north, position = {-0.5, 2.5 }}},
       },
       {
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -3.5, 0.5 } } },
-
+        volume = 750,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = { -0.5, 2.5 }}}
       },
       {
         production_type = "output",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 3.5, 0.5 } } },
+        volume = 750,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = { 0.5, 2.5 }}},
       },
     }
   }--[[@as data.AssemblingMachinePrototype]],
@@ -6655,33 +6544,29 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 5,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { -2, 0 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
       },
       {
 
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 5,
-        base_level = -1,
-        pipe_connections = { { type = "input", position = { 0, -2 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 5,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 0, 2 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 5,
-        base_level = 1,
-        pipe_connections = { { type = "output", position = { 2, 0 } } },
+        volume = 2000,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
       },
     },
   },
@@ -6823,7 +6708,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/solar-panel/hr-solar-panel.png",
+          filename = "__base__/graphics/entity/solar-panel/solar-panel.png",
           priority = "high",
           width = 230,
           height = 224,
@@ -6831,7 +6716,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
           priority = "high",
           width = 220,
           height = 180,
@@ -6846,7 +6731,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
           priority = "high",
           width = 214,
           height = 180,
@@ -6897,7 +6782,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow.png",
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
           priority = "high",
           width = 220,
           height = 180,
@@ -6912,7 +6797,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/solar-panel/hr-solar-panel-shadow-overlay.png",
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
           priority = "high",
           width = 214,
           height = 180,
@@ -6960,13 +6845,12 @@ data:extend({
     },
     fluid_box =
     {
-      base_area = 1,
-      height = 4,
+      volume = 400,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {position = {0, -1.5}, type = "output"},
-        {position = {0, 1.5},  type = "input" }
+        { direction = defines.direction.north, position = {0, -0.5}, flow_direction = "output" },
+        { direction = defines.direction.south, position = {0, 0.5}, flow_direction = "input" }
       }
     },
     energy_source =
@@ -7034,7 +6918,7 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-north-liquid.png",
+        filename = "__base__/graphics/entity/pump/pump-north-liquid.png",
         apply_runtime_tint = true,
         width = 38,
         height = 22,
@@ -7045,7 +6929,7 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-east-liquid.png",
+        filename = "__base__/graphics/entity/pump/pump-east-liquid.png",
         width = 35,
         height = 46,
         scale = 0.5,
@@ -7055,7 +6939,7 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-south-liquid.png",
+        filename = "__base__/graphics/entity/pump/pump-south-liquid.png",
         width = 38,
         height = 45,
         scale = 0.5,
@@ -7065,7 +6949,7 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-west-liquid.png",
+        filename = "__base__/graphics/entity/pump/pump-west-liquid.png",
         width = 35,
         height = 47,
         scale = 0.5,
@@ -7078,28 +6962,28 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-north-glass.png",
+        filename = "__base__/graphics/entity/pump/pump-north-glass.png",
         width = 64,
         height = 128,
         scale = 0.5
       },
       east =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-east-glass.png",
+        filename = "__base__/graphics/entity/pump/pump-east-glass.png",
         width = 128,
         height = 192,
         scale = 0.5
       },
       south =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-south-glass.png",
+        filename = "__base__/graphics/entity/pump/pump-south-glass.png",
         width = 64,
         height = 128,
         scale = 0.5
       },
       west =
       {
-        filename = "__base__/graphics/entity/pump/hr-pump-west-glass.png",
+        filename = "__base__/graphics/entity/pump/pump-west-glass.png",
         width = 192,
         height = 192,
         scale = 0.5,
@@ -7116,7 +7000,7 @@ data:extend({
     name = "pm-bio-poison-sticker",
     animation =
     {
-      filename = "__base__/graphics/entity/slowdown-sticker/hr-slowdown-sticker.png",
+      filename = "__base__/graphics/entity/slowdown-sticker/slowdown-sticker.png",
       line_length = 5,
       width = 42,
       height = 48,
@@ -7197,7 +7081,7 @@ data:extend({
     light = { intensity = 0.5, size = 4 },
     animation =
     {
-      filename = "__base__/graphics/entity/grenade/hr-grenade.png",
+      filename = "__base__/graphics/entity/grenade/grenade.png",
       draw_as_glow = true,
       frame_count = 15,
       line_length = 8,
@@ -7210,7 +7094,7 @@ data:extend({
     },
     shadow =
     {
-      filename = "__base__/graphics/entity/grenade/hr-grenade-shadow.png",
+      filename = "__base__/graphics/entity/grenade/grenade-shadow.png",
       frame_count = 15,
       line_length = 8,
       animation_speed = 0.250,
@@ -7362,7 +7246,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
           width = 312,
           height = 222,
           repeat_count = 24,
@@ -7379,7 +7263,7 @@ data:extend({
         apply_recipe_tint = "primary",
         north_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-liquid-north.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-liquid-north.png",
           frame_count = 24,
           line_length = 6,
           width = 66,
@@ -7389,7 +7273,7 @@ data:extend({
         },
         east_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-liquid-east.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-liquid-east.png",
           frame_count = 24,
           line_length = 6,
           width = 70,
@@ -7399,7 +7283,7 @@ data:extend({
         },
         south_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-liquid-south.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-liquid-south.png",
           frame_count = 24,
           line_length = 6,
           width = 66,
@@ -7409,7 +7293,7 @@ data:extend({
         },
         west_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-liquid-west.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-liquid-west.png",
           frame_count = 24,
           line_length = 6,
           width = 74,
@@ -7422,7 +7306,7 @@ data:extend({
         apply_recipe_tint = "secondary",
         north_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-foam-north.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-foam-north.png",
           frame_count = 24,
           line_length = 6,
           width = 62,
@@ -7432,7 +7316,7 @@ data:extend({
         },
         east_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-foam-east.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-foam-east.png",
           frame_count = 24,
           line_length = 6,
           width = 68,
@@ -7442,7 +7326,7 @@ data:extend({
         },
         south_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-foam-south.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-foam-south.png",
           frame_count = 24,
           line_length = 6,
           width = 60,
@@ -7452,7 +7336,7 @@ data:extend({
         },
         west_animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-foam-west.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-foam-west.png",
           frame_count = 24,
           line_length = 6,
           width = 68,
@@ -7472,7 +7356,7 @@ data:extend({
         render_layer = "wires",
         animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-smoke-outer.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-smoke-outer.png",
           frame_count = 47,
           line_length = 16,
           width = 90,
@@ -7493,7 +7377,7 @@ data:extend({
         render_layer = "wires",
         animation =
         {
-          filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-smoke-inner.png",
+          filename = "__base__/graphics/entity/chemical-plant/chemical-plant-smoke-inner.png",
           frame_count = 47,
           line_length = 16,
           width = 40,
@@ -7544,53 +7428,56 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 2500,
         pipe_connections =
         {
           {
-            type="input",
-            position = {-1, -2}
+            flow_direction="input",
+            direction = defines.direction.north,
+            position = {-1, -1}
           }
         }
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
+        volume = 2500,
         pipe_connections =
         {
           {
-            type="input",
-            position = {1, -2}
+            flow_direction="input",
+            direction = defines.direction.north,
+            position = {1, -1}
           }
         }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_level = 1,
+        volume = 2500,
         pipe_connections =
         {
           {
-            type = "output",
-            position = {-1, 2}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {-1, 1}
           }
         }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_level = 1,
+        volume = 2500,
         pipe_connections =
         {
           {
-            type = "output",
-            position = {1, 2}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {1, 1}
           }
         }
       }
+    },
     },
     water_reflection =
     {
@@ -7607,7 +7494,8 @@ data:extend({
       rotate = false,
       orientation_to_variation = true
     }
-  },
+  }
+}
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
@@ -7634,19 +7522,17 @@ QuickFluidFix.fluid_boxes =
     production_type = "input",
     pipe_picture = assembler2pipepictures(),
     pipe_covers = pipecoverspictures(),
-    base_area = 10,
-    base_level = -1,
-    pipe_connections = {{type = "input", position = {0, -2}}},
-    secondary_draw_orders = {north = -1}
+    volume = 500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -1} }},
+    secondary_draw_orders = { north = -1 }
   },
   {
     production_type = "output",
     pipe_picture = assembler2pipepictures(),
     pipe_covers = pipecoverspictures(),
-    base_area = 10,
-    base_level = 1,
-    pipe_connections = {{type = "output", position = {0, 2}}},
-    secondary_draw_orders = {north = -1}
+    volume = 500,
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {0, 1} }},
+    secondary_draw_orders = { north = -1 }
   },
   off_when_no_fluid_recipe = true
 }
@@ -7654,43 +7540,39 @@ QuickFluidFix.fluid_boxes =
 data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = { "basic-crafting", "crafting",
   "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid" }
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
-{
   {
-    production_type = "input",
-    pipe_picture = assembler3pipepictures(),
-    pipe_covers = pipecoverspictures(),
-    base_area = 10,
-    base_level = -1,
-    pipe_connections = { { type = "input", position = { 0, -2 } } },
-    secondary_draw_orders = { north = -1 }
-  },
-  {
-    production_type = "output",
-    pipe_picture = assembler3pipepictures(),
-    pipe_covers = pipecoverspictures(),
-    base_area = 10,
-    base_level = 1,
-    pipe_connections = { { type = "output", position = { 0, 2 } } },
-    secondary_draw_orders = { north = -1 }
-  },
-  {
-    production_type = "input",
-    pipe_picture = assembler3pipepictures(),
-    pipe_covers = pipecoverspictures(),
-    base_area = 10,
-    base_level = -1,
-    pipe_connections = { { type = "input", position = { -2, 0 } } },
-    secondary_draw_orders = { north = -1 }
-  },
-  {
-    production_type = "output",
-    pipe_picture = assembler3pipepictures(),
-    pipe_covers = pipecoverspictures(),
-    base_area = 10,
-    base_level = 1,
-    pipe_connections = { { type = "output", position = { 2, 0 } } },
-    secondary_draw_orders = { north = -1 }
-  },
+    {
+      production_type = "input",
+      pipe_picture = assembler3pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -1} }},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "output",
+      pipe_picture = assembler3pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {0, 1} }},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "input",
+      pipe_picture = assembler3pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, } }},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "output",
+      pipe_picture = assembler3pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
+      secondary_draw_orders = { north = -1 }
+    },
   off_when_no_fluid_recipe = true
 }
 
