@@ -53,19 +53,39 @@ function pm_electric_mining_drill_horizontal2_animation()
     scale = 0.5
   }
 end
-orange_fast_belt_animation_set =
-{
-  animation_set =
-  {
-    filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
-    priority = "extra-high",
-    width = 128,
-    height = 128,
-    scale = 0.5,
-    frame_count = 32,
-    direction_count = 20
-  }
-}
+--This is here because it no longer exists globally
+local fast_belt_animation_set = {animation_set=util.empty_animation(1)}
+local orange_fast_belt_animation_set = {animation_set=util.empty_animation(1)}
+-- Commented out because it should get replaced by the coloring code anyways
+-- TODO: Remove the files as well?
+-- {
+--   animation_set =
+--   {
+--     filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
+--     priority = "extra-high",
+--     width = 128,
+--     height = 128,
+--     scale = 0.5,
+--     frame_count = 32,
+--     direction_count = 20
+--   }
+-- }
+local high_density_animation_set = {animation_set=util.empty_animation(1)}
+-- Commented out because it should get replaced by the coloring code anyways
+-- TODO: Remove the files as well?
+-- {
+--   animation_set =
+--   {
+--     direction_count = 20,
+--     filename =
+--     "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
+--     frame_count = 16,
+--     height = 128,
+--     priority = "extra-high",
+--     scale = 0.5,
+--     width = 128
+--   }
+-- }
 
 data:extend({
 
@@ -994,20 +1014,7 @@ data:extend({
       use_doppler_shift = false
     },
     animation_speed_coefficient = 32,
-    belt_animation_set =
-    {
-      animation_set =
-      {
-        direction_count = 20,
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
-        frame_count = 16,
-        height = 128,
-        priority = "extra-high",
-        scale = 0.5,
-        width = 128
-      }
-    },
+    belt_animation_set = high_density_animation_set,
     fast_replaceable_group = "transport-belt",
     speed = 0.1875,
     structure =
@@ -1113,20 +1120,7 @@ data:extend({
     animation_speed_coefficient = 32,
     structure_animation_speed_coefficient = 1.2,
     structure_animation_movement_cooldown = 10,
-    belt_animation_set =
-    {
-      animation_set =
-      {
-        direction_count = 20,
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
-        frame_count = 16,
-        height = 128,
-        priority = "extra-high",
-        scale = 0.5,
-        width = 128
-      }
-    },
+    belt_animation_set = high_density_animation_set,
     fast_replaceable_group = "transport-belt",
     speed = 0.1875,
     structure =
@@ -1520,20 +1514,7 @@ data:extend({
     },
 
     animation_speed_coefficient = 32,
-    belt_animation_set =
-    {
-      animation_set =
-      {
-        direction_count = 20,
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
-        frame_count = 16,
-        height = 128,
-        priority = "extra-high",
-        scale = 0.5,
-        width = 128
-      }
-    },
+    belt_animation_set = high_density_animation_set,
     related_underground_belt = "pm-high-density-underground-belt",
     fast_replaceable_group = "transport-belt",
     speed = 0.1875,
