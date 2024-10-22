@@ -347,12 +347,18 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/water-extractor.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation", "filter-directions" },
-    collision_mask = { "object-layer", "train-layer" },                         -- collide just with object-layer and train-layer which don't collide with water, this allows us to build on 1 tile wide ground
-    center_collision_mask = { "water-tile", "object-layer", "player-layer" },   -- to test that tile directly under the pump is ground
-    fluid_box_tile_collision_test = { "ground-tile" },
-    adjacent_tile_collision_test = { "water-tile" },
-    adjacent_tile_collision_mask = { "ground-tile" },   -- to prevent building on edge of map :(
-    adjacent_tile_collision_box = { { -1, -2 }, { 1, -1 } },
+    collision_mask = {layers = {
+      -- collide just with object-layer and train-layer which don't collide with water, this allows us to build on 1 tile wide ground
+      object=true,
+      train=true,
+      is_object=true,
+      is_lower_object=true
+    }},
+    tile_buildability_rules =
+    {
+      {area = {{-0.4, -0.4}, {0.4, 0.4}}, required_tiles = {layers={ground_tile=true}}, colliding_tiles = {layers={water_tile=true}}, remove_on_collision = true},
+      {area = {{-1, -2}, {1, -1}}, required_tiles = {layers={water_tile=true}}, colliding_tiles = {layers={}}},
+    },
     minable = { mining_time = 0.1, result = "pm-water-extractor" },
     max_health = 150,
     corpse = "offshore-pump-remnants",
@@ -403,7 +409,9 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    min_perceived_performance = 0.5,
+    perceived_performance = {
+      minimum = 0.5
+    },
     always_draw_fluid = true,
     graphics_set =
     {
@@ -2745,7 +2753,7 @@ data:extend({
         { position = { -1, 0 } },
       },
     },
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    impact_category = "metal",
     pictures =
     {
       straight_vertical_single =
@@ -3012,7 +3020,7 @@ data:extend({
         },
       },
     },
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    impact_category = "metal",
     pictures =
     {
       up =
@@ -5881,7 +5889,7 @@ data:extend({
     fire_glow = {},
     burning_cooldown = 20,
     water_reflection = boiler_reflection()
-  },
+  }--[[@as data.BoilerPrototype]],
   {
     type = "furnace",
     name = "pm-burn-inator",
@@ -6789,7 +6797,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    collision_mask = { "item-layer", "object-layer", "water-tile" },
+    collision_mask = {layers = {
+      item = true,
+      meltable = true,
+      object = true,
+      -- player = true, -- Make it so you can walk over it!
+      water_tile = true,
+      is_object = true,
+      is_lower_object = true,
+    }},
     minable = { mining_time = 0.5, result = "pm-walkable-solar-panel-1" },
     max_health = 400 + 1,
     corpse = "pm-solar-panel-2-remnants",
@@ -6847,7 +6863,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    collision_mask = { "item-layer", "object-layer", "water-tile" },
+    collision_mask = {layers = {
+      item = true,
+      meltable = true,
+      object = true,
+      -- player = true, -- Make it so you can walk over it!
+      water_tile = true,
+      is_object = true,
+      is_lower_object = true,
+    }},
     minable = { mining_time = 0.8, result = "pm-walkable-solar-panel-2" },
     max_health = 400 + 1,
     corpse = "pm-solar-panel-2-remnants",
@@ -6953,7 +6977,7 @@ data:extend({
     },
     energy_usage = "35kW",
     pumping_speed = 400,
-    vehicle_impact_sound = sounds.generic_impact,
+    impact_category = "metal-large",
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     animations =
@@ -7480,7 +7504,7 @@ data:extend({
         }
       }
     },
-    vehicle_impact_sound = sounds.generic_impact,
+    impact_category = "metal-large",
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     working_sound =
