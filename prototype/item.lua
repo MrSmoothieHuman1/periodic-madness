@@ -1134,7 +1134,7 @@ data:extend({
     name = "pm-solar-panel-equipment-2",
     icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2-icon.png",
     icon_size = 64,
-    placed_as_equipment_result = "pm-solar-panel-equipment-2",
+    place_as_equipment_result = "pm-solar-panel-equipment-2",
     subgroup = "pm-modular-power",
     order = "b",
     stack_size = 20
@@ -1144,10 +1144,9 @@ data:extend({
     name = "pm-personal-robostasher-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robostasher-equipment.png",
     icon_size = 64,
-    placed_as_equipment_result = "pm-personal-robostasher-equipment",
+    place_as_equipment_result = "pm-personal-robostasher-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
-    default_request_amount = 1,
     stack_size = 20
   },
   {
@@ -1155,10 +1154,9 @@ data:extend({
     name = "pm-personal-robostasher-mk2-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robostasher-mk2-equipment.png",
     icon_size = 64,
-    placed_as_equipment_result = "pm-personal-robostasher-mk2-equipment",
+    place_as_equipment_result = "pm-personal-robostasher-mk2-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
-    default_request_amount = 1,
     stack_size = 20
   },
   {
@@ -1166,10 +1164,9 @@ data:extend({
     name = "pm-personal-robocharger-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robocharger-equipment-icon.png",
     icon_size = 64,
-    placed_as_equipment_result = "pm-personal-robostasher-equipment",
+    place_as_equipment_result = "pm-personal-robostasher-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
-    default_request_amount = 1,
     stack_size = 20
   },
   {
@@ -1177,10 +1174,9 @@ data:extend({
     name = "pm-personal-robocharger-mk2-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robocharger-mk2-equipment-icon.png",
     icon_size = 64,
-    placed_as_equipment_result = "pm-personal-robostasher-mk2-equipment",
+    place_as_equipment_result = "pm-personal-robostasher-mk2-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
-    default_request_amount = 1,
     stack_size = 20
   },
   {
@@ -1188,10 +1184,9 @@ data:extend({
     name = "pm-lithium-sulfur-battery-equipment",
     icon = "__periodic-madness__/graphics/equipment/lithium-battery-equipment.png",
     icon_size = 64,
-    placed_as_equipment_result = "pm-lithium-sulfur-battery-equipment",
+    place_as_equipment_result = "pm-lithium-sulfur-battery-equipment",
     subgroup = "equipment",
     order = "b[battery]-a[battery-equipment]",
-    default_request_amount = 5,
     stack_size = 20
   },
   {
@@ -1200,10 +1195,9 @@ data:extend({
     localised_description = {"item-description.battery-equipment"},
     icon = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment.png",
     icon_size = 64,
-    placed_as_equipment_result = "pm-lithium-sulfur-battery-mk2-equipment",
+    place_as_equipment_result = "pm-lithium-sulfur-battery-mk2-equipment",
     subgroup = "equipment",
     order = "b[battery]-b[battery-equipment-mk2]",
-    default_request_amount = 5,
     stack_size = 20
   },
 

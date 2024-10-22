@@ -3862,7 +3862,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-mining-productivity-6",
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
     effects =
     {
