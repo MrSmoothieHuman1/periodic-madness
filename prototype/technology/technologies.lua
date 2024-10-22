@@ -10,7 +10,7 @@ data:extend({
       PM.unlock_recipe("pm-welder"),
       PM.unlock_recipe("pm-hydrogen-fuel")
     },
-    prerequisites = {"automation" },
+    prerequisites = {"automation"},
     unit =
     {
       count = 15,

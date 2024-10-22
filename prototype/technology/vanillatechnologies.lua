@@ -158,11 +158,16 @@ data.raw["technology"]["engine"].unit.ingredients =
 }
 data.raw["technology"]["engine"].prerequisites = { "pm-vanadium-chromium-alloying" }
 
-data.raw["technology"]["railway"].unit.ingredients =
+data.raw["technology"]["railway"].unit =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  count = 75,
+  ingredients = 
+    {
+      PM.ingredient("automation-science-pack", 1),
+      PM.ingredient("logistic-science-pack", 1),
+      PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+    },
+    time = 30
 }
 
 data.raw["technology"]["automated-rail-transportation"].unit.ingredients =
@@ -623,31 +628,31 @@ data.raw["technology"]["destroyer"].unit.ingredients =
 }
 data.raw["technology"]["destroyer"].prerequisites = { "distractor", "pm-post-transition-metal-pack-unlock" }
 
-data.raw["technology"]["follower-robot-count-1"].unit.ingredients =
-{
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1)
-}
-data.raw["technology"]["follower-robot-count-2"].unit.ingredients =
-{
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
-}
-data.raw["technology"]["follower-robot-count-3"].unit.ingredients =
-{
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
-}
-data.raw["technology"]["follower-robot-count-4"].unit.ingredients =
-{
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
-}
+--data.raw["technology"]["follower-robot-count-1"].unit.ingredients =
+--{
+--  PM.ingredient("automation-science-pack", 1),
+--  PM.ingredient("logistic-science-pack", 1)
+--}
+--data.raw["technology"]["follower-robot-count-2"].unit.ingredients =
+--{
+--  PM.ingredient("automation-science-pack", 1),
+--  PM.ingredient("logistic-science-pack", 1),
+--  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+--}
+--data.raw["technology"]["follower-robot-count-3"].unit.ingredients =
+--{
+--  PM.ingredient("automation-science-pack", 1),
+--  PM.ingredient("logistic-science-pack", 1),
+--  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+--  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+--}
+--data.raw["technology"]["follower-robot-count-4"].unit.ingredients =
+--{
+--  PM.ingredient("automation-science-pack", 1),
+---  PM.ingredient("logistic-science-pack", 1),
+--  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+--  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+--}
 
 data.raw["technology"]["effect-transmission"].unit.count = 275
 data.raw["technology"]["effect-transmission"].prerequisites = { "pm-vacuum-tubes", "pm-polytetrafluoroethylene-plastic" }
