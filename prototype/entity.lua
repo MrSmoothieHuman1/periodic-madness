@@ -1,4 +1,4 @@
-local PM = require("libary")
+local PM = require("library")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local red_belt = {r = 0.878, g = 0.169, b = 0.169}
@@ -954,11 +954,6 @@ data:extend({
     burning_cooldown = 20,
     water_reflection = boiler_reflection()
   },
-} --[[@as data.EntityPrototype]])
--- NOTE: What the fuck is this? Why do you split the data:extend?
---- I can understand if you wanted to separate ideas, but without any comments helping with that? useless!
-data:extend({
-
   {
     type = "underground-belt",
     name = "pm-high-density-underground-belt",
@@ -2707,7 +2702,7 @@ data:extend({
         --   animation_speed = 0.25,
         --   scale = 0.575
         -- },
-        util.empty_sprite(32)
+        util.empty_animation(32)
       }
     },
   },
@@ -2716,7 +2711,7 @@ data:extend({
     name = "pm-stainless-steel-pipe",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-pipe.png",
-    flags = { "placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving" },
+    flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.2, result = "pm-stainless-steel-pipe" },
     max_health = 800,
     corpse = "pipe-remnants",
@@ -3192,6 +3187,7 @@ data:extend({
     selection_box = { { -1, -1 }, { 1, 1 } },
     burner =
     {
+      type = "burner",
       fuel_category = "pm-voltatic-piles",
       effectivity = 1,
       fuel_inventory_size = 1,
@@ -6743,6 +6739,7 @@ data:extend({
     selection_box = { { -1, -1 }, { 1, 1 } },
     burner =
     {
+      type = "burner",
       fuel_category = "pm-charged-batteries",
       effectivity = 1,
       fuel_inventory_size = 1,
@@ -7587,7 +7584,7 @@ data:extend({
       orientation_to_variation = true
     }
   },
---[[@as data.EntityPrototype]]})
+}--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
 -- selection_box = {{-2.2, -2.2}, {2.5, 2.6}}, first two are up and down, third is left, fourth is right
@@ -7999,7 +7996,7 @@ data.raw["underground-belt"]["fast-underground-belt"].map_color = orange_belt
 data.raw["splitter"]["fast-splitter"].map_color = orange_belt
 data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
 data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
-data.raw["underground-belt"]["express-underground-belt"].max_length = 12
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 12 --TODO: Confirm this is what you wanted
 data.raw["splitter"]["express-splitter"].speed = 0.125
 data.raw["splitter"]["fast-splitter"].next_upgrade = "pm-advanced-splitter"
 data.raw["transport-belt"]["fast-transport-belt"].next_upgrade = "pm-advanced-transport-belt"
