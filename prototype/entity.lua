@@ -6609,8 +6609,8 @@ data:extend({
           priority = "high",
           width = 214,
           height = 226,
-          frame_count = 32,
-          line_length = 8,
+          frame_count = 24,
+          line_length = 6,
           animation_speed = 0.7,
           shift = util.by_pixel(0, -4),
           scale = 0.5
@@ -6623,7 +6623,7 @@ data:extend({
           height = 214,
           line_length = 1,
           frame_count = 1,
-          repeat_count = 32,
+          repeat_count = 24,
           draw_as_shadow = true,
           shift = util.by_pixel(16, -4),
           scale = 0.5
