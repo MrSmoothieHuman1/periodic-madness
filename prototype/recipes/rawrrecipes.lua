@@ -30,7 +30,9 @@ data:extend({
     {
       PM.ingredient("pm-iron-chunk", 2)
     },
-    result = "iron-plate"
+    results = {
+      PM.product("iron-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -59,7 +61,9 @@ data:extend({
     {
       PM.ingredient("pm-copper-chunk", 2)
     },
-    result = "copper-plate"
+    results = {
+      PM.product("copper-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -88,7 +92,9 @@ data:extend({
     {
       PM.ingredient("pm-nickel-chunk", 2)
     },
-    result = "pm-nickel-plate"
+    results = {
+      PM.product("pm-nickel-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -117,7 +123,9 @@ data:extend({
     {
       PM.ingredient("pm-zinc-chunk", 2)
     },
-    result = "pm-zinc-plate"
+    results = {
+      PM.product("pm-zinc-plate", 1)
+    }
   },
 
 

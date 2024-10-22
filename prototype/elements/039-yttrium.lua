@@ -2,7 +2,7 @@ local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "item",
-    name = "pm-mixed-bastnäsite",
+    name = "pm-mixed-bastnasite",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
     pictures =
@@ -16,7 +16,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-bastnäsite-Y",
+    name = "pm-bastnasite-Y",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
     pictures =
@@ -30,7 +30,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-bastnäsite-C",
+    name = "pm-bastnasite-C",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
     pictures =
@@ -59,7 +59,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-basic-bastnäsite",
+    name = "pm-basic-bastnasite",
     enabled = false,
     energy_required = 24,
     category = "pm-acids",
@@ -73,33 +73,33 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-mixed-bastnäsite", 6, 2 )
+      PM.product_range("pm-mixed-bastnasite", 6, 2 )
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-mixed-bastnäsite-seperation",
+    name = "pm-mixed-bastnasite-seperation",
     enabled = false,
     energy_required = 6,
     category = "pm-crushing",
     subgroup = "pm-yttrium-tm",
     order = "b",
-    main_product = "pm-bastnäsite-Y",
+    main_product = "pm-bastnasite-Y",
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-mixed-bastnäsite", 6),
+      PM.ingredient("pm-mixed-bastnasite", 6),
       PM.ingredient("pm-ion-exchange-beads", 9)
     },
     results =
     {
-      PM.product_chance("pm-bastnäsite-Y", 2, 0.5),
-      PM.product_range_chance("pm-bastnäsite-C", 2, 4, 0.5)
+      PM.product_chance("pm-bastnasite-Y", 2, 0.5),
+      PM.product_range_chance("pm-bastnasite-C", 2, 4, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-bastnäsite-Y-seperation",
+    name = "pm-bastnasite-Y-seperation",
     enabled = false,
     energy_required = 16,
     category = "chemistry",
@@ -108,7 +108,7 @@ data:extend({
     main_product = "pm-yttrium-oxide",
     ingredients =
     {
-      PM.ingredient("pm-bastnäsite-Y", 6),
+      PM.ingredient("pm-bastnasite-Y", 6),
       PM.ingredient("sulfuric-acid", 20, "fluid"),
       PM.ingredient("pm-vanadium-oxide-catalyst", 4)
     },
@@ -121,7 +121,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-bastnäsite-C-seperation",
+    name = "pm-bastnasite-C-seperation",
     enabled = false,
     energy_required = 16,
     category = "chemistry",
@@ -130,7 +130,7 @@ data:extend({
     main_product = "pm-yttrium-oxide",
     ingredients =
     {
-      PM.ingredient("pm-bastnäsite-C", 6),
+      PM.ingredient("pm-bastnasite-C", 6),
       PM.ingredient("sulfuric-acid", 20, "fluid"),
       PM.ingredient("pm-vanadium-oxide-catalyst", 4)
     },

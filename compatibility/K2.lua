@@ -1,5 +1,5 @@
-if not mods["bzzirconium"] then return end
-if not mods["Krastorio2"] then return end
+if not mods["bzzirconium"] or not mods["Krastorio2"] then return end
+local PM = require("library")
 
 data.raw["recipe"]["pm-dirty-boiler"].enabled = false
 data.raw["recipe"]["pm-science-bottle"].enabled = false
@@ -8,19 +8,19 @@ data.raw["recipe"]["kr-crusher"].subgroup = "pm-crushing-machine"
 data.raw["recipe"]["kr-crusher"].order = "d"
 data.raw["recipe"]["kr-filtration-plant"].ingredients =
 {
-  {"pm-glass-pane", 10},
-  {"steel-plate", 4},
-  {"automation-core", 2},
-  {"pm-corrosion-resistant-tubing", 10},
-  {"pm-heavyweight-panelling", 8}
+  PM.ingredient("pm-glass-pane", 10),
+  PM.ingredient("steel-plate", 4),
+  PM.ingredient("automation-core", 2),
+  PM.ingredient("pm-corrosion-resistant-tubing", 10),
+  PM.ingredient("pm-heavyweight-panelling", 8)
 }
 data.raw["recipe"]["kr-crusher"].ingredients =
 {
-  {"electric-engine-unit", 6},
-  {"advanced-circuit", 15},
-  {"concrete", 15},
-  {"pm-lightweight-framing", 30},
-  {"pm-heavyweight-panelling", 12},
+  PM.ingredient("electric-engine-unit", 6),
+  PM.ingredient("advanced-circuit", 15),
+  PM.ingredient("concrete", 15),
+  PM.ingredient("pm-lightweight-framing", 30),
+  PM.ingredient("pm-heavyweight-panelling", 12),
 }
 data.raw["technology"]["pm-cleaner-power-generation"].prerequisites = { "kr-steam-engine" }
 data.raw["technology"]["kr-fluids-chemistry"].prerequisites = { "kr-basic-fluid-handling", "steel-processing",

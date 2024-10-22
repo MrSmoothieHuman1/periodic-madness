@@ -178,14 +178,12 @@ function set_icon(item, type, colour_name)
 		item.icons = {}
 		item.icon = nil
 		item.icon_size = nil
-		item.icon_mipmaps = nil
 	end
 
 	item.icons[1] = {
 		icon = "__periodic-madness__/graphics/icons/buildings/"..type.."/"..colour_name..".png",
 		icon_size = 64,
-		scale = 0.5,
-		icon_mipmaps = 4
+		scale = 0.5
 	}
 
 	local pictures = item.pictures
@@ -377,7 +375,8 @@ local function make_explosions(colour_name, colour, orders)
 		local explosion = {
 			type = "explosion",
 			name = "pm-"..colour_name.."-"..type.."-explosion",
-			flags = {"not-on-map", "hidden"},
+			flags = {"not-on-map"},
+			hidden = true,
 			subgroup = "belt-explosions",
 			order = order,
 			height = 0,
@@ -385,7 +384,7 @@ local function make_explosions(colour_name, colour, orders)
 			smoke = "smoke-fast",
 			smoke_count = 2,
 			smoke_slow_down_factor = 1,
-			sound = sounds.small_explosion(0.5),
+			sound = sounds.small_explosion,
 			created_effect = {
 				type = "direct",
 				action_delivery = {

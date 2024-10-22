@@ -6,7 +6,6 @@ data:extend({
     name = "pm-bismuth-210",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/ores/bismuth-210-icon.png",
-    icon_mipmaps = 4,
     subgroup = "pm-polonium-ptm",
     order = "a",
     stack_size = 200

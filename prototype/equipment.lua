@@ -310,6 +310,7 @@ data.raw["item"]["battery-mk2-equipment"].order = "b"
 
 data.raw["generator-equipment"]["fission-reactor-equipment"].burner = 
 {
+  type = "burner",
   usage_priority = "primary-output",
   fuel_category = "pm-fuel-rods",
   fuel_inventory_size = 1,

@@ -326,13 +326,9 @@ local robots =
     construction_vector = { 0.30, 0.22 },
     water_reflection = robot_reflection(1),
     idle = robot_animations.construction_robot.idle,
-    idle_with_cargo = robot_animations.construction_robot.idle_with_cargo,
     in_motion = robot_animations.construction_robot.in_motion,
-    in_motion_with_cargo = robot_animations.construction_robot.in_motion_with_cargo,
     shadow_idle = robot_animations.construction_robot.shadow_idle,
-    shadow_idle_with_cargo = robot_animations.construction_robot.shadow_idle_with_cargo,
     shadow_in_motion = robot_animations.construction_robot.shadow_in_motion,
-    shadow_in_motion_with_cargo = robot_animations.construction_robot.shadow_in_motion_with_cargo,
     working = robot_animations.construction_robot.working,
     shadow_working = robot_animations.construction_robot.shadow_working
   },
@@ -341,7 +337,6 @@ local robots =
     name = "pm-lithium-logistic-robot",
     icon = "__periodic-madness__/graphics/icons/lithium-logistic-robot.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
     minable = { mining_time = 0.1, result = "pm-lithium-logistic-robot" },
     resistances =

@@ -11,7 +11,9 @@ data:extend({
     energy_required = 3.2,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-nickel-ore", 1) },
-    result = "pm-nickel-plate"
+    results = {
+      PM.product("pm-nickel-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -22,7 +24,9 @@ data:extend({
     energy_required = 3.2,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-zinc-ore", 1) },
-    result = "pm-zinc-plate"
+    results = {
+      PM.product("pm-zinc-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -34,7 +38,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-manganese-ore", 1) },
-    result = "pm-manganese-plate"
+    results = {
+      PM.product("pm-manganese-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -46,7 +52,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-gold-ore", 1) },
-    result = "pm-gold-plate"
+    results = {
+      PM.product("pm-gold-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -58,7 +66,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-silver-ore", 1) },
-    result = "pm-silver-plate"
+    results = {
+      PM.product("pm-silver-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -70,7 +80,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-titanium-ore", 1) },
-    result = "pm-titanium-plate"
+    results = {
+      PM.product("pm-titanium-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -82,7 +94,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-tungsten-ore", 1) },
-    result = "pm-tungsten-plate"
+    results = {
+      PM.product("pm-tungsten-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -93,7 +107,9 @@ data:extend({
     energy_required = 3.2,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-sand", 4) },
-    result = "pm-glass-pane"
+    results = {
+      PM.product("pm-glass-pane", 1)
+    }
   },
 
   {
@@ -106,7 +122,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-tin-ore", 1) },
-    result = "pm-tin-plate"
+    results = {
+      PM.product("pm-tin-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -117,7 +135,9 @@ data:extend({
     energy_required = 3.2,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-aluminium-ore", 1) },
-    result = "pm-aluminium-plate"
+    results = {
+      PM.product("pm-aluminium-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -129,7 +149,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-cadnium-ore", 1) },
-    result = "pm-cadnium-plate"
+    results = {
+      PM.product("pm-cadnium-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -141,7 +163,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-palladium-ore", 1) },
-    result = "pm-palladium-plate"
+    results = {
+      PM.product("pm-palladium-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -153,7 +177,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-lead-ore", 1) },
-    result = "pm-lead-plate"
+    results = {
+      PM.product("pm-lead-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -165,7 +191,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-thallium-ore", 1) },
-    result = "pm-thallium-plate"
+    results = {
+      PM.product("pm-thallium-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -177,7 +205,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-indium-ore", 1) },
-    result = "pm-indium-plate"
+    results = {
+      PM.product("pm-indium-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -189,7 +219,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-platinum-ore", 1) },
-    result = "pm-platinum-plate"
+    results = {
+      PM.product("pm-platinum-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -201,7 +233,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-cobalt-ore", 1) },
-    result = "pm-cobalt-plate"
+    results = {
+      PM.product("pm-cobalt-plate", 1)
+    }
   },
   {
     type = "recipe",
@@ -213,7 +247,9 @@ data:extend({
     --enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-tellurium-ore", 1) },
-    result = "pm-tellurium-plate"
+    results = {
+      PM.product("pm-tellurium-plate", 1)
+    }
   },
 
   -- alloys
@@ -231,7 +267,9 @@ data:extend({
       PM.ingredient("copper-plate", 1),
       PM.ingredient("pm-zinc-plate", 1),
     },
-    result = "pm-brass-plate",
+    results = {
+      PM.product("pm-brass-plate", 1)
+    },
   },
   {
     type = "recipe",
@@ -248,8 +286,9 @@ data:extend({
       PM.ingredient("pm-lead-plate", 2),
       PM.ingredient("pm-arsenic-ore", 2)
     },
-    result = "pm-brass-plate",
-    result_count = 2
+    results = {
+      PM.product("pm-brass-plate", 2)
+    }
   },
   {
     type = "recipe",

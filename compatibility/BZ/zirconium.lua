@@ -19,8 +19,7 @@ for _, name in pairs { "zircon" } do
     end
   end
 end
-data.raw["recipe"]["zirconium-plate"].normal.ingredients = { PM.ingredient("pm-zirconia", 3) }
-data.raw["recipe"]["zirconium-plate"].expensive.ingredients = { PM.ingredient("pm-zirconia", 5) }
+data.raw["recipe"]["zirconium-plate"].ingredients = { PM.ingredient("pm-zirconia", 3) }
 
 data.raw["autoplace-control"]["zircon"] = nil
 data.raw["resource"]["zircon"] = nil
