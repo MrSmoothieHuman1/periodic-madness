@@ -104,7 +104,7 @@ function PM.catalyst_ingredient(name, amount, catalyst_amount, type)
   return {
     name = name,
     amount = amount,
-    catalyst_amount = catalyst_amount,
+    ignored_by_stats = catalyst_amount,
     type = type or "item"
   }--[[@as data.IngredientPrototype]]
 end
@@ -126,7 +126,8 @@ local function super_product(name, type, amount, amount_min, amount_max, probabi
     amount_min = amount_min,
     amount_max = amount_max,
     probability = probability,
-    catalyst_amount = catalyst_amount,
+    ignored_by_stats = catalyst_amount,
+    ignored_by_productivity = catalyst_amount,
   }--[[@as data.ProductPrototype]]
 end
 ---Quickly makes the Prodcut result as if using shorthand
