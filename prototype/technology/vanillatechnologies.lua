@@ -25,10 +25,10 @@ data.raw["technology"]["automation-3"].effects =
 data.raw["technology"]["automation-3"].prerequisites = { "processing-unit", "electric-engine" }
 data.raw["technology"]["automation-3"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["logistic-science-pack"].icon_size = 256
@@ -47,9 +47,9 @@ data.raw["technology"]["sulfur-processing"].effects =
 data.raw["technology"]["sulfur-processing"].prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes"}
 data.raw["technology"]["sulfur-processing"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["advanced-circuit"].effects =
@@ -61,9 +61,9 @@ data.raw["technology"]["advanced-circuit"].effects =
 data.raw["technology"]["advanced-circuit"].prerequisites = { "pm-fluid-circuit", "pm-basic-polyethylene-plastic", "pm-copper-tin-solder" }
 data.raw["technology"]["advanced-circuit"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["logistics-3"].icon = "__base__/graphics/technology/logistics-2.png"
@@ -79,9 +79,9 @@ data.raw["technology"]["logistics-3"].unit =
   count = 150,
   ingredients =
   {
-    PM.ingredient("automation-science-pack", 1),
-    PM.ingredient("logistic-science-pack", 1),
-    PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1}
   },
   time = 15
 }
@@ -99,9 +99,9 @@ data.raw["technology"]["fluid-handling"].effects =
 data.raw["technology"]["fluid-handling"].prerequisites = { "pm-multimetal-multiproperty" }
 data.raw["technology"]["fluid-handling"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["oil-processing"].effects =
@@ -137,24 +137,24 @@ data.raw["technology"]["advanced-oil-processing"].unit =
   count = 200,
   ingredients =
   {
-    PM.ingredient("automation-science-pack", 1),
-    PM.ingredient("logistic-science-pack", 1),
-    PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1}
   },
   time = 30
 }
 data.raw["technology"]["advanced-oil-processing"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["engine"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["engine"].prerequisites = { "pm-vanadium-chromium-alloying" }
 
@@ -163,47 +163,47 @@ data.raw["technology"]["railway"].unit =
   count = 75,
   ingredients = 
     {
-      PM.ingredient("automation-science-pack", 1),
-      PM.ingredient("logistic-science-pack", 1),
-      PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1}
     },
     time = 30
 }
 
 data.raw["technology"]["automated-rail-transportation"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["fluid-wagon"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["automobilism"].unit.count = 125
 data.raw["technology"]["automobilism"].prerequisites = {"pm-rubber-processing"}
 data.raw["technology"]["automobilism"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
 }
 
 data.raw["technology"]["concrete"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["chemical-science-pack"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["chemical-science-pack"].icon =
 "__periodic-madness__/graphics/technology/reactive-non-metal-unlock.png"
@@ -229,10 +229,10 @@ data.raw["technology"]["lubricant"].effects =
 }
 data.raw["technology"]["lubricant"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["solar-energy"].prerequisites = { "pm-cadnium-processing", "advanced-circuit" }
@@ -243,18 +243,18 @@ data.raw["technology"]["solar-energy"].effects =
 }
 data.raw["technology"]["solar-energy"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["flammables"].prerequisites = { "pm-fuel-oils-recipes", "pm-petrol-recipes", "pm-kerosene-recipes",
   "pm-diesel-recipes" }
 data.raw["technology"]["flammables"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["plastics"].effects = {}
@@ -262,25 +262,25 @@ data.raw["technology"]["plastics"].unit.count = 100
 data.raw["technology"]["plastics"].hidden = true
 data.raw["technology"]["plastics"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["advanced-material-processing-2"].prerequisites = { "pm-vanadium-chromium-alloying" }
 data.raw["technology"]["advanced-material-processing-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["modular-armor"].prerequisites = { "pm-cadnium-processing", "advanced-circuit" }
 data.raw["technology"]["modular-armor"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["modules"].effects =
@@ -297,41 +297,41 @@ data.raw["technology"]["modules"].effects =
 data.raw["technology"]["modules"].prerequisites = { "pm-trace-gas-refining", "pm-indium-processing" }
 data.raw["technology"]["modules"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["robotics"].prerequisites = { "pm-vanadium-oxide-redox-batteries", "electric-engine" }
 data.raw["technology"]["robotics"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["solar-panel-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["belt-immunity-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["battery-equipment"].prerequisites = {"pm-vanadium-oxide-redox-batteries", "modular-armor"}
 data.raw["technology"]["battery-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["battery-equipment"].icons = 
 {
@@ -350,10 +350,10 @@ data.raw["technology"]["battery-equipment"].icons =
 }
 data.raw["technology"]["battery-mk2-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {}"pm-post-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["battery-mk2-equipment"].prerequisites = {"battery-equipment", "processing-unit"}
 data.raw["technology"]["battery-mk2-equipment"].icons = 
@@ -373,49 +373,49 @@ data.raw["technology"]["battery-mk2-equipment"].icons =
 }
 data.raw["technology"]["night-vision-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["electric-engine"].prerequisites = { "pm-lubricating-oils-recipes" }
 data.raw["technology"]["electric-engine"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["construction-robotics"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["logistic-robotics"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["low-density-structure"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1),
-  PM.ingredient("pm-metalloid-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["low-density-structure"].prerequisites = {"pm-polytetrafluoroethylene-plastic", "pm-metalloid-pack-unlock"}
 
 data.raw["technology"]["laser"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
 }
 
 data.raw["technology"]["nuclear-power"].effects =
@@ -425,10 +425,10 @@ data.raw["technology"]["nuclear-power"].effects =
 }
 data.raw["technology"]["nuclear-power"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
 }
 
 data.raw["technology"]["processing-unit"].effects =
@@ -445,27 +445,27 @@ data.raw["technology"]["processing-unit"].effects =
 }
 data.raw["technology"]["processing-unit"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["processing-unit"].prerequisites = { "pm-indium-processing" }
 
 data.raw["technology"]["power-armor"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
 }
 
 data.raw["technology"]["exoskeleton-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
 }
 
 data.raw["technology"]["military-3"].prerequisites = { "pm-post-transition-metal-pack-unlock", "military-2" }
@@ -480,105 +480,105 @@ data.raw["technology"]["military-3"].effects =
 }
 data.raw["technology"]["military-3"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["laser-turret"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("military-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  ("military-science-pack", 1)
 }
 
 data.raw["technology"]["electric-energy-distribution-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["electric-energy-distribution-2"].prerequisites = { "pm-post-transition-metal-pack-unlock" }
 
 data.raw["technology"]["electric-energy-accumulators"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["electric-energy-accumulators"].prerequisites = { "pm-vanadium-oxide-redox-batteries" }
 
 data.raw["technology"]["battery"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["explosives"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["cliff-explosives"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
 data.raw["technology"]["land-mine"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("military-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  ("military-science-pack", 1)
 }
 
 data.raw["technology"]["braking-force-1"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 
 data.raw["technology"]["braking-force-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
 }
 
 data.raw["technology"]["power-armor"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["exoskeleton-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["tank"].prerequisites = { "automobilism", "pm-post-transition-metal-pack-unlock" }
 data.raw["technology"]["tank"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["nuclear-power"].effects =
@@ -589,10 +589,10 @@ data.raw["technology"]["nuclear-power"].effects =
 }
 data.raw["technology"]["nuclear-power"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["uranium-processing"].prerequisites = { "concrete", "pm-polonium-processing" }
@@ -601,8 +601,8 @@ data.raw["technology"]["lubricant"].unit.count = 125
 
 data.raw["technology"]["defender"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
 }
 data.raw["technology"]["defender"].effects =
 {
@@ -613,46 +613,46 @@ data.raw["technology"]["defender"].prerequisites = { "military-2" }
 
 data.raw["technology"]["distractor"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["distractor"].prerequisites = { "defender", "pm-advanced-advanced-transition-metal-pack-unlock" }
 
 data.raw["technology"]["destroyer"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["destroyer"].prerequisites = { "distractor", "pm-post-transition-metal-pack-unlock" }
 
---data.raw["technology"]["follower-robot-count-1"].unit.ingredients =
---{
---  PM.ingredient("automation-science-pack", 1),
---  PM.ingredient("logistic-science-pack", 1)
---}
---data.raw["technology"]["follower-robot-count-2"].unit.ingredients =
---{
---  PM.ingredient("automation-science-pack", 1),
---  PM.ingredient("logistic-science-pack", 1),
---  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1)
---}
---data.raw["technology"]["follower-robot-count-3"].unit.ingredients =
---{
---  PM.ingredient("automation-science-pack", 1),
---  PM.ingredient("logistic-science-pack", 1),
---  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
---  PM.ingredient("pm-post-transition-metal-science-pack", 1)
---}
---data.raw["technology"]["follower-robot-count-4"].unit.ingredients =
---{
---  PM.ingredient("automation-science-pack", 1),
----  PM.ingredient("logistic-science-pack", 1),
---  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
---  PM.ingredient("pm-post-transition-metal-science-pack", 1)
---}
+data.raw["technology"]["follower-robot-count-1"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
 
 data.raw["technology"]["effect-transmission"].unit.count = 275
 data.raw["technology"]["effect-transmission"].prerequisites = { "pm-vacuum-tubes", "pm-polytetrafluoroethylene-plastic" }
@@ -664,20 +664,20 @@ data.raw["technology"]["effect-transmission"].effects =
 
 data.raw["technology"]["effect-transmission"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
 }
 
 data.raw["technology"]["logistic-system"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
 }
 data.raw["technology"]["logistic-system"].prerequisites = { "pm-lithium-ion-logistic-robotics" }
 
@@ -687,9 +687,9 @@ data.raw["technology"]["worker-robots-speed-1"].effects =
 }
 data.raw["technology"]["worker-robots-speed-1"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["worker-robots-speed-2"].effects =
 {
@@ -697,10 +697,10 @@ data.raw["technology"]["worker-robots-speed-2"].effects =
 }
 data.raw["technology"]["worker-robots-speed-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
 }
 data.raw["technology"]["worker-robots-speed-3"].effects =
 {
@@ -708,10 +708,10 @@ data.raw["technology"]["worker-robots-speed-3"].effects =
 }
 data.raw["technology"]["worker-robots-speed-3"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
 }
 data.raw["technology"]["worker-robots-speed-4"].effects =
 {
@@ -719,11 +719,11 @@ data.raw["technology"]["worker-robots-speed-4"].effects =
 }
 data.raw["technology"]["worker-robots-speed-4"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
 }
 data.raw["technology"]["worker-robots-speed-5"].effects =
 {
@@ -731,39 +731,39 @@ data.raw["technology"]["worker-robots-speed-5"].effects =
 }
 data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
 }
 
 data.raw["technology"]["worker-robots-storage-1"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["worker-robots-storage-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["utility-science-pack"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["military"].effects =
 {
@@ -783,24 +783,24 @@ data.raw["technology"]["military-2"].effects =
 }
 data.raw["technology"]["research-speed-2"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["research-speed-5"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
 }data.raw["technology"]["research-speed-6"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
 }
 
 data.raw["technology"]["mining-productivity-1"].effects =
@@ -809,8 +809,8 @@ data.raw["technology"]["mining-productivity-1"].effects =
 }
 data.raw["technology"]["mining-productivity-1"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
 }
 data.raw["technology"]["mining-productivity-2"].effects =
 {
@@ -818,9 +818,9 @@ data.raw["technology"]["mining-productivity-2"].effects =
 }
 data.raw["technology"]["mining-productivity-2"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["mining-productivity-2"].effects =
 {
@@ -829,17 +829,17 @@ data.raw["technology"]["mining-productivity-2"].effects =
 data.raw["technology"]["mining-productivity-3"].unit.count = 800
 data.raw["technology"]["mining-productivity-3"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["mining-productivity-4"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["mining-productivity-4"].max_level = "4"
 data.raw["technology"]["mining-productivity-4"].unit.time = 80
@@ -849,20 +849,20 @@ data.raw["technology"]["mining-productivity-4"].unit.count_formula = 1200
 data.raw["technology"]["power-armor-mk2"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["power-armor-mk2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
-  PM.ingredient("pm-metalloid-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["power-armor-mk2"].unit.time = 80
 data.raw["technology"]["energy-shield-equipment"].prerequisites = {"pm-trace-gas-refining"}
 data.raw["technology"]["energy-shield-equipment"].unit.ingredients = 
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
 }
 
 data.raw["technology"]["fission-reactor-equipment"].effects = 
@@ -874,11 +874,11 @@ data.raw["technology"]["fission-reactor-equipment"].effects =
 }
 data.raw["technology"]["fission-reactor-equipment"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
-  PM.ingredient("pm-metalloid-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["fission-reactor-equipment"].unit.time = 60
@@ -906,29 +906,29 @@ SpeedMod3Fix.icon = "__periodic-madness__/graphics/icons/speed-module-3.png"
 
 data.raw["technology"]["speed-module"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["speed-module-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["speed-module-3"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1),
-  PM.ingredient("pm-metalloid-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["speed-module"].icon_size = 256
@@ -970,29 +970,29 @@ ProdMod3Fix.icon = "__periodic-madness__/graphics/icons/productivity-module-3.pn
 
 data.raw["technology"]["productivity-module"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["productivity-module-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["productivity-module-3"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1),
-  PM.ingredient("pm-metalloid-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 data.raw["technology"]["productivity-module"].icon_size = 256
@@ -1053,27 +1053,27 @@ data.raw["technology"]["efficiency-module-3"].effects =
 data.raw["technology"]["efficiency-module-3"].prerequisites = { "efficiency-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["efficiency-module"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["efficiency-module-2"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["efficiency-module-3"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-  PM.ingredient("chemical-science-pack", 1),
-  PM.ingredient("pm-post-transition-metal-science-pack", 1),
-  PM.ingredient("pm-alkali-metal-science-pack", 1),
-  PM.ingredient("pm-metalloid-science-pack", 1)
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }

@@ -19,8 +19,8 @@ data:extend({
       count = 50,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
       },
       time = 30
     }
@@ -41,8 +41,8 @@ data:extend({
       count = 100,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
       },
       time = 30
     }
@@ -63,9 +63,9 @@ data:extend({
       count = 150,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
       },
       time = 30
     }
@@ -86,11 +86,11 @@ data:extend({
       count = 300,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1),
-        PM.ingredient("pm-post-transition-metal-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
       },
       time = 30
     }
@@ -110,8 +110,8 @@ data:extend({
       count = 50,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
       },
       time = 15
     }
@@ -131,8 +131,8 @@ data:extend({
       count = 50,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
       },
       time = 20
     }
@@ -152,8 +152,8 @@ data:extend({
       count = 50,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
       },
       time = 20
     }
@@ -176,9 +176,9 @@ data:extend({
       count = 75,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
       },
       time = 30
     }
@@ -200,10 +200,10 @@ data:extend({
       count = 100,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1)
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1}
       },
       time = 45
     }
@@ -224,10 +224,10 @@ data:extend({
       count = 150,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1)
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1}
       },
       time = 45
     }
@@ -248,10 +248,10 @@ data:extend({
       count = 200,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1)
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1}
       },
       time = 45
     }
@@ -272,11 +272,11 @@ data:extend({
       count = 400,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1),
-        PM.ingredient("pm-post-transition-metal-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         
       },
       time = 45
@@ -298,11 +298,11 @@ data:extend({
       count = 200,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1),
-        PM.ingredient("pm-post-transition-metal-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         
       },
       time = 45,
@@ -323,11 +323,11 @@ data:extend({
       count = 50,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1),
-        PM.ingredient("pm-post-transition-metal-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         
       },
       time = 40,
@@ -349,12 +349,12 @@ data:extend({
       count = 350,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1),
-        PM.ingredient("pm-post-transition-metal-science-pack", 1),
-        PM.ingredient("pm-alkali-metal-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
         
       },
       time = 30
@@ -375,10 +375,10 @@ data:extend({
       count = 200,
       ingredients =
       {
-        PM.ingredient("automation-science-pack", 1),
-        PM.ingredient("logistic-science-pack", 1),
-        PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
-        PM.ingredient("chemical-science-pack", 1),
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
         
       },
       time = 45,

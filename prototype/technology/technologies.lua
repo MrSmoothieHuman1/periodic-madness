@@ -350,7 +350,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
       time = 30
@@ -2400,7 +2400,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
       time = 60
@@ -2426,7 +2426,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
       time = 60
@@ -2452,7 +2452,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
       time = 60
@@ -3255,7 +3255,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
       time = 80
@@ -3281,7 +3281,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
       },
       time = 60
     }
@@ -3575,7 +3575,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
       },
       time = 80
@@ -3725,10 +3725,10 @@ data:extend({
       {
         {"automation-science-pack", 2},
         {"logistic-science-pack", 2},
-        ("pm-advanced-advanced-transition-metal-science-pack", 2),
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
         {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},,
+        {"pm-alkali-metal-science-pack", 1},
       },
       time = 60
     }
@@ -3751,7 +3751,7 @@ data:extend({
       {
         {"automation-science-pack", 2},
         {"logistic-science-pack", 2},
-        ("pm-advanced-advanced-transition-metal-science-pack", 2),
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
       },
