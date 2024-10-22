@@ -14,7 +14,9 @@ data:extend({
       PM.ingredient("pm-basic-panelling", 8),
       PM.ingredient("pm-basic-tubing", 4),
     },
-    result = "pm-acid-plant"
+    results = {
+      PM.product("pm-acid-plant", 1)
+    }
   },
   {
     type = "recipe",
@@ -28,7 +30,9 @@ data:extend({
       PM.ingredient("pm-basic-panelling", 4),
       PM.ingredient("stone-furnace", 1)
     },
-    result = "pm-assembling-machine-0"
+    results = {
+      PM.product("pm-assembling-machine-0", 1)
+    }
   },
   {
     type = "recipe",
@@ -41,7 +45,9 @@ data:extend({
       PM.ingredient("stone-furnace", 1),
       PM.ingredient("pm-basic-framing", 4)
     },
-    result = "pm-welder",
+    results = {
+      PM.product("pm-welder", 1)
+    },
   },
   {
     type = "recipe",
@@ -55,7 +61,9 @@ data:extend({
       PM.ingredient("pm-basic-tubing", 2),
       PM.ingredient("iron-gear-wheel", 2)
     },
-    result = "pm-water-extractor",
+    results = {
+      PM.product("pm-water-extractor", 1)
+    },
   },
   {
     type = "recipe",
@@ -68,7 +76,9 @@ data:extend({
       PM.ingredient("pm-corrosion-resistant-tubing", 2),
       PM.ingredient("pm-stainless-steel-alloy", 6)
     },
-    result = "pm-stainless-steel-storage-tank"
+    results = {
+      PM.product("pm-stainless-steel-storage-tank", 1)
+    }
   },
   {
     type = "recipe",
@@ -79,7 +89,9 @@ data:extend({
       PM.ingredient("pm-nickel-plate", 5),
       PM.ingredient("pm-basic-tubing", 4)
     },
-    result = "pm-dirty-boiler",
+    results = {
+      PM.product("pm-dirty-boiler", 1)
+    },
   },
   {
     type = "recipe",
@@ -94,7 +106,9 @@ data:extend({
       PM.ingredient("processing-unit", 3),
       PM.ingredient("pm-heavy-lubricant", 5, "fluid")
     },
-    result = "pm-high-density-transport-belt"
+    results = {
+      PM.product("pm-high-density-transport-belt", 1)
+    }
   },
   {
     type = "recipe",
@@ -109,8 +123,9 @@ data:extend({
       PM.ingredient("low-density-structure", 4),
       PM.ingredient("pm-heavy-lubricant", 10, "fluid")
     },
-    result = "pm-high-density-underground-belt",
-    result_count = 2
+    results = {
+      PM.product("pm-high-density-underground-belt", 2)
+    }
   },
   {
     type = "recipe",
@@ -125,7 +140,9 @@ data:extend({
       PM.ingredient("processing-unit", 6),
       PM.ingredient("pm-heavy-lubricant", 15, "fluid")
     },
-    result = "pm-high-density-splitter"
+    results = {
+      PM.product("pm-high-density-splitter", 1)
+    }
   },
   {
     type = "recipe",
@@ -141,7 +158,9 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 6),
       PM.ingredient("pm-brass-cog", 2)
     },
-    result = "pm-vacuum-former-1"
+    results = {
+      PM.product("pm-vacuum-former-1", 1)
+    }
   },
   {
     type = "recipe",
@@ -156,7 +175,9 @@ data:extend({
       PM.ingredient("steel-plate", 4),
       PM.ingredient("pm-fluid-circuit", 3)
     },
-    result = "pm-washing-plant-1"
+    results = {
+      PM.product("pm-washing-plant-1", 1)
+    }
   },
   {
     type = "recipe",
@@ -170,7 +191,9 @@ data:extend({
       PM.ingredient("pm-basic-framing", 8),
       PM.ingredient("pm-nickel-plate", 1)
     },
-    result = "pm-burner-crusher"
+    results = {
+      PM.product("pm-burner-crusher", 1)
+    }
   },
   {
     type = "recipe",
@@ -187,7 +210,9 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 2),
       PM.ingredient("pm-polyethylene-plastic", 4)
     },
-    result = "pm-fractional-distillator"
+    results = {
+      PM.product("pm-fractional-distillator", 1)
+    }
   },
   {
     type = "recipe",
@@ -203,7 +228,9 @@ data:extend({
       PM.ingredient("pm-basic-panelling", 8),
       PM.ingredient("electronic-circuit", 3)
     },
-    result = "pm-crusher-1"
+    results = {
+      PM.product("pm-crusher-1", 1)
+    }
   },
   {
     type = "recipe",
@@ -220,7 +247,9 @@ data:extend({
       PM.ingredient("electric-engine-unit", 2),
       PM.ingredient("processing-unit", 3)
     },
-    result = "pm-crusher-2"
+    results = {
+      PM.product("pm-crusher-2", 1)
+    }
   },
   {
     type = "recipe",
@@ -237,7 +266,9 @@ data:extend({
       PM.ingredient("pm-corrosion-resistant-tubing", 6),
       PM.ingredient("pm-fluid-circuit", 2)
     },
-    result = "pm-fluid-catalyst-cracker"
+    results = {
+      PM.product("pm-fluid-catalyst-cracker", 1)
+    }
   },
   {
     type = "recipe",
@@ -251,7 +282,9 @@ data:extend({
       PM.ingredient("pm-glass-pane", 1),
       PM.ingredient("pm-basic-tubing", 4),
     },
-    result = "pm-evaporator"
+    results = {
+      PM.product("pm-evaporator", 1)
+    }
   },
   {
     type = "recipe",
@@ -266,7 +299,9 @@ data:extend({
       PM.ingredient("pm-stainless-steel-pipe", 2),
       PM.ingredient("pm-gold-plate", 6)
     },
-    result = "pm-molten-inator"
+    results = {
+      PM.product("pm-molten-inator", 1)
+    }
   },
   {
     type = "recipe",
@@ -281,7 +316,9 @@ data:extend({
       PM.ingredient("pm-stainless-steel-pipe", 2),
       PM.ingredient("pm-silver-plate", 6)
     },
-    result = "pm-cold-inator"
+    results = {
+      PM.product("pm-cold-inator", 1)
+    }
   },
   {
     type = "recipe",
@@ -297,7 +334,9 @@ data:extend({
       PM.ingredient("pm-silver-plate", 8),
       PM.ingredient("pm-fluid-circuit", 3)
     },
-    result = "pm-cold-inator-2"
+    results = {
+      PM.product("pm-cold-inator-2", 1)
+    }
   },
   {
     type = "recipe",
@@ -313,7 +352,9 @@ data:extend({
       PM.ingredient("pm-gold-plate", 8),
       PM.ingredient("pm-fluid-circuit", 3)
     },
-    result = "pm-molten-inator-2"
+    results = {
+      PM.product("pm-molten-inator-2", 1)
+    }
   },
   {
     type = "recipe",
@@ -332,7 +373,9 @@ data:extend({
       PM.ingredient("concrete", 10),
       PM.ingredient("electric-engine-unit", 9)
     },
-    result = "pm-circuit-megassembler"
+    results = {
+      PM.product("pm-circuit-megassembler", 1)
+    }
   },
   {
     type = "recipe",
@@ -348,7 +391,9 @@ data:extend({
       PM.ingredient("pm-air-filter", 8),
       PM.ingredient("advanced-circuit", 5),
     },
-    result = "pm-atmospheric-condenser"
+    results = {
+      PM.product("pm-atmospheric-condenser", 1)
+    }
   },
   {
     type = "recipe",
@@ -363,7 +408,9 @@ data:extend({
       PM.ingredient("pm-vulcanised-rubber", 1),
       PM.ingredient("long-handed-inserter", 1)
     },
-    result = "pm-filter-long-handed-inserter"
+    results = {
+      PM.product("pm-filter-long-handed-inserter", 1)
+    }
   },
   {
     type = "recipe",
@@ -493,7 +540,9 @@ data:extend({
       PM.ingredient("pm-brass-cog", 4),
       PM.ingredient("pm-heavyweight-panelling", 4)
     },
-    result = "pm-vacuum-former-2"
+    results = {
+      PM.product("pm-vacuum-former-2", 1)
+    }
   },
   {
     type = "recipe",
@@ -509,7 +558,9 @@ data:extend({
       PM.ingredient("advanced-circuit", 4),
       PM.ingredient("pm-platinum-plate", 6),
     },
-    result = "pm-air-filterer"
+    results = {
+      PM.product("pm-air-filterer", 1)
+    }
   },
   {
     type = "recipe",
@@ -525,7 +576,9 @@ data:extend({
       PM.ingredient("advanced-circuit", 6),
       PM.ingredient("pm-heavyweight-panelling", 12)
     },
-    result = "pm-washing-plant-2"
+    results = {
+      PM.product("pm-washing-plant-2", 1)
+    }
   },
   {
     type = "recipe",
@@ -542,7 +595,9 @@ data:extend({
       PM.ingredient("pm-anti-bacterial-panelling", 8),
       PM.ingredient("landfill", 4)
     },
-    result = "pm-greenhouse"
+    results = {
+      PM.product("pm-greenhouse", 1)
+    }
   },
   {
     type = "recipe",
@@ -559,7 +614,9 @@ data:extend({
       PM.ingredient("pm-glass-pane", 16),
       PM.ingredient("advanced-circuit", 4)
     },
-    result = "pm-factorian-bacteria-greenhouse"
+    results = {
+      PM.product("pm-factorian-bacteria-greenhouse", 1)
+    }
   },
   {
     type = "recipe",
@@ -827,7 +884,7 @@ data:extend({
     },
     results =         --hi smelloy
     {
-      { "pm-francium-ultracool-centrifugal-kabbalism", 1 }
+      PM.product("pm-francium-ultracool-centrifugal-kabbalism", 1)
     }
   },
   {
@@ -977,7 +1034,9 @@ data:extend({
       PM.ingredient("pm-stainless-steel-alloy", 2),
       PM.ingredient("fast-transport-belt", 1),
     },
-    result = "pm-advanced-transport-belt"
+    results = {
+      PM.product("pm-advanced-transport-belt", 1)
+    }
   },
   {
     type = "recipe",
@@ -991,8 +1050,9 @@ data:extend({
       PM.ingredient("pm-solid-lubricant", 4),
       PM.ingredient("pm-stainless-steel-alloy", 2),
     },
-    result = "pm-advanced-underground-belt",
-    result_count = 2
+    results = {
+      PM.product("pm-advanced-underground-belt", 2)
+    }
   },
   {
     type = "recipe",
@@ -1006,7 +1066,9 @@ data:extend({
       PM.ingredient("pm-solid-lubricant", 6),
       PM.ingredient("pm-mini-motor", 2)
     },
-    result = "pm-advanced-splitter"
+    results = {
+      PM.product("pm-advanced-splitter", 1)
+    }
   },
 
 } --[[@as data.RecipePrototype[] ]])

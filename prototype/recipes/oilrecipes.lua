@@ -378,7 +378,9 @@ data:extend({
       PM.ingredient("sulfur", 2),
       PM.ingredient("lubricant", 20, "fluid")
     },
-    result = "pm-solid-lubricant"
+    results = {
+      PM.product("pm-solid-lubricant", 1)
+    }
   },
 
 
@@ -647,7 +649,9 @@ data:extend({
       PM.ingredient("pm-vanadium-oxide", 1),
       PM.ingredient("pm-catalyst-container", 1)
     },
-    result = "pm-vanadium-oxide-catalyst"
+    results = {
+      PM.product("pm-vanadium-oxide-catalyst", 1)
+    }
   },
   {
     type = "recipe",
@@ -662,7 +666,9 @@ data:extend({
       PM.ingredient("pm-carbon", 2),
       PM.ingredient("pm-catalyst-container", 1)
     },
-    result = "pm-palladium-catalyst"
+    results = {
+      PM.product("pm-palladium-catalyst", 1)
+    }
   },
   {
     type = "recipe",
@@ -676,7 +682,9 @@ data:extend({
       PM.ingredient("pm-cobalt-plate", 2),
       PM.ingredient("pm-catalyst-container", 1)
     },
-    result = "pm-cobalt-catalyst"
+    results = {
+      PM.product("pm-cobalt-catalyst", 1)
+    }
   },
   {
     type = "recipe",
@@ -692,7 +700,9 @@ data:extend({
       PM.ingredient("pm-oxygen-gas", 20, "fluid"),
       PM.ingredient("pm-catalyst-container", 1)
     },
-    result = "pm-yttrium-catalyst"
+    results = {
+      PM.product("pm-yttrium-catalyst", 1)
+    }
   },
   {
     type = "recipe",
@@ -705,7 +715,9 @@ data:extend({
       PM.ingredient("empty-barrel", 1),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
-    result = "pm-empty-fuel-canister"
+    results = {
+      PM.product("pm-empty-fuel-canister", 1)
+    }
   },
   {
     type = "recipe",
@@ -720,7 +732,9 @@ data:extend({
       PM.ingredient("solid-fuel", 1),
       PM.ingredient("pm-legendary-diesel", 40, "fluid")
     },
-    result = "pm-diesel-canister"
+    results = {
+      PM.product("pm-diesel-canister", 1)
+    }
   },
   {
     type = "recipe",
@@ -735,7 +749,9 @@ data:extend({
       PM.ingredient("solid-fuel", 1),
       PM.ingredient("pm-kerosene", 40, "fluid")
     },
-    result = "pm-kerosene-canister"
+    results = {
+      PM.product("pm-kerosene-canister", 1)
+    }
   },
   {
     type = "recipe",
@@ -750,7 +766,9 @@ data:extend({
       PM.ingredient("solid-fuel", 1),
       PM.ingredient("pm-petrol", 40, "fluid")
     },
-    result = "pm-petrol-canister"
+    results = {
+      PM.product("pm-petrol-canister", 1)
+    }
   },
   {
     type = "recipe",
@@ -762,7 +780,9 @@ data:extend({
     {
       PM.ingredient("pm-vulcanised-rubber", 4),
     },
-    result = "pm-catalyst-container"
+    results = {
+      PM.product("pm-catalyst-container", 1)
+    }
   },
 
   -- Oil Cracking/Reforming

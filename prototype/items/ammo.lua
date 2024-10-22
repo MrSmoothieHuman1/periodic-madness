@@ -42,7 +42,7 @@ data:extend({
       },
       {
         type = "ammo",
-        name = "pm-geneva's-neglection-magazine",
+        name = "pm-genevas-neglection-magazine",
         icon = "__periodic-madness__/graphics/icons/geneva's-neglection-magazine.png",
         icon_size = 64,
         ammo_type =
@@ -139,7 +139,7 @@ data:extend({
     },
     {
         type = "ammo",
-        name = "pm-geneva's-neglection-shotgun-shell",
+        name = "pm-genevas-neglection-shotgun-shell",
         icon = "__periodic-madness__/graphics/icons/geneva's-neglection-shell.png",
         icon_size = 64, 
         ammo_type =
@@ -328,7 +328,7 @@ data:extend({
 },
 {
   type = "ammo",
-  name = "pm-geneva's-neglection-shotgun-slug",
+  name = "pm-genevas-neglection-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/geneva's-neglection-slug.png",
   icon_size = 64, 
   ammo_type =

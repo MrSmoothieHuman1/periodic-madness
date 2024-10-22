@@ -1,3 +1,4 @@
+local PM = require("library")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local red_belt = {r = 0.878, g = 0.169, b = 0.169}
@@ -18,41 +19,6 @@ local pm_lab_inputs =
   "utility-science-pack",
   "space-science-pack",
 }
-
--- HACK: Remove this when we finally get 2.0 and official deprecation of hr
----@param pictures data.ConnectableEntityGraphics
----@return data.ConnectableEntityGraphics
-local function fix_heatpipes(pictures)
-  ---@param sprite data.Sprite|data.SpriteSheet
-  local function fix(sprite)
-    if sprite.layers then
-      for _, sprite_layer in pairs(sprite.layers) do
-        fix(sprite_layer)
-      end
-      return
-    end
-
-    sprite.hr_version = nil
-    sprite.width = sprite.width * 2
-    sprite.height = sprite.height * 2
-    sprite.scale = 0.5
-  end
-  for key, variations in pairs(pictures--[[@as table<string,data.SpriteVariations>]]) do
-    if variations[1] then
-      ---@cast variations data.Sprite[]
-      for _, variation in pairs(variations) do
-        fix(variation)
-      end
-    elseif variations.sheet then
-      ---@cast variations data.SpriteVariations.struct
-      fix(variations.sheet)
-    else
-      ---@cast variations data.SpriteSheet
-      fix(variations)
-    end
-  end
-  return pictures
-end
 
 function pm_electric_mining_drill2_animation()
   return
@@ -88,19 +54,39 @@ function pm_electric_mining_drill_horizontal2_animation()
     scale = 0.5
   }
 end
-orange_fast_belt_animation_set =
-{
-  animation_set =
-  {
-    filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
-    priority = "extra-high",
-    width = 128,
-    height = 128,
-    scale = 0.5,
-    frame_count = 32,
-    direction_count = 20
-  }
-}
+--This is here because it no longer exists globally
+local fast_belt_animation_set = {animation_set=util.empty_animation(1)}
+local orange_fast_belt_animation_set = {animation_set=util.empty_animation(1)}
+-- Commented out because it should get replaced by the coloring code anyways
+-- TODO: Remove the files as well?
+-- {
+--   animation_set =
+--   {
+--     filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
+--     priority = "extra-high",
+--     width = 128,
+--     height = 128,
+--     scale = 0.5,
+--     frame_count = 32,
+--     direction_count = 20
+--   }
+-- }
+local high_density_animation_set = {animation_set=util.empty_animation(1)}
+-- Commented out because it should get replaced by the coloring code anyways
+-- TODO: Remove the files as well?
+-- {
+--   animation_set =
+--   {
+--     direction_count = 20,
+--     filename =
+--     "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
+--     frame_count = 16,
+--     height = 128,
+--     priority = "extra-high",
+--     scale = 0.5,
+--     width = 128
+--   }
+-- }
 
 data:extend({
 
@@ -145,7 +131,7 @@ data:extend({
       type = "burner",
       fuel_category = "pm-oxidiser",
       effectivity = 1,
-      emissions_per_minute = 3,
+      emissions_per_minute = {pollution = 3},
       fuel_inventory_size = 1,
       light_flicker =
       {
@@ -339,7 +325,7 @@ data:extend({
       fuel_category = "chemical",
       effectivity = 1,
       fuel_inventory_size = 1,
-      emissions_per_minute = 6,
+      emissions_per_minute = {pollution = 6},
     },
     working_sound =
     {
@@ -361,12 +347,18 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/water-extractor.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation", "filter-directions" },
-    collision_mask = { "object-layer", "train-layer" },                         -- collide just with object-layer and train-layer which don't collide with water, this allows us to build on 1 tile wide ground
-    center_collision_mask = { "water-tile", "object-layer", "player-layer" },   -- to test that tile directly under the pump is ground
-    fluid_box_tile_collision_test = { "ground-tile" },
-    adjacent_tile_collision_test = { "water-tile" },
-    adjacent_tile_collision_mask = { "ground-tile" },   -- to prevent building on edge of map :(
-    adjacent_tile_collision_box = { { -1, -2 }, { 1, -1 } },
+    collision_mask = {layers = {
+      -- collide just with object-layer and train-layer which don't collide with water, this allows us to build on 1 tile wide ground
+      object=true,
+      train=true,
+      is_object=true,
+      is_lower_object=true
+    }},
+    tile_buildability_rules =
+    {
+      {area = {{-0.4, -0.4}, {0.4, 0.4}}, required_tiles = {layers={ground_tile=true}}, colliding_tiles = {layers={water_tile=true}}, remove_on_collision = true},
+      {area = {{-1, -2}, {1, -1}}, required_tiles = {layers={water_tile=true}}, colliding_tiles = {layers={}}},
+    },
     minable = { mining_time = 0.1, result = "pm-water-extractor" },
     max_health = 150,
     corpse = "offshore-pump-remnants",
@@ -417,7 +409,9 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    min_perceived_performance = 0.5,
+    perceived_performance = {
+      minimum = 0.5
+    },
     always_draw_fluid = true,
     graphics_set =
     {
@@ -532,7 +526,6 @@ data:extend({
     name = "pm-stainless-steel-storage-tank",
     icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-tank.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation" },
     minable = { mining_time = 0.6, result = "pm-stainless-steel-storage-tank" },
     max_health = 1200,
@@ -657,7 +650,6 @@ data:extend({
     name = "pm-dirty-boiler",
     icon = "__periodic-madness__/graphics/icons/buildings/dirty-boiler.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.4, result = "pm-dirty-boiler" },
     max_health = 200,
@@ -716,7 +708,7 @@ data:extend({
       fuel_category = "chemical",
       effectivity = 1,
       fuel_inventory_size = 1,
-      emissions_per_minute = 30,
+      emissions_per_minute = {pollution = 30},
       light_flicker =
       {
         color = { 0, 0, 0 },
@@ -970,17 +962,11 @@ data:extend({
     burning_cooldown = 20,
     water_reflection = boiler_reflection()
   },
-} --[[@as data.EntityPrototype]])
--- NOTE: What the fuck is this? Why do you split the data:extend?
---- I can understand if you wanted to separate ideas, but without any comments helping with that? useless!
-data:extend({
-
   {
     type = "underground-belt",
     name = "pm-high-density-underground-belt",
     icon = "__periodic-madness__/graphics/icons/buildings/high-density-underground-belt.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "pm-high-density-underground-belt" },
     max_health = 250,
@@ -1032,20 +1018,7 @@ data:extend({
       use_doppler_shift = false
     },
     animation_speed_coefficient = 32,
-    belt_animation_set =
-    {
-      animation_set =
-      {
-        direction_count = 20,
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
-        frame_count = 16,
-        height = 128,
-        priority = "extra-high",
-        scale = 0.5,
-        width = 128
-      }
-    },
+    belt_animation_set = high_density_animation_set,
     fast_replaceable_group = "transport-belt",
     speed = 0.1875,
     structure =
@@ -1133,7 +1106,6 @@ data:extend({
     name = "pm-high-density-splitter",
     icon = "__periodic-madness__/graphics/icons/buildings/high-density-splitter.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "pm-high-density-splitter" },
     max_health = 250,
@@ -1152,20 +1124,7 @@ data:extend({
     animation_speed_coefficient = 32,
     structure_animation_speed_coefficient = 1.2,
     structure_animation_movement_cooldown = 10,
-    belt_animation_set =
-    {
-      animation_set =
-      {
-        direction_count = 20,
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
-        frame_count = 16,
-        height = 128,
-        priority = "extra-high",
-        scale = 0.5,
-        width = 128
-      }
-    },
+    belt_animation_set = high_density_animation_set,
     fast_replaceable_group = "transport-belt",
     speed = 0.1875,
     structure =
@@ -1255,7 +1214,6 @@ data:extend({
     name = "pm-advanced-transport-belt",
     icon = "__base__/graphics/icons/fast-transport-belt.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "pm-advanced-transport-belt" },
     max_health = 170,
@@ -1297,7 +1255,6 @@ data:extend({
     name = "pm-advanced-underground-belt",
     icon = "__base__/graphics/icons/fast-underground-belt.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "pm-advanced-underground-belt" },
     max_health = 170,
@@ -1431,7 +1388,6 @@ data:extend({
     name = "pm-advanced-splitter",
     icon = "__base__/graphics/icons/fast-splitter.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "pm-advanced-splitter" },
     max_health = 170,
@@ -1535,7 +1491,6 @@ data:extend({
     name = "pm-high-density-transport-belt",
     icon = "__periodic-madness__/graphics/icons/buildings/high-density-transport-belt.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "pm-high-density-transport-belt" },
     max_health = 250,
@@ -1563,20 +1518,7 @@ data:extend({
     },
 
     animation_speed_coefficient = 32,
-    belt_animation_set =
-    {
-      animation_set =
-      {
-        direction_count = 20,
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
-        frame_count = 16,
-        height = 128,
-        priority = "extra-high",
-        scale = 0.5,
-        width = 128
-      }
-    },
+    belt_animation_set = high_density_animation_set,
     related_underground_belt = "pm-high-density-underground-belt",
     fast_replaceable_group = "transport-belt",
     speed = 0.1875,
@@ -1652,7 +1594,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 1.5,
+      emissions_per_minute = {pollution = 1.5},
     },
     working_sound =
     {
@@ -1721,7 +1663,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
     },
     working_sound =
     {
@@ -1787,7 +1729,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      emissions_per_minute = 2.5,
+      emissions_per_minute = {pollution = 2.5},
       fuel_inventory_size = 1,
       fuel_category = "chemical",
       light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
@@ -1833,19 +1775,15 @@ data:extend({
     dying_explosion = "oil-refinery-explosion",
     collision_box = { { -1.9, -1.9 }, { 1.9, 1.9 } },
     selection_box = { { -2, -2 }, { 2, 2 } },
-    module_specification =
-    {
-      module_slots = 3
-    },
-    scale_entity_info_icon = true,
-    allowed_effects = { "consumption", "speed", "pollution", "productivity" },
+    module_slots = 3,
+    allowed_effects = PM.all_effects(),
     crafting_categories = { "pm-fractional-distillation" },
     crafting_speed = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 12
+      emissions_per_minute = {pollution = 12}
     },
     energy_usage = "500kW",
     animation =
@@ -1966,17 +1904,14 @@ data:extend({
     corpse = "pm-crusher-1",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-crushing" },
-    module_specification =
-    {
-      module_slots = 2
-    },
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
+    module_slots = 2,
+    allowed_effects = PM.all_effects(),
     crafting_speed = 1.5,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
     },
     energy_usage = "150KW",
     next_upgrade = "pm-crusher-2",
@@ -2024,17 +1959,14 @@ data:extend({
     corpse = "pm-crusher-2",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-crushing" },
-    module_specification =
-    {
-      module_slots = 4
-    },
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
+    module_slots = 4,
+    allowed_effects = PM.all_effects(),
     crafting_speed = 2.5,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 1,
+      emissions_per_minute = {pollution = 1},
     },
     energy_usage = "300KW",
     fast_replaceable_group = "pm-crusher",
@@ -2080,17 +2012,14 @@ data:extend({
     corpse = "pm-atmospheric-condenser",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-atmospheric-condensing" },
-    module_specification =
-    {
-      module_slots = 3
-    },
-    allowed_effects = { "speed", "consumption", "pollution" },
+    module_slots = 3,
+    allowed_effects = PM.all_effects_but("productivity"),
     crafting_speed = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = -2
+      emissions_per_minute = {pollution = -2}
     },
     energy_usage = "500KW",
     animation =
@@ -2172,11 +2101,8 @@ data:extend({
     corpse = "pm-fluid-catalyst-cracker",
     crafting_categories = { "pm-cracking" },
     crafting_speed = 1,
-    module_specification =
-    {
-      module_slots = 2
-    },
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    module_slots = 2,
+    allowed_effects = PM.all_effects(),
     energy_source =
     {
       type = "electric",
@@ -2350,7 +2276,7 @@ data:extend({
     max_health = 300,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
-    allowed_effects = { "consumption", "speed", "pollution", "productivity" },
+    allowed_effects = PM.all_effects(),
     map_color = {r = 0.659, g = 0.106, b = 0.106},
     working_sound =
     {
@@ -2382,7 +2308,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 6,
+      emissions_per_minute = {pollution = 6},
     },
     animation =
     {
@@ -2442,7 +2368,7 @@ data:extend({
     max_health = 300,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
-    allowed_effects = { "consumption", "speed", "pollution", "productivity" },
+    allowed_effects = PM.all_effects(),
     map_color = {r = 0.106, g = 0.647, b = 0.659},
     working_sound =
     {
@@ -2515,7 +2441,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
       fluid_box =
       {
         production_type = "input",
@@ -2538,12 +2464,9 @@ data:extend({
     max_health = 600,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
-    allowed_effects = { "consumption", "speed", "pollution", "productivity" },
+    allowed_effects = PM.all_effects(),
     map_color = {r = 0.659, g = 0.106, b = 0.106},
-    module_specification =
-    {
-      module_slots = 1,
-    },
+    module_slots = 1,
     working_sound =
     {
       sound =
@@ -2574,7 +2497,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 8,
+      emissions_per_minute = {pollution = 8},
     },
     animation =
     {
@@ -2634,12 +2557,9 @@ data:extend({
     max_health = 600,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
-    allowed_effects = { "consumption", "speed", "pollution", "productivity" },
+    allowed_effects = PM.all_effects(),
     map_color = {r = 0.106, g = 0.647, b = 0.659},
-    module_specification =
-    {
-      module_slots = 1,
-    },
+    module_slots = 1,
     working_sound =
     {
       sound =
@@ -2711,7 +2631,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      emissions_per_minute = 1,
+      emissions_per_minute = {pollution = 1},
       fluid_box =
       {
         production_type = "input",
@@ -2738,11 +2658,8 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     crafting_categories = { "pm-circuitry" },
-    module_specification =
-    {
-      module_slots = 4
-    },
-    allowed_effects = { "speed", "consumption", "productivity", "pollution" },
+    module_slots = 4,
+    allowed_effects = PM.all_effects(),
     crafting_speed = 2.5,
     energy_source =
     {
@@ -2750,7 +2667,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      emissions_per_minute = 2,
+      emissions_per_minute = {pollution = 2},
       fluid_box =
       {
         production_type = "input",
@@ -2793,7 +2710,7 @@ data:extend({
         --   animation_speed = 0.25,
         --   scale = 0.575
         -- },
-        util.empty_sprite(32)
+        util.empty_animation(32)
       }
     },
   },
@@ -2802,7 +2719,7 @@ data:extend({
     name = "pm-stainless-steel-pipe",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-pipe.png",
-    flags = { "placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving" },
+    flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.2, result = "pm-stainless-steel-pipe" },
     max_health = 800,
     corpse = "pipe-remnants",
@@ -2836,7 +2753,7 @@ data:extend({
         { position = { -1, 0 } },
       },
     },
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    impact_category = "metal",
     pictures =
     {
       straight_vertical_single =
@@ -3103,7 +3020,7 @@ data:extend({
         },
       },
     },
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    impact_category = "metal",
     pictures =
     {
       up =
@@ -3155,10 +3072,7 @@ data:extend({
     max_health = 600,
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     energy_source =
     {
       type = "electric",
@@ -3281,6 +3195,7 @@ data:extend({
     selection_box = { { -1, -1 }, { 1, 1 } },
     burner =
     {
+      type = "burner",
       fuel_category = "pm-voltatic-piles",
       effectivity = 1,
       fuel_inventory_size = 1,
@@ -3457,11 +3372,8 @@ data:extend({
     crafting_categories = { "pm-molding", "pm-advanced-molding" },
     crafting_speed = 1,
     energy_usage = "320kW",
-    module_specification =
-    {
-      module_slots = 2
-    },
-    allowed_effects = { "speed", "consumption", "pollution" },
+    module_slots = 2,
+    allowed_effects = PM.all_effects(),
     energy_source =
     {
       type = "fluid",
@@ -3516,11 +3428,8 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    module_specification =
-    {
-      module_slots = 2
-    },
-    allowed_effects = { "speed", "consumption", "pollution" },
+    module_slots = 2,
+    allowed_effects = PM.all_effects(),
     source_inventory_size = 1,
     result_inventory_size = 1,
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
@@ -3606,16 +3515,13 @@ data:extend({
     crafting_categories = { "pm-washing" },
     crafting_speed = 1,
     energy_usage = "420kW",
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2
-    },
+    allowed_effects = PM.all_effects(),
+    module_slots = 2,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 1,
+      emissions_per_minute = {pollution = 1},
     },
     working_sound =
     {
@@ -3679,14 +3585,14 @@ data:extend({
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
     crafting_categories = { "pm-greenhousing" },
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
+    allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "650kW",
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 0,
+      emissions_per_minute = {pollution = 0},
     },
     animation =
     {
@@ -3834,11 +3740,8 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2
-    },
+    allowed_effects = PM.all_effects(),
+    module_slots = 2,
     energy_source =
     {
       type = "electric",
@@ -5410,16 +5313,13 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      emissions_per_minute = 14,
+      emissions_per_minute = {pollution = 14},
       usage_priority = "secondary-input"
     },
     energy_usage = "120kW",
     resource_searching_radius = 2.49 * 1.24 + 0.01,
     vector_to_place_result = { 0, -1.85 },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    module_slots = 4,
     radius_visualisation_picture =
     {
       filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
@@ -5453,11 +5353,8 @@ data:extend({
     collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
-    module_specification =
-    {
-      module_slots = 3
-    },
+    allowed_effects = PM.all_effects(),
+    module_slots = 3,
     animation =
     {
       layers =
@@ -5495,7 +5392,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 3,
+      emissions_per_minute = {pollution = 3},
     },
     working_sound =
     {
@@ -5556,11 +5453,8 @@ data:extend({
     corpse = "pm-crystallizer",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-crystallisation" },
-    module_specification =
-    {
-      module_slots = 4
-    },
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
+    module_slots = 4,
+    allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "400KW",
     animation =
@@ -5683,11 +5577,8 @@ data:extend({
     corpse = "pm-cyclotron",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-cyclotroning" },
-    module_specification =
-    {
-      module_slots = 2
-    },
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
+    module_slots = 2,
+    allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "800KW",
     animation =
@@ -5761,7 +5652,6 @@ data:extend({
     name = "pm-heat-exchanger-2",
     icon = "__base__/graphics/icons/heat-boiler.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.8, result = "heat-exchanger" },
     max_health = 600,
@@ -5999,7 +5889,7 @@ data:extend({
     fire_glow = {},
     burning_cooldown = 20,
     water_reflection = boiler_reflection()
-  },
+  }--[[@as data.BoilerPrototype]],
   {
     type = "furnace",
     name = "pm-burn-inator",
@@ -6015,18 +5905,15 @@ data:extend({
     crafting_categories = { "pm-burnining" },
     source_inventory_size = 0,
     result_inventory_size = 1,
-    module_specification =
-    {
-      module_slots = 2
-    },
-    allowed_effects = { "speed", "consumption" },
+    module_slots = 2,
+    allowed_effects = PM.effects("speed", "consumption"),
     crafting_speed = 0.5,
     energy_usage = "800KW",
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 30,
+      emissions_per_minute = {pollution = 30},
     },
     animation =
     {
@@ -6091,7 +5978,6 @@ data:extend({
     name = "pm-heat-pipe-1",
     icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-1.png",
     icon_size = 64,
-    icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.1, result = "pm-heat-pipe-1" },
     max_health = 300,
@@ -6157,7 +6043,7 @@ data:extend({
       }
     },
 
-    connection_sprites = fix_heatpipes(make_heat_pipe_pictures(
+    connection_sprites = make_heat_pipe_pictures(
       "__periodic-madness__/graphics/entities/buildings/heat-pipe-1/", "heat-pipe",
       {
         single = { name = "straight-vertical-single", ommit_number = true },
@@ -6177,7 +6063,7 @@ data:extend({
         ending_right = {},
         ending_left = {}
       }
-    )),
+    ),
 
     heat_glow_sprites = make_heat_pipe_pictures(
       "__base__/graphics/entity/heat-pipe/", "heated",
@@ -6436,17 +6322,14 @@ data:extend({
     alert_icon_shift = util.by_pixel(-3, -12),
     crafting_speed = 1,
     crafting_categories = { "pm-franciuming" },
-    module_specification =
-    {
-      module_slots = 6
-    },
-    allowed_effects = { "speed", "consumption", "pollution", "productivity" },
+    module_slots = 6,
+    allowed_effects = PM.all_effects(),
     energy_usage = "1.17MW",
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 4,
+      emissions_per_minute = {pollution = 4},
     },
     animation =
     {
@@ -6505,11 +6388,8 @@ data:extend({
     max_health = 400,
     corpse = "pm-evaporator-2",
     dying_explosion = "assembling-machine-1-explosion",
-    allowed_effects = { "consumption", "speed", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2,
-    },
+    allowed_effects = PM.all_effects(),
+    module_slots = 2,
     resistances =
     {
       {
@@ -6569,7 +6449,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 0.25,
+      emissions_per_minute = {pollution = 0.25},
     },
     working_sound =
     {
@@ -6600,14 +6480,11 @@ data:extend({
     energy_source = { type = "void" },
     crafting_speed = 2,
     crafting_categories = { "pm-leaching" },
-    emissions_per_minute = 10,
+    emissions_per_minute = {pollution = 10},
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
-    allowed_effects = { "consumption", "speed", "pollution", "productivity" },
-    module_specification =
-    {
-      module_slots = 2,
-    },
+    allowed_effects = PM.all_effects(),
+    module_slots = 2,
     animation =
     {
       layers =
@@ -6721,11 +6598,8 @@ data:extend({
     collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
-    module_specification =
-    {
-      module_slots = 4
-    },
+    allowed_effects = PM.all_effects(),
+    module_slots = 4,
     animation =
     {
       layers =
@@ -6735,8 +6609,8 @@ data:extend({
           priority = "high",
           width = 214,
           height = 226,
-          frame_count = 32,
-          line_length = 8,
+          frame_count = 24,
+          line_length = 6,
           animation_speed = 0.7,
           shift = util.by_pixel(0, -4),
           scale = 0.5
@@ -6749,7 +6623,7 @@ data:extend({
           height = 214,
           line_length = 1,
           frame_count = 1,
-          repeat_count = 32,
+          repeat_count = 24,
           draw_as_shadow = true,
           shift = util.by_pixel(16, -4),
           scale = 0.5
@@ -6763,7 +6637,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 3.5,
+      emissions_per_minute = {pollution = 3.5},
     },
     working_sound =
     {
@@ -6873,6 +6747,7 @@ data:extend({
     selection_box = { { -1, -1 }, { 1, 1 } },
     burner =
     {
+      type = "burner",
       fuel_category = "pm-charged-batteries",
       effectivity = 1,
       fuel_inventory_size = 1,
@@ -6922,7 +6797,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    collision_mask = { "item-layer", "object-layer", "water-tile" },
+    collision_mask = {layers = {
+      item = true,
+      meltable = true,
+      object = true,
+      -- player = true, -- Make it so you can walk over it!
+      water_tile = true,
+      is_object = true,
+      is_lower_object = true,
+    }},
     minable = { mining_time = 0.5, result = "pm-walkable-solar-panel-1" },
     max_health = 400 + 1,
     corpse = "pm-solar-panel-2-remnants",
@@ -6980,7 +6863,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    collision_mask = { "item-layer", "object-layer", "water-tile" },
+    collision_mask = {layers = {
+      item = true,
+      meltable = true,
+      object = true,
+      -- player = true, -- Make it so you can walk over it!
+      water_tile = true,
+      is_object = true,
+      is_lower_object = true,
+    }},
     minable = { mining_time = 0.8, result = "pm-walkable-solar-panel-2" },
     max_health = 400 + 1,
     corpse = "pm-solar-panel-2-remnants",
@@ -7086,7 +6977,7 @@ data:extend({
     },
     energy_usage = "35kW",
     pumping_speed = 400,
-    vehicle_impact_sound = sounds.generic_impact,
+    impact_category = "metal-large",
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     animations =
@@ -7455,11 +7346,8 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-1.5, -1.9}, {1.5, 1.5}},
     fast_replaceable_group = "pm-chemical-plant",
-    module_specification =
-    {
-      module_slots = 4
-    },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    module_slots = 4,
+    allowed_effects = PM.all_effects(),
 
     animation = make_4way_animation_from_spritesheet({
       layers =
@@ -7616,7 +7504,7 @@ data:extend({
         }
       }
     },
-    vehicle_impact_sound = sounds.generic_impact,
+    impact_category = "metal-large",
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     working_sound =
@@ -7647,7 +7535,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 3
+      emissions_per_minute = {pollution = 3}
     },
     energy_usage = "350kW",
     crafting_categories = {"chemistry"},
@@ -7720,7 +7608,7 @@ data:extend({
       orientation_to_variation = true
     }
   },
---[[@as data.EntityPrototype]]})
+}--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
 -- selection_box = {{-2.2, -2.2}, {2.5, 2.6}}, first two are up and down, third is left, fourth is right
@@ -7889,7 +7777,7 @@ data.raw["boiler"]["heat-exchanger"].fast_replaceable_group = "pm-heat-exchanger
 data.raw["boiler"]["heat-exchanger"].next_upgrade = "pm-heat-exchanger-2"
 data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 240
 
-data.raw["assembling-machine"]["chemical-plant"].module_specification = {module_slots = 2}
+data.raw["assembling-machine"]["chemical-plant"].module_slots = 2
 data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-chemical-plant"
 data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-plant-2"
 
@@ -8132,8 +8020,8 @@ data.raw["underground-belt"]["fast-underground-belt"].map_color = orange_belt
 data.raw["splitter"]["fast-splitter"].map_color = orange_belt
 data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
 data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 12 --TODO: Confirm this is what you wanted
 data.raw["splitter"]["express-splitter"].speed = 0.125
-data.raw["splitter"]["express-splitter"].max_length = 12
 data.raw["splitter"]["fast-splitter"].next_upgrade = "pm-advanced-splitter"
 data.raw["transport-belt"]["fast-transport-belt"].next_upgrade = "pm-advanced-transport-belt"
 data.raw["underground-belt"]["fast-underground-belt"].next_upgrade = "pm-advanced-underground-belt"
