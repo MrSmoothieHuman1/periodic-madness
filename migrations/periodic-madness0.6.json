@@ -1,0 +1,23 @@
+{
+	"item":
+	[
+		["pm-geneva's-neglection-magazine", "pm-genevas-neglection-magazine"],
+		["pm-geneva's-neglection-shotgun-shell", "pm-genevas-neglection-shotgun-shell"],
+		["pm-geneva's-neglection-shotgun-slug", "pm-genevas-neglection-shotgun-slug"],
+
+		["pm-mixed-bastnäsite", "pm-mixed-bastnasite"],
+		["pm-bastnäsite-Y", "pm-bastnasite-Y"],
+		["pm-bastnäsite-C", "pm-bastnasite-C"],
+		["pm-basic-bastnäsite", "pm-basic-bastnasite"],
+
+		["pm-lorándite", "pm-lorandite"]
+	],
+	"recipe": [
+		["pm-geneva's-neglection-shotgun-shell", "pm-genevas-neglection-shotgun-shell"],
+		["pm-geneva's-neglection-shotgun-slug", "pm-genevas-neglection-shotgun-slug"],
+
+		["pm-mixed-bastnäsite-seperation", "pm-mixed-bastnasite-seperation"],
+		["pm-bastnäsite-Y-seperation", "pm-bastnasite-Y-seperation"],
+		["pm-bastnäsite-C-seperation", "pm-bastnasite-C-seperation"]
+	]
+}

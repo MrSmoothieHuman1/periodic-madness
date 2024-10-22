@@ -2600,9 +2600,9 @@ data:extend({
       PM.unlock_recipe("pm-factorian-cyanobacteria-filtering"),
       PM.unlock_recipe("pm-melatonin-harvesting"),
       PM.unlock_recipe("pm-phosgene"),
-      PM.unlock_recipe("pm-geneva's-neglection-magazine"),
-      PM.unlock_recipe("pm-geneva's-neglection-shotgun-shell"),
-      PM.unlock_recipe("pm-geneva's-neglection-shotgun-slug"),
+      PM.unlock_recipe("pm-genevas-neglection-magazine"),
+      PM.unlock_recipe("pm-genevas-neglection-shotgun-shell"),
+      PM.unlock_recipe("pm-genevas-neglection-shotgun-slug"),
       PM.unlock_recipe("poison-capsule"),
       PM.unlock_recipe("slowdown-capsule")
     },
@@ -3407,10 +3407,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-basic-bastnäsite"),
-      PM.unlock_recipe("pm-mixed-bastnäsite-seperation"),
-      PM.unlock_recipe("pm-bastnäsite-Y-seperation"),
-      PM.unlock_recipe("pm-bastnäsite-C-seperation"),
+      PM.unlock_recipe("pm-basic-bastnasite"),
+      PM.unlock_recipe("pm-mixed-bastnasite-seperation"),
+      PM.unlock_recipe("pm-bastnasite-Y-seperation"),
+      PM.unlock_recipe("pm-bastnasite-C-seperation"),
       PM.unlock_recipe("pm-yttrium-fluoride"),
       PM.unlock_recipe("pm-yttrium"),
     },

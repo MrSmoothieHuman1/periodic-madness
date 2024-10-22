@@ -3,7 +3,7 @@ data:extend({
 
   {
     type = "item",
-    name = "pm-lorándite",
+    name = "pm-lorandite",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/lorandite.png",
     subgroup = "pm-thallium-ptm",
@@ -48,7 +48,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lorándite", 6),
+      PM.product("pm-lorandite", 6),
       PM.product("sulfur", 2)
     }
   } --[[@as data.RecipePrototype]],
@@ -68,7 +68,7 @@ data:extend({
       PM.ingredient("pm-gold-ore", 8),
       PM.ingredient("copper-ore", 8),
       PM.ingredient("pm-zinc-ore", 8),
-      PM.ingredient("pm-lorándite", 1),
+      PM.ingredient("pm-lorandite", 1),
       PM.ingredient("sulfuric-acid", 12, "fluid")
     },
     results =
