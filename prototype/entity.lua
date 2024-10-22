@@ -129,7 +129,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_category = "pm-oxidiser",
+      fuel_categories = {"pm-oxidiser"},
       effectivity = 1,
       emissions_per_minute = {pollution = 3},
       fuel_inventory_size = 1,
@@ -315,7 +315,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_category = "chemical",
+      fuel_categories = {"chemical"},
       effectivity = 1,
       fuel_inventory_size = 1,
       emissions_per_minute = {pollution = 6},
@@ -366,24 +366,26 @@ data:extend({
     },
     collision_box = { { -0.6, -1.05 }, { 0.6, 0.3 } },
     selection_box = { { -0.6, -1.49 }, { 0.6, 0.49 } },
+    fluid_source_offset = {0, -1},
     fluid_box =
     {
-      base_area = 1,
-      base_level = 1,
+      volume = 100,
       pipe_covers = pipecoverspictures(),
       production_type = "output",
-      filter = "pm-seawater",
       pipe_connections =
       {
         {
-          position = { 0, 1 },
-          type = "output"
+          position = {0, 0},
+          direction = defines.direction.south,
+          flow_direction = "output"
         }
       }
     },
     pumping_speed = 10,
     tile_width = 1,
     tile_height = 1,
+    energy_usage = "1kW",
+    energy_source = {type = "void"},
     {
       sound =
       {
@@ -398,9 +400,7 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    perceived_performance = {
-      minimum = 0.5
-    },
+    perceived_performance = {minimum = 0.5},
     always_draw_fluid = true,
     graphics_set =
     {
@@ -525,14 +525,14 @@ data:extend({
     fast_replaceable_group = "pm-storage-tank",
     fluid_box =
     {
-      base_area = 500,
+      volume = 500,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        { position = { -1, -2 } },
-        { position = { 2, 1 } },
-        { position = { 1, 2 } },
-        { position = { -2, -1 } }
+        { direction = defines.direction.north, position = {-1, -1} },
+        { direction = defines.direction.east, position = {1, 1} },
+        { direction = defines.direction.south, position = {1, 1} },
+        { direction = defines.direction.west, position = {-1, -1} }
       },
       hide_connection_info = true
     },
@@ -690,7 +690,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_category = "chemical",
+      fuel_categories = {"chemical"},
       effectivity = 1,
       fuel_inventory_size = 1,
       emissions_per_minute = {pollution = 30},
@@ -1713,7 +1713,7 @@ data:extend({
       type = "burner",
       emissions_per_minute = {pollution = 2.5},
       fuel_inventory_size = 1,
-      fuel_category = "chemical",
+      fuel_categories = {"chemical"},
       light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
     },
     crafting_categories = { "pm-crushing" },
@@ -1755,8 +1755,8 @@ data:extend({
     max_health = 550,
     corpse = "pm-fractional-distillator",
     dying_explosion = "oil-refinery-explosion",
-    collision_box = { { -1.9, -1.9 }, { 1.9, 1.9 } },
-    selection_box = { { -2, -2 }, { 2, 2 } },
+    collision_box = {{ -1.9, -1.9 }, { 1.9, 1.9 }},
+    selection_box = {{ -2, -2 }, { 2, 2 }},
     module_slots = 3,
     allowed_effects = PM.all_effects(),
     crafting_categories = { "pm-fractional-distillation" },
@@ -1798,14 +1798,14 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 5000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0.5, 2.3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0.5, 1.5}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-0.5, -2.3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-0.5, -1.5}}},
       },
 
       {
@@ -1824,7 +1824,7 @@ data:extend({
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = { flow_direction="output", direction = defines.direction.east, position = {-1.5, -0.5}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {-1.5, -0.5}}},
       },
       {
         production_type = "output",
@@ -3140,7 +3140,7 @@ data:extend({
     burner =
     {
       type = "burner",
-      fuel_category = "pm-voltatic-piles",
+      fuel_categories = {"pm-voltatic-piles"},
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
@@ -3148,7 +3148,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      fuel_category = "pm-voltatic-piles",
+      fuel_categories = {"pm-voltatic-piles"},
       usage_priority = "secondary-output",
       effectivity = 1,
     },
@@ -3327,7 +3327,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "pm-argon-gas",
-        pipe_connections = {{flow_direction = "input", direction = defines.direciton.north, position = { 0, -1 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = { 0, -1 } } },
       },
     },
     working_sound =
@@ -6007,7 +6007,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_category = "pm-polonium",
+      fuel_categories = {"pm-polonium"},
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
@@ -6633,7 +6633,7 @@ data:extend({
     burner =
     {
       type = "burner",
-      fuel_category = "pm-charged-batteries",
+      fuel_categories = {"pm-charged-batteries"},
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 0,
@@ -6641,7 +6641,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      fuel_category = "pm-charged-batteries",
+      fuel_categories = {"pm-charged-batteries"},
       usage_priority = "secondary-output",
       effectivity = 1,
     },
@@ -7523,7 +7523,7 @@ QuickFluidFix.fluid_boxes =
     pipe_picture = assembler2pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -1} }},
+    pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -7531,14 +7531,13 @@ QuickFluidFix.fluid_boxes =
     pipe_picture = assembler2pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 500,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {0, 1} }},
+    pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
     secondary_draw_orders = { north = -1 }
   },
-  off_when_no_fluid_recipe = true
 }
+data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes_off_when_no_fluid_recipe = true
 
-data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = { "basic-crafting", "crafting",
-  "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid" }
+data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = { "basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid" }
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   {
     {
@@ -7562,7 +7561,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
       pipe_picture = assembler3pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, } }},
+      pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, 0} }},
       secondary_draw_orders = { north = -1 }
     },
     {
@@ -7573,8 +7572,8 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
       pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
       secondary_draw_orders = { north = -1 }
     },
-  off_when_no_fluid_recipe = true
 }
+data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes_off_when_no_fluid_recipe = true
 
 data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids =
 {
