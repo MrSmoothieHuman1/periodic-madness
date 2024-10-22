@@ -12,7 +12,9 @@ data:extend({
       PM.ingredient("pm-oxygen-gas", 15, "fluid"),
       PM.ingredient("iron-plate", 2)
     },
-    result = "pm-hydrogen-fuel",
+    results = {
+      PM.product("pm-hydrogen-fuel", 1)
+    },
   },
   {
     type = "recipe",
@@ -22,8 +24,9 @@ data:extend({
     allow_productivity = true,
     ingredients = {PM.ingredient("coal", 2)},
     energy_required = 2,
-    result = "pm-carbon",
-    result_count = 10
+    results = {
+      PM.product("pm-carbon", 10)
+    }
   },
   {
     type = "recipe",
@@ -72,7 +75,7 @@ data:extend({
       PM.ingredient("iron-plate", 1),
       PM.ingredient("copper-cable", 1),
     },
-    {
+    results = {
       PM.product("pm-basic-integrated-circuit", 3)
     }
   },
@@ -110,8 +113,9 @@ data:extend({
       PM.ingredient("pm-basic-wiring", 2),
       PM.ingredient("pm-carbon", 8),
     },
-    result = "pm-transistors",
-    result_count = 2
+    results = {
+      PM.product("pm-transistors", 2)
+    }
   },
   {
     type = "recipe",
@@ -166,7 +170,9 @@ data:extend({
       PM.ingredient("pm-palladium-plate", 2),
       PM.ingredient("pm-fluid-breadboard", 1),
     },
-    result = "pm-advanced-circuit-breadboard",
+    results = {
+      PM.product("pm-advanced-circuit-breadboard", 1)
+    },
   },
   {
     type = "recipe",
@@ -182,8 +188,9 @@ data:extend({
       PM.ingredient("pm-polyethylene-plastic", 1),
       PM.ingredient("pm-gold-wire", 2),
     },
-    result = "pm-advanced-integrated-circuits",
-    result_count = 3
+    results = {
+      PM.product("pm-advanced-integrated-circuits", 3)
+    }
   },
 
   --red circuits are order "j" in pm-circuits
@@ -204,7 +211,9 @@ data:extend({
       PM.ingredient("pm-advanced-circuit-breadboard", 1),
       PM.ingredient("pm-cobalt-blue", 6)
     },
-    result = "pm-processing-breadboard",
+    results = {
+      PM.product("pm-processing-breadboard", 1)
+    },
   },
   {
     type = "recipe",
@@ -272,7 +281,9 @@ data:extend({
     order = "c",
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-glass-pane", 2) },
-    result = "pm-science-bottle"
+    results = {
+      PM.product("pm-science-bottle", 1)
+    }
   },
   {
     type = "recipe",
@@ -284,8 +295,9 @@ data:extend({
       PM.ingredient("pm-carbon", 50),
       PM.ingredient("iron-plate", 2),
     },
-    result = "pm-air-filter",
-    result_count = 2,
+    results = {
+      PM.product("pm-air-filter", 2)
+    }
   },
   {
     type = "recipe",
@@ -531,7 +543,7 @@ data:extend({
     },
     results =
     {
-      PM.ingredient("pm-coke", 5),
+      PM.product("pm-coke", 5),
     }
   },
   {
@@ -548,7 +560,7 @@ data:extend({
     },
     results =
     {
-      PM.ingredient("pm-coke", 5)
+      PM.product("pm-coke", 5)
     }
   },
   {
@@ -663,7 +675,9 @@ data:extend({
       PM.ingredient("iron-stick", 1),
       PM.ingredient("pm-nickel-plate", 2)
     },
-    result = "pm-basic-motor"
+    results = {
+      PM.product("pm-basic-motor", 1)
+    }
   },
   {
     type = "recipe",
@@ -691,7 +705,9 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-brass-plate", 2) },
-    result = "pm-brass-cog"
+    results = {
+      PM.product("pm-brass-cog", 1)
+    }
   },
   {
     type = "recipe",
@@ -1272,7 +1288,9 @@ data:extend({
     {
       PM.ingredient("pm-polyethylene-plastic", 4),
     },
-    result = "pm-flux-container"
+    results = {
+      PM.product("pm-flux-container", 1)
+    }
   },
   {
     type = "recipe",
@@ -1287,7 +1305,9 @@ data:extend({
       PM.ingredient("pm-coke", 2),
       PM.ingredient("pm-flourine", 4)
     },
-    result = "pm-filled-flux-container"
+    results = {
+      PM.product("pm-filled-flux-container", 1)
+    }
   },
   {
     type = "recipe",
@@ -2096,7 +2116,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-geneva's-neglection-magazine",
+    name = "pm-genevas-neglection-magazine",
     enabled = false,
     category = "crafting-with-fluid",
     subgroup = "ammo",
@@ -2112,7 +2132,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-geneva's-neglection-magazine", 2)
+      PM.product("pm-genevas-neglection-magazine", 2)
     }
   },
   {
@@ -2428,7 +2448,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-geneva's-neglection-shotgun-shell",
+    name = "pm-genevas-neglection-shotgun-shell",
     enabled = false,
     category = "crafting-with-fluid",
     subgroup = "pm-shotgun-ammo",
@@ -2444,7 +2464,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-geneva's-neglection-shotgun-shell", 2)
+      PM.product("pm-genevas-neglection-shotgun-shell", 2)
     }
   },
   {
@@ -2502,7 +2522,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-geneva's-neglection-shotgun-slug",
+    name = "pm-genevas-neglection-shotgun-slug",
     enabled = false,
     category = "crafting-with-fluid",
     subgroup = "pm-shotgun-ammo",
@@ -2518,7 +2538,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-geneva's-neglection-shotgun-slug", 1)
+      PM.product("pm-genevas-neglection-shotgun-slug", 1)
     }
   },
   {

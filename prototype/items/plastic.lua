@@ -1,3 +1,4 @@
+local PM = require("library")
 --for all items related to/are plastic
 
 data:extend({
@@ -65,12 +66,12 @@ PlasticChange.subgroup = "pm-plastics"
 PlasticChange.order = "d"
 PlasticChange.ingredients =
 {
-  { "pm-plastic-pellets", 5 },
-  { type = "fluid",       name = "pm-naptha", amount = 20 }
+  PM.ingredient("pm-plastic-pellets", 5),
+  PM.ingredient("pm-naptha", 20, "fluid")
 }
 PlasticChange.results =
 {
-  { "pm-polyethylene-plastic", 1 }
+  PM.product("pm-polyethylene-plastic", 1)
 }
 
 local PlasticItemChange = data.raw["item"]["plastic-bar"]

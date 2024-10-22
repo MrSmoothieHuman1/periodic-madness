@@ -1,3 +1,4 @@
+local PM = require("library")
 --all science packs
 
 data:extend({
@@ -71,7 +72,7 @@ local ATMScienceFix = data.raw["recipe"]["logistic-science-pack"]
 ATMScienceFix.energy_required = 6
 ATMScienceFix.results =
 {
-  { "logistic-science-pack", 1 }
+  PM.product("logistic-science-pack", 1)
 }
 
 local RNMScienceFix = data.raw["recipe"]["chemical-science-pack"]
@@ -79,7 +80,7 @@ local RNMScienceFix = data.raw["recipe"]["chemical-science-pack"]
 RNMScienceFix.energy_required = 6
 RNMScienceFix.results =
 {
-  { "chemical-science-pack", 1 }
+  PM.product("chemical-science-pack", 1)
 }
 
 data.raw["tool"]["chemical-science-pack"].order = "e"

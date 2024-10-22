@@ -15,7 +15,9 @@ data:extend({
       PM.ingredient("pm-copper-disc", 8),
       PM.ingredient("pm-zinc-disc", 8),
     },
-    result = "pm-uncharged-voltatic-pile"
+    results = {
+      PM.product("pm-uncharged-voltatic-pile", 1)
+    }
   },
   {
     type = "recipe",
@@ -50,7 +52,9 @@ data:extend({
       PM.ingredient("pm-copper-disc", 4),
       PM.ingredient("pm-zinc-disc", 4),
     },
-    result = "pm-uncharged-voltatic-pile"
+    results = {
+      PM.product("pm-uncharged-voltatic-pile", 1)
+    }
   },
   {
     type = "recipe",
