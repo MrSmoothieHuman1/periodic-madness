@@ -754,6 +754,9 @@ data:extend({
     order = "d",
     stack_size = 50,
     effect = { speed = 0.7, consumption = 0.9 },
+    inventory_move_sound = item_sounds.module_inventory_move,
+    pick_sound = item_sounds.module_inventory_pickup,
+    drop_sound = item_sounds.module_inventory_move,
     beacon_tint =
     {
       primary = { r = 0.441, g = 0.514, b = 1.000, a = 1.000 },     -- #70b6ffff
@@ -792,6 +795,9 @@ data:extend({
     order = "d",
     stack_size = 50,
     effect = { consumption = -0.6, speed = 0.25},
+    inventory_move_sound = item_sounds.module_inventory_move,
+    pick_sound = item_sounds.module_inventory_pickup,
+    drop_sound = item_sounds.module_inventory_move,
     beacon_tint =
     {
       primary = { 0, 1, 0 },
@@ -829,6 +835,9 @@ data:extend({
     tier = 4,
     order = "d",
     stack_size = 50,
+    inventory_move_sound = item_sounds.module_inventory_move,
+    pick_sound = item_sounds.module_inventory_pickup,
+    drop_sound = item_sounds.module_inventory_move,
     effect =
     {
       productivity = 0.14,
