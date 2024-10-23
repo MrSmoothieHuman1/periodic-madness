@@ -1885,7 +1885,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 2},
     },
-    energy_usage = "150KW",
+    energy_usage = "150kW",
     next_upgrade = "pm-crusher-2",
     fast_replaceable_group = "pm-crusher",
     animation =
@@ -1940,7 +1940,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 1},
     },
-    energy_usage = "300KW",
+    energy_usage = "300kW",
     fast_replaceable_group = "pm-crusher",
     animation =
     {
@@ -1993,7 +1993,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = -2}
     },
-    energy_usage = "500KW",
+    energy_usage = "500kW",
     animation =
     {
       layers =
@@ -2621,7 +2621,7 @@ data:extend({
       },
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
-    energy_usage = "625KW",
+    energy_usage = "625kW",
     animation =
     {
       layers =
@@ -3614,7 +3614,7 @@ data:extend({
         pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {2, 0}}},
       },
     },
-    energy_usage = "500KW",
+    energy_usage = "500kW",
     animation =
     {
       layers =
@@ -5374,7 +5374,7 @@ data:extend({
     module_slots = 4,
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
-    energy_usage = "400KW",
+    energy_usage = "400kW",
     animation =
     {
       layers =
@@ -5496,7 +5496,7 @@ data:extend({
     module_slots = 2,
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
-    energy_usage = "800KW",
+    energy_usage = "800kW",
     animation =
     {
       layers =
@@ -5815,7 +5815,7 @@ data:extend({
     module_slots = 2,
     allowed_effects = PM.effects("speed", "consumption"),
     crafting_speed = 0.5,
-    energy_usage = "800KW",
+    energy_usage = "800kW",
     energy_source =
     {
       type = "electric",
