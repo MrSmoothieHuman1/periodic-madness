@@ -2,7 +2,7 @@ data:extend({
 
   {
     type = "produce-achievement",
-    name = "pm-jesus-marie-they're-minerals",
+    name = "pm-jesus-marie-theyre-minerals",
     icon_size = 128 * 2,
     icon = "__periodic-madness__/graphics/achievements/jesus-marie-they're-minerals.png",
     amount = 1,

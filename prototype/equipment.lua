@@ -46,8 +46,10 @@ data:extend({
     },
     energy_source =
     {
-      type = "void",
-      usage_priority = "secondary-input"
+      type = "electric",
+      usage_priority = "secondary-input",
+      buffer_capacity = "0J",
+      input_flow_limit = "0kW",
     },
     charging_energy = "0kW",
     robot_limit = 20,
@@ -97,8 +99,10 @@ data:extend({
     },
     energy_source =
     {
-      type = "void",
-      usage_priority = "secondary-input"
+      type = "electric",
+      usage_priority = "secondary-input",
+      buffer_capacity = "0J",
+      input_flow_limit = "0kW",
     },
     charging_energy = "0kW",
     robot_limit = 40,
@@ -107,7 +111,6 @@ data:extend({
     spawn_and_station_shadow_height_offset = 0.5,
     charge_approach_distance = 0,
     robots_shrink_when_entering_and_exiting = true,
-
     recharging_animation =
     {
       filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
@@ -150,7 +153,7 @@ data:extend({
     {
       type = "electric",
       buffer_capacity = "35MJ",
-      input_flow_limit = "3500KW",
+      input_flow_limit = "3500kW",
       usage_priority = "secondary-input"
     },
     charging_energy = "1000kW",
@@ -160,6 +163,7 @@ data:extend({
     spawn_and_station_shadow_height_offset = 0,
     charge_approach_distance = 2.6,
     robots_shrink_when_entering_and_exiting = true,
+    charging_station_count_affected_by_quality = true,
     recharging_animation =
     {
       filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
@@ -201,7 +205,7 @@ data:extend({
     {
       type = "electric",
       buffer_capacity = "75MJ",
-      input_flow_limit = "5000KW",
+      input_flow_limit = "5000kW",
       usage_priority = "secondary-input"
     },
     charging_energy = "2000kW",
@@ -211,6 +215,7 @@ data:extend({
     spawn_and_station_shadow_height_offset = 0,
     charge_approach_distance = 2.6,
     robots_shrink_when_entering_and_exiting = true,
+    charging_station_count_affected_by_quality = true,
     recharging_animation =
     {
       filename = "__base__/graphics/entity/roboport/roboport-recharging.png",
@@ -312,7 +317,7 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].burner =
 {
   type = "burner",
   usage_priority = "primary-output",
-  fuel_category = "pm-fuel-rods",
+  fuel_categories = {"pm-fuel-rods"},
   fuel_inventory_size = 1,
   burnt_inventory_size = 1,
 }
