@@ -314,7 +314,7 @@ data:extend({
       PM.unlock_recipe("pm-fiberoptic-cable"),
       PM.unlock_recipe("pm-glass-resmelting")
     },
-    prerequisites = {"optics", "pm-pheonlic-resin-processing", "pm-gold-processing" },
+    prerequisites = {"lamp", "pm-pheonlic-resin-processing", "pm-gold-processing" },
     unit =
     {
       count = 75,

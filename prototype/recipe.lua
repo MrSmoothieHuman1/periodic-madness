@@ -76,7 +76,7 @@ data:extend({
       PM.ingredient("copper-cable", 1),
     },
     results = {
-      PM.product("pm-basic-integrated-circuit", 3)
+      PM.product("pm-basic-integrated-circuits", 3)
     }
   },
 

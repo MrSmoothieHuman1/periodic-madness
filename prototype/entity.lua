@@ -18,6 +18,9 @@ local pm_lab_inputs =
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
+
+  ---Please put this in the correct logical order
+  "pm-metalloid-science-pack",
 }
 
 function pm_electric_mining_drill2_animation()
@@ -3802,8 +3805,8 @@ data:extend({
     resource_categories = { "basic-solid" },
     corpse = "electric-mining-drill-remnants",
     dying_explosion = "electric-mining-drill-explosion",
-    collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
-    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    collision_box = {{-1.35, -1.35}, {1.35, 1.35}},
+    selection_box = {{-1.5,  -1.5 }, {1.5,  1.5 }},
     input_fluid_box =
     {
       pipe_picture = assembler2pipepictures(),
@@ -5551,6 +5554,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
+      fluid_usage_per_tick = 5, --HACK: Set a *real* value instead of this outta my ass one
       fluid_box =
       {
         production_type = "input",
