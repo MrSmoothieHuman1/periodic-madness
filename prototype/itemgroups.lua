@@ -145,63 +145,63 @@ data:extend({
     type = "item-group",
     name = "pm-transition-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/transition-metals.png",
+    icon = "__periodic-madness__/graphics/icons/groups/transition-metals.jpeg",
     order = "e"
   },
   {
     type = "item-group",
     name = "pm-post-transition-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/post-transition-metals.png",
+    icon = "__periodic-madness__/graphics/icons/groups/post-transition-metals.jpeg",
     order = "ea"
   },
   {
     type = "item-group",
     name = "pm-reactive-non-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/reactive-non-metals.png",
+    icon = "__periodic-madness__/graphics/icons/groups/reactive-non-metals.jpeg",
     order = "ec"
   },
   {
     type = "item-group",
     name = "pm-metalloids",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/metalloids.png",
+    icon = "__periodic-madness__/graphics/icons/groups/metalloids.jpeg",
     order = "eb"
   },
   {
     type = "item-group",
     name = "pm-alkali-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/alkali-metals.png",
+    icon = "__periodic-madness__/graphics/icons/groups/alkali-metals.jpeg",
     order = "ed"
   },
   {
     type = "item-group",
     name = "pm-alkaline-earth-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/alkali-earth-metals.png",
+    icon = "__periodic-madness__/graphics/icons/groups/alkali-earth-metals.jpeg",
     order = "ee"
   },
   {
     type = "item-group",
     name = "pm-noble-gases",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/noble-gases.png",
+    icon = "__periodic-madness__/graphics/icons/groups/noble-gases.jpeg",
     order = "ef"
   },
   {
     type = "item-group",
     name = "pm-actinides",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/actinides.png",
+    icon = "__periodic-madness__/graphics/icons/groups/actinides.jpeg",
     order = "eg"
   },
   {
     type = "item-group",
     name = "pm-lathanides",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/lathanides.png",
+    icon = "__periodic-madness__/graphics/icons/groups/lathanides.jpeg",
     order = "eh"
   },
   {

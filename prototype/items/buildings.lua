@@ -502,7 +502,7 @@ data:extend({
   {
     type = "item",
     name = "pm-electrolysis-plant-2",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant-2.png",
     subgroup = "pm-water-machine",
     order = "fa",
