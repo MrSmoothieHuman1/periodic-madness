@@ -479,9 +479,9 @@ local function default_ended_in_water_trigger_effect()
       probability = 1,
       affects_target = false,
       show_in_tooltip = false,
-      particle_name = "deep-water-particle",
+      particle_name = "tintable-water-particle",
+      apply_tile_tint = "secondary",
       offset_deviation = { { -0.05, -0.05 }, { 0.05, 0.05 } },
-      tile_collision_mask = nil,
       initial_height = 0,
       initial_height_deviation = 0.02,
       initial_vertical_speed = 0.05,
@@ -501,7 +501,8 @@ local function default_ended_in_water_trigger_effect()
       probability = 0.03,
       affects_target = false,
       show_in_tooltip = false,
-      particle_name = "water-particle",
+      particle_name = "tintable-water-particle",
+      apply_tile_tint = "primary",
       offsets =
       {
         { 0, 0 },
@@ -510,7 +511,6 @@ local function default_ended_in_water_trigger_effect()
         { -0.1094, 0.0625 }
       },
       offset_deviation = { { -0.2969, -0.1992 }, { 0.2969, 0.1992 } },
-      tile_collision_mask = nil,
       initial_height = 0,
       initial_height_deviation = 0.02,
       initial_vertical_speed = 0.053,
@@ -535,7 +535,6 @@ local function default_smoke_trigger_effect()
     type = "create-trivial-smoke",
     smoke_name = "smoke-explosion-particle",
     starting_frame_deviation = 5,
-    starting_frame_speed_deviation = 5,
     offset_deviation = {{-0.06, -0.06}, {0.06, 0.06}},
     speed_from_center = 0.007
   }--[[@as data.TriggerEffect]]
@@ -546,7 +545,6 @@ local function small_smoke_trigger_effect()
     type = "create-trivial-smoke",
     smoke_name = "smoke-explosion-particle-small",
     starting_frame_deviation = 0,
-    starting_frame_speed_deviation = 0,
     offset_deviation = {{-0.03, -0.03}, {0.03, 0.03}},
     speed_from_center = nil
   }--[[@as data.TriggerEffect]]
@@ -555,97 +553,7 @@ local function shadowtint()
 	return {r = 0, g = 0, b = 0}
 end
 
-local particle_animations = {}
----@param options {tint:Color,shift:Vector}
----@return data.SpriteSheet
-function particle_animations.get_metal_particle_small_pictures(options)
-  local options = options or {}
-  return
-  {
-		filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-small.png",
-		priority = "extra-high",
-		width = 20,
-		height = 16,
-		tint = options.tint,
-		frame_count = 12,
-		animation_speed = 0.5,
-		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
-		scale = 0.5
-  }
-end
----@param options {tint:Color,shift:Vector}
----@return data.SpriteSheet
-function particle_animations.get_mechanical_component_particle_medium_pictures(options)
-  local options = options or {}
-  return
-	{
-		filename = "__base__/graphics/particle/mechanical-components-particle/hr-mechanical-components-particle-medium.png",
-		priority = "extra-high",
-		width = 22,
-		height = 22,
-		tint = options.tint,
-		frame_count = 12,
-		animation_speed = 0.5,
-		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.25,-0.25), options.shift),
-		scale = 0.5
-	}
-end
----@param options {tint:Color,shift:Vector}
----@return data.SpriteSheet
-function particle_animations.get_metal_particle_medium_pictures(options)
-  local options = options or {}
-  return
-  {
-		filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-medium.png",
-		priority = "extra-high",
-		width = 30,
-		height = 30,
-		tint = options.tint,
-		frame_count = 12,
-		animation_speed = 0.5,
-		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
-		scale = 0.5
-	}
-end
----@param options {tint:Color,shift:Vector}
----@return data.SpriteSheet
-function particle_animations.get_metal_particle_medium_long_pictures(options)
-  local options = options or {}
-  return
-	{
-		filename = "__base__/graphics/particle/metal-particle/hr-long-metal-particle-medium.png",
-		priority = "extra-high",
-		width = 100,
-		height = 92,
-		tint = options.tint,
-		frame_count = 12,
-		animation_speed = 0.5,
-		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(3.75,0.25), options.shift),
-		scale = 0.5
-	}
-end
----@param options {tint:Color,shift:Vector}
----@return data.SpriteSheet
-function particle_animations.get_metal_particle_big_pictures(options)
-  local options = options or {}
-  return
-	{
-		filename = "__base__/graphics/particle/metal-particle/hr-metal-particle-big.png",
-		priority = "extra-high",
-		width = 50,
-		height = 44,
-		frame_count = 12,
-		tint = options.tint,
-		animation_speed = 0.5,
-		variation_count = 10,
-		shift = util.add_shift(util.by_pixel(2.25,0.75), options.shift),
-		scale = 0.5
-	}
-end
+local particle_animations = require("__base__.prototypes.particle-animations")
 
 ---@class make_particle_params
 ---@field name string
