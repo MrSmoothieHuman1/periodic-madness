@@ -1855,7 +1855,7 @@ data:extend({
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {1.5, -1.5}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {1.5, -1.5}}},
       },
     },
     -- if ANYONE reads this, i hope you know i hate this. I hate fluid boxes and you should too.
@@ -6269,13 +6269,13 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0}}},
       },
     },
   },
@@ -7478,7 +7478,6 @@ data:extend({
         }
       }
     },
-    },
     water_reflection =
     {
       pictures =
@@ -7495,7 +7494,6 @@ data:extend({
       orientation_to_variation = true
     }
   }
-}
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
