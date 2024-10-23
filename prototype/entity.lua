@@ -5854,15 +5854,21 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
+        pipe_connections =
+        {
+          { flow_direction="input", direction = defines.direction.north, position = {0, 1}},
+          { flow_direction="input", direction = defines.direction.south, position = {0, -1}}
+        },
       },
-      {
+      ---HACK: I just put the pipe connection of this one into the one above it
+      ---I don't know what the goal was here, but this gets it to run
+      -- {
 
-        production_type = "input",
-        pipe_covers = pipecoverspictures(),
-        volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
-      },
+      --   production_type = "input",
+      --   pipe_covers = pipecoverspictures(),
+      --   volume = 2000,
+      --   pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
+      -- },
       {
 
         production_type = "output",
