@@ -2967,7 +2967,7 @@ data:extend({
     impact_category = "metal",
     pictures =
     {
-      up =
+      north =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-up.png",
@@ -2976,7 +2976,7 @@ data:extend({
         height = 128,
         scale = 0.5,
       },
-      down =
+      south =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-down.png",
@@ -2985,7 +2985,7 @@ data:extend({
         height = 128,
         scale = 0.5,
       },
-      left =
+      west =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-left.png",
@@ -2994,7 +2994,7 @@ data:extend({
         height = 128,
         scale = 0.5,
       },
-      right =
+      east =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-right.png",
