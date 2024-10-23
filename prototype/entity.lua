@@ -3274,16 +3274,18 @@ data:extend({
     collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     fluid_boxes =
+    {
       {
         volume = 2000,
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        pipe_connections = 
+        pipe_connections =
         {
           {flow_direction = "input", direction = defines.direction.south, position = {0, 1}}
         }
-      },
+      }
+    },
     animation =
     {
       layers =
@@ -5402,7 +5404,7 @@ data:extend({
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 200,
-        pipe_connections = {{ type = "input", direction = defines.direction.west, position = { 2, 0 } } },
+        pipe_connections = {{ flow_direction = "input", direction = defines.direction.west, position = { 2, 0 }}},
       },
     },
     energy_source =
