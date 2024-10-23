@@ -222,7 +222,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-effectivity",
+    name = "pm-efficiency",
     group = "production",
     order = "g"
   },

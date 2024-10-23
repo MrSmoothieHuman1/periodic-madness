@@ -2408,14 +2408,14 @@ data:extend({
   },
   { --tbf i should ask the guy im basing my schedule around if he has a specific date, but the fear of the unknown keeps me moticated
     type = "technology",
-    name = "pm-effectivity-module-4",
+    name = "pm-efficiency-module-4",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/effectivity-module-4-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-effectivity-module-4")
+      PM.unlock_recipe("pm-efficiency-module-4")
     },
-    prerequisites = {"effectivity-module-3" },
+    prerequisites = {"efficiency-module-3"},
     unit =
     {
       count = 600,

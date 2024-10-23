@@ -787,11 +787,11 @@ data:extend({
   } --[[@as data.ModulePrototype]],
   {
     type = "module",
-    name = "pm-effectivity-module-4",
+    name = "pm-efficiency-module-4",
     localised_description = { "item-description.effectivity-module" },
     icon = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
     icon_size = 128,
-    subgroup = "pm-effectivity",
+    subgroup = "pm-efficiency",
     category = "efficiency",
     tier = 4,
     order = "d",

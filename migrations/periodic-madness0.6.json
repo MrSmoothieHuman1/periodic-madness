@@ -10,7 +10,9 @@
 		["pm-bastnäsite-C", "pm-bastnasite-C"],
 		["pm-basic-bastnäsite", "pm-basic-bastnasite"],
 
-		["pm-lorándite", "pm-lorandite"]
+		["pm-lorándite", "pm-lorandite"],
+
+		["pm-effectivity-module-4", "pm-efficiency-module-4"]
 	],
 	"recipe": [
 		["pm-geneva's-neglection-shotgun-shell", "pm-genevas-neglection-shotgun-shell"],
@@ -18,6 +20,11 @@
 
 		["pm-mixed-bastnäsite-seperation", "pm-mixed-bastnasite-seperation"],
 		["pm-bastnäsite-Y-seperation", "pm-bastnasite-Y-seperation"],
-		["pm-bastnäsite-C-seperation", "pm-bastnasite-C-seperation"]
+		["pm-bastnäsite-C-seperation", "pm-bastnasite-C-seperation"],
+
+		["pm-effectivity-module-4", "pm-efficiency-module-4"]
+	],
+	"technology": [
+		["pm-effectivity-module-4", "pm-efficiency-module-4"]
 	]
 }
