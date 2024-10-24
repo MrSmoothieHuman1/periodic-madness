@@ -267,7 +267,7 @@ data:extend({
     subgroup = "pm-resin-processing",
     order = "a[pm-wood-strips]",
     fuel_value = "2MJ",
-    fuel_categories = {"chemical"},
+    fuel_category = "chemical",
     stack_size = 200
   },
   {
@@ -277,7 +277,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/coke.png",
     subgroup = "raw-resource",
     order = "d",
-    fuel_categories = {"chemical"},
+    fuel_category = "chemical",
     fuel_value = "8MJ",
     stack_size = 100
   },
@@ -515,7 +515,7 @@ data:extend({
     },
     subgroup = "pm-biostuff-rnm",
     order = "A",
-    fuel_categories = {"chemical"},
+    fuel_category = "chemical",
     fuel_value = "18MJ",
     fuel_acceleration_multiplier = 0.8,
     fuel_top_speed_multiplier = 0.4,
@@ -720,7 +720,7 @@ data:extend({
     },
     subgroup = "pm-polonium-ptm",
     burnt_result = "pm-used-up-polonium-fuel-cell",
-    fuel_categories = {"pm-polonium"},
+    fuel_category = "pm-polonium",
     fuel_value = "10GJ",
     order = "e",
     stack_size = 50
@@ -787,11 +787,11 @@ data:extend({
   } --[[@as data.ModulePrototype]],
   {
     type = "module",
-    name = "pm-effectivity-module-4",
+    name = "pm-efficiency-module-4",
     localised_description = { "item-description.effectivity-module" },
     icon = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
     icon_size = 128,
-    subgroup = "pm-effectivity",
+    subgroup = "pm-efficiency",
     category = "efficiency",
     tier = 4,
     order = "d",

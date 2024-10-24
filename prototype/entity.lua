@@ -18,6 +18,9 @@ local pm_lab_inputs =
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
+
+  ---Please put this in the correct logical order
+  "pm-metalloid-science-pack",
 }
 
 function pm_electric_mining_drill2_animation()
@@ -1855,7 +1858,7 @@ data:extend({
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {1.5, -1.5}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {1.5, -1.5}}},
       },
     },
     -- if ANYONE reads this, i hope you know i hate this. I hate fluid boxes and you should too.
@@ -1885,7 +1888,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 2},
     },
-    energy_usage = "150KW",
+    energy_usage = "150kW",
     next_upgrade = "pm-crusher-2",
     fast_replaceable_group = "pm-crusher",
     animation =
@@ -1940,7 +1943,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 1},
     },
-    energy_usage = "300KW",
+    energy_usage = "300kW",
     fast_replaceable_group = "pm-crusher",
     animation =
     {
@@ -1993,7 +1996,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = -2}
     },
-    energy_usage = "500KW",
+    energy_usage = "500kW",
     animation =
     {
       layers =
@@ -2621,7 +2624,7 @@ data:extend({
       },
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
-    energy_usage = "625KW",
+    energy_usage = "625kW",
     animation =
     {
       layers =
@@ -2967,7 +2970,7 @@ data:extend({
     impact_category = "metal",
     pictures =
     {
-      up =
+      north =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-up.png",
@@ -2976,7 +2979,7 @@ data:extend({
         height = 128,
         scale = 0.5,
       },
-      down =
+      south =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-down.png",
@@ -2985,7 +2988,7 @@ data:extend({
         height = 128,
         scale = 0.5,
       },
-      left =
+      west =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-left.png",
@@ -2994,7 +2997,7 @@ data:extend({
         height = 128,
         scale = 0.5,
       },
-      right =
+      east =
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-right.png",
@@ -3274,16 +3277,18 @@ data:extend({
     collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     fluid_boxes =
+    {
       {
         volume = 2000,
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        pipe_connections = 
+        pipe_connections =
         {
           {flow_direction = "input", direction = defines.direction.south, position = {0, 1}}
         }
-      },
+      }
+    },
     animation =
     {
       layers =
@@ -3614,7 +3619,7 @@ data:extend({
         pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {2, 0}}},
       },
     },
-    energy_usage = "500KW",
+    energy_usage = "500kW",
     animation =
     {
       layers =
@@ -3800,8 +3805,8 @@ data:extend({
     resource_categories = { "basic-solid" },
     corpse = "electric-mining-drill-remnants",
     dying_explosion = "electric-mining-drill-explosion",
-    collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
-    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    collision_box = {{-1.35, -1.35}, {1.35, 1.35}},
+    selection_box = {{-1.5,  -1.5 }, {1.5,  1.5 }},
     input_fluid_box =
     {
       pipe_picture = assembler2pipepictures(),
@@ -5374,7 +5379,7 @@ data:extend({
     module_slots = 4,
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
-    energy_usage = "400KW",
+    energy_usage = "400kW",
     animation =
     {
       layers =
@@ -5402,7 +5407,7 @@ data:extend({
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 200,
-        pipe_connections = {{ type = "input", direction = defines.direction.west, position = { 2, 0 } } },
+        pipe_connections = {{ flow_direction = "input", direction = defines.direction.west, position = { 2, 0 }}},
       },
     },
     energy_source =
@@ -5496,7 +5501,7 @@ data:extend({
     module_slots = 2,
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
-    energy_usage = "800KW",
+    energy_usage = "800kW",
     animation =
     {
       layers =
@@ -5549,6 +5554,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
+      fluid_usage_per_tick = 5, --HACK: Set a *real* value instead of this outta my ass one
       fluid_box =
       {
         production_type = "input",
@@ -5815,7 +5821,7 @@ data:extend({
     module_slots = 2,
     allowed_effects = PM.effects("speed", "consumption"),
     crafting_speed = 0.5,
-    energy_usage = "800KW",
+    energy_usage = "800kW",
     energy_source =
     {
       type = "electric",
@@ -5854,15 +5860,21 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
+        pipe_connections =
+        {
+          { flow_direction="input", direction = defines.direction.north, position = {0, 1}},
+          { flow_direction="input", direction = defines.direction.south, position = {0, -1}}
+        },
       },
-      {
+      ---HACK: I just put the pipe connection of this one into the one above it
+      ---I don't know what the goal was here, but this gets it to run
+      -- {
 
-        production_type = "input",
-        pipe_covers = pipecoverspictures(),
-        volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
-      },
+      --   production_type = "input",
+      --   pipe_covers = pipecoverspictures(),
+      --   volume = 2000,
+      --   pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
+      -- },
       {
 
         production_type = "output",
@@ -6269,13 +6281,13 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0}}},
       },
     },
   },
@@ -7478,7 +7490,6 @@ data:extend({
         }
       }
     },
-    },
     water_reflection =
     {
       pictures =
@@ -7495,7 +7506,6 @@ data:extend({
       orientation_to_variation = true
     }
   }
-}
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down

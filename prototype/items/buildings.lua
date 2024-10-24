@@ -232,16 +232,17 @@ data:extend({
     place_result = "pm-circuit-megassembler",
     stack_size = 10
   },
-  {
-    type = "item",
-    name = "pm-filter-long-handed-inserter",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/filter-long-handed-inserter.png",
-    subgroup = "inserter",
-    order = "f",
-    place_result = "pm-filter-long-handed-inserter",
-    stack_size = 50
-  },
+  -- HACK: filter inserters have been removed
+  -- {
+  --   type = "item",
+  --   name = "pm-filter-long-handed-inserter",
+  --   icon_size = 64,
+  --   icon = "__periodic-madness__/graphics/icons/buildings/filter-long-handed-inserter.png",
+  --   subgroup = "inserter",
+  --   order = "f",
+  --   place_result = "pm-filter-long-handed-inserter",
+  --   stack_size = 50
+  -- },
   {
     type = "item",
     name = "pm-stainless-steel-pipe",
@@ -501,7 +502,7 @@ data:extend({
   {
     type = "item",
     name = "pm-electrolysis-plant-2",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant-2.png",
     subgroup = "pm-water-machine",
     order = "fa",

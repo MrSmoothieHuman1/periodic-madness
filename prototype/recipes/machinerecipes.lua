@@ -395,23 +395,24 @@ data:extend({
       PM.product("pm-atmospheric-condenser", 1)
     }
   },
-  {
-    type = "recipe",
-    name = "pm-filter-long-handed-inserter",
-    subgroup = "inserter",
-    order = "f",
-    enabled = false,
-    energy_required = 0.5,
-    ingredients =
-    {
-      PM.ingredient("electronic-circuit", 4),
-      PM.ingredient("pm-vulcanised-rubber", 1),
-      PM.ingredient("long-handed-inserter", 1)
-    },
-    results = {
-      PM.product("pm-filter-long-handed-inserter", 1)
-    }
-  },
+  -- HACK: Filter inserters have been removed
+  -- {
+  --   type = "recipe",
+  --   name = "pm-filter-long-handed-inserter",
+  --   subgroup = "inserter",
+  --   order = "f",
+  --   enabled = false,
+  --   energy_required = 0.5,
+  --   ingredients =
+  --   {
+  --     PM.ingredient("electronic-circuit", 4),
+  --     PM.ingredient("pm-vulcanised-rubber", 1),
+  --     PM.ingredient("long-handed-inserter", 1)
+  --   },
+  --   results = {
+  --     PM.product("pm-filter-long-handed-inserter", 1)
+  --   }
+  -- },
   {
     type = "recipe",
     name = "pm-stainless-steel-pipe",

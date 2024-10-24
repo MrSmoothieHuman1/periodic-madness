@@ -712,7 +712,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("empty-barrel", 1),
+      PM.ingredient("barrel", 1),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results = {

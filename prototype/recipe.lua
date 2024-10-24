@@ -76,7 +76,7 @@ data:extend({
       PM.ingredient("copper-cable", 1),
     },
     results = {
-      PM.product("pm-basic-integrated-circuit", 3)
+      PM.product("pm-basic-integrated-circuits", 3)
     }
   },
 
@@ -1419,7 +1419,7 @@ data:extend({
     order = "h",
     ingredients =
     {
-      PM.ingredient("effectivity-module", 1)
+      PM.ingredient("efficiency-module", 1)
     },
     results =
     {
@@ -1440,7 +1440,7 @@ data:extend({
     order = "i",
     ingredients =
     {
-      PM.ingredient("effectivity-module-2", 1)
+      PM.ingredient("efficiency-module-2", 1)
     },
     results =
     {
@@ -1994,22 +1994,22 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-effectivity-module-4",
+    name = "pm-efficiency-module-4",
     enabled = false,
     energy_required = 30,
-    subgroup = "pm-effectivity",
+    subgroup = "pm-efficiency",
     order = "d",
     ingredients =
     {
       PM.ingredient("pm-chrome-green", 5),
-      PM.ingredient("effectivity-module", 1),
+      PM.ingredient("efficiency-module", 1),
       PM.ingredient("pm-module-efficiency-light", 1),
       PM.ingredient("pm-fluid-circuit", 10),
       PM.ingredient("processing-unit", 10)
     },
     results =
     {
-      PM.product("pm-effectivity-module-4", 1)
+      PM.product("pm-efficiency-module-4", 1)
     }
   },
   {
