@@ -120,10 +120,7 @@ data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics
 
 data.raw["technology"]["concrete"].prerequisites = { "pm-oil-residual-recipes", "advanced-material-processing", "automation-2" }
 
-data.raw["technology"]["electronics"].effects =
-{
-  PM.unlock_recipe("pm-mini-motor")
-}
+table.insert(data.raw.technology.electronics.effects, {type = "unlock-recipe", recipe = "pm-mini-motor"})
 
 data.raw["technology"]["advanced-oil-processing"].icon = "__periodic-madness__/graphics/technology/fractional-distillation.png"
 data.raw["technology"]["advanced-oil-processing"].effects =
