@@ -23,6 +23,13 @@ data:extend({
   {
     type = "equipment-grid",
     name = "pm-power-armor-MK3-equipment-grid",
+    width = 18,
+    height = 18,
+    equipment_categories = {"armor"}
+  },
+  {
+    type = "equipment-grid",
+    name = "pm-mech-armor-equipment-grid",
     width = 24,
     height = 24,
     equipment_categories = {"armor"}
