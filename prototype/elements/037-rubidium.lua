@@ -17,8 +17,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/ores/31-rubidium-alum.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/31-rubidium-alum.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-rubidium-am",
     order = "b",
@@ -31,8 +31,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/ores/51-rubidium-alum.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/51-rubidium-alum.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-rubidium-am",
     order = "c",
@@ -45,8 +45,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-rubidium-am",
     order = "d",

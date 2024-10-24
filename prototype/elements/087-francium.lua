@@ -8,8 +8,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/francium-209.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-209.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-209-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-209.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-209-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
     order = "a",
@@ -22,8 +22,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/francium-210.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-210.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-210-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-210.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-210-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
     order = "b",
@@ -36,8 +36,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/francium-211.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-211.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-211-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-211.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-211-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
     order = "c",

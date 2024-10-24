@@ -26,9 +26,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/sodium-sulfite.png",
     pictures = 
     {
-        {filename = "__periodic-madness__/graphics/icons/sodium-sulfite.png", icon_size = 64, scale = 0.25},
-        {filename = "__periodic-madness__/graphics/icons/sodium-sulfite-2.png", icon_size = 64, scale = 0.25},
-    }
+        {filename = "__periodic-madness__/graphics/icons/sodium-sulfite.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/sodium-sulfite-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-sodium-am",
     order = "c",
     stack_size = 100

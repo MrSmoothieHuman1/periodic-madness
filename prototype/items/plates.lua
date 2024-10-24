@@ -172,8 +172,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
     pictures = 
     {
-      {filename = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate-2.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-alloys",
     order = "c",
@@ -209,7 +209,7 @@ data.raw["item"]["steel-plate"].icon_size = 64
 data.raw["item"]["steel-plate"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
 data.raw["item"]["steel-plate"].pictures = 
 {
-  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate.png", size = 64, scale = 0.25},
-  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate-2.png", size = 64, scale = 0.25},
-  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate-3.png", size = 64, scale = 0.25},
+  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate.png", size = 64, scale = 0.5},
+  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate-2.png", size = 64, scale = 0.5},
+  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate-3.png", size = 64, scale = 0.5},
 }

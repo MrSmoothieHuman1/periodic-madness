@@ -167,7 +167,7 @@ function set_variations(pictures, type, colour_name)
 	---@cast pictures data.SpriteParameters
 	pictures.filename = "__periodic-madness__/graphics/icons/buildings/"..type.."/"..colour_name..".png"
 	pictures.size = 64
-	pictures.scale = 0.25
+	pictures.scale = 0.5
 	pictures.mipmap_count = 4
 end
 ---@param item data.ItemPrototype|data.EntityPrototype

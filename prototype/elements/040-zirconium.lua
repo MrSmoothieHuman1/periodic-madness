@@ -17,8 +17,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/zircon.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/zircon.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zircon-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zircon.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zircon-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-zirconium-tm",
     order = "b",
@@ -31,9 +31,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/zirconia.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/zirconia.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zirconia-2.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zirconia-3.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zirconia.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zirconia-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zirconia-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-zirconium-tm",
     order = "c",

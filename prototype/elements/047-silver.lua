@@ -10,8 +10,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-chunks-2.png", size = 64, scale = 0.25 }
+      { filename = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/silver-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-silver-tm",
     order = "a",

@@ -7,8 +7,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide.png",
         pictures = 
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide.png", size = 64, scale = 0.25},
-            {filename = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide-2.png", size = 64, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/low-quality-crude-antimony-sulfide-2.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-antimony-mt",
         order = "a",
@@ -21,8 +21,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide.png",
         pictures = 
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide.png", size = 64, scale = 0.25},
-            {filename = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide-2.png", size = 64, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/high-quality-crude-antimony-sulfide-2.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-antimony-mt",
         order = "b",

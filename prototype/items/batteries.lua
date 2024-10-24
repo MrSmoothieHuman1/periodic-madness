@@ -98,14 +98,14 @@ data:extend({
         {
           size = 64,
           filename = "__periodic-madness__/graphics/icons/charged-vanadium-redox-battery.png",
-          scale = 0.25,
+          scale = 0.5,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 64,
           filename = "__periodic-madness__/graphics/light/charged-battery-light.png",
-          scale = 0.25,
+          scale = 0.5,
         }
       }
     },
@@ -136,14 +136,14 @@ data:extend({
         {
           size = 64,
           filename = "__periodic-madness__/graphics/icons/charged-lithium-sulfur-battery.png",
-          scale = 0.25,
+          scale = 0.5,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 64,
           filename = "__periodic-madness__/graphics/light/charged-double-battery-light.png",
-          scale = 0.25,
+          scale = 0.5,
         }
       }
     },

@@ -8,8 +8,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/pollucite.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/pollucite.png",   size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/ores/pollucite-2.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/pollucite.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/pollucite-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-caesium-am",
     order = "A",
@@ -36,9 +36,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/caesium-hexachlorocerate.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/caesium-hexachlorocerate.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/caesium-hexachlorocerate-2.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/caesium-hexachlorocerate-3.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-hexachlorocerate.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-hexachlorocerate-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-hexachlorocerate-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-caesium-am",
     order = "b",
@@ -51,8 +51,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/caesium-iodine-chloride.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/caesium-iodine-chloride.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/caesium-iodine-chloride-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-iodine-chloride.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-iodine-chloride-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-caesium-am",
     order = "c",
@@ -65,8 +65,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/caesium-antimony-chloride.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/caesium-antimony-chloride.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/caesium-antimony-chloride-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-antimony-chloride.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-antimony-chloride-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-caesium-am",
     order = "d",
@@ -79,8 +79,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/caesium-chloride.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/caesium-chloride.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/caesium-chloride-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-chloride.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/caesium-chloride-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-caesium-am",
     order = "e",

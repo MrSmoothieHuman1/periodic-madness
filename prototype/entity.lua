@@ -528,7 +528,7 @@ data:extend({
     fast_replaceable_group = "pm-storage-tank",
     fluid_box =
     {
-      volume = 500,
+      volume = 50000,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {

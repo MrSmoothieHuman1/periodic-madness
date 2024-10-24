@@ -7,8 +7,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/lithium-chloride.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/lithium-chloride.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/lithium-chloride-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/lithium-chloride.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/lithium-chloride-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-lithium-am",
     order = "a",
@@ -21,8 +21,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/lithium-bromide.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/lithium-bromide.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/lithium-bromide-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/lithium-bromide.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/lithium-bromide-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-lithium-am",
     order = "x",

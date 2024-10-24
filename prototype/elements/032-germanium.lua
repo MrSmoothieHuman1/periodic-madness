@@ -8,8 +8,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate.png",   size = 64, scale = 0.25},
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate-2.png", size = 64, scale = 0.25}
+            {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate.png",   size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate-2.png", size = 64, scale = 0.5}
         },
         subgroup = "pm-germanium-mt",
         order = "a",
@@ -31,8 +31,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/germanium-oxide.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-oxide.png",   size = 64, scale = 0.25},
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-oxide-2.png", size = 64, scale = 0.25}
+            {filename = "__periodic-madness__/graphics/icons/ores/germanium-oxide.png",   size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/germanium-oxide-2.png", size = 64, scale = 0.5}
         },
         subgroup = "pm-germanium-mt",
         order = "c",
@@ -45,8 +45,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride.png",   size = 64, scale = 0.25},
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride-2.png", size = 64, scale = 0.25}
+            {filename = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride.png",   size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride-2.png", size = 64, scale = 0.5}
         },
         subgroup = "pm-germanium-mt",
         order = "d",

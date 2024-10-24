@@ -69,8 +69,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/basic-framing.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/basic-framing.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/basic-framing-2.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/basic-framing.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/basic-framing-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-multimetal-framing",
     order = "a",
@@ -83,8 +83,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/lightweight-framing.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/lightweight-framing.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/lightweight-framing-2.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/lightweight-framing.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/lightweight-framing-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-multimetal-framing",
     order = "c",
@@ -97,8 +97,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/heavyweight-framing.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/heavyweight-framing.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/heavyweight-framing-2.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/heavyweight-framing.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/heavyweight-framing-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-multimetal-framing",
     order = "c",
@@ -132,8 +132,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/basic-panelling.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/basic-panelling.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/basic-panelling-2.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/basic-panelling.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/basic-panelling-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-multimetal-panelling",
     order = "a",
@@ -146,8 +146,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/lightweight-panelling.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/lightweight-panelling.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/lightweight-panelling-2.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/lightweight-panelling.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/lightweight-panelling-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-multimetal-panelling",
     order = "b",
@@ -160,8 +160,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/heavyweight-panelling.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/heavyweight-panelling.png", size = 64, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/heavyweight-panelling-2.png", size = 64, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/heavyweight-panelling.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/heavyweight-panelling-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-multimetal-panelling",
     order = "c",

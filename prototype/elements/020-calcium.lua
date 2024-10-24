@@ -33,8 +33,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/calcium-chloride.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/calcium-chloride.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.25 }
+      { filename = "__periodic-madness__/graphics/icons/calcium-chloride.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-calcium-aem",
     order = "c",

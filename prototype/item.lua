@@ -55,10 +55,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/sand.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/sand.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/sand-2.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/sand-3.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/sand-4.png", size = 64, scale = 0.25 }
+      { filename = "__periodic-madness__/graphics/icons/sand.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sand-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sand-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sand-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-glassing",
     order = "a",
@@ -508,10 +508,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/biomass.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/biomass.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/biomass-2.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/biomass-3.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/biomass-4.png", size = 64, scale = 0.25 }
+      { filename = "__periodic-madness__/graphics/icons/biomass.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/biomass-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/biomass-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/biomass-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-biostuff-rnm",
     order = "A",
@@ -591,8 +591,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/gallium-arsenide.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/gallium-arsenide.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/gallium-arsenide-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/gallium-arsenide.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/gallium-arsenide-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-refined-items",
     stack_size = 20
@@ -655,8 +655,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/crucible.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/crucible.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/crucible-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/crucible.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/crucible-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-alloys",
     order = "A",
@@ -706,14 +706,14 @@ data:extend({
         {
           size = 64,
           filename = "__periodic-madness__/graphics/icons/polonium-fuel-cell.png",
-          scale = 0.25,
+          scale = 0.5,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 64,
           filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
-          scale = 0.25,
+          scale = 0.5,
           mipmap_count = 4
         }
       }
@@ -1005,8 +1005,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/MOT.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/MOT.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/MOT-2.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/MOT.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/MOT-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
     order = "A",
@@ -1025,14 +1025,14 @@ data:extend({
           {
             filename = "__periodic-madness__/graphics/icons/filled-MOT.png",
             size = 64,
-            scale = 0.25,
+            scale = 0.5,
           },
           {
             filename = "__periodic-madness__/graphics/light/filled-MOT-light.png",
             flags = { "light" },
             draw_as_light = true,
             size = 64,
-            scale = 0.25,
+            scale = 0.5,
           },
         }
       },
@@ -1042,14 +1042,14 @@ data:extend({
           {
             filename = "__periodic-madness__/graphics/icons/filled-MOT-2.png",
             size = 64,
-            scale = 0.25,
+            scale = 0.5,
           },
           {
             filename = "__periodic-madness__/graphics/light/filled-MOT-2-light.png",
             flags = { "light" },
             draw_as_light = true,
             size = 64,
-            scale = 0.25,
+            scale = 0.5,
           },
         }
       },

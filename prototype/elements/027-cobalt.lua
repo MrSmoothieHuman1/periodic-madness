@@ -17,9 +17,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/cobaltite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/cobaltite.png",   size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/cobaltite-2.png", size = 64, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/cobaltite-3.png", size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/cobaltite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/cobaltite-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/cobaltite-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-cobalt-tm",
     order = "b",
