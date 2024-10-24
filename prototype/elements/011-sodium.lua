@@ -23,7 +23,12 @@ data:extend({
     type = "item",
     name = "pm-sodium-sulfite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/calcium-chloride.png",
+    icon = "__periodic-madness__/graphics/icons/sodium-sulfite.png",
+    pictures = 
+    {
+        {filename = "__periodic-madness__/graphics/icons/sodium-sulfite.png", icon_size = 64, scale = 0.25},
+        {filename = "__periodic-madness__/graphics/icons/sodium-sulfite-2.png", icon_size = 64, scale = 0.25},
+    }
     subgroup = "pm-sodium-am",
     order = "c",
     stack_size = 100
