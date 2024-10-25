@@ -2620,7 +2620,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         filter = "pm-heavy-lubricant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {0, -3.4}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -3.4}}},
       },
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
@@ -2629,32 +2629,29 @@ data:extend({
     {
       layers =
       {
-        -- FIXME: File is bad
-        -- {
-        --   filename =
-        --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
-        --   width = 32 * 7 * 2,
-        --   height = 32 * 7 * 2,
-        --   frame_count = 32,
-        --   line_length = 8,
-        --   animation_speed = 0.25,
-        --   shift = util.by_pixel(-2, 0),
-        --   scale = 0.575,
-        -- },
-        -- FIXME: File is bad
-        -- {
-        --   filename =
-        --   "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
-        --   width = 32 * 7 * 2,
-        --   height = 32 * 7 * 2,
-        --   frame_count = 32,
-        --   line_length = 8,
-        --   draw_as_shadow = true,
-        --   shift = util.by_pixel(64, 10),
-        --   animation_speed = 0.25,
-        --   scale = 0.575
-        -- },
-        util.empty_animation(32)
+         {
+           filename =
+           "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
+           width = 32 * 7 * 2,
+           height = 32 * 7 * 2,
+           frame_count = 32,
+           line_length = 8,
+           animation_speed = 0.25,
+           shift = util.by_pixel(-2, 0),
+           scale = 0.575,
+         },
+         {
+           filename =
+           "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+           width = 32 * 7 * 2,
+           height = 32 * 7 * 2,
+           frame_count = 32,
+           line_length = 8,
+           draw_as_shadow = true,
+           shift = util.by_pixel(64, 10),
+           animation_speed = 0.25,
+           scale = 0.575
+         },
       }
     },
   },
@@ -2687,7 +2684,7 @@ data:extend({
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     fluid_box =
     {
-      volume = 100,
+      volume = 200,
       pipe_covers = pipecoverspictures(), -- in case a real pipe is connected to a ghost
       pipe_connections =
       {
