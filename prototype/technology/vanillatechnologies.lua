@@ -869,17 +869,14 @@ data.raw["technology"]["fission-reactor-equipment"].effects =
   PM.unlock_recipe("pm-spent-fuel-rod-reprocessing"),
   PM.unlock_recipe("fission-reactor-equipment"), 
 }
-data.raw["technology"]["fission-reactor-equipment"].unit.ingredients =
+data.raw["technology"]["fission-reactor-equipment"].research_trigger =
 {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-  {"pm-metalloid-science-pack", 1}
+  type = "craft-item",
+  item = "pm-polonium-fuel-cell",
+  count = 10
 }
+data.raw["technology"]["fission-reactor-equipment"].unit = nil
 data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
-data.raw["technology"]["fission-reactor-equipment"].unit.time = 60
-data.raw["technology"]["fission-reactor-equipment"].unit.count = 350
 
 data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
 
