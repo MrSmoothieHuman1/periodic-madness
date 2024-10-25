@@ -97,48 +97,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-coke-iron-smelting",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/coke-iron-smelting.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-coke-iron-smelting")
-    },
-    prerequisites = {"pm-wood-processing"},
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-      },
-      time = 15
-    }
-  },
-  {
-    type = "technology",
-    name = "pm-coke-zinc-smelting",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/coke-zinc-smelting.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-coke-zinc-smelting")
-    },
-    prerequisites = { "pm-coke-iron-smelting" },
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-      },
-      time = 20
-    }
-  },
-  {
-    type = "technology",
     name = "pm-copper-fiberoptics",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/copper-fiberoptic-cable.png",
