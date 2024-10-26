@@ -13,7 +13,7 @@ data:extend({
       PM.unlock_recipe("pm-green-circuit-molding"),
       PM.unlock_recipe("pm-basic-breadboard-molding")
     },
-    prerequisites = {"pm-pheonlic-resin-processing" },
+    prerequisites = {"pm-pheonlic-resin-processing"},
     unit =
     {
       count = 50,
@@ -35,7 +35,7 @@ data:extend({
       PM.unlock_recipe("pm-orange-circuit-molding"),
       PM.unlock_recipe("pm-orange-breadboard-molding")
     },
-    prerequisites = { "pm-green-circuit-molding" },
+    prerequisites = { "pm-green-circuit-molding"},
     unit =
     {
       count = 100,
@@ -57,7 +57,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-circuit-molding"),
       PM.unlock_recipe("pm-advanced-breadboard-molding")
     },
-    prerequisites = { "pm-fluid-circuit-molding" },
+    prerequisites = { "pm-fluid-circuit-molding"},
     unit =
     {
       count = 150,
@@ -80,7 +80,7 @@ data:extend({
       PM.unlock_recipe("pm-processing-circuit-molding"),
       PM.unlock_recipe("pm-processing-breadboard-molding")
     },
-    prerequisites = { "pm-advanced-circuit-molding" },
+    prerequisites = { "pm-advanced-circuit-molding"},
     unit =
     {
       count = 300,
@@ -152,7 +152,7 @@ data:extend({
       PM.unlock_recipe("pm-green-integrated-circuit-molding"),
       PM.unlock_recipe("pm-basic-integrated-circuit-molding")
     },
-    prerequisites = { "pm-chemical-resin", "pm-green-circuit-molding", "pm-vacuum-former-2" },
+    prerequisites = { "pm-chemical-resin", "pm-green-circuit-molding", "pm-vacuum-former-2"},
     unit =
     {
       count = 100,
@@ -176,7 +176,7 @@ data:extend({
       PM.unlock_recipe("pm-fluid-integrated-circuit-pressing"),
       PM.unlock_recipe("pm-fluid-integrated-circuit-molding")
     },
-    prerequisites = { "pm-basic-integrated-circuit-molding" },
+    prerequisites = { "pm-basic-integrated-circuit-molding"},
     unit =
     {
       count = 150,
@@ -200,7 +200,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-integrated-circuit-pressing"),
       PM.unlock_recipe("pm-advanced-integrated-circuit-molding")
     },
-    prerequisites = { "pm-fluid-integrated-circuit-molding" },
+    prerequisites = { "pm-fluid-integrated-circuit-molding"},
     unit =
     {
       count = 200,
@@ -224,7 +224,7 @@ data:extend({
       PM.unlock_recipe("pm-processing-integrated-circuit-pressing"),
       PM.unlock_recipe("pm-processing-integrated-circuit-molding")
     },
-    prerequisites = { "pm-advanced-integrated-circuit-molding" },
+    prerequisites = { "pm-advanced-integrated-circuit-molding"},
     unit =
     {
       count = 400,
@@ -250,7 +250,7 @@ data:extend({
       PM.unlock_recipe("pm-better-flourite-crystallisation"),
       PM.unlock_recipe("pm-wolframite-crystallisation")
     },
-    prerequisites = { "pm-flourine-processing", "pm-post-transition-metal-pack-unlock" },
+    prerequisites = { "pm-flourine-processing", "pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 200,
@@ -275,7 +275,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-bismuth-carbon-dioxide-electrolysis"),
     },
-    prerequisites = { "pm-CO2-nullifying", "pm-post-transition-metal-pack-unlock" },
+    prerequisites = { "pm-CO2-nullifying", "pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 50,
@@ -301,7 +301,7 @@ data:extend({
       PM.unlock_recipe("pm-sodium-advanced-air-filter-cleaning"),
       PM.unlock_recipe("pm-sodium-air-filter-cleaning"),
     },
-    prerequisites = { "pm-post-transition-metal-pack-unlock", "pm-advanced-pollution-filtering" },
+    prerequisites = { "pm-post-transition-metal-pack-unlock", "pm-advanced-pollution-filtering"},
     unit =
     {
       count = 350,
@@ -327,7 +327,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-bromide-polymethyl-methacrylate-plastic")
     },
-    prerequisites = { "pm-bromine-processing", "pm-polymethyl-methacrylate" },
+    prerequisites = { "pm-bromine-processing", "pm-polymethyl-methacrylate"},
     unit =
     {
       count = 200,

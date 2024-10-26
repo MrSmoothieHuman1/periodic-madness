@@ -183,5 +183,3 @@ data:extend({
     }
   }
 })
-
--- 10 chromic acid = fifty acidic water

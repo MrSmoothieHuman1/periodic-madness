@@ -35,7 +35,7 @@ data:extend({
       PM.unlock_recipe("pm-stainless-steel-basic-framing"),
       PM.unlock_recipe("pm-stainless-steel-panelling"),
     },
-    prerequisites = {"steel-processing", "pm-advanced-advanced-transition-metal-pack-unlock" },
+    prerequisites = {"steel-processing", "pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
       count = 30,
@@ -63,7 +63,7 @@ data:extend({
       PM.unlock_recipe("pm-chunk-slag-leeching")
 
     },
-    prerequisites = {"pm-transition-metal-refining" },
+    prerequisites = {"pm-transition-metal-refining"},
     unit =
     {
       count = 50,
@@ -90,7 +90,7 @@ data:extend({
       PM.unlock_recipe("pm-gold-leeching"),
       PM.unlock_recipe("pm-gold-chunk-refining"),
     },
-    prerequisites = {"pm-transition-metal-refining", "pm-mercury-processing" },
+    prerequisites = {"pm-transition-metal-refining", "pm-mercury-processing"},
     unit =
     {
       count = 50,
@@ -113,7 +113,7 @@ data:extend({
       PM.unlock_recipe("pm-mercury-liquifying"),
       PM.unlock_recipe("pm-mercury-vapour-condensing")
     },
-    prerequisites = {"automation", "pm-transition-metal-refining" },
+    prerequisites = {"automation", "pm-transition-metal-refining"},
     unit =
     {
       count = 50,
@@ -160,7 +160,7 @@ data:extend({
       PM.unlock_recipe("pm-coal-burning"),
 
     },
-    prerequisites = {"logistic-science-pack" },
+    prerequisites = {"logistic-science-pack"},
     unit =
     {
       count = 75,
@@ -183,7 +183,7 @@ data:extend({
       PM.unlock_recipe("pm-rubber-resin-cooling"),
       PM.unlock_recipe("pm-rubber-vulcanisation")
     },
-    prerequisites = {"pm-resin-processing" },
+    prerequisites = {"pm-resin-processing"},
     unit =
     {
       count = 100,
@@ -204,7 +204,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-resin-to-pheonlic-resin")
     },
-    prerequisites = {"pm-resin-processing" },
+    prerequisites = {"pm-resin-processing"},
     unit =
     {
       count = 100,
@@ -227,7 +227,7 @@ data:extend({
       PM.unlock_recipe("pm-basic-fluid-circuit"),
       PM.unlock_recipe("pm-vacuum-former-1")
     },
-    prerequisites = {"pm-wood-processing", "pm-water-distillation", "pm-tempature-plating" },
+    prerequisites = {"pm-wood-processing", "pm-water-distillation", "pm-tempature-plating"},
     unit =
     {
       count = 50,
@@ -248,7 +248,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-gold-wire"),
     },
-    prerequisites = {"logistic-science-pack" },
+    prerequisites = {"logistic-science-pack"},
     unit =
     {
       count = 50,
@@ -269,7 +269,7 @@ data:extend({
     {
       PM.unlock_recipe("boiler")
     },
-    prerequisites = {"automation" },
+    prerequisites = {"automation"},
     unit =
     {
       count = 20,
@@ -291,7 +291,7 @@ data:extend({
       PM.unlock_recipe("pm-fiberoptic-cable"),
       PM.unlock_recipe("pm-glass-resmelting")
     },
-    prerequisites = {"lamp", "pm-pheonlic-resin-processing", "pm-gold-processing" },
+    prerequisites = {"lamp", "pm-pheonlic-resin-processing", "pm-gold-processing"},
     unit =
     {
       count = 75,
@@ -347,7 +347,7 @@ data:extend({
       PM.unlock_recipe("pm-transition-manganese-leeching"),
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
     },
-    prerequisites = {"automation", "pm-ezekiel-ore-purifying" },
+    prerequisites = {"automation", "pm-ezekiel-ore-purifying"},
     unit =
     {
       count = 30,
@@ -370,7 +370,7 @@ data:extend({
       PM.unlock_recipe("pm-ezekiel-nickel-purifying"),
       PM.unlock_recipe("pm-ezekiel-zinc-purifying"),
     },
-    prerequisites = {"automation", "pm-chlorine-processing" },
+    prerequisites = {"automation", "pm-chlorine-processing"},
     unit =
     {
       count = 15,
@@ -396,7 +396,7 @@ data:extend({
       PM.unlock_recipe("pm-voltatic-charger"),
       PM.unlock_recipe("pm-voltatic-discharger"),
     },
-    prerequisites = {"electronics" },
+    prerequisites = {"electronics"},
     unit =
     {
       count = 80,
@@ -447,7 +447,7 @@ data:extend({
       PM.unlock_recipe("pm-steel-panelling")
 
     },
-    prerequisites = {"pm-brass-processing", "steel-processing" },
+    prerequisites = {"pm-brass-processing", "steel-processing"},
     unit =
     {
       count = 50,
@@ -573,7 +573,7 @@ data:extend({
       PM.unlock_recipe("pm-common-diesel-to-solid-fuel"),
       PM.unlock_recipe("pm-common-diesel-cracking"),
     },
-    prerequisites = {"advanced-oil-processing" },
+    prerequisites = {"advanced-oil-processing"},
     unit =
     {
       count = 50,
@@ -598,7 +598,7 @@ data:extend({
       PM.unlock_recipe("pm-kerosene-to-solid-fuel"),
       PM.unlock_recipe("pm-kerosene-hydrosulfurisation")
     },
-    prerequisites = {"advanced-oil-processing" },
+    prerequisites = {"advanced-oil-processing"},
     unit =
     {
       count = 50,
@@ -620,7 +620,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-petrol-to-solid-fuel")
     },
-    prerequisites = {"advanced-oil-processing" },
+    prerequisites = {"advanced-oil-processing"},
     unit =
     {
       count = 50,
@@ -667,7 +667,7 @@ data:extend({
       PM.unlock_recipe("pm-fuel-canister"),
       PM.unlock_recipe("pm-diesel-canister")
     },
-    prerequisites = {"pm-basic-polyethylene-plastic", "pm-diesel-recipes" },
+    prerequisites = {"pm-basic-polyethylene-plastic", "pm-diesel-recipes"},
     unit =
     {
       count = 75,
@@ -690,7 +690,7 @@ data:extend({
       PM.unlock_recipe("pm-fuel-canister"),
       PM.unlock_recipe("pm-kerosene-canister")
     },
-    prerequisites = {"pm-basic-polyethylene-plastic", "pm-kerosene-recipes" },
+    prerequisites = {"pm-basic-polyethylene-plastic", "pm-kerosene-recipes"},
     unit =
     {
       count = 75,
@@ -713,7 +713,7 @@ data:extend({
       PM.unlock_recipe("pm-fuel-canister"),
       PM.unlock_recipe("pm-petrol-canister")
     },
-    prerequisites = {"pm-basic-polyethylene-plastic", "pm-petrol-recipes" },
+    prerequisites = {"pm-basic-polyethylene-plastic", "pm-petrol-recipes"},
     unit =
     {
       count = 75,
@@ -761,7 +761,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-advanced-advanced-transition-metal-science-pack")
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-refining", "logistic-science-pack" },
+    prerequisites = {"pm-advanced-advanced-transition-metal-refining", "logistic-science-pack"},
     unit =
     {
       count = 150,
@@ -785,7 +785,7 @@ data:extend({
       PM.unlock_recipe("pm-fluid-integrated-circuits"),
       PM.unlock_recipe("pm-fluid-circuit")
     },
-    prerequisites = {"pm-rubber-processing", "pm-gold-processing" },
+    prerequisites = {"pm-rubber-processing", "pm-gold-processing"},
     unit =
     {
       count = 150,
@@ -850,7 +850,7 @@ data:extend({
       PM.unlock_recipe("pm-fuel-oils-reforming"),
       PM.unlock_recipe("pm-oil-residuals-reforming"),
     },
-    prerequisites = {"pm-oil-residual-recipes", "pm-fuel-oils-recipes", "pm-lubricating-oils-recipes", "pm-diesel-recipes", "pm-kerosene-recipes", "pm-naptha-recipes", "pm-petrol-recipes", "pm-refinery-gases-recipes" },
+    prerequisites = {"pm-oil-residual-recipes", "pm-fuel-oils-recipes", "pm-lubricating-oils-recipes", "pm-diesel-recipes", "pm-kerosene-recipes", "pm-naptha-recipes", "pm-petrol-recipes", "pm-refinery-gases-recipes"},
     unit =
     {
       count = 75,
@@ -877,7 +877,7 @@ data:extend({
       PM.unlock_recipe("pm-vanadium-oxide-negative-solution"),
       PM.unlock_recipe("pm-vanadium-redox-battery")
     },
-    prerequisites = {"pm-vanadium-processing" },
+    prerequisites = {"pm-vanadium-processing"},
     unit =
     {
       count = 100,
@@ -931,7 +931,7 @@ data:extend({
       PM.unlock_recipe("pm-coloured-tin-combining"),
       PM.unlock_recipe("pm-tin-plate")
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
       count = 125,
@@ -959,7 +959,7 @@ data:extend({
       PM.unlock_recipe("pm-solder"),
 
     },
-    prerequisites = {"pm-tin-processing", "pm-platinum-processing" },
+    prerequisites = {"pm-tin-processing", "pm-platinum-processing"},
     unit =
     {
       count = 75,
@@ -1070,7 +1070,7 @@ data:extend({
       PM.unlock_recipe("pm-carbon-dioxide-atmospheric-voiding"),
       PM.unlock_recipe("pm-trace-gas-atmospheric-voiding"),
     },
-    prerequisites = {"advanced-circuit" },
+    prerequisites = {"advanced-circuit"},
     unit =
     {
       count = 150,
@@ -1105,7 +1105,7 @@ data:extend({
       PM.unlock_recipe("pm-silver-corrosion-tubing"),
       PM.unlock_recipe("pm-brass-corrosion-tubing"),
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
       count = 125,
@@ -1128,7 +1128,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-science-center")
     },
-    prerequisites = {"advanced-circuit" },
+    prerequisites = {"advanced-circuit"},
     unit =
     {
       count = 200,
@@ -1152,7 +1152,7 @@ data:extend({
       PM.unlock_recipe("pm-CO2-nullifying"),
       PM.unlock_recipe("pm-zirconia-carbon-dioxide-electrolysis")
     },
-    prerequisites = {"chemical-science-pack" },
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
@@ -1179,7 +1179,7 @@ data:extend({
       PM.unlock_recipe("pm-cadnium-melting"),
       PM.unlock_recipe("pm-cadnium-plate-cooling"),
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
       count = 100,
@@ -1208,7 +1208,7 @@ data:extend({
       PM.unlock_recipe("pm-liquid-kasethal"),
       PM.unlock_recipe("pm-kasethal-plate-cooling"),
     },
-    prerequisites = {"pm-tempature-inators-2", "pm-flourine-processing" },
+    prerequisites = {"pm-tempature-inators-2", "pm-flourine-processing"},
     unit =
     {
       count = 100,
@@ -1237,7 +1237,7 @@ data:extend({
       PM.unlock_recipe("pm-helium-gas-atmospheric-voiding"),
       PM.unlock_recipe("pm-argon-gas-atmospheric-voiding"),
     },
-    prerequisites = {"chemical-science-pack", "pm-atmospheric-condensation" },
+    prerequisites = {"chemical-science-pack", "pm-atmospheric-condensation"},
     unit =
     {
       count = 100,
@@ -1263,7 +1263,7 @@ data:extend({
       PM.unlock_recipe("pm-bisphenol-A"),
       PM.unlock_recipe("pm-chemical-resin")
     },
-    prerequisites = {"pm-bromine-processing" },
+    prerequisites = {"pm-bromine-processing"},
     unit =
     {
       count = 200,
@@ -1286,7 +1286,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-advanced-polyethylene-plastic")
     },
-    prerequisites = {"pm-basic-polyethylene-plastic", "pm-chemical-resin" },
+    prerequisites = {"pm-basic-polyethylene-plastic", "pm-chemical-resin"},
     unit =
     {
       count = 250,
@@ -1311,7 +1311,7 @@ data:extend({
       PM.unlock_recipe("pm-air-filter-cleaning"),
       PM.unlock_recipe("pm-air-filterering"),
     },
-    prerequisites = {"pm-CO2-nullifying" },
+    prerequisites = {"pm-CO2-nullifying"},
     unit =
     {
       count = 250,
@@ -1335,7 +1335,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-washing-plant-1")
     },
-    prerequisites = {"pm-fluid-circuit" },
+    prerequisites = {"pm-fluid-circuit"},
     unit =
     {
       count = 50,
@@ -1357,7 +1357,7 @@ data:extend({
       PM.unlock_recipe("pm-washing-plant-2"),
       PM.unlock_recipe("pm-gas-water-electroylsis"),
     },
-    prerequisites = {"fluid-handling" },
+    prerequisites = {"fluid-handling"},
     unit =
     {
       count = 75,
@@ -1382,7 +1382,7 @@ data:extend({
       PM.unlock_recipe("pm-ferrochrominum-carbon-seperation"),
       PM.unlock_recipe("pm-chromic-acid")
     },
-    prerequisites = {"pm-oil-residual-recipes", "pm-tempature-inators" },
+    prerequisites = {"pm-oil-residual-recipes", "pm-tempature-inators"},
     unit =
     {
       count = 75,
@@ -1417,7 +1417,7 @@ data:extend({
       PM.unlock_recipe("pm-chromic-molybdenum-leeching"),
       PM.unlock_recipe("pm-chromic-chrominum-leeching"),
     },
-    prerequisites = {"pm-chrominum-processing" },
+    prerequisites = {"pm-chrominum-processing"},
     unit =
     {
       count = 250,
@@ -1442,7 +1442,7 @@ data:extend({
       PM.unlock_recipe("pm-nickel-tailings-looping"),
       PM.unlock_recipe("pm-palladium-plate")
     },
-    prerequisites = {"pm-diesel-recipes", "pm-advanced-refinery-gas-recipes" },
+    prerequisites = {"pm-diesel-recipes", "pm-advanced-refinery-gas-recipes"},
     unit =
     {
       count = 200,
@@ -1490,7 +1490,7 @@ data:extend({
       PM.unlock_recipe("pm-greenhouse"),
       PM.unlock_recipe("pm-basic-wood-growth")
     },
-    prerequisites = {"chemical-science-pack", "pm-anti-bacterial-multiproperty-multimetals", "pm-wood-processing" },
+    prerequisites = {"chemical-science-pack", "pm-anti-bacterial-multiproperty-multimetals", "pm-wood-processing"},
     unit =
     {
       count = 50,
@@ -1513,7 +1513,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-vacuum-former-2")
     },
-    prerequisites = {"pm-trace-gas-refining", "pm-chemical-resin" },
+    prerequisites = {"pm-trace-gas-refining", "pm-chemical-resin"},
     unit =
     {
       count = 200,
@@ -1541,7 +1541,7 @@ data:extend({
       PM.unlock_recipe("pm-copper-anti-bacterial-panelling"),
       PM.unlock_recipe("pm-brass-anti-bacterial-panelling"),
     },
-    prerequisites = {"chemical-science-pack" },
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 75,
@@ -1568,7 +1568,7 @@ data:extend({
       PM.unlock_recipe("pm-phosphoric-acid-filtering"),
       PM.unlock_recipe("pm-white-to-red-phosphorus")
     },
-    prerequisites = {"chemical-science-pack" },
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 75,
@@ -1597,7 +1597,7 @@ data:extend({
       PM.unlock_recipe("pm-ammonium-vanadate-solution"),
 
     },
-    prerequisites = {"pm-phosphor-processing", "pm-greenhouse" },
+    prerequisites = {"pm-phosphor-processing", "pm-greenhouse"},
     unit =
     {
       count = 150,
@@ -1621,7 +1621,7 @@ data:extend({
       PM.unlock_recipe("pm-wood-strip-washing"),
       PM.unlock_recipe("pm-biomass")
     },
-    prerequisites = {"pm-greenhouse" },
+    prerequisites = {"pm-greenhouse"},
     unit =
     {
       count = 165,
@@ -1647,7 +1647,7 @@ data:extend({
       PM.unlock_recipe("pm-gene-harvesting"),
 
     },
-    prerequisites = {"pm-greenhouse" },
+    prerequisites = {"pm-greenhouse"},
     unit =
     {
       count = 100,
@@ -1676,7 +1676,7 @@ data:extend({
       PM.unlock_recipe("pm-bacteriaed-dish-emptying"),
       PM.unlock_recipe("pm-cyanobacteriaed-dish-emptying")
     },
-    prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering" },
+    prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering"},
     unit =
     {
       count = 100,
@@ -1711,7 +1711,7 @@ data:extend({
       PM.unlock_recipe("pm-CISD2"),
       PM.unlock_recipe("pm-health-bio-module"),
     },
-    prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering", "pm-phosphor-processing", "sulfur-processing", "pm-fertiliser" },
+    prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering", "pm-phosphor-processing", "sulfur-processing", "pm-fertiliser"},
     unit =
     {
       count = 150,
@@ -1735,7 +1735,7 @@ data:extend({
       PM.unlock_recipe("pm-glass-melting"),
       PM.unlock_recipe("pm-glass-cooling")
     },
-    prerequisites = {"pm-tempature-inators" },
+    prerequisites = {"pm-tempature-inators"},
     unit =
     {
       count = 100,
@@ -1758,7 +1758,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-post-transition-metal-science-pack")
     },
-    prerequisites = {"pm-science-center", "pm-crystallisation" },
+    prerequisites = {"pm-science-center", "pm-crystallisation"},
     unit =
     {
       count = 150,
@@ -1787,7 +1787,7 @@ data:extend({
       PM.unlock_recipe("pm-indium-plate-cooling"),
       PM.unlock_recipe("pm-thallium-plate-cooling"),
     },
-    prerequisites = {"pm-tempature-framing", "pm-tempature-inators" },
+    prerequisites = {"pm-tempature-framing", "pm-tempature-inators"},
     unit =
     {
       count = 200,
@@ -1863,7 +1863,7 @@ data:extend({
       PM.unlock_recipe("pm-fluxed-copper-froth-seperation"),
       PM.unlock_recipe("pm-fluxed-phosphor-vapour")
     },
-    prerequisites = {"chemical-science-pack" },
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 125,
@@ -1886,7 +1886,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-electric-mining-drill-2")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 150,
@@ -1930,7 +1930,7 @@ data:extend({
       PM.unlock_recipe("pm-resin-ion-exchange-beads"),
       PM.unlock_recipe("pm-gallium-filtering"),
     },
-    prerequisites = {"advanced-circuit" },
+    prerequisites = {"advanced-circuit"},
     unit =
     {
       count = 150,
@@ -1954,7 +1954,7 @@ data:extend({
       PM.unlock_recipe("pm-indium-electrolysis"),
       PM.unlock_recipe("pm-indium-plate"),
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 200,
@@ -1977,7 +1977,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-solar-panel-2"),
     },
-    prerequisites = {"processing-unit", "solar-energy" },
+    prerequisites = {"processing-unit", "solar-energy"},
     unit =
     {
       count = 400,
@@ -1997,7 +1997,7 @@ data:extend({
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
     "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
-    prerequisites = {"solar-panel-equipment", "pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"solar-panel-equipment", "pm-post-transition-metal-pack-unlock"},
     effects =
     {
       PM.unlock_recipe("pm-solar-panel-equipment-2")
@@ -2030,7 +2030,7 @@ data:extend({
       PM.unlock_recipe("pm-sand-creosote"),
       PM.unlock_recipe("pm-crucible"),
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock" },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
       count = 125,
@@ -2053,7 +2053,7 @@ data:extend({
       PM.unlock_recipe("pm-lead-radiation-resistant-tubing"),
       PM.unlock_recipe("pm-lead-radiation-resistant-panelling")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 100,
@@ -2085,7 +2085,7 @@ data:extend({
       PM.unlock_recipe("pm-polonium-fuel-cell"),
       PM.unlock_recipe("pm-polonium-cell-reprocessing")
     },
-    prerequisites = {"pm-radiation-resistant-multimetals" },
+    prerequisites = {"pm-radiation-resistant-multimetals"},
     unit =
     {
       count = 150,
@@ -2112,7 +2112,7 @@ data:extend({
       PM.unlock_recipe("pm-polymethyl-methacrylate-plastic"),
       PM.unlock_recipe("pm-carbon-monoxide-atmospheric-voiding"),
     },
-    prerequisites = {"chemical-science-pack" },
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 125,
@@ -2136,7 +2136,7 @@ data:extend({
       PM.unlock_recipe("pm-plastic-reactive-non-metals-science-pack"),
       PM.unlock_recipe("pm-plastic-post-transition-metal-science-pack"),
     },
-    prerequisites = {"pm-plastic-science-packs", "pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-plastic-science-packs", "pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 200,
@@ -2165,7 +2165,7 @@ data:extend({
       PM.unlock_recipe("pm-cobaltite-seperation"),
       PM.unlock_recipe("pm-ferrum")
     },
-    prerequisites = {"pm-byproduct-handling", "pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-byproduct-handling", "pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 100,
@@ -2195,7 +2195,7 @@ data:extend({
       PM.unlock_recipe("pm-platinum-melting"),
       PM.unlock_recipe("pm-platinum-plate-cooling")
     },
-    prerequisites = {"pm-tempature-inators" },
+    prerequisites = {"pm-tempature-inators"},
     unit =
     {
       count = 100,
@@ -2223,7 +2223,7 @@ data:extend({
       PM.unlock_recipe("pm-bismuth-crystal-growing"),
       PM.unlock_recipe("pm-molybdenite-crystal-growing")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock", "pm-fertiliser" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock", "pm-fertiliser"},
     unit =
     {
       count = 200,
@@ -2253,7 +2253,7 @@ data:extend({
       PM.unlock_recipe("pm-cobalt-melting"),
       PM.unlock_recipe("pm-cobalt-plate-cooling")
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-tempature-inators" },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-tempature-inators"},
     unit =
     {
       count = 75,
@@ -2275,7 +2275,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-burn-inator")
     },
-    prerequisites = {"pm-oil-cracking-and-reforming", "pm-tempature-inators" },
+    prerequisites = {"pm-oil-cracking-and-reforming", "pm-tempature-inators"},
     unit =
     {
       count = 200,
@@ -2297,7 +2297,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-alkali-metal-science-pack")
     },
-    prerequisites = {"pm-potassium-processing", "pm-caesium-processing", "pm-lithium-processing", "pm-rubidium-processing" },
+    prerequisites = {"pm-potassium-processing", "pm-caesium-processing", "pm-lithium-processing", "pm-rubidium-processing"},
     unit =
     { --ffr MOOD!! i just wanna play botless tf2 and factorio
       count = 300,
@@ -2323,7 +2323,7 @@ data:extend({
       PM.unlock_recipe("pm-magneto-orbital-trap-seperation"),
       PM.unlock_recipe("pm-francium-bombardment"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
       count = 200,
@@ -2347,7 +2347,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-speed-module-4")
     },
-    prerequisites = {"speed-module-3" },
+    prerequisites = {"speed-module-3"},
     unit =
     {
       count = 600,
@@ -2399,7 +2399,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-productivity-module-4")
     },
-    prerequisites = {"productivity-module-3" },
+    prerequisites = {"productivity-module-3"},
     unit =
     {
       count = 600,
@@ -2429,7 +2429,7 @@ data:extend({
       PM.unlock_recipe("pm-potash-potassium"),
       PM.unlock_recipe("pm-potassium-fertiliser")
     },
-    prerequisites = {"pm-fertiliser" },
+    prerequisites = {"pm-fertiliser"},
     unit =
     {
       count = 175,
@@ -2452,7 +2452,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-evaporator-2")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 150,
@@ -2479,7 +2479,7 @@ data:extend({
       PM.unlock_recipe("pm-sodium-carbonate-seperation"),
       PM.unlock_recipe("pm-calcium-chloride-caesium-chloride")
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
       count = 175,
@@ -2503,7 +2503,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-vacuum-tube")
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
       count = 200,
@@ -2534,7 +2534,7 @@ data:extend({
       PM.unlock_recipe("pm-caesium-chloride"),
       PM.unlock_recipe("pm-caesium-chloride-leeching")
     },
-    prerequisites = {"pm-flourine-processing", "pm-potassium-processing" },
+    prerequisites = {"pm-flourine-processing", "pm-potassium-processing"},
     unit =
     {
       count = 375,
@@ -2564,7 +2564,7 @@ data:extend({
       PM.unlock_recipe("poison-capsule"),
       PM.unlock_recipe("slowdown-capsule")
     },
-    prerequisites = {"pm-agar-bacteria-filtering" },
+    prerequisites = {"pm-agar-bacteria-filtering"},
     unit =
     {
       count = 150,
@@ -2589,7 +2589,7 @@ data:extend({
       PM.unlock_recipe("pm-battery-discharger"),
       PM.unlock_recipe("pm-vanadium-battery-charging"),
     },
-    prerequisites = {"pm-voltatic-piles", "advanced-circuit", "pm-vanadium-oxide-redox-batteries" },
+    prerequisites = {"pm-voltatic-piles", "advanced-circuit", "pm-vanadium-oxide-redox-batteries"},
     unit =
     {
       count = 200,
@@ -2611,7 +2611,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-ion-battery")
     },
-    prerequisites = {"pm-ethylene-carbonate" },
+    prerequisites = {"pm-ethylene-carbonate"},
     unit =
     {
       count = 250,
@@ -2635,7 +2635,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery"),
     },
-    prerequisites = {"pm-ethylene-carbonate" },
+    prerequisites = {"pm-ethylene-carbonate"},
     unit =
     {
       count = 250,
@@ -2659,7 +2659,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery-charging"),
     },
-    prerequisites = {"pm-basic-battery-charging", "pm-lithium-sulfur-battery" },
+    prerequisites = {"pm-basic-battery-charging", "pm-lithium-sulfur-battery"},
     unit =
     {
       count = 400,
@@ -2683,7 +2683,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-ethylene-carbonate"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
       count = 150,
@@ -2707,7 +2707,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-logistic-robot")
     },
-    prerequisites = {"pm-lithium-ion-battery", "processing-unit", "logistic-robotics" },
+    prerequisites = {"pm-lithium-ion-battery", "processing-unit", "logistic-robotics"},
     unit =
     {
       count = 400,
@@ -2732,7 +2732,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-construction-robot")
     },
-    prerequisites = {"pm-lithium-ion-battery", "processing-unit", "construction-robotics" },
+    prerequisites = {"pm-lithium-ion-battery", "processing-unit", "construction-robotics"},
     unit =
     {
       count = 400,
@@ -2757,7 +2757,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.10)
     },
-    prerequisites = {"logistic-robotics", "construction-robotics" },
+    prerequisites = {"logistic-robotics", "construction-robotics"},
     unit =
     {
       count = 250,
@@ -2779,7 +2779,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.20)
     },
-    prerequisites = {"worker-robots-speed-2", "worker-robots-storage-2", "pm-robot-battery-capacity-1" },
+    prerequisites = {"worker-robots-speed-2", "worker-robots-storage-2", "pm-robot-battery-capacity-1"},
     unit =
     {
       count = 400,
@@ -2803,7 +2803,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.25)
     },
-    prerequisites = {"worker-robots-speed-3", "worker-robots-storage-3", "pm-robot-battery-capacity-2" },
+    prerequisites = {"worker-robots-speed-3", "worker-robots-storage-3", "pm-robot-battery-capacity-2"},
     unit =
     {
       count = 600,
@@ -2827,7 +2827,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.30)
     },
-    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-3" },
+    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-3"},
     unit =
     {
       count = 600,
@@ -2855,7 +2855,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-air-filter-cleaning"),
       PM.unlock_recipe("pm-better-air-filterering"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-pollution-filtering" },
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-pollution-filtering"},
     unit =
     {
       count = 425,
@@ -2888,7 +2888,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-carbon-dioxide-atmosphere-filtering"),
       PM.unlock_recipe("pm-advanced-trace-gas-atmosphere-filtering"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-atmospheric-condensation" },
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-atmospheric-condensation"},
     unit =
     {
       count = 375,
@@ -2916,7 +2916,7 @@ data:extend({
       PM.unlock_recipe("pm-trace-bromine-condensation"),
       PM.unlock_recipe("pm-vinyl-bromide")
     },
-    prerequisites = {"chemical-science-pack" },
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
@@ -2941,7 +2941,7 @@ data:extend({
       PM.unlock_recipe("pm-better-stainless-steel-alloy"),
       PM.unlock_recipe("pm-kasethal-plate")
     },
-    prerequisites = {"pm-vanadium-processing", "pm-chrominum-processing" },
+    prerequisites = {"pm-vanadium-processing", "pm-chrominum-processing"},
     unit =
     {
       count = 75,
@@ -2968,7 +2968,7 @@ data:extend({
       PM.unlock_recipe("pm-tetrafluoroethylene"),
       PM.unlock_recipe("pm-polytetrafluoroethylene-plastic"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
       count = 350,
@@ -3000,7 +3000,7 @@ data:extend({
       PM.unlock_recipe("pm-lithium-chloride-electrolysis"),
       PM.unlock_recipe("pm-bromine-leeching"),
     },
-    prerequisites = {"pm-flourine-processing", "pm-bromine-processing" },
+    prerequisites = {"pm-flourine-processing", "pm-bromine-processing"},
     unit =
     {
       count = 375,
@@ -3023,7 +3023,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-electrolysis-plant-2")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 200,
@@ -3049,7 +3049,7 @@ data:extend({
       PM.unlock_recipe("pm-oleum"),
       PM.unlock_recipe("pm-better-sulfuric-acid"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-caesium-processing" },
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-caesium-processing"},
     unit =
     {
       count = 250,
@@ -3078,7 +3078,7 @@ data:extend({
       PM.unlock_recipe("pm-30-to-50-rubidium-alum"),
       PM.unlock_recipe("pm-rubidium-alum-seperation"),
     },
-    prerequisites = {"pm-caesium-processing", "pm-potassium-processing" },
+    prerequisites = {"pm-caesium-processing", "pm-potassium-processing"},
     unit =
     {
       count = 375,
@@ -3101,7 +3101,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-tinned-glass-melting")
     },
-    prerequisites = {"pm-tempature-inators-2", "pm-glass-melting" },
+    prerequisites = {"pm-tempature-inators-2", "pm-glass-melting"},
     unit =
     {
       count = 150,
@@ -3129,7 +3129,7 @@ data:extend({
       PM.unlock_recipe("pm-hydrogen-iodide-seperation"),
       PM.unlock_recipe("pm-iodine-vanadate-solution-seperation"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
       count = 200,
@@ -3154,7 +3154,7 @@ data:extend({
       PM.unlock_recipe("pm-lead-liquid-solder"),
       PM.unlock_recipe("pm-bismuth-liquid-solder"),
     },
-    prerequisites = {"pm-copper-tin-solder", "pm-flourine-processing", "pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-copper-tin-solder", "pm-flourine-processing", "pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 250,
@@ -3202,7 +3202,7 @@ data:extend({
       PM.unlock_recipe("pm-plastic-alkali-metal-science-pack"),
       PM.unlock_recipe("pm-plastic-metalloid-science-pack"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"},
     unit =
     {
       count = 500,
@@ -3229,7 +3229,7 @@ data:extend({
       PM.unlock_recipe("pm-molten-potassium-salts"),
       PM.unlock_recipe("pm-potassium-salt-glass")
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock" },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
       count = 300,
@@ -3573,7 +3573,7 @@ data:extend({
       PM.unlock_recipe("express-underground-belt"),
       PM.unlock_recipe("express-splitter")
     },
-    prerequisites = {"logistics-3", "low-density-structure", "advanced-circuit", "production-science-pack" },
+    prerequisites = {"logistics-3", "low-density-structure", "advanced-circuit", "production-science-pack"},
     unit =
     {
       count = 600,
@@ -3647,7 +3647,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-FUCK-advanced-transition-metal-science-pack")
     },
-    prerequisites = {"pm-FUCK-transition-metal-science-pack" },
+    prerequisites = {"pm-FUCK-transition-metal-science-pack"},
     upgrade = true,
     unit =
     {
@@ -3672,7 +3672,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-FUCK-advanced-advanced-transition-metal-science-pack")
     },
-    prerequisites = {"pm-FUCK-advanced-transition-metal-science-pack" },
+    prerequisites = {"pm-FUCK-advanced-transition-metal-science-pack"},
     upgrade = true,
     unit =
     {
@@ -3697,7 +3697,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-FUCK-post-transition-metal-science-pack")
     },
-    prerequisites = {"pm-FUCK-advanced-advanced-transition-metal-science-pack" },
+    prerequisites = {"pm-FUCK-advanced-advanced-transition-metal-science-pack"},
     upgrade = true,
     unit =
     {
@@ -3723,7 +3723,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-FUCK-reactive-non-metals-science-pack")
     },
-    prerequisites = {"pm-FUCK-advanced-advanced-transition-metal-science-pack" },
+    prerequisites = {"pm-FUCK-advanced-advanced-transition-metal-science-pack"},
     upgrade = true,
     unit =
     {
@@ -3744,7 +3744,7 @@ data:extend({
     name = "toolbelt-2",
     icon_size = 256,
     icons = util.technology_icon_constant_capacity("__base__/graphics/technology/toolbelt.png"),
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "toolbelt" },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "toolbelt"},
     effects =
     {
       PM.modify("character-inventory-slots-bonus", 10)
@@ -3797,7 +3797,7 @@ data:extend({
     {
       PM.modify("worker-robot-storage", 1)
     },
-    prerequisites = {"pm-worker-robots-storage-4" },
+    prerequisites = {"pm-worker-robots-storage-4"},
     unit =
     {
       count = 650,

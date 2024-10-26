@@ -10,7 +10,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-bio-lab")
     },
-    prerequisites = { "pm-bio-modules", "chemical-science-pack" },
+    prerequisites = { "pm-bio-modules", "chemical-science-pack"},
     unit =
     {
       count = 175,
@@ -36,7 +36,7 @@ data:extend({
       PM.modify("character-reach-distance", 1),
       PM.modify("character-running-speed", 0.1)
     },
-    prerequisites = { "pm-bio-laboratory" },
+    prerequisites = { "pm-bio-laboratory"},
     unit =
     {
       count = 100,
@@ -59,7 +59,7 @@ data:extend({
       PM.modify("character-reach-distance", 1),
       PM.modify("character-running-speed", 0.1)
     },
-    prerequisites = { "pm-bio-module-agility-1" },
+    prerequisites = { "pm-bio-module-agility-1"},
     unit =
     {
       count = 300,
@@ -82,7 +82,7 @@ data:extend({
       PM.modify("character-reach-distance", 2),
       PM.modify("character-running-speed", 0.2)
     },
-    prerequisites = { "pm-bio-module-agility-2" },
+    prerequisites = { "pm-bio-module-agility-2"},
     unit =
     {
       count = 700,
@@ -105,7 +105,7 @@ data:extend({
       PM.modify("character-reach-distance", 2),
       PM.modify("character-running-speed", 0.2)
     },
-    prerequisites = { "pm-bio-module-agility-3" },
+    prerequisites = { "pm-bio-module-agility-3"},
     unit =
     {
       count = 1400,
@@ -128,7 +128,7 @@ data:extend({
       PM.modify("character-mining-speed", 0.1),
       PM.modify("character-inventory-slots-bonus", 10)
     },
-    prerequisites = { "pm-bio-laboratory" },
+    prerequisites = { "pm-bio-laboratory"},
     unit =
     {
       count = 100,
@@ -151,7 +151,7 @@ data:extend({
       PM.modify("character-mining-speed", 0.1),
       PM.modify("character-inventory-slots-bonus", 10)
     },
-    prerequisites = { "pm-bio-module-strength-1" },
+    prerequisites = { "pm-bio-module-strength-1"},
     unit =
     {
       count = 300,
@@ -174,7 +174,7 @@ data:extend({
       PM.modify("character-mining-speed", 0.2),
       PM.modify("character-inventory-slots-bonus", 12)
     },
-    prerequisites = { "pm-bio-module-strength-2" },
+    prerequisites = { "pm-bio-module-strength-2"},
     unit =
     {
       count = 700,
@@ -197,7 +197,7 @@ data:extend({
       PM.modify("character-mining-speed", 0.2),
       PM.modify("character-inventory-slots-bonus", 12)
     },
-    prerequisites = { "pm-bio-module-strength-3" },
+    prerequisites = { "pm-bio-module-strength-3"},
     unit =
     {
       count = 1400,
@@ -220,7 +220,7 @@ data:extend({
       PM.modify("character-health-bonus", 25),
       PM.modify("character-crafting-speed", 0.10)
     },
-    prerequisites = { "pm-bio-laboratory" },
+    prerequisites = { "pm-bio-laboratory"},
     unit =
     {
       count = 100,
@@ -243,7 +243,7 @@ data:extend({
       PM.modify("character-health-bonus", 25),
       PM.modify("character-crafting-speed", 0.10)
     },
-    prerequisites = { "pm-bio-module-health-1" },
+    prerequisites = { "pm-bio-module-health-1"},
     unit =
     {
       count = 300,
@@ -266,7 +266,7 @@ data:extend({
       PM.modify("character-health-bonus", 50),
       PM.modify("character-crafting-speed", 0.10)
     },
-    prerequisites = { "pm-bio-module-health-2" },
+    prerequisites = { "pm-bio-module-health-2"},
     unit =
     {
       count = 700,
@@ -289,7 +289,7 @@ data:extend({
       PM.modify("character-health-bonus", 50),
       PM.modify("character-crafting-speed", 0.20)
     },
-    prerequisites = { "pm-bio-module-health-3" },
+    prerequisites = { "pm-bio-module-health-3"},
     unit =
     {
       count = 1400,
