@@ -102,7 +102,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-naptha", 15, "fluid"),
+      PM.ingredient("pm-naptha", 5, "fluid"),
       PM.ingredient("pm-butane-gas", 10, "fluid"),
     },
     results =
@@ -232,7 +232,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-bitumen", 2),
-      PM.ingredient("water", 20, "fluid")
+      PM.ingredient("water", 40, "fluid")
     },
     results =
     {
@@ -400,7 +400,8 @@ data:extend({
       PM.ingredient("sulfur", 2),
       PM.ingredient("lubricant", 20, "fluid")
     },
-    results = {
+    results = 
+    {
       PM.product("pm-solid-lubricant", 1)
     }
   },
