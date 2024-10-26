@@ -2,37 +2,17 @@ local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "technology",
-    name = "pm-welder-1-unlock",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/welder-unlock.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-welder"),
-      PM.unlock_recipe("pm-hydrogen-fuel")
-    },
-    prerequisites = {"automation"},
-    unit =
-    {
-      count = 15,
-      ingredients =
-      {
-        {"automation-science-pack", 1}
-      },
-      time = 5
-    }
-  },
-  {
-    type = "technology",
-    name = "pm-alloying",
+    name = "pm-brass-plate-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/alloying-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-welder"),
+      PM.unlock_recipe("pm-hydrogen-fuel")
       PM.unlock_recipe("pm-brass-plate"),
       PM.unlock_recipe("pm-brass-cog")
     },
-    prerequisites = {"pm-welder-1-unlock" },
+    prerequisites = {"automation-science-pack"},
     unit =
     {
       count = 25,
@@ -87,16 +67,7 @@ data:extend({
 
     },
     prerequisites = {"pm-transition-metal-refining" },
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-      },
-      time = 10
-    },
-
+    
   },
   {
     type = "technology",
