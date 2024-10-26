@@ -988,6 +988,11 @@ data.raw["technology"]["productivity-module-3"].unit.ingredients =
   {"pm-alkali-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["steam-power"].effects = 
+{
+  PM.unlock_recipe("pm-dirty-boiler"),
+  PM.unlock_recipe("steam-engine")
+}
 
 data.raw["technology"]["productivity-module"].icon_size = 256
 data.raw["technology"]["productivity-module"].icon =

@@ -1853,14 +1853,10 @@ data:extend({
       PM.unlock_recipe("pm-hydrochloric-acid"),
     },
     prerequisites = {},
-    unit =
+    research_trigger = 
     {
-      count = 5,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-      },
-      time = 10,
+      type = "build-entity",
+      entity = "pm-evaporator"
     }
   },
   {

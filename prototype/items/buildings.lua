@@ -589,16 +589,11 @@ data:extend({
   },
 })
 
-local OilRefinerySubgroup = data.raw["item"]["oil-refinery"]
+data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
+data.raw["item"]["oil-refinery"].order = "b"
 
-OilRefinerySubgroup.subgroup = "pm-oil-machine"
-OilRefinerySubgroup.order = "b"
-
-
-local ChemPlantSubgroup = data.raw["item"]["chemical-plant"]
-
-ChemPlantSubgroup.subgroup = "pm-oil-machine"
-ChemPlantSubgroup.order = "c"
+data.raw["item"]["chemical-plant"].subgroup = "pm-oil-machine"
+data.raw["item"]["chemical-plant"].order = "c"
 
 data.raw["item"]["lab"].subgroup = "pm-science-machine"
 data.raw["item"]["lab"].order = "a"

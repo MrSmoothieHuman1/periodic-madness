@@ -1074,7 +1074,8 @@ data:extend({
 
 } --[[@as data.RecipePrototype[] ]])
 
-data.raw["recipe"]["boiler"].enabled = false
+data.raw["recipe"]["pipe-to-ground"].enabled = true
+data.raw["recipe"]["pipe"].enabled = true
 
 data.raw["recipe"]["centrifuge"].order = "x"
 
