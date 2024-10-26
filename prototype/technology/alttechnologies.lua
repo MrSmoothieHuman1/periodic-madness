@@ -102,7 +102,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/copper-fiberoptic-cable.png",
     effects =
     {
-      PM.unlock_recipe("pm-aluminum-fiberoptic-cable")
+      PM.unlock_recipe("pm-aluminium-fiberoptic-cable")
     },
     prerequisites = {"pm-fiberoptics", "electronics"},
     unit =

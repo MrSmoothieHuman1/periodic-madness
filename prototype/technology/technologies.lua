@@ -522,7 +522,6 @@ data:extend({
     {
       PM.unlock_recipe("pm-catalyst-container"),
       PM.unlock_recipe("pm-cobalt-catalyst"),
-      PM.unlock_recipe("solid-fuel-from-heavy-oil"),
       PM.unlock_recipe("pm-fuel-oil-hydrosulfurisation")
     },
     prerequisites = {"advanced-oil-processing"},

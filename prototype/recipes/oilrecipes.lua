@@ -35,17 +35,18 @@ data:extend({
     order = "x",
     enabled = false,
     energy_required = 4,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-oil-residuals", 30, "fluid"),
-      PM.ingredient("pm-fiberglass", 5)
+      PM.ingredient("pm-glass-fibers", 5)
     },
     results =
     {
       PM.product_range("pm-residual-chunks", 4, 6),
       PM.product("pm-bitumen", 2),
       PM.product("sulfur", 4),
-      PM.catalyst_range("pm-fiberglass", 3, 5, 5)
+      PM.catalyst_range("pm-glass-fibers", 3, 5, 5)
     }
   },
   {
@@ -75,18 +76,39 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/butene-cracking.png",
     energy_required = 1,
-    category = "chemistry",
+    category = "pm-washing",
     subgroup = "pm-plastics",
     order = "a",
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-butene-gas", 10, "fluid"),
+      PM.ingredient("pm-naptha", 5, "fluid"),
+      PM.ingredient("pm-butene-gas", 10, "fluid")
     },
     results =
     {
       PM.product_range("pm-ethylene-gas", 4, 8, "fluid"),
-      PM.product("pm-refinery-gases", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-butane-cracking",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/butane-cracking.png",
+    energy_required = 1,
+    category = "pm-washing",
+    subgroup = "pm-plastics",
+    order = "b",
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-naptha", 15, "fluid"),
+      PM.ingredient("pm-butane-gas", 10, "fluid"),
+    },
+    results =
+    {
+      PM.product("pm-ethylene-gas", 18, "fluid"),
+      PM.product_range("pm-hydrogen-gas", 3, 6, "fluid")
     }
   },
   {
@@ -182,7 +204,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/bitumen-clearing.png",
     energy_required = 6,
-    category = "advanced-crafting",
+    category = "pm-crushing",
     subgroup = "pm-oil",
     order = "y",
     enabled = false,
@@ -449,26 +471,6 @@ data:extend({
       PM.product_chance("pm-catalyst-container", 1, 0.9),
       PM.product_range_chance("pm-palladium-hydride", 1, 3, 0.5),
       PM.product_range("pm-butane-gas", 20, 30, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-butane-cracking",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/butane-cracking.png",
-    energy_required = 1,
-    category = "chemistry",
-    subgroup = "pm-plastics",
-    order = "b",
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-butane-gas", 10, "fluid"),
-    },
-    results =
-    {
-      PM.product("pm-ethylene-gas", 18, "fluid"),
-      PM.product_range("pm-hydrogen-gas", 3, 6, "fluid")
     }
   },
   {
