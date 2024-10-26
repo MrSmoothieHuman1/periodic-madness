@@ -289,7 +289,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-diesel-cracking",
+    name = "pm-diesel-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/diesel-cracking.png",
     energy_required = 2,
@@ -496,7 +496,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-fuel-oil-cracking",
+    name = "pm-fuel-oil-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/fuel-oil-cracking.png",
     category = "oil-processing",

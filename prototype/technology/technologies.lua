@@ -522,7 +522,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-catalyst-container"),
       PM.unlock_recipe("pm-cobalt-catalyst"),
-      PM.unlock_recipe("pm-fuel-oil-hydrosulfurisation")
+      PM.unlock_recipe("pm-fuel-oil-hydrosulfurisation"),
+      PM.unlock_recipe("pm-fuel-oils-seperation")
     },
     prerequisites = {"advanced-oil-processing"},
     unit =
@@ -567,7 +568,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/diesel-recipes.png",
     effects =
     {
-      PM.unlock_recipe("pm-diesel-cracking"),
+      PM.unlock_recipe("pm-diesel-seperation"),
       PM.unlock_recipe("pm-legendary-diesel-to-solid-fuel"),
       PM.unlock_recipe("pm-common-diesel-to-solid-fuel"),
       PM.unlock_recipe("pm-common-diesel-cracking"),
@@ -3177,7 +3178,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-metalloid-science-pack")
     },
-    prerequisites = {"pm-boron-processing", "pm-tellurium-processing"},
+    prerequisites = {"pm-boron-processing", "pm-tellurium-processing", "pm-arsenic-antimony-processing"},
     unit =
     {
       count = 300,
