@@ -30,12 +30,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/stainless-steel-unlock.png",
     effects =
     {
-
       PM.unlock_recipe("pm-stainless-steel-alloy"),
       PM.unlock_recipe("pm-stainless-steel-chest"),
       PM.unlock_recipe("pm-stainless-steel-basic-framing"),
       PM.unlock_recipe("pm-stainless-steel-panelling"),
-
     },
     prerequisites = {"steel-processing", "pm-advanced-advanced-transition-metal-pack-unlock" },
     unit =
@@ -473,17 +471,12 @@ data:extend({
       PM.unlock_recipe("pm-bitumen-washing"),
       PM.unlock_recipe("pm-bitumen-creosote")
     },
-    prerequisites = {"oil-processing" },
-    unit =
+    prerequisites = {"oil-processing"},
+    research_trigger = 
     {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1}
-      },
-      time = 15
+      type = "craft-fluid",
+      fluid = "pm-oil-residuals",
+      amount = 75
     }
   },
   {
@@ -495,17 +488,12 @@ data:extend({
     {
       PM.unlock_recipe("pm-butane-cracking")
     },
-    prerequisites = {"oil-processing" },
-    unit =
+    prerequisites = {"oil-processing"},
+    research_trigger = 
     {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1}
-      },
-      time = 30
+      type = "craft-fluid",
+      fluid = "pm-naptha",
+      amount = 75
     }
   },
   {
@@ -517,17 +505,12 @@ data:extend({
     {
       PM.unlock_recipe("pm-refinery-gases-refining")
     },
-    prerequisites = {"oil-processing" },
-    unit =
+    prerequisites = {"oil-processing"},
+    research_trigger = 
     {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1}
-      },
-      time = 15
+      type = "craft-fluid",
+      fluid = "pm-refinery-gases",
+      amount = 75
     }
   },
   {
@@ -542,7 +525,7 @@ data:extend({
       PM.unlock_recipe("solid-fuel-from-heavy-oil"),
       PM.unlock_recipe("pm-fuel-oil-hydrosulfurisation")
     },
-    prerequisites = {"advanced-oil-processing" },
+    prerequisites = {"advanced-oil-processing"},
     unit =
     {
       count = 50,
@@ -565,7 +548,7 @@ data:extend({
       PM.unlock_recipe("lubricant"),
       PM.unlock_recipe("pm-solid-lubricant")
     },
-    prerequisites = {"advanced-oil-processing" },
+    prerequisites = {"advanced-oil-processing"},
     unit =
     {
       count = 50,

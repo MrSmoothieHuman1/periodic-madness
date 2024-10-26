@@ -12,7 +12,7 @@ data:extend({
     subgroup = "pm-oil",
     order = "a",
     enabled = false,
-    energy_required = 8,
+    energy_required = 6,
     allow_productivity = true,
     ingredients =
     {
@@ -38,14 +38,14 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-oil-residuals", 30, "fluid"),
-      PM.ingredient("pm-naptha", 30, "fluid")
+      PM.ingredient("pm-fiberglass", 5)
     },
     results =
     {
       PM.product_range("pm-residual-chunks", 4, 6),
-      PM.product("pm-refinery-gases", 15, "fluid"),
       PM.product("pm-bitumen", 2),
-      PM.product("sulfur", 4)
+      PM.product("sulfur", 4),
+      PM.catalyst_range("pm-fiberglass", 3, 5, 5)
     }
   },
   {
@@ -99,7 +99,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-butene-gas", 15, "fluid"),  --the number between 4 and 6 key isnt working, best i got
+      PM.ingredient("pm-butene-gas", 15, "fluid"),
       PM.ingredient("pm-nickel-plate", 3)
     },
     results =
@@ -1068,33 +1068,21 @@ data:extend({
       PM.product("pm-oil-residuals", 30, "fluid")
     }
   },
-  -- Solid Lubricant > Heavy Lubricant > light Lubricant
-  -- some recipes *can* take multiple, but im gonna try to restrict it
 } --[[@as data.RecipePrototype[] ]])
 
-local LubricantFix = data.raw["recipe"]["lubricant"]
-LubricantFix.subgroup = "pm-oil"
-LubricantFix.order = "e"
-LubricantFix.ingredients =
+data.raw["recipe"]["lubricant"].subgroup = "pm-oil"
+data.raw["recipe"]["lubricant"].order = "e"
+data.raw["recipe"]["lubricant"].ingredients =
 {
   PM.ingredient("pm-lubricating-oils", 12, "fluid"),
   PM.ingredient("pm-molybdenum-disulfide", 2)
 }
-LubricantFix.results =
+data.raw["recipe"]["lubricant"].results =
 {
   PM.product("lubricant", 10, "fluid"),
 }
 
-local HeavyOilSolidFuelFix = data.raw["recipe"]["solid-fuel-from-heavy-oil"]
-
-HeavyOilSolidFuelFix.icon_size = 64
-HeavyOilSolidFuelFix.icon = "__periodic-madness__/graphics/icons/recipes/fuel-oils-to-solid-fuel.png"
-HeavyOilSolidFuelFix.subgroup = "pm-fuels"
-HeavyOilSolidFuelFix.order = "g"
-HeavyOilSolidFuelFix.ingredients =
-{
-  PM.ingredient("pm-fuel-oils", 20, "fluid")
-}
+data.raw["recipe"]["solid-fuel-from-heavy-oil"] = nil
 
 data.raw["recipe"]["coal-liquefaction"].subgroup = "pm-oil"
 data.raw["recipe"]["coal-liquefaction"].order = "c"

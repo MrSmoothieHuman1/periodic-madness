@@ -250,7 +250,7 @@ data:extend({
     type = "recipe",
     name = "pm-aluminium-fiberoptic-cable",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-fiberoptic-cable.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/aluminium-fiberoptic-cable.png",
     subgroup = "pm-alternative-recipes",
     category = "crafting-with-fluid",
     energy_required = 5,
@@ -259,11 +259,11 @@ data:extend({
     {
       PM.ingredient("pm-pheonlic-resin", 10, "fluid"),
       PM.ingredient("pm-glass-fibers", 20),
-      PM.ingredient("pm-aluminium-plate", 4)
+      PM.ingredient("pm-aluminium-plate", 6)
     },
     results =
     {
-      PM.product("pm-fiberoptic-cable", 2)
+      PM.product("pm-fiberoptic-cable", 3)
     }
   },
   {
