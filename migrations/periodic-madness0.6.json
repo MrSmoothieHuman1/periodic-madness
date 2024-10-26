@@ -25,6 +25,8 @@
 		["pm-effectivity-module-4", "pm-efficiency-module-4"]
 	],
 	"technology": [
-		["pm-effectivity-module-4", "pm-efficiency-module-4"]
+		["pm-effectivity-module-4", "pm-efficiency-module-4"],
+		["pm-alloying", "pm-brass-plate"],
+		["pm-copper-fiberoptics", "pm-aluminium-fiberoptics"]
 	]
 }

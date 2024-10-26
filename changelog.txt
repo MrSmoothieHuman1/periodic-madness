@@ -82,6 +82,9 @@ Date: 2024-08-09
     - Deleted the filter long-handed inserter.
     - Began trimming old, mostly ex-alt technologies. They might get added back later, but for now im slimming it down.
     - Changed (fusion) fission reactor equipment technologies to a trigger technology.
+    - Merged Welder 1 and Basic Alloying into one tech, and re-named it to Brass Processing.
+    - Changed Crude oil fractional distillation to a trigger technology.
+    - Changed Chlorine processing to a trigger technology.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

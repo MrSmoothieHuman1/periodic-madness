@@ -114,7 +114,7 @@ data.raw["technology"]["oil-processing"].effects =
 }
 data.raw["technology"]["oil-processing"].prerequisites = {"fluid-handling", "pm-multimetal-multiproperty"}
 
-data.raw["technology"]["steel-processing"].prerequisites = {"pm-alloying"}
+data.raw["technology"]["steel-processing"].prerequisites = {"pm-brass-processing"}
 data.raw["technology"]["steel-processing"].icon_size = 64
 data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
 
@@ -133,10 +133,9 @@ data.raw["technology"]["advanced-oil-processing"].unit = nil
 data.raw["technology"]["advanced-oil-processing"].research_trigger = 
 {
   type = "craft-item",
-  name = "pm-polyethylene-plastic",
+  item = "pm-polyethylene-plastic",
   amount = 4
 }
-
 
 data.raw["technology"]["engine"].unit.ingredients =
 {

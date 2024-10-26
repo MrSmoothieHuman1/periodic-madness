@@ -2,7 +2,7 @@ local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "technology",
-    name = "pm-brass-plate-processing",
+    name = "pm-brass-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/alloying-tech.png",
     effects =
@@ -12,7 +12,7 @@ data:extend({
       PM.unlock_recipe("pm-brass-plate"),
       PM.unlock_recipe("pm-brass-cog")
     },
-    prerequisites = {"automation-science"},
+    prerequisites = {"automation-science-pack"},
     unit =
     {
       count = 25,
@@ -449,7 +449,7 @@ data:extend({
       PM.unlock_recipe("pm-steel-panelling")
 
     },
-    prerequisites = {"pm-alloying", "steel-processing" },
+    prerequisites = {"pm-brass-processing", "steel-processing" },
     unit =
     {
       count = 50,

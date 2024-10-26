@@ -248,7 +248,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-copper-fiberoptic-cable",
+    name = "pm-aluminium-fiberoptic-cable",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/copper-fiberoptic-cable.png",
     subgroup = "pm-alternative-recipes",
@@ -259,7 +259,7 @@ data:extend({
     {
       PM.ingredient("pm-pheonlic-resin", 10, "fluid"),
       PM.ingredient("pm-glass-fibers", 20),
-      PM.ingredient("copper-cable", 4)
+      PM.ingredient("pm-aluminium-plate", 4)
     },
     results =
     {

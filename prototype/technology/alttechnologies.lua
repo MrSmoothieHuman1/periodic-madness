@@ -97,14 +97,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-copper-fiberoptics",
+    name = "pm-aluminium-fiberoptics",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/copper-fiberoptic-cable.png",
     effects =
     {
-      PM.unlock_recipe("pm-copper-fiberoptic-cable")
+      PM.unlock_recipe("pm-aluminum-fiberoptic-cable")
     },
-    prerequisites = { "pm-fiberoptics", "electronics" },
+    prerequisites = {"pm-fiberoptics", "electronics"},
     unit =
     {
       count = 50,
