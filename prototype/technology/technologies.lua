@@ -1869,7 +1869,7 @@ data:extend({
       PM.unlock_recipe("pm-molten-framing"),
       PM.unlock_recipe("pm-cooling-framing")
     },
-    prerequisites = {"pm-indium-processing" },
+    prerequisites = {"pm-indium-processing"},
     unit =
     {
       count = 125,
