@@ -739,7 +739,7 @@ data:extend({
       PM.unlock_recipe("pm-palladium-hydride-crushing"),
       PM.unlock_recipe("pm-butene-to-butane")
     },
-    prerequisites = {"pm-diesel-recipes", "pm-refinery-gases-recipes" },
+    prerequisites = {"pm-diesel-recipes", "pm-refinery-gases-recipes"},
     unit =
     {
       count = 100,
@@ -1467,7 +1467,7 @@ data:extend({
       PM.unlock_recipe("pm-vanadate-solution"),
       PM.unlock_recipe("pm-vanadate-solution-seperation")
     },
-    prerequisites = {"pm-oil-residual-recipes", "sulfur-processing" },
+    prerequisites = {"pm-oil-residual-recipes", "sulfur-processing"},
     unit =
     {
       count = 75,
@@ -3178,7 +3178,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-metalloid-science-pack")
     },
-    prerequisites = {"pm-boron-processing", "pm-tellurium-processing", "pm-arsenic-antimony-processing"},
+    prerequisites = {"pm-boron-processing", "pm-tellurium-processing", "pm-arsenic-antimony-processing", "pm-silicon-processing"},
     unit =
     {
       count = 300,
@@ -3256,7 +3256,7 @@ data:extend({
       PM.unlock_recipe("pm-borosilicate-science-bottle"),
       PM.unlock_recipe("pm-borosilicate-glass-fibers")
     },
-    prerequisites = {"pm-metalloid-pack-unlock" },
+    prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
     {
       count = 300,
@@ -3285,7 +3285,7 @@ data:extend({
       PM.unlock_recipe("pm-borax"),
       PM.unlock_recipe("pm-boric-oxide"),
     },
-    prerequisites = {"pm-indium-processing" },
+    prerequisites = {"pm-indium-processing"},
     unit =
     {
       count = 350,
@@ -3312,7 +3312,7 @@ data:extend({
       PM.unlock_recipe("pm-hydrotellurites"),
       PM.unlock_recipe("pm-tellurium-oxide-seperation"),
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock" },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
       count = 350,
@@ -3399,6 +3399,29 @@ data:extend({
       PM.unlock_recipe("pm-germanium-sulfide-to-oxide"),
       PM.unlock_recipe("pm-germanium-oxide-to-tetrachloride"),
       PM.unlock_recipe("pm-germanium-tetrachloride-seperation")
+    },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-silicon-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =

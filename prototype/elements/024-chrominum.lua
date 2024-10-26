@@ -162,9 +162,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-chromic-acid-neutralisation",
-    -- FIXME: add a proper icon!!
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/acidic-water-to-sulfuric-acid.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/chromic-acid-neutralisation.png",
     energy_required = 2,
     category = "chemistry",
     subgroup = "pm-chrominum-tm",
