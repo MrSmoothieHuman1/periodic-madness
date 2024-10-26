@@ -8,11 +8,11 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-welder"),
-      PM.unlock_recipe("pm-hydrogen-fuel")
+      PM.unlock_recipe("pm-hydrogen-fuel"),
       PM.unlock_recipe("pm-brass-plate"),
       PM.unlock_recipe("pm-brass-cog")
     },
-    prerequisites = {"automation-science-pack"},
+    prerequisites = {"automation-science"},
     unit =
     {
       count = 25,
@@ -22,7 +22,6 @@ data:extend({
       },
       time = 5
     }
-
   },
   {
     type = "technology",
@@ -67,7 +66,16 @@ data:extend({
 
     },
     prerequisites = {"pm-transition-metal-refining" },
-    
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+      },
+      time = 10
+    },
+
   },
   {
     type = "technology",
@@ -653,7 +661,7 @@ data:extend({
       PM.unlock_recipe("pm-ethylene-polymerisation"),
       PM.unlock_recipe("plastic-bar")
     },
-    prerequisites = {"pm-refinery-gases-recipes", "pm-naptha-recipes", "pm-oil-residual-recipes" },
+    prerequisites = {"pm-refinery-gases-recipes", "pm-naptha-recipes", "pm-oil-residual-recipes"},
     unit =
     {
       count = 50,

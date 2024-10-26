@@ -129,23 +129,14 @@ data.raw["technology"]["advanced-oil-processing"].effects =
   PM.unlock_recipe("pm-crude-oil-fractional-distillation")
 }
 data.raw["technology"]["advanced-oil-processing"].prerequisites = { "oil-processing", "pm-basic-polyethylene-plastic" }
-data.raw["technology"]["advanced-oil-processing"].unit =
+data.raw["technology"]["advanced-oil-processing"].unit = nil
+data.raw["technology"]["advanced-oil-processing"].research_trigger = 
 {
-  count = 200,
-  ingredients =
-  {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-    {"pm-advanced-advanced-transition-metal-science-pack", 1}
-  },
-  time = 30
+  type = "craft-item",
+  name = "pm-polyethylene-plastic",
+  amount = 4
 }
-data.raw["technology"]["advanced-oil-processing"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1}
-}
+
 
 data.raw["technology"]["engine"].unit.ingredients =
 {
