@@ -55,6 +55,20 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-naptha-canister",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/naptha-canister.png",
+    fuel_value = "32MJ",
+    fuel_category = "chemical",
+    fuel_acceleration_multiplier = 1,
+    fuel_top_speed_multiplier = 1.05,
+    subgroup = "pm-fuels",
+    order = "f",
+    spent_result = "pm-empty-fuel-canister",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "pm-hydrogen-fuel",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/hydrogen-fuel.png",

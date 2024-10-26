@@ -3611,7 +3611,31 @@ data:extend({
         },
         time = 60,
       }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-electronic-components",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      
     },
+    prerequisites = {"pm-metalloid-science-pack-unlock"},
+    unit =
+      {
+        count = 300,
+        ingredients = 
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+        },
+        time = 60,
+      }
+  },
 
   {
     type = "technology",

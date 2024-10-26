@@ -664,6 +664,7 @@ data.raw["technology"]["logistic-system"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
+  {"pm-post-transistion-metal-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
 data.raw["technology"]["logistic-system"].prerequisites = { "pm-lithium-ion-logistic-robotics"}

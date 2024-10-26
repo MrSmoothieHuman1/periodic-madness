@@ -30,6 +30,7 @@ Date: 2024-08-09
     - Added Fuel Rods, as the power source for personal reactors. Currently, only Polonium fuel cells exist.
     - Added new recipes to acid dilution, and PModernised it slightly (post-0.4.6 modernisation)
     - Revamped oil processing in its entirety, keeping its basic structure but reworking the recipes and chains to be PModernised.
+    - Added naptha fuel as a 4th fuel type, having a slightly below-average vehicle usage but being useful for machinery fueling.
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
