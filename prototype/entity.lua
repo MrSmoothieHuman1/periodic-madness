@@ -15,12 +15,11 @@ local pm_lab_inputs =
   "chemical-science-pack",
   "pm-post-transition-metal-science-pack",
   "pm-alkali-metal-science-pack",
+  "pm-metalloid-science-pack",
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
-
-  ---Please put this in the correct logical order
-  "pm-metalloid-science-pack",
+  
 }
 
 function pm_electric_mining_drill2_animation()
@@ -153,6 +152,8 @@ data:extend({
         }
       }
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -267,7 +268,8 @@ data:extend({
       rotate = false,
       orientation_to_variation = false
     }
-  },
+  }
+},
 
   {
     type = "assembling-machine",
@@ -284,6 +286,8 @@ data:extend({
     fast_replaceable_group = "assembling-machine",
     next_upgrade = "assembling-machine-1",
     alert_icon_shift = util.by_pixel(-3, -12),
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -311,7 +315,8 @@ data:extend({
           scale = 0.5
         }
       }
-    },
+    }
+  },
     crafting_categories = {"crafting", "basic-crafting"},
     crafting_speed = 0.25,
     energy_usage = "75kW",
@@ -729,222 +734,215 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    structure =
+    pictures =
     {
       north =
       {
-        layers =
+        structure =
         {
+          layers =
           {
-            filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
-            priority = "extra-high",
-            width = 269,
-            height = 221,
-            shift = util.by_pixel(-1.25, 5.25),
-            scale = 0.5
-          },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
-            priority = "extra-high",
-            width = 274,
-            height = 164,
-            scale = 0.5,
-            shift = util.by_pixel(20.5, 9),
-            draw_as_shadow = true
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+              priority = "extra-high",
+              width = 269,
+              height = 221,
+              shift = util.by_pixel(-1.25, 5.25),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+              priority = "extra-high",
+              width = 274,
+              height = 164,
+              scale = 0.5,
+              shift = util.by_pixel(20.5, 9),
+              draw_as_shadow = true
+            }
           }
-        }
+        },
+        fire =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-N-fire.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          frame_count = 64,
+          line_length = 8,
+          width = 26,
+          height = 26,
+          animation_speed = 0.5,
+          shift = util.by_pixel(0, -8.5),
+          scale = 0.5
+        },
+        fire_glow =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-N-light.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          width = 200,
+          height = 173,
+          shift = util.by_pixel(-1, -6.75),
+          blend_mode = "additive",
+          scale = 0.5
+        },
       },
       east =
       {
-        layers =
+        structure =
         {
+          layers =
           {
-            filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
-            priority = "extra-high",
-            width = 216,
-            height = 301,
-            shift = util.by_pixel(-3, 1.25),
-            scale = 0.5
-          },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
-            priority = "extra-high",
-            width = 184,
-            height = 194,
-            scale = 0.5,
-            shift = util.by_pixel(30, 9.5),
-            draw_as_shadow = true
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
+              priority = "extra-high",
+              width = 216,
+              height = 301,
+              shift = util.by_pixel(-3, 1.25),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
+              priority = "extra-high",
+              width = 184,
+              height = 194,
+              scale = 0.5,
+              shift = util.by_pixel(30, 9.5),
+              draw_as_shadow = true
+            }
           }
-        }
+        },
+        patch =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-E-patch.png",
+          width = 6,
+          height = 36,
+          shift = util.by_pixel(33.5, -13.5),
+          scale = 0.5
+        },
+        fire =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-E-fire.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          frame_count = 64,
+          line_length = 8,
+          width = 28,
+          height = 28,
+          animation_speed = 0.5,
+          shift = util.by_pixel(-9.5, -22),
+          scale = 0.5
+        },
+        fire_glow =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-E-light.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          width = 139,
+          height = 244,
+          shift = util.by_pixel(0.25, -13),
+          blend_mode = "additive",
+          scale = 0.5
+        },
       },
       south =
       {
-        layers =
+        structure =
         {
+          layers =
           {
-            filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
-            priority = "extra-high",
-            width = 260,
-            height = 192,
-            shift = util.by_pixel(4, 13),
-            scale = 0.5
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
+              priority = "extra-high",
+              width = 260,
+              height = 192,
+              shift = util.by_pixel(4, 13),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
+              priority = "extra-high",
+              width = 311,
+              height = 131,
+              scale = 0.5,
+              shift = util.by_pixel(29.75, 15.75),
+              draw_as_shadow = true
+            }
           },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
-            priority = "extra-high",
-            width = 311,
-            height = 131,
-            scale = 0.5,
-            shift = util.by_pixel(29.75, 15.75),
-            draw_as_shadow = true
-          }
-        }
-      },
-      west =
-      {
-        layers =
+        },
+        fire =
         {
+          filename = "__base__/graphics/entity/boiler/boiler-S-fire.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          frame_count = 64,
+          line_length = 8,
+          width = 26,
+          height = 16,
+          animation_speed = 0.5,
+          shift = util.by_pixel(-1, -26.5),
+          scale = 0.5
+        },
+        fire_glow =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-S-light.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          width = 200,
+          height = 162,
+          shift = util.by_pixel(1, 5.5),
+          blend_mode = "additive",
+          scale = 0.5
+        },
+      },
+      west =
+      {
+        structure =
+        {
+          layers =
           {
-            filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
-            priority = "extra-high",
-            width = 196,
-            height = 273,
-            shift = util.by_pixel(1.5, 7.75),
-            scale = 0.5
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
+              priority = "extra-high",
+              width = 196,
+              height = 273,
+              shift = util.by_pixel(1.5, 7.75),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
+              priority = "extra-high",
+              width = 206,
+              height = 218,
+              scale = 0.5,
+              shift = util.by_pixel(19.5, 6.5),
+              draw_as_shadow = true
+            }
           },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
-            priority = "extra-high",
-            width = 206,
-            height = 218,
-            scale = 0.5,
-            shift = util.by_pixel(19.5, 6.5),
-            draw_as_shadow = true
-          }
-        }
-      }
-    },
-
-    patch =
-    {
-      east =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-E-patch.png",
-        width = 6,
-        height = 36,
-        shift = util.by_pixel(33.5, -13.5),
-        scale = 0.5
-      }
-    },
-
-    fire_flicker_enabled = true,
-    fire =
-    {
-      north =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-N-fire.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 26,
-        height = 26,
-        animation_speed = 0.5,
-        shift = util.by_pixel(0, -8.5),
-        scale = 0.5
-      },
-      east =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-E-fire.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 28,
-        height = 28,
-        animation_speed = 0.5,
-        shift = util.by_pixel(-9.5, -22),
-        scale = 0.5
-      },
-      south =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-S-fire.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 26,
-        height = 16,
-        animation_speed = 0.5,
-        shift = util.by_pixel(-1, -26.5),
-        scale = 0.5
-      },
-      west =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-W-fire.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 30,
-        height = 29,
-        animation_speed = 0.5,
-        shift = util.by_pixel(13, -23.25),
-        scale = 0.5
-      }
-    },
-
-    fire_glow_flicker_enabled = true,
-
-    fire_glow =
-    {
-      north =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-N-light.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 1,
-        width = 200,
-        height = 173,
-        shift = util.by_pixel(-1, -6.75),
-        blend_mode = "additive",
-        scale = 0.5
-      },
-      east =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-E-light.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 1,
-        width = 139,
-        height = 244,
-        shift = util.by_pixel(0.25, -13),
-        blend_mode = "additive",
-        scale = 0.5
-      },
-      south =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-S-light.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 1,
-        width = 200,
-        height = 162,
-        shift = util.by_pixel(1, 5.5),
-        blend_mode = "additive",
-        scale = 0.5
-      },
-      west =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-W-light.png",
-        draw_as_glow = true,
-        priority = "extra-high",
-        frame_count = 1,
-        width = 136,
-        height = 217,
-        shift = util.by_pixel(2, -6.25),
-        blend_mode = "additive",
-        scale = 0.5
+        },
+        fire =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-W-fire.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          frame_count = 64,
+          line_length = 8,
+          width = 30,
+          height = 29,
+          animation_speed = 0.5,
+          shift = util.by_pixel(13, -23.25),
+          scale = 0.5
+        },
+        fire_glow =
+        {
+          filename = "__base__/graphics/entity/boiler/boiler-W-light.png",
+          draw_as_glow = true,
+          priority = "extra-high",
+          width = 136,
+          height = 217,
+          shift = util.by_pixel(2, -6.25),
+          blend_mode = "additive",
+          scale = 0.5
+        },
       }
     },
     burning_cooldown = 20,
@@ -1550,6 +1548,8 @@ data:extend({
         }
       },
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -1576,6 +1576,7 @@ data:extend({
         }
       }
     },
+  },
     crafting_categories = { "pm-molding" },
     crafting_speed = 0.5,
     energy_usage = "175kW",
@@ -1599,7 +1600,6 @@ data:extend({
       fade_out_ticks = 20
     }
   },
-
   {
     type = "assembling-machine",
     name = "pm-washing-plant-1",
@@ -1622,6 +1622,8 @@ data:extend({
     collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -1645,6 +1647,7 @@ data:extend({
         }
       }
     },
+  },
     crafting_categories = { "pm-washing" },
     crafting_speed = 0.5,
     energy_usage = "180kW",
@@ -1721,6 +1724,8 @@ data:extend({
     },
     crafting_categories = { "pm-crushing" },
     crafting_speed = 1,
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -1746,6 +1751,7 @@ data:extend({
         }
       }
     }
+  }
   },
 
   {
@@ -1771,6 +1777,8 @@ data:extend({
       emissions_per_minute = {pollution = 12}
     },
     energy_usage = "500kW",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -1794,6 +1802,7 @@ data:extend({
         }
       }
     },
+  },
     fluid_boxes =
     {
       {
@@ -1891,9 +1900,10 @@ data:extend({
     energy_usage = "150kW",
     next_upgrade = "pm-crusher-2",
     fast_replaceable_group = "pm-crusher",
+    graphics_set = 
+  {
     animation =
     {
-
       layers =
       {
         {
@@ -1919,7 +1929,8 @@ data:extend({
         }
       }
     }
-  },
+  }
+},
 
   {
     type = "assembling-machine",
@@ -1945,6 +1956,8 @@ data:extend({
     },
     energy_usage = "300kW",
     fast_replaceable_group = "pm-crusher",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -1972,7 +1985,8 @@ data:extend({
         }
       }
     }
-  },
+  }
+},
 
   {
     type = "assembling-machine",
@@ -1997,6 +2011,8 @@ data:extend({
       emissions_per_minute = {pollution = -2}
     },
     energy_usage = "500kW",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2022,7 +2038,8 @@ data:extend({
           draw_as_shadow = true,
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -2076,7 +2093,9 @@ data:extend({
       usage_priority = "secondary-input",
 
     },
-    energy_usage = "300kW",
+    energy_usage = "275kW",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2098,6 +2117,7 @@ data:extend({
         },
       }
     },
+  },
     fluid_boxes =
     {
       {
@@ -2157,6 +2177,8 @@ data:extend({
     },
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1, -1 }, { 1, 1 } },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2179,7 +2201,8 @@ data:extend({
           scale = 0.5
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -2261,6 +2284,8 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 6},
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2288,7 +2313,8 @@ data:extend({
           scale = 0.5
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -2341,6 +2367,8 @@ data:extend({
         percent = 100
       }
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2368,7 +2396,8 @@ data:extend({
           scale = 0.5
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -2447,6 +2476,8 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 8},
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2474,7 +2505,8 @@ data:extend({
           scale = 0.5
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -2528,6 +2560,8 @@ data:extend({
         percent = 100
       }
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2555,7 +2589,8 @@ data:extend({
           scale = 0.5
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -2625,6 +2660,8 @@ data:extend({
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
     energy_usage = "625kW",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -2646,15 +2683,16 @@ data:extend({
            width = 32 * 7 * 2,
            height = 32 * 7 * 2,
            frame_count = 32,
-           line_length = 8,
+           line_length = 4,
            draw_as_shadow = true,
            shift = util.by_pixel(64, 10),
            animation_speed = 0.25,
            scale = 0.575
          },
       }
-    },
-  },
+    }
+  }
+},
   {
     type = "pipe",
     name = "pm-stainless-steel-pipe",
@@ -3099,6 +3137,8 @@ data:extend({
     source_inventory_size = 1,
     crafting_speed = 1,
     crafting_categories = { "pm-voltatic-charging" },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3126,7 +3166,8 @@ data:extend({
         },
       }
     }
-  },
+  }
+},
   {
     type = "burner-generator",
     name = "pm-voltatic-discharger",
@@ -3154,6 +3195,8 @@ data:extend({
     },
     max_power_output = "1MW",
     usage_priority = "secondary-output",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3180,6 +3223,7 @@ data:extend({
         },
       }
     }
+  }
   }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "furnace",
@@ -3229,6 +3273,8 @@ data:extend({
       },
     },
     energy_usage = "400kW",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3252,6 +3298,7 @@ data:extend({
         }
       }
     }
+  }
   },
   {
     type = "assembling-machine",
@@ -3286,6 +3333,8 @@ data:extend({
         }
       }
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3311,7 +3360,8 @@ data:extend({
           scale = 0.75 / 2
         }
       }
-    },
+    }
+  },
     crafting_categories = { "pm-molding", "pm-advanced-molding" },
     crafting_speed = 1,
     energy_usage = "320kW",
@@ -3379,8 +3429,10 @@ data:extend({
     crafting_categories = { "pm-air-filtering" },
     energy_usage = "1kW",
     crafting_speed = 1,
-    energy_source = { type = "void" },
+    energy_source = {type = "void"},
     emissions_per_minute = -50,
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3409,6 +3461,7 @@ data:extend({
         }
       }
     }
+  }
   }--[[@as data.FurnacePrototype]],
   {
     type = "assembling-machine",
@@ -3431,6 +3484,8 @@ data:extend({
     collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3453,7 +3508,8 @@ data:extend({
           scale = 0.5
         }
       }
-    },
+    }
+  },
     crafting_categories = { "pm-washing" },
     crafting_speed = 1,
     energy_usage = "420kW",
@@ -3533,6 +3589,8 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 0},
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3553,7 +3611,8 @@ data:extend({
           draw_as_shadow = true,
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -3617,6 +3676,8 @@ data:extend({
       },
     },
     energy_usage = "500kW",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -3653,8 +3714,9 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 100,
         pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {0, 2}}},
-      },
-    },
+      }
+    }
+  }
   },
   {
     type = "lab",
@@ -5279,6 +5341,8 @@ data:extend({
     alert_icon_shift = util.by_pixel(-3, -12),
     allowed_effects = PM.all_effects(),
     module_slots = 3,
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -5308,6 +5372,7 @@ data:extend({
           scale = 0.5
         }
       }
+    }
     },
     crafting_categories = { "pm-electrolysis" },
     crafting_speed = 1,
@@ -5377,6 +5442,8 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "400kW",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -5396,7 +5463,8 @@ data:extend({
           draw_as_shadow = true,
         }
       }
-    },
+    }
+  },
     fluid_boxes =
     {
       {
@@ -5825,6 +5893,8 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 30},
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -5850,6 +5920,7 @@ data:extend({
           draw_as_shadow = true,
         }
       }
+    }
     },
     fluid_boxes =
     {
@@ -5863,24 +5934,13 @@ data:extend({
           { flow_direction="input", direction = defines.direction.south, position = {0, -1}}
         },
       },
-      ---HACK: I just put the pipe connection of this one into the one above it
-      ---I don't know what the goal was here, but this gets it to run
-      -- {
-
-      --   production_type = "input",
-      --   pipe_covers = pipecoverspictures(),
-      --   volume = 2000,
-      --   pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
-      -- },
       {
-
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
         pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
       },
       {
-
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
@@ -6246,6 +6306,8 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 4},
     },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -6271,6 +6333,7 @@ data:extend({
           scale = 0.5
         }
       }
+    }
     },
     fluid_boxes =
     {
@@ -6309,6 +6372,8 @@ data:extend({
     },
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1, -1 }, { 1, 1 } },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -6331,6 +6396,7 @@ data:extend({
           scale = 0.5
         }
       }
+    }
     },
     fluid_boxes =
     {
@@ -6393,6 +6459,8 @@ data:extend({
     selection_box = { { -3, -3 }, { 3, 3 } },
     allowed_effects = PM.all_effects(),
     module_slots = 2,
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -6413,8 +6481,9 @@ data:extend({
           height = 64 * 6,
           shift = util.by_pixel(12, 0),
           scale = 0.5
-        },
+        }
       }
+    }
     },
     fluid_boxes =
     {
@@ -6498,6 +6567,8 @@ data:extend({
     alert_icon_shift = util.by_pixel(-3, -12),
     allowed_effects = PM.all_effects(),
     module_slots = 4,
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -6527,6 +6598,7 @@ data:extend({
           scale = 0.5
         }
       }
+    }
     },
     crafting_categories = { "pm-electrolysis" },
     crafting_speed = 2.5,
@@ -6600,6 +6672,8 @@ data:extend({
     source_inventory_size = 1,
     crafting_speed = 1,
     crafting_categories = { "pm-battery-charging" },
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -6628,6 +6702,7 @@ data:extend({
         },
       }
     }
+  }
   },
   {
     type = "burner-generator",
@@ -6656,6 +6731,8 @@ data:extend({
     },
     max_power_output = "10MW",
     usage_priority = "secondary-output",
+    graphics_set = 
+  {
     animation =
     {
       layers =
@@ -6684,6 +6761,7 @@ data:extend({
         },
       }
     }
+  }
   }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "solar-panel",
