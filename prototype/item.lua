@@ -743,6 +743,48 @@ data:extend({
     order = "b[copper-cable]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-ruby",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ruby.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-citrine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/citrine.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-emerald",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/emerald.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-sapphire",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sapphire.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-lapis-lazuli",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/lapis-lazuli.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-garnet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/garnet.png",
+    stack_size = 100
+  },
 
   {
     type = "module",

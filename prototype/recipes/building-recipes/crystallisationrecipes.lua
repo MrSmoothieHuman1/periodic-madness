@@ -138,4 +138,32 @@ data:extend({
       PM.product_range("pm-molybdenite", 40, 80)
     }
   },
+
+
+  {
+    type = "recipe",
+    name = "pm-gem-sorting",
+    energy_required = 20,
+    enabled = true,
+    category = "pm-crystallisation",
+    main_product = "pm-ruby",
+    ingredients = 
+    {
+      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-post-transition-metals-ore", 12),
+      PM.ingredient("pm-metalloid-ore", 12),
+      PM.ingredient("pm-alkali-metals-ore", 12)
+    },
+    results = 
+    {
+      PM.product_range("pm-ruby", 6, 10),
+      PM.product_range("pm-citrine", 6, 10),
+      PM.product_range("pm-emerald", 6, 10),
+      PM.product_range("pm-sapphire", 6, 10),
+      PM.product_range("pm-lapis-lazuli", 6, 10),
+      PM.product_range("pm-garnet", 6, 10),
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
+
+
