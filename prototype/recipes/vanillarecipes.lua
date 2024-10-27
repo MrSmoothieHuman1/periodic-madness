@@ -641,6 +641,14 @@ data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
   PM.product_range("pm-empty-reactor-cell", 3, 5),
   PM.product("uranium-238", 3)
 }
+data.raw["recipe"]["pump"].ingredients = 
+{
+  PM.ingredient("pm-corrosion-resistant-tubing", 10),
+  PM.ingredient("steel-plate", 4),
+  PM.ingredient("pm-mini-motor", 4),
+  PM.ingredient("pm-heavyweight-panelling", 8),
+}   
+
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
 data.raw["recipe"]["productivity-module-2"].energy_required = 15

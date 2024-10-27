@@ -664,7 +664,7 @@ data.raw["technology"]["logistic-system"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
-  {"pm-post-transistion-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
 data.raw["technology"]["logistic-system"].prerequisites = { "pm-lithium-ion-logistic-robotics"}
@@ -915,6 +915,7 @@ data.raw["technology"]["speed-module-3"].unit.ingredients =
   {"pm-alkali-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["oil-gathering"] = nil
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"

@@ -528,7 +528,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fertiliser.png",
     subgroup = "pm-biostuff-rnm",
     order = "a",
-    stack_size = 200 - 40 - 10
+    stack_size = 150
   },
   {
     type = "item",
@@ -582,7 +582,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/filled-flux-container.png",
     subgroup = "pm-refined-items",
-    stack_size = 100 / 2
+    stack_size = 50
   },
   {
     type = "item",

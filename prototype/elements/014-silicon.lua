@@ -202,6 +202,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "g",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-silane", 15, "fluid"),
@@ -222,6 +223,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "h",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-silane", 10, "fluid"),
@@ -242,6 +244,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "i",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-silane", 5, "fluid"),

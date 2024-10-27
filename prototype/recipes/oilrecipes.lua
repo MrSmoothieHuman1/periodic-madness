@@ -295,7 +295,7 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "pm-washing",
-    subgroup = "pm-diesel-processing",
+    subgroup = "pm-oil",
     order = "a",
     ingredients =
     {

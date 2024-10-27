@@ -523,7 +523,7 @@ data:extend({
       PM.unlock_recipe("pm-catalyst-container"),
       PM.unlock_recipe("pm-cobalt-catalyst"),
       PM.unlock_recipe("pm-fuel-oil-hydrosulfurisation"),
-      PM.unlock_recipe("pm-fuel-oils-seperation")
+      PM.unlock_recipe("pm-fuel-oil-seperation")
     },
     prerequisites = {"advanced-oil-processing"},
     unit =
@@ -3621,7 +3621,7 @@ data:extend({
     {
       
     },
-    prerequisites = {"pm-metalloid-science-pack-unlock"},
+    prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
       {
         count = 300,
