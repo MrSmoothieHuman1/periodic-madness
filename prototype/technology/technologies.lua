@@ -3638,7 +3638,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-gemstone-growing",
+    name = "pm-gemstone-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 

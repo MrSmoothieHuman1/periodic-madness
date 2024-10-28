@@ -933,6 +933,28 @@ data.raw["technology"]["laser"].effects =
   PM.unlock_recipe("pm-sapphire-cutting"),
   PM.unlock_recipe("pm-ruby-laser-head"),
 }
+data.raw["technology"]["laser"].prerequisites = {"pm-gemstone-processing", "processing-unit"}
+
+data.raw["technology"]["laser-turret"].prerequisites = {"laser", "pm-vanadium-redox-batteries"}
+data.raw["technology"]["laser-turret"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+
+data.raw["technology"]["personal-laser-defense-equipment"].prerequisites = {"laser", "pm-vanadium-redox-batteries"}
+data.raw["technology"]["personal-laser-defense-equipment"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
