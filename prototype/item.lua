@@ -785,6 +785,48 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/garnet.png",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-ruby-dust",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ruby-dust.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-citrine-dust",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/citrine-dust.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-emerald-dust",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/emerald-dust.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-sapphire-dust",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sapphire-dust.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-lapis-lazuli-dust",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/lapis-lazuli-dust.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-garnet-dust",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/garnet-dust.png",
+    stack_size = 100
+  },
 
   {
     type = "module",
