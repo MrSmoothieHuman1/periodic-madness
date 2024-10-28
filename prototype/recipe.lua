@@ -12,7 +12,8 @@ data:extend({
       PM.ingredient("pm-oxygen-gas", 15, "fluid"),
       PM.ingredient("iron-plate", 2)
     },
-    results = {
+    results = 
+    {
       PM.product("pm-hydrogen-fuel", 1)
     },
   },
@@ -44,7 +45,6 @@ data:extend({
       PM.product("pm-sand", 8),
     }
   },
-
   {
     type = "recipe",
     name = "pm-circuit-breadboard",
@@ -60,7 +60,6 @@ data:extend({
     {
       PM.product("pm-basic-breadboard", 1)
     }
- 
   },
   {
     type = "recipe",
@@ -2627,7 +2626,7 @@ data:extend({
     type = "recipe",
     name = "pm-rocket-control-unit",
     enabled = false,
-    energy_reqiured = 30,
+    energy_required = 30,
     ingredients =
       {
         PM.ingredient("pm-oscilloscope", 1),
@@ -2637,6 +2636,192 @@ data:extend({
     results = 
     {
       PM.product("pm-rocket-control-unit", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ruby-crushing",
+    energy_required = 5,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-ruby", 5),
+    },
+    results = 
+    {
+      PM.ingredient("pm-ruby-dust", 10)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-citrine-crushing",
+    energy_required = 5,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-citrine", 5),
+    },
+    results = 
+    {
+      PM.ingredient("pm-citrine-dust", 10)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-emerald-crushing",
+    energy_required = 5,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-emerald", 5),
+    },
+    results = 
+    {
+      PM.ingredient("pm-emerald-dust", 10)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sapphire-crushing",
+    energy_required = 5,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-sapphire", 5),
+    },
+    results = 
+    {
+      PM.ingredient("pm-sapphire-dust", 10)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lapis-lazuli-crushing",
+    energy_required = 5,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-lapis-lazuli", 5),
+    },
+    results = 
+    {
+      PM.ingredient("pm-lapis-lazuli-dust", 10)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-garnet-crushing",
+    energy_required = 5,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-garnet", 5),
+    },
+    results = 
+    {
+      PM.ingredient("pm-garnet-dust", 10)
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "pm-ruby-leeching",
+    energy_required = 5,
+    category = "chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-ruby-dust", 5),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-aluminium-ore", 6, 14),
+      PM.product_range("pm-oxygen-gas", 10, 22, "fluid"),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-citrine-leeching",
+    energy_required = 5,
+    category = "chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-citrine-dust", 5),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range_chance("pm-silicon-ore", 1, 5, 0.75),
+      PM.product_range("pm-oxygen-gas", 5, 11, "fluid"),
+      PM.product_range_chance("pm-iron-ore", 0, 3, 0.5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-emerald-leeching",
+    energy_required = 5,
+    category = "chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-emerald-dust", 5),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range_chance("pm-chromium-ore", 2, 8, 0.7),
+      PM.product_range("pm-beryllium-ore", 0, 6),
+      PM.product_range("pm-oxygen-gas", 10, 22, "fluid"),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sapphire-leeching",
+    energy_required = 5,
+    category = "chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-sapphire-dust", 5),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-aluminium-ore", 5, 12),
+      PM.product_range("pm-oxygen-gas", 12, 18, "fluid"),
+      PM.product_range_chance("pm-boron", 0, 2, 0.12, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lapis-lazuli-leeching",
+    energy_required = 5,
+    category = "chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-lapis-lazuli-dust", 5),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-sodium", 4, 8),
+      PM.product_range("sulfur", 2, 7),
+      PM.product_range_chance("pm-caclite", 0, 3, 0.6),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-garnet-leeching",
+    energy_required = 5,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-garnet-dust", 5),
+      PM.ingredient("pm-chromic-acid", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-manganese-ore", 6, 14),
+      PM.product_range_chance("pm-silicon-ore", 1, 5, 0.55),
+      PM.product_range("pm-calcium-ore", 4, 8),
     }
   },
 

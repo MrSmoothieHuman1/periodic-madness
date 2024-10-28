@@ -32,6 +32,7 @@ Date: 2024-08-09
     - Revamped oil processing in its entirety, keeping its basic structure but reworking the recipes and chains to be PModernised.
     - Added naptha fuel as a 4th fuel type, having a slightly below-average vehicle usage but being useful for machinery fueling.
     - Reworked a bunch of stuff i've been putting off for ages.
+    - Added gems to fully embrace the Bobs & Angels assimilation! Rubies, Citrines, Emeralds, Sapphires, Lapis Lazuli's and Garnets are now usable, some used as alternative ways to make resources or for lasers!
 
   Changes:
     - Gave glass its own row of recipes, and moved science bottles there.
