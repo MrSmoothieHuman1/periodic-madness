@@ -955,7 +955,6 @@ data.raw["technology"]["personal-laser-defense-equipment"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
 }
 
-
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
 data.raw["technology"]["speed-module"].effects =

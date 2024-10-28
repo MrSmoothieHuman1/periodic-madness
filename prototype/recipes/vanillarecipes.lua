@@ -648,6 +648,22 @@ data.raw["recipe"]["pump"].ingredients =
   PM.ingredient("pm-mini-motor", 4),
   PM.ingredient("pm-heavyweight-panelling", 8),
 }   
+data.raw["recipe"]["laser-turret"].ingredients = 
+{
+  PM.ingredient("pm-ruby-laser-head", 1),
+  PM.ingredient("pm-heavy-lubricant", 8),
+  PM.ingredient("electric-engine", 2),
+  PM.ingredient("pm-vanadium-redox-battery", 4),
+  PM.ingredient("pm-heavyweight-framing", 12),
+}
+data.raw["recipe"]["personal-laser-defense-equiment"].ingredients = 
+{
+  PM.ingredient("pm-ruby-laser-head", 1),
+  PM.ingredient("pm-lightweight-framing", 20),
+  PM.ingredient("pm-polyethylene-plastic", 12),
+  PM.ingredient("electric-engine", 2),
+  PM.ingredient("processing-unit", 6)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
