@@ -932,7 +932,6 @@ data.raw["technology"]["laser"].effects =
   PM.unlock_recipe("pm-ruby-cutting"),
   PM.unlock_recipe("pm-sapphire-cutting"),
   PM.unlock_recipe("pm-ruby-laser-head"),
-  PM.unlock_recipe("pm-sapphire-laser-head")
 }
 
 data.raw["technology"]["speed-module"].icon_size = 256

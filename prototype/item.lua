@@ -855,6 +855,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-saw",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
+    stack_size = 50
+  }, 
 
   {
     type = "module",

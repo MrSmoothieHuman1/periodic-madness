@@ -2834,7 +2834,7 @@ data:extend({
     type = "recipe",
     name = "pm-garnet-saw",
     energy_required = 5,
-    category = "pm-advanced-crafting",
+    category = "advanced-crafting",
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
@@ -2843,13 +2843,14 @@ data:extend({
     },
     results = 
     {
-      PM.result("pm-saw", 1)
+      PM.product("pm-saw", 1)
     }
   },
   {
     type = "recipe",
     name = "pm-ruby-cutting",
     energy_required = 10,
+    main_product = "pm-cut-ruby",
     ingredients = 
     {
       PM.ingredient("pm-saw", 1),
@@ -2866,6 +2867,7 @@ data:extend({
     type = "recipe",
     name = "pm-sapphire-cutting",
     energy_required = 10,
+    main_product = "pm-cut-sapphire",
     ingredients = 
     {
       PM.ingredient("pm-saw", 1),
@@ -2884,7 +2886,7 @@ data:extend({
     energy_required = 5,
     ingredients = 
     {
-      PM.ingredient("pm-ruby-rod", 2),
+      PM.ingredient("pm-cut-ruby", 2),
       PM.ingredient("pm-glass-pane", 8),
       PM.ingredient("pm-indium-wire", 8),
       PM.ingredient("processing-unit", 3),
