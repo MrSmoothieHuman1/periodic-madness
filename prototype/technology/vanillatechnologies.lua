@@ -924,9 +924,16 @@ data.raw["technology"]["laser"].research_trigger =
 {
   type = "craft-item",
   item = "pm-ruby",
-  count = 10
+  count = 15
 }
-
+data.raw["technology"]["laser"].effects = 
+{
+  PM.unlock_recipe("pm-garnet-saw"),
+  PM.unlock_recipe("pm-ruby-cutting"),
+  PM.unlock_recipe("pm-sapphire-cutting"),
+  PM.unlock_recipe("pm-ruby-laser-head"),
+  PM.unlock_recipe("pm-sapphire-laser-head")
+}
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"

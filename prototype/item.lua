@@ -827,6 +827,34 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/garnet-dust.png",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-cut-ruby",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-cut-sapphire",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-sapphire-rod.png",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-ruby-laser-head",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ruby-laser-head.png",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-sapphire-laser-head",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
+    stack_size = 50
+  },
 
   {
     type = "module",

@@ -2830,6 +2830,71 @@ data:extend({
       PM.product_range("pm-calcium-ore", 4, 8),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-garnet-saw",
+    energy_required = 5,
+    category = "pm-advanced-crafting",
+    ingredients = 
+    {
+      PM.ingredient("pm-garnet-dust", 5),
+      PM.ingredient("pm-lightweight-panelling", 5),
+      PM.ingredient("pm-stainless-steel-alloy", 3)
+    },
+    results = 
+    {
+      PM.result("pm-saw", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ruby-cutting",
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-saw", 1),
+      PM.ingredient("pm-ruby", 8)
+    },
+    results = 
+    {
+      PM.product_range("pm-cut-ruby", 0, 4),
+      PM.catalyst_range_chance("pm-ruby", 2, 6, 0.9, 6),
+      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sapphire-cutting",
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-saw", 1),
+      PM.ingredient("pm-sapphire", 8)
+    },
+    results = 
+    {
+      PM.product_range("pm-cut-sapphire", 0, 4),
+      PM.catalyst_range_chance("pm-sapphire", 2, 6, 0.9, 6),
+      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ruby-laser-head",
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-ruby-rod", 2),
+      PM.ingredient("pm-glass-pane", 8),
+      PM.ingredient("pm-indium-wire", 8),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-heavyweight-panelling", 10)
+    },
+    results = 
+    {
+      PM.product("pm-ruby-laser-head", 1)
+    }
+  },
 
   {
     type = "recipe",
