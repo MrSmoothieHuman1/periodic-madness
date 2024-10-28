@@ -108,6 +108,8 @@ Date: 2024-08-09
     - Fixed the vanadium modular battery technologies not having the correct color.
     - Fixed the vanadium modular batterie MK2's recipe.
     - Moved calcium chloride into the calcium subgroup.
+    - Fixed mining productivity 2 having R-NM packs as a prerequisite.
+    - Fixing mining productivty 1 not taking A-ATM packs.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

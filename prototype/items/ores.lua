@@ -441,6 +441,15 @@ data:extend({
     order = "e",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-beryllium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+    subgroup = "pm-germanium-mt",
+    order = "e",
+    stack_size = 200
+  },
 })
 
 local StackIron = data.raw["item"]["iron-ore"]

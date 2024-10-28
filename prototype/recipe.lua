@@ -2728,6 +2728,7 @@ data:extend({
     name = "pm-ruby-leeching",
     energy_required = 5,
     category = "chemistry",
+    main_product = "pm-aluminium-ore",
     ingredients = 
     {
       PM.ingredient("pm-ruby-dust", 5),
@@ -2744,6 +2745,7 @@ data:extend({
     name = "pm-citrine-leeching",
     energy_required = 5,
     category = "chemistry",
+    main_product = "pm-silicon-ore",
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
@@ -2753,7 +2755,7 @@ data:extend({
     {
       PM.product_range_chance("pm-silicon-ore", 1, 5, 0.75),
       PM.product_range("pm-oxygen-gas", 5, 11, "fluid"),
-      PM.product_range_chance("pm-iron-ore", 0, 3, 0.5)
+      PM.product_range_chance("iron-ore", 0, 3, 0.65)
     }
   },
   {
@@ -2761,6 +2763,7 @@ data:extend({
     name = "pm-emerald-leeching",
     energy_required = 5,
     category = "chemistry",
+    main_product = "pm-beryllium-ore",
     ingredients = 
     {
       PM.ingredient("pm-emerald-dust", 5),
@@ -2768,7 +2771,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-chromium-ore", 2, 8, 0.7),
+      PM.product_range_chance("pm-chrominum-ore", 2, 8, 0.7),
       PM.product_range("pm-beryllium-ore", 0, 6),
       PM.product_range("pm-oxygen-gas", 10, 22, "fluid"),
     }
@@ -2778,6 +2781,7 @@ data:extend({
     name = "pm-sapphire-leeching",
     energy_required = 5,
     category = "chemistry",
+    main_product = "pm-aluminium-ore",
     ingredients = 
     {
       PM.ingredient("pm-sapphire-dust", 5),
@@ -2795,6 +2799,7 @@ data:extend({
     name = "pm-lapis-lazuli-leeching",
     energy_required = 5,
     category = "chemistry",
+    main_product = "sulfur",
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 5),
@@ -2804,7 +2809,7 @@ data:extend({
     {
       PM.product_range("pm-sodium", 4, 8),
       PM.product_range("sulfur", 2, 7),
-      PM.product_range_chance("pm-caclite", 0, 3, 0.6),
+      PM.product_range_chance("pm-calcite", 0, 3, 0.6),
     }
   },
   {
@@ -2812,6 +2817,7 @@ data:extend({
     name = "pm-garnet-leeching",
     energy_required = 5,
     category = "pm-crushing",
+    main_product = "pm-manganese-ore",
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),

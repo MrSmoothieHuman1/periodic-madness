@@ -134,7 +134,7 @@ data.raw["technology"]["advanced-oil-processing"].research_trigger =
 {
   type = "craft-item",
   item = "pm-polyethylene-plastic",
-  amount = 4
+  count = 4
 }
 
 data.raw["technology"]["engine"].unit.ingredients =
@@ -799,6 +799,7 @@ data.raw["technology"]["mining-productivity-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["mining-productivity-2"].effects =
 {
@@ -810,6 +811,7 @@ data.raw["technology"]["mining-productivity-2"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["mining-productivity-2"].prerequisites = {"mining-productivity-1"}
 data.raw["technology"]["mining-productivity-2"].effects =
 {
   PM.modify("mining-drill-productivity-bonus", 0.05)
@@ -916,6 +918,15 @@ data.raw["technology"]["speed-module-3"].unit.ingredients =
   {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["oil-gathering"] = nil
+
+data.raw["technology"]["laser"].unit = nil
+data.raw["technology"]["laser"].research_trigger = 
+{
+  type = "craft-item",
+  item = "pm-ruby",
+  count = 10
+}
+
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"

@@ -3636,6 +3636,39 @@ data:extend({
         time = 60,
       }
   },
+  {
+    type = "technology",
+    name = "pm-gemstone-growing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-gem-sorting"),
+      PM.unlock_recipe("pm-ruby-crushing"),
+      PM.unlock_recipe("pm-citrine-crushing"),
+      PM.unlock_recipe("pm-emerald-crushing"),
+      PM.unlock_recipe("pm-sapphire-crushing"),
+      PM.unlock_recipe("pm-lapis-lazuli-crushing"),
+      PM.unlock_recipe("pm-ruby-leeching"),
+      PM.unlock_recipe("pm-citrine-leeching"),
+      PM.unlock_recipe("pm-emerald-leeching"),
+      PM.unlock_recipe("pm-sapphire-leeching"),
+      PM.unlock_recipe("pm-lapis-lazuli-leeching"),
+    },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    unit =
+      {
+        count = 250,
+        ingredients = 
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          },
+        time = 60,
+      }
+  },
 
   {
     type = "technology",
