@@ -7987,10 +7987,12 @@ data.raw["splitter"]["fast-splitter"].map_color = orange_belt
 data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
 data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
 data.raw["underground-belt"]["express-underground-belt"].max_distance = 12 --TODO: Confirm this is what you wanted
+--yes, yes it is what i wanted
 data.raw["splitter"]["express-splitter"].speed = 0.125
 data.raw["splitter"]["fast-splitter"].next_upgrade = "pm-advanced-splitter"
 data.raw["transport-belt"]["fast-transport-belt"].next_upgrade = "pm-advanced-transport-belt"
 data.raw["underground-belt"]["fast-underground-belt"].next_upgrade = "pm-advanced-underground-belt"
 
-data.raw["electric-turret"]["laser-turret"].energy_source.drain = "20kW"
+data.raw["electric-turret"]["laser-turret"].energy_source.drain = "30kW"
+data.raw["electric-turret"]["laser-turret"].energy_source.input_flow_limit = "5400kW"
 data.raw["electric-turret"]["laser-turret"].folding_speed = 0.085
