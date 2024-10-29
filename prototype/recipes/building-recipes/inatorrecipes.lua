@@ -150,6 +150,22 @@ data:extend({
       PM.product_chance("pm-flux-container", 1, 0.9),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-titanium-sapphire",
+    enabled = false,
+    energy_required = 10,
+    category = "pm-moltening",
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-titanium", 10, "fluid"),
+      PM.ingredient("pm-cut-sapphire", 2)
+    },
+    results =
+    {
+      PM.ingredient("pm-titanium-sapphire", 2)
+    }
+  },
 
   {
     type = "recipe",

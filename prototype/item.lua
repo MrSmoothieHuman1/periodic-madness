@@ -843,6 +843,13 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-titanium-sapphire",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-sapphire-rod.png",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "pm-ruby-laser-head",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ruby-laser-head.png",

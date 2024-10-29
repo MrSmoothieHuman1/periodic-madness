@@ -12,7 +12,6 @@ data.raw["technology"]["automation-2"].effects =
   PM.unlock_recipe("assembling-machine-2"),
   PM.unlock_recipe("pm-crusher-1")
 }
-
 data.raw["technology"]["automation-2"].prerequisites = {"steel-processing", "pm-advanced-basic-tubing", "logistic-science-pack"}
 
 data.raw["technology"]["automation-3"].effects =
@@ -21,8 +20,7 @@ data.raw["technology"]["automation-3"].effects =
   PM.unlock_recipe("pm-crusher-2"),
   PM.unlock_recipe("pm-chemical-plant-2")
 }
-
-data.raw["technology"]["automation-3"].prerequisites = { "processing-unit", "electric-engine"}
+data.raw["technology"]["automation-3"].prerequisites = {"laser", "electric-engine"}
 data.raw["technology"]["automation-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},

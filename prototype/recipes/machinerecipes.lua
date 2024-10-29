@@ -368,7 +368,7 @@ data:extend({
       PM.ingredient("pm-heavyweight-framing", 12),
       PM.ingredient("pm-lightweight-panelling", 30),
       PM.ingredient("pm-corrosion-resistant-tubing", 20),
-      PM.ingredient("advanced-circuit", 15),
+      PM.ingredient("advanced-circuit", 10),
       PM.ingredient("assembling-machine-2", 2),
       PM.ingredient("concrete", 10),
       PM.ingredient("electric-engine-unit", 9)
@@ -395,24 +395,6 @@ data:extend({
       PM.product("pm-atmospheric-condenser", 1)
     }
   },
-  -- HACK: Filter inserters have been removed
-  -- {
-  --   type = "recipe",
-  --   name = "pm-filter-long-handed-inserter",
-  --   subgroup = "inserter",
-  --   order = "f",
-  --   enabled = false,
-  --   energy_required = 0.5,
-  --   ingredients =
-  --   {
-  --     PM.ingredient("electronic-circuit", 4),
-  --     PM.ingredient("pm-vulcanised-rubber", 1),
-  --     PM.ingredient("long-handed-inserter", 1)
-  --   },
-  --   results = {
-  --     PM.product("pm-filter-long-handed-inserter", 1)
-  --   }
-  -- },
   {
     type = "recipe",
     name = "pm-stainless-steel-pipe",
@@ -874,7 +856,7 @@ data:extend({
     subgroup = "production-machine",
     order = "y",
     energy_required = 10,
-    enabled = false,         --this means NO CRAFTING!!
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-radiation-resistant-panelling", 10),

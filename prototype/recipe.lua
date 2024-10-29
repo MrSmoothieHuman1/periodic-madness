@@ -2890,11 +2890,28 @@ data:extend({
       PM.ingredient("pm-glass-pane", 8),
       PM.ingredient("pm-indium-wire", 8),
       PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-heavyweight-panelling", 10)
+      PM.ingredient("pm-heavyweight-panelling", 12)
     },
     results = 
     {
       PM.product("pm-ruby-laser-head", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sapphire-laser-head",
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-titanium-sapphire", 1),
+      PM.ingredient("pm-glass-pane", 6),
+      PM.ingredient("pm-indium-wire", 6),
+      PM.ingredient("processing-unit", 2),
+      PM.ingredient("pm-heavyweight-panelling", 8)
+    },
+    results = 
+    {
+      PM.product("pm-sapphire-laser-head", 1)
     }
   },
 
