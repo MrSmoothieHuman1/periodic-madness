@@ -1,4 +1,10 @@
 data:extend({
+    {
+      type = "ammo-category",
+      name = "pm-shotgun-slug",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/basic-slug.png"
+    },
 
     {
         type = "ammo",
@@ -24,12 +30,12 @@ data:extend({
                 {
                   type = "create-entity",
                   entity_name = "explosion-hit",
-                  offsets = { { 0, 1 } },
-                  offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } }
+                  offsets = {{0, 1}},
+                  offset_deviation = {{-0.5, -0.5 }, {0.5, 0.5}}
                 },
                 {
                   type = "damage",
-                  damage = { amount = 14, type = "physical" }
+                  damage = {amount = 14, type = "physical"}
                 }
               }
             }
@@ -64,12 +70,12 @@ data:extend({
                 {
                   type = "create-entity",
                   entity_name = "explosion-hit",
-                  offsets = { { 0, 1 } },
-                  offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } }
+                  offsets = {{0, 1}},
+                  offset_deviation = {{-0.5, -0.5 }, {0.5, 0.5}}
                 },
                 {
                   type = "damage",
-                  damage = { amount = 10, type = "physical" }
+                  damage = {amount = 10, type = "physical"}
                 },
                 {
                   type = "create-sticker",
@@ -190,7 +196,7 @@ data:extend({
   name = "pm-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/basic-slug.png",
   icon_size = 64, 
-  ammo_category = "shotgun-shell",
+  ammo_category = "pm-shotgun-slug",
   ammo_type =
   {
     target_type = "direction",
@@ -237,7 +243,7 @@ data:extend({
   name = "pm-heavy-piercing-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/piercing-slug.png",
   icon_size = 64, 
-  ammo_category = "shotgun-shell",
+  ammo_category = "pm-shotgun-slug",
   ammo_type =
   {
     target_type = "direction",
@@ -284,7 +290,7 @@ data:extend({
   name = "pm-high-density-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/high-density-slug.png",
   icon_size = 64, 
-  ammo_category = "shotgun-shell",
+  ammo_category = "pm-shotgun-slug",
   ammo_type =
   {
     target_type = "direction",
@@ -331,7 +337,7 @@ data:extend({
   name = "pm-genevas-neglection-shotgun-slug",
   icon = "__periodic-madness__/graphics/icons/geneva's-neglection-slug.png",
   icon_size = 64, 
-  ammo_category = "shotgun-shell",
+  ammo_category = "pm-shotgun-slug",
   ammo_type =
   {
     target_type = "direction",
@@ -373,8 +379,6 @@ data:extend({
   order = "da",
   stack_size = 200
 },
-
-
 })
 
 data.raw["ammo"]["shotgun-shell"].icon = "__periodic-madness__/graphics/icons/shotgun-shell.png"
@@ -383,3 +387,6 @@ data.raw["ammo"]["shotgun-shell"].order = "a"
 data.raw["ammo"]["piercing-shotgun-shell"].icon = "__base__/graphics/icons/shotgun-shell.png"
 data.raw["ammo"]["piercing-shotgun-shell"].subgroup = "pm-shotgun-ammo"
 data.raw["ammo"]["piercing-shotgun-shell"].order = "b"
+
+data.raw["gun"]["shotgun"].attack_parameters.ammo_categories = {"shotgun-shell", "pm-shotgun-slug"}
+data.raw["gun"]["combat-shotgun"].attack_parameters.ammo_categories = {"shotgun-shell", "pm-shotgun-slug"}

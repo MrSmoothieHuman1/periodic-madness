@@ -528,7 +528,7 @@ data.raw["technology"]["land-mine"].unit.ingredients =
   {"military-science-pack", 1}
 }
 
-data.raw["technology"]["braking-force-1"].prerequisites = {"pm-advanced-advanced-transition-metal-science-pack"}
+data.raw["technology"]["braking-force-1"].prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"}
 data.raw["technology"]["braking-force-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1016,6 +1016,192 @@ data.raw["technology"]["laser-weapons-damage-4"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
+}
+
+data.raw["technology"]["physical-projectile-damage-1"].effects = 
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.05
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.05
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["physical-projectile-damage-2"].effects = 
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.05
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.05
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["physical-projectile-damage-3"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-3"].effects = 
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.1
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.1
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.1
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["physical-projectile-damage-4"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-4"].effects = 
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.1
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.1
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.1
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["physical-projectile-damage-5"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-5"].effects = 
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.15
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.15
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.15
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["physical-projectile-damage-6"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-6"].effects = 
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.15
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.15
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.15
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["physical-projectile-damage-7"].effects = 
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.2
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.2
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.2
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.15
+  },
 }
 
 data.raw["technology"]["speed-module"].icon_size = 256
