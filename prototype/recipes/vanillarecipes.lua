@@ -675,10 +675,10 @@ data.raw["recipe"]["efficiency-module-3"].energy_required = 30
 data.raw["recipe"]["productivity-module-3"].energy_required = 30
 
 data.raw["recipe"]["processing-unit"].energy_required = 6
-data.raw["recipe"]["processing-unit"].category = "pm-circuitry",
+data.raw["recipe"]["processing-unit"].category = "pm-circuitry"
 data.raw["recipe"]["advanced-circuit"].category = "pm-circuitry"
 data.raw["recipe"]["advanced-circuit"].energy_required = 3
-data.raw["recipe"]["electronic-circuit"].category = "pm-circuitry",
+data.raw["recipe"]["electronic-circuit"].category = "pm-circuitry"
 
 data.raw["recipe"]["express-transport-belt"].energy_required = 2
 data.raw["recipe"]["express-splitter"].energy_required = 3

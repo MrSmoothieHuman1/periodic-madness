@@ -1027,9 +1027,6 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-circuit-megassembler"),
-      PM.unlock_recipe("pm-megassembler-electronic-circuit"),
-      PM.unlock_recipe("pm-megassembler-fluid-resistant-circuit"),
-      PM.unlock_recipe("pm-megassembler-advanced-circuit"),
     },
     prerequisites = {"lubricant"},
     unit =

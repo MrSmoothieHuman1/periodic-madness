@@ -35,7 +35,6 @@ require("prototype.recipes.building-recipes.electrolysisrecipes")
 require("prototype.recipes.building-recipes.atmo-condenserrecipes")
 require("prototype.recipes.building-recipes.inatorrecipes")
 require("prototype.recipes.building-recipes.evaporationrecipes")
-require("prototype.recipes.building-recipes.megassemblerrecipes")
 require("prototype.recipes.biologicalrecipes")
 require("prototype.recipes.building-recipes.crystallisationrecipes")
 
