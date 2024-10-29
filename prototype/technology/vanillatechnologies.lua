@@ -935,7 +935,7 @@ data.raw["technology"]["laser"].effects =
 }
 data.raw["technology"]["laser"].prerequisites = {"pm-gemstone-processing", "processing-unit"}
 
-data.raw["technology"]["laser-turret"].prerequisites = {"laser", "pm-vanadium-redox-batteries"}
+data.raw["technology"]["laser-turret"].prerequisites = {"laser", "pm-vanadium-oxide-redox-batteries"}
 data.raw["technology"]["laser-turret"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -945,7 +945,7 @@ data.raw["technology"]["laser-turret"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
 }
 
-data.raw["technology"]["personal-laser-defense-equipment"].prerequisites = {"laser", "pm-vanadium-redox-batteries"}
+data.raw["technology"]["personal-laser-defense-equipment"].prerequisites = {"laser", "pm-vanadium-oxide-redox-batteries"}
 data.raw["technology"]["personal-laser-defense-equipment"].unit.ingredients =
 {
   {"automation-science-pack", 1},

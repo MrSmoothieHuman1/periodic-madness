@@ -3826,7 +3826,7 @@ data:extend({
     icons = util.technology_icon_constant_capacity("__base__/graphics/technology/worker-robots-storage.png"),
     effects =
     {
-      PM.modify("worker-robot-storage", 1)
+      PM.modify("worker-robot-storage", 1),
     },
     prerequisites = {"worker-robots-storage-3"},
     unit =
@@ -3921,6 +3921,7 @@ data:extend({
     },
     upgrade = true,
   },
+
   -- {
   --    type = "technology",
   --    name = "pm-metharicephentine",

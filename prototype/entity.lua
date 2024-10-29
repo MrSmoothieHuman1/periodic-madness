@@ -7991,3 +7991,6 @@ data.raw["splitter"]["express-splitter"].speed = 0.125
 data.raw["splitter"]["fast-splitter"].next_upgrade = "pm-advanced-splitter"
 data.raw["transport-belt"]["fast-transport-belt"].next_upgrade = "pm-advanced-transport-belt"
 data.raw["underground-belt"]["fast-underground-belt"].next_upgrade = "pm-advanced-underground-belt"
+
+data.raw["electric-turret"]["laser-turret"].energy_source.drain = "20kW"
+data.raw["electric-turret"]["laser-turret"].folding_speed = 0.085
