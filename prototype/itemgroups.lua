@@ -260,15 +260,6 @@ data:extend({
 
   {
     type = "item-subgroup",
-    name = "pm-megassembler-circuitry",
-    group = "pm-circuitry",
-    order = "a"
-  },
-
-
-
-  {
-    type = "item-subgroup",
     name = "pm-oil",
     group = "intermediate-products",
     order = "A"

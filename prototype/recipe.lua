@@ -85,6 +85,7 @@ data:extend({
     type = "recipe",
     name = "pm-fluid-circuit-breadboard",
     energy_required = 1.5,
+    category = "pm-circuitry",
     subgroup = "pm-circuits",
     order = "d",
     enabled = false,

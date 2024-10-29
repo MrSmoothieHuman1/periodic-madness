@@ -2637,7 +2637,7 @@ data:extend({
     corpse = "pm-circuit-megassembler",
     dying_explosion = "assembling-machine-1-explosion",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    crafting_categories = { "pm-circuitry" },
+    crafting_categories = {"pm-circuitry"},
     module_slots = 4,
     allowed_effects = PM.all_effects(),
     crafting_speed = 2.5,
@@ -7598,10 +7598,9 @@ ShorePumpBanishment.enabled = false
 ShorePumpBanishment.subgroup = "pm-water-machine"
 ShorePumpBanishment.order = "b"
 
-
-local QuickFluidFix = data.raw["assembling-machine"]["assembling-machine-1"]
-QuickFluidFix.crafting_categories = {"basic-crafting", "crafting", "crafting-with-fluid"}
-QuickFluidFix.fluid_boxes =
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "crafting-with-fluid")
+table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "pm-circuitry")
+data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes =
 {
   {
     production_type = "input",
@@ -7622,7 +7621,10 @@ QuickFluidFix.fluid_boxes =
 }
 data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes_off_when_no_fluid_recipe = true
 
-data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = { "basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid" }
+table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories, "pm-circuitry")
+
+table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories, "pm-advanced-crafting-with-fluid")
+table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories, "pm-circuitry")
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   {
     {
@@ -7718,8 +7720,7 @@ data.raw["storage-tank"]["storage-tank"].fast_replaceable_group = "pm-storage-ta
 
 data.raw["container"]["steel-chest"].next_upgrade = "pm-stainless-steel-chest"
 
-data.raw["lab"]["lab"].inputs = { "automation-science-pack", "logistic-science-pack",
-  "military-science-pack", "pm-advanced-advanced-transition-metal-science-pack" }
+data.raw["lab"]["lab"].inputs = {"automation-science-pack", "logistic-science-pack","military-science-pack", "pm-advanced-advanced-transition-metal-science-pack" }
 
 data.raw["solar-panel"]["solar-panel"].production = "120kW"
 data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
@@ -7728,10 +7729,8 @@ data.raw["accumulator"]["accumulator"].energy_source.buffer_capacity = "10MJ"
 data.raw["accumulator"]["accumulator"].energy_source.input_flow_limit = "600kW"
 data.raw["accumulator"]["accumulator"].energy_source.output_flow_limit = "600kW"
 
-data.raw["mining-drill"]["electric-mining-drill"].icon =
-"__periodic-madness__/graphics/icons/buildings/electric-mining-drill.png"
-data.raw["item"]["electric-mining-drill"].icon =
-"__periodic-madness__/graphics/icons/buildings/electric-mining-drill.png"
+data.raw["mining-drill"]["electric-mining-drill"].icon ="__periodic-madness__/graphics/icons/buildings/electric-mining-drill.png"
+data.raw["item"]["electric-mining-drill"].icon ="__periodic-madness__/graphics/icons/buildings/electric-mining-drill.png"
 data.raw["mining-drill"]["electric-mining-drill"].next_upgrade = "pm-electric-mining-drill-2"
 
 data.raw["underground-belt"]["express-underground-belt"].next_upgrade = "pm-high-density-underground-belt"
