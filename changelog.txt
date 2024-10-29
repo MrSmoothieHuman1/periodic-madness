@@ -92,6 +92,7 @@ Date: 2024-08-09
     - Changed butene/butane cracking to washing plants, to lower the need of chemical plants.
     - Changed Assembler 3's to take laser heads.
     - Lowered the cost of Assembler 3's.
+    - Rebalanced module tiers 1-2 technology cost to be closer in line with tier 3's.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -114,6 +115,8 @@ Date: 2024-08-09
     - Fixing mining productivty 1 not taking A-ATM packs.
     - "Fixed" the Circuit Megassembler needing a seperate recipe for circuits.
     - Fixed Laser damage and speed's science pack requirements.
+    - Fixed braking force 1 having R-NM packs as a prerequisite.
+    - Made R-NM locked researches match closer to the costs of P-TM researches.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

@@ -908,14 +908,14 @@ data:extend({
     prerequisites = {"pm-flourine-processing", "pm-polymethyl-methacrylate"},
     unit =
     {
-      count = 125,
+      count = 275,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 45
+      time = 60
     }
   },
   {
@@ -1237,7 +1237,7 @@ data:extend({
     prerequisites = {"chemical-science-pack", "pm-atmospheric-condensation"},
     unit =
     {
-      count = 100,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -1521,7 +1521,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1}
       },
-      time = 45
+      time = 60
     }
   },
   {
@@ -1568,7 +1568,7 @@ data:extend({
     prerequisites = {"chemical-science-pack"},
     unit =
     {
-      count = 75,
+      count = 200,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -1863,7 +1863,7 @@ data:extend({
     prerequisites = {"chemical-science-pack"},
     unit =
     {
-      count = 125,
+      count = 200,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2112,7 +2112,7 @@ data:extend({
     prerequisites = {"chemical-science-pack"},
     unit =
     {
-      count = 125,
+      count = 225,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2120,7 +2120,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1}
       },
-      time = 45
+      time = 60
     }
   },
   {
@@ -2223,7 +2223,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock", "pm-fertiliser"},
     unit =
     {
-      count = 200,
+      count = 275,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2429,7 +2429,7 @@ data:extend({
     prerequisites = {"pm-fertiliser"},
     unit =
     {
-      count = 175,
+      count = 200,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2534,7 +2534,7 @@ data:extend({
     prerequisites = {"pm-flourine-processing", "pm-potassium-processing"},
     unit =
     {
-      count = 375,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3078,7 +3078,7 @@ data:extend({
     prerequisites = {"pm-caesium-processing", "pm-potassium-processing"},
     unit =
     {
-      count = 375,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3312,7 +3312,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
-      count = 350,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3344,7 +3344,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
-      count = 350,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3400,7 +3400,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
-      count = 350,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3423,7 +3423,7 @@ data:extend({
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
     {
-      count = 350,
+      count = 250,
       ingredients =
       {
         {"automation-science-pack", 1},

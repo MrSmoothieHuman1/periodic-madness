@@ -288,6 +288,8 @@ data.raw["technology"]["modules"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["modules"].unit.time = 60
+data.raw["technology"]["modules"].unit.count = 150
 
 data.raw["technology"]["robotics"].prerequisites = { "pm-vanadium-oxide-redox-batteries", "electric-engine"}
 data.raw["technology"]["robotics"].unit.ingredients =
@@ -526,6 +528,7 @@ data.raw["technology"]["land-mine"].unit.ingredients =
   {"military-science-pack", 1}
 }
 
+data.raw["technology"]["braking-force-1"].prerequisites = {"pm-advanced-advanced-transition-metal-science-pack"}
 data.raw["technology"]["braking-force-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -852,6 +855,7 @@ data.raw["technology"]["energy-shield-equipment"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
+data.raw["technology"]["energy-shield-equipment"].unit.count = 250
 
 data.raw["technology"]["fission-reactor-equipment"].effects = 
 {
@@ -897,6 +901,7 @@ data.raw["technology"]["speed-module"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["speed-module"].unit.count = 100
 data.raw["technology"]["speed-module-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -905,6 +910,7 @@ data.raw["technology"]["speed-module-2"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["speed-module"].unit.count = 150
 data.raw["technology"]["speed-module-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1057,6 +1063,7 @@ data.raw["technology"]["productivity-module"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["productivity-module"].unit.count = 100
 data.raw["technology"]["productivity-module-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1065,6 +1072,7 @@ data.raw["technology"]["productivity-module-2"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["productivity-module-2"].unit.count = 150
 data.raw["technology"]["productivity-module-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1145,6 +1153,7 @@ data.raw["technology"]["efficiency-module"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["efficiency-module"].unit.count = 100
 data.raw["technology"]["efficiency-module-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1153,6 +1162,7 @@ data.raw["technology"]["efficiency-module-2"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["efficiency-module-2"].unit.count = 150
 data.raw["technology"]["efficiency-module-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},
