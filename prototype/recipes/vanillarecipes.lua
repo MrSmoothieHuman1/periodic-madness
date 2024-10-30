@@ -666,6 +666,15 @@ data.raw["recipe"]["personal-laser-defense-equipment"].ingredients =
   PM.ingredient("electric-engine-unit", 2),
   PM.ingredient("processing-unit", 6)
 }
+data.raw["recipe"]["personal-roboport-mk2-equipment"].ingredients =
+{
+  PM.ingredient("personal-roboport-equipment", 2),
+  PM.ingredient("pm-lithium-ion-battery", 10),
+  PM.ingredient("processing-unit", 15),
+  PM.ingredient("pm-lightweight-panelling", 24),
+  PM.ingredient("pm-heavyweight-framing", 16),
+  PM.ingredient("pm-basic-wiring", 20)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15

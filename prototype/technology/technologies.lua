@@ -3978,7 +3978,7 @@ data:extend({
     {
         PM.modify("mining-drill-productivity-bonus", 0.1)
     },
-    prerequisites = {"mining-productivity-4"},
+    prerequisites = {"mining-productivity-4", "pm-metalloid-pack-unlock"},
     unit =
     {
       count = 1600,
