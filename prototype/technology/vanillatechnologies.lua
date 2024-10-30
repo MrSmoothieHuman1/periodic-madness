@@ -118,7 +118,7 @@ data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics
 
 data.raw["technology"]["concrete"].prerequisites = { "pm-oil-residual-recipes", "advanced-material-processing", "automation-2"}
 
-table.insert(data.raw.technology.electronics.effects, {type = "unlock-recipe", recipe = "pm-mini-motor"})
+table.insert(data.raw["technology"]["fast-inserter"].effects, {type = "unlock-recipe", recipe = "pm-mini-motor"})
 
 data.raw["technology"]["advanced-oil-processing"].icon = "__periodic-madness__/graphics/technology/fractional-distillation.png"
 data.raw["technology"]["advanced-oil-processing"].effects =
@@ -1334,6 +1334,16 @@ data.raw["technology"]["weapon-shooting-speed-6"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.1
   },
+}
+
+data.raw["technology"]["electronics"].effects =
+{
+  PM.unlock_recipe("copper-wire"),
+  PM.unlock_recipe("pm-basic-integrated-circuit"),
+  PM.unlock_recipe("pm-basic-breadboard"),
+  PM.unlock_recipe("electronic-circuit"),
+  PM.unlock_recipe("small-electric-pole"),
+  PM.unlock_recipe("inserter")
 }
 
 data.raw["technology"]["bulk-inserter"].unit.ingredients = 
