@@ -12,9 +12,15 @@
 
 		["pm-lorándite", "pm-lorandite"],
 
-		["pm-effectivity-module-4", "pm-efficiency-module-4"]
+		["pm-effectivity-module-4", "pm-efficiency-module-4"],
+
+		["pm-basic-breadboard", "pm-electronic-breadboard"],
+		["pm-basic-breadboard-mold", "pm-electronic-breadboard-mold"],
+		["pm-basic-integrated-circuits", "pm-electronic-integrated-circuits"],
+		["pm-basic-integrated-circuit-mold", "pm-electronic-integrated-circuit-mold"]
 	],
-	"recipe": [
+	"recipe": 
+	[
 		["pm-geneva's-neglection-shotgun-shell", "pm-genevas-neglection-shotgun-shell"],
 		["pm-geneva's-neglection-shotgun-slug", "pm-genevas-neglection-shotgun-slug"],
 
@@ -22,11 +28,18 @@
 		["pm-bastnäsite-Y-seperation", "pm-bastnasite-Y-seperation"],
 		["pm-bastnäsite-C-seperation", "pm-bastnasite-C-seperation"],
 
-		["pm-effectivity-module-4", "pm-efficiency-module-4"]
+		["pm-effectivity-module-4", "pm-efficiency-module-4"],
+
+		["pm-circuit-breadboard", "pm-electronic-breadboard"],
+		["pm-basic-breadboard-mold", "pm-electronic-breadboard-mold"],
+		["pm-green-circuit-molding", "pm-electronic-circuit-molding"],
+		["pm-basic-integrated-circuits", "pm-electronic-integrated-circuits"]
 	],
-	"technology": [
+	"technology": 
+	[
 		["pm-effectivity-module-4", "pm-efficiency-module-4"],
 		["pm-alloying", "pm-brass-plate"],
-		["pm-copper-fiberoptics", "pm-aluminium-fiberoptics"]
+		["pm-copper-fiberoptics", "pm-aluminium-fiberoptics"],
+		["pm-green-circuit-molding", "pm-electronic-circuit-molding"]
 	]
 }

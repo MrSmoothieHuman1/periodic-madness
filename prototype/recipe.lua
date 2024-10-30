@@ -47,7 +47,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-circuit-breadboard",
+    name = "pm-electronic-breadboard",
     energy_required = 1,
     subgroup = "pm-circuits",
     order = "a",
@@ -58,12 +58,12 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-breadboard", 1)
+      PM.product("pm-electronic-breadboard", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-basic-integrated-circuits",
+    name = "pm-electronic-integrated-circuits",
     energy_required = 0.25,
     subgroup = "pm-circuits",
     order = "b",
@@ -75,7 +75,7 @@ data:extend({
       PM.ingredient("copper-cable", 1),
     },
     results = {
-      PM.product("pm-basic-integrated-circuits", 3)
+      PM.product("pm-electronic-integrated-circuits", 3)
     }
   },
 
@@ -92,7 +92,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-basic-breadboard", 1),
+      PM.ingredient("pm-electronic-breadboard", 1),
       PM.ingredient("pm-vulcanised-rubber", 2)
     },
     results =

@@ -4,7 +4,7 @@ data:extend({
 
   {
     type = "item",
-    name = "pm-basic-breadboard",
+    name = "pm-electronic-breadboard",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/circuit-breadboard.png",
     subgroup = "pm-circuits",
@@ -13,7 +13,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-basic-integrated-circuits",
+    name = "pm-electronic-integrated-circuits",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/basic-integrated-circuits.png",
     subgroup = "pm-circuits",
@@ -107,7 +107,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-basic-breadboard-mold",
+    name = "pm-electronic-breadboard-mold",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/green-circuitboard-mold.png",
     subgroup = "pm-molded-circuits",
@@ -152,7 +152,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-basic-integrated-circuit-mold",
+    name = "pm-electronic-integrated-circuit-mold",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/basic-integrated-circuit-mold.png",
     subgroup = "pm-molded-circuits",

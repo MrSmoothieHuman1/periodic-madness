@@ -3,8 +3,8 @@ local PM = require("__periodic-madness__/library")
 data.raw["recipe"]["electronic-circuit"].ingredients =
 {
   PM.ingredient("copper-cable", 2),
-  PM.ingredient("pm-basic-breadboard", 1),
-  PM.ingredient("pm-basic-integrated-circuits", 3),
+  PM.ingredient("pm-electronic-breadboard", 1),
+  PM.ingredient("pm-electronic-integrated-circuits", 3),
 }
 data.raw["recipe"]["automation-science-pack"].ingredients =
 {

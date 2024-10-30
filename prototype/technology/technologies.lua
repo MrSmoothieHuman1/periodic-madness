@@ -3764,7 +3764,7 @@ data:extend({
     type = "technology",
     name = "pm-laboratory",
     icon_size = 256,
-    icon = "__base__/graphics/technologies/electric-consumers.png",
+    icon = "__base__/graphics/technology/electricity-consumers.png",
     effects = 
     {
       PM.unlock_recipe("lab"),
@@ -3773,10 +3773,10 @@ data:extend({
     research_trigger = 
     {
       type = "craft-item",
-      name = "pm-glass-pane",
+      item = "pm-glass-pane",
       count = 8
     }
-  }
+  },
 
   {
     type = "technology",

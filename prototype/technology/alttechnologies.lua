@@ -4,14 +4,14 @@ local PM = require("__periodic-madness__/library")
 data:extend({
   {
     type = "technology",
-    name = "pm-green-circuit-molding",
+    name = "pm-electronic-circuit-molding",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/green-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-circuit-mold"),
-      PM.unlock_recipe("pm-green-circuit-molding"),
-      PM.unlock_recipe("pm-basic-breadboard-molding")
+      PM.unlock_recipe("pm-electronic-circuit-molding"),
+      PM.unlock_recipe("pm-electronic-breadboard-molding")
     },
     prerequisites = {"pm-pheonlic-resin-processing"},
     unit =
@@ -35,7 +35,7 @@ data:extend({
       PM.unlock_recipe("pm-orange-circuit-molding"),
       PM.unlock_recipe("pm-orange-breadboard-molding")
     },
-    prerequisites = { "pm-green-circuit-molding"},
+    prerequisites = {"pm-electronic-circuit-molding"},
     unit =
     {
       count = 100,
@@ -143,16 +143,16 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-basic-integrated-circuit-molding",
+    name = "pm-electronic-integrated-circuit-molding",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/basic-integrated-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-integrated-circuit-mold"),
       PM.unlock_recipe("pm-green-integrated-circuit-molding"),
-      PM.unlock_recipe("pm-basic-integrated-circuit-molding")
+      PM.unlock_recipe("pm-electronic-integrated-circuit-molding")
     },
-    prerequisites = { "pm-chemical-resin", "pm-green-circuit-molding", "pm-vacuum-former-2"},
+    prerequisites = { "pm-chemical-resin", "pm-electronic-circuit-molding", "pm-vacuum-former-2"},
     unit =
     {
       count = 100,
@@ -176,7 +176,7 @@ data:extend({
       PM.unlock_recipe("pm-fluid-integrated-circuit-pressing"),
       PM.unlock_recipe("pm-fluid-integrated-circuit-molding")
     },
-    prerequisites = { "pm-basic-integrated-circuit-molding"},
+    prerequisites = { "pm-electronic-integrated-circuit-molding"},
     unit =
     {
       count = 150,

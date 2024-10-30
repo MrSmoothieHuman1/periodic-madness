@@ -24,7 +24,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-green-circuit-molding",
+    name = "pm-electronic-circuit-molding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/green-circuitboard-molding.png",
     energy_required = 1,
@@ -37,17 +37,17 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-circuit-mold", 1),
-      PM.ingredient("pm-basic-breadboard", 1)
+      PM.ingredient("pm-electronic-breadboard", 1)
     },
     results =
     {
-      PM.product("pm-basic-breadboard-mold", 1),
-      PM.product("pm-basic-breadboard", 1)
+      PM.product("pm-electronic-breadboard-mold", 1),
+      PM.product("pm-electronic-breadboard", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-basic-breadboard-molding",
+    name = "pm-electronic-breadboard-molding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/green-circuitboard-mold.png",
     subgroup = "pm-molded-circuits",
@@ -58,13 +58,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      PM.ingredient("pm-basic-breadboard-mold", 1),
+      PM.ingredient("pm-electronic-breadboard-mold", 1),
       PM.ingredient("pm-nickel-plate", 1)
     },
     results =
     {
-      PM.product_chance("pm-basic-breadboard-mold", 1, 0.7),
-      PM.product("pm-basic-breadboard", 2)
+      PM.product_chance("pm-electronic-breadboard-mold", 1, 0.7),
+      PM.product("pm-electronic-breadboard", 2)
     },
   },
   {
@@ -349,17 +349,17 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-integrated-circuit-mold", 3),
-      PM.ingredient("pm-basic-integrated-circuits", 3)
+      PM.ingredient("pm-electronic-integrated-circuits", 3)
     },
     results =
     {
-      PM.product("pm-basic-integrated-circuit-mold", 3),
-      PM.product_range("pm-basic-integrated-circuits", 2, 3)
+      PM.product("pm-electronic-integrated-circuit-mold", 3),
+      PM.product_range("pm-electronic-integrated-circuits", 2, 3)
     }
   },
   {
     type = "recipe",
-    name = "pm-basic-integrated-circuit-molding",
+    name = "pm-electronic-integrated-circuit-molding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/basic-integrated-circuit-mold.png",
     subgroup = "pm-molded-circuits",
@@ -370,13 +370,13 @@ data:extend({
     always_show_made_in = true,
     ingredients =
     {
-      PM.ingredient("pm-basic-integrated-circuit-mold", 3),
+      PM.ingredient("pm-electronic-integrated-circuit-mold", 3),
       PM.ingredient("copper-cable", 1)
     },
     results =
     {
-      PM.product_chance("pm-basic-integrated-circuit-mold", 3, 0.6),
-      PM.product("pm-basic-integrated-circuits", 3)
+      PM.product_chance("pm-electronic-integrated-circuit-mold", 3, 0.6),
+      PM.product("pm-electronic-integrated-circuits", 3)
     },
   },
   {

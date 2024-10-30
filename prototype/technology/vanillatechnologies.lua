@@ -1338,9 +1338,9 @@ data.raw["technology"]["weapon-shooting-speed-6"].effects =
 
 data.raw["technology"]["electronics"].effects =
 {
-  PM.unlock_recipe("copper-wire"),
-  PM.unlock_recipe("pm-basic-integrated-circuit"),
-  PM.unlock_recipe("pm-basic-breadboard"),
+  PM.unlock_recipe("copper-cable"),
+  PM.unlock_recipe("pm-electronic-integrated-circuits"),
+  PM.unlock_recipe("pm-electronic-breadboard"),
   PM.unlock_recipe("electronic-circuit"),
   PM.unlock_recipe("small-electric-pole"),
   PM.unlock_recipe("inserter")
