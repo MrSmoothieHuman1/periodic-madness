@@ -1985,7 +1985,7 @@ data:extend({
     type = "recipe",
     name = "pm-empty-reactor-cell",
     enabled = false,
-    energy_reqiured = 10,
+    energy_reqiured = 20,
     allow_productivity = true,
     ingredients =
     {
