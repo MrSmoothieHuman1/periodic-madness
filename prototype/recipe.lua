@@ -2403,22 +2403,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-styrene",
-    enabled = false,
-    energy_required = 9,
-    category = "pm-moltening",
-    ingredients =
-    {
-      PM.ingredient("pm-ethylbenzene", 5, "fluid"),
-      PM.ingredient("iron-plate", 5)
-    },
-    results =
-    {
-      PM.product("pm-styrene", 10, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
     enabled = false,
     energy_required = 60,
@@ -2939,6 +2923,22 @@ data:extend({
     results = 
     {
       PM.product("pm-sapphire-laser-head", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lapis-lazuli-dye",
+    energy_required = 12,
+    category = "pm-washing",
+    ingredients = 
+    {
+      PM.ingredient("pm-lapis-lazuli-dust", 6),
+      PM.ingredient("pm-oxygen-gas", 12, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-cobalt-blue", 4, 10),
+      PM.product_range_chance("pm-sulfur-dioxide", 4, 8, 0.25)
     }
   },
 
