@@ -1711,7 +1711,6 @@ data:extend({
       fluid = "pm-gene-base",
       amount = 50
     }
-    }
   },
   {
     type = "technology",

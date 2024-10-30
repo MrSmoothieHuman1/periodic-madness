@@ -1346,6 +1346,25 @@ data.raw["technology"]["electronics"].effects =
   PM.unlock_recipe("inserter")
 }
 
+data.raw["technology"]["personal-roboport-equipment"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["personal-roboport-equipment"].unit.count = 150
+data.raw["technology"]["personal-roboport-equipment"].prerequisites = {"construction-robotics", "advanced-circuit"}
+data.raw["technology"]["personal-roboport-mk2-equipment"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1},
+}
+data.raw["technology"]["personal-roboport-mk2-equipment"].unit.count = 300
+data.raw["technology"]["personal-roboport-mk2-equipment"].prerequisites = {"pm-lithium-ion-construction-robotics"}
+
 table.insert(data.raw["technology"]["automation-science-pack"].prerequisites, "pm-laboratory")
 
 data.raw["technology"]["bulk-inserter"].unit.ingredients = 
