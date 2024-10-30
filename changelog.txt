@@ -118,6 +118,7 @@ Date: 2024-08-09
     - Fixed Laser damage and speed's science pack requirements.
     - Fixed braking force 1 having R-NM packs as a prerequisite.
     - Made R-NM locked researches match closer to the costs of P-TM researches.
+    - Fixed Bulk inserters not needing A-ATM packs to be research.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

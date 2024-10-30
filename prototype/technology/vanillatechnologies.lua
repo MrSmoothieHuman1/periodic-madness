@@ -1329,6 +1329,13 @@ data.raw["technology"]["weapon-shooting-speed-6"].effects =
   },
 }
 
+data.raw["technology"]["bulk-inserter"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
 data.raw["technology"]["speed-module"].effects =
