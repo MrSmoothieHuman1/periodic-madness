@@ -10,8 +10,8 @@ data:extend({
     subgroup = "pm-acids",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0, g = 0.8, b = 0.34 },
-    flow_color = { r = 0, g = 0.8, b = 0.34 }
+    base_color = {r = 0, g = 0.8, b = 0.34},
+    flow_color = {r = 0, g = 0.8, b = 0.34}
   },
   {
     type = "fluid",
@@ -21,8 +21,8 @@ data:extend({
     subgroup = "pm-acids",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0, g = 1, b = 0 },
-    flow_color = { r = 0, g = 1, b = 0 }
+    base_color = {r = 0, g = 1, b = 0},
+    flow_color = {r = 0, g = 1, b = 0}
   },
   {
     type = "fluid",
@@ -32,8 +32,8 @@ data:extend({
     subgroup = "pm-acids",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.16, g = 0.89, b = 0.69 },
-    flow_color = { r = 0.16, g = 0.69, b = 0.29 },
+    base_color = {r = 0.16, g = 0.89, b = 0.69},
+    flow_color = {r = 0.16, g = 0.69, b = 0.29},
     auto_barrel = false
   },
   {
@@ -44,8 +44,8 @@ data:extend({
     subgroup = "pm-mercury-tm",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.6, b = 0.6 },
-    flow_color = { r = 0.6, g = 0.6, b = 0.6 }
+    base_color = {r = 0.6, g = 0.6, b = 0.6},
+    flow_color = {r = 0.6, g = 0.6, b = 0.6}
   },
   {
     type = "fluid",
@@ -54,8 +54,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/sea-water.png",
     default_temperature = 15,
     heat_capacity = "0.2kJ",
-    base_color = { r = 0.3, g = 0.69, b = 0.98 },
-    flow_color = { r = 0.3, g = 0.69, b = 0.98 }
+    base_color = {r = 0.3, g = 0.69, b = 0.98},
+    flow_color = {r = 0.3, g = 0.69, b = 0.98}
   },
   {
     type = "fluid",
@@ -65,8 +65,8 @@ data:extend({
     subgroup = "pm-resin-processing",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.99, g = 0.98, b = 0.94 },
-    flow_color = { r = 0.99, g = 0.98, b = 0.94 }
+    base_color = {r = 0.99, g = 0.98, b = 0.94},
+    flow_color = {r = 0.99, g = 0.98, b = 0.94}
   },
   {
     type = "fluid",
@@ -76,8 +76,8 @@ data:extend({
     subgroup = "pm-resin-processing",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.89, g = 0.78, b = 0.14 },
-    flow_color = { r = 0.89, g = 0.78, b = 0.14 }
+    base_color = {r = 0.89, g = 0.78, b = 0.14},
+    flow_color = {r = 0.89, g = 0.78, b = 0.14}
   },
   {
     type = "fluid",
@@ -87,8 +87,8 @@ data:extend({
     subgroup = "pm-resin-processing",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.14, g = 0.95, b = 0.29 },
-    flow_color = { r = 0.14, g = 0.95, b = 0.29 }
+    base_color = {r = 0.14, g = 0.95, b = 0.29},
+    flow_color = {r = 0.14, g = 0.95, b = 0.29}
   },
 
   {
@@ -97,8 +97,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
     default_temperature = 15,
-    base_color = { r = 0, g = 0, b = 0 },
-    flow_color = { r = 0, g = 0, b = 0 }
+    base_color = {r = 0, g = 0, b = 0},
+    flow_color = {r = 0, g = 0, b = 0}
   },
   {
     type = "fluid",
@@ -106,8 +106,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
     default_temperature = 15,
-    base_color = { r = 0.61, g = 0.4, b = 0 },
-    flow_color = { r = 0.61, g = 0.4, b = 0 }
+    base_color = {r = 0.61, g = 0.4, b = 0},
+    flow_color = {r = 0.61, g = 0.4, b = 0}
   },
   {
     type = "fluid",
@@ -115,8 +115,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
     default_temperature = 15,
-    base_color = { r = 0, g = 0.4, b = 0 },
-    flow_color = { r = 0, g = 0.4, b = 0 }
+    base_color = {r = 0, g = 0.4, b = 0},
+    flow_color = {r = 0, g = 0.4, b = 0}
   },
   {
     type = "fluid",
@@ -124,8 +124,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
     default_temperature = 15,
-    base_color = { r = 0.333, g = 0.333, b = 0.333 },
-    flow_color = { r = 0.333, g = 0.333, b = 0.333 }
+    base_color = {r = 0.333, g = 0.333, b = 0.332},
+    flow_color = {r = 0.333, g = 0.333, b = 0.332}
   },
   {
     type = "fluid",
@@ -133,8 +133,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
     default_temperature = 15,
-    base_color = { r = 0.666, g = 0.666, b = 0.666 },
-    flow_color = { r = 0.666, g = 0.666, b = 0.666 }
+    base_color = {r = 0.666, g = 0.666, b = 0.666},
+    flow_color = {r = 0.666, g = 0.666, b = 0.666}
   },
   {
     type = "fluid",
@@ -142,8 +142,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
     default_temperature = 15,
-    base_color = { r = 0, g = 0, b = 0.4 },
-    flow_color = { r = 0, g = 0, b = 0.4 }
+    base_color = {r = 0, g = 0, b = 0.4},
+    flow_color = {r = 0, g = 0, b = 0.4}
   },
   {
     type = "fluid",
@@ -151,8 +151,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
     default_temperature = 15,
-    base_color = { r = 0.5, g = 0, b = 0 },
-    flow_color = { r = 0.5, g = 0, b = 0 }
+    base_color = {r = 0.5, g = 0, b = 0},
+    flow_color = {r = 0.5, g = 0, b = 0}
   },
   {
     type = "fluid",
@@ -160,8 +160,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/refinery-gases.png",
     default_temperature = 15,
-    base_color = { r = 0.77, g = 0.639, b = 0 },
-    flow_color = { r = 0.77, g = 0.639, b = 0 }
+    base_color = {r = 0.77, g = 0.639, b = 0},
+    flow_color = {r = 0.77, g = 0.639, b = 0}
   },
   {
     type = "fluid",
@@ -169,8 +169,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/butane-gas.png",
     default_temperature = 15,
-    base_color = { r = 1, g = 1, b = 1 },
-    flow_color = { r = 1, g = 1, b = 1 }
+    base_color = {r = 1, g = 1, b = 1 },
+    flow_color = {r = 1, g = 1, b = 1 }
   },
   {
     type = "fluid",
@@ -178,8 +178,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
     default_temperature = 15,
-    base_color = { r = 0.7, g = 0.7, b = 0.7 },
-    flow_color = { r = 0.7, g = 0.7, b = 0.7 }
+    base_color = {r = 0.7, g = 0.7, b = 0.7},
+    flow_color = {r = 0.7, g = 0.7, b = 0.7}
   },
   {
     type = "fluid",
@@ -187,8 +187,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/ethylene-gas.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.671, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.671, b = 0.8 },
+    base_color = {r = 0.8, g = 0.671, b = 0.8},
+    flow_color = {r = 0.8, g = 0.671, b = 0.8},
   },
   {
     type = "fluid",
@@ -196,8 +196,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/legendary-diesel.png",
     default_temperature = 15,
-    base_color = { r = 0.666, g = 0.666, b = 0.333 },
-    flow_color = { r = 0.666, g = 0.666, b = 0.333 },
+    base_color = {r = 0.666, g = 0.666, b = 0.332},
+    flow_color = {r = 0.666, g = 0.666, b = 0.332},
     auto_barrel = false
   },
   {
@@ -206,8 +206,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/common-diesel.png",
     default_temperature = 15,
-    base_color = { r = 0.555, g = 0.555, b = 0.555 },
-    flow_color = { r = 0.555, g = 0.555, b = 0.555 },
+    base_color = {r = 0.555, g = 0.555, b = 0.555},
+    flow_color = {r = 0.555, g = 0.555, b = 0.555},
     auto_barrel = false
   },
   {
@@ -217,8 +217,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/heavy-lubricant.png",
     fuel_value = "1MJ",
     default_temperature = 15,
-    base_color = { r = 0, g = 0.3, b = 0 },
-    flow_color = { r = 0, g = 0.3, b = 0 },
+    base_color = {r = 0, g = 0.3, b = 0},
+    flow_color = {r = 0, g = 0.3, b = 0},
     auto_barrel = false
   },
   {
@@ -227,8 +227,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sulfur-dioxide.png",
     default_temperature = 15,
-    base_color = { r = 1, g = 1, b = 0 },
-    flow_color = { r = 1, g = 1, b = 0 },
+    base_color = {r = 1, g = 1, b = 0},
+    flow_color = {r = 1, g = 1, b = 0},
     auto_barrel = false
   },
   {
@@ -238,8 +238,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/atmosphere.png",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.21, g = 0.21, b = 0.43 },
-    flow_color = { r = 0.21, g = 0.21, b = 0.43 },
+    base_color = {r = 0.21, g = 0.21, b = 0.42},
+    flow_color = {r = 0.21, g = 0.21, b = 0.42},
   },
   {
     type = "fluid",
@@ -248,8 +248,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/vanadium-oxide-positive-solution.png",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.18, g = 0.21, b = 0.23 },
-    flow_color = { r = 0.18, g = 0.21, b = 0.23 },
+    base_color = {r = 0.18, g = 0.21, b = 0.22},
+    flow_color = {r = 0.18, g = 0.21, b = 0.22},
   },
   {
     type = "fluid",
@@ -258,8 +258,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/vanadium-oxide-negative-solution.png",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.18, g = 0.21, b = 0.23 },
-    flow_color = { r = 0.18, g = 0.21, b = 0.23 },
+    base_color = {r = 0.18, g = 0.21, b = 0.22},
+    flow_color = {r = 0.18, g = 0.21, b = 0.22},
   },
   {
     type = "fluid",
@@ -269,8 +269,8 @@ data:extend({
     subgroup = "pm-mercury-tm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.3, g = 0.3, b = 0.3 },
-    flow_color = { r = 0.3, g = 0.3, b = 0.3 },
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
     auto_barrel = false
   },
   {
@@ -281,8 +281,8 @@ data:extend({
     subgroup = "pm-reactive-nonmetals",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 1, g = 0, b = 0 },
-    flow_color = { r = 1, g = 0, b = 0 }
+    base_color = {r = 1, g = 0, b = 0},
+    flow_color = {r = 1, g = 0, b = 0}
   },
   {
     type = "fluid",
@@ -292,8 +292,8 @@ data:extend({
     subgroup = "pm-reactive-nonmetals",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0, g = 0, b = 1 },
-    flow_color = { r = 0, g = 0, b = 1 }
+    base_color = {r = 0, g = 0, b = 1 },
+    flow_color = {r = 0, g = 0, b = 1 }
   },
   {
     type = "fluid",
@@ -303,8 +303,8 @@ data:extend({
     subgroup = "pm-reactive-nonmetals",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0, g = 0, b = 0 },
-    flow_color = { r = 0, g = 0, b = 0 }
+    base_color = {r = 0, g = 0, b = 0},
+    flow_color = {r = 0, g = 0, b = 0}
   },
   {
     type = "fluid",
@@ -314,8 +314,8 @@ data:extend({
     subgroup = "pm-reactive-nonmetals",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.18, g = 0.21, b = 0.23 },
-    flow_color = { r = 0.18, g = 0.21, b = 0.23 },
+    base_color = {r = 0.18, g = 0.21, b = 0.22},
+    flow_color = {r = 0.18, g = 0.21, b = 0.22},
   },
   {
     type = "fluid",
@@ -325,8 +325,8 @@ data:extend({
     subgroup = "pm-iron-tm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.3, g = 0.3, b = 0.3 },
-    flow_color = { r = 0.3, g = 0.3, b = 0.3 },
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
     auto_barrel = false,
   },
   {
@@ -337,8 +337,8 @@ data:extend({
     subgroup = "pm-copper-tm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.89, g = 0.6, b = 0 },
-    flow_color = { r = 0.89, g = 0.6, b = 0 },
+    base_color = {r = 0.89, g = 0.6, b = 0},
+    flow_color = {r = 0.89, g = 0.6, b = 0},
     auto_barrel = false,
   },
   {
@@ -349,8 +349,8 @@ data:extend({
     subgroup = "pm-nickel-tm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.86, b = 0.88 },
-    flow_color = { r = 0.6, g = 0.86, b = 0.88 },
+    base_color = {r = 0.6, g = 0.86, b = 0.88},
+    flow_color = {r = 0.6, g = 0.86, b = 0.88},
     auto_barrel = false,
   },
   {
@@ -361,8 +361,8 @@ data:extend({
     subgroup = "pm-zinc-tm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.3, b = 0.3 },
-    flow_color = { r = 0.6, g = 0.3, b = 0.3 },
+    base_color = {r = 0.6, g = 0.3, b = 0.2},
+    flow_color = {r = 0.6, g = 0.3, b = 0.2},
     auto_barrel = false,
   },
   {
@@ -373,8 +373,8 @@ data:extend({
     subgroup = "pm-manganese-tm",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.3, g = 0.3, b = 0.8 },
-    flow_color = { r = 0.3, g = 0.3, b = 0.8 },
+    base_color = {r = 0.3, g = 0.3, b = 0.8},
+    flow_color = {r = 0.3, g = 0.3, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -385,8 +385,8 @@ data:extend({
     subgroup = "pm-gold-tm",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.6, b = 0 },
-    flow_color = { r = 0.6, g = 0.6, b = 0 },
+    base_color = {r = 0.6, g = 0.6, b = 0},
+    flow_color = {r = 0.6, g = 0.6, b = 0},
     auto_barrel = false,
   },
   {
@@ -397,8 +397,8 @@ data:extend({
     subgroup = "pm-silver-tm",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.92, g = 0.92, b = 0.92 },
-    flow_color = { r = 0.92, g = 0.92, b = 0.92 },
+    base_color = {r = 0.92, g = 0.92, b = 0.92},
+    flow_color = {r = 0.92, g = 0.92, b = 0.92},
     auto_barrel = false,
   },
   {
@@ -409,8 +409,8 @@ data:extend({
     subgroup = "pm-tin-ptm",
     order = "f",
     default_temperature = 15,
-    base_color = { r = 0.67, g = 0.67, b = 1 },
-    flow_color = { r = 0.67, g = 0.67, b = 1 },
+    base_color = {r = 0.67, g = 0.67, b = 1 },
+    flow_color = {r = 0.67, g = 0.67, b = 1 },
     auto_barrel = false,
   },
   {
@@ -421,8 +421,8 @@ data:extend({
     subgroup = "pm-titanium-tm",
     order = "f",
     default_temperature = 15,
-    base_color = { r = 0.67, g = 0.67, b = 0.67 },
-    flow_color = { r = 0.67, g = 0.67, b = 0.67 },
+    base_color = {r = 0.67, g = 0.67, b = 0.67},
+    flow_color = {r = 0.67, g = 0.67, b = 0.67},
     auto_barrel = false,
   },
   {
@@ -433,8 +433,8 @@ data:extend({
     subgroup = "pm-tungsten-tm",
     order = "f",
     default_temperature = 15,
-    base_color = { r = 0.82, g = 0.67, b = 0.67 },
-    flow_color = { r = 0.82, g = 0.67, b = 0.67 },
+    base_color = {r = 0.82, g = 0.67, b = 0.67},
+    flow_color = {r = 0.82, g = 0.67, b = 0.67},
     auto_barrel = false,
   },
   {
@@ -445,8 +445,8 @@ data:extend({
     subgroup = "pm-cadnium-tm",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.91, g = 0.87, b = 0.67 },
-    flow_color = { r = 0.91, g = 0.87, b = 0.67 },
+    base_color = {r = 0.91, g = 0.87, b = 0.67},
+    flow_color = {r = 0.91, g = 0.87, b = 0.67},
     auto_barrel = false,
   },
   {
@@ -457,8 +457,8 @@ data:extend({
     subgroup = "pm-aluminium-ptm",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.91, g = 0.87, b = 0.67 },
-    flow_color = { r = 0.91, g = 0.87, b = 0.67 },
+    base_color = {r = 0.91, g = 0.87, b = 0.67},
+    flow_color = {r = 0.91, g = 0.87, b = 0.67},
     auto_barrel = false,
   },
   {
@@ -469,8 +469,8 @@ data:extend({
     subgroup = "pm-platinum-tm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.49, g = 0.49, b = 0.3 },
-    flow_color = { r = 0.49, g = 0.49, b = 0.3 },
+    base_color = {r = 0.49, g = 0.49, b = 0.2},
+    flow_color = {r = 0.49, g = 0.49, b = 0.2},
     auto_barrel = false,
   },
   {
@@ -481,8 +481,8 @@ data:extend({
     subgroup = "pm-indium-ptm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.38, g = 0.49, b = 0.74 },
-    flow_color = { r = 0.38, g = 0.49, b = 0.74 },
+    base_color = {r = 0.38, g = 0.49, b = 0.74},
+    flow_color = {r = 0.38, g = 0.49, b = 0.74},
     auto_barrel = false,
   },
   {
@@ -493,8 +493,8 @@ data:extend({
     subgroup = "pm-thallium-ptm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.38, g = 0.39, b = 0.38 },
-    flow_color = { r = 0.38, g = 0.39, b = 0.38 },
+    base_color = {r = 0.38, g = 0.39, b = 0.38},
+    flow_color = {r = 0.38, g = 0.39, b = 0.38},
     auto_barrel = false,
   },
   {
@@ -505,8 +505,8 @@ data:extend({
     subgroup = "pm-cobalt-tm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.08, g = 0.09, b = 1 },
-    flow_color = { r = 0.08, g = 0.09, b = 1 },
+    base_color = {r = 0.08, g = 0.09, b = 1 },
+    flow_color = {r = 0.08, g = 0.09, b = 1 },
     auto_barrel = false,
   },
   {
@@ -517,8 +517,8 @@ data:extend({
     subgroup = "pm-platinum-tm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.89, g = 0.62, b = 0.44 },
-    flow_color = { r = 0.89, g = 0.62, b = 0.44 },
+    base_color = {r = 0.89, g = 0.62, b = 0.44},
+    flow_color = {r = 0.89, g = 0.62, b = 0.44},
     auto_barrel = false,
   },
   {
@@ -529,8 +529,8 @@ data:extend({
     subgroup = "pm-glassing",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 },
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -541,8 +541,8 @@ data:extend({
     subgroup = "pm-glassing",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.6 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.6 },
+    base_color = {r = 0.8, g = 0.8, b = 0.6},
+    flow_color = {r = 0.8, g = 0.8, b = 0.6},
     auto_barrel = false,
   },
   {
@@ -553,8 +553,8 @@ data:extend({
     subgroup = "pm-metal-melting",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.62, g = 0.49, b = 0.37 },
-    flow_color = { r = 0.62, g = 0.49, b = 0.37 },
+    base_color = {r = 0.62, g = 0.49, b = 0.37},
+    flow_color = {r = 0.62, g = 0.49, b = 0.37},
     auto_barrel = false,
   },
   {
@@ -565,8 +565,8 @@ data:extend({
     subgroup = "pm-metal-melting",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.6, b = 0.6 },
-    flow_color = { r = 0.6, g = 0.6, b = 0.6 },
+    base_color = {r = 0.6, g = 0.6, b = 0.6},
+    flow_color = {r = 0.6, g = 0.6, b = 0.6},
     auto_barrel = false,
   },
   {
@@ -577,8 +577,8 @@ data:extend({
     subgroup = "pm-metal-melting",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.49, g = 0.49, b = 0.8 },
-    flow_color = { r = 0.49, g = 0.49, b = 0.8 },
+    base_color = {r = 0.49, g = 0.49, b = 0.8},
+    flow_color = {r = 0.49, g = 0.49, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -589,8 +589,8 @@ data:extend({
     subgroup = "pm-metal-melting",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.7, b = 0.6 },
-    flow_color = { r = 0.8, g = 0.7, b = 0.6 },
+    base_color = {r = 0.8, g = 0.7, b = 0.6},
+    flow_color = {r = 0.8, g = 0.7, b = 0.6},
     auto_barrel = false,
   },
   {
@@ -601,8 +601,8 @@ data:extend({
     subgroup = "pm-metal-melting",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.92, g = 0.94, b = 0.68 },
-    flow_color = { r = 0.92, g = 0.94, b = 0.68 },
+    base_color = {r = 0.92, g = 0.94, b = 0.68},
+    flow_color = {r = 0.92, g = 0.94, b = 0.68},
     auto_barrel = false,
   },
   {
@@ -613,8 +613,8 @@ data:extend({
     subgroup = "pm-vanadium-tm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.62, g = 0.49, b = 0.37 },
-    flow_color = { r = 0.62, g = 0.49, b = 0.37 },
+    base_color = {r = 0.62, g = 0.49, b = 0.37},
+    flow_color = {r = 0.62, g = 0.49, b = 0.37},
   },
   {
     type = "fluid",
@@ -624,8 +624,8 @@ data:extend({
     subgroup = "pm-noble-gases",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.7, g = 1, b = 0.7 },
-    flow_color = { r = 0.7, g = 1, b = 0.7 },
+    base_color = {r = 0.7, g = 1, b = 0.7},
+    flow_color = {r = 0.7, g = 1, b = 0.7},
     auto_barrel = false,
   },
   {
@@ -636,8 +636,8 @@ data:extend({
     subgroup = "pm-noble-gases",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0, b = 0 },
-    flow_color = { r = 0.6, g = 0, b = 0 },
+    base_color = {r = 0.6, g = 0, b = 0},
+    flow_color = {r = 0.6, g = 0, b = 0},
     auto_barrel = false,
     fuel_value = "0.4MJ"
   },
@@ -649,8 +649,8 @@ data:extend({
     subgroup = "fluid",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.8, b = 0.6 },
-    flow_color = { r = 0.6, g = 0.8, b = 0.6 },
+    base_color = {r = 0.6, g = 0.8, b = 0.6},
+    flow_color = {r = 0.6, g = 0.8, b = 0.6},
   },
   {
     type = "fluid",
@@ -658,8 +658,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 }
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8}
   },
   {
     type = "fluid",
@@ -667,8 +667,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 }
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8}
   },
   {
     type = "fluid",
@@ -676,8 +676,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/dont-model-your-molecules-A.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 }
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8}
   },
   {
     type = "fluid",
@@ -687,8 +687,8 @@ data:extend({
     subgroup = "pm-cadnium-tm",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.32, g = 0.49, b = 0.87 },
-    flow_color = { r = 0.32, g = 0.49, b = 0.87 },
+    base_color = {r = 0.32, g = 0.49, b = 0.87},
+    flow_color = {r = 0.32, g = 0.49, b = 0.87},
   },
   {
     type = "fluid",
@@ -697,8 +697,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
     subgroup = "pm-acids",
     default_temperature = 15,
-    base_color = { r = 0.82, g = 0, b = 0.87 },
-    flow_color = { r = 0.82, g = 0, b = 0.87 },
+    base_color = {r = 0.82, g = 0, b = 0.87},
+    flow_color = {r = 0.82, g = 0, b = 0.87},
     auto_barrel = false
   },
   {
@@ -709,8 +709,8 @@ data:extend({
     subgroup = "pm-cadnium-tm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.32, g = 0.49, b = 0.87 },
-    flow_color = { r = 0.32, g = 0.49, b = 0.87 },
+    base_color = {r = 0.32, g = 0.49, b = 0.87},
+    flow_color = {r = 0.32, g = 0.49, b = 0.87},
     auto_barrel = false
   },
   {
@@ -719,8 +719,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/cellouse-pulp.png",
     default_temperature = 15,
-    base_color = { r = 0.32, g = 0.49, b = 0.87 },
-    flow_color = { r = 0.32, g = 0.49, b = 0.87 },
+    base_color = {r = 0.32, g = 0.49, b = 0.87},
+    flow_color = {r = 0.32, g = 0.49, b = 0.87},
     auto_barrel = false
   },
   {
@@ -729,8 +729,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/agar-solution.png",
     default_temperature = 15,
-    base_color = { r = 0.99, g = 0.98, b = 0.6 },
-    flow_color = { r = 0.99, g = 0.98, b = 0.6 },
+    base_color = {r = 0.99, g = 0.98, b = 0.6},
+    flow_color = {r = 0.99, g = 0.98, b = 0.6},
     auto_barrel = false,
     fuel_value = "0.8MJ"
   },
@@ -740,8 +740,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/bacteria'ed-agar-solution.png",
     default_temperature = 15,
-    base_color = { r = 0.99, g = 0.6, b = 0.98 },
-    flow_color = { r = 0.99, g = 0.6, b = 0.98 },
+    base_color = {r = 0.99, g = 0.6, b = 0.98},
+    flow_color = {r = 0.99, g = 0.6, b = 0.98},
     auto_barrel = false,
   },
   {
@@ -750,8 +750,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/ammonia.png",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.6, b = 1 },
-    flow_color = { r = 0.6, g = 0.6, b = 1 },
+    base_color = {r = 0.6, g = 0.6, b = 1 },
+    flow_color = {r = 0.6, g = 0.6, b = 1 },
     auto_barrel = false,
   },
   {
@@ -760,8 +760,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/gene-base.png",
     default_temperature = 15,
-    base_color = { r = 0.4, g = 0.4, b = 0.6 },
-    flow_color = { r = 0.4, g = 0.4, b = 0.6 },
+    base_color = {r = 0.4, g = 0.4, b = 0.6},
+    flow_color = {r = 0.4, g = 0.4, b = 0.6},
     auto_barrel = false,
   },
   {
@@ -770,8 +770,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/trace-acetonitrile.png",
     default_temperature = 15,
-    base_color = { r = 0.2, g = 0.2, b = 0.6 },
-    flow_color = { r = 0.2, g = 0.2, b = 0.6 },
+    base_color = {r = 0.2, g = 0.2, b = 0.6},
+    flow_color = {r = 0.2, g = 0.2, b = 0.6},
     auto_barrel = false,
   },
   {
@@ -780,8 +780,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/acetonitrile.png",
     default_temperature = 15,
-    base_color = { r = 0.2, g = 0.2, b = 0.8 },
-    flow_color = { r = 0.2, g = 0.2, b = 0.8 },
+    base_color = {r = 0.2, g = 0.2, b = 0.8},
+    flow_color = {r = 0.2, g = 0.2, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -790,8 +790,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/phosphoramidite.png",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.4, b = 0 },
-    flow_color = { r = 0.6, g = 0.4, b = 0 },
+    base_color = {r = 0.6, g = 0.4, b = 0},
+    flow_color = {r = 0.6, g = 0.4, b = 0},
     auto_barrel = false,
   },
   {
@@ -800,8 +800,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/common-myostatin.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 },
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -810,8 +810,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/broken-myostatin.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 },
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -820,8 +820,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/rare-myostatin.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 },
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -830,8 +830,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/legendary-myostatin.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 },
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -840,8 +840,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/CISD2.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 },
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8},
     auto_barrel = false,
   },
   {
@@ -852,8 +852,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/phosphoric-acid.png",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.6, b = 0.6 },
-    flow_color = { r = 1, g = 0.6, b = 0.6 }
+    base_color = {r = 1, g = 0.6, b = 0.6},
+    flow_color = {r = 1, g = 0.6, b = 0.6}
   },
   {
     type = "fluid",
@@ -863,8 +863,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/phosphor-vapour.png",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.6, b = 0.6 },
-    flow_color = { r = 1, g = 0.6, b = 0.6 },
+    base_color = {r = 1, g = 0.6, b = 0.6},
+    flow_color = {r = 1, g = 0.6, b = 0.6},
     auto_barrel = false
   },
   {
@@ -875,8 +875,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-flouride.png",
     default_temperature = 15,
-    base_color = { r = 0.2, g = 1, b = 1 },
-    flow_color = { r = 0.2, g = 1, b = 1 },
+    base_color = {r = 0.2, g = 1, b = 1 },
+    flow_color = {r = 0.2, g = 1, b = 1 },
     auto_barrel = false
   },
   {
@@ -887,8 +887,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/hydroflouric-acid.png",
     default_temperature = 15,
-    base_color = { r = 0.2, g = 1, b = 1 },
-    flow_color = { r = 0.2, g = 1, b = 1 },
+    base_color = {r = 0.2, g = 1, b = 1 },
+    flow_color = {r = 0.2, g = 1, b = 1 },
     auto_barrel = false
   },
   {
@@ -899,8 +899,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/plaster-of-nauvis.png",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.7, b = 0.7 },
-    flow_color = { r = 1, g = 0.7, b = 0.7 }
+    base_color = {r = 1, g = 0.7, b = 0.7},
+    flow_color = {r = 1, g = 0.7, b = 0.7}
   },
   {
     type = "fluid",
@@ -910,8 +910,8 @@ data:extend({
     subgroup = "pm-lead-ptm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.278, g = 0.143, b = 0 },
-    flow_color = { r = 0.278, g = 0.143, b = 0 },
+    base_color = {r = 0.278, g = 0.143, b = 0},
+    flow_color = {r = 0.278, g = 0.143, b = 0},
     auto_barrel = false,
   },
   {
@@ -922,8 +922,8 @@ data:extend({
     subgroup = "pm-lead-ptm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.478, g = 0.343, b = 0 },
-    flow_color = { r = 0.478, g = 0.343, b = 0 },
+    base_color = {r = 0.478, g = 0.343, b = 0},
+    flow_color = {r = 0.478, g = 0.343, b = 0},
     auto_barrel = false,
   },
   {
@@ -934,8 +934,8 @@ data:extend({
     subgroup = "pm-gallium-ptm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.842, b = 0.863 },
-    flow_color = { r = 1, g = 0.842, b = 0.863 },
+    base_color = {r = 1, g = 0.842, b = 0.862},
+    flow_color = {r = 1, g = 0.842, b = 0.862},
     auto_barrel = false,
   },
   {
@@ -946,8 +946,8 @@ data:extend({
     subgroup = "pm-gallium-ptm",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.842, b = 0.863 },
-    flow_color = { r = 1, g = 0.842, b = 0.863 },
+    base_color = {r = 1, g = 0.842, b = 0.862},
+    flow_color = {r = 1, g = 0.842, b = 0.862},
     auto_barrel = false,
   },
   {
@@ -958,8 +958,8 @@ data:extend({
     subgroup = "pm-gallium-ptm",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.6, b = 0.7 },
-    flow_color = { r = 0.6, g = 0.6, b = 0.7 }
+    base_color = {r = 0.6, g = 0.6, b = 0.7},
+    flow_color = {r = 0.6, g = 0.6, b = 0.7}
   },
   {
     type = "fluid",
@@ -970,8 +970,8 @@ data:extend({
     order = "a",
     default_temperature = 15,
     fuel_value = "1MJ",
-    base_color = { r = 0.247, g = 0.82, b = 1 },
-    flow_color = { r = 0.247, g = 0.82, b = 1 },
+    base_color = {r = 0.247, g = 0.82, b = 1 },
+    flow_color = {r = 0.247, g = 0.82, b = 1 },
     auto_barrel = false,
   },
   {
@@ -982,8 +982,8 @@ data:extend({
     subgroup = "pm-bismuth-ptm",
     order = "A",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.82, b = 0.82 },
-    flow_color = { r = 1, g = 0.82, b = 0.82 },
+    base_color = {r = 1, g = 0.82, b = 0.82},
+    flow_color = {r = 1, g = 0.82, b = 0.82},
     auto_barrel = false,
   },
   {
@@ -992,8 +992,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/creosote.png",
     default_temperature = 15,
-    base_color = { r = 0.4, g = 0.3, b = 0.2 },
-    flow_color = { r = 0.4, g = 0.3, b = 0.2 },
+    base_color = {r = 0.4, g = 0.3, b = 0.2},
+    flow_color = {r = 0.4, g = 0.3, b = 0.2},
   },
   {
     type = "fluid",
@@ -1003,8 +1003,8 @@ data:extend({
     subgroup = "pm-hydrogen-rnm",
     order = "A",
     default_temperature = 15,
-    base_color = { r = 1, g = 1, b = 1 },
-    flow_color = { r = 1, g = 1, b = 1 },
+    base_color = {r = 1, g = 1, b = 1 },
+    flow_color = {r = 1, g = 1, b = 1 },
     auto_barrel = false,
   },
   {
@@ -1015,8 +1015,8 @@ data:extend({
     subgroup = "pm-hydrogen-rnm",
     order = "A",
     default_temperature = 15,
-    base_color = { r = 0.9, g = 0.9, b = 1 },
-    flow_color = { r = 0.9, g = 0.9, b = 1 },
+    base_color = {r = 0.9, g = 0.9, b = 1 },
+    flow_color = {r = 0.9, g = 0.9, b = 1 },
     auto_barrel = false,
   },
   {
@@ -1027,8 +1027,8 @@ data:extend({
     subgroup = "pm-reactive-nonmetals",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.1, g = 0.1, b = 0.1 },
-    flow_color = { r = 0.1, g = 0.1, b = 0.1 }
+    base_color = {r = 0.1, g = 0.1, b = 0.1 },
+    flow_color = {r = 0.1, g = 0.1, b = 0.1 }
   },
   {
     type = "fluid",
@@ -1038,8 +1038,8 @@ data:extend({
     subgroup = "pm-plastics",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.4, g = 0.1, b = 0.1 },
-    flow_color = { r = 0.4, g = 0.1, b = 0.1 }
+    base_color = {r = 0.4, g = 0.1, b = 0.1 },
+    flow_color = {r = 0.4, g = 0.1, b = 0.1 }
   },
   {
     type = "fluid",
@@ -1049,8 +1049,8 @@ data:extend({
     subgroup = "pm-plastics",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.2, g = 0.1, b = 0.1 },
-    flow_color = { r = 0.2, g = 0.1, b = 0.1 }
+    base_color = {r = 0.2, g = 0.1, b = 0.1 },
+    flow_color = {r = 0.2, g = 0.1, b = 0.1 }
   },
   {
     type = "fluid",
@@ -1060,8 +1060,8 @@ data:extend({
     subgroup = "pm-circuits",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.4, g = 0.66, b = 0.4 },
-    flow_color = { r = 0.4, g = 0.66, b = 0.4 }
+    base_color = {r = 0.4, g = 0.66, b = 0.4},
+    flow_color = {r = 0.4, g = 0.66, b = 0.4}
   },
   {
     type = "fluid",
@@ -1071,8 +1071,8 @@ data:extend({
     subgroup = "pm-cobalt-tm",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.46, g = 0.4, b = 0.26 },
-    flow_color = { r = 0.46, g = 0.4, b = 0.26 }
+    base_color = {r = 0.46, g = 0.4, b = 0.26},
+    flow_color = {r = 0.46, g = 0.4, b = 0.26}
   },
   {
     type = "fluid",
@@ -1082,8 +1082,8 @@ data:extend({
     subgroup = "pm-cobalt-tm",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.56, g = 0.422, b = 0.23 },
-    flow_color = { r = 0.56, g = 0.422, b = 0.23 }
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.56, g = 0.422, b = 0.22}
   },
   {
     type = "fluid",
@@ -1093,8 +1093,8 @@ data:extend({
     subgroup = "pm-lithium-am",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.16, g = 0.89, b = 0.79 },
-    flow_color = { r = 0.16, g = 0.69, b = 0.79 },
+    base_color = {r = 0.16, g = 0.89, b = 0.79},
+    flow_color = {r = 0.16, g = 0.69, b = 0.79},
     auto_barrel = false
   },
   {
@@ -1104,8 +1104,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/caesium.png",
     subgroup = "pm-caesium-am",
     order = "a",
-    base_color = { r = 0.99, g = 0.98, b = 0.6 },
-    flow_color = { r = 0.99, g = 0.98, b = 0.6 },
+    base_color = {r = 0.99, g = 0.98, b = 0.6},
+    flow_color = {r = 0.99, g = 0.98, b = 0.6},
     default_temperature = 15,
     auto_barrel = false
   },
@@ -1115,8 +1115,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/phosgene.png",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.8, b = 0.6 },
-    flow_color = { r = 0.6, g = 0.8, b = 0.6 },
+    base_color = {r = 0.6, g = 0.8, b = 0.6},
+    flow_color = {r = 0.6, g = 0.8, b = 0.6},
     auto_barrel = false
   },
   {
@@ -1125,8 +1125,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/cyanobacteria'ed-agar-solution.png",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.6, b = 0.98 },
-    flow_color = { r = 0.6, g = 0.6, b = 0.98 },
+    base_color = {r = 0.6, g = 0.6, b = 0.98},
+    flow_color = {r = 0.6, g = 0.6, b = 0.98},
     auto_barrel = false
   },
   {
@@ -1135,8 +1135,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/melatonin.png",
     default_temperature = 15,
-    base_color = { r = 0.6, g = 0.6, b = 0.8 },
-    flow_color = { r = 0.6, g = 0.6, b = 0.8 },
+    base_color = {r = 0.6, g = 0.6, b = 0.8},
+    flow_color = {r = 0.6, g = 0.6, b = 0.8},
     auto_barrel = false
   },
   {
@@ -1147,8 +1147,8 @@ data:extend({
     subgroup = "pm-batteries",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.82, g = 0.42, b = 0.42 },
-    flow_color = { r = 0.82, g = 0.42, b = 0.42 },
+    base_color = {r = 0.82, g = 0.42, b = 0.42},
+    flow_color = {r = 0.82, g = 0.42, b = 0.42},
     auto_barrel = false,
   },
   {
@@ -1159,8 +1159,8 @@ data:extend({
     subgroup = "pm-lithium-am",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.16, g = 0.99, b = 0.89 },
-    flow_color = { r = 0.16, g = 0.99, b = 0.89 },
+    base_color = {r = 0.16, g = 0.99, b = 0.89},
+    flow_color = {r = 0.16, g = 0.99, b = 0.89},
     auto_barrel = false,
   },
   {
@@ -1171,8 +1171,8 @@ data:extend({
     subgroup = "pm-lithium-am",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.16, g = 0.99, b = 0.99 },
-    flow_color = { r = 0.16, g = 0.99, b = 0.99 },
+    base_color = {r = 0.16, g = 0.99, b = 0.99},
+    flow_color = {r = 0.16, g = 0.99, b = 0.99},
     auto_barrel = false,
   },
   {
@@ -1183,8 +1183,8 @@ data:extend({
     subgroup = "pm-lithium-am",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.26, g = 0.99, b = 0.99 },
-    flow_color = { r = 0.26, g = 0.99, b = 0.99 },
+    base_color = {r = 0.26, g = 0.99, b = 0.99},
+    flow_color = {r = 0.26, g = 0.99, b = 0.99},
     auto_barrel = false,
   },
   {
@@ -1195,8 +1195,8 @@ data:extend({
     subgroup = "pm-lithium-am",
     order = "x",
     default_temperature = 15,
-    base_color = { r = 0.863, g = 0.842, b = 1 },
-    flow_color = { r = 0.863, g = 0.842, b = 1 },
+    base_color = {r = 0.863, g = 0.842, b = 1 },
+    flow_color = {r = 0.863, g = 0.842, b = 1 },
     auto_barrel = false,
   },
   {
@@ -1207,8 +1207,8 @@ data:extend({
     subgroup = "pm-bromine-rnm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.675, b = 0.3 },
-    flow_color = { r = 1, g = 0.675, b = 0.3 },
+    base_color = {r = 1, g = 0.675, b = 0.2},
+    flow_color = {r = 1, g = 0.675, b = 0.2},
     auto_barrel = false,
   },
   {
@@ -1219,8 +1219,8 @@ data:extend({
     subgroup = "pm-bromine-rnm",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.7, g = 0.64, b = 0 },
-    flow_color = { r = 0.7, g = 0.64, b = 0 },
+    base_color = {r = 0.7, g = 0.64, b = 0},
+    flow_color = {r = 0.7, g = 0.64, b = 0},
     auto_barrel = false,
   },
   {
@@ -1231,8 +1231,8 @@ data:extend({
     subgroup = "pm-bromine-rnm",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.75, g = 0.68, b = 0.6 },
-    flow_color = { r = 0.75, g = 0.68, b = 0.6 },
+    base_color = {r = 0.75, g = 0.68, b = 0.6},
+    flow_color = {r = 0.75, g = 0.68, b = 0.6},
     auto_barrel = false,
   },
   {
@@ -1243,8 +1243,8 @@ data:extend({
     subgroup = "pm-bromine-rnm",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.67, g = 0.36, b = 0 },
-    flow_color = { r = 0.67, g = 0.36, b = 0 },
+    base_color = {r = 0.67, g = 0.36, b = 0},
+    flow_color = {r = 0.67, g = 0.36, b = 0},
     auto_barrel = false
   },
   {
@@ -1255,8 +1255,8 @@ data:extend({
     subgroup = "pm-bromine-rnm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 0.67, g = 0.36, b = 0 },
-    flow_color = { r = 0.67, g = 0.36, b = 0 },
+    base_color = {r = 0.67, g = 0.36, b = 0},
+    flow_color = {r = 0.67, g = 0.36, b = 0},
     auto_barrel = false
   },
   {
@@ -1267,8 +1267,8 @@ data:extend({
     subgroup = "pm-chlorine-rnm",
     order = "za",
     default_temperature = 15,
-    base_color = { r = 0.33, g = 0.66, b = 0.33 },
-    flow_color = { r = 0.33, g = 0.66, b = 0.33 },
+    base_color = {r = 0.33, g = 0.66, b = 0.32},
+    flow_color = {r = 0.33, g = 0.66, b = 0.32},
     auto_barrel = false
   },
   {
@@ -1279,8 +1279,8 @@ data:extend({
     subgroup = "pm-chlorine-rnm",
     order = "x",
     default_temperature = 15,
-    base_color = { r = 0.33, g = 0.99, b = 0.33 },
-    flow_color = { r = 0.33, g = 0.99, b = 0.33 },
+    base_color = {r = 0.33, g = 0.99, b = 0.32},
+    flow_color = {r = 0.33, g = 0.99, b = 0.32},
     auto_barrel = false
   },
   {
@@ -1291,8 +1291,8 @@ data:extend({
     subgroup = "pm-chlorine-rnm",
     order = "y",
     default_temperature = 15,
-    base_color = { r = 0.66, g = 0.99, b = 0.66 },
-    flow_color = { r = 0.66, g = 0.99, b = 0.66 },
+    base_color = {r = 0.66, g = 0.99, b = 0.66},
+    flow_color = {r = 0.66, g = 0.99, b = 0.66},
     auto_barrel = false
   },
   {
@@ -1303,8 +1303,8 @@ data:extend({
     subgroup = "pm-plastics",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.3, g = 0.1, b = 0.3 },
-    flow_color = { r = 0.3, g = 0.1, b = 0.3 }
+    base_color = {r = 0.3, g = 0.1, b = 0.2},
+    flow_color = {r = 0.3, g = 0.1, b = 0.2}
   },
   {
     type = "fluid",
@@ -1314,8 +1314,8 @@ data:extend({
     subgroup = "pm-chlorine-rnm",
     order = "z",
     default_temperature = 15,
-    base_color = { r = 0.66, g = 0.99, b = 0.66 },
-    flow_color = { r = 0.66, g = 0.99, b = 0.66 },
+    base_color = {r = 0.66, g = 0.99, b = 0.66},
+    flow_color = {r = 0.66, g = 0.99, b = 0.66},
     auto_barrel = false
   },
   {
@@ -1324,8 +1324,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/sulfur-trioxide.png",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.8, b = 0 },
-    flow_color = { r = 1, g = 0.8, b = 0 },
+    base_color = {r = 1, g = 0.8, b = 0},
+    flow_color = {r = 1, g = 0.8, b = 0},
     auto_barrel = false
   },
   {
@@ -1334,8 +1334,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/oleum.png",
     default_temperature = 15,
-    base_color = { r = 1, g = 1, b = 0 },
-    flow_color = { r = 1, g = 1, b = 0 },
+    base_color = {r = 1, g = 1, b = 0},
+    flow_color = {r = 1, g = 1, b = 0},
     auto_barrel = false
   },
   {
@@ -1344,8 +1344,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
     default_temperature = 15,
-    base_color = { r = 0.529, g = 0.43, b = 0.35 },
-    flow_color = { r = 0.529, g = 0.43, b = 0.35 },
+    base_color = {r = 0.529, g = 0.43, b = 0.35},
+    flow_color = {r = 0.529, g = 0.43, b = 0.35},
     auto_barrel = false
   },
   {
@@ -1356,8 +1356,8 @@ data:extend({
     subgroup = "pm-iodine-rnm",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 0.16, g = 0.89, b = 0.69 },
-    flow_color = { r = 0.16, g = 0.69, b = 0.29 },
+    base_color = {r = 0.16, g = 0.89, b = 0.69},
+    flow_color = {r = 0.16, g = 0.69, b = 0.29},
     auto_barrel = false
   },
   {
@@ -1368,8 +1368,8 @@ data:extend({
     subgroup = "pm-iodine-rnm",
     order = "b",
     default_temperature = 15,
-    base_color = { r = 0.67, g = 0, b = 0.67 },
-    flow_color = { r = 0.67, g = 0, b = 0.67 },
+    base_color = {r = 0.67, g = 0, b = 0.67},
+    flow_color = {r = 0.67, g = 0, b = 0.67},
     auto_barrel = false
   },
   {
@@ -1380,8 +1380,8 @@ data:extend({
     subgroup = "pm-iodine-rnm",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.96, g = 0.85, b = 1 },
-    flow_color = { r = 0.96, g = 0.85, b = 1 },
+    base_color = {r = 0.96, g = 0.85, b = 1 },
+    flow_color = {r = 0.96, g = 0.85, b = 1 },
     auto_barrel = false
   },
   {
@@ -1392,8 +1392,8 @@ data:extend({
     subgroup = "pm-francium-am",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.99, g = 0.85, b = 0.85 },
-    flow_color = { r = 0.99, g = 0.85, b = 0.85 },
+    base_color = {r = 0.99, g = 0.85, b = 0.85},
+    flow_color = {r = 0.99, g = 0.85, b = 0.85},
     auto_barrel = false
   },
   {
@@ -1404,8 +1404,8 @@ data:extend({
     subgroup = "pm-boron-mt",
     order = "d",
     default_temperature = 15,
-    base_color = { r = 0.67, g = 0.36, b = 0 },
-    flow_color = { r = 0.67, g = 0.36, b = 0 },
+    base_color = {r = 0.67, g = 0.36, b = 0},
+    flow_color = {r = 0.67, g = 0.36, b = 0},
   },
   {
     type = "fluid",
@@ -1415,8 +1415,8 @@ data:extend({
     subgroup = "pm-boron-mt",
     order = "c",
     default_temperature = 15,
-    base_color = { r = 0.67, g = 0.36, b = 0 },
-    flow_color = { r = 0.67, g = 0.36, b = 0 },
+    base_color = {r = 0.67, g = 0.36, b = 0},
+    flow_color = {r = 0.67, g = 0.36, b = 0},
     auto_barrel = false
   },
   {
@@ -1427,8 +1427,8 @@ data:extend({
     subgroup = "pm-boron-mt",
     order = "a",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.82, b = 0.82 },
-    flow_color = { r = 1, g = 0.82, b = 0.82 },
+    base_color = {r = 1, g = 0.82, b = 0.82},
+    flow_color = {r = 1, g = 0.82, b = 0.82},
     auto_barrel = false,
   },
   {
@@ -1439,8 +1439,8 @@ data:extend({
     subgroup = "pm-potassium-am",
     order = "x",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.52, b = 0.79 },
-    flow_color = { r = 1, g = 0.52, b = 0.79 },
+    base_color = {r = 1, g = 0.52, b = 0.79},
+    flow_color = {r = 1, g = 0.52, b = 0.79},
     auto_barrel = false,
   },
   {
@@ -1449,8 +1449,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 }
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8}
   },
   {
     type = "fluid",
@@ -1458,8 +1458,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
     default_temperature = 15,
-    base_color = { r = 0.8, g = 0.8, b = 0.8 },
-    flow_color = { r = 0.8, g = 0.8, b = 0.8 }
+    base_color = {r = 0.8, g = 0.8, b = 0.8},
+    flow_color = {r = 0.8, g = 0.8, b = 0.8}
   },
   {
     type = "fluid",
@@ -1469,8 +1469,8 @@ data:extend({
     subgroup = "pm-reactive-nonmetals",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.2, g = 0, b = 0 },
-    flow_color = { r = 0.2, g = 0, b = 0 }
+    base_color = {r = 0.2, g = 0, b = 0},
+    flow_color = {r = 0.2, g = 0, b = 0}
   },
   {
     type = "fluid",
@@ -1480,8 +1480,8 @@ data:extend({
     subgroup = "pm-yttrium-tm",
     order = "e",
     default_temperature = 15,
-    base_color = { r = 1, g = 0.52, b = 0.79 },
-    flow_color = { r = 1, g = 0.52, b = 0.79 },
+    base_color = {r = 1, g = 0.52, b = 0.79},
+    flow_color = {r = 1, g = 0.52, b = 0.79},
     auto_barrel = false,
   },
   {
@@ -1493,8 +1493,8 @@ data:extend({
     order = "a",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 0.56, g = 0.422, b = 0.23 },
-    flow_color = { r = 0.56, g = 0.422, b = 0.23 }
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.56, g = 0.422, b = 0.22}
   },
   {
     type = "fluid",
@@ -1505,25 +1505,15 @@ data:extend({
     order = "a",
     default_temperature = 15,
     auto_barrel = false,
-    base_color = { r = 1, g = 0.68, b = 0.88 },
-    flow_color = { r = 1, g = 0.68, b = 0.88 }
+    base_color = {r = 1, g = 0.68, b = 0.88},
+    flow_color = {r = 1, g = 0.68, b = 0.88}
   },
 })
 
-local SulfuricAcidIcon = data.raw["fluid"]["sulfuric-acid"]
+data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
 
-SulfuricAcidIcon.icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
-
-local LightOilBanishment = data.raw["fluid"]["light-oil"]
-
-LightOilBanishment.auto_barrel = false
-
-local PetroluemBanishment = data.raw["fluid"]["petroleum-gas"]
-
-PetroluemBanishment.auto_barrel = false
-
-local HeavyOilBanishment = data.raw["fluid"]["heavy-oil"]
-
-HeavyOilBanishment.auto_barrel = false
+data.raw["fluid"]["light-oil"].auto_barrel = false
+data.raw["fluid"]["petroleum-gas"].auto_barrel = false
+data.raw["fluid"]["heavy-oil"].auto_barrel = false
 
 data.raw["fluid"]["water"].fuel_value = "1MJ"
