@@ -1346,6 +1346,8 @@ data.raw["technology"]["electronics"].effects =
   PM.unlock_recipe("inserter")
 }
 
+table.insert(data.raw["technology"]["automation-science-pack"].prerequisites, "pm-laboratory")
+
 data.raw["technology"]["bulk-inserter"].unit.ingredients = 
 {
   {"automation-science-pack", 1},

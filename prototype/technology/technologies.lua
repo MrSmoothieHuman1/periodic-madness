@@ -3760,6 +3760,23 @@ data:extend({
     },
     upgrade = true
   },
+  {
+    type = "technology",
+    name = "pm-laboratory",
+    icon_size = 256,
+    icon = "__base__/graphics/technologies/electric-consumers.png",
+    effects = 
+    {
+      PM.unlock_recipe("lab"),
+    },
+    prerequisites = {},
+    research_trigger = 
+    {
+      type = "craft-item",
+      name = "pm-glass-pane",
+      count = 8
+    }
+  }
 
   {
     type = "technology",
