@@ -597,7 +597,7 @@ data.raw["recipe"]["beacon"].ingredients =
   PM.ingredient("pm-travelling-wave-amplifier-tube", 1),
   PM.ingredient("pm-polytetrafluoroethylene", 5),
   PM.ingredient("pm-heavyweight-framing", 24),
-  PM.ingredient("advanced-circuit", 8),
+  PM.ingredient("advanced-circuit", 14),
   PM.ingredient("pm-chrominum-ore", 12)
 }
 data.raw["recipe"]["piercing-shotgun-shell"].ingredients = 

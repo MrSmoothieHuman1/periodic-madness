@@ -843,7 +843,7 @@ data.raw["technology"]["mining-productivity-4"].unit.ingredients =
 data.raw["technology"]["mining-productivity-4"].max_level = 4
 data.raw["technology"]["mining-productivity-4"].unit.time = 80
 data.raw["technology"]["mining-productivity-4"].unit.count_formula = "1200"
-data.raw["technology"]["mining-productivity-3"].prerequisites = {"mining-productivity-3"}
+data.raw["technology"]["mining-productivity-4"].prerequisites = {"mining-productivity-3"}
 
 data.raw["technology"]["power-armor-mk2"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["power-armor-mk2"].unit.ingredients =
@@ -882,6 +882,52 @@ data.raw["technology"]["fission-reactor-equipment"].unit = nil
 data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
 
 data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
+
+data.raw["technology"]["inserter-capacity-bonus-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["inserter-capacity-bonus-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["inserter-capacity-bonus-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["inserter-capacity-bonus-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["inserter-capacity-bonus-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["inserter-capacity-bonus-7"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"

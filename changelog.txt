@@ -96,6 +96,7 @@ Date: 2024-08-09
     - Revamped shotguns slightly to make them more useful and predictable?
     - Buffed Chromium based stainless steel to give 6 plates instead of 5.
     - Changed stainless steel processings technology icon to follow the same theme as steel processing.
+    - Changed the amount of advanced circuits needed for beacons from 8 to 14.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -121,6 +122,7 @@ Date: 2024-08-09
     - Fixed braking force 1 having R-NM packs as a prerequisite.
     - Made R-NM locked researches match closer to the costs of P-TM researches.
     - Fixed Bulk inserters not needing A-ATM packs to be research.
+    - Fixed mining productivity researches having broken prerequisites.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133
