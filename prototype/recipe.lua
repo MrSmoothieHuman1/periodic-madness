@@ -104,17 +104,18 @@ data:extend({
   {
     type = "recipe",
     name = "pm-transistors",
-    energy_required = 0.3,
+    energy_required = 0.6,
     subgroup = "pm-circuits",
     order = "e",
     enabled = false,
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-basic-wiring", 2),
-      PM.ingredient("pm-carbon", 8),
+      PM.ingredient("pm-basic-wiring", 4),
+      PM.ingredient("pm-carbon", 10),
     },
-    results = {
+    results = 
+    {
       PM.product("pm-transistors", 2)
     }
   },
