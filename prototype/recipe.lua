@@ -111,8 +111,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-basic-wiring", 4),
-      PM.ingredient("pm-carbon", 10),
+      PM.ingredient("pm-basic-wiring", 3),
+      PM.ingredient("pm-carbon", 8),
     },
     results = 
     {
@@ -1853,6 +1853,18 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ferrum-ferric-chloride",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/ferric-chloride.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ferrum.png",
+        icon_size = 64,
+      },
+      
+    },
     enabled = false,
     energy_required = 3,
     category = "pm-acids",
@@ -1870,6 +1882,18 @@ data:extend({
   {
     type = "recipe",
     name = "pm-metal-ferric-chloride",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/ferric-chloride.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__base__/graphics/icons/iron-plate.png",
+        icon_size = 64,
+      },
+      
+    },
     enabled = false,
     energy_required = 3,
     category = "pm-acids",
