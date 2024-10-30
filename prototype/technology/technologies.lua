@@ -3662,9 +3662,103 @@ data:extend({
           {"logistic-science-pack", 1},
           {"pm-advanced-advanced-transition-metal-science-pack", 1},
           {"pm-post-transition-metal-science-pack", 1},
-          },
+        },
         time = 60,
       }
+  },
+  {
+    type = "technology",
+    name = "pm-research-productivity-1",
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      PM.modify("laboratory-productivity", 0.05)
+    },
+    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+      },
+      time = 45
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-research-productivity-2",
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      PM.modify("laboratory-productivity", 0.05)
+    },
+    prerequisites = {"pm-research-productivity-1"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+      },
+      time = 60
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-research-productivity-3",
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      PM.modify("laboratory-productivity", 0.1)
+    },
+    prerequisites = {"pm-research-productivity-2", "pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 750,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 60
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-research-productivity-4",
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      PM.modify("laboratory-productivity", 0.1)
+    },
+    prerequisites = {"pm-research-productivity-3"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    },
+    upgrade = true
   },
 
   {
