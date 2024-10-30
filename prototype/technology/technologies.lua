@@ -1537,7 +1537,7 @@ data:extend({
     prerequisites = {"chemical-science-pack"},
     unit =
     {
-      count = 75,
+      count = 175,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -1651,7 +1651,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1}
       },
-      time = 30
+      time = 45
     }
   },
   {
@@ -1680,7 +1680,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1}
       },
-      time = 45
+      time = 60
     }
   },
   {
@@ -1705,17 +1705,12 @@ data:extend({
       PM.unlock_recipe("pm-health-bio-module"),
     },
     prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering", "pm-phosphor-processing", "sulfur-processing", "pm-fertiliser"},
-    unit =
+    research_trigger = 
     {
-      count = 150,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1}
-      },
-      time = 45
+      type = "craft-fluid",
+      fluid = "pm-gene-base",
+      amount = 50
+    }
     }
   },
   {
@@ -2560,7 +2555,7 @@ data:extend({
     prerequisites = {"pm-agar-bacteria-filtering"},
     unit =
     {
-      count = 150,
+      count = 300,
       ingredients =
       {
         {"automation-science-pack", 1},
