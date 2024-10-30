@@ -1204,6 +1204,131 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
   },
 }
 
+data.raw["technology"]["weapon-shooting-speed-1"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.05
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-2"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.05
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-3"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-3"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.1
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.1
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-4"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-4"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.1
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.1
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-5"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-5"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-6"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-6"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
 data.raw["technology"]["speed-module"].effects =
