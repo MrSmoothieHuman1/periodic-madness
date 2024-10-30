@@ -249,15 +249,11 @@ data:extend({
       PM.unlock_recipe("pm-gold-wire"),
     },
     prerequisites = {"logistic-science-pack"},
-    unit =
+    research_trigger =
     {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
-      },
-      time = 15
+      type = "craft-item",
+      item = "pm-gold-plate",
+      count = 50
     }
   },
   {

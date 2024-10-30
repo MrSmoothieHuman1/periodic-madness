@@ -25,7 +25,8 @@ data:extend({
     allow_productivity = true,
     ingredients = {PM.ingredient("coal", 2)},
     energy_required = 2,
-    results = {
+    results = 
+    {
       PM.product("pm-carbon", 10)
     }
   },

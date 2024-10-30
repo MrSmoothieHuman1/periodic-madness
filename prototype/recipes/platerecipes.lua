@@ -286,7 +286,8 @@ data:extend({
       PM.ingredient("pm-lead-plate", 2),
       PM.ingredient("pm-arsenic-ore", 2)
     },
-    results = {
+    results = 
+    {
       PM.product("pm-brass-plate", 2)
     }
   },
@@ -326,7 +327,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-alloy", 5)
+      PM.product("pm-stainless-steel-alloy", 6)
     }
   },
   {
