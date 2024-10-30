@@ -212,7 +212,7 @@ data:extend({
     name = "pm-air-filter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/air-filter.png",
-    subgroup = "intermediate-product",
+    subgroup = "pm-air-filters-rnm",
     order = "a",
     stack_size = 100
   },
@@ -304,7 +304,7 @@ data:extend({
     name = "pm-oxygen-air-filter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/oxygen-air-filter.png",
-    subgroup = "pm-air-filters-rnm",
+    subgroup = "pm-oxygen-rnm",
     order = "a",
     stack_size = 50
   },
@@ -313,8 +313,8 @@ data:extend({
     name = "pm-nitrogen-air-filter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/nitrogen-air-filter.png",
-    subgroup = "pm-air-filters-rnm",
-    order = "b",
+    subgroup = "pm-nitrogen-rnm",
+    order = "a",
     stack_size = 50
   },
   {
@@ -322,8 +322,8 @@ data:extend({
     name = "pm-chlorine-air-filter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/chlorine-air-filter.png",
-    subgroup = "pm-air-filters-rnm",
-    order = "c",
+    subgroup = "pm-chlorine-rnm",
+    order = "a",
     stack_size = 50
   },
   {
@@ -331,8 +331,8 @@ data:extend({
     name = "pm-carbon-dioxide-air-filter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/carbon-dioxide-air-filter.png",
-    subgroup = "pm-air-filters-rnm",
-    order = "d",
+    subgroup = "pm-carbon-rnm",
+    order = "a",
     stack_size = 50
   },
   {
@@ -340,8 +340,8 @@ data:extend({
     name = "pm-trace-gas-air-filter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/trace-gas-air-filter.png",
-    subgroup = "pm-air-filters-rnm",
-    order = "e",
+    subgroup = "pm-trace-gas-rnm",
+    order = "a",
     stack_size = 50
   },
   {
@@ -350,7 +350,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/dirty-carbon-dioxide-air-filter.png",
     subgroup = "pm-air-filters-rnm",
-    order = "f",
+    order = "b",
     stack_size = 50
   },
   {
@@ -1067,7 +1067,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/air-filter-2.png",
     subgroup = "pm-advanced-air-filters-rnm",
-    order = "a",
+    order = "c",
     stack_size = 100
   },
   {
@@ -1075,8 +1075,8 @@ data:extend({
     name = "pm-dirty-advanced-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/dirty-air-filter-2.png",
-    subgroup = "intermediate-product",
-    order = "aa",
+    subgroup = "pm-air-filters",
+    order = "d",
     stack_size = 100
   },
   {
@@ -1084,7 +1084,7 @@ data:extend({
     name = "pm-advanced-oxygen-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/oxygen-air-filter-2.png",
-    subgroup = "pm-advanced-air-filters-rnm",
+    subgroup = "pm-oxygen-rnm",
     order = "b",
     stack_size = 75
   },
@@ -1093,8 +1093,8 @@ data:extend({
     name = "pm-advanced-nitrogen-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/nitrogen-air-filter-2.png",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "c",
+    subgroup = "pm-nitrogen-rnm",
+    order = "b",
     stack_size = 75
   },
   {
@@ -1102,8 +1102,8 @@ data:extend({
     name = "pm-advanced-chlorine-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/chlorine-air-filter-2.png",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "d",
+    subgroup = "pm-chlorine-rnm",
+    order = "b",
     stack_size = 75
   },
   {
@@ -1111,8 +1111,8 @@ data:extend({
     name = "pm-advanced-carbon-dioxide-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/carbon-dioxide-air-filter-2.png",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "e",
+    subgroup = "pm-carbon-rnm",
+    order = "b",
     stack_size = 75
   },
   {
@@ -1120,8 +1120,8 @@ data:extend({
     name = "pm-advanced-trace-gas-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/trace-gas-air-filter-2.png",
-    subgroup = "pm-air-filters-rnm",
-    order = "f",
+    subgroup = "pm-trace-gas-rnm",
+    order = "b",
     stack_size = 75
   },
   {

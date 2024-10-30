@@ -290,6 +290,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-air-filter",
+    subgroup = "pm-air-filters-rnm",
+    order = "a",
     show_amount_in_title = true,
     allow_productivity = true,
     ingredients =
@@ -1949,6 +1951,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-better-air-filter",
+    subgroup = "pm-air-filters",
+    order = "b",
     show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
@@ -2219,8 +2223,8 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-air-filter",
     category = "advanced-crafting",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "a",
+    subgroup = "pm-air-filters-rnm",
+    order = "c",
     enabled = false,
     energy_required = 4,
     allow_productivity = true,
@@ -2238,94 +2242,10 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-advanced-oxygen-air-filter",
-    category = "advanced-crafting",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "b",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-oxygen-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
-    },
-    results =
-    {
-      PM.product("pm-advanced-oxygen-air-filter", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-advanced-nitrogen-air-filter",
-    category = "advanced-crafting",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "c",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-nitrogen-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
-    },
-    results =
-    {
-      PM.product("pm-advanced-nitrogen-air-filter", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-advanced-chlorine-air-filter",
-    category = "advanced-crafting",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "d",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-chlorine-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
-    },
-    results =
-    {
-      PM.product("pm-advanced-chlorine-air-filter", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-advanced-carbon-dioxide-air-filter",
-    category = "advanced-crafting",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "e",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-carbon-dioxide-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
-    },
-    results =
-    {
-      PM.product("pm-advanced-carbon-dioxide-air-filter", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-advanced-trace-gas-air-filter",
     category = "advanced-crafting",
-    subgroup = "pm-advanced-air-filters-rnm",
-    order = "e",
+    subgroup = "pm-trace-gas-rnm",
+    order = "b",
     energy_required = 4,
     enabled = false,
     allow_productivity = true,

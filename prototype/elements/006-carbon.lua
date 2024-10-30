@@ -1,0 +1,139 @@
+local PM = require("__periodic-madness__/library")
+data:extend({
+
+    {
+        type = "recipe",
+        name = "pm-carbon-dioxide-air-filter",
+        category = "advanced-crafting",
+        subgroup = "pm-carbon-rnm",
+        order = "a",
+        energy_required = 4,
+        enabled = false,
+        allow_productivity = true,
+        ingredients =
+        {
+          PM.ingredient("pm-air-filter", 1),
+          PM.ingredient("pm-nickel-plate", 4)
+        },
+        results =
+        {
+          PM.product("pm-carbon-dioxide-air-filter", 1)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-advanced-carbon-dioxide-air-filter",
+        category = "advanced-crafting",
+        subgroup = "pm-carbon-rnm",
+        order = "b",
+        energy_required = 4,
+        enabled = false,
+        allow_productivity = true,
+        ingredients =
+        {
+          PM.ingredient("pm-carbon-dioxide-air-filter", 1),
+          PM.ingredient("pm-gold-plate", 3),
+          PM.ingredient("pm-iodine", 2),
+          PM.ingredient("pm-lightweight-framing", 6)
+        },
+        results =
+        {
+          PM.product("pm-advanced-carbon-dioxide-air-filter", 1)
+        }
+      },
+    {
+        type = "recipe",
+        name = "pm-carbon-dioxide-atmosphere-filtering",
+        category = "pm-atmospheric-condensing",
+        subgroup = "pm-carbon-rnm",
+        order = "c",
+        enabled = false,
+        energy_required = 6,
+        emissions_multiplier = 2,
+        ingredients =
+        {
+          PM.ingredient("pm-atmosphere", 25, "fluid"),
+          PM.ingredient("pm-carbon-dioxide-air-filter", 1)
+        },
+        results =
+        {
+          PM.product("pm-carbon-dioxide-gas", 25, "fluid")
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-advanced-carbon-dioxide-atmosphere-filtering",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/carbon-dioxide-condensation.png",
+        category = "pm-atmospheric-condensing",
+        subgroup = "pm-carbon-rnm",
+        order = "d",
+        enabled = false,
+        energy_required = 6,
+        emissions_multiplier = 1.5,
+        ingredients =
+        {
+          PM.ingredient("pm-atmosphere", 12.5, "fluid"),
+          PM.ingredient("pm-advanced-carbon-dioxide-air-filter", 1)
+        },
+        results =
+        {
+          PM.product("pm-carbon-dioxide-gas", 50, "fluid")
+        }
+      },
+    {
+        type = "recipe",
+        name = "pm-carbon-dioxide-atmospheric-voiding",
+        icon_size = 128,
+        icon = "__periodic-madness__/graphics/icons/recipes/carbon-dioxide-voiding.png",
+        category = "pm-atmospheric-condensing",
+        subgroup = "pm-carbon-rnm",
+        order = "e",
+        enabled = false,
+        energy_required = 6,
+        emissions_multiplier = 0.5,
+        ingredients =
+        {
+          PM.ingredient("pm-carbon-dioxide-gas", 25, "fluid")
+        },
+        results = {}
+    },
+    {
+        type = "recipe",
+        name = "pm-CO2-nullifying",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/carbon-dioxide.png",
+        category = "pm-CO2-nullifying",
+        subgroup = "pm-carbon-rnm",
+        order = "f",
+        energy_required = 3,
+        ingredients =
+        {
+          PM.ingredient("pm-carbon-dioxide-gas", 10, "fluid"),
+        },
+        results =
+        {
+          PM.product("pm-oxygen-gas", 20, "fluid"),
+          PM.product("pm-carbon", 10)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-CO3-nullifying",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/carbon-trioxide.png",
+        category = "pm-CO2-nullifying",
+        subgroup = "pm-carbon-rnm",
+        order = "g",
+        energy_required = 3,
+        ingredients =
+        {
+          PM.ingredient("pm-carbon-trioxide", 10, "fluid"),
+        },
+        results =
+        {
+          PM.product("pm-oxygen-gas", 20, "fluid"),
+          PM.product("pm-carbon-dioxide-gas", 10, "fluid")
+        }
+    },
+})

@@ -435,52 +435,39 @@ data:extend({
     order = "e",
   },
 
-
   {
     type = "item-subgroup",
-    name = "pm-reactive-nonmetals",
+    name = "pm-oxygen-rnm",
     group = "pm-reactive-non-metals",
     order = "a"
   },
   {
     type = "item-subgroup",
-    name = "pm-atmospheric-condensation-rnm",
-    group = "pm-reactive-non-metals",
-    order = "a"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-advanced-atmospheric-condensation-rnm",
-    group = "pm-reactive-non-metals",
-    order = "aa"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-atmospheric-voiding-rnm",
+    name = "pm-chlorine-rnm",
     group = "pm-reactive-non-metals",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "pm-air-filters-rnm",
+    name = "pm-nitrogen-rnm",
     group = "pm-reactive-non-metals",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "pm-advanced-air-filters-rnm",
-    group = "pm-reactive-non-metals",
-    order = "ca"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-hydrogen-rnm",
+    name = "pm-carbon-rnm",
     group = "pm-reactive-non-metals",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "pm-chlorine-rnm",
+    name = "pm-trace-gas-rnm",
+    group = "pm-reactive-non-metals",
+    order = "da"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-hydrogen-rnm",
     group = "pm-reactive-non-metals",
     order = "e"
   },
@@ -488,61 +475,67 @@ data:extend({
     type = "item-subgroup",
     name = "pm-bromine-rnm",
     group = "pm-reactive-non-metals",
-    order = "ea"
+    order = "f"
   },
   {
     type = "item-subgroup",
     name = "pm-sulfur-rnm",
     group = "pm-reactive-non-metals",
-    order = "f"
+    order = "g"
   },
   {
     type = "item-subgroup",
     name = "pm-phosphorus-rnm",
     group = "pm-reactive-non-metals",
-    order = "g"
+    order = "h"
   },
   {
     type = "item-subgroup",
     name = "pm-iodine-rnm",
     group = "pm-reactive-non-metals",
-    order = "h"
+    order = "i"
   },
   {
     type = "item-subgroup",
     name = "pm-flourine-rnm",
     group = "pm-reactive-non-metals",
-    order = "i"
+    order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-air-filters-rnm",
+    group = "pm-reactive-non-metals",
+    order = "ja"
   },
   {
     type = "item-subgroup",
     name = "pm-biostuff-rnm",
     group = "pm-reactive-non-metals",
-    order = "j"
+    order = "k"
   },
   {
     type = "item-subgroup",
     name = "pm-greenhousing-rnm",
     group = "pm-reactive-non-metals",
-    order = "k"
+    order = "m"
   },
   {
     type  = "item-subgroup",
     name  = "pm-acetonitrile-rnm",
     group = "pm-reactive-non-metals",
-    order = "m",
+    order = "n",
   },
   {
     type  = "item-subgroup",
     name  = "pm-myostatin-rnm",
     group = "pm-reactive-non-metals",
-    order = "n",
+    order = "o",
   },
   {
     type  = "item-subgroup",
     name  = "pm-CISD2-rnm",
     group = "pm-reactive-non-metals",
-    order = "o",
+    order = "p",
   },
 
   {
@@ -839,6 +832,48 @@ data:extend({
     order = "g"
   },
 
+  {
+    type = "item-subgroup",
+    name = "pm-helium-nb",
+    group = "pm-noble-gases",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-neon-nb",
+    group = "pm-noble-gases",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-argon-nb",
+    group = "pm-noble-gases",
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-krypton-nb",
+    group = "pm-noble-gases",
+    order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-xenon-nb",
+    group = "pm-noble-gases",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-radon-nb",
+    group = "pm-noble-gases",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-oganneson-nb",
+    group = "pm-noble-gases",
+    order = "g"
+  },
 
   {
     type = "item-subgroup",
