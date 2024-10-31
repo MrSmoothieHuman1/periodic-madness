@@ -3,11 +3,108 @@ data:extend({
 
   {
     type = "recipe",
+    name = "pm-chlorine-air-filter",
+    category = "advanced-crafting",
+    subgroup = "pm-chlorine-rnm",
+    order = "a",
+    energy_required = 4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-air-filter", 1),
+      PM.ingredient("copper-plate", 4)
+    },
+    results =
+    {
+      PM.product("pm-chlorine-air-filter", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-chlorine-air-filter",
+    category = "advanced-crafting",
+    subgroup = "pm-chlorine-rnm",
+    order = "b",
+    energy_required = 4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-chlorine-air-filter", 1),
+      PM.ingredient("pm-gold-plate", 3),
+      PM.ingredient("pm-iodine", 2),
+      PM.ingredient("pm-lightweight-framing", 6)
+    },
+    results =
+    {
+      PM.product("pm-advanced-chlorine-air-filter", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-chlorine-atmosphere-filtering",
+    category = "pm-atmospheric-condensing",
+    subgroup = "pm-chlorine-rnm",
+    order = "c",
+    enabled = false,
+    energy_required = 6,
+    emissions_multiplier = 0.5,
+    ingredients =
+    {
+      PM.ingredient("pm-atmosphere", 25, "fluid"),
+      PM.ingredient("pm-chlorine-air-filter", 1)
+    },
+    results =
+    {
+      PM.product("pm-chlorine", 25, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-chlorine-atmosphere-filtering",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/chlorine-condensation.png",
+    category = "pm-atmospheric-condensing",
+    subgroup = "pm-chlorine-rnm",
+    order = "d",
+    enabled = false,
+    energy_required = 6,
+    emissions_multiplier = 0.75,
+    ingredients =
+    {
+      PM.ingredient("pm-atmosphere", 12.5, "fluid"),
+      PM.ingredient("pm-advanced-chlorine-air-filter", 1)
+    },
+    results =
+    {
+      PM.product("pm-chlorine", 50, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-chlorine-atmospheric-voiding",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/chlorine-voiding.png",
+    category = "pm-atmospheric-condensing",
+    subgroup = "pm-chlorine-rnm",
+    order = "e",
+    enabled = false,
+    energy_required = 6,
+    emissions_multiplier = 2,
+    ingredients =
+    {
+      PM.ingredient("pm-chlorine", 25, "fluid")
+    },
+    results = {}
+  },
+  {
+    type = "recipe",
     name = "pm-seawater-evaporation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/seawater-refining.png",
     subgroup = "pm-chlorine-rnm",
-    order = "A",
+    order = "f",
     category = "pm-evaporation",
     enabled = false,
     energy_required = 0.74 + 0.01,
@@ -27,7 +124,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/water-desaltination.png",
     subgroup = "pm-chlorine-rnm",
-    order = "a",
+    order = "g",
     category = "pm-evaporation",
     hide_from_player_crafting = true,
     enabled = false,
@@ -49,7 +146,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/water-desaltination.png",
     subgroup = "pm-chlorine-rnm",
-    order = "a",
+    order = "h",
     category = "pm-evaporation",
     hide_from_player_crafting = true,
     enabled = false,
@@ -71,7 +168,7 @@ data:extend({
     type = "recipe",
     name = "pm-sodium-looping",
     subgroup = "pm-chlorine-rnm",
-    order = "d",
+    order = "i",
     category = "pm-evaporation",
     main_product = "pm-chlorine",
     energy_required = 1,
@@ -90,7 +187,7 @@ data:extend({
     type = "recipe",
     name = "pm-hydrochloric-acid",
     subgroup = "pm-chlorine-rnm",
-    order = "c",
+    order = "j",
     category = "pm-acids",
     enabled = false,
     crafting_machine_tint =
@@ -114,100 +211,25 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-chlorine-air-filter",
-    category = "advanced-crafting",
-    subgroup = "pm-chlorine-rnm",
-    order = "d",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-air-filter", 1),
-      PM.ingredient("copper-plate", 4)
-    },
-    results =
-    {
-      PM.product("pm-chlorine-air-filter", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-advanced-chlorine-air-filter",
-    category = "advanced-crafting",
-    subgroup = "pm-chlorine-rnm",
-    order = "e",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-chlorine-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
-      PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
-    },
-    results =
-    {
-      PM.product("pm-advanced-chlorine-air-filter", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-chlorine-atmosphere-filtering",
-    category = "pm-atmospheric-condensing",
-    subgroup = "pm-chlorine-rnm",
-    order = "f",
-    enabled = false,
-    energy_required = 6,
-    emissions_multiplier = 0.5,
-    ingredients =
-    {
-      PM.ingredient("pm-atmosphere", 25, "fluid"),
-      PM.ingredient("pm-chlorine-air-filter", 1)
-    },
-    results =
-    {
-      PM.product("pm-chlorine", 25, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-advanced-chlorine-atmosphere-filtering",
+    name = "pm-hydrochloric-acid-neutralisation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chlorine-condensation.png",
-    category = "pm-atmospheric-condensing",
-    subgroup = "pm-chlorine-rnm",
-    order = "g",
+    icon = "__periodic-madness__/graphics/icons/recipes/HCl-neutralisation.png",
+    energy_required = 1,
     enabled = false,
-    energy_required = 6,
-    emissions_multiplier = 0.75,
-    ingredients =
+    category = "pm-washing",
+    subgroup = "pm-chlorine-rnm",
+    order = "ja",
+    ingredients = 
     {
-      PM.ingredient("pm-atmosphere", 12.5, "fluid"),
-      PM.ingredient("pm-advanced-chlorine-air-filter", 1)
+      PM.ingredient("pm-hydrochloric-acid", 20, "fluid"),
+      PM.ingredient("pm-calcium-ore", 6)
     },
-    results =
+    results = 
     {
-      PM.product("pm-chlorine", 50, "fluid")
+      PM.product_range_chance("pm-calcium-chloride", 0, 3, 0.5),
+      PM.product_range("pm-hydrogen-gas", 14, 20, "fluid"),
+      PM.product_range("pm-chlorine", 8, 16, "fluid")
     }
-  },
-  {
-    type = "recipe",
-    name = "pm-chlorine-atmospheric-voiding",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/chlorine-voiding.png",
-    category = "pm-atmospheric-condensing",
-    subgroup = "pm-chlorine-rnm",
-    order = "h",
-    enabled = false,
-    energy_required = 6,
-    emissions_multiplier = 2,
-    ingredients =
-    {
-      PM.ingredient("pm-chlorine", 25, "fluid")
-    },
-    results = {}
   },
   
   {
@@ -217,7 +239,7 @@ data:extend({
     energy_required = 3,
     category = "chemistry",
     subgroup = "pm-chlorine-rnm",
-    order = "i",
+    order = "k",
     ingredients =
     {
       PM.ingredient("pm-methanol", 5, "fluid"),
@@ -236,7 +258,7 @@ data:extend({
     enabled = false,
     category = "chemistry",
     subgroup = "pm-chlorine-rnm",
-    order = "j",
+    order = "l",
     ingredients =
     {
       PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
@@ -249,26 +271,5 @@ data:extend({
       PM.product_range("pm-chloroform", 6, 12, "fluid")
     }
   } --[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-hydrochloric-acid-neutralisation",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/HCl-neutralisation.png",
-    energy_required = 1,
-    enabled = false,
-    category = "pm-washing",
-    subgroup = "pm-chlorine-rnm",
-    order = "ca",
-    ingredients = 
-    {
-      PM.ingredient("pm-hydrochloric-acid", 20, "fluid"),
-      PM.ingredient("pm-calcium-ore", 6)
-    },
-    results = 
-    {
-      PM.product_range_chance("pm-calcium-chloride", 0, 3, 0.5),
-      PM.product_range("pm-hydrogen-gas", 14, 20, "fluid"),
-      PM.product_range("pm-chlorine", 8, 16, "fluid")
-    }
-  }
+  
 })

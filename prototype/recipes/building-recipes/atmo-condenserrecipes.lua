@@ -7,7 +7,6 @@ data:extend({
     type = "recipe",
     name = "pm-atmospheric-gathering",
     category = "pm-atmospheric-condensing",
-    subgroup = "pm-atmospheric-condensation-rnm",
     order = "a",
     enabled = false,
     energy_required = 6,

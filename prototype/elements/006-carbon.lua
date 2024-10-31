@@ -80,7 +80,7 @@ data:extend({
         {
           PM.product("pm-carbon-dioxide-gas", 50, "fluid")
         }
-      },
+    },
     {
         type = "recipe",
         name = "pm-carbon-dioxide-atmospheric-voiding",
@@ -98,6 +98,23 @@ data:extend({
         },
         results = {}
     },
+    {
+      type = "recipe",
+      name = "pm-carbon-monoxide-atmospheric-voiding",
+      icon_size = 128,
+      icon = "__periodic-madness__/graphics/icons/recipes/carbon-monoxide-voiding.png",
+      category = "pm-atmospheric-condensing",
+      subgroup = "pm-carbon-rnm",
+      order = "ea",
+      enabled = false,
+      energy_required = 6,
+      emissions_multiplier = 0.5,
+      ingredients =
+      {
+        PM.ingredient("pm-carbon-monoxide", 25, "fluid")
+      },
+      results = {}
+  },
     {
         type = "recipe",
         name = "pm-CO2-nullifying",

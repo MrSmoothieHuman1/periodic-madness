@@ -1951,7 +1951,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-better-air-filter",
-    subgroup = "pm-air-filters",
+    subgroup = "pm-air-filters-rnm",
     order = "b",
     show_amount_in_title = true,
     enabled = false,
@@ -2850,6 +2850,7 @@ data:extend({
     name = "pm-lapis-lazuli-dye",
     energy_required = 12,
     category = "pm-washing",
+    main_product = "pm-cobalt-blue",
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 6),
@@ -2858,7 +2859,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-cobalt-blue", 4, 10),
-      PM.product_range_chance("pm-sulfur-dioxide", 4, 8, 0.25)
+      PM.product_range_chance("pm-sulfur-dioxide", 4, 8, 0.25, "fluid")
     }
   },
 

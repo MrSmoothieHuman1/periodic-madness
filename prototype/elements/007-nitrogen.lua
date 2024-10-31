@@ -40,7 +40,7 @@ data:extend({
         {
           PM.product("pm-advanced-nitrogen-air-filter", 1)
         }
-      },
+    },
     {
         type = "recipe",
         name = "pm-nitrogen-atmosphere-filtering",
@@ -80,7 +80,7 @@ data:extend({
         {
           PM.product("pm-nitrogen-gas", 50, "fluid")
         }
-      },
+    },
     {
         type = "recipe",
         name = "pm-nitrogen-atmospheric-voiding",
@@ -125,7 +125,7 @@ data:extend({
         icon_size = 128,
         icon = "__periodic-madness__/graphics/icons/recipes/ammonia-voiding.png",
         category = "pm-atmospheric-condensing",
-        subgroup = "pm-argon-rnm",
+        subgroup = "pm-nitrogen-rnm",
         order = "g",
         enabled = false,
         energy_required = 6,

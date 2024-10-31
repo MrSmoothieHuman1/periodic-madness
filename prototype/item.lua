@@ -187,9 +187,9 @@ data:extend({
     name = "pm-carbon",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/carbon.png",
-    subgroup = "pm-reactive-nonmetals",
+    subgroup = "pm-carbon-rnm",
     category = "pm-nonassembling-gases",
-    order = "b",
+    order = "a",
     stack_size = 100
   } --[[@as data.ItemPrototype]],
   {
@@ -1066,7 +1066,7 @@ data:extend({
     name = "pm-advanced-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/air-filter-2.png",
-    subgroup = "pm-advanced-air-filters-rnm",
+    subgroup = "pm-air-filters-rnm",
     order = "c",
     stack_size = 100
   },
@@ -1075,7 +1075,7 @@ data:extend({
     name = "pm-dirty-advanced-air-filter",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/dirty-air-filter-2.png",
-    subgroup = "pm-air-filters",
+    subgroup = "pm-air-filters-rnm",
     order = "d",
     stack_size = 100
   },

@@ -7,7 +7,7 @@ data:extend({
         icon_size = 128,
         icon = "__periodic-madness__/graphics/icons/recipes/helium-gas-voiding.png",
         category = "pm-atmospheric-condensing",
-        subgroup = "pm-helium-rnm",
+        subgroup = "pm-helium-nb",
         order = "a",
         enabled = false,
         energy_required = 6,
