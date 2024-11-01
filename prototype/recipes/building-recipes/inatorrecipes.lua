@@ -24,7 +24,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-ferrum",
+    name = "pm-patina",
     enabled = false,
     energy_required = 18,
     subgroup = "pm-copper-tm",
@@ -156,6 +156,8 @@ data:extend({
     enabled = false,
     energy_required = 10,
     category = "pm-moltening",
+    subgroup = "pm-sapphire-ptm",
+    order = "d",
     ingredients = 
     {
       PM.ingredient("pm-molten-titanium", 10, "fluid"),

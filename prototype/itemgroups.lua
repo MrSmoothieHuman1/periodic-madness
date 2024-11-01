@@ -794,15 +794,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-lapis-lazuli-ptm",
+    name = "pm-emerald-ptm",
     group = "pm-post-transition-metals",
     order = "o"
   },
   {
     type = "item-subgroup",
-    name = "pm-garnet-ptm",
+    name = "pm-lapis-lazuli-ptm",
     group = "pm-post-transition-metals",
     order = "p"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-garnet-ptm",
+    group = "pm-post-transition-metals",
+    order = "q"
   },
 
   {

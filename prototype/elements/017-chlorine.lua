@@ -142,30 +142,6 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-garnet-seawater-desaltination",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-desaltination.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "h",
-    category = "pm-evaporation",
-    hide_from_player_crafting = true,
-    enabled = false,
-    energy_required = 1.25,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-seawater", 150, "fluid"),
-      PM.ingredient("pm-garnet-dust", 5)
-    },
-    results =
-    {
-      PM.product_range("water", 100, 120, "fluid"),
-      PM.product_range("pm-sea-salt", 50, 95),
-      PM.catalyst_range("pm-garnet-dust", 1, 5, 5)
-    }
-  } --[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
     name = "pm-sodium-looping",
     subgroup = "pm-chlorine-rnm",
     order = "i",

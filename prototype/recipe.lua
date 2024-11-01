@@ -2574,6 +2574,8 @@ data:extend({
     name = "pm-ruby-crushing",
     energy_required = 5,
     category = "pm-crushing",
+    subgroup = "pm-ruby-ptm",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("pm-ruby", 5),
@@ -2588,6 +2590,8 @@ data:extend({
     name = "pm-citrine-crushing",
     energy_required = 5,
     category = "pm-crushing",
+    subgroup = "pm-citrine-ptm",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("pm-citrine", 5),
@@ -2602,6 +2606,8 @@ data:extend({
     name = "pm-emerald-crushing",
     energy_required = 5,
     category = "pm-crushing",
+    subgroup = "pm-emerald-ptm",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("pm-emerald", 5),
@@ -2616,6 +2622,8 @@ data:extend({
     name = "pm-sapphire-crushing",
     energy_required = 5,
     category = "pm-crushing",
+    subgroup = "pm-sapphire-ptm",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("pm-sapphire", 5),
@@ -2630,6 +2638,8 @@ data:extend({
     name = "pm-lapis-lazuli-crushing",
     energy_required = 5,
     category = "pm-crushing",
+    subgroup = "pm-lapis-lazuli-ptm",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli", 5),
@@ -2644,6 +2654,8 @@ data:extend({
     name = "pm-garnet-crushing",
     energy_required = 5,
     category = "pm-crushing",
+    subgroup = "pm-garnet-ptm",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("pm-garnet", 5),
@@ -2659,6 +2671,8 @@ data:extend({
     name = "pm-ruby-leeching",
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-ruby-ptm",
+    order = "b",
     main_product = "pm-aluminium-ore",
     ingredients = 
     {
@@ -2676,6 +2690,8 @@ data:extend({
     name = "pm-citrine-leeching",
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-citrine-ptm",
+    order = "b",
     main_product = "pm-silicon-ore",
     ingredients = 
     {
@@ -2694,6 +2710,8 @@ data:extend({
     name = "pm-emerald-leeching",
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-emerald-ptm",
+    order = "b",
     main_product = "pm-beryllium-ore",
     ingredients = 
     {
@@ -2712,6 +2730,8 @@ data:extend({
     name = "pm-sapphire-leeching",
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-sapphire-ptm",
+    order = "b",
     main_product = "pm-aluminium-ore",
     ingredients = 
     {
@@ -2730,6 +2750,8 @@ data:extend({
     name = "pm-lapis-lazuli-leeching",
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-lapis-lazuli-ptm",
+    order = "b",
     main_product = "sulfur",
     ingredients = 
     {
@@ -2748,6 +2770,8 @@ data:extend({
     name = "pm-garnet-leeching",
     energy_required = 5,
     category = "pm-crushing",
+    subgroup = "pm-garnet-ptm",
+    order = "b",
     main_product = "pm-manganese-ore",
     ingredients = 
     {
@@ -2782,6 +2806,8 @@ data:extend({
     name = "pm-ruby-cutting",
     energy_required = 10,
     main_product = "pm-cut-ruby",
+    subgroup = "pm-ruby-ptm",
+    order = "c",
     ingredients = 
     {
       PM.ingredient("pm-saw", 1),
@@ -2799,6 +2825,8 @@ data:extend({
     name = "pm-sapphire-cutting",
     energy_required = 10,
     main_product = "pm-cut-sapphire",
+    subgroup = "pm-sapphire-ptm",
+    order = "c",
     ingredients = 
     {
       PM.ingredient("pm-saw", 1),
@@ -2815,6 +2843,8 @@ data:extend({
     type = "recipe",
     name = "pm-ruby-laser-head",
     energy_required = 5,
+    subgroup = "pm-ruby-ptm",
+    order = "d",
     ingredients = 
     {
       PM.ingredient("pm-cut-ruby", 2),
@@ -2832,6 +2862,8 @@ data:extend({
     type = "recipe",
     name = "pm-sapphire-laser-head",
     energy_required = 5,
+    subgroup = "pm-sapphire-ptm",
+    order = "e",
     ingredients = 
     {
       PM.ingredient("pm-titanium-sapphire", 1),
@@ -2850,6 +2882,8 @@ data:extend({
     name = "pm-lapis-lazuli-dye",
     energy_required = 12,
     category = "pm-washing",
+    subgroup = "pm-lapis-lazuli-ptm",
+    order = "c",
     main_product = "pm-cobalt-blue",
     ingredients = 
     {
@@ -2860,6 +2894,30 @@ data:extend({
     {
       PM.product_range("pm-cobalt-blue", 4, 10),
       PM.product_range_chance("pm-sulfur-dioxide", 4, 8, 0.25, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-garnet-seawater-desaltination",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/water-desaltination.png",
+    subgroup = "pm-garnet-ptm",
+    order = "c",
+    category = "pm-evaporation",
+    hide_from_player_crafting = true,
+    enabled = false,
+    energy_required = 1.25,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-seawater", 150, "fluid"),
+      PM.ingredient("pm-garnet-dust", 5)
+    },
+    results =
+    {
+      PM.product_range("water", 100, 120, "fluid"),
+      PM.product_range("pm-sea-salt", 50, 95),
+      PM.catalyst_range("pm-garnet-dust", 1, 5, 5)
     }
   },
 
