@@ -3551,30 +3551,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-logistics-4",
-    icon_size = 256,
-    icon = "__base__/graphics/technology/logistics-3.png",
-    effects =
-    {
-      PM.unlock_recipe("express-transport-belt"),
-      PM.unlock_recipe("express-underground-belt"),
-      PM.unlock_recipe("express-splitter")
-    },
-    prerequisites = {"logistics-3", "low-density-structure", "advanced-circuit", "production-science-pack"},
-    unit =
-    {
-      count = 600,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-      },
-      time = 80
-    }
-  },
-  {
-    type = "technology",
     name = "pm-rocket-control-unit",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/rocket-control-unit.png",
