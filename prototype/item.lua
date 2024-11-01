@@ -748,6 +748,8 @@ data:extend({
     name = "pm-ruby",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ruby.png",
+    subgroup = "pm-ruby-ptm",
+    order = "a",
     stack_size = 100
   },
   {
@@ -755,6 +757,8 @@ data:extend({
     name = "pm-citrine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/citrine.png",
+    subgroup = "pm-citirne-ptm",
+    order = "a",
     stack_size = 100
   },
   {
@@ -762,6 +766,8 @@ data:extend({
     name = "pm-emerald",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/emerald.png",
+    subgroup = "pm-emerald-ptm",
+    order = "a",
     stack_size = 100
   },
   {
@@ -769,6 +775,8 @@ data:extend({
     name = "pm-sapphire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sapphire.png",
+    subgroup = "pm-sapphire-ptm",
+    order = "a",
     stack_size = 100
   },
   {
@@ -776,6 +784,8 @@ data:extend({
     name = "pm-lapis-lazuli",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/lapis-lazuli.png",
+    subgroup = "pm-lapis-lazuli-ptm",
+    order = "a",
     stack_size = 100
   },
   {
@@ -783,6 +793,8 @@ data:extend({
     name = "pm-garnet",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/garnet.png",
+    subgroup = "pm-garnet-ptm",
+    order = "a",
     stack_size = 100
   },
   {
@@ -790,6 +802,8 @@ data:extend({
     name = "pm-ruby-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ruby-dust.png",
+    subgroup = "pm-ruby-ptm",
+    order = "b",
     stack_size = 100
   },
   {
@@ -797,6 +811,8 @@ data:extend({
     name = "pm-citrine-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/citrine-dust.png",
+    subgroup = "pm-citrine-ptm",
+    order = "b",
     stack_size = 100
   },
   {
@@ -804,6 +820,8 @@ data:extend({
     name = "pm-emerald-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/emerald-dust.png",
+    subgroup = "pm-emerald-ptm",
+    order = "b",
     stack_size = 100
   },
   {
@@ -811,6 +829,8 @@ data:extend({
     name = "pm-sapphire-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sapphire-dust.png",
+    subgroup = "pm-sapphire-ptm",
+    order = "b",
     stack_size = 100
   },
   {
@@ -818,6 +838,8 @@ data:extend({
     name = "pm-lapis-lazuli-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/lapis-lazuli-dust.png",
+    subgroup = "pm-lapis-lazuli-ptm",
+    order = "b",
     stack_size = 100
   },
   {
@@ -825,6 +847,8 @@ data:extend({
     name = "pm-garnet-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/garnet-dust.png",
+    subgroup = "pm-garnet-ptm",
+    order = "b",
     stack_size = 100
   },
   {
@@ -832,6 +856,8 @@ data:extend({
     name = "pm-cut-ruby",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    subgroup = "pm-ruby-ptm",
+    order = "c",
     stack_size = 200
   },
   {
@@ -839,6 +865,8 @@ data:extend({
     name = "pm-cut-sapphire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cut-sapphire-rod.png",
+    subgroup = "pm-sapphire-ptm",
+    order = "c",
     stack_size = 200
   },
   {
@@ -846,6 +874,8 @@ data:extend({
     name = "pm-titanium-sapphire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cut-sapphire-rod.png",
+    subgroup = "pm-sapphire-ptm",
+    order = "d",
     stack_size = 200
   },
   {
@@ -853,6 +883,8 @@ data:extend({
     name = "pm-ruby-laser-head",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ruby-laser-head.png",
+    subgroup = "pm-ruby-ptm",
+    order = "d",
     stack_size = 50
   },
   {
@@ -860,6 +892,8 @@ data:extend({
     name = "pm-sapphire-laser-head",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
+    subgroup = "pm-sapphire-ptm",
+    order = "e",
     stack_size = 50
   },
   {
