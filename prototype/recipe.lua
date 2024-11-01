@@ -2920,6 +2920,120 @@ data:extend({
       PM.catalyst_range("pm-garnet-dust", 1, 5, 5)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-ruby-crystal-slurry",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-washing",
+    subgroup = "pm-ruby-ptm",
+    order = "x",
+    ingredients = 
+    {
+      PM.ingredient("pm-ruby-dust", 5),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-sodium-sulfite", 2)
+    },
+    results = 
+    {
+      PM.product("pm-crystal-slurry", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-citrine-crystal-slurry",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-washing",
+    subgroup = "pm-citrine-ptm",
+    order = "x",
+    ingredients = 
+    {
+      PM.ingredient("pm-citrine-dust", 5),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-sodium-sulfite", 2)
+    },
+    results = 
+    {
+      PM.product("pm-crystal-slurry", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-emerald-crystal-slurry",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-washing",
+    subgroup = "pm-emerald-ptm",
+    order = "x",
+    ingredients = 
+    {
+      PM.ingredient("pm-emerald-dust", 5),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-sodium-sulfite", 2)
+    },
+    results = 
+    {
+      PM.product("pm-crystal-slurry", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sapphire-crystal-slurry",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-washing",
+    subgroup = "pm-sapphire-ptm",
+    order = "x",
+    ingredients = 
+    {
+      PM.ingredient("pm-sapphire-dust", 5),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-sodium-sulfite", 2)
+    },
+    results = 
+    {
+      PM.product("pm-crystal-slurry", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lapis-lazuli-crystal-slurry",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-washing",
+    subgroup = "pm-lapis-lazuli-ptm",
+    order = "x",
+    ingredients = 
+    {
+      PM.ingredient("pm-lapis-lazuli-dust", 5),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-sodium-sulfite", 2)
+    },
+    results = 
+    {
+      PM.product("pm-crystal-slurry", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-garnet-crystal-slurry",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-washing",
+    subgroup = "pm-garnet-ptm",
+    order = "x",
+    ingredients = 
+    {
+      PM.ingredient("pm-garnet-dust", 5),
+      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("pm-sodium-sulfite", 2)
+    },
+    results = 
+    {
+      PM.product("pm-crystal-slurry", 10, "fluid")
+    }
+  },
 
   {
     type = "recipe",

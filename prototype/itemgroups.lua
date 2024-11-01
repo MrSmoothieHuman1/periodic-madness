@@ -794,7 +794,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-emerald-ptm",
+    name = "pm-sapphire-ptm",
     group = "pm-post-transition-metals",
     order = "o"
   },

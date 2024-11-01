@@ -625,7 +625,7 @@ data:extend({
     name = "pm-helium-gas",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/helium-gas.png",
-    subgroup = "pm-noble-gases",
+    subgroup = "pm-helium-nb",
     order = "a",
     default_temperature = 15,
     base_color = {r = 0.7, g = 1, b = 0.7},
@@ -637,7 +637,7 @@ data:extend({
     name = "pm-argon-gas",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/argon-gas.png",
-    subgroup = "pm-noble-gases",
+    subgroup = "pm-argon-nb",
     order = "a",
     default_temperature = 15,
     base_color = {r = 0.6, g = 0, b = 0},
@@ -1513,6 +1513,16 @@ data:extend({
     auto_barrel = false,
     base_color = {r = 1, g = 0.68, b = 0.88},
     flow_color = {r = 1, g = 0.68, b = 0.88}
+  },
+  {
+    type = "fluid",
+    name = "pm-crystal-slurry",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/crystal-slurry.png",
+    default_temperature = 15,
+    auto_barrel = false,
+    base_color = {r = 0.29, g = 0.168, b = 0.458},
+    flow_color = {r = 0.29, g = 0.168, b = 0.458}
   },
 })
 

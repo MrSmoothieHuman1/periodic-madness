@@ -2203,6 +2203,12 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-seed-crystal"),
+      PM.unlock_recipe("pm-ruby-crystal-slurry"),
+      PM.unlock_recipe("pm-citrine-crystal-slurry"),
+      PM.unlock_recipe("pm-emerald-crystal-slurry"),
+      PM.unlock_recipe("pm-sapphire-crystal-slurry"),
+      PM.unlock_recipe("pm-lapis-lazuli-crystal-slurry"),
+      PM.unlock_recipe("pm-garnet-crystal-slurry"),
       PM.unlock_recipe("pm-flourite-crystal-growing"),
       PM.unlock_recipe("pm-tungsten-crystal-growing"),
       PM.unlock_recipe("pm-scheelite-crystal-growing"),
@@ -2222,7 +2228,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
       },
-      time = 45
+      time = 60
     },
   },
   {

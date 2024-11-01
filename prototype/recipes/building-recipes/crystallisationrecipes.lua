@@ -16,7 +16,8 @@ data:extend({
     {
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
-      PM.ingredient("pm-flourite", 20)
+      PM.ingredient("pm-flourite", 20),
+      PM.ingredient("pm-crystal-slurry", 40, "fluid")
     },
     results =
     {
@@ -39,7 +40,8 @@ data:extend({
     {
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
-      PM.ingredient("pm-tungsten-crystals", 20)
+      PM.ingredient("pm-tungsten-crystals", 20),
+      PM.ingredient("pm-crystal-slurry", 40, "fluid")
     },
     results =
     {
@@ -62,7 +64,8 @@ data:extend({
     {
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
-      PM.ingredient("pm-scheelite", 20)
+      PM.ingredient("pm-scheelite", 20),
+      PM.ingredient("pm-crystal-slurry", 40, "fluid")
     },
     results =
     {
@@ -85,7 +88,8 @@ data:extend({
     {
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
-      PM.ingredient("pm-calcite", 20)
+      PM.ingredient("pm-calcite", 20),
+      PM.ingredient("pm-crystal-slurry", 40, "fluid")
     },
     results =
     {
@@ -108,7 +112,8 @@ data:extend({
     {
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
-      PM.ingredient("pm-bismuth-ore", 20)
+      PM.ingredient("pm-bismuth-ore", 20),
+      PM.ingredient("pm-crystal-slurry", 40, "fluid")
     },
     results =
     {
@@ -130,7 +135,8 @@ data:extend({
     {
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
-      PM.ingredient("pm-molybdenite", 20)
+      PM.ingredient("pm-molybdenite", 20),
+      PM.ingredient("pm-crystal-slurry", 40, "fluid")
     },
     results =
     {
