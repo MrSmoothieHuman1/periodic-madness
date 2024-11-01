@@ -774,12 +774,35 @@ data:extend({
     group = "pm-post-transition-metals",
     order = "k"
   },
-
   {
     type = "item-subgroup",
-    name = "pm-noble-gases",
-    group = "pm-noble-gases",
-    order = "a"
+    name = "pm-ruby-ptm",
+    group = "pm-post-transition-metals",
+    order = "l"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-citrine-ptm",
+    group = "pm-post-transition-metals",
+    order = "m"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-emerald-ptm",
+    group = "pm-post-transition-metals",
+    order = "n"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-lapis-lazuli-ptm",
+    group = "pm-post-transition-metals",
+    order = "o"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-garnet-ptm",
+    group = "pm-post-transition-metals",
+    order = "p"
   },
 
   {
