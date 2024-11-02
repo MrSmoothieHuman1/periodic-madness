@@ -2322,7 +2322,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 1000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {-0.5, 0.5}}},
       },
       {
 

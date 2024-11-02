@@ -757,7 +757,7 @@ data:extend({
     name = "pm-citrine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/citrine.png",
-    subgroup = "pm-citirne-ptm",
+    subgroup = "pm-citrine-ptm",
     order = "a",
     stack_size = 100
   },

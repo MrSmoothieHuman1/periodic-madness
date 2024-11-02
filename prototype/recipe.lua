@@ -2482,7 +2482,8 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-boron", 25, "fluid"),
-      PM.ingredient("pm-zircon", 12),
+      PM.ingredient("pm-zircon", 10),
+      PM.ingredient("pm-indium-wire", 5),
       PM.ingredient("processing-unit", 5),
       PM.ingredient("pm-radiation-resistant-panelling", 12)
     },

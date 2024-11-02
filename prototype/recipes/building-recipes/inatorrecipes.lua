@@ -168,6 +168,169 @@ data:extend({
       PM.ingredient("pm-titanium-sapphire", 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-copper-wire-casting",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/liquid-copper.png",
+        icon_size = 64,
+        scale = 0.2,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__base__/graphics/icons/copper-cable.png",
+        icon_size = 64,
+        scale = 0.11,
+        shift = { 0, -3 }
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-copper", 2.5, "fluid"),
+      PM.ingredient("pm-germanium-ore", 3)
+    },
+    results =
+    {
+      PM.product("copper-cable", 15)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-gold-wire-casting",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/liquid-gold.png",
+        icon_size = 64,
+        scale = 0.2,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/gold-wire.png",
+        icon_size = 64,
+        scale = 0.11,
+        shift = { 0, -3 }
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-gold", 2.5, "fluid"),
+      PM.ingredient("pm-palladium-plate", 3),
+      PM.ingredient("pm-cobalt-plate", 3),
+    },
+    results =
+    {
+      PM.product("pm-gold-wire", 15)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-indium-wire-casting",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/liquid-indium.png",
+        icon_size = 64,
+        scale = 0.2,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/indium-wire.png",
+        icon_size = 64,
+        scale = 0.11,
+        shift = { 0, -3 }
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-indium", 2.5, "fluid"),
+      PM.ingredient("pm-thallium-plate", 3),
+    },
+    results =
+    {
+      PM.product("pm-indium-wire", 15)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-iron-gear-casting",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/liquid-iron.png",
+        icon_size = 64,
+        scale = 0.2,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__base__/graphics/icons/iron-gear-wheel.png",
+        icon_size = 64,
+        scale = 0.11,
+        shift = { 0, -3 }
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-iron", 2.5, "fluid"),
+      PM.ingredient("pm-silicon-ore", 3),
+      PM.ingredient("pm-coke", 2)
+    },
+    results =
+    {
+      PM.product("iron-gear-wheel", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-brass-gear-casting",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/liquid-brass.png",
+        icon_size = 64,
+        scale = 0.2,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/brass-cogs.png",
+        icon_size = 64,
+        scale = 0.11,
+        shift = { 0, -3 }
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-brass", 2.5, "fluid"),
+      PM.ingredient("pm-silicon-ore", 3),
+      PM.ingredient("pm-antimony-ore", 3),
+    },
+    results =
+    {
+      PM.product("pm-brass-cog", 5)
+    }
+  },
 
   {
     type = "recipe",

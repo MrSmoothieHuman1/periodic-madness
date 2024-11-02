@@ -3645,7 +3645,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-copper-wire-casting"),
+      PM.unlock_recipe("pm-gold-wire-casting"),
+      PM.unlock_recipe("pm-indium-wire-casting"),
+      PM.unlock_recipe("pm-iron-gear-casting"),
+      PM.unlock_recipe("pm-brass-wire-casting"),
     },
     prerequisites = {"pm-tempature-inators-2", "pm-metalloid-pack-unlock"},
     unit =
