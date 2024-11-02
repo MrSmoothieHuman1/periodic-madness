@@ -102,7 +102,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("express-transport-belt", 1),
-      PM.ingredient("low-density-structure", 2),
+      PM.ingredient("low-density-structure", 1),
       PM.ingredient("processing-unit", 3),
       PM.ingredient("pm-heavy-lubricant", 5, "fluid")
     },
@@ -120,7 +120,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("express-underground-belt", 2),
-      PM.ingredient("low-density-structure", 4),
+      PM.ingredient("low-density-structure", 2),
       PM.ingredient("pm-heavy-lubricant", 10, "fluid")
     },
     results = {

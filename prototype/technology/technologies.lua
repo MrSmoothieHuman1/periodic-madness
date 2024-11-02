@@ -313,7 +313,7 @@ data:extend({
       PM.unlock_recipe("express-underground-belt"),
       PM.unlock_recipe("express-splitter")
     },
-    prerequisites = {"logistics-3", "processing-unit"},
+    prerequisites = {"logistics-3", "processing-unit", "low-density-structure"},
     unit =
     {
       count = 350,
