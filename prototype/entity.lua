@@ -7684,7 +7684,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
     pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
-},
+}
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes_off_when_no_fluid_recipe = true
 
 data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids =
