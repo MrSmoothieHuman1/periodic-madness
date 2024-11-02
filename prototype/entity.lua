@@ -2322,7 +2322,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 1000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {-0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {-0.5, -0.5}}},
       },
       {
 
@@ -2423,7 +2423,6 @@ data:extend({
       fluid_box =
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "water",
@@ -2514,7 +2513,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 2000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
       {
 
@@ -2616,7 +2615,6 @@ data:extend({
       fluid_box =
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 2000,
         filter = "pm-coolant",
