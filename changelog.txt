@@ -101,6 +101,8 @@ Date: 2024-08-09
     - Revamped the RNM ordering to give elements like nitrogen, oxygen, carbon, etc their own rows.
     - Changed crystal seeding to take crystal slurry, which can be made from any of the 6 gems.
     - Buffed the flow limits of accumulators to 750kW from 600kW.
+    - Changed Assembler 2's to have 2 input pipes and 1 output.
+    - Changed RNM packs to take nitrogen and chlorine.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

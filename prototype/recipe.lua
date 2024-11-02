@@ -3117,7 +3117,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-plastic-science-bottle", 1),
-      PM.ingredient("pm-chlorine", 14 * 3, "fluid"),
+      PM.ingredient("pm-chlorine", 14 * 2, "fluid"),
+      PM.ingredient("pm-nitrogen-gas", 14 * 2, "fluid"),
       PM.ingredient("pm-carbon", 14 * 2),
       PM.ingredient("sulfur", 14)
     },

@@ -215,7 +215,8 @@ data.raw["recipe"]["offshore-pump"].ingredients =
 data.raw["recipe"]["chemical-science-pack"].ingredients =
 {
   PM.ingredient("pm-science-bottle", 1),
-  PM.ingredient("pm-chlorine", 14 * 3, "fluid"),
+  PM.ingredient("pm-chlorine", 14 * 2, "fluid"),
+  PM.ingredient("pm-nitrogen-gas", 14 * 2, "fluid"),
   PM.ingredient("pm-carbon", 28),
   PM.ingredient("sulfur", 14)
 }
