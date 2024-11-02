@@ -3649,7 +3649,7 @@ data:extend({
       PM.unlock_recipe("pm-gold-wire-casting"),
       PM.unlock_recipe("pm-indium-wire-casting"),
       PM.unlock_recipe("pm-iron-gear-casting"),
-      PM.unlock_recipe("pm-brass-wire-casting"),
+      PM.unlock_recipe("pm-brass-gear-casting"),
     },
     prerequisites = {"pm-tempature-inators-2", "pm-metalloid-pack-unlock"},
     unit =
