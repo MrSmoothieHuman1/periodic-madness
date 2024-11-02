@@ -1675,29 +1675,30 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
+        volume = 2000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 2000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+        secondary_draw_orders = { north = -1 }
+      },
+      {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
+        volume = 2000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
-      },
-      {
-
-        production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        volume = 1000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
+        volume = 2000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
     },
   },
@@ -3538,31 +3539,31 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 2000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+        secondary_draw_orders = { north = -1 }
+      },
+      {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
-      },
-      {
-
-        production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        volume = 2000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
     },
-
   },
 
   {
@@ -5398,28 +5399,29 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+        secondary_draw_orders = { north = -1 }
+      },
+      {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
-      },
-      {
-
-        production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        volume = 1000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
     },
   },
@@ -6624,28 +6626,29 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 1} }},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 2000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+        secondary_draw_orders = { north = -1 }
+      },
+      {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -1} }},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
-
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
-      },
-      {
-
-        production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        volume = 2000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
     },
   },
@@ -7620,44 +7623,68 @@ data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes =
 data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes_off_when_no_fluid_recipe = true
 
 table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories, "pm-circuitry")
+data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes = 
+{
+  {
+    production_type = "input",
+    pipe_pictures = assembler2pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "output",
+    pipe_pictures = assembler2pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "input",
+    pipe_pictures = assembler2pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
+    secondary_draw_orders = { north = -1 }
+  },
+}
 
 table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories, "pm-advanced-crafting-with-fluid")
 table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories, "pm-circuitry")
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
+{
   {
-    {
-      production_type = "input",
-      pipe_picture = assembler3pipepictures(),
-      pipe_covers = pipecoverspictures(),
-      volume = 2000,
-      pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -1} }},
-      secondary_draw_orders = { north = -1 }
-    },
-    {
-      production_type = "output",
-      pipe_picture = assembler3pipepictures(),
-      pipe_covers = pipecoverspictures(),
-      volume = 2000,
-      pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {0, 1} }},
-      secondary_draw_orders = { north = -1 }
-    },
-    {
-      production_type = "input",
-      pipe_picture = assembler3pipepictures(),
-      pipe_covers = pipecoverspictures(),
-      volume = 2000,
-      pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, 0} }},
-      secondary_draw_orders = { north = -1 }
-    },
-    {
-      production_type = "output",
-      pipe_picture = assembler3pipepictures(),
-      pipe_covers = pipecoverspictures(),
-      volume = 2000,
-      pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
-      secondary_draw_orders = { north = -1 }
-    },
-}
+    production_type = "input",
+    pipe_pictures = assembler3pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
+    secondary_draw_orders = { north = -1 }
+  },
+},
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes_off_when_no_fluid_recipe = true
 
 data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids =
