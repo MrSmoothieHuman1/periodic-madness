@@ -2210,7 +2210,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 200,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
       {
 
@@ -2315,24 +2315,24 @@ data:extend({
       }
     }
   },
-    fluid_boxes =
+  fluid_boxes =
+  {
     {
-      {
-        production_type = "input",
-        pipe_covers = pipecoverspictures(),
-        priority = "medium",
-        volume = 1000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {-0.5, -0.5}}},
-      },
-      {
-
-        production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        priority = "medium",
-        volume = 1000,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
-      },
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      priority = "medium",
+      volume = 2000,
+      pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
     },
+    {
+
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      priority = "medium",
+      volume = 2000,
+      pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
+    },
+  },
   },
   {
     type = "assembling-machine",
@@ -6403,7 +6403,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 200,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
       {
 
@@ -6414,7 +6414,7 @@ data:extend({
         pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
     },
-    crafting_categories = { "pm-evaporation" },
+    crafting_categories = {"pm-evaporation"},
     crafting_speed = 1.25,
     energy_usage = "350kW",
     energy_source =
