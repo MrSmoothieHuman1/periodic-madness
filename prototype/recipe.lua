@@ -1849,7 +1849,7 @@ data:extend({
     results =
     {
       PM.product("pm-plastic-science-bottle", 1),
-      PM.product_chance("pm-plastic-science-mold", 1, 0.75)
+      PM.product_chance("pm-plastic-science-mold", 1, 0.66)
     }
   },
   {
@@ -1919,6 +1919,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "m",
     energy_required = 0.3,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gallium-arsenide", 2),
@@ -1974,6 +1975,7 @@ data:extend({
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 20,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-ammonium-chloride", 20),
@@ -2267,6 +2269,7 @@ data:extend({
     energy_required = 10,
     subgroup = "pm-refined-items",
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vacuum-tube", 1),
@@ -2307,26 +2310,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-ethylbenzene",
-    enabled = false,
-    category = "chemistry",
-    energy_required = 10,
-    ingredients =
-    {
-      PM.ingredient("pm-ethylene-gas", 20, "fluid"),
-      PM.ingredient("pm-benzene", 20, "fluid"),
-    },
-    results =
-    {
-      PM.product("pm-ethylbenzene", 10, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
     enabled = false,
     energy_required = 60,
     category = "crafting-with-fluid",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-molybdenum-ore", 20),
@@ -2559,6 +2547,7 @@ data:extend({
     name = "pm-rocket-control-unit",
     enabled = false,
     energy_required = 30,
+    allow_productivity = true,
     ingredients =
       {
         PM.ingredient("pm-oscilloscope", 1),
@@ -2791,6 +2780,7 @@ data:extend({
     name = "pm-garnet-saw",
     energy_required = 5,
     category = "advanced-crafting",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
@@ -2809,6 +2799,7 @@ data:extend({
     main_product = "pm-cut-ruby",
     subgroup = "pm-ruby-ptm",
     order = "c",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-saw", 1),
@@ -2828,6 +2819,7 @@ data:extend({
     main_product = "pm-cut-sapphire",
     subgroup = "pm-sapphire-ptm",
     order = "c",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-saw", 1),
@@ -2846,6 +2838,7 @@ data:extend({
     energy_required = 5,
     subgroup = "pm-ruby-ptm",
     order = "d",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-cut-ruby", 2),
@@ -2865,6 +2858,7 @@ data:extend({
     energy_required = 5,
     subgroup = "pm-sapphire-ptm",
     order = "e",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-titanium-sapphire", 1),
@@ -2929,6 +2923,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-ruby-ptm",
     order = "x",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-ruby-dust", 5),
@@ -2948,6 +2943,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-citrine-ptm",
     order = "x",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
@@ -2967,6 +2963,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-emerald-ptm",
     order = "x",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-emerald-dust", 5),
@@ -2986,6 +2983,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-sapphire-ptm",
     order = "x",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-sapphire-dust", 5),
@@ -3005,6 +3003,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-lapis-lazuli-ptm",
     order = "x",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 5),
@@ -3024,6 +3023,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-garnet-ptm",
     order = "x",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
