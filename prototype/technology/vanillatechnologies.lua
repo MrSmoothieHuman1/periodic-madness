@@ -927,7 +927,10 @@ data.raw["technology"]["inserter-capacity-bonus-7"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
-
+table.insert(data.raw["technology"]["flammables"].effects, 
+{type = "unlock-recipe", recipe = "pm-gunpowder"},
+{type = "unlock-recipe", recipe = "pm-water-hydrogen-peroxide"},
+{type = "unlock-recipe", recipe = "pm-kerosene-rocket-fuel"})
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"

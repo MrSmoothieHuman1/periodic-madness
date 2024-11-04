@@ -3057,6 +3057,18 @@ data:extend({
       PM.product_range_chance("pm-acidic-water", 10, 15, 0.8, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-water-hydrogen-peroxide",
+    enabled = false,
+    energy_required = 10,
+    category = "pm-electrolysis",
+    allow_productivity = true,
+    ingredients = 
+    {
+
+    }
+  },
 
   {
     type = "recipe",
