@@ -4,7 +4,7 @@ data:extend({
     type = "technology",
     name = "pm-brass-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/alloying-tech.png",
+    icon = "__periodic-madness__/graphics/technology/brass-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-welder"),
@@ -3642,7 +3642,7 @@ data:extend({
     type = "technology",
     name = "pm-intermediate-casting",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/icons/intermediate-casting.png",
     effects = 
     {
       PM.unlock_recipe("pm-copper-wire-casting"),

@@ -1,13 +1,12 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
-local minutes = { }
 data:extend({
   {
     type = "item",
     name = "pm-brass-cog",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/brass-cogs.png",
+    icon = "__periodic-madness__/graphics/icons/brass-gear.png",
     subgroup = "pm-refined-items",
     order = "c[iron-gear-wheel]",
     stack_size = 100
