@@ -886,7 +886,7 @@ data:extend({
   {
     type = "item",
     name = "pm-ruby-laser-head",
-    icon_size = 64,
+    icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/ruby-laser-head.png",
     subgroup = "pm-ruby-ptm",
     order = "d",
@@ -895,7 +895,7 @@ data:extend({
   {
     type = "item",
     name = "pm-sapphire-laser-head",
-    icon_size = 64,
+    icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
     subgroup = "pm-sapphire-ptm",
     order = "e",
