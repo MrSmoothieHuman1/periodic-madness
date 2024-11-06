@@ -1524,6 +1524,15 @@ data:extend({
     base_color = {r = 0.29, g = 0.168, b = 0.458},
     flow_color = {r = 0.29, g = 0.168, b = 0.458}
   },
+  {
+    type = "fluid",
+    name = "pm-hydrogen-peroxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/sea-water.png",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.69, b = 0.98},
+    flow_color = {r = 0.3, g = 0.69, b = 0.98}
+  },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"

@@ -3045,9 +3045,10 @@ data:extend({
     energy_required = 3,
     category = "chemistry",
     allow_producitvity = true,
+    main_product = "pm-gunpowder",
     ingredients = 
     {
-      PM.ingredient("carbon", 20),
+      PM.ingredient("pm-carbon", 20),
       PM.ingredient("sulfur", 6),
       PM.ingredient("pm-seawater", 50, "fluid")
     },
@@ -3064,9 +3065,16 @@ data:extend({
     energy_required = 10,
     category = "pm-electrolysis",
     allow_productivity = true,
+    main_product = "pm-hydrogen-peroxide",
     ingredients = 
     {
-
+      PM.ingredient("pm-oxygen-gas", 50, "fluid"),
+      PM.ingredient("pm-hydrogen-gas", 50, "fluid")
+    },
+    results = 
+    {
+      PM.product_range_chance("pm-hydrogen-peroxide", 12, 25, 0.5, "fluid"),
+      PM.product_range_chance("water", 12, 25, 0.5, "fluid"),
     }
   },
 

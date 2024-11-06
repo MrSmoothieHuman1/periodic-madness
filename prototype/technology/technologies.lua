@@ -3642,7 +3642,7 @@ data:extend({
     type = "technology",
     name = "pm-intermediate-casting",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/intermediate-casting.png",
+    icon = "__periodic-madness__/graphics/technology/intermediate-casting.png",
     effects = 
     {
       PM.unlock_recipe("pm-copper-wire-casting"),

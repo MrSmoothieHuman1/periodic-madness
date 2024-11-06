@@ -756,6 +756,12 @@ data:extend({
     name = "pm-citrine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/citrine.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/citrine.png",   size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/citrine-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/citrine-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-citrine-ptm",
     order = "a",
     stack_size = 100
@@ -899,9 +905,16 @@ data:extend({
     type = "item",
     name = "pm-saw",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
+    icon = "__periodic-madness__/graphics/icons/saw.png",
     stack_size = 50
-  }, 
+  },
+  {
+    type = "item",
+    name = "pm-gunpowder",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/gunpowder.png",
+    stack_size = 150
+  },
 
   {
     type = "module",
