@@ -275,37 +275,7 @@ data:extend({
     name = "pm-oil-reforming",
     group = "intermediate-products",
     order = "ab"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-gases",
-    group = "intermediate-products",
-    order = "b"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-processing",
-    group = "intermediate-products",
-    order = "c"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-alloys",
-    group = "intermediate-products",
-    order = "d",
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-glassing",
-    group = "intermediate-products",
-    order = "da",
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-refined-items",
-    group = "intermediate-products",
-    order = "f",
-  },
+  },  
   {
     type = "item-subgroup",
     name = "pm-fuels",
@@ -314,45 +284,69 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-alloys",
+    group = "intermediate-products",
+    order = "c",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-glassing",
+    group = "intermediate-products",
+    order = "d",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-wires",
+    group = "intermediate-products",
+    order = "d",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-gears",
+    group = "intermediate-products",
+    order = "e",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-intermediates",
+    group = "intermediate-products",
+    order = "f",
+  }, 
+  {
+    type = "item-subgroup",
     name = "pm-batteries",
     group = "intermediate-products",
     order = "g"
   },
   {
     type = "item-subgroup",
-    name = "pm-alternative-recipes",
-    group = "intermediate-products",
-    order = "f"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-modules",
-    group = "intermediate-products",
-    order = "f"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-circuits",
-    group = "intermediate-products",
-    order = "g"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-molded-circuits",
+    name = "pm-catalysts",
     group = "intermediate-products",
     order = "h"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-resin-processing", --any and all things related to rubber or resin
-    group = "intermediate-products",
-    order = "gb",
   },
   {
     type = "item-subgroup",
     name = "pm-plastics",
     group = "intermediate-products",
-    order = "h"
+    order = "i"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-modules",
+    group = "intermediate-products",
+    order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-circuits",
+    group = "intermediate-products",
+    order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-molded-circuits",
+    group = "intermediate-products",
+    order = "l"
   },
   {
     type = "item-subgroup",
@@ -372,12 +366,8 @@ data:extend({
     group = "intermediate-products",
     order = "xa"
   },
-  {
-    type = "item-subgroup",
-    name = "pm-metal-melting",
-    group = "intermediate-products",
-    order = "c"
-  },
+
+
   {
     type = "item-subgroup",
     name = "pm-voiding",
@@ -385,6 +375,7 @@ data:extend({
     order = "a"
   },
 
+  
   {
     type = "item-subgroup",
     name = "pm-battery-machine",

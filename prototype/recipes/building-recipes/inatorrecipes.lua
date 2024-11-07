@@ -310,7 +310,7 @@ data:extend({
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/brass-cogs.png",
+        icon = "__periodic-madness__/graphics/icons/brass-gear.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
