@@ -1585,8 +1585,8 @@ data:extend({
     name = "pm-copper-zinc-aluminium-catalyst",
     energy_required = 4,
     enabled = false,
-    subgroup = "pm-plastics",
-    order = "f",
+    subgroup = "pm-catalysts",
+    order = "ea",
     allow_productivity = true,
     ingredients =
     {

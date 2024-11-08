@@ -114,7 +114,8 @@ data:extend({
     name = "pm-vanadium-oxide-catalyst",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/vanadium-oxide-catalyst.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "b",
     stack_size = 25
   },
   {
@@ -122,7 +123,35 @@ data:extend({
     name = "pm-palladium-catalyst",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/palladium-catalyst.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "c",
+    stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-cobalt-catalyst",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cobalt-catalyst.png",
+    subgroup = "pm-catalysts",
+    order = "d",
+    stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-copper-zinc-aluminium-catalyst",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/CuZnAl-catalyst.png",
+    subgroup = "pm-catalysts",
+    order = "e",
+    stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-yttrium-catalyst",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/yttrium-catalyst.png",
+    subgroup = "pm-catalysts",
+    order = "f",
     stack_size = 25
   },
   {
@@ -138,7 +167,8 @@ data:extend({
     name = "pm-catalyst-container",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/catalyst-container.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "a",
     stack_size = 10
   },
   {
@@ -641,14 +671,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-copper-zinc-aluminium-catalyst",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/CuZnAl-catalyst.png",
-    subgroup = "pm-plastics",
-    stack_size = 25
-  },
-  {
-    type = "item",
     name = "pm-crucible",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/crucible.png",
@@ -660,22 +682,6 @@ data:extend({
     subgroup = "pm-alloys",
     order = "A",
     stack_size = 200
-  },
-  {
-    type = "item",
-    name = "pm-cobalt-catalyst",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/cobalt-catalyst.png",
-    subgroup = "pm-plastics",
-    stack_size = 25
-  },
-  {
-    type = "item",
-    name = "pm-yttrium-catalyst",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/yttrium-catalyst.png",
-    subgroup = "pm-plastics",
-    stack_size = 25
   },
   {
     type = "item",

@@ -644,7 +644,8 @@ data:extend({
     type = "recipe",
     name = "pm-vanadium-oxide-catalyst",
     energy_required = 4,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "ba",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -660,7 +661,8 @@ data:extend({
     type = "recipe",
     name = "pm-palladium-catalyst",
     energy_required = 4,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "ca",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -677,7 +679,8 @@ data:extend({
     type = "recipe",
     name = "pm-cobalt-catalyst",
     energy_required = 4,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "da",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -694,7 +697,8 @@ data:extend({
     name = "pm-yttrium-catalyst",
     energy_required = 4,
     category = "crafting-with-fluid",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "fa",
     enabled = false,
     allow_productivity = true,
     ingredients =
