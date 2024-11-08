@@ -1692,7 +1692,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-plastic-pellets", 8),
-      PM.ingredient("pm-methyl-methacrylate", 25, "fluid"),
+      PM.ingredient("pm-methyl-methacrylate", 20, "fluid"),
       PM.ingredient("pm-vinyl-bromide", 10, "fluid")
     },
     results =

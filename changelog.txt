@@ -105,6 +105,7 @@ Date: 2024-08-09
     - Changed RNM packs to take nitrogen and chlorine.
     - Nerfed the chances of getting the science mold back from 75% to 66%.
     - Revamped the intermediates tab structure, to make it not a botched mess.
+    - Changed Vinyl bromide PMMA plastic to take 20 methyl methacrylate instead of 25.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
