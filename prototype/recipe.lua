@@ -1290,7 +1290,8 @@ data:extend({
     name = "pm-flux-container",
     energy_required = 4,
     enabled = false,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -1305,7 +1306,8 @@ data:extend({
     name = "pm-filled-flux-container",
     energy_required = 4,
     enabled = false,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "ga",
     ingredients =
     {
       PM.ingredient("pm-flux-container", 1),

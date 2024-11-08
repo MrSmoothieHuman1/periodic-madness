@@ -104,6 +104,7 @@ Date: 2024-08-09
     - Changed Assembler 2's to have 2 input pipes and 1 output.
     - Changed RNM packs to take nitrogen and chlorine.
     - Nerfed the chances of getting the science mold back from 75% to 66%.
+    - Revamped the intermediates tab structure, to make it not a botched mess.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -130,6 +131,7 @@ Date: 2024-08-09
     - Made R-NM locked researches match closer to the costs of P-TM researches.
     - Fixed Bulk inserters not needing A-ATM packs to be research.
     - Fixed mining productivity researches having broken prerequisites.
+    - Fixed Plastic science bottles being pluralised.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

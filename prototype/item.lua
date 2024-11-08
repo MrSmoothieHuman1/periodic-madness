@@ -602,7 +602,8 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/flux-container-2.png", size = 64, scale = 0.24 + 0.001},
       {filename = "__periodic-madness__/graphics/icons/flux-container-3.png", size = 64, scale = 0.24 + 0.001},
     },
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "g",
     stack_size = 100
   },
   {
@@ -610,7 +611,8 @@ data:extend({
     name = "pm-filled-flux-container",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/filled-flux-container.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "ga",
     stack_size = 50
   },
   {

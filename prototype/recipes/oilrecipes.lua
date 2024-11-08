@@ -782,7 +782,8 @@ data:extend({
     name = "pm-catalyst-container",
     energy_required = 4,
     enabled = false,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "a",
     ingredients =
     {
       PM.ingredient("pm-vulcanised-rubber", 4),
