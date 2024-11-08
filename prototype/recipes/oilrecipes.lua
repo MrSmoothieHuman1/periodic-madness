@@ -542,7 +542,7 @@ data:extend({
     type = "recipe",
     name = "pm-acetone",
     category = "chemistry",
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     order = "g",
     enabled = false,
     energy_required = 4,
@@ -562,7 +562,7 @@ data:extend({
     type = "recipe",
     name = "pm-bisphenol-A",
     category = "chemistry",
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     order = "h",
     enabled = false,
     energy_required = 4,
@@ -644,7 +644,7 @@ data:extend({
     type = "recipe",
     name = "pm-vanadium-oxide-catalyst",
     energy_required = 4,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -660,7 +660,7 @@ data:extend({
     type = "recipe",
     name = "pm-palladium-catalyst",
     energy_required = 4,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -677,7 +677,7 @@ data:extend({
     type = "recipe",
     name = "pm-cobalt-catalyst",
     energy_required = 4,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -694,7 +694,7 @@ data:extend({
     name = "pm-yttrium-catalyst",
     energy_required = 4,
     category = "crafting-with-fluid",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -778,7 +778,7 @@ data:extend({
     name = "pm-catalyst-container",
     energy_required = 4,
     enabled = false,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     ingredients =
     {
       PM.ingredient("pm-vulcanised-rubber", 4),

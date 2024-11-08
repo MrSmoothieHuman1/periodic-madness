@@ -20,7 +20,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-coal-crushing",
-    subgroup = "pm-processing",
     category = "pm-crushing",
     allow_productivity = true,
     ingredients = {PM.ingredient("coal", 2)},
@@ -261,7 +260,8 @@ data:extend({
     type = "recipe",
     name = "pm-indium-wire",
     enabled = false,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-wires",
+    order = "da",
     allow_productivity = true,
     ingredients =
     {
@@ -539,7 +539,6 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "smelting",
-    subgroup = "pm-processing",
     order = "A",
     ingredients =
     {
@@ -556,7 +555,6 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "pm-alloying",
-    subgroup = "pm-processing",
     order = "Aa",
     ingredients =
     {
@@ -573,7 +571,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-forming.png",
     energy_required = 2,
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     category = "crafting-with-fluid",
     order = "b",
     enabled = false,
@@ -593,7 +591,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-rubber-resin.png",
     energy_required = 1,
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     category = "pm-acids",
     enabled = false,
     ingredients =
@@ -613,7 +611,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-pheonlic-resin.png",
     energy_required = 1,
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     category = "pm-acids",
     enabled = false,
     ingredients =
@@ -633,7 +631,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-cooling.png",
     energy_required = 2,
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     category = "pm-molding",
     order = "e",
     enabled = false,
@@ -654,7 +652,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/vulcanised-rubber.png",
     energy_required = 3,
     enabled = false,
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     category = "pm-acids",
     order = "f",
     ingredients =
@@ -706,6 +704,8 @@ data:extend({
     type = "recipe",
     name = "pm-brass-cog",
     energy_required = 1,
+    subgroup = "pm-gears",
+    order = "ba",
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-brass-plate", 2) },
@@ -717,6 +717,8 @@ data:extend({
     type = "recipe",
     name = "pm-gold-wire",
     energy_required = 0.5,
+    subgroup = "pm-wires",
+    order = "ba",
     show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
@@ -753,6 +755,8 @@ data:extend({
     enabled = false,
     energy_required = 4,
     category = "crafting-with-fluid",
+    subgroup = "pm-wires",
+    order = "ca",
     allow_productivity = true,
     ingredients =
     {
@@ -1286,7 +1290,7 @@ data:extend({
     name = "pm-flux-container",
     energy_required = 4,
     enabled = false,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     allow_productivity = true,
     ingredients =
     {
@@ -1301,7 +1305,7 @@ data:extend({
     name = "pm-filled-flux-container",
     energy_required = 4,
     enabled = false,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     ingredients =
     {
       PM.ingredient("pm-flux-container", 1),
@@ -1543,7 +1547,7 @@ data:extend({
     enabled = false,
     energy_required = 2.25,
     category = "crafting-with-fluid",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     order = "b",
 
     ingredients =
@@ -2088,7 +2092,7 @@ data:extend({
     name = "pm-vacuum-tube",
     enabled = false,
     category = "crafting-with-fluid",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     energy_required = 7,
     allow_productivity = true,
     ingredients =
@@ -2108,7 +2112,7 @@ data:extend({
     type = "recipe",
     name = "pm-CRT",
     enabled = false,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     energy_required = 28,
     allow_productivity = true,
     ingredients =
@@ -2129,7 +2133,7 @@ data:extend({
     name = "pm-oscilloscope",
     enabled = false,
     category = "crafting-with-fluid",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     energy_required = 10,
     allow_productivity = true,
     ingredients =
@@ -2267,7 +2271,7 @@ data:extend({
     type = "recipe",
     name = "pm-travelling-wave-amplifier-tube",
     energy_required = 10,
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     enabled = false,
     allow_productivity = true,
     ingredients =

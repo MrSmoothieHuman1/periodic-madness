@@ -251,8 +251,9 @@ data:extend({
     name = "pm-aluminium-fiberoptic-cable",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/aluminium-fiberoptic-cable.png",
-    subgroup = "pm-alternative-recipes",
     category = "crafting-with-fluid",
+    subgroup = "pm-wires",
+    order = "cb",
     energy_required = 5,
     enabled = false,
     ingredients =

@@ -7,8 +7,8 @@ data:extend({
     name = "pm-brass-cog",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/brass-gear.png",
-    subgroup = "pm-refined-items",
-    order = "c[iron-gear-wheel]",
+    subgroup = "pm-gears",
+    order = "b",
     stack_size = 100
   },
   {
@@ -16,8 +16,8 @@ data:extend({
     name = "pm-gold-wire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/gold-wire.png",
-    subgroup = "pm-refined-items",
-    order = "b[copper-cable]",
+    subgroup = "pm-wires",
+    order = "b",
     stack_size = 100
   },
   {
@@ -25,8 +25,8 @@ data:extend({
     name = "pm-fiberoptic-cable",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fiberoptic-cable.png",
-    subgroup = "pm-refined-items",
-    order = "c[copper-cable]",
+    subgroup = "pm-wires",
+    order = "c",
     stack_size = 50
   },
   {
@@ -105,7 +105,7 @@ data:extend({
     name = "pm-solid-lubricant",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/solid-lubricant.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     order = "e",
     stack_size = 50
   },
@@ -114,7 +114,7 @@ data:extend({
     name = "pm-vanadium-oxide-catalyst",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/vanadium-oxide-catalyst.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 25
   },
   {
@@ -122,7 +122,7 @@ data:extend({
     name = "pm-palladium-catalyst",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/palladium-catalyst.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 25
   },
   {
@@ -130,7 +130,7 @@ data:extend({
     name = "pm-sea-salt",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/sea-salt.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 250
   },
   {
@@ -138,7 +138,7 @@ data:extend({
     name = "pm-catalyst-container",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/catalyst-container.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 10
   },
   {
@@ -161,7 +161,7 @@ data:extend({
     name = "pm-solder-wire",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/tin-wire.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 250
   },
   {
@@ -169,7 +169,7 @@ data:extend({
     name = "pm-solder-case",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/solder-case.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 100
   },
   {
@@ -263,8 +263,8 @@ data:extend({
     name = "pm-wood-strips",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/wood-strips.png",
-    subgroup = "pm-resin-processing",
-    order = "a[pm-wood-strips]",
+    subgroup = "pm-biostuff-rnm",
+    order = "a",
     fuel_value = "2MJ",
     fuel_category = "chemical",
     stack_size = 200
@@ -285,7 +285,7 @@ data:extend({
     name = "pm-rubber",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/rubber.png",
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     order = "d",
     stack_size = 100
   },
@@ -294,7 +294,7 @@ data:extend({
     name = "pm-vulcanised-rubber",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/vulcanised-rubber.png",
-    subgroup = "pm-resin-processing",
+    subgroup = "pm-resin",
     order = "e",
     stack_size = 50
   },
@@ -357,7 +357,7 @@ data:extend({
     name = "pm-solar-cell",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/solar-cell.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 100
   },
   {
@@ -365,7 +365,7 @@ data:extend({
     name = "pm-module-case",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/module-case.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 140 + 10
   },
   {
@@ -373,7 +373,7 @@ data:extend({
     name = "pm-module-speed-light",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/speed-module-light.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 160 - 10
   },
   {
@@ -381,7 +381,7 @@ data:extend({
     name = "pm-module-productivity-light",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/productivity-module-light.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 160 - 10
   },
   {
@@ -389,7 +389,7 @@ data:extend({
     name = "pm-module-efficiency-light",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/efficiency-module-light.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 160 - 10
   },
   {
@@ -572,7 +572,7 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/flux-container-2.png", size = 64, scale = 0.24 + 0.001},
       {filename = "__periodic-madness__/graphics/icons/flux-container-3.png", size = 64, scale = 0.24 + 0.001},
     },
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 100
   },
   {
@@ -580,7 +580,7 @@ data:extend({
     name = "pm-filled-flux-container",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/filled-flux-container.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 50
   },
   {
@@ -593,7 +593,7 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/gallium-arsenide.png",   size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/gallium-arsenide-2.png", size = 64, scale = 0.5 },
     },
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 20
   },
   {
@@ -601,7 +601,7 @@ data:extend({
     name = "pm-gallium-nitride",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/gallium-nitride.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 20
   },
   {
@@ -609,7 +609,7 @@ data:extend({
     name = "pm-aluminium-gallium-indium-phosphide",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/AlGaIn.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 40
   },
   {
@@ -682,7 +682,7 @@ data:extend({
     name = "pm-seed-crystal",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/crystal-seed.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 30
   },
   {
@@ -690,7 +690,7 @@ data:extend({
     name = "pm-empty-reactor-cell",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/empty-fuel-cell.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 20
   },
   {
@@ -738,8 +738,8 @@ data:extend({
     name = "pm-indium-wire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/indium-wire.png",
-    subgroup = "pm-refined-items",
-    order = "b[copper-cable]",
+    subgroup = "pm-wires",
+    order = "d",
     stack_size = 100
   },
   {
@@ -1050,7 +1050,7 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.125 },
       { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.125 },
     },
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 10
   },
   {
@@ -1058,7 +1058,7 @@ data:extend({
     name = "pm-vacuum-tube",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/vacuum-tube.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 75
   },
   {
@@ -1084,7 +1084,7 @@ data:extend({
         }
       }
     },
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 50
   },
   {
@@ -1300,7 +1300,7 @@ data:extend({
     name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/NiMoP.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 50
   },
   {
@@ -1308,7 +1308,7 @@ data:extend({
     name = "pm-rocket-control-unit",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
-    subgroup = "pm-refined-items",
+    subgroup = "pm-intermediates",
     stack_size = 100
   },
 
@@ -1406,15 +1406,10 @@ data:extend({
     name = "pm-fuel-rods"
   },
 })
-
-local PMRefItems = data.raw["item"]["copper-cable"]
-PMRefItems.subgroup = "pm-refined-items"
-
-local PMRefIronBar = data.raw["item"]["iron-stick"]
-PMRefIronBar.subgroup = "pm-refined-items"
-
-local PMRefItemsGear = data.raw["item"]["iron-gear-wheel"]
-PMRefItemsGear.subgroup = "pm-refined-items"
+data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"
+data.raw["item"]["iron-gear-wheel"].order = "a"
+data.raw["recipe"]["iron-gear-wheel"].subgroup = "pm-gears"
+data.raw["recipe"]["iron-gear-wheel"].order = "aa"
 
 local SolidFuelFuel = data.raw["item"]["solid-fuel"]
 SolidFuelFuel.subgroup = "pm-fuels"
@@ -1698,7 +1693,10 @@ data.raw["item"]["solid-fuel"].fuel_top_speed_multiplier = 1.1
 data.raw["gun"]["shotgun"].attack_parameters.min_range = 0.5
 data.raw["gun"]["combat-shotgun"].attack_parameters.min_range = 1.25
 
-
+data.raw["item"]["copper-cable"].subgroup = "pm-wires"
+data.raw["item"]["copper-cable"].order = "a"
+data.raw["recipe"]["copper-cable"].subgroup = "pm-wires"
+data.raw["recipe"]["copper-cable"].order = "aa"
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it

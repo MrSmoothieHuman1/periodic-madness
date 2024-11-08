@@ -189,6 +189,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "pm-coldening",
+    subgroup = "pm-wires",
+    order = "ab",
     allow_productivity = true,
     ingredients = 
     {
@@ -221,6 +223,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "pm-coldening",
+    subgroup = "pm-wires",
+    order = "bb",
     allow_productivity = true,
     ingredients = 
     {
@@ -254,6 +258,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "pm-coldening",
+    subgroup = "pm-wires",
+    order = "db",
     allow_productivity = true,
     ingredients = 
     {
@@ -286,6 +292,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "pm-coldening",
+    subgroup = "pm-gears",
+    order = "ab",
     allow_productivity = true,
     ingredients = 
     {
@@ -319,6 +327,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "pm-coldening",
+    subgroup = "pm-gears",
+    order = "bb",
     allow_productivity = true,
     ingredients = 
     {
@@ -794,7 +804,7 @@ data:extend({
     name = "pm-glass-melting",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/glass-melting.png",
-    subgroup = "pm-processing",
+    subgroup = "pm-glassing",
     order = "h",
     category = "pm-moltening",
     energy_required = 9,
@@ -991,7 +1001,7 @@ data:extend({
     name = "pm-tinned-glass-melting",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/tinned-glass-melting.png",
-    subgroup = "pm-processing",
+    subgroup = "pm-glassing",
     order = "ha",
     category = "pm-moltening",
     energy_required = 9,
@@ -1370,7 +1380,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/glass-cooling.png",
     category = "pm-coldening",
-    subgroup = "pm-processing",
+    subgroup = "pm-glassing",
     order = "i",
     energy_required = 9,
     enabled = false,

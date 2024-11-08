@@ -332,27 +332,33 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-modules",
+    name = "pm-plastic-science-process",
+    group = "intermediate-products",
+    order = "ia"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-resin",
     group = "intermediate-products",
     order = "j"
   },
   {
     type = "item-subgroup",
-    name = "pm-circuits",
+    name = "pm-modules",
     group = "intermediate-products",
     order = "k"
   },
   {
     type = "item-subgroup",
-    name = "pm-molded-circuits",
+    name = "pm-circuits",
     group = "intermediate-products",
-    order = "l"
+    order = "m"
   },
   {
     type = "item-subgroup",
-    name = "pm-plastic-science-process",
+    name = "pm-molded-circuits",
     group = "intermediate-products",
-    order = "ha"
+    order = "n"
   },
   {
     type = "item-subgroup",
