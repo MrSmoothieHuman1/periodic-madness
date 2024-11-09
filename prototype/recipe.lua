@@ -1689,6 +1689,7 @@ data:extend({
     subgroup = "pm-plastics",
     order = "ia",
     main_product = "pm-polymethyl-methacrylate",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-plastic-pellets", 8),
@@ -2322,7 +2323,6 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-catalysts",
     order = "ha",
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-molybdenum-ore", 20),
@@ -2365,7 +2365,7 @@ data:extend({
       PM.ingredient("piercing-shotgun-shell", 1),
       PM.ingredient("pm-bismuth-ore", 4),
       PM.ingredient("pm-tungsten-plate", 2),
-      PM.ingredient("pm-gunpowder", 2),
+      PM.ingredient("pm-gunpowder", 3),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results =
@@ -2386,7 +2386,7 @@ data:extend({
       PM.ingredient("pm-phosgene", 10, "fluid"),
       PM.ingredient("piercing-shotgun-shell", 1),
       PM.ingredient("pm-thallium-plate", 6),
-      PM.ingredient("pm-flourine", 4),
+      PM.ingredient("pm-gunpowder", 3),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results =
@@ -2440,7 +2440,7 @@ data:extend({
       PM.ingredient("pm-heavy-piercing-shotgun-slug", 1),
       PM.ingredient("pm-lead-plate", 4),
       PM.ingredient("pm-tungsten-plate", 8),
-      PM.ingredient("pm-gunpowder", 2),
+      PM.ingredient("pm-gunpowder", 4),
       PM.ingredient("pm-polyethylene-plastic", 4)
     },
     results =
@@ -2461,8 +2461,7 @@ data:extend({
       PM.ingredient("pm-phosgene", 20, "fluid"),
       PM.ingredient("pm-heavy-piercing-shotgun-slug", 1),
       PM.ingredient("pm-thallium-plate", 6),
-      PM.ingredient("pm-flourine", 4),
-      PM.ingredient("pm-gunpowder", 2),
+      PM.ingredient("pm-gunpowder", 4),
       PM.ingredient("pm-polyethylene-plastic", 4)
     },
     results =
