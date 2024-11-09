@@ -1308,7 +1308,8 @@ data:extend({
     name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/NiMoP.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-catalysts",
+    order = "h",
     stack_size = 50
   },
   {

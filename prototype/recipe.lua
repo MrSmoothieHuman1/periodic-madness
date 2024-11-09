@@ -2320,6 +2320,8 @@ data:extend({
     enabled = false,
     energy_required = 60,
     category = "crafting-with-fluid",
+    subgroup = "pm-catalysts",
+    order = "ha",
     allow_productivity = true,
     ingredients =
     {
