@@ -296,9 +296,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-borosilicate-glassing",
+    group = "intermediate-products",
+    order = "da",
+  },
+  {
+    type = "item-subgroup",
     name = "pm-wires",
     group = "intermediate-products",
-    order = "d",
+    order = "db",
   },
   {
     type = "item-subgroup",

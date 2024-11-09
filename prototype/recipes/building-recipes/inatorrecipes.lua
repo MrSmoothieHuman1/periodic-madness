@@ -85,8 +85,8 @@ data:extend({
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
-    subgroup = "pm-glassing",
-    order = "e",
+    subgroup = "pm-borosilicate-glassing",
+    order = "a",
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 10),
@@ -108,8 +108,8 @@ data:extend({
     enabled = false,
     energy_required = 9,
     category = "pm-coldening",
-    subgroup = "pm-glassing",
-    order = "f",
+    subgroup = "pm-borosilicate-glassing",
+    order = "b",
     ingredients =
     {
       PM.ingredient("pm-molten-borosilicate-glass", 5, "fluid"),
@@ -137,8 +137,9 @@ data:extend({
     },
     enabled = false,
     energy_required = 1,
-    main_product = "pm-glass-fibers",
     category = "pm-moltening",
+    subgroup = "pm-borosilicate-glassing",
+    order = "d",
     ingredients =
     {
       PM.ingredient("pm-molten-borosilicate-glass", 2.5, "fluid"),

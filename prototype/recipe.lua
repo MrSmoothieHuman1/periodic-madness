@@ -2306,6 +2306,8 @@ data:extend({
     energy_required = 1.5,
     enabled = false,
     allow_productivity = true,
+    subgroup = "pm-borosilicate-glassing",
+    order = "c",
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 4)
