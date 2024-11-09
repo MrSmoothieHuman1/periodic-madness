@@ -903,6 +903,97 @@ data:extend({
 
   {
     type = "item-subgroup",
+    name = "pm-actinium-ac",
+    group = "pm-actinides",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-thorium-ac",
+    group = "pm-actinides",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-protactinium-ac",
+    group = "pm-actinides",
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-uranium-ac",
+    group = "pm-actinides",
+    order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-neptunium-ac",
+    group = "pm-actinides",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-plutonium-ac",
+    group = "pm-actinides",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-americium-ac",
+    group = "pm-actinides",
+    order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-curium-ac",
+    group = "pm-actinides",
+    order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-berkelium-ac",
+    group = "pm-actinides",
+    order = "i"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-californium-ac",
+    group = "pm-actinides",
+    order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-einsteinium-ac",
+    group = "pm-actinides",
+    order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-fermium-ac",
+    group = "pm-actinides",
+    order = "m"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-mendelevium-ac",
+    group = "pm-actinides",
+    order = "n"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-nobelium-ac",
+    group = "pm-actinides",
+    order = "o"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-lawrencium-ac",
+    group = "pm-actinides",
+    order = "p"
+  },
+
+  {
+    type = "item-subgroup",
     name = "pm-multimetal-tubing",
     group = "pm-multimetal-items",
     order = "a"

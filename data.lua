@@ -88,6 +88,7 @@ require("prototype.elements.007-nitrogen")
 require("prototype.elements.008-oxygen")
 require("prototype.elements.002-helium")
 require("prototype.elements.018-argon")
+require("prototype.elements.092-uranium")
 
 require("prototype.entity")
 require("prototype.remnants")
