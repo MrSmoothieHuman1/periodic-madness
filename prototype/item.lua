@@ -1706,6 +1706,16 @@ data.raw["item"]["copper-cable"].subgroup = "pm-wires"
 data.raw["item"]["copper-cable"].order = "a"
 data.raw["recipe"]["copper-cable"].subgroup = "pm-wires"
 data.raw["recipe"]["copper-cable"].order = "aa"
+data.raw["item"]["iron-stick"].subgroup = "pm-intermediates"
+data.raw["item"]["iron-stick"].order = "a"
+data.raw["recipe"]["iron-stick"].subgroup = "pm-intermediates"
+data.raw["recipe"]["iron-stick"].order = "aa"
+data.raw["item"]["electric-engine"].subgroup = "pm-intermediates"
+data.raw["recipe"]["electric-engine"].subgroup = "pm-intermediates"
+data.raw["item"]["engine-unit"].subgroup = "pm-intermediates"
+data.raw["recipe"]["engine-unit"].subgroup = "pm-intermediates"
+data.raw["item"]["low-density-structure"].subgroup = "pm-intermediates"
+data.raw["recipe"]["low-density-structure"].subgroup = "pm-intermediates"
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it

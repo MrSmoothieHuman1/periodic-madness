@@ -808,6 +808,7 @@ data:extend({
     name = "pm-heavy-lube-solar-cell",
     energy_required = 4,
     category = "crafting-with-fluid",
+    subgroup = "pm-intermediates",
     show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
@@ -1248,6 +1249,7 @@ data:extend({
     energy_required = 8,
     enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "pm-intermediates",
     allow_productivity = true,
     ingredients =
     {
