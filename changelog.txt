@@ -106,6 +106,7 @@ Date: 2024-08-09
     - Nerfed the chances of getting the science mold back from 75% to 66%.
     - Revamped the intermediates tab structure, to make it not a botched mess.
     - Changed Vinyl bromide PMMA plastic to take 20 methyl methacrylate instead of 25.
+    - Changed all module lights glass input from 6 to 16.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
@@ -831,7 +832,7 @@ Date: 2024-03-13
     - Made Stack Inserter Stacking an infinite technology. Have fun.
     - Changed building recipes to take MultiMetal items. It'll most likely change in the future, but baby steps.
     - Cave Jhonson here, we got the boys down at the lab to cover glass bottles with plastic, which give double the science per science. thats 65% more science, per science.
-    - Added 900% more changelog, per changeglog.
+    - Added 900% more changelog, per changelog.
     - Hydrogen Fuel Cells got a new icon, thanks to Arch in the discord server!
     - Completely changed how modules are made, using module casings and lights that are fitted with circuits to create modules instead of just shoving some circuits into a box.
     - Added greenhouses and wood growth.
