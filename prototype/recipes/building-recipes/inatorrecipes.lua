@@ -197,7 +197,7 @@ data:extend({
     {
       PM.ingredient("pm-molten-copper", 2.5, "fluid"),
       PM.ingredient("pm-germanium-ore", 3),
-      PM.ingreident("pm-borax", 2)
+      PM.ingredient("pm-borax", 2)
     },
     results =
     {
@@ -233,7 +233,7 @@ data:extend({
       PM.ingredient("pm-molten-gold", 2.5, "fluid"),
       PM.ingredient("pm-palladium-plate", 2),
       PM.ingredient("pm-cobalt-plate", 3),
-      PM.ingreident("pm-borax", 2)
+      PM.ingredient("pm-borax", 2)
     },
     results =
     {
@@ -268,7 +268,7 @@ data:extend({
     {
       PM.ingredient("pm-molten-indium", 2.5, "fluid"),
       PM.ingredient("pm-thallium-plate", 3),
-      PM.ingreident("pm-borax", 2)
+      PM.ingredient("pm-borax", 2)
     },
     results =
     {
@@ -304,7 +304,7 @@ data:extend({
       PM.ingredient("pm-molten-iron", 2.5, "fluid"),
       PM.ingredient("pm-silicon-ore", 3),
       PM.ingredient("pm-coke", 2),
-      PM.ingreident("pm-borax", 2)
+      PM.ingredient("pm-borax", 2)
     },
     results =
     {
@@ -340,7 +340,7 @@ data:extend({
       PM.ingredient("pm-molten-brass", 2.5, "fluid"),
       PM.ingredient("pm-silicon-ore", 3),
       PM.ingredient("pm-antimony-ore", 3),
-      PM.ingreident("pm-borax", 2)
+      PM.ingredient("pm-borax", 2)
     },
     results =
     {
