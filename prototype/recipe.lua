@@ -297,9 +297,10 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-carbon", 50),
-      PM.ingredient("iron-plate", 2),
+      PM.ingredient("pm-nickel", 4),
     },
-    results = {
+    results = 
+    {
       PM.product("pm-air-filter", 2)
     }
   },
