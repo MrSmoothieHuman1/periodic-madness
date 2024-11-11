@@ -539,7 +539,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "smelting",
-    order = "A",
+    subgroup = "pm-greenhousing-rnm",
+    order = "da",
     ingredients =
     {
       PM.ingredient("pm-wood-strips", 10)
@@ -555,7 +556,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "pm-alloying",
-    order = "Aa",
+    subgroup = "pm-greenhousing-rnm",
+    order = "db",
     ingredients =
     {
       PM.ingredient("coal", 8),
