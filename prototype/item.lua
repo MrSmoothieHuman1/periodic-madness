@@ -77,8 +77,8 @@ data:extend({
     name = "pm-borosilicate-glass",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
-    subgroup = "pm-glassing",
-    order = "e",
+    subgroup = "pm-borosilicate-glassing",
+    order = "a",
     stack_size = 50
   },
   {

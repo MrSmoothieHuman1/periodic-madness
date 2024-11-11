@@ -1844,8 +1844,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-plastic-science-bottle",
-    subgroup = "pm-plastic-science-pack",
-    order = "a",
+    subgroup = "pm-plastic-science-process",
+    order = "c",
     enabled = false,
     energy_required = 3,
     main_product = "pm-plastic-science-bottle",
