@@ -3245,21 +3245,27 @@ data:extend({
     {
       {
         production_type = "input",
+        pipe_pictures = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {0, -1}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
+        pipe_pictures = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {0, 1}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
+        pipe_pictures = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {-1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
     },
     energy_source =
@@ -3274,7 +3280,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 500,
         filter = "water",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = { 1, 0}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {1, 0}}},
       },
     },
     energy_usage = "400kW",
@@ -7671,6 +7677,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   },
   {
     production_type = "output",
+    pipe_pictures = assembler3pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
@@ -7678,6 +7685,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   },
   {
     production_type = "input",
+    pipe_pictures = assembler3pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
@@ -7685,6 +7693,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   },
   {
     production_type = "output",
+    pipe_pictures = assembler3pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
