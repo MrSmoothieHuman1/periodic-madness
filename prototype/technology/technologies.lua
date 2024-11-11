@@ -184,15 +184,11 @@ data:extend({
       PM.unlock_recipe("pm-rubber-vulcanisation")
     },
     prerequisites = {"pm-resin-processing"},
-    unit =
+    research_trigger = 
     {
-      count = 100,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
-      },
-      time = 30
+      type = "craft-fluid",
+      fluid = "pm-resin",
+      amount = 100
     }
   },
   {
@@ -205,15 +201,11 @@ data:extend({
       PM.unlock_recipe("pm-resin-to-pheonlic-resin")
     },
     prerequisites = {"pm-resin-processing"},
-    unit =
+    research_trigger = 
     {
-      count = 100,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
-      },
-      time = 25
+      type = "craft-fluid",
+      fluid = "pm-resin",
+      amount = 100
     }
   },
   {

@@ -600,12 +600,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("water", 100, "fluid"),
+      PM.ingredient("water", 75, "fluid"),
       PM.ingredient("pm-wood-strips", 10)
     },
     results =
     {
-      PM.product("pm-resin", 50, "fluid")
+      PM.product("pm-resin", 25, "fluid")
     }
   },
   {

@@ -110,6 +110,7 @@ Date: 2024-08-09
     - Changed all module lights glass input from 6 to 16.
     - Changed the first air filter recipe to take 4 nickel plates instead of 2 iron plates.
     - Changed the first air filter recipe to take 1.5s, instead of 0.5s.
+    - Scaled down the first resin forming recipe by half. (50 > 25)
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
