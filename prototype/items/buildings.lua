@@ -67,8 +67,8 @@ data:extend({
     name = "pm-high-density-transport-belt",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/high-density-transport-belt.png",
-    subgroup = "belt",
-    order = "b",
+    subgroup = "pm-belts",
+    order = "e",
     place_result = "pm-high-density-transport-belt",
     stack_size = 100
   },
@@ -77,8 +77,8 @@ data:extend({
     name = "pm-high-density-underground-belt",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/high-density-underground-belt.png",
-    subgroup = "belt",
-    order = "c",
+    subgroup = "pm-undergrounds",
+    order = "e",
     place_result = "pm-high-density-underground-belt",
     stack_size = 50
   },
@@ -87,8 +87,8 @@ data:extend({
     name = "pm-high-density-splitter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/high-density-splitter.png",
-    subgroup = "belt",
-    order = "x",
+    subgroup = "pm-splitters",
+    order = "e",
     place_result = "pm-high-density-splitter",
     stack_size = 100
   },
