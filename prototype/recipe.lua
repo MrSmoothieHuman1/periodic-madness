@@ -290,6 +290,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-air-filter",
+    energy_required = 1.5,
     subgroup = "pm-air-filters-rnm",
     order = "a",
     show_amount_in_title = true,
@@ -297,11 +298,30 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-carbon", 50),
-      PM.ingredient("pm-nickel", 4),
+      PM.ingredient("pm-nickel-plate", 4),
     },
     results = 
     {
       PM.product("pm-air-filter", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-rubber-air-filter",
+    energy_required = 1,
+    subgroup = "pm-air-filters-rnm",
+    order = "ab",
+    show_amount_in_title = true,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-glass-fibers", 5),
+      PM.ingredient("pm-vulcanised-rubber", 4),
+      PM.ingredient("steel-plate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-air-filter", 4)
     }
   },
   {

@@ -285,7 +285,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-glass-fibers"),
       PM.unlock_recipe("pm-fiberoptic-cable"),
-      PM.unlock_recipe("pm-glass-resmelting")
+      PM.unlock_recipe("pm-glass-resmelting"),
+      PM.unlock_recipe("pm-rubber-air-filter")
     },
     prerequisites = {"lamp", "pm-pheonlic-resin-processing", "pm-gold-processing"},
     unit =

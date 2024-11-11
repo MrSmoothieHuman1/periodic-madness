@@ -26,6 +26,9 @@ for index, force in pairs(game.forces) do
                                                 recipes["pm-lapis-lazuli-crystal-slurry"].enabled = true
                                                 if technologies["pm-crystal-seeding"].researched then 
                                                     recipes["pm-garnet-crystal-slurry"].enabled = true
+                                                    if technologies["pm-fiberoptics"].researched then 
+                                                        recipes["pm-rubber-air-filter"].enabled = true
+                                                    end
                                                 end
                                             end
                                         end
