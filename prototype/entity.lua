@@ -3246,14 +3246,20 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 100,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = { 0, -1 }}},
+        volume = 1000,
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {0, -1}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 100,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = { 0, 1 }}},
+        volume = 1000,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {0, 1}}},
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {1, 0}}},
       },
     },
     energy_source =
@@ -7309,7 +7315,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/chemical-plant-2.png",
     icon_size = 64,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {mining_time = 0.375, result = "chemical-plant-2"},
+    minable = {mining_time = 0.375, result = "pm-chemical-plant-2"},
     max_health = 650,
     corpse = "chemical-plant-remnants",
     dying_explosion = "chemical-plant-explosion",
