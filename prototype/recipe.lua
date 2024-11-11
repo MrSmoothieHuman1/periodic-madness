@@ -671,6 +671,7 @@ data:extend({
     name = "basic-motor",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/basic-motor.png",
+    subgroup = "pm-intermediates",
     energy_required = 1,
     ingredients =
     {
@@ -686,6 +687,7 @@ data:extend({
     name = "pm-mini-motor",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/mini-motor.png",
+    subgroup = "pm-intermediates",
     energy_required = 2,
     enabled = false,
     show_amount_in_title = true,

@@ -1716,6 +1716,8 @@ data.raw["item"]["engine-unit"].subgroup = "pm-intermediates"
 data.raw["recipe"]["engine-unit"].subgroup = "pm-intermediates"
 data.raw["item"]["low-density-structure"].subgroup = "pm-intermediates"
 data.raw["recipe"]["low-density-structure"].subgroup = "pm-intermediates"
+data.raw["item"]["flying-robot-frame"].subgroup = "pm-intermediates"
+data.raw["recipe"]["flying-robot-frame"].subgroup = "pm-intermediates"
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it

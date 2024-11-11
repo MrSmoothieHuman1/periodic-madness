@@ -989,8 +989,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-chemical-plant-2",
-    subgroup = "pm-oil-machines",
-    order = "e"
+    subgroup = "pm-oil-machine",
+    order = "e",
     enabled = false,
     energy_required = 2.5,
     ingredients = 
