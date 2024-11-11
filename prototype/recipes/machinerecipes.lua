@@ -255,7 +255,7 @@ data:extend({
     type = "recipe",
     name = "pm-fluid-catalyst-cracker",
     subgroup = "pm-oil-machine",
-    order = "d",
+    order = "ca",
     enabled = false,
     energy_required = 4,
     ingredients =
@@ -989,6 +989,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-chemical-plant-2",
+    subgroup = "pm-oil-machines",
+    order = "e"
     enabled = false,
     energy_required = 2.5,
     ingredients = 

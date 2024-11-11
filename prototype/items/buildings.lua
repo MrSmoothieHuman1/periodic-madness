@@ -554,6 +554,8 @@ data:extend({
     name = "pm-chemical-plant-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/chemical-plant-2.png",
+    subgroup = "pm-oil-machine",
+    order = "ca",
     place_result = "pm-chemical-plant-2",
     stack_size = 50
   },
