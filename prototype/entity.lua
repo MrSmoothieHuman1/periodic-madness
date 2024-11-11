@@ -3628,30 +3628,34 @@ data:extend({
     {
       {
         production_type = "input",
+        pipe_pictures = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
       },
       {
 
         production_type = "input",
+        pipe_pictures = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},
       },
       {
 
         production_type = "output",
+        pipe_pictures = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
       },
       {
 
         production_type = "output",
+        pipe_pictures = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {2, 0} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 0} }},
       },
     },
   },
