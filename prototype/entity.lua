@@ -7309,7 +7309,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/chemical-plant-2.png",
     icon_size = 64,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {mining_time = 0.375, result = "chemical-plant"},
+    minable = {mining_time = 0.375, result = "chemical-plant-2"},
     max_health = 650,
     corpse = "chemical-plant-remnants",
     dying_explosion = "chemical-plant-explosion",
