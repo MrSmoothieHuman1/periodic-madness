@@ -771,7 +771,7 @@ data.raw["technology"]["military-2"].effects =
   PM.unlock_recipe("pm-heavy-piercing-shotgun-slug")
 }
 data.raw["technology"]["military-2"].unit.count = 50
-data.raw["technology"]["research-speed-2"].unit.ingredients
+data.raw["technology"]["research-speed-2"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
