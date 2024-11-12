@@ -757,8 +757,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ruby.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ruby.png",   size = 64, scale = 0.5 },
-      {filename = "__periodic-madness__/graphics/icons/ruby-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ruby.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ruby-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-ruby-ptm",
     order = "a",
@@ -786,7 +786,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/emerald.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/emerald.png",   size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/emerald.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/emerald-2.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/emerald-3.png",   size = 64, scale = 0.5},
     },
     subgroup = "pm-emerald-ptm",
     order = "a",
@@ -799,7 +801,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/sapphire.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/sapphire.png",   size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/sapphire.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/sapphire-2.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/sapphire-3.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/sapphire-4.png",   size = 64, scale = 0.5},
     },
     subgroup = "pm-sapphire-ptm",
     order = "a",
@@ -812,8 +817,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/lapis-lazuli.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli.png",   size = 64, scale = 0.5 },
-      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-lapis-lazuli-ptm",
     order = "a",
@@ -826,9 +831,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/garnet.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/garnet.png",   size = 64, scale = 0.5 },
-      {filename = "__periodic-madness__/graphics/icons/garnet-2.png", size = 64, scale = 0.5 },
-      {filename = "__periodic-madness__/graphics/icons/garnet-3.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/garnet.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/garnet-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/garnet-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-garnet-ptm",
     order = "a",
@@ -839,6 +844,11 @@ data:extend({
     name = "pm-ruby-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ruby-dust.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ruby-dust.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ruby-dust-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-ruby-ptm",
     order = "b",
     stack_size = 100
@@ -848,6 +858,11 @@ data:extend({
     name = "pm-citrine-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/citrine-dust.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/citrine-dust.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/citrine-dust-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-citrine-ptm",
     order = "b",
     stack_size = 100
@@ -857,6 +872,11 @@ data:extend({
     name = "pm-emerald-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/emerald-dust.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/emerald-dust.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/emerald-dust-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-emerald-ptm",
     order = "b",
     stack_size = 100
@@ -866,6 +886,11 @@ data:extend({
     name = "pm-sapphire-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sapphire-dust.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/sapphire-dust.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/sapphire-dust-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-sapphire-ptm",
     order = "b",
     stack_size = 100
@@ -875,6 +900,11 @@ data:extend({
     name = "pm-lapis-lazuli-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/lapis-lazuli-dust.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli-dust.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli-dust-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-lapis-lazuli-ptm",
     order = "b",
     stack_size = 100
@@ -884,6 +914,11 @@ data:extend({
     name = "pm-garnet-dust",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/garnet-dust.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/garnet-dust.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/garnet-dust-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-garnet-ptm",
     order = "b",
     stack_size = 100
