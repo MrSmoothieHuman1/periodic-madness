@@ -755,6 +755,11 @@ data:extend({
     name = "pm-ruby",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ruby.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ruby.png",   size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ruby-2.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-ruby-ptm",
     order = "a",
     stack_size = 100
@@ -779,6 +784,10 @@ data:extend({
     name = "pm-emerald",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/emerald.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/emerald.png",   size = 64, scale = 0.5 },
+    },
     subgroup = "pm-emerald-ptm",
     order = "a",
     stack_size = 100
@@ -788,6 +797,10 @@ data:extend({
     name = "pm-sapphire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sapphire.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/sapphire.png",   size = 64, scale = 0.5 },
+    },
     subgroup = "pm-sapphire-ptm",
     order = "a",
     stack_size = 100
@@ -797,6 +810,11 @@ data:extend({
     name = "pm-lapis-lazuli",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/lapis-lazuli.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli.png",   size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/lapis-lazuli-2.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-lapis-lazuli-ptm",
     order = "a",
     stack_size = 100
@@ -806,6 +824,12 @@ data:extend({
     name = "pm-garnet",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/garnet.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/garnet.png",   size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/garnet-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/garnet-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-garnet-ptm",
     order = "a",
     stack_size = 100
