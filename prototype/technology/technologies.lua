@@ -3602,7 +3602,7 @@ data:extend({
     type = "technology",
     name = "pm-gemstone-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/gemstone-processing.png",
     effects = 
     {
       PM.unlock_recipe("pm-gem-sorting"),
