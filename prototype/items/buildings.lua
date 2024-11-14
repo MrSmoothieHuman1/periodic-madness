@@ -589,6 +589,16 @@ data:extend({
     place_result = "pm-advanced-splitter",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-electric-furnace-2",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/fast-splitter.png",
+    subgroup = "smelting-machine",
+    order = "f",
+    place_result = "pm-electric-furnace-2",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

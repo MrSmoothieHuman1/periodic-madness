@@ -6013,6 +6013,7 @@ data:extend({
       specific_heat = "1MJ",
       max_transfer = "1GW",
       minimum_glow_temperature = 150,
+      min_temperature_gradient = 2,
       connections =
       {
         {
@@ -7336,7 +7337,6 @@ data:extend({
     fast_replaceable_group = "pm-chemical-plant",
     module_slots = 4,
     allowed_effects = PM.all_effects(),
-
     animation = make_4way_animation_from_spritesheet({
       layers =
       {
@@ -7597,18 +7597,203 @@ data:extend({
       rotate = false,
       orientation_to_variation = true
     }
-  }
+  },
+  {
+    type = "furnace",
+    name = "pm-electric-furnace-2",
+    icon = "__base__/graphics/icons/electric-furnace.png",
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {mining_time = 0.3, result = "pm-electric-furnace-2"},
+    fast_replaceable_group = "furnace",
+    max_health = 450,
+    corpse = "electric-furnace-remnants",
+    dying_explosion = "electric-furnace-explosion",
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 95
+      }
+    },
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    damaged_trigger_effect = hit_effects.entity(),
+    module_slots = 3,
+    icon_draw_specification = {shift = {0, -0.1}},
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.8}}
+    },
+    allowed_effects = PM.all_effects(),
+    crafting_categories = {"smelting"},
+    result_inventory_size = 1,
+    crafting_speed = 2.5,
+    energy_usage = "180kW",
+    source_inventory_size = 1,
+    energy_source =
+    {
+      type = "heat",
+      default_temperature = 15,
+      max_temperature = 1500,
+      min_working_temperature = 500,
+      specific_heat = "1MJ",
+      max_transfer = "10MJ",
+      connections =
+      {
+        {
+          position = {1, 1.5},
+          direction = defines.direction.south --[[@as int]]
+        },
+        {
+          position = {-1, 1.5},
+          direction = defines.direction.south --[[@as int]]
+        },
+        {
+          position = {1, -1.5},
+          direction = defines.direction.north --[[@as int]]
+        },
+        {
+          position = {-1, -1.5},
+          direction = defines.direction.north --[[@as int]]
+        },
+      },
+    },
+    impact_category = "metal",
+    open_sound = sounds.electric_large_open,
+    close_sound = sounds.electric_large_close,
+    working_sound =
+    {
+      sound =
+      {
+        filename = "__base__/sound/electric-furnace.ogg",
+        volume = 0.85,
+        modifiers = volume_multiplier("main-menu", 4.2),
+        advanced_volume_control = {attenuation = "exponential"}
+      },
+      max_sounds_per_type = 4,
+      audible_distance_modifier = 0.7,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+    graphics_set =
+    {
+      animation =
+      {
+        layers =
+        {
+          {
+            filename = "__base__/graphics/entity/electric-furnace/electric-furnace.png",
+            priority = "high",
+            width = 239,
+            height = 219,
+            shift = util.by_pixel(0.75, 5.75),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/electric-furnace/electric-furnace-shadow.png",
+            priority = "high",
+            width = 227,
+            height = 171,
+            draw_as_shadow = true,
+            shift = util.by_pixel(11.25, 7.75),
+            scale = 0.5
+          }
+        }
+      },
+      working_visualisations =
+      {
+        {
+          fadeout = true,
+          animation =
+          {
+            layers =
+            {
+              {
+                filename = "__base__/graphics/entity/electric-furnace/electric-furnace-heater.png",
+                priority = "high",
+                width = 60,
+                height = 56,
+                frame_count = 12,
+                animation_speed = 0.5,
+                draw_as_glow = true,
+                shift = util.by_pixel(1.75, 32.75),
+                scale = 0.5
+              },
+              {
+                filename = "__base__/graphics/entity/electric-furnace/electric-furnace-light.png",
+                blend_mode = "additive",
+                width = 202,
+                height = 202,
+                repeat_count = 12,
+                draw_as_glow = true,
+                shift = util.by_pixel(1, 0),
+                scale = 0.5,
+              },
+            }
+          },
+        },
+        {
+          fadeout = true,
+          animation =
+          {
+            filename = "__base__/graphics/entity/electric-furnace/electric-furnace-ground-light.png",
+            blend_mode = "additive",
+            width = 166,
+            height = 124,
+            draw_as_light = true,
+            shift = util.by_pixel(3, 69),
+            scale = 0.5,
+          },
+        },
+        {
+          animation =
+          {
+            filename = "__base__/graphics/entity/electric-furnace/electric-furnace-propeller-1.png",
+            priority = "high",
+            width = 37,
+            height = 25,
+            frame_count = 4,
+            animation_speed = 0.5,
+            shift = util.by_pixel(-20.5, -18.5),
+            scale = 0.5
+          }
+        },
+        {
+          animation =
+          {
+            filename = "__base__/graphics/entity/electric-furnace/electric-furnace-propeller-2.png",
+            priority = "high",
+            width = 23,
+            height = 15,
+            frame_count = 4,
+            animation_speed = 0.5,
+            shift = util.by_pixel(3.5, -38),
+            scale = 0.5
+          }
+        }
+      },
+      water_reflection =
+      {
+        pictures =
+        {
+          filename = "__base__/graphics/entity/electric-furnace/electric-furnace-reflection.png",
+          priority = "extra-high",
+          width = 24,
+          height = 24,
+          shift = util.by_pixel(5, 40),
+          variation_count = 1,
+          scale = 5
+        },
+        rotate = false,
+        orientation_to_variation = false
+      }
+    }
+  },
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
 -- selection_box = {{-2.2, -2.2}, {2.5, 2.6}}, first two are up and down, third is left, fourth is right
-
-
-
-
-local PowerPoleEnlargementPills = data.raw["electric-pole"]["big-electric-pole"]
-PowerPoleEnlargementPills.maximum_wire_distance = 32
-
+--14/11/24 well this became fucking useless
 
 local ShorePumpBanishment = data.raw["recipe"]["offshore-pump"]
 ShorePumpBanishment.enabled = false
@@ -7792,7 +7977,8 @@ data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-pla
 
 data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "115kW"
 
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 500
+data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 750
+data.raw["heat-pipe"]["heat-pipe"].min_temperature_gradient = 1.75
 data.raw["heat-pipe"]["heat-pipe"].map_color = {r = 0.6, g = 0.506, b = 0.353}
 
 data.raw["combat-robot"]["defender"].time_to_live = 60 * 60
