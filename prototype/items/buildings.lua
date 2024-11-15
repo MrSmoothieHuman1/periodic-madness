@@ -638,3 +638,7 @@ data.raw["item"]["express-underground-belt"].order = "d"
 data.raw["item"]["express-splitter"].subgroup = "pm-splitters"
 data.raw["item"]["express-splitter"].order = "d"
 
+data.raw["item"]["heat-pipe"].subgroup = "pm-heat-machines",
+data.raw["item"]["heat-pipe"].order = "b"
+data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines",
+data.raw["recipe"]["heat-pipe"].order = "b"
