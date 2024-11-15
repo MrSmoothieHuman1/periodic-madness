@@ -7641,20 +7641,20 @@ data:extend({
       connections =
       {
         {
-          position = {1, 1.5},
+          position = {0, 1},
           direction = defines.direction.south --[[@as int]]
         },
         {
-          position = {-1, 1.5},
-          direction = defines.direction.south --[[@as int]]
-        },
-        {
-          position = {1, -1.5},
+          position = {0, -1},
           direction = defines.direction.north --[[@as int]]
         },
         {
-          position = {-1, -1.5},
-          direction = defines.direction.north --[[@as int]]
+          position = {1, 0},
+          direction = defines.direction.east --[[@as int]]
+        },
+        {
+          position = {-1, 0},
+          direction = defines.direction.west --[[@as int]]
         },
       },
     },
