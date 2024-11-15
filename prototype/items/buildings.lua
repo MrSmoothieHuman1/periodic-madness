@@ -593,7 +593,7 @@ data:extend({
     type = "item",
     name = "pm-electric-furnace-2",
     icon_size = 64,
-    icon = "__base__/graphics/icons/fast-splitter.png",
+    icon = "__base__/graphics/icons/electric-furnace.png",
     subgroup = "smelting-machine",
     order = "f",
     place_result = "pm-electric-furnace-2",

@@ -3661,6 +3661,48 @@ data:extend({
   },
   {
     type = "technology",
+    name = "pm-laboratory",
+    icon_size = 256,
+    icon = "__base__/graphics/technology/electricity-consumers.png",
+    effects = 
+    {
+      PM.unlock_recipe("lab"),
+    },
+    prerequisites = {},
+    research_trigger = 
+    {
+      type = "craft-item",
+      item = "pm-glass-pane",
+      count = 8
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-material-processing-2",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-technology.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-electric-furnace-2"),
+      PM.unlock_recipe("pm-heat-pipe-3")
+    },
+    prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing"},
+    unit =
+      {
+        count = 300,
+        ingredients = 
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+        },
+        time = 60,
+      }
+  },
+  {
+    type = "technology",
     name = "pm-research-productivity-1",
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
@@ -3753,23 +3795,7 @@ data:extend({
     },
     upgrade = true
   },
-  {
-    type = "technology",
-    name = "pm-laboratory",
-    icon_size = 256,
-    icon = "__base__/graphics/technology/electricity-consumers.png",
-    effects = 
-    {
-      PM.unlock_recipe("lab"),
-    },
-    prerequisites = {},
-    research_trigger = 
-    {
-      type = "craft-item",
-      item = "pm-glass-pane",
-      count = 8
-    }
-  },
+  
 
   {
     type = "technology",
