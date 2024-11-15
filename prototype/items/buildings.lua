@@ -599,6 +599,16 @@ data:extend({
     place_result = "pm-electric-furnace-2",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-heat-pipe-3",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-3.png",
+    subgroup = "pm-heat-machines",
+    order = "c",
+    place_result = "pm-heat-pipe-3",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
