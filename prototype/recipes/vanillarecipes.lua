@@ -531,11 +531,11 @@ data.raw["recipe"]["poison-capsule"].ingredients =
 }
 data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-pipe"].order = "b"
-data.raw["recipe"]["heat-pipe"].results = { PM.product("heat-pipe", 2) }
+data.raw["recipe"]["heat-pipe"].results = {PM.product("heat-pipe", 2)}
 data.raw["recipe"]["heat-pipe"].ingredients =
 {
   PM.ingredient("pm-heat-pipe-1", 1),
-  PM.ingredient("pm-molten-framing", 20),
+  PM.ingredient("pm-molten-framing", 10),
   PM.ingredient("pm-stainless-steel-alloy", 5),
   PM.ingredient("pm-silver-plate", 5)
 }

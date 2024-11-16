@@ -820,9 +820,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-heating-plating", 20),
+      PM.ingredient("pm-heating-plating", 10),
       PM.ingredient("pm-aluminium-plate", 8),
-      PM.ingredient("copper-plate", 10)
+      PM.ingredient("copper-plate", 5)
     },
     results =
     {

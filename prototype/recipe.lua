@@ -3406,7 +3406,8 @@ data:extend({
     {
       PM.ingredient("pm-francium", 3, "fluid"),
       PM.ingredient("pm-science-bottle", 5),
-      PM.ingredient("pm-chlorine", 50, "fluid")
+      PM.ingredient("pm-transition-metals-ore", 15),
+      PM.ingredient("pm-post-transition-metals-ore", 15)
     },
     results =
     {

@@ -112,6 +112,7 @@ Date: 2024-08-09
     - Changed the first air filter recipe to take 1.5s, instead of 0.5s.
     - Scaled down the first resin forming recipe by half. (50 > 25)
     - Changed heat pipe 2's max temperature from 500 to 750.
+    - Halved the cost of heat pipe 1's and 2's, as i forsee a lot of telescoping in the near future.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

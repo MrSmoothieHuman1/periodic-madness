@@ -97,6 +97,7 @@ require("prototype.robots")
 require("prototype.itemgroups")
 require("prototype.equipment")
 require("prototype.equipment-grid")
+require("prototype.heat-pipes")
 
 require("compatibility.testcompat")
 require("compatibility.icon-badges")
