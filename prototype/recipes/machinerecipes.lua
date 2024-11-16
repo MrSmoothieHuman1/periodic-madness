@@ -1055,6 +1055,38 @@ data:extend({
       PM.product("pm-advanced-splitter", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-heat-pipe-3",
+    subgroup = "pm-heat-machines",
+    order = "c",
+    energy_required = 2,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("heat-pipe", 1),
+      PM.ingredient("pm-silicon-ore", 5),
+      PM.ingredient("pm-stainless-steel-alloy", 10)
+    },
+    results =
+    {
+      PM.product("pm-heat-pipe-3", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-electric-furance-2",
+    subgroup = "pm-smelting-machines",
+    order = "e",
+    energy_required = 5,
+    enabled = false,
+    ingredients = 
+    {
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("electric-furnace", 1),
+      PM.ingredient("pm-molten-framing", 12)
+    }
+  }
 
 } --[[@as data.RecipePrototype[] ]])
 
