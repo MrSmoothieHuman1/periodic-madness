@@ -1085,6 +1085,10 @@ data:extend({
       PM.ingredient("processing-unit", 3),
       PM.ingredient("electric-furnace", 1),
       PM.ingredient("pm-molten-framing", 12)
+    },
+    results = 
+    {
+      PM.product("pm-electric-furnace-2", 1)
     }
   }
 
