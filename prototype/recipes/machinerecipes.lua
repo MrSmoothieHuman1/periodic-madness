@@ -1075,7 +1075,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-electric-furance-2",
+    name = "pm-electric-furnace-2",
     subgroup = "smelting-machine",
     order = "e",
     energy_required = 5,

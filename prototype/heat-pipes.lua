@@ -120,7 +120,7 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-3.png",
         icon_size = 64,
         flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 0.15, result = "pm-heat-pipe-5"},
+        minable = { mining_time = 0.15, result = "pm-heat-pipe-3"},
         max_health = 400,
         corpse = "heat-pipe-remnants",
         dying_explosion = "heat-pipe-explosion",
