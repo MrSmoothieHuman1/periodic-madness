@@ -3678,7 +3678,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-advanced-material-processing-2",
+    name = "pm-advanced-material-processing-3",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
@@ -3687,7 +3687,7 @@ data:extend({
       PM.unlock_recipe("pm-electric-furnace-2"),
       PM.unlock_recipe("pm-heat-pipe-3")
     },
-    prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing"},
+    prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing-2", "pm-oil-fractions-burning"},
     unit =
       {
         count = 300,
@@ -3701,6 +3701,28 @@ data:extend({
         },
         time = 60,
       }
+  },
+  {
+    type = "technology",
+    name = "pm-oil-fractions-burning",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("heat-pipe")
+    },
+    prerequisites = {"advanced-oil-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 30
+    }
   },
   {
     type = "technology",
