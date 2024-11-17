@@ -7513,8 +7513,9 @@ data:extend({
     },
     allowed_effects = PM.all_effects(),
     crafting_categories = {"smelting"},
+    effect_receiver = {base_effect = { productivity = 0.15}},
     result_inventory_size = 1,
-    crafting_speed = 2.5,
+    crafting_speed = 3,
     energy_usage = "180kW",
     source_inventory_size = 1,
     energy_source =
