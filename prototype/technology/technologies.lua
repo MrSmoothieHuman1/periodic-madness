@@ -3684,6 +3684,7 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-heat-furnace"),
+      PM.unlock_recipe("pm-electric-furnace-2"),
       PM.unlock_recipe("pm-heat-pipe-3")
     },
     prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing"},

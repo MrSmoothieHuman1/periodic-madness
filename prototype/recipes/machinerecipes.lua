@@ -1084,13 +1084,33 @@ data:extend({
     {
       PM.ingredient("processing-unit", 3),
       PM.ingredient("electric-furnace", 1),
-      PM.ingredient("pm-molten-framing", 12)
+      PM.ingredient("pm-molten-framing", 12),
+      PM.ingredient("pm-tungsten-plate", 6)
     },
     results = 
     {
       PM.product("pm-heat-furnace", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-electric-furnace-2",
+    subgroup = "smelting-machine",
+    order = "e",
+    energy_required = 5,
+    enabled = false,
+    ingredients = 
+    {
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("electric-furnace", 1),
+      PM.ingredient("pm-molten-framing", 12),
+      PM.ingredient("pm-tungsten-plate", 6)
+    },
+    results = 
+    {
+      PM.product("pm-heat-furnace", 1)
+    }
+  },
 
 } --[[@as data.RecipePrototype[] ]])
 
