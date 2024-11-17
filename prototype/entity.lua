@@ -7486,7 +7486,7 @@ data:extend({
   },
   {
     type = "furnace",
-    name = "pm-electric-furnace-2",
+    name = "pm-heat-furnace",
     icon = "__base__/graphics/icons/electric-furnace.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.3, result = "pm-electric-furnace-2"},

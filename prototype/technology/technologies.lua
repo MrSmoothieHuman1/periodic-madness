@@ -3680,10 +3680,10 @@ data:extend({
     type = "technology",
     name = "pm-advanced-material-processing-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-technology.png",
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-      PM.unlock_recipe("pm-electric-furnace-2"),
+      PM.unlock_recipe("pm-heat-furnace"),
       PM.unlock_recipe("pm-heat-pipe-3")
     },
     prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing"},

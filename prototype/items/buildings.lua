@@ -591,12 +591,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-electric-furnace-2",
+    name = "pm-heat-furnace",
     icon_size = 64,
     icon = "__base__/graphics/icons/electric-furnace.png",
     subgroup = "smelting-machine",
     order = "f",
-    place_result = "pm-electric-furnace-2",
+    place_result = "pm-heat-furnace",
     stack_size = 100
   },
   {
