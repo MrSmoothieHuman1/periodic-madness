@@ -7695,7 +7695,7 @@ data:extend({
       },
       {
         type = "impact",
-        decrease = 2,
+        decrease = 3,
         percent = 35
       }
     },
@@ -7712,7 +7712,7 @@ data:extend({
     crafting_categories = {"smelting"},
     result_inventory_size = 1,
     crafting_speed = 2,
-    energy_usage = "220W",
+    energy_usage = "220kW",
     source_inventory_size = 1,
     energy_source =
     {
