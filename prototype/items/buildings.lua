@@ -601,6 +601,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-electric-furnace-2",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/electric-furnace.png",
+    subgroup = "smelting-machine",
+    order = "e",
+    place_result = "pm-electric-furnace-2",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "pm-heat-pipe-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-3.png",
