@@ -6,7 +6,7 @@ data:extend({
     type = "item",
     name = "pm-titanium-oxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/titanium-oxide.png",
+    icon = "__periodic-madness__/graphics/icons/ores/titanium-oxide.png",
     subgroup = "pm-titanium-tm",
     order = "b",
     stack_size = 100
@@ -15,7 +15,7 @@ data:extend({
     type = "item",
     name = "pm-titanium-chloride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/titanium-chloride.png",
+    icon = "__periodic-madness__/graphics/icons/ores/titanium-chloride.png",
     subgroup = "pm-titanium-tm",
     order = "c",
     stack_size = 100

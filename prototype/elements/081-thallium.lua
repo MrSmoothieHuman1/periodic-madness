@@ -14,7 +14,7 @@ data:extend({
     type = "item",
     name = "pm-thallium-sulfate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/thallium-sulfate.png",
+    icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
     subgroup = "pm-thallium-ptm",
     order = "b",
     stack_size = 200
