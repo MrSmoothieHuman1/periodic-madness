@@ -1530,13 +1530,48 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sea-water.png",
     default_temperature = 15,
+    auto_barrel = false,
     base_color = {r = 0.3, g = 0.69, b = 0.98},
     flow_color = {r = 0.3, g = 0.69, b = 0.98}
+  },
+  {
+    type = "fluid",
+    name = "pm-silane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/silane.png",
+    subgroup = "pm-silicon-mt",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.968, g = 0.68, b = 1},
+    flow_color = {r = 0.968, g = 0.68, b = 1}
+  },
+  {
+    type = "fluid",
+    name = "pm-silicon-tetrachloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/silicon-tetrachloride.png",
+    subgroup = "pm-silicon-mt",
+    order = "a",
+    default_temperature = 15,
+    auto_barrel = false,
+    base_color = {r = 0.968, g = 0.68, b = 1},
+    flow_color = {r = 0.968, g = 0.68, b = 1}
+  },
+  {
+    type = "fluid",
+    name = "pm-trichlorosilane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/trichlorosilane.png",
+    subgroup = "pm-silicon-mt",
+    order = "a",
+    default_temperature = 15,
+    auto_barrel = false,
+    base_color = {r = 0.968, g = 0.68, b = 1},
+    flow_color = {r = 0.968, g = 0.68, b = 1}
   },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
-
 data.raw["fluid"]["light-oil"].auto_barrel = false
 data.raw["fluid"]["petroleum-gas"].auto_barrel = false
 data.raw["fluid"]["heavy-oil"].auto_barrel = false
