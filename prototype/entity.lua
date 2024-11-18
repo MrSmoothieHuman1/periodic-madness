@@ -6036,10 +6036,10 @@ data:extend({
     },
     heat_buffer =
     {
-      max_temperature = 1000,
+      max_temperature = 2500,
       specific_heat = "10MJ",
       max_transfer = "10GW",
-      minimum_glow_temperature = 350,
+      minimum_glow_temperature = 500,
       connections =
       {
         {
