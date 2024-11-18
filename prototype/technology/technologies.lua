@@ -2054,7 +2054,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/polonium-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-heat-pipe-1"),
+      PM.unlock_recipe("heat-pipe"),
       PM.unlock_recipe("heat-exchanger"),
       PM.unlock_recipe("pm-hydrogen-gas-ionizing"),
       PM.unlock_recipe("pm-cyclotron"),
@@ -2065,7 +2065,7 @@ data:extend({
       PM.unlock_recipe("pm-polonium-fuel-cell"),
       PM.unlock_recipe("pm-polonium-cell-reprocessing")
     },
-    prerequisites = {"pm-radiation-resistant-multimetals"},
+    prerequisites = {"pm-radiation-resistant-multimetals", "pm-oil-fraction-burning"},
     unit =
     {
       count = 150,
@@ -3685,7 +3685,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-heat-furnace"),
       PM.unlock_recipe("pm-electric-furnace-2"),
-      PM.unlock_recipe("pm-heat-pipe-3")
+      PM.unlock_recipe("pm-heat-pipe-3"),
+      PM.unlock_recipe("pm-heat-pipe-2"),
     },
     prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing-2", "pm-oil-fractions-burning"},
     unit =
