@@ -2055,7 +2055,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("heat-pipe"),
-      PM.unlock_recipe("heat-exchanger-2"),
+      PM.unlock_recipe("pm-heat-exchanger-2"),
       PM.unlock_recipe("pm-hydrogen-gas-ionizing"),
       PM.unlock_recipe("pm-cyclotron"),
       PM.unlock_recipe("pm-bismuth-proton-bombardment"),
@@ -2065,7 +2065,7 @@ data:extend({
       PM.unlock_recipe("pm-polonium-fuel-cell"),
       PM.unlock_recipe("pm-polonium-cell-reprocessing")
     },
-    prerequisites = {"pm-radiation-resistant-multimetals", "pm-oil-fraction-burning"},
+    prerequisites = {"pm-radiation-resistant-multimetals", "pm-oil-fractions-burning"},
     unit =
     {
       count = 150,
