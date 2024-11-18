@@ -6034,16 +6034,6 @@ data:extend({
         }
       }
     },
-    working_light_picture =
-    {
-      filename = "__base__/graphics/entity/nuclear-reactor/reactor-lights-color.png",
-      blend_mode = "additive",
-      draw_as_glow = true,
-      width = 320,
-      height = 320,
-      scale = 0.5,
-      shift = { -0.03125, -0.1875 },
-    },
     heat_buffer =
     {
       max_temperature = 1000,
