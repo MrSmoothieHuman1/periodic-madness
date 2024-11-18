@@ -3710,7 +3710,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-      PM.unlock_recipe("heat-pipe")
+      PM.unlock_recipe("pm-heat-pipe-1")
     },
     prerequisites = {"advanced-oil-processing"},
     unit =
