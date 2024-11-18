@@ -2055,7 +2055,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("heat-pipe"),
-      PM.unlock_recipe("heat-exchanger"),
+      PM.unlock_recipe("heat-exchanger-2"),
       PM.unlock_recipe("pm-hydrogen-gas-ionizing"),
       PM.unlock_recipe("pm-cyclotron"),
       PM.unlock_recipe("pm-bismuth-proton-bombardment"),
@@ -3710,7 +3710,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-      PM.unlock_recipe("pm-heat-pipe-1")
+      PM.unlock_recipe("pm-heat-pipe-1"),
+      PM.unlock_recipe("heat-exchanger"),
+      PM.unlock_recipe("steam-turbine")
     },
     prerequisites = {"advanced-oil-processing"},
     unit =
