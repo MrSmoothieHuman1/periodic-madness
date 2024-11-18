@@ -5674,7 +5674,7 @@ data:extend({
     },
     collision_box = { { -1.29, -0.79 }, { 1.29, 0.79 } },
     selection_box = { { -1.5, -1 }, { 1.5, 1 } },
-    target_temperature = 1000,
+    target_temperature = 1500,
     fluid_box =
     {
       volume = 200,
@@ -5702,11 +5702,11 @@ data:extend({
     energy_source =
     {
       type = "heat",
-      max_temperature = 2000,
+      max_temperature = 2500,
       specific_heat = "1MJ",
       max_transfer = "2GW",
-      min_working_temperature = 500,
-      minimum_glow_temperature = 250,
+      min_working_temperature = 750,
+      minimum_glow_temperature = 500,
       connections =
       {
         {
@@ -8021,7 +8021,10 @@ data.raw["transport-belt"]["express-transport-belt"].next_upgrade = "pm-high-den
 data.raw["boiler"]["heat-exchanger"].energy_consumption = "5.82MW"
 data.raw["boiler"]["heat-exchanger"].fast_replaceable_group = "pm-heat-exchangers"
 data.raw["boiler"]["heat-exchanger"].next_upgrade = "pm-heat-exchanger-2"
-data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 240
+data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 500
+data.raw["boiler"]["heat-exchanger"].energy_source.minimum_glow_temperature = 250
+data.raw["boiler"]["heat-exchanger"].energy_source.max_temperature = 750
+data.raw["boiler"]["heat-exchanger"].target_temperature = 500
 
 data.raw["assembling-machine"]["chemical-plant"].module_slots = 2
 data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-chemical-plant"
