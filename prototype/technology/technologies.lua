@@ -3686,7 +3686,7 @@ data:extend({
       PM.unlock_recipe("pm-heat-furnace"),
       PM.unlock_recipe("pm-electric-furnace-2"),
       PM.unlock_recipe("pm-heat-pipe-3"),
-      PM.unlock_recipe("pm-heat-pipe-2"),
+      PM.unlock_recipe("heat-pipe"),
     },
     prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing-2", "pm-oil-fractions-burning"},
     unit =
