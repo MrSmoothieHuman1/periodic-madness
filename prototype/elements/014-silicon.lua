@@ -11,6 +11,7 @@ data:extend({
             {filename = "__periodic-madness__/graphics/icons/ores/low-quality-quartzite.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/low-quality-quartzite-2.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/low-quality-quartzite-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/low-quality-quartzite-4.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-silicon-mt",
         order = "a",
@@ -49,7 +50,12 @@ data:extend({
         type = "item",
         name = "pm-low-quality-polysilicon",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/low-polysilicon.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/low-polysilicon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/low-polyilicon-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-silicon-mt",
         order = "d",
         stack_size = 400
@@ -58,7 +64,12 @@ data:extend({
         type = "item",
         name = "pm-medium-quality-polysilicon",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/med-polysilicon.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/med-polysilicon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/med-polyilicon-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-silicon-mt",
         order = "e",
         stack_size = 300
@@ -67,7 +78,12 @@ data:extend({
         type = "item",
         name = "pm-high-quality-polysilicon",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/high-polysilicon.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/high-polysilicon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/high-polyilicon-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-silicon-mt",
         order = "f",
         stack_size = 200
@@ -76,7 +92,7 @@ data:extend({
         type = "item",
         name = "pm-polysilicon-rod",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
         subgroup = "pm-silicon-mt",
         order = "g",
         stack_size = 10

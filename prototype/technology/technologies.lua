@@ -3404,7 +3404,7 @@ data:extend({
     type = "technology",
     name = "pm-silicon-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/silicon-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-quartzite-leeching"),
