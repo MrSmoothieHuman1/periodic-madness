@@ -159,8 +159,8 @@ data:extend({
         main_product = "pm-trichlorosilane",
         ingredients = 
         {
-            PM.ingredient("ferrosilicon", 6),
-            PM.ingredient("pm-hydrogen-chloride", 60, "fluid")
+            PM.ingredient("pm-ferrosilicon", 6),
+            PM.ingredient("pm-hudrochloric-acid", 60, "fluid")
         },
         results = 
         {
