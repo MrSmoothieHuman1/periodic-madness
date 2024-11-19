@@ -3605,7 +3605,7 @@ data:extend({
           {"pm-post-transition-metal-science-pack", 1},
           {"pm-metalloid-science-pack", 1},
         },
-        time = 60,
+        time = 80,
       }
   },
   {
