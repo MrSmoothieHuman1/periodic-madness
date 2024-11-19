@@ -54,7 +54,7 @@ data:extend({
         pictures = 
         {
             {filename = "__periodic-madness__/graphics/icons/low-polysilicon.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/low-polyilicon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/low-polysilicon-2.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-silicon-mt",
         order = "d",
@@ -68,7 +68,7 @@ data:extend({
         pictures = 
         {
             {filename = "__periodic-madness__/graphics/icons/med-polysilicon.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/med-polyilicon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/med-polysilicon-2.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-silicon-mt",
         order = "e",
@@ -82,7 +82,7 @@ data:extend({
         pictures = 
         {
             {filename = "__periodic-madness__/graphics/icons/high-polysilicon.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/high-polyilicon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/high-polysilicon-2.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-silicon-mt",
         order = "f",
