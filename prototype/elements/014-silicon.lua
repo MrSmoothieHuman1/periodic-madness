@@ -74,7 +74,7 @@ data:extend({
     },
     {
         type = "item",
-        name = "pm-polysilicon",
+        name = "pm-polysilicon-rod",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-silicon-mt",
@@ -160,7 +160,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-ferrosilicon", 6),
-            PM.ingredient("pm-hudrochloric-acid", 60, "fluid")
+            PM.ingredient("pm-hydrochloric-acid", 60, "fluid")
         },
         results = 
         {
@@ -211,7 +211,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-indsutrial-grade-silicon",
+        name = "pm-industrial-grade-silicon",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/recipes/industrial-grade-silicon.png",
         enabled = false,
@@ -308,7 +308,7 @@ data:extend({
         order = "j",
         ingredients = 
         {
-            PM.ingredient("pm-high-quality-silicon", 4),
+            PM.ingredient("pm-high-quality-polysilicon", 4),
             PM.ingredient("steam", 75, "fluid"),
         },
         results = 

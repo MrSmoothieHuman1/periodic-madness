@@ -3408,8 +3408,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-quartzite-leeching"),
-      PM.unlock_recipe("pm-high-quality-quartzite-leeching"),
-      PM.unlock_recipe("pm-low-quality-quartzite-leeching"),
+      PM.unlock_recipe("pm-high-quality-quartzite-seperation"),
+      PM.unlock_recipe("pm-low-quality-quartzite-seperation"),
       PM.unlock_recipe("pm-trichlorosilane"),
       PM.unlock_recipe("pm-silicon-tetrachloride-handling"),
       PM.unlock_recipe("pm-silane"),
