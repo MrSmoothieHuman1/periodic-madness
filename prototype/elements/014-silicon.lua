@@ -6,6 +6,12 @@ data:extend({
         name = "pm-low-quality-quartzite",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/ores/low-quality-quartzite.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/low-quality-quartzite.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/low-quality-quartzite-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/low-quality-quartzite-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-silicon-mt",
         order = "a",
         stack_size = 200
@@ -15,6 +21,12 @@ data:extend({
         name = "pm-high-quality-quartzite",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/ores/high-quality-quartzite.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/high-quality-quartzite.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/high-quality-quartzite-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/high-quality-quartzite-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-silicon-mt",
         order = "b",
         stack_size = 200
@@ -23,7 +35,12 @@ data:extend({
         type = "item",
         name = "pm-ferrosilicon",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/ferrosilicon.png",
+        icon = "__periodic-madness__/graphics/icons/ferrosilicon.png",
+        pictures = 
+        {
+            {filename = "__periodic-madness__/graphics/icons/ferrosilicon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ferrosilicon-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-silicon-mt",
         order = "c",
         stack_size = 100
@@ -32,7 +49,7 @@ data:extend({
         type = "item",
         name = "pm-low-quality-polysilicon",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/low-quality-polysilicon.png",
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-silicon-mt",
         order = "d",
         stack_size = 400
@@ -41,7 +58,7 @@ data:extend({
         type = "item",
         name = "pm-medium-quality-polysilicon",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/medium-quality-polysilicon.png",
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-silicon-mt",
         order = "e",
         stack_size = 300
@@ -50,15 +67,26 @@ data:extend({
         type = "item",
         name = "pm-high-quality-polysilicon",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/high-quality-polysilicon.png",
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-silicon-mt",
         order = "f",
         stack_size = 200
+    },
+    {
+        type = "item",
+        name = "pm-polysilicon",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-silicon-mt",
+        order = "g",
+        stack_size = 10
     },
 
     {
         type = "recipe",
         name = "pm-quartzite-leeching",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/recipes/quartzite-leeching.png",
         enabled = false,
         energy_required = 12,
         category = "pm-acids",
@@ -79,6 +107,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-high-quality-quartzite-seperation",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/recipes/high-quartzite-seperation.png",
         enabled = false,
         energy_required = 6,
         category = "chemistry",
@@ -94,12 +124,15 @@ data:extend({
         results = 
         {
             PM.product("pm-ferrosilicon", 3),
-            PM.product_range("pm-carbon-monoxide", 5, 8)
+            PM.product_range("pm-carbon-monoxide", 5, 8),
+            PM.catalyst_range("pm-filled-flux-container", 1, 3, 3),
         }
     },
     {
         type = "recipe",
         name = "pm-low-quality-quartzite-seperation",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/recipes/low-quartzite-seperation.png",
         enabled = false,
         energy_required = 6,
         category = "pm-crushing",
@@ -123,6 +156,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "d",
+        main_product = "pm-trichlorosilane",
         ingredients = 
         {
             PM.ingredient("ferrosilicon", 6),
@@ -162,6 +196,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "e",
+        main_product = "pm-silane",
         ingredients = 
         {
             PM.ingredient("pm-trichlorosilane", 10,"fluid"),
@@ -176,6 +211,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-indsutrial-grade-silicon",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/recipes/industrial-grade-silicon.png",
         enabled = false,
         energy_required = 3,
         category = "chemistry",
@@ -203,6 +240,7 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "g",
         allow_productivity = true,
+        main_product = "pm-low-quality-polysilicon",
         ingredients = 
         {
             PM.ingredient("pm-silane", 15, "fluid"),
@@ -224,6 +262,7 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "h",
         allow_productivity = true,
+        main_product = "pm-medium-quality-polysilicon",
         ingredients = 
         {
             PM.ingredient("pm-silane", 10, "fluid"),
@@ -245,6 +284,7 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "i",
         allow_productivity = true,
+        main_product = "pm-high-quality-polysilicon",
         ingredients = 
         {
             PM.ingredient("pm-silane", 5, "fluid"),
@@ -268,7 +308,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-high-quality-silicon", 4),
-            PM.ingredient("steam", 50, "fluid"),
+            PM.ingredient("steam", 75, "fluid"),
         },
         results = 
         {
