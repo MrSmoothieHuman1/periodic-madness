@@ -101,7 +101,7 @@ data:extend({
         results = 
         {
             PM.product_range("pm-high-quality-quartzite", 2, 6),
-            PM.product_range("pm-high-quality-quartzite", 4, 12),
+            PM.product_range("pm-low-quality-quartzite", 4, 12),
         }
     },
     {
