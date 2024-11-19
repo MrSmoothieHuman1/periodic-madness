@@ -204,48 +204,7 @@ data:extend({
       PM.product("pm-processing-breadboard", 2)
     },
   },
-  {
-    type = "recipe",
-    name = "pm-coke-iron-smelting",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/coke-iron.png",
-    category = "pm-alloying",
-    energy_required = 4,
-    enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
-    always_show_made_in = true,
-    ingredients =
-    {
-      PM.ingredient("pm-coke", 2),
-      PM.ingredient("iron-ore", 2)
-    },
-    results =
-    {
-      PM.product("iron-plate", 4)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-coke-zinc-smelting",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/coke-zinc.png",
-    category = "pm-alloying",
-    energy_required = 4,
-    enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
-    always_show_made_in = true,
-    ingredients =
-    {
-      PM.ingredient("pm-coke", 2),
-      PM.ingredient("pm-zinc-ore", 2)
-    },
-    results =
-    {
-      PM.product("pm-zinc-plate", 4)
-    }
-  },
+  
   {
     type = "recipe",
     name = "pm-aluminium-fiberoptic-cable",
