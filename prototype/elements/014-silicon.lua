@@ -124,7 +124,7 @@ data:extend({
         results = 
         {
             PM.product("pm-ferrosilicon", 3),
-            PM.product_range("pm-carbon-monoxide", 5, 8),
+            PM.product_range("pm-carbon-monoxide", 5, 8, "fluid"),
             PM.catalyst_range("pm-filled-flux-container", 1, 3, 3),
         }
     },
