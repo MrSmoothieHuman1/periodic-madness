@@ -176,6 +176,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "da",
+        main_product = "pm-tricholorosilane",
         ingredients = 
         {
             PM.ingredient("pm-silicon-tetrachloride", 10, "fluid"),
