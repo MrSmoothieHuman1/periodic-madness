@@ -185,7 +185,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-trichlorosilane", 4, 7),
+            PM.product_range("pm-trichlorosilane", 4, 7, "fluid"),
             PM.catalyst_range("pm-catalyst-container", 1, 2, 2)
         }
     },
@@ -200,12 +200,12 @@ data:extend({
         main_product = "pm-silane",
         ingredients = 
         {
-            PM.ingredient("pm-trichlorosilane", 10,"fluid"),
+            PM.ingredient("pm-trichlorosilane", 10, "fluid"),
             PM.ingredient("pm-aluminium-plate", 10) --catalyst for hard mode
         },
         results = 
         {
-            PM.ingredient("pm-silane", 5),
+            PM.ingredient("pm-silane", 5, "fluid"),
             PM.product_range("pm-silicon-tetrachloride", 2.5, 5, "fluid")
         }
     },
