@@ -3407,7 +3407,17 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-quartzite-leeching"),
+      PM.unlock_recipe("pm-high-quality-quartzite-leeching"),
+      PM.unlock_recipe("pm-low-quality-quartzite-leeching"),
+      PM.unlock_recipe("pm-trichlorosilane"),
+      PM.unlock_recipe("pm-silicon-tetrachloride-handling"),
+      PM.unlock_recipe("pm-silane"),
+      PM.unlock_recipe("pm-industrial-grade-silicon"),
+      PM.unlock_recipe("pm-low-quality-polysilicon"),
+      PM.unlock_recipe("pm-low-to-med-quality-polysilicon"),
+      PM.unlock_recipe("pm-med-to-high-quality-polysilicon"),
+      PM.unlock_recipe("pm-silicon-rod-forming"),
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
