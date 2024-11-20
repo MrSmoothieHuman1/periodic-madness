@@ -175,7 +175,7 @@ data:extend({
         main_product = "pm-trichlorosilane",
         ingredients = 
         {
-            PM.ingredient("pm-ferrosilicon", 6),
+            PM.ingredient("pm-ferrosilicon", 3),
             PM.ingredient("pm-hydrochloric-acid", 60, "fluid")
         },
         results = 
@@ -201,7 +201,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-trichlorosilane", 4, 7, "fluid"),
+            PM.product_range("pm-trichlorosilane", 4, 8, "fluid"),
             PM.catalyst_range("pm-catalyst-container", 1, 2, 2)
         }
     },
@@ -221,7 +221,7 @@ data:extend({
         },
         results = 
         {
-            PM.ingredient("pm-silane", 5, "fluid"),
+            PM.ingredient("pm-silane", 10, "fluid"),
             PM.product_range("pm-silicon-tetrachloride", 2.5, 5, "fluid")
         }
     },
