@@ -1399,7 +1399,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-barely-etched-silicon-wafer",
+    name = "pm-etched-silicon-wafer",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
     subgroup = "pm-silicon-mt",

@@ -3121,9 +3121,10 @@ data:extend({
     subgroup = "pm-silicon-mt",
     order = "k",
     allow_productivity = true,
+    main_product = "pm-silicon-wafer",
     ingredients = 
     {
-      PM.ingredient("pm-silicon-rod", 1),
+      PM.ingredient("pm-polysilicon-rod", 1),
       PM.ingredient("pm-saw", 1)
     },
     results = 
