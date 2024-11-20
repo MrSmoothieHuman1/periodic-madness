@@ -39,8 +39,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ferrosilicon.png",
         pictures = 
         {
-            {filename = "__periodic-madness__/graphics/icons/ferrosilicon.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ferrosilicon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ferrosilicon.png", size = 64, scale = 0.57},
+            {filename = "__periodic-madness__/graphics/icons/ferrosilicon-2.png", size = 64, scale = 0.57},
         },
         subgroup = "pm-silicon-mt",
         order = "c",
@@ -53,8 +53,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/low-polysilicon.png",
         pictures = 
         {
-            {filename = "__periodic-madness__/graphics/icons/low-polysilicon.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/low-polysilicon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/low-polysilicon.png", size = 64, scale = 0.57},
+            {filename = "__periodic-madness__/graphics/icons/low-polysilicon-2.png", size = 64, scale = 0.57},
         },
         subgroup = "pm-silicon-mt",
         order = "d",
@@ -67,8 +67,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/med-polysilicon.png",
         pictures = 
         {
-            {filename = "__periodic-madness__/graphics/icons/med-polysilicon.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/med-polysilicon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/med-polysilicon.png", size = 64, scale = 0.57},
+            {filename = "__periodic-madness__/graphics/icons/med-polysilicon-2.png", size = 64, scale = 0.57},
         },
         subgroup = "pm-silicon-mt",
         order = "e",
@@ -81,8 +81,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/high-polysilicon.png",
         pictures = 
         {
-            {filename = "__periodic-madness__/graphics/icons/high-polysilicon.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/high-polysilicon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/high-polysilicon.png", size = 64, scale = 0.57},
+            {filename = "__periodic-madness__/graphics/icons/high-polysilicon-2.png", size = 64, scale = 0.57},
         },
         subgroup = "pm-silicon-mt",
         order = "f",
@@ -104,7 +104,7 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/quartzite-leeching.png",
         enabled = false,
-        energy_required = 12,
+        energy_required = 10,
         category = "pm-acids",
         subgroup = "pm-silicon-mt",
         order = "a",
@@ -117,7 +117,7 @@ data:extend({
         results = 
         {
             PM.product_range("pm-high-quality-quartzite", 2, 6),
-            PM.product_range("pm-low-quality-quartzite", 4, 12),
+            PM.product_range("pm-low-quality-quartzite", 2, 6),
         }
     },
     {
@@ -296,7 +296,7 @@ data:extend({
         type = "recipe",
         name = "pm-med-to-high-quality-polysilicon",
         enabled = false,
-        energy_required = 20,
+        energy_required = 15,
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "i",
@@ -318,7 +318,7 @@ data:extend({
         type = "recipe",
         name = "pm-silicon-rod-forming",
         enabled = false,
-        energy_required = 18,
+        energy_required = 15,
         category = "pm-moltening",
         subgroup = "pm-silicon-mt",
         order = "j",
