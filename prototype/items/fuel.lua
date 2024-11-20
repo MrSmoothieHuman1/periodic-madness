@@ -22,7 +22,7 @@ data:extend({
     fuel_top_speed_multiplier = 1.3,
     subgroup = "pm-fuels",
     order = "c",
-    spent_result = "pm-empty-fuel-canister",
+    burnt_result = "pm-empty-fuel-canister",
     stack_size = 100
   },
   {
@@ -36,7 +36,7 @@ data:extend({
     fuel_top_speed_multiplier = 2,
     subgroup = "pm-fuels",
     order = "d",
-    spent_result = "pm-empty-fuel-canister",
+    burnt_result = "pm-empty-fuel-canister",
     stack_size = 10
   },
   {
@@ -50,7 +50,7 @@ data:extend({
     fuel_top_speed_multiplier = 1.05,
     subgroup = "pm-fuels",
     order = "e",
-    spent_result = "pm-empty-fuel-canister",
+    burnt_result = "pm-empty-fuel-canister",
     stack_size = 200
   },
   {
@@ -64,7 +64,7 @@ data:extend({
     fuel_top_speed_multiplier = 1.05,
     subgroup = "pm-fuels",
     order = "f",
-    spent_result = "pm-empty-fuel-canister",
+    burnt_result = "pm-empty-fuel-canister",
     stack_size = 200
   },
   {
@@ -108,7 +108,7 @@ data:extend({
     order = "b",
     stack_size = 10
   },
-})
+}--[[@as data.ItemPrototype[] ]])
 
 data.raw["item"]["rocket-fuel"].subgroup = "pm-fuels"
 data.raw["item"]["rocket-fuel"].order = "g"
