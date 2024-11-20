@@ -1379,6 +1379,33 @@ data:extend({
     subgroup = "pm-intermediates",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-silicon-wafer",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
+    subgroup = "pm-silicon-mt",
+    order = "h",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-barely-etched-silicon-wafer",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
+    subgroup = "pm-silicon-mt",
+    order = "i",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-barely-etched-silicon-wafer",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
+    subgroup = "pm-silicon-mt",
+    order = "ia",
+    stack_size = 50
+  },
 
   {
     type = "item",

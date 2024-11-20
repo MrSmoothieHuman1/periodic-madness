@@ -3113,6 +3113,62 @@ data:extend({
       PM.product_range_chance("water", 12, 25, 0.5, "fluid"),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-silicon-rod-cutting",
+    enabled = false,
+    energy_required = 2.5,
+    subgroup = "pm-silicon-mt",
+    order = "k",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-silicon-rod", 1),
+      PM.ingredient("pm-saw", 1)
+    },
+    results = 
+    {
+      PM.product("pm-silicon-wafer", 10),
+      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ferric-silicon-wafer-etching",
+    enabled = false,
+    energy_required = 7.5,
+    category = "pm-advanced-crafting-with-fluid",
+    subgroup = "pm-silicon-mt",
+    order = "l",
+    ingredients = 
+    {
+      PM.ingredient("pm-silicon-wafer", 1),
+      PM.ingredient("pm-phosphoric-acid", 10, "fluid"),
+      PM.ingredient("pm-ferric-chloride", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-barely-etched-silicon-wafer", 1),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-phosphoric-silicon-wafer-etching",
+    enabled = false,
+    energy_required = 7.5,
+    category = "pm-advanced-crafting-with-fluid",
+    subgroup = "pm-silicon-mt",
+    order = "la",
+    ingredients = 
+    {
+      PM.ingredient("pm-silicon-wafer", 1),
+      PM.ingredient("pm-phosphoric-acid", 10, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-etched-silicon-wafer", 1),
+    }
+  },
 
   {
     type = "recipe",
