@@ -1,7 +1,7 @@
 -- Make this a singleton
 -- eg, there will only ever be one copy
-if ... ~= "__periodic-madness__/library" then
-  return require("__periodic-madness__/library")
+if ... ~= "library" then
+  return require("library")
 end
 
 ---@alias item_type "fluid"|"item"

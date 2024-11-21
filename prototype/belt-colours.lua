@@ -1,5 +1,5 @@
-local PM = require("__periodic-madness__/library")
-local colors = require("__periodic-madness__/colours")
+local PM = require("library")
+local colors = require("colours")
 local order_table = colors.orders
 local colour_table = colors.values
 

@@ -1,5 +1,5 @@
 ---@diagnostic disable: assign-type-mismatch, missing-fields
-local colours = require("__periodic-madness__/colours")
+local colours = require("colours")
 local colour_list = colours.list
 
 local is_debug = not not mods["debugadapter"]
