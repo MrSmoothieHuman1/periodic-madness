@@ -1,5 +1,5 @@
 if not mods["bzfoundry"] then return end
-local PM = require("__periodic-madness__/library.lua")
+local PM = require("library.lua")
 
 data.raw["recipe"]["woodcoke"] = nil
 

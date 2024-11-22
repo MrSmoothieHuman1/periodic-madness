@@ -1,4 +1,4 @@
-local PM = require("__periodic-madness__/library")
+local PM = require("library")
 --all recipes related to atmospheric condensation
 
 data:extend({

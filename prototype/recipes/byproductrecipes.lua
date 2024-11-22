@@ -1,4 +1,4 @@
-local PM = require("__periodic-madness__/library")
+local PM = require("library")
 --for any recipes that relate to byproducts
 
 data:extend({

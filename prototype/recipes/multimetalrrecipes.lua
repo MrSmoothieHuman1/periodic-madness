@@ -1,4 +1,4 @@
-local PM = require("__periodic-madness__/library")
+local PM = require("library")
 --im so sorry gal-man
 
 data:extend({

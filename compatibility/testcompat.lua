@@ -1,5 +1,5 @@
 if not mods["filter-long-inserter"] then return end
-local PM = require("__periodic-madness__/library")
+local PM = require("library")
 
 data.raw["recipe"]["fi-filter-long-handed-inserter"].hidden = true
 data.raw["technology"]["fi-filter-long-handed-inserter"].hidden = true

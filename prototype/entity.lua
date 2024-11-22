@@ -57,38 +57,39 @@ function pm_electric_mining_drill_horizontal2_animation()
   }
 end
 --This is here because it no longer exists globally
-local fast_belt_animation_set = {animation_set=util.empty_animation(1)}
-local orange_fast_belt_animation_set = {animation_set=util.empty_animation(1)}
--- Commented out because it should get replaced by the coloring code anyways
--- TODO: Remove the files as well?
--- {
---   animation_set =
---   {
---     filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
---     priority = "extra-high",
---     width = 128,
---     height = 128,
---     scale = 0.5,
---     frame_count = 32,
---     direction_count = 20
---   }
--- }
-local high_density_animation_set = {animation_set=util.empty_animation(1)}
--- Commented out because it should get replaced by the coloring code anyways
--- TODO: Remove the files as well?
--- {
---   animation_set =
---   {
---     direction_count = 20,
---     filename =
---     "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-transport-belts/high-density-transport-belt.png",
---     frame_count = 16,
---     height = 128,
---     priority = "extra-high",
---     scale = 0.5,
---     width = 128
---   }
--- }
+local fast_belt_animation_set = {
+  animation_set =
+  {
+    filename = "__base__/graphics/entity/fast-transport-belt/fast-transport-belt.png",
+    priority = "extra-high",
+    size = 128,
+    scale = 0.5,
+    frame_count = 32,
+    direction_count = 20
+  }
+}
+local orange_fast_belt_animation_set = {
+  animation_set =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
+    priority = "extra-high",
+    size = 128,
+    scale = 0.5,
+    frame_count = 32,
+    direction_count = 20
+  }
+}
+local high_density_animation_set = {
+  animation_set =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/high-density-transport-belts/high-density-transport-belt.png",
+    priority = "extra-high",
+    size = 128,
+    scale = 0.5,
+    frame_count = 16,
+    direction_count = 20,
+  }
+}
 
 data:extend({
 
@@ -1014,7 +1015,7 @@ data:extend({
         sheet =
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-underground-belt/high-density-underground-belt.png",
+          "__periodic-madness__/graphics/entities/buildings/high-density-underground-belt/high-density-underground-belt.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1027,7 +1028,7 @@ data:extend({
         sheet =
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-underground-belt/high-density-underground-belt.png",
+          "__periodic-madness__/graphics/entities/buildings/high-density-underground-belt/high-density-underground-belt.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1039,7 +1040,7 @@ data:extend({
         sheet =
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-underground-belt/high-density-underground-belt.png",
+          "__periodic-madness__/graphics/entities/buildings/high-density-underground-belt/high-density-underground-belt.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1052,7 +1053,7 @@ data:extend({
         sheet =
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-underground-belt/high-density-underground-belt.png",
+          "__periodic-madness__/graphics/entities/buildings/high-density-underground-belt/high-density-underground-belt.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1065,7 +1066,7 @@ data:extend({
         sheet =
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-underground-belt/high-density-underground-belt-structure-back-patch.png",
+          "__periodic-madness__/graphics/entities/buildings/high-density-underground-belt/high-density-underground-belt-structure-back-patch.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1077,7 +1078,7 @@ data:extend({
         sheet =
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-underground-belt/high-density-underground-belt-structure-front-patch.png",
+          "__periodic-madness__/graphics/entities/buildings/high-density-underground-belt/high-density-underground-belt-structure-front-patch.png",
           priority = "extra-high",
           width = 192,
           height = 192,
@@ -1118,7 +1119,7 @@ data:extend({
       north =
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-splitter/high-density-splitter-north.png",
+        "__periodic-madness__/graphics/entities/buildings/high-density-splitter/high-density-splitter-north.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1130,7 +1131,7 @@ data:extend({
       east =
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-splitter/high-density-splitter-east.png",
+        "__periodic-madness__/graphics/entities/buildings/high-density-splitter/high-density-splitter-east.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1142,7 +1143,7 @@ data:extend({
       south =
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-splitter/high-density-splitter-south.png",
+        "__periodic-madness__/graphics/entities/buildings/high-density-splitter/high-density-splitter-south.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1154,7 +1155,7 @@ data:extend({
       west =
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-splitter/high-density-splitter-west.png",
+        "__periodic-madness__/graphics/entities/buildings/high-density-splitter/high-density-splitter-west.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1170,7 +1171,7 @@ data:extend({
       east =
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-splitter/high-density-splitter-east-top_patch.png",
+        "__periodic-madness__/graphics/entities/buildings/high-density-splitter/high-density-splitter-east-top_patch.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -1183,7 +1184,7 @@ data:extend({
       west =
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/high-density-belts/high-density-splitter/high-density-splitter-west-top_patch.png",
+        "__periodic-madness__/graphics/entities/buildings/high-density-splitter/high-density-splitter-west-top_patch.png",
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -8127,6 +8128,10 @@ data.raw["splitter"]["express-splitter"].map_color = blue_belt
 
 data.raw["solar-panel"]["solar-panel"].map_color = {r = 0.356, g = 0.495, b = 0.62}
 
+data.raw["transport-belt"]["fast-transport-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+data.raw["splitter"]["fast-splitter"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+data.raw["underground-belt"]["fast-underground-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+
 data.raw["transport-belt"]["fast-transport-belt"].belt_animation_set = orange_fast_belt_animation_set
 data.raw["splitter"]["fast-splitter"].belt_animation_set = orange_fast_belt_animation_set
 data.raw["splitter"]["fast-splitter"].structure =
@@ -8174,7 +8179,7 @@ data.raw["splitter"]["fast-splitter"].structure =
     frame_count = 32,
     line_length = 8,
     priority = "extra-high",
-    width = 94,
+    width = 90,
     height = 86,
     shift = util.by_pixel(5, 12),
     scale = 0.5
@@ -8187,7 +8192,7 @@ data.raw["splitter"]["fast-splitter"].structure_patch =
   {
     filename =
     "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-east-top_patch.png",
-    frame_count = 32,
+    frame_count = 1,
     line_length = 8,
     priority = "extra-high",
     width = 90,
@@ -8200,7 +8205,7 @@ data.raw["splitter"]["fast-splitter"].structure_patch =
   {
     filename =
     "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-west-top_patch.png",
-    frame_count = 32,
+    frame_count = 1,
     line_length = 8,
     priority = "extra-high",
     width = 94,
