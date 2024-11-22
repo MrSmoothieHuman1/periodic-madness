@@ -48,17 +48,17 @@ data:extend({
   {
     type = "recipe",
     name = "pm-electronic-breadboard",
-    energy_required = 1,
+    energy_required = 2,
     subgroup = "pm-circuits",
     order = "a",
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-nickel-plate", 2),
+      PM.ingredient("pm-nickel-plate", 4),
     },
     results =
     {
-      PM.product("pm-electronic-breadboard", 1)
+      PM.product("pm-electronic-breadboard", 2)
     }
   },
   {
@@ -84,7 +84,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-fluid-circuit-breadboard",
-    energy_required = 1.5,
+    energy_required = 3,
     category = "pm-circuitry",
     subgroup = "pm-circuits",
     order = "d",
@@ -160,7 +160,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-circuit-breadboard",
-    energy_required = 3,
+    energy_required = 6,
     subgroup = "pm-circuits",
     order = "h",
     enabled = false,
@@ -199,7 +199,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-processing-breadboard",
-    energy_required = 6,
+    energy_required = 9,
     category = "crafting-with-fluid",
     subgroup = "pm-circuits",
     order = "k",
@@ -1952,7 +1952,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-circuits",
     order = "m",
-    energy_required = 0.3,
+    energy_required = 0.6,
     allow_productivity = true,
     ingredients =
     {
@@ -1962,7 +1962,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-transistors", 6)
+      PM.product("pm-transistors", 8)
     }
   },
   {
@@ -3144,7 +3144,6 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-silicon-wafer", 1),
-      PM.ingredient("pm-phosphoric-acid", 10, "fluid"),
       PM.ingredient("pm-ferric-chloride", 10, "fluid")
     },
     results = 
@@ -3168,6 +3167,195 @@ data:extend({
     results = 
     {
       PM.product("pm-etched-silicon-wafer", 1),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-electronic-breadboard",
+    enabled = false,
+    energy_required = 1,
+    subgroup = "pm-circuits",
+    order = "aa",
+    allow_productivity = true,
+    show_amount_in_title = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-germanium-ore", 2),
+      PM.ingredient("pm-polyethylene-plastic", 3),
+      PM.ingredient("pm-nickel-plate", 4)
+    },
+    results = 
+    {
+      PM.product("pm-electronic-breadboard", 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-electronic-integrated-circuits",
+    enabled = false,
+    subgroup = "pm-circuits",
+    order = "ba",
+    allow_productivity = true,
+    show_amount_in_title = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-etched-silicon-wafer", 1),
+      PM.ingredient("pm-tin-plate", 4),
+      PM.ingredient("pm-gold-wire", 2)
+    },
+    results = 
+    {
+      PM.product("pm-electronic-integrated-circuits", 9)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-fluid-circuit-breadboard",
+    energy_required = 1.5,
+    category = "pm-circuitry",
+    subgroup = "pm-circuits",
+    order = "da",
+    enabled = false,
+    allow_productivity = true,
+    show_amount_in_title = true,
+    ingredients =
+    {
+      PM.ingredient("pm-electronic-breadboard", 1),
+      PM.ingredient("pm-germanium-ore", 2),
+      PM.ingredient("pm-glass-fibers", 2),
+      PM.ingredient("pm-vulcanised-rubber", 4)
+    },
+    results =
+    {
+      PM.product("pm-fluid-breadboard", 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-fluid-integrated-circuits",
+    energy_required = 1,
+    subgroup = "pm-circuits",
+    order = "fa",
+    show_amount_in_title = true,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-etched-silicon-wafer", 1),
+      PM.ingredient("pm-indium-wire", 2),
+      PM.ingredient("pm-tin-plate", 3),
+      PM.ingredient("pm-titanium-plate", 3),
+    },
+    results =
+    {
+      PM.product("pm-fluid-integrated-circuits", 9)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-advanced-circuit-breadboard",
+    energy_required = 3,
+    subgroup = "pm-circuits",
+    order = "ha",
+    enabled = false,
+    allow_productivity = true,
+    show_amount_in_title = true,
+    ingredients =
+    {
+      PM.ingredient("pm-germanium-ore", 3),
+      PM.ingredient("pm-silver-plate", 6),
+      PM.ingredient("pm-glass-fibers", 6),
+      PM.ingredient("pm-fluid-breadboard", 1),
+    },
+    results = 
+    {
+      PM.product("pm-advanced-circuit-breadboard", 6)
+    },
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-advanced-integrated-circuits",
+    energy_required = 1,
+    subgroup = "pm-circuits",
+    order = "ia",
+    show_amount_in_title = true,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-polytetrafluoroethylene-plastic", 2),
+      PM.ingredient("pm-etched-silicon-wafer", 2),
+      PM.ingredient("pm-indium-wire", 4),
+    },
+    results = 
+    {
+      PM.product("pm-advanced-integrated-circuits", 9)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-processing-breadboard",
+    energy_required = 4.5,
+    category = "pm-advanced-crafting-with-fluid",
+    subgroup = "pm-circuits",
+    order = "ka",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-germanium-ore", 3),
+      PM.ingredient("pm-ferric-chloride", 5, "fluid"),
+      PM.ingredient("pm-boron", 5, "fluid"),
+      PM.ingredient("pm-glass-fibers", 6),
+      PM.ingredient("pm-advanced-circuit-breadboard", 1),
+      PM.ingredient("pm-cobalt-blue", 4)
+    },
+    results = 
+    {
+      PM.product("pm-processing-breadboard", 6)
+    },
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-processing-integrated-circuits",
+    energy_required = 1,
+    subgroup = "pm-circuits",
+    order = "la",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-etched-silicon-wafer", 2),
+      PM.ingredient("pm-polytetrafluoroethylene-plastic", 2),
+      PM.ingredient("pm-titanium-plate", 4),
+      PM.ingredient("pm-gallium-arsenide", 2),
+      PM.ingredient("pm-indium-wire", 3),
+    },
+    results =
+    {
+      PM.product("pm-processing-integrated-circuits", 9)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-semiconductor",
+    enabled = false,
+    energy_required = 3,
+    category = "crafting-with-fluid",
+    subgroup = "pm-circuits",
+    order = "na",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-advanced-integrated-circuits", 3),
+      PM.ingredient("pm-etched-silicon-wafer", 2),
+      PM.ingredient("pm-germanium-ore", 3),
+      PM.ingredient("pm-thallium-plate", 5),
+      PM.ingredient("pm-phosphoric-acid", 6, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-semiconductor", 6)
     }
   },
 
