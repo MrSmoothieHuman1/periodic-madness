@@ -74,7 +74,8 @@ data:extend({
       PM.ingredient("iron-plate", 1),
       PM.ingredient("copper-cable", 1),
     },
-    results = {
+    results = 
+    {
       PM.product("pm-electronic-integrated-circuits", 3)
     }
   },
@@ -3181,7 +3182,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-germanium-ore", 2),
-      PM.ingredient("pm-polyethylene-plastic", 3),
+      PM.ingredient("pm-glass-fibers", 3),
       PM.ingredient("pm-nickel-plate", 4)
     },
     results = 
@@ -3222,7 +3223,7 @@ data:extend({
     {
       PM.ingredient("pm-electronic-breadboard", 1),
       PM.ingredient("pm-germanium-ore", 2),
-      PM.ingredient("pm-glass-fibers", 2),
+      PM.ingredient("pm-glass-fibers", 3),
       PM.ingredient("pm-vulcanised-rubber", 4)
     },
     results =
@@ -3242,9 +3243,9 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-etched-silicon-wafer", 1),
-      PM.ingredient("pm-indium-wire", 2),
-      PM.ingredient("pm-tin-plate", 3),
-      PM.ingredient("pm-titanium-plate", 3),
+      PM.ingredient("pm-gold-wire", 3),
+      PM.ingredient("pm-titanium-plate", 2),
+      PM.ingredient("pm-tin-plate", 2),
     },
     results =
     {
@@ -3263,8 +3264,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-germanium-ore", 3),
-      PM.ingredient("pm-silver-plate", 6),
-      PM.ingredient("pm-glass-fibers", 6),
+      PM.ingredient("pm-palladium-plate", 6),
+      PM.ingredient("pm-glass-fibers", 4),
       PM.ingredient("pm-fluid-breadboard", 1),
     },
     results = 
@@ -3284,8 +3285,9 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-polytetrafluoroethylene-plastic", 2),
+      PM.ingredient("pm-tin-plate", 2),
       PM.ingredient("pm-etched-silicon-wafer", 2),
-      PM.ingredient("pm-indium-wire", 4),
+      PM.ingredient("pm-indium-wire", 3),
     },
     results = 
     {
@@ -3326,8 +3328,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-etched-silicon-wafer", 2),
-      PM.ingredient("pm-polytetrafluoroethylene-plastic", 2),
-      PM.ingredient("pm-titanium-plate", 4),
+      PM.ingredient("pm-tin-plate", 4),
       PM.ingredient("pm-gallium-arsenide", 2),
       PM.ingredient("pm-indium-wire", 3),
     },

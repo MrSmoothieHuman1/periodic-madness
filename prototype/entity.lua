@@ -19,7 +19,6 @@ local pm_lab_inputs =
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
-  
 }
 
 function pm_electric_mining_drill2_animation()
