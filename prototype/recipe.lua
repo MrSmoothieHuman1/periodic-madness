@@ -3238,7 +3238,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "fa",
     show_amount_in_title = true,
-    enabled = false,
+    enabled = false, 
     allow_productivity = true,
     ingredients =
     {
@@ -3296,7 +3296,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-advanced-processing-breadboard",
+    name = "pm-advanced-processing-circuit-breadboard",
     energy_required = 4.5,
     category = "pm-advanced-crafting-with-fluid",
     subgroup = "pm-circuits",
