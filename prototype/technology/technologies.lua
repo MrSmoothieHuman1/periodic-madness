@@ -3591,13 +3591,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-      PM.unlock_recipe("pm-advanced-electronic-breadboard"),
+      PM.unlock_recipe("pm-advanced-electronic-circuit-breadboard"),
       PM.unlock_recipe("pm-advanced-electronic-integrated-circuits"),
-      PM.unlock_recipe("pm-advanced-fluid-breadboard"),
+      PM.unlock_recipe("pm-advanced-fluid-circuit-breadboard"),
       PM.unlock_recipe("pm-advanced-fluid-integrated-circuits"),
-      PM.unlock_recipe("pm-advanced-advanced-breadboard"),
+      PM.unlock_recipe("pm-advanced-advanced-circuit-breadboard"),
       PM.unlock_recipe("pm-advanced-advanced-integrated-circuits"),
-      PM.unlock_recipe("pm-advanced-processing-breadboard"),
+      PM.unlock_recipe("pm-advanced-processing-circuit-breadboard"),
       PM.unlock_recipe("pm-advanced-processing-integrated-circuits"),
       PM.unlock_recipe("pm-advanced-semiconductor"),
     },

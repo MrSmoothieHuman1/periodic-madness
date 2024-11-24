@@ -3172,7 +3172,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-advanced-electronic-breadboard",
+    name = "pm-advanced-electronic-circuit-breadboard",
     enabled = false,
     energy_required = 1,
     subgroup = "pm-circuits",
@@ -3284,7 +3284,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-polytetrafluoroethylene-plastic", 2),
+      PM.ingredient("pm-polytetrafluoroethylene", 2),
       PM.ingredient("pm-tin-plate", 2),
       PM.ingredient("pm-etched-silicon-wafer", 2),
       PM.ingredient("pm-indium-wire", 3),
