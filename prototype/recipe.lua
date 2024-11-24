@@ -2612,7 +2612,7 @@ data:extend({
     },
     results = 
     {
-      PM.ingredient("pm-ruby-dust", 10)
+      PM.product("pm-ruby-dust", 10)
     }
   },
   {
@@ -2628,7 +2628,7 @@ data:extend({
     },
     results = 
     {
-      PM.ingredient("pm-citrine-dust", 10)
+      PM.product("pm-citrine-dust", 10)
     }
   },
   {
@@ -2644,7 +2644,7 @@ data:extend({
     },
     results = 
     {
-      PM.ingredient("pm-emerald-dust", 10)
+      PM.product("pm-emerald-dust", 10)
     }
   },
   {
@@ -2660,7 +2660,7 @@ data:extend({
     },
     results = 
     {
-      PM.ingredient("pm-sapphire-dust", 10)
+      PM.product("pm-sapphire-dust", 10)
     }
   },
   {
@@ -2676,7 +2676,7 @@ data:extend({
     },
     results = 
     {
-      PM.ingredient("pm-lapis-lazuli-dust", 10)
+      PM.product("pm-lapis-lazuli-dust", 10)
     }
   },
   {
@@ -2692,7 +2692,7 @@ data:extend({
     },
     results = 
     {
-      PM.ingredient("pm-garnet-dust", 10)
+      PM.product("pm-garnet-dust", 10)
     }
   },
 
