@@ -1581,6 +1581,15 @@ data:extend({
     base_color = {r = 0.968, g = 0.68, b = 1},
     flow_color = {r = 0.968, g = 0.68, b = 1}
   },
+  {
+    type = "fluid",
+    name = "pm-liquid-silicone",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/plaster-of-nauvis.png",
+    default_temperature = 15,
+    base_color = {r = 1, g = 0.7, b = 0.7},
+    flow_color = {r = 1, g = 0.7, b = 0.7}
+  },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"

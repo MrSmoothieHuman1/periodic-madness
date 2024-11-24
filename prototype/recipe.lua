@@ -3359,6 +3359,43 @@ data:extend({
       PM.product("pm-semiconductor", 6)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-dimethyldichlorosilane",
+    enabled = false,
+    energy_required = 6,
+    category = "chemistry",
+    subgroup = "pm-silicon-mt",
+    order = "db",
+    ingredients =
+    {
+      PM.ingredient("pm-dichlorosilane", 8, "fluid"),
+      PM.ingredient("copper-plate", 4),
+      PM.ingredient("pm-silicon-ore", 2),
+      PM.ingredient("methyl-chloride", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-dimethyldichlorosilane", 4, "fluid"),
+      PM.product_range("pm-hydrochloric-acid", 2, 4, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-silicone",
+    enabled = false,
+    energy_required = 3,
+    category = "pm-washing",
+    ingredients = 
+    {
+      PM.ingredient("pm-dimethyldichlorosilane", 4, "fluid"),
+      PM.ingredient("water", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-liquid-silicone", 2, "fluid")
+    }
+  },
 
   {
     type = "recipe",

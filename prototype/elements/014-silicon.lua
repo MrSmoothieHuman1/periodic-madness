@@ -222,7 +222,7 @@ data:extend({
         },
         results = 
         {
-            PM.ingredient("pm-silane", 10, "fluid"),
+            PM.product("pm-silane", 10, "fluid"),
             PM.product_range("pm-silicon-tetrachloride", 2.5, 5, "fluid")
         }
     },
