@@ -3665,7 +3665,7 @@ data:extend({
     prerequisites = {"pm-tempature-inators-2", "pm-metalloid-pack-unlock"},
     unit =
       {
-        count = 300,
+        count = 275,
         ingredients = 
         {
           {"automation-science-pack", 1},
@@ -3744,6 +3744,32 @@ data:extend({
       },
       time = 30
     }
+  },
+  {
+    type = "technology",
+    name = "pm-silicone-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.ingredient("pm-methyl-chloride"),
+      PM.ingredient("pm-dimethyldichlorosilane"),
+      PM.ingredient("pm-silicone")
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+      {
+        count = 300,
+        ingredients = 
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+        },
+        time = 80,
+      }
   },
   {
     type = "technology",
