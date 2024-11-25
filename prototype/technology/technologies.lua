@@ -3361,7 +3361,7 @@ data:extend({
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
     {
-      count = 400,
+      count = 350,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3370,7 +3370,7 @@ data:extend({
         {"pm-post-transition-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
-      time = 60
+      time = 80
     }
   },
   {
@@ -3611,6 +3611,8 @@ data:extend({
           {"logistic-science-pack", 1},
           {"pm-advanced-advanced-transition-metal-science-pack", 1},
           {"pm-post-transition-metal-science-pack", 1},
+          {"chemical-science-pack", 1},
+          {"pm-alkali-metal-science-pack", 1},
           {"pm-metalloid-science-pack", 1},
         },
         time = 80,
@@ -3706,10 +3708,10 @@ data:extend({
       PM.unlock_recipe("pm-heat-pipe-3"),
       PM.unlock_recipe("heat-pipe"),
     },
-    prerequisites = {"pm-metalloid-pack-unlock", "advanced-material-processing-2", "pm-oil-fractions-burning"},
+    prerequisites = {"pm-silicone-processing", "advanced-material-processing-2", "pm-oil-fractions-burning"},
     unit =
       {
-        count = 300,
+        count = 275,
         ingredients = 
         {
           {"automation-science-pack", 1},
@@ -3761,7 +3763,7 @@ data:extend({
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
       {
-        count = 300,
+        count = 350,
         ingredients = 
         {
           {"automation-science-pack", 1},

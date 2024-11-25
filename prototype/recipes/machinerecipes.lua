@@ -1085,7 +1085,8 @@ data:extend({
       PM.ingredient("processing-unit", 3),
       PM.ingredient("electric-furnace", 1),
       PM.ingredient("pm-molten-framing", 12),
-      PM.ingredient("pm-tungsten-plate", 6)
+      PM.ingredient("pm-tungsten-plate", 3),
+      PM.ingredient("pm-liquid-silicone", 5, "fluid")
     },
     results = 
     {
@@ -1104,7 +1105,8 @@ data:extend({
       PM.ingredient("processing-unit", 3),
       PM.ingredient("electric-furnace", 1),
       PM.ingredient("pm-heavyweight-framing", 12),
-      PM.ingredient("pm-titanium-plate", 6)
+      PM.ingredient("pm-titanium-plate", 3),
+      PM.ingredient("pm-liquid-silicone", 5, "fluid")
     },
     results = 
     {
