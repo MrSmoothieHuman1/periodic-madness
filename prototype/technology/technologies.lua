@@ -3752,9 +3752,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-      PM.ingredient("pm-methyl-chloride"),
-      PM.ingredient("pm-dimethyldichlorosilane"),
-      PM.ingredient("pm-silicone")
+      PM.unlock_recipe("pm-methyl-chloride"),
+      PM.unlock_recipe("pm-tri-to-dimethyldichlorosilane"),
+      PM.unlock_recipe("pm-di-to-trimethyldichlorosilane"),
+      PM.unlock_recipe("pm-dimethyldichlorosilane"),
+      PM.unlock_recipe("pm-silicone")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

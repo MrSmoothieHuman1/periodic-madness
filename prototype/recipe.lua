@@ -3367,6 +3367,8 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-silicon-mt",
     order = "db",
+    main_product = "pm-dimethylchlorosilane",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-dichlorosilane", 8, "fluid"),
@@ -3386,6 +3388,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "pm-washing",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-dimethyldichlorosilane", 4, "fluid"),
@@ -3394,6 +3397,39 @@ data:extend({
     results = 
     {
       PM.product("pm-liquid-silicone", 2, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-tri-to-dichlorosilane",
+    energy_required = 2,
+    enabled = false,
+    category = "pm-chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-trichlorosilane", 8, "fluid"),
+      PM.ingredient("pm-hydrogen-gas", 16, "fluid")
+    },
+    results =
+    {
+      PM.product_range("pm-dichlorosilane", 2, 8, "fluid"),
+      PM.product_range("pm-hydrochloric-acid", 4, 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-di-to-trichlorosilane",
+    energy_required = 2,
+    enabled = false,
+    category = "pm-moltening",
+    ingredients = 
+    {
+      PM.ingredient("pm-dichlorosilane", 8, "fluid"),
+      PM.ingredient("pm-ammonium-chloride", 4)
+    },
+    results =
+    {
+      PM.product_range("pm-trichlorosilane", 2, 8, "fluid"),
     }
   },
 
