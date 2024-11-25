@@ -3755,8 +3755,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-methyl-chloride"),
-      PM.unlock_recipe("pm-tri-to-dimethyldichlorosilane"),
-      PM.unlock_recipe("pm-di-to-trimethyldichlorosilane"),
+      PM.unlock_recipe("pm-tri-to-dichlorosilane"),
+      PM.unlock_recipe("pm-di-to-trichlorosilane"),
       PM.unlock_recipe("pm-dimethyldichlorosilane"),
       PM.unlock_recipe("pm-silicone")
     },
