@@ -412,12 +412,12 @@ data:extend({
     type = "item",
     name = "pm-yttrium-ore",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon-2.png", size = 64, scale = 0.5 },
-
+      { filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-yttrium-tm",
     order = "a",
@@ -451,7 +451,12 @@ data:extend({
     type = "item",
     name = "pm-beryllium-ore",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon.png",
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-germanium-mt",
     order = "e",
     stack_size = 200

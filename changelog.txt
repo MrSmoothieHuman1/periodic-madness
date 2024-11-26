@@ -9,6 +9,7 @@ Date: 2024-08-09
     - Added Tellurium.
     - Added Germanium.
     - Added Yttrium.
+    - Added Beryllium. Does nothing.
     - Added two new ways to make glass and glass products: borosilicate glass and molten potassium. One allows for betterer recipes of stuff like glass bottles and fibers, and the other allows for more efficient glass recipes.
     - Added robochargers and robostashers, like the thing from that one mod.
     - Added an even better tier of water electrolysis, using a Nitrogen-doped nickel-molybdenum-phosphide catalyst. Why? because i wouldnt be a good devman if i wasnt sitting here talking to you, now would i?
