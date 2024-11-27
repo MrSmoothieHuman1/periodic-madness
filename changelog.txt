@@ -145,6 +145,7 @@ Date: 2024-08-09
     - Fixed Plastic science bottles being pluralised.
     - Changed Military 2 to 50 science packs instead of 20.
     - Fixed heat pipe 2's not being in the right subgroup.
+    - Fixed tungsten leeching using silver chunk icons??
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.133

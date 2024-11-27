@@ -3,7 +3,7 @@ data:extend({
   {
     type = "item",
     name = "pm-mixed-bastnasite",
-    icon_size = 64,
+    icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/ores/mixed-bastansite.png",
     pictures =
     {
@@ -16,17 +16,17 @@ data:extend({
     },
     subgroup = "pm-yttrium-tm",
     order = "a",
-    stack_size = 400
+    stack_size = 300
   },
   {
     type = "item",
     name = "pm-bastnasite-Y",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.5},
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.5},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastansite-C.png", size = 128, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastansite-C-2.png", size = 128, scale = 0.25},
     },
     subgroup = "pm-yttrium-tm",
     order = "b",
@@ -35,12 +35,12 @@ data:extend({
   {
     type = "item",
     name = "pm-bastnasite-C",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bismite-1.png",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/ores/bastnasite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.5},
-      { filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.5},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastansite-Y.png", size = 128, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastansite-Y-2.png", size = 128, scale = 0.25},
     },
     subgroup = "pm-yttrium-tm",
     order = "c",
@@ -66,7 +66,7 @@ data:extend({
     type = "recipe",
     name = "pm-basic-bastnasite",
     enabled = false,
-    energy_required = 24,
+    energy_required = 18,
     category = "pm-acids",
     subgroup = "pm-yttrium-tm",
     order = "a",
@@ -78,18 +78,19 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-mixed-bastnasite", 6, 2 )
+      PM.product_range("pm-mixed-bastnasite", 2, 6 )
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-mixed-bastnasite-seperation",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/bastnasite-seperation.png",
     enabled = false,
     energy_required = 6,
     category = "pm-crushing",
     subgroup = "pm-yttrium-tm",
     order = "b",
-    main_product = "pm-bastnasite-Y",
     allow_productivity = true,
     ingredients =
     {
@@ -98,13 +99,15 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-bastnasite-Y", 2, 0.5),
+      PM.product_range_chance("pm-bastnasite-Y", 2, 4, 0.5),
       PM.product_range_chance("pm-bastnasite-C", 2, 4, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-bastnasite-Y-seperation",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/bastnasite-Y-seperation.png",
     enabled = false,
     energy_required = 16,
     category = "chemistry",
@@ -127,6 +130,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-bastnasite-C-seperation",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/bastnasite-C-seperation.png",
     enabled = false,
     energy_required = 16,
     category = "chemistry",
@@ -137,7 +142,7 @@ data:extend({
     {
       PM.ingredient("pm-bastnasite-C", 6),
       PM.ingredient("sulfuric-acid", 20, "fluid"),
-      PM.ingredient("pm-vanadium-oxide-catalyst", 4)
+      PM.ingredient("pm-cobalt-catalyst", 4)
     },
     results =
     {
@@ -158,7 +163,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-yttrium-oxide", 2),
-      PM.ingredient("pm-hydrogen-flouride", 10, "fluid")
+      PM.ingredient("pm-hydrogen-flouride", 8, "fluid")
     },
     results =
     {
@@ -170,7 +175,7 @@ data:extend({
     type = "recipe",
     name = "pm-yttrium",
     enabled = false,
-    energy_required = 8,
+    energy_required = 4,
     category = "pm-washing",
     subgroup = "pm-yttrium-tm",
     order = "g",

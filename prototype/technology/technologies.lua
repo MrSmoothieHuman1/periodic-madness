@@ -1829,7 +1829,7 @@ data:extend({
     type = "technology",
     name = "pm-flourine-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/flourine-processing.png",
+    icon = "__periodic-madness__/graphics/technology/fluorite-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-flourite-crystallisation"),
@@ -3261,7 +3261,7 @@ data:extend({
     type = "technology",
     name = "pm-boron-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/boron-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-sassolite"),
@@ -3289,7 +3289,7 @@ data:extend({
     type = "technology",
     name = "pm-tellurium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/tellurium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-copper-tailings-sludging"),
@@ -3316,7 +3316,7 @@ data:extend({
     type = "technology",
     name = "pm-arsenic-antimony-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/arsenic-antiomy-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-arsenopyrite-leeching"),
@@ -3348,7 +3348,7 @@ data:extend({
     type = "technology",
     name = "pm-yttrium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/yttrium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-basic-bastnasite"),
@@ -3588,7 +3588,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-electronic-components",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-electronic-components.png",
     effects = 
     {
       PM.unlock_recipe("pm-advanced-electronic-circuit-breadboard"),

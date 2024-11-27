@@ -8,8 +8,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/sodium-tellurite.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/sodium-tellurite.png",   size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/sodium-tellurite-2.png", size = 64, scale = 0.5}
+      {filename = "__periodic-madness__/graphics/icons/ores/sodium-tellurite.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/sodium-tellurite-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/sodium-tellurite-3.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-tellurium-mt",
     order = "a",

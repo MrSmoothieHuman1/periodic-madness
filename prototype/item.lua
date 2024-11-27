@@ -951,7 +951,7 @@ data:extend({
     type = "item",
     name = "pm-titanium-sapphire",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/cut-sapphire-rod.png",
+    icon = "__periodic-madness__/graphics/icons/titanium-sapphire.png",
     subgroup = "pm-sapphire-ptm",
     order = "d",
     stack_size = 200
@@ -992,7 +992,7 @@ data:extend({
   {
     type = "module",
     name = "pm-speed-module-4",
-    localised_description = { "item-description.speed-module" },
+    localised_description = {"item-description.speed-module"},
     icon = "__periodic-madness__/graphics/icons/speed-module-4.png",
     icon_size = 128,
     subgroup = "pm-speed",
@@ -1388,8 +1388,8 @@ data:extend({
   {
     type = "item",
     name = "pm-silicon-wafer",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/silicon-wafer.png",
     subgroup = "pm-silicon-mt",
     order = "h",
     stack_size = 50
@@ -1397,8 +1397,8 @@ data:extend({
   {
     type = "item",
     name = "pm-barely-etched-silicon-wafer",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/barely-etched-silicon-wafer.png",
     subgroup = "pm-silicon-mt",
     order = "i",
     stack_size = 50
@@ -1406,8 +1406,8 @@ data:extend({
   {
     type = "item",
     name = "pm-etched-silicon-wafer",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/etched-silicon-wafer.png",
     subgroup = "pm-silicon-mt",
     order = "ia",
     stack_size = 50

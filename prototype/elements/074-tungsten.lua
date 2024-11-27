@@ -24,6 +24,11 @@ data:extend({
     name = "pm-tungsten-crystals",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/tungsten-krystals.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals-2.png", size = 128, scale = 0.25 }
+    },
     subgroup = "pm-tungsten-tm",
     order = "c",
     stack_size = 100
@@ -44,7 +49,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-tungsten-tm",
@@ -59,7 +64,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
+        icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
         icon_size = 64,
       },
       {
