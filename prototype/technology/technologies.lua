@@ -3316,7 +3316,7 @@ data:extend({
     type = "technology",
     name = "pm-arsenic-antimony-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/arsenic-antiomy-processing.png",
+    icon = "__periodic-madness__/graphics/technology/arsenic-antimony-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-arsenopyrite-leeching"),

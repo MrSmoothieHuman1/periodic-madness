@@ -4,13 +4,14 @@ data:extend({
   {
     type = "item",
     name = "pm-flourite",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/ores/flourite.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/fluorite.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/flourite.png",   size = 128, scale = 0.125},
-      {filename = "__periodic-madness__/graphics/icons/ores/flourite-2.png", size = 128, scale = 0.125},
-      {filename = "__periodic-madness__/graphics/icons/ores/flourite-3.png", size = 128, scale = 0.125},
+      {filename = "__periodic-madness__/graphics/icons/ores/fluorite.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/fluorite-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/fluorite-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/fluorite-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-flourine-rnm",
     order = "a",

@@ -22,12 +22,12 @@ data:extend({
   {
     type = "item",
     name = "pm-tungsten-crystals",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/tungsten-krystals.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/tungsten-krystals.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals-2.png", size = 128, scale = 0.25 }
+      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-tungsten-tm",
     order = "c",
