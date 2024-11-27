@@ -25,8 +25,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C.png", size = 128, scale = 0.25},
-      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C-2.png", size = 128, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png", size = 128, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y-2.png", size = 128, scale = 0.25},
     },
     subgroup = "pm-yttrium-tm",
     order = "b",
