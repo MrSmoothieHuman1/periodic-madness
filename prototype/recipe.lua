@@ -3367,14 +3367,14 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-silicon-mt",
     order = "db",
-    main_product = "pm-dimethylchlorosilane",
+    main_product = "pm-dimethyldichlorosilane",
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-dichlorosilane", 8, "fluid"),
       PM.ingredient("copper-plate", 4),
       PM.ingredient("pm-silicon-ore", 2),
-      PM.ingredient("methyl-chloride", 5, "fluid")
+      PM.ingredient("pm-methyl-chloride", 5, "fluid")
     },
     results = 
     {
@@ -3404,7 +3404,8 @@ data:extend({
     name = "pm-tri-to-dichlorosilane",
     energy_required = 2,
     enabled = false,
-    category = "pm-chemistry",
+    category = "chemistry",
+    main_product = "pm-dichlorosilane",
     ingredients = 
     {
       PM.ingredient("pm-trichlorosilane", 8, "fluid"),
@@ -3422,6 +3423,7 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "pm-moltening",
+    main_product = "pm-trichlorosilane",
     ingredients = 
     {
       PM.ingredient("pm-dichlorosilane", 8, "fluid"),

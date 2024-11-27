@@ -1076,6 +1076,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-heat-furnace",
+    category = "crafting-with-fluid",
     subgroup = "smelting-machine",
     order = "e",
     energy_required = 5,
@@ -1086,7 +1087,7 @@ data:extend({
       PM.ingredient("electric-furnace", 1),
       PM.ingredient("pm-molten-framing", 12),
       PM.ingredient("pm-tungsten-plate", 3),
-      PM.ingredient("pm-liquid-silicone", 5, "fluid")
+      PM.ingredient("pm-liquid-silicone", 4, "fluid")
     },
     results = 
     {
@@ -1096,6 +1097,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-electric-furnace-2",
+    category = "crafting-with-fluid",
     subgroup = "smelting-machine",
     order = "e",
     energy_required = 5,
@@ -1106,7 +1108,7 @@ data:extend({
       PM.ingredient("electric-furnace", 1),
       PM.ingredient("pm-heavyweight-framing", 12),
       PM.ingredient("pm-titanium-plate", 3),
-      PM.ingredient("pm-liquid-silicone", 5, "fluid")
+      PM.ingredient("pm-liquid-silicone", 4, "fluid")
     },
     results = 
     {
