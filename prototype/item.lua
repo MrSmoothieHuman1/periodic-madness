@@ -1484,6 +1484,13 @@ data:extend({
     order = "b[battery]-b[battery-equipment-mk2]",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-iron-fish",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/iron-fish.png",
+    stack_size = 999
+  },
 
   --fuel categories
   {
