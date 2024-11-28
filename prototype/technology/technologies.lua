@@ -309,7 +309,7 @@ data:extend({
     prerequisites = {"logistics-3", "processing-unit", "low-density-structure"},
     unit =
     {
-      count = 350,
+      count = 425,
       ingredients =
       {  
         {"automation-science-pack", 1},
@@ -319,7 +319,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
-      time = 30
+      time = 80
     }
   },
   {
@@ -1866,7 +1866,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-electric-mining-drill-2")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    prerequisites = {"pm-post-transition-metal-pack-unlock", "electric-mining-drill"},
     unit =
     {
       count = 150,
