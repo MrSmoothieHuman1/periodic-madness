@@ -1573,7 +1573,7 @@ data:extend({
     type = "fluid",
     name = "pm-dichlorosilane",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/trichlorosilane.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/dichlorosilane.png",
     subgroup = "pm-silicon-mt",
     order = "b",
     default_temperature = 15,

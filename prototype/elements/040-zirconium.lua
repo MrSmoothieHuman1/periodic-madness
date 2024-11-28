@@ -4,7 +4,7 @@ data:extend({
   {
     type = "item",
     name = "pm-zirconium-sand",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/zirconium-sand.png",
     subgroup = "pm-zirconium-tm",
     order = "a",

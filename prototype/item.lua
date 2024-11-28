@@ -402,31 +402,31 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/module-case.png",
     subgroup = "pm-intermediates",
-    stack_size = 140 + 10
+    stack_size = 150
   },
   {
     type = "item",
     name = "pm-module-speed-light",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/speed-module-light.png",
     subgroup = "pm-intermediates",
-    stack_size = 160 - 10
+    stack_size = 150
   },
   {
     type = "item",
     name = "pm-module-productivity-light",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/productivity-module-light.png",
     subgroup = "pm-intermediates",
-    stack_size = 160 - 10
+    stack_size = 150
   },
   {
     type = "item",
     name = "pm-module-efficiency-light",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/efficiency-module-light.png",
     subgroup = "pm-intermediates",
-    stack_size = 160 - 10
+    stack_size = 150
   },
   {
     type = "item",
@@ -637,7 +637,7 @@ data:extend({
   {
     type = "item",
     name = "pm-gallium-nitride",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/gallium-nitride.png",
     subgroup = "pm-intermediates",
     stack_size = 20

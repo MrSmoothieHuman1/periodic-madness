@@ -116,6 +116,7 @@ Date: 2024-08-09
     - Halved the cost of heat pipe 1's and 2's, as i forsee a lot of telescoping in the near future.
     - Changed the max heat of polonium reactors from 1000 to 2500.
     - Moved steam turbines and heat exchangers down to A-ATM science, moved heat exchanger 2's to polonium processing.
+    - Remodelled module lights. I remodelled most things, but i just like them.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.

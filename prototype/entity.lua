@@ -364,7 +364,6 @@ data:extend({
     max_health = 150,
     corpse = "offshore-pump-remnants",
     dying_explosion = "offshore-pump-explosion",
-    fluid = "pm-seawater",
     resistances =
     {
       {
@@ -380,6 +379,7 @@ data:extend({
       volume = 100,
       pipe_covers = pipecoverspictures(),
       production_type = "output",
+      filter = "pm-seawater",
       pipe_connections =
       {
         {
