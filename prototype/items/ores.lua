@@ -72,6 +72,8 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon-2.png", size = 64, scale = 0.5 },
     },
     stack_size = 200,
+    subgroup = "pm-silicon-mt",
+    order = "ca",
   },
   {
     type = "item",
