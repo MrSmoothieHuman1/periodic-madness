@@ -7947,6 +7947,7 @@ data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids =
 {
   {type = "crude-oil", damage_modifier = 0.5},
   {type = "pm-petrol", damage_modifer = 1.1},
+  {type = "pm-diesel", damage_modifer = 1.1},
   {type = "pm-naptha", damage_modifier = 1.5},
   {type = "pm-kerosene", damager_modifier = 1.3}
 }

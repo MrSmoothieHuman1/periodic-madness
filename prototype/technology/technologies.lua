@@ -475,7 +475,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/naptha-recipes.png",
     effects =
     {
-      PM.unlock_recipe("pm-butane-cracking")
+      PM.unlock_recipe("pm-butane-cracking"),
+      PM.unlock_recipe("pm-naptha-canister")
     },
     prerequisites = {"oil-processing"},
     research_trigger = 

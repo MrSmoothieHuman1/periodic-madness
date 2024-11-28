@@ -719,7 +719,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("barrel", 1),
+      PM.ingredient("steel-plate", 2),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results = {
@@ -775,6 +775,23 @@ data:extend({
     },
     results = {
       PM.product("pm-petrol-canister", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-naptha-canister",
+    energy_required = 2,
+    enabled = false,
+    subgroup = "pm-fuels",
+    category = "chemistry",
+    ingredients =
+    {
+      PM.ingredient("pm-empty-fuel-canister", 1),
+      PM.ingredient("solid-fuel", 1),
+      PM.ingredient("pm-naptha", 40, "fluid")
+    },
+    results = {
+      PM.product("pm-naptha-canister", 1)
     }
   },
   {
