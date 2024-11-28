@@ -28,7 +28,7 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/borax-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-boron-mt",
-    order = "a",
+    order = "b",
     stack_size = 100
   },
   {

@@ -1427,7 +1427,7 @@ data:extend({
     type = "item",
     name = "pm-personal-robostasher-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robostasher-equipment.png",
-    icon_size = 64,
+    icon_size = 128,
     place_as_equipment_result = "pm-personal-robostasher-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
@@ -1437,7 +1437,7 @@ data:extend({
     type = "item",
     name = "pm-personal-robostasher-mk2-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robostasher-mk2-equipment.png",
-    icon_size = 64,
+    icon_size = 128,
     place_as_equipment_result = "pm-personal-robostasher-mk2-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
@@ -1469,8 +1469,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/equipment/lithium-battery-equipment.png",
     icon_size = 64,
     place_as_equipment_result = "pm-lithium-sulfur-battery-equipment",
-    subgroup = "equipment",
-    order = "b[battery]-a[battery-equipment]",
+    subgroup = "pm-modular-storage",
+    order = "c",
     stack_size = 20
   },
   {
@@ -1480,8 +1480,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment.png",
     icon_size = 64,
     place_as_equipment_result = "pm-lithium-sulfur-battery-mk2-equipment",
-    subgroup = "equipment",
-    order = "b[battery]-b[battery-equipment-mk2]",
+    subgroup = "pm-modular-storage",
+    order = "c",
     stack_size = 20
   },
   {

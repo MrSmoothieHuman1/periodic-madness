@@ -59,7 +59,7 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/ores/antimony-sulfide.png",
         subgroup = "pm-antimony-mt",
-        order = "e",
+        order = "da",
         stack_size = 200
     },
 
