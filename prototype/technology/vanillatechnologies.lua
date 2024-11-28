@@ -1425,7 +1425,7 @@ data.raw["technology"]["bulk-inserter"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["flamethrower"].prerequisites = {"flammables", "pm-fluid-burner"}
+data.raw["technology"]["flamethrower"].prerequisites = {"flammables", "pm-oil-fractions-burning"}
 data.raw["technology"]["flamethrower"].unit.ingredients = 
 {
   {"automation-science-pack", 1},

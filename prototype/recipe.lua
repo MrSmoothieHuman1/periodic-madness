@@ -3173,6 +3173,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-electronic-circuit-breadboard",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/circuit-breadboard.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon_size = 64,
+        scale = 0.32
+      },
+    },
     enabled = false,
     energy_required = 1,
     subgroup = "pm-circuits",
@@ -3402,6 +3415,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tri-to-dichlorosilane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/tri-to-dichlorosilane.png",
     energy_required = 2,
     enabled = false,
     category = "chemistry",
@@ -3420,6 +3435,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-di-to-trichlorosilane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/di-to-trichlorosilane.png",
     energy_required = 2,
     enabled = false,
     category = "pm-moltening",

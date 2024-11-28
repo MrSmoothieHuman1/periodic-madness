@@ -7560,7 +7560,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__base__/graphics/entity/heat-furnace/heat-furnace.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/heat-furnace/heat-furnace.png",
             priority = "high",
             width = 239,
             height = 219,
