@@ -1450,27 +1450,9 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-ethylbenzene",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
-    default_temperature = 15,
-    base_color = {r = 0.8, g = 0.8, b = 0.8},
-    flow_color = {r = 0.8, g = 0.8, b = 0.8}
-  },
-  {
-    type = "fluid",
-    name = "pm-styrene",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
-    default_temperature = 15,
-    base_color = {r = 0.8, g = 0.8, b = 0.8},
-    flow_color = {r = 0.8, g = 0.8, b = 0.8}
-  },
-  {
-    type = "fluid",
     name = "pm-carbon-trioxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/carbon-dioxide.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/carbon-trioxide.png",
     subgroup = "pm-carbon-rnm",
     order = "d",
     default_temperature = 15,
