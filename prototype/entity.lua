@@ -7477,7 +7477,7 @@ data:extend({
   {
     type = "furnace",
     name = "pm-heat-furnace",
-    icon = "__base__/graphics/icons/electric-furnace.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/heat-furnace.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.3, result = "pm-heat-furnace"},
     fast_replaceable_group = "furnace",
@@ -7560,7 +7560,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__base__/graphics/entity/electric-furnace/electric-furnace.png",
+            filename = "__base__/graphics/entity/heat-furnace/heat-furnace.png",
             priority = "high",
             width = 239,
             height = 219,
@@ -7670,7 +7670,7 @@ data:extend({
   {
     type = "furnace",
     name = "pm-electric-furnace-2",
-    icon = "__base__/graphics/icons/electric-furnace.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/electric-furnace-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.3, result = "pm-electric-furnace-2"},
     fast_replaceable_group = "furnace",
@@ -7734,7 +7734,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__base__/graphics/entity/electric-furnace/electric-furnace.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-furnace-2/electric-furnace.png",
             priority = "high",
             width = 239,
             height = 219,
