@@ -1579,7 +1579,7 @@ data:extend({
     type = "fluid",
     name = "pm-liquid-silicone",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/plaster-of-nauvis.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/silicone.png",
     default_temperature = 15,
     base_color = {r = 1, g = 0.7, b = 0.7},
     flow_color = {r = 1, g = 0.7, b = 0.7}

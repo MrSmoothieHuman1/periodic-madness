@@ -7765,19 +7765,19 @@ data:extend({
       connections =
       {
         {
-          position = { -1, -1 },
+          position = {0, -1},
           direction = defines.direction.north --[[@as int]]
         },
         {
-          position = { 1, -1 },
+          position = { 0, -1 },
           direction = defines.direction.south --[[@as int]]
         },
         {
-          position = { -1, 1 },
+          position = { -1, 0 },
           direction = defines.direction.west --[[@as int]]
         },
         {
-          position = { 1, 1 },
+          position = { 1, 0 },
           direction = defines.direction.east --[[@as int]]
         },
       },
@@ -7786,23 +7786,17 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/fluid-burner/molteninator.png",
           priority = "high",
           width = 171,
           height = 174,
-          frame_count = 32,
-          line_length = 8,
-          animation_speed = 0.3,
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/fluid-burner/molteninator-shadow.png",
           priority = "high",
           width = 174,
           height = 171,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 32,
           draw_as_shadow = true,
           shift = util.by_pixel(39.25, 5),
           scale = 0.5

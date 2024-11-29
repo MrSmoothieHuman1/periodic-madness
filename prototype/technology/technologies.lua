@@ -3730,7 +3730,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/oil-fractions-burning.png",
     effects = 
     {
-      PM.unlock_recipe("pm-fluid-burner"),
       PM.unlock_recipe("pm-heat-pipe-1"),
       PM.unlock_recipe("heat-exchanger"),
       PM.unlock_recipe("steam-turbine")

@@ -986,6 +986,8 @@ data:extend({
     name = "pm-gunpowder",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/gunpowder.png",
+    category = "ammo",
+    order = "A",
     stack_size = 150
   },
 
@@ -1365,7 +1367,7 @@ data:extend({
       }
     },
     subgroup = "capsule",
-    order = "a[grenade]-a[normal]",
+    order = "A",
     stack_size = 150
   },
   {
