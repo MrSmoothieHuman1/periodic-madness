@@ -903,6 +903,7 @@ data.raw["technology"]["inserter-capacity-bonus-3"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["inserter-capacity-bonus-4"].prerequisites = {"inserter-capacity-bonus-3"}
 data.raw["technology"]["inserter-capacity-bonus-4"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -926,6 +927,7 @@ data.raw["technology"]["inserter-capacity-bonus-6"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["inserter-capacity-bonus-7"].prerequisites = ("inserter-capacity-bonus-6")
 data.raw["technology"]["inserter-capacity-bonus-7"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1518,6 +1520,7 @@ data.raw["technology"]["refined-flammables-3"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
+data.raw["technology"]["refined-flammables-4"].prerequisites = {"refined-flammables-3"}
 data.raw["technology"]["refined-flammables-4"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
