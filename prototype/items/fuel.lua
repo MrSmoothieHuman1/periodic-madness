@@ -17,7 +17,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/diesel-canister.png",
     fuel_value = "12MJ",
-    fuel_category = "chemical",
+    fuel_category = "pm-oil-canisters",
     fuel_acceleration_multiplier = 1.3,
     fuel_top_speed_multiplier = 1.3,
     subgroup = "pm-fuels",
@@ -31,7 +31,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/petrol-canister.png",
     fuel_value = "1.5MJ",
-    fuel_category = "chemical",
+    fuel_category = "pm-oil-canisters",
     fuel_acceleration_multiplier = 1.5,
     fuel_top_speed_multiplier = 2,
     subgroup = "pm-fuels",
@@ -45,7 +45,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/kerosene-canister.png",
     fuel_value = "24MJ",
-    fuel_category = "chemical",
+    fuel_category = "pm-oil-canisters",
     fuel_acceleration_multiplier = 1.1,
     fuel_top_speed_multiplier = 1.05,
     subgroup = "pm-fuels",
@@ -59,7 +59,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/naptha-canister.png",
     fuel_value = "32MJ",
-    fuel_category = "chemical",
+    fuel_category = "pm-oil-canisters",
     fuel_acceleration_multiplier = 1,
     fuel_top_speed_multiplier = 1.05,
     subgroup = "pm-fuels",
@@ -118,3 +118,9 @@ data.raw["item"]["nuclear-fuel"].subgroup = "pm-fuels"
 data.raw["item"]["nuclear-fuel"].order = "h"
 data.raw["recipe"]["nuclear-fuel"].subgroup = "pm-fuels"
 data.raw["recipe"]["nuclear-fuel"].order = "h"
+
+table.insert(data.raw["inserter"]["burner-inserter"].energy_source.fuel_categories, "pm-oil-canisters")
+table.insert(data.raw["car"]["car"].energy_source.fuel_categories, "pm-oil-canisters")
+table.insert(data.raw["car"]["tank"].energy_source.fuel_categories, "pm-oil-canisters")
+table.insert(data.raw["boiler"]["boiler"].energy_source.fuel_categories, "pm-oil-canisters")
+table.insert(data.raw["locomotive"]["locomotive"].energy_source.fuel_categories, "pm-oil-canisters")

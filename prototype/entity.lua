@@ -323,7 +323,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_categories = {"chemical"},
+      fuel_categories = {"chemical", "pm-oil-canisters"},
       effectivity = 1,
       fuel_inventory_size = 1,
       emissions_per_minute = {pollution = 6},
@@ -698,7 +698,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_categories = {"chemical"},
+      fuel_categories = {"chemical", "pm-oil-canisters"},
       effectivity = 1,
       fuel_inventory_size = 1,
       emissions_per_minute = {pollution = 30},
@@ -1720,7 +1720,7 @@ data:extend({
       type = "burner",
       emissions_per_minute = {pollution = 2.5},
       fuel_inventory_size = 1,
-      fuel_categories = {"chemical"},
+      fuel_categories = {"chemical", "pm-oil-canisters"},
       light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
     },
     crafting_categories = { "pm-crushing" },
@@ -7707,7 +7707,7 @@ data:extend({
     }
   },
   {
-    type = "assembling-machine",
+    type = "reactor",
     name = "pm-fluid-burner",
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
     icon_size = 64,
@@ -7741,15 +7741,45 @@ data:extend({
     },
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
-    crafting_categories = { "pm-fluid-" },
-    energy_usage = "650kW",
-    crafting_speed = 1,
     energy_source =
     {
-      type = "electric",
-      usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 6},
+      type = "burner",
+      fuel_categories = {"pm-oil-canisters"},
+      effectivity = 1,
+      fuel_inventory_size = 1,
+      burnt_inventory_size = 1,
+      light_flicker =
+      {
+        color = { 0, 0, 0 },
+        minimum_intensity = 0.7,
+        maximum_intensity = 0.95
+      }
     },
+    heat_buffer =
+    {
+      max_temperature = 1500,
+      specific_heat = "10MJ",
+      max_transfer = "500MW",
+      minimum_glow_temperature = 500,
+      connections =
+      {
+        {
+          position = { -1, -1 },
+          direction = defines.direction.north --[[@as int]]
+        },
+        {
+          position = { 1, -1 },
+          direction = defines.direction.south --[[@as int]]
+        },
+        {
+          position = { -1, 1 },
+          direction = defines.direction.west --[[@as int]]
+        },
+        {
+          position = { 1, 1 },
+          direction = defines.direction.east --[[@as int]]
+        },
+      },
     graphics_set = 
   {
     animation =
@@ -7781,25 +7811,7 @@ data:extend({
       }
     }
   },
-  fluid_boxes =
-  {
-    {
-      production_type = "input",
-      pipe_covers = pipecoverspictures(),
-      priority = "medium",
-      volume = 2000,
-      pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
-    },
-    {
-
-      production_type = "output",
-      pipe_covers = pipecoverspictures(),
-      priority = "medium",
-      volume = 2000,
-      pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
-    },
-  },
-  },
+}}
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
@@ -7991,6 +8003,7 @@ data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-ch
 data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-plant-2"
 
 data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "115kW"
+table.insert(data.raw["mining-drill"]["burner-mining-drill"].energy_source.fuel_categories, "pm-oil-canisters")
 
 data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 750
 data.raw["heat-pipe"]["heat-pipe"].heat_buffer.min_temperature_gradient = 1.75
