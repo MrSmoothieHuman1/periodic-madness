@@ -7741,6 +7741,7 @@ data:extend({
     },
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
+    consumption = "500kW",
     energy_source =
     {
       type = "burner",

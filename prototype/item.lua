@@ -1513,6 +1513,10 @@ data:extend({
     type = "fuel-category",
     name = "pm-fuel-rods"
   },
+  {
+    type = "fuel-category",
+    name = "pm-oil-canisters"
+  },
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"
 data.raw["item"]["iron-gear-wheel"].order = "a"
