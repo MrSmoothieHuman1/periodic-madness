@@ -528,6 +528,7 @@ data.raw["technology"]["land-mine"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["land-mine"].prerequisites = {"explosives"}
 
 data.raw["technology"]["braking-force-1"].prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"}
 data.raw["technology"]["braking-force-1"].unit.ingredients =
@@ -952,7 +953,43 @@ data.raw["technology"]["explosive-rocketry"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
-
+data.raw["technology"]["stronger-explosives-2"].prerequisites = {"stronger-explosives-1"}
+data.raw["technology"]["stronger-explosives-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"
@@ -1036,6 +1073,7 @@ data.raw["technology"]["personal-laser-defense-equipment"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
 }
 
+data.raw["technology"]["laser-shooting-speed-1"].prerequisites = {"laser"}
 data.raw["technology"]["laser-shooting-speed-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1066,6 +1104,7 @@ data.raw["technology"]["laser-shooting-speed-4"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["laser-weapons-damage-1"].prerequisites = {"laser"}
 data.raw["technology"]["laser-weapons-damage-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1096,7 +1135,6 @@ data.raw["technology"]["laser-weapons-damage-4"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
-
 data.raw["technology"]["physical-projectile-damage-1"].effects = 
 {
   {
@@ -1133,6 +1171,7 @@ data.raw["technology"]["physical-projectile-damage-2"].effects =
     modifier = 0.05
   },
 }
+data.raw["technology"]["physical-projectile-damage-3"].prerequisites = {"physical-projectile-damage-2"}
 data.raw["technology"]["physical-projectile-damage-3"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
@@ -1309,6 +1348,7 @@ data.raw["technology"]["weapon-shooting-speed-2"].effects =
     modifier = 0.05
   },
 }
+data.raw["technology"]["weapon-shooting-speed-3"].prerequisites = {"weapon-shooting-speed-2"}
 data.raw["technology"]["weapon-shooting-speed-3"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
