@@ -108,7 +108,7 @@ data:extend({
         allow_productivity = true,
         ingredients = 
         {
-            PM.ingredient("pm-germanium-sulfide", 8),
+            PM.ingredient("pm-germanium-sulfide", 6),
             PM.ingredient("pm-oxygen-gas", 20, "fluid")
         },
         results = 

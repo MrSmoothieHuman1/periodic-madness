@@ -7706,6 +7706,100 @@ data:extend({
       }
     }
   },
+  {
+    type = "assembling-machine",
+    name = "pm-fluid-burner",
+    icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
+    icon_size = 64,
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 0.4, result = "pm-fluid-burner" },
+    max_health = 300,
+    corpse = "steel-furnace-remnants",
+    dying_explosion = "steel-furnace-explosion",
+    allowed_effects = PM.all_effects(),
+    map_color = {r = 0.659, g = 0.106, b = 0.106},
+    working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/steel-furnace.ogg",
+          volume = 0.5
+        }
+      },
+      max_sounds_per_type = 4,
+      audible_distance_modifier = 0.37,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 100
+      }
+    },
+    collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
+    selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
+    crafting_categories = { "pm-fluid-" },
+    energy_usage = "650kW",
+    crafting_speed = 1,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = {pollution = 6},
+    },
+    graphics_set = 
+  {
+    animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator.png",
+          priority = "high",
+          width = 171,
+          height = 174,
+          frame_count = 32,
+          line_length = 8,
+          animation_speed = 0.3,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
+          priority = "high",
+          width = 174,
+          height = 171,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 32,
+          draw_as_shadow = true,
+          shift = util.by_pixel(39.25, 5),
+          scale = 0.5
+        }
+      }
+    }
+  },
+  fluid_boxes =
+  {
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      priority = "medium",
+      volume = 2000,
+      pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
+    },
+    {
+
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      priority = "medium",
+      volume = 2000,
+      pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
+    },
+  },
+  },
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down

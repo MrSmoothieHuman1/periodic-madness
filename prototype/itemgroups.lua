@@ -106,6 +106,10 @@ data:extend({
     type = "recipe-category",
     name = "pm-battery-charging"
   },
+  {
+    type = "recipe-category",
+    name = "pm-fluid-burning"
+  },
 
 
   --groups

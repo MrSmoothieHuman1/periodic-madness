@@ -426,7 +426,8 @@ data:extend({
     name = "pm-heat-exchanger-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/heat-exchanger-2.png",
-    subgroup = "energy",
+    subgroup = "pm-heat-machines",
+    order = "Ab",
     place_result = "pm-heat-exchanger-2",
     stack_size = 100 / 2,
   },
@@ -599,6 +600,16 @@ data:extend({
     place_result = "pm-heat-pipe-3",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-fluid-burner",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
+    subgroup = "pm-heat-machines",
+    order = "A",
+    place_result = "pm-fluid-burner",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
@@ -642,3 +653,8 @@ data.raw["item"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["item"]["heat-pipe"].order = "b"
 data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-pipe"].order = "b"
+
+data.raw["item"]["heat-exchanger"].subroup = "pm-heat-machines"
+data.raw["item"]["heat-exchanger"].order = "Aa"
+data.raw["recipe"]["heat-exchanger"].subroup = "pm-heat-machines"
+data.raw["recipe"]["heat-exchanger"].order = "Aa"

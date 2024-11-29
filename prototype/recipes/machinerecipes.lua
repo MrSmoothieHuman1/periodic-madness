@@ -737,6 +737,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-heat-exchanger-2",
+    subgroup = "pm-heat-machines",
+    order = "Ab",
     energy_required = 6,
     enabled = false,
     ingredients =
