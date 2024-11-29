@@ -3183,7 +3183,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
         icon_size = 64,
-        scale = 0.32
+        scale = 0.4
       },
     },
     enabled = false,
@@ -3352,6 +3352,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-semiconductor",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-semiconfuctor.png",
     enabled = false,
     energy_required = 3,
     category = "crafting-with-fluid",
