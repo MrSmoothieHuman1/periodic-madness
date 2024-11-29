@@ -694,7 +694,7 @@ data.raw["technology"]["worker-robots-speed-2"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
-data.raw["technology"]["worker-robots-speed-3"].prerequisites = {"worker-robot-speed-2"}
+data.raw["technology"]["worker-robots-speed-3"].prerequisites = {"worker-robots-speed-2"}
 data.raw["technology"]["worker-robots-speed-3"].effects =
 {
   PM.modify("worker-robot-speed", 0.25)
@@ -927,7 +927,7 @@ data.raw["technology"]["inserter-capacity-bonus-6"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
-data.raw["technology"]["inserter-capacity-bonus-7"].prerequisites = ("inserter-capacity-bonus-6")
+data.raw["technology"]["inserter-capacity-bonus-7"].prerequisites = {"inserter-capacity-bonus-6"}
 data.raw["technology"]["inserter-capacity-bonus-7"].unit.ingredients =
 {
   {"automation-science-pack", 1},
