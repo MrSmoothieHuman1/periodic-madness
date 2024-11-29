@@ -71,7 +71,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-germanium-ore-concentrate", 4, 8, 0.8),
+            PM.product_range_chance("pm-germanium-ore-concentrate", 4, 10, 0.85),
             PM.product_range("pm-lead-powder", 0, 6),
             PM.product_range_chance("pm-copper-chunk", 0, 4, 0.45)
         }
@@ -79,8 +79,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-concentrate-seperation",
-       enabled = false,
-        energy_required = 8,
+        enabled = false,
+        energy_required = 6,
         category = "pm-acids",
         subgroup = "pm-germanium-mt",
         order = "b",
