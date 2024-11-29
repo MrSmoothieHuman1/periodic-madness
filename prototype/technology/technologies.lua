@@ -109,7 +109,7 @@ data:extend({
       PM.unlock_recipe("pm-mercury-liquifying"),
       PM.unlock_recipe("pm-mercury-vapour-condensing")
     },
-    prerequisites = {"automation", "pm-ezekiel-metal-refining"},
+    prerequisites = {"automation", "pm-ezekiel-ore-purifying"},
     unit =
     {
       count = 50,
@@ -3752,7 +3752,7 @@ data:extend({
     type = "technology",
     name = "pm-silicone-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/silicone-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-methyl-chloride"),
