@@ -5645,7 +5645,7 @@ data:extend({
   {
     type = "boiler",
     name = "pm-heat-exchanger-2",
-    icon = "__periodic-madess__/graphics/icons/buildings/heat-exchanger-2.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/heat-exchanger-2.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.8, result = "heat-exchanger" },
