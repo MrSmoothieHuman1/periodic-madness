@@ -1076,7 +1076,23 @@ data:extend({
       PM.product("pm-electric-furnace-2", 1)
     }
   },
-
+  {
+    type = "recipe",
+    name = "pm-fluid-burner",
+    subgroup = "pm-heat-machines",
+    order = "A",
+    enabled = false,
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("pm-heating-plating", 5),
+      PM.ingredient("pm-stainless-steel-pipe", 2),
+      PM.ingredient("pm-heavyweight-framing", 6)
+    },
+    results = {
+      PM.product("pm-fluid-burner", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

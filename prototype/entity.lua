@@ -7781,9 +7781,7 @@ data:extend({
           direction = defines.direction.east --[[@as int]]
         },
       },
-    graphics_set = 
-  {
-    animation =
+    picture =
     {
       layers =
       {
@@ -7811,8 +7809,8 @@ data:extend({
         }
       }
     }
-  },
-}}
+  } 
+}
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
