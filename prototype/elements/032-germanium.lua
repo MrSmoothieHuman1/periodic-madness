@@ -56,7 +56,7 @@ data:extend({
         type = "recipe",
         name = "pm-germanium-ore-concentrate",
         enabled = false,
-        energy_required = 18,
+        energy_required = 14,
         category = "pm-crushing",
         subgroup = "pm-germanium-mt",
         order = "a",

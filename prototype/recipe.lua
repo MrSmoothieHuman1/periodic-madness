@@ -525,7 +525,7 @@ data:extend({
     {
       PM.ingredient("pm-antimony-ore", 6),
       PM.ingredient("pm-arsenic-ore", 6),
-      PM.ingredient("pm-boron", 16, "fluid"),
+      PM.ingredient("pm-boron", 24, "fluid"),
       PM.ingredient("pm-tellurium-plate", 10),
       PM.ingredient("pm-germanium-ore", 4),
       PM.ingredient("pm-science-bottle", 1)

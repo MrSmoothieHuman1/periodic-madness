@@ -135,7 +135,7 @@ data:extend({
         type = "recipe",
         name = "pm-crude-antimony-sulfide-mixing",
         enabled = false,
-        energy_required = 6,
+        energy_required = 10,
         category = "pm-crushing",
         subgroup = "pm-antimony-mt",
         order = "d",
