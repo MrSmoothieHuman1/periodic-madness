@@ -56,12 +56,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/byproduct-handling.png",
     effects =
     {
-
       PM.unlock_recipe("pm-ferrum-leeching"),
       PM.unlock_recipe("pm-patina-leeching"),
-      PM.unlock_recipe("pm-transition-slag-leeching"),
-      PM.unlock_recipe("pm-chunk-slag-leeching")
-
     },
     prerequisites = {"pm-transition-metal-refining"},
     unit =
@@ -113,7 +109,7 @@ data:extend({
       PM.unlock_recipe("pm-mercury-liquifying"),
       PM.unlock_recipe("pm-mercury-vapour-condensing")
     },
-    prerequisites = {"automation", "pm-transition-metal-refining"},
+    prerequisites = {"automation", "pm-ezekiel-metal-refining"},
     unit =
     {
       count = 50,
@@ -336,13 +332,14 @@ data:extend({
       PM.unlock_recipe("pm-transition-manganese-leeching"),
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
     },
-    prerequisites = {"automation", "pm-ezekiel-ore-purifying"},
+    prerequisites = {"logistic-science-pack"},
     unit =
     {
-      count = 30,
+      count = 50,
       ingredients =
       {
-        {"automation-science-pack", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
       },
       time = 15
     }
@@ -358,6 +355,8 @@ data:extend({
       PM.unlock_recipe("pm-ezekiel-copper-purifying"),
       PM.unlock_recipe("pm-ezekiel-nickel-purifying"),
       PM.unlock_recipe("pm-ezekiel-zinc-purifying"),
+      PM.unlock_recipe("pm-transition-slag-leeching"),
+      PM.unlock_recipe("pm-chunk-slag-leeching")
     },
     prerequisites = {"automation", "pm-chlorine-processing"},
     unit =

@@ -120,6 +120,8 @@ Date: 2024-08-09
     - Changed explosives recipe, and the basic rockets recipe.  I will be adding better versions of these recipes, but at a small time in the future.
     - Moved explosive rockets into R-NM.
     - Changed tiered buildings to lower pollution output instead of increase it.
+    - Moved transition metal refining into TM science.
+    - Changed TM science to require steel processing as an unlock.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
