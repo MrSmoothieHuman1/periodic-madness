@@ -3188,8 +3188,8 @@ data:extend({
     },
     enabled = false,
     energy_required = 1,
-    subgroup = "pm-circuits",
-    order = "aa",
+    subgroup = "pm-advanced-circuits",
+    order = "a",
     allow_productivity = true,
     show_amount_in_title = true,
     ingredients = 
@@ -3206,9 +3206,11 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-electronic-integrated-circuits",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-basic-integrated-circuits.png",
     enabled = false,
-    subgroup = "pm-circuits",
-    order = "ba",
+    subgroup = "pm-advanced-circuits",
+    order = "b",
     allow_productivity = true,
     show_amount_in_title = true,
     ingredients = 
@@ -3225,9 +3227,22 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-fluid-circuit-breadboard",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluid-circuit-breadboard.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon_size = 64,
+        scale = 0.4
+      },
+    },
     energy_required = 1.5,
-    subgroup = "pm-circuits",
-    order = "da",
+    subgroup = "pm-advanced-circuits",
+    order = "c",
     enabled = false,
     allow_productivity = true,
     show_amount_in_title = true,
@@ -3246,9 +3261,11 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-fluid-integrated-circuits",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-fluid-integrated-circuits.png",
     energy_required = 1,
-    subgroup = "pm-circuits",
-    order = "fa",
+    subgroup = "pm-advanced-circuits",
+    order = "d",
     show_amount_in_title = true,
     enabled = false, 
     allow_productivity = true,
@@ -3267,9 +3284,22 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-advanced-circuit-breadboard",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/advanced-circuit-breadboard.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon_size = 64,
+        scale = 0.4
+      },
+    },
     energy_required = 3,
-    subgroup = "pm-circuits",
-    order = "ha",
+    subgroup = "pm-advanced-circuits",
+    order = "e",
     enabled = false,
     allow_productivity = true,
     show_amount_in_title = true,
@@ -3288,9 +3318,11 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-advanced-integrated-circuits",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-advanced-integrated-circuits.png",
     energy_required = 1,
-    subgroup = "pm-circuits",
-    order = "ia",
+    subgroup = "pm-advanced-circuits",
+    order = "f",
     show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
@@ -3309,10 +3341,23 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-processing-circuit-breadboard",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/processing-breadboard.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon_size = 64,
+        scale = 0.4
+      },
+    },
     energy_required = 4.5,
     category = "pm-advanced-crafting-with-fluid",
-    subgroup = "pm-circuits",
-    order = "ka",
+    subgroup = "pm-advanced-circuits",
+    order = "g",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -3332,9 +3377,11 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-processing-integrated-circuits",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-processing-integrated-circuits.png",
     energy_required = 1,
-    subgroup = "pm-circuits",
-    order = "la",
+    subgroup = "pm-advanced-circuits",
+    order = "h",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -3357,8 +3404,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "crafting-with-fluid",
-    subgroup = "pm-circuits",
-    order = "na",
+    subgroup = "pm-advanced-circuits",
+    order = "i",
     allow_productivity = true,
     ingredients =
     {

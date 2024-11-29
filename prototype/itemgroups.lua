@@ -362,6 +362,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-advanced-circuits",
+    group = "intermediate-products",
+    order = "ma"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-molded-circuits",
     group = "intermediate-products",
     order = "n"
