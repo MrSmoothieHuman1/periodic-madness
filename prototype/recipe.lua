@@ -528,6 +528,7 @@ data:extend({
       PM.ingredient("pm-boron", 24, "fluid"),
       PM.ingredient("pm-tellurium-plate", 10),
       PM.ingredient("pm-germanium-ore", 4),
+      PM.ingredient("pm-silicon-ore", 4),
       PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,

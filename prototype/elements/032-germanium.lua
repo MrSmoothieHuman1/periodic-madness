@@ -80,7 +80,7 @@ data:extend({
         type = "recipe",
         name = "pm-concentrate-seperation",
        enabled = false,
-        energy_required = 9,
+        energy_required = 8,
         category = "pm-acids",
         subgroup = "pm-germanium-mt",
         order = "b",

@@ -104,7 +104,7 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/quartzite-leeching.png",
         enabled = false,
-        energy_required = 10,
+        energy_required = 8,
         category = "pm-acids",
         subgroup = "pm-silicon-mt",
         order = "a",
