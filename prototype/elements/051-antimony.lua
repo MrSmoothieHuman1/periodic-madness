@@ -44,10 +44,10 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/stibnite.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/stibnite.png", size = 128, scale = 0.125},
-            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-2.png", size = 128, scale = 0.125},
-            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-3.png", size = 128, scale = 0.125},
-            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-4.png", size = 128, scale = 0.125},
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite.png", size = 128, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-2.png", size = 128, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-3.png", size = 128, scale = 0.25},
+            {filename = "__periodic-madness__/graphics/icons/ores/stibnite-4.png", size = 128, scale = 0.25},
         },
         subgroup = "pm-antimony-mt",
         order = "d",
