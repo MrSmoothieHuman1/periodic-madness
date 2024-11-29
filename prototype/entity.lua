@@ -3885,7 +3885,7 @@ data:extend({
     {
       pipe_picture = assembler2pipepictures(),
       pipe_covers = pipecoverspictures(),
-      volume = 200,
+      volume = 500,
       pipe_connections =
       {
         { direction = defines.direction.west, position = {-1, 0}},
@@ -3904,7 +3904,6 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-
     graphics_set =
     {
       drilling_vertical_movement_duration = 10 / electric_drill_animation_speed,
@@ -5309,12 +5308,11 @@ data:extend({
         scale = 0.5
       }
     },
-
     mining_speed = 1,
     energy_source =
     {
       type = "electric",
-      emissions_per_minute = {pollution = 14},
+      emissions_per_minute = {pollution = 7},
       usage_priority = "secondary-input"
     },
     energy_usage = "120kW",
@@ -5329,7 +5327,6 @@ data:extend({
     },
     monitor_visualization_tint = { r = 78, g = 173, b = 255 },
     fast_replaceable_group = "mining-drill",
-
     circuit_wire_connection_points = circuit_connector_definitions["electric-mining-drill"].points,
     circuit_connector_sprites = circuit_connector_definitions["electric-mining-drill"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance
@@ -6420,7 +6417,7 @@ data:extend({
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.north, position = {-0.5, 2.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.north, position = {0.5, -2.5}}},
       },
       {
         production_type = "input",
@@ -6500,7 +6497,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 3.5},
+      emissions_per_minute = {pollution = 2.5},
     },
     working_sound =
     {

@@ -119,6 +119,7 @@ Date: 2024-08-09
     - Remodelled module lights. I remodelled most things, but i just like them.
     - Changed explosives recipe, and the basic rockets recipe.  I will be adding better versions of these recipes, but at a small time in the future.
     - Moved explosive rockets into R-NM.
+    - Changed tiered buildings to lower pollution output instead of increase it.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
