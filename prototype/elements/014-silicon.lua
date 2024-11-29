@@ -187,12 +187,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-silicon-tetrachloride-handling",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/silicon-tetrachloride-handling.png",
         enabled = false,
         energy_required = 9,
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "da",
-        main_product = "pm-trichlorosilane",
         ingredients = 
         {
             PM.ingredient("pm-silicon-tetrachloride", 10, "fluid"),
