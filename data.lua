@@ -114,7 +114,7 @@ data:extend({
     localised_name = {"","[entity=pm-transition-metals] ", {"entity-name.pm-transition-metals"}},
     richness = true,
     order = "b-e"
-	}--[[@as data.AutoplaceControl]],
+	},
 	{
     type = "resource",
     icon_size = 64,
@@ -143,7 +143,6 @@ data:extend({
       starting_rq_factor_multiplier = 1.7,
       additional_richness = 1500
     },
-
     stage_counts = {1000000, 40000, 24000, 20000, 12000, 10000, 7000, 3000},
     stages =
     {
@@ -157,7 +156,7 @@ data:extend({
         scale = 0.5
       }
     },
-  }--[[@as data.ResourceEntityPrototype]],
+  },
   {
     type = "autoplace-control",
     category = "resource",
@@ -474,3 +473,16 @@ data:extend{(AcidPlant)}
 if data.raw["utility-constants"].default.select_slot_row_count == 10 then
   data.raw["utility-constants"].default.select_slot_row_count = 12
 end
+
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-nickel-ore"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-nickel-ore"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-zinc-ore"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-zinc-ore"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-transition-metals"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-transition-metals"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-post-transition-metals"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-post-transition-metals"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-metalloids"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-metalloids"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkali-metals"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkali-metals"] = {}

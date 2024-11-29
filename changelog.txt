@@ -1,6 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.001
+Date: 2024-11-29
+  The i want ONE, ONE!!! update to go smoothly Update:
+
+  Fixes:
+    - Fixed ores not spawning??? i just want to sleep man
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.000
-Date: 2024-08-09
+Date: 2024-11-29
   The metalloid? i hardly know her! (oh and some graphical updates ig) Update:
 
   Additions:
