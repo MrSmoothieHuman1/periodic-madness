@@ -503,13 +503,14 @@ data.raw["recipe"]["cannon-shell"].ingredients =
 {
   PM.ingredient("pm-polyethylene-plastic", 2),
   PM.ingredient("explosives", 1),
-  PM.ingredient("pm-stainless-steel-alloy", 2)
+  PM.ingredient("pm-tungsten-plate", 4),
 }
 data.raw["recipe"]["explosive-cannon-shell"].ingredients =
 {
   PM.ingredient("pm-polyethylene-plastic", 2),
-  PM.ingredient("explosives", 2),
-  PM.ingredient("pm-stainless-steel-alloy", 4)
+  PM.ingredient("explosives", 3),
+  PM.ingredient("pm-stainless-steel-alloy", 4),
+  PM.ingredient("pm-tungsten-plate", 4),
 }
 data.raw["recipe"]["slowdown-capsule"].category = "crafting-with-fluid"
 data.raw["recipe"]["slowdown-capsule"].results = { PM.product("slowdown-capsule", 2) }
