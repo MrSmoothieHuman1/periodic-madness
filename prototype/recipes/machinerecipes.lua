@@ -717,47 +717,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-walkable-solar-panel-1",
-    category = "crafting-with-fluid",
-    subgroup = "energy",
-    order = "da",
-    --enabled = false,
-    energy_required = 4,
-    ingredients =
-    {
-      PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-solar-cell", 4),
-      PM.ingredient("pm-lightweight-panelling", 20),
-      PM.ingredient("pm-liquid-gallium", 6, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-walkable-solar-panel-1", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-walkable-solar-panel-2",
-    category = "crafting-with-fluid",
-    subgroup = "energy",
-    order = "ea",
-    --enabled = false,
-    energy_required = 4,
-    ingredients =
-    {
-      PM.ingredient("pm-walkable-solar-panel-1", 1),
-      PM.ingredient("processing-unit", 6),
-      PM.ingredient("pm-solar-cell", 6),
-      PM.ingredient("pm-lightweight-panelling", 20),
-      PM.ingredient("pm-liquid-gallium", 10, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-walkable-solar-panel-2", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-cyclotron",
     energy_required = 6,
     enabled = false,
