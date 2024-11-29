@@ -1110,6 +1110,15 @@ data.raw["technology"]["laser-shooting-speed-4"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["laser-shooting-speed-5"].prerequisites = {"laser-shooting-speed-4"}
+data.raw["technology"]["laser-shooting-speed-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
 data.raw["technology"]["laser-weapons-damage-1"].prerequisites = {"laser"}
 data.raw["technology"]["laser-weapons-damage-1"].unit.ingredients =
 {
@@ -1134,6 +1143,15 @@ data.raw["technology"]["laser-weapons-damage-3"].unit.ingredients =
   {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["laser-weapons-damage-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-5"].prerequisites = {"laser-weapons-damage-4"}
+data.raw["technology"]["laser-weapons-damage-5"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
