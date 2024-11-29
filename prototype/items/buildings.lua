@@ -425,7 +425,7 @@ data:extend({
     type = "item",
     name = "pm-heat-exchanger-2",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/cyclotron.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/heat-exchanger-2.png",
     subgroup = "energy",
     place_result = "pm-heat-exchanger-2",
     stack_size = 100 / 2,
