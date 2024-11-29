@@ -676,6 +676,20 @@ data.raw["recipe"]["personal-roboport-mk2-equipment"].ingredients =
   PM.ingredient("pm-heavyweight-framing", 16),
   PM.ingredient("pm-basic-wiring", 20)
 }
+data.raw["recipe"]["rocket"].category = "crafting-with-fluid"
+data.raw["recipe"]["rocket"].ingredients = 
+{
+  PM.ingredient("pm-kerosene", 10, "fluid"),
+  PM.ingredient("pm-hydrogen-peroxide", 5, "fluid"),
+  PM.ingredient("pm-stainless-steel-alloy", 2),
+  PM.ingredient("explosives", 1)
+}
+data.raw["recipe"]["explosives"].ingredients = 
+{
+  PM.ingredient("pm-gunpowder", 8),
+  PM.ingredient("sulfur", 3),
+  PM.ingredient("pm-vulcanised-rubber", 2)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
