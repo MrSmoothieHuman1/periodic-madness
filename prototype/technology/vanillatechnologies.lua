@@ -512,6 +512,8 @@ data.raw["technology"]["explosives"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["explosives"].unit.time = 30
+data.raw["technology"]["explosives"].unit.count = 125
 
 data.raw["technology"]["cliff-explosives"].unit.ingredients =
 {
@@ -525,7 +527,6 @@ data.raw["technology"]["land-mine"].unit.ingredients =
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"military-science-pack", 1}
 }
 
 data.raw["technology"]["braking-force-1"].prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"}
@@ -934,6 +935,24 @@ data.raw["technology"]["flammables"].effects =
   PM.unlock_recipe("pm-gunpowder"),
   PM.unlock_recipe("pm-water-hydrogen-peroxide"),
 }
+data.raw["technology"]["rocketry"].unit.time = 45
+data.raw["technology"]["rocketry"].unit.count = 175
+data.raw["technology"]["rocketry"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["explosive-rocketry"].unit.time = 60
+data.raw["technology"]["explosive-rocketry"].unit.count = 250
+data.raw["technology"]["explosive-rocketry"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"

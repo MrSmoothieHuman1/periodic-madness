@@ -117,6 +117,8 @@ Date: 2024-08-09
     - Changed the max heat of polonium reactors from 1000 to 2500.
     - Moved steam turbines and heat exchangers down to A-ATM science, moved heat exchanger 2's to polonium processing.
     - Remodelled module lights. I remodelled most things, but i just like them.
+    - Changed explosives recipe, and the basic rockets recipe.  I will be adding better versions of these recipes, but at a small time in the future.
+    - Moved explosive rockets into R-NM.
 
   Fixes:
     - Fixed some wood-related recipes not being in the same place.
