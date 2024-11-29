@@ -694,6 +694,7 @@ data.raw["technology"]["worker-robots-speed-2"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
+data.raw["technology"]["worker-robots-speed-3"].prerequisites = {"worker-robot-speed-2"}
 data.raw["technology"]["worker-robots-speed-3"].effects =
 {
   PM.modify("worker-robot-speed", 0.25)
@@ -743,6 +744,7 @@ data.raw["technology"]["worker-robots-storage-2"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["worker-robots-storage-3"].prerequisites = {"worker-robots-storage-2"}
 data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -800,6 +802,7 @@ data.raw["technology"]["research-speed-6"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
+data.raw["technology"]["research-speed-6"].prerequisites = {"research-speed-5"}
 data.raw["technology"]["research-speed-6"].unit.count = 1000
 data.raw["technology"]["research-speed-6"].unit.time = 80
 
@@ -967,6 +970,7 @@ data.raw["technology"]["stronger-explosives-3"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
+data.raw["technology"]["stronger-explosives-4"].prerequisites = {"stronger-explosives-3"}
 data.raw["technology"]["stronger-explosives-4"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1260,6 +1264,7 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
     modifier = 0.1
   },
 }
+data.raw["technology"]["physical-projectile-damage-6"].prerequisites = {"physical-projectile-damage-5"}
 data.raw["technology"]["physical-projectile-damage-6"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
@@ -1422,6 +1427,7 @@ data.raw["technology"]["weapon-shooting-speed-5"].effects =
     modifier = 0.1
   },
 }
+data.raw["technology"]["weapon-shooting-speed-6"].prerequisites = {"weapon-shooting-speed-5"}
 data.raw["technology"]["weapon-shooting-speed-6"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
