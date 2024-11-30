@@ -2817,6 +2817,8 @@ data:extend({
     name = "pm-garnet-saw",
     energy_required = 5,
     category = "advanced-crafting",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
     allow_productivity = true,
     ingredients = 
     {
