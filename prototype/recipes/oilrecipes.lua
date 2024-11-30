@@ -171,7 +171,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-plastic-pellets", 10),
+      PM.product("pm-plastic-pellets", 12),
       PM.product_chance("pm-catalyst-container", 1, 0.98)
     }
   },
