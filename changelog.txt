@@ -5,6 +5,7 @@ Date: 2024-11-30
 
   Fixes:
     - Fixed dirty boilers fluid boxes being fucked.
+    - Added locales for chunk plate recipes.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.002
