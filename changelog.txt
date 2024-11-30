@@ -11,6 +11,7 @@ Date: 2024-11-30
     - ACTUTALLY fixed dirty boilers fluid boxes being fucked.
     - Added locales for chunk plate recipes.
     - Fixed depleted uranium fuel cells not being in the correct subgroup.
+    - Made byproduct handling take the correct science packs.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.003
