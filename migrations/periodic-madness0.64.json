@@ -5,7 +5,7 @@
         ["pm-concentrate-seperation", "pm-germanium-concentrate-seperation"],
         ["pm-iron-sulfur-clustering", "pm-iron-sulfur-cluster"],
         ["pm-copper-tailings-sludging", "pm-copper-sludge"],
-        ["pm-silicon-rod-forming", "pm-polysilicon-rod"],
+        ["pm-polysilicon-rod-forming", "pm-polysilicon-rod"],
         ["phosphorus-stone-filtering", "pm-phosphate-rock"],
         ["pm-glass-smelting", "pm-glass-pane"],
         ["basic-motor", "pm-basic-motor"],
