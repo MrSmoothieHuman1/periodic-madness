@@ -128,7 +128,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-francium-bombardment",
+    name = "pm-francium",
     enabled = false,
     energy_required = 6,
     category = "chemistry",

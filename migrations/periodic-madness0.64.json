@@ -19,7 +19,10 @@
         ["pm-iodine-solution-concentration", "pm-hydrogen-iodide"],
         ["pm-factorian-bacteria-filtering", "pm-bacteriaed-agar-solution"],
         ["pm-factorian-cyanobacteria-filtering", "pm-cyanobacteriaed-agar-solution"],
-        ["pm-wood-strip-washing", "pm-cellouse-pulp"]
+        ["pm-wood-strip-washing", "pm-cellouse-pulp"],
+        ["pm-francium-bombardment", "pm-francium"],
+        ["pm-pollucite-mixing", "pm-caesium-rubidium-alum"],
+        ["pm-caesium-chloride-leeching", "pm-caesium"]
 
     ],
     "item":

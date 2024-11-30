@@ -528,7 +528,7 @@ data:extend({
       PM.ingredient("pm-boron", 24, "fluid"),
       PM.ingredient("pm-tellurium-plate", 10),
       PM.ingredient("pm-germanium-ore", 4),
-      PM.ingredient("pm-silicon-ore", 3),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 3),
       PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
@@ -2721,7 +2721,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-citrine-ptm",
     order = "b",
-    main_product = "pm-silicon-ore",
+    main_product = "pm-industrial-grade-silicon-ore",
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
@@ -2729,7 +2729,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-silicon-ore", 1, 5, 0.75),
+      PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 5, 0.75),
       PM.product_range("pm-oxygen-gas", 5, 11, "fluid"),
       PM.product_range_chance("iron-ore", 0, 3, 0.65)
     }
@@ -2810,7 +2810,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-manganese-ore", 6, 14),
-      PM.product_range_chance("pm-silicon-ore", 1, 5, 0.55),
+      PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 5, 0.55),
       PM.product_range("pm-calcium-ore", 4, 8),
     }
   },
@@ -3435,7 +3435,7 @@ data:extend({
     {
       PM.ingredient("pm-dichlorosilane", 8, "fluid"),
       PM.ingredient("copper-plate", 4),
-      PM.ingredient("pm-silicon-ore", 2),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 2),
       PM.ingredient("pm-methyl-chloride", 5, "fluid")
     },
     results = 

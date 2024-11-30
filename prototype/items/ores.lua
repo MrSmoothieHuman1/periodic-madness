@@ -62,7 +62,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-silicon-ore",
+    name = "pm-industrial-grade-silicon-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
     pictures =

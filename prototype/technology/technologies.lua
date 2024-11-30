@@ -1892,7 +1892,7 @@ data:extend({
       PM.unlock_recipe("pm-coolant"),
       PM.unlock_recipe("pm-crystallizer"),
       PM.unlock_recipe("pm-bismuth-leeching"),
-      PM.unlock_recipe("pm-bismuth-mixing"),
+      PM.unlock_recipe("pm-bismite"),
       PM.unlock_recipe("pm-bismuth-crystallisation"),
       PM.unlock_recipe("pm-lead-leeching"),
       PM.unlock_recipe("pm-lead-crushing"),
@@ -2308,7 +2308,7 @@ data:extend({
       PM.unlock_recipe("pm-magneto-orbital-trap"),
       PM.unlock_recipe("pm-francium-forming"),
       PM.unlock_recipe("pm-magneto-orbital-trap-seperation"),
-      PM.unlock_recipe("pm-francium-bombardment"),
+      PM.unlock_recipe("pm-francium"),
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
@@ -2519,7 +2519,7 @@ data:extend({
       PM.unlock_recipe("pm-caesium-antimony-to-iodine"),
       PM.unlock_recipe("pm-caesium-hexachlorocerate-seperation"),
       PM.unlock_recipe("pm-caesium-chloride"),
-      PM.unlock_recipe("pm-caesium-chloride-leeching")
+      PM.unlock_recipe("pm-caesium")
     },
     prerequisites = {"pm-flourine-processing", "pm-potassium-processing"},
     unit =
@@ -3058,7 +3058,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/rubidium-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-pollucite-mixing"),
+      PM.unlock_recipe("pm-caesium-rubidium-alum"),
       PM.unlock_recipe("pm-caesium-rubidium-alum-seperation"),
       PM.unlock_recipe("pm-70-to-100-rubidium-alum"),
       PM.unlock_recipe("pm-50-to-70-rubidium-alum"),

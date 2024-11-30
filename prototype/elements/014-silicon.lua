@@ -160,7 +160,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-silicon-ore", 1, 4, 0.5),
+            PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 4, 0.5),
             PM.product_range("pm-ferrum", 2, 6)
         }
     },
@@ -244,7 +244,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-silicon-ore", 3, 5),
+            PM.product_range("pm-industrial-grade-silicon-ore", 3, 5),
             PM.product_range_chance("pm-argon-gas", 2, 8, 0.65, "fluid"),
             PM.product_range("pm-hydrogen-gas", 4, 8, "fluid")
         }
@@ -264,12 +264,12 @@ data:extend({
         {
             PM.ingredient("pm-silane", 15, "fluid"),
             PM.ingredient("pm-nitrogen-gas", 60, "fluid"),
-            PM.ingredient("pm-silicon-ore", 10)
+            PM.ingredient("pm-industrial-grade-silicon-ore", 10)
         },
         results = 
         {
             PM.product_chance("pm-low-quality-polysilicon", 2, 0.95),
-            PM.product_range("pm-silicon-ore", 0, 5)
+            PM.product_range("pm-industrial-grade-silicon-ore", 0, 5)
         }
     },
     {

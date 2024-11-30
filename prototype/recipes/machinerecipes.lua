@@ -1026,7 +1026,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("heat-pipe", 1),
-      PM.ingredient("pm-silicon-ore", 5),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 5),
       PM.ingredient("pm-stainless-steel-alloy", 10)
     },
     results =

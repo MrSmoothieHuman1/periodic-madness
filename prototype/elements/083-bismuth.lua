@@ -53,7 +53,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-bismuth-mixing",
+    name = "pm-bismite",
     enabled = false,
     energy_required = 16,
     category = "pm-acids",

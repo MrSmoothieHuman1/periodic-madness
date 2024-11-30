@@ -302,7 +302,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-molten-iron", 2.5, "fluid"),
-      PM.ingredient("pm-silicon-ore", 3),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 3),
       PM.ingredient("pm-coke", 2),
       PM.ingredient("pm-borax", 2)
     },
@@ -338,7 +338,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-molten-brass", 2.5, "fluid"),
-      PM.ingredient("pm-silicon-ore", 3),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 3),
       PM.ingredient("pm-antimony-ore", 3),
       PM.ingredient("pm-borax", 2)
     },

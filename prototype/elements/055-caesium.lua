@@ -261,7 +261,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-caesium-chloride-leeching",
+    name = "pm-caesium",
     enabled = false,
     energy_required = 8,
     category = "pm-washing",

@@ -76,7 +76,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/gas-water-electroylsis.png",
     energy_required = 1.5,
-    --enabled = false,
+    enabled = false,
     category = "pm-electrolysis",
     subgroup = "pm-hydrogen-rnm",
     order = "ba",

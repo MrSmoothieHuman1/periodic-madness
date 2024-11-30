@@ -64,7 +64,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-pollucite-mixing",
+    name = "pm-caesium-rubidium-alum",
     enabled = false,
     category = "pm-moltening",
     subgroup = "pm-rubidium-am",
