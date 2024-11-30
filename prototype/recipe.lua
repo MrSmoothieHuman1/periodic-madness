@@ -693,9 +693,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "basic-motor",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/basic-motor.png",
+    name = "pm-basic-motor",
     subgroup = "pm-intermediates",
     energy_required = 1,
     ingredients =
@@ -710,8 +708,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-mini-motor",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/mini-motor.png",
     subgroup = "pm-intermediates",
     energy_required = 2,
     enabled = false,
@@ -2546,7 +2542,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-lithium-battery-equipment",
+    name = "pm-lithium-sulfur-battery-equipment",
     subgroup = "pm-modular-storage",
     order = "c",
     enabled = false,
@@ -2566,7 +2562,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-lithium-battery-mk2-equipment",
+    name = "pm-lithium-sulfur-battery-mk2-equipment",
     subgroup = "pm-modular-storage",
     order = "d",
     enabled = false,

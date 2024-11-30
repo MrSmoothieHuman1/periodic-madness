@@ -12,6 +12,9 @@ Date: 2024-11-30
     - Added locales for chunk plate recipes.
     - Fixed depleted uranium fuel cells not being in the correct subgroup.
     - Made byproduct handling take the correct science packs.
+    - Added essenitally every locale missing.
+    - Migrated a lot of recipes to make said locales easier.
+    - Moved garnet saws, hydrogen peroxide and atmosphere recipes into subgroups.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.003

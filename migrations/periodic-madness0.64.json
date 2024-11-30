@@ -6,7 +6,12 @@
         ["pm-iron-sulfur-clustering", "pm-iron-sulfur-cluster"],
         ["pm-copper-tailings-sludging", "pm-copper-sludge"],
         ["pm-silicon-rod-forming", "pm-polysilicon-rod"],
-        ["phosphorus-stone-filtering", "pm-phosphate-rock"]
+        ["phosphorus-stone-filtering", "pm-phosphate-rock"],
+        ["pm-glass-smelting", "pm-glass-pane"],
+        ["basic-motor", "pm-basic-motor"],
+        ["pm-lithium-battery-equipment", "pm-lithium-sulfur-battery-equipment"],
+        ["pm-lithium-battery-mk2-equipment", "pm-lithium-sulfur-battery-mk2-equipment"],
+        ["pm-atmospheric-gathering", "pm-atmosphere"]
     ],
     "item":
     [

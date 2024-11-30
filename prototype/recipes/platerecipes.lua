@@ -100,7 +100,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-glass-smelting",
+    name = "pm-glass-pane",
     category = "smelting",
     subgroup = "pm-glassing",
     order = "b",

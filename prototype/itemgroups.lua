@@ -450,6 +450,12 @@ data:extend({
 
   {
     type = "item-subgroup",
+    name = "pm-atmosphere-rnm",
+    group = "pm-reactive-non-metals",
+    order = "A"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-oxygen-rnm",
     group = "pm-reactive-non-metals",
     order = "a"
