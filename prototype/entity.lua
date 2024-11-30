@@ -681,7 +681,7 @@ data:extend({
         {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
       production_type = "input",
-      filter = "water"
+      filter = "pm-seawater"
     },
     output_fluid_box =
     {

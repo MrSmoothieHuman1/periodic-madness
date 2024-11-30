@@ -4,7 +4,7 @@ Date: 2024-11-30
   The I WANT ONE Update:
 
   Fixes:
-    - Fixed dirty boilers fluid boxes being fucked.
+    - ACTUTALLY fixed dirty boilers fluid boxes being fucked.
     - Added locales for chunk plate recipes.
 
 ---------------------------------------------------------------------------------------------------
