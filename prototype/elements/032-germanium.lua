@@ -78,7 +78,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-concentrate-seperation",
+        name = "pm-germanium-concentrate-seperation",
         enabled = false,
         energy_required = 6,
         category = "pm-acids",

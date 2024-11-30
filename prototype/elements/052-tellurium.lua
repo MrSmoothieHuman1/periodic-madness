@@ -95,7 +95,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-hydrotellurites",
+    name = "pm-tellurium-oxide",
     enabled = false,
     energy_required = 4,
     category = "chemistry",

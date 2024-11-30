@@ -1,0 +1,7 @@
+{
+    "recipe":
+    [
+        ["pm-hydrotellurites", "pm-tellurium-oxide"],
+        ["pm-concentrate-seperation", "pm-germanium-concentrate-seperation"]
+    ]
+}
