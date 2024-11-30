@@ -687,7 +687,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-yttrium-ore", 2),
-      PM.ingredient("pm-oxygen-gas", 20, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 40, "fluid"),
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {

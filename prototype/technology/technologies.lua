@@ -3357,6 +3357,8 @@ data:extend({
       PM.unlock_recipe("pm-bastnasite-C-seperation"),
       PM.unlock_recipe("pm-yttrium-fluoride"),
       PM.unlock_recipe("pm-yttrium"),
+      PM.unlock_recipe("pm-yttria-catalyst"),
+      PM.unlock_recipe("pm-yttrium-ethylene-polymerisation"),
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

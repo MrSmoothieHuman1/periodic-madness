@@ -5,6 +5,7 @@ Date: 2024-11-30
 
   Additions:
     - Added an early game way to grow wood. Not using pills.
+    - Actually added the yttrium plastic pellet recipe. whoops! it'll be moved into its own technology.. soon...
 
   Fixes:
     - ACTUTALLY fixed dirty boilers fluid boxes being fucked.
