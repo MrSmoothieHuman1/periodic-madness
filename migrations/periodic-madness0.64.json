@@ -11,7 +11,8 @@
         ["basic-motor", "pm-basic-motor"],
         ["pm-lithium-battery-equipment", "pm-lithium-sulfur-battery-equipment"],
         ["pm-lithium-battery-mk2-equipment", "pm-lithium-sulfur-battery-mk2-equipment"],
-        ["pm-atmospheric-gathering", "pm-atmosphere"]
+        ["pm-atmospheric-gathering", "pm-atmosphere"],
+        ["pm-bismuth-mixing", "pm-bismite"]
     ],
     "item":
     [
