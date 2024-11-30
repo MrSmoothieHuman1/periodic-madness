@@ -48,7 +48,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-bromide-ion-oxidisation",
+    name = "pm-trace-bromine",
     icon_size = 64,
     enabled = false,
     energy_required = 6,
@@ -67,7 +67,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-trace-bromine-condensation",
+    name = "pm-bromine",
     enabled = false,
     energy_required = 3,
     category = "pm-atmospheric-condensing",

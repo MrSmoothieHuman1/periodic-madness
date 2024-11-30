@@ -1040,7 +1040,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-atmospheric-condenser"),
-      PM.unlock_recipe("pm-atmospheric-gathering"),
+      PM.unlock_recipe("pm-atmosphere"),
       PM.unlock_recipe("pm-oxygen-atmosphere-filtering"),
       PM.unlock_recipe("pm-nitrogen-atmosphere-filtering"),
       PM.unlock_recipe("pm-chlorine-atmosphere-filtering"),
@@ -1605,7 +1605,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/biomass-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-wood-strip-washing"),
+      PM.unlock_recipe("pm-cellouse-pulp"),
       PM.unlock_recipe("pm-biomass")
     },
     prerequisites = {"pm-greenhouse"},
@@ -1630,7 +1630,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-factorian-bacteria-greenhouse"),
       PM.unlock_recipe("pm-agar-solution"),
-      PM.unlock_recipe("pm-factorian-bacteria-filtering"),
+      PM.unlock_recipe("pm-bacteriaed-agar-solution"),
       PM.unlock_recipe("pm-gene-harvesting"),
 
     },
@@ -2542,7 +2542,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/geneva's-neglection-magazine.png",
     effects =
     {
-      PM.unlock_recipe("pm-factorian-cyanobacteria-filtering"),
+      PM.unlock_recipe("pm-cyanobacteriaed-agar-solution"),
       PM.unlock_recipe("pm-melatonin-harvesting"),
       PM.unlock_recipe("pm-phosgene"),
       PM.unlock_recipe("pm-genevas-neglection-magazine"),
@@ -2899,8 +2899,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-hydrogen-bromine-leeching"),
       PM.unlock_recipe("pm-hydrogen-bromide-seperation"),
-      PM.unlock_recipe("pm-bromide-ion-oxidisation"),
-      PM.unlock_recipe("pm-trace-bromine-condensation"),
+      PM.unlock_recipe("pm-trace-bromine"),
+      PM.unlock_recipe("pm-bromine"),
       PM.unlock_recipe("pm-vinyl-bromide")
     },
     prerequisites = {"chemical-science-pack"},
@@ -3110,9 +3110,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/iodine-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-brine-acidifying"),
+      PM.unlock_recipe("pm-acidic-brine"),
       PM.unlock_recipe("pm-iodine-solution"),
-      PM.unlock_recipe("pm-iodine-solution-concentration"),
+      PM.unlock_recipe("pm-hydrogen-iodide"),
       PM.unlock_recipe("pm-hydrogen-iodide-seperation"),
       PM.unlock_recipe("pm-iodine-vanadate-solution-seperation"),
     },
@@ -3505,7 +3505,7 @@ data:extend({
     },
     effects = 
     {
-      PM.unlock_recipe("pm-lithium-battery-equipment")
+      PM.unlock_recipe("pm-lithium-sulfur-battery-equipment")
     },
     prerequisites = {"pm-lithium-sulfur-battery"},
     unit =
@@ -3543,7 +3543,7 @@ data:extend({
     },
     effects = 
     {
-      PM.unlock_recipe("pm-lithium-battery-mk2-equipment")
+      PM.unlock_recipe("pm-lithium-sulfur-battery-mk2-equipment")
     },
     prerequisites = {"pm-lithium-battery-equipment", "low-density-structure"},
     unit =

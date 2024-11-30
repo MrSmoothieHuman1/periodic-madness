@@ -12,7 +12,15 @@
         ["pm-lithium-battery-equipment", "pm-lithium-sulfur-battery-equipment"],
         ["pm-lithium-battery-mk2-equipment", "pm-lithium-sulfur-battery-mk2-equipment"],
         ["pm-atmospheric-gathering", "pm-atmosphere"],
-        ["pm-bismuth-mixing", "pm-bismite"]
+        ["pm-bismuth-mixing", "pm-bismite"],
+        ["pm-bromide-ion-oxidisation", "pm-trace-bromine"],
+        ["pm-trace-bromine-condensation", "pm-bromine"],
+        ["pm-brine-acidifying", "pm-acidic-brine"],
+        ["pm-iodine-solution-concentration", "pm-hydrogen-iodide"],
+        ["pm-factorian-bacteria-filtering", "pm-bacteriaed-agar-solution"],
+        ["pm-factorian-cyanobacteria-filtering", "pm-cyanobacteriaed-agar-solution"],
+        ["pm-wood-strip-washing", "pm-cellouse-pulp"]
+
     ],
     "item":
     [

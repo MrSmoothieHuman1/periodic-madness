@@ -30,7 +30,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-phopshate-rock",
+    name = "pm-phosphate-rock",
     enabled = false,
     energy_required = 3,
     category = "pm-crushing",

@@ -123,13 +123,13 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-wood-strip-washing",
+    name = "pm-cellouse-pulp",
     energy_required = 1,
     enabled = false,
     category = "pm-washing",
-    main_product = "pm-cellouse-pulp",
     subgroup = "pm-greenhousing-rnm",
     order = "e",
+    main_product = "pm-cellouse-pulp",
     ingredients =
     {
       PM.ingredient("pm-wood-strips", 5),
@@ -183,7 +183,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-factorian-bacteria-filtering",
+    name = "pm-bacteriaed-agar-solution",
     energy_required = 3,
     enabled = false,
     category = "crafting-with-fluid",
@@ -201,7 +201,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-factorian-cyanobacteria-filtering",
+    name = "pm-cyanobacteriaed-agar-solution",
     energy_required = 3,
     enabled = false,
     category = "crafting-with-fluid",

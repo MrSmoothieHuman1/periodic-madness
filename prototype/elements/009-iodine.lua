@@ -3,7 +3,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-brine-acidifying",
+    name = "pm-acidic-brine",
     enabled = false,
     energy_required = 20,
     category = "pm-leaching",
@@ -43,7 +43,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-iodine-solution-concentration",
+    name = "pm-hydrogen-iodide",
     enabled = false,
     energy_required = 5,
     category = "pm-washing",
