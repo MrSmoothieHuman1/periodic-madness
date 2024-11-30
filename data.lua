@@ -191,6 +191,7 @@ data:extend({
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
+      has_starting_area_placement = false,
       additional_richness = 1500
     },
 
@@ -243,6 +244,7 @@ data:extend({
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
+      has_starting_area_placement = false,
       additional_richness = 1500
     },
 
@@ -294,6 +296,7 @@ data:extend({
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
+      has_starting_area_placement = false,
       additional_richness = 1500
     },
 
