@@ -3,6 +3,24 @@ data:extend({
 
   {
     type = "recipe",
+    name = "pm-basic-basic-wood-growth",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/basic-basic-wood-growth.png",
+    energy_required = 20,
+    enabled = false,
+    ingredients = 
+    {
+      PM.ingredient("wood", 5),
+      PM.ingredient("water", 20, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("wood", 5, 8)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-basic-wood-growth",
     energy_required = 45,
     enabled = false,
@@ -159,7 +177,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-agar-solution", 50, "fluid")
+      PM.product("pm-agar-solution", 30, "fluid")
     }
   },
   {

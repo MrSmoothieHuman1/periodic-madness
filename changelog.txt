@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.004
+Date: 2024-11-30
+  The new content guys! jangle jangle! Update:
+
+  Additions:
+    - Added an early game way to grow wood. Not using pills.
+
+  Fixes:
+    - ACTUTALLY fixed dirty boilers fluid boxes being fucked.
+    - Added locales for chunk plate recipes.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.003
 Date: 2024-11-30
   The I WANT ONE Update:

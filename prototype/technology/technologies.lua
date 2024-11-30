@@ -154,7 +154,7 @@ data:extend({
       PM.unlock_recipe("pm-wood-stripping"),
       PM.unlock_recipe("pm-wood-strip-burning"),
       PM.unlock_recipe("pm-coal-burning"),
-
+      PM.unlock_recipe("pm-basic-basic-wood-growth")
     },
     prerequisites = {"logistic-science-pack"},
     unit =
@@ -213,7 +213,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-resin-forming"),
       PM.unlock_recipe("pm-basic-fluid-circuit"),
-      PM.unlock_recipe("pm-vacuum-former-1")
+      PM.unlock_recipe("pm-vacuum-former-1"),
     },
     prerequisites = {"pm-wood-processing", "pm-water-distillation", "pm-tempature-plating"},
     unit =
