@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.003
+Date: 2024-11-30
+  The I WANT ONE Update:
+
+  Fixes:
+    - Fixed dirty boilers fluid boxes being fucked.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.002
+Date: 2024-11-30
+  The i had 20 minutes to fix this Update:
+
+  Fixes:
+    - Fixed electronic circuits not being craftable at the start of the game.
+    - Fixed inserters not being craftable when they should be.
+    - Presumably fixed dirty boilers not working properly.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.001
 Date: 2024-11-29
   The i want ONE, ONE!!! update to go smoothly Update:

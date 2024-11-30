@@ -1482,7 +1482,8 @@ data.raw["technology"]["electronics"].effects =
   PM.unlock_recipe("pm-electronic-breadboard"),
   PM.unlock_recipe("electronic-circuit"),
   PM.unlock_recipe("small-electric-pole"),
-  PM.unlock_recipe("inserter")
+  PM.unlock_recipe("inserter"),
+  PM.unlock_recipe("iron-stick")
 }
 
 data.raw["technology"]["personal-roboport-equipment"].unit.ingredients = 

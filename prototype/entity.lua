@@ -317,7 +317,7 @@ data:extend({
       }
     }
   },
-    crafting_categories = {"crafting", "basic-crafting"},
+    crafting_categories = {"crafting", "basic-crafting", "pm-circuitry"},
     crafting_speed = 0.25,
     energy_usage = "75kW",
     energy_source =
@@ -657,15 +657,15 @@ data:extend({
     {
       {
         type = "fire",
-        percent = 90
+        percent = 50
       },
       {
         type = "explosion",
-        percent = 30
+        percent = 10
       },
       {
         type = "impact",
-        percent = 30
+        percent = 10
       }
     },
     collision_box = { { -1.29, -0.79 }, { 1.29, 0.79 } },
@@ -680,8 +680,8 @@ data:extend({
         {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0.5}},
         {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
-      production_type = "input-output",
-      filter = "pm-seawater"
+      production_type = "input",
+      filter = "water"
     },
     output_fluid_box =
     {
@@ -689,7 +689,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "input-output", direction = defines.direction.north, position = {0, 0.5}}
+        {flow_direction = "output", direction = defines.direction.north, position = {0, -0.5}}
       },
       production_type = "output",
       filter = "steam"
