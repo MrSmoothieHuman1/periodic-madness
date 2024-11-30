@@ -2,6 +2,14 @@
     "recipe":
     [
         ["pm-hydrotellurites", "pm-tellurium-oxide"],
-        ["pm-concentrate-seperation", "pm-germanium-concentrate-seperation"]
+        ["pm-concentrate-seperation", "pm-germanium-concentrate-seperation"],
+        ["pm-iron-sulfur-clustering", "pm-iron-sulfur-cluster"],
+        ["pm-copper-tailings-sludging", "pm-copper-sludge"],
+        ["pm-silicon-rod-forming", "pm-polysilicon-rod"],
+        ["phosphorus-stone-filtering", "pm-phosphate-rock"]
+    ],
+    "item":
+    [
+        ["pm-silicon-ore", "pm-industrial-grade-silicon-ore"]
     ]
 }

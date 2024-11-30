@@ -1549,7 +1549,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/phosphorus-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-phosphorus-stone-filtering"),
+      PM.unlock_recipe("pm-phosphate-rock"),
       PM.unlock_recipe("pm-phosphor-vapour"),
       PM.unlock_recipe("pm-phosphor-vapour-cooling"),
       PM.unlock_recipe("pm-phosphoric-acid-filtering"),
@@ -1694,7 +1694,7 @@ data:extend({
       PM.unlock_recipe("pm-myostatin-oxygenation"),
       PM.unlock_recipe("pm-myostatin-nitrogenation"),
       PM.unlock_recipe("pm-strength-bio-module"),
-      PM.unlock_recipe("pm-iron-sulfur-clustering"),
+      PM.unlock_recipe("pm-iron-sulfur-cluster"),
       PM.unlock_recipe("pm-CISD2"),
       PM.unlock_recipe("pm-health-bio-module"),
     },
@@ -3293,10 +3293,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/tellurium-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-copper-tailings-sludging"),
+      PM.unlock_recipe("pm-copper-sludge"),
       PM.unlock_recipe("pm-sodium-tellurite"),
       PM.unlock_recipe("pm-sodium-bicarbonate-tellurite"),
-      PM.unlock_recipe("pm-hydrotellurites"),
+      PM.unlock_recipe("pm-tellurium-oxide"),
       PM.unlock_recipe("pm-tellurium-oxide-seperation"),
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
@@ -3384,7 +3384,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-germanium-ore-concentrate"),
-      PM.unlock_recipe("pm-concentrate-seperation"),
+      PM.unlock_recipe("pm-germanium-concentrate-seperation"),
       PM.unlock_recipe("pm-germanium-sulfide-to-oxide"),
       PM.unlock_recipe("pm-germanium-oxide-to-tetrachloride"),
       PM.unlock_recipe("pm-germanium-tetrachloride-seperation")
@@ -3416,11 +3416,11 @@ data:extend({
       PM.unlock_recipe("pm-trichlorosilane"),
       PM.unlock_recipe("pm-silicon-tetrachloride-handling"),
       PM.unlock_recipe("pm-silane"),
-      PM.unlock_recipe("pm-industrial-grade-silicon"),
+      PM.unlock_recipe("pm-industrial-grade-silicon-ore"),
       PM.unlock_recipe("pm-low-quality-polysilicon"),
       PM.unlock_recipe("pm-low-to-med-quality-polysilicon"),
       PM.unlock_recipe("pm-med-to-high-quality-polysilicon"),
-      PM.unlock_recipe("pm-silicon-rod-forming"),
+      PM.unlock_recipe("pm-polysilicon-rod"),
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =

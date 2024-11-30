@@ -1228,7 +1228,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-iron-sulfur-clustering",
+    name = "pm-iron-sulfur-cluster",
     enabled = false,
     energy_required = 12,
     category = "crafting-with-fluid",

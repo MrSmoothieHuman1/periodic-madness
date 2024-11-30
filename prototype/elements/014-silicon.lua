@@ -229,7 +229,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-industrial-grade-silicon",
+        name = "pm-industrial-grade-silicon-ore",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/industrial-grade-silicon.png",
         enabled = false,
@@ -318,7 +318,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-silicon-rod-forming",
+        name = "pm-polysilicon-rod",
         enabled = false,
         energy_required = 15,
         category = "pm-moltening",

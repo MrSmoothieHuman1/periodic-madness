@@ -32,7 +32,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-copper-tailings-sludging",
+    name = "pm-copper-sludge",
     enabled = false,
     energy_required = 4,
     category = "pm-washing",
