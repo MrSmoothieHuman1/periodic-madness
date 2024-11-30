@@ -620,23 +620,6 @@ data:extend({
       PM.product("pm-polyethylene-plastic", 5)
     }
   },
-  {
-    type = "recipe",
-    name = "pm-butene-burning",
-    category = "pm-moltening",
-    enabled = false,
-    energy_required = 1,
-    emissions_multiplier = 1.5,
-    main_product = "pm-carbon-monoxide",
-    ingredients =
-    {
-      PM.ingredient("pm-butene-gas", 5, "fluid"),
-    },
-    results =
-    {
-      PM.product_range("pm-carbon-monoxide", 2, 5, "fluid")
-    }
-  },
 
   --misc recipes related to oil products
 
