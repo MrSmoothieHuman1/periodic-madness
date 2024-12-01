@@ -1486,6 +1486,9 @@ data:extend({
     name = "pm-iron-fish",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/iron-fish.png",
+    subgroup = "military-equipment",
+    order = "x",
+    hidden = true,
     stack_size = 999
   },
 
