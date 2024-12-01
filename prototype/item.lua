@@ -987,7 +987,7 @@ data:extend({
     name = "pm-gunpowder",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/gunpowder.png",
-    category = "ammo",
+    subgroup = "ammo",
     order = "A",
     stack_size = 150
   },
