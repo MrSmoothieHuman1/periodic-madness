@@ -2654,7 +2654,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         filter = "pm-heavy-lubricant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -3.4}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -3}}},
       },
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },

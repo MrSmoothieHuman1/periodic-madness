@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.006
+Date: 2024-12-01
+  The im gonna squeak through to the loonybin Update:
+
+  Fixes:
+    - Fixed Squeakthrough 2 having an issue with PM.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.005
 Date: 2024-12-01
   The it could be better, it could be worse Update:
