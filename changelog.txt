@@ -5,6 +5,10 @@ Date: 2024-12-01
 
   Fixes:
     - Fixed Squeakthrough 2 having an issue with PM.
+    - Fixed Intermodal Containers having an issue with PM.
+    - Fixed the item version of gunpowder not being in the right subgroup.
+    - Fixed the locale of hydrogen peroxide.
+    - Fixed TWAT's not having a subgroup.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.005
 Date: 2024-12-01

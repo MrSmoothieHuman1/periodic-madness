@@ -253,13 +253,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-silica",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/silica.png",
-    stack_size = 500
-  },
-  {
-    type = "item",
     name = "pm-patina",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/patina.png",
@@ -1311,6 +1304,7 @@ data:extend({
     name = "pm-travelling-wave-amplifier-tube",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/TWAT.png",
+    subgroup = "pm-intermediates",
     stack_size = 20,
   },
   {
