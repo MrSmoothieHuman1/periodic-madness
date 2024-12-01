@@ -122,6 +122,24 @@ data:extend({
       PM.product_chance("pm-bismuth-210", 4, 0.7)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-polonium-sassxolotl-enrichment",
+    category = "centrifuge",
+    subgroup = "pm-polonium-ptm",
+    order = "e",
+    ingredients = 
+    {
+      PM.ingredient("pm-polonium-210", 20),
+      PM.ingredient("pm-bismuth-210", 5),
+      PM.ingredient("pm-trace-astatine-209", 2)
+    },
+    results = 
+    {
+      PM.product("pm-polonium-210", 22),
+      PM.product_range_chance("pm-bismuth-210", 1, 3, 0.85),
+    }
+  },
 
   {
     type = "recipe",

@@ -79,7 +79,7 @@ data:extend({
       PM.ingredient("pm-basic-wiring", 24),
       PM.ingredient("pm-polyethylene-plastic", 6),
       PM.ingredient("pm-gallium-arsenide", 2),
-      PM.ingredient("pm-coolant", 10, "fluid")
+      PM.ingredient("pm-coolant", 6, "fluid")
     },
     results =
     {
