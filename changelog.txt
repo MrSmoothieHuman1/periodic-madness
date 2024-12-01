@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.005
+Date: 2024-11-30
+  The it could be better, it could be worse Update:
+
+  Additions:
+    - New Ezekiel and TM leeching icons.
+
+  Changes:
+    - Reverted to the 1.0 system of TM and Ezekiel leeching technologies.
+    - Moved explosives into their own subgroup.
+    - Changed express splitters to take 4 processing units instead of 6.
+
+  Fixes:
+    - Fixed gunpowder recipe not being in a subgroup.
+    - Fixed hydrogen peroxide not being in a subgroup.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.004
 Date: 2024-11-30
   The new content guys! jangle jangle! Update:

@@ -3082,6 +3082,8 @@ data:extend({
     enabled = false, 
     energy_required = 3,
     category = "chemistry",
+    subgroup = "ammo",
+    order = "A",
     allow_producitvity = true,
     main_product = "pm-gunpowder",
     ingredients = 
@@ -3102,6 +3104,8 @@ data:extend({
     enabled = false,
     energy_required = 10,
     category = "pm-electrolysis",
+    subgroup = "pm-rockets",
+    order = "a",
     allow_productivity = true,
     main_product = "pm-hydrogen-peroxide",
     ingredients = 

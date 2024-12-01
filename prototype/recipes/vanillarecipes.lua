@@ -116,7 +116,7 @@ data.raw["recipe"]["express-splitter"].ingredients =
 {
   PM.ingredient("pm-advanced-splitter", 1),
   PM.ingredient("low-density-structure", 2),
-  PM.ingredient("processing-unit", 6),
+  PM.ingredient("processing-unit", 4),
   PM.ingredient("pm-heavy-lubricant", 15, "fluid")
 }
 data.raw["recipe"]["splitter"].ingredients =

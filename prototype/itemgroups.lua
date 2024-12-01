@@ -1116,6 +1116,12 @@ data:extend({
 
   {
     type = "item-subgroup",
+    name = "pm-rockets",
+    group = "combat",
+    order = "aa",
+  },
+  {
+    type = "item-subgroup",
     name = "pm-shotgun-ammo",
     group = "combat",
     order = "ba",
