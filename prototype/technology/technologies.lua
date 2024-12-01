@@ -62,11 +62,10 @@ data:extend({
     prerequisites = {"pm-transition-metal-refining"},
     unit =
     {
-      count = 50,
+      count = 15,
       ingredients =
       {
         {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
       },
       time = 10
     },
@@ -87,7 +86,7 @@ data:extend({
       PM.unlock_recipe("pm-gold-leeching"),
       PM.unlock_recipe("pm-gold-chunk-refining"),
     },
-    prerequisites = {"pm-transition-metal-refining", "pm-mercury-processing"},
+    prerequisites = {"pm-mercury-processing", "pm-transition-metal-refining"},
     unit =
     {
       count = 50,
@@ -333,14 +332,13 @@ data:extend({
       PM.unlock_recipe("pm-transition-manganese-leeching"),
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"pm-ezekiel-ore-purifying"},
     unit =
     {
       count = 50,
       ingredients =
       {
         {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
       },
       time = 15
     }
