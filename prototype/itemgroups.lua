@@ -1118,13 +1118,13 @@ data:extend({
     type = "item-subgroup",
     name = "pm-rockets",
     group = "combat",
-    order = "aa",
+    order = "ba",
   },
   {
     type = "item-subgroup",
     name = "pm-shotgun-ammo",
     group = "combat",
-    order = "ba",
+    order = "bb",
   },
   {
     type = "item-subgroup",
