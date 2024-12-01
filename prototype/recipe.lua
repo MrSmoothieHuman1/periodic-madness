@@ -2600,7 +2600,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-ruby-crushing",
+    name = "pm-ruby-dust",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-ruby-ptm",
@@ -2616,7 +2616,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-citrine-crushing",
+    name = "pm-citrine-dust",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-citrine-ptm",
@@ -2632,7 +2632,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-emerald-crushing",
+    name = "pm-emerald-dust",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-emerald-ptm",
@@ -2648,7 +2648,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-sapphire-crushing",
+    name = "pm-sapphire-dust",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-sapphire-ptm",
@@ -2664,7 +2664,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-lapis-lazuli-crushing",
+    name = "pm-lapis-lazuli-dust",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-lapis-lazuli-ptm",
@@ -2680,7 +2680,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-garnet-crushing",
+    name = "pm-garnet-dust",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-garnet-ptm",

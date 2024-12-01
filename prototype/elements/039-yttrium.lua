@@ -173,7 +173,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-yttrium",
+    name = "pm-yttrium-ore",
     enabled = false,
     energy_required = 4,
     category = "pm-washing",

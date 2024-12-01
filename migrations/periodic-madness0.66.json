@@ -1,0 +1,13 @@
+{
+    "recipe":
+    [
+       ["pm-ruby-crushing", "pm-ruby-dust"],
+       ["pm-citrine-crushing", "pm-citrine-dust"],
+       ["pm-emerald-crushing", "pm-emerald-dust"],
+       ["pm-sapphire-crushing", "pm-sapphire-dust"],
+       ["pm-lapis-lazuli-crushing", "pm-lapis-lazuli-dust"],
+       ["pm-garnet-crushing", "pm-garnet-dust"],
+
+       ["pm-ytrrium", "pm-yttrium-ore"]
+    ]
+}
