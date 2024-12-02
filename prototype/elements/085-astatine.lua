@@ -9,6 +9,7 @@ data:extend({
         order = "a",
         enabled = false,
         energy_required = 40,
+        allow_productivty = true,
         ingredients = 
         {
             PM.ingredient("pm-bismuth-ore", 20),
@@ -46,6 +47,7 @@ data:extend({
         order = "c",
         enabled = false,
         energy_required = 10,
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-mixed-astatine-MOT-trap", 1),

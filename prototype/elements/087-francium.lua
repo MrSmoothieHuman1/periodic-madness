@@ -94,6 +94,7 @@ data:extend({
     category = "pm-cyclotroning",
     subgroup = "pm-francium-am",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gold-plate", 25),

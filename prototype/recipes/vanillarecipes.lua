@@ -624,7 +624,7 @@ data.raw["recipe"]["destroyer-capsule"].ingredients =
 }
 data.raw["recipe"]["energy-shield-equipment"].ingredients = 
 {
-  PM.ingredient("pm-argon-gas", 15, "fluid"),
+  PM.ingredient("pm-argon-gas", 30, "fluid"),
   PM.ingredient("pm-gold-wire", 10),
   PM.ingredient("advanced-circuit", 8),
   PM.ingredient("pm-heavyweight-panelling", 8)

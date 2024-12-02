@@ -79,6 +79,7 @@ data:extend({
     subgroup = "pm-lead-ptm",
     order = "b",
     main_product = "pm-lead-powder",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-lead-chunks", 4)

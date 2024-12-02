@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.100
+Date: 2024-12-01
+  The i finally figured out a use for astatine! Update:
+
+  Additions:
+    - Added Astatine.
+    - Added a Kovarex-like recipe for polonium.
+    - Added milestones compatability!
+
+  Changes:
+    - Changed shield equipment to take 30 argon gas instead of 15.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.006
 Date: 2024-12-01
   The im gonna squeak through to the loonybin Update:

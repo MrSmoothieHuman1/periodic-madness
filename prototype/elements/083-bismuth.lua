@@ -84,6 +84,7 @@ data:extend({
     subgroup = "pm-bismuth-ptm",
     order = "c",
     main_product = "pm-bismuth-ore",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-liquid-mercury", 50, "fluid"),
