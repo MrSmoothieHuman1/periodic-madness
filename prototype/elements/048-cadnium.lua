@@ -23,7 +23,7 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      PM.ingredient("pm-zinc-chunk", 4),
+      PM.ingredient("pm-zinc-chunk", 6),
       PM.ingredient("steam", 25, "fluid")
     },
     results =

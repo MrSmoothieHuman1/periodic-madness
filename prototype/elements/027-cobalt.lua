@@ -39,7 +39,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-copper-chunk", 4),
+      PM.ingredient("pm-copper-chunk", 6),
       PM.ingredient("water", 25, "fluid"),
       PM.ingredient("pm-acidic-water", 10, "fluid")
     },

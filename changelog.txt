@@ -10,6 +10,8 @@ Date: 2024-12-01
 
   Changes:
     - Changed shield equipment to take 30 argon gas instead of 15.
+    - Made all froths and tailings (barring lead's) slightly more expensive.
+    - Changed nickel froth in platinum processing to spit out chunks, not ore.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.006

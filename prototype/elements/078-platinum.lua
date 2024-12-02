@@ -32,9 +32,9 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      PM.ingredient("pm-nickel-chunk", 4),
+      PM.ingredient("pm-nickel-chunk", 6),
       PM.ingredient("water", 25, "fluid"),
-      PM.ingredient("sulfuric-acid", 10, "fluid")
+      PM.ingredient("sulfuric-acid", 12, "fluid")
     },
     results =
     {
@@ -61,7 +61,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-ore", 2),
+      PM.product("pm-nickel-chunk", 3),
       PM.product("pm-platinum-powder", 4),
       PM.product_range_chance("pm-ferrum", 1, 3, 0.5)
     }
@@ -127,7 +127,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-ore", 2),
+      PM.product("pm-nickel-chunk", 2),
       PM.product("pm-platinum-powder", 4),
       PM.product_chance("pm-ferrum", 1, 0.5),
       PM.product_chance("pm-flux-container", 1, 0.66)
