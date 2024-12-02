@@ -7,11 +7,15 @@ Date: 2024-12-01
     - Added Astatine.
     - Added a Kovarex-like recipe for polonium.
     - Added milestones compatability!
+    - Revamped cadnium to now be 3 steps, with an extra intermediatery step.
 
   Changes:
     - Changed shield equipment to take 30 argon gas instead of 15.
     - Made all froths and tailings (barring lead's) slightly more expensive.
     - Changed nickel froth in platinum processing to spit out chunks, not ore.
+
+  Fixes:
+    - Fixed cadnium not having any proddable steps.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.006
