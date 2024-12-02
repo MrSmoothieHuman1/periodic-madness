@@ -1,4 +1,3 @@
-if not mods["Milestones"]then return end
 remote.add_interface("periodic-madness", {
      milestones_presets = function()
          return {
@@ -79,4 +78,3 @@ remote.add_interface("periodic-madness", {
         }
     end
 })
-         

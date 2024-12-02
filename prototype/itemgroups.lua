@@ -795,6 +795,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-astatine-ptm",
+    group = "pm-post-transition-metals",
+    order = "ka"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-ruby-ptm",
     group = "pm-post-transition-metals",
     order = "l"

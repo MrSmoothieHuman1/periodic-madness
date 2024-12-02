@@ -2,6 +2,49 @@ local PM = require("library")
 data:extend({
 
     {
+        type = "item",
+        name = "pm-trace-astatine-209",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/trace-astatine-209.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-209.png",   size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-209-2.png", size = 64, scale = 0.5 },
+        },
+        subgroup = "pm-trace-astatine-ptm",
+        order = "a",
+        stack_size = 100
+      },
+      {
+        type = "item",
+        name = "pm-trace-astatine-210",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/trace-astatine-210.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-210.png",   size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-210-2.png", size = 64, scale = 0.5 },
+        },
+        subgroup = "pm-trace-astatine-ptm",
+        order = "b",
+        stack_size = 100
+      },
+      {
+        type = "item",
+        name = "pm-trace-astatine-211",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/trace-astatine-211.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211.png",   size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211-2.png", size = 64, scale = 0.5 },
+        },
+        subgroup = "pm-trace-astatine-ptm",
+        order = "c",
+        stack_size = 100
+      },
+
+    {
         type = "recipe",
         name = "pm-mixed-trace-astatine",
         category = "pm-cyclotroning",
@@ -74,7 +117,7 @@ data:extend({
             PM.ingredient("pm-trace-astatine-209", 8),
             PM.ingredient("pm-trace-astatine-210", 8),
             PM.ingredient("pm-bismuth-210", 2),
-            PM.ingredient("pm-hydrochloric-acid", 25, "fluid")
+            PM.ingredient("pm-hydrochloric-acid", 40, "fluid")
         },
         results = 
         {

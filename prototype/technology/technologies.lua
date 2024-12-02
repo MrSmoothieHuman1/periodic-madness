@@ -3778,6 +3778,30 @@ data:extend({
   },
   {
     type = "technology",
+    name = "pm-astatine-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("centrifuge")
+    },
+    prerequisites = {"pm-polonium-processing", "pm-metalloid-pack-unlock", "pm-francium-processing"},
+    unit =
+      {
+        count = 425,
+        ingredients = 
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+        },
+        time = 80,
+      }
+  },
+  {
+    type = "technology",
     name = "pm-research-productivity-1",
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =

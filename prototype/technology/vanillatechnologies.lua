@@ -1024,7 +1024,7 @@ data.raw["technology"]["speed-module"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["speed-module"].unit.count = 100
+data.raw["technology"]["speed-module-2"].unit.count = 100
 data.raw["technology"]["speed-module-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1033,7 +1033,7 @@ data.raw["technology"]["speed-module-2"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
-data.raw["technology"]["speed-module"].unit.count = 150
+data.raw["technology"]["speed-module-3"].unit.count = 150
 data.raw["technology"]["speed-module-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},

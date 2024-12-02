@@ -1301,6 +1301,52 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-mixed-astatine-magneto-orbital-trap",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/filled-MOT.png",
+    pictures =
+    {
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/icons/astatine-filled-MOT.png",
+            size = 64,
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/light/filled-MOT-light.png",
+            flags = { "light" },
+            draw_as_light = true,
+            size = 64,
+            scale = 0.5,
+          },
+        }
+      },
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/icons/astatine-filled-MOT-2.png",
+            size = 64,
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/light/filled-MOT-2-light.png",
+            flags = { "light" },
+            draw_as_light = true,
+            size = 64,
+            scale = 0.5,
+          },
+        }
+      },
+    },
+    subgroup = "pm-astatine-ptm",
+    order = "b",
+    stack_size = 20
+  },
+  {
+    type = "item",
     name = "pm-travelling-wave-amplifier-tube",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/TWAT.png",
