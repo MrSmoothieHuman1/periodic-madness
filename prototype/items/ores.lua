@@ -241,9 +241,9 @@ data:extend({
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/ores/cadnium-ore-icon.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/cadnium-ore-icon-1.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/cadnium-ore-icon-2.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/cadnium-ore-icon-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/cadnium-ore-icon-4.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-cadnium-tm",
     order = "a",

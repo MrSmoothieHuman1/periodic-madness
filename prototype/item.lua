@@ -1301,14 +1301,14 @@ data:extend({
     type = "item",
     name = "pm-mixed-astatine-magneto-orbital-trap",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/mixed-astatine-filled-MOT.png",
+    icon = "__periodic-madness__/graphics/icons/mixed-astatine-MOT.png",
     pictures =
     {
       {
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/icons/mixed-astatine-filled-MOT.png",
+            filename = "__periodic-madness__/graphics/icons/mixed-astatine-MOT.png",
             size = 64,
             scale = 0.5,
           },
@@ -1325,7 +1325,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/icons/mixed-astatine-filled-MOT-2.png",
+            filename = "__periodic-madness__/graphics/icons/mixed-astatine-MOT-2.png",
             size = 64,
             scale = 0.5,
           },

@@ -14,7 +14,7 @@ data:extend({
     type = "item",
     name = "pm-cadnium-sulfate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/cadmium-sulfate.png",
+    icon = "__periodic-madness__/graphics/icons/cadnium-sulfate.png",
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate.png", size = 64, scale = 0.5 },
