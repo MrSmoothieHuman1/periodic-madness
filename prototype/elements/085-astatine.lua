@@ -3,16 +3,30 @@ data:extend({
 
     {
         type = "item",
+        name = "pm-mixed-trace-astatine",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/mixed-astatine.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/ores/mixed-astatine.png", size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/mixed-astatine-2.png", size = 64, scale = 0.5 },
+        },
+        subgroup = "pm-trace-astatine-ptm",
+        order = "a",
+        stack_size = 50
+      },
+    {
+        type = "item",
         name = "pm-trace-astatine-209",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/ores/trace-astatine-209.png",
         pictures =
         {
-          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-209.png",   size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-209.png", size = 64, scale = 0.5 },
           { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-209-2.png", size = 64, scale = 0.5 },
         },
         subgroup = "pm-trace-astatine-ptm",
-        order = "a",
+        order = "b",
         stack_size = 100
       },
       {
@@ -22,12 +36,12 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/trace-astatine-210.png",
         pictures =
         {
-          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-210.png",   size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-210.png", size = 64, scale = 0.5 },
           { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-210-2.png", size = 64, scale = 0.5 },
         },
         subgroup = "pm-trace-astatine-ptm",
-        order = "b",
-        stack_size = 100
+        order = "c",
+        stack_size = 150
       },
       {
         type = "item",
@@ -36,12 +50,12 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/trace-astatine-211.png",
         pictures =
         {
-          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211.png",   size = 64, scale = 0.5 },
-          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211-2.png", size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211.png", size = 64, scale = 0.5 },
+          --{ filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211-2.png", size = 64, scale = 0.5 },
         },
         subgroup = "pm-trace-astatine-ptm",
-        order = "c",
-        stack_size = 100
+        order = "d",
+        stack_size = 200
       },
 
     {
@@ -56,9 +70,9 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-bismuth-ore", 20),
-            PM.ingredient("copper-plate", 8),
-            PM.ingredient("pm-aluminium-plate", 8),
-            PM.ingredient("pm-gold-plate", 8), --all need to be catalysts for hard mode
+            PM.ingredient("copper-plate", 10),
+            PM.ingredient("pm-aluminium-plate", 10),
+            PM.ingredient("pm-gold-plate", 10), --all need to be catalysts for hard mode
         },
         results = 
         {
@@ -85,6 +99,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-mixed-astatine-MOT-trap-emptying",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/mixed-astatine-seperation.png",
         category = "crafting-with-fluid",
         subgroup = "pm-astatine-ptm",
         order = "c",

@@ -13,6 +13,7 @@ Date: 2024-12-01
     - Changed shield equipment to take 30 argon gas instead of 15.
     - Made all froths and tailings (barring lead's) slightly more expensive.
     - Changed nickel froth in platinum processing to spit out chunks, not ore.
+    - Gave cadnium a modelled ore icon, and variations.
 
   Fixes:
     - Fixed cadnium not having any proddable steps.

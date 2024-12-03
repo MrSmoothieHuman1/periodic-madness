@@ -3780,10 +3780,15 @@ data:extend({
     type = "technology",
     name = "pm-astatine-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/astatine-processing.png",
     effects = 
     {
-      PM.unlock_recipe("centrifuge")
+      PM.unlock_recipe("centrifuge"),
+      PM.unlock_recipe("pm-mixed-trace-astatine"),
+      PM.unlock_recipe("pm-mixed-trace-astatine-MOT-trap"),
+      PM.unlock_recipe("pm-mixed-astatine-MOT-trap-emptying"),
+      PM.unlock_recipe("pm-astatine-isotope-rearranging"),
+      PM.unlock_recipe("pm-polonium-sassxolotl-enrichment")
     },
     prerequisites = {"pm-polonium-processing", "pm-metalloid-pack-unlock", "pm-francium-processing"},
     unit =

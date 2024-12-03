@@ -125,6 +125,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-polonium-sassxolotl-enrichment",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/polonium-sassxolotl-enrichment.png",
     category = "centrifuging",
     subgroup = "pm-polonium-ptm",
     order = "e",
@@ -133,7 +135,7 @@ data:extend({
     {
       PM.ingredient("pm-polonium-210", 20),
       PM.ingredient("pm-bismuth-210", 5),
-      --PM.ingredient("pm-trace-astatine-209", 2)
+      PM.ingredient("pm-trace-astatine-209", 2)
     },
     results = 
     {
