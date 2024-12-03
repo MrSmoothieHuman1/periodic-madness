@@ -65,7 +65,7 @@ data:extend({
         subgroup = "pm-astatine-ptm",
         order = "a",
         enabled = false,
-        energy_required = 40,
+        energy_required = 30,
         allow_productivty = true,
         ingredients = 
         {
@@ -76,7 +76,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-mixed-trace-astatine", 1, 2, 0.5)
+            PM.product_range_chance("pm-mixed-trace-astatine", 1, 3, 0.5)
         }
     },
     {

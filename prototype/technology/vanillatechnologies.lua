@@ -81,12 +81,11 @@ data.raw["technology"]["logistics-3"].unit =
     {"logistic-science-pack", 1},
     {"pm-advanced-advanced-transition-metal-science-pack", 1}
   },
-  time = 15
+  time = 30
 }
 
 data.raw["technology"]["electric-energy-distribution-1"].prerequisites = {"pm-fiberoptics"}
 data.raw["technology"]["electric-energy-distribution-2"].prerequisites = {"chemical-science-pack", "electric-energy-distribution-1", "pm-gold-processing"}
-
 data.raw["technology"]["fluid-handling"].effects =
 {
   PM.unlock_recipe("pm-stainless-steel-tank"),
@@ -101,7 +100,6 @@ data.raw["technology"]["fluid-handling"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
-
 data.raw["technology"]["oil-processing"].effects =
 {
   PM.unlock_recipe("pumpjack"),
@@ -111,6 +109,18 @@ data.raw["technology"]["oil-processing"].effects =
   PM.unlock_recipe("pm-molybdenum-vulcanisation")
 }
 data.raw["technology"]["oil-processing"].prerequisites = {"fluid-handling", "pm-multimetal-multiproperty"}
+data.raw["technology"]["oil-processing"].research_trigger = nil
+data.raw["technology"]["oil-processing"].unit = 
+{
+  count = 125,
+  ingredients = 
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1}
+  },
+  time = 30
+}
 
 data.raw["technology"]["steel-processing"].prerequisites = {"pm-brass-processing"}
 data.raw["technology"]["steel-processing"].icon_size = 64
