@@ -1027,7 +1027,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1}
       },
-      time = 100,
+      time = 80,
     }
   },
   {
@@ -3785,8 +3785,8 @@ data:extend({
     {
       PM.unlock_recipe("centrifuge"),
       PM.unlock_recipe("pm-mixed-trace-astatine"),
-      PM.unlock_recipe("pm-mixed-astatine-MOT-trap"),
-      PM.unlock_recipe("pm-mixed-astatine-MOT-trap-emptying"),
+      PM.unlock_recipe("pm-mixed-astatine-magneto-orbital-trap"),
+      PM.unlock_recipe("pm-mixed-astatine-MOT-emptying"),
       PM.unlock_recipe("pm-astatine-isotope-rearranging"),
       PM.unlock_recipe("pm-polonium-sassxolotl-enrichment")
     },

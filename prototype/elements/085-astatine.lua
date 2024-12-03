@@ -81,7 +81,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-mixed-astatine-MOT-trap",
+        name = "pm-mixed-astatine-magneto-orbital-trap",
         subgroup = "pm-astatine-ptm",
         order = "b",
         enabled = false,
@@ -98,7 +98,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-mixed-astatine-MOT-trap-emptying",
+        name = "pm-mixed-astatine-MOT-emptying",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/mixed-astatine-seperation.png",
         category = "crafting-with-fluid",
@@ -118,6 +118,7 @@ data:extend({
             PM.product_range_chance("pm-trace-astatine-209", 1, 2, 0.5),
             PM.product_range_chance("pm-trace-astatine-210", 1, 2, 0.5),
             PM.product_range_chance("pm-trace-astatine-211", 1, 2, 0.5),
+            PM.product_chance("pm-magneto-orbital-trap", 1, 0.9)
         }
     },
     {

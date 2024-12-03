@@ -694,7 +694,7 @@ data.raw["recipe"]["explosives"].ingredients =
 data.raw["recipe"]["centrifuge"].category = "crafting-with-fluid"
 data.raw["recipe"]["centrifuge"].ingredients = 
 {
-  PM.ingredient("concrete", 10),
+  PM.ingredient("concrete", 20),
   PM.ingredient("pm-radiation-resistant-panelling", 12),
   PM.ingredient("electric-engine-unit", 3),
   PM.ingredient("processing-unit", 3),
