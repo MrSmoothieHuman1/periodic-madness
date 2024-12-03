@@ -17,6 +17,7 @@ Date: 2024-12-01
     - PM-inised the centrifuge recipe.
     - Centrifuges are now unlocked at metalloid, in astatine processing.
     - Changed logistics 3 to take 30s, not 15.
+    - Changed centrifuges to take 6s to craft, not 4.
 
   Fixes:
     - Fixed cadnium not having any proddable steps.

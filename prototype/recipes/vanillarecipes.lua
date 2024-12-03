@@ -691,6 +691,7 @@ data.raw["recipe"]["explosives"].ingredients =
   PM.ingredient("sulfur", 3),
   PM.ingredient("pm-vulcanised-rubber", 2)
 }
+data.raw["recipe"]["centrifuge"].energy_required = 6
 data.raw["recipe"]["centrifuge"].category = "crafting-with-fluid"
 data.raw["recipe"]["centrifuge"].ingredients = 
 {
