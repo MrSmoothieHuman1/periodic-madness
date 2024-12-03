@@ -92,7 +92,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-polonium-210", 10),
+      PM.ingredient("pm-polonium-210", 12),
       PM.ingredient("pm-empty-reactor-cell", 2)
     },
     results =
@@ -130,7 +130,9 @@ data:extend({
     category = "centrifuging",
     subgroup = "pm-polonium-ptm",
     order = "e",
-    main_product = "pm-polonium-210",
+    enabled = false,
+    energy_required = 45,
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-polonium-210", 20),
@@ -151,6 +153,7 @@ data:extend({
     subgroup = "pm-fuel-rods",
     order = "c",
     energy_required = 15,
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-polonium-fuel-cell", 1),
