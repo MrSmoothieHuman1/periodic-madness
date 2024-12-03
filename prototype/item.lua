@@ -34,8 +34,7 @@ data:extend({
     name = "pm-basic-motor",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/basic-motor.png",
-    subgroup = "intermediate-product",
-    order = "j[pm-basic-motor]",
+    subgroup = "pm-intermediates",
     stack_size = 100
   },
   {
@@ -43,8 +42,7 @@ data:extend({
     name = "pm-mini-motor",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/mini-motor.png",
-    subgroup = "intermediate-product",
-    order = "k[pm-mini-motor]",
+    subgroup = "pm-intermediates",
     stack_size = 250
   },
   {
@@ -1303,14 +1301,14 @@ data:extend({
     type = "item",
     name = "pm-mixed-astatine-magneto-orbital-trap",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/filled-MOT.png",
+    icon = "__periodic-madness__/graphics/icons/mixed-astatine-filled-MOT.png",
     pictures =
     {
       {
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/icons/astatine-filled-MOT.png",
+            filename = "__periodic-madness__/graphics/icons/mixed-astatine-filled-MOT.png",
             size = 64,
             scale = 0.5,
           },
@@ -1327,7 +1325,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/icons/astatine-filled-MOT-2.png",
+            filename = "__periodic-madness__/graphics/icons/mixed-astatine-filled-MOT-2.png",
             size = 64,
             scale = 0.5,
           },

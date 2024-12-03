@@ -10,6 +10,21 @@ data:extend({
     order = "d",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-cadnium-sulfate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cadmium-sulfate.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate-3.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-cadnium-tm",
+    order = "A",
+    stack_size = 50
+  },
 
   {
     type = "recipe",
@@ -51,7 +66,7 @@ data:extend({
     results =
     {
       PM.product("pm-cadnium-sulfate", 2),
-      PM.product("pm-zinc-chunks", 2),
+      PM.product("pm-zinc-chunk", 2),
       PM.product_range_chance("pm-ferrum", 1, 3, 0.5),
     }
   } --[[@as data.RecipePrototype]],
@@ -63,6 +78,7 @@ data:extend({
     category = "pm-electrolysis",
     subgroup = "pm-cadnium-tm",
     order = "c",
+    main_product = "pm-cadnium-ore",
     ingredients = 
     {
       PM.ingredient("pm-cadnium-sulfate", 4),

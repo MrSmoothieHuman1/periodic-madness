@@ -691,6 +691,16 @@ data.raw["recipe"]["explosives"].ingredients =
   PM.ingredient("sulfur", 3),
   PM.ingredient("pm-vulcanised-rubber", 2)
 }
+data.raw["recipe"]["centrifuge"].category = "crafting-with-fluid"
+data.raw["recipe"]["centrifuge"].ingredients = 
+{
+  PM.ingredient("concrete", 10),
+  PM.ingredient("pm-radiation-resistant-panelling", 12),
+  PM.ingredient("electric-engine-unit", 3),
+  PM.ingredient("processing-unit", 3),
+  PM.ingredient("pm-boron", 12, "fluid"),
+  PM.ingredient("pm-heavyweight-framing", 12)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15

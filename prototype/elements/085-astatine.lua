@@ -11,7 +11,7 @@ data:extend({
           { filename = "__periodic-madness__/graphics/icons/ores/mixed-astatine.png", size = 64, scale = 0.5 },
           { filename = "__periodic-madness__/graphics/icons/ores/mixed-astatine-2.png", size = 64, scale = 0.5 },
         },
-        subgroup = "pm-trace-astatine-ptm",
+        subgroup = "pm-astatine-ptm",
         order = "a",
         stack_size = 50
       },
@@ -25,7 +25,7 @@ data:extend({
           { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-209.png", size = 64, scale = 0.5 },
           { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-209-2.png", size = 64, scale = 0.5 },
         },
-        subgroup = "pm-trace-astatine-ptm",
+        subgroup = "pm-astatine-ptm",
         order = "b",
         stack_size = 100
       },
@@ -39,7 +39,7 @@ data:extend({
           { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-210.png", size = 64, scale = 0.5 },
           { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-210-2.png", size = 64, scale = 0.5 },
         },
-        subgroup = "pm-trace-astatine-ptm",
+        subgroup = "pm-astatine-ptm",
         order = "c",
         stack_size = 150
       },
@@ -53,7 +53,7 @@ data:extend({
           { filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211.png", size = 64, scale = 0.5 },
           --{ filename = "__periodic-madness__/graphics/icons/ores/trace-astatine-211-2.png", size = 64, scale = 0.5 },
         },
-        subgroup = "pm-trace-astatine-ptm",
+        subgroup = "pm-astatine-ptm",
         order = "d",
         stack_size = 200
       },
@@ -88,12 +88,12 @@ data:extend({
         energy_required = 10,
         ingredients = 
         {
-            PM.ingredient("pm-MOT-trap", 1),
-            PM.ingredient("pm-mixed-astatine", 3)
+            PM.ingredient("pm-magneto-orbital-trap", 1),
+            PM.ingredient("pm-mixed-trace-astatine", 3)
         },
         results = 
         {
-            PM.product("pm-mixed-astatine-MOT-trap", 1)
+            PM.product("pm-mixed-astatine-magneto-orbital-trap", 1)
         }
     },
     {
@@ -109,7 +109,7 @@ data:extend({
         allow_productivity = true,
         ingredients = 
         {
-            PM.ingredient("pm-mixed-astatine-MOT-trap", 1),
+            PM.ingredient("pm-mixed-astatine-magneto-orbital-trap", 1),
             PM.ingredient("pm-sodium-hydroxide", 20, "fluid"),
             PM.ingredient("pm-methanol", 20, "fluid"),
         },
@@ -123,6 +123,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-astatine-isotope-rearranging",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/trace-astatine-rearranging.png",
         category = "pm-cyclotroning",
         subgroup = "pm-astatine-ptm",
         order = "d",

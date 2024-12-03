@@ -14,9 +14,13 @@ Date: 2024-12-01
     - Made all froths and tailings (barring lead's) slightly more expensive.
     - Changed nickel froth in platinum processing to spit out chunks, not ore.
     - Gave cadnium a modelled ore icon, and variations.
+    - PM-inised the centrifuge recipe.
+    - Centrifuges are now unlocked at metalloid, in astatine processing.
 
   Fixes:
     - Fixed cadnium not having any proddable steps.
+    - Fixed motors and mini motors not being in the correct subgroup.
+    - Fixed oil not being unlockable, by reverting it being a trigger technology.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.006

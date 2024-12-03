@@ -3785,7 +3785,7 @@ data:extend({
     {
       PM.unlock_recipe("centrifuge"),
       PM.unlock_recipe("pm-mixed-trace-astatine"),
-      PM.unlock_recipe("pm-mixed-trace-astatine-MOT-trap"),
+      PM.unlock_recipe("pm-mixed-astatine-MOT-trap"),
       PM.unlock_recipe("pm-mixed-astatine-MOT-trap-emptying"),
       PM.unlock_recipe("pm-astatine-isotope-rearranging"),
       PM.unlock_recipe("pm-polonium-sassxolotl-enrichment")

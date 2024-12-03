@@ -90,6 +90,7 @@ require("prototype.elements.002-helium")
 require("prototype.elements.018-argon")
 require("prototype.elements.092-uranium")
 require("prototype.elements.014-silicon")
+require("prototype.elements.085-astatine")
 
 require("prototype.entity")
 require("prototype.remnants")
