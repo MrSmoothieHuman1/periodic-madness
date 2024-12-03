@@ -137,7 +137,7 @@ data:extend({
     {
       PM.ingredient("pm-polonium-210", 20),
       PM.ingredient("pm-bismuth-210", 5),
-      PM.ingredient("pm-trace-astatine-209", 2)
+      PM.ingredient("pm-trace-astatine-211", 2)
     },
     results = 
     {
