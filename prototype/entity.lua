@@ -1790,7 +1790,7 @@ data:extend({
           width = 249 + 7,
           height = 338,
           shift = util.by_pixel(0, -40),
-          scale = 1.12 / 2
+          scale = 0.56
         },
         {
           filename =
@@ -1811,64 +1811,64 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 5000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0.5, 1.5}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0.5, 1.5}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-0.5, -1.5}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-0.5, 1.5}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {-1.5, 1.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-1.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = { { flow_direction="output", direction = defines.direction.east, position = {-1.5, 0.5}}},
+        pipe_connections = { { flow_direction="output", direction = defines.direction.west, position = {-1.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {-1.5, -0.5}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {-1.5, -0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {-1.5, -1.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-1.5, -1.5}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {1.5, 1.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {1.5, 0.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {1.5, -0.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, -0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {1.5, -1.5}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1.5, -1.5}}},
       },
     },
     -- if ANYONE reads this, i hope you know i hate this. I hate fluid boxes and you should too.
@@ -2136,7 +2136,7 @@ data:extend({
         volume = 1000,
         pipe_connections =
         {
-          {flow_direction = "input", direction = defines.direction.north, position = {-1, 1}}
+          {flow_direction = "input", direction = defines.direction.north, position = {1, -1}}
         }
       },
       {
@@ -2145,7 +2145,7 @@ data:extend({
         volume = 1000,
         pipe_connections =
         {
-          {flow_direction = "output", direction = defines.direction.south, position = {1, -1}}
+          {flow_direction = "output", direction = defines.direction.south, position = {-1, 1}}
         }
       },
       {

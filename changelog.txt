@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.101
+Date: 2024-12-04
+  The read the FAQ if you dont like my version numbering Update:
+
+  Fixes:
+    - Fixed the fractional distillator and fluid catalyst cracker having weird/unusable hitboxes.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.100
-Date: 2024-12-01
+Date: 2024-12-03
   The i finally figured out a use for astatine! Update:
 
   Additions:
