@@ -8247,7 +8247,7 @@ data:extend({
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
   impact_category = "stone",
-  health_per_tick = 0.01,
+  healing_per_tick = 0.01,
   connected_gate_visualization =
   {
     filename = "__core__/graphics/arrows/underground-lines.png",
