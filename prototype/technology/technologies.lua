@@ -3809,7 +3809,7 @@ data:extend({
     type = "technology",
     name = "pm-concrete-walls",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/concrete-wall.png",
     effects = 
     {
       PM.unlock_recipe("pm-concrete-wall"),
@@ -3832,7 +3832,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-walls",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/bio-wall.png",
     effects = 
     {
       PM.unlock_recipe("pm-bio-wall"),
