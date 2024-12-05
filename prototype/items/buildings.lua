@@ -616,7 +616,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/concrete-wall.png",
     subgroup = "defensive-structure",
-    order = "ab",
+    order = "aa",
     place_result = "pm-concrete-wall",
     stack_size = 100
   },
