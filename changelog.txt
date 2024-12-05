@@ -5,7 +5,7 @@ Date: 2024-12-05
 
   Additions:
     - Added two new types of wall! Concrete and Bio-walls, both with their own perks and upsides/downsides.
-    - Meant to add a concrete revamp, but time! i need to fix errors! kamaro!, kamaro!
+    - Meant to add a concrete revamp, but time! i need to fix errors! Kamaro!, Kamaro! My steps twirl in persistance!
 
   Fixes:
     - Fixed the atmospheric condenser and the burn-inator having weird/unusable fluidboxes.
