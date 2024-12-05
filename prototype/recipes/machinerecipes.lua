@@ -1093,6 +1093,41 @@ data:extend({
       PM.product("pm-fluid-burner", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-concrete-wall",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("concrete", 6),
+      PM.ingredient("pm-molten-lead", 1, "fluid"),
+      PM.ingredient("pm-thallium-plate", 3)
+    },
+    results = 
+    {
+      PM.product("pm-concrete-wall", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-bio-wall",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("stone-wall", 1),
+      PM.ingredient("pm-bacteriaed-agar-solution", 10, "fluid"),
+      PM.ingredient("pm-celluose-pulp", 15, "fluid"),
+      PM.ingredient("pm-heavyweight-framing", 4)
+    },
+    results = 
+    {
+      PM.product("pm-concrete-wall", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

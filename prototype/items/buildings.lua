@@ -610,6 +610,22 @@ data:extend({
     place_result = "pm-fluid-burner",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-concrete-wall",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/wall.png",
+    place_result = "pm-concrete-wall",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-bio-wall",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/wall.png",
+    place_result = "pm-concrete-wall",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
