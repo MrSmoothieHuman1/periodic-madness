@@ -7871,7 +7871,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-single.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-single.png",
           priority = "extra-high",
           width = 64,
           height = 86,
@@ -7897,7 +7897,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-vertical.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-vertical.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -7923,7 +7923,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-horizontal.png",
+          filename = "__periodic-madness__/graphics/entity/concrete-wall/wall-horizontal.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -7949,7 +7949,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-corner-right.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-corner-right.png",
           priority = "extra-high",
           width = 64,
           height = 128,
@@ -7975,7 +7975,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-corner-left.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-corner-left.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -8001,7 +8001,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-t.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-t.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -8027,7 +8027,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-ending-right.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-ending-right.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -8053,7 +8053,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-ending-left.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-ending-left.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -8076,7 +8076,7 @@ data:extend({
     },
     filling =
     {
-      filename = "__base__/graphics/entity/wall/wall-filling.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-filling.png",
       priority = "extra-high",
       width = 48,
       height = 56,
@@ -8090,7 +8090,7 @@ data:extend({
       sheets =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-patch.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-patch.png",
           priority = "extra-high",
           width = 116,
           height = 128,
@@ -8298,7 +8298,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-single.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-single.png",
           priority = "extra-high",
           width = 64,
           height = 86,
@@ -8324,7 +8324,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-vertical.png",
+          filename = "___periodic-madness__/graphics/entities/buildings/bio-wall/wall-vertical.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -8350,7 +8350,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-horizontal.png",
+          filename = "___periodic-madness__/graphics/entities/buildings/bio-wall/wall-horizontal.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -8376,7 +8376,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-corner-right.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-corner-right.png",
           priority = "extra-high",
           width = 64,
           height = 128,
@@ -8402,7 +8402,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-corner-left.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-corner-left.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -8428,7 +8428,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-t.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-t.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -8454,7 +8454,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-ending-right.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-ending-right.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -8480,7 +8480,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-ending-left.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-ending-left.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -8503,7 +8503,7 @@ data:extend({
     },
     filling =
     {
-      filename = "__base__/graphics/entity/wall/wall-filling.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-filling.png",
       priority = "extra-high",
       width = 48,
       height = 56,
@@ -8517,7 +8517,7 @@ data:extend({
       sheets =
       {
         {
-          filename = "__base__/graphics/entity/wall/wall-patch.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-patch.png",
           priority = "extra-high",
           width = 116,
           height = 128,
