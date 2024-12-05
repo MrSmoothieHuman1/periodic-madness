@@ -3807,6 +3807,52 @@ data:extend({
   },
   {
     type = "technology",
+    name = "pm-concrete-walls",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-concrete-wall"),
+    },
+    prerequisites = {"pm-tempature-inators-2"},
+    unit =
+    {
+      count = 175,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1}
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-bio-walls",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-bio-wall"),
+    },
+    prerequisites = {"pm-agar-bacteria-filtering"},
+    unit =
+    {
+      count = 175,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1}
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
     name = "pm-research-productivity-1",
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
