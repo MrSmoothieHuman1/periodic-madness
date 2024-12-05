@@ -2061,14 +2061,14 @@ data:extend({
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {-2, 0} }},
       },
       {
 
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {2, 0} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {2, 0} }},
       },
     },
   },
@@ -5941,23 +5941,26 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections =
+        pipe_connections = 
         {
-          { flow_direction="input", direction = defines.direction.north, position = {0, 1}},
-          { flow_direction="input", direction = defines.direction.south, position = {0, -1}}
+          {flow_direction="input", direction = defines.direction.north, position = {0, -1}},
+          {flow_direction="input", direction = defines.direction.west, position = {0, 1}}
         },
+        secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, 0} }},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
+        secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 0} }},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
+        secondary_draw_orders = { north = -1 }
       },
     },
   },
@@ -8249,7 +8252,6 @@ data:extend({
   close_sound = sounds.machine_close,
   impact_category = "stone",
   healing_per_tick = 0.01,
-  emissions_per_second = 0.5,
   hide_resistances = false,
   connected_gate_visualization =
   {
