@@ -1120,12 +1120,12 @@ data:extend({
     {
       PM.ingredient("stone-wall", 1),
       PM.ingredient("pm-bacteriaed-agar-solution", 10, "fluid"),
-      PM.ingredient("pm-celluose-pulp", 15, "fluid"),
+      PM.ingredient("pm-cellouse-pulp", 15, "fluid"),
       PM.ingredient("pm-heavyweight-framing", 4)
     },
     results = 
     {
-      PM.product("pm-concrete-wall", 1)
+      PM.product("pm-bio-wall", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
