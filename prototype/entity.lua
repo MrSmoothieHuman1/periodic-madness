@@ -7824,6 +7824,7 @@ data:extend({
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
   impact_category = "stone",
+  hide_resistances = false,
   connected_gate_visualization =
   {
     filename = "__core__/graphics/arrows/underground-lines.png",
@@ -8236,7 +8237,7 @@ data:extend({
   collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
   selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
   damaged_trigger_effect = hit_effects.wall(),
-  minable = {mining_time = 0.45, result = "stone-wall"},
+  minable = {mining_time = 0.4, result = "stone-wall"},
   fast_replaceable_group = "wall",
   max_health = 400,
   repair_speed_modifier = 2.5,
@@ -8249,6 +8250,7 @@ data:extend({
   impact_category = "stone",
   healing_per_tick = 0.01,
   emissions_per_second = 0.5,
+  hide_resistances = false,
   connected_gate_visualization =
   {
     filename = "__core__/graphics/arrows/underground-lines.png",
@@ -9100,6 +9102,8 @@ data.raw["underground-belt"]["fast-underground-belt"].next_upgrade = "pm-advance
 data.raw["electric-turret"]["laser-turret"].energy_source.drain = "30kW"
 data.raw["electric-turret"]["laser-turret"].energy_source.input_flow_limit = "5400kW"
 data.raw["electric-turret"]["laser-turret"].folding_speed = 0.085
+
+data.raw["wall"]["stone-wall"].hide_resistances = false
 data.raw["wall"]["stone-wall"].repair_speed_modifier = 1
 data.raw["wall"]["stone-wall"].resistances =
 {
