@@ -1,10 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.110
+Date: 2024-12-05
+  The meant to add these at 0.4.6! enjoy! not at all late! Update:
+
+  Additions:
+    - Added two new types of wall! Concrete and Bio-walls, both with their own perks and upsides/downsides.
+    - Meant to add a concrete revamp, but time! i need to fix errors! kamaro!, kamaro!
+
+  Fixes:
+    - Fixed the atmospheric condenser and the burn-inator having weird/unusable fluidboxes.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.101
 Date: 2024-12-04
   The read the FAQ if you dont like my version numbering Update:
 
   Fixes:
-    - Fixed the fractional distillator and fluid catalyst cracker having weird/unusable hitboxes.
+    - Fixed the fractional distillator and fluid catalyst cracker having weird/unusable fluidboxes.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.100
 Date: 2024-12-03
