@@ -7923,7 +7923,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entity/concrete-wall/wall-horizontal.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-horizontal.png",
           priority = "extra-high",
           width = 64,
           height = 92,
