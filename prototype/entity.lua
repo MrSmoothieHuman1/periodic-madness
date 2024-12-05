@@ -8324,7 +8324,7 @@ data:extend({
       layers =
       {
         {
-          filename = "___periodic-madness__/graphics/entities/buildings/bio-wall/wall-vertical.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-vertical.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -8350,7 +8350,7 @@ data:extend({
       layers =
       {
         {
-          filename = "___periodic-madness__/graphics/entities/buildings/bio-wall/wall-horizontal.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-horizontal.png",
           priority = "extra-high",
           width = 64,
           height = 92,
