@@ -627,7 +627,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/bio-wall.png",
     subgroup = "defensive-structure",
     order = "ab",
-    place_result = "pm-concrete-wall",
+    place_result = "pm-bio-wall",
     stack_size = 100
   },
 })
