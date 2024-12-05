@@ -2047,14 +2047,14 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
       },
       {
 
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},
       },
       {
 

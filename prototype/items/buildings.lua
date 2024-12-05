@@ -615,6 +615,8 @@ data:extend({
     name = "pm-concrete-wall",
     icon_size = 64,
     icon = "__base__/graphics/icons/wall.png",
+    subgroup = "defensive-structure",
+    order = "ab",
     place_result = "pm-concrete-wall",
     stack_size = 100
   },
@@ -623,6 +625,8 @@ data:extend({
     name = "pm-bio-wall",
     icon_size = 64,
     icon = "__base__/graphics/icons/wall.png",
+    subgroup = "defensive-structure",
+    order = "ab",
     place_result = "pm-concrete-wall",
     stack_size = 100
   },
