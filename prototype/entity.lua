@@ -8248,6 +8248,7 @@ data:extend({
   close_sound = sounds.machine_close,
   impact_category = "stone",
   healing_per_tick = 0.01,
+  emissions_per_second = 0.5,
   connected_gate_visualization =
   {
     filename = "__core__/graphics/arrows/underground-lines.png",
@@ -9099,6 +9100,7 @@ data.raw["underground-belt"]["fast-underground-belt"].next_upgrade = "pm-advance
 data.raw["electric-turret"]["laser-turret"].energy_source.drain = "30kW"
 data.raw["electric-turret"]["laser-turret"].energy_source.input_flow_limit = "5400kW"
 data.raw["electric-turret"]["laser-turret"].folding_speed = 0.085
+data.raw["wall"]["stone-wall"].repair_speed_modifier = 1
 data.raw["wall"]["stone-wall"].resistances =
 {
   {
