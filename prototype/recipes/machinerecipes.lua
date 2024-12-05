@@ -1099,13 +1099,15 @@ data:extend({
     enabled = false,
     energy_required = 4,
     category = "crafting-with-fluid",
-    ingredients = 
+    subgroup = "defensive-structure",
+    order = "aa",
+    ingredients =
     {
       PM.ingredient("concrete", 6),
       PM.ingredient("pm-molten-lead", 1, "fluid"),
       PM.ingredient("pm-thallium-plate", 3)
     },
-    results = 
+    results =
     {
       PM.product("pm-concrete-wall", 1)
     }
@@ -1116,14 +1118,16 @@ data:extend({
     enabled = false,
     energy_required = 4,
     category = "crafting-with-fluid",
-    ingredients = 
+    subgroup = "defensive-structure",
+    order = "ab",
+    ingredients =
     {
       PM.ingredient("stone-wall", 1),
       PM.ingredient("pm-bacteriaed-agar-solution", 10, "fluid"),
       PM.ingredient("pm-cellouse-pulp", 15, "fluid"),
       PM.ingredient("pm-heavyweight-framing", 4)
     },
-    results = 
+    results =
     {
       PM.product("pm-bio-wall", 1)
     }
