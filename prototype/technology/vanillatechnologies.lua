@@ -127,6 +127,14 @@ data.raw["technology"]["steel-processing"].icon_size = 64
 data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
 
 data.raw["technology"]["concrete"].prerequisites = { "pm-oil-residual-recipes", "advanced-material-processing", "automation-2"}
+data.raw["technology"]["concrete"].effects = 
+{
+  PM.unlock_recipe("pm-concrete-slurry"),
+  PM.unlock_recipe("concrete"),
+  PM.unlock_recipe("hazard-concrete"),
+  PM.unlock_recipe("refined-concrete"),
+  PM.unlock_recipe("refined-hazard-concrete")
+}
 
 table.insert(data.raw["technology"]["fast-inserter"].effects, {type = "unlock-recipe", recipe = "pm-mini-motor"})
 
