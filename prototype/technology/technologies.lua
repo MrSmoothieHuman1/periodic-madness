@@ -333,14 +333,11 @@ data:extend({
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
     },
     prerequisites = {"pm-ezekiel-ore-purifying"},
-    unit =
+    research_trigger = 
     {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-      },
-      time = 15
+      type = "craft-item",
+      item = "pm-transition-metals-ore",
+      count = 20
     }
   },
   {
@@ -3632,11 +3629,13 @@ data:extend({
       PM.unlock_recipe("pm-emerald-dust"),
       PM.unlock_recipe("pm-sapphire-dust"),
       PM.unlock_recipe("pm-lapis-lazuli-dust"),
+      PM.unlock_recipe("pm-garnet-dust"),
       PM.unlock_recipe("pm-ruby-leeching"),
       PM.unlock_recipe("pm-citrine-leeching"),
       PM.unlock_recipe("pm-emerald-leeching"),
       PM.unlock_recipe("pm-sapphire-leeching"),
       PM.unlock_recipe("pm-lapis-lazuli-leeching"),
+      PM.unlock_recipe("pm-garnet-leeching"),
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
