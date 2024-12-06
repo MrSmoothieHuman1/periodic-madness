@@ -718,8 +718,12 @@ data.raw["recipe"]["refined-concrete"].ingredients =
 {
   PM.ingredient("pm-concrete-slurry", 15, "fluid"),
   PM.ingredient("pm-heavyweight-framing", 5),
-  PM.ingredient("pm-stainless-steel-alloy", 5)
+  PM.ingredient("pm-stainless-steel-alloy", 5),
   PM.ingredient("pm-sand", 8)
+}
+data.raw["recipe"]["refined-concrete"].results = 
+{
+  PM.product("refined-concrete", 2)
 }
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
