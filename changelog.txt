@@ -5,7 +5,8 @@ Date: 2024-12-06
 
   Additions:
     - Added the concrete revamp! concrete now takes two steps, first making its slurry and then casting it into the concrete bricks.
-
+  Changes:
+    - Changed refined concrete to give a 165% walking speed increase, instead of 150%.
   Fixes:
     - Moved silicone into the correct subgroup.
 ---------------------------------------------------------------------------------------------------
