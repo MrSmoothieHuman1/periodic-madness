@@ -9133,3 +9133,5 @@ data.raw["wall"]["stone-wall"].resistances =
     percent = 50
   }
 }
+
+data.raw["tile"]["refined-concrete"].walking_speed_modifier = 1.65
