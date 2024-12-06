@@ -1581,9 +1581,20 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/silicone.png",
     default_temperature = 15,
+    subgroup = "pm-silicon-mt",
+    order = "x",
     base_color = {r = 1, g = 0.7, b = 0.7},
     flow_color = {r = 1, g = 0.7, b = 0.7}
   },
+  {
+    type = "fluid",
+    name = "pm-concrete-slurry",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/concrete-slurry.png",
+    default_temperature = 15,
+    base_color = {r = 0.5, g = 0.5, b = 0.5},
+    flow_color = {r = 0.5, g = 0.5, b = 0.5}
+  }
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"

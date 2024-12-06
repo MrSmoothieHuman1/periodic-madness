@@ -3504,6 +3504,24 @@ data:extend({
       PM.product_range("pm-trichlorosilane", 2, 8, "fluid"),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-concrete-slurry",
+    enabled = false,
+    energy_required = 10,
+    category = "pm-washing",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-dust", 8),
+      PM.ingredient("pm-bitumen", 6),
+      PM.ingredient("water", 75, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-concrete-slurry", 50, "fluid")
+    }
+  },
 
   {
     type = "recipe",

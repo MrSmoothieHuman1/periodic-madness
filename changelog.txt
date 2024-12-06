@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.120
+Date: 2024-12-06
+  The breeze flows through the marrow used to type this infinite dance Update:
+
+  Additions:
+    - Added the concrete revamp! concrete now takes two steps, first making its slurry and then casting it into the concrete bricks.
+
+  Fixes:
+    - Moved silicone into the correct subgroup.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.110
 Date: 2024-12-05
   The meant to add these at 0.4.6! enjoy! not at all late! Update:
