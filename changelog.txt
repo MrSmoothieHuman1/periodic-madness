@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.121
+Date: 2024-12-06
+  The finished update? what am i, a good modder? Update:
+
+  Fixes:
+    - Fixed gem leeching not having icons.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.120
 Date: 2024-12-06
   The breeze flows through the marrow used to type this infinite dance Update:

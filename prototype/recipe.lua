@@ -2698,11 +2698,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ruby-leeching",
+    icon_size = 64,
+    icon = "__periodic__/graphics/icons/recipes/ruby-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-ruby-ptm",
     order = "b",
-    main_product = "pm-aluminium-ore",
     ingredients = 
     {
       PM.ingredient("pm-ruby-dust", 5),
@@ -2717,11 +2718,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-citrine-leeching",
+    icon_size = 64,
+    icon = "__periodic__/graphics/icons/recipes/citrine-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-citrine-ptm",
     order = "b",
-    main_product = "pm-industrial-grade-silicon-ore",
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
@@ -2737,11 +2739,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-emerald-leeching",
+    icon_size = 64,
+    icon = "__periodic__/graphics/icons/recipes/emerald-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-emerald-ptm",
     order = "b",
-    main_product = "pm-beryllium-ore",
     ingredients = 
     {
       PM.ingredient("pm-emerald-dust", 5),
@@ -2757,11 +2760,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sapphire-leeching",
+    icon_size = 64,
+    icon = "__periodic__/graphics/icons/recipes/sapphire-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-sapphire-ptm",
     order = "b",
-    main_product = "pm-aluminium-ore",
     ingredients = 
     {
       PM.ingredient("pm-sapphire-dust", 5),
@@ -2777,11 +2781,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lapis-lazuli-leeching",
+    icon_size = 64,
+    icon = "__periodic__/graphics/icons/recipes/lapis-lazuli-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-lapis-lazuli-ptm",
     order = "b",
-    main_product = "sulfur",
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 5),
@@ -2797,11 +2802,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-garnet-leeching",
+    icon_size = 64,
+    icon = "__periodic__/graphics/icons/recipes/garnet-leeching.png",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-garnet-ptm",
     order = "b",
-    main_product = "pm-manganese-ore",
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
