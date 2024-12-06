@@ -5,6 +5,8 @@ Date: 2024-12-06
 
   Fixes:
     - Fixed gem leeching not having icons.
+    - Fixed garnet dust and garnet dust not being unlockable.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.120
 Date: 2024-12-06
@@ -18,6 +20,7 @@ Date: 2024-12-06
 
   Fixes:
     - Moved silicone into the correct subgroup.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.110
 Date: 2024-12-05
@@ -37,6 +40,7 @@ Date: 2024-12-04
 
   Fixes:
     - Fixed the fractional distillator and fluid catalyst cracker having weird/unusable fluidboxes.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.100
 Date: 2024-12-03
