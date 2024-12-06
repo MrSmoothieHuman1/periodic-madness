@@ -3510,12 +3510,15 @@ data:extend({
     enabled = false,
     energy_required = 10,
     category = "pm-washing",
+    subgroup = "terrain",
+    order = "A",
     allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-calcium-dust", 8),
       PM.ingredient("pm-bitumen", 6),
       PM.ingredient("water", 75, "fluid"),
+      PM.ingredient("stone-brick", 10)
     },
     results = 
     {

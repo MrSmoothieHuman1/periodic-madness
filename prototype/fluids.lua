@@ -1591,6 +1591,8 @@ data:extend({
     name = "pm-concrete-slurry",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/concrete-slurry.png",
+    subgroup = "terrain",
+    order = "A",
     default_temperature = 15,
     base_color = {r = 0.5, g = 0.5, b = 0.5},
     flow_color = {r = 0.5, g = 0.5, b = 0.5}
