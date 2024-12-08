@@ -537,6 +537,26 @@ data:extend({
       PM.product("pm-metalloid-science-pack", 1),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-alkaline-earth-metal-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "science-pack",
+    order = "h",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-calcium-ore", 25),
+      PM.ingredient("pm-beryllium-ore", 8),
+      PM.ingredient("pm-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+      PM.product("pm-alkaline-earth-metal-science-pack", 1),
+    }
+  },
 
   {
     type = "recipe",

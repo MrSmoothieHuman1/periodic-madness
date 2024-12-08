@@ -1737,7 +1737,7 @@ data:extend({
     prerequisites = {"pm-science-center", "pm-crystallisation"},
     unit =
     {
-      count = 150,
+      count = 200,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3848,6 +3848,30 @@ data:extend({
         {"chemical-science-pack", 1}
       },
       time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-alkaline-earth-metal-pack-unlock",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technologies/alkaline-earth-metal-unlock",
+    effects = 
+    {
+      PM.unlock_recipe("pm-alkaline-earth-metal-science-pack")
+    },
+    prerequisites = {},
+    unit = 
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 120
     }
   },
   
