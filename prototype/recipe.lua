@@ -2130,7 +2130,7 @@ data:extend({
       PM.ingredient("pm-platinum-plate", 6),
       PM.ingredient("pm-nickel-plate", 6),
       PM.ingredient("pm-glass-pane", 10),
-      PM.ingredient("pm-zinc-disc", 12),
+      PM.ingredient("pm-tungsten-plate", 8),
       PM.ingredient("pm-caesium", 4, "fluid")
     },
     results =
@@ -2147,15 +2147,48 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-vacuum-tube", 4),
-      PM.ingredient("pm-glass-pane", 10),
-      PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-cadnium-plate", 8),
-      PM.ingredient("pm-aluminium-plate", 12)
+      PM.ingredient("pm-CRT-screen", 1),
+      PM.ingredient("pm-CRT-framing", 1),
+      PM.ingredient("pm-aluminium-plate", 8)
     },
     results =
     {
       PM.product("pm-CRT", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-CRT-framing",
+    enabled = false,
+    energy_required = 14,
+    allow_producitvity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-vacuum-tube", 4),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-cadnium-plate", 6),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("pm-indium-wire", 6)
+    },
+    results = 
+    {
+      PM.product("pm-CRT-framing", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-CRT-screen",
+    enabled = false,
+    energy_required = 14,
+    allow_producitvity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-polyethylene-plastic", 4),
+      PM.ingredient("pm-CRT-glass", 4)
+    },
+    results = 
+    {
+      PM.product("pm-CRT-screen", 1)
     }
   },
   {
@@ -2169,7 +2202,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-CRT", 1),
-      PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-stainless-steel-alloy", 5),
       PM.ingredient("pm-gold-plate", 5),
       PM.ingredient("pm-heavy-lubricant", 15, "fluid"),

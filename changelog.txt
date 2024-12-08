@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.500
+Date: 2024-12-08
+  The Update:
+
+  Additions:
+    - Added Magnesium.
+    - Added Strontium.
+    - Added Barium.
+    - Added Radium.
+    - Added tier 3 solar panels and solar panel equipment.
+    - Added a way to create calcium sulfate. Im a merciful dictator, after all.
+
+  Changes:
+    - Changed CRT's recipe to take CRT framing and screens.
+    - Moved around the items needed in CRT/Oscilliscopes/RCU's.
+    - Made Oscilliscopes slightly cheaper. Slightly.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.121
 Date: 2024-12-06
   The finished update? what am i, a good modder? Update:

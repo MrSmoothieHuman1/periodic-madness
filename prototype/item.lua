@@ -1112,7 +1112,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/CRT.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/CRT.png",   size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.125 },
       { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.125 },
       { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.125 },
       { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.125 },
@@ -1127,7 +1127,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/CRT.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/CRT.png",   size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.125 },
       { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.125 },
       { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.125 },
       { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.125 },
