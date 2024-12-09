@@ -86,7 +86,7 @@ data:extend({
       PM.unlock_recipe("pm-gold-leeching"),
       PM.unlock_recipe("pm-gold-chunk-refining"),
     },
-    prerequisites = {"pm-mercury-processing", "pm-transition-metal-refining"},
+    prerequisites = {"pm-mercury-processing", "pm-ezekiel-ore-purifying"},
     unit =
     {
       count = 50,
@@ -337,7 +337,7 @@ data:extend({
     {
       type = "craft-item",
       item = "pm-transition-metals-ore",
-      count = 20
+      count = 24
     }
   },
   {
@@ -3570,7 +3570,7 @@ data:extend({
     prerequisites = {"pm-vacuum-tubes", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
       {
-        count = 350,
+        count = 375,
         ingredients = 
         {
           {"automation-science-pack", 1},
@@ -3580,7 +3580,7 @@ data:extend({
           {"pm-alkali-metal-science-pack", 1},
           {"pm-alkaline-earth-metal-science-pack", 1}
         },
-        time = 60,
+        time = 80,
       }
   },
   {
@@ -3895,6 +3895,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
@@ -3927,6 +3928,81 @@ data:extend({
       },
       time = 60
     },
+  },
+  {
+    type = "recipe",
+    name = "pm-better-calcium-extraction",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-sulfate-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-better-calcium-extraction", "pm-better-sulfur-extraction"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-tempature-inators-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/temp-inators-2.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-molten-inator-2"),
+      PM.unlock_recipe("pm-cold-inator-2"),
+    },
+    prerequisites = {"pm-silicone-processing", "pm-tempature-inators-2"},
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    }
   },
   
   {
