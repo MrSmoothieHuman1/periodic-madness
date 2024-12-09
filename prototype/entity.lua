@@ -5981,6 +5981,7 @@ data:extend({
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
+      emissions_per_minute = {pollution = 15},
       light_flicker =
       {
         color = { 0, 0, 0 },
@@ -8664,18 +8665,18 @@ data:extend({
   icon_size = 128,
   flags = { "placeable-neutral", "player-creation" },
   minable = { mining_time = 0.7, result = "pm-polonium-reactor" },
-  max_health = 250,
+  max_health = 1200,
   corpse = "nuclear-reactor-remnants",
   dying_explosion  = "nuclear-reactor-explosion",
-  consumption = "50MW",
+  consumption = "20MW",
   neighbour_bonus = 0.05,
   energy_source =
   {
     type = "burner",
     fuel_categories = {"pm-polonium"},
     effectivity = 2,
-    fuel_inventory_size = 1,
-    burnt_inventory_size = 1,
+    fuel_inventory_size = 2,
+    burnt_inventory_size = 2,
     light_flicker =
     {
       color = { 0, 0, 0 },
