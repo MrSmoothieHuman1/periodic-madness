@@ -1423,6 +1423,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-solar-panel-equipment-3",
+    energy_required = 30,
+    enabled = false,
+    subgroup = "pm-modular-power",
+    order = "c",
+    ingredients =
+    {
+      PM.ingredient("pm-gallium-arsenide", 4),
+      PM.ingredient("solar-panel-equipment-2", 1),
+      PM.ingredient("low-density-structure", 5),
+      PM.ingredient("processing-unit", 8)
+    },
+    results =
+    {
+      PM.product("pm-solar-panel-equipment-3", 1)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-speed-module-1-crushing",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/speed-module-1-crushing.png",

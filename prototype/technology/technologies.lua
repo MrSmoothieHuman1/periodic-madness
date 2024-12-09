@@ -3874,6 +3874,59 @@ data:extend({
       time = 120
     }
   },
+  {
+    type = "technology",
+    name = "pm-solar-energy-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/solar-energy-3.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-solar-panel-2"),
+    },
+    prerequisites = {"pm-alkaline-metal-science-pack", "solar-energy-2"},
+    unit =
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80,
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-solar-panel-equipment-3",
+    icon_size = 256,
+    icons = util.technology_icon_constant_equipment(
+    "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
+    prerequisites = {"pm-solar-panel-equipment-2", "pm-alkaline-earth-metal-pack-unlock", "low-density-structure"},
+    effects =
+    {
+      PM.unlock_recipe("pm-solar-panel-equipment-3")
+    },
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 60
+    },
+  },
   
   {
     type = "technology",
