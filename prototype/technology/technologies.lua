@@ -3567,7 +3567,7 @@ data:extend({
       PM.unlock_recipe("pm-oscilloscope"),
       PM.unlock_recipe("pm-rocket-control-unit")
     },
-    prerequisites = {"pm-vacuum-tubes"},
+    prerequisites = {"pm-vacuum-tubes", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
       {
         count = 350,
@@ -3578,6 +3578,7 @@ data:extend({
           {"pm-advanced-advanced-transition-metal-science-pack", 1},
           {"chemical-science-pack", 1},
           {"pm-alkali-metal-science-pack", 1},
+          {"pm-alkaline-earth-metal-science-pack", 1}
         },
         time = 60,
       }
@@ -3854,12 +3855,12 @@ data:extend({
     type = "technology",
     name = "pm-alkaline-earth-metal-pack-unlock",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technologies/alkaline-earth-metal-unlock",
+    icon = "__periodic-madness__/graphics/technology/alkaline-earth-metal-unlock.png",
     effects = 
     {
       PM.unlock_recipe("pm-alkaline-earth-metal-science-pack")
     },
-    prerequisites = {},
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit = 
     {
       count = 450,
@@ -3883,7 +3884,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-solar-panel-2"),
     },
-    prerequisites = {"pm-alkaline-metal-science-pack", "solar-energy-2"},
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-solar-energy-2"},
     unit =
     {
       count = 450,

@@ -1138,7 +1138,7 @@ data:extend({
   {
     type = "item",
     name = "pm-CRT-screen",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/glass-pane.png",
     subgroup = "pm-intermediates",
     stack_size = 10

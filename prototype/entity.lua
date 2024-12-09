@@ -16,6 +16,7 @@ local pm_lab_inputs =
   "pm-post-transition-metal-science-pack",
   "pm-alkali-metal-science-pack",
   "pm-metalloid-science-pack",
+  "pm-alkaline-earth-metal-science-pack",
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
@@ -8655,6 +8656,88 @@ data:extend({
   circuit_connector = circuit_connector_definitions["wall"],
   circuit_wire_max_distance = default_circuit_wire_max_distance,
   default_output_signal = {type = "virtual", name = "signal-G"}
+},
+{
+  type = "reactor",
+  name = "pm-rtg",
+  icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+  icon_size = 128,
+  flags = { "placeable-neutral", "player-creation" },
+  minable = { mining_time = 0.7, result = "pm-polonium-reactor" },
+  max_health = 250,
+  corpse = "nuclear-reactor-remnants",
+  dying_explosion  = "nuclear-reactor-explosion",
+  consumption = "50MW",
+  neighbour_bonus = 0.05,
+  energy_source =
+  {
+    type = "burner",
+    fuel_categories = {"pm-polonium"},
+    effectivity = 2,
+    fuel_inventory_size = 1,
+    burnt_inventory_size = 1,
+    light_flicker =
+    {
+      color = { 0, 0, 0 },
+      minimum_intensity = 0.7,
+      maximum_intensity = 0.95
+    }
+  },
+  collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
+  selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+  picture =
+  {
+    layers =
+    {
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+        width = 320,
+        height = 320,
+        line_length = 6,
+        frame_count = 24,
+        scale = 0.5,
+        shift = util.by_pixel(-5, -7)
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+        width = 320,
+        height = 320,
+        line_length = 1,
+        frame_count = 1,
+        repeat_count = 24,
+        scale = 0.5,
+        shift = { 1.625, 0 },
+        draw_as_shadow = true
+      }
+    }
+  },
+  heat_buffer =
+  {
+    max_temperature = 0,
+    specific_heat = "10MJ",
+    max_transfer = "10GW",
+    minimum_glow_temperature = 0,
+    min_working_temperature = 0,
+    default_temperature = 0,
+    connections = {},
+    working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/nuclear-reactor-1.ogg",
+          volume = 0.55
+        },
+        {
+          filename = "__base__/sound/nuclear-reactor-2.ogg",
+          volume = 0.55
+        }
+      },
+      max_sounds_per_type = 3,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+  },
 },
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:

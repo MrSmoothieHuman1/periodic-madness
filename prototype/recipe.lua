@@ -1431,13 +1431,13 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-gallium-arsenide", 4),
-      PM.ingredient("solar-panel-equipment-2", 1),
+      PM.ingredient("pm-solar-panel-equipment-2", 1),
       PM.ingredient("low-density-structure", 5),
       PM.ingredient("processing-unit", 8)
     },
     results =
     {
-      PM.product("pm-solar-panel-equipment-3", 1)
+      PM.product("pm-solar-panel-equipment-2", 1)
     }
   },
   {
@@ -2223,7 +2223,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-polyethylene-plastic", 4),
-      PM.ingredient("pm-CRT-glass", 4)
+      PM.ingredient("pm-glass-pane", 4)
     },
     results = 
     {

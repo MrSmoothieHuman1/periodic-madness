@@ -16,6 +16,9 @@ Date: 2024-12-08
     - Moved around the items needed in CRT/Oscilliscopes/RCU's.
     - Made Oscilliscopes slightly cheaper. Slightly.
 
+  Fixes:
+    - Fixed the science pack item names captilisation.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.121
 Date: 2024-12-06
