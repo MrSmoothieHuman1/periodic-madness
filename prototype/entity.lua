@@ -8740,6 +8740,64 @@ data:extend({
     },
   },
 },
+{
+  type = "solar-panel",
+  name = "pm-solar-panel-3",
+  icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-3.png",
+  icon_size = 64,
+  flags = { "placeable-neutral", "player-creation" },
+  minable = { mining_time = 0.5, result = "pm-solar-panel-3" },
+  max_health = 400 + 2,
+  corpse = "pm-solar-panel-2-remnants",
+  dying_explosion = "solar-panel-explosion",
+  collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+  selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+  fast_replaceable_group = "solar-panel",
+  map_color = {r = 0.537, g = 0.341, b = 0.63},
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "solar"
+  },
+  picture =
+  {
+    layers =
+    {
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-3/solar-panel.png",
+        priority = "high",
+        width = 230,
+        height = 224,
+        shift = util.by_pixel(-3, 3.5),
+        scale = 0.5
+      },
+      {
+        filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
+        priority = "high",
+        width = 220,
+        height = 180,
+        shift = util.by_pixel(9.5, 6),
+        draw_as_shadow = true,
+        scale = 0.5
+      }
+    }
+  },
+  overlay =
+  {
+    layers =
+    {
+      {
+        filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
+        priority = "high",
+        width = 214,
+        height = 180,
+        shift = util.by_pixel(10.5, 6),
+        scale = 0.5
+      }
+    }
+  },
+  production = "480kW"
+},
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down

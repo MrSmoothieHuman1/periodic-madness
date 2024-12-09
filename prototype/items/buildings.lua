@@ -400,7 +400,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/crystallizer.png",
     subgroup = "production-machine",
     place_result = "pm-crystallizer",
-    stack_size = 24 + 1,
+    stack_size = 50,
   },
   {
     type = "item",
@@ -410,7 +410,17 @@ data:extend({
     subgroup = "energy",
     order = "e",
     place_result = "pm-solar-panel-2",
-    stack_size = 40 + 10,
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "pm-solar-panel-3",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-3.png",
+    subgroup = "energy",
+    order = "f",
+    place_result = "pm-solar-panel-3",
+    stack_size = 50,
   },
   {
     type = "item",
