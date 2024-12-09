@@ -176,9 +176,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride-1.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride-2.png", size = 128, scale = 0.125 }
+      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",   size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride-1.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride-2.png", size = 128, scale = 0.25 }
     },
     subgroup = "pm-palladium-tm",
     order = "x",
@@ -455,14 +455,14 @@ data:extend({
         {
           size = 128,
           filename = "__periodic-madness__/graphics/icons/health-bio-module.png",
-          scale = 0.125,
+          scale = 0.25,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 128,
           filename = "__periodic-madness__/graphics/light/health-bio-module-light.png",
-          scale = 0.125,
+          scale = 0.25,
         }
       }
     },
@@ -485,14 +485,14 @@ data:extend({
         {
           size = 128,
           filename = "__periodic-madness__/graphics/icons/strength-bio-module.png",
-          scale = 0.125,
+          scale = 0.25,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 128,
           filename = "__periodic-madness__/graphics/light/strength-bio-module-light.png",
-          scale = 0.125,
+          scale = 0.25,
         }
       }
     },
@@ -515,14 +515,14 @@ data:extend({
         {
           size = 128,
           filename = "__periodic-madness__/graphics/icons/agility-bio-module.png",
-          scale = 0.125,
+          scale = 0.25,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 128,
           filename = "__periodic-madness__/graphics/light/agility-bio-module-light.png",
-          scale = 0.125,
+          scale = 0.25,
         }
       }
     },
@@ -1012,14 +1012,14 @@ data:extend({
         {
           size = 128,
           filename = "__periodic-madness__/graphics/icons/speed-module-4.png",
-          scale = 0.125,
+          scale = 0.25,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 128,
           filename = "__periodic-madness__/graphics/light/speed-module-4-glow.png",
-          scale = 0.125,
+          scale = 0.25,
         }
       }
     },
@@ -1053,14 +1053,14 @@ data:extend({
         {
           size = 128,
           filename = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
-          scale = 0.125,
+          scale = 0.25,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 128,
           filename = "__periodic-madness__/graphics/light/effectivity-module-4-glow.png",
-          scale = 0.125,
+          scale = 0.25,
         }
       }
     },
@@ -1093,14 +1093,14 @@ data:extend({
         {
           size = 128,
           filename = "__periodic-madness__/graphics/icons/productivity-module-4.png",
-          scale = 0.125,
+          scale = 0.25,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 128,
           filename = "__periodic-madness__/graphics/light/productivity-module-4-glow.png",
-          scale = 0.125,
+          scale = 0.25,
         }
       }
     },
@@ -1112,10 +1112,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/CRT.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.25 },
     },
     subgroup = "pm-intermediates",
     stack_size = 20
@@ -1127,10 +1127,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/CRT.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.25 },
     },
     subgroup = "pm-intermediates",
     stack_size = 10
@@ -1163,14 +1163,14 @@ data:extend({
         {
           size = 128,
           filename = "__periodic-madness__/graphics/icons/oscilloscope.png",
-          scale = 0.125,
+          scale = 0.25,
         },
         {
           draw_as_light = true,
           flags = { "light" },
           size = 128,
           filename = "__periodic-madness__/graphics/light/oscilloscope-light.png",
-          scale = 0.125,
+          scale = 0.25,
         }
       }
     },
@@ -1657,14 +1657,14 @@ smodule1.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/speed-module-1.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/speed-module-1-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1675,14 +1675,14 @@ smodule2.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/speed-module-2.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/speed-module-2-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1693,14 +1693,14 @@ smodule3.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/speed-module-3.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/speed-module-3-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1712,14 +1712,14 @@ emodule1.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/effectivity-module-1.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/effectivity-module-1-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1730,14 +1730,14 @@ emodule2.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/effectivity-module-2.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/effectivity-module-2-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1748,14 +1748,14 @@ emodule3.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/effectivity-module-3.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/effectivity-module-3-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1767,14 +1767,14 @@ pmodule1.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/productivity-module-1.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/productivity-module-1-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1785,14 +1785,14 @@ pmodule2.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/productivity-module-2.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/productivity-module-2-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }
@@ -1803,14 +1803,14 @@ pmodule3.pictures = {
     {
       size = 128,
       filename = "__periodic-madness__/graphics/icons/productivity-module-3.png",
-      scale = 0.125,
+      scale = 0.25,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 128,
       filename = "__periodic-madness__/graphics/light/productivity-module-3-glow.png",
-      scale = 0.125,
+      scale = 0.25,
     }
   }
 }

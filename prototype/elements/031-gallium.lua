@@ -22,9 +22,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ion-beads.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ion-beads.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ion-beads-2.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ion-beads-3.png", size = 128, scale = 0.125 },
+      { filename = "__periodic-madness__/graphics/icons/ion-beads.png",   size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ion-beads-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ion-beads-3.png", size = 128, scale = 0.25 },
     },
     subgroup = "pm-gallium-ptm",
     order = "b",

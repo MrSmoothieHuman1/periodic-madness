@@ -8,10 +8,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/calcite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite.png",   size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite-1.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite-2.png", size = 128, scale = 0.125 },
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite-3.png", size = 128, scale = 0.125 }
+      { filename = "__periodic-madness__/graphics/icons/ores/calcite.png",   size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/calcite-1.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/calcite-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/calcite-3.png", size = 128, scale = 0.25 }
     },
     subgroup = "pm-calcium-aem",
     order = "a",
