@@ -1132,27 +1132,6 @@ data:extend({
       PM.product("pm-bio-wall", 1)
     }
   },
-  {
-    type = "recipe",
-    name = "pm-solar-panel-3",
-    category = "crafting-with-fluid",
-    subgroup = "energy",
-    order = "e",
-    enabled = false,
-    energy_required = 4,
-    ingredients =
-    {
-      PM.ingredient("solar-panel", 1),
-      PM.ingredient("pm-solar-cell", 4),
-      PM.ingredient("pm-indium-plate", 4),
-      PM.ingredient("processing-unit", 2),
-      PM.ingredient("pm-liquid-gallium", 8, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-solar-panel-2", 1)
-    }
-  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

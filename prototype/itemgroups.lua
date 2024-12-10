@@ -842,36 +842,6 @@ data:extend({
     group = "pm-alkaline-earth-metals",
     order = "a"
   },
-  {
-    type = "item-subgroup",
-    name = "pm-beryllium-aem",
-    group = "pm-alkaline-earth-metals",
-    order = "b"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-magnesium-aem",
-    group = "pm-alkaline-earth-metals",
-    order = "c"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-strontium-aem",
-    group = "pm-alkaline-earth-metals",
-    order = "d"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-barium-aem",
-    group = "pm-alkaline-earth-metals",
-    order = "e"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-radium-aem",
-    group = "pm-alkaline-earth-metals",
-    order = "f"
-  },
 
   {
     type = "item-subgroup",

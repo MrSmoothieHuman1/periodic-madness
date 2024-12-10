@@ -16,7 +16,6 @@ local pm_lab_inputs =
   "pm-post-transition-metal-science-pack",
   "pm-alkali-metal-science-pack",
   "pm-metalloid-science-pack",
-  "pm-alkaline-earth-metal-science-pack",
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
@@ -5486,7 +5485,7 @@ data:extend({
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 200,
-        pipe_connections = {{ flow_direction = "input", direction = defines.direction.west, position = { 2, 0 }}},
+        pipe_connections = {{ flow_direction = "input", direction = defines.direction.east, position = { 2, 0 }}},
       },
     },
     energy_source =
@@ -5502,7 +5501,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "pm-coolant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = { -2, 0 }} },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.west, position = { -2, 0 }} },
       },
     },
   },
@@ -5585,14 +5584,13 @@ data:extend({
     {
       layers =
       {
-        --FIXME: The file is bad
-        -- {
-        --   filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
-        --   width = 448,
-        --   height = 448,
-        --   line_length = 6,
-        --   frame_count = 30,
-        -- },
+        {
+           filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
+           width = 448,
+           height = 448,
+           line_length = 6,
+           frame_count = 30,
+        },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
           width = 448,
@@ -5612,19 +5610,19 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 3}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.west, position = {0, -3}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-3, 0}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {-3, 0}}},
       },
     },
     energy_source =
@@ -5633,13 +5631,13 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      fluid_usage_per_tick = 5, --HACK: Set a *real* value instead of this outta my ass one
       fluid_box =
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {3, 0}}},
+        filter = "pm-proton-beam",
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {3, 0}}},
       },
     },
   },
@@ -5981,7 +5979,6 @@ data:extend({
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
-      emissions_per_minute = {pollution = 15},
       light_flicker =
       {
         color = { 0, 0, 0 },
@@ -6233,13 +6230,7 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2}}},
-      },
-      {
-        production_type = "output",
-        pipe_covers = pipecoverspictures(),
-        volume = 2500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 2.4}}},
       },
     },
   },
@@ -8657,146 +8648,6 @@ data:extend({
   circuit_connector = circuit_connector_definitions["wall"],
   circuit_wire_max_distance = default_circuit_wire_max_distance,
   default_output_signal = {type = "virtual", name = "signal-G"}
-},
-{
-  type = "reactor",
-  name = "pm-rtg",
-  icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
-  icon_size = 128,
-  flags = { "placeable-neutral", "player-creation" },
-  minable = { mining_time = 0.7, result = "pm-polonium-reactor" },
-  max_health = 1200,
-  corpse = "nuclear-reactor-remnants",
-  dying_explosion  = "nuclear-reactor-explosion",
-  consumption = "20MW",
-  neighbour_bonus = 0.05,
-  energy_source =
-  {
-    type = "burner",
-    fuel_categories = {"pm-polonium"},
-    effectivity = 2,
-    fuel_inventory_size = 2,
-    burnt_inventory_size = 2,
-    light_flicker =
-    {
-      color = { 0, 0, 0 },
-      minimum_intensity = 0.7,
-      maximum_intensity = 0.95
-    }
-  },
-  collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
-  selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
-  picture =
-  {
-    layers =
-    {
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
-        width = 320,
-        height = 320,
-        line_length = 6,
-        frame_count = 24,
-        scale = 0.5,
-        shift = util.by_pixel(-5, -7)
-      },
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-        width = 320,
-        height = 320,
-        line_length = 1,
-        frame_count = 1,
-        repeat_count = 24,
-        scale = 0.5,
-        shift = { 1.625, 0 },
-        draw_as_shadow = true
-      }
-    }
-  },
-  heat_buffer =
-  {
-    max_temperature = 0,
-    specific_heat = "10MJ",
-    max_transfer = "10GW",
-    minimum_glow_temperature = 0,
-    min_working_temperature = 0,
-    default_temperature = 0,
-    connections = {},
-    working_sound =
-    {
-      sound =
-      {
-        {
-          filename = "__base__/sound/nuclear-reactor-1.ogg",
-          volume = 0.55
-        },
-        {
-          filename = "__base__/sound/nuclear-reactor-2.ogg",
-          volume = 0.55
-        }
-      },
-      max_sounds_per_type = 3,
-      fade_in_ticks = 4,
-      fade_out_ticks = 20
-    },
-  },
-},
-{
-  type = "solar-panel",
-  name = "pm-solar-panel-3",
-  icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-3.png",
-  icon_size = 64,
-  flags = { "placeable-neutral", "player-creation" },
-  minable = { mining_time = 0.5, result = "pm-solar-panel-3" },
-  max_health = 400 + 2,
-  corpse = "pm-solar-panel-2-remnants",
-  dying_explosion = "solar-panel-explosion",
-  collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
-  selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
-  fast_replaceable_group = "solar-panel",
-  map_color = {r = 0.537, g = 0.341, b = 0.63},
-  energy_source =
-  {
-    type = "electric",
-    usage_priority = "solar"
-  },
-  picture =
-  {
-    layers =
-    {
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-3/solar-panel.png",
-        priority = "high",
-        width = 230,
-        height = 224,
-        shift = util.by_pixel(-3, 3.5),
-        scale = 0.5
-      },
-      {
-        filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
-        priority = "high",
-        width = 220,
-        height = 180,
-        shift = util.by_pixel(9.5, 6),
-        draw_as_shadow = true,
-        scale = 0.5
-      }
-    }
-  },
-  overlay =
-  {
-    layers =
-    {
-      {
-        filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow-overlay.png",
-        priority = "high",
-        width = 214,
-        height = 180,
-        shift = util.by_pixel(10.5, 6),
-        scale = 0.5
-      }
-    }
-  },
-  production = "480kW"
 },
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:

@@ -19,8 +19,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/polyethylene-plastic.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic.png",   size = 128, scale = 0.126 },
+      { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic-2.png", size = 128, scale = 0.124 },
       { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic-3.png", size = 128, scale = 0.25 },
     },
     subgroup = "pm-plastics",
@@ -34,8 +34,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/polymethyl-methacrylate.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate.png",   size = 128, scale = 0.126 },
+      { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-2.png", size = 128, scale = 0.124 },
     },
     subgroup = "pm-plastics",
     order = "c",
@@ -48,8 +48,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/polytetrafluoroethylene.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene.png",   size = 128, scale = 0.126 },
+      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-2.png", size = 128, scale = 0.124 },
       { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-3.png", size = 128, scale = 0.25 },
     },
     subgroup = "pm-plastics",

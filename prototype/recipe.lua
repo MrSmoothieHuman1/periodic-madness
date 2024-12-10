@@ -537,26 +537,6 @@ data:extend({
       PM.product("pm-metalloid-science-pack", 1),
     }
   },
-  {
-    type = "recipe",
-    name = "pm-alkaline-earth-metal-science-pack",
-    category = "crafting-with-fluid",
-    subgroup = "science-pack",
-    order = "h",
-    energy_required = 6,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-calcium-ore", 25),
-      PM.ingredient("pm-beryllium-ore", 8),
-      PM.ingredient("pm-science-bottle", 1)
-    },
-    enabled = false,
-    results =
-    {
-      PM.product("pm-alkaline-earth-metal-science-pack", 1),
-    }
-  },
 
   {
     type = "recipe",
@@ -1423,25 +1403,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-solar-panel-equipment-3",
-    energy_required = 30,
-    enabled = false,
-    subgroup = "pm-modular-power",
-    order = "c",
-    ingredients =
-    {
-      PM.ingredient("pm-gallium-arsenide", 4),
-      PM.ingredient("pm-solar-panel-equipment-2", 1),
-      PM.ingredient("low-density-structure", 5),
-      PM.ingredient("processing-unit", 8)
-    },
-    results =
-    {
-      PM.product("pm-solar-panel-equipment-2", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-speed-module-1-crushing",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/speed-module-1-crushing.png",
@@ -2169,7 +2130,7 @@ data:extend({
       PM.ingredient("pm-platinum-plate", 6),
       PM.ingredient("pm-nickel-plate", 6),
       PM.ingredient("pm-glass-pane", 10),
-      PM.ingredient("pm-tungsten-plate", 8),
+      PM.ingredient("pm-zinc-disc", 12),
       PM.ingredient("pm-caesium", 4, "fluid")
     },
     results =
@@ -2186,48 +2147,15 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-CRT-screen", 1),
-      PM.ingredient("pm-CRT-framing", 1),
-      PM.ingredient("pm-aluminium-plate", 8)
+      PM.ingredient("pm-vacuum-tube", 4),
+      PM.ingredient("pm-glass-pane", 10),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-cadnium-plate", 8),
+      PM.ingredient("pm-aluminium-plate", 12)
     },
     results =
     {
       PM.product("pm-CRT", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-CRT-framing",
-    enabled = false,
-    energy_required = 14,
-    allow_producitvity = true,
-    ingredients = 
-    {
-      PM.ingredient("pm-vacuum-tube", 4),
-      PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-cadnium-plate", 6),
-      PM.ingredient("pm-corrosion-resistant-tubing", 8),
-      PM.ingredient("pm-indium-wire", 6)
-    },
-    results = 
-    {
-      PM.product("pm-CRT-framing", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-CRT-screen",
-    enabled = false,
-    energy_required = 14,
-    allow_producitvity = true,
-    ingredients = 
-    {
-      PM.ingredient("pm-polyethylene-plastic", 4),
-      PM.ingredient("pm-glass-pane", 4)
-    },
-    results = 
-    {
-      PM.product("pm-CRT-screen", 1)
     }
   },
   {
@@ -2241,6 +2169,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-CRT", 1),
+      PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-stainless-steel-alloy", 5),
       PM.ingredient("pm-gold-plate", 5),
       PM.ingredient("pm-heavy-lubricant", 15, "fluid"),

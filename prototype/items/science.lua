@@ -60,18 +60,6 @@ data:extend({
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
-  {
-    type = "tool",
-    name = "pm-alkaline-earth-metal-science-pack",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/alkaline-earth-metal-pack.png",
-    subgroup = "science-pack",
-    order = "i",
-    stack_size = 200,
-    durability = 1,
-    durability_description_key = "description.science-pack-remaining-amount-key",
-    durability_description_value = "description.science-pack-remaining-amount-value"
-  },
 
 })
 

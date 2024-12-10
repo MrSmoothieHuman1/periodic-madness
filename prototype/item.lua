@@ -1112,34 +1112,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/CRT.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/CRT.png",   size = 128, scale = 0.25 },
       { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.25 },
       { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.25 },
       { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.25 },
     },
-    subgroup = "pm-intermediates",
-    stack_size = 20
-  },
-  {
-    type = "item",
-    name = "pm-CRT-framing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/CRT.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/CRT.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-2.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-3.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/CRT-4.png", size = 128, scale = 0.25 },
-    },
-    subgroup = "pm-intermediates",
-    stack_size = 10
-  },
-  {
-    type = "item",
-    name = "pm-CRT-screen",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/glass-pane.png",
     subgroup = "pm-intermediates",
     stack_size = 10
   },
