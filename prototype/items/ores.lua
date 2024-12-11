@@ -39,9 +39,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-3.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-3.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-4.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-manganese-tm",
