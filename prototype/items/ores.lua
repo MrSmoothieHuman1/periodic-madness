@@ -84,10 +84,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/gold-ore-icon.png",
     pictures = 
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon-2.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon-3.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon-4.png", size = 128, scale = 0.25 }
+      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/gold-ore-icon-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-gold-tm",
     order = "b",
@@ -100,10 +100,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/silver-ore-icon.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-2.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-3.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-4.png", size = 128, scale = 0.25 }
+      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-silver-tm",
     order = "b",
