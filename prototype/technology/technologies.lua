@@ -3860,7 +3860,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-alkaline-earth-metal-science-pack")
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-magnesium-processing", "pm-strontium-processing", "pm-barium-processing", "pm-radium-processing"},
     unit = 
     {
       count = 450,
@@ -3986,8 +3986,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/temp-inators-3.png",
     effects =
     {
-      PM.unlock_recipe("pm-molten-inator-2"),
-      PM.unlock_recipe("pm-cold-inator-2"),
+      PM.unlock_recipe("pm-molten-inator-3"),
+      PM.unlock_recipe("pm-cold-inator-3"),
     },
     prerequisites = {"pm-silicone-processing", "pm-tempature-inators-2"},
     unit =
@@ -4004,7 +4004,103 @@ data:extend({
       time = 80
     }
   },
-  
+  {
+    type = "technology",
+    name = "pm-magnesium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-strontium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-barium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-radium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 60
+    }
+  },
+
   {
     type = "technology",
     name = "pm-research-productivity-1",
