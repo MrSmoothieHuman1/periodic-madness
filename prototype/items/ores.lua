@@ -96,7 +96,7 @@ data:extend({
   {
     type = "item",
     name = "pm-silver-ore",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/silver-ore-icon.png",
     pictures =
     {

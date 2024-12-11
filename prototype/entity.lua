@@ -8801,7 +8801,7 @@ data:extend({
 {
   type = "assembling-machine",
   name = "pm-molten-inator-3",
-  icon = "__periodic-madness__/graphics/icons/buildings/molteninator-3.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/molten-inator-3.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
   minable = { mining_time = 0.75, result = "pm-molten-inator-3" },
