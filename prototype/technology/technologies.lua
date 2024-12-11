@@ -3933,7 +3933,7 @@ data:extend({
     type = "recipe",
     name = "pm-better-calcium-extraction",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech",
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
 
@@ -3958,7 +3958,7 @@ data:extend({
     type = "recipe",
     name = "pm-calcium-sulfate-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech",
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
 
