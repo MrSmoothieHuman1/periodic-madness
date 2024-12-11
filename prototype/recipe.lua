@@ -3602,6 +3602,43 @@ data:extend({
       PM.product("pm-concrete-slurry", 50, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-polydimethylsiloxane",
+    energy_required = 8,
+    enabled = false,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-polydimethylsiloxane",
+    ingredients = 
+    {
+      PM.ingredient("pm-liquid-silicone", 4, "fluid"),
+      PM.ingredient("water", 40, "fluid"),
+      PM.ingredient("pm-cobalt-catalyst", 3)
+    },
+    results = 
+    {
+      PM.product("pm-polydimethylsiloxane", 8, "fluid"),
+      PM.product_range("pm-hydrochloric-acid", 8, 12, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-light-coolant",
+    category = "chemistry",
+    energy_required = 8,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-polydimethylsiloxane", 8, "fluid"),
+      PM.ingredient("pm-helium-gas", 10, "fluid"),
+    },
+    results =
+    {
+      PM.product("pm-light-coolant", 10, "fluid")
+    }
+  },
 
   {
     type = "recipe",

@@ -48,6 +48,14 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "pm-advanced-moltening"
+  },
+  {
+    type = "recipe-category",
+    name = "pm-advanced-coldening"
+  },
+  {
+    type = "recipe-category",
     name = "pm-circuitry"
   },
   {

@@ -1596,7 +1596,32 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.5, g = 0.5, b = 0.5},
     flow_color = {r = 0.5, g = 0.5, b = 0.5}
-  }
+  },
+  {
+    type = "fluid",
+    name = "pm-light-coolant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/coolant.png",
+    subgroup = "pm-bismuth-ptm",
+    order = "a",
+    default_temperature = 15,
+    fuel_value = "2MJ",
+    base_color = {r = 0.447, g = 0.92, b = 1 },
+    flow_color = {r = 0.447, g = 0.92, b = 1 },
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-polydimethylsiloxane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/dimethyldichlorosilane.png",
+    subgroup = "pm-silicon-mt",
+    order = "ba",
+    default_temperature = 15,
+    auto_barrel = false,
+    base_color = {r = 0.968, g = 0.68, b = 1},
+    flow_color = {r = 0.968, g = 0.68, b = 1}
+  },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
