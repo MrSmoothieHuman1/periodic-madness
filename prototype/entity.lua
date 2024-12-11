@@ -2284,7 +2284,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 6},
+      emissions_per_minute = {pollution = 10},
     },
     graphics_set = 
   {
@@ -9002,7 +9002,7 @@ data:extend({
     effectivity = 1,
     burns_fluid = true,
     destroy_non_fuel_fluid = true,
-    emissions_per_minute = {pollution = 1},
+    emissions_per_minute = {pollution = 0.25},
     fluid_box =
     {
       production_type = "input",
