@@ -224,6 +224,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-molten-inator-3",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/molten-inator-3.png",
+    subgroup = "production-machine",
+    order = "h",
+    place_result = "pm-molten-inator-3",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-cold-inator-2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/cold-inator-3.png",
+    subgroup = "production-machine",
+    order = "i",
+    place_result = "pm-cold-inator-3",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "pm-circuit-megassembler",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
@@ -232,17 +252,6 @@ data:extend({
     place_result = "pm-circuit-megassembler",
     stack_size = 10
   },
-  -- HACK: filter inserters have been removed
-  -- {
-  --   type = "item",
-  --   name = "pm-filter-long-handed-inserter",
-  --   icon_size = 64,
-  --   icon = "__periodic-madness__/graphics/icons/buildings/filter-long-handed-inserter.png",
-  --   subgroup = "inserter",
-  --   order = "f",
-  --   place_result = "pm-filter-long-handed-inserter",
-  --   stack_size = 50
-  -- },
   {
     type = "item",
     name = "pm-stainless-steel-pipe",

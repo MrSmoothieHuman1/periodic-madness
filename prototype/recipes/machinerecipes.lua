@@ -307,7 +307,7 @@ data:extend({
     type = "recipe",
     name = "pm-cold-inator",
     subgroup = "pm-molten-machine",
-    order = "c",
+    order = "b",
     enabled = false,
     energy_required = 4,
     ingredients =
@@ -342,7 +342,7 @@ data:extend({
     type = "recipe",
     name = "pm-molten-inator-2",
     subgroup = "pm-molten-machine",
-    order = "b",
+    order = "c",
     enabled = false,
     energy_required = 4,
     ingredients =
@@ -354,6 +354,46 @@ data:extend({
     },
     results = {
       PM.product("pm-molten-inator-2", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cold-inator-3",
+    category = "crafting-with-fluid",
+    subgroup = "pm-molten-machine",
+    order = "e",
+    enabled = false,
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("pm-cooling-framing", 10),
+      PM.ingredient("pm-cold-inator-2", 1),
+      PM.ingredient("pm-silver-plate", 8),
+      PM.ingredient("pm-liquid-silicone", 3, "fluid"),
+      PM.ingredient("processing-unit", 4)
+    },
+    results = {
+      PM.product("pm-cold-inator-3", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-inator-3",
+    category = "crafting-with-fluid",
+    subgroup = "pm-molten-machine",
+    order = "f",
+    enabled = false,
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-framing", 10),
+      PM.ingredient("pm-molten-inator-2", 1),
+      PM.ingredient("pm-gold-plate", 8),
+      PM.ingredient("pm-liquid-silicone", 3, "fluid"),
+      PM.ingredient("processing-unit", 4)
+    },
+    results = {
+      PM.product("pm-molten-inator-3", 1)
     }
   },
   {
