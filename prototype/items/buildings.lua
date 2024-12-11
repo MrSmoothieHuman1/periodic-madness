@@ -234,7 +234,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-cold-inator-2",
+    name = "pm-cold-inator-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cold-inator-3.png",
     subgroup = "production-machine",

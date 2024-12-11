@@ -3983,7 +3983,7 @@ data:extend({
     type = "technology",
     name = "pm-tempature-inators-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/temp-inators-2.png",
+    icon = "__periodic-madness__/graphics/technology/temp-inators-3.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-inator-2"),
