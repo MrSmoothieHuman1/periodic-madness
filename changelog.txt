@@ -17,6 +17,7 @@ Date: 2024-12-08
     - Moved around the items needed in CRT/Oscilliscopes/RCU's.
     - Made Oscilliscopes slightly cheaper. Slightly.
     - Changed polonium reactors to give off pollution.
+    - Changed molten-inators to start from 10 pollution/m, and gets to 6p/m at tier 3.
 
   Fixes:
     - Fixed the science pack item names captilisation.
