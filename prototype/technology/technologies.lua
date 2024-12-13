@@ -3930,7 +3930,7 @@ data:extend({
     },
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-better-calcium-extraction",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
@@ -3955,7 +3955,7 @@ data:extend({
     },
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-calcium-sulfate-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
@@ -4101,7 +4101,7 @@ data:extend({
     }
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-RTG",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",

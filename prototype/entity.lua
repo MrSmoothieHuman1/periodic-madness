@@ -3688,7 +3688,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "pm-agar-solution",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {2, 0}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {2, 0}}},
       },
     },
     energy_usage = "500kW",
@@ -5486,7 +5486,7 @@ data:extend({
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 200,
-        pipe_connections = {{ flow_direction = "input", direction = defines.direction.west, position = { 2, 0 }}},
+        pipe_connections = {{ flow_direction = "input", direction = defines.direction.east, position = { 2, 0 }}},
       },
     },
     energy_source =
@@ -5502,7 +5502,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "pm-coolant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = { -2, 0 }} },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.west, position = { -2, 0 }} },
       },
     },
   },
@@ -5581,30 +5581,32 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "800kW",
+    graphics_set =
+  {
     animation =
     {
       layers =
       {
-        --FIXME: The file is bad
-        -- {
-        --   filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
-        --   width = 448,
-        --   height = 448,
-        --   line_length = 6,
-        --   frame_count = 30,
-        -- },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
+          width = 448,
+          height = 448,
+          line_length = 6,
+          frame_count = 24,
+        },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
           width = 448,
           height = 448,
           line_length = 1,
           frame_count = 1,
-          repeat_count = 30,
+          repeat_count = 24,
           scale = 0.5,
           shift = util.by_pixel(40, 12),
           draw_as_shadow = true,
         }
       }
+    }
     },
     fluid_boxes =
     {
@@ -5612,19 +5614,19 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, 3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 3}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -3}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-3, 0}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-3, 0}}},
       },
     },
     energy_source =
@@ -5639,7 +5641,8 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {3, 0}}},
+        filter = "pm-proton-beam",
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.east, position = {3, 0}}},
       },
     },
   },
