@@ -3936,7 +3936,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-mixed-calcium-rock"),
+      PM.unlock_recipe("pm-calcium-hydroxide-slurry"),
+      PM.unlock_recipe("pm-calcite"),
+      PM.unlock_recipe("pm-calcium-oxide"),
+      PM.unlock_recipe("pm-alumnotheric-calcium")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =
