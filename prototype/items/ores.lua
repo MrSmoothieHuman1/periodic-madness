@@ -479,6 +479,20 @@ data:extend({
     order = "e",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-alkaline-earth-metals-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon-2.png", size = 64, scale = 0.5 },
+    },
+    subgroup = "pm-aem-aem",
+    order = "a",
+    stack_size = 200
+  },
 })
 
 local StackIron = data.raw["item"]["iron-ore"]

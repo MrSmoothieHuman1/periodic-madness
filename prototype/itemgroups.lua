@@ -846,6 +846,12 @@ data:extend({
 
   {
     type = "item-subgroup",
+    name = "pm-aem-aem",
+    group = "pm-alkaline-earth-metals",
+    order = "A"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-calcium-aem",
     group = "pm-alkaline-earth-metals",
     order = "a"

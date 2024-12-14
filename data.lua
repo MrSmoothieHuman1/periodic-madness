@@ -315,6 +315,58 @@ data:extend({
       }
     },
   }--[[@as data.ResourceEntityPrototype]],
+  {
+    type = "autoplace-control",
+    category = "resource",
+    name = "pm-alkaline-earth-metals",
+    localised_name = {"","[entity=pm-alkaline-earth-metals] ", {"entity-name.pm-alkaline-earth-metals"}},
+    richness = true,
+    order = "b-e"
+	}--[[@as data.AutoplaceControl]],
+	{
+    type = "resource",
+    icon_size = 64,
+    name = "pm-alkaline-earth-metals",
+    icon = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon.png",
+    flags = {"placeable-neutral"},
+    order= "a-b-a",
+    map_color = {r=0.753, g=0.18, b=0.1},
+    minable =
+    {
+      hardness = 1,
+      mining_particle = "iron-ore-particle",
+      mining_time = 1,
+      result = "pm-alkaline-earth-metals-ore"
+    },
+    collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+
+    autoplace = resource_autoplace.resource_autoplace_settings
+    {
+      name = "pm-alkali-metals",
+      order = "b-z",
+      base_density = 7,
+      base_spots_per_km2 = 1,
+      regular_rq_factor_multiplier = 1.2,
+      starting_rq_factor_multiplier = 1.7,
+      has_starting_area_placement = false,
+      additional_richness = 1500
+    },
+
+    stage_counts = {60000, 40000, 26000, 17000, 15200, 12000, 3500, 1000},
+    stages =
+    {
+      sheet =
+      {
+        filename = "__periodic-madness__/graphics/entities/ores/alkaline-earth-metal-ore.png",
+        priority = "extra-high",
+        size = 128,
+        frame_count = 8,
+        variation_count = 8,
+        scale = 0.5
+      }
+    },
+  }--[[@as data.ResourceEntityPrototype]],
 
 --nickel ore
 
@@ -490,3 +542,5 @@ data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-metalloids"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-metalloids"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkali-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkali-metals"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkaline-earth-metals"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkaline-earth-metals"] = {}
