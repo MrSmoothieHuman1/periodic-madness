@@ -45,10 +45,10 @@ data:extend({
     type = "recipe",
     name = "pm-calcite-filtering",
     subgroup = "pm-calcium-aem",
-    order = "A",
+    order = "a",
     category = "pm-evaporation",
     enabled = true,
-    energy_required = 1.3,
+    energy_required = 4,
     main_product = "pm-calcite",
     ingredients =
     {
@@ -57,6 +57,7 @@ data:extend({
     results =
     {
       PM.product("pm-calcite", 4),
+      PM.product_range_chance("pm-sea-salt", 0, 6, 0.75),
       PM.product("water", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
@@ -64,10 +65,11 @@ data:extend({
     type = "recipe",
     name = "pm-calcite-crushing",
     subgroup = "pm-calcium-aem",
-    order = "a",
+    order = "b",
     category = "pm-crushing",
     enabled = true,
     energy_required = 2,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-calcite", 4)
@@ -84,7 +86,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/calcium-dust-washing.png",
     subgroup = "pm-calcium-aem",
     category = "pm-washing",
-    order = "b",
+    order = "c",
     energy_required = 2,
     ingredients =
     {
@@ -97,4 +99,100 @@ data:extend({
       PM.product_chance("pm-carbon", 1, 0.5)
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-mixed-calcium-rock",
+    category = "pm-acids",
+    subgroup = "pm-calcium-aem",
+    order = "d",
+    energy_required = 8,
+    main_product = "pm-mixed-calcium-rock",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-alkaline-earth-metal-ore", 16),
+      PM.ingredient("pm-chromic-acid", 25, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-mixed-calcium-rock", 4, 6),
+      PM.product_range_chance("pm-calcium-sulfate", 1, 2, 0.15)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-hydroxide-slurry",
+    subgroup = "pm-calcium-aem",
+    category = "pm-washing",
+    order = "d",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-mixed-calcium-rock", 6),
+      PM.ingredient("water", 50, "fluid"),
+      PM.ingredient("pm-calcium-dust", 4),
+    },
+    results = 
+    {
+      PM.product("pm-calcium-hydroxide-slurry", 20, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcite",
+    category = "chemistry",
+    subgroup = "pm-calcium-aem",
+    order = "e",
+    energy_required = 4,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-hydroxide-slurry", 10, "fluid"),
+      PM.ingredient("pm-carbon-dioxide", 40, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-calcite", 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-oxide",
+    category = "pm-moltening",
+    subgroup = "pm-calcium-aem",
+    order = "f",
+    energy_required = 3,
+    ingredients = 
+    {
+      PM.ingredient("pm-calcite", 6),
+      PM.ingredient("pm-filled-flux-container", 2),
+      PM.ingredient("steam", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-calcium-oxide", 4),
+      PM.product_range("pm-carbon-dioxide", 8, 20, "fluid"),
+      PM.product_range("pm-flux-container", 1, 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-alumnotheric-calcium",
+    category = "pm-coldening",
+    subgroup = "pm-calcium-aem",
+    order = "g",
+    energy_required = 9,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-aluminium", 5, "fluid"),
+      PM.ingredient("pm-calcium-oxide", 4),
+      PM.ingredient("pm-ferrum", 6)
+    },
+    results = 
+    {
+      PM.product("pm-aluminium-plate", 10),
+      PM.product_range("pm-calcium-ore", 3, 8)
+    }
+  }
 })
