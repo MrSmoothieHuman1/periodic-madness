@@ -28,6 +28,24 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-mixed-calcium-rock",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/calcium-dust.png",
+    subgroup = "pm-calcium-aem",
+    order = "c",
+    stack_size = 400
+  },
+  {
+    type = "item",
+    name = "pm-calcium-oxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/calcium-dust.png",
+    subgroup = "pm-calcium-aem",
+    order = "d",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "pm-calcium-chloride",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/calcium-chloride.png",
@@ -37,7 +55,7 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-calcium-aem",
-    order = "c",
+    order = "x",
     stack_size = 100
   },
 

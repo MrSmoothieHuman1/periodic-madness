@@ -1622,6 +1622,17 @@ data:extend({
     base_color = {r = 0.968, g = 0.68, b = 1},
     flow_color = {r = 0.968, g = 0.68, b = 1}
   },
+  {
+    type = "fluid",
+    name = "pm-calcium-hydroxide-slurry",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/calcium-hydroxide-slurry.png",
+    subgroup = "pm-calcium-aem",
+    order = "ca",
+    default_temperature = 15,
+    base_color = {r = 0.75, g = 0.75, b = 0.75},
+    flow_color = {r = 0.75, g = 0.75, b = 0.75}
+  },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
