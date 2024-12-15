@@ -1190,7 +1190,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-panel-2", 1)
+      PM.product("pm-solar-panel-3", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
