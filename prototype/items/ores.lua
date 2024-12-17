@@ -139,8 +139,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-1.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-calcium-aem",
     order = "c",
@@ -495,28 +497,14 @@ data:extend({
   },
 })
 
-local StackIron = data.raw["item"]["iron-ore"]
-
-StackIron.stack_size = 200
-StackIron.subgroup = "pm-iron-tm"
-StackIron.order = "b"
-
-local StackCopper = data.raw["item"]["copper-ore"]
-
-StackCopper.stack_size = 200
-StackCopper.subgroup = "pm-copper-tm"
-StackCopper.order = "b"
-
-local StackCoal = data.raw["item"]["coal"]
-
-StackCoal.stack_size = 200
-
-local StackStone = data.raw["item"]["stone"]
-
-StackStone.stack_size = 200
-
-local StackUranium = data.raw["item"]["uranium-ore"]
-
-StackUranium.stack_size = 200
+data.raw["item"]["iron-ore"].stack_size = 200
+data.raw["item"]["iron-ore"].subgroup = "pm-iron-tm"
+data.raw["item"]["iron-ore"].order = "b"
+data.raw["item"]["copper-ore"].stack_size = 200
+data.raw["item"]["copper-ore"].subgroup = "pm-copper-tm"
+data.raw["item"]["copper-ore"].order = "b"
+data.raw["item"]["coal"].stack_size = 200
+data.raw["item"]["stone"].stack_size = 200
+data.raw["item"]["uranium-ore"].stack_size = 200
 
 --hello hello, i can get my microphone if you want but i dont mind
