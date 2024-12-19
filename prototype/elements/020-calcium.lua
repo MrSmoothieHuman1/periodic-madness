@@ -49,8 +49,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/calcium-oxide.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/calcium-dust.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/calcium-dust-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/calcium-oxide.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/calcium-oxide-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/calcium-oxide-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-calcium-aem",
     order = "d",
@@ -140,7 +141,7 @@ data:extend({
     allow_productivity = true,
     ingredients = 
     {
-      PM.ingredient("pm-alkaline-earth-metal-ore", 16),
+      PM.ingredient("pm-alkaline-earth-metals-ore", 16),
       PM.ingredient("pm-chromic-acid", 25, "fluid")
     },
     results = 
@@ -179,7 +180,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-calcium-hydroxide-slurry", 10, "fluid"),
-      PM.ingredient("pm-carbon-dioxide", 40, "fluid"),
+      PM.ingredient("pm-carbon-dioxide-gas", 40, "fluid"),
     },
     results = 
     {
@@ -193,6 +194,7 @@ data:extend({
     subgroup = "pm-calcium-aem",
     order = "f",
     energy_required = 3,
+    main_product = "pm-calcium-oxide",
     ingredients = 
     {
       PM.ingredient("pm-calcite", 6),
@@ -202,7 +204,7 @@ data:extend({
     results = 
     {
       PM.product("pm-calcium-oxide", 4),
-      PM.product_range("pm-carbon-dioxide", 8, 20, "fluid"),
+      PM.product_range("pm-carbon-dioxide-gas", 8, 20, "fluid"),
       PM.product_range("pm-flux-container", 1, 2)
     }
   },
@@ -213,6 +215,7 @@ data:extend({
     subgroup = "pm-calcium-aem",
     order = "g",
     energy_required = 9,
+    main_product = "pm-calcium-ore",
     ingredients = 
     {
       PM.ingredient("pm-molten-aluminium", 5, "fluid"),

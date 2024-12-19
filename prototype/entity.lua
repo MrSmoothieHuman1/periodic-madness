@@ -9016,6 +9016,88 @@ data:extend({
     },
   },
 },
+{
+  type = "assembling-machine",
+  name = "pm-mixing-tank-1",
+  icon_size = 64,
+  icon = "__periodic-madness__/graphics/icons/buildings/atmospheric-condenser.png",
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 0.5, result = "pm-mixing-tank" },
+  max_health = 450,
+  collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
+  selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
+  corpse = "pm-mixing-tank-1",
+  dying_explosion = "assembling-machine-1-explosion",
+  crafting_categories = { "pm-mixing" },
+  module_slots = 1,
+  allowed_effects = PM.all_effects,
+  crafting_speed = 0.75,
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = {pollution = 6}
+  },
+  energy_usage = "350kW",
+  graphics_set = 
+{
+  animation =
+  {
+    layers =
+    {
+      {
+        filename =
+        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank.png",
+        width = 320,
+        height = 320,
+        frame_count = 16,
+        line_length = 4,
+        scale = 0.5,
+      },
+      {
+        filename =
+        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+        width = 320,
+        height = 316,
+        frame_count = 56,
+        line_length = 8,
+        scale = 0.5,
+        shift = util.by_pixel(0, 2),
+        draw_as_shadow = true,
+      }
+    }
+  }
+},
+  fluid_boxes =
+  {
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 1500,
+      pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
+    },
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 1500,
+      pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -2} }},
+    },
+    {
+
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 1500,
+      pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
+    },
+    {
+
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 1500,
+      pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {2, 0} }},
+    },
+  },
+},
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down

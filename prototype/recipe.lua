@@ -998,7 +998,7 @@ data:extend({
     {
       PM.ingredient("pm-helium-gas", 40, "fluid"),
       PM.ingredient("pm-platinum-plate", 4),
-      PM.ingredient("pm-vulcanised-rubber", 2),
+      PM.ingredient("pm-vulcanised-rubber", 4),
       PM.ingredient("pm-lightweight-panelling", 6),
     },
     results =

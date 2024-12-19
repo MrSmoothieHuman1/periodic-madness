@@ -4133,7 +4133,7 @@ data:extend({
     type = "technology",
     name = "pm-effect-transmission-2",
     icon_size = 256,
-    icon = "__periodic-madnesS__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = {},
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "effect-transmission"},
     unit =
