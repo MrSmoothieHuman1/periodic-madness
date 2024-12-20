@@ -9029,7 +9029,7 @@ data:extend({
   corpse = "pm-mixing-tank-1",
   dying_explosion = "assembling-machine-1-explosion",
   crafting_categories = { "pm-mixing" },
-  module_slots = 1,
+  module_slots = 3,
   allowed_effects = PM.all_effects(),
   crafting_speed = 0.75,
   energy_source =
@@ -9048,6 +9048,100 @@ data:extend({
       {
         filename =
         "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank.png",
+        width = 320,
+        height = 320,
+        frame_count = 16,
+        line_length = 4,
+        animation_speed = 0.45,
+        scale = 0.5,
+      },
+      {
+        filename =
+        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+        width = 320,
+        height = 320,
+        frame_count = 1,
+        repeat_count = 16,
+        line_length = 1,
+        scale = 0.5,
+        shift = util.by_pixel(0, 2),
+        draw_as_shadow = true,
+      }
+    }
+  }
+},
+fluid_boxes =
+{
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {1, 2} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-1, 2} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -2} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, -2} }},
+  },
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
+  },
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 0} }},
+  },
+},
+},
+{
+  type = "assembling-machine",
+  name = "pm-mixing-tank-2",
+  icon_size = 64,
+  icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-2.png",
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 0.75, result = "pm-mixing-tank-2" },
+  max_health = 750,
+  collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
+  selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
+  corpse = "pm-mixing-tank-2",
+  dying_explosion = "assembling-machine-1-explosion",
+  crafting_categories = { "pm-mixing" },
+  module_slots = 4,
+  allowed_effects = PM.all_effects(),
+  crafting_speed = 1.25,
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = {pollution = 4}
+  },
+  energy_usage = "475kW",
+  graphics_set = 
+{
+  animation =
+  {
+    layers =
+    {
+      {
+        filename =
+        "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank.png",
         width = 320,
         height = 320,
         frame_count = 16,
