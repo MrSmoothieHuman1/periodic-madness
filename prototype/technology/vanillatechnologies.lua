@@ -126,7 +126,7 @@ data.raw["technology"]["steel-processing"].prerequisites = {"pm-brass-processing
 data.raw["technology"]["steel-processing"].icon_size = 64
 data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
 
-data.raw["technology"]["concrete"].prerequisites = { "pm-oil-residual-recipes", "advanced-material-processing", "automation-2"}
+data.raw["technology"]["concrete"].prerequisites = {"pm-oil-residual-recipes", "advanced-material-processing", "pm-mixing-material-processing"}
 data.raw["technology"]["concrete"].effects = 
 {
   PM.unlock_recipe("pm-concrete-slurry"),

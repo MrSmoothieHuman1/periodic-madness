@@ -1193,6 +1193,44 @@ data:extend({
       PM.product("pm-solar-panel-3", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-mixing-tank-1",
+    subgroup = "pm-washing-machines",
+    enabled = false,
+    energy_required = 6,
+    ingredients = 
+    {
+      PM.ingredient("stone-brick", 8),
+      PM.ingredient("pm-fluid-circuit", 3),
+      PM.ingredient("pm-basic-framing", 16),
+      PM.ingredient("steel-plate", 6),
+      PM.ingredient("pm-brass-cog", 4)
+    },
+    results = 
+    {
+      PM.product("pm-mixing-tank-1", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-mixing-tank-2",
+    subgroup = "pm-washing-machines",
+    enabled = false,
+    energy_required = 6,
+    ingredients = 
+    {
+      PM.ingredient("concrete", 8),
+      PM.ingredient("pm-mixing-tank-1", 1),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("processing-unit", 3)
+    },
+    results = 
+    {
+      PM.product("pm-mixing-tank-2", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

@@ -38,7 +38,7 @@ data:extend({
     prerequisites = {"steel-processing", "pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
-      count = 30,
+      count = 125,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -1090,7 +1090,7 @@ data:extend({
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
-      count = 125,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4150,6 +4150,51 @@ data:extend({
       },
       time = 80
     },
+  },
+  {
+    type = "technology",
+    name = "pm-mixing-material-processing-1",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/mixing-tank-1.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-mixing-tank-1")
+    },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 45
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-mixing-material-processing-2",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/mixing-tank-2.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-mixing-tank-2")
+    },
+    prerequisites = {"pm-mixing-material-processing-1", "processing-unit"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1}
+      },
+      time = 60
+    }
   },
 
   {
