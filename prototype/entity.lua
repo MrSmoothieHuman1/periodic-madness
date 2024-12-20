@@ -9052,6 +9052,7 @@ data:extend({
         height = 320,
         frame_count = 16,
         line_length = 4,
+        animation_speed = 0.45,
         scale = 0.5,
       },
       {
@@ -9087,7 +9088,13 @@ fluid_boxes =
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -2} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, -2} }},
   },
   {
     production_type = "output",
