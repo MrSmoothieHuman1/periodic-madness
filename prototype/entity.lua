@@ -2052,10 +2052,10 @@ data:extend({
       },
       {
 
-        production_type = "input",
+        production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {0, -2} }},
       },
       {
 
@@ -9069,35 +9069,36 @@ data:extend({
     }
   }
 },
-  fluid_boxes =
+fluid_boxes =
+{
   {
-    {
-      production_type = "input",
-      pipe_covers = pipecoverspictures(),
-      volume = 1500,
-      pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
-    },
-    {
-      production_type = "input",
-      pipe_covers = pipecoverspictures(),
-      volume = 1500,
-      pipe_connections = {{ flow_direction="input", direction = defines.direction.east, position = {0, -2} }},
-    },
-    {
-
-      production_type = "output",
-      pipe_covers = pipecoverspictures(),
-      volume = 1500,
-      pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
-    },
-    {
-
-      production_type = "output",
-      pipe_covers = pipecoverspictures(),
-      volume = 1500,
-      pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {2, 0} }},
-    },
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
   },
+  {
+
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},
+  },
+  {
+
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
+  },
+  {
+
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 1500,
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 0} }},
+  },
+},
 },
 }--[[@as data.EntityPrototype[] ]])
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
