@@ -649,6 +649,16 @@ data:extend({
     place_result = "pm-bio-wall",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-mixing-tank-1",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-1.png",
+    subgroup = "pm-water-machine",
+    order = "d",
+    place_result = "pm-mixing-tank-1",
+    stack_size = 50,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

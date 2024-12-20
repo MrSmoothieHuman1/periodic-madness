@@ -118,6 +118,10 @@ data:extend({
     type = "recipe-category",
     name = "pm-fluid-burning"
   },
+  {
+    type = "recipe-category",
+    name = "pm-mixing"
+  },
 
 
   --groups

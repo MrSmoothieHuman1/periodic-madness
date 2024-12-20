@@ -9020,17 +9020,17 @@ data:extend({
   type = "assembling-machine",
   name = "pm-mixing-tank-1",
   icon_size = 64,
-  icon = "__periodic-madness__/graphics/icons/buildings/atmospheric-condenser.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-1.png",
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 0.5, result = "pm-mixing-tank" },
-  max_health = 450,
+  minable = { mining_time = 0.5, result = "pm-mixing-tank-1" },
+  max_health = 550,
   collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
   selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
   corpse = "pm-mixing-tank-1",
   dying_explosion = "assembling-machine-1-explosion",
   crafting_categories = { "pm-mixing" },
   module_slots = 1,
-  allowed_effects = PM.all_effects,
+  allowed_effects = PM.all_effects(),
   crafting_speed = 0.75,
   energy_source =
   {
@@ -9058,9 +9058,10 @@ data:extend({
         filename =
         "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
         width = 320,
-        height = 316,
-        frame_count = 56,
-        line_length = 8,
+        height = 320,
+        frame_count = 1,
+        repeat_count = 16,
+        line_length = 1,
         scale = 0.5,
         shift = util.by_pixel(0, 2),
         draw_as_shadow = true,
@@ -9080,14 +9081,14 @@ data:extend({
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 1500,
-      pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, -2} }},
+      pipe_connections = {{ flow_direction="input", direction = defines.direction.east, position = {0, -2} }},
     },
     {
 
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 1500,
-      pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0} }},
+      pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
     },
     {
 
