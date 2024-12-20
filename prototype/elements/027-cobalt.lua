@@ -98,7 +98,7 @@ data:extend({
     name = "pm-copper-tailings-looping",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/copper-tailings-looping.png",
-    category = "pm-washing",
+    category = "pm-mixing",
     subgroup = "pm-cobalt-tm",
     order = "ca",
     enabled = false,

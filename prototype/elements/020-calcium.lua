@@ -154,7 +154,7 @@ data:extend({
     type = "recipe",
     name = "pm-calcium-hydroxide-slurry",
     subgroup = "pm-calcium-aem",
-    category = "pm-washing",
+    category = "pm-mixing",
     order = "d",
     energy_required = 6,
     allow_productivity = true,
