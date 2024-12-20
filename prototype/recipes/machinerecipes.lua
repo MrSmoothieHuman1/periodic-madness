@@ -1196,7 +1196,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-mixing-tank-1",
-    subgroup = "pm-washing-machines",
+    subgroup = "pm-water-machine",
     enabled = false,
     energy_required = 6,
     ingredients = 
@@ -1215,7 +1215,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-mixing-tank-2",
-    subgroup = "pm-washing-machines",
+    subgroup = "pm-water-machine",
     enabled = false,
     energy_required = 6,
     ingredients = 
