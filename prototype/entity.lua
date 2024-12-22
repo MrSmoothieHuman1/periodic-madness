@@ -9670,15 +9670,15 @@ data.raw["wall"]["stone-wall"].resistances =
   },
   {
     type = "fire",
-    percent = 80
+    percent = 65
   },
   {
     type = "acid",
-    percent = 50
+    percent = 2
   },
   {
     type = "laser",
-    percent = 50
+    percent = 10
   }
 }
 

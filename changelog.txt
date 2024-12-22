@@ -22,6 +22,7 @@ Date: 2024-12-08
     - Changed calcite filtering to take 4 seconds instead of 1.3.
     - Also changed calcite filtering to occsionally give off sea salt.
     - Changed modules to take 4 rubber instead of 2.
+    - Nerfed stone walls resistances to 2% acid, 10% and 65% fire.
 
   Fixes:
     - Fixed the science pack item names captilisation.
