@@ -131,6 +131,7 @@ data:extend({
     subgroup = "pm-molybdenum-tm",
     order = "e",
     allow_decomposition = false,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-seed-crystal", 1),
@@ -150,7 +151,7 @@ data:extend({
     type = "recipe",
     name = "pm-gem-sorting",
     energy_required = 20,
-    enabled = true,
+    enabled = false,
     category = "pm-crystallisation",
     main_product = "pm-ruby",
     ingredients = 

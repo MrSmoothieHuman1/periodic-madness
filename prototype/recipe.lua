@@ -2676,6 +2676,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-ruby-ptm",
     order = "a",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-ruby", 5),
@@ -2692,6 +2693,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-citrine-ptm",
     order = "a",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-citrine", 5),
@@ -2708,6 +2710,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-emerald-ptm",
     order = "a",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-emerald", 5),
@@ -2724,6 +2727,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-sapphire-ptm",
     order = "a",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-sapphire", 5),
@@ -2740,6 +2744,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-lapis-lazuli-ptm",
     order = "a",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli", 5),
@@ -2756,6 +2761,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-garnet-ptm",
     order = "a",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-garnet", 5),
@@ -2775,6 +2781,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-ruby-ptm",
     order = "b",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-ruby-dust", 5),
@@ -2795,6 +2802,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-citrine-ptm",
     order = "b",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
@@ -2816,6 +2824,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-emerald-ptm",
     order = "b",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-emerald-dust", 5),
@@ -2837,6 +2846,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-sapphire-ptm",
     order = "b",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-sapphire-dust", 5),
@@ -2858,6 +2868,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-lapis-lazuli-ptm",
     order = "b",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 5),
@@ -2879,6 +2890,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-garnet-ptm",
     order = "b",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
@@ -2898,6 +2910,7 @@ data:extend({
     category = "advanced-crafting",
     subgroup = "pm-garnet-ptm",
     order = "d",
+    enabled = false,
     allow_productivity = true,
     ingredients = 
     {
@@ -2917,6 +2930,7 @@ data:extend({
     main_product = "pm-cut-ruby",
     subgroup = "pm-ruby-ptm",
     order = "c",
+    enabled = false,
     allow_productivity = true,
     ingredients = 
     {
@@ -2937,6 +2951,7 @@ data:extend({
     main_product = "pm-cut-sapphire",
     subgroup = "pm-sapphire-ptm",
     order = "c",
+    enabled = false,
     allow_productivity = true,
     ingredients = 
     {
@@ -2956,6 +2971,7 @@ data:extend({
     energy_required = 5,
     subgroup = "pm-ruby-ptm",
     order = "d",
+    enabled = false,
     allow_productivity = true,
     ingredients = 
     {
@@ -2976,6 +2992,7 @@ data:extend({
     energy_required = 5,
     subgroup = "pm-sapphire-ptm",
     order = "e",
+    enabled = false,
     allow_productivity = true,
     ingredients = 
     {
@@ -2997,6 +3014,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-lapis-lazuli-ptm",
     order = "c",
+    enabled = false,
     main_product = "pm-cobalt-blue",
     ingredients = 
     {

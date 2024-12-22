@@ -244,7 +244,7 @@ data:extend({
     order = "e",
     category = "smelting",
     energy_required = 3.2,
-    --enabled = false,
+    enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-tellurium-ore", 1) },
     results = {
