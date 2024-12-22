@@ -10,13 +10,7 @@ data:extend({
     order = "a",
     category = "pm-electrolysis",
     energy_required = 1,
-    crafting_machine_tint =
-    {
-      primary = { r = 0, g = 0.2, b = 0.6, a = 1 }, --main visible colour
-      secondary = { r = 1, g = 0, b = 0, a = 1 }, --background visible colour
-      tertiary = { r = 0.4, g = 0.4, b = 0.4, a = 0.5 }, -- smoke afteraffects
-      quaternary = { r = 0.5, g = 0.5, b = 0.5, a = 1 } --smoke
-    },
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-seawater", 50 , "fluid"),

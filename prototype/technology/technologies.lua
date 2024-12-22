@@ -1785,6 +1785,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-electrolysis-plant"),
+      PM.unlock_recipe("pm-water-electroylsis"),
       PM.unlock_recipe("pm-seawater-evaporation"),
       PM.unlock_recipe("pm-salt-electroylsis"),
       PM.unlock_recipe("pm-sodium-looping"),
