@@ -124,6 +124,7 @@ data:extend({
         subgroup = "pm-carbon-rnm",
         order = "f",
         energy_required = 3,
+        enabled = false,
         ingredients =
         {
           PM.ingredient("pm-carbon-dioxide-gas", 10, "fluid"),
@@ -142,6 +143,7 @@ data:extend({
         category = "pm-CO2-nullifying",
         subgroup = "pm-carbon-rnm",
         order = "g",
+        enabled = false,
         energy_required = 3,
         ingredients =
         {

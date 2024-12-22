@@ -314,6 +314,7 @@ data:extend({
     order = "ab",
     show_amount_in_title = true,
     allow_productivity = true,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-glass-fibers", 5),
