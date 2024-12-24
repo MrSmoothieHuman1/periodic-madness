@@ -28,6 +28,49 @@ Date: 2024-12-08
     - Fixed the science pack item names captilisation.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.125
+Date: 2024-12-22
+  The i sometimes wonder how im allowed to mod, or how i made it this far Update:
+
+  Fixes:
+    - Fixed many recipes being unlocked at the start, when they shouldnt be. Like gem crushing and tellurium plates.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.124
+Date: 2024-12-20
+  The the pineapple of consequences rarely arrives lubed Update:
+
+  Fixes:
+    - Made Ammonia actually producable in an atmosphere condenser.
+    - Made Factorian bacteria greenhouses actually able to produce gene base.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.123
+Date: 2024-12-09
+  The it'd be my last update IF I COULD CODE properly Update:
+
+  Fixes:
+    - Fixed cadnium not being craftable.
+    - Fixed sapphire laser heads not being craftable.
+    - Fixed TWAT's requiring borosilicate glass, gatekeeping beacons till metalloids.
+    - Fixed Crystallizers fluidboxes.
+    - Fixed the cyclotron not having any graphics.
+    - Fixed the Factorian bacteria greenhouse's fluidboxes.
+    - the FUCK will be fixed when .26 rolls around for Factorio. it crashes the game.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.122
+Date: 2024-12-09
+  The im back pushing thy boulder, see you all in 6 months or so! (hope you didnt miss constant updates) Update:
+
+  Changes:
+    - Changed Transition metal refining requiring 24 TM ore mined, not 20.
+
+  Fixes:
+    - Fixed some items being extremely small on belts.
+    - Fixed Transition metal refining still being required to progress to orange science.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.121
 Date: 2024-12-06
   The finished update? what am i, a good modder? Update:
