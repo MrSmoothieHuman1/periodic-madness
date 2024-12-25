@@ -2906,6 +2906,126 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-ruby-voiding",
+    category = "pm-mixing",
+    subgroup = "pm-ruby-ptm",
+    order = "ba",
+    enabled = false,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-ruby-dust", 5),
+      PM.ingredient("pm-acidic-water", 20, "fluid"),
+      PM.ingredient("water", 60, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-ruby-dust", 0, 4),
+      PM.product_range("water", 10, 45, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-citrine-voiding",
+    category = "pm-mixing",
+    subgroup = "pm-citrine-ptm",
+    order = "ba",
+    enabled = false,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-citrine-dust", 5),
+      PM.ingredient("pm-acidic-water", 20, "fluid"),
+      PM.ingredient("water", 60, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-citrine-dust", 0, 4),
+      PM.product_range("water", 10, 45, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-emerald-voiding",
+    category = "pm-mixing",
+    subgroup = "pm-emerald-ptm",
+    order = "ba",
+    enabled = false,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-emerald-dust", 5),
+      PM.ingredient("pm-acidic-water", 20, "fluid"),
+      PM.ingredient("water", 60, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-emerald-dust", 0, 4),
+      PM.product_range("water", 10, 45, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lapis-lazuli-voiding",
+    category = "pm-mixing",
+    subgroup = "pm-lapis-lazuli-ptm",
+    order = "ba",
+    enabled = false,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-lapis-lazuli-dust", 5),
+      PM.ingredient("pm-acidic-water", 20, "fluid"),
+      PM.ingredient("water", 60, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-lapis-lazuli-dust", 0, 4),
+      PM.product_range("water", 10, 45, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sapphire-voiding",
+    category = "pm-mixing",
+    subgroup = "pm-sapphire-ptm",
+    order = "ba",
+    enabled = false,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-sapphire-dust", 5),
+      PM.ingredient("pm-acidic-water", 20, "fluid"),
+      PM.ingredient("water", 60, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-sapphire-dust", 0, 4),
+      PM.product_range("water", 10, 45, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-garnet-voiding",
+    category = "pm-mixing",
+    subgroup = "pm-garnet-ptm",
+    order = "ba",
+    enabled = false,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-garnet-dust", 5),
+      PM.ingredient("pm-acidic-water", 20, "fluid"),
+      PM.ingredient("water", 60, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-garnet-dust", 0, 4),
+      PM.product_range("water", 10, 45, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-garnet-saw",
     energy_required = 5,
     category = "advanced-crafting",
