@@ -23,6 +23,7 @@ Date: 2024-12-08
     - Also changed calcite filtering to occsionally give off sea salt.
     - Changed modules to take 4 rubber instead of 2.
     - Nerfed stone walls resistances to 2% acid, 10% and 65% fire.
+    - Changed electric mining drills 2 to be just upgraded tier 1's, without the increased mining area. 
 
   Fixes:
     - Fixed the science pack item names captilisation.
