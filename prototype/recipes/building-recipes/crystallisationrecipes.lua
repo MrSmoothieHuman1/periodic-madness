@@ -146,7 +146,6 @@ data:extend({
     }
   },
 
-
   {
     type = "recipe",
     name = "pm-gem-sorting",

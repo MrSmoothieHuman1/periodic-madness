@@ -3591,6 +3591,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-electronic-components.png",
     effects = 
     {
+      PM.unlock_recipe("pm-garnet-saw"),
+      PM.unlock_recipe("pm-silicon-rod-cutting"),
+      PM.unlock_recipe("pm-ferric-silicon-wafer-etching"),
+      PM.unlock_recipe("pm-phosphoric-silicon-wafer-etching"),
       PM.unlock_recipe("pm-advanced-electronic-circuit-breadboard"),
       PM.unlock_recipe("pm-advanced-electronic-integrated-circuits"),
       PM.unlock_recipe("pm-advanced-fluid-circuit-breadboard"),
