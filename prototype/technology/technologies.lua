@@ -3637,7 +3637,12 @@ data:extend({
       PM.unlock_recipe("pm-emerald-leeching"),
       PM.unlock_recipe("pm-sapphire-leeching"),
       PM.unlock_recipe("pm-lapis-lazuli-leeching"),
-      PM.unlock_recipe("pm-garnet-leeching"),
+      PM.unlock_recipe("pm-ruby-voiding"),
+      PM.unlock_recipe("pm-citrine-voiding"),
+      PM.unlock_recipe("pm-emerald-voiding"),
+      PM.unlock_recipe("pm-sapphire-voiding"),
+      PM.unlock_recipe("pm-lapis-lazuli-voiding"),
+      PM.unlock_recipe("pm-garnet-voiding"),
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
