@@ -2912,6 +2912,7 @@ data:extend({
     order = "ba",
     enabled = false,
     energy_required = 10,
+    main_product = "pm-ruby",
     ingredients = 
     {
       PM.ingredient("pm-ruby-dust", 5),
@@ -2932,6 +2933,7 @@ data:extend({
     order = "ba",
     enabled = false,
     energy_required = 10,
+    main_product = "pm-citrine",
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
@@ -2952,6 +2954,7 @@ data:extend({
     order = "ba",
     enabled = false,
     energy_required = 10,
+    main_product = "pm-emerald",
     ingredients = 
     {
       PM.ingredient("pm-emerald-dust", 5),
@@ -2972,6 +2975,7 @@ data:extend({
     order = "ba",
     enabled = false,
     energy_required = 10,
+    main_product = "pm-lapis-lazuli",
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 5),
@@ -2992,6 +2996,7 @@ data:extend({
     order = "ba",
     enabled = false,
     energy_required = 10,
+    main_product = "pm-sapphire",
     ingredients = 
     {
       PM.ingredient("pm-sapphire-dust", 5),
@@ -3012,6 +3017,7 @@ data:extend({
     order = "ba",
     enabled = false,
     energy_required = 10,
+    main_product = "pm-garnet",
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
