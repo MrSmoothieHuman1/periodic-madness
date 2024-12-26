@@ -3389,7 +3389,7 @@ data:extend({
     order = "la",
     ingredients = 
     {
-      PM.ingredient("pm-silicon-wafer", 1),
+      PM.ingredient("pm-barely-etched-silicon-wafer", 1),
       PM.ingredient("pm-phosphoric-acid", 10, "fluid"),
     },
     results = 
