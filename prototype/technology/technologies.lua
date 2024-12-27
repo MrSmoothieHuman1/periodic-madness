@@ -3975,7 +3975,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-calcium-sulfate-slurry"),
+      PM.unlock_recipe("pm-calcium-sulfate-chunks"),
+      PM.unlock_recipe("pm-calcium-sulfate"),
     },
     prerequisites = {"pm-better-calcium-extraction", "pm-better-sulfur-extraction"},
     unit =
