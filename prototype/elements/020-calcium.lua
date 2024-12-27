@@ -227,5 +227,64 @@ data:extend({
       PM.product("pm-aluminium-plate", 10),
       PM.product_range("pm-calcium-ore", 3, 8)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-sulfate-slurry",
+    enabled = false,
+    energy_required = 24,
+    category = "pm-mixing",
+    subgroup = "pm-calcium-aem",
+    order = "h",
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-hydroxide-slurry", 40, "fluid"),
+      PM.ingredient("sulfuric-acid", 80, "fluid"),
+      PM.ingredient("pm-calcite", 10)
+    },
+    results = 
+    {
+      PM.product("pm-calcium-sulfate-slurry", 20, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-sulfate-chunks",
+    enabled = false,
+    energy_required = 12,
+    category = "chemistry",
+    subgroup = "pm-calcium-aem",
+    order = "i",
+    main_product = "pm-calcium-sulfate-chunks",
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-sulfate-slurry", 10, "fluid"),
+      PM.ingredient("pm-coolant", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-calcium-sulfate-chunks", 5, 10),
+      PM.product_chance_range("sulfur", 0, 8, 0.75)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-sulfate",
+    enabled = false,
+    energy_required = 12,
+    category = "pm-crushing",
+    subgroup = "pm-calcium-aem",
+    order = "j",
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-sulfate-chunks", 5),
+    },
+    results = 
+    {
+      PM.product_range("pm-calcium-sulfate", 5, 10),
+      PM.product_range("stone", 0, 8),
+      PM.product_chance_range("pm-calcium-dust", 0, 8, 0.75)
+    }
   }
+
 })
