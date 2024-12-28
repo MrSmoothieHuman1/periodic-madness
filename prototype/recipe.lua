@@ -3363,7 +3363,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-ferric-silicon-wafer-etching",
+    name = "pm-barely-etched-silicon-wafer",
     enabled = false,
     energy_required = 7.5,
     category = "pm-advanced-crafting-with-fluid",
@@ -3381,7 +3381,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-phosphoric-silicon-wafer-etching",
+    name = "pm-etched-silicon-wafer,
     enabled = false,
     energy_required = 7.5,
     category = "pm-advanced-crafting-with-fluid",

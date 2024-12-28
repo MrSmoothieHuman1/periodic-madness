@@ -3593,8 +3593,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-garnet-saw"),
       PM.unlock_recipe("pm-silicon-rod-cutting"),
-      PM.unlock_recipe("pm-ferric-silicon-wafer-etching"),
-      PM.unlock_recipe("pm-phosphoric-silicon-wafer-etching"),
+      PM.unlock_recipe("pm-barely-etched-silicon-wafer"),
+      PM.unlock_recipe("pm-etched-silicon-wafer"),
       PM.unlock_recipe("pm-advanced-electronic-circuit-breadboard"),
       PM.unlock_recipe("pm-advanced-electronic-integrated-circuits"),
       PM.unlock_recipe("pm-advanced-fluid-circuit-breadboard"),

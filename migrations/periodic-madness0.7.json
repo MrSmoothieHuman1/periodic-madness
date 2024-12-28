@@ -5,6 +5,8 @@
        ["pm-sapphire-cutting", "pm-cut-sapphire"],
        ["pm-lead-crushing", "pm-lead-powder"],
        ["pm-lead-frothing", "pm-lead-froth"],
-       ["pm-resin-ion-exchange-beads", "pm-ion-exchange-beads"]
+       ["pm-resin-ion-exchange-beads", "pm-ion-exchange-beads"],
+       ["pm-ferric-silicon-wafer-etching", "pm-barely-etched-silicon-wafer"],
+       ["pm-phosphoric-silicon-wafer-etching", "pm-etched-silicon-wafer"]
     ]
 }
