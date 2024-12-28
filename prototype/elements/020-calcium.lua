@@ -68,7 +68,23 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-calcium-aem",
-    order = "x",
+    order = "e",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-calcium-sulfate-chunks",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-4.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-calcium-aem",
+    order = "f",
     stack_size = 100
   },
 
