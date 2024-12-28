@@ -280,7 +280,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-calcium-sulfate-chunks", 5, 10),
-      PM.product_chance_range("sulfur", 0, 8, 0.75)
+      PM.product_range_chance("sulfur", 0, 8, 0.75)
     }
   },
   {
@@ -291,6 +291,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-calcium-aem",
     order = "j",
+    main_product = "pm-calcium-sulfate",
     ingredients = 
     {
       PM.ingredient("pm-calcium-sulfate-chunks", 5),
@@ -299,7 +300,7 @@ data:extend({
     {
       PM.product_range("pm-calcium-sulfate", 5, 10),
       PM.product_range("stone", 0, 8),
-      PM.product_chance_range("pm-calcium-dust", 0, 8, 0.75)
+      PM.product_range_chance("pm-calcium-dust", 0, 8, 0.75)
     }
   }
 
