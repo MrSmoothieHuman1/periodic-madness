@@ -255,7 +255,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-calcium-hydroxide-slurry", 40, "fluid"),
-      PM.ingredient("sulfuric-acid", 80, "fluid"),
+      PM.ingredient("sulfuric-acid", 120, "fluid"),
       PM.ingredient("pm-calcite", 10)
     },
     results = 
@@ -287,7 +287,7 @@ data:extend({
     type = "recipe",
     name = "pm-calcium-sulfate",
     enabled = false,
-    energy_required = 12,
+    energy_required = 8,
     category = "pm-crushing",
     subgroup = "pm-calcium-aem",
     order = "j",
