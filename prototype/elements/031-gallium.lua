@@ -114,7 +114,7 @@ data:extend({
   }--[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-resin-ion-exchange-beads",
+    name = "pm-ion-exchange-beads",
     enabled = false,
     energy_required = 7.5,
     category = "chemistry",

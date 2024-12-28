@@ -1904,7 +1904,7 @@ data:extend({
       PM.unlock_recipe("pm-metal-sodium-hydroxide"),
       PM.unlock_recipe("pm-bauxite-mixing"),
       PM.unlock_recipe("pm-gallium-liqouring"),
-      PM.unlock_recipe("pm-resin-ion-exchange-beads"),
+      PM.unlock_recipe("pm-ion-exchange-beads"),
       PM.unlock_recipe("pm-gallium-filtering"),
     },
     prerequisites = {"advanced-circuit"},

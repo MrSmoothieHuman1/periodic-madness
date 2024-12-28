@@ -4,6 +4,7 @@
        ["pm-ruby-cutting", "pm-cut-ruby"],
        ["pm-sapphire-cutting", "pm-cut-sapphire"],
        ["pm-lead-crushing", "pm-lead-powder"],
-       ["pm-lead-frothing", "pm-lead-froth"]
+       ["pm-lead-frothing", "pm-lead-froth"],
+       ["pm-resin-ion-exchange-beads", "pm-ion-exchange-beads"]
     ]
 }
