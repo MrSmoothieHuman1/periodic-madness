@@ -3052,7 +3052,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-ruby-cutting",
+    name = "pm-cut-ruby",
     energy_required = 10,
     main_product = "pm-cut-ruby",
     subgroup = "pm-ruby-ptm",
