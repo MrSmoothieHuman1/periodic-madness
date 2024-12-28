@@ -72,7 +72,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-lead-crushing",
+    name = "pm-lead-powder",
     enabled = false,
     energy_required = 3,
     category = "pm-crushing",
@@ -92,7 +92,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-lead-frothing",
+    name = "pm-lead-froth",
     enabled = false,
     energy_required = 8,
     category = "pm-washing",
