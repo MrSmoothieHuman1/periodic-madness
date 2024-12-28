@@ -1074,7 +1074,7 @@ data.raw["technology"]["laser"].research_trigger =
 data.raw["technology"]["laser"].effects = 
 {
   PM.unlock_recipe("pm-garnet-saw"),
-  PM.unlock_recipe("pm-ruby-cutting"),
+  PM.unlock_recipe("pm-cut-ruby"),
   PM.unlock_recipe("pm-sapphire-cutting"),
   PM.unlock_recipe("pm-ruby-laser-head"),
 }
