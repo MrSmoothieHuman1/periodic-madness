@@ -1,7 +1,6 @@
 {
     "recipe":
     [
-       ["pm-ruby-cutting", "pm-cut-ruby"],
-       ["pm-sapphire-cutting", "pm-cut-sapphire"]
+       ["pm-ruby-cutting", "pm-cut-ruby"]
     ]
 }

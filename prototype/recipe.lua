@@ -3073,7 +3073,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-cut-sapphire",
+    name = "pm-sapphire-cutting",
     energy_required = 10,
     main_product = "pm-cut-sapphire",
     subgroup = "pm-sapphire-ptm",
