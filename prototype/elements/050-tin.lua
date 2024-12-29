@@ -83,7 +83,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-cassiterite-crushing",
+    name = "pm-tin-chunks",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/tin-chunks.png",
     category = "pm-crushing",
@@ -135,7 +135,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-coloured-tin-combining",
+    name = "pm-tin-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/tin-combining.png",
     category = "advanced-crafting",

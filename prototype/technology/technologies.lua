@@ -911,9 +911,9 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-tin-leeching"),
-      PM.unlock_recipe("pm-cassiterite-crushing"),
+      PM.unlock_recipe("pm-tin-chunks"),
       PM.unlock_recipe("pm-tin-chunk-leeching"),
-      PM.unlock_recipe("pm-coloured-tin-combining"),
+      PM.unlock_recipe("pm-tin-ore"),
       PM.unlock_recipe("pm-tin-plate")
     },
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
