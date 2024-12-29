@@ -12,6 +12,8 @@
        ["pm-bismuth-210-decaying", "pm-polonium-210"],
        ["pm-hydrogen-gas-ionizing", "pm-proton-beam"],
        ["pm-cassiterite-crushing", "pm-tin-chunks"],
-       ["pm-coloured-tin-combining", "pm-tin-ore"]
+       ["pm-coloured-tin-combining", "pm-tin-ore"],
+       ["pm-arsenopyrite-sublimation", "pm-impure-arsenic"],
+       ["pm-arsenic-purifying", "pm-arsenic-oxide"]
     ]
 }

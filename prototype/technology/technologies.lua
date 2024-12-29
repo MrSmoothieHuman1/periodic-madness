@@ -3317,8 +3317,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-arsenopyrite-leeching"),
-      PM.unlock_recipe("pm-arsenopyrite-sublimation"),
-      PM.unlock_recipe("pm-arsenic-purifying"),
+      PM.unlock_recipe("pm-impure-arsenic"),
+      PM.unlock_recipe("pm-arsenic-oxide"),
       PM.unlock_recipe("pm-arsine"),
       PM.unlock_recipe("pm-arsine-seperation"),
       PM.unlock_recipe("pm-crude-antimony-sulfide"),

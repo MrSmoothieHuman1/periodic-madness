@@ -61,7 +61,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-arsenopyrite-sublimation",
+    name = "pm-impure-arsenic",
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
@@ -82,7 +82,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-arsenic-purifying",
+    name = "pm-arsenic-oxide",
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
