@@ -27,7 +27,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-hydrogen-gas-ionizing",
+    name = "pm-proton-beam",
     energy_required = 10,
     enabled = false,
     category = "pm-electrolysis",
@@ -45,7 +45,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-bismuth-proton-bombardment",
+    name = "pm-bismuth-210",
     enabled = false,
     energy_required = 60,
     category = "pm-cyclotroning",
@@ -64,7 +64,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-bismuth-210-decaying",
+    name = "pm-polonium-210",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-210-decay.png",
     enabled = false,

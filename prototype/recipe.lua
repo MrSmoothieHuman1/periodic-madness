@@ -3381,7 +3381,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-etched-silicon-wafer,
+    name = "pm-etched-silicon-wafer",
     enabled = false,
     energy_required = 7.5,
     category = "pm-advanced-crafting-with-fluid",

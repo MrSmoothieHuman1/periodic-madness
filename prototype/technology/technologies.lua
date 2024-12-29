@@ -2053,10 +2053,10 @@ data:extend({
     {
       PM.unlock_recipe("heat-pipe"),
       PM.unlock_recipe("pm-heat-exchanger-2"),
-      PM.unlock_recipe("pm-hydrogen-gas-ionizing"),
+      PM.unlock_recipe("pm-proton-beam"),
       PM.unlock_recipe("pm-cyclotron"),
-      PM.unlock_recipe("pm-bismuth-proton-bombardment"),
-      PM.unlock_recipe("pm-bismuth-210-decaying"),
+      PM.unlock_recipe("pm-bismuth-210"),
+      PM.unlock_recipe("pm-polonium-210"),
       PM.unlock_recipe("pm-polonium-reactor"),
       PM.unlock_recipe("pm-empty-reactor-cell"),
       PM.unlock_recipe("pm-polonium-fuel-cell"),
