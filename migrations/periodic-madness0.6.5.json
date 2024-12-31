@@ -16,6 +16,8 @@
        ["pm-arsenopyrite-sublimation", "pm-impure-arsenic"],
        ["pm-arsenic-purifying", "pm-arsenic-oxide"],
        ["pm-silicon-rod-cutting", "pm-silicon-wafer"],
-       ["pm-germanium-tetrachloride-seperation", "pm-germanium-ore"]
+       ["pm-germanium-tetrachloride-seperation", "pm-germanium-ore"],
+       ["pm-boron-extraction", "pm-boron"],
+       ["pm-sassolite-seperation", "pm-diluted-boric-acid"]
     ]
 }

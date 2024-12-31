@@ -3262,9 +3262,9 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-sassolite"),
-      PM.unlock_recipe("pm-sassolite-seperation"),
+      PM.unlock_recipe("pm-diluted-boric-acid"),
       PM.unlock_recipe("pm-ethylolamine"),
-      PM.unlock_recipe("pm-boron-extraction"),
+      PM.unlock_recipe("pm-boron"),
       PM.unlock_recipe("pm-borax"),
       PM.unlock_recipe("pm-boric-oxide"),
     },

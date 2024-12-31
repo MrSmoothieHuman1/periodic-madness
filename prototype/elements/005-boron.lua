@@ -115,7 +115,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-boron-extraction",
+    name = "pm-boron",
     enabled = false,
     energy_required = 15,
     category = "pm-washing",
@@ -162,7 +162,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-borax",     2),
+      PM.ingredient("pm-borax", 2),
       PM.ingredient("sulfuric-acid", 12, "fluid")
     },
     results =
