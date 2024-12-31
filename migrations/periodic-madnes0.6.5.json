@@ -18,6 +18,7 @@
        ["pm-silicon-rod-cutting", "pm-silicon-wafer"],
        ["pm-germanium-tetrachloride-seperation", "pm-germanium-ore"],
        ["pm-boron-extraction", "pm-boron"],
-       ["pm-sassolite-seperation", "pm-diluted-boric-acid"]
+       ["pm-sassolite-seperation", "pm-diluted-boric-acid"],
+       ["pm-basic-bastnasite", "pm-mixed-bastnasite"]
     ]
 }

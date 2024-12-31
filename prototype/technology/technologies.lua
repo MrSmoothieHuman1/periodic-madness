@@ -3348,7 +3348,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/yttrium-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-basic-bastnasite"),
+      PM.unlock_recipe("pm-mixed-bastnasite"),
       PM.unlock_recipe("pm-mixed-bastnasite-seperation"),
       PM.unlock_recipe("pm-bastnasite-Y-seperation"),
       PM.unlock_recipe("pm-bastnasite-C-seperation"),
