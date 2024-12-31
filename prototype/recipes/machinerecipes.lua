@@ -1182,7 +1182,7 @@ data:extend({
     energy_required = 4,
     ingredients =
     {
-      PM.ingredient("solar-panel", 1),
+      PM.ingredient("pm-solar-panel-2", 1),
       PM.ingredient("pm-solar-cell", 4),
       PM.ingredient("pm-indium-plate", 4),
       PM.ingredient("processing-unit", 2),
