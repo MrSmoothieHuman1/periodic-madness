@@ -71,7 +71,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-sassolite-seperation",
+    name = "pm-diluted-boric-acid",
     enabled = false,
     energy_required = 5,
     category = "chemistry",
