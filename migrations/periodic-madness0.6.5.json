@@ -14,6 +14,7 @@
        ["pm-cassiterite-crushing", "pm-tin-chunks"],
        ["pm-coloured-tin-combining", "pm-tin-ore"],
        ["pm-arsenopyrite-sublimation", "pm-impure-arsenic"],
-       ["pm-arsenic-purifying", "pm-arsenic-oxide"]
+       ["pm-arsenic-purifying", "pm-arsenic-oxide"],
+       ["pm-silicon-rod-cutting", "pm-silicon-wafer"]
     ]
 }

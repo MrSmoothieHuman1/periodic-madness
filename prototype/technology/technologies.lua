@@ -3592,7 +3592,7 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-garnet-saw"),
-      PM.unlock_recipe("pm-silicon-rod-cutting"),
+      PM.unlock_recipe("pm-silicon-wafer"),
       PM.unlock_recipe("pm-barely-etched-silicon-wafer"),
       PM.unlock_recipe("pm-etched-silicon-wafer"),
       PM.unlock_recipe("pm-advanced-electronic-circuit-breadboard"),

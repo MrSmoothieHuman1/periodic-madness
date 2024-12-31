@@ -3343,7 +3343,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-silicon-rod-cutting",
+    name = "pm-silicon-wafer",
     enabled = false,
     energy_required = 2.5,
     subgroup = "pm-silicon-mt",
