@@ -3769,7 +3769,7 @@ data:extend({
       PM.unlock_recipe("pm-tri-to-dichlorosilane"),
       PM.unlock_recipe("pm-di-to-trichlorosilane"),
       PM.unlock_recipe("pm-dimethyldichlorosilane"),
-      PM.unlock_recipe("pm-silicone")
+      PM.unlock_recipe("pm-liquid-silicone")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

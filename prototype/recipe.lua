@@ -3672,7 +3672,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-silicone",
+    name = "pm-liquid-silicone",
     enabled = false,
     energy_required = 3,
     category = "pm-washing",
