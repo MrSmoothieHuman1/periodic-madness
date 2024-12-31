@@ -15,6 +15,7 @@
        ["pm-coloured-tin-combining", "pm-tin-ore"],
        ["pm-arsenopyrite-sublimation", "pm-impure-arsenic"],
        ["pm-arsenic-purifying", "pm-arsenic-oxide"],
-       ["pm-silicon-rod-cutting", "pm-silicon-wafer"]
+       ["pm-silicon-rod-cutting", "pm-silicon-wafer"],
+       ["pm-germanium-tetrachloride-seperation", "pm-germanium-ore"]
     ]
 }

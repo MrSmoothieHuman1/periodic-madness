@@ -140,7 +140,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-germanium-tetrachloride-seperation",
+        name = "pm-germanium-ore",
         enabled = false,
         energy_required = 3,
         category = "chemistry",

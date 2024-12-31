@@ -3383,7 +3383,7 @@ data:extend({
       PM.unlock_recipe("pm-germanium-concentrate-seperation"),
       PM.unlock_recipe("pm-germanium-sulfide-to-oxide"),
       PM.unlock_recipe("pm-germanium-oxide-to-tetrachloride"),
-      PM.unlock_recipe("pm-germanium-tetrachloride-seperation")
+      PM.unlock_recipe("pm-germanium-ore")
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
