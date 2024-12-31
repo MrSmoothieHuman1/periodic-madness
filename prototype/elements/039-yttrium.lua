@@ -64,7 +64,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-basic-bastnasite",
+    name = "pm-mixed-bastnasite",
     enabled = false,
     energy_required = 18,
     category = "pm-acids",

@@ -440,7 +440,7 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-yttrium-tm",
-    order = "a",
+    order = "g",
     stack_size = 200
   },
   {
