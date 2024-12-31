@@ -31,7 +31,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-stone-crushing",
+    name = "pm-sand",
     energy_required = 2,
     allow_productivity = true,
     ingredients = { PM.ingredient("stone", 4) },
@@ -39,7 +39,6 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-glassing",
     order = "a",
-    icon = "__periodic-madness__/graphics/icons/recipes/stone-crushing.png",
     results =
     {
       PM.product("pm-sand", 8),

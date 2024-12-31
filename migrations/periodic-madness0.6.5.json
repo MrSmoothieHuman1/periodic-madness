@@ -20,6 +20,7 @@
        ["pm-boron-extraction", "pm-boron"],
        ["pm-sassolite-seperation", "pm-diluted-boric-acid"],
        ["pm-basic-bastnasite", "pm-mixed-bastnasite"],
-       ["pm-silicone", "pm-liquid-silicone"]
+       ["pm-silicone", "pm-liquid-silicone"],
+       ["pm-stone-crushing", "pm-sand"]
     ]
 }
