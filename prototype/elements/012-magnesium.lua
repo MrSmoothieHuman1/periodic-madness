@@ -10,6 +10,24 @@ data:extend({
         order = "a",
         stack_size = 250
     },
+    {
+        type = "item",
+        name = "pm-magnesium-oxide",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-magnesium-aem",
+        order = "b",
+        stack_size = 250
+    },
+    {
+        type = "item",
+        name = "pm-calcium-silicate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-magnesium-aem",
+        order = "c",
+        stack_size = 250
+    },
 
     {
         type = "recipe",
@@ -63,14 +81,72 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-magnesium-hydroxide", 10, "fluid"),
-            PM.ingredient("pm-stainless-steel-alloy", 15),
             PM.ingredient("pm-calcium-ore", 10),
             PM.ingredient("pm-carbon-dioxide-gas", 25, "fluid")
         },
         results = 
         {
             PM.product_range("pm-magnesium-oxide", 4, 6),
-            PM.product_range("pm-carbon-trioxide-gas", 8, 12, "fluid")
+            PM.product_range("pm-carbon-trioxide-gas", 16, 20, "fluid")
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-magnesium-ore",
+        enabled = false,
+        energy_required = 10,
+        category = "chemistry",
+        subgroup = "pm-magnesium-aem",
+        order = "d",
+        ingredients = 
+        {
+            PM.ingredient("pm-magnesium-oxide", 4),
+            PM.ingredient("pm-stainless-steel-alloy", 15),
+        },
+        results = 
+        {
+            PM.product_range("pm-magnesium-ore", 4, 6),
+            PM.product_chance("pm-ferrum", 5, 0.85),
+            PM.product_range("pm-calcium-silicate", 4, 10),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-silicon-based-magnesium-ore",
+        enabled = false,
+        energy_required = 8,
+        category = "chemistry",
+        subgroup = "pm-magnesium-aem",
+        order = "da",
+        ingredients = 
+        {
+            PM.ingredient("pm-magnesium-oxide", 4),
+            PM.ingredient("pm-industrial-grade-silicon-ore", 4),
+            PM.ingredient("iron-plate", 2)
+        },
+        results = 
+        {
+            PM.product_range("pm-magnesium-ore", 4, 8),
+            PM.product_range_chance("pm-calcium-silicate", 4, 6, 0.85),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-calcium-silicate-seperation",
+        enabled = false,
+        energy_required = 4,
+        category = "pm-acids",
+        subgroup = "pm-magnesium-aem",
+        order = "e",
+        ingredients = 
+        {
+            PM.ingredient("pm-sodium-sulfite", 6),
+            PM.ingredient("pm-calcium-silicate", 8)
+        },
+        results = 
+        {
+            PM.product_range_chance("pm-ferrosilicon", 1, 4, 0.5),
+            PM.product_range_chance("pm-calcite", 2, 5, 0.66)
         }
     }
 })

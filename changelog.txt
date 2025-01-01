@@ -30,6 +30,14 @@ Date: 2024-12-08
     - (Mostly) Fixed the Factoriopedia being a mess. Never not name your recipes after their outputs.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.127
+Date: 2025-01-01
+  The New Year, New Me(stakes) Update:
+
+  Fixes:
+    - Fixed CO3 nullifying not being unlockable.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.125
 Date: 2024-12-22
   The i sometimes wonder how im allowed to mod, or how i made it this far Update:

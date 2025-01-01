@@ -1645,6 +1645,18 @@ data:extend({
     flow_color = {r = 0.99, g = 0.85, b = 0.85},
     auto_barrel = false
   },
+  {
+    type = "fluid",
+    name = "pm-magnesium-hydroxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/magnesium-hydroxide.png",
+    subgroup = "pm-magnesium-aem",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 1, g = 0.842, b = 0.862},
+    flow_color = {r = 1, g = 0.842, b = 0.862},
+    auto_barrel = false,
+  },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
