@@ -39,16 +39,6 @@ data:extend({
     order = "c",
     stack_size = 200
   },
-  {
-    type = "item",
-    name = "pm-zirconium-ore",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/zirconium-ore-icon.png",
-    subgroup = "pm-zirconium-tm",
-    order = "d",
-    stack_size = 200
-  },
-
 
   {
     type = "recipe",
@@ -110,25 +100,5 @@ data:extend({
       PM.product("pm-zirconia", 6)
     }
   },
-  {
-    type = "recipe",
-    name = "pm-zirconium",
-    enabled = false,
-    energy_required = 3,
-    category = "pm-acids",
-    subgroup = "pm-zirconium-tm",
-    order = "d",
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-zircon", 2),
-      PM.ingredient("pm-chlorine", 10, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-zirconium-ore", 4),
-    }
-  } --[[@as data.RecipePrototype]],
-
 
 })
