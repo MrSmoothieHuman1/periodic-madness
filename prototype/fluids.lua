@@ -1649,7 +1649,7 @@ data:extend({
     type = "fluid",
     name = "pm-magnesium-hydroxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/magnesium-hydroxide.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/sodium-hydroxide.png",
     subgroup = "pm-magnesium-aem",
     order = "c",
     default_temperature = 15,
