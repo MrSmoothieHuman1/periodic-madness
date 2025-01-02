@@ -23,7 +23,10 @@ Date: 2024-12-08
     - Also changed calcite filtering to occsionally give off sea salt.
     - Changed modules to take 4 rubber instead of 2.
     - Nerfed stone walls resistances to 2% acid, 10% and 65% fire.
-    - Changed electric mining drills 2 to be just upgraded tier 1's, without the increased mining area. 
+    - Changed electric mining drills 2 to be just upgraded tier 1's, without the increased mining area.
+    - Deleted zirconium ore. It literally did nothing, and zirconium is already convulted as is with its uses.
+    - Made crucibles need 3 zironica, compared to 2.
+    - Made crucibles need 4 aluminium plates, compared to 2.
 
   Fixes:
     - Fixed the science pack item names captilisation.

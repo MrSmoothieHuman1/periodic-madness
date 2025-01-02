@@ -1620,8 +1620,8 @@ data:extend({
 
     ingredients =
     {
-      PM.ingredient("pm-aluminium-plate", 2),
-      PM.ingredient("pm-zirconia", 2),
+      PM.ingredient("pm-aluminium-plate", 4),
+      PM.ingredient("pm-zirconia", 3),
       PM.ingredient("pm-creosote", 10, "fluid")
     },
     results =
