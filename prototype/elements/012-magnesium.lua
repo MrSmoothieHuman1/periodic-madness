@@ -25,7 +25,7 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-magnesium-aem",
-        order = "c",
+        order = "d",
         stack_size = 250
     },
 
@@ -40,7 +40,7 @@ data:extend({
         allow_productivity = true,
         ingredients = 
         {
-            PM.ingredient("pm-alkali-metal-ore", 16),
+            PM.ingredient("pm-alkaline-earth-metals-ore", 16),
             PM.ingredient("pm-chromic-acid", 25, "fluid")
         },
         results = 
@@ -66,7 +66,7 @@ data:extend({
         results = 
         {
             PM.product("pm-magnesium-hydroxide", 20, "fluid"),
-            PM.product_range_chance("pm-calcium-hydroxide", 2, 10, 0.75, "fluid"),
+            PM.product_range_chance("pm-calcium-hydroxide-slurry", 2, 10, 0.75, "fluid"),
             PM.product_range("pm-calcite", 0, 6)
         }
     },
@@ -89,7 +89,7 @@ data:extend({
         results = 
         {
             PM.product_range("pm-magnesium-oxide", 4, 6),
-            PM.product_range("pm-carbon-trioxide-gas", 16, 20, "fluid")
+            PM.product_range("pm-carbon-trioxide", 16, 20, "fluid")
         }
     },
     {
