@@ -31,6 +31,7 @@ Date: 2024-12-08
   Fixes:
     - Fixed the science pack item names captilisation.
     - (Mostly) Fixed the Factoriopedia being a mess. Never not name your recipes after their outputs.
+    - Fixed empty reactor cells taking 0.5s to craft, and not 20s. Sucks to suck, huh?
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.127
