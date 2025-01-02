@@ -29,7 +29,7 @@ data:extend({
     results =
     {
       PM.product("iron-ore", 2),
-      PM.product("pm-acidic-water", 15, "fluid"),
+      PM.product_range("pm-acidic-water", 10, 12.5, "fluid"),
       PM.product("pm-ore-slag", 2)
     }
   },
@@ -59,7 +59,7 @@ data:extend({
     results =
     {
       PM.product("copper-ore", 2),
-      PM.product("pm-acidic-water", 15, "fluid"),
+      PM.product_range("pm-acidic-water", 10, 12.5, "fluid"),
       PM.product("pm-ore-slag", 2)
     }
   },
