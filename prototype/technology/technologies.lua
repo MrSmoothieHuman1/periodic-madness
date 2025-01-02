@@ -3418,6 +3418,7 @@ data:extend({
       PM.unlock_recipe("pm-low-to-med-quality-polysilicon"),
       PM.unlock_recipe("pm-med-to-high-quality-polysilicon"),
       PM.unlock_recipe("pm-polysilicon-rod"),
+      PM.unlock_recipe("pm-silicon-based-magnesium-ore")
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =

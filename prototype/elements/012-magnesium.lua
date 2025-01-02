@@ -56,6 +56,7 @@ data:extend({
         category = "pm-mixing",
         subgroup = "pm-magnesium-aem",
         order = "b",
+        main_product = "pm-magnesium-hydroxide",
         ingredients = 
         {
             PM.ingredient("pm-seawater", 200, "fluid"),
@@ -78,6 +79,7 @@ data:extend({
         subgroup = "pm-magnesium-aem",
         order = "c",
         allow_productivity = true,
+        main_product = "pm-magnesium-oxide",
         ingredients = 
         {
             PM.ingredient("pm-magnesium-hydroxide", 10, "fluid"),
@@ -98,6 +100,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-magnesium-aem",
         order = "d",
+        main_product = "pm-magnesium-ore",
         ingredients = 
         {
             PM.ingredient("pm-magnesium-oxide", 4),
@@ -118,6 +121,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-magnesium-aem",
         order = "da",
+        main_product = "pm-magnesium-ore",
         ingredients = 
         {
             PM.ingredient("pm-magnesium-oxide", 4),
@@ -138,6 +142,7 @@ data:extend({
         category = "pm-acids",
         subgroup = "pm-magnesium-aem",
         order = "e",
+        main_product = "pm-ferrosilicon",
         ingredients = 
         {
             PM.ingredient("pm-sodium-sulfite", 6),
