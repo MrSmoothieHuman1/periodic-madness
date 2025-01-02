@@ -4029,7 +4029,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-dolomite"),
+      PM.unlock_recipe("pm-magnesium-hydroxide"),
+      PM.unlock_recipe("pm-magnesium-oxide"),
+      PM.unlock_recipe("pm-magnesium-ore"),
+      PM.unlock_recipe("pm-calcium-silicate-seperation")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
