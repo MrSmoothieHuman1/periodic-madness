@@ -398,7 +398,7 @@ data:extend({
     {
       PM.ingredient("pm-molybdenum-ore", 2),
       PM.ingredient("sulfur", 2),
-      PM.ingredient("lubricant", 20, "fluid")
+      PM.ingredient("lubricant", 15, "fluid")
     },
     results = 
     {
