@@ -708,7 +708,7 @@ data:extend({
     results =
     {
       PM.product("pm-vulcanised-rubber", 5),
-      PM.product("pm-acidic-water", 20, "fluid")
+      PM.product_range("pm-acidic-water", 5, 8, "fluid")
     }
   },
   {

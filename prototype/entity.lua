@@ -22,6 +22,17 @@ local pm_lab_inputs =
   "space-science-pack",
 }
 
+circuit_connector_definitions["evaporator"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true }
+  }
+)
+
 function pm_electric_mining_drill2_animation()
   return
   {
@@ -2187,6 +2198,8 @@ data:extend({
     },
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1, -1 }, { 1, 1 } },
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
   {
     animation =
