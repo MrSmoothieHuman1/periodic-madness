@@ -34,7 +34,7 @@ data:extend({
     {
       PM.ingredient("pm-nickel-chunk", 6),
       PM.ingredient("water", 25, "fluid"),
-      PM.ingredient("sulfuric-acid", 12, "fluid")
+      PM.ingredient("sulfuric-acid", 8, "fluid")
     },
     results =
     {
@@ -84,7 +84,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-platinum-ore", 1, 2),
-      PM.product_range_chance("pm-ammonium-chloride", 2, 4, 0.8)
+      PM.product_range_chance("pm-ammonium-chloride", 1, 3, 0.65)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -100,7 +100,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-nickel-tailings", 10, "fluid"),
-      PM.ingredient("sulfuric-acid", 5, "fluid")
+      PM.ingredient("sulfuric-acid", 4, "fluid")
     },
     results =
     {

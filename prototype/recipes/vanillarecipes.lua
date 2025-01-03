@@ -291,7 +291,7 @@ data.raw["recipe"]["electric-engine-unit"].ingredients =
 {
   PM.ingredient("pm-basic-wiring", 10),
   PM.ingredient("advanced-circuit", 2),
-  PM.ingredient("pm-solid-lubricant", 12),
+  PM.ingredient("pm-solid-lubricant", 10),
   PM.ingredient("engine-unit", 1),
   PM.ingredient("pm-kasethal-plate", 4)
 }
