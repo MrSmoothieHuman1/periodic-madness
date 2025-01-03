@@ -69,7 +69,7 @@ data:extend({
     results =
     {
       PM.product("copper-ore", 2),
-      PM.product_range_chance("pm-cobaltite", 1, 3, 0.69),
+      PM.product_range_chance("pm-cobaltite", 0, 3, 0.69),
       PM.product("pm-cobalt-blue", 2)
     }
   } --[[@as data.RecipePrototype]],
