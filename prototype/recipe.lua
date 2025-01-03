@@ -560,7 +560,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-wood-stripping",
+    name = "pm-wood-strips",
     energy_required = 1,
     enabled = false,
     subgroup = "pm-greenhousing-rnm",

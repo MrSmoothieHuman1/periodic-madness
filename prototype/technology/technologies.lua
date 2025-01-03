@@ -151,7 +151,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/wood-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-wood-stripping"),
+      PM.unlock_recipe("pm-wood-strips"),
       PM.unlock_recipe("pm-wood-strip-burning"),
       PM.unlock_recipe("pm-coal-burning"),
       PM.unlock_recipe("pm-basic-basic-wood-growth")
