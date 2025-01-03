@@ -884,7 +884,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-plaster-of-nauvis"),
       PM.unlock_recipe("pm-plastic-science-mold"),
-      PM.unlock_recipe("pm-plastic-science-mold-filling"),
+      PM.unlock_recipe("pm-filled-plastic-science-mold"),
       PM.unlock_recipe("pm-plastic-science-bottle"),
       PM.unlock_recipe("pm-plastic-transition-metal-science-pack"),
       PM.unlock_recipe("pm-plastic-advanced-transition-metal-science-pack"),
@@ -2950,7 +2950,7 @@ data:extend({
       PM.unlock_recipe("pm-chloronated-solution-seperation"),
       PM.unlock_recipe("pm-carbon-tetrachloride-seperation"),
       PM.unlock_recipe("pm-tetrafluoroethylene"),
-      PM.unlock_recipe("pm-polytetrafluoroethylene-plastic"),
+      PM.unlock_recipe("pm-polytetrafluoroethylene"),
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =

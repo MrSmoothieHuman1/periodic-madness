@@ -1715,7 +1715,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-polymethyl-methacrylate-plastic",
+    name = "pm-polymethyl-methacrylate",
     energy_required = 3,
     enabled = false,
     category = "chemistry",
@@ -1832,7 +1832,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-polytetrafluoroethylene-plastic",
+    name = "pm-polytetrafluoroethylene",
     energy_required = 9,
     enabled = false,
     category = "chemistry",
@@ -1889,7 +1889,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-plastic-science-mold-filling",
+    name = "pm-filled-plastic-science-mold",
     energy_required = 1,
     enabled = false,
     category = "pm-advanced-molding",
