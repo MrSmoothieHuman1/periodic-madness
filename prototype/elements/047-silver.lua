@@ -38,12 +38,12 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-transition-metals-ore", 12),
-      PM.ingredient("pm-acidic-water", 25, "fluid"),
+      PM.ingredient("pm-acidic-water", 10, "fluid"),
     },
     enabled = false,
     results =
     {
-      PM.product("pm-silver-chunks", 5 )
+      PM.product("pm-silver-chunks", 5)
     }
   } --[[@as data.RecipePrototype]],
   {
