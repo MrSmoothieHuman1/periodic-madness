@@ -43,7 +43,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-residual-chunks", 4, 6),
+      PM.product_range("pm-residual-chunks", 3, 4),
       PM.product("pm-bitumen", 2),
       PM.product("sulfur", 4),
       PM.catalyst_range("pm-glass-fibers", 3, 5, 5)
@@ -195,6 +195,7 @@ data:extend({
     {
       PM.product_range("pm-chrominum-ore", 2, 5),
       PM.product_range("pm-vanadium-ore", 1, 4),
+      PM.product_range("pm-bitumen", 2, 6),
       PM.product("sulfur", 8)
     }
   },
