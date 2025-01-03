@@ -6294,6 +6294,8 @@ data:extend({
     },
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1, -1 }, { 1, 1 } },
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["evaporator"],
     graphics_set = 
   {
     animation =
