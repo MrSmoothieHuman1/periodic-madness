@@ -1639,7 +1639,6 @@ data:extend({
     order = "x",
     ingredients =
     {
-      PM.ingredient("pm-zirconium-ore", 10),
       PM.ingredient("pm-zirconia", 10),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
