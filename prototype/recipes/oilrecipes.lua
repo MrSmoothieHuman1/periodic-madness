@@ -446,7 +446,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-palladium-ore", 2, 4),
-      PM.product("pm-residual-chunks", 4),
+      PM.product_chance("pm-residual-chunks", 3, 0.75),
       PM.product_range("water", 18, 20, "fluid")
     }
   },
@@ -485,7 +485,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("lubricant", 10, "fluid"),
+      PM.ingredient("lubricant", 15, "fluid"),
       PM.ingredient("pm-liquid-gallium", 10, "fluid"),
       PM.ingredient("pm-cadnium-ore", 6)
     },
