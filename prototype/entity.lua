@@ -1728,6 +1728,8 @@ data:extend({
     },
     crafting_categories = { "pm-crushing" },
     crafting_speed = 1,
+    circuit_connector = circuit_connector_definitions["gun-turret"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
     graphics_set = 
   {
     animation =
