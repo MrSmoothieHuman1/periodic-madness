@@ -36,6 +36,50 @@ Date: 2024-12-08
     - Fixed empty reactor cells taking 0.5s to craft, and not 20s. Sucks to suck, huh?
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.131
+Date: 2025-01-03
+  The seriously, WHO LET ME PICK UP MODDING?? Update:
+
+  Changes:
+    - Made bitumen a product of residual chunks. This was how it was supposed to be since 0.4.6. Look at the version now.
+    - Lowered the amount of residual chunks you get from oil residuals.
+    - Actually made PM buildings circuitable! i didnt realise i had to do that manually
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.130
+Date: 2025-01-03
+  The you know whats better then having one update boost downloads? two of em! Update:
+
+  Fixes:
+    - Fixed the game not booting.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.129
+Date: 2025-01-03
+  The you know whats even better then you playtesting the mod? someone else playing the mod! Update:
+
+  Changes:
+    - Changed the amount of ammonium chloride you get from platinum from 2-4, to 1-3 with a 65% chance.
+    - Changed the amount of ferrum you get from titanium, from 4 to 1-4.
+    - Completely rebalanced solid lubricant.
+    - Added an acidic water unlock in byproduct handling.
+    - Changed solid lubricants recipe from using molybdenum and sulfur to carbon, and made heavy lube actually take solid lube!
+    - Changed the amount of residual chunks gotten from diesel cracking from 4, to 2 with a 0.75% chance.
+    - Made cliff explosives take 8 explosives isntead of 10.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.128
+Date: 2025-01-03
+  The barrelling it, barrel style Update:
+
+  Changes:
+    - Making the final change irrelevant, changed the recipe of cliff explosives to be more PM-inised!
+
+  Fixes:
+    - Fixed barrels not being unlockable.
+    - Fixed cliff explosives not being craftable, see above.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.127
 Date: 2025-01-01
   The New Year, New Me(stakes) Update:
