@@ -445,7 +445,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-palladium-ore", 2, 4),
-      PM.product_chance("pm-residual-chunks", 3, 0.75),
+      PM.product_chance("pm-residual-chunks", 2, 0.75),
       PM.product_range("water", 18, 20, "fluid")
     }
   },
