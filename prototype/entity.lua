@@ -1623,6 +1623,8 @@ data:extend({
     collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
   {
     animation =
@@ -3496,6 +3498,8 @@ data:extend({
     collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
   {
     animation =
