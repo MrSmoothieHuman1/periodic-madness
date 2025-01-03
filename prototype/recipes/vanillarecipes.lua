@@ -646,10 +646,10 @@ data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 }
 data.raw["recipe"]["pump"].ingredients = 
 {
-  PM.ingredient("pm-corrosion-resistant-tubing", 10),
+  PM.ingredient("pm-basic-tubing", 10),
   PM.ingredient("steel-plate", 4),
   PM.ingredient("pm-mini-motor", 4),
-  PM.ingredient("pm-heavyweight-panelling", 8),
+  PM.ingredient("pm-basic-panelling", 8),
 }
 data.raw["recipe"]["laser-turret"].category = "crafting-with-fluid"
 data.raw["recipe"]["laser-turret"].ingredients = 
