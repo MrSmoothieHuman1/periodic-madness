@@ -26,10 +26,10 @@ circuit_connector_definitions["evaporator"] = circuit_connector_definitions.crea
 (
   universal_connector_template,
   {
-    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true },
-    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true },
-    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true },
-    { variation = 18, main_offset = util.by_pixel(-24, 25), shadow_offset = util.by_pixel(35, 31), show_shadow = true }
+    { variation = 18, main_offset = util.by_pixel(-20, 20), shadow_offset = util.by_pixel(-15, 31), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-20, 20), shadow_offset = util.by_pixel(-15, 31), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-20, 20), shadow_offset = util.by_pixel(-15, 31), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-20, 20), shadow_offset = util.by_pixel(-15, 31), show_shadow = true }
   }
 )
 
