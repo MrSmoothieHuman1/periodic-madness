@@ -746,7 +746,7 @@ data.raw["recipe"]["refined-hazard-concrete"].results =
 data.raw["recipe"]["cliff-explosives"].category = "crafting-with-fluid"
 data.raw["recipe"]["cliff-explosives"].ingredients = 
 {
-  PM.ingredient("explosives", 10),
+  PM.ingredient("explosives", 8),
   PM.ingredient("pm-polyethylene-plastic", 5),
   PM.ingredient("pm-gunpowder", 4),
   PM.ingredient("pm-naptha", 6, "fluid")
