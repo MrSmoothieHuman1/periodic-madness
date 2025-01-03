@@ -743,6 +743,14 @@ data.raw["recipe"]["refined-hazard-concrete"].results =
 {
   PM.product("refined-hazard-concrete", 5)
 }
+data.raw["recipe"]["cliff-explosives"].category = "crafting-with-fluid"
+data.raw["recipe"]["cliff-explosives"].ingredients = 
+{
+  PM.ingredient("explosives", 10),
+  PM.ingredient("pm-polyethylene-plastic", 5),
+  PM.ingredient("pm-gunpowder", 4),
+  PM.ingredient("pm-naptha", 6, "fluid")
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
