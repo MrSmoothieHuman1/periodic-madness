@@ -73,7 +73,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
-      PM.ingredient("pm-acidic-water", 50, "fluid"),
+      PM.ingredient("pm-acidic-water", 25, "fluid"),
     },
     enabled = false,
     results =
