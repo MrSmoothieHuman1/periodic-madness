@@ -1492,7 +1492,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-solder", 10, "fluid"),
-      PM.product_range("pm-polonium-210", 0, 2)
+      PM.product_range_chance("pm-polonium-210", 0, 2, 0.25)
     }
   },
   {
