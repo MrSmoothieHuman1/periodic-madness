@@ -396,13 +396,12 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-molybdenum-ore", 2),
-      PM.ingredient("sulfur", 2),
-      PM.ingredient("lubricant", 15, "fluid")
+      PM.ingredient("pm-carbon", 12),
+      PM.ingredient("lubricant", 10, "fluid")
     },
     results = 
     {
-      PM.product("pm-solid-lubricant", 1)
+      PM.product("pm-solid-lubricant", 2)
     }
   },
 
@@ -485,13 +484,13 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("lubricant", 15, "fluid"),
+      PM.ingredient("pm-solid-lubricant", 10),
       PM.ingredient("pm-liquid-gallium", 10, "fluid"),
       PM.ingredient("pm-cadnium-ore", 6)
     },
     results =
     {
-      PM.product("pm-heavy-lubricant", 15, "fluid")
+      PM.product("pm-heavy-lubricant", 10, "fluid")
     }
   },
   {

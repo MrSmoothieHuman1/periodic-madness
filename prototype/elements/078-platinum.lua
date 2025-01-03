@@ -84,7 +84,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-platinum-ore", 1, 2),
-      PM.product_range_chance("pm-ammonium-chloride", 1, 3, 0.65)
+      PM.product_range_chance("pm-ammonium-chloride", 1, 3, 0.6)
     }
   } --[[@as data.RecipePrototype]],
   {
