@@ -88,6 +88,7 @@ data.raw["technology"]["electric-energy-distribution-1"].prerequisites = {"pm-fi
 data.raw["technology"]["electric-energy-distribution-2"].prerequisites = {"chemical-science-pack", "electric-energy-distribution-1", "pm-gold-processing"}
 data.raw["technology"]["fluid-handling"].effects =
 {
+  PM.unlock_recipe("empty-barrel")
   PM.unlock_recipe("pm-stainless-steel-tank"),
   PM.unlock_recipe("pm-stainless-steel-pipe"),
   PM.unlock_recipe("pm-stainless-steel-pipe-to-ground"),
