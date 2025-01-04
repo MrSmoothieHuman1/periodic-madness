@@ -176,9 +176,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/rubber-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-resin-to-rubber-resin"),
-      PM.unlock_recipe("pm-rubber-resin-cooling"),
-      PM.unlock_recipe("pm-rubber-vulcanisation")
+      PM.unlock_recipe("pm-rubber-resin"),
+      PM.unlock_recipe("pm-rubber"),
+      PM.unlock_recipe("pm-vulcanised-rubber")
     },
     prerequisites = {"pm-resin-processing"},
     research_trigger = 
@@ -195,7 +195,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/pheonlic-resin-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-resin-to-pheonlic-resin")
+      PM.unlock_recipe("pm-pheonlic-resin")
     },
     prerequisites = {"pm-resin-processing"},
     research_trigger = 
@@ -212,7 +212,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/resin-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-resin-forming"),
+      PM.unlock_recipe("pm-resin"),
       PM.unlock_recipe("pm-basic-fluid-circuit"),
       PM.unlock_recipe("pm-vacuum-former-1"),
     },

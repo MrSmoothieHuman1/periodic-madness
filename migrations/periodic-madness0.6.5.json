@@ -31,6 +31,10 @@
        ["pm-module-efficiency-lights", "pm-module-efficiency-light"],
        ["pm-module-productivity-lights", "pm-module-productivity-light"],
        ["pm-module-speed-lights", "pm-module-speed-light"],
-       ["pm-resin-forming", "pm-resin"]
+       ["pm-resin-forming", "pm-resin"],
+       ["pm-rubber-vulcanisation", "pm-vulcanised-rubber"],
+       ["pm-resin-to-rubber-resin", "pm-rubber-resin"],
+       ["pm-resin-to-pheonlic-resin", "pm-pheonlic-resin"],
+       ["pm-rubber-resin-cooling", "pm-rubber"]
     ]
 }

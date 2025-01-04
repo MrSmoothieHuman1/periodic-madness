@@ -632,7 +632,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-resin-to-rubber-resin",
+    name = "pm-rubber-resin",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-rubber-resin.png",
     energy_required = 1,
@@ -652,7 +652,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-resin-to-pheonlic-resin",
+    name = "pm-pheonlic-resin",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-pheonlic-resin.png",
     energy_required = 1,
@@ -672,7 +672,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-rubber-resin-cooling",
+    name = "pm-rubber",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-cooling.png",
     energy_required = 2,
