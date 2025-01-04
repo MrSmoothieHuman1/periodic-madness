@@ -173,14 +173,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-residual-chunks",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/residual-chunks.png",
-    subgroup = "pm-oil",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "pm-bitumen",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bitumen.png",
