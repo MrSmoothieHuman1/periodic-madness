@@ -327,3 +327,10 @@ data.raw["item"]["fission-reactor-equipment"].order = "c"
 
 data.raw["item"]["solar-panel-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["solar-panel-equipment"].order = "a"
+
+data.raw["night-vision-equipment"]["night-vision-equipment"].shape = 
+{
+  width = 1,
+  height = 1,
+  type = "full"
+}
