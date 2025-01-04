@@ -1661,7 +1661,7 @@ data:extend({
     type = "fluid",
     name = "pm-high-sulfur-residuals",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/high-sulfur-residuals.png",
     default_temperature = 15,
     base_color = {r = 0, g = 0, b = 0},
     flow_color = {r = 0, g = 0, b = 0}
@@ -1670,7 +1670,7 @@ data:extend({
     type = "fluid",
     name = "pm-low-sulfur-residuals",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/low-sulfur-residual.png",
     default_temperature = 15,
     base_color = {r = 0, g = 0, b = 0},
     flow_color = {r = 0, g = 0, b = 0}
