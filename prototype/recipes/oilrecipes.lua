@@ -67,7 +67,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-bitumen", 0, 2),
-      PM.product_range("sulfur", 7, 11),
+      PM.product_range("sulfur", 7, 12),
       PM.product_range("pm-chrominum-ore", 1, 4),
     }
   },
