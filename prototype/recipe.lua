@@ -693,13 +693,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-vulcanised-rubber",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/vulcanised-rubber.png",
     energy_required = 3,
     enabled = false,
     subgroup = "pm-resin",
     category = "pm-acids",
     order = "f",
+    main_product = "pm-vulcanised-rubber",
     ingredients =
     {
       PM.ingredient("pm-rubber", 5),
