@@ -29,7 +29,7 @@ data:extend({
     type = "recipe",
     name = "pm-oil-residual-splitting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals-splitting.png",
     category = "chemistry",
     subgroup = "pm-oil",
     order = "x",
@@ -52,6 +52,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-high-sulfur-residual-filtering",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/high-sulfur-residual-seperation.png",
     category = "chemistry",
     subgroup = "pm-oil",
     enabled = false,
@@ -72,6 +74,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-low-sulfur-residual-filtering",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/low-sulfur-residual-seperation.png",
     category = "chemistry",
     subgroup = "pm-oil",
     enabled = false,
