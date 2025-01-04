@@ -68,7 +68,7 @@ data:extend({
     },
     results =
     {
-      PM.product("copper-ore", 2),
+      PM.product("pm-copper-chunk", 2),
       PM.product_range_chance("pm-cobaltite", 0, 3, 0.69),
       PM.product("pm-cobalt-blue", 2)
     }
@@ -133,7 +133,7 @@ data:extend({
     },
     results =
     {
-      PM.product("copper-ore", 2),
+      PM.product("pm-copper-chunk", 2),
       PM.product_chance("pm-cobaltite", 1, 0.69),
       PM.product("pm-cobalt-blue", 3),
       PM.product_chance("pm-flux-container", 1, 0.66),

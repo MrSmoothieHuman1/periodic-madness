@@ -1657,6 +1657,24 @@ data:extend({
     flow_color = {r = 1, g = 0.842, b = 0.862},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-high-sulfur-residuals",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
+    default_temperature = 15,
+    base_color = {r = 0, g = 0, b = 0},
+    flow_color = {r = 0, g = 0, b = 0}
+  },
+  {
+    type = "fluid",
+    name = "pm-low-sulfur-residuals",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
+    default_temperature = 15,
+    base_color = {r = 0, g = 0, b = 0},
+    flow_color = {r = 0, g = 0, b = 0}
+  },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"

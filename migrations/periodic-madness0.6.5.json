@@ -25,6 +25,7 @@
        ["pm-plastic-science-mold-filling", "pm-filled-plastic-science-mold"],
        ["pm-polytetrafluoroethylene-plastic", "pm-polytetrafluoroethylene"],
        ["pm-polymethyl-methacrylate-plastic", "pm-polymethyl-methacrylate"],
-       ["pm-water-acifying", "pm-acidic-water"]
+       ["pm-water-acifying", "pm-acidic-water"],
+       ["pm-molybdenum-vulcanisation", "pm-molybdenum-disulfide"]
     ]
 }

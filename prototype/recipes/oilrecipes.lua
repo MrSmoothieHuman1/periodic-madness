@@ -27,7 +27,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-oil-residual-filtering",
+    name = "pm-oil-residual-splitting",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
     category = "chemistry",
@@ -39,14 +39,55 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-oil-residuals", 30, "fluid"),
-      PM.ingredient("pm-glass-fibers", 5)
+      PM.ingredient("pm-glass-fibers", 5),
+      PM.ingredient("steam", 20, "fluid")
     },
     results =
     {
-      PM.product_range("pm-residual-chunks", 3, 4),
-      PM.product("pm-bitumen", 2),
-      PM.product("sulfur", 4),
+      PM.product("pm-high-sulfur-residuals", 12, "fluid"),
+      PM.product("pm-low-sulfur-residuals", 12, "fluid"),
       PM.catalyst_range("pm-glass-fibers", 3, 5, 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-high-sulfur-residual-filtering",
+    category = "chemistry",
+    subgroup = "pm-oil",
+    enabled = false,
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-high-sulfur-residuals", 6, "fluid"),
+      PM.ingredient("pm-molybdenum-sulfide", 3)
+    },
+    results = 
+    {
+      PM.product_range("pm-bitumen", 0, 2),
+      PM.product("sulfur", 7, 11),
+      PM.product_range("pm-chromium-ore", 1, 4),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-low-sulfur-residual-filtering",
+    category = "chemistry",
+    subgroup = "pm-oil",
+    enabled = false,
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-low-sulfur-residuals", 6, "fluid"),
+      PM.ingredient("pm-molybdenum-sulfide", 3)
+    },
+    results = 
+    {
+      PM.product_range("pm-bitumen", 2, 4),
+      PM.product("sulfur", 6),
+      PM.product_range("pm-vanadium-ore", 1, 4),
+      PM.product_range("pm-fuel-oils", 0.5, 5, "fluid")
     }
   },
   {
@@ -178,73 +219,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-residual-chunk-refining",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/residual-chunks.png",
-    energy_required = 6,
-    category = "pm-acids",
-    subgroup = "pm-vanadium-tm",
-    order = "A",
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-residual-chunks", 10),
-      PM.ingredient("pm-molybdenum-disulfide", 4)
-    },
-    results =
-    {
-      PM.product_range("pm-chrominum-ore", 2, 5),
-      PM.product_range("pm-vanadium-ore", 1, 4),
-      PM.product_range("pm-bitumen", 2, 6),
-      PM.product("sulfur", 8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-bitumen-clearing",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/bitumen-clearing.png",
-    energy_required = 6,
-    category = "pm-crushing",
-    subgroup = "pm-oil",
-    order = "y",
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-bitumen", 6)
-    },
-    results =
-    {
-      PM.product_range_chance("pm-bitumen", 0, 2, 0.9),
-      PM.product_range("pm-coke", 1, 3),
-      PM.product("pm-carbon", 4)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-bitumen-washing",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/bitumen-washing.png",
-    energy_required = 3,
-    category = "pm-washing",
-    subgroup = "pm-oil",
-    order = "x",
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-bitumen", 2),
-      PM.ingredient("water", 40, "fluid")
-    },
-    results =
-    {
-      PM.product_chance("pm-acidic-water", 10, 0.6, "fluid"),
-      PM.product_range("pm-carbon", 8, 12),
-      PM.product("pm-coke", 4)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molybdenum-vulcanisation",
+    name = "pm-molybdenum-disulfide",
     energy_required = 1.5,
     category = "chemistry",
     subgroup = "pm-oil",
@@ -307,7 +282,6 @@ data:extend({
     {
       PM.product("pm-legendary-diesel", 10, "fluid"),
       PM.product("pm-common-diesel", 12, "fluid")
-
     }
   },
   {
@@ -406,7 +380,6 @@ data:extend({
     }
   },
 
-
   {
     type = "recipe",
     name = "pm-acidic-water-to-sulfuric-acid",
@@ -492,27 +465,6 @@ data:extend({
     results =
     {
       PM.product("pm-heavy-lubricant", 10, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-fuel-oil-seperation",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/fuel-oil-cracking.png",
-    category = "oil-processing",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 6,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-fuel-oils", 75, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-petrol", 25, "fluid"),
-      PM.product("pm-diesel", 25, "fluid"),
-      PM.product("pm-kerosene", 25, "fluid"),
     }
   },
   {
