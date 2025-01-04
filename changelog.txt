@@ -12,8 +12,7 @@ Date: 2024-12-08
     - Added a way to create calcium sulfate. Im a merciful dictator, after all.
     - Added RTG's, a small but expensive building that can take radioactive materials and turn them into power. Has a small neighbour bonus.
     - Added mixing tanks, a new 6x6 building that handles making things like sludges and slurries. Enjoy revamping your factory, suckers!
-    - Reworked oil residuals to not be as shit as it currently was, it now gives off two fluids that can be seperated into what you'd get from residual chunks.
-    - I still despise oil.
+    - (This is where .133's oil residual line would have been, but i had to move that into public due to the sheer shittery of oil)
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
