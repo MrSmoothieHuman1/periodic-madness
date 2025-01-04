@@ -26,6 +26,7 @@
        ["pm-polytetrafluoroethylene-plastic", "pm-polytetrafluoroethylene"],
        ["pm-polymethyl-methacrylate-plastic", "pm-polymethyl-methacrylate"],
        ["pm-water-acifying", "pm-acidic-water"],
-       ["pm-molybdenum-vulcanisation", "pm-molybdenum-disulfide"]
+       ["pm-molybdenum-vulcanisation", "pm-molybdenum-disulfide"],
+       ["pm-oil-residual-filtering", "pm-oil-residuals-splitting"]
     ]
 }

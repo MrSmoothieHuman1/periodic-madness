@@ -450,10 +450,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/oil-residual-recipes.png",
     effects =
     {
-      PM.unlock_recipe("pm-oil-residual-filtering"),
-      PM.unlock_recipe("pm-residual-chunk-refining"),
-      PM.unlock_recipe("pm-bitumen-clearing"),
-      PM.unlock_recipe("pm-bitumen-washing"),
+      PM.unlock_recipe("pm-oil-residual-plitting"),
+      PM.unlock_recipe("pm-high-sulfur-residuals-filtering"),
+      PM.unlock_recipe("pm-high-sulfur-residuals-filtering"),
+      PM.unlock_recipe("pm-bitumen-seperation"),
       PM.unlock_recipe("pm-bitumen-creosote")
     },
     prerequisites = {"oil-processing"},
