@@ -29,6 +29,7 @@ Date: 2024-12-08
     - Made crucibles need 4 aluminium plates, compared to 2.
     - Changed the amount of acidic water you get from leeching ferrum/patina from 15 to 12.5, and made it a probability-based amount.
     - Changed the amount of polonium you can get from lead-solder, from 0-2, to 0-2 with a 25% chance. I still want to see people attempt to power their base with it.
+    - Changed any plates that come after P-TM science, to take 6.4s instead of the usual 3.2s.
 
   Fixes:
     - Fixed the science pack item names captilisation.

@@ -3296,6 +3296,7 @@ data:extend({
       PM.unlock_recipe("pm-sodium-bicarbonate-tellurite"),
       PM.unlock_recipe("pm-tellurium-oxide"),
       PM.unlock_recipe("pm-tellurium-oxide-seperation"),
+      PM.unlock_recipe("pm-tellurium-plate")
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =
