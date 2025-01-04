@@ -107,7 +107,7 @@ data.raw["technology"]["oil-processing"].effects =
   PM.unlock_recipe("oil-refinery"),
   PM.unlock_recipe("chemical-plant"),
   PM.unlock_recipe("pm-basic-oil-cracking"),
-  PM.unlock_recipe("pm-molybdenum-vulcanisation")
+  PM.unlock_recipe("pm-molybdenum-disulfide")
 }
 data.raw["technology"]["oil-processing"].prerequisites = {"fluid-handling", "pm-multimetal-multiproperty"}
 data.raw["technology"]["oil-processing"].research_trigger = nil

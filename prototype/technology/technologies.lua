@@ -450,7 +450,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/oil-residual-recipes.png",
     effects =
     {
-      PM.unlock_recipe("pm-oil-residual-plitting"),
+      PM.unlock_recipe("pm-oil-residuals-splitting"),
       PM.unlock_recipe("pm-high-sulfur-residuals-filtering"),
       PM.unlock_recipe("pm-high-sulfur-residuals-filtering"),
       PM.unlock_recipe("pm-bitumen-seperation"),
@@ -509,7 +509,6 @@ data:extend({
       PM.unlock_recipe("pm-catalyst-container"),
       PM.unlock_recipe("pm-cobalt-catalyst"),
       PM.unlock_recipe("pm-fuel-oil-hydrosulfurisation"),
-      PM.unlock_recipe("pm-fuel-oil-seperation")
     },
     prerequisites = {"advanced-oil-processing"},
     unit =
