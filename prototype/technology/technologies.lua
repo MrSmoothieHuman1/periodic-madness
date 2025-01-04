@@ -722,6 +722,7 @@ data:extend({
       PM.unlock_recipe("pm-palladium-catalyst"),
       PM.unlock_recipe("pm-palladium-catalyst-refinery-gas-cracking"),
       PM.unlock_recipe("pm-palladium-hydride-crushing"),
+      PM.unlock_recipe("pm-palladium-plate"),
       PM.unlock_recipe("pm-butene-to-butane")
     },
     prerequisites = {"pm-diesel-recipes", "pm-refinery-gases-recipes"},
@@ -1422,8 +1423,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-nickel-chunk-frothing"),
       PM.unlock_recipe("pm-palladium-nickel-froth-seperation"),
-      PM.unlock_recipe("pm-nickel-tailings-looping"),
-      PM.unlock_recipe("pm-palladium-plate")
+      PM.unlock_recipe("pm-nickel-tailings-looping")
     },
     prerequisites = {"pm-diesel-recipes", "pm-advanced-refinery-gas-recipes"},
     unit =

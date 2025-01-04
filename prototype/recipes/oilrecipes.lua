@@ -631,7 +631,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-palladium-ore", 4),
+      PM.ingredient("pm-palladium-plate", 4),
       PM.ingredient("pm-carbon", 2),
       PM.ingredient("pm-catalyst-container", 1)
     },
