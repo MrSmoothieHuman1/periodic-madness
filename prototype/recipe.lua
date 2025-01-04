@@ -692,7 +692,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-rubber-vulcanisation",
+    name = "pm-vulcanised-rubber",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/vulcanised-rubber.png",
     energy_required = 3,
