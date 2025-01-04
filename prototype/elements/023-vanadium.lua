@@ -42,7 +42,7 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-residual-chunks", 3),
+      PM.ingredient("pm-bitumen", 3),
       PM.ingredient("pm-ferrum", 6),
       PM.ingredient("pm-vanadium-oxide", 2)
     },

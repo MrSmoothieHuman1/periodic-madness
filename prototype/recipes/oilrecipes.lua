@@ -92,6 +92,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-bitumen-seperation",
+    category = "pm-washing",
+    subgroup = "pm-oil",
+    enabled = false,
+    energy_required = 4,
+    ingredients = 
+    {
+      PM.ingredient("pm-bitumen", 6),
+      PM.ingredient("pm-calcium-ore", 3),
+      PM.ingredient("water", 30, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-acidic-water", 5, 12.5, "fluid"),
+      PM.product_range("pm-naptha", 0, 5, "fluid"),
+      PM.product_range("pm-coke", 2, 6)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-refinery-gases-refining",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/refinery-gas-refining.png",
@@ -419,7 +439,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-palladium-ore", 2, 4),
-      PM.product_chance("pm-residual-chunks", 2, 0.75),
+      PM.product_chance("pm-bitumen", 2, 0.75),
       PM.product_range("water", 18, 20, "fluid")
     }
   },
