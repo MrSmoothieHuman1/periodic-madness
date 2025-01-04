@@ -67,7 +67,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-bitumen", 0, 2),
-      PM.product("sulfur", 7, 11),
+      PM.product_range("sulfur", 7, 11),
       PM.product_range("pm-chromium-ore", 1, 4),
     }
   },
@@ -97,6 +97,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-bitumen-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/bitumen-seperation.png",
     category = "pm-washing",
     subgroup = "pm-oil",
     enabled = false,
