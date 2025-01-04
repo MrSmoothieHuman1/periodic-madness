@@ -24,6 +24,7 @@
        ["pm-stone-crushing", "pm-sand"],
        ["pm-plastic-science-mold-filling", "pm-filled-plastic-science-mold"],
        ["pm-polytetrafluoroethylene-plastic", "pm-polytetrafluoroethylene"],
-       ["pm-polymethyl-methacrylate-plastic", "pm-polymethyl-methacrylate"]
+       ["pm-polymethyl-methacrylate-plastic", "pm-polymethyl-methacrylate"],
+       ["pm-water-acifying", "pm-acidic-water"]
     ]
 }

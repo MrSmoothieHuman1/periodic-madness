@@ -422,7 +422,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-water-acifying",
+    name = "pm-acidic-water",
     subgroup = "pm-acid-crafting",
     category = "pm-acids",
     enabled = false,

@@ -56,7 +56,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/byproduct-handling.png",
     effects =
     {
-      PM.unlock_recipe("pm-water-acifying"),
+      PM.unlock_recipe("pm-acidic-water"),
       PM.unlock_recipe("pm-ferrum-leeching"),
       PM.unlock_recipe("pm-patina-leeching"),
     },
@@ -79,7 +79,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-refining.png",
     effects =
     {
-      PM.unlock_recipe("pm-water-acifying"),
+      PM.unlock_recipe("pm-acidic-water"),
       PM.unlock_recipe("pm-silver-plate"),
       PM.unlock_recipe("pm-silver-leeching"),
       PM.unlock_recipe("pm-silver-chunk-refining"),
