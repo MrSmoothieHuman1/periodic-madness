@@ -78,13 +78,13 @@ data:extend({
     energy_required = 12,
     ingredients =
     {
-      PM.ingredient("pm-platinum-powder", 6),
+      PM.ingredient("pm-platinum-powder", 4),
       PM.ingredient("pm-hydrochloric-acid", 20, "fluid")
     },
     results =
     {
       PM.product_range("pm-platinum-ore", 1, 3),
-      PM.product_range_chance("pm-ammonium-chloride", 1, 3, 0.6)
+      PM.product_range_chance("pm-ammonium-chloride", 1, 2, 0.6)
     }
   } --[[@as data.RecipePrototype]],
   {
