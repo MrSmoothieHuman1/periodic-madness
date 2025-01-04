@@ -930,7 +930,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-module-speed-lights",
+    name = "pm-module-speed-light",
     energy_required = 5,
     subgroup = "pm-modules",
     order = "c",
@@ -949,7 +949,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-module-efficiency-lights",
+    name = "pm-module-efficiency-light",
     energy_required = 5,
     enabled = false,
     subgroup = "pm-modules",
@@ -968,7 +968,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-module-productivity-lights",
+    name = "pm-module-productivity-light",
     energy_required = 5,
     enabled = false,
     subgroup = "pm-modules",
