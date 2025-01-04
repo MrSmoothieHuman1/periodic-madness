@@ -612,7 +612,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-resin-forming",
+    name = "pm-resin",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-forming.png",
     energy_required = 2,

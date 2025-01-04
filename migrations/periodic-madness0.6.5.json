@@ -30,6 +30,7 @@
        ["pm-oil-residual-filtering", "pm-oil-residuals-splitting"],
        ["pm-module-efficiency-lights", "pm-module-efficiency-light"],
        ["pm-module-productivity-lights", "pm-module-productivity-light"],
-       ["pm-module-speed-lights", "pm-module-speed-light"]
+       ["pm-module-speed-lights", "pm-module-speed-light"],
+       ["pm-resin-forming", "pm-resin"]
     ]
 }
