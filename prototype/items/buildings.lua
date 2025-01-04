@@ -20,7 +20,7 @@ data:extend({
     subgroup = "production-machine",
     order = "a",
     place_result = "pm-acid-plant",
-    stack_size = 20
+    stack_size = 75
   },
   {
     type = "item",
@@ -557,7 +557,7 @@ data:extend({
     subgroup = "pm-oil-machine",
     order = "ca",
     place_result = "pm-chemical-plant-2",
-    stack_size = 50
+    stack_size = 75
   },
   {
     type = "item",
@@ -676,6 +676,7 @@ data.raw["item"]["oil-refinery"].order = "b"
 
 data.raw["item"]["chemical-plant"].subgroup = "pm-oil-machine"
 data.raw["item"]["chemical-plant"].order = "c"
+data.raw["item"]["chemical-plant"].stack_size = 75
 
 data.raw["item"]["lab"].subgroup = "pm-science-machine"
 data.raw["item"]["lab"].order = "a"
