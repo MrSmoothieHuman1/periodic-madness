@@ -2193,6 +2193,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/crystal-seeding.png",
     effects =
     {
+      PM.unlock_recipe("pm-sodium-sulfite"),
       PM.unlock_recipe("pm-seed-crystal"),
       PM.unlock_recipe("pm-ruby-crystal-slurry"),
       PM.unlock_recipe("pm-citrine-crystal-slurry"),
