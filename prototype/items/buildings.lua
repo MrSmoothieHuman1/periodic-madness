@@ -717,3 +717,5 @@ data.raw["item"]["heat-exchanger"].subroup = "pm-heat-machines"
 data.raw["item"]["heat-exchanger"].order = "Aa"
 data.raw["recipe"]["heat-exchanger"].subroup = "pm-heat-machines"
 data.raw["recipe"]["heat-exchanger"].order = "Aa"
+
+data.raw["item"]["pipe-to-ground"].stack_size = 100
