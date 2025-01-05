@@ -40,6 +40,49 @@ Date: 2024-12-08
     - Finally got rid of the plastic bar item that appears in the factoriopedia and item menus.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.135
+Date: 2025-01-04
+  The the names late. Late additions. Update:
+
+  Changes:
+    - Changed Long-handed inserters to have 1.5x their normal swing speed.
+    - ACTUALLY made chem and acid plants have 75 as their stack size.
+    - Fixed plastic bars appearing in certain menus, by just evaporating their very existence.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.134
+Date: 2025-01-04
+  The IM FREE OF MOSTLY BALANCE CHANGES Update:
+
+  Changes:
+    - Changed underground pipes to have the same stack size, 100.
+    - Changed night goggles to be 1x1 size, instead of 2x2.
+    - Changed platinum processing to need 4 platinum powder, not 6.
+    - Changed acid and chem plant 1/2's to a stack size of 75, not 10 and 20 respectively.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.133
+Date: 2025-01-04
+  The Oil Overhaul? I hardly know her! Update:
+
+  Additions:
+    - Reworked oil residuals to not be as shit as it currently was, it now gives off two fluids that can be seperated into what you'd get from residual chunks.
+    - I still despise oil.
+
+  Changes:
+    - Deleted residual chunks. Most recipes replace it with bitumen.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.132
+Date: 2025-01-04
+  The one day this mod will run out of unique and stupid problems to throw at me, one day Update:
+
+  Fixes:
+    - Fixed acidic water's locale.
+    - Fixed Chromium processing's locale.
+    - Fixed sodium sulfite being uncraftable.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.131
 Date: 2025-01-03
   The seriously, WHO LET ME PICK UP MODDING?? Update:
