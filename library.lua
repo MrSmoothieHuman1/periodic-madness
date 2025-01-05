@@ -97,14 +97,14 @@ end
 ---Shorthand for an catalyst ingredient
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
----@param catalyst_amount number
+---@param ignored_by_productivity number
 ---@param type item_type?
 ---@return data.IngredientPrototype
-function PM.catalyst_ingredient(name, amount, catalyst_amount, type)
+function PM.catalyst_ingredient(name, amount, ignored_by_productivity, type)
   return {
     name = name,
     amount = amount,
-    ignored_by_stats = catalyst_amount,
+    ignored_by_stats = ignored_by_productivity,
     type = type or "item"
   }--[[@as data.IngredientPrototype]]
 end
@@ -116,9 +116,9 @@ end
 ---@param amount_min number?
 ---@param amount_max number?
 ---@param probability number?
----@param catalyst_amount number?
+---@param ignored_by_productivity number?
 ---@return data.ProductPrototype
-local function super_product(name, type, amount, amount_min, amount_max, probability, catalyst_amount)
+local function super_product(name, type, amount, amount_min, amount_max, probability, ignored_by_stats, ignored_by_productivity)
   return {
     name = name,
     type = type or "item",
@@ -126,8 +126,8 @@ local function super_product(name, type, amount, amount_min, amount_max, probabi
     amount_min = amount_min,
     amount_max = amount_max,
     probability = probability,
-    ignored_by_stats = catalyst_amount,
-    ignored_by_productivity = catalyst_amount,
+    ignored_by_stats = ignored_by_stats,
+    ignored_by_productivity = ignored_by_productivity,
   }--[[@as data.ProductPrototype]]
 end
 ---Quickly makes the Prodcut result as if using shorthand
@@ -169,42 +169,42 @@ end
 ---Builds a product that acts as a catalyst
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
----@param catalyst_amount number
+---@param ignored_by_productivity number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst(name, amount, catalyst_amount, type)
-  return super_product(name, type, amount, nil, nil, nil, catalyst_amount)
+function PM.catalyst(name, amount, ignored_by_productivity, type)
+  return super_product(name, type, amount, nil, nil, nil, ignored_by_productivity)
 end
 ---Builds a catalyst product that has a range of results
 ---@param name data.ItemID|data.FluidID
 ---@param amount_min number
 ---@param amount_max number
----@param catalyst_amount number
+---@param ignored_by_productivity number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst_range(name, amount_min, amount_max, catalyst_amount, type)
-  return super_product(name, type, nil, amount_min, amount_max, nil, catalyst_amount)
+function PM.catalyst_range(name, amount_min, amount_max, ignored_by_productivity, type)
+  return super_product(name, type, nil, amount_min, amount_max, nil, ignored_by_productivity)
 end
 ---Builds a catalyst product that has a chance of being returned
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param probability number
----@param catalyst_amount number
+---@param ignored_by_productivity number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst_chance(name, amount, probability, catalyst_amount, type)
-  return super_product(name, type, amount, nil, nil, probability, catalyst_amount)
+function PM.catalyst_chance(name, amount, probability, ignored_by_productivity, type)
+  return super_product(name, type, amount, nil, nil, probability, ignored_by_productivity)
 end
 ---Builds a catalyst product that has a chance to return a range of results
 ---@param name data.ItemID|data.FluidID
 ---@param amount_min number
 ---@param amount_max number
 ---@param probability number
----@param catalyst_amount number
+---@param ignored_by_productivity number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst_range_chance(name, amount_min, amount_max, probability, catalyst_amount, type)
-  return super_product(name, type, nil, amount_min, amount_max, probability, catalyst_amount)
+function PM.catalyst_range_chance(name, amount_min, amount_max, probability, ignored_by_productivity, type)
+  return super_product(name, type, nil, amount_min, amount_max, probability, ignored_by_productivity)
 end
 
 -- MARK: Entity Functions
