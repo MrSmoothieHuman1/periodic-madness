@@ -108,6 +108,20 @@ function PM.catalyst_ingredient(name, amount, ignored_by_productivity, type)
     type = type or "item"
   }--[[@as data.IngredientPrototype]]
 end
+---Shorthand for an ignorable by stats ingredient
+---@param name data.ItemID|data.FluidID
+---@param amount number
+---@param ignored_by_stats number
+---@param type item_type?
+---@return data.IngredientPrototype
+function PM.ignored_ingredient(name, amount, ignored_by_stats, type)
+  return {
+    name = name,
+    amount = amount,
+    ignored_by_stats = ignored_by_stats,
+    type = type or "item"
+  }--[[@as data.IngredientPrototype]]
+end
 
 ---A local function to localize the product function implementaton
 ---@param name data.ItemID|data.FluidID
@@ -170,9 +184,10 @@ end
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param ignored_by_productivity number
+---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst(name, amount, ignored_by_productivity, type)
+function PM.catalyst(name, amount, ignored_by_productivity, ignored_by_stats, type)
   return super_product(name, type, amount, nil, nil, nil, ignored_by_productivity)
 end
 ---Builds a catalyst product that has a range of results
@@ -180,9 +195,10 @@ end
 ---@param amount_min number
 ---@param amount_max number
 ---@param ignored_by_productivity number
+---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst_range(name, amount_min, amount_max, ignored_by_productivity, type)
+function PM.catalyst_range(name, amount_min, amount_max, ignored_by_productivity, ignored_by_stats, type)
   return super_product(name, type, nil, amount_min, amount_max, nil, ignored_by_productivity)
 end
 ---Builds a catalyst product that has a chance of being returned
@@ -190,9 +206,10 @@ end
 ---@param amount number
 ---@param probability number
 ---@param ignored_by_productivity number
+---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst_chance(name, amount, probability, ignored_by_productivity, type)
+function PM.catalyst_chance(name, amount, probability, ignored_by_productivity, ignored_by_stats, type)
   return super_product(name, type, amount, nil, nil, probability, ignored_by_productivity)
 end
 ---Builds a catalyst product that has a chance to return a range of results
@@ -201,9 +218,10 @@ end
 ---@param amount_max number
 ---@param probability number
 ---@param ignored_by_productivity number
+---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.catalyst_range_chance(name, amount_min, amount_max, probability, ignored_by_productivity, type)
+function PM.catalyst_range_chance(name, amount_min, amount_max, probability, ignored_by_productivity, ignored_by_stats, type)
   return super_product(name, type, nil, amount_min, amount_max, probability, ignored_by_productivity)
 end
 ---Builds a product that is ignored by stats
