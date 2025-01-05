@@ -416,6 +416,7 @@ data.raw["technology"]["low-density-structure"].unit.ingredients =
   {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["low-density-structure"].prerequisites = {"pm-polytetrafluoroethylene-plastic", "pm-metalloid-pack-unlock"}
+data.raw["technology"]["low-density-structure"].unit.time = 80
 
 data.raw["technology"]["laser"].unit.ingredients =
 {
