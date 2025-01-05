@@ -118,7 +118,7 @@ end
 ---@param probability number?
 ---@param ignored_by_productivity number?
 ---@return data.ProductPrototype
-local function super_product(name, type, amount, amount_min, amount_max, probability, ignored_by_stats, ignored_by_productivity)
+local function super_product(name, type, amount, amount_min, amount_max, probability, ignored_by_productivity, ignored_by_stats)
   return {
     name = name,
     type = type or "item",
@@ -126,8 +126,8 @@ local function super_product(name, type, amount, amount_min, amount_max, probabi
     amount_min = amount_min,
     amount_max = amount_max,
     probability = probability,
-    ignored_by_stats = ignored_by_stats,
     ignored_by_productivity = ignored_by_productivity,
+    ignored_by_stats = ignored_by_stats,
   }--[[@as data.ProductPrototype]]
 end
 ---Quickly makes the Prodcut result as if using shorthand
@@ -212,7 +212,7 @@ end
 ---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.ignorable(name, amount, ignored_by_stats, type)
+function PM.ignored(name, amount, ignored_by_stats, type)
   return super_product(name, type, amount, nil, nil, nil, ignored_by_stats)
 end
 ---Builds an ignorable by stats product that has a range of results
@@ -222,7 +222,7 @@ end
 ---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.ignorable_range(name, amount_min, amount_max, ignored_by_stats, type)
+function PM.ignored_range(name, amount_min, amount_max, ignored_by_stats, type)
   return super_product(name, type, nil, amount_min, amount_max, nil, ignored_by_stats)
 end
 ---Builds an ignorable by stats product that has a chance of being returned
@@ -232,7 +232,7 @@ end
 ---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.ignorable_chance(name, amount, probability, ignored_by_stats, type)
+function PM.ignored_chance(name, amount, probability, ignored_by_stats, type)
   return super_product(name, type, amount, nil, nil, probability, ignored_by_stats)
 end
 ---Builds an ignorable by stats product that has a chance to return a range of results
@@ -243,21 +243,9 @@ end
 ---@param ignored_by_stats number
 ---@param type item_type?
 ---@return data.ProductPrototype
-function PM.ignorable_range_chance(name, amount_min, amount_max, probability, ignored_by_stats, type)
+function PM.ignored_range_chance(name, amount_min, amount_max, probability, ignored_by_stats, type)
   return super_product(name, type, nil, amount_min, amount_max, probability, ignored_by_stats)
 end
----Builds an ignorable by stats product that has a chance to return a range of results
----@param name data.ItemID|data.FluidID
----@param amount_min number
----@param amount_max number
----@param probability number
----@param ignored_by_stats number
----@param type item_type?
----@return data.ProductPrototype
-function PM.ignorable_range_chance(name, amount_min, amount_max, probability, ignored_by_stats, type)
-  return super_product(name, type, nil, amount_min, amount_max, probability, ignored_by_stats)
-end
-
 -- MARK: Entity Functions
 
 ---A shorthand for the LootItem

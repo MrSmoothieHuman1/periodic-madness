@@ -13,6 +13,7 @@ Date: 2024-12-08
     - Added RTG's, a small but expensive building that can take radioactive materials and turn them into power. Has a small neighbour bonus.
     - Added mixing tanks, a new 5x5 building that handles making things like sludges and slurries. Enjoy revamping your factory, suckers!
     - (This is where .133's oil residual line would have been, but i had to move that into public due to the sheer shittery of oil)
+    - Added ignored_by_stats to voiding/looping/loop voiding recipes.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

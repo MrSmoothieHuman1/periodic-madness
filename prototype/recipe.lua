@@ -2918,7 +2918,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-ruby-dust", 0, 4),
+      PM.ignored_range("pm-ruby-dust", 0, 4, 4),
       PM.product_range("water", 10, 45, "fluid")
     }
   },
@@ -2939,7 +2939,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-citrine-dust", 0, 4),
+      PM.ignored_range("pm-citrine-dust", 0, 4, 4),
       PM.product_range("water", 10, 45, "fluid")
     }
   },
@@ -2960,7 +2960,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-emerald-dust", 0, 4),
+      PM.ignored_range("pm-emerald-dust", 0, 4, 4),
       PM.product_range("water", 10, 45, "fluid")
     }
   },
@@ -2981,7 +2981,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-lapis-lazuli-dust", 0, 4),
+      PM.ignored_range("pm-lapis-lazuli-dust", 0, 4, 4),
       PM.product_range("water", 10, 45, "fluid")
     }
   },
@@ -3002,7 +3002,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-sapphire-dust", 0, 4),
+      PM.ignored_range("pm-sapphire-dust", 0, 4, 4),
       PM.product_range("water", 10, 45, "fluid")
     }
   },
@@ -3023,7 +3023,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-garnet-dust", 0, 4),
+      PM.ignored_range("pm-garnet-dust", 0, 4, 4),
       PM.product_range("water", 10, 45, "fluid")
     }
   },
