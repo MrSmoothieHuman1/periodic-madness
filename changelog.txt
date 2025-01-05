@@ -33,6 +33,7 @@ Date: 2024-12-08
     - Changed any plates that come after P-TM science, to take 6.4s instead of the usual 3.2s.
     - Changed palladium catalysts to use plates, not ore.
     - Lowered the cost of worker robots speed 5 technology from 500 to 450.
+    - Changed the amount of electric engines needed for assembler 3's from 5 to 3.
 
   Fixes:
     - Fixed the science pack item names captilisation.
