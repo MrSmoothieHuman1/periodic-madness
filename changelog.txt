@@ -47,6 +47,7 @@ Date: 2025-01-04
   Changes:
     - Changed Long-handed inserters to have 1.5x their normal swing speed.
     - ACTUALLY made chem and acid plants have 75 as their stack size.
+    - Made heat exchangers start working at 400C, not 500C.
     - Fixed plastic bars appearing in certain menus, by just evaporating their very existence.
 
 ---------------------------------------------------------------------------------------------------
