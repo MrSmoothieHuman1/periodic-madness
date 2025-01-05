@@ -3298,7 +3298,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gunpowder",
-    enabled = false, 
+    enabled = false,
     energy_required = 3,
     category = "chemistry",
     subgroup = "ammo",
