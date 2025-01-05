@@ -74,7 +74,4 @@ PlasticChange.results =
   PM.product("pm-polyethylene-plastic", 1)
 }
 
-local PlasticItemChange = data.raw["item"]["plastic-bar"]
-
-PlasticItemChange.icon_size = 64
-PlasticItemChange.icon = "__periodic-madness__/graphics/icons/polyethylene-plastic.png"
+data.raw["item"]["plastic-bar"] = nil
