@@ -162,7 +162,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-rubidium-alum-seperation",
+    name = "pm-rubidium",
     enabled = false,
     category = "pm-acids",
     subgroup = "pm-rubidium-am",

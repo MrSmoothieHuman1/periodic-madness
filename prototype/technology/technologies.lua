@@ -3060,7 +3060,7 @@ data:extend({
       PM.unlock_recipe("pm-70-to-100-rubidium-alum"),
       PM.unlock_recipe("pm-50-to-70-rubidium-alum"),
       PM.unlock_recipe("pm-30-to-50-rubidium-alum"),
-      PM.unlock_recipe("pm-rubidium-alum-seperation"),
+      PM.unlock_recipe("pm-rubidium"),
     },
     prerequisites = {"pm-caesium-processing", "pm-potassium-processing"},
     unit =

@@ -35,6 +35,7 @@
        ["pm-rubber-vulcanisation", "pm-vulcanised-rubber"],
        ["pm-resin-to-rubber-resin", "pm-rubber-resin"],
        ["pm-resin-to-pheonlic-resin", "pm-pheonlic-resin"],
-       ["pm-rubber-resin-cooling", "pm-rubber"]
+       ["pm-rubber-resin-cooling", "pm-rubber"],
+       ["pm-rubidium-alum-seperation", "pm-rubidium"]
     ]
 }
