@@ -40,6 +40,14 @@ Date: 2024-12-08
     - Finally got rid of the plastic bar item that appears in the factoriopedia and item menus.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.136
+Date: 2025-01-05
+  The this would be in the next content update, but im so inconcievably annoyed at this fucking lube Update:
+
+  Fixes:
+    - Made electric engines ACTUALLY take 10 solid lube.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.135
 Date: 2025-01-04
   The the names late. Late additions. Update:
