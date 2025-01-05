@@ -275,6 +275,24 @@ function PM.unlock_recipe(recipe)
     recipe = recipe
   }--[[@as data.UnlockRecipeModifier]]
 end
+---Shorthand for the effect of unlocking a space location (aka planet)
+---@param location data.SpaceLocationID
+---@return data.UnlockSpaceLocationModifier
+function PM.unlock_location(location)
+  return {
+    type = "unlock-space-location",
+    space_location = location
+  }--[[@as data.UnlockSpaceLocationModifier]]
+end
+---Shorthand for the effect of unlocking a quality level
+---@param quality data.QualityID
+---@return data.UnlockQualityModifier
+function PM.unlock_quality(quality)
+  return {
+    type = "unlock-quality",
+    quality = quality
+  }--[[@as data.UnlockQualityModifier]]
+end
 ---Shorthand for giving an item
 ---@param item data.ItemID
 ---@param count int?
@@ -288,6 +306,10 @@ function PM.give_item(item, count)
 end
 ---@alias SimpleModifierTypes
 ---| "artillery-range"
+---| "beacon-distribution"
+---| "belt-stack-size-bonus"
+---| "bulk-inserter-capacity-bonus"
+---| "cargo-landing-pad-count"
 ---| "character-build-distance"
 ---| "character-crafting-speed"
 ---| "character-health-bonus"
@@ -309,13 +331,16 @@ end
 ---| "max-successful-attempts-per-tick-per-construction-queue"
 ---| "maximum-following-robots-count"
 ---| "mining-drill-productivity-bonus"
----| "bulk-inserter-capacity-bonus"
 ---| "train-braking-force-bonus"
 ---| "worker-robot-battery"
 ---| "worker-robot-speed"
 ---| "worker-robot-storage"
 ---@alias SimpleModifiers
 ---| data.ArtilleryRangeModifier
+---| data.BeaconDistributionModifier
+---| data.BeltStackSizeBonusModifier
+---| data.BulkInserterCapacityBonusModifier
+---| data.CargoLandingPadLimitModifier
 ---| data.CharacterBuildDistanceModifier
 ---| data.CharacterCraftingSpeedModifier
 ---| data.CharacterHealthBonusModifier
@@ -337,7 +362,6 @@ end
 ---| data.MaxSuccessfulAttemptsPerTickPerConstructionQueueModifier
 ---| data.MaximumFollowingRobotsCountModifier
 ---| data.MiningDrillProductivityBonusModifier
----| data.BulkInserterCapacityBonusModifier
 ---| data.TrainBrakingForceBonusModifier
 ---| data.WorkerRobotBatteryModifier
 ---| data.WorkerRobotSpeedModifier
@@ -351,6 +375,55 @@ function PM.modify(property, modifier)
     type = property,
     modifier = modifier
   } --[[@as SimpleModifiers]]
+end
+---@alias BoolModifierTypes
+---| "character-logistic-requests"
+---| "unlock-circuit-network"
+---| "cliff-deconstruction-enabled"
+---| "create-ghost-on-entity-death"
+---| "mining-with-fluid"
+---| "rail-planner-allow-elevated-rails"
+---| "rail-support-on-deep-oil-ocean"
+---| "unlock-space-platforms"
+---| "vehicle-logistics"
+---@alias BoolModifiers
+---| data.CharacterLogisticRequestsModifier
+---| data.CircuitNetworkModifier
+---| data.CliffDeconstructionEnabledModifier
+---| data.CreateGhostOnEntityDeathModifier
+---| data.MiningWithFluidModifier
+---| data.RailPlannerAllowElevatedRailsModifier
+---| data.RailSupportOnDeepOilOceanModifier
+---| data.SpacePlatformsModifier
+---| data.VehicleLogisticsModifier
+---Shorthand for enabling features
+---@param type BoolModifierTypes
+---@return BoolModifiers
+function PM.enable(type)
+  return {
+    type = type,
+    modifier = true
+  } --[[@as BoolModifiers]]
+end
+---Shorthand for disabling features
+---@param type BoolModifierTypes
+---@return BoolModifiers
+function PM.disable(type)
+  return {
+    type = type,
+    modifier = false
+  } --[[@as BoolModifiers]]
+end
+---Shorthand for changing the productivity of a recipe
+---@param recipe data.RecipeID
+---@param change data.EffectValue
+---@return data.ChangeRecipeProductivityModifier
+function PM.modify_recipe_productivity(recipe, change)
+  return {
+    type = "change-recipe-productivity",
+    recipe = recipe,
+    change = change
+  } --[[@as data.ChangeRecipeProductivityModifier]]
 end
 ---Shorthand for modifying the damage or shooting speed of ammo
 ---@param type "ammo-damage"|"gun-speed"
