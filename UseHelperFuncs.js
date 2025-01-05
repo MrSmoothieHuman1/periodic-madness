@@ -43,7 +43,7 @@ const regex_and_replace_array = [
     /{\s*(?![^{}]*type = "fluid")(?![^{}]*ignored_by_productivity =)(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_chance($<name>, $<amount>, $<probability>)'
   ],
-  [ // Product Item Rance Chance
+  [ // Product Item Rance Chance - lmao
     /{\s*(?![^{}]*type = "fluid")(?![^{}]*ignored_by_productivity =)(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.product_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>)'
   ],
@@ -101,6 +101,42 @@ const regex_and_replace_array = [
   [ // Catalyst Fluid Range Chance
     /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*ignored_by_productivity = (?<ignored_by_productivity>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
     'PM.catalyst_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, $<ignored_by_productivity>, "fluid")'
+  ],
+
+  //MARK: Ignored Items
+  [ // Ignored Item
+    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?![^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored($<name>, $<amount>, $<ignored_by_stats>)'
+  ],
+  [ // Ignored Item Range
+    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored_range($<name>, $<amount_min>, $<amount_max>, $<ignored_by_stats>)'
+  ],
+  [ // Ignored Item Chance
+    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored_chance($<name>, $<amount>, $<probability>, $<ignored_by_stats>)'
+  ],
+  [ // Ignored Item Rance Chance
+    /{\s*(?![^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, $<ignored_by_stats>)'
+  ],
+
+  //MARK: Catalyst Fluids
+  [ // Ignored Fluid
+    /(?<=results =\s+{(?:[^{}]|{[^{}]*})*?){\s*(?=[^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored($<name>, $<amount>, $<ignored_by_stats>, "fluid")'
+  ],
+  [ // Ignored Fluid Range
+    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?![^{}]*probability =)(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored_range($<name>, $<amount_min>, $<amount_max>, $<ignored_by_stats>, "fluid")'
+  ],
+  [ // Ignored Fluid Chance
+    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*(?<!_)amount = (?<amount>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored_chance($<name>, $<amount>, $<probability>, $<ignored_by_stats>, "fluid")'
+  ],
+  [ // Ignored Fluid Range Chance
+    /{\s*(?=[^{}]*type = "fluid")(?=[^{}]*ignored_by_stats = (?<ignored_by_stats>\d+(?:\.\d+)?))(?=[^{}]*probability = (?<probability>\d+(?:\.\d+)?))(?=[^{}]*name = (?<name>"[^"]*"))(?=[^{}]*amount_min = (?<amount_min>\d+(?:\.\d+)?))(?=[^{}]*amount_max = (?<amount_max>\d+(?:\.\d+)?))[^{}]*}/g,
+    'PM.ignored_range_chance($<name>, $<amount_min>, $<amount_max>, $<probability>, $<ignored_by_stats>, "fluid")'
   ],
 
   //MARK: Technology Effects
