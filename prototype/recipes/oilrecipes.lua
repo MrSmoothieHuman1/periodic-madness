@@ -392,8 +392,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solid-lubricant",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/solid-lubricant.png",
     energy_required = 4,
     category = "chemistry",
     enabled = false,
@@ -1061,6 +1059,7 @@ data:extend({
 
 data.raw["recipe"]["lubricant"].subgroup = "pm-oil"
 data.raw["recipe"]["lubricant"].order = "e"
+--data.raw["recipe"]["lubricant"].energy_required = 2
 data.raw["recipe"]["lubricant"].ingredients =
 {
   PM.ingredient("pm-lubricating-oils", 12, "fluid"),
