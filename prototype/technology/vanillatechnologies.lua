@@ -751,6 +751,7 @@ data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
+data.raw["technology"]["worker-robots-speed-5"].unit.count = 450
 
 data.raw["technology"]["worker-robots-storage-1"].unit.ingredients =
 {
