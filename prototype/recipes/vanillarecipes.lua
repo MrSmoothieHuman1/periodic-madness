@@ -8,9 +8,9 @@ data.raw["recipe"]["electronic-circuit"].ingredients =
 }
 data.raw["recipe"]["automation-science-pack"].ingredients =
 {
-  PM.ingredient("iron-plate", 1),
+  PM.ingredient("iron-plate", 2),
   PM.ingredient("pm-science-bottle", 1),
-  PM.ingredient("pm-nickel-plate", 1),
+  PM.ingredient("pm-nickel-plate", 2),
 }
 data.raw["recipe"]["assembling-machine-1"].ingredients =
 {

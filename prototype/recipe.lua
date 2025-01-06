@@ -3794,9 +3794,9 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("iron-plate", 1),
+      PM.ingredient("iron-plate", 2),
       PM.ingredient("pm-plastic-science-bottle", 1),
-      PM.ingredient("pm-nickel-plate", 1),
+      PM.ingredient("pm-nickel-plate", 2),
     },
     results =
     {
