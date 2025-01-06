@@ -751,6 +751,13 @@ data.raw["recipe"]["cliff-explosives"].ingredients =
   PM.ingredient("pm-gunpowder", 4),
   PM.ingredient("pm-naptha", 6, "fluid")
 }
+data.raw["recipe"]["bulk-inserter"].ingredients = 
+{
+  PM.ingredient("advanced-circuit", 1),
+  PM.ingredient("electronic-circuit", 5),
+  PM.ingredient("fast-inserter", 1),
+  PM.ingredient("pm-polyethylene-plastic", 2)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
