@@ -51,7 +51,7 @@ data:extend({
     subgroup = "pm-fuels",
     order = "e",
     burnt_result = "pm-empty-fuel-canister",
-    stack_size = 200
+    stack_size = 150
   },
   {
     type = "item",
@@ -61,11 +61,11 @@ data:extend({
     fuel_value = "32MJ",
     fuel_category = "pm-oil-canisters",
     fuel_acceleration_multiplier = 1,
-    fuel_top_speed_multiplier = 1,
+    fuel_top_speed_multiplier = 0.95,
     subgroup = "pm-fuels",
     order = "f",
     burnt_result = "pm-empty-fuel-canister",
-    stack_size = 200
+    stack_size = 150
   },
   {
     type = "item",
