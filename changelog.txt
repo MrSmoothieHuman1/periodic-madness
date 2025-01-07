@@ -43,6 +43,27 @@ Date: 2024-12-08
     - Finally got rid of the plastic bar item that appears in the factoriopedia and item menus.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.137
+Date: 2025-01-07
+  The fuck your semantic versioning, i will never learn to count Update:
+
+  Changes:
+    - Changed coke to have 6MJ of fuel value, not 8MJ.
+    - Changed bulk inserters recipe to become PM-inised.
+    - Changed stainless steel processing to require molybdenum processing as a prerequisite.
+    - Changed vanadium bots flying speeds to 2.5 tiles/s, compared from their original 1.5-ish tiles/s.
+    - Changed express belts to take 2 prcoessing units, instead of 3.
+    - Also changed express undergrounds to take 1 processing unit, dont think you were getting off that easily.
+    - Buffed petrol fuel canisters to have 50 stack size, 3MJ fuel value and 1.75x acceleration multiplier.
+    - Nerfed kerosene fuel canisters to have 150 stack size and no acceleration multiplier.
+    - Nerfed naptha fuel canisters to have 150 stack size, 0.75x acceleration multiplier and 0.95x top speed multiplier.
+    - Also changed naptha fuel to have 30MJ fuel value, instead of 32MJ.
+    - Changed biomass to take less wood strips, and has a chance to give 2-3 instead of only giving 2.
+
+  Fixes:
+    - Fixed the inability to not be able to walk between welders.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.136
 Date: 2025-01-05
   The this would be in the next content update, but im so inconcievably annoyed at this fucking lube Update:
