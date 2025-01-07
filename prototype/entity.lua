@@ -135,7 +135,7 @@ data:extend({
         percent = 100
       }
     },
-    collision_box = {{ -0.9, -0.9},  {0.9, 0.9}},
+    collision_box = {{ -0.8, -0.8},  {0.8, 0.8}},
     selection_box = {{-1, -1}, {1, 1}},
     crafting_categories = {"pm-alloying"},
     energy_usage = "250kW",
