@@ -35,7 +35,7 @@ data:extend({
       PM.unlock_recipe("pm-stainless-steel-basic-framing"),
       PM.unlock_recipe("pm-stainless-steel-panelling"),
     },
-    prerequisites = {"steel-processing", "pm-advanced-advanced-transition-metal-pack-unlock"},
+    prerequisites = {"steel-processing", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-molybdenum-processing"},
     unit =
     {
       count = 125,
