@@ -70,7 +70,7 @@ data:extend({
   {
     type = "item",
     name = "pm-hydrogen-fuel",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/hydrogen-fuel.png",
     subgroup = "pm-fuels",
     order = "a",

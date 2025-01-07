@@ -7075,7 +7075,10 @@ data:extend({
         {
           {
             type = "damage",
-            damage = {amount = 12, type = "physical"}
+            damage = 
+            {
+              amount = 14, type = "physical",
+            }
           },
           {
             type = "create-sticker",
