@@ -304,7 +304,7 @@ data:extend({
     subgroup = "raw-resource",
     order = "d",
     fuel_category = "chemical",
-    fuel_value = "8MJ",
+    fuel_value = "6MJ",
     stack_size = 100
   },
   {
