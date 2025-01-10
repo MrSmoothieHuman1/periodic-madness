@@ -696,7 +696,7 @@ data.raw["technology"]["logistic-system"].prerequisites = { "pm-lithium-ion-logi
 
 data.raw["technology"]["worker-robots-speed-1"].effects =
 {
-  PM.modify("worker-robot-speed", 0.15)
+  PM.modify("worker-robot-speed", 0.20)
 }
 data.raw["technology"]["worker-robots-speed-1"].unit.ingredients =
 {
@@ -706,7 +706,7 @@ data.raw["technology"]["worker-robots-speed-1"].unit.ingredients =
 }
 data.raw["technology"]["worker-robots-speed-2"].effects =
 {
-  PM.modify("worker-robot-speed", 0.20)
+  PM.modify("worker-robot-speed", 0.25)
 }
 data.raw["technology"]["worker-robots-speed-2"].unit.ingredients =
 {
@@ -741,7 +741,7 @@ data.raw["technology"]["worker-robots-speed-4"].unit.ingredients =
 }
 data.raw["technology"]["worker-robots-speed-5"].effects =
 {
-  PM.modify("worker-robot-speed", 0.35)
+  PM.modify("worker-robot-speed", 0.30)
 }
 data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
 {
