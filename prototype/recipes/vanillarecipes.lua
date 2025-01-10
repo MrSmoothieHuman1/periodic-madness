@@ -136,7 +136,7 @@ data.raw["recipe"]["fast-inserter"].ingredients =
 {
   PM.ingredient("pm-mini-motor", 1),
   PM.ingredient("electronic-circuit", 1),
-  PM.ingredient("iron-plate", 2)
+  PM.ingredient("inserter", 1)
 }
 data.raw["recipe"]["long-handed-inserter"].ingredients =
 {
