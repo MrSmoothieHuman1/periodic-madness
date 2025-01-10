@@ -296,7 +296,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-heating-plating", 10),
-      PM.ingredient("pm-stainless-steel-pipe", 2),
+      PM.ingredient("pipe", 3),
       PM.ingredient("pm-gold-plate", 6)
     },
     results = {
@@ -313,7 +313,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-cooling-plating", 10),
-      PM.ingredient("pm-stainless-steel-pipe", 2),
+      PM.ingredient("pipe", 3),
       PM.ingredient("pm-silver-plate", 6)
     },
     results = {
