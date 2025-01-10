@@ -6654,7 +6654,7 @@ data:extend({
       type = "electric",
       fuel_categories = {"pm-charged-batteries"},
       usage_priority = "secondary-output",
-      effectivity = 1,
+      effectivity = 0.8,
     },
     max_power_output = "10MW",
     usage_priority = "secondary-output",
