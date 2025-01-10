@@ -129,7 +129,6 @@ data:extend({
     {
       PM.product("pm-nickel-chunk", 2),
       PM.product("pm-platinum-powder", 4),
-      PM.product_chance("pm-ferrum", 1, 0.5),
       PM.product_chance("pm-flux-container", 1, 0.66)
     }
   } --[[@as data.RecipePrototype]],
