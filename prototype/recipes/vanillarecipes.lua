@@ -129,7 +129,7 @@ data.raw["recipe"]["splitter"].ingredients =
 data.raw["recipe"]["inserter"].ingredients =
 {
   PM.ingredient("pm-basic-motor", 1),
-  PM.ingredient("pm-basic-wiring", 2),
+  PM.ingredient("iron-gear-wheel", 2),
   PM.ingredient("iron-plate", 1)
 }
 data.raw["recipe"]["fast-inserter"].ingredients =

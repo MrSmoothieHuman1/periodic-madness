@@ -669,6 +669,30 @@ data:extend({
     place_result = "pm-mixing-tank-2",
     stack_size = 50,
   },
+  {
+    type = "item",
+    name = "pm-express-inserter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+    place_result = "pm-express-inserter",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-express-long-handed-inserter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-long-handed-inserter.png",
+    place_result = "pm-express-long-handed-inserter",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-express-bulk-inserter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    place_result = "pm-express-bulk-inserter",
+    stack_size = 50
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
