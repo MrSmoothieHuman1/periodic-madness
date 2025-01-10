@@ -365,7 +365,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-kasethal-plate", 2)
+      PM.product("pm-kasethal-plate", 3)
     }
   }
 } --[[@as data.RecipePrototype[] ]])
