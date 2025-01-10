@@ -14,7 +14,7 @@ Date: 2024-12-08
     - Added mixing tanks, a new 5x5 building that handles making things like sludges and slurries. Enjoy revamping your factory, suckers!
     - (This is where .133's oil residual line would have been, but i had to move that into public due to the sheer shittery of oil)
     - Added ignored_by_stats to voiding/looping/loop voiding recipes.
-    - Added express long/bulk/inserters, unlocked at P-TM science. Express inserters are all 1.5x faster then their predecessor.
+    - Added express long/bulk/inserters, unlocked at P-TM science. Express inserters are all 1.5x faster then their predecessor. All express inserters (long/bulk/normal) take their original inserter.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -36,6 +36,7 @@ Date: 2024-12-08
     - Changed palladium catalysts to use plates, not ore.
     - Lowered the cost of worker robots speed 5 technology from 500 to 450.
     - Changed the amount of electric engines needed for assembler 3's from 5 to 3.
+    - Changed yellow inserters to take gears, changed blue inserters to take yellow inserters.
 
   Fixes:
     - Fixed the science pack item names captilisation.
