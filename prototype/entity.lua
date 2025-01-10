@@ -9271,7 +9271,7 @@ fluid_boxes =
     usage_priority = "secondary-input",
     drain = "0.7kW"
   },
-  extension_speed = 0.1,
+  extension_speed = 0.2,
   rotation_speed = 0.04 * 1.5,
   filter_count = 5,
   icon_draw_specification = {scale = 0.5},
@@ -9372,7 +9372,7 @@ fluid_boxes =
   insert_position = {0, 2.2},
   energy_per_movement = "8kJ",
   energy_per_rotation = "8kJ",
-  extension_speed = 0.05,
+  extension_speed = 0.1,
   rotation_speed = (0.02 * 1.5) * 1.5,
   filter_count = 5,
   icon_draw_specification = {scale = 0.5},
@@ -9487,7 +9487,7 @@ fluid_boxes =
     usage_priority = "secondary-input",
     drain = "1.5kW"
   },
-  extension_speed = 1,
+  extension_speed = 0.2,
   rotation_speed = 0.04 * 1.5,
   filter_count = 5,
   icon_draw_specification = {scale = 0.5},
