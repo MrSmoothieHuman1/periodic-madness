@@ -113,7 +113,7 @@ data:extend({
     order = "ja",
     fuel_category = "pm-charged-batteries",
     fuel_value = "10MJ",
-    stack_size = 150
+    stack_size = 15
   },
   {
     type = "item",
@@ -151,7 +151,7 @@ data:extend({
     order = "la",
     fuel_category = "pm-charged-batteries",
     fuel_value = "50MJ",
-    stack_size = 100
+    stack_size = 25
   },
   {
     type = "item",

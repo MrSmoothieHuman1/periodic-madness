@@ -282,7 +282,7 @@ data:extend({
     category = "pm-battery-charging",
     subgroup = "pm-batteries",
     order = "la",
-    energy_required = 1,
+    energy_required = 5,
     enabled = false,
     ingredients =
     {
@@ -299,7 +299,7 @@ data:extend({
     category = "pm-battery-charging",
     subgroup = "pm-batteries",
     order = "oa",
-    energy_required = 1,
+    energy_required = 2.5,
     enabled = false,
     ingredients =
     {
