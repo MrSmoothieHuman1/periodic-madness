@@ -1231,6 +1231,63 @@ data:extend({
       PM.product("pm-mixing-tank-2", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-express-inserter",
+    enabled = false,
+    energy_required = 1,
+    category = "crafting-with-fluid",
+    order = "e[long-handed-inserter]",
+    ingredients = 
+    {
+      PM.ingredient("fast-inserter", 1),
+      PM.ingredient("processing-unit", 1),
+      PM.ingredient("electric-engine", 2),
+      PM.ingredient("pm-coolant", 2.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-express-inserter", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-express-long-handed-inserter",
+    enabled = false,
+    category = "crafting-with-fluid",
+    energy_required = 1,
+    ingredients = 
+    {
+      PM.ingredient("long-handed-inserter", 1),
+      PM.ingredient("processing-unit", 1),
+      PM.ingredient("electric-engine", 2),
+      PM.ingredient("pm-brass-cog", 10),
+      PM.ingredient("pm-coolant", 2.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-express-long-handed-inserter", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-express-bulk-inserter",
+    enabled = false,
+    category = "crafting-with-fluid",
+    energy_required = 1,
+    ingredients = 
+    {
+      PM.ingredient("bulk-inserter", 1),
+      PM.ingredient("processing-unit", 5),
+      PM.ingredient("advanced-circuit", 5),
+      PM.ingredient("electric-engine", 2),
+      PM.ingredient("pm-coolant", 2.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-express-bulk-inserter", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
