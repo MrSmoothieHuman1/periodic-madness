@@ -1242,7 +1242,7 @@ data:extend({
     {
       PM.ingredient("fast-inserter", 1),
       PM.ingredient("processing-unit", 1),
-      PM.ingredient("electric-engine", 2),
+      PM.ingredient("electric-engine-unit", 2),
       PM.ingredient("pm-coolant", 2.5, "fluid")
     },
     results = 
@@ -1260,7 +1260,7 @@ data:extend({
     {
       PM.ingredient("long-handed-inserter", 1),
       PM.ingredient("processing-unit", 1),
-      PM.ingredient("electric-engine", 2),
+      PM.ingredient("electric-engine-unit", 2),
       PM.ingredient("pm-brass-cog", 10),
       PM.ingredient("pm-coolant", 2.5, "fluid")
     },
@@ -1280,7 +1280,7 @@ data:extend({
       PM.ingredient("bulk-inserter", 1),
       PM.ingredient("processing-unit", 5),
       PM.ingredient("advanced-circuit", 5),
-      PM.ingredient("electric-engine", 2),
+      PM.ingredient("electric-engine-unit", 2),
       PM.ingredient("pm-coolant", 2.5, "fluid")
     },
     results = 
