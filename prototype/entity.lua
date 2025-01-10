@@ -9298,7 +9298,7 @@ fluid_boxes =
   },
   hand_open_picture =
   {
-    filename = "__periodic_madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-open.png",
+    filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-open.png",
     priority = "extra-high",
     width = 72,
     height = 164,
@@ -9308,7 +9308,7 @@ fluid_boxes =
   {
     sheet =
     {
-      filename = "__periodic_madness__/graphics/entities/buildings/express-inserter/express-inserter-platform.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-platform.png",
       priority = "extra-high",
       width = 105,
       height = 79,
@@ -9475,7 +9475,7 @@ fluid_boxes =
   {
     sheet =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/express-bulk-inserter/express-bulk-inserter-hand-platform.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/express-bulk-inserter/express-bulk-inserter-platform.png",
       priority = "extra-high",
       width = 105,
       height = 79,
