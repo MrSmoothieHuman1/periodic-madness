@@ -4217,6 +4217,31 @@ data:extend({
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "pm-express-inserters",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/express-inserters.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-express-inserter"),
+      PM.unlock_recipe("pm-express-long-handed-inserter"),
+      PM.unlock_recipe("pm-express-bulk-inserter"),
+    },
+    prerequisites = {"processing-unit", "bulk-inserter"},
+    unit =
+    {
+      count = 300,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1}
+      },
+      time = 60
+    }
+  },
 
   {
     type = "technology",
