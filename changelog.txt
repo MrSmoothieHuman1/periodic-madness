@@ -14,6 +14,7 @@ Date: 2024-12-08
     - Added mixing tanks, a new 5x5 building that handles making things like sludges and slurries. Enjoy revamping your factory, suckers!
     - (This is where .133's oil residual line would have been, but i had to move that into public due to the sheer shittery of oil)
     - Added ignored_by_stats to voiding/looping/loop voiding recipes.
+    - Added express long/bulk/inserters, unlocked at P-TM science. Express inserters are all 1.5x faster then their predecessor.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -41,6 +42,20 @@ Date: 2024-12-08
     - (Mostly) Fixed the Factoriopedia being a mess. Never not name your recipes after their outputs.
     - Fixed empty reactor cells taking 0.5s to craft, and not 20s. Sucks to suck, huh?
     - Finally got rid of the plastic bar item that appears in the factoriopedia and item menus.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.139
+Date: 2025-01-09
+  The watch, someone will complain this is OP now Update:
+
+  Changes:
+    - Changed worker robot speed technology to start at 20% instead of 15%, and scale faster.
+    - Changed inators taking stainless steel pipes, to make them take normal pipes.
+    - Changed kasethal to give out 3 plates instead of 2.
+
+  Fixes:
+    - Fixed random technologies still requiring production or utility science. I will beat them till they stop moving.
+    - Fixed palladium frothing giving nickel ore instead of chunks.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.137
