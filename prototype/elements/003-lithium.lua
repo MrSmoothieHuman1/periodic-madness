@@ -107,7 +107,7 @@ data:extend({
     results =
     {
       PM.product("pm-med-brine", 150, "fluid"),
-      PM.product_range("pm-lithium-chloride", 4, 6)
+      PM.product_range("pm-lithium-chloride", 4, 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -139,6 +139,7 @@ data:extend({
     enabled = false,
     energy_required = 15,
     main_product = "pm-lithium-chloride",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-high-brine", 100, "fluid")
@@ -177,6 +178,7 @@ data:extend({
     enabled = false,
     energy_required = 1,
     main_product = "pm-lithium-hydroxide",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-lithium-ore", 5),

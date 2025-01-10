@@ -37,6 +37,7 @@ Date: 2024-12-08
     - Lowered the cost of worker robots speed 5 technology from 500 to 450.
     - Changed the amount of electric engines needed for assembler 3's from 5 to 3.
     - Changed yellow inserters to take gears, changed blue inserters to take yellow inserters.
+    - Added productivity to lithium hydroxide and oversaturated lithium leeching.
 
   Fixes:
     - Fixed the science pack item names captilisation.
