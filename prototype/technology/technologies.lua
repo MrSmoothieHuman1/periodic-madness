@@ -2166,6 +2166,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-nickel-chunk-frothing"),
+      PM.unlock_recipe("pm-nickel-tailings-looping"),
       PM.unlock_recipe("pm-platinum-nickel-froth-seperation"),
       PM.unlock_recipe("pm-platinum-powder-seperation"),
       PM.unlock_recipe("pm-platinum-plate"),
