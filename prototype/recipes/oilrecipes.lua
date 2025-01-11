@@ -447,7 +447,7 @@ data:extend({
     {
       PM.product_range("pm-palladium-ore", 2, 4),
       PM.product_chance("pm-bitumen", 2, 0.75),
-      PM.product_range("water", 18, 20, "fluid")
+      PM.product_range("water", 1.8, 2, "fluid")
     }
   },
   {

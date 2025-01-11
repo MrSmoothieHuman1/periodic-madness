@@ -20,7 +20,7 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
-      PM.product_range("water", 12, 20, "fluid"),
+      PM.product_range("water", 1.2, 2, "fluid"),
       PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
@@ -43,7 +43,7 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
-      PM.product_range("water", 12, 20, "fluid"),
+      PM.product_range("water", 1.2, 2, "fluid"),
       PM.product_range("pm-catalyst-container", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
