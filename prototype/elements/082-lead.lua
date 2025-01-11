@@ -129,12 +129,10 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-lead-froth", 10, "fluid"),
-      PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
     {
       PM.product_chance("pm-thallium-ore", 2, 0.2),
-      PM.catalyst_range("pm-flux-container", 1, 2, 2),
       PM.product("pm-impure-lead", 2)
     }
   } --[[@as data.RecipePrototype]],
