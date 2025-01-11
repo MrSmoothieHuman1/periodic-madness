@@ -7407,7 +7407,7 @@ data:extend({
     },
     allowed_effects = PM.all_effects(),
     crafting_categories = {"smelting"},
-    effect_receiver = {base_effect = { productivity = 0.15}},
+    effect_receiver = {base_effect = { productivity = 0.05}},
     result_inventory_size = 1,
     crafting_speed = 3,
     energy_usage = "180kW",
@@ -7417,7 +7417,7 @@ data:extend({
       type = "heat",
       default_temperature = 15,
       max_temperature = 1500,
-      min_working_temperature = 500,
+      min_working_temperature = 750,
       specific_heat = "1MJ",
       max_transfer = "10MJ",
       connections =
@@ -7605,7 +7605,7 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_categories = {"smelting"},
     result_inventory_size = 1,
-    crafting_speed = 2,
+    crafting_speed = 2.5,
     energy_usage = "220kW",
     source_inventory_size = 1,
     energy_source =
