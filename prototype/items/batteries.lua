@@ -150,7 +150,7 @@ data:extend({
     subgroup = "pm-batteries",
     order = "la",
     fuel_category = "pm-charged-batteries",
-    fuel_value = "50MJ",
+    fuel_value = "25MJ",
     stack_size = 25
   },
   {
