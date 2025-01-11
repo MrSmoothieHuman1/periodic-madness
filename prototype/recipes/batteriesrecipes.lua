@@ -292,7 +292,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-charged-vanadium-redox-battery", 1, 0.9),
-      PM.product_chance("pm-broken-vanadium-oxide-battery", 1, 0.1)
+      PM.product_chance("pm-broken-vanadium-redox-battery", 1, 0.1)
     }
   },
   {
