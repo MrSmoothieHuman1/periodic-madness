@@ -6591,7 +6591,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      usage_priority = "tertiary",
+      usage_priority = "secondary-input",
       drain = "0kW"
     },
     energy_usage = "10MW",
@@ -6645,7 +6645,6 @@ data:extend({
     {
       type = "burner",
       fuel_categories = {"pm-charged-batteries"},
-      effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 0,
     },
@@ -6659,36 +6658,36 @@ data:extend({
     max_power_output = "10MW",
     usage_priority = "secondary-output",
     graphics_set = 
-  {
-    animation =
     {
-      layers =
+      animation =
       {
+        layers =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/battery-discharger/battery-discharger.png",
-          width = 171,
-          height = 257,
-          frame_count = 12,
-          line_length = 4,
-          animation_speed = 0.25,
-          shift = util.by_pixel(0, -30),
-          scale = 0.5,
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/battery-charger/battery-charger-shadow.png",
-          width = 257,
-          height = 171,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 12,
-          animation_speed = 0.5,
-          shift = util.by_pixel(40, -12),
-          scale = 0.5,
-          draw_as_shadow = true,
-        },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/battery-discharger/battery-discharger.png",
+            width = 171,
+            height = 257,
+            frame_count = 12,
+            line_length = 4,
+            animation_speed = 0.25,
+            shift = util.by_pixel(0, -30),
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/battery-charger/battery-charger-shadow.png",
+            width = 257,
+            height = 171,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 12,
+            animation_speed = 0.5,
+            shift = util.by_pixel(40, -12),
+            scale = 0.5,
+            draw_as_shadow = true,
+          },
+        }
       }
     }
-  }
   }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "pump",
