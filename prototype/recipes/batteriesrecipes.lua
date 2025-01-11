@@ -284,6 +284,7 @@ data:extend({
     order = "la",
     energy_required = 5,
     enabled = false,
+    main_product = "pm-charged-vanadium-redox-battery",
     ingredients =
     {
       PM.ingredient("pm-vanadium-redox-battery", 1)
@@ -302,6 +303,7 @@ data:extend({
     order = "oa",
     energy_required = 2.5,
     enabled = false,
+    main_product = "pm-charged-lithium-sulfur-battery",
     ingredients =
     {
       PM.ingredient("pm-lithium-sulfur-battery", 1)
