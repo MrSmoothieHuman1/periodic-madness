@@ -117,6 +117,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-broken-vanadium-redox-battery",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/vanadium-redox-battery.png",
+    subgroup = "pm-batteries",
+    order = "jb",
+    stack_size = 150
+  },
+  {
+    type = "item",
     name = "pm-lithium-sulfur-battery",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/lithium-sulfur-battery.png",
@@ -152,6 +161,15 @@ data:extend({
     fuel_category = "pm-charged-batteries",
     fuel_value = "25MJ",
     stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-broken-lithium-sulfur-battery",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/lithium-sulfur-battery.png",
+    subgroup = "pm-batteries",
+    order = "lb",
+    stack_size = 100
   },
   {
     type = "item",
