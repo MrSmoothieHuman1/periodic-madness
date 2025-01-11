@@ -5679,7 +5679,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/heat-exchanger-2.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 0.8, result = "heat-exchanger" },
+    minable = { mining_time = 0.8, result = "pm-heat-exchanger-2" },
     max_health = 600,
     corpse = "heat-exchanger-remnants",
     dying_explosion = "heat-exchanger-explosion",
@@ -5702,7 +5702,7 @@ data:extend({
     },
     collision_box = { { -1.29, -0.79 }, { 1.29, 0.79 } },
     selection_box = { { -1.5, -1 }, { 1.5, 1 } },
-    target_temperature = 1500,
+    target_temperature = 500,
     fluid_box =
     {
       volume = 200,
