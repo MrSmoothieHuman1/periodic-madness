@@ -22,7 +22,7 @@ data:extend({
     {
       PM.product("pm-nickel-chunk", 2),
       PM.product("pm-palladium-ore", 2),
-      PM.product_range_chance("pm-ferrum", 1, 3, 0.5)
+      PM.product_range_chance("pm-patina", 1, 3, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -45,7 +45,7 @@ data:extend({
     {
       PM.product("pm-nickel-chunk", 2),
       PM.product("pm-palladium-ore", 2),
-      PM.product_chance("pm-ferrum", 1, 0.5),
+      PM.product_chance("pm-patina", 1, 0.5),
       PM.product_chance("pm-flux-container", 1, 0.66)
     }
   } --[[@as data.RecipePrototype]],
