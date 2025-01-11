@@ -478,7 +478,7 @@ data:extend({
     {
       PM.ingredient("pm-aluminium-plate", 10),
       PM.ingredient("pm-tin-plate", 5),
-      PM.ingredient("pm-lead-plate", 10),
+      PM.ingredient("pm-lead-plate", 8),
       PM.ingredient("pm-thallium-ore", 3),
       PM.ingredient("pm-bismuth-ore", 8),
       PM.ingredient("pm-liquid-gallium", 20, "fluid"),
@@ -3887,7 +3887,7 @@ data:extend({
     {
       PM.ingredient("pm-aluminium-plate", 10),
       PM.ingredient("pm-tin-plate", 5),
-      PM.ingredient("pm-lead-plate", 10),
+      PM.ingredient("pm-lead-plate", 8),
       PM.ingredient("pm-thallium-ore", 3),
       PM.ingredient("pm-bismuth-ore", 8),
       PM.ingredient("pm-liquid-gallium", 20, "fluid"),
