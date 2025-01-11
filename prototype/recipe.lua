@@ -481,7 +481,7 @@ data:extend({
       PM.ingredient("pm-lead-plate", 8),
       PM.ingredient("pm-thallium-ore", 3),
       PM.ingredient("pm-bismuth-ore", 8),
-      PM.ingredient("pm-liquid-gallium", 20, "fluid"),
+      PM.ingredient("pm-liquid-gallium", 10, "fluid"),
       PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
@@ -3890,7 +3890,7 @@ data:extend({
       PM.ingredient("pm-lead-plate", 8),
       PM.ingredient("pm-thallium-ore", 3),
       PM.ingredient("pm-bismuth-ore", 8),
-      PM.ingredient("pm-liquid-gallium", 20, "fluid"),
+      PM.ingredient("pm-liquid-gallium", 10, "fluid"),
       PM.ingredient("pm-plastic-science-bottle", 1)
     },
     enabled = false,
