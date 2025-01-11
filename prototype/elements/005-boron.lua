@@ -88,7 +88,7 @@ data:extend({
     {
       PM.product("pm-diluted-boric-acid", 20, "fluid"),
       PM.product("sulfur", 4),
-      PM.product_range("pm-ferrum", 2, 6)
+      PM.product_range("pm-patina", 2, 6)
     }
   } --[[@as data.RecipePrototype]],
   {
