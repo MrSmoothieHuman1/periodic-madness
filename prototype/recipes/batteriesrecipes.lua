@@ -290,7 +290,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-charged-vanadium-redox-battery", 1)
+      PM.product_chance("pm-charged-vanadium-redox-battery", 1, 0.9)
     }
   },
   {
@@ -307,7 +307,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-charged-lithium-sulfur-battery", 1)
+      PM.product_chance("pm-charged-lithium-sulfur-battery", 1, 0.95)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
