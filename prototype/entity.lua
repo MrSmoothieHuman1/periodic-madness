@@ -6647,13 +6647,14 @@ data:extend({
       fuel_categories = {"pm-charged-batteries"},
       fuel_inventory_size = 1,
       burnt_inventory_size = 0,
+      effectivity = 0.8,
     },
     energy_source =
     {
       type = "electric",
       fuel_categories = {"pm-charged-batteries"},
       usage_priority = "secondary-output",
-      effectivity = 0.8,
+      
     },
     max_power_output = "10MW",
     usage_priority = "secondary-output",
