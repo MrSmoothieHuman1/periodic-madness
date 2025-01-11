@@ -46,6 +46,21 @@ Date: 2024-12-08
     - Finally got rid of the plastic bar item that appears in the factoriopedia and item menus.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.141
+Date: 2025-01-11
+  The boulder made of byproducts Update:
+
+  Changes:
+    - Changed chromic versions of ferrum and patina leeching to give off no ore and a slight amount of ore slag.
+    - Changed boron and cadmium recipes to give off patina instead of ferrum.
+    - Redoubled red science to take 2 iron and nickel plates.
+
+  Fixes:
+    - Fixed tellurium plates being unlocked at the start of the game.
+    - Gave all forms of transportation a return inventory for spent fuel.
+    - Fixed residual locales.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.139
 Date: 2025-01-09
   The watch, someone will complain this is OP now Update:

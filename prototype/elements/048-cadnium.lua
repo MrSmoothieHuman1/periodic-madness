@@ -67,7 +67,7 @@ data:extend({
     {
       PM.product("pm-cadnium-sulfate", 2),
       PM.product("pm-zinc-chunk", 2),
-      PM.product_range_chance("pm-ferrum", 1, 3, 0.5),
+      PM.product_range_chance("pm-patina", 1, 3, 0.5),
     }
   } --[[@as data.RecipePrototype]],
   {

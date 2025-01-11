@@ -1159,6 +1159,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-zinc-chunk-seperation"),
       PM.unlock_recipe("pm-zinc-tailings-condensing"),
+      PM.unlock_recipe("pm-cadnium-ore"),
       PM.unlock_recipe("pm-cadnium-plate"),
       PM.unlock_recipe("pm-cadnium-melting"),
       PM.unlock_recipe("pm-cadnium-plate-cooling"),
