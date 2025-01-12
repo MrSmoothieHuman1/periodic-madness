@@ -5847,7 +5847,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__base__/graphics/entity/heat-exchanger/heatex-E-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-E-idle.png",
               priority = "extra-high",
               width = 211,
               height = 301,
@@ -5873,7 +5873,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__base__/graphics/entity/heat-exchanger/heatex-S-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-S-idle.png",
               priority = "extra-high",
               width = 260,
               height = 201,
@@ -5899,7 +5899,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__base__/graphics/entity/heat-exchanger/heatex-W-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-W-idle.png",
               priority = "extra-high",
               width = 196,
               height = 273,
