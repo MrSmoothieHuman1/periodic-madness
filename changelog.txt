@@ -46,6 +46,7 @@ Date: 2024-12-08
     - (Mostly) Fixed the Factoriopedia being a mess. Never not name your recipes after their outputs.
     - Fixed empty reactor cells taking 0.5s to craft, and not 20s. Sucks to suck, huh?
     - Finally got rid of the plastic bar item that appears in the factoriopedia and item menus.
+    - Re-ordered science to actually be in the correct order (normal > plastic > francium)
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.141

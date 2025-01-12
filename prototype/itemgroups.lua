@@ -392,13 +392,13 @@ data:extend({
     type = "item-subgroup",
     name = "pm-plastic-science-pack",
     group = "intermediate-products",
-    order = "x"
+    order = "xa"
   },
   {
     type = "item-subgroup",
     name = "pm-francium-science",
     group = "intermediate-products",
-    order = "xa"
+    order = "xb"
   },
 
 
@@ -1230,3 +1230,5 @@ data:extend({
     order = "bb"
   },
 })
+
+data.raw["item-subgroup"]["science-pack"].order = "x"
