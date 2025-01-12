@@ -3216,10 +3216,10 @@ data:extend({
     },
     max_power_output = "1MW",
     usage_priority = "secondary-output",
-    graphics_set = 
-  {
-    animation =
+   pictures = 
     {
+      structure = 
+      {
       layers =
       {
         {
