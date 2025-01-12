@@ -3218,8 +3218,6 @@ data:extend({
     usage_priority = "secondary-output",
    pictures = 
     {
-      structure = 
-      {
       layers =
       {
         {
@@ -3243,7 +3241,6 @@ data:extend({
           draw_as_shadow = true,
         },
       }
-    }
   }
   }--[[@as data.BurnerGeneratorPrototype]],
   {
@@ -6658,7 +6655,7 @@ data:extend({
       type = "burner",
       fuel_categories = {"pm-charged-batteries"},
       fuel_inventory_size = 1,
-      burnt_inventory_size = 0,
+      burnt_inventory_size = 1,
       effectivity = 0.8,
     },
     energy_source =
