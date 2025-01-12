@@ -5812,100 +5812,112 @@ data:extend({
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
-    structure =
+    pictures =
     {
       north =
       {
-        layers =
+        structure =
         {
+          layers =
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-N-idle.png",
-            priority = "extra-high",
-            width = 269,
-            height = 221,
-            shift = util.by_pixel(-1.25, 5.25),
-            scale = 0.5
-          },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
-            priority = "extra-high",
-            width = 274,
-            height = 164,
-            scale = 0.5,
-            shift = util.by_pixel(20.5, 9),
-            draw_as_shadow = true
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-N-idle.png",
+              priority = "extra-high",
+              width = 269,
+              height = 221,
+              shift = util.by_pixel(-1.25, 5.25),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+              priority = "extra-high",
+              width = 274,
+              height = 164,
+              scale = 0.5,
+              shift = util.by_pixel(20.5, 9),
+              draw_as_shadow = true
+            }
           }
         }
       },
       east =
       {
-        layers =
+        structure =
         {
+          layers =
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2//heatex-E-idle.png",
-            priority = "extra-high",
-            width = 211,
-            height = 301,
-            shift = util.by_pixel(-1.75, 1.25),
-            scale = 0.5
-          },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
-            priority = "extra-high",
-            width = 184,
-            height = 194,
-            scale = 0.5,
-            shift = util.by_pixel(30, 9.5),
-            draw_as_shadow = true
+            {
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-E-idle.png",
+              priority = "extra-high",
+              width = 211,
+              height = 301,
+              shift = util.by_pixel(-1.75, 1.25),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
+              priority = "extra-high",
+              width = 184,
+              height = 194,
+              scale = 0.5,
+              shift = util.by_pixel(30, 9.5),
+              draw_as_shadow = true
+            }
           }
         }
       },
       south =
       {
-        layers =
+        structure =
         {
+          layers =
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2//heatex-S-idle.png",
-            priority = "extra-high",
-            width = 260,
-            height = 201,
-            shift = util.by_pixel(4, 10.75),
-            scale = 0.5
-          },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
-            priority = "extra-high",
-            width = 311,
-            height = 131,
-            scale = 0.5,
-            shift = util.by_pixel(29.75, 15.75),
-            draw_as_shadow = true
+            {
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-S-idle.png",
+              priority = "extra-high",
+              width = 260,
+              height = 201,
+              shift = util.by_pixel(4, 10.75),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
+              priority = "extra-high",
+              width = 311,
+              height = 131,
+              scale = 0.5,
+              shift = util.by_pixel(29.75, 15.75),
+              draw_as_shadow = true
+            }
           }
         }
       },
       west =
       {
-        layers =
+        structure =
         {
+          layers =
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2//heatex-W-idle.png",
-            priority = "extra-high",
-            width = 196,
-            height = 273,
-            shift = util.by_pixel(1.5, 7.75),
-            scale = 0.5
-          },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
-            priority = "extra-high",
-            width = 206,
-            height = 218,
-            scale = 0.5,
-            shift = util.by_pixel(19.5, 6.5),
-            draw_as_shadow = true
+            {
+              filename = "__base__/graphics/entity/heat-exchanger/heatex-W-idle.png",
+              priority = "extra-high",
+              width = 196,
+              height = 273,
+              shift = util.by_pixel(1.5, 7.75),
+              scale = 0.5
+            },
+            {
+              filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
+              priority = "extra-high",
+              width = 206,
+              height = 218,
+              scale = 0.5,
+              shift = util.by_pixel(19.5, 6.5),
+              draw_as_shadow = true
+            }
           }
         }
-      }
+      },
     },
     fire = {},
     fire_glow = {},
