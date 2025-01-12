@@ -551,6 +551,12 @@ data:extend({
     order = "m"
   },
   {
+    type = "item-subgroup",
+    name = "pm-bio-modules-rnm",
+    group = "pm-reactive-non-metals",
+    order = "ma"
+  },
+  {
     type  = "item-subgroup",
     name  = "pm-acetonitrile-rnm",
     group = "pm-reactive-non-metals",

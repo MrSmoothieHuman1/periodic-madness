@@ -39,6 +39,7 @@ Date: 2024-12-08
     - Changed yellow inserters to take gears, changed blue inserters to take yellow inserters.
     - Added productivity to lithium hydroxide and oversaturated lithium leeching.
     - Revamped battery charging by lowering the stack size of batteries, adding a chance for it to not give a charged battery out and a way to fix said batteries.
+    - Moved empty bio-modules and actual bio-modules into their own subgroup.
 
   Fixes:
     - Fixed the science pack item names captilisation.
