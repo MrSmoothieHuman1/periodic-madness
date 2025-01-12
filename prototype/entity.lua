@@ -6667,8 +6667,6 @@ data:extend({
     },
     max_power_output = "10MW",
     usage_priority = "secondary-output",
-    graphics_set = 
-    {
       animation =
       {
         layers =
@@ -6697,7 +6695,6 @@ data:extend({
           },
         }
       }
-    }
   }--[[@as data.BurnerGeneratorPrototype]],
   {
     type = "pump",
