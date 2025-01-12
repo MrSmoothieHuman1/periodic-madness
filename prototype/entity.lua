@@ -3216,13 +3216,13 @@ data:extend({
     },
     max_power_output = "1MW",
     usage_priority = "secondary-output",
-   pictures = 
+    pictures =
     {
-      north = 
+      north =
       {
-        structure = 
+        structure =
         {
-          layers = 
+          layers =
           {
             {
               filename = "__periodic-madness__/graphics/entities/buildings/voltatic-discharger/voltatic-discharger.png",
@@ -3241,7 +3241,94 @@ data:extend({
               line_length = 1,
               repeat_count = 30,
               shift = util.by_pixel(20, 12),
-              cale = 0.5,
+              scale = 0.5,
+              draw_as_shadow = true,
+            },
+          }
+        }
+      },
+      east =
+      {
+        structure =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/voltatic-discharger/voltatic-discharger.png",
+              width = 171,
+              height = 174,
+              frame_count = 30,
+              line_length = 6,
+              animation_speed = 0.25,
+              scale = 0.5,
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/voltatic-charger/voltatic-charger-shadow.png",
+              width = 171,
+              height = 174,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 30,
+              shift = util.by_pixel(20, 12),
+              scale = 0.5,
+              draw_as_shadow = true,
+            },
+          }
+        }
+      },
+      west =
+      {
+        structure =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/voltatic-discharger/voltatic-discharger.png",
+              width = 171,
+              height = 174,
+              frame_count = 30,
+              line_length = 6,
+              animation_speed = 0.25,
+              scale = 0.5,
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/voltatic-charger/voltatic-charger-shadow.png",
+              width = 171,
+              height = 174,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 30,
+              shift = util.by_pixel(20, 12),
+              scale = 0.5,
+              draw_as_shadow = true,
+            },
+          }
+        }
+      },
+      south =
+      {
+        structure =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/voltatic-discharger/voltatic-discharger.png",
+              width = 171,
+              height = 174,
+              frame_count = 30,
+              line_length = 6,
+              animation_speed = 0.25,
+              scale = 0.5,
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/voltatic-charger/voltatic-charger-shadow.png",
+              width = 171,
+              height = 174,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 30,
+              shift = util.by_pixel(20, 12),
+              scale = 0.5,
               draw_as_shadow = true,
             },
           }
