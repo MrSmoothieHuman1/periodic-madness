@@ -342,7 +342,7 @@ data:extend({
     {
       PM.ingredient("iron-plate", 4),
       PM.ingredient("pm-manganese-plate", 4),
-      PM.ingredient("pm-vanadium-oxide", 3)
+      PM.ingredient("pm-vanadium-oxide", 2)
     },
     results =
     {
