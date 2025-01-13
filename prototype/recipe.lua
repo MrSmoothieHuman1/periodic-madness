@@ -2184,7 +2184,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-caesium", 2, "fluid"),
-      PM.ingredient("pm-rubidium", 2),
+      PM.ingredient("pm-rubidium", 1),
       PM.ingredient("pm-tungsten-plate", 6),
       PM.ingredient("pm-zirconia", 4)
     },
