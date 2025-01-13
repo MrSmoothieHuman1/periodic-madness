@@ -899,7 +899,8 @@ data:extend({
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
       },
       time = 60
     }
