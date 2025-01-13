@@ -75,6 +75,30 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
+    name = "pm-fluxed-bismite",
+    enabled = false,
+    energy_required = 8,
+    category = "pm-acids",
+    subgroup = "pm-bismuth-ptm",
+    order = "ba",
+    main_product = "pm-bismite",
+    ingredients =
+    {
+      PM.ingredient("pm-molybdenum-ore", 4),
+      PM.ingredient("pm-tin-ore", 4),
+      PM.ingredient("pm-bismuth-chunks", 4),
+      PM.ingredient("pm-filled-flux-container", 1),
+      PM.ingredient("pm-chlorine", 12, "fluid")
+    },
+    results =
+    {
+      PM.product_range("pm-bismite", 4, 6),
+      PM.catalyst("pm-flux-container", 1, 1, 0),
+      PM.catalyst_range("pm-tin-ore", 1, 4, 4)
+    }
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
     name = "pm-bismuth-crystallisation",
     enabled = false,
     energy_required = 16,
