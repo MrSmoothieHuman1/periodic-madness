@@ -2487,6 +2487,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/vacuum-tubes.png",
     effects =
     {
+      PM.unlock_recipe("pm-vacuum-tube-getter"),
       PM.unlock_recipe("pm-vacuum-tube")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},

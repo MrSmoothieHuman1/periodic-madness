@@ -1153,6 +1153,14 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-vacuum-tube-getter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/vacuum-tube.png",
+    subgroup = "pm-intermediates",
+    stack_size = 75
+  },
+  {
+    type = "item",
     name = "pm-oscilloscope",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/oscilloscope.png",

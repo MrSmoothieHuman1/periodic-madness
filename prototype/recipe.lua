@@ -2158,7 +2158,6 @@ data:extend({
     type = "recipe",
     name = "pm-vacuum-tube",
     enabled = false,
-    category = "crafting-with-fluid",
     subgroup = "pm-intermediates",
     energy_required = 7,
     allow_productivity = true,
@@ -2166,13 +2165,32 @@ data:extend({
     {
       PM.ingredient("pm-platinum-plate", 6),
       PM.ingredient("pm-nickel-plate", 6),
-      PM.ingredient("pm-glass-pane", 10),
-      PM.ingredient("pm-tungsten-plate", 8),
-      PM.ingredient("pm-caesium", 4, "fluid")
+      PM.ingredient("pm-glass-pane", 8),
+      PM.ingredient("pm-vacuum-tube-getter", 1)
     },
     results =
     {
       PM.product("pm-vacuum-tube", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-vacuum-tube-getter",
+    enabled = false,
+    category = "crafting-with-fluid",
+    subgroup = "pm-intermediates",
+    energy_required = 7,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-caesium", 2, "fluid"),
+      PM.ingredient("pm-rubidium", 2),
+      PM.ingredient("pm-tungsten-plate", 6),
+      PM.ingredient("pm-zirconia", 4)
+    },
+    results = 
+    {
+      PM.product("pm-vacuum-tube-getter", 1)
     }
   },
   {

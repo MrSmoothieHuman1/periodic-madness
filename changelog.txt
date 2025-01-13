@@ -15,6 +15,7 @@ Date: 2024-12-08
     - (This is where .133's oil residual line would have been, but i had to move that into public due to the sheer shittery of oil)
     - Added ignored_by_stats to voiding/looping/loop voiding recipes.
     - Added express long/bulk/inserters, unlocked at P-TM science. Express inserters are all 1.5x faster then their predecessor. All express inserters (long/bulk/normal) take their original inserter.
+    - Added another intermediate to vacuum tubes, a vacuum tube getter - which takes caesium, rubidium, tungsten and zirconina.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -43,6 +44,7 @@ Date: 2024-12-08
     - Changed all slugs stack size to 100, and geneva neglection's to 150.
     - Changed slugs range deviation to be less on higher tiers, to make them more precise to use weapons and lowered the max amount of deviation on the 'worst' type of slug.
     - Changed TWAT's stack size to 50 instead of 20.
+    - Made vacuum tubes slightly cheaper, by lowering the amount of resources in their original recipe.
 
   Fixes:
     - Fixed the science pack item names captilisation.
