@@ -233,6 +233,7 @@ data:extend({
       }
     }
   },
+  piercing_damage = 30,
   magazine_size = 6,
   subgroup = "pm-shotgun-ammo",
   order = "aa",
@@ -280,6 +281,7 @@ data:extend({
       }
     }
   },
+  piercing_damage = 300,
   magazine_size = 6,
   subgroup = "pm-shotgun-ammo",
   order = "ba",
@@ -327,6 +329,7 @@ data:extend({
       }
     }
   },
+  piercing_damage = 100,
   magazine_size = 6,
   subgroup = "pm-shotgun-ammo",
   order = "ca",
@@ -374,6 +377,7 @@ data:extend({
       }
     }
   },
+  piercing_damage = 100,
   magazine_size = 8,
   subgroup = "pm-shotgun-ammo",
   order = "da",
