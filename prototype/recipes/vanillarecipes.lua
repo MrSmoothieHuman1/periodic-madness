@@ -703,6 +703,7 @@ data.raw["recipe"]["centrifuge"].ingredients =
   PM.ingredient("pm-boron", 12, "fluid"),
   PM.ingredient("pm-heavyweight-framing", 12)
 }
+data.raw["recipe"]["concrete"].energy_required = 2.5
 data.raw["recipe"]["concrete"].category = "crafting-with-fluid"
 data.raw["recipe"]["concrete"].ingredients = 
 {
@@ -714,6 +715,7 @@ data.raw["recipe"]["concrete"].results =
 {
   PM.product("concrete", 2)
 }
+data.raw["recipe"]["refined-concrete"].energy_required = 5
 data.raw["recipe"]["refined-concrete"].category = "crafting-with-fluid"
 data.raw["recipe"]["refined-concrete"].ingredients = 
 {

@@ -47,6 +47,8 @@ Date: 2024-12-08
     - Changed TWAT's stack size to 50 instead of 20.
     - Made vacuum tubes slightly cheaper, by lowering the amount of resources compared to their original recipe.
     - Changed the first plastic science technology to also take R-NM packs.
+    - Deleted oscilliscopes and merged them into RCU's, since there was no use for them being their own thing.
+    - Changed RCU's to take 35 seconds, instead of 30 seconds.
 
   Fixes:
     - Fixed the science pack item names captilisation.

@@ -2248,27 +2248,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-oscilloscope",
-    enabled = false,
-    category = "crafting-with-fluid",
-    subgroup = "pm-intermediates",
-    energy_required = 10,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-CRT", 1),
-      PM.ingredient("pm-stainless-steel-alloy", 5),
-      PM.ingredient("pm-gold-plate", 5),
-      PM.ingredient("pm-heavy-lubricant", 15, "fluid"),
-      PM.ingredient("pm-fluid-circuit", 3)
-    },
-    results =
-    {
-      PM.product("pm-oscilloscope", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-genevas-neglection-magazine",
     enabled = false,
     category = "crafting-with-fluid",
@@ -2672,13 +2651,15 @@ data:extend({
     type = "recipe",
     name = "pm-rocket-control-unit",
     enabled = false,
-    energy_required = 30,
+    energy_required = 35,
     allow_productivity = true,
     ingredients =
       {
-        PM.ingredient("pm-oscilloscope", 1),
-        PM.ingredient("pm-polyethylene-plastic", 8),
-        PM.ingredient("pm-basic-wiring", 10)
+        PM.ingredient("pm-CRT", 1),
+        PM.ingredient("pm-fluid-circuit", 3),
+        PM.ingredient("processing-unit", 3),
+        PM.ingredient("pm-heavy-lubricant", 8, "fluid"),
+        PM.ingredient("pm-polyethylene-plastic", 6),
       },
     results = 
     {

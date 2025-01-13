@@ -1161,32 +1161,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-oscilloscope",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/oscilloscope.png",
-    pictures =
-    {
-      layers =
-      {
-        {
-          size = 128,
-          filename = "__periodic-madness__/graphics/icons/oscilloscope.png",
-          scale = 0.25,
-        },
-        {
-          draw_as_light = true,
-          flags = { "light" },
-          size = 128,
-          filename = "__periodic-madness__/graphics/light/oscilloscope-light.png",
-          scale = 0.25,
-        }
-      }
-    },
-    subgroup = "pm-intermediates",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "pm-lithium-logistic-robot",
     icon = "__periodic-madness__/graphics/icons/lithium-logistic-robot.png",
     icon_size = 64,
