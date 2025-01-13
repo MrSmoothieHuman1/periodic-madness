@@ -93,10 +93,10 @@ data:extend({
     results =
     {
       PM.product_range("pm-bismite", 4, 6),
-      PM.catalyst("pm-flux-container", 1, 1, 0),
+      PM.catalyst("pm-flux-container", 1, 1),
       PM.catalyst_range("pm-tin-ore", 1, 4, 4)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-bismuth-ore",

@@ -2652,6 +2652,7 @@ data:extend({
     name = "pm-rocket-control-unit",
     enabled = false,
     energy_required = 35,
+    category = "crafting-with-fluid",
     allow_productivity = true,
     ingredients =
       {

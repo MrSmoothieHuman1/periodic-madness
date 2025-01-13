@@ -745,7 +745,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/chrominum-ore-icon.png",
+        icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1151,7 +1151,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/chrominum-ore-icon.png",
+        icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}

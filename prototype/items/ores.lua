@@ -156,7 +156,7 @@ data:extend({
     pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-2.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-2.png", size = 64, scale = 0.5}, i forgot to commit it, whoops
       {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-3.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-4.png", size = 64, scale = 0.5}
     },
@@ -171,7 +171,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon.png",
     pictures = 
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/vanaidum-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-3.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-4.png", size = 64, scale = 0.5}
