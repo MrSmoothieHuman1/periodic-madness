@@ -1889,6 +1889,10 @@ data.raw["recipe"]["low-density-structure"].subgroup = "pm-intermediates"
 data.raw["item"]["flying-robot-frame"].subgroup = "pm-intermediates"
 data.raw["recipe"]["flying-robot-frame"].subgroup = "pm-intermediates"
 data.raw["item"]["sulfur"].subgroup = "pm-sulfur-rnm"
+data.raw["item"]["explosives"].subgroup = "capsule"
+data.raw["item"]["explosives"].order = "c"
+data.raw["recipe"]["explosives"].subgroup = "capsule"
+data.raw["recipe"]["explosives"].order = "c"
 
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
