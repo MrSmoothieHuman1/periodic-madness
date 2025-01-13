@@ -271,8 +271,8 @@ data:extend({
         action_delivery =
         {
           type = "projectile",
-          projectile = "pm-slug-pellet",
-          starting_speed = 1,
+          projectile = "pm-heavy-piercing-slug-pellet",
+          starting_speed = 0.5,
           starting_speed_deviation = 0.2,
           direction_deviation = 0.55,
           range_deviation = 0.55,
@@ -320,7 +320,7 @@ data:extend({
         {
           type = "projectile",
           projectile = "pm-slug-pellet",
-          starting_speed = 1,
+          starting_speed = 1.5,
           starting_speed_deviation = 0.2,
           direction_deviation = 0.7,
           range_deviation = 0.7,
