@@ -64,14 +64,12 @@ data:extend({
     {
       PM.ingredient("pm-molybdenum-ore", 4),
       PM.ingredient("pm-tin-ore", 4),
-      PM.ingredient("pm-filled-flux-container", 1),
       PM.ingredient("pm-bismuth-chunks", 6),
       PM.ingredient("pm-chlorine", 12, "fluid")
     },
     results =
     {
       PM.product("pm-bismite", 4),
-      PM.catalyst("pm-flux-container", 1, 1),
       PM.catalyst_range("pm-tin-ore", 1, 3, 3)
     }
   } --[[@as data.RecipePrototype]],
