@@ -3707,7 +3707,7 @@ data:extend({
     {
       PM.unlock_recipe("lab"),
     },
-    prerequisites = {},
+    prerequisites = {"pm-crushing"},
     research_trigger = 
     {
       type = "craft-item",
@@ -4245,6 +4245,25 @@ data:extend({
         {"pm-post-transition-metal-science-pack", 1}
       },
       time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-crushing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/glass-pane.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-coal-crushing"),
+      PM.unlock_recipe("pm-sand"),
+      PM.unlock_recipe("pm-glass-pane")
+    },
+    prerequisites = {},
+    research_trigger = 
+    {
+      type = "craft-item",
+      item = "pm-burner-crusher",
+      count = 1
     }
   },
 
