@@ -41,6 +41,7 @@ Date: 2024-12-08
     - Revamped battery charging by lowering the stack size of batteries, adding a chance for it to not give a charged battery out and a way to fix said batteries.
     - Moved empty bio-modules and actual bio-modules into their own subgroup.
     - Changed all slugs stack size to 100, and geneva neglection's to 150.
+    - Changed slugs range deviation to be less on higher tiers, to make them more precise to use weapons and lowered the max amount of deviation on the 'worst' type of slug.
 
   Fixes:
     - Fixed the science pack item names captilisation.

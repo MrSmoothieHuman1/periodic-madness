@@ -226,8 +226,8 @@ data:extend({
           projectile = "pm-slug-pellet",
           starting_speed = 1,
           starting_speed_deviation = 0.2,
-          direction_deviation = 0.7,
-          range_deviation = 0.7,
+          direction_deviation = 0.55,
+          range_deviation = 0.5,
           max_range = 18
         }
       }
@@ -274,7 +274,7 @@ data:extend({
           starting_speed = 1.5, -- below 1 is faster, above 1 is slower
           starting_speed_deviation = 0.2,
           direction_deviation = 0.55,
-          range_deviation = 0.55,
+          range_deviation = 0.25,
           max_range = 25
         }
       }
@@ -320,8 +320,8 @@ data:extend({
           projectile = "pm-slug-pellet",
           starting_speed = 0.75,
           starting_speed_deviation = 0.2,
-          direction_deviation = 0.7,
-          range_deviation = 0.7,
+          direction_deviation = 0.25,
+          range_deviation = 0.05,
           max_range = 16
         }
       }
@@ -367,8 +367,8 @@ data:extend({
           projectile = "pm-poison-slug-pellet",
           starting_speed = 1,
           starting_speed_deviation = 0.2,
-          direction_deviation = 0.7,
-          range_deviation = 0.7,
+          direction_deviation = 0.25,
+          range_deviation = 0.05,
           max_range = 16
         }
       }
