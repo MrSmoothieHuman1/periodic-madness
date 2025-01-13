@@ -37,6 +37,7 @@
        ["pm-resin-to-pheonlic-resin", "pm-pheonlic-resin"],
        ["pm-rubber-resin-cooling", "pm-rubber"],
        ["pm-rubidium-alum-seperation", "pm-rubidium"],
-       ["pm-bismuth-crystallisation", "pm-bismuth-ore"]
+       ["pm-bismuth-crystallisation", "pm-bismuth-ore"],
+       ["pm-hydrogen-iodide-seperation", "pm-iodine"]
     ]
 }

@@ -61,7 +61,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-hydrogen-iodide-seperation",
+    name = "pm-iodine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/hydrogen-iodine-seperation.png",
     enabled = false,

@@ -3114,7 +3114,7 @@ data:extend({
       PM.unlock_recipe("pm-acidic-brine"),
       PM.unlock_recipe("pm-iodine-solution"),
       PM.unlock_recipe("pm-hydrogen-iodide"),
-      PM.unlock_recipe("pm-hydrogen-iodide-seperation"),
+      PM.unlock_recipe("pm-iodide"),
       PM.unlock_recipe("pm-iodine-vanadate-solution-seperation"),
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
