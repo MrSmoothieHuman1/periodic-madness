@@ -7041,6 +7041,7 @@ data:extend({
     collision_box = {{-0.1, -0.3}, {0.1, 0.3 }},
     acceleration = 0,
     direction_only = true,
+    piercing_damage = 30,
     action =
     {
       type = "direct",
