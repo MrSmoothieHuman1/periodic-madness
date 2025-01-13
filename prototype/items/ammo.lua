@@ -379,6 +379,152 @@ data:extend({
   order = "da",
   stack_size = 200
 },
+
+{
+  type = "projectile",
+  name = "pm-poison-shotgun-pellet",
+  flags = {"not-on-map"},
+  collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
+  acceleration = 0,
+  direction_only = true,
+  action =
+  {
+    type = "direct",
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        {
+          type = "damage",
+          damage = {amount = 5, type = "physical"}
+        },
+        {
+          type = "create-sticker",
+          sticker = "pm-bio-poison-sticker",
+          duration_in_ticks = 10 * 60,
+          damage_interval = 60,
+          show_in_tooltip = true
+        }
+      }
+    },
+  },
+  animation =
+  {
+    filename = "__base__/graphics/entity/bullet/bullet.png",
+    tint = {r = 1, g = 0, b = 1},
+    draw_as_glow = true,
+    frame_count = 1,
+    width = 3,
+    height = 50,
+    priority = "high"
+  }
+},
+{
+  type = "projectile",
+  name = "pm-slug-pellet",
+  flags = {"not-on-map"},
+  collision_box = {{-0.1, -0.3}, {0.1, 0.3 }},
+  acceleration = 0,
+  direction_only = true,
+  piercing_damage = 30,
+  action =
+  {
+    type = "direct",
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        type = "damage",
+        damage = {amount = 16, type = "physical"}
+      }
+    }
+  },
+  animation =
+  {
+    filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+    draw_as_glow = true,
+    frame_count = 1,
+    width = 3,
+    height = 50,
+    priority = "high"
+  }
+},
+{
+  type = "projectile",
+  name = "pm-high-piercing-slug-pellet",
+  flags = {"not-on-map"},
+  collision_box = {{-0.1, -0.3}, {0.1, 0.3}},
+  acceleration = 1,
+  direction_only = true,
+  piercing_damage = 300,
+  action =
+  {
+    type = "direct",
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        type = "damage",
+        damage = {amount = 12, type = "physical"}
+      }
+    }
+  },
+  animation =
+  {
+    filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+    draw_as_glow = true,
+    frame_count = 1,
+    width = 3,
+    height = 50,
+    priority = "high"
+  }
+},
+{
+  type = "projectile",
+  name = "pm-poison-slug-pellet",
+  flags = {"not-on-map"},
+  collision_box = {{-0.1, -0.3}, {0.1, 0.3 }},
+  acceleration = 0,
+  direction_only = true,
+  piercing_damage = 100,
+  action =
+  {
+    type = "direct",
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        {
+          type = "damage",
+          damage = 
+          {
+            amount = 8, type = "physical",
+          }
+        },
+        {
+          type = "create-sticker",
+          sticker = "pm-bio-poison-sticker",
+          duration_in_ticks = 10 * 60,
+          damage_interval = 60,
+          show_in_tooltip = true
+        }
+      }
+    }
+  },
+  animation =
+  {
+    filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+    draw_as_glow = true,
+    frame_count = 1,
+    width = 3,
+    height = 50,
+    priority = "high"
+  }
+},
 })
 
 data.raw["ammo"]["shotgun-shell"].icon = "__periodic-madness__/graphics/icons/shotgun-shell.png"
