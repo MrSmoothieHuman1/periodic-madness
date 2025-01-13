@@ -15,6 +15,12 @@ data:extend({
     name = "pm-ferrochrominum",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/ferrochrominum.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/ferrochromium.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/ferrochromium-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/ferrochromium-3.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-chrominum-tm",
     order = "b",
     stack_size = 100

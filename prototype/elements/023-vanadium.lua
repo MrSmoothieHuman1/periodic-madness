@@ -23,9 +23,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/ferrovanadium.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/ferrovanadium.png",        size = 64, scale = 0.24 + 0.01 },
-      { filename = "__periodic-madness__/graphics/icons/ores/ferrovanadium-icon-2.png", size = 64, scale = 0.26 },
+      {filename = "__periodic-madness__/graphics/icons/ores/ferrovanadium.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/ferrovanadium-2.png", size = 64, scale = 0.5},
     },
+
     subgroup = "pm-vanadium-tm",
     order = "b",
     stack_size = 200

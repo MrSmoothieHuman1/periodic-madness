@@ -152,11 +152,13 @@ data:extend({
     type = "item",
     name = "pm-chrominum-ore",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/chrominum-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/chrominum-ore-icon.png",   size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/chrominum-ore-icon-1.png", size = 64, scale = 0.5}
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-4.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-chrominum-tm",
     order = "c",
@@ -167,6 +169,13 @@ data:extend({
     name = "pm-vanadium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/vanaidum-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-4.png", size = 64, scale = 0.5}
+    },
     subgroup = "pm-vanadium-tm",
     order = "b",
     stack_size = 200
