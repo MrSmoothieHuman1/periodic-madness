@@ -16,6 +16,7 @@ Date: 2024-12-08
     - Added ignored_by_stats to voiding/looping/loop voiding recipes.
     - Added express long/bulk/inserters, unlocked at P-TM science. Express inserters are all 1.5x faster then their predecessor. All express inserters (long/bulk/normal) take their original inserter.
     - Added another intermediate to vacuum tubes, a vacuum tube getter - which takes caesium, rubidium, tungsten and zirconina.
+    - Added a way to make bismite with flux, because i got rid of the original recipe which took flux.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

@@ -1891,6 +1891,7 @@ data:extend({
       PM.unlock_recipe("pm-crystallizer"),
       PM.unlock_recipe("pm-bismuth-leeching"),
       PM.unlock_recipe("pm-bismite"),
+      PM.unlock_recipe("pm-fluxed-bismite"),
       PM.unlock_recipe("pm-bismuth-ore"),
       PM.unlock_recipe("pm-lead-leeching"),
       PM.unlock_recipe("pm-lead-powder"),
