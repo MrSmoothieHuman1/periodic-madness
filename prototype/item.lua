@@ -1590,9 +1590,8 @@ data.raw["item"]["iron-gear-wheel"].order = "a"
 data.raw["recipe"]["iron-gear-wheel"].subgroup = "pm-gears"
 data.raw["recipe"]["iron-gear-wheel"].order = "aa"
 
-local SolidFuelFuel = data.raw["item"]["solid-fuel"]
-SolidFuelFuel.subgroup = "pm-fuels"
-SolidFuelFuel.order = "e"
+data.raw["item"]["solid-fuel"].subgroup = "pm-fuels"
+data.raw["item"]["solid-fuel"].order = "e"
 
 data.raw["module"]["productivity-module"].effect =
 {
