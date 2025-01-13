@@ -453,7 +453,7 @@ data:extend({
 },
 {
   type = "projectile",
-  name = "pm-high-piercing-slug-pellet",
+  name = "pm-heavy-piercing-slug-pellet",
   flags = {"not-on-map"},
   collision_box = {{-0.1, -0.3}, {0.1, 0.3}},
   acceleration = 1,
