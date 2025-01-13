@@ -271,7 +271,7 @@ data:extend({
         {
           type = "projectile",
           projectile = "pm-heavy-piercing-slug-pellet",
-          starting_speed = 1.5,
+          starting_speed = 1.5, -- below 1 is faster, above 1 is slower
           starting_speed_deviation = 0.2,
           direction_deviation = 0.55,
           range_deviation = 0.55,
