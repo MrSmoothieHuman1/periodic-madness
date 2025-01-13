@@ -1372,7 +1372,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/TWAT.png",
     subgroup = "pm-intermediates",
-    stack_size = 20,
+    stack_size = 50,
   },
   {
     type = "capsule",
