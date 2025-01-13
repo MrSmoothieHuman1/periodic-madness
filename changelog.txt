@@ -47,6 +47,8 @@ Date: 2024-12-08
     - Fixed empty reactor cells taking 0.5s to craft, and not 20s. Sucks to suck, huh?
     - Finally got rid of the plastic bar item that appears in the factoriopedia and item menus.
     - Re-ordered science to actually be in the correct order (normal > plastic > francium)
+    - Fixed the ordering of certain subgroups, for real this time.
+    - Fixed random things like explosives not being in the presumably correct category.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.141

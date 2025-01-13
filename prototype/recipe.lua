@@ -1026,7 +1026,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-blank-bio-module",
-    subgroup = "science-pack",
+    subgroup = "pm-bio-modules-rnm",
     order = "a",
     energy_required = 7.5,
     enabled = false,
@@ -1047,8 +1047,8 @@ data:extend({
     name = "pm-agility-bio-module",
     energy_required = 7.5,
     category = "chemistry",
-    subgroup = "pm-acetonitrile-rnm",
-    order = "x",
+    subgroup = "pm-bio-modules-rnm",
+    order = "b",
     enabled = false,
     ingredients =
     {
@@ -1066,8 +1066,8 @@ data:extend({
     name = "pm-health-bio-module",
     energy_required = 7.5,
     category = "chemistry",
-    subgroup = "pm-CISD2-rnm",
-    order = "x",
+    subgroup = "pm-bio-modules-rnm",
+    order = "b",
     enabled = false,
     ingredients =
     {
@@ -1085,8 +1085,8 @@ data:extend({
     name = "pm-strength-bio-module",
     energy_required = 7.5,
     category = "chemistry",
-    subgroup = "pm-myostatin-rnm",
-    order = "x",
+    subgroup = "pm-bio-modules-rnm",
+    order = "c",
     enabled = false,
     ingredients =
     {
