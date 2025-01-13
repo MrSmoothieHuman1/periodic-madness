@@ -40,6 +40,7 @@ Date: 2024-12-08
     - Added productivity to lithium hydroxide and oversaturated lithium leeching.
     - Revamped battery charging by lowering the stack size of batteries, adding a chance for it to not give a charged battery out and a way to fix said batteries.
     - Moved empty bio-modules and actual bio-modules into their own subgroup.
+    - Changed all slugs stack size to 100, and geneva neglection's to 150.
 
   Fixes:
     - Fixed the science pack item names captilisation.
@@ -49,6 +50,7 @@ Date: 2024-12-08
     - Re-ordered science to actually be in the correct order (normal > plastic > francium)
     - Fixed the ordering of certain subgroups, for real this time.
     - Fixed random things like explosives not being in the presumably correct category.
+    - Made slugs actually work with 2.0, im not sure how well they now work so any balance or suggestions are greatly appreciated.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.141
