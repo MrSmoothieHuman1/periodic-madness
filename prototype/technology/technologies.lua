@@ -4265,6 +4265,33 @@ data:extend({
       count = 1
     }
   },
+  {
+    type = "technology",
+    name = "pm-waste-water-byproduct-handling",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-ferrous-waste-water"),
+      PM.unlock_recipe("pm-cupric-waste-water"),
+      PM.unlock_recipe("pm-ferrous-waste-seperation"),
+      PM.unlock_recipe("pm-cupric-waste-seperation"),
+      PM.unlock_recipe("pm-ferrous-waste-looping"),
+      PM.unlock_recipe("pm-cupric-waste-looping"),
+    },
+    prerequisites = {"pm-mixing-material-processing-2", "pm-byproduct-handling"},
+    unit =
+    {
+      count = 125,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 60
+    }
+  },
 
   {
     type = "technology",
