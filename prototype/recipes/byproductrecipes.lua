@@ -312,7 +312,7 @@ data:extend({
     energy_required = 10,
     ingredients = 
     {
-      PM.ingredient("pm-cupric-waste-water", 10, "fluid"),
+      PM.ingredient("pm-ferrous-waste-water", 10, "fluid"),
     },
     results = 
     {
