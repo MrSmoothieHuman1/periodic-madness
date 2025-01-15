@@ -60,6 +60,7 @@ Date: 2024-12-08
     - Fixed the ordering of certain subgroups, for real this time.
     - Fixed random things like explosives not being in the presumably correct category.
     - Made slugs actually work with 2.0, im not sure how well they now work so any balance or suggestions are greatly appreciated.
+    - Changed byproduct handling to be unlockable from ezekiel processing, and not transition metal leeching.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.141

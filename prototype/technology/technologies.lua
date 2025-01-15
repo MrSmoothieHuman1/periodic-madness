@@ -60,7 +60,7 @@ data:extend({
       PM.unlock_recipe("pm-ferrum-leeching"),
       PM.unlock_recipe("pm-patina-leeching"),
     },
-    prerequisites = {"pm-transition-metal-refining"},
+    prerequisites = {"pm-ezekiel-ore-puryifying"},
     unit =
     {
       count = 15,
