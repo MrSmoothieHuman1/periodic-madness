@@ -1683,7 +1683,7 @@ data:extend({
     type = "fluid",
     name = "pm-cupric-waste-water",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/cupric-waster-water.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/cupric-waste-water.png",
     default_temperature = 15,
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}

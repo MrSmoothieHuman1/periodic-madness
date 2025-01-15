@@ -13,8 +13,8 @@ data:extend({
   {
     type = "item",
     name = "pm-white-phosphorus",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/white-phosphorus.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/white-phosphorous.png",
     subgroup = "pm-phosphorus-rnm",
     order = "b",
     stack_size = 100
@@ -22,8 +22,8 @@ data:extend({
   {
     type = "item",
     name = "pm-red-phosphorus",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/red-phosphorus.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/red-phosphorous.png",
     subgroup = "pm-phosphorus-rnm",
     order = "c",
     stack_size = 100

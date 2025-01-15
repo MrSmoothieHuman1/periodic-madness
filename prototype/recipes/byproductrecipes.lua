@@ -317,7 +317,7 @@ data:extend({
     results = 
     {
       PM.product_range_chance("pm-manganese-ore", 0, 3, 0.75),
-      PM.product_range_chance("pm-iron-ore", 0, 5, 0.8),
+      PM.product_range_chance("iron-ore", 0, 5, 0.8),
       PM.product_range_chance("pm-titanium-ore", 0, 3, 0.66),
       PM.product_range_chance("pm-lead-ore", 0, 4, 0.4)
     }
@@ -338,7 +338,7 @@ data:extend({
     results = 
     {
       PM.product_range_chance("pm-gold-ore", 0, 3, 0.75),
-      PM.product_range_chance("pm-copper-ore", 0, 5, 0.8),
+      PM.product_range_chance("copper-ore", 0, 5, 0.8),
       PM.product_range_chance("pm-palladium-ore", 0, 3, 0.66),
       PM.product_range_chance("pm-platinum-ore", 0, 4, 0.5)
     }

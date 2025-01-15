@@ -14,7 +14,7 @@ data:extend({
     type = "item",
     name = "pm-red-mercury",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/red-mercury.png",
+    icon = "__periodic-madness__/graphics/icons/red-mercury-powder.png",
     subgroup = "pm-mercury-tm",
     order = "c",
     stack_size = 140 + 10
