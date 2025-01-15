@@ -1679,6 +1679,24 @@ data:extend({
     base_color = {r = 0, g = 0, b = 0},
     flow_color = {r = 0, g = 0, b = 0}
   },
+  {
+    type = "fluid",
+    name = "pm-cupric-waste-water",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/cupric-waster-water.png",
+    default_temperature = 15,
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+  },
+  {
+    type = "fluid",
+    name = "pm-ferrous-waste-water",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/ferrous-waste-water.png",
+    default_temperature = 15,
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+  },
 })
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"

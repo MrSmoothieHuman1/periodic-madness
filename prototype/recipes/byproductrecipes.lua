@@ -304,6 +304,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ferrous-waste-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-seperation.png",
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
@@ -323,6 +325,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-cupric-waste-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-seperation.png",
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
@@ -342,6 +346,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ferrous-waste-looping",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
     category = "pm-mixing",
     enabled = false,
     energy_required = 5,
@@ -359,6 +365,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-cupric-waste-looping",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-looping.png",
     category = "pm-mixing",
     enabled = false,
     energy_required = 5,
