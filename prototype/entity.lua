@@ -2434,14 +2434,14 @@ data:extend({
     collision_box = {{-0.9, -0.9 }, { 0.9, 0.9 }},
     selection_box = {{-1.1, -1.1 }, { 1.1, 1.1 }},
     crafting_categories = {"pm-coldening"},
-    energy_usage = "550kW",
+    energy_usage = "1kW",
     crafting_speed = 1,
     energy_source =
     {
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      fluid_usage_per_tick = 1,
+      fluid_usage_per_tick = 1 / 60,
       emissions_per_minute = {pollution = 2},
       fluid_box =
       {
@@ -2626,14 +2626,14 @@ data:extend({
     collision_box = {{-0.9, -0.9 }, { 0.9, 0.9 }},
     selection_box = {{-1.1, -1.1 }, { 1.1, 1.1 }},
     crafting_categories = {"pm-coldening"},
-    energy_usage = "750kW",
-    crafting_speed = 1.4 + 0.1,
+    energy_usage = "1kW",
+    crafting_speed = 1.5,
     energy_source =
     {
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      fluid_usage_per_tick = 0.5,
+      fluid_usage_per_tick = 0.5 / 60,
       emissions_per_minute = {pollution = 1},
       fluid_box =
       {
@@ -2667,7 +2667,7 @@ data:extend({
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      fluid_usage_per_tick = 1,
+      fluid_usage_per_tick = 2 / 60,
       emissions_per_minute = {pollution = 2},
       fluid_box =
       {
@@ -5518,7 +5518,7 @@ data:extend({
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      fluid_usage_per_tick = 1,
+      fluid_usage_per_tick = 1 / 60,
       fluid_box =
       {
         production_type = "input",
@@ -5659,7 +5659,7 @@ data:extend({
       effectivity = 1,
       burns_fluid = true,
       destroy_non_fuel_fluid = true,
-      fluid_usage_per_tick = 5, --HACK: Set a *real* value instead of this outta my ass one
+      fluid_usage_per_tick = 2 / 60, -- 5 fluid per tick my left ass
       fluid_box =
       {
         production_type = "input",
@@ -8935,7 +8935,7 @@ data:extend({
     type = "fluid",
     effectivity = 1,
     burns_fluid = true,
-    fluid_usage_per_tick = 0.5,
+    fluid_usage_per_tick = 0.5 / 60,
     emissions_per_minute = {pollution = 0.25},
     fluid_box =
     {
