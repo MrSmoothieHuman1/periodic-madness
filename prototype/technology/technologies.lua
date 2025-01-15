@@ -4279,7 +4279,7 @@ data:extend({
       PM.unlock_recipe("pm-ferrous-waste-looping"),
       PM.unlock_recipe("pm-cupric-waste-looping"),
     },
-    prerequisites = {"pm-mixing-material-processing-2", "pm-byproduct-handling"},
+    prerequisites = {"pm-mixing-material-processing-1", "pm-byproduct-handling"},
     unit =
     {
       count = 125,
