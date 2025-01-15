@@ -7011,6 +7011,8 @@ data:extend({
     fast_replaceable_group = "pm-chemical-plant",
     module_slots = 4,
     allowed_effects = PM.all_effects(),
+    graphics_set = 
+    {
     animation = make_4way_animation_from_spritesheet({
       layers =
       {
@@ -7035,6 +7037,7 @@ data:extend({
         }
       }
     }),
+  },
     working_visualisations =
     {
       {

@@ -514,7 +514,7 @@ AcidPlant.graphics_set.animation = make_4way_animation_from_spritesheet({ layers
     scale = 0.5
   },
   {
-    filename = "__base__/graphics/entity/chemical-plant/hr-chemical-plant-shadow.png",
+    filename = "__base__/graphics/entity/chemical-plant/chemical-plant-shadow.png",
     width = 312,
     height = 222,
     repeat_count = 24,
