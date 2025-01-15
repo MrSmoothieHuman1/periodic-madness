@@ -502,7 +502,7 @@ AcidPlant.crafting_categories = {"pm-acids"}
 AcidPlant.minable = {mining_time = 0.1, result = "pm-acid-plant"}
 AcidPlant.module_slots = 3
 AcidPlant.icon = "__periodic-madness__/graphics/icons/buildings/acid-plant.png"
-AcidPlant.animation = make_4way_animation_from_spritesheet({ layers =
+AcidPlant.graphics_set.animation = make_4way_animation_from_spritesheet({ layers =
 {
   {
     filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/acid-plant.png",
