@@ -12,12 +12,13 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("wood", 5),
+      PM.ingredient("stone", 8),
       PM.ingredient("water", 20, "fluid"),
       PM.ingredient("pm-oxygen-gas", 10, "fluid")
     },
     results = 
     {
-      PM.product_range("wood", 5, 8)
+      PM.product_range("wood", 5, 7)
     }
   },
   {
