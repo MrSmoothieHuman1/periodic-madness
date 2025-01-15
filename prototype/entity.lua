@@ -7037,7 +7037,6 @@ data:extend({
         }
       }
     }),
-  },
     working_visualisations =
     {
       {
@@ -7169,6 +7168,7 @@ data:extend({
         }
       }
     },
+  },
     impact_category = "metal-large",
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
