@@ -266,6 +266,112 @@ data:extend({
       PM.product_range("sulfur", 7, 12),
       PM.product_range_chance("pm-ferrum", 2, 4, 0.12)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-ferrous-waste-water",
+    category = "pm-mixing",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-ferrum", 12),
+      PM.ingredient("pm-sodium-hydroxide", 4, "fluid"),
+      PM.ingredient("water", 20, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-ferrous-waste-water", 15, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cupric-waste-water",
+    category = "pm-mixing",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-patina", 12),
+      PM.ingredient("pm-sodium-hydroxide", 4, "fluid"),
+      PM.ingredient("water", 20, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-cupric-waste-water", 15, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ferrous-waste-seperation",
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-cupric-waste-water", 10, "fluid"),
+    },
+    results = 
+    {
+      PM.product_range_chance("pm-manganese-ore", 0, 3, 0.75),
+      PM.product_range_chance("pm-iron-ore", 0, 5, 0.8),
+      PM.product_range_chance("pm-titanium-ore", 0, 3, 0.66),
+      PM.product_range_chance("pm-lead-ore", 0, 4, 0.4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cupric-waste-seperation",
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = 
+    {
+      PM.ingredient("pm-cupric-waste-water", 10, "fluid"),
+    },
+    results = 
+    {
+      PM.product_range_chance("pm-gold-ore", 0, 3, 0.75),
+      PM.product_range_chance("pm-copper-ore", 0, 5, 0.8),
+      PM.product_range_chance("pm-palladium-ore", 0, 3, 0.66),
+      PM.product_range_chance("pm-platinum-ore", 0, 4, 0.5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ferrous-waste-looping",
+    category = "pm-mixing",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-ferrous-waste-water", 15, "fluid"),
+      PM.ingredient("water", 15, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("water", 15, 25, "fluid"),
+      PM.product_range_chance("pm-ferrum", 0, 4, 0.25)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cupric-waste-looping",
+    category = "pm-mixing",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-cupric-waste-water", 15, "fluid"),
+      PM.ingredient("water", 15, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("water", 15, 25, "fluid"),
+      PM.product_range_chance("pm-patina", 0, 4, 0.25)
+    }
+  },
 
 } --[[@as data.RecipePrototype[] ]])
