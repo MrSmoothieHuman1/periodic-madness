@@ -5617,6 +5617,7 @@ data:extend({
           height = 448,
           line_length = 6,
           frame_count = 24,
+          scale = 0.5,
         },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
