@@ -2441,7 +2441,7 @@ data:extend({
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      destroy_non_fuel_fluid = true,
+      fluid_usage_per_tick = 1,
       emissions_per_minute = {pollution = 2},
       fluid_box =
       {
@@ -2633,7 +2633,7 @@ data:extend({
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      destroy_non_fuel_fluid = true,
+      fluid_usage_per_tick = 0.5,
       emissions_per_minute = {pollution = 1},
       fluid_box =
       {
@@ -2667,7 +2667,7 @@ data:extend({
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      destroy_non_fuel_fluid = true,
+      fluid_usage_per_tick = 1,
       emissions_per_minute = {pollution = 2},
       fluid_box =
       {
@@ -5518,7 +5518,7 @@ data:extend({
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      destroy_non_fuel_fluid = true,
+      fluid_usage_per_tick = 1,
       fluid_box =
       {
         production_type = "input",
@@ -8935,14 +8935,14 @@ data:extend({
     type = "fluid",
     effectivity = 1,
     burns_fluid = true,
-    destroy_non_fuel_fluid = true,
+    fluid_usage_per_tick = 0.5,
     emissions_per_minute = {pollution = 0.25},
     fluid_box =
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      filter = "pm-coolant",
+      filter = "pm-light-coolant",
       pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0.5, -0.5}}},
     },
   },
