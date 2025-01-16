@@ -18,6 +18,8 @@ Date: 2024-12-08
     - Added another intermediate to vacuum tubes, a vacuum tube getter - which takes caesium, rubidium, tungsten and zirconina.
     - Added a way to make bismite with flux, because i got rid of the original recipe which took flux.
     - Added a new way to deal with ferrum and patina unlocked at A-ATM science, allowing you to make waste water which can be seperated into some ores or just looped away.
+    - Continuing to rerender and model ores and other things.
+    - Finally made the patina recipe unlockable at advanced byproduct handling.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
