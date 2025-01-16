@@ -2143,7 +2143,8 @@ data:extend({
       PM.unlock_recipe("pm-chromic-ferrum-leeching"),
       PM.unlock_recipe("pm-chromic-patina-leeching"),
       PM.unlock_recipe("pm-cobaltite-seperation"),
-      PM.unlock_recipe("pm-ferrum")
+      PM.unlock_recipe("pm-ferrum"),
+      PM.unlock_recipe("pm-patina")
     },
     prerequisites = {"pm-byproduct-handling", "pm-post-transition-metal-pack-unlock"},
     unit =
