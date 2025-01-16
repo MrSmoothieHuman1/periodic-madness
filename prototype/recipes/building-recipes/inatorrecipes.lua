@@ -1985,16 +1985,16 @@ data:extend({
   {
     type = "recipe",
     name = "pm-butene-voiding",
-    icon_size = 128,
+    icon_size = 64,
     icons =
     {
       {
         icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
-        icon_size = 128,
+        icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh uh.png",
-        icon_size = 128,
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
       },
     },
     subgroup = "pm-voiding",
@@ -2010,16 +2010,16 @@ data:extend({
   {
     type = "recipe",
     name = "pm-butane-voiding",
-    icon_size = 128,
+    icon_size = 64,
     icons =
     {
       {
         icon = "__periodic-madness__/graphics/icons/fluids/butane-gas.png",
-        icon_size = 128,
+        icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh uh.png",
-        icon_size = 128,
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
       },
     },
     subgroup = "pm-voiding",

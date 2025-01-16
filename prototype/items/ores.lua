@@ -277,8 +277,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png",   size = 64, scale = 0.26 },
-      {filename = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon-2.png", size = 64, scale = 0.24 + 0.01 }
+      {filename = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-thallium-ptm",
     order = "c",
@@ -296,13 +296,13 @@ data:extend({
   {
     type = "item",
     name = "pm-bismuth-ore",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bismuth-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-1.png", size = 128, scale = 0.126, mipmap_count = 4 },
-      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-2.png", size = 128, scale = 0.126, mipmap_count = 4 },
-      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-3.png", size = 128, scale = 0.126, mipmap_count = 4 },
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-1.png", size = 64, scale = 0.26},
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-2.png", size = 64, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-3.png", size = 64, scale = 0.26}
     },
     subgroup = "pm-bismuth-ptm",
     order = "c",
@@ -313,6 +313,13 @@ data:extend({
     name = "pm-indium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/indium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-indium-ptm",
     order = "b",
     stack_size = 200

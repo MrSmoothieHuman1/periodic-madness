@@ -166,7 +166,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-butane-gas",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/butane-gas.png",
     default_temperature = 15,
     base_color = {r = 1, g = 1, b = 1 },
@@ -175,7 +175,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-butene-gas",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
     default_temperature = 15,
     base_color = {r = 0.7, g = 0.7, b = 0.7},
