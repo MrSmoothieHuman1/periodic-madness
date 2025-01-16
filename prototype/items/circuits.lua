@@ -42,8 +42,13 @@ data:extend({
   {
     type = "item",
     name = "pm-transistors",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/transistors.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/transistors.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/transistors-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-circuits",
     order = "e",
     stack_size = 500
