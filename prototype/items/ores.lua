@@ -300,9 +300,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/bismuth-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-1.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-3.png", size = 64, scale = 0.5}
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth.png", size = 64, scale = 0.5, mipmap_count = 4},
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-2.png", size = 64, scale = 0.5, mipmap_count = 4},
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-3.png", size = 64, scale = 0.5, mipmap_count = 4}
     },
     subgroup = "pm-bismuth-ptm",
     order = "c",
