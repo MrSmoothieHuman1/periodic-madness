@@ -3766,6 +3766,8 @@ data:extend({
     results = 
     {
       PM.product("pm-polydimethylsiloxane", 8, "fluid"),
+      PM.catalyst_range_chance("pm-cobalt-catalyst", 2, 3, 0.8, 2),
+      PM.product_range_chance("pm-catalyst-container", 0, 1, 0.2),
       PM.product_range("pm-hydrochloric-acid", 8, 12, "fluid")
     }
   },
