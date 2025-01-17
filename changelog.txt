@@ -40,7 +40,8 @@ Date: 2024-12-08
     - Changed any plates that come after P-TM science, to take 6.4s instead of the usual 3.2s.
     - Changed palladium catalysts to use plates, not ore.
     - Lowered the cost of worker robots speed 5 technology from 500 to 450.
-    - Changed the amount of electric engines needed for assembler 3's from 5 to 3.
+    - Changed the amount of electric engines needed for assembler 3's from 5 to 2.
+    - lowered the amount of radiation framing need in assembler 3's from 10 to 5.
     - Changed yellow inserters to take gears, changed blue inserters to take yellow inserters.
     - Added productivity to lithium hydroxide and oversaturated lithium leeching.
     - Revamped battery charging by lowering the stack size of batteries, adding a chance for it to not give a charged battery out and a way to fix said batteries.
@@ -54,6 +55,7 @@ Date: 2024-12-08
     - Changed RCU's to take 35 seconds, instead of 30 seconds.
     - Changed catalysts to actually act like catalysts - they now have a chance to spit themselves out, and catalyst containers. The monkey's finger curls.
     - Slightly lowered the amount of ferrum that is produced by most elements.
+    - Changed assembler 3's to take 1 coolant instead of cooling plating.
 
   Fixes:
     - Fixed the science pack item names captilisation.

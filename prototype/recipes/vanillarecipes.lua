@@ -167,11 +167,11 @@ data.raw["recipe"]["concrete"].ingredients =
 data.raw["recipe"]["assembling-machine-3"].ingredients =
 {
   PM.ingredient("assembling-machine-2", 1),
-  PM.ingredient("electric-engine-unit", 3),
+  PM.ingredient("electric-engine-unit", 2),
   PM.ingredient("processing-unit", 1),
-  PM.ingredient("pm-cooling-plating", 10),
+  PM.ingredient("pm-coolant", 1, "fluid"),
   PM.ingredient("pm-sapphire-laser-head", 1),
-  PM.ingredient("pm-radiation-resistant-panelling", 10)
+  PM.ingredient("pm-radiation-resistant-panelling", 5)
 }
 data.raw["recipe"]["oil-refinery"].ingredients =
 {
