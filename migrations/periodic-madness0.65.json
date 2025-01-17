@@ -38,6 +38,7 @@
        ["pm-rubber-resin-cooling", "pm-rubber"],
        ["pm-rubidium-alum-seperation", "pm-rubidium"],
        ["pm-bismuth-crystallisation", "pm-bismuth-ore"],
-       ["pm-hydrogen-iodide-seperation", "pm-iodine"]
+       ["pm-hydrogen-iodide-seperation", "pm-iodine"],
+       ["pm-coal-crushing", "pm-carbon"]
     ]
 }

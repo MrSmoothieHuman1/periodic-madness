@@ -106,6 +106,7 @@ data:extend({
     order = "b",
     energy_required = 3.2,
     allow_productivity = true,
+    enabled = false,
     ingredients = { PM.ingredient("pm-sand", 4) },
     results = {
       PM.product("pm-glass-pane", 1)

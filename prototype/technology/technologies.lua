@@ -4254,7 +4254,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/glass-pane.png",
     effects = 
     {
-      PM.unlock_recipe("pm-coal-crushing"),
+      PM.unlock_recipe("pm-carbon"),
       PM.unlock_recipe("pm-sand"),
       PM.unlock_recipe("pm-glass-pane")
     },
