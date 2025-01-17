@@ -25,8 +25,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",   size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon-1.png", size = 64, scale = 0.5}
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-nickel-tm",
     order = "b",
@@ -56,7 +58,9 @@ data:extend({
     pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-2.png",    size = 64, scale = 0.266 }
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-zinc-tm",
     order = "b",
@@ -289,6 +293,11 @@ data:extend({
     name = "pm-arsenic-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/arsenic-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/arsenic-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/arsenic-ore-icon-2.png", size = 64, scale = 0.5}
+    },
     subgroup = "pm-lead-ptm",
     order = "d",
     stack_size = 200
