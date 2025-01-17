@@ -1116,7 +1116,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-catalyst-container", 1),
+      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.9, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.1, 1),
       PM.product("pm-trace-acetonitrile", 10, "fluid"),
     }
   },
@@ -1179,7 +1180,8 @@ data:extend({
     results =
     {
       PM.product("pm-common-myostatin", 10, "fluid"),
-      PM.product_range("pm-catalyst-container", 2, 5)
+      PM.product_range_chance("pm-vanadium-oxide-catalyst", 3, 5, 0.66),
+      PM.product_range_chance("pm-catalyst-container", 0, 2, 0.33)
     }
   },
   {
@@ -1686,7 +1688,8 @@ data:extend({
     {
       PM.product("pm-methanol", 10, "fluid"),
       PM.product("water", 10, "fluid"),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.98, 1)
+      PM.catalyst_chance("pm-copper-zinc-aluminium-catalyst", 1, 0.95, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.05, 1)
     }
   },
   {
@@ -1708,7 +1711,8 @@ data:extend({
     results =
     {
       PM.product("pm-methyl-methacrylate", 15, "fluid"),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.98, 1)
+      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.8, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.2, 1)
     }
   },
   {
@@ -1806,7 +1810,8 @@ data:extend({
     {
       PM.product_range("pm-chloroform", 6, 8, "fluid"),
       PM.product_range("pm-carbon-tetrachloride", 2, 6, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 2)
+      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 1, 2, 0.75, 1),
+      PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.25, 1)
     }
   },
   {

@@ -77,7 +77,8 @@ data:extend({
     results =
     {
       PM.product_range("pm-impure-arsenic", 2, 6),
-      PM.product_range("pm-catalyst-container", 1, 2),
+      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 1, 2, 0.8, 2),
+      PM.product_range_chance("pm-catalyst-container", 0, 1, 0.2),
     }
   } --[[@as data.RecipePrototype]],
   {

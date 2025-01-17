@@ -110,7 +110,8 @@ data:extend({
     results =
     {
       PM.product("pm-ethylolamine", 10, "fluid"),
-      PM.catalyst_range("pm-catalyst-container", 1, 3, 3)
+      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 2, 3, 0.75, 3),
+      PM.catalyst_range_chance("pm-catalyst-container", 1, 3, 0.25, 3)
     }
   } --[[@as data.RecipePrototype]],
   {

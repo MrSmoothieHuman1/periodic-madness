@@ -43,7 +43,8 @@ data:extend({
     {
       PM.product("pm-bromine-ions", 8, "fluid"),
       PM.product("pm-hydrogen-gas", 8, "fluid"),
-      PM.catalyst_range("pm-catalyst-container", 1, 2, 2)
+      PM.catalyst_range_chance("pm-palladium-catalyst", 1, 2, 0.85, 2),
+      PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.15, 2)
     }
   } --[[@as data.RecipePrototype]],
   {

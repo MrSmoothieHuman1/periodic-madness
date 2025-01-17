@@ -204,7 +204,8 @@ data:extend({
         {
             PM.product_range("pm-trichlorosilane", 4, 8, "fluid"),
             PM.product_range("pm-dichlorosilane", 2, 4, "fluid"),
-            PM.catalyst_range("pm-catalyst-container", 1, 2, 2)
+            PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 1, 2, 0.85, 2),
+            PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.15, 2)
         }
     },
     {

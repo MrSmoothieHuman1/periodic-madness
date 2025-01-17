@@ -21,7 +21,8 @@ data:extend({
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
       PM.product_range("water", 1.2, 2, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 2)
+      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 2),
+      PM.product_chance("pm-catalyst-container", 2, 0.15)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -44,7 +45,8 @@ data:extend({
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
       PM.product_range("water", 1.2, 2, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 2)
+      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 2),
+      PM.product_chance("pm-catalyst-container", 2, 0.15)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -67,7 +69,8 @@ data:extend({
     {
       PM.product("sulfuric-acid", 15, "fluid"),
       PM.product("sulfur", 2),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.9, 1)
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.66, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.33, 1)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -89,7 +92,8 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 20, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 3)
+      PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.85, 3),
+      PM.catalyst_range("pm-catalyst-container", 3, 0.15, 3)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -113,7 +117,8 @@ data:extend({
     {
       PM.product("pm-sulfur-trioxide", 10, "fluid"),
       PM.product_range_chance("pm-oxygen-gas", 5, 10, 0.5, "fluid"),
-      PM.product_range("pm-catalyst-container", 1, 3)
+      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 2, 3, 0.8, 3),
+      PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.2, 1)
     }
   } --[[@as data.RecipePrototype]],
   {

@@ -242,7 +242,8 @@ data:extend({
     results =
     {
       PM.product("pm-plastic-pellets", 12),
-      PM.product_chance("pm-catalyst-container", 1, 0.98)
+      PM.catalyst_chance("pm-yttrium-catalyst", 1, 0.95, 1),
+      PM.product_chance("pm-catalyst-container", 1, 0.02)
     }
   },
 
@@ -469,7 +470,8 @@ data:extend({
     results =
     {
       PM.product_range("pm-hydrogen-gas", 4, 6, "fluid"),
-      PM.product_chance("pm-catalyst-container", 1, 0.9),
+      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.8, 1),
+      PM.product_chance("pm-catalyst-container", 1, 0.2),
       PM.product_range_chance("pm-palladium-hydride", 1, 3, 0.5),
       PM.product_range("pm-butane-gas", 20, 30, "fluid")
     }
