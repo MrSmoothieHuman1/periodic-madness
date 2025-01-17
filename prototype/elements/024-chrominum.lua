@@ -90,7 +90,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-chrominum-ore", 2, 4),
-      PM.product_chance("pm-ferrum", 2, 0.8)
+      PM.product_chance("pm-ferrum", 2, 0.75)
     }
   } --[[@as data.RecipePrototype]],
   {

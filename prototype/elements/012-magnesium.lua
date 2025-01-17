@@ -104,7 +104,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-magnesium-oxide", 4),
-            PM.ingredient("pm-stainless-steel-alloy", 15),
+            PM.ingredient("pm-stainless-steel-alloy", 12),
         },
         results = 
         {

@@ -123,7 +123,7 @@ data:extend({
     {
       PM.product("pm-titanium-ore", 4),
       PM.product("pm-chlorine", 5, "fluid"),
-      PM.product_range("pm-ferrum", 1, 4)
+      PM.product_range("pm-ferrum", 0, 3)
     }
   } --[[@as data.RecipePrototype]],
   --titanium plate is order f

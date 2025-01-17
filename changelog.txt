@@ -53,6 +53,7 @@ Date: 2024-12-08
     - Deleted oscilliscopes and merged them into RCU's, since there was no use for them being their own thing.
     - Changed RCU's to take 35 seconds, instead of 30 seconds.
     - Changed catalysts to actually act like catalysts - they now have a chance to spit themselves out, and catalyst containers. The monkey's finger curls.
+    - Slightly lowered the amount of ferrum that is produced by most elements.
 
   Fixes:
     - Fixed the science pack item names captilisation.

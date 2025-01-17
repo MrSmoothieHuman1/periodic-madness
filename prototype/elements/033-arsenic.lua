@@ -98,7 +98,7 @@ data:extend({
     results =
     {
       PM.product("pm-arsenic-oxide", 6),
-      PM.product_range("pm-ferrum", 2, 4),
+      PM.product_range("pm-ferrum", 1, 4),
       PM.product_range("pm-impure-lead", 1, 5),
 
     }

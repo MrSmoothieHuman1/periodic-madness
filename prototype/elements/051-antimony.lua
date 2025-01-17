@@ -106,7 +106,7 @@ data:extend({
         {
             PM.product_range("pm-crude-antimony-sulfide", 2, 5),
             PM.product_range_chance("pm-lead-powder", 0, 4, 0.56),
-            PM.product_chance("pm-ferrum", 3, 0.7)
+            PM.product_chance("pm-ferrum", 3, 0.66)
         }
     },
     {
@@ -150,7 +150,7 @@ data:extend({
         {
             PM.product("pm-antimony-sulfide", 8),
             PM.catalyst_range("pm-vanadium-oxide-catalyst", 2, 0.75, 2),
-            PM.product_range_chance("pm-catalyst-container", 1, 2, 0.25, 2)
+            PM.product_range_chance("pm-catalyst-container", 1, 2, 0.25)
         }
     },
     {
