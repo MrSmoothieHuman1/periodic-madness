@@ -166,7 +166,7 @@ data:extend({
     },
     results =
     {
-      PM.ingredient("pm-titanium-sapphire", 2)
+      PM.product("pm-titanium-sapphire", 2)
     }
   },
   {
@@ -350,7 +350,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-iron-melting",
+    name = "pm-molten-iron",
     icon_size = 64,
     icons =
     {
@@ -385,7 +385,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-copper-melting",
+    name = "pm-molten-copper",
     icon_size = 64,
     icons =
     {
@@ -420,7 +420,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-nickel-melting",
+    name = "pm-molten-nickel",
     icon_size = 64,
     icons =
     {
@@ -455,7 +455,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-zinc-melting",
+    name = "pm-molten-zinc",
     icon_size = 64,
     icons =
     {
@@ -490,7 +490,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-manganese-melting",
+    name = "pm-molten-manganese",
     icon_size = 64,
     icons =
     {
@@ -525,7 +525,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-gold-melting",
+    name = "pm-molten-gold",
     icon_size = 64,
     icons =
     {
@@ -560,7 +560,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-silver-melting",
+    name = "pm-molten-silver",
     icon_size = 64,
     icons =
     {
@@ -595,7 +595,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-tin-melting",
+    name = "pm-molten-tin",
     icon_size = 64,
     icons =
     {
@@ -630,7 +630,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-titanium-melting",
+    name = "pm-molten-titanium",
     icon_size = 64,
     icons =
     {
@@ -665,7 +665,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-tungsten-melting",
+    name = "pm-molten-tungsten",
     icon_size = 64,
     icons =
     {
@@ -700,7 +700,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-cadnium-melting",
+    name = "pm-molten-cadnium",
     icon_size = 64,
     icons =
     {
@@ -737,7 +737,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-aluminium-melting",
+    name = "pm-molten-aluminium",
     icon_size = 64,
     icons =
     {
@@ -772,7 +772,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-platinum-melting",
+    name = "pm-molten-platinum",
     icon_size = 64,
     icons =
     {
@@ -807,7 +807,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-glass-melting",
+    name = "pm-molten-glass",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/glass-melting.png",
     subgroup = "pm-glassing",
@@ -829,7 +829,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-lead-melting",
+    name = "pm-molten-lead",
     icon_size = 64,
     icons =
     {
@@ -864,7 +864,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-thallium-melting",
+    name = "pm-molten-thallium",
     icon_size = 64,
     icons =
     {
@@ -899,7 +899,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-indium-melting",
+    name = "pm-molten-indium",
     icon_size = 64,
     icons =
     {
@@ -934,7 +934,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-cobalt-melting",
+    name = "pm-molten-cobalt",
     icon_size = 64,
     icons =
     {
@@ -969,7 +969,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-palladium-melting",
+    name = "pm-molten-palladium",
     icon_size = 64,
     icons =
     {
