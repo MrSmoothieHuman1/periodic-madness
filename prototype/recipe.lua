@@ -19,7 +19,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-coal-crushing",
+    name = "pm-carbon",
     category = "pm-crushing",
     enabled = false,
     allow_productivity = true,
