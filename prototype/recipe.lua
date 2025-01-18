@@ -1655,7 +1655,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-copper-zinc-aluminium-catalyst",
-    energy_required = 4,
+    energy_required = 3,
     enabled = false,
     subgroup = "pm-catalysts",
     order = "ea",
