@@ -164,6 +164,7 @@ data.raw["recipe"]["concrete"].ingredients =
   PM.ingredient("stone-brick", 5),
   PM.ingredient("water", 100, "fluid")
 }
+data.raw["recipe"]["assembling-machine-3"].category = "crafting-with-fluid"
 data.raw["recipe"]["assembling-machine-3"].ingredients =
 {
   PM.ingredient("assembling-machine-2", 1),
