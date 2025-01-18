@@ -39,6 +39,23 @@
        ["pm-rubidium-alum-seperation", "pm-rubidium"],
        ["pm-bismuth-crystallisation", "pm-bismuth-ore"],
        ["pm-hydrogen-iodide-seperation", "pm-iodine"],
-       ["pm-coal-crushing", "pm-carbon"]
+       ["pm-coal-crushing", "pm-carbon"],
+       ["pm-iron-melting", "pm-molten-iron"],
+       ["pm-copper-melting", "pm-molten-copper"],
+       ["pm-zinc-melting", "pm-molten-zinc"],
+       ["pm-nickel-melting", "pm-molten-nickel"],
+       ["pm-manganese-melting", "pm-molten-manganese"],
+       ["pm-titanium-melting", "pm-molten-titanium"],
+       ["pm-tunsgten-melting", "pm-molten-tunsgten"],
+       ["pm-cadnium-melting", "pm-molten-cadnium"],
+       ["pm-palladium-melting", "pm-molten-palladium"],
+       ["pm-platinum-melting", "pm-molten-platinum"],
+       ["pm-tin-melting", "pm-molten-tin"],
+       ["pm-glass-melting", "pm-molten-glass"],
+       ["pm-aluminium-melting", "pm-molten-aluminium"],
+       ["pm-lead-melting", "pm-molten-lead"],
+       ["pm-indium-melting", "pm-molten-indium"],
+       ["pm-thallium-melting", "pm-molten-thallium"],
+       ["pm-cobalt-melting", "pm-molten-cobalt"]
     ]
 }
