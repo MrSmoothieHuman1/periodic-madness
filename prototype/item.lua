@@ -646,6 +646,8 @@ data:extend({
     name = "pm-zirconium-pants",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/zirconium-pants.png",
+    hidden = true,
+    hidden_from_factoriopedia = true,
     subgroup = "pm-zirconium-tm",
     order = "x",
     stack_size = 344
