@@ -1379,10 +1379,12 @@ data:extend({
     {
       PM.ingredient("pm-ethylene-gas", 12, "fluid"),
       PM.ingredient("water", 24, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 2)
+      PM.ingredient("pm-palladium-catalyst", 1)
     },
     results =
     {
+      PM.product_chance("pm-palladium-catalyst", 1, 0.85),
+      PM.product_chance("pm-catalyst-container", 1, 0.15),
       PM.product("pm-ethylene-glycol", 10, "fluid"),
     }
   },
