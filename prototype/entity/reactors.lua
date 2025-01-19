@@ -131,3 +131,229 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"],
     }
   }--[[@as data.FluidBox]]
 )
+
+data:extend({
+  coolant_reactor{ --MARK: Polonium Reactor
+    type = "reactor",
+    name = "pm-polonium-reactor",
+    icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+    icon_size = 128,
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.7, result = "pm-polonium-reactor" },
+    max_health = 250,
+    corpse = "nuclear-reactor-remnants",
+    dying_explosion  = "nuclear-reactor-explosion",
+    consumption = "50MW",
+    neighbour_bonus = 0.25,
+    energy_source =
+    {
+      type = "burner",
+      fuel_categories = {"pm-polonium"},
+      effectivity = 1,
+      fuel_inventory_size = 1,
+      burnt_inventory_size = 1,
+      emissions_per_minute = {pollution = 15},
+      light_flicker =
+      {
+        color = { 0, 0, 0 },
+        minimum_intensity = 0.7,
+        maximum_intensity = 0.95
+      }
+    },
+    coolant_life = 10,
+    coolant_categories = {"pm-reactor-coolant-burning"},
+    coolant_fluid_box =
+    {
+      production_type = "input",
+      volume = 100,
+      pipe_connections = {
+        {
+          flow_direction = "input",
+          direction = defines.direction.north--[[@as int]],
+          position = {0, -2}
+        }
+      }
+    },
+    collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
+    selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+    lower_layer_picture =
+    {
+      filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
+      width = 320,
+      height = 316,
+      scale = 0.5,
+      shift = util.by_pixel(-1, -5)
+    },
+    heat_lower_layer_picture = apply_heat_pipe_glow{
+			filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png",
+			width = 320,
+			height = 316,
+			scale = 0.5,
+			shift = util.by_pixel(-0.5, -4.5)
+		},
+    picture =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+          width = 320,
+          height = 320,
+          line_length = 6,
+          frame_count = 24,
+          scale = 0.5,
+          shift = util.by_pixel(-5, -7)
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+          width = 320,
+          height = 320,
+          line_length = 1,
+          frame_count = 1,
+          repeat_count = 24,
+          scale = 0.5,
+          shift = { 1.625, 0 },
+          draw_as_shadow = true
+        }
+      }
+    },
+    heat_buffer =
+    {
+      max_temperature = 2500,
+      specific_heat = "10MJ",
+      max_transfer = "10GW",
+      minimum_glow_temperature = 500,
+      connections =
+      {
+        {
+          position = { -2, -2 },
+          direction = defines.direction.north --[[@as int]]
+        },
+        {
+          position = { 0, -2 },
+          direction = defines.direction.north --[[@as int]]
+        },
+        {
+          position = { 2, -2 },
+          direction = defines.direction.north --[[@as int]]
+        },
+        {
+          position = { 2, -2 },
+          direction = defines.direction.east --[[@as int]]
+        },
+        {
+          position = { 2, 0 },
+          direction = defines.direction.east --[[@as int]]
+        },
+        {
+          position = { 2, 2 },
+          direction = defines.direction.east --[[@as int]]
+        },
+        {
+          position = { 2, 2 },
+          direction = defines.direction.south --[[@as int]]
+        },
+        {
+          position = { 0, 2 },
+          direction = defines.direction.south --[[@as int]]
+        },
+        {
+          position = { -2, 2 },
+          direction = defines.direction.south --[[@as int]]
+        },
+        {
+          position = { -2, 2 },
+          direction = defines.direction.west --[[@as int]]
+        },
+        {
+          position = { -2, 0 },
+          direction = defines.direction.west --[[@as int]]
+        },
+        {
+          position = { -2, -2 },
+          direction = defines.direction.west --[[@as int]]
+        }
+      },
+      connection_patches_connected =
+      {
+        sheet =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+          width = 64,
+          height = 64,
+          variation_count = 12,
+          scale = 0.5
+        }
+      },
+
+      connection_patches_disconnected =
+      {
+        sheet =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+          width = 64,
+          height = 64,
+          variation_count = 12,
+          y = 64,
+          scale = 0.5
+        }
+      },
+
+      heat_connection_patches_connected =
+      {
+        sheet = apply_heat_pipe_glow{
+					filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+					width = 64,
+					height = 64,
+					variation_count = 12,
+					scale = 0.5
+				}
+      },
+
+      heat_connection_patches_disconnected =
+      {
+        sheet = apply_heat_pipe_glow{
+					filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+					width = 64,
+					height = 64,
+					variation_count = 12,
+					y = 64,
+					scale = 0.5
+				}
+      },
+      working_sound =
+      {
+        sound =
+        {
+          {
+            filename = "__base__/sound/nuclear-reactor-1.ogg",
+            volume = 0.55
+          },
+          {
+            filename = "__base__/sound/nuclear-reactor-2.ogg",
+            volume = 0.55
+          }
+        },
+        max_sounds_per_type = 3,
+        fade_in_ticks = 4,
+        fade_out_ticks = 20
+      },
+
+      meltdown_action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
+            {
+              type = "create-entity",
+              entity_name = "atomic-rocket"
+            }
+          }
+        }
+      }
+    },
+  },
+}--[[@as data.ReactorPrototype[] ]])
