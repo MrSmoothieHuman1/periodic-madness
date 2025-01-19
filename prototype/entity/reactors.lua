@@ -68,8 +68,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 
   ---Because we need lots of connections to allow for faster fluid transfer
   ---@type data.PipeConnectionDefinition[],data.PipeConnectionDefinition[]
-  local input_connections, output_connections = {},{}
-  for i = 1, 10, 1 do
+  local input_connections, output_connections, index = {},{}, 10
+  for i = 1, index, 1 do
     input_connections[i] = {
       flow_direction = "input",
       connection_type = "linked",
@@ -80,6 +80,19 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
       connection_type = "linked",
       linked_connection_id = i,
     }
+  end
+
+  -- Add the coolant inputs to the heat input
+  -- So they visually appear while placing
+  for _, connection in pairs(coolant_fluidbox.pipe_connections) do
+    -- Ignore the non-visual connections
+    if connection.connection_type ~= "linked" then
+      connection = util.copy(connection)
+      index = index + 1
+      input_connections[index] = connection
+      
+      connection.connection_category = "null-category-fuck-off" -- Don't *actually* connect to anything
+    end
   end
 
   --MARK: Reactor Furnace
