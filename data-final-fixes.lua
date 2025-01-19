@@ -11,23 +11,22 @@ data:extend{
 		name = "pm-water-coolant-burn",
 		auto_recycle = false,
 		category = "pm-reactor-coolant-burning",
-		-- We want the contents of the recipe to be how much fluid it takes to cool it for 1kJ
-		-- That means the 'time' of the recipe needs to be 1 second
+		-- We want the contents of the recipe to be how much fluid it takes to cool it for 50kJ
+		-- That means the 'time' of the recipe needs to 1s for each liquid heat it produces
 
-		-- And because of the sheer quantity of energy a reactor puts off,
-		-- we want coolant to be able to cool *at least* 10kJ per unit of fluid
-		-- But that's *super* thirsty (like 100/s for 1MW)
+		-- If a granularity of 50kJ isn't enough, change
+		-- the fluid fuel value and divider of the consumption
 
-		-- I just checked and it consumes
-		--	4000/s for 40MW when it's 10x
-		--	400/s for 40MW when it's 100x
-		-- 	80/s for 40MW when it's 500x
-		energy_required = 100,
+		-- With 50kJ, it's
+		--	80/s for 40MW when it's 10x
+		--	8/s for 40MW when it's 100x
+		-- 	1.6/s for 40MW when it's 500x
+		energy_required = 10,
 		ingredients = {
 			PM.ingredient("water", 1, "fluid")
 		},
 		results = {
-			PM.product("pm-liquid-heat", 100, "fluid")
+			PM.product("pm-liquid-heat", 10, "fluid")
 		}
 	}--[[@as data.RecipePrototype]],
 }

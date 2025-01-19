@@ -1706,7 +1706,7 @@ data:extend({
 		base_color = {1,0,0},
 		flow_color = {1,0,0},
 		default_temperature = 15,
-		fuel_value = "1kJ",
+		fuel_value = "50kJ",
 	},
 }--[[@as data.FluidPrototype[] ]])
 

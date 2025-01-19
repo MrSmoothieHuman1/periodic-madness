@@ -85,7 +85,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     -- Coolant consumption
     -- Every recipe needs to output 1kJ per second of craft time
     -- Anything different, and the coolant is affecting the efficiency of the fuel
-    crafting_speed = util.parse_energy(reactor.consumption)/1000*60,
+    crafting_speed = util.parse_energy(reactor.consumption)/50000*60,
 
     -- Make reactor start exploding
     max_health = coolant_life,
