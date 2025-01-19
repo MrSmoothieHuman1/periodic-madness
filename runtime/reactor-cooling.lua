@@ -78,20 +78,35 @@ events[defines.events.on_gui_opened] = function (event)
 	player.opened = reactor_info.furnace
 end
 
---MARK: uncoolanting
+--MARK: non-cooling
 
 script_triggers["pm-cooled-reactor-died"] = function (event)
-	game.print("Whoops")
+	-- game.print("Whoops... ".. event.source_entity.gps_tag)
+	local furnace = event.source_entity
+	if not furnace then error("The source entity for 'pm-cooled-reactor-died' was somehow nil") end
+	local reactor_info = storage.reactors[furnace.unit_number--[[@as int]]]
+	reactor_info.reactor.die()
+
+	-- Alert people of the reactor meltdown
+	for _, player in pairs(furnace.force.players) do -- TODO: Get a better icon than signal-skull
+		player.add_custom_alert(furnace, {type="virtual", name="signal-skull"}, {"pm-alerts.reactor-meltdown"}, true)
+	end
 end
+
 script_triggers["pm-cooled-reactor-hurt"] = function (event)
 	local furnace = event.source_entity
 	if not furnace then error("The source entity for 'pm-cooled-reactor-hurt' was somehow nil") end
-
 
 	-- If there's no heat and nothing in the output, it shouldn't be dying right now
 	if furnace.burner.heat == 0
 	and furnace.get_fluid_count("pm-liquid-heat") then
 		furnace.health = furnace.health + 1/60
+		return
+	end
+
+	-- Otherwise, alert
+	for _, player in pairs(furnace.force.players) do -- TODO: Get a better icon than signal-skull
+		player.add_custom_alert(furnace, {type="virtual", name="signal-skull"}, {"pm-alerts.reactor-melting-down"}, true)
 	end
 end
 
