@@ -7,10 +7,6 @@ require("compatibility.colour-theory-circuits")
 local PM = require("library")
 data:extend{
 	{
-		type = "recipe-category",
-		name = "pm-reactor-coolant-burning",
-	}--[[@as data.RecipeCategory]],
-	{
 		type = "recipe",
 		name = "pm-water-coolant-burn",
 		auto_recycle = false,
@@ -34,15 +30,4 @@ data:extend{
 			PM.product("pm-liquid-heat", 100, "fluid")
 		}
 	}--[[@as data.RecipePrototype]],
-	{
-		type = "fluid",
-		name = "pm-liquid-heat",
-		icon = "__core__/graphics/icons/unknown.png",
-		hidden = true,
-		auto_barrel = false,
-		base_color = {1,0,0},
-		flow_color = {1,0,0},
-		default_temperature = 15,
-		fuel_value = "1kJ",
-	}--[[@as data.FluidPrototype]]
 }

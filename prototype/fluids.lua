@@ -1697,7 +1697,18 @@ data:extend({
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}
   },
-})
+	{
+		type = "fluid",
+		name = "pm-liquid-heat",
+		icon = "__core__/graphics/icons/unknown.png", -- FIXME: add an actual icon
+		hidden = true,
+		auto_barrel = false,
+		base_color = {1,0,0},
+		flow_color = {1,0,0},
+		default_temperature = 15,
+		fuel_value = "1kJ",
+	},
+}--[[@as data.FluidPrototype[] ]])
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
 data.raw["fluid"]["light-oil"].auto_barrel = false

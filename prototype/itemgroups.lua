@@ -1,6 +1,6 @@
 data:extend({
 
-  --categories
+  --MARK: Categories
 
   {
     type = "recipe-category",
@@ -122,9 +122,14 @@ data:extend({
     type = "recipe-category",
     name = "pm-mixing"
   },
+  -- For the consumption of reactor coolant
+	{
+		type = "recipe-category",
+		name = "pm-reactor-coolant-burning",
+	},
 
 
-  --groups
+  --MARK: Groups
   {
     type = "item-group",
     name = "pm-acids",
@@ -228,7 +233,7 @@ data:extend({
   },
 
 
-  --subgroups
+  --MARK: Subgroups
 
   {
     type = "item-subgroup",
