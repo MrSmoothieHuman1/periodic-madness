@@ -38,11 +38,29 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
     error("Given fluidbox is not a production_type of 'input': "..serpent.block(coolant_fluidbox))
   end
 
+  ---Because we need lots of connections to allow for faster fluid transfer
+  ---@type data.PipeConnectionDefinition[],data.PipeConnectionDefinition[]
+  local input_connections, output_connections = {},{}
+  for i = 1, 10, 1 do
+    input_connections[i] = {
+      flow_direction = "input",
+      connection_type = "linked",
+      linked_connection_id = i,
+    }
+    output_connections[i] = {
+      flow_direction = "output",
+      connection_type = "linked",
+      linked_connection_id = i,
+    }
+  end
+
   --MARK: Reactor Furnace
   -- Make the furnace that'll burn resources at the cost of coolant
   data:extend{{
     type = "furnace",
     name = reactor.name.."-coolant-furnace",
+    localised_name = reactor.localised_name or {"entity-name."..reactor.name},
+
     source_inventory_size = 0,
     result_inventory_size = 0,
     ignore_output_full = not reactor.scale_energy_usage,
@@ -54,11 +72,7 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
       {
         production_type = "output",
         volume = 1000,
-        pipe_connections = {{
-          flow_direction = "output",
-          connection_type = "linked",
-          linked_connection_id = 1
-        }}
+        pipe_connections = output_connections
       }
     }--[[@as data.FluidBox[] ]],
     collision_box = reactor.collision_box,
@@ -69,8 +83,9 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
     energy_source = reactor.energy_source,
 
     -- Coolant consumption
-    -- Every recipe needs to be 1kj and take a second
-    crafting_speed = util.parse_energy(reactor.consumption)/1000,
+    -- Every recipe needs to output 1kJ per second of craft time
+    -- Anything different, and the coolant is affecting the efficiency of the fuel
+    crafting_speed = util.parse_energy(reactor.consumption)/1000*60,
 
     -- Make reactor start exploding
     max_health = coolant_life,
@@ -91,11 +106,8 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
     burns_fluid = true,
     scale_fluid_usage = true, -- Handled by the reactor consuming energy.
     fluid_box = {
-      volume = 10, -- This might be too small, but I kinda want most of the 'energy' stored in the furnace where it's noticable
-      pipe_connections = {{
-        connection_type = "linked",
-        linked_connection_id = 1
-      }}
+      volume = 1000,
+      pipe_connections = input_connections
     }
   }--[[@as data.FluidEnergySource]]
 
@@ -113,7 +125,7 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"],
       {
         flow_direction = "input",
         direction = defines.direction.north--[[@as int]],
-        position = {-2, 0}
+        position = {0, -2}
       }
     }
   }--[[@as data.FluidBox]],

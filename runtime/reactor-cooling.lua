@@ -51,7 +51,9 @@ script_triggers["pm-cooled-reactor-placed"] = function (event)
 	script.register_on_object_destroyed(furnace)
 
 	-- Link fluidboxes
-	reactor.fluidbox.add_linked_connection(1, furnace, 1)
+	for i = 1, 10, 1 do
+		reactor.fluidbox.add_linked_connection(i, furnace, i)
+	end
 
 	-- Create info tables
 	---@type reactor_info
