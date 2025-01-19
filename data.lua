@@ -94,6 +94,8 @@ require("prototype.elements.085-astatine")
 require("prototype.elements.012-magnesium")
 
 require("prototype.entity")
+require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files
+
 require("prototype.remnants")
 require("prototype.achievements")
 require("prototype.robots")

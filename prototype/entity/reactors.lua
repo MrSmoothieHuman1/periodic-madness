@@ -10,8 +10,9 @@ local PM = require("library")
 ---@param reactor data.ReactorPrototype|data.CooledReactorPrototype
 ---@param coolant_fluidbox data.FluidBox? The fluidbox for the coolant.
 ---@param coolant_category data.RecipeCategoryID[]? The recipe categories for turning coolant into liquid heat
+---@param coolant_life float How many seconds the reactor can last without heat
 ---@overload fun(reactor:data.CooledReactorPrototype)
----@overload fun(reactor:data.ReactorPrototype,coolant_fluidbox:data.FluidBox,coolant_category:data.RecipeCategoryID[])
+---@overload fun(reactor:data.ReactorPrototype,coolant_fluidbox:data.FluidBox,coolant_category:data.RecipeCategoryID[], coolant_life:float)
 ---@return data.ReactorPrototype reactor
 local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, coolant_life)
   --MARK: Parameter processing
@@ -26,17 +27,7 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
   if not coolant_life then error("Not given a coolant_life for the reactor '"..reactor.name.."'") end
 
   -- Get the fluidbox definition for the coolant
-  coolant_fluidbox = coolant_fluidbox or reactor.coolant_fluid_box or {
-    production_type = "input",
-    volume = 100,
-    pipe_connections = {
-      {
-        flow_direction = "input",
-        direction = defines.direction.north--[[@as int]],
-        position = reactor.collision_box[1]-- HACK: A hell of a placeholder...
-      }
-    }
-  }--[[@as data.FluidBox]]
+  coolant_fluidbox = coolant_fluidbox or reactor.coolant_fluid_box
   reactor.coolant_fluid_box = nil
   if not coolant_life then error("Not given a coolant_fluid_box for the reactor '"..reactor.name.."'") end
 
@@ -56,7 +47,6 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
     result_inventory_size = 0,
     ignore_output_full = not reactor.scale_energy_usage,
     crafting_categories = coolant_category,
-    crafting_speed = 1,
 
     -- Heat output fluidbox
     fluid_boxes = {
@@ -71,10 +61,16 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
         }}
       }
     }--[[@as data.FluidBox[] ]],
+    collision_box = reactor.collision_box,
+    collision_mask = {layers={}},
 
-    -- Coolant consumption
+    -- Energy consumption
     energy_usage = reactor.consumption,
     energy_source = reactor.energy_source,
+
+    -- Coolant consumption
+    -- Every recipe needs to be 1kj and take a second
+    crafting_speed = util.parse_energy(reactor.consumption)/1000,
 
     -- Make reactor start exploding
     max_health = coolant_life,
@@ -108,3 +104,19 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
 
 	return reactor
 end
+
+coolant_reactor(data.raw["reactor"]["nuclear-reactor"],
+  {
+    production_type = "input",
+    volume = 100,
+    pipe_connections = {
+      {
+        flow_direction = "input",
+        direction = defines.direction.north--[[@as int]],
+        position = {-2, 0}
+      }
+    }
+  }--[[@as data.FluidBox]],
+  {"pm-reactor-coolant-burning"},
+  10
+)
