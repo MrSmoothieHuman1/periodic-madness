@@ -41,17 +41,47 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
   -- Remove shadow layers
   ---@type data.Animation[]
   local animation_layers, index = {}, 0
-  local sprite = reactor.picture
-  if sprite then
-    -- Convert to layered format
-    if not sprite.layers then
-      sprite = {layers = {sprite}}
+  local reactor_sprite = reactor.picture
+  local reactor_animation = reactor.working_light_picture
+  ---@cast reactor_animation -data.Sprite
+  if reactor_sprite then
+
+    -- Convert the sprite to layered format
+    if not reactor_sprite.layers then
+      reactor_sprite = {layers = {reactor_sprite}}
+    end
+    local frame_count = 1
+    if reactor_animation then
+      -- Convert the animation to layered format
+      if not reactor_animation.layers then
+        reactor_animation = {layers = {reactor_animation}}
+      end
+
+      -- Get framecount
+      local _,animation_layer = next(reactor_animation.layers)
+      if animation_layer then
+        frame_count = (animation_layer.frame_count or 1) * (animation_layer.repeat_count or 1)
+      end
     end
 
-    for _, sprite_layer in pairs(sprite.layers) do
-      if not sprite_layer.draw_as_shadow then
+    -- Add the sprite layers
+    for _, layer in pairs(reactor_sprite--[[@as data.Animation]].layers) do
+      if not layer.draw_as_shadow then
         index = index + 1
-        animation_layers[index] = util.copy(sprite_layer--[[@as data.Animation]])
+        layer = util.copy(layer)
+        if layer.frame_count and layer.frame_count ~= 1 then error("The '"..reactor.name.."' had an animation for it's picture (a sprite)") end
+        layer.repeat_count = frame_count
+        animation_layers[index] = layer
+      end
+    end
+
+    -- Add the animation layers if they exist
+    if reactor_animation then
+      for _, layer in pairs(reactor_animation.layers) do
+        if not layer.draw_as_shadow then
+          index = index + 1
+          animation_layers[index] = util.copy(layer)
+        end
       end
     end
   end
@@ -218,7 +248,7 @@ data:extend({
 			scale = 0.5,
 			shift = util.by_pixel(-0.5, -4.5)
 		},
-    picture =
+    working_light_picture =
     {
       layers =
       {
@@ -238,6 +268,28 @@ data:extend({
           line_length = 1,
           frame_count = 1,
           repeat_count = 24,
+          scale = 0.5,
+          shift = { 1.625, 0 },
+          draw_as_shadow = true
+        }
+      }
+    },
+    picture =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+          width = 320,
+          height = 320,
+          frame_count = 1,
+          scale = 0.5,
+          shift = util.by_pixel(-5, -7)
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+          width = 320,
+          height = 320,
           scale = 0.5,
           shift = { 1.625, 0 },
           draw_as_shadow = true
