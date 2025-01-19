@@ -505,6 +505,131 @@ function PM.effects(...)
   return {...}
 end
 
+--MARK: Trigger
+
+---Will create an instant and direct script trigger if not given a trigger
+---
+---If given a trigger, it will try and find a direct trigger to add a delivery to. Otherwise, will add a trigger
+---
+---You *have* to overwrite where you got the trigger from, as it converts everything into the array format
+---@param effect_id string
+---@param triggers data.Trigger?
+---@return data.Trigger
+---@nodiscard
+function PM.script_trigger(effect_id, triggers)
+  -- Return trigger directly if not given one
+  if not triggers then
+    return {{
+      type = "direct",
+      action_delivery = PM.script_trigger_delivery(effect_id)
+    }--[[@as data.DirectTriggerItem]]}
+  end
+
+  -- Make sure it's an array
+  if triggers.type then
+    triggers = {triggers}
+  end
+
+  -- Find a direct trigger to add to the delivery
+  local has_direct = false
+  for _, trigger in pairs(triggers) do
+    if trigger.type == "direct" then
+      has_direct = true
+      trigger.action_delivery = PM.script_trigger_delivery(effect_id, trigger.action_delivery)
+      break
+    end
+  end
+
+  -- Create new trigger item if there was no direct
+  if not has_direct then
+    triggers[#triggers+1] = {
+      type = "direct",
+      action_delivery = PM.script_trigger_delivery(effect_id)
+    }
+  end
+
+  -- return triggers to overwrite
+  return triggers
+end
+
+---Will create an instant script delivery if not given a delivery
+---
+---If given a delivery, it will try and find an instant delivery to add an effects to. Otherwise, will add an instant script delivery
+---
+---You *have* to overwrite where you got the delivery from, as it converts everything into the array format
+---@param effect_id string
+---@param deliveries data.TriggerDelivery[]|data.TriggerDelivery?
+---@return data.TriggerDelivery[]
+---@nodiscard
+function PM.script_trigger_delivery(effect_id, deliveries)
+  -- Return delivery directly if not given one
+  if not deliveries then
+    return {{
+      type = "instant",
+      source_effects = PM.script_trigger_effect(effect_id)
+    }--[[@as data.InstantTriggerDelivery]]}
+  end
+
+  -- Make sure it's an array
+  if deliveries.type then
+    deliveries = {deliveries}
+  end
+
+  -- Find an instant delivery to add to the effects
+  local has_instant = false
+  for _, delivery in pairs(deliveries) do
+    if delivery.type == "instant" then
+      has_instant = true
+      delivery.source_effects = PM.script_trigger_effect(effect_id, delivery.source_effects)
+      break
+    end
+  end
+
+  -- Create new delivery item if there was no instant
+  if not has_instant then
+    deliveries[#deliveries+1] = {
+      type = "instant",
+      source_effects = PM.script_trigger_effect(effect_id)
+    }
+  end
+
+  -- return deliveries to overwrite
+  return deliveries
+end
+
+---Will create a script effect if not given an effect
+---
+---If given a effect, it will append a script effect to the array (converting if not already an array)
+---
+---You *have* to overwrite where you got the effect from, as it converts everything into the array format
+---@param effect_id string
+---@param effects data.TriggerEffect[]|data.TriggerEffect?
+---@return data.TriggerEffect[]
+---@nodiscard
+function PM.script_trigger_effect(effect_id, effects)
+  -- Return effect directly if not given one
+  if not effects then
+    return {{
+      type = "script",
+      effect_id = effect_id,
+    }--[[@as data.ScriptTriggerEffectItem]]}
+  end
+
+  -- Make sure it's an array
+  if effects.type then
+    effects = {effects}
+  end
+
+  -- Create new effect
+  effects[#effects+1] = {
+    type = "script",
+    effect_id = effect_id,
+  }
+
+  -- return effects to overwrite
+  return effects
+end
+
 --MARK: Global variables:
 
 ---@class PM.beltTier
