@@ -63,6 +63,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 
     source_inventory_size = 0,
     result_inventory_size = 0,
+    show_recipe_icon = false,
     ignore_output_full = not reactor.scale_energy_usage,
     crafting_categories = coolant_categories,
 
