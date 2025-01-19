@@ -1,25 +1,25 @@
 local PM = require("library")
 
 ---@class data.CooledReactorPrototype : data.ReactorPrototype
----@field coolant_fluid_box data.FluidBox The fluidbox for the coolant.
----@field coolant_category data.RecipeCategoryID[] The recipe categories for turning coolant into liquid heat
 ---@field coolant_life float How many seconds the reactor can last without heat
+---@field coolant_categories data.RecipeCategoryID[] The recipe categories for turning coolant into liquid heat
+---@field coolant_fluid_box data.FluidBox The fluidbox for the coolant.
 
 --- Makes a given reactor's paired assembling machine
 --- and modifies what it needs to make it explode without coolant
 ---@param reactor data.ReactorPrototype|data.CooledReactorPrototype
----@param coolant_fluidbox data.FluidBox? The fluidbox for the coolant.
----@param coolant_category data.RecipeCategoryID[]? The recipe categories for turning coolant into liquid heat
 ---@param coolant_life float How many seconds the reactor can last without heat
+---@param coolant_categories data.RecipeCategoryID[]? The recipe categories for turning coolant into liquid heat
+---@param coolant_fluidbox data.FluidBox? The fluidbox for the coolant.
 ---@overload fun(reactor:data.CooledReactorPrototype)
----@overload fun(reactor:data.ReactorPrototype,coolant_fluidbox:data.FluidBox,coolant_category:data.RecipeCategoryID[], coolant_life:float)
+---@overload fun(reactor:data.ReactorPrototype,coolant_life:float,coolant_categories:data.RecipeCategoryID[],coolant_fluidbox:data.FluidBox)
 ---@return data.ReactorPrototype reactor
-local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, coolant_life)
+local function coolant_reactor(reactor, coolant_life, coolant_categories, coolant_fluidbox)
   --MARK: Parameter processing
   -- Get the coolant category
-  coolant_category = coolant_category or reactor.coolant_category
-  reactor.coolant_category = nil
-  if not coolant_category then error("Not given a coolant_category for the reactor '"..reactor.name.."'") end
+  coolant_categories = coolant_categories or reactor.coolant_categories
+  reactor.coolant_categories = nil
+  if not coolant_categories then error("Not given a coolant_categories for the reactor '"..reactor.name.."'") end
 
   -- Get the lifetime of the reactor without coolant
   coolant_life = coolant_life or reactor.coolant_life
@@ -64,7 +64,7 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
     source_inventory_size = 0,
     result_inventory_size = 0,
     ignore_output_full = not reactor.scale_energy_usage,
-    crafting_categories = coolant_category,
+    crafting_categories = coolant_categories,
 
     -- Heat output fluidbox
     fluid_boxes = {
@@ -118,6 +118,7 @@ local function coolant_reactor(reactor, coolant_fluidbox, coolant_category, cool
 end
 
 coolant_reactor(data.raw["reactor"]["nuclear-reactor"],
+  10, {"pm-reactor-coolant-burning"},
   {
     production_type = "input",
     volume = 100,
@@ -128,7 +129,5 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"],
         position = {0, -2}
       }
     }
-  }--[[@as data.FluidBox]],
-  {"pm-reactor-coolant-burning"},
-  10
+  }--[[@as data.FluidBox]]
 )
