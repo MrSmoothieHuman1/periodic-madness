@@ -69,10 +69,19 @@ end
 
 ---@param event EventData.on_gui_opened
 events[defines.events.on_gui_opened] = function (event)
+	-- Make sure it's an entity being opened
 	if event.gui_type ~= defines.gui_type.entity then return end
-	local reactor_info = storage.reactors[event.entity.unit_number--[[@as int]]]
+	local entity = event.entity
+	---@cast entity -?
+
+	-- Make sure it's a reactor entity being opened
+	local reactor_info = storage.reactors[entity.unit_number--[[@as int]]]
 	if not reactor_info then return end
 
+	-- Make sure it's *the reactor*
+	if entity.type ~= "reactor" then return end
+
+	-- Finally open the furnace
 	local player = game.get_player(event.player_index)
 	---@cast player -?
 	player.opened = reactor_info.furnace
