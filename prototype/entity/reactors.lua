@@ -38,6 +38,24 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     error("Given fluidbox is not a production_type of 'input': "..serpent.block(coolant_fluidbox))
   end
 
+  -- Remove shadow layers
+  ---@type data.Animation[]
+  local animation_layers, index = {}, 0
+  local sprite = reactor.picture
+  if sprite then
+    -- Convert to layered format
+    if not sprite.layers then
+      sprite = {layers = {sprite}}
+    end
+
+    for _, sprite_layer in pairs(sprite.layers) do
+      if not sprite_layer.draw_as_shadow then
+        index = index + 1
+        animation_layers[index] = util.copy(sprite_layer--[[@as data.Animation]])
+      end
+    end
+  end
+
   ---Because we need lots of connections to allow for faster fluid transfer
   ---@type data.PipeConnectionDefinition[],data.PipeConnectionDefinition[]
   local input_connections, output_connections = {},{}
@@ -66,6 +84,14 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     show_recipe_icon = false,
     ignore_output_full = not reactor.scale_energy_usage,
     crafting_categories = coolant_categories,
+
+    -- Visually look like a reactor
+    match_animation_speed_to_activity = false,
+    graphics_set = {
+      animation = {
+        north = {layers = animation_layers}
+      }
+    },
 
     -- Heat output fluidbox
     fluid_boxes = {
@@ -118,7 +144,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 	return reactor
 end
 
-coolant_reactor(data.raw["reactor"]["nuclear-reactor"],
+coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
   10, {"pm-reactor-coolant-burning"},
   {
     production_type = "input",
