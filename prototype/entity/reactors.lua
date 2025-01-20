@@ -168,6 +168,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 
   -- Get an event for when the reactor is created
   reactor.created_effect = PM.script_trigger("pm-cooled-reactor-placed", reactor.created_effect)
+  -- Hide the burning of liquid heat until hovered on
+  PM.set_flag(reactor, "hide-alt-info")
 
 	return reactor
 end
@@ -256,6 +258,7 @@ data:extend({
           height = 320,
           line_length = 6,
           frame_count = 24,
+          animation_speed = 0.5,
           scale = 0.5,
           shift = util.by_pixel(-5, -7)
         },

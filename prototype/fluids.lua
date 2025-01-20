@@ -1700,7 +1700,16 @@ data:extend({
 	{
 		type = "fluid",
 		name = "pm-liquid-heat",
-		icon = "__core__/graphics/icons/unknown.png", -- FIXME: add an actual icon
+    icons = {
+      { -- FIXME: add a better (probably more stylized) icon
+        icon = "__core__/graphics/arrows/heat-exchange-indication.png",
+        scale = 1,
+        icon_size = 48,
+        draw_background = false,
+      },
+      -- HACK: if the hovered icons are too annoying. Maybe make a setting?
+      -- util.empty_icon()
+    },
 		hidden = true,
 		auto_barrel = false,
 		base_color = {1,0,0},

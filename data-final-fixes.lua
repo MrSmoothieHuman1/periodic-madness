@@ -25,6 +25,7 @@ data:extend{
 		ingredients = {
 			PM.ingredient("water", 1, "fluid")
 		},
+		main_product = "pm-liquid-heat",
 		results = {
 			PM.product("pm-liquid-heat", 10, "fluid")
 		}
