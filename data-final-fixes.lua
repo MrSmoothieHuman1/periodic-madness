@@ -30,4 +30,19 @@ data:extend{
 			PM.product("pm-liquid-heat", 10, "fluid")
 		}
 	}--[[@as data.RecipePrototype]],
+	{
+		type = "recipe",
+		name = "pm-water-coolant-burn-with-exhuast",
+		auto_recycle = false,
+		category = "pm-reactor-coolant-burning-with-exhuast",
+		energy_required = 10,
+		ingredients = {
+			PM.ingredient("water", 1, "fluid")
+		},
+		main_product = "pm-liquid-heat",
+		results = {
+			PM.product("pm-liquid-heat", 10, "fluid", 2),
+			PM.product("steam", 1, "fluid", 3),
+		}
+	}--[[@as data.RecipePrototype]],
 }

@@ -106,9 +106,10 @@ script_triggers["pm-cooled-reactor-hurt"] = function (event)
 	local furnace = event.source_entity
 	if not furnace then error("The source entity for 'pm-cooled-reactor-hurt' was somehow nil") end
 
-	-- If there's no heat and nothing in the output, it shouldn't be dying right now
-	if furnace.burner.heat == 0
-	and furnace.get_fluid_count("pm-liquid-heat") then
+	-- If there's coolant or a lack of heat, then it shouldn't be dying right now
+	local has_coolant = function() return furnace.get_fluid(1) end -- Index 1 is always the coolant input
+	local has_heat = function () return furnace.burner.heat ~= 0 or furnace.get_fluid(2) end -- Index 2 is always the heat output
+	if has_coolant() or not has_heat() then
 		furnace.health = furnace.health + 1/60
 		return
 	end

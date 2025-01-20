@@ -4,6 +4,7 @@ local PM = require("library")
 ---@field coolant_life float How many seconds the reactor can last without heat
 ---@field coolant_categories data.RecipeCategoryID[] The recipe categories for turning coolant into liquid heat
 ---@field coolant_fluid_box data.FluidBox The fluidbox for the coolant.
+---@field coolant_exhuast_fluidbox data.FluidBox? The fluidbox for the exhuasted coolant.
 
 --- Makes a given reactor's paired assembling machine
 --- and modifies what it needs to make it explode without coolant
@@ -11,10 +12,11 @@ local PM = require("library")
 ---@param coolant_life float How many seconds the reactor can last without heat
 ---@param coolant_categories data.RecipeCategoryID[]? The recipe categories for turning coolant into liquid heat
 ---@param coolant_fluidbox data.FluidBox? The fluidbox for the coolant.
+---@param coolant_exhuast_fluidbox data.FluidBox? The fluidbox for the exhuasted coolant.
 ---@overload fun(reactor:data.CooledReactorPrototype)
----@overload fun(reactor:data.ReactorPrototype,coolant_life:float,coolant_categories:data.RecipeCategoryID[],coolant_fluidbox:data.FluidBox)
+---@overload fun(reactor:data.ReactorPrototype,coolant_life:float,coolant_categories:data.RecipeCategoryID[],coolant_fluidbox:data.FluidBox,coolant_exhuast_fluidbox:data.FluidBox?)
 ---@return data.ReactorPrototype reactor
-local function coolant_reactor(reactor, coolant_life, coolant_categories, coolant_fluidbox)
+local function coolant_reactor(reactor, coolant_life, coolant_categories, coolant_fluidbox, coolant_exhuast_fluidbox)
   --MARK: Parameter processing
   -- Get the coolant category
   coolant_categories = coolant_categories or reactor.coolant_categories
@@ -31,12 +33,19 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
   reactor.coolant_fluid_box = nil
   if not coolant_life then error("Not given a coolant_fluid_box for the reactor '"..reactor.name.."'") end
 
+  -- Get the fluidbox definition for the coolant exhuast
+  coolant_exhuast_fluidbox = coolant_exhuast_fluidbox or reactor.coolant_exhuast_fluidbox
+  reactor.coolant_exhuast_fluidbox = nil
+  -- Don't error, because optional
+
   -- Make sure it's an input type fluidbox
   if not coolant_fluidbox.production_type then
     coolant_fluidbox.production_type = "input"
   elseif coolant_fluidbox.production_type ~= "input" then
     error("Given fluidbox is not a production_type of 'input': "..serpent.block(coolant_fluidbox))
   end
+
+  --MARK: Fluidbox processing
 
   -- Remove shadow layers
   ---@type data.Animation[]
@@ -82,16 +91,18 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     }
   end
 
-  -- Add the coolant inputs to the heat input
+  -- Add the coolant inputs/outputs to the heat input
   -- So they visually appear while placing
-  for _, connection in pairs(coolant_fluidbox.pipe_connections) do
-    -- Ignore the non-visual connections
-    if connection.connection_type ~= "linked" then
-      connection = util.copy(connection)
-      index = index + 1
-      input_connections[index] = connection
-      
-      connection.connection_category = "null-category-fuck-off" -- Don't *actually* connect to anything
+  for _, fluidbox in pairs{coolant_fluidbox, coolant_exhuast_fluidbox} do
+    for _, connection in pairs(fluidbox.pipe_connections) do
+      -- Ignore the non-visual connections
+      if connection.connection_type ~= "linked" then
+        connection = util.copy(connection)
+        index = index + 1
+        input_connections[index] = connection
+        
+        connection.connection_category = "null-category-fuck-off" -- Don't *actually* connect to anything
+      end
     end
   end
 
@@ -105,7 +116,6 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     source_inventory_size = 0,
     result_inventory_size = 0,
     show_recipe_icon = false,
-    ignore_output_full = not reactor.scale_energy_usage,
     crafting_categories = coolant_categories,
 
     -- Visually look like a reactor
@@ -128,7 +138,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
         production_type = "output",
         volume = 1000,
         pipe_connections = output_connections
-      }
+      },
+      coolant_exhuast_fluidbox,
     }--[[@as data.FluidBox[] ]],
     collision_box = reactor.collision_box,
     collision_mask = {layers={}},
@@ -217,8 +228,9 @@ data:extend({
         maximum_intensity = 0.95
       }
     },
+    ---MARK: Polonium Coolant
     coolant_life = 10,
-    coolant_categories = {"pm-reactor-coolant-burning"},
+    coolant_categories = {"pm-reactor-coolant-burning-with-exhuast"},
     coolant_fluid_box =
     {
       production_type = "input",
@@ -231,8 +243,20 @@ data:extend({
         }
       }
     },
+    coolant_exhuast_fluidbox = {
+      production_type = "output",
+      volume = 100,
+      pipe_connections = {
+        {
+          flow_direction = "output",
+          direction = defines.direction.south--[[@as int]],
+          position = {0, 2},
+        }
+      }
+    },
     collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+    --MARK: Polonium graphics
     lower_layer_picture =
     {
       filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
@@ -297,6 +321,7 @@ data:extend({
         }
       }
     },
+    --MARK: Polonium heatbox
     heat_buffer =
     {
       max_temperature = 2500,
@@ -354,6 +379,7 @@ data:extend({
           direction = defines.direction.west --[[@as int]]
         }
       },
+      ---MARK: Polonium heat graphics
       connection_patches_connected =
       {
         sheet =

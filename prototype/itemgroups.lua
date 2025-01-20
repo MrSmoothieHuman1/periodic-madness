@@ -127,6 +127,10 @@ data:extend({
 		type = "recipe-category",
 		name = "pm-reactor-coolant-burning",
 	},
+	{
+		type = "recipe-category",
+		name = "pm-reactor-coolant-burning-with-exhuast"
+	},
 
 
   --MARK: Groups
