@@ -237,7 +237,7 @@ data:extend({
   },
 
 
-  --MARK: Subgroups
+  --MARK: Subgroups: Production
 
   {
     type = "item-subgroup",
@@ -258,6 +258,7 @@ data:extend({
     order = "g"
   },
 
+  --MARK: Subgroups: Acids
   {
     type = "item-subgroup",
     name = "pm-acids", --the acids themselves (eg. acidic water, HCl)
@@ -283,6 +284,7 @@ data:extend({
     order = "e"
   },
 
+  --MARK: Subgroup: Intermediates
   {
     type = "item-subgroup",
     name = "pm-oil",
@@ -411,6 +413,7 @@ data:extend({
   },
 
 
+  --MARK: Subgroups: Voiding
   {
     type = "item-subgroup",
     name = "pm-voiding",
@@ -419,6 +422,7 @@ data:extend({
   },
 
   
+  --MARK: Subgroups: Production
   {
     type = "item-subgroup",
     name = "pm-battery-machine",
@@ -469,6 +473,7 @@ data:extend({
     order = "e",
   },
 
+  --MARK: Subgroups: Reactive
   {
     type = "item-subgroup",
     name = "pm-atmosphere-rnm",
@@ -584,6 +589,7 @@ data:extend({
     order = "p",
   },
 
+  --MARK: Subgroups: Alkali
   {
     type = "item-subgroup",
     name = "pm-am-am",
@@ -627,6 +633,7 @@ data:extend({
     order = "g"
   },
 
+  --MARK: Subgroups: Transition
   {
     type = "item-subgroup",
     name = "pm-tm-tm",
@@ -760,6 +767,7 @@ data:extend({
     order = "x"
   },
 
+  --MARK: Subgroups: Post Transition
   {
     type = "item-subgroup",
     name = "pm-ptm-ptm",
@@ -863,6 +871,7 @@ data:extend({
     order = "q"
   },
 
+  --MARK: Subgroups: Alkaline
   {
     type = "item-subgroup",
     name = "pm-aem-aem",
@@ -906,6 +915,7 @@ data:extend({
     order = "f"
   },
 
+  --MARK: Subgroups: Metalloids
   {
     type = "item-subgroup",
     name = "pm-mt-mt",
@@ -949,6 +959,7 @@ data:extend({
     order = "g"
   },
 
+  --MARK: Subgroups: Noble
   {
     type = "item-subgroup",
     name = "pm-helium-nb",
@@ -992,6 +1003,7 @@ data:extend({
     order = "g"
   },
 
+  --MARK: Subgroups: Actinides
   {
     type = "item-subgroup",
     name = "pm-actinium-ac",
@@ -1083,6 +1095,7 @@ data:extend({
     order = "p"
   },
 
+  --MARK: Subgroups: Multimetal
   {
     type = "item-subgroup",
     name = "pm-multimetal-tubing",
@@ -1183,6 +1196,7 @@ data:extend({
     order = "p"
   },
 
+  --MARK: Subgroups: Combat
   {
     type = "item-subgroup",
     name = "pm-rockets",
@@ -1220,6 +1234,7 @@ data:extend({
     order = "ec",
   },
 
+  --MARK: Subgroups: Logistics
   {
     type = "item-subgroup",
     name = "pm-belts",

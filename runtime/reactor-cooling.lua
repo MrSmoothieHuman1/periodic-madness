@@ -79,7 +79,7 @@ events[defines.events.on_gui_opened] = function (event)
 	if not reactor_info then return end
 
 	-- Make sure it's *the reactor*
-	if entity.type ~= "reactor" then return end
+	if entity.type ~= "reactor" then return end --TODO: add heat bar to furnace?
 
 	-- Finally open the furnace
 	local player = game.get_player(event.player_index)
