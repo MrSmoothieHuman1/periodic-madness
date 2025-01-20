@@ -106,6 +106,23 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     end
   end
 
+  --MARK: Resistance Processing
+
+  -- Make it resistant to every damage besides the production health efffect
+  -- Theoretically other things can still hurt it, but `physical`
+  -- should hit the reactor first more often than not
+  ---@type data.Resistance[]
+  local resistances, index = {}, 0
+  for damage in pairs(data.raw["damage-type"]) do
+    if damage ~= "physical" then
+      index = index + 1
+      resistances[index] = {
+        type = damage,
+        percent = 100
+      }
+    end
+  end
+
   --MARK: Reactor Furnace
   -- Make the furnace that'll burn resources at the cost of coolant
   data:extend{{
@@ -155,6 +172,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 
     -- Make reactor start exploding
     max_health = coolant_life,
+    resistances = resistances,
+    hide_resistances = true,
     production_health_effect = {
       not_producing = -1/60,
       producing = 1/600, -- Punish you for not cooling your reactor :)
