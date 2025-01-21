@@ -1019,6 +1019,7 @@ data:extend({
     subgroup = "pm-hydrogen-rnm",
     order = "A",
     default_temperature = 15,
+    fuel_value = "1MJ",
     base_color = {r = 0.9, g = 0.9, b = 1 },
     flow_color = {r = 0.9, g = 0.9, b = 1 },
     auto_barrel = false,
