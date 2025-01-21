@@ -69,8 +69,8 @@ data:extend({
     {
       PM.product("sulfuric-acid", 15, "fluid"),
       PM.product("sulfur", 2),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.66, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.33, 1)
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.7, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.3, 1)
     }
   } --[[@as data.RecipePrototype]],
 

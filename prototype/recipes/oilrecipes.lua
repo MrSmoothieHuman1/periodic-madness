@@ -243,7 +243,7 @@ data:extend({
     {
       PM.product("pm-plastic-pellets", 12),
       PM.catalyst_chance("pm-yttrium-catalyst", 1, 0.95, 1),
-      PM.product_chance("pm-catalyst-container", 1, 0.02)
+      PM.product_chance("pm-catalyst-container", 1, 0.05)
     }
   },
 
