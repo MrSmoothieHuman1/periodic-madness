@@ -56,6 +56,7 @@ Date: 2024-12-08
     - Changed catalysts to actually act like catalysts - they now have a chance to spit themselves out, and catalyst containers. The monkey's finger curls.
     - Slightly lowered the amount of ferrum that is produced by most elements.
     - Changed assembler 3's to take 1 coolant instead of cooling plating.
+    - Made evaporators much cheaper, and easier to make - now taking 4 ingredients instead of 6.
 
   Fixes:
     - Fixed the science pack item names captilisation.
