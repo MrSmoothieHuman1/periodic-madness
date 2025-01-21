@@ -5730,8 +5730,8 @@ data:extend({
       max_temperature = 2500,
       specific_heat = "1MJ",
       max_transfer = "2GW",
-      min_working_temperature = 750,
-      minimum_glow_temperature = 500,
+      min_working_temperature = 650,
+      minimum_glow_temperature = 550,
       connections =
       {
         {
