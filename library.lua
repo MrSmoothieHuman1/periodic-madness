@@ -86,32 +86,41 @@ end
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param type item_type?
+---@param index uint32?
+---@overload fun(name:data.ItemID,amount:number,type:"item"|nil):data.ItemIngredientPrototype
+---@overload fun(name:data.FluidID,amount:number,type:"fluid",index:uint32):data.FluidIngredientPrototype
 ---@return data.IngredientPrototype
-function PM.ingredient(name, amount, type)
+function PM.ingredient(name, amount, type, index)
   return {
     name = name,
     amount = amount,
-    type = type or "item"
-  }
+    type = type or "item",
+    fluidbox_index = index
+  }--[[@as data.IngredientPrototype]]
 end
 ---Shorthand for an catalyst ingredient
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param catalyst number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.IngredientPrototype
-function PM.catalyst_ingredient(name, amount, catalyst, type)
+---@overload fun(name:data.ItemID,amount:number,catalyst:number,type:"item"|nil):data.ItemIngredientPrototype
+---@overload fun(name:data.FluidID,amount:number,catalyst:number,type:"fluid",index:uint32):data.FluidIngredientPrototype
+function PM.catalyst_ingredient(name, amount, catalyst, type, index)
   return {
     name = name,
     amount = amount,
     ignored_by_stats = catalyst,
-    type = type or "item"
+    type = type or "item",
+    fluidbox_index = index
   }--[[@as data.IngredientPrototype]]
 end
 
 ---A local function to localize the product function implementaton
 ---@param name data.ItemID|data.FluidID
 ---@param type item_type?
+---@param index uint32?
 ---@param amount number?
 ---@param amount_min number?
 ---@param amount_max number?
@@ -119,10 +128,11 @@ end
 ---@param ignored_by_stats number?
 ---@param ignored_by_productivity number?
 ---@return data.ProductPrototype
-local function super_product(name, type, amount, amount_min, amount_max, probability, ignored_by_stats, ignored_by_productivity)
+local function super_product(name, type, index, amount, amount_min, amount_max, probability, ignored_by_stats, ignored_by_productivity)
   return {
     name = name,
     type = type or "item",
+    fluidbox_index = index,
     amount = amount,
     amount_min = amount_min,
     amount_max = amount_max,
@@ -135,27 +145,30 @@ end
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.product(name, amount, type)
-  return super_product(name, type, amount)
+function PM.product(name, amount, type, index)
+  return super_product(name, type, index, amount)
 end
 ---Acts like its own short-hand for a product with a range of possible amounts
 ---@param name data.ItemID|data.FluidID
 ---@param amount_min number
 ---@param amount_max number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.product_range(name, amount_min, amount_max, type)
-  return super_product(name, type, nil, amount_min, amount_max)
+function PM.product_range(name, amount_min, amount_max, type, index)
+  return super_product(name, type, index, nil, amount_min, amount_max)
 end
 ---Acts like its own short-hand for a probabilistic product
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param probability number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.product_chance(name, amount, probability, type)
-  return super_product(name, type, amount, nil, nil, probability)
+function PM.product_chance(name, amount, probability, type, index)
+  return super_product(name, type, index, amount, nil, nil, probability)
 end
 ---Builds a probabilistic product with a range of output
 ---@param name data.ItemID|data.FluidID
@@ -163,18 +176,20 @@ end
 ---@param amount_max number
 ---@param probability number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.product_range_chance(name, amount_min, amount_max, probability, type)
-  return super_product(name, type, nil, amount_min, amount_max, probability)
+function PM.product_range_chance(name, amount_min, amount_max, probability, type, index)
+  return super_product(name, type, index, nil, amount_min, amount_max, probability)
 end
 ---Builds a product that acts as a catalyst
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param catalyst number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.catalyst(name, amount, catalyst, type)
-  return super_product(name, type, amount, nil, nil, nil, catalyst, catalyst)
+function PM.catalyst(name, amount, catalyst, type, index)
+  return super_product(name, type, index, amount, nil, nil, nil, catalyst, catalyst)
 end
 ---Builds a catalyst product that has a range of results
 ---@param name data.ItemID|data.FluidID
@@ -182,9 +197,10 @@ end
 ---@param amount_max number
 ---@param catalyst number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.catalyst_range(name, amount_min, amount_max, catalyst, type)
-  return super_product(name, type, nil, amount_min, amount_max, nil, catalyst, catalyst)
+function PM.catalyst_range(name, amount_min, amount_max, catalyst, type, index)
+  return super_product(name, type, index, nil, amount_min, amount_max, nil, catalyst, catalyst)
 end
 ---Builds a catalyst product that has a chance of being returned
 ---@param name data.ItemID|data.FluidID
@@ -192,9 +208,10 @@ end
 ---@param probability number
 ---@param catalyst number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.catalyst_chance(name, amount, probability, catalyst, type)
-  return super_product(name, type, amount, nil, nil, probability, catalyst, catalyst)
+function PM.catalyst_chance(name, amount, probability, catalyst, type, index)
+  return super_product(name, type, index, amount, nil, nil, probability, catalyst, catalyst)
 end
 ---Builds a catalyst product that has a chance to return a range of results
 ---@param name data.ItemID|data.FluidID
@@ -203,18 +220,20 @@ end
 ---@param probability number
 ---@param catalyst number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.catalyst_range_chance(name, amount_min, amount_max, probability, catalyst, type)
-  return super_product(name, type, nil, amount_min, amount_max, probability, catalyst, catalyst)
+function PM.catalyst_range_chance(name, amount_min, amount_max, probability, catalyst, type, index)
+  return super_product(name, type, index, nil, amount_min, amount_max, probability, catalyst, catalyst)
 end
 ---Builds a product that is ignored by stats
 ---@param name data.ItemID|data.FluidID
 ---@param amount number
 ---@param ignored_by_stats number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.ignored(name, amount, ignored_by_stats, type)
-  return super_product(name, type, amount, nil, nil, nil, ignored_by_stats)
+function PM.ignored(name, amount, ignored_by_stats, type, index)
+  return super_product(name, type, index, amount, nil, nil, nil, ignored_by_stats)
 end
 ---Builds an ignorable by stats product that has a range of results
 ---@param name data.ItemID|data.FluidID
@@ -222,9 +241,10 @@ end
 ---@param amount_max number
 ---@param ignored_by_stats number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.ignored_range(name, amount_min, amount_max, ignored_by_stats, type)
-  return super_product(name, type, nil, amount_min, amount_max, nil, ignored_by_stats)
+function PM.ignored_range(name, amount_min, amount_max, ignored_by_stats, type, index)
+  return super_product(name, type, index, nil, amount_min, amount_max, nil, ignored_by_stats)
 end
 ---Builds an ignorable by stats product that has a chance of being returned
 ---@param name data.ItemID|data.FluidID
@@ -232,9 +252,10 @@ end
 ---@param probability number
 ---@param ignored_by_stats number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.ignored_chance(name, amount, probability, ignored_by_stats, type)
-  return super_product(name, type, amount, nil, nil, probability, ignored_by_stats)
+function PM.ignored_chance(name, amount, probability, ignored_by_stats, type, index)
+  return super_product(name, type, index, amount, nil, nil, probability, ignored_by_stats)
 end
 ---Builds an ignorable by stats product that has a chance to return a range of results
 ---@param name data.ItemID|data.FluidID
@@ -243,9 +264,10 @@ end
 ---@param probability number
 ---@param ignored_by_stats number
 ---@param type item_type?
+---@param index uint32?
 ---@return data.ProductPrototype
-function PM.ignored_range_chance(name, amount_min, amount_max, probability, ignored_by_stats, type)
-  return super_product(name, type, nil, amount_min, amount_max, probability, ignored_by_stats)
+function PM.ignored_range_chance(name, amount_min, amount_max, probability, ignored_by_stats, type, index)
+  return super_product(name, type, index, nil, amount_min, amount_max, probability, ignored_by_stats)
 end
 -- MARK: Entity Functions
 
@@ -503,6 +525,131 @@ end
 ---@return data.EffectTypeLimitation[]
 function PM.effects(...)
   return {...}
+end
+
+--MARK: Trigger
+
+---Will create an instant and direct script trigger if not given a trigger
+---
+---If given a trigger, it will try and find a direct trigger to add a delivery to. Otherwise, will add a trigger
+---
+---You *have* to overwrite where you got the trigger from, as it converts everything into the array format
+---@param effect_id string
+---@param triggers data.Trigger?
+---@return data.Trigger
+---@nodiscard
+function PM.script_trigger(effect_id, triggers)
+  -- Return trigger directly if not given one
+  if not triggers then
+    return {{
+      type = "direct",
+      action_delivery = PM.script_trigger_delivery(effect_id)
+    }--[[@as data.DirectTriggerItem]]}
+  end
+
+  -- Make sure it's an array
+  if triggers.type then
+    triggers = {triggers}
+  end
+
+  -- Find a direct trigger to add to the delivery
+  local has_direct = false
+  for _, trigger in pairs(triggers) do
+    if trigger.type == "direct" then
+      has_direct = true
+      trigger.action_delivery = PM.script_trigger_delivery(effect_id, trigger.action_delivery)
+      break
+    end
+  end
+
+  -- Create new trigger item if there was no direct
+  if not has_direct then
+    triggers[#triggers+1] = {
+      type = "direct",
+      action_delivery = PM.script_trigger_delivery(effect_id)
+    }
+  end
+
+  -- return triggers to overwrite
+  return triggers
+end
+
+---Will create an instant script delivery if not given a delivery
+---
+---If given a delivery, it will try and find an instant delivery to add an effects to. Otherwise, will add an instant script delivery
+---
+---You *have* to overwrite where you got the delivery from, as it converts everything into the array format
+---@param effect_id string
+---@param deliveries data.TriggerDelivery[]|data.TriggerDelivery?
+---@return data.TriggerDelivery[]
+---@nodiscard
+function PM.script_trigger_delivery(effect_id, deliveries)
+  -- Return delivery directly if not given one
+  if not deliveries then
+    return {{
+      type = "instant",
+      source_effects = PM.script_trigger_effect(effect_id)
+    }--[[@as data.InstantTriggerDelivery]]}
+  end
+
+  -- Make sure it's an array
+  if deliveries.type then
+    deliveries = {deliveries}
+  end
+
+  -- Find an instant delivery to add to the effects
+  local has_instant = false
+  for _, delivery in pairs(deliveries) do
+    if delivery.type == "instant" then
+      has_instant = true
+      delivery.source_effects = PM.script_trigger_effect(effect_id, delivery.source_effects)
+      break
+    end
+  end
+
+  -- Create new delivery item if there was no instant
+  if not has_instant then
+    deliveries[#deliveries+1] = {
+      type = "instant",
+      source_effects = PM.script_trigger_effect(effect_id)
+    }
+  end
+
+  -- return deliveries to overwrite
+  return deliveries
+end
+
+---Will create a script effect if not given an effect
+---
+---If given a effect, it will append a script effect to the array (converting if not already an array)
+---
+---You *have* to overwrite where you got the effect from, as it converts everything into the array format
+---@param effect_id string
+---@param effects data.TriggerEffect[]|data.TriggerEffect?
+---@return data.TriggerEffect[]
+---@nodiscard
+function PM.script_trigger_effect(effect_id, effects)
+  -- Return effect directly if not given one
+  if not effects then
+    return {{
+      type = "script",
+      effect_id = effect_id,
+    }--[[@as data.ScriptTriggerEffectItem]]}
+  end
+
+  -- Make sure it's an array
+  if effects.type then
+    effects = {effects}
+  end
+
+  -- Create new effect
+  effects[#effects+1] = {
+    type = "script",
+    effect_id = effect_id,
+  }
+
+  -- return effects to overwrite
+  return effects
 end
 
 --MARK: Global variables:

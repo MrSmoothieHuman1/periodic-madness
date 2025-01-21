@@ -1697,7 +1697,27 @@ data:extend({
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}
   },
-})
+	{
+		type = "fluid",
+		name = "pm-liquid-heat",
+    icons = {
+      { -- FIXME: add a better (probably more stylized) icon
+        icon = "__core__/graphics/arrows/heat-exchange-indication.png",
+        scale = 1,
+        icon_size = 48,
+        draw_background = false,
+      },
+      -- HACK: if the hovered icons are too annoying. Maybe make a setting?
+      -- util.empty_icon()
+    },
+		hidden = true,
+		auto_barrel = false,
+		base_color = {1,0,0},
+		flow_color = {1,0,0},
+		default_temperature = 15,
+		fuel_value = "50kJ",
+	},
+}--[[@as data.FluidPrototype[] ]])
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
 data.raw["fluid"]["light-oil"].auto_barrel = false
