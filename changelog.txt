@@ -56,7 +56,6 @@ Date: 2024-12-08
     - Changed catalysts to actually act like catalysts - they now have a chance to spit themselves out, and catalyst containers. The monkey's finger curls.
     - Slightly lowered the amount of ferrum that is produced by most elements.
     - Changed assembler 3's to take 1 coolant instead of cooling plating.
-    - Changed ethylene gylcol to take 1 palladium catalyst instead of 2.
 
   Fixes:
     - Fixed the science pack item names captilisation.
@@ -68,6 +67,7 @@ Date: 2024-12-08
     - Fixed random things like explosives not being in the presumably correct category.
     - Made slugs actually work with 2.0, im not sure how well they now work so any balance or suggestions are greatly appreciated.
     - Changed byproduct handling to be unlockable from ezekiel processing, and not transition metal leeching.
+    - Added the heavy lubricant recipe of solar cells to lubricant technology.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.141
