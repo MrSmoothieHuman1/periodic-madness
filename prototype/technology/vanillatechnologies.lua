@@ -229,7 +229,8 @@ data.raw["technology"]["lubricant"].prerequisites = { "pm-lubricating-oils-recip
 data.raw["technology"]["lubricant"].effects =
 {
   PM.unlock_recipe("pm-heavy-lubricant"),
-  PM.unlock_recipe("pm-heavy-lube-electric-engine-unit")
+  PM.unlock_recipe("pm-heavy-lube-electric-engine-unit"),
+  PM.unlock_recipe("pm-heavy-lube-solar-cell")
 }
 data.raw["technology"]["lubricant"].unit.ingredients =
 {
