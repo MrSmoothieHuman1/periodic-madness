@@ -882,9 +882,7 @@ data:extend({
     {
       PM.ingredient("pm-evaporator", 1),
       PM.ingredient("pm-corrosion-resistant-tubing", 12),
-      PM.ingredient("pm-glass-pane", 8),
       PM.ingredient("pm-thallium-plate", 3),
-      PM.ingredient("pm-heavyweight-panelling", 8),
       PM.ingredient("pm-heating-plating", 10)
     },
     results =
