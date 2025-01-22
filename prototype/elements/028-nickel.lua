@@ -54,7 +54,7 @@ data:extend({
     results =
     {
       PM.product("pm-nickel-ore", 8),
-      PM.product("sulfur", 4),
+      PM.product_range("sulfur", 2, 4),
     }
   } --[[@as data.RecipePrototype]],
 
@@ -95,7 +95,7 @@ data:extend({
     results =
     {
       PM.product("pm-nickel-ore", 8),
-      PM.product("sulfur", 4),
+      PM.product_range("sulfur", 0, 4),
     }
   } --[[@as data.RecipePrototype]],
 })
