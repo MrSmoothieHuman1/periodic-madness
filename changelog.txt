@@ -24,7 +24,7 @@ Date: 2024-12-08
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
     - Moved around the items needed in CRT/Oscilliscopes/RCU's.
-    - Made Oscilliscopes slightly cheaper. Slightly.
+    - Made Oscilliscopes slightly cheaper. Slightly. (this line is now useless, spoilers, they are gone)
     - Changed polonium reactors to give off pollution.
     - Changed molten-inators to start from 10 pollution/m, and gets to 6p/m at tier 3.
     - Changed calcite filtering to take 4 seconds instead of 1.3.
@@ -53,7 +53,6 @@ Date: 2024-12-08
     - Changed the first plastic science technology to also take R-NM packs.
     - Deleted oscilliscopes and merged them into RCU's, since there was no use for them being their own thing.
     - Changed RCU's to take 35 seconds, instead of 30 seconds.
-    - Changed catalysts to actually act like catalysts - they now have a chance to spit themselves out, and catalyst containers. The monkey's finger curls.
     - Slightly lowered the amount of ferrum that is produced by most elements.
     - Changed assembler 3's to take 1 coolant instead of cooling plating.
     - Made evaporators much cheaper, and easier to make - now taking 4 ingredients instead of 6.
