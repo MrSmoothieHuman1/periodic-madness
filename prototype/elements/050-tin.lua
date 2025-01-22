@@ -9,7 +9,7 @@ data:extend({
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/ores/white-tin.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/white=tin-2.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/white-tin-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-tin-ptm",
     order = "e",
