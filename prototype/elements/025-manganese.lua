@@ -37,7 +37,7 @@ data:extend({
     results =
     {
       PM.product("pm-manganese-ore", 8),
-      PM.product("iron-ore", 4)
+      PM.product_range("pm-ferrum", 2, 4)
     }
   } --[[@as data.RecipePrototype]],
 
@@ -78,7 +78,7 @@ data:extend({
     results =
     {
       PM.product("pm-manganese-ore", 8),
-      PM.product("iron-ore", 4)
+      PM.product_range("pm-ferrum", 2, 4)
     }
   } --[[@as data.RecipePrototype]],
 })
