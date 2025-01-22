@@ -6,6 +6,11 @@ data:extend({
     name = "pm-white-tin",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/white-tin.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/white-tin.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/white=tin-2.png", size = 64, scale = 0.5 }
+    },
     subgroup = "pm-tin-ptm",
     order = "e",
     stack_size = 150
@@ -35,7 +40,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/tin-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/tin-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/tin-chunks.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/tin-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-tin-ptm",

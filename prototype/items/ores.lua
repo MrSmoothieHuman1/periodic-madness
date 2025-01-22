@@ -197,6 +197,13 @@ data:extend({
     name = "pm-titanium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-titanium-tm",
     order = "d",
     stack_size = 200
@@ -208,8 +215,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png",   size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-1.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium--ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-palladium-tm",
     order = "a",
@@ -220,6 +229,13 @@ data:extend({
     name = "pm-tin-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/tin-ore-icon.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon-4.png", size = 64, scale = 0.5}
+    },
     subgroup = "pm-tin-ptm",
     order = "f",
     stack_size = 200
