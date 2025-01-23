@@ -20,6 +20,7 @@ Date: 2024-12-08
     - Added a new way to deal with ferrum and patina unlocked at A-ATM science, allowing you to make waste water which can be seperated into some ores or just looped away.
     - Continuing to rerender and model ores and other things.
     - Finally made the patina recipe unlockable at advanced byproduct handling.
+    - Changed reactors to require some kind of coolant to actually function - and will explode if they arent getting any liquid, and have fuel inside of them. Have fun!
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
