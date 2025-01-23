@@ -7,6 +7,7 @@ storage = storage or {}
 ---@field reactor LuaEntity
 ---@field furnace LuaEntity
 ---@field alert? LuaRenderObject
+---@field alert_tick? uint
 
 --MARK: Setup
 
@@ -131,6 +132,16 @@ script_triggers["pm-cooled-reactor-hurt"] = function (event)
 		}
 	else
 		alert.time_to_live = 60
+	end
+
+	-- Play alarm
+	if event.tick > (reactor_info.alert_tick or 0) then
+		force.play_sound{
+			path = "pm-meltdown-alarm",
+			override_sound_type = "alert",
+			position = furnace.position
+		}
+		reactor_info.alert_tick = event.tick + 60*16 -- The length of the audio
 	end
 
 	-- Show alert

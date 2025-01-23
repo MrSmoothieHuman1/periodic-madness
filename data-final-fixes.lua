@@ -45,4 +45,9 @@ data:extend{
 			PM.product("steam", 1, "fluid", 3),
 		}
 	}--[[@as data.RecipePrototype]],
+	{
+		type = "sound",
+		name = "pm-meltdown-alarm",
+		filename = "__base__/sound/programmable-speaker/siren.ogg"
+	}--[[@as data.SoundPrototype]]
 }
