@@ -8,8 +8,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/white-tin.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/white-tin.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/white-tin-2.png", size = 64, scale = 0.5 }
+      {filename = "__periodic-madness__/graphics/icons/ores/white-tin.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/white-tin-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-tin-ptm",
     order = "e",
@@ -20,6 +20,12 @@ data:extend({
     name = "pm-black-tin",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/black-tin.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/black-tin.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/black-tin-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/black-tin-3.png", size = 64, scale = 0.5}
+    },
     subgroup = "pm-tin-ptm",
     order = "d",
     stack_size = 150
