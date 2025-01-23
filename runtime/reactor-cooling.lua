@@ -6,6 +6,8 @@ storage = storage or {}
 ---@class reactor_info
 ---@field reactor LuaEntity
 ---@field furnace LuaEntity
+---@field alert? LuaRenderObject
+---@field alert_tick? uint
 
 --MARK: Setup
 
@@ -115,6 +117,34 @@ script_triggers["pm-cooled-reactor-hurt"] = function (event)
 	end
 
 	-- Otherwise, alert
+	local reactor_info = storage.reactors[furnace.unit_number --[[@as int]]]
+	local force = furnace.force
+	local alert = reactor_info.alert
+
+	-- Show alert icon on reactor
+	if not alert or not alert.valid then
+		reactor_info.alert = rendering.draw_sprite{
+			sprite = "virtual-signal/signal-skull",
+			surface = furnace.surface,
+			target = furnace,
+			forces = force,
+			time_to_live = 60,
+		}
+	else
+		alert.time_to_live = 60
+	end
+
+	-- Play alarm
+	if event.tick > (reactor_info.alert_tick or 0) then
+		force.play_sound{
+			path = "pm-meltdown-alarm",
+			override_sound_type = "alert",
+			position = furnace.position
+		}
+		reactor_info.alert_tick = event.tick + 60*16 -- The length of the audio
+	end
+
+	-- Show alert
 	for _, player in pairs(furnace.force.players) do -- TODO: Get a better icon than signal-skull
 		player.add_custom_alert(furnace, {type="virtual", name="signal-skull"}, {"pm-alerts.reactor-melting-down"}, true)
 	end
