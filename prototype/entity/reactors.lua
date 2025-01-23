@@ -45,7 +45,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     error("Given fluidbox is not a production_type of 'input': "..serpent.block(coolant_fluidbox))
   end
 
-  --MARK: Fluidbox processing
+  --MARK: Animation processing
 
   -- Remove shadow layers
   ---@type data.Animation[]
@@ -74,6 +74,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
       end
     end
   end
+
+  --MARK: Fluidbox processing
 
   ---Because we need lots of connections to allow for faster fluid transfer
   ---@type data.PipeConnectionDefinition[],data.PipeConnectionDefinition[]
