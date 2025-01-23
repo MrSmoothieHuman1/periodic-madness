@@ -11,16 +11,16 @@ storage = storage or {}
 
 --MARK: Setup
 
-local function setup_storage()
+function setup_cooling_storage()
 	---@type table<uint, reactor_info>
 	storage.reactors = storage.reactors or {}
 end
 
 event_handler.on_init = function ()
-	setup_storage()
+	setup_cooling_storage()
 end
 event_handler.on_configuration_changed = function (data)
-	setup_storage()
+	setup_cooling_storage()
 end
 
 ---@type table<string,fun(event:EventData.on_script_trigger_effect)>
@@ -66,6 +66,9 @@ script_triggers["pm-cooled-reactor-placed"] = function (event)
 	storage.reactors[reactor.unit_number--[[@as int]]] = reactor_info
 	storage.reactors[furnace.unit_number--[[@as int]]] = reactor_info
 end
+-- Only should be used for migrating reactors that weren't cooled before
+---@type fun(event:{source_entity:LuaEntity})
+simulate_placed = script_triggers["pm-cooled-reactor-placed"]
 
 --MARK: GUI
 
