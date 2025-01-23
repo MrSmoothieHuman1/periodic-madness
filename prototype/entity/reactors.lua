@@ -123,12 +123,21 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     end
   end
 
+  local flags_holder = {flags=util.copy(reactor.flags)}
+  PM.set_flag(flags_holder, "not-deconstructable")
+  PM.set_flag(flags_holder, "not-blueprintable")
+  PM.set_flag(flags_holder, "not-on-map")
+
   --MARK: Reactor Furnace
   -- Make the furnace that'll burn resources at the cost of coolant
   data:extend{{
     type = "furnace",
     name = reactor.name.."-coolant-furnace",
     localised_name = reactor.localised_name or {"entity-name."..reactor.name},
+    flags = flags_holder.flags;
+    icon = reactor.icon,
+    icon_size = reactor.icon_size,
+    icons = util.copy(reactor.icons),
 
     source_inventory_size = 0,
     result_inventory_size = 0,
