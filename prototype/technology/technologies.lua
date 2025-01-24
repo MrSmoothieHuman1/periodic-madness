@@ -791,9 +791,9 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-titanium-leeching"),
-      PM.unlock_recipe("pm-titanium-chunk-oxidising"),
-      PM.unlock_recipe("pm-titanium-chlorination"),
-      PM.unlock_recipe("pm-titanium-chloride-seperation"),
+      PM.unlock_recipe("pm-titanium-oxide"),
+      PM.unlock_recipe("pm-titanium-chloride"),
+      PM.unlock_recipe("pm-titanium-ore"),
       PM.unlock_recipe("pm-titanium-plate"),
       PM.unlock_recipe("pm-tungsten-leeching"),
       PM.unlock_recipe("pm-tungsten-crushing"),

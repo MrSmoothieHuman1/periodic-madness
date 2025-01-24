@@ -68,7 +68,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-titanium-chunk-oxidising",
+    name = "pm-titanium-oxide",
     category = "pm-acids",
     subgroup = "pm-titanium-tm",
     order = "c",
@@ -86,7 +86,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-titanium-chlorination",
+    name = "pm-titanium-chloride",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/titanium-chlorination.png",
     subgroup = "pm-titanium-tm",
@@ -107,7 +107,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-titanium-chloride-seperation",
+    name = "pm-titanium-ore",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/titanium-chloride-seperation.png",
     subgroup = "pm-titanium-tm",

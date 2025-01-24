@@ -57,6 +57,9 @@
        ["pm-indium-melting", "pm-molten-indium"],
        ["pm-thallium-melting", "pm-molten-thallium"],
        ["pm-cobalt-melting", "pm-molten-cobalt"],
-       ["pm--mercury-liquifying", "pm-liquid-mercury"]
+       ["pm--mercury-liquifying", "pm-liquid-mercury"],
+       ["pm-titanium-chunk-oxidising", "pm-titanium-oxide"],
+       ["pm-titanium-chloronation", "pm-titanium-chloride"],
+       ["pm-titanium-chloride-seperation", "pm-titanium-ore"]
     ]
 }
