@@ -258,6 +258,39 @@ data:extend({
         maximum_intensity = 0.95
       }
     },
+    working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/nuclear-reactor-1.ogg",
+          volume = 0.55
+        },
+        {
+          filename = "__base__/sound/nuclear-reactor-2.ogg",
+          volume = 0.55
+        }
+      },
+      max_sounds_per_type = 3,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+
+    meltdown_action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "create-entity",
+            entity_name = "atomic-rocket"
+          }
+        }
+      }
+    },
     ---MARK: Polonium Coolant
     coolant_life = 10,
     coolant_categories = {"pm-reactor-coolant-burning-with-exhuast"},
@@ -301,7 +334,7 @@ data:extend({
 			height = 316,
 			scale = 0.5,
 			shift = util.by_pixel(-0.5, -4.5)
-		},
+		}--[[@as data.Sprite]],
     working_light_picture =
     {
       layers =
@@ -350,6 +383,53 @@ data:extend({
           draw_as_shadow = true
         }
       }
+    },
+    connection_patches_connected =
+    {
+      sheet =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+        width = 64,
+        height = 64,
+        variation_count = 12,
+        scale = 0.5
+      }
+    },
+
+    connection_patches_disconnected =
+    {
+      sheet =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+        width = 64,
+        height = 64,
+        variation_count = 12,
+        y = 64,
+        scale = 0.5
+      }
+    },
+
+    heat_connection_patches_connected =
+    {
+      sheet = apply_heat_pipe_glow{
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+        width = 64,
+        height = 64,
+        variation_count = 12,
+        scale = 0.5
+      }--[[@as data.SpriteSheet]]
+    },
+
+    heat_connection_patches_disconnected =
+    {
+      sheet = apply_heat_pipe_glow{
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+        width = 64,
+        height = 64,
+        variation_count = 12,
+        y = 64,
+        scale = 0.5
+      }--[[@as data.SpriteSheet]]
     },
     --MARK: Polonium heatbox
     heat_buffer =
@@ -409,87 +489,6 @@ data:extend({
           direction = defines.direction.west --[[@as int]]
         }
       },
-      ---MARK: Polonium heat graphics
-      connection_patches_connected =
-      {
-        sheet =
-        {
-          filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
-          width = 64,
-          height = 64,
-          variation_count = 12,
-          scale = 0.5
-        }
-      },
-
-      connection_patches_disconnected =
-      {
-        sheet =
-        {
-          filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
-          width = 64,
-          height = 64,
-          variation_count = 12,
-          y = 64,
-          scale = 0.5
-        }
-      },
-
-      heat_connection_patches_connected =
-      {
-        sheet = apply_heat_pipe_glow{
-					filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
-					width = 64,
-					height = 64,
-					variation_count = 12,
-					scale = 0.5
-				}
-      },
-
-      heat_connection_patches_disconnected =
-      {
-        sheet = apply_heat_pipe_glow{
-					filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
-					width = 64,
-					height = 64,
-					variation_count = 12,
-					y = 64,
-					scale = 0.5
-				}
-      },
-      working_sound =
-      {
-        sound =
-        {
-          {
-            filename = "__base__/sound/nuclear-reactor-1.ogg",
-            volume = 0.55
-          },
-          {
-            filename = "__base__/sound/nuclear-reactor-2.ogg",
-            volume = 0.55
-          }
-        },
-        max_sounds_per_type = 3,
-        fade_in_ticks = 4,
-        fade_out_ticks = 20
-      },
-
-      meltdown_action =
-      {
-        type = "direct",
-        action_delivery =
-        {
-          type = "instant",
-          target_effects =
-          {
-            {
-              type = "create-entity",
-              entity_name = "atomic-rocket"
-            }
-          }
-        }
-      }
     },
   },
 }--[[@as data.ReactorPrototype[] ]])
