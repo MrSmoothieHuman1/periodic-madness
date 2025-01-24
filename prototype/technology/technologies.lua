@@ -107,7 +107,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-cinnabar-processing"),
       PM.unlock_recipe("pm-mercury-powdering"),
-      PM.unlock_recipe("pm-mercury-liquifying"),
+      PM.unlock_recipe("pm-liquid-mercury"),
       PM.unlock_recipe("pm-mercury-vapour-condensing")
     },
     prerequisites = {"automation", "pm-ezekiel-ore-purifying"},

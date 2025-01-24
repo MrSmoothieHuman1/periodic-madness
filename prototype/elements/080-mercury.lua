@@ -74,7 +74,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-mercury-liquifying",
+    name = "pm-liquid-mercury",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/mercury-liquifying.png",
     energy_required = 2,

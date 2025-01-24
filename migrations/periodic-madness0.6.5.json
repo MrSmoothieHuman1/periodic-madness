@@ -56,6 +56,7 @@
        ["pm-lead-melting", "pm-molten-lead"],
        ["pm-indium-melting", "pm-molten-indium"],
        ["pm-thallium-melting", "pm-molten-thallium"],
-       ["pm-cobalt-melting", "pm-molten-cobalt"]
+       ["pm-cobalt-melting", "pm-molten-cobalt"],
+       ["pm--mercury-liquifying", "pm-liquid-mercury"]
     ]
 }
