@@ -57,6 +57,7 @@ Date: 2024-12-08
     - Slightly lowered the amount of ferrum that is produced by most elements.
     - Changed assembler 3's to take 1 coolant instead of cooling plating.
     - Made evaporators much cheaper, and easier to make - now taking 4 ingredients instead of 6.
+    - Changed white and black tin mixing to be in the chemical plant, and not an assembling machine.
 
   Fixes:
     - Fixed the science pack item names captilisation.

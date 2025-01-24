@@ -130,7 +130,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-tin-ptm",
     order = "d",
-    energy_required = 8,
+    energy_required = 6,
     enabled = false,
     ingredients =
     {
@@ -140,8 +140,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-black-tin", 3),
-      PM.product("pm-white-tin", 3),
+      PM.product("pm-black-tin", 4),
+      PM.product("pm-white-tin", 4),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -149,11 +149,11 @@ data:extend({
     name = "pm-tin-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/tin-combining.png",
-    category = "advanced-crafting",
+    category = "chemistry",
     subgroup = "pm-tin-ptm",
     order = "e",
     main_product = "pm-tin-ore",
-    energy_required = 10,
+    energy_required = 6,
     enabled = false,
     ingredients =
     {
