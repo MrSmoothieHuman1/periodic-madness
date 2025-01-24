@@ -101,7 +101,7 @@ data:extend({
     type = "recipe",
     name = "pm-bismuth-ore",
     enabled = false,
-    energy_required = 12,
+    energy_required = 10,
     category = "pm-crystallisation",
     subgroup = "pm-bismuth-ptm",
     order = "c",
@@ -115,7 +115,7 @@ data:extend({
     results =
     {
       PM.product("pm-bismuth-ore", 8),
-      PM.product_range("pm-mixed-ore-slag", 1, 3)
+      PM.product_range("pm-mixed-ore-slag", 0, 3)
     }
   } --[[@as data.RecipePrototype]]
 })
