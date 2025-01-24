@@ -96,7 +96,7 @@ data:extend({
     results =
     {
       PM.product("pm-thallium-ore", 2),
-      PM.product_range("sulfur", 2, 4)
+      PM.product_range("sulfur", 1, 4)
     }
   } --[[@as data.RecipePrototype]],
 
