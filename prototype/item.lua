@@ -595,9 +595,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/flux-container.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/flux-container.png",   size = 64, scale = 0.24 + 0.001},
-      {filename = "__periodic-madness__/graphics/icons/flux-container-2.png", size = 64, scale = 0.24 + 0.001},
-      {filename = "__periodic-madness__/graphics/icons/flux-container-3.png", size = 64, scale = 0.24 + 0.001},
+      {filename = "__periodic-madness__/graphics/icons/flux-container.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/flux-container-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/flux-container-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-catalysts",
     order = "g",
