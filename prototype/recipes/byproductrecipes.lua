@@ -319,7 +319,8 @@ data:extend({
       PM.product_range_chance("pm-manganese-ore", 0, 3, 0.75),
       PM.product_range_chance("iron-ore", 0, 5, 0.8),
       PM.product_range_chance("pm-titanium-ore", 0, 3, 0.66),
-      PM.product_range_chance("pm-lead-ore", 0, 4, 0.35)
+      PM.product_range_chance("pm-lead-ore", 0, 2, 0.35),
+      PM.product_range_chance("pm-silver-ore", 0, 4, 0.6)
     }
   },
   {
@@ -340,7 +341,8 @@ data:extend({
       PM.product_range_chance("pm-gold-ore", 0, 3, 0.75),
       PM.product_range_chance("copper-ore", 0, 5, 0.8),
       PM.product_range_chance("pm-palladium-ore", 0, 3, 0.5),
-      PM.product_range_chance("pm-platinum-ore", 0, 4, 0.4)
+      PM.product_range_chance("pm-platinum-ore", 0, 4, 0.4),
+      PM.product_range_chance("pm-indium-ore", 0, 2, 0.35)
     }
   },
   {
