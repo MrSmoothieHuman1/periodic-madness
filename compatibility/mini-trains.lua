@@ -42,7 +42,7 @@ data.raw["recipe"]["rail-chain-signal"].ingredients =
   PM.ingredient("pm-basic-panelling", 4)
 }
 
-table.insert(data.raw["technology"]["fast-inserter"].effects, {type = "unlock-recipe", recipe = "rail"})
+table.insert(data.raw["technology"]["mini-trains"].effects, {type = "unlock-recipe", recipe = "rail"})
 data.raw["technology"]["mini-trains"].prerequisites = {"pm-fluid-circuit", "automobilism"}
 data.raw["technology"]["automated-rail-transportation"].prerequisites = {"mini-trains"}
 data.raw["technology"]["automated-rail-transportation"].unit.ingredients = 

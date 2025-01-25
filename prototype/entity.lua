@@ -9173,6 +9173,7 @@ fluid_boxes =
   default_stack_control_input_signal = inserter_default_stack_control_input_signal
 }--[[@as data.InserterPrototype]],
 }--[[@as data.EntityPrototype[] ]])
+
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down
 -- selection_box = {{-2.2, -2.2}, {2.5, 2.6}}, first two are up and down, third is left, fourth is right
