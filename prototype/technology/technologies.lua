@@ -1904,8 +1904,6 @@ data:extend({
       PM.unlock_recipe("pm-thallium-mixing"),
       PM.unlock_recipe("pm-thallium-sulfate-electrolysis"),
       PM.unlock_recipe("pm-thallium-plate"),
-      PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
-      PM.unlock_recipe("pm-metal-sodium-hydroxide"),
       PM.unlock_recipe("pm-bauxite-mixing"),
       PM.unlock_recipe("pm-gallium-liqouring"),
       PM.unlock_recipe("pm-ion-exchange-beads"),
@@ -4273,6 +4271,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+      PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
       PM.unlock_recipe("pm-ferrous-waste-water"),
       PM.unlock_recipe("pm-cupric-waste-water"),
       PM.unlock_recipe("pm-ferrous-waste-seperation"),

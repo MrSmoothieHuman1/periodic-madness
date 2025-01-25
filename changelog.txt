@@ -59,6 +59,8 @@ Date: 2024-12-08
     - Made evaporators much cheaper, and easier to make - now taking 4 ingredients instead of 6.
     - Changed white and black tin mixing to be in the chemical plant, and not an assembling machine.
     - Moved chlorine processing to behind red science, to make it more obvious for players.
+    - Moved sodium hydroxide to waste water (A-ATM science), instead of being unlocked at crystallisation.
+    - Deleted sodium sodium hydroxide.
 
   Fixes:
     - Fixed the science pack item names captilisation.
