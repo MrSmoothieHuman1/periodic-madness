@@ -1794,7 +1794,7 @@ data:extend({
       PM.unlock_recipe("pm-sodium-looping"),
       PM.unlock_recipe("pm-hydrochloric-acid"),
     },
-    prerequisites = {},
+    prerequisites = {"automation-science-pack"},
     research_trigger = 
     {
       type = "build-entity",
