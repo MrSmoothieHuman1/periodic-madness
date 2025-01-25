@@ -158,6 +158,26 @@ data:extend({
     {
       PM.product("sulfuric-acid", 30, "fluid")
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-sulfur-from-sulfuric-acid",
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-sulfur-rnm",
+    order = "h",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("sulfuric-acid", 4, "fluid"),
+      PM.ingredient("water", 25, "fluid")
+    },
+    results = 
+    {
+      PM.product("sulfur", 2),
+      PM.product_range("water", 5, 27.5, "fluid")
+    }
+  }
 
 })
