@@ -34,7 +34,7 @@ data:extend({
     {
       PM.ingredient("pm-nickel-chunk", 6),
       PM.ingredient("water", 25, "fluid"),
-      PM.ingredient("sulfuric-acid", 8, "fluid")
+      PM.ingredient("sulfuric-acid", 5, "fluid")
     },
     results =
     {
@@ -100,7 +100,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-nickel-tailings", 10, "fluid"),
-      PM.ingredient("sulfuric-acid", 4, "fluid")
+      PM.ingredient("sulfuric-acid", 3, "fluid")
     },
     results =
     {

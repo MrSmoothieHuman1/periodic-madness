@@ -88,7 +88,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-germanium-ore-concentrate", 6),
-            PM.ingredient("sulfuric-acid", 20, "fluid"),
+            PM.ingredient("sulfuric-acid", 10, "fluid"),
         },
         results = 
         {

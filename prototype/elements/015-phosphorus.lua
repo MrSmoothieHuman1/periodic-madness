@@ -80,7 +80,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-phosphor-vapour", 5, "fluid"),
-      PM.ingredient("sulfuric-acid", 6, "fluid")
+      PM.ingredient("sulfuric-acid", 5, "fluid")
     },
     results =
     {

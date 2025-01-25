@@ -164,7 +164,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-borax", 2),
-      PM.ingredient("sulfuric-acid", 12, "fluid")
+      PM.ingredient("sulfuric-acid", 10, "fluid")
     },
     results =
     {

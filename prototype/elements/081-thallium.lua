@@ -69,7 +69,7 @@ data:extend({
       PM.ingredient("copper-ore", 8),
       PM.ingredient("pm-zinc-ore", 8),
       PM.ingredient("pm-lorandite", 1),
-      PM.ingredient("sulfuric-acid", 12, "fluid")
+      PM.ingredient("sulfuric-acid", 10, "fluid")
     },
     results =
     {
