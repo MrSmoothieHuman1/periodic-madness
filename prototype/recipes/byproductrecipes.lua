@@ -309,7 +309,7 @@ data:extend({
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
-    energy_required = 10,
+    energy_required = 15,
     ingredients = 
     {
       PM.ingredient("pm-ferrous-waste-water", 10, "fluid"),
@@ -331,7 +331,7 @@ data:extend({
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
-    energy_required = 10,
+    energy_required = 15,
     ingredients = 
     {
       PM.ingredient("pm-cupric-waste-water", 10, "fluid"),
