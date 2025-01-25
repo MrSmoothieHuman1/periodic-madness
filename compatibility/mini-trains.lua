@@ -50,3 +50,5 @@ data.raw["technology"]["automated-rail-transportation"].unit.ingredients =
     {"automation-science-pack", 1},
     {"logistic-science-pack", 1},
 }
+
+data.raw["fluid-wagon"]["mini-fluid-wagon"].capacity = 25000
