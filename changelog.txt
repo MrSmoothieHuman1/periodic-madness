@@ -75,6 +75,113 @@ Date: 2024-12-08
     - Added the heavy lubricant recipe of solar cells to lubricant technology.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.150
+Date: 2025-01-25
+  The they just HADDD to change scales Update:
+
+  Fixes:
+    - Fixed some icons being too small on belts.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.149
+Date: 2025-01-22
+  The the road to good intentions is paved with bad ratios Update:
+
+  Changes:
+    - Changed all basic ores (iron, copper, nickel, zinc) to give 2-4 of their respective byproduct, and their chromic versions to give 0-4.
+    - Changed manganese to give ferrum instead of iron ore - same idea, different item.
+
+  Fixes:
+    - Fixed the Francium Ultracool Centrifugal Kabbalism not being usable. This was done in a reasonable timeframe, trust.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.148
+Date: 2025-01-21
+  The meant to be last patch, suck an egg Update:
+
+  Fixes:
+    - Fixed the cyclotron not being usable.
+    - Fixed the fact that heat exchangers werent usable with tier 2 heat pipes.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.147
+Date: 2025-01-21
+  The *expect your factories to break now, it was pissing me off that they didnt catalyst Update:
+
+  Changes:
+    - Changed all catalyst recipes to actually catalyse.
+    - Changed ethylene glycol to take 1 palladium catalyst.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.146
+Date: 2025-01-18
+  The expect your factories to break at 0.6.5, catalysts actually catalyse Update:
+
+  Changes:
+    - Changed all catalyst recipes to take 3 seconds, not 4.
+
+  Fixes:
+    - Fixed the greenhouse not being able to craft its recipes.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.145
+Date: 2025-01-15
+  The do you think i'll eventually find all 2.0 breakages Update:
+
+  Changes:
+    - Changed thallium mixing to take 8 seconds instead of 12 seconds.
+    - Changed sulfur residuals to have 0-4 chances of vanadium/chromium instead of 1-4.
+    - Lowered the amount of ferrum you get from seperating ferrochromium.
+
+  Fixes:
+    - Fixed acid plants not being the correct colour.
+    - Fixed chemical plant 2's being invisible.
+    - ACTUALLY fixed concrete and refined concretes times.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.144
+Date: 2025-01-13
+  The another dollar for the swear jar Update:
+
+  Changes:
+    - Changed landfill's stone cost from 2.0's 50 to 20.
+
+  Fixes:
+    - Fixed the crafting times on concrete and refined concrete to match their output.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.143
+Date: 2025-01-13
+  The THEY'RE SUPPOSED TO BE SEPERATED Update:
+
+  Fixes:
+    - Fixed bismuth ALSO requiring flux to be made.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.142
+Date: 2025-01-11
+  The modding-induced carpal tunnel Update:
+
+  Changes:
+    - Rebalanced leads ratios slightly, lowered the amount of lead needed in P-TM packs from 10 to 8.
+    - Changed palladium frothing to give chunks on both recipes.
+    - Changed palladium frothing to give patina instead of ferrum.
+    - Changed the amount of gallium needed in P-TM packs from 20 to 10.
+    - Changed better steel to take 2 vanadium oxide, not 3.
+    - Made both platinum and palladium fluxed recipe not give any byproducts.
+
+  Fixes:
+    - Fixed lead being uncraftable(?) without first unlocking flux.
+    - ACTUALLY fixed petrol canisters being bad :(.
+    - Fixed the heat exchanger 2 giving heat exchanger 1's when picked up.
+    - Fixed the vanilla sulfuric acid recipe being visible.
+    - Fixed palladium only having nickel tailings looping, and not platinum aswell.
+    - Fixed heat exchanger 2's giving 1500C steam.
+    - Fixed heat excahnger 2, and the two battery dischargers having no graphics.
+    - Fixed the battery discharger not having a spent fuel slot.
+    - Fixed the plastic transition metal not taking the right amount of materials.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.141
 Date: 2025-01-11
   The boulder made of byproducts Update:
