@@ -94,6 +94,7 @@ data:extend({
     category = "pm-acids",
     enabled = false,
     energy_required = 2,
+    main_product = "pm-titanium-chloride",
     ingredients =
     {
       PM.ingredient("pm-titanium-oxide", 3),
@@ -115,6 +116,7 @@ data:extend({
     category = "pm-acids",
     energy_required = 4,
     enabled = false,
+    main_product = "pm-titanium-ore",
     ingredients =
     {
       PM.ingredient("pm-titanium-chloride", 2)
