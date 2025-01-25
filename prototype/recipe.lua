@@ -861,7 +861,7 @@ data:extend({
       PM.ingredient("pm-cadnium-plate", 2),
       PM.ingredient("pm-glass-pane", 4),
       PM.ingredient("pm-gold-wire", 3),
-      PM.ingredient("pm-heavy-lubricant", 8, "fluid"),
+      PM.ingredient("pm-heavy-lubricant", 2, "fluid"),
     },
     results =
     {
