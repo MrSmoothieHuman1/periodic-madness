@@ -2,6 +2,7 @@ require("compatibility.K2")
 require("compatibility.BZ.foundry")
 require("compatibility.BZ.zirconium")
 require("compatibility.colour-theory-circuits")
+require("compatibility.mini-trains")
 
 -- HACK: temporary
 local PM = require("library")

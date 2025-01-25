@@ -43,4 +43,9 @@ data.raw["recipe"]["rail-chain-signal"].ingredients =
 }
 
 data.raw["technology"]["mini-trains"].prerequisites = {"pm-fluid-circuit", "automobilism"}
-data.raw["technology"]["automated-rail-transmission"].prerequisites = {"mini-trains"}
+data.raw["technology"]["automated-rail-transportation"].prerequisites = {"mini-trains"}
+data.raw["technology"]["automated-rail-transportation"].unit.ingredients = 
+{
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+}
