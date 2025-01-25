@@ -61,7 +61,8 @@ Date: 2024-12-08
     - Changed white and black tin mixing to be in the chemical plant, and not an assembling machine.
     - Moved chlorine processing to behind red science, to make it more obvious for players.
     - Moved sodium hydroxide to waste water (A-ATM science), instead of being unlocked at crystallisation.
-    - Deleted sodium sodium hydroxide.
+    - Deleted the sodium sodium hydroxide recipe.
+    - Deleted the recipe to turn acidic water into sulfuric acid.
 
   Fixes:
     - Fixed the science pack item names captilisation.

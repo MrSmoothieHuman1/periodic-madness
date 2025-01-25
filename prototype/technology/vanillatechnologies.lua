@@ -39,7 +39,6 @@ data.raw["technology"]["sulfur-processing"].effects =
   PM.unlock_recipe("pm-vanadium-oxide"),
   PM.unlock_recipe("pm-vanadium-oxide-catalyst"),
   PM.unlock_recipe("pm-sulfur-dioxide-cracking"),
-  PM.unlock_recipe("pm-acidic-water-to-sulfuric-acid")
 }
 
 data.raw["technology"]["sulfur-processing"].prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes"}

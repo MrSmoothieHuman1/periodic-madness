@@ -410,27 +410,6 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-acidic-water-to-sulfuric-acid",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/acidic-water-to-sulfuric-acid.png",
-    energy_required = 6,
-    category = "pm-acids",
-    subgroup = "pm-sulfur-rnm",
-    order = "d",
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-acidic-water", 50, "fluid"),
-      PM.ingredient("sulfur", 5)
-    },
-    results =
-    {
-      PM.product("sulfuric-acid", 10, "fluid")
-    }
-  },
-
-  {
-    type = "recipe",
     name = "pm-common-diesel-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/common-diesel-cracking.png",
