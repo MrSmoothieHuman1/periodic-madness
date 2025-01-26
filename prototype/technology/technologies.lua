@@ -4300,6 +4300,10 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
+      PM.unlock_recipe("pm-transition-aluminium-leeching"),
+      PM.unlock_recipe("pm-bauxite-powder"),
+      PM.unlock_recipe("pm-aluminium-hydroxide-slurry"),
+      PM.unlock_recipe("pm-aluminium-ore")
     },
     prerequisites = {"pm-mixing-material-processing"},
     unit =

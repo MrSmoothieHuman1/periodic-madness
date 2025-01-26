@@ -247,7 +247,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
     subgroup = "pm-aluminium-ptm",
-    order = "a",
+    order = "d",
     stack_size = 200
   },
   {

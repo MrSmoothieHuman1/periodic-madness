@@ -22,6 +22,7 @@ Date: 2024-12-08
     - Finally made the patina recipe unlockable at advanced byproduct handling.
     - Changed reactors to require some kind of coolant to actually function - and will explode if they arent getting any liquid, and have fuel inside of them. Have fun!
     - Finally solved the whole issue of "hey theres no *real* way to make sulfur", by letting you make sulfur from sulfuric acid.
+    - Revamped aluminium, moving it to A-ATM packs (under mixing tanks), and lenthenging the processing chain for it.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
