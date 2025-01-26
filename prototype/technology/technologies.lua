@@ -331,7 +331,6 @@ data:extend({
       PM.unlock_recipe("pm-transition-nickel-leeching"),
       PM.unlock_recipe("pm-transition-zinc-leeching"),
       PM.unlock_recipe("pm-transition-manganese-leeching"),
-      PM.unlock_recipe("pm-transition-aluminium-leeching"),
     },
     prerequisites = {"pm-ezekiel-ore-purifying"},
     research_trigger = 
