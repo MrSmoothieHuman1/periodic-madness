@@ -57,7 +57,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-circuit-molding"),
       PM.unlock_recipe("pm-advanced-breadboard-molding")
     },
-    prerequisites = { "pm-fluid-circuit-molding"},
+    prerequisites = {"pm-fluid-circuit-molding", "advanced-electronics"},
     unit =
     {
       count = 150,
@@ -80,7 +80,7 @@ data:extend({
       PM.unlock_recipe("pm-processing-circuit-molding"),
       PM.unlock_recipe("pm-processing-breadboard-molding")
     },
-    prerequisites = { "pm-advanced-circuit-molding"},
+    prerequisites = { "pm-advanced-circuit-molding", "processing-unit"},
     unit =
     {
       count = 300,
