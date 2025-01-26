@@ -4304,7 +4304,7 @@ data:extend({
       PM.unlock_recipe("pm-aluminium-hydroxide-slurry"),
       PM.unlock_recipe("pm-aluminium-ore")
     },
-    prerequisites = {"pm-mixing-material-processing"},
+    prerequisites = {"pm-mixing-material-processing-1"},
     unit =
     {
       count = 125,

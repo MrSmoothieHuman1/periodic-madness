@@ -2,19 +2,19 @@ local PM = require("library")
 data:extend({
 
   {
-    type = "name",
+    type = "item",
     name = "pm-bauxite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bauxite.png",
+    icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
     subgroup = "pm-aluminium-ptm",
     order = "a",
     stack_size = 200
   },
   {
-    type = "name",
+    type = "item",
     name = "pm-bauxite-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bauxite.png",
+    icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
     subgroup = "pm-aluminium-ptm",
     order = "b",
     stack_size = 300
@@ -49,7 +49,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
-      PM.ingredient("pm-sodium-hydroxide", 6, "fluid")
+      PM.ingredient("pm-acidic-water", 25, "fluid")
     },
     allow_decomposition = false,
     enabled = false,
@@ -85,6 +85,7 @@ data:extend({
     subgroup = "pm-aluminium-ptm",
     order = "c",
     allow_productivity = true,
+    main_product = "pm-aluminium-hydroxide-slurry",
     ingredients = 
     {
       PM.ingredient("pm-bauxite-powder", 8),
@@ -106,7 +107,7 @@ data:extend({
     order = "d",
     ingredients = 
     {
-      PM.ingredient("pm-aluminium-hydroxide-slurry", 10),
+      PM.ingredient("pm-aluminium-hydroxide-slurry", 10, "fluid"),
       PM.ingredient("pm-calcium-ore", 3),
     },
     results = 
@@ -144,7 +145,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
-      PM.ingredient("pm-sodium-hydroxide", 4, "fluid"),
       PM.ingredient("pm-chromic-acid", 2, "fluid")
     },
     allow_decomposition = false,

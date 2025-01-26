@@ -57,7 +57,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-circuit-molding"),
       PM.unlock_recipe("pm-advanced-breadboard-molding")
     },
-    prerequisites = {"pm-fluid-circuit-molding", "advanced-electronics"},
+    prerequisites = {"pm-fluid-circuit-molding", "advanced-circuit"},
     unit =
     {
       count = 150,

@@ -168,6 +168,7 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "h",
     allow_productivity = true,
+    main_product = "sulfur",
     ingredients = 
     {
       PM.ingredient("sulfuric-acid", 4, "fluid"),
