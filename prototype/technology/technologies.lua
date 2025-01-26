@@ -4292,6 +4292,28 @@ data:extend({
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "pm-aluminium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
+    },
+    prerequisites = {"pm-mixing-material-processing"},
+    unit =
+    {
+      count = 125,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 30
+    }
+  },
 
   {
     type = "technology",
