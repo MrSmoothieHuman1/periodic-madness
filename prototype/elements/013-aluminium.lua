@@ -30,7 +30,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/sodium-hydroxide.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -101,7 +101,7 @@ data:extend({
     type = "recipe",
     name = "pm-aluminium-ore",
     enabled = false,
-    energy_required = 8,
+    energy_required = 6,
     category = "pm-electrolysis",
     subgroup = "pm-aluminium-ptm",
     order = "d",
@@ -151,7 +151,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-aluminium-ore", 8),
+      PM.product("pm-bauxite", 8),
     }
   } --[[@as data.RecipePrototype]],
 })
