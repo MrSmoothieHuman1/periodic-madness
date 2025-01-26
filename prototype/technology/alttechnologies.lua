@@ -97,27 +97,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-aluminium-fiberoptics",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/copper-fiberoptic-cable.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-aluminium-fiberoptic-cable")
-    },
-    prerequisites = {"pm-fiberoptics", "electronics"},
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-      },
-      time = 20
-    }
-  },
-  {
-    type = "technology",
     name = "pm-sulfuric-acid-dilution",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/sulfuric-acid-dilution.png",

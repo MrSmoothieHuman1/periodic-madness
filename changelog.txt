@@ -63,6 +63,7 @@ Date: 2024-12-08
     - Moved sodium hydroxide to waste water (A-ATM science), instead of being unlocked at crystallisation.
     - Deleted the sodium sodium hydroxide recipe.
     - Deleted the recipe to turn acidic water into sulfuric acid.
+    - Deleted the alternative recipe for fiberoptic cable.
 
   Fixes:
     - Fixed the science pack item names captilisation.
