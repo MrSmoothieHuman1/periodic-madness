@@ -2929,7 +2929,7 @@ data:extend({
       PM.unlock_recipe("pm-better-stainless-steel-alloy"),
       PM.unlock_recipe("pm-kasethal-plate")
     },
-    prerequisites = {"pm-vanadium-processing", "pm-chrominum-processing"},
+    prerequisites = {"pm-vanadium-processing", "pm-chrominum-processing", "pm-aluminium-processing"},
     unit =
     {
       count = 75,
