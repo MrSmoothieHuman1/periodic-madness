@@ -66,6 +66,7 @@ Date: 2024-12-08
     - Deleted the recipe to turn acidic water into sulfuric acid.
     - Deleted the alternative recipe for fiberoptic cable.
     - Changed CO2 nullifying to take 200 packs instead of 100.
+    - Halved the amount of aluminium used in PTM packs from 10 to 5.
 
   Fixes:
     - Fixed the science pack item names captilisation.

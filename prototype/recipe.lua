@@ -478,7 +478,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-aluminium-plate", 10),
+      PM.ingredient("pm-aluminium-plate", 5),
       PM.ingredient("pm-tin-plate", 5),
       PM.ingredient("pm-lead-plate", 8),
       PM.ingredient("pm-thallium-ore", 3),
@@ -3896,7 +3896,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-aluminium-plate", 10),
+      PM.ingredient("pm-aluminium-plate", 5),
       PM.ingredient("pm-tin-plate", 5),
       PM.ingredient("pm-lead-plate", 8),
       PM.ingredient("pm-thallium-ore", 3),
