@@ -1139,7 +1139,7 @@ data:extend({
     prerequisites = {"chemical-science-pack"},
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients =
       {
         {"automation-science-pack", 1},

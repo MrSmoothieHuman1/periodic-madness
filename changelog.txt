@@ -65,6 +65,7 @@ Date: 2024-12-08
     - Deleted the sodium sodium hydroxide recipe.
     - Deleted the recipe to turn acidic water into sulfuric acid.
     - Deleted the alternative recipe for fiberoptic cable.
+    - Changed CO2 nullifying to take 200 packs instead of 100.
 
   Fixes:
     - Fixed the science pack item names captilisation.
