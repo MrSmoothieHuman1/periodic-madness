@@ -156,7 +156,7 @@ data:extend({
     results =
     {
       PM.product("pm-caesium-hexachlorocerate", 2),
-      PM.product_range_chance("pm-caesium-iodine-chloride", 2, 5, 0.4),
+      PM.product_range_chance("pm-caesium-iodine-chloride", 2, 5, 0.6),
       PM.product_range_chance("pm-caesium-antimony-chloride", 2, 5, 0.6),
     }
   } --[[@as data.RecipePrototype]],
@@ -166,13 +166,13 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/caesium-iodine-to-antimony.png",
     enabled = false,
-    energy_required = 3,
+    energy_required = 4,
     subgroup = "pm-caesium-am",
     order = "d",
     ingredients =
     {
       PM.ingredient("pm-caesium-iodine-chloride", 4),
-      PM.ingredient("pm-caesium-hexachlorocerate", 4)
+      PM.ingredient("pm-caesium-hexachlorocerate", 3)
     },
     results =
     {
@@ -186,13 +186,13 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/caesium-antimony-to-iodine.png",
     enabled = false,
-    energy_required = 3,
+    energy_required = 4,
     subgroup = "pm-caesium-am",
     order = "e",
     ingredients =
     {
       PM.ingredient("pm-caesium-antimony-chloride", 4),
-      PM.ingredient("pm-caesium-hexachlorocerate", 2)
+      PM.ingredient("pm-caesium-hexachlorocerate", 3)
     },
     results =
     {
@@ -206,7 +206,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/caesium-hexachlorocerate-seperation.png",
     enabled = false,
-    energy_required = 3,
+    energy_required = 4,
     subgroup = "pm-caesium-am",
     order = "ea",
     ingredients =
@@ -230,8 +230,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-caesium-iodine-chloride", 6),
-      PM.ingredient("pm-caesium-antimony-chloride", 3),
+      PM.ingredient("pm-caesium-iodine-chloride", 4),
+      PM.ingredient("pm-caesium-antimony-chloride", 4),
       PM.ingredient("pm-calcium-ore", 6)
     },
     results =
@@ -250,8 +250,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-caesium-iodine-chloride", 6),
-      PM.ingredient("pm-caesium-antimony-chloride", 3),
+      PM.ingredient("pm-caesium-iodine-chloride", 4),
+      PM.ingredient("pm-caesium-antimony-chloride", 4),
       PM.ingredient("pm-calcium-chloride", 3)
     },
     results =
@@ -272,7 +272,6 @@ data:extend({
     {
       PM.ingredient("pm-caesium-chloride", 6),
       PM.ingredient("pm-ammonia-gas", 10, "fluid"),
-      PM.ingredient("pm-potassium", 5)
     },
     results =
     {
