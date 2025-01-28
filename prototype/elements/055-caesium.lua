@@ -116,14 +116,14 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-pollucite", 8)
+      PM.product_range("pm-pollucite", 6, 12)
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-pollucite-crushing",
     enabled = false,
-    energy_required = 8,
+    energy_required = 15,
     category = "pm-crushing",
     subgroup = "pm-caesium-am",
     order = "b",
@@ -134,129 +134,95 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-fine-pollucite-powder", 6, 8),
-      PM.product_range_chance("pm-alkali-metals-ore", 0, 2, 0.6)
+      PM.product("pm-fine-pollucite-powder", 12),
+      PM.product_range_chance("pm-alkali-metals-ore", 0, 4, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-pollucite-seperation",
     enabled = false,
-    energy_required = 12,
+    energy_required = 10,
     category = "chemistry",
     subgroup = "pm-caesium-am",
     order = "c",
-    main_product = "pm-caesium-hexachlorocerate",
+    main_product = "pm-caesium-iodine-chloride",
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-fine-pollucite-powder", 12),
-      PM.ingredient("pm-hydrochloric-acid", 50, "fluid")
+      PM.ingredient("pm-hydrochloric-acid", 20, "fluid")
     },
     results =
     {
-      PM.product("pm-caesium-hexachlorocerate", 2),
-      PM.product_range_chance("pm-caesium-iodine-chloride", 2, 5, 0.6),
-      PM.product_range_chance("pm-caesium-antimony-chloride", 2, 5, 0.6),
+      PM.product_range_chance("pm-caesium-hexachlorocerate", 2, 5, 0.75),
+      PM.product_range_chance("pm-caesium-iodine-chloride", 2, 5, 0.75),
+      PM.product_range_chance("pm-caesium-antimony-chloride", 2, 5, 0.75),
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-caesium-iodine-to-antimony",
+    name = "pm-caesium-iodine-seperation",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/caesium-iodine-to-antimony.png",
     enabled = false,
     energy_required = 4,
+    category = "chemistry",
     subgroup = "pm-caesium-am",
     order = "d",
     ingredients =
     {
       PM.ingredient("pm-caesium-iodine-chloride", 4),
-      PM.ingredient("pm-caesium-hexachlorocerate", 3)
+      PM.ingredient("pm-hydrochloric-acid", 15, "fluid")
     },
     results =
     {
-      PM.product("pm-caesium-antimony-chloride", 4),
+      PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
+      PM.product_range("pm-chlorine", 2.5, 5, "fluid"),
       PM.product_range("pm-iodine", 0, 4)
     }
   },
   {
     type = "recipe",
-    name = "pm-caesium-antimony-to-iodine",
+    name = "pm-caesium-antimony-seperation",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/caesium-antimony-to-iodine.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/caesium-iodine-to-antimony.png",
     enabled = false,
     energy_required = 4,
+    category = "chemistry",
     subgroup = "pm-caesium-am",
     order = "e",
     ingredients =
     {
       PM.ingredient("pm-caesium-antimony-chloride", 4),
-      PM.ingredient("pm-caesium-hexachlorocerate", 3)
+      PM.ingredient("pm-hydrochloric-acid", 15, "fluid")
     },
     results =
     {
-      PM.product("pm-caesium-iodine-chloride", 4),
-      PM.product_range("pm-antimony-ore", 0, 4)
+      PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
+      PM.product_range("pm-hydrogen-gas", 2.5, 5, "fluid"),
+      PM.product_range("pm-antimony-ore", 0, 3)
     }
   },
   {
     type = "recipe",
     name = "pm-caesium-hexachlorocerate-seperation",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/caesium-hexachlorocerate-seperation.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/caesium-iodine-to-antimony.png",
     enabled = false,
     energy_required = 4,
+    category = "chemistry",
     subgroup = "pm-caesium-am",
-    order = "ea",
+    order = "e",
     ingredients =
     {
-      PM.ingredient("pm-caesium-hexachlorocerate", 20)
+      PM.ingredient("pm-caesium-hexachlorocerate", 4),
+      PM.ingredient("pm-hydrochloric-acid", 15, "fluid")
     },
     results =
     {
-      PM.product("pm-caesium-iodine-chloride", 4),
-      PM.product("pm-caesium-antimony-chloride", 4),
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-caesium-chloride",
-    enabled = false,
-    energy_required = 6,
-    subgroup = "pm-caesium-am",
-    order = "f",
-    main_product = "pm-caesium-chloride",
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-caesium-iodine-chloride", 4),
-      PM.ingredient("pm-caesium-antimony-chloride", 4),
-      PM.ingredient("pm-calcium-ore", 6)
-    },
-    results =
-    {
-      PM.product("pm-caesium-chloride", 4)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-calcium-chloride-caesium-chloride",
-    enabled = false,
-    energy_required = 6,
-    subgroup = "pm-caesium-am",
-    order = "fa",
-    main_product = "pm-caesium-chloride",
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-caesium-iodine-chloride", 4),
-      PM.ingredient("pm-caesium-antimony-chloride", 4),
-      PM.ingredient("pm-calcium-chloride", 3)
-    },
-    results =
-    {
-      PM.product("pm-caesium-chloride", 6)
+      PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
+      PM.product_range("pm-hydrochloric-acid", 7.5, 10, "fluid"),
     }
   },
   {
@@ -276,7 +242,6 @@ data:extend({
     results =
     {
       PM.product("pm-caesium", 5, "fluid"),
-      PM.product("pm-chlorine", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })

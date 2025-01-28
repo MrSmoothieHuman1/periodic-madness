@@ -73,15 +73,14 @@ data:extend({
     main_product = "pm-caesium-rubidium-alum",
     ingredients =
     {
-      PM.ingredient("pm-pollucite", 4),
-      PM.ingredient("pm-caesium", 2, "fluid"),
-      PM.ingredient("pm-potassium", 4),
+      PM.ingredient("pm-pollucite", 3),
+      PM.ingredient("pm-caesium", 0.5, "fluid"),
       PM.ingredient("pm-aluminium-plate", 6)
     },
     results =
     {
-      PM.product_range("pm-caesium-rubidium-alum", 2, 5),
-      PM.product_range_chance("pm-fine-pollucite-powder", 2, 4, 0.6)
+      PM.product_range("pm-caesium-rubidium-alum", 3, 6),
+      PM.product_range_chance("pm-pollucite", 2, 3, 0.6)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -93,7 +92,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-rubidium-am",
     order = "b",
-    energy_required = 12,
+    energy_required = 9,
     ingredients =
     {
       PM.ingredient("pm-caesium-rubidium-alum", 6)
@@ -113,11 +112,11 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-rubidium-am",
     order = "c",
-    energy_required = 4,
+    energy_required = 3,
     ingredients =
     {
       PM.ingredient("pm-70-rubidium-alum", 2),
-      PM.ingredient("pm-rubidium-alum", 1)
+      --PM.ingredient("pm-rubidium-alum", 1)
     },
     results =
     {
@@ -131,11 +130,11 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-rubidium-am",
     order = "d",
-    energy_required = 4,
+    energy_required = 3,
     ingredients =
     {
       PM.ingredient("pm-50-rubidium-alum", 2),
-      PM.ingredient("pm-70-rubidium-alum", 1)
+      --PM.ingredient("pm-70-rubidium-alum", 1)
     },
     results =
     {
@@ -149,11 +148,11 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-rubidium-am",
     order = "e",
-    energy_required = 4,
+    energy_required = 3,
     ingredients =
     {
       PM.ingredient("pm-30-rubidium-alum", 2),
-      PM.ingredient("pm-50-rubidium-alum", 1)
+      --PM.ingredient("pm-50-rubidium-alum", 1)
     },
     results =
     {
@@ -167,18 +166,19 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-rubidium-am",
     order = "f",
-    energy_required = 8,
+    energy_required = 9,
     main_product = "pm-rubidium",
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-rubidium-alum", 3),
+      PM.ingredient("pm-rubidium-alum", 2),
       PM.ingredient("sulfuric-acid", 15, "fluid")
     },
     results =
     {
       PM.product("pm-rubidium", 1),
-      PM.product_range("pm-sulfur-trioxide", 2, 8, "fluid"),
+      PM.product_chance("pm-rubidium", 1, 0.5),
+      PM.product_range("pm-sulfur-dioxide", 2, 6, "fluid"),
       PM.product_range("pm-aluminium-plate", 0, 5),
     }
   } --[[@as data.RecipePrototype]]

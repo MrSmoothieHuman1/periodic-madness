@@ -259,7 +259,7 @@ data:extend({
     name = "pm-integrated-circuit-mold",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/integrated-circuit-mold.png",
-    energy_required = 6,
+    energy_required = 4,
     category = "pm-advanced-molding",
     subgroup = "pm-molded-circuits",
     order = "b",

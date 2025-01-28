@@ -2463,7 +2463,6 @@ data:extend({
       PM.unlock_recipe("pm-ammonium-chloride-seperation"),
       PM.unlock_recipe("pm-sodium-bicarbonate-heating"),
       PM.unlock_recipe("pm-sodium-carbonate-seperation"),
-      PM.unlock_recipe("pm-calcium-chloride-caesium-chloride")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
@@ -2515,10 +2514,9 @@ data:extend({
       PM.unlock_recipe("pm-pollucite-leeching"),
       PM.unlock_recipe("pm-pollucite-crushing"),
       PM.unlock_recipe("pm-pollucite-seperation"),
-      PM.unlock_recipe("pm-caesium-iodine-to-antimony"),
-      PM.unlock_recipe("pm-caesium-antimony-to-iodine"),
+      PM.unlock_recipe("pm-caesium-iodine-seperation"),
+      PM.unlock_recipe("pm-caesium-antimony-seperation"),
       PM.unlock_recipe("pm-caesium-hexachlorocerate-seperation"),
-      PM.unlock_recipe("pm-caesium-chloride"),
       PM.unlock_recipe("pm-caesium")
     },
     prerequisites = {"pm-flourine-processing", "pm-potassium-processing"},
@@ -3699,7 +3697,7 @@ data:extend({
     type = "technology",
     name = "pm-laboratory",
     icon_size = 256,
-    icon = "__base__/graphics/technology/electricity-consumers.png",
+    icon = "__base__/graphics/technology/research-speed.png",
     effects = 
     {
       PM.unlock_recipe("lab"),

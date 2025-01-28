@@ -502,7 +502,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-caesium", 5, "fluid"),
+      PM.ingredient("pm-caesium", 2.5, "fluid"),
       PM.ingredient("pm-potassium", 12),
       PM.ingredient("pm-sodium", 20),
       PM.ingredient("pm-lithium-ore", 10),
