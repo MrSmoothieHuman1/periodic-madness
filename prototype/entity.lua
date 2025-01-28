@@ -3543,7 +3543,7 @@ data:extend({
   },
     crafting_categories = { "pm-washing" },
     crafting_speed = 1,
-    energy_usage = "420kW",
+    energy_usage = "240kW",
     allowed_effects = PM.all_effects(),
     module_slots = 2,
     energy_source =
