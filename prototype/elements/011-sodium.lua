@@ -43,7 +43,7 @@ data:extend({
     category = "pm-washing",
     subgroup = "pm-sodium-am",
     order = "a",
-    energy_required = 10,
+    energy_required = 8,
     ingredients =
     {
       PM.ingredient("pm-sea-salt", 10),
@@ -52,7 +52,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium-bicarbonate", 10),
+      PM.product_range("pm-sodium-bicarbonate", 10, 15),
       PM.product("pm-ammonium-chloride", 10)
     }
   } --[[@as data.RecipePrototype]],
@@ -65,7 +65,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-sodium-am",
     order = "b",
-    energy_required = 5,
+    energy_required = 4,
     ingredients =
     {
       PM.ingredient("pm-ammonium-chloride", 10),
@@ -95,7 +95,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium-carbonate", 5),
+      PM.product("pm-sodium-carbonate", 20),
       PM.product_range("pm-carbon-dioxide-gas", 4, 10, "fluid"),
     }
   } --[[@as data.RecipePrototype]],
@@ -112,7 +112,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-sodium-carbonate", 15),
+      PM.ingredient("pm-sodium-carbonate", 10),
       PM.ingredient("pm-carbon", 10)
     },
     results =

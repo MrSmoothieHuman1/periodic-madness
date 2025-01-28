@@ -49,7 +49,7 @@ data:extend({
     type = "recipe",
     name = "pm-seawater-evaporite",
     enabled = false,
-    energy_required = 10,
+    energy_required = 3,
     category = "pm-evaporation",
     subgroup = "pm-potassium-am",
     order = "a",
@@ -62,15 +62,15 @@ data:extend({
     results =
     {
       PM.product_range("pm-calcite", 1, 6),
-      PM.product_range("pm-anhydrite", 2, 5),
-      PM.product("pm-sylvite", 4)
+      PM.product_range("pm-anhydrite", 3, 6),
+      PM.product_range("pm-sylvite", 4, 8)
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-sylvite-seperation",
     enabled = false,
-    energy_required = 4,
+    energy_required = 3,
     category = "pm-crushing",
     subgroup = "pm-potassium-am",
     order = "b",
@@ -83,14 +83,14 @@ data:extend({
     results =
     {
       PM.product_range("pm-potash", 2, 4),
-      PM.product_chance("stone", 5, 0.65)
+      PM.product_chance("stone", 5, 0.85)
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-anhydrite-seperation",
     enabled = false,
-    energy_required = 2,
+    energy_required = 3,
     category = "pm-crushing",
     subgroup = "pm-potassium-am",
     order = "c",
@@ -102,16 +102,16 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-calcium-sulfate", 1, 5, 0.9),
-      PM.product_chance("pm-potash", 2, 0.22),
-      PM.product_range_chance("pm-sodium", 0, 3, 0.1)
+      PM.product_range_chance("pm-calcium-sulfate", 1, 5, 0.75),
+      PM.product("pm-potash", 3),
+      PM.product_range_chance("pm-sodium", 0, 3, 0.15)
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-potash-potassium",
     enabled = false,
-    energy_required = 5,
+    energy_required = 2.5,
     category = "chemistry",
     subgroup = "pm-potassium-am",
     order = "d",

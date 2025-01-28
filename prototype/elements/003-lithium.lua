@@ -34,7 +34,7 @@ data:extend({
     name = "pm-calcium-brine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/calcium-brine.png",
-    energy_required = 4,
+    energy_required = 3,
     category = "pm-washing",
     subgroup = "pm-lithium-am",
     order = "A",
@@ -47,7 +47,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-brine", 20, "fluid")
+      PM.product("pm-brine", 25, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -67,7 +67,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-brine", 20, "fluid")
+      PM.product("pm-brine", 25, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
