@@ -3460,8 +3460,7 @@ data:extend({
     crafting_categories = { "pm-air-filtering" },
     energy_usage = "1kW",
     crafting_speed = 1,
-    energy_source = {type = "void"},
-    emissions_per_minute = -50,
+    energy_source = {type = "void", emissions_per_minute = -50},
     graphics_set = 
   {
     animation =
