@@ -2742,6 +2742,7 @@ data:extend({
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     fluid_box =
     {
+      max_pipeline_extent = 320 * 1.75,
       volume = 200,
       pipe_covers = pipecoverspictures(), -- in case a real pipe is connected to a ghost
       pipe_connections =
@@ -3008,6 +3009,7 @@ data:extend({
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     fluid_box =
     {
+      max_pipeline_extent = 320 * 1.75,
       volume = 200,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
