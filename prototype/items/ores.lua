@@ -403,6 +403,8 @@ data:extend({
     {
       {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",   size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-3.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-potassium-am",
     order = "d",
@@ -463,7 +465,6 @@ data:extend({
     {
       {filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",   size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon-2.png", size = 64, scale = 0.5},
-
     },
     subgroup = "pm-mt-mt",
     order = "a",
@@ -504,6 +505,13 @@ data:extend({
     name = "pm-germanium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-germanium-mt",
     order = "e",
     stack_size = 200
@@ -541,6 +549,7 @@ data:extend({
     name = "pm-magnesium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/magnesium-ore.png",
+    pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/ores/magnesium-ore.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/magnesium-ore-2.png", size = 64, scale = 0.5},
@@ -549,6 +558,15 @@ data:extend({
     },
     subgroup = "pm-magnesium-aem",
     order = "c",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-barium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/barium-ore-icon.png",
+    subgroup = "pm-antimony-mt",
+    order = "e",
     stack_size = 200
   },
 })
