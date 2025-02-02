@@ -22,7 +22,7 @@ data:extend({
       type = "electric",
       usage_priority = "primary-output"
     },
-    power = "60kW",
+    power = "45kW",
     categories = { "armor" }
   },
 
@@ -256,7 +256,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "25MJ",
+      buffer_capacity = "30MJ",
       usage_priority = "tertiary"
     },
     categories = {"armor"}
@@ -306,8 +306,8 @@ data.raw["battery-equipment"]["battery-mk2-equipment"].shape =
     }
 data.raw["battery-equipment"]["battery-equipment"].energy_source.buffer_capacity = "50MJ"
 data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.buffer_capacity = "200MJ"
-data.raw["battery-equipment"]["battery-equipment"].energy_source.output_flow_limit = "750kW"
-data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.output_flow_limit = "1200kW"
+data.raw["battery-equipment"]["battery-equipment"].energy_source.output_flow_limit = "500kW"
+data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.output_flow_limit = "1000kW"
 data.raw["item"]["battery-equipment"].subgroup = "pm-modular-storage"
 data.raw["item"]["battery-equipment"].order = "a"
 data.raw["item"]["battery-mk2-equipment"].subgroup = "pm-modular-storage"
