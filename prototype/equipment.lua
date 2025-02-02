@@ -324,6 +324,13 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].burner =
 data.raw["generator-equipment"]["fission-reactor-equipment"].power = "500kW"
 data.raw["item"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["fission-reactor-equipment"].order = "c"
+data.raw["generator-equipment"]["fission-reactor-equipment"].shape = 
+{
+  width = 3,
+  height = 3,
+  type = "full"
+}
+
 
 data.raw["item"]["solar-panel-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["solar-panel-equipment"].order = "a"
