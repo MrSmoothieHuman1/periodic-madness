@@ -155,5 +155,27 @@ data:extend({
     {
       PM.product("pm-lead-ore", 4)
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-molten-arsenic-lead",
+    enabled = true,
+    energy_required = 6,
+    category = "pm-moltening",
+    subgroup = "pm-lead-ptm",
+    order = "f",
+    main_product = "pm-molten-lead",
+    ingredients = 
+    {
+      PM.ingredient("pm-impure-lead", 5),
+      PM.ingredient("pm-arsenic-ore", 2),
+      PM.ingredient("pm-borax", 2),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-molten-lead", 4.5, 5, "fluid"),
+      PM.product_range_chance("pm-mixed-ore-slag", 0, 3, 0.5)
+    }
+  }
 })
