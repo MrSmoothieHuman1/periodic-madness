@@ -1473,6 +1473,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-solar-panel-equipment-3",
+    icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-3-icon.png",
+    icon_size = 64,
+    place_as_equipment_result = "pm-solar-panel-equipment-3",
+    subgroup = "pm-modular-power",
+    order = "c",
+    stack_size = 20
+  },
+  {
+    type = "item",
     name = "pm-personal-robostasher-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robostasher-equipment.png",
     icon_size = 128,

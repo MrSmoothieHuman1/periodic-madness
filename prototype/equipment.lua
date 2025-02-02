@@ -25,6 +25,31 @@ data:extend({
     power = "45kW",
     categories = { "armor" }
   },
+  {
+    type = "solar-panel-equipment",
+    name = "pm-solar-panel-equipment-3",
+    sprite =
+    {
+      filename = "__periodic-madness__/graphics/equipment/solar-panel-equipment-3.png",
+      width = 64,
+      height = 64,
+      priority = "medium",
+      scale = 0.5
+    },
+    shape =
+    {
+      width = 1,
+      height = 1,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "primary-output"
+    },
+    power = "90kW",
+    categories = { "armor" }
+  },
 
   {
     type = "roboport-equipment",

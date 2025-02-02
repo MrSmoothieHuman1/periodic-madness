@@ -23,6 +23,7 @@ Date: 2024-12-08
     - Changed reactors to require some kind of coolant to actually function - and will explode if they arent getting any liquid, and have fuel inside of them. Have fun!
     - Finally solved the whole issue of "hey theres no *real* way to make sulfur", by letting you make sulfur from sulfuric acid.
     - Revamped aluminium, moving it to A-ATM packs (under mixing tanks), and lenthenging the processing chain for it.
+    - Added tier 3 solar panel equipment, with 90kW charge.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -67,6 +68,10 @@ Date: 2024-12-08
     - Deleted the alternative recipe for fiberoptic cable.
     - Changed CO2 nullifying to take 200 packs instead of 100.
     - Halved the amount of aluminium used in PTM packs from 10 to 5.
+    - Changed solar panel 2's to make 45kW, not 60kW.
+    - Changed fission equipment to be 3x3, not 4x4.
+    - Changed lithium-sulfur MK1 equipment to store 30MJ.
+    - Changed vanadium equipment MK1's to discharge 500kW, and MK2's to discharge 1MW.
 
   Fixes:
     - Fixed the science pack item names captilisation.
