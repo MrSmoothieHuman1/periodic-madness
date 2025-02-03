@@ -398,12 +398,12 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-solder-wire", 4),
+      PM.ingredient("pm-solder-wire", 2),
       PM.ingredient("pm-solder-case", 1)
     },
     results =
     {
-      PM.product("pm-solder", 2)
+      PM.product("pm-solder", 1)
     }
   },
   {
