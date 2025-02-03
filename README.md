@@ -46,6 +46,7 @@ Sift through new "group ores", containing the elements of each separate periodic
 # Credits:
 - French translation (WIP): [@TheFrenchTechMan](https://github.com/TheFrenchTechMan)
 - Spanish translation: @Korgak on Discord
+- Polish translation: @S3BA-pl
 - Turkish translation: [@RemiHinanawi](https://github.com/RemiHinanawi)
 - Helped create models for the mod: [@ArchEzekiel](https://github.com/ArchEzekiel)
 - Code cleanup: [@PennyJim](https://github.com/PennyJim)
