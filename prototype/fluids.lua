@@ -1709,6 +1709,18 @@ data:extend({
     base_color = {r = 0.75, g = 0.75, b = 0.75},
     flow_color = {r = 0.75, g = 0.75, b = 0.75}
   },
+  {
+    type = "fluid",
+    name = "pm-titanium-chloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/titanium-chloride.png",
+    subgroup = "pm-titanium-tm",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.33, g = 0.66, b = 0.32},
+    flow_color = {r = 0.33, g = 0.66, b = 0.32},
+    auto_barrel = false
+  },
 
 
 	{

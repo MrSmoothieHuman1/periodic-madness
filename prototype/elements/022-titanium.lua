@@ -7,17 +7,15 @@ data:extend({
     name = "pm-titanium-oxide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/titanium-oxide.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide-4.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-titanium-tm",
     order = "b",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "pm-titanium-chloride",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/titanium-chloride.png",
-    subgroup = "pm-titanium-tm",
-    order = "c",
     stack_size = 100
   },
   {
@@ -102,7 +100,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-chloride", 2),
+      PM.product("pm-titanium-chloride", 2, "fluid"),
       PM.product("pm-oxygen-gas", 4, "fluid")
     }
   } --[[@as data.RecipePrototype]],
@@ -119,7 +117,7 @@ data:extend({
     main_product = "pm-titanium-ore",
     ingredients =
     {
-      PM.ingredient("pm-titanium-chloride", 2)
+      PM.ingredient("pm-titanium-chloride", 2, "fluid")
     },
     results =
     {
