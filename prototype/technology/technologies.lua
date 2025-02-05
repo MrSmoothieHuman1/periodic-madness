@@ -1576,7 +1576,6 @@ data:extend({
       PM.unlock_recipe("pm-ammonia-trace-gas-seperation"),
       PM.unlock_recipe("pm-fertiliser"),
       PM.unlock_recipe("pm-fertilised-wood-growth"),
-      PM.unlock_recipe("pm-ammonia-atmospheric-voiding"),
       PM.unlock_recipe("pm-ammonium-chloride"),
       PM.unlock_recipe("pm-ammonium-vanadate-solution"),
 
@@ -2460,14 +2459,13 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-sodium-bicarbonate"),
-      PM.unlock_recipe("pm-ammonium-chloride-seperation"),
       PM.unlock_recipe("pm-sodium-bicarbonate-heating"),
       PM.unlock_recipe("pm-sodium-carbonate-seperation"),
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
-      count = 175,
+      count = 200,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4313,6 +4311,24 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 30
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-ammonium-chloride-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/platinum-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-ammonium-chloride-seperation"),
+      PM.unlock_recipe("pm-ammonia-atmospheric-voiding")
+    },
+    prerequisites = {"pm-platinum-processing"},
+    research_trigger = 
+    {
+      type = "craft-item",
+      item = "pm-ammonium-chloride",
+      count = 10
     }
   },
 

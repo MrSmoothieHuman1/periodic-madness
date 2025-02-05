@@ -9,7 +9,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/transition-metals-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-1.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-3.png", size = 64, scale = 0.5},
@@ -73,7 +73,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon-2.png", size = 64, scale = 0.5},
     },
@@ -104,7 +104,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/silver-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-3.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/silver-ore-icon-4.png", size = 64, scale = 0.5}
@@ -120,7 +120,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon.png",   size = 128, scale = 0.25},
+      {filename = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon.png", size = 128, scale = 0.25},
       {filename = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon-1.png", size = 128, scale = 0.25}
     },
     subgroup = "pm-molybdenum-tm",
@@ -199,7 +199,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-3.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-4.png", size = 64, scale = 0.5},
@@ -215,8 +215,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png",
     pictures =
     {
-
-      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-3.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-4.png", size = 64, scale = 0.5},
@@ -257,7 +256,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon-1.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon-3.png", size = 64, scale = 0.5},
@@ -374,7 +373,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon.png",   size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon.png", size = 64, scale = 0.5 },
       {filename = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-cobalt-tm",
@@ -388,7 +387,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-am-am",
@@ -402,9 +401,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-3.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-3.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-potassium-am",
@@ -436,7 +435,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/lithium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/lithium-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/lithium-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/lithium-ore-icon-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-lithium-am",
@@ -450,7 +449,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/rubidium.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/rubidium.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/rubidium.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/rubidium-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-rubidium-am",
@@ -464,7 +463,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-mt-mt",
@@ -478,7 +477,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/yttrium-ore-icon-3.png", size = 64, scale = 0.5},
     },
@@ -493,7 +492,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/tellurium-ore.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore.png",   size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore-3.png", size = 64, scale = 0.5},
     },

@@ -24,6 +24,7 @@ Date: 2024-12-08
     - Finally solved the whole issue of "hey theres no *real* way to make sulfur", by letting you make sulfur from sulfuric acid.
     - Revamped aluminium, moving it to A-ATM packs (under mixing tanks), and lenthenging the processing chain for it.
     - Added tier 3 solar panel equipment, with 90kW charge.
+    - Added a new technology unlocked after platinum processing, moving ammonium chloride seperation and ammonia voiding down to A-ATM science.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
