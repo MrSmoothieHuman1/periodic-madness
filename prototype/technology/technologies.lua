@@ -4321,7 +4321,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-ammonium-chloride-seperation"),
-      PM.unlock_recipe("pm-ammonia-atmospheric-voiding")
+      PM.unlock_recipe("pm-calcium-chloride-seperation"),
     },
     prerequisites = {"pm-platinum-processing"},
     research_trigger = 

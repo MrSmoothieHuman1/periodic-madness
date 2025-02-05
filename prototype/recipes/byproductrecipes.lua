@@ -383,5 +383,22 @@ data:extend({
       PM.product_range_chance("pm-patina", 0, 4, 0.25)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-calcium-chloride-seperation",
+    enabled = false,
+    category = "pm-washing",
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-chloride", 6),
+      PM.ingredient("water", 40, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-calcium-ore", 0, 6),
+      PM.product_range("pm-chlorine", 0, 12, "fluid"),
+    }
+  }
 
 } --[[@as data.RecipePrototype[] ]])
