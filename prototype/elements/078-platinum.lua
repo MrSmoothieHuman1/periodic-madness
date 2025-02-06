@@ -122,7 +122,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-nickel-froth", 5, "fluid"),
+      PM.ingredient("pm-nickel-froth", 2.5, "fluid"),
       PM.ingredient("pm-filled-flux-container", 1)
     },
     results =

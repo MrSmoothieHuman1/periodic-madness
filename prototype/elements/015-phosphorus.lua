@@ -148,7 +148,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phosphor-vapour", 10, "fluid"),
+      PM.product("pm-phosphor-vapour", 20, "fluid"),
       PM.product_chance("pm-flux-container", 1, 0.66)
     }
   } --[[@as data.RecipePrototype]],

@@ -1359,9 +1359,9 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-flux-container", 1),
-      PM.ingredient("pm-sand", 8),
+      PM.ingredient("pm-sand", 6),
       PM.ingredient("pm-coke", 2),
-      PM.ingredient("pm-flourine", 4)
+      PM.ingredient("pm-flourine", 2)
     },
     results = {
       PM.product("pm-filled-flux-container", 1)
