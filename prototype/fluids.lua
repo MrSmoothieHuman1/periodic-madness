@@ -1713,7 +1713,7 @@ data:extend({
     type = "fluid",
     name = "pm-titanium-chloride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/titanium-chloride.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/titanium-tetrachloride.png",
     subgroup = "pm-titanium-tm",
     order = "c",
     default_temperature = 15,

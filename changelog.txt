@@ -74,6 +74,7 @@ Date: 2024-12-08
     - Changed lithium-sulfur MK1 equipment to store 30MJ.
     - Changed vanadium equipment MK1's to discharge 500kW, and MK2's to discharge 1MW.
     - Changed titanium chloride into the fluid, instead of an item.
+    - Changed iron/copper/zinc/nickel TM leeching recipes to take 8 TM ore, instead of 12.
 
   Fixes:
     - Fixed the science pack item names captilisation.

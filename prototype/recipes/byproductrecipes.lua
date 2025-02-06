@@ -389,6 +389,7 @@ data:extend({
     enabled = false,
     category = "pm-washing",
     energy_required = 5,
+    main_product = "pm-calcium-ore",
     ingredients = 
     {
       PM.ingredient("pm-calcium-chloride", 6),

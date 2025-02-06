@@ -46,7 +46,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-transition-metals-ore", 8),
       PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
     },
     allow_decomposition = false,
@@ -87,7 +87,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 12),
+      PM.ingredient("pm-transition-metals-ore", 8),
       PM.ingredient("pm-chromic-acid", 2, "fluid"),
     },
     allow_decomposition = false,
