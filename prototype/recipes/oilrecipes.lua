@@ -740,7 +740,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-catalyst-container",
-    energy_required = 4,
+    energy_required = 1.5,
     enabled = false,
     subgroup = "pm-catalysts",
     order = "a",

@@ -1336,7 +1336,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-flux-container",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     subgroup = "pm-catalysts",
     order = "g",
