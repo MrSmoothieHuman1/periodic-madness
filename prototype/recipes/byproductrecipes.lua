@@ -210,7 +210,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-ore-slag", 1, 3)
+      PM.product_range("iron-ore", 2, 4)
     }
   },
   {
@@ -239,7 +239,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-ore-slag", 1, 3)
+      PM.product_range("copper-ore", 2, 4)
     }
   },
   {
