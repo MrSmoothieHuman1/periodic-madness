@@ -53,6 +53,7 @@ data:extend({
     subgroup = "pm-circuits",
     order = "a",
     allow_productivity = true,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-nickel-plate", 4),
@@ -70,6 +71,7 @@ data:extend({
     order = "b",
     show_amount_in_title = true,
     allow_productivity = true,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("iron-plate", 1),
