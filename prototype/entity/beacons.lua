@@ -8,7 +8,7 @@ data:extend({
         name = "pm-hub-beacon",
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.45, result = "pm-hub-beacon"},
+        minable = {mining_time = 0.45, result = "beacon"},
         fast_replaceable_group = "beacon",
         max_health = 550,
         corpse = "beacon-remnants",
@@ -18,7 +18,7 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_effects = {"consumption", "speed", "pollution"},
-        graphics_set = require("prototypes.entity.beacon-animations"),
+        graphics_set = require("__base__.prototypes.entity.beacon-animations"),
         radius_visualisation_picture =
         {
           filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
@@ -67,7 +67,7 @@ data:extend({
         module_slots = 6,
         icons_positioning =
         {
-          {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 2}
+          {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 6}
         },
         water_reflection =
         {
@@ -90,17 +90,17 @@ data:extend({
         name = "pm-proximity-beacon",
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.2, result = "pm-proximity-beacon"},
+        minable = {mining_time = 0.2, result = "beacon"},
         fast_replaceable_group = "beacon",
         max_health = 150,
         corpse = "beacon-remnants",
         dying_explosion = "beacon-explosion",
-        collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+        collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
+        selection_box = {{-1, -1}, {1, 1}},
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_effects = {"consumption", "speed", "pollution"},
-        graphics_set = require("prototypes.entity.beacon-animations"),
+        graphics_set = require("__base__.prototypes.entity.beacon-animations"),
         radius_visualisation_picture =
         {
           filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
