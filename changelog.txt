@@ -25,6 +25,7 @@ Date: 2024-12-08
     - Revamped aluminium, moving it to A-ATM packs (under mixing tanks), and lenthenging the processing chain for it.
     - Added tier 3 solar panel equipment, with 90kW charge.
     - Added a new technology unlocked after platinum processing, moving ammonium chloride seperation and ammonia voiding down to A-ATM science.
+    - Added 2 new types of beacons unlocked at AEM science, hub and proximity beacons. Hub beacons are wide and large beacons that can handle a lot of modules, but have a low distribution range. Proximity beacons are the opposite.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
