@@ -134,6 +134,7 @@ data:extend({
     order = "c",
     category = "smelting",
     energy_required = 3.2,
+    enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-aluminium-ore", 1) },
     results = {

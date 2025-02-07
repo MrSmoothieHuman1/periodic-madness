@@ -155,6 +155,7 @@ data:extend({
     energy_required = 8,
     main_product = "pm-mixed-calcium-rock",
     allow_productivity = true,
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-alkaline-earth-metals-ore", 16),
@@ -174,6 +175,7 @@ data:extend({
     order = "d",
     energy_required = 6,
     allow_productivity = true,
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-mixed-calcium-rock", 6),
@@ -193,6 +195,7 @@ data:extend({
     order = "e",
     energy_required = 4,
     allow_productivity = true,
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-calcium-hydroxide-slurry", 10, "fluid"),
@@ -211,6 +214,7 @@ data:extend({
     order = "f",
     energy_required = 3,
     main_product = "pm-calcium-oxide",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-calcite", 6),
@@ -232,6 +236,7 @@ data:extend({
     order = "g",
     energy_required = 9,
     main_product = "pm-calcium-ore",
+    enabled = false,
     ingredients = 
     {
       PM.ingredient("pm-molten-aluminium", 5, "fluid"),
