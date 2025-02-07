@@ -108,7 +108,7 @@ data:extend({
           width = 10,
           height = 10
         },
-        supply_area_distance = 3,
+        supply_area_distance = 2,
         energy_source =
         {
           type = "electric",

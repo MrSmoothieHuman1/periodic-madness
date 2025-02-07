@@ -554,7 +554,7 @@ data:extend({
   },
 
   --Framing
-
+  
   {
     type = "recipe",
     name = "pm-iron-basic-framing",
@@ -579,35 +579,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("iron-plate", 2),
-    },
-    results =
-    {
-      PM.product("pm-basic-framing", 2)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-nickel-basic-framing",
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/basic-framing.png",
-        icon_size = 64,
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
-        icon_size = 64,
-        scale = 0.28,
-        shift = {10, -6}
-      },
-    },
-    energy_required = 0.5,
-    show_amount_in_title = true,
-    subgroup = "pm-multimetal-framing",
-    order = "b",
-    ingredients =
-    {
-      PM.ingredient("pm-nickel-plate", 2),
     },
     results =
     {
