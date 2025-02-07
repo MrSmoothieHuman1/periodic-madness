@@ -3700,7 +3700,7 @@ data:extend({
     {
       PM.unlock_recipe("lab"),
     },
-    prerequisites = {"pm-crushing"},
+    prerequisites = {"pm-crushing", "electronics"},
     research_trigger = 
     {
       type = "craft-item",
