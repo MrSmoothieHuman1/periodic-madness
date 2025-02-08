@@ -77,6 +77,8 @@ Date: 2024-12-08
     - Changed titanium chloride into the fluid, instead of an item.
     - Changed iron/copper/zinc/nickel TM leeching recipes to take 8 TM ore, instead of 12.
     - Reverted chromic ferrum/patina recipes to their old versions, but changed the constant 4 ore to 2-4.
+    - Changed normal beacons to have 3 module slots.
+    - Changed normal beacons to have 1 distribution effectivity, instead of 1.5.
 
   Fixes:
     - Fixed the science pack item names captilisation.
