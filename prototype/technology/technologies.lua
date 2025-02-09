@@ -1573,14 +1573,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/fertiliser-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-ammonia-trace-gas-seperation"),
       PM.unlock_recipe("pm-fertiliser"),
       PM.unlock_recipe("pm-fertilised-wood-growth"),
       PM.unlock_recipe("pm-ammonium-chloride"),
       PM.unlock_recipe("pm-ammonium-vanadate-solution"),
-
     },
-    prerequisites = {"pm-phosphor-processing", "pm-greenhouse"},
+    prerequisites = {"pm-phosphor-processing", "pm-greenhouse", "pm-atmospheric-ammonia"},
     unit =
     {
       count = 150,
@@ -4329,6 +4327,54 @@ data:extend({
       type = "craft-item",
       item = "pm-ammonium-chloride",
       count = 10
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-atmospheric-ammonia",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-ammonia-trace-gas-seperation"),
+      PM.unlock_recipe("pm-ammonia-atmospheric-voiding"),
+    },
+    prerequisites = {"chemical-science-pack"},
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+      },
+      time = 45
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-haber-bosch-ammonia",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
     }
   },
 
