@@ -161,7 +161,8 @@ data:extend({
         results = 
         {
             PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 4, 0.5),
-            PM.product_range("pm-ferrum", 2, 6)
+            PM.product_range("pm-ferrum", 1, 3),
+            PM.product_range("pm-patina", 2, 4),
         }
     },
     {

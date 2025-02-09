@@ -106,7 +106,7 @@ data:extend({
         {
             PM.product_range("pm-crude-antimony-sulfide", 2, 5),
             PM.product_range_chance("pm-lead-powder", 0, 4, 0.56),
-            PM.product_chance("pm-ferrum", 3, 0.66)
+            PM.product_chance("pm-patina", 3, 0.66)
         }
     },
     {
@@ -171,7 +171,7 @@ data:extend({
         results = 
         {
             PM.product("pm-antimony-ore", 6),
-            PM.product_range("pm-ferrum", 2, 4)
+            PM.product_range("pm-ferrum", 1, 4)
         }
     }
 })
