@@ -2,6 +2,16 @@ local PM = require("library")
 data:extend({
 
     {
+      type = "item",
+      name = "pm-nitrous-iron",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+      subgroup = "pm-nitrogen-rnm",
+      order = "ga",
+      stack_size 50
+    }
+
+    {
         type = "recipe",
         name = "pm-nitrogen-air-filter",
         category = "advanced-crafting",
@@ -120,13 +130,56 @@ data:extend({
         }
     },
     {
+      type = "recipe",
+      name = "pm-haber-bosch-ammonia",
+      energy_required = 3,
+      enabled = false,
+      category = "chemistry",
+      subgroup = "pm-nitrogen-rnm",
+      order = "g",
+      main_product = "pm-ammonia-gas",
+      ingredients =
+      {
+        PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
+        PM.ingredient("pm-nitrogen-gas", 10, "fluid"),
+        PM.ingredient("iron-plate", 5) --should be catalyst for hard mode
+      },
+      results = 
+      {
+        PM.product_range("pm-hydrogen-gas", 0, 5, "fluid"),
+        PM.product_range("pm-ammonia", 15, 20, "fluid"),
+        PM.catalyst_chance("pm-nitrous-iron", 1, 0.5, 1)
+      }
+    },
+    {
+      type = "recipe",
+      name = "pm-nitrous-iron-seperation",
+      energy_required = 6,
+      enabled = false,
+      category = "pm-electrolysis",
+      subgroup = "pm-nitrogen-rnm",
+      order = "ga",
+      ingredients = 
+      {
+        PM.ingredient("pm-nitrous-iron", 1),
+        PM.ingredient("pm-yttrium-catalyst", 1)
+      },
+      results = 
+      {
+        PM.product_range("pm-nitrogen-gas", 0, 5),
+        PM.product_range("iron-plate", 3, 5),
+        PM.product_chance("pm-yttrium-plate", 1, 0.9),
+        PM.product_chance("pm-catalyst-container", 1, 0.1)
+      }
+    },
+    {
         type = "recipe",
         name = "pm-ammonia-atmospheric-voiding",
         icon_size = 128,
         icon = "__periodic-madness__/graphics/icons/recipes/ammonia-voiding.png",
         category = "pm-atmospheric-condensing",
         subgroup = "pm-nitrogen-rnm",
-        order = "g",
+        order = "x",
         enabled = false,
         energy_required = 6,
         emissions_multiplier = -1,

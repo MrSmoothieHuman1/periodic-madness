@@ -1626,7 +1626,6 @@ data:extend({
       PM.unlock_recipe("pm-agar-solution"),
       PM.unlock_recipe("pm-bacteriaed-agar-solution"),
       PM.unlock_recipe("pm-gene-harvesting"),
-
     },
     prerequisites = {"pm-greenhouse"},
     unit =
@@ -4360,7 +4359,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-haber-bosch-ammonia"),
+      PM.unlock_recipe("pm-nitrous-iron-seperation")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
