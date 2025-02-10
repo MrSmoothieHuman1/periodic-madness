@@ -8,8 +8,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
       subgroup = "pm-nitrogen-rnm",
       order = "ga",
-      stack_size 50
-    }
+      stack_size = 50
+    },
 
     {
         type = "recipe",
