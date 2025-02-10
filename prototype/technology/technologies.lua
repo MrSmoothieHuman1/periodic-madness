@@ -4377,6 +4377,34 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "recipe",
+    name = "pm-advanced-iron-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-pig-iron"),
+      PM.unlock_recipe("pm-mixed-molten-iron"),
+      PM.unlock_recipe("pm-mixed-molten-iron-seperation"),
+      PM.unlock_recipe("pm-combined-ore-slag"),
+      PM.unlock_recipe("pm-combined-ore-slab-crushing")
+    },
+    prerequisites = {"pm-advancecd-material-processing-3"},
+    unit =
+    {
+      count = 450,
+      ingredients =
+      {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+  },
 
   {
     type = "technology",

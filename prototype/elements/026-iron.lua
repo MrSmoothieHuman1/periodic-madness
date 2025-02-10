@@ -149,20 +149,40 @@ data:extend({
     category = "pm-coldening",
     subgroup = "pm-advanced-iron-tm",
     order = "c",
-    energy_required = 9,
+    energy_required = 5,
     ingredients = 
     {
       PM.ingredient("pm-mixed-molten-iron", 10, "fluid"),
     },
     results = 
     {
-      PM.product_range("pm-combined-ore-slab", 2, 4),
-      PM.product("iron-ore", 24)
+      PM.product_range("pm-molten-ore-slag", 2.5, 5),
+      PM.product_range("iron-ore", 12)
     }
   },
   {
     type = "recipe",
-    name = "pm-combined-ore-slab-seperation",
+    name = "pm-combined-ore-slag",
+    enabled = false,
+    category = "pm-coldening",
+    subgroup = "pm-advanced-iron-tm",
+    order = "c",
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-ore-slag", 5, "fluid"),
+      PM.ingredient("pm-cobalt-catalyst", 2)
+    },
+    results = 
+    {
+      PM.product_range("pm-combined-ore-slab", 2, 4),
+      PM.product_range_chance("pm-cobalt-catalyst", 0, 2, 0.7),
+      PM.product_range_chance("pm-catalyst-container", 0, 2, 0.25)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-combined-ore-slab-crushing",
     enabled = false,
     category = "pm-crushing",
     subgroup = "pm-advanced-iron-tm",
