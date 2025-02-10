@@ -237,7 +237,7 @@ data:extend({
   },
 
 
-  --MARK: Subgroups: Production
+  --MARK: Production
 
   {
     type = "item-subgroup",
@@ -258,7 +258,7 @@ data:extend({
     order = "g"
   },
 
-  --MARK: Subgroups: Acids
+  --MARK: Acids
   {
     type = "item-subgroup",
     name = "pm-acids", --the acids themselves (eg. acidic water, HCl)
@@ -284,7 +284,7 @@ data:extend({
     order = "e"
   },
 
-  --MARK: Subgroup: Intermediates
+  --MARK: Intermediates
   {
     type = "item-subgroup",
     name = "pm-oil",
@@ -413,7 +413,7 @@ data:extend({
   },
 
 
-  --MARK: Subgroups: Voiding
+  --MARK: Voiding
   {
     type = "item-subgroup",
     name = "pm-voiding",
@@ -422,7 +422,7 @@ data:extend({
   },
 
   
-  --MARK: Subgroups: Production
+  --MARK: Production
   {
     type = "item-subgroup",
     name = "pm-battery-machine",
@@ -473,7 +473,7 @@ data:extend({
     order = "e",
   },
 
-  --MARK: Subgroups: Reactive
+  --MARK: Reactive Non-Metal
   {
     type = "item-subgroup",
     name = "pm-atmosphere-rnm",
@@ -589,7 +589,7 @@ data:extend({
     order = "p",
   },
 
-  --MARK: Subgroups: Alkali
+  --MARK: Alkali Metals
   {
     type = "item-subgroup",
     name = "pm-am-am",
@@ -633,7 +633,7 @@ data:extend({
     order = "g"
   },
 
-  --MARK: Subgroups: Transition
+  --MARK: Transition Metals
   {
     type = "item-subgroup",
     name = "pm-tm-tm",
@@ -644,130 +644,160 @@ data:extend({
     type = "item-subgroup",
     name = "pm-iron-tm",
     group = "pm-transition-metals",
-    order = "d"
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-advanced-iron-tm",
+    group = "pm-transition-metals",
+    order = "ba"
   },
   {
     type = "item-subgroup",
     name = "pm-copper-tm",
     group = "pm-transition-metals",
-    order = "e"
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-advanced-copper-tm",
+    group = "pm-transition-metals",
+    order = "ca"
   },
   {
     type = "item-subgroup",
     name = "pm-nickel-tm",
     group = "pm-transition-metals",
-    order = "f"
+    order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-advanced-nickel-tm",
+    group = "pm-transition-metals",
+    order = "da"
   },
   {
     type = "item-subgroup",
     name = "pm-zinc-tm",
     group = "pm-transition-metals",
-    order = "g"
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-advanced-zinc-tm",
+    group = "pm-transition-metals",
+    order = "ea"
   },
   {
     type = "item-subgroup",
     name = "pm-manganese-tm",
     group = "pm-transition-metals",
-    order = "h"
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-advanced-manganese-tm",
+    group = "pm-transition-metals",
+    order = "fa"
   },
   {
     type = "item-subgroup",
     name = "pm-gold-tm",
     group = "pm-transition-metals",
-    order = "i"
+    order = "g"
   },
   {
     type = "item-subgroup",
     name = "pm-silver-tm",
     group = "pm-transition-metals",
-    order = "j"
+    order = "h"
   },
   {
     type = "item-subgroup",
     name = "pm-mercury-tm",
     group = "pm-transition-metals",
-    order = "k"
+    order = "i"
   },
   {
     type = "item-subgroup",
     name = "pm-molybdenum-tm",
     group = "pm-transition-metals",
-    order = "l"
+    order = "j"
   },
   {
     type = "item-subgroup",
     name = "pm-gold-tm",
     group = "pm-transition-metals",
-    order = "m"
+    order = "k"
   },
   {
     type = "item-subgroup",
     name = "pm-silver-tm",
     group = "pm-transition-metals",
-    order = "n"
+    order = "l"
   },
   {
     type = "item-subgroup",
     name = "pm-titanium-tm",
     group = "pm-transition-metals",
-    order = "o"
+    order = "m"
   },
   {
     type = "item-subgroup",
     name = "pm-tungsten-tm",
     group = "pm-transition-metals",
-    order = "p"
+    order = "n"
   },
   {
     type = "item-subgroup",
     name = "pm-zirconium-tm",
     group = "pm-transition-metals",
-    order = "q"
+    order = "o"
   },
   {
     type = "item-subgroup",
     name = "pm-cadnium-tm",
     group = "pm-transition-metals",
-    order = "r"
+    order = "p"
   },
   {
     type = "item-subgroup",
     name = "pm-cobalt-tm",
     group = "pm-transition-metals",
-    order = "s"
+    order = "q"
   },
   {
     type = "item-subgroup",
     name = "pm-vanadium-tm",
     group = "pm-transition-metals",
-    order = "t"
+    order = "r"
   },
   {
     type = "item-subgroup",
     name = "pm-chrominum-tm",
     group = "pm-transition-metals",
-    order = "u"
+    order = "s"
   },
   {
     type = "item-subgroup",
     name = "pm-palladium-tm",
     group = "pm-transition-metals",
-    order = "v"
+    order = "t"
   },
   {
     type = "item-subgroup",
     name = "pm-platinum-tm",
     group = "pm-transition-metals",
-    order = "w"
+    order = "u"
   },
   {
     type = "item-subgroup",
     name = "pm-yttrium-tm",
     group = "pm-transition-metals",
-    order = "x"
+    order = "v"
   },
 
-  --MARK: Subgroups: Post Transition
+  --MARK: Post Transition
   {
     type = "item-subgroup",
     name = "pm-ptm-ptm",
@@ -871,7 +901,7 @@ data:extend({
     order = "q"
   },
 
-  --MARK: Subgroups: Alkaline
+  --MARK: Alkaline
   {
     type = "item-subgroup",
     name = "pm-aem-aem",
@@ -915,7 +945,7 @@ data:extend({
     order = "f"
   },
 
-  --MARK: Subgroups: Metalloids
+  --MARK: Metalloids
   {
     type = "item-subgroup",
     name = "pm-mt-mt",
@@ -959,7 +989,7 @@ data:extend({
     order = "g"
   },
 
-  --MARK: Subgroups: Noble
+  --MARK:Noble
   {
     type = "item-subgroup",
     name = "pm-helium-nb",
@@ -1095,7 +1125,7 @@ data:extend({
     order = "p"
   },
 
-  --MARK: Subgroups: Multimetal
+  --MARK: Multimetal
   {
     type = "item-subgroup",
     name = "pm-multimetal-tubing",
@@ -1196,7 +1226,7 @@ data:extend({
     order = "p"
   },
 
-  --MARK: Subgroups: Combat
+  --MARK: Combat
   {
     type = "item-subgroup",
     name = "pm-rockets",
@@ -1234,7 +1264,7 @@ data:extend({
     order = "ec",
   },
 
-  --MARK: Subgroups: Logistics
+  --MARK: Logistics
   {
     type = "item-subgroup",
     name = "pm-belts",
