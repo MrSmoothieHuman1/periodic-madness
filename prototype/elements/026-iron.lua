@@ -107,7 +107,7 @@ data:extend({
     subgroup = "pm-advanced-iron-tm",
     order = "a",
     energy_required = 3,
-    allow_producitivty = true,
+    allow_productivty = true,
     ingredients = 
     {
       PM.ingredient("pm-iron-chunk", 4),
@@ -157,7 +157,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-molten-ore-slag", 2.5, 5),
-      PM.product_range("iron-ore", 12)
+      PM.product("iron-ore", 12)
     }
   },
   {
