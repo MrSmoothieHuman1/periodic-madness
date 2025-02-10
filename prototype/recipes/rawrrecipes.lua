@@ -157,8 +157,7 @@ data:extend({
     },
     results =
     {
-      PM.product("iron-ore", 2),
-
+      PM.product("iron-ore", 1),
       PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },
@@ -190,8 +189,7 @@ data:extend({
     },
     results =
     {
-      PM.product("copper-ore", 2),
-
+      PM.product("copper-ore", 1),
       PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },
@@ -223,8 +221,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-ore", 2),
-
+      PM.product("pm-nickel-ore", 1),
       PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },
@@ -256,8 +253,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zinc-ore", 2),
-
+      PM.product("pm-zinc-ore", 1),
       PM.product_chance("pm-ore-slag", 1, 0.5)
     }
   },

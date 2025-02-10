@@ -27,6 +27,7 @@ Date: 2024-12-08
     - Added a new technology unlocked after platinum processing, moving ammonium chloride seperation down to A-ATM science.
     - Added 2 new types of beacons unlocked at AEM science, hub and proximity beacons. Hub beacons are wide and large beacons that can handle a lot of modules, but have a low distribution range. Proximity beacons are the opposite.
     - Added the Haber-Bosch process for ammonia, unlocked at metalloid packs.
+    - Added an advanced iron processing chain that takes 4 steps, but has a 1:6 chunk to ore ratio compared to 1:2.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -93,6 +94,7 @@ Date: 2024-12-08
     - Made slugs actually work with 2.0, im not sure how well they now work so any balance or suggestions are greatly appreciated.
     - Changed byproduct handling to be unlockable from ezekiel processing, and not transition metal leeching.
     - Added the heavy lubricant recipe of solar cells to lubricant technology.
+    - Fixed ezekiel ore leeching to actually give the correct amount of ore. This hurts you more then it hurts me, i assure you.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.150

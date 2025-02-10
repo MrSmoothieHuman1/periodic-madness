@@ -97,4 +97,87 @@ data:extend({
       PM.product_range("pm-ferrum", 0, 4),
     }
   } --[[@as data.RecipePrototype]],
+
+  -- better version of iron, normal chunk to ore is 1:2 - this is 1:6, so 4 chunks (pig iron) turns into 24 ore
+  {
+    type = "recipe",
+    name = "pm-pig-iron",
+    enabled = false,
+    category = "pm-moltening",
+    subgroup = "pm-advanced-iron-tm",
+    order = "a",
+    energy_required = 3,
+    allow_producitivty = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-iron-chunk", 4),
+      PM.ingredient("pm-coke", 4)
+    },
+    results = 
+    {
+      PM.product("pm-pig-iron", 6),
+      PM.product_range("pm-calcite", 0, 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-mixed-molten-iron",
+    enabled = false,
+    category = "pm-moltening",
+    subgroup = "pm-advanced-iron-tm",
+    order = "b",
+    energy_required = 9,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-magnetite", 3),
+      PM.ingredient("pm-pig-iron", 6),
+      PM.ingredient("pm-filled-flux-container", 3),
+      PM.ingredient("pm-oxygen-gas", 20, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-flux-container", 1, 3),
+      PM.product("pm-mixed-molten-iron", 20, "fluid"),
+      PM.product_range_chance("pm-carbon-monoxide", 2, 8, 0.75)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-mixed-molten-iron-seperation",
+    enabled = false,
+    category = "pm-coldening",
+    subgroup = "pm-advanced-iron-tm",
+    order = "c",
+    energy_required = 9,
+    ingredients = 
+    {
+      PM.ingredient("pm-mixed-molten-iron", 10, "fluid"),
+    },
+    results = 
+    {
+      PM.product_range("pm-combined-ore-slab", 2, 4),
+      PM.product("iron-ore", 24)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-combined-ore-slab-seperation",
+    enabled = false,
+    category = "pm-crushing",
+    subgroup = "pm-advanced-iron-tm",
+    order = "d",
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-combined-ore-slab", 4)
+    },
+    results = 
+    {
+      --PM.product_range("pm-rutile-slag", 0, 3),
+      PM.product_range("pm-ferrum", 0, 4),
+      PM.product_range("pm-patina", 0, 4),
+      PM.product_range_chance("pm-low-quality-quartzite", 0, 2, 0.55)
+    }
+  }
 })
