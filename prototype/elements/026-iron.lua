@@ -19,11 +19,13 @@ data:extend({
     type = "item",
     name = "pm-pig-iron",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",
+    icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/iron-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-advanced-iron-tm",
     order = "a",

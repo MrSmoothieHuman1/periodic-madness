@@ -1575,8 +1575,6 @@ data:extend({
     {
       PM.unlock_recipe("pm-fertiliser"),
       PM.unlock_recipe("pm-fertilised-wood-growth"),
-      PM.unlock_recipe("pm-ammonium-chloride"),
-      PM.unlock_recipe("pm-ammonium-vanadate-solution"),
     },
     prerequisites = {"pm-phosphor-processing", "pm-greenhouse", "pm-atmospheric-ammonia"},
     unit =
@@ -4314,11 +4312,13 @@ data:extend({
     type = "technology",
     name = "pm-ammonium-chloride-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/platinum-processing.png",
+    icon = "__periodic-madness__/graphics/technology/ammonium-chloride-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-ammonium-chloride-seperation"),
       PM.unlock_recipe("pm-calcium-chloride-seperation"),
+      PM.unlock_recipe("pm-ammonium-chloride"),
+      PM.unlock_recipe("pm-ammonium-vanadate-solution"),
     },
     prerequisites = {"pm-platinum-processing"},
     research_trigger = 
