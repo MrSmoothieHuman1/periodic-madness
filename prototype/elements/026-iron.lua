@@ -31,6 +31,22 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-combined-ore-slab",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-advanced-iron-tm",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -123,7 +139,7 @@ data:extend({
     subgroup = "pm-advanced-iron-tm",
     order = "a",
     energy_required = 3,
-    allow_productivty = true,
+    allow_productivity = true,
     main_product = "pm-pig-iron",
     ingredients = 
     {
@@ -157,7 +173,7 @@ data:extend({
     {
       PM.product_range("pm-flux-container", 1, 3),
       PM.product("pm-mixed-molten-iron", 20, "fluid"),
-      PM.product_range_chance("pm-carbon-monoxide", 2, 8, 0.75)
+      PM.product_range_chance("pm-carbon-monoxide", 2, 8, 0.75, "fluid")
     }
   },
   {
@@ -175,7 +191,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-molten-ore-slag", 2.5, 5),
+      PM.product_range("pm-molten-ore-slag", 2.5, 5, "fluid"),
       PM.product("iron-ore", 12)
     }
   },

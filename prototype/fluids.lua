@@ -1721,6 +1721,30 @@ data:extend({
     flow_color = {r = 0.33, g = 0.66, b = 0.32},
     auto_barrel = false
   },
+  {
+    type = "fluid",
+    name = "pm-mixed-molten-iron",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/liquid-iron.png",
+    subgroup = "pm-advanced-iron-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-molten-ore-slag",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/liquid-iron.png",
+    subgroup = "pm-advanced-iron-tm",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
 
 
 	{
