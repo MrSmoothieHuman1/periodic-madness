@@ -15,6 +15,20 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-pig-iron",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/iron-chunks-2.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-advanced-iron-tm",
+    order = "a",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -108,6 +122,7 @@ data:extend({
     order = "a",
     energy_required = 3,
     allow_productivty = true,
+    main_product = "pm-pig-iron",
     ingredients = 
     {
       PM.ingredient("pm-iron-chunk", 4),
@@ -128,6 +143,7 @@ data:extend({
     order = "b",
     energy_required = 9,
     allow_productivity = true,
+    main_product = "pm-mixed-molten-iron",
     ingredients = 
     {
       PM.ingredient("pm-magnetite", 3),
@@ -150,6 +166,7 @@ data:extend({
     subgroup = "pm-advanced-iron-tm",
     order = "c",
     energy_required = 5,
+    main_product = "iron-ore",
     ingredients = 
     {
       PM.ingredient("pm-mixed-molten-iron", 10, "fluid"),
@@ -168,6 +185,7 @@ data:extend({
     subgroup = "pm-advanced-iron-tm",
     order = "c",
     energy_required = 5,
+    main_product = "pm-combined-ore-slab",
     ingredients = 
     {
       PM.ingredient("pm-molten-ore-slag", 5, "fluid"),
@@ -188,6 +206,7 @@ data:extend({
     subgroup = "pm-advanced-iron-tm",
     order = "d",
     energy_required = 5,
+    main_product = "pm-low-quality-quartzite",
     ingredients = 
     {
       PM.ingredient("pm-combined-ore-slab", 4)
