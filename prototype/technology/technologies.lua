@@ -4318,7 +4318,6 @@ data:extend({
       PM.unlock_recipe("pm-ammonium-chloride-seperation"),
       PM.unlock_recipe("pm-calcium-chloride-seperation"),
       PM.unlock_recipe("pm-ammonium-chloride"),
-      PM.unlock_recipe("pm-ammonium-vanadate-solution"),
     },
     prerequisites = {"pm-platinum-processing"},
     research_trigger = 
@@ -4337,6 +4336,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-ammonia-trace-gas-seperation"),
       PM.unlock_recipe("pm-ammonia-atmospheric-voiding"),
+      PM.unlock_recipe("pm-ammonium-vanadate-solution"),
     },
     prerequisites = {"chemical-science-pack"},
     unit =

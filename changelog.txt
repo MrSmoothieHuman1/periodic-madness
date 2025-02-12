@@ -82,6 +82,7 @@ Date: 2024-12-08
     - Changed normal beacons to have 3 module slots.
     - Changed normal beacons to have 1 distribution effectivity, instead of 1.5.
     - Moved trace gas ammonia into its own technology.
+    - Moved ammonium vanadate solution to atmospheric ammonia technology.
 
   Fixes:
     - Fixed the science pack item names captilisation.
