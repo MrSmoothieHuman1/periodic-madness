@@ -140,13 +140,13 @@ data:extend({
       main_product = "pm-ammonia-gas",
       ingredients =
       {
-        PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
-        PM.ingredient("pm-nitrogen-gas", 10, "fluid"),
-        PM.ingredient("iron-plate", 5) --should be catalyst for hard mode
+        PM.ingredient("pm-hydrogen-gas", 60, "fluid"),
+        PM.ingredient("pm-nitrogen-gas", 20, "fluid"),
+        PM.ingredient("iron-plate", 10) --should be catalyst for hard mode
       },
       results = 
       {
-        PM.product_range("pm-hydrogen-gas", 0, 5, "fluid"),
+        PM.product_range("pm-hydrogen-gas", 0, 15, "fluid"),
         PM.product_range("pm-ammonia-gas", 15, 20, "fluid"),
         PM.catalyst_chance("pm-nitrous-iron", 1, 0.5, 1)
       }
@@ -168,7 +168,7 @@ data:extend({
       results =
       {
         PM.product_range("pm-nitrogen-gas", 0, 5, "fluid"),
-        PM.product_range("iron-plate", 3, 5),
+        PM.product_range("iron-plate", 5, 10),
         PM.product_chance("pm-yttrium-catalyst", 1, 0.9),
         PM.product_chance("pm-catalyst-container", 1, 0.1)
       }
