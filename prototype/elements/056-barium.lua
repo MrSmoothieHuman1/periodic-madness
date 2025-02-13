@@ -2,6 +2,52 @@ local PM = require("library")
 data:extend({
 
     {
+        type = "item",
+        name = "pm-baryte-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-barium-aem",
+        order = "a",
+        stack_size = 400,
+    },
+    {
+        type = "item",
+        name = "pm-mixed-baryte",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-barium-aem",
+        order = "b",
+        stack_size = 200,
+    },
+    {
+        type = "item",
+        name = "pm-pure-baryte",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/pure-baryte.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte.png",   size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-4.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-barium-aem",
+        order = "c",
+        stack_size = 200,
+    },
+    -- barium froth and tailings are d and e
+    {
+        type = "item",
+        name = "pm-barium-nitrate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-barium-aem",
+        order = "f",
+        stack_size = 150
+    },
+    -- barium vapour is g
+
+    {
         type = "recipe",
         name = "pm-baryte-ore",
         enabled = false,
