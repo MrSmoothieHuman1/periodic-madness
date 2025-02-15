@@ -55,6 +55,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-barium-aem",
         order = "a",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-seawater", 75, "fluid"),
@@ -76,6 +77,7 @@ data:extend({
         category = "pm-crushing",
         subgroup = "pm-barium-aem",
         order = "b",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-baryte-ore", 5)
@@ -88,7 +90,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "mixed-baryte-ore-frothing",
+        name = "pm-mixed-baryte-ore-frothing",
         enabled = false,
         energy_required = 4,
         category = "pm-washing",
@@ -156,6 +158,7 @@ data:extend({
         category = "pm-acids",
         subgroup = "pm-barium-aem",
         order = "f",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-pure-baryte", 6),

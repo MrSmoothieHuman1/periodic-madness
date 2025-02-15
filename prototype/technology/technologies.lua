@@ -4077,7 +4077,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-baryte-ore"),
+      PM.unlock_recipe("pm-baryte-ore-crushing"),
+      PM.unlock_recipe("pm-mixed-baryte-ore-frothing"),
+      PM.unlock_recipe("pm-barium-tailings-looping"),
+      PM.unlock_recipe("pm-pure-baryte"),
+      PM.unlock_recipe("pm-barium-nitrate"),
+      PM.unlock_recipe("pm-barium-vapour"),
+      PM.unlock_recipe("pm-barium-ore")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
