@@ -29,7 +29,6 @@ data:extend({
             {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte.png",   size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-2.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-3.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-4.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-barium-aem",
         order = "c",
@@ -56,10 +55,11 @@ data:extend({
         subgroup = "pm-barium-aem",
         order = "a",
         allow_productivity = true,
+        main_product = "pm-baryte-ore",
         ingredients = 
         {
             PM.ingredient("pm-seawater", 75, "fluid"),
-            PM.ingredient("pm-alkaline-earth-metal-ore", 20),
+            PM.ingredient("pm-alkaline-earth-metals-ore", 20),
             PM.ingredient("pm-calcite", 8)
         },
         results = 
@@ -78,6 +78,7 @@ data:extend({
         subgroup = "pm-barium-aem",
         order = "b",
         allow_productivity = true,
+        main_product = "pm-pure-baryte",
         ingredients = 
         {
             PM.ingredient("pm-baryte-ore", 5)
@@ -96,6 +97,7 @@ data:extend({
         category = "pm-washing",
         subgroup = "pm-barium-aem",
         order = "c",
+        main_product = "pm-barium-froth",
         ingredients = 
         {
             PM.ingredient("pm-mixed-baryte", 6),
@@ -104,7 +106,7 @@ data:extend({
         results = 
         {
             PM.product("pm-barium-froth", 5, "fluid"),
-            PM.product("pm-froth-tailings", 10, "fluid")
+            PM.product("pm-barium-tailings", 10, "fluid")
         }
     },
     {
@@ -117,6 +119,7 @@ data:extend({
         order = "d",
         enabled = false,
         energy_required = 2,
+        main_product = "pm-barium-froth",
         ingredients =
         {
           PM.ingredient("pm-barium-tailings", 10, "fluid"),
@@ -136,6 +139,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-barium-aem",
         order = "e",
+        main_product = "pm-pure-baryte",
         ingredients = 
         {
             PM.ingredient("pm-barium-froth", 10, "fluid"),
@@ -146,7 +150,7 @@ data:extend({
             PM.product_range("pm-pure-baryte", 3, 6),
             PM.product_range_chance("pm-iron-chunk", 0, 4, 0.33),
             PM.product_range_chance("pm-zinc-chunk", 0, 4, 0.33),
-            PM.product_range_chance("pm-lead-chunk", 0, 4, 0.33),
+            PM.product_range_chance("pm-lead-chunks", 0, 4, 0.33),
             PM.product_range("pm-flux-container", 1, 2)
         }
     },
@@ -159,6 +163,7 @@ data:extend({
         subgroup = "pm-barium-aem",
         order = "f",
         allow_productivity = true,
+        main_product = "pm-barium-nitrate",
         ingredients = 
         {
             PM.ingredient("pm-pure-baryte", 6),
@@ -206,7 +211,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-barium-vapour", 5, "fluid"),
-            PM.ingredient("pm-argon", 10, "fluid")
+            PM.ingredient("pm-argon-gas", 10, "fluid")
         },
         results = 
         {
