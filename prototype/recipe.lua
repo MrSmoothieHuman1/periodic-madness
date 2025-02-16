@@ -554,7 +554,7 @@ data:extend({
       PM.ingredient("pm-calcium-ore", 25),
       PM.ingredient("pm-beryllium-ore", 8),
       PM.ingredient("pm-magnesium-ore", 4),
-      PM.ingredient("pm-barium-ore", 2),
+      PM.ingredient("pm-barium-ore", 4),
       PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
