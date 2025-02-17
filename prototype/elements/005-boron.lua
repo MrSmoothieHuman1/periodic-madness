@@ -104,7 +104,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-ethylene-glycol", 10, "fluid"),
-      PM.ingredient("pm-ammonia", 10, "fluid"),
+      PM.ingredient("pm-ammonia-gas", 10, "fluid"),
       PM.ingredient("pm-indium-plate", 3),
       PM.ingredient("pm-vanadium-oxide-catalyst", 2)
     },

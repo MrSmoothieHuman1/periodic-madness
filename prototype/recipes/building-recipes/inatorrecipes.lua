@@ -2128,7 +2128,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      PM.ingredient("pm-ammonia", 25, "fluid"),
+      PM.ingredient("pm-ammonia-gas", 25, "fluid"),
     },
     results = {}
   },
