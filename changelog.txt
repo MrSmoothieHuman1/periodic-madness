@@ -85,6 +85,8 @@ Date: 2024-12-08
     - Moved trace gas ammonia into its own technology.
     - Moved ammonium vanadate solution to atmospheric ammonia technology.
     - Changed basic-basic wood growth to take 60s instead of 20s. Fuck you.
+    - Changed ethylolamine to also require ammonia.
+    - Lowered the amount of vanadium oxide catalysts needed in ethylolamine from 3 to 2.
 
   Fixes:
     - Fixed the science pack item names captilisation.

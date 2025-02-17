@@ -103,15 +103,16 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-ethylene-glycol", 20, "fluid"),
+      PM.ingredient("pm-ethylene-glycol", 10, "fluid"),
+      PM.ingredient("pm-ammonia", 10, "fluid"),
       PM.ingredient("pm-indium-plate", 3),
-      PM.ingredient("pm-vanadium-oxide-catalyst", 3)
+      PM.ingredient("pm-vanadium-oxide-catalyst", 2)
     },
     results =
     {
       PM.product("pm-ethylolamine", 10, "fluid"),
-      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 2, 3, 0.75, 3),
-      PM.catalyst_range_chance("pm-catalyst-container", 1, 3, 0.25, 3)
+      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 1, 2, 0.75, 2),
+      PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.25, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
