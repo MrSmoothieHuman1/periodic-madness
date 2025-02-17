@@ -2107,4 +2107,29 @@ data:extend({
     },
     results = {}
   },
+  {
+    type = "recipe",
+    name = "pm-ammonia-voiding",
+    icon_size = 128,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/ammonia.png",
+        icon_size = 128,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh uh.png",
+        icon_size = 128,
+      },
+    },
+    subgroup = "pm-voiding",
+    category = "pm-burnining",
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients =
+    {
+      PM.ingredient("pm-ammonia", 25, "fluid"),
+    },
+    results = {}
+  },
 } --[[@as data.RecipePrototype[] ]])
