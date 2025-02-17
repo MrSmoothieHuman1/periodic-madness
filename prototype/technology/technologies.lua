@@ -4457,7 +4457,7 @@ data:extend({
       },
       time = 80
     }
-  },
+  }, --KILL JHON LENNON!
   {
     type = "recipe",
     name = "pm-advanced-zinc-processing",
