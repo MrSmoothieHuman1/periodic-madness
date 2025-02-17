@@ -205,7 +205,7 @@ data:extend({
         },
         energy_usage = "500kW",
         distribution_effectivity = 1.75,
-        distribution_effectivity_bonus_per_quality_level = 0.2,
+        distribution_effectivity_bonus_per_quality_level = 0.25,
         profile = 
         {
           1,
