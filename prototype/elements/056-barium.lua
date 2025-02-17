@@ -147,7 +147,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-pure-baryte", 3, 6),
+            PM.product_range("pm-pure-baryte", 2, 6),
             PM.product_range_chance("pm-iron-chunk", 0, 4, 0.33),
             PM.product_range_chance("pm-zinc-chunk", 0, 4, 0.33),
             PM.product_range_chance("pm-lead-chunks", 0, 4, 0.33),
@@ -181,8 +181,8 @@ data:extend({
         type = "recipe",
         name = "pm-barium-vapour",
         enabled = false,
-        energy_required = 6,
-        category = "pm-coldening",
+        energy_required = 2,
+        category = "chemistry",
         subgroup = "pm-barium-aem",
         order = "g",
         allow_productivity = true,
@@ -213,7 +213,7 @@ data:extend({
             PM.ingredient("pm-barium-vapour", 5, "fluid"),
             PM.ingredient("pm-argon-gas", 10, "fluid")
         },
-        results = 
+        results =
         {
             PM.product("pm-barium-ore", 4)
         }
