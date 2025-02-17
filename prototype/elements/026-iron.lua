@@ -84,7 +84,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("iron-ore", 8),
+      PM.product("iron-ore", 6),
       PM.product_range("pm-ferrum", 2, 4),
     }
   } --[[@as data.RecipePrototype]],
@@ -125,7 +125,7 @@ data:extend({
     allow_productivity = true,
     results =
     {
-      PM.product("iron-ore", 8),
+      PM.product("iron-ore", 6),
       PM.product_range("pm-ferrum", 0, 4),
     }
   } --[[@as data.RecipePrototype]],
