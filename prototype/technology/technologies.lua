@@ -4397,7 +4397,7 @@ data:extend({
       PM.unlock_recipe("pm-combined-ore-slag"),
       PM.unlock_recipe("pm-combined-ore-slab-crushing")
     },
-    prerequisites = {"pm-advancecd-material-processing-3"},
+    prerequisites = {"pm-advanced-material-processing-3"},
     unit =
     {
       count = 450,
