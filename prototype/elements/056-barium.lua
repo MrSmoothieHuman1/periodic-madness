@@ -50,7 +50,7 @@ data:extend({
         type = "recipe",
         name = "pm-baryte-ore",
         enabled = false,
-        energy_required = 5,
+        energy_required = 6,
         category = "chemistry",
         subgroup = "pm-barium-aem",
         order = "a",
@@ -64,7 +64,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-baryte-ore", 2, 6, 0.75),
+            PM.product_range_chance("pm-baryte-ore", 3, 6, 0.75),
             PM.product_range_chance("pm-anhydrite", 1, 4, 0.66),
             PM.product_range_chance("pm-sodium", 0, 3, 0.5)
         }
@@ -73,7 +73,7 @@ data:extend({
         type = "recipe",
         name = "pm-baryte-ore-crushing",
         enabled = false,
-        energy_required = 5,
+        energy_required = 4,
         category = "pm-crushing",
         subgroup = "pm-barium-aem",
         order = "b",
@@ -128,7 +128,7 @@ data:extend({
         results =
         {
           PM.product_range("pm-barium-tailings", 1, 8, "fluid"),
-          PM.product_chance("pm-barium-froth", 5, 0.85, "fluid")
+          PM.product_chance("pm-barium-froth", 5, 0.94, "fluid")
         }
     },
     {
@@ -147,7 +147,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-pure-baryte", 2, 6),
+            PM.product_range("pm-pure-baryte", 3, 7),
             PM.product_range_chance("pm-iron-chunk", 0, 4, 0.33),
             PM.product_range_chance("pm-zinc-chunk", 0, 4, 0.33),
             PM.product_range_chance("pm-lead-chunks", 0, 4, 0.33),
@@ -196,7 +196,7 @@ data:extend({
         {
             PM.product_range("pm-aluminium-plate", 1, 5),
             PM.product_range("pm-barium-vapour", 2.5, 7.5, "fluid"),
-            PM.product_range_chance("pm-barium-nitrate", 0, 3, 0.33)
+            PM.product_range_chance("pm-barium-nitrate", 0, 3, 0.4)
         }
     },
     {
