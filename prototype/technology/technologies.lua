@@ -4385,7 +4385,7 @@ data:extend({
     }
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-advanced-iron-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
@@ -4413,7 +4413,7 @@ data:extend({
     }
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-advanced-copper-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
@@ -4436,7 +4436,7 @@ data:extend({
     }
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-advanced-nickel-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
@@ -4459,7 +4459,7 @@ data:extend({
     }
   }, --KILL JHON LENNON!
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-advanced-zinc-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
