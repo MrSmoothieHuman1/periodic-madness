@@ -159,7 +159,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-advanced-iron-tm",
     order = "b",
-    energy_required = 9,
+    energy_required = 3,
     allow_productivity = true,
     main_product = "pm-mixed-molten-iron",
     ingredients = 
@@ -183,7 +183,7 @@ data:extend({
     category = "pm-coldening",
     subgroup = "pm-advanced-iron-tm",
     order = "c",
-    energy_required = 5,
+    energy_required = 6,
     main_product = "iron-ore",
     ingredients = 
     {

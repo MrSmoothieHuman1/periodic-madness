@@ -4369,7 +4369,7 @@ data:extend({
       PM.unlock_recipe("pm-haber-bosch-ammonia"),
       PM.unlock_recipe("pm-nitrous-iron-seperation")
     },
-    prerequisites = {"pm-ytrrium-processing"},
+    prerequisites = {"pm-yttrium-processing"},
     unit =
     {
       count = 400,
