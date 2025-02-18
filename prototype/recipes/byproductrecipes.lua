@@ -259,8 +259,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-cobalt-ore", 7, 12),
-      PM.product_range("pm-arsenic-ore", 4, 7),
+      PM.product_range("pm-cobalt-ore", 6, 10),
+      PM.product_range("pm-arsenic-ore", 3, 6),
       PM.product_range("sulfur", 7, 12),
       PM.product_range_chance("pm-ferrum", 2, 4, 0.12)
     }
