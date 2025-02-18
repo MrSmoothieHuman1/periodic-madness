@@ -4002,6 +4002,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-molten-inator-3"),
       PM.unlock_recipe("pm-cold-inator-3"),
+      PM.unlock_recipe("pm-ammonium-tetrafluoroberyllate")
     },
     prerequisites = {"pm-silicone-processing", "pm-tempature-inators-2"},
     unit =
@@ -4490,7 +4491,7 @@ data:extend({
     {
 
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    prerequisites = {"pm-magnesium-processing"},
     unit =
     {
       count = 250,
