@@ -4481,6 +4481,30 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-beryllium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 60
+    }
+  },
 
   {
     type = "technology",
