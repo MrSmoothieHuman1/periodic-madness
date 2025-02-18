@@ -1027,6 +1027,41 @@ data:extend({
       --least its memorable
     }
   },
+  {
+    type = "recipe",
+    name = "pm-molten-beryllium",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/liquid-beryllium.png",
+        icon_size = 64,
+        scale = 0.2,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/beryllium-plate.png",
+        icon_size = 64,
+        scale = 0.11,
+        shift = { 0, -3 }
+      },
+    },
+    subgroup = "pm-beryllium-aem",
+    order = "h",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-beryllium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-palladium", 5, "fluid")
+    }
+  },
 
   {
     type = "recipe",
@@ -1443,6 +1478,28 @@ data:extend({
     results =
     {
       PM.product("pm-palladium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-beryllium-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/beryllium-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-beryllium-aem",
+    order = "i",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-beryllium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-beryllium-plate", 10),
       PM.product_chance("pm-crucible", 1, 0.8)
     }
   },

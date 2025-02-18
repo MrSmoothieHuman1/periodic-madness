@@ -527,6 +527,18 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "pm-molten-beryllium",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/liquid-beryllium.png",
+    subgroup = "pm-beryllium-aem",
+    order = "h",
+    default_temperature = 15,
+    base_color = {r = 0.75, g = 0.62, b = 0.34},
+    flow_color = {r = 0.75, g = 0.62, b = 0.34},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
     name = "pm-molten-glass",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/liquid-glass.png",

@@ -29,6 +29,7 @@ Date: 2024-12-08
     - Added the Haber-Bosch process for ammonia, unlocked at metalloid packs.
     - Added an advanced processing chain for iron, copper, nickel, zinc and manganese. The chunk ores have a 1:6 chunk to ore ratio compared to 1:2.
     - Ammonia can now be burned in a burn-inator.
+    - Added beryllium plates instead of making it ore only, just because plates have been neglected recently.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -90,6 +91,7 @@ Date: 2024-12-08
     - Lowever amount of cobalt and arsenic you get from cobaltite.
     - Changed transition leeching of iron, copper, zinc and nickel to give 6 ore.
     - Changed basic ferrum and patina leeching to have a 75% chance to give the ore back.
+    - Changed the look of molten cadnium slightly.
 
   Fixes:
     - Fixed the science pack item names captilisation.

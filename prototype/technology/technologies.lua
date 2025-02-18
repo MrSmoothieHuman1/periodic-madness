@@ -4489,7 +4489,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-molten-beryllium"),
+      PM.unlock_recipe("pm-beryllium-plate-cooling")
     },
     prerequisites = {"pm-magnesium-processing"},
     unit =
