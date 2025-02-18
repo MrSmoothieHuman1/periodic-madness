@@ -3868,7 +3868,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-alkaline-earth-metal-science-pack")
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-magnesium-processing", "pm-strontium-processing", "pm-barium-processing", "pm-radium-processing"},
+    prerequisites = {"pm-magnesium-processing", "pm-strontium-processing", "pm-barium-processing", "pm-radium-processing", "pm-beryllium-processing"},
     unit = 
     {
       count = 450,
