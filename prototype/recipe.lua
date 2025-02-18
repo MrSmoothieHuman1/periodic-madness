@@ -544,7 +544,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-alkaline-earth-metal-science-pack",
-    category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "h",
     energy_required = 6,
