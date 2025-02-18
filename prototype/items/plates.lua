@@ -155,6 +155,15 @@ data:extend({
     order = "d",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-beryllium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/beryllium-plate.png",
+    subgroup = "pm-beryllium-aem",
+    order = "f",
+    stack_size = 100
+  },
 
   {
     type = "item",

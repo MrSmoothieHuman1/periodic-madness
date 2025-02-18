@@ -253,6 +253,20 @@ data:extend({
       PM.product("pm-tellurium-plate", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-beryllium-plate",
+    subgroup = "pm-beryllium-aem",
+    order = "g",
+    category = "smelting",
+    energy_required = 6.4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-beryllium-ore", 1) },
+    results = {
+      PM.product("pm-beryllium-plate", 1)
+    }
+  },
 
   -- alloys
 
