@@ -88,6 +88,8 @@ Date: 2024-12-08
     - Changed ethylolamine to also require ammonia.
     - Lowered the amount of vanadium oxide catalysts needed in ethylolamine from 3 to 2.
     - Lowever amount of cobalt and arsenic you get from cobaltite.
+    - Changed transition leeching of iron, copper, zinc and nickel to give 6 ore.
+    - Changed basic ferrum and patina leeching to have a 75% chance to give the ore back.
 
   Fixes:
     - Fixed the science pack item names captilisation.

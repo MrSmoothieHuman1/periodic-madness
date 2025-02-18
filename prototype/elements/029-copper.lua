@@ -52,7 +52,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("copper-ore", 8),
+      PM.product("copper-ore", 6),
       PM.product_range("pm-patina", 2, 4),
     }
   } --[[@as data.RecipePrototype]],
@@ -93,7 +93,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("copper-ore", 8),
+      PM.product("copper-ore", 6),
       PM.product_range("pm-patina", 0, 4),
     }
   } --[[@as data.RecipePrototype]],

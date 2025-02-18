@@ -52,7 +52,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-zinc-ore", 8),
+      PM.product("pm-zinc-ore", 6),
       PM.product_range("sulfur", 2, 4),
     }
   } --[[@as data.RecipePrototype]],
@@ -93,7 +93,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-zinc-ore", 8),
+      PM.product("pm-zinc-ore", 6),
       PM.product_range("sulfur", 0, 4),
     }
   } --[[@as data.RecipePrototype]],
