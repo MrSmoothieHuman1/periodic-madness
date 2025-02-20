@@ -534,7 +534,7 @@ data:extend{(AcidPlant)}
 
 if data.raw["utility-constants"].default.select_slot_row_count == 10 then
   data.raw["utility-constants"].default.select_slot_row_count = 12
-  data.raw["utility-constants"].default.select_group_row_count = 12
+  data.raw["utility-constants"].default.select_group_row_count = 7
 end
 
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-nickel-ore"] = {}
