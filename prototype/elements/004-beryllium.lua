@@ -64,6 +64,7 @@ data:extend({
         category = "pm-crushing",
         subgroup = "pm-beryllium-aem",
         order = "b",
+        main_product = "pm-beryl-powder",
         ingredients = 
         {
             PM.ingredient("pm-beryl", 6)
@@ -82,6 +83,7 @@ data:extend({
         category = "pm-moltening",
         subgroup = "pm-beryllium-aem",
         order = "c",
+        main_product = "pm-beryllium-sulfate",
         ingredients = 
         {
             PM.ingredient("pm-beryl-powder", 8),
@@ -120,6 +122,7 @@ data:extend({
         category = "pm-acids",
         subgroup = "pm-beryllium-aem",
         order = "e",
+        main_product = "pm-ammonium-tetrafluoroberyllate",
         ingredients = 
         {
             PM.ingredient("pm-beryllium-hydroxide", 10, "fluid"),
@@ -159,6 +162,7 @@ data:extend({
         category = "pm-moltening",
         subgroup = "pm-beryllium-aem",
         order = "f",
+        main_product = "pm-beryllium-ore",
         ingredients = 
         {
             PM.ingredient("pm-ammonium-tetrafluoroberyllate", 5, "fluid"),
@@ -167,7 +171,7 @@ data:extend({
         results = 
         {
             PM.product_range("pm-beryllium-ore", 2, 5),
-            PM.product_range_chance("pm-hydrogen-flouride", 0, 4, 0.75)
+            PM.product_range_chance("pm-hydrogen-flouride", 0, 4, 0.75, "fluid")
         }
     }
 })
