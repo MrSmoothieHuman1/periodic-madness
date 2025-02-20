@@ -135,7 +135,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-cold-ammonium-tetrafluoroberyllate",
+        name = "pm-ammonium-tetrafluoroberyllate",
         enabled = false,
         energy_required = 9,
         category = "pm-moltening",
