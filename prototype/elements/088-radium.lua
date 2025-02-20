@@ -2,6 +2,43 @@ local PM = require("library")
 data:extend({
 
     {
+        type = "item",
+        name = "pm-barium-radium-sulfate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-radium-aem",
+        order = "a",
+        stack_size = 50
+    },
+    {
+        type = "item",
+        name = "pm-barium-radium-carbonate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-radium-aem",
+        order = "a",
+        stack_size = 100
+    },
+    {
+        type = "item",
+        name = "pm-radium-sulfate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-radium-aem",
+        order = "a",
+        stack_size = 150
+    },
+    {
+        type = "item",
+        name = "pm-radium-chloride",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-radium-aem",
+        order = "a",
+        stack_size = 200
+    },
+
+    {
         type = "recipe",
         name = "pm-barium-radium-sulfate",
         enabled = false,
