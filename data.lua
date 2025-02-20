@@ -93,6 +93,7 @@ require("prototype.elements.014-silicon")
 require("prototype.elements.085-astatine")
 require("prototype.elements.012-magnesium")
 require("prototype.elements.056-barium")
+require("prototype.elements.004-beryllium")
 
 require("prototype.entity")
 require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files
