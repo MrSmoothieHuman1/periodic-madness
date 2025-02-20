@@ -92,6 +92,7 @@ Date: 2024-12-08
     - Changed transition leeching of iron, copper, zinc and nickel to give 6 ore.
     - Changed basic ferrum and patina leeching to have a 75% chance to give the ore back.
     - Changed the look of molten cadnium slightly.
+    - Finally changed what you start with in PM, instead of just letting you fend for yourself. (thank you penny)
 
   Fixes:
     - Fixed the science pack item names captilisation.
