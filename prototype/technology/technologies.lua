@@ -4489,6 +4489,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-beryl"),
+      PM.unlock_recipe("pm-beryl-powder"),
+      PM.unlock_recipe("pm-beryllium-sulfate"),
+      PM.unlock_recipe("pm-beryllium-hydroxide"),
+      PM.unlock_recipe("pm-cold-ammonium-tetrafluoroberyllate"),
+      PM.unlock_recipe("pm-beryllium-ore"),
+      PM.unlock_recipe("pm-beryllium-plate"),
       PM.unlock_recipe("pm-molten-beryllium"),
       PM.unlock_recipe("pm-beryllium-plate-cooling")
     },
