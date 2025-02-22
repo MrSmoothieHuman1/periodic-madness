@@ -587,7 +587,7 @@ data:extend({
     subgroup = "pm-splitters",
     order = "c",
     place_result = "pm-advanced-splitter",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",

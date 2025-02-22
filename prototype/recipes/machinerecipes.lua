@@ -1046,7 +1046,7 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      PM.ingredient("fast-splitter", 2),
+      PM.ingredient("fast-splitter", 1),
       PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-solid-lubricant", 6),
       PM.ingredient("pm-mini-motor", 2)
