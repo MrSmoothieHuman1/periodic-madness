@@ -2843,7 +2843,7 @@ data:extend({
     results = 
     {
       PM.product_range_chance("pm-chrominum-ore", 2, 8, 0.7),
-      PM.product_range("pm-beryllium-ore", 0, 6),
+      PM.product_range("pm-beryl", 0, 6),
       PM.product_range("pm-oxygen-gas", 10, 22, "fluid"),
     }
   },
