@@ -4252,7 +4252,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-carbon"),
       PM.unlock_recipe("pm-sand"),
-      PM.unlock_recipe("pm-glass-pane")
+      PM.unlock_recipe("pm-glass-pane"),
+      PM.unlock_recipe("pm-evaporator")
     },
     prerequisites = {},
     research_trigger = 

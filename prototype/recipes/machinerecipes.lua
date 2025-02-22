@@ -276,6 +276,7 @@ data:extend({
     subgroup = "pm-water-machine",
     order = "c",
     energy_required = 1.5,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-basic-framing", 2),
