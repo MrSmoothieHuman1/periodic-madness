@@ -71,8 +71,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-beryl-powder", 8, 12),
-            PM.product_range("pm-bauxite-powder", 0, 4)
+            PM.product_range("pm-beryl-powder", 7, 12),
+            PM.product_range("pm-bauxite-powder", 0, 3)
         }
     },
     {
