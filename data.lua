@@ -551,3 +551,32 @@ data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkali-metals"] =
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkali-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkaline-earth-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkaline-earth-metals"] = {}
+
+
+local vanadium_speed_setting = ({
+  ["0.25x"] = 0.045 * 0.25,
+  ["0.5x"] = 0.045 * 0.5,
+  ["0.75x"] = 0.045 * 0.75,
+  ["1x"] = 0.045,
+  ["1.25x"] = 0.045 * 1.25,
+  ["1.5x"] = 0.045 * 1.5,
+  ["1.75x"] = 0.045 * 1.75,
+  ["2x"] = 0.09,
+
+})[settings.startup["pm-robot-speed-multiplier"].value]
+data.raw["construction-robot"]["construction-robot"].speed = vanadium_speed_setting
+data.raw["logistic-robot"]["logistic-robot"].speed = vanadium_speed_setting
+
+local lithium_speed_setting = ({
+  ["0.25x"] = 0.08 * 0.25,
+  ["0.5x"] = 0.08 * 0.5,
+  ["0.75x"] = 0.08,
+  ["1x"] = 0.08 * 1.25,
+  ["1.25x"] = 0.08 * 1.25,
+  ["1.5x"] = 0.08 * 1.5,
+  ["1.75x"] = 0.08 * 1.75,
+  ["2x"] = 0.08 * 2,
+
+})[settings.startup["pm-robot-speed-multiplier"].value]
+data.raw["construction-robot"]["construction-robot"].speed = lithium_speed_setting
+data.raw["logistic-robot"]["logistic-robot"].speed = lithium_speed_setting

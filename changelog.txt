@@ -30,6 +30,7 @@ Date: 2024-12-08
     - Added an advanced processing chain for iron, copper, nickel, zinc and manganese. The chunk ores have a 1:6 chunk to ore ratio compared to 1:2.
     - Ammonia can now be burned in a burn-inator.
     - Added beryllium plates instead of making it ore only, just because plates have been neglected recently.
+    - Added mod settings for PM! Ranging from things like how fast bots are (0.25x - 2x), [insert more things here]
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
