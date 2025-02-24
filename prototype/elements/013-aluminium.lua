@@ -5,7 +5,13 @@ data:extend({
     type = "item",
     name = "pm-bauxite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/bauxite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/bauxite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bauxite-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/bauxite-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-aluminium-ptm",
     order = "a",
     stack_size = 200
