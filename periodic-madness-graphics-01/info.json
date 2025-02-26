@@ -1,0 +1,20 @@
+{
+  "name": "periodic-madness-graphics-01",
+  "version": "0.6.500",
+  "title": "Periodic Madness",
+  "author": "Mr.SmoothieHuman",
+  "homepage": "https://discord.gg/64GKrqpyJ2",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0"
+  ],
+  "description": "The graphics for Periodic Madness.",
+  "package": {
+    "sync_portal_details": true,
+    "readme": "README.md",
+    "markdown": {
+      "images": "gallery",
+      "strip_first_header": true
+    }
+  }
+}
