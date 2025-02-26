@@ -304,7 +304,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-brass-plate", 2)
+      PM.product("pm-brass-plate", 4)
     }
   },
   {
