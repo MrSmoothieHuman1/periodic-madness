@@ -4156,7 +4156,12 @@ data:extend({
     name = "pm-effect-transmission-2",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = {},
+    effects = 
+    {
+      PM.unlock_recipe("pm-beacon-2"),
+      PM.unlock_recipe("pm-hub-beacon"),
+      PM.unlock_recipe("pm-proximity-beacon")
+    },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "effect-transmission"},
     unit =
     {

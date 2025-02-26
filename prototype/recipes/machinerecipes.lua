@@ -1287,6 +1287,71 @@ data:extend({
       PM.product("pm-express-bulk-inserter", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-beacon-2",
+    enabled = false,
+    energy_required = 15,
+    category = "crafting-with-fluid",
+    subgroup = "module",
+    order = "b",
+    ingredients = 
+    {
+      PM.ingredient("pm-travelling-wave-amplifier-tube", 1),
+      PM.ingredient("beacon", 1),
+      PM.ingredient("pm-polytetrafluoroethylene", 5),
+      PM.ingredient("pm-coolant", 2, "fluid"),
+      PM.ingredient("pm-heavy-lubricant", 2, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-beacon-2", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-hub-beacon",
+    enabled = false,
+    energy_required = 20,
+    category = "crafting-with-fluid",
+    subgroup = "module",
+    order = "c",
+    ingredients = 
+    {
+      PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
+      PM.ingredient("advanced-circuit", 10),
+      PM.ingredient("pm-chromium-ore", 14),
+      PM.ingredient("pm-polytetrafluoroethylene", 6),
+      PM.ingredient("pm-heavyweight-framing", 16),
+      PM.ingredient("pm-heavy-lubricant", 2, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-hub-beacon", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-proximity-beacon",
+    enabled = false,
+    energy_required = 10,
+    category = "crafting-with-fluid",
+    subgroup = "module",
+    order = "d",
+    ingredients = 
+    {
+      PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
+      PM.ingredient("advanced-circuit", 14),
+      PM.ingredient("pm-chromium-ore", 10),
+      PM.ingredient("pm-polytetrafluoroethylene", 6),
+      PM.ingredient("pm-lightweight-framing", 12),
+      PM.ingredient("pm-coolant", 2, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-proximity-beacon", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
