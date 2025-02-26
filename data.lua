@@ -578,5 +578,5 @@ local lithium_speed_setting = ({
   ["2x"] = 0.08 * 2,
 
 })[settings.startup["pm-lithium-robot-speed-multiplier"].value]
-data.raw["construction-robot"]["construction-robot"].speed = lithium_speed_setting
-data.raw["logistic-robot"]["logistic-robot"].speed = lithium_speed_setting
+data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_speed_setting
+data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
