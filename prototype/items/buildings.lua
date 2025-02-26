@@ -693,6 +693,30 @@ data:extend({
     place_result = "pm-express-bulk-inserter",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-beacon-2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    place_result = "pm-beacon-2",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-hub-beacon",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    place_result = "pm-hub-beacon",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-proximity-beacon",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    place_result = "pm-proximity-beacon",
+    stack_size = 50
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
