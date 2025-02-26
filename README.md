@@ -32,7 +32,7 @@ Sift through new "group ores", containing the elements of each separate periodic
 
 * Expansion of vanilla recipes and products, e.g lubricant being tiered and being a more in-depth recipe chain.
 
-![The Periodometer™](gallery/periodometer.png)
+![The Periodometer™](periodic-madness/gallery/periodometer.png)
 
 *Touched by a madman:*
 
