@@ -563,7 +563,7 @@ local vanadium_speed_setting = ({
   ["1.75x"] = 0.045 * 1.75,
   ["2x"] = 0.09,
 
-})[settings.startup["pm-robot-speed-multiplier"].value]
+})[settings.startup["pm-vanadium-robot-speed-multiplier"].value]
 data.raw["construction-robot"]["construction-robot"].speed = vanadium_speed_setting
 data.raw["logistic-robot"]["logistic-robot"].speed = vanadium_speed_setting
 
@@ -577,6 +577,6 @@ local lithium_speed_setting = ({
   ["1.75x"] = 0.08 * 1.75,
   ["2x"] = 0.08 * 2,
 
-})[settings.startup["pm-robot-speed-multiplier"].value]
+})[settings.startup["pm-lithium-robot-speed-multiplier"].value]
 data.raw["construction-robot"]["construction-robot"].speed = lithium_speed_setting
 data.raw["logistic-robot"]["logistic-robot"].speed = lithium_speed_setting
