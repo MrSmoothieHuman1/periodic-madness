@@ -61,7 +61,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-bauxite", 8),
+      PM.product("pm-bauxite", 6),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -75,7 +75,7 @@ data:extend({
     allow_productivity = true,
     ingredients = 
     {
-      PM.ingredient("pm-bauxite", 8)
+      PM.ingredient("pm-bauxite", 6)
     },
     results = 
     {
