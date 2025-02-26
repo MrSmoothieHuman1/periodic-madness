@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-anhydrite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/androgynite.png",
+    icon = "__pm-graphics-01__/graphics/icons/androgynite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/androgynite.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/androgynite-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/androgynite.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/androgynite-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-potassium-am",
     order = "a",
@@ -19,12 +19,12 @@ data:extend({
     type = "item",
     name = "pm-sylvite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/sylvite.png",
+    icon = "__pm-graphics-01__/graphics/icons/sylvite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/sylvite.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/sylvite-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/sylvite-3.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/sylvite.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/sylvite-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/sylvite-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-potassium-am",
     order = "b",
@@ -34,11 +34,11 @@ data:extend({
     type = "item",
     name = "pm-potash",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/potash.png",
+    icon = "__pm-graphics-01__/graphics/icons/potash.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/potash.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/potash-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/potash.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/potash-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-potassium-am",
     order = "c",

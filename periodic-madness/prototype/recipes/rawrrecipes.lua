@@ -14,7 +14,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/iron-chunks.png",
         icon_size = 64,
         scale = 0.38,
         shift = { 0, -4 }
@@ -45,7 +45,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/copper-chunks.png",
         icon_size = 64,
         scale = 0.38,
         shift = { 0, -4 }
@@ -72,11 +72,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/nickel-plate.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/nickel-chunks.png",
         icon_size = 64,
         scale = 0.38,
         shift = { 0, -4 }
@@ -103,11 +103,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/zinc-plate.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/zinc-chunks.png",
         icon_size = 64,
         scale = 0.38,
         shift = { 0, -4 }
@@ -136,11 +136,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/iron-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -168,11 +168,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/copper-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -200,11 +200,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/nickel-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -232,11 +232,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/zinc-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },

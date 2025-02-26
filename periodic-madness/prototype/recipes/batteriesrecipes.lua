@@ -23,7 +23,7 @@ data:extend({
     type = "recipe",
     name = "pm-voltatic-pile-charging",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/charged-voltatic-pile.png",
+    icon = "__pm-graphics-01__/graphics/icons/charged-voltatic-pile.png",
     subgroup = "pm-batteries",
     order = "g",
     category = "pm-voltatic-charging",

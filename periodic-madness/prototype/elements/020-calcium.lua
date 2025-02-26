@@ -5,13 +5,13 @@ data:extend({
     type = "item",
     name = "pm-calcite",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/ores/calcite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/calcite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite-1.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite-2.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/calcite-3.png", size = 128, scale = 0.25 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/calcite.png",   size = 128, scale = 0.25 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/calcite-1.png", size = 128, scale = 0.25 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/calcite-2.png", size = 128, scale = 0.25 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/calcite-3.png", size = 128, scale = 0.25 }
     },
     subgroup = "pm-calcium-aem",
     order = "a",
@@ -21,7 +21,7 @@ data:extend({
     type = "item",
     name = "pm-calcium-dust",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/calcium-dust.png",
+    icon = "__pm-graphics-01__/graphics/icons/calcium-dust.png",
     subgroup = "pm-calcium-aem",
     order = "b",
     stack_size = 150
@@ -30,13 +30,13 @@ data:extend({
     type = "item",
     name = "pm-mixed-calcium-rock",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png",
+    icon = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-3.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-4.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock-3.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-calcium-aem",
     order = "c",
@@ -46,12 +46,12 @@ data:extend({
     type = "item",
     name = "pm-calcium-oxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/calcium-oxide.png",
+    icon = "__pm-graphics-01__/graphics/icons/calcium-oxide.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/calcium-oxide.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/calcium-oxide-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/calcium-oxide-3.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/calcium-oxide.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/calcium-oxide-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/calcium-oxide-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-calcium-aem",
     order = "d",
@@ -61,11 +61,11 @@ data:extend({
     type = "item",
     name = "pm-calcium-chloride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/calcium-chloride.png",
+    icon = "__pm-graphics-01__/graphics/icons/calcium-chloride.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/calcium-chloride.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/calcium-chloride.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/calcium-chloride-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-calcium-aem",
     order = "e",
@@ -75,13 +75,13 @@ data:extend({
     type = "item",
     name = "pm-calcium-sulfate-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png",
+    icon = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-3.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/mixed-calcium-rock-4.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock-3.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/mixed-calcium-rock-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-calcium-aem",
     order = "f",
@@ -130,7 +130,7 @@ data:extend({
     type = "recipe",
     name = "pm-calcium-dust-washing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/calcium-dust-washing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/calcium-dust-washing.png",
     subgroup = "pm-calcium-aem",
     category = "pm-washing",
     order = "c",

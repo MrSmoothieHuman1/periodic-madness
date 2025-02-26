@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-indium-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/indium-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/indium-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/indium-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/indium-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/indium-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/indium-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-indium-ptm",
     order = "a",
@@ -19,7 +19,7 @@ data:extend({
     type = "recipe",
     name = "pm-indium-filtering",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/indium-filtering.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/indium-filtering.png",
     category = "pm-washing",
     subgroup = "pm-indium-ptm",
     order = "a",
@@ -42,7 +42,7 @@ data:extend({
     type = "recipe",
     name = "pm-indium-electrolysis",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/indium-electrolysis.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/indium-electrolysis.png",
     category = "pm-electrolysis",
     subgroup = "pm-indium-ptm",
     order = "b",

@@ -67,7 +67,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-chlorine-processing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+    icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
     effects =
     {
       PM.unlock_recipe("hydrogen-chloride-salt"),
@@ -124,7 +124,7 @@ data.raw["recipe"]["hydrogen-chloride-salt"].results =
 }
 data.raw["recipe"]["hydrogen-chloride-salt"].icon_size = 64
 data.raw["recipe"]["hydrogen-chloride-salt"].icon =
-"__periodic-madness__/graphics/icons/recipes/hydrochloric-acid-salt.png"
+"__pm-graphics-01__/graphics/icons/recipes/hydrochloric-acid-salt.png"
 data.raw["recipe"]["accumulator"].ingredients =
 {
   PM.ingredient("pm-vanadium-redox-battery", 4),

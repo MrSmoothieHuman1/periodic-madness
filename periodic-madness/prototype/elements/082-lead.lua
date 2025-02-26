@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-lead-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/lead-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/lead-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/lead-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/lead-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/lead-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/lead-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-lead-ptm",
     order = "a",
@@ -19,11 +19,11 @@ data:extend({
     type = "item",
     name = "pm-lead-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/lead-powder.png",
+    icon = "__pm-graphics-01__/graphics/icons/lead-powder.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/lead-powder.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/lead-powder-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/lead-powder.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/lead-powder-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-lead-ptm",
     order = "b",
@@ -33,11 +33,11 @@ data:extend({
     type = "item",
     name = "pm-impure-lead",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/impure-lead-ore.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/impure-lead-ore.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/impure-lead-ore.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/impure-lead-ore-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/impure-lead-ore.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/impure-lead-ore-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-lead-ptm",
     order = "c",
@@ -51,11 +51,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/lead-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/lead-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       }
     },

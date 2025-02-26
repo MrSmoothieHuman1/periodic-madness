@@ -4,7 +4,7 @@ data:extend({
     type = "item",
     name = "pm-metharicephentine",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/metharicephentine.png",
+    icon = "__pm-graphics-01__/graphics/icons/metharicephentine.png",
     stack_size = 500
   },
   {

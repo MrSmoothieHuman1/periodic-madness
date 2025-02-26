@@ -3,7 +3,7 @@ data:extend({
     {
         type = "heat-pipe",
         name = "pm-heat-pipe-1",
-        icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-1.png",
+        icon = "__pm-graphics-01__/graphics/icons/buildings/heat-pipe-1.png",
         icon_size = 64,
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 0.05, result = "pm-heat-pipe-1"},
@@ -72,7 +72,7 @@ data:extend({
         },
     
         connection_sprites = make_heat_pipe_pictures(
-          "__periodic-madness__/graphics/entities/buildings/heat-pipe-1/", "heat-pipe",
+          "__pm-graphics-01__/graphics/entities/buildings/heat-pipe-1/", "heat-pipe",
           {
             single = { name = "straight-vertical-single", ommit_number = true },
             straight_vertical = { variations = 6 },
@@ -117,7 +117,7 @@ data:extend({
       {
         type = "heat-pipe",
         name = "pm-heat-pipe-3",
-        icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-3.png",
+        icon = "__pm-graphics-01__/graphics/icons/buildings/heat-pipe-3.png",
         icon_size = 64,
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 0.15, result = "pm-heat-pipe-3"},
@@ -186,7 +186,7 @@ data:extend({
         },
     
         connection_sprites = make_heat_pipe_pictures(
-          "__periodic-madness__/graphics/entities/buildings/heat-pipe-3/", "heat-pipe",
+          "__pm-graphics-01__/graphics/entities/buildings/heat-pipe-3/", "heat-pipe",
           {
             single = { name = "straight-vertical-single", ommit_number = true },
             straight_vertical = { variations = 6 },

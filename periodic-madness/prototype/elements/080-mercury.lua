@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-mercury-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/mercury-powder.png",
+    icon = "__pm-graphics-01__/graphics/icons/mercury-powder.png",
     subgroup = "pm-mercury-tm",
     order = "b",
     stack_size = 140 + 10
@@ -14,7 +14,7 @@ data:extend({
     type = "item",
     name = "pm-red-mercury",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/red-mercury-powder.png",
+    icon = "__pm-graphics-01__/graphics/icons/red-mercury-powder.png",
     subgroup = "pm-mercury-tm",
     order = "c",
     stack_size = 140 + 10
@@ -28,11 +28,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/mercury-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -56,7 +56,7 @@ data:extend({
     type = "recipe",
     name = "pm-mercury-powdering",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/mercury-powdering.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/mercury-powdering.png",
     energy_required = 2,
     ingredients =
     {
@@ -76,7 +76,7 @@ data:extend({
     type = "recipe",
     name = "pm-liquid-mercury",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/mercury-liquifying.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/mercury-liquifying.png",
     energy_required = 2,
     subgroup = "pm-mercury-tm",
     category = "crafting-with-fluid",
@@ -98,7 +98,7 @@ data:extend({
     type = "recipe",
     name = "pm-mercury-vapour-condensing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/mercury-condensing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/mercury-condensing.png",
     subgroup = "pm-mercury-tm",
     order = "e",
     category = "pm-acids",
@@ -122,11 +122,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/mercury-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

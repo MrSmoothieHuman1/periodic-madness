@@ -7,11 +7,11 @@ data:extend({
     type = "item",
     name = "pm-gold-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/gold-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/gold-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/gold-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/gold-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/gold-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/gold-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-gold-tm",
     order = "a",
@@ -25,11 +25,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/gold-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/gold-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -63,11 +63,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/gold-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/gold-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-mercury.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-mercury.png",
         icon_size = 64,
       },
     },
@@ -95,11 +95,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/gold-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/gold-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

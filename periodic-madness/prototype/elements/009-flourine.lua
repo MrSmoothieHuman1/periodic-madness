@@ -5,13 +5,13 @@ data:extend({
     type = "item",
     name = "pm-flourite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/fluorite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/fluorite.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/fluorite.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/fluorite-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/fluorite-3.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/fluorite-4.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/fluorite.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/fluorite-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/fluorite-3.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/fluorite-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-flourine-rnm",
     order = "a",
@@ -21,7 +21,7 @@ data:extend({
     type = "item",
     name = "pm-flourine",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/flourine.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/flourine.png",
     subgroup = "pm-flourine-rnm",
     order = "b",
     stack_size = 200
@@ -30,7 +30,7 @@ data:extend({
     type = "item",
     name = "pm-calcium-sulfate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/calcium-sulfate.png",
+    icon = "__pm-graphics-01__/graphics/icons/calcium-sulfate.png",
     subgroup = "pm-flourine-rnm",
     order = "c",
     stack_size = 300

@@ -2,7 +2,7 @@ if not mods["ColourTheoryCircuits"] then return end
 local PM = require("library")
 
 data.raw["item"]["pm-fluid-circuit"].icon_size = 128
-data.raw["item"]["pm-fluid-circuit"].icon = "__periodic-madness__/graphics/compat/ctc/orange-circuits.png"
+data.raw["item"]["pm-fluid-circuit"].icon = "__pm-graphics-01__/graphics/compat/ctc/orange-circuits.png"
 data.raw["item"]["pm-fluid-circuit"].localised_name = { "OR-Aspected chip" }
 
 data.raw["technology"]["electronics"].effects =

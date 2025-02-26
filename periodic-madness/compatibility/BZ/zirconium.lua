@@ -37,7 +37,7 @@ data.raw["technology"]["cermet"].unit.ingredients =
   PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
 }
 data.raw["technology"]["zirconia-processing"].icon_size = 256
-data.raw["technology"]["zirconia-processing"].icon = "__periodic-madness__/graphics/technology/zirconium-processing.png"
+data.raw["technology"]["zirconia-processing"].icon = "__pm-graphics-01__/graphics/technology/zirconium-processing.png"
 data.raw["technology"]["zirconia-processing"].effects =
 {
   PM.unlock_recipe("pm-zirconium-leeching"),

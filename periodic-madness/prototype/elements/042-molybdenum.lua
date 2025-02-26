@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-molybdenite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/molybdenite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/molybdenite.png",
     subgroup = "pm-molybdenum-tm",
     order = "a",
     stack_size = 200
@@ -14,7 +14,7 @@ data:extend({
     type = "item",
     name = "pm-molybdenite-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/molybdenite-powder.png",
+    icon = "__pm-graphics-01__/graphics/icons/molybdenite-powder.png",
     subgroup = "pm-molybdenum-tm",
     order = "b",
     stack_size = 200
@@ -23,7 +23,7 @@ data:extend({
     type = "item",
     name = "pm-molybdenum-disulfide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/molybdenum-disulfate.png",
+    icon = "__pm-graphics-01__/graphics/icons/molybdenum-disulfate.png",
     subgroup = "pm-molybdenum-tm",
     order = "d",
     stack_size = 50
@@ -36,11 +36,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/molybdenite.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/molybdenite.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -72,7 +72,7 @@ data:extend({
     type = "recipe",
     name = "pm-molybdenite-crushing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/molybdenite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/molybdenite.png",
     enabled = false,
     category = "pm-crushing",
     subgroup = "pm-molybdenum-tm",
@@ -92,7 +92,7 @@ data:extend({
     type = "recipe",
     name = "pm-molybdenum-floating",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/molybdenum-floating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/molybdenum-floating.png",
     enabled = false,
     category = "pm-washing",
     subgroup = "pm-molybdenum-tm",
@@ -118,11 +118,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/molybdenite.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/molybdenite.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

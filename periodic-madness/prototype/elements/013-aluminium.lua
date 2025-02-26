@@ -5,12 +5,12 @@ data:extend({
     type = "item",
     name = "pm-bauxite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bauxite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/bauxite.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bauxite.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/bauxite-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/bauxite-3.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/bauxite.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/bauxite-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/bauxite-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-aluminium-ptm",
     order = "a",
@@ -20,7 +20,7 @@ data:extend({
     type = "item",
     name = "pm-bauxite-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/aluminium-ore-icon.png",
     subgroup = "pm-aluminium-ptm",
     order = "b",
     stack_size = 300
@@ -32,11 +32,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/aluminium-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -128,11 +128,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/aluminium-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

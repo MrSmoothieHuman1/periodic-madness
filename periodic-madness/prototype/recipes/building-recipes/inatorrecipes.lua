@@ -81,7 +81,7 @@ data:extend({
     type = "recipe",
     name = "pm-molten-borosilicate-glass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/borosillicate-glass-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/borosillicate-glass-melting.png",
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
@@ -104,7 +104,7 @@ data:extend({
     type = "recipe",
     name = "pm-borosilicate-glass-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/borosillicate-glass-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/borosillicate-glass-cooling.png",
     enabled = false,
     energy_required = 9,
     category = "pm-coldening",
@@ -127,11 +127,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/glass-fibers.png",
+        icon = "__pm-graphics-01__/graphics/icons/glass-fibers.png",
         icon_size = 64
       },
       {
-        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon = "__pm-graphics-01__/graphics/icons/borosilicate-glass-pane.png",
         icon_size = 64
       },
     },
@@ -175,7 +175,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-copper.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-copper.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -210,13 +210,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-gold.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-gold.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/gold-wire.png",
+        icon = "__pm-graphics-01__/graphics/icons/gold-wire.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -246,13 +246,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-indium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-indium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/indium-wire.png",
+        icon = "__pm-graphics-01__/graphics/icons/indium-wire.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -281,7 +281,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-iron.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-iron.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -317,13 +317,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-brass.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-brass.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/brass-gear.png",
+        icon = "__pm-graphics-01__/graphics/icons/brass-gear.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -355,7 +355,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-iron.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-iron.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -390,7 +390,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-copper.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-copper.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -425,13 +425,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-nickel.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-nickel.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/nickel-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -460,13 +460,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-zinc.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-zinc.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/zinc-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -495,13 +495,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-manganese.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-manganese.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/manganese-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -530,13 +530,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-gold.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-gold.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/gold-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/gold-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -565,13 +565,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-silver.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-silver.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/silver-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/silver-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -600,13 +600,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-tin.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-tin.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/molybdenum-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -635,13 +635,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-titanium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-titanium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/titanium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/titanium-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -670,13 +670,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-tungsten.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-tungsten.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/tungsten-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -705,13 +705,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-cadnium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-cadnium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/cadnium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/cadnium-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -742,13 +742,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-aluminium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-aluminium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/aluminium-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -777,13 +777,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-platinum.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-platinum.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/platinum-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/platinum-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -809,7 +809,7 @@ data:extend({
     type = "recipe",
     name = "pm-molten-glass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/glass-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/glass-melting.png",
     subgroup = "pm-glassing",
     order = "h",
     category = "pm-moltening",
@@ -834,13 +834,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-lead.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-lead.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/lead-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/lead-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -869,13 +869,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-thallium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-thallium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/thallium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/thallium-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -904,13 +904,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-indium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-indium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/indium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/indium-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -939,13 +939,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-cobalt.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-cobalt.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/cobalt-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/cobalt-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -974,13 +974,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-palladium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-palladium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/palladium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/palladium-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -1006,7 +1006,7 @@ data:extend({
     type = "recipe",
     name = "pm-tinned-glass-melting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tinned-glass-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/tinned-glass-melting.png",
     subgroup = "pm-glassing",
     order = "ha",
     category = "pm-moltening",
@@ -1034,13 +1034,13 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-beryllium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-beryllium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/beryllium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/beryllium-plate.png",
         icon_size = 64,
         scale = 0.11,
         shift = { 0, -3 }
@@ -1067,7 +1067,7 @@ data:extend({
     type = "recipe",
     name = "pm-iron-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/iron-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/iron-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-iron-tm",
     order = "g",
@@ -1089,7 +1089,7 @@ data:extend({
     type = "recipe",
     name = "pm-copper-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/copper-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-copper-tm",
     order = "g",
@@ -1111,7 +1111,7 @@ data:extend({
     type = "recipe",
     name = "pm-nickel-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/nickel-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/nickel-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-nickel-tm",
     order = "g",
@@ -1133,7 +1133,7 @@ data:extend({
     type = "recipe",
     name = "pm-zinc-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/zinc-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/zinc-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-zinc-tm",
     order = "g",
@@ -1155,7 +1155,7 @@ data:extend({
     type = "recipe",
     name = "pm-manganese-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/manganese-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/manganese-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-manganese-tm",
     order = "e",
@@ -1177,7 +1177,7 @@ data:extend({
     type = "recipe",
     name = "pm-gold-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/gold-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/gold-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-gold-tm",
     order = "f",
@@ -1199,7 +1199,7 @@ data:extend({
     type = "recipe",
     name = "pm-silver-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/silver-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/silver-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-silver-tm",
     order = "f",
@@ -1221,7 +1221,7 @@ data:extend({
     type = "recipe",
     name = "pm-tin-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tin-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/tin-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-tin-ptm",
     order = "g",
@@ -1243,7 +1243,7 @@ data:extend({
     type = "recipe",
     name = "pm-titanium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/titanium-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/titanium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-titanium-tm",
     order = "i",
@@ -1265,7 +1265,7 @@ data:extend({
     type = "recipe",
     name = "pm-tungsten-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tungsten-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/tungsten-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-tungsten-tm",
     order = "i",
@@ -1287,7 +1287,7 @@ data:extend({
     type = "recipe",
     name = "pm-cadnium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/cadnium-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/cadnium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-cadnium-tm",
     order = "e",
@@ -1309,7 +1309,7 @@ data:extend({
     type = "recipe",
     name = "pm-aluminium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/aluminium-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/aluminium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-aluminium-ptm",
     order = "d",
@@ -1331,7 +1331,7 @@ data:extend({
     type = "recipe",
     name = "pm-platinum-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/platinum-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/platinum-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-platinum-tm",
     order = "g",
@@ -1353,7 +1353,7 @@ data:extend({
     type = "recipe",
     name = "pm-lead-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/lead-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/lead-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-lead-ptm",
     order = "g",
@@ -1375,7 +1375,7 @@ data:extend({
     type = "recipe",
     name = "pm-thallium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/thallium-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/thallium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-thallium-ptm",
     order = "g",
@@ -1397,7 +1397,7 @@ data:extend({
     type = "recipe",
     name = "pm-indium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/indium-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/indium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-indium-ptm",
     order = "g",
@@ -1419,7 +1419,7 @@ data:extend({
     type = "recipe",
     name = "pm-glass-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/glass-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/glass-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-glassing",
     order = "i",
@@ -1441,7 +1441,7 @@ data:extend({
     type = "recipe",
     name = "pm-cobalt-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/cobalt-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/cobalt-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-cobalt-tm",
     order = "f",
@@ -1463,7 +1463,7 @@ data:extend({
     type = "recipe",
     name = "pm-palladium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/palladium-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/palladium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-palladium-tm",
     order = "f",
@@ -1485,7 +1485,7 @@ data:extend({
     type = "recipe",
     name = "pm-beryllium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/beryllium-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/beryllium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-beryllium-aem",
     order = "i",
@@ -1508,7 +1508,7 @@ data:extend({
     type = "recipe",
     name = "pm-liquid-solder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/solder-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/solder-melting.png",
     subgroup = "pm-alloys",
     order = "g",
     category = "pm-moltening",
@@ -1531,7 +1531,7 @@ data:extend({
     type = "recipe",
     name = "pm-lead-liquid-solder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/lead-solder-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/lead-solder-melting.png",
     subgroup = "pm-alloys",
     order = "ga",
     category = "pm-moltening",
@@ -1556,7 +1556,7 @@ data:extend({
     type = "recipe",
     name = "pm-bismuth-liquid-solder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/bismuth-solder-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/bismuth-solder-melting.png",
     subgroup = "pm-alloys",
     order = "gb",
     category = "pm-moltening",
@@ -1580,7 +1580,7 @@ data:extend({
     type = "recipe",
     name = "pm-solder-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/solder-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/solder-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
     order = "h",
@@ -1603,7 +1603,7 @@ data:extend({
     type = "recipe",
     name = "pm-liquid-steel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/steel-alloy-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/steel-alloy-melting.png",
     subgroup = "pm-alloys",
     order = "ba",
     category = "pm-moltening",
@@ -1627,7 +1627,7 @@ data:extend({
     type = "recipe",
     name = "pm-steel-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/steel-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/steel-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
     order = "bb",
@@ -1649,7 +1649,7 @@ data:extend({
     type = "recipe",
     name = "pm-liquid-brass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/brass-alloy-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/brass-alloy-melting.png",
     subgroup = "pm-alloys",
     order = "ca",
     category = "pm-moltening",
@@ -1674,7 +1674,7 @@ data:extend({
     type = "recipe",
     name = "pm-brass-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/brass-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/brass-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
     order = "ca",
@@ -1696,7 +1696,7 @@ data:extend({
     type = "recipe",
     name = "pm-liquid-stainless-steel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/stainless-steel-alloy-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/stainless-steel-alloy-melting.png",
     subgroup = "pm-alloys",
     order = "ea",
     category = "pm-moltening",
@@ -1721,7 +1721,7 @@ data:extend({
     type = "recipe",
     name = "pm-stainless-steel-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/stainless-steel-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/stainless-steel-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
     order = "eb",
@@ -1743,7 +1743,7 @@ data:extend({
     type = "recipe",
     name = "pm-liquid-kasethal",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/kasethal-melting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/kasethal-melting.png",
     subgroup = "pm-alloys",
     order = "fa",
     category = "pm-moltening",
@@ -1767,7 +1767,7 @@ data:extend({
     type = "recipe",
     name = "pm-kasethal-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/kasethal-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/kasethal-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
     order = "eb",
@@ -1795,11 +1795,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/refinery-gases.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/refinery-gases.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1820,11 +1820,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/petrol.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1845,11 +1845,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/naptha.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1870,11 +1870,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/diesel.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1895,11 +1895,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/kerosene.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1920,11 +1920,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/fuel-oils.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1945,11 +1945,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/lubricating-oils.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1970,11 +1970,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/oil-residual.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -1995,11 +1995,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/common-diesel.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/common-diesel.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -2021,11 +2021,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/legendary-diesel.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/legendary-diesel.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -2046,11 +2046,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/butene-gas.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -2071,11 +2071,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/butane-gas.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/butane-gas.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -2096,11 +2096,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/ethylene-gas.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/ethylene-gas.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -2121,11 +2121,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/methanol.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/methanol.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },
@@ -2146,11 +2146,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/acetone.png",
         icon_size = 128,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh uh.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh uh.png",
         icon_size = 128,
       },
     },
@@ -2171,11 +2171,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/ammonia.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/ammonia.png",
         icon_size = 128,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh uh.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh uh.png",
         icon_size = 128,
       },
     },

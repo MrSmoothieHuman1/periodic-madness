@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-white-tin",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/white-tin.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/white-tin.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/white-tin.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/white-tin-2.png", size = 64, scale = 0.5}
+      {filename = "__pm-graphics-01__/graphics/icons/ores/white-tin.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/white-tin-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-tin-ptm",
     order = "e",
@@ -19,12 +19,12 @@ data:extend({
     type = "item",
     name = "pm-black-tin",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/black-tin.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/black-tin.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/black-tin.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/black-tin-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/black-tin-3.png", size = 64, scale = 0.5}
+      {filename = "__pm-graphics-01__/graphics/icons/ores/black-tin.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/black-tin-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/black-tin-3.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-tin-ptm",
     order = "d",
@@ -34,7 +34,7 @@ data:extend({
     type = "item",
     name = "pm-cassiterite",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/cassiterite.png",
+    icon = "__pm-graphics-01__/graphics/icons/cassiterite.png",
     subgroup = "pm-tin-ptm",
     order = "a",
     stack_size = 100
@@ -43,11 +43,11 @@ data:extend({
     type = "item",
     name = "pm-tin-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/tin-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/tin-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/tin-chunks.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/tin-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/tin-chunks.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/tin-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-tin-ptm",
     order = "b",
@@ -61,11 +61,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/tin-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/tin-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -96,7 +96,7 @@ data:extend({
     type = "recipe",
     name = "pm-tin-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/tin-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/tin-chunks.png",
     category = "pm-crushing",
     subgroup = "pm-tin-ptm",
     order = "c",
@@ -119,11 +119,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/white-tin.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/white-tin.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -148,7 +148,7 @@ data:extend({
     type = "recipe",
     name = "pm-tin-ore",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tin-combining.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/tin-combining.png",
     category = "chemistry",
     subgroup = "pm-tin-ptm",
     order = "e",
@@ -174,11 +174,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/tin-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/tin-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

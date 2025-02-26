@@ -10,7 +10,7 @@ data.raw["recipe"]["coke"].ingredients =
 }
 data.raw["recipe"]["coke"].main_product = ""
 data.raw["recipe"]["coke"].icon_size = 64
-data.raw["recipe"]["coke"].icon = "__periodic-madness__/graphics/icons/coke.png"
+data.raw["recipe"]["coke"].icon = "__pm-graphics-01__/graphics/icons/coke.png"
 data.raw["recipe"]["coke"].subgroup = "pm-alloys"
 data.raw["recipe"]["coke"].results =
 {

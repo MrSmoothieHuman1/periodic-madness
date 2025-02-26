@@ -6,7 +6,7 @@ data:extend({
     type = "technology",
     name = "pm-electronic-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/green-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/green-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-circuit-mold"),
@@ -29,7 +29,7 @@ data:extend({
     type = "technology",
     name = "pm-fluid-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/orange-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/orange-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-orange-circuit-molding"),
@@ -51,7 +51,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-circuit-molding"),
@@ -74,7 +74,7 @@ data:extend({
     type = "technology",
     name = "pm-processing-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/processing-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/processing-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-processing-circuit-molding"),
@@ -99,7 +99,7 @@ data:extend({
     type = "technology",
     name = "pm-sulfuric-acid-dilution",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/sulfuric-acid-dilution.png",
+    icon = "__pm-graphics-01__/graphics/technology/sulfuric-acid-dilution.png",
     effects =
     {
       PM.unlock_recipe("pm-sodium-sulfite"),
@@ -125,7 +125,7 @@ data:extend({
     type = "technology",
     name = "pm-electronic-integrated-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/basic-integrated-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/basic-integrated-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-integrated-circuit-mold"),
@@ -150,7 +150,7 @@ data:extend({
     type = "technology",
     name = "pm-fluid-integrated-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/fluid-integrated-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/fluid-integrated-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-fluid-integrated-circuit-pressing"),
@@ -174,7 +174,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-integrated-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-integrated-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-integrated-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-integrated-circuit-pressing"),
@@ -198,7 +198,7 @@ data:extend({
     type = "technology",
     name = "pm-processing-integrated-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/processing-integrated-circuit-molding.png",
+    icon = "__pm-graphics-01__/graphics/technology/processing-integrated-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-processing-integrated-circuit-pressing"),
@@ -224,7 +224,7 @@ data:extend({
     type = "technology",
     name = "pm-alternative-crystallizer-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/crystallisation-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/crystallisation-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-better-flourite-crystallisation"),
@@ -250,7 +250,7 @@ data:extend({
     type = "technology",
     name = "pm-bismuth-CO2-electrolysis",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bismuth-CO2-electrolysis.png",
+    icon = "__pm-graphics-01__/graphics/technology/bismuth-CO2-electrolysis.png",
     effects =
     {
       PM.unlock_recipe("pm-bismuth-carbon-dioxide-electrolysis"),
@@ -275,7 +275,7 @@ data:extend({
     type = "technology",
     name = "pm-alternative-advanced-air-filter-cleaning",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/sodium-air-filter-cleaning.png",
+    icon = "__pm-graphics-01__/graphics/technology/sodium-air-filter-cleaning.png",
     effects =
     {
       PM.unlock_recipe("pm-sodium-advanced-air-filter-cleaning"),
@@ -302,7 +302,7 @@ data:extend({
     type = "technology",
     name = "pm-bromide-PMMA",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bromide-PMMA.png",
+    icon = "__pm-graphics-01__/graphics/technology/bromide-PMMA.png",
     effects =
     {
       PM.unlock_recipe("pm-bromide-polymethyl-methacrylate-plastic")

@@ -5,11 +5,11 @@ data:extend({
         type = "item",
         name = "pm-germanium-ore-concentrate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-ore-concentrate.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate.png",   size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-concentrate-2.png", size = 64, scale = 0.5}
+            {filename = "__pm-graphics-01__/graphics/icons/ores/germanium-ore-concentrate.png",   size = 64, scale = 0.5},
+            {filename = "__pm-graphics-01__/graphics/icons/ores/germanium-ore-concentrate-2.png", size = 64, scale = 0.5}
         },
         subgroup = "pm-germanium-mt",
         order = "a",
@@ -19,7 +19,7 @@ data:extend({
         type = "item",
         name = "pm-germanium-sulfide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-sulfide.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-sulfide.png",
         subgroup = "pm-germanium-mt",
         order = "b",
         stack_size = 200,
@@ -28,11 +28,11 @@ data:extend({
         type = "item",
         name = "pm-germanium-oxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-oxide.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-oxide.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-oxide.png",   size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-oxide-2.png", size = 64, scale = 0.5}
+            {filename = "__pm-graphics-01__/graphics/icons/ores/germanium-oxide.png",   size = 64, scale = 0.5},
+            {filename = "__pm-graphics-01__/graphics/icons/ores/germanium-oxide-2.png", size = 64, scale = 0.5}
         },
         subgroup = "pm-germanium-mt",
         order = "c",
@@ -42,11 +42,11 @@ data:extend({
         type = "item",
         name = "pm-germanium-tetrachloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-tetrachloride.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride.png",   size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ores/germanium-tetrachloride-2.png", size = 64, scale = 0.5}
+            {filename = "__pm-graphics-01__/graphics/icons/ores/germanium-tetrachloride.png",   size = 64, scale = 0.5},
+            {filename = "__pm-graphics-01__/graphics/icons/ores/germanium-tetrachloride-2.png", size = 64, scale = 0.5}
         },
         subgroup = "pm-germanium-mt",
         order = "d",

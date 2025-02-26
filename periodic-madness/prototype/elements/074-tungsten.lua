@@ -5,13 +5,13 @@ data:extend({
     type = "item",
     name = "pm-tungsten-ore",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/tungsten-ore-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/tungsten-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/tungsten-ore-icon.png",   size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/tungsten-ore-icon-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/tungsten-ore-icon-3.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/tungsten-ore-icon-4.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-ore-icon.png",   size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-ore-icon-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-tungsten-tm",
     order = "e",
@@ -21,7 +21,7 @@ data:extend({
     type = "item",
     name = "pm-wolframite",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/wolframite.png",
+    icon = "__pm-graphics-01__/graphics/icons/wolframite.png",
     subgroup = "pm-tungsten-tm",
     order = "b",
     stack_size = 100
@@ -30,11 +30,11 @@ data:extend({
     type = "item",
     name = "pm-tungsten-crystals",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/tungsten-krystals.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/tungsten-krystals.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-krystals-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-krystals.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-krystals-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-tungsten-tm",
     order = "c",
@@ -44,7 +44,7 @@ data:extend({
     type = "item",
     name = "pm-scheelite",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/scheelite.png",
+    icon = "__pm-graphics-01__/graphics/icons/scheelite.png",
     subgroup = "pm-tungsten-tm",
     order = "d",
     stack_size = 100
@@ -53,11 +53,11 @@ data:extend({
     type = "item",
     name = "pm-tungsten-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/tungsten-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/tungsten-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-chunks.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/tungsten-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-tungsten-tm",
     order = "a",
@@ -71,11 +71,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/tungsten-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -116,7 +116,7 @@ data:extend({
     type = "recipe",
     name = "pm-wolframite-washing",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/wolframite-washing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/wolframite-washing.png",
     category = "pm-washing",
     subgroup = "pm-tungsten-tm",
     order = "d",
@@ -137,7 +137,7 @@ data:extend({
     type = "recipe",
     name = "pm-tungsten-seperation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/tungsten-ore-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/tungsten-ore-icon.png",
     category = "pm-crushing",
     subgroup = "pm-tungsten-tm",
     order = "e",
@@ -159,7 +159,7 @@ data:extend({
     type = "recipe",
     name = "pm-argon-tungsten-melting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/argon-titanium-welding.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/argon-titanium-welding.png",
     subgroup = "pm-tungsten-tm",
     order = "h",
     category = "pm-moltening",
@@ -182,11 +182,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/tungsten-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/tungsten-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },
@@ -211,7 +211,7 @@ data:extend({
     type = "recipe",
     name = "pm-wolframite-crystallisation",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/wolframite-crystallisation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/wolframite-crystallisation.png",
     category = "pm-crystallisation",
     subgroup = "pm-tungsten-tm",
     order = "da",

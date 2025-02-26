@@ -6,7 +6,7 @@ data:extend({
     type = "recipe",
     name = "pm-seawater-sulfide-evaporation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/seawater-sulfide-evaporation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/seawater-sulfide-evaporation.png",
     subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
     hide_from_player_crafting = true,
@@ -27,7 +27,7 @@ data:extend({
     type = "recipe",
     name = "pm-water-voiding",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-voiding.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/water-voiding.png",
     subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
     hide_from_player_crafting = true,
@@ -45,12 +45,12 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/oxygen-gas.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/oxygen-gas.png",
         icon_size = 128,
         scale = 0.4
       },
       {
-        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon = "__pm-graphics-01__/graphics/icons/nuh-uh-64.png",
         icon_size = 64,
       },
     },

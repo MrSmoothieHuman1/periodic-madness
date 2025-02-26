@@ -5,7 +5,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-laboratory",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bio-laboratory.png",
+    icon = "__pm-graphics-01__/graphics/technology/bio-laboratory.png",
     effects =
     {
       PM.unlock_recipe("pm-bio-lab")
@@ -29,7 +29,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-agility-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/agility-bio-upgrade.png",
     use_icon_overlay_constant = true,
     effects =
     {
@@ -51,7 +51,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-agility-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/agility-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -74,7 +74,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-agility-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/agility-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -97,7 +97,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-agility-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/agility-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -121,7 +121,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/strength-bio-upgrade.png",
     use_icon_overlay_constant = true,
     effects =
     {
@@ -143,7 +143,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/strength-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -166,7 +166,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/strength-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -189,7 +189,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/strength-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -213,7 +213,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/health-bio-upgrade.png",
     use_icon_overlay_constant = true,
     effects =
     {
@@ -235,7 +235,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/health-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -258,7 +258,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/health-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -281,7 +281,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__pm-graphics-01__/graphics/technology/health-bio-upgrade.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =

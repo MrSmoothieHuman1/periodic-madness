@@ -7,11 +7,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/manganese-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -48,11 +48,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/manganese-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

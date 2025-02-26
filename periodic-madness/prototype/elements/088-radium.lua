@@ -5,7 +5,7 @@ data:extend({
         type = "item",
         name = "pm-barium-radium-sulfate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 50
@@ -14,7 +14,7 @@ data:extend({
         type = "item",
         name = "pm-barium-radium-carbonate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 100
@@ -23,7 +23,7 @@ data:extend({
         type = "item",
         name = "pm-radium-sulfate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 150
@@ -32,7 +32,7 @@ data:extend({
         type = "item",
         name = "pm-radium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 200

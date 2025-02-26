@@ -334,7 +334,7 @@ data:extend({
     name = "pm-transition-metal-clearing",
     icon_size = 64,
     energy_required = 6.4,
-    icon = "__periodic-madness__/graphics/icons/recipes/transition-metals-cleared.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/transition-metals-cleared.png",
     subgroup = "pm-tm-tm",
     order = "a",
     ingredients = { PM.ingredient("pm-transition-metals-ore", 5) },
@@ -351,7 +351,7 @@ data:extend({
     name = "pm-transition-metal-sea-washing",
     energy_required = 3.2,
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/transition-metals-seawashed.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/transition-metals-seawashed.png",
     category = "crafting-with-fluid",
     subgroup = "pm-tm-tm",
     order = "b",
@@ -373,7 +373,7 @@ data:extend({
     name = "pm-transition-metal-washing",
     energy_required = 3.2,
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/transition-metals-washed.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/transition-metals-washed.png",
     category = "crafting-with-fluid",
     subgroup = "pm-tm-tm",
     order = "c",
@@ -583,7 +583,7 @@ data:extend({
     type = "recipe",
     name = "pm-wood-strip-burning",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/wood-strip-burning.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/wood-strip-burning.png",
     enabled = false,
     energy_required = 3,
     category = "smelting",
@@ -619,7 +619,7 @@ data:extend({
     type = "recipe",
     name = "pm-resin",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-forming.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/rubber/resin-forming.png",
     energy_required = 2,
     subgroup = "pm-resin",
     category = "crafting-with-fluid",
@@ -639,7 +639,7 @@ data:extend({
     type = "recipe",
     name = "pm-rubber-resin",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-rubber-resin.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/rubber/resin-to-rubber-resin.png",
     energy_required = 1,
     subgroup = "pm-resin",
     category = "pm-acids",
@@ -659,7 +659,7 @@ data:extend({
     type = "recipe",
     name = "pm-pheonlic-resin",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-pheonlic-resin.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/rubber/resin-to-pheonlic-resin.png",
     energy_required = 1,
     subgroup = "pm-resin",
     category = "pm-acids",
@@ -679,7 +679,7 @@ data:extend({
     type = "recipe",
     name = "pm-rubber",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-cooling.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/rubber/resin-cooling.png",
     energy_required = 2,
     subgroup = "pm-resin",
     category = "pm-molding",
@@ -1130,7 +1130,7 @@ data:extend({
     type = "recipe",
     name = "pm-trace-acetonitrile-looping",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/trace-acetonitrile-looping.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/trace-acetonitrile-looping.png",
     energy_required = 24,
     category = "pm-washing",
     subgroup = "pm-acetonitrile-rnm",
@@ -1210,7 +1210,7 @@ data:extend({
     type = "recipe",
     name = "pm-myostatin-oxygenation",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/myostatin-oxygenation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/myostatin-oxygenation.png",
     energy_required = 6,
     enabled = false,
     category = "chemistry",
@@ -1231,7 +1231,7 @@ data:extend({
     type = "recipe",
     name = "pm-myostatin-nitrogenation",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/myostatin-nitrogenation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/myostatin-nitrogenation.png",
     energy_required = 3,
     enabled = false,
     category = "chemistry",
@@ -1294,7 +1294,7 @@ data:extend({
     type = "recipe",
     name = "pm-heavy-lube-electric-engine-unit",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/heavy-lube-electric-engine.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/heavy-lube-electric-engine.png",
     energy_required = 8,
     enabled = false,
     category = "crafting-with-fluid",
@@ -1317,7 +1317,7 @@ data:extend({
     type = "recipe",
     name = "pm-basic-fluid-circuit",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/green-circuit-dipping.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/green-circuit-dipping.png",
     enabled = false,
     energy_required = 2.25,
     category = "crafting-with-fluid",
@@ -1452,7 +1452,7 @@ data:extend({
     type = "recipe",
     name = "pm-speed-module-1-crushing",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/speed-module-1-crushing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/speed-module-1-crushing.png",
     enabled = false,
     energy_required = 15 / 2,
     category = "pm-crushing",
@@ -1473,7 +1473,7 @@ data:extend({
     type = "recipe",
     name = "pm-speed-module-2-crushing",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/speed-module-2-crushing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/speed-module-2-crushing.png",
     enabled = false,
     energy_required = 15 / 2,
     category = "pm-crushing",
@@ -1495,7 +1495,7 @@ data:extend({
     type = "recipe",
     name = "pm-efficiency-module-1-crushing",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/efficiency-module-1-crushing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/efficiency-module-1-crushing.png",
     enabled = false,
     energy_required = 15 / 2,
     category = "pm-crushing",
@@ -1516,7 +1516,7 @@ data:extend({
     type = "recipe",
     name = "pm-efficiency-module-2-crushing",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/efficiency-module-2-crushing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/efficiency-module-2-crushing.png",
     enabled = false,
     energy_required = 15 / 2,
     category = "pm-crushing",
@@ -1538,7 +1538,7 @@ data:extend({
     type = "recipe",
     name = "pm-productivity-module-1-crushing",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/productivity-module-1-crushing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/productivity-module-1-crushing.png",
     enabled = false,
     energy_required = 15 / 2,
     category = "pm-crushing",
@@ -1559,7 +1559,7 @@ data:extend({
     type = "recipe",
     name = "pm-productivity-module-2-crushing",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/productivity-module-2-crushing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/productivity-module-2-crushing.png",
     enabled = false,
     energy_required = 15 / 2,
     category = "pm-crushing",
@@ -1748,12 +1748,12 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/polymethyl-methacrylate.png",
+        icon = "__pm-graphics-01__/graphics/icons/polymethyl-methacrylate.png",
         icon_size = 128,
         scale = 0.5
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/vinyl-bromide.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/vinyl-bromide.png",
         icon_size = 64,
         scale = 1.25
       },
@@ -1802,7 +1802,7 @@ data:extend({
     type = "recipe",
     name = "pm-chloronated-solution-seperation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chloronated-solution-seperation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/chloronated-solution-seperation.png",
     enabled = false,
     energy_required = 2,
     category = "pm-electrolysis",
@@ -1941,11 +1941,11 @@ data:extend({
     icons = 
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/ferric-chloride.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/ferric-chloride.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ferrum.png",
+        icon = "__pm-graphics-01__/graphics/icons/ferrum.png",
         icon_size = 64,
       },
       
@@ -1970,7 +1970,7 @@ data:extend({
     icons = 
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/ferric-chloride.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/ferric-chloride.png",
         icon_size = 64,
       },
       {
@@ -1997,7 +1997,7 @@ data:extend({
     type = "recipe",
     name = "pm-better-transistors",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/better-transistors.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/better-transistors.png",
     enabled = false,
     subgroup = "pm-circuits",
     order = "m",
@@ -2400,11 +2400,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/science-bottle.png",
+        icon = "__pm-graphics-01__/graphics/icons/science-bottle.png",
         icon_size = 64
       },
       {
-        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon = "__pm-graphics-01__/graphics/icons/borosilicate-glass-pane.png",
         icon_size = 64
       },
     },
@@ -2601,7 +2601,7 @@ data:extend({
     type = "recipe",
     name = "pm-spent-fuel-rod-reprocessing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/spent-fuel-rod-reprocessing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/spent-fuel-rod-reprocessing.png",
     enabled = false,
     energy_required = 10,
     category = "pm-advanced-crafting-with-fluid",
@@ -2786,7 +2786,7 @@ data:extend({
     type = "recipe",
     name = "pm-ruby-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/ruby-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/ruby-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-ruby-ptm",
@@ -2807,7 +2807,7 @@ data:extend({
     type = "recipe",
     name = "pm-citrine-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/citrine-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/citrine-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-citrine-ptm",
@@ -2829,7 +2829,7 @@ data:extend({
     type = "recipe",
     name = "pm-emerald-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/emerald-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/emerald-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-emerald-ptm",
@@ -2851,7 +2851,7 @@ data:extend({
     type = "recipe",
     name = "pm-sapphire-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/sapphire-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/sapphire-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-sapphire-ptm",
@@ -2873,7 +2873,7 @@ data:extend({
     type = "recipe",
     name = "pm-lapis-lazuli-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/lapis-lazuli-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/lapis-lazuli-leeching.png",
     energy_required = 5,
     category = "chemistry",
     subgroup = "pm-lapis-lazuli-ptm",
@@ -2895,7 +2895,7 @@ data:extend({
     type = "recipe",
     name = "pm-garnet-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/garnet-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/garnet-leeching.png",
     energy_required = 5,
     category = "pm-crushing",
     subgroup = "pm-garnet-ptm",
@@ -3167,7 +3167,7 @@ data:extend({
     type = "recipe",
     name = "pm-garnet-seawater-desaltination",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-desaltination.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/water-desaltination.png",
     subgroup = "pm-garnet-ptm",
     order = "c",
     category = "pm-evaporation",
@@ -3413,11 +3413,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/circuit-breadboard.png",
+        icon = "__pm-graphics-01__/graphics/icons/circuit-breadboard.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-ore-icon.png",
         icon_size = 64,
         scale = 0.4
       },
@@ -3443,7 +3443,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-electronic-integrated-circuits",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/advanced-basic-integrated-circuits.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/advanced-basic-integrated-circuits.png",
     enabled = false,
     subgroup = "pm-advanced-circuits",
     order = "b",
@@ -3467,11 +3467,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluid-circuit-breadboard.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluid-circuit-breadboard.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-ore-icon.png",
         icon_size = 64,
         scale = 0.4
       },
@@ -3498,7 +3498,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-fluid-integrated-circuits",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/advanced-fluid-integrated-circuits.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/advanced-fluid-integrated-circuits.png",
     energy_required = 1,
     subgroup = "pm-advanced-circuits",
     order = "d",
@@ -3524,11 +3524,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/advanced-circuit-breadboard.png",
+        icon = "__pm-graphics-01__/graphics/icons/advanced-circuit-breadboard.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-ore-icon.png",
         icon_size = 64,
         scale = 0.4
       },
@@ -3555,7 +3555,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-advanced-integrated-circuits",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/advanced-advanced-integrated-circuits.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/advanced-advanced-integrated-circuits.png",
     energy_required = 1,
     subgroup = "pm-advanced-circuits",
     order = "f",
@@ -3581,11 +3581,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/processing-breadboard.png",
+        icon = "__pm-graphics-01__/graphics/icons/processing-breadboard.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/germanium-ore-icon.png",
         icon_size = 64,
         scale = 0.4
       },
@@ -3614,7 +3614,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-processing-integrated-circuits",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/advanced-processing-integrated-circuits.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/advanced-processing-integrated-circuits.png",
     energy_required = 1,
     subgroup = "pm-advanced-circuits",
     order = "h",
@@ -3636,7 +3636,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-semiconductor",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/advanced-semiconfuctor.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/advanced-semiconfuctor.png",
     enabled = false,
     energy_required = 3,
     category = "crafting-with-fluid",
@@ -3700,7 +3700,7 @@ data:extend({
     type = "recipe",
     name = "pm-tri-to-dichlorosilane",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tri-to-dichlorosilane.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/tri-to-dichlorosilane.png",
     energy_required = 2,
     enabled = false,
     category = "chemistry",
@@ -3720,7 +3720,7 @@ data:extend({
     type = "recipe",
     name = "pm-di-to-trichlorosilane",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/di-to-trichlorosilane.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/di-to-trichlorosilane.png",
     energy_required = 2,
     enabled = false,
     category = "pm-moltening",
@@ -3800,7 +3800,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-transition-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-transition-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/plastic-transition-metal-pack.png",
     subgroup = "pm-plastic-science-pack",
     order = "b",
     enabled = false,
@@ -3821,7 +3821,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-advanced-transition-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-advanced-transition-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/plastic-advanced-transition-metal-pack.png",
     category = "crafting-with-fluid",
     subgroup = "pm-plastic-science-pack",
     order = "c",
@@ -3844,7 +3844,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-advanced-advanced-transition-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-advanced-advanced-transition-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/plastic-advanced-advanced-transition-metal-pack.png",
     subgroup = "pm-plastic-science-pack",
     order = "d",
     energy_required = 6,
@@ -3867,7 +3867,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-reactive-non-metals-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-reactive-non-metals-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/plastic-reactive-non-metals-pack.png",
     subgroup = "pm-plastic-science-pack",
     category = "crafting-with-fluid",
     order = "e",
@@ -3891,7 +3891,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-post-transition-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-post-transition-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/plastic-post-transition-metal-pack.png",
     category = "crafting-with-fluid",
     subgroup = "pm-plastic-science-pack",
     order = "e",
@@ -3916,7 +3916,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-alkali-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-alkali-metals-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/plastic-alkali-metals-pack.png",
     category = "crafting-with-fluid",
     subgroup = "pm-plastic-science-pack",
     order = "f",
@@ -3941,7 +3941,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-metalloid-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-metalloid-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/plastic-metalloid-pack.png",
     category = "crafting-with-fluid",
     subgroup = "pm-plastic-science-pack",
     order = "g",
@@ -3974,7 +3974,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/francium.png",
         icon_size = 64,
         scale = 0.32
       },
@@ -4003,11 +4003,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/science/advanced-transition-metal-pack.png",
+        icon = "__pm-graphics-01__/graphics/icons/science/advanced-transition-metal-pack.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/francium.png",
         icon_size = 64,
         scale = 0.32
       },
@@ -4036,11 +4036,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/science/advanced-advanced-transition-metal-pack.png",
+        icon = "__pm-graphics-01__/graphics/icons/science/advanced-advanced-transition-metal-pack.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/francium.png",
         icon_size = 64,
         scale = 0.32
       },
@@ -4069,11 +4069,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/science/reactive-non-metals-pack.png",
+        icon = "__pm-graphics-01__/graphics/icons/science/reactive-non-metals-pack.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/francium.png",
         icon_size = 64,
         scale = 0.32
       },
@@ -4103,11 +4103,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/science/post-transition-metal-pack.png",
+        icon = "__pm-graphics-01__/graphics/icons/science/post-transition-metal-pack.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/francium.png",
         icon_size = 64,
         scale = 0.32
       },

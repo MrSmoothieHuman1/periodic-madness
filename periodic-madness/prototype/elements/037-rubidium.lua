@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-caesium-rubidium-alum",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/caesium-rubidium-alum.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/caesium-rubidium-alum.png",
     subgroup = "pm-rubidium-am",
     order = "a",
     stack_size = 400
@@ -14,11 +14,11 @@ data:extend({
     type = "item",
     name = "pm-30-rubidium-alum",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/30-rubidium-alum.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/31-rubidium-alum.png", size = 64, scale = 0.5}
+      {filename = "__pm-graphics-01__/graphics/icons/ores/30-rubidium-alum.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/31-rubidium-alum.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-rubidium-am",
     order = "b",
@@ -28,11 +28,11 @@ data:extend({
     type = "item",
     name = "pm-50-rubidium-alum",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/50-rubidium-alum.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/51-rubidium-alum.png", size = 64, scale = 0.5}
+      {filename = "__pm-graphics-01__/graphics/icons/ores/50-rubidium-alum.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/51-rubidium-alum.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-rubidium-am",
     order = "c",
@@ -42,11 +42,11 @@ data:extend({
     type = "item",
     name = "pm-70-rubidium-alum",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/70-rubidium-alum.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
+      {filename = "__pm-graphics-01__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-rubidium-am",
     order = "d",
@@ -56,7 +56,7 @@ data:extend({
     type = "item",
     name = "pm-rubidium-alum",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/rubidium-alum.png",
     subgroup = "pm-rubidium-am",
     order = "b",
     stack_size = 200
@@ -87,7 +87,7 @@ data:extend({
     type = "recipe",
     name = "pm-caesium-rubidium-alum-seperation",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/ceasium-rubidium-alum-seperation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/ceasium-rubidium-alum-seperation.png",
     enabled = false,
     category = "pm-crushing",
     subgroup = "pm-rubidium-am",

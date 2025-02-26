@@ -6,11 +6,11 @@ data:extend({
     type = "item",
     name = "pm-nickel-chunk",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/nickel-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/nickel-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/nickel-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-nickel-tm",
     order = "a",
@@ -24,11 +24,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/nickel-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -65,11 +65,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/nickel-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

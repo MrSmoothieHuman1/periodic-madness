@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-lorandite",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/lorandite.png",
+    icon = "__pm-graphics-01__/graphics/icons/lorandite.png",
     subgroup = "pm-thallium-ptm",
     order = "a",
     stack_size = 100 / 2
@@ -14,7 +14,7 @@ data:extend({
     type = "item",
     name = "pm-thallium-sulfate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/thallium-sulfate.png",
     subgroup = "pm-thallium-ptm",
     order = "b",
     stack_size = 200
@@ -27,11 +27,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/thallium-ore-icon.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },
@@ -56,7 +56,7 @@ data:extend({
     type = "recipe",
     name = "pm-thallium-mixing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/thallium-mixing.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/thallium-mixing.png",
     enabled = false,
     energy_required = 8,
     category = "pm-mixing",
@@ -82,7 +82,7 @@ data:extend({
     type = "recipe",
     name = "pm-thallium-sulfate-electrolysis",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/thallium-electrolysis.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/thallium-electrolysis.png",
     enabled = false,
     energy_required = 3,
     category = "pm-electrolysis",

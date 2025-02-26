@@ -4,7 +4,7 @@ data:extend({
     type = "technology",
     name = "pm-brass-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/brass-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/brass-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-welder"),
@@ -27,7 +27,7 @@ data:extend({
     type = "technology",
     name = "pm-stainless-steel-processing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+    icon = "__pm-graphics-01__/graphics/icons/plates/stainless-steel-plate.png",
     effects =
     {
       PM.unlock_recipe("pm-stainless-steel-alloy"),
@@ -53,7 +53,7 @@ data:extend({
     type = "technology",
     name = "pm-byproduct-handling",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/byproduct-handling.png",
+    icon = "__pm-graphics-01__/graphics/technology/byproduct-handling.png",
     effects =
     {
       PM.unlock_recipe("pm-acidic-water"),
@@ -76,7 +76,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-transition-metal-refining",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-refining.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-transition-metal-refining.png",
     effects =
     {
       PM.unlock_recipe("pm-acidic-water"),
@@ -102,7 +102,7 @@ data:extend({
     type = "technology",
     name = "pm-mercury-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/mercury-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/mercury-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-cinnabar-processing"),
@@ -125,7 +125,7 @@ data:extend({
     type = "technology",
     name = "pm-water-distillation",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/water-distillation-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/water-distillation-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-transition-metal-washing"),
@@ -149,7 +149,7 @@ data:extend({
     type = "technology",
     name = "pm-wood-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/wood-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/wood-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-wood-strips"),
@@ -173,7 +173,7 @@ data:extend({
     type = "technology",
     name = "pm-rubber-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/rubber-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/rubber-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-rubber-resin"),
@@ -192,7 +192,7 @@ data:extend({
     type = "technology",
     name = "pm-pheonlic-resin-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/pheonlic-resin-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/pheonlic-resin-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-pheonlic-resin")
@@ -209,7 +209,7 @@ data:extend({
     type = "technology",
     name = "pm-resin-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/resin-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/resin-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-resin"),
@@ -232,7 +232,7 @@ data:extend({
     type = "technology",
     name = "pm-gold-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/gold-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/gold-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-gold-wire"),
@@ -249,7 +249,7 @@ data:extend({
     type = "technology",
     name = "pm-cleaner-power-generation",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/clean-power-forming.png",
+    icon = "__pm-graphics-01__/graphics/technology/clean-power-forming.png",
     effects =
     {
       PM.unlock_recipe("boiler")
@@ -269,7 +269,7 @@ data:extend({
     type = "technology",
     name = "pm-fiberoptics",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/optics.png",
+    icon = "__pm-graphics-01__/graphics/technology/optics.png",
     effects =
     {
       PM.unlock_recipe("pm-glass-fibers"),
@@ -323,7 +323,7 @@ data:extend({
     type = "technology",
     name = "pm-transition-metal-refining",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/transition-metal-refining.png",
+    icon = "__pm-graphics-01__/graphics/technology/transition-metal-refining.png",
     effects =
     {
       PM.unlock_recipe("pm-transition-iron-leeching"),
@@ -344,7 +344,7 @@ data:extend({
     type = "technology",
     name = "pm-ezekiel-ore-purifying",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/ezekiel-purifying.png",
+    icon = "__pm-graphics-01__/graphics/technology/ezekiel-purifying.png",
     effects =
     {
       PM.unlock_recipe("pm-ezekiel-iron-purifying"),
@@ -369,7 +369,7 @@ data:extend({
     type = "technology",
     name = "pm-voltatic-piles",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/voltatic-piles.png",
+    icon = "__pm-graphics-01__/graphics/technology/voltatic-piles.png",
     effects =
     {
       PM.unlock_recipe("pm-copper-disc"),
@@ -395,7 +395,7 @@ data:extend({
     type = "technology",
     name = "pm-tempature-plating",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/tempature-plating.png",
+    icon = "__pm-graphics-01__/graphics/technology/tempature-plating.png",
     effects =
     {
       PM.unlock_recipe("pm-gold-heating-plating"),
@@ -422,7 +422,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-basic-tubing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-basic-multimetal-items.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-basic-multimetal-items.png",
     effects =
     {
       PM.unlock_recipe("pm-brass-basic-tubing"),
@@ -446,7 +446,7 @@ data:extend({
     type = "technology",
     name = "pm-oil-residual-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/oil-residual-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/oil-residual-recipes.png",
     effects =
     {
       PM.unlock_recipe("pm-oil-residuals-splitting"),
@@ -467,7 +467,7 @@ data:extend({
     type = "technology",
     name = "pm-naptha-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/naptha-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/naptha-recipes.png",
     effects =
     {
       PM.unlock_recipe("pm-butane-cracking"),
@@ -485,7 +485,7 @@ data:extend({
     type = "technology",
     name = "pm-refinery-gases-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/refinery-gases-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/refinery-gases-recipes.png",
     effects =
     {
       PM.unlock_recipe("pm-refinery-gases-refining")
@@ -502,7 +502,7 @@ data:extend({
     type = "technology",
     name = "pm-fuel-oils-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/fuel-oils-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/fuel-oils-recipes.png",
     effects =
     {
       PM.unlock_recipe("pm-catalyst-container"),
@@ -526,7 +526,7 @@ data:extend({
     type = "technology",
     name = "pm-lubricating-oils-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/lubricating-oils-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/lubricating-oils-recipes.png",
     effects =
     {
       PM.unlock_recipe("lubricant"),
@@ -549,7 +549,7 @@ data:extend({
     type = "technology",
     name = "pm-diesel-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/diesel-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/diesel-recipes.png",
     effects =
     {
       PM.unlock_recipe("pm-diesel-seperation"),
@@ -574,7 +574,7 @@ data:extend({
     type = "technology",
     name = "pm-kerosene-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/kerosene-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/kerosene-recipes.png",
     effects =
     {
       PM.unlock_recipe("pm-catalyst-container"),
@@ -599,7 +599,7 @@ data:extend({
     type = "technology",
     name = "pm-petrol-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/petrol-recipes.png",
+    icon = "__pm-graphics-01__/graphics/technology/petrol-recipes.png",
     effects =
     {
       PM.unlock_recipe("pm-petrol-to-solid-fuel")
@@ -621,7 +621,7 @@ data:extend({
     type = "technology",
     name = "pm-basic-polyethylene-plastic",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/basic-polyethylene-plastic.png",
+    icon = "__pm-graphics-01__/graphics/technology/basic-polyethylene-plastic.png",
     effects =
     {
       PM.unlock_recipe("pm-butene-cracking"),
@@ -645,7 +645,7 @@ data:extend({
     type = "technology",
     name = "pm-diesel-fuel-canisters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/diesel-can-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/diesel-can-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-fuel-canister"),
@@ -668,7 +668,7 @@ data:extend({
     type = "technology",
     name = "pm-kerosene-fuel-canisters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/kerosene-can-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/kerosene-can-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-fuel-canister"),
@@ -691,7 +691,7 @@ data:extend({
     type = "technology",
     name = "pm-petrol-fuel-canisters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/petrol-can-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/petrol-can-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-fuel-canister"),
@@ -714,7 +714,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-refinery-gas-recipes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-refinery-gases.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-refinery-gases.png",
     effects =
     {
       PM.unlock_recipe("pm-catalyst-container"),
@@ -741,7 +741,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-advanced-transition-metal-pack-unlock",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-advanced-transition-metal-unlock.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-advanced-transition-metal-unlock.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-advanced-transition-metal-science-pack")
@@ -762,7 +762,7 @@ data:extend({
     type = "technology",
     name = "pm-fluid-circuit",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/fluid-technology.png",
+    icon = "__pm-graphics-01__/graphics/technology/fluid-technology.png",
     effects =
     {
       PM.unlock_recipe("pm-fluid-circuit-breadboard"),
@@ -786,7 +786,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-advanced-transition-metal-refining",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-advanced-transition-metal-refining.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-advanced-transition-metal-refining.png",
     effects =
     {
       PM.unlock_recipe("pm-titanium-leeching"),
@@ -816,7 +816,7 @@ data:extend({
     type = "technology",
     name = "pm-oil-cracking-and-reforming",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/oil-fraction-cracking.png",
+    icon = "__pm-graphics-01__/graphics/technology/oil-fraction-cracking.png",
     effects =
     {
       PM.unlock_recipe("pm-fluid-catalyst-cracker"),
@@ -852,7 +852,7 @@ data:extend({
     type = "technology",
     name = "pm-vanadium-oxide-redox-batteries",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/vanadium-oxide-battery.png",
+    icon = "__pm-graphics-01__/graphics/technology/vanadium-oxide-battery.png",
     effects =
     {
       PM.unlock_recipe("pm-battery-casing"),
@@ -879,7 +879,7 @@ data:extend({
     type = "technology",
     name = "pm-plastic-science-packs",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/plastic-science-bottle.png",
+    icon = "__pm-graphics-01__/graphics/technology/plastic-science-bottle.png",
     effects =
     {
       PM.unlock_recipe("pm-plaster-of-nauvis"),
@@ -908,7 +908,7 @@ data:extend({
     type = "technology",
     name = "pm-tin-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/tin-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/tin-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-tin-leeching"),
@@ -934,7 +934,7 @@ data:extend({
     type = "technology",
     name = "pm-copper-tin-solder",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/solder.png",
+    icon = "__pm-graphics-01__/graphics/technology/solder.png",
     effects =
     {
 
@@ -962,7 +962,7 @@ data:extend({
     type = "technology",
     name = "pm-tempature-inators",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/temp-inators.png",
+    icon = "__pm-graphics-01__/graphics/technology/temp-inators.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-inator"),
@@ -1009,7 +1009,7 @@ data:extend({
     type = "technology",
     name = "pm-circuit-megassembler",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/megassembler-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/megassembler-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-circuit-megassembler"),
@@ -1032,7 +1032,7 @@ data:extend({
     type = "technology",
     name = "pm-atmospheric-condensation",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/atmospheric-condensation.png",
+    icon = "__pm-graphics-01__/graphics/technology/atmospheric-condensation.png",
     effects =
     {
       PM.unlock_recipe("pm-atmospheric-condenser"),
@@ -1070,7 +1070,7 @@ data:extend({
     type = "technology",
     name = "pm-multimetal-multiproperty",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/multimetal-multiproperty-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/multimetal-multiproperty-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-tungsten-heavyweight-panelling"),
@@ -1106,7 +1106,7 @@ data:extend({
     type = "technology",
     name = "pm-science-center",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/science-center-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/science-center-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-science-center")
@@ -1128,7 +1128,7 @@ data:extend({
     type = "technology",
     name = "pm-CO2-nullifying",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/CO2-nullifying.png",
+    icon = "__pm-graphics-01__/graphics/technology/CO2-nullifying.png",
     effects =
     {
       PM.unlock_recipe("pm-CO2-nullifer"),
@@ -1154,7 +1154,7 @@ data:extend({
     type = "technology",
     name = "pm-cadnium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/cadnium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/cadnium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-zinc-chunk-seperation"),
@@ -1181,7 +1181,7 @@ data:extend({
     type = "technology",
     name = "pm-molten-alloys",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/molten-alloys.png",
+    icon = "__pm-graphics-01__/graphics/technology/molten-alloys.png",
     effects =
     {
       PM.unlock_recipe("pm-liquid-steel"),
@@ -1212,7 +1212,7 @@ data:extend({
     type = "technology",
     name = "pm-trace-gas-refining", --you come up with a better name.
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/trace-gas-refining.png",
+    icon = "__pm-graphics-01__/graphics/technology/trace-gas-refining.png",
     effects =
     {
       PM.unlock_recipe("pm-trace-gas-seperation"),
@@ -1240,7 +1240,7 @@ data:extend({
     type = "technology",
     name = "pm-chemical-resin",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/chemical-based-resin.png",
+    icon = "__pm-graphics-01__/graphics/technology/chemical-based-resin.png",
     effects =
     {
       PM.unlock_recipe("pm-naptha-steam-cracking"),
@@ -1266,7 +1266,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-polyethylene-plastic",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-polyethylene-plastic.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-polyethylene-plastic.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-polyethylene-plastic")
@@ -1289,7 +1289,7 @@ data:extend({
     type = "technology",
     name = "pm-pollution-filtering",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/air-filterer-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/air-filterer-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-air-filterer"),
@@ -1315,7 +1315,7 @@ data:extend({
     type = "technology",
     name = "pm-washing-plant-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/washing-plant-1-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/washing-plant-1-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-washing-plant-1")
@@ -1336,7 +1336,7 @@ data:extend({
     type = "technology",
     name = "pm-washing-plant-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/washing-plant-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/washing-plant-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-washing-plant-2"),
@@ -1359,7 +1359,7 @@ data:extend({
     type = "technology",
     name = "pm-chrominum-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/chromium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/chromium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-chrominum-leeching"),
@@ -1384,7 +1384,7 @@ data:extend({
     type = "technology",
     name = "pm-chromic-acid-leeching",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/chromic-acid-leeching.png",
+    icon = "__pm-graphics-01__/graphics/technology/chromic-acid-leeching.png",
     effects =
     {
       PM.unlock_recipe("pm-chromic-transition-iron-leeching"),
@@ -1419,7 +1419,7 @@ data:extend({
     type = "technology",
     name = "pm-palladium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/palladium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/palladium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-nickel-chunk-frothing"),
@@ -1443,7 +1443,7 @@ data:extend({
     type = "technology",
     name = "pm-vanadium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/vanadium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/vanadium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-magnetite-forming"),
@@ -1468,7 +1468,7 @@ data:extend({
     type = "technology",
     name = "pm-greenhouse",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/greenhouse-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/greenhouse-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-greenhouse"),
@@ -1492,7 +1492,7 @@ data:extend({
     type = "technology",
     name = "pm-vacuum-former-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/vacuum-former-2-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/vacuum-former-2-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-vacuum-former-2")
@@ -1515,7 +1515,7 @@ data:extend({
     type = "technology",
     name = "pm-anti-bacterial-multiproperty-multimetals",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/anti-bacterial-multimetals.png",
+    icon = "__pm-graphics-01__/graphics/technology/anti-bacterial-multimetals.png",
     effects =
     {
       PM.unlock_recipe("pm-silver-anti-bacterial-tubing"),
@@ -1543,7 +1543,7 @@ data:extend({
     type = "technology",
     name = "pm-phosphor-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/phosphorus-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/phosphorus-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-phosphate-rock"),
@@ -1570,7 +1570,7 @@ data:extend({
     type = "technology",
     name = "pm-fertiliser",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/fertiliser-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/fertiliser-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-fertiliser"),
@@ -1594,7 +1594,7 @@ data:extend({
     type = "technology",
     name = "pm-biomass-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/biomass-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/biomass-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-cellouse-pulp"),
@@ -1617,7 +1617,7 @@ data:extend({
     type = "technology",
     name = "pm-agar-bacteria-filtering",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agar-solution-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/agar-solution-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-factorian-bacteria-greenhouse"),
@@ -1643,7 +1643,7 @@ data:extend({
     type = "technology",
     name = "pm-agar-storage",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agar-storage.png",
+    icon = "__pm-graphics-01__/graphics/technology/agar-storage.png",
     effects =
     {
       PM.unlock_recipe("pm-empty-petri-dish"),
@@ -1672,7 +1672,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-modules",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bio-module-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/bio-module-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-blank-bio-module"),
@@ -1701,7 +1701,7 @@ data:extend({
     type = "technology",
     name = "pm-glass-melting",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/glass-melting.png",
+    icon = "__pm-graphics-01__/graphics/technology/glass-melting.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-glass"),
@@ -1725,7 +1725,7 @@ data:extend({
     type = "technology",
     name = "pm-post-transition-metal-pack-unlock",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/post-transition-metal-unlock.png",
+    icon = "__pm-graphics-01__/graphics/technology/post-transition-metal-unlock.png",
     effects =
     {
       PM.unlock_recipe("pm-post-transition-metal-science-pack")
@@ -1747,7 +1747,7 @@ data:extend({
     type = "technology",
     name = "pm-tempature-inators-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/temp-inators-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/temp-inators-2.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-inator-2"),
@@ -1777,7 +1777,7 @@ data:extend({
     type = "technology",
     name = "pm-chlorine-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/chlorine-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/chlorine-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-electrolysis-plant"),
@@ -1798,7 +1798,7 @@ data:extend({
     type = "technology",
     name = "pm-tempature-framing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/tempature-framing.png",
+    icon = "__pm-graphics-01__/graphics/technology/tempature-framing.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-framing"),
@@ -1822,7 +1822,7 @@ data:extend({
     type = "technology",
     name = "pm-flourine-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/fluorite-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/fluorite-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-flourite-crystallisation"),
@@ -1854,7 +1854,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-mining-drill-1",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/technology/mining-drill-1.png",
+    icon = "__pm-graphics-01__/graphics/technology/mining-drill-1.png",
     effects =
     {
       PM.unlock_recipe("pm-electric-mining-drill-2")
@@ -1877,7 +1877,7 @@ data:extend({
     type = "technology",
     name = "pm-crystallisation",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/crystallisation-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/crystallisation-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-ethylene-glycol"),
@@ -1919,7 +1919,7 @@ data:extend({
     type = "technology",
     name = "pm-indium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/indium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/indium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-indium-filtering"),
@@ -1944,7 +1944,7 @@ data:extend({
     type = "technology",
     name = "pm-solar-energy-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/solar-energy-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/solar-energy-2.png",
     effects =
     {
       PM.unlock_recipe("pm-solar-panel-2"),
@@ -1968,7 +1968,7 @@ data:extend({
     name = "pm-solar-panel-equipment-2",
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
-    "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
+    "__pm-graphics-01__/graphics/technology/solar-panel-equipment-2.png"),
     prerequisites = {"solar-panel-equipment", "pm-post-transition-metal-pack-unlock"},
     effects =
     {
@@ -1992,7 +1992,7 @@ data:extend({
     type = "technology",
     name = "pm-zirconium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/zirconium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/zirconium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-zirconium-leeching"),
@@ -2018,7 +2018,7 @@ data:extend({
     type = "technology",
     name = "pm-radiation-resistant-multimetals",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/radiation-resistant-multimetals.png",
+    icon = "__pm-graphics-01__/graphics/technology/radiation-resistant-multimetals.png",
     effects =
     {
       PM.unlock_recipe("pm-lead-radiation-resistant-tubing"),
@@ -2042,7 +2042,7 @@ data:extend({
     type = "technology",
     name = "pm-polonium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/polonium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/polonium-processing.png",
     effects =
     {
       PM.unlock_recipe("heat-pipe"),
@@ -2074,7 +2074,7 @@ data:extend({
     type = "technology",
     name = "pm-polymethyl-methacrylate",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/PMMA-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/PMMA-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-copper-zinc-aluminium-catalyst"),
@@ -2101,7 +2101,7 @@ data:extend({
     type = "technology",
     name = "pm-grouped-plastic-science-tier-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/plastic-science-tier-1.png",
+    icon = "__pm-graphics-01__/graphics/technology/plastic-science-tier-1.png",
     effects =
     {
       PM.unlock_recipe("pm-plastic-reactive-non-metals-science-pack"),
@@ -2126,7 +2126,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-byproduct-handling",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-byproduct-handling.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-byproduct-handling.png",
     effects =
     {
       PM.unlock_recipe("pm-mixed-ore-slag-crushing"),
@@ -2156,7 +2156,7 @@ data:extend({
     type = "technology",
     name = "pm-platinum-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/platinum-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/platinum-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-nickel-chunk-frothing"),
@@ -2185,7 +2185,7 @@ data:extend({
     type = "technology",
     name = "pm-crystal-seeding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/crystal-seeding.png",
+    icon = "__pm-graphics-01__/graphics/technology/crystal-seeding.png",
     effects =
     {
       PM.unlock_recipe("pm-sodium-sulfite"),
@@ -2222,7 +2222,7 @@ data:extend({
     type = "technology",
     name = "pm-cobalt-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/cobalt-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/cobalt-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-copper-chunk-frothing"),
@@ -2250,7 +2250,7 @@ data:extend({
     type = "technology",
     name = "pm-burn-inators",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/burn-inator.png",
+    icon = "__pm-graphics-01__/graphics/technology/burn-inator.png",
     effects =
     {
       PM.unlock_recipe("pm-burn-inator")
@@ -2272,7 +2272,7 @@ data:extend({
     type = "technology",
     name = "pm-alkali-metal-pack-unlock",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/alkali-metal-unlock.png",
+    icon = "__pm-graphics-01__/graphics/technology/alkali-metal-unlock.png",
     effects =
     {
       PM.unlock_recipe("pm-alkali-metal-science-pack")
@@ -2295,7 +2295,7 @@ data:extend({
     type = "technology",
     name = "pm-francium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/francium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/francium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-magneto-orbital-trap"),
@@ -2322,7 +2322,7 @@ data:extend({
     type = "technology",
     name = "pm-speed-module-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/speed-module-4-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/speed-module-4-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-speed-module-4")
@@ -2348,7 +2348,7 @@ data:extend({
     type = "technology",
     name = "pm-efficiency-module-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/effectivity-module-4-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/effectivity-module-4-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-efficiency-module-4")
@@ -2374,7 +2374,7 @@ data:extend({
     type = "technology",
     name = "pm-productivity-module-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/productivity-module-4-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/productivity-module-4-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-productivity-module-4")
@@ -2400,7 +2400,7 @@ data:extend({
     type = "technology",
     name = "pm-potassium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/potassium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-seawater-evaporite"),
@@ -2427,7 +2427,7 @@ data:extend({
     type = "technology",
     name = "pm-evaporator-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/evaporator-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/evaporator-2.png",
     effects =
     {
       PM.unlock_recipe("pm-evaporator-2")
@@ -2450,7 +2450,7 @@ data:extend({
     type = "technology",
     name = "pm-better-sodium-extraction",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/sodium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/sodium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-sodium-bicarbonate"),
@@ -2476,7 +2476,7 @@ data:extend({
     type = "technology",
     name = "pm-vacuum-tubes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/vacuum-tubes.png",
+    icon = "__pm-graphics-01__/graphics/technology/vacuum-tubes.png",
     effects =
     {
       PM.unlock_recipe("pm-vacuum-tube-getter"),
@@ -2501,7 +2501,7 @@ data:extend({
     type = "technology",
     name = "pm-caesium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/caesium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/caesium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-pollucite-leeching"),
@@ -2530,7 +2530,7 @@ data:extend({
     type = "technology",
     name = "pm-chemical-weaponry",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geneva's-neglection-magazine.png",
+    icon = "__pm-graphics-01__/graphics/icons/geneva's-neglection-magazine.png",
     effects =
     {
       PM.unlock_recipe("pm-cyanobacteriaed-agar-solution"),
@@ -2560,7 +2560,7 @@ data:extend({
     type = "technology",
     name = "pm-basic-battery-charging",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/battery-charging.png",
+    icon = "__pm-graphics-01__/graphics/technology/battery-charging.png",
     effects =
     {
       PM.unlock_recipe("pm-battery-charger"),
@@ -2584,7 +2584,7 @@ data:extend({
     type = "technology",
     name = "pm-lithium-ion-battery",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/lithium-ion-battery.png",
+    icon = "__pm-graphics-01__/graphics/technology/lithium-ion-battery.png",
     effects =
     {
       PM.unlock_recipe("pm-lithium-ion-battery")
@@ -2608,7 +2608,7 @@ data:extend({
     type = "technology",
     name = "pm-lithium-sulfur-battery",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/lithium-sulfur-battery.png",
+    icon = "__pm-graphics-01__/graphics/technology/lithium-sulfur-battery.png",
     effects =
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery"),
@@ -2632,7 +2632,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-battery-charging-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-battery-charging.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-battery-charging.png",
     effects =
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery-charging"),
@@ -2656,7 +2656,7 @@ data:extend({
     type = "technology",
     name = "pm-ethylene-carbonate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/ethylene-carbonate.png",
+    icon = "__pm-graphics-01__/graphics/icons/fluids/ethylene-carbonate.png",
     effects =
     {
       PM.unlock_recipe("pm-ethylene-carbonate"),
@@ -2680,7 +2680,7 @@ data:extend({
     type = "technology",
     name = "pm-lithium-ion-logistic-robotics",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/lithium-logistic-robotics.png",
+    icon = "__pm-graphics-01__/graphics/technology/lithium-logistic-robotics.png",
     effects =
     {
       PM.unlock_recipe("pm-lithium-logistic-robot")
@@ -2705,7 +2705,7 @@ data:extend({
     type = "technology",
     name = "pm-lithium-ion-construction-robotics",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/lithium-construction-robotics.png",
+    icon = "__pm-graphics-01__/graphics/technology/lithium-construction-robotics.png",
     effects =
     {
       PM.unlock_recipe("pm-lithium-construction-robot")
@@ -2730,7 +2730,7 @@ data:extend({
     type = "technology",
     name = "pm-robot-battery-capacity-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/robot-battery-1.png",
+    icon = "__pm-graphics-01__/graphics/technology/robot-battery-1.png",
     effects =
     {
       PM.modify("worker-robot-battery", 0.10)
@@ -2752,7 +2752,7 @@ data:extend({
     type = "technology",
     name = "pm-robot-battery-capacity-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/robot-battery-1.png",
+    icon = "__pm-graphics-01__/graphics/technology/robot-battery-1.png",
     effects =
     {
       PM.modify("worker-robot-battery", 0.20)
@@ -2776,7 +2776,7 @@ data:extend({
     type = "technology",
     name = "pm-robot-battery-capacity-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/robot-battery-2.png",
     effects =
     {
       PM.modify("worker-robot-battery", 0.25)
@@ -2800,7 +2800,7 @@ data:extend({
     type = "technology",
     name = "pm-robot-battery-capacity-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/robot-battery-2.png",
     effects =
     {
       PM.modify("worker-robot-battery", 0.30)
@@ -2824,7 +2824,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-pollution-filtering",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/air-filterer-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/air-filterer-2.png",
     effects =
     {
       PM.unlock_recipe("pm-lithium-hydroxide"),
@@ -2852,7 +2852,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-atmospheric-condensation",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/better-atmospheric-condensation.png",
+    icon = "__pm-graphics-01__/graphics/technology/better-atmospheric-condensation.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-oxygen-air-filter"),
@@ -2885,7 +2885,7 @@ data:extend({
     type = "technology",
     name = "pm-bromine-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bromine-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/bromine-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-hydrogen-bromine-leeching"),
@@ -2912,7 +2912,7 @@ data:extend({
     type = "technology",
     name = "pm-vanadium-chromium-alloying",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/vanadium-chromium-alloying.png",
+    icon = "__pm-graphics-01__/graphics/technology/vanadium-chromium-alloying.png",
     effects =
     {
       PM.unlock_recipe("pm-better-steel-plate"),
@@ -2936,7 +2936,7 @@ data:extend({
     type = "technology",
     name = "pm-polytetrafluoroethylene-plastic",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/polytetrafluoroethylene-plastic.png",
+    icon = "__pm-graphics-01__/graphics/technology/polytetrafluoroethylene-plastic.png",
     effects =
     {
       PM.unlock_recipe("pm-methyl-chloride"),
@@ -2965,7 +2965,7 @@ data:extend({
     type = "technology",
     name = "pm-lithium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/lithium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/lithium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-leaching-field"),
@@ -2996,7 +2996,7 @@ data:extend({
     type = "technology",
     name = "pm-electrolysis-plant-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/electrolysis-plant-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/electrolysis-plant-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-electrolysis-plant-2")
@@ -3019,7 +3019,7 @@ data:extend({
     type = "technology",
     name = "pm-better-sulfur-extraction",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/better-sulfur-extraction.png",
+    icon = "__pm-graphics-01__/graphics/technology/better-sulfur-extraction.png",
     effects =
     {
       PM.unlock_recipe("pm-sulfur-burning"),
@@ -3046,7 +3046,7 @@ data:extend({
     type = "technology",
     name = "pm-rubidium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/rubidium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/rubidium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-caesium-rubidium-alum"),
@@ -3074,7 +3074,7 @@ data:extend({
     type = "technology",
     name = "pm-tin-molten-glass-casting",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/tinned-glass-melting.png",
+    icon = "__pm-graphics-01__/graphics/technology/tinned-glass-melting.png",
     effects =
     {
       PM.unlock_recipe("pm-tinned-glass-melting")
@@ -3098,7 +3098,7 @@ data:extend({
     type = "technology",
     name = "pm-iodine-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/iodine-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/iodine-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-acidic-brine"),
@@ -3126,7 +3126,7 @@ data:extend({
     type = "technology",
     name = "pm-lead-bismuth-solder",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/lead-bismuth-solder.png",
+    icon = "__pm-graphics-01__/graphics/technology/lead-bismuth-solder.png",
     effects =
     {
       PM.unlock_recipe("pm-lead-liquid-solder"),
@@ -3151,7 +3151,7 @@ data:extend({
     type = "technology",
     name = "pm-metalloid-pack-unlock",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/metalloid-unlock.png",
+    icon = "__pm-graphics-01__/graphics/technology/metalloid-unlock.png",
     effects =
     {
       PM.unlock_recipe("pm-metalloid-science-pack")
@@ -3174,7 +3174,7 @@ data:extend({
     type = "technology",
     name = "pm-grouped-plastic-science-tier-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/plastic-science-tier-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/plastic-science-tier-2.png",
     effects =
     {
       PM.unlock_recipe("pm-plastic-alkali-metal-science-pack"),
@@ -3201,7 +3201,7 @@ data:extend({
     type = "technology",
     name = "pm-molten-potassium-glass",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-potassium-salts"),
@@ -3226,7 +3226,7 @@ data:extend({
     type = "technology",
     name = "pm-borosilicate-glass",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/borosilicate-glass.png",
+    icon = "__pm-graphics-01__/graphics/technology/borosilicate-glass.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-borosilicate-glass"),
@@ -3253,7 +3253,7 @@ data:extend({
     type = "technology",
     name = "pm-boron-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/boron-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/boron-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-sassolite"),
@@ -3281,7 +3281,7 @@ data:extend({
     type = "technology",
     name = "pm-tellurium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/tellurium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/tellurium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-copper-sludge"),
@@ -3309,7 +3309,7 @@ data:extend({
     type = "technology",
     name = "pm-arsenic-antimony-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/arsenic-antimony-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/arsenic-antimony-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-arsenopyrite-leeching"),
@@ -3341,7 +3341,7 @@ data:extend({
     type = "technology",
     name = "pm-yttrium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/yttrium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/yttrium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-mixed-bastnasite"),
@@ -3372,7 +3372,7 @@ data:extend({
     type = "technology",
     name = "pm-germanium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/germanium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/germanium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-germanium-ore-concentrate"),
@@ -3399,7 +3399,7 @@ data:extend({
     type = "technology",
     name = "pm-silicon-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/silicon-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/silicon-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-quartzite-leeching"),
@@ -3434,7 +3434,7 @@ data:extend({
     type = "technology",
     name = "pm-FUCK",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/FUCK-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/FUCK-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-francium-ultracool-centrifugal-kabbalism"),
@@ -3458,7 +3458,7 @@ data:extend({
     type = "technology",
     name = "pm-molybdenum-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/molybdenum-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/molybdenum-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-molybdenum-leeching"),
@@ -3484,7 +3484,7 @@ data:extend({
     icons = 
     {
       {
-        icon = "__periodic-madness__/graphics/technology/lithium-battery-equipment.png",
+        icon = "__pm-graphics-01__/graphics/technology/lithium-battery-equipment.png",
         icon_size = 256
       },
       {
@@ -3522,7 +3522,7 @@ data:extend({
     icons = 
     {
       {
-        icon = "__periodic-madness__/graphics/technology/lithium-battery-mk2-equipment.png",
+        icon = "__pm-graphics-01__/graphics/technology/lithium-battery-mk2-equipment.png",
         icon_size = 256
       },
       {
@@ -3558,7 +3558,7 @@ data:extend({
     type = "technology",
     name = "pm-rocket-control-unit",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/rocket-control-unit.png",
+    icon = "__pm-graphics-01__/graphics/technology/rocket-control-unit.png",
     effects = 
     {
       PM.unlock_recipe("pm-CRT"),
@@ -3584,7 +3584,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-electronic-components",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-electronic-components.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-electronic-components.png",
     effects = 
     {
       PM.unlock_recipe("pm-garnet-saw"),
@@ -3622,7 +3622,7 @@ data:extend({
     type = "technology",
     name = "pm-gemstone-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/gemstone-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/gemstone-processing.png",
     effects = 
     {
       PM.unlock_recipe("pm-gem-sorting"),
@@ -3662,7 +3662,7 @@ data:extend({
     type = "technology",
     name = "pm-intermediate-casting",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/intermediate-casting.png",
+    icon = "__pm-graphics-01__/graphics/technology/intermediate-casting.png",
     effects = 
     {
       PM.unlock_recipe("pm-copper-wire-casting"),
@@ -3707,7 +3707,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-material-processing-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-material-processing-3.png",
+    icon = "__pm-graphics-01__/graphics/technology/advanced-material-processing-3.png",
     effects = 
     {
       PM.unlock_recipe("pm-heat-furnace"),
@@ -3734,7 +3734,7 @@ data:extend({
     type = "technology",
     name = "pm-oil-fractions-burning",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/oil-fractions-burning.png",
+    icon = "__pm-graphics-01__/graphics/technology/oil-fractions-burning.png",
     effects = 
     {
       PM.unlock_recipe("pm-heat-pipe-1"),
@@ -3758,7 +3758,7 @@ data:extend({
     type = "technology",
     name = "pm-silicone-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/silicone-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/silicone-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-methyl-chloride"),
@@ -3786,7 +3786,7 @@ data:extend({
     type = "technology",
     name = "pm-astatine-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/astatine-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/astatine-processing.png",
     effects = 
     {
       PM.unlock_recipe("centrifuge"),
@@ -3817,7 +3817,7 @@ data:extend({
     type = "technology",
     name = "pm-concrete-walls",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/concrete-wall.png",
+    icon = "__pm-graphics-01__/graphics/technology/concrete-wall.png",
     effects = 
     {
       PM.unlock_recipe("pm-concrete-wall"),
@@ -3840,7 +3840,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-walls",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bio-wall.png",
+    icon = "__pm-graphics-01__/graphics/technology/bio-wall.png",
     effects = 
     {
       PM.unlock_recipe("pm-bio-wall"),
@@ -3863,7 +3863,7 @@ data:extend({
     type = "technology",
     name = "pm-alkaline-earth-metal-pack-unlock",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/alkaline-earth-metal-unlock.png",
+    icon = "__pm-graphics-01__/graphics/technology/alkaline-earth-metal-unlock.png",
     effects = 
     {
       PM.unlock_recipe("pm-alkaline-earth-metal-science-pack")
@@ -3887,7 +3887,7 @@ data:extend({
     type = "technology",
     name = "pm-solar-energy-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/solar-energy-3.png",
+    icon = "__pm-graphics-01__/graphics/technology/solar-energy-3.png",
     effects =
     {
       PM.unlock_recipe("pm-solar-panel-2"),
@@ -3915,7 +3915,7 @@ data:extend({
     name = "pm-solar-panel-equipment-3",
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
-    "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
+    "__pm-graphics-01__/graphics/technology/solar-panel-equipment-2.png"),
     prerequisites = {"pm-solar-panel-equipment-2", "pm-alkaline-earth-metal-pack-unlock", "low-density-structure"},
     effects =
     {
@@ -3941,7 +3941,7 @@ data:extend({
     type = "technology",
     name = "pm-better-calcium-extraction",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/calcium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/calcium-processing.png",
     effects = 
     {
       PM.unlock_recipe("pm-mixed-calcium-rock"),
@@ -3970,7 +3970,7 @@ data:extend({
     type = "technology",
     name = "pm-calcium-sulfate-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects = 
     {
       PM.unlock_recipe("pm-calcium-sulfate-slurry"),
@@ -3997,7 +3997,7 @@ data:extend({
     type = "technology",
     name = "pm-tempature-inators-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/temp-inators-3.png",
+    icon = "__pm-graphics-01__/graphics/technology/temp-inators-3.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-inator-3"),
@@ -4023,7 +4023,7 @@ data:extend({
     type = "technology",
     name = "pm-magnesium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-dolomite"),
@@ -4051,7 +4051,7 @@ data:extend({
     type = "technology",
     name = "pm-strontium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
 
@@ -4075,7 +4075,7 @@ data:extend({
     type = "technology",
     name = "pm-barium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-baryte-ore"),
@@ -4106,7 +4106,7 @@ data:extend({
     type = "technology",
     name = "pm-radium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
 
@@ -4130,7 +4130,7 @@ data:extend({
     type = "technology",
     name = "pm-RTG",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects = 
     {
 
@@ -4155,7 +4155,7 @@ data:extend({
     type = "technology",
     name = "pm-effect-transmission-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects = {},
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "effect-transmission"},
     unit =
@@ -4177,7 +4177,7 @@ data:extend({
     type = "technology",
     name = "pm-mixing-material-processing-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/mixing-tank-1.png",
+    icon = "__pm-graphics-01__/graphics/technology/mixing-tank-1.png",
     effects =
     {
       PM.unlock_recipe("pm-mixing-tank-1")
@@ -4199,7 +4199,7 @@ data:extend({
     type = "technology",
     name = "pm-mixing-material-processing-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/mixing-tank-2.png",
+    icon = "__pm-graphics-01__/graphics/technology/mixing-tank-2.png",
     effects =
     {
       PM.unlock_recipe("pm-mixing-tank-2")
@@ -4222,7 +4222,7 @@ data:extend({
     type = "technology",
     name = "pm-express-inserters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/express-inserters.png",
+    icon = "__pm-graphics-01__/graphics/technology/express-inserters.png",
     effects = 
     {
       PM.unlock_recipe("pm-express-inserter"),
@@ -4247,7 +4247,7 @@ data:extend({
     type = "technology",
     name = "pm-crushing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/glass-pane.png",
+    icon = "__pm-graphics-01__/graphics/technology/glass-pane.png",
     effects = 
     {
       PM.unlock_recipe("pm-carbon"),
@@ -4267,7 +4267,7 @@ data:extend({
     type = "technology",
     name = "pm-waste-water-byproduct-handling",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects = 
     {
       PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
@@ -4295,7 +4295,7 @@ data:extend({
     type = "technology",
     name = "pm-aluminium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects = 
     {
       PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
@@ -4321,7 +4321,7 @@ data:extend({
     type = "technology",
     name = "pm-ammonium-chloride-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/ammonium-chloride-tech.png",
+    icon = "__pm-graphics-01__/graphics/technology/ammonium-chloride-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-ammonium-chloride-seperation"),
@@ -4340,7 +4340,7 @@ data:extend({
     type = "technology",
     name = "pm-atmospheric-ammonia",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/potassium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-ammonia-trace-gas-seperation"),
@@ -4365,7 +4365,7 @@ data:extend({
     type = "technology",
     name = "pm-haber-bosch-ammonia",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/potassium-processing.png",
+    icon = "__pm-graphics-01__/graphics/technology/potassium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-haber-bosch-ammonia"),
@@ -4390,7 +4390,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-iron-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-pig-iron"),
@@ -4418,7 +4418,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-copper-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
     },
@@ -4441,7 +4441,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-nickel-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
     },
@@ -4464,7 +4464,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-zinc-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
     },
@@ -4487,7 +4487,7 @@ data:extend({
     type = "technology",
     name = "pm-beryllium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-beryl"),
@@ -4641,7 +4641,7 @@ data:extend({
     type = "technology",
     name = "pm-FUCK-advanced-transition-metal-science-pack",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/francium-ATM-science-pack.png",
+    icon = "__pm-graphics-01__/graphics/technology/francium-ATM-science-pack.png",
     effects =
     {
       PM.unlock_recipe("pm-FUCK-advanced-transition-metal-science-pack")
@@ -4666,7 +4666,7 @@ data:extend({
     type = "technology",
     name = "pm-FUCK-advanced-advanced-transition-metal-science-pack",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/francium-AATM-science-pack.png",
+    icon = "__pm-graphics-01__/graphics/technology/francium-AATM-science-pack.png",
     effects =
     {
       PM.unlock_recipe("pm-FUCK-advanced-advanced-transition-metal-science-pack")
@@ -4691,7 +4691,7 @@ data:extend({
     type = "technology",
     name = "pm-FUCK-post-transition-metal-science-pack",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/francium-PTM-science-pack.png",
+    icon = "__pm-graphics-01__/graphics/technology/francium-PTM-science-pack.png",
     effects =
     {
       PM.unlock_recipe("pm-FUCK-post-transition-metal-science-pack")
@@ -4717,7 +4717,7 @@ data:extend({
     type = "technology",
     name = "pm-FUCK-reactive-non-metals-science-pack",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/francium-RNM-science-pack.png",
+    icon = "__pm-graphics-01__/graphics/technology/francium-RNM-science-pack.png",
     effects =
     {
       PM.unlock_recipe("pm-FUCK-reactive-non-metals-science-pack")
@@ -4868,7 +4868,7 @@ data:extend({
   --    type = "technology",
   --    name = "pm-metharicephentine",
   --    icon_size = 128,
-  --    icon = "__periodic-madness__/graphics/technology/metharicephentine.png",
+  --    icon = "__pm-graphics-01__/graphics/technology/metharicephentine.png",
   --    visible_when_disabled = false,
   --    effects =
   --    {

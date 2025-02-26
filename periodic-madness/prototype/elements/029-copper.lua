@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-copper-chunk",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/copper-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/copper-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/copper-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/copper-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-copper-tm",
     order = "a",
@@ -27,7 +27,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -68,7 +68,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

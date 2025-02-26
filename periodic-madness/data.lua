@@ -126,7 +126,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-transition-metals",
-    icon = "__periodic-madness__/graphics/icons/ores/transition-metals-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/transition-metals-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
     map_color = {r=0.87, g=0.667, b=0.137},
@@ -155,7 +155,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/transition-metals-ore.png",
+        filename = "__pm-graphics-01__/graphics/entities/ores/transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -176,7 +176,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-post-transition-metals",
-    icon = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/post-transition-metals-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
     map_color = {r=0.5, g=0.84, b=1},
@@ -208,7 +208,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/post-transition-metals-ore.png",
+        filename = "__pm-graphics-01__/graphics/entities/ores/post-transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -229,7 +229,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-alkali-metals",
-    icon = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/alkali-metals-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
     map_color = {r=0.098, g=0.35, b=0.82},
@@ -260,7 +260,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/alkali-metals-ore.png",
+        filename = "__pm-graphics-01__/graphics/entities/ores/alkali-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -281,7 +281,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-metalloids",
-    icon = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/metalloid-ore-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
     map_color = {r=0.29, g=0, b=0.671},
@@ -312,7 +312,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/metalloid-ore.png",
+        filename = "__pm-graphics-01__/graphics/entities/ores/metalloid-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -333,7 +333,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-alkaline-earth-metals",
-    icon = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/alkaline-earth-metal-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
     map_color = {r=0.753, g=0.18, b=0.1},
@@ -364,7 +364,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/alkaline-earth-metal-ore.png",
+        filename = "__pm-graphics-01__/graphics/entities/ores/alkaline-earth-metal-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -388,7 +388,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-nickel-ore",
-    icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/nickel-ore-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
     map_color = {r=0.70, g=0.70, b=0.80},
@@ -419,7 +419,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/nickel-ore.png",
+        filename = "__pm-graphics-01__/graphics/entities/ores/nickel-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -441,7 +441,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-zinc-ore",
-    icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/zinc-ore-icon.png",
     flags = {"placeable-neutral"},
     order= "a-b-a",
     map_color = {r=0.90, g=0.7, b=0.59},
@@ -471,7 +471,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/zinc-ore.png",
+        filename = "__pm-graphics-01__/graphics/entities/ores/zinc-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -506,11 +506,11 @@ AcidPlant.energy_usage = "100kW"
 AcidPlant.crafting_categories = {"pm-acids"}
 AcidPlant.minable = {mining_time = 0.1, result = "pm-acid-plant"}
 AcidPlant.module_slots = 3
-AcidPlant.icon = "__periodic-madness__/graphics/icons/buildings/acid-plant.png"
+AcidPlant.icon = "__pm-graphics-01__/graphics/icons/buildings/acid-plant.png"
 AcidPlant.graphics_set.animation = make_4way_animation_from_spritesheet({ layers =
 {
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/acid-plant.png",
+    filename = "__pm-graphics-01__/graphics/entities/buildings/acid-plant/acid-plant.png",
     width = 220,
     height = 292,
     frame_count = 24,

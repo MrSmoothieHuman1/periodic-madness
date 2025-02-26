@@ -138,102 +138,102 @@ data:extend({
     type = "item-group",
     name = "pm-acids",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png"
+    icon = "__pm-graphics-01__/graphics/icons/fluids/acidic-water.png"
   },
   {
     type = "item-group",
     name = "pm-alloying",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png"
+    icon = "__pm-graphics-01__/graphics/icons/plates/brass-plate.png"
   },
   {
     type = "item-group",
     name = "pm-molding",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/circuitboard-mold.png"
+    icon = "__pm-graphics-01__/graphics/icons/circuitboard-mold.png"
   },
   {
     type = "item-group",
     name = "pm-multimetal-items",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/tempature-plating.png",
+    icon = "__pm-graphics-01__/graphics/technology/tempature-plating.png",
     order = "A"
   },
   {
     type = "item-group",
     name = "pm-circuitry",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
+    icon = "__pm-graphics-01__/graphics/icons/buildings/circuit-megassembler.png",
   },
 
   {
     type = "item-group",
     name = "pm-transition-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/transition-metals.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/transition-metals.jpeg",
     order = "e"
   },
   {
     type = "item-group",
     name = "pm-post-transition-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/post-transition-metals.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/post-transition-metals.jpeg",
     order = "ea"
   },
   {
     type = "item-group",
     name = "pm-reactive-non-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/reactive-non-metals.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/reactive-non-metals.jpeg",
     order = "ec"
   },
   {
     type = "item-group",
     name = "pm-metalloids",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/metalloids.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/metalloids.jpeg",
     order = "eb"
   },
   {
     type = "item-group",
     name = "pm-alkali-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/alkali-metals.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/alkali-metals.jpeg",
     order = "ed"
   },
   {
     type = "item-group",
     name = "pm-alkaline-earth-metals",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/alkali-earth-metals.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/alkali-earth-metals.jpeg",
     order = "ee"
   },
   {
     type = "item-group",
     name = "pm-noble-gases",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/noble-gases.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/noble-gases.jpeg",
     order = "ef"
   },
   {
     type = "item-group",
     name = "pm-actinides",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/actinides.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/actinides.jpeg",
     order = "eg"
   },
   {
     type = "item-group",
     name = "pm-lathanides",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/lathanides.jpeg",
+    icon = "__pm-graphics-01__/graphics/icons/groups/lathanides.jpeg",
     order = "eh"
   },
   {
     type = "item-group",
     name = "pm-voiding",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/nuh uh.png",
+    icon = "__pm-graphics-01__/graphics/icons/nuh uh.png",
   },
 
 

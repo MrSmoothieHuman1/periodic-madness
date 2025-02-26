@@ -7,7 +7,7 @@ data:extend({
     type = "recipe",
     name = "pm-gold-heating-plating",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/gold-heating-plating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/gold-heating-plating.png",
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -27,7 +27,7 @@ data:extend({
     type = "recipe",
     name = "pm-copper-heating-plating",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-heating-plating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/copper-heating-plating.png",
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -47,7 +47,7 @@ data:extend({
     type = "recipe",
     name = "pm-brass-heating-plating",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/brass-heating-plating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/brass-heating-plating.png",
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -68,7 +68,7 @@ data:extend({
     type = "recipe",
     name = "pm-silver-cooling-plating",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/silver-cooling-plating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/silver-cooling-plating.png",
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -88,7 +88,7 @@ data:extend({
     type = "recipe",
     name = "pm-copper-cooling-plating",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-cooling-plating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/copper-cooling-plating.png",
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -108,7 +108,7 @@ data:extend({
     type = "recipe",
     name = "pm-steel-cooling-plating",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/steel-cooling-plating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/steel-cooling-plating.png",
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -128,7 +128,7 @@ data:extend({
     type = "recipe",
     name = "pm-manganese-cooling-plating",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/manganese-cooling-plating.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/manganese-cooling-plating.png",
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -154,7 +154,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-tubing.png",
         icon_size = 64,
       },
       {
@@ -184,11 +184,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/nickel-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -214,7 +214,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-tubing.png",
         icon_size = 64,
       },
       {
@@ -244,11 +244,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -275,11 +275,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/steel-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -306,11 +306,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/corrosion-resistant-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/corrosion-resistant-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/stainless-steel-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -338,11 +338,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/corrosion-resistant-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/corrosion-resistant-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/gold-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/gold-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -370,11 +370,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/corrosion-resistant-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/corrosion-resistant-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/silver-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/silver-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -402,11 +402,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/corrosion-resistant-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/corrosion-resistant-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -435,11 +435,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/anti-bacterial-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/anti-bacterial-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/silver-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/silver-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -466,7 +466,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/anti-bacterial-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/anti-bacterial-tubing.png",
         icon_size = 64,
       },
       {
@@ -497,11 +497,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/anti-bacterial-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/anti-bacterial-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -528,11 +528,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/radiation-resistant-tubing.png",
+        icon = "__pm-graphics-01__/graphics/icons/radiation-resistant-tubing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/lead-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/lead-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -562,7 +562,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-framing.png",
         icon_size = 64,
       },
       {
@@ -591,11 +591,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/steel-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -621,11 +621,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -651,11 +651,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/stainless-steel-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -681,11 +681,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/heavyweight-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/heavyweight-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/tungsten-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -712,11 +712,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/heavyweight-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/heavyweight-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/chromium-ore-icon.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -743,11 +743,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/lightweight-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/lightweight-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/titanium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/titanium-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -774,11 +774,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/lightweight-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/lightweight-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/molybdenum-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -805,11 +805,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/lightweight-framing.png",
+        icon = "__pm-graphics-01__/graphics/icons/lightweight-framing.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/aluminium-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -876,7 +876,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-panelling.png",
         icon_size = 64,
       },
       {
@@ -905,11 +905,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/steel-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -935,11 +935,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/stainless-steel-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -965,11 +965,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/basic-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/basic-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/zinc-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -994,11 +994,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/lightweight-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/lightweight-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/titanium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/titanium-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1025,11 +1025,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/lightweight-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/lightweight-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/molybdenum-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1056,11 +1056,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/lightweight-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/lightweight-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/aluminium-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1087,11 +1087,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/heavyweight-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/heavyweight-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/tungsten-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1118,11 +1118,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/heavyweight-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/heavyweight-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/chromium-ore-icon.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1149,11 +1149,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/anti-bacterial-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/anti-bacterial-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/silver-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/silver-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1179,7 +1179,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/anti-bacterial-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/anti-bacterial-panelling.png",
         icon_size = 64,
       },
       {
@@ -1209,11 +1209,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/anti-bacterial-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/anti-bacterial-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1239,11 +1239,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/radiation-resistant-panelling.png",
+        icon = "__pm-graphics-01__/graphics/icons/radiation-resistant-panelling.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/lead-plate.png",
+        icon = "__pm-graphics-01__/graphics/icons/plates/lead-plate.png",
         icon_size = 64,
         scale = 0.28,
         shift = {10, -6}
@@ -1270,7 +1270,7 @@ data:extend({
     type = "recipe",
     name = "pm-copper-basic-wiring",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-basic-wiring.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/copper-basic-wiring.png",
     energy_required = 0.5,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-wiring",
@@ -1287,7 +1287,7 @@ data:extend({
     type = "recipe",
     name = "pm-aluminium-basic-wiring",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/aluminium-basic-wiring.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/aluminium-basic-wiring.png",
     energy_required = 0.5,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-wiring",

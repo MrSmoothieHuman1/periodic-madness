@@ -5,7 +5,7 @@ data:extend({
     type = "recipe",
     name = "pm-basic-basic-wood-growth",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/basic-basic-wood-growth.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/basic-basic-wood-growth.png",
     category = "pm-washing",
     energy_required = 60,
     enabled = false,
@@ -45,7 +45,7 @@ data:extend({
     type = "recipe",
     name = "pm-fertilised-wood-growth",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/fertilised-wood-growth.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/fertilised-wood-growth.png",
     energy_required = 30,
     enabled = false,
     category = "pm-greenhousing",
@@ -96,11 +96,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fertiliser.png",
+        icon = "__pm-graphics-01__/graphics/icons/fertiliser.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/potassium-ore-icon.png",
         icon_size = 64
       }
     },
@@ -352,7 +352,7 @@ data:extend({
     type = "recipe",
     name = "pm-gene-harvesting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/gene-base-harvesting.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/gene-base-harvesting.png",
     energy_required = 2,
     enabled = false,
     hide_from_player_crafting = true,
@@ -374,7 +374,7 @@ data:extend({
     type = "recipe",
     name = "pm-melatonin-harvesting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
     energy_required = 2,
     enabled = false,
     hide_from_player_crafting = true,

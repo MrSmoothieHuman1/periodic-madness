@@ -5,7 +5,7 @@ data:extend({
         type = "item",
         name = "pm-beryl",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-beryllium-aem",
         order = "a",
         stack_size = 100
@@ -14,7 +14,7 @@ data:extend({
         type = "item",
         name = "pm-beryl-powder",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-beryllium-aem",
         order = "b",
         stack_size = 250
@@ -23,7 +23,7 @@ data:extend({
         type = "item",
         name = "pm-beryllium-sulfate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-beryllium-aem",
         order = "c",
         stack_size = 200
@@ -32,7 +32,7 @@ data:extend({
         type = "item",
         name = "pm-aluminium-sulfate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-beryllium-aem",
         order = "d",
         stack_size = 200

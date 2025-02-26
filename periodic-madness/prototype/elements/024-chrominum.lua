@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-chromite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/chromite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/chromite.png",
     subgroup = "pm-chrominum-tm",
     order = "a",
     stack_size = 100
@@ -14,12 +14,12 @@ data:extend({
     type = "item",
     name = "pm-ferrochrominum",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/ferrochromium.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/ferrochromium.png",
     pictures = 
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/ferrochromium.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/ferrochromium-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/ferrochromium-3.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/ferrochromium.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/ferrochromium-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/ferrochromium-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-chrominum-tm",
     order = "b",
@@ -29,7 +29,7 @@ data:extend({
     type = "item",
     name = "pm-chrome-green",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/chrome-green.png",
+    icon = "__pm-graphics-01__/graphics/icons/chrome-green.png",
     subgroup = "pm-chrominum-tm",
     order = "c",
     stack_size = 50
@@ -121,11 +121,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/chromite.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/chromite.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },
@@ -169,7 +169,7 @@ data:extend({
     type = "recipe",
     name = "pm-chromic-acid-neutralisation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chromic-acid-neutralisation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/chromic-acid-neutralisation.png",
     energy_required = 2,
     category = "chemistry",
     subgroup = "pm-chrominum-tm",

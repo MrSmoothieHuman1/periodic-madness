@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-francium-209",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/francium-209.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/francium-209.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-209.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-209-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/francium-209.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/francium-209-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
     order = "a",
@@ -19,11 +19,11 @@ data:extend({
     type = "item",
     name = "pm-francium-210",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/francium-210.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/francium-210.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-210.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-210-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/francium-210.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/francium-210-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
     order = "b",
@@ -33,11 +33,11 @@ data:extend({
     type = "item",
     name = "pm-francium-211",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/francium-211.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/francium-211.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-211.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/francium-211-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/francium-211.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/francium-211-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
     order = "c",
@@ -110,7 +110,7 @@ data:extend({
     type = "recipe",
     name = "pm-magneto-orbital-trap-seperation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/MOT-seperation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/MOT-seperation.png",
     enabled = false,
     energy_required = 12,
     subgroup = "pm-francium-am",

@@ -234,7 +234,7 @@ data:extend({
   coolant_reactor{ --MARK: Polonium Reactor
     type = "reactor",
     name = "pm-polonium-reactor",
-    icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+    icon = "__pm-graphics-01__/graphics/icons/buildings/polonium-reactor.png",
     icon_size = 128,
     flags = { "placeable-neutral", "player-creation" },
     minable = { mining_time = 0.7, result = "pm-polonium-reactor" },
@@ -340,7 +340,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+          filename = "__pm-graphics-01__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
           width = 320,
           height = 320,
           line_length = 6,
@@ -350,7 +350,7 @@ data:extend({
           shift = util.by_pixel(-5, -7)
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+          filename = "__pm-graphics-01__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
           width = 320,
           height = 320,
           line_length = 1,
@@ -367,7 +367,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+          filename = "__pm-graphics-01__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
           width = 320,
           height = 320,
           frame_count = 1,
@@ -375,7 +375,7 @@ data:extend({
           shift = util.by_pixel(-5, -7)
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+          filename = "__pm-graphics-01__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
           width = 320,
           height = 320,
           scale = 0.5,

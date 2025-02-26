@@ -30,9 +30,9 @@ data.raw["technology"]["automation-3"].unit.ingredients =
 }
 
 data.raw["technology"]["logistic-science-pack"].icon_size = 256
-data.raw["technology"]["logistic-science-pack"].icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-unlock.png"
+data.raw["technology"]["logistic-science-pack"].icon = "__pm-graphics-01__/graphics/technology/advanced-transition-metal-unlock.png"
 data.raw["technology"]["logistic-science-pack"].prerequisites = {"pm-mercury-processing", "steel-processing", "pm-advanced-transition-metal-refining"}
-data.raw["tool"]["logistic-science-pack"].icon = "__periodic-madness__/graphics/icons/science/advanced-transition-metal-pack.png"
+data.raw["tool"]["logistic-science-pack"].icon = "__pm-graphics-01__/graphics/icons/science/advanced-transition-metal-pack.png"
 data.raw["tool"]["logistic-science-pack"].icon_size = 64
 data.raw["technology"]["sulfur-processing"].effects =
 {
@@ -124,7 +124,7 @@ data.raw["technology"]["oil-processing"].unit =
 
 data.raw["technology"]["steel-processing"].prerequisites = {"pm-brass-processing"}
 data.raw["technology"]["steel-processing"].icon_size = 64
-data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
+data.raw["technology"]["steel-processing"].icon = "__pm-graphics-01__/graphics/icons/plates/steel-plate.png"
 
 data.raw["technology"]["concrete"].prerequisites = {"pm-oil-residual-recipes", "advanced-material-processing", "pm-mixing-material-processing-1"}
 data.raw["technology"]["concrete"].effects = 
@@ -138,7 +138,7 @@ data.raw["technology"]["concrete"].effects =
 
 table.insert(data.raw["technology"]["fast-inserter"].effects, {type = "unlock-recipe", recipe = "pm-mini-motor"})
 
-data.raw["technology"]["advanced-oil-processing"].icon = "__periodic-madness__/graphics/technology/fractional-distillation.png"
+data.raw["technology"]["advanced-oil-processing"].icon = "__pm-graphics-01__/graphics/technology/fractional-distillation.png"
 data.raw["technology"]["advanced-oil-processing"].effects =
 {
   PM.unlock_recipe("pm-fractional-distillator"),
@@ -209,12 +209,12 @@ data.raw["technology"]["chemical-science-pack"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["chemical-science-pack"].icon =
-"__periodic-madness__/graphics/technology/reactive-non-metal-unlock.png"
+"__pm-graphics-01__/graphics/technology/reactive-non-metal-unlock.png"
 data.raw["technology"]["chemical-science-pack"].unit.time = 80
 data.raw["technology"]["chemical-science-pack"].prerequisites = {"pm-atmospheric-condensation", "pm-science-center"}
 data.raw["technology"]["chemical-science-pack"].unit.count = 200
 
-data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"
+data.raw["technology"]["steel-processing"].icon = "__pm-graphics-01__/graphics/icons/plates/steel-plate.png"
 data.raw["technology"]["steel-processing"].icon_size = 64
 data.raw["technology"]["steel-processing"].effects =
 {
@@ -343,7 +343,7 @@ data.raw["technology"]["battery-equipment"].unit.ingredients =
 data.raw["technology"]["battery-equipment"].icons = 
 {
   {
-    icon = "__periodic-madness__/graphics/technology/vanadium-battery-equipment.png",
+    icon = "__pm-graphics-01__/graphics/technology/vanadium-battery-equipment.png",
     icon_size = 256
   },
   {
@@ -366,7 +366,7 @@ data.raw["technology"]["battery-mk2-equipment"].prerequisites = {"battery-equipm
 data.raw["technology"]["battery-mk2-equipment"].icons = 
 {
   {
-    icon = "__periodic-madness__/graphics/technology/vanadium-battery-mk2-equipment.png",
+    icon = "__pm-graphics-01__/graphics/technology/vanadium-battery-mk2-equipment.png",
     icon_size = 256
   },
   {
@@ -914,7 +914,7 @@ data.raw["technology"]["fission-reactor-equipment"].research_trigger =
 data.raw["technology"]["fission-reactor-equipment"].unit = nil
 data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
 
-data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
+data.raw["technology"]["logistics-2"].icon = "__pm-graphics-01__/graphics/technology/logistics-2.png"
 
 data.raw["technology"]["inserter-capacity-bonus-2"].unit.ingredients =
 {
@@ -1024,22 +1024,22 @@ data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
 }
 
 data.raw["technology"]["modules"].icon_size = 256
-data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"
+data.raw["technology"]["modules"].icon = "__pm-graphics-01__/graphics/technology/modules.png"
 
 local SpeedMod1Fix = data.raw["module"]["speed-module"]
 
 SpeedMod1Fix.icon_size = 128
-SpeedMod1Fix.icon = "__periodic-madness__/graphics/icons/speed-module-1.png"
+SpeedMod1Fix.icon = "__pm-graphics-01__/graphics/icons/speed-module-1.png"
 
 local SpeedMod2Fix = data.raw["module"]["speed-module-2"]
 
 SpeedMod2Fix.icon_size = 128
-SpeedMod2Fix.icon = "__periodic-madness__/graphics/icons/speed-module-2.png"
+SpeedMod2Fix.icon = "__pm-graphics-01__/graphics/icons/speed-module-2.png"
 
 local SpeedMod3Fix = data.raw["module"]["speed-module-3"]
 
 SpeedMod3Fix.icon_size = 128
-SpeedMod3Fix.icon = "__periodic-madness__/graphics/icons/speed-module-3.png"
+SpeedMod3Fix.icon = "__pm-graphics-01__/graphics/icons/speed-module-3.png"
 
 data.raw["technology"]["speed-module"].unit.ingredients =
 {
@@ -1592,21 +1592,21 @@ data.raw["technology"]["refined-flammables-6"].unit.ingredients =
 
 
 data.raw["technology"]["speed-module"].icon_size = 256
-data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
+data.raw["technology"]["speed-module"].icon = "__pm-graphics-01__/graphics/technology/speed-module-1-tech.png"
 data.raw["technology"]["speed-module"].effects =
 {
   PM.unlock_recipe("speed-module"),
   PM.unlock_recipe("pm-cobalt-blue")
 }
 data.raw["technology"]["speed-module-2"].icon_size = 256
-data.raw["technology"]["speed-module-2"].icon = "__periodic-madness__/graphics/technology/speed-module-2-tech.png"
+data.raw["technology"]["speed-module-2"].icon = "__pm-graphics-01__/graphics/technology/speed-module-2-tech.png"
 data.raw["technology"]["speed-module-2"].effects =
 {
   PM.unlock_recipe("speed-module-2"),
   PM.unlock_recipe("pm-speed-module-1-crushing"),
 }
 data.raw["technology"]["speed-module-3"].icon_size = 256
-data.raw["technology"]["speed-module-3"].icon = "__periodic-madness__/graphics/technology/speed-module-3-tech.png"
+data.raw["technology"]["speed-module-3"].icon = "__pm-graphics-01__/graphics/technology/speed-module-3-tech.png"
 data.raw["technology"]["speed-module-3"].effects =
 {
   PM.unlock_recipe("speed-module-3"),
@@ -1616,17 +1616,17 @@ data.raw["technology"]["speed-module-3"].prerequisites = {"speed-module-2", "pm-
 local ProdMod1Fix = data.raw["module"]["productivity-module"]
 
 ProdMod1Fix.icon_size = 128
-ProdMod1Fix.icon = "__periodic-madness__/graphics/icons/productivity-module-1.png"
+ProdMod1Fix.icon = "__pm-graphics-01__/graphics/icons/productivity-module-1.png"
 
 local ProdMod2Fix = data.raw["module"]["productivity-module-2"]
 
 ProdMod2Fix.icon_size = 128
-ProdMod2Fix.icon = "__periodic-madness__/graphics/icons/productivity-module-2.png"
+ProdMod2Fix.icon = "__pm-graphics-01__/graphics/icons/productivity-module-2.png"
 
 local ProdMod3Fix = data.raw["module"]["productivity-module-3"]
 
 ProdMod3Fix.icon_size = 128
-ProdMod3Fix.icon = "__periodic-madness__/graphics/icons/productivity-module-3.png"
+ProdMod3Fix.icon = "__pm-graphics-01__/graphics/icons/productivity-module-3.png"
 
 data.raw["technology"]["productivity-module"].unit.ingredients =
 {
@@ -1664,7 +1664,7 @@ data.raw["technology"]["steam-power"].effects =
 
 data.raw["technology"]["productivity-module"].icon_size = 256
 data.raw["technology"]["productivity-module"].icon =
-"__periodic-madness__/graphics/technology/productivity-module-1-tech.png"
+"__pm-graphics-01__/graphics/technology/productivity-module-1-tech.png"
 data.raw["technology"]["productivity-module"].effects =
 {
   PM.unlock_recipe("productivity-module"),
@@ -1672,7 +1672,7 @@ data.raw["technology"]["productivity-module"].effects =
 }
 data.raw["technology"]["productivity-module-2"].icon_size = 256
 data.raw["technology"]["productivity-module-2"].icon =
-"__periodic-madness__/graphics/technology/productivity-module-2-tech.png"
+"__pm-graphics-01__/graphics/technology/productivity-module-2-tech.png"
 data.raw["technology"]["productivity-module-2"].effects =
 {
   PM.unlock_recipe("productivity-module-2"),
@@ -1680,7 +1680,7 @@ data.raw["technology"]["productivity-module-2"].effects =
 }
 data.raw["technology"]["productivity-module-3"].icon_size = 256
 data.raw["technology"]["productivity-module-3"].icon =
-"__periodic-madness__/graphics/technology/productivity-module-3-tech.png"
+"__pm-graphics-01__/graphics/technology/productivity-module-3-tech.png"
 data.raw["technology"]["productivity-module-3"].effects =
 {
   PM.unlock_recipe("productivity-module-3"),
@@ -1688,14 +1688,14 @@ data.raw["technology"]["productivity-module-3"].effects =
 }
 data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 data.raw["module"]["efficiency-module"].icon_size = 128
-data.raw["module"]["efficiency-module"].icon = "__periodic-madness__/graphics/icons/effectivity-module-1.png"
+data.raw["module"]["efficiency-module"].icon = "__pm-graphics-01__/graphics/icons/effectivity-module-1.png"
 data.raw["module"]["efficiency-module-2"].icon_size = 128
-data.raw["module"]["efficiency-module-2"].icon = "__periodic-madness__/graphics/icons/effectivity-module-2.png"
+data.raw["module"]["efficiency-module-2"].icon = "__pm-graphics-01__/graphics/icons/effectivity-module-2.png"
 data.raw["module"]["efficiency-module-3"].icon_size = 128
-data.raw["module"]["efficiency-module-3"].icon = "__periodic-madness__/graphics/icons/effectivity-module-3.png"
+data.raw["module"]["efficiency-module-3"].icon = "__pm-graphics-01__/graphics/icons/effectivity-module-3.png"
 data.raw["technology"]["efficiency-module"].icon_size = 256
 data.raw["technology"]["efficiency-module"].icon =
-"__periodic-madness__/graphics/technology/effectivity-module-1-tech.png"
+"__pm-graphics-01__/graphics/technology/effectivity-module-1-tech.png"
 data.raw["technology"]["efficiency-module"].effects =
 {
   PM.unlock_recipe("efficiency-module"),
@@ -1703,7 +1703,7 @@ data.raw["technology"]["efficiency-module"].effects =
 }
 data.raw["technology"]["efficiency-module-2"].icon_size = 256
 data.raw["technology"]["efficiency-module-2"].icon =
-"__periodic-madness__/graphics/technology/effectivity-module-2-tech.png"
+"__pm-graphics-01__/graphics/technology/effectivity-module-2-tech.png"
 data.raw["technology"]["efficiency-module-2"].effects =
 {
   PM.unlock_recipe("efficiency-module-2"),
@@ -1711,7 +1711,7 @@ data.raw["technology"]["efficiency-module-2"].effects =
 }
 data.raw["technology"]["efficiency-module-3"].icon_size = 256
 data.raw["technology"]["efficiency-module-3"].icon =
-"__periodic-madness__/graphics/technology/effectivity-module-3-tech.png"
+"__pm-graphics-01__/graphics/technology/effectivity-module-3-tech.png"
 data.raw["technology"]["efficiency-module-3"].effects =
 {
   PM.unlock_recipe("efficiency-module-3"),

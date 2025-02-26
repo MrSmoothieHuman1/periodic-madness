@@ -7,11 +7,11 @@ data:extend({
     type = "item",
     name = "pm-silver-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/silver-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/silver-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/silver-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/silver-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-silver-tm",
     order = "a",
@@ -22,7 +22,7 @@ data:extend({
     type = "recipe",
     name = "pm-silver-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/silver-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/silver-leeching.png",
     subgroup = "pm-silver-tm",
     order = "a",
     category = "pm-acids",
@@ -53,11 +53,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/silver-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-mercury.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/liquid-mercury.png",
         icon_size = 64,
       },
     },
@@ -92,11 +92,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/silver-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

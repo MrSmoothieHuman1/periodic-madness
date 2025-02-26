@@ -5,7 +5,7 @@ data:extend({
         type = "recipe",
         name = "pm-helium-gas-atmospheric-voiding",
         icon_size = 128,
-        icon = "__periodic-madness__/graphics/icons/recipes/helium-gas-voiding.png",
+        icon = "__pm-graphics-01__/graphics/icons/recipes/helium-gas-voiding.png",
         category = "pm-atmospheric-condensing",
         subgroup = "pm-helium-nb",
         order = "a",

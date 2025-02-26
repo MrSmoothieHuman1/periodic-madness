@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-zirconium-sand",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/zirconium-sand.png",
+    icon = "__pm-graphics-01__/graphics/icons/zirconium-sand.png",
     subgroup = "pm-zirconium-tm",
     order = "a",
     stack_size = 100 / 2
@@ -14,11 +14,11 @@ data:extend({
     type = "item",
     name = "pm-zircon",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/zircon.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/zircon.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/zircon.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zircon-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/zircon.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/zircon-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-zirconium-tm",
     order = "b",
@@ -28,12 +28,12 @@ data:extend({
     type = "item",
     name = "pm-zirconia",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/zirconia.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/zirconia.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/zirconia.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zirconia-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zirconia-3.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/zirconia.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/zirconia-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/zirconia-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-zirconium-tm",
     order = "c",

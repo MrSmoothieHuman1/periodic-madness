@@ -7,7 +7,7 @@ data:extend({
     type = "item",
     name = "pm-plastic-science-bottle",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plastic-science-bottle.png",
+    icon = "__pm-graphics-01__/graphics/icons/plastic-science-bottle.png",
     subgroup = "science-pack",
     order = "a",
     stack_size = 200,
@@ -16,7 +16,7 @@ data:extend({
     type = "tool",
     name = "pm-advanced-advanced-transition-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/advanced-advanced-transition-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/science/advanced-advanced-transition-metal-pack.png",
     subgroup = "science-pack",
     order = "d",
     stack_size = 200,
@@ -28,7 +28,7 @@ data:extend({
     type = "tool",
     name = "pm-post-transition-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/post-transition-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/science/post-transition-metal-pack.png",
     subgroup = "science-pack",
     order = "f",
     stack_size = 200,
@@ -40,7 +40,7 @@ data:extend({
     type = "tool",
     name = "pm-alkali-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/alkali-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/science/alkali-metal-pack.png",
     subgroup = "science-pack",
     order = "g",
     stack_size = 200,
@@ -52,7 +52,7 @@ data:extend({
     type = "tool",
     name = "pm-metalloid-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/metalloid-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/science/metalloid-pack.png",
     subgroup = "science-pack",
     order = "h",
     stack_size = 200,
@@ -64,7 +64,7 @@ data:extend({
     type = "tool",
     name = "pm-alkaline-earth-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/alkaline-earth-metal-pack.png",
+    icon = "__pm-graphics-01__/graphics/icons/science/alkaline-earth-metal-pack.png",
     subgroup = "science-pack",
     order = "i",
     stack_size = 200,
@@ -89,7 +89,7 @@ data.raw["recipe"]["chemical-science-pack"].results =
   PM.product("chemical-science-pack", 1)
 }
 data.raw["tool"]["chemical-science-pack"].order = "e"
-data.raw["tool"]["chemical-science-pack"].icon ="__periodic-madness__/graphics/icons/science/reactive-non-metals-pack.png"
+data.raw["tool"]["chemical-science-pack"].icon ="__pm-graphics-01__/graphics/icons/science/reactive-non-metals-pack.png"
 
 data.raw["tool"]["production-science-pack"].order = "x"
 data.raw["tool"]["utility-science-pack"].order = "xa"

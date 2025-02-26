@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-iron-chunk",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/iron-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/iron-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/iron-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/iron-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-iron-tm",
     order = "a",
@@ -19,13 +19,13 @@ data:extend({
     type = "item",
     name = "pm-pig-iron",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/pig-iron.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-advanced-iron-tm",
     order = "a",
@@ -35,13 +35,13 @@ data:extend({
     type = "item",
     name = "pm-combined-ore-slab",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/pig-iron.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-advanced-iron-tm",
     order = "d",
@@ -59,7 +59,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -100,7 +100,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

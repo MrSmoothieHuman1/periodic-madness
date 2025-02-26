@@ -5,7 +5,7 @@ data:extend({
         type = "item",
         name = "pm-dolomite",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-magnesium-aem",
         order = "a",
         stack_size = 250
@@ -14,7 +14,7 @@ data:extend({
         type = "item",
         name = "pm-magnesium-oxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-magnesium-aem",
         order = "b",
         stack_size = 250
@@ -23,7 +23,7 @@ data:extend({
         type = "item",
         name = "pm-calcium-silicate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__pm-graphics-01__/graphics/icons/placeholder-item.png",
         subgroup = "pm-magnesium-aem",
         order = "d",
         stack_size = 250

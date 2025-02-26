@@ -5,7 +5,7 @@ data:extend({
     name = "pm-solar-panel-equipment-2",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2.png",
+      filename = "__pm-graphics-01__/graphics/equipment/solar-panel-equipment-2.png",
       width = 64,
       height = 64,
       priority = "medium",
@@ -30,7 +30,7 @@ data:extend({
     name = "pm-solar-panel-equipment-3",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/solar-panel-equipment-3.png",
+      filename = "__pm-graphics-01__/graphics/equipment/solar-panel-equipment-3.png",
       width = 64,
       height = 64,
       priority = "medium",
@@ -57,7 +57,7 @@ data:extend({
     take_result = "pm-personal-robostasher-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/personal-robostasher-equipment.png",
+      filename = "__pm-graphics-01__/graphics/equipment/personal-robostasher-equipment.png",
       width = 128,
       height = 128,
       priority = "medium",
@@ -110,7 +110,7 @@ data:extend({
     take_result = "pm-personal-robostasher-mk2-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/personal-robostasher-mk2-equipment.png",
+      filename = "__pm-graphics-01__/graphics/equipment/personal-robostasher-mk2-equipment.png",
       width = 128,
       height = 128,
       priority = "medium",
@@ -162,7 +162,7 @@ data:extend({
     take_result = "pm-personal-robocharger-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/personal-robocharger-equipment.png",
+      filename = "__pm-graphics-01__/graphics/equipment/personal-robocharger-equipment.png",
       width = 128,
       height = 256,
       priority = "medium",
@@ -214,7 +214,7 @@ data:extend({
     take_result = "pm-personal-robocharger-mk2-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/personal-robocharger-mk2-equipment.png",
+      filename = "__pm-graphics-01__/graphics/equipment/personal-robocharger-mk2-equipment.png",
       width = 128,
       height = 256,
       priority = "medium",
@@ -266,7 +266,7 @@ data:extend({
     name = "pm-lithium-sulfur-battery-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/lithium-battery-equipment-icon.png",
+      filename = "__pm-graphics-01__/graphics/equipment/lithium-battery-equipment-icon.png",
       width = 64,
       height = 128,
       priority = "medium",
@@ -291,7 +291,7 @@ data:extend({
     name = "pm-lithium-sulfur-battery-mk2-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment-icon.png",
+      filename = "__pm-graphics-01__/graphics/equipment/lithium-battery-mk2-equipment-icon.png",
       width = 64,
       height = 128,
       priority = "medium",
@@ -313,10 +313,10 @@ data:extend({
   },
 })
 
-data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment.png"
-data.raw["item"]["battery-mk2-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment.png"
-data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment-icon.png"
-data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment-icon.png"
+data.raw["item"]["battery-equipment"].icon = "__pm-graphics-01__/graphics/equipment/vanadium-battery-equipment.png"
+data.raw["item"]["battery-mk2-equipment"].icon = "__pm-graphics-01__/graphics/equipment/vanadium-battery-mk2-equipment.png"
+data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__pm-graphics-01__/graphics/equipment/vanadium-battery-equipment-icon.png"
+data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__pm-graphics-01__/graphics/equipment/vanadium-battery-mk2-equipment-icon.png"
 data.raw["battery-equipment"]["battery-equipment"].shape =
     {
       width = 2,

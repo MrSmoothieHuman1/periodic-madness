@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-gallium-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/gallium-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/gallium-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/gallium-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/gallium-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/gallium-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/gallium-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-gallium-ptm",
     order = "a",
@@ -19,12 +19,12 @@ data:extend({
     type = "item",
     name = "pm-ion-exchange-beads",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/ion-beads.png",
+    icon = "__pm-graphics-01__/graphics/icons/ion-beads.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ion-beads.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ion-beads-2.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ion-beads-3.png", size = 128, scale = 0.25 },
+      { filename = "__pm-graphics-01__/graphics/icons/ion-beads.png",   size = 128, scale = 0.25 },
+      { filename = "__pm-graphics-01__/graphics/icons/ion-beads-2.png", size = 128, scale = 0.25 },
+      { filename = "__pm-graphics-01__/graphics/icons/ion-beads-3.png", size = 128, scale = 0.25 },
     },
     subgroup = "pm-gallium-ptm",
     order = "b",
@@ -95,7 +95,7 @@ data:extend({
     type = "recipe",
     name = "pm-metal-sodium-hydroxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/metal-sodium-hydroxide.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/metal-sodium-hydroxide.png",
     enabled = false,
     energy_required = 4,
     category = "pm-electrolysis",

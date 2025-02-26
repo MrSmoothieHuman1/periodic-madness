@@ -5,7 +5,7 @@ data:extend({
     type = "item",
     name = "pm-cadnium-red",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/cadmium-red.png",
+    icon = "__pm-graphics-01__/graphics/icons/cadmium-red.png",
     subgroup = "pm-cadnium-tm",
     order = "d",
     stack_size = 50
@@ -14,12 +14,12 @@ data:extend({
     type = "item",
     name = "pm-cadnium-sulfate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/cadnium-sulfate.png",
+    icon = "__pm-graphics-01__/graphics/icons/cadnium-sulfate.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate-3.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/cadnium-sulfate.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/cadnium-sulfate-2.png", size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/cadnium-sulfate-3.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-cadnium-tm",
     order = "A",
@@ -52,7 +52,7 @@ data:extend({
     type = "recipe",
     name = "pm-zinc-tailings-condensing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/zinc-tailings-seperation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/zinc-tailings-seperation.png",
     category = "pm-coldening",
     subgroup = "pm-cadnium-tm",
     order = "b",

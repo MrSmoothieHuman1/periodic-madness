@@ -6,13 +6,13 @@ data:extend({
     type = "item",
     name = "pm-titanium-oxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/titanium-oxide.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/titanium-oxide.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide-3.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/titanium-oxide-4.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/titanium-oxide.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/titanium-oxide-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/titanium-oxide-3.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/titanium-oxide-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-titanium-tm",
     order = "b",
@@ -22,11 +22,11 @@ data:extend({
     type = "item",
     name = "pm-titanium-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/titanium-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/titanium-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/titanium-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/titanium-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__pm-graphics-01__/graphics/icons/ores/titanium-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__pm-graphics-01__/graphics/icons/ores/titanium-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-titanium-tm",
     order = "a",
@@ -40,11 +40,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/silver-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -86,7 +86,7 @@ data:extend({
     type = "recipe",
     name = "pm-titanium-chloride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/titanium-chlorination.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/titanium-chlorination.png",
     subgroup = "pm-titanium-tm",
     order = "d",
     category = "pm-acids",
@@ -108,7 +108,7 @@ data:extend({
     type = "recipe",
     name = "pm-titanium-ore",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/titanium-chloride-seperation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/titanium-chloride-seperation.png",
     subgroup = "pm-titanium-tm",
     order = "e",
     category = "pm-acids",
@@ -131,7 +131,7 @@ data:extend({
     type = "recipe",
     name = "pm-argon-titanium-melting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/argon-titanium-welding.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/argon-titanium-welding.png",
     subgroup = "pm-titanium-tm",
     order = "h",
     category = "pm-moltening",
@@ -154,11 +154,11 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/titanium-chunks.png",
+        icon = "__pm-graphics-01__/graphics/icons/ores/titanium-chunks.png",
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon = "__pm-graphics-01__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
       },
     },

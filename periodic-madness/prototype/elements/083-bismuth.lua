@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-bismuth-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bismuth-chunks.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/bismuth-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bismuth-chunks.png", size = 64, scale = 0.5},
-      { filename = "__periodic-madness__/graphics/icons/ores/bismuth-chunks-2.png", size = 64, scale = 0.5}
+      { filename = "__pm-graphics-01__/graphics/icons/ores/bismuth-chunks.png", size = 64, scale = 0.5},
+      { filename = "__pm-graphics-01__/graphics/icons/ores/bismuth-chunks-2.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-bismuth-ptm",
     order = "a",
@@ -19,11 +19,11 @@ data:extend({
     type = "item",
     name = "pm-bismite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bismite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/bismite.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.5, mipmap_count = 4},
-      {filename = "__periodic-madness__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.4, mipmap_count = 4},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/bismite-1.png", size = 64, scale = 0.5, mipmap_count = 4},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/bismite-2.png", size = 64, scale = 0.4, mipmap_count = 4},
     },
     subgroup = "pm-bismuth-ptm",
     order = "b",
@@ -34,7 +34,7 @@ data:extend({
     type = "recipe",
     name = "pm-bismuth-leeching",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/bismuth-leeching.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/bismuth-leeching.png",
     enabled = false,
     energy_required = 8,
     category = "pm-acids",

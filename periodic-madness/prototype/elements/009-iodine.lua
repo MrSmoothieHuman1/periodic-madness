@@ -63,7 +63,7 @@ data:extend({
     type = "recipe",
     name = "pm-iodine",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/hydrogen-iodine-seperation.png",
+    icon = "__pm-graphics-01__/graphics/icons/recipes/hydrogen-iodine-seperation.png",
     enabled = false,
     energy_required = 10,
     category = "pm-acids",

@@ -5,11 +5,11 @@ data:extend({
     type = "item",
     name = "pm-arsenopyrite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/arsenopyrite.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/arsenopyrite.png",
     pictures = 
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/arsenopyrite.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/arsenopyrite-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/arsenopyrite.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/ores/arsenopyrite-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-arsenic-mt",
     order = "a",
@@ -19,7 +19,7 @@ data:extend({
     type = "item",
     name = "pm-impure-arsenic",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/impure-arsenic.png",
+    icon = "__pm-graphics-01__/graphics/icons/ores/impure-arsenic.png",
     subgroup = "pm-arsenic-mt",
     order = "b",
     stack_size = 250
@@ -28,12 +28,12 @@ data:extend({
     type = "item",
     name = "pm-arsenic-oxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/arsenic-oxide.png",
+    icon = "__pm-graphics-01__/graphics/icons/arsenic-oxide.png",
     pictures = 
     {
-      {filename = "__periodic-madness__/graphics/icons/arsenic-oxide.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/arsenic-oxide-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/arsenic-oxide-3.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/arsenic-oxide.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/arsenic-oxide-2.png", size = 64, scale = 0.5},
+      {filename = "__pm-graphics-01__/graphics/icons/arsenic-oxide-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-arsenic-mt",
     order = "c",
