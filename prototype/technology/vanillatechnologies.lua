@@ -417,6 +417,7 @@ data.raw["technology"]["low-density-structure"].unit.ingredients =
 }
 data.raw["technology"]["low-density-structure"].prerequisites = {"pm-polytetrafluoroethylene-plastic", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["low-density-structure"].unit.time = 80
+table.insert(data.raw["technology"]["low-density-structure"].effects, {type = "unlock-recipe", recipe = "pm-aluminium-density-structure"}, {type = "unlock-recipe", recipe = "pm-tin-low-density-structure"})
 
 data.raw["technology"]["laser"].unit.ingredients =
 {
