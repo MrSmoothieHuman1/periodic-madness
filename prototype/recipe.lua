@@ -3777,6 +3777,42 @@ data:extend({
       PM.product("pm-light-coolant", 10, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-aluminium-low-density-structure",
+    energy_required = 15,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-aluminium-plate", 15),
+      PM.ingredient("pm-lightweight-framing", 10),
+      PM.ingredient("pm-antimony-ore", 8),
+      PM.ingredient("pm-polytetrafluoroethylene", 3)
+    },
+    results = 
+    {
+      PM.product("pm-low-density-structure", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-tin-low-density-structure",
+    energy_required = 15,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-tin-plate", 8),
+      PM.ingredient("pm-lightweight-framing", 25),
+      PM.ingredient("pm-antimony-ore", 3),
+      PM.ingredient("pm-polytetrafluoroethylene", 5)
+    },
+    results = 
+    {
+      PM.product("pm-low-density-structure", 1)
+    }
+  },
 
   {
     type = "recipe",

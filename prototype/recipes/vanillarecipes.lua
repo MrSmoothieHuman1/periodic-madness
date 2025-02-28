@@ -254,7 +254,7 @@ data.raw["recipe"]["low-density-structure"].ingredients =
   PM.ingredient("pm-polytetrafluoroethylene", 4),
   PM.ingredient("pm-antimony-ore", 5),
   PM.ingredient("pm-lightweight-framing", 20),
-  PM.ingredient("pm-titanium-plate", 15)
+  PM.ingredient("pm-titanium-plate", 10)
 }
 data.raw["recipe"]["rocket-fuel"].ingredients =
 {
