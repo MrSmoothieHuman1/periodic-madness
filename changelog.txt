@@ -97,6 +97,7 @@ Date: 2024-12-08
     - Chnaged emerald crushing to give beryl, not beryllium ore.
     - Changed evaporators to be unlocked within the crushing/glass technology.
     - Changed beacon 1's to take 8 red circuits, not 14.
+    - Lowered the amount of PTFE used in LDS from 5 to 4.
 
   Fixes:
     - Fixed the science pack item names captilisation.
