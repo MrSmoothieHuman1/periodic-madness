@@ -1639,24 +1639,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-zirconium-pants",
-    energy_required = 30,
-    enabled = false,
-    hidden = true,
-    subgroup = "pm-zirconium-tm",
-    order = "x",
-    ingredients =
-    {
-      PM.ingredient("pm-zirconia", 10),
-      PM.ingredient("pm-polyethylene-plastic", 2)
-    },
-    results =
-    {
-      PM.product("pm-zirconium-pants", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-copper-zinc-aluminium-catalyst",
     energy_required = 3,
     enabled = false,
