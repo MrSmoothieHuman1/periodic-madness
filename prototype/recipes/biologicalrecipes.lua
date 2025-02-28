@@ -63,7 +63,6 @@ data:extend({
     {
       PM.product("wood", 50)
     }
-
   },
 
   --misc recipes
@@ -391,6 +390,63 @@ data:extend({
       PM.product("pm-melatonin", 10, "fluid"),
       PM.product_chance("pm-bacteriaed-agar-solution", 2, 0.2, "fluid")
 
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-bacteriaed-agar-methyl-chloride-offgassing",
+    enabled = false,
+    energy_required = 15,
+    category = "pm-bacteria-incubating",
+    subgroup = "pm-biostuff-rnm",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-bacteriaed-agar-solution", 30, "fluid"),
+      PM.ingredient("pm-carbon-dioxide-gas", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-bacteriaed-agar-solution", 39, 40, "fluid"),
+      PM.product_range("pm-methyl-chloride", 2, 6, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-bacteriaed-agar-sulfur-dioxide-offgassing",
+    enabled = false,
+    energy_required = 15,
+    category = "pm-bacteria-incubating",
+    subgroup = "pm-biostuff-rnm",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-bacteriaed-agar-solution", 40, "fluid"),
+      PM.ingredient("pm-carbon-monoxide", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-bacteriaed-agar-solution", 39, 40, "fluid"),
+      PM.product_range("pm-sulfur-dioxide", 1, 8, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cyanobacteriaed-agar-ammonia-offgassing",
+    enabled = false,
+    energy_required = 15,
+    category = "pm-bacteria-incubating",
+    subgroup = "pm-biostuff-rnm",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-cyanobacteriaed-agar-solution", 40, "fluid"),
+      PM.ingredient("pm-water-vapour", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-cyanobacteriaed-agar-solution", 38, 40, "fluid"),
+      PM.product_range("pm-ammonia-gas", 3, 9, "fluid")
     }
   },
 } --[[@as data.RecipePrototype[] ]])
