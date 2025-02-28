@@ -3792,7 +3792,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-low-density-structure", 1)
+      PM.product("low-density-structure", 1)
     }
   },
   {
@@ -3810,7 +3810,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-low-density-structure", 1)
+      PM.product("low-density-structure", 1)
     }
   },
 
