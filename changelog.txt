@@ -32,6 +32,7 @@ Date: 2024-12-08
     - Added beryllium plates instead of making it ore only, just because plates have been neglected recently.
     - Added mod settings for PM! Ranging from things like how fast bots are (0.25x - 2x), [insert more things here]
     - Added 2 new alternative recipes for LDS, using the 2 other main 'light' metals.
+    - Added a way to get certain chemicals from bacteria'ed and cyanobacteria'ed agars, by feeding them anopther chemical.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
