@@ -3930,7 +3930,8 @@ data:extend({
     {
       PM.product("pm-post-transition-metal-science-pack", 2),
     }
-  },{
+  },
+  {
     type = "recipe",
     name = "pm-plastic-alkali-metal-science-pack",
     icon_size = 64,
