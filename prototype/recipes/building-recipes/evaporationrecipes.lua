@@ -64,4 +64,56 @@ data:extend({
     },
     results = {}
   },
+  {
+    type = "recipe",
+    name = "pm-chlorine-evaporation",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chlorine.png",
+        icon_size = 128,
+        scale = 0.4
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
+      },
+    },
+    subgroup = "pm-acid-crafting",
+    category = "pm-evaporation",
+    hide_from_player_crafting = true,
+    energy_required = 0.325,
+    ingredients =
+    {
+      PM.ingredient("pm-chlorine", 10, "fluid"),
+    },
+    results = {}
+  },
+  {
+    type = "recipe",
+    name = "pm-hydrogen-evaporation",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-gas.png",
+        icon_size = 128,
+        scale = 0.4
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
+      },
+    },
+    subgroup = "pm-acid-crafting",
+    category = "pm-evaporation",
+    hide_from_player_crafting = true,
+    energy_required = 0.325,
+    ingredients =
+    {
+      PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
+    },
+    results = {}
+  },
 } --[[@as data.RecipePrototype[] ]])
