@@ -32,7 +32,13 @@ data:extend({
         type = "item",
         name = "pm-aluminium-sulfate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/aluminium-sulfate.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/aluminium-sulfate.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/aluminuium-sulfate-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/aluminium-sulfate-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-beryllium-aem",
         order = "d",
         stack_size = 200

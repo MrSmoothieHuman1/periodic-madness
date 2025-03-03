@@ -252,6 +252,13 @@ data:extend({
     name = "pm-aluminium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminuim-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminum-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-aluminium-ptm",
     order = "d",
     stack_size = 200
