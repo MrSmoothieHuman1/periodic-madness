@@ -11,7 +11,7 @@ data:extend({
             {filename = "__periodic-madness__/graphics/icons/ores/dolomite.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/dolomite-2.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/dolomite-3.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icondolomite-4.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/dolomite-4.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-magnesium-aem",
         order = "a",
@@ -21,7 +21,12 @@ data:extend({
         type = "item",
         name = "pm-magnesium-oxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/magnesium-oxide.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-magnesium-aem",
         order = "b",
         stack_size = 250
