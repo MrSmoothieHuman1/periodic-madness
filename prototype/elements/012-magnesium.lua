@@ -5,7 +5,14 @@ data:extend({
         type = "item",
         name = "pm-dolomite",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/dolomite.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/dolomite.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/dolomite-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/dolomite-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icondolomite-4.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-magnesium-aem",
         order = "a",
         stack_size = 250
