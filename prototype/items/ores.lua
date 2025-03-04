@@ -254,10 +254,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/aluminuim-ore-icon-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/aluminum-ore-icon-3.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon-4.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminuim-ore-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminum-ore-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-aluminium-ptm",
     order = "d",
@@ -431,6 +431,13 @@ data:extend({
     name = "pm-antimony-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/antimony-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/antimony-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/antimony-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/antimony-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/antimony-ore-icon-4.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-antimony-mt",
     order = "e",
     stack_size = 200
