@@ -20,7 +20,7 @@ data:extend({
     type = "item",
     name = "pm-bauxite-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bauxite-powder.png",
+    icon = "__periodic-madness__/graphics/icons/bauxite-powder.png",
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/bauxite-powder.png", size = 64, scale = 0.5 },
@@ -39,7 +39,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
+        icon = "__periodic-madness__/graphics/icons/ores/bauxite.png",
         icon_size = 64,
       },
       {
@@ -135,7 +135,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore-icon.png",
+        icon = "__periodic-madness__/graphics/icons/ores/bauxite.png",
         icon_size = 64,
       },
       {

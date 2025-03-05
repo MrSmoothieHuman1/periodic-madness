@@ -72,7 +72,7 @@ data:extend({
     {
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chlorine.png",
-        icon_size = 128,
+        icon_size = 64,
         scale = 0.4
       },
       {
@@ -98,7 +98,7 @@ data:extend({
     {
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-gas.png",
-        icon_size = 128,
+        icon_size = 64,
         scale = 0.4
       },
       {

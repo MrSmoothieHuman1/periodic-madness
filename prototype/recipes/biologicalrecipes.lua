@@ -400,6 +400,7 @@ data:extend({
     category = "pm-bacteria-incubating",
     subgroup = "pm-biostuff-rnm",
     allow_productivity = true,
+    main_product = "pm-methyl-chloride",
     ingredients = 
     {
       PM.ingredient("pm-bacteriaed-agar-solution", 30, "fluid"),
@@ -419,6 +420,7 @@ data:extend({
     category = "pm-bacteria-incubating",
     subgroup = "pm-biostuff-rnm",
     allow_productivity = true,
+    main_product = "pm-sulfur-dioxide",
     ingredients = 
     {
       PM.ingredient("pm-bacteriaed-agar-solution", 40, "fluid"),
@@ -438,6 +440,7 @@ data:extend({
     category = "pm-bacteria-incubating",
     subgroup = "pm-biostuff-rnm",
     allow_productivity = true,
+    main_product = "pm-ammonia-gas",
     ingredients = 
     {
       PM.ingredient("pm-cyanobacteriaed-agar-solution", 40, "fluid"),

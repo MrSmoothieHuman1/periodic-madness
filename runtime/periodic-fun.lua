@@ -35,6 +35,12 @@ local function do_custom_player_messages()
             if player.name == "IUndercoverTroll" then
                 game.print("something something balatro reference")
             end
+
+
+            -- test
+            if player.name == "Mr.SmoothieHuman" then
+                game.print("hey nerd")
+            end
             end
         end
     end

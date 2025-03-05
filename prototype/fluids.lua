@@ -1794,7 +1794,7 @@ data:extend({
     type = "fluid",
     name = "pm-beryllium-hydroxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/beryllium-hydroxide.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/beryllium-hydroxide.png",
     subgroup = "pm-beryllium-aem",
     order = "e",
     default_temperature = 15,

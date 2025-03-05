@@ -5,7 +5,7 @@ data:extend({
         type = "item",
         name = "pm-beryl",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/beryl.png",
+        icon = "__periodic-madness__/graphics/icons/ores/beryl.png",
         pictures =
         {
             {filename = "__periodic-madness__/graphics/icons/ores/beryl.png", size = 64, scale = 0.5},
@@ -48,9 +48,9 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/aluminium-sulfate.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/aluminium-sulfate.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ores/aluminuium-sulfate-2.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/ores/aluminium-sulfate-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/aluminium-sulfate.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/aluminium-sulfate-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/aluminium-sulfate-3.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-beryllium-aem",
         order = "d",
