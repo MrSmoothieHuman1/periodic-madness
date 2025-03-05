@@ -3764,13 +3764,13 @@ data:extend({
     type = "recipe",
     name = "pm-light-coolant",
     category = "chemistry",
-    energy_required = 8,
+    energy_required = 4,
     enabled = false,
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-polydimethylsiloxane", 8, "fluid"),
-      PM.ingredient("pm-helium-gas", 10, "fluid"),
+      PM.ingredient("pm-coolant", 10, "fluid"),
     },
     results =
     {
