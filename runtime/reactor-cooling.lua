@@ -32,11 +32,40 @@ events[defines.events.on_script_trigger_effect] = function (event)
 	func(event)
 end
 
+--MARK: Cooled reactor collection
+
+---@type type<data.EntityID, true>
+local cooled_reactors = {}
+
+for name, prototype in pairs(prototypes.get_entity_filtered{
+	{filter = "type", type = "reactor"}
+}) do
+	local energy_source = prototype.fluid_energy_source_prototype
+	if not energy_source then goto continue end
+
+	local connections = energy_source.fluid_box.pipe_connections
+	if #connections < 10 then goto continue end
+
+	for i = 1, 10, 1 do
+		if connections[i].connection_type ~= "linked" then
+			goto continue
+		end
+	end
+	for i = 11, #connections, 1 do
+		if connections[i].connection_category[1] ~= "null-category-fuck-off" then
+			goto continue
+		end
+	end
+
+	cooled_reactors[name] = true
+
+	::continue::
+end
+
 --MARK: placement
 
-script_triggers["pm-cooled-reactor-placed"] = function (event)
-	local reactor = event.source_entity
-	if not reactor then error("The source entity for 'pm-cooled-reactor-placed' was somehow nil") end
+---@param reactor LuaEntity
+function reactor_placed(reactor)
 	script.register_on_object_destroyed(reactor)
 
 	-- Create furnace
@@ -66,9 +95,29 @@ script_triggers["pm-cooled-reactor-placed"] = function (event)
 	storage.reactors[reactor.unit_number--[[@as int]]] = reactor_info
 	storage.reactors[furnace.unit_number--[[@as int]]] = reactor_info
 end
--- Only should be used for migrating reactors that weren't cooled before
----@type fun(event:{source_entity:LuaEntity})
-simulate_placed = script_triggers["pm-cooled-reactor-placed"]
+
+
+---@alias BuiltEventData
+---| EventData.on_built_entity
+---| EventData.on_robot_built_entity
+---| EventData.on_space_platform_built_entity
+---| EventData.script_raised_built
+---| EventData.script_raised_revive
+---@param event BuiltEventData
+local function built_event(event)
+	local entity = event.entity
+	if not cooled_reactors[entity.name] then return end
+	reactor_placed(entity)
+end
+
+for _, event_id in pairs{
+	defines.events.on_built_entity,
+	defines.events.on_robot_built_entity,
+	defines.events.on_space_platform_built_entity,
+	defines.events.script_raised_built
+} do
+	events[event_id] = built_event
+end
 
 --MARK: GUI
 

@@ -6,6 +6,6 @@ for _, surface in pairs(game.surfaces) do
 	for _, entity in pairs(surface.find_entities_filtered{
 		name = {"nuclear-reactor", "pm-polonium-reactor"}
 	}) do
-		simulate_placed{source_entity = entity}
+		reactor_placed(entity)
 	end
 end
