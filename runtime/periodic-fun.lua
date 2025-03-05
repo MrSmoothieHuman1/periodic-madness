@@ -8,17 +8,17 @@ local player_messages = {
     ["DocJade"] = "theres no greel here, but its certaintly Fun",
     ["Martincitopants"] = "lettuce.. begin a chemistry class",
     ["Venzer"] = "i found your channel randomly and absolutely loved your EI video, have fun with PM <3",
-    -- important or cool people
+
+    -- important or cool
     ["exfret"] = "A fun... mode? whoever thought of something like that?",
     ["PennyJim"] = "Took you long enough",
     ["Sassxolotl"] = "from one neurospicer to another, enjoy",
     ["Acqua"] = "if i had the know-how, i'd make sure that every second make bots 0.01% slower",
+
     -- people i yoinked from the doshcord
     ["Emile-wa"] = "thank you for being the first to become a funny name in PM",
     ["IUndercoverTroll"] = "something something balatro reference",
     ["realannabanana"] = "straight banana'ing it",
-
-    ["Mr.SmoothieHuman"] = "hey nerd",
 }
 
 ---@param player LuaPlayer
