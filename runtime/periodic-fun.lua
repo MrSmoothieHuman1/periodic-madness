@@ -1,4 +1,8 @@
-local custom_messages = {
+local PM = require("library")
+---@type event_handler
+local lib = {events={}}
+
+local player_messages = {
     -- youtuber people
     ["Zyllius"] = "To get you a little closer to that potato haiku. Also, suffer",
     ["DocJade"] = "theres no greel here, but its certaintly Fun",
@@ -12,12 +16,28 @@ local custom_messages = {
     -- people i yoinked from the doshcord
     ["Emile-wa"] = "thank you for being the first to become a funny name in PM",
     ["IUndercoverTroll"] = "something something balatro reference",
+
+    ["Mr.SmoothieHuman"] = "hey nerd",
 }
 
-local function do_custom_player_messages()
-    if game.tick == 90 * 60 * 60 then
-        for _, player in pairs(game.players) do
-            if funny_message then player.print(funny_message) end
-        end
+---@param player LuaPlayer
+local function play_message(player)
+    local player_message = player_messages[player.name]
+    if player_message then
+        PM.compat_send(player, player_message)
     end
 end
+
+function lib.on_init()
+    for _, player in pairs(game.players) do
+        play_message(player)
+    end
+end
+lib.events[defines.events.on_player_created] = function(event)
+    local player = game.get_player(event.player_index)
+    ---@cast player -?
+    play_message(player)
+end
+
+
+return lib

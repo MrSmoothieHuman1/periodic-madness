@@ -652,21 +652,64 @@ function PM.script_trigger_effect(effect_id, effects)
   return effects
 end
 
---MARK: Global variables:
+--MARK: Runtime library
 
----@class PM.beltTier
----@field [1] string  Belt
----@field [2] string  Underground
----@field [3] string  Splitter
----@field [4] string? Loader
-
----@type PM.beltTier[]
-PM.belts = {
-  {"transport-belt",                  "underground-belt",                 "splitter",                 "loader"        },
-  {"fast-transport-belt",             "fast-underground-belt",            "fast-splitter",            "fast-loader"   },
-  {"pm-advanced-transport-belt",      "pm-advanced-underground-belt",     "pm-advanced-splitter",     nil             },
-  {"express-transport-belt",          "express-underground-belt",         "express-splitter",         "express-loader"},
-  {"pm-high-density-transport-belt",  "pm-high-density-underground-belt", "pm-high-density-splitter", nil             },
+---@type boolean?
+local has_better_chat = nil
+local send_levels = {
+  ["LuaGameScript"] = "global",
+  ["LuaForce"] = "force",
+  ["LuaPlayer"] = "player",
+  ["LuaSurface"] = "surface",
 }
+--- Safely attempts to print via the Better Chatting's interface
+---@param recipient LuaGameScript|LuaForce|LuaPlayer|LuaSurface
+---@param msg LocalisedString
+---@param print_settings PrintSettings?
+function PM.compat_send(recipient, msg, print_settings)
+  if has_better_chat == nil then
+    local better_chat = remote.interfaces["better-chat"]
+    has_better_chat = better_chat and better_chat["send"]
+  end
+
+  if not has_better_chat then return recipient.print(msg, print_settings) end
+  print_settings = print_settings or {}
+
+
+  local send_level = send_levels[recipient.object_name]
+  ---@type int?
+  local send_index
+  if send_level ~= "global" then
+    send_index = recipient.index
+  end
+  if not send_index then
+    error("Invalid Recipient", 2)
+  end
+
+  remote.call("better-chat", "send", {
+    message = msg,
+    send_level = send_level,
+    color = print_settings.color,
+    recipient = send_index,
+  })
+end
+
+
+--MARK : Global variables: -- Doesn't work. shhh
+
+-- ---@class PM.beltTier
+-- ---@field [1] string  Belt
+-- ---@field [2] string  Underground
+-- ---@field [3] string  Splitter
+-- ---@field [4] string? Loader
+
+-- ---@type PM.beltTier[]
+-- PM.belts = {
+--   {"transport-belt",                  "underground-belt",                 "splitter",                 "loader"        },
+--   {"fast-transport-belt",             "fast-underground-belt",            "fast-splitter",            "fast-loader"   },
+--   {"pm-advanced-transport-belt",      "pm-advanced-underground-belt",     "pm-advanced-splitter",     nil             },
+--   {"express-transport-belt",          "express-underground-belt",         "express-splitter",         "express-loader"},
+--   {"pm-high-density-transport-belt",  "pm-high-density-underground-belt", "pm-high-density-splitter", nil             },
+-- }
 
 return PM
