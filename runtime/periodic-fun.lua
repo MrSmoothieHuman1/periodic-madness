@@ -16,6 +16,7 @@ local player_messages = {
     -- people i yoinked from the doshcord
     ["Emile-wa"] = "thank you for being the first to become a funny name in PM",
     ["IUndercoverTroll"] = "something something balatro reference",
+    ["realannabanana"] = "straight banana'ing it",
 
     ["Mr.SmoothieHuman"] = "hey nerd",
 }
