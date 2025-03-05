@@ -30,14 +30,32 @@ local function play_message(player)
 end
 
 function lib.on_init()
+    ---@type table<string,true>
+    storage.player_message_sent = {}
+    local player_message_sent = storage.player_message_sent
     for _, player in pairs(game.players) do
         play_message(player)
+        player_message_sent[player.name] = true
     end
 end
 lib.events[defines.events.on_player_created] = function(event)
     local player = game.get_player(event.player_index)
     ---@cast player -?
     play_message(player)
+    storage.player_message_sent[player.name] = true
+end
+
+function lib.on_configuration_changed(event)
+    ---@type table<string,true>
+    storage.player_message_sent = storage.player_message_sent or {}
+    local player_message_sent = storage.player_message_sent
+
+    for _, player in pairs(game.players) do
+        if not player_message_sent[player.name] then
+            play_message(player)
+            player_message_sent[player.name] = true
+        end
+    end
 end
 
 
