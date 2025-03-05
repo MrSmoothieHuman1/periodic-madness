@@ -1,0 +1,40 @@
+{
+  "mods": [
+    {
+      "name": "base",
+      "enabled": true
+    },
+    {
+      "name": "elevated-rails",
+      "enabled": false
+    },
+    {
+      "name": "quality",
+      "enabled": false
+    },
+    {
+      "name": "space-age",
+      "enabled": false
+    },
+    {
+      "name": "periodic-madness",
+      "enabled": true
+    },
+    {
+      "name": "pm-graphics-01",
+      "enabled": true
+    },
+    {
+      "name": "debugadapter",
+      "enabled": false
+    },
+    {
+      "name": "coverage",
+      "enabled": false
+    },
+    {
+      "name": "profiler",
+      "enabled": false
+    }
+  ]
+}
