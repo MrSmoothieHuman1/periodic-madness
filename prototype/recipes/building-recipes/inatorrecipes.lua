@@ -175,7 +175,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-copper.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -210,7 +210,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-gold.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-gold.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -246,7 +246,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-indium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-indium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -281,7 +281,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-iron.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -355,7 +355,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-iron.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -390,7 +390,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-copper.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -425,7 +425,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-nickel.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-nickel.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -460,7 +460,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-zinc.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-zinc.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -530,7 +530,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-gold.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-gold.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -565,7 +565,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-silver.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-silver.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -635,7 +635,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-titanium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-titanium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -670,7 +670,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-tungsten.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-tungsten.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -705,7 +705,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-cadnium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-cadnium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -834,7 +834,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-lead.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-lead.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -869,7 +869,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-thallium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-thallium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -904,7 +904,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-indium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-indium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -1034,7 +1034,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-beryllium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-beryllium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
