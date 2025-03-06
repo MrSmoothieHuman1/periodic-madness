@@ -94,7 +94,6 @@ data:extend({
     category = "pm-cyclotroning",
     subgroup = "pm-francium-am",
     order = "a",
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-gold-plate", 25),
@@ -115,6 +114,7 @@ data:extend({
     energy_required = 12,
     subgroup = "pm-francium-am",
     order = "b",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium-magneto-orbital-trap", 2)
@@ -124,7 +124,7 @@ data:extend({
       PM.product_chance("pm-francium-209", 2, 0.5),
       PM.product_chance("pm-francium-210", 2, 0.5),
       PM.product_chance("pm-francium-211", 2, 0.5),
-      PM.product("pm-magneto-orbital-trap", 2)
+      PM.catalyst("pm-magneto-orbital-trap", 2, 2)
     }
   },
   {
