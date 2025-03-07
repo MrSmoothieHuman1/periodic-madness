@@ -1134,7 +1134,7 @@ data:extend({
       PM.unlock_recipe("pm-CO2-nullifer"),
       PM.unlock_recipe("pm-CO2-nullifying"),
       PM.unlock_recipe("pm-CO3-nullifying"),
-      PM.unlock_recipe("pm-zirconia-carbon-dioxide-electrolysis")
+      PM.unlock_recipe("pm-carbon-monoxide")
     },
     prerequisites = {"chemical-science-pack"},
     unit =

@@ -88,7 +88,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-zirconia-carbon-dioxide-electrolysis",
+    name = "pm-carbon-monoxide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/zirconia-CO2-electroylsis.png",
     energy_required = 4,

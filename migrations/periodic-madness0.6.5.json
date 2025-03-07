@@ -65,6 +65,7 @@
        ["pm-carbon-dioxide-atmosphere-filtering", "pm-carbon-dioxide-gas"],
        ["pm-chlorine-atmosphere-filtering", "pm-chlorine"],
        ["pm-nitrogen-atmosphere-filtering", "pm-nitrogen-gas"],
-       ["pm-oxygen-gas-atmosphere-filtering", "pm-oxygen-gas"]
+       ["pm-oxygen-gas-atmosphere-filtering", "pm-oxygen-gas"],
+       ["zirconia-carbon-dioxide-electrolysis", "pm-carbon-monoxide"]
     ]
 }
