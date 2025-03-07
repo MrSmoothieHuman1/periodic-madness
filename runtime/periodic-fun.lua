@@ -8,17 +8,25 @@ local player_messages = {
     ["DocJade"] = "theres no greel here, but its certaintly Fun",
     ["Martincitopants"] = "lettuce.. begin a chemistry class",
     ["Venzer"] = "i found your channel randomly and absolutely loved your EI video, have fun with PM <3",
-
+    
     -- important or cool
     ["exfret"] = "A fun... mode? whoever thought of something like that?",
     ["PennyJim"] = "Took you long enough",
     ["Sassxolotl"] = "from one neurospicer to another, enjoy",
-    ["Acqua"] = "if i had the know-how, i'd make sure that every second make bots 0.01% slower",
-
+    ["Acqua"] = "if i had the know-how, i'd make it so that every second make bots 0.01% slower",
+    
     -- people i yoinked from the doshcord
     ["Emile-wa"] = "thank you for being the first to become a funny name in PM",
     ["IUndercoverTroll"] = "something something balatro reference",
     ["realannabanana"] = "straight banana'ing it",
+    ["JakeTheWolf"] = "tenpo ni, la mi ken pali e toki wile la sina ken pali e toki wan",
+    ["somepersondontask"] = "I WILL ask thankyouverymuch",
+    ["YlwHrt"] = "Ywl? thats not how you spell red!",
+    ["werl"] = "not too late, but not early enough to be the first",
+    ["EdwardR"] = "very late christmas profile... or is it maybe very early?",
+    ["SEE_YOU_SPACE_BUNNY"] = "later then the lates, but not late enough",
+    
+    ["Mr.SmoothieHuman"] = "hey nerd"
 }
 
 ---@param player LuaPlayer
