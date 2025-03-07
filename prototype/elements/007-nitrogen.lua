@@ -53,7 +53,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-nitrogen-atmosphere-filtering",
+        name = "pm-nitrogen-gas",
         category = "pm-atmospheric-condensing",
         subgroup = "pm-nitrogen-rnm",
         order = "c",

@@ -43,7 +43,7 @@ data:extend({
       },
     {
         type = "recipe",
-        name = "pm-carbon-dioxide-atmosphere-filtering",
+        name = "pm-carbon-dioxide-gas",
         category = "pm-atmospheric-condensing",
         subgroup = "pm-carbon-rnm",
         order = "c",

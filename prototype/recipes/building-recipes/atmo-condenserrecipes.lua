@@ -19,7 +19,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-trace-gas-atmosphere-filtering",
+    name = "pm-trace-gas",
     category = "pm-atmospheric-condensing",
     subgroup = "pm-trace-gas-rnm",
     order = "b",

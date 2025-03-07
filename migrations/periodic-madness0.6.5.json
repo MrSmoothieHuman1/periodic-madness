@@ -60,6 +60,11 @@
        ["pm--mercury-liquifying", "pm-liquid-mercury"],
        ["pm-titanium-chunk-oxidising", "pm-titanium-oxide"],
        ["pm-titanium-chloronation", "pm-titanium-chloride"],
-       ["pm-titanium-chloride-seperation", "pm-titanium-ore"]
+       ["pm-titanium-chloride-seperation", "pm-titanium-ore"],
+       ["pm-trace-gas-atmosphere-filtering", "pm-trace-gas"],
+       ["pm-carbon-dioxide-atmosphere-filtering", "pm-carbon-dioxide-gas"],
+       ["pm-chlorine-atmosphere-filtering", "pm-chlorine"],
+       ["pm-nitrogen-atmosphere-filtering", "pm-nitrogen-gas"],
+       ["pm-oxygen-gas-atmosphere-filtering", "pm-oxygen-gas"]
     ]
 }

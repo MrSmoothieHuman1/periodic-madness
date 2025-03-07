@@ -43,7 +43,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-chlorine-atmosphere-filtering",
+    name = "pm-chlorine",
     category = "pm-atmospheric-condensing",
     subgroup = "pm-chlorine-rnm",
     order = "c",

@@ -43,7 +43,7 @@ data:extend({
       },
     {
         type = "recipe",
-        name = "pm-oxygen-atmosphere-filtering",
+        name = "pm-oxygen-gas",
         category = "pm-atmospheric-condensing",
         subgroup = "pm-oxygen-rnm",
         order = "c",
