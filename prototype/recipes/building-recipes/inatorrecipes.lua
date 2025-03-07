@@ -357,14 +357,14 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
         icon_size = 64,
-        scale = 0.2,
+        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__base__/graphics/icons/iron-plate.png",
         icon_size = 64,
-        scale = 0.11,
-        shift = { 0, -3 }
+        scale = 0.22,
+        shift = { 0, -6 }
       },
     },
     subgroup = "pm-iron-tm",
@@ -705,7 +705,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-cadnium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-cadmium.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
