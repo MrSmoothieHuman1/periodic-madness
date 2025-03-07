@@ -76,7 +76,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-sulfur-burning",
+    name = "pm-sulfur-dioxide",
     enabled = false,
     energy_required = 2,
     category = "pm-moltening",

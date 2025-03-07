@@ -3022,7 +3022,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/better-sulfur-extraction.png",
     effects =
     {
-      PM.unlock_recipe("pm-sulfur-burning"),
+      PM.unlock_recipe("pm-sulfur-dioxide"),
       PM.unlock_recipe("pm-sulfur-trioxide"),
       PM.unlock_recipe("pm-oleum"),
       PM.unlock_recipe("pm-better-sulfuric-acid"),
