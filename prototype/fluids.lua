@@ -776,7 +776,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.6, g = 0.6, b = 1 },
     flow_color = {r = 0.6, g = 0.6, b = 1 },
-    auto_barrel = false,
   },
   {
     type = "fluid",
