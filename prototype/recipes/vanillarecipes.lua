@@ -92,6 +92,7 @@ data.raw["recipe"]["fast-underground-belt"].ingredients =
   PM.ingredient("underground-belt", 2),
   PM.ingredient("pm-brass-cog", 8),
 }
+data.raw["recipe"]["fast-underground-belt"].energy_required = 1
 data.raw["recipe"]["fast-splitter"].ingredients =
 {
   PM.ingredient("splitter", 1),
@@ -99,6 +100,7 @@ data.raw["recipe"]["fast-splitter"].ingredients =
   PM.ingredient("pm-silver-plate", 2),
   PM.ingredient("pm-brass-cog", 2)
 }
+data.raw["recipe"]["fast-splitter"].energy_required = 2
 data.raw["recipe"]["express-transport-belt"].ingredients =
 {
   PM.ingredient("pm-advanced-transport-belt", 1),
@@ -120,6 +122,7 @@ data.raw["recipe"]["express-splitter"].ingredients =
   PM.ingredient("processing-unit", 3),
   PM.ingredient("pm-heavy-lubricant", 15, "fluid")
 }
+data.raw["recipe"]["express-splitter"].energy_required = 4
 data.raw["recipe"]["splitter"].ingredients =
 {
   PM.ingredient("pm-basic-motor", 2),

@@ -131,7 +131,7 @@ data:extend({
     type = "recipe",
     name = "pm-high-density-splitter",
     enabled = false,
-    energy_required = 3,
+    energy_required = 5,
     category = "crafting-with-fluid",
     ingredients =
     {
@@ -1027,7 +1027,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-underground-belt",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     show_amount_in_title = true,
     ingredients =
     {
@@ -1043,7 +1043,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-splitter",
     enabled = false,
-    energy_required = 1,
+    energy_required = 3,
     ingredients =
     {
       PM.ingredient("fast-splitter", 1),
