@@ -3,7 +3,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-hydrogen-bromide",
+    name = "pm-hydrogen-bromide-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/hydrogen-bromide-leeching.png",
     enabled = false,

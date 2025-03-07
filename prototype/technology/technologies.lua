@@ -2888,7 +2888,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/bromine-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-hydrogen-bromide"),
+      PM.unlock_recipe("pm-hydrogen-bromide-leeching"),
       PM.unlock_recipe("pm-hydrogen-bromide-seperation"),
       PM.unlock_recipe("pm-trace-bromine"),
       PM.unlock_recipe("pm-bromine"),

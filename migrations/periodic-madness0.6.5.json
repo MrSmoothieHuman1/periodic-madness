@@ -67,7 +67,6 @@
        ["pm-nitrogen-atmosphere-filtering", "pm-nitrogen-gas"],
        ["pm-oxygen-gas-atmosphere-filtering", "pm-oxygen-gas"],
        ["zirconia-carbon-dioxide-electrolysis", "pm-carbon-monoxide"],
-       ["pm-sulfur-burning", "pm-sulfur-dioxide"],
-       ["pm-hydrogen-bromine-leeching", "pm-hydrogen-bromide"]
+       ["pm-sulfur-burning", "pm-sulfur-dioxide"]
     ]
 }
