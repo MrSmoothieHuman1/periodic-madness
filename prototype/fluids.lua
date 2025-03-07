@@ -238,7 +238,7 @@ data:extend({
     name = "pm-atmosphere",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/atmosphere.png",
-    subgroup = "pm-rnm-rnm",
+    subgroup = "pm-atmosphere-rnm",
     order = "a",
     default_temperature = 15,
     auto_barrel = false,
