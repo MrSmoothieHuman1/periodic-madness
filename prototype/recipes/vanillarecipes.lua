@@ -115,6 +115,7 @@ data.raw["recipe"]["express-underground-belt"].ingredients =
   PM.ingredient("processing-unit", 1),
   PM.ingredient("pm-heavy-lubricant", 10, "fluid")
 }
+data.raw["recipe"]["express-underground-belt"].energy_required = 3
 data.raw["recipe"]["express-splitter"].ingredients =
 {
   PM.ingredient("pm-advanced-splitter", 1),

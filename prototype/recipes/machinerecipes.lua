@@ -114,7 +114,7 @@ data:extend({
     type = "recipe",
     name = "pm-high-density-underground-belt",
     enabled = false,
-    energy_required = 2,
+    energy_required = 3,
     show_amount_in_title = true,
     category = "crafting-with-fluid",
     ingredients =
