@@ -348,7 +348,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "pm-alkali-metals",
+      name = "pm-alkaline-earth-metals",
       order = "c",
       base_density = 12,
       base_spots_per_km2 = 1,
