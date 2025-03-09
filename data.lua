@@ -380,7 +380,7 @@ data:extend({
     name = "pm-nickel-ore",
     localised_name = {"", "[entity=pm-nickel-ore] ", {"entity-name.pm-nickel-ore"}},
     richness = true,
-    order = "ac"
+    order = "a-b-a"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -430,7 +430,7 @@ data:extend({
     name = "pm-zinc-ore",
     localised_name = {"", "[entity=pm-zinc-ore] ", {"entity-name.pm-zinc-ore"}},
     richness = true,
-    order = "bb"
+    order = "a-b-b"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
