@@ -120,7 +120,7 @@ data:extend({
     name = "pm-transition-metals",
     localised_name = {"","[entity=pm-transition-metals] ", {"entity-name.pm-transition-metals"}},
     richness = true,
-    order = "b-e"
+    order = "g"
 	},
 	{
     type = "resource",
@@ -170,7 +170,7 @@ data:extend({
     name = "pm-post-transition-metals",
     localised_name = {"","[entity=pm-post-transition-metals] ", {"entity-name.pm-post-transition-metals"}},
     richness = true,
-    order = "b"
+    order = "h"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -223,7 +223,7 @@ data:extend({
     name = "pm-alkali-metals",
     localised_name = {"","[entity=pm-alkali-metals] ", {"entity-name.pm-alkali-metals"}},
     richness = true,
-    order = "c"
+    order = "i"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -275,7 +275,7 @@ data:extend({
     name = "pm-metalloids",
     localised_name = {"","[entity=pm-metalloids] ", {"entity-name.pm-metalloids"}},
     richness = true,
-    order = "c"
+    order = "j"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -327,7 +327,7 @@ data:extend({
     name = "pm-alkaline-earth-metals",
     localised_name = {"","[entity=pm-alkaline-earth-metals] ", {"entity-name.pm-alkaline-earth-metals"}},
     richness = true,
-    order = "c"
+    order = "k"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -380,7 +380,7 @@ data:extend({
     name = "pm-nickel-ore",
     localised_name = {"", "[entity=pm-nickel-ore] ", {"entity-name.pm-nickel-ore"}},
     richness = true,
-    order = "b"
+    order = "ba"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -430,7 +430,7 @@ data:extend({
     name = "pm-zinc-ore",
     localised_name = {"", "[entity=pm-zinc-ore] ", {"entity-name.pm-zinc-ore"}},
     richness = true,
-    order = "b"
+    order = "bb"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
