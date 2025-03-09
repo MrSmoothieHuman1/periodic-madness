@@ -681,9 +681,9 @@ function PM.compat_send(recipient, msg, print_settings)
   local send_index
   if send_level ~= "global" then
     send_index = recipient.index
-  end
-  if not send_index then
-    error("Invalid Recipient", 2)
+    if not send_index then
+      error("Invalid Recipient", 2)
+    end
   end
 
   remote.call("better-chat", "send", {
