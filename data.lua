@@ -483,18 +483,18 @@ data:extend({
 })
 data.raw["resource"]["iron-ore"].minable = 
 {
-    hardness = 1,
-    mining_particle = "iron-ore-particle",
-    mining_time = 1,
-    result = "pm-iron-chunk"
+  hardness = 1,
+  mining_particle = "iron-ore-particle",
+  mining_time = 1,
+  result = "pm-iron-chunk"
 }
 
 data.raw["resource"]["copper-ore"].minable =
 {
-    hardness = 1,
-    mining_particle = "copper-ore-particle",
-    mining_time = 1,
-    result = "pm-copper-chunk"
+  hardness = 1,
+  mining_particle = "copper-ore-particle",
+  mining_time = 1,
+  result = "pm-copper-chunk"
 }
 
 local AcidPlant = table.deepcopy(data.raw["assembling-machine"]["chemical-plant"])
