@@ -57,6 +57,7 @@ data:extend({
     subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
     hide_from_player_crafting = true,
+    enabled = false,
     energy_required = 0.325,
     ingredients =
     {
@@ -83,6 +84,7 @@ data:extend({
     subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
     hide_from_player_crafting = true,
+    enabled = false,
     energy_required = 0.325,
     ingredients =
     {
@@ -109,6 +111,7 @@ data:extend({
     subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
     hide_from_player_crafting = true,
+    enabled = false,
     energy_required = 0.325,
     ingredients =
     {

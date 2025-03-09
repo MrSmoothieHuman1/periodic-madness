@@ -1786,6 +1786,9 @@ data:extend({
       PM.unlock_recipe("pm-salt-electroylsis"),
       PM.unlock_recipe("pm-sodium-looping"),
       PM.unlock_recipe("pm-hydrochloric-acid"),
+      PM.unlock_recipe("pm-oxygen-evaporation"),
+      PM.unlock_recipe("pm-hydrogen-evaporation"),
+      PM.unlock_recipe("pm-chlorine-evaporation"),
     },
     prerequisites = {"automation-science-pack"},
     research_trigger = 
