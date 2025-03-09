@@ -94,7 +94,7 @@ data:extend({
         scale = 0.4
       },
       {
-        icon = "__periodic-madness__/graphics/icons/res/titanium-ore-icon.png",
+        icon = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png",
         icon_size = 64,
       },
   },
