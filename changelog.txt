@@ -115,6 +115,7 @@ Date: 2024-12-08
     - Added the heavy lubricant recipe of solar cells to lubricant technology.
     - Fixed ezekiel ore leeching to actually give the correct amount of ore. This hurts you more then it hurts me, i assure you.
     - Fixed the catefory tabs not using up the amount of space they have.
+    - Fixed molten metal capatalisation.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.150
