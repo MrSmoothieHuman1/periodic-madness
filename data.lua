@@ -128,7 +128,7 @@ data:extend({
     name = "pm-transition-metals",
     icon = "__periodic-madness__/graphics/icons/ores/transition-metals-icon.png",
     flags = {"placeable-neutral"},
-    order= "a-b-a",
+    order = "c",
     map_color = {r=0.87, g=0.667, b=0.137},
     minable =
     {
@@ -178,7 +178,7 @@ data:extend({
     name = "pm-post-transition-metals",
     icon = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",
     flags = {"placeable-neutral"},
-    order= "a-b-a",
+    order= "c",
     map_color = {r=0.5, g=0.84, b=1},
     minable =
     {
@@ -194,7 +194,7 @@ data:extend({
     {
       name = "pm-post-transition-metals",
       order = "b-z",
-      base_density = 7,
+      base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
       starting_rq_factor_multiplier = 1.7,
@@ -223,7 +223,7 @@ data:extend({
     name = "pm-alkali-metals",
     localised_name = {"","[entity=pm-alkali-metals] ", {"entity-name.pm-alkali-metals"}},
     richness = true,
-    order = "b-e"
+    order = "c"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -247,10 +247,10 @@ data:extend({
     {
       name = "pm-alkali-metals",
       order = "b-z",
-      base_density = 7,
+      base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
-      starting_rq_factor_multiplier = 1.7,
+      starting_rq_factor_multiplier = 1.6,
       has_starting_area_placement = false,
       additional_richness = 1500
     },
@@ -275,7 +275,7 @@ data:extend({
     name = "pm-metalloids",
     localised_name = {"","[entity=pm-metalloids] ", {"entity-name.pm-metalloids"}},
     richness = true,
-    order = "b-e"
+    order = "c"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -299,10 +299,10 @@ data:extend({
     {
       name = "pm-metalloids",
       order = "b-z",
-      base_density = 7,
+      base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
-      starting_rq_factor_multiplier = 1.7,
+      starting_rq_factor_multiplier = 1.2,
       has_starting_area_placement = false,
       additional_richness = 1500
     },
@@ -327,7 +327,7 @@ data:extend({
     name = "pm-alkaline-earth-metals",
     localised_name = {"","[entity=pm-alkaline-earth-metals] ", {"entity-name.pm-alkaline-earth-metals"}},
     richness = true,
-    order = "b-e"
+    order = "c"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -351,10 +351,10 @@ data:extend({
     {
       name = "pm-alkali-metals",
       order = "b-z",
-      base_density = 7,
+      base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
-      starting_rq_factor_multiplier = 1.7,
+      starting_rq_factor_multiplier = 1.2,
       has_starting_area_placement = false,
       additional_richness = 1500
     },
@@ -390,7 +390,7 @@ data:extend({
     name = "pm-nickel-ore",
     icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
     flags = {"placeable-neutral"},
-    order= "a-b-a",
+    order= "b",
     map_color = {r=0.70, g=0.70, b=0.80},
   
     minable =
@@ -407,7 +407,7 @@ data:extend({
     {
       name = "pm-nickel-ore",
       order = "b-z",
-      base_density = 3,
+      base_density = 8,
       base_spots_per_km2 = 3,
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1.3,
@@ -443,7 +443,7 @@ data:extend({
     name = "pm-zinc-ore",
     icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
     flags = {"placeable-neutral"},
-    order= "a-b-a",
+    order= "b",
     map_color = {r=0.90, g=0.7, b=0.59},
     minable =
     {
@@ -459,7 +459,7 @@ data:extend({
     {
       name = "pm-zinc-ore",
       order = "b-z",
-      base_density = 4,
+      base_density = 8,
       base_spots_per_km2 = 2,
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1.5,
