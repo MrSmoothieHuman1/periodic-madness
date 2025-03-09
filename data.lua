@@ -380,7 +380,7 @@ data:extend({
     name = "pm-nickel-ore",
     localised_name = {"", "[entity=pm-nickel-ore] ", {"entity-name.pm-nickel-ore"}},
     richness = true,
-    order = "ba"
+    order = "A"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -388,7 +388,7 @@ data:extend({
     name = "pm-nickel-ore",
     icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
     flags = {"placeable-neutral"},
-    order= "b",
+    order = "b",
     map_color = {r=0.70, g=0.70, b=0.80},
     minable =
     {
