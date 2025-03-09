@@ -86,7 +86,18 @@ data:extend({
     type = "recipe",
     name = "pm-titanium-chloride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/titanium-chlorination.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/titanium-tetrachloride.png",
+        icon_size = 64,
+        scale = 0.4
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/res/titanium-ore-icon.png",
+        icon_size = 64,
+      },
+  },
     subgroup = "pm-titanium-tm",
     order = "d",
     category = "pm-acids",
