@@ -170,7 +170,7 @@ data:extend({
     name = "pm-post-transition-metals",
     localised_name = {"","[entity=pm-post-transition-metals] ", {"entity-name.pm-post-transition-metals"}},
     richness = true,
-    order = "b-e"
+    order = "b"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -193,7 +193,7 @@ data:extend({
     autoplace = resource_autoplace.resource_autoplace_settings
     {
       name = "pm-post-transition-metals",
-      order = "b-z",
+      order = "c",
       base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
@@ -231,7 +231,7 @@ data:extend({
     name = "pm-alkali-metals",
     icon = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon.png",
     flags = {"placeable-neutral"},
-    order= "a-b-a",
+    order = "c",
     map_color = {r=0.098, g=0.35, b=0.82},
     minable =
     {
@@ -246,7 +246,7 @@ data:extend({
     autoplace = resource_autoplace.resource_autoplace_settings
     {
       name = "pm-alkali-metals",
-      order = "b-z",
+      order = "c",
       base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
@@ -283,7 +283,7 @@ data:extend({
     name = "pm-metalloids",
     icon = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png",
     flags = {"placeable-neutral"},
-    order= "a-b-a",
+    order = "c",
     map_color = {r=0.29, g=0, b=0.671},
     minable =
     {
@@ -298,7 +298,7 @@ data:extend({
     autoplace = resource_autoplace.resource_autoplace_settings
     {
       name = "pm-metalloids",
-      order = "b-z",
+      order = "c",
       base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
@@ -335,7 +335,7 @@ data:extend({
     name = "pm-alkaline-earth-metals",
     icon = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon.png",
     flags = {"placeable-neutral"},
-    order= "a-b-a",
+    order = "c",
     map_color = {r=0.753, g=0.18, b=0.1},
     minable =
     {
@@ -346,11 +346,10 @@ data:extend({
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-
     autoplace = resource_autoplace.resource_autoplace_settings
     {
       name = "pm-alkali-metals",
-      order = "b-z",
+      order = "c",
       base_density = 12,
       base_spots_per_km2 = 1,
       regular_rq_factor_multiplier = 1.2,
@@ -358,7 +357,6 @@ data:extend({
       has_starting_area_placement = false,
       additional_richness = 1500
     },
-
     stage_counts = {60000, 40000, 26000, 17000, 15200, 12000, 3500, 1000},
     stages =
     {
@@ -382,7 +380,7 @@ data:extend({
     name = "pm-nickel-ore",
     localised_name = {"", "[entity=pm-nickel-ore] ", {"entity-name.pm-nickel-ore"}},
     richness = true,
-    order = "b-e"
+    order = "b"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -392,7 +390,6 @@ data:extend({
     flags = {"placeable-neutral"},
     order= "b",
     map_color = {r=0.70, g=0.70, b=0.80},
-  
     minable =
     {
       hardness = 1,
@@ -402,18 +399,16 @@ data:extend({
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-
     autoplace = resource_autoplace.resource_autoplace_settings
     {
       name = "pm-nickel-ore",
-      order = "b-z",
+      order = "b",
       base_density = 8,
       base_spots_per_km2 = 3,
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1.3,
       starting_rq_factor_multiplier = 1.1,
     },
-
     stage_counts = {15000, 10000, 5500, 3000, 1300, 400, 200, 100},
     stages =
     {
@@ -435,7 +430,7 @@ data:extend({
     name = "pm-zinc-ore",
     localised_name = {"", "[entity=pm-zinc-ore] ", {"entity-name.pm-zinc-ore"}},
     richness = true,
-    order = "b-e"
+    order = "b"
 	}--[[@as data.AutoplaceControl]],
 	{
     type = "resource",
@@ -443,7 +438,7 @@ data:extend({
     name = "pm-zinc-ore",
     icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
     flags = {"placeable-neutral"},
-    order= "b",
+    order = "",
     map_color = {r=0.90, g=0.7, b=0.59},
     minable =
     {
@@ -454,18 +449,16 @@ data:extend({
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-
     autoplace = resource_autoplace.resource_autoplace_settings
     {
       name = "pm-zinc-ore",
-      order = "b-z",
+      order = "b",
       base_density = 8,
       base_spots_per_km2 = 2,
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1.5,
       starting_rq_factor_multiplier = 1.9,
     },
-
     stage_counts = {20000, 10000, 6500, 3000, 1500, 500, 220, 50},
     stages =
     {
