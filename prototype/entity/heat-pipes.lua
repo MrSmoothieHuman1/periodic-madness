@@ -163,7 +163,7 @@ data:extend({
           specific_heat = "1MJ",
           max_transfer = "1GW",
           minimum_glow_temperature = 350,
-          min_temperature_gradient = 1,
+          min_temperature_gradient = 1.25,
           connections =
           {
             {
