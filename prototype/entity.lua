@@ -2688,10 +2688,9 @@ data:extend({
       layers =
       {
         {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
-           width = 32 * 7 * 2,
-           height = 32 * 7 * 2,
+          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
+          width = 32 * 7 * 2,
+          height = 32 * 7 * 2,
           frame_count = 32,
           line_length = 8,
           animation_speed = 0.25,
@@ -2699,10 +2698,9 @@ data:extend({
           scale = 0.575,
         },
         {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
-           width = 32 * 7 * 2,
-           height = 32 * 7 * 2,
+          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+          width = 32 * 7 * 2,
+          height = 32 * 7 * 2,
           frame_count = 32,
           line_length = 4,
           draw_as_shadow = true,
