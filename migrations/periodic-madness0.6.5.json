@@ -68,5 +68,10 @@
        ["pm-oxygen-gas-atmosphere-filtering", "pm-oxygen-gas"],
        ["zirconia-carbon-dioxide-electrolysis", "pm-carbon-monoxide"],
        ["pm-sulfur-burning", "pm-sulfur-dioxide"]
+    ],
+    "autoplace-control":
+    [
+        ["pm-zinc-ore", "pm-zinc-chunks"],
+        ["pm-nickel-ore", "pm-nickel-chunks"]
     ]
 }

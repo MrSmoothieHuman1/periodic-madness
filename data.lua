@@ -427,7 +427,7 @@ data:extend({
   {
     type = "autoplace-control",
     category = "resource",
-    name = "pm-zinc-ore",
+    name = "pm-zinc-chunks",
     localised_name = {"", "[entity=pm-zinc-ore] ", {"entity-name.pm-zinc-ore"}},
     richness = true,
     order = "a-b-b"
@@ -435,7 +435,7 @@ data:extend({
 	{
     type = "resource",
     icon_size = 64,
-    name = "pm-zinc-ore",
+    name = "pm-zinc-chunks",
     icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
     flags = {"placeable-neutral"},
     order = "",
