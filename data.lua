@@ -576,4 +576,4 @@ local lithium_speed_setting = ({
 data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_speed_setting
 data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
 
-table.insert(data.raw["character"]["character"].crafting_categories, "pm-electronics")
+table.insert(data.raw["character"]["character"].crafting_categories, "pm-circuitry")
