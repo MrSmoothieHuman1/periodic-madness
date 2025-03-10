@@ -377,7 +377,7 @@ data:extend({
   {
     type = "autoplace-control",
     category = "resource",
-    name = "pm-nickel-ore",
+    name = "pm-nickel-chunks",
     localised_name = {"", "[entity=pm-nickel-chunks] ", {"entity-name.pm-nickel-chunks"}},
     richness = true,
     order = "a-b-a"
@@ -385,7 +385,7 @@ data:extend({
 	{
     type = "resource",
     icon_size = 64,
-    name = "pm-nickel-ore",
+    name = "pm-nickel-chunks",
     icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
     flags = {"placeable-neutral"},
     order = "b",
