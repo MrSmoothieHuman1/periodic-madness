@@ -2680,7 +2680,7 @@ data:extend({
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
     vector_to_place_result = {0, 3.5},
-    energy_usage = "625kW",
+    energy_usage = "500kW",
     graphics_set = 
   {
     animation =
