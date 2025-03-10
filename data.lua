@@ -530,10 +530,10 @@ if data.raw["utility-constants"].default.select_slot_row_count == 10 then
   data.raw["utility-constants"].default.select_group_row_count = 7
 end
 
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-nickel-ore"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-nickel-ore"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-zinc-ore"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-zinc-ore"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-nickel-chunks"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-nickel-chunks"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-zinc-chunks"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-zinc-chunks"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-transition-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-transition-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-post-transition-metals"] = {}
