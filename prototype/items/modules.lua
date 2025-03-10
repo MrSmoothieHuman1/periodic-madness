@@ -1,6 +1,5 @@
 local PM = require("library")
-local hit_effects = require("__base__.prototypes.entity.hit-effects")
-local sounds = require("__base__.prototypes.entity.sounds")
+local item_sounds = require("__base__.prototypes.item_sounds")
 
 data:extend({
     --MARK: Categories
@@ -137,6 +136,26 @@ data:extend({
     } --[[@as data.ModulePrototype]],
 
     --MARK: Special Modules
+    {
+        type = "module",
+        name = "pm-copper-heating-coil",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-icon.png",
+        tier = 1,
+        category = "pm-heating-coils",
+        subgroup = "pm-productivity",
+        order = "x",
+        stack_size = 25,
+        inventory_move_sound = item_sounds.metal_small_inventory_move,
+        pick_sound = item_sounds.metal_small_inventory_pickup,
+        drop_sound = item_sounds.metal_small_inventory_move,
+        effect =
+        {
+            speed = 0.2,
+            consumption = 0.2,
+            pollution = 0,
+        }
+    }, --basic coil module, should be a alright starter
 })
 
 data.raw["module"]["productivity-module"].effect =
