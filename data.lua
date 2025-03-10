@@ -378,7 +378,7 @@ data:extend({
     type = "autoplace-control",
     category = "resource",
     name = "pm-nickel-ore",
-    localised_name = {"", "[entity=pm-nickel-ore] ", {"entity-name.pm-nickel-ore"}},
+    localised_name = {"", "[entity=pm-nickel-chunks] ", {"entity-name.pm-nickel-chunks"}},
     richness = true,
     order = "a-b-a"
 	}--[[@as data.AutoplaceControl]],
@@ -386,7 +386,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-nickel-ore",
-    icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
     flags = {"placeable-neutral"},
     order = "b",
     map_color = {r=0.70, g=0.70, b=0.80},
@@ -401,7 +401,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "pm-nickel-ore",
+      name = "pm-nickel-chunks",
       order = "b",
       base_density = 8,
       base_spots_per_km2 = 3,
@@ -428,7 +428,7 @@ data:extend({
     type = "autoplace-control",
     category = "resource",
     name = "pm-zinc-chunks",
-    localised_name = {"", "[entity=pm-zinc-ore] ", {"entity-name.pm-zinc-ore"}},
+    localised_name = {"", "[entity=pm-zinc-chunks] ", {"entity-name.pm-zinc-chunks"}},
     richness = true,
     order = "a-b-b"
 	}--[[@as data.AutoplaceControl]],
@@ -436,7 +436,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-zinc-chunks",
-    icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
     flags = {"placeable-neutral"},
     order = "",
     map_color = {r=0.90, g=0.7, b=0.59},
@@ -451,7 +451,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "pm-zinc-ore",
+      name = "pm-zinc-chunks",
       order = "b",
       base_density = 8,
       base_spots_per_km2 = 2,
