@@ -545,6 +545,8 @@ data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-a
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkaline-earth-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkaline-earth-metals"] = {}
 
+data.raw["resource"]["iron-ore"].icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png"
+data.raw["resource"]["copper-ore"].icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png"
 
 local vanadium_speed_setting = ({
   ["0.25x"] = 0.045 * 0.25,
