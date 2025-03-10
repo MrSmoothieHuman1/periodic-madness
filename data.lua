@@ -575,3 +575,5 @@ local lithium_speed_setting = ({
 })[settings.startup["pm-lithium-robot-speed-multiplier"].value]
 data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_speed_setting
 data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
+
+table.insert(data.raw["character"]["character"].crafting_categories, "pm-electronics")
