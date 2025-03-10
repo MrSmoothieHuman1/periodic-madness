@@ -1,7 +1,15 @@
 local PM = require("library")
 
 data:extend({
+    --MARK: Categories
 
+    {
+        type = "module-category",
+        name = "pm-heating-coils",
+        hidden = true,
+        hidden_in_factoriopedia = true,
+    },
+    
     --MARK: Normal Modules
     {
         type = "module",
