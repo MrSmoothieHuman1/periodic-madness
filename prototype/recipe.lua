@@ -2879,7 +2879,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/garnet-leeching.png",
     energy_required = 5,
-    category = "pm-crushing",
+    category = "chemistry",
     subgroup = "pm-garnet-ptm",
     order = "b",
     enabled = false,
