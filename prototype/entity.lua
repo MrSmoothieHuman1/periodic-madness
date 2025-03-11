@@ -7088,18 +7088,19 @@ data:extend({
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
-    module_slots = 3,
+    module_slots = 8,
     icon_draw_specification = {shift = {0, -0.1}},
     icons_positioning =
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.8}}
     },
     allowed_effects = PM.all_effects(),
+    allowed_module_categories = {"pm-heating-coils"},
     crafting_categories = {"smelting"},
-    effect_receiver = {base_effect = { productivity = 0.05}},
+    effect_receiver = {base_effect = {productivity = 0.05}},
     result_inventory_size = 1,
-    crafting_speed = 3,
-    energy_usage = "180kW",
+    crafting_speed = 1.25,
+    energy_usage = "200kW",
     source_inventory_size = 1,
     energy_source =
     {
@@ -7285,17 +7286,17 @@ data:extend({
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
-    module_slots = 3,
+    module_slots = 10,
     icon_draw_specification = {shift = {0, -0.1}},
-    icons_positioning =
     {
-      {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.8}}
-    },
+      {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
+    }
     allowed_effects = PM.all_effects(),
+    allowed_module_categories = {"pm-heating-coils"},
     crafting_categories = {"smelting"},
     result_inventory_size = 1,
-    crafting_speed = 2.5,
-    energy_usage = "220kW",
+    crafting_speed = 1,
+    energy_usage = "200kW",
     source_inventory_size = 1,
     energy_source =
     {

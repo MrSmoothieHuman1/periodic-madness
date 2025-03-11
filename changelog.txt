@@ -106,6 +106,7 @@ Date: 2024-12-08
     - Changed all electric furnaces to require heating coils to be placed inside the machine to work at a normal speed.
     - Removd kasethal from the electric furnace 1 recipe.
     - Changed advanced material processing 2 to be behind multimetal multiproperty technology.
+    - Changed electric furnace 2 and heat furnace to be balanced around the change to electric furnaces.
 
   Fixes:
     - Fixed the science pack item names captilisation.
