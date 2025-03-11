@@ -7090,9 +7090,9 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 8,
     icon_draw_specification = {shift = {0, -0.1}},
-    icons_positioning =
+    icon_draw_specification = {shift = {0, -0.1}},
     {
-      {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.8}}
+      {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
     },
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heating-coils"},
@@ -7290,7 +7290,7 @@ data:extend({
     icon_draw_specification = {shift = {0, -0.1}},
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
-    }
+    },
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heating-coils"},
     crafting_categories = {"smelting"},
