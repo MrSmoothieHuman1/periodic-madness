@@ -9661,3 +9661,6 @@ data.raw["inserter"]["long-handed-inserter"].rotation_speed = 0.02 * 1.5
 data.raw["locomotive"]["locomotive"].energy_source.burnt_inventory_size = 3
 data.raw["car"]["car"].energy_source.burnt_inventory_size = 2
 data.raw["car"]["tank"].energy_source.burnt_inventory_size = 2
+
+data.raw["furnace"]["electric-furnace"].allowed_module_categories = {"pm-heating-coils"}
+data.raw["furnace"]["electric-furnace"].module_slots = 6
