@@ -217,6 +217,26 @@ data:extend({
         pollution = 0.15,
       }
     }, -- high heat capacity, less speed
+    {
+      type = "module",
+      name = "pm-kasethal-heating-coil",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/kanthal-heating-coil.png",
+      tier = 1,
+      category = "pm-heating-coils",
+      subgroup = "pm-productivity",
+      order = "x",
+      stack_size = 25,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.4,
+        consumption = 0.3,
+        pollution = 0.2,
+      }
+    }, --essenitally a better copper, honestly
 })
 
 --#MARK: Vanilla modules
