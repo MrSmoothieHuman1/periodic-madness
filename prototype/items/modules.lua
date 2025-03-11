@@ -11,7 +11,7 @@ data:extend({
         hidden_in_factoriopedia = true,
     },
 
-    --MARK: Normal Modules
+    --MARK: Normal modules
     {
         type = "module",
         name = "pm-speed-module-4",
@@ -135,7 +135,7 @@ data:extend({
         },
     } --[[@as data.ModulePrototype]],
 
-    --MARK: Special Modules
+    --MARK: Special modules
     {
         type = "module",
         name = "pm-copper-heating-coil",
@@ -158,6 +158,7 @@ data:extend({
     }, --basic coil module, should be a alright starter
 })
 
+--#MARK: Vanilla modules
 data.raw["module"]["productivity-module"].effect =
 {
   productivity = 0.04,
