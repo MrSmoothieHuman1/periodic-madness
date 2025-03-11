@@ -3813,10 +3813,93 @@ data:extend({
       PM.product("low-density-structure", 1)
     }
   },
-
+  {
+    type = "recipe",
+    name = "pm-copper-heating-coil",
+    energy_required = 10,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "a",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("copper-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-copper-heating-coil", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-aluminium-heating-coil",
+    energy_required = 10,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "b",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("pm-aluminium-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-aluminium-heating-coil", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-tungsten-heating-coil",
+    energy_required = 10,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "c",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("pm-tungsten-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-tungsten-heating-coil", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-silver-heating-coil",
+    energy_required = 10,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "d",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("pm-silver-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-silver-heating-coil", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-kasethal-heating-coil",
+    energy_required = 10,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "e",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("pm-kasethal-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-kasethal-heating-coil", 1)
+    }
+  },
 
 --MARK: Plastic Science
-
   {
     type = "recipe",
     name = "pm-plastic-transition-metal-science-pack",
@@ -3984,7 +4067,6 @@ data:extend({
       PM.product("pm-metalloid-science-pack", 2),
     }
   },
-
 
 --MARK: Francium Science
   {

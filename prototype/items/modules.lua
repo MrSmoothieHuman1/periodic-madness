@@ -143,8 +143,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/modules/copper-heating-coil.png",
       tier = 1,
       category = "pm-heating-coils",
-      subgroup = "pm-productivity",
-      order = "x",
+      subgroup = "pm-coils",
+      order = "a",
       stack_size = 25,
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
@@ -163,8 +163,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/modules/aluminium-heating-coil.png",
       tier = 1,
       category = "pm-heating-coils",
-      subgroup = "pm-productivity",
-      order = "x",
+      subgroup = "pm-coils",
+      order = "b",
       stack_size = 25,
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
@@ -178,13 +178,33 @@ data:extend({
     },--slightly worse then copper, but better speed/consumption speed ratio
     {
       type = "module",
+      name = "pm-tungsten-heating-coil",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/tungsten-heating-coil.png",
+      tier = 1,
+      category = "pm-heating-coils",
+      subgroup = "pm-coils",
+      order = "c",
+      stack_size = 25,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.5,
+        consumption = 1,
+        pollution = 0.15,
+      }
+    }, -- high heat capacity, less pollution
+    {
+      type = "module",
       name = "pm-silver-heating-coil",
       icon_size = 64,
       icon = "__periodic-madness__/graphics/icons/modules/silver-heating-coil.png",
       tier = 1,
       category = "pm-heating-coils",
-      subgroup = "pm-productivity",
-      order = "x",
+      subgroup = "pm-coils",
+      order = "d",
       stack_size = 25,
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
@@ -196,27 +216,7 @@ data:extend({
         pollution = 0.5,
         productivity = -0.05
       }
-    }, --best heat capacity, so less consumption
-    {
-      type = "module",
-      name = "pm-tungsten-heating-coil",
-      icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/modules/tungsten-heating-coil.png",
-      tier = 1,
-      category = "pm-heating-coils",
-      subgroup = "pm-productivity",
-      order = "x",
-      stack_size = 25,
-      inventory_move_sound = item_sounds.metal_small_inventory_move,
-      pick_sound = item_sounds.metal_small_inventory_pickup,
-      drop_sound = item_sounds.metal_small_inventory_move,
-      effect =
-      {
-        speed = 0.5,
-        consumption = 1,
-        pollution = 0.15,
-      }
-    }, -- high heat capacity, less speed
+    }, --best heat capacity, so less consumption - lower prod for balance
     {
       type = "module",
       name = "pm-kasethal-heating-coil",
@@ -224,8 +224,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/modules/kanthal-heating-coil.png",
       tier = 1,
       category = "pm-heating-coils",
-      subgroup = "pm-productivity",
-      order = "x",
+      subgroup = "pm-coils",
+      order = "e",
       stack_size = 25,
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,

@@ -252,8 +252,7 @@ data.raw["technology"]["solar-energy"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
-data.raw["technology"]["flammables"].prerequisites = {"pm-fuel-oils-recipes", "pm-petrol-recipes", "pm-kerosene-recipes",
-  "pm-diesel-recipes"}
+data.raw["technology"]["flammables"].prerequisites = {"pm-fuel-oils-recipes", "pm-petrol-recipes", "pm-kerosene-recipes", "pm-diesel-recipes"}
 data.raw["technology"]["flammables"].unit.ingredients =
 {
   {"automation-science-pack", 1},

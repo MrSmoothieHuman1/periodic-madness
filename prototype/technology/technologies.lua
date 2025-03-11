@@ -4544,6 +4544,48 @@ data:extend({
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "pm-heating-coils",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/heating-coils.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-aluminium-heating-coil"),
+      PM.unlock_recipe("pm-tungsten-heating-coil"),
+      PM.unlock_recipe("pm-silver-heating-coil"),
+    },
+    prerequisites = {"advanced-material-processing-2"},
+    research_trigger =
+    {
+      type = "craft-item",
+      entity = "electric-furnace",
+      count = 5
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-kasethal-heating-coils",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/kanthal-heating-coils.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-kasethal-heating-coil"),
+    },
+    prerequisites = {"pm-heating-coils", "pm-vanadium-chromium-alloying", "pm-post-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1}
+      },
+      time = 45
+    }
+  },
 
   {
     type = "technology",
