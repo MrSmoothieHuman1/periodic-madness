@@ -58,7 +58,7 @@ data:extend({
     category = "pm-evaporation",
     hide_from_player_crafting = true,
     enabled = false,
-    energy_required = 0.325,
+    energy_required = 0.5,
     ingredients =
     {
       PM.ingredient("pm-oxygen-gas", 10, "fluid"),
@@ -85,7 +85,7 @@ data:extend({
     category = "pm-evaporation",
     hide_from_player_crafting = true,
     enabled = false,
-    energy_required = 0.325,
+    energy_required = 0.5,
     ingredients =
     {
       PM.ingredient("pm-chlorine", 10, "fluid"),
@@ -112,7 +112,7 @@ data:extend({
     category = "pm-evaporation",
     hide_from_player_crafting = true,
     enabled = false,
-    energy_required = 0.325,
+    energy_required = 0.5,
     ingredients =
     {
       PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
