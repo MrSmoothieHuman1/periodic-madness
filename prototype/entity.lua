@@ -9668,3 +9668,6 @@ data.raw["furnace"]["electric-furnace"].icons_draw_specification =
 {
   {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.06}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.8}
 }
+data.raw["furnace"]["electric-furnace"].crafting_speed = 1
+data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
+data.raw["furnace"]["electric-furnace"].energy_source.drain = "0kW"
