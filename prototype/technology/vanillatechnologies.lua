@@ -277,6 +277,7 @@ data.raw["technology"]["advanced-material-processing-2"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
+table.insert(data.raw["technology"]["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "pm-copper-heating-coil"})
 
 data.raw["technology"]["modular-armor"].prerequisites = {"pm-cadnium-processing", "advanced-circuit"}
 data.raw["technology"]["modular-armor"].unit.ingredients =
