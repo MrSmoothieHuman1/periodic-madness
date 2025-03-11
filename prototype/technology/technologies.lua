@@ -4559,7 +4559,7 @@ data:extend({
     research_trigger =
     {
       type = "craft-item",
-      entity = "electric-furnace",
+      item = "electric-furnace",
       count = 5
     }
   },
