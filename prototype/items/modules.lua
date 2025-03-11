@@ -137,25 +137,85 @@ data:extend({
 
     --MARK: Special modules
     {
-        type = "module",
-        name = "pm-copper-heating-coil",
-        icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/modules/copper-heating-coil.png",
-        tier = 1,
-        category = "pm-heating-coils",
-        subgroup = "pm-productivity",
-        order = "x",
-        stack_size = 25,
-        inventory_move_sound = item_sounds.metal_small_inventory_move,
-        pick_sound = item_sounds.metal_small_inventory_pickup,
-        drop_sound = item_sounds.metal_small_inventory_move,
-        effect =
-        {
-            speed = 0.2,
-            consumption = 0.2,
-            pollution = 0,
-        }
+      type = "module",
+      name = "pm-copper-heating-coil",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/copper-heating-coil.png",
+      tier = 1,
+      category = "pm-heating-coils",
+      subgroup = "pm-productivity",
+      order = "x",
+      stack_size = 25,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.2,
+        consumption = 0.2,
+        pollution = 0.1,
+      }
     }, --basic coil module, should be a alright starter
+    {
+      type = "module",
+      name = "pm-aluminium-heating-coil",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/aluminium-heating-coil.png",
+      tier = 1,
+      category = "pm-heating-coils",
+      subgroup = "pm-productivity",
+      order = "x",
+      stack_size = 25,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.15,
+        consumption = 0.1,
+        pollution = 0.05,
+      }
+    },--slightly worse then copper, but better speed/consumption speed ratio
+    {
+      type = "module",
+      name = "pm-silver-heating-coil",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/silver-heating-coil.png",
+      tier = 1,
+      category = "pm-heating-coils",
+      subgroup = "pm-productivity",
+      order = "x",
+      stack_size = 25,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.5,
+        consumption = 0.25,
+        pollution = 0.5,
+      }
+    }, --best heat capacity, so less consumption
+    {
+      type = "module",
+      name = "pm-tungsten-heating-coil",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/tungsten-heating-coil.png",
+      tier = 1,
+      category = "pm-heating-coils",
+      subgroup = "pm-productivity",
+      order = "x",
+      stack_size = 25,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.5,
+        consumption = 1,
+        pollution = 0.15,
+      }
+    }, -- high heat capacity, less speed
 })
 
 --#MARK: Vanilla modules

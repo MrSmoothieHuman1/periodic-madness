@@ -103,6 +103,7 @@ Date: 2024-12-08
     - Lowered the amount of PTFE used in LDS from 5 to 4.
     - Lowered the amount of titanium used in LDS from 15 to 10.
     - Added a vector_to_place_result (mining drill output) onto circuit megassemblers.
+    - Changed all electric furnaces to require heating coils to be placed inside the machine to work at a normal speed.
 
   Fixes:
     - Fixed the science pack item names captilisation.
