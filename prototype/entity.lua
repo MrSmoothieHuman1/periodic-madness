@@ -9664,7 +9664,7 @@ data.raw["car"]["tank"].energy_source.burnt_inventory_size = 2
 
 data.raw["furnace"]["electric-furnace"].allowed_module_categories = {"pm-heating-coils"}
 data.raw["furnace"]["electric-furnace"].module_slots = 6
-data.raw["furnace"]["electric-furnace"].icons_draw_specification =
+data.raw["furnace"]["electric-furnace"].icon_draw_specification =
 {
   {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.06}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.8}
 }
