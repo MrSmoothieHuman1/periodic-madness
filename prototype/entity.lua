@@ -7090,7 +7090,6 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 8,
     icon_draw_specification = {shift = {0, -0.1}},
-    icon_draw_specification = {shift = {0, -0.1}},
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
     },
@@ -7288,6 +7287,7 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 10,
     icon_draw_specification = {shift = {0, -0.1}},
+    icons_positioning =
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
     },
