@@ -241,6 +241,12 @@ data:extend({
 
   {
     type = "item-subgroup",
+    name = "pm-coils",
+    group = "production",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-speed",
     group = "production",
     order = "g",

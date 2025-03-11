@@ -3814,6 +3814,9 @@ data:extend({
     }
   },
 
+
+--MARK: Plastic Science
+
   {
     type = "recipe",
     name = "pm-plastic-transition-metal-science-pack",
@@ -3982,6 +3985,8 @@ data:extend({
     }
   },
 
+
+--MARK: Francium Science
   {
     type = "recipe",
     name = "pm-FUCK-transition-metal-science-pack",
