@@ -194,6 +194,7 @@ data:extend({
         speed = 0.5,
         consumption = 0.25,
         pollution = 0.5,
+        productivity = -0.05
       }
     }, --best heat capacity, so less consumption
     {
