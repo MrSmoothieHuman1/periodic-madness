@@ -5,38 +5,38 @@ data:extend({
     --MARK: Categories
 
     {
-        type = "module-category",
-        name = "pm-heating-coils",
-        hidden = true,
-        hidden_in_factoriopedia = true,
+      type = "module-category",
+      name = "pm-heating-coils",
+      hidden = true,
+      hidden_in_factoriopedia = true,
     },
 
     --MARK: Normal modules
     {
-        type = "module",
-        name = "pm-speed-module-4",
-        localised_description = {"item-description.speed-module"},
-        icon = "__periodic-madness__/graphics/icons/speed-module-4.png",
-        icon_size = 128,
-        subgroup = "pm-speed",
-        category = "speed",
-        tier = 4,
-        order = "d",
-        stack_size = 50,
-        effect = { speed = 0.7, consumption = 0.9 },
-        inventory_move_sound = item_sounds.module_inventory_move,
-        pick_sound = item_sounds.module_inventory_pickup,
-        drop_sound = item_sounds.module_inventory_move,
-        beacon_tint =
-        {
-          primary = { r = 0.441, g = 0.514, b = 1.000, a = 1.000 },     -- #70b6ffff
-          secondary = { r = 0.388, g = 0.766, b = 1.000, a = 1.000 },   -- #63f8ffff
-        },
-        art_style = "vanilla",
-        requires_beacon_alt_mode = false,
-        pictures =
-        {
-          layers =
+      type = "module",
+      name = "pm-speed-module-4",
+      localised_description = {"item-description.speed-module"},
+      icon = "__periodic-madness__/graphics/icons/speed-module-4.png",
+      icon_size = 128,
+      subgroup = "pm-speed",
+      category = "speed",
+       tier = 4,
+      order = "d",
+      stack_size = 50,
+      effect = { speed = 0.7, consumption = 0.9 },
+      inventory_move_sound = item_sounds.module_inventory_move,
+      pick_sound = item_sounds.module_inventory_pickup,
+      drop_sound = item_sounds.module_inventory_move,
+      beacon_tint =
+      {
+        primary = { r = 0.441, g = 0.514, b = 1.000, a = 1.000 },     -- #70b6ffff
+        secondary = { r = 0.388, g = 0.766, b = 1.000, a = 1.000 },   -- #63f8ffff
+      },
+      art_style = "vanilla",
+      requires_beacon_alt_mode = false,
+      pictures =
+      {
+        layers =
           {
             {
               size = 128,
@@ -77,7 +77,7 @@ data:extend({
         requires_beacon_alt_mode = false,
         pictures =
         {
-          layers =
+        layers =
           {
             {
               size = 128,
@@ -117,7 +117,7 @@ data:extend({
         },
         pictures =
         {
-          layers =
+        layers =
           {
             {
               size = 128,
@@ -218,7 +218,7 @@ data.raw["module"]["productivity-module-3"].order = "c"
 
 local smodule1 = data.raw["module"]["speed-module"]
 smodule1.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -236,7 +236,7 @@ smodule1.pictures = {
 }
 local smodule2 = data.raw["module"]["speed-module-2"]
 smodule2.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -254,7 +254,7 @@ smodule2.pictures = {
 }
 local smodule3 = data.raw["module"]["speed-module-3"]
 smodule3.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -273,7 +273,7 @@ smodule3.pictures = {
 
 local emodule1 = data.raw["module"]["efficiency-module"]
 emodule1.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -291,7 +291,7 @@ emodule1.pictures = {
 }
 local emodule2 = data.raw["module"]["efficiency-module-2"]
 emodule2.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -309,7 +309,7 @@ emodule2.pictures = {
 }
 local emodule3 = data.raw["module"]["efficiency-module-3"]
 emodule3.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -328,7 +328,7 @@ emodule3.pictures = {
 
 local pmodule1 = data.raw["module"]["productivity-module"]
 pmodule1.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -346,7 +346,7 @@ pmodule1.pictures = {
 }
 local pmodule2 = data.raw["module"]["productivity-module-2"]
 pmodule2.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
@@ -364,7 +364,7 @@ pmodule2.pictures = {
 }
 local pmodule3 = data.raw["module"]["productivity-module-3"]
 pmodule3.pictures = {
-  layers =
+layers =
   {
     {
       size = 128,
