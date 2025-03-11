@@ -321,7 +321,6 @@ data.raw["recipe"]["electric-furnace"].ingredients =
   PM.ingredient("pm-heating-plating", 6),
   PM.ingredient("pm-heavyweight-panelling", 8),
   PM.ingredient("pm-heavyweight-framing", 6),
-  PM.ingredient("pm-kasethal-plate", 5)
 }
 data.raw["recipe"]["exoskeleton-equipment"].ingredients =
 {
