@@ -105,6 +105,7 @@ Date: 2024-12-08
     - Added a vector_to_place_result (mining drill output) onto circuit megassemblers.
     - Changed all electric furnaces to require heating coils to be placed inside the machine to work at a normal speed.
     - Removd kasethal from the electric furnace 1 recipe.
+    - Changed advanced material processing 2 to be behind multimetal multiproperty technology.
 
   Fixes:
     - Fixed the science pack item names captilisation.
