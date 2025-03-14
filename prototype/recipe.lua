@@ -3883,11 +3883,28 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-kasethal-heating-coil",
+    name = "pm-gold-heating-coil",
     energy_required = 10,
     enabled = false,
     subgroup = "pm-coils",
     order = "e",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("pm-gold-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-gold-heating-coil", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-kasethal-heating-coil",
+    energy_required = 10,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "f",
     ingredients = 
     {
       PM.ingredient("pm-lightweight-framing", 5),
