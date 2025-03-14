@@ -260,6 +260,17 @@ data.raw["recipe"]["low-density-structure"].ingredients =
   PM.ingredient("pm-lightweight-framing", 20),
   PM.ingredient("pm-titanium-plate", 10)
 }
+data.raw["recipe"]["low-density-structure"].icons =     
+{
+  {
+    icon = "__base__/graphics/icons/low-density-structure.png",
+    icon_size = 64,
+  },
+  {
+    icon = "_periodic-madness__/graphics/icons/plates/titanium-plate.png",
+    scale = 0.42,
+  },
+}
 data.raw["recipe"]["rocket-fuel"].ingredients =
 {
   PM.ingredient("solid-fuel", 10),

@@ -3780,6 +3780,17 @@ data:extend({
   {
     type = "recipe",
     name = "pm-aluminium-low-density-structure",
+    icons = 
+    {
+      {
+        icon = "__base__/graphics/icons/low-density-structure.png",
+        icon_size = 64,
+      },
+      {
+        icon = "_periodic-madness__/graphics/icons/plates/aluminium-plate.png",
+        scale = 0.42,
+      },
+    },
     energy_required = 15,
     enabled = false,
     allow_productivity = true,
@@ -3798,6 +3809,17 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tin-low-density-structure",
+    icons = 
+    {
+      {
+        icon = "__base__/graphics/icons/low-density-structure.png",
+        icon_size = 64,
+      },
+      {
+        icon = "_periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
+        scale = 0.42,
+      },
+    },
     energy_required = 15,
     enabled = false,
     allow_productivity = true,
