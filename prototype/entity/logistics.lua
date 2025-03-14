@@ -652,3 +652,166 @@ data:extend({
         circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
       }--[[@as data.TransportBeltPrototype]],
 })
+
+data.raw["transport-belt"]["fast-transport-belt"].map_color = red_belt
+data.raw["underground-belt"]["fast-underground-belt"].map_color = red_belt
+data.raw["splitter"]["fast-splitter"].map_color = red_belt
+data.raw["transport-belt"]["express-transport-belt"].map_color = blue_belt
+data.raw["underground-belt"]["express-underground-belt"].map_color = blue_belt
+data.raw["splitter"]["express-splitter"].map_color = blue_belt
+
+data.raw["solar-panel"]["solar-panel"].map_color = {r = 0.356, g = 0.495, b = 0.62}
+
+data.raw["transport-belt"]["fast-transport-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+data.raw["splitter"]["fast-splitter"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+data.raw["underground-belt"]["fast-underground-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+
+data.raw["transport-belt"]["fast-transport-belt"].belt_animation_set = orange_fast_belt_animation_set
+data.raw["splitter"]["fast-splitter"].belt_animation_set = orange_fast_belt_animation_set
+data.raw["splitter"]["fast-splitter"].structure =
+{
+  north =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-north.png",
+    frame_count = 32,
+    line_length = 8,
+    priority = "extra-high",
+    width = 160,
+    height = 70,
+    shift = util.by_pixel(7, 0),
+    scale = 0.5
+  },
+  east =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-east.png",
+    frame_count = 32,
+    line_length = 8,
+    priority = "extra-high",
+    width = 90,
+    height = 84,
+    shift = util.by_pixel(4, 13),
+    scale = 0.5
+  },
+  south =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-south.png",
+    frame_count = 32,
+    line_length = 8,
+    priority = "extra-high",
+    width = 164,
+    height = 64,
+    shift = util.by_pixel(4, 0),
+    scale = 0.5
+  },
+  west =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-west.png",
+    frame_count = 32,
+    line_length = 8,
+    priority = "extra-high",
+    width = 90,
+    height = 86,
+    shift = util.by_pixel(5, 12),
+    scale = 0.5
+  }
+}
+data.raw["splitter"]["fast-splitter"].structure_patch =
+{
+  north = util.empty_sprite(),
+  east =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-east-top_patch.png",
+    frame_count = 1,
+    line_length = 8,
+    priority = "extra-high",
+    width = 90,
+    height = 104,
+    shift = util.by_pixel(4, -20),
+    scale = 0.5
+  },
+  south = util.empty_sprite(),
+  west =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/fast-splitter/fast-splitter-west-top_patch.png",
+    frame_count = 1,
+    line_length = 8,
+    priority = "extra-high",
+    width = 94,
+    height = 96,
+    shift = util.by_pixel(5, -18),
+    scale = 0.5
+  }
+}
+data.raw["underground-belt"]["fast-underground-belt"].belt_animation_set = orange_fast_belt_animation_set
+data.raw["underground-belt"]["fast-underground-belt"].structure =
+{
+  direction_in =
+  {
+    sheet =
+    {
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/fast-underground-belt/fast-underground-belt-structure.png",
+      priority = "extra-high",
+      width = 192,
+      height = 192,
+      y = 192,
+      scale = 0.5
+    }
+  },
+  direction_out =
+  {
+    sheet =
+    {
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/fast-underground-belt/fast-underground-belt-structure.png",
+      priority = "extra-high",
+      width = 192,
+      height = 192,
+      scale = 0.5
+    }
+  },
+  direction_in_side_loading =
+  {
+    sheet =
+    {
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/fast-underground-belt/fast-underground-belt-structure.png",
+      priority = "extra-high",
+      width = 192,
+      height = 192,
+      y = 192 * 3,
+      scale = 0.5
+    }
+  },
+  direction_out_side_loading =
+  {
+    sheet =
+    {
+      filename =
+      "__periodic-madness__/graphics/entities/buildings/fast-underground-belt/fast-underground-belt-structure.png",
+      priority = "extra-high",
+      width = 192,
+      height = 192,
+      y = 192 * 2,
+      scale = 0.5
+    }
+  }
+}
+
+data.raw["transport-belt"]["fast-transport-belt"].map_color = orange_belt
+data.raw["underground-belt"]["fast-underground-belt"].map_color = orange_belt
+data.raw["splitter"]["fast-splitter"].map_color = orange_belt
+data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
+data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 12 --TODO: Confirm this is what you wanted
+--yes, yes it is what i wanted
+data.raw["splitter"]["express-splitter"].speed = 0.125
+data.raw["splitter"]["fast-splitter"].next_upgrade = "pm-advanced-splitter"
+data.raw["transport-belt"]["fast-transport-belt"].next_upgrade = "pm-advanced-transport-belt"
+data.raw["underground-belt"]["fast-underground-belt"].next_upgrade = "pm-advanced-underground-belt"
