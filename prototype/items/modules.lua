@@ -233,7 +233,7 @@ data:extend({
       effect =
       {
         speed = 0.15,
-        efficiency = 0.2,
+        consumption = -0.2,
         pollution = 0.05,
       }
     }, --'efficiency' module but as a coil
