@@ -101,6 +101,7 @@ require("prototype.entity.reactors") -- I hope someday that the entity file will
 require("prototype.entity.heat-pipes")
 require("prototype.entity.beacons")
 require("prototype.entity.logistics")
+require("prototype.entity.inserters")
 
 require("prototype.remnants")
 require("prototype.achievements")
