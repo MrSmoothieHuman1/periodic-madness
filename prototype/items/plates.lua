@@ -52,6 +52,11 @@ data:extend({
     name = "pm-titanium-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/titanium-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/titanium-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/titanium-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-titanium-tm",
     order = "e",
     stack_size = 100
