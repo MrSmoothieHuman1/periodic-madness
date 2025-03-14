@@ -232,8 +232,8 @@ data:extend({
       drop_sound = item_sounds.metal_small_inventory_move,
       effect =
       {
-        speed = 0.15,
-        consumption = -0.2,
+        speed = 0.1,
+        consumption = -0.15,
         pollution = 0.05,
       }
     }, --'efficiency' module but as a coil
