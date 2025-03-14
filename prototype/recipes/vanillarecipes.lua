@@ -267,7 +267,7 @@ data.raw["recipe"]["low-density-structure"].icons =
     icon_size = 64,
   },
   {
-    icon = "_periodic-madness__/graphics/icons/plates/titanium-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/titanium-plate.png",
     scale = 0.42,
   },
 }

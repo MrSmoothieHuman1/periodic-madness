@@ -3787,7 +3787,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "_periodic-madness__/graphics/icons/plates/aluminium-plate.png",
+        icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
         scale = 0.42,
       },
     },
@@ -3816,7 +3816,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "_periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
+        icon = "__periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
         scale = 0.42,
       },
     },
