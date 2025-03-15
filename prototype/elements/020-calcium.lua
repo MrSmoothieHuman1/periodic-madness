@@ -311,6 +311,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-calcium-ore-voiding",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/calcium-ore-voiding.png",
     enabled = false,
     energy_required = 4,
     category = "pm-mixing",
