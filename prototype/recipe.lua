@@ -331,69 +331,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-transition-metal-clearing",
-    icon_size = 64,
-    energy_required = 6.4,
-    icon = "__periodic-madness__/graphics/icons/recipes/transition-metals-cleared.png",
-    subgroup = "pm-tm-tm",
-    order = "a",
-    ingredients = { PM.ingredient("pm-transition-metals-ore", 5) },
-    results =
-    {
-      PM.product_chance("iron-ore", 5, 0.2),
-      PM.product_chance("pm-nickel-ore", 5, 0.2),
-      PM.product_chance("pm-zinc-ore", 5, 0.2),
-      PM.product_chance("copper-ore", 5, 0.2)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-transition-metal-sea-washing",
-    energy_required = 3.2,
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/transition-metals-seawashed.png",
-    category = "crafting-with-fluid",
-    subgroup = "pm-tm-tm",
-    order = "b",
-    ingredients =
-    {
-      PM.ingredient("pm-transition-metals-ore", 10),
-      PM.ingredient("pm-seawater", 50, "fluid"),
-    },
-    results =
-    {
-      PM.product_chance("iron-ore", 5, 0.4),
-      PM.product_chance("pm-nickel-ore", 5, 0.4),
-      PM.product_chance("pm-zinc-ore", 5, 0.4),
-      PM.product_chance("copper-ore", 5, 0.4),
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-transition-metal-washing",
-    energy_required = 3.2,
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/transition-metals-washed.png",
-    category = "crafting-with-fluid",
-    subgroup = "pm-tm-tm",
-    order = "c",
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-transition-metals-ore", 15),
-      PM.ingredient("water", 50, "fluid"),
-    },
-    results =
-    {
-      PM.product_chance("iron-ore", 5, 0.5),
-      PM.product_chance("pm-nickel-ore", 5, 0.5),
-      PM.product_chance("pm-zinc-ore", 5, 0.5),
-      PM.product_chance("copper-ore", 5, 0.5),
-      PM.product_chance("pm-manganese-ore", 5, 0.5),
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-solder",
     energy_required = 3,
     enabled = false,

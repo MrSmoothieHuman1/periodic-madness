@@ -107,6 +107,7 @@ Date: 2024-12-08
     - Removd kasethal from the electric furnace 1 recipe.
     - Changed advanced material processing 2 to be behind multimetal multiproperty technology.
     - Changed electric furnace 2 and heat furnace to be balanced around the change to electric furnaces.
+    - Deleted all TM washing and clearing recipes, for now at least.
 
   Fixes:
     - Fixed the science pack item names captilisation.
