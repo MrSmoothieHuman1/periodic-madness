@@ -128,7 +128,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/water-distillation-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-transition-metal-washing"),
       PM.unlock_recipe("offshore-pump"),
       PM.unlock_recipe("pm-seawater-desaltination"),
       PM.unlock_recipe("pump")
