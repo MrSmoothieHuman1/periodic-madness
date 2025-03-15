@@ -398,6 +398,24 @@ data:extend({
       PM.product_range("pm-calcium-ore", 0, 6),
       PM.product_range("pm-chlorine", 0, 12, "fluid"),
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-sulfate-seperation",
+    enabled = false,
+    category = "pm-mixing",
+    energy_required = 5,
+    main_product = "pm-calcium-chloride",
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-sulfate", 8),
+      PM.ingredient("pm-hydrochloric-acid", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("pm-calcium-chloride", 4, 6),
+      PM.product_range("pm-sulfur-dioxide", 0, 4, "fluid")
+    }
   }
 
 } --[[@as data.RecipePrototype[] ]])

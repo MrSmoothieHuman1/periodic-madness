@@ -1832,6 +1832,7 @@ data:extend({
       PM.unlock_recipe("pm-hydrogen-flouride"),
       PM.unlock_recipe("pm-hydroflouric-acid"),
       PM.unlock_recipe("pm-hydroflouric-acid-filtering"),
+      PM.unlock_recipe("pm-calcium-sulfate-seperation"),
       PM.unlock_recipe("pm-flux-container"),
       PM.unlock_recipe("pm-filled-flux-container"),
       PM.unlock_recipe("pm-fluxed-palladium-nickel-froth-seperation"),
