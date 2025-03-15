@@ -307,6 +307,25 @@ data:extend({
       PM.product_range("stone", 0, 8),
       PM.product_range_chance("pm-calcium-dust", 0, 8, 0.75)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-ore-voiding",
+    enabled = false,
+    energy_required = 4,
+    category = "pm-mixing",
+    subgroup = "pm-calcium-aem",
+    order = "k",
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-ore", 6),
+      PM.ingredient("water", 30, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("water", 25, 30, "fluid"),
+      PM.product_range("pm-seawater", 0, 5, "fluid")
+    }
   }
 
 })
