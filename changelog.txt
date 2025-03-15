@@ -34,6 +34,7 @@ Date: 2024-12-08
     - Added 2 new alternative recipes for LDS, using the 2 other main 'light' metals.
     - Added a way to get certain chemicals from bacteria'ed and cyanobacteria'ed agars, by feeding them another chemical.
     - Added entity descriptions for all heat pipes, displaying their max temperature.
+    - Began modelling plates, and giving different elements different shapes compared to the default square.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
