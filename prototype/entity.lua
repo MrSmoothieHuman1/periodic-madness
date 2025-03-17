@@ -1708,7 +1708,7 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = -2}
     },
-    energy_usage = "500kW",
+    energy_usage = "340kW",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 2,
     circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
