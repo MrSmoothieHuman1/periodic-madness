@@ -620,9 +620,9 @@ data.raw["recipe"]["beacon"].ingredients =
 }
 data.raw["recipe"]["piercing-shotgun-shell"].ingredients = 
 {
-  PM.ingredient("pm-brass-plate", 3),
+  PM.ingredient("pm-brass-plate", 2),
   PM.ingredient("shotgun-shell", 1),
-  PM.ingredient("pm-vulcanised-rubber", 3)
+  PM.ingredient("pm-vulcanised-rubber", 1)
 }
 data.raw["recipe"]["distractor-capsule"].ingredients = 
 {

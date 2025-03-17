@@ -2412,7 +2412,7 @@ data:extend({
       PM.ingredient("pm-phosgene", 10, "fluid"),
       PM.ingredient("piercing-shotgun-shell", 1),
       PM.ingredient("pm-thallium-plate", 6),
-      PM.ingredient("pm-gunpowder", 3),
+      PM.ingredient("pm-gunpowder", 2),
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results =
@@ -2429,8 +2429,8 @@ data:extend({
     energy_required = 2.5,
     ingredients = 
     {
-      PM.ingredient("copper-plate", 4),
-      PM.ingredient("pm-nickel-plate", 2)
+      PM.ingredient("copper-plate", 3),
+      PM.ingredient("pm-gold-plate", 2)
     },
     results = 
     {
@@ -2446,12 +2446,13 @@ data:extend({
     energy_required = 5,
     ingredients = 
     {
-      PM.ingredient("pm-shotgun-slug", 4),
-      PM.ingredient("pm-nickel-plate", 2)
+      PM.ingredient("pm-shotgun-slug", 2),
+      PM.ingredient("pm-nickel-plate", 4),
+      PM.ingredient("pm-vulcanised-rubber", 2)
     },
     results = 
     {
-      PM.product("pm-heavy-piercing-shotgun-slug", 1)
+      PM.product("pm-heavy-piercing-shotgun-slug", 2)
     }
   },
   {
@@ -2464,8 +2465,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-heavy-piercing-shotgun-slug", 1),
-      PM.ingredient("pm-lead-plate", 4),
-      PM.ingredient("pm-tungsten-plate", 8),
+      PM.ingredient("pm-lead-plate", 2),
+      PM.ingredient("pm-tungsten-plate", 6),
       PM.ingredient("pm-gunpowder", 4),
       PM.ingredient("pm-polyethylene-plastic", 4)
     },
