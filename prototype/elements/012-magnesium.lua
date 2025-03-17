@@ -50,12 +50,12 @@ data:extend({
         subgroup = "pm-magnesium-aem",
         order = "a",
         allow_productivity = true,
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-alkaline-earth-metals-ore", 16),
             PM.ingredient("pm-chromic-acid", 25, "fluid")
         },
-        results = 
+        results =
         {
             PM.product_range("pm-dolomite", 4, 10)
         }
@@ -69,16 +69,16 @@ data:extend({
         subgroup = "pm-magnesium-aem",
         order = "b",
         main_product = "pm-magnesium-hydroxide",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-seawater", 200, "fluid"),
             PM.ingredient("pm-lithium-hydroxide", 50, "fluid"),
             PM.ingredient("pm-dolomite", 8)
         },
-        results = 
+        results =
         {
-            PM.product("pm-magnesium-hydroxide", 20, "fluid"),
-            PM.product_range_chance("pm-calcium-hydroxide-slurry", 2, 10, 0.75, "fluid"),
+            PM.product_range("pm-magnesium-hydroxide", 20, 24, "fluid"),
+            PM.product_range_chance("pm-calcium-hydroxide-slurry", 2, 10, 0.65, "fluid"),
             PM.product_range("pm-calcite", 0, 6)
         }
     },
@@ -86,21 +86,21 @@ data:extend({
         type = "recipe",
         name = "pm-magnesium-oxide",
         enabled = false,
-        energy_required = 8,
+        energy_required = 5,
         category = "pm-electrolysis",
         subgroup = "pm-magnesium-aem",
         order = "c",
         allow_productivity = true,
         main_product = "pm-magnesium-oxide",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-magnesium-hydroxide", 10, "fluid"),
             PM.ingredient("pm-calcium-ore", 10),
             PM.ingredient("pm-carbon-dioxide-gas", 25, "fluid")
         },
-        results = 
+        results =
         {
-            PM.product_range("pm-magnesium-oxide", 4, 6),
+            PM.product("pm-magnesium-oxide", 4),
             PM.product_range("pm-carbon-trioxide", 16, 20, "fluid")
         }
     },
@@ -113,12 +113,12 @@ data:extend({
         subgroup = "pm-magnesium-aem",
         order = "d",
         main_product = "pm-magnesium-ore",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-magnesium-oxide", 4),
             PM.ingredient("pm-stainless-steel-alloy", 12),
         },
-        results = 
+        results =
         {
             PM.product_range("pm-magnesium-ore", 4, 6),
             PM.product_chance("pm-ferrum", 5, 0.85),
@@ -134,13 +134,13 @@ data:extend({
         subgroup = "pm-magnesium-aem",
         order = "da",
         main_product = "pm-magnesium-ore",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-magnesium-oxide", 4),
             PM.ingredient("pm-industrial-grade-silicon-ore", 4),
             PM.ingredient("iron-plate", 2)
         },
-        results = 
+        results =
         {
             PM.product_range("pm-magnesium-ore", 4, 8),
             PM.product_range_chance("pm-calcium-silicate", 4, 6, 0.85),
@@ -155,12 +155,12 @@ data:extend({
         subgroup = "pm-magnesium-aem",
         order = "e",
         main_product = "pm-ferrosilicon",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-sodium-sulfite", 6),
-            PM.ingredient("pm-calcium-silicate", 8)
+            PM.ingredient("pm-calcium-silicate", 12)
         },
-        results = 
+        results =
         {
             PM.product_range_chance("pm-ferrosilicon", 1, 4, 0.5),
             PM.product_range_chance("pm-calcite", 2, 5, 0.66)
