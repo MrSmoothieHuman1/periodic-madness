@@ -165,6 +165,12 @@ data:extend({
     name = "pm-beryllium-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/beryllium-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/beryllium-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/beryllium-plate-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/beryllium-plate-3.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-beryllium-aem",
     order = "f",
     stack_size = 100
@@ -184,7 +190,7 @@ data:extend({
     name = "pm-stainless-steel-alloy",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
-    pictures = 
+    pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate-2.png", size = 64, scale = 0.5},
@@ -207,6 +213,11 @@ data:extend({
     name = "pm-kasethal-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/kasethal-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-alloys",
     order = "d",
     stack_size = 100

@@ -46,7 +46,7 @@ data:extend({
     {
       {
         icon = "__periodic-madness__/graphics/icons/fluids/oxygen-gas.png",
-        icon_size = 128,
+        icon_size = 64,
         scale = 0.4
       },
       {
