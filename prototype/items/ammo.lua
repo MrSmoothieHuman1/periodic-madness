@@ -236,7 +236,7 @@ data:extend({
   magazine_size = 6,
   subgroup = "pm-shotgun-ammo",
   order = "aa",
-  stack_size = 100
+  stack_size = 50
 },
 {
   type = "ammo",
@@ -283,7 +283,7 @@ data:extend({
   magazine_size = 6,
   subgroup = "pm-shotgun-ammo",
   order = "ba",
-  stack_size = 100
+  stack_size = 50
 },
 {
   type = "ammo",
@@ -330,7 +330,7 @@ data:extend({
   magazine_size = 6,
   subgroup = "pm-shotgun-ammo",
   order = "ca",
-  stack_size = 100
+  stack_size = 50
 },
 {
   type = "ammo",
@@ -377,7 +377,7 @@ data:extend({
   magazine_size = 8,
   subgroup = "pm-shotgun-ammo",
   order = "da",
-  stack_size = 150
+  stack_size = 100
 },
 
 {

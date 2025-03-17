@@ -110,6 +110,9 @@ Date: 2024-12-08
     - Changed advanced material processing 2 to be behind multimetal multiproperty technology.
     - Changed electric furnace 2 and heat furnace to be balanced around the change to electric furnaces.
     - Deleted all TM washing and clearing recipes, for now at least.
+    - Changed basic slugs to use gold instead of nickel.
+    - Changed piercing slugs to give 2 per craft.
+    - Changed slugs to have 50 stack size.
 
   Fixes:
     - Fixed the science pack item names captilisation.
