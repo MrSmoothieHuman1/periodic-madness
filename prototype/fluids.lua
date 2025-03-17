@@ -1744,7 +1744,7 @@ data:extend({
     type = "fluid",
     name = "pm-mixed-molten-iron",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-molten-iron.png",
     subgroup = "pm-advanced-iron-tm",
     order = "b",
     default_temperature = 15,
