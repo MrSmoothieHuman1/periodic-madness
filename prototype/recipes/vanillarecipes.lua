@@ -722,9 +722,9 @@ data.raw["recipe"]["concrete"].energy_required = 2.5
 data.raw["recipe"]["concrete"].category = "crafting-with-fluid"
 data.raw["recipe"]["concrete"].ingredients = 
 {
-  PM.ingredient("pm-concrete-slurry", 10, "fluid"),
+  PM.ingredient("pm-concrete-slurry", 15, "fluid"),
   PM.ingredient("pm-heavyweight-framing", 5),
-  PM.ingredient("pm-sand", 6)
+  PM.ingredient("pm-sand", 5)
 }
 data.raw["recipe"]["concrete"].results = 
 {
@@ -734,9 +734,9 @@ data.raw["recipe"]["refined-concrete"].energy_required = 5
 data.raw["recipe"]["refined-concrete"].category = "crafting-with-fluid"
 data.raw["recipe"]["refined-concrete"].ingredients = 
 {
-  PM.ingredient("pm-concrete-slurry", 15, "fluid"),
+  PM.ingredient("pm-concrete-slurry", 10, "fluid"),
   PM.ingredient("pm-heavyweight-framing", 5),
-  PM.ingredient("pm-stainless-steel-alloy", 5),
+  PM.ingredient("pm-stainless-steel-alloy", 4),
   PM.ingredient("pm-sand", 8)
 }
 data.raw["recipe"]["refined-concrete"].results = 
