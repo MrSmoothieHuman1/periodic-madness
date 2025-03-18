@@ -1793,7 +1793,7 @@ data:extend({
       usage_priority = "secondary-input",
 
     },
-    energy_usage = "275kW",
+    energy_usage = "250kW",
     graphics_set = 
   {
     animation =

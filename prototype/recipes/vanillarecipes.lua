@@ -746,7 +746,7 @@ data.raw["recipe"]["refined-concrete"].results =
 data.raw["recipe"]["hazard-concrete"].ingredients = 
 {
   PM.ingredient("concrete", 5),
-  PM.ingredient("pm-cadnium-sulfate", 5)
+  PM.ingredient("pm-cadnium-sulfate", 3)
 }
 data.raw["recipe"]["hazard-concrete"].results = 
 {
@@ -755,7 +755,7 @@ data.raw["recipe"]["hazard-concrete"].results =
 data.raw["recipe"]["refined-hazard-concrete"].ingredients = 
 {
   PM.ingredient("refined-concrete", 5),
-  PM.ingredient("pm-cadnium-sulfate", 5)
+  PM.ingredient("pm-cadnium-sulfate", 3)
 }
 data.raw["recipe"]["refined-hazard-concrete"].results = 
 {
