@@ -5823,7 +5823,7 @@ data:extend({
     },
     crafting_categories = {"pm-evaporation"},
     crafting_speed = 1.25,
-    energy_usage = "350kW",
+    energy_usage = "200kW",
     energy_source =
     {
       type = "electric",
