@@ -3875,6 +3875,43 @@ data:extend({
       PM.product("pm-kasethal-heating-coil", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-calcium-sulfate-concrete",
+    energy_required = 2.5,
+    enabled = false,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("pm-concrete-slurry", 10, "fluid"),
+      PM.ingredient("pm-heavyweight-framing", 8),
+      PM.ingredient("pm-calcium-sulfate", 4),
+      PM.ingredient("pm-sand", 6)
+    },
+    results = 
+    {
+      PM.product("concrete", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-calcium-sulfate-concrete",
+    energy_required = 5,
+    enabled = false,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("pm-concrete-slurry", 20, "fluid"),
+      PM.ingredient("pm-heavyweight-framing", 8),
+      PM.ingredient("pm-stainless-steel-alloy", 6),
+      PM.ingredient("pm-calcium-sulfate", 4),
+      PM.ingredient("pm-sand", 10)
+    },
+    results = 
+    {
+      PM.product("refined-concrete", 5)
+    }
+  },
 
 --MARK: Plastic Science
   {
