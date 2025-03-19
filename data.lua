@@ -102,6 +102,7 @@ require("prototype.entity.heat-pipes")
 require("prototype.entity.beacons")
 require("prototype.entity.logistics")
 require("prototype.entity.inserters")
+require("prototype.entity.pipes")
 
 require("prototype.remnants")
 require("prototype.achievements")
