@@ -925,7 +925,7 @@ data:extend({
     },
     burning_cooldown = 20,
     water_reflection = boiler_reflection()
-  }--[[@as data.BoilerPrototype]]
+  }--[[@as data.BoilerPrototype]];
   {
     type = "assembling-machine",
     name = "pm-vacuum-former-1",
