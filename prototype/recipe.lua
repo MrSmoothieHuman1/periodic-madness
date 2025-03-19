@@ -3348,7 +3348,7 @@ data:extend({
     order = "a",
     allow_productivity = true,
     show_amount_in_title = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-germanium-ore", 2),
       PM.ingredient("pm-glass-fibers", 3),
@@ -3369,7 +3369,7 @@ data:extend({
     order = "b",
     allow_productivity = true,
     show_amount_in_title = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-etched-silicon-wafer", 1),
       PM.ingredient("pm-tin-plate", 4),
