@@ -495,7 +495,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-manganese.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-manganese.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
@@ -939,7 +939,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-cobalt.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-cobalt.png",
         icon_size = 64,
         scale = 0.2,
         shift = { 0, 1.5 }
