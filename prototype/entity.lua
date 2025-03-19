@@ -8529,7 +8529,7 @@ fluid_boxes =
   crafting_categories = { "pm-mixing" },
   module_slots = 4,
   allowed_effects = PM.all_effects(),
-  crafting_speed = 1.25,
+  crafting_speed = 1.5,
   energy_source =
   {
     type = "electric",
@@ -8537,7 +8537,7 @@ fluid_boxes =
     emissions_per_minute = {pollution = 4}
   },
   energy_usage = "475kW",
-  graphics_set = 
+  graphics_set =
 {
   animation =
   {
