@@ -691,6 +691,11 @@ function PM.compat_send(recipient, msg, print_settings)
     send_level = send_level,
     color = print_settings.color,
     recipient = send_index,
+    clear = false,
+
+    sound = print_settings.sound,
+    sound_path = print_settings.sound_path,
+    volume_modifier = print_settings.volume_modifier
   })
 end
 
