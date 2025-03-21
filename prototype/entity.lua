@@ -8317,3 +8317,4 @@ data.raw["furnace"]["electric-furnace"].icons_positioning =
 data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
 data.raw["furnace"]["electric-furnace"].energy_source.drain = "0kW"
+
