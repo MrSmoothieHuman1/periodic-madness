@@ -6,16 +6,16 @@ data:extend({
     {
         type = "recipe",
         name = "pm-electric-steam",
-        energy_required = 5,
-        enabled = false,
+        energy_required = 1,
+        enabled = true,
         hidden = true,
         hidden_in_factoriopedia = true,
         category = "pm-steamed-hams",
-        ingredients = 
+        ingredients =
         {
-          PM.ingredient("water", 6, "fluid")
+          PM.ingredient("water", 6, "fluid"),
         },
-        results = 
+        results =
         {
           PM.product("steam", 60, "fluid")
         }
