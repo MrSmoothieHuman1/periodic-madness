@@ -7848,6 +7848,7 @@ fluid_boxes =
   {
     type = "electric",
     emissions_per_minute = {pollution = 5},
+    usage_priority = "secondary-input",
   },
   working_sound =
   {
@@ -7977,7 +7978,7 @@ fluid_boxes =
     }
   },
   water_reflection = boiler_reflection()
-}--[[@as data.AssemblingMachinePrototype]];
+}--[[@as data.FurnacePrototype]];
 }--[[@as data.EntityPrototype[] ]])
 
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
