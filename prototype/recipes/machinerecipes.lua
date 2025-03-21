@@ -1352,6 +1352,23 @@ data:extend({
       PM.product("pm-proximity-beacon", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-electric-boiler-1",
+    enabled = false,
+    energy_required = 6,
+    ingredients = 
+    {
+      PM.ingredient("pm-fluid-circuit", 4),
+      PM.ingredient("electric-engine-unit", 1),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("pm-heating-plating", 8)
+    },
+    results = 
+    {
+      PM.product("pm-electric-boiler-1", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

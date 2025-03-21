@@ -1,0 +1,23 @@
+-- i will probably never have a use for this file apart from one, maybe two recipes - but it felt weird putting the recipes in the normal recipe file
+
+local PM = require("library")
+data:extend({
+
+    {
+        type = "recipe",
+        name = "pm-electric-steam",
+        energy_required = 5,
+        enabled = false,
+        hidden = true,
+        hidden_in_factoriopedia = true,
+        category = "pm-steamed-hams",
+        ingredients = 
+        {
+          PM.ingredient("water", 6, "fluid")
+        },
+        results = 
+        {
+          PM.product("steam", 60, "fluid")
+        }
+      },
+})

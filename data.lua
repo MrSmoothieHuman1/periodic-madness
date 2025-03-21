@@ -38,6 +38,7 @@ require("prototype.recipes.building-recipes.inatorrecipes")
 require("prototype.recipes.building-recipes.evaporationrecipes")
 require("prototype.recipes.biologicalrecipes")
 require("prototype.recipes.building-recipes.crystallisationrecipes")
+require("prototype.recipes.building-recipes.boilerrecipes")
 
 require("prototype.elements.042-molybdenum")
 require("prototype.elements.047-silver")

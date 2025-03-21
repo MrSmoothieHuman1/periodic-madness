@@ -36,6 +36,7 @@ Date: 2024-12-08
     - Added entity descriptions for all heat pipes, displaying their max temperature.
     - Began modelling plates, and giving different elements different shapes compared to the default square.
     - Added a way to void calcium ore/dust/calcite.
+    - FINALLY added electric boilers, so you dont need fuel everywhere when needing steam. (or just.. make steam trains, you nerds)
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
