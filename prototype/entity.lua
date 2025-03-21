@@ -7871,53 +7871,47 @@ fluid_boxes =
     {
       north =
       {
-        structure =
+        layers =
         {
-          layers =
           {
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
-              priority = "extra-high",
-              width = 269,
-              height = 221,
-              shift = util.by_pixel(-1.25, 5.25),
-              scale = 0.5
-            },
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
-              priority = "extra-high",
-              width = 274,
-              height = 164,
-              scale = 0.5,
-              shift = util.by_pixel(20.5, 9),
-              draw_as_shadow = true
-            }
-          }
-        },
+            filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+            priority = "extra-high",
+            width = 269,
+            height = 221,
+            shift = util.by_pixel(-1.25, 5.25),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+            priority = "extra-high",
+            width = 274,
+            height = 164,
+            scale = 0.5,
+            shift = util.by_pixel(20.5, 9),
+            draw_as_shadow = true
+          },
+        }
       },
       east =
       {
-        structure =
+        layers =
         {
-          layers =
           {
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
-              priority = "extra-high",
-              width = 216,
-              height = 301,
-              shift = util.by_pixel(-3, 1.25),
-              scale = 0.5
-            },
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
-              priority = "extra-high",
-              width = 184,
-              height = 194,
-              scale = 0.5,
-              shift = util.by_pixel(30, 9.5),
-              draw_as_shadow = true
-            }
+            filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
+            priority = "extra-high",
+            width = 216,
+            height = 301,
+            shift = util.by_pixel(-3, 1.25),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
+            priority = "extra-high",
+            width = 184,
+            height = 194,
+            scale = 0.5,
+            shift = util.by_pixel(30, 9.5),
+            draw_as_shadow = true
           }
         },
         patch =
@@ -7931,56 +7925,50 @@ fluid_boxes =
       },
       south =
       {
-        structure =
+        layers =
         {
-          layers =
           {
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
-              priority = "extra-high",
-              width = 260,
-              height = 192,
-              shift = util.by_pixel(4, 13),
-              scale = 0.5
-            },
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
-              priority = "extra-high",
-              width = 311,
-              height = 131,
-              scale = 0.5,
-              shift = util.by_pixel(29.75, 15.75),
-              draw_as_shadow = true
-            }
+            filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
+            priority = "extra-high",
+            width = 260,
+            height = 192,
+            shift = util.by_pixel(4, 13),
+            scale = 0.5
           },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
+            priority = "extra-high",
+            width = 311,
+            height = 131,
+            scale = 0.5,
+            shift = util.by_pixel(29.75, 15.75),
+            draw_as_shadow = true
+          }
         },
       },
       west =
       {
-        structure =
+        layers =
         {
-          layers =
           {
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
-              priority = "extra-high",
-              width = 196,
-              height = 273,
-              shift = util.by_pixel(1.5, 7.75),
-              scale = 0.5
-            },
-            {
-              filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
-              priority = "extra-high",
-              width = 206,
-              height = 218,
-              scale = 0.5,
-              shift = util.by_pixel(19.5, 6.5),
-              draw_as_shadow = true
-            }
+            filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
+            priority = "extra-high",
+            width = 196,
+            height = 273,
+            shift = util.by_pixel(1.5, 7.75),
+            scale = 0.5
           },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
+            priority = "extra-high",
+            width = 206,
+            height = 218,
+            scale = 0.5,
+            shift = util.by_pixel(19.5, 6.5),
+            draw_as_shadow = true
+          }
         },
-      }
+      },
     },
   },
   water_reflection = boiler_reflection()
