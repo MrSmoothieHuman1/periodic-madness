@@ -73,7 +73,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-alkaline-earth-metals-ore", 20),
-            PM.ingredient("pm-chromic-acid", 20, "fluid"),
+            PM.ingredient("pm-chromic-acid", 25, "fluid"),
         },
         results = 
         {
