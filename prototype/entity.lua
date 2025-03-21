@@ -7803,6 +7803,9 @@ fluid_boxes =
   crafting_categories = {"pm-steamed-hams"},
   crafting_speed = 1,
   module_slots = 1,
+  source_inventory_size = 0,
+  result_inventory_size = 0,
+  allowed_effects = PM.all_effects(),
   resistances =
   {
     {
