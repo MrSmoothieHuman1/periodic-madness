@@ -7790,6 +7790,194 @@ fluid_boxes =
   },
 },
 }--[[@as data.AssemblingMachinePrototype]],
+{
+  type = "assembling-machine",
+  name = "pm-electric-boiler-1",
+  icon = "__periodic-madness__/graphics/icons/buildings/dirty-boiler.png",
+  icon_size = 64,
+  flags = { "placeable-neutral", "player-creation" },
+  minable = { mining_time = 0.4, result = "pm-electric-boiler-1" },
+  max_health = 200,
+  corpse = "boiler-remnants",
+  dying_explosion = "boiler-explosion",
+  crafting_categories = {"pm-steamed-hams"},
+  crafting_speed = 1,
+  module_slots = 1,
+  resistances =
+  {
+    {
+      type = "fire",
+      percent = 50
+    },
+    {
+      type = "explosion",
+      percent = 10
+    },
+    {
+      type = "impact",
+      percent = 10
+    }
+  },
+  collision_box = { { -1.29, -0.79 }, { 1.29, 0.79 } },
+  selection_box = { { -1.5, -1 }, { 1.5, 1 } },
+  fluid_box =
+  {
+    {
+      volume = 500,
+      pipe_covers = pipecoverspictures(),
+      pipe_connections =
+      {
+        {flow_direction = "input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0.5}},
+        {flow_direction = "input-output", direction = defines.direction.east--[[@as int]], position = {1, 0.5}}
+      },
+      production_type = "input",
+    },
+    {
+      volume = 500,
+      pipe_covers = pipecoverspictures(),
+      pipe_connections =
+      {
+        {flow_direction = "output", direction = defines.direction.north--[[@as int]], position = {0, -0.5}}
+      },
+      production_type = "output",
+      filter = "steam"
+    }
+  },
+  energy_usage = "2.8MW",
+  energy_source =
+  {
+    type = "electric",
+    emissions_per_minute = {pollution = 5},
+  },
+  working_sound =
+  {
+    sound =
+    {
+      filename = "__base__/sound/boiler.ogg",
+      volume = 0.7
+    },
+    --max_sounds_per_type = 3,
+    audible_distance_modifier = 0.3,
+    fade_in_ticks = 4,
+    fade_out_ticks = 20
+  },
+  pictures =
+  {
+    north =
+    {
+      structure =
+      {
+        layers =
+        {
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+            priority = "extra-high",
+            width = 269,
+            height = 221,
+            shift = util.by_pixel(-1.25, 5.25),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+            priority = "extra-high",
+            width = 274,
+            height = 164,
+            scale = 0.5,
+            shift = util.by_pixel(20.5, 9),
+            draw_as_shadow = true
+          }
+        }
+      },
+    },
+    east =
+    {
+      structure =
+      {
+        layers =
+        {
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
+            priority = "extra-high",
+            width = 216,
+            height = 301,
+            shift = util.by_pixel(-3, 1.25),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
+            priority = "extra-high",
+            width = 184,
+            height = 194,
+            scale = 0.5,
+            shift = util.by_pixel(30, 9.5),
+            draw_as_shadow = true
+          }
+        }
+      },
+      patch =
+      {
+        filename = "__base__/graphics/entity/boiler/boiler-E-patch.png",
+        width = 6,
+        height = 36,
+        shift = util.by_pixel(33.5, -13.5),
+        scale = 0.5
+      },
+    },
+    south =
+    {
+      structure =
+      {
+        layers =
+        {
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
+            priority = "extra-high",
+            width = 260,
+            height = 192,
+            shift = util.by_pixel(4, 13),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
+            priority = "extra-high",
+            width = 311,
+            height = 131,
+            scale = 0.5,
+            shift = util.by_pixel(29.75, 15.75),
+            draw_as_shadow = true
+          }
+        },
+      },
+    },
+    west =
+    {
+      structure =
+      {
+        layers =
+        {
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
+            priority = "extra-high",
+            width = 196,
+            height = 273,
+            shift = util.by_pixel(1.5, 7.75),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
+            priority = "extra-high",
+            width = 206,
+            height = 218,
+            scale = 0.5,
+            shift = util.by_pixel(19.5, 6.5),
+            draw_as_shadow = true
+          }
+        },
+      },
+    }
+  },
+  water_reflection = boiler_reflection()
+}--[[@as data.AssemblingMachinePrototype]];
 }--[[@as data.EntityPrototype[] ]])
 
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
