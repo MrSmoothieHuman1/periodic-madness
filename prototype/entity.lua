@@ -7846,12 +7846,13 @@ fluid_boxes =
       filter = "steam"
     }
   },
-  energy_usage = "2.8MW",
+  energy_usage = "2.6MW", -- (1.8MW * 1.5) - 100kW, to account for drain
   energy_source =
   {
     type = "electric",
     emissions_per_minute = {pollution = 5},
     usage_priority = "secondary-input",
+    drain = "100kW"
   },
   working_sound =
   {
