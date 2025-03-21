@@ -7791,7 +7791,7 @@ fluid_boxes =
 },
 }--[[@as data.AssemblingMachinePrototype]],
 {
-  type = "assembling-machine",
+  type = "furnace",
   name = "pm-electric-boiler-1",
   icon = "__periodic-madness__/graphics/icons/buildings/dirty-boiler.png",
   icon_size = 64,
