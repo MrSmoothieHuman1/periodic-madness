@@ -7803,8 +7803,8 @@ fluid_boxes =
   crafting_categories = {"pm-steamed-hams"},
   crafting_speed = 1,
   module_slots = 1,
-  source_inventory_size = 0,
-  result_inventory_size = 0,
+  source_inventory_size = 1,
+  result_inventory_size = 1,
   allowed_effects = PM.all_effects(),
   resistances =
   {
@@ -7823,7 +7823,7 @@ fluid_boxes =
   },
   collision_box = { { -1.29, -0.79 }, { 1.29, 0.79 } },
   selection_box = { { -1.5, -1 }, { 1.5, 1 } },
-  fluid_box =
+  fluid_boxes =
   {
     {
       volume = 500,
@@ -7865,7 +7865,7 @@ fluid_boxes =
     fade_in_ticks = 4,
     fade_out_ticks = 20
   },
-  pictures =
+  graphics_set =
   {
     north =
     {
