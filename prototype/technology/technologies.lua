@@ -4525,7 +4525,7 @@ data:extend({
     }
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-octane-fuel-canisters",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
@@ -4583,6 +4583,28 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1}
+      },
+      time = 45
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-electric-boiler",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png"
+    effects = 
+    {
+      PM.unlock_recipe("pm-electric-boiler-1")
+    },
+    prerequisites = {"electric-engine-unit"},
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
       },
       time = 45
     }
