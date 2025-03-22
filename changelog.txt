@@ -128,7 +128,7 @@ Date: 2024-12-08
     - Changed byproduct handling to be unlockable from ezekiel processing, and not transition metal leeching.
     - Added the heavy lubricant recipe of solar cells to lubricant technology.
     - Fixed ezekiel ore leeching to actually give the correct amount of ore. This hurts you more then it hurts me, i assure you.
-    - Fixed the catefory tabs not using up the amount of space they have.
+    - Fixed the category tabs not using up the amount of space they have.
     - Fixed molten metal capatalisation.
     - Revamped all ammo recipes, to be cheaper and just better.
     - Made the health bio-upgrade's description be more relevant.
