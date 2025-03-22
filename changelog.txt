@@ -131,6 +131,7 @@ Date: 2024-12-08
     - Fixed the catefory tabs not using up the amount of space they have.
     - Fixed molten metal capatalisation.
     - Revamped all ammo recipes, to be cheaper and just better.
+    - Made the health bio-upgrade's description be more relevant.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.150
