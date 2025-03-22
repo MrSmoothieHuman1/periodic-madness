@@ -11,6 +11,7 @@ data:extend({
         hidden = true,
         hidden_in_factoriopedia = true,
         category = "pm-steamed-hams",
+        allow_productivity = true,
         ingredients =
         {
           PM.ingredient("water", 6, "fluid"),
