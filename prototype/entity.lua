@@ -7990,6 +7990,7 @@ fluid_boxes =
   source_inventory_size = 0,
   result_inventory_size = 0,
   allowed_effects = PM.all_effects(),
+  allowed_module_categories = {"speed", "productivity"},
   resistances =
   {
     {
