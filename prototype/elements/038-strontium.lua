@@ -46,6 +46,7 @@ data:extend({
         category = "pm-acids",
         subgroup = "pm-strontium-aem",
         order = "a",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-alkaline-earth-metals-ore", 20),
@@ -64,16 +65,18 @@ data:extend({
         category = "pm-mixing",
         subgroup = "pm-strontium-aem",
         order = "b",
+        main_product = "pm-strontium-black-ash",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-celestine", 6),
-            PM.ingredient("pm-sodium-hydroxide", 10 ,"fluid")
+            PM.ingredient("pm-sodium-hydroxide", 10, "fluid")
         },
         results =
         {
             PM.product_range("pm-strontium-black-ash", 4, 12),
             PM.product_range_chance("pm-celestine", 0, 4, 0.45),
-            PM.product_range_chance("pm-sodium-hydroxide", 0, 5, 0.45, "fluid"),
+            PM.catalyst_range_chance("pm-sodium-hydroxide", 0, 5, 0.45, 2.5, "fluid"),
         }
     },
     {
@@ -106,6 +109,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-strontium-aem",
         order = "d",
+        main_product = "pm-strontium-sulfide",
         ingredients =
         {
             PM.ingredient("pm-strontium-sulfide-solution", 5, "fluid"),
@@ -126,6 +130,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-strontium-aem",
         order = "f",
+        main_product = "pm-strontium-carbonate",
         ingredients =
         {
             PM.ingredient("pm-strontium-sulfide", 3),
@@ -145,6 +150,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-strontium-aem",
         order = "e",
+        main_product = "pm-strontium-ore",
         ingredients = 
         {
             PM.ingredient("pm-strontium-carbonate", 2),
