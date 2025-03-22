@@ -727,6 +727,16 @@ data:extend({
     place_result = "pm-electric-boiler-1",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-electric-boiler-2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/dirty-boiler.png",
+    subgroup = "energy",
+    order = "b[steam-power]-a[boiler]",
+    place_result = "pm-electric-boiler-2",
+    stack_size = 20
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

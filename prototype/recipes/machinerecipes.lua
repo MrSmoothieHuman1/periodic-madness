@@ -1368,7 +1368,25 @@ data:extend({
     {
       PM.product("pm-electric-boiler-1", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-electric-boiler-2",
+    enabled = false,
+    energy_required = 6,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("pm-electric-boiler-1", 1),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-silicone", 2, "fluid"),
+      PM.ingredient("pm-heating-framing", 8)
+    },
+    results = 
+    {
+      PM.product("pm-electric-boiler-2", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

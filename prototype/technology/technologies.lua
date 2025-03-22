@@ -4609,6 +4609,30 @@ data:extend({
       time = 45
     }
   },
+  {
+    type = "technology",
+    name = "pm-electric-boiler-2",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-electric-boiler-2")
+    },
+    prerequisites = {"pm-electric-boiler-1", "pm-silicone-processing"},
+    unit =
+    {
+      count = 425,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    }
+  },
 
   {
     type = "technology",
