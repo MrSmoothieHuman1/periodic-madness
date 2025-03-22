@@ -14,14 +14,14 @@ data:extend({
         type = "item",
         name = "pm-strontium-black-ash",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/strontium-black-ash.png",
         subgroup = "pm-strontium-aem",
         order = "b",
         stack_size = 250
     },
     {
         type = "item",
-        name = "pm-sodium-sulfide",
+        name = "pm-strontium-sulfide",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-strontium-aem",
@@ -30,7 +30,7 @@ data:extend({
     },
     {
         type = "item",
-        name = "pm-sodium-carbonate",
+        name = "pm-strontium-carbonate",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-strontium-aem",
