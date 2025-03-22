@@ -115,7 +115,7 @@ data:extend({
         {
             PM.product_chance("pm-strontium-sulfide", 3, 0.75),
             PM.product_chance("pm-strontium-carbonate", 1, 0.25),
-            PM.product_range("pm-oarbon-monoxide", 10, 30, "fluid"),
+            PM.product_range("pm-carbon-monoxide", 10, 30, "fluid"),
         }
     },
     {
@@ -128,8 +128,33 @@ data:extend({
         order = "f",
         ingredients =
         {
-            PM.ingredient("pm-strontium-carbonate", 3),
-            PM.ingredient("pm")
+            PM.ingredient("pm-strontium-sulfide", 3),
+            PM.ingredient("pm-carbon", 10)
+        },
+        results = 
+        {
+            PM.product("pm-strontium-carbonate", 2),
+            PM.product_range("pm-carbon-dioxide-gas", 5, 12, "fluid")
         }
     },
+    {
+        type = "recipe",
+        name = "pm-strontium-ore",
+        enabled = false,
+        energy_required = 5,
+        category = "chemistry",
+        subgroup = "pm-strontium-aem",
+        order = "e",
+        ingredients = 
+        {
+            PM.ingredient("pm-strontium-carbonate", 2),
+            PM.ingredient("pm-aluminium-plate", 5) --catalyst for hard mode
+        },
+        results = 
+        {
+            PM.product_range("pm-strontium-ore", 1, 4),
+            PM.product_range_chance("pm-bauxite", 0, 3, 0.55),
+            PM.product_range_chance("pm-patina", 0, 2, 0.45),
+        }
+    }
 })
