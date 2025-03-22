@@ -1379,8 +1379,8 @@ data:extend({
     {
       PM.ingredient("pm-electric-boiler-1", 1),
       PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-silicone", 2, "fluid"),
-      PM.ingredient("pm-heating-framing", 8)
+      PM.ingredient("pm-liquid-silicone", 2, "fluid"),
+      PM.ingredient("pm-molten-framing", 8)
     },
     results = 
     {

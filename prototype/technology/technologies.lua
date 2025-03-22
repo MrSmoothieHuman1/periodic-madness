@@ -4618,7 +4618,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-electric-boiler-2")
     },
-    prerequisites = {"pm-electric-boiler-1", "pm-silicone-processing"},
+    prerequisites = {"pm-electric-boiler", "pm-silicone-processing"},
     unit =
     {
       count = 425,
