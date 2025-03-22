@@ -61,7 +61,7 @@ data:extend({
       PM.product_range_chance("pm-bismuth-ore", 8, 14, 0.8),
       PM.product_range_chance("pm-bismuth-210", 2, 10, 0.6)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-polonium-210",
@@ -81,7 +81,7 @@ data:extend({
     {
       PM.product_range_chance("pm-polonium-210", 2, 4, 0.75),
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-polonium-fuel-cell",
