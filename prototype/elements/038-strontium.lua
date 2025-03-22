@@ -136,7 +136,7 @@ data:extend({
             PM.ingredient("pm-strontium-sulfide", 3),
             PM.ingredient("pm-carbon", 10)
         },
-        results = 
+        results =
         {
             PM.product("pm-strontium-carbonate", 2),
             PM.product_range("pm-carbon-dioxide-gas", 5, 12, "fluid")
@@ -151,12 +151,12 @@ data:extend({
         subgroup = "pm-strontium-aem",
         order = "e",
         main_product = "pm-strontium-ore",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-strontium-carbonate", 2),
             PM.ingredient("pm-aluminium-plate", 5) --catalyst for hard mode
         },
-        results = 
+        results =
         {
             PM.product_range("pm-strontium-ore", 1, 4),
             PM.product_range_chance("pm-bauxite", 0, 3, 0.55),
