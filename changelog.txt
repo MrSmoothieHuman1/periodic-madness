@@ -114,6 +114,7 @@ Date: 2024-12-08
     - Changed basic slugs to use gold instead of nickel.
     - Changed piercing slugs to give 2 per craft.
     - Changed slugs to have 50 stack size.
+    - Lowered the amount of bismuth needed for Polonium Sassxolotl enrichment from 5 to 2, and increased the amount you can get to 1-4.
 
   Fixes:
     - Fixed the science pack item names captilisation.
