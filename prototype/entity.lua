@@ -7809,7 +7809,7 @@ fluid_boxes =
   allowed_module_categories = {"speed", "productivity"},
   effect_recievers =
   {
-    use_beacon_effects = false,
+    uses_beacon_effects = false,
   },
   resistances =
   {
@@ -7998,7 +7998,7 @@ fluid_boxes =
   allowed_module_categories = {"speed", "productivity"},
   effect_recievers =
   {
-    use_beacon_effects = false,
+    uses_beacon_effects = false,
   },
   resistances =
   {
