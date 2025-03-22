@@ -136,13 +136,13 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-polonium-210", 20),
-      PM.ingredient("pm-bismuth-210", 5),
+      PM.ingredient("pm-bismuth-210", 2),
       PM.ingredient("pm-trace-astatine-211", 2)
     },
     results = 
     {
       PM.catalyst("pm-polonium-210", 22, 20),
-      PM.product_range_chance("pm-bismuth-210", 1, 3, 0.85),
+      PM.product_range_chance("pm-bismuth-210", 1, 4, 0.85),
     }
   },
 
