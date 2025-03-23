@@ -142,6 +142,9 @@ data:extend({
         },
         animation_speed_coefficient = 32,
         belt_animation_set = high_density_animation_set,
+        connector_frame_sprites = transport_belt_connector_frame_sprites,
+        circuit_connector = circuit_connector_definitions["belt"],
+        circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
         fast_replaceable_group = "transport-belt",
         speed = 0.1875,
         structure =
@@ -372,8 +375,7 @@ data:extend({
         next_upgrade = "express-transport-belt",
         speed = 0.09375,
         connector_frame_sprites = transport_belt_connector_frame_sprites,
-        circuit_wire_connection_points = circuit_connector_definitions["belt"].points,
-        circuit_connector_sprites = circuit_connector_definitions["belt"].sprites,
+        circuit_connector = circuit_connector_definitions["belt"],
         circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
       }--[[@as data.TransportBeltPrototype]],
 
