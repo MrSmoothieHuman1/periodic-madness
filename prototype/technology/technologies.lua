@@ -4633,6 +4633,23 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-syngas-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"oil-resiudal-recipes"},
+    research_trigger = 
+    {
+      type = "craft-fluid",
+      name = "pm-syngas",
+      amount = 20
+    }
+  },
 
   {
     type = "technology",

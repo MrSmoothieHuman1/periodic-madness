@@ -37,6 +37,8 @@ Date: 2024-12-08
     - Began modelling plates, and giving different elements different shapes compared to the default square.
     - Added a way to void calcium ore/dust/calcite.
     - FINALLY added electric boilers, so you dont need fuel everywhere when needing steam. (or just.. make steam trains, you nerds)
+    - Added primary production recipes of hydrogen, instead of having every recipe it appears in having it be a byproduct.
+    - Added syngas, which can be produced from oil recipes or made from carbon.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
