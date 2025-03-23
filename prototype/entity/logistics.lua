@@ -53,6 +53,8 @@ data:extend({
         corpse = "express-transport-belt-remnants",
         dying_explosion = "express-transport-belt-explosion",
         map_color = purple_belt,
+        open_sound = sounds.transport_belt_open,
+        close_sound = sounds.transport_belt_close,
         resistances =
         {
           {
@@ -229,9 +231,11 @@ data:extend({
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 0.1, result = "pm-high-density-splitter" },
         max_health = 250,
-        corpse = "express-splitter-remnants",
+        corpse = "fast-splitter-remnants",
         dying_explosion = "express-splitter-explosion",
         map_color = purple_belt,
+        open_sound = sounds.transport_belt_open,
+        close_sound = sounds.transport_belt_close,
         resistances =
         {
           {
@@ -381,10 +385,12 @@ data:extend({
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 0.1, result = "pm-advanced-underground-belt" },
         max_health = 170,
-        corpse = "express-underground-belt-remnants",
+        corpse = "fast-underground-belt-remnants",
         dying_explosion = "express-underground-belt-explosion",
         max_distance = 9,
         map_color = red_belt,
+        open_sound = sounds.transport_belt_open,
+        close_sound = sounds.transport_belt_close,
         underground_sprite =
         {
           filename = "__core__/graphics/arrows/underground-lines.png",
@@ -514,9 +520,11 @@ data:extend({
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 0.1, result = "pm-advanced-splitter" },
         max_health = 170,
-        corpse = "express-splitter-remnants",
+        corpse = "fast-splitter-remnants",
         dying_explosion = "express-splitter-explosion",
         map_color = red_belt,
+        open_sound = sounds.transport_belt_open,
+        close_sound = sounds.transport_belt_close,
         resistances =
         {
           {
@@ -609,48 +617,6 @@ data:extend({
           }
         }
       }--[[@as data.SplitterPrototype]],
-    
-      {
-        type = "transport-belt",
-        name = "pm-high-density-transport-belt",
-        icon = "__periodic-madness__/graphics/icons/buildings/high-density-transport-belt.png",
-        icon_size = 64,
-        flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 0.1, result = "pm-high-density-transport-belt" },
-        max_health = 250,
-        corpse = "express-transport-belt-remnants",
-        dying_explosion = "express-transport-belt-explosion",
-        map_color = purple_belt,
-        resistances =
-        {
-          {
-            type = "fire",
-            percent = 50
-          }
-        },
-        collision_box = { { -0.4, -0.4 }, { 0.4, 0.4 } },
-        selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-        working_sound =
-        {
-          sound =
-          {
-            filename = "__base__/sound/express-transport-belt.ogg",
-            volume = 0.3
-          },
-          persistent = true,
-          use_doppler_shift = true,
-        },
-    
-        animation_speed_coefficient = 32,
-        belt_animation_set = high_density_animation_set,
-        related_underground_belt = "pm-high-density-underground-belt",
-        fast_replaceable_group = "transport-belt",
-        speed = 0.1875,
-        connector_frame_sprites = transport_belt_connector_frame_sprites,
-        circuit_wire_connection_points = circuit_connector_definitions["belt"].points,
-        circuit_connector_sprites = circuit_connector_definitions["belt"].sprites,
-        circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
-      }--[[@as data.TransportBeltPrototype]],
 })
 
 data.raw["transport-belt"]["fast-transport-belt"].map_color = red_belt

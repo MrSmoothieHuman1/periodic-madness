@@ -4645,7 +4645,7 @@ data:extend({
       PM.unlock_recipe("pm-syngas-seperation")
     },
     prerequisites = {"pm-oil-residual-recipes"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-fluid",
       fluid = "pm-syngas",
