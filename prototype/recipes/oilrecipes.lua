@@ -300,7 +300,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/diesel-cracking.png",
     energy_required = 2,
     enabled = false,
-    category = "pm-washing",
+    category = "pm-mixing",
     subgroup = "pm-oil",
     order = "a",
     ingredients =
@@ -310,8 +310,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-legendary-diesel", 10, "fluid"),
-      PM.product("pm-common-diesel", 12, "fluid")
+      PM.product_range("pm-legendary-diesel", 8, 10, "fluid"),
+      PM.product_range("pm-common-diesel", 10, 12, "fluid")
     }
   },
   {
