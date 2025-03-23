@@ -93,7 +93,7 @@ data:extend({
       PM.product_range("pm-bitumen", 2, 4),
       PM.product("sulfur", 6),
       PM.product_range("pm-vanadium-ore", 1, 4),
-      PM.product_range("pm-fuel-oils", 0.5, 5, "fluid")
+      PM.product_range("pm-syngas", 0.5, 5, "fluid")
     }
   },
   {

@@ -4638,7 +4638,7 @@ data:extend({
     name = "pm-syngas-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
 
     },
