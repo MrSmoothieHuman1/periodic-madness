@@ -4643,11 +4643,11 @@ data:extend({
     {
 
     },
-    prerequisites = {"oil-resiudal-recipes"},
+    prerequisites = {"pm-oil-residual-recipes"},
     research_trigger = 
     {
       type = "craft-fluid",
-      name = "pm-syngas",
+      fluid = "pm-syngas",
       amount = 20
     }
   },
