@@ -155,4 +155,23 @@ data:extend({
           PM.product("pm-carbon-dioxide-gas", 10, "fluid")
         }
     },
+    {
+      type = "recipe",
+      name = "pm-carbon-to-carbon-dioxide",
+      category = "pm-mixing",
+      subgroup = "pm-carbon-rnm",
+      order = "h",
+      enabled = false,
+      energy_required = 5,
+      allow_decomposition = false,
+      ingredients = 
+      {
+        PM.ingredient("pm-carbon", 10),
+        PM.ingredient("pm-sodium-hydroxide", 6, "fluid")
+      },
+      results = 
+      {
+        PM.product_range("pm-carbon-dioxide-gas", 8, 10, "fluid"),
+      }
+    }
 })

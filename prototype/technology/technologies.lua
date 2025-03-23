@@ -4280,6 +4280,7 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
+      PM.unlock_recipe("pm-carbon-to-carbon-dioxide"),
       PM.unlock_recipe("pm-ferrous-waste-water"),
       PM.unlock_recipe("pm-cupric-waste-water"),
       PM.unlock_recipe("pm-ferrous-waste-seperation"),
