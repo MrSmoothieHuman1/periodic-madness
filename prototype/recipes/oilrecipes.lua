@@ -1037,6 +1037,24 @@ data:extend({
       PM.product("pm-oil-residuals", 30, "fluid")
     }
   },
+
+  {
+    type = "recipe",
+    name = "pm-syngas",
+    enabled = false,
+    energy_required = 6,
+    category = "oil-refining",
+    ingredients = 
+    {
+      PM.ingredient("pm-carbon", 6, "fluid"),
+      PM.ingredient("steam", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-syngas", 20, "fluid"),
+      PM.product_range("pm-oxygen-gas", 0, 2, "fluid")
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["lubricant"].subgroup = "pm-oil"
