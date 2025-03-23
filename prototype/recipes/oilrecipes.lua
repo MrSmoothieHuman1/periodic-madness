@@ -142,6 +142,31 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-palladium-catalyst-refinery-gas-cracking",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/palladium-catalyst-refinery-gas-cracking.png",
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-plastics",
+    order = "a",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-refinery-gases", 25, "fluid"),
+      PM.ingredient("pm-palladium-catalyst", 1)
+    },
+    results =
+    {
+      PM.catalyst_chance("pm-palladium-catalyst", 1, 1, 0.8),
+      PM.catalyst_chance("pm-catalyst-container", 1, 1, 0.2),
+      PM.product_chance("pm-butane-gas", 20, 0.75, "fluid"),
+      PM.product_range_chance("pm-syngas", 5, 10, 0.35, "fluid"),
+      PM.catalyst_range("pm-palladium-hydride", 0, 2, 1)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-butene-cracking",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/butene-cracking.png",
@@ -429,31 +454,6 @@ data:extend({
       PM.product_chance("pm-bitumen", 2, 0.75),
       PM.product_range("pm-syngas", 0, 5, "fluid"),
       PM.product_range("water", 1.8, 2, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-palladium-catalyst-refinery-gas-cracking",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/palladium-catalyst-refinery-gas-cracking.png",
-    enabled = false,
-    energy_required = 4,
-    category = "chemistry",
-    subgroup = "pm-plastics",
-    order = "a",
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-refinery-gases", 25, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 1)
-    },
-    results =
-    {
-      PM.product_range("pm-hydrogen-gas", 4, 6, "fluid"),
-      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.8, 1),
-      PM.product_chance("pm-catalyst-container", 1, 0.2),
-      PM.product_range_chance("pm-palladium-hydride", 1, 3, 0.5),
-      PM.product_range("pm-butane-gas", 20, 30, "fluid")
     }
   },
   {
