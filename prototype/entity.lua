@@ -2717,11 +2717,11 @@ data:extend({
       },
       {
 
-        production_type = "output",
+        production_type = "input",
         pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
       },
       {
 

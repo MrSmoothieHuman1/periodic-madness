@@ -39,6 +39,8 @@ Date: 2024-12-08
     - FINALLY added electric boilers, so you dont need fuel everywhere when needing steam. (or just.. make steam trains, you nerds)
     - Added primary production recipes of hydrogen, instead of having every recipe it appears in having it be a byproduct.
     - Added syngas, which can be produced from oil recipes or made from carbon.
+    - Changed it so that certain buildings (greenhouses, bacteria incubators) cannot be used if there is too much pollution in the same chunk as them.
+    - Also changed it so that certain buildings (air filters) now require to be in polluted chunks.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
