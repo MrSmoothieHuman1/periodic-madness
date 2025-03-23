@@ -1044,9 +1044,10 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "oil-processing",
+    main_product = "pm-syngas",
     ingredients =
     {
-      PM.ingredient("pm-carbon", 6, "fluid"),
+      PM.ingredient("pm-carbon", 6),
       PM.ingredient("steam", 10, "fluid")
     },
     results =
@@ -1061,6 +1062,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "oil-processing",
+    main_product = "pm-carbon-monoxide",
     ingredients =
     {
       PM.ingredient("pm-syngas", 10, "fluid"),
@@ -1069,7 +1071,7 @@ data:extend({
     {
       PM.product_range("pm-carbon-monoxide", 4, 8, "fluid"),
       PM.product_range("pm-sulfur-dioxide", 0, 2, "fluid"), --hydrogen sulfide in hard mode
-      PM.product_range("pm-methane", 1, 4, "fluid")
+      --PM.product_range("pm-methane", 1, 4, "fluid")
     }
   }
 } --[[@as data.RecipePrototype[] ]])

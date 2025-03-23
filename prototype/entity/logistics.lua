@@ -1,6 +1,5 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
-require("__base__.circuit-connector-sprites")
 local meld = require("meld")
 
 local red_belt = {r = 0.878, g = 0.169, b = 0.169}
