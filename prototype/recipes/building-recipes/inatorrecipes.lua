@@ -1077,6 +1077,7 @@ data:extend({
     }
   },
 
+  --MARK: Cold-inator
   {
     type = "recipe",
     name = "pm-iron-plate-cooling",
@@ -1518,6 +1519,8 @@ data:extend({
     }
   },
 
+  --MARK: Alloy recipes
+
   {
     type = "recipe",
     name = "pm-liquid-solder",
@@ -1800,7 +1803,7 @@ data:extend({
     }
   },
 
-  --burn-inator recipes
+  --MARK: Burn-inator
 
   {
     type = "recipe",
