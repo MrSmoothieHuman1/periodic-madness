@@ -65,18 +65,18 @@ data:extend({
         subgroup = "pm-astatine-ptm",
         order = "a",
         enabled = false,
-        energy_required = 30,
+        energy_required = 20,
         allow_productivty = true,
         ingredients = 
         {
-            PM.ingredient("pm-bismuth-ore", 20),
-            PM.ingredient("copper-plate", 10),
-            PM.ingredient("pm-aluminium-plate", 10),
-            PM.ingredient("pm-gold-plate", 10), --all need to be catalysts for hard mode
+          PM.ingredient("pm-bismuth-ore", 20),
+          PM.ingredient("copper-plate", 10),
+          PM.ingredient("pm-aluminium-plate", 10),
+          PM.ingredient("pm-gold-plate", 10), --all need to be catalysts for hard mode
         },
         results = 
         {
-            PM.product_range_chance("pm-mixed-trace-astatine", 1, 3, 0.5)
+          PM.product_range_chance("pm-mixed-trace-astatine", 1, 3, 0.6)
         }
     },
     {
@@ -88,12 +88,12 @@ data:extend({
         energy_required = 10,
         ingredients = 
         {
-            PM.ingredient("pm-magneto-orbital-trap", 1),
-            PM.ingredient("pm-mixed-trace-astatine", 3)
+          PM.ingredient("pm-magneto-orbital-trap", 1),
+          PM.ingredient("pm-mixed-trace-astatine", 3)
         },
         results = 
         {
-            PM.product("pm-mixed-astatine-magneto-orbital-trap", 1)
+          PM.product("pm-mixed-astatine-magneto-orbital-trap", 1)
         }
     },
     {
@@ -105,20 +105,20 @@ data:extend({
         subgroup = "pm-astatine-ptm",
         order = "c",
         enabled = false,
-        energy_required = 10,
+        energy_required = 20,
         allow_productivity = true,
         ingredients = 
         {
-            PM.ingredient("pm-mixed-astatine-magneto-orbital-trap", 1),
-            PM.ingredient("pm-sodium-hydroxide", 20, "fluid"),
-            PM.ingredient("pm-methanol", 20, "fluid"),
+          PM.ingredient("pm-mixed-astatine-magneto-orbital-trap", 1),
+          PM.ingredient("pm-sodium-hydroxide", 20, "fluid"),
+          PM.ingredient("pm-methanol", 20, "fluid"),
         },
         results = 
         {
-            PM.product_range_chance("pm-trace-astatine-209", 1, 2, 0.5),
-            PM.product_range_chance("pm-trace-astatine-210", 1, 2, 0.5),
-            PM.product_range_chance("pm-trace-astatine-211", 1, 2, 0.5),
-            PM.product_chance("pm-magneto-orbital-trap", 1, 0.9)
+          PM.product_range_chance("pm-trace-astatine-209", 1, 2, 0.5),
+          PM.product_range_chance("pm-trace-astatine-210", 1, 2, 0.5),
+          PM.product_range_chance("pm-trace-astatine-211", 1, 2, 0.5),
+          PM.product_chance("pm-magneto-orbital-trap", 1, 0.9)
         }
     },
     {
@@ -130,19 +130,19 @@ data:extend({
         subgroup = "pm-astatine-ptm",
         order = "d",
         enabled = false,
-        energy_required = 20,
+        energy_required = 30,
         ingredients = 
         {
-            PM.ingredient("pm-trace-astatine-209", 8),
-            PM.ingredient("pm-trace-astatine-210", 8),
-            PM.ingredient("pm-bismuth-210", 2),
-            PM.ingredient("pm-hydrochloric-acid", 40, "fluid")
+          PM.ingredient("pm-trace-astatine-209", 8),
+          PM.ingredient("pm-trace-astatine-210", 8),
+          PM.ingredient("pm-bismuth-210", 2),
+          PM.ingredient("pm-hydrochloric-acid", 40, "fluid")
         },
         results = 
         {
-            PM.product_range_chance("pm-trace-astatine-209", 2, 6, 0.5),
-            PM.product_range_chance("pm-trace-astatine-210", 2, 6, 0.5),
-            PM.product_range_chance("pm-trace-astatine-211", 3, 6, 0.8),
+          PM.product_range_chance("pm-trace-astatine-209", 2, 6, 0.5),
+          PM.product_range_chance("pm-trace-astatine-210", 2, 6, 0.5),
+          PM.product_range_chance("pm-trace-astatine-211", 3, 6, 0.8),
         }
     }
 })
