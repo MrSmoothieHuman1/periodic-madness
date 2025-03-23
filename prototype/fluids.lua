@@ -1841,6 +1841,17 @@ data:extend({
     base_color = {r = 0.3, g = 0.3, b = 0.2},
     flow_color = {r = 0.3, g = 0.3, b = 0.2},
   },
+  {
+    type = "fluid",
+    name = "pm-syngas",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/syngas.png",
+    subgroup = "pm-strontium-aem",
+    order = "e",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.1, b = 0.1},
+    flow_color = {r = 0.3, g = 0.1, b = 0.1},
+  },
 
 	{
 		type = "fluid",
