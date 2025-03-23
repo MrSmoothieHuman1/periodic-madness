@@ -1,12 +1,13 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
+require("__base__.circuit-connector-sprites")
 
 local red_belt = {r = 0.878, g = 0.169, b = 0.169}
 local orange_belt = {r = 1, g = 0.502, b = 0}
 local blue_belt = {r = 0.169, g = 0.608, b = 0.878}
 local purple_belt = {r = 0.616, g = 0.169, b = 0.878}
 
-local fast_belt_animation_set = {
+local red_belt_animation_set = {
     animation_set =
     {
       filename = "__base__/graphics/entity/fast-transport-belt/fast-transport-belt.png",
@@ -17,7 +18,7 @@ local fast_belt_animation_set = {
       direction_count = 20
     }
   }
-  local orange_fast_belt_animation_set = {
+  local orange_belt_animation_set = {
     animation_set =
     {
       filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
@@ -28,7 +29,7 @@ local fast_belt_animation_set = {
       direction_count = 20
     }
   }
-  local high_density_animation_set = {
+  local purple_belt_animation_set = {
     animation_set =
     {
       filename = "__periodic-madness__/graphics/entities/buildings/high-density-transport-belts/high-density-transport-belt.png",
@@ -39,6 +40,78 @@ local fast_belt_animation_set = {
       direction_count = 20,
     }
   }
+belt_reader_gfx = -- not local
+{
+  belt_reader =
+  {
+    {
+      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-top",
+      {
+        priority = "low",
+        scale = 0.5,
+        frame_count = 4,
+        direction_count = 4
+      }),
+      render_layer = "object"
+    },
+    {
+      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-base",
+      {
+        priority = "low",
+        scale = 0.5,
+        frame_count = 4,
+        direction_count = 4
+      }),
+      render_layer = "transport-belt-reader"
+    },
+    {
+      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-middle",
+      {
+        priority = "low",
+        scale = 0.5,
+        frame_count = 4,
+        direction_count = 4
+      }),
+      render_layer = "floor-mechanics"
+    },
+    {
+      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-under-middle",
+      {
+        priority = "low",
+        scale = 0.5,
+        frame_count = 4,
+        direction_count = 4
+      }),
+      render_layer = "transport-belt-endings"
+    },
+    {
+      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-bottom",
+      {
+        priority = "low",
+        scale = 0.5,
+        frame_count = 4,
+        direction_count = 4
+      }),
+      render_layer = "floor"
+    },
+    {
+      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-shadow",
+      {
+        priority = "low",
+        scale = 0.5,
+        frame_count = 4,
+        direction_count = 4,
+      }),
+      render_layer = "floor"
+    },
+    -- More belt reader layers (with possibly different render layer) should go here
+  }
+}
+
+meld(orange_belt_animation_set, belt_reader_gfx)
+meld(red_belt_animation_set, belt_reader_gfx)
+meld(purple_belt_animation_set, belt_reader_gfx)
+--I HATE YOU WUBE
 data:extend({
 
     --MARK: High-Denisty Belts
@@ -76,7 +149,7 @@ data:extend({
         },
     
         animation_speed_coefficient = 32,
-        belt_animation_set = high_density_animation_set,
+        belt_animation_set = purple_belt_animation_set,
         related_underground_belt = "pm-high-density-underground-belt",
         fast_replaceable_group = "transport-belt",
         speed = 0.1875,
@@ -141,7 +214,7 @@ data:extend({
           use_doppler_shift = false
         },
         animation_speed_coefficient = 32,
-        belt_animation_set = high_density_animation_set,
+        belt_animation_set = purple_belt_animation_set,
         connector_frame_sprites = transport_belt_connector_frame_sprites,
         circuit_connector = circuit_connector_definitions["belt"],
         circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
@@ -251,7 +324,7 @@ data:extend({
         animation_speed_coefficient = 32,
         structure_animation_speed_coefficient = 1.2,
         structure_animation_movement_cooldown = 10,
-        belt_animation_set = high_density_animation_set,
+        belt_animation_set = purple_belt_animation_set,
         fast_replaceable_group = "transport-belt",
         speed = 0.1875,
         structure =
@@ -369,7 +442,7 @@ data:extend({
           use_doppler_shift = true,
         },
         animation_speed_coefficient = 32,
-        belt_animation_set = fast_belt_animation_set,
+        belt_animation_set = red_belt_animation_set,
         related_underground_belt = "pm-advanced-underground-belt",
         fast_replaceable_group = "transport-belt",
         next_upgrade = "express-transport-belt",
@@ -437,7 +510,7 @@ data:extend({
           use_doppler_shift = false
         },
         animation_speed_coefficient = 32,
-        belt_animation_set = fast_belt_animation_set,
+        belt_animation_set = red_belt_animation_set,
         fast_replaceable_group = "transport-belt",
         next_upgrade = "express-underground-belt",
         speed = 0.09375,
@@ -539,7 +612,7 @@ data:extend({
         animation_speed_coefficient = 32,
         structure_animation_speed_coefficient = 1.2,
         structure_animation_movement_cooldown = 10,
-        belt_animation_set = fast_belt_animation_set,
+        belt_animation_set = red_belt_animation_set,
         fast_replaceable_group = "transport-belt",
         next_upgrade = "express-splitter",
         speed = 0.09375,
@@ -634,8 +707,8 @@ data.raw["transport-belt"]["fast-transport-belt"].icon = "__periodic-madness__/g
 data.raw["splitter"]["fast-splitter"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
 data.raw["underground-belt"]["fast-underground-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
 
-data.raw["transport-belt"]["fast-transport-belt"].belt_animation_set = orange_fast_belt_animation_set
-data.raw["splitter"]["fast-splitter"].belt_animation_set = orange_fast_belt_animation_set
+data.raw["transport-belt"]["fast-transport-belt"].belt_animation_set = orange_belt_animation_set
+data.raw["splitter"]["fast-splitter"].belt_animation_set = orange_belt_animation_set
 data.raw["splitter"]["fast-splitter"].structure =
 {
   north =
@@ -716,7 +789,7 @@ data.raw["splitter"]["fast-splitter"].structure_patch =
     scale = 0.5
   }
 }
-data.raw["underground-belt"]["fast-underground-belt"].belt_animation_set = orange_fast_belt_animation_set
+data.raw["underground-belt"]["fast-underground-belt"].belt_animation_set = orange_belt_animation_set
 data.raw["underground-belt"]["fast-underground-belt"].structure =
 {
   direction_in =
