@@ -4641,7 +4641,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-syngas")
+      PM.unlock_recipe("pm-syngas"),
+      PM.unlock_recipe("pm-syngas-seperation")
     },
     prerequisites = {"pm-oil-residual-recipes"},
     research_trigger = 
