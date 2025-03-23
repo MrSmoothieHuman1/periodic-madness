@@ -15,6 +15,18 @@ handler.on_nth_tick[60 * 10] = function(event) --checks every 10 seconds
         --60 pollution is when trees start dying - makes sense thematically, but might be too low?
         --TODO: add list of pollution required to make chunk more red
           entity.disabled_by_script = true
+          entity.disabled_by_script = true
+          -- Show alert
+          local new_alert = rendering.draw_sprite{
+          sprite = "virtual-signal/pm-too-much-pollution",
+          surface = entity.surface,
+          target = entity,
+          forces = entity.force,
+          time_to_live = 60,
+          }
+          for _, player in pairs(entity.force.players) do
+          player.add_custom_alert(entity, {type="virtual", name="pm-too-much-pollution"}, {"pm-too-much-pollution"}, true)
+          end
           entity.custom_status =
           {
             diode = defines.entity_status_diode.red,
