@@ -39,6 +39,7 @@ local red_belt_animation_set = {
       scale = 0.5,
       frame_count = 16,
       direction_count = 20,
+      animation_speed = 0.8
     }
   }
 belt_reader_gfx = -- not local
@@ -218,7 +219,7 @@ data:extend({
         belt_animation_set = purple_belt_animation_set,
         connector_frame_sprites = transport_belt_connector_frame_sprites,
         circuit_connector = circuit_connector_definitions["belt"],
-        circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
+        circuit_wire_max_distance = transport_belt_circuit_wire_max_distance,
         fast_replaceable_group = "transport-belt",
         speed = 0.1875,
         structure =
