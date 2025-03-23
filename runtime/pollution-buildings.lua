@@ -7,7 +7,7 @@ handler.on_nth_tick[60 * 10] = function(event) --checks every 10 seconds
     for _, surface in pairs(game.surfaces) do
       local entities = surface.find_entities_filtered
       {
-        name = "pm-greenhouse",
+        name = {"pm-greenhouse", "pm-factorian-bacteria-greenhouse"}
       }
       for _, entity in ipairs(entities) do
         if surface.get_pollution(entity.position) > 60 then
