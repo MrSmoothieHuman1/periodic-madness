@@ -310,7 +310,7 @@ data:extend({
         max_health = 250,
         corpse = "fast-splitter-remnants",
         dying_explosion = "express-splitter-explosion",
-        map_color = purple_belt,
+        map_color = {r = 0.38, g = 0, b = 0.62},
         open_sound = sounds.transport_belt_open,
         close_sound = sounds.transport_belt_close,
         resistances =
@@ -464,7 +464,7 @@ data:extend({
         corpse = "fast-underground-belt-remnants",
         dying_explosion = "express-underground-belt-explosion",
         max_distance = 9,
-        map_color = red_belt,
+        map_color = {r = 0.561, g = 0.278, b = 0},
         open_sound = sounds.transport_belt_open,
         close_sound = sounds.transport_belt_close,
         underground_sprite =
