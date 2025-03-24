@@ -3,7 +3,7 @@
 ---@type event_handler
 local handler = {on_nth_tick = {}}
 --MARK: No pollution
-handler.on_nth_tick[60 * 2] = function(event) --checks every 10 seconds
+handler.on_nth_tick[60 * 2] = function(event) --checks every 2 seconds
     for _, surface in pairs(game.surfaces) do
       local entities = surface.find_entities_filtered
       {
