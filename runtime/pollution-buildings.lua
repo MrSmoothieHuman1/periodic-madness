@@ -25,7 +25,7 @@ handler.on_nth_tick[60 * 10] = function(event) --checks every 10 seconds
           time_to_live = 60,
           }
           for _, player in pairs(entity.force.players) do
-          player.add_custom_alert(entity, {type="virtual", name="pm-too-much-pollution"}, {"pm-too-much-pollution"}, true)
+          player.add_custom_alert(entity, {type="virtual", name="pm-too-much-pollution"}, {"pm-alerts.pm-too-much-pollution"}, true)
           end
           entity.custom_status =
           {
