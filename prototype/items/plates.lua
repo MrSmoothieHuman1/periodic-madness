@@ -30,6 +30,11 @@ data:extend({
     name = "pm-zinc-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/zinc-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/zinc-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-zinc-tm",
     order = "c",
     stack_size = 100
@@ -39,6 +44,11 @@ data:extend({
     name = "pm-gold-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/gold-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/gold-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/gold-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-gold-tm",
     order = "c",
     stack_size = 100
@@ -48,6 +58,11 @@ data:extend({
     name = "pm-silver-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/silver-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/silver-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/silver-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-silver-tm",
     order = "c",
     stack_size = 100
