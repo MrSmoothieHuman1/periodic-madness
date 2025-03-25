@@ -5,7 +5,12 @@ data:extend({
         type = "item",
         name = "pm-celestine",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/celestine.png",
+        pictures =
+        {
+            { filename = "__periodic-madness__/graphics/icons/ores/celestine.png", size = 64, scale = 0.5},
+            { filename = "__periodic-madness__/graphics/icons/ores/celestine-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-strontium-aem",
         order = "a",
         stack_size = 100
