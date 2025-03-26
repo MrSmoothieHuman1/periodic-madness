@@ -3895,7 +3895,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-solar-panel-2"),
     },
-    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-solar-energy-2"},
+    prerequisites = {"pm-magnesium-chloride", "pm-solar-energy-2"},
     unit =
     {
       count = 450,
@@ -3919,7 +3919,7 @@ data:extend({
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
     "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
-    prerequisites = {"pm-solar-panel-equipment-2", "pm-alkaline-earth-metal-pack-unlock", "low-density-structure"},
+    prerequisites = {"pm-solar-panel-equipment-2", "pm-magnesium-chloride", "low-density-structure"},
     effects =
     {
       PM.unlock_recipe("pm-solar-panel-equipment-3")
@@ -4438,11 +4438,11 @@ data:extend({
       count = 450,
       ingredients =
       {
-          {"automation-science-pack", 1},
-          {"logistic-science-pack", 1},
-          {"pm-advanced-advanced-transition-metal-science-pack", 1},
-          {"pm-post-transition-metal-science-pack", 1},
-          {"pm-metalloid-science-pack", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
       },
       time = 80
     }
@@ -4461,11 +4461,11 @@ data:extend({
       count = 450,
       ingredients =
       {
-          {"automation-science-pack", 1},
-          {"logistic-science-pack", 1},
-          {"pm-advanced-advanced-transition-metal-science-pack", 1},
-          {"pm-post-transition-metal-science-pack", 1},
-          {"pm-metalloid-science-pack", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
       },
       time = 80
     }
@@ -4484,11 +4484,11 @@ data:extend({
       count = 450,
       ingredients =
       {
-          {"automation-science-pack", 1},
-          {"logistic-science-pack", 1},
-          {"pm-advanced-advanced-transition-metal-science-pack", 1},
-          {"pm-post-transition-metal-science-pack", 1},
-          {"pm-metalloid-science-pack", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
       },
       time = 80
     }
@@ -4651,6 +4651,28 @@ data:extend({
       fluid = "pm-syngas",
       amount = 20
     }
+  },
+  {
+    type = "technology",
+    name = "pm-magnesium-chloride",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = {},
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
   },
 
   {
