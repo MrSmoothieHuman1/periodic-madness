@@ -58,3 +58,35 @@ data:extend{
 for k, m in pairs(data.raw["assembling-machine"]) do
 	allowed_module_categories = {"speed", "productivity", "efficiency"}
 end
+
+--- Replace instances of plastic with pm plastic
+
+local removals = {}
+for _, recipe in pairs(data.raw["recipe"]) do
+	if recipe.main_product == "plastic-bar" then
+		table.insert(removals, recipe.name)
+		goto continue --Go to next recipe because this one will be removed
+	end
+	if recipe.results then
+		for _, result in pairs(recipe.results) do
+			if result.name == "plastic-bar" then
+				table.insert(removals, recipe.name)
+				goto continue --Go to next recipe because this one will be removed
+			end
+		end
+	end
+	if recipe.ingredients then
+		for _, ingedient in pairs(recipe.ingredients) do
+			if ingedient.name == "plastic-bar" then
+				ingedient.name = "pm-polyethylene-plastic"
+			end
+		end
+	end
+	::continue::
+end
+
+for _, removal in pairs(removals) do
+	data.raw["recipe"][removal] = nil -- May want additional steps to ensure compatibility works
+end
+
+data.raw["item"]["plastic-bar"] = nil
