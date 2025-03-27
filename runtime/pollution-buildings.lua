@@ -15,8 +15,9 @@ local handler = {on_nth_tick = {}}
 --125-135: Nineth colour
 --135-145: Tenth colour
 --145-150+: Eleventh colour (max)
+
 --MARK: No pollution
-handler.on_nth_tick[60 * 2] = function(event) --checks every 2 seconds
+handler.on_nth_tick[60 * 10] = function(event) --checks every 10 seconds
     for _, surface in pairs(game.surfaces) do
       local entities = surface.find_entities_filtered
       {
@@ -54,4 +55,4 @@ handler.on_nth_tick[60 * 2] = function(event) --checks every 2 seconds
 
 return handler
 
-  --MARK: Only pollution
+--MARK: Only pollution
