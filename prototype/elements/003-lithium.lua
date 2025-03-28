@@ -194,7 +194,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-bromide",
-    category = "pm-moltening",
+    category = "chemistry",
     subgroup = "pm-lithium-am",
     order = "h",
     enabled = false,
