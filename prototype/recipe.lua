@@ -33,7 +33,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sand",
-    energy_required = 2,
+    energy_required = 4,
     allow_productivity = true,
     enabled = false,
     ingredients = { PM.ingredient("stone", 4) },
@@ -43,7 +43,7 @@ data:extend({
     order = "a",
     results =
     {
-      PM.product("pm-sand", 8),
+      PM.product_range("pm-sand", 6, 8),
     }
   },
   {
