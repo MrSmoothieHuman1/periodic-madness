@@ -1488,7 +1488,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-module-speed-light", 1, 0.8),
+      PM.product_chance("pm-modul-productivity-speed-light", 1, 0.8),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
     }
   },
@@ -1509,7 +1509,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.7),
-      PM.product_chance("pm-module-speed-light", 1, 0.7),
+      PM.product_chance("pm-module-productivity-light", 1, 0.7),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.6),
       PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.6),
     }
