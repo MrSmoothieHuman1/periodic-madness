@@ -2759,7 +2759,7 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
+        volume = 500,
         filter = "pm-agar-solution",
         pipe_connections = {{flow_direction = "input", direction = defines.direction.east--[[@as int]], position = {2, 0}}},
       },
@@ -2797,25 +2797,19 @@ data:extend({
           production_type = "input",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "input", direction = defines.direction.east--[[@as int]], position = {0, -2}}},
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0, -2}}},
         },
         {
           production_type = "output",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {0, 2}}},
-        },
-        {
-          production_type = "input",
-          pipe_covers = pipecoverspictures(),
-          volume = 100,
-          pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {2, 0}}},
+          pipe_connections = {{flow_direction = "output", direction = defines.directions.south--[[@as int]], position = {0, 2}}},
         },
         {
           production_type = "output",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {-2, 0}}},
+          pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2, 0}}},
         },
       }
   }--[[@as data.FurnacePrototype]],
