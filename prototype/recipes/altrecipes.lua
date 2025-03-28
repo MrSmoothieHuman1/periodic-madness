@@ -59,7 +59,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-electronic-breadboard-mold", 1),
-      PM.ingredient("pm-nickel-plate", 1)
+      PM.ingredient("pm-nickel-plate", 2)
     },
     results =
     {
@@ -104,7 +104,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-fluid-breadboard-mold", 1),
-      PM.ingredient("pm-vulcanised-rubber", 1)
+      PM.ingredient("pm-vulcanised-rubber", 2)
     },
     results =
     {
@@ -149,7 +149,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-advanced-breadboard-mold", 1),
-      PM.ingredient("pm-palladium-plate", 2)
+      PM.ingredient("pm-palladium-plate", 2),
+      PM.ingredient("pm-platinum-plate", 2),
     },
     results =
     {
@@ -196,7 +197,8 @@ data:extend({
     {
       PM.ingredient("pm-processing-breadboard-mold", 1),
       PM.ingredient("pm-ferric-chloride", 10, "fluid"),
-      PM.ingredient("pm-indium-plate", 2)
+      PM.ingredient("pm-indium-plate", 3),
+      PM.ingredient("pm-cobalt-blue", 6)
     },
     results =
     {
