@@ -138,7 +138,7 @@ data:extend({
     name = "pm-borax",
     enabled = false,
     energy_required = 3,
-    category = "pm-advanced-crafting-with-fluid",
+    category = "pm-chemistry",
     subgroup = "pm-boron-mt",
     order = "e",
     allow_productivity = true,
