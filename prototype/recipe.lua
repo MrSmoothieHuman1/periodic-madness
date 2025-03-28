@@ -1488,7 +1488,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-modul-productivity-speed-light", 1, 0.8),
+      PM.product_chance("pm-module-productivity-speed-light", 1, 0.8),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
     }
   },
