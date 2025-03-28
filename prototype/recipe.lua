@@ -43,7 +43,7 @@ data:extend({
     order = "a",
     results =
     {
-      PM.product_range("pm-sand", 6, 8),
+      PM.product("pm-sand", 8),
     }
   },
   {
