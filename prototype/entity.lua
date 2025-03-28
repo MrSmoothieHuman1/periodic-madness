@@ -2747,7 +2747,7 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-bacteria-incubating" },
     crafting_speed = 2,
-    source_inventory_size = 0,
+    source_inventory_size = 1,
     result_inventory_size = 1,
     energy_source =
     {
@@ -2790,6 +2790,7 @@ data:extend({
           }
         }
       },
+    },
       fluid_boxes =
       {
         {
@@ -2817,7 +2818,6 @@ data:extend({
           pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {-2, 0}}},
         },
       }
-    }
   }--[[@as data.FurnacePrototype]],
   {
     type = "lab",
