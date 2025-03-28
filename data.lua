@@ -31,6 +31,7 @@ require("prototype.recipes.rawrrecipes")
 require("prototype.recipes.oilrecipes")
 require("prototype.recipes.batteriesrecipes")
 require("prototype.recipes.multimetalrrecipes")
+require("prototype.recipes.sciencerecipes")
 
 require("prototype.recipes.building-recipes.electrolysisrecipes")
 require("prototype.recipes.building-recipes.atmo-condenserrecipes")
@@ -572,7 +573,7 @@ local lithium_speed_setting = ({
   ["0.25x"] = 0.08 * 0.25,
   ["0.5x"] = 0.08 * 0.5,
   ["0.75x"] = 0.08 * 0.75,
-  ["1x"] = 0.08 ,
+  ["1x"] = 0.08,
   ["1.25x"] = 0.08 * 1.25,
   ["1.5x"] = 0.08 * 1.5,
   ["1.75x"] = 0.08 * 1.75,
