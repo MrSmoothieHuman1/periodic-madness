@@ -79,7 +79,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-zinc-powder", 8),
-      PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid"),
     },
     enabled = false,
     results =

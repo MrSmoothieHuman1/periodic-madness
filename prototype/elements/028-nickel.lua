@@ -73,12 +73,12 @@ data:extend({
       tertiary = { r = 0.82, g = 0.82, b = 0.92, a = 0.5 }, -- smoke afteraffects
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 }     --smoke
     },
-    energy_required = 4,
+    energy_required = 2,
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-nickel-powder", 8),
-      PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
