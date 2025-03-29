@@ -5965,10 +5965,10 @@ data:extend({
     allowed_module_categories = {"pm-heating-coils"},
     crafting_categories = {"smelting"},
     effect_receiver = {base_effect = {productivity = 0.05}},
-    result_inventory_size = 1,
-    crafting_speed = 1.25,
+    result_inventory_size = 2,
+    crafting_speed = 1,
     energy_usage = "200kW",
-    source_inventory_size = 2,
+    source_inventory_size = 1,
     energy_source =
     {
       type = "heat",
@@ -6162,10 +6162,10 @@ data:extend({
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heating-coils"},
     crafting_categories = {"smelting"},
-    result_inventory_size = 1,
-    crafting_speed = 1,
+    result_inventory_size = 2,
+    crafting_speed = 1.25,
     energy_usage = "200kW",
-    source_inventory_size = 2,
+    source_inventory_size = 1,
     energy_source =
     {
       type = "electric",
