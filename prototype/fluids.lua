@@ -1852,6 +1852,18 @@ data:extend({
     base_color = {r = 0.3, g = 0.1, b = 0.1},
     flow_color = {r = 0.3, g = 0.1, b = 0.1},
   },
+  {
+    type = "fluid",
+    name = "pm-matte-copper",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-molten-iron.png",
+    subgroup = "pm-advanced-copper-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",
