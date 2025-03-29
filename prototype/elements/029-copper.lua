@@ -126,5 +126,8 @@ data:extend({
       PM.product("copper-ore", 4),
       PM.product_range_chance("pm-patina", 0, 2, 0.5),
     }
-  }
+  },
+
+--MARK: Adv. Copper
+-- better version of copper, normal chunk to ore is 1:2 - this is 1:6, so 4 chunks turns into 24 ore
 })
