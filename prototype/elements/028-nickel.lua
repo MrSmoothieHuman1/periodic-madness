@@ -37,7 +37,7 @@ data:extend({
     enabled = false,
     energy_required = 2,
     category = "pm-crushing",
-    subgroup = "pm-ncikel-tm",
+    subgroup = "pm-nickel-tm",
     order = "a",
     ingredients = 
     {
