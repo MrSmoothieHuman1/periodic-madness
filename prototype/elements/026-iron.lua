@@ -52,7 +52,7 @@ data:extend({
     type = "recipe",
     name = "pm-basic-pig-iron",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 3.2 / 2,
     category = "smelting",
     subgroup = "pm-iron-tm",
     order = "a",

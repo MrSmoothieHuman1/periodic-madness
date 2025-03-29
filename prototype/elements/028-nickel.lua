@@ -45,7 +45,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-zinc-powder", 4)
+      PM.product("pm-nickel-powder", 4)
     }
   },
   {

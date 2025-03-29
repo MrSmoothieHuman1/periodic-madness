@@ -34,7 +34,7 @@ data:extend({
     type = "recipe",
     name = "pm-crude-matte-copper",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 3.2 / 2,
     category = "smelting",
     subgroup = "pm-copper-tm",
     order = "a",
