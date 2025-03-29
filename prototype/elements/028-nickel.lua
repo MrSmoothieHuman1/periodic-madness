@@ -85,7 +85,7 @@ data:extend({
     results =
     {
       PM.product("pm-nickel-ore", 2),
-      PM.product_range("sulfur", 1, 2),
+      PM.product_range_chance("sulfur", 1, 2, 0.75),
     }
   },
   {
@@ -125,7 +125,7 @@ data:extend({
     results =
     {
       PM.product("pm-nickel-ore", 2),
-      PM.product_range("sulfur", 0, 2),
+      PM.product_range_chance("sulfur", 0, 2, 0.5),
     }
   }
 })

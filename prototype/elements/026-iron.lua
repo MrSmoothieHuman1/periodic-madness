@@ -64,7 +64,7 @@ data:extend({
     results = 
     {
       PM.product("pm-pig-iron", 1),
-      PM.product_range_chance("stone", 1, 2, 0.75)
+      PM.product_range_chance("stone", 1, 2, 0.5)
     }
   },
   {
@@ -103,7 +103,7 @@ data:extend({
     results =
     {
       PM.product("iron-ore", 2),
-      PM.product_range("pm-ferrum", 1, 2)
+      PM.product_range_chance("pm-ferrum", 1, 2, 0.75)
     }
   },
   {
@@ -143,7 +143,7 @@ data:extend({
     results =
     {
       PM.product("iron-ore", 4),
-      PM.product_range("pm-ferrum", 0, 4),
+      PM.product_range_chance("pm-ferrum", 0, 2, 0.5),
     }
   },
 
