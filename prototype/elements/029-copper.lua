@@ -67,7 +67,7 @@ data:extend({
     order = "b",
     category = "pm-acids",
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },     --main visible colour
       secondary = { r = 0.87, g = 0.47, b = 0, a = 1 }, --background visible colour

@@ -41,11 +41,11 @@ data:extend({
     order = "a",
     ingredients = 
     {
-      PM.ingredient("pm-nickel-chunk", 1),
+      PM.ingredient("pm-nickel-chunk", 2),
     },
     results = 
     {
-      PM.product("pm-nickel-powder", 4)
+      PM.product("pm-nickel-powder", 8)
     }
   },
   {

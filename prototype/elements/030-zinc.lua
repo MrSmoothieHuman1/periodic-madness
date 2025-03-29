@@ -41,11 +41,11 @@ data:extend({
     main_product = "pm-zinc-powder",
     ingredients = 
     {
-      PM.ingredient("pm-zinc-chunk", 1),
+      PM.ingredient("pm-zinc-chunk", 2),
     },
     results = 
     {
-      PM.product("pm-zinc-powder", 4),
+      PM.product("pm-zinc-powder", 8),
       PM.product_range_chance("stone", 1, 2, 0.75)
     }
   },
@@ -74,7 +74,7 @@ data:extend({
       tertiary = { r = 0.73, g = 0.7, b = 0.88, a = 0.5 }, -- smoke afteraffects
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 }    --smoke
     },
-    energy_required = 4,
+    energy_required = 2,
     allow_productivity = true,
     ingredients =
     {
