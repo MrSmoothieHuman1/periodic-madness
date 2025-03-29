@@ -60,7 +60,7 @@ data:extend({
       PM.unlock_recipe("pm-ferrum-leeching"),
       PM.unlock_recipe("pm-patina-leeching"),
     },
-    prerequisites = {"pm-transition-metal-refining"},
+    prerequisites = {"pm-ezekiel-ore-purifiying"},
     unit =
     {
       count = 15,
@@ -405,7 +405,6 @@ data:extend({
       PM.unlock_recipe("pm-steel-basic-tubing"),
       PM.unlock_recipe("pm-steel-basic-framing"),
       PM.unlock_recipe("pm-steel-panelling")
-
     },
     prerequisites = {"pm-brass-processing", "steel-processing"},
     unit =
