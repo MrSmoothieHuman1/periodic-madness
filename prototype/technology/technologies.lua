@@ -4408,6 +4408,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-copper-powder"),
+      PM.unlock_recipe("pm-matte-copper"),
+      PM.unlock_recipe("pm-blister-copper"),
+      PM.unlock_recipe("pm-fire-refined-copper"),
+      PM.unlock_recipe("pm-fire-refined-copper-seperation"),
+      PM.unlock_recipe("pm-combined-ore-slab-crushing")
     },
     prerequisites = {"pm-advanced-material-processing-3"},
     unit =
