@@ -37,7 +37,7 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      PM.ingredient("pm-nickel-chunk", 6),
+      PM.ingredient("pm-nickel-powder", 12),
       PM.ingredient("water", 25, "fluid"),
       PM.ingredient("sulfuric-acid", 5, "fluid")
     },
@@ -46,7 +46,7 @@ data:extend({
       PM.product("pm-nickel-froth", 5, "fluid"),
       PM.product("pm-nickel-tailings", 10, "fluid")
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-platinum-nickel-froth-seperation",
@@ -66,11 +66,11 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-chunk", 3),
+      PM.product_range("pm-nickel-chunk", 1, 3),
       PM.product("pm-platinum-powder", 4),
       PM.product_range_chance("pm-ferrum", 1, 3, 0.5)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-platinum-powder-seperation",
@@ -91,7 +91,7 @@ data:extend({
       PM.product_range("pm-platinum-ore", 1, 3),
       PM.product_range_chance("pm-ammonium-chloride", 1, 2, 0.6)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-nickel-tailings-looping",
@@ -112,7 +112,7 @@ data:extend({
       PM.product_range("pm-nickel-tailings", 2, 8, "fluid"),
       PM.product_chance("pm-nickel-froth", 5, 0.9, "fluid")
     }
-  } --[[@as data.RecipePrototype]],
+  },
 
   {
     type = "recipe",
@@ -132,9 +132,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-chunk", 2),
+      PM.product_range("pm-nickel-chunk", 0, 2),
       PM.product("pm-platinum-powder", 4),
       PM.product_chance("pm-flux-container", 1, 0.66)
     }
-  } --[[@as data.RecipePrototype]],
+  },
 })

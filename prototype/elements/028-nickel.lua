@@ -36,7 +36,7 @@ data:extend({
     name = "pm-nickel-powder",
     enabled = false,
     energy_required = 2,
-    category = "crushing",
+    category = "pm-crushing",
     subgroup = "pm-ncikel-tm",
     order = "a",
     ingredients = 

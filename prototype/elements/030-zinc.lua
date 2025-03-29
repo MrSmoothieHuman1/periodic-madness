@@ -35,7 +35,7 @@ data:extend({
     name = "pm-zinc-powder",
     enabled = false,
     energy_required = 2,
-    category = "crushing",
+    category = "pm-crushing",
     subgroup = "pm-zinc-tm",
     order = "a",
     main_product = "pm-zinc-powder",

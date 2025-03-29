@@ -20,7 +20,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-chunk", 2),
+      PM.catalyst_range("pm-nickel-chunk", 1, 3, 2),
       PM.product("pm-palladium-ore", 2),
       PM.product_range_chance("pm-patina", 1, 3, 0.5)
     }
@@ -43,7 +43,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-chunk", 2),
+      PM.catalyst_range("pm-nickel-chunk", 0, 2, 1),
       PM.product("pm-palladium-ore", 2),
       PM.product_chance("pm-flux-container", 1, 0.66)
     }

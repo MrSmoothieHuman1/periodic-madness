@@ -39,7 +39,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-zinc-chunk", 6),
+      PM.ingredient("pm-zinc-powder", 8),
       PM.ingredient("steam", 25, "fluid"),
       PM.ingredient("sulfur", 3)
     },
@@ -47,7 +47,7 @@ data:extend({
     {
       PM.product("pm-zinc-tailings", 10, "fluid")
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-zinc-tailings-condensing",
@@ -58,7 +58,7 @@ data:extend({
     order = "b",
     enabled = false,
     energy_required = 2,
-    allow_productivty = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-zinc-tailings", 10, "fluid"),
@@ -66,10 +66,10 @@ data:extend({
     results =
     {
       PM.product("pm-cadnium-sulfate", 2),
-      PM.product("pm-zinc-chunk", 2),
+      PM.product_range("pm-zinc-chunk", 0, 2),
       PM.product_range_chance("pm-patina", 1, 3, 0.5),
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-cadnium-ore",
@@ -109,5 +109,5 @@ data:extend({
     {
       PM.product("pm-cadnium-red", 6)
     }
-  } --[[@as data.RecipePrototype]],
+  },
 })
