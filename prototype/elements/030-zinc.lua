@@ -15,10 +15,41 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-zinc-powder",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks-2.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-zinc-tm",
+    order = "a",
+    stack_size = 300
+  },
 
   {
     type = "recipe",
-    name = "pm-transition-zinc-leeching",
+    name = "pm-zinc-powder",
+    enabled = false,
+    energy_required = 2,
+    category = "crushing",
+    subgroup = "pm-zinc-tm",
+    order = "a",
+    ingredients = 
+    {
+      PM.ingredient("pm-zinc-chunk", 1),
+    },
+    results = 
+    {
+      PM.product("pm-zinc-powder", 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-zinc-powder-leeching",
     icon_size = 64,
     icons =
     {
@@ -32,7 +63,7 @@ data:extend({
       },
     },
     subgroup = "pm-zinc-tm",
-    order = "a",
+    order = "b",
     category = "pm-acids",
     crafting_machine_tint =
     {
@@ -45,21 +76,20 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 8),
+      PM.ingredient("pm-zinc-powder", 8),
       PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
     },
-    allow_decomposition = false,
     enabled = false,
     results =
     {
-      PM.product("pm-zinc-ore", 6),
-      PM.product_range("sulfur", 2, 4),
+      PM.product("pm-zinc-ore", 2),
+      PM.product_range("sulfur", 1, 2),
     }
   },
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-zinc-leeching",
+    name = "pm-chromic-zinc-powder-leeching",
     icon_size = 64,
     icons =
     {
@@ -86,15 +116,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 8),
+      PM.ingredient("pm-zinc-powder", 8),
       PM.ingredient("pm-chromic-acid", 2, "fluid"),
     },
-    allow_decomposition = false,
     enabled = false,
     results =
     {
-      PM.product("pm-zinc-ore", 6),
-      PM.product_range("sulfur", 0, 4),
+      PM.product("pm-zinc-ore", 2),
+      PM.product_range("sulfur", 0, 2),
     }
   },
 })

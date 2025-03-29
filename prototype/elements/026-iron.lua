@@ -131,7 +131,7 @@ data:extend({
       tertiary = { r = 0.66, g = 0, b = 1, a = 0.5 },   -- smoke afteraffects
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 } --smoke
     },
-    energy_required = 2,
+    energy_required = 4,
     enabled = false,
     allow_productivity = true,
     ingredients =

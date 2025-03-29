@@ -16,10 +16,41 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-nickel-powder",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks-2.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-nickel-tm",
+    order = "b",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
-    name = "pm-transition-nickel-leeching",
+    name = "pm-nickel-powder",
+    enabled = false,
+    energy_required = 2,
+    category = "crushing",
+    subgroup = "pm-ncikel-tm",
+    order = "a",
+    ingredients = 
+    {
+      PM.ingredient("pm-nickel-chunk", 1),
+    },
+    results = 
+    {
+      PM.product("pm-zinc-powder", 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nickel-powder-leeching",
     icon_size = 64,
     icons =
     {
@@ -33,7 +64,7 @@ data:extend({
       },
     },
     subgroup = "pm-nickel-tm",
-    order = "a",
+    order = "b",
     category = "pm-acids",
     crafting_machine_tint =
     {
@@ -46,21 +77,20 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 8),
+      PM.ingredient("pm-nickel-powder", 8),
       PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
     results =
     {
-      PM.product("pm-nickel-ore", 6),
-      PM.product_range("sulfur", 2, 4),
+      PM.product("pm-nickel-ore", 2),
+      PM.product_range("sulfur", 1, 2),
     }
-  } --[[@as data.RecipePrototype]],
-
+  },
   {
     type = "recipe",
-    name = "pm-chromic-transition-nickel-leeching",
+    name = "pm-chromic-nickel-powder-leeching",
     icon_size = 64,
     icons =
     {
@@ -74,7 +104,7 @@ data:extend({
       },
     },
     subgroup = "pm-nickel-tm",
-    order = "b",
+    order = "c",
     category = "pm-acids",
     crafting_machine_tint =
     {
@@ -87,15 +117,15 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 8),
+      PM.ingredient("pm-nickel-powder", 8),
       PM.ingredient("pm-chromic-acid", 2, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
     results =
     {
-      PM.product("pm-nickel-ore", 6),
-      PM.product_range("sulfur", 0, 4),
+      PM.product("pm-nickel-ore", 2),
+      PM.product_range("sulfur", 0, 2),
     }
-  } --[[@as data.RecipePrototype]],
+  }
 })
