@@ -287,10 +287,7 @@ data:extend({
       },
       time = 20
     }
-
   },
-
-
   {
     type = "technology",
     name = "pm-logistics-4",
@@ -320,43 +317,23 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-transition-metal-refining",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/transition-metal-refining.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-transition-iron-leeching"),
-      PM.unlock_recipe("pm-transition-copper-leeching"),
-      PM.unlock_recipe("pm-transition-nickel-leeching"),
-      PM.unlock_recipe("pm-transition-zinc-leeching"),
-      PM.unlock_recipe("pm-transition-manganese-leeching"),
-    },
-    prerequisites = {"pm-ezekiel-ore-purifying"},
-    research_trigger = 
-    {
-      type = "craft-item",
-      item = "pm-transition-metals-ore",
-      count = 24
-    }
-  },
-  {
-    type = "technology",
     name = "pm-ezekiel-ore-purifying",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/ezekiel-purifying.png",
     effects =
     {
-      PM.unlock_recipe("pm-ezekiel-iron-purifying"),
-      PM.unlock_recipe("pm-ezekiel-copper-purifying"),
+      PM.unlock_recipe("pm-basic-pig-iron"),
+      PM.unlock_recipe("pm-pig-iron-seperation"),
+      PM.unlock_recipe("pm-crude-matte-copper"),
+      PM.unlock_recipe("pm-ezekiel-matte-copper-leeching"),
       PM.unlock_recipe("pm-ezekiel-nickel-purifying"),
       PM.unlock_recipe("pm-ezekiel-zinc-purifying"),
       PM.unlock_recipe("pm-transition-slag-leeching"),
-      PM.unlock_recipe("pm-chunk-slag-leeching")
     },
     prerequisites = {"automation", "pm-chlorine-processing"},
     unit =
     {
-      count = 15,
+      count = 20,
       ingredients =
       {
         {"automation-science-pack", 1}
