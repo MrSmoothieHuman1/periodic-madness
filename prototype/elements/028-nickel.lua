@@ -78,7 +78,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-nickel-powder", 8),
-      PM.ingredient("pm-hydrochloric-acid", 5, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 4, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
