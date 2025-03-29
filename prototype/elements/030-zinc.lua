@@ -38,13 +38,15 @@ data:extend({
     category = "crushing",
     subgroup = "pm-zinc-tm",
     order = "a",
+    main_product = "pm-zinc-powder",
     ingredients = 
     {
       PM.ingredient("pm-zinc-chunk", 1),
     },
     results = 
     {
-      PM.product("pm-zinc-powder", 4)
+      PM.product("pm-zinc-powder", 4),
+      PM.product_range_chance("stone", 1, 2, 0.75)
     }
   },
   {

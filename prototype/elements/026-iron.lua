@@ -56,6 +56,7 @@ data:extend({
     category = "smelting",
     subgroup = "pm-iron-tm",
     order = "a",
+    main_product = "pm-pig-iron",
     ingredients =
     {
       PM.ingredient("pm-iron-chunk", 1)
