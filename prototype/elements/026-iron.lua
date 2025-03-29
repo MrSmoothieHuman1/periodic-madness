@@ -28,7 +28,7 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-advanced-iron-tm",
-    order = "a",
+    order = "b",
     stack_size = 200
   },
   {
@@ -50,22 +50,43 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-transition-iron-leeching",
+    name = "pm-basic-pig-iron",
+    enabled = false,
+    energy_required = 3.2,
+    category = "smelting",
+    subgroup = "pm-iron-tm",
+    order = "a",
+    ingredients =
+    {
+      PM.ingredient("pm-iron-chunk", 1)
+    },
+    results = 
+    {
+      PM.product("pm-pig-iron", 1),
+      PM.product_range_chance("stone", 1, 2, 0.75)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-pig-iron-seperation",
     icon_size = 64,
     icons =
     {
       {
-        icon = "__base__/graphics/icons/iron-ore.png",
+        icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
         icon_size = 64,
       },
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
+        scale = 0.8,
       },
     },
     subgroup = "pm-iron-tm",
     order = "b",
     category = "pm-acids",
+    enabled = false,
+    energy_required = 2,
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },      --main visible colour
@@ -73,35 +94,31 @@ data:extend({
       tertiary = { r = 0.66, g = 0.91, b = 1, a = 0.5 }, -- smoke afteraffects
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 }  --smoke
     },
-    energy_required = 4,
-    allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 8),
-      PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
+      PM.ingredient("pm-pig-iron", 2),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid")
     },
-    allow_decomposition = false,
-    enabled = false,
     results =
     {
-      PM.product("iron-ore", 6),
-      PM.product_range("pm-ferrum", 2, 4),
+      PM.product("iron-ore", 2),
+      PM.product_range("pm-ferrum", 1, 2)
     }
-  } --[[@as data.RecipePrototype]],
-
+  },
   {
     type = "recipe",
-    name = "pm-chromic-transition-iron-leeching",
+    name = "pm-chromic-pig-iron-seperation",
     icon_size = 64,
     icons =
     {
       {
-        icon = "__base__/graphics/icons/iron-ore.png",
+        icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
         icon_size = 64,
       },
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
+        scale = 0.8
       },
     },
     subgroup = "pm-iron-tm",
@@ -115,21 +132,21 @@ data:extend({
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 } --smoke
     },
     energy_required = 2,
-    ingredients =
-    {
-      PM.ingredient("pm-transition-metals-ore", 8),
-      PM.ingredient("pm-chromic-acid", 2, "fluid"),
-    },
-    allow_decomposition = false,
     enabled = false,
     allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-pig-iron", 4),
+      PM.ingredient("pm-chromic-acid", 2, "fluid"),
+    },
     results =
     {
-      PM.product("iron-ore", 6),
+      PM.product("iron-ore", 4),
       PM.product_range("pm-ferrum", 0, 4),
     }
-  } --[[@as data.RecipePrototype]],
+  },
 
+  --MARK: Adv. Iron
   -- better version of iron, normal chunk to ore is 1:2 - this is 1:6, so 4 chunks (pig iron) turns into 24 ore
   {
     type = "recipe",

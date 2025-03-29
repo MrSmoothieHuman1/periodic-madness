@@ -5968,7 +5968,7 @@ data:extend({
     result_inventory_size = 1,
     crafting_speed = 1.25,
     energy_usage = "200kW",
-    source_inventory_size = 1,
+    source_inventory_size = 2,
     energy_source =
     {
       type = "heat",
@@ -6165,7 +6165,7 @@ data:extend({
     result_inventory_size = 1,
     crafting_speed = 1,
     energy_usage = "200kW",
-    source_inventory_size = 1,
+    source_inventory_size = 2,
     energy_source =
     {
       type = "electric",
@@ -8506,4 +8506,8 @@ data.raw["furnace"]["electric-furnace"].icons_positioning =
 data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
 data.raw["furnace"]["electric-furnace"].energy_source.drain = "0kW"
+data.raw["furnace"]["electric-furnace"].result_inventory_size = 2
+
+data.raw["furnace"]["stone-furnace"].result_inventory_size = 2
+data.raw["furnace"]["steel-furnace"].result_inventory_size = 2
 

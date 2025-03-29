@@ -41,6 +41,7 @@ Date: 2024-12-08
     - Added syngas, which can be produced from oil recipes or made from carbon.
     - Changed it so that certain buildings (greenhouses, bacteria incubators) cannot be used if there is too much pollution in the same chunk as them.
     - Also changed it so that certain buildings (air filters) now require to be in polluted chunks.
+    - Overhauled the production of the 4 starter metals (iron, copper, nickel, zinc). They now take two steps to produce instead of one, and cannot be made from TM ores anymore.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

@@ -15,51 +15,80 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-crude-matte-copper",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/copper-chunks-2.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-copper-tm",
+    order = "b",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
-    name = "pm-transition-copper-leeching",
+    name = "pm-crude-matte-copper",
+    enabled = false,
+    energy_required = 3.2,
+    category = "smelting",
+    subgroup = "pm-copper-tm",
+    order = "a",
+    ingredients =
+    {
+      PM.ingredient("pm-copper-chunk", 1)
+    },
+    results = 
+    {
+      PM.product("pm-crude-matte-copper", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ezekiel-matte-copper-leeching",
     icon_size = 64,
     icons =
     {
       {
-        icon = "__base__/graphics/icons/copper-ore.png",
+        icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",
         icon_size = 64,
       },
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
+        scale = 0.8
       },
     },
     subgroup = "pm-copper-tm",
-    order = "a",
+    order = "b",
     category = "pm-acids",
-    crafting_machine_tint =
+    enabled = false,
+    energy_required = 2,
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },     --main visible colour
       secondary = { r = 0.87, g = 0.47, b = 0, a = 1 }, --background visible colour
       tertiary = { r = 0.87, g = 0.5, b = 0, a = 0.5 }, -- smoke afteraffects
       quaternary = { r = 0.5, g = 0.8, b = 0.5, a = 1 } --smoke
     },
-    energy_required = 4,
-    allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 8),
-      PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
+      PM.ingredient("pm-crude-matte-copper", 2),
+      PM.ingredient("pm-hydrochloric-acid", 5, "fluid")
     },
-    allow_decomposition = false,
-    enabled = false,
     results =
     {
-      PM.product("copper-ore", 6),
-      PM.product_range("pm-patina", 2, 4),
+      PM.product("copper-ore", 2),
+      PM.product_range("pm-patina", 1, 2)
     }
-  } --[[@as data.RecipePrototype]],
+  },
 
   {
     type = "recipe",
-    name = "pm-chromic-transition-copper-leeching",
+    name = "pm-chromic-matte-copper-leeching",
     icon_size = 64,
     icons =
     {
@@ -70,6 +99,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
+        scale = 0.8,
       },
     },
     subgroup = "pm-copper-tm",
@@ -86,15 +116,15 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 8),
+      PM.ingredient("pm-crude-matte-copper", 4),
       PM.ingredient("pm-chromic-acid", 2, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
     results =
     {
-      PM.product("copper-ore", 6),
-      PM.product_range("pm-patina", 0, 4),
+      PM.product("copper-ore", 4),
+      PM.product_range("pm-patina", 0, 2),
     }
-  } --[[@as data.RecipePrototype]],
+  }
 })
