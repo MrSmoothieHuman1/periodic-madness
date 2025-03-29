@@ -60,7 +60,7 @@ data:extend({
       PM.unlock_recipe("pm-ferrum-leeching"),
       PM.unlock_recipe("pm-patina-leeching"),
     },
-    prerequisites = {"pm-ezekiel-ore-purifiying"},
+    prerequisites = {"pm-ezekiel-ore-purifying"},
     unit =
     {
       count = 15,
@@ -304,7 +304,7 @@ data:extend({
     {
       count = 425,
       ingredients =
-      {  
+      {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
@@ -326,9 +326,10 @@ data:extend({
       PM.unlock_recipe("pm-pig-iron-seperation"),
       PM.unlock_recipe("pm-crude-matte-copper"),
       PM.unlock_recipe("pm-ezekiel-matte-copper-leeching"),
-      PM.unlock_recipe("pm-ezekiel-nickel-purifying"),
-      PM.unlock_recipe("pm-ezekiel-zinc-purifying"),
-      PM.unlock_recipe("pm-transition-slag-leeching"),
+      PM.unlock_recipe("pm-nickel-powder"),
+      PM.unlock_recipe("pm-nickel-powder-leeching"),
+      PM.unlock_recipe("pm-zinc-powder"),
+      PM.unlock_recipe("pm-zinc-powder-leeching"),
     },
     prerequisites = {"automation", "pm-chlorine-processing"},
     unit =
@@ -1362,10 +1363,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/chromic-acid-leeching.png",
     effects =
     {
-      PM.unlock_recipe("pm-chromic-transition-iron-leeching"),
-      PM.unlock_recipe("pm-chromic-transition-copper-leeching"),
-      PM.unlock_recipe("pm-chromic-transition-nickel-leeching"),
-      PM.unlock_recipe("pm-chromic-transition-zinc-leeching"),
+      PM.unlock_recipe("pm-chromic-pig-iron-seperation"),
+      PM.unlock_recipe("pm-chromic-matte-copper-leeching"),
+      PM.unlock_recipe("pm-chromic-nickel-powder-leeching"),
+      PM.unlock_recipe("pm-chromic-zinc-powder-leeching"),
       PM.unlock_recipe("pm-chromic-transition-manganese-leeching"),
       PM.unlock_recipe("pm-chromic-transition-aluminium-leeching"),
       PM.unlock_recipe("pm-chromic-gold-leeching"),
