@@ -4409,6 +4409,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-copper-powder"),
+      PM.unlock_recipe("pm-powdered-copper-frothing"),
       PM.unlock_recipe("pm-matte-copper"),
       PM.unlock_recipe("pm-blister-copper"),
       PM.unlock_recipe("pm-fire-refined-copper"),
