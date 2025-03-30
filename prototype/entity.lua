@@ -672,14 +672,14 @@ data:extend({
       production_type = "output",
       filter = "steam"
     },
-    energy_consumption = "900kW",
+    energy_consumption = "450kW",
     energy_source =
     {
       type = "burner",
       fuel_categories = {"chemical", "pm-oil-canisters"},
       effectivity = 1,
       fuel_inventory_size = 1,
-      emissions_per_minute = {pollution = 30},
+      emissions_per_minute = {pollution = 20},
       light_flicker =
       {
         color = { 0, 0, 0 },
