@@ -241,7 +241,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-advanced-iron-tm",
     order = "d",
-    energy_required = 5,
+    energy_required = 8,
     main_product = "pm-low-quality-quartzite",
     ingredients = 
     {

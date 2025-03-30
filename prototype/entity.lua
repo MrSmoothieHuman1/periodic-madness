@@ -4663,32 +4663,32 @@ data:extend({
     crafting_speed = 1,
     energy_usage = "800kW",
     graphics_set =
-  {
-    animation =
     {
-      layers =
+      animation =
       {
+        layers =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
-          width = 448,
-          height = 448,
-          line_length = 6,
-          frame_count = 24,
-          scale = 0.5,
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
-          width = 448,
-          height = 448,
-          line_length = 1,
-          frame_count = 1,
-          repeat_count = 24,
-          scale = 0.5,
-          shift = util.by_pixel(40, 12),
-          draw_as_shadow = true,
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
+            width = 448,
+            height = 448,
+            line_length = 6,
+            frame_count = 24,
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
+            width = 448,
+            height = 448,
+            line_length = 1,
+            frame_count = 1,
+            repeat_count = 24,
+            scale = 0.5,
+            shift = util.by_pixel(40, 12),
+            draw_as_shadow = true,
+          }
         }
       }
-    }
     },
     fluid_boxes =
     {

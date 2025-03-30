@@ -186,7 +186,7 @@ data:extend({
     PM.ingredient("pm-copper-chunk", 4),
     PM.ingredient("pm-patina", 3)
   },
-  results = 
+  results =
   {
     PM.product("pm-copper-powder", 12)
   }
@@ -199,6 +199,7 @@ data:extend({
   category = "pm-mixing",
   subgroup = "pm-advanced-copper-tm",
   order = "b",
+  main_product = "pm-copper-froth",
   ingredients =
   {
     PM.ingredient("pm-copper-powder", 6),
@@ -213,22 +214,22 @@ data:extend({
 },
 {
   type = "recipe",
-  name = "pm-copper-matte",
+  name = "pm-matte-copper",
   enabled = false,
   energy_required = 8,
   category = "pm-moltening", --should be in reverbatory furnace
   subgroup = "pm-advanced-copper-tm",
   order = "c",
-  main_product = "pm-copper-matte",
+  main_product = "pm-matte-copper",
   ingredients =
   {
-    PM.ingredient("pm-copper-froth", 10),
+    PM.ingredient("pm-copper-froth", 10, "fluid"),
   },
   results =
   {
-    PM.product("pm-copper-matte", 15, "fluid"),
+    PM.product("pm-matte-copper", 15, "fluid"),
     PM.product_range("sulfur", 0, 4),
-    PM.product_range_chance("pm-gold-chunk", 0, 2, 0.66)
+    PM.product_range_chance("pm-gold-chunks", 0, 2, 0.66)
   }
 },
 {
@@ -242,15 +243,15 @@ data:extend({
   main_product = "pm-blister-copper",
   ingredients =
   {
-    PM.ingredient("pm-copper-matte", 15, "fluid"),
+    PM.ingredient("pm-matte-copper", 15, "fluid"),
     PM.ingredient("pm-cobalt-catalyst", 3)
   },
   results = 
   {
     PM.catalyst_range_chance("pm-cobalt-catalyst", 1, 3, 1, 0.8),
     PM.catalyst_range_chance("pm-catalyst-container", 0, 2, 0, 0.2),
-    PM.product("pm-blister-copper", 14, "fluid"),
-    PM.product_range("pm-combined-ore-slag", 0, 3, "fluid")
+    PM.product("pm-blister-copper", 14),
+    PM.product_range("pm-combined-ore-slab", 0, 3)
   }
 },
 {
@@ -263,10 +264,10 @@ data:extend({
   order = "e",
   ingredients =
   {
-    PM.ingredient("pm-blister-copper", 14, "fluid"),
+    PM.ingredient("pm-blister-copper", 14),
     PM.ingredient("pm-syngas", 40, "fluid")
   },
-  results = 
+  results =
   {
     PM.product("pm-fire-refined-copper", 10)
   }
@@ -283,12 +284,12 @@ data:extend({
   ingredients =
   {
     PM.ingredient("pm-fire-refined-copper", 5),
-    PM.ingredient("oxygen-gas", 20, "fluid")
+    PM.ingredient("pm-oxygen-gas", 20, "fluid")
   },
   results =
   {
     PM.product("copper-ore", 12),
-    PM.product_range_chance("pm-platinum-chunk", 0, 2, 0.33)
+    PM.product_range_chance("pm-platinum-powder", 0, 2, 0.33)
   }
 }
 })
