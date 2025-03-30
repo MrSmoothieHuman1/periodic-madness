@@ -4289,7 +4289,8 @@ data:extend({
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
       PM.unlock_recipe("pm-bauxite-powder"),
       PM.unlock_recipe("pm-aluminium-hydroxide-slurry"),
-      PM.unlock_recipe("pm-aluminium-ore")
+      PM.unlock_recipe("pm-aluminium-ore"),
+      PM.unlock_recipe("pm-aluminium-plate"),
     },
     prerequisites = {"pm-mixing-material-processing-1"},
     unit =
