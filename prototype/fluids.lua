@@ -53,7 +53,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sea-water.png",
     default_temperature = 15,
-    heat_capacity = "0.2kJ",
+    heat_capacity = "1kJ",
     base_color = {r = 0.3, g = 0.69, b = 0.98},
     flow_color = {r = 0.3, g = 0.69, b = 0.98}
   },
