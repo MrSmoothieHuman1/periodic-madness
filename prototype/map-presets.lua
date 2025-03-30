@@ -2,7 +2,7 @@ data:extend({
 
     ["pm-periodic-default"] =
     {
-      order = "e",
+      order = "A",
       basic_settings =
       {
         property_expression_names = {},
@@ -51,10 +51,6 @@ data:extend({
         {
           time_factor = 0.000002
         },
-        enemy_expansion =
-        {
-         enabled = false
-        }
       }
     },
 })

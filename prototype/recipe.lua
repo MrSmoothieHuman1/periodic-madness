@@ -1753,7 +1753,6 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ferrum.png",
         icon_size = 64,
       },
-      
     },
     enabled = false,
     energy_required = 3,
@@ -1782,7 +1781,6 @@ data:extend({
         icon = "__base__/graphics/icons/iron-plate.png",
         icon_size = 64,
       },
-      
     },
     enabled = false,
     energy_required = 3,
