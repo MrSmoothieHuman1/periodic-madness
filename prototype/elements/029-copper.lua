@@ -202,7 +202,7 @@ data:extend({
   main_product = "pm-copper-froth",
   ingredients =
   {
-    PM.ingredient("pm-copper-powder", 6),
+    PM.ingredient("pm-copper-powder", 12),
     PM.ingredient("water", 30, "fluid"),
     PM.ingredient("pm-sodium-hydroxide", 5, "fluid")
   },
