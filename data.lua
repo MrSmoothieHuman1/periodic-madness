@@ -584,3 +584,10 @@ data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_
 data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
 
 table.insert(data.raw["character"]["character"].crafting_categories, "pm-circuitry")
+
+if settings.startup["pm-circuit-colourblind-friendly-icons"].value == true then
+  data.raw["item"]["electronic-circuit"].icon = "__periodic-madness__/graphics/icons/new-electronic-circuit.png"
+  data.raw["item"]["pm-fluid-circuit"].icon = "__periodic-madness__/graphics/icons/new-fluid-circuit.png"
+  data.raw["item"]["processing-unit"].icon = "__periodic-madness__/graphics/icons/new-processing-unit.png"
+
+end
