@@ -3779,7 +3779,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-calcium-sulfate-concrete",
+    name = "pm-calcium-sulfate-refined-concrete",
     energy_required = 5,
     enabled = false,
     category = "crafting-with-fluid",

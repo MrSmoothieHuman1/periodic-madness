@@ -3957,6 +3957,7 @@ data:extend({
       PM.unlock_recipe("pm-calcium-sulfate-chunks"),
       PM.unlock_recipe("pm-calcium-sulfate"),
       PM.unlock_recipe("pm-calcium-sulfate-concrete"),
+      PM.unlock_recipe("pm-calcium-sulfate-refined-concrete"),
     },
     prerequisites = {"pm-better-calcium-extraction", "pm-better-sulfur-extraction"},
     unit =
