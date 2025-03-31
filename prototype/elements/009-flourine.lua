@@ -75,7 +75,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-calcium-sulfate", 4, 8),
+      PM.product_range("pm-calcium-sulfate", 2, 5),
       PM.product("pm-hydrogen-flouride", 8, "fluid")
     }
   } --[[@as data.RecipePrototype]],

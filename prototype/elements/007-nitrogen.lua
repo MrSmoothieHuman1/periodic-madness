@@ -5,7 +5,12 @@ data:extend({
       type = "item",
       name = "pm-nitrous-iron",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+      icon = "__periodic-madness__/graphics/icons/nitrous-iron.png",
+      pictures = 
+      {
+        {filename = "__periodic-madness__/graphics/icons/nitrous-iron.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/nitrous-iron-2.png", size = 64, scale = 0.5},
+      },
       subgroup = "pm-nitrogen-rnm",
       order = "ga",
       stack_size = 50
