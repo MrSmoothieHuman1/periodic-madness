@@ -17,6 +17,6 @@ data:extend({
         type = "bool-setting",
         name = "pm-circuit-colourblind-friendly-icons",
         setting_type = "startup",
-        default_value = true
-    }
+        default_value = false
+    } 
 })
