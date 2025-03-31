@@ -143,7 +143,6 @@ data:extend({
     results =
     {
       PM.product("iron-ore", 4),
-      PM.product_range_chance("pm-ferrum", 0, 2, 0.5),
     }
   },
 

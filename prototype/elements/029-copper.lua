@@ -166,7 +166,6 @@ data:extend({
     results =
     {
       PM.product("copper-ore", 4),
-      PM.product_range_chance("pm-patina", 0, 2, 0.5),
     }
   },
 
