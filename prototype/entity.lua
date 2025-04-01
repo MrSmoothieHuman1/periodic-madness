@@ -4434,7 +4434,7 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["assembling-machine"],
     allowed_effects = PM.all_effects(),
-    module_slots = 3,
+    module_slots = 2,
     graphics_set = 
   {
     animation =
@@ -4470,7 +4470,7 @@ data:extend({
     },
     crafting_categories = { "pm-electrolysis" },
     crafting_speed = 1,
-    energy_usage = "200kW",
+    energy_usage = "165kW",
     energy_source =
     {
       type = "electric",
