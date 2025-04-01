@@ -20,7 +20,7 @@ data:extend({
       icon_size = 128,
       subgroup = "pm-speed",
       category = "speed",
-       tier = 4,
+      tier = 4,
       order = "d",
       stack_size = 50,
       effect = { speed = 0.7, consumption = 0.9 },
@@ -198,7 +198,7 @@ data:extend({
     }, -- high heat capacity, less pollution
     {
       type = "module",
-      name = "pm-silver-heating-coil",
+      name = "pm-molybdenum-heating-coil",
       icon_size = 64,
       icon = "__periodic-madness__/graphics/icons/modules/silver-heating-coil.png",
       tier = 1,

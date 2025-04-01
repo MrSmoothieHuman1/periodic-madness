@@ -3710,7 +3710,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-silver-heating-coil",
+    name = "pm-molybdenum-heating-coil",
     energy_required = 10,
     enabled = false,
     subgroup = "pm-coils",
@@ -3718,11 +3718,11 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-lightweight-framing", 5),
-      PM.ingredient("pm-silver-plate", 10),
+      PM.ingredient("pm-molybdenum", 10),
     },
     results = 
     {
-      PM.product("pm-silver-heating-coil", 1)
+      PM.product("pm-molybdenum-heating-coil", 1)
     }
   },
   {
