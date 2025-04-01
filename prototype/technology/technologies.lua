@@ -4541,7 +4541,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-aluminium-heating-coil"),
       PM.unlock_recipe("pm-tungsten-heating-coil"),
-      PM.unlock_recipe("pm-molybdenum-eating-coil"),
+      PM.unlock_recipe("pm-molybdenum-heating-coil"),
     },
     prerequisites = {"advanced-material-processing-2"},
     research_trigger =
