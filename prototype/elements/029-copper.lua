@@ -96,7 +96,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png",
+        icon = "__periodic-madness__/graphics/icons/ores/crude-matte-copper.png",
         icon_size = 64,
       },
       {
@@ -135,7 +135,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__base__/graphics/icons/copper-ore.png",
+        icon = "__periodic-madness__/graphics/icons/ores/crude-matte-copper.png",
         icon_size = 64,
       },
       {
