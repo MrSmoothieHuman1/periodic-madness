@@ -20,10 +20,10 @@ data:extend({
     type = "item",
     name = "pm-nickel-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
+    icon = "__periodic-madness__/graphics/icons/ores/nickel-powder.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/nickel-powder.png",   size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-nickel-tm",
