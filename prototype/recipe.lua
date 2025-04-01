@@ -3718,7 +3718,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-lightweight-framing", 5),
-      PM.ingredient("pm-molybdenum", 10),
+      PM.ingredient("pm-molybdenum-ore", 10),
     },
     results = 
     {
