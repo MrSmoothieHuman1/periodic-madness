@@ -71,6 +71,7 @@ data:extend({
     order = "d",
     stack_size = 200
   },
+  -- april fools dingbat
 
   {
     type = "recipe",
