@@ -53,7 +53,7 @@ data:extend({
     name = "pm-basic-pig-iron",
     enabled = false,
     energy_required = 3.2 / 2,
-    category = "smelting",
+    category = "pm-crushing",
     subgroup = "pm-iron-tm",
     order = "a",
     main_product = "pm-pig-iron",

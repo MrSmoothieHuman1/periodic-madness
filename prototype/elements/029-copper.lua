@@ -79,7 +79,7 @@ data:extend({
     name = "pm-crude-matte-copper",
     enabled = false,
     energy_required = 3.2 / 2,
-    category = "smelting",
+    category = "pm-crushing",
     subgroup = "pm-copper-tm",
     order = "a",
     ingredients =
