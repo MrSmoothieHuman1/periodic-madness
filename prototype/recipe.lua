@@ -1217,7 +1217,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-coolant",
-    category = "chemistry",
+    category = "pm-cooling",
     subgroup = "pm-bismuth-ptm",
     order = "ab",
     energy_required = 4,
@@ -3585,7 +3585,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-light-coolant",
-    category = "chemistry",
+    category = "pm-coolant",
     energy_required = 4,
     enabled = false,
     allow_productivity = true,

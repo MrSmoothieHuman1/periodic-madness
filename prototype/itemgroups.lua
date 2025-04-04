@@ -126,6 +126,10 @@ data:extend({
     type = "recipe-category",
     name = "pm-steamed-hams"
   },
+  {
+    type = "recipe-category",
+    name = "pm-cooling"
+  },
   -- For the consumption of reactor coolant
 	{
 		type = "recipe-category",
