@@ -1387,6 +1387,23 @@ data:extend({
       PM.product("pm-electric-boiler-2", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-cooling-plant",
+    enabled = false,
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("pm-brass-cog", 6),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8),
+      PM.ingredient("pm-fluid-circuit", 4),
+      PM.ingredient("pm-heavyweight-framing", 15)
+    },
+    results = 
+    {
+      PM.product("pm-cooling-plant", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

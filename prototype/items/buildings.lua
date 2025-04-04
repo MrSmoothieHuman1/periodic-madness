@@ -737,6 +737,15 @@ data:extend({
     place_result = "pm-electric-boiler-2",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-cooling-plant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
+    subgroup = "production-machine",
+    place_result = "pm-cooling-plant",
+    stack_size = 50,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
@@ -782,9 +791,9 @@ data.raw["item"]["heat-pipe"].order = "b"
 data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-pipe"].order = "b"
 
-data.raw["item"]["heat-exchanger"].subroup = "pm-heat-machines"
+data.raw["item"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["item"]["heat-exchanger"].order = "Aa"
-data.raw["recipe"]["heat-exchanger"].subroup = "pm-heat-machines"
+data.raw["recipe"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-exchanger"].order = "Aa"
 
 data.raw["item"]["pipe-to-ground"].stack_size = 100

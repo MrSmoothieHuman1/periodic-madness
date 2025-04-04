@@ -8180,7 +8180,7 @@ fluid_boxes =
   icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 0.5, result = "pm-washing-plant-1" },
+  minable = { mining_time = 0.5, result = "pm-cooling-plant" },
   max_health = 550,
   corpse = "assembling-machine-1-remnants",
   dying_explosion = "assembling-machine-1-explosion",

@@ -1860,6 +1860,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/crystallisation-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-cooling-plant"),
       PM.unlock_recipe("pm-ethylene-glycol"),
       PM.unlock_recipe("pm-coolant"),
       PM.unlock_recipe("pm-crystallizer"),
