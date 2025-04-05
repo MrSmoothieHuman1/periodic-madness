@@ -127,4 +127,48 @@ data:extend({
       PM.product("pm-zinc-ore", 2),
     }
   },
+
+--MARK: Adv. Zinc
+{
+  type = "recipe",
+  name = "pm-matte-nickel",
+  enabled = false,
+  energy_required = 8,
+  category = "pm-moltening", --should be in reverbatory furnace
+  subgroup = "pm-advanced-nickel-tm",
+    order = "b",
+  main_product = "pm-matte-nickel",
+  allow_productivity = true,
+  ingredients =
+  {
+    PM.ingredient("pm-nickel-froth", 10, "fluid"),
+  },
+  results =
+  {
+    PM.product("pm-matte-nickel", 15, "fluid"),
+    PM.product_range("sulfur", 0, 4),
+    PM.product_range_chance("pm-patina", 0, 2, 0.33)
+  }
+  },
+  {
+  type = "recipe",
+  name = "pm-mixed-nickel-concentrate",
+  enabled = false,
+  energy_required = 8,
+  category = "chemistry",
+  subgroup = "pm-advanced-nickel-tm",
+  order = "c",
+  main_product = "pm-mixed-nickel-concentrate",
+  ingredients =
+  {
+    PM.ingredient("pm-matte-nickel", 15, "fluid"),
+    PM.ingredient("pm-ammonia-gas", 20, "fluid")
+  },
+  results =
+  {
+    PM.product("pm-mixed-nickel-concentrate", 10, "fluid"),
+    PM.product_range("pm-ammonium-chloride", 5, 7)
+  }
+},
+
 })
