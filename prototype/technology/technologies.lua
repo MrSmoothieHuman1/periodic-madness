@@ -4441,6 +4441,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-powdered-nickel-frothing"),
+      PM.unlock_recipe("pm-matte-nickel"),
+      PM.unlock_recipe("pm-mixed-nickel-concentrate"),
+      PM.unlock_recipe("pm-high-purity-nickel-powder"),
+      PM.unlock_recipe("pm-nickel-sulfate"),
+      PM.unlock_recipe("pm-nickel-sulfate-seperation")
     },
     prerequisites = {"pm-advanced-material-processing-3"},
     unit =

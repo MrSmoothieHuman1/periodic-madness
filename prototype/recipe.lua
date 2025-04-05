@@ -3585,7 +3585,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-light-coolant",
-    category = "pm-coolant",
+    category = "pm-cooling",
     energy_required = 4,
     enabled = false,
     allow_productivity = true,
@@ -3720,7 +3720,7 @@ data:extend({
       PM.ingredient("pm-lightweight-framing", 5),
       PM.ingredient("pm-molybdenum-ore", 10),
     },
-    results = 
+    results =
     {
       PM.product("pm-molybdenum-heating-coil", 1)
     }
