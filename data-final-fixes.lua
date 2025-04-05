@@ -95,7 +95,6 @@ local machines = {
 	data.raw["beacon"],
 	data.raw["assembling-machine"],
 	data.raw["lab"],
-	data.raw["furnace"],
 	data.raw["mining-drill"]
 }
 
