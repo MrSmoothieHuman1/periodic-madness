@@ -224,7 +224,7 @@ data:extend({
   name = "pm-high-purity-nickel-powder",
   enabled = false,
   energy_required = 16,
-  category = "pm-coldening",
+  category = "chemistry",
   subgroup = "pm-advanced-nickel-tm",
   order = "d",
   main_product = "pm-high-purity-nickel-powder",
