@@ -90,3 +90,35 @@ for _, removal in pairs(removals) do
 end
 
 data.raw["item"]["plastic-bar"] = nil
+
+local machines = {
+	data.raw["beacon"],
+	data.raw["assembling-machine"],
+	data.raw["lab"],
+	data.raw["furnace"],
+	data.raw["mining-drill"]
+}
+
+for _, machineType in pairs(machines) do
+	for _, machine in pairs(machineType) do
+		if not (machine.allowed_module_categories == nil) then
+			for i, moduleCat in pairs(machine.allowed_module_categories) do
+				if moduleCat.name == "hc-heating-coils" then
+					table.remove(machine.allowed_module_categories,i)
+					break
+				end
+			end
+		elseif not(machine.module_slots == nil) and machine.module_slots > 0 and not(machine.allowed_effects == nil)  then
+			if(machine.allowed_module_categories == nil) then
+				machine.allowed_module_categories = {}
+			end
+
+			for _, moduleCat in pairs(data.raw["module-category"]) do
+				if not(moduleCat.name == "hc-heating-coils") then
+					
+					table.insert(machine.allowed_module_categories,moduleCat.name)
+				end
+			end
+		end
+	end
+end
