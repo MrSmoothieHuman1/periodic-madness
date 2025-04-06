@@ -162,7 +162,7 @@ data:extend({
   name = "pm-powdered-zinc-frothing",
   icon_size = 64,
   icon = "__periodic-madness__/graphics/icons/recipes/nickel-chunk-frothing.png",
-  category = "pm-washing",
+  category = "pm-mixing",
   subgroup = "pm-advanced-zinc-tm",
   order = "a",
   enabled = false,
