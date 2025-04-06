@@ -7430,7 +7430,8 @@ data:extend({
   collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
   selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
   crafting_categories = {"pm-moltening", "pm-advanced-moltening"},
-  energy_usage = "1MW",
+  energy_usage = "0.95MW",
+  drain = "0.05MW",
   crafting_speed = 3,
   energy_source =
   {
