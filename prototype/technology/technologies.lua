@@ -4470,6 +4470,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-powdered-zinc-frothing"),
+      PM.unlock_recipe("pm-zinc-sulfide-concentrate"),
+      PM.unlock_recipe("pm-zinc-oxide"),
+      PM.unlock_recipe("pm-zinc-vapour"),
+      PM.unlock_recipe("pm-zinc-vapour-condensing"),
+      PM.unlock_recipe("pm-zinc-tailings-cleaning")
     },
     prerequisites = {"pm-advanced-material-processing-3"},
     unit =

@@ -39,7 +39,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-zinc-powder", 8),
+      PM.ingredient("pm-zinc-powder", 12),
       PM.ingredient("steam", 25, "fluid"),
       PM.ingredient("sulfur", 3)
     },

@@ -158,12 +158,12 @@ data:extend({
     energy_required = 3,
     allow_productivity = true,
     main_product = "pm-pig-iron",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-iron-chunk", 4),
       PM.ingredient("pm-coke", 4)
     },
-    results = 
+    results =
     {
       PM.product("pm-pig-iron", 6),
       PM.product_range("pm-calcite", 0, 4)
@@ -179,14 +179,14 @@ data:extend({
     energy_required = 3,
     allow_productivity = true,
     main_product = "pm-mixed-molten-iron",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-magnetite", 3),
       PM.ingredient("pm-pig-iron", 6),
       PM.ingredient("pm-filled-flux-container", 3),
       PM.ingredient("pm-oxygen-gas", 20, "fluid")
     },
-    results = 
+    results =
     {
       PM.product_range("pm-flux-container", 1, 3),
       PM.product("pm-mixed-molten-iron", 20, "fluid"),
@@ -202,11 +202,11 @@ data:extend({
     order = "c",
     energy_required = 6,
     main_product = "iron-ore",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-mixed-molten-iron", 10, "fluid"),
     },
-    results = 
+    results =
     {
       PM.product_range("pm-molten-ore-slag", 2.5, 5, "fluid"),
       PM.product("iron-ore", 12)
@@ -221,16 +221,16 @@ data:extend({
     order = "c",
     energy_required = 5,
     main_product = "pm-combined-ore-slab",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-molten-ore-slag", 5, "fluid"),
       PM.ingredient("pm-cobalt-catalyst", 2)
     },
-    results = 
+    results =
     {
       PM.product_range("pm-combined-ore-slab", 2, 4),
-      PM.product_range_chance("pm-cobalt-catalyst", 0, 2, 0.7),
-      PM.product_range_chance("pm-catalyst-container", 0, 2, 0.25)
+      PM.product_range_chance("pm-cobalt-catalyst", 0, 2, 0.75),
+      PM.product_range_chance("pm-catalyst-container", 0, 2, 0.2) --intended loss of catalyst
     }
   },
   {
@@ -242,11 +242,11 @@ data:extend({
     order = "d",
     energy_required = 8,
     main_product = "pm-low-quality-quartzite",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-combined-ore-slab", 4)
     },
-    results = 
+    results =
     {
       --PM.product_range("pm-rutile-slag", 0, 3),
       PM.product_range("pm-ferrum", 0, 4),

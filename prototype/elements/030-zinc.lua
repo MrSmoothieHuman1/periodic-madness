@@ -29,6 +29,34 @@ data:extend({
     order = "a",
     stack_size = 300
   },
+  {
+    type = "item",
+    name = "pm-zinc-oxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks-2.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-advanced-zinc-tm",
+    order = "a",
+    stack_size = 300
+  },
+  {
+    type = "item",
+    name = "pm-zinc-chunk",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks-2.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-zinc-tm",
+    order = "c",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -131,43 +159,126 @@ data:extend({
 --MARK: Adv. Zinc
 {
   type = "recipe",
-  name = "pm-matte-nickel",
+  name = "pm-powdered-zinc-frothing",
+  icon_size = 64,
+  icon = "__periodic-madness__/graphics/icons/recipes/nickel-chunk-frothing.png",
+  category = "pm-washing",
+  subgroup = "pm-advanced-zinc-tm",
+  order = "a",
+  enabled = false,
+  energy_required = 2,
+  main_product = "pm-zinc-froth",
+  ingredients =
+  {
+    PM.ingredient("pm-zinc-powder", 16),
+    PM.ingredient("water", 25, "fluid"),
+    PM.ingredient("sulfuric-acid", 2.5, "fluid"),
+    PM.ingredient("pm-sodium-hydroxide", 2.5, "fluid"),
+  },
+  results =
+  {
+    PM.product("pm-zinc-froth", 20, "fluid"),
+    PM.product("pm-zinc-tailings", 10, "fluid")
+  }
+},
+{
+  type = "recipe",
+  name = "pm-zinc-sulfide-concentrate",
   enabled = false,
   energy_required = 8,
   category = "pm-moltening", --should be in reverbatory furnace
-  subgroup = "pm-advanced-nickel-tm",
-    order = "b",
-  main_product = "pm-matte-nickel",
+  subgroup = "pm-advanced-zinc-tm",
+  order = "b",
+  main_product = "pm-zinc-sulfide-concentrate",
   allow_productivity = true,
   ingredients =
   {
-    PM.ingredient("pm-nickel-froth", 10, "fluid"),
+    PM.ingredient("pm-zinc-froth", 20, "fluid"),
   },
   results =
   {
-    PM.product("pm-matte-nickel", 15, "fluid"),
-    PM.product_range("sulfur", 0, 4),
-    PM.product_range_chance("pm-patina", 0, 2, 0.33)
+    PM.product("pm-zinc-sulfide-concentrate", 15, "fluid"),
+    PM.product_range("pm-molten-ore-slag", 0, 2, "fluid")
   }
-  },
-  {
+},
+{
   type = "recipe",
-  name = "pm-mixed-nickel-concentrate",
+  name = "pm-zinc-oxide",
   enabled = false,
-  energy_required = 8,
-  category = "chemistry",
-  subgroup = "pm-advanced-nickel-tm",
+  energy_required = 16,
+  category = "chemistry", --should be blast furnace
+  subgroup = "pm-advanced-zinc-tm",
   order = "c",
-  main_product = "pm-mixed-nickel-concentrate",
+  main_product = "pm-zinc-oxide",
   ingredients =
   {
-    PM.ingredient("pm-matte-nickel", 15, "fluid"),
-    PM.ingredient("pm-ammonia-gas", 20, "fluid")
+    PM.ingredient("pm-zinc-sulfide-concentrate", 15, "fluid"),
+    PM.ingredient("steam",  10, "fluid")
   },
   results =
   {
-    PM.product("pm-mixed-nickel-concentrate", 10, "fluid"),
-    PM.product_range("pm-ammonium-chloride", 5, 7)
+    PM.product_range("pm-sulfur-dioxide", 0, 0.5, "fluid"),
+    PM.product("pm-zinc-oxide", 30)
+  }
+},
+{
+  type = "recipe",
+  name = "pm-zinc-vapour",
+  enabled = false,
+  energy_required = 9,
+  category = "pm-moltening",
+  subgroup = "pm-advanced-zinc-tm",
+  order = "d",
+  main_product = "pm-zinc-vapour",
+  ingredients = 
+  {
+    PM.ingredient("pm-zinc-oxide", 10),
+    PM.ingredient("pm-carbon-monoxide", 10, "fluid")
+  },
+  results = 
+  {
+    PM.product("pm-zinc-vapour", 5, "fluid"),
+    PM.product_range("pm-carbon-dioxide-gas", 8, 10, "fluid")
+  }
+},
+{
+  type = "recipe",
+  name = "pm-zinc-vapour-condensing",
+  enabled = false,
+  energy_required = 9,
+  category = "pm-washing",
+  subgroup = "pm-advanced-zinc-tm",
+  order = "e",
+  ingredients =
+  {
+    PM.ingredient("pm-zinc-vapour", 5, "fluid")
+  },
+  results =
+  {
+    PM.product("pm-zinc-ore", 8)
+  }
+},
+{
+  type = "recipe",
+  name = "pm-zinc-tailings-cleaning",
+  icon_size = 64,
+  icon = "__periodic-madness__/graphics/icons/recipes/nickel-tailings-looping.png",
+  category = "pm-mixing",
+  subgroup = "pm-advanced-zinc-tm",
+  order = "f",
+  enabled = false,
+  energy_required = 2,
+  main_product = "pm-cupric-waste-water",
+  ingredients =
+  {
+    PM.ingredient("pm-zinc-tailings", 10, "fluid"),
+    PM.ingredient("pm-sodium-hydroxide", 2.5, "fluid")
+  },
+  results =
+  {
+    PM.product_range("pm-cupric-waste-water", 0, 5, "fluid"),
+    PM.product_range("sulfur", 0, 1),
+    PM.product_range("pm-ferrum", 0, 3)
   }
 },
 
