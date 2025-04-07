@@ -431,7 +431,7 @@ data:extend({
   {
     type = "item",
     name = "pm-blank-bio-module",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/blank-bio-module.png",
     subgroup = "pm-bio-modules-rnm",
     order = "a",
@@ -440,7 +440,7 @@ data:extend({
   {
     type = "tool",
     name = "pm-health-bio-module",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/health-bio-module.png",
     subgroup = "pm-bio-modules-rnm",
     order = "b",
@@ -453,16 +453,16 @@ data:extend({
       layers =
       {
         {
-          size = 128,
+          size = 64,
           filename = "__periodic-madness__/graphics/icons/health-bio-module.png",
-          scale = 0.25,
+          scale = 0.5,
         },
         {
           draw_as_light = true,
           flags = { "light" },
-          size = 128,
+          size = 64,
           filename = "__periodic-madness__/graphics/light/health-bio-module-light.png",
-          scale = 0.25,
+          scale = 0.5,
         }
       }
     },
@@ -470,7 +470,7 @@ data:extend({
   {
     type = "tool",
     name = "pm-strength-bio-module",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/strength-bio-module.png",
     subgroup = "pm-bio-modules-rnm",
     order = "c",
@@ -483,16 +483,16 @@ data:extend({
       layers =
       {
         {
-          size = 128,
+          size = 64,
           filename = "__periodic-madness__/graphics/icons/strength-bio-module.png",
-          scale = 0.25,
+          scale = 0.5,
         },
         {
           draw_as_light = true,
           flags = { "light" },
-          size = 128,
+          size = 64,
           filename = "__periodic-madness__/graphics/light/strength-bio-module-light.png",
-          scale = 0.25,
+          scale = 0.5,
         }
       }
     },
@@ -500,7 +500,7 @@ data:extend({
   {
     type = "tool",
     name = "pm-agility-bio-module",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/agility-bio-module.png",
     subgroup = "pm-bio-modules-rnm",
     order = "d",
@@ -513,16 +513,16 @@ data:extend({
       layers =
       {
         {
-          size = 128,
+          size = 64,
           filename = "__periodic-madness__/graphics/icons/agility-bio-module.png",
-          scale = 0.25,
+          scale = 0.5,
         },
         {
           draw_as_light = true,
           flags = { "light" },
-          size = 128,
+          size = 64,
           filename = "__periodic-madness__/graphics/light/agility-bio-module-light.png",
-          scale = 0.25,
+          scale = 0.5,
         }
       }
     },
