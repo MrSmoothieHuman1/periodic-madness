@@ -2329,7 +2329,7 @@ data:extend({
     type = "technology",
     name = "pm-efficiency-module-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/effectivity-module-4-tech.png",
+    icon = "__periodic-madness__/graphics/technology/efficiency-module-4-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-efficiency-module-4")

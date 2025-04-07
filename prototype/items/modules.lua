@@ -16,7 +16,7 @@ data:extend({
       type = "module",
       name = "pm-speed-module-4",
       localised_description = {"item-description.speed-module"},
-      icon = "__periodic-madness__/graphics/icons/speed-module-4.png",
+      icon = "__periodic-madness__/graphics/icons/modules/speed-module-4.png",
       icon_size = 64,
       subgroup = "pm-speed",
       category = "speed",
@@ -40,14 +40,14 @@ data:extend({
           {
             {
               size = 64,
-              filename = "__periodic-madness__/graphics/icons/speed-module-4.png",
+              filename = "__periodic-madness__/graphics/icons/modules/speed-module-4.png",
               scale = 0.5,
             },
             {
               draw_as_light = true,
               flags = { "light" },
               size = 64,
-              filename = "__periodic-madness__/graphics/light/speed-module-4-glow.png",
+              filename = "__periodic-madness__/graphics/light/speed-module-4-light.png",
               scale = 0.5,
             }
           }
@@ -57,7 +57,7 @@ data:extend({
         type = "module",
         name = "pm-efficiency-module-4",
         localised_description = { "item-description.effectivity-module" },
-        icon = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
+        icon = "__periodic-madness__/graphics/icons/modules/efficiency-module-4.png",
         icon_size = 64,
         subgroup = "pm-efficiency",
         category = "efficiency",
@@ -81,14 +81,14 @@ data:extend({
           {
             {
               size = 64,
-              filename = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
+              filename = "__periodic-madness__/graphics/icons/modules/efficiency-module-4.png",
               scale = 0.5,
             },
             {
               draw_as_light = true,
               flags = { "light" },
               size = 64,
-              filename = "__periodic-madness__/graphics/light/effectivity-module-4-glow.png",
+              filename = "__periodic-madness__/graphics/light/efficiency-module-4-light.png",
               scale = 0.5,
             }
           }
@@ -98,7 +98,7 @@ data:extend({
         type = "module",
         name = "pm-productivity-module-4",
         localised_description = { "item-description.productivity-module" },
-        icon = "__periodic-madness__/graphics/icons/productivity-module-4.png",
+        icon = "__periodic-madness__/graphics/icons/modules/productivity-module-4.png",
         icon_size = 64,
         subgroup = "pm-productivity",
         category = "productivity",
@@ -121,14 +121,14 @@ data:extend({
           {
             {
               size = 64,
-              filename = "__periodic-madness__/graphics/icons/productivity-module-4.png",
+              filename = "__periodic-madness__/graphics/icons/modules/productivity-module-4.png",
               scale = 0.5,
             },
             {
               draw_as_light = true,
               flags = { "light" },
               size = 64,
-              filename = "__periodic-madness__/graphics/light/productivity-module-4-glow.png",
+              filename = "__periodic-madness__/graphics/light/productivity-module-4-light.png",
               scale = 0.5,
             }
           }
@@ -323,14 +323,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/speed-module-1.png",
+      filename = "__periodic-madness__/graphics/icons/modules/speed-module-1.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/speed-module-1-glow.png",
+      filename = "__periodic-madness__/graphics/light/speed-module-1-light.png",
       scale = 0.5,
     }
   }
@@ -341,14 +341,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/speed-module-2.png",
+      filename = "__periodic-madness__/graphics/icons/modules/speed-module-2.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/speed-module-2-glow.png",
+      filename = "__periodic-madness__/graphics/light/speed-module-2-light.png",
       scale = 0.5,
     }
   }
@@ -359,14 +359,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/speed-module-3.png",
+      filename = "__periodic-madness__/graphics/icons/modules/speed-module-3.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/speed-module-3-glow.png",
+      filename = "__periodic-madness__/graphics/light/speed-module-3-light.png",
       scale = 0.5,
     }
   }
@@ -378,14 +378,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/efficiency-module-1.png",
+      filename = "__periodic-madness__/graphics/icons/modules/efficiency-module-1.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/effectivity-module-1-glow.png",
+      filename = "__periodic-madness__/graphics/light/efficiency-module-1-light.png",
       scale = 0.5,
     }
   }
@@ -396,14 +396,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/efficiency-module-2.png",
+      filename = "__periodic-madness__/graphics/icons/modules/efficiency-module-2.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/effectivity-module-2-glow.png",
+      filename = "__periodic-madness__/graphics/light/efficiency-module-2-light.png",
       scale = 0.5,
     }
   }
@@ -414,14 +414,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/efficiency-module-3.png",
+      filename = "__periodic-madness__/graphics/icons/modules/efficiency-module-3.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/effectivity-module-3-glow.png",
+      filename = "__periodic-madness__/graphics/light/efficiency-module-3-light.png",
       scale = 0.5,
     }
   }
@@ -433,14 +433,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/productivity-module-1.png",
+      filename = "__periodic-madness__/graphics/icons/modules/productivity-module-1.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/productivity-module-1-glow.png",
+      filename = "__periodic-madness__/graphics/light/productivity-module-1-light.png",
       scale = 0.5,
     }
   }
@@ -451,14 +451,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/productivity-module-2.png",
+      filename = "__periodic-madness__/graphics/icons/modules/productivity-module-2.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/productivity-module-2-glow.png",
+      filename = "__periodic-madness__/graphics/light/productivity-module-2-light.png",
       scale = 0.5,
     }
   }
@@ -469,14 +469,14 @@ layers =
   {
     {
       size = 64,
-      filename = "__periodic-madness__/graphics/icons/productivity-module-3.png",
+      filename = "__periodic-madness__/graphics/icons/modules/productivity-module-3.png",
       scale = 0.5,
     },
     {
       draw_as_light = true,
       flags = { "light" },
       size = 64,
-      filename = "__periodic-madness__/graphics/light/productivity-module-3-glow.png",
+      filename = "__periodic-madness__/graphics/light/productivity-module-3-light.png",
       scale = 0.5,
     }
   }
