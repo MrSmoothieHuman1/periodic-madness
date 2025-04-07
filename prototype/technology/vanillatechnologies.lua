@@ -1684,7 +1684,7 @@ data.raw["module"]["efficiency-module-2"].icon_size = 64
 data.raw["module"]["efficiency-module-2"].icon = "__periodic-madness__/graphics/icons/modules/efficiency-module-2.png"
 data.raw["module"]["efficiency-module-3"].icon_size = 64
 data.raw["module"]["efficiency-module-3"].icon = "__periodic-madness__/graphics/icons/modules/efficiency-module-3.png"
-data.raw["technology"]["efficiency-module"].icon_size = 64
+data.raw["technology"]["efficiency-module"].icon_size = 256
 data.raw["technology"]["efficiency-module"].icon =
 "__periodic-madness__/graphics/technology/efficiency-module-1-tech.png"
 data.raw["technology"]["efficiency-module"].effects =
