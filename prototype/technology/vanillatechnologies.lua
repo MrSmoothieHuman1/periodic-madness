@@ -1615,20 +1615,12 @@ data.raw["technology"]["speed-module-3"].effects =
   PM.unlock_recipe("pm-speed-module-2-crushing"),
 }
 data.raw["technology"]["speed-module-3"].prerequisites = {"speed-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
-local ProdMod1Fix = data.raw["module"]["productivity-module"]
-
-ProdMod1Fix.icon_size = 128
-ProdMod1Fix.icon = "__periodic-madness__/graphics/icons/productivity-module-1.png"
-
-local ProdMod2Fix = data.raw["module"]["productivity-module-2"]
-
-ProdMod2Fix.icon_size = 128
-ProdMod2Fix.icon = "__periodic-madness__/graphics/icons/productivity-module-2.png"
-
-local ProdMod3Fix = data.raw["module"]["productivity-module-3"]
-
-ProdMod3Fix.icon_size = 128
-ProdMod3Fix.icon = "__periodic-madness__/graphics/icons/productivity-module-3.png"
+data.raw["module"]["productivity-module-1"].icon_size = 64
+data.raw["module"]["productivity-module-1"].icon = "__periodic-madness__/graphics/icons/productivity-module-1.png"
+data.raw["module"]["productivity-module-2"].icon_size = 64
+data.raw["module"]["productivity-module-2"].icon = "__periodic-madness__/graphics/icons/productivity-module-2.png"
+data.raw["module"]["productivity-module-3"].icon_size = 64
+data.raw["module"]["productivity-module-3"].icon = "__periodic-madness__/graphics/icons/productivity-module-3.png"
 
 data.raw["technology"]["productivity-module"].unit.ingredients =
 {
@@ -1665,39 +1657,36 @@ data.raw["technology"]["steam-power"].effects =
 }
 
 data.raw["technology"]["productivity-module"].icon_size = 256
-data.raw["technology"]["productivity-module"].icon =
-"__periodic-madness__/graphics/technology/productivity-module-1-tech.png"
+data.raw["technology"]["productivity-module"].icon = "__periodic-madness__/graphics/technology/productivity-module-1-tech.png"
 data.raw["technology"]["productivity-module"].effects =
 {
   PM.unlock_recipe("productivity-module"),
   PM.unlock_recipe("pm-cadnium-red")
 }
 data.raw["technology"]["productivity-module-2"].icon_size = 256
-data.raw["technology"]["productivity-module-2"].icon =
-"__periodic-madness__/graphics/technology/productivity-module-2-tech.png"
+data.raw["technology"]["productivity-module-2"].icon = "__periodic-madness__/graphics/technology/productivity-module-2-tech.png"
 data.raw["technology"]["productivity-module-2"].effects =
 {
   PM.unlock_recipe("productivity-module-2"),
   PM.unlock_recipe("pm-productivity-module-1-crushing"),
 }
 data.raw["technology"]["productivity-module-3"].icon_size = 256
-data.raw["technology"]["productivity-module-3"].icon =
-"__periodic-madness__/graphics/technology/productivity-module-3-tech.png"
+data.raw["technology"]["productivity-module-3"].icon = "__periodic-madness__/graphics/technology/productivity-module-3-tech.png"
 data.raw["technology"]["productivity-module-3"].effects =
 {
   PM.unlock_recipe("productivity-module-3"),
   PM.unlock_recipe("pm-productivity-module-2-crushing"),
 }
 data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
-data.raw["module"]["efficiency-module"].icon_size = 128
-data.raw["module"]["efficiency-module"].icon = "__periodic-madness__/graphics/icons/effectivity-module-1.png"
-data.raw["module"]["efficiency-module-2"].icon_size = 128
-data.raw["module"]["efficiency-module-2"].icon = "__periodic-madness__/graphics/icons/effectivity-module-2.png"
-data.raw["module"]["efficiency-module-3"].icon_size = 128
-data.raw["module"]["efficiency-module-3"].icon = "__periodic-madness__/graphics/icons/effectivity-module-3.png"
-data.raw["technology"]["efficiency-module"].icon_size = 256
+data.raw["module"]["efficiency-module"].icon_size = 64
+data.raw["module"]["efficiency-module"].icon = "__periodic-madness__/graphics/icons/efficiency-module-1.png"
+data.raw["module"]["efficiency-module-2"].icon_size = 64
+data.raw["module"]["efficiency-module-2"].icon = "__periodic-madness__/graphics/icons/efficiency-module-2.png"
+data.raw["module"]["efficiency-module-3"].icon_size = 64
+data.raw["module"]["efficiency-module-3"].icon = "__periodic-madness__/graphics/icons/efficiency-module-3.png"
+data.raw["technology"]["efficiency-module"].icon_size = 64
 data.raw["technology"]["efficiency-module"].icon =
-"__periodic-madness__/graphics/technology/effectivity-module-1-tech.png"
+"__periodic-madness__/graphics/technology/efficiency-module-1-tech.png"
 data.raw["technology"]["efficiency-module"].effects =
 {
   PM.unlock_recipe("efficiency-module"),
@@ -1705,7 +1694,7 @@ data.raw["technology"]["efficiency-module"].effects =
 }
 data.raw["technology"]["efficiency-module-2"].icon_size = 256
 data.raw["technology"]["efficiency-module-2"].icon =
-"__periodic-madness__/graphics/technology/effectivity-module-2-tech.png"
+"__periodic-madness__/graphics/technology/efficiency-module-2-tech.png"
 data.raw["technology"]["efficiency-module-2"].effects =
 {
   PM.unlock_recipe("efficiency-module-2"),
@@ -1713,7 +1702,7 @@ data.raw["technology"]["efficiency-module-2"].effects =
 }
 data.raw["technology"]["efficiency-module-3"].icon_size = 256
 data.raw["technology"]["efficiency-module-3"].icon =
-"__periodic-madness__/graphics/technology/effectivity-module-3-tech.png"
+"__periodic-madness__/graphics/technology/efficiency-module-3-tech.png"
 data.raw["technology"]["efficiency-module-3"].effects =
 {
   PM.unlock_recipe("efficiency-module-3"),
