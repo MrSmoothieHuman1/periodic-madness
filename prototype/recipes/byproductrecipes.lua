@@ -113,7 +113,7 @@ data:extend({
     subgroup = "pm-ptm-ptm",
     ingredients =
     {
-      PM.ingredient("pm-mixed-ore-slag", 3)
+      PM.ingredient("pm-mixed-ore-slag", 6)
     },
     results =
     {
