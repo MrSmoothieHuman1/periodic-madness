@@ -63,47 +63,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-transition-slag-leeching",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/ore-slag-transition-decomposition.png",
-    subgroup = "pm-tm-tm",
-    order = "c",
-    enabled = false,
-    energy_required = 2,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-ore-slag", 16)
-    },
-    results =
-    {
-      PM.product("pm-transition-metals-ore", 10),
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-chunk-slag-leeching",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/ore-slag-chunk-decomposition.png",
-    subgroup = "pm-tm-tm",
-    order = "d",
-    enabled = false,
-    energy_required = 2,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-ore-slag", 16)
-    },
-    results =
-    {
-      PM.product_chance("pm-iron-chunk", 4, 0.5),
-      PM.product_chance("pm-copper-chunk", 4, 0.5),
-      PM.product_chance("pm-nickel-chunk", 4, 0.5),
-      PM.product_chance("pm-zinc-chunk", 4, 0.5),
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-glass-resmelting",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/glass-resmelting.png",
