@@ -4,8 +4,8 @@ data:extend({
   {
     type = "item",
     name = "pm-lorandite",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/lorandite.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/lorandite.png",
     subgroup = "pm-thallium-ptm",
     order = "a",
     stack_size = 100 / 2
