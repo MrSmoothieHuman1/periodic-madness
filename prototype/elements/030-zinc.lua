@@ -43,20 +43,6 @@ data:extend({
     order = "a",
     stack_size = 300
   },
-  {
-    type = "item",
-    name = "pm-zinc-chunk",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks-2.png", size = 64, scale = 0.5 }
-    },
-    subgroup = "pm-zinc-tm",
-    order = "c",
-    stack_size = 200
-  },
 
   {
     type = "recipe",
