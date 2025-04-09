@@ -19,7 +19,12 @@ data:extend({
         type = "item",
         name = "pm-mixed-baryte",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/mixed-baryte.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/mixed-baryte.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/mixed-baryte-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-barium-aem",
         order = "b",
         stack_size = 200,
@@ -89,7 +94,7 @@ data:extend({
         order = "b",
         allow_productivity = true,
         main_product = "pm-pure-baryte",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-baryte-ore", 5)
         },
@@ -108,7 +113,7 @@ data:extend({
         subgroup = "pm-barium-aem",
         order = "c",
         main_product = "pm-barium-froth",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-mixed-baryte", 6),
             PM.ingredient("pm-hydrochloric-acid", 40, "fluid")
@@ -132,13 +137,13 @@ data:extend({
         main_product = "pm-barium-froth",
         ingredients =
         {
-          PM.ingredient("pm-barium-tailings", 10, "fluid"),
-          PM.ingredient("sulfuric-acid", 4, "fluid")
+            PM.ingredient("pm-barium-tailings", 10, "fluid"),
+            PM.ingredient("sulfuric-acid", 4, "fluid")
         },
         results =
         {
-          PM.product_range("pm-barium-tailings", 1, 8, "fluid"),
-          PM.product_chance("pm-barium-froth", 5, 0.94, "fluid")
+            PM.product_range("pm-barium-tailings", 1, 8, "fluid"),
+            PM.product_chance("pm-barium-froth", 5, 0.94, "fluid")
         }
     },
     {

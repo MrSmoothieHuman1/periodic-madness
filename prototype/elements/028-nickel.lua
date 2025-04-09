@@ -34,10 +34,11 @@ data:extend({
     type = "item",
     name = "pm-high-purity-nickel-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/nickel-powder.png",
+    icon = "__periodic-madness__/graphics/icons/ores/high-purity-nickel-powder.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/nickel-powder.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/high-purity-nickel-powder.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/high-purity-nickel-powder-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-advanced-nickel-tm",
     order = "c",
@@ -47,12 +48,13 @@ data:extend({
     type = "item",
     name = "pm-nickel-sulfate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/nickel-powder.png",
-    --pictures =
-    --{
-      --{ filename = "__periodic-madness__/graphics/icons/ores/nickel-powder.png",   size = 64, scale = 0.5 },
-      --{ filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks-2.png", size = 64, scale = 0.5 }
-    --},
+    icon = "__periodic-madness__/graphics/icons/ores/nickel-sulfate.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/nickel-sulfate.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/nickel-sulfate-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/nickel-sulfate-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-advanced-nickel-tm",
     order = "d",
     stack_size = 50

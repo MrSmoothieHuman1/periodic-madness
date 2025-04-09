@@ -71,7 +71,7 @@ data:extend({
   {
     type = "item",
     name = "pm-vanadium-oxide",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/vanadium-oxide.png",
     subgroup = "pm-batteries",
     order = "i",
