@@ -4385,7 +4385,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-pig-iron"),
       PM.unlock_recipe("pm-mixed-molten-iron"),
-      PM.unlock_recipe("pm-mixed-molten-iron-seperation"),
+      PM.unlock_recipe("pm-wrought-iron"),
+      PM.unlock_recipe("pm-wrought-iron-seperation"),
       PM.unlock_recipe("pm-combined-ore-slag"),
       PM.unlock_recipe("pm-combined-ore-slab-crushing")
     },
@@ -4417,6 +4418,7 @@ data:extend({
       PM.unlock_recipe("pm-blister-copper"),
       PM.unlock_recipe("pm-fire-refined-copper"),
       PM.unlock_recipe("pm-fire-refined-copper-seperation"),
+      PM.unlock_recipe("pm-combined-ore-slag"),
       PM.unlock_recipe("pm-combined-ore-slab-crushing")
     },
     prerequisites = {"pm-advanced-material-processing-3"},
@@ -4446,7 +4448,9 @@ data:extend({
       PM.unlock_recipe("pm-mixed-nickel-concentrate"),
       PM.unlock_recipe("pm-high-purity-nickel-powder"),
       PM.unlock_recipe("pm-nickel-sulfate"),
-      PM.unlock_recipe("pm-nickel-sulfate-seperation")
+      PM.unlock_recipe("pm-nickel-sulfate-seperation"),
+      PM.unlock_recipe("pm-combined-ore-slag"),
+      PM.unlock_recipe("pm-combined-ore-slab-crushing")
     },
     prerequisites = {"pm-advanced-material-processing-3"},
     unit =
@@ -4475,7 +4479,9 @@ data:extend({
       PM.unlock_recipe("pm-zinc-oxide"),
       PM.unlock_recipe("pm-zinc-vapour"),
       PM.unlock_recipe("pm-zinc-vapour-condensing"),
-      PM.unlock_recipe("pm-zinc-tailings-cleaning")
+      PM.unlock_recipe("pm-zinc-tailings-cleaning"),
+      PM.unlock_recipe("pm-combined-ore-slag"),
+      PM.unlock_recipe("pm-combined-ore-slab-crushing")
     },
     prerequisites = {"pm-advanced-material-processing-3"},
     unit =
