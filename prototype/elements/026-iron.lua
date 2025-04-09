@@ -224,7 +224,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-molten-ore-slag", 2.5, 5, "fluid"),
+      PM.product_range("pm-molten-ore-slag", 1, 4, "fluid"),
       PM.product("pm-wrought-iron", 12)
     }
   },
