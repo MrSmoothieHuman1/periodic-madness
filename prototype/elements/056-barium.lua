@@ -5,7 +5,12 @@ data:extend({
         type = "item",
         name = "pm-baryte-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/baryte-ore.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/baryte-ore.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/baryte-ore-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-barium-aem",
         order = "a",
         stack_size = 400,
@@ -26,7 +31,7 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/pure-baryte.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte.png",   size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-2.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/pure-baryte-3.png", size = 64, scale = 0.5},
         },
@@ -39,7 +44,12 @@ data:extend({
         type = "item",
         name = "pm-barium-nitrate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/barium-nitrate.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/barium-nitrate.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/barium-nitrate-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-barium-aem",
         order = "f",
         stack_size = 150

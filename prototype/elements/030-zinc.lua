@@ -8,7 +8,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-zinc-tm",
@@ -19,11 +19,11 @@ data:extend({
     type = "item",
     name = "pm-zinc-powder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+    icon = "__periodic-madness__/graphics/icons/ores/zinc-powder.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-powder.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-powder-2.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-zinc-tm",
     order = "a",
@@ -33,11 +33,12 @@ data:extend({
     type = "item",
     name = "pm-zinc-oxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+    icon = "__periodic-madness__/graphics/icons/ores/zinc-oxide.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/zinc-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-oxide.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/zinc-oxide-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-oxide-3.png", size = 64, scale = 0.5}
     },
     subgroup = "pm-advanced-zinc-tm",
     order = "a",

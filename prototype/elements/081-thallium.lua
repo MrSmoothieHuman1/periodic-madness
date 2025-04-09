@@ -6,6 +6,11 @@ data:extend({
     name = "pm-lorandite",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/lorandite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/lorandite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/lorandite-2.png", size = 64, scale = 0.5 }
+    },
     subgroup = "pm-thallium-ptm",
     order = "a",
     stack_size = 100 / 2
