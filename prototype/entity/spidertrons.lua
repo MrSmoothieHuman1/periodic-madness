@@ -194,8 +194,8 @@ function make_spidertron_leg(spidertron_name, scale, leg_thickness, movement_spe
       stretch_force_scalar = 2.5 / (3.5 * scale), -- longer legs, weaker stretch force
       knee_height = 2.25 * scale,
       knee_distance_factor = 0.4,
-      initial_movement_speed = 0.06 * movement_speed,
-      movement_acceleration = 0.04 * movement_speed,
+      initial_movement_speed = 0.07 * movement_speed,
+      movement_acceleration = 0.045 * movement_speed,
       max_health = 100,
       resistances = util.table.deepcopy(leg_resistances),
       base_position_selection_distance = 6 * scale,
