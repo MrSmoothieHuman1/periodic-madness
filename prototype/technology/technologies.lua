@@ -4668,7 +4668,7 @@ data:extend({
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =
     {
-      count = 350,
+      count = 450,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4680,6 +4680,31 @@ data:extend({
       },
       time = 80
     },
+  },
+  {
+    type = "technology",
+    name = "pm-spiderling-IZZY",
+    icon_size = 256,
+    icon = "__base__/graphics/technology/spidertron.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-RTG"},
+    unit = 
+    {
+      count = 600,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    }
   },
 
   {
