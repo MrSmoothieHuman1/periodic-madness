@@ -106,6 +106,7 @@ require("prototype.entity.beacons")
 require("prototype.entity.logistics") --contains all belts, undergrounds, splitters
 require("prototype.entity.inserters")
 require("prototype.entity.pipes")
+require("prototype.entity.spidertrons")
 
 require("prototype.remnants")
 require("prototype.achievements")

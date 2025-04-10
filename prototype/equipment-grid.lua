@@ -34,6 +34,13 @@ data:extend({
     height = 24,
     equipment_categories = {"armor"}
   },
+  {
+    type = "equipment-grid",
+    name = "pm-spiderling-equipment-grid",
+    width = 12,
+    height = 6,
+    equipment_categories = {"armor"}
+  },
 })
 
 data.raw["equipment-grid"]["spidertron-equipment-grid"].width = 14
