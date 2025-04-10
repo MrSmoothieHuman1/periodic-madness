@@ -3797,4 +3797,22 @@ data:extend({
       PM.product("refined-concrete", 5)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-spiderling-issy",
+    energy_required = 45,
+    enabled = false,
+    ingredients = 
+    {
+      PM.ingredient("processing-unit", 30),
+      PM.ingredient("pm-heavy-lubricant", 60, "fluid"),
+      PM.ingredient("pm-vulcanised-rubber", 24),
+      PM.ingredient("pm-lightweight-framing", 30),
+      PM.ingredient("pm-polyethylene-plastic", 24)
+    },
+    results = 
+    {
+      PM.product("pm-spiderling-issy", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

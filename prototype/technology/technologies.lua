@@ -4683,12 +4683,12 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-spiderling-IZZY",
+    name = "pm-spiderling-ISSY",
     icon_size = 256,
     icon = "__base__/graphics/technology/spidertron.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-spiderling-issy")
     },
     prerequisites = {"pm-RTG"},
     unit = 
