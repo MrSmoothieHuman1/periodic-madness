@@ -1452,6 +1452,14 @@ data:extend({
     order = "ia",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-strontium-glass",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/strontium-glass.png",
+    subgroup = "pm-intermediates",
+    stack_size = 75
+  },
 
   {
     type = "item",

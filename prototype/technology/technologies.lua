@@ -3542,13 +3542,17 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/rocket-control-unit.png",
     effects = 
     {
+      PM.unlock_recipe("pm-molten-strontium-glass"),
+      PM.unlock_recipe("pm-strontium-glass"),
+      PM.unlock_recipe("pm-CRT-framing"),
+      PM.unlock_recipe("pm-CRT-screen"),
       PM.unlock_recipe("pm-CRT"),
       PM.unlock_recipe("pm-rocket-control-unit")
     },
     prerequisites = {"pm-vacuum-tubes", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
       {
-        count = 375,
+        count = 450,
         ingredients = 
         {
           {"automation-science-pack", 1},
@@ -3558,7 +3562,7 @@ data:extend({
           {"pm-alkali-metal-science-pack", 1},
           {"pm-alkaline-earth-metal-science-pack", 1}
         },
-        time = 80,
+        time = 120,
       }
   },
   {
@@ -3585,7 +3589,7 @@ data:extend({
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
       {
-        count = 300,
+        count = 350,
         ingredients = 
         {
           {"automation-science-pack", 1},
@@ -3655,7 +3659,7 @@ data:extend({
     prerequisites = {"pm-tempature-inators-2", "pm-metalloid-pack-unlock"},
     unit =
       {
-        count = 275,
+        count = 350,
         ingredients = 
         {
           {"automation-science-pack", 1},
@@ -3699,7 +3703,7 @@ data:extend({
     prerequisites = {"pm-silicone-processing", "advanced-material-processing-2", "pm-oil-fractions-burning"},
     unit =
       {
-        count = 275,
+        count = 300,
         ingredients = 
         {
           {"automation-science-pack", 1},
@@ -3806,7 +3810,7 @@ data:extend({
     prerequisites = {"pm-tempature-inators-2"},
     unit =
     {
-      count = 175,
+      count = 225,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3829,7 +3833,7 @@ data:extend({
     prerequisites = {"pm-agar-bacteria-filtering"},
     unit =
     {
-      count = 175,
+      count = 225,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3850,7 +3854,7 @@ data:extend({
       PM.unlock_recipe("pm-alkaline-earth-metal-science-pack")
     },
     prerequisites = {"pm-magnesium-processing", "pm-strontium-processing", "pm-barium-processing", "pm-radium-processing", "pm-beryllium-processing"},
-    unit = 
+    unit =
     {
       count = 450,
       ingredients =
@@ -3973,7 +3977,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 80
+      time = 120
     },
   },
   {

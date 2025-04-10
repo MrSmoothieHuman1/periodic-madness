@@ -2003,7 +2003,7 @@ data:extend({
       PM.ingredient("pm-tungsten-plate", 6),
       PM.ingredient("pm-zirconia", 4)
     },
-    results = 
+    results =
     {
       PM.product("pm-vacuum-tube-getter", 1)
     }
@@ -2019,7 +2019,7 @@ data:extend({
     {
       PM.ingredient("pm-CRT-screen", 1),
       PM.ingredient("pm-CRT-framing", 1),
-      PM.ingredient("pm-aluminium-plate", 8)
+      PM.ingredient("pm-aluminium-plate", 6)
     },
     results =
     {
@@ -2032,7 +2032,7 @@ data:extend({
     enabled = false,
     energy_required = 14,
     allow_producitvity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-vacuum-tube", 4),
       PM.ingredient("processing-unit", 3),
@@ -2040,7 +2040,7 @@ data:extend({
       PM.ingredient("pm-corrosion-resistant-tubing", 8),
       PM.ingredient("pm-indium-wire", 6)
     },
-    results = 
+    results =
     {
       PM.product("pm-CRT-framing", 1)
     }
@@ -2051,12 +2051,13 @@ data:extend({
     enabled = false,
     energy_required = 14,
     allow_producitvity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-polyethylene-plastic", 4),
-      PM.ingredient("pm-glass-pane", 4)
+      PM.ingredient("pm-strontium-glass", 4),
+      PM.ingredient("pm-nickel-plate", 6)
     },
-    results = 
+    results =
     {
       PM.product("pm-CRT-screen", 1)
     }
