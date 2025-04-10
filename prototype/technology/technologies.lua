@@ -4700,6 +4700,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
