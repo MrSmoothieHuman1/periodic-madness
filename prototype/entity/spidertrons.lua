@@ -119,42 +119,42 @@ data:extend({
           leg = arguments.name .. "-leg-2",
           mount_position = util.by_pixel(23  * scale, -10  * scale),
           ground_position = {3  * leg_scale, -1  * leg_scale},
-          walking_group = 2,
+          walking_group = 1,
           leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         },
         { -- 3
           leg = arguments.name .. "-leg-3",
           mount_position = util.by_pixel(25  * scale, 4  * scale),
           ground_position = {3  * leg_scale, 1  * leg_scale},
-          walking_group = 1,
+          walking_group = 2,
           leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         },
         { -- 4
           leg = arguments.name .. "-leg-4",
           mount_position = util.by_pixel(15  * scale, 17  * scale),
           ground_position = {2.25  * leg_scale, 2.5  * leg_scale},
-          walking_group = 2,
+          walking_group = 1,
           leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         },
         { -- 6
           leg = arguments.name .. "-leg-6",
           mount_position = util.by_pixel(-23 * scale, -10 * scale),
           ground_position = {-3 * leg_scale, -1 * leg_scale},
-          walking_group = 1,
+          walking_group = 2,
           leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
         },
         { -- 7
         leg = arguments.name .. "-leg-7",
         mount_position = util.by_pixel(-25 * scale, 4 * scale),
         ground_position = {-3 * leg_scale, 1 * leg_scale},
-        walking_group = 2,
+        walking_group = 1,
         leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
       },
       { -- 8
         leg = arguments.name .. "-leg-8",
         mount_position = util.by_pixel(-15 * scale, 17 * scale),
         ground_position = {-2.25 * leg_scale, 2.5 * leg_scale},
-        walking_group = 1,
+        walking_group = 2,
         leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
       }
     },
@@ -194,8 +194,8 @@ function make_spidertron_leg(spidertron_name, scale, leg_thickness, movement_spe
       stretch_force_scalar = 2.5 / (3.5 * scale), -- longer legs, weaker stretch force
       knee_height = 2.25 * scale,
       knee_distance_factor = 0.4,
-      initial_movement_speed = 0.08 * movement_speed,
-      movement_acceleration = 0.4 * movement_speed,
+      initial_movement_speed = 0.06 * movement_speed,
+      movement_acceleration = 0.04 * movement_speed,
       max_health = 100,
       resistances = util.table.deepcopy(leg_resistances),
       base_position_selection_distance = 6 * scale,
