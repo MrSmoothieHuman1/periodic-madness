@@ -292,3 +292,44 @@ Version: 0.4.62
     },
     production = "160kW"
   },
+
+    {
+        type = "module",
+        name = "pm-quality-module-5",
+        zlocalised_description = {"item-description.quality-module"},
+        icon = "__periodic-madness__/graphics/icons/modules/quality-module-5.png",
+        icon_size = 64,
+        subgroup = "pm-quality",
+        category = "quality",
+        tier = 5,
+        order = "d",
+        stack_size = 50,
+        effect = {quality = 0.4, speed = -0.1},
+        beacon_tint =
+        {
+            primary = { 0, 1, 0 },
+            secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+        },
+        art_style = "vanilla",
+        requires_beacon_alt_mode = false,
+    },
+    {
+        type = "module",
+        name = "pm-quality-module-6",
+        zlocalised_description = {"item-description.quality-module"},
+        icon = "__periodic-madness__/graphics/icons/modules/quality-module-6.png",
+        icon_size = 64,
+        subgroup = "pm-quality",
+        category = "quality",
+        tier = 6,
+        order = "d",
+        stack_size = 50,
+        effect = {quality = 0.5, speed = -0.15},
+        beacon_tint =
+        {
+            primary = { 0, 1, 0 },
+            secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+        },
+        art_style = "vanilla",
+        requires_beacon_alt_mode = false,
+    },
