@@ -2034,7 +2034,7 @@ data:extend({
     allow_producitvity = true,
     ingredients =
     {
-      PM.ingredient("pm-vacuum-tube", 4),
+      PM.ingredient("pm-vacuum-tube", 2),
       PM.ingredient("processing-unit", 3),
       PM.ingredient("pm-cadnium-plate", 6),
       PM.ingredient("pm-corrosion-resistant-tubing", 8),
