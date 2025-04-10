@@ -4022,7 +4022,7 @@ data:extend({
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
-      count = 250,
+      count = 300,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4031,7 +4031,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
       },
-      time = 60
+      time = 80
     }
   },
   {
@@ -4046,7 +4046,7 @@ data:extend({
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
-      count = 250,
+      count = 300,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4055,7 +4055,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
       },
-      time = 60
+      time = 80
     }
   },
   {
@@ -4077,7 +4077,7 @@ data:extend({
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
-      count = 250,
+      count = 300,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4086,7 +4086,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
       },
-      time = 60
+      time = 80
     }
   },
   {
@@ -4101,7 +4101,7 @@ data:extend({
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
     {
-      count = 250,
+      count = 300,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4110,7 +4110,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
       },
-      time = 60
+      time = 80
     }
   },
   {
