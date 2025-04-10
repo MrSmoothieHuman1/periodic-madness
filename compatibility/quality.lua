@@ -19,8 +19,8 @@ local PM = require("library")
     table.insert(data.raw["module"]["pm-speed-module-5"].effect, {quality = -0.2})
     table.insert(data.raw["module"]["pm-speed-module-6"].effect, {quality = -0.25})
 
-    table.insert(data.raw["module"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-aluminium-gallium-arsenide"})
-    table.insert(data.raw["module"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-module-quality-light"})
+    table.insert(data.raw["technology"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-aluminium-gallium-arsenide"})
+    table.insert(data.raw["technology"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-module-quality-light"})
 
 
     data.raw["recipe"]["quality-module"].ingredients =
