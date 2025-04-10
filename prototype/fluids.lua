@@ -1924,7 +1924,18 @@ data:extend({
     flow_color = {r = 0.529, g = 0.43, b = 0.35},
     auto_barrel = false
   },
-
+  {
+    type = "fluid",
+    name = "pm-molten-strontium-glass",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-glass.png",
+    subgroup = "pm-glassing",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.8, g = 0.6, b = 0.6},
+    flow_color = {r = 0.8, g = 0.6, b = 0.6},
+    auto_barrel = false,
+  },
 	{
 		type = "fluid",
 		name = "pm-liquid-heat",
