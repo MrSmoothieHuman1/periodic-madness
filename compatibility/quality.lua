@@ -157,6 +157,26 @@ data:extend({
         {
             PM.product("pm-module-quality-light", 1)
         }
+    },
+
+    {
+        type = "recipe",
+        name = "pm-quality-module-4",
+        energy_required = 30,
+        enabled = false,
+        subgroup = "pm-quality",
+        order = "d",
+        ingredients =
+        {
+            PM.ingredient("quality-module", 1),
+            PM.ingredient("pm-module-quality-light", 1),
+            PM.ingredient("pm-fluid-circuit", 10),
+            PM.ingredient("processing-unit", 10)
+        },
+        results = 
+        {
+            PM.product("pm-quality-module-4", 1)
+        }
     }
 })
 end
