@@ -15,6 +15,7 @@ require("prototype.items.fuel")
 require("prototype.items.science")
 require("prototype.items.ammo")
 require("prototype.items.modules")
+require("prototype.items.weapons")
 
 require("prototype.technology.technologies")
 require("prototype.technology.alttechnologies")

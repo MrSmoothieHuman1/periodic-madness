@@ -3800,6 +3800,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-spiderling-issy",
+    category = "crafting-with-fluid",
     energy_required = 45,
     enabled = false,
     ingredients = 

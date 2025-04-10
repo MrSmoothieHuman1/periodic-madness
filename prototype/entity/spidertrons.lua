@@ -94,7 +94,7 @@ data:extend({
     corpse = "spidertron-remnants",
     dying_explosion = "spidertron-explosion",
     energy_per_hit_point = 1,
-    guns = { "spidertron-rocket-launcher-1", "spidertron-rocket-launcher-2" },
+    guns = { "pm-spiderling-discharge-defense", "submachine-gun"},
     inventory_size = 60,
     equipment_grid = "pm-spiderling-equipment-grid",
     trash_inventory_size = 20,
@@ -205,7 +205,7 @@ function make_spidertron_leg(spidertron_name, scale, leg_thickness, movement_spe
       graphics_set = create_spidertron_leg_graphics_set(scale * leg_thickness, number)
     }
 end
-create_spiderling{name = "pm-spiderling-izzy",
+create_spiderling{name = "pm-spiderling-issy",
                   scale = 0.85,
                   leg_scale = 0.95, -- relative to scale
                   leg_thickness = 0.85, -- relative to leg_scale
