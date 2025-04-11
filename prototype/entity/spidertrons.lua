@@ -75,7 +75,7 @@ data:extend({
     friction_force = 1,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     minable = {mining_time = 0.7, result = arguments.name},
-    max_health = 200,
+    max_health = 1000,
     resistances = util.table.deepcopy(spiderling_resistances),
     minimap_representation =
     {
@@ -94,7 +94,7 @@ data:extend({
     corpse = "spidertron-remnants",
     dying_explosion = "spidertron-explosion",
     energy_per_hit_point = 1,
-    guns = { "pm-spiderling-discharge-defense", "submachine-gun"},
+    guns = { "pm-spiderling-discharge-defense", "pm-spiderling-submachine-gun"},
     inventory_size = 60,
     equipment_grid = "pm-spiderling-equipment-grid",
     trash_inventory_size = 20,
@@ -106,7 +106,10 @@ data:extend({
     graphics_set = spidertron_torso_graphics_set(scale),
     energy_source =
     {
-      type = "void"
+      type = "burner",
+      fuel_inventory_size = 1,
+      burnt_inventory_size = 1,
+      fuel_categories = {"pm-fuel-rods"}
     },
     movement_energy_consumption = "250kW",
     automatic_weapon_cycling = true,

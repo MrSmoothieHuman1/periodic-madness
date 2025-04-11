@@ -746,6 +746,16 @@ data:extend({
     place_result = "pm-cooling-plant",
     stack_size = 50,
   },
+  {
+    type = "item",
+    name = "pm-RTG",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
+    subgroup = "production-machine",
+    place_result = "pm-cooling-plant",
+    stack_size = 50,
+  },
+
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
