@@ -752,7 +752,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
     subgroup = "production-machine",
-    place_result = "pm-cooling-plant",
+    place_result = "pm-RTG",
     stack_size = 50,
   },
 
