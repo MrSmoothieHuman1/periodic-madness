@@ -8429,6 +8429,7 @@ data.raw["stream"]["flamethrower-fire-stream"].action =
 }
 
 data.raw["fire"]["fire-flame"].damage_per_tick = {amount = 7 / 60, type = "fire"}
+data.raw["sticker"]["firer-sticker"].damage_per_tick = {amount = 10 * 10 / 60, type = "fire"}
 
 
 data.raw["storage-tank"]["storage-tank"].next_upgrade = "pm-stainless-steel-storage-tank"
