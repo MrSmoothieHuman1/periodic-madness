@@ -8382,7 +8382,7 @@ data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids =
   {type = "pm-naptha", damage_modifier = 1.5},
   {type = "pm-kerosene", damager_modifier = 1.3}
 }
-data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluid_consumption = 0.2 * 2
+data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluid_consumption = 0.2 * 4
 data.raw["fluid-turret"]["flamethrower-turret"].attacking_speed = 0.75
 data.raw["fluid-turret"]["flamethrower-turret"].max_health = 1000
 data.raw["fluid-turret"]["flamethrower-turret"].prepare_range = 30
@@ -8427,6 +8427,9 @@ data.raw["stream"]["flamethrower-fire-stream"].action =
     }
   }
 }
+
+data.raw["fire-flame"]["fire-flame"].damage_per_tick = {amount = 7 / 60, type = "fire"}
+
 
 data.raw["storage-tank"]["storage-tank"].next_upgrade = "pm-stainless-steel-storage-tank"
 data.raw["storage-tank"]["storage-tank"].fast_replaceable_group = "pm-storage-tank"
