@@ -7255,11 +7255,11 @@ data:extend({
 }--[[@as data.WallPrototype]],
 { --MARK: RTG
   type = "reactor",
-  name = "pm-rtg",
+  name = "pm-RTG",
   icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
   icon_size = 128,
   flags = { "placeable-neutral", "player-creation" },
-  minable = { mining_time = 0.7, result = "pm-polonium-reactor" },
+  minable = { mining_time = 0.7, result = "pm-RTG" },
   max_health = 1200,
   corpse = "nuclear-reactor-remnants",
   dying_explosion  = "nuclear-reactor-explosion",
@@ -8429,7 +8429,7 @@ data.raw["stream"]["flamethrower-fire-stream"].action =
 }
 
 data.raw["fire"]["fire-flame"].damage_per_tick = {amount = 7 / 60, type = "fire"}
-data.raw["sticker"]["firer-sticker"].damage_per_tick = {amount = 10 * 10 / 60, type = "fire"}
+data.raw["sticker"]["fire-sticker"].damage_per_tick = {amount = 10 * 10 / 60, type = "fire"}
 
 
 data.raw["storage-tank"]["storage-tank"].next_upgrade = "pm-stainless-steel-storage-tank"
