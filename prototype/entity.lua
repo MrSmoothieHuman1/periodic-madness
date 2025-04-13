@@ -5560,6 +5560,7 @@ data:extend({
     },
     duration_in_ticks = 10 * 60,
     damage_interval = 60,
+    target_movement_modifier = 0.9,
     damage_per_tick =
     {
       amount = 6,

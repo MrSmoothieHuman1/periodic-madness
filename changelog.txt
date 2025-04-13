@@ -130,6 +130,8 @@ Date: 2024-12-08
     - Rebalanced the entire tech tree around a specific set of guidelines for amounts/times.
     - Changed robots to only get one cargo upgrade per pack tier.
     - Changed all bonuses that gain a new science pack, to prerequisite that science pack.
+    - Made Genevas neglection shotgun shells last 12 seconds, and slugs 20s, compared to them all being 10s.
+    - Made the posion effect slightly slow enemies.
 
   Fixes:
     - Fixed the science pack item names captilisation.
