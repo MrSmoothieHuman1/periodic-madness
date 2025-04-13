@@ -100,6 +100,7 @@ data:extend({
     trash_inventory_size = 20,
     height = body_height,
     alert_icon_shift = { 0, -body_height },
+    torso_bob_speed = 1.1,
     torso_rotation_speed = 0.0085,
     chunk_exploration_radius = 3,
     selection_priority = 60,
