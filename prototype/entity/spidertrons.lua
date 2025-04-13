@@ -2,6 +2,8 @@ local simulations = require("__base__.prototypes.factoriopedia-simulations")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
+
+--#MARK: I.S.S.Y Spiderling
 function create_spiderling(arguments)
 local scale = arguments.scale
 local leg_scale = scale * arguments.leg_scale
