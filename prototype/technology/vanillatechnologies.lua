@@ -1187,7 +1187,7 @@ data.raw["technology"]["laser-weapons-damage-5"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
-data.raw["technology"]["physical-projectile-damage-1"].effects = 
+data.raw["technology"]["physical-projectile-damage-1"].effects =
 {
   {
     type = "ammo-damage",
@@ -1205,61 +1205,32 @@ data.raw["technology"]["physical-projectile-damage-1"].effects =
     modifier = 0.1
   },
 }
-data.raw["technology"]["physical-projectile-damage-2"].effects = 
+data.raw["technology"]["physical-projectile-damage-2"].effects =
 {
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.15
+    modifier = 0.2
   },
 }
 data.raw["technology"]["physical-projectile-damage-3"].prerequisites = {"physical-projectile-damage-2"}
-data.raw["technology"]["physical-projectile-damage-3"].unit.ingredients = 
+data.raw["technology"]["physical-projectile-damage-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["physical-projectile-damage-3"].effects = 
-{
-  {
-    type = "ammo-damage",
-    ammo_category = "bullet",
-    modifier = 0.15
-  },
-  {
-    type = "turret-attack",
-    turret_id = "gun-turret",
-    modifier = 0.15
-  },
-  {
-    type = "ammo-damage",
-    ammo_category = "shotgun-shell",
-    modifier = 0.15
-  },
-  {
-    type = "ammo-damage",
-    ammo_category = "pm-shotgun-slug",
-    modifier = 0.1
-  },
-}
-data.raw["technology"]["physical-projectile-damage-4"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["physical-projectile-damage-4"].effects = 
+data.raw["technology"]["physical-projectile-damage-3"].effects =
 {
   {
     type = "ammo-damage",
@@ -1282,29 +1253,58 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
     modifier = 0.1
   },
 }
-data.raw["technology"]["physical-projectile-damage-5"].unit.ingredients = 
+data.raw["technology"]["physical-projectile-damage-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-4"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.25
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.25
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.25
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["physical-projectile-damage-5"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
-data.raw["technology"]["physical-projectile-damage-5"].effects = 
+data.raw["technology"]["physical-projectile-damage-5"].effects =
 {
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.2
+    modifier = 0.3
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.2
+    modifier = 0.3
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.2
+    modifier = 0.3
   },
   {
     type = "ammo-damage",
@@ -1313,29 +1313,29 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
   },
 }
 data.raw["technology"]["physical-projectile-damage-6"].prerequisites = {"physical-projectile-damage-5"}
-data.raw["technology"]["physical-projectile-damage-6"].unit.ingredients = 
+data.raw["technology"]["physical-projectile-damage-6"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
-data.raw["technology"]["physical-projectile-damage-6"].effects = 
+data.raw["technology"]["physical-projectile-damage-6"].effects =
 {
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.25
+    modifier = 0.3
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.25
+    modifier = 0.3
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.25
+    modifier = 0.3
   },
   {
     type = "ammo-damage",
@@ -1343,7 +1343,7 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
     modifier = 0.15
   },
 }
-data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients = 
+data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -1351,22 +1351,22 @@ data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
-data.raw["technology"]["physical-projectile-damage-7"].effects = 
+data.raw["technology"]["physical-projectile-damage-7"].effects =
 {
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.25
+    modifier = 0.4
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.25
+    modifier = 0.4
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.25
+    modifier = 0.4
   },
   {
     type = "ammo-damage",
