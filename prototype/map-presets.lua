@@ -1,56 +1,63 @@
 data:extend({
-
-    ["pm-periodic-default"] =
+  {
+    type = "map-gen-presets",
+    name = "default",
+    order = "a",
     {
-      order = "A",
-      basic_settings =
+      ["pm-periodic-default"] =
       {
-        property_expression_names = {},
-        autoplace_controls =
+        order = "A",
+        default = true,
+        basic_settings =
         {
-          coal =
+          property_expression_names = {},
+          autoplace_controls =
           {
-            frequency = 0.33333333333,
-            size = 3
+            coal =
+            {
+              frequency = 0.5,
+              size = 3
+            },
+            ["copper-ore"] =
+            {
+              frequency = 0.5,
+              size = 3
+            },
+            ["crude-oil"] =
+            {
+              frequency = 0.5,
+              size = 3
+            },
+            ["uranium-ore"] =
+            {
+              frequency = 0.5,
+              size = 3
+            },
+            ["iron-ore"] =
+            {
+              frequency = 0.5,
+              size = 3
+            },
+            stone =
+            {
+              frequency = 0.5,
+              size = 3
+            },
+            ["enemy-base"] =
+            {
+              size = 1
+            },
+            water = {frequency = 0.5, size = 1.5}
           },
-          ["copper-ore"] =
-          {
-            frequency = 0.33333333333,
-            size = 3
-          },
-          ["crude-oil"] =
-          {
-            frequency = 0.33333333333,
-            size = 3
-          },
-          ["uranium-ore"] =
-          {
-            frequency = 0.33333333333,
-            size = 3
-          },
-          ["iron-ore"] =
-          {
-            frequency = 0.33333333333,
-            size = 3
-          },
-          stone =
-          {
-            frequency = 0.33333333333,
-            size = 3
-          },
-          ["enemy-base"] =
-          {
-            size = 1
-          },
-          water = {frequency = 0.5, size = 1.5}
         },
-      },
-      advanced_settings =
-      {
-        enemy_evolution =
+        advanced_settings =
         {
-          time_factor = 0.000002
-        },
+          enemy_evolution =
+          {
+            time_factor = 0.000002
+          },
+        }
       }
-    },
+    }
+  }
 })
