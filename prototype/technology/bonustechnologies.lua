@@ -1,7 +1,17 @@
 local PM = require("library")
 
+--MARK: Bonus increases
+-- this catalouges the scaluing for every single bonus technology in PM, just for other people to look at and so i cant forget
+
+--Research productivity: starts at 0.05, increases after every 2 levels, doubles after every increase (0.5, 0.5, 1, 1, 2, 2, 4, 4)
+--Research speed: starts at 0.1, doubles its increase every 2 levels(0.1, 0.125, 0.15, 0.2, 0.3, 0.4, 0.6, 0.8, 1.2, 1.6)
+--Robot storage: adds +1 every level (one per research tier)
+--Robot speed: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3, 0.35, 0.35)
+--Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75, 0.9, 1.05)
+--Mining productivity: starts at 0.05, increases after 2 levels, doubles after every increase (0.05, 0.05, 1, 1, 2, 2, 4, 4)
+
 data:extend({
---#MARK:Lab Prod
+--MARK:Lab Prod
 {
     type = "technology",
     name = "pm-research-productivity-1",
@@ -97,7 +107,38 @@ data:extend({
     upgrade = true
   },
 
---#MARK: Robot storage
+--MARK:Lab speed
+{
+    type = "technology",
+    name = "pm-research-speed-7",
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      {
+        type = "laboratory-speed",
+        modifier = 0.6 -- +2
+      }
+    },
+    prerequisites = {"research-speed-6", "pm-alkaline-earth-metal-pack-unlock"},
+    upgrade = true,
+    unit =
+    {
+      count = 1250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-metal-science-pack", 1}
+      },
+      time = 120
+    },
+},
+
+
+--MARK: Robot storage
 {
     type = "technology",
     name = "pm-worker-robots-storage-3",
@@ -175,7 +216,7 @@ data:extend({
     upgrade = true,
   },
 
---#MARK: Robot battery
+--MARK: Robot battery
 {
     type = "technology",
     name = "pm-robot-battery-capacity-1",
@@ -229,7 +270,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
     effects =
     {
-      PM.modify("worker-robot-battery", 0.20)
+      PM.modify("worker-robot-battery", 0.2)
     },
     prerequisites = {"worker-robots-speed-3", "worker-robots-storage-3", "pm-robot-battery-capacity-2"},
     unit =
@@ -321,8 +362,65 @@ data:extend({
     }
   },
 
+--MARK: Miing prod
+{
+  type = "technology",
+  name = "mining-productivity-5",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+  effects =
+  {
+    {
+      type = "mining-drill-productivity-bonus",
+      modifier = 0.2
+    }
+  },
+  prerequisites = {"mining-productivity-4", "pm-metalloid-pack-unlock"},
+  unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 120
+    },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "mining-productivity-6",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+  effects =
+  {
+    {
+      type = "mining-drill-productivity-bonus",
+      modifier = 0.2
+    }
+  },
+  prerequisites = {"mining-productivity-5"},
+  unit =
+    {
+      count = 1850,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 120
+    },
+  upgrade = true
+},
 
---#MARK: Toolbelt
+--MARK: Toolbelt
 {
     type = "technology",
     name = "toolbelt-2",
@@ -345,12 +443,12 @@ data:extend({
       time = 30
     },
     order = "c-k-m"
-  },
+  }
 
 
 })
 
---#MARK: V.Robot speed
+--MARK: V.Robot speed
 
 data.raw["technology"]["worker-robots-speed-1"].effects =
 {
@@ -413,7 +511,7 @@ data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
 }
 data.raw["technology"]["worker-robots-speed-5"].unit.count = 450
 
---#MARK: V.Robot storage
+--MARK: V.Robot storage
 data.raw["technology"]["worker-robots-storage-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -429,17 +527,37 @@ data.raw["technology"]["worker-robots-storage-2"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1}
 }
 
---#MARK: V.Lab speed
-data.raw["technology"]["research-speed-2"].unit.ingredients = 
+--MARK: V.Lab speed
+data.raw["technology"]["research-speed-1"].effects =
+{
+    PM.modify("laboratory-speed", 0.1)
+}
+data.raw["technology"]["research-speed-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["research-speed-2"].effects =
+{
+    PM.modify("laboratory-speed", 0.125) -- +0.25
+}
 data.raw["technology"]["research-speed-3"].unit.time = 60
+data.raw["technology"]["research-speed-3"].effects =
+{
+    PM.modify("laboratory-speed", 0.15)
+}
 data.raw["technology"]["research-speed-4"].unit.time = 60
-data.raw["technology"]["research-speed-5"].prerequisites = {"research-speed-4"}
-data.raw["technology"]["research-speed-5"].unit.ingredients = 
+data.raw["technology"]["research-speed-1"].effects =
+{
+    PM.modify("laboratory-speed", 0.2) -- +0.5
+}
+data.raw["technology"]["research-speed-5"].prerequisites = {"research-speed-4", "pm-alkali-metal-pack-unlock"}
+data.raw["technology"]["research-speed-1"].effects =
+{
+    PM.modify("laboratory-speed", 0.25)
+}
+data.raw["technology"]["research-speed-5"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -447,9 +565,13 @@ data.raw["technology"]["research-speed-5"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
+data.raw["technology"]["research-speed-1"].effects =
+{
+    PM.modify("laboratory-speed", 0.3) -- +1
+}
 data.raw["technology"]["research-speed-5"].unit.time = 80
 data.raw["technology"]["research-speed-5"].unit.count = 750
-data.raw["technology"]["research-speed-6"].unit.ingredients = 
+data.raw["technology"]["research-speed-6"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -460,8 +582,12 @@ data.raw["technology"]["research-speed-6"].unit.ingredients =
 data.raw["technology"]["research-speed-6"].prerequisites = {"research-speed-5"}
 data.raw["technology"]["research-speed-6"].unit.count = 1000
 data.raw["technology"]["research-speed-6"].unit.time = 80
+data.raw["technology"]["research-speed-1"].effects =
+{
+    PM.modify("laboratory-speed", 0.4)
+}
 
---#MARK: V.Mining prod
+--MARK: V.Mining prod
 data.raw["technology"]["mining-productivity-1"].effects =
 {
   PM.modify("mining-drill-productivity-bonus", 0.05)
@@ -476,16 +602,16 @@ data.raw["technology"]["mining-productivity-2"].effects =
 {
   PM.modify("mining-drill-productivity-bonus", 0.05)
 }
-data.raw["technology"]["mining-productivity-2"].unit.ingredients = 
+data.raw["technology"]["mining-productivity-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["mining-productivity-2"].prerequisites = {"mining-productivity-1"}
-data.raw["technology"]["mining-productivity-2"].effects =
+data.raw["technology"]["mining-productivity-3"].effects =
 {
-  PM.modify("mining-drill-productivity-bonus", 0.05)
+  PM.modify("mining-drill-productivity-bonus", 0.1)
 }
 data.raw["technology"]["mining-productivity-3"].unit.count = 800
 data.raw["technology"]["mining-productivity-3"].unit.ingredients = 
@@ -507,3 +633,463 @@ data.raw["technology"]["mining-productivity-4"].max_level = 4
 data.raw["technology"]["mining-productivity-4"].unit.time = 80
 data.raw["technology"]["mining-productivity-4"].unit.count_formula = "1200"
 data.raw["technology"]["mining-productivity-4"].prerequisites = {"mining-productivity-3"}
+data.raw["technology"]["mining-productivity-4"].effects =
+{
+    PM.modify("laboratory-speed", 0.1)
+}
+
+--MARK: V.Shooting damage
+data.raw["technology"]["physical-projectile-damage-1"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.1
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.1
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["physical-projectile-damage-2"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.2
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.2
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.2
+  },
+}
+data.raw["technology"]["physical-projectile-damage-3"].prerequisites = {"physical-projectile-damage-2"}
+data.raw["technology"]["physical-projectile-damage-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-3"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.2
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.2
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.2
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["physical-projectile-damage-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-4"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.25
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.25
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.25
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["physical-projectile-damage-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-5"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.3
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.3
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.3
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.15
+  },
+}
+data.raw["technology"]["physical-projectile-damage-6"].prerequisites = {"physical-projectile-damage-5"}
+data.raw["technology"]["physical-projectile-damage-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["physical-projectile-damage-6"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.3
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.3
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.3
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.15
+  },
+}
+data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["physical-projectile-damage-7"].effects =
+{
+  {
+    type = "ammo-damage",
+    ammo_category = "bullet",
+    modifier = 0.4
+  },
+  {
+    type = "turret-attack",
+    turret_id = "gun-turret",
+    modifier = 0.4
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "shotgun-shell",
+    modifier = 0.4
+  },
+  {
+    type = "ammo-damage",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.2
+  },
+}
+
+
+--MARK:V.Shooting speed
+data.raw["technology"]["weapon-shooting-speed-1"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.1
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-2"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.1
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-3"].prerequisites = {"weapon-shooting-speed-2"}
+data.raw["technology"]["weapon-shooting-speed-3"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-3"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.05
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-4"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-4"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.15
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-5"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-5"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.2
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.2
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.1
+  },
+}
+data.raw["technology"]["weapon-shooting-speed-6"].prerequisites = {"weapon-shooting-speed-5"}
+data.raw["technology"]["weapon-shooting-speed-6"].unit.ingredients = 
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["weapon-shooting-speed-6"].effects = 
+{
+  {
+    type = "gun-speed",
+    ammo_category = "bullet",
+    modifier = 0.2
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "shotgun-shell",
+    modifier = 0.2
+  },
+  {
+    type = "gun-speed",
+    ammo_category = "pm-shotgun-slug",
+    modifier = 0.15
+  },
+}
+
+--MARK: V.Laser shooting
+data.raw["technology"]["laser-shooting-speed-1"].prerequisites = {"laser"}
+data.raw["technology"]["laser-shooting-speed-1"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["laser-shooting-speed-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["laser-shooting-speed-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-shooting-speed-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-shooting-speed-5"].prerequisites = {"laser-shooting-speed-4"}
+data.raw["technology"]["laser-shooting-speed-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-1"].prerequisites = {"laser"}
+data.raw["technology"]["laser-weapons-damage-1"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["laser-weapons-damage-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["laser-weapons-damage-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-5"].prerequisites = {"laser-weapons-damage-4"}
+data.raw["technology"]["laser-weapons-damage-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+
+--MARK: V.Braking force
+data.raw["technology"]["braking-force-1"].prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"}
+data.raw["technology"]["braking-force-1"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["braking-force-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
+}
+
+--MARK: V.Stronger explosives
+data.raw["technology"]["stronger-explosives-2"].prerequisites = {"stronger-explosives-1"}
+data.raw["technology"]["stronger-explosives-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-4"].prerequisites = {"stronger-explosives-3"}
+data.raw["technology"]["stronger-explosives-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
