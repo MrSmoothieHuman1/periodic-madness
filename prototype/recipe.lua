@@ -2189,7 +2189,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-vacuum-tube", 1),
-      PM.ingredient("pm-borosilicate-glass", 4),
+      PM.ingredient("pm-glass-pane", 8),
       PM.ingredient("copper-cable", 10)
     },
     results =
