@@ -21,6 +21,7 @@ require("prototype.technology.technologies")
 require("prototype.technology.alttechnologies")
 require("prototype.technology.vanillatechnologies")
 require("prototype.technology.biomodule-technologies")
+require("prototype.technology.bonustechnologies")
 
 require("prototype.recipe")
 require("prototype.recipes.machinerecipes")

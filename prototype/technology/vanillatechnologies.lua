@@ -684,7 +684,6 @@ data.raw["technology"]["effect-transmission"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
-
 data.raw["technology"]["logistic-system"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -695,90 +694,6 @@ data.raw["technology"]["logistic-system"].unit.ingredients =
   {"pm-alkali-metal-science-pack", 1}
 }
 data.raw["technology"]["logistic-system"].prerequisites = {"pm-lithium-ion-logistic-robotics"}
-
-data.raw["technology"]["worker-robots-speed-1"].effects =
-{
-  PM.modify("worker-robot-speed", 0.20)
-}
-data.raw["technology"]["worker-robots-speed-1"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["worker-robots-speed-2"].effects =
-{
-  PM.modify("worker-robot-speed", 0.25)
-}
-data.raw["technology"]["worker-robots-speed-2"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-}
-data.raw["technology"]["worker-robots-speed-3"].prerequisites = {"worker-robots-speed-2"}
-data.raw["technology"]["worker-robots-speed-3"].effects =
-{
-  PM.modify("worker-robot-speed", 0.25)
-}
-data.raw["technology"]["worker-robots-speed-3"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-}
-data.raw["technology"]["worker-robots-speed-4"].prerequisites = {"worker-robots-speed-3", "pm-alkali-metal-pack-unlock"}
-data.raw["technology"]["worker-robots-speed-4"].effects =
-{
-  PM.modify("worker-robot-speed", 0.30)
-}
-data.raw["technology"]["worker-robots-speed-4"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1}
-}
-data.raw["technology"]["worker-robots-speed-5"].prerequisites = {"worker-robots-speed-4"}
-data.raw["technology"]["worker-robots-speed-5"].effects =
-{
-  PM.modify("worker-robot-speed", 0.30)
-}
-data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1}
-}
-data.raw["technology"]["worker-robots-speed-5"].unit.count = 450
-
-data.raw["technology"]["worker-robots-storage-1"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["worker-robots-storage-2"].prerequisites = {"worker-robots-speed-2"}
-data.raw["technology"]["worker-robots-storage-2"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1}
-}
-data.raw["technology"]["worker-robots-storage-3"].prerequisites = {"worker-robots-storage-2"}
-data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-}
 data.raw["technology"]["utility-science-pack"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -803,83 +718,6 @@ data.raw["technology"]["military-2"].effects =
   PM.unlock_recipe("pm-heavy-piercing-shotgun-slug")
 }
 data.raw["technology"]["military-2"].unit.count = 50
-data.raw["technology"]["research-speed-2"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["research-speed-3"].unit.time = 60
-data.raw["technology"]["research-speed-4"].unit.time = 60
-data.raw["technology"]["research-speed-5"].prerequisites = {"research-speed-4"}
-data.raw["technology"]["research-speed-5"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1}
-}
-data.raw["technology"]["research-speed-5"].unit.time = 80
-data.raw["technology"]["research-speed-5"].unit.count = 750
-data.raw["technology"]["research-speed-6"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1}
-}
-data.raw["technology"]["research-speed-6"].prerequisites = {"research-speed-5"}
-data.raw["technology"]["research-speed-6"].unit.count = 1000
-data.raw["technology"]["research-speed-6"].unit.time = 80
-
-data.raw["technology"]["mining-productivity-1"].effects =
-{
-  PM.modify("mining-drill-productivity-bonus", 0.05)
-}
-data.raw["technology"]["mining-productivity-1"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["mining-productivity-2"].effects =
-{
-  PM.modify("mining-drill-productivity-bonus", 0.05)
-}
-data.raw["technology"]["mining-productivity-2"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["mining-productivity-2"].prerequisites = {"mining-productivity-1"}
-data.raw["technology"]["mining-productivity-2"].effects =
-{
-  PM.modify("mining-drill-productivity-bonus", 0.05)
-}
-data.raw["technology"]["mining-productivity-3"].unit.count = 800
-data.raw["technology"]["mining-productivity-3"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1}
-}
-data.raw["technology"]["mining-productivity-3"].prerequisites = {"mining-productivity-2", "pm-post-transition-metal-pack-unlock"}
-data.raw["technology"]["mining-productivity-4"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["mining-productivity-4"].max_level = 4
-data.raw["technology"]["mining-productivity-4"].unit.time = 80
-data.raw["technology"]["mining-productivity-4"].unit.count_formula = "1200"
-data.raw["technology"]["mining-productivity-4"].prerequisites = {"mining-productivity-3"}
-
 data.raw["technology"]["power-armor-mk2"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["power-armor-mk2"].unit.ingredients =
 {
