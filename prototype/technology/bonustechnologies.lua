@@ -10,6 +10,11 @@ local PM = require("library")
 --Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75, 0.9, 1.05)
 --Mining productivity: starts at 0.05, increases after 2 levels, doubles after every increase (0.05, 0.05, 1, 1, 2, 2, 4, 4)
 --Beacon distribution: starts at 0.05, adds 0.05 every level (0.05, 0.05, 0.1, 0.1, 0.15, 0.15)
+--Proj. damage: starts at 0.1, increases by 0.1 every 2 levels (0.1, 0.2, 0.2, 0.3, 0.3) - shotgun slugs start at 0.1 and increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2)
+--Proj. speed: starts at 0.1, increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2) - shotgun slugs start at 0.05 and increases by 0.05 every 2 levels
+--Laser shooting: Vanilla, unchanged
+--Braking force: Vanilla, unchanged
+--Stronger explosives: Vanilla, unchanged
 
 data:extend({
 --MARK:Lab Prod
@@ -813,17 +818,17 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.25
+    modifier = 0.3
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.25
+    modifier = 0.3
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.25
+    modifier = 0.3
   },
   {
     type = "ammo-damage",
@@ -874,17 +879,17 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.3
+    modifier = 0.4
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.3
+    modifier = 0.4
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.3
+    modifier = 0.4
   },
   {
     type = "ammo-damage",
