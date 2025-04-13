@@ -1192,17 +1192,17 @@ data.raw["technology"]["physical-projectile-damage-1"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.05
+    modifier = 0.1
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.05
+    modifier = 0.1
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.05
+    modifier = 0.1
   },
 }
 data.raw["technology"]["physical-projectile-damage-2"].effects = 
@@ -1210,17 +1210,17 @@ data.raw["technology"]["physical-projectile-damage-2"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.1
+    modifier = 0.15
   },
 }
 data.raw["technology"]["physical-projectile-damage-3"].prerequisites = {"physical-projectile-damage-2"}
@@ -1235,22 +1235,22 @@ data.raw["technology"]["physical-projectile-damage-3"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "ammo-damage",
     ammo_category = "pm-shotgun-slug",
-    modifier = 0.05
+    modifier = 0.1
   },
 }
 data.raw["technology"]["physical-projectile-damage-4"].unit.ingredients = 
@@ -1264,22 +1264,22 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "ammo-damage",
     ammo_category = "pm-shotgun-slug",
-    modifier = 0.05
+    modifier = 0.1
   },
 }
 data.raw["technology"]["physical-projectile-damage-5"].unit.ingredients = 
@@ -1294,22 +1294,22 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "ammo-damage",
     ammo_category = "pm-shotgun-slug",
-    modifier = 0.1
+    modifier = 0.15
   },
 }
 data.raw["technology"]["physical-projectile-damage-6"].prerequisites = {"physical-projectile-damage-5"}
@@ -1325,22 +1325,22 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.2
+    modifier = 0.25
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.2
+    modifier = 0.25
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.2
+    modifier = 0.25
   },
   {
     type = "ammo-damage",
     ammo_category = "pm-shotgun-slug",
-    modifier = 0.1
+    modifier = 0.15
   },
 }
 data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients = 
@@ -1356,22 +1356,22 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.2
+    modifier = 0.25
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.2
+    modifier = 0.25
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.2
+    modifier = 0.25
   },
   {
     type = "ammo-damage",
     ammo_category = "pm-shotgun-slug",
-    modifier = 0.15
+    modifier = 0.2
   },
 }
 
