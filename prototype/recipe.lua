@@ -286,7 +286,7 @@ data:extend({
     subgroup = "pm-glassing",
     order = "c",
     allow_productivity = true,
-    ingredients = { PM.ingredient("pm-glass-pane", 2) },
+    ingredients = { PM.ingredient("pm-glass-pane", 4) },
     results = {
       PM.product("pm-science-bottle", 1)
     }

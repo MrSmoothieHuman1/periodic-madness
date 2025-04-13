@@ -1210,17 +1210,17 @@ data.raw["technology"]["physical-projectile-damage-2"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.05
+    modifier = 0.1
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.05
+    modifier = 0.1
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.05
+    modifier = 0.1
   },
 }
 data.raw["technology"]["physical-projectile-damage-3"].prerequisites = {"physical-projectile-damage-2"}
@@ -1264,17 +1264,17 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.1
+    modifier = 0.15
   },
   {
     type = "ammo-damage",
@@ -1325,17 +1325,17 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
   {
     type = "ammo-damage",
     ammo_category = "bullet",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "turret-attack",
     turret_id = "gun-turret",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "ammo-damage",
     ammo_category = "shotgun-shell",
-    modifier = 0.15
+    modifier = 0.2
   },
   {
     type = "ammo-damage",
