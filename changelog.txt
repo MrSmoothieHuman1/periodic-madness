@@ -127,6 +127,8 @@ Date: 2024-12-08
     - Slightly increased the amount of zinc needed for cadmium.
     - Changed the amount of mixed ore slag needed for the crushing recipe from 3 to 6.
     - Rebalanced the entire tech tree around a specific set of guidelines for amounts/times.
+    - Changed robots to only get one cargo upgrade per pack tier.
+    - Changed all bonuses that gain a new science pack, to prerequisite that science pack.
 
   Fixes:
     - Fixed the science pack item names captilisation.
