@@ -171,56 +171,6 @@ data:extend({
     upgrade = true,
     order = "c-k-g-a"
   },
-  {
-    type = "technology",
-    name = "pm-mining-productivity-5",
-    icon_size = 256,
-    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
-    effects =
-    {
-        PM.modify("mining-drill-productivity-bonus", 0.1)
-    },
-    prerequisites = {"mining-productivity-4", "pm-metalloid-pack-unlock"},
-    unit =
-    {
-      count = 1600,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
-      },
-      time = 80
-    },
-    upgrade = true,
-  },
-  {
-    type = "technology",
-    name = "pm-mining-productivity-6",
-    icon_size = 256,
-    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
-    effects =
-    {
-        PM.modify("mining-drill-productivity-bonus", 0.15)
-    },
-    prerequisites = {"pm-mining-productivity-5"},
-    unit =
-    {
-      count = 2000,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
-      },
-      time = 80
-    },
-    upgrade = true,
-  },
 
 --MARK: Robot battery
 {
