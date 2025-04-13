@@ -1,6 +1,7 @@
+local PM = require("library")
+
 data:extend({
 --#MARK:Lab Prod
-
 {
     type = "technology",
     name = "pm-research-productivity-1",
@@ -230,7 +231,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/robot-battery-1.png",
     effects =
     {
-      PM.modify("worker-robot-battery", 0.20)
+      PM.modify("worker-robot-battery", 0.15)
     },
     prerequisites = {"worker-robots-speed-2", "worker-robots-storage-2", "pm-robot-battery-capacity-1"},
     unit =
@@ -254,7 +255,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
     effects =
     {
-      PM.modify("worker-robot-battery", 0.25)
+      PM.modify("worker-robot-battery", 0.20)
     },
     prerequisites = {"worker-robots-speed-3", "worker-robots-storage-3", "pm-robot-battery-capacity-2"},
     unit =
@@ -278,7 +279,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
     effects =
     {
-      PM.modify("worker-robot-battery", 0.30)
+      PM.modify("worker-robot-battery", 0.25)
     },
     prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-3"},
     unit =
@@ -295,6 +296,57 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-robot-battery-capacity-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/robot-battery-3.png",
+    effects =
+    {
+      PM.modify("worker-robot-battery", 0.35)
+    },
+    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-4", "pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 850,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-robot-battery-capacity-6",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/robot-battery-3.png",
+    effects =
+    {
+      PM.modify("worker-robot-battery", 0.45)
+    },
+    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-5"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+
 
 --#MARK: Toolbelt
 {
