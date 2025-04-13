@@ -55,10 +55,6 @@ data:extend{
 	}--[[@as data.SoundPrototype]]
 }
 
-for k, m in pairs(data.raw["assembling-machine"]) do
-	allowed_module_categories = {"speed", "productivity", "efficiency"}
-end
-
 --- Replace instances of plastic with pm plastic
 
 local removals = {}
