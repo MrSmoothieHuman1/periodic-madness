@@ -384,7 +384,6 @@ data.raw["technology"]["night-vision-equipment"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-
 data.raw["technology"]["electric-engine"].prerequisites = {"pm-lubricating-oils-recipes"}
 data.raw["technology"]["electric-engine"].unit.ingredients =
 {
@@ -392,7 +391,6 @@ data.raw["technology"]["electric-engine"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-
 data.raw["technology"]["construction-robotics"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -405,7 +403,6 @@ data.raw["technology"]["logistic-robotics"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-
 data.raw["technology"]["low-density-structure"].unit.ingredients =
 {
   {"automation-science-pack", 1},

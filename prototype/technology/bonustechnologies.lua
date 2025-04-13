@@ -9,6 +9,7 @@ local PM = require("library")
 --Robot speed: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3, 0.35, 0.35)
 --Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75, 0.9, 1.05)
 --Mining productivity: starts at 0.05, increases after 2 levels, doubles after every increase (0.05, 0.05, 1, 1, 2, 2, 4, 4)
+--Beacon distribution: starts at 0.05, adds 0.05 every level (0.05, 0.05, 0.1, 0.1, 0.15, 0.15)
 
 data:extend({
 --MARK:Lab Prod
@@ -362,7 +363,7 @@ data:extend({
     }
   },
 
---MARK: Miing prod
+--MARK: Mining prod
 {
   type = "technology",
   name = "mining-productivity-5",
@@ -418,6 +419,102 @@ data:extend({
       time = 120
     },
   upgrade = true
+},
+
+--MARK: Beacon distribution
+{
+  type = "technology",
+  name = "pm-stronger-beacon-distribution-1",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
+  effects = 
+  {
+    PM.modify("beacon-distribution", 0.05)
+  },
+  prerequisites = {"effect-transmission"},
+  unit =
+    {
+      count = 600,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1}
+      },
+      time = 80
+    }
+},
+{
+  type = "technology",
+  name = "pm-stronger-beacon-distribution-2",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
+  effects = 
+  {
+    PM.modify("beacon-distribution", 0.05)
+  },
+  prerequisites = {"pm-stronger-beacon-distribution-1"},
+  unit =
+    {
+      count = 900,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1}
+      },
+      time = 80
+    }
+},
+{
+  type = "technology",
+  name = "pm-stronger-beacon-distribution-3",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
+  effects = 
+  {
+    PM.modify("beacon-distribution", 0.1)
+  },
+  prerequisites = {"pm-stronger-beacon-distribution-2", "pm-alkaline-earth-metal-pack-unlock"},
+  unit =
+    {
+      count = 1200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 120
+    }
+},
+{
+  type = "technology",
+  name = "pm-stronger-beacon-distribution-4",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
+  effects = 
+  {
+    PM.modify("beacon-distribution", 0.1)
+  },
+  prerequisites = {"pm-stronger-beacon-distribution-3"},
+  unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 120
+    }
 },
 
 --MARK: Toolbelt

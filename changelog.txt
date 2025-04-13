@@ -44,6 +44,7 @@ Date: 2024-12-08
     - Overhauled the production of the 4 starter metals (iron, copper, nickel, zinc). They now take two steps to produce instead of one, and cannot be made from TM ores anymore.
     - Added a building dedicated to making coolant, so that it can be prioritised in power, and not cause your base to explode. Once again, merciful god.
     - Added I.S.S.Y - a spiderling that can be used for movement. It has low offensive capabilites, a slightly smaller equipment grid compared to its predeccessor - but is a lot faster. It has a discharge defense and a submachine gun built into it.
+    - Added bonus techs for beacon distribution.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
