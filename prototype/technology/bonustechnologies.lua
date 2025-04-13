@@ -137,7 +137,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
-        {"pm-alkaline-metal-science-pack", 1}
+        {"pm-alkaline-earth-metal-science-pack", 1}
       },
       time = 120
     },
@@ -278,7 +278,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.2)
     },
-    prerequisites = {"worker-robots-speed-3", "worker-robots-storage-3", "pm-robot-battery-capacity-2"},
+    prerequisites = {"worker-robots-speed-3", "worker-robots-storage-2", "pm-robot-battery-capacity-2"},
     unit =
     {
       count = 600,
@@ -302,7 +302,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.25)
     },
-    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-3"},
+    prerequisites = {"worker-robots-speed-4", "worker-robots-storage-2", "pm-robot-battery-capacity-3"},
     unit =
     {
       count = 600,
@@ -326,7 +326,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.35)
     },
-    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-4", "pm-metalloid-pack-unlock"},
+    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-3", "pm-robot-battery-capacity-4", "pm-metalloid-pack-unlock"},
     unit =
     {
       count = 850,
@@ -351,7 +351,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.45)
     },
-    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-5"},
+    prerequisites = {"worker-robots-speed-4", "pm-worker-robots-storage-3", "pm-robot-battery-capacity-5"},
     unit =
     {
       count = 1000,
