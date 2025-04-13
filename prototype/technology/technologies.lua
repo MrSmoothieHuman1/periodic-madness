@@ -3914,7 +3914,9 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
       time = 60
