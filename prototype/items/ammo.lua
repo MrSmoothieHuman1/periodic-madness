@@ -402,7 +402,7 @@ data:extend({
         {
           type = "create-sticker",
           sticker = "pm-bio-poison-sticker",
-          duration_in_ticks = 10 * 60,
+          duration_in_ticks = 12 * 60,
           damage_interval = 60,
           show_in_tooltip = true
         }
@@ -508,7 +508,7 @@ data:extend({
         {
           type = "create-sticker",
           sticker = "pm-bio-poison-sticker",
-          duration_in_ticks = 10 * 60,
+          duration_in_ticks = 20 * 60,
           damage_interval = 60,
           show_in_tooltip = true
         }
