@@ -172,35 +172,6 @@ data:extend({
 },
 
 
-
---MARK: Robot storage
-{
-    type = "technology",
-    name = "pm-worker-robots-storage-3",
-    icon_size = 256,
-    icons = util.technology_icon_constant_capacity("__base__/graphics/technology/worker-robots-storage.png"),
-    effects =
-    {
-      PM.modify("worker-robot-storage", 1),
-    },
-    prerequisites = {"worker-robots-storage-2", "pm-metalloid-pack-unlock"},
-    unit =
-    {
-      count = 450,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
-      },
-      time = 120
-    },
-    upgrade = true,
-    order = "c-k-g-a"
-  },
-
 --MARK: Robot battery
 {
     type = "technology",
@@ -316,7 +287,8 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1}
       },
       time = 80
     }
@@ -341,7 +313,8 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1}
       },
       time = 120
     }
@@ -599,13 +572,21 @@ data.raw["technology"]["worker-robots-storage-1"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["worker-robots-storage-2"].prerequisites = {"worker-robots-storage-2", "pm-post-transition-metal-pack-unlock"}
+data.raw["technology"]["worker-robots-storage-2"].prerequisites = {"worker-robots-storage-1", "pm-post-transition-metal-pack-unlock"}
 data.raw["technology"]["worker-robots-storage-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 
 --MARK: V.Lab speed
