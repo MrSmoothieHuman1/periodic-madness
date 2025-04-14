@@ -382,6 +382,36 @@ data:extend({
     }
   },
 
+--MARK: Robot speed
+{
+  type = "technology",
+  name = "pm-worker-robots-speed-7",
+  icons = util.technology_icon_constant_movement_speed("__base__/graphics/technology/worker-robots-speed.png"),
+  effects =
+  {
+    {
+      type = "worker-robot-speed",
+      modifier = 0.35
+    }
+  },
+  prerequisites = {"worker-robots-speed-6"},
+  unit =
+  {
+    count = 1000,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1}
+    },
+    time = 120
+  },
+  upgrade = true
+},
+
 
 --MARK: Mining prod
 {
@@ -627,6 +657,24 @@ data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
   {"pm-alkali-metal-science-pack", 1}
 }
 data.raw["technology"]["worker-robots-speed-5"].unit.count = 450
+data.raw["technology"]["worker-robots-speed-6"].infinite = false
+data.raw["technology"]["worker-robots-speed-6"].unit.count_formula = 700
+data.raw["technology"]["worker-robotos-speed-6"].unit.time = 120
+data.raw["technology"]["worker-robots-speed-6"].effects =
+{
+  PM.modify("worker-robot-speed", 0.35)
+}
+data.raw["technology"]["worker-robots-speed-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1},
+  {"pm-alkaline-earth-metal-science-pack", 1}
+}
+data.raw["technology"]["worker-robots-speed-6"].prerequisites = {"worker-robots-speed-5"}
+
 
 --MARK: V.Robot storage
 data.raw["technology"]["worker-robots-storage-1"].unit.ingredients =
