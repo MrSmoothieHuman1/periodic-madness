@@ -317,7 +317,7 @@ data:extend({
         action_delivery =
         {
           type = "projectile",
-          projectile = "pm-slug-pellet",
+          projectile = "pm-high-density-slug-pellet",
           starting_speed = 0.75,
           starting_speed_deviation = 0.2,
           direction_deviation = 0.25,
@@ -454,6 +454,38 @@ data:extend({
 {
   type = "projectile",
   name = "pm-heavy-piercing-slug-pellet",
+  flags = {"not-on-map"},
+  collision_box = {{-0.1, -0.3}, {0.1, 0.3}},
+  acceleration = 1,
+  direction_only = true,
+  piercing_damage = 90,
+  action =
+  {
+    type = "direct",
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        type = "damage",
+        damage = {amount = 16, type = "physical"}
+      }
+    }
+  },
+  animation =
+  {
+    filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+    draw_as_glow = true,
+    frame_count = 1,
+    width = 3,
+    height = 50,
+    priority = "high"
+  }
+},
+
+{
+  type = "projectile",
+  name = "pm-high-density-slug-pellet",
   flags = {"not-on-map"},
   collision_box = {{-0.1, -0.3}, {0.1, 0.3}},
   acceleration = 1,

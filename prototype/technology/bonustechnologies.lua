@@ -658,8 +658,9 @@ data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
 }
 data.raw["technology"]["worker-robots-speed-5"].unit.count = 450
 data.raw["technology"]["worker-robots-speed-6"].infinite = false
-data.raw["technology"]["worker-robots-speed-6"].unit.count_formula = 700
-data.raw["technology"]["worker-robotos-speed-6"].unit.time = 120
+data.raw["technology"]["worker-robots-speed-6"].max_level = 6
+data.raw["technology"]["worker-robots-speed-6"].unit.count_formula = "700"
+data.raw["technology"]["worker-robots-speed-6"].unit.time = 120
 data.raw["technology"]["worker-robots-speed-6"].effects =
 {
   PM.modify("worker-robot-speed", 0.35)
