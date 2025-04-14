@@ -704,7 +704,7 @@ data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
 --MARK: V.Lab speed
 data.raw["technology"]["research-speed-1"].effects =
 {
-    PM.modify("laboratory-speed", 0.1)
+    PM.modify("laboratory-speed", 0.125)
 }
 data.raw["technology"]["research-speed-2"].unit.ingredients =
 {
@@ -722,12 +722,12 @@ data.raw["technology"]["research-speed-3"].effects =
     PM.modify("laboratory-speed", 0.15)
 }
 data.raw["technology"]["research-speed-4"].unit.time = 60
-data.raw["technology"]["research-speed-1"].effects =
+data.raw["technology"]["research-speed-4"].effects =
 {
     PM.modify("laboratory-speed", 0.2) -- +0.5
 }
 data.raw["technology"]["research-speed-5"].prerequisites = {"research-speed-4", "pm-alkali-metal-pack-unlock"}
-data.raw["technology"]["research-speed-1"].effects =
+data.raw["technology"]["research-speed-5"].effects =
 {
     PM.modify("laboratory-speed", 0.25)
 }
@@ -739,7 +739,7 @@ data.raw["technology"]["research-speed-5"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
-data.raw["technology"]["research-speed-1"].effects =
+data.raw["technology"]["research-speed-5"].effects =
 {
     PM.modify("laboratory-speed", 0.3) -- +1
 }
@@ -756,7 +756,7 @@ data.raw["technology"]["research-speed-6"].unit.ingredients =
 data.raw["technology"]["research-speed-6"].prerequisites = {"research-speed-5"}
 data.raw["technology"]["research-speed-6"].unit.count = 1000
 data.raw["technology"]["research-speed-6"].unit.time = 80
-data.raw["technology"]["research-speed-1"].effects =
+data.raw["technology"]["research-speed-6"].effects =
 {
     PM.modify("laboratory-speed", 0.4)
 }
