@@ -67,7 +67,10 @@
        ["pm-nitrogen-atmosphere-filtering", "pm-nitrogen-gas"],
        ["pm-oxygen-gas-atmosphere-filtering", "pm-oxygen-gas"],
        ["zirconia-carbon-dioxide-electrolysis", "pm-carbon-monoxide"],
-       ["pm-sulfur-burning", "pm-sulfur-dioxide"]
+       ["pm-sulfur-burning", "pm-sulfur-dioxide"],
+       ["pm-germanium-sulfide-to-oxide", "pm-germanium-oxide"],
+       ["pm-germanium-concentrate-seperation", "pm-germanium-sulfide"],
+       ["pm-germanium-oxide-to-tetrachloride", "pm-germanium-tetrachloride"]
     ],
     "autoplace-control":
     [

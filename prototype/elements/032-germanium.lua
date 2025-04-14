@@ -78,7 +78,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-germanium-concentrate-seperation",
+        name = "pm-germanium-sulfide",
         enabled = false,
         energy_required = 6,
         category = "pm-acids",
@@ -98,7 +98,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-germanium-sulfide-to-oxide",
+        name = "pm-germanium-oxide",
         enabled = false,
         energy_required = 6,
         category = "chemistry",
@@ -119,7 +119,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-germanium-oxide-to-tetrachloride",
+        name = "pm-germanium-tetrachloride",
         enabled = false,
         energy_required = 6,
         category = "chemistry",
