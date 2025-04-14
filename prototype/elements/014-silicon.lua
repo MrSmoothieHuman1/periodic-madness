@@ -114,7 +114,7 @@ data:extend({
             PM.ingredient("pm-chromic-acid", 20, "fluid"),
             PM.ingredient("pm-metalloid-ore", 16)
         },
-        results = 
+        results =
         {
             PM.product_range("pm-high-quality-quartzite", 2, 6),
             PM.product_range("pm-low-quality-quartzite", 2, 6),
@@ -122,7 +122,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-high-quality-quartzite-seperation",
+        name = "pm-ferrosilicon",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/high-quartzite-seperation.png",
         enabled = false,
@@ -130,14 +130,15 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "b",
-        ingredients = 
+        main_product = "pm-ferrosilicon",
+        ingredients =
         {
             PM.ingredient("pm-high-quality-quartzite", 6),
             PM.ingredient("pm-filled-flux-container", 3),
             PM.ingredient("pm-coke", 6),
             PM.ingredient("pm-ferrum", 9)
         },
-        results = 
+        results =
         {
             PM.product("pm-ferrosilicon", 3),
             PM.product_range("pm-carbon-monoxide", 5, 8, "fluid"),
@@ -155,11 +156,11 @@ data:extend({
         category = "pm-crushing",
         subgroup = "pm-silicon-mt",
         order = "c",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-low-quality-quartzite", 6),
         },
-        results = 
+        results =
         {
             PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 4, 0.5),
             PM.product_range("pm-ferrum", 1, 3),
@@ -175,12 +176,12 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "d",
         main_product = "pm-trichlorosilane",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-ferrosilicon", 3),
             PM.ingredient("pm-hydrochloric-acid", 60, "fluid")
         },
-        results = 
+        results =
         {
             PM.product("pm-trichlorosilane", 10, "fluid"),
             PM.product_range("pm-silicon-tetrachloride", 5, 10, "fluid")
@@ -196,13 +197,13 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "da",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-silicon-tetrachloride", 10, "fluid"),
             PM.ingredient("pm-hydrogen-gas", 5, "fluid"),
             PM.ingredient("pm-vanadium-oxide-catalyst", 2)
         },
-        results = 
+        results =
         {
             PM.product_range("pm-trichlorosilane", 4, 8, "fluid"),
             PM.product_range("pm-dichlorosilane", 2, 4, "fluid"),
@@ -219,12 +220,12 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "e",
         main_product = "pm-silane",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-trichlorosilane", 10, "fluid"),
             PM.ingredient("pm-aluminium-plate", 10) --catalyst for hard mode
         },
-        results = 
+        results =
         {
             PM.product("pm-silane", 10, "fluid"),
             PM.product_range("pm-silicon-tetrachloride", 2.5, 5, "fluid")
@@ -240,12 +241,13 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-silicon-mt",
         order = "f",
-        ingredients = 
+        main_product = "pm-industrial-grade-silicon-ore",
+        ingredients =
         {
             PM.ingredient("pm-silane", 5, "fluid"),
             PM.ingredient("pm-argon-gas", 15, "fluid")
         },
-        results = 
+        results =
         {
             PM.product_range("pm-industrial-grade-silicon-ore", 3, 5),
             PM.product_range_chance("pm-argon-gas", 2, 8, 0.65, "fluid"),
@@ -263,13 +265,13 @@ data:extend({
         order = "g",
         allow_productivity = true,
         main_product = "pm-low-quality-polysilicon",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-silane", 15, "fluid"),
             PM.ingredient("pm-nitrogen-gas", 60, "fluid"),
             PM.ingredient("pm-industrial-grade-silicon-ore", 10)
         },
-        results = 
+        results =
         {
             PM.product_chance("pm-low-quality-polysilicon", 2, 0.95),
             PM.product_range("pm-industrial-grade-silicon-ore", 0, 5)
@@ -277,7 +279,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-low-to-med-quality-polysilicon",
+        name = "pm-medium-quality-polysilicon",
         enabled = false,
         energy_required = 10,
         category = "chemistry",
@@ -285,13 +287,13 @@ data:extend({
         order = "h",
         allow_productivity = true,
         main_product = "pm-medium-quality-polysilicon",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-silane", 10, "fluid"),
             PM.ingredient("pm-nitrogen-gas", 60, "fluid"),
             PM.ingredient("pm-low-quality-polysilicon", 5)
         },
-        results = 
+        results =
         {
             PM.product_chance("pm-medium-quality-polysilicon", 2, 0.85),
             PM.product_range("pm-low-quality-polysilicon", 0, 5)
@@ -299,7 +301,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-med-to-high-quality-polysilicon",
+        name = "pm-high-quality-polysilicon",
         enabled = false,
         energy_required = 15,
         category = "chemistry",
@@ -307,13 +309,13 @@ data:extend({
         order = "i",
         allow_productivity = true,
         main_product = "pm-high-quality-polysilicon",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-silane", 5, "fluid"),
             PM.ingredient("pm-nitrogen-gas", 60, "fluid"),
             PM.ingredient("pm-medium-quality-polysilicon", 5)
         },
-        results = 
+        results =
         {
             PM.product_chance("pm-high-quality-polysilicon", 2, 0.75),
             PM.product_range("pm-medium-quality-polysilicon", 0, 5)
@@ -327,12 +329,12 @@ data:extend({
         category = "pm-moltening",
         subgroup = "pm-silicon-mt",
         order = "j",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-high-quality-polysilicon", 4),
             PM.ingredient("steam", 75, "fluid"),
         },
-        results = 
+        results =
         {
             PM.product("pm-polysilicon-rod", 1)
         }

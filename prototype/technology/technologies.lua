@@ -3288,15 +3288,15 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-quartzite-leeching"),
-      PM.unlock_recipe("pm-high-quality-quartzite-seperation"),
+      PM.unlock_recipe("pm-ferrosilicon"),
       PM.unlock_recipe("pm-low-quality-quartzite-seperation"),
       PM.unlock_recipe("pm-trichlorosilane"),
       PM.unlock_recipe("pm-silicon-tetrachloride-handling"),
       PM.unlock_recipe("pm-silane"),
       PM.unlock_recipe("pm-industrial-grade-silicon-ore"),
       PM.unlock_recipe("pm-low-quality-polysilicon"),
-      PM.unlock_recipe("pm-low-to-med-quality-polysilicon"),
-      PM.unlock_recipe("pm-med-to-high-quality-polysilicon"),
+      PM.unlock_recipe("pm-medium-quality-polysilicon"),
+      PM.unlock_recipe("pm-high-quality-polysilicon"),
       PM.unlock_recipe("pm-polysilicon-rod"),
       PM.unlock_recipe("pm-silicon-based-magnesium-ore")
     },
