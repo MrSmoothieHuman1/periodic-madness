@@ -24,6 +24,7 @@ local PM = require("library")
   -- Laser shooting speed
   -- Laser damage
   -- Projectile damage
+  -- Follower robot count
 
 -- Reactive non-metal path:
   -- Research speed
@@ -1027,7 +1028,7 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
 
 
 --MARK:V.Shooting speed
-data.raw["technology"]["weapon-shooting-speed-1"].effects = 
+data.raw["technology"]["weapon-shooting-speed-1"].effects =
 {
   {
     type = "gun-speed",
@@ -1040,7 +1041,7 @@ data.raw["technology"]["weapon-shooting-speed-1"].effects =
     modifier = 0.1
   },
 }
-data.raw["technology"]["weapon-shooting-speed-2"].effects = 
+data.raw["technology"]["weapon-shooting-speed-2"].effects =
 {
   {
     type = "gun-speed",
@@ -1078,7 +1079,8 @@ data.raw["technology"]["weapon-shooting-speed-3"].effects =
     modifier = 0.05
   },
 }
-data.raw["technology"]["weapon-shooting-speed-4"].unit.ingredients = 
+data.raw["technology"]["weapon-shooting-speed-4"].prerequisites = {"weapon-shooting-speed-3", "rocketry"}
+data.raw["technology"]["weapon-shooting-speed-4"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -1101,15 +1103,20 @@ data.raw["technology"]["weapon-shooting-speed-4"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.1
   },
+  {
+    type = "gun-speed",
+    ammo_category = "rocket",
+    modifier = 0.2
+  }
 }
-data.raw["technology"]["weapon-shooting-speed-5"].unit.ingredients = 
+data.raw["technology"]["weapon-shooting-speed-5"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
-data.raw["technology"]["weapon-shooting-speed-5"].effects = 
+data.raw["technology"]["weapon-shooting-speed-5"].effects =
 {
   {
     type = "gun-speed",
@@ -1126,6 +1133,11 @@ data.raw["technology"]["weapon-shooting-speed-5"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.1
   },
+  {
+    type = "gun-speed",
+    ammo_category = "rocket",
+    modifier = 0.2
+  }
 }
 data.raw["technology"]["weapon-shooting-speed-6"].prerequisites = {"weapon-shooting-speed-5"}
 data.raw["technology"]["weapon-shooting-speed-6"].unit.ingredients = 
@@ -1152,6 +1164,11 @@ data.raw["technology"]["weapon-shooting-speed-6"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.15
   },
+  {
+    type = "gun-speed",
+    ammo_category = "rocket",
+    modifier = 0.25
+  }
 }
 
 --MARK: V.Laser shooting
