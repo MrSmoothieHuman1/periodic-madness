@@ -590,6 +590,231 @@ data:extend({
     }
 },
 
+--MARK: Shooting damage
+{
+  type = "technology",
+  name = "pm-physical-projectile-damage-8",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+  effects =
+  {
+    {
+      type = "ammo-damage",
+      ammo_category = "bullet",
+      modifier = 0.45
+    },
+    {
+      type = "turret-attack",
+      turret_id = "gun-turret",
+      modifier = 0.45
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "shotgun-shell",
+      modifier = 0.45
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.2
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "rocket",
+      modifier = 0.3
+    }
+  },
+  prerequisites = {"physical-projectile-damage-7"},
+  unit =
+  {
+    count = 1000,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"pm-metalloid-science-pack", 1}
+    },
+    time = 80
+  },
+  upgrade = true
+},
+
+
+--MARK: Shooting speed
+{
+  type = "technology",
+  name = "pm-weapon-shooting-speed-7",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+  effects =
+  {
+    {
+      type = "gun-speed",
+      ammo_category = "bullet",
+      modifier = 0.25
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "shotgun-shell",
+      modifier = 0.25
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.15
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "rocket",
+      modifier = 0.3
+    }
+  },
+  prerequisites = {"weapon-shooting-speed-6", "pm-alkali-metal-pack-unlock"},
+  unit =
+  {
+    count = 850,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1}
+    },
+    time = 80
+  },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "pm-weapon-shooting-speed-8",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+  effects =
+  {
+    {
+      type = "gun-speed",
+      ammo_category = "bullet",
+      modifier = 0.25
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "shotgun-shell",
+      modifier = 0.25
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.2
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "rocket",
+      modifier = 0.25
+    }
+  },
+  prerequisites = {"weapon-shooting-speed-7"},
+  unit =
+  {
+    count = 1000,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1}
+    },
+    time = 80
+  },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "pm-weapon-shooting-speed-9",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+  effects =
+  {
+    {
+      type = "gun-speed",
+      ammo_category = "bullet",
+      modifier = 0.3
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "shotgun-shell",
+      modifier = 0.3
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.2
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "rocket",
+      modifier = 0.3
+    }
+  },
+  prerequisites = {"weapon-shooting-speed-8", "pm-alkaline-earth-metal-pack-unlock"},
+  unit =
+  {
+    count = 1150,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1}
+    },
+    time = 80
+  },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "pm-weapon-shooting-speed-10",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+  effects =
+  {
+    {
+      type = "gun-speed",
+      ammo_category = "bullet",
+      modifier = 0.3
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "shotgun-shell",
+      modifier = 0.3
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.2
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "rocket",
+      modifier = 0.3
+    }
+  },
+  prerequisites = {"weapon-shooting-speed-9"},
+  unit =
+  {
+    count = 1300,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1}
+    },
+    time = 120
+  },
+  upgrade = true
+},
+
 --MARK: Toolbelt
 {
     type = "technology",
@@ -902,6 +1127,7 @@ data.raw["technology"]["physical-projectile-damage-3"].effects =
     modifier = 0.1
   },
 }
+data.raw["technology"]["physical-projectile-damage-4"].prerequisites = {"physical-projectile-damage-3", "rocketry"}
 data.raw["technology"]["physical-projectile-damage-4"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -930,7 +1156,13 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.1
   },
+  {
+    type = "ammo-damage",
+    ammo_category = "rocket",
+    modifier = 0.2
+  }
 }
+data.raw["technology"]["physical-projectile-damage-5"].unit.count = 550
 data.raw["technology"]["physical-projectile-damage-5"].prerequisites = {"physical-projectile-damage-4", "pm-post-transition-metal-pack-unlock"}
 data.raw["technology"]["physical-projectile-damage-5"].unit.ingredients =
 {
@@ -961,7 +1193,13 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.15
   },
+  {
+    type = "ammo-damage",
+    ammo_category = "rocket",
+    modifier = 0.2
+  }
 }
+data.raw["technology"]["physical-projectile-damage-6"].unit.count = 700
 data.raw["technology"]["physical-projectile-damage-6"].prerequisites = {"physical-projectile-damage-5"}
 data.raw["technology"]["physical-projectile-damage-6"].unit.ingredients =
 {
@@ -992,7 +1230,13 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.15
   },
+  {
+    type = "ammo-damage",
+    ammo_category = "rocket",
+    modifier = 0.25
+  }
 }
+data.raw["technology"]["physical-projectile-damage-7"].unit.count = 850
 data.raw["technology"]["physical-projectile-damage-7"].prerequisites = {"physical-projectile-damage-6", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients =
 {
@@ -1024,8 +1268,13 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.2
   },
+  {
+    type = "ammo-damage",
+    ammo_category = "rocket",
+    modifier = 0.25
+  }
 }
-
+data.raw["technology"]["physical-projectile-damage-damage-7"].max_level = 7
 
 --MARK:V.Shooting speed
 data.raw["technology"]["weapon-shooting-speed-1"].effects =
@@ -1109,6 +1358,7 @@ data.raw["technology"]["weapon-shooting-speed-4"].effects =
     modifier = 0.2
   }
 }
+data.raw["technology"]["weapon-shooting-speed-5"].unit.count = 550
 data.raw["technology"]["weapon-shooting-speed-5"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1139,6 +1389,7 @@ data.raw["technology"]["weapon-shooting-speed-5"].effects =
     modifier = 0.2
   }
 }
+data.raw["technology"]["weapon-shooting-speed=6"].unit.count = 700
 data.raw["technology"]["weapon-shooting-speed-6"].prerequisites = {"weapon-shooting-speed-5"}
 data.raw["technology"]["weapon-shooting-speed-6"].unit.ingredients = 
 {
