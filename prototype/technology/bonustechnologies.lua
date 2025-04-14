@@ -4,7 +4,7 @@ local PM = require("library")
 -- this catalouges the scaluing for every single bonus technology in PM, just for other people to look at and so i cant forget
 
 --Research productivity: starts at 0.05, increases after every 2 levels, doubles after every increase (0.5, 0.5, 1, 1, 2, 2, 4, 4)
---Research speed: starts at 0.1, doubles its increase every 2 levels(0.1, 0.125, 0.15, 0.2, 0.3, 0.4, 0.6, 0.8, 1.2, 1.6)
+--Research speed: starts at 0.1, doubles its increase every 2 levels (0.1, 0.125, 0.15, 0.2, 0.3, 0.4, 0.6, 0.8, 1.2, 1.6)
 --Robot storage: adds +1 every level (one per research tier)
 --Robot speed: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3, 0.35, 0.35)
 --Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75, 0.9, 1.05)
@@ -150,7 +150,7 @@ data:extend({
   {
     {
       type = "laboratory-speed",
-      modifier = 0.6 -- +2
+      modifier = 0.8
     }
   },
   prerequisites = {"research-speed-7"},
