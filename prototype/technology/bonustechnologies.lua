@@ -809,7 +809,7 @@ data.raw["technology"]["mining-productivity-4"].unit.count_formula = "1200"
 data.raw["technology"]["mining-productivity-4"].prerequisites = {"mining-productivity-3"}
 data.raw["technology"]["mining-productivity-4"].effects =
 {
-    PM.modify("laboratory-speed", 0.1)
+    PM.modify("mining-drill-productivity-bonus", 0.1)
 }
 
 --MARK: V.Shooting damage
