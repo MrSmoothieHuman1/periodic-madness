@@ -712,7 +712,7 @@ data:extend({
       modifier = 0.25
     }
   },
-  prerequisites = {"weapon-shooting-speed-7"},
+  prerequisites = {"pm-weapon-shooting-speed-7"},
   unit =
   {
     count = 1000,
@@ -755,7 +755,7 @@ data:extend({
       modifier = 0.3
     }
   },
-  prerequisites = {"weapon-shooting-speed-8", "pm-alkaline-earth-metal-pack-unlock"},
+  prerequisites = {"pm-weapon-shooting-speed-8", "pm-alkaline-earth-metal-pack-unlock"},
   unit =
   {
     count = 1150,
@@ -798,7 +798,7 @@ data:extend({
       modifier = 0.3
     }
   },
-  prerequisites = {"weapon-shooting-speed-9"},
+  prerequisites = {"pm-weapon-shooting-speed-9"},
   unit =
   {
     count = 1300,
@@ -1236,7 +1236,7 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
     modifier = 0.25
   }
 }
-data.raw["technology"]["physical-projectile-damage-7"].unit.count = 850
+data.raw["technology"]["physical-projectile-damage-7"].unit.count_formula = "850"
 data.raw["technology"]["physical-projectile-damage-7"].prerequisites = {"physical-projectile-damage-6", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients =
 {
@@ -1274,7 +1274,7 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
     modifier = 0.25
   }
 }
-data.raw["technology"]["physical-projectile-damage-damage-7"].max_level = 7
+data.raw["technology"]["physical-projectile-damage-7"].max_level = 7
 
 --MARK:V.Shooting speed
 data.raw["technology"]["weapon-shooting-speed-1"].effects =
@@ -1389,7 +1389,7 @@ data.raw["technology"]["weapon-shooting-speed-5"].effects =
     modifier = 0.2
   }
 }
-data.raw["technology"]["weapon-shooting-speed=6"].unit.count = 700
+data.raw["technology"]["weapon-shooting-speed-6"].unit.count = 700
 data.raw["technology"]["weapon-shooting-speed-6"].prerequisites = {"weapon-shooting-speed-5"}
 data.raw["technology"]["weapon-shooting-speed-6"].unit.ingredients = 
 {
