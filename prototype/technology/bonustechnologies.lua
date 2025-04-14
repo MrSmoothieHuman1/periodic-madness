@@ -7,7 +7,7 @@ local PM = require("library")
 --Research speed: starts at 0.125, doubles its increase every 2 levels (0.125, 0.125, 0.15, 0.2, 0.3, 0.4, 0.6, 0.8, 1.2, 1.6)
 --Robot storage: adds +1 every level (one per research tier)
 --Robot speed: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3, 0.35, 0.35)
---Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75, 0.9, 1.05)
+--Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.65, 0.8, 0.95, 1.1, 1.25)
 --Mining productivity: starts at 0.05, increases after 2 levels, doubles after every increase (0.05, 0.05, 1, 1, 2, 2, 4, 4)
 --Beacon distribution: starts at 0.05, adds 0.05 every level (0.05, 0.05, 0.1, 0.1, 0.15, 0.15)
 --Proj. damage: starts at 0.1, increases by 0.1 every 2 levels (0.1, 0.2, 0.2, 0.3, 0.3) - shotgun slugs start at 0.1 and increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2)
@@ -183,6 +183,7 @@ data:extend({
       PM.modify("worker-robot-battery", 0.10)
     },
     prerequisites = {"logistic-robotics", "construction-robotics"},
+    upgrade = true,
     unit =
     {
       count = 250,
@@ -205,6 +206,7 @@ data:extend({
       PM.modify("worker-robot-battery", 0.15)
     },
     prerequisites = {"worker-robots-speed-2", "worker-robots-storage-2", "pm-robot-battery-capacity-1", "pm-post-transition-metal-pack-unlock"},
+    upgrade = true,
     unit =
     {
       count = 400,
@@ -223,12 +225,13 @@ data:extend({
     type = "technology",
     name = "pm-robot-battery-capacity-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
+    icon = "__periodic-madness__/graphics/technology/robot-battery-1.png",
     effects =
     {
       PM.modify("worker-robot-battery", 0.2)
     },
     prerequisites = {"worker-robots-speed-3", "worker-robots-storage-2", "pm-robot-battery-capacity-2"},
+    upgrade = true,
     unit =
     {
       count = 600,
@@ -250,9 +253,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
     effects =
     {
-      PM.modify("worker-robot-battery", 0.25)
+      PM.modify("worker-robot-battery", 0.3)
     },
     prerequisites = {"worker-robots-speed-4", "worker-robots-storage-2", "pm-robot-battery-capacity-3"},
+    upgrade = true,
     unit =
     {
       count = 600,
@@ -271,12 +275,13 @@ data:extend({
     type = "technology",
     name = "pm-robot-battery-capacity-5",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/robot-battery-3.png",
+    icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
     effects =
     {
-      PM.modify("worker-robot-battery", 0.35)
+      PM.modify("worker-robot-battery", 0.4)
     },
-    prerequisites = {"worker-robots-speed-4", "worker-robots-storage-3", "pm-robot-battery-capacity-4", "pm-metalloid-pack-unlock"},
+    prerequisites = {"worker-robots-speed-4", "worker-robots-storage-3", "pm-robot-battery-capacity-4"},
+    upgrade = true,
     unit =
     {
       count = 850,
@@ -297,12 +302,13 @@ data:extend({
     type = "technology",
     name = "pm-robot-battery-capacity-6",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/robot-battery-3.png",
+    icon = "__periodic-madness__/graphics/technology/robot-battery-2.png",
     effects =
     {
-      PM.modify("worker-robot-battery", 0.45)
+      PM.modify("worker-robot-battery", 0.5)
     },
     prerequisites = {"worker-robots-speed-5", "worker-robots-storage-3", "pm-robot-battery-capacity-5"},
+    upgrade = true,
     unit =
     {
       count = 1000,
@@ -319,6 +325,63 @@ data:extend({
       time = 120
     }
   },
+  {
+    type = "technology",
+    name = "pm-robot-battery-capacity-7",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/robot-battery-3.png",
+    effects =
+    {
+      PM.modify("worker-robot-battery", 0.65)
+    },
+    prerequisites = {"worker-robots-speed-6", "worker-robots-storage-3", "pm-robot-battery-capacity-6", "pm-alkaline-earth-metal-pack-unlock"},
+    upgrade = true,
+    unit =
+    {
+      count = 1350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-robot-battery-capacity-8",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/robot-battery-3.png",
+    effects =
+    {
+      PM.modify("worker-robot-battery", 0.8)
+    },
+    prerequisites = {"worker-robots-speed-6", "worker-robots-storage-3", "pm-robot-battery-capacity-7"},
+    upgrade = true,
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+
 
 --MARK: Mining prod
 {
