@@ -70,7 +70,14 @@
        ["pm-sulfur-burning", "pm-sulfur-dioxide"],
        ["pm-germanium-sulfide-to-oxide", "pm-germanium-oxide"],
        ["pm-germanium-concentrate-seperation", "pm-germanium-sulfide"],
-       ["pm-germanium-oxide-to-tetrachloride", "pm-germanium-tetrachloride"]
+       ["pm-germanium-oxide-to-tetrachloride", "pm-germanium-tetrachloride"],
+       ["pm-antimony-sulfide-seperation", "pm-antimony-ore"],
+       ["pm-crude-antimony-sulfide-mixing", "pm-antimony-sulfide"],
+       ["pm-high-quality-antimony-sulfide-filtering", "pm-stibnite"],
+       ["pm-low-quality-antimony-sulfide-filtering", "pm-crude-antimony-sulfide"],
+       ["pm-crude-antimony-sulfide", "pm-arsenopyrite-seperation"],
+       ["pm-arsenopyrite-leeching", "pm-arsenopyrite"],
+       ["pm-arsine-seperation", "pm-arsenic-ore"]
     ],
     "autoplace-control":
     [

@@ -65,7 +65,7 @@ data:extend({
 
     {
         type = "recipe",
-        name = "pm-crude-antimony-sulfide",
+        name = "pm-arsenopyrite-seperation",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/crude-antimony-seperation.png",
         enabled = false,
@@ -89,7 +89,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-low-quality-antimony-sulfide-filtering",
+        name = "pm-crude-antimony-sulfide",
         enabled = false,
         energy_required = 8,
         category = "pm-washing",
@@ -111,7 +111,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-high-quality-antimony-sulfide-filtering",
+        name = "pm-stibnite",
         enabled = false,
         energy_required = 8,
         category = "pm-moltening",
@@ -133,7 +133,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-crude-antimony-sulfide-mixing",
+        name = "pm-antimony-sulfide",
         enabled = false,
         energy_required = 10,
         category = "pm-crushing",
@@ -155,7 +155,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-antimony-sulfide-seperation",
+        name = "pm-antimony-ore",
         enabled = false,
         energy_required = 10,
         category = "chemistry",

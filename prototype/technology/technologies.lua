@@ -3197,16 +3197,16 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/arsenic-antimony-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-arsenopyrite-leeching"),
+      PM.unlock_recipe("pm-arsenopyrite"),
       PM.unlock_recipe("pm-impure-arsenic"),
       PM.unlock_recipe("pm-arsenic-oxide"),
       PM.unlock_recipe("pm-arsine"),
-      PM.unlock_recipe("pm-arsine-seperation"),
+      PM.unlock_recipe("pm-arsenic-ore"),
+      PM.unlock_recipe("pm-arsenic-ore"),
       PM.unlock_recipe("pm-crude-antimony-sulfide"),
-      PM.unlock_recipe("pm-low-quality-antimony-sulfide-filtering"),
-      PM.unlock_recipe("pm-high-quality-antimony-sulfide-filtering"),
-      PM.unlock_recipe("pm-crude-antimony-sulfide-mixing"),
-      PM.unlock_recipe("pm-antimony-sulfide-seperation"),
+      PM.unlock_recipe("pm-stibnite"),
+      PM.unlock_recipe("pm-antimony-sulfide"),
+      PM.unlock_recipe("pm-antimony-ore"),
     },
     prerequisites = {"pm-post-transition-metal-pack-unlock"},
     unit =

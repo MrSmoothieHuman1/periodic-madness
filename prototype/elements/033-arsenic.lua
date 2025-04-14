@@ -42,7 +42,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-arsenopyrite-leeching",
+    name = "pm-arsenopyrite",
     enabled = false,
     energy_required = 8,
     category = "pm-acids",
@@ -125,7 +125,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-arsine-seperation",
+    name = "pm-arsenic-ore",
     enabled = false,
     energy_required = 16,
     category = "chemistry",
