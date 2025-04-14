@@ -1,6 +1,6 @@
 local PM = require("library")
 
---MARK: Bonus increases
+--MARK: Bonus amounts
 -- this catalouges the scaluing for every single bonus technology in PM, just for other people to look at and so i cant forget
 
 --Research productivity: starts at 0.05, increases after every 2 levels, doubles after every increase (0.5, 0.5, 1, 1, 2, 2, 4, 4)
@@ -15,6 +15,28 @@ local PM = require("library")
 --Laser shooting: Vanilla, unchanged
 --Braking force: Vanilla, unchanged
 --Stronger explosives: Vanilla, unchanged
+
+--This covers which science packs/trees have which bonuses:
+-- Post-transition path:
+  -- Research productivity
+  -- Mining productivity
+  -- Robot cargo capacity
+  -- Laser shooting speed
+  -- Laser damage
+  -- Projectile damage
+
+-- Reactive non-metal path:
+  -- Research speed
+  -- Stronger explosives
+  -- Robot speed
+  -- Projectile speed
+  -- Braking force
+  -- Beacon distribution
+  -- Refined flammables
+  -- Stronger explosives
+
+-- Both paths:
+  -- Robot battery capacity
 
 data:extend({
 --MARK:Lab Prod
@@ -908,12 +930,13 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
     modifier = 0.1
   },
 }
+data.raw["technology"]["physical-projectile-damage-5"].prerequisites = {"physical-projectile-damage-4", "pm-post-transition-metal-pack-unlock"}
 data.raw["technology"]["physical-projectile-damage-5"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["physical-projectile-damage-5"].effects =
 {
@@ -944,7 +967,7 @@ data.raw["technology"]["physical-projectile-damage-6"].unit.ingredients =
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["physical-projectile-damage-6"].effects =
 {
@@ -969,13 +992,14 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
     modifier = 0.15
   },
 }
+data.raw["technology"]["physical-projectile-damage-7"].prerequisites = {"physical-projectile-damage-6", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["physical-projectile-damage-7"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1}
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
 }
 data.raw["technology"]["physical-projectile-damage-7"].effects =
 {

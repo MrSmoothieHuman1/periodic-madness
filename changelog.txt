@@ -132,6 +132,7 @@ Date: 2024-12-08
     - Changed all bonuses that gain a new science pack, to prerequisite that science pack.
     - Made Genevas neglection shotgun shells last 12 seconds, and slugs 20s, compared to them all being 10s.
     - Made the posion effect slightly slow enemies.
+    - Changed projectile damage to be a P-TM bonus, and not a RNM bonus.
 
   Fixes:
     - Fixed the science pack item names captilisation.
