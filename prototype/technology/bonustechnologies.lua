@@ -302,7 +302,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.45)
     },
-    prerequisites = {"worker-robots-speed-4", "worker-robots-storage-3", "pm-robot-battery-capacity-5"},
+    prerequisites = {"worker-robots-speed-5", "worker-robots-storage-3", "pm-robot-battery-capacity-5"},
     unit =
     {
       count = 1000,
