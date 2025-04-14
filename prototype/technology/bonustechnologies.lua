@@ -153,7 +153,7 @@ data:extend({
       modifier = 0.8
     }
   },
-  prerequisites = {"research-speed-7"},
+  prerequisites = {"pm-research-speed-7"},
   upgrade = true,
   unit =
   {
@@ -599,7 +599,7 @@ data.raw["technology"]["worker-robots-storage-1"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["worker-robots-storage-2"].prerequisites = {"worker-robots-speed-2", "pm-post-transition-metal-pack-unlock"}
+data.raw["technology"]["worker-robots-storage-2"].prerequisites = {"worker-robots-storage-2", "pm-post-transition-metal-pack-unlock"}
 data.raw["technology"]["worker-robots-storage-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
