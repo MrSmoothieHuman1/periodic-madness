@@ -1868,7 +1868,7 @@ data:extend({
     type = "fluid",
     name = "pm-matte-nickel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/matte-copper.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/matte-nickel.png",
     subgroup = "pm-advanced-nickel-tm",
     order = "a",
     default_temperature = 15,
