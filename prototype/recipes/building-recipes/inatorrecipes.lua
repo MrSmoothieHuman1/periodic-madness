@@ -176,13 +176,13 @@ data:extend({
     energy_required = 9,
     category = "pm-moltening",
     subgroup = "pm-intermediates",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-molten-glass", 10, "fluid"),
       PM.ingredient("pm-strontium-ore", 4),
       PM.ingredient("pm-barium-ore", 2)
     },
-    results = 
+    results =
     {
       PM.product("pm-molten-strontium-glass", 5, "fluid")
     }
@@ -194,13 +194,13 @@ data:extend({
     energy_required = 9,
     category = "pm-coldening",
     subgroup = "pm-intermediates",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-molten-strontium-glass", 5, "fluid"),
     },
-    results = 
+    results =
     {
-      PM.product("pm-strontium-glass", 2)
+      PM.product("pm-strontium-glass", 3)
     }
   },
 
