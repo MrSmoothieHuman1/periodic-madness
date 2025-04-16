@@ -1465,6 +1465,14 @@ data:extend({
     place_result = "pm-spiderling-issy",
     stack_size = 2
   },
+  {
+    type = "item",
+    name = "pm-empty-glass-ampule",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/empty-glass-ampule.png",
+    subgroup = "pm-intermediates",
+    stack_size = 50
+  },
 
 
   {

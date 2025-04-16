@@ -2280,12 +2280,12 @@ data:extend({
       PM.unlock_recipe("pm-magneto-orbital-trap"),
       PM.unlock_recipe("pm-francium-forming"),
       PM.unlock_recipe("pm-magneto-orbital-trap-seperation"),
-      PM.unlock_recipe("pm-francium"),
+      PM.unlock_recipe("pm-francium-glass-ampule"),
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-glass-ampules"},
     unit =
     {
-      count = 200,
+      count = 350,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -2489,9 +2489,9 @@ data:extend({
       PM.unlock_recipe("pm-caesium-iodine-seperation"),
       PM.unlock_recipe("pm-caesium-antimony-seperation"),
       PM.unlock_recipe("pm-caesium-hexachlorocerate-seperation"),
-      PM.unlock_recipe("pm-caesium")
+      PM.unlock_recipe("pm-caesium-glass-ampule")
     },
-    prerequisites = {"pm-flourine-processing", "pm-potassium-processing"},
+    prerequisites = {"pm-flourine-processing", "pm-potassium-processing", "pm-glass-ampules"},
     unit =
     {
       count = 250,
@@ -4615,7 +4615,30 @@ data:extend({
       },
       time = 80
     }
-  },  
+  },
+  {
+    type = "technology",
+    name = "pm-glass-ampules",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-empty-glass-ampule")
+    },
+    prerequisites = {"chemical-science-pack"},
+    unit =
+    {
+      count = 200,
+      ingredients = 
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+      },
+      time = 45
+    }
+  },
 
   {
     type = "technology",

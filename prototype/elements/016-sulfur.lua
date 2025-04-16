@@ -149,16 +149,18 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "g",
     allow_productivity = true,
+    main_product = "sulfuric-acid",
     ingredients =
     {
       PM.ingredient("pm-oleum", 5, "fluid"),
-      PM.ingredient("pm-caesium", 2, "fluid")
+      PM.ingredient("pm-caesium-glass-ampule", 1)
     },
     results =
     {
-      PM.product("sulfuric-acid", 30, "fluid")
+      PM.product("sulfuric-acid", 30, "fluid"),
+      PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 0)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-sulfur-from-sulfuric-acid",

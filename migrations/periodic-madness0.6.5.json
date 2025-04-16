@@ -80,7 +80,9 @@
        ["pm-arsine-seperation", "pm-arsenic-ore"],
        ["pm-low-quality-quartzite-seperation", "pm-ferrosilicon"],
        ["pm-low-to-med-quality-polysilicon", "pm-medium-quality-polysilicon"],
-       ["pm-med-to-high-quality-polysilicon", "pm-high-quality-polysilicon"]
+       ["pm-med-to-high-quality-polysilicon", "pm-high-quality-polysilicon"],
+       ["pm-caesium", "pm-caesium-glass-ampule"],
+       ["pm-francium", "pm-francium-glass-ampule"]
     ],
     "autoplace-control":
     [

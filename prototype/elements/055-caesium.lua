@@ -86,6 +86,15 @@ data:extend({
     order = "e",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-caesium-glass-ampule",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/caesium-glass-ampule.png",
+    subgroup = "pm-caesium-am",
+    order = "f",
+    stack_size = 25
+  },
 
   {
     type = "recipe",
@@ -118,7 +127,7 @@ data:extend({
     {
       PM.product_range("pm-pollucite", 6, 12)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-pollucite-crushing",
@@ -159,7 +168,7 @@ data:extend({
       PM.product_range_chance("pm-caesium-iodine-chloride", 2, 5, 0.75),
       PM.product_range_chance("pm-caesium-antimony-chloride", 2, 5, 0.75),
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-caesium-iodine-seperation",
@@ -227,21 +236,22 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-caesium",
+    name = "pm-caesium-glass-ampule",
     enabled = false,
     energy_required = 8,
     category = "pm-washing",
     subgroup = "pm-caesium-am",
-    main_product = "pm-caesium",
+    main_product = "pm-caesium-glass-ampule",
     order = "g",
     ingredients =
     {
       PM.ingredient("pm-caesium-chloride", 6),
       PM.ingredient("pm-ammonia-gas", 10, "fluid"),
+      PM.ingredient("pm-empty-glass-ampule", 2)
     },
     results =
     {
-      PM.product("pm-caesium", 5, "fluid"),
+      PM.product("pm-caesium-glass-ampule", 2),
     }
-  } --[[@as data.RecipePrototype]]
+  },
 })

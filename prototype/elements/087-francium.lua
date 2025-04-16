@@ -43,6 +43,15 @@ data:extend({
     order = "c",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-francium-glass-ampule",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/francium-glass-ampule.png",
+    subgroup = "pm-francium-am",
+    order = "d",
+    stack_size = 25
+  },
 
   {
     type = "recipe",
@@ -104,7 +113,7 @@ data:extend({
     {
       PM.product("pm-francium-magneto-orbital-trap", 1)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-magneto-orbital-trap-seperation",
@@ -129,7 +138,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-francium",
+    name = "pm-francium-glass-ampule",
     enabled = false,
     energy_required = 6,
     category = "chemistry",
@@ -141,11 +150,12 @@ data:extend({
       PM.ingredient("pm-francium-209", 1),
       PM.ingredient("pm-francium-210", 1),
       PM.ingredient("pm-francium-211", 1),
-      PM.ingredient("pm-helium-gas", 20, "fluid")
+      PM.ingredient("pm-helium-gas", 20, "fluid"),
+      PM.ingredient("pm-empty-glass-ampule", 1)
     },
     results =
     {
-      PM.product_range("pm-francium", 2, 5, "fluid")
+      PM.product("pm-francium-glass-ampule", 1)
     }
-  } --[[@as data.RecipePrototype]]
+  },
 })

@@ -1996,16 +1996,18 @@ data:extend({
     subgroup = "pm-intermediates",
     energy_required = 7,
     allow_productivity = true,
+    main_product = "pm-vacuum-tube-getter",
     ingredients = 
     {
-      PM.ingredient("pm-caesium", 2, "fluid"),
+      PM.ingredient("pm-caesium-glass-ampule", 1),
       PM.ingredient("pm-rubidium", 1),
       PM.ingredient("pm-tungsten-plate", 6),
       PM.ingredient("pm-zirconia", 4)
     },
     results =
     {
-      PM.product("pm-vacuum-tube-getter", 1)
+      PM.product("pm-vacuum-tube-getter", 1),
+      PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 0)
     }
   },
   {
@@ -2422,7 +2424,6 @@ data:extend({
       PM.product_range("pm-empty-fuel-rod", 1, 2),
       PM.product_range("pm-helium-gas", 3, 6, "fluid"),
       PM.product_range_chance("pm-carbon-dioxide-gas", 5, 9, 0.67, "fluid")
-
     }
   },
   {
@@ -3839,7 +3840,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-borosilicate-glass-pane", 6),
+      PM.ingredient("pm-borosilicate-glass", 6),
       PM.ingredient("pm-basic-wiring", 20),
       PM.ingredient("pm-gallium-nitride", 3),
     },
@@ -3869,7 +3870,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-borosilicate-glass-pane", 6),
+      PM.ingredient("pm-borosilicate-glass", 6),
       PM.ingredient("pm-basic-wiring", 20),
       PM.ingredient("pm-gallium-arsenide", 3),
     },
@@ -3899,13 +3900,54 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-borosilicate-glass-pane", 6),
+      PM.ingredient("pm-borosilicate-glass", 6),
       PM.ingredient("pm-basic-wiring", 20),
       PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
     },
     results =
     {
       PM.product("pm-module-productivity-light", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-empty-glass-ampule",
+    energy_required = 10,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-glass-pane", 6)
+    },
+    results =
+    {
+      PM.product("pm-empty-glass-ampule", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-borosilicate-empty-glass-ampule",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/empty-glass-ampule.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 10,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass", 6)
+    },
+    results =
+    {
+      PM.product("pm-empty-glass-ampule", 2)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

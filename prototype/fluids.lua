@@ -1124,18 +1124,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-caesium",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/caesium.png",
-    subgroup = "pm-caesium-am",
-    order = "a",
-    base_color = {r = 0.99, g = 0.98, b = 0.6},
-    flow_color = {r = 0.99, g = 0.98, b = 0.6},
-    default_temperature = 15,
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-phosgene",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/phosgene.png",
@@ -1407,18 +1395,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.96, g = 0.85, b = 1 },
     flow_color = {r = 0.96, g = 0.85, b = 1 },
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-francium",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
-    subgroup = "pm-francium-am",
-    order = "d",
-    default_temperature = 15,
-    base_color = {r = 0.99, g = 0.85, b = 0.85},
-    flow_color = {r = 0.99, g = 0.85, b = 0.85},
     auto_barrel = false
   },
   {

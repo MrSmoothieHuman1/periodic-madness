@@ -48,14 +48,14 @@ data:extend({
 {
     type = "recipe",
     name = "pm-alkali-metal-science-pack",
-    category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "fa",
     energy_required = 6,
     allow_productivity = true,
+    main_product = "pm-alkali-metal-science-pack",
     ingredients =
     {
-        PM.ingredient("pm-caesium", 2.5, "fluid"),
+        PM.ingredient("pm-caesium-glass-ampule", 2),
         PM.ingredient("pm-potassium", 12),
         PM.ingredient("pm-sodium", 20),
         PM.ingredient("pm-lithium-ore", 10),
@@ -66,6 +66,7 @@ data:extend({
     results =
     {
         PM.product("pm-alkali-metal-science-pack", 1),
+        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 0)
     }
 },
 {
@@ -236,14 +237,14 @@ data:extend({
     name = "pm-plastic-alkali-metal-science-pack",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/plastic-alkali-metals-pack.png",
-    category = "crafting-with-fluid",
     subgroup = "pm-plastic-science-pack",
     order = "f",
     energy_required = 6,
     allow_productivity = true,
+    main_product = "pm-alkali-metal-science-pack",
     ingredients =
     {
-        PM.ingredient("pm-caesium", 5, "fluid"),
+        PM.ingredient("pm-caesium-glass-ampule", 2),
         PM.ingredient("pm-potassium", 12),
         PM.ingredient("pm-sodium", 20),
         PM.ingredient("pm-lithium-ore", 10),
@@ -254,6 +255,7 @@ data:extend({
     results =
     {
         PM.product("pm-alkali-metal-science-pack", 2),
+        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 0)
     }
 },
 {
@@ -295,7 +297,7 @@ data:extend({
             icon_size = 64,
         },
         {
-            icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+            icon = "__periodic-madness__/graphics/icons/francium-glass-ampule.png",
             icon_size = 64,
             scale = 0.32
         },
@@ -308,13 +310,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-francium", 3, "fluid"),
+        PM.ingredient("pm-francium-glass-ampule", 2),
         PM.ingredient("pm-science-bottle", 5),
         PM.ingredient("pm-transition-metals-ore", 10)
     },
     results =
     {
-        PM.product("automation-science-pack", 5)
+        PM.product("automation-science-pack", 5),
+        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 0)
     }
 },
 {
@@ -328,7 +331,7 @@ data:extend({
             icon_size = 64,
         },
         {
-            icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+            icon = "__periodic-madness__/graphics/icons/francium-glass-ampule.png",
             icon_size = 64,
             scale = 0.32
         },
@@ -341,13 +344,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-francium", 3, "fluid"),
+        PM.ingredient("pm-francium-glass-ampule", 3),
         PM.ingredient("pm-science-bottle", 5),
         PM.ingredient("pm-transition-metals-ore", 20)
     },
     results =
     {
-        PM.product("logistic-science-pack", 5)
+        PM.product("logistic-science-pack", 5),
+        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 0)
     }
 },
 {
@@ -361,7 +365,7 @@ data:extend({
             icon_size = 64,
         },
         {
-            icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+            icon = "__periodic-madness__/graphics/icons/francium-glass-ampule.png",
             icon_size = 64,
             scale = 0.32
         },
@@ -374,13 +378,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-francium", 3, "fluid"),
+        PM.ingredient("pm-francium-glass-ampule", 3),
         PM.ingredient("pm-science-bottle", 5),
         PM.ingredient("pm-transition-metals-ore", 40)
     },
     results =
     {
-        PM.product("pm-advanced-advanced-transition-metal-science-pack", 5)
+        PM.product("pm-advanced-advanced-transition-metal-science-pack", 5),
+        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 0)
     }
 },
 {
@@ -394,7 +399,7 @@ data:extend({
             icon_size = 64,
         },
         {
-            icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+            icon = "__periodic-madness__/graphics/icons/francium-glass-ampule.png",
             icon_size = 64,
             scale = 0.32
         },
@@ -407,14 +412,15 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-francium", 3, "fluid"),
+        PM.ingredient("pm-francium-glass-ampule", 3),
         PM.ingredient("pm-science-bottle", 5),
         PM.ingredient("pm-transition-metals-ore", 15),
         PM.ingredient("pm-post-transition-metals-ore", 15)
     },
     results =
     {
-        PM.product("chemical-science-pack", 5)
+        PM.product("chemical-science-pack", 5),
+        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 0)
     }
 },
 {
@@ -428,7 +434,7 @@ data:extend({
             icon_size = 64,
         },
         {
-            icon = "__periodic-madness__/graphics/icons/fluids/francium.png",
+            icon = "__periodic-madness__/graphics/icons/francium-glass-ampule.png",
             icon_size = 64,
             scale = 0.32
         },
@@ -441,13 +447,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-francium", 3, "fluid"),
+        PM.ingredient("pm-francium-glass-ampule", 3),
         PM.ingredient("pm-science-bottle", 5),
         PM.ingredient("pm-post-transition-metals-ore", 20)
     },
     results =
     {
-        PM.product("pm-post-transition-metal-science-pack", 5)
+        PM.product("pm-post-transition-metal-science-pack", 5),
+        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 0)
     }
 },
 })

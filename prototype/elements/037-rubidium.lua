@@ -74,13 +74,14 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-pollucite", 3),
-      PM.ingredient("pm-caesium", 0.5, "fluid"),
+      PM.ingredient("pm-caesium-glass-ampule", 1),
       PM.ingredient("pm-aluminium-plate", 6)
     },
     results =
     {
       PM.product_range("pm-caesium-rubidium-alum", 3, 6),
-      PM.product_range_chance("pm-pollucite", 2, 3, 0.6)
+      PM.product_range_chance("pm-pollucite", 2, 3, 0.6),
+      PM.product_chance("pm-empty-glass-ampule", 1, 0.85)
     }
   } --[[@as data.RecipePrototype]],
   {
