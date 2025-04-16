@@ -620,7 +620,7 @@ data:extend({
     {
       type = "ammo-damage",
       ammo_category = "rocket",
-      modifier = 0.3
+      modifier = 0.25
     }
   },
   prerequisites = {"physical-projectile-damage-7"},
@@ -666,7 +666,7 @@ data:extend({
     {
       type = "gun-speed",
       ammo_category = "rocket",
-      modifier = 0.3
+      modifier = 0.25
     }
   },
   prerequisites = {"weapon-shooting-speed-6", "pm-alkali-metal-pack-unlock"},
@@ -709,7 +709,7 @@ data:extend({
     {
       type = "gun-speed",
       ammo_category = "rocket",
-      modifier = 0.25
+      modifier = 0.3
     }
   },
   prerequisites = {"pm-weapon-shooting-speed-7"},
@@ -795,7 +795,7 @@ data:extend({
     {
       type = "gun-speed",
       ammo_category = "rocket",
-      modifier = 0.3
+      modifier = 0.35
     }
   },
   prerequisites = {"pm-weapon-shooting-speed-9"},
@@ -1159,7 +1159,7 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
   {
     type = "ammo-damage",
     ammo_category = "rocket",
-    modifier = 0.2
+    modifier = 0.15
   }
 }
 data.raw["technology"]["physical-projectile-damage-5"].unit.count = 550
@@ -1196,7 +1196,7 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
   {
     type = "ammo-damage",
     ammo_category = "rocket",
-    modifier = 0.2
+    modifier = 0.15
   }
 }
 data.raw["technology"]["physical-projectile-damage-6"].unit.count = 700
@@ -1233,7 +1233,7 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
   {
     type = "ammo-damage",
     ammo_category = "rocket",
-    modifier = 0.25
+    modifier = 0.2
   }
 }
 data.raw["technology"]["physical-projectile-damage-7"].unit.count_formula = "850"
@@ -1271,7 +1271,7 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
   {
     type = "ammo-damage",
     ammo_category = "rocket",
-    modifier = 0.25
+    modifier = 0.2
   }
 }
 data.raw["technology"]["physical-projectile-damage-7"].max_level = 7
