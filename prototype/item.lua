@@ -265,16 +265,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ferrum.png",
     subgroup = "pm-iron-tm",
     order = "x",
-    stack_size = 500
-  },
-  {
-    type = "item",
-    name = "pm-ore-slag",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/ore-slag.png",
-    subgroup = "pm-tm-tm",
-    order = "x",
-    stack_size = 500
+    stack_size = 5
   },
   {
     type = "item",
