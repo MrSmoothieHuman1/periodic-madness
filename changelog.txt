@@ -45,6 +45,7 @@ Date: 2024-12-08
     - Added a building dedicated to making coolant, so that it can be prioritised in power, and not cause your base to explode. Once again, merciful god.
     - Added I.S.S.Y - a spiderling that can be used for movement. It has low offensive capabilites, a slightly smaller equipment grid compared to its predeccessor - but is a lot faster. It has a discharge defense and a submachine gun built into it.
     - Added bonus techs for beacon distribution.
+    - Added more borosilicate versions of recipes. (module lights, insert more things here)
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -133,6 +134,7 @@ Date: 2024-12-08
     - Made Genevas neglection shotgun shells last 12 seconds, and slugs 20s, compared to them all being 10s.
     - Made the posion effect slightly slow enemies.
     - Changed projectile damage to be a P-TM bonus, and not a RNM bonus.
+    - Doubled the amount of glass needed for normal module lights.
 
   Fixes:
     - Fixed the science pack item names captilisation.

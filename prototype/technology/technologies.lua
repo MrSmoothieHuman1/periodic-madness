@@ -3117,7 +3117,10 @@ data:extend({
       PM.unlock_recipe("pm-molten-borosilicate-glass"),
       PM.unlock_recipe("pm-borosilicate-glass-cooling"),
       PM.unlock_recipe("pm-borosilicate-science-bottle"),
-      PM.unlock_recipe("pm-borosilicate-glass-fibers")
+      PM.unlock_recipe("pm-borosilicate-glass-fibers"),
+      PM.unlock_recipe("pm-borosilicate-module-speed-light"),
+      PM.unlock_recipe("pm-borosilicate-module-efficiency-light"),
+      PM.unlock_recipe("pm-borosilicate-module-productivity-light"),
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

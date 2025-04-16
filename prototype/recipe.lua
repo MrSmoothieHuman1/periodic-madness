@@ -765,7 +765,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 6),
+      PM.ingredient("pm-glass-pane", 12),
       PM.ingredient("pm-basic-wiring", 20),
       PM.ingredient("pm-gallium-nitride", 3),
     },
@@ -784,7 +784,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 6),
+      PM.ingredient("pm-glass-pane", 12),
       PM.ingredient("pm-basic-wiring", 20),
       PM.ingredient("pm-gallium-arsenide", 3),
     },
@@ -803,7 +803,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 6),
+      PM.ingredient("pm-glass-pane", 12),
       PM.ingredient("pm-basic-wiring", 20),
       PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
     },
@@ -3816,5 +3816,96 @@ data:extend({
     {
       PM.product("pm-spiderling-issy", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-borosilicate-module-speed-light",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/speed-module-light.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 5,
+    subgroup = "pm-modules",
+    order = "c",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass-pane", 6),
+      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-gallium-nitride", 3),
+    },
+    results =
+    {
+      PM.product("pm-module-speed-light", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-borosilicate-module-efficiency-light",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/efficiency-module-light.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 5,
+    enabled = false,
+    subgroup = "pm-modules",
+    order = "g",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass-pane", 6),
+      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-gallium-arsenide", 3),
+    },
+    results =
+    {
+      PM.product("pm-module-efficiency-light", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-borosilicate-module-productivity-light",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/productivity-module-light.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 5,
+    enabled = false,
+    subgroup = "pm-modules",
+    order = "l",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass-pane", 6),
+      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
+    },
+    results =
+    {
+      PM.product("pm-module-productivity-light", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
