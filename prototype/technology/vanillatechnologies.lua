@@ -799,13 +799,13 @@ data.raw["technology"]["speed-module-3"].unit.ingredients =
 data.raw["technology"]["oil-gathering"] = nil
 
 data.raw["technology"]["laser"].unit = nil
-data.raw["technology"]["laser"].research_trigger = 
+data.raw["technology"]["laser"].research_trigger =
 {
   type = "craft-item",
   item = "pm-ruby",
   count = 15
 }
-data.raw["technology"]["laser"].effects = 
+data.raw["technology"]["laser"].effects =
 {
   PM.unlock_recipe("pm-garnet-saw"),
   PM.unlock_recipe("pm-cut-ruby"),

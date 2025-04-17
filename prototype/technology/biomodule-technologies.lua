@@ -1,4 +1,9 @@
 local PM = require("library")
+
+--MARK: Total bonus
+--Agility: Reach distance +10, Running speed +100%
+--Strength: Mining speed +100%, Inventory size +80
+-- Health: Health +250, crafting speed +100%
 data:extend({
 
   {
@@ -116,6 +121,52 @@ data:extend({
       time = 240
     }
   },
+  {
+    type = "technology",
+    name = "pm-bio-module-agility-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    use_icon_overlay_constant = true,
+    upgrade = true,
+    effects =
+    {
+      PM.modify("character-reach-distance", 2),
+      PM.modify("character-running-speed", 0.2)
+    },
+    prerequisites = { "pm-bio-module-agility-4"},
+    unit =
+    {
+      count = 2800,
+      ingredients =
+      {
+        {"pm-agility-bio-module", 1},
+      },
+      time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-bio-module-agility-6",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    use_icon_overlay_constant = true,
+    upgrade = true,
+    effects =
+    {
+      PM.modify("character-reach-distance", 2),
+      PM.modify("character-running-speed", 0.2)
+    },
+    prerequisites = { "pm-bio-module-agility-5"},
+    unit =
+    {
+      count = 4200,
+      ingredients =
+      {
+        {"pm-agility-bio-module", 1},
+      },
+      time = 360
+    }
+  },
 
   {
     type = "technology",
@@ -172,7 +223,7 @@ data:extend({
     effects =
     {
       PM.modify("character-mining-speed", 0.2),
-      PM.modify("character-inventory-slots-bonus", 12)
+      PM.modify("character-inventory-slots-bonus", 15)
     },
     prerequisites = { "pm-bio-module-strength-2"},
     unit =
@@ -195,7 +246,7 @@ data:extend({
     effects =
     {
       PM.modify("character-mining-speed", 0.2),
-      PM.modify("character-inventory-slots-bonus", 12)
+      PM.modify("character-inventory-slots-bonus", 15)
     },
     prerequisites = { "pm-bio-module-strength-3"},
     unit =
@@ -206,6 +257,52 @@ data:extend({
         {"pm-strength-bio-module", 1},
       },
       time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-bio-module-strength-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    use_icon_overlay_constant = true,
+    upgrade = true,
+    effects =
+    {
+      PM.modify("character-mining-speed", 0.2),
+      PM.modify("character-inventory-slots-bonus", 15)
+    },
+    prerequisites = { "pm-bio-module-strength-4"},
+    unit =
+    {
+      count = 2800,
+      ingredients =
+      {
+        {"pm-strength-bio-module", 1},
+      },
+      time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-bio-module-strength-6",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    use_icon_overlay_constant = true,
+    upgrade = true,
+    effects =
+    {
+      PM.modify("character-mining-speed", 0.2),
+      PM.modify("character-inventory-slots-bonus", 15)
+    },
+    prerequisites = { "pm-bio-module-strength-5"},
+    unit =
+    {
+      count = 4200,
+      ingredients =
+      {
+        {"pm-strength-bio-module", 1},
+      },
+      time = 360
     }
   },
 
@@ -264,7 +361,7 @@ data:extend({
     effects =
     {
       PM.modify("character-health-bonus", 50),
-      PM.modify("character-crafting-speed", 0.10)
+      PM.modify("character-crafting-speed", 0.20)
     },
     prerequisites = { "pm-bio-module-health-2"},
     unit =
@@ -298,6 +395,52 @@ data:extend({
         {"pm-health-bio-module", 1},
       },
       time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-bio-module-health-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    use_icon_overlay_constant = true,
+    upgrade = true,
+    effects =
+    {
+      PM.modify("character-health-bonus", 50),
+      PM.modify("character-crafting-speed", 0.20)
+    },
+    prerequisites = { "pm-bio-module-health-4"},
+    unit =
+    {
+      count = 2800,
+      ingredients =
+      {
+        {"pm-health-bio-module", 1},
+      },
+      time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-bio-module-health-6",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    use_icon_overlay_constant = true,
+    upgrade = true,
+    effects =
+    {
+      PM.modify("character-health-bonus", 50),
+      PM.modify("character-crafting-speed", 0.20)
+    },
+    prerequisites = { "pm-bio-module-health-5"},
+    unit =
+    {
+      count = 4200,
+      ingredients =
+      {
+        {"pm-health-bio-module", 1},
+      },
+      time = 360
     }
   },
 })

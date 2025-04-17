@@ -46,6 +46,7 @@ Date: 2024-12-08
     - Added I.S.S.Y - a spiderling that can be used for movement. It has low offensive capabilites, a slightly smaller equipment grid compared to its predeccessor - but is a lot faster. It has a discharge defense and a submachine gun built into it.
     - Added bonus techs for beacon distribution.
     - Added more borosilicate versions of recipes. (module lights, insert more things here)
+    - Added bio-module upgrades 4-6. This'll probably be the max amount of upgrades you'll be able to get.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -136,6 +137,7 @@ Date: 2024-12-08
     - Changed projectile damage to be a P-TM bonus, and not a RNM bonus.
     - Doubled the amount of glass needed for normal module lights.
     - Changed francium and caesium to be required to be transported in glass ampules, instead of being in pipes. It was funny, but the time hath passed.
+    - Buffed the inventory size bonus from strength bio-modules from 12 to 15.
 
   Fixes:
     - Fixed the science pack item names captilisation.
@@ -154,6 +156,7 @@ Date: 2024-12-08
     - Revamped all ammo recipes, to be cheaper and just better.
     - Made the health bio-upgrade's description be more relevant.
     - Reworked values for battery capacity bonuses, increasing the amount you get.
+    - Fixed health bio-modules not doubling in amount at the right technology.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.150
