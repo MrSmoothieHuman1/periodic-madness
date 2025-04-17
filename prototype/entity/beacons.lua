@@ -8,7 +8,7 @@ data:extend({
         name = "pm-hub-beacon",
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.45, result = "beacon"},
+        minable = {mining_time = 1, result = "pm-hub-beacon"},
         fast_replaceable_group = "beacon",
         max_health = 550,
         corpse = "beacon-remnants",
@@ -90,7 +90,7 @@ data:extend({
         name = "pm-proximity-beacon",
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.2, result = "beacon"},
+        minable = {mining_time = 0.45, result = "pm-proximity-beacon"},
         fast_replaceable_group = "beacon",
         max_health = 150,
         corpse = "beacon-remnants",
@@ -167,7 +167,7 @@ data:extend({
         name = "pm-beacon-2",
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.3, result = "beacon"},
+        minable = {mining_time = 0.75, result = "pm-beacon-2"},
         fast_replaceable_group = "beacon",
         max_health = 400,
         corpse = "beacon-remnants",
@@ -244,6 +244,7 @@ data:extend({
 
 data.raw["beacon"]["beacon"].distribution_effectivity = 1.25
 data.raw["beacon"]["beacon"].module_slots = 3
+data.raw["beacon"]["beacon"].minable = {mining_time = 0.5, result = "beacon"}
 data.raw["beacon"]["beacon"].icons_positioning =
   {
     {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 3}
