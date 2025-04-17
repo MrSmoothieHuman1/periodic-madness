@@ -647,8 +647,8 @@ data.raw["technology"]["follower-robot-count-4"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1}
 }
 
-data.raw["technology"]["effect-transmission"].unit.count = 275
-data.raw["technology"]["effect-transmission"].unit.time = 60
+data.raw["technology"]["effect-transmission"].unit.count = 375
+data.raw["technology"]["effect-transmission"].unit.time = 80
 data.raw["technology"]["effect-transmission"].prerequisites = {"pm-vacuum-tubes", "pm-polytetrafluoroethylene-plastic"}
 data.raw["technology"]["effect-transmission"].effects =
 {
