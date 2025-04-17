@@ -656,7 +656,6 @@ data.raw["technology"]["effect-transmission"].effects =
   PM.unlock_recipe("pm-borosilicate-travelling-wave-amplifier-tube"),
   PM.unlock_recipe("beacon")
 }
-
 data.raw["technology"]["effect-transmission"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -808,20 +807,14 @@ data.raw["technology"]["explosive-rocketry"].unit.ingredients =
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"
 
-local SpeedMod1Fix = data.raw["module"]["speed-module"]
+data.raw["module"]["speed-module"].icon_size = 64
+data.raw["module"]["speed-module"].icon = "__periodic-madness__/graphics/icons/modules/speed-module-1.png"
 
-SpeedMod1Fix.icon_size = 64
-SpeedMod1Fix.icon = "__periodic-madness__/graphics/icons/modules/speed-module-1.png"
+data.raw["module"]["speed-module-2"].icon_size = 64
+data.raw["module"]["speed-module-2"].icon = "__periodic-madness__/graphics/icons/modules/speed-module-2.png"
 
-local SpeedMod2Fix = data.raw["module"]["speed-module-2"]
-
-SpeedMod2Fix.icon_size = 64
-SpeedMod2Fix.icon = "__periodic-madness__/graphics/icons/modules/speed-module-2.png"
-
-local SpeedMod3Fix = data.raw["module"]["speed-module-3"]
-
-SpeedMod3Fix.icon_size = 64
-SpeedMod3Fix.icon = "__periodic-madness__/graphics/icons/modules/speed-module-3.png"
+data.raw["module"]["speed-module-3"].icon_size = 64
+data.raw["module"]["speed-module-3"].icon = "__periodic-madness__/graphics/icons/modules/speed-module-3.png"
 
 data.raw["technology"]["speed-module"].unit.ingredients =
 {
