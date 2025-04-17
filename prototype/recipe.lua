@@ -1881,8 +1881,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 16),
-      PM.ingredient("pm-lead-plate", 8),
+      PM.ingredient("pm-glass-pane", 20),
+      PM.ingredient("pm-lead-plate", 10),
       PM.ingredient("pm-zirconia", 12)
     },
     results =
@@ -3971,12 +3971,40 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-vacuum-tube", 1),
-      PM.ingredient("pm-borosilicaglass-pane", 4),
+      PM.ingredient("pm-borosilicate-glass", 4),
       PM.ingredient("copper-cable", 8)
     },
     results =
     {
       PM.product("pm-travelling-wave-amplifier-tube", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-borosilicate-empty-reactor-cell",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/empty-fuel-cell.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+    },
+    enabled = false,
+    energy_required = 20,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass", 12),
+      PM.ingredient("pm-lead-plate", 10),
+      PM.ingredient("pm-zirconia", 12)
+    },
+    results =
+    {
+      PM.product("pm-empty-reactor-cell", 10)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

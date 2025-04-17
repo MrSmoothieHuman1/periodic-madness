@@ -137,7 +137,6 @@ Date: 2024-12-08
     - Changed projectile damage to be a P-TM bonus, and not a RNM bonus.
     - Doubled the amount of glass needed for normal module lights.
     - Changed francium and caesium to be required to be transported in glass ampules, instead of being in pipes. It was funny, but the time hath passed.
-    - Buffed the inventory size bonus from strength bio-modules from 12 to 15.
 
   Fixes:
     - Fixed the science pack item names captilisation.
