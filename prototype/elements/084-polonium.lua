@@ -133,7 +133,7 @@ data:extend({
     enabled = false,
     energy_required = 45,
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-polonium-210", 20),
       PM.ingredient("pm-bismuth-210", 2),
@@ -143,6 +143,7 @@ data:extend({
     {
       PM.catalyst("pm-polonium-210", 22, 20),
       PM.product_range_chance("pm-bismuth-210", 1, 4, 0.85),
+      PM.catalyst("pm-trace-astatine-211", 1, 0)
     }
   },
 

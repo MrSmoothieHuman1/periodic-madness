@@ -3686,7 +3686,8 @@ data:extend({
       PM.unlock_recipe("pm-mixed-astatine-magneto-orbital-trap"),
       PM.unlock_recipe("pm-mixed-astatine-MOT-emptying"),
       PM.unlock_recipe("pm-astatine-isotope-rearranging"),
-      PM.unlock_recipe("pm-polonium-sassxolotl-enrichment")
+      PM.unlock_recipe("pm-polonium-sassxolotl-enrichment"),
+      PM.unlock_recipe("pm-francium-PTx86-enrichment")
     },
     prerequisites = {"pm-polonium-processing", "pm-metalloid-pack-unlock", "pm-francium-processing"},
     unit =

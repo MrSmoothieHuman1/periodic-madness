@@ -158,4 +158,30 @@ data:extend({
       PM.product("pm-francium-glass-ampule", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-francium-PTx86-enrichment",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/polonium-sassxolotl-enrichment.png",
+    category = "centrifuging",
+    subgroup = "pm-francium-am",
+    order = "d",
+    enabled = false,
+    energy_required = 30,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-francium-209", 10),
+      PM.ingredient("pm-francium-210", 10),
+      PM.ingredient("pm-francium-211", 10),
+      PM.ingredient("pm-trace-astatine-211", 4)
+    },
+    results =
+    {
+      PM.catalyst_range("pm-francium-209", 10, 11, 1),
+      PM.catalyst_range("pm-francium-210", 10, 11, 1),
+      PM.catalyst_range("pm-francium-211", 10, 11, 1),
+      PM.catalyst("pm-trace-astatine-211", 1, 0)
+    }
+  },
 })
