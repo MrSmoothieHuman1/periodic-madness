@@ -3421,7 +3421,7 @@ data:extend({
         }
       }
     },
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery-mk2-equipment")
     },

@@ -653,6 +653,7 @@ data.raw["technology"]["effect-transmission"].prerequisites = {"pm-vacuum-tubes"
 data.raw["technology"]["effect-transmission"].effects =
 {
   PM.unlock_recipe("pm-travelling-wave-amplifier-tube"),
+  PM.unlock_recipe("pm-borosilicate-travelling-wave-amplifier-tube"),
   PM.unlock_recipe("beacon")
 }
 

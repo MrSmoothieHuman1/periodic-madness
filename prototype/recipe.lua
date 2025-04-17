@@ -3950,4 +3950,33 @@ data:extend({
       PM.product("pm-empty-glass-ampule", 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-borosilicate-travelling-wave-amplifier-tube",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/TWAT.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 10,
+    subgroup = "pm-intermediates",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-vacuum-tube", 1),
+      PM.ingredient("pm-borosilicaglass-pane", 4),
+      PM.ingredient("copper-cable", 8)
+    },
+    results =
+    {
+      PM.product("pm-travelling-wave-amplifier-tube", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
