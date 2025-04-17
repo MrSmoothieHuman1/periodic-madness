@@ -733,55 +733,7 @@ data.raw["technology"]["fission-reactor-equipment"].research_trigger =
 }
 data.raw["technology"]["fission-reactor-equipment"].unit = nil
 data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
-
 data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
-
-data.raw["technology"]["inserter-capacity-bonus-2"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["inserter-capacity-bonus-3"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["inserter-capacity-bonus-4"].prerequisites = {"inserter-capacity-bonus-3"}
-data.raw["technology"]["inserter-capacity-bonus-4"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["inserter-capacity-bonus-5"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-  {"pm-metalloid-science-pack", 1}
-}
-data.raw["technology"]["inserter-capacity-bonus-6"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-  {"pm-metalloid-science-pack", 1}
-}
-data.raw["technology"]["inserter-capacity-bonus-7"].prerequisites = {"inserter-capacity-bonus-6"}
-data.raw["technology"]["inserter-capacity-bonus-7"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-  {"pm-metalloid-science-pack", 1}
-}
 data.raw["technology"]["flammables"].effects =
 {
   PM.unlock_recipe("pm-gunpowder"),
