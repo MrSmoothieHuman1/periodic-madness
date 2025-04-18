@@ -143,7 +143,7 @@ data:extend({
     {
       PM.catalyst("pm-polonium-210", 22, 20),
       PM.product_range_chance("pm-bismuth-210", 1, 4, 0.85),
-      PM.catalyst("pm-trace-astatine-211", 1, 0)
+      PM.catalyst("pm-trace-astatine-211", 1, 1)
     }
   },
 

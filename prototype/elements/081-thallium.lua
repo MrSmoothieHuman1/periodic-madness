@@ -80,7 +80,7 @@ data:extend({
     {
       PM.product("pm-thallium-sulfate", 4),
       PM.product_range_chance("pm-arsenic-ore", 0, 3, 0.7),
-      PM.catalyst_range("copper-ore", 4, 7, 4)
+      PM.catalyst_range("copper-ore", 4, 7, 3)
     }
   } --[[@as data.RecipePrototype]],
   {

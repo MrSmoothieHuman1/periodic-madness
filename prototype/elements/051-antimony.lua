@@ -150,7 +150,7 @@ data:extend({
         {
             PM.product("pm-antimony-sulfide", 8),
             PM.catalyst_range("pm-vanadium-oxide-catalyst", 2, 0.75, 2),
-            PM.product_range_chance("pm-catalyst-container", 1, 2, 0.25)
+            PM.catalyst_range_chance("pm-catalyst-container", 1, 2, 0.25, 2)
         }
     },
     {

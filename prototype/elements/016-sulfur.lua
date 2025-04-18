@@ -158,7 +158,7 @@ data:extend({
     results =
     {
       PM.product("sulfuric-acid", 30, "fluid"),
-      PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 0)
+      PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 1)
     }
   },
   {

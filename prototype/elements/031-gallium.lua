@@ -145,12 +145,12 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-gallium-liqour", 20, "fluid"),
-      PM.catalyst_ingredient("pm-ion-exchange-beads", 5, 5),
+      PM.ingredient("pm-ion-exchange-beads", 5),
     },
     results =
     {
       PM.product("pm-liquid-gallium", 5, "fluid"),
-      PM.catalyst_range("pm-ion-exchange-beads", 2, 5, 5)
+      PM.catalyst_range("pm-ion-exchange-beads", 2, 5, 2)
     }
   }--[[@as data.RecipePrototype]]
 })
