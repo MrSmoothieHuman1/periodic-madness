@@ -166,7 +166,10 @@ data:extend({
     category = "centrifuging",
     crafting_machine_tint =
     {
-      primary = {r = 0.5, g = 0.3, b = 0.3, a = 1},
+      primary = {r = 0.5, g = 0.3, b = 0.3},
+      secondary = {r = 0.5, g = 0.3, b = 0.3},
+      tertiary = {r = 1, g = 0.3, b = 0.3},
+      quaternary = {r = 0.5, g = 0.1, b = 0.3},
     },
     subgroup = "pm-francium-am",
     order = "d",
@@ -182,9 +185,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-francium-209", 10, 11, 1),
-      PM.catalyst_range("pm-francium-210", 10, 11, 1),
-      PM.catalyst_range("pm-francium-211", 10, 11, 1),
+      PM.catalyst_range("pm-francium-209", 10, 11, 10),
+      PM.catalyst_range("pm-francium-210", 10, 11, 10),
+      PM.catalyst_range("pm-francium-211", 10, 11, 10),
       PM.catalyst("pm-trace-astatine-211", 1, 0)
     }
   },
