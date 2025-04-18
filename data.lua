@@ -594,5 +594,4 @@ if settings.startup["pm-circuit-colourblind-friendly-icons"].value == true then
   data.raw["item"]["electronic-circuit"].icon = "__periodic-madness__/graphics/icons/new-electronic-circuit.png"
   data.raw["item"]["pm-fluid-circuit"].icon = "__periodic-madness__/graphics/icons/new-fluid-circuit.png"
   data.raw["item"]["processing-unit"].icon = "__periodic-madness__/graphics/icons/new-processing-unit.png"
-
 end
