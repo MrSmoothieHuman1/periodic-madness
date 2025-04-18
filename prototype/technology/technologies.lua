@@ -1184,7 +1184,8 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-trace-gas-refining", --you come up with a better name.
+    name = "pm-trace-gas-refining",
+
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/trace-gas-refining.png",
     effects =
@@ -4626,7 +4627,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-empty-glass-ampule")
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"trace-gas-refining"},
     unit =
     {
       count = 200,

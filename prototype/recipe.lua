@@ -3912,12 +3912,14 @@ data:extend({
   {
     type = "recipe",
     name = "pm-empty-glass-ampule",
+    category = "crafting-with-fluid",
     energy_required = 10,
     enabled = false,
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 6)
+      PM.ingredient("pm-glass-pane", 6),
+      PM.ingredient("pm-argon-gas", 5)
     },
     results =
     {
@@ -3941,9 +3943,11 @@ data:extend({
     energy_required = 10,
     enabled = false,
     allow_productivity = true,
+    category = "crafting-with-fluid",
     ingredients =
     {
-      PM.ingredient("pm-borosilicate-glass", 6)
+      PM.ingredient("pm-borosilicate-glass", 6),
+      PM.ingredient("pm-argon-gas", 8)
     },
     results =
     {
