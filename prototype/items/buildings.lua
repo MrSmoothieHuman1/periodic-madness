@@ -697,7 +697,7 @@ data:extend({
     type = "item",
     name = "pm-beacon-2",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
     place_result = "pm-beacon-2",
     stack_size = 50
   },

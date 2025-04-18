@@ -165,7 +165,7 @@ data:extend({
       {
         type = "beacon",
         name = "pm-beacon-2",
-        icon = "__base__/graphics/icons/beacon.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.75, result = "pm-beacon-2"},
         fast_replaceable_group = "beacon",
@@ -204,7 +204,7 @@ data:extend({
           max_sounds_per_prototype = 3
         },
         energy_usage = "500kW",
-        distribution_effectivity = 1.75,
+        distribution_effectivity = 1.5,
         distribution_effectivity_bonus_per_quality_level = 0.25,
         profile = 
         {
