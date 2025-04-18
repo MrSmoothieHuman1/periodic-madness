@@ -604,6 +604,6 @@ set.working_visualisations[1].apply_recipe_tint = "primary"
 set.working_visualisations[2].apply_recipe_tint = "primary"
 
 local layers = set.working_visualisations[2].animation.layers
-layers[1].filename = "__peridoic-madness__/graphics/entities/buildings/centrifuge/centrifuge-C-light.png"
-layers[2].filename = "__peridoic-madness__/graphics/entities/buildings/centrifuge/centrifuge-B-light.png"
-layers[3].filename = "__peridoic-madness__/graphics/entities/buildings/centrifuge/-A-light.png"
+layers[1].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-C-light.png"
+layers[2].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-B-light.png"
+layers[3].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-A-light.png"
