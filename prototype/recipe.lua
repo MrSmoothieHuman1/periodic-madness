@@ -3919,7 +3919,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 6),
-      PM.ingredient("pm-argon-gas", 5)
+      PM.ingredient("pm-argon-gas", 5, "fluid")
     },
     results =
     {
@@ -3947,7 +3947,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-argon-gas", 8)
+      PM.ingredient("pm-argon-gas", 8, "fluid")
     },
     results =
     {
