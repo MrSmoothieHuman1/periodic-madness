@@ -4627,7 +4627,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-empty-glass-ampule")
     },
-    prerequisites = {"trace-gas-refining"},
+    prerequisites = {"pm-trace-gas-refining"},
     unit =
     {
       count = 200,
