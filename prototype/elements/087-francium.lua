@@ -164,6 +164,10 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/polonium-sassxolotl-enrichment.png",
     category = "centrifuging",
+    crafting_machine_tint =
+    {
+      primary = {r = 0.5, g = 0.3, b = 0.3, a = 1},
+    },
     subgroup = "pm-francium-am",
     order = "d",
     enabled = false,
