@@ -621,7 +621,7 @@ data:extend({
     type = "technology",
     name = "pm-diesel-fuel-canisters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/diesel-can-tech.png",
+    icon = "__periodic-madness__/graphics/technology/diesel-fuel-canisters.png",
     effects =
     {
       PM.unlock_recipe("pm-fuel-canister"),
@@ -644,7 +644,7 @@ data:extend({
     type = "technology",
     name = "pm-kerosene-fuel-canisters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/kerosene-can-tech.png",
+    icon = "__periodic-madness__/graphics/technology/kerosene-fuel-canisters.png",
     effects =
     {
       PM.unlock_recipe("pm-fuel-canister"),
@@ -667,7 +667,7 @@ data:extend({
     type = "technology",
     name = "pm-petrol-fuel-canisters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/petrol-can-tech.png",
+    icon = "__periodic-madness__/graphics/technology/petrol-fuel-canisters.png",
     effects =
     {
       PM.unlock_recipe("pm-fuel-canister"),
@@ -1648,7 +1648,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-modules",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bio-module-tech.png",
+    icon = "__periodic-madness__/graphics/technology/bio-modules.png",
     effects =
     {
       PM.unlock_recipe("pm-blank-bio-module"),
