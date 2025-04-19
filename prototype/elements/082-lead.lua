@@ -74,7 +74,7 @@ data:extend({
     {
       PM.product("pm-lead-chunks", 4)
     }
-  } --[[@as data.RecipePrototype]],
+  },  
   {
     type = "recipe",
     name = "pm-lead-powder",
@@ -94,7 +94,7 @@ data:extend({
       PM.product_range("pm-lead-powder", 6, 8),
       PM.product_chance("pm-mixed-ore-slag", 2, 0.5)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-lead-froth",
@@ -115,10 +115,10 @@ data:extend({
       PM.product("pm-lead-froth", 30, "fluid"),
       PM.product_range("pm-acidic-water", 10, 20, "fluid"),
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
-    name = "pm-lead-froth-skimming",
+    name = "pm-impure-lead",
     enabled = false,
     energy_required = 6,
     category = "pm-washing",
@@ -135,10 +135,10 @@ data:extend({
       PM.product_chance("pm-thallium-ore", 2, 0.2),
       PM.product("pm-impure-lead", 2)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
-    name = "pm-lead-purifying",
+    name = "pm-lead-ore",
     enabled = false,
     energy_required = 3,
     category = "pm-moltening",

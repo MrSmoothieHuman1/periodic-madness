@@ -82,7 +82,9 @@
        ["pm-low-to-med-quality-polysilicon", "pm-medium-quality-polysilicon"],
        ["pm-med-to-high-quality-polysilicon", "pm-high-quality-polysilicon"],
        ["pm-caesium", "pm-caesium-glass-ampule"],
-       ["pm-francium", "pm-francium-glass-ampule"]
+       ["pm-francium", "pm-francium-glass-ampule"],
+       ["pm-lead-froth-skimming", "pm-impure-lead"],
+       ["pm-lead-purifying", "pm-lead-ore"]
     ],
     "autoplace-control":
     [

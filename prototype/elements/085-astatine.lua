@@ -67,14 +67,14 @@ data:extend({
         enabled = false,
         energy_required = 20,
         allow_productivty = true,
-        ingredients = 
+        ingredients =
         {
           PM.ingredient("pm-bismuth-ore", 20),
           PM.ingredient("copper-plate", 10),
           PM.ingredient("pm-aluminium-plate", 10),
           PM.ingredient("pm-gold-plate", 10), --all need to be catalysts for hard mode
         },
-        results = 
+        results =
         {
           PM.product_range_chance("pm-mixed-trace-astatine", 1, 3, 0.6)
         }
