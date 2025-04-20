@@ -4644,6 +4644,32 @@ data:extend({
       time = 45
     }
   },
+  {
+    type = "technology",
+    name = "pm-agar-offgassing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-bacteriaed-agar-methyl-chloride-offgassing"),
+      PM.unlock_recipe("pm-bacteriaed-agar-hydrogen-sulfide-offgassing"),
+      PM.unlock_recipe("pm-cyanobacteriaed-agar-ammonia-offgassing")
+    },
+    prerequisites = {"pm-agar-bacteria-filtering", "pm-alkali-metal-pack-unlock"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 80
+    }
+  },
 
   {
     type = "technology",
