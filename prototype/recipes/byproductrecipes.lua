@@ -335,8 +335,8 @@ data:extend({
     results = 
     {
       PM.product_range_chance("iron-ore", 0, 3, 0.66),
-      PM.product_range_chance("zinc-ore", 0, 2, 0.5),
-      PM.product_range_chance("pm-mercury-ore", 0, 3, 0.5),
+      PM.product_range_chance("pm-zinc-ore", 0, 2, 0.5),
+      PM.product_range_chance("pm-mercury-ore", 0, 3, 0.45),
       PM.product_range_chance("pm-hydrogen-sulfide", 0, 4, 0.6, "fluid"),
     }
   },
@@ -439,6 +439,7 @@ data:extend({
     enabled = false,
     category = "chemistry",
     energy_required = 5,
+    main_product = "sulfur",
     ingredients = 
     {
       PM.ingredient("pm-hydrogen-sulfide", 10, "fluid"),
