@@ -21,7 +21,7 @@ Date: 2024-12-08
     - Continuing to rerender and model ores and other things.
     - Finally made the patina recipe unlockable at advanced byproduct handling.
     - Changed reactors to require some kind of coolant to actually function - and will explode if they arent getting any liquid, and have fuel inside of them. Have fun!
-    - Finally solved the whole issue of "hey theres no *real* way to make sulfur", by letting you make sulfur from sulfuric acid.
+    - Finally solved the whole issue of "hey theres no *real* way to make sulfur, by splitting up the chains to make sulfuric acid and sulfur. acid takes SO2, sulfur takes H2S
     - Revamped aluminium, moving it to A-ATM packs (under mixing tanks), and lenthenging the processing chain for it.
     - Added tier 3 solar panel equipment, with 90kW charge.
     - Added a new technology unlocked after platinum processing, moving ammonium chloride seperation down to A-ATM science.

@@ -24,7 +24,7 @@ data:extend({
       PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 2),
       PM.product_chance("pm-catalyst-container", 2, 0.15)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-kerosene-hydrosulfurisation",
@@ -48,7 +48,7 @@ data:extend({
       PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 2),
       PM.product_chance("pm-catalyst-container", 2, 0.15)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-sulfur-dioxide-cracking",
@@ -68,11 +68,48 @@ data:extend({
     results =
     {
       PM.product("sulfuric-acid", 15, "fluid"),
-      PM.product("sulfur", 2),
       PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.7, 1),
       PM.catalyst_chance("pm-catalyst-container", 1, 0.3, 1)
     }
-  } --[[@as data.RecipePrototype]],
+  },
+  {
+    type = "recipe",
+    name = "pm-hydrogen-sulfide",
+    energy_required = 2,
+    category = "chemistry",
+    subgroup = "pm-sulfur-rnm",
+    order = "d",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molybdenum-disulfide", 1),
+      PM.ingredient("pm-syngas", 20, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-hydrogen-sulfide", 15, "fluid"),
+      PM.product_range("pm-carbon-dioxide", 0, 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sulfur",
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-sulfur-rnm",
+    order = "e",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-hydrogen-sulfide", 7.5, "fluid"),
+      PM.ingredient("pm-nickel-plate", 3)
+    },
+    results =
+    {
+      PM.product_range("sulfur", 4, 10),
+      PM.product_range("water", 0, 5, "fluid")
+    }
+  },
 
   {
     type = "recipe",
@@ -95,7 +132,7 @@ data:extend({
       PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.85, 3),
       PM.catalyst_range("pm-catalyst-container", 3, 0.15, 3)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-sulfur-trioxide",
@@ -120,7 +157,7 @@ data:extend({
       PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 2, 3, 0.8, 3),
       PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.2, 1)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-oleum",
@@ -139,7 +176,7 @@ data:extend({
     {
       PM.product_range("pm-oleum", 10, 15, "fluid")
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-better-sulfuric-acid",
@@ -161,26 +198,4 @@ data:extend({
       PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 1)
     }
   },
-  {
-    type = "recipe",
-    name = "pm-sulfur-from-sulfuric-acid",
-    enabled = false,
-    energy_required = 4,
-    category = "chemistry",
-    subgroup = "pm-sulfur-rnm",
-    order = "h",
-    allow_productivity = true,
-    main_product = "sulfur",
-    ingredients = 
-    {
-      PM.ingredient("sulfuric-acid", 4, "fluid"),
-      PM.ingredient("water", 25, "fluid")
-    },
-    results = 
-    {
-      PM.product("sulfur", 2),
-      PM.product_range("water", 5, 27.5, "fluid")
-    }
-  }
-
 })

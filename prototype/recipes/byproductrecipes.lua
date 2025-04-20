@@ -433,24 +433,4 @@ data:extend({
       PM.product_range("pm-sulfur-dioxide", 0, 4, "fluid")
     }
   },
-  {
-    type = "recipe",
-    name = "pm-hydrogen-sulfide-seperation",
-    enabled = false,
-    category = "chemistry",
-    energy_required = 5,
-    main_product = "sulfur",
-    ingredients = 
-    {
-      PM.ingredient("pm-hydrogen-sulfide", 10, "fluid"),
-      PM.ingredient("pm-sulfur-dioxide", 2.5, "fluid"),
-      PM.ingredient("pm-aluminium-plate", 2) --catalyst for hard mode
-    },
-    results = 
-    {
-      PM.product_range("sulfur", 9, 15),
-      PM.product_range("water", 8, 10, "fluid")
-    }
-  }
-
 } --[[@as data.RecipePrototype[] ]])

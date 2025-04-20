@@ -37,9 +37,10 @@ data.raw["tool"]["logistic-science-pack"].icon_size = 64
 data.raw["technology"]["sulfur-processing"].effects =
 {
   PM.unlock_recipe("pm-vanadium-oxide"),
+  PM.unlock_recipe("pm-hydrogen-sulfide"),
+  PM.unlock_recipe("pm-sulfur"),
   PM.unlock_recipe("pm-vanadium-oxide-catalyst"),
   PM.unlock_recipe("pm-sulfur-dioxide-cracking"),
-  PM.unlock_recipe("pm-hydrogen-sulfide-seperation")
 }
 
 data.raw["technology"]["sulfur-processing"].prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes"}
