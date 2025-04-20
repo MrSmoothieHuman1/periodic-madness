@@ -380,6 +380,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-sulfuric-waste-looping",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
+    category = "pm-mixing",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-sulfuric-waste-water", 15, "fluid"),
+      PM.ingredient("water", 15, "fluid")
+    },
+    results = 
+    {
+      PM.product_range("water", 15, 20, "fluid"),
+      PM.product_range_chance("pm-acidic-water", 0, 8, 0.33, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-calcium-chloride-seperation",
     enabled = false,
     category = "pm-washing",

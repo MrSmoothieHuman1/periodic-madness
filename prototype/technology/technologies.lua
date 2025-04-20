@@ -4175,10 +4175,13 @@ data:extend({
       PM.unlock_recipe("pm-carbon-to-carbon-dioxide"),
       PM.unlock_recipe("pm-ferrous-waste-water"),
       PM.unlock_recipe("pm-cupric-waste-water"),
+      PM.unlock_recipe("pm-sulfuric-waste-water"),
       PM.unlock_recipe("pm-ferrous-waste-seperation"),
       PM.unlock_recipe("pm-cupric-waste-seperation"),
+      PM.unlock_recipe("pm-sulfuric-waste-seperation"),
       PM.unlock_recipe("pm-ferrous-waste-looping"),
       PM.unlock_recipe("pm-cupric-waste-looping"),
+      PM.unlock_recipe("pm-sulfuric-waste-looping")
     },
     prerequisites = {"pm-mixing-material-processing-1", "pm-byproduct-handling"},
     unit =
