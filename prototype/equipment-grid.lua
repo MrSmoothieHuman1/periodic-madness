@@ -51,14 +51,14 @@ data:extend({
     name = "pm-bio-armor-equipment-grid",
     width = 16,
     height = 16,
-    equipemnt_categories = {"pm-bio-armor"}
+    equipment_categories = {"pm-bio-armor"}
   },
   {
     type = "equipment-grid",
     name = "pm-bio-armor-MK2-equipment-grid",
     width = 22,
     height = 22,
-    equipemnt_categories = {"pm-bio-armor"}
+    equipment_categories = {"pm-bio-armor"}
   },
 })
 
