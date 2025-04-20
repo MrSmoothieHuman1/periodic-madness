@@ -1055,7 +1055,21 @@ data:extend({
     type = "recipe",
     name = "pm-tinned-glass-melting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tinned-glass-melting.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-tin.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/glass-pane.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
     subgroup = "pm-glassing",
     order = "ha",
     category = "pm-moltening",
