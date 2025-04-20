@@ -414,22 +414,22 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-bacteriaed-agar-sulfur-dioxide-offgassing",
+    name = "pm-bacteriaed-agar-hydrogen-sulfide-offgassing",
     enabled = false,
     energy_required = 20,
     category = "pm-bacteria-incubating",
     subgroup = "pm-biostuff-rnm",
     allow_productivity = true,
-    main_product = "pm-sulfur-dioxide",
+    main_product = "pm-hydrogen-sulfide",
     ingredients = 
     {
       PM.ingredient("pm-bacteriaed-agar-solution", 40, "fluid"),
-      PM.ingredient("pm-carbon-monoxide", 10, "fluid")
+      PM.ingredient("pm-hydrogen-gas", 10, "fluid")
     },
     results = 
     {
       PM.product_range("pm-bacteriaed-agar-solution", 39, 40, "fluid"),
-      PM.product_range("pm-sulfur-dioxide", 1, 8, "fluid")
+      PM.product_range("pm-hydrogen-sulfide", 2, 8, "fluid")
     }
   },
   {
