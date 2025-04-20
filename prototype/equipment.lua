@@ -23,7 +23,7 @@ data:extend({
       usage_priority = "primary-output"
     },
     power = "45kW",
-    categories = { "armor" }
+    categories = { "armor", "pm-bio-armor" }
   },
   {
     type = "solar-panel-equipment",
@@ -48,7 +48,7 @@ data:extend({
       usage_priority = "primary-output"
     },
     power = "90kW",
-    categories = { "armor" }
+    categories = {"armor", "pm-bio-armor"}
   },
 
   {
@@ -101,7 +101,7 @@ data:extend({
     charging_station_count = 0,
     charging_distance = 0,
     charging_threshold_distance = 0,
-    categories = { "armor" }
+    categories = {"armor"}
   },
 
   {
@@ -153,7 +153,7 @@ data:extend({
     charging_station_count = 0,
     charging_distance = 0,
     charging_threshold_distance = 0,
-    categories = { "armor" }
+    categories = {"armor"}
   },
 
   {
@@ -206,7 +206,7 @@ data:extend({
     charging_station_count = 8,
     charging_distance = 1.6,
     charging_threshold_distance = 5,
-    categories = { "armor" }
+    categories = {"armor"}
   },
   {
     type = "roboport-equipment",
@@ -258,7 +258,7 @@ data:extend({
     charging_station_count = 16,
     charging_distance = 1.6,
     charging_threshold_distance = 8,
-    categories = { "armor" }
+    categories = {"armor"}
   },
 
   {
@@ -359,6 +359,7 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].shape =
 
 data.raw["item"]["solar-panel-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["solar-panel-equipment"].order = "a"
+data.raw["solar-panel-equipment"]["solar-panel-equipment"].categories = {"armor", "pm-bio-armor"}
 
 data.raw["night-vision-equipment"]["night-vision-equipment"].shape = 
 {
