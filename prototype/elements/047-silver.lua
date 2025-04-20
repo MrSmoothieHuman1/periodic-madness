@@ -22,7 +22,17 @@ data:extend({
     type = "recipe",
     name = "pm-silver-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/silver-leeching.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/silver-chunks.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon_size = 64,
+      },
+    },
     subgroup = "pm-silver-tm",
     order = "a",
     category = "pm-acids",
