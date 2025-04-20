@@ -49,6 +49,7 @@ Date: 2024-12-08
     - Added bio-module upgrades 4-6. This'll probably be the max amount of upgrades you'll be able to get.
     - Added a kova recipe for francium.
     - Added tintable centrifuges - credit to NullPointerExempt's mod for the code and graphics!
+    - Finally added hydrogen sulfide after ignoring it for ages, it'll be used even more soon!
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -140,6 +141,7 @@ Date: 2024-12-08
     - Doubled the amount of glass needed for normal module lights.
     - Changed francium and caesium to be required to be transported in glass ampules, instead of being in pipes. It was funny, but the time hath passed.
     - Changed kova recipes to always spit out astatine.
+    - Changed sodium sulfite to use hydrogen sulfide, as it should have.
 
   Fixes:
     - Fixed the science pack item names captilisation.

@@ -260,6 +260,23 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-sulfuric-waste-water",
+    category = "pm-mixing",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("sulfur", 12),
+      PM.ingredient("pm-sodium-hydroxide", 4, "fluid"),
+      PM.ingredient("water", 20, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-sulfuric-waste-water", 15, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-ferrous-waste-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-seperation.png",
@@ -300,6 +317,27 @@ data:extend({
       PM.product_range_chance("pm-palladium-ore", 0, 3, 0.5),
       PM.product_range_chance("pm-platinum-ore", 0, 4, 0.4),
       PM.product_range_chance("pm-indium-ore", 0, 2, 0.35)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sulfuric-waste-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-seperation.png",
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = 
+    {
+      PM.ingredient("pm-sulfuric-waste-water", 10, "fluid"),
+    },
+    results = 
+    {
+      PM.product_range_chance("iron-ore", 0, 3, 0.66),
+      PM.product_range_chance("zinc-ore", 0, 2, 0.5),
+      PM.product_range_chance("pm-mercury-ore", 0, 3, 0.5),
+      PM.product_range_chance("pm-hydrogen-sulfide", 0, 4, 0.6, "fluid"),
     }
   },
   {
@@ -374,6 +412,24 @@ data:extend({
     {
       PM.product_range("pm-calcium-chloride", 4, 6),
       PM.product_range("pm-sulfur-dioxide", 0, 4, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-hydrogen-sulfide-seperation",
+    enabled = false,
+    category = "chemistry",
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-hydrogen-sulfide", 10, "fluid"),
+      PM.ingredient("pm-sulfur-dioxide", 2.5, "fluid"),
+      PM.ingredient("pm-aluminium-plate", 2) --catalyst for hard mode
+    },
+    results = 
+    {
+      PM.product_range("sulfur", 9, 15),
+      PM.product_range("water", 8, 10, "fluid")
     }
   }
 

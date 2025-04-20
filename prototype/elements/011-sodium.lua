@@ -133,7 +133,7 @@ data:extend({
     {
       PM.ingredient("pm-sodium", 5),
       PM.ingredient("pm-oxygen-gas", 10, "fluid"),
-      PM.ingredient("pm-sulfur-dioxide", 5, "fluid")
+      PM.ingredient("pm-hydrogen-sulfide", 5, "fluid")
     },
     results = 
     {

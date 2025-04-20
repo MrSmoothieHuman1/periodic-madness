@@ -68,8 +68,9 @@ data:extend({
     results = 
     {
       PM.product_range("pm-bitumen", 0, 2),
-      PM.product_range("sulfur", 7, 12),
+      PM.product_range("sulfur", 5, 10),
       PM.product_range("pm-chrominum-ore", 1, 4),
+      PM.product_range("pm-hydrogen-sulfide", 2.5, 8)
     }
   },
   {
@@ -91,7 +92,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-bitumen", 2, 4),
-      PM.product("sulfur", 6),
+      PM.product("sulfur", 3),
       PM.product_range("pm-vanadium-ore", 1, 4),
       PM.product_range("pm-syngas", 0.5, 5, "fluid")
     }
