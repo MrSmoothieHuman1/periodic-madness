@@ -2260,9 +2260,36 @@ data:extend({
     category = "pm-burnining",
     energy_required = 3,
     hide_from_player_crafting = true,
+    emissions_multiplier = 2,
     ingredients =
     {
       PM.ingredient("pm-syngas", 25, "fluid"),
+    },
+    results = {}
+  },
+  {
+    type = "recipe",
+    name = "pm-hydrogen-sulfide-voiding",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-sulfide.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
+      },
+    },
+    subgroup = "pm-voiding",
+    category = "pm-burnining",
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    emissions_multiplier = 2.5,
+    ingredients =
+    {
+      PM.ingredient("pm-hydrogen-sulfide", 25, "fluid"),
     },
     results = {}
   },
