@@ -2235,6 +2235,7 @@ data:extend({
     category = "pm-burnining",
     energy_required = 3,
     hide_from_player_crafting = true,
+    emissions_multiplier = 1.25,
     ingredients =
     {
       PM.ingredient("pm-ammonia-gas", 25, "fluid"),
@@ -2260,7 +2261,7 @@ data:extend({
     category = "pm-burnining",
     energy_required = 3,
     hide_from_player_crafting = true,
-    emissions_multiplier = 2,
+    emissions_multiplier = 1.5,
     ingredients =
     {
       PM.ingredient("pm-syngas", 25, "fluid"),
@@ -2286,7 +2287,7 @@ data:extend({
     category = "pm-burnining",
     energy_required = 3,
     hide_from_player_crafting = true,
-    emissions_multiplier = 2.5,
+    emissions_multiplier = 2,
     ingredients =
     {
       PM.ingredient("pm-hydrogen-sulfide", 25, "fluid"),
