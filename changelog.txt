@@ -28,7 +28,6 @@ Date: 2024-12-08
     - Added 2 new types of beacons unlocked at AEM science, hub and proximity beacons. Hub beacons are wide and large beacons that can handle a lot of modules, but have a low distribution range. Proximity beacons are the opposite.
     - Added the Haber-Bosch process for ammonia, unlocked at metalloid packs.
     - Added an advanced processing chain for iron, copper, nickel, zinc and manganese. The chunk ores have a 1:6 chunk to ore ratio compared to 1:2.
-    - Ammonia can now be burned in a burn-inator.
     - Added beryllium plates instead of making it ore only, just because plates have been neglected recently.
     - Added mod settings for PM! Ranging from things like how fast bots are (0.25x - 2x), [insert more things here]
     - Added 2 new alternative recipes for LDS, using the 2 other main 'light' metals.
@@ -50,6 +49,7 @@ Date: 2024-12-08
     - Added a kova recipe for francium.
     - Added tintable centrifuges - credit to NullPointerExempt's mod for the code and graphics!
     - Finally added hydrogen sulfide after ignoring it for ages, it'll be used even more soon!
+    - Let more fluids be burnable in the burn-inator like ammonia, sulfur dioxide/trioxide, etc
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

@@ -2294,4 +2294,56 @@ data:extend({
     },
     results = {}
   },
+  {
+    type = "recipe",
+    name = "pm-sulfur-dioxide-voiding",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/sulfur-dioxide.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
+      },
+    },
+    subgroup = "pm-voiding",
+    category = "pm-burnining",
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    emissions_multiplier = 1.5,
+    ingredients =
+    {
+      PM.ingredient("pm-sulfur-dioxide", 25, "fluid"),
+    },
+    results = {}
+  },
+  {
+    type = "recipe",
+    name = "pm-sulfur-trioxide-voiding",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/sulfur-trioxide.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
+      },
+    },
+    subgroup = "pm-voiding",
+    category = "pm-burnining",
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    emissions_multiplier = 1.75,
+    ingredients =
+    {
+      PM.ingredient("pm-sulfur-dioxide", 25, "fluid"),
+    },
+    results = {}
+  },
 } --[[@as data.RecipePrototype[] ]])
