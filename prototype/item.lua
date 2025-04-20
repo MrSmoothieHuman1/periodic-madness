@@ -136,6 +136,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-nickel-tungsten-catalyst",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/vanadium-oxide-catalyst.png",
+    subgroup = "pm-catalysts",
+    order = "da",
+    stack_size = 25
+  },
+  {
+    type = "item",
     name = "pm-copper-zinc-aluminium-catalyst",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/CuZnAl-catalyst.png",

@@ -102,12 +102,14 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-hydrogen-sulfide", 7.5, "fluid"),
-      PM.ingredient("pm-nickel-plate", 3)
+      PM.ingredient("pm-nickel-tungsten-catalyst", 1)
     },
     results =
     {
       PM.product_range("sulfur", 4, 10),
-      PM.product_range("water", 0, 5, "fluid")
+      PM.product_range("water", 0, 5, "fluid"),
+      PM.catalyst_chance("pm-nickel-tungsten-catalyst", 1, 0.85, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.15, 1)
     }
   },
 

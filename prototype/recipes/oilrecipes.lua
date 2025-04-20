@@ -658,6 +658,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-nickel-tungsten-catalyst",
+    energy_required = 3,
+    subgroup = "pm-catalysts",
+    order = "ba",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-nickel-plate", 2),
+      PM.ingedient("pm-tungsten-plate", 1),
+      PM.ingredient("pm-catalyst-container", 1)
+    },
+    results = {
+      PM.product("pm-nickel-tungsten-catalyst", 1)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-fuel-canister",
     energy_required = 1,
     subgroup = "pm-fuels",
