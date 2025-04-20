@@ -1912,6 +1912,16 @@ data:extend({
     flow_color = {r = 0.8, g = 0.6, b = 0.6},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-sulfuric-waste-water",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-waste-water.png",
+    default_temperature = 15,
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+  },
+
 	{
 		type = "fluid",
 		name = "pm-liquid-heat",
