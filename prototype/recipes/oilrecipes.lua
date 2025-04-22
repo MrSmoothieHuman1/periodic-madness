@@ -667,7 +667,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-nickel-plate", 2),
-      PM.ingedient("pm-tungsten-plate", 1),
+      PM.ingredient("pm-tungsten-plate", 1),
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {

@@ -80,6 +80,7 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "d",
     allow_productivity = true,
+    main_product = "pm-hydrogen-sulfide",
     ingredients =
     {
       PM.ingredient("pm-molybdenum-disulfide", 1),
@@ -88,7 +89,7 @@ data:extend({
     results =
     {
       PM.product("pm-hydrogen-sulfide", 15, "fluid"),
-      PM.product_range("pm-carbon-dioxide", 0, 5, "fluid")
+      PM.product_range("pm-carbon-dioxide-gas", 0, 5, "fluid")
     }
   },
   {
@@ -99,6 +100,7 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "e",
     allow_productivity = true,
+    main_product = "sulfur",
     ingredients =
     {
       PM.ingredient("pm-hydrogen-sulfide", 7.5, "fluid"),

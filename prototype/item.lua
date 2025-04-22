@@ -138,7 +138,7 @@ data:extend({
     type = "item",
     name = "pm-nickel-tungsten-catalyst",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/vanadium-oxide-catalyst.png",
+    icon = "__periodic-madness__/graphics/icons/nickel-tungsten-catalyst.png",
     subgroup = "pm-catalysts",
     order = "da",
     stack_size = 25
@@ -1428,7 +1428,7 @@ data:extend({
   {
     type = "item",
     name = "pm-silicon-wafer",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/silicon-wafer.png",
     subgroup = "pm-silicon-mt",
     order = "h",
@@ -1437,7 +1437,7 @@ data:extend({
   {
     type = "item",
     name = "pm-barely-etched-silicon-wafer",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/barely-etched-silicon-wafer.png",
     subgroup = "pm-silicon-mt",
     order = "i",
@@ -1446,7 +1446,7 @@ data:extend({
   {
     type = "item",
     name = "pm-etched-silicon-wafer",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/etched-silicon-wafer.png",
     subgroup = "pm-silicon-mt",
     order = "ia",

@@ -9,6 +9,7 @@ data:extend({
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/ores/francium-209.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-209-1.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/francium-209-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
@@ -23,6 +24,7 @@ data:extend({
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/ores/francium-210.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-210-1.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/francium-210-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
@@ -37,6 +39,7 @@ data:extend({
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/ores/francium-211.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/francium-211-1.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/ores/francium-211-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-francium-am",
@@ -73,7 +76,7 @@ data:extend({
     {
       PM.product("pm-magneto-orbital-trap", 1)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-borosilicate-magneto-orbital-trap",
@@ -94,7 +97,7 @@ data:extend({
     {
       PM.product("pm-magneto-orbital-trap", 1)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-francium-forming",
@@ -162,7 +165,7 @@ data:extend({
     type = "recipe",
     name = "pm-francium-PTx86-enrichment",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/polonium-sassxolotl-enrichment.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/francium-ptx86-enrichment.png",
     category = "centrifuging",
     crafting_machine_tint =
     {

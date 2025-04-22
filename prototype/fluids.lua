@@ -1334,7 +1334,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-sulfur-trioxide",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sulfur-trioxide.png",
     default_temperature = 15,
     base_color = {r = 1, g = 0.8, b = 0},
@@ -1799,7 +1799,7 @@ data:extend({
     type = "fluid",
     name = "pm-sulfur-dichloride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/sulfur-dichloride.png",
     subgroup = "pm-radium-aem",
     order = "e",
     default_temperature = 15,
@@ -1925,7 +1925,7 @@ data:extend({
     type = "fluid",
     name = "pm-hydrogen-sulfide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-waste-water.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-sulfide.png",
     default_temperature = 15,
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}
