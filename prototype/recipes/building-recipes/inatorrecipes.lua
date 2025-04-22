@@ -1122,7 +1122,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-palladium", 5, "fluid")
+      PM.product("pm-molten-beryllium", 5, "fluid")
     }
   },
 
