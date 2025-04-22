@@ -37,6 +37,7 @@ data.raw["tool"]["logistic-science-pack"].icon_size = 64
 data.raw["technology"]["sulfur-processing"].effects =
 {
   PM.unlock_recipe("pm-vanadium-oxide"),
+  PM.unlock_recipe("pm-nickel-tungsten-catalyst"),
   PM.unlock_recipe("pm-hydrogen-sulfide"),
   PM.unlock_recipe("pm-sulfur"),
   PM.unlock_recipe("pm-vanadium-oxide-catalyst"),
