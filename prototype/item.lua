@@ -272,6 +272,12 @@ data:extend({
     name = "pm-ferrum",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ferrum.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ferrum.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ferrum-2.png", size = 64, scale = 0.48 },
+      { filename = "__periodic-madness__/graphics/icons/ferrum-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-iron-tm",
     order = "x",
     stack_size = 5
@@ -655,7 +661,7 @@ data:extend({
   {
     type = "item",
     name = "pm-plastic-science-mold",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/empty-science-mold.png",
     subgroup = "pm-plastic-science-process",
     order = "a",
@@ -664,7 +670,7 @@ data:extend({
   {
     type = "item",
     name = "pm-filled-plastic-science-mold",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/filled-science-mold.png",
     subgroup = "pm-plastic-science-process",
     order = "b",

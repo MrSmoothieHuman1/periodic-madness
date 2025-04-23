@@ -679,7 +679,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-benzene",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.8, b = 0.8},
@@ -688,7 +688,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-acetone",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.8, b = 0.8},
@@ -771,7 +771,7 @@ data:extend({
   {
     type = "fluid",
     name = "pm-ammonia-gas",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/ammonia.png",
     default_temperature = 15,
     base_color = {r = 0.6, g = 0.6, b = 1 },
