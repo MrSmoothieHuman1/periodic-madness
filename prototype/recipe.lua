@@ -1553,8 +1553,8 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/polymethyl-methacrylate.png",
-        icon_size = 128,
+        icon = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic.png",
+        icon_size = 64,
         scale = 0.5
       },
       {
