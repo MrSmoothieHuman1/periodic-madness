@@ -2071,7 +2071,7 @@ data:extend({
     },
     subgroup = "pm-voiding",
     category = "pm-burnining",
-    emissions_multiplier = 2,
+    emissions_multiplier = 1.25,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients =
@@ -2097,6 +2097,7 @@ data:extend({
     },
     subgroup = "pm-voiding",
     category = "pm-burnining",
+    emissions_multiplier = 1.1,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients =
