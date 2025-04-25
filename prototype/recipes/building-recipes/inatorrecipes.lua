@@ -2036,7 +2036,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residual.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
         icon_size = 64,
       },
       {
