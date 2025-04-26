@@ -4674,6 +4674,32 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-strontium-fuel-rods",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-RTG", "fission-reactor-equipment"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
+  },
 
   {
     type = "technology",
