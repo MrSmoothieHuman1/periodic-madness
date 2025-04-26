@@ -3806,7 +3806,7 @@ data:extend({
     enabled = false,
     ingredients = 
     {
-      PM.ingredient("processing-unit", 30),
+      PM.ingredient("advanced-circuit", 35),
       PM.ingredient("pm-heavy-lubricant", 60, "fluid"),
       PM.ingredient("pm-vulcanised-rubber", 24),
       PM.ingredient("pm-lightweight-framing", 30),
