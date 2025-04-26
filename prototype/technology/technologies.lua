@@ -3950,7 +3950,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-celestine"),
+      PM.unlock_recipe("pm-strontium-black-ash"),
+      PM.unlock_recipe("pm-strontium-sulfide-solution"),
+      PM.unlock_recipe("pm-strontium-sulfide"),
+      PM.unlock_recipe("pm-strontium-carbonate"),
+      PM.unlock_recipe("pm-strontium-ore")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
