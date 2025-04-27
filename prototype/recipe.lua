@@ -76,7 +76,7 @@ data:extend({
     category = "pm-crushing",
     ingredients = 
     {
-      PM.ingredient("pm-gravel", 1)
+      PM.ingredient("pm-gravel", 2)
     },
     results = 
     {
