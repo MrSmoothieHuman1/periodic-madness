@@ -56,7 +56,7 @@ data:extend({
     enabled = false,
     ingredients = 
     { 
-      PM.ingredient("stone", 4) 
+      PM.ingredient("stone", 4)
     },
     category = "pm-crushing",
     subgroup = "pm-glassing",
@@ -80,7 +80,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-sand", 1, 2)
+      PM.product("pm-sand", 4)
     }
   },
 
