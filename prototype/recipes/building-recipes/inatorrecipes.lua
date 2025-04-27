@@ -89,15 +89,15 @@ data:extend({
     order = "a",
     ingredients =
     {
-      PM.ingredient("pm-glass-pane", 10),
+      PM.ingredient("pm-glass-pane", 5),
       PM.ingredient("pm-boric-oxide", 6),
       PM.ingredient("pm-aluminium-plate", 4),
-      PM.ingredient("pm-sea-salt", 6),
+      PM.ingredient("pm-industrial-silicon-ore", 3),
       PM.ingredient("pm-molten-tin", 2, "fluid")
     },
     results =
     {
-      PM.product("pm-molten-borosilicate-glass", 5, "fluid")
+      PM.product("pm-molten-borosilicate-glass", 7.5, "fluid")
     }
   },
   {
