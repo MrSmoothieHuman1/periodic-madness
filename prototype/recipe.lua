@@ -4011,4 +4011,34 @@ data:extend({
       PM.product("pm-empty-reactor-cell", 10)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-borosilicate-vacuum-tube",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/vacuum-tube.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+    },
+    enabled = false,
+    subgroup = "pm-intermediates",
+    energy_required = 7,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-platinum-plate", 3),
+      PM.ingredient("pm-nickel-plate", 3),
+      PM.ingredient("pm-borosilicate-glass", 6),
+      PM.ingredient("pm-vacuum-tube-getter", 1)
+    },
+    results =
+    {
+      PM.product("pm-vacuum-tube", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

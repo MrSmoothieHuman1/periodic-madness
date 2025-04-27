@@ -2460,7 +2460,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-vacuum-tube-getter"),
-      PM.unlock_recipe("pm-vacuum-tube")
+      PM.unlock_recipe("pm-vacuum-tube"),
+      PM.unlock_recipe("pm-borosilicate-vacuum-tube")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
