@@ -167,5 +167,23 @@ data:extend({
             PM.product_range_chance("pm-bauxite", 0, 3, 0.55),
             PM.product_range_chance("pm-patina", 0, 2, 0.45),
         }
-    }
+    },
+    {
+        type = "recipe",
+        name = "pm-strontium-fuel-rod",
+        enabled = false,
+        subgroup = "pm-fuel-rods",
+        order = "c",
+        energy_required = 15,
+        allow_productivity = true,
+        ingredients = 
+        {
+          PM.ingredient("pm-strontium-ore", 2),
+          PM.ingredient("pm-empty-fuel-rod", 5)
+        },
+        results = 
+        {
+          PM.product("pm-strontium-fuel-rod", 5)
+        }
+      },
 })

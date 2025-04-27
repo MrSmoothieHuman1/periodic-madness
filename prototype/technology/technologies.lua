@@ -4682,7 +4682,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-strontium-fuel-rod")
     },
     prerequisites = {"pm-RTG", "fission-reactor-equipment"},
     unit =
@@ -4700,6 +4700,29 @@ data:extend({
       },
       time = 80
     },
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-sand-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-sand"),
+      PM.unlock_recipe("pm-gravel-crushing"),
+      PM.unlock_recipe("pm-glass-pane")
+    },
+    prerequisites = {"pm-crushing", "automation-2"},
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+      },
+      time = 30
+    }
   },
 
   {
@@ -4828,29 +4851,6 @@ data:extend({
       time = 60
     }
   },
-  {
-    type = "technology",
-    name = "pm-advanced-sand-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-sand"),
-      PM.unlock_recipe("pm-gravel-crushing"),
-      PM.unlock_recipe("pm-glass-pane")
-    },
-    prerequisites = {"pm-crushing", "automation-2"},
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-      },
-      time = 30
-    }
-  }
   -- {
   --    type = "technology",
   --    name = "pm-metharicephentine",

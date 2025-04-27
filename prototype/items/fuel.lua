@@ -92,6 +92,18 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-strontium-fuel-rod",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/polonium-fuel-rod.png",
+    subgroup = "pm-fuel-rods",
+    order = "c",
+    fuel_category = "pm-strontium",
+    burnt_result = "pm-spent-fuel-rod",
+    fuel_value = "25MJ",
+    stack_size = 10
+  },
+  {
+    type = "item",
     name = "pm-empty-fuel-rod",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/empty-fuel-rod.png",
