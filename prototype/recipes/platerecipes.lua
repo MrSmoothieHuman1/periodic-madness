@@ -100,6 +100,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-gravel-glass-pane",
+    category = "smelting",
+    subgroup = "pm-glassing",
+    order = "b",
+    energy_required = 4.8,
+    allow_productivity = true,
+    enabled = false,
+    ingredients = { PM.ingredient("pm-gravel", 4) },
+    results = {
+      PM.product("pm-glass-pane", 1)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-glass-pane",
     category = "smelting",
     subgroup = "pm-glassing",

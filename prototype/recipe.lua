@@ -32,20 +32,58 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-sand",
+    name = "pm-gravel",
     energy_required = 4,
     allow_productivity = true,
     enabled = false,
-    ingredients = { PM.ingredient("stone", 4) },
-    icon_size = 64,
+    ingredients = 
+    { 
+      PM.ingredient("stone", 4)
+    },
     category = "pm-crushing",
     subgroup = "pm-glassing",
     order = "a",
     results =
     {
-      PM.product("pm-sand", 8),
+      PM.product("pm-gravel", 6),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-sand",
+    energy_required = 4,
+    allow_productivity = true,
+    enabled = false,
+    ingredients = 
+    { 
+      PM.ingredient("stone", 4) 
+    },
+    category = "pm-crushing",
+    subgroup = "pm-glassing",
+    order = "a",
+    main_product = "pm-sand",
+    results =
+    {
+      PM.product("pm-sand", 8),
+      PM.product("pm-gravel", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-gravel-crushing",
+    energy_required = 2,
+    enabled = false,
+    category = "pm-crushing",
+    ingredients = 
+    {
+      PM.ingredient("pm-gravel", 1)
+    },
+    results = 
+    {
+      PM.product_range("pm-sand", 1, 2)
+    }
+  },
+
   {
     type = "recipe",
     name = "pm-electronic-breadboard",

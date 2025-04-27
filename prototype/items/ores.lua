@@ -610,8 +610,8 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-strontium-aem",
-    fuel_value = "12MJ",
-    fuel_category = "pm-RTG",
+    fuel_value = "10MJ",
+    fuel_category = "pm-strontium",
     order = "e",
     stack_size = 200
   },

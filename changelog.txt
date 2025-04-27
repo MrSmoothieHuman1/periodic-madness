@@ -142,6 +142,7 @@ Date: 2024-12-08
     - Changed francium and caesium to be required to be transported in glass ampules, instead of being in pipes. It was funny, but the time hath passed.
     - Changed kova recipes to always spit out astatine.
     - Changed sodium sulfite to use hydrogen sulfide, as it should have.
+    - Reworked sand/glass processing: early glass takes gravel (which is less efficient), but eventually you unlock better crushing techniques to actually make sand.
 
   Fixes:
     - Fixed the science pack item names captilisation.

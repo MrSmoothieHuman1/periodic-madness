@@ -1488,6 +1488,22 @@ data:extend({
     subgroup = "pm-intermediates",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-gravel",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sand.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/sand.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sand-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sand-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sand-4.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-glassing",
+    order = "a",
+    stack_size = 100
+  },
 
 
   {
@@ -1606,6 +1622,10 @@ data:extend({
   {
     type = "fuel-category",
     name = "pm-oil-canisters"
+  },
+  {
+    type = "fuel-category",
+    name = "pm-strontium" 
   },
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"
