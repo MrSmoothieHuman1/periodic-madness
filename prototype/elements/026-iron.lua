@@ -68,7 +68,7 @@ data:extend({
     type = "recipe",
     name = "pm-basic-pig-iron",
     enabled = false,
-    energy_required = 3.2 / 2,
+    energy_required = 2,
     category = "pm-crushing",
     subgroup = "pm-iron-tm",
     order = "a",

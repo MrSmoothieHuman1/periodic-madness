@@ -78,7 +78,7 @@ data:extend({
     type = "recipe",
     name = "pm-crude-matte-copper",
     enabled = false,
-    energy_required = 3.2 / 2,
+    energy_required = 2,
     category = "pm-crushing",
     subgroup = "pm-copper-tm",
     order = "a",
