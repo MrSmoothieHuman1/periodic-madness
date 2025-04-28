@@ -4679,7 +4679,7 @@ data:extend({
     type = "technology",
     name = "pm-strontium-fuel-rods",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/strontium-fuel-rods.png",
     effects = 
     {
       PM.unlock_recipe("pm-strontium-fuel-rod")

@@ -1492,13 +1492,13 @@ data:extend({
     type = "item",
     name = "pm-gravel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/sand.png",
+    icon = "__periodic-madness__/graphics/icons/gravel.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/sand.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/sand-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/sand-3.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/sand-4.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/gravel.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/gravel-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/gravel-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/gravel-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-glassing",
     order = "a",

@@ -94,7 +94,7 @@ data:extend({
     type = "item",
     name = "pm-strontium-fuel-rod",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/polonium-fuel-rod.png",
+    icon = "__periodic-madness__/graphics/icons/strontium-fuel-rod.png",
     subgroup = "pm-fuel-rods",
     order = "c",
     fuel_category = "pm-strontium",
