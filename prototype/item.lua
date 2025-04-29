@@ -307,6 +307,13 @@ data:extend({
     name = "pm-coke",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/coke.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/coke.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/coke-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/coke-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/coke-4.png", size = 64, scale = 0.5 }
+    },
     subgroup = "raw-resource",
     order = "d",
     fuel_category = "chemical",
