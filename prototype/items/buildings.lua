@@ -755,6 +755,16 @@ data:extend({
     place_result = "pm-RTG",
     stack_size = 50,
   },
+  {
+    type = "item",
+    name = "pm-washing-plant-3",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-3.png",
+    subgroup = "pm-water-machine",
+    order = "e",
+    place_result = "pm-washing-plant-3",
+    stack_size = 50,
+  },
 
 })
 

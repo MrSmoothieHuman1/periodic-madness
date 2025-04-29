@@ -1410,7 +1410,7 @@ data:extend({
     subgroup = "pm-water-machine",
     order = "da",
     enabled = false,
-    category = "crafting-with-fluod",
+    category = "crafting-with-fluid",
     energy_required = 4,
     ingredients =
     {
@@ -1421,7 +1421,7 @@ data:extend({
       PM.ingredient("pm-polyethylene-plastic", 4)
     },
     results = {
-      PM.product("pm-washing-plant-2", 1)
+      PM.product("pm-washing-plant-3", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
