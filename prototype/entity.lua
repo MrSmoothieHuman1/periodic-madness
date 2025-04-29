@@ -8272,6 +8272,111 @@ fluid_boxes =
     },
   },
 }--[[@as data.AssemblingMachinePrototype]],
+{
+  type = "assembling-machine",
+  name = "pm-washing-plant-3",
+  icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-3.png",
+  icon_size = 64,
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 0.6, result = "pm-washing-plant-3" },
+  max_health = 850,
+  corpse = "pm-washing-plant-2",
+  dying_explosion = "assembling-machine-1-explosion",
+  fast_replaceable_group = "pm-washers",
+  resistances =
+  {
+    {
+      type = "impact",
+      percent = 65
+    }
+  },
+  collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
+  selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+  alert_icon_shift = util.by_pixel(-3, -12),
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["assembling-machine"],
+  graphics_set = 
+{
+  animation =
+  {
+    layers =
+    {
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-3/washing-plant.png",
+        priority = "high",
+        width = 214,
+        height = 226,
+        shift = util.by_pixel(0, -4),
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+        priority = "high",
+        width = 226,
+        height = 214,
+        draw_as_shadow = true,
+        shift = util.by_pixel(40 - 10, -4),
+        scale = 0.5
+      }
+    }
+  }
+},
+  crafting_categories = { "pm-washing" },
+  crafting_speed = 2,
+  energy_usage = "360kW",
+  allowed_effects = PM.all_effects(),
+  module_slots = 3,
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = {pollution = 0.75},
+  },
+  working_sound =
+  {
+    sound =
+    {
+      {
+        filename = "__base__/sound/assembling-machine-t1-1.ogg",
+        volume = 0.6
+      }
+    },
+    audible_distance_modifier = 0.5,
+    fade_in_ticks = 4,
+    fade_out_ticks = 20
+  },
+  fluid_boxes =
+  {
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+      secondary_draw_orders = { north = -1 }
+    },
+  },
+}--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 
 --REMINDERS SO I KNOW HOW TO MAKE THESE:

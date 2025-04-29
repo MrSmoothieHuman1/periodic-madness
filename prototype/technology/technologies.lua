@@ -4724,6 +4724,30 @@ data:extend({
       time = 30
     }
   },
+  {
+    type = "technology",
+    name = "pm-washing-plant-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/washing-plant-3.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-washing-plant-3"),
+    },
+    prerequisites = {"pm-washing-plant-2", "pm-silicone-processing"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    }
+  },
 
   {
     type = "technology",

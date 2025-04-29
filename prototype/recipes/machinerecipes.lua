@@ -1404,6 +1404,26 @@ data:extend({
       PM.product("pm-cooling-plant", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-washing-plant-3",
+    subgroup = "pm-water-machine",
+    order = "da",
+    enabled = false,
+    category = "crafting-with-fluod",
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("pm-washing-plant-2", 1),
+      PM.ingredient("pm-liquid-silicone", 2, "fluid"),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("pm-polyethylene-plastic", 4)
+    },
+    results = {
+      PM.product("pm-washing-plant-2", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
