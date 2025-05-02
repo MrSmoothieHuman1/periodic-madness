@@ -32,7 +32,12 @@ data:extend({
         type = "item",
         name = "pm-radium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/radium-chloride.png",
+        pictures =
+        {
+            { filename = "__periodic-madness__/graphics/icons/radium-chloride.png",   size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/radium-chloride-2.png", size = 64, scale = 0.5 },
+        },
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 200
