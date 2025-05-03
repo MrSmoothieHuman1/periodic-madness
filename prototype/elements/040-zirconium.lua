@@ -42,7 +42,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-zirconium-leeching",
+    name = "pm-zirconium-sand",
     enabled = false,
     energy_required = 9,
     category = "pm-acids",
@@ -64,7 +64,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-zirconium-sand-filtering",
+    name = "pm-zircon",
     enabled = false,
     energy_required = 6,
     category = "pm-evaporation",

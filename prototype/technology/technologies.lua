@@ -1975,8 +1975,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/zirconium-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-zirconium-leeching"),
-      PM.unlock_recipe("pm-zirconium-sand-filtering"),
+      PM.unlock_recipe("pm-zirconium-sand"),
+      PM.unlock_recipe("pm-zircon"),
       PM.unlock_recipe("pm-zirconia"),
       PM.unlock_recipe("pm-sand-creosote"),
       PM.unlock_recipe("pm-crucible"),
