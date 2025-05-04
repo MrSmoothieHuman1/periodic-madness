@@ -120,7 +120,7 @@ data:extend({
         results = 
         {
             PM.product_range("pm-radium-chloride", 1, 2),
-            PM.product_range_chance("pm-sulfur-dichloride", 0, 4, "fluid")
+            PM.product_range("pm-sulfur-dichloride", 0, 4, "fluid")
         }
     },
     {
@@ -144,7 +144,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-sulfur-chloride-seperation",
+        name = "pm-sulfur-dichloride-seperation",
         enabled = false,
         energy_required = 2,
         category = "pm-mixing",

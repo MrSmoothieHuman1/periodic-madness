@@ -4011,7 +4011,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-barium-radium-sulfate"),
+      PM.unlock_recipe("pm-barium-radium-carbonate"),
+      PM.unlock_recipe("pm-barium-radium-carbonate-seperation"),
+      PM.unlock_recipe("pm-radium-chloride"),
+      PM.unlock_recipe("pm-radium-ore"),
+      PM.unlock_recipe("pm-sulfur-dichloride-seperation")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =
