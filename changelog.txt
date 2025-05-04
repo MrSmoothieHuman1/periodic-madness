@@ -51,6 +51,7 @@ Date: 2024-12-08
     - Finally added hydrogen sulfide after ignoring it for ages, it'll be used even more soon!
     - Let more fluids be burnable in the burn-inator like ammonia, sulfur dioxide/trioxide, etc
     - Added a washing plant 3. Holy telescopic compactness batman!
+    - Added another tier of roboports and alternative types, that allow you to diversify your bot malls.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

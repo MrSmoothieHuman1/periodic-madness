@@ -4753,6 +4753,32 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-alternative-roboports",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-lithium-ion-battery"},
+    unit =
+    {
+      count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
+  },
 
   {
     type = "technology",
