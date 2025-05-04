@@ -100,6 +100,7 @@ require("prototype.elements.012-magnesium")
 require("prototype.elements.056-barium")
 require("prototype.elements.004-beryllium")
 require("prototype.elements.038-strontium")
+require("prototype.elements.088-radium")
 
 require("prototype.entity")
 require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files
@@ -109,6 +110,8 @@ require("prototype.entity.logistics") --contains all belts, undergrounds, splitt
 require("prototype.entity.inserters")
 require("prototype.entity.pipes")
 require("prototype.entity.spidertrons")
+require("prototype.entity.roboports")
+
 require("prototype.entity.beacon-graphics.beacon-2-graphics") --i dont have the time nor strength to decode this into a normal definition
 require("prototype.entity.beacon-graphics.beacon-3-graphics")
 

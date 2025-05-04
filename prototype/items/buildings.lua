@@ -765,6 +765,14 @@ data:extend({
     place_result = "pm-washing-plant-3",
     stack_size = 50,
   },
+  {
+    type = "item",
+    name = "pm-roboport-2",
+    icon_Size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
+    place_result = "pm-roboport-2",
+    stack_size = 10
+  }
 
 })
 

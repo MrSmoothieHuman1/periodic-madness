@@ -1407,10 +1407,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-washing-plant-3",
+    category = "crafting-with-fluid",
     subgroup = "pm-water-machine",
     order = "da",
     enabled = false,
-    category = "crafting-with-fluid",
     energy_required = 4,
     ingredients =
     {
@@ -1424,6 +1424,25 @@ data:extend({
       PM.product("pm-washing-plant-3", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-roboport-2",
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("roboport", 1),
+      PM.ingredient("advanced-circuit", 10),
+      PM.ingredient("pm-polytetrafluoroethylene", 4),
+      PM.ingredient("electric-engine-unit", 4),
+      PM.ingredient("pm-lithium-ion-battery", 6)
+    },
+    results = 
+    {
+      PM.product("pm-roboport-2", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

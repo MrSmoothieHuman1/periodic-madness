@@ -53,7 +53,7 @@ data:extend({
         order = "b",
         ingredients =
         {
-            PM.ingredient("pm-alkaline-metals-ore", 20),
+            PM.ingredient("pm-alkaline-earth-metals-ore", 20),
             PM.ingredient("pm-chromic-acid", 20, "fluid"),
             PM.ingredient("pm-sodium-hydroxide", 10, "fluid")
         },
@@ -70,6 +70,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-radium-aem",
         order = "c",
+        main_product = "pm-barium-radium-carbonate",
         ingredients =
         {
             PM.ingredient("pm-barium-radium-sulfate", 2),
@@ -92,6 +93,7 @@ data:extend({
         category = "pm-mixing",
         subgroup = "pm-radium-aem",
         order = "d",
+        main_product = "pm-radium-sulfate",
         ingredients =
         {
             PM.ingredient("pm-barium-radium-carbonate", 2),
@@ -112,6 +114,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-radium-aem",
         order = "e",
+        main_product = "pm-radium-chloride",
         ingredients = 
         {
             PM.ingredient("pm-radium-sulfate", 1),
@@ -131,6 +134,7 @@ data:extend({
         category = "pm-washing",
         subgroup = "pm-radium-aem",
         order = "f",
+        main_product = "pm-radium-ore",
         ingredients = 
         {
             PM.ingredient("pm-radium-chloride", 2),
@@ -150,9 +154,10 @@ data:extend({
         category = "pm-mixing",
         subgroup = "pm-radium-aem",
         order = "g",
+        main_product = "pm-sulfur-dioxide",
         ingredients = 
         {
-            PM.ingredient("pm-sulfur-dicloride", 10, "fluid"),
+            PM.ingredient("pm-sulfur-dichloride", 10, "fluid"),
             PM.ingredient("pm-seawater", 40, "fluid")
         },
         results = 
