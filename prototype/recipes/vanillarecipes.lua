@@ -441,21 +441,21 @@ data.raw["recipe"]["speed-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-speed-light", 1),
-  PM.ingredient("electronic-circuit", 5),
+  PM.ingredient("electronic-circuit", 4),
   PM.ingredient("pm-cobalt-blue", 5)
 }
 data.raw["recipe"]["productivity-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-productivity-light", 1),
-  PM.ingredient("electronic-circuit", 5),
+  PM.ingredient("electronic-circuit", 4),
   PM.ingredient("pm-cadnium-red", 5)
 }
 data.raw["recipe"]["efficiency-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-efficiency-light", 1),
-  PM.ingredient("electronic-circuit", 5),
+  PM.ingredient("electronic-circuit", 4),
   PM.ingredient("pm-chrome-green", 5)
 }
 data.raw["recipe"]["speed-module-2"].ingredients =
@@ -494,8 +494,8 @@ data.raw["recipe"]["productivity-module-3"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-productivity-light", 1),
-  PM.ingredient("pm-fluid-circuit", 5),
-  PM.ingredient("advanced-circuit", 5),
+  PM.ingredient("pm-fluid-circuit", 6),
+  PM.ingredient("advanced-circuit", 6),
   PM.ingredient("pm-cadnium-red", 5)
 }
 data.raw["recipe"]["efficiency-module-3"].ingredients =
@@ -503,8 +503,8 @@ data.raw["recipe"]["efficiency-module-3"].ingredients =
   PM.ingredient("pm-module-case", 1),
   PM.ingredient("pm-module-efficiency-light", 1),
   PM.ingredient("pm-fluid-circuit", 5),
-  PM.ingredient("advanced-circuit", 5),
-  PM.ingredient("pm-chrome-green", 5)
+  PM.ingredient("advanced-circuit", 6),
+  PM.ingredient("pm-chrome-green", 6)
 }
 data.raw["recipe"]["processing-unit"].ingredients =
 {
@@ -792,7 +792,7 @@ data.raw["recipe"]["electronic-circuit"].category = "pm-circuitry"
 
 data.raw["recipe"]["express-transport-belt"].energy_required = 2
 data.raw["recipe"]["express-splitter"].energy_required = 3
- data.raw["recipe"]["express-underground-belt"].energy_required = 2
+data.raw["recipe"]["express-underground-belt"].energy_required = 2
 
 data.raw["recipe"]["chemical-science-pack"].category = "crafting-with-fluid"
 data.raw["recipe"]["logistic-science-pack"].category = "crafting-with-fluid"

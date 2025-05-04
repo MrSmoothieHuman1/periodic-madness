@@ -1940,8 +1940,8 @@ data:extend({
       PM.ingredient("pm-cobalt-blue", 5),
       PM.ingredient("speed-module", 1),
       PM.ingredient("pm-module-speed-light", 1),
-      PM.ingredient("pm-fluid-circuit", 10),
-      PM.ingredient("processing-unit", 10)
+      PM.ingredient("pm-fluid-circuit", 7),
+      PM.ingredient("processing-unit", 7)
     },
     results =
     {
@@ -1960,8 +1960,8 @@ data:extend({
       PM.ingredient("pm-chrome-green", 5),
       PM.ingredient("efficiency-module", 1),
       PM.ingredient("pm-module-efficiency-light", 1),
-      PM.ingredient("pm-fluid-circuit", 10),
-      PM.ingredient("processing-unit", 10)
+      PM.ingredient("pm-fluid-circuit", 7),
+      PM.ingredient("processing-unit", 7)
     },
     results =
     {
@@ -1980,8 +1980,8 @@ data:extend({
       PM.ingredient("pm-cadnium-red", 5),
       PM.ingredient("productivity-module", 1),
       PM.ingredient("pm-module-productivity-light", 1),
-      PM.ingredient("pm-fluid-circuit", 10),
-      PM.ingredient("processing-unit", 10)
+      PM.ingredient("pm-fluid-circuit", 7),
+      PM.ingredient("processing-unit", 7)
     },
     results =
     {

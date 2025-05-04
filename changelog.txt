@@ -144,6 +144,8 @@ Date: 2024-12-08
     - Changed kova recipes to always spit out astatine.
     - Changed sodium sulfite to use hydrogen sulfide, as it should have.
     - Reworked sand/glass processing: early glass takes gravel (which is less efficient), but eventually you unlock better crushing techniques to actually make sand.
+    - Revamped module costs, tier 1's start out by taking 4 circuits and take an extra circuit every tier (tier 1's take 4, tier 3's take 6, tier 6 take 10)
+    - Reworked modules to be unlocked once per science tier, instead of 2 per tier. This did get rid of tier 4 modules however, but they will be added back eventually.
 
   Fixes:
     - Fixed the science pack item names captilisation.
