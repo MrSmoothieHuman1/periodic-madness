@@ -768,11 +768,27 @@ data:extend({
   {
     type = "item",
     name = "pm-roboport-2",
-    icon_Size = 64,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
     place_result = "pm-roboport-2",
     stack_size = 10
-  }
+  },
+  {
+    type = "item",
+    name = "pm-construction-pylonport",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
+    place_result = "pm-construction-plyonport",
+    stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-logistic-plyonport",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
+    place_result = "pm-logistic-plyonport",
+    stack_size = 25
+  },
 
 })
 

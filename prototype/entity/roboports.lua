@@ -4,7 +4,7 @@ data:extend({
     {
         type = "roboport",
         name = "pm-roboport-2",
-        icon = "__base__/graphics/icons/roboport.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
         flags = {"placeable-player", "player-creation"},
         fast_replaceable_group = "roboport",
         minable = {mining_time = 0.35, result = "pm-roboport-2"},
@@ -162,5 +162,183 @@ data:extend({
           rotate = false,
           orientation_to_variation = false
         }
+      },
+
+      {
+        type = "roboport",
+        name = "pm-construction-plyonport",
+        icon = "__base__/graphics/icons/roboport.png",
+        flags = {"placeable-player", "player-creation"},
+        fast_replaceable_group = "roboport",
+        minable = {mining_time = 0.2, result = "pm-construction-pylonport"},
+        max_health = 450,
+        corpse = "substation-remnants",
+        dying_explosion = "roboport-explosion",
+        collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+        selection_box = {{-1, -1}, {1, 1}},
+        damaged_trigger_effect = hit_effects.entity(),
+        resistances =
+        {
+          {
+            type = "impact",
+            percent = 15
+          }
+        },
+        energy_source =
+        {
+          type = "electric",
+          usage_priority = "secondary-input",
+          buffer_capacity = "15MJ"
+        },
+        recharge_minimum = "5MJ",
+        energy_usage = "100kW",
+        charging_energy = "0W",
+        logistics_radius = 0,
+        construction_radius = 32,
+        charge_approach_distance = 0,
+        robot_slots_count = 0,
+        material_slots_count = 1,
+        stationing_offset = {0, 0},
+        base =
+        {
+          layers =
+            {
+              {
+                filename = "__base__/graphics/entity/substation/substation.png",
+                priority = "high",
+                width = 138,
+                height = 270,
+                direction_count = 4,
+                shift = util.by_pixel(0, 1-32),
+                scale = 0.5
+              },
+              {
+                filename = "__base__/graphics/entity/substation/substation-shadow.png",
+                priority = "high",
+                width = 370,
+                height = 104,
+                direction_count = 4,
+                shift = util.by_pixel(62, 42-32),
+                draw_as_shadow = true,
+                scale = 0.5
+              }
+            }
+        },
+        impact_category = "metal",
+        open_sound = {filename = "__base__/sound/open-close/roboport-open.ogg", volume = 0.5},
+        close_sound = {filename = "__base__/sound/open-close/roboport-close.ogg", volume = 0.4},
+        working_sound =
+        {
+          sound = {filename = "__base__/sound/roboport-working.ogg", volume = 0.4, audible_distance_modifier = 0.75},
+          max_sounds_per_prototype = 3,
+        },
+        request_to_open_door_timeout = 15,
+        spawn_and_station_height = 0.3,
+        stationing_render_layer_swap_height = 0.87,
+        radar_visualisation_color = {0.059, 0.092, 0.235, 0.275},
+    
+        draw_logistic_radius_visualization = true,
+        draw_construction_radius_visualization = true,
+    
+        open_door_trigger_effect = sounds.roboport_door_open,
+        close_door_trigger_effect = sounds.roboport_door_close,
+    
+        circuit_connector = circuit_connector_definitions["roboport"],
+        circuit_wire_max_distance = default_circuit_wire_max_distance,
+    
+        default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
+        default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
+        default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
+        default_total_construction_output_signal = {type = "virtual", name = "signal-T"},
+        default_roboport_count_output_signal = {type = "virtual", name = "signal-R"},
+      },
+
+      {
+        type = "roboport",
+        name = "pm-logistic-plyonport",
+        icon = "__base__/graphics/icons/roboport.png",
+        flags = {"placeable-player", "player-creation"},
+        fast_replaceable_group = "roboport",
+        minable = {mining_time = 0.2, result = "pm-logistic-plyonport"},
+        max_health = 450,
+        corpse = "substation-remnants",
+        dying_explosion = "roboport-explosion",
+        collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+        selection_box = {{-1, -1}, {1, 1}},
+        damaged_trigger_effect = hit_effects.entity(),
+        resistances =
+        {
+          {
+            type = "impact",
+            percent = 15
+          }
+        },
+        energy_source =
+        {
+          type = "electric",
+          usage_priority = "secondary-input",
+          buffer_capacity = "15MJ"
+        },
+        recharge_minimum = "5MJ",
+        energy_usage = "100kW",
+        charging_energy = "0W",
+        logistics_radius = 16,
+        construction_radius = 0,
+        charge_approach_distance = 0,
+        robot_slots_count = 0,
+        material_slots_count = 1,
+        stationing_offset = {0, 0},
+        base =
+        {
+          layers =
+            {
+              {
+                filename = "__base__/graphics/entity/substation/substation.png",
+                priority = "high",
+                width = 138,
+                height = 270,
+                direction_count = 4,
+                shift = util.by_pixel(0, 1-32),
+                scale = 0.5
+              },
+              {
+                filename = "__base__/graphics/entity/substation/substation-shadow.png",
+                priority = "high",
+                width = 370,
+                height = 104,
+                direction_count = 4,
+                shift = util.by_pixel(62, 42-32),
+                draw_as_shadow = true,
+                scale = 0.5
+              }
+            }
+        },
+        impact_category = "metal",
+        open_sound = {filename = "__base__/sound/open-close/roboport-open.ogg", volume = 0.5},
+        close_sound = {filename = "__base__/sound/open-close/roboport-close.ogg", volume = 0.4},
+        working_sound =
+        {
+          sound = {filename = "__base__/sound/roboport-working.ogg", volume = 0.4, audible_distance_modifier = 0.75},
+          max_sounds_per_prototype = 3,
+        },
+        request_to_open_door_timeout = 15,
+        spawn_and_station_height = 0.3,
+        stationing_render_layer_swap_height = 0.87,
+        radar_visualisation_color = {0.059, 0.092, 0.235, 0.275},
+    
+        draw_logistic_radius_visualization = true,
+        draw_construction_radius_visualization = true,
+    
+        open_door_trigger_effect = sounds.roboport_door_open,
+        close_door_trigger_effect = sounds.roboport_door_close,
+    
+        circuit_connector = circuit_connector_definitions["roboport"],
+        circuit_wire_max_distance = default_circuit_wire_max_distance,
+    
+        default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
+        default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
+        default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
+        default_total_construction_output_signal = {type = "virtual", name = "signal-T"},
+        default_roboport_count_output_signal = {type = "virtual", name = "signal-R"},
       },
 })

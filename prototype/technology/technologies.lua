@@ -4755,14 +4755,15 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-alternative-roboports",
+    name = "pm-pylonports",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-construction-pylonport"),
+      PM.unlock_recipe("pm-logistic-plyonport")
     },
-    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-lithium-sulfur-battery"},
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-lithium-sulfur-battery", "effect-transmission"},
     unit =
     {
       count = 475,

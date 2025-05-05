@@ -1442,7 +1442,41 @@ data:extend({
     {
       PM.product("pm-roboport-2", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-construction-pylonport",
+    enabled = false,
+    energy_required = 3,
+    ingredients = 
+    {
+      PM.ingredient("pm-lithium-sulfur-battery", 3),
+      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("pm-lightweight-framing", 8),
+      PM.ingredient("pm-travelling-wave-amplifier-tube", 1)
+    },
+    results = 
+    {
+      PM.product("pm-construction-pylonport", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-logistic-plyonport",
+    enabled = false,
+    energy_required = 3,
+    ingredients = 
+    {
+      PM.ingredient("pm-lithium-sulfur-battery", 3),
+      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("pm-lightweight-framing", 8),
+      PM.ingredient("pm-travelling-wave-amplifier-tube", 1)
+    },
+    results = 
+    {
+      PM.product("pm-logistic-plyonport", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
