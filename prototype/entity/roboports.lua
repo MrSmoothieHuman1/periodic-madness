@@ -12,8 +12,7 @@ data:extend({
         corpse = "roboport-remnants",
         dying_explosion = "roboport-explosion",
         collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
-        selection_box = {{-
-    2, -1}, {1, 1}},
+        selection_box = {{-2, -2}, {2, 2}},
         damaged_trigger_effect = hit_effects.entity(),
         resistances =
         {

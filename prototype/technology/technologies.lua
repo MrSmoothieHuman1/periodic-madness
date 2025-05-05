@@ -4781,7 +4781,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-roboports-2",
+    name = "pm-advanced-roboports",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
