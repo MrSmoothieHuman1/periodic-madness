@@ -624,7 +624,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/diesel-fuel-canisters.png",
     effects =
     {
-      PM.unlock_recipe("pm-fuel-canister"),
+      PM.unlock_recipe("pm-empty-fuel-canister"),
       PM.unlock_recipe("pm-diesel-canister")
     },
     prerequisites = {"pm-basic-polyethylene-plastic", "pm-diesel-recipes"},
@@ -647,7 +647,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/kerosene-fuel-canisters.png",
     effects =
     {
-      PM.unlock_recipe("pm-fuel-canister"),
+      PM.unlock_recipe("pm-empty-fuel-canister"),
       PM.unlock_recipe("pm-kerosene-canister")
     },
     prerequisites = {"pm-basic-polyethylene-plastic", "pm-kerosene-recipes"},
@@ -670,7 +670,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/petrol-fuel-canisters.png",
     effects =
     {
-      PM.unlock_recipe("pm-fuel-canister"),
+      PM.unlock_recipe("pm-empty-fuel-canister"),
       PM.unlock_recipe("pm-petrol-canister")
     },
     prerequisites = {"pm-basic-polyethylene-plastic", "pm-petrol-recipes"},

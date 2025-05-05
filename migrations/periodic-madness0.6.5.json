@@ -86,7 +86,8 @@
        ["pm-lead-froth-skimming", "pm-impure-lead"],
        ["pm-lead-purifying", "pm-lead-ore"],
        ["pm-zirconium-leeching", "pm-zirconium-sand"],
-       ["pm-zirconium-sand-filtering","pm-zircon"]
+       ["pm-zirconium-sand-filtering","pm-zircon"],
+       ["pm-fuel-canister", "pm-empty-fuel-canister"]
     ],
     "autoplace-control":
     [

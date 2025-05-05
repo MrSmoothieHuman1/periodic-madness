@@ -676,7 +676,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-fuel-canister",
+    name = "pm-empty-fuel-canister",
     energy_required = 1,
     subgroup = "pm-fuels",
     enabled = false,
