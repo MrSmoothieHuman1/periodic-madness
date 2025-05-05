@@ -58,20 +58,5 @@ data:extend({
   },
 })
 
-local PlasticChange = data.raw["recipe"]["plastic-bar"]
-
-PlasticChange.energy_required = 2
-PlasticChange.category = "chemistry"
-PlasticChange.subgroup = "pm-plastics"
-PlasticChange.order = "d"
-PlasticChange.ingredients =
-{
-  PM.ingredient("pm-plastic-pellets", 5),
-  PM.ingredient("pm-naptha", 20, "fluid")
-}
-PlasticChange.results =
-{
-  PM.product("pm-polyethylene-plastic", 1)
-}
-
+data.raw["recipe"]["plastic-bar"] = nil
 data.raw["item"]["plastic-bar"] = nil

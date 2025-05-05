@@ -562,6 +562,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-polyethylene-plastic",
+    category = "chemistry",
+    subgroup = "pm-plastics",
+    order = "d",
+    enabled = false,
+    energy_required = 2,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-plastic-pellets", 5),
+      PM.ingredient("pm-naptha", 20, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-polyethylene-plastic", 1)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-advanced-polyethylene-plastic",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/advanced-polyethylene-plastic.png",

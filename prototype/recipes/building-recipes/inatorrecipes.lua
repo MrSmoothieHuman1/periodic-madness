@@ -865,6 +865,7 @@ data:extend({
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
+    main_product = "pm-molten-glass",
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 10),
