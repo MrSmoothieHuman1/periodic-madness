@@ -602,7 +602,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-butene-cracking"),
       PM.unlock_recipe("pm-ethylene-polymerisation"),
-      PM.unlock_recipe("plastic-bar")
+      PM.unlock_recipe("pm-polyethylene-plastic")
     },
     prerequisites = {"pm-refinery-gases-recipes", "pm-naptha-recipes", "pm-oil-residual-recipes"},
     unit =
