@@ -32,6 +32,7 @@ data:extend({
         fast_replaceable_group = "pipe",
         collision_box = { { -0.29, -0.29 }, { 0.29, 0.29 } },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+        icon_draw_specification = {scale = 0.5},
         fluid_box =
         {
             max_pipeline_extent = 320 * 1.75,
@@ -383,6 +384,7 @@ data:extend({
             max_sounds_per_type = 2
         },
         damaged_trigger_effect = hit_effects.entity(),
+        icon_draw_specification = {scale = 0.5},
         resistances =
         {
             {

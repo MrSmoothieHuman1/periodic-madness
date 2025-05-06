@@ -1162,7 +1162,7 @@ data:extend({
     type = "item",
     name = "pm-vacuum-tube-getter",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/vacuum-tube.png",
+    icon = "__periodic-madness__/graphics/icons/vacuum-tube-getter.png",
     subgroup = "pm-intermediates",
     stack_size = 75
   },
