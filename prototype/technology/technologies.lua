@@ -4766,7 +4766,7 @@ data:extend({
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-lithium-sulfur-battery", "effect-transmission"},
     unit =
     {
-      count = 475,
+      count = 450,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4790,6 +4790,32 @@ data:extend({
       PM.unlock_recipe("pm-roboport-2")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-lithium-ion-battery"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-copper-tin-solder",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-advanced-liquid-solder"),
+    },
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =
     {
       count = 475,

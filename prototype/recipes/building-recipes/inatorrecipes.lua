@@ -1581,7 +1581,6 @@ data:extend({
     category = "pm-moltening",
     energy_required = 9,
     enabled = false,
-    allow_decomposition = false,
     ingredients =
     {
       PM.ingredient("pm-tin-plate", 10),
@@ -1596,6 +1595,30 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-advanced-liquid-solder",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/solder-melting.png",
+    subgroup = "pm-alloys",
+    order = "g",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-red-phosphorus", 5),
+      PM.ingreidnet("pm-barium-ore", 2),
+      PM.ingredient("pm-tin-plate", 12),
+      PM.ingredient("copper-plate", 12),
+      PM.ingredient("pm-molten-zinc", 2.5, "fluid"),
+      PM.ingredient("pm-ammonium-chloride", 4)
+    },
+    results =
+    {
+      PM.product("pm-molten-solder", 20, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-lead-liquid-solder",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/lead-solder-melting.png",
@@ -1604,7 +1627,6 @@ data:extend({
     category = "pm-moltening",
     energy_required = 9,
     enabled = false,
-    allow_decomposition = false,
     emissions_multiplier = 2.5,
     ingredients =
     {
@@ -1629,7 +1651,6 @@ data:extend({
     category = "pm-moltening",
     energy_required = 9,
     enabled = false,
-    allow_decomposition = false,
     ingredients =
     {
       PM.ingredient("pm-tin-plate", 6),
