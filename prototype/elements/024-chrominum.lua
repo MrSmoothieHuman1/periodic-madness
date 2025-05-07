@@ -6,6 +6,11 @@ data:extend({
     name = "pm-chromite",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/chromite.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/chromite.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromite-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-chrominum-tm",
     order = "a",
     stack_size = 100

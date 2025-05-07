@@ -775,18 +775,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-construction-pylonport",
+    name = "pm-construction-repeater",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
-    place_result = "pm-construction-plyonport",
+    icon = "__periodic-madness__/graphics/icons/buildings/construction-repeater.png",
+    place_result = "pm-construction-repeater",
     stack_size = 25
   },
   {
     type = "item",
-    name = "pm-logistic-plyonport",
+    name = "pm-logistic-repeater",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
-    place_result = "pm-logistic-plyonport",
+    icon = "__periodic-madness__/graphics/icons/buildings/logistic-repeater.png",
+    place_result = "pm-logistic-repeater",
     stack_size = 25
   },
 

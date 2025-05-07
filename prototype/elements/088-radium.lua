@@ -23,7 +23,14 @@ data:extend({
         type = "item",
         name = "pm-radium-sulfate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/radium-sulfate.png",
+        pictures =
+        {
+            { filename = "__periodic-madness__/graphics/icons/radium-sulfate.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/radium-sulfate-2.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/radium-sulfate-3.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/radium-sulfate-4.png", size = 64, scale = 0.5 },
+        },
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 150

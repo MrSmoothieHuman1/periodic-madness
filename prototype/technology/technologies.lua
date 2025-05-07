@@ -4755,13 +4755,13 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-pylonports",
+    name = "pm-roboport-repeaters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/roboport-repeaters.png",
     effects = 
     {
-      PM.unlock_recipe("pm-construction-pylonport"),
-      PM.unlock_recipe("pm-logistic-plyonport")
+      PM.unlock_recipe("pm-construction-repeater"),
+      PM.unlock_recipe("pm-logistic-repeater")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-lithium-sulfur-battery", "effect-transmission"},
     unit =

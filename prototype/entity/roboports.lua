@@ -166,11 +166,11 @@ data:extend({
 
       {
         type = "roboport",
-        name = "pm-construction-plyonport",
-        icon = "__base__/graphics/icons/roboport.png",
+        name = "pm-construction-repeater",
+        icon = "__periodic-madness__/graphics/icons/buildings/logistic-repeater.png",
         flags = {"placeable-player", "player-creation"},
         fast_replaceable_group = "roboport",
-        minable = {mining_time = 0.2, result = "pm-construction-pylonport"},
+        minable = {mining_time = 0.2, result = "pm-construction-repeater"},
         max_health = 450,
         corpse = "substation-remnants",
         dying_explosion = "roboport-explosion",
@@ -191,7 +191,7 @@ data:extend({
           buffer_capacity = "15MJ"
         },
         recharge_minimum = "5MJ",
-        energy_usage = "100kW",
+        energy_usage = "600kW",
         charging_energy = "0W",
         logistics_radius = 0,
         construction_radius = 32,
@@ -204,21 +204,19 @@ data:extend({
           layers =
             {
               {
-                filename = "__base__/graphics/entity/substation/substation.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/construction-repeater/construction-repeater.png",
                 priority = "high",
-                width = 138,
-                height = 270,
-                direction_count = 4,
-                shift = util.by_pixel(0, 1-32),
+                width = 128,
+                height = 256,
+                shift = util.by_pixel(0, -32),
                 scale = 0.5
               },
               {
-                filename = "__base__/graphics/entity/substation/substation-shadow.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/construction-repeater/construction-repeater-shadow.png",
                 priority = "high",
-                width = 370,
-                height = 104,
-                direction_count = 4,
-                shift = util.by_pixel(62, 42-32),
+                width = 256,
+                height = 128,
+                shift = util.by_pixel(26, 1),
                 draw_as_shadow = true,
                 scale = 0.5
               }
@@ -236,16 +234,12 @@ data:extend({
         spawn_and_station_height = 0.3,
         stationing_render_layer_swap_height = 0.87,
         radar_visualisation_color = {0.059, 0.092, 0.235, 0.275},
-    
         draw_logistic_radius_visualization = true,
         draw_construction_radius_visualization = true,
-    
         open_door_trigger_effect = sounds.roboport_door_open,
         close_door_trigger_effect = sounds.roboport_door_close,
-    
         circuit_connector = circuit_connector_definitions["roboport"],
         circuit_wire_max_distance = default_circuit_wire_max_distance,
-    
         default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
         default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
         default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
@@ -255,11 +249,11 @@ data:extend({
 
       {
         type = "roboport",
-        name = "pm-logistic-plyonport",
-        icon = "__base__/graphics/icons/roboport.png",
+        name = "pm-logistic-repeater",
+        icon = "__periodic-madness__/graphics/icons/buildings/logistic-repeater.png",
         flags = {"placeable-player", "player-creation"},
         fast_replaceable_group = "roboport",
-        minable = {mining_time = 0.2, result = "pm-logistic-plyonport"},
+        minable = {mining_time = 0.2, result = "pm-logistic-repeater"},
         max_health = 450,
         corpse = "substation-remnants",
         dying_explosion = "roboport-explosion",
@@ -280,7 +274,7 @@ data:extend({
           buffer_capacity = "15MJ"
         },
         recharge_minimum = "5MJ",
-        energy_usage = "100kW",
+        energy_usage = "600kW",
         charging_energy = "0W",
         logistics_radius = 16,
         construction_radius = 0,
@@ -293,21 +287,21 @@ data:extend({
           layers =
             {
               {
-                filename = "__base__/graphics/entity/substation/substation.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/logistic-repeater/logistic-repeater.png",
                 priority = "high",
-                width = 138,
-                height = 270,
+                width = 128,
+                height = 256,
                 direction_count = 4,
-                shift = util.by_pixel(0, 1-32),
+                shift = util.by_pixel(0, -32),
                 scale = 0.5
               },
               {
-                filename = "__base__/graphics/entity/substation/substation-shadow.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/construction-repeater/construction-repeater-shadow.png",
                 priority = "high",
-                width = 370,
-                height = 104,
+                width = 256,
+                height = 128,
                 direction_count = 4,
-                shift = util.by_pixel(62, 42-32),
+                shift = util.by_pixel(26, 1),
                 draw_as_shadow = true,
                 scale = 0.5
               }
@@ -325,16 +319,12 @@ data:extend({
         spawn_and_station_height = 0.3,
         stationing_render_layer_swap_height = 0.87,
         radar_visualisation_color = {0.059, 0.092, 0.235, 0.275},
-    
         draw_logistic_radius_visualization = true,
         draw_construction_radius_visualization = true,
-    
         open_door_trigger_effect = sounds.roboport_door_open,
         close_door_trigger_effect = sounds.roboport_door_close,
-    
         circuit_connector = circuit_connector_definitions["roboport"],
         circuit_wire_max_distance = default_circuit_wire_max_distance,
-    
         default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
         default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
         default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},

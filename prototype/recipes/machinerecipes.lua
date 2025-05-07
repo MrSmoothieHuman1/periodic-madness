@@ -1445,36 +1445,36 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-construction-pylonport",
+    name = "pm-construction-repeater",
     enabled = false,
     energy_required = 3,
     ingredients = 
     {
       PM.ingredient("pm-lithium-sulfur-battery", 3),
-      PM.ingredient("advanced-circuit", 6),
-      PM.ingredient("pm-lightweight-framing", 8),
+      PM.ingredient("advanced-circuit", 5),
+      PM.ingredient("pm-lightweight-framing", 14),
       PM.ingredient("pm-travelling-wave-amplifier-tube", 1)
     },
     results = 
     {
-      PM.product("pm-construction-pylonport", 1)
+      PM.product("pm-construction-repeater", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-logistic-plyonport",
+    name = "pm-logistic-repeater",
     enabled = false,
     energy_required = 3,
     ingredients = 
     {
       PM.ingredient("pm-lithium-sulfur-battery", 3),
-      PM.ingredient("advanced-circuit", 6),
-      PM.ingredient("pm-lightweight-framing", 8),
+      PM.ingredient("advanced-circuit", 5),
+      PM.ingredient("pm-lightweight-framing", 14),
       PM.ingredient("pm-travelling-wave-amplifier-tube", 1)
     },
     results = 
     {
-      PM.product("pm-logistic-plyonport", 1)
+      PM.product("pm-logistic-repeater", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
