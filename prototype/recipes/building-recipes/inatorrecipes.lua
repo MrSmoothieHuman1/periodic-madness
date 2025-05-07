@@ -1605,8 +1605,8 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-red-phosphorus", 5),
-      PM.ingreidnet("pm-barium-ore", 2),
+      PM.ingredient("pm-red-phosphorus", 6),
+      PM.ingredient("pm-barium-ore", 2),
       PM.ingredient("pm-tin-plate", 12),
       PM.ingredient("copper-plate", 12),
       PM.ingredient("pm-molten-zinc", 2.5, "fluid"),
