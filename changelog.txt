@@ -52,6 +52,7 @@ Date: 2024-12-08
     - Let more fluids be burnable in the burn-inator like ammonia, sulfur dioxide/trioxide, etc
     - Added a washing plant 3. Holy telescopic compactness batman!
     - Added another tier of roboports and alternative types, that allow you to diversify your bot malls.
+    - Added a batch-recipe of copper tin solder, unlocked at alkaline metals.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
