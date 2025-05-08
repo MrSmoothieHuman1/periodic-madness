@@ -5,7 +5,14 @@ data:extend({
         type = "item",
         name = "pm-barium-radium-sulfate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/barium-radium-sulfate.png",
+        pictures =
+        {
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-sulfate.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-sulfate-2.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-sulfate-3.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-sulfate-4.png", size = 64, scale = 0.5 },
+        },
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 50
@@ -14,7 +21,14 @@ data:extend({
         type = "item",
         name = "pm-barium-radium-carbonate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/barium-radium-carbonate.png",
+        pictures =
+        {
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-carbonate.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-carbonate-2.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-carbonate-3.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/barium-radium-carbonate-4.png", size = 64, scale = 0.5 },
+        },
         subgroup = "pm-radium-aem",
         order = "a",
         stack_size = 100

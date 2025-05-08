@@ -3948,7 +3948,7 @@ data:extend({
     type = "technology",
     name = "pm-strontium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/strontium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-celestine"),
@@ -3977,7 +3977,7 @@ data:extend({
     type = "technology",
     name = "pm-barium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/barium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-baryte-ore"),

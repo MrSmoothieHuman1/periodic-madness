@@ -603,11 +603,12 @@ data:extend({
     type = "item",
     name = "pm-strontium-ore",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/strontium-ore.png",
+    icon = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-strontium-aem",
     fuel_value = "10MJ",
