@@ -247,46 +247,4 @@ data:extend({
       PM.product_range_chance("pm-low-quality-quartzite", 0, 2, 0.55)
     }
   },
-  {
-    type = "recipe",
-    name = "pm-combined-ore-slag",
-    enabled = false,
-    category = "pm-coldening",
-    subgroup = "pm-advanced-iron-tm",
-    order = "c",
-    energy_required = 5,
-    main_product = "pm-combined-ore-slab",
-    ingredients =
-    {
-      PM.ingredient("pm-molten-ore-slag", 5, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 2)
-    },
-    results =
-    {
-      PM.product_range("pm-combined-ore-slab", 2, 4),
-      PM.product_range_chance("pm-palladium-catalyst", 0, 2, 0.75),
-      PM.product_range_chance("pm-catalyst-container", 0, 2, 0.2) --intended loss of catalyst
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-combined-ore-slab-crushing",
-    enabled = false,
-    category = "pm-crushing",
-    subgroup = "pm-advanced-iron-tm",
-    order = "d",
-    energy_required = 8,
-    main_product = "pm-mixed-ore-slag",
-    ingredients =
-    {
-      PM.ingredient("pm-combined-ore-slab", 4)
-    },
-    results =
-    {
-      --PM.product_range("pm-rutile", 0, 3)
-      PM.product_range("pm-ferrum", 0, 3),
-      PM.product_range("pm-patina", 0, 3),
-      PM.product_range("pm-mixed-ore-slag", 0, 2)
-    }
-  }
 })

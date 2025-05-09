@@ -176,12 +176,12 @@ data:extend({
         subgroup = "pm-radium-aem",
         order = "g",
         main_product = "pm-sulfur-dioxide",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-sulfur-dichloride", 10, "fluid"),
             PM.ingredient("pm-seawater", 40, "fluid")
         },
-        results = 
+        results =
         {
             PM.product_range("pm-sulfur-dioxide", 0, 5, "fluid"),
             PM.product_range("pm-chlorine", 2, 8, "fluid"),
