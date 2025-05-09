@@ -4079,4 +4079,21 @@ data:extend({
       PM.product("pm-vacuum-tube", 1)
     }
   },
+
+  {
+    type = "recipe",
+    name = "pm-incendiary-rocket",
+    enabled = false,
+    energy_required = 8,
+    ingredients = 
+    {
+      PM.ingredient("explosive-rocket", 1),
+      PM.ingredient("pm-magnesium-ore", 2),
+      PM.ingredient("pm-gunpowder", 4)
+    },
+    results = 
+    {
+      PM.ingredient("pm-incendiary-rocket", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

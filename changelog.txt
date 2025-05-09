@@ -53,6 +53,7 @@ Date: 2024-12-08
     - Added a washing plant 3. Holy telescopic compactness batman!
     - Added another tier of roboports and alternative types, that allow you to diversify your bot malls.
     - Added a batch-recipe of copper tin solder, unlocked at alkaline metals.
+    - Added magnesium-incendiary rockets, which when hitting something leave a magnesium fire on the ground that lasts for a while.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

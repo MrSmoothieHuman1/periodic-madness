@@ -1,6 +1,8 @@
 local PM = require("library")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
+local fireutil = require("__base__.prototypes.fire-util")
+
 local red_belt = {r = 0.878, g = 0.169, b = 0.169}
 local orange_belt = {r = 1, g = 0.502, b = 0}
 local blue_belt = {r = 0.169, g = 0.608, b = 0.878}
@@ -32,6 +34,192 @@ circuit_connector_definitions["evaporator"] = circuit_connector_definitions.crea
     { variation = 18, main_offset = util.by_pixel(-20, 20), shadow_offset = util.by_pixel(-15, 31), show_shadow = true }
   }
 )
+
+function fireutil.create_magnesium_fire_pictures(opts)
+  local fire_blend_mode = opts.blend_mode or "normal"
+  local fire_animation_speed1 = opts.animation_speed1 or 0.5
+  local fire_animation_speed2 = opts.animation_speed2 or 0.9
+  local fire_scale1 = opts.scale1 or 0.55
+  local fire_scale2 = opts.scale2 or 0.35
+  local fire_tint = {r=1,g=1,b=1,a=1}
+  local fire_flags = nil
+  local retval =
+  {
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-01.png",
+      line_length = 10,
+      width = 84,
+      height = 130,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed1,
+      scale = fire_scale1,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.7 }
+    },
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-02.png",
+      line_length = 10,
+      width = 82,
+      height = 106,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed1,
+      scale = fire_scale1,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.7 }
+    },
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-03.png",
+      line_length = 10,
+      width = 84,
+      height = 124,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed1,
+      scale = fire_scale1,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.7 }
+    },
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-04.png",
+      line_length = 10,
+      width = 84,
+      height = 94,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed1,
+      scale = fire_scale1,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.25 }
+    },
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-01.png",
+      line_length = 10,
+      width = 84,
+      height = 130,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed2,
+      scale = fire_scale2,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.7 }
+    },
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-02.png",
+      line_length = 10,
+      width = 82,
+      height = 106,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed2,
+      scale = fire_scale2,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.7 }
+    },
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-03.png",
+      line_length = 10,
+      width = 84,
+      height = 124,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed2,
+      scale = fire_scale2,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.7 }
+    },
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-04.png",
+      line_length = 10,
+      width = 84,
+      height = 94,
+      frame_count = 90,
+      blend_mode = fire_blend_mode,
+      animation_speed = fire_animation_speed2,
+      scale = fire_scale2,
+      tint = fire_tint,
+      flags = fire_flags,
+      shift = { 0, -0.25 }
+    }
+  }
+  retval = fireutil.foreach(retval, function(tab)
+    if tab.shift and tab.scale then tab.shift = { tab.shift[1] * tab.scale, tab.shift[2] * tab.scale } end
+  end)
+  for k, layer in pairs (retval) do
+    retval[k] = util.draw_as_glow(layer)
+  end
+  return retval
+end
+
+function fireutil.add_magnesium_fire_graphics_and_effects_definitions(fire)
+  fire.flame_alpha = fire.flame_alpha or 0.45
+  fire.flame_alpha_deviation = fire.flame_alpha_deviation or 0.05
+  fire.add_fuel_cooldown = fire.add_fuel_cooldown or 10
+  fire.fade_in_duration = fire.fade_in_duration or 30
+  fire.fade_out_duration = fire.fade_out_duration or 60
+  fire.burnt_patch_lifetime = fire.burnt_patch_lifetime or 1800
+  fire.on_fuel_added_action = fire.on_fuel_added_action or
+  {
+    type = "direct",
+    action_delivery =
+    {
+      type = "instant",
+      target_effects =
+      {
+        {
+          type = "create-trivial-smoke",
+          smoke_name = "fire-smoke-on-adding-fuel",
+          offset_deviation = {{-0.5, -0.5}, {0.5, 0.5}},
+          speed_from_center = 0.01
+        }
+      }
+    }
+  }
+  fire.pictures = fire.pictures or fireutil.create_magnesium_fire_pictures({})
+  fire.smoke_source_pictures = fire.smoke_source_pictures or fireutil.create_fire_smoke_source_pictures(1, nil)
+  fire.burnt_patch_pictures = fire.burnt_patch_pictures or fireutil.create_burnt_patch_pictures()
+  fire.burnt_patch_alpha_default = fire.burnt_patch_alpha_default or 0.4
+  fire.burnt_patch_alpha_variations = fire.burnt_patch_alpha_variations or
+  {
+    { tile = "stone-path", alpha = 0.26 },
+    { tile = "concrete", alpha = 0.24 },
+    -- "water", "deepwater", "water-green", "deepwater-green", "water-shallow", "water-mud", "water-wube"
+    { tile = "water", alpha = 0 }, { tile = "deepwater", alpha = 0 },
+    { tile = "water-green", alpha = 0 }, { tile = "deepwater-green", alpha = 0 },
+    { tile = "water-shallow", alpha = 0 }, { tile = "water-mud", alpha = 0 }, { tile = "water-wube", alpha = 0 }
+  }
+  fire.smoke = fire.smoke or
+  {
+    {
+      name = "fire-smoke",
+      deviation = {0.5, 0.5},
+      frequency = 0.25 / 2,
+      position = {0.0, -0.8},
+      starting_vertical_speed = 0.05,
+      starting_vertical_speed_deviation = 0.005,
+      vertical_speed_slowdown = 0.99,
+      starting_frame_deviation = 60,
+      height = -0.5
+    }
+  }
+  fire.light_size_modifier_per_flame = 0.2
+  fire.light_size_modifier_maximum = 3
+  fire.working_sound = fire.working_sound or
+  {
+    sound = {category = "weapon", variations = sound_variations("__base__/sound/fire", 2, 0.7)},
+    activate_sound = {category = "weapon", variations = sound_variations("__base__/sound/fight/fire-impact", 5, 0.9)},
+  }
+  return fire
+end
+
 
 function pm_electric_mining_drill2_animation()
   return
@@ -8377,7 +8565,110 @@ fluid_boxes =
     },
   },
 }--[[@as data.AssemblingMachinePrototype]],
+
+{
+    type = "projectile",
+    name = "pm-incendiary-rocket",
+    flags = {"not-on-map"},
+    hidden = true,
+    acceleration = 0.01,
+    turn_speed = 0.003,
+    turning_speed_increases_exponentially_with_projectile_speed = true,
+    action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "create-entity",
+            entity_name = "big-explosion"
+          },
+          {
+            type = "damage",
+            damage = {amount = 25, type = "explosion"}
+          },
+          {
+            type = "create-entity",
+            entity_name = "medium-scorchmark-tintable",
+            check_buildability = true
+          },
+          {
+            type = "invoke-tile-trigger",
+            repeat_count = 1
+          },
+          {
+            type = "destroy-decoratives",
+            from_render_layer = "decorative",
+            to_render_layer = "object",
+            include_soft_decoratives = true, -- soft decoratives are decoratives with grows_through_rail_path = true
+            include_decals = false,
+            invoke_decorative_trigger = true,
+            decoratives_with_trigger_only = false, -- if true, destroys only decoratives that have trigger_effect set
+            radius = 3.5 -- large radius for demostrative purposes
+          },
+          {
+            type = "nested-result",
+            action =
+            {
+              type = "area",
+              radius = 6.5,
+              action_delivery =
+              {
+                type = "instant",
+                target_effects =
+                {
+                  {
+                    type = "damage",
+                    damage = {amount = 50, type = "explosion"}
+                  },
+                  {
+                    type = "create-entity",
+                    entity_name = "explosion"
+                  },
+                  {
+                    type = "create-fire",
+                    entity_name = "pm-magnesium-fire-flame",
+                    show_in_tooltip = true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    animation = require("__base__.prototypes.entity.rocket-projectile-pictures").animation({1, 0.2, 0.2}),
+    shadow = require("__base__.prototypes.entity.rocket-projectile-pictures").shadow,
+    smoke = require("__base__.prototypes.entity.rocket-projectile-pictures").smoke,
+  },
 }--[[@as data.EntityPrototype[] ]])
+data:extend({
+fireutil.add_magnesium_fire_graphics_and_effects_definitions
+{
+  type = "fire",
+  name = "pm-magnesium-fire-flame",
+  flags = {"placeable-off-grid", "not-on-map"},
+  hidden = true,
+  damage_per_tick = {amount = 15 / 60, type = "fire"},
+  maximum_damage_multiplier = 2,
+  damage_multiplier_increase_per_added_fuel = 0.5,
+  damage_multiplier_decrease_per_tick = 0.008,
+  spawn_entity = "fire-flame-on-tree",
+  spread_delay = 450,
+  spread_delay_deviation = 180,
+  maximum_spread_count = 100,
+  emissions_per_second = { pollution = 0.0075 },
+  initial_lifetime = 360 * 2,
+  lifetime_increase_by = 60,
+  lifetime_increase_cooldown = 4,
+  maximum_lifetime = 36000,
+  delay_between_initial_flames = 10,
+  --initial_flame_count = 1,
+
+}})
 
 --REMINDERS SO I KNOW HOW TO MAKE THESE:
 -- negative co-ords are up, positive co-ords are down

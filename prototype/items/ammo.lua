@@ -1,3 +1,4 @@
+local item_sounds = require("__base__.prototypes.item_sounds")
 data:extend({
     {
       type = "ammo-category",
@@ -557,6 +558,37 @@ data:extend({
     priority = "high"
   }
 },
+
+{
+    type = "ammo",
+    name = "pm-incendiary-rocket",
+    icon = "__base__/graphics/icons/explosive-rocket.png",
+    ammo_category = "rocket",
+    ammo_type =
+    {
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "projectile",
+          projectile = "pm-incendiary-rocket",
+          starting_speed = 0.1,
+          source_effects =
+          {
+            type = "create-entity",
+            entity_name = "explosion-hit"
+          }
+        }
+      }
+    },
+    subgroup = "pm-rockets",
+    order = "fa",
+    inventory_move_sound = item_sounds.ammo_large_inventory_move,
+    pick_sound = item_sounds.ammo_large_inventory_pickup,
+    drop_sound = item_sounds.ammo_large_inventory_move,
+    stack_size = 100,
+  },
 })
 
 data.raw["ammo"]["shotgun-shell"].icon = "__periodic-madness__/graphics/icons/shotgun-shell.png"

@@ -4801,7 +4801,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 80
+      time = 100
     },
   },
   {
@@ -4817,6 +4817,31 @@ data:extend({
     unit =
     {
       count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-incendiary-rocketry",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-incendiary-rocket"),
+    },
+    prerequisites = {"explosive-rocketry", "pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+      count = 450,
       ingredients =
       {
         {"automation-science-pack", 1},

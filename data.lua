@@ -127,7 +127,6 @@ require("compatibility.icon-badges")
 
 
 local resource_autoplace = require('resource-autoplace');
-
 data:extend({
 	{
     type = "autoplace-control",
