@@ -4093,7 +4093,7 @@ data:extend({
     },
     results = 
     {
-      PM.ingredient("pm-incendiary-rocket", 1)
+      PM.product("pm-incendiary-rocket", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])
