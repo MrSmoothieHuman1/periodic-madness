@@ -3785,7 +3785,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/solar-energy-3.png",
     effects =
     {
-      PM.unlock_recipe("pm-solar-panel-2"),
+      PM.unlock_recipe("pm-solar-panel-3"),
     },
     prerequisites = {"pm-magnesium-chloride", "pm-cadnium-telluride", "pm-solar-energy-2"},
     unit =
