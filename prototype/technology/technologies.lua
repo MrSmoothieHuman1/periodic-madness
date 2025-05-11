@@ -3787,10 +3787,10 @@ data:extend({
     {
       PM.unlock_recipe("pm-solar-panel-2"),
     },
-    prerequisites = {"pm-magnesium-chloride", "pm-solar-energy-2"},
+    prerequisites = {"pm-magnesium-chloride", "pm-cadnium-telluride", "pm-solar-energy-2"},
     unit =
     {
-      count = 450,
+      count = 550,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -3801,7 +3801,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 80,
+      time = 120,
     }
   },
   {
@@ -3829,7 +3829,7 @@ data:extend({
         {"pm-metalloid-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 60
+      time = 100
     },
   },
   {
@@ -4853,6 +4853,30 @@ data:extend({
       },
       time = 80
     },
+  },
+  {
+    type = "technology",
+    name = "pm-cadnium-telluride",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      
+    },
+    prerequisites = {"pm-temperature-inators-3"},
+    unit = 
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    }
   },
 
   {
