@@ -98,7 +98,7 @@ for _, machineType in pairs(machines) do
 	for _, machine in pairs(machineType) do
 		if not (machine.allowed_module_categories == nil) then
 			for i, moduleCat in pairs(machine.allowed_module_categories) do
-				if moduleCat.name == "hc-heating-coils" then
+				if moduleCat.name == "pm-heating-coils" then
 					table.remove(machine.allowed_module_categories,i)
 					break
 				end
@@ -109,7 +109,7 @@ for _, machineType in pairs(machines) do
 			end
 
 			for _, moduleCat in pairs(data.raw["module-category"]) do
-				if not(moduleCat.name == "hc-heating-coils") then
+				if not(moduleCat.name == "pm-heating-coils") then
 					
 					table.insert(machine.allowed_module_categories,moduleCat.name)
 				end
