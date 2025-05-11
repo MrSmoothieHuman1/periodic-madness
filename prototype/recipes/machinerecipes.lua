@@ -742,7 +742,7 @@ data:extend({
     subgroup = "energy",
     order = "e",
     enabled = false,
-    energy_required = 4,
+    energy_required = 10,
     ingredients =
     {
       PM.ingredient("solar-panel", 1),
@@ -1178,7 +1178,7 @@ data:extend({
     subgroup = "energy",
     order = "e",
     enabled = false,
-    energy_required = 4,
+    energy_required = 15,
     ingredients =
     {
       PM.ingredient("pm-solar-panel-2", 1),
