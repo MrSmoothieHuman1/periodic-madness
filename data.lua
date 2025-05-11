@@ -592,7 +592,7 @@ data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_
 data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
 
 --MARK: Building modules
-data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots = 4 + settings.startup["pm-building-module-extra-slots"].value
+data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots = data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots + settings.startup["pm-building-module-extra-slots"].value
 
 table.insert(data.raw["character"]["character"].crafting_categories, "pm-circuitry")
 

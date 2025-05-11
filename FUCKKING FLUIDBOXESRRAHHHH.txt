@@ -333,3 +333,23 @@ Version: 0.4.62
         art_style = "vanilla",
         requires_beacon_alt_mode = false,
     },
+
+    local module_slottable_machines =
+{
+	data.raw["beacon"],
+	data.raw["assembling-machine"],
+	data.raw["lab"],
+	data.raw["furnace"],
+	data.raw["mining-drill"]
+}
+
+for _, MS_machine_type in pairs(module_slottable_machines) do
+	for _, MS_machines in pairs(MS_machine_type) do
+		if not MS_machines.module_slots == nil then
+			if MS_machines.module_slots < 0 then
+				MS_machines.module_slots = 0
+				--error("Something tried to make a machines module slots be lower then 0. If you are a mod dev, what the fuck are you doing?")
+			end
+		end
+	end
+end
