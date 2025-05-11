@@ -150,6 +150,8 @@ Date: 2024-12-08
     - Reworked sand/glass processing: early glass takes gravel (which is less efficient), but eventually you unlock better crushing techniques to actually make sand.
     - Revamped module costs, tier 1's start out by taking 4 circuits and take an extra circuit every tier (tier 1's take 4, tier 3's take 6, tier 6 take 10)
     - Reworked modules to be unlocked once per science tier, instead of 2 per tier. This did get rid of tier 4 modules however, but they will be added back eventually.
+    - Changed advanced splitters to take 4 solid lube instead of 6.
+    - Changed express splitters to take 10 heavy lube instead of 15.
 
   Fixes:
     - Fixed the science pack item names captilisation.

@@ -121,7 +121,7 @@ data.raw["recipe"]["express-splitter"].ingredients =
   PM.ingredient("pm-advanced-splitter", 1),
   PM.ingredient("low-density-structure", 2),
   PM.ingredient("processing-unit", 3),
-  PM.ingredient("pm-heavy-lubricant", 15, "fluid")
+  PM.ingredient("pm-heavy-lubricant", 10, "fluid")
 }
 data.raw["recipe"]["express-splitter"].energy_required = 4
 data.raw["recipe"]["splitter"].ingredients =
