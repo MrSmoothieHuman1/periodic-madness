@@ -242,7 +242,7 @@ data:extend({
       },
 })
 
-data.raw["beacon"]["beacon"].distribution_effectivity = 1.25
+data.raw["beacon"]["beacon"].distribution_effectivity = 1
 data.raw["beacon"]["beacon"].module_slots = 3
 data.raw["beacon"]["beacon"].minable = {mining_time = 0.5, result = "beacon"}
 data.raw["beacon"]["beacon"].icons_positioning =
