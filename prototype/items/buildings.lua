@@ -243,10 +243,13 @@ data:extend({
     stack_size = 100
   },
   {
-    type = "item",
+    type = "module",
     name = "pm-circuit-megassembler",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
+    category = "pm-building-modules",
+    tier = 1,
+    effect = {speed = 1, consumption = 1, pollution = 0.5},
     subgroup = "production-machine",
     order = "h",
     place_result = "pm-circuit-megassembler",
