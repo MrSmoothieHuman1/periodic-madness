@@ -12,7 +12,7 @@ data:extend({
     },
     {
       type = "module-category",
-      name = "pm-building-modules",
+      name = "pm-circuit-megassembler-module",
       hidden = true,
       hidden_in_factoriopedia = true,
     },

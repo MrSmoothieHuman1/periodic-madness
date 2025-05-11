@@ -2250,7 +2250,7 @@ data:extend({
     module_slots = 4,
     allowed_effects = PM.all_effects(),
     crafting_speed = 2.5,
-    allowed_module_categories = {"pm-building-modules"},
+    allowed_module_categories = {"pm-circuit-megassembler-module"},
     energy_source =
     {
       type = "fluid",

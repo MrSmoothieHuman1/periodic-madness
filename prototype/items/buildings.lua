@@ -247,7 +247,7 @@ data:extend({
     name = "pm-circuit-megassembler",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
-    category = "pm-building-modules",
+    category = "pm-circuit-megassembler-module",
     tier = 1,
     effect = {speed = 1, consumption = 1, pollution = 0.5},
     subgroup = "production-machine",

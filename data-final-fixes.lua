@@ -87,14 +87,19 @@ end
 
 data.raw["item"]["plastic-bar"] = nil
 
-local machines = {
+local exempt_heating_coil_machines =
+{
 	data.raw["beacon"],
 	data.raw["assembling-machine"],
 	data.raw["lab"],
 	data.raw["mining-drill"]
 }
+local exempt_building_module_machines =
+{
+	data.raw["assembling-machine"]["pm-circuit-megassembler"]
+}
 
-for _, machineType in pairs(machines) do
+for _, machineType in pairs(exempt_heating_coil_machines) do
 	for _, machine in pairs(machineType) do
 		if not (machine.allowed_module_categories == nil) then
 			for i, moduleCat in pairs(machine.allowed_module_categories) do
@@ -102,16 +107,18 @@ for _, machineType in pairs(machines) do
 					table.remove(machine.allowed_module_categories,i)
 					break
 				end
+				if moduleCat.name == "pm-circuit-megassembler-module" and not exempt_building_module_machines then
+					table.remove(machine.allowed_module_categories,i)
+					break
+				end
 			end
-		elseif not(machine.module_slots == nil) and machine.module_slots > 0 and not(machine.allowed_effects == nil)  then
+		elseif not (machine.module_slots == nil) and machine.module_slots > 0 and not (machine.allowed_effects == nil)  then
 			if(machine.allowed_module_categories == nil) then
 				machine.allowed_module_categories = {}
 			end
-
 			for _, moduleCat in pairs(data.raw["module-category"]) do
-				if not(moduleCat.name == "pm-heating-coils") then
-					
-					table.insert(machine.allowed_module_categories,moduleCat.name)
+				if not(moduleCat.name == "pm-heating-coils" or moduleCat.name == "pm-circuit-megassembler-module") then
+					table.insert(machine.allowed_module_categories, moduleCat.name)
 				end
 			end
 		end
