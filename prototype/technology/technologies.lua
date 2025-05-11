@@ -4863,7 +4863,7 @@ data:extend({
     {
       
     },
-    prerequisites = {"pm-temperature-inators-3"},
+    prerequisites = {"pm-tempature-inators-3"},
     unit = 
     {
       count = 450,

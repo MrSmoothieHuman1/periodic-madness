@@ -18,5 +18,13 @@ data:extend({
         name = "pm-circuit-colourblind-friendly-icons",
         setting_type = "startup",
         default_value = false
-    } 
+    },
+    {
+        type = "int-setting",
+        name = "pm-building-module-extra-slots",
+        setting_type = "startup",
+        default_value = 0,
+        minimum_value = -2,
+        maximum_value = 4
+    }
 })

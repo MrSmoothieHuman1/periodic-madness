@@ -21,7 +21,7 @@ Date: 2024-12-08
     - Continuing to rerender and model ores and other things.
     - Finally made the patina recipe unlockable at advanced byproduct handling.
     - Changed reactors to require some kind of coolant to actually function - and will explode if they arent getting any liquid, and have fuel inside of them. Have fun!
-    - Finally solved the whole issue of "hey theres no *real* way to make sulfur, by splitting up the chains to make sulfuric acid and sulfur. acid takes SO2, sulfur takes H2S
+    - Finally solved the whole issue of "hey theres no *real* way to make sulfur", by splitting up the chains to make sulfuric acid and sulfur. acid takes SO2, sulfur takes H2S
     - Revamped aluminium, moving it to A-ATM packs (under mixing tanks), and lenthenging the processing chain for it.
     - Added tier 3 solar panel equipment, with 90kW charge.
     - Added a new technology unlocked after platinum processing, moving ammonium chloride seperation down to A-ATM science.
@@ -29,7 +29,7 @@ Date: 2024-12-08
     - Added the Haber-Bosch process for ammonia, unlocked at metalloid packs.
     - Added an advanced processing chain for iron, copper, nickel, zinc and manganese. The chunk ores have a 1:6 chunk to ore ratio compared to 1:2.
     - Added beryllium plates instead of making it ore only, just because plates have been neglected recently.
-    - Added mod settings for PM! Ranging from things like how fast bots are (0.25x - 2x), [insert more things here]
+    - Added mod settings for PM! Ranging from things like how fast bots are (0.25x - 2x), the amount of module slots certain buildings can have, etc
     - Added 2 new alternative recipes for LDS, using the 2 other main 'light' metals.
     - Added a way to get certain chemicals from bacteria'ed and cyanobacteria'ed agars, by feeding them another chemical.
     - Added entity descriptions for all heat pipes, displaying their max temperature.

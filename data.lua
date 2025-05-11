@@ -562,6 +562,7 @@ data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-a
 data.raw["resource"]["iron-ore"].icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png"
 data.raw["resource"]["copper-ore"].icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png"
 
+--MARK: Bot speed multiplier
 local vanadium_speed_setting = ({
   ["0.25x"] = 0.045 * 0.25,
   ["0.5x"] = 0.045 * 0.5,
@@ -590,8 +591,12 @@ local lithium_speed_setting = ({
 data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_speed_setting
 data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
 
+--MARK: Building modules
+data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots = 4 + settings.startup["pm-building-module-extra-slots"].value
+
 table.insert(data.raw["character"]["character"].crafting_categories, "pm-circuitry")
 
+--MARK: Colourblind circuits
 if settings.startup["pm-circuit-colourblind-friendly-icons"].value == true then
   data.raw["item"]["electronic-circuit"].icon = "__periodic-madness__/graphics/icons/new-electronic-circuit.png"
   data.raw["item"]["pm-fluid-circuit"].icon = "__periodic-madness__/graphics/icons/new-fluid-circuit.png"
