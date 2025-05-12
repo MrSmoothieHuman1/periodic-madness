@@ -111,6 +111,8 @@ require("prototype.entity.inserters")
 require("prototype.entity.pipes")
 require("prototype.entity.spidertrons")
 require("prototype.entity.roboports")
+require("prototype.entity.projectiles")
+require("prototype.entity.stickers")
 
 require("prototype.entity.beacon-graphics.beacon-2-graphics") --i dont have the time nor strength to decode this into a normal definition
 require("prototype.entity.beacon-graphics.beacon-3-graphics")
