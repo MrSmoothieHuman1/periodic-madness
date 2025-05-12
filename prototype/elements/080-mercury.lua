@@ -19,6 +19,15 @@ data:extend({
     order = "c",
     stack_size = 140 + 10
   },
+  {
+    type = "item",
+    name = "pm-solid-mercury",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/solid-fuel.png",
+    subgroup = "pm-merucry-tm",
+    order = "d",
+    stack_size = 100
+  },
 
 
   {

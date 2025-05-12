@@ -965,6 +965,8 @@ data:extend({
       PM.unlock_recipe("pm-tungsten-plate-cooling"),
       PM.unlock_recipe("pm-aluminium-plate-cooling"),
       PM.unlock_recipe("pm-palladium-plate-cooling"),
+      PM.unlock_recipe("pm-solid-mercury"),
+      PM.unlock_recipe("pm-mercury-melting")
     },
     prerequisites = {"pm-zirconium-processing"},
     unit =

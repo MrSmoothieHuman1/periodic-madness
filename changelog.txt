@@ -55,6 +55,7 @@ Date: 2024-12-08
     - Added a batch-recipe of copper tin solder, unlocked at alkaline metals.
     - Added magnesium-incendiary rockets, which when hitting something leave a magnesium fire on the ground that lasts for a while.
     - Changed circuit megassembler (and any subsequent MEGA buildings) to use themselves as modules - every single building put into them makes the placed building work as multiple. (if you place 2 buildings into a MEGA building, it works as 3, for example).
+    - Added solid mercury, as a better way to transport it without piping it around to new silver/gold set-ups.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

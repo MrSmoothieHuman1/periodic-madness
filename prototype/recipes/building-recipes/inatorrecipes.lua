@@ -42,6 +42,40 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-molten-cadmium-telluride",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-cadnium-plate", 6),
+      PM.ingredient("pm-tellurium-plate", 6)
+    },
+    results = 
+    {
+      PM.product("pm-molten-cadmium-telluride", 2, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cadmium-telluride",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-molten-cadmium-telluride", 1, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-cadmium-telluride", 1),
+      PM.product_chance("pm-cadmium-telluride", 1, 0.5),
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,
@@ -201,6 +235,36 @@ data:extend({
     results =
     {
       PM.product("pm-strontium-glass", 3)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-solid-mercury",
+    enabled = false,
+    energy_required = 3,
+    category = "pm-coldening",
+    ingredients = 
+    {
+      PM.ingredient("pm-liquid-mercury", 10, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-solid-mercury", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-mercury-melting",
+    enabled = false,
+    energy_required = 3,
+    category = "pm-moltening",
+    ingredients =
+    {
+      PM.ingredient("pm-solid-mercury", 1)
+    },
+    results = 
+    {
+      PM.product("pm-liquid-mercury", 10, "fluid")
     }
   },
 
