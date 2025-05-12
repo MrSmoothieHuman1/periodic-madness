@@ -171,6 +171,232 @@ Date: 2024-12-08
     - Reworked values for battery capacity bonuses, increasing the amount you get.
     - Fixed health bio-modules not doubling in amount at the right technology.
     - Fixed the times for solar panel 2 not matching with solar panel 1.
+---------------------------------------------------------------------------------------------------
+Version: 0.6.168
+Date: 2025-05-12
+  The cover your butts, nothing was spared for the next update Update:
+
+  Changes:
+    - Changes beacons to have 3 module slots, but have 1 distribution efficiency. (was originally for 0.6.500)
+    - gave modules their new icons, as seen in 0.6.500 or Moar Modules!
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.167
+Date: 2025-04-27
+  The i will make borosilicate glass worth it so help me gods Update:
+
+  Fixes:
+    - Fixed borosilicate taking more glass then it should. its now 5 glass > 7.5 borosilicate glass.
+    - Also fixed borosilicate glass not taking silicon.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.166
+Date: 2025-04-17
+  The hell hath no fury like a 4 month-long update that is superpositionly close to being done and not at all done Update:
+
+  Additions:
+    - Gave vanadium, chromium and their ferro- versions their 0.6.500 icons. Also inadvertantly fixed their sizes being wrong.
+
+  Changes:
+    - Changed strength bio-modules to give 15 extra inventory slots, instead of 12.
+    - Nerfed flamethrowers again. burn. with a reasonable amount of damage.
+
+  Fixes:
+    - Locale fixes, i swear this is the last one. trust.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.165
+Date: 2025-03-31
+  The ignoring my responsibilites by adding new ones Update:
+
+  Additions:
+    - Added a mod setting for circuits to have visually distinct icons. More of these will be added in the future (namely, science packs).
+
+  Fixes:
+    - Fixed splitters and stainless pipes having big icons.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.164
+Date: 2025-03-28
+  The meld? i hardly know her! Update:
+
+  Additions:
+    - Thank you to AtelierAmber on Github for adding compatability for Helicopter Revival!
+    - Also a big thank you to Atelier again, for adding some code that changes all mentions of normal plastic to polyethylene plastic, which should aid in compatability with other mods.
+    - Because of how long this update is taking, i gave kasethal plates their 0.6.500 icon (and vanadium-chromium alloying). enjoy.
+
+  Fixes:
+    - Fixed the scaling on stainless steel pipes and some belts.
+    - Fixed the fact that orange and red belts wouldnt have the circuit controller rails.
+    - Fixed lithium bromide not being craftable.
+    - Fixed phosgene not being craftable.
+    - Fixed melatonin not being crafting.
+    - Made it so the Factorian bacteria greenhouse actually has pipe connections.
+    - Fixed the precentage chances of some catalysised recipes not adding up to 100%.
+    - Various locale fixes. I wasnt been lazy, i swear.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.163
+Date: 2025-03-18
+  The but i want things to be hard :( (get your mind out the gutter) Update:
+
+  Changes:
+    - Lowered the energy cost of atmospheric condenser from 500kW to 350kW.
+    - Changed normal concrete to take 5 slurry instead of 10, and refined to take 10 slurry instead of 15.
+    - Changed both hazard concretes to use 3 cadmium sulfate instead of 5.
+    - Lowered the energy cost of fluid catalyst crackers from 275kW to 250kW.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.162
+Date: 2025-03-10
+  The i will pay someone to play test every major update, please Update:
+
+  Fixes:
+    - Fixed the player being unable to craft any circuits.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.161
+Date: 2025-03-09
+  The making the game fun? and enjoyable? nerd Update:
+
+  Additions:
+    - Added evaporator recipes for voiding chlorine and hydrogen.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.160
+Date: 2025-03-09
+  The autoplace control? I hardly know her! Update:
+
+  Changes:
+    - Re-ordered the ores during the start menu to be more organised.
+    - Changed how ores spawn slightly, to hopefully make starter patches more usable. I will be adding presets.. soon.
+    - Lowered the amount of lead needed in better brass from 2 to 1.
+
+  Fixes:
+    - Fixed locale of better brass.
+    - Increased the amount of brass you get from better brass from 2 to 5.
+    - Made better brass plate unlockable in Crystallisation. Its not the best place, but it works For Now
+    - Fixed crafting menu tabs not taking up the entire space they are given.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.159
+Date: 2025-03-07
+  The maliciously complying with the voices to be productive Update:
+
+  Additions:
+    - Added stupid messages for the other doschord members who gave me their name. Finishers of PM will get something more special though, dont worry ;]
+
+  Changes:
+    - Changes splitters to increase by 1s, every tier.
+    - Changed underground crafting times to 1s, 1s, 2s, 3s, 3s.
+
+  Fixes:
+    - Fixed the crafting times on undergrounds and splitters being off.
+    - Fixed advanced splitters taking 2 fast splitters.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.158
+Date: 2025-03-05
+  The hello everynyan, how are you Update:
+
+  Additions:
+    - Added some funny messages if your name is something like Sassxolotl, or you gave me your name on the doshcord.
+
+  Changes:
+    - Changed high quality quartzite to still give filled flux containers, but less. :]
+    - Changed diesel fuel to take normal diesel, and not legendary diesel.
+
+  Fixes:
+    - Fixed crude antimony sulfide giving back 2 catalysts constantly.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.157
+Date: 2025-02-17
+  The WHO CALLS THEM LOCOMOTIVES Update:
+
+  Fixes:
+    - Fixed the PM milestone compatability.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.156
+Date: 2025-02-08
+  The math? you mean the blue crystal stuff? Update:
+
+  Changes:
+    - Made germanium take 3 impure lead, instead of 4.
+    - Changed palladium to match platinums nickel chunk production per craft.
+
+  Fixes:
+    - Fixed platinum being nickel chunk positive.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.155
+Date: 2025-02-07
+  The usual programming Update:
+
+  Changes:
+    - Changed butene and butane icons to be more easily differeniated. This was an 0.6.500 change, but im merciful.
+
+  Fixes:
+    - Fixed electronic breadboards and circuitboards not being disabled.
+    - Fixed lab technology not requiring electronics technology.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.154
+Date: 2025-02-06
+  The awaken from hibernation to bring you MORE fixes Update:
+
+  Additions:
+    - PM now has a polish translation! Thank you to S3BA-pl on github for the translation, and sorry for whatever happens on 0.6.500!
+
+  Changes:
+    - Changed all container recipes to be half of the crafting time of the actual thing. (catalyst containers take 1.5s instead of 3s, flux containers take 2s instead of 4s)
+    - Changed blue undergrounds to 2 blue circuits, and splitters to 3.
+    - Changed empty fuel canisters stack size to 150.
+
+  Fixes:
+    - More locale fixes.
+    - Fixed blue belts taking 3 blue circuits.
+    - Fixed the air filterer not actually taking away pollution. still finding 2.0 breakages.
+    - Fixed the science center having overlapping icons.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.153
+Date: 2025-02-03
+  The :( Update:
+
+  Changes:
+    - Changed flux to take 6 sand and not 8.
+    - Changed flux to take 2 fluorine and not 4.
+    - Changed platinum seperation to take 6.4s, and not 12.
+    - Improved the fluxed version of recipes to make them a lot better then their normal versions.
+
+  Fixes:
+    - Fixed the recipe for tellurium plate not being unlockable.
+    - Fixed the uranium fuel cell recipe not being unlockable.
+    - Fixed plastic metalloid packs not needing silicon.
+    - Fixed palladium hydride crushing being in a crusher, despite making a fluid.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.152
+Date: 2025-01-28
+  The i check ratios, please believe me, my brain hath not claimed its glory over me Update:
+
+  Changes:
+    - Changed the amount of time for molding IC molds from 6s to 4s.
+
+  Fixes:
+    - Fixed alkaline metal packs ratios for rubidium, caesium and potassium.
+    - Slightly improved lithium ratios.
+    - Improved the ratios for better sodium processing.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.151
+Date: 2025-01-25
+  The they just never had to change this changelog, what ever do you mean? Update:
+
+  Additions:
+    - Added compatability with mini-trains - they are a cheaper and earlier locomotive that can be unlocked at orange science, with worse stats.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.150
