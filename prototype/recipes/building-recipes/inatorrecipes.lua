@@ -817,7 +817,7 @@ data:extend({
         shift = { 0, -6 }
       },
     },
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "d",
     category = "pm-moltening",
     energy_required = 9,
@@ -1419,7 +1419,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/cadnium-cooling.png",
     category = "pm-coldening",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "e",
     energy_required = 9,
     enabled = false,

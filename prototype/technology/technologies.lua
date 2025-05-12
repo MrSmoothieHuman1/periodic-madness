@@ -4594,7 +4594,7 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-magnesium-carbonate"),
-      PM.unlock_recipe("pm-mangesium-chloride")
+      PM.unlock_recipe("pm-magnesium-chloride")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =

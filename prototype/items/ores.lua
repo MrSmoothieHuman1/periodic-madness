@@ -291,7 +291,7 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/cadnium-ore-icon-3.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/cadnium-ore-icon-4.png", size = 64, scale = 0.5},
     },
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "a",
     stack_size = 200
   },

@@ -113,7 +113,7 @@ data:extend({
     name = "pm-cadnium-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/cadnium-plate.png",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "b",
     stack_size = 100
   },

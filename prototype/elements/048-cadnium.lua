@@ -6,7 +6,7 @@ data:extend({
     name = "pm-cadnium-red",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cadmium-red.png",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "d",
     stack_size = 50
   },
@@ -21,7 +21,7 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate-2.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/cadnium-sulfate-3.png", size = 64, scale = 0.5 }
     },
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "A",
     stack_size = 50
   },
@@ -30,7 +30,7 @@ data:extend({
     name = "pm-cadmium-telluride",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cadmium-telluride.png",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "e",
     stack_size = 75
   },
@@ -41,7 +41,7 @@ data:extend({
     icon_size = 64,
     category = "pm-moltening",
     main_product = "pm-zinc-tailings",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "a",
     enabled = false,
     energy_required = 4,
@@ -63,7 +63,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/zinc-tailings-seperation.png",
     category = "pm-coldening",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "b",
     enabled = false,
     energy_required = 2,
@@ -85,7 +85,7 @@ data:extend({
     enabled = false,
     energy_required = 2,
     category = "pm-electrolysis",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "c",
     main_product = "pm-cadnium-ore",
     ingredients = 
@@ -105,7 +105,7 @@ data:extend({
     name = "pm-cadnium-red",
     energy_required = 3,
     category = "pm-moltening",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "ba",
     enabled = false,
     allow_productivity = true,

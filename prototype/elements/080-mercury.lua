@@ -24,7 +24,7 @@ data:extend({
     name = "pm-solid-mercury",
     icon_size = 64,
     icon = "__base__/graphics/icons/solid-fuel.png",
-    subgroup = "pm-merucry-tm",
+    subgroup = "pm-mercury-tm",
     order = "d",
     stack_size = 100
   },

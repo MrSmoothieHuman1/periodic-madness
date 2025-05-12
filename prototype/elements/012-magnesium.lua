@@ -211,7 +211,7 @@ data:extend({
         results =
         {
             PM.product("pm-magnesium-carbonate", 2),
-            PM.product_range("pm-carbon-dioxide", 2, 6, "fluid"),
+            PM.product_range("pm-carbon-dioxide-gas", 2, 6, "fluid"),
             PM.product_range("water", 0, 4, "fluid")
         }
     },

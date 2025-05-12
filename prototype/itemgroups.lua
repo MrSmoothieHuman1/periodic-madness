@@ -770,7 +770,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-cadnium-tm",
+    name = "pm-cadmium-tm",
     group = "pm-transition-metals",
     order = "p"
   },

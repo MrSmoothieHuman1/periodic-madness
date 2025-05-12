@@ -171,7 +171,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-cadnium-plate",
-    subgroup = "pm-cadnium-tm",
+    subgroup = "pm-cadmium-tm",
     order = "c",
     category = "smelting",
     energy_required = 3.2,
