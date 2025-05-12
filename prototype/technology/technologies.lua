@@ -3789,7 +3789,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-solar-panel-3"),
     },
-    prerequisites = {"pm-magnesium-chloride", "pm-cadnium-telluride", "pm-solar-energy-2"},
+    prerequisites = {"pm-magnesium-chloride", "pm-cadmium-telluride", "pm-solar-energy-2"},
     unit =
     {
       count = 550,
@@ -4862,12 +4862,13 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-cadnium-telluride",
+    name = "pm-cadmium-telluride",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-      
+      PM.unlock_recipe("pm-molten-camdium-telluride"),
+      PM.unlock_recipe("pm-cadmium-telluride")
     },
     prerequisites = {"pm-tempature-inators-3"},
     unit = 
