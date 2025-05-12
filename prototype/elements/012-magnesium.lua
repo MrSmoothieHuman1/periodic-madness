@@ -29,7 +29,35 @@ data:extend({
         },
         subgroup = "pm-magnesium-aem",
         order = "b",
-        stack_size = 250
+        stack_size = 200
+    },
+    {
+        type = "item",
+        name = "pm-magnesium-carbonate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/magnesium-oxide.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide-2.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-magnesium-aem",
+        order = "c",
+        stack_size = 100
+    },
+    {
+        type = "item",
+        name = "pm-magnesium-chloride",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/magnesium-oxide.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide-2.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-magnesium-aem",
+        order = "d",
+        stack_size = 100
     },
     {
         type = "item",
@@ -37,8 +65,8 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/calcium-silicate.png",
         subgroup = "pm-magnesium-aem",
-        order = "d",
-        stack_size = 250
+        order = "e",
+        stack_size = 200
     },
 
     {
@@ -164,6 +192,45 @@ data:extend({
         {
             PM.product_range_chance("pm-ferrosilicon", 1, 4, 0.5),
             PM.product_range_chance("pm-calcite", 2, 5, 0.66)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-magnesium-carbonate",
+        enabled = false,
+        energy_required = 6,
+        category = "pm-mixing",
+        subgroup = "pm-magnesium-aem",
+        order = "f",
+        main_product = "pm-magnesium-carbonate",
+        ingredients = 
+        {
+            PM.ingredient("pm-magnesium-ore", 2),
+            PM.ingredient("pm-sodium-bicarbonate", 4)
+        },
+        results =
+        {
+            PM.product("pm-magnesium-carbonate", 2),
+            PM.product_range("pm-carbon-dioxide", 2, 6, "fluid"),
+            PM.product_range("water", 0, 4, "fluid")
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-magnesium-chloride",
+        enabled = false,
+        energy_required = 6,
+        category = "chemistry",
+        subgroup = "pm-magnesium-aem",
+        order = "g",
+        ingredients =
+        {
+            PM.ingredient("pm-magnesium-carbonate", 2),
+            PM.ingredient("pm-hydrochloric-acid", 20, "fluid")
+        },
+        results = 
+        {
+            PM.product("pm-magnesium-chloride", 2),
         }
     }
 })

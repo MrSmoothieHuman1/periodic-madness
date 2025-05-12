@@ -4591,7 +4591,11 @@ data:extend({
     name = "pm-magnesium-chloride",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = {},
+    effects = 
+    {
+      PM.unlock_recipe("pm-magnesium-carbonate"),
+      PM.unlock_recipe("pm-mangesium-chloride")
+    },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =
     {

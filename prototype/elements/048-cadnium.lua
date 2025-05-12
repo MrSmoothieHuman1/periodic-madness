@@ -25,6 +25,15 @@ data:extend({
     order = "A",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-cadmium-telluride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cadmium-telluride.png",
+    subgroup = "pm-cadnium-tm",
+    order = "e",
+    stack_size = 75
+  },
 
   {
     type = "recipe",

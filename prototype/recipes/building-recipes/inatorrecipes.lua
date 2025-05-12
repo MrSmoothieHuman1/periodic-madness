@@ -64,6 +64,7 @@ data:extend({
     energy_required = 9,
     category = "pm-coldening",
     allow_productivity = true,
+    main_product = "pm-cadmium-telluride",
     ingredients = 
     {
       PM.ingredient("pm-molten-cadmium-telluride", 1, "fluid"),
