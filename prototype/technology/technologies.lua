@@ -4641,7 +4641,7 @@ data:extend({
     type = "technology",
     name = "pm-glass-ampules",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/glass-ampules.png",
     effects = 
     {
       PM.unlock_recipe("pm-empty-glass-ampule")

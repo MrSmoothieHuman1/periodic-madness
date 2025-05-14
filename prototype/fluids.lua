@@ -1934,7 +1934,7 @@ data:extend({
     type = "fluid",
     name = "pm-molten-cadmium-telluride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-thallium.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-cadmium-telluride.png",
     subgroup = "pm-cadmium-tm",
     order = "f",
     default_temperature = 15,

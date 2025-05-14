@@ -49,11 +49,11 @@ data:extend({
         type = "item",
         name = "pm-magnesium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/magnesium-oxide.png",
+        icon = "__periodic-madness__/graphics/icons/magnesium-ochloride.png",
         pictures =
         {
-            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide.png", size = 64, scale = 0.5},
-            {filename = "__periodic-madness__/graphics/icons/magnesium-oxide-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/magnesium-chloride.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/magnesium-chloride-2.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-magnesium-aem",
         order = "d",
