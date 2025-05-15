@@ -49,11 +49,13 @@ data:extend({
         type = "item",
         name = "pm-magnesium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/magnesium-ochloride.png",
+        icon = "__periodic-madness__/graphics/icons/magnesium-chloride.png",
         pictures =
         {
             {filename = "__periodic-madness__/graphics/icons/magnesium-chloride.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/magnesium-chloride-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/magnesium-chloride-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/magnesium-chloride-4.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-magnesium-aem",
         order = "d",
@@ -206,7 +208,7 @@ data:extend({
                 shift = { 0, 1.5 }
             },
             {
-                icon = "__periodic-madness__/graphics/icons/ores/magnesium-ore-icon.png",
+                icon = "__periodic-madness__/graphics/icons/ores/magnesium-ore.png",
                 icon_size = 64,
                 scale = 0.22,
                 shift = { 0, -6 }
@@ -233,7 +235,7 @@ data:extend({
         enabled = false,
         energy_required = 9.6,
         category = "pm-coldening",
-        subgroup = "pm-mangesium-aem",
+        subgroup = "pm-magnesium-aem",
         order = "g",
         main_product = "pm-magnesium-plate",
         ingredients = 

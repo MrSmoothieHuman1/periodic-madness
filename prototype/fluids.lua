@@ -1732,7 +1732,7 @@ data:extend({
     type = "fluid",
     name = "pm-molten-ore-slag",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-mixed-ore.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-ore-slag.png",
     subgroup = "pm-advanced-iron-tm",
     order = "c",
     default_temperature = 15,

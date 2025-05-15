@@ -4869,7 +4869,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-      PM.unlock_recipe("pm-molten-camdium-telluride"),
+      PM.unlock_recipe("pm-molten-cadmium-telluride"),
       PM.unlock_recipe("pm-cadmium-telluride")
     },
     prerequisites = {"pm-tempature-inators-3"},
