@@ -92,7 +92,7 @@ data:extend({
         type = "recipe",
         name = "pm-magnesium-hydroxide",
         enabled = false,
-        energy_required = 24,
+        energy_required = 20,
         category = "pm-mixing",
         subgroup = "pm-magnesium-aem",
         order = "b",
@@ -144,7 +144,7 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-magnesium-oxide", 4),
-            PM.ingredient("pm-stainless-steel-alloy", 12),
+            PM.ingredient("pm-stainless-steel-alloy", 8),
         },
         results =
         {
@@ -171,7 +171,7 @@ data:extend({
         results =
         {
             PM.product_range("pm-magnesium-ore", 4, 8),
-            PM.product_range_chance("pm-calcium-silicate", 4, 6, 0.85),
+            PM.product_range_chance("pm-calcium-silicate", 4, 6, 0.9),
         }
     },
     {
@@ -196,6 +196,60 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "pm-molten-magnesium",
+        icons =
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/fluids/molten-magnesium.png",
+                icon_size = 64,
+                scale = 0.4,
+                shift = { 0, 1.5 }
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/magnesium-ore-icon.png",
+                icon_size = 64,
+                scale = 0.22,
+                shift = { 0, -6 }
+            },
+        },
+        enabled = false,
+        energy_required = 9.6,
+        category = "pm-moltening",
+        subgroup = "pm-magnesium-aem",
+        order = "f",
+        ingredients = 
+        {
+            PM.ingredient("pm-magnesium-ore", 6),
+            PM.ingredient("steam", 25, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-molten-magnesium", 8, "fluid"),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-magnesium-plate",
+        enabled = false,
+        energy_required = 9.6,
+        category = "pm-coldening",
+        subgroup = "pm-mangesium-aem",
+        order = "g",
+        main_product = "pm-magnesium-plate",
+        ingredients = 
+        {
+            PM.ingredient("pm-molten-magnesium", 4, "fluid"),
+            PM.ingredient("pm-crucible", 1),
+        },
+        results = 
+        {
+            PM.product("pm-magnesium-plate", 4),
+            PM.product_chance("pm-crucible", 1, 0.8)
+        }
+    },
+
+    {
+        type = "recipe",
         name = "pm-magnesium-carbonate",
         enabled = false,
         energy_required = 6,
@@ -205,7 +259,7 @@ data:extend({
         main_product = "pm-magnesium-carbonate",
         ingredients = 
         {
-            PM.ingredient("pm-magnesium-ore", 2),
+            PM.ingredient("pm-magnesium-plate", 2),
             PM.ingredient("pm-sodium-bicarbonate", 4)
         },
         results =

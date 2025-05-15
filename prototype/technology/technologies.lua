@@ -3090,7 +3090,7 @@ data:extend({
     type = "technology",
     name = "pm-molten-potassium-glass",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/molten-potassium-salts.png",
     effects =
     {
       PM.unlock_recipe("pm-molten-potassium-salts"),
@@ -3922,13 +3922,15 @@ data:extend({
     type = "technology",
     name = "pm-magnesium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/magnesium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-dolomite"),
       PM.unlock_recipe("pm-magnesium-hydroxide"),
       PM.unlock_recipe("pm-magnesium-oxide"),
       PM.unlock_recipe("pm-magnesium-ore"),
+      PM.unlock_recipe("pm-molten-magnesium"),
+      PM.unlock_recipe("pm-magnesium-plate"),
       PM.unlock_recipe("pm-calcium-silicate-seperation")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
@@ -4010,7 +4012,7 @@ data:extend({
     type = "technology",
     name = "pm-radium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/radium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-barium-radium-sulfate"),
@@ -4431,7 +4433,7 @@ data:extend({
     type = "technology",
     name = "pm-beryllium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/beryllium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-beryl"),
@@ -4814,7 +4816,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-copper-tin-solder",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-solder.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-liquid-solder"),

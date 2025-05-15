@@ -1661,8 +1661,8 @@ data:extend({
     subgroup = "pm-chrominum-tm",
     order = "A",
     default_temperature = 15,
-    base_color = {r = 0, g = 0, b = 0},
-    flow_color = {r = 0, g = 0, b = 0}
+    base_color = {r = 0.4, g = 0.4, b = 0.2},
+    flow_color = {r = 0.4, g = 0.4, b = 0.2}
   },
   {
     type = "fluid",
@@ -1672,8 +1672,8 @@ data:extend({
     subgroup = "pm-vanadium-tm",
     order = "A",
     default_temperature = 15,
-    base_color = {r = 0, g = 0, b = 0},
-    flow_color = {r = 0, g = 0, b = 0}
+    base_color = {r = 0.2, g = 0.2, b = 0.2},
+    flow_color = {r = 0.2, g = 0.2, b = 0.2}
   },
   {
     type = "fluid",
@@ -1732,7 +1732,7 @@ data:extend({
     type = "fluid",
     name = "pm-molten-ore-slag",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-mixed-ore.png",
     subgroup = "pm-advanced-iron-tm",
     order = "c",
     default_temperature = 15,
@@ -1755,7 +1755,7 @@ data:extend({
     type = "fluid",
     name = "pm-barium-tailings",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/barium-tailings.png",
     subgroup = "pm-barium-aem",
     order = "e",
     default_temperature = 15,
@@ -1940,6 +1940,18 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.38, g = 0.39, b = 0.38},
     flow_color = {r = 0.38, g = 0.39, b = 0.38},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-molten-magnesium",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-magnesium.png",
+    subgroup = "pm-magnesium-aem",
+    order = "e",
+    default_temperature = 15,
+    base_color = {r = 0.91, g = 0.87, b = 0.67},
+    flow_color = {r = 0.91, g = 0.87, b = 0.67},
     auto_barrel = false,
   },
 
