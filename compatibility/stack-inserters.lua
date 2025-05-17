@@ -3,7 +3,7 @@ local PM = require("library")
 if mods["stack-inserters"] then
 
         --MARK: Tech changes
-    data.raw["technology"]["stack-inserter"].prerequisites = {"bulk-inserter", "processing-unit", "lubrication"}
+    data.raw["technology"]["stack-inserter"].prerequisites = {"bulk-inserter", "processing-unit", "lubricant"}
     data.raw["technology"]["stack-inserter"].unit.count = 400
     data.raw["technology"]["stack-inserter"].unit.ingredients =
     {

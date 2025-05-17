@@ -253,7 +253,7 @@ data:extend({
       PM.unlock_recipe("pm-stack-inserter"),
       PM.modify("belt-stack-size-bonus", 1)
     },
-    prerequisites = {"processing-unit", "lubrication", "bulk-inserter", "pm-reactive-non-metal-pack-unlock"},
+    prerequisites = {"processing-unit", "lubricant", "bulk-inserter", "chemical-science-pack"},
     unit =
     {
       count = 400,
@@ -261,8 +261,8 @@ data:extend({
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-pack", 1},
-        {"pm-post-transition-metal-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
       },
       time = 60
@@ -285,8 +285,8 @@ data:extend({
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-pack", 1},
-        {"pm-post-transition-metal-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
