@@ -1,6 +1,6 @@
 if mods["quality"] then
 local PM = require("library")
---#MARK: Vanilla changes
+--MARK: Vanilla changes
     data.raw["technology"]["modules"].icon_size = "__periodic-madness__/graphics/technology/modules-quality.png"
     data.raw["module"]["quality-module"].icon_size = 64
     data.raw["module"]["quality-module"].icon = "__periodic-madness__/graphics/icons/modules/quality-module-1.png"
@@ -80,7 +80,7 @@ data:extend({
     {
         type = "module",
         name = "pm-quality-module-4",
-        zlocalised_description = {"item-description.quality-module"},
+        localised_description = {"item-description.quality-module"},
         icon = "__periodic-madness__/graphics/icons/modules/quality-module-4.png",
         icon_size = 64,
         subgroup = "pm-quality",
