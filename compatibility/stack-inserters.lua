@@ -75,7 +75,8 @@ if mods["stack-inserters"] then
     {
         PM.ingredient("bulk-inserter", 1),
         PM.ingredient("pm-heavy-lubricant", 5, "fluid"),
-        PM.ingredient("processing-unit", 2)
+        PM.ingredient("processing-unit", 2),
+        PM.ingredient("pm-polyethylene-plastic", 2)
     }
     data.raw["recipe"]["stack-inserter"].energy_required = 1
 end
