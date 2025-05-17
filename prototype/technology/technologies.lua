@@ -4466,7 +4466,12 @@ data:extend({
     name = "pm-octane-fuel-canisters",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = {},
+    effects = 
+    {
+      PM.unlock_recipe("pm-octane-processing"),
+      PM.unloc_recipe("pm-N-octane-cracking"),
+      PM.unlock_recipe("pm-2-3-3-trimethylpentane-cracking")
+    },
     prerequisites = {"pm-metalloid-pack-unlock", "pm-kerosene-fuel-canisters", "pm-diesel-fuel-canisters", "pm-naptha-recipes", "pm-petrol-fuel-canisters"},
     unit = 
     {

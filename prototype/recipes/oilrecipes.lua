@@ -792,6 +792,59 @@ data:extend({
     }
   },
 
+  {
+    type = "recipe",
+    name = "pm-octane-processing",
+    enabled = false,
+    energy_required = 10,
+    category = "oil-processing",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-butene", 40, "fluid"),
+      PM.ingredient("pm-butane", 40, "fluid"),
+      --PM.ingredient("pm-aluminium-chloride", 5)
+    },
+    results =
+    {
+      PM.product("pm-N-octane", 4.5, "fluid"),
+      PM.product("pm-iso-octane", 5.5, "fluid"),
+      PM.product("pm-2-3-3-trimethylpentane", 2.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-N-octane-cracking",
+    enabled = false,
+    energy_required = 5,
+    category = "chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-N-octane", 3, "fluid"),
+      PM.ingredient("pm-iso-octane", 0.5, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-iso-octane", 2, "fluid")
+    }
+  },
+    {
+    type = "recipe",
+    name = "pm-2-3-3-trimethylpentane-cracking",
+    enabled = false,
+    energy_required = 5,
+    category = "chemistry",
+    ingredients = 
+    {
+      PM.ingredient("pm-2-3-3-trimethylpentane", 4, "fluid"),
+      PM.ingredient("pm-iso-octane", 0.5, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-iso-octane", 3, "fluid")
+    }
+  },
+
   -- Oil Cracking/Reforming
 
   {

@@ -1954,6 +1954,33 @@ data:extend({
     flow_color = {r = 0.91, g = 0.87, b = 0.67},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-N-octane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
+    default_temperature = 15,
+    base_color = {r = 0.7, g = 0.7, b = 0.7},
+    flow_color = {r = 0.7, g = 0.7, b = 0.7}
+  },
+  {
+    type = "fluid",
+    name = "pm-iso-octane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
+    default_temperature = 15,
+    base_color = {r = 0.7, g = 0.7, b = 0.7},
+    flow_color = {r = 0.7, g = 0.7, b = 0.7}
+  },
+  {
+    type = "fluid",
+    name = "pm-2-3-3-trimethylpentane",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
+    default_temperature = 15,
+    base_color = {r = 0.7, g = 0.7, b = 0.7},
+    flow_color = {r = 0.7, g = 0.7, b = 0.7}
+  },
 
 	{
 		type = "fluid",
