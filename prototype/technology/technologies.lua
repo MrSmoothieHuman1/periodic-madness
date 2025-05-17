@@ -4469,7 +4469,7 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-octane-processing"),
-      PM.unloc_recipe("pm-N-octane-cracking"),
+      PM.unlock_recipe("pm-N-octane-cracking"),
       PM.unlock_recipe("pm-2-3-3-trimethylpentane-cracking")
     },
     prerequisites = {"pm-metalloid-pack-unlock", "pm-kerosene-fuel-canisters", "pm-diesel-fuel-canisters", "pm-naptha-recipes", "pm-petrol-fuel-canisters"},

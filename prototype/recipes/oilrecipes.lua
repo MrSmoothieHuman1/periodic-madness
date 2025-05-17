@@ -799,10 +799,11 @@ data:extend({
     energy_required = 10,
     category = "oil-processing",
     allow_productivity = true,
+    main_product = "pm-iso-octane",
     ingredients = 
     {
-      PM.ingredient("pm-butene", 40, "fluid"),
-      PM.ingredient("pm-butane", 40, "fluid"),
+      PM.ingredient("pm-butene-gas", 40, "fluid"),
+      PM.ingredient("pm-butane-gas", 40, "fluid"),
       --PM.ingredient("pm-aluminium-chloride", 5)
     },
     results =
