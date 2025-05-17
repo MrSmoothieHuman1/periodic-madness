@@ -72,6 +72,7 @@ data:extend({
     max_health = 250,
     corpse = "pm-stack-inserter-remnants",
     dying_explosion = "pm-stack-inserter-explosion",
+    next_upgrade = "pm-express-stack-inserter",
     resistances =
     {
       {
@@ -198,11 +199,11 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      drain = "10kW"
+      drain = "20kW"
     },
     --heating_energy = "50kW",
     extension_speed = 0.1,
-    rotation_speed = 0.014,
+    rotation_speed = 0.04,
     filter_count = 5,
     icon_draw_specification = {scale = 0.5},
     fast_replaceable_group = "inserter",
