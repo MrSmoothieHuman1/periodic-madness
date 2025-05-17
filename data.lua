@@ -126,7 +126,8 @@ require("prototype.equipment-grid")
 require("prototype.virtual-signals")
 
 require("compatibility.icon-badges")
-
+require("compatibility.DLC.belt-stacking")
+require("compatibility.DLC.quality")
 
 local resource_autoplace = require('resource-autoplace');
 data:extend({

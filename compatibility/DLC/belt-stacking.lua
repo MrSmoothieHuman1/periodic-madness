@@ -2,6 +2,8 @@ local PM = require("library")
 
 local sounds = require("__base__.prototypes.entity.sounds")
 local item_sounds = require("__base__.prototypes.item_sounds")
+local hit_effects = require("__base__.prototypes.entity.hit-effects")
+local explosion_animations = require("__base__.prototypes.entity.explosion-animations")
 
 if not data.raw.tile["empty-space"] then
     local empty_space = table.deepcopy(data.raw.tile["out-of-map"])
@@ -29,7 +31,7 @@ data:extend({
     enabled = false,
     energy_required = 1,
     category = "crafting-with-fluid",
-    subgroup = "inserters",
+    subgroup = "inserter",
     ingredients =
     {
         PM.ingredient("bulk-inserter", 1),
@@ -46,7 +48,7 @@ data:extend({
 {
     type = "inserter",
     name = "pm-stack-inserter",
-    icon = "__periodic-madness__/graphics/icons/stack-inserter.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/stack-inserter.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     stack_size_bonus = 0,
     bulk = true,
@@ -89,7 +91,7 @@ data:extend({
     working_sound = sounds.inserter_fast,
     hand_base_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserterstack-inserter-hand-base.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-base.png",
       priority = "extra-high",
       width = 32,
       height = 136,
@@ -97,7 +99,7 @@ data:extend({
     },
     hand_closed_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserterstack-inserter-hand-closed.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -105,7 +107,7 @@ data:extend({
     },
     hand_open_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserterstack-inserter-hand-open.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -113,7 +115,7 @@ data:extend({
     },
     hand_base_shadow =
     {
-      filename = "__base__/graphics/entities/buildings/stack-inserterburner-inserter/burner-inserter-hand-base-shadow.png",
+      filename = "__base__/graphics/entity/burner-inserter/burner-inserter-hand-base-shadow.png",
       priority = "extra-high",
       width = 32,
       height = 132,
@@ -121,7 +123,7 @@ data:extend({
     },
     hand_closed_shadow =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserterstack-inserter-hand-closed-shadow.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed-shadow.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -129,7 +131,7 @@ data:extend({
     },
     hand_open_shadow =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserterstack-inserter-hand-open-shadow.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open-shadow.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -139,7 +141,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/stack-inserterstack-inserter-platform.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-platform.png",
         priority = "extra-high",
         width = 105,
         height = 79,
@@ -154,7 +156,7 @@ data:extend({
   {
     type = "explosion",
     name = "pm-stack-inserter-explosion",
-    icon = "__periodic-madness__/graphics/icons/stack-inserter.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/stack-inserter.png",
     flags = {"not-on-map"},
     hidden = true,
     subgroup = "inserter-explosions",
@@ -216,7 +218,7 @@ data:extend({
   {
     type = "corpse",
     name = "pm-stack-inserter-remnants",
-    icon = "__periodic-madness__/graphics/icons/stack-inserter.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/stack-inserter.png",
     flags = {"placeable-neutral", "not-on-map"},
     hidden_in_factoriopedia = true,
     subgroup = "inserter-remnants",
@@ -231,7 +233,7 @@ data:extend({
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet (4,
     {
-      filename = "__periodic-madness__/graphics/entity/stack-inserter-remnants.png",
+      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-remnants.png",
       line_length = 1,
       width = 132,
       height = 96,
@@ -239,6 +241,58 @@ data:extend({
       shift = util.by_pixel(3, -1.5),
       scale = 0.5
     })
+  },
+
+  {
+    type = "technology",
+    name = "pm-stack-inserter",
+    icon = "__periodic-madness__/graphics/technology/stack-inserter.png",
+    icon_size = 256,
+    effects =
+    {
+      PM.unlock_recipe("pm-stack-inserter"),
+      PM.modify("belt-stack-size-bonus", 1)
+    },
+    prerequisites = {"processing-unit", "lubrication", "bulk-inserter", "pm-reactive-non-metal-pack-unlock"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-pack", 1},
+        {"pm-post-transition-metal-pack", 1},
+        {"chemical-science-pack", 1},
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-transport-belt-capacity-1",
+    icons = util.technology_icon_constant_stack_size("__periodic-madness__/graphics/technology/transport-belt-capacity.png"),
+    icon_size = 256,
+    effects =
+    {
+      PM.modify("belt-stack-size-bonus", 1)
+    },
+    prerequisites = {"pm-stack-inserter", "pm-metalloid-pack-unlock", "pm-alkali-metal-pack-unlock"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-pack", 1},
+        {"pm-post-transition-metal-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    }
   },
 })
 end
