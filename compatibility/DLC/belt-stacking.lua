@@ -418,5 +418,13 @@ data:extend({
 })
 
 data.raw["technology"]["pm-advanced-mining-drill-1"].prerequisites = {"pm-stack-inserter"}
-data.raw["mining-drill"]["pm-mining-drill-2"].drops_full_belt_stacks = true
+data.raw["technology"]["pm-advanced-mining-drill-1"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
+}
+data.raw["mining-drill"]["pm-electric-mining-drill-2"].drops_full_belt_stacks = true
 end
