@@ -6035,7 +6035,7 @@ data:extend({
     module_slots = 8,
     icon_draw_specification = {shift = {0, -0.1}},
     {
-      {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
+      {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 4, scale = 0.42}
     },
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heating-coils"},
@@ -6240,13 +6240,14 @@ data:extend({
     crafting_categories = {"smelting"},
     result_inventory_size = 2,
     crafting_speed = 1.25,
-    energy_usage = "200kW",
+    energy_usage = "180kW",
     source_inventory_size = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 0.5}
+      emissions_per_minute = {pollution = 0.5},
+      drain = "20kW",
     },
     impact_category = "metal",
     open_sound = sounds.electric_large_open,
@@ -8807,7 +8808,7 @@ data.raw["furnace"]["electric-furnace"].allowed_module_categories = {"pm-heating
 data.raw["furnace"]["electric-furnace"].module_slots = 6
 data.raw["furnace"]["electric-furnace"].icons_positioning =
 {
-  {inventory_index = defines.inventory.furnace_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
+  {inventory_index = defines.inventory.furnace_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 6, scale = 0.42}
 }
 data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
