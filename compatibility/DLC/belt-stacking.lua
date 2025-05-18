@@ -416,4 +416,7 @@ data:extend({
     }
   },
 })
+
+data.raw["technology"]["pm-advanced-mining-drill-1"].prerequisites = {"pm-stack-inserter"}
+data.raw["mining-drill"]["pm-mining-drill-2"].drops_full_belt_stacks = true
 end
