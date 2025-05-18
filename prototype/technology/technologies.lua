@@ -4470,7 +4470,10 @@ data:extend({
     {
       PM.unlock_recipe("pm-octane-processing"),
       PM.unlock_recipe("pm-N-octane-cracking"),
-      PM.unlock_recipe("pm-2-3-3-trimethylpentane-cracking")
+      PM.unlock_recipe("pm-2-3-3-trimethylpentane-cracking"),
+      PM.unlock_recipe("pm-N-octane-solid-fuel"),
+      PM.unlock_recipe("pm-iso-octane-solid-fuel"),
+      PM.unlock_recipe("pm-2-3-3-trimethylpentane-solid-fuel")
     },
     prerequisites = {"pm-metalloid-pack-unlock", "pm-kerosene-fuel-canisters", "pm-diesel-fuel-canisters", "pm-naptha-recipes", "pm-petrol-fuel-canisters"},
     unit = 

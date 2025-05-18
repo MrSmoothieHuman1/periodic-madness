@@ -845,6 +845,60 @@ data:extend({
       PM.product("pm-iso-octane", 3, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-N-octane-solid-fuel",
+    enabled = false,
+    energy_required = 3,
+    category = "chemistry",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-N-octane", 1, "fluid"),
+      PM.ingredient("pm-fuel-oils", 10, "fluid"),
+      PM.ingredient("solid-fuel", 2)
+    },
+    results =
+    {
+      PM.catalyst("solid-fuel", 6, 4)
+    }
+  },
+    {
+    type = "recipe",
+    name = "pm-iso-octane-solid-fuel",
+    enabled = false,
+    energy_required = 3,
+    category = "chemistry",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-iso-octane", 1, "fluid"),
+      PM.ingredient("pm-fuel-oils", 10, "fluid"),
+      PM.ingredient("solid-fuel", 2)
+    },
+    results =
+    {
+      PM.catalyst("solid-fuel", 6, 4)
+    }
+  },
+    {
+    type = "recipe",
+    name = "pm-2-3-3-trimethylpentane-solid-fuel",
+    enabled = false,
+    energy_required = 3,
+    category = "chemistry",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-2-3-3-trimethylpentane", 1, "fluid"),
+      PM.ingredient("pm-fuel-oils", 10, "fluid"),
+      PM.ingredient("solid-fuel", 2)
+    },
+    results =
+    {
+      PM.catalyst("solid-fuel", 6, 4)
+    }
+  },
 
   -- Oil Cracking/Reforming
 
