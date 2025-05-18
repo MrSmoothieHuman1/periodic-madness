@@ -4473,10 +4473,14 @@ data:extend({
       PM.unlock_recipe("pm-2-3-3-trimethylpentane-cracking"),
       PM.unlock_recipe("pm-N-octane-solid-fuel"),
       PM.unlock_recipe("pm-iso-octane-solid-fuel"),
-      PM.unlock_recipe("pm-2-3-3-trimethylpentane-solid-fuel")
+      PM.unlock_recipe("pm-2-3-3-trimethylpentane-solid-fuel"),
+      PM.unlock_recipe("pm-naptha-to-octane-fuel-canister"),      
+      PM.unlock_recipe("pm-kerosene-to-octane-fuel-canister"),
+      PM.unlock_recipe("pm-diesel-to-octane-fuel-cansiter"),
+      PM.unlock_recipe("pm-petrol-to-octane-fuel-canister")
     },
     prerequisites = {"pm-metalloid-pack-unlock", "pm-kerosene-fuel-canisters", "pm-diesel-fuel-canisters", "pm-naptha-recipes", "pm-petrol-fuel-canisters"},
-    unit = 
+    unit =
     {
       count = 400,
       ingredients =
@@ -4487,7 +4491,7 @@ data:extend({
         {"pm-post-transition-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1}
       },
-      time = 60
+      time = 80
     }
   },
   {

@@ -899,6 +899,74 @@ data:extend({
       PM.catalyst("solid-fuel", 6, 4)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-naptha-to-octane-fuel-canister",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("pm-N-octane", 2, "fluid"),
+      PM.ingredient("pm-naptha-fuel-canister", 1),
+      PM.ingredient("pm-solid-fuel", 2)
+    },
+    results = 
+    {
+      PM.product("pm-indutrial-octane-fuel-canister", 1)
+    }
+  },
+    {
+    type = "recipe",
+    name = "pm-kerosene-to-octane-fuel-canister",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("pm-N-octane", 2, "fluid"),
+      PM.ingredient("pm-kerosene-fuel-canister", 1),
+      PM.ingredient("pm-solid-fuel", 2)
+    },
+    results = 
+    {
+      PM.product("pm-industrial-octane-fuel-canister", 1)
+    }
+  },
+    {
+    type = "recipe",
+    name = "pm-diesel-to-octane-fuel-canister",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("pm-iso-octane", 2, "fluid"),
+      PM.ingredient("pm-diesel-fuel-canister", 1),
+      PM.ingredient("pm-solid-fuel", 2)
+    },
+    results = 
+    {
+      PM.product("pm-vehicle-octane-fuel-canister", 1)
+    }
+  },
+    {
+    type = "recipe",
+    name = "pm-petrol-to-octane-fuel-canister",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("pm-2-3-3-trimethylpentane", 2, "fluid"),
+      PM.ingredient("pm-petrol-fuel-canister", 1),
+      PM.ingredient("pm-solid-fuel", 1)
+    },
+    results = 
+    {
+      PM.product("pm-vehicle-octane-fuel-canister", 1)
+    }
+  },
 
   -- Oil Cracking/Reforming
 

@@ -58,6 +58,7 @@ Date: 2024-12-08
     - Added solid mercury, as a better way to transport it without piping it around to new silver/gold set-ups.
     - Added compatability with the Stack Inserter mod! the final two tiers of belt stacking bonus technologies arent finished, but should be fully implemented by 0.9
     - Also added native support for belt stacking, which'll work largely the same as the Stack Inserter mod.
+    - Implemented octane fuel canisters, which act as advanced versions of the existing fuel canisters. Two of them exist, Vehicle and Industrial; naptha/kerosene make industrial and diesel/petrol make vehicle.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -153,6 +154,7 @@ Date: 2024-12-08
     - Reworked modules to be unlocked once per science tier, instead of 2 per tier. This did get rid of tier 4 modules however, but they will be added back eventually.
     - Changed advanced splitters to take 4 solid lube instead of 6.
     - Changed express splitters to take 10 heavy lube instead of 15.
+    - Changed naptha fuel canisters to only be usable in machines, and the other 3 fuels to only be usable in vehicles.
 
   Fixes:
     - Fixed the science pack item names captilisation.

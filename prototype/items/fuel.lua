@@ -17,7 +17,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/diesel-fuel-canister.png",
     fuel_value = "12MJ",
-    fuel_category = "pm-oil-canisters",
+    fuel_category = "pm-vehicle-fuel-canisters",
     fuel_acceleration_multiplier = 1.3,
     fuel_top_speed_multiplier = 1.3,
     subgroup = "pm-fuels",
@@ -31,7 +31,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/petrol-fuel-canister.png",
     fuel_value = "3MJ",
-    fuel_category = "pm-oil-canisters",
+    fuel_category = "pm-vehicle-fuel-canisters",
     fuel_acceleration_multiplier = 1.75,
     fuel_top_speed_multiplier = 2,
     subgroup = "pm-fuels",
@@ -45,7 +45,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/kerosene-fuel-canister.png",
     fuel_value = "24MJ",
-    fuel_category = "pm-oil-canisters",
+    fuel_category = "pm-vehicle-fuel-canisters",
     fuel_acceleration_multiplier = 1,
     fuel_top_speed_multiplier = 1.05,
     subgroup = "pm-fuels",
@@ -59,9 +59,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/naptha-fuel-canister.png",
     fuel_value = "30MJ",
-    fuel_category = "pm-oil-canisters",
-    fuel_acceleration_multiplier = 0.75,
-    fuel_top_speed_multiplier = 0.95,
+    fuel_category = "pm-fuel-canisters",
+    fuel_emissions_multiplier = 0.95,
     subgroup = "pm-fuels",
     order = "f",
     burnt_result = "pm-empty-fuel-canister",
@@ -120,6 +119,33 @@ data:extend({
     order = "b",
     stack_size = 10
   },
+  {
+    type = "item",
+    name = "pm-vehicle-octane-fuel-canister",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/diesel-fuel-canister.png",
+    fuel_value = "32MJ",
+    fuel_category = "pm-vehicle-fuel-canisters",
+    fuel_acceleration_multiplier = 2,
+    fuel_top_speed_multiplier = 2.5,
+    subgroup = "pm-fuels",
+    order = "c",
+    burnt_result = "pm-empty-fuel-canister",
+    stack_size = 100
+  },
+    {
+    type = "item",
+    name = "pm-industrial-octane-fuel-canister",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/diesel-fuel-canister.png",
+    fuel_value = "32MJ",
+    fuel_category = "pm-fuel-canisters",
+    fuel_emissions_multiplier = 0.75,
+    subgroup = "pm-fuels",
+    order = "c",
+    burnt_result = "pm-empty-fuel-canister",
+    stack_size = 100
+  },
 }--[[@as data.ItemPrototype[] ]])
 
 data.raw["item"]["rocket-fuel"].subgroup = "pm-fuels"
@@ -129,8 +155,9 @@ data.raw["recipe"]["rocket-fuel"].order = "g"
 data.raw["item"]["nuclear-fuel"].subgroup = "pm-fuels"
 data.raw["item"]["nuclear-fuel"].order = "h"
 
-table.insert(data.raw["inserter"]["burner-inserter"].energy_source.fuel_categories, "pm-oil-canisters")
-table.insert(data.raw["car"]["car"].energy_source.fuel_categories, "pm-oil-canisters")
-table.insert(data.raw["car"]["tank"].energy_source.fuel_categories, "pm-oil-canisters")
-table.insert(data.raw["boiler"]["boiler"].energy_source.fuel_categories, "pm-oil-canisters")
-table.insert(data.raw["locomotive"]["locomotive"].energy_source.fuel_categories, "pm-oil-canisters")
+table.insert(data.raw["inserter"]["burner-inserter"].energy_source.fuel_categories, "pm-fuel-canisters")
+table.insert(data.raw["car"]["car"].energy_source.fuel_categories, "pm-vehicle-fuel-canisters")
+table.insert(data.raw["car"]["tank"].energy_source.fuel_categories, "pm-vehicle-fuel-canisters")
+table.insert(data.raw["boiler"]["boiler"].energy_source.fuel_categories, "pm-fuel-canisters")
+table.insert(data.raw["mining-drill"]["burner-mining-drill"].energy_source.fuel_categories, "pm-fuel-canisters")
+table.insert(data.raw["locomotive"]["locomotive"].energy_source.fuel_categories, "pm-vehicle-fuel-canisters")
