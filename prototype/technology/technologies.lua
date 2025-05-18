@@ -447,7 +447,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-butane-cracking"),
-      PM.unlock_recipe("pm-naptha-canister")
+      PM.unlock_recipe("pm-naptha-fuel-canister")
     },
     prerequisites = {"oil-processing"},
     research_trigger = 
@@ -625,7 +625,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-empty-fuel-canister"),
-      PM.unlock_recipe("pm-diesel-canister")
+      PM.unlock_recipe("pm-diesel-fuel-canister")
     },
     prerequisites = {"pm-basic-polyethylene-plastic", "pm-diesel-recipes"},
     unit =
@@ -648,7 +648,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-empty-fuel-canister"),
-      PM.unlock_recipe("pm-kerosene-canister")
+      PM.unlock_recipe("pm-kerosene-fuel-canister")
     },
     prerequisites = {"pm-basic-polyethylene-plastic", "pm-kerosene-recipes"},
     unit =
@@ -671,7 +671,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-empty-fuel-canister"),
-      PM.unlock_recipe("pm-petrol-canister")
+      PM.unlock_recipe("pm-petrol-fuel-canister")
     },
     prerequisites = {"pm-basic-polyethylene-plastic", "pm-petrol-recipes"},
     unit =
@@ -4474,9 +4474,9 @@ data:extend({
       PM.unlock_recipe("pm-N-octane-solid-fuel"),
       PM.unlock_recipe("pm-iso-octane-solid-fuel"),
       PM.unlock_recipe("pm-2-3-3-trimethylpentane-solid-fuel"),
-      PM.unlock_recipe("pm-naptha-to-octane-fuel-canister"),      
+      PM.unlock_recipe("pm-naptha-to-octane-fuel-canister"),
       PM.unlock_recipe("pm-kerosene-to-octane-fuel-canister"),
-      PM.unlock_recipe("pm-diesel-to-octane-fuel-cansiter"),
+      PM.unlock_recipe("pm-diesel-to-octane-fuel-canister"),
       PM.unlock_recipe("pm-petrol-to-octane-fuel-canister")
     },
     prerequisites = {"pm-metalloid-pack-unlock", "pm-kerosene-fuel-canisters", "pm-diesel-fuel-canisters", "pm-naptha-recipes", "pm-petrol-fuel-canisters"},

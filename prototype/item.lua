@@ -1628,7 +1628,11 @@ data:extend({
   },
   {
     type = "fuel-category",
-    name = "pm-oil-canisters"
+    name = "pm-fuel-canisters"
+  },
+    {
+    type = "fuel-category",
+    name = "pm-vehicle-fuel-canisters"
   },
   {
     type = "fuel-category",

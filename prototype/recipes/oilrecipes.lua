@@ -710,7 +710,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-diesel-canister",
+    name = "pm-diesel-fuel-canister",
     energy_required = 2,
     enabled = false,
     subgroup = "pm-fuels",
@@ -722,12 +722,12 @@ data:extend({
       PM.ingredient("pm-legendary-diesel", 40, "fluid")
     },
     results = {
-      PM.product("pm-diesel-canister", 1)
+      PM.product("pm-diesel-fuel-canister", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-kerosene-canister",
+    name = "pm-kerosene-fuel-canister",
     energy_required = 2,
     enabled = false,
     subgroup = "pm-fuels",
@@ -739,12 +739,12 @@ data:extend({
       PM.ingredient("pm-kerosene", 40, "fluid")
     },
     results = {
-      PM.product("pm-kerosene-canister", 1)
+      PM.product("pm-kerosene-fuel-canister", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-petrol-canister",
+    name = "pm-petrol-fuel-canister",
     energy_required = 2,
     enabled = false,
     subgroup = "pm-fuels",
@@ -756,12 +756,12 @@ data:extend({
       PM.ingredient("pm-petrol", 40, "fluid")
     },
     results = {
-      PM.product("pm-petrol-canister", 1)
+      PM.product("pm-petrol-fuel-canister", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-naptha-canister",
+    name = "pm-naptha-fuel-canister",
     energy_required = 2,
     enabled = false,
     subgroup = "pm-fuels",
@@ -773,7 +773,7 @@ data:extend({
       PM.ingredient("pm-naptha", 40, "fluid")
     },
     results = {
-      PM.product("pm-naptha-canister", 1)
+      PM.product("pm-naptha-fuel-canister", 1)
     }
   },
   {
@@ -896,7 +896,7 @@ data:extend({
     },
     results =
     {
-      PM.catalyst("solid-fuel", 6, 4)
+      PM.catalyst("solid-fuel", 6, 3)
     }
   },
   {
@@ -909,11 +909,11 @@ data:extend({
     {
       PM.ingredient("pm-N-octane", 2, "fluid"),
       PM.ingredient("pm-naptha-fuel-canister", 1),
-      PM.ingredient("pm-solid-fuel", 2)
+      PM.ingredient("solid-fuel", 2)
     },
     results = 
     {
-      PM.product("pm-indutrial-octane-fuel-canister", 1)
+      PM.product("pm-industrial-octane-fuel-canister", 1)
     }
   },
     {
@@ -926,7 +926,7 @@ data:extend({
     {
       PM.ingredient("pm-N-octane", 2, "fluid"),
       PM.ingredient("pm-kerosene-fuel-canister", 1),
-      PM.ingredient("pm-solid-fuel", 2)
+      PM.ingredient("solid-fuel", 2)
     },
     results = 
     {
@@ -943,7 +943,7 @@ data:extend({
     {
       PM.ingredient("pm-iso-octane", 2, "fluid"),
       PM.ingredient("pm-diesel-fuel-canister", 1),
-      PM.ingredient("pm-solid-fuel", 2)
+      PM.ingredient("solid-fuel", 2)
     },
     results = 
     {
@@ -960,7 +960,7 @@ data:extend({
     {
       PM.ingredient("pm-2-3-3-trimethylpentane", 2, "fluid"),
       PM.ingredient("pm-petrol-fuel-canister", 1),
-      PM.ingredient("pm-solid-fuel", 1)
+      PM.ingredient("solid-fuel", 1)
     },
     results = 
     {

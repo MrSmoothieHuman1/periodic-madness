@@ -87,11 +87,22 @@
        ["pm-lead-purifying", "pm-lead-ore"],
        ["pm-zirconium-leeching", "pm-zirconium-sand"],
        ["pm-zirconium-sand-filtering","pm-zircon"],
-       ["pm-fuel-canister", "pm-empty-fuel-canister"]
+       ["pm-fuel-canister", "pm-empty-fuel-canister"],
+       ["pm-naptha-canister", "pm-naptha-fuel-canister"],
+       ["pm-diesel-canister", "pm-diesel-fuel-canister"],
+       ["pm-petrol-canister", "pm-petrol-fuel-canister"],
+       ["pm-kerosene-canister", "pm-kerosene-fuel-canister"]
     ],
     "autoplace-control":
     [
         ["pm-zinc-ore", "pm-zinc-chunks"],
         ["pm-nickel-ore", "pm-nickel-chunks"]
+    ],
+    "item":
+    [
+        ["pm-naptha-canister", "pm-naptha-fuel-canister"],
+        ["pm-diesel-canister", "pm-diesel-fuel-canister"],
+        ["pm-petrol-canister", "pm-petrol-fuel-canister"],
+        ["pm-kerosene-canister", "pm-kerosene-fuel-canister"]
     ]
 }

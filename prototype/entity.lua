@@ -489,7 +489,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_categories = {"chemical", "pm-oil-canisters"},
+      fuel_categories = {"chemical", "pm-fuel-canisters"},
       effectivity = 1,
       fuel_inventory_size = 1,
       emissions_per_minute = {pollution = 6},
@@ -864,7 +864,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_categories = {"chemical", "pm-oil-canisters"},
+      fuel_categories = {"chemical", "pm-fuel-canisters"},
       effectivity = 1,
       fuel_inventory_size = 1,
       emissions_per_minute = {pollution = 20},
@@ -1322,7 +1322,7 @@ data:extend({
       type = "burner",
       emissions_per_minute = {pollution = 2.5},
       fuel_inventory_size = 1,
-      fuel_categories = {"chemical", "pm-oil-canisters"},
+      fuel_categories = {"chemical", "pm-fuel-canisters"},
       light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
     },
     crafting_categories = { "pm-crushing" },
@@ -6419,7 +6419,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_categories = {"pm-oil-canisters"},
+      fuel_categories = {"pm-fuel-canisters"},
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
@@ -8673,7 +8673,6 @@ data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-ch
 data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-plant-2"
 
 data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "115kW"
-table.insert(data.raw["mining-drill"]["burner-mining-drill"].energy_source.fuel_categories, "pm-oil-canisters")
 
 data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 750
 data.raw["heat-pipe"]["heat-pipe"].map_color = {r = 0.6, g = 0.506, b = 0.353}

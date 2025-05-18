@@ -13,7 +13,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-diesel-canister",
+    name = "pm-diesel-fuel-canister",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/diesel-fuel-canister.png",
     fuel_value = "12MJ",
@@ -27,7 +27,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-petrol-canister",
+    name = "pm-petrol-fuel-canister",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/petrol-fuel-canister.png",
     fuel_value = "3MJ",
@@ -41,7 +41,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-kerosene-canister",
+    name = "pm-kerosene-fuel-canister",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/kerosene-fuel-canister.png",
     fuel_value = "24MJ",
@@ -55,7 +55,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-naptha-canister",
+    name = "pm-naptha-fuel-canister",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/naptha-fuel-canister.png",
     fuel_value = "30MJ",
