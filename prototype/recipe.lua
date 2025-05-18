@@ -3704,7 +3704,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-coils",
     order = "a",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-lightweight-framing", 5),
       PM.ingredient("copper-plate", 10),
@@ -3842,7 +3842,7 @@ data:extend({
     category = "crafting-with-fluid",
     energy_required = 45,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("advanced-circuit", 35),
       PM.ingredient("pm-heavy-lubricant", 60, "fluid"),

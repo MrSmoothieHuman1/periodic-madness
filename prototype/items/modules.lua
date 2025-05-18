@@ -227,7 +227,7 @@ data:extend({
       type = "module",
       name = "pm-gold-heating-coil",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/modules/copper-heating-coil.png",
+      icon = "__periodic-madness__/graphics/icons/modules/gold-heating-coil.png",
       tier = 1,
       category = "pm-heating-coils",
       subgroup = "pm-coils",
