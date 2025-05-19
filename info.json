@@ -9,10 +9,10 @@
     "base >= 2.0",
     "! space-age >= 2.0",
     "(?) BrimStuff >= 1.0.6",
-    "icon_badges >= 1.1.9",
-    "Milestones >= 1.4.2",
-    "Mini_Trains >= 2.0.0",
-    "enable-all-feature-flags >= 1.0.0"
+    "? icon_badges >= 1.1.9",
+    "? Milestones >= 1.4.2",
+    "? Mini_Trains >= 2.0.0",
+    "? enable-all-feature-flags >= 1.0.0"
   ],
   "description": "This mod aims to add every element in the periodic table to Factorio.",
   "package": {
