@@ -1,7 +1,17 @@
 --fuels
 
 data:extend({
-
+  {
+    type = "item",
+    name = "pm-hydrogen-fuel",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/hydrogen-fuel.png",
+    subgroup = "pm-fuels",
+    order = "a",
+    fuel_category = "pm-oxidiser",
+    fuel_value = "64MJ",
+    stack_size = 50
+  },
   {
     type = "item",
     name = "pm-empty-fuel-canister",
@@ -68,17 +78,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-hydrogen-fuel",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/hydrogen-fuel.png",
-    subgroup = "pm-fuels",
-    order = "a",
-    fuel_category = "pm-oxidiser",
-    fuel_value = "64MJ",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "pm-polonium-fuel-rod",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/polonium-fuel-rod.png",
@@ -129,7 +128,7 @@ data:extend({
     fuel_acceleration_multiplier = 2,
     fuel_top_speed_multiplier = 2.5,
     subgroup = "pm-fuels",
-    order = "c",
+    order = "g",
     burnt_result = "pm-empty-fuel-canister",
     stack_size = 100
   },
@@ -142,18 +141,18 @@ data:extend({
     fuel_category = "pm-fuel-canisters",
     fuel_emissions_multiplier = 0.75,
     subgroup = "pm-fuels",
-    order = "c",
+    order = "h",
     burnt_result = "pm-empty-fuel-canister",
     stack_size = 100
   },
 }--[[@as data.ItemPrototype[] ]])
 
+data.raw["item"]["solid-fuel"].subgroup = "pm-fuels"
+data.raw["item"]["solid-fuel"].order = "aa"
 data.raw["item"]["rocket-fuel"].subgroup = "pm-fuels"
-data.raw["item"]["rocket-fuel"].order = "g"
+data.raw["item"]["rocket-fuel"].order = "i"
 data.raw["recipe"]["rocket-fuel"].subgroup = "pm-fuels"
-data.raw["recipe"]["rocket-fuel"].order = "g"
-data.raw["item"]["nuclear-fuel"].subgroup = "pm-fuels"
-data.raw["item"]["nuclear-fuel"].order = "h"
+data.raw["recipe"]["rocket-fuel"].order = "i"
 
 table.insert(data.raw["inserter"]["burner-inserter"].energy_source.fuel_categories, "pm-fuel-canisters")
 table.insert(data.raw["car"]["car"].energy_source.fuel_categories, "pm-vehicle-fuel-canisters")

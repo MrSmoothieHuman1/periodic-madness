@@ -1644,9 +1644,6 @@ data.raw["item"]["iron-gear-wheel"].order = "a"
 data.raw["recipe"]["iron-gear-wheel"].subgroup = "pm-gears"
 data.raw["recipe"]["iron-gear-wheel"].order = "aa"
 
-data.raw["item"]["solid-fuel"].subgroup = "pm-fuels"
-data.raw["item"]["solid-fuel"].order = "e"
-
 data.raw["projectile"]["defender-capsule"].action =
 {
   type = "direct",
