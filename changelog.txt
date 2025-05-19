@@ -175,6 +175,7 @@ Date: 2024-12-08
     - Reworked values for battery capacity bonuses, increasing the amount you get.
     - Fixed health bio-modules not doubling in amount at the right technology.
     - Fixed the times for solar panel 2 not matching with solar panel 1.
+    - Made directly compatable mods be optionally dependent, not hidden optional.
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168
 Date: 2025-05-12

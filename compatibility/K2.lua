@@ -36,24 +36,3 @@ data.raw["technology"]["kr-steam-engine"].effects =
     recipe = "steam-engine"
   },
 }
-
-
-
--- credit to KingArthur for this monstrosity, i love it
--- replace an item/fluid in every recipes ingredients/results
--- best used to merge items that are duplicated in mods that should be the same
---function overrides.global_item_replacer{old, new, blackrecipe}
---    if not data.raw.item[old] and not data.raw.fluid[old] then return end
---    if not data.raw.item[new] and not data.raw.fluid[new] then return end
---
---    local recipes = table.deepcopy{data.raw.recipe}
---    if type{blackrecipe} ~= 'table' and blackrecipe ~= nil then blackrecipe = {blackrecipe} end
---    local brecipeset = {}
---    if blackrecipe ~= nil then for _, brecipe in pairs{blackrecipe} do brecipeset[brecipe] = true end end
---    for recipe in pairs{recipes} do
---        if not recipe.ignored_by_recipe_replacement and not brecipeset[recipe] then
---            overrides.ingredient_replace{recipe, old, new}
---            overrides.results_replacer{recipe, old, new}
---        end
---    end
---end
