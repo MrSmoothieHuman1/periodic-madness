@@ -417,7 +417,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/liquid-brass.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
         icon_size = 64,
         scale = 0.4,
         shift = { 0, 1.5 }
