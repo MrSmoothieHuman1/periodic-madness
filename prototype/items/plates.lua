@@ -21,6 +21,11 @@ data:extend({
     name = "pm-manganese-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/manganese-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/manganese-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-manganese-tm",
     order = "b",
     stack_size = 100
@@ -94,7 +99,12 @@ data:extend({
     type = "item",
     name = "pm-tin-plate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/tin-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/tin-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/tin-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-tin-ptm",
     order = "g",
     stack_size = 100

@@ -1904,7 +1904,7 @@ data:extend({
     type = "fluid",
     name = "pm-molten-strontium-glass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-glass.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-strontium-glass.png",
     subgroup = "pm-glassing",
     order = "a",
     default_temperature = 15,

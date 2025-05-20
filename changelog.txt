@@ -155,6 +155,7 @@ Date: 2024-12-08
     - Changed advanced splitters to take 4 solid lube instead of 6.
     - Changed express splitters to take 10 heavy lube instead of 15.
     - Changed naptha fuel canisters to only be usable in machines, and the other 3 fuels to only be usable in vehicles.
+    - Rerendered molten glass's to be visually distinct.
 
   Fixes:
     - Fixed the science pack item names captilisation.

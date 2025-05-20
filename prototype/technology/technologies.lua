@@ -4215,8 +4215,7 @@ data:extend({
     type = "technology",
     name = "pm-aluminium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    icon = "__periodic-madness__/graphics/technology/aluminium-processing.png",
     {
       PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
@@ -4465,7 +4464,7 @@ data:extend({
     type = "technology",
     name = "pm-octane-fuel-canisters",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/octane-fuel-canisters.png",
     effects = 
     {
       PM.unlock_recipe("pm-octane-processing"),
@@ -4604,7 +4603,7 @@ data:extend({
     type = "technology",
     name = "pm-magnesium-chloride",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/magnesium-chloride.png",
     effects = 
     {
       PM.unlock_recipe("pm-magnesium-carbonate"),
