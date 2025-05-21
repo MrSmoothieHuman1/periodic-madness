@@ -280,7 +280,7 @@ data:extend({
     },
     subgroup = "pm-iron-tm",
     order = "x",
-    stack_size = 5
+    stack_size = 500
   },
   {
     type = "item",
