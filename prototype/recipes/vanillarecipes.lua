@@ -390,7 +390,7 @@ data.raw["recipe"]["pipe-to-ground"].ingredients =
 data.raw["recipe"]["train-stop"].ingredients =
 {
   PM.ingredient("pm-lightweight-framing", 6),
-  PM.ingredient("advanced-circuit", 3),
+  PM.ingredient("electronic-circuit", 4),
   PM.ingredient("pm-stainless-steel-alloy", 2),
   PM.ingredient("pm-glass-pane", 4)
 }
@@ -403,7 +403,7 @@ data.raw["recipe"]["rail-signal"].ingredients =
 data.raw["recipe"]["rail-chain-signal"].ingredients =
 {
   PM.ingredient("pm-glass-pane", 3),
-  PM.ingredient("advanced-circuit", 1),
+  PM.ingredient("pm-fluid-circuit", 1),
   PM.ingredient("pm-lightweight-panelling", 4)
 }
 data.raw["recipe"]["flamethrower-turret"].ingredients =
@@ -777,7 +777,6 @@ data.raw["recipe"]["bulk-inserter"].ingredients =
   PM.ingredient("pm-polyethylene-plastic", 2)
 }
 
---
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
 data.raw["recipe"]["productivity-module-2"].energy_required = 15

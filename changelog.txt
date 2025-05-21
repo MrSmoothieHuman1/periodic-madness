@@ -156,6 +156,8 @@ Date: 2024-12-08
     - Changed express splitters to take 10 heavy lube instead of 15.
     - Changed naptha fuel canisters to only be usable in machines, and the other 3 fuels to only be usable in vehicles.
     - Rerendered molten glass's to be visually distinct.
+    - Forced by wube to change chain signals to use orange circuits instead of red.
+    - Changed train stations to use green circuits instead of red, but increased their amount by one.
 
   Fixes:
     - Fixed the science pack item names captilisation.
