@@ -1660,6 +1660,7 @@ data:extend({
     category = "pm-moltening",
     energy_required = 9,
     enabled = false,
+    main_product = "pm-molten-solder",
     ingredients =
     {
       PM.ingredient("pm-tin-plate", 10),
@@ -1804,6 +1805,7 @@ data:extend({
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
+    main_product = "pm-molten-steel",
     ingredients =
     {
       PM.ingredient("iron-plate", 8),
@@ -1863,6 +1865,7 @@ data:extend({
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
+    main_product = "pm-molten-brass",
     ingredients =
     {
       PM.ingredient("copper-plate", 8),
@@ -1923,6 +1926,7 @@ data:extend({
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
+    main_product = "pm-molten-stainless-steel",
     ingredients =
     {
       PM.ingredient("steel-plate", 8),
@@ -1983,6 +1987,7 @@ data:extend({
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
+    main_product = "pm-molten-kasethal",
     ingredients =
     {
       PM.ingredient("iron-plate", 3),
