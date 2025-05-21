@@ -1469,7 +1469,7 @@ data:extend({
     type = "item",
     name = "pm-strontium-glass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/strontium-glass.png",
+    icon = "__periodic-madness__/graphics/icons/strontium-glass-pane.png",
     subgroup = "pm-intermediates",
     stack_size = 75
   },

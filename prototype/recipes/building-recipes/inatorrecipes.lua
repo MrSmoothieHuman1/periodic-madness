@@ -1795,8 +1795,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.25,
       },
     },
     subgroup = "pm-alloys",
@@ -1855,8 +1854,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.25,
       },
     },
     subgroup = "pm-alloys",
@@ -1916,8 +1914,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.25,
       },
     },
     subgroup = "pm-alloys",
@@ -1977,8 +1974,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.25,
       },
     },
     subgroup = "pm-alloys",

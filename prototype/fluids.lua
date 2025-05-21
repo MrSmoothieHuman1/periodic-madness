@@ -1597,7 +1597,7 @@ data:extend({
     type = "fluid",
     name = "pm-light-coolant",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/coolant.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/light-coolant.png",
     subgroup = "pm-bismuth-ptm",
     order = "a",
     default_temperature = 15,
