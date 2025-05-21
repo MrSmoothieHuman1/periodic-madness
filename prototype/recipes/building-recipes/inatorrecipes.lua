@@ -417,7 +417,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-brass.png",
         icon_size = 64,
         scale = 0.4,
         shift = { 0, 1.5 }
@@ -1640,7 +1640,21 @@ data:extend({
     type = "recipe",
     name = "pm-liquid-solder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/solder-melting.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-solder.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
     subgroup = "pm-alloys",
     order = "g",
     category = "pm-moltening",
@@ -1662,7 +1676,21 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-liquid-solder",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/solder-melting.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-solder.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
     subgroup = "pm-alloys",
     order = "g",
     category = "pm-moltening",
@@ -1754,9 +1782,23 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-liquid-steel",
+    name = "pm-molten-steel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/steel-alloy-melting.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-steel.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
     subgroup = "pm-alloys",
     order = "ba",
     category = "pm-moltening",
@@ -1800,9 +1842,23 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-liquid-brass",
+    name = "pm-molten-brass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/brass-alloy-melting.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-brass.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
     subgroup = "pm-alloys",
     order = "ca",
     category = "pm-moltening",
@@ -1847,9 +1903,23 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-liquid-stainless-steel",
+    name = "pm-molten-stainless-steel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/stainless-steel-alloy-melting.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-stainless-steel.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
     subgroup = "pm-alloys",
     order = "ea",
     category = "pm-moltening",
@@ -1894,9 +1964,23 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-liquid-kasethal",
+    name = "pm-molten-kasethal",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/kasethal-melting.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-kasethal.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
     subgroup = "pm-alloys",
     order = "fa",
     category = "pm-moltening",

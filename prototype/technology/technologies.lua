@@ -1160,13 +1160,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/molten-alloys.png",
     effects =
     {
-      PM.unlock_recipe("pm-liquid-steel"),
+      PM.unlock_recipe("pm-molten-steel"),
       PM.unlock_recipe("pm-steel-plate-cooling"),
-      PM.unlock_recipe("pm-liquid-brass"),
+      PM.unlock_recipe("pm-molten-brass"),
       PM.unlock_recipe("pm-brass-plate-cooling"),
-      PM.unlock_recipe("pm-liquid-stainless-steel"),
+      PM.unlock_recipe("pm-molten-stainless-steel"),
       PM.unlock_recipe("pm-stainless-steel-plate-cooling"),
-      PM.unlock_recipe("pm-liquid-kasethal"),
+      PM.unlock_recipe("pm-molten-kasethal"),
       PM.unlock_recipe("pm-kasethal-plate-cooling"),
     },
     prerequisites = {"pm-tempature-inators-2", "pm-flourine-processing"},

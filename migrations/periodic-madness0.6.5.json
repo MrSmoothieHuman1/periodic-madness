@@ -91,7 +91,12 @@
        ["pm-naptha-canister", "pm-naptha-fuel-canister"],
        ["pm-diesel-canister", "pm-diesel-fuel-canister"],
        ["pm-petrol-canister", "pm-petrol-fuel-canister"],
-       ["pm-kerosene-canister", "pm-kerosene-fuel-canister"]
+       ["pm-kerosene-canister", "pm-kerosene-fuel-canister"],
+       ["pm-liquid-steel", "pm-molten-steel"],
+       ["pm-liquid-stainless-steel", "pm-molten-stainless-steel"],
+       ["pm-liquid-brass", "pm-molten-brass"],
+       ["pm-liquid-solder", "pm-molten-solder"],
+       ["pm-liquid-kasethal", "pm-molten-kasethal"]
     ],
     "autoplace-control":
     [
