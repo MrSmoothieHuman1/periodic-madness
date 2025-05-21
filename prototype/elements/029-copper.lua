@@ -98,13 +98,12 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/crude-matte-copper.png",
+        icon = "__base__/graphics/icons/iron-ore.png",
         icon_size = 64,
       },
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
-        scale = 0.8
       },
     },
     subgroup = "pm-copper-tm",
