@@ -777,6 +777,7 @@ data.raw["recipe"]["bulk-inserter"].ingredients =
   PM.ingredient("pm-polyethylene-plastic", 2)
 }
 
+--
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
 data.raw["recipe"]["productivity-module-2"].energy_required = 15
