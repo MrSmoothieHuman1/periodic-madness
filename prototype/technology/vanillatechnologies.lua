@@ -273,7 +273,7 @@ data.raw["technology"]["plastics"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 
-data.raw["technology"]["advanced-material-processing-2"].prerequisites = {"pm-multimetal-multiproperty"}
+data.raw["technology"]["advanced-material-processing-2"].prerequisites = {"pm-multimetal-multiproperty", "advanced-circuit"}
 data.raw["technology"]["advanced-material-processing-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},

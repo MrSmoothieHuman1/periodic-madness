@@ -181,6 +181,7 @@ Date: 2024-12-08
     - Fixed the times for solar panel 2 not matching with solar panel 1.
     - Made directly compatable mods be optionally dependent, not hidden optional.
     - Corrected the ordering of the fuel subgroup.
+    - Fixed electric furnace 1's not being behind red circuits in the tech tree.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168
