@@ -83,7 +83,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-mixed-bastnasite-seperation",
+    name = "pm-mixed-bastnasite-crushing",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/bastnasite-seperation.png",
     enabled = false,

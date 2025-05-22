@@ -1876,7 +1876,7 @@ data:extend({
       PM.unlock_recipe("pm-impure-lead"),
       PM.unlock_recipe("pm-lead-ore"),
       PM.unlock_recipe("pm-lead-plate"),
-      PM.unlock_recipe("pm-thallium-leeching"),
+      PM.unlock_recipe("pm-lorandite"),
       PM.unlock_recipe("pm-thallium-mixing"),
       PM.unlock_recipe("pm-thallium-sulfate-electrolysis"),
       PM.unlock_recipe("pm-thallium-plate"),
@@ -3237,7 +3237,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-mixed-bastnasite"),
-      PM.unlock_recipe("pm-mixed-bastnasite-seperation"),
+      PM.unlock_recipe("pm-mixed-bastnasite-crushing"),
       PM.unlock_recipe("pm-bastnasite-Y-seperation"),
       PM.unlock_recipe("pm-bastnasite-C-seperation"),
       PM.unlock_recipe("pm-yttrium-fluoride"),
