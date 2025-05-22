@@ -69,6 +69,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-iodine-rnm",
     order = "d",
+    main_product = "pm-iodine",
     ingredients =
     {
       PM.ingredient("pm-hydrogen-iodide", 10, "fluid"),

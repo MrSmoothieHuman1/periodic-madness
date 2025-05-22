@@ -3,7 +3,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-hydrogen-bromide-leeching",
+    name = "pm-hydrogen-bromide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/hydrogen-bromide-leeching.png",
     enabled = false,
@@ -12,6 +12,7 @@ data:extend({
     subgroup = "pm-bromine-rnm",
     order = "a",
     allow_productivity = true,
+    main_product = "pm-hydrogen-bromide",
     ingredients =
     {
       PM.ingredient("pm-seawater", 100, "fluid"),

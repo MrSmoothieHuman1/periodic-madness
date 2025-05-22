@@ -96,7 +96,9 @@
        ["pm-liquid-stainless-steel", "pm-molten-stainless-steel"],
        ["pm-liquid-brass", "pm-molten-brass"],
        ["pm-liquid-solder", "pm-molten-solder"],
-       ["pm-liquid-kasethal", "pm-molten-kasethal"]
+       ["pm-liquid-kasethal", "pm-molten-kasethal"],
+       ["pm-hydrogen-bromide-leeching", "pm-hydrogen-bromide"],
+       ["pm-thallium-leeching", "pm-lorandite"]
     ],
     "autoplace-control":
     [

@@ -27,7 +27,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-thallium-leeching",
+    name = "pm-lorandite",
     icon_size = 64,
     icons =
     {
