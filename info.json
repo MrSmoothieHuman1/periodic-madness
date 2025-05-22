@@ -8,6 +8,7 @@
   "dependencies": [
     "base >= 2.0",
     "! space-age >= 2.0",
+    "! quality",
     "(?) BrimStuff >= 1.0.6",
     "? icon_badges >= 1.1.9",
     "? Milestones >= 1.4.2",
