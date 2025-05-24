@@ -80,7 +80,7 @@ data:extend({
     results = 
     {
       PM.product("pm-pig-iron", 1),
-      PM.product_range_chance("stone", 1, 2, 0.5)
+      PM.product_range_chance("stone", 1, 2, 0.33)
     }
   },
   {

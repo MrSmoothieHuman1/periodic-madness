@@ -88,7 +88,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-crude-matte-copper", 1)
+      PM.product("pm-crude-matte-copper", 1),
+      PM.product_range_chance("stone", 1, 2, 0.25)
     }
   },
   {
@@ -98,7 +99,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__base__/graphics/icons/iron-ore.png",
+        icon = "__base__/graphics/icons/copper-ore.png",
         icon_size = 64,
       },
       {
