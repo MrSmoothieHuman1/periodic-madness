@@ -7,12 +7,12 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/basic-basic-wood-growth.png",
     category = "pm-washing",
-    energy_required = 60,
+    energy_required = 45,
     enabled = false,
     ingredients = 
     {
       PM.ingredient("wood", 5),
-      PM.ingredient("stone", 8),
+      PM.ingredient("stone", 6),
       PM.ingredient("water", 20, "fluid"),
       PM.ingredient("pm-oxygen-gas", 10, "fluid")
     },
