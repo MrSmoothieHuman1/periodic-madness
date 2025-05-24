@@ -74,7 +74,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-nickel-powder", 8)
+      PM.product("pm-nickel-powder", 4)
     }
   },
   {
@@ -106,7 +106,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-nickel-powder", 8),
+      PM.ingredient("pm-nickel-powder", 4),
       PM.ingredient("pm-hydrochloric-acid", 4, "fluid"),
     },
     allow_decomposition = false,
@@ -146,7 +146,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-nickel-powder", 8),
+      PM.ingredient("pm-nickel-powder", 4),
       PM.ingredient("pm-chromic-acid", 2, "fluid"),
     },
     allow_decomposition = false,

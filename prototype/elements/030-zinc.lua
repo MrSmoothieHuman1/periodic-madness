@@ -60,8 +60,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-zinc-powder", 8),
-      PM.product_range_chance("stone", 1, 2, 0.5)
+      PM.product("pm-zinc-powder", 4),
     }
   },
   {
@@ -93,7 +92,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-zinc-powder", 8),
+      PM.ingredient("pm-zinc-powder", 4),
       PM.ingredient("pm-hydrochloric-acid", 4, "fluid"),
     },
     enabled = false,
@@ -133,7 +132,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-zinc-powder", 8),
+      PM.ingredient("pm-zinc-powder", 4),
       PM.ingredient("pm-chromic-acid", 2, "fluid"),
     },
     enabled = false,
