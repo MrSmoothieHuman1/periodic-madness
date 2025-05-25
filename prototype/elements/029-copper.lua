@@ -82,6 +82,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-copper-tm",
     order = "a",
+    main_product = "pm-crude-matte-copper",
     ingredients =
     {
       PM.ingredient("pm-copper-chunk", 1)
