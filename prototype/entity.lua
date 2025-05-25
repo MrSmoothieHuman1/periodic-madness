@@ -7877,7 +7877,7 @@ fluid_boxes =
 {
   type = "furnace",
   name = "pm-electric-boiler-1",
-  icon = "__periodic-madness__/graphics/icons/buildings/dirty-boiler.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/electric-boiler.png",
   icon_size = 64,
   flags = { "placeable-neutral", "player-creation" },
   minable = { mining_time = 0.4, result = "pm-electric-boiler-1" },
