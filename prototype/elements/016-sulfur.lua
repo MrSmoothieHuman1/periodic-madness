@@ -80,6 +80,7 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "d",
     allow_productivity = true,
+    enabled = false,
     main_product = "pm-hydrogen-sulfide",
     ingredients =
     {

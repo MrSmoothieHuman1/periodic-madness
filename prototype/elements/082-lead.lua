@@ -159,7 +159,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-molten-arsenic-lead",
-    enabled = true,
+    enabled = false,
     energy_required = 6,
     category = "pm-moltening",
     subgroup = "pm-lead-ptm",

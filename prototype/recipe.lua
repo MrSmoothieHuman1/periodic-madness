@@ -36,7 +36,7 @@ data:extend({
     energy_required = 4,
     allow_productivity = true,
     enabled = false,
-    ingredients = 
+    ingredients =
     { 
       PM.ingredient("stone", 4)
     },
