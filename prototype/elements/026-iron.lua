@@ -188,7 +188,7 @@ data:extend({
     type = "recipe",
     name = "pm-mixed-molten-iron",
     enabled = false,
-    category = "pm-moltening",
+    category = "pm-moltening", --should be in blast/reverbatory furnace
     subgroup = "pm-advanced-iron-tm",
     order = "b",
     energy_required = 3,
@@ -220,10 +220,12 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-mixed-molten-iron", 10, "fluid"),
+      PM.ingredient("pm-crucible", 3)
     },
     results =
     {
       PM.product_range("pm-molten-ore-slag", 0.5, 3, "fluid"),
+      PM.product_range("pm-crucible", 1, 3),
       PM.product("pm-wrought-iron", 12)
     }
   },
