@@ -151,9 +151,9 @@ data.raw["recipe"]["long-handed-inserter"].ingredients =
 }
 data.raw["recipe"]["big-electric-pole"].ingredients =
 {
-  PM.ingredient("pm-basic-framing", 4),
-  PM.ingredient("pm-fiberoptic-cable", 1),
-  PM.ingredient("steel-plate", 2)
+  PM.ingredient("pm-basic-framing", 6),
+  PM.ingredient("steel-plate", 3),
+  PM.ingredient("pm-fiberoptic-cable", 4)
 }
 data.raw["recipe"]["substation"].ingredients =
 {
@@ -433,9 +433,9 @@ data.raw["recipe"]["power-armor"].ingredients =
 }
 data.raw["recipe"]["medium-electric-pole"].ingredients =
 {
-  PM.ingredient("pm-basic-framing", 6),
-  PM.ingredient("steel-plate", 3),
-  PM.ingredient("pm-fiberoptic-cable", 4)
+  PM.ingredient("pm-basic-framing", 4),
+  PM.ingredient("pm-fiberoptic-cable", 1),
+  PM.ingredient("steel-plate", 2)
 }
 data.raw["recipe"]["speed-module"].ingredients =
 {
