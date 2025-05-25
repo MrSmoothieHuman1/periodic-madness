@@ -128,7 +128,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
+        icon = "__base__/graphics/icons/iron-ore.png",
         icon_size = 64,
       },
       {
