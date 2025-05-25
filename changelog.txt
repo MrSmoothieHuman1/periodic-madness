@@ -182,6 +182,7 @@ Date: 2024-12-08
     - Made directly compatable mods be optionally dependent, not hidden optional.
     - Corrected the ordering of the fuel subgroup.
     - Fixed electric furnace 1's not being behind red circuits in the tech tree.
+    - Unhid molybdenum TM leeching from the player.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168

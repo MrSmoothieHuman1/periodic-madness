@@ -61,7 +61,6 @@ data:extend({
       PM.ingredient("pm-transition-metals-ore", 12),
       PM.ingredient("pm-acidic-water", 25, "fluid"),
     },
-    hide_from_player_crafting = true,
     enabled = false,
     results =
     {
