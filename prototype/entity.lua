@@ -7333,7 +7333,7 @@ data:extend({
 { --MARK: RTG
   type = "reactor",
   name = "pm-RTG",
-  icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/RTG.png",
   icon_size = 128,
   flags = { "placeable-neutral", "player-creation" },
   minable = { mining_time = 0.7, result = "pm-RTG" },
@@ -7356,8 +7356,8 @@ data:extend({
       maximum_intensity = 0.95
     }
   },
-  collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
-  selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+  collision_box = { { -0.9, -0.9 }, { 0.9, 0.9} },
+  selection_box = { { -1, -1 }, { 1, 1 } },
   picture =
   {
     layers =
