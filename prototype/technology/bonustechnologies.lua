@@ -1562,6 +1562,12 @@ data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
 }
 
 --MARK: V.Inserter capacity
+data.raw["technology"]["inserter-capacity-bonus-1"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
 data.raw["technology"]["inserter-capacity-bonus-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
