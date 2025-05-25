@@ -7964,7 +7964,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-N-idle.png",
             priority = "extra-high",
             width = 269,
             height = 221,
@@ -7987,7 +7987,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
+            filename = "___periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
             priority = "extra-high",
             width = 216,
             height = 301,
@@ -8018,7 +8018,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-S-idle.png",
             priority = "extra-high",
             width = 260,
             height = 192,
@@ -8041,7 +8041,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-W-idle.png",
             priority = "extra-high",
             width = 196,
             height = 273,
@@ -8153,7 +8153,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-N-idle.png",
             priority = "extra-high",
             width = 269,
             height = 221,
@@ -8176,7 +8176,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
             priority = "extra-high",
             width = 216,
             height = 301,
@@ -8207,7 +8207,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-S-idle.png",
             priority = "extra-high",
             width = 260,
             height = 192,
@@ -8230,7 +8230,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-W-idle.png",
             priority = "extra-high",
             width = 196,
             height = 273,
