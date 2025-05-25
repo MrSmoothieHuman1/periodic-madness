@@ -39,6 +39,7 @@ local PM = require("library")
 
 -- Both paths:
   -- Robot battery capacity
+  -- belt stacking
 
 data:extend({
 --MARK:Lab Prod
