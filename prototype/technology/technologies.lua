@@ -4217,6 +4217,7 @@ data:extend({
     name = "pm-aluminium-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/aluminium-processing.png",
+    effects = 
     {
       PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
