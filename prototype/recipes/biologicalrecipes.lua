@@ -18,7 +18,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("wood", 5, 10)
+      PM.product_range("wood", 5, 10),
+      PM.product_chance("wood", 1, 0.5)
     }
   },
   {
