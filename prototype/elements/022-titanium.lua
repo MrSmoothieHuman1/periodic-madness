@@ -75,7 +75,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-titanium-chunks", 4),
-      PM.ingredient("pm-coke", 10)
+      PM.ingredient("pm-coke", 5)
     },
     results =
     {

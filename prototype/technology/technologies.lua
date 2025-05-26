@@ -1668,7 +1668,7 @@ data:extend({
       PM.unlock_recipe("pm-CISD2"),
       PM.unlock_recipe("pm-health-bio-module"),
     },
-    prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering", "pm-phosphor-processing", "sulfur-processing", "pm-fertiliser"},
+    prerequisites = {"pm-anti-bacterial-multiproperty-multimetals", "pm-agar-bacteria-filtering", "pm-phosphor-processing", "sulfur-processing"},
     research_trigger =
     {
       type = "craft-fluid",
@@ -2392,7 +2392,7 @@ data:extend({
       PM.unlock_recipe("pm-potash-potassium"),
       PM.unlock_recipe("pm-potassium-fertiliser")
     },
-    prerequisites = {"pm-fertiliser"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 250,

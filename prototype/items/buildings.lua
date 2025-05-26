@@ -792,7 +792,14 @@ data:extend({
     place_result = "pm-logistic-repeater",
     stack_size = 25
   },
-
+  {
+    type = "item",
+    name = "pm-longer-handed-inserter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/longer-handed-inserter.png",
+    place_result = "pm-longer-handed-inserter",
+    stack_size = 50
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

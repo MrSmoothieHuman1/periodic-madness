@@ -8794,8 +8794,6 @@ data.raw["wall"]["stone-wall"].resistances =
 
 data.raw["tile"]["refined-concrete"].walking_speed_modifier = 1.65
 
-data.raw["inserter"]["long-handed-inserter"].rotation_speed = 0.02 * 1.5
-
 data.raw["locomotive"]["locomotive"].energy_source.burnt_inventory_size = 3
 data.raw["car"]["car"].energy_source.burnt_inventory_size = 2
 data.raw["car"]["tank"].energy_source.burnt_inventory_size = 2

@@ -59,6 +59,7 @@ Date: 2024-12-08
     - Added compatability with the Stack Inserter mod! the final two tiers of belt stacking bonus technologies arent finished, but should be fully implemented by 0.9
     - Also added native support for belt stacking, which'll work largely the same as the Stack Inserter mod.
     - Implemented octane fuel canisters, which act as advanced versions of the existing fuel canisters. Two of them exist, Vehicle and Industrial; naptha/kerosene make industrial and diesel/petrol make vehicle.
+    - Added longer-handed inserters, to deal with bigger and bigger recipes!
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -159,6 +160,7 @@ Date: 2024-12-08
     - Changed train stations to use green circuits instead of red, but increased their amount by one.
     - Made quality incompatable with PM, for now.
     - Moved fertiliser to alkali metal packs.
+    - Halved amount of coke needed for titanium oxide.
 
   Fixes:
     - Fixed the science pack item names captilisation.
