@@ -2841,7 +2841,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "pm-greenhouse",
-    icon_size = 64,
+    icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/buildings/greenhouse.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.4 + 0.1, result = "pm-greenhouse" },
@@ -2896,7 +2896,6 @@ data:extend({
         pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0, 2} }},
       },
       {
-
         production_type = "input",
         pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
@@ -2904,7 +2903,6 @@ data:extend({
         pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -2} }},
       },
       {
-
         production_type = "input",
         pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
@@ -2912,7 +2910,6 @@ data:extend({
         pipe_connections = {{ flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
       },
       {
-
         production_type = "output",
         pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
