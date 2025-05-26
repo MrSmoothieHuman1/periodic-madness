@@ -314,7 +314,7 @@ data.raw["technology"]["modules"].unit.time = 60
 data.raw["technology"]["modules"].unit.count = 150
 
 data.raw["technology"]["robotics"].unit.count = 200
-data.raw["technology"]["robotics"].prerequisites = {"pm-vanadium-oxide-redox-batteries", "electric-engine", "advanced-circuit"}
+data.raw["technology"]["robotics"].prerequisites = {"pm-vanadium-oxide-redox-batteries", "electric-engine"}
 data.raw["technology"]["robotics"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -387,7 +387,7 @@ data.raw["technology"]["night-vision-equipment"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["electric-engine"].prerequisites = {"pm-lubricating-oils-recipes"}
+data.raw["technology"]["electric-engine"].prerequisites = {"pm-lubricating-oils-recipes", "advanced-circuit"}
 data.raw["technology"]["electric-engine"].unit.ingredients =
 {
   {"automation-science-pack", 1},
