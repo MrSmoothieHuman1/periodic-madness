@@ -2,7 +2,7 @@
 --Penetrative: 
     -- -50%, -25%, 25%, 50% for biters
     -- 0%, 25%, 50%, 75% for spitters/worms
-    -- -25% for biter nests
+    -- -15% for biter nests
 --Phsyical:
     -- 0, 4/10%, 8/10%, 12/10% for biters
     -- 0, 0, 0, 0 for spitters
@@ -29,6 +29,7 @@
     -- 0 for nests
 
 --MARK: Small
+data.raw["unit"]["small-biter"].hide_resistances = false
 data.raw["unit"]["small-biter"].resistances =
 {
   {
@@ -40,6 +41,7 @@ data.raw["unit"]["small-biter"].resistances =
     pecent = -5
   }
 }
+data.raw["unit"]["small-spitter"].hide_resistances = false
 data.raw["unit"]["small-spitter"].resistances =
 {
   {
@@ -49,6 +51,7 @@ data.raw["unit"]["small-spitter"].resistances =
 }
 
 --MARK: Medium
+data.raw["unit"]["medium-biter"].hide_resistances = false
 data.raw["unit"]["medium-biter"].resistances =
 {
   {
@@ -65,6 +68,7 @@ data.raw["unit"]["medium-biter"].resistances =
     pecent = 12
   }
 }
+data.raw["unit"]["medium-spitter"].hide_resistances = false
 data.raw["unit"]["medium-spitter"].resistances =
 {
   {
@@ -87,8 +91,9 @@ data.raw["unit"]["medium-spitter"].resistances =
 }
 
 --MARK: Big
+data.raw["unit"]["big-biter"].hide_resistances = false
 data.raw["unit"]["big-biter"].resistances =
-  {
+{
     {
       type = "physical",
       decrease = 8,
@@ -106,9 +111,10 @@ data.raw["unit"]["big-biter"].resistances =
       type = "pm-penetrative",
       percent = 25
     }
-  }
-  data.raw["unit"]["big-spitter"].resistances =
-  {
+}
+data.raw["unit"]["big-spitter"].hide_resistances = false
+data.raw["unit"]["big-spitter"].resistances =
+{
     {
       type = "explosion",
       percent = 15
@@ -131,10 +137,11 @@ data.raw["unit"]["big-biter"].resistances =
       type = "pm-penetrative",
       percent = 50
     }
-  }
+}
 --MARK: Behemoth
-  data.raw["unit"]["behemoth-biter"].resistances =
-  {
+data.raw["unit"]["behemoth-biter"].hide_resistances = false
+data.raw["unit"]["behemoth-biter"].resistances =
+{
     {
       type = "physical",
       decrease = 12,
@@ -158,9 +165,10 @@ data.raw["unit"]["big-biter"].resistances =
         type = "poison",
         percent = 5
     }
-  }
-  data.raw["unit"]["behemoth-spitter"].resistances =
-  {
+}
+data.raw["unit"]["behemoth-spitter"].hide_resistances = false
+data.raw["unit"]["behemoth-spitter"].resistances =
+{
     {
       type = "explosion",
       decrease = 6,
@@ -185,4 +193,50 @@ data.raw["unit"]["big-biter"].resistances =
       type = "pm-penetrative",
       percent = 75
     }
-  }
+}
+
+--MARK: Spawners
+data.raw["unit-spawner"]["biter-spawner"].hide_resistances = false
+data.raw["unit-spawner"]["biter-spawner"].resistances =
+{
+    {
+      type = "pm-penetrative",
+      percent = -10
+    },
+    {
+        type = "physical",
+        decrease = 2,
+        percent = 15
+    },
+    {
+        type = "fire",
+        decrease = 3,
+        percent = 60
+    },
+    {
+        type = "explosion",
+        decrease = 5
+    }
+}
+data.raw["unit-spawner"]["spitter-spawner"].hide_resistances = false
+data.raw["unit-spawner"]["spitter-spawner"].resistances =
+{
+    {
+      type = "pm-penetrative",
+      percent = -10
+    },
+    {
+        type = "physical",
+        decrease = 2,
+        percent = 15
+    },
+    {
+        type = "fire",
+        decrease = 3,
+        percent = 60
+    },
+    {
+        type = "explosion",
+        decrease = 5
+    }
+}
