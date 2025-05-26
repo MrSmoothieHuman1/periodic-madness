@@ -7,6 +7,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/basic-basic-wood-growth.png",
     category = "pm-washing",
+    subgroup = "pm-greenhousing-rnm",
+    order = "A",
     energy_required = 30,
     enabled = false,
     ingredients =
