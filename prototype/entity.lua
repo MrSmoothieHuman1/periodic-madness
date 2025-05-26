@@ -8678,6 +8678,61 @@ data.raw["combat-robot"]["defender"].time_to_live = 60 * 60
 
 data.raw["pump"]["pump"].pumping_speed = 100
 
+data.raw["unit"]["small-biter"].resistances =
+{
+
+  {
+    type = "pm-penetrative",
+    percent = -50
+  },
+  {
+    type = "explosion",
+    pecent = -5
+  }
+}
+data.raw["unit"]["small-spitter"].resistances =
+{
+  {
+    type = "pm-penetrative",
+    percent = -25
+  },
+  {
+    type = "acid",
+    percent = 2.5
+  },
+}
+data.raw["unit"]["medium-biter"].resistances =
+{
+  {
+    type = "physical",
+    decrease = 4,
+    percent = 10
+  },
+  {
+    type = "pm-penetrative",
+    percent = -25
+  },
+  {
+    type = "explosion",
+    pecent = 10
+  }
+}
+data.raw["unit"]["medium-spitter"].resistances =
+{
+  {
+    type = "pm-penetrative",
+    percent = 0
+  },
+  {
+    type = "explosion",
+    pecent = 10
+  },
+  {
+    type = "acid",
+    decrease = 2,
+    percent = 5
+  },
+}
 data.raw["unit"]["big-biter"].resistances =
   {
     {
@@ -8692,6 +8747,10 @@ data.raw["unit"]["big-biter"].resistances =
     {
       type = "fire",
       percent = 15
+    },
+    {
+      type = "pm-penetrative",
+      percent = 25
     }
   }
   data.raw["unit"]["big-spitter"].resistances =
@@ -8711,9 +8770,13 @@ data.raw["unit"]["big-biter"].resistances =
     },
     {
       type = "acid",
-      decrease = 10 * 1.5,
-      percent = 25 * 1.4
+      decrease = 10,
+      percent = 25
     },
+    {
+      type = "pm-penetrative",
+      percent = 50
+    }
   }
   data.raw["unit"]["behemoth-biter"].resistances =
   {
@@ -8731,6 +8794,10 @@ data.raw["unit"]["big-biter"].resistances =
       type = "fire",
       decrease = 10,
       percent = 25
+    },
+    {
+      type = "pm-penetrative",
+      percent = 50
     }
   }
   data.raw["unit"]["behemoth-spitter"].resistances =
@@ -8751,8 +8818,12 @@ data.raw["unit"]["big-biter"].resistances =
     },
     {
       type = "acid",
-      decrease = 40 * 1.5,
-      percent = 50 * 1.4
+      decrease = 40,
+      percent = 50
+    },
+    {
+      type = "pm-penetrative",
+      percent = 75
     }
   }
 
