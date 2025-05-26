@@ -102,6 +102,8 @@ require("prototype.elements.004-beryllium")
 require("prototype.elements.038-strontium")
 require("prototype.elements.088-radium")
 
+require("prototype.damagetypes")
+
 require("prototype.entity")
 require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files
 require("prototype.entity.heat-pipes")
@@ -125,7 +127,6 @@ require("prototype.itemgroups")
 require("prototype.equipment")
 require("prototype.equipment-grid")
 require("prototype.virtual-signals")
-require("prototype.damagetypes")
 
 require("compatibility.icon-badges")
 require("compatibility.DLC.belt-stacking")
