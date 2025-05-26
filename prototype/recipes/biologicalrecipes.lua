@@ -9,14 +9,14 @@ data:extend({
     category = "pm-washing",
     energy_required = 30,
     enabled = false,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("wood", 5),
       PM.ingredient("stone", 6),
       PM.ingredient("water", 20, "fluid"),
       PM.ingredient("pm-oxygen-gas", 10, "fluid")
     },
-    results = 
+    results =
     {
       PM.product_range("wood", 5, 10)
     }
