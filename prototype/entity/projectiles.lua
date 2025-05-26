@@ -304,8 +304,12 @@ data:extend({
       target_effects =
       {
         type = "damage",
-        damage = {amount = 12, type = "pm-penetrative"}
-      }
+        damage = {amount = 2, type = "physical"}
+      },
+      {
+        type = "damage",
+        damage = {amount = 16, type = "pm-penetrative"}
+      },
     }
   },
   animation =
@@ -336,11 +340,7 @@ data:extend({
       {
         {
           type = "damage",
-          damage = {amount = 2, type = "physical"}
-        },
-        {
-          type = "damage",
-          damage = {amount = 16, type = "pm-penetrative"}
+          damage = {amount = 14, type = "pm-penetrative"}
         },
         {
           type = "create-sticker",
@@ -374,11 +374,11 @@ data.raw["projectile"]["shotgun-pellet"].action =
     {
       {
         type = "damage",
-        damage = {amount = 3, type = "physical"}
+        damage = {amount = 4, type = "physical"}
       },
       {
         type = "damage",
-        damage = {amount = 5, type = "pm-penetrative"}
+        damage = {amount = 4, type = "pm-penetrative"}
       }
     }
   }
@@ -395,11 +395,11 @@ data.raw["projectile"]["piercing-shotgun-pellet"].action =
     {
       {
         type = "damage",
-        damage = {amount = 4, type = "physical"}
+        damage = {amount = 5, type = "physical"}
       },
       {
         type = "damage",
-        damage = {amount = 6, type = "pm-penetrative"}
+        damage = {amount = 5, type = "pm-penetrative"}
       },
     }
   }
