@@ -1981,6 +1981,30 @@ data:extend({
     base_color = {r = 0.7, g = 0.7, b = 0.7},
     flow_color = {r = 0.7, g = 0.7, b = 0.7}
   },
+  {
+    type = "fluid",
+    name = "pm-hot-coolant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/coolant.png",
+    subgroup = "pm-bismuth-ptm",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.647, g = 0.82, b = 0.8 },
+    flow_color = {r = 0.647, g = 0.82, b = 0.8 },
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-hot-light-coolant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/light-coolant.png",
+    subgroup = "pm-bismuth-ptm",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.547, g = 0.9, b = 0.8 },
+    flow_color = {r = 0.547, g = 0.9, b = 0.8 },
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",

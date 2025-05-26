@@ -1254,25 +1254,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-coolant",
-    category = "pm-cooling",
-    subgroup = "pm-bismuth-ptm",
-    order = "ab",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-ethylene-glycol", 10, "fluid"),
-      PM.ingredient("pm-nitrogen-gas", 10, "fluid"),
-    },
-    results =
-    {
-      PM.product("pm-coolant", 10, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-solar-panel-equipment-2",
     energy_required = 20,
     enabled = false,
@@ -3620,23 +3601,6 @@ data:extend({
       PM.catalyst_range_chance("pm-cobalt-catalyst", 2, 3, 0.8, 2),
       PM.product_range_chance("pm-catalyst-container", 0, 1, 0.2),
       PM.product_range("pm-hydrochloric-acid", 8, 12, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-light-coolant",
-    category = "pm-cooling",
-    energy_required = 4,
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-polydimethylsiloxane", 8, "fluid"),
-      PM.ingredient("pm-coolant", 10, "fluid"),
-    },
-    results =
-    {
-      PM.product("pm-light-coolant", 10, "fluid")
     }
   },
   {
