@@ -7334,7 +7334,7 @@ data:extend({
   type = "reactor",
   name = "pm-RTG",
   icon = "__periodic-madness__/graphics/icons/buildings/RTG.png",
-  icon_size = 128,
+  icon_size = 64,
   flags = { "placeable-neutral", "player-creation" },
   minable = { mining_time = 0.7, result = "pm-RTG" },
   max_health = 1200,
@@ -7987,7 +7987,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "___periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
             priority = "extra-high",
             width = 216,
             height = 301,

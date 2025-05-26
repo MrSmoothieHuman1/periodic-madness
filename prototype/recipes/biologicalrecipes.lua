@@ -7,7 +7,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/basic-basic-wood-growth.png",
     category = "pm-washing",
-    energy_required = 45,
+    energy_required = 30,
     enabled = false,
     ingredients = 
     {
@@ -18,7 +18,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("wood", 5, 7)
+      PM.product_range("wood", 5, 10)
     }
   },
   {
@@ -38,7 +38,7 @@ data:extend({
     },
     results =
     {
-      PM.product("wood", 50)
+      PM.product_range("wood", 50, 60)
     }
   },
   {
@@ -54,14 +54,14 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-carbon-dioxide-gas", 50, "fluid"),
-      PM.ingredient("pm-oxygen-gas", 12, "fluid"),
+      PM.ingredient("pm-oxygen-gas", 12.5, "fluid"),
       PM.ingredient("water", 25, "fluid"),
       PM.ingredient("wood", 10),
-      PM.ingredient("pm-fertiliser", 1)
+      PM.ingredient("pm-fertiliser", 2)
     },
     results =
     {
-      PM.product("wood", 50)
+      PM.product_range("wood", 50, 65)
     }
   },
 
