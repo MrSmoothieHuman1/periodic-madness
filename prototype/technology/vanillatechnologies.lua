@@ -314,7 +314,7 @@ data.raw["technology"]["modules"].unit.time = 60
 data.raw["technology"]["modules"].unit.count = 150
 
 data.raw["technology"]["robotics"].unit.count = 200
-data.raw["technology"]["robotics"].prerequisites = {"pm-vanadium-oxide-redox-batteries", "electric-engine"}
+data.raw["technology"]["robotics"].prerequisites = {"pm-vanadium-oxide-redox-batteries", "electric-engine", "advanced-circuit"}
 data.raw["technology"]["robotics"].unit.ingredients =
 {
   {"automation-science-pack", 1},

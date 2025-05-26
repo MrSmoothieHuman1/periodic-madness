@@ -185,6 +185,7 @@ Date: 2024-12-08
     - Corrected the ordering of the fuel subgroup.
     - Fixed electric furnace 1's not being behind red circuits in the tech tree.
     - Unhid molybdenum TM leeching from the player.
+    - Made robotics prerequisite red circuits.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168
