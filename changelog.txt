@@ -158,6 +158,7 @@ Date: 2024-12-08
     - Forced by wube to change chain signals to use orange circuits instead of red.
     - Changed train stations to use green circuits instead of red, but increased their amount by one.
     - Made quality incompatable with PM, for now.
+    - Moved fertiliser to alkali metal packs.
 
   Fixes:
     - Fixed the science pack item names captilisation.

@@ -1553,18 +1553,19 @@ data:extend({
       PM.unlock_recipe("pm-fertiliser"),
       PM.unlock_recipe("pm-fertilised-wood-growth"),
     },
-    prerequisites = {"pm-phosphor-processing", "pm-greenhouse", "pm-atmospheric-ammonia"},
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-greenhouse"},
     unit =
     {
-      count = 250,
+      count = 350,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1}
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1}
       },
-      time = 45
+      time = 60
     }
   },
   {
