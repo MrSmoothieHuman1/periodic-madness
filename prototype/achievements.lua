@@ -14,7 +14,8 @@ data:extend({
     name = "pm-use-more-gun",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/achievements/use-more-gun.png",
-    to_use = "defender",
+    to_use = "defender-capsule",
+    limit_quality = "normal",
     amount = 1,
   }
 })

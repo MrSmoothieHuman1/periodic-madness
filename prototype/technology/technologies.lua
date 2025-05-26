@@ -4903,7 +4903,7 @@ data:extend({
     type = "technology",
     name = "pm-longer-handed-inserter",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/longer-hnaded-inserter.png",
+    icon = "__periodic-madness__/graphics/technology/longer-handed-inserter.png",
     effects = 
     {
       PM.unlock_recipe("pm-longer-handed-inserter")
