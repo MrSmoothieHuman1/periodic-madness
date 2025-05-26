@@ -6,7 +6,27 @@
 --Phsyical:
     -- 0, 4/10%, 8/10%, 12/10% for biters
     -- 0, 0, 0, 0 for spitters
-    -- 
+    -- 0, 5/0%, 10/0%, 10/0% for worms
+    -- 2/15% for nests
+--Fire
+    -- 0, 0, 15%, 10/25% for biters
+    -- 0, 0, 5%, 2/15% for spitters
+    -- 0, 2/50%, 3/70%, 3/70% for worms
+    -- 3/60% for nests
+-- Explosion:
+    -- 0, 10%, 12%, 12/10% for biters
+    -- 0, 10%, 15%, 6/30% for spitters
+    -- 0, 5/15%, 10/30%, 10/30% for worms
+    -- 5 for nests
+--Acid:
+    -- 0, 0, 0, 0 for biters
+    -- 2.5%, 2/5%, 5/25%, 10/50% for spitters/worms
+    -- 0 for nests
+--Posion:
+    -- 0, 0, 0, 5% for biters
+    -- 0, 2.5, 2/5%, 10/25% for spitters
+    -- 0, 0, 0, 0 for worms
+    -- 0 for nests
 
 --MARK: Small
 data.raw["unit"]["small-biter"].resistances =
@@ -42,7 +62,7 @@ data.raw["unit"]["medium-biter"].resistances =
   },
   {
     type = "explosion",
-    pecent = 10
+    pecent = 12
   }
 }
 data.raw["unit"]["medium-spitter"].resistances =
@@ -55,6 +75,10 @@ data.raw["unit"]["medium-spitter"].resistances =
     type = "acid",
     decrease = 2,
     percent = 5
+  },
+  {
+    type = "poison",
+    percent = 2.5
   },
   {
     type = "pm-penetrative",
@@ -72,7 +96,7 @@ data.raw["unit"]["big-biter"].resistances =
     },
     {
       type = "explosion",
-      percent = 10
+      percent = 15
     },
     {
       type = "fire",
@@ -94,13 +118,13 @@ data.raw["unit"]["big-biter"].resistances =
       percent = 5
     },
     {
-      type = "poison",
-      decrease = 10,
-      percent = 25
+        type = "poison",
+        decrease = 2,
+        percent = 5
     },
     {
       type = "acid",
-      decrease = 10,
+      decrease = 5,
       percent = 25
     },
     {
@@ -129,12 +153,17 @@ data.raw["unit"]["big-biter"].resistances =
     {
       type = "pm-penetrative",
       percent = 50
+    },
+    {
+        type = "poison",
+        percent = 5
     }
   }
   data.raw["unit"]["behemoth-spitter"].resistances =
   {
     {
       type = "explosion",
+      decrease = 6,
       percent = 30
     },
     {
@@ -144,12 +173,12 @@ data.raw["unit"]["big-biter"].resistances =
     },
     {
       type = "poison",
-      decrease = 15,
-      percent = 40
+      decrease = 5,
+      percent = 25
     },
     {
       type = "acid",
-      decrease = 40,
+      decrease = 10,
       percent = 50
     },
     {

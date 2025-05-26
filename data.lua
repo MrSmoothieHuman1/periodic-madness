@@ -125,6 +125,7 @@ require("prototype.itemgroups")
 require("prototype.equipment")
 require("prototype.equipment-grid")
 require("prototype.virtual-signals")
+require("prototype.damagetypes")
 
 require("compatibility.icon-badges")
 require("compatibility.DLC.belt-stacking")
