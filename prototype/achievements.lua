@@ -8,5 +8,13 @@ data:extend({
     amount = 1,
     item_product = "pm-bismuth-ore",
     limited_to_one_game = true,
+  },
+  {
+    type = "use-item-achievement",
+    name = "pm-use-more-gun",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/achievements/use-more-gun.png",
+    to_use = "defender",
+    amount = 1,
   }
 })
