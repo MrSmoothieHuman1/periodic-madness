@@ -1476,6 +1476,24 @@ data:extend({
       PM.product("pm-logistic-repeater", 1)
     }
   },
+    {
+    type = "recipe",
+    name = "pm-longer-handed-inserter",
+    enabled = false,
+    category = "crafting-with-fluid",
+    energy_required = 1,
+    ingredients = 
+    {
+      PM.ingredient("long-handed-inserter", 1),
+      PM.ingredient("electric-engine-unit", 1),
+      PM.ingredient("pm-heavyweight-framing", 4),
+      PM.ingredient("pm-heavy-lubricant", 1.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-longer-handed-inserter", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
