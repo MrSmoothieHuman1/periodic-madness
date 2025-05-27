@@ -374,11 +374,11 @@ data.raw["projectile"]["shotgun-pellet"].action =
     {
       {
         type = "damage",
-        damage = {amount = 4, type = "physical"}
+        damage = {amount = 3, type = "physical"}
       },
       {
         type = "damage",
-        damage = {amount = 4, type = "pm-penetrative"}
+        damage = {amount = 3, type = "pm-penetrative"}
       }
     }
   }
@@ -395,11 +395,11 @@ data.raw["projectile"]["piercing-shotgun-pellet"].action =
     {
       {
         type = "damage",
-        damage = {amount = 5, type = "physical"}
+        damage = {amount = 4, type = "physical"}
       },
       {
         type = "damage",
-        damage = {amount = 5, type = "pm-penetrative"}
+        damage = {amount = 4, type = "pm-penetrative"}
       },
     }
   }
