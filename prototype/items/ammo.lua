@@ -224,7 +224,7 @@ data:extend({
       },
       {
         type = "direct",
-        repeat_count = 2,
+        repeat_count = 3,
         action_delivery =
         {
           type = "projectile",
@@ -271,7 +271,7 @@ data:extend({
       },
       {
         type = "direct",
-        repeat_count = 1,
+        repeat_count = 2,
         action_delivery =
         {
           type = "projectile",

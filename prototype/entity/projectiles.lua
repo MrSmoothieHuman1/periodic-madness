@@ -230,11 +230,11 @@ data:extend({
       {
         {
           type = "damage",
-          damage = {amount = 2, type = "physical"}
+          damage = {amount = 4, type = "physical"}
         },
         {
           type = "damage",
-          damage = {amount = 14, type = "pm-penetrative"}
+          damage = {amount = 12, type = "pm-penetrative"}
         },
       }
     }
@@ -303,12 +303,14 @@ data:extend({
       type = "instant",
       target_effects =
       {
-        type = "damage",
-        damage = {amount = 2, type = "physical"}
-      },
-      {
-        type = "damage",
-        damage = {amount = 16, type = "pm-penetrative"}
+        {
+          type = "damage",
+          damage = {amount = 2, type = "physical"},
+        },
+        {
+          type = "damage",
+          damage = {amount = 18, type = "pm-penetrative"}
+        }
       },
     }
   },
