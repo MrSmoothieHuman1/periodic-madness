@@ -242,9 +242,9 @@ data.raw["unit-spawner"]["spitter-spawner"].resistances =
 }
 
 --MARK: Worms
-data.raw["turret"]["medium-worm"].hide_resistances = false
-table.insert(data.raw["turret"]["medium-worm"].resistances, {type = "pm-penetrative", percent = 25})
-data.raw["turret"]["big-worm"].hide_resistances = false
-table.insert(data.raw["turret"]["big-worm"].resistances, {type = "pm-penetrative", percent = 50})
-data.raw["turret"]["behemoth-worm"].hide_resistances = false
-table.insert(data.raw["turret"]["behemoth-worm"].resistances, {type = "pm-penetrative", percent = 75})
+data.raw["turret"]["medium-worm-turret"].hide_resistances = false
+table.insert(data.raw["turret"]["medium-worm-turret"].resistances, {type = "pm-penetrative", percent = 25})
+data.raw["turret"]["big-worm-turret"].hide_resistances = false
+table.insert(data.raw["turret"]["big-worm-turret"].resistances, {type = "pm-penetrative", percent = 50})
+data.raw["turret"]["behemoth-worm-turret"].hide_resistances = false
+table.insert(data.raw["turret"]["behemoth-worm-turret"].resistances, {type = "pm-penetrative", percent = 75})
