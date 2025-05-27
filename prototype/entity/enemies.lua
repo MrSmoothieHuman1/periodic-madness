@@ -204,18 +204,18 @@ data.raw["unit-spawner"]["biter-spawner"].resistances =
       percent = -10
     },
     {
-        type = "physical",
-        decrease = 2,
-        percent = 15
+      type = "physical",
+      decrease = 2,
+      percent = 15
     },
     {
-        type = "fire",
-        decrease = 3,
-        percent = 60
+      type = "fire",
+      decrease = 3,
+      percent = 60
     },
     {
-        type = "explosion",
-        decrease = 5
+      type = "explosion",
+      decrease = 5
     }
 }
 data.raw["unit-spawner"]["spitter-spawner"].hide_resistances = false
@@ -226,17 +226,25 @@ data.raw["unit-spawner"]["spitter-spawner"].resistances =
       percent = -10
     },
     {
-        type = "physical",
-        decrease = 2,
-        percent = 15
+      type = "physical",
+      decrease = 2,
+      percent = 15
     },
     {
-        type = "fire",
-        decrease = 3,
-        percent = 60
+      type = "fire",
+      decrease = 3,
+      percent = 60
     },
     {
-        type = "explosion",
-        decrease = 5
+      type = "explosion",
+      decrease = 5
     }
 }
+
+--MARK: Worms
+data.raw["turret"]["medium-worm"].hide_resistances = false
+table.insert(data.raw["turret"]["medium-worm"].resistances, {type = "pm-penetrative", percent = 25})
+data.raw["turret"]["big-worm"].hide_resistances = false
+table.insert(data.raw["turret"]["big-worm"].resistances, {type = "pm-penetrative", percent = 50})
+data.raw["turret"]["behemoth-worm"].hide_resistances = false
+table.insert(data.raw["turret"]["behemoth-worm"].resistances, {type = "pm-penetrative", percent = 75})
