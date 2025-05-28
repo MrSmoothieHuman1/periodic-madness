@@ -168,6 +168,7 @@ Date: 2024-12-08
     - Moved engines back to fuel canisters, instead of being behind kasethal, which also moves trains back.
     - Lowered a bunch of recipes amounts of sulfuric acid.
     - Increased the amount of sulfuric acid you get from SO2 cracking from 15 to 20.
+    - Made vanadium oxide take 2 vanadium and 5 oxygen, instead of 4 vanadium.
 
   Fixes:
     - Fixed the science pack item names captilisation.
