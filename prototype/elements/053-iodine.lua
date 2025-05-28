@@ -14,7 +14,7 @@ data:extend({
     {
       PM.ingredient("pm-biomass", 5),
       PM.ingredient("pm-brine", 40, "fluid"),
-      PM.ingredient("sulfuric-acid", 20, "fluid")
+      PM.ingredient("sulfuric-acid", 15, "fluid")
     },
     results =
     {
