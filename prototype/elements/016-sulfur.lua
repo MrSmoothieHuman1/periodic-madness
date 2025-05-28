@@ -46,7 +46,7 @@ data:extend({
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
       PM.product_range("water", 1.2, 2, "fluid"),
       PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 2),
-      PM.product_chance("pm-catalyst-container", 2, 0.15)
+      PM.product_chance("pm-catalyst-container", 2, 0.25)
     }
   },
   {
@@ -68,8 +68,8 @@ data:extend({
     results =
     {
       PM.product("sulfuric-acid", 20, "fluid"),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.7, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.3, 1)
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.75, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.25, 1)
     }
   },
   {
