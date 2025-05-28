@@ -175,7 +175,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-sulfur-trioxide", 5, "fluid"),
-      PM.ingredient("sulfuric-acid", 10, "fluid")
+      PM.ingredient("sulfuric-acid", 5, "fluid")
     },
     results =
     {
