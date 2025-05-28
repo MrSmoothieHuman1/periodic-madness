@@ -1297,6 +1297,20 @@ data:extend({
     group = "logistics",
     order = "bb"
   },
+
+  --MARK: Fluid tab
+  {
+    type = "item-subgroup",
+    name = "pm-water",
+    group = "fluids",
+    order = "a"
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-oil",
+    group = "fluids",
+    order = "b"
+  },
 })
 
 data.raw["item-subgroup"]["science-pack"].order = "x"
