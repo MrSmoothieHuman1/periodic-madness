@@ -669,7 +669,7 @@ local send_levels = {
 function PM.compat_send(recipient, msg, print_settings)
   if has_better_chat == nil then
     local better_chat = remote.interfaces["better-chat"]
-    has_better_chat = better_chat and better_chat["send"]
+		has_better_chat = better_chat and better_chat["send"] or false
   end
 
   if not has_better_chat then return recipient.print(msg, print_settings) end
