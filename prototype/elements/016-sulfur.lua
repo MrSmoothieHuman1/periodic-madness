@@ -205,5 +205,5 @@ data:extend({
   },
 })
 
-data.raw["item"]["sulfur"].subgroup = "pm-sulfur-rmm"
+data.raw["item"]["sulfur"].subgroup = "pm-sulfur-rnm"
 data.raw["item"]["sulfur"].order = "a"
