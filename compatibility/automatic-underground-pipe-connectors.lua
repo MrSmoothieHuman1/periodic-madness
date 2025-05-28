@@ -8,7 +8,7 @@ local handler = {events={}}
 local pipe = "pipe"
 local stainless_pipe = "pm-stainless-steel-pipe"
 
-local function PM_pipe_undergrounds()
+local function update_automatic_undergrounds()
     local lookup =
     {
         ["pipe-to-ground"] = {item = pipe, entity = pipe},
@@ -18,7 +18,7 @@ local function PM_pipe_undergrounds()
     remote.call("automatic-underground-pipe-connectors", "add_undergrounds", lookup)
 end
 
-handler.on_init = PM_pipe_undergrounds
-handler.on_configuration_changed = PM_pipe_undergrounds
+handler.on_init = update_automatic_undergrounds
+handler.on_configuration_changed = update_automatic_undergrounds
 
 return handler
