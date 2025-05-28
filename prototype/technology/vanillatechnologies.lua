@@ -162,7 +162,7 @@ data.raw["technology"]["engine"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
-data.raw["technology"]["engine"].prerequisites = {"pm-diesel-fuel-canisters", "pm-petrol-fuel-canisters", "pm-kerosene-fuel-canisters"}
+data.raw["technology"]["engine"].prerequisites = {"pm-diesel-fuel-canisters", "pm-petrol-fuel-canisters", "pm-kerosene-fuel-canisters", "pm-platinum-processing"}
 
 data.raw["technology"]["railway"].unit =
 {
