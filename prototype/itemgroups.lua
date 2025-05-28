@@ -1305,7 +1305,7 @@ data:extend({
     group = "fluids",
     order = "a"
   },
-    {
+  {
     type = "item-subgroup",
     name = "pm-oil",
     group = "fluids",

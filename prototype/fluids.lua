@@ -29,8 +29,8 @@ data:extend({
     name = "pm-acidic-water",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
-    subgroup = "pm-acids",
-    order = "c",
+    subgroup = "pm-water",
+    order = "d",
     default_temperature = 15,
     base_color = {r = 0.16, g = 0.89, b = 0.69},
     flow_color = {r = 0.16, g = 0.69, b = 0.29},
@@ -52,6 +52,8 @@ data:extend({
     name = "pm-seawater",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/seawater.png",
+    subgroup = "pm-water",
+    order = "c",
     default_temperature = 15,
     heat_capacity = "1kJ",
     base_color = {r = 0.3, g = 0.69, b = 0.98},
@@ -694,8 +696,8 @@ data:extend({
     name = "pm-water-vapour",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/water-vapour.png",
-    subgroup = "fluid",
-    order = "a",
+    subgroup = "pm-water",
+    order = "b",
     default_temperature = 15,
     base_color = {r = 0.6, g = 0.8, b = 0.6},
     flow_color = {r = 0.6, g = 0.8, b = 0.6},
@@ -2058,3 +2060,8 @@ data.raw["fluid"]["petroleum-gas"].auto_barrel = false
 data.raw["fluid"]["heavy-oil"].auto_barrel = false
 
 data.raw["fluid"]["water"].fuel_value = "1MJ"
+data.raw["fluid"]["water"].subgroup = "pm-water"
+data.raw["fluid"]["water"].order = "a"
+
+data.raw["fluid"]["crude-oil"].subgroup = "pm-oil"
+data.raw["fluid"]["crude-oil"].order = "a"
