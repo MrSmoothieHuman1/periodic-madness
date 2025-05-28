@@ -84,7 +84,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 5, "fluid"),
       PM.ingredient("pm-chlorine", 10, "fluid")
     },
     results =
@@ -125,7 +125,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
-      PM.ingredient("sulfuric-acid", 8, "fluid"),
+      PM.ingredient("sulfuric-acid", 2.5, "fluid"),
       PM.ingredient("pm-ammonium-chloride", 4)
     },
     results =
