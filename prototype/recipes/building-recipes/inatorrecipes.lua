@@ -32,7 +32,7 @@ data:extend({
     category = "pm-moltening",
     ingredients =
     {
-      PM.ingredient("sulfuric-acid", 30, "fluid"),
+      PM.ingredient("sulfuric-acid", 20, "fluid"),
       PM.ingredient("copper-plate", 10),
     },
     results =
