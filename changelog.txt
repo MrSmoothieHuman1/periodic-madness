@@ -165,6 +165,7 @@ Date: 2024-12-08
     - Made quality incompatable with PM, for now.
     - Moved fertiliser to alkali metal packs.
     - Halved amount of coke needed for titanium oxide.
+    - Moved engines back to fuel canisters, instead of being behind kasethal, which also moves trains back.
 
   Fixes:
     - Fixed the science pack item names captilisation.

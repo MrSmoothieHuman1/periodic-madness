@@ -375,7 +375,7 @@ data.raw["recipe"]["engine-unit"].ingredients =
   PM.ingredient("pm-stainless-steel-alloy", 2),
   PM.ingredient("pm-corrosion-resistant-tubing", 6),
   PM.ingredient("pm-platinum-plate", 3),
-  PM.ingredient("pm-kasethal-plate", 3)
+  PM.ingredient("pm-lightweight-framing", 4)
 }
 data.raw["recipe"]["pipe"].ingredients =
 {

@@ -44,7 +44,7 @@ data.raw["technology"]["sulfur-processing"].effects =
   PM.unlock_recipe("pm-sulfur-dioxide-cracking"),
 }
 
-data.raw["technology"]["sulfur-processing"].prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes"}
+data.raw["technology"]["sulfur-processing"].prerequisites = {"pm-fuel-oils-recipes", "pm-kerosene-recipes", "pm-oil-residual-recipes", "pm-cobalt-processing"}
 data.raw["technology"]["sulfur-processing"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -162,7 +162,7 @@ data.raw["technology"]["engine"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
-data.raw["technology"]["engine"].prerequisites = {"pm-vanadium-chromium-alloying"}
+data.raw["technology"]["engine"].prerequisites = {"pm-diesel-fuel-canisters", "pm-petrol-fuel-canisters", "pm-kerosene-fuel-canisters"}
 
 data.raw["technology"]["railway"].unit =
 {
@@ -387,7 +387,7 @@ data.raw["technology"]["night-vision-equipment"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["electric-engine"].prerequisites = {"pm-lubricating-oils-recipes", "advanced-circuit"}
+data.raw["technology"]["electric-engine"].prerequisites = {"pm-lubricating-oils-recipes", "advanced-circuit", "engine", "pm-vanadium-chromium-alloying"}
 data.raw["technology"]["electric-engine"].unit.ingredients =
 {
   {"automation-science-pack", 1},
