@@ -166,6 +166,8 @@ Date: 2024-12-08
     - Moved fertiliser to alkali metal packs.
     - Halved amount of coke needed for titanium oxide.
     - Moved engines back to fuel canisters, instead of being behind kasethal, which also moves trains back.
+    - Lowered a bunch of recipes amounts of sulfuric acid.
+    - Increased the amount of sulfuric acid you get from SO2 cracking from 15 to 20.
 
   Fixes:
     - Fixed the science pack item names captilisation.
