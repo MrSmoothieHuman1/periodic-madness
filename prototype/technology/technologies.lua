@@ -4923,6 +4923,30 @@ data:extend({
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "pm-better-vanadium-oxide",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      
+    },
+    prerequisites = {"pm-tempature-inators-3"},
+    unit = 
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1}
+      },
+      time = 80
+    }
+  },
 
   {
     type = "technology",
