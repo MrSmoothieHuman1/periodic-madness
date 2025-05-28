@@ -1523,6 +1523,7 @@ data:extend({
     name = "pm-crystal-slurry",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/crystal-slurry.png",
+    subgroup = "fluid"
     default_temperature = 15,
     auto_barrel = false,
     base_color = {r = 0.29, g = 0.168, b = 0.458},
@@ -1848,8 +1849,6 @@ data:extend({
     name = "pm-syngas",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/syngas.png",
-    subgroup = "pm-strontium-aem",
-    order = "e",
     default_temperature = 15,
     base_color = {r = 0.3, g = 0.1, b = 0.1},
     flow_color = {r = 0.3, g = 0.1, b = 0.1},
