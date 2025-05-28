@@ -253,7 +253,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sulfur-dioxide.png",
     subgroup = "pm-sulfur-rnm",
-    order = "ba",
+    order = "b",
     default_temperature = 15,
     base_color = {r = 1, g = 1, b = 0},
     flow_color = {r = 1, g = 1, b = 0},
@@ -745,7 +745,7 @@ data:extend({
     name = "pm-chromic-acid",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
-    subgroup = "pm-acids",
+    subgroup = "pm-chromium-tm",
     default_temperature = 15,
     base_color = {r = 0.82, g = 0, b = 0.87},
     flow_color = {r = 0.82, g = 0, b = 0.87},
@@ -1362,6 +1362,8 @@ data:extend({
     name = "pm-sulfur-trioxide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sulfur-trioxide.png",
+    subgroup = "pm-sulfur-rnm",
+    order = "d",
     default_temperature = 15,
     base_color = {r = 1, g = 0.8, b = 0},
     flow_color = {r = 1, g = 0.8, b = 0},
@@ -1372,6 +1374,8 @@ data:extend({
     name = "pm-oleum",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/oleum.png",
+    subgroup = "pm-sulfur-rnm",
+    order = "e",
     default_temperature = 15,
     base_color = {r = 1, g = 1, b = 0},
     flow_color = {r = 1, g = 1, b = 0},
@@ -1523,7 +1527,7 @@ data:extend({
     name = "pm-crystal-slurry",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/crystal-slurry.png",
-    subgroup = "fluid"
+    subgroup = "fluid",
     default_temperature = 15,
     auto_barrel = false,
     base_color = {r = 0.29, g = 0.168, b = 0.458},
@@ -1942,6 +1946,8 @@ data:extend({
     name = "pm-sulfuric-waste-water",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-waste-water.png",
+    subgroup = "pm-sulfur-rnm",
+    order = "f",
     default_temperature = 15,
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}
@@ -2054,6 +2060,8 @@ data:extend({
 }--[[@as data.FluidPrototype[] ]])
 
 data.raw["fluid"]["sulfuric-acid"].icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-acid.png"
+data.raw["fluid"]["sulfuric-acid"].subgroup = "pm-sulfur-rnm"
+data.raw["fluid"]["sulfuric-acid"].order = "c"
 data.raw["fluid"]["light-oil"].auto_barrel = false
 data.raw["fluid"]["petroleum-gas"].auto_barrel = false
 data.raw["fluid"]["heavy-oil"].auto_barrel = false

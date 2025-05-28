@@ -1311,6 +1311,12 @@ data:extend({
     group = "fluids",
     order = "b"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-acid",
+    group = "fluids",
+    order = "c"
+  }
 })
 
 data.raw["item-subgroup"]["science-pack"].order = "x"
