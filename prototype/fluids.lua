@@ -96,6 +96,8 @@ data:extend({
     name = "pm-oil-residuals",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+    subgroup = "pm-oil",
+    order = "i",
     default_temperature = 15,
     base_color = {r = 0, g = 0, b = 0},
     flow_color = {r = 0, g = 0, b = 0}
@@ -105,6 +107,8 @@ data:extend({
     name = "pm-fuel-oils",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
+    subgroup = "pm-oil",
+    order = "h",
     default_temperature = 15,
     base_color = {r = 0.61, g = 0.4, b = 0},
     flow_color = {r = 0.61, g = 0.4, b = 0}
@@ -114,6 +118,8 @@ data:extend({
     name = "pm-lubricating-oils",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
+    subgroup = "pm-oil",
+    order = "g",
     default_temperature = 15,
     base_color = {r = 0, g = 0.4, b = 0},
     flow_color = {r = 0, g = 0.4, b = 0}
@@ -123,6 +129,8 @@ data:extend({
     name = "pm-diesel",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+    subgroup = "pm-oil",
+    order = "f",
     default_temperature = 15,
     base_color = {r = 0.333, g = 0.333, b = 0.332},
     flow_color = {r = 0.333, g = 0.333, b = 0.332}
@@ -132,6 +140,8 @@ data:extend({
     name = "pm-kerosene",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+    subgroup = "pm-oil",
+    order = "e",
     default_temperature = 15,
     base_color = {r = 0.666, g = 0.666, b = 0.666},
     flow_color = {r = 0.666, g = 0.666, b = 0.666}
@@ -141,6 +151,8 @@ data:extend({
     name = "pm-naptha",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+    subgroup = "pm-oil",
+    order = "d",
     default_temperature = 15,
     base_color = {r = 0, g = 0, b = 0.4},
     flow_color = {r = 0, g = 0, b = 0.4}
@@ -150,6 +162,8 @@ data:extend({
     name = "pm-petrol",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
+    subgroup = "pm-oil",
+    order = "c",
     default_temperature = 15,
     base_color = {r = 0.5, g = 0, b = 0},
     flow_color = {r = 0.5, g = 0, b = 0}
@@ -159,6 +173,8 @@ data:extend({
     name = "pm-refinery-gases",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/refinery-gases.png",
+    subgroup = "pm-oil",
+    order = "b",
     default_temperature = 15,
     base_color = {r = 0.77, g = 0.639, b = 0},
     flow_color = {r = 0.77, g = 0.639, b = 0}
@@ -168,6 +184,8 @@ data:extend({
     name = "pm-butane-gas",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/butane-gas.png",
+    subgroup = "pm-oil",
+    order = "j",
     default_temperature = 15,
     base_color = {r = 1, g = 1, b = 1 },
     flow_color = {r = 1, g = 1, b = 1 }
@@ -177,6 +195,8 @@ data:extend({
     name = "pm-butene-gas",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/butene-gas.png",
+    subgroup = "pm-oil",
+    order = "k",
     default_temperature = 15,
     base_color = {r = 0.7, g = 0.7, b = 0.7},
     flow_color = {r = 0.7, g = 0.7, b = 0.7}
@@ -195,6 +215,8 @@ data:extend({
     name = "pm-legendary-diesel",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/legendary-diesel.png",
+    subgroup = "pm-oil",
+    order = "fa",
     default_temperature = 15,
     base_color = {r = 0.666, g = 0.666, b = 0.332},
     flow_color = {r = 0.666, g = 0.666, b = 0.332},
@@ -205,6 +227,8 @@ data:extend({
     name = "pm-common-diesel",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/common-diesel.png",
+    subgroup = "pm-oil",
+    order = "fb",
     default_temperature = 15,
     base_color = {r = 0.555, g = 0.555, b = 0.555},
     flow_color = {r = 0.555, g = 0.555, b = 0.555},
