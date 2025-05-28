@@ -64,6 +64,7 @@ Date: 2024-12-08
     - Added a new type of damage, Penetrative, which is used by shotgun shells/slugs or genevas neglection ammo. smaller biters and nests are weaker to it, while spitters and worms are resistant to it.
     - Made basic/piercing shotgun pellets one damage weaker.
     - Made basic slugs fire 3, and piercing  slugs fire 2.
+    - Added a better chain for vanadium oxide unlocked in metalloids.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -169,6 +170,7 @@ Date: 2024-12-08
     - Lowered a bunch of recipes amounts of sulfuric acid.
     - Increased the amount of sulfuric acid you get from SO2 cracking from 15 to 20.
     - Made vanadium oxide take 2 vanadium and 5 oxygen, instead of 4 vanadium.
+    - Changed oleum to use 5 sulfuric acid instead of 10.
 
   Fixes:
     - Fixed the science pack item names captilisation.
