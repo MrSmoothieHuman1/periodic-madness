@@ -169,7 +169,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-boric-oxide", 4)
+      PM.product("pm-boric-oxide", 5)
     }
   } --[[@as data.RecipePrototype]]
 })

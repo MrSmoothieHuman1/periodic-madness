@@ -39,7 +39,7 @@ data:extend({
     {
       PM.ingredient("pm-nickel-powder", 12),
       PM.ingredient("water", 25, "fluid"),
-      PM.ingredient("sulfuric-acid", 5, "fluid")
+      PM.ingredient("sulfuric-acid", 4, "fluid")
     },
     results =
     {
@@ -105,7 +105,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-nickel-tailings", 10, "fluid"),
-      PM.ingredient("sulfuric-acid", 3, "fluid")
+      PM.ingredient("sulfuric-acid", 2, "fluid")
     },
     results =
     {

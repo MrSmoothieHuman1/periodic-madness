@@ -3024,7 +3024,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-ruby-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3044,7 +3044,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3064,7 +3064,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-emerald-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3084,7 +3084,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-sapphire-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3104,7 +3104,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3124,7 +3124,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
