@@ -4,32 +4,6 @@ local PM = require("library")
 data:extend({
   {
     type = "recipe",
-    name = "pm-nickel-plate",
-    subgroup = "pm-nickel-tm",
-    order = "e",
-    category = "smelting",
-    energy_required = 3.2,
-    allow_productivity = true,
-    ingredients = { PM.ingredient("pm-nickel-ore", 1) },
-    results = {
-      PM.product("pm-nickel-plate", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-zinc-plate",
-    subgroup = "pm-zinc-tm",
-    order = "e",
-    category = "smelting",
-    energy_required = 3.2,
-    allow_productivity = true,
-    ingredients = { PM.ingredient("pm-zinc-ore", 1) },
-    results = {
-      PM.product("pm-zinc-plate", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-manganese-plate",
     subgroup = "pm-manganese-tm",
     order = "d",

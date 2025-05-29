@@ -178,6 +178,111 @@ data:extend({
       PM.product("pm-zinc-ore", 2),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-zinc-chunk-plate",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -4 }
+      },
+    },
+    subgroup = "pm-zinc-tm",
+    order = "d",
+    category = "smelting",
+    enabled = true,
+    allow_decomposition = false,
+    energy_required = 3.2,
+    ingredients =
+    {
+      PM.ingredient("pm-zinc-chunk", 2)
+    },
+    results = {
+      PM.product("pm-zinc-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-zinc-plate",
+    subgroup = "pm-zinc-tm",
+    order = "e",
+    category = "smelting",
+    energy_required = 3.2,
+    allow_productivity = true,
+    ingredients =
+    { 
+      PM.ingredient("pm-zinc-ore", 1) 
+    },
+    results = 
+    {
+      PM.product("pm-zinc-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-zinc",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-zinc.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
+    subgroup = "pm-zinc-tm",
+    order = "f",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-zinc-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-zinc", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-zinc-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/zinc-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-zinc-tm",
+    order = "g",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-zinc", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-zinc-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
 
 --MARK: Adv. Zinc
 {

@@ -413,76 +413,6 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-molten-nickel",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-nickel.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-nickel-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-nickel-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-nickel", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-zinc",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-zinc.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-zinc-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-zinc-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-zinc", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-molten-manganese",
     icon_size = 64,
     icons =
@@ -1086,50 +1016,6 @@ data:extend({
   },
 
   --MARK: Cold-inator
-  {
-    type = "recipe",
-    name = "pm-nickel-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/nickel-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-nickel-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-nickel", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-nickel-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-zinc-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/zinc-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-zinc-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-zinc", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-zinc-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
   {
     type = "recipe",
     name = "pm-manganese-plate-cooling",
