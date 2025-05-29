@@ -20,38 +20,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-manganese-ore",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",
-    pictures =
-    {
-      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-3.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-4.png", size = 64, scale = 0.5},
-    },
-    subgroup = "pm-manganese-tm",
-    order = "a",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "pm-zinc-ore",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
-    pictures =
-    {
-      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-2.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-3.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-4.png", size = 64, scale = 0.5},
-    },
-    subgroup = "pm-zinc-tm",
-    order = "b",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "pm-industrial-grade-silicon-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
