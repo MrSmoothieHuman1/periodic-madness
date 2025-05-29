@@ -766,6 +766,7 @@ data:extend({
     name = "pm-ammonia-gas",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/ammonia.png",
+    subgroup = "fluid",
     default_temperature = 15,
     base_color = {r = 0.6, g = 0.6, b = 1 },
     flow_color = {r = 0.6, g = 0.6, b = 1 },
