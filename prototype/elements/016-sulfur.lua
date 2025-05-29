@@ -41,7 +41,7 @@ data:extend({
     name = "pm-hydrogen-sulfide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-sulfide.png",
-    subgroup = "pm-hydrogen-sulfide",
+    subgroup = "pm-sulfur-rnm",
     order = "d",
     default_temperature = 15,
     base_color = {r = 0.56, g = 0.422, b = 0.22},
