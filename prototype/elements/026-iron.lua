@@ -75,6 +75,18 @@ data:extend({
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}
   },
+  {
+    type = "fluid",
+    name = "pm-mixed-molten-iron",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-molten-iron.png",
+    subgroup = "pm-advanced-iron-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
 
   {
     type = "recipe",
