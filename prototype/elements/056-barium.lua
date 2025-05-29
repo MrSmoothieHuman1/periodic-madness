@@ -45,7 +45,6 @@ data:extend({
         order = "c",
         stack_size = 200,
     },
-    -- barium froth and tailings are d and e
     {
         type = "item",
         name = "pm-barium-nitrate",
@@ -60,7 +59,40 @@ data:extend({
         order = "f",
         stack_size = 150
     },
-    -- barium vapour is g
+
+    {
+        type = "fluid",
+        name = "pm-barium-froth",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-barium-aem",
+        order = "d",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
+    {
+        type = "fluid",
+        name = "pm-barium-tailings",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/barium-tailings.png",
+        subgroup = "pm-barium-aem",
+        order = "e",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
+    {
+        type = "fluid",
+        name = "pm-barium-vapour",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-barium-aem",
+        order = "g",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
 
     {
         type = "recipe",
