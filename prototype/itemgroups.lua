@@ -316,7 +316,19 @@ data:extend({
     name = "pm-oil-reforming",
     group = "intermediate-products",
     order = "ab"
-  },  
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-octane-processing",
+    group = "intermediate-products",
+    order = "ac"
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-solid-fuel",
+    group = "intermediate-products",
+    order = "ad"
+  },
   {
     type = "item-subgroup",
     name = "pm-fuels",

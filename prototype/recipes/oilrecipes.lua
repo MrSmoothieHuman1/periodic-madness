@@ -348,8 +348,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "a",
     ingredients =
     {
       PM.ingredient("pm-legendary-diesel", 10, "fluid")
@@ -367,8 +367,8 @@ data:extend({
     energy_required = 4,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "b",
     ingredients =
     {
       PM.ingredient("pm-common-diesel", 40, "fluid")
@@ -386,8 +386,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "c",
     ingredients =
     {
       PM.ingredient("pm-kerosene", 20, "fluid")
@@ -405,8 +405,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "d",
     ingredients =
     {
       PM.ingredient("pm-petrol", 20, "fluid")
@@ -800,6 +800,8 @@ data:extend({
     enabled = false,
     energy_required = 10,
     category = "oil-processing",
+    subgroup = "pm-octane-processing",
+    order = "a",
     allow_productivity = true,
     ingredients = 
     {
@@ -820,6 +822,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-octane-processing",
+    order = "b",
     ingredients = 
     {
       PM.ingredient("pm-N-octane", 3, "fluid"),
@@ -836,6 +840,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-octane-processing",
+    order = "c",
     ingredients = 
     {
       PM.ingredient("pm-2-3-3-trimethylpentane", 4, "fluid"),
@@ -852,6 +858,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "e",
     allow_productivity = true,
     ingredients =
     {
@@ -870,6 +878,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "f",
     allow_productivity = true,
     ingredients =
     {
@@ -888,6 +898,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -1305,6 +1317,8 @@ data.raw["recipe"]["lubricant"].results =
 }
 
 data.raw["recipe"]["solid-fuel-from-heavy-oil"] = nil
+data.raw["recipe"]["solid-fuel-from-light-oil"] = nil
+data.raw["recipe"]["solid-fuel-from-petroleum"] = nil
 
 data.raw["recipe"]["coal-liquefaction"].subgroup = "pm-oil"
 data.raw["recipe"]["coal-liquefaction"].order = "c"
