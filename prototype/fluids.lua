@@ -208,6 +208,8 @@ data:extend({
     name = "pm-ethylene-gas",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/ethylene-gas.png",
+    subgroup = "pm-oil-fluid",
+    order = "l",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.671, b = 0.8},
     flow_color = {r = 0.8, g = 0.671, b = 0.8},
@@ -1945,6 +1947,8 @@ data:extend({
     name = "pm-N-octane",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/N-octane.png",
+    subgroup = "pm-oil-fluid",
+    order = "m",
     default_temperature = 15,
     base_color = {r = 0.7, g = 0.7, b = 0.7},
     flow_color = {r = 0.7, g = 0.7, b = 0.7}
@@ -1954,6 +1958,8 @@ data:extend({
     name = "pm-iso-octane",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/iso-octane.png",
+    subgroup = "pm-oil-fluid",
+    order = "n",
     default_temperature = 15,
     base_color = {r = 0.7, g = 0.7, b = 0.7},
     flow_color = {r = 0.7, g = 0.7, b = 0.7}
@@ -1963,6 +1969,8 @@ data:extend({
     name = "pm-2-3-3-trimethylpentane",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/2-3-3-trimethylpentane.png",
+    subgroup = "pm-oil-fluid",
+    order = "o",
     default_temperature = 15,
     base_color = {r = 0.7, g = 0.7, b = 0.7},
     flow_color = {r = 0.7, g = 0.7, b = 0.7}
