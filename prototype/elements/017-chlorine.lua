@@ -18,7 +18,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/chlorine.png",
     subgroup = "pm-chlorine-rnm",
-    order = "a",
+    order = "c",
     default_temperature = 15,
     base_color = {r = 0, g = 1, b = 0},
     flow_color = {r = 0, g = 1, b = 0}
