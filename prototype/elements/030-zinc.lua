@@ -69,6 +69,18 @@ data:extend({
     flow_color = {r = 0.32, g = 0.49, b = 0.87},
     auto_barrel = false
   },
+  {
+    type = "fluid",
+    name = "pm-zinc-vapour",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
+    subgroup = "pm-advanced-zinc-tm",
+    order = "d",
+    default_temperature = 15,
+    base_color = {r = 0.529, g = 0.43, b = 0.35},
+    flow_color = {r = 0.529, g = 0.43, b = 0.35},
+    auto_barrel = false
+  },
 
   {
     type = "recipe",
