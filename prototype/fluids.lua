@@ -249,18 +249,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-sulfur-dioxide",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/sulfur-dioxide.png",
-    subgroup = "pm-sulfur-rnm",
-    order = "b",
-    default_temperature = 15,
-    base_color = {r = 1, g = 1, b = 0},
-    flow_color = {r = 1, g = 1, b = 0},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-atmosphere",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/atmosphere.png",
@@ -1359,30 +1347,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-sulfur-trioxide",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/sulfur-trioxide.png",
-    subgroup = "pm-sulfur-rnm",
-    order = "d",
-    default_temperature = 15,
-    base_color = {r = 1, g = 0.8, b = 0},
-    flow_color = {r = 1, g = 0.8, b = 0},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-oleum",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/oleum.png",
-    subgroup = "pm-sulfur-rnm",
-    order = "e",
-    default_temperature = 15,
-    base_color = {r = 1, g = 1, b = 0},
-    flow_color = {r = 1, g = 1, b = 0},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-vanadate-solution",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
@@ -1948,15 +1912,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-waste-water.png",
     subgroup = "pm-sulfur-rnm",
     order = "f",
-    default_temperature = 15,
-    base_color = {r = 0.56, g = 0.422, b = 0.22},
-    flow_color = {r = 0.56, g = 0.422, b = 0.22}
-  },
-  {
-    type = "fluid",
-    name = "pm-hydrogen-sulfide",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-sulfide.png",
     default_temperature = 15,
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}
