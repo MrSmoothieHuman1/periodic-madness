@@ -4,28 +4,6 @@ data:extend({
 
   {
     type = "fluid",
-    name = "pm-hydrochloric-acid",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
-    subgroup = "pm-acids",
-    order = "a",
-    default_temperature = 15,
-    base_color = {r = 0, g = 0.8, b = 0.34},
-    flow_color = {r = 0, g = 0.8, b = 0.34}
-  },
-  {
-    type = "fluid",
-    name = "pm-chlorine",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/chlorine.png",
-    subgroup = "pm-acids",
-    order = "b",
-    default_temperature = 15,
-    base_color = {r = 0, g = 1, b = 0},
-    flow_color = {r = 0, g = 1, b = 0}
-  },
-  {
-    type = "fluid",
     name = "pm-acidic-water",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",

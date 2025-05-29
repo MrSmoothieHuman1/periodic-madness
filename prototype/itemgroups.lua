@@ -1329,7 +1329,7 @@ data:extend({
     group = "fluids",
     order = "c"
   },
-    {
+  {
     type = "item-subgroup",
     name = "pm-coolant",
     group = "fluids",
