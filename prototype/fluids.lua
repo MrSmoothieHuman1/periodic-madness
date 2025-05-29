@@ -1247,42 +1247,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-methyl-chloride",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/methyl-chloride.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "za",
-    default_temperature = 15,
-    base_color = {r = 0.33, g = 0.66, b = 0.32},
-    flow_color = {r = 0.33, g = 0.66, b = 0.32},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-carbon-tetrachloride",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/carbon-tetrachloride.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "x",
-    default_temperature = 15,
-    base_color = {r = 0.33, g = 0.99, b = 0.32},
-    flow_color = {r = 0.33, g = 0.99, b = 0.32},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-chloronated-solution",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/chloronated-solution.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "y",
-    default_temperature = 15,
-    base_color = {r = 0.66, g = 0.99, b = 0.66},
-    flow_color = {r = 0.66, g = 0.99, b = 0.66},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-tetrafluoroethylene",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/tetrafluoroethylene.png",
@@ -1291,18 +1255,6 @@ data:extend({
     auto_barrel = false,
     base_color = {r = 0.3, g = 0.1, b = 0.2},
     flow_color = {r = 0.3, g = 0.1, b = 0.2}
-  },
-  {
-    type = "fluid",
-    name = "pm-chloroform",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/chloroform.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "z",
-    default_temperature = 15,
-    base_color = {r = 0.66, g = 0.99, b = 0.66},
-    flow_color = {r = 0.66, g = 0.99, b = 0.66},
-    auto_barrel = false
   },
   {
     type = "fluid",

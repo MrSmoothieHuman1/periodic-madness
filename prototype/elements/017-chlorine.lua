@@ -23,6 +23,52 @@ data:extend({
     base_color = {r = 0, g = 1, b = 0},
     flow_color = {r = 0, g = 1, b = 0}
   },
+  {
+    type = "fluid",
+    name = "pm-methyl-chloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/methyl-chloride.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "k",
+    default_temperature = 15,
+    base_color = {r = 0.33, g = 0.66, b = 0.32},
+    flow_color = {r = 0.33, g = 0.66, b = 0.32},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-carbon-tetrachloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/carbon-tetrachloride.png",
+    subgroup = "fluids",
+    default_temperature = 15,
+    base_color = {r = 0.33, g = 0.99, b = 0.32},
+    flow_color = {r = 0.33, g = 0.99, b = 0.32},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-chloronated-solution",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/chloronated-solution.png",
+    subgroup = "pm-plastics",
+    order = "j",
+    default_temperature = 15,
+    base_color = {r = 0.66, g = 0.99, b = 0.66},
+    flow_color = {r = 0.66, g = 0.99, b = 0.66},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-chloroform",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/chloroform.png",
+    subgroup = "fluids",
+    default_temperature = 15,
+    base_color = {r = 0.66, g = 0.99, b = 0.66},
+    flow_color = {r = 0.66, g = 0.99, b = 0.66},
+    auto_barrel = false
+  },
 
   {
     type = "recipe",
@@ -130,7 +176,7 @@ data:extend({
     order = "f",
     category = "pm-evaporation",
     enabled = false,
-    energy_required = 0.74 + 0.01,
+    energy_required = 0.75,
     ingredients =
     {
       PM.ingredient("pm-seawater", 50, "fluid")
@@ -151,7 +197,7 @@ data:extend({
     category = "pm-evaporation",
     hide_from_player_crafting = true,
     enabled = false,
-    energy_required = 0.74 + 0.01,
+    energy_required = 0.75,
     allow_productivity = true,
     ingredients =
     {
