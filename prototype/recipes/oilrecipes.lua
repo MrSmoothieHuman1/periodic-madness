@@ -795,11 +795,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-octane-processing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/octane-processing.png",
     enabled = false,
     energy_required = 10,
     category = "oil-processing",
     allow_productivity = true,
-    main_product = "pm-iso-octane",
     ingredients = 
     {
       PM.ingredient("pm-butene-gas", 40, "fluid"),
