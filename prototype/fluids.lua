@@ -1032,6 +1032,7 @@ data:extend({
     name = "pm-creosote",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/creosote.png",
+    subgroup = "fluid",
     default_temperature = 15,
     base_color = {r = 0.4, g = 0.3, b = 0.2},
     flow_color = {r = 0.4, g = 0.3, b = 0.2},
