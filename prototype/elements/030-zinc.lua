@@ -46,6 +46,31 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-zinc-sulfide-concentrate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/zinc-sulfide-concentrate.png",
+    subgroup = "pm-advanced-zinc-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-zinc-froth",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nickel-froth.png",
+    subgroup = "pm-advanced-zinc-tm",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.32, g = 0.49, b = 0.87},
+    flow_color = {r = 0.32, g = 0.49, b = 0.87},
+    auto_barrel = false
+  },
+
+  {
     type = "recipe",
     name = "pm-zinc-powder",
     enabled = false,

@@ -61,6 +61,31 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-matte-nickel",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/matte-nickel.png",
+    subgroup = "pm-advanced-nickel-tm",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-mixed-nickel-concentrate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-nickel-concentrate.png",
+    subgroup = "pm-advanced-nickel-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
+
+  {
     type = "recipe",
     name = "pm-nickel-powder",
     enabled = false,
