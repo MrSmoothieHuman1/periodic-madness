@@ -1911,7 +1911,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/sulfuric-waste-water.png",
     subgroup = "pm-sulfur-rnm",
-    order = "f",
+    order = "ea",
     default_temperature = 15,
     base_color = {r = 0.56, g = 0.422, b = 0.22},
     flow_color = {r = 0.56, g = 0.422, b = 0.22}

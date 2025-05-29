@@ -261,6 +261,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sulfuric-waste-water",
+    subgroup = "pm-sulfur-rnm",
+    order = "ea",
     category = "pm-mixing",
     enabled = false,
     energy_required = 5,
