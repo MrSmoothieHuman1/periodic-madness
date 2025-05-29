@@ -44,6 +44,18 @@ data:extend({
     },
 
     {
+    type = "fluid",
+    name = "pm-strontium-sulfide-solution",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    subgroup = "pm-strontium-aem",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
+
+    {
         type = "recipe",
         name = "pm-celestine",
         enabled = false,
