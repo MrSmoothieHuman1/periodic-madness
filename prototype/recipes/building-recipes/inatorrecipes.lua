@@ -413,41 +413,6 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-molten-manganese",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-manganese.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-manganese-tm",
-    order = "e",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-manganese-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-manganese", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-molten-gold",
     icon_size = 64,
     icons =
@@ -1016,28 +981,6 @@ data:extend({
   },
 
   --MARK: Cold-inator
-  {
-    type = "recipe",
-    name = "pm-manganese-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/manganese-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-manganese-tm",
-    order = "e",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-manganese", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-manganese-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
   {
     type = "recipe",
     name = "pm-gold-plate-cooling",

@@ -4,20 +4,6 @@ local PM = require("library")
 data:extend({
   {
     type = "recipe",
-    name = "pm-manganese-plate",
-    subgroup = "pm-manganese-tm",
-    order = "d",
-    category = "smelting",
-    energy_required = 3.2,
-    enabled = false,
-    allow_productivity = true,
-    ingredients = { PM.ingredient("pm-manganese-ore", 1) },
-    results = {
-      PM.product("pm-manganese-plate", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-gold-plate",
     subgroup = "pm-gold-tm",
     order = "d",
