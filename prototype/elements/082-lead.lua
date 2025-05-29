@@ -43,6 +43,15 @@ data:extend({
     order = "c",
     stack_size = 80
   },
+  {
+    type = "item",
+    name = "pm-lead-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/lead-ore-icon.png",
+    subgroup = "pm-lead-ptm",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",

@@ -59,6 +59,22 @@ data:extend({
         order = "f",
         stack_size = 150
     },
+    {
+        type = "item",
+        name = "pm-barium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/barium-ore-icon.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon-4.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-barium-aem",
+        order = "e",
+        stack_size = 200
+    },
 
     {
         type = "fluid",

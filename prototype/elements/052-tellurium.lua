@@ -28,7 +28,22 @@ data:extend({
     },
     subgroup = "pm-tellurium-mt",
     order = "b",
-    stack_size = 600
+    stack_size = 300
+  },
+  {
+    type = "item",
+    name = "pm-tellurium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/tellurium-ore.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore-3.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-tellurium-mt",
+    order = "c",
+    stack_size = 200
   },
   {
     type = "recipe",

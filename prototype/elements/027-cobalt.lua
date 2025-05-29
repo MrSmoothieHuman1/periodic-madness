@@ -25,6 +25,22 @@ data:extend({
     order = "b",
     stack_size = 400
   },
+  {
+    type = "item",
+    name = "pm-cobalt-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon-3.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/cobalt-ore-icon-4.png", size = 64, scale = 0.5 },
+    },
+    subgroup = "pm-cobalt-tm",
+    order = "c",
+    stack_size = 200
+  },
 
   {
     type = "recipe",

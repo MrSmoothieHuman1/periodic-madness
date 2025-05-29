@@ -61,6 +61,20 @@ data:extend({
         order = "d",
         stack_size = 200
     },
+    {
+        type = "item",
+        name = "pm-beryllium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon.png",
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon-3.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-germanium-mt",
+        order = "e",
+        stack_size = 200
+    },
 
     {
         type = "fluid",

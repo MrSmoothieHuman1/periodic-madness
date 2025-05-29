@@ -47,6 +47,21 @@ data:extend({
         stack_size = 100
     },
     {
+    type = "item",
+    name = "pm-industrial-grade-silicon-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
+    pictures =
+    {
+        {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon-2.png", size = 64, scale = 0.5},
+    },
+    stack_size = 200,
+    subgroup = "pm-silicon-mt",
+    order = "ca",
+    },
+    {
         type = "item",
         name = "pm-low-quality-polysilicon",
         icon_size = 64,

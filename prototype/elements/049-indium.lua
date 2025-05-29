@@ -16,6 +16,23 @@ data:extend({
     stack_size = 100
   },
   {
+    type = "item",
+    name = "pm-indium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/indium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/indium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-indium-ptm",
+    order = "b",
+    stack_size = 200
+  },
+
+  {
     type = "recipe",
     name = "pm-indium-filtering",
     icon_size = 64,

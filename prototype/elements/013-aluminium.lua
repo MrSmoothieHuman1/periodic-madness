@@ -32,6 +32,22 @@ data:extend({
     order = "b",
     stack_size = 300
   },
+  {
+    type = "item",
+    name = "pm-aluminium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-aluminium-ptm",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",

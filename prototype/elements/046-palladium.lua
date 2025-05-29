@@ -1,5 +1,21 @@
 local PM = require("library")
 data:extend({
+  {
+    type = "item",
+    name = "pm-palladium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-palladium-tm",
+    order = "a",
+    stack_size = 200
+  },
 
   {
     type = "recipe",

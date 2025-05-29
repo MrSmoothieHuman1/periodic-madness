@@ -32,6 +32,23 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-tin-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/tin-ore-icon.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tin-ore-icon-4.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-tin-ptm",
+    order = "f",
+    stack_size = 200
+  },
+
+  {
+    type = "item",
     name = "pm-cassiterite",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/cassiterite.png",
