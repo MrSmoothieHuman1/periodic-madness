@@ -63,6 +63,29 @@ data:extend({
     },
 
     {
+        type = "fluid",
+        name = "pm-beryllium-hydroxide",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/beryllium-hydroxide.png",
+        subgroup = "pm-beryllium-aem",
+        order = "e",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
+    {
+        type = "fluid",
+        name = "pm-ammonium-tetrafluoroberyllate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/ammonium-tetrafluoroberyllate.png",
+        subgroup = "pm-beryllium-aem",
+        order = "f",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
+
+    {
         type = "recipe",
         name = "pm-beryl",
         enabled = false,
