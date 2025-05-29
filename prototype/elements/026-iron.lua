@@ -64,7 +64,7 @@ data:extend({
     stack_size = 200
   },
 
-    {
+  {
     type = "fluid",
     name = "pm-ferrous-waste-water",
     icon_size = 64,
