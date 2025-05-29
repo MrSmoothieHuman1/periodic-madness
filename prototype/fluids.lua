@@ -758,6 +758,8 @@ data:extend({
     name = "pm-cellouse-pulp",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/cellouse-pulp.png",
+    subgroup = "pm-greenhousing-rnm",
+    order = "e",
     default_temperature = 15,
     base_color = {r = 0.32, g = 0.49, b = 0.87},
     flow_color = {r = 0.32, g = 0.49, b = 0.87},
