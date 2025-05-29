@@ -5,43 +5,6 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-ferrum",
-    enabled = false,
-    energy_required = 18,
-    subgroup = "pm-iron-tm",
-    order = "x",
-    category = "pm-moltening",
-    ingredients =
-    {
-      PM.ingredient("pm-oxygen-gas", 30, "fluid"),
-      PM.ingredient("iron-plate", 10),
-      PM.ingredient("pm-sodium-bicarbonate", 5)
-    },
-    results =
-    {
-      PM.product("pm-ferrum", 10)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-patina",
-    enabled = false,
-    energy_required = 18,
-    subgroup = "pm-copper-tm",
-    order = "x",
-    category = "pm-moltening",
-    ingredients =
-    {
-      PM.ingredient("sulfuric-acid", 20, "fluid"),
-      PM.ingredient("copper-plate", 10),
-    },
-    results =
-    {
-      PM.product("pm-patina", 10)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-molten-cadmium-telluride",
     enabled = false,
     energy_required = 9,
@@ -448,76 +411,6 @@ data:extend({
     }
   },
 
-  {
-    type = "recipe",
-    name = "pm-molten-iron",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__base__/graphics/icons/iron-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-iron-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("iron-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-iron", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-copper",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__base__/graphics/icons/copper-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-copper-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("copper-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-copper", 5, "fluid")
-    }
-  },
   {
     type = "recipe",
     name = "pm-molten-nickel",
@@ -1193,64 +1086,6 @@ data:extend({
   },
 
   --MARK: Cold-inator
-  {
-    type = "recipe",
-    name = "pm-iron-plate-cooling",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
-        icon_size = 64,
-        scale = 0.7,
-        shift = {0, -25}
-      },
-      {
-        icon = "__base__/graphics/icons/iron-plate.png",
-        icon_size = 64,
-        scale = 0.45,
-        shift = {0, 1.5}
-      },
-    },
-    category = "pm-coldening",
-    subgroup = "pm-iron-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-iron", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("iron-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-copper-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-copper-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-copper", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("copper-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
   {
     type = "recipe",
     name = "pm-nickel-plate-cooling",

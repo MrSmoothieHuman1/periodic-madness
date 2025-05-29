@@ -413,8 +413,6 @@ data:extend({
   }
 } --[[@as data.RecipePrototype[] ]])
 
-data.raw["recipe"]["iron-plate"].subgroup = "pm-iron-tm"
-data.raw["recipe"]["iron-plate"].order = "e"
 data.raw["recipe"]["copper-plate"].subgroup = "pm-copper-tm"
 data.raw["recipe"]["copper-plate"].order = "e"
 data.raw["recipe"]["steel-plate"].category = "pm-alloying"
