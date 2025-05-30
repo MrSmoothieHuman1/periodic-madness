@@ -264,7 +264,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/patina.png",
     subgroup = "pm-copper-tm",
-    order = "x",
+    order = "h",
     stack_size = 500
   },
   {
@@ -278,8 +278,8 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/ferrum-2.png", size = 64, scale = 0.48 },
       { filename = "__periodic-madness__/graphics/icons/ferrum-3.png", size = 64, scale = 0.5 },
     },
-    subgroup = "pm-tm-tm",
-    order = "b",
+    subgroup = "pm-iron-tm",
+    order = "h",
     stack_size = 500
   },
   {
