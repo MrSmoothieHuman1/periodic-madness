@@ -973,8 +973,8 @@ data:extend({
     enabled = false,
     category = "chemistry",
     subgroup = "pm-acetonitrile-rnm",
-    main_product = "pm-trace-acetonitrile",
     order = "a",
+    main_product = "pm-trace-acetonitrile",
     ingredients =
     {
       PM.ingredient("pm-ammonia-gas", 20, "fluid"),
@@ -1147,7 +1147,7 @@ data:extend({
     results =
     {
       PM.product("pm-CISD2", 4, "fluid"),
-      PM.product_range_chance("pm-zinc-plate", 2, 4, 0.2),
+      PM.product_range_chance("pm-zinc-plate", 2, 4, 0.45),
       PM.product_chance("pm-ferrum", 3, 0.4)
     }
   },
