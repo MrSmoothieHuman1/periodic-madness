@@ -1559,6 +1559,8 @@ data:extend({
     name = "pm-syngas",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/syngas.png",
+    subgroup = "pm-oil",
+    order = "y",
     default_temperature = 15,
     base_color = {r = 0.3, g = 0.1, b = 0.1},
     flow_color = {r = 0.3, g = 0.1, b = 0.1},

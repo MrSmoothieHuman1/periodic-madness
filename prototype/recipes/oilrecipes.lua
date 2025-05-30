@@ -1273,6 +1273,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "oil-processing",
+    subgroup = "pm-oil",
+    order = "y",
     main_product = "pm-syngas",
     ingredients =
     {
