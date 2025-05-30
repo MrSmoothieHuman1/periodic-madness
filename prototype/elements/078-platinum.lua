@@ -153,4 +153,75 @@ data:extend({
       PM.product_chance("pm-flux-container", 1, 0.66)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-platinum-plate",
+    subgroup = "pm-platinum-tm",
+    order = "e",
+    category = "smelting",
+    energy_required = 3.2,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-platinum-ore", 1) },
+    results = {
+      PM.product("pm-platinum-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-platinum",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-platinum.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/platinum-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
+    subgroup = "pm-platinum-tm",
+    order = "f",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-platinum-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-platinum", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-platinum-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/platinum-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-platinum-tm",
+    order = "g",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-platinum", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-platinum-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
 })

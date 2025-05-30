@@ -149,5 +149,19 @@ data:extend({
       PM.product("pm-tellurium-ore", 6),
       PM.product("sulfuric-acid", 7.5, "fluid")
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-tellurium-plate",
+    subgroup = "pm-tellurium-mt",
+    order = "e",
+    category = "smelting",
+    energy_required = 6.4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-tellurium-ore", 1) },
+    results = {
+      PM.product("pm-tellurium-plate", 1)
+    }
+  },
 })

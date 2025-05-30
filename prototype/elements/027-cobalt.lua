@@ -175,4 +175,75 @@ data:extend({
       PM.product("pm-cobalt-blue", 6)
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-cobalt-plate",
+    subgroup = "pm-cobalt-tm",
+    order = "d",
+    category = "smelting",
+    energy_required = 3.2,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-cobalt-ore", 1) },
+    results = {
+      PM.product("pm-cobalt-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-cobalt",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-cobalt.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/cobalt-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
+    subgroup = "pm-cobalt-tm",
+    order = "e",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-cobalt-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-cobalt", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cobalt-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/cobalt-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-cobalt-tm",
+    order = "f",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-cobalt", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-cobalt-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
 })
