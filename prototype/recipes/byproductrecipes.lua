@@ -8,11 +8,10 @@ data:extend({
     name = "pm-ferrum-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrum-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "b",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -37,11 +36,10 @@ data:extend({
     name = "pm-patina-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/patina-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "d",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -68,7 +66,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/glass-resmelting.png",
     energy_required = 2,
     enabled = false,
-    hide_from_player_crafting = false,
     allow_decomposition = false,
     subgroup = "pm-glassing",
     category = "smelting",
@@ -148,12 +145,10 @@ data:extend({
     name = "pm-chromic-ferrum-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/chromic-ferrum-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
-    order = "d",
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "c",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 2,
     ingredients =
     {
@@ -177,12 +172,10 @@ data:extend({
     name = "pm-chromic-patina-leeching",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/chromic-patina-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
-    order = "e",
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "e",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 2,
     ingredients =
     {
