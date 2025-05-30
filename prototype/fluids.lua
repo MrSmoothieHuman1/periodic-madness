@@ -650,6 +650,8 @@ data:extend({
     name = "pm-benzene",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
+    subgroup = "pm-oil-fluid",
+    order = "p",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.8, b = 0.8},
     flow_color = {r = 0.8, g = 0.8, b = 0.8}
