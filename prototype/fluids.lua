@@ -661,6 +661,8 @@ data:extend({
     name = "pm-acetone",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
+    subgroup = "pm-resin",
+    order = "g",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.8, b = 0.8},
     flow_color = {r = 0.8, g = 0.8, b = 0.8}
@@ -670,6 +672,8 @@ data:extend({
     name = "pm-bisphenol-A",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/dont-model-your-molecules-A.png",
+    subgroup = "pm-resin",
+    order = "h",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.8, b = 0.8},
     flow_color = {r = 0.8, g = 0.8, b = 0.8}
