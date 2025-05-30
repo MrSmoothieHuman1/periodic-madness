@@ -1128,6 +1128,8 @@ data:extend({
     name = "pm-phosgene",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/phosgene.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "x",
     default_temperature = 15,
     base_color = {r = 0.6, g = 0.8, b = 0.6},
     flow_color = {r = 0.6, g = 0.8, b = 0.6},
