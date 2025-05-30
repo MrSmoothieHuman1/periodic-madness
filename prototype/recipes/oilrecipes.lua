@@ -421,6 +421,8 @@ data:extend({
     name = "pm-solid-lubricant",
     energy_required = 4,
     category = "chemistry",
+    subgroup = "pm-lubricant",
+    order = "b",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -462,8 +464,8 @@ data:extend({
     name = "pm-heavy-lubricant",
     energy_required = 4,
     category = "chemistry",
-    subgroup = "pm-oil",
-    order = "f",
+    subgroup = "pm-lubricant",
+    order = "c",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -1303,9 +1305,8 @@ data:extend({
   }
 } --[[@as data.RecipePrototype[] ]])
 
-data.raw["recipe"]["lubricant"].subgroup = "pm-oil"
-data.raw["recipe"]["lubricant"].order = "e"
---data.raw["recipe"]["lubricant"].energy_required = 2
+data.raw["recipe"]["lubricant"].subgroup = "pm-lubricant"
+data.raw["recipe"]["lubricant"].order = "a"
 data.raw["recipe"]["lubricant"].ingredients =
 {
   PM.ingredient("pm-lubricating-oils", 12, "fluid"),
