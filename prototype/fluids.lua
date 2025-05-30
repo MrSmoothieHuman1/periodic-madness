@@ -1288,16 +1288,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-vanadate-solution",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
-    default_temperature = 15,
-    base_color = {r = 0.529, g = 0.43, b = 0.35},
-    flow_color = {r = 0.529, g = 0.43, b = 0.35},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-acidic-brine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/acidic-brine.png",

@@ -48,6 +48,19 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-vanadate-solution",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
+    subgroup = "pm-vanadium-tm",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.529, g = 0.43, b = 0.35},
+    flow_color = {r = 0.529, g = 0.43, b = 0.35},
+    auto_barrel = false
+  },
+
+  {
     type = "recipe",
     name = "pm-magnetite-forming",
     enabled = false,
