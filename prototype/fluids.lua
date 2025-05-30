@@ -1412,6 +1412,8 @@ data:extend({
     name = "pm-hydrogen-peroxide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/seawater.png",
+    subgroup = "pm-rockets",
+    order = "a",
     default_temperature = 15,
     auto_barrel = false,
     base_color = {r = 0.3, g = 0.69, b = 0.98},
