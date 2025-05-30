@@ -221,6 +221,8 @@ data:extend({
     name = "pm-heavy-lubricant",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/heavy-lubricant.png",
+    subgroup = "pm-lubricant",
+    order = "c",
     fuel_value = "1MJ",
     default_temperature = 15,
     base_color = {r = 0, g = 0.3, b = 0},
