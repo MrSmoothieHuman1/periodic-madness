@@ -3900,6 +3900,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/temp-inators-3.png",
     effects =
     {
+      PM.unlock_recipe("pm-polydimethylsiloxane"),
+      PM.unlock_recipe("pm-light-coolant"),
       PM.unlock_recipe("pm-molten-inator-3"),
       PM.unlock_recipe("pm-cold-inator-3"),
       PM.unlock_recipe("pm-ammonium-tetrafluoroberyllate")

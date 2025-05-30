@@ -1624,7 +1624,7 @@ data:extend({
     type = "fluid",
     name = "pm-N-octane",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/N-octane.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/n-octane.png",
     subgroup = "pm-oil-fluid",
     order = "m",
     default_temperature = 15,

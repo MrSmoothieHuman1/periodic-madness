@@ -6,5 +6,5 @@ event_handler.add_libraries{
 	require("runtime.freeplay-interface"),
 	require("runtime.periodic-fun"),
 	require("runtime.pollution-buildings"),
-	require("compatibility.penny-smells")
+	require("compatibility.automatic-underground-pipe-connectors"),
 }

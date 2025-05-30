@@ -10,6 +10,7 @@ data:extend{
 	{
 		type = "recipe",
 		name = "pm-water-coolant-burn",
+		hidden = true,
 		auto_recycle = false,
 		category = "pm-reactor-coolant-burning",
 		-- We want the contents of the recipe to be how much fluid it takes to cool it for 50kJ
@@ -35,6 +36,7 @@ data:extend{
 	{
 		type = "recipe",
 		name = "pm-water-coolant-burn-with-exhuast",
+		hidden = true,
 		auto_recycle = false,
 		category = "pm-reactor-coolant-burning-with-exhuast",
 		energy_required = 10,

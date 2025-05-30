@@ -4,6 +4,7 @@ data:extend({
     type = "projectile",
     name = "pm-sodium-grenade",
     flags = { "not-on-map" },
+    hidden = true,
     acceleration = 0.008,
     action =
     {
@@ -175,6 +176,7 @@ data:extend({
   collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
   acceleration = 0,
   direction_only = true,
+  hidden = true,
   action =
   {
     type = "direct",
@@ -257,6 +259,7 @@ data:extend({
   acceleration = 1,
   direction_only = true,
   piercing_damage = 90,
+  hidden = true,
   action =
   {
     type = "direct",
@@ -295,6 +298,7 @@ data:extend({
   acceleration = 1,
   direction_only = true,
   piercing_damage = 300,
+  hidden = true,
   action =
   {
     type = "direct",
@@ -332,6 +336,7 @@ data:extend({
   acceleration = 0,
   direction_only = true,
   piercing_damage = 100,
+  hidden = true,
   action =
   {
     type = "direct",
