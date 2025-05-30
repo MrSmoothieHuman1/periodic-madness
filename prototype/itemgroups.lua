@@ -1341,12 +1341,6 @@ data:extend({
     group = "fluids",
     order = "c"
   },
-  {
-    type = "item-subgroup",
-    name = "pm-coolant",
-    group = "fluids",
-    order = "d"
-  },
 })
 
 data.raw["item-subgroup"]["science-pack"].order = "x"

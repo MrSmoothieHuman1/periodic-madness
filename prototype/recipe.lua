@@ -1237,6 +1237,8 @@ data:extend({
     enabled = false,
     energy_required = 4,
     category = "chemistry",
+    subgroup = "pm-coolant",
+    order = "a",
     main_product = "pm-ethylene-glycol",
     allow_productivity = true,
     ingredients =
@@ -3587,6 +3589,8 @@ data:extend({
     energy_required = 8,
     enabled = false,
     category = "chemistry",
+    subgroup = "pm-coolant",
+    order = "d",
     allow_productivity = true,
     main_product = "pm-polydimethylsiloxane",
     ingredients = 
