@@ -337,6 +337,18 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-lubricant",
+    group = "intermediate-products",
+    order = "ba"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-coolant",
+    group = "intermediate-products",
+    order = "bb"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-alloys",
     group = "intermediate-products",
     order = "c",
