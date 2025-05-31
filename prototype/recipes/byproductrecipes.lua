@@ -221,6 +221,8 @@ data:extend({
     type = "recipe",
     name = "pm-ferrous-waste-water",
     category = "pm-mixing",
+    subgroup = "pm-iron-tm",
+    order = "i",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -238,6 +240,8 @@ data:extend({
     type = "recipe",
     name = "pm-cupric-waste-water",
     category = "pm-mixing",
+    subgroup = "pm-copper-tm",
+    order = "i",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -254,6 +258,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sulfuric-waste-water",
+    subgroup = "pm-sulfur-rnm",
+    order = "ea",
     category = "pm-mixing",
     enabled = false,
     energy_required = 5,
@@ -274,6 +280,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-seperation.png",
     category = "chemistry",
+    subgroup = "pm-iron-tm",
+    order = "j",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -296,6 +304,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-seperation.png",
     category = "chemistry",
+    subgroup = "pm-copper-tm",
+    order = "j",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -339,6 +349,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
     category = "pm-mixing",
+    subgroup = "pm-iron-tm",
+    order = "k",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -358,6 +370,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-looping.png",
     category = "pm-mixing",
+    subgroup = "pm-copper-tm",
+    order = "k",
     enabled = false,
     energy_required = 5,
     ingredients = 

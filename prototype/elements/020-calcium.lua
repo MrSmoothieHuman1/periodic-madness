@@ -28,6 +28,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-calcium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-4.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-calcium-aem",
+    order = "c",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "pm-mixed-calcium-rock",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png",

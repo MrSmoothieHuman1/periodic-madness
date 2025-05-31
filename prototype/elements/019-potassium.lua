@@ -44,6 +44,22 @@ data:extend({
     order = "c",
     stack_size = 350
   },
+  {
+    type = "item",
+    name = "pm-potassium",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-potassium-am",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",

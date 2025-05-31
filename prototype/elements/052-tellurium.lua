@@ -28,7 +28,22 @@ data:extend({
     },
     subgroup = "pm-tellurium-mt",
     order = "b",
-    stack_size = 600
+    stack_size = 300
+  },
+  {
+    type = "item",
+    name = "pm-tellurium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/tellurium-ore.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/tellurium-ore-3.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-tellurium-mt",
+    order = "c",
+    stack_size = 200
   },
   {
     type = "recipe",
@@ -134,5 +149,19 @@ data:extend({
       PM.product("pm-tellurium-ore", 6),
       PM.product("sulfuric-acid", 7.5, "fluid")
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-tellurium-plate",
+    subgroup = "pm-tellurium-mt",
+    order = "e",
+    category = "smelting",
+    energy_required = 6.4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-tellurium-ore", 1) },
+    results = {
+      PM.product("pm-tellurium-plate", 1)
+    }
+  },
 })

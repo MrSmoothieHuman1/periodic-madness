@@ -65,6 +65,7 @@ Date: 2024-12-08
     - Made basic/piercing shotgun pellets one damage weaker.
     - Made basic slugs fire 3, and piercing  slugs fire 2.
     - Added a better chain for vanadium oxide unlocked in metalloids.
+    - Added subgroups for coolants, lubricants and solid fuel recipes. yes we have that many.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

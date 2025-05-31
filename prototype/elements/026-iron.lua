@@ -65,6 +65,30 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-ferrous-waste-water",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/ferrous-waste-water.png",
+    subgroup = "pm-iron-tm",
+    order = "i",
+    default_temperature = 15,
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+  },
+  {
+    type = "fluid",
+    name = "pm-mixed-molten-iron",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-molten-iron.png",
+    subgroup = "pm-advanced-iron-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
+
+  {
     type = "recipe",
     name = "pm-basic-pig-iron",
     enabled = false,
@@ -160,6 +184,127 @@ data:extend({
       PM.product("iron-ore", 4),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-iron-chunk-plate",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/icons/iron-plate.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -4 }
+      },
+    },
+    subgroup = "pm-iron-tm",
+    order = "d",
+    category = "smelting",
+    enabled = true,
+    energy_required = 3.2,
+    ingredients =
+    {
+      PM.ingredient("pm-iron-chunk", 2)
+    },
+    results = 
+    {
+      PM.product("iron-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-iron",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__base__/graphics/icons/iron-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
+    subgroup = "pm-iron-tm",
+    order = "f",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("iron-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-iron", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-iron-plate-cooling",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
+        icon_size = 64,
+        scale = 0.7,
+        shift = {0, -25}
+      },
+      {
+        icon = "__base__/graphics/icons/iron-plate.png",
+        icon_size = 64,
+        scale = 0.45,
+        shift = {0, 1.5}
+      },
+    },
+    category = "pm-coldening",
+    subgroup = "pm-iron-tm",
+    order = "g",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-iron", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("iron-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ferrum",
+    enabled = false,
+    energy_required = 18,
+    subgroup = "pm-iron-tm",
+    order = "h",
+    category = "pm-moltening",
+    ingredients =
+    {
+      PM.ingredient("pm-oxygen-gas", 30, "fluid"),
+      PM.ingredient("iron-plate", 10),
+      PM.ingredient("pm-sodium-bicarbonate", 5)
+    },
+    results =
+    {
+      PM.product("pm-ferrum", 10)
+    }
+  },
 
   --MARK: Adv. Iron
   -- better version of iron, normal chunk to ore is 1:2 - this is 1:6, so 4 chunks (pig iron) turns into 24 ore
@@ -249,3 +394,6 @@ data:extend({
     }
   },
 })
+
+data.raw["recipe"]["iron-plate"].subgroup = "pm-iron-tm"
+data.raw["recipe"]["iron-plate"].order = "e"

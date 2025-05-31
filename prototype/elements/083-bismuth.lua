@@ -29,6 +29,21 @@ data:extend({
     order = "b",
     stack_size = 400
   },
+  {
+    type = "item",
+    name = "pm-bismuth-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/bismuth-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth.png", size = 64, scale = 0.5, mipmap_count = 4},
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-2.png", size = 64, scale = 0.5, mipmap_count = 4},
+      {filename = "__periodic-madness__/graphics/icons/ores/bismuth-3.png", size = 64, scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "pm-bismuth-ptm",
+    order = "c",
+    stack_size = 200
+  },
 
   {
     type = "recipe",

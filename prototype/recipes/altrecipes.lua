@@ -215,7 +215,7 @@ data:extend({
     energy_required = 4,
     category = "pm-washing",
     subgroup = "pm-sulfur-rnm",
-    order = "e",
+    order = "ia",
     enabled = false,
     ingredients =
     {
@@ -233,7 +233,7 @@ data:extend({
     name = "pm-water-deacifying",
     category = "pm-acids",
     subgroup = "pm-sulfur-rnm",
-    order = "f",
+    order = "ib",
     main_product = "water",
     enabled = false,
     crafting_machine_tint =

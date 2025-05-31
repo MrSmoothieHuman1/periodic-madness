@@ -70,6 +70,22 @@ data:extend({
         order = "e",
         stack_size = 200
     },
+    {
+        type = "item",
+        name = "pm-magnesium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/magnesium-ore.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/magnesium-ore.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/magnesium-ore-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/magnesium-ore-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/magnesium-ore-4.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-magnesium-aem",
+        order = "c",
+        stack_size = 200
+    },
 
     {
         type = "recipe",

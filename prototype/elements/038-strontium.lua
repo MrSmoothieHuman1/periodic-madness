@@ -42,6 +42,35 @@ data:extend({
         order = "e",
         stack_size = 200
     },
+    {
+        type = "item",
+        name = "pm-strontium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/strontium-ore-icon-3.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-strontium-aem",
+        fuel_value = "10MJ",
+        fuel_category = "pm-strontium",
+        order = "e",
+        stack_size = 200
+    },
+
+    {
+    type = "fluid",
+    name = "pm-strontium-sulfide-solution",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    subgroup = "pm-strontium-aem",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
 
     {
         type = "recipe",
