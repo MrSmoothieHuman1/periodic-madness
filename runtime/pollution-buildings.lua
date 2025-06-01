@@ -1,4 +1,4 @@
---credit to quezeler for helping me out on this, and giving me the code
+local flasher = require("runtime.alert-flashing")
 
 ---@type event_handler
 local handler = {on_nth_tick = {}, events = {}}
@@ -127,6 +127,7 @@ local function disable_building(entity, object, diode, status, signal, alert, sp
     entity.disabled_by_script = true
     entity.custom_status = { diode = diode, label = status }
     object.alert = rendering.draw_sprite(sprite)
+    flasher.add_render(object.alert)
   else
     alert.time_to_live = sprite.time_to_live
   end
