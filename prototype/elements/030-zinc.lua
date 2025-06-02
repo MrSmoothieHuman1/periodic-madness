@@ -44,6 +44,59 @@ data:extend({
     order = "a",
     stack_size = 300
   },
+  {
+    type = "item",
+    name = "pm-zinc-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/zinc-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-zinc-tm",
+    order = "b",
+    stack_size = 200
+  },
+
+  {
+    type = "fluid",
+    name = "pm-zinc-sulfide-concentrate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/zinc-sulfide-concentrate.png",
+    subgroup = "pm-advanced-zinc-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-zinc-froth",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nickel-froth.png",
+    subgroup = "pm-advanced-zinc-tm",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.32, g = 0.49, b = 0.87},
+    flow_color = {r = 0.32, g = 0.49, b = 0.87},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-zinc-vapour",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
+    subgroup = "pm-advanced-zinc-tm",
+    order = "d",
+    default_temperature = 15,
+    base_color = {r = 0.529, g = 0.43, b = 0.35},
+    flow_color = {r = 0.529, g = 0.43, b = 0.35},
+    auto_barrel = false
+  },
 
   {
     type = "recipe",
@@ -139,6 +192,111 @@ data:extend({
     results =
     {
       PM.product("pm-zinc-ore", 2),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-zinc-chunk-plate",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/zinc-chunks.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -4 }
+      },
+    },
+    subgroup = "pm-zinc-tm",
+    order = "d",
+    category = "smelting",
+    enabled = true,
+    allow_decomposition = false,
+    energy_required = 3.2,
+    ingredients =
+    {
+      PM.ingredient("pm-zinc-chunk", 2)
+    },
+    results = {
+      PM.product("pm-zinc-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-zinc-plate",
+    subgroup = "pm-zinc-tm",
+    order = "e",
+    category = "smelting",
+    energy_required = 3.2,
+    allow_productivity = true,
+    ingredients =
+    { 
+      PM.ingredient("pm-zinc-ore", 1) 
+    },
+    results = 
+    {
+      PM.product("pm-zinc-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-zinc",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-zinc.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
+    subgroup = "pm-zinc-tm",
+    order = "f",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-zinc-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-zinc", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-zinc-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/zinc-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-zinc-tm",
+    order = "g",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-zinc", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-zinc-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
 

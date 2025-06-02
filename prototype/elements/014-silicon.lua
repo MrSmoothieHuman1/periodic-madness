@@ -47,6 +47,21 @@ data:extend({
         stack_size = 100
     },
     {
+    type = "item",
+    name = "pm-industrial-grade-silicon-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
+    pictures =
+    {
+        {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon-2.png", size = 64, scale = 0.5},
+    },
+    stack_size = 200,
+    subgroup = "pm-silicon-mt",
+    order = "ca",
+    },
+    {
         type = "item",
         name = "pm-low-quality-polysilicon",
         icon_size = 64,
@@ -96,6 +111,77 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "g",
         stack_size = 10
+    },
+
+    {
+        type = "fluid",
+        name = "pm-silane",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/silane.png",
+        subgroup = "pm-silicon-mt",
+        order = "d",
+        default_temperature = 15,
+        base_color = {r = 0.968, g = 0.68, b = 1},
+        flow_color = {r = 0.968, g = 0.68, b = 1}
+    },
+    {
+        type = "fluid",
+        name = "pm-silicon-tetrachloride",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/silicon-tetrachloride.png",
+        subgroup = "pm-silicon-mt",
+        order = "c",
+        default_temperature = 15,
+        auto_barrel = false,
+        base_color = {r = 0.968, g = 0.68, b = 1},
+        flow_color = {r = 0.968, g = 0.68, b = 1}
+    },
+    {
+        type = "fluid",
+        name = "pm-trichlorosilane",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/trichlorosilane.png",
+        subgroup = "pm-silicon-mt",
+        order = "a",
+        default_temperature = 15,
+        auto_barrel = false,
+        base_color = {r = 0.968, g = 0.68, b = 1},
+        flow_color = {r = 0.968, g = 0.68, b = 1}
+    },
+    {
+        type = "fluid",
+        name = "pm-dichlorosilane",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/dichlorosilane.png",
+        subgroup = "pm-silicon-mt",
+        order = "b",
+        default_temperature = 15,
+        auto_barrel = false,
+        base_color = {r = 0.968, g = 0.68, b = 1},
+        flow_color = {r = 0.968, g = 0.68, b = 1}
+    },
+    {
+        type = "fluid",
+        name = "pm-dimethyldichlorosilane",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/dimethyldichlorosilane.png",
+        subgroup = "pm-silicon-mt",
+        order = "ba",
+        default_temperature = 15,
+        auto_barrel = false,
+        base_color = {r = 0.968, g = 0.68, b = 1},
+        flow_color = {r = 0.968, g = 0.68, b = 1}
+    },
+    {
+        type = "fluid",
+        name = "pm-liquid-silicone",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/silicone.png",
+        default_temperature = 15,
+        subgroup = "pm-silicon-mt",
+        order = "x",
+        base_color = {r = 1, g = 0.7, b = 0.7},
+        flow_color = {r = 1, g = 0.7, b = 0.7}
     },
 
     {

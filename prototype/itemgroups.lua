@@ -316,12 +316,36 @@ data:extend({
     name = "pm-oil-reforming",
     group = "intermediate-products",
     order = "ab"
-  },  
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-octane-processing",
+    group = "intermediate-products",
+    order = "ac"
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-solid-fuel",
+    group = "intermediate-products",
+    order = "ad"
+  },
   {
     type = "item-subgroup",
     name = "pm-fuels",
     group = "intermediate-products",
     order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-lubricant",
+    group = "intermediate-products",
+    order = "ba"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-coolant",
+    group = "intermediate-products",
+    order = "bb"
   },
   {
     type = "item-subgroup",
@@ -1296,6 +1320,26 @@ data:extend({
     name = "pm-splitters",
     group = "logistics",
     order = "bb"
+  },
+
+  --MARK: Fluid tab
+  {
+    type = "item-subgroup",
+    name = "pm-water",
+    group = "fluids",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-oil-fluid",
+    group = "fluids",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-acid",
+    group = "fluids",
+    order = "c"
   },
 })
 

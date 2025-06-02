@@ -32,6 +32,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-chrominum-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-2.png", size = 64, scale = 0.5}, i forgot to commit it, whoops
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-4.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-chrominum-tm",
+    order = "c",
+    stack_size = 200,
+  },
+  {
+    type = "item",
     name = "pm-chrome-green",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/chrome-green.png",

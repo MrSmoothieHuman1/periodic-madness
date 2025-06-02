@@ -348,8 +348,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "a",
     ingredients =
     {
       PM.ingredient("pm-legendary-diesel", 10, "fluid")
@@ -367,8 +367,8 @@ data:extend({
     energy_required = 4,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "b",
     ingredients =
     {
       PM.ingredient("pm-common-diesel", 40, "fluid")
@@ -386,8 +386,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "c",
     ingredients =
     {
       PM.ingredient("pm-kerosene", 20, "fluid")
@@ -405,8 +405,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "d",
     ingredients =
     {
       PM.ingredient("pm-petrol", 20, "fluid")
@@ -421,6 +421,8 @@ data:extend({
     name = "pm-solid-lubricant",
     energy_required = 4,
     category = "chemistry",
+    subgroup = "pm-lubricant",
+    order = "b",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -462,8 +464,8 @@ data:extend({
     name = "pm-heavy-lubricant",
     energy_required = 4,
     category = "chemistry",
-    subgroup = "pm-oil",
-    order = "f",
+    subgroup = "pm-lubricant",
+    order = "c",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -795,11 +797,14 @@ data:extend({
   {
     type = "recipe",
     name = "pm-octane-processing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/octane-processing.png",
     enabled = false,
     energy_required = 10,
     category = "oil-processing",
+    subgroup = "pm-octane-processing",
+    order = "a",
     allow_productivity = true,
-    main_product = "pm-iso-octane",
     ingredients = 
     {
       PM.ingredient("pm-butene-gas", 40, "fluid"),
@@ -819,6 +824,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-octane-processing",
+    order = "b",
     ingredients = 
     {
       PM.ingredient("pm-N-octane", 3, "fluid"),
@@ -835,6 +842,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-octane-processing",
+    order = "c",
     ingredients = 
     {
       PM.ingredient("pm-2-3-3-trimethylpentane", 4, "fluid"),
@@ -851,6 +860,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "e",
     allow_productivity = true,
     ingredients =
     {
@@ -869,6 +880,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "f",
     allow_productivity = true,
     ingredients =
     {
@@ -887,6 +900,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -1258,6 +1273,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "oil-processing",
+    subgroup = "pm-oil",
+    order = "y",
     main_product = "pm-syngas",
     ingredients =
     {
@@ -1290,9 +1307,8 @@ data:extend({
   }
 } --[[@as data.RecipePrototype[] ]])
 
-data.raw["recipe"]["lubricant"].subgroup = "pm-oil"
-data.raw["recipe"]["lubricant"].order = "e"
---data.raw["recipe"]["lubricant"].energy_required = 2
+data.raw["recipe"]["lubricant"].subgroup = "pm-lubricant"
+data.raw["recipe"]["lubricant"].order = "a"
 data.raw["recipe"]["lubricant"].ingredients =
 {
   PM.ingredient("pm-lubricating-oils", 12, "fluid"),
@@ -1304,6 +1320,8 @@ data.raw["recipe"]["lubricant"].results =
 }
 
 data.raw["recipe"]["solid-fuel-from-heavy-oil"] = nil
+data.raw["recipe"]["solid-fuel-from-light-oil"] = nil
+data.raw["recipe"]["solid-fuel-from-petroleum"] = nil
 
 data.raw["recipe"]["coal-liquefaction"].subgroup = "pm-oil"
 data.raw["recipe"]["coal-liquefaction"].order = "c"

@@ -1,5 +1,52 @@
 local PM = require("library")
 data:extend({
+    {
+    type = "fluid",
+    name = "pm-sulfur-dioxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/sulfur-dioxide.png",
+    subgroup = "pm-sulfur-rnm",
+    order = "f",
+    default_temperature = 15,
+    base_color = {r = 1, g = 1, b = 0},
+    flow_color = {r = 1, g = 1, b = 0},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-sulfur-trioxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/sulfur-trioxide.png",
+    subgroup = "pm-sulfur-rnm",
+    order = "g",
+    default_temperature = 15,
+    base_color = {r = 1, g = 0.8, b = 0},
+    flow_color = {r = 1, g = 0.8, b = 0},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-oleum",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/oleum.png",
+    subgroup = "pm-sulfur-rnm",
+    order = "h",
+    default_temperature = 15,
+    base_color = {r = 1, g = 1, b = 0},
+    flow_color = {r = 1, g = 1, b = 0},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-hydrogen-sulfide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-sulfide.png",
+    subgroup = "pm-sulfur-rnm",
+    order = "d",
+    default_temperature = 15,
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+  },
 
   {
     type = "recipe",
@@ -10,7 +57,7 @@ data:extend({
     enabled = false,
     category = "pm-washing",
     subgroup = "pm-sulfur-rnm",
-    order = "a",
+    order = "ba",
     ingredients =
     {
       PM.ingredient("pm-fuel-oils", 20, "fluid"),
@@ -34,7 +81,7 @@ data:extend({
     enabled = false,
     category = "pm-washing",
     subgroup = "pm-sulfur-rnm",
-    order = "b",
+    order = "bb",
     ingredients =
     {
       PM.ingredient("pm-kerosene", 20, "fluid"),
@@ -123,7 +170,7 @@ data:extend({
     energy_required = 2,
     category = "pm-moltening",
     subgroup = "pm-sulfur-rnm",
-    order = "d",
+    order = "f",
     main_product = "pm-sulfur-dioxide",
     ingredients =
     {
@@ -147,7 +194,7 @@ data:extend({
     energy_required = 3,
     category = "pm-acids",
     subgroup = "pm-sulfur-rnm",
-    order = "e",
+    order = "g",
     ingredients =
     {
       PM.ingredient("pm-sulfur-dioxide", 10, "fluid"),
@@ -170,7 +217,7 @@ data:extend({
     energy_required = 6,
     category = "pm-acids",
     subgroup = "pm-sulfur-rnm",
-    order = "f",
+    order = "h",
     allow_productivity = true,
     ingredients =
     {
@@ -189,7 +236,7 @@ data:extend({
     energy_required = 6,
     category = "pm-washing",
     subgroup = "pm-sulfur-rnm",
-    order = "g",
+    order = "i",
     allow_productivity = true,
     main_product = "sulfuric-acid",
     ingredients =
@@ -204,3 +251,6 @@ data:extend({
     }
   },
 })
+
+data.raw["item"]["sulfur"].subgroup = "pm-sulfur-rnm"
+data.raw["item"]["sulfur"].order = "a"

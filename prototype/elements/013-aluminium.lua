@@ -32,6 +32,22 @@ data:extend({
     order = "b",
     stack_size = 300
   },
+  {
+    type = "item",
+    name = "pm-aluminium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/aluminium-ore.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/aluminium-ore-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-aluminium-ptm",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -167,4 +183,75 @@ data:extend({
       PM.product("pm-bauxite", 8),
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-aluminium-plate",
+    subgroup = "pm-aluminium-ptm",
+    order = "e",
+    category = "smelting",
+    energy_required = 3.2,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-aluminium-ore", 1) },
+    results = {
+      PM.product("pm-aluminium-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-aluminium",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-aluminium.png",
+        icon_size = 64,
+        scale = 0.4,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = { 0, -6 }
+      },
+    },
+    subgroup = "pm-aluminium-ptm",
+    order = "f",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-aluminium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-aluminium", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-aluminium-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/aluminium-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-aluminium-ptm",
+    order = "g",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-aluminium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-aluminium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
 })
