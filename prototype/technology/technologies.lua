@@ -4888,7 +4888,7 @@ data:extend({
       PM.unlock_recipe("pm-cadmium-telluride")
     },
     prerequisites = {"pm-tempature-inators-3"},
-    unit = 
+    unit =
     {
       count = 450,
       ingredients =
@@ -4912,7 +4912,7 @@ data:extend({
       PM.unlock_recipe("pm-longer-handed-inserter")
     },
     prerequisites = {"lubricant"},
-    unit = 
+    unit =
     {
       count = 275,
       ingredients =
@@ -4930,12 +4930,14 @@ data:extend({
     name = "pm-better-vanadium-oxide",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-vanadium-oxide.png",
-    effects = 
+    effects =
     {
-      
+      PM.unlock_recipe("pm-sodium-metavanadate"),
+      PM.unlock_recipe("pm-red-cake-precipitate"),
+      PM.unlock_recipe("pm-better-vanadium-oxide")
     },
     prerequisites = {"pm-tempature-inators-3"},
-    unit = 
+    unit =
     {
       count = 450,
       ingredients =

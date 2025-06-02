@@ -31,6 +31,21 @@ data:extend({
     order = "b",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-sodium-metavanadate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sodium-metavanadate.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/sodium-metavanadate.png",   size = 64, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/sodium-metavanadate-2.png", size = 64, scale = 0.26 },
+      { filename = "__periodic-madness__/graphics/icons/sodium-metavanadate-3.png", size = 64, scale = 0.24 },
+    },
+    subgroup = "pm-vanadium-tm",
+    order = "a",
+    stack_size = 300
+  },
 
 
   {
@@ -155,4 +170,65 @@ data:extend({
       PM.product_range("pm-vanadium-ore", 0, 4)
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-sodium-metavanadate",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-vanadium-tm",
+    order = "e",
+    main_product = "pm-sodium-metavanadate",
+    ingredients = 
+    {
+      PM.ingredient("pm-vanadium-ore", 4),
+      PM.ingredient("pm-low-sulfur-residuals", 5, "fluid"),
+      PM.ingredient("pm-ammonium-chloride", 4),
+      PM.ingredient("pm-sodium-hydroxide", 2.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-sodium-metavanadate", 4),
+      PM.product_range("pm-high-sulfur-residuals", 1, 3, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-red-cake-precipitate",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    category = "pm-acids",
+    subgroup = "pm-vanadium-tm",
+    order = "f",
+    ingredients = 
+    {
+      PM.ingredient("sulfuric-acid", 2, "fluid"),
+      PM.ingredient("pm-sodium-metavanadate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-red-cake-precipitate", 8, "fluid"),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-better-vanadium-oxide",
+    allow_productivity = true,
+    enabled = false,
+    energy_required = 12,
+    category = "pm-moltening",
+    subgroup = "pm-vanadium-tm",
+    order = "g",
+    ingredients = 
+    {
+      PM.ingredient("pm-red-cake-precipitate", 8, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 2)
+    },
+    results = 
+    {
+      PM.product("pm-vanadium-oxide", 3)
+    }
+  }
 })
