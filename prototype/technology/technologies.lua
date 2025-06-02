@@ -4929,7 +4929,7 @@ data:extend({
     type = "technology",
     name = "pm-better-vanadium-oxide",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-vanadium-oxide.png",
     effects = 
     {
       
