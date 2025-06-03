@@ -77,6 +77,7 @@ end
 ---| EventData.on_robot_built_entity
 ---| EventData.on_space_platform_built_entity
 ---| EventData.script_raised_built
+---| EventData.script_raised_revive
 ---@param event EventData.BuiltEvents
 local function built_entity(event)
   local entity = event.entity
@@ -100,6 +101,7 @@ handler.events[defines.events.on_built_entity] = built_entity
 handler.events[defines.events.on_robot_built_entity] = built_entity
 handler.events[defines.events.on_space_platform_built_entity] = built_entity
 handler.events[defines.events.script_raised_built] = built_entity
+handler.events[defines.events.script_raised_revive] = built_entity
 
 --MARK: Disabling
 
