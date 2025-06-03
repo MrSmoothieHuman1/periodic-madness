@@ -2687,7 +2687,7 @@ data:extend({
       fade_out_ticks = 20
     },
     module_slots = 2,
-    allowed_effects = PM.all_effects(),
+    allowed_effects = PM.all_effects_but("quality", "productivity"),
     source_inventory_size = 1,
     result_inventory_size = 1,
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
