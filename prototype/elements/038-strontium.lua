@@ -28,7 +28,14 @@ data:extend({
         type = "item",
         name = "pm-strontium-sulfide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/strontium-sulfide.png",
+        pictures =
+        {
+            { filename = "__periodic-madness__/graphics/icons/strontium-sulfide.png", size = 64, scale = 0.5},
+            { filename = "__periodic-madness__/graphics/icons/strontium-sulfide-2.png", size = 64, scale = 0.5},
+            { filename = "__periodic-madness__/graphics/icons/strontium-sulfide-3.png", size = 64, scale = 0.5},
+            { filename = "__periodic-madness__/graphics/icons/strontium-sulfide-4.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-strontium-aem",
         order = "d",
         stack_size = 225
