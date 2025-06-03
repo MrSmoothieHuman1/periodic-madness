@@ -12,7 +12,8 @@ local pollution_definition = {
   --60 pollution is when trees start dying - makes sense thematically, but might be too low?
   ["pm-greenhouse"] = {0, 60},
   ["pm-factorian-bacteria-greenhouse"] = {0, 60},
-  ["pm-CO2-nullifer"] = {0, 120}
+  ["pm-CO2-nullifer"] = {0, 120},
+  ["pm-air-filterer"] = {1, 9999}
 }
 
 --pollution value to colour list:
