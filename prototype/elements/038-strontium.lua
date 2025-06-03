@@ -71,7 +71,7 @@ data:extend({
     type = "fluid",
     name = "pm-strontium-sulfide-solution",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/strontium-sulfide-solution.png",
     subgroup = "pm-strontium-aem",
     order = "c",
     default_temperature = 15,
