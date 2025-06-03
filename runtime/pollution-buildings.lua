@@ -13,7 +13,7 @@ local pollution_definition = {
   ["pm-greenhouse"] = {0, 60},
   ["pm-factorian-bacteria-greenhouse"] = {0, 60},
   ["pm-CO2-nullifer"] = {0, 120},
-  ["pm-air-filterer"] = {1, 9999}
+  ["pm-air-filterer"] = {1, 0}
 }
 
 --pollution value to colour list:
