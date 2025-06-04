@@ -1189,7 +1189,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/air-filter-2.png",
     subgroup = "pm-air-filters-rnm",
     order = "c",
@@ -1198,7 +1198,7 @@ data:extend({
   {
     type = "item",
     name = "pm-dirty-advanced-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/dirty-air-filter-2.png",
     subgroup = "pm-air-filters-rnm",
     order = "d",
@@ -1207,7 +1207,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-oxygen-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/oxygen-air-filter-2.png",
     subgroup = "pm-oxygen-rnm",
     order = "b",
@@ -1216,7 +1216,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-nitrogen-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/nitrogen-air-filter-2.png",
     subgroup = "pm-nitrogen-rnm",
     order = "b",
@@ -1225,7 +1225,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-chlorine-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/chlorine-air-filter-2.png",
     subgroup = "pm-chlorine-rnm",
     order = "b",
@@ -1234,7 +1234,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-carbon-dioxide-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/carbon-dioxide-air-filter-2.png",
     subgroup = "pm-carbon-rnm",
     order = "b",
@@ -1243,7 +1243,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-trace-gas-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/trace-gas-air-filter-2.png",
     subgroup = "pm-trace-gas-rnm",
     order = "b",
