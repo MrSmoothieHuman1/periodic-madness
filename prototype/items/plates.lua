@@ -91,6 +91,11 @@ data:extend({
     name = "pm-tungsten-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/tungsten-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-tungsten-tm",
     order = "f",
     stack_size = 100
