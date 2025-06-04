@@ -242,7 +242,7 @@ data:extend({
     order = "f",
     ingredients = 
     {
-      PM.ingredient("sulfuric-acid", 2, "fluid"),
+      PM.ingredient("sulfuric-acid", 1, "fluid"),
       PM.ingredient("pm-sodium-metavanadate", 2)
     },
     results = 
