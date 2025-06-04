@@ -255,7 +255,7 @@ data:extend({
     name = "pm-better-vanadium-oxide",
     allow_productivity = true,
     enabled = false,
-    energy_required = 6,
+    energy_required = 3,
     category = "pm-moltening",
     subgroup = "pm-vanadium-tm",
     order = "g",
