@@ -4,6 +4,10 @@ if ... ~= "library" then
   return require("library")
 end
 
+---@class PeriodicLibraryGlobals
+local PM_Global = _ENV.__PM or {}
+_ENV.__PM = PM_Global
+
 ---@alias item_type "fluid"|"item"
 
 ---@class PeriodicLibrary
@@ -500,6 +504,62 @@ function PM.modify_nothing(hidden)
   } --[[@as data.NothingModifier]]
 end
 
+--MARK: Custom Modifiers
+
+---@type table<string, data.IconData[]>
+local custom_modifiers = PM_Global.custom_modifiers or {}
+PM_Global.custom_modifiers = custom_modifiers
+
+---Defines the icon of the custom modifier when later used by `PM.custom_modifier`
+---@see PeriodicLibrary.custom_modifier
+---@param name string
+---@param icons data.IconData[]
+function PM.define_modifier(name, icons)
+  if custom_modifiers[name] then
+    error("Custom modifier already defined: "..name)
+  end
+
+  custom_modifiers[name] = icons
+end
+
+---Shorthand for a custom modifier. To have an icon defined, please use `PM.define_modifier`
+---@see PeriodicLibrary.define_modifier
+---@param name string
+---@param param number
+---@param hidden? boolean
+---@return data.NothingModifier
+function PM.custom_modifier(name, param, hidden)
+  local icons = custom_modifiers[name]
+  if not icons then log("Custom modifer was used without defining an icon for it: "..name) end
+  return {
+    type = "nothing",
+    effect_description = {"pm-modifier."..name, tostring(param)},
+    hidden = hidden,
+    icons = icons,
+  }--[[@as data.NothingModifier]]
+end
+
+---Go over the effects of a technology and add up the numbers of the given custom modifier.
+---@param technology LuaTechnology|LuaTechnologyPrototype
+---@return number change
+function PM.get_custom_modification(name, technology)
+  if technology.object_name == "LuaTechnology" then
+    technology = technology.prototype
+  end
+  local effects = technology.effects
+  local locale_key = "pm-modifier."..name
+
+  local change = 0
+  for _, modifier in pairs(effects) do
+    if modifier.type == "nothing"
+    and modifier.effect_description[1] == locale_key then
+      change = change + tonumber(modifier.effect_description[2])
+    end
+  end
+
+  return change
+end
+
 --MARK: Module Effects
 
 ---Returns an effect type limitation of every effect
@@ -526,7 +586,7 @@ function PM.all_effects_but(...)
     ["pollution"] = true,
     ["quality"] = true,
   }
-  for _, effect in pairs({...}--[[@as table<int,data.EffectTypeLimitation>]]) do
+  for _, effect in pairs({...}) do
     effects[effect] = nil
   end
   ---@type data.EffectTypeLimitation[]
