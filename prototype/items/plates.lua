@@ -10,7 +10,7 @@ data:extend({
     pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/plates/nickel-plate.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/plates/nickel-plate-2.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/plates/nickel-plate-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-nickel-tm",
     order = "c",
@@ -38,7 +38,7 @@ data:extend({
     pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/plates/zinc-plate.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/plates/zinc-plate-2.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/plates/zinc-plate-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-zinc-tm",
     order = "c",
