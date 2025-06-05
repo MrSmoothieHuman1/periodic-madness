@@ -126,7 +126,6 @@ Date: 2024-12-08
     - Changed transition leeching of iron, copper, zinc and nickel to give 6 ore.
     - Changed basic ferrum and patina leeching to have a 75% chance to give the ore back.
     - Changed the look of molten cadnium slightly.
-    - Finally changed what you start with in PM, instead of just letting you fend for yourself. (thank you penny)
     - Chnaged emerald crushing to give beryl, not beryllium ore.
     - Changed evaporators to be unlocked within the crushing/glass technology.
     - Changed beacon 1's to take 8 red circuits, not 14.
