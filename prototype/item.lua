@@ -1558,7 +1558,7 @@ data:extend({
     name = "pm-personal-robocharger-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robocharger-equipment-icon.png",
     icon_size = 64,
-    place_as_equipment_result = "pm-personal-robostasher-equipment",
+    place_as_equipment_result = "pm-personal-robocharger-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
     stack_size = 20
@@ -1568,7 +1568,7 @@ data:extend({
     name = "pm-personal-robocharger-mk2-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robocharger-mk2-equipment-icon.png",
     icon_size = 64,
-    place_as_equipment_result = "pm-personal-robostasher-mk2-equipment",
+    place_as_equipment_result = "pm-personal-robocharger-mk2-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
     stack_size = 20
