@@ -173,6 +173,8 @@ Date: 2024-12-08
     - Increased the amount of sulfuric acid you get from SO2 cracking from 15 to 20.
     - Made vanadium oxide take 2 vanadium and 5 oxygen, instead of 4 vanadium.
     - Changed oleum to use 5 sulfuric acid instead of 10.
+    - Changed solders stack size to 75.
+    - Changed semiconductors stack size to 25.
 
   Fixes:
     - Fixed the science pack item names captilisation.
