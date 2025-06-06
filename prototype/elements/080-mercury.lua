@@ -39,7 +39,7 @@ data:extend({
     type = "item",
     name = "pm-solid-mercury",
     icon_size = 64,
-    icon = "__base__/graphics/icons/solid-fuel.png",
+    icon = "__periodic-madness__/graphics/icons/solid-mercury.png",
     subgroup = "pm-mercury-tm",
     order = "d",
     stack_size = 100
