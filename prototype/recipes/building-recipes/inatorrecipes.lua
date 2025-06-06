@@ -219,6 +219,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-mercury-melting",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/solid-mercury-melting.png",
     enabled = false,
     energy_required = 3,
     category = "pm-moltening",
