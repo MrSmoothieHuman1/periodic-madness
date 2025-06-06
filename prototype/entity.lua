@@ -8272,35 +8272,25 @@ fluid_boxes =
   alert_icon_shift = util.by_pixel(-3, -12),
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
-  graphics_set = 
-{
-  animations =
+  graphics_set =
   {
-    layers =
+    animation =
     {
+      layers =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant.png",
-        priority = "high",
-        width = 214,
-        height = 226,
-        shift = util.by_pixel(0, -4),
-        scale = 0.5
-      },
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
-        priority = "high",
-        width = 226,
-        height = 214,
-        draw_as_shadow = true,
-        shift = util.by_pixel(40 - 10, -4),
-        scale = 0.5
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant.png",
+          priority = "high",
+          width = 192,
+          height = 192,
+          scale = 0.5
+        },
       }
-    }
+    },
   },
-},
-  crafting_categories = { "pm-cooling" },
+  crafting_categories = {"pm-cooling"},
   crafting_speed = 1,
-  energy_usage = "230kW",
+  energy_usage = "240kW",
   energy_source =
   {
     type = "electric",
@@ -8326,21 +8316,21 @@ fluid_boxes =
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+      pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 1}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.south--[[@as int]], position = {-1, 1}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {1, -1}}},
       secondary_draw_orders = { north = -1 }
     },
   },
