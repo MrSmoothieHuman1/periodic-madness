@@ -8733,3 +8733,6 @@ data.raw["furnace"]["electric-furnace"].result_inventory_size = 2
 
 data.raw["furnace"]["stone-furnace"].result_inventory_size = 2
 data.raw["furnace"]["steel-furnace"].result_inventory_size = 2
+
+data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
+data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 10

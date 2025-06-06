@@ -174,6 +174,7 @@ Date: 2024-12-08
     - Changed oleum to use 5 sulfuric acid instead of 10.
     - Changed solders stack size to 75.
     - Changed semiconductors stack size to 25.
+    - Increase range + reach of medium electric poles, so they can reach around assemblers.
 
   Fixes:
     - Fixed the science pack item names captilisation.
