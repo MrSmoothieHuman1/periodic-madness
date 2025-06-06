@@ -200,6 +200,7 @@ Date: 2024-12-08
     - Fixed electric furnace 1's not being behind red circuits in the tech tree.
     - Unhid molybdenum TM leeching from the player.
     - Made electric engines prerequisite red circuits.
+    - Fixed temperature=inators not being able to replaced or upgraded over eachother.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168

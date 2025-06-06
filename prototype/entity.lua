@@ -1863,6 +1863,8 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.659, g = 0.106, b = 0.106},
+    fast_replaceable_group = "pm-molteninator",
+    next_upgrade = "pm-molten-inator-2",
     working_sound =
     {
       sound =
@@ -1957,6 +1959,8 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.106, g = 0.647, b = 0.659},
+    fast_replaceable_group = "pm-coldinator",
+    next_upgrade = "pm-cold-inator-2",
     working_sound =
     {
       sound =
@@ -2053,6 +2057,8 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.659, g = 0.106, b = 0.106},
+    fast_replaceable_group = "pm-molteninator",
+    next_upgrade = "pm-molten-inator-3",
     module_slots = 1,
     working_sound =
     {
@@ -2149,6 +2155,8 @@ data:extend({
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.106, g = 0.647, b = 0.659},
     module_slots = 1,
+    fast_replaceable_group = "pm-coldinator",
+    next_upgrade = "pm-cold-inator-3",
     working_sound =
     {
       sound =
@@ -7480,6 +7488,7 @@ data:extend({
   allowed_effects = PM.all_effects(),
   map_color = {r = 0.659, g = 0.106, b = 0.106},
   module_slots = 2,
+  fast_replaceable_group = "pm-molteninator",
   working_sound =
   {
     sound =
@@ -7591,6 +7600,8 @@ data:extend({
   allowed_effects = PM.all_effects(),
   map_color = {r = 0.106, g = 0.647, b = 0.659},
   module_slots = 2,
+  fast_replaceable_group = "pm-coldinator",
+  next_upgrade = "pm-cold-inator-3",
   working_sound =
   {
     sound =
