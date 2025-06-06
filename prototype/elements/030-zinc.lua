@@ -362,6 +362,7 @@ data:extend({
   results =
   {
     PM.product_range("pm-sulfur-dioxide", 0, 0.5, "fluid"),
+    PM.product_range("pm-hydrogen-sulfide", 0, 0.75, "fluid"),
     PM.product("pm-zinc-oxide", 30)
   }
 },
