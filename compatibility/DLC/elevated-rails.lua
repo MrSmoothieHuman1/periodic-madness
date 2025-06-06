@@ -15,13 +15,13 @@ if feature_flags["rail_bridges"] then
     {
         PM.ingredient("refined-concrete", 10),
         PM.ingredient("pm-heavyweight-framing", 20),
-        PM.ingredient("pm-lightweight-framing", 15)
+        PM.ingredient("pm-lightweight-panelling", 15)
     }
     data.raw["recipe"]["rail-ramp"].energy_required = 2
     data.raw["recipe"]["rail-ramp"].ingredients = 
     {
         PM.ingredient("rail", 8),
-        PM.ingredient("pm-lightweight-framing", 15),
+        PM.ingredient("pm-lightweight-panelling", 15),
         PM.ingredient("refined-concrete", 25)
     }
 end
