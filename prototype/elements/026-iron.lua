@@ -72,8 +72,8 @@ data:extend({
     subgroup = "pm-iron-tm",
     order = "i",
     default_temperature = 15,
-    base_color = {r = 0.56, g = 0.422, b = 0.22},
-    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+    base_color = {r = 0.24, g = 0.572, b = 0.6},
+    flow_color = {r = 0.24, g = 0.572, b = 0.6}
   },
   {
     type = "fluid",

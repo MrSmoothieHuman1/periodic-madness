@@ -82,8 +82,8 @@ data:extend({
     subgroup = "pm-copper-tm",
     order = "i",
     default_temperature = 15,
-    base_color = {r = 0.56, g = 0.422, b = 0.22},
-    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+    base_color = {r = 0.6, g = 0.432, b = 0.24},
+    flow_color = {r = 0.6, g = 0.432, b = 0.24}
   },
   {
     type = "fluid",
