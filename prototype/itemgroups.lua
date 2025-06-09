@@ -1321,6 +1321,12 @@ data:extend({
     group = "logistics",
     order = "bb"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-express-inserters",
+    group = "logistics",
+    order = "ca"
+  }
 
   --MARK: Fluid tab
   {

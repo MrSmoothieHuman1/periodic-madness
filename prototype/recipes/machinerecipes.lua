@@ -1235,7 +1235,8 @@ data:extend({
     enabled = false,
     energy_required = 1,
     category = "crafting-with-fluid",
-    order = "e[long-handed-inserter]",
+    subgroup = "pm-express-inserters",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("fast-inserter", 1),
@@ -1253,6 +1254,8 @@ data:extend({
     name = "pm-express-long-handed-inserter",
     enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "pm-express-inserters",
+    order = "b",
     energy_required = 1,
     ingredients = 
     {
@@ -1272,6 +1275,8 @@ data:extend({
     name = "pm-express-bulk-inserter",
     enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "pm-express-inserters",
+    order = "c",
     energy_required = 1,
     ingredients = 
     {

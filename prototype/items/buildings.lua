@@ -678,6 +678,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
     place_result = "pm-express-inserter",
+    subgroup = "pm-express-inserters",
+    order = "a",
     stack_size = 50
   },
   {
@@ -686,6 +688,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-long-handed-inserter.png",
     place_result = "pm-express-long-handed-inserter",
+    subgroup = "pm-express-inserters",
+    order = "b",
     stack_size = 50
   },
   {
@@ -694,6 +698,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
     place_result = "pm-express-bulk-inserter",
+    subgroup = "pm-express-inserters",
+    order = "c",
     stack_size = 50
   },
   {
