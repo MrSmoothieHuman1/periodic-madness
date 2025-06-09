@@ -10,6 +10,7 @@ data:extend({
     {
       {filename = "__periodic-madness__/graphics/icons/ores/chromite.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/chromite-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromite-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-chrominum-tm",
     order = "a",
