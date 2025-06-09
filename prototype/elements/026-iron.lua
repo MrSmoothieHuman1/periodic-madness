@@ -51,13 +51,13 @@ data:extend({
     type = "item",
     name = "pm-combined-ore-slab",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
+    icon = "__periodic-madness__/graphics/icons/ores/combined-ore-slab.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/combined-ore-slab.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/combined-ore-slab-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/combined-ore-slab-3.png",   size = 64, scale = 0.5 },
+      --{ filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-advanced-iron-tm",
     order = "d",
