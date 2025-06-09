@@ -1326,7 +1326,7 @@ data:extend({
     name = "pm-express-inserters",
     group = "logistics",
     order = "ca"
-  }
+  },
 
   --MARK: Fluid tab
   {
