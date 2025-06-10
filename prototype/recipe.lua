@@ -1289,7 +1289,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-panel-equipment-2", 1)
+      PM.product("pm-solar-panel-equipment-3", 1)
     }
   },
   {
