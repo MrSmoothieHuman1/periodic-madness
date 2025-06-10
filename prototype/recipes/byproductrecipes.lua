@@ -328,6 +328,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-seperation.png",
     category = "chemistry",
+    subgroup = "pm-sulfur-rnm",
+    order = "eb",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -391,6 +393,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
     category = "pm-mixing",
+    subgroup = "pm-sulfur-rnm",
+    order = "ec",
     enabled = false,
     energy_required = 5,
     ingredients = 
