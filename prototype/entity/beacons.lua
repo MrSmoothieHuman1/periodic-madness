@@ -6,7 +6,7 @@ data:extend({
     {
         type = "beacon",
         name = "pm-hub-beacon",
-        icon = "__base__/graphics/icons/beacon.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "pm-hub-beacon"},
         fast_replaceable_group = "beacon",
