@@ -1602,7 +1602,7 @@ data:extend({
       PM.unlock_recipe("pm-factorian-bacteria-greenhouse"),
       PM.unlock_recipe("pm-agar-solution"),
       PM.unlock_recipe("pm-bacteriaed-agar-solution"),
-      PM.unlock_recipe("pm-gene-harvesting"),
+      PM.unlock_recipe("pm-gene-base"),
     },
     prerequisites = {"pm-greenhouse"},
     unit =

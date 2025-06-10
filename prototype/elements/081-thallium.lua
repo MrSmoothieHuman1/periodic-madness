@@ -46,7 +46,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png",
+        icon = "__periodic-madness__/graphics/icons/ores/lorandite.png",
         icon_size = 64,
       },
       {
@@ -60,6 +60,7 @@ data:extend({
     subgroup = "pm-thallium-ptm",
     allow_productivity = true,
     order = "a",
+    main_product = "pm-lorandite",
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),

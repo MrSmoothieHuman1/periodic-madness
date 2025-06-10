@@ -99,7 +99,8 @@
        ["pm-liquid-kasethal", "pm-molten-kasethal"],
        ["pm-hydrogen-bromide-leeching", "pm-hydrogen-bromide"],
        ["pm-thallium-leeching", "pm-lorandite"],
-       ["pm-mixed-bastnasite-seperation", "pm-mixed-bastnasite-crushing"]
+       ["pm-mixed-bastnasite-seperation", "pm-mixed-bastnasite-crushing"],
+       ["pm-gene-harvesting", "pm-gene-base"]
     ],
     "autoplace-control":
     [

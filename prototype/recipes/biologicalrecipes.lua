@@ -352,7 +352,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-gene-harvesting",
+    name = "pm-gene-base",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/gene-base-harvesting.png",
     energy_required = 2,
