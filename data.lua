@@ -119,6 +119,7 @@ require("prototype.entity.enemies")
 
 require("prototype.entity.beacon-graphics.beacon-2-graphics") --i dont have the time nor strength to decode this into a normal definition
 require("prototype.entity.beacon-graphics.beacon-3-graphics")
+require("prototype.entity.beacon-graphics.proximity-beacon-graphics")
 
 require("prototype.remnants")
 require("prototype.achievements")
