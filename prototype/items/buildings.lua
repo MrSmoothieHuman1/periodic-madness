@@ -707,6 +707,8 @@ data:extend({
     name = "pm-beacon-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
+    subgroup = "module",
+    order = "b",
     place_result = "pm-beacon-2",
     stack_size = 50
   },
@@ -715,6 +717,8 @@ data:extend({
     name = "pm-hub-beacon",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    subgroup = "module",
+    order = "c",
     place_result = "pm-hub-beacon",
     stack_size = 50
   },
@@ -723,6 +727,8 @@ data:extend({
     name = "pm-proximity-beacon",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    subgroup = "module",
+    order = "d",
     place_result = "pm-proximity-beacon",
     stack_size = 50
   },
