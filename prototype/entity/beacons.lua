@@ -18,7 +18,7 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_effects = {"consumption", "speed", "pollution"},
-        graphics_set = require("__base__.prototypes.entity.beacon-animations"),
+        graphics_set = require("prototype.entity.beacon-graphics.hub-beacon-graphics"),
         radius_visualisation_picture =
         {
           filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
