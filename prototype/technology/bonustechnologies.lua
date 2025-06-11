@@ -1545,6 +1545,7 @@ data.raw["technology"]["stronger-explosives-4"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
+data.raw["technology"]["stronger-explosives-5"].unit.time = 80
 data.raw["technology"]["stronger-explosives-5"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1553,6 +1554,7 @@ data.raw["technology"]["stronger-explosives-5"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
+data.raw["technology"]["stronger-explosives-6"].unit.time = 80
 data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1560,6 +1562,19 @@ data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["stronger-explosives-7"].max_level = 7
+data.raw["technology"]["stronger-explosives-7"].unit.count_formula = "700"
+data.raw["technology"]["stronger-explosives-7"].unit.time = 120
+data.raw["technology"]["stronger-explosives-7"].prerequisites = {"stronger-explosives-6", "pm-alkaline-earth-metal-pack-unlock"}
+data.raw["technology"]["stronger-explosives-7"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1},
+  {"pm-alklaine-earth-metals-science-pack", 1}
 }
 
 --MARK: V.Inserter capacity

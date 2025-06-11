@@ -1182,7 +1182,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-solar-panel-2", 1),
-      PM.ingredient("pm-cadnium-telluride", 4),
+      PM.ingredient("pm-cadmium-telluride", 4),
       PM.ingredient("pm-magnesium-chloride", 4),
       PM.ingredient("pm-light-coolant", 2, "fluid")
     },
