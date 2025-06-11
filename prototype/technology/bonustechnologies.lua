@@ -1556,7 +1556,8 @@ data.raw["technology"]["stronger-explosives"].effects =
 {
   PM.modify_ammo("ammo-damage", "grenade", 0.2)
 }
-data.raw["technology"]["stronger-explosives-2"].prerequisites = {"stronger-explosives-1"}
+data.raw["technology"]["stronger-explosives-2"].prerequisites = {"stronger-explosives-1", "rocketry"}
+data.raw["technology"]["stronger-explosives-2"].icon = "__base__/graphics/technology/stronger-explosives-2.png"
 data.raw["technology"]["stronger-explosives-2"].effects =
 {
   PM.modify_ammo("ammo-damage", "grenade", 0.25),
