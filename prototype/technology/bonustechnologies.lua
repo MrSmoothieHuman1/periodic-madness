@@ -1723,6 +1723,7 @@ data.raw["technology"]["refined-flammables-6"].effects =
   PM.modify_ammo("ammo-damage", "flamethrower", 0.3),
   PM.modify_turret("flamethrower-turret", 0.2),
 }
+data.raw["technology"]["refined-flammables-6"].prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "refined-flammables-5"}
 data.raw["technology"]["refined-flammables-6"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1732,6 +1733,7 @@ data.raw["technology"]["refined-flammables-6"].unit.ingredients =
   {"pm-alkali-metal-science-pack", 1},
   {"pm-alkaline-earth-metal-science-pack", 1}
 }
+data.raw["technology"]["refined-flammables-7"].prerequisites = {"refined-flammables-6"}
 data.raw["technology"]["refined-flammables-7"].unit.count_formula = "950"
 data.raw["technology"]["refined-flammables-7"].effects =
 {
