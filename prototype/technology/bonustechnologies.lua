@@ -15,7 +15,7 @@ local PM = require("library")
 --Laser shooting: Vanilla, unchanged
 --Braking force: Vanilla, unchanged
 --Stronger explosives: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3) - any new type of weapon added starts at 0.2 and increases the same amount
---Refined flammables: starts at 0.1, increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2)
+--Refined flammables: starts at 0.15, increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2) - flamethrowers start at 0.05 and increase by 0.05 every 2 levels
 
 --This covers which science packs/trees have which bonuses:
 -- Post-transition path:
@@ -1652,7 +1652,7 @@ data.raw["technology"]["stronger-explosives-7"].unit.ingredients =
 data.raw["technology"]["refined-flammables-1"].unit.count = 150
 data.raw["technology"]["refined-flammables-1"].effects =
 {
-  PM.modify_ammo("ammo-damage", "flamethrower", 0.1),
+  PM.modify_ammo("ammo-damage", "flamethrower", 0.15),
   PM.modify_turret("flamethrower-turret", 0.05),
 }
 data.raw["technology"]["refined-flammables-1"].unit.ingredients =
@@ -1664,7 +1664,7 @@ data.raw["technology"]["refined-flammables-1"].unit.ingredients =
 data.raw["technology"]["refined-flammables-2"].unit.count = 250
 data.raw["technology"]["refined-flammables-2"].effects =
 {
-  PM.modify_ammo("ammo-damage", "flamethrower", 0.15),
+  PM.modify_ammo("ammo-damage", "flamethrower", 0.2),
   PM.modify_turret("flamethrower-turret", 0.1),
 }
 data.raw["technology"]["refined-flammables-2"].prerequisites = {"chemical-science-pack", "refined-flammables-1"}
@@ -1678,7 +1678,7 @@ data.raw["technology"]["refined-flammables-2"].unit.ingredients =
 data.raw["technology"]["refined-flammables-3"].unit.count = 350
 data.raw["technology"]["refined-flammables-3"].effects =
 {
-  PM.modify_ammo("ammo-damage", "flamethrower", 0.15),
+  PM.modify_ammo("ammo-damage", "flamethrower", 0.2),
   PM.modify_turret("flamethrower-turret", 0.1),
 }
 data.raw["technology"]["refined-flammables-3"].unit.ingredients =
@@ -1691,7 +1691,7 @@ data.raw["technology"]["refined-flammables-3"].unit.ingredients =
 data.raw["technology"]["refined-flammables-4"].unit.count = 500
 data.raw["technology"]["refined-flammables-4"].effects =
 {
-  PM.modify_ammo("ammo-damage", "flamethrower", 0.2),
+  PM.modify_ammo("ammo-damage", "flamethrower", 0.25),
   PM.modify_turret("flamethrower-turret", 0.15),
 }
 data.raw["technology"]["refined-flammables-4"].prerequisites = {"refined-flammables-3", "pm-alkali-metal-pack-unlock"}
@@ -1706,7 +1706,7 @@ data.raw["technology"]["refined-flammables-4"].unit.ingredients =
 data.raw["technology"]["refined-flammables-5"].unit.count = 650
 data.raw["technology"]["refined-flammables-5"].effects =
 {
-  PM.modify_ammo("ammo-damage", "flamethrower", 0.2),
+  PM.modify_ammo("ammo-damage", "flamethrower", 0.25),
   PM.modify_turret("flamethrower-turret", 0.15),
 }
 data.raw["technology"]["refined-flammables-5"].unit.ingredients =
@@ -1720,7 +1720,7 @@ data.raw["technology"]["refined-flammables-5"].unit.ingredients =
 data.raw["technology"]["refined-flammables-6"].unit.count = 800
 data.raw["technology"]["refined-flammables-6"].effects =
 {
-  PM.modify_ammo("ammo-damage", "flamethrower", 0.25),
+  PM.modify_ammo("ammo-damage", "flamethrower", 0.3),
   PM.modify_turret("flamethrower-turret", 0.2),
 }
 data.raw["technology"]["refined-flammables-6"].unit.ingredients =
@@ -1735,7 +1735,7 @@ data.raw["technology"]["refined-flammables-6"].unit.ingredients =
 data.raw["technology"]["refined-flammables-7"].unit.count_formula = "950"
 data.raw["technology"]["refined-flammables-7"].effects =
 {
-  PM.modify_ammo("ammo-damage", "flamethrower", 0.25),
+  PM.modify_ammo("ammo-damage", "flamethrower", 0.3),
   PM.modify_turret("flamethrower-turret", 0.2),
 }
 data.raw["technology"]["refined-flammables-7"].max_level = 7
