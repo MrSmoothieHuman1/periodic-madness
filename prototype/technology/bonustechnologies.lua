@@ -851,7 +851,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
-        {"pm-alklaine-earth-metals-science-pack", 1}
+        {"pm-alkaline-earth-metals-science-pack", 1}
     },
     time = 120
   },
@@ -1615,7 +1615,7 @@ data.raw["technology"]["stronger-explosives-7"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1},
-  {"pm-alklaine-earth-metals-science-pack", 1}
+  {"pm-alkaline-earth-metals-science-pack", 1}
 }
 
 --MARK: V.Inserter capacity
