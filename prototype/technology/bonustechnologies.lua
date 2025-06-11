@@ -817,6 +817,47 @@ data:extend({
   upgrade = true
 },
 
+--MARK: Stronger explosives
+{
+  type = "technology",
+  name = "pm-stronger-explosives-8",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/stronger-explosives-3.png"),
+  effects =
+  {
+      {
+        type = "ammo-damage",
+        ammo_category = "rocket",
+        modifier = 0.5
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "grenade",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "landmine",
+        modifier = 0.2
+      }
+  },
+  prerequisites = {"stronger-explosives-7"},
+  unit =
+  {
+    count = 100 * 8,
+    ingredients =
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alklaine-earth-metals-science-pack", 1}
+    },
+    time = 120
+  },
+  upgrade = true
+  },
+
 --MARK: Toolbelt
 {
     type = "technology",
