@@ -14,7 +14,7 @@ local PM = require("library")
 --Proj. speed: starts at 0.1, increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2) - shotgun slugs start at 0.05 and increases by 0.05 every 2 levels
 --Laser shooting: Vanilla, unchanged
 --Braking force: Vanilla, unchanged
---Stronger explosives: Vanilla, unchanged
+--Stronger explosives: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3) - any new type of weapon added starts at 0.2 and increases the same amount
 
 --This covers which science packs/trees have which bonuses:
 -- Post-transition path:
@@ -824,21 +824,9 @@ data:extend({
   icons = util.technology_icon_constant_damage("__base__/graphics/technology/stronger-explosives-3.png"),
   effects =
   {
-      {
-        type = "ammo-damage",
-        ammo_category = "rocket",
-        modifier = 0.5
-      },
-      {
-        type = "ammo-damage",
-        ammo_category = "grenade",
-        modifier = 0.2
-      },
-      {
-        type = "ammo-damage",
-        ammo_category = "landmine",
-        modifier = 0.2
-      }
+  PM.modify_ammo("ammo-damage", "grenade", 0.4),
+  PM.modify_ammo("ammo-damage", "rocket", 0.35),
+  PM.modify_ammo("ammo-damage", "landmine", 0.35)
   },
   prerequisites = {"stronger-explosives-7"},
   unit =
@@ -851,7 +839,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
-        {"pm-alkaline-earth-metals-science-pack", 1}
+        {"pm-alkaline-earth-metal-science-pack", 1}
     },
     time = 120
   },
@@ -1564,12 +1552,28 @@ data.raw["technology"]["braking-force-2"].unit.ingredients =
 }
 
 --MARK: V.Stronger explosives
+data.raw["technology"]["stronger-explosives"].effects =
+{
+  PM.modify_ammo("ammo-damage", "grenade", 0.2)
+}
 data.raw["technology"]["stronger-explosives-2"].prerequisites = {"stronger-explosives-1"}
+data.raw["technology"]["stronger-explosives-2"].effects =
+{
+  PM.modify_ammo("ammo-damage", "grenade", 0.25),
+  PM.modify_ammo("ammo-damage", "rocket", 0.2),
+  PM.modify_ammo("ammo-damage", "landmine", 0.2)
+}
 data.raw["technology"]["stronger-explosives-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-3"].effects =
+{
+  PM.modify_ammo("ammo-damage", "grenade", 0.25),
+  PM.modify_ammo("ammo-damage", "rocket", 0.25),
+  PM.modify_ammo("ammo-damage", "landmine", 0.25)
 }
 data.raw["technology"]["stronger-explosives-3"].unit.ingredients =
 {
@@ -1578,6 +1582,12 @@ data.raw["technology"]["stronger-explosives-3"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
 }
+data.raw["technology"]["stronger-explosives-4"].effects =
+{
+  PM.modify_ammo("ammo-damage", "grenade", 0.3),
+  PM.modify_ammo("ammo-damage", "rocket", 0.25),
+  PM.modify_ammo("ammo-damage", "landmine", 0.25)
+}
 data.raw["technology"]["stronger-explosives-4"].prerequisites = {"stronger-explosives-3"}
 data.raw["technology"]["stronger-explosives-4"].unit.ingredients =
 {
@@ -1585,6 +1595,12 @@ data.raw["technology"]["stronger-explosives-4"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
+}
+data.raw["technology"]["stronger-explosives-5"].effects =
+{
+  PM.modify_ammo("ammo-damage", "grenade", 0.3),
+  PM.modify_ammo("ammo-damage", "rocket", 0.3),
+  PM.modify_ammo("ammo-damage", "landmine", 0.3)
 }
 data.raw["technology"]["stronger-explosives-5"].unit.time = 80
 data.raw["technology"]["stronger-explosives-5"].unit.ingredients =
@@ -1595,6 +1611,12 @@ data.raw["technology"]["stronger-explosives-5"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
+data.raw["technology"]["stronger-explosives-6"].effects =
+{
+  PM.modify_ammo("ammo-damage", "grenade", 0.35),
+  PM.modify_ammo("ammo-damage", "rocket", 0.3),
+  PM.modify_ammo("ammo-damage", "landmine", 0.3)
+}
 data.raw["technology"]["stronger-explosives-6"].unit.time = 80
 data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
 {
@@ -1603,6 +1625,12 @@ data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["stronger-explosives-7"].effects =
+{
+  PM.modify_ammo("ammo-damage", "grenade", 0.35),
+  PM.modify_ammo("ammo-damage", "rocket", 0.35),
+  PM.modify_ammo("ammo-damage", "landmine", 0.35)
 }
 data.raw["technology"]["stronger-explosives-7"].max_level = 7
 data.raw["technology"]["stronger-explosives-7"].unit.count_formula = "700"
@@ -1615,7 +1643,7 @@ data.raw["technology"]["stronger-explosives-7"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1},
-  {"pm-alkaline-earth-metals-science-pack", 1}
+  {"pm-alkaline-earth-metal-science-pack", 1}
 }
 
 --MARK: V.Inserter capacity
