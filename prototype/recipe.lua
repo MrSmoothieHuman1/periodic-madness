@@ -3813,7 +3813,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("advanced-circuit", 35),
-      PM.ingredient("pm-heavy-lubricant", 60, "fluid"),
+      PM.ingredient("pm-solid-lubricant", 60, "fluid"),
       PM.ingredient("pm-vulcanised-rubber", 24),
       PM.ingredient("pm-lightweight-framing", 30),
       PM.ingredient("pm-polyethylene-plastic", 24),
