@@ -1653,7 +1653,7 @@ data.raw["technology"]["refined-flammables-1"].unit.count = 150
 data.raw["technology"]["refined-flammables-1"].unit.ingredients =
 {
   PM.modify_ammo("ammo-damage", "flamethrower", 0.1),
-  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.1),
+  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.05),
 }
 data.raw["technology"]["refined-flammables-1"].unit.ingredients =
 {
@@ -1665,7 +1665,7 @@ data.raw["technology"]["refined-flammables-2"].unit.count = 250
 data.raw["technology"]["refined-flammables-2"].unit.ingredients =
 {
   PM.modify_ammo("ammo-damage", "flamethrower", 0.15),
-  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.15),
+  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.1),
 }
 data.raw["technology"]["refined-flammables-2"].prerequisites = {"chemical-science-pack", "refined-flammables-1"}
 data.raw["technology"]["refined-flammables-2"].unit.ingredients =
@@ -1679,7 +1679,7 @@ data.raw["technology"]["refined-flammables-3"].unit.count = 350
 data.raw["technology"]["refined-flammables-3"].unit.ingredients =
 {
   PM.modify_ammo("ammo-damage", "flamethrower", 0.15),
-  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.15),
+  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.1),
 }
 data.raw["technology"]["refined-flammables-3"].unit.ingredients =
 {
@@ -1692,7 +1692,7 @@ data.raw["technology"]["refined-flammables-4"].unit.count = 500
 data.raw["technology"]["refined-flammables-4"].unit.ingredients =
 {
   PM.modify_ammo("ammo-damage", "flamethrower", 0.2),
-  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.2),
+  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.15),
 }
 data.raw["technology"]["refined-flammables-4"].prerequisites = {"refined-flammables-3", "pm-alkali-metal-pack-unlock"}
 data.raw["technology"]["refined-flammables-4"].unit.ingredients =
@@ -1707,7 +1707,7 @@ data.raw["technology"]["refined-flammables-5"].unit.count = 650
 data.raw["technology"]["refined-flammables-5"].unit.ingredients =
 {
   PM.modify_ammo("ammo-damage", "flamethrower", 0.2),
-  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.2),
+  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.15),
 }
 data.raw["technology"]["refined-flammables-5"].unit.ingredients =
 {
@@ -1721,7 +1721,7 @@ data.raw["technology"]["refined-flammables-1"].unit.count = 800
 data.raw["technology"]["refined-flammables-6"].unit.ingredients =
 {
   PM.modify_ammo("ammo-damage", "flamethrower", 0.25),
-  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.25),
+  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.2),
 }
 data.raw["technology"]["refined-flammables-6"].unit.ingredients =
 {
@@ -1736,7 +1736,7 @@ data.raw["technology"]["refined-flammables-7"].unit.count_formula = "950"
 data.raw["technology"]["refined-flammables-7"].unit.ingredients =
 {
   PM.modify_ammo("ammo-damage", "flamethrower", 0.25),
-  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.25),
+  PM.modify_ammo("ammo-damage", "flamethrower-turret", 0.2),
 }
 data.raw["technology"]["refined-flammables-7"].max_level = 7
 data.raw["technology"]["refined-flammables-7"].unit.ingredients =
