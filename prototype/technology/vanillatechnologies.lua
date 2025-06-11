@@ -879,51 +879,6 @@ data.raw["technology"]["flamethrower"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["refined-flammables-1"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["refined-flammables-2"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-}
-data.raw["technology"]["refined-flammables-3"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-}
-data.raw["technology"]["refined-flammables-4"].prerequisites = {"refined-flammables-3"}
-data.raw["technology"]["refined-flammables-4"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-}
-data.raw["technology"]["refined-flammables-5"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1},
-}
-data.raw["technology"]["refined-flammables-6"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1},
-}
-
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
