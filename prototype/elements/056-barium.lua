@@ -80,7 +80,7 @@ data:extend({
         type = "fluid",
         name = "pm-barium-froth",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluid/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
         subgroup = "pm-barium-aem",
         order = "d",
         default_temperature = 15,
