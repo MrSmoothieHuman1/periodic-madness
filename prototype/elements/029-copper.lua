@@ -67,7 +67,9 @@ data:extend({
     pictures =
     {
       { filename = "__periodic-madness__/graphics/icons/ores/fire-refined-copper.png", size = 64, scale = 0.5 },
-      --{ filename = "__periodic-madness__/graphics/icons/ores/copper-chunks-2.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/fire-refined-copper-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/fire-refined-copper-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/fire-refined-copper-4.png", size = 64, scale = 0.5 }
     },
     subgroup = "pm-advanced-copper-tm",
     order = "d",
