@@ -4069,7 +4069,7 @@ data:extend({
     type = "technology",
     name = "pm-effect-transmission-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/effect-transmission.png",
     effects = 
     {
       PM.unlock_recipe("pm-beacon-2"),
@@ -4186,7 +4186,7 @@ data:extend({
     type = "technology",
     name = "pm-waste-water-byproduct-handling",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/waste-water-byproduct-handling.png",
     effects = 
     {
       PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
