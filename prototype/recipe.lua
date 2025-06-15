@@ -2171,14 +2171,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-air-filter", 4),
-      PM.ingredient("pm-lithium-bromide", 8),
+      PM.ingredient("pm-air-filter", 2),
+      PM.ingredient("pm-lithium-bromide", 6),
       PM.ingredient("pm-gold-plate", 4),
       PM.ingredient("pm-silver-plate", 4)
     },
     results =
     {
-      PM.product("pm-advanced-air-filter", 1)
+      PM.product("pm-advanced-air-filter", 2)
     }
   },
   {
@@ -2192,10 +2192,10 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-trace-gas-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
+      PM.ingredient("pm-advanced-air-filter", 1),
+      PM.ingredient("pm-calcium-ore", 3),
       PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      PM.ingredient("pm-lightweight-framing", 3)
     },
     results =
     {

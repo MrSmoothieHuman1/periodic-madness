@@ -100,10 +100,10 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-chlorine-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
+      PM.ingredient("pm-advanced-air-filter", 1),
+      PM.ingredient("copper-plate", 3),
       PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      PM.ingredient("pm-lightweight-framing", 3)
     },
     results =
     {
