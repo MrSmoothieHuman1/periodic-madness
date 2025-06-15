@@ -376,7 +376,6 @@ data:extend({
     type = "recipe",
     name = "pm-melatonin-harvesting",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
     energy_required = 2,
     enabled = false,
     hide_from_player_crafting = true,
@@ -384,6 +383,7 @@ data:extend({
     subgroup = "pm-biostuff-rnm",
     order = "i",
     allow_productivity = true,
+    main_product = "pm-melatonin",
     ingredients =
     {
       PM.ingredient("pm-cyanobacteriaed-agar-solution", 5, "fluid"),
