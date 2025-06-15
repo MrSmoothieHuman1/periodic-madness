@@ -80,12 +80,12 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-acidic-water"),
+      PM.unlock_recipe("pm-silver-chunks"),
       PM.unlock_recipe("pm-silver-plate"),
-      PM.unlock_recipe("pm-silver-leeching"),
-      PM.unlock_recipe("pm-silver-chunk-refining"),
+      PM.unlock_recipe("pm-silver-ore"),
+      PM.unlock_recipe("pm-gold-chunks"),
+      PM.unlock_recipe("pm-gold-ore"),
       PM.unlock_recipe("pm-gold-plate"),
-      PM.unlock_recipe("pm-gold-leeching"),
-      PM.unlock_recipe("pm-gold-chunk-refining"),
     },
     prerequisites = {"pm-mercury-processing", "pm-ezekiel-ore-purifying"},
     unit =

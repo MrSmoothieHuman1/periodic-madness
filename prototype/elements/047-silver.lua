@@ -36,7 +36,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-silver-leeching",
+    name = "pm-silver-chunks",
     icon_size = 64,
     icons =
     {
@@ -74,7 +74,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-silver-chunk-refining",
+    name = "pm-silver-ore",
     icon_size = 64,
     icons =
     {
@@ -99,6 +99,7 @@ data:extend({
     },
     energy_required = 2,
     enabled = false,
+    main_product = "pm-silver-ore",
     ingredients =
     {
       PM.ingredient("pm-silver-chunks", 5),

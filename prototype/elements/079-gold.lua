@@ -36,7 +36,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-gold-leeching",
+    name = "pm-gold-chunks",
     icon_size = 64,
     icons =
     {
@@ -74,7 +74,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-gold-chunk-refining",
+    name = "pm-gold-ore",
     icon_size = 64,
     icons =
     {
@@ -91,6 +91,7 @@ data:extend({
     order = "c",
     category = "pm-acids",
     energy_required = 2,
+    main_product = "pm-gold-ore",
     ingredients =
     {
       PM.ingredient("pm-gold-chunks", 5),

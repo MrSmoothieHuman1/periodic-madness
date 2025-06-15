@@ -100,7 +100,11 @@
        ["pm-hydrogen-bromide-leeching", "pm-hydrogen-bromide"],
        ["pm-thallium-leeching", "pm-lorandite"],
        ["pm-mixed-bastnasite-seperation", "pm-mixed-bastnasite-crushing"],
-       ["pm-gene-harvesting", "pm-gene-base"]
+       ["pm-gene-harvesting", "pm-gene-base"],
+       ["pm-silver-leeching", "pm-silver-chunks"],
+       ["pm-silver-chunk-refining", "pm-silver-ore"],
+       ["pm-gold-leeching", "pm-gold-chunks"],
+       ["pm-gold-chunk-refining", "pm-gold-ore"]
     ],
     "autoplace-control":
     [
