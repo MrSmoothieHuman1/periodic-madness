@@ -51,7 +51,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-titanium-leeching",
+    name = "pm-titanium-chunks",
     icon_size = 64,
     icons =
     {

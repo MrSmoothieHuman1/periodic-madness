@@ -48,7 +48,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-cinnabar-processing",
+    name = "pm-mercury-ore",
     icon_size = 64,
     icons =
     {

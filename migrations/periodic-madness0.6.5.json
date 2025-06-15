@@ -104,7 +104,12 @@
        ["pm-silver-leeching", "pm-silver-chunks"],
        ["pm-silver-chunk-refining", "pm-silver-ore"],
        ["pm-gold-leeching", "pm-gold-chunks"],
-       ["pm-gold-chunk-refining", "pm-gold-ore"]
+       ["pm-gold-chunk-refining", "pm-gold-ore"],
+       ["pm-cinnabar-processing", "pm-mercury-ore"],
+       ["pm-tungsten-leeching", "pm-tungsten-chunks"],
+       ["pm-tungsten-crushing", "pm-wolframite"],
+       ["pm-titanium-leeching", "pm-titanium-chunks"],
+       ["pm-tungsten-seperation", "pm-tungsten-ore"]
     ],
     "autoplace-control":
     [

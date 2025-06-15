@@ -105,7 +105,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/mercury-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-cinnabar-processing"),
+      PM.unlock_recipe("pm-mercury-ore"),
       PM.unlock_recipe("pm-mercury-powdering"),
       PM.unlock_recipe("pm-liquid-mercury"),
       PM.unlock_recipe("pm-mercury-vapour-condensing")
@@ -765,15 +765,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-advanced-transition-metal-refining.png",
     effects =
     {
-      PM.unlock_recipe("pm-titanium-leeching"),
+      PM.unlock_recipe("pm-titanium-chunks"),
       PM.unlock_recipe("pm-titanium-oxide"),
       PM.unlock_recipe("pm-titanium-chloride"),
       PM.unlock_recipe("pm-titanium-ore"),
       PM.unlock_recipe("pm-titanium-plate"),
-      PM.unlock_recipe("pm-tungsten-leeching"),
-      PM.unlock_recipe("pm-tungsten-crushing"),
+      PM.unlock_recipe("pm-tungsten-chunks"),
+      PM.unlock_recipe("pm-wolframite"),
       PM.unlock_recipe("pm-wolframite-washing"),
-      PM.unlock_recipe("pm-tungsten-seperation"),
+      PM.unlock_recipe("pm-tungsten-ore"),
       PM.unlock_recipe("pm-tungsten-plate")
     },
     prerequisites = {"pm-advanced-transition-metal-refining", "pm-washing-plant-1", "pm-gold-processing"},

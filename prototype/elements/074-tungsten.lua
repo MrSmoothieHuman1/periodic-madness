@@ -66,7 +66,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-tungsten-leeching",
+    name = "pm-tungsten-chunks",
     icon_size = 64,
     icons =
     {
@@ -97,7 +97,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-tungsten-crushing",
+    name = "pm-wolframite",
     category = "pm-crushing",
     subgroup = "pm-tungsten-tm",
     order = "c",
@@ -135,7 +135,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-tungsten-seperation",
+    name = "pm-tungsten-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/tungsten-ore-icon.png",
     category = "pm-crushing",
