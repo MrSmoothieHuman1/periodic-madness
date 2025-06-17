@@ -1296,11 +1296,11 @@ data:extend({
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
-      PM.ingredient("pm-syngas", 10, "fluid"),
+      PM.ingredient("pm-syngas", 12, "fluid"),
     },
     results =
     {
-      PM.product_range("pm-carbon-monoxide", 4, 8, "fluid"),
+      PM.product_range("pm-carbon-monoxide", 6, 10, "fluid"),
       PM.product_range("pm-sulfur-dioxide", 0, 2, "fluid"), --hydrogen sulfide in hard mode
       --PM.product_range("pm-methane", 1, 4, "fluid")
     }
