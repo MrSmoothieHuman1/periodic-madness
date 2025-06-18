@@ -326,7 +326,7 @@ data:extend({
     type = "recipe",
     name = "pm-sulfuric-waste-seperation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/sufluric-waste-water-seperation.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/sulfuric-waste-water-seperation.png",
     category = "chemistry",
     subgroup = "pm-sulfur-rnm",
     order = "eb",
