@@ -721,7 +721,7 @@ data:extend({
     {
       PM.ingredient("pm-empty-fuel-canister", 1),
       PM.ingredient("solid-fuel", 1),
-      PM.ingredient("pm-legendary-diesel", 40, "fluid")
+      PM.ingredient("pm-diesel", 40, "fluid")
     },
     results = {
       PM.product("pm-diesel-fuel-canister", 1)
