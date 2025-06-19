@@ -7368,21 +7368,18 @@ data:extend({
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
-        width = 320,
-        height = 320,
-        line_length = 6,
-        frame_count = 24,
+        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG.png",
+        width = 192,
+        height = 192,
+        --line_length = 6,
+        --frame_count = 24,
         scale = 0.5,
-        shift = util.by_pixel(-5, -7)
+        --shift = util.by_pixel(-5, -7)
       },
       {
         filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-        width = 320,
-        height = 320,
-        line_length = 1,
-        frame_count = 1,
-        repeat_count = 24,
+        width = 192,
+        height = 192,
         scale = 0.5,
         shift = { 1.625, 0 },
         draw_as_shadow = true
