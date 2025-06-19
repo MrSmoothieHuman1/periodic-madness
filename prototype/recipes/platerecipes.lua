@@ -5,6 +5,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gravel-glass-pane",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/glass-pane.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/gravel.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "smelting",
     subgroup = "pm-glassing",
     order = "b",
@@ -19,19 +32,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-glass-pane",
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/glass-pane.png",
-        icon_size = 64,
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/gravel.png",
-        icon_size = 64,
-        scale = 0.38,
-        shift = { 0, -4 }
-      },
-    },
     category = "smelting",
     subgroup = "pm-glassing",
     order = "b",
