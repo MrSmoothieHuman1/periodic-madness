@@ -178,6 +178,7 @@ Date: 2024-12-08
     - Increase range + reach of medium electric poles, so they can reach around assemblers.
     - Changed Air filter MK2's to take 2 air filters instead of 4, and 6 lithium bromide instead of 8 - and crafts 2 at a time instead of 1.
     - Changed all elemental MK2 filters to have the recipe: Air filter MK2, 3 of the original filters 'coating', 2 iodine and 3 LW framing.
+    - Removed the processing unit used in assembling machine 3's.
 
   Fixes:
     - Fixed the science pack item names captilisation.
