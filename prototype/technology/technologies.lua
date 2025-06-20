@@ -2151,7 +2151,7 @@ data:extend({
       PM.unlock_recipe("pm-molten-platinum"),
       PM.unlock_recipe("pm-platinum-plate-cooling")
     },
-    prerequisites = {"pm-tempature-inators"},
+    prerequisites = {"pm-tempature-inators", "pm-basic-sulfuric-acid"},
     unit =
     {
       count = 100,
@@ -4949,6 +4949,28 @@ data:extend({
         {"pm-metalloid-science-pack", 1}
       },
       time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-basic-sulfuric-acid",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+      PM.unlock_recipe("sulfuric-acid")
+    },
+    prerequisites = {"pm-mixing-material-processing-1"},
+    unit =
+    {
+      count = 125,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 30
     }
   },
 

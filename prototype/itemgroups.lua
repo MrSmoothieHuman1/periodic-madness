@@ -560,6 +560,12 @@ data:extend({
     group = "pm-reactive-non-metals",
     order = "f"
   },
+    {
+    type = "item-subgroup",
+    name = "pm-sulfuric-acid-rnm",
+    group = "pm-reactive-non-metals",
+    order = "fa"
+  },
   {
     type = "item-subgroup",
     name = "pm-sulfur-rnm",

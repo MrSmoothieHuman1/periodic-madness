@@ -68,6 +68,8 @@ Date: 2024-12-08
     - Added subgroups for coolants, lubricants and solid fuel recipes. yes we have that many.
     - Added elevated rail comptability.
     - Affected the trout population by 1%.
+    - Added a subgroup for sulfuric acid, and split sulfur into its own subgroup.
+    - Added an early sulfuric acid recipe in place of the removed acidic water > sulfuric acid chain. It is unlocked after mixing tanks, and unlocks certain previously sulfuric-locked things (like platinum).
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -179,6 +181,7 @@ Date: 2024-12-08
     - Changed Air filter MK2's to take 2 air filters instead of 4, and 6 lithium bromide instead of 8 - and crafts 2 at a time instead of 1.
     - Changed all elemental MK2 filters to have the recipe: Air filter MK2, 3 of the original filters 'coating', 2 iodine and 3 LW framing.
     - Removed the processing unit used in assembling machine 3's.
+    - Moved mining productivity to be a off-rip unlock of A-ATM science.
 
   Fixes:
     - Fixed the science pack item names captilisation.
@@ -205,6 +208,7 @@ Date: 2024-12-08
     - Unhid molybdenum TM leeching from the player.
     - Made electric engines prerequisite red circuits.
     - Fixed temperature=inators not being able to replaced or upgraded over eachother.
+    - Fixed the prerequisites of advanced-advanced transition metal science not being correct or being missing.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168

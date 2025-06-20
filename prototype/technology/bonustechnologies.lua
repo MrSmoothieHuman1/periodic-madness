@@ -1042,6 +1042,7 @@ data.raw["technology"]["research-speed-6"].effects =
 }
 
 --MARK: V.Mining prod
+data.raw["technology"]["mining-productivity-1"].prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"}
 data.raw["technology"]["mining-productivity-1"].effects =
 {
   PM.modify("mining-drill-productivity-bonus", 0.05)
@@ -1537,7 +1538,7 @@ data.raw["technology"]["laser-weapons-damage-5"].unit.ingredients =
 }
 
 --MARK: V.Braking force
-data.raw["technology"]["braking-force-1"].prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"}
+data.raw["technology"]["braking-force-1"].prerequisites = {"railway"}
 data.raw["technology"]["braking-force-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},

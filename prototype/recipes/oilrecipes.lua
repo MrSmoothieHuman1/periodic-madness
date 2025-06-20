@@ -63,7 +63,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-high-sulfur-residuals", 6, "fluid"),
-      PM.ingredient("pm-molybdenum-disulfide", 3)
+      PM.ingredient("pm-molybdenum-disulfide", 2)
     },
     results = 
     {
@@ -87,7 +87,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-low-sulfur-residuals", 6, "fluid"),
-      PM.ingredient("pm-molybdenum-disulfide", 3)
+      PM.ingredient("pm-molybdenum-disulfide", 2)
     },
     results = 
     {
