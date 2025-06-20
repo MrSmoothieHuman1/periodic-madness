@@ -1638,6 +1638,10 @@ data:extend({
     type = "fuel-category",
     name = "pm-strontium" 
   },
+  {
+    type = "fuel-category",
+    name = "pm-strontium-fuel-rods"
+  }
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"
 data.raw["item"]["iron-gear-wheel"].order = "a"

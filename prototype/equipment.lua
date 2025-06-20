@@ -342,7 +342,7 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].burner =
 {
   type = "burner",
   usage_priority = "primary-output",
-  fuel_categories = {"pm-fuel-rods"},
+  fuel_categories = {"pm-fuel-rods", "pm-strontium-fuel-rods"},
   fuel_inventory_size = 1,
   burnt_inventory_size = 1,
 }

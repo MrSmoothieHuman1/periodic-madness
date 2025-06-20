@@ -95,7 +95,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/strontium-fuel-rod.png",
     subgroup = "pm-fuel-rods",
     order = "c",
-    fuel_category = "pm-strontium",
+    fuel_category = "pm-strontium-fuel-rods",
     burnt_result = "pm-spent-fuel-rod",
     fuel_value = "25MJ",
     stack_size = 10

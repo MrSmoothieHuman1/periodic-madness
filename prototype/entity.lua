@@ -7349,7 +7349,7 @@ data:extend({
   burner =
   {
     type = "burner",
-    fuel_categories = {"pm-strontium"},
+    fuel_categories = {"pm-strontium", "pm-strontium-fuel-rods"},
     effectivity = 2,
     fuel_inventory_size = 2,
     burnt_inventory_size = 2,
