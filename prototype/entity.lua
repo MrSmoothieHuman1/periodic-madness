@@ -7378,7 +7378,7 @@ data:extend({
         height = 165,
         line_length = 6,
         frame_count = 24,
-        animation_speed = 0.3,
+        animation_speed = 0.42,
         scale = 0.5,
       },
       {
