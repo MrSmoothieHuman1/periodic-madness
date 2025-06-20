@@ -7336,7 +7336,7 @@ data:extend({
   default_output_signal = {type = "virtual", name = "signal-G"}
 }--[[@as data.WallPrototype]],
 { --MARK: RTG
-  type = "reactor",
+  type = "burner-generator",
   name = "pm-RTG",
   icon = "__periodic-madness__/graphics/icons/buildings/RTG.png",
   icon_size = 64,
@@ -7345,12 +7345,11 @@ data:extend({
   max_health = 1200,
   corpse = "nuclear-reactor-remnants",
   dying_explosion  = "nuclear-reactor-explosion",
-  consumption = "20MW",
-  neighbour_bonus = 0.05,
-  energy_source =
+  max_power_output = "20MW",
+  burner =
   {
     type = "burner",
-    fuel_categories = {"pm-polonium"},
+    fuel_categories = {"pm-strontium"},
     effectivity = 2,
     fuel_inventory_size = 2,
     burnt_inventory_size = 2,
@@ -7361,9 +7360,15 @@ data:extend({
       maximum_intensity = 0.95
     }
   },
+  energy_source = 
+  {
+    type = "electric",
+    buffer_capacity = "20MJ",
+    usage_priority = "secondary-output",
+  },
   collision_box = { { -0.9, -0.9 }, { 0.9, 0.9} },
   selection_box = { { -1, -1 }, { 1, 1 } },
-  picture =
+  animation =
   {
     layers =
     {
@@ -7386,34 +7391,7 @@ data:extend({
       }
     }
   },
-  heat_buffer =
-  {
-    max_temperature = 0,
-    specific_heat = "10MJ",
-    max_transfer = "10GW",
-    minimum_glow_temperature = 0,
-    min_working_temperature = 0,
-    default_temperature = 0,
-    connections = {},
-    working_sound =
-    {
-      sound =
-      {
-        {
-          filename = "__base__/sound/nuclear-reactor-1.ogg",
-          volume = 0.55
-        },
-        {
-          filename = "__base__/sound/nuclear-reactor-2.ogg",
-          volume = 0.55
-        }
-      },
-      max_sounds_per_type = 3,
-      fade_in_ticks = 4,
-      fade_out_ticks = 20
-    },
-  },
-}--[[@as data.ReactorPrototype]],
+},
 {
   type = "solar-panel",
   name = "pm-solar-panel-3",
