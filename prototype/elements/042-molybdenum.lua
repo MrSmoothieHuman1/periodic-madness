@@ -97,8 +97,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molybdenite-powder", 2),
-      PM.product_chance("stone", 2, 0.5)
+      PM.product("pm-molybdenite-powder", 4),
+      PM.product_chance("stone", 2, 0.75)
     }
   } --[[@as data.RecipePrototype]],
   {

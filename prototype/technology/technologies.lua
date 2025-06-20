@@ -4963,7 +4963,7 @@ data:extend({
     prerequisites = {"pm-mixing-material-processing-1"},
     unit =
     {
-      count = 125,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},

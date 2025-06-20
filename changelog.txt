@@ -182,6 +182,8 @@ Date: 2024-12-08
     - Changed all elemental MK2 filters to have the recipe: Air filter MK2, 3 of the original filters 'coating', 2 iodine and 3 LW framing.
     - Removed the processing unit used in assembling machine 3's.
     - Moved mining productivity to be a off-rip unlock of A-ATM science.
+    - Reworked the recipe for molybdenite powder to be 1:1, and increased its stone output.
+    - Lowered the amount of molybdenum disulfide for oil residual recipes by 1, from 3 to 2.
 
   Fixes:
     - Fixed the science pack item names captilisation.

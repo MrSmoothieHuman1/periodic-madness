@@ -59,7 +59,6 @@ data:extend({
     order = "A",
     enabled = false,
     energy_required = 6,
-    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-high-sulfur-residuals", 6, "fluid"),
@@ -83,16 +82,15 @@ data:extend({
     order = "A",
     enabled = false,
     energy_required = 6,
-    allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-low-sulfur-residuals", 6, "fluid"),
       PM.ingredient("pm-molybdenum-disulfide", 2)
     },
-    results = 
+    results =
     {
       PM.product_range("pm-bitumen", 2, 4),
-      PM.product("sulfur", 3),
+      PM.product_range("sulfur", 3, 4),
       PM.product_range("pm-vanadium-ore", 1, 4),
       PM.product_range("pm-syngas", 0.5, 5, "fluid")
     }
