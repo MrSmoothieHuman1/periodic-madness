@@ -4955,7 +4955,7 @@ data:extend({
     type = "technology",
     name = "pm-basic-sulfuric-acid",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/basic-sulfuric-acid.png",
     effects = 
     {
       PM.unlock_recipe("sulfuric-acid")
