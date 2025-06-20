@@ -2390,7 +2390,6 @@ data:extend({
       PM.unlock_recipe("pm-sylvite-seperation"),
       PM.unlock_recipe("pm-anhydrite-seperation"),
       PM.unlock_recipe("pm-potash-potassium"),
-      PM.unlock_recipe("pm-potassium-fertiliser")
     },
     prerequisites = {"chemical-science-pack"},
     unit =

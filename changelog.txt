@@ -168,7 +168,7 @@ Date: 2024-12-08
     - Forced by wube to change chain signals to use orange circuits instead of red.
     - Changed train stations to use green circuits instead of red, but increased their amount by one.
     - Made quality incompatable with PM, for now.
-    - Moved fertiliser to alkali metal packs.
+    - Moved fertiliser to alkali metal packs, and merged the two fertiliser recipes.
     - Halved amount of coke needed for titanium oxide.
     - Moved engines back to fuel canisters, instead of being behind kasethal, which also moves trains back.
     - Lowered a bunch of recipes amounts of sulfuric acid.

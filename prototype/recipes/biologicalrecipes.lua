@@ -84,44 +84,11 @@ data:extend({
       PM.ingredient("pm-ammonia-gas", 20, "fluid"),
       PM.ingredient("pm-red-phosphorus", 6),
       PM.ingredient("pm-polyethylene-plastic", 4),
-    },
-    results =
-    {
-      PM.product("pm-fertiliser", 1)
-    }
-  },
-
-  {
-    type = "recipe",
-    name = "pm-potassium-fertiliser",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fertiliser.png",
-        icon_size = 64,
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",
-        icon_size = 64
-      }
-    },
-    energy_required = 5,
-    category = "crafting-with-fluid",
-    subgroup = "pm-greenhousing-rnm",
-    order = "ca",
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-ammonia-gas", 10, "fluid"),
-      PM.ingredient("pm-red-phosphorus", 4),
-      PM.ingredient("pm-polyethylene-plastic", 6),
       PM.ingredient("pm-potassium", 4)
     },
     results =
     {
-      PM.product("pm-fertiliser", 2)
+      PM.product("pm-fertiliser", 1)
     }
   },
   {
