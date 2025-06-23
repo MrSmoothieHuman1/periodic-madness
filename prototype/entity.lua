@@ -7382,14 +7382,14 @@ data:extend({
         scale = 0.5,
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-        width = 192,
-        height = 192,
+        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-shadow.png",
+        width = 169,
+        height = 118,
         scale = 0.5,
         line_length = 1,
         frame_count = 1,
         repeat_count = 24,
-        shift = { 1.625, 0 },
+        shift = util.by_pixel( 22, 18 ),
         draw_as_shadow = true
       }
     }
@@ -7408,14 +7408,14 @@ data:extend({
         scale = 0.5,
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-        width = 192,
-        height = 192,
+        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-shadow.png",
+        width = 169,
+        height = 118,
         scale = 0.5,
         line_length = 1,
         frame_count = 1,
         repeat_count = 24,
-        shift = { 1.625, 0 },
+        shift = util.by_pixel( 22, 18 ),
         draw_as_shadow = true
       }
     }
