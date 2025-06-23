@@ -2186,7 +2186,7 @@ data:extend({
       PM.unlock_recipe("pm-bismuth-crystal-growing"),
       PM.unlock_recipe("pm-molybdenite-crystal-growing")
     },
-    prerequisites = {"pm-gemstone-processing", "trace-gas-refining"},
+    prerequisites = {"pm-gemstone-processing", "pm-trace-gas-refining"},
     unit =
     {
       count = 250,
@@ -4043,7 +4043,7 @@ data:extend({
     type = "technology",
     name = "pm-RTG",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/RTG.png",
     effects = 
     {
 
