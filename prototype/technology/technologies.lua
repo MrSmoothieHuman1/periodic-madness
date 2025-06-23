@@ -2186,7 +2186,7 @@ data:extend({
       PM.unlock_recipe("pm-bismuth-crystal-growing"),
       PM.unlock_recipe("pm-molybdenite-crystal-growing")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock", "pm-fertiliser"},
+    prerequisites = {"pm-gemstone-processing", "trace-gas-refining"},
     unit =
     {
       count = 250,
