@@ -8297,7 +8297,7 @@ fluid_boxes =
           filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant.png",
           priority = "high",
           width = 192,
-          height = 192,
+          height = 202,
           scale = 0.5
         },
       }
