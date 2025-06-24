@@ -184,6 +184,7 @@ Date: 2024-12-08
     - Moved mining productivity to be a off-rip unlock of A-ATM science.
     - Reworked the recipe for molybdenite powder to be 1:1, and increased its stone output.
     - Lowered the amount of molybdenum disulfide for oil residual recipes by 1, from 3 to 2.
+    - Dou;bed the stack size of all catalysts, changed stack size of catalyst containers to 25 instead of 10.
 
   Fixes:
     - Fixed the science pack item names captilisation.

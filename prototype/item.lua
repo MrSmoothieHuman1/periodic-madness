@@ -114,7 +114,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/vanadium-oxide-catalyst.png",
     subgroup = "pm-catalysts",
     order = "b",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -123,7 +123,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/palladium-catalyst.png",
     subgroup = "pm-catalysts",
     order = "c",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -132,7 +132,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/cobalt-catalyst.png",
     subgroup = "pm-catalysts",
     order = "d",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -141,7 +141,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/nickel-tungsten-catalyst.png",
     subgroup = "pm-catalysts",
     order = "da",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -150,7 +150,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/CuZnAl-catalyst.png",
     subgroup = "pm-catalysts",
     order = "e",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -159,7 +159,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/yttrium-catalyst.png",
     subgroup = "pm-catalysts",
     order = "f",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -176,7 +176,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/catalyst-container.png",
     subgroup = "pm-catalysts",
     order = "a",
-    stack_size = 10
+    stack_size = 25
   },
   {
     type = "item",
