@@ -112,7 +112,7 @@ data:extend({
       type = "burner",
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
-      fuel_categories = {"pm-fuel-rods"}
+      fuel_categories = {"pm-fuel-rods", "pm-strontium-fuel-rods"}
     },
     movement_energy_consumption = "250kW",
     automatic_weapon_cycling = true,
