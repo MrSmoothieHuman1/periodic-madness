@@ -109,7 +109,8 @@
        ["pm-tungsten-leeching", "pm-tungsten-chunks"],
        ["pm-tungsten-crushing", "pm-wolframite"],
        ["pm-titanium-leeching", "pm-titanium-chunks"],
-       ["pm-tungsten-seperation", "pm-tungsten-ore"]
+       ["pm-tungsten-seperation", "pm-tungsten-ore"],
+       ["pm-melatonin-harvesting", "pm-melatonin"]
     ],
     "autoplace-control":
     [

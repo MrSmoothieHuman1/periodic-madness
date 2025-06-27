@@ -2517,7 +2517,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-cyanobacteriaed-agar-solution"),
-      PM.unlock_recipe("pm-melatonin-harvesting"),
+      PM.unlock_recipe("pm-melatonin"),
       PM.unlock_recipe("pm-phosgene"),
       PM.unlock_recipe("pm-genevas-neglection-magazine"),
       PM.unlock_recipe("pm-genevas-neglection-shotgun-shell"),

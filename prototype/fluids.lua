@@ -1154,6 +1154,8 @@ data:extend({
     name = "pm-melatonin",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/fluids/melatonin.png",
+    subgroup = "pm-biostuff-rnm",
+    order = "i",
     default_temperature = 15,
     base_color = {r = 0.6, g = 0.6, b = 0.8},
     flow_color = {r = 0.6, g = 0.6, b = 0.8},

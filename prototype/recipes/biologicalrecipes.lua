@@ -341,7 +341,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-melatonin-harvesting",
+    name = "pm-melatonin",
     icon_size = 64,
     energy_required = 2,
     enabled = false,
