@@ -216,7 +216,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 end
 
 coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
-  10, {"pm-reactor-coolant-burning"},
+  10, {"pm-reactor-coolant-burning-with-exhuast"},
   {
     production_type = "input",
     volume = 100,
