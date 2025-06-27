@@ -455,6 +455,3 @@ data.raw["ammo"]["artillery-shell"].subgroup = "pm-rockets"
 data.raw["ammo"]["artillery-shell"].order = "i"
 data.raw["recipe"]["artillery-shell"].subgroup = "pm-rockets"
 data.raw["recipe"]["artillery-shell"].order = "i"
-
-data.raw["gun"]["shotgun"].attack_parameters.ammo_categories = {"shotgun-shell", "pm-shotgun-slug"}
-data.raw["gun"]["combat-shotgun"].attack_parameters.ammo_categories = {"shotgun-shell", "pm-shotgun-slug"}
