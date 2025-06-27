@@ -8297,12 +8297,16 @@ fluid_boxes =
           filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant.png",
           priority = "high",
           width = 192,
-          height = 202,
+          height = 209,
+          frame_count = 32,
+          line_length = 8,
           scale = 0.5
         },
       }
     },
   },
+  allowed_effects = PM.all_effects(),
+  module_slots = 2,
   crafting_categories = {"pm-cooling"},
   crafting_speed = 1,
   energy_usage = "240kW",
