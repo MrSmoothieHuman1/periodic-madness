@@ -4373,7 +4373,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-nickel-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-nickel-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-powdered-nickel-frothing"),

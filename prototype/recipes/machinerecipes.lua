@@ -1499,6 +1499,21 @@ data:extend({
       PM.product("pm-longer-handed-inserter", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-RTG",
+    enabled = false,
+    energy_required = 6,
+    ingredients = 
+    {
+      PM.ingredient("pm-radiation-resistant-panelling", 20),
+      PM.ingredient("pm-heavyweight-framing", 12),
+    },
+    results = 
+    {
+      PM.product("pm-RTG", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
