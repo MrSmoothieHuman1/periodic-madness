@@ -766,6 +766,8 @@ data:extend({
     name = "pm-gene-base",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/gene-base.png",
+    subgroup = "pm-biostuff-rnm",
+    order = "h",
     default_temperature = 15,
     base_color = {r = 0.4, g = 0.4, b = 0.6},
     flow_color = {r = 0.4, g = 0.4, b = 0.6},
