@@ -129,6 +129,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
   PM.set_flag(flags_holder, "not-deconstructable")
   PM.set_flag(flags_holder, "not-blueprintable")
   PM.set_flag(flags_holder, "not-on-map")
+  PM.set_flag(flags_holder, "not-repairable")
 
   --MARK: Reactor Furnace
   -- Make the furnace that'll burn resources at the cost of coolant
@@ -227,9 +228,19 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
         position = {-2, -2},
       },
       {
+        flow_direction = "input",
+        direction = defines.direction.west--[[@as int]],
+        position = {-2, 2},
+      },
+      {
         flow_direction = "output",
         direction = defines.direction.south--[[@as int]],
         position = {-2, 2},
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.east--[[@as int]],
+        position = {2, 2},
       },
     },
   },
@@ -243,9 +254,19 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
         position = {2, -2},
       },
       {
+        flow_direction = "input",
+        direction = defines.direction.east--[[@as int]],
+        position = {2, -2},
+      },
+      {
         flow_direction = "output",
         direction = defines.direction.south--[[@as int]],
         position = {2, 2},
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.west--[[@as int]],
+        position = {-2, -2},
       },
     },
   }
@@ -319,23 +340,54 @@ data:extend({
     {
       production_type = "input",
       volume = 100,
-      pipe_connections = {
+      pipe_connections = 
+      {
         {
           flow_direction = "input",
           direction = defines.direction.north--[[@as int]],
-          position = {-2, -2}
-        }
-      }
+          position = {-2, -2},
+        },
+        {
+          flow_direction = "input",
+          direction = defines.direction.west--[[@as int]],
+          position = {-2, 2},
+        },
+        {
+          flow_direction = "output",
+          direction = defines.direction.south--[[@as int]],
+          position = {-2, 2},
+        },
+        {
+          flow_direction = "output",
+          direction = defines.direction.east--[[@as int]],
+          position = {2, 2},
+        },
+      },
     },
     coolant_exhuast_fluidbox = {
       production_type = "output",
       volume = 100,
       pipe_connections = {
         {
-          flow_direction = "output",
+          flow_direction = "input",
           direction = defines.direction.north--[[@as int]],
           position = {2, -2},
-        }
+        },
+        {
+          flow_direction = "input",
+          direction = defines.direction.east--[[@as int]],
+          position = {2, -2},
+        },
+        {
+          flow_direction = "output",
+          direction = defines.direction.south--[[@as int]],
+          position = {2, 2},
+        },
+        {
+          flow_direction = "output",
+          direction = defines.direction.west--[[@as int]],
+          position = {-2, -2},
+        },
       }
     },
     collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
