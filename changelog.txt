@@ -70,6 +70,7 @@ Date: 2024-12-08
     - Affected the trout population by 1%.
     - Added a subgroup for sulfuric acid, and split sulfur into its own subgroup.
     - Added an early sulfuric acid recipe in place of the removed acidic water > sulfuric acid chain. It is unlocked after mixing tanks, and unlocks certain previously sulfuric-locked things (like platinum).
+    - introduced hot coolant! currently it is only produced by reactors, where it has to be cooled back down to be usable, losing a little in the process.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
