@@ -224,8 +224,13 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
       {
         flow_direction = "input",
         direction = defines.direction.north--[[@as int]],
-        position = {0, -2}
-      }
+        position = {-2, -2}
+      },
+      {
+        flow_direction = "input",
+        direction = defines.direction.north--[[@as int]],
+        position = {2, -2}
+      },
     }
   }--[[@as data.FluidBox]]
 )
@@ -302,7 +307,7 @@ data:extend({
         {
           flow_direction = "input",
           direction = defines.direction.north--[[@as int]],
-          position = {0, -2}
+          position = {-2, -2}
         }
       }
     },
@@ -312,8 +317,8 @@ data:extend({
       pipe_connections = {
         {
           flow_direction = "output",
-          direction = defines.direction.south--[[@as int]],
-          position = {0, 2},
+          direction = defines.direction.north--[[@as int]],
+          position = {2, -2},
         }
       }
     },
