@@ -8315,8 +8315,8 @@ fluid_boxes =
             priority = "high",
             width = 192,
             height = 209,
-            --frame_count = 32,
-            --line_length = 8,
+            frame_count = 32,
+            line_length = 8,
             scale = 0.5
           },
         }
