@@ -68,7 +68,15 @@ if mods["stack-inserters"] then
 
     --MARK: Inserter changes
     data.raw["inserter"]["stack-inserter"].rotation_speed = 0.014
-
+    data.raw["inserter"]["stack-inserter"].energy_per_movement = "40kJ"
+    data.raw["inserter"]["stack-inserter"].energy_per_rotation = "40kJ"
+    data.raw["inserter"]["stack-inserter"].energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      drain = "10kW"
+    }
+    
     --MARK: Recipe changes
     data.raw["recipe"]["stack-inserter"].category = "crafting-with-fluid"
     data.raw["recipe"]["stack-inserter"].ingredients =

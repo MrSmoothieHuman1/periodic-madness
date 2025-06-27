@@ -126,7 +126,7 @@ require("prototype.equipment-grid")
 require("prototype.virtual-signals")
 
 require("compatibility.icon-badges")
-require("compatibility.DLC.belt-stacking")
+--require("compatibility.DLC.belt-stacking")
 require("compatibility.DLC.quality")
 require("compatibility.DLC.elevated-rails")
 
