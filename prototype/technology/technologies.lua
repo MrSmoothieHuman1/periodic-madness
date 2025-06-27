@@ -4046,7 +4046,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/RTG.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-RTG")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =
