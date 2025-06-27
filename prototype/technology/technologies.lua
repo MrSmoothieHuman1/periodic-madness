@@ -4406,7 +4406,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-zinc-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-zinc-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-powdered-zinc-frothing"),
