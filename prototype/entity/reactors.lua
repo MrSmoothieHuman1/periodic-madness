@@ -227,9 +227,19 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
         position = {-2, -2}
       },
       {
-        flow_direction = "input",
+        flow_direction = "output",
         direction = defines.direction.north--[[@as int]],
         position = {2, -2}
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.south--[[@as int]],
+        position = {-2, 2}
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.south--[[@as int]],
+        position = {2, 2}
       },
     }
   }--[[@as data.FluidBox]]
