@@ -8331,6 +8331,18 @@ fluid_boxes =
             line_length = 8,
             scale = 0.5
           },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            priority = "high",
+            width = 209,
+            height = 173,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 32,
+            shift = util.by_pixel(32, 3),
+            draw_as_shadow = true,
+            scale = 0.5
+          },
         }
       },
       east =
@@ -8346,6 +8358,18 @@ fluid_boxes =
             line_length = 8,
             scale = 0.5
           },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            priority = "high",
+            width = 209,
+            height = 173,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 32,
+            shift = util.by_pixel(32, 3),
+            draw_as_shadow = true,
+            scale = 0.5
+          },
         }
       },
       west =
@@ -8359,6 +8383,18 @@ fluid_boxes =
             height = 209,
             frame_count = 32,
             line_length = 8,
+            scale = 0.5
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            priority = "high",
+            width = 209,
+            height = 173,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 32,
+            shift = util.by_pixel(32, 3),
+            draw_as_shadow = true,
             scale = 0.5
           },
         }
