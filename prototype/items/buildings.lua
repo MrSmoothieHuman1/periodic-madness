@@ -756,7 +756,7 @@ data:extend({
     type = "item",
     name = "pm-cooling-plant",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/cooling-plant.png",
     subgroup = "production-machine",
     place_result = "pm-cooling-plant",
     stack_size = 50,

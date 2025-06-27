@@ -8267,7 +8267,7 @@ fluid_boxes =
 {
   type = "assembling-machine",
   name = "pm-cooling-plant",
-  icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/cooling-plant.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
   minable = { mining_time = 0.5, result = "pm-cooling-plant" },
