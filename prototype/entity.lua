@@ -8291,18 +8291,66 @@ fluid_boxes =
   {
     animation =
     {
-      layers =
+      north =
       {
+        layers =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant.png",
-          priority = "high",
-          width = 192,
-          height = 209,
-          frame_count = 32,
-          line_length = 8,
-          scale = 0.5
-        },
-      }
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5
+          },
+        }
+      },
+      south =
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5
+          },
+        }
+      },
+      east =
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-east.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            --frame_count = 32,
+            --line_length = 8,
+            scale = 0.5
+          },
+        }
+      },
+      west =
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5
+          },
+        }
+      },
     },
   },
   allowed_effects = PM.all_effects(),
