@@ -26,7 +26,7 @@ data:extend{
 		category = "pm-reactor-coolant-burning-with-exhuast",
 		energy_required = 10,
 		ingredients = {
-			PM.ingredient("water", 2, "fluid")
+			PM.ingredient("water", 0.2, "fluid")
 		},
 		icons = {util.empty_icon()},
 		-- main_product = "pm-liquid-heat",
@@ -44,13 +44,13 @@ data:extend{
 		category = "pm-reactor-coolant-burning-with-exhuast",
 		energy_required = 10,
 		ingredients = {
-			PM.ingredient("pm-coolant", 1, "fluid")
+			PM.ingredient("pm-coolant", 0.1, "fluid")
 		},
 		icons = {util.empty_icon()},
 		-- main_product = "pm-liquid-heat",
 		results = {
 			PM.product("pm-liquid-heat", 10, "fluid", 2),
-			PM.product("pm-hot-coolant", 1, "fluid", 3),
+			PM.product("pm-hot-coolant", 0.1, "fluid", 3),
 		}
 	}--[[@as data.RecipePrototype]],
 		{
@@ -62,13 +62,13 @@ data:extend{
 		category = "pm-reactor-coolant-burning-with-exhuast",
 		energy_required = 10,
 		ingredients = {
-			PM.ingredient("pm-coolant", 1, "fluid")
+			PM.ingredient("pm-light-coolant", 0.1, "fluid")
 		},
 		icons = {util.empty_icon()},
 		-- main_product = "pm-liquid-heat",
 		results = {
 			PM.product("pm-liquid-heat", 10, "fluid", 2),
-			PM.product("pm-hot-light-coolant", 1, "fluid", 3),
+			PM.product("pm-hot-light-coolant", 0.1, "fluid", 3),
 		}
 	}--[[@as data.RecipePrototype]],
 	{

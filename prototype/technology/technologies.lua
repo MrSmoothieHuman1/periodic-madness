@@ -2037,7 +2037,9 @@ data:extend({
       PM.unlock_recipe("pm-polonium-reactor"),
       PM.unlock_recipe("pm-empty-reactor-cell"),
       PM.unlock_recipe("pm-polonium-fuel-cell"),
-      PM.unlock_recipe("pm-polonium-cell-reprocessing")
+      PM.unlock_recipe("pm-polonium-cell-reprocessing"),
+      PM.unlock_recipe("pm-hot-coolant-cooling"),
+      PM.unlock_recipe("pm-hot-light-coolant-cooling")
     },
     prerequisites = {"pm-radiation-resistant-multimetals", "pm-oil-fractions-burning"},
     unit =
