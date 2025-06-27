@@ -7,6 +7,16 @@ require("compatibility.mini-trains")
 -- HACK: temporary
 local PM = require("library")
 data:extend{
+	-- We want the contents of the recipe to be how much fluid it takes to cool it for 50kJ
+		-- That means the 'time' of the recipe needs to 1s for each liquid heat it produces
+
+		-- If a granularity of 50kJ isn't enough, change
+		-- the fluid fuel value and divider of the consumption
+
+		-- With 50kJ, it's
+		--	80/s for 40MW when it's 10x
+		--	8/s for 40MW when it's 100x
+		-- 	1.6/s for 40MW when it's 500x
 	{
 		type = "recipe",
 		name = "pm-water-coolant-burn-with-exhuast",
