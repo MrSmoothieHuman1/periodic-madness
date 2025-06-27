@@ -217,32 +217,38 @@ end
 
 coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
   10, {"pm-reactor-coolant-burning-with-exhuast"},
+    {
+      production_type = "input",
+      volume = 100,
+      pipe_connections = {
+      {
+        flow_direction = "input",
+        direction = defines.direction.north--[[@as int]],
+        position = {-2, -2},
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.south--[[@as int]],
+        position = {-2, 2},
+      },
+    },
+  },
   {
-    production_type = "input",
+    production_type = "output",
     volume = 100,
     pipe_connections = {
       {
         flow_direction = "input",
         direction = defines.direction.north--[[@as int]],
-        position = {-2, -2}
-      },
-      {
-        flow_direction = "output",
-        direction = defines.direction.north--[[@as int]],
-        position = {2, -2}
+        position = {2, -2},
       },
       {
         flow_direction = "output",
         direction = defines.direction.south--[[@as int]],
-        position = {-2, 2}
+        position = {2, 2},
       },
-      {
-        flow_direction = "output",
-        direction = defines.direction.south--[[@as int]],
-        position = {2, 2}
-      },
-    }
-  }--[[@as data.FluidBox]]
+    },
+  }
 )
 
 data:extend({
