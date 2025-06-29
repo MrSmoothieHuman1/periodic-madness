@@ -1508,6 +1508,8 @@ data:extend({
     {
       PM.ingredient("pm-radiation-resistant-panelling", 20),
       PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("advanced-circuit", 8),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8)
     },
     results = 
     {
