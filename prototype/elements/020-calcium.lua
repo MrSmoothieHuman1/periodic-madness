@@ -144,7 +144,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-calcium-dust-washing",
+    name = "pm-calcium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/calcium-dust-washing.png",
     subgroup = "pm-calcium-aem",

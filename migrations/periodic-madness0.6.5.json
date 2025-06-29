@@ -112,7 +112,8 @@
        ["pm-tungsten-seperation", "pm-tungsten-ore"],
        ["pm-melatonin-harvesting", "pm-melatonin"],
        ["pm-calcite-crushing", "pm-calcium-dust"],
-       ["pm-calcite-filtering", "pm-calcite"]
+       ["pm-calcite-filtering", "pm-calcite"],
+       ["pm-calcium-dust-washing", "pm-calcium-ore"]
     ],
     "autoplace-control":
     [
