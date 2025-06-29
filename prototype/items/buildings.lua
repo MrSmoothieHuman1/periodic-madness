@@ -785,6 +785,8 @@ data:extend({
     name = "pm-roboport-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
+    subgroup = "logistic-network",
+    order = "c[signal]-b[roboport]",
     place_result = "pm-roboport-2",
     stack_size = 10
   },
@@ -793,6 +795,8 @@ data:extend({
     name = "pm-construction-repeater",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/construction-repeater.png",
+    subgroup = "logistic-network",
+    order = "c[signal]-c[roboport]",
     place_result = "pm-construction-repeater",
     stack_size = 25
   },
@@ -801,6 +805,8 @@ data:extend({
     name = "pm-logistic-repeater",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/logistic-repeater.png",
+    subgroup = "logistic-network",
+    order = "c[signal]-d[roboport]",
     place_result = "pm-logistic-repeater",
     stack_size = 25
   },

@@ -1431,7 +1431,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-roboport-2",
-    category = "crafting-with-fluid",
+    subgroup = "logistic-network",
+    order = "c[signal]-b[roboport]",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -1450,6 +1451,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-construction-repeater",
+    subgroup = "logistic-network",
+    order = "c[signal]-c[roboport]",
     enabled = false,
     energy_required = 3,
     ingredients = 
@@ -1467,6 +1470,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-logistic-repeater",
+    subgroup = "logistic-network",
+    order = "c[signal]-d[roboport]",
     enabled = false,
     energy_required = 3,
     ingredients = 
