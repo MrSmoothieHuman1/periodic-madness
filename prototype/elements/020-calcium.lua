@@ -106,7 +106,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-calcite-filtering",
+    name = "pm-calcite",
     subgroup = "pm-calcium-aem",
     order = "a",
     category = "pm-evaporation",
@@ -126,7 +126,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-calcite-crushing",
+    name = "pm-calcium-dust",
     subgroup = "pm-calcium-aem",
     order = "b",
     category = "pm-crushing",
