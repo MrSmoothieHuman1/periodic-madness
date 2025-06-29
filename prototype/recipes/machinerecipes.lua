@@ -382,7 +382,7 @@ data:extend({
     name = "pm-molten-inator-3",
     category = "crafting-with-fluid",
     subgroup = "pm-molten-machine",
-    order = "f",
+    order = "d",
     enabled = false,
     energy_required = 4,
     ingredients =
