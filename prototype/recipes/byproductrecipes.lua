@@ -431,6 +431,7 @@ data:extend({
     name = "pm-calcium-sulfate-seperation",
     enabled = false,
     category = "pm-mixing",
+    subgroup = "pm-calcium-sulfate-aem",
     energy_required = 5,
     main_product = "pm-calcium-chloride",
     ingredients = 

@@ -1461,29 +1461,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-calcium-hydroxide-slurry",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/calcium-hydroxide-slurry.png",
-    subgroup = "pm-calcium-aem",
-    order = "ca",
-    default_temperature = 15,
-    base_color = {r = 0.75, g = 0.75, b = 0.75},
-    flow_color = {r = 0.75, g = 0.75, b = 0.75}
-  },
-  {
-    type = "fluid",
-    name = "pm-calcium-sulfate-slurry",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/calcium-sulfate-slurry.png",
-    subgroup = "pm-calcium-aem",
-    order = "f",
-    default_temperature = 15,
-    base_color = {r = 0.99, g = 0.85, b = 0.85},
-    flow_color = {r = 0.99, g = 0.85, b = 0.85},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-magnesium-hydroxide",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/magnesium-hydroxide.png",
