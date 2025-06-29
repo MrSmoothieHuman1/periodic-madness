@@ -234,6 +234,7 @@ data:extend({
     type = "recipe",
     name = "pm-sulfur",
     energy_required = 4,
+    enabled = false,
     category = "chemistry",
     subgroup = "pm-sulfur-rnm",
     order = "b",

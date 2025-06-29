@@ -336,7 +336,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-calcium-sulfate-chunks", 5, 10),
-      PM.product_range("pm-hot-coolant", 5, "fluid"),
+      PM.product("pm-hot-coolant", 5, "fluid"),
       PM.product_range_chance("sulfur", 0, 8, 0.75)
     }
   },
