@@ -307,6 +307,7 @@ data:extend({
     category = "pm-mixing",
     subgroup = "pm-calcium-sulfate-aem",
     order = "a",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-calcium-hydroxide-slurry", 40, "fluid"),
@@ -335,6 +336,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-calcium-sulfate-chunks", 5, 10),
+      PM.product_range("pm-hot-coolant", 5, "fluid"),
       PM.product_range_chance("sulfur", 0, 8, 0.75)
     }
   },
@@ -347,6 +349,7 @@ data:extend({
     subgroup = "pm-calcium-sulfate-aem",
     order = "c",
     main_product = "pm-calcium-sulfate",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-calcium-sulfate-chunks", 5),
