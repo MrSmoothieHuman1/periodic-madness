@@ -51,6 +51,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sand",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/stone-to-sand.png",
     energy_required = 4,
     allow_productivity = true,
     enabled = false,
@@ -71,6 +73,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gravel-crushing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/gravel-to-sand.png",
     energy_required = 2,
     enabled = false,
     category = "pm-crushing",
