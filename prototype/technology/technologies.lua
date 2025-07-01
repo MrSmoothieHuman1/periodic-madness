@@ -5001,14 +5001,14 @@ data:extend({
 },
 {
     type = "technology",
-    name = "pm-iridum-processing",
+    name = "pm-iridium-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
 
     },
-    prerequisites = {"pm-metalloid-science-pack"},
+    prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
     {
       count = 300,
@@ -5044,6 +5044,29 @@ data:extend({
         {"pm-metalloid-science-pack", 1},
       },
       time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-light-lubricant",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/light-lubricant.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-osmium-processing"},
+    unit =
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
     }
   },
 
