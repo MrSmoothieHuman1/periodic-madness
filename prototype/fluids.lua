@@ -1654,6 +1654,18 @@ data:extend({
     flow_color = {r = 0.547, g = 0.9, b = 0.8 },
     auto_barrel = false,
   },
+    {
+    type = "fluid",
+    name = "pm-light-lubricant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/light-lubricant.png",
+    subgroup = "pm-lubricant",
+    order = "e",
+    default_temperature = 15,
+    base_color = {r = 0.547, g = 0.9, b = 0.8 },
+    flow_color = {r = 0.547, g = 0.9, b = 0.8 },
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",
