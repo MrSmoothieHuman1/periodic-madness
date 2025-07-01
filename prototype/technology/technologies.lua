@@ -4670,8 +4670,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-advanced-advanced-transition-metal-unlock.png",
     effects = 
     {
+      PM.unlock_recipe("pm-advanced-advanced-advanced-transition-metal-science-pack")
     },
-    prerequisites = {"pm-osmium-processing"},
+    prerequisites = {"pm-osmium-processing", "pm-yttrium-processing"},
     unit =
     {
       count = 450,
