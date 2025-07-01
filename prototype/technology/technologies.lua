@@ -4688,7 +4688,7 @@ data:extend({
   },
 
 --MARK: AA-ATM science
-{
+  {
     type = "technology",
     name = "pm-light-lubricant",
     icon_size = 256,
@@ -4710,7 +4710,31 @@ data:extend({
         {"pm-metalloid-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 80
+      time = 100
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-circuit-megassembler-MK2",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/circuit-megassembler.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-light-lubricant", "pm-circuit-megassembler"},
+    unit =
+    {
+      count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
     }
   },
 
