@@ -4710,7 +4710,7 @@ data:extend({
         {"pm-metalloid-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 100
+      time = 80
     }
   },
   {
@@ -4735,6 +4735,30 @@ data:extend({
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-osmium-pipes",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "fluid-handling"},
+    unit =
+    {
+      count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
     }
   },
 
