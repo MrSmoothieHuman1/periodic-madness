@@ -76,7 +76,7 @@ data:extend({
     type = "tool",
     name = "pm-advanced-advanced-advanced-transition-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/alkaline-earth-metal-pack.png",
+    icon = "__periodic-madness__/graphics/icons/science/advanced-advanced-advanced-transition-metal-pack.png",
     subgroup = "science-pack",
     order = "j",
     stack_size = 200,
