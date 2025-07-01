@@ -1302,7 +1302,26 @@ data:extend({
       PM.product_range("pm-sulfur-dioxide", 0, 2, "fluid"), --hydrogen sulfide in hard mode
       --PM.product_range("pm-methane", 1, 4, "fluid")
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-light-lubricant",
+    category = "chemistry",
+    subgroup = "pm-lubricant",
+    order = "e",
+    energy_required = 4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-polydimethylsiloxane", 8, "fluid"),
+        PM.ingredient("pm-heavy-lubricant", 10, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-light-lubricant", 10, "fluid")
+    }
+},
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["lubricant"].subgroup = "pm-lubricant"
