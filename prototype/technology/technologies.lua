@@ -4620,10 +4620,10 @@ data:extend({
     name = "pm-light-lubricant",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/light-lubricant.png",
-    effects = 
+    effects =
     {
     },
-    prerequisites = {"pm-osmium-processing"},
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-science-pack"},
     unit =
     {
       count = 450,
@@ -4634,6 +4634,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 80
     }
