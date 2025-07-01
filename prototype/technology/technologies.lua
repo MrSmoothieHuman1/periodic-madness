@@ -1755,6 +1755,55 @@ data:extend({
       amount = 20
     }
   },
+  {
+    type = "technology",
+    name = "pm-cadnium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/cadnium-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-zinc-chunk-seperation"),
+      PM.unlock_recipe("pm-zinc-tailings-condensing"),
+      PM.unlock_recipe("pm-cadnium-ore"),
+      PM.unlock_recipe("pm-cadnium-plate"),
+      PM.unlock_recipe("pm-molten-cadnium"),
+      PM.unlock_recipe("pm-cadnium-plate-cooling"),
+    },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      },
+      time = 30,
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-basic-sulfuric-acid",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/basic-sulfuric-acid.png",
+    effects = 
+    {
+      PM.unlock_recipe("sulfuric-acid")
+    },
+    prerequisites = {"pm-mixing-material-processing-1"},
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 30
+    }
+  },
 
 --MARK: PTM science
 {
