@@ -4623,7 +4623,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-science-pack"},
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-science-pack", "lubricant"},
     unit =
     {
       count = 450,
