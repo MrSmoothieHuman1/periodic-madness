@@ -5023,6 +5023,29 @@ data:extend({
       time = 80
     }
  },
+  {
+    type = "technology",
+    name = "pm-advanced-advanced-advanced-transition-metal-pack-unlock",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/advanced-advanced-advanced-transition-metal-unlock.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-osmium-processing"},
+    unit =
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 120
+    }
+  },
 
   {
     type = "technology",
