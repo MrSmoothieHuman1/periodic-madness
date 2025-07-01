@@ -136,6 +136,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-baryte-ore-crushing",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/baryte-ore-crushing.png",
         enabled = false,
         energy_required = 4,
         category = "pm-crushing",
