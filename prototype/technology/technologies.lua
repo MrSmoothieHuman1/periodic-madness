@@ -4695,8 +4695,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/light-lubricant.png",
     effects =
     {
+      PM.unlock_recipe("pm-polydimethylsiloxane")
     },
-    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "lubricant"},
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "lubricant", "pm-silicone-processing"},
     unit =
     {
       count = 450,
