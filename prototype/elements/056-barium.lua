@@ -179,7 +179,7 @@ data:extend({
         type = "recipe",
         name = "pm-barium-tailings-looping",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/recipes/nickel-tailings-looping.png",
+        icon = "__periodic-madness__/graphics/icons/recipes/barium-tailings-looping.png",
         category = "pm-mixing",
         subgroup = "pm-barium-aem",
         order = "d",

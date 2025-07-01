@@ -407,7 +407,7 @@ data:extend({
   type = "recipe",
   name = "pm-zinc-tailings-cleaning",
   icon_size = 64,
-  icon = "__periodic-madness__/graphics/icons/recipes/nickel-tailings-looping.png",
+  icon = "__periodic-madness__/graphics/icons/recipes/zinc-tailings-looping.png",
   category = "pm-mixing",
   subgroup = "pm-advanced-zinc-tm",
   order = "f",
