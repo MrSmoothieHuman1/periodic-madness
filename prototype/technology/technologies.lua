@@ -4508,6 +4508,7 @@ data:extend({
       PM.unlock_recipe("pm-aluminium-heating-coil"),
       PM.unlock_recipe("pm-tungsten-heating-coil"),
       PM.unlock_recipe("pm-molybdenum-heating-coil"),
+      PM.unlock_recipe("pm-gold-heating-coil")
     },
     prerequisites = {"advanced-material-processing-2"},
     research_trigger =
@@ -4652,7 +4653,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 80
+      time = 120
     }
   },
   {
@@ -4791,7 +4792,7 @@ data:extend({
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-lithium-sulfur-battery", "effect-transmission"},
     unit =
     {
-      count = 450,
+      count = 475,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4841,7 +4842,7 @@ data:extend({
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =
     {
-      count = 475,
+      count = 525,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4851,7 +4852,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 80
+      time = 100
     },
   },
   {
@@ -4973,6 +4974,54 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 30
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-duralumin",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+      count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    }
+  },
+    {
+    type = "technology",
+    name = "pm-duralumin-heating-coils",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-duralumin"},
+    unit =
+    {
+      count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 100
     }
   },
 
