@@ -4771,7 +4771,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"lubricant"},
+    prerequisites = {"pm-light-lubricant"},
     unit =
     {
       count = 475,
