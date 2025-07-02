@@ -4723,7 +4723,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-light-lubricant", "pm-circuit-megassembler"},
+    prerequisites = {"pm-electric-engine-unit", "pm-circuit-megassembler"},
     unit =
     {
       count = 550,
@@ -4751,6 +4751,54 @@ data:extend({
     unit =
     {
       count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-electric-engine-unit",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"lubricant"},
+    unit =
+    {
+      count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-sideserters",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-electric-engine-unit"},
+    unit =
+    {
+      count = 500,
       ingredients =
       {
         {"automation-science-pack", 1},
