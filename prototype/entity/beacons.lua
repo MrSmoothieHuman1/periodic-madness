@@ -255,10 +255,48 @@ data:extend({
         drawing_box_vertical_extension = 0.7,
         allowed_module_categories = {"pm-heating-coils"},
         allowed_effects = {"consumption", "speed", "pollution", "productivity"},
-        graphics_set = require("prototype.entity.beacon-graphics.beacon-2-graphics"),
+        graphics_set =
+        {
+          module_icons_suppressed = true,
+          animation_progress = 1,
+          module_tint_mode = "mix", -- "single-module"
+          no_modules_tint = {0.66, 0, 0},
+          random_animation_offset = false,
+          apply_module_tint = "secondary",
+          -- light = { shift = {0, 0}, color = {1, 1, 1}, intensity = 1, size = 3 },
+          animation_list =
+            {
+              {
+                render_layer = "floor-mechanics",
+                always_draw = true,
+                animation =
+                {
+                  layers =
+                  {
+                    {
+                      filename = "__periodic-madness__/graphics/entities/buildings/beacon-2/beacon-bottom-2.png",
+                      width = 212,
+                      height = 192,
+                      scale = 0.5,
+                      shift = util.by_pixel(0.5, 1)
+                    },
+                    {
+                      filename = "__base__/graphics/entity/beacon/beacon-shadow.png",
+                      width = 244,
+                      height = 176,
+                      scale = 0.5,
+                      draw_as_shadow = true,
+                      shift = util.by_pixel(12.5, 0.5)
+                    }
+                  }
+                }
+              }
+            }
+          },
         radius_visualisation_picture =
         {
           filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
+          tint = {0.75, 0, 0},
           priority = "extra-high-no-scale",
           width = 10,
           height = 10
