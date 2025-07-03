@@ -327,7 +327,19 @@ data:extend({
                       scale = 0.5,
                       shift = util.by_pixel(0, -16)
                     }
-                  }
+                  },
+                  {
+                    apply_module_tint = "primary",
+                    render_layer = "object",
+                    pictures =
+                    {
+                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-coil.png",
+                      width = 64,
+                      height = 128,
+                      scale = 0.5,
+                      shift = util.by_pixel(0, -16)
+                    }
+                  },
                 }
               }
             }

@@ -152,6 +152,11 @@ data:extend({
       subgroup = "pm-coils",
       order = "a",
       stack_size = 25,
+      art_style = "pm-heat-coil",
+      beacon_tint =
+      {
+        primary = {0.8, 0.4, 0}
+      },
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
       drop_sound = item_sounds.metal_small_inventory_move,
@@ -161,7 +166,6 @@ data:extend({
         consumption = 0.2,
         pollution = 0.1,
       },
-      art_style = "pm-heat-coil",
     }, --basic coil module, should be a alright starter
     {
       type = "module",
@@ -173,6 +177,11 @@ data:extend({
       subgroup = "pm-coils",
       order = "b",
       stack_size = 25,
+      art_style = "pm-heat-coil",
+      beacon_tint =
+      {
+        primary = {0.96, 0.95, 1}
+      },
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
       drop_sound = item_sounds.metal_small_inventory_move,
@@ -182,7 +191,6 @@ data:extend({
         consumption = 0.1,
         pollution = 0.05,
       },
-      art_style = "pm-heat-coil",
     },--slightly worse then copper, but better speed/consumption speed ratio
     {
       type = "module",
@@ -194,6 +202,11 @@ data:extend({
       subgroup = "pm-coils",
       order = "c",
       stack_size = 25,
+      art_style = "pm-heat-coil",
+      beacon_tint =
+      {
+        primary = {0.27, 0.25, 0.25}
+      },
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
       drop_sound = item_sounds.metal_small_inventory_move,
@@ -203,7 +216,7 @@ data:extend({
         consumption = 1,
         pollution = 0.15,
       },
-      art_style = "pm-heat-coil",
+
     }, -- high heat capacity, less pollution
     {
       type = "module",
@@ -215,6 +228,11 @@ data:extend({
       subgroup = "pm-coils",
       order = "d",
       stack_size = 25,
+      art_style = "pm-heat-coil",
+      beacon_tint =
+      {
+        primary = {0.62, 0.62, 0.56}
+      },
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
       drop_sound = item_sounds.metal_small_inventory_move,
@@ -225,7 +243,6 @@ data:extend({
         pollution = 0.5,
         productivity = -0.05
       },
-      art_style = "pm-heat-coil",
     }, --best heat capacity, so less consumption - lower prod for balance
     {
       type = "module",
@@ -237,6 +254,11 @@ data:extend({
       subgroup = "pm-coils",
       order = "e",
       stack_size = 25,
+      art_style = "pm-heat-coil",
+      beacon_tint =
+      {
+        primary = {0.9, 0.855, 0.49}
+      },
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
       drop_sound = item_sounds.metal_small_inventory_move,
@@ -246,7 +268,6 @@ data:extend({
         consumption = -0.15,
         pollution = 0.05,
       },
-      art_style = "pm-heat-coil",
     }, --'efficiency' module but as a coil
     {
       type = "module",
@@ -258,6 +279,11 @@ data:extend({
       subgroup = "pm-coils",
       order = "f",
       stack_size = 25,
+      art_style = "pm-heat-coil",
+      beacon_tint =
+      {
+        primary = {0.922, 0.91, 0.816}
+      },
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
       drop_sound = item_sounds.metal_small_inventory_move,
@@ -267,7 +293,6 @@ data:extend({
         consumption = 0.3,
         pollution = 0.2,
       },
-      art_style = "pm-heat-coil",
     }, --essenitally a better copper, honestly
 })
 
