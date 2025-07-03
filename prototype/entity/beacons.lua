@@ -240,6 +240,79 @@ data:extend({
           orientation_to_variation = false
         }
       },
+      {
+        type = "beacon",
+        name = "pm-heat-extender",
+        icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
+        flags = {"placeable-player", "player-creation"},
+        minable = {mining_time = 0.25, result = "pm-beacon-2"},
+        max_health = 400,
+        corpse = "beacon-remnants",
+        dying_explosion = "beacon-explosion",
+        collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
+        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        damaged_trigger_effect = hit_effects.entity(),
+        drawing_box_vertical_extension = 0.7,
+        allowed_module_categories = {"pm-heating-coils"},
+        allowed_effects = {"consumption", "speed", "pollution"},
+        graphics_set = require("prototype.entity.beacon-graphics.beacon-2-graphics"),
+        radius_visualisation_picture =
+        {
+          filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
+          priority = "extra-high-no-scale",
+          width = 10,
+          height = 10
+        },
+        supply_area_distance = 1,
+        energy_source =
+        {
+          type = "void",
+        },
+        impact_category = "metal",
+        open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
+        close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
+        working_sound =
+        {
+          sound =
+          {
+            variations = sound_variations("__base__/sound/beacon", 2, 0.3),
+            audible_distance_modifier = 0.33,
+          },
+          max_sounds_per_prototype = 3
+        },
+        distribution_effectivity = 1,
+        distribution_effectivity_bonus_per_quality_level = 0.1,
+        energy_usage = "1kW",
+        profile = 
+        {
+          -- a(b^x) + c, where a = 1, b = 1.1 and c = 0
+          1, 
+          1.1, 1.21, 1.331, 1.4641, 1.6105, 1.7715, 1.9487, 2.1435, 2.3579, 2.5937, 2.8531, 3.1384, 3.4522, 3.7974, 4.1772,
+          4.5949, 5.0544, 5.5599, 6.1159, 6.7274, 7.4002, 8.1402, 8.9543, 9.8497
+        },
+        beacon_counter = "same_type",
+        module_slots = 1,
+        icons_positioning =
+        {
+          {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 1}
+        },
+        water_reflection =
+        {
+          pictures =
+          {
+            filename = "__base__/graphics/entity/beacon/beacon-reflection.png",
+            priority = "extra-high",
+            width = 18,
+            height = 29,
+            shift = util.by_pixel(0, 55),
+            variation_count = 1,
+            scale = 5
+          },
+          rotate = false,
+          orientation_to_variation = false
+        }
+      },
+      
 })
 
 data.raw["beacon"]["beacon"].distribution_effectivity = 1
