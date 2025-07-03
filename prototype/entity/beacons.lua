@@ -254,7 +254,7 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_module_categories = {"pm-heating-coils"},
-        allowed_effects = {"consumption", "speed", "pollution"},
+        allowed_effects = {"consumption", "speed", "pollution", "productivity"},
         graphics_set = require("prototype.entity.beacon-graphics.beacon-2-graphics"),
         radius_visualisation_picture =
         {
@@ -296,21 +296,6 @@ data:extend({
         {
           {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 1}
         },
-        water_reflection =
-        {
-          pictures =
-          {
-            filename = "__base__/graphics/entity/beacon/beacon-reflection.png",
-            priority = "extra-high",
-            width = 18,
-            height = 29,
-            shift = util.by_pixel(0, 55),
-            variation_count = 1,
-            scale = 5
-          },
-          rotate = false,
-          orientation_to_variation = false
-        }
       },
       
 })
