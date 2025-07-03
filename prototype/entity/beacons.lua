@@ -267,14 +267,61 @@ data:extend({
           animation_list =
             {
               {
+                render_layer = "higher-object-above",
+                always_draw = true,
+                animation =
+                {
+                  filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-cover.png",
+                  width = 64,
+                  height = 128,
+                  scale = 0.5,
+                  shift = util.by_pixel(0, -16)
+                }
+              },
+              {
                 render_layer = "object",
+                always_draw = true,
+                animation =
+                {
+                  filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-support.png",
+                  width = 64,
+                  height = 128,
+                  scale = 0.5,
+                  shift = util.by_pixel(0, -18)
+                }
+              },
+              {
+                render_layer = "lower-object",
                 always_draw = true,
                 animation =
                 {
                   layers =
                   {
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-body.png",
+                      width = 64,
+                      height = 128,
+                      scale = 0.5,
+                      shift = util.by_pixel(0, -16)
+                    }
+                  }
+                }
+              }
+            },
+             module_visualisations =
+            {
+              {
+              art_style = "pm-heat-coil",
+              use_for_empty_slots = false,
+              slots =
+              {
+                {
+                  {
+                    has_empty_slot = false,
+                    render_layer = "object",
+                    pictures =
+                    {
+                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-coil.png",
                       width = 64,
                       height = 128,
                       scale = 0.5,
@@ -284,7 +331,8 @@ data:extend({
                 }
               }
             }
-          },
+          }
+        },
         radius_visualisation_picture =
         {
           filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
