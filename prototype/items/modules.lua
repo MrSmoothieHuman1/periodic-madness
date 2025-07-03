@@ -160,7 +160,8 @@ data:extend({
         speed = 0.2,
         consumption = 0.2,
         pollution = 0.1,
-      }
+      },
+      art_style = "pm-heat-coil",
     }, --basic coil module, should be a alright starter
     {
       type = "module",
@@ -180,7 +181,8 @@ data:extend({
         speed = 0.15,
         consumption = 0.1,
         pollution = 0.05,
-      }
+      },
+      art_style = "pm-heat-coil",
     },--slightly worse then copper, but better speed/consumption speed ratio
     {
       type = "module",
@@ -200,7 +202,8 @@ data:extend({
         speed = 0.5,
         consumption = 1,
         pollution = 0.15,
-      }
+      },
+      art_style = "pm-heat-coil",
     }, -- high heat capacity, less pollution
     {
       type = "module",
@@ -221,7 +224,8 @@ data:extend({
         consumption = 0.25,
         pollution = 0.5,
         productivity = -0.05
-      }
+      },
+      art_style = "pm-heat-coil",
     }, --best heat capacity, so less consumption - lower prod for balance
     {
       type = "module",
@@ -241,7 +245,8 @@ data:extend({
         speed = 0.1,
         consumption = -0.15,
         pollution = 0.05,
-      }
+      },
+      art_style = "pm-heat-coil",
     }, --'efficiency' module but as a coil
     {
       type = "module",
@@ -261,7 +266,8 @@ data:extend({
         speed = 0.4,
         consumption = 0.3,
         pollution = 0.2,
-      }
+      },
+      art_style = "pm-heat-coil",
     }, --essenitally a better copper, honestly
 })
 
