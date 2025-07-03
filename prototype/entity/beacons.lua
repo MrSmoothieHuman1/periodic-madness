@@ -287,7 +287,7 @@ data:extend({
                   width = 64,
                   height = 128,
                   scale = 0.5,
-                  shift = util.by_pixel(0, -18)
+                  shift = util.by_pixel(0, -16)
                 }
               },
               {
