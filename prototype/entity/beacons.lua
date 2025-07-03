@@ -257,7 +257,7 @@ data:extend({
         allowed_effects = {"consumption", "speed", "pollution", "productivity"},
         graphics_set =
         {
-          module_icons_suppressed = true,
+          module_icons_suppressed = false,
           animation_progress = 1,
           module_tint_mode = "mix", -- "single-module"
           no_modules_tint = {0.66, 0, 0},
@@ -267,26 +267,18 @@ data:extend({
           animation_list =
             {
               {
-                render_layer = "floor-mechanics",
+                render_layer = "object",
                 always_draw = true,
                 animation =
                 {
                   layers =
                   {
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/beacon-2/beacon-bottom-2.png",
-                      width = 212,
-                      height = 192,
+                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender.png",
+                      width = 64,
+                      height = 128,
                       scale = 0.5,
-                      shift = util.by_pixel(0.5, 1)
-                    },
-                    {
-                      filename = "__base__/graphics/entity/beacon/beacon-shadow.png",
-                      width = 244,
-                      height = 176,
-                      scale = 0.5,
-                      draw_as_shadow = true,
-                      shift = util.by_pixel(12.5, 0.5)
+                      shift = util.by_pixel(0, -16)
                     }
                   }
                 }
