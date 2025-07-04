@@ -273,21 +273,9 @@ data:extend({
                 {
                   filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-cover.png",
                   width = 64,
-                  height = 128,
+                  height = 101,
                   scale = 0.5,
-                  shift = util.by_pixel(0, -16)
-                }
-              },
-              {
-                render_layer = "object",
-                always_draw = true,
-                animation =
-                {
-                  filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-support.png",
-                  width = 64,
-                  height = 128,
-                  scale = 0.5,
-                  shift = util.by_pixel(0, -16)
+                  shift = util.by_pixel(0, -12)
                 }
               },
               {
@@ -300,13 +288,14 @@ data:extend({
                     {
                       filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-body.png",
                       width = 64,
-                      height = 128,
+                      height = 101,
                       scale = 0.5,
-                      shift = util.by_pixel(0, -16)
-                    }
+                      shift = util.by_pixel(0, -12)
+                    },
                   }
                 }
-              }
+              },
+
             },
              module_visualisations =
             {
@@ -323,10 +312,9 @@ data:extend({
                     {
                       filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-coil.png",
                       width = 64,
-                      height = 128,
+                      height = 101,
                       scale = 0.5,
-                      variation_count = 2,
-                      shift = util.by_pixel(0, -16)
+                      shift = util.by_pixel(0, -12)
                     }
                   },
                   {
@@ -334,12 +322,11 @@ data:extend({
                     render_layer = "object",
                     pictures =
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-coil.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-coil-mask.png",
                       width = 64,
-                      height = 128,
+                      height = 101,
                       scale = 0.5,
-                      variation_count = 2,
-                      shift = util.by_pixel(0, -16)
+                      shift = util.by_pixel(0, -12)
                     }
                   },
                 }
