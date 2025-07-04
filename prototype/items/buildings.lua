@@ -823,10 +823,10 @@ data:extend({
     name = "pm-coil-heater",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/coil-heater.png",
-    subgroup = "module",
-    order = "b",
+    subgroup = "pm-coils",
+    order = "x",
     place_result = "pm-coil-heater",
-    stack_size = 50
+    stack_size = 20
   },
 })
 
