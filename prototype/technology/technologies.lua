@@ -5002,9 +5002,9 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-heat-extenders",
+    name = "pm-coil-heater",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/coil-heater.png",
     effects = 
     {
     },
