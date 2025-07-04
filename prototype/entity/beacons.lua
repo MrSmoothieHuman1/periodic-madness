@@ -325,6 +325,7 @@ data:extend({
                       width = 64,
                       height = 128,
                       scale = 0.5,
+                      variation_count = 2,
                       shift = util.by_pixel(0, -16)
                     }
                   },
@@ -337,6 +338,7 @@ data:extend({
                       width = 64,
                       height = 128,
                       scale = 0.5,
+                      variation_count = 2,
                       shift = util.by_pixel(0, -16)
                     }
                   },
