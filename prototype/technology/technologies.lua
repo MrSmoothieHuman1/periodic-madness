@@ -194,6 +194,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/pheonlic-resin-processing.png",
     effects =
     {
+      PM.unlock_recipe("pm-glass-fibers"),
+      PM.unlock_recipe("pm-glass-resmelting"),
       PM.unlock_recipe("pm-pheonlic-resin")
     },
     prerequisites = {"pm-resin-processing"},
@@ -271,9 +273,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/optics.png",
     effects =
     {
-      PM.unlock_recipe("pm-glass-fibers"),
       PM.unlock_recipe("pm-fiberoptic-cable"),
-      PM.unlock_recipe("pm-glass-resmelting"),
       PM.unlock_recipe("pm-rubber-air-filter")
     },
     prerequisites = {"lamp", "pm-pheonlic-resin-processing", "pm-gold-processing"},
@@ -5000,7 +5000,7 @@ data:extend({
       time = 80
     }
   },
-    {
+  {
     type = "technology",
     name = "pm-heat-extenders",
     icon_size = 256,
