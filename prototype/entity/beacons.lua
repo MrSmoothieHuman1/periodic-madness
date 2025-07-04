@@ -279,7 +279,7 @@ data:extend({
                 }
               },
               {
-                render_layer = "lower-object",
+                render_layer = "object",
                 always_draw = true,
                 animation =
                 {
@@ -295,7 +295,6 @@ data:extend({
                   }
                 }
               },
-
             },
              module_visualisations =
             {
@@ -307,7 +306,7 @@ data:extend({
                 {
                   {
                     has_empty_slot = false,
-                    render_layer = "object",
+                    render_layer = "higher-object-under",
                     pictures =
                     {
                       filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil.png",
@@ -319,7 +318,7 @@ data:extend({
                   },
                   {
                     apply_module_tint = "primary",
-                    render_layer = "object",
+                    render_layer = "higher-object-under",
                     pictures =
                     {
                       filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil-mask.png",
