@@ -188,7 +188,7 @@ Date: 2024-12-08
     - Lowered the amount of molybdenum disulfide for oil residual recipes by 1, from 3 to 2.
     - Dou;bed the stack size of all catalysts, changed stack size of catalyst containers to 25 instead of 10.
     - PM 0.6.500 requires you to have 2.0.56 installed now, due to a crash that can occur with reactors.
-
+    - Havled the amount of mercury you get per craft (50 > 25).
   Fixes:
     - Fixed the science pack item names captilisation.
     - (Mostly) Fixed the Factoriopedia being a mess. Never not name your recipes after their outputs.

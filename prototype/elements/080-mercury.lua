@@ -112,11 +112,11 @@ data:extend({
     {
       PM.ingredient("pm-mercury-powder", 4),
       PM.ingredient("pm-red-mercury", 4),
-      PM.ingredient("water", 50, "fluid")
+      PM.ingredient("water", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-liquid-mercury", amount = 50 },
+      { type = "fluid", name = "pm-liquid-mercury", amount = 25 },
     }
   } --[[@as data.RecipePrototype]],
   {
