@@ -776,7 +776,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-3.png",
     subgroup = "pm-water-machine",
-    order = "e",
+    order = "ea",
     place_result = "pm-washing-plant-3",
     stack_size = 50,
   },
