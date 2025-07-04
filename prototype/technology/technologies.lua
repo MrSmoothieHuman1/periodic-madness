@@ -4978,7 +4978,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-duralumin",
+    name = "pm-uhrlumin",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
