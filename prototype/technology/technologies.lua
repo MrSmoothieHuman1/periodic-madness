@@ -5008,7 +5008,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-duralumin"},
+    prerequisites = {"pm-uhrlumin"},
     unit =
     {
       count = 550,
