@@ -152,7 +152,7 @@ data:extend({
     results =
     {
       PM.product("pm-zinc-ore", 2),
-      PM.product_range_chance("sulfur", 1, 2, 0.75),
+      PM.product_range_chance("sulfur", 1, 2, 0.33),
     }
   },
 
