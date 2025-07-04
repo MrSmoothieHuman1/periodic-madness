@@ -242,7 +242,7 @@ data:extend({
       },
       {
         type = "beacon",
-        name = "pm-heat-extender",
+        name = "pm-coil-heater",
         icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.25, result = "pm-beacon-2"},
@@ -271,7 +271,7 @@ data:extend({
                 always_draw = true,
                 animation =
                 {
-                  filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-cover.png",
+                  filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-cover.png",
                   width = 64,
                   height = 101,
                   scale = 0.5,
@@ -286,7 +286,7 @@ data:extend({
                   layers =
                   {
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-body.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-body.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -310,7 +310,7 @@ data:extend({
                     render_layer = "object",
                     pictures =
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-coil.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -322,7 +322,7 @@ data:extend({
                     render_layer = "object",
                     pictures =
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/heat-extender/heat-extender-coil-mask.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil-mask.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
