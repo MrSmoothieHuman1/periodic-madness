@@ -245,7 +245,7 @@ data:extend({
         name = "pm-coil-heater",
         icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
         flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.25, result = "pm-beacon-2"},
+        minable = {mining_time = 0.25, result = "pm-coil-heater"},
         max_health = 400,
         corpse = "beacon-remnants",
         dying_explosion = "beacon-explosion",

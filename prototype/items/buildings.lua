@@ -818,6 +818,16 @@ data:extend({
     place_result = "pm-longer-handed-inserter",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-coil-heater",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/coil-heater.png",
+    subgroup = "module",
+    order = "b",
+    place_result = "pm-coil-heater",
+    stack_size = 50
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
