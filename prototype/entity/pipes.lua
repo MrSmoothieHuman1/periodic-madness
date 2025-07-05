@@ -363,7 +363,7 @@ data:extend({
         type = "pipe",
         name = "pm-osmium-pipe",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-pipe.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe.png",
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 0.35, result = "pm-stainless-steel-pipe" },
         max_health = 1200,
