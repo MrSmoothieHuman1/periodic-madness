@@ -40,6 +40,77 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-inconel-625-precursor-alloy",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-nickel-plate", 7),
+      PM.ingredient("pm-molten-cobalt", 5, "fluid"),
+      PM.ingredient("pm-molybdenum-ore", 3)
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-precursor-alloy", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inconel-625-precursor-billet",
+    enabled = false,
+    energy_required = 13.5,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-inconel-625-precursor-alloy", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-precursor-billet", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-inconel-625",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-moltening",
+    ingredients =
+    {
+      PM.ingredient("pm-inconel-625-precursor-billet", 5),
+      PM.ingredient("pm-chromium-ore", 5),
+      PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
+    },
+    results = 
+    {
+      PM.product("pm-molten-inconel-625", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inconel-625-plate",
+    enabled = false,
+    energy_required = 4.5,
+    category = "pm-coldening",
+    main_product = "pm-inconel-625-plate",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-inconel-625", 10, "fluid"),
+      PM.ingredient("pm-crucible", 2)
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-plate", 5),
+      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,
