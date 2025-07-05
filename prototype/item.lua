@@ -1511,7 +1511,18 @@ data:extend({
     order = "a",
     stack_size = 100
   },
-
+  {
+    type = "item",
+    name = "pm-uhrlumin-precursor-billet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate-2.png", size = 64, scale = 0.5},
+    },
+    stack_size = 100
+  },
 
   {
     type = "item",

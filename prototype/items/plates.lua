@@ -272,7 +272,7 @@ data:extend({
     order = "d",
     stack_size = 100
   },
-    {
+  {
     type = "item",
     name = "pm-uhrlumin-plate",
     icon_size = 64,
@@ -282,8 +282,6 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate-2.png", size = 64, scale = 0.5},
     },
-    subgroup = "pm-magnesium-aem",
-    order = "d",
     stack_size = 100
   }
 })

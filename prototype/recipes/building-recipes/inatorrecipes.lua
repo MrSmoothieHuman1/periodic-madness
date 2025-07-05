@@ -40,6 +40,77 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-uhrlumin-precursor-alloy",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-aluminium-plate", 7),
+      PM.ingredient("pm-molten-copper", 5, "fluid"),
+      PM.ingredient("pm-magnesium-plate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-uhrlumin-precursor-alloy", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-uhrlumin-precursor-billet",
+    enabled = false,
+    energy_required = 13.5,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-uhrlumin-precursor-alloy", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-uhrlumin-precursor-billet", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-uhrlumin",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-moltening",
+    ingredients =
+    {
+      PM.ingredient("pm-uhrlumin-precursor-billet", 5),
+      PM.ingredient("pm-zinc-plate", 5),
+      PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
+    },
+    results = 
+    {
+      PM.product("pm-molten-uhrlumin", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-uhrlumin-plate",
+    enabled = false,
+    energy_required = 4.5,
+    category = "pm-coldening",
+    main_product = "pm-uhrlumin-plate",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-uhrlumin", 10, "fluid"),
+      PM.ingredient("pm-crucible", 2)
+    },
+    results = 
+    {
+      PM.product("pm-uhrlumin-plate", 5),
+      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,

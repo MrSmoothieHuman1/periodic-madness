@@ -4983,6 +4983,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+      PM.unlock_recipe("pm-uhrlumin-precursor-alloy"),
+      PM.unlock_recipe("pm-uhrlumin-precursor-billet"),
+      PM.unlock_recipe("pm-molten-uhrlumin"),
+      PM.unlock_recipe("pm-uhrlumin-plate")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =

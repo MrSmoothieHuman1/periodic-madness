@@ -1654,6 +1654,26 @@ data:extend({
     flow_color = {r = 0.547, g = 0.9, b = 0.8 },
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-uhrlumin-precursor-alloy",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-uhrlumin.png",
+    default_temperature = 15,
+    base_color = {r = 0.4, g = 0.2, b = 0.3},
+    flow_color = {r = 0.4, g = 0.2, b = 0.3},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-molten-uhrlumin",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-uhrlumin.png",
+    default_temperature = 15,
+    base_color = {r = 0.6, g = 0.2, b = 0.3},
+    flow_color = {r = 0.6, g = 0.2, b = 0.3},
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",
