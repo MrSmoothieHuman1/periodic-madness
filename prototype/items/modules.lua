@@ -285,8 +285,8 @@ data:extend({
       {
         speed = 0.25,
         productivity = 0.1,
-        consumption = 0.45,
-        pollution = 0.3,
+        consumption = 0.6,
+        pollution = 0.45,
       }
     }, --productivity coil, higher pollution + consumption with lower speed
 })
