@@ -118,6 +118,7 @@ data:extend({
 {
     type = "recipe",
     name = "pm-advanced-advanced-advanced-transition-metal-science-pack",
+    category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "i",
     energy_required = 6,
@@ -125,6 +126,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-yttrium-ore", 4),
+        PM.ingredient("pm-molten-zinc", 5, "fluid"),
         PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
