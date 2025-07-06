@@ -1204,7 +1204,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-flux-container",
-    energy_required = 2,
+    energy_required = 1.5,
     enabled = false,
     subgroup = "pm-catalysts",
     order = "g",
@@ -1220,18 +1220,20 @@ data:extend({
   {
     type = "recipe",
     name = "pm-filled-flux-container",
-    energy_required = 4,
+    energy_required = 3,
     enabled = false,
     subgroup = "pm-catalysts",
     order = "ga",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-flux-container", 1),
-      PM.ingredient("pm-sand", 6),
+      PM.ingredient("pm-sand", 4),
       PM.ingredient("pm-coke", 2),
       PM.ingredient("pm-flourine", 2)
     },
-    results = {
+    results = 
+    {
       PM.product("pm-filled-flux-container", 1)
     }
   },
