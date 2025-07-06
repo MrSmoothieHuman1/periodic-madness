@@ -91,7 +91,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-titanium-chunks", 4),
-      PM.ingredient("pm-coke", 2)
+      PM.ingredient("pm-coke", 3)
     },
     results =
     {
@@ -128,7 +128,7 @@ data:extend({
     results =
     {
       PM.product("pm-titanium-chloride", 2, "fluid"),
-      PM.product("pm-oxygen-gas", 4, "fluid")
+      PM.product_range("pm-coke", 0, 1)
     }
   } --[[@as data.RecipePrototype]],
   {
