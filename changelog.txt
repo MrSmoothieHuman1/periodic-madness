@@ -72,6 +72,7 @@ Date: 2024-12-08
     - Added an early sulfuric acid recipe in place of the removed acidic water > sulfuric acid chain. It is unlocked after mixing tanks, and unlocks certain previously sulfuric-locked things (like platinum).
     - introduced hot coolant! currently it is only produced by reactors (and some recipes), where it has to be cooled back down to be usable, losing a little in the process.
     - Added urhlumin in AEM packs, which is an advanced alloy and can be used to create coil heaters which act like beacons for furnaces.
+    - Titanium oxide now has a fluxed recipe!
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.

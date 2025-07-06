@@ -1817,7 +1817,8 @@ data:extend({
       PM.unlock_recipe("pm-fluxed-palladium-nickel-froth-seperation"),
       PM.unlock_recipe("pm-fluxed-platinum-nickel-froth-seperation"),
       PM.unlock_recipe("pm-fluxed-copper-froth-seperation"),
-      PM.unlock_recipe("pm-fluxed-phosphor-vapour")
+      PM.unlock_recipe("pm-fluxed-phosphor-vapour"),
+      PM.unlock_recipe("pm-fluxed-titanium-oxide")
     },
     prerequisites = {"chemical-science-pack"},
     unit =

@@ -100,6 +100,36 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
+    name = "pm-fluxed-titanium-oxide",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/titanium-oxide.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/filled-flux-container.png",
+        icon_size = 64
+      }
+    },
+    category = "pm-acids",
+    subgroup = "pm-titanium-tm",
+    order = "ca",
+    enabled = false,
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("pm-titanium-chunks", 4),
+      PM.ingredient("pm-filled-flux-container", 1)
+    },
+    results =
+    {
+      PM.product("pm-titanium-oxide", 6),
+      PM.product_chance("pm-flux-container", 1, 0.66),
+    }
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
     name = "pm-titanium-chloride",
     icon_size = 64,
     icons =
