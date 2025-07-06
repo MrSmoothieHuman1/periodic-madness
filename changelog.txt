@@ -195,6 +195,7 @@ Date: 2024-12-08
     - Changed titanium chloride seperation to spit out 0-1 coke, instead of oxygen gas.
     - Lowered sand cost of flux from 6 to 4.
     - Changed crafting times of flux containers from 2 to 1.5, and flux from 4 to 3.
+    - Finally changed A-ATM packs to use titanium/tungsten plates.
 
   Fixes:
     - Fixed the science pack item names captilisation.

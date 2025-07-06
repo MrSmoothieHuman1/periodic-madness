@@ -9,8 +9,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-titanium-ore", 8),
-        PM.ingredient("pm-tungsten-ore", 8),
+        PM.ingredient("pm-titanium-plate", 8),
+        PM.ingredient("pm-tungsten-plate", 8),
         PM.ingredient("pm-silver-plate", 15),
         PM.ingredient("copper-plate", 15),
         PM.ingredient("pm-science-bottle", 1)
@@ -171,8 +171,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-titanium-ore", 8),
-        PM.ingredient("pm-tungsten-ore", 8),
+        PM.ingredient("pm-titanium-plate", 8),
+        PM.ingredient("pm-tungsten-plate", 8),
         PM.ingredient("pm-silver-plate", 15),
         PM.ingredient("copper-plate", 15),
         PM.ingredient("pm-plastic-science-bottle", 1)
