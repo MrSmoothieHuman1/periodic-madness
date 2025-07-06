@@ -1678,7 +1678,7 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-inconel-precursor-alloy",
+    name = "pm-inconel-625-precursor-alloy",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/molten-inconel-625.png",
     default_temperature = 15,

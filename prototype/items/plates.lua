@@ -271,7 +271,14 @@ data:extend({
     subgroup = "pm-magnesium-aem",
     order = "d",
     stack_size = 100
-  }
+  },
+  {
+    type = "item",
+    name = "pm-inconel-625-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/magnesium-plate.png",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["iron-plate"].subgroup = "pm-iron-tm"

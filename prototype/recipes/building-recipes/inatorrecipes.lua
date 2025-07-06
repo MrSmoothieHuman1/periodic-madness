@@ -81,7 +81,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-inconel-625-precursor-billet", 5),
-      PM.ingredient("pm-chromium-ore", 5),
+      PM.ingredient("pm-chrominum-ore", 5),
       PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
       PM.ingredient("pm-filled-flux-container", 1)
     },

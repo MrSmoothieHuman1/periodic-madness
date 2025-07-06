@@ -1511,6 +1511,22 @@ data:extend({
     order = "a",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-inconel-625-precursor-billet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/gravel.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/gravel.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/gravel-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/gravel-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/gravel-4.png", size = 64, scale = 0.5 }
+    },
+    subgroup = "pm-glassing",
+    order = "a",
+    stack_size = 100
+  },
 
 
   {
