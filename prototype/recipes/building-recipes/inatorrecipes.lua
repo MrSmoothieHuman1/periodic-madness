@@ -1381,7 +1381,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-ammonia-voiding",
+    name = "pm-syngas-voiding",
     icon_size = 64,
     icons =
     {
@@ -1479,7 +1479,7 @@ data:extend({
     emissions_multiplier = 1.75,
     ingredients =
     {
-      PM.ingredient("pm-sulfur-dioxide", 25, "fluid"),
+      PM.ingredient("pm-sulfur-trioxide", 25, "fluid"),
     },
     results = {}
   },
