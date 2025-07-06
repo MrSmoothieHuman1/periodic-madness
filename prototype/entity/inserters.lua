@@ -253,6 +253,90 @@ data:extend({
         default_stack_control_input_signal = inserter_default_stack_control_input_signal
       }--[[@as data.InserterPrototype]],
 
+--MARK: Sideserters
+    {
+        type = "inserter",
+        name = "pm-sideserter",
+        icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+        flags = {"placeable-neutral", "placeable-player", "player-creation"},
+        minable = { mining_time = 0.15, result = "pm-express-inserter" },
+        max_health = 250,
+        corpse = "fast-inserter-remnants",
+        dying_explosion = "fast-inserter-explosion",
+        resistances =
+        {
+          {
+            type = "fire",
+            percent = 90
+          },
+          {
+            type = "impact",
+            percent = 45
+          },
+        },
+        collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
+        selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
+        damaged_trigger_effect = hit_effects.entity(),
+        pickup_position = {0, -1},
+        insert_position = {1.2, 0},
+        energy_per_movement = "10kJ",
+        energy_per_rotation = "10kJ",
+        energy_source =
+        {
+          type = "electric",
+          usage_priority = "secondary-input",
+          drain = "0.6kW"
+        },
+        extension_speed = 0.3,
+        rotation_speed = 0.04,
+        filter_count = 5,
+        icon_draw_specification = {scale = 0.5},
+        fast_replaceable_group = "inserter",
+        impact_category = "metal",
+        open_sound = sounds.inserter_open,
+        close_sound = sounds.inserter_close,
+        working_sound = sounds.inserter_fast,
+        hand_base_picture =
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-base.png",
+          priority = "extra-high",
+          width = 32,
+          height = 136,
+          scale = 0.25
+        },
+        hand_closed_picture =
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-closed.png",
+          priority = "extra-high",
+          width = 72,
+          height = 164,
+          scale = 0.25
+        },
+        hand_open_picture =
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-open.png",
+          priority = "extra-high",
+          width = 72,
+          height = 164,
+          scale = 0.25
+        },
+        platform_picture =
+        {
+          sheet =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-platform.png",
+            priority = "extra-high",
+            width = 105,
+            height = 79,
+            shift = util.by_pixel(1.5, 7.5-1),
+            scale = 0.5
+          }
+        },
+        circuit_connector = circuit_connector_definitions["inserter"],
+        circuit_wire_max_distance = inserter_circuit_wire_max_distance,
+        default_stack_control_input_signal = inserter_default_stack_control_input_signal
+      }--[[@as data.InserterPrototype]],
+
 --MARK: Longer handed inserter
 {
     type = "inserter",
