@@ -1319,17 +1319,17 @@ data:extend({
       PM.unlock_recipe("pm-washing-plant-2"),
       PM.unlock_recipe("pm-gas-water-electroylsis"),
     },
-    prerequisites = {"fluid-handling"},
+    prerequisites = {"advanced-circuit"},
     unit =
     {
-      count = 100,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 30
+      time = 45
     }
   },
   {

@@ -597,7 +597,7 @@ data:extend({
     {
       PM.ingredient("pm-corrosion-resistant-tubing", 10),
       PM.ingredient("pm-stainless-steel-alloy", 2),
-      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("advanced-circuit", 4),
       PM.ingredient("pm-heavyweight-panelling", 12)
     },
     results = {

@@ -196,6 +196,7 @@ Date: 2024-12-08
     - Lowered sand cost of flux from 6 to 4.
     - Changed crafting times of flux containers from 2 to 1.5, and flux from 4 to 3.
     - Finally changed A-ATM packs to use titanium/tungsten plates.
+    - Lowered amount of red circuits needed for washing plant 2's from 6 to 4.
 
   Fixes:
     - Fixed the science pack item names captilisation.
@@ -222,7 +223,7 @@ Date: 2024-12-08
     - Unhid molybdenum TM leeching from the player.
     - Made electric engines prerequisite red circuits.
     - Fixed temperature=inators not being able to replaced or upgraded over eachother.
-    - Fixed the prerequisites of advanced-advanced transition metal science not being correct or being missing.
+    - Fixed the prerequisites of advanced-advanced transition metal sciences not being correct or being missing.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168
