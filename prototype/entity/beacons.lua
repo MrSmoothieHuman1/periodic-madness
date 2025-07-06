@@ -243,7 +243,7 @@ data:extend({
       {
         type = "beacon",
         name = "pm-coil-heater",
-        icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/coil-heater.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.25, result = "pm-coil-heater"},
         max_health = 400,
