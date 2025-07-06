@@ -217,11 +217,12 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "b",
         main_product = "pm-ferrosilicon",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-high-quality-quartzite", 6),
             PM.ingredient("pm-filled-flux-container", 3),
-            PM.ingredient("pm-coke", 6),
+            PM.ingredient("pm-carbon", 4),
             PM.ingredient("pm-ferrum", 9)
         },
         results =

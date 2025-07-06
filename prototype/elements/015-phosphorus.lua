@@ -60,7 +60,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-phosphate-rock", 4),
-      PM.ingredient("pm-coke", 2),
+      PM.ingredient("pm-coke", 3),
       PM.ingredient("pm-sand", 4)
     },
     results =
@@ -143,7 +143,6 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-phosphate-rock", 4),
-      PM.ingredient("pm-coke", 2),
       PM.ingredient("pm-filled-flux-container", 1)
     },
     results =

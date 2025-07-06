@@ -473,11 +473,11 @@ data:extend({
     order = "db",
     ingredients =
     {
-      PM.ingredient("coal", 8),
+      PM.ingredient("coal", 9),
     },
     results =
     {
-      PM.product("pm-coke", 5)
+      PM.product("pm-coke", 6)
     }
   },
   {

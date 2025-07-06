@@ -321,7 +321,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-iron-chunk", 4),
-      PM.ingredient("pm-coke", 4)
+      PM.ingredient("pm-coke", 2)
     },
     results =
     {
