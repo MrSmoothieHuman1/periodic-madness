@@ -71,7 +71,7 @@ Date: 2024-12-08
     - Added a subgroup for sulfuric acid, and split sulfur into its own subgroup.
     - Added an early sulfuric acid recipe in place of the removed acidic water > sulfuric acid chain. It is unlocked after mixing tanks, and unlocks certain previously sulfuric-locked things (like platinum).
     - introduced hot coolant! currently it is only produced by reactors (and some recipes), where it has to be cooled back down to be usable, losing a little in the process.
-    - Added duralumin and duralumin heating coils! These are the first type of heating coils that can add productivity to furnaces. (dont ask why you are using duralumin for heating coils, shhhh)
+    - Added urhlumin in AEM packs, which is an advanced alloy and can be used to create coil heaters which act like beacons for furnaces.
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
