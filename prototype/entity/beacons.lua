@@ -267,11 +267,12 @@ data:extend({
           animation_list =
             {
               {
-                render_layer = "higher-object-above",
+                render_layer = "object",
+                secondary_draw_order = 0,
                 always_draw = true,
                 animation =
                 {
-                  filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-cover.png",
+                  filename = "__heating-coils__/graphics/coil-heater/coil-heater-cover.png",
                   width = 64,
                   height = 101,
                   scale = 0.5,
@@ -279,14 +280,15 @@ data:extend({
                 }
               },
               {
-                render_layer = "object",
+                render_layer = "object-under",
+                secondary_draw_order = 127,
                 always_draw = true,
                 animation =
                 {
                   layers =
                   {
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-body.png",
+                      filename = "__heating-coils__/graphics/coil-heater/coil-heater-body.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -299,17 +301,18 @@ data:extend({
              module_visualisations =
             {
               {
-              art_style = "pm-heat-coil",
+              art_style = "hc-heating-coil",
               use_for_empty_slots = false,
               slots =
               {
                 {
                   {
                     has_empty_slot = false,
-                    render_layer = "higher-object-under",
+                    render_layer = "object",
+                    secondary_draw_order = -1,
                     pictures =
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil.png",
+                      filename = "__heating-coils__/graphics/coil-heater/coil-heater-coil.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -318,10 +321,11 @@ data:extend({
                   },
                   {
                     apply_module_tint = "primary",
-                    render_layer = "higher-object-under",
+                    render_layer = "object",
+                    secondary_draw_order = -1,
                     pictures =
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil-mask.png",
+                      filename = "__heating-coils__/graphics/coil-heater/coil-heater-coil-mask.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
