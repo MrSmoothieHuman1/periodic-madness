@@ -72,17 +72,17 @@ data:extend({
     subgroup = "pm-platinum-tm",
     order = "b",
     enabled = false,
-    energy_required = 6.4,
+    energy_required = 4,
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-nickel-froth", 5, "fluid"),
-      PM.ingredient("pm-sand", 6),
-      PM.ingredient("pm-coke", 4)
+      PM.ingredient("pm-sand", 5),
+      PM.ingredient("pm-coke", 3)
     },
     results =
     {
-      PM.product_range("pm-nickel-chunk", 1, 3),
+      PM.product_range("pm-nickel-chunk", 1, 2),
       PM.product("pm-platinum-powder", 4),
       PM.product_range_chance("pm-ferrum", 1, 3, 0.5)
     }
@@ -96,7 +96,7 @@ data:extend({
     subgroup = "pm-platinum-tm",
     order = "d",
     enabled = false,
-    energy_required = 12,
+    energy_required = 6,
     ingredients =
     {
       PM.ingredient("pm-platinum-powder", 4),
@@ -139,7 +139,7 @@ data:extend({
     subgroup = "pm-platinum-tm",
     order = "ba",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 6,
     allow_productivity = true,
     ingredients =
     {
