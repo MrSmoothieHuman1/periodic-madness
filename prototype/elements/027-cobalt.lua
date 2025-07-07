@@ -74,19 +74,19 @@ data:extend({
     subgroup = "pm-cobalt-tm",
     order = "b",
     enabled = false,
-    energy_required = 6.4,
+    energy_required = 12,
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-copper-froth", 5, "fluid"),
-      PM.ingredient("pm-sand", 6),
-      PM.ingredient("pm-coke", 4)
+      PM.ingredient("pm-copper-froth", 10, "fluid"),
+      PM.ingredient("pm-sand", 5),
+      PM.ingredient("pm-coke", 3)
     },
     results =
     {
       PM.product("pm-copper-chunk", 2),
       PM.product_range_chance("pm-cobaltite", 0, 3, 0.69),
-      PM.product("pm-cobalt-blue", 2)
+      PM.product("pm-cobalt-blue", 4)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -106,7 +106,7 @@ data:extend({
     results =
     {
       PM.product("pm-cobalt-ore", 2),
-      PM.product_range("pm-aluminium-ore", 1, 4)
+      PM.product_range("pm-aluminium-ore", 0, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -140,7 +140,7 @@ data:extend({
     subgroup = "pm-cobalt-tm",
     order = "ba",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 12,
     allow_productivity = true,
     ingredients =
     {
@@ -149,9 +149,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-chunk", 2),
+      PM.product("pm-copper-chunk", 1),
       PM.product_chance("pm-cobaltite", 1, 0.69),
-      PM.product("pm-cobalt-blue", 3),
+      PM.product("pm-cobalt-blue", 4),
       PM.product_chance("pm-flux-container", 1, 0.66),
     }
   } --[[@as data.RecipePrototype]],
