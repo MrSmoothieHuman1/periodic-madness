@@ -151,7 +151,7 @@ data:extend({
       category = "pm-heating-coils",
       subgroup = "pm-coils",
       order = "a",
-      stack_size = 25,
+      stack_size = 50,
       art_style = "pm-heat-coil",
       beacon_tint =
       {
@@ -176,7 +176,7 @@ data:extend({
       category = "pm-heating-coils",
       subgroup = "pm-coils",
       order = "b",
-      stack_size = 25,
+      stack_size = 50,
       art_style = "pm-heat-coil",
       beacon_tint =
       {
@@ -201,7 +201,7 @@ data:extend({
       category = "pm-heating-coils",
       subgroup = "pm-coils",
       order = "c",
-      stack_size = 25,
+      stack_size = 50,
       art_style = "pm-heat-coil",
       beacon_tint =
       {
@@ -227,7 +227,7 @@ data:extend({
       category = "pm-heating-coils",
       subgroup = "pm-coils",
       order = "d",
-      stack_size = 25,
+      stack_size = 50,
       art_style = "pm-heat-coil",
       beacon_tint =
       {
@@ -253,7 +253,7 @@ data:extend({
       category = "pm-heating-coils",
       subgroup = "pm-coils",
       order = "e",
-      stack_size = 25,
+      stack_size = 50,
       art_style = "pm-heat-coil",
       beacon_tint =
       {
@@ -278,7 +278,7 @@ data:extend({
       category = "pm-heating-coils",
       subgroup = "pm-coils",
       order = "f",
-      stack_size = 25,
+      stack_size = 50,
       art_style = "pm-heat-coil",
       beacon_tint =
       {
