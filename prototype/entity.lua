@@ -1889,13 +1889,14 @@ data:extend({
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
     crafting_categories = { "pm-moltening" },
-    energy_usage = "650kW",
+    energy_usage = "320kW",
     crafting_speed = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 10},
+      drain = "13kW"
     },
     graphics_set = 
   {
@@ -2084,13 +2085,14 @@ data:extend({
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
     crafting_categories = { "pm-moltening" },
-    energy_usage = "750kW",
+    energy_usage = "640kW",
     crafting_speed = 1.4 + 0.1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 8},
+      drain = "14kW"
     },
     graphics_set = 
   {
