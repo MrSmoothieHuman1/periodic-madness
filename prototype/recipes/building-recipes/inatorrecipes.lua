@@ -588,7 +588,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-liquid-solder",
+    name = "pm-molten-solder",
     icon_size = 64,
     icons =
     {

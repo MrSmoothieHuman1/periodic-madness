@@ -239,7 +239,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-calcite",
+    name = "pm-advanced-calcite",
     category = "chemistry",
     subgroup = "pm-calcium-aem",
     order = "e",

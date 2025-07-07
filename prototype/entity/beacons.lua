@@ -272,7 +272,7 @@ data:extend({
                 always_draw = true,
                 animation =
                 {
-                  filename = "__heating-coils__/graphics/coil-heater/coil-heater-cover.png",
+                  filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-cover.png",
                   width = 64,
                   height = 101,
                   scale = 0.5,
@@ -288,7 +288,7 @@ data:extend({
                   layers =
                   {
                     {
-                      filename = "__heating-coils__/graphics/coil-heater/coil-heater-body.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-body.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -301,7 +301,7 @@ data:extend({
              module_visualisations =
             {
               {
-              art_style = "hc-heating-coil",
+              art_style = "pm-heat-coil",
               use_for_empty_slots = false,
               slots =
               {
@@ -312,7 +312,7 @@ data:extend({
                     secondary_draw_order = -1,
                     pictures =
                     {
-                      filename = "__heating-coils__/graphics/coil-heater/coil-heater-coil.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -325,7 +325,7 @@ data:extend({
                     secondary_draw_order = -1,
                     pictures =
                     {
-                      filename = "__heating-coils__/graphics/coil-heater/coil-heater-coil-mask.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil-mask.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -351,8 +351,8 @@ data:extend({
           type = "void",
         },
         impact_category = "metal",
-        open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
-        close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
+        open_sound = {filename = "__base__/sound/open-close/steam-open.ogg", volume = 0.4},
+        close_sound = {filename = "__base__/sound/open-close/steam-close.ogg", volume = 0.4},
         working_sound =
         {
           sound =

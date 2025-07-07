@@ -913,7 +913,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/solder.png",
     effects =
     {
-      PM.unlock_recipe("pm-liquid-solder"),
+      PM.unlock_recipe("pm-molten-solder"),
       PM.unlock_recipe("pm-solder-plate-cooling"),
       PM.unlock_recipe("pm-solder-wire"),
       PM.unlock_recipe("pm-solder-case"),
@@ -3846,7 +3846,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-mixed-calcium-rock"),
       PM.unlock_recipe("pm-calcium-hydroxide-slurry"),
-      PM.unlock_recipe("pm-calcite"),
+      PM.unlock_recipe("pm-advanced-calcite"),
       PM.unlock_recipe("pm-calcium-oxide"),
       PM.unlock_recipe("pm-alumnotheric-calcium")
     },
