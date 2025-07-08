@@ -1607,6 +1607,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-lunar-panel-equipment",
+    icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2-icon.png",
+    icon_size = 64,
+    place_as_equipment_result = "pm-lunar-panel-equipment",
+    subgroup = "pm-modular-power",
+    order = "b",
+    stack_size = 20
+  },
+  {
+    type = "item",
     name = "pm-iron-fish",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/iron-fish.png",

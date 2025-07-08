@@ -1953,7 +1953,7 @@ data:extend({
     name = "pm-solar-panel-equipment-2",
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
-    "__periodic-madness__/graphics/technology/solar-panel-equipment-3.png"),
+    "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
     prerequisites = {"solar-panel-equipment", "pm-post-transition-metal-pack-unlock"},
     effects =
     {
@@ -3814,7 +3814,7 @@ data:extend({
     name = "pm-solar-panel-equipment-3",
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
-    "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
+    "__periodic-madness__/graphics/technology/solar-panel-equipment-3.png"),
     prerequisites = {"pm-solar-panel-equipment-2", "pm-magnesium-chloride", "low-density-structure"},
     effects =
     {
@@ -5028,6 +5028,34 @@ data:extend({
       },
       time = 100
     }
+  },
+  {
+    type = "technology",
+    name = "pm-lunar-panel-equipment",
+    icon_size = 256,
+    icons = util.technology_icon_constant_equipment(
+    "__periodic-madness__/graphics/technology/lunar-panel-equipment.png"),
+    prerequisites = {"pm-solar-panel-equipment-2", "pm-magnesium-chloride", "low-density-structure", "pm-cadmium-telluride"},
+    effects =
+    {
+      PM.unlock_recipe("pm-solar-panel-equipment-3")
+    },
+    unit =
+    {
+      count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 120
+    },
   },
 
   {
