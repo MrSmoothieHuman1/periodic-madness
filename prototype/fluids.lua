@@ -1656,7 +1656,7 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-uhrlumin-precursor-alloy",
+    name = "pm-molten-uhrlumin-precursor-alloy",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/molten-uhrlumin-precursor-alloy.png",
     default_temperature = 15,

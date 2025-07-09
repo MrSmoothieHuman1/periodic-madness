@@ -4984,7 +4984,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-      PM.unlock_recipe("pm-uhrlumin-precursor-alloy"),
+      PM.unlock_recipe("pm-molten-uhrlumin-precursor-alloy"),
       PM.unlock_recipe("pm-uhrlumin-precursor-billet"),
       PM.unlock_recipe("pm-molten-uhrlumin"),
       PM.unlock_recipe("pm-uhrlumin-plate")
@@ -5010,7 +5010,7 @@ data:extend({
     name = "pm-coil-heater",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/coil-heater.png",
-    effects = 
+    effects =
     {
     },
     prerequisites = {"pm-uhrlumin"},

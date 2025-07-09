@@ -40,7 +40,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-uhrlumin-precursor-alloy",
+    name = "pm-molten-uhrlumin-precursor-alloy",
     enabled = false,
     energy_required = 18,
     category = "pm-moltening",
@@ -53,7 +53,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-uhrlumin-precursor-alloy", 5, "fluid")
+      PM.product("pm-molten-uhrlumin-precursor-alloy", 5, "fluid")
     }
   },
   {
