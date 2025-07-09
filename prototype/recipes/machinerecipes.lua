@@ -1524,14 +1524,14 @@ data:extend({
   {
     type = "recipe",
     name = "pm-coil-heater",
-    subgroup = "pm-heating-coils",
+    subgroup = "pm-coils",
     order = "x",
     enabled = false,
     energy_required = 9,
     ingredients = 
     {
       PM.ingredient("pm-uhrlumin-plate", 2),
-      PM.ingredient("pm-heat-resistant-plating", 12),
+      PM.ingredient("pm-heating-plating", 12),
       PM.ingredient("advanced-circuit", 6),
       PM.ingredient("pm-lightweight-framing", 10)
     },
