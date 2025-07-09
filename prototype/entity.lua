@@ -8778,9 +8778,6 @@ data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-pla
 
 data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "115kW"
 
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 750
-data.raw["heat-pipe"]["heat-pipe"].map_color = {r = 0.6, g = 0.506, b = 0.353}
-
 data.raw["combat-robot"]["defender"].time_to_live = 60 * 60
 
 data.raw["pump"]["pump"].pumping_speed = 100

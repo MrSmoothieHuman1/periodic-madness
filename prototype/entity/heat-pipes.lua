@@ -12,6 +12,13 @@ data:extend({
         dying_explosion = "heat-pipe-explosion",
         random_corpse_variation = true,
         map_color = {r = 0.6, g = 0.353, b = 0.353},
+        custom_tooltip_fields = 
+        {
+          {
+            name = {"pm-tooltips.max-temperature"},
+            value = {"pm-tooltips.temp-500"}
+          },
+        },
         working_sound =
         {
           sound =
@@ -125,6 +132,13 @@ data:extend({
         dying_explosion = "heat-pipe-explosion",
         random_corpse_variation = true,
         map_color = {r = 0.6, g = 0.58, b = 0.353},
+        custom_tooltip_fields = 
+        {
+          {
+            name = {"pm-tooltips.max-temperature"},
+            value = {"pm-tooltips.temp-1500"}
+          },
+        },
         working_sound =
         {
           sound =
@@ -226,5 +240,13 @@ data:extend({
             ending_left = {}
           }, true)
       },
-
 })
+data.raw["heat-pipe"]["heat-pipe"].custom_tooltip_fields = 
+{
+  {
+    name = {"pm-tooltips.max-temperature"},
+    value = {"pm-tooltips.temp-750"}
+  },
+}
+data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 750
+data.raw["heat-pipe"]["heat-pipe"].map_color = {r = 0.6, g = 0.506, b = 0.353}
