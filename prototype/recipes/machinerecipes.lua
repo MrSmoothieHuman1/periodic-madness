@@ -1530,7 +1530,7 @@ data:extend({
     energy_required = 9,
     ingredients = 
     {
-      PM.ingredient("pm-uhrlumin-plate", 2),
+      PM.ingredient("pm-uhrlumin-plate", 4),
       PM.ingredient("pm-heating-plating", 12),
       PM.ingredient("advanced-circuit", 6),
       PM.ingredient("pm-lightweight-framing", 10)
