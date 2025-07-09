@@ -5012,6 +5012,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/coil-heater.png",
     effects =
     {
+      PM.unlock_recipe("pm-coil-heater")
     },
     prerequisites = {"pm-uhrlumin-processing"},
     unit =

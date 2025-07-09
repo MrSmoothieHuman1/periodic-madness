@@ -1520,6 +1520,25 @@ data:extend({
     {
       PM.product("pm-RTG", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-coil-heater",
+    subgroup = "pm-heating-coils",
+    order = "x",
+    enabled = false,
+    energy_required = 9,
+    ingredients = 
+    {
+      PM.ingredient("pm-uhrlumin-plate", 2),
+      PM.ingredient("pm-heat-resistant-plating", 12),
+      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("pm-lightweight-framing", 10)
+    },
+    results =
+    {
+      PM.product("pm-coil-heater", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 
