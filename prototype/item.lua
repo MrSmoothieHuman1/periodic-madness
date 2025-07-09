@@ -1606,6 +1606,17 @@ data:extend({
     icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2-icon.png",
     icon_size = 64,
     place_as_equipment_result = "pm-lunar-panel-equipment",
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"tooltips.lunar-equipment-day"},
+        value = {"tooltips.lunar-equipment-day-value"}
+      },
+      {
+        name = {"tooltips.lunar-equipment-night"},
+        value = {"tooltips.lunar-equipment-night-value"}
+      },
+    },
     subgroup = "pm-modular-power",
     order = "b",
     stack_size = 20
