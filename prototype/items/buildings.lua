@@ -467,6 +467,13 @@ data:extend({
     name = "pm-heat-pipe-1",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-1.png",
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.max-temperature"},
+        value = {"pm-tooltips.temp-500"}
+      },
+    },
     subgroup = "pm-heat-machines",
     order = "a",
     place_result = "pm-heat-pipe-1",
@@ -617,6 +624,13 @@ data:extend({
     name = "pm-heat-pipe-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-3.png",
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.max-temperature"},
+        value = {"pm-tooltips.temp-1250"}
+      },
+    },
     subgroup = "pm-heat-machines",
     order = "c",
     place_result = "pm-heat-pipe-3",
@@ -872,6 +886,14 @@ data.raw["item"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["item"]["heat-pipe"].order = "b"
 data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-pipe"].order = "b"
+data.raw["recipe"]["heat-pipe"].custom_tooltip_fields = 
+{
+  {
+    name = {"pm-tooltips.max-temperature"},
+    value = {"pm-tooltips.temp-500"}
+  },
+}
+  
 
 data.raw["item"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["item"]["heat-exchanger"].order = "Aa"

@@ -1609,12 +1609,12 @@ data:extend({
     custom_tooltip_fields = 
     {
       {
-        name = {"tooltips.lunar-equipment-day"},
-        value = {"tooltips.lunar-equipment-day-value"}
+        name = {"pm-tooltips.lunar-equipment-day"},
+        value = {"pm-tooltips.lunar-equipment-day-value"}
       },
       {
-        name = {"tooltips.lunar-equipment-night"},
-        value = {"tooltips.lunar-equipment-night-value"}
+        name = {"pm-tooltips.lunar-equipment-night"},
+        value = {"pm-tooltips.lunar-equipment-night-value"}
       },
     },
     subgroup = "pm-modular-power",
