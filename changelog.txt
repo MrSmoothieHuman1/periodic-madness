@@ -199,6 +199,7 @@ Date: 2024-12-08
     - Lowered amount of red circuits needed for washing plant 2's from 6 to 4.
     - Lowered the energy usage of molten-inator 1's from 672kW to 330kW.
     - Lowered the energy usage of molten-inator 2's from 750kW to 650kW.
+    - Halved nuclear reactors neighbonus bonus (100% > 50%).
 
   Fixes:
     - Fixed the science pack item names captilisation.
