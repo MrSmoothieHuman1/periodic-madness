@@ -65,7 +65,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-uhrlumin-precursor-alloy", 5, "fluid")
+      PM.ingredient("pm-molten-uhrlumin-precursor-alloy", 5, "fluid")
     },
     results = 
     {

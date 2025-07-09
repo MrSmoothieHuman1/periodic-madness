@@ -4979,7 +4979,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-uhrlumin",
+    name = "pm-uhrlumin-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
@@ -5013,7 +5013,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-uhrlumin"},
+    prerequisites = {"pm-uhrlumin-processing"},
     unit =
     {
       count = 550,
