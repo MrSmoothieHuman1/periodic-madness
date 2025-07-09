@@ -271,6 +271,14 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
     },
   }
 )
+data.raw["reactor"]["nuclear-reactor"].custom_tooltip_fields = 
+{
+  {
+    name = {"pm-tooltips.neighbour-bonus"},
+    value = {"pm-tooltips.50%"}
+  }
+}
+data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0.5
 
 data:extend({
   coolant_reactor{ --MARK: Polonium Reactor
@@ -285,6 +293,13 @@ data:extend({
     dying_explosion  = "nuclear-reactor-explosion",
     consumption = "50MW",
     neighbour_bonus = 0.25,
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.neighbour-bonus"},
+        value = {"pm-tooltips.25%"}
+      }
+    },
     energy_source =
     {
       type = "burner",

@@ -1610,11 +1610,11 @@ data:extend({
     {
       {
         name = {"pm-tooltips.panel-equipment-day"},
-        value = {"pm-tooltips.panel-equipment-day-value"}
+        value = {"pm-tooltips.0%"}
       },
       {
         name = {"pm-tooltips.lunar-equipment-night"},
-        value = {"pm-tooltips.lunar-equipment-night-value"}
+        value = {"pm-tooltips.75%"}
       },
     },
     subgroup = "pm-modular-power",
