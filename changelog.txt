@@ -188,7 +188,7 @@ Date: 2024-12-08
     - Reworked the recipe for molybdenite powder to be 1:1, and increased its stone output.
     - Lowered the amount of molybdenum disulfide for oil residual recipes by 1, from 3 to 2.
     - Dou;bed the stack size of all catalysts, changed stack size of catalyst containers to 25 instead of 10.
-    - PM 0.6.500 requires you to have 2.0.56 installed now, due to a crash that can occur with reactors.
+    - PM 0.6.500 requires you to have 2.0.60 installed now, due to a crash that can occur with reactors.
     - Havled the amount of mercury you get per craft (50 > 25).
     - Lowered the amount of coke needed for a bunch of different recipe (titanium oxide, pig iron, zirconia, etc).
     - Changed the ratio of coal to coke to 1.5 : 1, and changed the coke to coal recipe to take 9 coal for 6 instead of 8 for 5.
