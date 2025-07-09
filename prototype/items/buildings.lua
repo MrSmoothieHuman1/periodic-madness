@@ -471,7 +471,7 @@ data:extend({
     {
       {
         name = {"pm-tooltips.max-temperature"},
-        value = {"pm-tooltips.temp-500"}
+        value = {"pm-tooltips.temp-250"}
       },
     },
     subgroup = "pm-heat-machines",
@@ -890,10 +890,9 @@ data.raw["recipe"]["heat-pipe"].custom_tooltip_fields =
 {
   {
     name = {"pm-tooltips.max-temperature"},
-    value = {"pm-tooltips.temp-500"}
+    value = {"pm-tooltips.temp-250"}
   },
 }
-  
 
 data.raw["item"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["item"]["heat-exchanger"].order = "Aa"
