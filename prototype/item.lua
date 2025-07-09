@@ -1609,8 +1609,8 @@ data:extend({
     custom_tooltip_fields = 
     {
       {
-        name = {"pm-tooltips.lunar-equipment-day"},
-        value = {"pm-tooltips.lunar-equipment-day-value"}
+        name = {"pm-tooltips.panel-equipment-day"},
+        value = {"pm-tooltips.panel-equipment-day-value"}
       },
       {
         name = {"pm-tooltips.lunar-equipment-night"},
