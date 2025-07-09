@@ -884,15 +884,16 @@ data.raw["item"]["express-splitter"].order = "d"
 
 data.raw["item"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["item"]["heat-pipe"].order = "b"
-data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines"
-data.raw["recipe"]["heat-pipe"].order = "b"
-data.raw["recipe"]["heat-pipe"].custom_tooltip_fields = 
+data.raw["item"]["heat-pipe"].custom_tooltip_fields = 
 {
   {
     name = {"pm-tooltips.max-temperature"},
     value = {"pm-tooltips.temp-250"}
   },
 }
+
+data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines"
+data.raw["recipe"]["heat-pipe"].order = "b"
 
 data.raw["item"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["item"]["heat-exchanger"].order = "Aa"
