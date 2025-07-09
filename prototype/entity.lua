@@ -4935,6 +4935,13 @@ data:extend({
     dying_explosion = "heat-exchanger-explosion",
     mode = "output-to-separate-pipe",
     fast_replaceable_group = "pm-heat-exchangers",
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.max-temperature"},
+        value = {"pm-tooltips.temp-2500"}
+      },
+    },
     resistances =
     {
       {
@@ -8771,6 +8778,13 @@ data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 400
 data.raw["boiler"]["heat-exchanger"].energy_source.minimum_glow_temperature = 250
 data.raw["boiler"]["heat-exchanger"].energy_source.max_temperature = 750
 data.raw["boiler"]["heat-exchanger"].target_temperature = 750
+data.raw["boiler"]["heat-exchanger"].custom_tooltip_fields = 
+{
+  {
+    name = {"pm-tooltips.max-temperature"},
+    value = {"pm-tooltips.temp-750"}
+    },
+}
 
 data.raw["assembling-machine"]["chemical-plant"].module_slots = 2
 data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-chemical-plant"
