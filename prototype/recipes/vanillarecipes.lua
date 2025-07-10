@@ -695,16 +695,23 @@ data.raw["recipe"]["personal-roboport-mk2-equipment"].ingredients =
 data.raw["recipe"]["rocket"].category = "crafting-with-fluid"
 data.raw["recipe"]["rocket"].ingredients = 
 {
-  PM.ingredient("pm-kerosene", 10, "fluid"),
   PM.ingredient("pm-hydrogen-peroxide", 5, "fluid"),
-  PM.ingredient("pm-stainless-steel-alloy", 2),
+  PM.ingredient("steel-plate", 2),
   PM.ingredient("explosives", 1)
+}
+data.raw["recipe"]["explosive-rocket"].category = "crafting-with-fluid"
+data.raw["recipe"]["explosive-rocket"].ingredients =
+{
+  PM.ingredient("pm-kerosene", 10, "fluid"),
+  PM.ingredient("rocket", 1, "fluid"),
+  PM.ingredient("pm-stainless-steel-alloy", 1),
+  PM.ingredient("explosives", 2)
 }
 data.raw["recipe"]["explosives"].ingredients = 
 {
-  PM.ingredient("pm-gunpowder", 8),
-  PM.ingredient("sulfur", 3),
-  PM.ingredient("pm-vulcanised-rubber", 2)
+  PM.ingredient("pm-gunpowder", 6),
+  PM.ingredient("sulfur", 2),
+  PM.ingredient("pm-vulcanised-rubber", 3)
 }
 data.raw["recipe"]["centrifuge"].energy_required = 6
 data.raw["recipe"]["centrifuge"].category = "crafting-with-fluid"
