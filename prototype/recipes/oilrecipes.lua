@@ -1148,7 +1148,19 @@ data:extend({
     type = "recipe",
     name = "pm-naptha-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/naptha-reforming.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
     energy_required = 4,
     enabled = false,
     category = "pm-cracking",
@@ -1168,7 +1180,19 @@ data:extend({
     type = "recipe",
     name = "pm-kerosene-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/kerosene-reforming.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
     energy_required = 4,
     enabled = false,
     category = "pm-cracking",
@@ -1188,7 +1212,19 @@ data:extend({
     type = "recipe",
     name = "pm-diesel-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/diesel-reforming.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
     energy_required = 4,
     enabled = false,
     category = "pm-cracking",
@@ -1208,7 +1244,19 @@ data:extend({
     type = "recipe",
     name = "pm-lubricating-oils-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/lubricating-oils-reforming.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
     energy_required = 4,
     enabled = false,
     category = "pm-cracking",
@@ -1228,7 +1276,19 @@ data:extend({
     type = "recipe",
     name = "pm-fuel-oils-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/fuel-oils-reforming.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
     energy_required = 4,
     enabled = false,
     category = "pm-cracking",
@@ -1248,7 +1308,19 @@ data:extend({
     type = "recipe",
     name = "pm-oil-residuals-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/oil-residuals-reforming.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
     energy_required = 4,
     enabled = false,
     category = "pm-cracking",
