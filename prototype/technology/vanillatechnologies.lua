@@ -537,6 +537,12 @@ data.raw["technology"]["explosives"].unit.ingredients =
 }
 data.raw["technology"]["explosives"].unit.time = 30
 data.raw["technology"]["explosives"].unit.count = 125
+data.raw["technology"]["explosives"].prerequisites = {"military-2"}
+data.raw["technology"]["explosives"].effects =
+{
+  PM.unlock_recipe("pm-gunpowder"),
+  PM.unlock_recipe("explosives")
+}
 
 data.raw["technology"]["cliff-explosives"].unit.ingredients =
 {
@@ -737,19 +743,20 @@ data.raw["technology"]["fission-reactor-equipment"].research_trigger =
 data.raw["technology"]["fission-reactor-equipment"].unit = nil
 data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
-data.raw["technology"]["flammables"].effects =
-{
-  PM.unlock_recipe("pm-gunpowder"),
-  PM.unlock_recipe("pm-water-hydrogen-peroxide"),
-}
 data.raw["technology"]["rocketry"].unit.time = 45
 data.raw["technology"]["rocketry"].unit.count = 175
 data.raw["technology"]["rocketry"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["rocketry"].prerequisites = {"steel-processing", "explosives"}
+data.raw["technology"]["rocketry"].effects = 
+{
+  PM.unlock_recipe("pm-hydrogen-peroxide"),
+  PM.unlock_recipe("rocket"),
+}
+
 data.raw["technology"]["explosive-rocketry"].unit.time = 60
 data.raw["technology"]["explosive-rocketry"].unit.count = 250
 data.raw["technology"]["explosive-rocketry"].unit.ingredients = 
@@ -757,8 +764,9 @@ data.raw["technology"]["explosive-rocketry"].unit.ingredients =
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
 }
+data.raw["explosive-rocketry"].prerequisites = {"advanced-oil-processing", "rocketry"}
+
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"
 

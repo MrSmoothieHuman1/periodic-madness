@@ -200,6 +200,7 @@ Date: 2024-12-08
     - Lowered the energy usage of molten-inator 1's from 672kW to 330kW.
     - Lowered the energy usage of molten-inator 2's from 750kW to 650kW.
     - Halved nuclear reactors neighbonus bonus (100% > 50%).
+    - Moved explosives and basic rockets into ATM science, and explosive rockets into A-ATM science.
 
   Fixes:
     - Fixed the science pack item names captilisation.
