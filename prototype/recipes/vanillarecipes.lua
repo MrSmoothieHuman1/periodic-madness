@@ -703,7 +703,7 @@ data.raw["recipe"]["explosive-rocket"].category = "crafting-with-fluid"
 data.raw["recipe"]["explosive-rocket"].ingredients =
 {
   PM.ingredient("pm-kerosene", 10, "fluid"),
-  PM.ingredient("rocket", 1, "fluid"),
+  PM.ingredient("rocket", 1),
   PM.ingredient("pm-stainless-steel-alloy", 1),
   PM.ingredient("explosives", 2)
 }
