@@ -3152,9 +3152,9 @@ data:extend({
     main_product = "pm-gunpowder",
     ingredients = 
     {
-      PM.ingredient("pm-carbon", 20),
-      PM.ingredient("sulfur", 6),
-      PM.ingredient("pm-seawater", 50, "fluid")
+      PM.ingredient("pm-carbon", 12),
+      PM.ingredient("sulfur", 4),
+      PM.ingredient("pm-seawater", 40, "fluid")
     },
     results = 
     {
