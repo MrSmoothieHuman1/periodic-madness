@@ -390,7 +390,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solder-case",
-    energy_required = 6,
+    energy_required = 3,
     enabled = false,
     allow_productivity = true,
     ingredients =
