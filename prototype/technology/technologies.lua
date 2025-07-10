@@ -1140,7 +1140,7 @@ data:extend({
       PM.unlock_recipe("pm-molten-cadnium"),
       PM.unlock_recipe("pm-cadnium-plate-cooling"),
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
+    prerequisites = {"pm-tempature-inators"},
     unit =
     {
       count = 100,
