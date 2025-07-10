@@ -533,7 +533,6 @@ data.raw["technology"]["explosives"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["explosives"].unit.time = 30
 data.raw["technology"]["explosives"].unit.count = 125
@@ -753,7 +752,7 @@ data.raw["technology"]["rocketry"].unit.ingredients =
 data.raw["technology"]["rocketry"].prerequisites = {"steel-processing", "explosives"}
 data.raw["technology"]["rocketry"].effects = 
 {
-  PM.unlock_recipe("pm-hydrogen-peroxide"),
+  PM.unlock_recipe("pm-water-hydrogen-peroxide"),
   PM.unlock_recipe("rocket"),
 }
 
@@ -765,7 +764,7 @@ data.raw["technology"]["explosive-rocketry"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["explosive-rocketry"].prerequisites = {"advanced-oil-processing", "rocketry"}
+data.raw["technology"]["explosive-rocketry"].prerequisites = {"advanced-oil-processing", "rocketry"}
 
 data.raw["technology"]["modules"].icon_size = 256
 data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules.png"
