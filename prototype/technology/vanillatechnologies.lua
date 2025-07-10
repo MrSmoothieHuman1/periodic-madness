@@ -534,8 +534,8 @@ data.raw["technology"]["explosives"].unit.ingredients =
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
 }
-data.raw["technology"]["explosives"].unit.time = 30
-data.raw["technology"]["explosives"].unit.count = 125
+data.raw["technology"]["explosives"].unit.time = 15
+data.raw["technology"]["explosives"].unit.count = 30
 data.raw["technology"]["explosives"].prerequisites = {"military-2"}
 data.raw["technology"]["explosives"].effects =
 {
@@ -742,8 +742,8 @@ data.raw["technology"]["fission-reactor-equipment"].research_trigger =
 data.raw["technology"]["fission-reactor-equipment"].unit = nil
 data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
 data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
-data.raw["technology"]["rocketry"].unit.time = 45
-data.raw["technology"]["rocketry"].unit.count = 175
+data.raw["technology"]["rocketry"].unit.time = 30
+data.raw["technology"]["rocketry"].unit.count = 75
 data.raw["technology"]["rocketry"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
@@ -756,9 +756,9 @@ data.raw["technology"]["rocketry"].effects =
   PM.unlock_recipe("rocket"),
 }
 
-data.raw["technology"]["explosive-rocketry"].unit.time = 60
-data.raw["technology"]["explosive-rocketry"].unit.count = 250
-data.raw["technology"]["explosive-rocketry"].unit.ingredients = 
+data.raw["technology"]["explosive-rocketry"].unit.time = 45
+data.raw["technology"]["explosive-rocketry"].unit.count = 150
+data.raw["technology"]["explosive-rocketry"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
