@@ -388,7 +388,7 @@ data:extend({
 {
     type = "ammo",
     name = "pm-incendiary-rocket",
-    icon = "__base__/graphics/icons/explosive-rocket.png",
+    icon = "__periodic-madness__/graphics/icons/incendiary-rocket.png",
     ammo_category = "rocket",
     ammo_type =
     {
