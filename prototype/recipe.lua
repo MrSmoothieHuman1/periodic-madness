@@ -684,7 +684,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solder-wire",
-    energy_required = 1,
+    energy_required = 1.5,
     enabled = false,
     allow_productivity = true,
     ingredients =

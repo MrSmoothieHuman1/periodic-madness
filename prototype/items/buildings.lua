@@ -479,7 +479,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
     subgroup = "energy",
     order = "f",
-    place_result = "pm-polonium-reactor",
+    --place_result = "pm-polonium-reactor",
     stack_size = 20
   },
   {
@@ -879,3 +879,5 @@ data.raw["recipe"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-exchanger"].order = "Aa"
 
 data.raw["item"]["pipe-to-ground"].stack_size = 100
+
+data.raw["item"]["nuclear-reactor"].place_result = nil
