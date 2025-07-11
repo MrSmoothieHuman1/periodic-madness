@@ -4546,7 +4546,7 @@ data:extend({
     type = "technology",
     name = "pm-electric-boiler",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/electric-boiler.png",
     effects = 
     {
       PM.unlock_recipe("pm-electric-boiler-1")
@@ -4568,7 +4568,7 @@ data:extend({
     type = "technology",
     name = "pm-electric-boiler-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/electric-boiler.png",
     effects = 
     {
       PM.unlock_recipe("pm-electric-boiler-2")
