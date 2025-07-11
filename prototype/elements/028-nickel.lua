@@ -250,14 +250,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-nickel.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
         icon_size = 64,
         scale = 0.22,
-        shift = { 0, -6 }
+        shift = {0, -7.5}
       },
     },
     subgroup = "pm-nickel-tm",

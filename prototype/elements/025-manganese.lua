@@ -124,14 +124,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-manganese.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     subgroup = "pm-manganese-tm",

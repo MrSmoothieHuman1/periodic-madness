@@ -324,14 +324,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__base__/graphics/icons/copper-cable.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -359,14 +358,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-gold.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/gold-wire.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -395,14 +393,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-indium.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/indium-wire.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -430,14 +427,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__base__/graphics/icons/iron-gear-wheel.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -466,14 +462,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-brass.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/brass-gear.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -503,14 +498,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-glass.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/glass-pane.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     subgroup = "pm-glassing",
@@ -540,14 +534,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-tin.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/glass-pane.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     subgroup = "pm-glassing",
