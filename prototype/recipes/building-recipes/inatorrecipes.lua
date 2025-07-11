@@ -131,6 +131,17 @@ data:extend({
   {
     type = "recipe",
     name = "pm-potassium-salt-glass",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/glass-pane.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-potassium-salts.png",
+        icon_size = 64,
+      },
+    },
     enabled = false,
     energy_required = 3,
     category = "pm-coldening",
