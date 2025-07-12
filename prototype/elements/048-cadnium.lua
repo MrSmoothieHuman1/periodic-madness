@@ -187,7 +187,7 @@ data:extend({
     type = "recipe",
     name = "pm-cadnium-plate-cooling",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/cadnium-cooling.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/cadmium-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-cadmium-tm",
     order = "f",

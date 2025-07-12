@@ -253,21 +253,7 @@ data:extend({
     type = "recipe",
     name = "pm-iron-plate-cooling",
     icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
-        icon_size = 64,
-        scale = 0.7,
-        shift = {0, -25}
-      },
-      {
-        icon = "__base__/graphics/icons/iron-plate.png",
-        icon_size = 64,
-        scale = 0.45,
-        shift = {0, 1.5}
-      },
-    },
+    icon = "__periodic-madness__/graphics/icons/recipes/iron-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-iron-tm",
     order = "g",

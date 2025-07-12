@@ -226,7 +226,7 @@ data:extend({
                 icon = "__periodic-madness__/graphics/icons/ores/magnesium-ore.png",
                 icon_size = 64,
                 scale = 0.33,
-                shift = {0, -7,5}
+                shift = {0, -7.5}
             },
         },
         enabled = false,
