@@ -1,7 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.500
 Date: 2024-12-08
-  The Update:
+  The in 6 months i did not think of a name for this Update:
+
+  WARNING:
+    - you cannot place nuclear reactors, due to a crash turned save corruption that is occuring on the most recent factorio versions. I will release a patch that lets you place reactors again, once the issue is fixed.
 
   Additions:
     - Added Magnesium.
