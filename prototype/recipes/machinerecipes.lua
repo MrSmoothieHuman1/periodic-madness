@@ -1491,6 +1491,8 @@ data:extend({
     name = "pm-longer-handed-inserter",
     enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "inserter",
+    order = "da",
     energy_required = 1,
     ingredients = 
     {

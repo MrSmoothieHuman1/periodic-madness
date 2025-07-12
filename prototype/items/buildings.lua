@@ -815,6 +815,8 @@ data:extend({
     name = "pm-longer-handed-inserter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/longer-handed-inserter.png",
+    subgroup = "inserter",
+    order = "da",
     place_result = "pm-longer-handed-inserter",
     stack_size = 50
   },
