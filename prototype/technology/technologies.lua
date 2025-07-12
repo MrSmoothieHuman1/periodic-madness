@@ -3213,6 +3213,7 @@ data:extend({
       PM.unlock_recipe("pm-arsenic-oxide"),
       PM.unlock_recipe("pm-arsine"),
       PM.unlock_recipe("pm-arsenic-ore"),
+      PM.unlock_recipe("pm-better-brass-plate"),
       PM.unlock_recipe("pm-crude-antimony-sulfide"),
       PM.unlock_recipe("pm-stibnite"),
       PM.unlock_recipe("pm-antimony-sulfide"),
