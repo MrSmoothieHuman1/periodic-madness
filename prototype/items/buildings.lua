@@ -430,7 +430,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-3.png",
     subgroup = "energy",
-    order = "f",
+    order = "e",
     place_result = "pm-solar-panel-3",
     stack_size = 50,
   },
