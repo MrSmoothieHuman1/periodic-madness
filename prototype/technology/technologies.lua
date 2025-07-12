@@ -5034,6 +5034,7 @@ data:extend({
     type = "technology",
     name = "pm-lunar-panel-equipment",
     icon_size = 256,
+    hidden = true,
     icons = util.technology_icon_constant_equipment(
     "__periodic-madness__/graphics/technology/lunar-panel-equipment.png"),
     prerequisites = {"pm-solar-panel-equipment-2", "pm-magnesium-chloride", "low-density-structure", "pm-cadmium-telluride"},

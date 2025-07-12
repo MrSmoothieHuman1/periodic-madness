@@ -1606,6 +1606,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2-icon.png",
     icon_size = 64,
     place_as_equipment_result = "pm-lunar-panel-equipment",
+    hidden = true,
+    hidden_from_factoriopedia = true,
     custom_tooltip_fields = 
     {
       {
