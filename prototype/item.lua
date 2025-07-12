@@ -1516,6 +1516,8 @@ data:extend({
     name = "pm-uhrlumin-precursor-billet",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/uhrlumin-precursor-billet.png",
+    subgroup = "pm-uhrlumin",
+    order = "b",
     stack_size = 100
   },
 
