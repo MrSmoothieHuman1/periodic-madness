@@ -820,7 +820,9 @@ data.raw["technology"]["laser"].effects =
   PM.unlock_recipe("pm-garnet-saw"),
   PM.unlock_recipe("pm-cut-ruby"),
   PM.unlock_recipe("pm-sapphire-cutting"),
+  PM.unlock_recipe("pm-titanium-sapphire"),
   PM.unlock_recipe("pm-ruby-laser-head"),
+  PM.unlock_recipe("pm-sapphire-laser-head"),
 }
 data.raw["technology"]["laser"].prerequisites = {"pm-gemstone-processing", "processing-unit"}
 

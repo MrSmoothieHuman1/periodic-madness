@@ -254,7 +254,7 @@ data:extend({
     order = "d",
     ingredients = 
     {
-      PM.ingredient("pm-molten-titanium", 10, "fluid"),
+      PM.ingredient("pm-molten-titanium", 5, "fluid"),
       PM.ingredient("pm-cut-sapphire", 2)
     },
     results =
