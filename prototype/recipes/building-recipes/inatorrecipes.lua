@@ -161,7 +161,20 @@ data:extend({
     type = "recipe",
     name = "pm-molten-borosilicate-glass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/borosillicate-glass-melting.png",
+        icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-borosilicate-glass.png",
+        icon_size = 64,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64,
+        scale = 0.33,
+        shift = {0, -7.5}
+      },
+    },
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
