@@ -447,7 +447,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-combined-ore-slag",
+    name = "pm-combined-ore-slab",
     enabled = false,
     category = "pm-coldening",
     subgroup = "pm-tm-tm",
