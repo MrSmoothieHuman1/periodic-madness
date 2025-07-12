@@ -620,14 +620,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-solder.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -657,13 +654,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-solder.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
+        icon = "__periodic-madness__/graphics/icons/ores/barium-ore-icon.png",
         icon_size = 64,
-        scale = 0.22,
+        scale = 0.33,
         shift = { 0, -6 }
       },
     },
@@ -765,13 +760,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-steel.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -825,13 +818,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-brass.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -886,13 +877,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-stainless-steel.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -947,13 +936,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-kasethal.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -983,7 +970,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/kasethal-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
-    order = "eb",
+    order = "fb",
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
