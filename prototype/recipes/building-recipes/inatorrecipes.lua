@@ -44,6 +44,8 @@ data:extend({
     enabled = false,
     energy_required = 18,
     category = "pm-moltening",
+    subgroup = "pm-urhlumin",
+    order = "a",
     allow_productivity = true,
     ingredients =
     {
@@ -62,6 +64,8 @@ data:extend({
     enabled = false,
     energy_required = 13.5,
     category = "pm-coldening",
+    subgroup = "pm-urhlumin",
+    order = "b",
     allow_productivity = true,
     ingredients =
     {
@@ -78,6 +82,8 @@ data:extend({
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
+    subgroup = "pm-urhlumin",
+    order = "c",
     ingredients =
     {
       PM.ingredient("pm-uhrlumin-precursor-billet", 5),
@@ -96,6 +102,8 @@ data:extend({
     enabled = false,
     energy_required = 4.5,
     category = "pm-coldening",
+    subgroup = "pm-urhlumin",
+    order = "d",
     main_product = "pm-uhrlumin-plate",
     allow_productivity = true,
     ingredients =

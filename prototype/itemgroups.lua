@@ -150,12 +150,6 @@ data:extend({
   },
   {
     type = "item-group",
-    name = "pm-alloying",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png"
-  },
-  {
-    type = "item-group",
     name = "pm-molding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/circuitboard-mold.png"
@@ -352,6 +346,18 @@ data:extend({
     name = "pm-alloys",
     group = "intermediate-products",
     order = "c",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-uhrlumin",
+    group = "intermediate-products",
+    order = "ca",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-uhrlumin",
+    group = "intermediate-products",
+    order = "cb",
   },
   {
     type = "item-subgroup",
