@@ -187,7 +187,7 @@ data:extend({
     name = "pm-molten-inator",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
-    ssubgroup = "pm-molten-machine",
+    subgroup = "pm-molten-machine",
     order = "a",
     place_result = "pm-molten-inator",
     stack_size = 100
