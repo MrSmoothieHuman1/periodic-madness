@@ -166,7 +166,7 @@ data:extend({
     type = "recipe",
     name = "pm-washing-plant-1",
     subgroup = "pm-water-machine",
-    order = "c",
+    order = "d",
     enabled = false,
     energy_required = 1,
     ingredients =
