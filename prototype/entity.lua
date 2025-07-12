@@ -8847,6 +8847,7 @@ data.raw["furnace"]["electric-furnace"].icons_positioning =
 data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
 data.raw["furnace"]["electric-furnace"].energy_source.drain = "0kW"
+data.raw["furnace"]["electric-furnace"].energy_source.emissions_per_minute = {pollution = 0.5}
 
 data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
 data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 10

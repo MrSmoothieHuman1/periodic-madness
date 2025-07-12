@@ -202,6 +202,7 @@ Date: 2024-12-08
     - Halved nuclear reactors neighbonus bonus (100% > 50%).
     - Moved explosives and basic rockets into ATM science, and explosive rockets into A-ATM science.
     - Changed solder cases crafting time from 6s to 3s.
+    - Lowered the solid lube needed for EEU's from 10 to 8, and the heavy lube recipe from 8 to 6.
 
   Fixes:
     - Fixed the science pack item names captilisation.
