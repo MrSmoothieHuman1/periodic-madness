@@ -3846,8 +3846,8 @@ data:extend({
       },
     },
     energy_required = 5,
-    subgroup = "pm-modules",
-    order = "c",
+    subgroup = "pm-borosilicate-glassing",
+    order = "i",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -3877,13 +3877,13 @@ data:extend({
     },
     energy_required = 5,
     enabled = false,
-    subgroup = "pm-modules",
-    order = "g",
+    subgroup = "pm-borosilicate-glassing",
+    order = "j",
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-basic-wiring", 15),
       PM.ingredient("pm-gallium-arsenide", 3),
     },
     results =
@@ -3907,13 +3907,13 @@ data:extend({
     },
     energy_required = 5,
     enabled = false,
-    subgroup = "pm-modules",
-    order = "l",
+    subgroup = "pm-borosilicate-glassing",
+    order = "k",
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-basic-wiring", 15),
       PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
     },
     results =
@@ -3956,6 +3956,8 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     category = "crafting-with-fluid",
+    subgroup = "pm-borosilicate-glassing",
+    order = "d",
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
@@ -3981,7 +3983,8 @@ data:extend({
       },
     },
     energy_required = 10,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-borosilicate-glassing",
+    order = "g",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -4012,6 +4015,8 @@ data:extend({
     enabled = false,
     energy_required = 20,
     allow_productivity = true,
+    subgroup = "pm-borosilicate-glassing",
+    order = "h",
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 12),
@@ -4038,7 +4043,8 @@ data:extend({
       },
     },
     enabled = false,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-borosilicate-glassing",
+    order = "f",
     energy_required = 7,
     allow_productivity = true,
     ingredients =
