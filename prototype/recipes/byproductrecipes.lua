@@ -7,7 +7,19 @@ data:extend({
     type = "recipe",
     name = "pm-ferrum-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/ferrum-decomposition.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ferrum.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
     subgroup = "pm-tm-tm",
     order = "b",
@@ -35,7 +47,19 @@ data:extend({
     type = "recipe",
     name = "pm-patina-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/patina-decomposition.png",
+        icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/patina.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
     subgroup = "pm-tm-tm",
     order = "d",
@@ -144,7 +168,19 @@ data:extend({
     type = "recipe",
     name = "pm-chromic-ferrum-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chromic-ferrum-decomposition.png",
+        icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ferrum.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
     subgroup = "pm-tm-tm",
     order = "c",
@@ -171,7 +207,19 @@ data:extend({
     type = "recipe",
     name = "pm-chromic-patina-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chromic-patina-decomposition.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/patina.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
     subgroup = "pm-tm-tm",
     order = "e",
