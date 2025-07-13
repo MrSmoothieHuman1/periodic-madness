@@ -544,6 +544,62 @@ data:extend({
     },
   upgrade = true
 },
+{
+  type = "technology",
+  name = "mining-productivity-7",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+  effects =
+  {
+    {
+      type = "mining-drill-productivity-bonus",
+      modifier = 0.4
+    }
+  },
+  prerequisites = {"mining-productivity-6", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+  unit =
+    {
+      count = 2300,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 160
+    },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "mining-productivity-8",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+  effects =
+  {
+    {
+      type = "mining-drill-productivity-bonus",
+      modifier = 0.4
+    }
+  },
+  prerequisites = {"mining-productivity-7"},
+  unit =
+    {
+      count = 2750,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 160
+    },
+  upgrade = true
+},
 
 --MARK: Beacon distribution
 {
@@ -788,8 +844,6 @@ data:extend({
   },
   upgrade = true
 },
-
-
 
 --MARK: Shooting speed
 {
