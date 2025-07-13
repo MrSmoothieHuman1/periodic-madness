@@ -4071,7 +4071,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-effect-transmission-2",
-    icon_size = 256,
+    icon_size = 128,
     icon = "__periodic-madness__/graphics/technology/effect-transmission.png",
     effects = 
     {
