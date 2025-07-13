@@ -651,17 +651,17 @@ data:extend({
     {
       type = "ammo-damage",
       ammo_category = "bullet",
-      modifier = 0.45
+      modifier = 0.50
     },
     {
       type = "turret-attack",
       turret_id = "gun-turret",
-      modifier = 0.45
+      modifier = 0.50
     },
     {
       type = "ammo-damage",
       ammo_category = "shotgun-shell",
-      modifier = 0.45
+      modifier = 0.50
     },
     {
       type = "ammo-damage",
@@ -683,13 +683,112 @@ data:extend({
       {"automation-science-pack", 1},
       {"logistic-science-pack", 1},
       {"pm-advanced-advanced-transition-metal-science-pack", 1},
-      {"chemical-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
       {"pm-metalloid-science-pack", 1}
     },
     time = 80
   },
   upgrade = true
 },
+{
+  type = "technology",
+  name = "pm-physical-projectile-damage-9",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+  effects =
+  {
+    {
+      type = "ammo-damage",
+      ammo_category = "bullet",
+      modifier = 0.50
+    },
+    {
+      type = "turret-attack",
+      turret_id = "gun-turret",
+      modifier = 0.50
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "shotgun-shell",
+      modifier = 0.50
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.25
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "rocket",
+      modifier = 0.3
+    }
+  },
+  prerequisites = {"physical-projectile-damage-8"},
+  unit =
+  {
+    count = 1200,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1}
+    },
+    time = 120
+  },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "pm-physical-projectile-damage-10",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+  effects =
+  {
+    {
+      type = "ammo-damage",
+      ammo_category = "bullet",
+      modifier = 0.6
+    },
+    {
+      type = "turret-attack",
+      turret_id = "gun-turret",
+      modifier = 0.6
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "shotgun-shell",
+      modifier = 0.6
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.25
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "rocket",
+      modifier = 0.3
+    }
+  },
+  prerequisites = {"physical-projectile-damage-9"},
+  unit =
+  {
+    count = 1600,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1}
+    },
+    time = 120
+  },
+  upgrade = true
+},
+
 
 
 --MARK: Shooting speed
