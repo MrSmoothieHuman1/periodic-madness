@@ -1520,6 +1520,16 @@ data:extend({
     order = "b",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-inconel-625-precursor-billet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/gravel.png",
+    subgroup = "pm-glassing",
+    order = "a",
+    stack_size = 100
+  },
+
 
   {
     type = "item",
