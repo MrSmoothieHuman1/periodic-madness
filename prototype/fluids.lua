@@ -1678,6 +1678,26 @@ data:extend({
     flow_color = {r = 0.6, g = 0.2, b = 0.3},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-molten-inconel-625",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-inconel-625.png",
+    default_temperature = 15,
+    base_color = {r = 0.38, g = 0.49, b = 0.74},
+    flow_color = {r = 0.38, g = 0.49, b = 0.74},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-inconel-625-precursor-alloy",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-inconel-625.png",
+    default_temperature = 15,
+    base_color = {r = 0.38, g = 0.49, b = 0.74},
+    flow_color = {r = 0.38, g = 0.49, b = 0.74},
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",
