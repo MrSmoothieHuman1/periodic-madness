@@ -722,7 +722,7 @@ data:extend({
       modifier = 0.3
     }
   },
-  prerequisites = {"physical-projectile-damage-8"},
+  prerequisites = {"pm-physical-projectile-damage-8", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
   unit =
   {
     count = 1200,
@@ -733,7 +733,7 @@ data:extend({
       {"pm-advanced-advanced-transition-metal-science-pack", 1},
       {"pm-post-transition-metal-science-pack", 1},
       {"pm-metalloid-science-pack", 1},
-      {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
     },
     time = 120
   },
@@ -771,7 +771,7 @@ data:extend({
       modifier = 0.3
     }
   },
-  prerequisites = {"physical-projectile-damage-9"},
+  prerequisites = {"pm-physical-projectile-damage-9"},
   unit =
   {
     count = 1600,
@@ -782,7 +782,7 @@ data:extend({
       {"pm-advanced-advanced-transition-metal-science-pack", 1},
       {"pm-post-transition-metal-science-pack", 1},
       {"pm-metalloid-science-pack", 1},
-      {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
     },
     time = 120
   },
