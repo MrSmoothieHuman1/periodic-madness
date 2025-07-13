@@ -4,7 +4,7 @@ local PM = require("library")
 -- this catalouges the scaluing for every single bonus technology in PM, just for other people to look at and so i cant forget
 
 --Research productivity: starts at 0.05, increases after every 3 levels, doubles after every increase (0.05, 0.05, 0.05, 0.1, 0.1, 0.1, 0.2, 0.2)
---Research speed: starts at 0.125, doubles its increase every 2 levels (0.125, 0.125, 0.15, 0.2, 0.3, 0.4, 0.6, 0.8, 1.2, 1.6)
+--Research speed: starts at 0.1, doubles its current value every 2 levels. (0.1, 0.1, 0.2, 0.2, 0.4, 0.4, 0.8, 0.8, 1.6, 1.6)
 --Robot storage: adds +1 every level (one per research tier)
 --Robot speed: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3, 0.35, 0.35)
 --Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.65, 0.8, 0.95, 1.1, 1.25)
@@ -198,7 +198,7 @@ data:extend({
     {
       {
         type = "laboratory-speed",
-        modifier = 0.6 -- +2
+        modifier = 0.6
       }
     },
     prerequisites = {"research-speed-6", "pm-alkaline-earth-metal-pack-unlock"},
@@ -1187,7 +1187,7 @@ data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
 --MARK: V.Lab speed
 data.raw["technology"]["research-speed-1"].effects =
 {
-    PM.modify("laboratory-speed", 0.125)
+    PM.modify("laboratory-speed", 0.1)
 }
 data.raw["technology"]["research-speed-2"].unit.ingredients =
 {
@@ -1197,22 +1197,22 @@ data.raw["technology"]["research-speed-2"].unit.ingredients =
 }
 data.raw["technology"]["research-speed-2"].effects =
 {
-    PM.modify("laboratory-speed", 0.125) -- +0.25
+    PM.modify("laboratory-speed", 0.1)
 }
 data.raw["technology"]["research-speed-3"].unit.time = 60
 data.raw["technology"]["research-speed-3"].effects =
 {
-    PM.modify("laboratory-speed", 0.15)
+    PM.modify("laboratory-speed", 0.2)
 }
 data.raw["technology"]["research-speed-4"].unit.time = 60
 data.raw["technology"]["research-speed-4"].effects =
 {
-    PM.modify("laboratory-speed", 0.2) -- +0.5
+    PM.modify("laboratory-speed", 0.2)
 }
 data.raw["technology"]["research-speed-5"].prerequisites = {"research-speed-4", "pm-alkali-metal-pack-unlock"}
 data.raw["technology"]["research-speed-5"].effects =
 {
-    PM.modify("laboratory-speed", 0.25)
+    PM.modify("laboratory-speed", 0.4)
 }
 data.raw["technology"]["research-speed-5"].unit.ingredients =
 {
@@ -1224,7 +1224,7 @@ data.raw["technology"]["research-speed-5"].unit.ingredients =
 }
 data.raw["technology"]["research-speed-5"].effects =
 {
-    PM.modify("laboratory-speed", 0.3) -- +1
+    PM.modify("laboratory-speed", 0.4)
 }
 data.raw["technology"]["research-speed-5"].unit.time = 80
 data.raw["technology"]["research-speed-5"].unit.count = 750
@@ -1241,7 +1241,7 @@ data.raw["technology"]["research-speed-6"].unit.count = 1000
 data.raw["technology"]["research-speed-6"].unit.time = 80
 data.raw["technology"]["research-speed-6"].effects =
 {
-    PM.modify("laboratory-speed", 0.4)
+    PM.modify("laboratory-speed", 0.6)
 }
 
 --MARK: V.Mining prod
