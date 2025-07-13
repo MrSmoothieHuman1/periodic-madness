@@ -11,6 +11,28 @@ Date: 2025-12-07
     - Added Inconel 625! its current use is as a new type of heating coil, which is the only coil that can add productivity.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.502
+Date: 2025-13-07
+  The 2 updates in one day that arent purely bugfixes? it must be christmas Update:
+
+  Changes:
+    - Finally modelled a cadmium plate, and updated the icons that use them.
+    - Updated cadmium tech icon.
+
+  Fixes:
+    - Fixed physical projectile 8 taking the wrong science packs.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.501
+Date: 2025-13-07
+  The in 1 day i did not think of a name for this either Update:
+
+  Changes:
+    - Yes! more changes! you thought .500 had more then enough? nuh uh
+    - Lowered power cost of fluid catalyst crackers from 250 to 175kw.
+    - Lowered crafting time of all oil cracking/reforming recipes from 4s to 2s.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.500
 Date: 2025-12-07
   The in 6 months i did not think of a name for this Update:

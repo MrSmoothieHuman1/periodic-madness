@@ -1759,7 +1759,7 @@ data:extend({
     type = "technology",
     name = "pm-cadnium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/cadnium-processing.png",
+    icon = "__periodic-madness__/graphics/technology/cadmium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-zinc-chunk-seperation"),
@@ -5032,7 +5032,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-effect-transmission-2",
-    icon_size = 256,
+    icon_size = 128,
     icon = "__periodic-madness__/graphics/technology/effect-transmission.png",
     effects = 
     {
