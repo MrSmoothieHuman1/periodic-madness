@@ -19,6 +19,7 @@ local pm_lab_inputs =
   "pm-alkali-metal-science-pack",
   "pm-metalloid-science-pack",
   "pm-alkaline-earth-metal-science-pack",
+  "pm-advanced-advanced-advanced-transition-metal-science-pack",
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
