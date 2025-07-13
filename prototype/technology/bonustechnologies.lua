@@ -3,12 +3,12 @@ local PM = require("library")
 --MARK: Bonus amounts
 -- this catalouges the scaluing for every single bonus technology in PM, just for other people to look at and so i cant forget
 
---Research productivity: starts at 0.05, increases after every 2 levels, doubles after every increase (0.5, 0.5, 1, 1, 2, 2, 4, 4)
+--Research productivity: starts at 0.05, increases after every 3 levels, doubles after every increase (0.05, 0.05, 0.05, 0.1, 0.1, 0.1, 0.2, 0.2)
 --Research speed: starts at 0.125, doubles its increase every 2 levels (0.125, 0.125, 0.15, 0.2, 0.3, 0.4, 0.6, 0.8, 1.2, 1.6)
 --Robot storage: adds +1 every level (one per research tier)
 --Robot speed: starts at 0.2, increases by 0.05 every 2 levels (0.2, 0.25, 0.25, 0.3, 0.3, 0.35, 0.35)
 --Robot battery: starts at 0.1, increases by 0.05 every level and adds +0.05 every 3 levels (0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.65, 0.8, 0.95, 1.1, 1.25)
---Mining productivity: starts at 0.05, increases after 2 levels, doubles after every increase (0.05, 0.05, 1, 1, 2, 2, 4, 4)
+--Mining productivity: starts at 0.05, increases after 2 levels, doubles after every increase (0.05, 0.05, 0.1, 0.1, 0.2, 0.2, 0.4, 0.4)
 --Beacon distribution: starts at 0.05, adds 0.05 every level (0.05, 0.05, 0.1, 0.1, 0.15, 0.15)
 --Proj. damage: starts at 0.1, increases by 0.1 every 2 levels (0.1, 0.2, 0.2, 0.3, 0.3) - shotgun slugs start at 0.1 and increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2)
 --Proj. speed: starts at 0.1, increases by 0.05 every 2 levels (0.1, 0.15, 0.15, 0.2, 0.2) - shotgun slugs start at 0.05 and increases by 0.05 every 2 levels
@@ -96,7 +96,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.1)
+      PM.modify("laboratory-productivity", 0.05)
     },
     prerequisites = {"pm-research-productivity-2", "pm-metalloid-pack-unlock"},
     unit =
@@ -144,7 +144,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.2)
+      PM.modify("laboratory-productivity", 0.1)
     },
     prerequisites = {"pm-research-productivity-3", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =
@@ -169,12 +169,12 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.2)
+      PM.modify("laboratory-productivity", 0.1)
     },
     prerequisites = {"pm-research-productivity-5"},
     unit =
     {
-      count = 1750,
+      count = 1550,
       ingredients =
       {
         {"automation-science-pack", 1},

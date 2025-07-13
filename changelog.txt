@@ -10,6 +10,9 @@ Date: 2025-12-07
     - Added Niobium.
     - Added Inconel 625! its current use is as a new type of heating coil, which is the only coil that can add productivity.
 
+  Changes:
+    - Slightly nerfed research productivity.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.502
 Date: 2025-13-07
