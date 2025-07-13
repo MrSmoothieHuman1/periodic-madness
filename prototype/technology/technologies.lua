@@ -4616,8 +4616,251 @@ data:extend({
         time = 80,
       }
   },
+  {
+    type = "technology",
+    name = "pm-osmium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-iridium-processing"},
+    unit =
+    {
+      count = 300,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+},
+{
+    type = "technology",
+    name = "pm-iridium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 300,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+ },
+  {
+    type = "technology",
+    name = "pm-advanced-advanced-advanced-transition-metal-pack-unlock",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/advanced-advanced-advanced-transition-metal-unlock.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-advanced-advanced-advanced-transition-metal-science-pack")
+    },
+    prerequisites = {"pm-osmium-processing", "pm-yttrium-processing"},
+    unit =
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 120
+    }
+  },
 
 --MARK: AA-ATM science
+  {
+    type = "technology",
+    name = "pm-light-lubricant",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/light-lubricant.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-polydimethylsiloxane"),
+      PM.unlock_recipe("pm-light-lubricant")
+    },
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "lubricant", "pm-silicone-processing"},
+    unit =
+    {
+      count = 450,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-circuit-megassembler-MK2",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/circuit-megassembler.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-electric-engine-unit", "pm-circuit-megassembler"},
+    unit =
+    {
+      count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-osmium-pipes",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "fluid-handling"},
+    unit =
+    {
+      count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-electric-engine-unit",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-light-lubricant"},
+    unit =
+    {
+      count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-sideserters",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-electric-engine-unit"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-inconel-625",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 475,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-inconel-heating-coils",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-inconel-625", "pm-kasethal-heating-coils"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
+
 --MARK: AEM science
 {
     type = "technology",
