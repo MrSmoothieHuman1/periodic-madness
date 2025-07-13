@@ -115,6 +115,26 @@ data:extend({
         PM.product("pm-alkaline-earth-metal-science-pack", 1),
     }
 },
+{
+    type = "recipe",
+    name = "pm-advanced-advanced-advanced-transition-metal-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "science-pack",
+    order = "i",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-yttrium-ore", 4),
+        PM.ingredient("pm-molten-zinc", 5, "fluid"),
+        PM.ingredient("pm-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-advanced-advanced-transition-metal-science-pack", 1),
+    }
+},
 --MARK: Plastic Science
 {
     type = "recipe",
