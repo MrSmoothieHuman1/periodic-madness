@@ -1,6 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.000
+Date: 2025-12-07
+  The 2 months? you are insane Update:
+
+  Additions:
+    - Added Osmium.
+    - Added Iridium.
+    - Added Tantalum.
+    - Added Niobium.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.500
-Date: 2024-12-08
+Date: 2025-12-07
   The in 6 months i did not think of a name for this Update:
 
   WARNING:
