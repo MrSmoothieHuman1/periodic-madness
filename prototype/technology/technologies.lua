@@ -655,7 +655,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -678,7 +678,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -703,7 +703,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -728,7 +728,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -750,7 +750,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -774,7 +774,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -797,7 +797,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -820,7 +820,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -843,7 +843,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 15
+      time = 30
     }
   },
   {
@@ -952,7 +952,7 @@ data:extend({
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
-      count = 125,
+      count = 75,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -978,7 +978,7 @@ data:extend({
     prerequisites = {"pm-tin-processing", "pm-platinum-processing"},
     unit =
     {
-      count = 75,
+      count = 100,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -1719,7 +1719,7 @@ data:extend({
     type = "technology",
     name = "pm-electric-boiler",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/electric-boiler.png",
     effects = 
     {
       PM.unlock_recipe("pm-electric-boiler-1")
@@ -3644,7 +3644,7 @@ data:extend({
     type = "technology",
     name = "pm-cadmium-telluride",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/cadmium-telluride.png",
     effects = 
     {
       PM.unlock_recipe("pm-molten-cadmium-telluride"),
@@ -3695,7 +3695,7 @@ data:extend({
     type = "technology",
     name = "pm-electric-boiler-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/electric-boiler.png",
     effects = 
     {
       PM.unlock_recipe("pm-electric-boiler-2")
