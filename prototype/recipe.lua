@@ -3674,7 +3674,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-copper-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "a",
@@ -3691,7 +3691,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-aluminium-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "b",
@@ -3708,7 +3708,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tungsten-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "c",
@@ -3725,7 +3725,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-molybdenum-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "d",
@@ -3742,7 +3742,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gold-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "e",
@@ -3759,7 +3759,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-kasethal-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "f",
@@ -3771,6 +3771,23 @@ data:extend({
     results = 
     {
       PM.product("pm-kasethal-heating-coil", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inconel-625-heating-coil",
+    energy_required = 7.5,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "f",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("pm-inconel-625-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-heating-coil", 1)
     }
   },
   {

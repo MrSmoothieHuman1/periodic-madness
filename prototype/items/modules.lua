@@ -294,6 +294,32 @@ data:extend({
         pollution = 0.2,
       },
     }, --essenitally a better copper, honestly
+    {
+      type = "module",
+      name = "pm-inconel-625-heating-coil",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/inconel-625-heating-coil.png",
+      tier = 1,
+      category = "pm-heating-coils",
+      subgroup = "pm-coils",
+      order = "g",
+      stack_size = 50,
+      art_style = "pm-heat-coil",
+      beacon_tint =
+      {
+        primary = {0.922, 0.91, 0.816}
+      },
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.15,
+        consumption = 0.5,
+        pollution = 0.55,
+        productivity = 0.05,
+      },
+    }, --essenitally a better copper, honestly
 })
 
 --#MARK: Vanilla modules

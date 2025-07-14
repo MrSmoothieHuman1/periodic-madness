@@ -1706,6 +1706,7 @@ data:extend({
       PM.unlock_recipe("pm-aluminium-heating-coil"),
       PM.unlock_recipe("pm-tungsten-heating-coil"),
       PM.unlock_recipe("pm-molybdenum-heating-coil"),
+      PM.unlock_recipe("pm-gold-heating-coil")
     },
     prerequisites = {"advanced-material-processing-2"},
     research_trigger =
@@ -4843,6 +4844,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-inconel-625-heating-coil")
     },
     prerequisites = {"pm-inconel-625", "pm-kasethal-heating-coils"},
     unit =
