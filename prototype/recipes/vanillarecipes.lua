@@ -162,12 +162,6 @@ data.raw["recipe"]["substation"].ingredients =
   PM.ingredient("pm-aluminium-plate", 6),
   PM.ingredient("concrete", 10)
 }
-data.raw["recipe"]["concrete"].ingredients =
-{
-  PM.ingredient("pm-bitumen", 3),
-  PM.ingredient("stone-brick", 5),
-  PM.ingredient("water", 100, "fluid")
-}
 data.raw["recipe"]["assembling-machine-3"].category = "crafting-with-fluid"
 data.raw["recipe"]["assembling-machine-3"].ingredients =
 {
@@ -729,7 +723,7 @@ data.raw["recipe"]["concrete"].category = "crafting-with-fluid"
 data.raw["recipe"]["concrete"].ingredients = 
 {
   PM.ingredient("pm-concrete-slurry", 5, "fluid"),
-  PM.ingredient("pm-heavyweight-framing", 5),
+  PM.ingredient("pm-heavyweight-framing", 4),
   PM.ingredient("pm-sand", 5)
 }
 data.raw["recipe"]["concrete"].results = 
@@ -741,7 +735,7 @@ data.raw["recipe"]["refined-concrete"].category = "crafting-with-fluid"
 data.raw["recipe"]["refined-concrete"].ingredients = 
 {
   PM.ingredient("pm-concrete-slurry", 10, "fluid"),
-  PM.ingredient("pm-heavyweight-framing", 5),
+  PM.ingredient("pm-heavyweight-framing", 4),
   PM.ingredient("pm-stainless-steel-alloy", 4),
   PM.ingredient("pm-sand", 8)
 }
