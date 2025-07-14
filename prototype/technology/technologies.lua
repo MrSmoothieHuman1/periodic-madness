@@ -94,8 +94,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-acidic-water"),
       PM.unlock_recipe("pm-silver-chunks"),
-      PM.unlock_recipe("pm-silver-plate"),
       PM.unlock_recipe("pm-silver-ore"),
+      PM.unlock_recipe("pm-silver-plate"),
       PM.unlock_recipe("pm-gold-chunks"),
       PM.unlock_recipe("pm-gold-ore"),
       PM.unlock_recipe("pm-gold-plate"),
