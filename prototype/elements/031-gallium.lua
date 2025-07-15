@@ -57,7 +57,7 @@ data:extend({
     icons = 
     {
       {
-        icon = "__periodic-madness__/graphics/icons/sodium-1.png",
+        icon = "__periodic-madness__/graphics/icons/ores/sodium-1.png",
         icon_size = 64,
       },
       {
@@ -74,7 +74,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-sodium", 6),
-      PM.ingredient("water", 20)
+      PM.ingredient("water", 20, "fluid")
     },
     results =
     {
