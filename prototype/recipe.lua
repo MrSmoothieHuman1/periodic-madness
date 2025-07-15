@@ -4076,7 +4076,6 @@ data:extend({
       PM.product("pm-vacuum-tube", 1)
     }
   },
-
   {
     type = "recipe",
     name = "pm-incendiary-rocket",
@@ -4092,5 +4091,65 @@ data:extend({
     {
       PM.product("pm-incendiary-rocket", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitric-oxide",
+    enabled = false,
+    energy_required = 3,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-nitric-oxide",
+    ingredients =
+    {
+      PM.ingredient("pm-ammonia-gas", 5, "fluid"),
+      PM.ingredient("pm-platinum-plate", 2),
+      PM.ingredient("pm-oxygen-gas", 12, "fluid")
+    },
+    results =
+    {
+      PM.product_chance("pm-platinum-plate", 2, 0.85),
+      PM.product("pm-nitric-oxide", 5, "fluid"),
+      PM.product("water", 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitric-acid",
+    enabled = false,
+    energy_required = 6,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-nitric-acid",
+    ingredients =
+    {
+      PM.ingredient("pm-nitric-oxide", 7.5, "fluid"),
+      PM.ingredient("water", 15, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-nitric-acid", 5, "fluid"),
+      PM.product_range("pm-hydrogen-gas", 6, 15, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-aqua-regia",
+    enabled = false,
+    energy_required = 6,
+    category = "oil-processing",
+    allow_productivity = true,
+    main_product = "pm-aqua-regia",
+    ingredients = 
+    {
+      PM.ingredient("pm-nitric-acid", 10, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 30, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-aqua-regia", 10, "fluid"),
+      PM.product("water", 7.5, "fluid"),
+      PM.product_range("pm-nitrosyl-chloride", 3, 5, "fluid")
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

@@ -230,10 +230,10 @@ data:extend({
         order = "f",
         allow_productivity = true,
         main_product = "pm-barium-nitrate",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-pure-baryte", 6),
-            PM.ingredient("pm-nitrogen-gas", 20, "fluid"), --if add nitric acid, this should be that
+            PM.ingredient("pm-nitric-acid", 7.5, "fluid"),
             PM.ingredient("pm-palladium-catalyst", 2)
         },
         results = 
