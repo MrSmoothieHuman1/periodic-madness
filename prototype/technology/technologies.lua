@@ -1402,6 +1402,7 @@ data:extend({
       PM.unlock_recipe("pm-thallium-sulfate-electrolysis"),
       PM.unlock_recipe("pm-thallium-plate"),
       PM.unlock_recipe("pm-bauxite-mixing"),
+      PM.unlock_recipe("pm-sodium-sodium-hydroxide"),
       PM.unlock_recipe("pm-gallium-liqouring"),
       PM.unlock_recipe("pm-ion-exchange-beads"),
       PM.unlock_recipe("pm-gallium-filtering"),

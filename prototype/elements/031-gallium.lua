@@ -52,6 +52,38 @@ data:extend({
   }--[[@as data.RecipePrototype]],
   {
     type = "recipe",
+    name = "pm-sodium-sodium-hydroxide",
+    icon_size = 64,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/sodium-1.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/sodium-hydroxide.png",
+        icon_size = 64,
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "chemistry",
+    subgroup = "pm-gallium-ptm",
+    order = "aa",
+    main_product = "pm-sodium-hydroxide",
+    ingredients =
+    {
+      PM.ingredient("pm-sodium", 6),
+      PM.ingredient("water", 20)
+    },
+    results =
+    {
+      PM.product("pm-sodium-hydroxide", 10, "fluid"),
+      PM.product_range("pm-hydrogen-gas", 15, 20, "fluid")
+    }
+  }--[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
     name = "pm-bauxite-mixing",
     enabled = false,
     category = "pm-acids",
