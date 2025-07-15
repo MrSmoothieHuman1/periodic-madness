@@ -353,3 +353,96 @@ for _, MS_machine_type in pairs(module_slottable_machines) do
 		end
 	end
 end
+
+if settings.startup["pm-group-ores"].value == true then
+  data.raw["resource"]["pm-transition-metals"].minable =
+{
+  hardness = 1,
+  mining_particle = "copper-ore-particle",
+  mining_time = 1,
+  results = 
+  {
+    PM.product("pm-iron-chunk", 1),
+    PM.product("pm-copper-chunk", 1),
+    PM.product("pm-nickel-chunk", 1),
+    PM.product("pm-zinc-chunk", 1),
+    PM.product("pm-manganese-ore", 1),
+    PM.product("pm-mercury-ore", 1),
+    PM.product("pm-gold-chunks", 1),
+    PM.product("pm-silver-chunks", 1),
+    PM.product("pm-titanium-chunks", 1),
+    PM.product("pm-tungsten-chunks", 1),
+    PM.product("pm-molybdenite", 1),
+    PM.product("pm-zirconium-sand", 1),
+    PM.product("pm-cadnium-sulfate", 1),
+    PM.product("pm-cobalt-blue", 1),
+    PM.product("pm-magnetite", 1),
+    PM.product("pm-palladium-ore", 1),
+    PM.product("pm-platinum-powder", 1),
+    PM.product("pm-mixed-bastnasite", 1),
+  }
+}
+data.raw["resource"]["pm-post-transition-metals"].minable =
+{
+  hardness = 1,
+  mining_particle = "copper-ore-particle",
+  mining_time = 1,
+  results = 
+  {
+    PM.product("pm-bauxite", 1),
+    PM.product("pm-cassiterite", 1),
+    PM.product("pm-bismuth-chunks", 1),
+    PM.product("pm-indium-chunks", 1),
+    PM.product("pm-lead-chunks", 1),
+    PM.product("pm-lorandite", 1),
+    PM.product("pm-gallium-chunks", 1),
+    PM.product("pm-bismuth-210", 1),
+    PM.product("pm-mixed-trace-astatine", 1),
+  }
+}
+data.raw["resource"]["pm-metalloids"].minable =
+{
+  hardness = 1,
+  mining_particle = "copper-ore-particle",
+  mining_time = 1,
+  results = 
+  {
+    PM.product("pm-sassolite", 1),
+    PM.product("pm-arsenopyrite", 1),
+    PM.product("pm-low-quality-quartzite", 1),
+    PM.product("pm-high-quality-quartzite", 1),
+    PM.product("pm-germanium-ore-concentrate", 1),
+    PM.product("pm-sodium-tellurite", 1),
+  }
+}
+data.raw["resource"]["pm-alkali-metals"].minable =
+{
+  hardness = 1,
+  mining_particle = "copper-ore-particle",
+  mining_time = 1,
+  results = 
+  {
+    PM.product("pm-sodium", 1),
+    PM.product("pm-lithium-ore", 1),
+    PM.product("pm-anhydrite", 1),
+    PM.product("pm-caesium-rubidium-alum", 1),
+    PM.product("pm-pollucite", 1),
+    PM.product("pm-francium-magneto-orbital-trap", 1),
+  }
+}
+data.raw["resource"]["pm-alkaline-earth-metals"].minable =
+{
+  hardness = 1,
+  mining_particle = "copper-ore-particle",
+  mining_time = 1,
+  results = 
+  {
+    PM.product("pm-calcite", 1),
+    PM.product("pm-beryl", 1),
+    PM.product("pm-dolomite", 1),
+    PM.product("pm-celestine", 1),
+    PM.product("pm-baryte-ore", 1),
+    PM.product("pm-barium-radium-carbonate", 1),
+  }
+}
+end
