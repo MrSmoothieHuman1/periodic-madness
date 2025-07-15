@@ -254,7 +254,7 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_module_categories = {"pm-heating-coils"},
-        allowed_effects = {"consumption", "speed", "pollution", "productivity"},
+        allowed_effects = {"consumption", "speed", "pollution"},
         graphics_set =
         {
           module_icons_suppressed = false,

@@ -307,7 +307,7 @@ data:extend({
       art_style = "pm-heat-coil",
       beacon_tint =
       {
-        primary = {0.922, 0.91, 0.816}
+        primary = {0.224, 0.404, 0.671}
       },
       inventory_move_sound = item_sounds.metal_small_inventory_move,
       pick_sound = item_sounds.metal_small_inventory_pickup,
@@ -316,7 +316,7 @@ data:extend({
       {
         speed = 0.15,
         consumption = 0.5,
-        pollution = 0.55,
+        pollution = 0.5,
         productivity = 0.05,
       },
     }, --essenitally a better copper, honestly
