@@ -8,6 +8,7 @@ Date: 2025-12-07
     - Added Iridium.
     - Added Tantalum.
     - Added Niobium.
+    - Added Selenium.
     - Added Inconel 625! its current use is as a new type of heating coil, which is the only coil that can add productivity.
     - Finally added nitric acid! unlocked in A-ATM science so i can actually use it for anything, it will replace some recipes use of nitrogen/fluids.
     - Also added aqua regia, which is why nitric acid even got added! it was now or when i got to 0.8/0.9, so
