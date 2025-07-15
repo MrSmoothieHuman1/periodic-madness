@@ -40,6 +40,7 @@ data:extend({
     subgroup = "pm-gallium-ptm",
     order = "a",
     main_product = "pm-sodium-hydroxide",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-sea-salt", 20),
