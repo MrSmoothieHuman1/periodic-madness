@@ -74,12 +74,12 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-sodium", 6),
-      PM.ingredient("water", 20, "fluid")
+      PM.ingredient("water", 12, "fluid")
     },
     results =
     {
-      PM.product("pm-sodium-hydroxide", 10, "fluid"),
-      PM.product_range("pm-hydrogen-gas", 15, 20, "fluid")
+      PM.product("pm-sodium-hydroxide", 6, "fluid"),
+      PM.product_range("pm-hydrogen-gas", 14, 20, "fluid")
     }
   }--[[@as data.RecipePrototype]],
   {
