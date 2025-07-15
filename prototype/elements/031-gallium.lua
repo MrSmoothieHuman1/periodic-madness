@@ -33,7 +33,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-choralkali-sodium-hydroxide",
+    name = "pm-sodium-hydroxide",
     enabled = false,
     energy_required = 4,
     category = "pm-electrolysis",
@@ -122,27 +122,6 @@ data:extend({
     {
       PM.product("pm-gallium-liqour", 6, "fluid"),
       PM.product("pm-sodium", 2)
-    }
-  }--[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-metal-sodium-hydroxide",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/metal-sodium-hydroxide.png",
-    enabled = false,
-    energy_required = 4,
-    category = "pm-electrolysis",
-    subgroup = "pm-gallium-ptm",
-    order = "d",
-    ingredients =
-    {
-      PM.ingredient("pm-sodium", 6),
-      PM.ingredient("water", 10, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-sodium-hydroxide", 10, "fluid"),
-      PM.product_chance("pm-hydrogen-gas", 4, 0.8, "fluid")
     }
   }--[[@as data.RecipePrototype]],
   {

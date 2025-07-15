@@ -1626,7 +1626,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/waste-water-byproduct-handling.png",
     effects = 
     {
-      PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
+      PM.unlock_recipe("pm-sodium-hydroxide"),
       PM.unlock_recipe("pm-carbon-to-carbon-dioxide"),
       PM.unlock_recipe("pm-ferrous-waste-water"),
       PM.unlock_recipe("pm-cupric-waste-water"),
@@ -1658,7 +1658,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/aluminium-processing.png",
     effects = 
     {
-      PM.unlock_recipe("pm-choralkali-sodium-hydroxide"),
+      PM.unlock_recipe("pm-sodium-hydroxide"),
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
       PM.unlock_recipe("pm-bauxite-powder"),
       PM.unlock_recipe("pm-aluminium-hydroxide-slurry"),
