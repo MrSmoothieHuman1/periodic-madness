@@ -209,13 +209,14 @@ data:extend({
         category = "pm-mixing",
         subgroup = "pm-iridium-tm",
         order = "g",
-        ingredients = 
+        main_product = "pm-iridium-sponge",
+        ingredients =
         {
             PM.ingredient("pm-iridium-filtered-anode-sludge", 6, "fluid"),
             PM.ingredient("water", 24, "fluid"),
             PM.ingredient("pm-benzene", 6, "fluid")
         },
-        results = 
+        results =
         {
             PM.product("pm-iridium-sponge", 4),
             PM.product_range("pm-acidic-water", 6, 12, "fluid")
@@ -229,11 +230,11 @@ data:extend({
         category = "pm-crushing",
         subgroup = "pm-iridium-tm",
         order = "h",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-iridium-sponge", 4)
         },
-        results = 
+        results =
         {
             PM.product("pm-iridium-ore", 3)
         }

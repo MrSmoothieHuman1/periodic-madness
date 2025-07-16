@@ -4656,7 +4656,7 @@ data:extend({
       PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
       PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
       PM.unlock_recipe("pm-filtered-anode-sludge"),
-      PM.unlock_recipe("pm-iridium-filtered-anode-sludgge"),
+      PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-iridium-sponge"),
       PM.unlock_recipe("pm-iridium-ore")
     },
