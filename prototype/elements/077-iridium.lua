@@ -91,6 +91,7 @@ data:extend({
         subgroup = "pm-osmium-tm",
         order = "a",
         main_product = "pm-anode-mud",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-patina", 8),
@@ -112,6 +113,7 @@ data:extend({
         subgroup = "pm-osmium-tm",
         order = "b",
         main_product = "pm-anode-mud",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-anode-sludge", 12, "fluid"),
@@ -132,6 +134,7 @@ data:extend({
         category = "pm-mixing",
         order = "c",
         main_product = "pm-lightly-seperated-anode-mud",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-anode-mud", 8),
@@ -151,6 +154,7 @@ data:extend({
         category = "pm-acids",
         order = "d",
         main_product = "pm-heavily-seperated-anode-mud",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-lightly-seperated-anode-mud", 6),
@@ -169,6 +173,7 @@ data:extend({
         energy_required = 5,
         category = "pm-acids",
         order = "e",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-heavily-seperated-anode-mud", 4),
@@ -237,6 +242,24 @@ data:extend({
         results =
         {
             PM.product("pm-iridium-ore", 3)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-iridium-plate",
+        enabled = false,
+        energy_required = 6.4,
+        category = "smelting",
+        subgroup = "pm-iridium-tm",
+        order = "i",
+        allow_productivity = true,
+        ingredients = 
+        {
+            PM.ingredient("pm-iridium-ore", 1)
+        },
+        results = 
+        {
+            PM.product("pm-iridium-plate", 1)
         }
     }
 })

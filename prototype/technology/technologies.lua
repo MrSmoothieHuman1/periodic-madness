@@ -4658,7 +4658,8 @@ data:extend({
       PM.unlock_recipe("pm-filtered-anode-sludge"),
       PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-iridium-sponge"),
-      PM.unlock_recipe("pm-iridium-ore")
+      PM.unlock_recipe("pm-iridium-ore"),
+      PM.unlock_recipe("pm-iridium-plate")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

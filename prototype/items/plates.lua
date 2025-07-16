@@ -293,6 +293,20 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/magnesium-plate.png",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-iridium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/manganese-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/manganese-plate-2.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-iridium-tm",
+    order = "i",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["iron-plate"].subgroup = "pm-iron-tm"
