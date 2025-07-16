@@ -4625,7 +4625,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-anode-mud"),
+      PM.unlock_recipe("pm-anode-sludge-seperation"),
+      PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
+      PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
+      PM.unlock_recipe("pm-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-osmium-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-osmium-oxide"),
+      PM.unlock_recipe("pm-osmium-ore")
     },
     prerequisites = {"pm-iridium-processing"},
     unit =

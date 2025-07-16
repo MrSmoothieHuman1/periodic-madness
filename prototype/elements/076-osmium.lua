@@ -98,7 +98,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-anode-mud", 6),
+            PM.product("pm-anode-mud", 8),
             PM.product("pm-anode-sludge", 12, "fluid")
         }
     },
@@ -106,7 +106,7 @@ data:extend({
         type = "recipe",
         name = "pm-anode-sludge-seperation",
         enabled = false,
-        energy_required = 7.5,
+        energy_required = 10,
         category = "pm-mixing",
         subgroup = "pm-osmium-tm",
         order = "b",
@@ -146,11 +146,11 @@ data:extend({
         type = "recipe",
         name = "pm-heavily-seperated-anode-mud",
         enabled = false,
-        energy_required = 10,
+        energy_required = 5,
         category = "pm-acids",
         order = "d",
         main_product = "pm-heavily-seperated-anode-mud",
-        ingredient = 
+        ingredients = 
         {
             PM.ingredient("pm-lightly-seperated-anode-mud", 6),
             PM.ingredient("pm-chlorine", 20, "fluid")
@@ -165,13 +165,13 @@ data:extend({
         type = "recipe",
         name = "pm-filtered-anode-sludge",
         enabled = false,
-        energy_required = 7.5,
+        energy_required = 5,
         category = "pm-acids",
         order = "e",
-        ingredient =
+        ingredients =
         {
             PM.ingredient("pm-heavily-seperated-anode-mud", 4),
-            PM.ingredient("pm-sulfuric-acid", 2.5, "fluid"),
+            PM.ingredient("sulfuric-acid", 2.5, "fluid"),
             PM.ingredient("water", 40, "fluid")
         },
         results = 
@@ -193,7 +193,7 @@ data:extend({
         {
             PM.ingredient("pm-filtered-anode-sludge", 10, "fluid"),
             PM.ingredient("pm-sodium", 5),
-            PM.ingredient("pm-transition-metals-ore", 20)
+            PM.ingredient("pm-transition-metals-ore", 16)
         },
         results = 
         {
@@ -232,7 +232,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-osmium-oxide", 4),
-            PM.ingredient("pm-benzene", 12, "fluid"),
+            PM.ingredient("pm-benzene", 10, "fluid"),
             PM.ingredient("pm-acidic-water", 24, "fluid")
         },
         results = 
