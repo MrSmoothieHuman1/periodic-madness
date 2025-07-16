@@ -132,7 +132,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-advanced-advanced-transition-metal-science-pack", 1),
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 1),
     }
 },
 --MARK: Plastic Science
