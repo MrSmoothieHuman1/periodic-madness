@@ -846,6 +846,18 @@ data:extend({
     group = "pm-transition-metals",
     order = "v"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-osmium-tm",
+    group = "pm-transition-metals",
+    order = "w"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-iridium-tm",
+    group = "pm-transition-metals",
+    order = "x"
+  },
 
   --MARK: Post Transition
   {
