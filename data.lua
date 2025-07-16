@@ -103,6 +103,7 @@ require("prototype.elements.004-beryllium")
 require("prototype.elements.038-strontium")
 require("prototype.elements.088-radium")
 require("prototype.elements.076-osmium")
+require("prototype.elements.077-iridium")
 
 require("prototype.damagetypes")
 
