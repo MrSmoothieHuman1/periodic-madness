@@ -483,3 +483,6 @@ data:extend({
 data.raw["recipe"]["chemical-science-pack"].order = "e"
 data.raw["recipe"]["production-science-pack"].order = "x"
 data.raw["recipe"]["utility-science-pack"].order = "xa"
+
+data.raw["item-subgroup"]["science-pack"].group = "pm-science"
+data.raw["item-subgroup"]["science-pack"].order = "b"

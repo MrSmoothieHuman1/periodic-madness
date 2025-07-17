@@ -237,6 +237,13 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/nuh uh.png",
   },
+  {
+    type = "item-group",
+    name = "pm-science",
+    icon_size = 256,
+    icon = "__base__/graphics/technology/research-speed.png",
+    order = "ca"
+  },
 
 
   --MARK: Production
@@ -409,12 +416,6 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-plastic-science-process",
-    group = "intermediate-products",
-    order = "ia"
-  },
-  {
-    type = "item-subgroup",
     name = "pm-resin",
     group = "intermediate-products",
     order = "j"
@@ -443,19 +444,6 @@ data:extend({
     group = "intermediate-products",
     order = "n"
   },
-  {
-    type = "item-subgroup",
-    name = "pm-plastic-science-pack",
-    group = "intermediate-products",
-    order = "xa"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-francium-science",
-    group = "intermediate-products",
-    order = "xb"
-  },
-
 
   --MARK: Voiding
   {
@@ -613,12 +601,6 @@ data:extend({
     name = "pm-greenhousing-rnm",
     group = "pm-reactive-non-metals",
     order = "m"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-bio-modules-rnm",
-    group = "pm-reactive-non-metals",
-    order = "ma"
   },
   {
     type  = "item-subgroup",
@@ -1377,6 +1359,36 @@ data:extend({
     group = "fluids",
     order = "c"
   },
-})
 
-data.raw["item-subgroup"]["science-pack"].order = "x"
+  --MARK: Science tab
+  {
+    type = "item-subgroup",
+    name = "pm-plastic-science-process",
+    group = "pm-science",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-plastic-science-pack",
+    group = "pm-science",
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-francium-science",
+    group = "pm-science",
+    order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-technectium-science",
+    group = "pm-science",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-bio-modules-rnm",
+    group = "pm-science",
+    order = "f"
+  },
+})

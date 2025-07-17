@@ -12,6 +12,8 @@ Date: 2025-12-07
     - Added Inconel 625! its current use is as a new type of heating coil, which is the only coil that can add productivity.
     - Finally added nitric acid! unlocked in A-ATM science so i can actually use it for anything, it will replace some recipes use of nitrogen/fluids.
     - Also added aqua regia, which is why nitric acid even got added! it was now or when i got to 0.8/0.9, so
+    - Finally gave science its own tab! because god knows im not slowing down on unique science items and recipes.
+    - Added Expiremental research data (technectium science), which is a special science pack that unlocks bonuses or things related to science.
 
   Changes:
     - Slightly nerfed research productivity.
