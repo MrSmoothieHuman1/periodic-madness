@@ -1,5 +1,14 @@
 local PM = require("library")
 data:extend({
+  {
+    type = "item",
+    name = "pm-iodine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
+    subgroup = "pm-iodine-rnm",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -14,7 +23,7 @@ data:extend({
     {
       PM.ingredient("pm-biomass", 5),
       PM.ingredient("pm-brine", 40, "fluid"),
-      PM.ingredient("sulfuric-acid", 20, "fluid")
+      PM.ingredient("sulfuric-acid", 15, "fluid")
     },
     results =
     {

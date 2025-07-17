@@ -10,7 +10,7 @@ data:extend({
     pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/plates/nickel-plate.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/plates/nickel-plate-2.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/plates/nickel-plate-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-nickel-tm",
     order = "c",
@@ -38,7 +38,7 @@ data:extend({
     pictures =
     {
       {filename = "__periodic-madness__/graphics/icons/plates/zinc-plate.png", size = 64, scale = 0.5},
-      {filename = "__periodic-madness__/graphics/icons/plates/zinc-plate-2.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/plates/zinc-plate-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-zinc-tm",
     order = "c",
@@ -91,6 +91,11 @@ data:extend({
     name = "pm-tungsten-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/tungsten-plate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-tungsten-tm",
     order = "f",
     stack_size = 100
@@ -122,7 +127,7 @@ data:extend({
     type = "item",
     name = "pm-cadnium-plate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/cadnium-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/cadmium-plate.png",
     subgroup = "pm-cadmium-tm",
     order = "b",
     stack_size = 100
@@ -266,7 +271,42 @@ data:extend({
     subgroup = "pm-magnesium-aem",
     order = "d",
     stack_size = 100
-  }
+  },
+  {
+    type = "item",
+    name = "pm-uhrlumin-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/uhrlumin-plate-2.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-uhrlumin",
+    order = "d",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-inconel-625-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/magnesium-plate.png",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-iridium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/manganese-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/manganese-plate-2.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-iridium-tm",
+    order = "i",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["iron-plate"].subgroup = "pm-iron-tm"

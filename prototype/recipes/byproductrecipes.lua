@@ -7,12 +7,23 @@ data:extend({
     type = "recipe",
     name = "pm-ferrum-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/ferrum-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ferrum.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "b",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -36,12 +47,23 @@ data:extend({
     type = "recipe",
     name = "pm-patina-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/patina-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
+        icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/patina.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "d",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 4,
     ingredients =
     {
@@ -68,7 +90,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/glass-resmelting.png",
     energy_required = 2,
     enabled = false,
-    hide_from_player_crafting = false,
     allow_decomposition = false,
     subgroup = "pm-glassing",
     category = "smelting",
@@ -147,13 +168,23 @@ data:extend({
     type = "recipe",
     name = "pm-chromic-ferrum-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chromic-ferrum-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
-    order = "d",
+        icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ferrum.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "c",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 2,
     ingredients =
     {
@@ -176,13 +207,23 @@ data:extend({
     type = "recipe",
     name = "pm-chromic-patina-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chromic-patina-decomposition.png",
-    subgroup = "pm-advanced-ore-decomposition",
-    order = "e",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/patina.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
     category = "pm-acids",
+    subgroup = "pm-tm-tm",
+    order = "e",
     enabled = false,
-    hide_from_player_crafting = true,
-    allow_decomposition = false,
     energy_required = 2,
     ingredients =
     {
@@ -228,6 +269,8 @@ data:extend({
     type = "recipe",
     name = "pm-ferrous-waste-water",
     category = "pm-mixing",
+    subgroup = "pm-iron-tm",
+    order = "i",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -245,6 +288,8 @@ data:extend({
     type = "recipe",
     name = "pm-cupric-waste-water",
     category = "pm-mixing",
+    subgroup = "pm-copper-tm",
+    order = "i",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -261,6 +306,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sulfuric-waste-water",
+    subgroup = "pm-sulfur-rnm",
+    order = "ea",
     category = "pm-mixing",
     enabled = false,
     energy_required = 5,
@@ -281,6 +328,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-seperation.png",
     category = "chemistry",
+    subgroup = "pm-iron-tm",
+    order = "j",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -303,6 +352,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-seperation.png",
     category = "chemistry",
+    subgroup = "pm-copper-tm",
+    order = "j",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -323,8 +374,10 @@ data:extend({
     type = "recipe",
     name = "pm-sulfuric-waste-seperation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-seperation.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/sulfuric-waste-water-seperation.png",
     category = "chemistry",
+    subgroup = "pm-sulfur-rnm",
+    order = "eb",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -346,6 +399,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
     category = "pm-mixing",
+    subgroup = "pm-iron-tm",
+    order = "k",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -365,6 +420,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/cupric-waste-water-looping.png",
     category = "pm-mixing",
+    subgroup = "pm-copper-tm",
+    order = "k",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -382,8 +439,10 @@ data:extend({
     type = "recipe",
     name = "pm-sulfuric-waste-looping",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/sulfuric-waste-water-looping.png",
     category = "pm-mixing",
+    subgroup = "pm-sulfur-rnm",
+    order = "ec",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -420,6 +479,7 @@ data:extend({
     name = "pm-calcium-sulfate-seperation",
     enabled = false,
     category = "pm-mixing",
+    subgroup = "pm-calcium-sulfate-aem",
     energy_required = 5,
     main_product = "pm-calcium-chloride",
     ingredients = 
@@ -435,7 +495,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-combined-ore-slag",
+    name = "pm-combined-ore-slab",
     enabled = false,
     category = "pm-coldening",
     subgroup = "pm-tm-tm",
@@ -457,6 +517,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-combined-ore-slab-crushing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/combined-ore-slab-seperation.png",
     enabled = false,
     category = "pm-crushing",
     subgroup = "pm-tm-tm",

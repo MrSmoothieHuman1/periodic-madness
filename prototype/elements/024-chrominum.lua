@@ -10,6 +10,7 @@ data:extend({
     {
       {filename = "__periodic-madness__/graphics/icons/ores/chromite.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/chromite-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromite-3.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-chrominum-tm",
     order = "a",
@@ -29,6 +30,22 @@ data:extend({
     subgroup = "pm-chrominum-tm",
     order = "b",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-chrominum-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-2.png", size = 64, scale = 0.5}, i forgot to commit it, whoops
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-4.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-chrominum-tm",
+    order = "c",
+    stack_size = 200,
   },
   {
     type = "item",

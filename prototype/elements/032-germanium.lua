@@ -53,6 +53,23 @@ data:extend({
         stack_size = 200,
     },
     {
+    type = "item",
+    name = "pm-germanium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png",
+    pictures =
+    {
+        {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon-3.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/germanium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-germanium-mt",
+    order = "e",
+    stack_size = 200
+    },
+
+    {
         type = "recipe",
         name = "pm-germanium-ore-concentrate",
         enabled = false,
@@ -88,7 +105,7 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-germanium-ore-concentrate", 6),
-            PM.ingredient("sulfuric-acid", 10, "fluid"),
+            PM.ingredient("sulfuric-acid", 7.5, "fluid"),
         },
         results = 
         {

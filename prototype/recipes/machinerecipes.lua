@@ -166,7 +166,7 @@ data:extend({
     type = "recipe",
     name = "pm-washing-plant-1",
     subgroup = "pm-water-machine",
-    order = "c",
+    order = "d",
     enabled = false,
     energy_required = 1,
     ingredients =
@@ -382,7 +382,7 @@ data:extend({
     name = "pm-molten-inator-3",
     category = "crafting-with-fluid",
     subgroup = "pm-molten-machine",
-    order = "f",
+    order = "d",
     enabled = false,
     energy_required = 4,
     ingredients =
@@ -597,7 +597,7 @@ data:extend({
     {
       PM.ingredient("pm-corrosion-resistant-tubing", 10),
       PM.ingredient("pm-stainless-steel-alloy", 2),
-      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("advanced-circuit", 4),
       PM.ingredient("pm-heavyweight-panelling", 12)
     },
     results = {
@@ -1182,8 +1182,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-solar-panel-2", 1),
-      --PM.ingredient("pm-cadnium-telluride", 4),
-      --PM.ingredient("pm-magnesium-chloride", 4),
+      PM.ingredient("pm-cadmium-telluride", 4),
+      PM.ingredient("pm-magnesium-chloride", 4),
       PM.ingredient("pm-light-coolant", 2, "fluid")
     },
     results =
@@ -1235,7 +1235,8 @@ data:extend({
     enabled = false,
     energy_required = 1,
     category = "crafting-with-fluid",
-    order = "e[long-handed-inserter]",
+    subgroup = "pm-express-inserters",
+    order = "a",
     ingredients = 
     {
       PM.ingredient("fast-inserter", 1),
@@ -1253,6 +1254,8 @@ data:extend({
     name = "pm-express-long-handed-inserter",
     enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "pm-express-inserters",
+    order = "b",
     energy_required = 1,
     ingredients = 
     {
@@ -1272,6 +1275,8 @@ data:extend({
     name = "pm-express-bulk-inserter",
     enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "pm-express-inserters",
+    order = "c",
     energy_required = 1,
     ingredients = 
     {
@@ -1426,7 +1431,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-roboport-2",
-    category = "crafting-with-fluid",
+    subgroup = "logistic-network",
+    order = "c[signal]-b[roboport]",
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -1445,6 +1451,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-construction-repeater",
+    subgroup = "logistic-network",
+    order = "c[signal]-c[roboport]",
     enabled = false,
     energy_required = 3,
     ingredients = 
@@ -1462,6 +1470,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-logistic-repeater",
+    subgroup = "logistic-network",
+    order = "c[signal]-d[roboport]",
     enabled = false,
     energy_required = 3,
     ingredients = 
@@ -1481,6 +1491,8 @@ data:extend({
     name = "pm-longer-handed-inserter",
     enabled = false,
     category = "crafting-with-fluid",
+    subgroup = "inserter",
+    order = "da",
     energy_required = 1,
     ingredients = 
     {
@@ -1494,6 +1506,42 @@ data:extend({
       PM.product("pm-longer-handed-inserter", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-RTG",
+    enabled = false,
+    energy_required = 6,
+    ingredients = 
+    {
+      PM.ingredient("pm-radiation-resistant-panelling", 20),
+      PM.ingredient("pm-heavyweight-framing", 12),
+      PM.ingredient("advanced-circuit", 8),
+      PM.ingredient("pm-corrosion-resistant-tubing", 8)
+    },
+    results = 
+    {
+      PM.product("pm-RTG", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-coil-heater",
+    subgroup = "pm-coils",
+    order = "x",
+    enabled = false,
+    energy_required = 9,
+    ingredients = 
+    {
+      PM.ingredient("pm-uhrlumin-plate", 4),
+      PM.ingredient("pm-heating-plating", 12),
+      PM.ingredient("advanced-circuit", 6),
+      PM.ingredient("pm-lightweight-framing", 10)
+    },
+    results =
+    {
+      PM.product("pm-coil-heater", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

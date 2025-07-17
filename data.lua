@@ -1,6 +1,7 @@
 --THIS IS HOW YOU SPELL PERIODIC = periodic
 --since i have to write rules for myself, since im a bit of an idiot, some rules:
 --2 chunks of an ore = 1 "pure" ore
+local PM = require("library")
 
 require("prototype.item")
 require("prototype.fluids")
@@ -29,7 +30,6 @@ require("prototype.recipes.altrecipes")
 require("prototype.recipes.vanillarecipes")
 require("prototype.recipes.platerecipes")
 require("prototype.recipes.byproductrecipes")
-require("prototype.recipes.rawrrecipes")
 require("prototype.recipes.oilrecipes")
 require("prototype.recipes.batteriesrecipes")
 require("prototype.recipes.multimetalrrecipes")
@@ -102,6 +102,8 @@ require("prototype.elements.056-barium")
 require("prototype.elements.004-beryllium")
 require("prototype.elements.038-strontium")
 require("prototype.elements.088-radium")
+require("prototype.elements.076-osmium")
+require("prototype.elements.077-iridium")
 
 require("prototype.damagetypes")
 
@@ -118,9 +120,6 @@ require("prototype.entity.projectiles")
 require("prototype.entity.stickers")
 require("prototype.entity.enemies")
 
-require("prototype.entity.beacon-graphics.beacon-2-graphics") --i dont have the time nor strength to decode this into a normal definition
-require("prototype.entity.beacon-graphics.beacon-3-graphics")
-
 require("prototype.remnants")
 require("prototype.achievements")
 require("prototype.robots")
@@ -130,8 +129,9 @@ require("prototype.equipment-grid")
 require("prototype.virtual-signals")
 
 require("compatibility.icon-badges")
-require("compatibility.DLC.belt-stacking")
+--require("compatibility.DLC.belt-stacking")
 require("compatibility.DLC.quality")
+require("compatibility.DLC.elevated-rails")
 
 local resource_autoplace = require('resource-autoplace');
 data:extend({

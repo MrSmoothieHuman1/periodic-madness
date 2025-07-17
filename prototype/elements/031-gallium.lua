@@ -33,13 +33,14 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-choralkali-sodium-hydroxide",
+    name = "pm-sodium-hydroxide",
     enabled = false,
     energy_required = 4,
     category = "pm-electrolysis",
     subgroup = "pm-gallium-ptm",
     order = "a",
     main_product = "pm-sodium-hydroxide",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-sea-salt", 20),
@@ -48,6 +49,38 @@ data:extend({
     {
       PM.product("pm-sodium-hydroxide", 10, "fluid"),
       PM.product_chance("pm-chlorine", 10, 0.8, "fluid")
+    }
+  }--[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-sodium-sodium-hydroxide",
+    icon_size = 64,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/sodium-1.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/sodium-hydroxide.png",
+        icon_size = 64,
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "chemistry",
+    subgroup = "pm-gallium-ptm",
+    order = "aa",
+    main_product = "pm-sodium-hydroxide",
+    ingredients =
+    {
+      PM.ingredient("pm-sodium", 6),
+      PM.ingredient("water", 12, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-sodium-hydroxide", 6, "fluid"),
+      PM.product_range("pm-hydrogen-gas", 14, 20, "fluid")
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -89,27 +122,6 @@ data:extend({
     {
       PM.product("pm-gallium-liqour", 6, "fluid"),
       PM.product("pm-sodium", 2)
-    }
-  }--[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-metal-sodium-hydroxide",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/metal-sodium-hydroxide.png",
-    enabled = false,
-    energy_required = 4,
-    category = "pm-electrolysis",
-    subgroup = "pm-gallium-ptm",
-    order = "d",
-    ingredients =
-    {
-      PM.ingredient("pm-sodium", 6),
-      PM.ingredient("water", 10, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-sodium-hydroxide", 10, "fluid"),
-      PM.product_chance("pm-hydrogen-gas", 4, 0.8, "fluid")
     }
   }--[[@as data.RecipePrototype]],
   {

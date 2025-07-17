@@ -59,11 +59,10 @@ data:extend({
     order = "A",
     enabled = false,
     energy_required = 6,
-    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-high-sulfur-residuals", 6, "fluid"),
-      PM.ingredient("pm-molybdenum-disulfide", 3)
+      PM.ingredient("pm-molybdenum-disulfide", 2)
     },
     results = 
     {
@@ -83,16 +82,15 @@ data:extend({
     order = "A",
     enabled = false,
     energy_required = 6,
-    allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-low-sulfur-residuals", 6, "fluid"),
-      PM.ingredient("pm-molybdenum-disulfide", 3)
+      PM.ingredient("pm-molybdenum-disulfide", 2)
     },
-    results = 
+    results =
     {
       PM.product_range("pm-bitumen", 2, 4),
-      PM.product("sulfur", 3),
+      PM.product_range("sulfur", 3, 4),
       PM.product_range("pm-vanadium-ore", 1, 4),
       PM.product_range("pm-syngas", 0.5, 5, "fluid")
     }
@@ -348,8 +346,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "a",
     ingredients =
     {
       PM.ingredient("pm-legendary-diesel", 10, "fluid")
@@ -367,8 +365,8 @@ data:extend({
     energy_required = 4,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "b",
     ingredients =
     {
       PM.ingredient("pm-common-diesel", 40, "fluid")
@@ -386,8 +384,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "c",
     ingredients =
     {
       PM.ingredient("pm-kerosene", 20, "fluid")
@@ -405,8 +403,8 @@ data:extend({
     energy_required = 2,
     enabled = false,
     category = "chemistry",
-    subgroup = "pm-fuels",
-    order = "f",
+    subgroup = "pm-solid-fuel",
+    order = "d",
     ingredients =
     {
       PM.ingredient("pm-petrol", 20, "fluid")
@@ -421,6 +419,8 @@ data:extend({
     name = "pm-solid-lubricant",
     energy_required = 4,
     category = "chemistry",
+    subgroup = "pm-lubricant",
+    order = "b",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -462,8 +462,8 @@ data:extend({
     name = "pm-heavy-lubricant",
     energy_required = 4,
     category = "chemistry",
-    subgroup = "pm-oil",
-    order = "f",
+    subgroup = "pm-lubricant",
+    order = "c",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -719,7 +719,7 @@ data:extend({
     {
       PM.ingredient("pm-empty-fuel-canister", 1),
       PM.ingredient("solid-fuel", 1),
-      PM.ingredient("pm-legendary-diesel", 40, "fluid")
+      PM.ingredient("pm-diesel", 40, "fluid")
     },
     results = {
       PM.product("pm-diesel-fuel-canister", 1)
@@ -795,11 +795,14 @@ data:extend({
   {
     type = "recipe",
     name = "pm-octane-processing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/octane-processing.png",
     enabled = false,
     energy_required = 10,
     category = "oil-processing",
+    subgroup = "pm-octane-processing",
+    order = "a",
     allow_productivity = true,
-    main_product = "pm-iso-octane",
     ingredients = 
     {
       PM.ingredient("pm-butene-gas", 40, "fluid"),
@@ -819,6 +822,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-octane-processing",
+    order = "b",
     ingredients = 
     {
       PM.ingredient("pm-N-octane", 3, "fluid"),
@@ -835,6 +840,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     category = "chemistry",
+    subgroup = "pm-octane-processing",
+    order = "c",
     ingredients = 
     {
       PM.ingredient("pm-2-3-3-trimethylpentane", 4, "fluid"),
@@ -851,6 +858,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "e",
     allow_productivity = true,
     ingredients =
     {
@@ -869,6 +878,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "f",
     allow_productivity = true,
     ingredients =
     {
@@ -887,6 +898,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-solid-fuel",
+    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -975,7 +988,7 @@ data:extend({
     name = "pm-oil-residual-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/oil-residuals-cracking.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-cracking",
@@ -995,7 +1008,7 @@ data:extend({
     name = "pm-fuel-oils-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/fuel-oils-cracking.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-cracking",
@@ -1015,7 +1028,7 @@ data:extend({
     name = "pm-lubricating-oils-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/lubricating-oils-cracking.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-cracking",
@@ -1035,7 +1048,7 @@ data:extend({
     name = "pm-diesel-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/diesel-cracking-2.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-cracking",
@@ -1055,7 +1068,7 @@ data:extend({
     name = "pm-kerosene-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/kerosene-cracking.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-cracking",
@@ -1075,7 +1088,7 @@ data:extend({
     name = "pm-naptha-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/naptha-cracking.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-cracking",
@@ -1095,7 +1108,7 @@ data:extend({
     name = "pm-petrol-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/petrol-cracking.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-cracking",
@@ -1116,7 +1129,7 @@ data:extend({
     name = "pm-petrol-reforming",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/petrol-reforming.png",
-    energy_required = 4,
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
@@ -1135,8 +1148,20 @@ data:extend({
     type = "recipe",
     name = "pm-naptha-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/naptha-reforming.png",
-    energy_required = 4,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
@@ -1155,8 +1180,20 @@ data:extend({
     type = "recipe",
     name = "pm-kerosene-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/kerosene-reforming.png",
-    energy_required = 4,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
@@ -1175,8 +1212,20 @@ data:extend({
     type = "recipe",
     name = "pm-diesel-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/diesel-reforming.png",
-    energy_required = 4,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
@@ -1195,8 +1244,20 @@ data:extend({
     type = "recipe",
     name = "pm-lubricating-oils-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/lubricating-oils-reforming.png",
-    energy_required = 4,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
@@ -1215,8 +1276,20 @@ data:extend({
     type = "recipe",
     name = "pm-fuel-oils-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/fuel-oils-reforming.png",
-    energy_required = 4,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
@@ -1235,8 +1308,20 @@ data:extend({
     type = "recipe",
     name = "pm-oil-residuals-reforming",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/oil-residuals-reforming.png",
-    energy_required = 4,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = {0, 2.5}
+      },
+    },
+    energy_required = 2,
     enabled = false,
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
@@ -1258,6 +1343,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "oil-processing",
+    subgroup = "pm-oil",
+    order = "y",
     main_product = "pm-syngas",
     ingredients =
     {
@@ -1279,20 +1366,38 @@ data:extend({
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
-      PM.ingredient("pm-syngas", 10, "fluid"),
+      PM.ingredient("pm-syngas", 12, "fluid"),
     },
     results =
     {
-      PM.product_range("pm-carbon-monoxide", 4, 8, "fluid"),
+      PM.product_range("pm-carbon-monoxide", 6, 10, "fluid"),
       PM.product_range("pm-sulfur-dioxide", 0, 2, "fluid"), --hydrogen sulfide in hard mode
       --PM.product_range("pm-methane", 1, 4, "fluid")
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-light-lubricant",
+    category = "chemistry",
+    subgroup = "pm-lubricant",
+    order = "e",
+    energy_required = 4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-polydimethylsiloxane", 8, "fluid"),
+        PM.ingredient("pm-heavy-lubricant", 10, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-light-lubricant", 10, "fluid")
+    }
+},
 } --[[@as data.RecipePrototype[] ]])
 
-data.raw["recipe"]["lubricant"].subgroup = "pm-oil"
-data.raw["recipe"]["lubricant"].order = "e"
---data.raw["recipe"]["lubricant"].energy_required = 2
+data.raw["recipe"]["lubricant"].subgroup = "pm-lubricant"
+data.raw["recipe"]["lubricant"].order = "a"
 data.raw["recipe"]["lubricant"].ingredients =
 {
   PM.ingredient("pm-lubricating-oils", 12, "fluid"),
@@ -1304,6 +1409,8 @@ data.raw["recipe"]["lubricant"].results =
 }
 
 data.raw["recipe"]["solid-fuel-from-heavy-oil"] = nil
+data.raw["recipe"]["solid-fuel-from-light-oil"] = nil
+data.raw["recipe"]["solid-fuel-from-petroleum"] = nil
 
 data.raw["recipe"]["coal-liquefaction"].subgroup = "pm-oil"
 data.raw["recipe"]["coal-liquefaction"].order = "c"

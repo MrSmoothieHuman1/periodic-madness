@@ -93,7 +93,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-zircon", 8),
-      PM.ingredient("pm-coke", 4)
+      PM.ingredient("pm-coke", 3)
     },
     results =
     {

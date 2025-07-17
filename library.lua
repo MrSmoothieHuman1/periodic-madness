@@ -4,6 +4,10 @@ if ... ~= "library" then
   return require("library")
 end
 
+---@class PeriodicLibraryGlobals
+local PM_Global = _ENV.__PM or {}
+_ENV.__PM = PM_Global
+
 ---@alias item_type "fluid"|"item"
 
 ---@class PeriodicLibrary
@@ -290,40 +294,48 @@ end
 
 ---Shorthand for the effect of unlocking a recipe
 ---@param recipe data.RecipeID
+---@param hidden? boolean
 ---@return data.UnlockRecipeModifier
-function PM.unlock_recipe(recipe)
+function PM.unlock_recipe(recipe, hidden)
   return {
     type = "unlock-recipe",
-    recipe = recipe
+    recipe = recipe,
+    hidden = hidden,
   }--[[@as data.UnlockRecipeModifier]]
 end
 ---Shorthand for the effect of unlocking a space location (aka planet)
 ---@param location data.SpaceLocationID
+---@param hidden? boolean
 ---@return data.UnlockSpaceLocationModifier
-function PM.unlock_location(location)
+function PM.unlock_location(location, hidden)
   return {
     type = "unlock-space-location",
-    space_location = location
+    space_location = location,
+    hidden = hidden,
   }--[[@as data.UnlockSpaceLocationModifier]]
 end
 ---Shorthand for the effect of unlocking a quality level
 ---@param quality data.QualityID
+---@param hidden? boolean
 ---@return data.UnlockQualityModifier
-function PM.unlock_quality(quality)
+function PM.unlock_quality(quality, hidden)
   return {
     type = "unlock-quality",
-    quality = quality
+    quality = quality,
+    hidden = hidden,
   }--[[@as data.UnlockQualityModifier]]
 end
 ---Shorthand for giving an item
 ---@param item data.ItemID
 ---@param count int?
+---@param hidden? boolean
 ---@return data.GiveItemModifier
-function PM.give_item(item, count)
+function PM.give_item(item, count, hidden)
   return {
     type = "give-item",
     item = item,
-    count = count
+    count = count,
+    hidden = hidden,
   } --[[@as data.GiveItemModifier]]
 end
 ---@alias SimpleModifierTypes
@@ -391,11 +403,13 @@ end
 ---Shorthand for technology modifiers
 ---@param property SimpleModifierTypes
 ---@param modifier number
+---@param hidden? boolean
 ---@return SimpleModifiers
-function PM.modify(property, modifier)
+function PM.modify(property, modifier, hidden)
   return {
     type = property,
-    modifier = modifier
+    modifier = modifier,
+    hidden = hidden,
   } --[[@as SimpleModifiers]]
 end
 ---@alias BoolModifierTypes
@@ -420,62 +434,130 @@ end
 ---| data.VehicleLogisticsModifier
 ---Shorthand for enabling features
 ---@param type BoolModifierTypes
+---@param hidden? boolean
 ---@return BoolModifiers
-function PM.enable(type)
+function PM.enable(type, hidden)
   return {
     type = type,
-    modifier = true
+    modifier = true,
+    hidden = hidden,
   } --[[@as BoolModifiers]]
 end
 ---Shorthand for disabling features
 ---@param type BoolModifierTypes
+---@param hidden? boolean
 ---@return BoolModifiers
-function PM.disable(type)
+function PM.disable(type, hidden)
   return {
     type = type,
-    modifier = false
+    modifier = false,
+    hidden = hidden,
   } --[[@as BoolModifiers]]
 end
 ---Shorthand for changing the productivity of a recipe
 ---@param recipe data.RecipeID
 ---@param change data.EffectValue
+---@param hidden? boolean
 ---@return data.ChangeRecipeProductivityModifier
-function PM.modify_recipe_productivity(recipe, change)
+function PM.modify_recipe_productivity(recipe, change, hidden)
   return {
     type = "change-recipe-productivity",
     recipe = recipe,
-    change = change
+    change = change,
+    hidden = hidden,
   } --[[@as data.ChangeRecipeProductivityModifier]]
 end
 ---Shorthand for modifying the damage or shooting speed of ammo
 ---@param type "ammo-damage"|"gun-speed"
 ---@param ammo_category data.AmmoCategoryID
 ---@param modifier number
+---@param hidden? boolean
 ---@return data.AmmoDamageModifier|data.GunSpeedModifier
-function PM.modify_ammo(type, ammo_category, modifier)
+function PM.modify_ammo(type, ammo_category, modifier, hidden)
   return {
     type = type,
     ammo_category = ammo_category,
-    modifier = modifier
+    modifier = modifier,
+    hidden = hidden,
   } --[[@as data.AmmoDamageModifier|data.GunSpeedModifier]]
 end
 ---Shorthand for modifying the turret damage(?)
 ---@param turret_id data.EntityID
 ---@param modifier number
+---@param hidden? boolean
 ---@return data.TurretAttackModifier
-function PM.modify_turret(turret_id, modifier)
+function PM.modify_turret(turret_id, modifier, hidden)
   return {
     type = "turret-attack",
     turret_id = turret_id,
-    modifier = modifier
+    modifier = modifier,
+    hidden = hidden,
   } --[[@as data.TurretAttackModifier]]
 end
 ---Shorthand for an dummy modifier
+---@param hidden? boolean
 ---@return data.NothingModifier
-function PM.modify_nothing()
+function PM.modify_nothing(hidden)
   return {
-    type = "nothing"
+    type = "nothing",
+    hidden = hidden,
   } --[[@as data.NothingModifier]]
+end
+
+--MARK: Custom Modifiers
+
+---@type table<string, data.IconData[]>
+local custom_modifiers = PM_Global.custom_modifiers or {}
+PM_Global.custom_modifiers = custom_modifiers
+
+---Defines the icon of the custom modifier when later used by `PM.custom_modifier`
+---@see PeriodicLibrary.custom_modifier
+---@param name string
+---@param icons data.IconData[]
+function PM.define_modifier(name, icons)
+  if custom_modifiers[name] then
+    error("Custom modifier already defined: "..name)
+  end
+
+  custom_modifiers[name] = icons
+end
+
+---Shorthand for a custom modifier. To have an icon defined, please use `PM.define_modifier`
+---@see PeriodicLibrary.define_modifier
+---@param name string
+---@param param number
+---@param hidden? boolean
+---@return data.NothingModifier
+function PM.custom_modifier(name, param, hidden)
+  local icons = custom_modifiers[name]
+  if not icons then log("Custom modifer was used without defining an icon for it: "..name) end
+  return {
+    type = "nothing",
+    effect_description = {"pm-modifier."..name, tostring(param)},
+    hidden = hidden,
+    icons = icons,
+  }--[[@as data.NothingModifier]]
+end
+
+---Go over the effects of a technology and add up the numbers of the given custom modifier.
+---@param technology LuaTechnology|LuaTechnologyPrototype
+---@return number change
+function PM.get_custom_modification(name, technology)
+  if technology.object_name == "LuaTechnology" then
+    technology = technology.prototype
+  end
+  local effects = technology.effects
+  local locale_key = "pm-modifier."..name
+
+  local change = 0
+  for _, modifier in pairs(effects) do
+    if modifier.type == "nothing"
+    and modifier.effect_description[1] == locale_key then
+      change = change + tonumber(modifier.effect_description[2])
+    end
+  end
+
+  return change
 end
 
 --MARK: Module Effects
@@ -504,7 +586,7 @@ function PM.all_effects_but(...)
     ["pollution"] = true,
     ["quality"] = true,
   }
-  for _, effect in pairs({...}--[[@as table<int,data.EffectTypeLimitation>]]) do
+  for _, effect in pairs({...}) do
     effects[effect] = nil
   end
   ---@type data.EffectTypeLimitation[]
@@ -669,7 +751,7 @@ local send_levels = {
 function PM.compat_send(recipient, msg, print_settings)
   if has_better_chat == nil then
     local better_chat = remote.interfaces["better-chat"]
-    has_better_chat = better_chat and better_chat["send"]
+		has_better_chat = better_chat and better_chat["send"] or false
   end
 
   if not has_better_chat then return recipient.print(msg, print_settings) end

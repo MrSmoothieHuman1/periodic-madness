@@ -26,12 +26,65 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/ferrovanadium.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/ferrovanadium-2.png", size = 64, scale = 0.5},
     },
-
     subgroup = "pm-vanadium-tm",
     order = "b",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-vanadium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon-4.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-vanadium-tm",
+    order = "b",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-sodium-metavanadate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sodium-metavanadate.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/sodium-metavanadate.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sodium-metavanadate-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/sodium-metavanadate-3.png", size = 64, scale = 0.5 },
+    },
+    subgroup = "pm-vanadium-tm",
+    order = "a",
+    stack_size = 300
+  },
 
+  {
+    type = "fluid",
+    name = "pm-vanadate-solution",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
+    subgroup = "pm-vanadium-tm",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.529, g = 0.43, b = 0.35},
+    flow_color = {r = 0.529, g = 0.43, b = 0.35},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-red-cake-precipitate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/red-cake-precipitate.png",
+    subgroup = "pm-vanadium-tm",
+    order = "f",
+    default_temperature = 15,
+    base_color = {r = 0.729, g = 0.43, b = 0.35},
+    flow_color = {r = 0.729, g = 0.43, b = 0.35},
+  },
 
   {
     type = "recipe",
@@ -76,7 +129,7 @@ data:extend({
     type = "recipe",
     name = "pm-vanadate-solution",
     enabled = false,
-    energy_required = 6,
+    energy_required = 3,
     category = "pm-washing",
     subgroup = "pm-vanadium-tm",
     order = "c",
@@ -84,7 +137,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 5, "fluid"),
       PM.ingredient("pm-chlorine", 10, "fluid")
     },
     results =
@@ -117,7 +170,7 @@ data:extend({
     type = "recipe",
     name = "pm-ammonium-vanadate-solution",
     enabled = false,
-    energy_required = 6,
+    energy_required = 3,
     category = "pm-washing",
     subgroup = "pm-vanadium-tm",
     order = "ca",
@@ -125,7 +178,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
-      PM.ingredient("sulfuric-acid", 8, "fluid"),
+      PM.ingredient("sulfuric-acid", 2.5, "fluid"),
       PM.ingredient("pm-ammonium-chloride", 4)
     },
     results =
@@ -155,4 +208,65 @@ data:extend({
       PM.product_range("pm-vanadium-ore", 0, 4)
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-sodium-metavanadate",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-vanadium-tm",
+    order = "e",
+    main_product = "pm-sodium-metavanadate",
+    ingredients = 
+    {
+      PM.ingredient("pm-vanadium-ore", 4),
+      PM.ingredient("pm-low-sulfur-residuals", 5, "fluid"),
+      PM.ingredient("pm-ammonium-chloride", 4),
+      PM.ingredient("pm-sodium-hydroxide", 2.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-sodium-metavanadate", 4),
+      PM.product_range("pm-high-sulfur-residuals", 1, 3, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-red-cake-precipitate",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    category = "pm-acids",
+    subgroup = "pm-vanadium-tm",
+    order = "f",
+    ingredients = 
+    {
+      PM.ingredient("sulfuric-acid", 1, "fluid"),
+      PM.ingredient("pm-sodium-metavanadate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-red-cake-precipitate", 8, "fluid"),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-better-vanadium-oxide",
+    allow_productivity = true,
+    enabled = false,
+    energy_required = 3,
+    category = "pm-moltening",
+    subgroup = "pm-vanadium-tm",
+    order = "g",
+    ingredients = 
+    {
+      PM.ingredient("pm-red-cake-precipitate", 8, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 2)
+    },
+    results = 
+    {
+      PM.product("pm-vanadium-oxide", 3)
+    }
+  }
 })

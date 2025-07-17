@@ -32,10 +32,26 @@ data:extend({
     order = "a",
     stack_size = 150
   },
+  {
+    type = "item",
+    name = "pm-titanium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/titanium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-titanium-tm",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
-    name = "pm-titanium-leeching",
+    name = "pm-titanium-chunks",
     icon_size = 64,
     icons =
     {
@@ -75,11 +91,41 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-titanium-chunks", 4),
-      PM.ingredient("pm-coke", 5)
+      PM.ingredient("pm-coke", 3)
     },
     results =
     {
       PM.product("pm-titanium-oxide", 6)
+    }
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-fluxed-titanium-oxide",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/titanium-oxide.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/filled-flux-container.png",
+        icon_size = 64
+      }
+    },
+    category = "pm-acids",
+    subgroup = "pm-titanium-tm",
+    order = "ca",
+    enabled = false,
+    energy_required = 4,
+    ingredients =
+    {
+      PM.ingredient("pm-titanium-chunks", 4),
+      PM.ingredient("pm-filled-flux-container", 1)
+    },
+    results =
+    {
+      PM.product("pm-titanium-oxide", 6),
+      PM.product_chance("pm-flux-container", 1, 0.66),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -112,7 +158,7 @@ data:extend({
     results =
     {
       PM.product("pm-titanium-chloride", 2, "fluid"),
-      PM.product("pm-oxygen-gas", 4, "fluid")
+      PM.product_range("pm-coke", 0, 1)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -144,9 +190,9 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/argon-titanium-welding.png",
     subgroup = "pm-titanium-tm",
-    order = "h",
+    order = "i",
     category = "pm-moltening",
-    energy_required = 4.4 + 0.1,
+    energy_required = 4.5,
     enabled = false,
     ingredients =
     {
@@ -189,4 +235,74 @@ data:extend({
       PM.product("pm-titanium-chunks", 8)
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-titanium-plate",
+    subgroup = "pm-titanium-tm",
+    order = "f",
+    category = "smelting",
+    energy_required = 3.2,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-titanium-ore", 1) },
+    results = {
+      PM.product("pm-titanium-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-titanium",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-titanium.png",
+        icon_size = 64,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/titanium-plate.png",
+        icon_size = 64,
+        scale = 0.33,
+        shift = {0, -7.5}
+      },
+    },
+    subgroup = "pm-titanium-tm",
+    order = "g",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-titanium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-titanium", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-titanium-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/titanium-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-titanium-tm",
+    order = "h",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-titanium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-titanium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
 })

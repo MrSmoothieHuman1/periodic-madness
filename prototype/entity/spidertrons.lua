@@ -96,7 +96,7 @@ data:extend({
     corpse = "spidertron-remnants",
     dying_explosion = "spidertron-explosion",
     energy_per_hit_point = 1,
-    guns = { "pm-spiderling-discharge-defense", "pm-spiderling-submachine-gun"},
+    guns = {"pm-spiderling-combat-shotgun", "pm-spiderling-submachine-gun"},
     inventory_size = 60,
     equipment_grid = "pm-spiderling-equipment-grid",
     trash_inventory_size = 20,
@@ -112,10 +112,10 @@ data:extend({
       type = "burner",
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,
-      fuel_categories = {"pm-fuel-rods"}
+      fuel_categories = {"pm-fuel-rods", "pm-strontium-fuel-rods"}
     },
     movement_energy_consumption = "250kW",
-    automatic_weapon_cycling = true,
+    automatic_weapon_cycling = false,
     chain_shooting_cooldown_modifier = 0.8,
     spider_engine =
     {

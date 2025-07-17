@@ -28,6 +28,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-calcium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon-4.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-calcium-aem",
+    order = "c",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "pm-mixed-calcium-rock",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/mixed-calcium-rock.png",
@@ -83,14 +99,47 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/calcium-sulfate-chunks-3.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/calcium-sulfate-chunks-4.png", size = 64, scale = 0.5 }
     },
-    subgroup = "pm-calcium-aem",
-    order = "f",
+    subgroup = "pm-calcium-sulfate-aem",
+    order = "b",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-calcium-sulfate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/calcium-sulfate.png",
+    subgroup = "pm-calcium-sulfate-aem",
+    order = "c",
+    stack_size = 300
+  },
+
+  {
+    type = "fluid",
+    name = "pm-calcium-hydroxide-slurry",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/calcium-hydroxide-slurry.png",
+    subgroup = "pm-calcium-aem",
+    order = "ca",
+    default_temperature = 15,
+    base_color = {r = 0.75, g = 0.75, b = 0.75},
+    flow_color = {r = 0.75, g = 0.75, b = 0.75}
+  },
+  {
+    type = "fluid",
+    name = "pm-calcium-sulfate-slurry",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/calcium-sulfate-slurry.png",
+    subgroup = "pm-calcium-sulfate-aem",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.99, g = 0.85, b = 0.85},
+    flow_color = {r = 0.99, g = 0.85, b = 0.85},
+    auto_barrel = false
   },
 
   {
     type = "recipe",
-    name = "pm-calcite-filtering",
+    name = "pm-calcite",
     subgroup = "pm-calcium-aem",
     order = "a",
     category = "pm-evaporation",
@@ -110,7 +159,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-calcite-crushing",
+    name = "pm-calcium-dust",
     subgroup = "pm-calcium-aem",
     order = "b",
     category = "pm-crushing",
@@ -128,13 +177,14 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-calcium-dust-washing",
+    name = "pm-calcium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/calcium-dust-washing.png",
     subgroup = "pm-calcium-aem",
     category = "pm-washing",
     order = "c",
     energy_required = 2,
+    main_product = "pm-calcium-ore",
     ingredients =
     {
       PM.ingredient("pm-calcium-dust", 4),
@@ -189,7 +239,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-calcite",
+    name = "pm-advanced-calcite",
     category = "chemistry",
     subgroup = "pm-calcium-aem",
     order = "e",
@@ -255,8 +305,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     category = "pm-mixing",
-    subgroup = "pm-calcium-aem",
-    order = "h",
+    subgroup = "pm-calcium-sulfate-aem",
+    order = "a",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-calcium-hydroxide-slurry", 40, "fluid"),
@@ -274,8 +325,8 @@ data:extend({
     enabled = false,
     energy_required = 12,
     category = "chemistry",
-    subgroup = "pm-calcium-aem",
-    order = "i",
+    subgroup = "pm-calcium-sulfate-aem",
+    order = "b",
     main_product = "pm-calcium-sulfate-chunks",
     ingredients = 
     {
@@ -285,6 +336,7 @@ data:extend({
     results = 
     {
       PM.product_range("pm-calcium-sulfate-chunks", 5, 10),
+      PM.product("pm-hot-coolant", 5, "fluid"),
       PM.product_range_chance("sulfur", 0, 8, 0.75)
     }
   },
@@ -294,9 +346,10 @@ data:extend({
     enabled = false,
     energy_required = 8,
     category = "pm-crushing",
-    subgroup = "pm-calcium-aem",
-    order = "j",
+    subgroup = "pm-calcium-sulfate-aem",
+    order = "c",
     main_product = "pm-calcium-sulfate",
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("pm-calcium-sulfate-chunks", 5),

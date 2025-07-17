@@ -63,6 +63,22 @@ data:extend({
         order = "a",
         stack_size = 200
     },
+    {
+        type = "item",
+        name = "pm-radium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/radium-ore.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/radium-ore.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/radium-ore-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/radium-ore-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/radium-ore-4.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-barium-aem",
+        order = "e",
+        stack_size = 200
+    },
 
     {
         type = "recipe",

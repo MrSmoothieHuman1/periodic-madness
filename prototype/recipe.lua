@@ -51,6 +51,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sand",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/stone-to-sand.png",
     energy_required = 4,
     allow_productivity = true,
     enabled = false,
@@ -71,6 +73,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gravel-crushing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/gravel-to-sand.png",
     energy_required = 2,
     enabled = false,
     category = "pm-crushing",
@@ -386,7 +390,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solder-case",
-    energy_required = 6,
+    energy_required = 3,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -469,11 +473,11 @@ data:extend({
     order = "db",
     ingredients =
     {
-      PM.ingredient("coal", 8),
+      PM.ingredient("coal", 9),
     },
     results =
     {
-      PM.product("pm-coke", 5)
+      PM.product("pm-coke", 6)
     }
   },
   {
@@ -680,7 +684,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solder-wire",
-    energy_required = 1,
+    energy_required = 1.5,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -973,8 +977,8 @@ data:extend({
     enabled = false,
     category = "chemistry",
     subgroup = "pm-acetonitrile-rnm",
-    main_product = "pm-trace-acetonitrile",
     order = "a",
+    main_product = "pm-trace-acetonitrile",
     ingredients =
     {
       PM.ingredient("pm-ammonia-gas", 20, "fluid"),
@@ -1147,7 +1151,7 @@ data:extend({
     results =
     {
       PM.product("pm-CISD2", 4, "fluid"),
-      PM.product_range_chance("pm-zinc-plate", 2, 4, 0.2),
+      PM.product_range_chance("pm-zinc-plate", 2, 4, 0.45),
       PM.product_chance("pm-ferrum", 3, 0.4)
     }
   },
@@ -1163,7 +1167,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-heavy-lubricant", 8, "fluid"),
+      PM.ingredient("pm-heavy-lubricant", 6, "fluid"),
       PM.ingredient("pm-basic-wiring", 10),
       PM.ingredient("engine-unit", 1),
       PM.ingredient("advanced-circuit", 2),
@@ -1200,7 +1204,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-flux-container",
-    energy_required = 2,
+    energy_required = 1.5,
     enabled = false,
     subgroup = "pm-catalysts",
     order = "g",
@@ -1216,18 +1220,20 @@ data:extend({
   {
     type = "recipe",
     name = "pm-filled-flux-container",
-    energy_required = 4,
+    energy_required = 3,
     enabled = false,
     subgroup = "pm-catalysts",
     order = "ga",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-flux-container", 1),
-      PM.ingredient("pm-sand", 6),
+      PM.ingredient("pm-sand", 4),
       PM.ingredient("pm-coke", 2),
       PM.ingredient("pm-flourine", 2)
     },
-    results = {
+    results = 
+    {
       PM.product("pm-filled-flux-container", 1)
     }
   },
@@ -1237,6 +1243,8 @@ data:extend({
     enabled = false,
     energy_required = 4,
     category = "chemistry",
+    subgroup = "pm-coolant",
+    order = "a",
     main_product = "pm-ethylene-glycol",
     allow_productivity = true,
     ingredients =
@@ -1287,7 +1295,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-panel-equipment-2", 1)
+      PM.product("pm-solar-panel-equipment-3", 1)
     }
   },
   {
@@ -2169,14 +2177,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-air-filter", 4),
-      PM.ingredient("pm-lithium-bromide", 8),
+      PM.ingredient("pm-air-filter", 2),
+      PM.ingredient("pm-lithium-bromide", 6),
       PM.ingredient("pm-gold-plate", 4),
       PM.ingredient("pm-silver-plate", 4)
     },
     results =
     {
-      PM.product("pm-advanced-air-filter", 1)
+      PM.product("pm-advanced-air-filter", 2)
     }
   },
   {
@@ -2190,10 +2198,10 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-trace-gas-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
+      PM.ingredient("pm-advanced-air-filter", 1),
+      PM.ingredient("pm-calcium-ore", 3),
       PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      PM.ingredient("pm-lightweight-framing", 3)
     },
     results =
     {
@@ -3024,7 +3032,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-ruby-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3044,7 +3052,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-citrine-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3064,7 +3072,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-emerald-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3084,7 +3092,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-sapphire-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3104,7 +3112,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3124,7 +3132,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-garnet-dust", 5),
-      PM.ingredient("sulfuric-acid", 10, "fluid"),
+      PM.ingredient("sulfuric-acid", 8, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 2)
     },
     results = 
@@ -3144,9 +3152,9 @@ data:extend({
     main_product = "pm-gunpowder",
     ingredients = 
     {
-      PM.ingredient("pm-carbon", 20),
-      PM.ingredient("sulfur", 6),
-      PM.ingredient("pm-seawater", 50, "fluid")
+      PM.ingredient("pm-carbon", 12),
+      PM.ingredient("sulfur", 4),
+      PM.ingredient("pm-seawater", 40, "fluid")
     },
     results = 
     {
@@ -3587,6 +3595,8 @@ data:extend({
     energy_required = 8,
     enabled = false,
     category = "chemistry",
+    subgroup = "pm-coolant",
+    order = "d",
     allow_productivity = true,
     main_product = "pm-polydimethylsiloxane",
     ingredients = 
@@ -3664,7 +3674,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-copper-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "a",
@@ -3681,7 +3691,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-aluminium-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "b",
@@ -3698,7 +3708,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tungsten-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "c",
@@ -3715,7 +3725,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-molybdenum-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "d",
@@ -3732,7 +3742,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gold-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "e",
@@ -3749,7 +3759,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-kasethal-heating-coil",
-    energy_required = 10,
+    energy_required = 7.5,
     enabled = false,
     subgroup = "pm-coils",
     order = "f",
@@ -3765,11 +3775,28 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-inconel-625-heating-coil",
+    energy_required = 7.5,
+    enabled = false,
+    subgroup = "pm-coils",
+    order = "f",
+    ingredients = 
+    {
+      PM.ingredient("pm-lightweight-framing", 5),
+      PM.ingredient("pm-inconel-625-plate", 10),
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-heating-coil", 1)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-calcium-sulfate-concrete",
     energy_required = 2.5,
     enabled = false,
     category = "crafting-with-fluid",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-concrete-slurry", 10, "fluid"),
       PM.ingredient("pm-heavyweight-framing", 8),
@@ -3787,11 +3814,11 @@ data:extend({
     energy_required = 5,
     enabled = false,
     category = "crafting-with-fluid",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-concrete-slurry", 20, "fluid"),
       PM.ingredient("pm-heavyweight-framing", 8),
-      PM.ingredient("pm-stainless-steel-alloy", 6),
+      PM.ingredient("pm-stainless-steel-alloy", 4),
       PM.ingredient("pm-calcium-sulfate", 4),
       PM.ingredient("pm-sand", 10)
     },
@@ -3809,7 +3836,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("advanced-circuit", 35),
-      PM.ingredient("pm-heavy-lubricant", 60, "fluid"),
+      PM.ingredient("pm-solid-lubricant", 60),
       PM.ingredient("pm-vulcanised-rubber", 24),
       PM.ingredient("pm-lightweight-framing", 30),
       PM.ingredient("pm-polyethylene-plastic", 24),
@@ -3836,8 +3863,8 @@ data:extend({
       },
     },
     energy_required = 5,
-    subgroup = "pm-modules",
-    order = "c",
+    subgroup = "pm-borosilicate-glassing",
+    order = "i",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -3867,13 +3894,13 @@ data:extend({
     },
     energy_required = 5,
     enabled = false,
-    subgroup = "pm-modules",
-    order = "g",
+    subgroup = "pm-borosilicate-glassing",
+    order = "j",
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-basic-wiring", 15),
       PM.ingredient("pm-gallium-arsenide", 3),
     },
     results =
@@ -3897,13 +3924,13 @@ data:extend({
     },
     energy_required = 5,
     enabled = false,
-    subgroup = "pm-modules",
-    order = "l",
+    subgroup = "pm-borosilicate-glassing",
+    order = "k",
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-basic-wiring", 15),
       PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
     },
     results =
@@ -3946,6 +3973,8 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     category = "crafting-with-fluid",
+    subgroup = "pm-borosilicate-glassing",
+    order = "d",
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
@@ -3971,7 +4000,8 @@ data:extend({
       },
     },
     energy_required = 10,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-borosilicate-glassing",
+    order = "g",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -4002,6 +4032,8 @@ data:extend({
     enabled = false,
     energy_required = 20,
     allow_productivity = true,
+    subgroup = "pm-borosilicate-glassing",
+    order = "h",
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 12),
@@ -4028,7 +4060,8 @@ data:extend({
       },
     },
     enabled = false,
-    subgroup = "pm-intermediates",
+    subgroup = "pm-borosilicate-glassing",
+    order = "f",
     energy_required = 7,
     allow_productivity = true,
     ingredients =
@@ -4043,7 +4076,6 @@ data:extend({
       PM.product("pm-vacuum-tube", 1)
     }
   },
-
   {
     type = "recipe",
     name = "pm-incendiary-rocket",
@@ -4059,5 +4091,65 @@ data:extend({
     {
       PM.product("pm-incendiary-rocket", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitric-oxide",
+    enabled = false,
+    energy_required = 3,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-nitric-oxide",
+    ingredients =
+    {
+      PM.ingredient("pm-ammonia-gas", 5, "fluid"),
+      PM.ingredient("pm-platinum-plate", 2),
+      PM.ingredient("pm-oxygen-gas", 12, "fluid")
+    },
+    results =
+    {
+      PM.product_chance("pm-platinum-plate", 2, 0.85),
+      PM.product("pm-nitric-oxide", 5, "fluid"),
+      PM.product("water", 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitric-acid",
+    enabled = false,
+    energy_required = 6,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-nitric-acid",
+    ingredients =
+    {
+      PM.ingredient("pm-nitric-oxide", 7.5, "fluid"),
+      PM.ingredient("water", 15, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-nitric-acid", 5, "fluid"),
+      PM.product_range("pm-hydrogen-gas", 6, 15, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-aqua-regia",
+    enabled = false,
+    energy_required = 6,
+    category = "oil-processing",
+    allow_productivity = true,
+    main_product = "pm-aqua-regia",
+    ingredients = 
+    {
+      PM.ingredient("pm-nitric-acid", 10, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 30, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-aqua-regia", 10, "fluid"),
+      PM.product("water", 7.5, "fluid"),
+      PM.product_range("pm-nitrosyl-chloride", 3, 5, "fluid")
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

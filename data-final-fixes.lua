@@ -7,12 +7,7 @@ require("compatibility.mini-trains")
 -- HACK: temporary
 local PM = require("library")
 data:extend{
-	{
-		type = "recipe",
-		name = "pm-water-coolant-burn",
-		auto_recycle = false,
-		category = "pm-reactor-coolant-burning",
-		-- We want the contents of the recipe to be how much fluid it takes to cool it for 50kJ
+	-- We want the contents of the recipe to be how much fluid it takes to cool it for 50kJ
 		-- That means the 'time' of the recipe needs to 1s for each liquid heat it produces
 
 		-- If a granularity of 50kJ isn't enough, change
@@ -22,30 +17,58 @@ data:extend{
 		--	80/s for 40MW when it's 10x
 		--	8/s for 40MW when it's 100x
 		-- 	1.6/s for 40MW when it's 500x
-		energy_required = 10,
-		ingredients = {
-			PM.ingredient("water", 1, "fluid")
-		},
-		icons = {util.empty_icon()},
-		-- main_product = "pm-liquid-heat",
-		results = {
-			PM.product("pm-liquid-heat", 10, "fluid")
-		}
-	}--[[@as data.RecipePrototype]],
 	{
 		type = "recipe",
 		name = "pm-water-coolant-burn-with-exhuast",
+		hidden = true,
+		hidden_in_factoriopedia = true,
 		auto_recycle = false,
 		category = "pm-reactor-coolant-burning-with-exhuast",
 		energy_required = 10,
 		ingredients = {
-			PM.ingredient("water", 1, "fluid")
+			PM.ingredient("water", 0.2, "fluid")
 		},
 		icons = {util.empty_icon()},
 		-- main_product = "pm-liquid-heat",
 		results = {
 			PM.product("pm-liquid-heat", 10, "fluid", 2),
 			PM.product("steam", 1, "fluid", 3),
+		}
+	}--[[@as data.RecipePrototype]],
+	{
+		type = "recipe",
+		name = "pm-coolant-burn-with-exhuast",
+		hidden = true,
+		hidden_in_factoriopedia = true,
+		auto_recycle = false,
+		category = "pm-reactor-coolant-burning-with-exhuast",
+		energy_required = 10,
+		ingredients = {
+			PM.ingredient("pm-coolant", 0.1, "fluid")
+		},
+		icons = {util.empty_icon()},
+		-- main_product = "pm-liquid-heat",
+		results = {
+			PM.product("pm-liquid-heat", 10, "fluid", 2),
+			PM.product("pm-hot-coolant", 0.1, "fluid", 3),
+		}
+	}--[[@as data.RecipePrototype]],
+		{
+		type = "recipe",
+		name = "pm-light-coolant-burn-with-exhuast",
+		hidden = true,
+		hidden_in_factoriopedia = true,
+		auto_recycle = false,
+		category = "pm-reactor-coolant-burning-with-exhuast",
+		energy_required = 10,
+		ingredients = {
+			PM.ingredient("pm-light-coolant", 0.1, "fluid")
+		},
+		icons = {util.empty_icon()},
+		-- main_product = "pm-liquid-heat",
+		results = {
+			PM.product("pm-liquid-heat", 10, "fluid", 2),
+			PM.product("pm-hot-light-coolant", 0.1, "fluid", 3),
 		}
 	}--[[@as data.RecipePrototype]],
 	{

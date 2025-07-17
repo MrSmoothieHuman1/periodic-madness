@@ -114,7 +114,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/vanadium-oxide-catalyst.png",
     subgroup = "pm-catalysts",
     order = "b",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -123,7 +123,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/palladium-catalyst.png",
     subgroup = "pm-catalysts",
     order = "c",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -132,7 +132,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/cobalt-catalyst.png",
     subgroup = "pm-catalysts",
     order = "d",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -141,7 +141,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/nickel-tungsten-catalyst.png",
     subgroup = "pm-catalysts",
     order = "da",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -150,7 +150,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/CuZnAl-catalyst.png",
     subgroup = "pm-catalysts",
     order = "e",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -159,7 +159,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/yttrium-catalyst.png",
     subgroup = "pm-catalysts",
     order = "f",
-    stack_size = 25
+    stack_size = 50
   },
   {
     type = "item",
@@ -176,7 +176,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/catalyst-container.png",
     subgroup = "pm-catalysts",
     order = "a",
-    stack_size = 10
+    stack_size = 25
   },
   {
     type = "item",
@@ -264,7 +264,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/patina.png",
     subgroup = "pm-copper-tm",
-    order = "x",
+    order = "h",
     stack_size = 500
   },
   {
@@ -279,7 +279,7 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/ferrum-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-iron-tm",
-    order = "x",
+    order = "h",
     stack_size = 500
   },
   {
@@ -1189,7 +1189,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/air-filter-2.png",
     subgroup = "pm-air-filters-rnm",
     order = "c",
@@ -1198,7 +1198,7 @@ data:extend({
   {
     type = "item",
     name = "pm-dirty-advanced-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/dirty-air-filter-2.png",
     subgroup = "pm-air-filters-rnm",
     order = "d",
@@ -1207,7 +1207,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-oxygen-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/oxygen-air-filter-2.png",
     subgroup = "pm-oxygen-rnm",
     order = "b",
@@ -1216,7 +1216,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-nitrogen-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/nitrogen-air-filter-2.png",
     subgroup = "pm-nitrogen-rnm",
     order = "b",
@@ -1225,7 +1225,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-chlorine-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/chlorine-air-filter-2.png",
     subgroup = "pm-chlorine-rnm",
     order = "b",
@@ -1234,7 +1234,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-carbon-dioxide-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/carbon-dioxide-air-filter-2.png",
     subgroup = "pm-carbon-rnm",
     order = "b",
@@ -1243,7 +1243,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-trace-gas-air-filter",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/trace-gas-air-filter-2.png",
     subgroup = "pm-trace-gas-rnm",
     order = "b",
@@ -1511,6 +1511,24 @@ data:extend({
     order = "a",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-uhrlumin-precursor-billet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/uhrlumin-precursor-billet.png",
+    subgroup = "pm-uhrlumin",
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-inconel-625-precursor-billet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    subgroup = "pm-glassing",
+    order = "a",
+    stack_size = 100
+  },
 
 
   {
@@ -1558,7 +1576,7 @@ data:extend({
     name = "pm-personal-robocharger-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robocharger-equipment-icon.png",
     icon_size = 64,
-    place_as_equipment_result = "pm-personal-robostasher-equipment",
+    place_as_equipment_result = "pm-personal-robocharger-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
     stack_size = 20
@@ -1568,7 +1586,7 @@ data:extend({
     name = "pm-personal-robocharger-mk2-equipment",
     icon = "__periodic-madness__/graphics/equipment/personal-robocharger-mk2-equipment-icon.png",
     icon_size = 64,
-    place_as_equipment_result = "pm-personal-robostasher-mk2-equipment",
+    place_as_equipment_result = "pm-personal-robocharger-mk2-equipment",
     subgroup = "equipment",
     order = "e[robotics]-a[personal-roboport-equipment]",
     stack_size = 20
@@ -1592,6 +1610,29 @@ data:extend({
     place_as_equipment_result = "pm-lithium-sulfur-battery-mk2-equipment",
     subgroup = "pm-modular-storage",
     order = "c",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "pm-lunar-panel-equipment",
+    icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2-icon.png",
+    icon_size = 64,
+    place_as_equipment_result = "pm-lunar-panel-equipment",
+    hidden = true,
+    hidden_from_factoriopedia = true,
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.panel-equipment-day"},
+        value = {"pm-tooltips.0%"}
+      },
+      {
+        name = {"pm-tooltips.lunar-equipment-night"},
+        value = {"pm-tooltips.75%"}
+      },
+    },
+    subgroup = "pm-modular-power",
+    order = "b",
     stack_size = 20
   },
   {
@@ -1638,6 +1679,10 @@ data:extend({
     type = "fuel-category",
     name = "pm-strontium" 
   },
+  {
+    type = "fuel-category",
+    name = "pm-strontium-fuel-rods"
+  }
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"
 data.raw["item"]["iron-gear-wheel"].order = "a"
@@ -1698,9 +1743,6 @@ data.raw["projectile"]["destroyer-capsule"].action =
 data.raw["item"]["solid-fuel"].fuel_emissions_multiplier = 1.5
 data.raw["item"]["solid-fuel"].fuel_acceleration_multiplier = 1
 data.raw["item"]["solid-fuel"].fuel_top_speed_multiplier = 1.1
-
-data.raw["gun"]["shotgun"].attack_parameters.min_range = 0.5
-data.raw["gun"]["combat-shotgun"].attack_parameters.min_range = 1.25
 
 data.raw["item"]["copper-cable"].subgroup = "pm-wires"
 data.raw["item"]["copper-cable"].order = "a"

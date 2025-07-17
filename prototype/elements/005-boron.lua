@@ -49,6 +49,30 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-boron",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/boron.png",
+    subgroup = "pm-boron-mt",
+    order = "d",
+    default_temperature = 15,
+    base_color = {r = 0.67, g = 0.36, b = 0},
+    flow_color = {r = 0.67, g = 0.36, b = 0},
+  },
+  {
+    type = "fluid",
+    name = "pm-diluted-boric-acid",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/diluted-boric-acid.png",
+    subgroup = "pm-boron-mt",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.67, g = 0.36, b = 0},
+    flow_color = {r = 0.67, g = 0.36, b = 0},
+    auto_barrel = false
+  },
+
+  {
     type = "recipe",
     name = "pm-sassolite",
     enabled = false,
@@ -169,7 +193,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-boric-oxide", 4)
+      PM.product("pm-boric-oxide", 5)
     }
   } --[[@as data.RecipePrototype]]
 })

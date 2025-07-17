@@ -19,6 +19,7 @@ local pm_lab_inputs =
   "pm-alkali-metal-science-pack",
   "pm-metalloid-science-pack",
   "pm-alkaline-earth-metal-science-pack",
+  "pm-advanced-advanced-advanced-transition-metal-science-pack",
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
@@ -1702,7 +1703,7 @@ data:extend({
       usage_priority = "secondary-input",
 
     },
-    energy_usage = "250kW",
+    energy_usage = "175kW",
     graphics_set = 
   {
     animation =
@@ -1863,6 +1864,8 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.659, g = 0.106, b = 0.106},
+    fast_replaceable_group = "pm-molteninator",
+    next_upgrade = "pm-molten-inator-2",
     working_sound =
     {
       sound =
@@ -1887,13 +1890,14 @@ data:extend({
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
     crafting_categories = { "pm-moltening" },
-    energy_usage = "650kW",
+    energy_usage = "320kW",
     crafting_speed = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 10},
+      drain = "13kW"
     },
     graphics_set = 
   {
@@ -1957,6 +1961,8 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.106, g = 0.647, b = 0.659},
+    fast_replaceable_group = "pm-coldinator",
+    next_upgrade = "pm-cold-inator-2",
     working_sound =
     {
       sound =
@@ -2053,6 +2059,8 @@ data:extend({
     dying_explosion = "steel-furnace-explosion",
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.659, g = 0.106, b = 0.106},
+    fast_replaceable_group = "pm-molteninator",
+    next_upgrade = "pm-molten-inator-3",
     module_slots = 1,
     working_sound =
     {
@@ -2078,13 +2086,14 @@ data:extend({
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
     crafting_categories = { "pm-moltening" },
-    energy_usage = "750kW",
+    energy_usage = "640kW",
     crafting_speed = 1.4 + 0.1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 8},
+      drain = "14kW"
     },
     graphics_set = 
   {
@@ -2149,6 +2158,8 @@ data:extend({
     allowed_effects = PM.all_effects(),
     map_color = {r = 0.106, g = 0.647, b = 0.659},
     module_slots = 1,
+    fast_replaceable_group = "pm-coldinator",
+    next_upgrade = "pm-cold-inator-3",
     working_sound =
     {
       sound =
@@ -2687,7 +2698,7 @@ data:extend({
       fade_out_ticks = 20
     },
     module_slots = 2,
-    allowed_effects = PM.all_effects(),
+    allowed_effects = PM.all_effects_but("quality", "productivity"),
     source_inventory_size = 1,
     result_inventory_size = 1,
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
@@ -4925,6 +4936,13 @@ data:extend({
     dying_explosion = "heat-exchanger-explosion",
     mode = "output-to-separate-pipe",
     fast_replaceable_group = "pm-heat-exchangers",
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.max-temperature"},
+        value = {"pm-tooltips.temp-2500"}
+      },
+    },
     resistances =
     {
       {
@@ -7328,7 +7346,7 @@ data:extend({
   default_output_signal = {type = "virtual", name = "signal-G"}
 }--[[@as data.WallPrototype]],
 { --MARK: RTG
-  type = "reactor",
+  type = "burner-generator",
   name = "pm-RTG",
   icon = "__periodic-madness__/graphics/icons/buildings/RTG.png",
   icon_size = 64,
@@ -7337,12 +7355,11 @@ data:extend({
   max_health = 1200,
   corpse = "nuclear-reactor-remnants",
   dying_explosion  = "nuclear-reactor-explosion",
-  consumption = "20MW",
-  neighbour_bonus = 0.05,
-  energy_source =
+  max_power_output = "20MW",
+  burner =
   {
     type = "burner",
-    fuel_categories = {"pm-polonium"},
+    fuel_categories = {"pm-strontium", "pm-strontium-fuel-rods"},
     effectivity = 2,
     fuel_inventory_size = 2,
     burnt_inventory_size = 2,
@@ -7353,62 +7370,67 @@ data:extend({
       maximum_intensity = 0.95
     }
   },
+  energy_source = 
+  {
+    type = "electric",
+    buffer_capacity = "20MJ",
+    usage_priority = "secondary-output",
+  },
   collision_box = { { -0.9, -0.9 }, { 0.9, 0.9} },
   selection_box = { { -1, -1 }, { 1, 1 } },
-  picture =
+  animation =
   {
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
-        width = 320,
-        height = 320,
+        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG.png",
+        width = 128,
+        height = 165,
         line_length = 6,
         frame_count = 24,
+        animation_speed = 0.42,
         scale = 0.5,
-        shift = util.by_pixel(-5, -7)
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-        width = 320,
-        height = 320,
+        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-shadow.png",
+        width = 169,
+        height = 118,
+        scale = 0.5,
         line_length = 1,
         frame_count = 1,
         repeat_count = 24,
-        scale = 0.5,
-        shift = { 1.625, 0 },
+        shift = util.by_pixel( 22, 18 ),
         draw_as_shadow = true
       }
     }
   },
-  heat_buffer =
+  idle_animation =
   {
-    max_temperature = 0,
-    specific_heat = "10MJ",
-    max_transfer = "10GW",
-    minimum_glow_temperature = 0,
-    min_working_temperature = 0,
-    default_temperature = 0,
-    connections = {},
-    working_sound =
+    layers =
     {
-      sound =
       {
-        {
-          filename = "__base__/sound/nuclear-reactor-1.ogg",
-          volume = 0.55
-        },
-        {
-          filename = "__base__/sound/nuclear-reactor-2.ogg",
-          volume = 0.55
-        }
+        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-idle.png",
+        width = 128,
+        height = 165,
+        line_length = 1,
+        frame_count = 1,
+        repeat_count = 24,
+        scale = 0.5,
       },
-      max_sounds_per_type = 3,
-      fade_in_ticks = 4,
-      fade_out_ticks = 20
-    },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-shadow.png",
+        width = 169,
+        height = 118,
+        scale = 0.5,
+        line_length = 1,
+        frame_count = 1,
+        repeat_count = 24,
+        shift = util.by_pixel( 22, 18 ),
+        draw_as_shadow = true
+      }
+    }
   },
-}--[[@as data.ReactorPrototype]],
+},
 {
   type = "solar-panel",
   name = "pm-solar-panel-3",
@@ -7480,6 +7502,7 @@ data:extend({
   allowed_effects = PM.all_effects(),
   map_color = {r = 0.659, g = 0.106, b = 0.106},
   module_slots = 2,
+  fast_replaceable_group = "pm-molteninator",
   working_sound =
   {
     sound =
@@ -7591,6 +7614,8 @@ data:extend({
   allowed_effects = PM.all_effects(),
   map_color = {r = 0.106, g = 0.647, b = 0.659},
   module_slots = 2,
+  fast_replaceable_group = "pm-coldinator",
+  next_upgrade = "pm-cold-inator-3",
   working_sound =
   {
     sound =
@@ -8252,7 +8277,7 @@ fluid_boxes =
 {
   type = "assembling-machine",
   name = "pm-cooling-plant",
-  icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/cooling-plant.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
   minable = { mining_time = 0.5, result = "pm-cooling-plant" },
@@ -8272,35 +8297,125 @@ fluid_boxes =
   alert_icon_shift = util.by_pixel(-3, -12),
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
-  graphics_set = 
-{
-  animations =
+  graphics_set =
   {
-    layers =
+    animation =
     {
+      north =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant.png",
-        priority = "high",
-        width = 214,
-        height = 226,
-        shift = util.by_pixel(0, -4),
-        scale = 0.5
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            priority = "high",
+            width = 209,
+            height = 173,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 32,
+            shift = util.by_pixel(32, 3),
+            draw_as_shadow = true,
+            scale = 0.5
+          },
+        }
       },
+      south =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
-        priority = "high",
-        width = 226,
-        height = 214,
-        draw_as_shadow = true,
-        shift = util.by_pixel(40 - 10, -4),
-        scale = 0.5
-      }
-    }
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-south.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            priority = "high",
+            width = 209,
+            height = 173,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 32,
+            shift = util.by_pixel(32, 3),
+            draw_as_shadow = true,
+            scale = 0.5
+          },
+        }
+      },
+      east =
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-east.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            priority = "high",
+            width = 209,
+            height = 173,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 32,
+            shift = util.by_pixel(32, 3),
+            draw_as_shadow = true,
+            scale = 0.5
+          },
+        }
+      },
+      west =
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-west.png",
+            priority = "high",
+            width = 192,
+            height = 209,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            priority = "high",
+            width = 209,
+            height = 173,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 32,
+            shift = util.by_pixel(32, 3),
+            draw_as_shadow = true,
+            scale = 0.5
+          },
+        }
+      },
+    },
   },
-},
-  crafting_categories = { "pm-cooling" },
+  allowed_effects = PM.all_effects(),
+  module_slots = 2,
+  crafting_categories = {"pm-cooling"},
   crafting_speed = 1,
-  energy_usage = "230kW",
+  energy_usage = "240kW",
   energy_source =
   {
     type = "electric",
@@ -8326,21 +8441,21 @@ fluid_boxes =
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+      pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 1}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.south--[[@as int]], position = {-1, 1}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {1, -1}}},
       secondary_draw_orders = { north = -1 }
     },
   },
@@ -8664,15 +8779,19 @@ data.raw["boiler"]["heat-exchanger"].energy_source.min_working_temperature = 400
 data.raw["boiler"]["heat-exchanger"].energy_source.minimum_glow_temperature = 250
 data.raw["boiler"]["heat-exchanger"].energy_source.max_temperature = 750
 data.raw["boiler"]["heat-exchanger"].target_temperature = 750
+data.raw["boiler"]["heat-exchanger"].custom_tooltip_fields = 
+{
+  {
+    name = {"pm-tooltips.max-temperature"},
+    value = {"pm-tooltips.temp-750"}
+    },
+}
 
 data.raw["assembling-machine"]["chemical-plant"].module_slots = 2
 data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "pm-chemical-plant"
 data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "pm-chemical-plant-2"
 
 data.raw["mining-drill"]["burner-mining-drill"].energy_usage = "115kW"
-
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 750
-data.raw["heat-pipe"]["heat-pipe"].map_color = {r = 0.6, g = 0.506, b = 0.353}
 
 data.raw["combat-robot"]["defender"].time_to_live = 60 * 60
 
@@ -8729,7 +8848,7 @@ data.raw["furnace"]["electric-furnace"].icons_positioning =
 data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
 data.raw["furnace"]["electric-furnace"].energy_source.drain = "0kW"
-data.raw["furnace"]["electric-furnace"].result_inventory_size = 2
+data.raw["furnace"]["electric-furnace"].energy_source.emissions_per_minute = {pollution = 0.5}
 
-data.raw["furnace"]["stone-furnace"].result_inventory_size = 2
-data.raw["furnace"]["steel-furnace"].result_inventory_size = 2
+data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
+data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 10

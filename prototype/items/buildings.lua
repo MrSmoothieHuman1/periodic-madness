@@ -187,8 +187,8 @@ data:extend({
     name = "pm-molten-inator",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
-    subgroup = "production-machine",
-    order = "f",
+    subgroup = "pm-molten-machine",
+    order = "a",
     place_result = "pm-molten-inator",
     stack_size = 100
   },
@@ -197,8 +197,8 @@ data:extend({
     name = "pm-cold-inator",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cold-inator.png",
-    subgroup = "production-machine",
-    order = "g",
+    subgroup = "pm-molten-machine",
+    order = "b",
     place_result = "pm-cold-inator",
     stack_size = 100
   },
@@ -207,8 +207,8 @@ data:extend({
     name = "pm-molten-inator-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator-2.png",
-    subgroup = "production-machine",
-    order = "f",
+    subgroup = "pm-molten-machine",
+    order = "c",
     place_result = "pm-molten-inator-2",
     stack_size = 100
   },
@@ -217,8 +217,8 @@ data:extend({
     name = "pm-cold-inator-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cold-inator-2.png",
-    subgroup = "production-machine",
-    order = "g",
+    subgroup = "pm-molten-machine",
+    order = "d",
     place_result = "pm-cold-inator-2",
     stack_size = 100
   },
@@ -227,8 +227,8 @@ data:extend({
     name = "pm-molten-inator-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator-3.png",
-    subgroup = "production-machine",
-    order = "h",
+    subgroup = "pm-molten-machine",
+    order = "e",
     place_result = "pm-molten-inator-3",
     stack_size = 100
   },
@@ -237,8 +237,8 @@ data:extend({
     name = "pm-cold-inator-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cold-inator-3.png",
-    subgroup = "production-machine",
-    order = "i",
+    subgroup = "pm-molten-machine",
+    order = "f",
     place_result = "pm-cold-inator-3",
     stack_size = 100
   },
@@ -430,7 +430,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-3.png",
     subgroup = "energy",
-    order = "f",
+    order = "e",
     place_result = "pm-solar-panel-3",
     stack_size = 50,
   },
@@ -479,7 +479,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
     subgroup = "energy",
     order = "f",
-    place_result = "pm-polonium-reactor",
+    --place_result = "pm-polonium-reactor",
     stack_size = 20
   },
   {
@@ -678,6 +678,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
     place_result = "pm-express-inserter",
+    subgroup = "pm-express-inserters",
+    order = "a",
     stack_size = 50
   },
   {
@@ -686,6 +688,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-long-handed-inserter.png",
     place_result = "pm-express-long-handed-inserter",
+    subgroup = "pm-express-inserters",
+    order = "b",
     stack_size = 50
   },
   {
@@ -694,6 +698,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
     place_result = "pm-express-bulk-inserter",
+    subgroup = "pm-express-inserters",
+    order = "c",
     stack_size = 50
   },
   {
@@ -701,6 +707,8 @@ data:extend({
     name = "pm-beacon-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
+    subgroup = "module",
+    order = "b",
     place_result = "pm-beacon-2",
     stack_size = 50
   },
@@ -708,7 +716,9 @@ data:extend({
     type = "item",
     name = "pm-hub-beacon",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
+    subgroup = "module",
+    order = "c",
     place_result = "pm-hub-beacon",
     stack_size = 50
   },
@@ -716,7 +726,9 @@ data:extend({
     type = "item",
     name = "pm-proximity-beacon",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/express-bulk-inserter.png",
+    icon = "__base__/graphics/icons/beacon.png",
+    subgroup = "module",
+    order = "d",
     place_result = "pm-proximity-beacon",
     stack_size = 50
   },
@@ -744,7 +756,7 @@ data:extend({
     type = "item",
     name = "pm-cooling-plant",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-1.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/cooling-plant.png",
     subgroup = "production-machine",
     place_result = "pm-cooling-plant",
     stack_size = 50,
@@ -764,7 +776,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-3.png",
     subgroup = "pm-water-machine",
-    order = "e",
+    order = "ea",
     place_result = "pm-washing-plant-3",
     stack_size = 50,
   },
@@ -773,6 +785,8 @@ data:extend({
     name = "pm-roboport-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/roboport-2.png",
+    subgroup = "logistic-network",
+    order = "c[signal]-b[roboport]",
     place_result = "pm-roboport-2",
     stack_size = 10
   },
@@ -781,6 +795,8 @@ data:extend({
     name = "pm-construction-repeater",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/construction-repeater.png",
+    subgroup = "logistic-network",
+    order = "c[signal]-c[roboport]",
     place_result = "pm-construction-repeater",
     stack_size = 25
   },
@@ -789,6 +805,8 @@ data:extend({
     name = "pm-logistic-repeater",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/logistic-repeater.png",
+    subgroup = "logistic-network",
+    order = "c[signal]-d[roboport]",
     place_result = "pm-logistic-repeater",
     stack_size = 25
   },
@@ -797,8 +815,20 @@ data:extend({
     name = "pm-longer-handed-inserter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/longer-handed-inserter.png",
+    subgroup = "inserter",
+    order = "da",
     place_result = "pm-longer-handed-inserter",
     stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-coil-heater",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/coil-heater.png",
+    subgroup = "pm-coils",
+    order = "x",
+    place_result = "pm-coil-heater",
+    stack_size = 20
   },
 })
 
@@ -851,3 +881,5 @@ data.raw["recipe"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-exchanger"].order = "Aa"
 
 data.raw["item"]["pipe-to-ground"].stack_size = 100
+
+data.raw["item"]["nuclear-reactor"].place_result = nil

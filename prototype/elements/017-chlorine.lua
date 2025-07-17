@@ -1,6 +1,75 @@
 local PM = require("library")
 data:extend({
 
+{
+    type = "fluid",
+    name = "pm-hydrochloric-acid",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "j",
+    default_temperature = 15,
+    base_color = {r = 0, g = 0.8, b = 0.34},
+    flow_color = {r = 0, g = 0.8, b = 0.34}
+  },
+  {
+    type = "fluid",
+    name = "pm-chlorine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/chlorine.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0, g = 1, b = 0},
+    flow_color = {r = 0, g = 1, b = 0}
+  },
+  {
+    type = "fluid",
+    name = "pm-methyl-chloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/methyl-chloride.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "k",
+    default_temperature = 15,
+    base_color = {r = 0.33, g = 0.66, b = 0.32},
+    flow_color = {r = 0.33, g = 0.66, b = 0.32},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-carbon-tetrachloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/carbon-tetrachloride.png",
+    subgroup = "fluid",
+    default_temperature = 15,
+    base_color = {r = 0.33, g = 0.99, b = 0.32},
+    flow_color = {r = 0.33, g = 0.99, b = 0.32},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-chloronated-solution",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/chloronated-solution.png",
+    subgroup = "pm-plastics",
+    order = "j",
+    default_temperature = 15,
+    base_color = {r = 0.66, g = 0.99, b = 0.66},
+    flow_color = {r = 0.66, g = 0.99, b = 0.66},
+    auto_barrel = false
+  },
+  {
+    type = "fluid",
+    name = "pm-chloroform",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/chloroform.png",
+    subgroup = "fluid",
+    default_temperature = 15,
+    base_color = {r = 0.66, g = 0.99, b = 0.66},
+    flow_color = {r = 0.66, g = 0.99, b = 0.66},
+    auto_barrel = false
+  },
+
   {
     type = "recipe",
     name = "pm-chlorine-air-filter",
@@ -31,10 +100,10 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-chlorine-air-filter", 1),
-      PM.ingredient("pm-gold-plate", 3),
+      PM.ingredient("pm-advanced-air-filter", 1),
+      PM.ingredient("copper-plate", 3),
       PM.ingredient("pm-iodine", 2),
-      PM.ingredient("pm-lightweight-framing", 6)
+      PM.ingredient("pm-lightweight-framing", 3)
     },
     results =
     {
@@ -107,7 +176,7 @@ data:extend({
     order = "f",
     category = "pm-evaporation",
     enabled = false,
-    energy_required = 0.74 + 0.01,
+    energy_required = 0.75,
     ingredients =
     {
       PM.ingredient("pm-seawater", 50, "fluid")
@@ -128,7 +197,7 @@ data:extend({
     category = "pm-evaporation",
     hide_from_player_crafting = true,
     enabled = false,
-    energy_required = 0.74 + 0.01,
+    energy_required = 0.75,
     allow_productivity = true,
     ingredients =
     {

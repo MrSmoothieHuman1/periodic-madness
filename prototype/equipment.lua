@@ -103,6 +103,33 @@ data:extend({
     charging_threshold_distance = 0,
     categories = {"armor"}
   },
+  {
+    type = "solar-panel-equipment",
+    name = "pm-lunar-panel-equipment",
+    performance_at_day = 0,
+    performance_at_night = 0.75,
+    sprite =
+    {
+      filename = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2.png",
+      width = 64,
+      height = 64,
+      priority = "medium",
+      scale = 0.5
+    },
+    shape =
+    {
+      width = 1,
+      height = 1,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "primary-output"
+    },
+    power = "45kW",
+    categories = { "armor", "pm-bio-armor" }
+  },
 
   {
     type = "roboport-equipment",
@@ -342,7 +369,7 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].burner =
 {
   type = "burner",
   usage_priority = "primary-output",
-  fuel_categories = {"pm-fuel-rods"},
+  fuel_categories = {"pm-fuel-rods", "pm-strontium-fuel-rods"},
   fuel_inventory_size = 1,
   burnt_inventory_size = 1,
 }

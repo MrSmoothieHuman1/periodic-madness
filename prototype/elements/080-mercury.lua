@@ -3,6 +3,22 @@ data:extend({
 
   {
     type = "item",
+    name = "pm-mercury-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/mercury-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-mercury-tm",
+    order = "a",
+    stack_size = 200,
+  },
+  {
+    type = "item",
     name = "pm-mercury-powder",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/mercury-powder.png",
@@ -23,7 +39,7 @@ data:extend({
     type = "item",
     name = "pm-solid-mercury",
     icon_size = 64,
-    icon = "__base__/graphics/icons/solid-fuel.png",
+    icon = "__periodic-madness__/graphics/icons/solid-mercury.png",
     subgroup = "pm-mercury-tm",
     order = "d",
     stack_size = 100
@@ -32,7 +48,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-cinnabar-processing",
+    name = "pm-mercury-ore",
     icon_size = 64,
     icons =
     {
@@ -96,11 +112,11 @@ data:extend({
     {
       PM.ingredient("pm-mercury-powder", 4),
       PM.ingredient("pm-red-mercury", 4),
-      PM.ingredient("water", 50, "fluid")
+      PM.ingredient("water", 20, "fluid")
     },
     results =
     {
-      { type = "fluid", name = "pm-liquid-mercury", amount = 50 },
+      { type = "fluid", name = "pm-liquid-mercury", amount = 25 },
     }
   } --[[@as data.RecipePrototype]],
   {

@@ -15,6 +15,7 @@ data:extend({
     time_before_removed = 60 * 60 * 15,     -- 15 minutes
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
+    hidden_in_factoriopedia = true,
     animation = make_rotated_animation_variations_from_sheet(2,
       {
         filename =
@@ -46,6 +47,7 @@ data:extend({
     time_before_removed = 60 * 60 * 15,     -- 15 minutes
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
+    hidden_in_factoriopedia = true,
     animation = make_rotated_animation_variations_from_sheet(3,
       {
         filename =
@@ -77,6 +79,7 @@ data:extend({
     time_before_removed = 60 * 60 * 15,     -- 15 minutes
     final_render_layer = "remnants",
     remove_on_tile_placement = false,
+    hidden_in_factoriopedia = true,
     animation = make_rotated_animation_variations_from_sheet(3,
       {
         filename =

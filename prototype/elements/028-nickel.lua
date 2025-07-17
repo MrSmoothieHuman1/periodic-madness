@@ -59,6 +59,47 @@ data:extend({
     order = "d",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-nickel-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/nickel-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-nickel-tm",
+    order = "b",
+    stack_size = 200
+  },
+
+  {
+    type = "fluid",
+    name = "pm-matte-nickel",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/matte-nickel.png",
+    subgroup = "pm-advanced-nickel-tm",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-mixed-nickel-concentrate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-nickel-concentrate.png",
+    subgroup = "pm-advanced-nickel-tm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
 
   {
     type = "recipe",
@@ -114,7 +155,7 @@ data:extend({
     results =
     {
       PM.product("pm-nickel-ore", 2),
-      PM.product_range_chance("sulfur", 1, 2, 0.75),
+      PM.product_range_chance("sulfur", 1, 2, 0.33),
     }
   },
   {
@@ -154,6 +195,106 @@ data:extend({
     results =
     {
       PM.product("pm-nickel-ore", 2),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nickel-chunk-plate",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -4 }
+      },
+    },
+    subgroup = "pm-nickel-tm",
+    order = "d",
+    category = "smelting",
+    enabled = true,
+    allow_decomposition = false,
+    energy_required = 3.2,
+    ingredients =
+    {
+      PM.ingredient("pm-nickel-chunk", 2)
+    },
+    results = {
+      PM.product("pm-nickel-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nickel-plate",
+    subgroup = "pm-nickel-tm",
+    order = "e",
+    category = "smelting",
+    energy_required = 3.2,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-nickel-ore", 1) },
+    results = {
+      PM.product("pm-nickel-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-nickel",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-nickel.png",
+        icon_size = 64,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
+        icon_size = 64,
+        scale = 0.22,
+        shift = {0, -7.5}
+      },
+    },
+    subgroup = "pm-nickel-tm",
+    order = "f",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-nickel-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-nickel", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nickel-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/nickel-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-nickel-tm",
+    order = "g",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-nickel", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-nickel-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
 

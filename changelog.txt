@@ -1,7 +1,68 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.000
+Date: 2025-12-07
+  The 2 months? you are insane Update:
+
+  Additions:
+    - Added Osmium.
+    - Added Iridium.
+    - Added Tantalum.
+    - Added Niobium.
+    - Added Selenium.
+    - Added Inconel 625! its current use is as a new type of heating coil, which is the only coil that can add productivity.
+    - Finally added nitric acid! unlocked in A-ATM science so i can actually use it for anything, it will replace some recipes use of nitrogen/fluids.
+    - Also added aqua regia, which is why nitric acid even got added! it was now or when i got to 0.8/0.9, so
+
+  Changes:
+    - Slightly nerfed research productivity.
+    - Changed barium nitrate to use nitric acid.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.503
+Date: 2025-14-07
+  The doing daily updates for the inflated download count, no other reason Update:
+
+  Changes:
+    - Changed concrete/refined concrete to take 4 heavyweight framing instead of 5.
+    - Lowered all crafting times of heating coils from 10s to 7.5s.
+    - Changed the tech icon for syngas processing to just the fluid icon for sygnas, as a slightly better placeholder.
+    - Reworked how research speed bonuses work to match with 0.7. (+10%, +10%, +20%, +20%, +40%, +40%, +60%, +60%, +80%, +80%, +100%, etc)
+    - Updated advanced transition metal refining's tech icon.
+    - Updated mercury vapour icon.
+
+  Fixes:
+    - Fixed ordering of recipes in advanced transition metal refining technology.
+    - Fixed gold/silver ore recipe icons.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.502
+Date: 2025-13-07
+  The 2 updates in one day that arent purely bugfixes? it must be christmas Update:
+
+  Changes:
+    - Finally modelled a cadmium plate, and updated the icons that use them.
+    - Updated cadmium tech icon.
+
+  Fixes:
+    - Fixed physical projectile 8 taking the wrong science packs.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.501
+Date: 2025-13-07
+  The in 1 day i did not think of a name for this either Update:
+
+  Changes:
+    - Yes! more changes! you thought .500 had more then enough? nuh uh
+    - Lowered power cost of fluid catalyst crackers from 250 to 175kw.
+    - Lowered crafting time of all oil cracking/reforming recipes from 4s to 2s.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.500
-Date: 2024-12-08
-  The Update:
+Date: 2025-12-07
+  The in 6 months i did not think of a name for this Update:
+
+  WARNING:
+    - you cannot place nuclear reactors, due to a crash turned save corruption that is occuring on the most recent factorio versions. I will release a patch that lets you place reactors again, once the issue is fixed.
 
   Additions:
     - Added Magnesium.
@@ -39,7 +100,7 @@ Date: 2024-12-08
     - Added primary production recipes of hydrogen, instead of having every recipe it appears in having it be a byproduct.
     - Added syngas, which can be produced from oil recipes or made from carbon.
     - Changed it so that certain buildings (greenhouses, bacteria incubators) cannot be used if there is too much pollution in the same chunk as them.
-    - Also changed it so that certain buildings (air filters) now require to be in polluted chunks.
+    - Also changed it so that certain buildings (air filterers) now require to be in polluted chunks.
     - Overhauled the production of the 4 starter metals (iron, copper, nickel, zinc). They now take two steps to produce instead of one, and cannot be made from TM ores anymore.
     - Added a building dedicated to making coolant, so that it can be prioritised in power, and not cause your base to explode. Once again, merciful god.
     - Added I.S.S.Y - a spiderling that is built around its movement capabilities. It has low offensive capabilites, a slightly smaller equipment grid compared to its predeccessor - but is a lot faster. It has a discharge defense and a submachine gun built into it.
@@ -62,6 +123,17 @@ Date: 2024-12-08
     - Added longer-handed inserters, to deal with bigger and bigger recipes!
     - Added a new achievement for using a combat bot.
     - Added a new type of damage, Penetrative, which is used by shotgun shells/slugs or genevas neglection ammo. smaller biters and nests are weaker to it, while spitters and worms are resistant to it.
+    - Made basic/piercing shotgun pellets one damage weaker.
+    - Made basic slugs fire 3, and piercing  slugs fire 2.
+    - Added a better chain for vanadium oxide unlocked in metalloids.
+    - Added subgroups for coolants, lubricants and solid fuel recipes. yes we have that many.
+    - Added elevated rail comptability.
+    - Affected the trout population by 1%.
+    - Added a subgroup for sulfuric acid, and split sulfur into its own subgroup.
+    - Added an early sulfuric acid recipe in place of the removed acidic water > sulfuric acid chain. It is unlocked after mixing tanks, and unlocks certain previously sulfuric-locked things (like platinum).
+    - introduced hot coolant! currently it is only produced by reactors (and some recipes), where it has to be cooled back down to be usable, losing a little in the process.
+    - Added urhlumin in AEM packs, which is an advanced alloy and can be used to create coil heaters which act like beacons for furnaces.
+    - Titanium oxide now has a fluxed recipe!
 
   Changes:
     - Changed CRT's recipe to take CRT framing and screens.
@@ -121,7 +193,6 @@ Date: 2024-12-08
     - Changed transition leeching of iron, copper, zinc and nickel to give 6 ore.
     - Changed basic ferrum and patina leeching to have a 75% chance to give the ore back.
     - Changed the look of molten cadnium slightly.
-    - Finally changed what you start with in PM, instead of just letting you fend for yourself. (thank you penny)
     - Chnaged emerald crushing to give beryl, not beryllium ore.
     - Changed evaporators to be unlocked within the crushing/glass technology.
     - Changed beacon 1's to take 8 red circuits, not 14.
@@ -161,8 +232,38 @@ Date: 2024-12-08
     - Forced by wube to change chain signals to use orange circuits instead of red.
     - Changed train stations to use green circuits instead of red, but increased their amount by one.
     - Made quality incompatable with PM, for now.
-    - Moved fertiliser to alkali metal packs.
+    - Moved fertiliser to alkali metal packs, and merged the two fertiliser recipes.
     - Halved amount of coke needed for titanium oxide.
+    - Moved engines back to fuel canisters, instead of being behind kasethal, which also moves trains back.
+    - Lowered a bunch of recipes amounts of sulfuric acid.
+    - Increased the amount of sulfuric acid you get from SO2 cracking from 15 to 20.
+    - Made vanadium oxide take 2 vanadium and 5 oxygen, instead of 4 vanadium.
+    - Changed oleum to use 5 sulfuric acid instead of 10.
+    - Changed solders stack size to 75.
+    - Changed semiconductors stack size to 25.
+    - Increase range + reach of medium electric poles, so they can reach around assemblers.
+    - Changed Air filter MK2's to take 2 air filters instead of 4, and 6 lithium bromide instead of 8 - and crafts 2 at a time instead of 1.
+    - Changed all elemental MK2 filters to have the recipe: Air filter MK2, 3 of the original filters 'coating', 2 iodine and 3 LW framing.
+    - Removed the processing unit used in assembling machine 3's.
+    - Moved mining productivity to be a off-rip unlock of A-ATM science.
+    - Reworked the recipe for molybdenite powder to be 1:1, and increased its stone output.
+    - Lowered the amount of molybdenum disulfide for oil residual recipes by 1, from 3 to 2.
+    - Dou;bed the stack size of all catalysts, changed stack size of catalyst containers to 25 instead of 10.
+    - PM 0.6.500 requires you to have 2.0.60 installed now, due to a crash that can occur with reactors.
+    - Havled the amount of mercury you get per craft (50 > 25).
+    - Lowered the amount of coke needed for a bunch of different recipe (titanium oxide, pig iron, zirconia, etc).
+    - Changed the ratio of coal to coke to 1.5 : 1, and changed the coke to coal recipe to take 9 coal for 6 instead of 8 for 5.
+    - Changed titanium chloride seperation to spit out 0-1 coke, instead of oxygen gas.
+    - Lowered sand cost of flux from 6 to 4.
+    - Changed crafting times of flux containers from 2 to 1.5, and flux from 4 to 3.
+    - Finally changed A-ATM packs to use titanium/tungsten plates.
+    - Lowered amount of red circuits needed for washing plant 2's from 6 to 4.
+    - Lowered the energy usage of molten-inator 1's from 672kW to 330kW.
+    - Lowered the energy usage of molten-inator 2's from 750kW to 650kW.
+    - Halved nuclear reactors neighbonus bonus (100% > 50%).
+    - Moved explosives and basic rockets into ATM science, and explosive rockets into A-ATM science.
+    - Changed solder cases crafting time from 6s to 3s.
+    - Lowered the solid lube needed for EEU's from 10 to 8, and the heavy lube recipe from 8 to 6.
 
   Fixes:
     - Fixed the science pack item names captilisation.
@@ -188,6 +289,8 @@ Date: 2024-12-08
     - Fixed electric furnace 1's not being behind red circuits in the tech tree.
     - Unhid molybdenum TM leeching from the player.
     - Made electric engines prerequisite red circuits.
+    - Fixed temperature=inators not being able to replaced or upgraded over eachother.
+    - Fixed the prerequisites of advanced-advanced transition metal sciences not being correct or being missing.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.168

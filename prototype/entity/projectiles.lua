@@ -4,6 +4,7 @@ data:extend({
     type = "projectile",
     name = "pm-sodium-grenade",
     flags = { "not-on-map" },
+    hidden = true,
     acceleration = 0.008,
     action =
     {
@@ -175,6 +176,7 @@ data:extend({
   collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
   acceleration = 0,
   direction_only = true,
+  hidden = true,
   action =
   {
     type = "direct",
@@ -230,11 +232,11 @@ data:extend({
       {
         {
           type = "damage",
-          damage = {amount = 2, type = "physical"}
+          damage = {amount = 4, type = "physical"}
         },
         {
           type = "damage",
-          damage = {amount = 14, type = "pm-penetrative"}
+          damage = {amount = 12, type = "pm-penetrative"}
         },
       }
     }
@@ -257,6 +259,7 @@ data:extend({
   acceleration = 1,
   direction_only = true,
   piercing_damage = 90,
+  hidden = true,
   action =
   {
     type = "direct",
@@ -295,6 +298,7 @@ data:extend({
   acceleration = 1,
   direction_only = true,
   piercing_damage = 300,
+  hidden = true,
   action =
   {
     type = "direct",
@@ -303,12 +307,14 @@ data:extend({
       type = "instant",
       target_effects =
       {
-        type = "damage",
-        damage = {amount = 2, type = "physical"}
-      },
-      {
-        type = "damage",
-        damage = {amount = 16, type = "pm-penetrative"}
+        {
+          type = "damage",
+          damage = {amount = 2, type = "physical"},
+        },
+        {
+          type = "damage",
+          damage = {amount = 18, type = "pm-penetrative"}
+        }
       },
     }
   },
@@ -330,6 +336,7 @@ data:extend({
   acceleration = 0,
   direction_only = true,
   piercing_damage = 100,
+  hidden = true,
   action =
   {
     type = "direct",
@@ -374,11 +381,11 @@ data.raw["projectile"]["shotgun-pellet"].action =
     {
       {
         type = "damage",
-        damage = {amount = 4, type = "physical"}
+        damage = {amount = 3, type = "physical"}
       },
       {
         type = "damage",
-        damage = {amount = 4, type = "pm-penetrative"}
+        damage = {amount = 3, type = "pm-penetrative"}
       }
     }
   }
@@ -395,11 +402,11 @@ data.raw["projectile"]["piercing-shotgun-pellet"].action =
     {
       {
         type = "damage",
-        damage = {amount = 5, type = "physical"}
+        damage = {amount = 4, type = "physical"}
       },
       {
         type = "damage",
-        damage = {amount = 5, type = "pm-penetrative"}
+        damage = {amount = 4, type = "pm-penetrative"}
       },
     }
   }

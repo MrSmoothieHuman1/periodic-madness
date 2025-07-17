@@ -5,43 +5,6 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-ferrum",
-    enabled = false,
-    energy_required = 18,
-    subgroup = "pm-iron-tm",
-    order = "x",
-    category = "pm-moltening",
-    ingredients =
-    {
-      PM.ingredient("pm-oxygen-gas", 30, "fluid"),
-      PM.ingredient("iron-plate", 10),
-      PM.ingredient("pm-sodium-bicarbonate", 5)
-    },
-    results =
-    {
-      PM.product("pm-ferrum", 10)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-patina",
-    enabled = false,
-    energy_required = 18,
-    subgroup = "pm-copper-tm",
-    order = "x",
-    category = "pm-moltening",
-    ingredients =
-    {
-      PM.ingredient("sulfuric-acid", 30, "fluid"),
-      PM.ingredient("copper-plate", 10),
-    },
-    results =
-    {
-      PM.product("pm-patina", 10)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-molten-cadmium-telluride",
     enabled = false,
     energy_required = 9,
@@ -77,6 +40,156 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-molten-uhrlumin-precursor-alloy",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    subgroup = "pm-uhrlumin",
+    order = "a",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-aluminium-plate", 7),
+      PM.ingredient("pm-molten-copper", 5, "fluid"),
+      PM.ingredient("pm-magnesium-plate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-molten-uhrlumin-precursor-alloy", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-uhrlumin-precursor-billet",
+    enabled = false,
+    energy_required = 13.5,
+    category = "pm-coldening",
+    subgroup = "pm-uhrlumin",
+    order = "b",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-uhrlumin-precursor-alloy", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-uhrlumin-precursor-billet", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-uhrlumin",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-moltening",
+    subgroup = "pm-uhrlumin",
+    order = "c",
+    ingredients =
+    {
+      PM.ingredient("pm-uhrlumin-precursor-billet", 5),
+      PM.ingredient("pm-zinc-plate", 5),
+      PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
+    },
+    results = 
+    {
+      PM.product("pm-molten-uhrlumin", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-uhrlumin-plate",
+    enabled = false,
+    energy_required = 4.5,
+    category = "pm-coldening",
+    subgroup = "pm-uhrlumin",
+    order = "d",
+    main_product = "pm-uhrlumin-plate",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-uhrlumin", 10, "fluid"),
+      PM.ingredient("pm-crucible", 2)
+    },
+    results = 
+    {
+      PM.product("pm-uhrlumin-plate", 5),
+      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inconel-625-precursor-alloy",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-nickel-plate", 7),
+      PM.ingredient("pm-molten-cobalt", 5, "fluid"),
+      PM.ingredient("pm-molybdenum-ore", 3)
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-precursor-alloy", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inconel-625-precursor-billet",
+    enabled = false,
+    energy_required = 13.5,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-inconel-625-precursor-alloy", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-precursor-billet", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-inconel-625",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-moltening",
+    ingredients =
+    {
+      PM.ingredient("pm-inconel-625-precursor-billet", 5),
+      PM.ingredient("pm-chrominum-ore", 5),
+      PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
+    },
+    results = 
+    {
+      PM.product("pm-molten-inconel-625", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inconel-625-plate",
+    enabled = false,
+    energy_required = 4.5,
+    category = "pm-coldening",
+    main_product = "pm-inconel-625-plate",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-inconel-625", 10, "fluid"),
+      PM.ingredient("pm-crucible", 2)
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-plate", 5),
+      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,
@@ -97,6 +210,17 @@ data:extend({
   {
     type = "recipe",
     name = "pm-potassium-salt-glass",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/glass-pane.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-potassium-salts.png",
+        icon_size = 64,
+      },
+    },
     enabled = false,
     energy_required = 3,
     category = "pm-coldening",
@@ -116,7 +240,20 @@ data:extend({
     type = "recipe",
     name = "pm-molten-borosilicate-glass",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/borosillicate-glass-melting.png",
+        icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-borosilicate-glass.png",
+        icon_size = 64,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64,
+        scale = 0.33,
+        shift = {0, -7.5}
+      },
+    },
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
@@ -196,7 +333,7 @@ data:extend({
     order = "d",
     ingredients = 
     {
-      PM.ingredient("pm-molten-titanium", 10, "fluid"),
+      PM.ingredient("pm-molten-titanium", 5, "fluid"),
       PM.ingredient("pm-cut-sapphire", 2)
     },
     results =
@@ -256,6 +393,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-mercury-melting",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/solid-mercury-melting.png",
     enabled = false,
     energy_required = 3,
     category = "pm-moltening",
@@ -277,14 +416,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__base__/graphics/icons/copper-cable.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -312,14 +450,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-gold.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/gold-wire.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -348,14 +485,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-indium.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/indium-wire.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -383,14 +519,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__base__/graphics/icons/iron-gear-wheel.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -419,14 +554,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-brass.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/brass-gear.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     enabled = false,
@@ -447,464 +581,6 @@ data:extend({
       PM.product("pm-brass-cog", 5)
     }
   },
-
-  {
-    type = "recipe",
-    name = "pm-molten-iron",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__base__/graphics/icons/iron-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-iron-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("iron-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-iron", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-copper",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-copper.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__base__/graphics/icons/copper-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-copper-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("copper-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-copper", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-nickel",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-nickel.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/nickel-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-nickel-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-nickel-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-nickel", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-zinc",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-zinc.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/zinc-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-zinc-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-zinc-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-zinc", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-manganese",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-manganese.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-manganese-tm",
-    order = "e",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-manganese-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-manganese", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-gold",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-gold.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/gold-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-gold-tm",
-    order = "e",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-gold-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-gold", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-silver",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-silver.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/silver-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-silver-tm",
-    order = "e",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-silver-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-silver", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-tin",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-tin.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-tin-ptm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-tin-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-tin", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-titanium",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-titanium.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/titanium-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-titanium-tm",
-    order = "g",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-titanium-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-titanium", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-tungsten",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-tungsten.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/tungsten-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-tungsten-tm",
-    order = "g",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-tungsten-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-tungsten", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-cadnium",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-cadmium.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/cadnium-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-cadmium-tm",
-    order = "d",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-cadnium-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-cadnium", 5, "fluid")
-    }
-  },
-
-
-  {
-    type = "recipe",
-    name = "pm-molten-aluminium",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-aluminium.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-aluminium-ptm",
-    order = "d",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-aluminium-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-aluminium", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-platinum",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-platinum.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/platinum-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-platinum-tm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-platinum-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-platinum", 5, "fluid")
-    }
-  },
   {
     type = "recipe",
     name = "pm-molten-glass",
@@ -914,14 +590,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-glass.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/glass-pane.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     subgroup = "pm-glassing",
@@ -944,181 +619,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-molten-lead",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-lead.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/lead-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-lead-ptm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-lead-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-lead", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-thallium",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-thallium.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/thallium-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-thallium-ptm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-thallium-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-thallium", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-indium",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-indium.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/indium-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-indium-ptm",
-    order = "f",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-indium-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-indium", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-cobalt",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-cobalt.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/cobalt-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-cobalt-tm",
-    order = "e",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-cobalt-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-cobalt", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-molten-palladium",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-palladium.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/palladium-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-palladium-tm",
-    order = "e",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-palladium-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-palladium", 5, "fluid")
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-tinned-glass-melting",
     icon_size = 64,
     icons =
@@ -1126,14 +626,13 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-tin.png",
         icon_size = 64,
-        scale = 0.4,
         shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/glass-pane.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
+        shift = {0, -7.5}
       },
     },
     subgroup = "pm-glassing",
@@ -1156,409 +655,8 @@ data:extend({
       --least its memorable
     }
   },
-  {
-    type = "recipe",
-    name = "pm-molten-beryllium",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-beryllium.png",
-        icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/plates/beryllium-plate.png",
-        icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
-      },
-    },
-    subgroup = "pm-beryllium-aem",
-    order = "h",
-    category = "pm-moltening",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-beryllium-plate", 10),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-molten-beryllium", 5, "fluid")
-    }
-  },
 
   --MARK: Cold-inator
-  {
-    type = "recipe",
-    name = "pm-iron-plate-cooling",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fluids/molten-iron.png",
-        icon_size = 64,
-        scale = 0.7,
-        shift = {0, -25}
-      },
-      {
-        icon = "__base__/graphics/icons/iron-plate.png",
-        icon_size = 64,
-        scale = 0.45,
-        shift = {0, 1.5}
-      },
-    },
-    category = "pm-coldening",
-    subgroup = "pm-iron-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-iron", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("iron-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-copper-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-copper-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-copper", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("copper-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-nickel-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/nickel-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-nickel-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-nickel", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-nickel-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-zinc-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/zinc-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-zinc-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-zinc", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-zinc-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-manganese-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/manganese-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-manganese-tm",
-    order = "e",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-manganese", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-manganese-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-gold-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/gold-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-gold-tm",
-    order = "f",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-gold", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-gold-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-silver-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/silver-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-silver-tm",
-    order = "f",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-silver", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-silver-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-tin-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tin-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-tin-ptm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-tin", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-tin-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-titanium-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/titanium-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-titanium-tm",
-    order = "i",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-titanium", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-titanium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-tungsten-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/tungsten-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-tungsten-tm",
-    order = "i",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-tungsten", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-tungsten-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-cadnium-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/cadnium-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-cadmium-tm",
-    order = "e",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-cadnium", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-cadnium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-aluminium-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/aluminium-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-aluminium-ptm",
-    order = "d",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-aluminium", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-aluminium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-platinum-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/platinum-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-platinum-tm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-platinum", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-platinum-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-lead-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/lead-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-lead-ptm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-lead", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-lead-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-thallium-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/thallium-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-thallium-ptm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-thallium", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-thallium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-indium-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/indium-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-indium-ptm",
-    order = "g",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-indium", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-indium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
   {
     type = "recipe",
     name = "pm-glass-cooling",
@@ -1581,92 +679,23 @@ data:extend({
       PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
-  {
-    type = "recipe",
-    name = "pm-cobalt-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/cobalt-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-cobalt-tm",
-    order = "f",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-cobalt", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-cobalt-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-palladium-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/palladium-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-palladium-tm",
-    order = "f",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-palladium", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-palladium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-beryllium-plate-cooling",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/beryllium-cooling.png",
-    category = "pm-coldening",
-    subgroup = "pm-beryllium-aem",
-    order = "i",
-    energy_required = 9,
-    enabled = false,
-    allow_decomposition = false,
-    ingredients =
-    {
-      PM.ingredient("pm-molten-beryllium", 5, "fluid"),
-      PM.ingredient("pm-crucible", 1),
-    },
-    results =
-    {
-      PM.product("pm-beryllium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
-    }
-  },
 
   --MARK: Alloy recipes
 
   {
     type = "recipe",
-    name = "pm-liquid-solder",
+    name = "pm-molten-solder",
     icon_size = 64,
     icons =
     {
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-solder.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
         icon_size = 64,
-        scale = 0.22,
-        shift = { 0, -6 }
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -1696,13 +725,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-solder.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/solder-plate.png",
+        icon = "__periodic-madness__/graphics/icons/ores/barium-ore-icon.png",
         icon_size = 64,
-        scale = 0.22,
+        scale = 0.33,
         shift = { 0, -6 }
       },
     },
@@ -1804,13 +831,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-steel.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -1864,17 +889,15 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-brass.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
-    order = "ca",
+    order = "cb",
     category = "pm-moltening",
     energy_required = 9,
     enabled = false,
@@ -1901,7 +924,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/brass-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
-    order = "ca",
+    order = "cc",
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -1925,13 +948,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-stainless-steel.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -1986,13 +1007,11 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/molten-kasethal.png",
         icon_size = 64,
-        scale = 0.4,
-        shift = { 0, 1.5 }
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
         icon_size = 64,
-        scale = 0.25,
+        scale = 0.33,
       },
     },
     subgroup = "pm-alloys",
@@ -2022,7 +1041,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/kasethal-cooling.png",
     category = "pm-coldening",
     subgroup = "pm-alloys",
-    order = "eb",
+    order = "fb",
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -2445,7 +1464,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-ammonia-voiding",
+    name = "pm-syngas-voiding",
     icon_size = 64,
     icons =
     {
@@ -2543,7 +1562,7 @@ data:extend({
     emissions_multiplier = 1.75,
     ingredients =
     {
-      PM.ingredient("pm-sulfur-dioxide", 25, "fluid"),
+      PM.ingredient("pm-sulfur-trioxide", 25, "fluid"),
     },
     results = {}
   },

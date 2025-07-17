@@ -198,16 +198,16 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/solder.png",
     subgroup = "pm-circuits",
     order = "i",
-    stack_size = 50,
+    stack_size = 75,
   },
   {
     type = "item",
     name = "pm-semiconductor",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/semiconfuctors.png",
     subgroup = "pm-circuits",
     order = "i",
-    stack_size = 50,
+    stack_size = 25,
   },
 })
 

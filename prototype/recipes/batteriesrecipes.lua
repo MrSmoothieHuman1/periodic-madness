@@ -135,11 +135,11 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-vanadium-ore", 4),
-      PM.ingredient("pm-oxygen-gas", 2, "fluid")
+      PM.ingredient("pm-oxygen-gas", 10, "fluid")
     },
     results =
     {
-      PM.product("pm-vanadium-oxide", 1)
+      PM.product("pm-vanadium-oxide", 2)
     }
   },
   {

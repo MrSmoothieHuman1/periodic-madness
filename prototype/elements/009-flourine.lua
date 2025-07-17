@@ -26,15 +26,6 @@ data:extend({
     order = "b",
     stack_size = 200
   },
-  {
-    type = "item",
-    name = "pm-calcium-sulfate",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/calcium-sulfate.png",
-    subgroup = "pm-flourine-rnm",
-    order = "c",
-    stack_size = 300
-  },
 
   {
     type = "recipe",

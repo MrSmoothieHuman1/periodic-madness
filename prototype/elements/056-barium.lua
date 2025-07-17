@@ -45,7 +45,6 @@ data:extend({
         order = "c",
         stack_size = 200,
     },
-    -- barium froth and tailings are d and e
     {
         type = "item",
         name = "pm-barium-nitrate",
@@ -60,7 +59,56 @@ data:extend({
         order = "f",
         stack_size = 150
     },
-    -- barium vapour is g
+    {
+        type = "item",
+        name = "pm-barium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/barium-ore-icon.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/barium-ore-icon-4.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-barium-aem",
+        order = "e",
+        stack_size = 200
+    },
+
+    {
+        type = "fluid",
+        name = "pm-barium-froth",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        subgroup = "pm-barium-aem",
+        order = "d",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
+    {
+        type = "fluid",
+        name = "pm-barium-tailings",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/barium-tailings.png",
+        subgroup = "pm-barium-aem",
+        order = "e",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
+    {
+        type = "fluid",
+        name = "pm-barium-vapour",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-barium-aem",
+        order = "g",
+        default_temperature = 15,
+        base_color = {r = 0.3, g = 0.3, b = 0.2},
+        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    },
 
     {
         type = "recipe",
@@ -88,6 +136,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-baryte-ore-crushing",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/baryte-ore-crushing.png",
         enabled = false,
         energy_required = 4,
         category = "pm-crushing",
@@ -129,7 +179,7 @@ data:extend({
         type = "recipe",
         name = "pm-barium-tailings-looping",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/recipes/nickel-tailings-looping.png",
+        icon = "__periodic-madness__/graphics/icons/recipes/barium-tailings-looping.png",
         category = "pm-mixing",
         subgroup = "pm-barium-aem",
         order = "d",
@@ -180,10 +230,10 @@ data:extend({
         order = "f",
         allow_productivity = true,
         main_product = "pm-barium-nitrate",
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-pure-baryte", 6),
-            PM.ingredient("pm-nitrogen-gas", 20, "fluid"), --if add nitric acid, this should be that
+            PM.ingredient("pm-nitric-acid", 7.5, "fluid"),
             PM.ingredient("pm-palladium-catalyst", 2)
         },
         results = 

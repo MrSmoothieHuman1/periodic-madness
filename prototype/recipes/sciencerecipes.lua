@@ -9,8 +9,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-titanium-ore", 8),
-        PM.ingredient("pm-tungsten-ore", 8),
+        PM.ingredient("pm-titanium-plate", 8),
+        PM.ingredient("pm-tungsten-plate", 8),
         PM.ingredient("pm-silver-plate", 15),
         PM.ingredient("copper-plate", 15),
         PM.ingredient("pm-science-bottle", 1)
@@ -115,6 +115,26 @@ data:extend({
         PM.product("pm-alkaline-earth-metal-science-pack", 1),
     }
 },
+{
+    type = "recipe",
+    name = "pm-advanced-advanced-advanced-transition-metal-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "science-pack",
+    order = "i",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-yttrium-ore", 4),
+        PM.ingredient("pm-molten-zinc", 5, "fluid"),
+        PM.ingredient("pm-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 1),
+    }
+},
 --MARK: Plastic Science
 {
     type = "recipe",
@@ -171,8 +191,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-titanium-ore", 8),
-        PM.ingredient("pm-tungsten-ore", 8),
+        PM.ingredient("pm-titanium-plate", 8),
+        PM.ingredient("pm-tungsten-plate", 8),
         PM.ingredient("pm-silver-plate", 15),
         PM.ingredient("copper-plate", 15),
         PM.ingredient("pm-plastic-science-bottle", 1)

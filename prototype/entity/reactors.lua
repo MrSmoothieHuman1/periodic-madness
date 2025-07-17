@@ -129,6 +129,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
   PM.set_flag(flags_holder, "not-deconstructable")
   PM.set_flag(flags_holder, "not-blueprintable")
   PM.set_flag(flags_holder, "not-on-map")
+  PM.set_flag(flags_holder, "not-repairable")
 
   --MARK: Reactor Furnace
   -- Make the furnace that'll burn resources at the cost of coolant
@@ -216,19 +217,68 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 end
 
 coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
-  10, {"pm-reactor-coolant-burning"},
+  10, {"pm-reactor-coolant-burning-with-exhuast"},
+    {
+      production_type = "input",
+      volume = 100,
+      pipe_connections = {
+      {
+        flow_direction = "input",
+        direction = defines.direction.north--[[@as int]],
+        position = {-2, -2},
+      },
+      {
+        flow_direction = "input",
+        direction = defines.direction.west--[[@as int]],
+        position = {-2, 2},
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.south--[[@as int]],
+        position = {-2, 2},
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.east--[[@as int]],
+        position = {2, 2},
+      },
+    },
+  },
   {
-    production_type = "input",
+    production_type = "output",
     volume = 100,
     pipe_connections = {
       {
         flow_direction = "input",
         direction = defines.direction.north--[[@as int]],
-        position = {0, -2}
-      }
-    }
-  }--[[@as data.FluidBox]]
+        position = {2, -2},
+      },
+      {
+        flow_direction = "input",
+        direction = defines.direction.east--[[@as int]],
+        position = {2, -2},
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.south--[[@as int]],
+        position = {2, 2},
+      },
+      {
+        flow_direction = "output",
+        direction = defines.direction.west--[[@as int]],
+        position = {-2, -2},
+      },
+    },
+  }
 )
+data.raw["reactor"]["nuclear-reactor"].custom_tooltip_fields = 
+{
+  {
+    name = {"pm-tooltips.neighbour-bonus"},
+    value = {"pm-tooltips.50%"}
+  }
+}
+data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0.5
 
 data:extend({
   coolant_reactor{ --MARK: Polonium Reactor
@@ -243,6 +293,13 @@ data:extend({
     dying_explosion  = "nuclear-reactor-explosion",
     consumption = "50MW",
     neighbour_bonus = 0.25,
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.neighbour-bonus"},
+        value = {"pm-tooltips.25%"}
+      }
+    },
     energy_source =
     {
       type = "burner",
@@ -298,23 +355,54 @@ data:extend({
     {
       production_type = "input",
       volume = 100,
-      pipe_connections = {
+      pipe_connections = 
+      {
         {
           flow_direction = "input",
           direction = defines.direction.north--[[@as int]],
-          position = {0, -2}
-        }
-      }
+          position = {-2, -2},
+        },
+        {
+          flow_direction = "input",
+          direction = defines.direction.west--[[@as int]],
+          position = {-2, 2},
+        },
+        {
+          flow_direction = "output",
+          direction = defines.direction.south--[[@as int]],
+          position = {-2, 2},
+        },
+        {
+          flow_direction = "output",
+          direction = defines.direction.east--[[@as int]],
+          position = {2, 2},
+        },
+      },
     },
     coolant_exhuast_fluidbox = {
       production_type = "output",
       volume = 100,
       pipe_connections = {
         {
+          flow_direction = "input",
+          direction = defines.direction.north--[[@as int]],
+          position = {2, -2},
+        },
+        {
+          flow_direction = "input",
+          direction = defines.direction.east--[[@as int]],
+          position = {2, -2},
+        },
+        {
           flow_direction = "output",
           direction = defines.direction.south--[[@as int]],
-          position = {0, 2},
-        }
+          position = {2, 2},
+        },
+        {
+          flow_direction = "output",
+          direction = defines.direction.west--[[@as int]],
+          position = {-2, -2},
+        },
       }
     },
     collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },

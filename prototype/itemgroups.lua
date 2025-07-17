@@ -150,12 +150,6 @@ data:extend({
   },
   {
     type = "item-group",
-    name = "pm-alloying",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png"
-  },
-  {
-    type = "item-group",
     name = "pm-molding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/circuitboard-mold.png"
@@ -316,7 +310,19 @@ data:extend({
     name = "pm-oil-reforming",
     group = "intermediate-products",
     order = "ab"
-  },  
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-octane-processing",
+    group = "intermediate-products",
+    order = "ac"
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-solid-fuel",
+    group = "intermediate-products",
+    order = "ad"
+  },
   {
     type = "item-subgroup",
     name = "pm-fuels",
@@ -325,9 +331,33 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-lubricant",
+    group = "intermediate-products",
+    order = "ba"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-coolant",
+    group = "intermediate-products",
+    order = "bb"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-alloys",
     group = "intermediate-products",
     order = "c",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-uhrlumin",
+    group = "intermediate-products",
+    order = "ca",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-uhrlumin",
+    group = "intermediate-products",
+    order = "cb",
   },
   {
     type = "item-subgroup",
@@ -535,6 +565,12 @@ data:extend({
     name = "pm-bromine-rnm",
     group = "pm-reactive-non-metals",
     order = "f"
+  },
+    {
+    type = "item-subgroup",
+    name = "pm-sulfuric-acid-rnm",
+    group = "pm-reactive-non-metals",
+    order = "fa"
   },
   {
     type = "item-subgroup",
@@ -810,6 +846,18 @@ data:extend({
     group = "pm-transition-metals",
     order = "v"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-osmium-tm",
+    group = "pm-transition-metals",
+    order = "w"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-iridium-tm",
+    group = "pm-transition-metals",
+    order = "x"
+  },
 
   --MARK: Post Transition
   {
@@ -928,35 +976,41 @@ data:extend({
     group = "pm-alkaline-earth-metals",
     order = "a"
   },
-  {
+    {
     type = "item-subgroup",
-    name = "pm-beryllium-aem",
+    name = "pm-calcium-sulfate-aem",
     group = "pm-alkaline-earth-metals",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "pm-magnesium-aem",
+    name = "pm-beryllium-aem",
     group = "pm-alkaline-earth-metals",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "pm-strontium-aem",
+    name = "pm-magnesium-aem",
     group = "pm-alkaline-earth-metals",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "pm-barium-aem",
+    name = "pm-strontium-aem",
     group = "pm-alkaline-earth-metals",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "pm-radium-aem",
+    name = "pm-barium-aem",
     group = "pm-alkaline-earth-metals",
     order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-radium-aem",
+    group = "pm-alkaline-earth-metals",
+    order = "g"
   },
 
   --MARK: Metalloids
@@ -1296,6 +1350,32 @@ data:extend({
     name = "pm-splitters",
     group = "logistics",
     order = "bb"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-express-inserters",
+    group = "logistics",
+    order = "ca"
+  },
+
+  --MARK: Fluid tab
+  {
+    type = "item-subgroup",
+    name = "pm-water",
+    group = "fluids",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-oil-fluid",
+    group = "fluids",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-acid",
+    group = "fluids",
+    order = "c"
   },
 })
 

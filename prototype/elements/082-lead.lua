@@ -43,6 +43,15 @@ data:extend({
     order = "c",
     stack_size = 80
   },
+  {
+    type = "item",
+    name = "pm-lead-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/lead-ore-icon.png",
+    subgroup = "pm-lead-ptm",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -163,7 +172,7 @@ data:extend({
     energy_required = 6,
     category = "pm-moltening",
     subgroup = "pm-lead-ptm",
-    order = "f",
+    order = "ea",
     main_product = "pm-molten-lead",
     ingredients = 
     {
@@ -177,5 +186,75 @@ data:extend({
       PM.product_range("pm-molten-lead", 4.5, 5, "fluid"),
       PM.product_range_chance("pm-mixed-ore-slag", 0, 3, 0.5)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-lead-plate",
+    subgroup = "pm-lead-ptm",
+    order = "f",
+    category = "smelting",
+    energy_required = 6.4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-lead-ore", 1) },
+    results = {
+      PM.product("pm-lead-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-lead",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-lead.png",
+        icon_size = 64,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/lead-plate.png",
+        icon_size = 64,
+        scale = 0.33,
+        shift = {0, -7.5}
+      },
+    },
+    subgroup = "pm-lead-ptm",
+    order = "g",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-lead-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-lead", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lead-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/lead-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-lead-ptm",
+    order = "h",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-lead", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-lead-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
 })

@@ -24,6 +24,20 @@ data:extend({
     order = "b",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-thallium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon-2.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-thallium-ptm",
+    order = "c",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -32,7 +46,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/thallium-ore-icon.png",
+        icon = "__periodic-madness__/graphics/icons/ores/lorandite.png",
         icon_size = 64,
       },
       {
@@ -46,6 +60,7 @@ data:extend({
     subgroup = "pm-thallium-ptm",
     allow_productivity = true,
     order = "a",
+    main_product = "pm-lorandite",
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
@@ -104,5 +119,74 @@ data:extend({
       PM.product_range("sulfur", 1, 4)
     }
   } --[[@as data.RecipePrototype]],
-
+  {
+    type = "recipe",
+    name = "pm-thallium-plate",
+    subgroup = "pm-thallium-ptm",
+    order = "d",
+    category = "smelting",
+    energy_required = 6.4,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = { PM.ingredient("pm-thallium-ore", 1) },
+    results = {
+      PM.product("pm-thallium-plate", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-thallium",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-thallium.png",
+        icon_size = 64,
+        shift = { 0, 1.5 }
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/thallium-plate.png",
+        icon_size = 64,
+        scale = 0.33,
+        shift = {0, -7.5}
+      },
+    },
+    subgroup = "pm-thallium-ptm",
+    order = "f",
+    category = "pm-moltening",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-thallium-plate", 10),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-thallium", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-thallium-plate-cooling",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/thallium-cooling.png",
+    category = "pm-coldening",
+    subgroup = "pm-thallium-ptm",
+    order = "g",
+    energy_required = 9,
+    enabled = false,
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-thallium", 5, "fluid"),
+      PM.ingredient("pm-crucible", 1),
+    },
+    results =
+    {
+      PM.product("pm-thallium-plate", 10),
+      PM.product_chance("pm-crucible", 1, 0.8)
+    }
+  },
 })

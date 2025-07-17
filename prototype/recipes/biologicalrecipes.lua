@@ -84,44 +84,11 @@ data:extend({
       PM.ingredient("pm-ammonia-gas", 20, "fluid"),
       PM.ingredient("pm-red-phosphorus", 6),
       PM.ingredient("pm-polyethylene-plastic", 4),
-    },
-    results =
-    {
-      PM.product("pm-fertiliser", 1)
-    }
-  },
-
-  {
-    type = "recipe",
-    name = "pm-potassium-fertiliser",
-    icon_size = 64,
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/fertiliser.png",
-        icon_size = 64,
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",
-        icon_size = 64
-      }
-    },
-    energy_required = 5,
-    category = "crafting-with-fluid",
-    subgroup = "pm-greenhousing-rnm",
-    order = "ca",
-    enabled = false,
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-ammonia-gas", 10, "fluid"),
-      PM.ingredient("pm-red-phosphorus", 4),
-      PM.ingredient("pm-polyethylene-plastic", 6),
       PM.ingredient("pm-potassium", 4)
     },
     results =
     {
-      PM.product("pm-fertiliser", 2)
+      PM.product("pm-fertiliser", 1)
     }
   },
   {
@@ -352,7 +319,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-gene-harvesting",
+    name = "pm-gene-base",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/gene-base-harvesting.png",
     energy_required = 2,
@@ -374,9 +341,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-melatonin-harvesting",
+    name = "pm-melatonin",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
     energy_required = 2,
     enabled = false,
     hide_from_player_crafting = true,
@@ -384,6 +350,7 @@ data:extend({
     subgroup = "pm-biostuff-rnm",
     order = "i",
     allow_productivity = true,
+    main_product = "pm-melatonin",
     ingredients =
     {
       PM.ingredient("pm-cyanobacteriaed-agar-solution", 5, "fluid"),

@@ -224,7 +224,7 @@ data:extend({
       },
       {
         type = "direct",
-        repeat_count = 2,
+        repeat_count = 3,
         action_delivery =
         {
           type = "projectile",
@@ -271,7 +271,7 @@ data:extend({
       },
       {
         type = "direct",
-        repeat_count = 1,
+        repeat_count = 2,
         action_delivery =
         {
           type = "projectile",
@@ -388,7 +388,7 @@ data:extend({
 {
     type = "ammo",
     name = "pm-incendiary-rocket",
-    icon = "__base__/graphics/icons/explosive-rocket.png",
+    icon = "__periodic-madness__/graphics/icons/incendiary-rocket.png",
     ammo_category = "rocket",
     ammo_type =
     {
@@ -455,6 +455,3 @@ data.raw["ammo"]["artillery-shell"].subgroup = "pm-rockets"
 data.raw["ammo"]["artillery-shell"].order = "i"
 data.raw["recipe"]["artillery-shell"].subgroup = "pm-rockets"
 data.raw["recipe"]["artillery-shell"].order = "i"
-
-data.raw["gun"]["shotgun"].attack_parameters.ammo_categories = {"shotgun-shell", "pm-shotgun-slug"}
-data.raw["gun"]["combat-shotgun"].attack_parameters.ammo_categories = {"shotgun-shell", "pm-shotgun-slug"}
