@@ -78,24 +78,24 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/thallium-mixing.png",
     enabled = false,
-    energy_required = 8,
+    energy_required = 6,
     category = "pm-mixing",
     subgroup = "pm-thallium-ptm",
     order = "b",
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-gold-ore", 8),
-      PM.ingredient("copper-ore", 8),
-      PM.ingredient("pm-zinc-ore", 8),
-      PM.ingredient("pm-lorandite", 1),
-      PM.ingredient("sulfuric-acid", 10, "fluid")
+      PM.ingredient("pm-gold-ore", 5),
+      PM.ingredient("copper-ore", 6),
+      PM.ingredient("pm-zinc-ore", 6),
+      PM.ingredient("pm-lorandite", 2),
+      PM.ingredient("sulfuric-acid", 8, "fluid")
     },
     results =
     {
-      PM.product("pm-thallium-sulfate", 4),
-      PM.product_range_chance("pm-arsenic-ore", 0, 3, 0.7),
-      PM.catalyst_range("copper-ore", 4, 7, 3)
+      PM.product("pm-thallium-sulfate", 8),
+      PM.product_range_chance("pm-arsenic-ore", 0, 3, 0.66),
+      PM.catalyst_range("copper-ore", 4, 6, 3)
     }
   } --[[@as data.RecipePrototype]],
   {
