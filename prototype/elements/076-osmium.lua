@@ -39,7 +39,7 @@ data:extend({
         energy_required = 15,
         category = "pm-washing",
         subgroup = "pm-osmium-tm",
-        order = "f",
+        order = "a",
         ingredients = 
         {
             PM.ingredient("pm-filtered-anode-sludge", 10, "fluid"),
@@ -58,7 +58,7 @@ data:extend({
         energy_required = 10,
         category = "chemistry",
         subgroup = "pm-osmium-tm",
-        order = "g",
+        order = "b",
         main_product = "pm-osmium-oxide",
         ingredients = 
         {
@@ -78,7 +78,7 @@ data:extend({
         energy_required = 5,
         category = "chemistry",
         subgroup = "pm-osmium-tm",
-        order = "h",
+        order = "c",
         main_product = "pm-osmium-ore",
         ingredients = 
         {
@@ -91,5 +91,61 @@ data:extend({
             PM.product("pm-osmium-ore", 3),
             PM.product_range("pm-oxygen-gas", 6, 9, "fluid")
         }
-    }
+    },
+    {
+        type = "recipe",
+        name = "pm-molten-osmiridium",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/molten-osmiridium.png",
+            shift = { 0, 1.5 }
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",
+            icon_size = 64,
+            scale = 0.33,
+            shift = {0, -7.5}
+          },
+        },
+        enabled = false,
+        energy_required = 9,
+        category = "pm-moltening",
+        subgroup = "pm-osmium-tm",
+        order = "d",
+        ingredients =
+        {
+            PM.ingredient("pm-osmium-ore", 2),
+            PM.ingredient("pm-iridium-plate", 2),
+            --PM.ingredient("pm-ruthenium-ore", 2),
+            PM.ingredient("steam", 50, "fluid")
+        },
+        results = 
+        {
+            PM.product("pm-molten-osmiridium", 5, "fluid")
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-osmiridium-plate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/glass-cooling.png",
+        category = "pm-coldening",
+        subgroup = "pm-osmium-tm",
+        order = "e",
+        energy_required = 9,
+        enabled = false,
+        allow_decomposition = false,
+        ingredients =
+        {
+          PM.ingredient("pm-molten-osmiridium", 5, "fluid"),
+          PM.ingredient("pm-crucible", 1),
+        },
+        results =
+        {
+          PM.product("pm-osmiridium-plate", 5),
+          PM.product_chance("pm-crucible", 1, 0.75)
+        }
+    },
+
 })

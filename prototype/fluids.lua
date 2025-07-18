@@ -70,7 +70,6 @@ data:extend({
     base_color = {r = 0.14, g = 0.95, b = 0.29},
     flow_color = {r = 0.14, g = 0.95, b = 0.29}
   },
-
   {
     type = "fluid",
     name = "pm-oil-residuals",
@@ -1748,6 +1747,18 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.38, g = 0.49, b = 0.74},
     flow_color = {r = 0.38, g = 0.49, b = 0.74},
+  },
+  {
+    type = "fluid",
+    name = "pm-molten-osmiridium",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-osmiridium.png",
+    subgroup = "pm-osmium-tm",
+    order = "d",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.8},
+    flow_color = {r = 0.3, g = 0.3, b = 0.8},
+    auto_barrel = false,
   },
 
 	{

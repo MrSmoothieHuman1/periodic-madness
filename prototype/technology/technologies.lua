@@ -4627,9 +4627,11 @@ data:extend({
     {
       PM.unlock_recipe("pm-osmium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-osmium-oxide"),
-      PM.unlock_recipe("pm-osmium-ore")
+      PM.unlock_recipe("pm-osmium-ore"),
+      PM.unlock_recipe("pm-molten-osmiridium"),
+      PM.unlock_recipe("pm-osmiridium-plate")
     },
-    prerequisites = {"pm-iridium-processing"},
+    prerequisites = {"pm-iridium-processing", "pm-ruthenium-processing"},
     unit =
     {
       count = 350,
