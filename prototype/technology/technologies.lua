@@ -4632,7 +4632,7 @@ data:extend({
     prerequisites = {"pm-iridium-processing"},
     unit =
     {
-      count = 300,
+      count = 350,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4664,7 +4664,142 @@ data:extend({
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
     {
-      count = 300,
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+ },
+  {
+    type = "technology",
+    name = "pm-tantalum-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-niobium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-ruthenium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-anode-mud"),
+      PM.unlock_recipe("pm-anode-sludge-seperation"),
+      PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
+      PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
+      PM.unlock_recipe("pm-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+ },
+  {
+    type = "technology",
+    name = "pm-rhodium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-anode-mud"),
+      PM.unlock_recipe("pm-anode-sludge-seperation"),
+      PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
+      PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
+      PM.unlock_recipe("pm-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+      },
+      time = 80
+    }
+ },
+  {
+    type = "technology",
+    name = "pm-rhenium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-anode-mud"),
+      PM.unlock_recipe("pm-anode-sludge-seperation"),
+      PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
+      PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
+      PM.unlock_recipe("pm-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
+    },
+    prerequisites = {"pm-metalloid-pack-unlock"},
+    unit =
+    {
+      count = 350,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -4685,7 +4820,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-advanced-advanced-advanced-transition-metal-science-pack")
     },
-    prerequisites = {"pm-osmium-processing", "pm-yttrium-processing"},
+    prerequisites = {"pm-osmium-processing", "pm-yttrium-processing", "pm-tantalum-processing", "pm-niobium-processing"},
     unit =
     {
       count = 450,
