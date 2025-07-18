@@ -33,36 +33,6 @@ events[defines.events.on_script_trigger_effect] = function (event)
 	func(event)
 end
 
---MARK: Cooled reactor collection
-
----@type type<data.EntityID, true>
-local cooled_reactors = {}
-
-for name, prototype in pairs(prototypes.get_entity_filtered{
-	{filter = "type", type = "reactor"}
-}) do
-	local energy_source = prototype.fluid_energy_source_prototype
-	if not energy_source then goto continue end
-
-	local connections = energy_source.fluid_box.pipe_connections
-	if #connections < 10 then goto continue end
-
-	for i = 1, 10, 1 do
-		if connections[i].connection_type ~= "linked" then
-			goto continue
-		end
-	end
-	for i = 11, #connections, 1 do
-		if connections[i].connection_category[1] ~= "null-category-fuck-off" then
-			goto continue
-		end
-	end
-
-	cooled_reactors[name] = true
-
-	::continue::
-end
-
 --MARK: placement
 
 ---@param reactor LuaEntity
@@ -97,6 +67,8 @@ function reactor_placed(reactor)
 	storage.reactors[furnace.unit_number--[[@as int]]] = reactor_info
 end
 
+---@type type<data.EntityID, true>
+local cooled_reactors = prototypes.mod_data["pm-cooled-reactors"].data
 
 ---@alias BuiltEventData
 ---| EventData.on_built_entity
