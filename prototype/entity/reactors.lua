@@ -106,6 +106,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 
   -- Add the coolant inputs/outputs to the heat input
   -- So they visually appear while placing
+  -- FIXME: We should be using RadiusVisualisationSpecification instead
   for _, fluidbox in pairs{coolant_fluidbox, coolant_exhuast_fluidbox} do
     for _, connection in pairs(fluidbox.pipe_connections) do
       -- Ignore the non-visual connections
@@ -114,7 +115,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
         index = index + 1
         input_connections[index] = connection
         
-        connection.connection_category = "null-category-fuck-off" -- Don't *actually* connect to anything
+        connection.connection_category = reactor.name.."-null-category-fuck-off-"..index -- Don't *actually* connect to anything
       end
     end
   end
