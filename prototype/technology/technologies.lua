@@ -4822,7 +4822,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-advanced-advanced-advanced-transition-metal-science-pack")
     },
-    prerequisites = {"pm-osmium-processing", "pm-yttrium-processing", "pm-tantalum-processing", "pm-niobium-processing"},
+    prerequisites = {"pm-osmium-processing", "pm-yttrium-processing", "pm-tantalum-processing", "pm-niobium-processing", "pm-rhodium-processing", "pm-rhenium-processing"},
     unit =
     {
       count = 450,
@@ -5058,6 +5058,31 @@ data:extend({
       time = 100
     }
   },
+  {
+    type = "technology",
+    name = "pm-expiremental-research-data",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-technectium-processing", "pm-dubnium-processing"},
+    unit =
+    {
+      count = 600,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+
 
 --MARK: AEM science
 {
