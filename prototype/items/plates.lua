@@ -307,6 +307,21 @@ data:extend({
     order = "i",
     stack_size = 100
   },
+    {
+    type = "item",
+    name = "pm-osmiridium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/osmiridium-plate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/plates/osmiridium-plate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/osmiridium-plate-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/plates/osmiridium-plate-3.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-iridium-tm",
+    order = "i",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["iron-plate"].subgroup = "pm-iron-tm"

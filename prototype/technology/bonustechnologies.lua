@@ -37,6 +37,7 @@ local PM = require("library")
   -- Beacon distribution
   -- Refined flammables
   -- Stronger explosives
+  -- Requester chest storage
 
 -- Both paths:
   -- Robot battery capacity
@@ -1073,9 +1074,7 @@ data:extend({
       time = 30
     },
     order = "c-k-m"
-  }
-
-
+  },
 })
 
 --MARK: V.Robot speed
