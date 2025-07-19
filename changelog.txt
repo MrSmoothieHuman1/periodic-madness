@@ -16,6 +16,7 @@ Date: 2025-12-07
     - Also added aqua regia, which is why nitric acid even got added! it was now or when i got to 0.8/0.9, so
     - Finally gave science its own tab! because god knows im not slowing down on unique science items and recipes.
     - Added Expiremental research data (technectium science), which is a special science pack that unlocks bonuses or things related to science.
+    - Finally added the first PM-endorsed infinite technologies, which is science pack recipe productivity!
 
   Changes:
     - Slightly nerfed research productivity.

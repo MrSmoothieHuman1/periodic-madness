@@ -5065,6 +5065,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-expiremental-research-data")
     },
     prerequisites = {"pm-technectium-processing", "pm-dubnium-processing"},
     unit =

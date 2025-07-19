@@ -84,6 +84,18 @@ data:extend({
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
+  {
+    type = "tool",
+    name = "pm-expiremental-research-data",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/science/expiremental-research-data.png",
+    subgroup = "pm-technectium-science",
+    order = "a",
+    stack_size = 100,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  }
 
 })
 

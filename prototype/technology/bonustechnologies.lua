@@ -1098,7 +1098,7 @@ data:extend({
       count_formula = "1.25^L*1000",
       ingredients =
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1122,7 +1122,7 @@ data:extend({
       count_formula = "1.25^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1146,7 +1146,7 @@ data:extend({
       count_formula = "1.25^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1170,7 +1170,7 @@ data:extend({
       count_formula = "1.5^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1194,7 +1194,7 @@ data:extend({
       count_formula = "1.5^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1218,7 +1218,7 @@ data:extend({
       count_formula = "1.5^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1242,7 +1242,7 @@ data:extend({
       count_formula = "1.75^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1266,7 +1266,7 @@ data:extend({
       count_formula = "1.75^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
@@ -1290,7 +1290,7 @@ data:extend({
       count_formula = "1.75^L*1000",
       ingredients = 
       {
-
+       {"pm-expiremental-research-data", 1}
       },
       time = 120
     }
