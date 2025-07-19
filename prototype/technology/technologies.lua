@@ -4963,7 +4963,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-inconel-625",
+    name = "pm-inconel-625-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
@@ -4994,7 +4994,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-inconel-625-heating-coil")
     },
-    prerequisites = {"pm-inconel-625", "pm-kasethal-heating-coils"},
+    prerequisites = {"pm-inconel-625-processing", "pm-kasethal-heating-coils"},
     unit =
     {
       count = 500,
