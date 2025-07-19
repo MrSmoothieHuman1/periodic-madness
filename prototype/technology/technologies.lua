@@ -607,7 +607,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-butane-cracking"),
-      PM.unlock_recipe("pm-naptha-fuel-canister")
+      PM.unlock_recipe("pm-naptha-fuel-canister"),
+      PM.unlock_recipe("pm-naptha-steam-cracking"),
     },
     prerequisites = {"oil-processing"},
     research_trigger = 
@@ -2483,7 +2484,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/chemical-based-resin.png",
     effects =
     {
-      PM.unlock_recipe("pm-naptha-steam-cracking"),
       PM.unlock_recipe("pm-acetone"),
       PM.unlock_recipe("pm-bisphenol-A"),
       PM.unlock_recipe("pm-chemical-resin")
