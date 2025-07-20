@@ -37,6 +37,7 @@ local PM = require("library")
   -- Beacon distribution
   -- Refined flammables
   -- Stronger explosives
+  -- Requester chest storage
 
 -- Both paths:
   -- Robot battery capacity
@@ -1073,9 +1074,227 @@ data:extend({
       time = 30
     },
     order = "c-k-m"
-  }
+  },
 
+  --MARK: Productivity
 
+  --MARK: Science prod
+  {
+    type = "technology",
+    name = "pm-transition-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/transition-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("automation-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-FUCK-transition-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data"},
+    order = "a",
+    unit =
+    {
+      count_formula = "1.25^L*1000",
+      ingredients =
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-transition-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/advanced-transition-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("logistic-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-advanced-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-FUCK-advanced-transition-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data"},
+    order = "b",
+    unit =
+    {
+      count_formula = "1.25^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-advanced-transition-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/advanced-advanced-transition-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("pm-advanced-advanced-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-advanced-advanced-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-FUCK-advanced-advanced-transition-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data"},
+    order = "c",
+    unit =
+    {
+      count_formula = "1.25^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-reactive-non-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/reactive-non-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("chemical-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-reactive-non-metals-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-FUCK-reactive-non-metals-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data", "chemical-science-pack"},
+    order = "d",
+    unit =
+    {
+      count_formula = "1.5^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-post-transition-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/post-transition-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("pm-post-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-post-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-FUCK-post-transition-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data"},
+    order = "e",
+    unit =
+    {
+      count_formula = "1.5^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-alkali-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/alkali-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("pm-alkali-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-alkali-metal-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-FUCK-alkali-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data", "pm-alkali-metal-pack-unlock"},
+    order = "f",
+    unit =
+    {
+      count_formula = "1.5^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-metalloid-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/metalloid-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("pm-metalloid-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-metalloid-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-FUCK-metalloid-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data"},
+    order = "g",
+    unit =
+    {
+      count_formula = "1.75^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-alkaline-earth-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/alkaline-earth-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("pm-alkaline-earth-metal-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-plastic-alkaline-earth-metal-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-FUCK-alkaline-earth-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data", "pm-alkaline-earth-metal-pack-unlock"},
+    order = "h",
+    unit =
+    {
+      count_formula = "1.75^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-advanced-advanced-transition-metal-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/advanced-advanced-advanced-transition-metal-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      PM.modify_recipe_productivity("pm-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-plastic-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-FUCK-advanced-advanced-advanced-transition-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-expiremental-research-data"},
+    order = "i",
+    unit =
+    {
+      count_formula = "1.75^L*1000",
+      ingredients = 
+      {
+       {"pm-expiremental-research-data", 1}
+      },
+      time = 120
+    }
+  },
 })
 
 --MARK: V.Robot speed

@@ -127,6 +127,7 @@ data:extend({
     {
         PM.ingredient("pm-yttrium-ore", 4),
         PM.ingredient("pm-molten-zinc", 5, "fluid"),
+        PM.ingredient("pm-osmiridium-plate", 2),
         PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
@@ -478,8 +479,34 @@ data:extend({
         PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 0)
     }
 },
+
+--MARK: Technectium science
+{
+    type = "recipe",
+    name = "pm-expiremental-research-data",
+    subgroup = "pm-technectium-science",
+    order = "a",
+    energy_required = 60,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("processing-unit", 4),
+        PM.ingredient("pm-polyethylene-plastic", 10),
+        PM.ingredient("pm-glass-fibers", 8)
+        --PM.ingredient("pm-technectium-ore", 2),
+        --PM.ingredient("pm-dubnium-ore", 2),
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-expiremental-research-data", 5),
+    }
+},
 })
 
 data.raw["recipe"]["chemical-science-pack"].order = "e"
 data.raw["recipe"]["production-science-pack"].order = "x"
 data.raw["recipe"]["utility-science-pack"].order = "xa"
+
+data.raw["item-subgroup"]["science-pack"].group = "pm-science"
+data.raw["item-subgroup"]["science-pack"].order = "b"
