@@ -11,7 +11,6 @@ local purple_belt = {r = 0.616, g = 0.169, b = 0.878}
 local pm_lab_inputs =
 {
   "automation-science-pack",
-  "military-science-pack",
   "logistic-science-pack",
   "pm-advanced-advanced-transition-metal-science-pack",
   "chemical-science-pack",
@@ -8756,7 +8755,7 @@ data.raw["storage-tank"]["storage-tank"].fast_replaceable_group = "pm-storage-ta
 
 data.raw["container"]["steel-chest"].next_upgrade = "pm-stainless-steel-chest"
 
-data.raw["lab"]["lab"].inputs = {"automation-science-pack", "logistic-science-pack","military-science-pack", "pm-advanced-advanced-transition-metal-science-pack" }
+data.raw["lab"]["lab"].inputs = {"automation-science-pack", "logistic-science-pack", "pm-advanced-advanced-transition-metal-science-pack" }
 
 data.raw["solar-panel"]["solar-panel"].production = "120kW"
 data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"

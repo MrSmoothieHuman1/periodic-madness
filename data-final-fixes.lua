@@ -127,6 +127,10 @@ for _, technology in pairs(data.raw["technology"]) do
 end
 end
 
+for _, recipe in pairs(data.raw.recipe) do
+    recipe.maximum_productivity = 99999999 --insane number, if anyone reaches it just give them a medal
+end
+
 data.raw["technology"]["military-science-pack"].hidden = true
 data.raw["recipe"]["military-science-pack"].hidden = true
 data.raw["recipe"]["military-science-pack"].hidden_in_factoriopedia = true
