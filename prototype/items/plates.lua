@@ -307,7 +307,7 @@ data:extend({
     order = "i",
     stack_size = 100
   },
-    {
+  {
     type = "item",
     name = "pm-osmiridium-plate",
     icon_size = 64,
@@ -320,6 +320,24 @@ data:extend({
     },
     subgroup = "pm-iridium-tm",
     order = "i",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-tantalum-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/tellurium-plate.png",
+    subgroup = "pm-tantalum-tm",
+    order = "f",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-niobium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/tellurium-plate.png",
+    subgroup = "pm-tantalum-tm",
+    order = "f",
     stack_size = 100
   },
 })

@@ -4685,7 +4685,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-coltan"),
+      PM.unlock_recipe("pm-coltan-powder"),
+      PM.unlock_recipe("pm-tantalite-niobite-tailings"),
+      PM.unlock_recipe("pm-tantalite-oxide"),
+      PM.unlock_recipe("pm-tantalum-ore"),
+      PM.unlock_recipe("pm-tantalum-plate"),
+      PM.unlock_recipe("pm-niobite-waste-water"),
+      PM.unlock_recipe("pm-niobite-waste-looping")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

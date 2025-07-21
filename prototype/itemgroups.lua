@@ -840,6 +840,18 @@ data:extend({
     group = "pm-transition-metals",
     order = "x"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-tantalum-tm",
+    group = "pm-transition-metals",
+    order = "y"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-niobium-tm",
+    group = "pm-transition-metals",
+    order = "z"
+  },
 
   --MARK: Post Transition
   {
