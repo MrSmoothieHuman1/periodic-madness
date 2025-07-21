@@ -4,7 +4,7 @@ local milestones = require("runtime.milestones")
 return {
 	add_remote_interface = function ()
 		remote.add_interface("periodic-madness", {
-			milestones_presets = milestones
+			milestones_preset = milestones
 		})
 	end
 }
