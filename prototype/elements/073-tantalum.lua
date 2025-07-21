@@ -8,7 +8,8 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-tantalum-tm",
-        order = "a"
+        order = "a",
+        stack_size = 250,
     },
     {
         type = "item",
@@ -16,6 +17,7 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-tantalum-tm",
-        order = "b"
+        order = "b",
+        stack_size = 400,
     }
 })
