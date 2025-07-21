@@ -24,7 +24,7 @@ if mods["stack-inserters"] then
         {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
-        {"pm-alkali-science-pack", 1}
+        {"pm-alkali-metal-science-pack", 1}
     }
     data.raw["technology"]["transport-belt-capacity-2"].prerequisites = {"pm-metalloid-pack-unlock", "pm-alkali-metal-pack-unlock", "transport-belt-capacity-1"}
     data.raw["technology"]["transport-belt-capacity-2"].unit.count = 1600
@@ -36,33 +36,7 @@ if mods["stack-inserters"] then
         {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
-        {"pm-alkali-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1}
-    }
-    data.raw["technology"]["transport-belt-capacity-3"].prerequisites = {"pm-alkaline-metal-pack-unlock", "transport-belt-capacity-2"}
-    data.raw["technology"]["transport-belt-capacity-3"].unit.count = 3200
-    data.raw["technology"]["transport-belt-capacity-3"].unit.ingredients =
-    {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-metalloid-science-pack", 1},
-        {"pm-alkali-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1}
-    }
-    data.raw["technology"]["transport-belt-capacity-4"].prerequisites = {"transport-belt-capacity-3"}
-    data.raw["technology"]["transport-belt-capacity-4"].unit.count = 6400
-    data.raw["technology"]["transport-belt-capacity-4"].unit.ingredients =
-    {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-metalloid-science-pack", 1},
-        {"pm-alkali-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
     }
 
