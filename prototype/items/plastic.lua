@@ -57,6 +57,3 @@ data:extend({
     stack_size = 100
   },
 })
-
-data.raw["recipe"]["plastic-bar"] = nil
-data.raw["item"]["plastic-bar"] = nil

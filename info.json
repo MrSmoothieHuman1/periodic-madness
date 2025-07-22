@@ -7,8 +7,6 @@
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0.59",
-    "! space-age >= 2.0",
-    "! quality",
     "? BrimStuff >= 1.0.6",
     "? icon_badges >= 1.1.9",
     "? Milestones >= 1.4.2",

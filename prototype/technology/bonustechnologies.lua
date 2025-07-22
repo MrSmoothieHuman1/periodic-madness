@@ -493,7 +493,7 @@ data:extend({
 --MARK: Mining prod
 {
   type = "technology",
-  name = "mining-productivity-5",
+  name = "pm-mining-productivity-5",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -502,7 +502,7 @@ data:extend({
       modifier = 0.2
     }
   },
-  prerequisites = {"mining-productivity-4", "pm-metalloid-pack-unlock"},
+  prerequisites = { "pm-metalloid-pack-unlock"},
   unit =
     {
       count = 1500,
@@ -520,7 +520,7 @@ data:extend({
 },
 {
   type = "technology",
-  name = "mining-productivity-6",
+  name = "pm-mining-productivity-6",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -529,7 +529,7 @@ data:extend({
       modifier = 0.2
     }
   },
-  prerequisites = {"mining-productivity-5"},
+  prerequisites = {"pm-mining-productivity-5"},
   unit =
     {
       count = 1850,
@@ -547,7 +547,7 @@ data:extend({
 },
 {
   type = "technology",
-  name = "mining-productivity-7",
+  name = "pm-mining-productivity-7",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -556,7 +556,7 @@ data:extend({
       modifier = 0.4
     }
   },
-  prerequisites = {"mining-productivity-6", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+  prerequisites = {"pm-mining-productivity-6", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
   unit =
     {
       count = 2300,
@@ -575,7 +575,7 @@ data:extend({
 },
 {
   type = "technology",
-  name = "mining-productivity-8",
+  name = "pm-mining-productivity-8",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -584,7 +584,7 @@ data:extend({
       modifier = 0.4
     }
   },
-  prerequisites = {"mining-productivity-7"},
+  prerequisites = {"pm-mining-productivity-7"},
   unit =
     {
       count = 2750,
@@ -1359,9 +1359,9 @@ data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
   {"pm-alkali-metal-science-pack", 1}
 }
 data.raw["technology"]["worker-robots-speed-5"].unit.count = 450
-data.raw["technology"]["worker-robots-speed-6"].infinite = false
 data.raw["technology"]["worker-robots-speed-6"].max_level = 6
 data.raw["technology"]["worker-robots-speed-6"].unit.count_formula = "700"
+data.raw["technology"]["worker-robots-speed-6"].unit.count = nil
 data.raw["technology"]["worker-robots-speed-6"].unit.time = 120
 data.raw["technology"]["worker-robots-speed-6"].effects =
 {
@@ -1490,7 +1490,7 @@ data.raw["technology"]["mining-productivity-3"].effects =
 {
   PM.modify("mining-drill-productivity-bonus", 0.1)
 }
-data.raw["technology"]["mining-productivity-3"].unit.count = 800
+data.raw["technology"]["mining-productivity-3"].unit.count = nil
 data.raw["technology"]["mining-productivity-3"].unit.ingredients = 
 {
   {"automation-science-pack", 1},
@@ -1499,21 +1499,7 @@ data.raw["technology"]["mining-productivity-3"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["mining-productivity-3"].prerequisites = {"mining-productivity-2", "pm-post-transition-metal-pack-unlock"}
-data.raw["technology"]["mining-productivity-4"].unit.ingredients = 
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-}
-data.raw["technology"]["mining-productivity-4"].max_level = 4
-data.raw["technology"]["mining-productivity-4"].unit.time = 80
-data.raw["technology"]["mining-productivity-4"].unit.count_formula = "1200"
-data.raw["technology"]["mining-productivity-4"].prerequisites = {"mining-productivity-3"}
-data.raw["technology"]["mining-productivity-4"].effects =
-{
-    PM.modify("mining-drill-productivity-bonus", 0.1)
-}
+
 
 --MARK: V.Shooting damage
 data.raw["technology"]["physical-projectile-damage-1"].effects =
