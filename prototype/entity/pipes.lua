@@ -366,7 +366,7 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe.png",
         flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 0.35, result = "pm-stainless-steel-pipe" },
+        minable = { mining_time = 0.35, result = "pm-osmium-pipe" },
         max_health = 1200,
         corpse = "pipe-remnants",
         resistances =

@@ -830,6 +830,26 @@ data:extend({
     place_result = "pm-coil-heater",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-osmium-pipe",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe.png",
+    subgroup = "energy-pipe-distribution",
+    order = "i",
+    place_result = "pm-osmium-pipe",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-osmium-pipe-to-ground",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe-to-ground.png",
+    subgroup = "energy-pipe-distribution",
+    order = "j",
+    place_result = "pm-stainless-steel-pipe-to-ground",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
