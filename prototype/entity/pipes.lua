@@ -29,6 +29,7 @@ data:extend({
                 percent = 85,
             }
         },
+        hide_resistances = false,
         fast_replaceable_group = "pipe",
         collision_box = { { -0.29, -0.29 }, { 0.29, 0.29 } },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
@@ -372,17 +373,24 @@ data:extend({
         {
             {
                 type = "fire",
-                percent = 75,
+                percent = 80,
             },
             {
                 type = "impact",
                 percent = 90,
+                decrease = 5
             },
             {
                 type = "acid",
+                percent = 95,
+            },
+            {
+                type = "physical",
                 percent = 85,
+                decrease = 2,
             }
         },
+        hide_resistances = false,
         fast_replaceable_group = "pipe",
         collision_box = { { -0.29, -0.29 }, { 0.29, 0.29 } },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
