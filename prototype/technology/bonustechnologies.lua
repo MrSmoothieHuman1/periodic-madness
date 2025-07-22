@@ -493,7 +493,7 @@ data:extend({
 --MARK: Mining prod
 {
   type = "technology",
-  name = "mining-productivity-5",
+  name = "pm-mining-productivity-5",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -520,7 +520,7 @@ data:extend({
 },
 {
   type = "technology",
-  name = "mining-productivity-6",
+  name = "pm-mining-productivity-6",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -529,7 +529,7 @@ data:extend({
       modifier = 0.2
     }
   },
-  prerequisites = {"mining-productivity-5"},
+  prerequisites = {"pm-mining-productivity-5"},
   unit =
     {
       count = 1850,
@@ -547,7 +547,7 @@ data:extend({
 },
 {
   type = "technology",
-  name = "mining-productivity-7",
+  name = "pm-mining-productivity-7",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -556,7 +556,7 @@ data:extend({
       modifier = 0.4
     }
   },
-  prerequisites = {"mining-productivity-6", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+  prerequisites = {"pm-mining-productivity-6", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
   unit =
     {
       count = 2300,
@@ -575,7 +575,7 @@ data:extend({
 },
 {
   type = "technology",
-  name = "mining-productivity-8",
+  name = "pm-mining-productivity-8",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
   effects =
   {
@@ -584,7 +584,7 @@ data:extend({
       modifier = 0.4
     }
   },
-  prerequisites = {"mining-productivity-7"},
+  prerequisites = {"pm-mining-productivity-7"},
   unit =
     {
       count = 2750,
