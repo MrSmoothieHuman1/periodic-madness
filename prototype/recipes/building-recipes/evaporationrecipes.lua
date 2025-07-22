@@ -119,4 +119,22 @@ data:extend({
     },
     results = {}
   },
+  {
+    type = "recipe",
+    name = "pm-steam-condensation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/steam-condensation.png",
+    subgroup = "pm-acid-crafting",
+    category = "pm-evaporation",
+    hide_from_player_crafting = true,
+    energy_required = 1,
+    ingredients =
+    {
+      PM.ingredient("steam", 10, "fluid"),
+    },
+    results = 
+    {
+      PM.product("water", 1, "fluid")
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

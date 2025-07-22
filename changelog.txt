@@ -24,6 +24,79 @@ Date: 2025-12-07
     - Moved naptha steam cracking into A-ATM.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.509
+Date: 2025-22-07
+  The never play TFG and mod factorio at the same time, heed my warning Update:
+
+  Additions:
+    - Added a russian translation, thanks to AncientElis on the discord server!
+
+  Changes:
+    - Updated and expanded PM milestones compatibility.
+
+  Fixes:
+    - Fixed milestone compatibility.
+    - Fixed steam > water recipe being the wrong ratio.
+    - Fixed locale for shotgun slug bonuses.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.508
+Date: 2025-21-07
+  The AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH x2 Update:
+
+  Additions:
+    - Added a recipe for turning steam back into water.
+
+  Fixes:
+    - Fixed stack inserter mod compatibility.
+    - Fixed locale issues with vehicle fuel category.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.507
+Date: 2025-20-07
+  The AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH Update:
+
+  Fixes:
+    - Fixed zinc/nickel ore patches not appearing on versions made before 0.6.500.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.506
+Date: 2025-16-07
+  The i hope you guys enjoy a new science type in 0.7! Update:
+
+  Changes:
+    - Rebalanced thallium mixing. yes it was that bad to get its own update
+    - Changed patina/ferrum leeching to be negative on acidic water, to make nickel/zinc ezekiel more appealing with a sulfur sink.
+
+  Fixes:
+    - FUCKING FINALLY REMOVED MILITARY SCIENCE WOOHOOO!!!!
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.505
+Date: 2025-16-07
+  The 46 Days Remain Update:
+
+  Changes:
+    - ACTUALLY made concrete/refined concrete use 4 HW framing instead of 5.
+
+  Fixes:
+    - Fixed zinc chromic/normal leeching recipes being swapped in ordering.
+    - Fixed icons that still used the old chromic acid icon.
+    - Fixed chromic iron/copper icons looking weird.
+    - Updated icon for chromic acid neutralisation.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.504
+Date: 2025-14-07
+  The 48 Days Remain Update:
+
+  Additions:
+    - Re-added the sodium metal sodium hydroxide metal recipe.
+
+  Changes:
+    - Updated high/low sulfur residual icons.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.503
 Date: 2025-14-07
   The doing daily updates for the inflated download count, no other reason Update:
