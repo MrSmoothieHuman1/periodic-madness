@@ -5,7 +5,7 @@ data:extend({
   {
     type = "item",
     name = "pm-heating-plating",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/heating-plating.png",
     subgroup = "pm-multimetal-temp-plates",
     order = "a",

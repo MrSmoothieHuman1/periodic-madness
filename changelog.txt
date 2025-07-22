@@ -22,6 +22,7 @@ Date: 2025-12-07
     - Slightly nerfed research productivity.
     - Changed barium nitrate to use nitric acid.
     - Moved naptha steam cracking into A-ATM.
+    - Rerendered and slightly remodelled heating/cooling plating.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.509
