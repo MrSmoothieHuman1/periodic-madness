@@ -1,10 +1,8 @@
 local milestones = require("runtime.milestones")
 
----@type event_handler
-return {
-	add_remote_interface = function ()
-		remote.add_interface("periodic-madness", {
-			milestones_preset = milestones
-		})
-	end
-}
+--NOTE: Using the event_handler method for registering interfaces, means it happens after Milestones searches for it :(
+remote.add_interface("periodic-madness", {
+	milestones_presets = milestones
+})
+
+return {}
