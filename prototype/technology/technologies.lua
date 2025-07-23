@@ -1559,7 +1559,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-better-steel-plate"),
       PM.unlock_recipe("pm-better-stainless-steel-alloy"),
-      PM.unlock_recipe("pm-kasethal-plate")
+      PM.unlock_recipe("pm-kasethal-plate"),
+      PM.unlock_recipe("pm-kasethal-heating-plating")
     },
     prerequisites = {"pm-vanadium-processing", "pm-chrominum-processing", "pm-aluminium-processing"},
     unit =

@@ -96,6 +96,37 @@ data:extend({
       PM.product("pm-heating-plating", 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-kasethal-heating-plating",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/heating-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/kasethal-plate.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
+    energy_required = 1,
+    show_amount_in_title = true,
+    subgroup = "pm-multimetal-temp-plates",
+    order = "a[pm-heating-plating]",
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-basic-panelling", 2),
+      PM.ingredient("pm-kasethal-plate", 1)
+    },
+    results =
+    {
+      PM.product("pm-heating-plating", 4)
+    }
+  },
 
   {
     type = "recipe",
