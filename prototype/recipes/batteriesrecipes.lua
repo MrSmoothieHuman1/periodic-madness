@@ -278,7 +278,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-vanadium-battery-charging",
+    name = "pm-charged-vanadium-redox-battery",
     category = "pm-battery-charging",
     subgroup = "pm-batteries",
     order = "la",
@@ -291,13 +291,13 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-charged-vanadium-redox-battery", 1, 0.9),
-      PM.product_chance("pm-broken-vanadium-redox-battery", 1, 0.1)
+      PM.product_chance("pm-charged-vanadium-redox-battery", 1, 0.8),
+      PM.product_chance("pm-broken-vanadium-redox-battery", 1, 0.2)
     }
   },
   {
     type = "recipe",
-    name = "pm-lithium-sulfur-battery-charging",
+    name = "pm-charged-lithium-sulfur-battery",
     category = "pm-battery-charging",
     subgroup = "pm-batteries",
     order = "oa",
@@ -310,8 +310,46 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-charged-lithium-sulfur-battery", 1, 0.95),
-      PM.product_chance("pm-broken-lithium-sulfur-battery", 1, 0.05)
+      PM.product_chance("pm-charged-lithium-sulfur-battery", 1, 0.9),
+      PM.product_chance("pm-broken-lithium-sulfur-battery", 1, 0.1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-vanadium-redox-battery-fixing",
+    category = "crafting-with-fluid",
+    subgroup = "pm-batteries",
+    order = "lb",
+    energy_required = 5,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-broken-vanadium-redox-battery", 2),
+      PM.ingredient("pm-zinc-cathode", 3),
+      PM.ingredient("pm-vanadium-oxide-negative-solution", 20, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-vanadium-redox-battery", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lithium-sulfur-battery-fixing",
+    category = "crafting-with-fluid",
+    subgroup = "pm-batteries",
+    order = "ob",
+    energy_required = 5,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-broken-vanadium-redox-battery", 2),
+      PM.ingredient("pm-lithium-ore", 6),
+      PM.ingredient("pm-ethylene-carbonate", 20, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-lithium-sulfur-battery", 2)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

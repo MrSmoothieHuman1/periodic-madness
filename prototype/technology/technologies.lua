@@ -1535,7 +1535,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-battery-charger"),
       PM.unlock_recipe("pm-battery-discharger"),
-      PM.unlock_recipe("pm-vanadium-battery-charging"),
+      PM.unlock_recipe("pm-charged-vanadium-redox-battery"),
+      PM.unlock_recipe("pm-vanadium-redox-battery-fixing")
     },
     prerequisites = {"pm-voltatic-piles", "advanced-circuit", "pm-vanadium-oxide-redox-batteries"},
     unit =
@@ -3879,7 +3880,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-battery-charging.png",
     effects =
     {
-      PM.unlock_recipe("pm-lithium-sulfur-battery-charging"),
+      PM.unlock_recipe("pm-charged-lithium-sulfur-battery"),
+      PM.unlock_recipe("pm-lithium-sulfur-battery-fixing")
     },
     prerequisites = {"pm-basic-battery-charging", "pm-lithium-sulfur-battery"},
     unit =
