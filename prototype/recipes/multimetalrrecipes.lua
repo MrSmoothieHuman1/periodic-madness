@@ -6,8 +6,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-gold-heating-plating",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/gold-heating-plating.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/heating-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/gold-wire.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -26,8 +37,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-copper-heating-plating",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-heating-plating.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/heating-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__base__/graphics/icons/copper-cable.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -46,8 +68,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-brass-heating-plating",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/brass-heating-plating.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/heating-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/brass-plate.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
