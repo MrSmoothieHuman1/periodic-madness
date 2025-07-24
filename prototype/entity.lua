@@ -8852,3 +8852,5 @@ data.raw["furnace"]["electric-furnace"].energy_source.emissions_per_minute = {po
 
 data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
 data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 10
+
+data.raw["boiler"]["boiler"].energy_source.burnt_inventory_size = 1
