@@ -776,6 +776,22 @@ data.raw["recipe"]["bulk-inserter"].ingredients =
   PM.ingredient("fast-inserter", 1),
   PM.ingredient("pm-polyethylene-plastic", 2)
 }
+data.raw["recipe"]["artillery-turret"].category = "crafting-with-fluid"
+data.raw["recipe"]["artillery-turret"].ingredients = 
+{
+  PM.ingredient("pm-heavyweight-framing", 32),
+  PM.ingredient("processing-unit", 5),
+  PM.ingredient("pm-heavyweight-panelling", 24),
+  PM.ingredient("pm-heavy-lubricant", 10, "fluid"),
+  PM.ingredient("refined-concrete", 8)
+}
+data.raw["recipe"]["artillery-shell"].ingredients = 
+{
+  PM.ingredient("explosives", 3),
+  PM.ingredient("copper-plate", 2),
+  PM.ingredient("pm-tungsten-plate", 4),
+  PM.ingredient("advanced-circuit", 1)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15

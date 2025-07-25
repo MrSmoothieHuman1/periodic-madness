@@ -951,6 +951,17 @@ data.raw["technology"]["steam-power"].effects =
   PM.unlock_recipe("pm-dirty-boiler"),
   PM.unlock_recipe("steam-engine")
 }
+data.raw["technology"]["artillery"].prerequisites = {"pm-metalloid-pack-unlock"}
+data.raw["technology"]["artillery"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["artillery"].unit.time = 60
+data.raw["technology"]["artillery"].unit.count = 450
 
 data.raw["technology"]["productivity-module"].icon_size = 256
 data.raw["technology"]["productivity-module"].icon = "__periodic-madness__/graphics/technology/productivity-module-1-tech.png"
