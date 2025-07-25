@@ -88,20 +88,19 @@ data:extend({
     {
         type = "recipe",
         name = "pm-selenous-acid",
-        icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
         enabled = false,
         energy_required = 12.5,
         category = "pm-mixing",
         subgroup = "pm-selenium-rnm",
         order = "c",
+        main_product = "pm-selenous-acid",
         ingredients =
         {
             PM.ingredient("pm-selenium-dioxide", 4),
             PM.ingredient("water", 25, "fluid"),
             PM.ingredient("pm-chromic-acid", 25, "fluid")
         },
-        products =
+        results =
         {
             PM.product("pm-selenous-acid", 25, "fluid"),
             PM.product("pm-acidic-water", 12.5, "fluid")
