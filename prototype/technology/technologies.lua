@@ -4748,7 +4748,6 @@ data:extend({
       PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
       PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
       PM.unlock_recipe("pm-filtered-anode-sludge"),
-      PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
@@ -4777,7 +4776,6 @@ data:extend({
       PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
       PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
       PM.unlock_recipe("pm-filtered-anode-sludge"),
-      PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
@@ -4806,7 +4804,6 @@ data:extend({
       PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
       PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
       PM.unlock_recipe("pm-filtered-anode-sludge"),
-      PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
@@ -5642,7 +5639,7 @@ data:extend({
     name = "pm-selenium-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
       
     },
@@ -5670,7 +5667,7 @@ data:extend({
     name = "pm-selenium-sulfur-battery",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/selenium-sulfur-battery.png",
-    effects = 
+    effects =
     {
       
     },

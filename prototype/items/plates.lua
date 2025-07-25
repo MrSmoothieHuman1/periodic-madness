@@ -340,6 +340,15 @@ data:extend({
     order = "f",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-selenium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/tellurium-plate.png",
+    subgroup = "pm-selenium-rnm",
+    order = "e",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["iron-plate"].subgroup = "pm-iron-tm"

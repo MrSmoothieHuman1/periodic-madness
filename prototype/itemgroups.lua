@@ -586,6 +586,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-selenium-rnm",
+    group = "pm-reactive-non-metals",
+    order = "ja"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-air-filters-rnm",
     group = "pm-reactive-non-metals",
     order = "ja"
