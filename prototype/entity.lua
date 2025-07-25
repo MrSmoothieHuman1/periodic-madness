@@ -2930,7 +2930,7 @@ data:extend({
     },
   }--[[@as data.AssemblingMachinePrototype]],
   {
-    type = "furnace",
+    type = "assembling-machine",
     name = "pm-factorian-bacteria-greenhouse",
     icon_size = 160,
     icon = "__periodic-madness__/graphics/icons/buildings/factorian-bacteria-greenhouse.png",
@@ -2942,7 +2942,7 @@ data:extend({
     corpse = "pm-factorian-bacteria-greenhouse",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = { "pm-bacteria-incubating" },
-    crafting_speed = 2,
+    crafting_speed = 1.25,
     source_inventory_size = 1,
     result_inventory_size = 1,
     energy_source =
@@ -2993,19 +2993,43 @@ data:extend({
           production_type = "input",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0, -2}}},
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {1, -2}}},
+        },
+        {
+          production_type = "input",
+          pipe_covers = pipecoverspictures(),
+          volume = 100,
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-1, -2}}},
+        },
+        {
+          production_type = "input",
+          pipe_covers = pipecoverspictures(),
+          volume = 100,
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {1, 2}}},
+        },
+        {
+          production_type = "input",
+          pipe_covers = pipecoverspictures(),
+          volume = 100,
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {-1, 2}}},
         },
         {
           production_type = "output",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0, 2}}},
+          pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2, 2}}},
         },
         {
           production_type = "output",
           pipe_covers = pipecoverspictures(),
           volume = 100,
           pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2, 0}}},
+        },
+        {
+          production_type = "output",
+          pipe_covers = pipecoverspictures(),
+          volume = 100,
+          pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2, -2}}},
         },
       }
   }--[[@as data.FurnacePrototype]],
