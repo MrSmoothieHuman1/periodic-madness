@@ -344,7 +344,7 @@ data:extend({
     type = "item",
     name = "pm-selenium-plate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/tellurium-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/selenium-plate.png",
     subgroup = "pm-selenium-rnm",
     order = "e",
     stack_size = 100
