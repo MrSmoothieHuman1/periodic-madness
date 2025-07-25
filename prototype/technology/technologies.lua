@@ -5641,7 +5641,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-      
+      PM.unlock_recipe("pm-selenium-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-selenium-dioxide"),
+      PM.unlock_recipe("pm-selenous-acid"),
+      PM.unlock_recipe("pm-selenium-ore"),
+      PM.unlock_recipe("pm-selenium-plate")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =
