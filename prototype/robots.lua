@@ -378,13 +378,13 @@ local robots =
 data:extend(robots)
 
 data.raw["construction-robot"]["construction-robot"].max_energy = "3.5MJ"
-data.raw["construction-robot"]["construction-robot"].speed = 0.045
+data.raw["construction-robot"]["construction-robot"].speed = 0.055
 data.raw["construction-robot"]["construction-robot"].speed_multiplier_when_out_of_energy = 0.12
 data.raw["construction-robot"]["construction-robot"].energy_per_tick = "0.015kJ"
 data.raw["construction-robot"]["construction-robot"].max_payload_size = 2
 
 data.raw["logistic-robot"]["logistic-robot"].max_energy = "3.5MJ"
-data.raw["logistic-robot"]["logistic-robot"].speed = 0.045
+data.raw["logistic-robot"]["logistic-robot"].speed = 0.055
 data.raw["logistic-robot"]["logistic-robot"].speed_multiplier_when_out_of_energy = 0.12
 data.raw["logistic-robot"]["logistic-robot"].energy_per_tick = "0.015kJ"
 data.raw["logistic-robot"]["logistic-robot"].max_payload_size = 2
