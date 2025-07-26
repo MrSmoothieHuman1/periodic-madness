@@ -35,8 +35,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-charged-voltatic-pile", 1, 0.8),
-      PM.product_chance("pm-broken-voltatic-pile", 1, 0.2)
+      PM.product_chance("pm-charged-voltatic-pile", 1, 0.66),
+      PM.product_chance("pm-broken-voltatic-pile", 1, 0.33)
     }
   },
   {

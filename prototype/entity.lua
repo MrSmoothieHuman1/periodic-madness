@@ -1321,8 +1321,9 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      emissions_per_minute = {pollution = 2.5},
+      emissions_per_minute = {pollution = 5},
       fuel_inventory_size = 1,
+      burnt_inventory_size = 1,
       fuel_categories = {"chemical", "pm-fuel-canisters"},
       light_flicker = nil, -- Default is to not flicker, and it doesn't take a boolean anyways
     },
@@ -8878,3 +8879,5 @@ data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
 data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 10
 
 data.raw["boiler"]["boiler"].energy_source.burnt_inventory_size = 1
+data.raw["mining-drill"]["burner-mining-drill"].energy_source.burnt_inventory_size = 1
+data.raw["inserter"]["burner-inserter"].energy_source.burnt_inventory_size = 1

@@ -111,6 +111,7 @@ data:extend({
     },
     subgroup = "pm-batteries",
     order = "ja",
+    burnt_result = "pm-vanadium-redox-battery",
     fuel_category = "pm-charged-batteries",
     fuel_value = "50MJ",
     stack_size = 15
@@ -122,7 +123,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/vanadium-redox-battery.png",
     subgroup = "pm-batteries",
     order = "jb",
-    stack_size = 150
+    stack_size = 30
   },
   {
     type = "item",
@@ -131,7 +132,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/lithium-sulfur-battery.png",
     subgroup = "pm-batteries",
     order = "l",
-    stack_size = 100
+    stack_size = 250
   },
   {
     type = "item",
@@ -158,6 +159,7 @@ data:extend({
     },
     subgroup = "pm-batteries",
     order = "la",
+    burnt_result = "pm-lithium-sulfur-battery",
     fuel_category = "pm-charged-batteries",
     fuel_value = "25MJ",
     stack_size = 25
@@ -169,7 +171,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/lithium-sulfur-battery.png",
     subgroup = "pm-batteries",
     order = "lb",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -178,7 +180,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/lithium-cobalt-battery.png",
     subgroup = "pm-batteries",
     order = "k",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
