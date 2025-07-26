@@ -293,7 +293,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-lead-plate", 3),
-      PM.ingredient("pm-hydroflouric-acid", 6)
+      PM.ingredient("pm-hydroflouric-acid", 6, "fluid")
     },
     results =
     {
@@ -319,7 +319,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-sulfur-battery", 1)
+      PM.product("pm-selenium-sulfur-battery", 1)
     }
   },
 

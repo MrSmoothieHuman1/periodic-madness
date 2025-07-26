@@ -184,6 +184,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-selenium-sulfur-battery",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/selenium-sulfur-battery.png",
+    subgroup = "pm-batteries",
+    order = "q",
+    stack_size = 300
+  },
+  {
+    type = "item",
     name = "pm-battery-casing",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/battery-casing.png",
