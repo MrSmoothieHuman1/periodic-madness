@@ -5673,7 +5673,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/selenium-sulfur-battery.png",
     effects =
     {
-      
+      PM.unlock_recipe("pm-selenium-sulfur-battery")
     },
     prerequisites = {"pm-selenium-processing"},
     unit =

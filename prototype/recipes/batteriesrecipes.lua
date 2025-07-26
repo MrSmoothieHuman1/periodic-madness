@@ -275,6 +275,27 @@ data:extend({
       PM.product("pm-lithium-sulfur-battery", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-selenium-sulfur-battery",
+    category = "chemistry",
+    subgroup = "pm-batteries",
+    order = "o",
+    energy_required = 6,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-battery-casing", 1),
+      PM.ingredient("pm-ethylene-carbonate", 40, "fluid"),
+      PM.ingredient("pm-selenium-plate", 6),
+      PM.ingredient("sulfur", 8),
+      PM.ingredient("pm-lithium-ore", 8)
+    },
+    results =
+    {
+      PM.product("pm-lithium-sulfur-battery", 1)
+    }
+  },
 
   {
     type = "recipe",
