@@ -451,6 +451,7 @@ data.raw["ammo"]["explosive-uranium-cannon-shell"].subgroup = "pm-rockets"
 data.raw["ammo"]["explosive-uranium-cannon-shell"].order = "h"
 data.raw["recipe"]["explosive-uranium-cannon-shell"].subgroup = "pm-rockets"
 data.raw["recipe"]["explosive-uranium-cannon-shell"].order = "h"
+data.raw["ammo"]["artillery-shell"].stack_size = 2
 data.raw["ammo"]["artillery-shell"].subgroup = "pm-rockets"
 data.raw["ammo"]["artillery-shell"].order = "i"
 data.raw["recipe"]["artillery-shell"].subgroup = "pm-rockets"
