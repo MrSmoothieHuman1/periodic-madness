@@ -572,14 +572,14 @@ data.raw["resource"]["copper-ore"].icon = "__periodic-madness__/graphics/icons/o
 
 --MARK: Bot speed multiplier
 local vanadium_speed_setting = ({
-  ["0.25x"] = 0.045 * 0.25,
-  ["0.5x"] = 0.045 * 0.5,
-  ["0.75x"] = 0.045 * 0.75,
-  ["1x"] = 0.045,
-  ["1.25x"] = 0.045 * 1.25,
-  ["1.5x"] = 0.045 * 1.5,
-  ["1.75x"] = 0.045 * 1.75,
-  ["2x"] = 0.09,
+  ["0.25x"] = 0.055 * 0.25,
+  ["0.5x"] = 0.055 * 0.5,
+  ["0.75x"] = 0.055 * 0.75,
+  ["1x"] = 0.055,
+  ["1.25x"] = 0.055 * 1.25,
+  ["1.5x"] = 0.055 * 1.5,
+  ["1.75x"] = 0.055 * 1.75,
+  ["2x"] = 0.55 * 2,
 
 })[settings.startup["pm-vanadium-robot-speed-multiplier"].value]
 data.raw["construction-robot"]["construction-robot"].speed = vanadium_speed_setting
