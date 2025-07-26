@@ -743,33 +743,33 @@ data.raw["recipe"]["refined-concrete"].results =
 {
   PM.product("refined-concrete", 2)
 }
-data.raw["recipe"]["hazard-concrete"].ingredients = 
+data.raw["recipe"]["hazard-concrete"].ingredients =
 {
   PM.ingredient("concrete", 5),
   PM.ingredient("pm-cadnium-sulfate", 3)
 }
-data.raw["recipe"]["hazard-concrete"].results = 
+data.raw["recipe"]["hazard-concrete"].results =
 {
   PM.product("hazard-concrete", 5)
 }
-data.raw["recipe"]["refined-hazard-concrete"].ingredients = 
+data.raw["recipe"]["refined-hazard-concrete"].ingredients =
 {
   PM.ingredient("refined-concrete", 5),
   PM.ingredient("pm-cadnium-sulfate", 3)
 }
-data.raw["recipe"]["refined-hazard-concrete"].results = 
+data.raw["recipe"]["refined-hazard-concrete"].results =
 {
   PM.product("refined-hazard-concrete", 5)
 }
 data.raw["recipe"]["cliff-explosives"].category = "crafting-with-fluid"
-data.raw["recipe"]["cliff-explosives"].ingredients = 
+data.raw["recipe"]["cliff-explosives"].ingredients =
 {
   PM.ingredient("explosives", 8),
   PM.ingredient("pm-polyethylene-plastic", 5),
   PM.ingredient("pm-gunpowder", 4),
   PM.ingredient("pm-naptha", 6, "fluid")
 }
-data.raw["recipe"]["bulk-inserter"].ingredients = 
+data.raw["recipe"]["bulk-inserter"].ingredients =
 {
   PM.ingredient("advanced-circuit", 1),
   PM.ingredient("electronic-circuit", 5),
@@ -777,7 +777,7 @@ data.raw["recipe"]["bulk-inserter"].ingredients =
   PM.ingredient("pm-polyethylene-plastic", 2)
 }
 data.raw["recipe"]["artillery-turret"].category = "crafting-with-fluid"
-data.raw["recipe"]["artillery-turret"].ingredients = 
+data.raw["recipe"]["artillery-turret"].ingredients =
 {
   PM.ingredient("pm-heavyweight-framing", 32),
   PM.ingredient("processing-unit", 5),
@@ -785,12 +785,18 @@ data.raw["recipe"]["artillery-turret"].ingredients =
   PM.ingredient("pm-heavy-lubricant", 10, "fluid"),
   PM.ingredient("refined-concrete", 8)
 }
-data.raw["recipe"]["artillery-shell"].ingredients = 
+data.raw["recipe"]["artillery-shell"].ingredients =
 {
   PM.ingredient("explosives", 3),
   PM.ingredient("copper-plate", 2),
   PM.ingredient("pm-tungsten-plate", 4),
   PM.ingredient("advanced-circuit", 1)
+}
+data.raw["recipe"]["artillery-wagon"].ingredients =
+{
+  PM.ingredient("artillery-turret", 1),
+  PM.ingredient("electric-engine-unit", 4),
+  PM.ingredient("pm-vulcanised-rubber", 16)
 }
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
