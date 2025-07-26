@@ -132,6 +132,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-batteries",
     order = "i",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vanadium-ore", 4),
@@ -185,6 +186,7 @@ data:extend({
     energy_required = 2,
     subgroup = "pm-batteries",
     order = "e",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 2),
@@ -204,6 +206,7 @@ data:extend({
     order = "l",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-battery-casing", 1),
@@ -225,6 +228,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-batteries",
     order = "m",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-carbon-dioxide-gas", 10, "fluid"),
@@ -243,6 +247,7 @@ data:extend({
     order = "n",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-battery-casing", 1),
@@ -263,6 +268,7 @@ data:extend({
     order = "o",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-battery-casing", 2),
@@ -277,16 +283,36 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-lead-fluoride",
+    enabled = false,
+    energy_required = 3,
+    category = "pm-acids",
+    subgroup = "pm-batteries",
+    order = "p",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-lead-plate", 3),
+      PM.ingredient("pm-hydroflouric-acid", 6)
+    },
+    results =
+    {
+      PM.product("pm-lead-fluoride", 1)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-selenium-sulfur-battery",
     category = "chemistry",
     subgroup = "pm-batteries",
-    order = "o",
+    order = "q",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-battery-casing", 1),
-      PM.ingredient("pm-ethylene-carbonate", 40, "fluid"),
+      PM.ingredient("pm-lead-fluoride", 2),
       PM.ingredient("pm-selenium-plate", 6),
       PM.ingredient("sulfur", 8),
       PM.ingredient("pm-lithium-ore", 8)

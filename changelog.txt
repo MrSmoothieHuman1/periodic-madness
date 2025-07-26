@@ -18,6 +18,7 @@ Date: 2025-12-07
     - Added Expiremental research data (technectium science), which is a special science pack that unlocks bonuses or things related to science.
     - Finally added the first PM-endorsed infinite technologies, which is science pack recipe productivity!
     - Added new recipes for Mulitmetal items.
+    - Added selenium batteries, as an end-game battery unlock. It currently only has a charged variant + new battery equipment, but will get more soon.
 
   Changes:
     - Slightly nerfed research productivity.
