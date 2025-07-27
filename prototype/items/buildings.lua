@@ -850,6 +850,16 @@ data:extend({
     place_result = "pm-stainless-steel-pipe-to-ground",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-assembling-machine-4",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/assembling-machine-4.png",
+    subgroup = "production-machine",
+    order = "ca",
+    place_result = "pm-assembling-machine-4",
+    stack_size = 50
+  }
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

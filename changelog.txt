@@ -19,6 +19,7 @@ Date: 2025-12-07
     - Finally added the first PM-endorsed infinite technologies, which is science pack recipe productivity!
     - Added new recipes for Mulitmetal items.
     - Added selenium batteries, as an end-game battery unlock. It currently only has a charged variant + new battery equipment, but will get more soon.
+    - Added the obligatory assembling machine 4! it has a crafting speed of 1.75, with 6 module slots and the same amount of pipes.
 
   Changes:
     - Slightly nerfed research productivity.

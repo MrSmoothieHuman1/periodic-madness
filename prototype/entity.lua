@@ -8641,7 +8641,7 @@ fluid_boxes =
     name = "pm-assembling-machine-4",
     icon = "__periodic-madness__/graphics/icons/buildings/assembling-machine-4.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {mining_time = 0.3, result = "assembling-machine-3"},
+    minable = {mining_time = 0.3, result = "pm-assembling-machine-4"},
     max_health = 650,
     corpse = "assembling-machine-3-remnants",
     dying_explosion = "assembling-machine-3-explosion",
