@@ -2708,6 +2708,7 @@ data:extend({
     crafting_categories = { "pm-air-filtering" },
     energy_usage = "1kW",
     crafting_speed = 1,
+    allowed_module_categories = {"speed", "productivity", "efficiency"},
     energy_source = 
     {
       type = "void", 
