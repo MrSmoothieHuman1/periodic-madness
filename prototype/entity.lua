@@ -257,6 +257,49 @@ function pm_electric_mining_drill_horizontal2_animation()
   }
 end
 
+function pm_assembler4pipepictures()
+  return
+  {
+    north =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-N.png",
+      priority = "extra-high",
+      width = 71,
+      height = 38,
+      shift = util.by_pixel(2.25, 13.5),
+      scale = 0.5
+    },
+    east =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-E.png",
+      priority = "extra-high",
+      width = 42,
+      height = 76,
+      shift = util.by_pixel(-24.5, 1),
+      scale = 0.5
+    },
+    south =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-S.png",
+      priority = "extra-high",
+      width = 88,
+      height = 61,
+      shift = util.by_pixel(0, -31.25),
+      scale = 0.5
+    },
+    west =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-W.png",
+      priority = "extra-high",
+      width = 39,
+      height = 73,
+      shift = util.by_pixel(25.75, 1.25),
+      scale = 0.5
+    }
+  }
+end
+
+
 data:extend({
 
   {
@@ -8593,6 +8636,119 @@ fluid_boxes =
     },
   },
 }--[[@as data.AssemblingMachinePrototype]],
+{
+    type = "assembling-machine",
+    name = "pm-assembling-machine-4",
+    icon = "__periodic-madness__/graphics/icons/buildings/assembling-machine-4.png",
+    flags = {"placeable-neutral","placeable-player", "player-creation"},
+    minable = {mining_time = 0.3, result = "assembling-machine-3"},
+    max_health = 650,
+    corpse = "assembling-machine-3-remnants",
+    dying_explosion = "assembling-machine-3-explosion",
+    icon_draw_specification = {shift = {0, -0.3}},
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
+    alert_icon_shift = util.by_pixel(0, -12),
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 85
+      }
+    },
+    fluid_boxes =
+    {
+    {
+      production_type = "input",
+      pipe_picture = pm_assembler4pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "output",
+      pipe_picture = pm_assembler4pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+      production_type = "input",
+      pipe_picture = pm_assembler4pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 2000,
+      pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+      secondary_draw_orders = { north = -1 }
+    },
+    {
+        production_type = "output",
+        pipe_picture = pm_assembler4pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 2000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        secondary_draw_orders = { north = -1 }
+    },
+    },
+    fluid_boxes_off_when_no_fluid_recipe = true,
+    open_sound = sounds.machine_open,
+    close_sound = sounds.machine_close,
+    impact_category = "metal",
+    working_sound =
+    {
+      sound = {filename = "__base__/sound/assembling-machine-t3-1.ogg", volume = 0.45, audible_distance_modifier = 0.5},
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    damaged_trigger_effect = hit_effects.entity(),
+    drawing_box_vertical_extension = 0.2,
+    fast_replaceable_group = "assembling-machine",
+    graphics_set =
+    {
+      animation_progress = 0.5,
+      animation =
+      {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4.png",
+            priority = "high",
+            width = 214,
+            height = 237,
+            frame_count = 32,
+            line_length = 8,
+            shift = util.by_pixel(0, -0.75),
+            scale = 0.5
+          },
+          {
+            filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-shadow.png",
+            priority = "high",
+            width = 260,
+            height = 162,
+            frame_count = 32,
+            line_length = 8,
+            draw_as_shadow = true,
+            shift = util.by_pixel(28, 4),
+            scale = 0.5
+          }
+        }
+      }
+    },
+    crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid"},
+    crafting_speed = 1.75,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = { pollution = 1 }
+    },
+    energy_usage = "450kW",
+    module_slots = 6,
+    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
+  },
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
