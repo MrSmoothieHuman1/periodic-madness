@@ -156,7 +156,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-tantalum-ore",
-        enabld = false,
+        enabled = false,
         energy_required = 6,
         category = "pm-moltening",
         subgroup = "pm-tantalum-tm",

@@ -38,7 +38,7 @@ data.raw["unit"]["small-biter"].resistances =
   },
   {
     type = "explosion",
-    pecent = -5
+    percent = -5
   }
 }
 data.raw["unit"]["small-spitter"].hide_resistances = false
@@ -65,7 +65,7 @@ data.raw["unit"]["medium-biter"].resistances =
   },
   {
     type = "explosion",
-    pecent = 12
+    percent = 12
   }
 }
 data.raw["unit"]["medium-spitter"].hide_resistances = false
@@ -73,7 +73,7 @@ data.raw["unit"]["medium-spitter"].resistances =
 {
   {
     type = "explosion",
-    pecent = 10
+    percent = 10
   },
   {
     type = "acid",

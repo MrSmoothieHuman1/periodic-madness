@@ -2060,7 +2060,7 @@ data:extend({
     name = "pm-CRT-framing",
     enabled = false,
     energy_required = 14,
-    allow_producitvity = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vacuum-tube", 2),
@@ -2079,7 +2079,7 @@ data:extend({
     name = "pm-CRT-screen",
     enabled = false,
     energy_required = 14,
-    allow_producitvity = true,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-polyethylene-plastic", 4),
@@ -3148,7 +3148,7 @@ data:extend({
     category = "chemistry",
     subgroup = "ammo",
     order = "A",
-    allow_producitvity = true,
+    allow_productivity = true,
     main_product = "pm-gunpowder",
     ingredients = 
     {
