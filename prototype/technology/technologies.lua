@@ -5694,6 +5694,35 @@ data:extend({
       time = 100
     }
   },
+  {
+    type = "technology",
+    name = "pm-grouped-plastic-science-tier-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/plastic-science-tier-3.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-plastic-alkaline-earth-metal-science-pack"),
+      PM.unlock_recipe("pm-plastic-metalloid-science-pack"),
+    },
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
 --MARK: NB science
 --MARK: AC science
 --MARK: LA science

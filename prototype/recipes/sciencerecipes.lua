@@ -305,6 +305,30 @@ data:extend({
         PM.product("pm-metalloid-science-pack", 2),
     }
 },
+{
+    type = "recipe",
+    name = "pm-plastic-alkaline-earth-metal-science-pack",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/plastic-alkaline-earth-metal-pack.png",
+    subgroup = "pm-plastic-science-pack",
+    order = "h",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-calcium-ore", 24),
+        PM.ingredient("pm-beryllium-plate", 6),
+        PM.ingredient("pm-magnesium-plate", 4),
+        PM.ingredient("pm-barium-ore", 4),
+        PM.ingredient("pm-radium-ore", 2),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-alkaline-earth-metal-science-pack", 2),
+    }
+},
 
 --MARK: Francium Science
 
