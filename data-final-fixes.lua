@@ -142,9 +142,7 @@ local exempt_heating_coil_machines =
 {
 	data.raw["beacon"],
 	data.raw["assembling-machine"],
-	data.raw["lab"],
 	data.raw["rocket-silo"],
-	data.raw["mining-drill"]
 }
 local exempt_building_module_machines =
 {
@@ -176,3 +174,6 @@ for _, machineType in pairs(exempt_heating_coil_machines) do
 		end
 	end
 end
+
+data.raw["mining-drill"]["electric-mining-drill"].allowed_module_categories = {"speed", "productivity", "efficiency"}
+data.raw["lab"]["lab"].allowed_module_categories = {"speed", "productivity", "efficiency"}

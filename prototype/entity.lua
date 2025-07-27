@@ -2331,6 +2331,7 @@ data:extend({
     },
     energy_usage = "360kW",
     researching_speed = 1.5,
+    allowed_module_categories = {"speed", "productivity", "efficiency"},
     inputs = pm_lab_inputs,
     on_animation =
     {
@@ -3182,6 +3183,7 @@ data:extend({
     dying_explosion = "electric-mining-drill-explosion",
     collision_box = {{-1.35, -1.35}, {1.35, 1.35}},
     selection_box = {{-1.5,  -1.5 }, {1.5,  1.5 }},
+    allowed_module_categories = {"speed", "productivity", "efficiency"},
     input_fluid_box =
     {
       pipe_picture = assembler2pipepictures(),
