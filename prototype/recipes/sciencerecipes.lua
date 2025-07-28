@@ -310,7 +310,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-alkaline-earth-metal-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/plastic-alkaline-earth-metal-pack.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/plastic-alkaline-earth-metals-pack.png",
     subgroup = "pm-plastic-science-pack",
     order = "h",
     energy_required = 6,

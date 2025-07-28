@@ -300,6 +300,7 @@ local robots =
     energy_per_move = "2kJ",
     min_to_charge = 0.2,
     max_to_charge = 0.9,
+    icon_draw_specification = {scale = 0.5},
     --working_light = {intensity = 0.8, size = 3, color = {r = 0.8, g = 0.8, b = 0.8}},
     smoke =
     {
@@ -339,6 +340,7 @@ local robots =
     icon_size = 64,
     flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
     minable = { mining_time = 0.1, result = "pm-lithium-logistic-robot" },
+    icon_draw_specification = {scale = 0.5},
     resistances =
     {
       {
