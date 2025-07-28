@@ -96,7 +96,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-aluminium-ore", 4),
-      PM.ingredient("pm-post-transition-metals-ore", 12)
+      PM.ingredient("pm-post-transition-metals-ore", 8)
     },
     results =
     {
