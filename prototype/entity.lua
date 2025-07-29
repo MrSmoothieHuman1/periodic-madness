@@ -4803,7 +4803,7 @@ data:extend({
     module_slots = 4,
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
-    energy_usage = "400kW",
+    energy_usage = "200kW",
     graphics_set = 
   {
     animation =
@@ -4839,20 +4839,11 @@ data:extend({
     },
     energy_source =
     {
-      type = "fluid",
-      effectivity = 1,
-      burns_fluid = true,
-      fluid_usage_per_tick = 1 / 60,
-      fluid_box =
-      {
-        production_type = "input",
-        pipe_picture = assembler2pipepictures(),
-        pipe_covers = pipecoverspictures(),
-        volume = 1000,
-        filter = "pm-coolant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.west--[[@as int]], position = { -2, 0 }} },
-      },
-    },
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = {pollution = 1.5},
+    }
+
   }--[[@as data.AssemblingMachinePrototype]],
   {
     type = "solar-panel",
