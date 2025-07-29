@@ -17,12 +17,14 @@ data:extend({
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
       PM.ingredient("pm-flourite", 20),
-      PM.ingredient("pm-crystal-slurry", 40, "fluid")
+      PM.ingredient("pm-crystal-slurry", 40, "fluid"),
+      PM.ingredient("pm-coolant", 20, "fluid", 1)
     },
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-flourite", 40, 80)
+      PM.product_range("pm-flourite", 40, 80),
+      PM.product("pm-hot-coolant", 20, "fluid", 1)
     }
   },
   {
@@ -41,12 +43,14 @@ data:extend({
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
       PM.ingredient("pm-tungsten-crystals", 20),
-      PM.ingredient("pm-crystal-slurry", 40, "fluid")
+      PM.ingredient("pm-crystal-slurry", 40, "fluid"),
+      PM.ingredient("pm-coolant", 20, "fluid", 1)
     },
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-tungsten-crystals", 40, 80)
+      PM.product_range("pm-tungsten-crystals", 40, 80),
+      PM.product("pm-hot-coolant", 20, "fluid", 1)
     }
   },
   {
@@ -65,12 +69,14 @@ data:extend({
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
       PM.ingredient("pm-scheelite", 20),
-      PM.ingredient("pm-crystal-slurry", 40, "fluid")
+      PM.ingredient("pm-crystal-slurry", 40, "fluid"),
+      PM.ingredient("pm-coolant", 20, "fluid", 1)
     },
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-scheelite", 40, 80)
+      PM.product_range("pm-scheelite", 40, 80),
+      PM.product("pm-hot-coolant", 20, "fluid", 1)
     }
   },
   {
@@ -89,12 +95,14 @@ data:extend({
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
       PM.ingredient("pm-calcite", 20),
-      PM.ingredient("pm-crystal-slurry", 40, "fluid")
+      PM.ingredient("pm-crystal-slurry", 40, "fluid"),
+      PM.ingredient("pm-coolant", 20, "fluid", 1)
     },
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-calcite", 40, 80)
+      PM.product_range("pm-calcite", 40, 80),
+      PM.product("pm-hot-coolant", 20, "fluid", 1)
     }
   },
   {
@@ -113,12 +121,14 @@ data:extend({
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
       PM.ingredient("pm-bismuth-ore", 20),
-      PM.ingredient("pm-crystal-slurry", 40, "fluid")
+      PM.ingredient("pm-crystal-slurry", 40, "fluid"),
+      PM.ingredient("pm-coolant", 20, "fluid", 1)
     },
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-bismuth-ore", 40, 80)
+      PM.product_range("pm-bismuth-ore", 40, 80),
+      PM.product("pm-hot-coolant", 20, "fluid", 1)
     }
   },
   {
@@ -137,12 +147,14 @@ data:extend({
       PM.ingredient("pm-seed-crystal", 1),
       PM.ingredient("pm-crucible", 4),
       PM.ingredient("pm-molybdenite", 20),
-      PM.ingredient("pm-crystal-slurry", 40, "fluid")
+      PM.ingredient("pm-crystal-slurry", 40, "fluid"),
+      PM.ingredient("pm-coolant", 20, "fluid", 1)
     },
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-molybdenite", 40, 80)
+      PM.product_range("pm-molybdenite", 40, 80),
+      PM.product("pm-hot-coolant", 20, "fluid", 1)
     }
   },
 
@@ -158,7 +170,8 @@ data:extend({
       PM.ingredient("pm-transition-metals-ore", 12),
       PM.ingredient("pm-post-transition-metals-ore", 12),
       PM.ingredient("pm-metalloid-ore", 12),
-      PM.ingredient("pm-alkali-metals-ore", 12)
+      PM.ingredient("pm-alkali-metals-ore", 12),
+      PM.ingredient("pm-coolant", 10, "fluid", 1)
     },
     results = 
     {
@@ -168,6 +181,7 @@ data:extend({
       PM.product_range("pm-sapphire", 6, 10),
       PM.product_range("pm-lapis-lazuli", 6, 10),
       PM.product_range("pm-garnet", 6, 10),
+      PM.product("pm-hot-coolant", 20, "fluid", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

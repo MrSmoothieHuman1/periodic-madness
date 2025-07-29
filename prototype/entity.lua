@@ -4833,8 +4833,63 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
-        volume = 200,
-        pipe_connections = {{ flow_direction = "input", direction = defines.direction.east--[[@as int]], position = { 2, 0 }}},
+        volume = 500,
+        pipe_connections =
+        {
+          { flow_direction = "input-output", direction = defines.direction.east--[[@as int]], position = { 2, 0 }}, --correct
+          { flow_direction = "input-output", direction = defines.direction.west--[[@as int]], position = { -2, 0 }} --correct
+        },
+      },
+      {
+        production_type = "output",
+        pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections = 
+        {
+          { flow_direction = "input-output", direction = defines.direction.south--[[@as int]], position = { 0, 2 }}, --correct
+          { flow_direction = "input-output", direction = defines.direction.north--[[@as int]], position = { 0, -2 }} --correct
+        },
+      },
+      {
+        production_type = "input",
+        pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 250,
+        pipe_connections =
+        {
+          { flow_direction = "input", direction = defines.direction.west--[[@as int]], position = { -2, 1 }} --correct
+        },
+      },
+      {
+        production_type = "input",
+        pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 250,
+        pipe_connections = 
+        {
+          { flow_direction = "input", direction = defines.direction.west--[[@as int]], position = { -2, -1 }} --correct
+        },
+      },
+      {
+        production_type = "output",
+        pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 250,
+        pipe_connections = 
+        {
+          { flow_direction = "output", direction = defines.direction.east--[[@as int]], position = { 2, 1 }} --correct
+        },
+      },
+      {
+        production_type = "output",
+        pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 250,
+        pipe_connections = 
+        {
+          { flow_direction = "output", direction = defines.direction.east--[[@as int]], position = { 2, -1 }} --correct
+        },
       },
     },
     energy_source =

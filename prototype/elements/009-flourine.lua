@@ -127,13 +127,13 @@ data:extend({
       PM.ingredient("stone", 10),
       PM.ingredient("pm-calcium-ore", 5),
       PM.ingredient("pm-post-transition-metals-ore", 5),
-      PM.ingredient("pm-liquid-mercury", 30, "fluid"),
-      PM.ingredient("pm-coolant", 7.5, "fluid"),
+      PM.ingredient("pm-liquid-mercury", 30, "fluid", 3),
+      PM.ingredient("pm-coolant", 7.5, "fluid", 1),
     },
     results =
     {
       PM.product("pm-flourite", 16),
-      PM.product("pm-hot-coolant", 7.5, "fluid")
+      PM.product("pm-hot-coolant", 7.5, "fluid", 2)
     }
   } --[[@as data.RecipePrototype]],
 })

@@ -124,15 +124,15 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-liquid-mercury", 50, "fluid"),
+      PM.ingredient("pm-liquid-mercury", 50, "fluid", 3),
       PM.ingredient("pm-bismite", 4),
-      PM.ingredient("pm-coolant", 5, "fluid"),
+      PM.ingredient("pm-coolant", 5, "fluid", 1),
     },
     results =
     {
       PM.product("pm-bismuth-ore", 8),
       PM.product_range("pm-mixed-ore-slag", 0, 3),
-      PM.product("pm-hot-coolant", 5, "fluid")
+      PM.product("pm-hot-coolant", 5, "fluid", 1)
     }
   } --[[@as data.RecipePrototype]]
 })
