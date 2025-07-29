@@ -220,12 +220,14 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-wolframite", 10),
-      PM.ingredient("pm-liquid-mercury", 40, "fluid")
+      PM.ingredient("pm-liquid-mercury", 40, "fluid"),
+      PM.ingredient("pm-coolant", 2.5, "fluid"),
     },
     results =
     {
       PM.product("pm-tungsten-crystals", 15),
-      PM.product("pm-scheelite", 10)
+      PM.product("pm-scheelite", 10),
+      PM.product("pm-hot-coolant", 2.5, "fluid"),
     }
   } --[[@as data.RecipePrototype]],
   {
