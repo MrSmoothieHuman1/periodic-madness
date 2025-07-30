@@ -175,12 +175,13 @@ data:extend({
         ingredients = 
         {
             PM.ingredient("pm-radium-chloride", 2),
-            PM.ingredient("pm-coolant", 1, "fluid")
+            PM.ingredient("pm-coolant", 1, "fluid"),
         },
         results = 
         {
             PM.product_chance("pm-radium-ore", 1, 0.5),
-            PM.product_chance("pm-radium-sulfate", 1, 0.5)
+            PM.product_chance("pm-radium-sulfate", 1, 0.5),
+            PM.product("pm-hot-coolant", 1, "fluid"),
         }
     },
     {
