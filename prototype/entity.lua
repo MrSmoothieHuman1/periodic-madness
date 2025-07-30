@@ -2320,6 +2320,13 @@ data:extend({
     crafting_speed = 2.5,
     allowed_module_categories = {"pm-circuit-megassembler-module"},
     tile_buildability_rules = pm_placable_on_both_concrete,
+    custom_tooltip_fields = 
+    {
+      {
+        name = {"pm-tooltips.placeable-on"},
+        value = {"pm-tooltips.concrete-refined-concrete"}
+      }
+    },
     energy_source =
     {
       type = "fluid",
