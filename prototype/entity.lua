@@ -2,6 +2,7 @@ local PM = require("library")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local fireutil = require("__base__.prototypes.fire-util")
+local tile_collision_masks = require("collision-mask")
 
 local red_belt = {r = 0.878, g = 0.169, b = 0.169}
 local orange_belt = {r = 1, g = 0.502, b = 0}
@@ -2306,6 +2307,10 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_speed = 2.5,
     allowed_module_categories = {"pm-circuit-megassembler-module"},
+    tile_buildability_rules = 
+    {
+      {area = {{-3.4, -3.4}, {3.4, 3.4}}, required_tiles = {layers = {pm_concrete = true}}, remove_on_collision = true}
+    },
     energy_source =
     {
       type = "fluid",
@@ -2326,7 +2331,7 @@ data:extend({
     },
     vector_to_place_result = {0, 3.55},
     energy_usage = "500kW",
-    graphics_set = 
+    graphics_set =
   {
     animation =
     {
@@ -9064,6 +9069,9 @@ data.raw["wall"]["stone-wall"].resistances =
 }
 
 data.raw["tile"]["refined-concrete"].walking_speed_modifier = 1.65
+-- data.raw["tile"]["refined-concrete"].collision_mask = tile_collision_masks.pm_refined_concrete()
+data.raw["tile"]["concrete"].collision_mask = tile_collision_masks.pm_concrete()
+
 
 data.raw["locomotive"]["locomotive"].energy_source.burnt_inventory_size = 3
 data.raw["car"]["car"].energy_source.burnt_inventory_size = 2

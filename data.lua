@@ -110,6 +110,8 @@ require("prototype.elements.041-niobium")
 
 require("prototype.damagetypes")
 
+require("prototype.collision-layer")
+
 require("prototype.entity")
 require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files
 require("prototype.entity.heat-pipes")
