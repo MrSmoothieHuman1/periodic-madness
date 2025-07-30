@@ -1387,6 +1387,8 @@ data:extend({
       PM.unlock_recipe("pm-cooling-plant"),
       PM.unlock_recipe("pm-ethylene-glycol"),
       PM.unlock_recipe("pm-coolant"),
+      PM.unlock_recipe("pm-hot-coolant-cooling"),
+
       PM.unlock_recipe("pm-crystallizer"),
       PM.unlock_recipe("pm-bismuth-leeching"),
       PM.unlock_recipe("pm-bismite"),
@@ -2001,8 +2003,6 @@ data:extend({
       PM.unlock_recipe("pm-empty-reactor-cell"),
       PM.unlock_recipe("pm-polonium-fuel-cell"),
       PM.unlock_recipe("pm-polonium-cell-reprocessing"),
-      PM.unlock_recipe("pm-hot-coolant-cooling"),
-      PM.unlock_recipe("pm-hot-light-coolant-cooling")
     },
     prerequisites = {"pm-radiation-resistant-multimetals", "pm-oil-fractions-burning"},
     unit =
@@ -3421,6 +3421,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-polydimethylsiloxane"),
       PM.unlock_recipe("pm-light-coolant"),
+      PM.unlock_recipe("pm-hot-light-coolant-cooling"),
       PM.unlock_recipe("pm-molten-inator-3"),
       PM.unlock_recipe("pm-cold-inator-3"),
       PM.unlock_recipe("pm-ammonium-tetrafluoroberyllate")
