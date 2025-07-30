@@ -1,16 +1,5 @@
 local PM = require("library")
 
----@type table<data.EntityID, true>
-local cooled_reactors = {}
-data:extend{
-  {
-    type = "mod-data",
-    name = "pm-cooled-reactors",
-    data_type = "cooled-reactor-list",
-    data = cooled_reactors
-  }
-}
-
 ---@class data.CooledReactorPrototype : data.ReactorPrototype
 ---@field coolant_life float How many seconds the reactor can last without heat
 ---@field coolant_categories data.RecipeCategoryID[] The recipe categories for turning coolant into liquid heat
@@ -106,7 +95,6 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 
   -- Add the coolant inputs/outputs to the heat input
   -- So they visually appear while placing
-  -- FIXME: We should be using RadiusVisualisationSpecification instead
   for _, fluidbox in pairs{coolant_fluidbox, coolant_exhuast_fluidbox} do
     for _, connection in pairs(fluidbox.pipe_connections) do
       -- Ignore the non-visual connections
@@ -115,7 +103,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
         index = index + 1
         input_connections[index] = connection
         
-        connection.connection_category = reactor.name.."-null-category-fuck-off-"..index -- Don't *actually* connect to anything
+        connection.connection_category = "null-category-fuck-off" -- Don't *actually* connect to anything
       end
     end
   end
@@ -142,8 +130,6 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
   PM.set_flag(flags_holder, "not-blueprintable")
   PM.set_flag(flags_holder, "not-on-map")
   PM.set_flag(flags_holder, "not-repairable")
-
-  cooled_reactors[reactor.name] = true
 
   --MARK: Reactor Furnace
   -- Make the furnace that'll burn resources at the cost of coolant
@@ -230,61 +216,6 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 	return reactor
 end
 
-coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
-  10, {"pm-reactor-coolant-burning-with-exhuast"},
-    {
-      production_type = "input",
-      volume = 100,
-      pipe_connections = {
-      {
-        flow_direction = "input",
-        direction = defines.direction.north--[[@as int]],
-        position = {-2, -2},
-      },
-      {
-        flow_direction = "input",
-        direction = defines.direction.west--[[@as int]],
-        position = {-2, 2},
-      },
-      {
-        flow_direction = "output",
-        direction = defines.direction.south--[[@as int]],
-        position = {-2, 2},
-      },
-      {
-        flow_direction = "output",
-        direction = defines.direction.east--[[@as int]],
-        position = {2, 2},
-      },
-    },
-  },
-  {
-    production_type = "output",
-    volume = 100,
-    pipe_connections = {
-      {
-        flow_direction = "input",
-        direction = defines.direction.north--[[@as int]],
-        position = {2, -2},
-      },
-      {
-        flow_direction = "input",
-        direction = defines.direction.east--[[@as int]],
-        position = {2, -2},
-      },
-      {
-        flow_direction = "output",
-        direction = defines.direction.south--[[@as int]],
-        position = {2, 2},
-      },
-      {
-        flow_direction = "output",
-        direction = defines.direction.west--[[@as int]],
-        position = {-2, -2},
-      },
-    },
-  }
-)
 data.raw["reactor"]["nuclear-reactor"].custom_tooltip_fields = 
 {
   {
@@ -295,7 +226,7 @@ data.raw["reactor"]["nuclear-reactor"].custom_tooltip_fields =
 data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0.5
 
 data:extend({
-  coolant_reactor{ --MARK: Polonium Reactor
+  {
     type = "reactor",
     name = "pm-polonium-reactor",
     icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
@@ -592,5 +523,5 @@ data:extend({
         }
       },
     },
-  },
-}--[[@as data.ReactorPrototype[] ]])
+  }
+  })
