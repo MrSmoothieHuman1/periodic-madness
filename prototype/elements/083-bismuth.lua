@@ -134,5 +134,28 @@ data:extend({
       PM.product_range("pm-mixed-ore-slag", 0, 3),
       PM.product("pm-hot-coolant", 5, "fluid", 1)
     }
-  } --[[@as data.RecipePrototype]]
+  },
+  {
+    type = "recipe",
+    name = "pm-light-coolant-bismuth-ore",
+    enabled = false,
+    energy_required = 10,
+    category = "pm-crystallisation",
+    subgroup = "pm-bismuth-ptm",
+    order = "ca",
+    main_product = "pm-bismuth-ore",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-liquid-mercury", 40, "fluid", 3),
+      PM.ingredient("pm-bismite", 4),
+      PM.ingredient("pm-light-coolant", 2.5, "fluid", 1),
+    },
+    results =
+    {
+      PM.product("pm-bismuth-ore", 8),
+      PM.product_range("pm-mixed-ore-slag", 0, 2),
+      PM.product("pm-hot-coolant", 2.5, "fluid", 1)
+    }
+  },
 })

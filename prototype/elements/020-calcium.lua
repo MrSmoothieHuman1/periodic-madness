@@ -342,6 +342,27 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-light-coolant-calcium-sulfate-chunks",
+    enabled = false,
+    energy_required = 12,
+    category = "chemistry",
+    subgroup = "pm-calcium-sulfate-aem",
+    order = "ba",
+    main_product = "pm-calcium-sulfate-chunks",
+    ingredients = 
+    {
+      PM.ingredient("pm-calcium-sulfate-slurry", 10, "fluid"),
+      PM.ingredient("pm-light-coolant", 2.5, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-calcium-sulfate-chunks", 10),
+      PM.product("pm-hot-coolant", 2.5, "fluid"),
+      PM.product_range_chance("sulfur", 0, 4, 0.75)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-calcium-sulfate",
     enabled = false,
     energy_required = 8,

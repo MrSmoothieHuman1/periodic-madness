@@ -136,4 +136,28 @@ data:extend({
       PM.product("pm-hot-coolant", 7.5, "fluid", 2)
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-light-coolant-flourite-crystallisation",
+    enabled = false,
+    energy_required = 8,
+    category = "pm-crystallisation",
+    subgroup = "pm-flourine-rnm",
+    order = "ba",
+    main_product = "pm-flourite",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("stone", 10),
+      PM.ingredient("pm-calcium-ore", 5),
+      PM.ingredient("pm-post-transition-metals-ore", 5),
+      PM.ingredient("pm-liquid-mercury", 25, "fluid", 3),
+      PM.ingredient("pm-light-coolant", 5, "fluid", 1),
+    },
+    results =
+    {
+      PM.product("pm-flourite", 16),
+      PM.product("pm-hot-coolant", 5, "fluid", 2)
+    }
+  } --[[@as data.RecipePrototype]],
 })
