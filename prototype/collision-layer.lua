@@ -6,6 +6,6 @@ data:extend({
     },
     {
         type = "collision-layer",
-        name = "pm_refined-concrete"
+        name = "pm_refined_concrete"
     }
 })

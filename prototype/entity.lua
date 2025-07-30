@@ -299,6 +299,18 @@ function pm_assembler4pipepictures()
     }
   }
 end
+local pm_placable_on_concrete =
+{
+  {area = {{-3.4, -3.4}, {3.4, 3.4}}, required_tiles = {layers = {pm_concrete = true}}, remove_on_collision = true}
+}
+local pm_placable_on_refined_concrete =
+{
+  {area = {{-3.4, -3.4}, {3.4, 3.4}}, required_tiles = {{pm_refined_concrete = true}}, remove_on_collision = true}
+}
+local pm_placable_on_both_concrete =
+{
+  {area = {{-3.4, -3.4}, {3.4, 3.4}}, required_tiles = {layers = {pm_concrete = true, pm_refined_concrete = true}}, remove_on_collision = true}
+}
 
 
 data:extend({
@@ -2307,10 +2319,7 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_speed = 2.5,
     allowed_module_categories = {"pm-circuit-megassembler-module"},
-    tile_buildability_rules = 
-    {
-      {area = {{-3.4, -3.4}, {3.4, 3.4}}, required_tiles = {layers = {pm_concrete = true}}, remove_on_collision = true}
-    },
+    tile_buildability_rules = pm_placable_on_both_concrete,
     energy_source =
     {
       type = "fluid",
