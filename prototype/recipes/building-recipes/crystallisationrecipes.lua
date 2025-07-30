@@ -181,7 +181,7 @@ data:extend({
       PM.product_range("pm-sapphire", 6, 10),
       PM.product_range("pm-lapis-lazuli", 6, 10),
       PM.product_range("pm-garnet", 6, 10),
-      PM.product("pm-hot-coolant", 20, "fluid", 1)
+      PM.product("pm-hot-coolant", 10, "fluid", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])
