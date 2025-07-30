@@ -336,8 +336,8 @@ data:extend({
     name = "pm-niobium-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/tellurium-plate.png",
-    subgroup = "pm-tantalum-tm",
-    order = "f",
+    subgroup = "pm-niobium-tm",
+    order = "c",
     stack_size = 100
   },
   {

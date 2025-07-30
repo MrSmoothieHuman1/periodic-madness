@@ -38,15 +38,6 @@ data:extend({
         order = "e",
         stack_size = 200,
     },
-    {
-        type = "item",
-        name = "pm-niobium-ore",
-        icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
-        subgroup = "pm-tantalum-tm",
-        order = "e",
-        stack_size = 200,
-    },
 
     {
         type = "fluid",

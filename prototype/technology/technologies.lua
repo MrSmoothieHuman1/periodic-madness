@@ -4720,7 +4720,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-niobite-oxide"),
+      PM.unlock_recipe("pm-niobium-ore"),
+      PM.unlock_recipe("pm-niobium-plate"),
+      PM.unlock_recipe("pm-tantalite-waste-water"),
+      PM.unlock_recipe("pm-tantalite-waste-looping")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

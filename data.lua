@@ -106,6 +106,7 @@ require("prototype.elements.076-osmium")
 require("prototype.elements.077-iridium")
 require("prototype.elements.073-tantalum")
 require("prototype.elements.034-selenium")
+require("prototype.elements.041-niobium")
 
 require("prototype.damagetypes")
 
