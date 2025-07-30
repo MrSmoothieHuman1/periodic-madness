@@ -4976,6 +4976,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-inconel-625-precursor-alloy"),
+      PM.unlock_recipe("pm-inconel-625-precursor-billet"),
+      PM.unlock_recipe("pm-molten-inconel-625"),
+      PM.unlock_recipe("pm-inconel-625-plate")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =
