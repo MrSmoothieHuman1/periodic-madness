@@ -1,2 +1,5 @@
 .vscode/
 .globals
+*.zip
+mod-settings.dat
+mod-list.json
