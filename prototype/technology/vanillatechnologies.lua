@@ -214,7 +214,7 @@ data.raw["technology"]["chemical-science-pack"].unit.ingredients =
 data.raw["technology"]["chemical-science-pack"].icon =
 "__periodic-madness__/graphics/technology/reactive-non-metal-unlock.png"
 data.raw["technology"]["chemical-science-pack"].unit.time = 80
-data.raw["technology"]["chemical-science-pack"].prerequisites = {"pm-atmospheric-condensation", "pm-science-center"}
+data.raw["technology"]["chemical-science-pack"].prerequisites = {"pm-atmospheric-condensation", "pm-science-center", "pm-phosphor-processing"}
 data.raw["technology"]["chemical-science-pack"].unit.count = 200
 
 data.raw["technology"]["steel-processing"].icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png"

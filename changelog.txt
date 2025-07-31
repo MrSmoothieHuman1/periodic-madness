@@ -20,6 +20,7 @@ Date: 2025-12-07
     - Added new recipes for Mulitmetal items.
     - Added selenium batteries, as an end-game battery unlock. It currently only has a charged variant + new battery equipment, but will get more soon.
     - Added the obligatory assembling machine 4! it has a crafting speed of 1.75, with 6 module slots and the same amount of pipes.
+    - Added a MK2 version of the Circuit Megassembler, which has double the crafting speed and has an innate productivity boost - but takes light lubricant. 
 
   Changes:
     - Slightly nerfed research productivity.
@@ -29,6 +30,8 @@ Date: 2025-12-07
     - Moved artillery into metalloid science.
     - Buffed artillery shell AOE size from 4 to 6.
     - Changed stack size of artillery shells from 1 to 2.
+    - Changed phosphorous to be behind R-NM science, and be part of its ingredients.
+    - Moved lead into its own technology, and moved it to behind P-TM science.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.509

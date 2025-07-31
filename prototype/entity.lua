@@ -305,7 +305,7 @@ local pm_placable_on_concrete =
 }
 local pm_placable_on_refined_concrete =
 {
-  {area = {{-3.4, -3.4}, {3.4, 3.4}}, required_tiles = {{pm_refined_concrete = true}}, remove_on_collision = true}
+  {area = {{-3.4, -3.4}, {3.4, 3.4}}, required_tiles = {layers = {pm_refined_concrete = true}}, remove_on_collision = true}
 }
 local pm_placable_on_both_concrete =
 {
@@ -8816,6 +8816,83 @@ fluid_boxes =
     module_slots = 6,
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
   },
+  {
+    type = "assembling-machine",
+    name = "pm-circuit-megassembler-MK2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
+    minable = { mining_time = 0.85, result = "pm-circuit-megassembler" },
+    max_health = 2250,
+    collision_box = { { -3.4, -3.4 }, { 3.4, 3.4 } },
+    selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
+    corpse = "pm-circuit-megassembler",
+    dying_explosion = "assembling-machine-1-explosion",
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    crafting_categories = {"pm-circuitry"},
+    module_slots = 5,
+    allowed_effects = PM.all_effects(),
+    crafting_speed = 5,
+    allowed_module_categories = {"pm-circuit-megassembler-module"},
+    effect_receiver = { base_effect = { productivity = 0.5 }},
+    tile_buildability_rules = pm_placable_on_refined_concrete,
+    custom_tooltip_fields =
+    {
+      {
+        name = {"pm-tooltips.placeable-on"},
+        value = {"pm-tooltips.refined-concrete"}
+      }
+    },
+    energy_source =
+    {
+      type = "fluid",
+      effectivity = 1,
+      burns_fluid = true,
+      fluid_usage_per_tick = 2 / 60,
+      emissions_per_minute = {pollution = 1},
+      fluid_box =
+      {
+        production_type = "input",
+        --pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 1750,
+        filter = "pm-light-lubricant",
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0, -3}}},
+      },
+      --TODO: ask factorio server why you cant have multiple fluid boxes for this.
+    },
+    vector_to_place_result = {0, 3.55},
+    energy_usage = "500kW",
+    graphics_set =
+  {
+    animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
+          width = 32 * 7 * 2,
+          height = 32 * 7 * 2,
+          frame_count = 32,
+          line_length = 8,
+          animation_speed = 0.25,
+          shift = util.by_pixel(-2, 0),
+          scale = 0.575,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+          width = 32 * 7 * 2,
+          height = 32 * 7 * 2,
+          frame_count = 32,
+          line_length = 4,
+          draw_as_shadow = true,
+          shift = util.by_pixel(64, 10),
+          animation_speed = 0.25,
+          scale = 0.575
+        },
+      }
+    }
+  }
+}--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
@@ -9085,7 +9162,7 @@ data.raw["wall"]["stone-wall"].resistances =
 }
 
 data.raw["tile"]["refined-concrete"].walking_speed_modifier = 1.65
--- data.raw["tile"]["refined-concrete"].collision_mask = tile_collision_masks.pm_refined_concrete()
+data.raw["tile"]["refined-concrete"].collision_mask = tile_collision_masks.pm_refined_concrete()
 data.raw["tile"]["concrete"].collision_mask = tile_collision_masks.pm_concrete()
 
 

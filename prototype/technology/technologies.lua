@@ -1341,7 +1341,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-post-transition-metal-science-pack")
     },
-    prerequisites = {"pm-science-center", "pm-crystallisation"},
+    prerequisites = {"pm-science-center", "pm-crystallisation", "pm-lead-processing"},
     unit =
     {
       count = 200,
@@ -1388,18 +1388,11 @@ data:extend({
       PM.unlock_recipe("pm-ethylene-glycol"),
       PM.unlock_recipe("pm-coolant"),
       PM.unlock_recipe("pm-hot-coolant-cooling"),
-
       PM.unlock_recipe("pm-crystallizer"),
       PM.unlock_recipe("pm-bismuth-leeching"),
       PM.unlock_recipe("pm-bismite"),
       PM.unlock_recipe("pm-fluxed-bismite"),
       PM.unlock_recipe("pm-bismuth-ore"),
-      PM.unlock_recipe("pm-lead-leeching"),
-      PM.unlock_recipe("pm-lead-powder"),
-      PM.unlock_recipe("pm-lead-froth"),
-      PM.unlock_recipe("pm-impure-lead"),
-      PM.unlock_recipe("pm-lead-ore"),
-      PM.unlock_recipe("pm-lead-plate"),
       PM.unlock_recipe("pm-lorandite"),
       PM.unlock_recipe("pm-thallium-mixing"),
       PM.unlock_recipe("pm-thallium-sulfate-electrolysis"),
@@ -1809,6 +1802,59 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 30
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-lead-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-lead-leeching"),
+      PM.unlock_recipe("pm-lead-powder"),
+      PM.unlock_recipe("pm-lead-froth"),
+      PM.unlock_recipe("pm-impure-lead"),
+      PM.unlock_recipe("pm-lead-ore"),
+      PM.unlock_recipe("pm-lead-plate"),
+    },
+    prerequisites = {"pm-science-center"},
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 45
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-phosphor-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/phosphorus-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-phosphate-rock"),
+      PM.unlock_recipe("pm-phosphor-vapour"),
+      PM.unlock_recipe("pm-phosphor-vapour-cooling"),
+      PM.unlock_recipe("pm-phosphoric-acid-filtering"),
+      PM.unlock_recipe("pm-white-to-red-phosphorus")
+    },
+    prerequisites = {"pm-science-center"},
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      },
+      time = 45
     }
   },
 
@@ -2617,18 +2663,17 @@ data:extend({
       PM.unlock_recipe("pm-phosphoric-acid-filtering"),
       PM.unlock_recipe("pm-white-to-red-phosphorus")
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"pm-science-center"},
     unit =
     {
-      count = 200,
+      count = 150,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1}
       },
-      time = 30
+      time = 45
     }
   },
   {
