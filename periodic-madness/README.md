@@ -9,7 +9,10 @@ This overhaul aims to add all the elements of the periodic table to Factorio. In
 Sift through new "group ores", containing the elements of each separate periodic group (Alkali Metals, Transition Metals, etc) which can be broken down using new fluids or items to get a specific new resource, all in the name of expansion. Of course, not all elements can just be found in the ground; you'll have to search through air, sea and ground to get everything you need to build further and research more.
 *  * *
 ##**Your science and you**
-![Alt text](https://cdn.discordapp.com/attachments/306402592265732098/1355689075016990800/science-and-you.png?ex=67e9d756&is=67e885d6&hm=5dbd864a3612d4ba20846d24e615cf6b9944eee8bd4e2fae8d69fb7ebf944ebe&)
+![Your science and you](gallery/science-and-you.png)
+![Your science and you](periodic-madness/gallery/science-and-you.png)
+Ignore the dead image. It's simpler than two copies of the README
+
 This mod expands the vanilla science tree out to 12 unique science packs, all based around and requiring a specific periodic group (Transition metals, Reactive non-metals, Actinides, etc etc) to produce. The science tree also branches off at an earlier state, which gives you more choice for what to specalise in. Each side of the tech tree unlock different or better recipes, buildings and bonus technologies to improve or expand your factory.
 Some technologies require both sides of the tech tree to be unlocked, most notably things like modules or plastic science bottles - these take more packs to produce, but unlock more powerful things.
 
@@ -60,10 +63,9 @@ You also have more then just science packs to put into labs, occisonally finding
 
 
 #***The Periodometer: 59/118***
-
 ![The Periodometer™](gallery/periodometer.png)
 ![The Periodometer™](periodic-madness/gallery/periodometer.png)
-[^1]: Ignore the two images. It's simpler than two copies of the README
+Ignore the dead image. It's simpler than two copies of the README
 
 ***Transition Metals: (19/34)***
 • Iron
