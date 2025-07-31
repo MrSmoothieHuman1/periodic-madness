@@ -34,6 +34,71 @@ Date: 2025-12-07
     - Moved lead into its own technology, and moved it to behind P-TM science.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.514
+Date: 2025-31-07
+  The i'll be able to sit down one day and not have to update the public build Update:
+
+  Changes:
+    - Changed P-TM science to use thallium plates, not ore to match with tungsten/titanium.
+    - Changed empty canister stack sizes to match the highest stacking fuel canister (50 > 150).
+    - Changed spent/empty fuel rod stack sizes to match their fuel counterparts.
+    - Doubled stack size of octane fuel canisters.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.513
+Date: 2025-30-07
+  The one step forward, two steps inbetween to make sure the first step actually happened Update:
+
+  Changes:
+    - Changed reactors to not use the coolant code that was causing the crashes, it will return though <3
+
+  Fixes:
+    - Moved hot coolant cooling recipe to crystallisation technology, and hot light coolant cooling to temperature-inator 3's.
+    - Fixed gem sorting outputing too much hot coolant.
+    - Fixed radium not outputting hot coolant.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.512
+Date: 2025-29-07
+  The "why dont you just do [fucking obvious alternative]?" Update:
+
+  Additions:
+    - Added Schalls Uranium compatability!
+
+  Changes:
+    - Changed all crystallizer recipes to use coolant in their recipes, and lets them output hot coolant.
+    - Lowered the amount of P-TM ore needed for gallium chunks from 12 to 10.
+    - Lowered the amount of gallium liqour needed for gallium from 20 to 18.
+
+  Fixes:
+    - Gave mixing tanks circuit connectivity.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.511
+Date: 2025-26-07
+  The :clueless: Update:
+
+  Changes:
+    - Increased pollution of burner crusher from 2.5/m to 5/m.
+    - Rebalanced voltatic piles to have a break chance of 33%, instead of 20%.
+
+  Fixes:
+    - Fixed vanadium bots not actually being the correct speed. Whoopsie Me! (9.7 km/h vs 11.9 km/h)
+    - Gave all burner buildings an output slot.
+    - fixed CHARGED >BATTERIES< not giving their >>UNCHARGED<< versions back when used. WHY WAS I ONLY TOLD THIS YESTERDAY!!!!
+    - Fixed the stack sizes of batteries to better synchronise with eachother.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.6.510
+Date: 2025-25-07
+  The burnout!!! yipee!! Update:
+
+  Fixes:
+    - Fixed boilers not having an output slot.
+    - Fixed agar offgassing not having a building.
+    - Fixed the fact you couldnt actually fix broken batteries.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.6.509
 Date: 2025-22-07
   The never play TFG and mod factorio at the same time, heed my warning Update:

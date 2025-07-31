@@ -19,7 +19,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/empty-fuel-canister.png",
     subgroup = "pm-fuels",
     order = "b",
-    stack_size = 50
+    stack_size = 150
   },
   {
     type = "item",
@@ -107,7 +107,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/empty-fuel-rod.png",
     subgroup = "pm-fuel-rods",
     order = "a",
-    stack_size = 10
+    stack_size = 20
   },
   {
     type = "item",
@@ -116,7 +116,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/spent-fuel-rod.png",
     subgroup = "pm-fuel-rods",
     order = "b",
-    stack_size = 10
+    stack_size = 20
   },
   {
     type = "item",
@@ -130,7 +130,7 @@ data:extend({
     subgroup = "pm-fuels",
     order = "g",
     burnt_result = "pm-empty-fuel-canister",
-    stack_size = 100
+    stack_size = 200
   },
     {
     type = "item",
@@ -143,7 +143,7 @@ data:extend({
     subgroup = "pm-fuels",
     order = "h",
     burnt_result = "pm-empty-fuel-canister",
-    stack_size = 100
+    stack_size = 200
   },
 }--[[@as data.ItemPrototype[] ]])
 
