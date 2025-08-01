@@ -1808,7 +1808,7 @@ data:extend({
     type = "technology",
     name = "pm-lead-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/lead-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-lead-leeching"),
