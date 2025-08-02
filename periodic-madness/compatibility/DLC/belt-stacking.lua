@@ -104,7 +104,7 @@ data:extend({
     working_sound = sounds.inserter_fast,
     hand_base_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-base.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-base.png",
       priority = "extra-high",
       width = 32,
       height = 136,
@@ -112,7 +112,7 @@ data:extend({
     },
     hand_closed_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -120,7 +120,7 @@ data:extend({
     },
     hand_open_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -136,7 +136,7 @@ data:extend({
     },
     hand_closed_shadow =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed-shadow.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed-shadow.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -144,7 +144,7 @@ data:extend({
     },
     hand_open_shadow =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open-shadow.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open-shadow.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -154,7 +154,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-platform.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-platform.png",
         priority = "extra-high",
         width = 105,
         height = 79,
@@ -212,7 +212,7 @@ data:extend({
     working_sound = sounds.inserter_fast,
     hand_base_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/express-stack-inserter/stack-inserter-hand-base.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/express-stack-inserter/stack-inserter-hand-base.png",
       priority = "extra-high",
       width = 32,
       height = 136,
@@ -220,7 +220,7 @@ data:extend({
     },
     hand_closed_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/express-stack-inserter/stack-inserter-hand-closed.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/express-stack-inserter/stack-inserter-hand-closed.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -228,7 +228,7 @@ data:extend({
     },
     hand_open_picture =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/express-stack-inserter/stack-inserter-hand-open.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/express-stack-inserter/stack-inserter-hand-open.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -244,7 +244,7 @@ data:extend({
     },
     hand_closed_shadow =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed-shadow.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-closed-shadow.png",
       priority = "extra-high",
       width = 112,
       height = 164,
@@ -252,7 +252,7 @@ data:extend({
     },
     hand_open_shadow =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open-shadow.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-hand-open-shadow.png",
       priority = "extra-high",
       width = 134,
       height = 164,
@@ -262,7 +262,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-platform.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-platform.png",
         priority = "extra-high",
         width = 105,
         height = 79,
@@ -354,7 +354,7 @@ data:extend({
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet (4,
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/stack-inserter/stack-inserter-remnants.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/stack-inserter/stack-inserter-remnants.png",
       line_length = 1,
       width = 132,
       height = 96,

@@ -19,7 +19,7 @@ data:extend({
     animation = make_rotated_animation_variations_from_sheet(2,
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/solar-panel-2/remnants/solar-panel-remnants.png",
+        "__periodic-graphics-1__/graphics/entities/buildings/solar-panel-2/remnants/solar-panel-remnants.png",
         line_length = 1,
         width = 290,
         height = 282,
@@ -51,7 +51,7 @@ data:extend({
     animation = make_rotated_animation_variations_from_sheet(3,
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/lithium-construction-robots/remnants/construction-robot-remnants.png",
+        "__periodic-graphics-1__/graphics/entities/buildings/lithium-construction-robots/remnants/construction-robot-remnants.png",
         line_length = 1,
         width = 120,
         height = 114,
@@ -83,7 +83,7 @@ data:extend({
     animation = make_rotated_animation_variations_from_sheet(3,
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/lithium-logistic-robots/remnants/logistic-robot-remnants.png",
+        "__periodic-graphics-1__/graphics/entities/buildings/lithium-logistic-robots/remnants/logistic-robot-remnants.png",
         line_length = 1,
         width = 116,
         height = 114,
@@ -115,7 +115,7 @@ data:extend({
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet(4,
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/remnants/wall-remnants.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/remnants/wall-remnants.png",
       width = 118,
       height = 114,
       line_length = 1,
@@ -143,7 +143,7 @@ data:extend({
     remove_on_tile_placement = false,
     animation = make_rotated_animation_variations_from_sheet(4,
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/remnants/wall-remnants.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/remnants/wall-remnants.png",
       width = 118,
       height = 114,
       line_length = 1,

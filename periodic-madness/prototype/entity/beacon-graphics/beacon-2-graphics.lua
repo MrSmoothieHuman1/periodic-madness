@@ -21,7 +21,7 @@ return
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/beacon-2/beacon-bottom-2.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/beacon-2/beacon-bottom-2.png",
             width = 212,
             height = 192,
             scale = 0.5,

@@ -78,7 +78,7 @@ data:extend({
         },
     
         connection_sprites = make_heat_pipe_pictures(
-          "__periodic-madness__/graphics/entities/buildings/heat-pipe-1/", "heat-pipe",
+          "__periodic-graphics-1__/graphics/entities/buildings/heat-pipe-1/", "heat-pipe",
           {
             single = { name = "straight-vertical-single", ommit_number = true },
             straight_vertical = { variations = 6 },
@@ -198,7 +198,7 @@ data:extend({
         },
     
         connection_sprites = make_heat_pipe_pictures(
-          "__periodic-madness__/graphics/entities/buildings/heat-pipe-3/", "heat-pipe",
+          "__periodic-graphics-1__/graphics/entities/buildings/heat-pipe-3/", "heat-pipe",
           {
             single = { name = "straight-vertical-single", ommit_number = true },
             straight_vertical = { variations = 6 },

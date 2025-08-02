@@ -180,7 +180,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/transition-metals-ore.png",
+        filename = "__periodic-graphics-1__/graphics/entities/ores/transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -233,7 +233,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/post-transition-metals-ore.png",
+        filename = "__periodic-graphics-1__/graphics/entities/ores/post-transition-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -285,7 +285,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/alkali-metals-ore.png",
+        filename = "__periodic-graphics-1__/graphics/entities/ores/alkali-metals-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -337,7 +337,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/metalloid-ore.png",
+        filename = "__periodic-graphics-1__/graphics/entities/ores/metalloid-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -387,7 +387,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/alkaline-earth-metal-ore.png",
+        filename = "__periodic-graphics-1__/graphics/entities/ores/alkaline-earth-metal-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -439,7 +439,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/nickel-ore.png",
+        filename = "__periodic-graphics-1__/graphics/entities/ores/nickel-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -489,7 +489,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/zinc-ore.png",
+        filename = "__periodic-graphics-1__/graphics/entities/ores/zinc-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
@@ -528,7 +528,7 @@ AcidPlant.icon = "__periodic-madness__/graphics/icons/buildings/acid-plant.png"
 AcidPlant.graphics_set.animation = make_4way_animation_from_spritesheet({ layers =
 {
   {
-    filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/acid-plant.png",
+    filename = "__periodic-graphics-1__/graphics/entities/buildings/acid-plant/acid-plant.png",
     width = 220,
     height = 292,
     frame_count = 24,
@@ -622,6 +622,6 @@ set.working_visualisations[1].apply_recipe_tint = "primary"
 set.working_visualisations[2].apply_recipe_tint = "primary"
 
 local layers = set.working_visualisations[2].animation.layers
-layers[1].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-C-light.png"
-layers[2].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-B-light.png"
-layers[3].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-A-light.png"
+layers[1].filename = "__periodic-graphics-1__/graphics/entities/buildings/centrifuge/centrifuge-C-light.png"
+layers[2].filename = "__periodic-graphics-1__/graphics/entities/buildings/centrifuge/centrifuge-B-light.png"
+layers[3].filename = "__periodic-graphics-1__/graphics/entities/buildings/centrifuge/centrifuge-A-light.png"

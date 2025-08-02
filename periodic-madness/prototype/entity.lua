@@ -48,7 +48,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
   local retval =
   {
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-01.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-01.png",
       line_length = 10,
       width = 84,
       height = 130,
@@ -61,7 +61,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
       shift = { 0, -0.7 }
     },
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-02.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-02.png",
       line_length = 10,
       width = 82,
       height = 106,
@@ -74,7 +74,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
       shift = { 0, -0.7 }
     },
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-03.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-03.png",
       line_length = 10,
       width = 84,
       height = 124,
@@ -87,7 +87,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
       shift = { 0, -0.7 }
     },
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-04.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-04.png",
       line_length = 10,
       width = 84,
       height = 94,
@@ -100,7 +100,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
       shift = { 0, -0.25 }
     },
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-01.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-01.png",
       line_length = 10,
       width = 84,
       height = 130,
@@ -113,7 +113,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
       shift = { 0, -0.7 }
     },
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-02.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-02.png",
       line_length = 10,
       width = 82,
       height = 106,
@@ -126,7 +126,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
       shift = { 0, -0.7 }
     },
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-03.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-03.png",
       line_length = 10,
       width = 84,
       height = 124,
@@ -139,7 +139,7 @@ function fireutil.create_magnesium_fire_pictures(opts)
       shift = { 0, -0.7 }
     },
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/magnesium-fire/fire-flame-04.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/magnesium-fire/fire-flame-04.png",
       line_length = 10,
       width = 84,
       height = 94,
@@ -227,7 +227,7 @@ function pm_electric_mining_drill2_animation()
   return
   {
     priority = "high",
-    filename = "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill.png",
+    filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill.png",
     line_length = 6,
     width = 162,
     height = 156,
@@ -245,7 +245,7 @@ function pm_electric_mining_drill_horizontal2_animation()
   {
     priority = "high",
     filename =
-    "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-horizontal.png",
+    "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-horizontal.png",
     line_length = 6,
     width = 80,
     height = 160,
@@ -263,7 +263,7 @@ function pm_assembler4pipepictures()
   {
     north =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-N.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-N.png",
       priority = "extra-high",
       width = 71,
       height = 38,
@@ -272,7 +272,7 @@ function pm_assembler4pipepictures()
     },
     east =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-E.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-E.png",
       priority = "extra-high",
       width = 42,
       height = 76,
@@ -281,7 +281,7 @@ function pm_assembler4pipepictures()
     },
     south =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-S.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-S.png",
       priority = "extra-high",
       width = 88,
       height = 61,
@@ -290,7 +290,7 @@ function pm_assembler4pipepictures()
     },
     west =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-W.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4-pipe-W.png",
       priority = "extra-high",
       width = 39,
       height = 73,
@@ -382,7 +382,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/welder/welder.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/welder/welder.png",
             priority = "high",
             width = 171,
             height = 174,
@@ -516,7 +516,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/ass-machine-0/assembling-machine-0.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/ass-machine-0/assembling-machine-0.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -645,7 +645,7 @@ data:extend({
           {
             {
               filename =
-              "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_North.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_North.png",
               priority = "high",
               width = 90,
               height = 162,
@@ -654,7 +654,7 @@ data:extend({
             },
             {
               filename =
-              "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_North-shadow.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_North-shadow.png",
               priority = "high",
               width = 150,
               height = 134,
@@ -669,7 +669,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_East.png",
+              filename = "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_East.png",
               priority = "high",
               width = 124,
               height = 102,
@@ -678,7 +678,7 @@ data:extend({
             },
             {
               filename =
-              "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_East-shadow.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_East-shadow.png",
               priority = "high",
               width = 180,
               height = 66,
@@ -694,7 +694,7 @@ data:extend({
           {
             {
               filename =
-              "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_South.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_South.png",
               priority = "high",
               width = 92,
               height = 192,
@@ -703,7 +703,7 @@ data:extend({
             },
             {
               filename =
-              "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_South-shadow.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_South-shadow.png",
               priority = "high",
               width = 164,
               height = 128,
@@ -718,7 +718,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_West.png",
+              filename = "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_West.png",
               priority = "high",
               width = 124,
               height = 102,
@@ -727,7 +727,7 @@ data:extend({
             },
             {
               filename =
-              "__periodic-madness__/graphics/entities/buildings/water-extractor/water-extractor_West-shadow.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/water-extractor/water-extractor_West-shadow.png",
               priority = "high",
               width = 172,
               height = 66,
@@ -777,7 +777,7 @@ data:extend({
         {
           {
             filename =
-            "__periodic-madness__/graphics/entities/buildings/stainless-steel-tank/stainless-steel-tank.png",
+            "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-tank/stainless-steel-tank.png",
             priority = "extra-high",
             frames = 2,
             width = 219,
@@ -1212,7 +1212,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/vacuum-former-1/vacuum-former.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/vacuum-former-1/vacuum-former.png",
           priority = "high",
           width = 256,
           height = 256,
@@ -1221,7 +1221,7 @@ data:extend({
           scale = 0.75 / 2
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/vacuum-former-2/vacuum-former-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/vacuum-former-2/vacuum-former-shadow.png",
           priority = "high",
           width = 256,
           height = 256,
@@ -1288,7 +1288,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/washing-plant-1/washing-plant.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -1296,7 +1296,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
           priority = "high",
           width = 226,
           height = 214,
@@ -1392,7 +1392,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/burner-crusher/burner-crusher.png",
           width = 177,
           height = 183,
           frame_count = 56,
@@ -1401,7 +1401,7 @@ data:extend({
           scale = 0.5,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/burner-crusher/burner-crusher-shadow.png",
           width = 183,
           height = 177,
           frame_count = 56,
@@ -1446,7 +1446,7 @@ data:extend({
       {
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator.png",
+          "__periodic-graphics-1__/graphics/entities/buildings/fractional-distillator/fractional-distillator.png",
           width = 249 + 7,
           height = 338,
           shift = util.by_pixel(0, -40),
@@ -1454,7 +1454,7 @@ data:extend({
         },
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-shadow.png",
+          "__periodic-graphics-1__/graphics/entities/buildings/fractional-distillator/fractional-distillator-shadow.png",
           width = 338,
           height = 249 + 7,
           shift = util.by_pixel(70, 0),
@@ -1570,7 +1570,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/crusher-1/crusher-1.png",
           width = 214,
           height = 226,
           frame_count = 32,
@@ -1580,7 +1580,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/crusher-1/crusher-1-shadow.png",
           width = 226,
           height = 214,
           frame_count = 32,
@@ -1628,7 +1628,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crusher-2/crusher-2.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/crusher-2/crusher-2.png",
           width = 214,
           height = 226,
           frame_count = 32,
@@ -1638,7 +1638,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/crusher-1/crusher-1-shadow.png",
           width = 226,
           height = 214,
           frame_count = 32,
@@ -1686,7 +1686,7 @@ data:extend({
       {
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser.png",
+          "__periodic-graphics-1__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser.png",
           width = 320,
           height = 316,
           frame_count = 56,
@@ -1695,7 +1695,7 @@ data:extend({
         },
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
+          "__periodic-graphics-1__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
           width = 320,
           height = 316,
           frame_count = 56,
@@ -1768,14 +1768,14 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/fluid-cracker/fluid-cracker.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/fluid-cracker/fluid-cracker.png",
           width = 271,
           height = 292,
           shift = util.by_pixel(1, -9),
           scale = 0.5,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/fluid-cracker/fluid-cracker-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/fluid-cracker/fluid-cracker-shadow.png",
           width = 292,
           height = 271,
           shift = util.by_pixel(1, -9),
@@ -1853,7 +1853,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/evaporator/evaporator.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/evaporator/evaporator.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -1861,7 +1861,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/evaporator/evaporator-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/evaporator/evaporator-shadow.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -1963,7 +1963,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator/molteninator.png",
           priority = "high",
           width = 171,
           height = 174,
@@ -1973,7 +1973,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
           priority = "high",
           width = 174,
           height = 171,
@@ -2048,7 +2048,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/coldinator/coldinator.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/coldinator/coldinator.png",
           priority = "high",
           width = 171,
           height = 174,
@@ -2058,7 +2058,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
           priority = "high",
           width = 174,
           height = 171,
@@ -2159,7 +2159,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator-2/molteninator-2.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator-2/molteninator-2.png",
           priority = "high",
           width = 171,
           height = 174,
@@ -2169,7 +2169,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator-2/molteninator-2-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator-2/molteninator-2-shadow.png",
           priority = "high",
           width = 174,
           height = 171,
@@ -2245,7 +2245,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/coldinator-2/coldinator-2.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/coldinator-2/coldinator-2.png",
           priority = "high",
           width = 171,
           height = 174,
@@ -2255,7 +2255,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
           priority = "high",
           width = 174,
           height = 171,
@@ -2354,7 +2354,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
           width = 32 * 7 * 2,
           height = 32 * 7 * 2,
           frame_count = 32,
@@ -2364,7 +2364,7 @@ data:extend({
           scale = 0.575,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
           width = 32 * 7 * 2,
           height = 32 * 7 * 2,
           frame_count = 32,
@@ -2402,7 +2402,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/science-center/science-center.png",
           width = 320,
           height = 320,
           frame_count = 54,
@@ -2411,7 +2411,7 @@ data:extend({
           scale = 0.625,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/science-center/science-center-shadow.png",
           width = 320,
           height = 320,
           frame_count = 1,
@@ -2428,7 +2428,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-off.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/science-center/science-center-off.png",
           width = 320,
           height = 320,
           frame_count = 1,
@@ -2437,7 +2437,7 @@ data:extend({
           scale = 0.625,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/science-center/science-center-shadow.png",
           width = 320,
           height = 320,
           frame_count = 1,
@@ -2478,7 +2478,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/voltatic-charger/voltatic-charger.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/voltatic-charger/voltatic-charger.png",
             width = 171,
             height = 174,
             frame_count = 30,
@@ -2487,7 +2487,7 @@ data:extend({
             scale = 0.5,
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/voltatic-charger/voltatic-charger-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/voltatic-charger/voltatic-charger-shadow.png",
             width = 171,
             height = 174,
             frame_count = 1,
@@ -2534,7 +2534,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/voltatic-discharger/voltatic-discharger.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/voltatic-discharger/voltatic-discharger.png",
           width = 171,
           height = 174,
           frame_count = 30,
@@ -2543,7 +2543,7 @@ data:extend({
           scale = 0.5,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/voltatic-charger/voltatic-charger-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/voltatic-charger/voltatic-charger-shadow.png",
           width = 171,
           height = 174,
           frame_count = 1,
@@ -2623,7 +2623,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/CO2-nullifer/CO2-nullifer.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/CO2-nullifer/CO2-nullifer.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -2631,7 +2631,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/CO2-nullifer/CO2-nullifer-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/CO2-nullifer/CO2-nullifer-shadow.png",
           priority = "high",
           width = 190,
           height = 165,
@@ -2683,7 +2683,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/vacuum-former-2/vacuum-former.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/vacuum-former-2/vacuum-former.png",
           priority = "high",
           width = 256,
           height = 256,
@@ -2692,7 +2692,7 @@ data:extend({
           scale = 0.75 / 2
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/vacuum-former-2/vacuum-former-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/vacuum-former-2/vacuum-former-shadow.png",
           priority = "high",
           width = 256,
           height = 256,
@@ -2785,7 +2785,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/air-filterer/air-filterer.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/air-filterer/air-filterer.png",
           priority = "high",
           width = 171,
           height = 174,
@@ -2795,7 +2795,7 @@ data:extend({
           shift = util.by_pixel(2, -10),
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/air-filterer/air-filterer-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/air-filterer/air-filterer-shadow.png",
           priority = "high",
           width = 174,
           height = 171,
@@ -2840,7 +2840,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/washing-plant-2/washing-plant.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -2848,7 +2848,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
           priority = "high",
           width = 226,
           height = 214,
@@ -2947,14 +2947,14 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/greenhouse/greenhouse.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/greenhouse/greenhouse.png",
           width = 320,
           height = 316,
           scale = 0.6,
           shift = util.by_pixel(4.4 + 0.1, -20),
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/greenhouse/greenhouse-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/greenhouse/greenhouse-shadow.png",
           width = 316,
           height = 320,
           scale = 0.5,
@@ -3036,14 +3036,14 @@ data:extend({
         {
           {
             filename =
-            "__periodic-madness__/graphics/entities/buildings/factorian-bacteria-greenhouse/factorian-bacteria-greenhouse.png",
+            "__periodic-graphics-1__/graphics/entities/buildings/factorian-bacteria-greenhouse/factorian-bacteria-greenhouse.png",
             width = 320,
             height = 320,
             scale = 0.55,
           },
           {
             filename =
-            "__periodic-madness__/graphics/entities/buildings/factorian-bacteria-greenhouse/factorian-bacteria-greenhouse-shadow.png",
+            "__periodic-graphics-1__/graphics/entities/buildings/factorian-bacteria-greenhouse/factorian-bacteria-greenhouse-shadow.png",
             priority = "high",
             width = 320,
             height = 320,
@@ -3127,7 +3127,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-lab/bio-lab.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-lab/bio-lab.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -3138,7 +3138,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-lab/bio-lab-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-lab/bio-lab-shadow.png",
           priority = "high",
           width = 226,
           height = 214,
@@ -3156,7 +3156,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-lab/bio-lab-off.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-lab/bio-lab-off.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -3167,7 +3167,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-lab/bio-lab-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-lab/bio-lab-shadow.png",
           priority = "high",
           width = 226,
           height = 214,
@@ -3213,7 +3213,7 @@ data:extend({
       {
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/stainless-steel-chest/stainless-steel-chest.png",
+          "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-chest/stainless-steel-chest.png",
           priority = "extra-high",
           width = 64,
           height = 80,
@@ -3293,7 +3293,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-N.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-N.png",
               line_length = 1,
               width = 190,
               height = 208,
@@ -3338,7 +3338,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E.png",
               line_length = 1,
               width = 192,
               height = 188,
@@ -3383,7 +3383,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S.png",
               line_length = 1,
               width = 184,
               height = 192,
@@ -3416,7 +3416,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W.png",
               line_length = 1,
               width = 192,
               height = 188,
@@ -3646,7 +3646,7 @@ data:extend({
           {
             priority = "high",
             filename =
-            "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E-front.png",
+            "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E-front.png",
             line_length = 1,
             width = 136,
             height = 148,
@@ -3663,7 +3663,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-output.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 84,
                 height = 56,
@@ -3675,7 +3675,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-front.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-front.png",
                 line_length = 1,
                 width = 190,
                 height = 104,
@@ -3691,7 +3691,7 @@ data:extend({
           {
             priority = "high",
             filename =
-            "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W-front.png",
+            "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W-front.png",
             line_length = 1,
             width = 134,
             height = 140,
@@ -3732,7 +3732,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-N-wet.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-N-wet.png",
               line_length = 1,
               width = 190,
               height = 198,
@@ -3777,7 +3777,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W-wet.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W-wet.png",
               line_length = 1,
               width = 194,
               height = 208,
@@ -3822,7 +3822,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-wet.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-wet.png",
               line_length = 1,
               width = 192,
               height = 208,
@@ -3855,7 +3855,7 @@ data:extend({
             {
               priority = "high",
               filename =
-              "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E-wet.png",
+              "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E-wet.png",
               line_length = 1,
               width = 194,
               height = 208,
@@ -4525,7 +4525,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-N-wet-front.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-N-wet-front.png",
                 line_length = 1,
                 width = 200,
                 height = 130,
@@ -4544,7 +4544,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W-wet-front.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-W-wet-front.png",
                 line_length = 1,
                 width = 208,
                 height = 144,
@@ -4563,7 +4563,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-output.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-output.png",
                 line_length = 5,
                 width = 84,
                 height = 56,
@@ -4575,7 +4575,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-wet-front.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-S-wet-front.png",
                 line_length = 1,
                 width = 192,
                 height = 140,
@@ -4594,7 +4594,7 @@ data:extend({
               {
                 priority = "high",
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E-wet-front.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/electric-mining-drill-2/electric-mining-drill-E-wet-front.png",
                 line_length = 1,
                 width = 208,
                 height = 148,
@@ -4730,7 +4730,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/electrolysis-plant/electrolysis-plant.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/electrolysis-plant/electrolysis-plant.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -4742,7 +4742,7 @@ data:extend({
         },
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/electrolysis-plant/electrolysis-plant-shadow.png",
+          "__periodic-graphics-1__/graphics/entities/buildings/electrolysis-plant/electrolysis-plant-shadow.png",
           priority = "high",
           width = 226,
           height = 214,
@@ -4832,13 +4832,13 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crystallizer/crystallizer.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/crystallizer/crystallizer.png",
           width = 320,
           height = 320,
           scale = 0.5,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crystallizer/crystallizer-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/crystallizer/crystallizer-shadow.png",
           width = 320,
           height = 320,
           scale = 0.5,
@@ -4945,7 +4945,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-2/solar-panel.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/solar-panel-2/solar-panel.png",
           priority = "high",
           width = 230,
           height = 224,
@@ -5003,7 +5003,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cyclotron/cyclotron.png",
             width = 448,
             height = 448,
             line_length = 6,
@@ -5011,7 +5011,7 @@ data:extend({
             scale = 0.5,
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cyclotron/cyclotron-shadow.png",
             width = 448,
             height = 448,
             line_length = 1,
@@ -5217,7 +5217,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-N-idle.png",
+              filename = "__periodic-graphics-1__/graphics/entities/buildings/heat-exchanger-2/heatex-N-idle.png",
               priority = "extra-high",
               width = 269,
               height = 221,
@@ -5243,7 +5243,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-E-idle.png",
+              filename = "__periodic-graphics-1__/graphics/entities/buildings/heat-exchanger-2/heatex-E-idle.png",
               priority = "extra-high",
               width = 211,
               height = 301,
@@ -5269,7 +5269,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-S-idle.png",
+              filename = "__periodic-graphics-1__/graphics/entities/buildings/heat-exchanger-2/heatex-S-idle.png",
               priority = "extra-high",
               width = 260,
               height = 201,
@@ -5295,7 +5295,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-W-idle.png",
+              filename = "__periodic-graphics-1__/graphics/entities/buildings/heat-exchanger-2/heatex-W-idle.png",
               priority = "extra-high",
               width = 196,
               height = 273,
@@ -5352,7 +5352,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/burninator/burninator.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/burninator/burninator.png",
             width = 114 * 2,
             height = 138 * 2,
             line_length = 6,
@@ -5361,7 +5361,7 @@ data:extend({
             scale = 0.5
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/burninator/burninator-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/burninator/burninator-shadow.png",
             width = 135 * 2,
             height = 114 * 2,
             line_length = 1,
@@ -5431,7 +5431,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/FUCK/FUCK.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/FUCK/FUCK.png",
           width = 320,
           height = 320,
           frame_count = 32,
@@ -5440,7 +5440,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/FUCK/FUCK-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/FUCK/FUCK-shadow.png",
           width = 320,
           height = 320,
           frame_count = 1,
@@ -5499,7 +5499,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/evaporator-2/evaporator-2.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/evaporator-2/evaporator-2.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -5507,7 +5507,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/evaporator/evaporator-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/evaporator/evaporator-shadow.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -5586,7 +5586,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/lithium-field/lithium-field.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/lithium-field/lithium-field.png",
           priority = "high",
           width = 64 * 6,
           height = 64 * 6,
@@ -5594,7 +5594,7 @@ data:extend({
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/lithium-field/lithium-field-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/lithium-field/lithium-field-shadow.png",
           priority = "high",
           draw_as_shadow = true,
           width = 64 * 6,
@@ -5696,7 +5696,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/electrolysis-plant-2/electrolysis-plant.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/electrolysis-plant-2/electrolysis-plant.png",
           priority = "high",
           width = 214,
           height = 226,
@@ -5708,7 +5708,7 @@ data:extend({
         },
         {
           filename =
-          "__periodic-madness__/graphics/entities/buildings/electrolysis-plant/electrolysis-plant-shadow.png",
+          "__periodic-graphics-1__/graphics/entities/buildings/electrolysis-plant/electrolysis-plant-shadow.png",
           priority = "high",
           width = 226,
           height = 214,
@@ -5802,7 +5802,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/battery-charger/battery-charger.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/battery-charger/battery-charger.png",
             width = 171,
             height = 257,
             frame_count = 12,
@@ -5812,7 +5812,7 @@ data:extend({
             scale = 0.5,
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/battery-charger/battery-charger-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/battery-charger/battery-charger-shadow.png",
             width = 257,
             height = 171,
             frame_count = 1,
@@ -5859,7 +5859,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/battery-discharger/battery-discharger.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/battery-discharger/battery-discharger.png",
             width = 171,
             height = 257,
             frame_count = 12,
@@ -5869,7 +5869,7 @@ data:extend({
             scale = 0.5,
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/battery-charger/battery-charger-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/battery-charger/battery-charger-shadow.png",
             width = 257,
             height = 171,
             frame_count = 1,
@@ -5906,7 +5906,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/chemical-plant-2/chemical-plant-2.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/chemical-plant-2/chemical-plant-2.png",
           width = 220,
           height = 292,
           frame_count = 24,
@@ -6250,7 +6250,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/heat-furnace/heat-furnace.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/heat-furnace/heat-furnace.png",
             priority = "high",
             width = 239,
             height = 219,
@@ -6426,7 +6426,7 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-furnace-2/electric-furnace.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-furnace-2/electric-furnace.png",
             priority = "high",
             width = 239,
             height = 219,
@@ -6613,14 +6613,14 @@ data:extend({
 				layers =
 				{
 					{
-						filename = "__periodic-madness__/graphics/entities/buildings/fluid-burner/molteninator.png",
+						filename = "__periodic-graphics-1__/graphics/entities/buildings/fluid-burner/molteninator.png",
 						priority = "high",
 						width = 171,
 						height = 174,
 						scale = 0.5
 					},
 					{
-						filename = "__periodic-madness__/graphics/entities/buildings/fluid-burner/molteninator-shadow.png",
+						filename = "__periodic-graphics-1__/graphics/entities/buildings/fluid-burner/molteninator-shadow.png",
 						priority = "high",
 						width = 174,
 						height = 171,
@@ -6698,7 +6698,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-single.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-single.png",
           priority = "extra-high",
           width = 64,
           height = 86,
@@ -6724,7 +6724,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-vertical.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-vertical.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -6750,7 +6750,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-horizontal.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-horizontal.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -6776,7 +6776,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-corner-right.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-corner-right.png",
           priority = "extra-high",
           width = 64,
           height = 128,
@@ -6802,7 +6802,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-corner-left.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-corner-left.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -6828,7 +6828,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-t.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-t.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -6854,7 +6854,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-ending-right.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-ending-right.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -6880,7 +6880,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-ending-left.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-ending-left.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -6903,7 +6903,7 @@ data:extend({
     },
     filling =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-filling.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-filling.png",
       priority = "extra-high",
       width = 48,
       height = 56,
@@ -6917,7 +6917,7 @@ data:extend({
       sheets =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/concrete-wall/wall-patch.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/concrete-wall/wall-patch.png",
           priority = "extra-high",
           width = 116,
           height = 128,
@@ -7125,7 +7125,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-single.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-single.png",
           priority = "extra-high",
           width = 64,
           height = 86,
@@ -7151,7 +7151,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-vertical.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-vertical.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -7177,7 +7177,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-horizontal.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-horizontal.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -7203,7 +7203,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-corner-right.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-corner-right.png",
           priority = "extra-high",
           width = 64,
           height = 128,
@@ -7229,7 +7229,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-corner-left.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-corner-left.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -7255,7 +7255,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-t.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-t.png",
           priority = "extra-high",
           width = 64,
           height = 134,
@@ -7281,7 +7281,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-ending-right.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-ending-right.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -7307,7 +7307,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-ending-left.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-ending-left.png",
           priority = "extra-high",
           width = 64,
           height = 92,
@@ -7330,7 +7330,7 @@ data:extend({
     },
     filling =
     {
-      filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-filling.png",
+      filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-filling.png",
       priority = "extra-high",
       width = 48,
       height = 56,
@@ -7344,7 +7344,7 @@ data:extend({
       sheets =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/bio-wall/wall-patch.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/bio-wall/wall-patch.png",
           priority = "extra-high",
           width = 116,
           height = 128,
@@ -7521,7 +7521,7 @@ data:extend({
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/RTG/RTG.png",
         width = 128,
         height = 165,
         line_length = 6,
@@ -7530,7 +7530,7 @@ data:extend({
         scale = 0.5,
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-shadow.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/RTG/RTG-shadow.png",
         width = 169,
         height = 118,
         scale = 0.5,
@@ -7547,7 +7547,7 @@ data:extend({
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-idle.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/RTG/RTG-idle.png",
         width = 128,
         height = 165,
         line_length = 1,
@@ -7556,7 +7556,7 @@ data:extend({
         scale = 0.5,
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/RTG/RTG-shadow.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/RTG/RTG-shadow.png",
         width = 169,
         height = 118,
         scale = 0.5,
@@ -7593,7 +7593,7 @@ data:extend({
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-3/solar-panel.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/solar-panel-3/solar-panel.png",
         priority = "high",
         width = 230,
         height = 224,
@@ -7681,7 +7681,7 @@ data:extend({
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/molteninator-3/molteninator-3.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator-3/molteninator-3.png",
         priority = "high",
         width = 171,
         height = 174,
@@ -7691,7 +7691,7 @@ data:extend({
         scale = 0.5
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/molteninator-2/molteninator-2-shadow.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator-2/molteninator-2-shadow.png",
         priority = "high",
         width = 174,
         height = 171,
@@ -7782,7 +7782,7 @@ data:extend({
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/coldinator-3/coldinator-3.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/coldinator-3/coldinator-3.png",
         priority = "high",
         width = 171,
         height = 174,
@@ -7792,7 +7792,7 @@ data:extend({
         scale = 0.5
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/molteninator/molteninator-shadow.png",
         priority = "high",
         width = 174,
         height = 171,
@@ -7877,7 +7877,7 @@ data:extend({
     {
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank.png",
+        "__periodic-graphics-1__/graphics/entities/buildings/mixing-tank-1/mixing-tank.png",
         width = 320,
         height = 320,
         frame_count = 16,
@@ -7887,7 +7887,7 @@ data:extend({
       },
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+        "__periodic-graphics-1__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
         width = 320,
         height = 320,
         frame_count = 1,
@@ -7971,7 +7971,7 @@ fluid_boxes =
     {
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank.png",
+        "__periodic-graphics-1__/graphics/entities/buildings/mixing-tank-2/mixing-tank.png",
         width = 320,
         height = 320,
         frame_count = 16,
@@ -7981,7 +7981,7 @@ fluid_boxes =
       },
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+        "__periodic-graphics-1__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
         width = 320,
         height = 320,
         frame_count = 1,
@@ -8124,7 +8124,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-N-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-N-idle.png",
             priority = "extra-high",
             width = 269,
             height = 221,
@@ -8147,7 +8147,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
             priority = "extra-high",
             width = 216,
             height = 301,
@@ -8178,7 +8178,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-S-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-S-idle.png",
             priority = "extra-high",
             width = 260,
             height = 192,
@@ -8201,7 +8201,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-W-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-W-idle.png",
             priority = "extra-high",
             width = 196,
             height = 273,
@@ -8313,7 +8313,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-N-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-N-idle.png",
             priority = "extra-high",
             width = 269,
             height = 221,
@@ -8336,7 +8336,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-E-idle.png",
             priority = "extra-high",
             width = 216,
             height = 301,
@@ -8367,7 +8367,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-S-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-S-idle.png",
             priority = "extra-high",
             width = 260,
             height = 192,
@@ -8390,7 +8390,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/electric-boiler/boiler-W-idle.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/electric-boiler/boiler-W-idle.png",
             priority = "extra-high",
             width = 196,
             height = 273,
@@ -8444,7 +8444,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-north.png",
             priority = "high",
             width = 192,
             height = 209,
@@ -8453,7 +8453,7 @@ fluid_boxes =
             scale = 0.5
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
             priority = "high",
             width = 209,
             height = 173,
@@ -8471,7 +8471,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-south.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-south.png",
             priority = "high",
             width = 192,
             height = 209,
@@ -8480,7 +8480,7 @@ fluid_boxes =
             scale = 0.5
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
             priority = "high",
             width = 209,
             height = 173,
@@ -8498,7 +8498,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-east.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-east.png",
             priority = "high",
             width = 192,
             height = 209,
@@ -8507,7 +8507,7 @@ fluid_boxes =
             scale = 0.5
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
             priority = "high",
             width = 209,
             height = 173,
@@ -8525,7 +8525,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-west.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-west.png",
             priority = "high",
             width = 192,
             height = 209,
@@ -8534,7 +8534,7 @@ fluid_boxes =
             scale = 0.5
           },
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/cooling-plant/cooling-plant-north-shadow.png",
             priority = "high",
             width = 209,
             height = 173,
@@ -8628,7 +8628,7 @@ fluid_boxes =
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-3/washing-plant.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/washing-plant-3/washing-plant.png",
         priority = "high",
         width = 214,
         height = 226,
@@ -8636,7 +8636,7 @@ fluid_boxes =
         scale = 0.5
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+        filename = "__periodic-graphics-1__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
         priority = "high",
         width = 226,
         height = 214,
@@ -8781,7 +8781,7 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4.png",
+            filename = "__periodic-graphics-1__/graphics/entities/buildings/assembling-machine-4/assembling-machine-4.png",
             priority = "high",
             width = 214,
             height = 237,
@@ -8869,7 +8869,7 @@ fluid_boxes =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
           width = 32 * 7 * 2,
           height = 32 * 7 * 2,
           frame_count = 32,
@@ -8879,7 +8879,7 @@ fluid_boxes =
           scale = 0.575,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
           width = 32 * 7 * 2,
           height = 32 * 7 * 2,
           frame_count = 32,

@@ -51,7 +51,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/roboport-2/roboport-2.png",
+              filename = "__periodic-graphics-1__/graphics/entities/buildings/roboport-2/roboport-2.png",
               width = 228,
               height = 277,
               shift = util.by_pixel(2, -2.25),
@@ -204,7 +204,7 @@ data:extend({
           layers =
             {
               {
-                filename = "__periodic-madness__/graphics/entities/buildings/construction-repeater/construction-repeater.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/construction-repeater/construction-repeater.png",
                 priority = "high",
                 width = 128,
                 height = 256,
@@ -212,7 +212,7 @@ data:extend({
                 scale = 0.5
               },
               {
-                filename = "__periodic-madness__/graphics/entities/buildings/construction-repeater/construction-repeater-shadow.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/construction-repeater/construction-repeater-shadow.png",
                 priority = "high",
                 width = 256,
                 height = 128,
@@ -287,7 +287,7 @@ data:extend({
           layers =
             {
               {
-                filename = "__periodic-madness__/graphics/entities/buildings/logistic-repeater/logistic-repeater.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/logistic-repeater/logistic-repeater.png",
                 priority = "high",
                 width = 128,
                 height = 256,
@@ -296,7 +296,7 @@ data:extend({
                 scale = 0.5
               },
               {
-                filename = "__periodic-madness__/graphics/entities/buildings/construction-repeater/construction-repeater-shadow.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/construction-repeater/construction-repeater-shadow.png",
                 priority = "high",
                 width = 256,
                 height = 128,

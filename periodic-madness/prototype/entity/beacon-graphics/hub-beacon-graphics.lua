@@ -9,7 +9,7 @@
                 layers = {
                     -- Base
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/hub-beacon/beacon-base.png",
+                        filename = "__periodic-graphics-1__/graphics/entities/buildings/hub-beacon/beacon-base.png",
                         width = 116 * 2,
                         height = 93 * 2,
                         scale = 0.75,
@@ -17,7 +17,7 @@
                     },
                     -- Shadow
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/hub-beacon/beacon-base-shadow.png",
+                        filename = "__periodic-graphics-1__/graphics/entities/buildings/hub-beacon/beacon-base-shadow.png",
                         width = 116 * 2,
                         height = 93 * 2,
                         scale = 0.75,
@@ -35,7 +35,7 @@
                 layers = {
                     -- Base
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/hub-beacon/beacon-antenna.png",
+                        filename = "__periodic-graphics-1__/graphics/entities/buildings/hub-beacon/beacon-antenna.png",
                         width = 54 * 2,
                         height = 50 * 2,
                         line_length = 8,
@@ -46,7 +46,7 @@
                     },
                     -- Shadow
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/hub-beacon/beacon-antenna-shadow.png",
+                        filename = "__periodic-graphics-1__/graphics/entities/buildings/hub-beacon/beacon-antenna-shadow.png",
                         width = 63 * 2,
                         height = 49 * 2,
                         line_length = 8,

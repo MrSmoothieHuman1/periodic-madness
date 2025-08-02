@@ -54,7 +54,7 @@ data:extend({
             straight_vertical_single =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-single.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-single.png",
                 priority = "extra-high",
                 width = 160,
                 height = 160,
@@ -63,7 +63,7 @@ data:extend({
             straight_vertical =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -72,7 +72,7 @@ data:extend({
             straight_vertical_window =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-window.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-window.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -81,7 +81,7 @@ data:extend({
             straight_horizontal_window =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal-window.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal-window.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -90,7 +90,7 @@ data:extend({
             straight_horizontal =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -99,7 +99,7 @@ data:extend({
             corner_up_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -108,7 +108,7 @@ data:extend({
             corner_up_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -117,7 +117,7 @@ data:extend({
             corner_down_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -126,7 +126,7 @@ data:extend({
             corner_down_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -135,7 +135,7 @@ data:extend({
             t_up =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-up.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-up.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -144,7 +144,7 @@ data:extend({
             t_down =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-down.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-down.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -153,7 +153,7 @@ data:extend({
             t_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -162,7 +162,7 @@ data:extend({
             t_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -171,7 +171,7 @@ data:extend({
             cross =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-cross.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-cross.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -180,7 +180,7 @@ data:extend({
             ending_up =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-up.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-up.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -189,7 +189,7 @@ data:extend({
             ending_down =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-down.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-down.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -198,7 +198,7 @@ data:extend({
             ending_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -207,7 +207,7 @@ data:extend({
             ending_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -216,7 +216,7 @@ data:extend({
             horizontal_window_background =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-horizontal-window-background.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-horizontal-window-background.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -225,7 +225,7 @@ data:extend({
             vertical_window_background =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-vertical-window-background.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-vertical-window-background.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -325,7 +325,7 @@ data:extend({
             north =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-up.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-up.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -334,7 +334,7 @@ data:extend({
             south =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-down.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-down.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -343,7 +343,7 @@ data:extend({
             west =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -352,7 +352,7 @@ data:extend({
             east =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -416,7 +416,7 @@ data:extend({
             straight_vertical_single =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-single.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-single.png",
                 priority = "extra-high",
                 width = 160,
                 height = 160,
@@ -425,7 +425,7 @@ data:extend({
             straight_vertical =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -434,7 +434,7 @@ data:extend({
             straight_vertical_window =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-window.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-window.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -443,7 +443,7 @@ data:extend({
             straight_horizontal_window =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal-window.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal-window.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -452,7 +452,7 @@ data:extend({
             straight_horizontal =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -461,7 +461,7 @@ data:extend({
             corner_up_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -470,7 +470,7 @@ data:extend({
             corner_up_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -479,7 +479,7 @@ data:extend({
             corner_down_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -488,7 +488,7 @@ data:extend({
             corner_down_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -497,7 +497,7 @@ data:extend({
             t_up =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-up.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-up.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -506,7 +506,7 @@ data:extend({
             t_down =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-down.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-down.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -515,7 +515,7 @@ data:extend({
             t_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -524,7 +524,7 @@ data:extend({
             t_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -533,7 +533,7 @@ data:extend({
             cross =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-cross.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-cross.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -542,7 +542,7 @@ data:extend({
             ending_up =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-up.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-up.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -551,7 +551,7 @@ data:extend({
             ending_down =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-down.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-down.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -560,7 +560,7 @@ data:extend({
             ending_right =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-right.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -569,7 +569,7 @@ data:extend({
             ending_left =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-left.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -578,7 +578,7 @@ data:extend({
             horizontal_window_background =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-horizontal-window-background.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-horizontal-window-background.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -587,7 +587,7 @@ data:extend({
             vertical_window_background =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-vertical-window-background.png",
+                "__periodic-graphics-1__/graphics/entities/buildings/osmium-pipe/osmium-pipe-vertical-window-background.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -700,7 +700,7 @@ data:extend({
         {
             north =
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pump/pump-north.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pump/pump-north.png",
                 width = 103,
                 height = 164,
                 scale = 0.5,
@@ -711,7 +711,7 @@ data:extend({
             },
             east =
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pump/pump-east.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pump/pump-east.png",
                 width = 130,
                 height = 109,
                 scale = 0.5,
@@ -722,7 +722,7 @@ data:extend({
             },
             south =
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pump/pump-south.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pump/pump-south.png",
                 width = 114,
                 height = 160,
                 scale = 0.5,
@@ -733,7 +733,7 @@ data:extend({
             },
             west =
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pump/pump-west.png",
+                filename = "__periodic-graphics-1__/graphics/entities/buildings/stainless-steel-pump/pump-west.png",
                 width = 131,
                 height = 111,
                 scale = 0.5,

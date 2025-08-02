@@ -373,7 +373,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
           width = 320,
           height = 320,
           line_length = 6,
@@ -383,7 +383,7 @@ data:extend({
           shift = util.by_pixel(-5, -7)
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
           width = 320,
           height = 320,
           line_length = 1,
@@ -400,7 +400,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
           width = 320,
           height = 320,
           frame_count = 1,
@@ -408,7 +408,7 @@ data:extend({
           shift = util.by_pixel(-5, -7)
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+          filename = "__periodic-graphics-1__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
           width = 320,
           height = 320,
           scale = 0.5,

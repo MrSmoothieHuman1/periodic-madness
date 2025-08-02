@@ -272,7 +272,7 @@ data:extend({
                 always_draw = true,
                 animation =
                 {
-                  filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-cover.png",
+                  filename = "__periodic-graphics-1__/graphics/entities/buildings/coil-heater/coil-heater-cover.png",
                   width = 64,
                   height = 101,
                   scale = 0.5,
@@ -288,7 +288,7 @@ data:extend({
                   layers =
                   {
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-body.png",
+                      filename = "__periodic-graphics-1__/graphics/entities/buildings/coil-heater/coil-heater-body.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -312,7 +312,7 @@ data:extend({
                     secondary_draw_order = -1,
                     pictures =
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil.png",
+                      filename = "__periodic-graphics-1__/graphics/entities/buildings/coil-heater/coil-heater-coil.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
@@ -325,7 +325,7 @@ data:extend({
                     secondary_draw_order = -1,
                     pictures =
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil-mask.png",
+                      filename = "__periodic-graphics-1__/graphics/entities/buildings/coil-heater/coil-heater-coil-mask.png",
                       width = 64,
                       height = 101,
                       scale = 0.5,
