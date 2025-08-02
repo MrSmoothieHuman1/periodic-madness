@@ -157,13 +157,22 @@ for _, entity_type in pairs{
 	end
 end
 
-for _, furnace in pairs(data.raw["furnace"]) do
-	if furnace.allowed_module_categories == "pm-heating-coils" then
-		return
-	end
-	if not furnace.allowed_module_categories == nil or not furnace.allowed_module_categories == "pm-heating-coils" then
-		allowed_module_categories = "pm-heating-coils"
-		furnace.module_slots = furnace.module_slots * 2
-	end
+local excluded_machines =
+{
+	data.raw["furnace"]["electric-furnace"],
+	data.raw["furnace"]["pm-heat-furnace"],
+	data.raw["furnace"]["pm-electric-furnace-2"],
+	data.raw["furnace"]["pm-electric-boiler-1"],
+	data.raw["furnace"]["pm-electric-boiler-2"]
+}
 
-end
+ for _, machine in pairs(data.raw["furnace"]) do
+        if not(machine.module_slots == nil) and machine.module_slots > 0 and not excluded_machines then
+            machine.module_slots = machine.module_slots + 8
+            machine.allowed_module_categories = {"hc-heating-coils"}
+            machine.icons_positioning =
+            {
+                {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
+            }
+        end
+    end
