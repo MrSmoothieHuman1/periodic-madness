@@ -642,7 +642,7 @@ end
 ---@param blacklist data.ModuleCategoryID[]
 function PM.remove_module_categories(list, blacklist)
   if not list then
-    PM.all_module_categories(blacklist)
+    return PM.all_module_categories(blacklist)
   end
 
   local blacklist_lookup = array_to_lookup(blacklist)
