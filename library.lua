@@ -609,6 +609,71 @@ function PM.effects(...)
   return {...}
 end
 
+--MARK: Module Categories
+
+---@generic T : string
+---@param array T[]
+---@return table<T,true>
+local function array_to_lookup(array)
+  local lookup = {}
+  for _, item in pairs(array) do
+    lookup[item] = true
+  end
+  return lookup
+end
+
+---@param blacklist? data.ModuleCategoryID[]
+---@return data.ModuleCategoryID[]
+function PM.all_module_categories(blacklist)
+  local blacklist_lookup = array_to_lookup(blacklist or {})
+
+  local list, count = {}, 0
+  for category, _ in pairs(data.raw["module-category"]) do
+    if not blacklist_lookup[category] then
+      count = count + 1
+      list[count] = category
+    end
+  end
+
+  return list
+end
+
+---@param list data.ModuleCategoryID[]
+---@param blacklist data.ModuleCategoryID[]
+function PM.remove_module_categories(list, blacklist)
+  if not list then
+    PM.all_module_categories(blacklist)
+  end
+
+  local blacklist_lookup = array_to_lookup(blacklist)
+  for i = #list, 1, -1 do
+    if blacklist_lookup[list[i]] then
+      table.remove(list, i)
+    end
+  end
+end
+
+---@param list? data.ModuleCategoryID[]
+---@param new_categories data.ModuleCategoryID[]
+---@return data.ModuleCategoryID[]
+function PM.add_module_categories(list, new_categories)
+  if not list then
+    return PM.all_module_categories()
+  end
+
+  local whitelist_lookup = array_to_lookup(new_categories)
+  for _, category in pairs(list) do
+    whitelist_lookup[category] = nil
+  end
+
+  local count = #list
+  for category in pairs(whitelist_lookup) do
+    count = count + 1
+    list[count] = category
+  end
+  return list
+end
+
 --MARK: Trigger
 
 ---Will create an instant and direct script trigger if not given a trigger
