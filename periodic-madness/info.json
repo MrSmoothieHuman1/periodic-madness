@@ -14,7 +14,8 @@
     "? Milestones >= 1.4.2",
     "? Mini_Trains >= 2.0.0",
     "? elevated-rails",
-    "? stack-inserters"
+    "? stack-inserters",
+    "periodic-graphics-1 = 1.0.0"
   ],
   "description": "This mod aims to add every element in the periodic table to Factorio.",
   "package": {
