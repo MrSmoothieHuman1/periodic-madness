@@ -138,42 +138,22 @@ data.raw["recipe"]["military-science-pack"].hidden_in_factoriopedia = true
 data.raw["tool"]["military-science-pack"].hidden = true
 data.raw["tool"]["military-science-pack"].hidden_in_factoriopedia = true
 
-local exempt_heating_coil_machines =
-{
-	data.raw["beacon"],
-	data.raw["assembling-machine"],
-	data.raw["rocket-silo"],
-}
-local exempt_building_module_machines =
-{
-	data.raw["assembling-machine"]["pm-circuit-megassembler"]
-}
+for _, entity_type in pairs{
+  "beacon",
+  "lab",
+  "mining-drill",
+  "assembling-machine",
+  "rocket-silo",
+  "furnace"
+} do
 
-for _, machineType in pairs(exempt_heating_coil_machines) do
-	for _, machine in pairs(machineType) do
-		if not (machine.allowed_module_categories == nil) then
-			for i, moduleCat in pairs(machine.allowed_module_categories) do
-				if moduleCat.name == "pm-heating-coils" then
-					table.remove(machine.allowed_module_categories,i)
-					break
-				end
-				if moduleCat.name == "pm-circuit-megassembler-module" and not exempt_building_module_machines then
-					table.remove(machine.allowed_module_categories,i)
-					break
-				end
-			end
-		elseif not (machine.module_slots == nil) and machine.module_slots > 0 and not (machine.allowed_effects == nil)  then
-			if(machine.allowed_module_categories == nil) then
-				machine.allowed_module_categories = {}
-			end
-			for _, moduleCat in pairs(data.raw["module-category"]) do
-				if not(moduleCat.name == "pm-heating-coils" or moduleCat.name == "pm-circuit-megassembler-module") then
-					table.insert(machine.allowed_module_categories, moduleCat.name)
-				end
-			end
-		end
+-- Inside the loop
+
+  for entity, prototype in pairs(data.raw[entity_type] or {}) do
+    prototype.allowed_module_categories = PM.remove_module_categories(prototype.allowed_module_categories, 
+	{
+      "pm-heating-coils",
+      "pm-circuit-megassembler-module",
+    })
 	end
 end
-
-data.raw["mining-drill"]["electric-mining-drill"].allowed_module_categories = {"speed", "productivity", "efficiency"}
-data.raw["lab"]["lab"].allowed_module_categories = {"speed", "productivity", "efficiency"}
