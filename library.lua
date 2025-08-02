@@ -640,6 +640,7 @@ end
 
 ---@param list data.ModuleCategoryID[]
 ---@param blacklist data.ModuleCategoryID[]
+---@return data.ModuleCategoryID[]
 function PM.remove_module_categories(list, blacklist)
   if not list then
     return PM.all_module_categories(blacklist)
@@ -651,6 +652,8 @@ function PM.remove_module_categories(list, blacklist)
       table.remove(list, i)
     end
   end
+
+  return list
 end
 
 ---@param list? data.ModuleCategoryID[]
