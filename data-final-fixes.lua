@@ -144,7 +144,6 @@ for _, entity_type in pairs{
   "mining-drill",
   "assembling-machine",
   "rocket-silo",
-  "furnace"
 } do
 
 -- Inside the loop
