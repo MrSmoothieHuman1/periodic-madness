@@ -156,3 +156,14 @@ for _, entity_type in pairs{
     })
 	end
 end
+
+for _, furnace in pairs(data.raw["furnace"]) do
+	if furnace.allowed_module_categories == "pm-heating-coils" then
+		return
+	end
+	if not furnace.allowed_module_categories == nil or not furnace.allowed_module_categories == "pm-heating-coils" then
+		allowed_module_categories = "pm-heating-coils"
+		furnace.module_slots = furnace.module_slots * 2
+	end
+
+end
