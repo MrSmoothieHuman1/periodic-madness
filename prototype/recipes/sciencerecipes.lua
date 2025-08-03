@@ -243,9 +243,9 @@ data:extend({
     {
         PM.ingredient("pm-aluminium-plate", 5),
         PM.ingredient("pm-tin-plate", 5),
-        PM.ingredient("pm-lead-plate", 8),
-        PM.ingredient("pm-thallium-ore", 3),
-        PM.ingredient("pm-bismuth-ore", 4),
+        PM.ingredient("pm-lead-plate", 6),
+        PM.ingredient("pm-thallium-plate", 3),
+        PM.ingredient("pm-bismuth-ore", 3),
         PM.ingredient("pm-liquid-gallium", 10, "fluid"),
         PM.ingredient("pm-plastic-science-bottle", 1)
     },
