@@ -67,7 +67,7 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 6,
+    energy_required = 4,
     category = "chemistry",
     subgroup = "pm-gallium-ptm",
     order = "aa",
@@ -90,7 +90,7 @@ data:extend({
     category = "pm-acids",
     subgroup = "pm-gallium-ptm",
     order = "b",
-    energy_required = 4,
+    energy_required = 2,
     main_product = "pm-gallium-chunks",
     allow_productivity = true,
     ingredients =
@@ -101,7 +101,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-gallium-chunks", 6, 12),
-      PM.product("pm-aluminium-ore", 2)
+      PM.product("pm-aluminium-ore", 3)
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -128,7 +128,7 @@ data:extend({
     type = "recipe",
     name = "pm-ion-exchange-beads",
     enabled = false,
-    energy_required = 7.5,
+    energy_required = 5,
     category = "chemistry",
     subgroup = "pm-gallium-ptm",
     order = "e",
@@ -137,18 +137,18 @@ data:extend({
     {
       PM.ingredient("pm-resin", 80, "fluid"),
       PM.ingredient("pm-butane-gas", 20, "fluid"),
-      PM.ingredient("sulfur", 2)
+      PM.ingredient("sulfur", 3)
     },
     results =
     {
-      PM.product("pm-ion-exchange-beads", 10)
+      PM.product("pm-ion-exchange-beads", 15)
     }
   }--[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-gallium-filtering",
     enabled = false,
-    energy_required = 10 / 2,
+    energy_required = 5,
     category = "pm-electrolysis",
     subgroup = "pm-gallium-ptm",
     order = "f",

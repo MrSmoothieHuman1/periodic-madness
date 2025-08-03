@@ -32,6 +32,7 @@ Date: 2025-12-07
     - Changed stack size of artillery shells from 1 to 2.
     - Changed phosphorous to be behind R-NM science, and be part of its ingredients.
     - Moved lead into its own technology, and moved it to behind P-TM science.
+    - Completely rebalanced P-TM sciences recipe and ingredients.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514

@@ -69,7 +69,7 @@ data:extend({
     results =
     {
       PM.product("pm-lorandite", 6),
-      PM.product("sulfur", 2)
+      PM.product_chance("sulfur", 2, 0.75)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -116,7 +116,7 @@ data:extend({
     results =
     {
       PM.product("pm-thallium-ore", 2),
-      PM.product_range("sulfur", 1, 4)
+      PM.product_range("sulfur", 1, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
