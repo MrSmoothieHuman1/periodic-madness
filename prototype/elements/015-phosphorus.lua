@@ -93,7 +93,7 @@ data:extend({
     name = "pm-phosphoric-acid-filtering",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/phosphoric-acid-filtering.png",
-    energy_required = 9,
+    energy_required = 6,
     enabled = false,
     category = "pm-acids",
     subgroup = "pm-phosphorus-rnm",
@@ -106,7 +106,7 @@ data:extend({
     results =
     {
       PM.product("pm-white-phosphorus", 4),
-      PM.product_range_chance("pm-red-phosphorus", 2, 4, 0.2)
+      PM.product_range_chance("pm-red-phosphorus", 2, 4, 0.25)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -115,7 +115,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/white-to-red-phosphorus.png",
     enabled = false,
-    energy_required = 6.4,
+    energy_required = 4.8,
     category = "smelting",
     subgroup = "pm-phosphorus-rnm",
     order = "f",

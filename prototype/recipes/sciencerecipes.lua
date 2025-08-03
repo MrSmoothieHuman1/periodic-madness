@@ -222,7 +222,8 @@ data:extend({
         PM.ingredient("pm-chlorine", 14 * 2, "fluid"),
         PM.ingredient("pm-nitrogen-gas", 14 * 2, "fluid"),
         PM.ingredient("pm-carbon", 14 * 2),
-        PM.ingredient("sulfur", 14)
+        PM.ingredient("sulfur", 14),
+        PM.ingredient("pm-red-phosphorus", 7)
     },
     results =
     {

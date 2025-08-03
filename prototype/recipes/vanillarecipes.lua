@@ -217,7 +217,8 @@ data.raw["recipe"]["chemical-science-pack"].ingredients =
   PM.ingredient("pm-chlorine", 14 * 2, "fluid"),
   PM.ingredient("pm-nitrogen-gas", 14 * 2, "fluid"),
   PM.ingredient("pm-carbon", 28),
-  PM.ingredient("sulfur", 14)
+  PM.ingredient("sulfur", 14),
+  PM.ingredient("pm-red-phosphorus", 7)
 }
 data.raw["recipe"]["storage-tank"].ingredients =
 {
