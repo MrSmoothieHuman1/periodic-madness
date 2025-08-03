@@ -5801,6 +5801,47 @@ data:extend({
       time = 120
     }
   },
+  {
+    type = "technology",
+    name = "pm-selenium-battery-equipment",
+    icon_size = 256,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/technology/lithium-battery-equipment.png",
+        icon_size = 256
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+        icon_size = 128,
+        shift = {
+          100,
+          100
+        }
+      }
+    },
+    effects =
+    {
+      PM.unlock_recipe("pm-lithium-sulfur-battery-equipment")
+    },
+    prerequisites = {"pm-selenium-sulfur-battery"},
+    unit =
+    {
+      count = 600,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
 --MARK: NB science
 --MARK: AC science
 --MARK: LA science

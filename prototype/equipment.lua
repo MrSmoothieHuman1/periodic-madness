@@ -338,6 +338,32 @@ data:extend({
     },
     categories = {"armor"}
   },
+  
+  {
+    type = "battery-equipment",
+    name = "pm-selenium-sulfur-battery-equipment",
+    sprite =
+    {
+      filename = "__periodic-madness__/graphics/equipment/lithium-battery-equipment-icon.png",
+      width = 64,
+      height = 128,
+      priority = "medium",
+      scale = 0.5
+    },
+    shape =
+    {
+      width = 1,
+      height = 2,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "75MJ",
+      usage_priority = "tertiary"
+    },
+    categories = {"armor"}
+  },
 })
 
 data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment.png"
@@ -365,7 +391,7 @@ data.raw["item"]["battery-equipment"].order = "a"
 data.raw["item"]["battery-mk2-equipment"].subgroup = "pm-modular-storage"
 data.raw["item"]["battery-mk2-equipment"].order = "b"
 
-data.raw["generator-equipment"]["fission-reactor-equipment"].burner = 
+data.raw["generator-equipment"]["fission-reactor-equipment"].burner =
 {
   type = "burner",
   usage_priority = "primary-output",
@@ -376,7 +402,7 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].burner =
 data.raw["generator-equipment"]["fission-reactor-equipment"].power = "500kW"
 data.raw["item"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["fission-reactor-equipment"].order = "c"
-data.raw["generator-equipment"]["fission-reactor-equipment"].shape = 
+data.raw["generator-equipment"]["fission-reactor-equipment"].shape =
 {
   width = 3,
   height = 3,
@@ -388,7 +414,7 @@ data.raw["item"]["solar-panel-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["solar-panel-equipment"].order = "a"
 data.raw["solar-panel-equipment"]["solar-panel-equipment"].categories = {"armor", "pm-bio-armor"}
 
-data.raw["night-vision-equipment"]["night-vision-equipment"].shape = 
+data.raw["night-vision-equipment"]["night-vision-equipment"].shape =
 {
   width = 1,
   height = 1,
