@@ -1547,6 +1547,7 @@ data:extend({
     name = "pm-osmium-pipe",
     enabled = false,
     energy_required = 2,
+    category = "crafting-with-fluid",
     ingredients = 
     {
       PM.ingredient("pm-osmiridium-plate", 2),

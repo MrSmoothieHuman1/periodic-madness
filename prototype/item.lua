@@ -1646,6 +1646,17 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-selenium-sulfur-battery-equipment",
+    icon = "__periodic-madness__/graphics/equipment/lithium-battery-equipment.png",
+    icon_size = 64,
+    place_as_equipment_result = "pm-lithium-sulfur-battery-equipment",
+    subgroup = "pm-modular-storage",
+    order = "c",
+    stack_size = 20
+  },
+
+  {
+    type = "item",
     name = "pm-iron-fish",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/iron-fish.png",
