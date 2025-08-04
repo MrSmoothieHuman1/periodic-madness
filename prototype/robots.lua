@@ -295,9 +295,9 @@ local robots =
     max_payload_size = 1,
     speed = 0.08,
     max_energy = "2MJ",
-    energy_per_tick = "0.03kJ",
+    energy_per_tick = "0.05kJ",
     speed_multiplier_when_out_of_energy = 0.4,
-    energy_per_move = "2kJ",
+    energy_per_move = "2.5kJ",
     min_to_charge = 0.2,
     max_to_charge = 0.9,
     icon_draw_specification = {scale = 0.5},
@@ -358,9 +358,9 @@ local robots =
     max_payload_size = 1,
     speed = 0.08,
     max_energy = "2MJ",
-    energy_per_tick = "0.03kJ",
+    energy_per_tick = "0.05kJ",
     speed_multiplier_when_out_of_energy = 0.4,
-    energy_per_move = "2kJ",
+    energy_per_move = "2.5kJ",
     min_to_charge = 0.2,
     max_to_charge = 0.9,
     working_sound = sounds.flying_robot(0.48),
@@ -379,14 +379,16 @@ local robots =
 
 data:extend(robots)
 
-data.raw["construction-robot"]["construction-robot"].max_energy = "3.5MJ"
+data.raw["construction-robot"]["construction-robot"].max_energy = "4.5MJ"
 data.raw["construction-robot"]["construction-robot"].speed = 0.055
 data.raw["construction-robot"]["construction-robot"].speed_multiplier_when_out_of_energy = 0.12
-data.raw["construction-robot"]["construction-robot"].energy_per_tick = "0.015kJ"
+data.raw["construction-robot"]["construction-robot"].energy_per_tick = "0.04kJ"
+data.raw["construction-robot"]["construction-robot"].energy_per_move = "6kJ"
 data.raw["construction-robot"]["construction-robot"].max_payload_size = 2
 
-data.raw["logistic-robot"]["logistic-robot"].max_energy = "3.5MJ"
+data.raw["logistic-robot"]["logistic-robot"].max_energy = "4.5MJ"
 data.raw["logistic-robot"]["logistic-robot"].speed = 0.055
 data.raw["logistic-robot"]["logistic-robot"].speed_multiplier_when_out_of_energy = 0.12
-data.raw["logistic-robot"]["logistic-robot"].energy_per_tick = "0.015kJ"
+data.raw["logistic-robot"]["logistic-robot"].energy_per_tick = "0.04kJ"
+data.raw["construction-robot"]["construction-robot"].energy_per_move = "6kJ"
 data.raw["logistic-robot"]["logistic-robot"].max_payload_size = 2
