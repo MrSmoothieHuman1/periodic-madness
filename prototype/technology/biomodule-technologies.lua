@@ -355,7 +355,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade-2.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -378,7 +378,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade-2.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -401,7 +401,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-5",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade-3.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -424,7 +424,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-health-6",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/health-bio-upgrade-3.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =

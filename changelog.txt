@@ -20,7 +20,8 @@ Date: 2025-12-07
     - Added new recipes for Mulitmetal items.
     - Added selenium batteries, as an end-game battery unlock. It currently only has a charged variant + new battery equipment, but will get more soon.
     - Added the obligatory assembling machine 4! it has a crafting speed of 1.75, with 6 module slots and the same amount of pipes.
-    - Added a MK2 version of the Circuit Megassembler, which has double the crafting speed and has an innate productivity boost - but takes light lubricant. 
+    - Added a MK2 version of the Circuit Megassembler, which has double the crafting speed and has an innate productivity boost - but takes light lubricant.
+    - Added new tech icons for different tiers in the bio-module technologies.
 
   Changes:
     - Slightly nerfed research productivity.
