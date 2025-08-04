@@ -343,21 +343,7 @@ data.raw["technology"]["battery-equipment"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["battery-equipment"].icons = 
-{
-  {
-    icon = "__periodic-madness__/graphics/technology/vanadium-battery-equipment.png",
-    icon_size = 256
-  },
-  {
-    icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-    icon_size = 128,
-    shift = {
-      100,
-      100
-    }
-  }
-}
+data.raw["technology"]["battery-equipment"].icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/vanadium-battery-equipment.png")
 data.raw["technology"]["battery-mk2-equipment"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -366,21 +352,7 @@ data.raw["technology"]["battery-mk2-equipment"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1}
 }
 data.raw["technology"]["battery-mk2-equipment"].prerequisites = {"battery-equipment", "processing-unit"}
-data.raw["technology"]["battery-mk2-equipment"].icons = 
-{
-  {
-    icon = "__periodic-madness__/graphics/technology/vanadium-battery-mk2-equipment.png",
-    icon_size = 256
-  },
-  {
-    icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-    icon_size = 128,
-    shift = {
-      100,
-      100
-    }
-  }
-}
+data.raw["technology"]["battery-mk2-equipment"].icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/vanadium-battery-mk2-equipment.png")
 data.raw["technology"]["night-vision-equipment"].unit.ingredients =
 {
   {"automation-science-pack", 1},

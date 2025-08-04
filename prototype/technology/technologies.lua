@@ -4216,21 +4216,7 @@ data:extend({
     type = "technology",
     name = "pm-lithium-battery-equipment",
     icon_size = 256,
-    icons = 
-    {
-      {
-        icon = "__periodic-madness__/graphics/technology/lithium-battery-equipment.png",
-        icon_size = 256
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-        icon_size = 128,
-        shift = {
-          100,
-          100
-        }
-      }
-    },
+    icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/lithium-battery-equipment.png"),
     effects =
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery-equipment")
@@ -4562,21 +4548,7 @@ data:extend({
     type = "technology",
     name = "pm-lithium-battery-mk2-equipment",
     icon_size = 256,
-    icons = 
-    {
-      {
-        icon = "__periodic-madness__/graphics/technology/lithium-battery-mk2-equipment.png",
-        icon_size = 256
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-        icon_size = 128,
-        shift = {
-          100,
-          100
-        }
-      }
-    },
+    icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/lithium-battery-mk2-equipment.png"),
     effects =
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery-mk2-equipment")
@@ -5806,21 +5778,7 @@ data:extend({
     type = "technology",
     name = "pm-selenium-battery-equipment",
     icon_size = 256,
-    icons = 
-    {
-      {
-        icon = "__periodic-madness__/graphics/technology/lithium-battery-equipment.png",
-        icon_size = 256
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-        icon_size = 128,
-        shift = {
-          100,
-          100
-        }
-      }
-    },
+    icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/selenium-battery-equipment.png"),
     effects =
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery-equipment")

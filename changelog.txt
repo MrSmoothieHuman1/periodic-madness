@@ -35,6 +35,9 @@ Date: 2025-12-07
     - Moved lead into its own technology, and moved it to behind P-TM science.
     - Completely rebalanced P-TM sciences recipe and ingredients.
 
+  Fixes:
+    - Fixed the tech icons of all battery equipment.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514
 Date: 2025-31-07
