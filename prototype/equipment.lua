@@ -344,7 +344,7 @@ data:extend({
     name = "pm-selenium-sulfur-battery-equipment",
     sprite =
     {
-      filename = "__periodic-madness__/graphics/equipment/lithium-battery-equipment-icon.png",
+      filename = "__periodic-madness__/graphics/equipment/selenium-battery-equipment-icon.png",
       width = 64,
       height = 128,
       priority = "medium",

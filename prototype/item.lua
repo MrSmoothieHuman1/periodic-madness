@@ -1647,9 +1647,9 @@ data:extend({
   {
     type = "item",
     name = "pm-selenium-sulfur-battery-equipment",
-    icon = "__periodic-madness__/graphics/equipment/lithium-battery-equipment.png",
+    icon = "__periodic-madness__/graphics/equipment/selenium-battery-equipment.png",
     icon_size = 64,
-    place_as_equipment_result = "pm-lithium-sulfur-battery-equipment",
+    place_as_equipment_result = "pm-selenium-sulfur-battery-equipment",
     subgroup = "pm-modular-storage",
     order = "c",
     stack_size = 20
