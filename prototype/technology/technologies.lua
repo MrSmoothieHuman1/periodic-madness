@@ -5124,7 +5124,7 @@ data:extend({
     type = "technology",
     name = "pm-expiremental-research-data",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/expiremental-research-data.png",
     effects =
     {
       PM.unlock_recipe("pm-expiremental-research-data")
