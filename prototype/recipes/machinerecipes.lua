@@ -1541,6 +1541,22 @@ data:extend({
     {
       PM.product("pm-coil-heater", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-osmium-pipe",
+    enabled = false,
+    energy_required = 2,
+    ingredients = 
+    {
+      PM.ingredient("pm-osmiridium-plate", 2),
+      PM.ingredient("pm-liquid-silicone", 2.5, "fluid"),
+      PM.ingredient("pm-corrosion-resistant-tubing", 4)
+    },
+    results =
+    {
+      PM.product("pm-osmium-pipe", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 
