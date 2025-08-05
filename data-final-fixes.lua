@@ -149,11 +149,14 @@ for _, entity_type in pairs{
 -- Inside the loop
 
   for entity, prototype in pairs(data.raw[entity_type] or {}) do
-    prototype.allowed_module_categories = PM.remove_module_categories(prototype.allowed_module_categories, 
+    prototype.allowed_module_categories = PM.remove_module_categories(prototype.allowed_module_categories,
 	{
       "pm-heating-coils",
       "pm-circuit-megassembler-module",
     })
+	if data.raw["assembling-machine"]["pm-circuit-megassembler"] then
+		data.raw["assembling-machine"]["pm-circuit-megassembler"].allowed_module_categories = {"pm-circuit-megassembler-module"}
+	end
 	end
 end
 
