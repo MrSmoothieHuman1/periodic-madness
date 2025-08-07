@@ -361,7 +361,7 @@ data.raw["recipe"]["roboport"].ingredients =
 data.raw["recipe"]["accumulator"].ingredients =
 {
   PM.ingredient("pm-vanadium-redox-battery", 4),
-  PM.ingredient("pm-copper-wire", 4),
+  PM.ingredient("copper-cable", 4),
   PM.ingredient("pm-heavyweight-framing", 8)
 }
 data.raw["recipe"]["engine-unit"].ingredients =
