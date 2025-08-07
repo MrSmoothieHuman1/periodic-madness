@@ -124,7 +124,7 @@ data:extend({
     type = "recipe",
     name = "pm-sulfur-dioxide",
     enabled = false,
-    energy_required = 2,
+    energy_required = 3,
     category = "pm-moltening",
     subgroup = "pm-sulfuric-acid-rnm",
     order = "e",

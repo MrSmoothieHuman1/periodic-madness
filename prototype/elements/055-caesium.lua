@@ -113,7 +113,7 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 8,
+    energy_required = 15,
     category = "pm-acids",
     subgroup = "pm-caesium-am",
     order = "a",
@@ -132,7 +132,7 @@ data:extend({
     type = "recipe",
     name = "pm-pollucite-crushing",
     enabled = false,
-    energy_required = 15,
+    energy_required = 10,
     category = "pm-crushing",
     subgroup = "pm-caesium-am",
     order = "b",
@@ -143,7 +143,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fine-pollucite-powder", 12),
+      PM.product("pm-fine-pollucite-powder", 14),
       PM.product_range_chance("pm-alkali-metals-ore", 0, 4, 0.5)
     }
   } --[[@as data.RecipePrototype]],
@@ -151,7 +151,7 @@ data:extend({
     type = "recipe",
     name = "pm-pollucite-seperation",
     enabled = false,
-    energy_required = 10,
+    energy_required = 8,
     category = "chemistry",
     subgroup = "pm-caesium-am",
     order = "c",
@@ -164,9 +164,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-caesium-hexachlorocerate", 2, 5, 0.75),
-      PM.product_range_chance("pm-caesium-iodine-chloride", 2, 5, 0.75),
-      PM.product_range_chance("pm-caesium-antimony-chloride", 2, 5, 0.75),
+      PM.product_range("pm-caesium-hexachlorocerate", 2, 6),
+      PM.product_range("pm-caesium-iodine-chloride", 2, 6),
+      PM.product_range("pm-caesium-antimony-chloride", 2, 6),
     }
   },
   {
@@ -179,6 +179,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-caesium-am",
     order = "d",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-caesium-iodine-chloride", 4),
@@ -188,7 +189,7 @@ data:extend({
     {
       PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
       PM.product_range("pm-chlorine", 2.5, 5, "fluid"),
-      PM.product_range("pm-iodine", 0, 4)
+      PM.product_range("pm-iodine", 0, 3)
     }
   },
   {
@@ -201,6 +202,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-caesium-am",
     order = "e",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-caesium-antimony-chloride", 4),
@@ -210,7 +212,7 @@ data:extend({
     {
       PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
       PM.product_range("pm-hydrogen-gas", 2.5, 5, "fluid"),
-      PM.product_range("pm-antimony-ore", 0, 3)
+      PM.product_range("pm-antimony-ore", 0, 2)
     }
   },
   {
@@ -223,6 +225,7 @@ data:extend({
     category = "chemistry",
     subgroup = "pm-caesium-am",
     order = "e",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-caesium-hexachlorocerate", 4),
