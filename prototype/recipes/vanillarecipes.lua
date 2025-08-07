@@ -146,7 +146,7 @@ data.raw["recipe"]["long-handed-inserter"].ingredients =
 {
   PM.ingredient("pm-basic-motor", 1),
   PM.ingredient("iron-stick", 2),
-  PM.ingredient("pm-basic-wiring", 2),
+  PM.ingredient("copper-cable", 2),
   PM.ingredient("iron-plate", 1)
 }
 data.raw["recipe"]["big-electric-pole"].ingredients =
@@ -283,7 +283,7 @@ data.raw["recipe"]["electric-mining-drill"].ingredients =
 {
   PM.ingredient("pm-basic-framing", 4),
   PM.ingredient("pm-basic-panelling", 8),
-  PM.ingredient("pm-basic-wiring", 4),
+  PM.ingredient("copper-cable", 2),
   PM.ingredient("electronic-circuit", 3)
 }
 data.raw["recipe"]["steel-plate"].ingredients =
@@ -300,7 +300,7 @@ data.raw["recipe"]["flying-robot-frame"].ingredients =
 }
 data.raw["recipe"]["electric-engine-unit"].ingredients =
 {
-  PM.ingredient("pm-basic-wiring", 10),
+  PM.ingredient("pm-gold-wire", 8),
   PM.ingredient("advanced-circuit", 2),
   PM.ingredient("pm-solid-lubricant", 8),
   PM.ingredient("engine-unit", 1),
@@ -346,13 +346,13 @@ data.raw["recipe"]["personal-roboport-equipment"].ingredients =
 {
   PM.ingredient("pm-lightweight-framing", 12),
   PM.ingredient("pm-heavyweight-panelling", 4),
-  PM.ingredient("pm-basic-wiring", 8),
+  PM.ingredient("pm-gold-wire", 6),
   PM.ingredient("advanced-circuit", 12),
   PM.ingredient("pm-vanadium-redox-battery", 15)
 }
 data.raw["recipe"]["roboport"].ingredients =
 {
-  PM.ingredient("pm-basic-wiring", 20),
+  PM.ingredient("pm-gold-wire", 10),
   PM.ingredient("advanced-circuit", 25),
   PM.ingredient("pm-heavyweight-framing", 10),
   PM.ingredient("pm-heavyweight-panelling", 16),
@@ -361,7 +361,7 @@ data.raw["recipe"]["roboport"].ingredients =
 data.raw["recipe"]["accumulator"].ingredients =
 {
   PM.ingredient("pm-vanadium-redox-battery", 4),
-  PM.ingredient("pm-basic-wiring", 5),
+  PM.ingredient("pm-copper-wire", 4),
   PM.ingredient("pm-heavyweight-framing", 8)
 }
 data.raw["recipe"]["engine-unit"].ingredients =
@@ -685,7 +685,7 @@ data.raw["recipe"]["personal-roboport-mk2-equipment"].ingredients =
   PM.ingredient("processing-unit", 15),
   PM.ingredient("pm-lightweight-panelling", 24),
   PM.ingredient("pm-heavyweight-framing", 16),
-  PM.ingredient("pm-basic-wiring", 20)
+  PM.ingredient("pm-indium-wire", 10)
 }
 data.raw["recipe"]["rocket"].category = "crafting-with-fluid"
 data.raw["recipe"]["rocket"].ingredients = 

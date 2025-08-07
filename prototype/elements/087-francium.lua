@@ -67,7 +67,7 @@ data:extend({
     {
       PM.ingredient("pm-glass-pane", 24),
       PM.ingredient("pm-antimony-ore", 2),
-      PM.ingredient("pm-basic-wiring", 24),
+      PM.ingredient("copper-cable", 16),
       PM.ingredient("pm-polyethylene-plastic", 6),
       PM.ingredient("pm-gallium-arsenide", 2),
       PM.ingredient("pm-coolant", 10, "fluid")
@@ -88,7 +88,7 @@ data:extend({
     {
       PM.ingredient("pm-borosilicate-glass", 6),
       PM.ingredient("pm-antimony-ore", 2),
-      PM.ingredient("pm-basic-wiring", 24),
+      PM.ingredient("copper-cable", 14),
       PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-gallium-arsenide", 2),
       PM.ingredient("pm-coolant", 6, "fluid")

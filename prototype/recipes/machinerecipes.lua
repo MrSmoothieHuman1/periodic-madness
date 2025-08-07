@@ -688,7 +688,7 @@ data:extend({
     {
       PM.ingredient("advanced-circuit", 5),
       PM.ingredient("pm-lead-plate", 6),
-      PM.ingredient("pm-basic-wiring", 10),
+      PM.ingredient("pm-gold-wire", 4),
       PM.ingredient("pm-heavyweight-framing", 12),
       PM.ingredient("pm-heavyweight-panelling", 6)
     },
@@ -937,7 +937,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-basic-wiring", 10),
+      PM.ingredient("copper-cable", 10),
       PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-fluid-circuit", 2),
       PM.ingredient("advanced-circuit", 4),
@@ -956,7 +956,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-basic-wiring", 10),
+      PM.ingredient("copper-cable", 10),
       PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-fluid-circuit", 4),
       PM.ingredient("advanced-circuit", 2),

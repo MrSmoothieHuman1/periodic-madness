@@ -128,7 +128,7 @@ data.raw["recipe"]["hydrogen-chloride-salt"].icon =
 data.raw["recipe"]["accumulator"].ingredients =
 {
   PM.ingredient("pm-vanadium-redox-battery", 4),
-  PM.ingredient("pm-basic-wiring", 5),
+  PM.ingredient("pm-gold-wire", 4),
   PM.ingredient("pm-heavyweight-framing", 8),
   PM.ingredient("ferric-chloride", 2)
 }

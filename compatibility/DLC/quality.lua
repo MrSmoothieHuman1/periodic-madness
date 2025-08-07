@@ -154,7 +154,7 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-glass-pane", 6),
-            PM.ingredient("pm-basic-wiring", 20),
+            PM.ingredient("pm-gold-wire", 15),
             PM.ingredient("pm-aluminium-gallium-arsenide", 3),
         },
         results =

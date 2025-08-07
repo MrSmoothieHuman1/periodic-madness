@@ -185,17 +185,4 @@ data:extend({
     order = "e",
     stack_size = 200,
   },
-
-
-  --Wiring
-
-  {
-    type = "item",
-    name = "pm-basic-wiring",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/basic-wiring.png",
-    subgroup = "pm-multimetal-wiring",
-    order = "a",
-    stack_size = 400
-  },
 })

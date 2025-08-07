@@ -1329,39 +1329,4 @@ data:extend({
   },
 
   --Wiring
-
-  {
-    type = "recipe",
-    name = "pm-copper-basic-wiring",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-basic-wiring.png",
-    energy_required = 0.5,
-    show_amount_in_title = true,
-    subgroup = "pm-multimetal-wiring",
-    ingredients =
-    {
-      PM.ingredient("copper-plate", 1),
-    },
-    results =
-    {
-      PM.product("pm-basic-wiring", 2)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-aluminium-basic-wiring",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/aluminium-basic-wiring.png",
-    energy_required = 0.5,
-    show_amount_in_title = true,
-    subgroup = "pm-multimetal-wiring",
-    ingredients =
-    {
-      PM.ingredient("pm-aluminium-plate", 1),
-    },
-    results =
-    {
-      PM.product("pm-basic-wiring", 4)
-    }
-  },
 })

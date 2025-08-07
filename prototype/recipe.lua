@@ -155,7 +155,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-basic-wiring", 3),
+      PM.ingredient("copper-cable", 2),
       PM.ingredient("pm-carbon", 8),
     },
     results = 
@@ -808,7 +808,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 12),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-gold-wire", 15),
       PM.ingredient("pm-gallium-nitride", 3),
     },
     results =
@@ -827,7 +827,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 12),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-gold-wire", 15),
       PM.ingredient("pm-gallium-arsenide", 3),
     },
     results =
@@ -846,7 +846,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-glass-pane", 12),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-gold-wire", 15),
       PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
     },
     results =
@@ -905,7 +905,7 @@ data:extend({
     {
       PM.ingredient("pm-anti-bacterial-panelling", 8),
       PM.ingredient("advanced-circuit", 6),
-      PM.ingredient("pm-basic-wiring", 15),
+      PM.ingredient("pm-gold-wire", 10),
     },
     results =
     {
@@ -1168,7 +1168,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-heavy-lubricant", 6, "fluid"),
-      PM.ingredient("pm-basic-wiring", 10),
+      PM.ingredient("pm-gold-wire", 6),
       PM.ingredient("engine-unit", 1),
       PM.ingredient("advanced-circuit", 2),
       PM.ingredient("pm-kasethal-plate", 4)
@@ -1837,7 +1837,7 @@ data:extend({
     {
       PM.ingredient("pm-gallium-arsenide", 2),
       PM.ingredient("pm-polyethylene-plastic", 3),
-      PM.ingredient("pm-basic-wiring", 4)
+      PM.ingredient("pm-indium-wire", 4)
     },
     results =
     {
@@ -3842,7 +3842,7 @@ data:extend({
       PM.ingredient("pm-polyethylene-plastic", 24),
       PM.ingredient("pm-RTG", 1)
     },
-    results = 
+    results =
     {
       PM.product("pm-spiderling-issy", 1)
     }
@@ -3870,7 +3870,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-basic-wiring", 20),
+      PM.ingredient("pm-indium-wire", 12),
       PM.ingredient("pm-gallium-nitride", 3),
     },
     results =
@@ -3900,7 +3900,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-basic-wiring", 15),
+      PM.ingredient("pm-indium-wire", 12),
       PM.ingredient("pm-gallium-arsenide", 3),
     },
     results =
@@ -3930,7 +3930,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-borosilicate-glass", 6),
-      PM.ingredient("pm-basic-wiring", 15),
+      PM.ingredient("pm-indium-wire", 12),
       PM.ingredient("pm-aluminium-gallium-indium-phosphide", 3),
     },
     results =
