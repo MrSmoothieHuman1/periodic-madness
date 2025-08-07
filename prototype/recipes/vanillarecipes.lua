@@ -798,6 +798,36 @@ data.raw["recipe"]["artillery-wagon"].ingredients =
   PM.ingredient("electric-engine-unit", 4),
   PM.ingredient("pm-vulcanised-rubber", 16)
 }
+data.raw["recipe"]["active-provider-chest"].ingredients =
+{
+  PM.ingredient("electronic-circuit", 3),
+  PM.ingredient("advanced-circuit", 1),
+  PM.ingredient("pm-stainless-steel-chest", 1)
+}
+data.raw["recipe"]["passive-provider-chest"].ingredients =
+{
+  PM.ingredient("electronic-circuit", 3),
+  PM.ingredient("advanced-circuit", 1),
+  PM.ingredient("pm-stainless-steel-chest", 1)
+}
+data.raw["recipe"]["storage-chest"].ingredients =
+{
+  PM.ingredient("electronic-circuit", 3),
+  PM.ingredient("advanced-circuit", 1),
+  PM.ingredient("pm-stainless-steel-chest", 1)
+}
+data.raw["recipe"]["buffer-chest"].ingredients =
+{
+  PM.ingredient("electronic-circuit", 3),
+  PM.ingredient("advanced-circuit", 1),
+  PM.ingredient("pm-stainless-steel-chest", 1)
+}
+data.raw["recipe"]["requester-chest"].ingredients =
+{
+  PM.ingredient("electronic-circuit", 3),
+  PM.ingredient("advanced-circuit", 1),
+  PM.ingredient("pm-stainless-steel-chest", 1)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15

@@ -36,6 +36,7 @@ Date: 2025-12-07
     - Completely rebalanced P-TM sciences recipe and ingredients.
     - Removed basic wiring, and replaced all recipes that used it with tier-appropiate wiring.
     - Removed mini motors, this is to help make setting up early-game malls easier. (no more tally hall in the mini motor mall :pensive:)
+    - Changed all logistic chests to take stainless steel chests instead of steel chests, but buffed their storage size to 64.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.
