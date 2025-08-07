@@ -705,8 +705,8 @@ data.raw["splitter"]["express-splitter"].map_color = blue_belt
 data.raw["solar-panel"]["solar-panel"].map_color = {r = 0.356, g = 0.495, b = 0.62}
 
 data.raw["transport-belt"]["fast-transport-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
-data.raw["splitter"]["fast-splitter"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
-data.raw["underground-belt"]["fast-underground-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-transport-belt.png"
+data.raw["splitter"]["fast-splitter"].icon = "__periodic-madness__/graphics/icons/buildings/fast-splitter.png"
+data.raw["underground-belt"]["fast-underground-belt"].icon = "__periodic-madness__/graphics/icons/buildings/fast-underground-belt.png"
 
 data.raw["transport-belt"]["fast-transport-belt"].belt_animation_set = orange_belt_animation_set
 data.raw["splitter"]["fast-splitter"].belt_animation_set = orange_belt_animation_set
