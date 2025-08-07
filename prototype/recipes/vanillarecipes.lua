@@ -138,7 +138,7 @@ data.raw["recipe"]["inserter"].ingredients =
 }
 data.raw["recipe"]["fast-inserter"].ingredients =
 {
-  PM.ingredient("pm-mini-motor", 1),
+  PM.ingredient("pm-basic-motor", 1),
   PM.ingredient("electronic-circuit", 1),
   PM.ingredient("inserter", 1)
 }
@@ -146,7 +146,6 @@ data.raw["recipe"]["long-handed-inserter"].ingredients =
 {
   PM.ingredient("pm-basic-motor", 1),
   PM.ingredient("iron-stick", 2),
-  PM.ingredient("copper-cable", 2),
   PM.ingredient("iron-plate", 1)
 }
 data.raw["recipe"]["big-electric-pole"].ingredients =

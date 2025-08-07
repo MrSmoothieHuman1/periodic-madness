@@ -35,6 +35,7 @@ Date: 2025-12-07
     - Moved lead into its own technology, and moved it to behind P-TM science.
     - Completely rebalanced P-TM sciences recipe and ingredients.
     - Removed basic wiring, and replaced all recipes that used it with tier-appropiate wiring.
+    - Removed mini motors, this is to help make setting up early-game malls easier. (no more tally hall in the mini motor mall :pensive:)
 
   Fixes:
     - Fixed the tech icons of all battery equipment.
