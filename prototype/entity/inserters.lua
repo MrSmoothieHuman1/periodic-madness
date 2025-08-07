@@ -298,7 +298,7 @@ data:extend({
         working_sound = sounds.inserter_fast,
         hand_base_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-base.png",
+          filename = "__base__/graphics/entity/fast-inserter/fast-inserter-hand-base.png",
           priority = "extra-high",
           width = 32,
           height = 136,
@@ -306,7 +306,7 @@ data:extend({
         },
         hand_closed_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-closed.png",
+          filename = "__base__/graphics/entity/fast-inserter/fast-inserter-hand-closed.png",
           priority = "extra-high",
           width = 72,
           height = 164,
@@ -314,7 +314,7 @@ data:extend({
         },
         hand_open_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-open.png",
+          filename = "__base__/graphics/entity/fast-inserter/fast-inserter-hand-open.png",
           priority = "extra-high",
           width = 72,
           height = 164,
@@ -324,7 +324,7 @@ data:extend({
         {
           sheet =
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-platform.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/sideserter/sideserter-platform.png",
             priority = "extra-high",
             width = 105,
             height = 79,
@@ -380,7 +380,7 @@ data:extend({
         working_sound = sounds.inserter_fast,
         hand_base_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-base.png",
+          filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-hand-base.png",
           priority = "extra-high",
           width = 32,
           height = 136,
@@ -388,7 +388,7 @@ data:extend({
         },
         hand_closed_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-closed.png",
+          filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-hand-closed.png",
           priority = "extra-high",
           width = 72,
           height = 164,
@@ -396,7 +396,7 @@ data:extend({
         },
         hand_open_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-open.png",
+          filename = "__base__/graphics/entity/long-handed-inserter/long-handed-inserter-hand-open.png",
           priority = "extra-high",
           width = 72,
           height = 164,
@@ -406,7 +406,7 @@ data:extend({
         {
           sheet =
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-platform.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/sideserter/sideserter-platform.png",
             priority = "extra-high",
             width = 105,
             height = 79,
@@ -463,7 +463,7 @@ data:extend({
         working_sound = sounds.inserter_fast,
         hand_base_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-base.png",
+          filename = "__base__/graphics/entity/bulk-inserter/bulk-inserter-hand-base.png",
           priority = "extra-high",
           width = 32,
           height = 136,
@@ -471,17 +471,17 @@ data:extend({
         },
         hand_closed_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-closed.png",
+          filename = "__base__/graphics/entity/bulk-inserter/bulk-inserter-hand-closed.png",
           priority = "extra-high",
-          width = 72,
+          width = 100,
           height = 164,
           scale = 0.25
         },
         hand_open_picture =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-hand-open.png",
+          filename = "__base__/graphics/entity/bulk-inserter/bulk-inserter-hand-open.png",
           priority = "extra-high",
-          width = 72,
+          width = 130,
           height = 164,
           scale = 0.25
         },
@@ -489,7 +489,7 @@ data:extend({
         {
           sheet =
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/express-inserter/express-inserter-platform.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/sideserter/sideserter-platform.png",
             priority = "extra-high",
             width = 105,
             height = 79,
