@@ -180,7 +180,7 @@ data:extend({
       },
       {
         type = "module",
-        name = "pm-effectivity-module-5",
+        name = "pm-efficiency-module-5",
         localised_description = {"item-description.effectivity-module"},
         icon = "__periodic-madness__/graphics/icons/modules/efficiency-module-5.png",
         icon_size = 64,

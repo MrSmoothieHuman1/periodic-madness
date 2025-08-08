@@ -5608,7 +5608,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/speed-module-5-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-speed-module-4")
+      PM.unlock_recipe("pm-speed-module-5")
     },
     prerequisites = {"pm-speed-module-4", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
@@ -5626,7 +5626,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 80
+      time = 100
     }
   },
   {
@@ -5636,12 +5636,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/efficiency-module-5-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-efficiency-module-4")
+      PM.unlock_recipe("pm-efficiency-module-5")
     },
     prerequisites = {"pm-efficiency-module-4", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
     {
-      count = 600,
+      count = 1200,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -5654,7 +5654,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 80
+      time = 100
     }
   },
   {
@@ -5664,7 +5664,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/productivity-module-5-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-productivity-module-4")
+      PM.unlock_recipe("pm-productivity-module-5")
     },
     prerequisites = {"pm-productivity-module-4", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
@@ -5682,7 +5682,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 80
+      time = 100
     }
   },
   {
