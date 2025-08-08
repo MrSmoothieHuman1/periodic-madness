@@ -4230,7 +4230,7 @@ data:extend({
     },
     results = 
     {
-      --PM.result("pm-advanced-engine-unit", 1)
+      PM.product("pm-advanced-electric-engine-unit", 1)
     }
   },
   {
@@ -4254,6 +4254,26 @@ data:extend({
     results =
     {
       PM.product("electric-engine-unit", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-selenium-sulfur-battery-equipment",
+    subgroup = "pm-modular-storage",
+    order = "e",
+    enabled = false,
+    energy_required = 15,
+    ingredients =
+    {
+      PM.ingredient("pm-selenium-sulfur-battery", 4),
+      PM.ingredient("pm-borosilicate-glass", 8),
+      PM.ingredient("low-density-structure", 3),
+      PM.ingredient("processing-unit", 4),
+      PM.ingredient("pm-fluid-circuit", 4)
+    },
+    results =
+    {
+      PM.product("pm-selenium-sulfur-battery-equipment", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

@@ -1568,11 +1568,11 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("assembling-machine-3", 1),
-      --PM.ingredient("pm-electric-engine-unit", 1),
+      PM.ingredient("pm-advanced-electric-engine-unit", 1),
       PM.ingredient("pm-coolant", 2, "fluid"),
       PM.ingredient("processing-unit", 5)
     },
-    results = 
+    results =
     {
       PM.product("pm-assembling-machine-4", 1)
     }

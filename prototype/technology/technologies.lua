@@ -5784,7 +5784,7 @@ data:extend({
     icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/selenium-battery-equipment.png"),
     effects =
     {
-      PM.unlock_recipe("pm-lithium-sulfur-battery-equipment")
+      PM.unlock_recipe("pm-selenium-sulfur-battery-equipment")
     },
     prerequisites = {"pm-selenium-sulfur-battery"},
     unit =
