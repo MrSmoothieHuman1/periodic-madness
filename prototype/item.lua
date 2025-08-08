@@ -1518,7 +1518,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/uhrlumin-precursor-billet.png",
     subgroup = "pm-uhrlumin",
     order = "b",
-    stack_size = 100
+    stack_size = 500
   },
   {
     type = "item",
@@ -1527,7 +1527,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
     subgroup = "pm-glassing",
     order = "a",
-    stack_size = 100
+    stack_size = 500
   },
   {
     type = "item",
