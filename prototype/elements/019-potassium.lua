@@ -77,7 +77,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-calcite", 1, 6),
+      PM.product_range("pm-calcite", 0, 4),
       PM.product_range("pm-anhydrite", 3, 6),
       PM.product_range("pm-sylvite", 4, 8)
     }
