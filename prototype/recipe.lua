@@ -4212,4 +4212,48 @@ data:extend({
       PM.product("pm-productivity-module-5", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-advanced-electric-engine-unit",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    enabled = false,
+    energy_required = 10,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("electric-engine-unit", 1),
+      PM.ingredient("pm-light-lubricant", 5, "fluid"),
+      PM.ingredient("pm-fluid-circuit", 6),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-kasethal-plate", 2)
+    },
+    results = 
+    {
+      --PM.result("pm-advanced-engine-unit", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-light-lube-electric-engine-unit",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/heavy-lube-electric-engine.png",
+    energy_required = 5,
+    enabled = false,
+    category = "crafting-with-fluid",
+    subgroup = "pm-intermediates",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-heavy-lubricant", 5, "fluid"),
+      PM.ingredient("pm-gold-wire", 5),
+      PM.ingredient("engine-unit", 1),
+      PM.ingredient("advanced-circuit", 2),
+      PM.ingredient("pm-kasethal-plate", 3)
+    },
+    results =
+    {
+      PM.product("electric-engine-unit", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

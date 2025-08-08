@@ -4876,7 +4876,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-polydimethylsiloxane"),
-      PM.unlock_recipe("pm-light-lubricant")
+      PM.unlock_recipe("pm-light-lubricant"),
+      PM.unlock_recipe("pm-light-lube-electric-engine-unit")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "lubricant", "pm-silicone-processing"},
     unit =
@@ -4950,6 +4951,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-advanced-electric-engine-unit")
     },
     prerequisites = {"pm-light-lubricant"},
     unit =
