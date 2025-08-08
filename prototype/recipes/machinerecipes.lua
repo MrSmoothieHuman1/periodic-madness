@@ -1558,6 +1558,24 @@ data:extend({
     {
       PM.product("pm-osmium-pipe", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-assembling-machine-4",
+    enabled = false,
+    energy_required = 2,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("assembling-machine-3", 1),
+      --PM.ingredient("pm-electric-engine-unit", 1),
+      PM.ingredient("pm-coolant", 2, "fluid"),
+      PM.ingredient("processing-unit", 5)
+    },
+    results = 
+    {
+      PM.product("pm-assembling-machine-4", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 

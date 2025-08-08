@@ -5124,8 +5124,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/automation-4.png",
     effects =
     {
+      PM.unlock_recipe("pm-assembling-machine-4")
     },
-    prerequisites = {"pm-electric-engine-unit"},
+    prerequisites = {"pm-electric-engine-unit", "automation-3"},
     unit =
     {
       count = 550,
