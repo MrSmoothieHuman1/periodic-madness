@@ -133,6 +133,7 @@ end
 ---@param ignored_by_productivity number?
 ---@return data.ProductPrototype
 local function super_product(name, type, index, amount, amount_min, amount_max, probability, ignored_by_stats, ignored_by_productivity)
+  if probability and probability <= 0.0 then error("Probability is 0. Did you mean to do this?") end
   return {
     name = name,
     type = type or "item",
