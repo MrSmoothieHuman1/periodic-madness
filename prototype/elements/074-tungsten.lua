@@ -102,7 +102,7 @@ data:extend({
     category = "pm-crushing",
     subgroup = "pm-tungsten-tm",
     order = "c",
-    energy_required = 12,
+    energy_required = 8,
     enabled = false,
     ingredients =
     {
