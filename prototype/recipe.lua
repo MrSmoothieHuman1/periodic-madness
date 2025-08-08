@@ -4245,7 +4245,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-heavy-lubricant", 5, "fluid"),
+      PM.ingredient("pm-light-lubricant", 5, "fluid"),
       PM.ingredient("pm-gold-wire", 5),
       PM.ingredient("engine-unit", 1),
       PM.ingredient("advanced-circuit", 2),
