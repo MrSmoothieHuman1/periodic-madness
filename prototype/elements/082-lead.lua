@@ -66,6 +66,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
+        scale = 0.45,
       }
     },
     enabled = false,

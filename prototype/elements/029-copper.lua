@@ -132,6 +132,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
+        scale = 0.45,
       },
     },
     subgroup = "pm-copper-tm",
@@ -170,7 +171,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
-        scale = 0.8,
+        scale = 0.45,
       },
     },
     subgroup = "pm-copper-tm",

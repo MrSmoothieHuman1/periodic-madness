@@ -30,6 +30,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
+        Scale = 0.45,
       },
     },
     subgroup = "pm-manganese-tm",
@@ -70,6 +71,7 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
+        Scale = 0.45,
       },
     },
     subgroup = "pm-manganese-tm",
