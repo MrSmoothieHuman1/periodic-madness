@@ -76,6 +76,16 @@ circuit_connector_definitions["polonium-reactor"] = circuit_connector_definition
     { variation =  10, main_offset = util.by_pixel(-49.75, -20.375), shadow_offset = util.by_pixel(-49.75, -20.375), show_shadow = true },
   }
 )
+circuit_connector_definitions["mixing-tank"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 33, main_offset = util.by_pixel( 66, -40.25), shadow_offset = util.by_pixel( 66, -40.25), show_shadow = true }, 
+    { variation = 33, main_offset = util.by_pixel( 66, -40.25), shadow_offset = util.by_pixel( 66, -40.25), show_shadow = true }, 
+    { variation = 33, main_offset = util.by_pixel( 66, -40.25), shadow_offset = util.by_pixel( 66, -40.25), show_shadow = true }, 
+    { variation = 33, main_offset = util.by_pixel( 66, -40.25), shadow_offset = util.by_pixel( 66, -40.25), show_shadow = true }, 
+  }
+)
 
 function fireutil.create_magnesium_fire_pictures(opts)
   local fire_blend_mode = opts.blend_mode or "normal"
@@ -7925,6 +7935,8 @@ data:extend({
   module_slots = 3,
   allowed_effects = PM.all_effects(),
   crafting_speed = 0.75,
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["mixing-tank"],
   energy_source =
   {
     type = "electric",
@@ -8019,6 +8031,8 @@ fluid_boxes =
   module_slots = 4,
   allowed_effects = PM.all_effects(),
   crafting_speed = 1.5,
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["mixing-tank"],
   energy_source =
   {
     type = "electric",
