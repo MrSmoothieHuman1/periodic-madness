@@ -415,6 +415,34 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-transport-belt-capacity-2",
+    icons = util.technology_icon_constant_stack_size("__periodic-madness__/graphics/technology/transport-belt-capacity.png"),
+    icon_size = 256,
+    effects =
+    {
+      PM.modify("belt-stack-size-bonus", 1)
+    },
+    prerequisites = {"pm-transport-belt-capacity-1", "pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+      count = 1200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
 })
 
 data.raw["technology"]["pm-advanced-mining-drill-1"].prerequisites = {"pm-stack-inserter"}
