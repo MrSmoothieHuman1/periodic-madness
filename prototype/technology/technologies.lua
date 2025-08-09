@@ -4976,6 +4976,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-sideserter"),
+      PM.unlock_recipe("pm-long-handed-sideserter"),
+      PM.unlock_recipe("pm-bulk-sideserter")
     },
     prerequisites = {"pm-electric-engine-unit"},
     unit =

@@ -859,7 +859,37 @@ data:extend({
     order = "ca",
     place_result = "pm-assembling-machine-4",
     stack_size = 50
-  }
+  },
+  {
+    type = "item",
+    name = "pm-sideserter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+    place_result = "pm-sideserter",
+    subgroup = "pm-express-inserters",
+    order = "a",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-long-handed-sideserter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+    place_result = "pm-long-handed-sideserter",
+    subgroup = "pm-express-inserters",
+    order = "a",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-bulk-sideserter",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+    place_result = "pm-bulk-sideserter",
+    subgroup = "pm-express-inserters",
+    order = "a",
+    stack_size = 50
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

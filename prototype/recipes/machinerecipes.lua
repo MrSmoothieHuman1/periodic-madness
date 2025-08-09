@@ -1576,7 +1576,58 @@ data:extend({
     {
       PM.product("pm-assembling-machine-4", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-sideserter",
+    enabled = false,
+    energy_required = 1,
+    ingredients = 
+    {
+      PM.ingredient("fast-inserter", 1),
+      PM.ingredient("pm-advanced-electric-engine-unit", 1),
+      PM.ingredient("pm-polyethylene-plastic", 5),
+      PM.ingredient("processing-unit", 1)
+    },
+    results = 
+    {
+      PM.product("pm-sideserter", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-long-handed-sideserter",
+    enabled = false,
+    energy_required = 1,
+    ingredients = 
+    {
+      PM.ingredient("long-handed-inserter", 1),
+      PM.ingredient("pm-advanced-electric-engine-unit", 1),
+      PM.ingredient("pm-polyethylene-plastic", 6),
+      PM.ingredient("processing-unit", 1)
+    },
+    results = 
+    {
+      PM.product("pm-long-handed-sideserter", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-bulk-sideserter",
+    enabled = false,
+    energy_required = 1,
+    ingredients = 
+    {
+      PM.ingredient("bulk-inserter", 1),
+      PM.ingredient("pm-advanced-electric-engine-unit", 1),
+      PM.ingredient("pm-polyethylene-plastic", 3),
+      PM.ingredient("processing-unit", 2)
+    },
+    results = 
+    {
+      PM.product("pm-bulk-sideserter", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
