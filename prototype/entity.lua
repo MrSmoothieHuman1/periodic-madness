@@ -2397,6 +2397,11 @@ data:extend({
     researching_speed = 1.5,
     allowed_module_categories = {"speed", "productivity", "efficiency"},
     inputs = pm_lab_inputs,
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.lab_modules, shift = {0, 1}},
+      {inventory_index = defines.inventory.lab_input, shift = {0, 0.0}, max_icons_per_row = 6, separation_multiplier = 0.9}
+    },
     on_animation =
     {
       layers =

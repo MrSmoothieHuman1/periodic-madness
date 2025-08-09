@@ -653,6 +653,7 @@ data:extend({
       -- fr!! comments, who needs those? i just Dont Stop.
       --tbf when i worked on my first game in unity the ariable for ground detection was called "GroundDontHurtMeNoMo"
       --least its memorable
+      PM.product("pm-tin-plate", 20)
     }
   },
 
