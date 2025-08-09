@@ -1,5 +1,5 @@
 local PM = require("library")
-if feature_flags["rail_bridges"] then
+if mods["elevated-rails"] then
 
     data.raw["technology"]["elevated-rail"].unit.ingredients =
     {
