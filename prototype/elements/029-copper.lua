@@ -382,8 +382,8 @@ data:extend({
   },
   results = 
   {
-    PM.catalyst_range_chance("pm-cobalt-catalyst", 1, 3, 1, 0.8),
-    PM.catalyst_range_chance("pm-catalyst-container", 0, 2, 0, 0.2),
+    PM.catalyst_range_chance("pm-cobalt-catalyst", 1, 3, 0.85, 1),
+    PM.catalyst_range_chance("pm-catalyst-container", 0, 2, 0.15, 2),
     PM.product("pm-blister-copper", 14),
     PM.product_range("pm-combined-ore-slab", 0, 3)
   }
