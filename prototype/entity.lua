@@ -66,6 +66,16 @@ circuit_connector_definitions["cooling-plant"] = circuit_connector_definitions.c
     { variation = 25, main_offset = util.by_pixel(-24.75, -12.25), shadow_offset = util.by_pixel(-24.75, -12.25), show_shadow = true },
   }
 )
+circuit_connector_definitions["polonium-reactor"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation =  10, main_offset = util.by_pixel(-49.75, -20.375), shadow_offset = util.by_pixel(-49.75, -20.375), show_shadow = true },
+    { variation =  10, main_offset = util.by_pixel(-49.75, -20.375), shadow_offset = util.by_pixel(-49.75, -20.375), show_shadow = true },
+    { variation =  10, main_offset = util.by_pixel(-49.75, -20.375), shadow_offset = util.by_pixel(-49.75, -20.375), show_shadow = true },
+    { variation =  10, main_offset = util.by_pixel(-49.75, -20.375), shadow_offset = util.by_pixel(-49.75, -20.375), show_shadow = true },
+  }
+)
 
 function fireutil.create_magnesium_fire_pictures(opts)
   local fire_blend_mode = opts.blend_mode or "normal"
