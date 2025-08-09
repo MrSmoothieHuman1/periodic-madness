@@ -56,6 +56,16 @@ circuit_connector_definitions["cyclotron"] = circuit_connector_definitions.creat
     { variation = 39, main_offset = util.by_pixel(-33.25, -30.5), shadow_offset = util.by_pixel(-33.25, -30.5), show_shadow = true }, 
   }
 )
+circuit_connector_definitions["cooling-plant"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 25, main_offset = util.by_pixel(-24.75, -12.25), shadow_offset = util.by_pixel(-24.75, -12.25), show_shadow = true },
+    { variation = 25, main_offset = util.by_pixel(-24.75, -12.25), shadow_offset = util.by_pixel(-24.75, -12.25), show_shadow = true },
+    { variation = 25, main_offset = util.by_pixel(-24.75, -12.25), shadow_offset = util.by_pixel(-24.75, -12.25), show_shadow = true },
+    { variation = 25, main_offset = util.by_pixel(-24.75, -12.25), shadow_offset = util.by_pixel(-24.75, -12.25), show_shadow = true },
+  }
+)
 
 function fireutil.create_magnesium_fire_pictures(opts)
   local fire_blend_mode = opts.blend_mode or "normal"
@@ -8477,7 +8487,7 @@ fluid_boxes =
   selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
   alert_icon_shift = util.by_pixel(-3, -12),
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
-  circuit_connector = circuit_connector_definitions["assembling-machine"],
+  circuit_connector = circuit_connector_definitions["cooling-plant"],
   graphics_set =
   {
     animation =
