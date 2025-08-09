@@ -36,6 +36,26 @@ circuit_connector_definitions["evaporator"] = circuit_connector_definitions.crea
     { variation = 18, main_offset = util.by_pixel(-20, 20), shadow_offset = util.by_pixel(-15, 31), show_shadow = true }
   }
 )
+circuit_connector_definitions["-inator"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 18, main_offset = util.by_pixel(-21.625,  8.25), shadow_offset = util.by_pixel(-21.625,  8.25), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-21.625,  8.25), shadow_offset = util.by_pixel(-21.625,  8.25), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-21.625,  8.25), shadow_offset = util.by_pixel(-21.625,  8.25), show_shadow = true },
+    { variation = 18, main_offset = util.by_pixel(-21.625,  8.25), shadow_offset = util.by_pixel(-21.625,  8.25), show_shadow = true },
+  }
+)
+circuit_connector_definitions["cyclotron"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 39, main_offset = util.by_pixel(-33.25, -30.5), shadow_offset = util.by_pixel(-33.25, -30.5), show_shadow = true }, 
+    { variation = 39, main_offset = util.by_pixel(-33.25, -30.5), shadow_offset = util.by_pixel(-33.25, -30.5), show_shadow = true }, 
+    { variation = 39, main_offset = util.by_pixel(-33.25, -30.5), shadow_offset = util.by_pixel(-33.25, -30.5), show_shadow = true }, 
+    { variation = 39, main_offset = util.by_pixel(-33.25, -30.5), shadow_offset = util.by_pixel(-33.25, -30.5), show_shadow = true }, 
+  }
+)
 
 function fireutil.create_magnesium_fire_pictures(opts)
   local fire_blend_mode = opts.blend_mode or "normal"
@@ -1925,6 +1945,8 @@ data:extend({
     map_color = {r = 0.659, g = 0.106, b = 0.106},
     fast_replaceable_group = "pm-molteninator",
     next_upgrade = "pm-molten-inator-2",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["-inator"],
     working_sound =
     {
       sound =
@@ -2022,6 +2044,8 @@ data:extend({
     map_color = {r = 0.106, g = 0.647, b = 0.659},
     fast_replaceable_group = "pm-coldinator",
     next_upgrade = "pm-cold-inator-2",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["-inator"],
     working_sound =
     {
       sound =
@@ -2120,6 +2144,8 @@ data:extend({
     map_color = {r = 0.659, g = 0.106, b = 0.106},
     fast_replaceable_group = "pm-molteninator",
     next_upgrade = "pm-molten-inator-3",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["-inator"],
     module_slots = 1,
     working_sound =
     {
@@ -2219,6 +2245,8 @@ data:extend({
     module_slots = 1,
     fast_replaceable_group = "pm-coldinator",
     next_upgrade = "pm-cold-inator-3",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["-inator"],
     working_sound =
     {
       sound =
@@ -5005,6 +5033,8 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "800kW",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["cyclotron"],
     graphics_set =
     {
       animation =
@@ -7650,6 +7680,8 @@ data:extend({
   map_color = {r = 0.659, g = 0.106, b = 0.106},
   module_slots = 2,
   fast_replaceable_group = "pm-molteninator",
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["-inator"],
   working_sound =
   {
     sound =
@@ -7763,6 +7795,8 @@ data:extend({
   module_slots = 2,
   fast_replaceable_group = "pm-coldinator",
   next_upgrade = "pm-cold-inator-3",
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["-inator"],
   working_sound =
   {
     sound =
