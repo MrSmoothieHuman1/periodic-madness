@@ -1183,6 +1183,8 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     next_upgrade = "pm-vacuum-former-2",
     fast_replaceable_group = "pm-vacuum-former",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
     resistances =
     {
       {
@@ -2659,6 +2661,8 @@ data:extend({
     corpse = "pm-vacuum-former-2",
     dying_explosion = "assembling-machine-1-explosion",
     fast_replaceable_group = "pm-vacuum-former",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
     resistances =
     {
       {
