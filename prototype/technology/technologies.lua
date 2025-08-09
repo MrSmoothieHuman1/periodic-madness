@@ -277,6 +277,26 @@ data:extend({
       time = 30
     }
   },
+  {
+    type = "technology",
+    name = "pm-coke-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+      },
+      time = 15
+    }
+  },
 
 --MARK: ATM science
   {
@@ -516,7 +536,7 @@ data:extend({
       PM.unlock_recipe("pm-tungsten-ore"),
       PM.unlock_recipe("pm-tungsten-plate")
     },
-    prerequisites = {"pm-advanced-transition-metal-refining", "pm-washing-plant-1", "pm-gold-processing"},
+    prerequisites = {"pm-advanced-transition-metal-refining", "pm-washing-plant-1", "pm-coke-processing"},
     unit =
     {
       count = 150,
