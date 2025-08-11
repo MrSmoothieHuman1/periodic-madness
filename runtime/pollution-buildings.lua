@@ -192,7 +192,7 @@ end
 ---MARK: Setup
 
 local function reload_buildings()
-  local old_list = storage.pollution_buildings
+  local old_list = storage.pollution_buildings or {}
   ---@type PollutionBuilding[]
   local new_list, count = {}, 0
   storage.pollution_buildings = new_list
@@ -217,7 +217,7 @@ local function reload_buildings()
         entity = entity,
         min_pollution = pollution_numbers.min_pollution,
         max_pollution = pollution_numbers.max_pollution,
-        alert = old_list[unit_id].alert -- Migrate the disabled status so it can properly enable if values expanded
+        alert = (old_list[unit_id] or {}).alert -- Migrate the disabled status so it can properly enable if values expanded
       }
       new_list[unit_id] = pollution_object
       old_list[unit_id] = nil
