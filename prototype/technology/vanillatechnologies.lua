@@ -724,6 +724,7 @@ data.raw["technology"]["rocketry"].unit.ingredients =
 data.raw["technology"]["rocketry"].prerequisites = {"steel-processing", "explosives"}
 data.raw["technology"]["rocketry"].effects = 
 {
+  PM.unlock_recipe("rocket-launcher"),
   PM.unlock_recipe("pm-water-hydrogen-peroxide"),
   PM.unlock_recipe("rocket"),
 }
