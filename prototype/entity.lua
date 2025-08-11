@@ -3,6 +3,7 @@ local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local fireutil = require("__base__.prototypes.fire-util")
 local tile_collision_masks = require("collision-mask")
+require("entity.pipe-pictures")
 
 local red_belt = {r = 0.878, g = 0.169, b = 0.169}
 local orange_belt = {r = 1, g = 0.502, b = 0}
@@ -116,6 +117,17 @@ circuit_connector_definitions["circuit-megassembler"] = circuit_connector_defini
     { variation = 18, main_offset = util.by_pixel( 65.125,  22.25), shadow_offset = util.by_pixel( 65.125,  22.25), show_shadow = true },
   }
 )
+circuit_connector_definitions["catalyst-cracker"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 25, main_offset = util.by_pixel(-39.75, -17), shadow_offset = util.by_pixel(-39.75, -17), show_shadow = true },
+    { variation = 25, main_offset = util.by_pixel(-39.75, -17), shadow_offset = util.by_pixel(-39.75, -17), show_shadow = true },
+    { variation = 25, main_offset = util.by_pixel(-39.75, -17), shadow_offset = util.by_pixel(-39.75, -17), show_shadow = true },
+    { variation = 25, main_offset = util.by_pixel(-39.75, -17), shadow_offset = util.by_pixel(-39.75, -17), show_shadow = true },
+  }
+)
+
 
 function fireutil.create_magnesium_fire_pictures(opts)
   local fire_blend_mode = opts.blend_mode or "normal"
@@ -1836,6 +1848,8 @@ data:extend({
     crafting_speed = 1,
     module_slots = 2,
     allowed_effects = PM.all_effects(),
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 2,
+    circuit_connector = circuit_connector_definitions["catalyst-cracker"],
     energy_source =
     {
       type = "electric",
@@ -2429,7 +2443,6 @@ data:extend({
       fluid_box =
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         filter = "pm-heavy-lubricant",
@@ -2447,24 +2460,23 @@ data:extend({
       {
         {
           filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
-          width = 32 * 7 * 2,
-          height = 32 * 7 * 2,
-          frame_count = 32,
-          line_length = 8,
+          width = 448,
+          height = 448,
+          --frame_count = 32,
+          --line_length = 8,
           animation_speed = 0.25,
-          shift = util.by_pixel(-2, 0),
-          scale = 0.575,
+          scale = 0.5,
         },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
-          width = 32 * 7 * 2,
-          height = 32 * 7 * 2,
-          frame_count = 32,
-          line_length = 4,
+          width = 448,
+          height = 448,
+          --frame_count = 32,
+          --line_length = 4,
           draw_as_shadow = true,
           shift = util.by_pixel(64, 10),
           animation_speed = 0.25,
-          scale = 0.575
+          scale = 0.5
         },
       }
     }
@@ -8977,7 +8989,7 @@ fluid_boxes =
     },
     vector_to_place_result = {0, 3.55},
     energy_usage = "500kW",
-    graphics_set =
+    graphics_sets =
   {
     animation =
     {
