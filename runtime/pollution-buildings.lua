@@ -39,43 +39,6 @@ end
 ---@field max_pollution number The amount of pollution where it stops working
 ---@field alert? LuaRenderObject
 
----MARK: Setup
-
-local function reload_buildings()
-  ---@type PollutionBuilding[]
-  local new_list, count = {}, 0
-  storage.pollution_buildings = new_list
-
-  local building_list, build_count = {}, 0
-  for building in pairs(pollution_definition) do
-    build_count = build_count + 1
-    building_list[build_count] = building
-  end
-
-  for _, surface in pairs(game.surfaces) do
-    for _, entity in pairs(surface.find_entities_filtered{
-      name = building_list
-    }) do
-      count = count + 1
-      local pollution_numbers = pollution_definition[entity.name]
-      new_list[entity.unit_number--[[@as uint64]]] = {
-        entity = entity,
-        min_pollution = pollution_numbers.min_pollution,
-        max_pollution = pollution_numbers.max_pollution,
-      }
-    end
-  end
-
-  storage.pollution_buildings_count = count
-end
-
-function handler.on_init()
-  reload_buildings()
-end
-function handler.on_configuration_changed()
-  reload_buildings()
-end
-
 ---MARK: Entity Tracking
 
 ---@alias EventData.BuiltEvents
@@ -224,6 +187,58 @@ handler.events[defines.events.on_tick] = function (event)
   end
   -- Save progress on the loop
   storage.pollution_index = index
+end
+
+---MARK: Setup
+
+local function reload_buildings()
+  local old_list = storage.pollution_buildings
+  ---@type PollutionBuilding[]
+  local new_list, count = {}, 0
+  storage.pollution_buildings = new_list
+
+  local building_list, build_count = {}, 0
+  for building in pairs(pollution_definition) do
+    build_count = build_count + 1
+    building_list[build_count] = building
+  end
+
+  for _, surface in pairs(game.surfaces) do
+    for _, entity in pairs(surface.find_entities_filtered{
+      name = building_list
+    }) do
+      count = count + 1
+      local unit_id = entity.unit_number
+      ---@cast unit_id -?
+      local pollution_numbers = pollution_definition[entity.name]
+
+      ---@type PollutionBuilding
+      local pollution_object = {
+        entity = entity,
+        min_pollution = pollution_numbers.min_pollution,
+        max_pollution = pollution_numbers.max_pollution,
+        alert = old_list[unit_id].alert -- Migrate the disabled status so it can properly enable if values expanded
+      }
+      new_list[unit_id] = pollution_object
+      old_list[unit_id] = nil
+    end
+  end
+
+  storage.pollution_buildings_count = count
+
+  -- Go over all entities no longer watched, and make sure they're enabled.
+  for _, object in pairs(old_list) do
+    if object.alert then
+      enable_building(object.entity, object)
+    end
+  end
+end
+
+function handler.on_init()
+  reload_buildings()
+end
+function handler.on_configuration_changed()
+  reload_buildings()
 end
 
 return handler
