@@ -34,6 +34,6 @@ data:extend{
 	limit_pollution("pm-greenhouse", 0, 60),
 	limit_pollution("pm-factorian-bacteria-greenhouse", 0, 60),
 	limit_pollution("pm-CO2-nullifer", 0, 120),
-	limit_pollution("pm-air-filterer", 0, 1/0),
+	limit_pollution("pm-air-filterer", 0.01, 1/0),
 }
 return limit_pollution
