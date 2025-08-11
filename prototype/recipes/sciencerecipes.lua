@@ -127,7 +127,7 @@ data:extend({
     {
         PM.ingredient("pm-yttrium-ore", 4),
         PM.ingredient("pm-molten-zinc", 5, "fluid"),
-        PM.ingredient("pm-osmiridium-plate", 2),
+        PM.ingredient("pm-osmiridium-plate", 3),
         PM.ingredient("pm-tantalum-plate", 3),
         PM.ingredient("pm-science-bottle", 1)
     },
