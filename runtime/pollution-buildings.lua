@@ -3,18 +3,22 @@ local flasher = require("runtime.alert-flashing")
 ---@type event_handler
 local handler = {on_nth_tick = {}, events = {}}
 
----@type table<EntityID, {[1]:number,[2]:number}>
-local pollution_definition = {
-  -- Where you define buildings and their pollution
-  -- Migration is now needed if these numbers are ever changed
+---@type table<data.EntityID, PollutionData.data>
+local pollution_definition = {}
+for data_name, mod_data in pairs(prototypes.mod_data) do
+  if mod_data.data_type == "pm-pollution-limit" then
+    ---@cast mod_data LuaPollutionData
+    local data = mod_data.data
+    -- Data validation
+    if type(data.entity) ~= "string" or not prototypes.entity[data.entity] then error("The `pm-pollution-limit` of "..data_name.." expects an entity ID") end
+    if pollution_definition[data.entity] then error("There's two defined pollution limits for '"..data.entity.."'") end
+    if type(data.max_pollution) ~= "number" then error("The `pm-pollution-limit` of "..data_name.." expects a number for the `max_pollution`") end
+    if type(data.min_pollution) ~= "number" then error("The `pm-pollution-limit` of "..data_name.." expects a number for the `min_pollution`") end
 
-  --15 pollution in a til is the min. amount needed to have it spread
-  --60 pollution is when trees start dying - makes sense thematically, but might be too low?
-  ["pm-greenhouse"] = {0, 60},
-  ["pm-factorian-bacteria-greenhouse"] = {0, 60},
-  ["pm-CO2-nullifer"] = {0, 120},
-  ["pm-air-filterer"] = {1, 1/0}
-}
+    pollution_definition[data.entity] = data
+  end
+end
+
 
 --pollution value to colour list:
 --0-50: Lowest colour
@@ -56,8 +60,8 @@ local function reload_buildings()
       local pollution_numbers = pollution_definition[entity.name]
       new_list[entity.unit_number--[[@as uint64]]] = {
         entity = entity,
-        min_pollution = pollution_numbers[1],
-        max_pollution = pollution_numbers[2],
+        min_pollution = pollution_numbers.min_pollution,
+        max_pollution = pollution_numbers.max_pollution,
       }
     end
   end
@@ -89,8 +93,8 @@ local function built_entity(event)
   storage.pollution_buildings_count = storage.pollution_buildings_count + 1
   storage.pollution_buildings[entity.unit_number--[[@as number]]] = {
     entity = entity,
-    min_pollution = pollution_numbers[1],
-    max_pollution = pollution_numbers[2],
+    min_pollution = pollution_numbers.min_pollution,
+    max_pollution = pollution_numbers.max_pollution,
   }
 end
 

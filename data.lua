@@ -124,6 +124,7 @@ require("prototype.entity.roboports")
 require("prototype.entity.projectiles")
 require("prototype.entity.stickers")
 require("prototype.entity.enemies")
+require("prototype.entity.pollution-limits")
 
 require("prototype.remnants")
 require("prototype.achievements")
