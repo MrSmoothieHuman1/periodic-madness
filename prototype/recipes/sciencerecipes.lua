@@ -514,11 +514,13 @@ data:extend({
     order = "a",
     energy_required = 60,
     allow_productivity = true,
+    main_product = "pm-expiremental-research-data",
     ingredients =
     {
         PM.ingredient("processing-unit", 4),
         PM.ingredient("pm-polyethylene-plastic", 10),
-        PM.ingredient("pm-glass-fibers", 8)
+        PM.ingredient("pm-glass-fibers", 8),
+        PM.ingredient("pm-francium-glass-ampule", 5)
         --PM.ingredient("pm-technectium-ore", 3),
         --PM.ingredient("pm-dubnium-ore", 3),
     },
@@ -526,6 +528,7 @@ data:extend({
     results =
     {
         PM.product("pm-expiremental-research-data", 5),
+        PM.product("pm-empty-glass-ampule", 5)
     }
 },
 })

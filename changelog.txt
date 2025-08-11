@@ -40,6 +40,7 @@ Date: 2025-12-07
     - Changed all logistic chests to take stainless steel chests instead of steel chests, but buffed their storage size to 64.
     - Slightly scaled down the HCl/acidic water/chromic acid icons in metal processing recipes.
     - Increased the stack size of all billets from 100 to 500.
+    - Changed francium PTx86 enrichment to always give 11 as an output, instead of a chance between 10-11.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.

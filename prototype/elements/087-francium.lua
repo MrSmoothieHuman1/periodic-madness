@@ -188,9 +188,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-francium-209", 10, 11, 10),
-      PM.catalyst_range("pm-francium-210", 10, 11, 10),
-      PM.catalyst_range("pm-francium-211", 10, 11, 10),
+      PM.catalyst("pm-francium-209", 11, 10),
+      PM.catalyst("pm-francium-210", 11, 10),
+      PM.catalyst("pm-francium-211", 11, 10),
       PM.catalyst("pm-trace-astatine-211", 1, 1)
     }
   },
