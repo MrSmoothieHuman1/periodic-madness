@@ -3,6 +3,37 @@ local PM = require("library")
 data:extend({
 
     {
+        type = "item",
+        name = "pm-ammonium-ruthenium-chloride",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-ruthenium-tm",
+        order = "b",
+        stack_size = 250
+    },
+    {
+        type = "item",
+        name = "pm-ruthenium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-ruthenium-tm",
+        order = "c",
+        stack_size = 200
+    },
+
+    {
+        type = "fluid",
+        name = "pm-ruthenium-filtered-anode-sludge",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        subgroup = "pm-osmium-tm",
+        order = "a",
+        default_temperature = 15,
+        base_color = {r = 0, g = 0, b = 0},
+        flow_color = {r = 0, g = 0, b = 0}
+    },
+
+    {
         type = "recipe",
         name = "pm-ruthenium-filtered-anode-sludge",
         enabled = false,
@@ -48,6 +79,7 @@ data:extend({
         category = "chemistry",
         subgroup = "pm-ruthenium-tm",
         order = "c",
+        main_product = "pm-ruthenium-ore",
         ingredients =
         {
             PM.ingredient("pm-ammonium-ruthenium-chloride", 4),
@@ -57,7 +89,7 @@ data:extend({
         results = 
         {
             PM.product("pm-ruthenium-ore", 3),
-            PM.product_range("pm-ammonia-gas", 1.5, 2),
+            PM.product_range("pm-ammonia-gas", 1.5, 2, "fluid"),
             PM.product_chance("pm-cobalt-catalyst", 2, 0.85),
             PM.product_chance("pm-catalyst-container", 2, 0.15)
         }

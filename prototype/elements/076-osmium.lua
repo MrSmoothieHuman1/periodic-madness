@@ -117,7 +117,7 @@ data:extend({
         {
             PM.ingredient("pm-osmium-ore", 2),
             PM.ingredient("pm-iridium-plate", 2),
-            --PM.ingredient("pm-ruthenium-ore", 2),
+            PM.ingredient("pm-ruthenium-ore", 2),
             PM.ingredient("steam", 50, "fluid")
         },
         results = 

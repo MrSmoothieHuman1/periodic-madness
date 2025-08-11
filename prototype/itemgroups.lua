@@ -848,15 +848,33 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-tantalum-tm",
+    name = "pm-ruthenium-tm",
     group = "pm-transition-metals",
     order = "y"
   },
   {
     type = "item-subgroup",
-    name = "pm-niobium-tm",
+    name = "pm-rhenium-tm",
     group = "pm-transition-metals",
     order = "z"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-rhodium-tm",
+    group = "pm-transition-metals",
+    order = "za"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-tantalum-tm",
+    group = "pm-transition-metals",
+    order = "zb"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-niobium-tm",
+    group = "pm-transition-metals",
+    order = "zc"
   },
 
   --MARK: Post Transition
