@@ -2453,34 +2453,119 @@ data:extend({
     vector_to_place_result = {0, 3.55},
     energy_usage = "500kW",
     graphics_set =
-  {
-    animation =
     {
-      layers =
+      animation =
       {
+        north =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler.png",
-          width = 448,
-          height = 448,
-          --frame_count = 32,
-          --line_length = 8,
-          animation_speed = 0.25,
-          scale = 0.5,
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-north.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 32,
+              --line_length = 8,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 1,
+              --line_length = 1,
+              --repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
         },
+        south =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
-          width = 448,
-          height = 448,
-          --frame_count = 32,
-          --line_length = 4,
-          draw_as_shadow = true,
-          shift = util.by_pixel(64, 10),
-          animation_speed = 0.25,
-          scale = 0.5
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-south.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 32,
+              --line_length = 8,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 1,
+              --line_length = 1,
+              --repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
+        },
+        east =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-east.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 32,
+              --line_length = 8,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 1,
+              --line_length = 1,
+              --repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
+        },
+        west =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-west.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 32,
+              --line_length = 8,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              --frame_count = 1,
+              --line_length = 1,
+              --repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
         },
       }
     }
-  }
 }--[[@as data.AssemblingMachinePrototype]],
   {
     type = "lab",
