@@ -1,0 +1,3 @@
+[submodule "pennyisms"]
+	path = pennyisms
+	url = https://github.com/PennyJim/pennyisms.git
