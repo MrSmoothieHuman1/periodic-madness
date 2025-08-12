@@ -1,3 +1,5 @@
+PM = require("pennyisms.library")
+
 require("compatibility.K2")
 require("compatibility.BZ.foundry")
 require("compatibility.BZ.zirconium")
@@ -6,7 +8,6 @@ require("compatibility.mini-trains")
 require("compatibility.stack-inserters")
 
 -- HACK: temporary
-local PM = require("library")
 data:extend{
 	-- We want the contents of the recipe to be how much fluid it takes to cool it for 50kJ
 		-- That means the 'time' of the recipe needs to 1s for each liquid heat it produces

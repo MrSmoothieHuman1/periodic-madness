@@ -1,5 +1,4 @@
 if not mods["bzzirconium"] or not mods["Krastorio2"] then return end
-local PM = require("library")
 
 data.raw["recipe"]["pm-dirty-boiler"].enabled = false
 data.raw["recipe"]["pm-science-bottle"].enabled = false

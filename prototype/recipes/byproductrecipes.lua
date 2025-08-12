@@ -1,4 +1,3 @@
-local PM = require("library")
 --for any recipes that relate to byproducts
 
 data:extend({

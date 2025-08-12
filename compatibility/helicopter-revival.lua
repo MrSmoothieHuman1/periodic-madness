@@ -1,6 +1,4 @@
 if not mods["HelicopterRevival"] then return end
----@type PeriodicLibrary
-local PM = require("library")
 
 local remote_recipe = data["recipe"]["heli-remote-recipe"] --[[@as data.RecipePrototype]]
 remote_recipe.ingredients = {

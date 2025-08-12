@@ -1,7 +1,7 @@
 --THIS IS HOW YOU SPELL PERIODIC = periodic
 --since i have to write rules for myself, since im a bit of an idiot, some rules:
 --2 chunks of an ore = 1 "pure" ore
-local PM = require("library")
+PM = require("pennyisms.library")
 
 require("prototype.item")
 require("prototype.fluids")

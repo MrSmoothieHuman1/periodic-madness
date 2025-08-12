@@ -1,5 +1,4 @@
 if not mods["bzchlorine"] then return end -- Leave if not relevant
-local PM = require("library")
 
 data.raw["recipe"]["pm-seawater-evaporation"].ingredients =
 {

@@ -1,4 +1,3 @@
-local PM = require("library")
 --for all smelting recipes, e.g plates, glass, etc
 
 data:extend({

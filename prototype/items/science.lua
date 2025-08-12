@@ -1,4 +1,3 @@
-local PM = require("library")
 --all science packs
 
 data:extend({

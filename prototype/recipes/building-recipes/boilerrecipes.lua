@@ -1,6 +1,5 @@
 -- i will probably never have a use for this file apart from one, maybe two recipes - but it felt weird putting the recipes in the normal recipe file
 
-local PM = require("library")
 data:extend({
 
   {

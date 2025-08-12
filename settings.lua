@@ -1,3 +1,4 @@
+PM = require("pennyisms.library")
 data:extend({
     {
         type = "string-setting",

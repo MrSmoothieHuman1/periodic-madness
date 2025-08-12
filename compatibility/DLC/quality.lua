@@ -1,5 +1,4 @@
 if mods["quality"] then
-local PM = require("library")
 --MARK: Vanilla changes
     data.raw["technology"]["modules"].icon_size = "__periodic-madness__/graphics/technology/modules-quality.png"
     data.raw["module"]["quality-module"].icon_size = 64

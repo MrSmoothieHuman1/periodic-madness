@@ -1,5 +1,4 @@
 if not mods["Mini_Trains"] then return end
-local PM = require("library")
 
 data.raw["recipe"]["mini-locomotive"].ingredients =
 {

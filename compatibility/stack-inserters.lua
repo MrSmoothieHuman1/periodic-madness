@@ -1,5 +1,3 @@
-local PM = require("library")
-
 if mods["stack-inserters"] then
 
         --MARK: Tech changes

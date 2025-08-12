@@ -1,4 +1,3 @@
-local PM = require("library")
 local item_sounds = require("__base__.prototypes.item_sounds")
 
 data:extend({

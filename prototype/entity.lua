@@ -1,4 +1,3 @@
-local PM = require("library")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local fireutil = require("__base__.prototypes.fire-util")

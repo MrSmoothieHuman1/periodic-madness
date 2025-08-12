@@ -1,4 +1,3 @@
-local PM = require("library")
 
 --MARK: Bonus amounts
 -- this catalouges the scaluing for every single bonus technology in PM, just for other people to look at and so i cant forget

@@ -1,4 +1,3 @@
-local PM = require("library")
 
 ---@class data.CooledReactorPrototype : data.ReactorPrototype
 ---@field coolant_life float How many seconds the reactor can last without heat

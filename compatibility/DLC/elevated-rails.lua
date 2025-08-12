@@ -1,4 +1,3 @@
-local PM = require("library")
 if mods["elevated-rails"] then
 
     data.raw["technology"]["elevated-rail"].unit.ingredients =

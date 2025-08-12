@@ -1,5 +1,3 @@
-local PM = require("library")
-
 local sounds = require("__base__.prototypes.entity.sounds")
 local item_sounds = require("__base__.prototypes.item_sounds")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")

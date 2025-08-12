@@ -1,4 +1,3 @@
-local PM = require("library")
 
 data.raw["recipe"]["electronic-circuit"].ingredients =
 {

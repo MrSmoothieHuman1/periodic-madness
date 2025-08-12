@@ -1,3 +1,4 @@
+PM = require("pennyisms.library")
 local event_handler = require("event_handler")--[[@as event_handler_lib]]
 
 event_handler.add_libraries{

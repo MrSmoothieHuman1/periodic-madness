@@ -1,4 +1,3 @@
-local PM = require("library")
 --all technologies related to Alternative Recipe Pack
 
 data:extend({

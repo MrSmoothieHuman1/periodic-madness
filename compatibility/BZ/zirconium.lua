@@ -1,4 +1,3 @@
-local PM = require("library")
 if not mods["bzzirconium"] then return end
 ---@type string
     local explosive_rounds_magazine

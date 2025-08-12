@@ -1,4 +1,3 @@
-local PM = require("library")
 ---@type event_handler
 local lib = {events={}}
 
