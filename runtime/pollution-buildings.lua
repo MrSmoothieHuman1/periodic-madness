@@ -91,7 +91,9 @@ end
 ---@param alert LocalisedString
 ---@param sprite LuaRendering.draw_sprite_param
 local function disable_building(entity, object, diode, status, signal, alert, sprite)
+if signal and alert then
   alert_force(entity, signal, alert)
+end
 
   local alert = object.alert
   if not alert or not alert.valid then
@@ -142,8 +144,7 @@ local function check_pollution(entity, pollution_object)
       defines.entity_status_diode.red,
       {"entity-status.pm-too-little-pollution"},
       -- Custom Alert
-      {type="virtual", name="pm-too-little-pollution"},
-      {"pm-alerts.pm-too-little-pollution"},
+      nil, nil,
       -- Alert Sprite
       {
         sprite = "virtual-signal/pm-too-little-pollution",
