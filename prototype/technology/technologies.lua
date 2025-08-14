@@ -5171,6 +5171,48 @@ data:extend({
       time = 100
     }
   },
+  {
+    type = "technology",
+    name = "pm-rhenium-platinum-catalyst",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    research_trigger = 
+    {
+      type = "craft-item",
+      item = "pm-rhenium-plate",
+      count = 25
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-molybdenum-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-electric-engine-unit", "automation-3"},
+    unit =
+    {
+      count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
 
 
 --MARK: AEM science

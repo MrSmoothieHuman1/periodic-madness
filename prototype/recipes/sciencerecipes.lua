@@ -128,7 +128,7 @@ data:extend({
         PM.ingredient("pm-molten-zinc", 5, "fluid"),
         PM.ingredient("pm-osmiridium-plate", 3),
         PM.ingredient("pm-tantalum-plate", 3),
-        PM.ingredient("pm-rhenium-plate", 3),
+        PM.ingredient("pm-rhenium-plate", 2),
         PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
