@@ -2460,12 +2460,12 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-north-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-north.png",
               priority = "high",
               width = 448,
               height = 448,
-              --frame_count = 32,
-              --line_length = 8,
+              frame_count = 32,
+              line_length = 8,
               scale = 0.5
             },
             {
@@ -2473,9 +2473,9 @@ data:extend({
               priority = "high",
               width = 448,
               height = 448,
-              --frame_count = 1,
-              --line_length = 1,
-              --repeat_count = 32,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
               shift = util.by_pixel(32, 3),
               draw_as_shadow = true,
               scale = 0.5
