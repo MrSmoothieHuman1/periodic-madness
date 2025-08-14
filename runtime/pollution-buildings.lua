@@ -213,12 +213,20 @@ local function reload_buildings()
       ---@cast unit_id -?
       local pollution_numbers = pollution_definition[entity.name]
 
+      local old_object = old_list[unit_id] or {}
+      -- HACK: Because Black released an update that *didn't* include the fix for this >:(
+      if not old_object.alert and entity.disabled_by_script then
+---@diagnostic disable-next-line: missing-fields
+        old_object.alert = {destroy = function()end} -- Will get 'destroyed' so doesn't matter
+        enable_building(entity, old_object) -- If it's meant to be disabled, it will be re-disabled :shrug:
+      end
+
       ---@type PollutionBuilding
       local pollution_object = {
         entity = entity,
         min_pollution = pollution_numbers.min_pollution,
         max_pollution = pollution_numbers.max_pollution,
-        alert = (old_list[unit_id] or {}).alert -- Migrate the disabled status so it can properly enable if values expanded
+        alert = old_object.alert -- Migrate the disabled status so it can properly enable if values expanded
       }
       new_list[unit_id] = pollution_object
       old_list[unit_id] = nil
