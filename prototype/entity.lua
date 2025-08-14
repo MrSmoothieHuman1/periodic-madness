@@ -2567,6 +2567,125 @@ data:extend({
             },
           }
         },
+      },
+      idle_animation = 
+      {
+        north =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-north-idle.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              animation_speed = 0.4,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
+        },
+        south =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-south-idle.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              animation_speed = 0.4,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
+        },
+        east =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-east-idle.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              animation_speed = 0.4,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
+        },
+        west =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-west-idle.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              animation_speed = 0.4,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-shadow.png",
+              priority = "high",
+              width = 448,
+              height = 448,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              shift = util.by_pixel(32, 3),
+              draw_as_shadow = true,
+              scale = 0.5
+            },
+          }
+        },
       }
     }
 }--[[@as data.AssemblingMachinePrototype]],
