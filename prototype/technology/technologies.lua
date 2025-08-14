@@ -5175,7 +5175,7 @@ data:extend({
     type = "technology",
     name = "pm-rhenium-platinum-catalyst",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/rhenium-platinum-catalysts.png",
     effects = 
     {
 

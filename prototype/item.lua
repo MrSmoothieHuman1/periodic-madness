@@ -163,6 +163,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-rhenium-platinum-catalyst",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/rhenium-platinum-catalyst.png",
+    subgroup = "pm-catalysts",
+    order = "g",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "pm-sea-salt",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/sea-salt.png",
