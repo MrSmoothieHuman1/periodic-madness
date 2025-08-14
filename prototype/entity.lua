@@ -2686,7 +2686,96 @@ data:extend({
             },
           }
         },
-      }
+      },
+      working_visualisations =
+      {
+        {
+          apply_recipe_tint = "primary",
+          north_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-primary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          },
+          east_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-primary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          },
+          south_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-primary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          },
+          west_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-primary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          }
+        },
+        {
+          apply_recipe_tint = "secondary",
+          north_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-secondary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          },
+          east_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-secondary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          },
+          south_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-secondary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          },
+          west_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-circuit-secondary.png",
+            frame_count = 32,
+            line_length = 8,
+            width = 448,
+            height = 448,
+            animation_speed = 0.4,
+            scale = 0.5
+          }
+        }
+      },
     }
 }--[[@as data.AssemblingMachinePrototype]],
   {

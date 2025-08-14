@@ -5,6 +5,11 @@ data.raw["recipe"]["electronic-circuit"].ingredients =
   PM.ingredient("pm-electronic-breadboard", 1),
   PM.ingredient("pm-electronic-integrated-circuits", 3),
 }
+data.raw["recipe"]["electronic-circuit"].crafting_machine_tint =
+{
+  primary = {r = 0, g = 1, b = 0},
+  secondary = {r = 0, g = 0.5, b = 0}
+}
 data.raw["recipe"]["automation-science-pack"].ingredients =
 {
   PM.ingredient("iron-plate", 2),
@@ -75,6 +80,11 @@ data.raw["recipe"]["advanced-circuit"].ingredients =
   PM.ingredient("pm-transistors", 5),
   PM.ingredient("pm-solder", 1),
   PM.ingredient("pm-advanced-integrated-circuits", 3)
+}
+data.raw["recipe"]["advanced-circuit"].crafting_machine_tint =
+{
+  primary = {r = 1, g = 0, b = 0},
+  secondary = {r = 0.5, g = 0, b = 0}
 }
 data.raw["recipe"]["small-lamp"].ingredients =
 {
@@ -506,6 +516,11 @@ data.raw["recipe"]["processing-unit"].ingredients =
   PM.ingredient("pm-semiconductor", 3),
   PM.ingredient("pm-transistors", 10),
   PM.ingredient("pm-indium-wire", 3)
+}
+data.raw["recipe"]["processing-unit"].crafting_machine_tint =
+{
+  primary = {r = 0, g = 0, b = 1},
+  secondary = {r = 0, g = 0, b = 0.5}
 }
 data.raw["recipe"]["cannon-shell"].ingredients =
 {

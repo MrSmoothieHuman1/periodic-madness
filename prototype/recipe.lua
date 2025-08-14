@@ -184,6 +184,11 @@ data:extend({
   {
     type = "recipe",
     name = "pm-fluid-circuit",
+    crafting_machine_tint = 
+    {
+      primary = {r = 1, g = 0.5, b = 0},
+      secondary = {r = 0.5, g = 0.2, b = 0}
+    },
     energy_required = 1.5,
     enabled = false,
     category = "pm-circuitry",
