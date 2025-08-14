@@ -4843,11 +4843,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-anode-mud"),
-      PM.unlock_recipe("pm-anode-sludge-seperation"),
-      PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
-      PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
-      PM.unlock_recipe("pm-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-molybdenum-porphyry-deposit"),
+      PM.unlock_recipe("pm-molybdenum-porphyry-seperation"),
+      PM.unlock_recipe("pm-rhenium-oxide"),
+      PM.unlock_recipe("pm-perrhenic-acid"),
+      PM.unlock_recipe("pm-ammonium-perrhenate"),
+      PM.unlock_recipe("pm-rhenium-ore")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

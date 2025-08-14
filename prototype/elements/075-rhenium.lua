@@ -92,16 +92,16 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-rhenium-chunks", 1, 0.02),
-            PM.product_chance("pm-molybdenite-powder", 3, 0.456),
-            PM.product_chance("stone", 5, 0.524)
+            PM.product_chance("pm-rhenium-chunks", 1, 0.05),
+            PM.product_chance("pm-molybdenite-powder", 3, 0.458),
+            PM.product_chance("stone", 5, 0.525)
         }
     },
     {
         type = "recipe",
         name = "pm-rhenium-oxide",
         enabled = false,
-        energy_required = 4.8,
+        energy_required = 6.4,
         category = "smelting", --should be (also?) in reverbatory furnace
         subgroup = "pm-rhenium-tm",
         order = "c",
@@ -162,7 +162,7 @@ data:extend({
         type = "recipe",
         name = "pm-rhenium-ore",
         enabled = false,
-        energy_required = 6,
+        energy_required = 9,
         category = "pm-moltening",
         subgroup = "pm-rhenium-tm",
         order = "f",
