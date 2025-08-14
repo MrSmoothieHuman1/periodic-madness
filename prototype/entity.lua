@@ -2466,6 +2466,7 @@ data:extend({
               height = 448,
               frame_count = 32,
               line_length = 8,
+              animation_speed = 0.4,
               scale = 0.5
             },
             {
@@ -2493,7 +2494,7 @@ data:extend({
               height = 448,
               frame_count = 32,
               line_length = 8,
-              animation_speed = 0.33,
+              animation_speed = 0.4,
               scale = 0.5
             },
             {
@@ -2521,6 +2522,7 @@ data:extend({
               height = 448,
               frame_count = 32,
               line_length = 8,
+              animation_speed = 0.4,
               scale = 0.5
             },
             {
@@ -2548,6 +2550,7 @@ data:extend({
               height = 448,
               frame_count = 32,
               line_length = 8,
+              animation_speed = 0.4,
               scale = 0.5
             },
             {
