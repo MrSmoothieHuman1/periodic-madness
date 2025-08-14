@@ -62,7 +62,7 @@ data:extend({
         type = "recipe",
         name = "pm-molybdenum-porphyry-deposit",
         enabled = false,
-        energy_required = 12,
+        energy_required = 10,
         category = "pm-acids",
         subgroup = "pm-rhenium-tm",
         order = "a",
@@ -75,7 +75,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-molybdenum-porphyry-deposit", 12)
+            PM.product("pm-molybdenum-porphyry-deposit", 14)
         }
     },
     {
