@@ -4848,7 +4848,8 @@ data:extend({
       PM.unlock_recipe("pm-rhenium-oxide"),
       PM.unlock_recipe("pm-perrhenic-acid"),
       PM.unlock_recipe("pm-ammonium-perrhenate"),
-      PM.unlock_recipe("pm-rhenium-ore")
+      PM.unlock_recipe("pm-rhenium-ore"),
+      PM.unlock_recipe("pm-rhenium-plate")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

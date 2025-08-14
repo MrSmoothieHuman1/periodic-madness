@@ -57,7 +57,7 @@ data:extend({
         base_color = {r = 0, g = 0, b = 0},
         flow_color = {r = 0, g = 0, b = 0}
     },
-    
+  
     {
         type = "recipe",
         name = "pm-molybdenum-porphyry-deposit",
@@ -66,6 +66,7 @@ data:extend({
         category = "pm-acids",
         subgroup = "pm-rhenium-tm",
         order = "a",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-transition-metals-ore", 14),
@@ -86,7 +87,8 @@ data:extend({
         subgroup = "pm-rhenium-tm",
         order = "b",
         main_product = "pm-rhenium-chunks",
-        ingredients = 
+        allow_productivity = true,
+        ingredients =
         {
             PM.ingredient("pm-molybdenum-porphyry-deposit", 2)
         },
@@ -106,6 +108,7 @@ data:extend({
         subgroup = "pm-rhenium-tm",
         order = "c",
         main_product = "pm-rhenium-oxide",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-rhenium-chunks", 3)
@@ -125,6 +128,7 @@ data:extend({
         subgroup = "pm-rhenium-tm",
         order = "d",
         main_product = "pm-perrhenic-acid",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-rhenium-oxide", 2),
@@ -166,6 +170,7 @@ data:extend({
         category = "pm-moltening",
         subgroup = "pm-rhenium-tm",
         order = "f",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-ammonium-perrhenate", 5),
@@ -174,6 +179,24 @@ data:extend({
         results = 
         {
             PM.product("pm-rhenium-ore", 5),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-rhenium-plate",
+        enabled = false,
+        energy_required = 6.4,
+        category = "smelting",
+        subgroup = "pm-rhenium-tm",
+        order = "g",
+        allow_productivity = true,
+        ingredients = 
+        {
+            PM.ingredient("pm-rhenium-ore", 1)
+        },
+        results = 
+        {
+            PM.product("pm-rhenium-plate", 1)
         }
     }
 })
