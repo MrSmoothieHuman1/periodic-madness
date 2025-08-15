@@ -1669,6 +1669,16 @@ data:extend({
     order = "c",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-RTG-equipment",
+    icon = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment.png",
+    icon_size = 64,
+    place_as_equipment_result = "pm-RTG-equipment",
+    subgroup = "pm-modular-storage",
+    order = "c",
+    stack_size = 20
+  },
 
   {
     type = "item",
