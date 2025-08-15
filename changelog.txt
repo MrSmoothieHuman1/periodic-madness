@@ -23,6 +23,7 @@ Date: 2025-12-07
     - Added a MK2 version of the Circuit Megassembler, which has double the crafting speed and has an innate productivity boost - but takes light lubricant.
     - Added new tech icons for different tiers in the bio-module technologies.
     - Added even more advanced recipes for thing that take lubricant, for light lubricant.
+    - Added RTG equipment, unlocked at AEM science, which works as an infinite power source in your armour - however it is bigger and less efficient then other types of equipment.
 
   Changes:
     - Slightly nerfed research productivity.

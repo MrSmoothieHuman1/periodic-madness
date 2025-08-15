@@ -4280,4 +4280,23 @@ data:extend({
       PM.product("pm-selenium-sulfur-battery-equipment", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-RTG-equipment",
+    subgroup = "pm-modular-storage",
+    order = "e",
+    enabled = false,
+    energy_required = 15,
+    ingredients =
+    {
+      PM.ingredient("pm-RTG", 1),
+      PM.ingredient("pm-strontium-fuel-rod", 5),
+      PM.ingredient("pm-polyethylene-plastic", 8),
+      PM.ingredient("pm-radiation-resistant-panelling", 12)
+    },
+    results =
+    {
+      PM.product("pm-RTG-equipment", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

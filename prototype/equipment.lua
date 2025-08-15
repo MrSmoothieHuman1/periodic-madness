@@ -364,6 +364,38 @@ data:extend({
     },
     categories = {"armor"}
   },
+  {
+    type = "generator-equipment",
+    name = "pm-RTG-equipment",
+    sprite =
+    {
+      filename = "__periodic-madness__/graphics/technology/RTG-equipment.png",
+      width = 256,
+      height = 256,
+      priority = "medium",
+      scale = 0.5
+    },
+    shape =
+    {
+      width = 4,
+      height = 4,
+      type = "full"
+      --[[ Can also be defined as manual (a set of points which fall within the width/height - can't be empty)
+      type = "manual",
+      points = {{0, 0}, {1, 0}, {2, 0}, {3, 0},
+                {0, 1},                 {3, 1},
+                {0, 2},                 {3, 2},
+                {0, 3}, {1, 3}, {2, 3}, {3, 3},}
+      ]]--
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "primary-output"
+    },
+    power = "500kW",
+    categories = {"armor"}
+  },
 })
 
 data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment.png"
