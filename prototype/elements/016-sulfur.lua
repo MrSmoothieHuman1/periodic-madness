@@ -1,3 +1,4 @@
+local PM = require("library")
 data:extend({
     {
     type = "fluid",
@@ -68,8 +69,8 @@ data:extend({
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
       PM.product_range("water", 1.2, 2, "fluid"),
-      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 2),
-      PM.product_chance("pm-catalyst-container", 2, 0.15)
+      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 1),
+      PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 1)
     }
   },
   {
@@ -92,8 +93,8 @@ data:extend({
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
       PM.product_range("water", 1.2, 2, "fluid"),
-      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 2),
-      PM.product_chance("pm-catalyst-container", 2, 0.25)
+      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 1),
+      PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 1)
     }
   },
   {
@@ -123,7 +124,7 @@ data:extend({
     type = "recipe",
     name = "pm-sulfur-dioxide",
     enabled = false,
-    energy_required = 3,
+    energy_required = 2,
     category = "pm-moltening",
     subgroup = "pm-sulfuric-acid-rnm",
     order = "e",
@@ -137,8 +138,8 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 20, "fluid"),
-      PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.85, 3),
-      PM.catalyst_range("pm-catalyst-container", 3, 0.15, 3)
+      PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.85, 2),
+      PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
     }
   },
   {
@@ -162,8 +163,8 @@ data:extend({
     {
       PM.product("pm-sulfur-trioxide", 10, "fluid"),
       PM.product_range_chance("pm-oxygen-gas", 5, 10, 0.5, "fluid"),
-      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 2, 3, 0.8, 3),
-      PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.2, 1)
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 3, 0.8, 2),
+      PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 2)
     }
   },
   {

@@ -1,6 +1,5 @@
+local PM = require("library")
 data:extend({
-
-
   {
     type = "item",
     name = "pm-nickel-chunk",
@@ -130,7 +129,6 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
-        scale = 0.45,
       },
     },
     subgroup = "pm-nickel-tm",
@@ -171,7 +169,6 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
-        scale = 0.45,
       },
     },
     subgroup = "pm-nickel-tm",
@@ -422,8 +419,8 @@ data:extend({
   },
   results = 
   {
-    PM.product_chance("pm-cobalt-catalyst", 2, 0.8),
-    PM.product_chance("pm-catalyst-container", 2, 0.2),
+    PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.8, 1),
+    PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 1),
     PM.product("pm-nickel-ore", 12),
     PM.product_range("pm-sulfur-dioxide", 2, 12, "fluid")
   }

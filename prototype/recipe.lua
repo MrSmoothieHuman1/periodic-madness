@@ -1054,8 +1054,8 @@ data:extend({
     results =
     {
       PM.product("pm-common-myostatin", 10, "fluid"),
-      PM.product_range_chance("pm-vanadium-oxide-catalyst", 3, 5, 0.66),
-      PM.product_range_chance("pm-catalyst-container", 0, 2, 0.33)
+      PM.product_chance("pm-vanadium-oxide-catalyst", 5, 0.8),
+      PM.product_chance("pm-catalyst-container", 5, 0.2)
     }
   },
   {
@@ -1259,8 +1259,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-palladium-catalyst", 1, 0.85),
-      PM.product_chance("pm-catalyst-container", 1, 0.15),
+      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.85, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.15, 1),
       PM.product("pm-ethylene-glycol", 10, "fluid"),
     }
   },
@@ -1653,8 +1653,8 @@ data:extend({
     {
       PM.product_range("pm-chloroform", 6, 8, "fluid"),
       PM.product_range("pm-carbon-tetrachloride", 2, 6, "fluid"),
-      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 1, 2, 0.75, 1),
-      PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.25, 1)
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.75, 1),
+      PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 1)
     }
   },
   {
@@ -3612,8 +3612,8 @@ data:extend({
     results = 
     {
       PM.product("pm-polydimethylsiloxane", 8, "fluid"),
-      PM.catalyst_range_chance("pm-cobalt-catalyst", 2, 3, 0.8, 2),
-      PM.product_range_chance("pm-catalyst-container", 0, 1, 0.2),
+      PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.8, 2),
+      PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 2),
       PM.product_range("pm-hydrochloric-acid", 8, 12, "fluid")
     }
   },

@@ -49,8 +49,8 @@ data:extend({
         results = 
         {
             PM.product("pm-niobite-oxide", 5),
-            PM.product_range_chance("pm-catalyst-container", 1, 2, 0.12),
-            PM.product_range_chance("pm-palladium-catalyst", 0, 1, 0.8)
+            PM.product_chance("pm-catalyst-container", 2, 0.2, 1),
+            PM.product_chance("pm-palladium-catalyst", 1, 0.8, 1)
         }
     },
     {

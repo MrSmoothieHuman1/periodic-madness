@@ -1,3 +1,4 @@
+local PM = require("library")
 data:extend({
 
   {
@@ -131,7 +132,6 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
-        scale = 0.45,
       },
     },
     subgroup = "pm-copper-tm",
@@ -170,7 +170,6 @@ data:extend({
       {
         icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
         icon_size = 64,
-        scale = 0.45,
       },
     },
     subgroup = "pm-copper-tm",
@@ -381,8 +380,8 @@ data:extend({
   },
   results = 
   {
-    PM.catalyst_range_chance("pm-cobalt-catalyst", 1, 3, 0.85, 1),
-    PM.catalyst_range_chance("pm-catalyst-container", 0, 2, 0.15, 2),
+    PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.85, 2),
+    PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2),
     PM.product("pm-blister-copper", 14),
     PM.product_range("pm-combined-ore-slab", 0, 3)
   }

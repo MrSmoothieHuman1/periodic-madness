@@ -137,8 +137,8 @@ data:extend({
     results =
     {
       PM.product_range("pm-yttrium-oxide", 1, 3),
-      PM.catalyst_range_chance("pm-vanadium-oxide-catalyst", 2, 4, 0.8, 4),
-      PM.catalyst_range_chance("pm-catalyst-container", 1, 2, 0.2, 2),
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 4, 0.85, 2),
+      PM.catalyst_chance("pm-catalyst-container", 4, 0.15, 2),
       PM.product_chance("pm-flourine", 5, 0.456)
     }
   } --[[@as data.RecipePrototype]],
@@ -162,8 +162,8 @@ data:extend({
     results =
     {
       PM.product_range("pm-yttrium-oxide", 0, 1),
-      PM.catalyst_range_chance("pm-cobalt-catalyst", 3, 4, 0.7, 4),
-      PM.catalyst_range_chance("pm-catalyst-container", 0, 1, 0.3, 1),
+      PM.catalyst_chance("pm-cobalt-catalyst", 4, 0.75, 2),
+      PM.catalyst_chance("pm-catalyst-container", 4, 0.25, 2),
       PM.product_range("pm-carbon-trioxide", 8, 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],

@@ -156,8 +156,8 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_chance("pm-palladium-catalyst", 1, 1, 0.8),
-      PM.catalyst_chance("pm-catalyst-container", 1, 1, 0.2),
+      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.8),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.2),
       PM.product_chance("pm-butane-gas", 20, 0.75, "fluid"),
       PM.product_range_chance("pm-syngas", 5, 10, 0.35, "fluid"),
       PM.catalyst_range("pm-palladium-hydride", 0, 2, 1)

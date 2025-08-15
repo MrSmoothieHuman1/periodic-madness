@@ -3524,6 +3524,11 @@ data:extend({
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     allowed_effects = PM.all_effects(),
     module_slots = 2,
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.lab_modules, shift = {0, 0.85}},
+      {inventory_index = defines.inventory.lab_input, shift = {0, 0.0}, max_icons_per_row = 3, separation_multiplier = 0.9}
+    },
     energy_source =
     {
       type = "electric",
