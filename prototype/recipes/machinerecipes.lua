@@ -1627,6 +1627,28 @@ data:extend({
       PM.product("pm-bulk-sideserter", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-circuit-megassembler-MK2",
+    subgroup = "production-machine",
+    order = "y",
+    enabled = false,
+    energy_required = 28,
+    ingredients =
+    {
+      PM.ingredient("pm-heavyweight-framing", 24),
+      PM.ingredient("pm-lightweight-panelling", 45),
+      PM.ingredient("pm-corrosion-resistant-tubing", 35),
+      PM.ingredient("processing-unit", 10),
+      PM.ingredient("assembling-machine-3", 2),
+      PM.ingredient("refined-concrete", 10),
+      PM.ingredient("pm-advanced-electric-engine-unit", 8)
+    },
+    results = 
+    {
+      PM.product("pm-circuit-megassembler-MK2", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

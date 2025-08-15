@@ -9254,7 +9254,7 @@ fluid_boxes =
     module_slots = 5,
     allowed_effects = PM.all_effects(),
     crafting_speed = 5,
-    allowed_module_categories = {"pm-circuit-megassembler-module"},
+    allowed_module_categories = {"pm-circuit-megassembler-module-MK2"},
     effect_receiver = { base_effect = { productivity = 0.25 }},
     tile_buildability_rules = pm_placable_on_refined_concrete,
     custom_tooltip_fields =

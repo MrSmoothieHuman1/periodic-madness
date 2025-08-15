@@ -154,9 +154,13 @@ for _, entity_type in pairs{
 	{
       "pm-heating-coils",
       "pm-circuit-megassembler-module",
+	  "pm-circuit-megassembler-module-MK2"
     })
 	if data.raw["assembling-machine"]["pm-circuit-megassembler"] then
 		data.raw["assembling-machine"]["pm-circuit-megassembler"].allowed_module_categories = {"pm-circuit-megassembler-module"}
+	end
+	if data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"] then
+		data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"].allowed_module_categories = {"pm-circuit-megassembler-module-MK2"}
 	end
 	end
 end

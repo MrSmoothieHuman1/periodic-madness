@@ -249,7 +249,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
     category = "pm-circuit-megassembler-module",
     tier = 1,
-    effect = {speed = 1, consumption = 1, pollution = 0.5},
+    effect = {speed = 1, consumption = 1, pollution = 0.75},
     subgroup = "production-machine",
     order = "h",
     place_result = "pm-circuit-megassembler",
@@ -889,6 +889,19 @@ data:extend({
     subgroup = "pm-express-inserters",
     order = "a",
     stack_size = 50
+  },
+  {
+    type = "module",
+    name = "pm-circuit-megassembler-MK2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler-MK2.png",
+    category = "pm-circuit-megassembler-module-MK2",
+    tier = 1,
+    effect = {speed = 1, consumption = 1, pollution = 0.5},
+    subgroup = "production-machine",
+    order = "h",
+    place_result = "pm-circuit-megassembler-MK2",
+    stack_size = 10
   },
 })
 

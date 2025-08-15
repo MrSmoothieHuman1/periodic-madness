@@ -4926,11 +4926,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/circuit-megassembler-MK2.png",
     effects =
     {
+      PM.unlock_recipe("pm-circuit-megassembler-MK2")
     },
     prerequisites = {"pm-electric-engine-unit", "pm-circuit-megassembler"},
     unit =
     {
-      count = 550,
+      count = 650,
       ingredients =
       {
         {"automation-science-pack", 1},
