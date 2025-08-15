@@ -2451,6 +2451,7 @@ data:extend({
     },
     vector_to_place_result = {0, 3.55},
     energy_usage = "500kW",
+    perceived_performance = {minimum = 1, maximum = 4.5},
     graphics_set =
     {
       animation =
@@ -9241,7 +9242,7 @@ fluid_boxes =
     type = "assembling-machine",
     name = "pm-circuit-megassembler-MK2",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler-MK2.png",
     minable = { mining_time = 0.85, result = "pm-circuit-megassembler" },
     max_health = 2250,
     collision_box = { { -3.4, -3.4 }, { 3.4, 3.4 } },
@@ -9270,7 +9271,7 @@ fluid_boxes =
       type = "fluid",
       effectivity = 1,
       burns_fluid = true,
-      fluid_usage_per_tick = 2 / 60,
+      fluid_usage_per_tick = 1 / 60,
       emissions_per_minute = {pollution = 1},
       fluid_box =
       {
@@ -9350,7 +9351,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-east.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler-MK2/circuit-megassembler-east.png",
               priority = "high",
               width = 448,
               height = 448,
@@ -9378,7 +9379,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-west.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler-MK2/circuit-megassembler-west.png",
               priority = "high",
               width = 448,
               height = 448,
@@ -9409,7 +9410,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-north-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler-MK2/circuit-megassembler-north-idle.png",
               priority = "high",
               width = 448,
               height = 448,
@@ -9438,7 +9439,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-south-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler-MK2/circuit-megassembler-south-idle.png",
               priority = "high",
               width = 448,
               height = 448,
@@ -9467,7 +9468,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-east-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler-MK2/circuit-megassembler-east-idle.png",
               priority = "high",
               width = 448,
               height = 448,
@@ -9496,7 +9497,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-west-idle.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler-MK2/circuit-megassembler-west-idle.png",
               priority = "high",
               width = 448,
               height = 448,
