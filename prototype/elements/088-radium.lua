@@ -117,7 +117,7 @@ data:extend({
         {
             PM.product("pm-barium-radium-carbonate", 1),
             PM.product_chance("pm-barium-radium-carbonate", 1, 0.33),
-            PM.product_range("pm-cobalt-catalyst", 2),
+            PM.product("pm-cobalt-catalyst", 2),
         }
     },
     {

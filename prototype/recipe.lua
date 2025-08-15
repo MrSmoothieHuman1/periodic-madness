@@ -4299,4 +4299,21 @@ data:extend({
       PM.product("pm-RTG-equipment", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-rhenium-platinum-catalyst",
+    energy_required = 3,
+    subgroup = "pm-catalysts",
+    order = "g",
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-rhenium-plate", 2),
+      PM.ingredient("pm-platinum-plate", 3),
+      PM.ingredient("pm-catalyst-container", 1)
+    },
+    results = {
+      PM.product("pm-rhenium-platinum-catalyst", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

@@ -192,8 +192,8 @@ data:extend({
         results = 
         {
             PM.product("pm-ammonium-tetrafluoroberyllate", 7.5, "fluid"),
-            PM.pe_chance("pm-palladium-catalyst", 2, 0.85),
-            PM.pr_chance("pm-catalyst-container", 2, 0.15)
+            PM.product_chance("pm-palladium-catalyst", 2, 0.85),
+            PM.product_chance("pm-catalyst-container", 2, 0.15)
         }
     },
     {

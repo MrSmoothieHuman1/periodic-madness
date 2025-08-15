@@ -238,8 +238,8 @@ data:extend({
         results = 
         {
             PM.product("pm-barium-nitrate", 5),
-            PM.product_chance("pm-palladium-catalyst", 2, 0.9, 1),
-            PM.product_chance("pm-catalyst-container", 2, 0.1, 1)
+            PM.catalyst_chance("pm-palladium-catalyst", 2, 0.9, 1),
+            PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 1)
         }
     },
     {

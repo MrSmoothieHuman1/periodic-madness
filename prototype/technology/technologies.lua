@@ -5179,7 +5179,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/rhenium-platinum-catalysts.png",
     effects = 
     {
-
+      PM.unlock_recipe("pm-rhenium-platinum-catalyst")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     research_trigger = 

@@ -610,7 +610,6 @@ data:extend({
     subgroup = "pm-catalysts",
     order = "ba",
     enabled = false,
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vanadium-oxide", 1),
@@ -627,7 +626,6 @@ data:extend({
     subgroup = "pm-catalysts",
     order = "ca",
     enabled = false,
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-palladium-plate", 4),
@@ -645,7 +643,6 @@ data:extend({
     subgroup = "pm-catalysts",
     order = "da",
     enabled = false,
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-cobalt-plate", 2),
@@ -663,7 +660,6 @@ data:extend({
     subgroup = "pm-catalysts",
     order = "fa",
     enabled = false,
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-yttrium-ore", 2),
@@ -681,7 +677,6 @@ data:extend({
     subgroup = "pm-catalysts",
     order = "ba",
     enabled = false,
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-nickel-plate", 2),
