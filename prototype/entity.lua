@@ -9254,7 +9254,7 @@ fluid_boxes =
     allowed_effects = PM.all_effects(),
     crafting_speed = 5,
     allowed_module_categories = {"pm-circuit-megassembler-module"},
-    effect_receiver = { base_effect = { productivity = 0.5 }},
+    effect_receiver = { base_effect = { productivity = 0.25 }},
     tile_buildability_rules = pm_placable_on_refined_concrete,
     custom_tooltip_fields =
     {
@@ -9294,7 +9294,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-north.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler-MK2/circuit-megassembler-north.png",
               priority = "high",
               width = 448,
               height = 448,
