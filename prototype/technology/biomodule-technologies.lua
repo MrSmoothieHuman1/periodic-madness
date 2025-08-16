@@ -48,7 +48,7 @@ data:extend({
       {
         {"pm-agility-bio-module", 1},
       },
-      time = 30
+      time = 45
     }
   },
   {
@@ -78,7 +78,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-agility-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade-2.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -94,14 +94,14 @@ data:extend({
       {
         {"pm-agility-bio-module", 1},
       },
-      time = 120
+      time = 80
     }
   },
   {
     type = "technology",
     name = "pm-bio-module-agility-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade-2.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -117,14 +117,14 @@ data:extend({
       {
         {"pm-agility-bio-module", 1},
       },
-      time = 240
+      time = 120
     }
   },
   {
     type = "technology",
     name = "pm-bio-module-agility-5",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade-3.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -147,7 +147,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-agility-6",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/agility-bio-upgrade-3.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -163,7 +163,7 @@ data:extend({
       {
         {"pm-agility-bio-module", 1},
       },
-      time = 360
+      time = 240
     }
   },
 
@@ -216,7 +216,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade-2.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -239,7 +239,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade-2.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -262,7 +262,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-5",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade-3.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
@@ -285,7 +285,7 @@ data:extend({
     type = "technology",
     name = "pm-bio-module-strength-6",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade.png",
+    icon = "__periodic-madness__/graphics/technology/strength-bio-upgrade-3.png",
     use_icon_overlay_constant = true,
     upgrade = true,
     effects =
