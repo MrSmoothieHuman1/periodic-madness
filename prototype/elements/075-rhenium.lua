@@ -101,6 +101,29 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "pm-acqua-molybdenum-porphyry-seperation",
+        enabled = false,
+        energy_required = 6,
+        category = "pm-crushing",
+        subgroup = "pm-rhenium-tm",
+        order = "ba",
+        main_product = "pm-rhenium-chunks",
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-molybdenum-porphyry-deposit", 2),
+            PM.ingredient("pm-rhenium-platinum-catalyst", 4)
+        },
+        results =
+        {
+            PM.product_chance("pm-rhenium-chunks", 3, 0.2),
+            PM.product_chance("pm-molybdenite-powder", 3, 0.54),
+            PM.product_chance("stone", 3, 0.46),
+            PM.product("pm-rhenium-platinum-catalyst", 4)
+        }
+    },
+    {
+        type = "recipe",
         name = "pm-rhenium-oxide",
         enabled = false,
         energy_required = 6.4,

@@ -5221,7 +5221,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-acqua-molybdenum-porphyry-seperation")
     },
     prerequisites = {"pm-rhenium-platinum-catalyst"},
     unit =
