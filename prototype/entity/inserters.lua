@@ -257,7 +257,7 @@ data:extend({
     {
         type = "inserter",
         name = "pm-sideserter",
-        icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/sideserter.png",
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = { mining_time = 0.15, result = "pm-sideserter" },
         max_health = 250,
@@ -339,7 +339,7 @@ data:extend({
       {
         type = "inserter",
         name = "pm-long-handed-sideserter",
-        icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/long-handed-sideserter.png",
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = { mining_time = 0.15, result = "pm-long-handed-sideserter" },
         max_health = 250,
@@ -421,7 +421,7 @@ data:extend({
           {
         type = "inserter",
         name = "pm-bulk-sideserter",
-        icon = "__periodic-madness__/graphics/icons/buildings/express-inserter.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/bulk-sideserter.png",
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = { mining_time = 0.15, result = "pm-bulk-sideserter" },
         max_health = 250,
