@@ -1646,15 +1646,15 @@ data:extend({
     order = "k",
     ingredients =
     {
-      PM.ingredient("pm-chloronated-solution", 6, "fluid"),
-      PM.ingredient("pm-vanadium-oxide-catalyst", 2)
+      PM.ingredient("pm-chloronated-solution", 12, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 1)
     },
     results =
     {
-      PM.product_range("pm-chloroform", 6, 8, "fluid"),
-      PM.product_range("pm-carbon-tetrachloride", 2, 6, "fluid"),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.75, 1),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 1)
+      PM.product_range("pm-chloroform", 7.5, 10, "fluid"),
+      PM.product_range("pm-carbon-tetrachloride", 3, 8, "fluid"),
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.85, 1),
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.15, 1)
     }
   },
   {

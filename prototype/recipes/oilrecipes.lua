@@ -996,8 +996,8 @@ data:extend({
       PM.product("pm-N-octane", 4.5 * 2, "fluid"),
       PM.product("pm-iso-octane", 5.5 * 2, "fluid"),
       PM.product("pm-2-3-3-trimethylpentane", 2.5 * 2, "fluid"),
-      PM.product_chance("pm-rhenium-platinum", 3, 0.85, 2),
-      PM.product_chance("pm-catalyst-container", 3, 0.15, 2)
+      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 2),
+      PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
     }
   },
 
