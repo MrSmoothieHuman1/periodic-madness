@@ -974,6 +974,32 @@ data:extend({
       PM.product("pm-vehicle-octane-fuel-canister", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-advanced-octane-processing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/octane-processing.png",
+    enabled = false,
+    energy_required = 10,
+    category = "oil-processing",
+    subgroup = "pm-octane-processing",
+    order = "a",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-butene-gas", 40, "fluid"),
+      PM.ingredient("pm-butane-gas", 40, "fluid"),
+      PM.ingredient("pm-rhenium-platinum-catalyst", 3)
+    },
+    results =
+    {
+      PM.product("pm-N-octane", 4.5 * 2, "fluid"),
+      PM.product("pm-iso-octane", 5.5 * 2, "fluid"),
+      PM.product("pm-2-3-3-trimethylpentane", 2.5 * 2, "fluid"),
+      PM.product_chance("pm-rhenium-platinum", 3, 0.85, 2),
+      PM.product_chance("pm-catalyst-container", 3, 0.15, 2)
+    }
+  },
 
   -- Oil Cracking/Reforming
 
