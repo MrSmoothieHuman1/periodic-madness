@@ -228,7 +228,7 @@ data:extend({
             PM.ingredient("pm-hydrogen-sulfide", 10, "fluid"),
             PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
             PM.catalyst_chance("pm-cobalt-catalyst", 1, 0.8, 1),
-            PM.catalyst_chance("pm-catalyst-container", 1, 0.8, 1)
+            PM.catalyst_chance("pm-catalyst-container", 1, 0.2, 1)
         }
     }
 })
