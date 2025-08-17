@@ -431,7 +431,7 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].burner =
   fuel_inventory_size = 1,
   burnt_inventory_size = 1,
 }
-data.raw["generator-equipment"]["fission-reactor-equipment"].power = "500kW"
+data.raw["generator-equipment"]["fission-reactor-equipment"].power = "750kW"
 data.raw["item"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["fission-reactor-equipment"].order = "c"
 data.raw["generator-equipment"]["fission-reactor-equipment"].shape =

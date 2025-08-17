@@ -5509,7 +5509,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 80
+      time = 120
     }
   },
   {
@@ -5536,7 +5536,7 @@ data:extend({
         {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
-      time = 80
+      time = 100
     },
   },
   {
@@ -5717,6 +5717,33 @@ data:extend({
         {"chemical-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 120
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-RTG-equipment",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/RTG-equipment.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-RTG-equipment")
+    },
+    prerequisites = {"pm-strontium-fuel-rods"},
+    unit =
+    {
+      count = 575,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
       time = 120
