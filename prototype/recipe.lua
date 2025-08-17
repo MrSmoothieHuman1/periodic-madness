@@ -450,26 +450,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-wood-strip-burning",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/wood-strip-burning.png",
-    enabled = false,
-    energy_required = 3,
-    category = "smelting",
-    subgroup = "pm-greenhousing-rnm",
-    order = "da",
-    ingredients =
-    {
-      PM.ingredient("pm-wood-strips", 10)
-    },
-    results =
-    {
-      PM.product("pm-coke", 5),
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-coal-burning",
+    name = "pm-coke",
     enabled = false,
     energy_required = 3,
     category = "pm-alloying",

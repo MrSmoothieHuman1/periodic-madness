@@ -283,6 +283,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+      PM.unlock_recipe("pm-coke"),
     },
     prerequisites = {"logistic-science-pack"},
     unit =
@@ -2216,6 +2217,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-arsenopyrite"),
+      PM.unlock_recipe("pm-arsenopyrite-seperation"),
       PM.unlock_recipe("pm-impure-arsenic"),
       PM.unlock_recipe("pm-arsenic-oxide"),
       PM.unlock_recipe("pm-arsine"),

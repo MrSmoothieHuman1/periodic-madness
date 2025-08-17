@@ -145,7 +145,7 @@ data:extend({
     emissions_multiplier = 2,
     ingredients =
     {
-      PM.ingredient("pm-advanced-air-filter", 1)
+      PM.ingredient("pm-advanced-carbon-dioxide-air-filter", 1)
     },
     results =
     {
@@ -193,7 +193,7 @@ data:extend({
     {
       PM.product("pm-carbon-dioxide-gas", 40, "fluid"),
       PM.product_chance("pm-carbon-monoxide", 25, 0.8, "fluid"),
-      PM.product_chance("pm-advanced-air-filter", 1, 0.95)
+      PM.product_chance("pm-advanced-carbon-dioxide-air-filter", 1, 0.95)
     }
   },
   {
@@ -238,7 +238,7 @@ data:extend({
     {
       PM.product("pm-carbon-dioxide-gas", 40, "fluid"),
       PM.product_chance("pm-carbon-monoxide", 25, 0.8, "fluid"),
-      PM.product_chance("pm-advanced-air-filter", 1, 0.99),
+      PM.product_chance("pm-advanced-carbon-dioxide-air-filter", 1, 0.99),
       PM.product_range("pm-sodium-bicarbonate", 2, 5)
     }
   },
