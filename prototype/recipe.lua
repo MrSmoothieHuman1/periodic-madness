@@ -2068,7 +2068,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-vacuum-tube", 2),
-      PM.ingredient("processing-unit", 3),
+      PM.ingredient("advanced-circuit", 4),
       PM.ingredient("pm-cadnium-plate", 6),
       PM.ingredient("pm-corrosion-resistant-tubing", 8),
       PM.ingredient("pm-indium-wire", 6)

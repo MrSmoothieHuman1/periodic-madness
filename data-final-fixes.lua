@@ -128,16 +128,57 @@ for _, technology in pairs(data.raw["technology"]) do
   end
 end
 end
-
-for _, recipe in pairs(data.raw.recipe) do
-    recipe.maximum_productivity = 99999999 --insane number, if anyone reaches it just give them a medal
-end
-
 data.raw["technology"]["military-science-pack"].hidden = true
 data.raw["recipe"]["military-science-pack"].hidden = true
 data.raw["recipe"]["military-science-pack"].hidden_in_factoriopedia = true
 data.raw["tool"]["military-science-pack"].hidden = true
 data.raw["tool"]["military-science-pack"].hidden_in_factoriopedia = true
+
+--removed production/utility science
+for _, technology in pairs(data.raw["technology"]) do
+	local unit = technology.unit
+	if unit then
+	  local bad_indexes, bad_count = {}, 0
+	  for index, ingredient in pairs(unit.ingredients) do
+	    if ingredient[1] == "utility-science-pack" then
+	      bad_count = 1 + bad_count
+	      bad_indexes[bad_count] = index
+	    end
+  end
+  for i = bad_count, 1, -1 do
+    table.remove(unit.ingredients, bad_indexes[i])
+  end
+end
+end
+for _, technology in pairs(data.raw["technology"]) do
+	local unit = technology.unit
+	if unit then
+	  local bad_indexes, bad_count = {}, 0
+	  for index, ingredient in pairs(unit.ingredients) do
+	    if ingredient[1] == "production-science-pack" then
+	      bad_count = 1 + bad_count
+	      bad_indexes[bad_count] = index
+	    end
+  end
+  for i = bad_count, 1, -1 do
+    table.remove(unit.ingredients, bad_indexes[i])
+  end
+end
+end
+data.raw["technology"]["utility-science-pack"].hidden = true
+data.raw["recipe"]["utility-science-pack"].hidden = true
+data.raw["recipe"]["utility-science-pack"].hidden_in_factoriopedia = true
+data.raw["tool"]["utility-science-pack"].hidden = true
+data.raw["tool"]["utility-science-pack"].hidden_in_factoriopedia = true
+data.raw["technology"]["production-science-pack"].hidden = true
+data.raw["recipe"]["production-science-pack"].hidden = true
+data.raw["recipe"]["production-science-pack"].hidden_in_factoriopedia = true
+data.raw["tool"]["production-science-pack"].hidden = true
+data.raw["tool"]["production-science-pack"].hidden_in_factoriopedia = true
+
+for _, recipe in pairs(data.raw.recipe) do
+    recipe.maximum_productivity = 99999999 --insane number, if anyone reaches it just give them a medal
+end
 
 for _, entity_type in pairs{
   "beacon",
