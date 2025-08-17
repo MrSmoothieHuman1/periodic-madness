@@ -4381,7 +4381,8 @@ data:extend({
       PM.unlock_recipe("pm-barium-radium-carbonate-seperation"),
       PM.unlock_recipe("pm-radium-chloride"),
       PM.unlock_recipe("pm-radium-ore"),
-      PM.unlock_recipe("pm-sulfur-dichloride-seperation")
+      PM.unlock_recipe("pm-sulfur-dichloride-seperation"),
+      PM.unlock_recipe("pm-sulfur-dichloride-to-hydrogen-sulfide")
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},
     unit =

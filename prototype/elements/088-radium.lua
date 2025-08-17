@@ -83,26 +83,27 @@ data:extend({
         type = "recipe",
         name = "pm-barium-radium-sulfate",
         enabled = false,
-        energy_required = 20,
+        energy_required = 10,
         category = "pm-acids",
         subgroup = "pm-radium-aem",
         order = "b",
+        allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-alkaline-earth-metals-ore", 20),
+            PM.ingredient("pm-alkaline-earth-metals-ore", 16),
             PM.ingredient("pm-chromic-acid", 20, "fluid"),
             PM.ingredient("pm-sodium-hydroxide", 10, "fluid")
         },
         results =
         {
-            PM.product("pm-barium-radium-sulfate", 4)
+            PM.product("pm-barium-radium-sulfate", 6)
         }
     },
     {
         type = "recipe",
         name = "pm-barium-radium-carbonate",
         enabled = false,
-        energy_required = 10,
+        energy_required = 6,
         category = "chemistry",
         subgroup = "pm-radium-aem",
         order = "c",
@@ -116,7 +117,7 @@ data:extend({
         results =
         {
             PM.product("pm-barium-radium-carbonate", 1),
-            PM.product_chance("pm-barium-radium-carbonate", 1, 0.33),
+            PM.product_chance("pm-barium-radium-carbonate", 1, 0.66),
             PM.product("pm-cobalt-catalyst", 2),
         }
     },
@@ -124,11 +125,12 @@ data:extend({
         type = "recipe",
         name = "pm-barium-radium-carbonate-seperation",
         enabled = false,
-        energy_required = 5,
+        energy_required = 3.5,
         category = "pm-mixing",
         subgroup = "pm-radium-aem",
         order = "d",
         main_product = "pm-radium-sulfate",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-barium-radium-carbonate", 2),
@@ -157,7 +159,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-radium-chloride", 1, 2),
+            PM.product("pm-radium-chloride", 2),
             PM.product_range("pm-sulfur-dichloride", 0, 4, "fluid")
         }
     },
@@ -170,6 +172,7 @@ data:extend({
         subgroup = "pm-radium-aem",
         order = "f",
         main_product = "pm-radium-ore",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-radium-chloride", 2),
@@ -177,7 +180,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_chance("pm-radium-ore", 1, 0.5),
+            PM.product_chance("pm-radium-ore", 2, 0.5),
             PM.product_chance("pm-radium-sulfate", 1, 0.5),
             PM.product("pm-hot-coolant", 1, "fluid"),
         }
@@ -185,12 +188,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-sulfur-dichloride-seperation",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/sulfur-dichloride-seperation.png",
         enabled = false,
         energy_required = 2,
         category = "pm-mixing",
         subgroup = "pm-radium-aem",
         order = "g",
-        main_product = "pm-sulfur-dioxide",
         ingredients =
         {
             PM.ingredient("pm-sulfur-dichloride", 10, "fluid"),
@@ -200,6 +204,31 @@ data:extend({
         {
             PM.product_range("pm-sulfur-dioxide", 0, 5, "fluid"),
             PM.product_range("pm-chlorine", 2, 8, "fluid"),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-sulfur-dichloride-to-hydrogen-sulfide",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/sulfur-dichloride-to-hydrogen-sulfide.png",
+        enabled = false,
+        energy_required = 2,
+        category = "pm-mixing",
+        subgroup = "pm-radium-aem",
+        order = "h",
+        ingredients =
+        {
+            PM.ingredient("pm-sulfur-dichloride", 10, "fluid"),
+            PM.ingredient("pm-hydrogen-gas", 30, "fluid"),
+            PM.ingredient("steam", 25, "fluid"),
+            PM.ingredient("pm-cobalt-catalyst", 1)
+        },
+        results =
+        {
+            PM.ingredient("pm-hydrogen-sulfide", 10, "fluid"),
+            PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
+            PM.catalyst_chance("pm-cobalt-catalyst", 1, 0.8, 1),
+            PM.catalyst_chance("pm-catalyst-container", 1, 0.8, 1)
         }
     }
 })
