@@ -203,6 +203,9 @@ for _, entity_type in pairs{
 	if data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"] then
 		data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"].allowed_module_categories = {"pm-circuit-megassembler-module-MK2"}
 	end
+	if data.raw["beacon"]["pm-coil-heater"] then
+		data.raw["beacon"]["pm-coil-heater"].allowed_module_categories = {"pm-heating-coils"}
+	end
 	end
 end
 
