@@ -9620,15 +9620,16 @@ fluid_boxes =
 }--[[@as data.AssemblingMachinePrototype]],
 {
   type = "assembling-machine",
-  name = "pm-coke-oven-1",
-  icon = "__periodic-madness__/graphics/icons/buildings/washing-plant-3.png",
+  name = "pm-stone-coke-oven",
+  icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 0.45, result = "pm-washing-plant-3" },
+  minable = { mining_time = 0.33, result = "pm-stone-coke-oven" },
   max_health = 550,
-  corpse = "pm-washing-plant-2",
+  corpse = "pm-stone-coke-oven",
   dying_explosion = "assembling-machine-1-explosion",
   fast_replaceable_group = "pm-coke-ovens",
+  next_upgrade = "pm-stone-coke-oven",
   resistances =
   {
     {
@@ -9652,7 +9653,7 @@ fluid_boxes =
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/coke-oven-1/coke-oven.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven/coke-oven.png",
         priority = "high",
         width = 192,
         height = 211,
@@ -9675,7 +9676,7 @@ fluid_boxes =
       fadeout = true,
       animation =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/coke-oven-1/coke-oven-on.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven/coke-oven-on.png",
         width = 192,
         height = 211,
         frame_count = 24,
@@ -9688,7 +9689,7 @@ fluid_boxes =
 },
   crafting_categories = { "pm-coking" },
   crafting_speed = 0.3,
-  energy_usage = "120kW",
+  energy_usage = "150kW",
   energy_source =
   {
     type = "burner",
@@ -9696,6 +9697,99 @@ fluid_boxes =
     fuel_inventory_size = 1,
     burnt_inventory_size = 1,
     emissions_per_minute = {pollution = 4},
+  },
+  working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/steel-furnace.ogg",
+          volume = 0.5
+        }
+      },
+    audible_distance_modifier = 0.5,
+    fade_in_ticks = 4,
+    fade_out_ticks = 20
+  },
+}--[[@as data.AssemblingMachinePrototype]],
+{
+  type = "assembling-machine",
+  name = "pm-stone-coke-oven-2",
+  icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-2.png",
+  icon_size = 64,
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 0.45, result = "pm-stone-coke-oven-2" },
+  max_health = 750,
+  corpse = "pm-stone-coke-oven-2",
+  dying_explosion = "assembling-machine-1-explosion",
+  fast_replaceable_group = "pm-coke-ovens",
+  resistances =
+  {
+    {
+      type = "impact",
+      percent = 65
+    },
+    {
+      type = "fire",
+      percent = 75
+    }
+  },
+  collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
+  selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+  alert_icon_shift = util.by_pixel(0, -12),
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["assembling-machine"],
+  graphics_set =
+{
+  animation =
+  {
+    layers =
+    {
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-2/coke-oven.png",
+        priority = "high",
+        width = 192,
+        height = 211,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+        priority = "high",
+        width = 226,
+        height = 214,
+        draw_as_shadow = true,
+        shift = util.by_pixel(40 - 10, -4),
+        scale = 0.5
+      }
+    }
+  },
+  working_visualisations =
+  {
+    {
+      fadeout = true,
+      animation =
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven/coke-oven-on.png",
+        width = 192,
+        height = 211,
+        frame_count = 24,
+        line_length = 6,
+        scale = 0.5,
+        animation_speed = 0.45
+      }
+    }
+  }
+},
+  crafting_categories = { "pm-coking" },
+  crafting_speed = 0.6,
+  energy_usage = "115kW",
+  energy_source =
+  {
+    type = "burner",
+    fuel_categories = {"chemical", "pm-fuel-canisters"},
+    fuel_inventory_size = 1,
+    burnt_inventory_size = 1,
+    emissions_per_minute = {pollution = 3},
   },
   working_sound =
     {

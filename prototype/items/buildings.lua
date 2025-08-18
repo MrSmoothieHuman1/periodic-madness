@@ -903,6 +903,22 @@ data:extend({
     place_result = "pm-circuit-megassembler-MK2",
     stack_size = 10
   },
+  {
+    type = "item",
+    name = "pm-stone-coke-oven",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven.png",
+    place_result = "pm-stone-coke-oven",
+    stack_size = 75
+  },
+  {
+    type = "item",
+    name = "pm-stone-coke-oven-2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-2.png",
+    place_result = "pm-stone-coke-oven-2",
+    stack_size = 75
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

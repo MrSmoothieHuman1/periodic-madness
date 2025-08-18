@@ -1649,6 +1649,38 @@ data:extend({
       PM.product("pm-circuit-megassembler-MK2", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-stone-coke-oven",
+    enabled = false,
+    energy_required = 0.5,
+    ingredients =
+    {
+      PM.ingredient("stone", 5),
+      PM.ingredient("pm-basic-panelling", 6),
+      PM.ingredient("pm-basic-framing", 4)
+    },
+    results = 
+    {
+      PM.product("pm-stone-coke-oven", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-stone-coke-oven-2",
+    enabled = false,
+    energy_required = 0.5,
+    ingredients =
+    {
+      PM.ingredient("pm-stone-coke-oven", 1),
+      PM.ingredient("pm-lightweight-panelling", 6),
+      PM.ingredient("pm-heavyweight-framing", 4)
+    },
+    results = 
+    {
+      PM.product("pm-stone-coke-oven-2", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

@@ -281,8 +281,9 @@ data:extend({
     name = "pm-coke-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
+      PM.unlock_recipe("pm-stone-coke-oven"),
       PM.unlock_recipe("pm-coke"),
       PM.unlock_recipe("pm-wood-strip-coke")
     },
