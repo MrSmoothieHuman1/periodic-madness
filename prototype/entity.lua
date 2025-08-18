@@ -9696,7 +9696,7 @@ fluid_boxes =
     fuel_categories = {"chemical", "pm-fuel-canisters"},
     fuel_inventory_size = 1,
     burnt_inventory_size = 1,
-    emissions_per_minute = {pollution = 4},
+    emissions_per_minute = {pollution = 5},
   },
   working_sound =
     {
@@ -9789,7 +9789,7 @@ fluid_boxes =
     fuel_categories = {"chemical", "pm-fuel-canisters"},
     fuel_inventory_size = 1,
     burnt_inventory_size = 1,
-    emissions_per_minute = {pollution = 3},
+    emissions_per_minute = {pollution = 4},
   },
   working_sound =
     {

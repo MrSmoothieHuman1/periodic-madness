@@ -4315,4 +4315,40 @@ data:extend({
       PM.product("pm-coke", 4)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-advanced-coke",
+    --enabled = false,
+    energy_required = 2.4,
+    category = "pm-coking",
+    emissions_multiplier = 0.75,
+    main_product = "pm-coke",
+    ingredients =
+    {
+      PM.ingredient("coal", 8)
+    },
+    results =
+    {
+      PM.product("pm-coke", 4),
+      PM.product("pm-coal-tar", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-coal-tar-seperation",
+    --enabled = false,
+    energy_reqiured = 6,
+    category = "pm-washing",
+    main_product = "pm-coke",
+    ingredients =
+    {
+      PM.ingredient("pm-coal-tar", 2),
+      PM.ingredient("pm-acidic-water", 10, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-coke", 1),
+      PM.product_chance("sulfur", 1, 0.75)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
