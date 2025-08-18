@@ -453,16 +453,16 @@ data:extend({
     name = "pm-coke",
     enabled = false,
     energy_required = 3,
-    category = "pm-alloying",
+    category = "pm-coking",
     subgroup = "pm-greenhousing-rnm",
     order = "db",
     ingredients =
     {
-      PM.ingredient("coal", 9),
+      PM.ingredient("coal", 8), --2:1 ratio for the first recipe 
     },
     results =
     {
-      PM.product("pm-coke", 6)
+      PM.product("pm-coke", 4)
     }
   },
   {
@@ -4295,6 +4295,24 @@ data:extend({
     },
     results = {
       PM.product("pm-rhenium-platinum-catalyst", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-wood-strip-coke",
+    enabled = false,
+    energy_required = 3,
+    category = "pm-coking",
+    subgroup = "pm-greenhousing-rnm",
+    order = "db",
+    ingredients =
+    {
+      PM.ingredient("coal", 6),
+      PM.ingredient("pm-wood-strips", 5)
+    },
+    results =
+    {
+      PM.product("pm-coke", 4)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

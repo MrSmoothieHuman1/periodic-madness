@@ -284,6 +284,7 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-coke"),
+      PM.unlock_recipe("pm-wood-strip-coke")
     },
     prerequisites = {"logistic-science-pack"},
     unit =
@@ -330,8 +331,6 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-wood-strips"),
-      PM.unlock_recipe("pm-wood-strip-burning"),
-      PM.unlock_recipe("pm-coal-burning"),
       PM.unlock_recipe("pm-basic-basic-wood-growth")
     },
     prerequisites = {"logistic-science-pack"},
