@@ -9634,11 +9634,15 @@ fluid_boxes =
     {
       type = "impact",
       percent = 65
+    },
+    {
+      type = "fire",
+      percent = 75
     }
   },
   collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
   selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
-  alert_icon_shift = util.by_pixel(-3, -12),
+  alert_icon_shift = util.by_pixel(0, -12),
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
   graphics_set = 
@@ -9648,11 +9652,10 @@ fluid_boxes =
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-3/washing-plant.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/coke-oven-1/coke-oven.png",
         priority = "high",
-        width = 214,
-        height = 226,
-        shift = util.by_pixel(0, -4),
+        width = 192,
+        height = 211,
         scale = 0.5
       },
       {
@@ -9663,6 +9666,22 @@ fluid_boxes =
         draw_as_shadow = true,
         shift = util.by_pixel(40 - 10, -4),
         scale = 0.5
+      }
+    }
+  },
+  working_visualisations =
+  {
+    {
+      fadeout = true,
+      animation =
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/coke-oven-1/coke-oven-on.png",
+        width = 192,
+        height = 211,
+        frame_count = 24,
+        line_length = 6,
+        scale = 0.5,
+        animation_speed = 0.45
       }
     }
   }
