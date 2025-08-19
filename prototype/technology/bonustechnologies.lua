@@ -1916,6 +1916,8 @@ data.raw["technology"]["laser-shooting-speed-5"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+
+--MARK:V.Laser damage
 data.raw["technology"]["laser-weapons-damage-1"].prerequisites = {"laser"}
 data.raw["technology"]["laser-weapons-damage-1"].unit.ingredients =
 {
