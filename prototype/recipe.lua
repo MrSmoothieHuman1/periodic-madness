@@ -4325,7 +4325,7 @@ data:extend({
     main_product = "pm-coke",
     ingredients =
     {
-      PM.ingredient("coal", 8)
+      PM.ingredient("coal", 9) --2:1 ratio, but turn into 1.5:1 with coal tar
     },
     results =
     {
@@ -4337,7 +4337,7 @@ data:extend({
     type = "recipe",
     name = "pm-coal-tar-seperation",
     --enabled = false,
-    energy_reqiured = 6,
+    energy_required = 3,
     category = "pm-washing",
     main_product = "pm-coke",
     ingredients =
@@ -4347,8 +4347,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-coke", 1),
-      PM.product_chance("sulfur", 1, 0.75)
+      PM.product_chance("pm-coke", 2),
+      PM.product_chance("sulfur", 1, 0.66)
     }
   }
 } --[[@as data.RecipePrototype[] ]])
