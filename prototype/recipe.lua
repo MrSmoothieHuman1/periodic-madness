@@ -4318,7 +4318,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-coke",
-    --enabled = false,
+    enabled = false,
     energy_required = 2.4,
     category = "pm-coking",
     emissions_multiplier = 0.75,
@@ -4336,7 +4336,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-coal-tar-seperation",
-    --enabled = false,
+    enabled = false,
     energy_required = 3,
     category = "pm-washing",
     main_product = "pm-coke",

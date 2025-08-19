@@ -253,52 +253,6 @@ data:extend({
       entity = "pm-evaporator"
     }
   },
-  {
-    type = "technology",
-    name = "pm-advanced-sand-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-sand-processing.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-sand"),
-      PM.unlock_recipe("pm-gravel-crushing"),
-      PM.unlock_recipe("pm-glass-pane")
-    },
-    prerequisites = {"pm-crushing", "automation-2"},
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-      },
-      time = 30
-    }
-  },
-  {
-    type = "technology",
-    name = "pm-coke-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/coke-processing.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-stone-coke-oven"),
-      PM.unlock_recipe("pm-coke"),
-      PM.unlock_recipe("pm-wood-strip-coke")
-    },
-    prerequisites = {"logistic-science-pack"},
-    unit =
-    {
-      count = 50,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-      },
-      time = 15
-    }
-  },
 
 --MARK: ATM science
   {
@@ -569,6 +523,52 @@ data:extend({
         {"logistic-science-pack", 1},
       },
       time = 30
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-sand-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/advanced-sand-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-sand"),
+      PM.unlock_recipe("pm-gravel-crushing"),
+      PM.unlock_recipe("pm-glass-pane")
+    },
+    prerequisites = {"pm-crushing", "automation-2"},
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+      },
+      time = 30
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-coke-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/coke-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-stone-coke-oven"),
+      PM.unlock_recipe("pm-coke"),
+      PM.unlock_recipe("pm-wood-strip-coke")
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+      },
+      time = 15
     }
   },
 
@@ -1875,6 +1875,30 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
       },
       time = 45
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-coke-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/advanced-coke-processing.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-stone-coke-oven-2"),
+      PM.unlock_recipe("pm-advanced-coke"),
+      PM.unlock_recipe("pm-coal-tar-seperation")
+    },
+    prerequisites = {"pm-multimetal-multiproperty"},
+    unit = 
+    {
+      count = 100,
+      ingredients = 
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      },
+      time = 30
     }
   },
 

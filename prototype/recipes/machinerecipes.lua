@@ -1669,12 +1669,12 @@ data:extend({
     type = "recipe",
     name = "pm-stone-coke-oven-2",
     enabled = false,
-    energy_required = 0.5,
+    energy_required = 1,
     ingredients =
     {
       PM.ingredient("pm-stone-coke-oven", 1),
       PM.ingredient("pm-lightweight-panelling", 6),
-      PM.ingredient("pm-heavyweight-framing", 4)
+      PM.ingredient("electronic-circuit", 2)
     },
     results = 
     {
