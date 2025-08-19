@@ -9660,12 +9660,12 @@ fluid_boxes =
         scale = 0.5
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven/coke-oven-shadow.png",
         priority = "high",
-        width = 226,
-        height = 214,
+        width = 192,
+        height = 211,
         draw_as_shadow = true,
-        shift = util.by_pixel(40 - 10, -4),
+        shift = util.by_pixel(48, 7),
         scale = 0.5
       }
     }
@@ -9753,7 +9753,7 @@ fluid_boxes =
         scale = 0.5
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven/coke-oven-shadow.png",
         priority = "high",
         width = 226,
         height = 214,
@@ -9769,7 +9769,7 @@ fluid_boxes =
       fadeout = true,
       animation =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven/coke-oven-on.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-2/coke-oven-on.png",
         width = 192,
         height = 211,
         frame_count = 24,
