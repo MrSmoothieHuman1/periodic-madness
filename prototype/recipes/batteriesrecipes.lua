@@ -389,7 +389,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-broken-vanadium-redox-battery", 2),
+      PM.ingredient("pm-broken-lithium-sulfur-battery", 2),
       PM.ingredient("pm-lithium-ore", 6),
       PM.ingredient("pm-ethylene-carbonate", 20, "fluid")
     },
