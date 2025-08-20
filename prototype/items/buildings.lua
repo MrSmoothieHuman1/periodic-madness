@@ -923,7 +923,7 @@ data:extend({
     type = "item",
     name = "pm-stone-coke-oven-3",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-2.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-3.png",
     place_result = "pm-stone-coke-oven-3",
     stack_size = 75
   },

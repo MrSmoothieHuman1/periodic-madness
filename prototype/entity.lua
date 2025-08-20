@@ -9808,10 +9808,10 @@ fluid_boxes =
 {
   type = "assembling-machine",
   name = "pm-stone-coke-oven-3",
-  icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-2.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-3.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 0.5, result = "pm-stone-coke-oven-2" },
+  minable = { mining_time = 0.5, result = "pm-stone-coke-oven-3" },
   max_health = 950,
   corpse = "pm-stone-coke-oven-3",
   dying_explosion = "assembling-machine-1-explosion",

@@ -1681,6 +1681,23 @@ data:extend({
       PM.product("pm-stone-coke-oven-2", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-stone-coke-oven-3",
+    enabled = false,
+    energy_required = 2,
+    ingredients = 
+    {
+      PM.ingredient("pm-stone-coke-oven-2", 1),
+      PM.ingredient("pm-fluid-circuit", 2),
+      PM.ingredient("pm-molten-framing", 8),
+      PM.ingredient("pm-heavyweight-framing", 6)
+    },
+    results =
+    {
+      PM.product("pm-stone-coke-oven-3", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
