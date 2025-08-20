@@ -5154,6 +5154,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-trace-dubnium"),
+      PM.unlock_recipe("pm-usable-dubnium")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =

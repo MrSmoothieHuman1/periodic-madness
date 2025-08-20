@@ -884,6 +884,18 @@ data:extend({
     group = "pm-transition-metals",
     order = "zc"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-technectium-tm",
+    group = "pm-transition-metals",
+    order = "zd"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-dubnium-tm",
+    group = "pm-transition-metals",
+    order = "ze"
+  },
 
   --MARK: Post Transition
   {

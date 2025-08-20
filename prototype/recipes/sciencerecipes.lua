@@ -520,9 +520,9 @@ data:extend({
         PM.ingredient("processing-unit", 4),
         PM.ingredient("pm-polyethylene-plastic", 10),
         PM.ingredient("pm-glass-fibers", 8),
-        PM.ingredient("pm-francium-glass-ampule", 5)
+        PM.ingredient("pm-francium-glass-ampule", 5),
         --PM.ingredient("pm-technectium-ore", 3),
-        --PM.ingredient("pm-dubnium-ore", 3),
+        PM.ingredient("pm-usable-dubnium", 3),
     },
     enabled = false,
     results =
