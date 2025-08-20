@@ -206,6 +206,9 @@ for _, entity_type in pairs{
 	if data.raw["beacon"]["pm-coil-heater"] then
 		data.raw["beacon"]["pm-coil-heater"].allowed_module_categories = {"pm-heating-coils"}
 	end
+	if data.raw["assembling-machine"]["pm-electric-coke-oven"] then
+		data.raw["assembling-machine"]["pm-electric-coke-oven"].allowed_module_categories = {"pm-heating-coils"}
+	end
 	end
 end
 

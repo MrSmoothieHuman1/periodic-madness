@@ -9898,6 +9898,100 @@ fluid_boxes =
     fade_out_ticks = 20
   },
 }--[[@as data.AssemblingMachinePrototype]],
+{
+  type = "assembling-machine",
+  name = "pm-electric-coke-oven",
+  icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-2.png",
+  icon_size = 64,
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 0.5, result = "pm-stone-coke-oven-2" },
+  max_health = 800,
+  corpse = "pm-electric-coke-oven",
+  dying_explosion = "assembling-machine-1-explosion",
+  fast_replaceable_group = "pm-coke-ovens",
+  resistances =
+  {
+    {
+      type = "impact",
+      percent = 65
+    },
+    {
+      type = "fire",
+      percent = 75
+    }
+  },
+  collision_box = { { -1.85, -1.85 }, { 1.85, 1.85 } },
+  selection_box = { { -2, -2 }, { 2, 2 } },
+  alert_icon_shift = util.by_pixel(0, -12),
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["assembling-machine"],
+  graphics_set =
+{
+  animation =
+  {
+    layers =
+    {
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-3/coke-oven-3.png",
+        priority = "high",
+        width = 192,
+        height = 211,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-3/coke-oven-3-shadow.png",
+        priority = "high",
+        width = 192,
+        height = 211,
+        draw_as_shadow = true,
+        shift = util.by_pixel(48, 7),
+        scale = 0.5
+      }
+    }
+  },
+  working_visualisations =
+  {
+    {
+      fadeout = true,
+      animation =
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-2/coke-oven-2-on.png",
+        width = 192,
+        height = 211,
+        frame_count = 24,
+        line_length = 6,
+        scale = 0.5,
+        animation_speed = 0.45
+      }
+    }
+  }
+},
+  crafting_categories = { "pm-coking", "pm-coking-with-fluid" },
+  allowed_effects = PM.all_effects(),
+  module_slots = 4,
+  allowed_module_categories = {"pm-heating-coils"},
+  crafting_speed = 1,
+  energy_usage = "175kW",
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = {pollution = 3},
+  },
+  working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/steel-furnace.ogg",
+          volume = 0.5
+        }
+      },
+    audible_distance_modifier = 0.5,
+    fade_in_ticks = 4,
+    fade_out_ticks = 20
+  },
+}--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
