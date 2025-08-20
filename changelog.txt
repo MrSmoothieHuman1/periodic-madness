@@ -24,6 +24,7 @@ Date: 2025-12-07
     - Added new tech icons for different tiers in the bio-module technologies.
     - Added even more advanced recipes for thing that take lubricant, for light lubricant.
     - Added RTG equipment, unlocked at AEM science, which works as an infinite power source in your armour - however it is bigger and less efficient then other types of equipment.
+    - Reworked the coke system entirely, you now unlock coke at late orange science and is crafted in stone coke ovens. You unlock better buildings and better coke production throughout yellow and PTM science.
 
   Changes:
     - Slightly nerfed research productivity.
@@ -43,6 +44,8 @@ Date: 2025-12-07
     - Increased the stack size of all billets from 100 to 500.
     - Changed francium PTx86 enrichment to always give 11 as an output, instead of a chance between 10-11.
     - Changed CRT framing to take advanced circuits, rather then processing units.
+    - Changed polonium-210 recipe to be in chemical plant, instead of assembler.
+    - Lowered crafting times of polonium-210 and bismuth-210.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.

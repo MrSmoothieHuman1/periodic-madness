@@ -46,7 +46,7 @@ data:extend({
     type = "recipe",
     name = "pm-bismuth-210",
     enabled = false,
-    energy_required = 60,
+    energy_required = 45,
     category = "pm-cyclotroning",
     subgroup = "pm-polonium-ptm",
     main_product = "pm-bismuth-210",
@@ -67,8 +67,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-210-decay.png",
     enabled = false,
-    energy_required = 45,
-    category = "advanced-crafting",
+    energy_required = 30,
+    category = "chemistry",
     subgroup = "pm-polonium-ptm",
     order = "b",
     allow_productivity = true,
@@ -78,7 +78,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-polonium-210", 2, 4, 0.75),
+      PM.product_range_chance("pm-polonium-210", 2, 4, 0.8),
     }
   },
   {
@@ -118,7 +118,7 @@ data:extend({
       PM.product_range("pm-empty-reactor-cell", 3, 5),
       PM.product_range("pm-lead-ore", 1, 5),
       PM.product_range("pm-helium-gas", 2, 5, "fluid"),
-      PM.product_chance("pm-bismuth-210", 4, 0.7)
+      PM.product_chance("pm-bismuth-210", 4, 0.75)
     }
   },
   {
