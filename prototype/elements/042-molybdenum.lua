@@ -163,4 +163,47 @@ data:extend({
       PM.product("pm-molybdenite", 8),
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-molybdenite-oxide",
+    enabled = false,
+    energy_required = 12,
+    category = "pm-moltening",
+    subgroup = "pm-molybdenum-tm",
+    order = "d",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molybdenite", 8),
+      PM.ingredient("pm-oxygen-gas", 28, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-molybdenite-oxide", 8),
+      PM.product("pm-sulfur-dioxide", 16, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ammonium-molybdate",
+    enabled = false,
+    energy_required = 8,
+    category = "chemistry",
+    subgroup = "pm-molybdenum-tm",
+    order = "e",
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-molybdenite-oxide", 4),
+      PM.ingredient("pm-ammonia", 6, "fluid"),
+      PM.ingredient("water", 20, "fluid"),
+      PM.ingredient("pm-palladium-catalyst", 3)
+    },
+    results = 
+    {
+      PM.product_chance("pm-palladium-catalyst", 3, 0.75),
+      PM.product_chance("pm-catalyst-container", 3, 0.25),
+      PM.product("pm-ammonium-molybdate", )
+    }
+  }
 })
