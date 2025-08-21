@@ -45,7 +45,7 @@ Date: 2025-12-07
     - Changed francium PTx86 enrichment to always give 11 as an output, instead of a chance between 10-11.
     - Changed CRT framing to take advanced circuits, rather then processing units.
     - Changed polonium-210 recipe to be in chemical plant, instead of assembler.
-    - Lowered crafting times of polonium-210 and bismuth-210.
+    - Took a sledgehammer to the recipes that make polonium-210, to make their ratios actually usable by anything that isnt fuel cells.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.

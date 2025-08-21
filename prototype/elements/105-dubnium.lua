@@ -22,21 +22,21 @@ data:extend({
         type = "recipe",
         name = "pm-trace-dubnium",
         enabled = false,
-        energy_required = 50,
+        energy_required = 40,
         category = "pm-cyclotroning",
         subgroup = "pm-dubnium-tm",
         order = "a",
         main_product = "pm-trace-dubnium",
         ingredients =
         {
-            PM.ingredient("pm-polonium-210", 20),
-            PM.ingredient("iron-plate", 50)
+            PM.ingredient("pm-polonium-210", 5),
+            PM.ingredient("iron-plate", 20)
         },
         results =
         {
-            PM.product_chance("pm-polonium-210", 20, 0.33),
-            PM.product_chance("iron-plate", 50, 0.33),
-            PM.product_chance("pm-trace-dubnium", 20, 0.34)
+            PM.product_chance("pm-polonium-210", 5, 0.33),
+            PM.product_chance("iron-plate", 20, 0.33),
+            PM.product_chance("pm-trace-dubnium", 5, 0.34)
         }
     },
     {

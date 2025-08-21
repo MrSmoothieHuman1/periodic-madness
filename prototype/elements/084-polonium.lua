@@ -46,7 +46,7 @@ data:extend({
     type = "recipe",
     name = "pm-bismuth-210",
     enabled = false,
-    energy_required = 45,
+    energy_required = 10,
     category = "pm-cyclotroning",
     subgroup = "pm-polonium-ptm",
     main_product = "pm-bismuth-210",
@@ -57,8 +57,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-bismuth-ore", 8, 14, 0.8),
-      PM.product_range_chance("pm-bismuth-210", 2, 10, 0.6)
+      PM.product_range_chance("pm-bismuth-ore", 4, 15, 0.25),
+      PM.product_range_chance("pm-bismuth-210", 6, 15, 0.75)
     }
   },
   {
@@ -67,7 +67,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-210-decay.png",
     enabled = false,
-    energy_required = 30,
+    energy_required = 15,
     category = "chemistry",
     subgroup = "pm-polonium-ptm",
     order = "b",
@@ -78,7 +78,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-polonium-210", 2, 4, 0.8),
+      PM.product_range("pm-polonium-210", 3, 4),
     }
   },
   {
@@ -141,7 +141,7 @@ data:extend({
     results = 
     {
       PM.catalyst("pm-polonium-210", 22, 20),
-      PM.product_range_chance("pm-bismuth-210", 1, 4, 0.85),
+      PM.product_range_chance("pm-bismuth-210", 1, 2, 0.85),
       PM.catalyst("pm-trace-astatine-211", 1, 1)
     }
   },
