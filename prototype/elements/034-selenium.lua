@@ -34,7 +34,7 @@ data:extend({
         type = "fluid",
         name = "pm-selenous-acid",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/selenous-acid.png",
         subgroup = "pm-selenium-rnm",
         order = "c",
         default_temperature = 15,
