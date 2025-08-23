@@ -5247,7 +5247,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+      PM.unlock_recipe("pm-molybdenite-oxide"),
+      PM.unlock_recipe("pm-ammonium-molybdate"),
+      PM.unlock_recipe("pm-ammonium-dimolybdate"),
+      PM.unlock_recipe("pm-molybdenum-trioxide"),
+      PM.unlock_recipe("pm-advanced-molybdenum-ore")
     },
     prerequisites = {"pm-rhenium-platinum-catalyst"},
     unit =

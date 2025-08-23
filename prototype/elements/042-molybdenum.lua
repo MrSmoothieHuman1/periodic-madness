@@ -16,7 +16,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/molybdenite-powder.png",
     subgroup = "pm-molybdenum-tm",
     order = "b",
-    stack_size = 200
+    stack_size = 400
   },
   {
     type = "item",
@@ -40,6 +40,47 @@ data:extend({
     subgroup = "pm-molybdenum-tm",
     order = "c",
     stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "pm-molybdenite-oxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/molybdenum-disulfate.png",
+    subgroup = "pm-molybdenum-tm",
+    order = "e",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-ammonium-molybdate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/molybdenum-disulfate.png",
+    subgroup = "pm-molybdenum-tm",
+    order = "f",
+    stack_size = 150
+  },
+
+  {
+    type = "fluid",
+    name = "pm-ammonium-dimolybdate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+    subgroup = "pm-molybdenum-tm",
+    order = "g",
+    default_temperature = 15,
+    base_color = {r = 0, g = 0, b = 0},
+    flow_color = {r = 0, g = 0, b = 0}
+  },
+  {
+    type = "fluid",
+    name = "pm-molybdenum-trioxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+    subgroup = "pm-molybdenum-tm",
+    order = "h",
+    default_temperature = 15,
+    base_color = {r = 0, g = 0, b = 0},
+    flow_color = {r = 0, g = 0, b = 0}
   },
 
   {
@@ -172,9 +213,10 @@ data:extend({
     subgroup = "pm-molybdenum-tm",
     order = "d",
     allow_productivity = true,
+    main_product = "pm-molybdenite-oxide",
     ingredients =
     {
-      PM.ingredient("pm-molybdenite", 8),
+      PM.ingredient("pm-molybdenite-powder", 8),
       PM.ingredient("pm-oxygen-gas", 28, "fluid")
     },
     results = 
@@ -192,18 +234,80 @@ data:extend({
     subgroup = "pm-molybdenum-tm",
     order = "e",
     allow_productivity = true,
+    main_product = "pm-ammonium-molybdate",
     ingredients = 
     {
       PM.ingredient("pm-molybdenite-oxide", 4),
-      PM.ingredient("pm-ammonia", 6, "fluid"),
+      PM.ingredient("pm-ammonia-gas", 6, "fluid"),
       PM.ingredient("water", 20, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 3)
+      PM.ingredient("pm-rhenium-platinum-catalyst", 2)
     },
     results = 
     {
-      PM.product_chance("pm-palladium-catalyst", 3, 0.75),
-      PM.product_chance("pm-catalyst-container", 3, 0.25),
-      PM.product("pm-ammonium-molybdate", )
+      PM.product_chance("pm-palladium-catalyst", 2, 0.8),
+      PM.product_chance("pm-catalyst-container", 2, 0.2),
+      PM.product("pm-ammonium-molybdate", 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ammonium-dimolybdate",
+    enabled = false,
+    energy_required = 4,
+    category = "pm-mixing",
+    subgroup = "pm-molybdenum-tm",
+    order = "f",
+    main_product = "pm-ammonium-dimolybdate",
+    ingredients =
+    {
+      PM.ingredient("pm-ammonium-molybdate", 4),
+      PM.ingredient("pm-hydrogen-sulfide", 15, "fluid"),
+    },
+    results =
+    {
+      PM.product_range("pm-patina", 2, 5),
+      PM.product("pm-ammonium-dimolybdate", 16, "fluid"),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molybdenum-trioxide",
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-molybdenum-tm",
+    order = "g",
+    main_product = "pm-molybdenum-trioxide",
+    ingredients =
+    {
+      PM.ingredient("pm-ammonium-dimolybdate", 16, "fluid"),
+      PM.ingredient("steam", 25, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-molybdenum-trioxide", 32, "fluid"),
+      PM.product_chance("pm-ammonia-gas", 6, 0.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-molybdenum-ore",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-acids",
+    subgroup = "pm-molybdenum-tm",
+    order = "h",
+    allow_productivity = true,
+    main_product = "pm-molybdenum-ore",
+    ingredients =
+    {
+      PM.ingredient("pm-molybdenum-trioxide", 32, "fluid"),
+      PM.ingredient("pm-hydrogen-gas", 32, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molybdenum-ore", 8),
+      PM.product_range("water", 5, 12, "fluid")
     }
   }
 })
