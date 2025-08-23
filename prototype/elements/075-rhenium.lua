@@ -50,7 +50,7 @@ data:extend({
         type = "fluid",
         name = "pm-perrhenic-acid",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/perrhenic-acid.png",
         subgroup = "pm-rhenium-tm",
         order = "d",
         default_temperature = 15,
