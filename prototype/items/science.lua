@@ -85,9 +85,9 @@ data:extend({
   },
   {
     type = "tool",
-    name = "pm-expiremental-research-data",
+    name = "pm-experimental-research-data",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/expiremental-research-data.png",
+    icon = "__periodic-madness__/graphics/icons/science/experimental-research-data.png",
     subgroup = "pm-technectium-science",
     order = "a",
     stack_size = 100,

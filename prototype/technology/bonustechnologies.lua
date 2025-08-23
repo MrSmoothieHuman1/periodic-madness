@@ -1090,14 +1090,14 @@ data:extend({
       PM.modify_recipe_productivity("pm-plastic-transition-metal-science-pack", 0.05),
       PM.modify_recipe_productivity("pm-FUCK-transition-metal-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data"},
+    prerequisites = {"pm-experimental-research-data"},
     order = "a",
     unit =
     {
       count_formula = "1.25^L*1000",
       ingredients =
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1114,14 +1114,14 @@ data:extend({
       PM.modify_recipe_productivity("pm-plastic-advanced-transition-metal-science-pack", 0.05),
       PM.modify_recipe_productivity("pm-FUCK-advanced-transition-metal-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data"},
+    prerequisites = {"pm-experimental-research-data"},
     order = "b",
     unit =
     {
       count_formula = "1.25^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1138,14 +1138,14 @@ data:extend({
       PM.modify_recipe_productivity("pm-plastic-advanced-advanced-transition-metal-science-pack", 0.05),
       PM.modify_recipe_productivity("pm-FUCK-advanced-advanced-transition-metal-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data"},
+    prerequisites = {"pm-experimental-research-data"},
     order = "c",
     unit =
     {
       count_formula = "1.25^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1162,14 +1162,14 @@ data:extend({
       PM.modify_recipe_productivity("pm-plastic-reactive-non-metals-science-pack", 0.05),
       PM.modify_recipe_productivity("pm-FUCK-reactive-non-metals-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data", "chemical-science-pack"},
+    prerequisites = {"pm-experimental-research-data", "chemical-science-pack"},
     order = "d",
     unit =
     {
       count_formula = "1.5^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1186,14 +1186,14 @@ data:extend({
       PM.modify_recipe_productivity("pm-plastic-post-transition-metal-science-pack", 0.05),
       PM.modify_recipe_productivity("pm-FUCK-post-transition-metal-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data"},
+    prerequisites = {"pm-experimental-research-data"},
     order = "e",
     unit =
     {
       count_formula = "1.5^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1210,14 +1210,14 @@ data:extend({
       PM.modify_recipe_productivity("pm-plastic-alkali-metal-science-pack", 0.05),
       --PM.modify_recipe_productivity("pm-FUCK-alkali-metal-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data", "pm-alkali-metal-pack-unlock"},
+    prerequisites = {"pm-experimental-research-data", "pm-alkali-metal-pack-unlock"},
     order = "f",
     unit =
     {
       count_formula = "1.5^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1234,14 +1234,14 @@ data:extend({
       PM.modify_recipe_productivity("pm-plastic-metalloid-science-pack", 0.05),
       --PM.modify_recipe_productivity("pm-FUCK-metalloid-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data"},
+    prerequisites = {"pm-experimental-research-data"},
     order = "g",
     unit =
     {
       count_formula = "1.75^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1258,14 +1258,14 @@ data:extend({
       --PM.modify_recipe_productivity("pm-plastic-alkaline-earth-metal-science-pack", 0.05),
       --PM.modify_recipe_productivity("pm-FUCK-alkaline-earth-metal-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data", "pm-alkaline-earth-metal-pack-unlock"},
+    prerequisites = {"pm-experimental-research-data", "pm-alkaline-earth-metal-pack-unlock"},
     order = "h",
     unit =
     {
       count_formula = "1.75^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }
@@ -1282,14 +1282,14 @@ data:extend({
       --PM.modify_recipe_productivity("pm-plastic-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
       --PM.modify_recipe_productivity("pm-FUCK-advanced-advanced-advanced-transition-metal-science-pack", 0.02)
     },
-    prerequisites = {"pm-expiremental-research-data"},
+    prerequisites = {"pm-experimental-research-data"},
     order = "i",
     unit =
     {
       count_formula = "1.75^L*1000",
       ingredients = 
       {
-       {"pm-expiremental-research-data", 1}
+       {"pm-experimental-research-data", 1}
       },
       time = 120
     }

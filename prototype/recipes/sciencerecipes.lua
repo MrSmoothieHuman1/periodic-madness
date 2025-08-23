@@ -509,12 +509,12 @@ data:extend({
 --MARK: Technectium science
 {
     type = "recipe",
-    name = "pm-expiremental-research-data",
+    name = "pm-experimental-research-data",
     subgroup = "pm-technectium-science",
     order = "a",
     energy_required = 60,
     allow_productivity = true,
-    main_product = "pm-expiremental-research-data",
+    main_product = "pm-experimental-research-data",
     ingredients =
     {
         PM.ingredient("processing-unit", 4),
@@ -527,7 +527,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-expiremental-research-data", 5),
+        PM.product("pm-experimental-research-data", 5),
         PM.product("pm-empty-glass-ampule", 5)
     }
 },

@@ -5178,12 +5178,12 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-expiremental-research-data",
+    name = "pm-experimental-research-data",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/expiremental-research-data.png",
+    icon = "__periodic-madness__/graphics/technology/experimental-research-data.png",
     effects =
     {
-      PM.unlock_recipe("pm-expiremental-research-data")
+      PM.unlock_recipe("pm-experimental-research-data")
     },
     prerequisites = {"pm-technectium-processing", "pm-dubnium-processing"},
     unit =

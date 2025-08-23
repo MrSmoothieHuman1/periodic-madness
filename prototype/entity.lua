@@ -23,7 +23,7 @@ local pm_lab_inputs =
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
-  "pm-expiremental-research-data"
+  "pm-experimental-research-data"
 }
 
 circuit_connector_definitions["evaporator"] = circuit_connector_definitions.create_vector
