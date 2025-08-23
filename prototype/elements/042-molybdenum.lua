@@ -244,7 +244,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_chance("pm-palladium-catalyst", 2, 0.8),
+      PM.product_chance("pm-rhenium-platinum-catalyst", 2, 0.8),
       PM.product_chance("pm-catalyst-container", 2, 0.2),
       PM.product("pm-ammonium-molybdate", 4)
     }
@@ -293,7 +293,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-molybdenum-ore",
     enabled = false,
-    energy_required = 6,
+    energy_required = 5,
     category = "pm-acids",
     subgroup = "pm-molybdenum-tm",
     order = "h",
