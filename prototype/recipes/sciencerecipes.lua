@@ -521,7 +521,7 @@ data:extend({
         PM.ingredient("pm-polyethylene-plastic", 10),
         PM.ingredient("pm-glass-fibers", 8),
         PM.ingredient("pm-francium-glass-ampule", 5),
-        --PM.ingredient("pm-technectium-ore", 3),
+        PM.ingredient("pm-technectium-99", 3),
         PM.ingredient("pm-usable-dubnium", 2),
     },
     enabled = false,

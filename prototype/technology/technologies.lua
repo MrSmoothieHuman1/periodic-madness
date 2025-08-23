@@ -5130,6 +5130,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+      PM.unlock_recipe("pm-molybdenum-99"),
+      PM.unlock_recipe("pm-trace-technectium-99"),
+      PM.unlock_recipe("pm-technectium-99")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =

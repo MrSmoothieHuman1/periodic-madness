@@ -110,6 +110,7 @@ require("prototype.elements.041-niobium")
 require("prototype.elements.044-ruthenium")
 require("prototype.elements.075-rhenium")
 require("prototype.elements.105-dubnium")
+require("prototype.elements.043-technectium")
 
 require("prototype.damagetypes")
 
