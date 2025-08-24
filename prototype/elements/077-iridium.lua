@@ -54,8 +54,8 @@ data:extend({
         subgroup = "pm-osmium-tm",
         order = "b",
         default_temperature = 15,
-        base_color = {r = 0.2, g = 0.25, b = 0},
-        flow_color = {r = 0.2, g = 0.25, b = 0}
+        base_color = {r = 0.25, g = 0.2, b = 0.1},
+        flow_color = {r = 0.25, g = 0.2, b = 0.1}
     },
     {
         type = "fluid",
@@ -65,8 +65,8 @@ data:extend({
         subgroup = "pm-osmium-tm",
         order = "e",
         default_temperature = 15,
-        base_color = {r = 0.35, g = 0.4, b = 0},
-        flow_color = {r = 0.35, g = 0.4, b = 0}
+        base_color = {r = 0.4, g = 0.35, b = 0.15},
+        flow_color = {r = 0.4, g = 0.35, b = 0.15}
     },
     {
         type = "fluid",
