@@ -75,12 +75,12 @@ data:extend({
     type = "fluid",
     name = "pm-molybdenum-trioxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/molybdenum-trioxide.png",
     subgroup = "pm-molybdenum-tm",
     order = "h",
     default_temperature = 15,
-    base_color = {r = 0, g = 0, b = 0},
-    flow_color = {r = 0, g = 0, b = 0}
+    base_color = {r = 0.5, g = 0.33, b = 0.33},
+    flow_color = {r = 0.5, g = 0.33, b = 0.33}
   },
 
   {
