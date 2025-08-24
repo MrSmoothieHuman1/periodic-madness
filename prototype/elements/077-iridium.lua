@@ -50,7 +50,7 @@ data:extend({
         type = "fluid",
         name = "pm-anode-sludge",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/anode-sludge.png",
         subgroup = "pm-osmium-tm",
         order = "b",
         default_temperature = 15,
