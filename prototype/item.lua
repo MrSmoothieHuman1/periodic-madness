@@ -1551,7 +1551,7 @@ data:extend({
     type = "item",
     name = "pm-advanced-electric-engine-unit",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/advanced-electric-engine-unit.png",
     stack_size = 50,
   },
   {

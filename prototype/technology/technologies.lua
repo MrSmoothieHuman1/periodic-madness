@@ -4977,7 +4977,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-circuit-megassembler-MK2")
     },
-    prerequisites = {"pm-electric-engine-unit", "pm-circuit-megassembler"},
+    prerequisites = {"pm-advanced-electric-engine-unit", "pm-circuit-megassembler"},
     unit =
     {
       count = 650,
@@ -5020,9 +5020,9 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-electric-engine-unit",
+    name = "pm-advanced-electric-engine-unit",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-electric-engine-unit.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-electric-engine-unit")
@@ -5054,7 +5054,7 @@ data:extend({
       PM.unlock_recipe("pm-long-handed-sideserter"),
       PM.unlock_recipe("pm-bulk-sideserter")
     },
-    prerequisites = {"pm-electric-engine-unit"},
+    prerequisites = {"pm-advanced-electric-engine-unit"},
     unit =
     {
       count = 500,
@@ -5210,7 +5210,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-assembling-machine-4")
     },
-    prerequisites = {"pm-electric-engine-unit", "automation-3"},
+    prerequisites = {"pm-advanced-electric-engine-unit", "automation-3"},
     unit =
     {
       count = 550,

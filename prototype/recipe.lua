@@ -4200,8 +4200,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-electric-engine-unit",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
     enabled = false,
     energy_required = 10,
     category = "crafting-with-fluid",
