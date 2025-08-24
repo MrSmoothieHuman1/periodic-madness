@@ -1278,7 +1278,8 @@ data:extend({
     max_level = "infinite",
     effects =
     {
-      PM.modify_recipe_productivity("pm-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
+      PM.unlock_recipe("pm-tantalum-advanced-advanced-advanced-transition-metal-science-pack"),
+      PM.unlock_recipe("pm-niobium-advanced-advanced-advanced-transition-metal-science-pack")
       --PM.modify_recipe_productivity("pm-plastic-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
       --PM.modify_recipe_productivity("pm-FUCK-advanced-advanced-advanced-transition-metal-science-pack", 0.02)
     },

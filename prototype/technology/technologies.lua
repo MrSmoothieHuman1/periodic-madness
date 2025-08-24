@@ -4922,7 +4922,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-advanced-advanced-transition-metal-unlock.png",
     effects = 
     {
-      PM.unlock_recipe("pm-advanced-advanced-advanced-transition-metal-science-pack")
+      PM.unlock_recipe("pm-tantalum-advanced-advanced-advanced-transition-metal-science-pack"),
+      PM.unlock_recipe("pm-niobium-advanced-advanced-advanced-transition-metal-science-pack")
     },
     prerequisites = {"pm-osmium-processing", "pm-yttrium-processing", "pm-tantalum-processing", "pm-niobium-processing", "pm-rhodium-processing", "pm-rhenium-processing"},
     unit =

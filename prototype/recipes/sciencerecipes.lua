@@ -116,7 +116,7 @@ data:extend({
 },
 {
     type = "recipe",
-    name = "pm-advanced-advanced-advanced-transition-metal-science-pack",
+    name = "pm-tantalum-advanced-advanced-advanced-transition-metal-science-pack",
     category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "i",
@@ -124,10 +124,33 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-yttrium-ore", 4),
+        PM.ingredient("pm-yttrium-ore", 5),
         PM.ingredient("pm-molten-zinc", 5, "fluid"),
         PM.ingredient("pm-osmiridium-plate", 3),
         PM.ingredient("pm-tantalum-plate", 3),
+        PM.ingredient("pm-rhenium-plate", 2),
+        PM.ingredient("pm-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 1),
+    }
+},
+{
+    type = "recipe",
+    name = "pm-niobium-advanced-advanced-advanced-transition-metal-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "science-pack",
+    order = "ia",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-yttrium-ore", 3),
+        PM.ingredient("pm-molten-zinc", 5, "fluid"),
+        PM.ingredient("pm-osmiridium-plate", 5),
+        PM.ingredient("pm-niobium-plate", 3),
         PM.ingredient("pm-rhenium-plate", 2),
         PM.ingredient("pm-science-bottle", 1)
     },
