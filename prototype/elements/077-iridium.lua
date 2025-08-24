@@ -72,12 +72,12 @@ data:extend({
         type = "fluid",
         name = "pm-iridium-filtered-anode-sludge",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/iridium-filtered-anode-sludge.png",
         subgroup = "pm-iridium-tm",
         order = "f",
         default_temperature = 15,
-        base_color = {r = 0, g = 0, b = 0},
-        flow_color = {r = 0, g = 0, b = 0}
+        base_color = {r = 0.4, g = 0.3, b = 0.45},
+        flow_color = {r = 0.4, g = 0.3, b = 0.45}
     },
 
     

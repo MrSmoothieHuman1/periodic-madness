@@ -23,7 +23,7 @@ data:extend({
         type = "fluid",
         name = "pm-osmium-filtered-anode-sludge",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/osmium-filtered-anode-sludge.png",
         subgroup = "pm-osmium-tm",
         order = "f",
         default_temperature = 15,
