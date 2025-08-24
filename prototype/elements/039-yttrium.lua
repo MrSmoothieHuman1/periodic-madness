@@ -80,19 +80,19 @@ data:extend({
     type = "recipe",
     name = "pm-mixed-bastnasite",
     enabled = false,
-    energy_required = 18,
+    energy_required = 12,
     category = "pm-acids",
     subgroup = "pm-yttrium-tm",
     order = "a",
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 25),
+      PM.ingredient("pm-transition-metals-ore", 20),
       PM.ingredient("pm-chromic-acid", 20, "fluid")
     },
     results =
     {
-      PM.product_range("pm-mixed-bastnasite", 2, 6 )
+      PM.product_range("pm-mixed-bastnasite", 3, 8)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -131,7 +131,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-bastnasite-Y", 6),
-      PM.ingredient("sulfuric-acid", 20, "fluid"),
+      PM.ingredient("sulfuric-acid", 15, "fluid"),
       PM.ingredient("pm-vanadium-oxide-catalyst", 4)
     },
     results =
@@ -156,7 +156,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-bastnasite-C", 6),
-      PM.ingredient("sulfuric-acid", 20, "fluid"),
+      PM.ingredient("sulfuric-acid", 15, "fluid"),
       PM.ingredient("pm-cobalt-catalyst", 4)
     },
     results =
