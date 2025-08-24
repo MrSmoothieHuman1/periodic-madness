@@ -54,19 +54,19 @@ data:extend({
         subgroup = "pm-osmium-tm",
         order = "b",
         default_temperature = 15,
-        base_color = {r = 0, g = 0, b = 0},
-        flow_color = {r = 0, g = 0, b = 0}
+        base_color = {r = 0.2, g = 0.25, b = 0},
+        flow_color = {r = 0.2, g = 0.25, b = 0}
     },
     {
         type = "fluid",
         name = "pm-filtered-anode-sludge",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/filtered-anode-sludge.png",
         subgroup = "pm-osmium-tm",
         order = "e",
         default_temperature = 15,
-        base_color = {r = 0, g = 0, b = 0},
-        flow_color = {r = 0, g = 0, b = 0}
+        base_color = {r = 0.35, g = 0.4, b = 0},
+        flow_color = {r = 0.35, g = 0.4, b = 0}
     },
     {
         type = "fluid",
