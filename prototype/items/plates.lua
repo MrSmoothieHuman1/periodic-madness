@@ -290,7 +290,7 @@ data:extend({
     type = "item",
     name = "pm-inconel-625-plate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/magnesium-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/inconel-625-plate.png",
     stack_size = 100
   },
   {
