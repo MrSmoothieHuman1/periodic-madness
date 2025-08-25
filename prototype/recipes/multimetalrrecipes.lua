@@ -792,7 +792,7 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-chrominum-ore", 1),
+      PM.ingredient("pm-chromium-ore", 1),
       PM.ingredient("pm-basic-framing", 1)
     },
     results =
@@ -1198,7 +1198,7 @@ data:extend({
     order = "b",
     ingredients =
     {
-      PM.ingredient("pm-chrominum-ore", 1),
+      PM.ingredient("pm-chromium-ore", 1),
       PM.ingredient("pm-basic-panelling", 1)
     },
     results =

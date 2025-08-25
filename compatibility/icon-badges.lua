@@ -75,7 +75,7 @@ my_data =
     {type = "item", name = "pm-thallium-ore", ib_data = {ib_let_badge ="Te", ib_let_invert = true}},
     {type = "item", name = "pm-bismuth-ore", ib_data = {ib_let_badge ="Bi"}},
     {type = "item", name = "pm-vanadium-ore", ib_data = {ib_let_badge ="V"}},
-    {type = "item", name = "pm-chrominum-ore", ib_data = {ib_let_badge ="Cr"}},
+    {type = "item", name = "pm-chromium-ore", ib_data = {ib_let_badge ="Cr"}},
     {type = "item", name = "pm-lithium-ore", ib_data = {ib_let_badge ="Li"}},
     {type = "item", name = "pm-lithium-chloride", ib_data = {ib_let_badge ="LiC"}},
     {type = "item", name = "pm-lithium-bromide", ib_data = {ib_let_badge ="LiB"}},

@@ -17,7 +17,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-ferrochrominum",
+    name = "pm-ferrochromium",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/ferrochromium.png",
     pictures = 
@@ -32,7 +32,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-chrominum-ore",
+    name = "pm-chromium-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
     pictures =
@@ -58,7 +58,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-chrominum-leeching",
+    name = "pm-chromite",
     energy_required = 4,
     enabled = false,
     category = "pm-acids",
@@ -77,7 +77,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-chromite-seperation",
+    name = "pm-ferrochromium",
     energy_required = 2,
     category = "pm-moltening",
     subgroup = "pm-chrominum-tm",
@@ -91,26 +91,26 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ferrochrominum", 4),
+      PM.product("pm-ferrochromium", 4),
     }
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-ferrochrominum-carbon-seperation",
+    name = "pm-chromium-ore",
     category = "pm-coldening",
-    main_product = "pm-chrominum-ore",
+    main_product = "pm-chromium-ore",
     subgroup = "pm-chrominum-tm",
     order = "d",
     energy_required = 2,
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-ferrochrominum", 4),
+      PM.ingredient("pm-ferrochromium", 4),
       PM.ingredient("pm-calcium-ore", 2),
     },
     results =
     {
-      PM.product_range("pm-chrominum-ore", 2, 4),
+      PM.product_range("pm-chromium-ore", 2, 4),
       PM.product_chance("pm-ferrum", 2, 0.75)
     }
   } --[[@as data.RecipePrototype]],
@@ -125,7 +125,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-chrominum-ore", 12),
+      PM.ingredient("pm-chromium-ore", 12),
       PM.ingredient("sulfuric-acid", 10, "fluid"),
       PM.ingredient("pm-sodium", 10)
     },
@@ -178,7 +178,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-chrominum-ore", 12),
+      PM.ingredient("pm-chromium-ore", 12),
       PM.ingredient("sulfur", 6),
       PM.ingredient("pm-oxygen-gas", 18, "fluid")
     },
@@ -205,7 +205,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-chrominum-ore", 4, 6),
+      PM.product_range("pm-chromium-ore", 4, 6),
       PM.product_range("pm-sulfur-dioxide", 8, 15, "fluid"),
       PM.product_range_chance("pm-carbon-dioxide-gas", 6, 15, 0.65, "fluid")
     }

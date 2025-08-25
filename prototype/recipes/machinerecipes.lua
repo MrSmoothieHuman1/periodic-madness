@@ -1323,7 +1323,7 @@ data:extend({
     {
       PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
       PM.ingredient("advanced-circuit", 10),
-      PM.ingredient("pm-chrominum-ore", 14),
+      PM.ingredient("pm-chromium-ore", 14),
       PM.ingredient("pm-polytetrafluoroethylene", 6),
       PM.ingredient("pm-heavyweight-framing", 16),
       PM.ingredient("pm-heavy-lubricant", 2, "fluid")
@@ -1345,7 +1345,7 @@ data:extend({
     {
       PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
       PM.ingredient("advanced-circuit", 14),
-      PM.ingredient("pm-chrominum-ore", 10),
+      PM.ingredient("pm-chromium-ore", 10),
       PM.ingredient("pm-polytetrafluoroethylene", 6),
       PM.ingredient("pm-lightweight-framing", 12),
       PM.ingredient("pm-coolant", 2, "fluid")

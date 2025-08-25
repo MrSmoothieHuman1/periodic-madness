@@ -159,7 +159,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-inconel-625-precursor-billet", 5),
-      PM.ingredient("pm-chrominum-ore", 5),
+      PM.ingredient("pm-chromium-ore", 5),
       PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
       PM.ingredient("pm-filled-flux-container", 1)
     },
@@ -966,7 +966,7 @@ data:extend({
     {
       PM.ingredient("steel-plate", 8),
       PM.ingredient("pm-manganese-plate", 6),
-      PM.ingredient("pm-chrominum-ore", 4),
+      PM.ingredient("pm-chromium-ore", 4),
       PM.ingredient("pm-molybdenum-ore", 4),
       PM.ingredient("pm-filled-flux-container", 2)
     },
@@ -1025,7 +1025,7 @@ data:extend({
     {
       PM.ingredient("iron-plate", 3),
       PM.ingredient("pm-aluminium-plate", 3),
-      PM.ingredient("pm-chrominum-ore", 4),
+      PM.ingredient("pm-chromium-ore", 4),
       PM.ingredient("pm-filled-flux-container", 2)
     },
     results =

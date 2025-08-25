@@ -1204,9 +1204,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/chromium-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-chrominum-leeching"),
-      PM.unlock_recipe("pm-chromite-seperation"),
-      PM.unlock_recipe("pm-ferrochrominum-carbon-seperation"),
+      PM.unlock_recipe("pm-chromite"),
+      PM.unlock_recipe("pm-ferrochromium"),
+      PM.unlock_recipe("pm-chromium-ore"),
       PM.unlock_recipe("pm-chromic-acid")
     },
     prerequisites = {"pm-oil-residual-recipes", "pm-tempature-inators"},

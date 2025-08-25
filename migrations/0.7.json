@@ -1,0 +1,13 @@
+{
+    "recipe":
+    [
+        ["pm-chrominum-leeching", "pm-chromite"],
+        ["pm-chromite-seperation", "pm-ferrochromium"],
+        ["pm-ferrochrominum-carbon-seperation", "pm-chromium-ore"]
+    ],
+    "item":
+    [
+        ["pm-ferrochrominum", "pm-ferrochromium"],
+        ["pm-chrominum-ore", "pm-chromium-ore"]
+    ]
+}
