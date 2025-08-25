@@ -91,5 +91,23 @@ data:extend({
             PM.product_chance("pm-cobalt-catalyst", 2, 0.85),
             PM.product_chance("pm-catalyst-container", 2, 0.15)
         }
-    }
+    },
+    {
+        type = "recipe",
+        name = "pm-ruthenium-plate",
+        enabled = false,
+        energy_required = 6.4,
+        category = "smelting",
+        subgroup = "pm-ruthenium-tm",
+        order = "d",
+        allow_productivity = true,
+        ingredients = 
+        {
+            PM.ingredient("pm-ruthenium-ore", 1)
+        },
+        results = 
+        {
+            PM.product("pm-ruthenium-plate", 1)
+        }
+    },
 })

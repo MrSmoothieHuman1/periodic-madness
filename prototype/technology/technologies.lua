@@ -4841,6 +4841,7 @@ data:extend({
       PM.unlock_recipe("pm-ruthenium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-ammonium-ruthenium-chloride"),
       PM.unlock_recipe("pm-ruthenium-ore"),
+      PM.unlock_recipe("pm-ruthenium-plate")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

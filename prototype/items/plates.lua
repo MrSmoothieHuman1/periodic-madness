@@ -358,6 +358,24 @@ data:extend({
     order = "g",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-rhodium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/rhodium-plate.png",
+    subgroup = "pm-rhodium-tm",
+    order = "d",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-ruthenium-plate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/plates/ruthenium-plate.png",
+    subgroup = "pm-ruthenium-tm",
+    order = "d",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["iron-plate"].subgroup = "pm-iron-tm"
