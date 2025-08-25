@@ -353,7 +353,7 @@ data:extend({
     type = "item",
     name = "pm-rhenium-plate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/tellurium-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/rhenium-plate.png",
     subgroup = "pm-rhenium-tm",
     order = "g",
     stack_size = 100
