@@ -5754,6 +5754,7 @@ data:extend({
     result_inventory_size = 1,
     module_slots = 2,
     allowed_effects = PM.effects("speed", "consumption"),
+    allowed_module_categories = {"speed", "efficiency"}
     crafting_speed = 0.5,
     energy_usage = "800kW",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
