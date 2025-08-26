@@ -5325,6 +5325,31 @@ data:extend({
       time = 120
     }
   },
+  {
+    type = "technology",
+    name = "pm-advanced-crude-oil-fractional-distillation",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-advanced-crude-oil-fractional-distillation")
+    },
+    prerequisites = {"pm-rhenium-platinum-catalyst"},
+    unit =
+    {
+      count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
 
 
 --MARK: AEM science

@@ -1031,6 +1031,39 @@ data:extend({
       PM.product_range("pm-oil-residuals", 0.5, 5, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-advanced-crude-oil-fractional-distillation",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/crude-oil-fractional-distillation.png",
+    energy_required = 4,
+    enabled = false,
+    category = "pm-fractional-distillation",
+    subgroup = "pm-oil",
+    order = "ba",
+    allow_productivity = true,
+    emissions_multiplier = 0.75,
+    ingredients =
+    {
+      PM.ingredient("crude-oil", 250, "fluid"),
+      PM.ingredient("pm-rhenium-platinum-catalyst", 3),
+      PM.ingredient("pm-ruthenium-plate", 2)
+    },
+    results =
+    {
+      PM.product("pm-oil-residuals", 50, "fluid"),
+      PM.product("pm-fuel-oils", 50, "fluid"),
+      PM.product("pm-lubricating-oils", 50, "fluid"),
+      PM.product("pm-diesel", 50, "fluid"),
+      PM.product("pm-kerosene", 50, "fluid"),
+      PM.product("pm-naptha", 50, "fluid"),
+      PM.product("pm-petrol", 50, "fluid"),
+      PM.product("pm-refinery-gases", 50, "fluid"),
+      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 2),
+      PM.catalyst_chance("pm-ruthenium-plate", 2, 0.66, 2),
+      PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
+    }
+  },
 
   -- Oil Cracking/Reforming
 
