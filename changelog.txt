@@ -25,6 +25,7 @@ Date: 2025-12-07
     - Added even more advanced recipes for thing that take lubricant, for light lubricant.
     - Added RTG equipment, unlocked at AEM science, which works as an infinite power source in your armour - however it is bigger and less efficient then other types of equipment.
     - Reworked the coke system entirely, you now unlock coke at late orange science and is crafted in stone coke ovens. You unlock better buildings and better coke production throughout yellow and PTM science.
+    - Added a way to more easily get rid of bitumen, by turning it into crude oil.
 
   Changes:
     - Slightly nerfed research productivity.

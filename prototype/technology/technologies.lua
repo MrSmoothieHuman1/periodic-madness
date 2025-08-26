@@ -609,6 +609,7 @@ data:extend({
       PM.unlock_recipe("pm-high-sulfur-residuals-filtering"),
       PM.unlock_recipe("pm-low-sulfur-residuals-filtering"),
       PM.unlock_recipe("pm-bitumen-seperation"),
+      PM.unlock_recipe("pm-bitumen-to-crude-oil"),
       PM.unlock_recipe("pm-bitumen-creosote")
     },
     prerequisites = {"oil-processing"},

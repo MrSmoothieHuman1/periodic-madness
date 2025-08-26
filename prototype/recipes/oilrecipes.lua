@@ -1000,6 +1000,37 @@ data:extend({
       PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-bitumen-to-crude-oil",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/bitumen.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__base__/graphics/icons/fluid/crude-oil.png",
+        icon_size = 64,
+        scale = 0.38,
+        shift = { 0, -3 }
+      },
+    },
+    enabled = false,
+    energy_required = 6,
+    category = "oil-processing",
+    ingredients = 
+    {
+      PM.ingredient("pm-bitumen", 10),
+      PM.ingredient("crude-oil", 20, "fluid")
+    },
+    results = 
+    {
+      PM.product("crude-oil", 35, "fluid"),
+      PM.product_range("pm-oil-residuals", 0.5, 5, "fluid")
+    }
+  },
 
   -- Oil Cracking/Reforming
 
