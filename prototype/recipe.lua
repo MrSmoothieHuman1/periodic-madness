@@ -456,6 +456,7 @@ data:extend({
     category = "pm-coking",
     subgroup = "pm-greenhousing-rnm",
     order = "db",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("coal", 8), --2:1 ratio for the first recipe 
@@ -4303,6 +4304,7 @@ data:extend({
     category = "pm-coking",
     subgroup = "pm-greenhousing-rnm",
     order = "db",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("coal", 6),
@@ -4321,6 +4323,7 @@ data:extend({
     category = "pm-coking",
     emissions_multiplier = 0.75,
     main_product = "pm-coke",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("coal", 9) --2:1 ratio, but turn into 1.5:1 with coal tar
@@ -4347,6 +4350,45 @@ data:extend({
     {
       PM.product_chance("pm-coke", 2),
       PM.product_chance("sulfur", 1, 0.66)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-advanced-coke",
+    enabled = false,
+    energy_required = 2.4,
+    category = "pm-coking-with-fluid",
+    emissions_multiplier = 0.66,
+    main_product = "pm-coke",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("coal", 10) --2:1 ratio, but turn into 1.2:1 with coal tar + gas
+    },
+    results =
+    {
+      PM.product("pm-coke", 4),
+      PM.product("pm-coal-tar", 2),
+      PM.product("pm-coal-gas", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-coal-gas-seperation",
+    enabled = false,
+    energy_required = 3,
+    category = "chemistry",
+    main_product = "pm-coke",
+    ingredients =
+    {
+      PM.ingredient("pm-coal-gas", 2.5, "fluid"),
+      PM.ingredient("pm-vanadium-oxide-catalyst", 1)
+    },
+    results = 
+    {
+      PM.product("pm-coke", 1),
+      PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.9),
+      PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

@@ -1760,6 +1760,18 @@ data:extend({
     flow_color = {r = 0.3, g = 0.3, b = 0.8},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-coal-gas",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-osmiridium.png",
+    subgroup = "pm-osmium-tm",
+    order = "d",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.2},
+    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",

@@ -9979,6 +9979,29 @@ fluid_boxes =
     usage_priority = "secondary-input",
     emissions_per_minute = {pollution = 3},
   },
+  fluid_boxes =
+  {
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      pipe_connections = 
+      {
+        {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}}
+      },
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      pipe_connections = 
+      {
+        {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}}
+      },
+    },
+  },
   working_sound =
     {
       sound =

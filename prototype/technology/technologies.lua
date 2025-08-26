@@ -2490,8 +2490,11 @@ data:extend({
     name = "pm-advanced-coke-processing-2",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-coke-processing.png",
-    effects = 
+    effects =
     {
+      PM.unlock_recipe("pm-stone-coke-oven-3"),
+      PM.unlock_recipe("pm-advanced-advanced-coke"),
+      PM.unlock_recipe("pm-coal-gas-seperation")
     },
     prerequisites = {"advanced-material-processing", "pm-post-transition-metal-pack-unlock", "pm-advanced-coke-processing"},
     unit = 
