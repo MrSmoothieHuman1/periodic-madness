@@ -1764,7 +1764,7 @@ data:extend({
     type = "fluid",
     name = "pm-coal-gas",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-osmiridium.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/coal-gas.png",
     subgroup = "pm-osmium-tm",
     order = "d",
     default_temperature = 15,
