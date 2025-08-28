@@ -13,7 +13,13 @@ data:extend({
         type = "item",
         name = "pm-selenium-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/selenium-ore.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/selenium-ore.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/selenium-ore-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/selenium-ore-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-selenium-rnm",
         order = "d",
         stack_size = 200
