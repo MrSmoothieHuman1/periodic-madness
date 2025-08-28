@@ -331,8 +331,8 @@ data:extend({
       effect =
       {
         speed = 0.5,
-        consumption = 1,
-        pollution = 0.15,
+        consumption = 0.55,
+        pollution = 0.75,
       },
 
     }, -- high heat capacity, less pollution
@@ -433,11 +433,11 @@ data:extend({
       effect =
       {
         speed = 0.15,
-        consumption = 0.5,
+        consumption = 1,
         pollution = 0.5,
         productivity = 0.05,
       },
-    }, --essenitally a better copper, honestly
+    }, --productivity coil, low speed, high pollution + energy
 })
 
 --#MARK: Vanilla modules
