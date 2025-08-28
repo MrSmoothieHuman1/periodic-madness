@@ -1540,10 +1540,10 @@ data:extend({
         {
           filename =
           "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator.png",
-          width = 249 + 7,
-          height = 338,
-          shift = util.by_pixel(0, -40),
-          scale = 0.56
+          width = 386,
+          height = 498,
+          shift = util.by_pixel(0, -30),
+          scale = 0.4
         },
         {
           filename =
