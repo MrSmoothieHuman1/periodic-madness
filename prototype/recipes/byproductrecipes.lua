@@ -504,13 +504,14 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-molten-ore-slag", 5, "fluid"),
+      PM.ingredient("pm-borax", 2),
       PM.ingredient("pm-palladium-catalyst", 3)
     },
     results =
     {
       PM.product_range("pm-combined-ore-slab", 2, 4),
-      PM.product_range_chance("pm-palladium-catalyst", 3, 0.75),
-      PM.product_range_chance("pm-catalyst-container", 3, 0.25)
+      PM.product_chance("pm-palladium-catalyst", 3, 0.75),
+      PM.product_chance("pm-catalyst-container", 3, 0.25)
     }
   },
   {

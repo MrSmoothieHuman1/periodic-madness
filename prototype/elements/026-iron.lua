@@ -368,14 +368,14 @@ data:extend({
     order = "d",
     energy_required = 12,
     main_product = "iron-ore",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-wrought-iron", 6)
     },
     results = 
     {
       PM.product("iron-ore", 6),
-      PM.product_range_chance("pm-low-quality-quartzite", 0, 2, 0.55)
+      PM.product_chance("pm-low-quality-quartzite", 1, 0.45)
     }
   },
 })

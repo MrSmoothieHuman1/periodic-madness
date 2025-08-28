@@ -50,6 +50,8 @@ Date: 2025-12-07
     - Lowered amount of sulfuric used in bastanite seperation from 20 to 15.
     - Lowered crafting time of bastanite from 18s to 12s, and lowered amount of TM ore it needs.
     - Lowered tungsten heating coils energy consumption from 100% to 75%.
+    - Added borax to molten ore slags recipe chain.
+    - Lowered amount of quartzite given from advanced iron processing.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.
