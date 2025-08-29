@@ -5031,6 +5031,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-electric-engine-unit.png",
     effects =
     {
+      PM.unlock_recipe("pm-tantalum-contacts"),
+      PM.unlock_recipe("pm-niobium-contacts"),
       PM.unlock_recipe("pm-tantalum-advanced-electric-engine-unit"),
       PM.unlock_recipe("pm-niobium-advanced-electric-engine-unit")
     },

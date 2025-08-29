@@ -4135,7 +4135,7 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 6),
       PM.ingredient("processing-unit", 5),
       PM.ingredient("pm-kasethal-plate", 3),
-      PM.ingredient("pm-tantalum-contacts", 3)
+      PM.ingredient("pm-tantalum-contacts", 8)
     },
     results =
     {
@@ -4155,7 +4155,7 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 6),
       PM.ingredient("processing-unit", 3),
       PM.ingredient("pm-kasethal-plate", 5),
-      PM.ingredient("pm-niobium-contacts", 3)
+      PM.ingredient("pm-niobium-contacts", 8)
     },
     results =
     {
@@ -4335,5 +4335,35 @@ data:extend({
       PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.9),
       PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-tantalum-contacts",
+    enabled = false,
+    energy_required = 1,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-tantalum-plate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-tantalum-contacts", 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-niobium-contacts",
+    enabled = false,
+    energy_required = 1,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-niobium-plate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-niobium-contacts", 4)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
