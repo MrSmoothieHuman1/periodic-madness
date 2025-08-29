@@ -5031,7 +5031,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-electric-engine-unit.png",
     effects =
     {
-      PM.unlock_recipe("pm-advanced-electric-engine-unit")
+      PM.unlock_recipe("pm-tantalum-advanced-electric-engine-unit"),
+      PM.unlock_recipe("pm-niobium-advanced-electric-engine-unit")
     },
     prerequisites = {"pm-light-lubricant"},
     unit =

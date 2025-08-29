@@ -4124,7 +4124,27 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-advanced-electric-engine-unit",
+    name = "pm-tantalum-advanced-electric-engine-unit",
+    enabled = false,
+    energy_required = 10,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+      PM.ingredient("electric-engine-unit", 1),
+      PM.ingredient("pm-light-lubricant", 5, "fluid"),
+      PM.ingredient("pm-fluid-circuit", 6),
+      PM.ingredient("processing-unit", 5),
+      PM.ingredient("pm-kasethal-plate", 3),
+      PM.ingredient("pm-tantalum-contacts", 3)
+    },
+    results =
+    {
+      PM.product("pm-advanced-electric-engine-unit", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-niobium-advanced-electric-engine-unit",
     enabled = false,
     energy_required = 10,
     category = "crafting-with-fluid",
@@ -4134,9 +4154,10 @@ data:extend({
       PM.ingredient("pm-light-lubricant", 5, "fluid"),
       PM.ingredient("pm-fluid-circuit", 6),
       PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-kasethal-plate", 2)
+      PM.ingredient("pm-kasethal-plate", 5),
+      PM.ingredient("pm-niobium-contacts", 3)
     },
-    results = 
+    results =
     {
       PM.product("pm-advanced-electric-engine-unit", 1)
     }

@@ -1561,6 +1561,20 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
     stack_size = 300,
   },
+  {
+    type = "item",
+    name = "pm-tantalum-contacts",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/tantalum-contacts.png",
+    stack_size = 400,
+  },
+  {
+    type = "item",
+    name = "pm-niobium-contacts",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/niobium-contacts.png",
+    stack_size = 400,
+  },
 
   {
     type = "item",
