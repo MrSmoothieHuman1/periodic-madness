@@ -44,8 +44,8 @@ data:extend({
         subgroup = "pm-selenium-rnm",
         order = "c",
         default_temperature = 15,
-        base_color = {r = 0, g = 0, b = 0},
-        flow_color = {r = 0, g = 0, b = 0}
+        base_color = {r = 1, g = 0.6, b = 0.6},
+        flow_color = {r = 1, g = 0.6, b = 0.6}
     },
 
     {
