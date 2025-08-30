@@ -4062,66 +4062,6 @@ data:extend({
       PM.product_range("pm-nitrosyl-chloride", 3, 5, "fluid")
     }
   },
-    {
-    type = "recipe",
-    name = "pm-speed-module-5",
-    enabled = false,
-    energy_required = 30,
-    subgroup = "pm-speed",
-    order = "e",
-    ingredients =
-    {
-      PM.ingredient("pm-cobalt-blue", 5),
-      PM.ingredient("speed-module-2", 1),
-      PM.ingredient("pm-module-speed-light", 1),
-      PM.ingredient("advanced-circuit", 9),
-      PM.ingredient("processing-unit", 9)
-    },
-    results =
-    {
-      PM.product("pm-speed-module-5", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-efficiency-module-5",
-    enabled = false,
-    energy_required = 30,
-    subgroup = "pm-efficiency",
-    order = "e",
-    ingredients =
-    {
-      PM.ingredient("pm-chrome-green", 5),
-      PM.ingredient("efficiency-module-2", 1),
-      PM.ingredient("pm-module-efficiency-light", 1),
-      PM.ingredient("advanced-circuit", 9),
-      PM.ingredient("processing-unit", 9)
-    },
-    results =
-    {
-      PM.product("pm-efficiency-module-5", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-productivity-module-5",
-    enabled = false,
-    energy_required = 30,
-    subgroup = "pm-productivity",
-    order = "e",
-    ingredients =
-    {
-      PM.ingredient("pm-cadnium-red", 5),
-      PM.ingredient("productivity-module-2", 1),
-      PM.ingredient("pm-module-productivity-light", 1),
-      PM.ingredient("advanced-circuit", 9),
-      PM.ingredient("processing-unit", 9)
-    },
-    results =
-    {
-      PM.product("pm-productivity-module-5", 1)
-    }
-  },
   {
     type = "recipe",
     name = "pm-tantalum-advanced-electric-engine-unit",
