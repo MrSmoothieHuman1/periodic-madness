@@ -1,6 +1,37 @@
 data:extend({
 
     {
+        type = "item",
+        name = "pm-rhodium-chunks",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-rhodium-tm",
+        order = "b",
+        stack_size = 250
+    },
+    {
+        type = "item",
+        name = "pm-rhodium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-rhodium-tm",
+        order = "c",
+        stack_size = 200
+    },
+
+    {
+        type = "fluid",
+        name = "pm-rhodium-filtered-anode-sludge",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        subgroup = "pm-rhodium-tm",
+        order = "a",
+        default_temperature = 15,
+        base_color = {r = 0, g = 0, b = 0},
+        flow_color = {r = 0, g = 0, b = 0}
+    },
+
+    {
         type = "recipe",
         name = "pm-rhodium-filtered-anode-sludge",
         enabled = false,
@@ -31,13 +62,13 @@ data:extend({
         main_product = "pm-rhodium-chunks",
         ingredients =
         {
-            PM.ingredient("pm-rhodium-filtered-anode-sludge", 6),
+            PM.ingredient("pm-rhodium-filtered-anode-sludge", 6, "fluid"),
             PM.ingredient("pm-borax", 3),
             PM.ingredient("pm-platinum-plate", 2)
         },
         results = 
         {
-            PM.product("pm-rhenium-chunks", 4),
+            PM.product("pm-rhodium-chunks", 4),
             PM.product_range_chance("pm-platinum-plate", 1, 2, 0.45)
         }
     },

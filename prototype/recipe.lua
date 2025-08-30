@@ -4329,7 +4329,7 @@ data:extend({
       PM.ingredient("pm-coal-gas", 2.5, "fluid"),
       PM.ingredient("pm-vanadium-oxide-catalyst", 1)
     },
-    results = 
+    results =
     {
       PM.product("pm-coke", 1),
       PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.9),
@@ -4346,7 +4346,7 @@ data:extend({
     {
       PM.ingredient("pm-tantalum-plate", 2)
     },
-    results = 
+    results =
     {
       PM.product("pm-tantalum-contacts", 4)
     }
@@ -4361,7 +4361,7 @@ data:extend({
     {
       PM.ingredient("pm-niobium-plate", 2)
     },
-    results = 
+    results =
     {
       PM.product("pm-niobium-contacts", 4)
     }

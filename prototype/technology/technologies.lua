@@ -4874,6 +4874,10 @@ data:extend({
       PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
       PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
       PM.unlock_recipe("pm-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-rhodium-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-rhodium-chunks"),
+      PM.unlock_recipe("pm-rhodium-ore"),
+      PM.unlock_recipe("pm-rhodium-plate")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
