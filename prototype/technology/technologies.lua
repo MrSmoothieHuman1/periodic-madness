@@ -5778,7 +5778,7 @@ data:extend({
   {
     
   },
-  prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock", "speed-module-3", "efficiency-module-3", "productivity-module-3"},
+  prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock", "speed-module-3", "efficiency-module-3", "productivity-module-3"},
   unit =
     {
       count = 550,
