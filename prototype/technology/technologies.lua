@@ -4511,84 +4511,6 @@ data:extend({
   },
 
 --MARK: Tier 2 science
-{
-    type = "technology",
-    name = "pm-speed-module-4",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/speed-module-4-tech.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-speed-module-4")
-    },
-    prerequisites = {"speed-module-3"},
-    unit =
-    {
-      count = 600,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
-      },
-      time = 60
-    }
-  },
-  { --tbf i should ask the guy im basing my schedule around if he has a specific date, but the fear of the unknown keeps me moticated
-    type = "technology",
-    name = "pm-efficiency-module-4",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/efficiency-module-4-tech.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-efficiency-module-4")
-    },
-    prerequisites = {"efficiency-module-3"},
-    unit =
-    {
-      count = 600,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
-      },
-      time = 60
-    }
-  },
-  {
-    type = "technology",
-    name = "pm-productivity-module-4",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/productivity-module-4-tech.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-productivity-module-4")
-    },
-    prerequisites = {"productivity-module-3"},
-    unit =
-    {
-      count = 600,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1}
-      },
-      time = 60
-    }
-  },
   {
     type = "technology",
     name = "pm-grouped-plastic-science-tier-2",
@@ -5848,18 +5770,18 @@ data:extend({
 
 --MARK: Tier 3 science
 {
-    type = "technology",
-    name = "pm-speed-module-5",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/speed-module-5-tech.png",
-    effects =
+  type = "technology",
+  name = "pm-advanced-modules",
+  icon_size = 256,
+  icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+  effects = 
+  {
+    
+  },
+  prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock", "speed-module-3", "efficiency-module-3", "productivity-module-3"},
+  unit =
     {
-      PM.unlock_recipe("pm-speed-module-5")
-    },
-    prerequisites = {"pm-speed-module-4", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
-    unit =
-    {
-      count = 1200,
+      count = 550,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -5874,20 +5796,20 @@ data:extend({
       },
       time = 100
     }
-  },
-  {
+},
+{
     type = "technology",
-    name = "pm-efficiency-module-5",
+    name = "pm-speed-module-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/efficiency-module-5-tech.png",
+    icon = "__periodic-madness__/graphics/technology/speed-module-4-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-efficiency-module-5")
+      PM.unlock_recipe("pm-speed-module-4")
     },
-    prerequisites = {"pm-efficiency-module-4", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
+    prerequisites = {"pm-advanced-modules"},
     unit =
     {
-      count = 1200,
+      count = 600,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -5900,22 +5822,50 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 100
+      time = 80
+    }
+  },
+  { --tbf i should ask the guy im basing my schedule around if he has a specific date, but the fear of the unknown keeps me moticated
+    type = "technology",
+    name = "pm-efficiency-module-4",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/efficiency-module-4-tech.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-efficiency-module-4")
+    },
+    prerequisites = {"pm-advanced-modules"},
+    unit =
+    {
+      count = 600,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 80
     }
   },
   {
     type = "technology",
-    name = "pm-productivity-module-5",
+    name = "pm-productivity-module-4",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/productivity-module-5-tech.png",
+    icon = "__periodic-madness__/graphics/technology/productivity-module-4-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-productivity-module-5")
+      PM.unlock_recipe("pm-productivity-module-4")
     },
-    prerequisites = {"pm-productivity-module-4", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
+    prerequisites = {"pm-advanced-modules"},
     unit =
     {
-      count = 1200,
+      count = 600,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -5928,7 +5878,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
-      time = 100
+      time = 80
     }
   },
   {
