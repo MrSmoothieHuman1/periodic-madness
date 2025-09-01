@@ -582,24 +582,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-mini-motor",
-    subgroup = "pm-intermediates",
-    energy_required = 2,
-    enabled = false,
-    show_amount_in_title = true,
-    ingredients =
-    {
-      PM.ingredient("copper-cable", 1),
-      PM.ingredient("iron-stick", 1),
-      PM.ingredient("pm-nickel-plate", 2)
-    },
-    results =
-    {
-      PM.product("pm-mini-motor", 2)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-brass-cog",
     energy_required = 1,
     subgroup = "pm-gears",

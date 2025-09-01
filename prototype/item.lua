@@ -39,14 +39,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-mini-motor",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/mini-motor.png",
-    subgroup = "pm-intermediates",
-    stack_size = 250
-  },
-  {
-    type = "item",
     name = "pm-sand",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sand.png",
