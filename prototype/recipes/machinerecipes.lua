@@ -1048,7 +1048,7 @@ data:extend({
       PM.ingredient("fast-splitter", 1),
       PM.ingredient("pm-polyethylene-plastic", 4),
       PM.ingredient("pm-solid-lubricant", 4),
-      PM.ingredient("pm-mini-motor", 2)
+      PM.ingredient("pm-basic-motor", 2)
     },
     results = {
       PM.product("pm-advanced-splitter", 1)

@@ -244,7 +244,7 @@ data.raw["recipe"]["locomotive"].ingredients =
 data.raw["recipe"]["car"].ingredients =
 {
   PM.ingredient("pm-vulcanised-rubber", 8),
-  PM.ingredient("pm-mini-motor", 4),
+  PM.ingredient("pm-basic-motor", 6),
   PM.ingredient("pm-basic-panelling", 8),
   PM.ingredient("pm-basic-framing", 16)
 }
@@ -671,7 +671,7 @@ data.raw["recipe"]["pump"].ingredients =
 {
   PM.ingredient("pm-basic-tubing", 10),
   PM.ingredient("steel-plate", 4),
-  PM.ingredient("pm-mini-motor", 4),
+  PM.ingredient("pm-basic-motor", 4),
   PM.ingredient("pm-basic-panelling", 8),
 }
 data.raw["recipe"]["laser-turret"].category = "crafting-with-fluid"
