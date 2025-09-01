@@ -87,7 +87,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-transition-metals-ore", 20),
+      PM.ingredient("pm-transition-metals-ore", 16),
       PM.ingredient("pm-chromic-acid", 20, "fluid")
     },
     results =
