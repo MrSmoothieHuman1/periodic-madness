@@ -4356,7 +4356,7 @@ data:extend({
       PM.ingredient("pm-carbon-monoxide", 40, "fluid"),
       PM.ingredient("pm-rhodium-plate", 2)
     },
-    results = 
+    results =
     {
       PM.product("pm-cyclohexane-carboxaldehyde-solution", 10, "fluid"),
       PM.product_chance("pm-rhodium-plate", 2, 0.85)
@@ -4370,12 +4370,12 @@ data:extend({
     category = "chemistry",
     allow_productivity = true,
     main_product = "pm-cyclohexane-carboxaldehyde",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-cyclohexane-carboxaldehyde-solution", 10, "fluid"),
       PM.ingredient("pm-sodium-sulfite", 5)
     },
-    results = 
+    results =
     {
       PM.product_range("pm-syngas", 5, 12.5, "fluid"),
       PM.product("pm-cyclohexane-carboxaldehyde", 5, "fluid")
@@ -4388,14 +4388,14 @@ data:extend({
     energy_required = 2,
     category = "pm-mixing",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-sodium-sulfite", 3),
       PM.ingredient("pm-sodium-hydroxide", 15, "fluid"),
       PM.ingredient("pm-sulfur-dioxide", 20, "fluid"),
       PM.ingredient("water", 40, "fluid")
     },
-    results = 
+    results =
     {
       PM.product("pm-phenylhydrazine-solution", 10, "fluid")
     }
@@ -4408,14 +4408,14 @@ data:extend({
     category = "pm-crystallisation",
     allow_productivity = true,
     main_product = "pm-phenylhydrazine",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-phenylhydrazine-solution", 10, "fluid", 2),
       PM.ingredient("pm-cobalt-catalyst", 2),
       PM.ingredient("pm-palladium-catalyst", 2),
       PM.ingredient("pm-coolant", 10, "fluid", 1)
     },
-    results = 
+    results =
     {
       PM.product("pm-hot-coolant", 10, "fluid", 1),
       PM.product("pm-phenylhydrazine", 5),
@@ -4432,7 +4432,7 @@ data:extend({
     category = "chemistry",
     allow_productivity = true,
     main_product = "pm-acetic-acid",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-methanol", 7.5, "fluid"),
       PM.ingredient("pm-carbon-monoxide", 15, "fluid"),
@@ -4458,7 +4458,7 @@ data:extend({
       PM.ingredient("pm-phenylhydrazine", 5),
       PM.ingredient("pm-acetic-acid", 10, "fluid")
     },
-    results = 
+    results =
     {
       PM.product("pm-NON-compound", 1),
       PM.product_range("pm-acetic-acid", 0, 10, "fluid")
@@ -4471,7 +4471,7 @@ data:extend({
     energy_required = 2,
     category = "chemistry",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-liquid-mercury", 25, "fluid"),
       PM.ingredient("pm-lithium-ore", 4),
@@ -4489,13 +4489,13 @@ data:extend({
     energy_required = 4,
     category = "pm-moltening",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-phenyllithium", 5),
       PM.ingredient("pm-benzene", 20, "fluid"),
       PM.ingredient("pm-carbon", 10)
     },
-    results = 
+    results =
     {
       PM.product("pm-2-phenylpyridine", 10, "fluid"),
     }
@@ -4524,12 +4524,12 @@ data:extend({
     energy_required = 30,
     category = "crafting-with-fluid",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-iridium-trichloride", 5),
       PM.ingredient("pm-2-phenylpyridine", 10, "fluid"),
     },
-    results = 
+    results =
     {
       PM.product("pm-tris-2-phenylpyridine-iridium", 1)
     }
@@ -4541,13 +4541,13 @@ data:extend({
     energy_required = 2,
     category = "chemistry",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       --should use silicotungstic acid in HM
       PM.ingredient("pm-acetic-acid", 10, "fluid"),
       PM.ingredient("pm-ethylene-gas", 20, "fluid")
     },
-    results = 
+    results =
     {
       PM.product("pm-ethyl-acetate", 10, "fluid")
     }
@@ -4559,12 +4559,12 @@ data:extend({
     energy_required = 4,
     category = "chemistry",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-ethyl-acetate", 10, "fluid"),
       PM.ingredient("pm-iridium-trichloride", 12)
     },
-    results = 
+    results =
     {
       PM.product("pm-ir-piq-3-acetate-solution", 12.5, "fluid")
     }
@@ -4583,7 +4583,7 @@ data:extend({
       PM.ingredient("pm-methanol", 5, "fluid"),
       PM.ingredient("pm-vanadium-oxide-catalyst", 2)
     },
-    results = 
+    results =
     {
       PM.product_chance("pm-vanadium-oxide-catalyst", 2, 0.75),
       PM.product("pm-ir-piq-3", 1)

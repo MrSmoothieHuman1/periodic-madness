@@ -65,6 +65,7 @@ Date: 2025-12-07
     - Fixed module tiers not taking the right amount of circuits.
     - Continued fixing and improving the factoriopedia.
     - Fixed some recipes and technologies using old, extremely old icons.
+    - Fixed caesium antimony to chloride having the wrong icon.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514
