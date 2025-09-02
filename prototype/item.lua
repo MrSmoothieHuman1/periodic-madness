@@ -1591,6 +1591,48 @@ data:extend({
     subgroup = "pm-intermediates",
     stack_size = 150
   },
+  {
+    type = "item",
+    name = "pm-phenylhydrazine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    stack_size = 75
+  },
+  {
+    type = "item",
+    name = "pm-NON-compound",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-phenyllithium",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    stack_size = 75
+  },
+  {
+    type = "item",
+    name = "pm-iridium-trichloride",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    stack_size = 75
+  },
+  {
+    type = "item",
+    name = "pm-tris-2-phenylpyridine-iridium",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-ir-piq-3",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    stack_size = 50
+  },
 
   {
     type = "item",

@@ -5776,8 +5776,21 @@ data:extend({
   icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
   effects = 
   {
+    PM.unlock_recipe("pm-cyclohexane-carboxaldehyde-solution"),
+    PM.unlock_recipe("pm-cyclohexane-carboxaldehyde"),
+    PM.unlock_recipe("pm-phenylhydrazine-solution"),
+    PM.unlock_recipe("pm-phenylhydrazine"),
+    PM.unlock_recipe("pm-acetic-acid"),
+    PM.unlock_recipe("pm-NON-compound"),
     PM.unlock_recipe("pm-advanced-module-speed-light"),
+    PM.unlock_recipe("pm-phenyllithium"),
+    PM.unlock_recipe("pm-2-phenylpyridine"),
+    PM.unlock_recipe("pm-iridium-trichloride"),
+    PM.unlock_recipe("pm-tris-2-phenylpyridine-iridium"),
     PM.unlock_recipe("pm-advanced-module-efficiency-light"),
+    PM.unlock_recipe("pm-ethyl-acetate"),
+    PM.unlock_recipe("pm-ir-piq-3-acetate-solution"),
+    PM.unlock_recipe("pm-ir-piq-3"),
     PM.unlock_recipe("pm-advanced-module-productivity-light")
   },
   prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock", "speed-module-3", "efficiency-module-3", "productivity-module-3"},
