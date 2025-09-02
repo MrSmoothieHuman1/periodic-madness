@@ -582,7 +582,17 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-polyethylene-plastic",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/advanced-polyethylene-plastic.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/polyethylene-plastic.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/dont-model-your-molecules-A.png",
+        icon_size = 128,
+      },
+    },
     category = "chemistry",
     subgroup = "pm-plastics",
     order = "e",
