@@ -4297,7 +4297,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-module-speed-light", 1),
-      PM.ingredient("pm-NON-compound", 1),
+      PM.ingredient("pm-NON-compound", 3),
       PM.ingredient("pm-radium-ore", 3),
       PM.ingredient("pm-borosilicate-glass", 3),
     },
@@ -4315,7 +4315,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-module-efficiency-light", 1),
-      PM.ingredient("pm-tris-2-phenylpyridine-iridium", 1),
+      PM.ingredient("pm-tris-2-phenylpyridine-iridium", 3),
       PM.ingredient("pm-radium-ore", 3),
       PM.ingredient("pm-borosilicate-glass", 3),
     },
@@ -4333,7 +4333,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-module-productivity-light", 1),
-      PM.ingredient("pm-ir-piq-3", 1),
+      PM.ingredient("pm-ir-piq-3", 3),
       PM.ingredient("pm-radium-ore", 3),
       PM.ingredient("pm-borosilicate-glass", 3),
     },
