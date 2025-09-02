@@ -195,7 +195,7 @@ data:extend({
     type = "recipe",
     name = "pm-caesium-antimony-seperation",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/caesium-iodine-to-chloride.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/caesium-antimony-to-chloride.png",
     enabled = false,
     energy_required = 4,
     category = "chemistry",
