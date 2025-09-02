@@ -1567,6 +1567,30 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/niobium-contacts.png",
     stack_size = 400,
   },
+  {
+    type = "item",
+    name = "pm-advanced-module-speed-light",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/advanced-speed-module-light.png",
+    subgroup = "pm-intermediates",
+    stack_size = 150
+  },
+  {
+    type = "item",
+    name = "pm-advanced-module-productivity-light",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/advanced-productivity-module-light.png",
+    subgroup = "pm-intermediates",
+    stack_size = 150
+  },
+  {
+    type = "item",
+    name = "pm-advanced-module-efficiency-light",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/advanced-efficiency-module-light.png",
+    subgroup = "pm-intermediates",
+    stack_size = 150
+  },
 
   {
     type = "item",

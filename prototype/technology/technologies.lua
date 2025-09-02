@@ -5776,7 +5776,9 @@ data:extend({
   icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
   effects = 
   {
-    
+    PM.unlock_recipe("pm-advanced-module-speed-light"),
+    PM.unlock_recipe("pm-advanced-module-efficiency-light"),
+    PM.unlock_recipe("pm-advanced-module-productivity-light")
   },
   prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock", "speed-module-3", "efficiency-module-3", "productivity-module-3"},
   unit =

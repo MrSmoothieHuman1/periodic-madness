@@ -1820,7 +1820,7 @@ data:extend({
     {
       PM.ingredient("pm-cobalt-blue", 5),
       PM.ingredient("speed-module", 1),
-      PM.ingredient("pm-module-speed-light", 1),
+      PM.ingredient("pm-advanced-module-speed-light", 1),
       PM.ingredient("pm-fluid-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
@@ -1840,7 +1840,7 @@ data:extend({
     {
       PM.ingredient("pm-chrome-green", 5),
       PM.ingredient("efficiency-module", 1),
-      PM.ingredient("pm-module-efficiency-light", 1),
+      PM.ingredient("pm-advanced-module-efficiency-light", 1),
       PM.ingredient("pm-fluid-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
@@ -1860,7 +1860,7 @@ data:extend({
     {
       PM.ingredient("pm-cadnium-red", 5),
       PM.ingredient("productivity-module", 1),
-      PM.ingredient("pm-module-productivity-light", 1),
+      PM.ingredient("pm-advanced-module-productivity-light", 1),
       PM.ingredient("pm-fluid-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
@@ -4286,6 +4286,60 @@ data:extend({
     results =
     {
       PM.product("pm-niobium-contacts", 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-module-speed-light",
+    enabled = false,
+    energy_required = 60,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-module-speed-light", 1),
+      PM.ingredient("pm-radium-ore", 3),
+      PM.ingredient("pm-borosilicate-glass", 3),
+      PM.ingredient("pm-indium-wire", 6)
+    },
+    results = 
+    {
+      PM.product("pm-advanced-module-speed-light", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-module-efficiency-light",
+    enabled = false,
+    energy_required = 60,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-module-efficiency-light", 1),
+      PM.ingredient("pm-radium-ore", 3),
+      PM.ingredient("pm-borosilicate-glass", 3),
+      PM.ingredient("pm-indium-wire", 6)
+    },
+    results = 
+    {
+      PM.product("pm-advanced-module-efficiency-light", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-module-productivity-light",
+    enabled = false,
+    energy_required = 60,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-module-productivity-light", 1),
+      PM.ingredient("pm-radium-ore", 3),
+      PM.ingredient("pm-borosilicate-glass", 3),
+      PM.ingredient("pm-indium-wire", 6)
+    },
+    results = 
+    {
+      PM.product("pm-advanced-module-productivity-light", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
