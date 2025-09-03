@@ -1602,7 +1602,7 @@ data:extend({
     type = "item",
     name = "pm-1-3-5-oxadiazine-NON-host",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/1,3,5-oxadiazine-NON-host.png",
     stack_size = 50
   },
   {
@@ -1623,14 +1623,14 @@ data:extend({
     type = "item",
     name = "pm-tris-2-phenylpyridine-iridium",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/tris(2-phenylpyridine)iridium.png",
     stack_size = 50
   },
   {
     type = "item",
     name = "pm-ir-piq-3",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/ir(piq)3.png",
     stack_size = 50
   },
 
