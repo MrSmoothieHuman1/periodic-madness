@@ -5781,7 +5781,7 @@ data:extend({
     PM.unlock_recipe("pm-phenylhydrazine-solution"),
     PM.unlock_recipe("pm-phenylhydrazine"),
     PM.unlock_recipe("pm-acetic-acid"),
-    PM.unlock_recipe("pm-1,3,5-oxadiazane-NON-host"),
+    PM.unlock_recipe("pm-1-3-5-oxadiazine-NON-host"),
     PM.unlock_recipe("pm-advanced-module-speed-light"),
     PM.unlock_recipe("pm-phenyllithium"),
     PM.unlock_recipe("pm-2-phenylpyridine"),

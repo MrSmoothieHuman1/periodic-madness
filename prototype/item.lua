@@ -1600,7 +1600,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-1,3,5-oxadiazane-NON-host",
+    name = "pm-1-3-5-oxadiazine-NON-host",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
     stack_size = 50
