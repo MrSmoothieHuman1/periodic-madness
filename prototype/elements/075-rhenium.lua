@@ -31,7 +31,13 @@ data:extend({
         type = "item",
         name = "pm-ammonium-perrhenate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ammonium-perrhenate.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ammonium-perrhenate.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ammonium-perrhenate-2.png", size = 64, scale = 0.5},
+
+        },
         subgroup = "pm-rhenium-tm",
         order = "e",
         stack_size = 100
