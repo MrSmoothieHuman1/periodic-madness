@@ -1867,6 +1867,7 @@ data.raw["projectile"]["destroyer-capsule"].action =
 data.raw["item"]["solid-fuel"].fuel_emissions_multiplier = 1.5
 data.raw["item"]["solid-fuel"].fuel_acceleration_multiplier = 1
 data.raw["item"]["solid-fuel"].fuel_top_speed_multiplier = 1.1
+data.raw["item"]["solid-fuel"].icon = "__periodic-madness__/graphics/icons/solid-fuel.png"
 
 data.raw["item"]["copper-cable"].subgroup = "pm-wires"
 data.raw["item"]["copper-cable"].order = "a"
