@@ -4297,7 +4297,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-module-speed-light", 1),
-      PM.ingredient("pm-NON-compound", 3),
+      PM.ingredient("pm-1,3,5-oxadiazane-NON-host", 3),
       PM.ingredient("pm-radium-ore", 3),
       PM.ingredient("pm-borosilicate-glass", 3),
     },
@@ -4446,12 +4446,12 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-NON-compound",
+    name = "pm-1,3,5-oxadiazane-NON-host",
     enabled = false,
     energy_required = 30,
     category = "crafting-with-fluid",
     allow_productivity = true,
-    main_product = "pm-NON-compound",
+    main_product = "pm-1,3,5-oxadiazane-NON-host",
     ingredients =
     {
       PM.ingredient("pm-cyclohexane-carboxaldehyde", 5, "fluid"),
@@ -4460,7 +4460,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-NON-compound", 1),
+      PM.product("pm-1,3,5-oxadiazane-NON-host", 1),
       PM.product_range("pm-acetic-acid", 0, 10, "fluid")
     }
   },
