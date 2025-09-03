@@ -23,12 +23,12 @@ data:extend({
         type = "fluid",
         name = "pm-ruthenium-filtered-anode-sludge",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/ruthenium-filtered-anode-sludge.png",
         subgroup = "pm-osmium-tm",
         order = "a",
         default_temperature = 15,
-        base_color = {r = 0, g = 0, b = 0},
-        flow_color = {r = 0, g = 0, b = 0}
+        base_color = {r = 0.36, g = 0.3, b = 0.55},
+        flow_color = {r = 0.36, g = 0.3, b = 0.55}
     },
 
     {

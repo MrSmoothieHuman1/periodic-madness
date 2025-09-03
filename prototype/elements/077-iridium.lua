@@ -83,8 +83,8 @@ data:extend({
         subgroup = "pm-iridium-tm",
         order = "f",
         default_temperature = 15,
-        base_color = {r = 0.4, g = 0.3, b = 0.45},
-        flow_color = {r = 0.4, g = 0.3, b = 0.45}
+        base_color = {r = 0.443, g = 0.34, b = 0.451},
+        flow_color = {r = 0.4443, g = 0.34, b = 0.451}
     },
 
     
