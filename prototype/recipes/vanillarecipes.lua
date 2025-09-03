@@ -442,28 +442,28 @@ data.raw["recipe"]["medium-electric-pole"].ingredients =
 data.raw["recipe"]["speed-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-speed-light", 1),
+  PM.ingredient("pm-speed-module-light", 1),
   PM.ingredient("electronic-circuit", 5),
   PM.ingredient("pm-cobalt-blue", 5)
 }
 data.raw["recipe"]["productivity-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-productivity-light", 1),
+  PM.ingredient("pm-productivity-module-light", 1),
   PM.ingredient("electronic-circuit", 5),
   PM.ingredient("pm-cadnium-red", 5)
 }
 data.raw["recipe"]["efficiency-module"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-efficiency-light", 1),
+  PM.ingredient("pm-efficiency-module-light", 1),
   PM.ingredient("electronic-circuit", 5),
   PM.ingredient("pm-chrome-green", 5)
 }
 data.raw["recipe"]["speed-module-2"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-speed-light", 1),
+  PM.ingredient("pm-speed-module-light", 1),
   PM.ingredient("electronic-circuit", 6),
   PM.ingredient("pm-fluid-circuit", 6),
   PM.ingredient("pm-cobalt-blue", 5)
@@ -471,7 +471,7 @@ data.raw["recipe"]["speed-module-2"].ingredients =
 data.raw["recipe"]["productivity-module-2"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-productivity-light", 1),
+  PM.ingredient("pm-productivity-module-light", 1),
   PM.ingredient("electronic-circuit", 6),
   PM.ingredient("pm-fluid-circuit", 6),
   PM.ingredient("pm-cadnium-red", 5)
@@ -479,7 +479,7 @@ data.raw["recipe"]["productivity-module-2"].ingredients =
 data.raw["recipe"]["efficiency-module-2"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-efficiency-light", 1),
+  PM.ingredient("pm-efficiency-module-light", 1),
   PM.ingredient("electronic-circuit", 6),
   PM.ingredient("pm-fluid-circuit", 6),
   PM.ingredient("pm-chrome-green", 5)
@@ -487,7 +487,7 @@ data.raw["recipe"]["efficiency-module-2"].ingredients =
 data.raw["recipe"]["speed-module-3"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-speed-light", 1),
+  PM.ingredient("pm-speed-module-light", 1),
   PM.ingredient("pm-fluid-circuit", 7),
   PM.ingredient("advanced-circuit", 7),
   PM.ingredient("pm-cobalt-blue", 5)
@@ -495,7 +495,7 @@ data.raw["recipe"]["speed-module-3"].ingredients =
 data.raw["recipe"]["productivity-module-3"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-productivity-light", 1),
+  PM.ingredient("pm-productivity-module-light", 1),
   PM.ingredient("pm-fluid-circuit", 7),
   PM.ingredient("advanced-circuit", 7),
   PM.ingredient("pm-cadnium-red", 5)
@@ -503,7 +503,7 @@ data.raw["recipe"]["productivity-module-3"].ingredients =
 data.raw["recipe"]["efficiency-module-3"].ingredients =
 {
   PM.ingredient("pm-module-case", 1),
-  PM.ingredient("pm-module-efficiency-light", 1),
+  PM.ingredient("pm-efficiency-module-light", 1),
   PM.ingredient("pm-fluid-circuit", 7),
   PM.ingredient("advanced-circuit", 7),
   PM.ingredient("pm-chrome-green", 6)
@@ -611,8 +611,8 @@ data.raw["recipe"]["battery-mk2-equipment"].ingredients =
 {
   PM.ingredient("battery-equipment", 5),
   PM.ingredient("processing-unit", 5),
-  PM.ingredient("pm-module-speed-light", 1),
-  PM.ingredient("pm-module-efficiency-light", 1)
+  PM.ingredient("pm-speed-module-light", 1),
+  PM.ingredient("pm-efficiency-module-light", 1)
 }
 data.raw["recipe"]["battery-equipment"].subgroup = "pm-modular-storage"
 data.raw["recipe"]["battery-equipment"].order = "b"

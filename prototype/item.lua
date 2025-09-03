@@ -411,7 +411,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-module-speed-light",
+    name = "pm-speed-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/speed-module-light.png",
     subgroup = "pm-intermediates",
@@ -419,7 +419,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-module-productivity-light",
+    name = "pm-productivity-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/productivity-module-light.png",
     subgroup = "pm-intermediates",
@@ -427,7 +427,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-module-efficiency-light",
+    name = "pm-efficiency-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/efficiency-module-light.png",
     subgroup = "pm-intermediates",
@@ -1569,7 +1569,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-advanced-module-speed-light",
+    name = "pm-advanced-speed-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-speed-module-light.png",
     subgroup = "pm-intermediates",
@@ -1577,7 +1577,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-advanced-module-productivity-light",
+    name = "pm-advanced-productivity-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-productivity-module-light.png",
     subgroup = "pm-intermediates",
@@ -1585,7 +1585,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-advanced-module-efficiency-light",
+    name = "pm-advanced-efficiency-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-efficiency-module-light.png",
     subgroup = "pm-intermediates",

@@ -3,11 +3,17 @@
     [
         ["pm-chrominum-leeching", "pm-chromite"],
         ["pm-chromite-seperation", "pm-ferrochromium"],
-        ["pm-ferrochrominum-carbon-seperation", "pm-chromium-ore"]
+        ["pm-ferrochrominum-carbon-seperation", "pm-chromium-ore"],
+        ["pm-module-efficiency-light", "pm-efficiency-module-light"],
+        ["pm-module-productivity-light", "pm-productivity-module-light"],
+        ["pm-module-speed-light", "pm-speed-module-light"]
     ],
     "item":
     [
         ["pm-ferrochrominum", "pm-ferrochromium"],
-        ["pm-chrominum-ore", "pm-chromium-ore"]
+        ["pm-chrominum-ore", "pm-chromium-ore"],
+        ["pm-module-efficiency-light", "pm-efficiency-module-light"],
+        ["pm-module-productivity-light", "pm-productivity-module-light"],
+        ["pm-module-speed-light", "pm-speed-module-light"]
     ]
 }

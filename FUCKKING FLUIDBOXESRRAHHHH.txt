@@ -655,7 +655,7 @@ end
     {
       PM.ingredient("pm-cobalt-blue", 5),
       PM.ingredient("speed-module-2", 1),
-      PM.ingredient("pm-module-speed-light", 1),
+      PM.ingredient("pm-speed-module-light", 1),
       PM.ingredient("advanced-circuit", 9),
       PM.ingredient("processing-unit", 9)
     },
@@ -675,7 +675,7 @@ end
     {
       PM.ingredient("pm-chrome-green", 5),
       PM.ingredient("efficiency-module-2", 1),
-      PM.ingredient("pm-module-efficiency-light", 1),
+      PM.ingredient("pm-efficiency-module-light", 1),
       PM.ingredient("advanced-circuit", 9),
       PM.ingredient("processing-unit", 9)
     },
@@ -695,7 +695,7 @@ end
     {
       PM.ingredient("pm-cadnium-red", 5),
       PM.ingredient("productivity-module-2", 1),
-      PM.ingredient("pm-module-productivity-light", 1),
+      PM.ingredient("pm-productivity-module-light", 1),
       PM.ingredient("advanced-circuit", 9),
       PM.ingredient("processing-unit", 9)
     },

@@ -291,11 +291,11 @@ data.raw["technology"]["modules"].effects =
 {
   PM.unlock_recipe("pm-module-case"),
   PM.unlock_recipe("pm-gallium-nitride"),
-  PM.unlock_recipe("pm-module-speed-light"),
+  PM.unlock_recipe("pm-speed-module-light"),
   PM.unlock_recipe("pm-aluminium-gallium-indium-phosphide"),
-  PM.unlock_recipe("pm-module-productivity-light"),
+  PM.unlock_recipe("pm-productivity-module-light"),
   PM.unlock_recipe("pm-gallium-arsenide"),
-  PM.unlock_recipe("pm-module-efficiency-light"),
+  PM.unlock_recipe("pm-efficiency-module-light"),
 
 }
 data.raw["technology"]["modules"].prerequisites = {"pm-trace-gas-refining", "pm-indium-processing"}

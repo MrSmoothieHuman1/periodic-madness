@@ -5782,16 +5782,16 @@ data:extend({
     PM.unlock_recipe("pm-phenylhydrazine"),
     PM.unlock_recipe("pm-acetic-acid"),
     PM.unlock_recipe("pm-1-3-5-oxadiazine-NON-host"),
-    PM.unlock_recipe("pm-advanced-module-speed-light"),
+    PM.unlock_recipe("pm-advanced-speed-module-light"),
     PM.unlock_recipe("pm-phenyllithium"),
     PM.unlock_recipe("pm-2-phenylpyridine"),
     PM.unlock_recipe("pm-iridium-trichloride"),
     PM.unlock_recipe("pm-tris-2-phenylpyridine-iridium"),
-    PM.unlock_recipe("pm-advanced-module-efficiency-light"),
+    PM.unlock_recipe("pm-advanced-efficiency-module-light"),
     PM.unlock_recipe("pm-ethyl-acetate"),
     PM.unlock_recipe("pm-ir-piq-3-acetate-solution"),
     PM.unlock_recipe("pm-ir-piq-3"),
-    PM.unlock_recipe("pm-advanced-module-productivity-light")
+    PM.unlock_recipe("pm-advanced-productivity-module-light")
   },
   prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock", "speed-module-3", "efficiency-module-3", "productivity-module-3"},
   unit =

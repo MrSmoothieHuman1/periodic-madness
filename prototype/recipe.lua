@@ -767,7 +767,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-module-speed-light",
+    name = "pm-speed-module-light",
     energy_required = 5,
     subgroup = "pm-modules",
     order = "c",
@@ -781,12 +781,12 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-module-speed-light", 1)
+      PM.product("pm-speed-module-light", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-module-efficiency-light",
+    name = "pm-efficiency-module-light",
     energy_required = 5,
     enabled = false,
     subgroup = "pm-modules",
@@ -800,12 +800,12 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-module-efficiency-light", 1)
+      PM.product("pm-efficiency-module-light", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-module-productivity-light",
+    name = "pm-productivity-module-light",
     energy_required = 5,
     enabled = false,
     subgroup = "pm-modules",
@@ -819,7 +819,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-module-productivity-light", 1)
+      PM.product("pm-productivity-module-light", 1)
     }
   },
   {
@@ -1207,7 +1207,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.9),
-      PM.product_chance("pm-module-speed-light", 1, 0.9),
+      PM.product_chance("pm-speed-module-light", 1, 0.9),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.8)
     }
   },
@@ -1228,7 +1228,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-module-speed-light", 1, 0.8),
+      PM.product_chance("pm-speed-module-light", 1, 0.8),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.7),
       PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.7),
     }
@@ -1250,7 +1250,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-module-efficiency-light", 1, 0.8),
+      PM.product_chance("pm-efficiency-module-light", 1, 0.8),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
     }
   },
@@ -1271,7 +1271,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.7),
-      PM.product_chance("pm-module-efficiency-light", 1, 0.7),
+      PM.product_chance("pm-efficiency-module-light", 1, 0.7),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.6),
       PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.6),
     }
@@ -1293,7 +1293,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-module-productivity-light", 1, 0.8),
+      PM.product_chance("pm-productivity-module-light", 1, 0.8),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
     }
   },
@@ -1314,7 +1314,7 @@ data:extend({
     results =
     {
       PM.product_chance("pm-module-case", 1, 0.7),
-      PM.product_chance("pm-module-productivity-light", 1, 0.7),
+      PM.product_chance("pm-productivity-module-light", 1, 0.7),
       PM.product_range_chance("electronic-circuit", 2, 4, 0.6),
       PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.6),
     }
@@ -1820,7 +1820,7 @@ data:extend({
     {
       PM.ingredient("pm-cobalt-blue", 5),
       PM.ingredient("speed-module", 1),
-      PM.ingredient("pm-advanced-module-speed-light", 1),
+      PM.ingredient("pm-advanced-speed-module-light", 1),
       PM.ingredient("pm-fluid-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
@@ -1840,7 +1840,7 @@ data:extend({
     {
       PM.ingredient("pm-chrome-green", 5),
       PM.ingredient("efficiency-module", 1),
-      PM.ingredient("pm-advanced-module-efficiency-light", 1),
+      PM.ingredient("pm-advanced-efficiency-module-light", 1),
       PM.ingredient("pm-fluid-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
@@ -1860,7 +1860,7 @@ data:extend({
     {
       PM.ingredient("pm-cadnium-red", 5),
       PM.ingredient("productivity-module", 1),
-      PM.ingredient("pm-advanced-module-productivity-light", 1),
+      PM.ingredient("pm-advanced-productivity-module-light", 1),
       PM.ingredient("pm-fluid-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
@@ -2375,7 +2375,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-lithium-sulfur-battery-equipment", 4),
-      PM.ingredient("pm-module-speed-light", 1),
+      PM.ingredient("pm-speed-module-light", 1),
       PM.ingredient("low-density-structure", 2),
       PM.ingredient("processing-unit", 5)
     },
@@ -3767,7 +3767,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-module-speed-light", 1)
+      PM.product("pm-speed-module-light", 1)
     }
   },
   {
@@ -3797,7 +3797,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-module-efficiency-light", 1)
+      PM.product("pm-efficiency-module-light", 1)
     }
   },
   {
@@ -3827,7 +3827,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-module-productivity-light", 1)
+      PM.product("pm-productivity-module-light", 1)
     }
   },
   {
@@ -4290,56 +4290,56 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-advanced-module-speed-light",
+    name = "pm-advanced-speed-module-light",
     enabled = false,
     energy_required = 60,
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-module-speed-light", 1),
+      PM.ingredient("pm-speed-module-light", 1),
       PM.ingredient("pm-1-3-5-oxadiazine-NON-host", 3),
       PM.ingredient("pm-radium-ore", 3),
       PM.ingredient("pm-borosilicate-glass", 3),
     },
     results = 
     {
-      PM.product("pm-advanced-module-speed-light", 1)
+      PM.product("pm-advanced-speed-module-light", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-advanced-module-efficiency-light",
+    name = "pm-advanced-efficiency-module-light",
     enabled = false,
     energy_required = 60,
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-module-efficiency-light", 1),
+      PM.ingredient("pm-efficiency-module-light", 1),
       PM.ingredient("pm-tris-2-phenylpyridine-iridium", 3),
       PM.ingredient("pm-radium-ore", 3),
       PM.ingredient("pm-borosilicate-glass", 3),
     },
     results = 
     {
-      PM.product("pm-advanced-module-efficiency-light", 1)
+      PM.product("pm-advanced-efficiency-module-light", 1)
     }
   },
   {
     type = "recipe",
-    name = "pm-advanced-module-productivity-light",
+    name = "pm-advanced-productivity-module-light",
     enabled = false,
     energy_required = 60,
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-module-productivity-light", 1),
+      PM.ingredient("pm-productivity-module-light", 1),
       PM.ingredient("pm-ir-piq-3", 3),
       PM.ingredient("pm-radium-ore", 3),
       PM.ingredient("pm-borosilicate-glass", 3),
     },
     results = 
     {
-      PM.product("pm-advanced-module-productivity-light", 1)
+      PM.product("pm-advanced-productivity-module-light", 1)
     }
   },
   {
