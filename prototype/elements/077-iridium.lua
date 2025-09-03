@@ -31,7 +31,14 @@ data:extend({
         type = "item",
         name = "pm-iridium-sponge",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/iridium-sponge.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/iridium-sponge.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/iridium-sponge-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/iridium-sponge-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/iridium-sponge-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-iridium-tm",
         order = "g",
         stack_size = 250
