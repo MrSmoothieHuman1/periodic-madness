@@ -64,7 +64,7 @@ data:extend({
     type = "fluid",
     name = "pm-ammonium-dimolybdate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/ammonium-dimolybdate.png",
     subgroup = "pm-molybdenum-tm",
     order = "g",
     default_temperature = 15,
