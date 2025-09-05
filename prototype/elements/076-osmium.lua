@@ -4,7 +4,14 @@ data:extend({
         type = "item",
         name = "pm-osmium-oxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/osmium-oxide.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/osmium-oxide.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/osmium-oxide-2.png", size = 64, scale = 0.5},
+          --{filename = "__periodic-madness__/graphics/icons/ores/osmium-ore-3.png", size = 64, scale = 0.5},
+          --{filename = "__periodic-madness__/graphics/icons/ores/osmium-ore-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-osmium-tm",
         order = "g",
         stack_size = 250
