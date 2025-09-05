@@ -115,7 +115,7 @@ data:extend({
             shift = { 0, 1.5 }
           },
           {
-            icon = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",
+            icon = "__periodic-madness__/graphics/icons/ores/osmium-ore.png",
             icon_size = 64,
             scale = 0.33,
             shift = {0, -7.5}
@@ -149,6 +149,7 @@ data:extend({
         energy_required = 9,
         enabled = false,
         allow_decomposition = false,
+        main_product = "pm-osmiridium-plate",
         ingredients =
         {
           PM.ingredient("pm-molten-osmiridium", 5, "fluid"),
