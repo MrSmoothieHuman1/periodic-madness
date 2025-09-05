@@ -47,7 +47,14 @@ data:extend({
         type = "item",
         name = "pm-iridium-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/iridium-ore.png",
+        pictures = 
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/iridium-ore.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/iridium-ore-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/iridium-ore-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/iridium-ore-4.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-iridium-tm",
         order = "h",
         stack_size = 200
