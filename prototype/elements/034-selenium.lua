@@ -4,7 +4,12 @@ data:extend({
         type = "item",
         name = "pm-selenium-dioxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/selenium-dioxide.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/selenium-dioxide.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/selenium-dioxide-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-selenium-rnm",
         order = "b",
         stack_size = 300
