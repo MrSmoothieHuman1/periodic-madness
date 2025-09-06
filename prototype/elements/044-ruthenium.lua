@@ -13,7 +13,13 @@ data:extend({
         type = "item",
         name = "pm-ruthenium-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/ruthenium-ore.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-ruthenium-tm",
         order = "c",
         stack_size = 200

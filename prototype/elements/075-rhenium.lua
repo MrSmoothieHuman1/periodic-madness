@@ -36,7 +36,6 @@ data:extend({
         {
           {filename = "__periodic-madness__/graphics/icons/ammonium-perrhenate.png", size = 64, scale = 0.5},
           {filename = "__periodic-madness__/graphics/icons/ammonium-perrhenate-2.png", size = 64, scale = 0.5},
-
         },
         subgroup = "pm-rhenium-tm",
         order = "e",
