@@ -45,10 +45,15 @@ data:extend({
     type = "item",
     name = "pm-molybdenite-oxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/molybdenum-disulfate.png",
+    icon = "__periodic-madness__/graphics/icons/molybdenite-oxide.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/molybdenite-oxide.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/molybdenite-oxide-2.png", size = 64, scale = 0.5}
+    },
     subgroup = "pm-molybdenum-tm",
     order = "e",
-    stack_size = 200
+    stack_size = 175
   },
   {
     type = "item",
@@ -62,7 +67,7 @@ data:extend({
     },
     subgroup = "pm-molybdenum-tm",
     order = "f",
-    stack_size = 150
+    stack_size = 100
   },
 
   {
