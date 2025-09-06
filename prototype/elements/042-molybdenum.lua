@@ -54,7 +54,12 @@ data:extend({
     type = "item",
     name = "pm-ammonium-molybdate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/molybdenum-disulfate.png",
+    icon = "__periodic-madness__/graphics/icons/ammonium-molybdate.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ammonium-molybdate.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ammonium-molybdate-2.png", size = 64, scale = 0.5}
+    },
     subgroup = "pm-molybdenum-tm",
     order = "f",
     stack_size = 150
