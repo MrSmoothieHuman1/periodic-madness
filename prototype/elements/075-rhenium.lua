@@ -46,7 +46,13 @@ data:extend({
         type = "item",
         name = "pm-rhenium-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/rhenium-ore.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/rhenium-ore.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/rhenium-ore-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/rhenium-ore-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-rhenium-tm",
         order = "f",
         stack_size = 200
