@@ -13,7 +13,13 @@ data:extend({
         type = "item",
         name = "pm-rhodium-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/rhodium-ore.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/rhodium-ore.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/rhodium-ore-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/rhodium-ore-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-rhodium-tm",
         order = "c",
         stack_size = 200
