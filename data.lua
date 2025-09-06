@@ -130,6 +130,7 @@ require("prototype.entity.projectiles")
 require("prototype.entity.stickers")
 require("prototype.entity.enemies")
 require("prototype.entity.pollution-limits")
+require("prototype.entity.heat-exchangers")
 
 require("prototype.remnants")
 require("prototype.achievements")

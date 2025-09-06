@@ -66,6 +66,9 @@ Date: 2025-12-07
     - Continued fixing and improving the factoriopedia.
     - Fixed some recipes and technologies using old, extremely old icons.
     - Fixed caesium antimony to chloride having the wrong icon.
+    - Fixed heat exchanger 1 being worse then it should be.
+    - Fixed heat exchanger 2 not producing the correct temp steam.
+    - Fixed steam turbines not being able to take higher temp steam.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514
