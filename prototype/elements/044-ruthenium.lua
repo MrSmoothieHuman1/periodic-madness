@@ -4,7 +4,12 @@ data:extend({
         type = "item",
         name = "pm-ammonium-ruthenium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ammonium-ruthenium-chloride.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ammonium-ruthenium-chloride.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ammonium-ruthenium-chloride-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-ruthenium-tm",
         order = "b",
         stack_size = 250
