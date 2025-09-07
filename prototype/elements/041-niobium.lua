@@ -13,7 +13,14 @@ data:extend({
         type = "item",
         name = "pm-niobium-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/niobium-ore.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/niobium-ore.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/niobium-ore-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/niobium-ore-3.png", size = 64, scale = 0.5},
+            --{filename = "__periodic-madness__/graphics/icons/ores/niobium-ore-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-niobium-tm",
         order = "b",
         stack_size = 200,
@@ -61,7 +68,7 @@ data:extend({
         category = "pm-moltening",
         subgroup = "pm-niobium-tm",
         order = "b",
-        main_product = "pm-tantalum-ore",
+        main_product = "pm-niobium-ore",
         ingredients = 
         {
             PM.ingredient("pm-niobite-oxide", 5),

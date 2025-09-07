@@ -32,7 +32,14 @@ data:extend({
         type = "item",
         name = "pm-tantalum-ore",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/tantalum-ore.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/tantalum-ore.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/tantalum-ore-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/tantalum-ore-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/tantalum-ore-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-tantalum-tm",
         order = "e",
         stack_size = 200,
