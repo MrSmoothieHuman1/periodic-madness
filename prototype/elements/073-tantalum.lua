@@ -5,7 +5,14 @@ data:extend({
         type = "item",
         name = "pm-coltan",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/coltan.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/coltan.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/coltan-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/coltan-3.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/coltan-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-tantalum-tm",
         order = "a",
         stack_size = 250,
