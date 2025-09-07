@@ -1,0 +1,10 @@
+{
+	"recipe": [
+		["pm-refinery-gas-voiding", "pm-refinery-gases-voiding"],
+		["pm-diesel-gas-voiding", "pm-diesel-voiding"],
+		["pm-butene-voiding", "pm-butene-gas-voiding"],
+		["pm-butane-voiding", "pm-butane-gas-voiding"],
+		["pm-ethylene-voiding", "pm-ethylene-gas-voiding"],
+		["pm-ammonia-voiding", "pm-ammonia-gas-voiding"]
+	]
+}

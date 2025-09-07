@@ -9,7 +9,9 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 1, g = 1, b = 0},
     flow_color = {r = 1, g = 1, b = 0},
-    auto_barrel = false
+    auto_barrel = false,
+    auto_void = true,
+    auto_void_emissions = 1.5,
   },
   {
     type = "fluid",
@@ -21,7 +23,9 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 1, g = 0.8, b = 0},
     flow_color = {r = 1, g = 0.8, b = 0},
-    auto_barrel = false
+    auto_barrel = false,
+    auto_void = true,
+    auto_void_emissions = 1.75,
   },
   {
     type = "fluid",
@@ -44,7 +48,9 @@ data:extend({
     order = "d",
     default_temperature = 15,
     base_color = {r = 0.56, g = 0.422, b = 0.22},
-    flow_color = {r = 0.56, g = 0.422, b = 0.22}
+    flow_color = {r = 0.56, g = 0.422, b = 0.22},
+    auto_void = true,
+    auto_void_emissions = 2,
   },
 
   --MARK: Sulfuric acid
