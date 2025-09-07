@@ -8990,7 +8990,7 @@ fluid_boxes =
     type = "assembling-machine",
     name = "pm-circuit-megassembler-MK2",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler-MK2.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler-mk2.png",
     minable = { mining_time = 0.85, result = "pm-circuit-megassembler" },
     max_health = 2250,
     collision_box = { { -3.4, -3.4 }, { 3.4, 3.4 } },

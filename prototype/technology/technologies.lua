@@ -4904,7 +4904,7 @@ data:extend({
     type = "technology",
     name = "pm-circuit-megassembler-MK2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/circuit-megassembler-MK2.png",
+    icon = "__periodic-madness__/graphics/technology/circuit-megassembler-mk2.png",
     effects =
     {
       PM.unlock_recipe("pm-circuit-megassembler-MK2")
