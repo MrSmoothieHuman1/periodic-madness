@@ -4,7 +4,16 @@ data:extend({
         type = "item",
         name = "pm-anode-mud",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/anode-mud.png",
+        pictures = 
+        {
+          {filename = "__periodic-madness__/graphics/icons/anode-mud.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/anode-mud-2.png", size = 64, scale = 0.5},
+          --{filename = "__periodic-madness__/graphics/icons/anode-mud-3.png", size = 64, scale = 0.5},
+          --{filename = "__periodic-madness__/graphics/icons/anode-mud-4.png", size = 64, scale = 0.5},
+        },
+        --has_random_tint = true,
+        --random_tint_color = {r = 0.9, g = 0, b = 0},
         subgroup = "pm-iridium-tm",
         order = "a",
         stack_size = 600
