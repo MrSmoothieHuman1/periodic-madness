@@ -72,12 +72,12 @@ data:extend({
         type = "fluid",
         name = "pm-niobite-waste-water",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-tailings.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/niobite-waste-water.png",
         subgroup = "pm-tantalum-tm",
         order = "g",
         default_temperature = 15,
-        base_color = {r = 0.3, g = 0.3, b = 0.2},
-        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+        base_color = {r = 0.71, g = 0.859, b = 0.84},
+        flow_color = {r = 0.71, g = 0.859, b = 0.84},
     },
 
     {
