@@ -27,7 +27,13 @@ data:extend({
         type = "item",
         name = "pm-rhenium-oxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/rhenium-oxide.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/rhenium-oxide.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/rhenium-oxide-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/rhenium-oxide-3.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-rhenium-tm",
         order = "c",
         stack_size = 250
