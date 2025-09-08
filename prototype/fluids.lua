@@ -79,7 +79,8 @@ data:extend({
     order = "i",
     default_temperature = 15,
     base_color = {r = 0, g = 0, b = 0},
-    flow_color = {r = 0, g = 0, b = 0}
+    flow_color = {r = 0, g = 0, b = 0},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -90,7 +91,8 @@ data:extend({
     order = "h",
     default_temperature = 15,
     base_color = {r = 0.61, g = 0.4, b = 0},
-    flow_color = {r = 0.61, g = 0.4, b = 0}
+    flow_color = {r = 0.61, g = 0.4, b = 0},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -101,7 +103,8 @@ data:extend({
     order = "g",
     default_temperature = 15,
     base_color = {r = 0, g = 0.4, b = 0},
-    flow_color = {r = 0, g = 0.4, b = 0}
+    flow_color = {r = 0, g = 0.4, b = 0},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -112,7 +115,8 @@ data:extend({
     order = "f",
     default_temperature = 15,
     base_color = {r = 0.333, g = 0.333, b = 0.332},
-    flow_color = {r = 0.333, g = 0.333, b = 0.332}
+    flow_color = {r = 0.333, g = 0.333, b = 0.332},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -123,7 +127,8 @@ data:extend({
     order = "e",
     default_temperature = 15,
     base_color = {r = 0.666, g = 0.666, b = 0.666},
-    flow_color = {r = 0.666, g = 0.666, b = 0.666}
+    flow_color = {r = 0.666, g = 0.666, b = 0.666},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -134,7 +139,8 @@ data:extend({
     order = "d",
     default_temperature = 15,
     base_color = {r = 0, g = 0, b = 0.4},
-    flow_color = {r = 0, g = 0, b = 0.4}
+    flow_color = {r = 0, g = 0, b = 0.4},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -145,7 +151,8 @@ data:extend({
     order = "c",
     default_temperature = 15,
     base_color = {r = 0.5, g = 0, b = 0},
-    flow_color = {r = 0.5, g = 0, b = 0}
+    flow_color = {r = 0.5, g = 0, b = 0},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -156,7 +163,8 @@ data:extend({
     order = "b",
     default_temperature = 15,
     base_color = {r = 0.77, g = 0.639, b = 0},
-    flow_color = {r = 0.77, g = 0.639, b = 0}
+    flow_color = {r = 0.77, g = 0.639, b = 0},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -167,7 +175,8 @@ data:extend({
     order = "j",
     default_temperature = 15,
     base_color = {r = 1, g = 1, b = 1 },
-    flow_color = {r = 1, g = 1, b = 1 }
+    flow_color = {r = 1, g = 1, b = 1 },
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -178,7 +187,8 @@ data:extend({
     order = "k",
     default_temperature = 15,
     base_color = {r = 0.7, g = 0.7, b = 0.7},
-    flow_color = {r = 0.7, g = 0.7, b = 0.7}
+    flow_color = {r = 0.7, g = 0.7, b = 0.7},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -190,6 +200,7 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.671, b = 0.8},
     flow_color = {r = 0.8, g = 0.671, b = 0.8},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -201,7 +212,9 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.666, g = 0.666, b = 0.332},
     flow_color = {r = 0.666, g = 0.666, b = 0.332},
-    auto_barrel = false
+    auto_barrel = false,
+    auto_void = true,
+    auto_void_emissions = 1.1,
   },
   {
     type = "fluid",
@@ -213,7 +226,9 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.555, g = 0.555, b = 0.555},
     flow_color = {r = 0.555, g = 0.555, b = 0.555},
-    auto_barrel = false
+    auto_barrel = false,
+    auto_void = true,
+    auto_void_emissions = 1.25,
   },
   {
     type = "fluid",
@@ -666,7 +681,8 @@ data:extend({
     order = "g",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.8, b = 0.8},
-    flow_color = {r = 0.8, g = 0.8, b = 0.8}
+    flow_color = {r = 0.8, g = 0.8, b = 0.8},
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -759,6 +775,8 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.6, g = 0.6, b = 1 },
     flow_color = {r = 0.6, g = 0.6, b = 1 },
+    auto_void = true,
+    auto_void_emissions = 1.25,
   },
   {
     type = "fluid",
@@ -1066,7 +1084,8 @@ data:extend({
     default_temperature = 15,
     auto_barrel = false,
     base_color = {r = 0.4, g = 0.1, b = 0.1 },
-    flow_color = {r = 0.4, g = 0.1, b = 0.1 }
+    flow_color = {r = 0.4, g = 0.1, b = 0.1 },
+    auto_void = true,
   },
   {
     type = "fluid",
@@ -1548,6 +1567,8 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.3, g = 0.1, b = 0.1},
     flow_color = {r = 0.3, g = 0.1, b = 0.1},
+    auto_void = true,
+    auto_void_emissions = 1.5,
   },
   {
     type = "fluid",

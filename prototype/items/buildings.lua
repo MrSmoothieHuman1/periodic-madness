@@ -894,7 +894,7 @@ data:extend({
     type = "module",
     name = "pm-circuit-megassembler-MK2",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler-MK2.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler-mk2.png",
     category = "pm-circuit-megassembler-module-MK2",
     tier = 1,
     effect = {speed = 1, consumption = 1, pollution = 0.5},

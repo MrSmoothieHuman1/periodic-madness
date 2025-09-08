@@ -1,0 +1,1 @@
+require("prototype.recipes.building-recipes.burnining")
