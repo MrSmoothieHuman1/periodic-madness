@@ -4,7 +4,12 @@ data:extend({
         type = "item",
         name = "pm-molybdenum-porphyry-deposit",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/molybdenum-porphyry-deposit.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/molybdenum-porphyry-deposit.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/molybdenum-porphyry-deposit-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-rhenium-tm",
         order = "a",
         stack_size = 450
