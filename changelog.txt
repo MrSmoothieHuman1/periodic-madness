@@ -60,6 +60,7 @@ Date: 2025-12-07
     - Changed tier 4 modules to use special lights, as they were meant to do ages ago.
     - Changed mixed bastanite to take 16 TM ore per craft, instead of 20.
     - Changed rubidium recipes to take coolant, and output hot coolant.
+    - Let all octane fluids be voided in the burn-inator.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.
