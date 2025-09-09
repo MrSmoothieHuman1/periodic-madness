@@ -127,14 +127,17 @@ data:extend({
     subgroup = "pm-rubidium-am",
     order = "c",
     energy_required = 3,
+    main_product = "pm-rubidium-alum",
     ingredients =
     {
       PM.ingredient("pm-70-rubidium-alum", 2),
+      PM.ingredient("pm-coolant", 2.5, "fluid")
       --PM.ingredient("pm-rubidium-alum", 1)
     },
     results =
     {
-      PM.product("pm-rubidium-alum", 2)
+      PM.product("pm-rubidium-alum", 2),
+      PM.product("pm-hot-coolant", 2.5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -145,14 +148,17 @@ data:extend({
     subgroup = "pm-rubidium-am",
     order = "d",
     energy_required = 3,
+    main_product = "pm-70-rubidium-alum",
     ingredients =
     {
       PM.ingredient("pm-50-rubidium-alum", 2),
+      PM.ingredient("pm-coolant", 5, "fluid")
       --PM.ingredient("pm-70-rubidium-alum", 1)
     },
     results =
     {
-      PM.product("pm-70-rubidium-alum", 2)
+      PM.product("pm-70-rubidium-alum", 2),
+      PM.product("pm-hot-coolant", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -163,14 +169,17 @@ data:extend({
     subgroup = "pm-rubidium-am",
     order = "e",
     energy_required = 3,
+    main_product = "pm-50-rubidium-alum",
     ingredients =
     {
       PM.ingredient("pm-30-rubidium-alum", 2),
+      PM.ingredient("pm-coolant", 7.5, "fluid")
       --PM.ingredient("pm-50-rubidium-alum", 1)
     },
     results =
     {
-      PM.product("pm-50-rubidium-alum", 2)
+      PM.product("pm-50-rubidium-alum", 2),
+      PM.product("pm-hot-coolant", 7.5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
