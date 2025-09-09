@@ -1534,7 +1534,7 @@ data:extend({
     type = "item",
     name = "pm-lead-fluoride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    icon = "__periodic-madness__/graphics/icons/lead-fluoride.png",
     subgroup = "pm-batteries",
     order = "p",
     stack_size = 50
