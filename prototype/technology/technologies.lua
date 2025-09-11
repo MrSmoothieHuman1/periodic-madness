@@ -3586,7 +3586,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-iron-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-iron-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-pig-iron"),
