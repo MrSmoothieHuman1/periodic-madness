@@ -114,15 +114,15 @@ data.raw["recipe"]["express-transport-belt"].ingredients =
 {
   PM.ingredient("pm-advanced-transport-belt", 1),
   PM.ingredient("low-density-structure", 1),
-  PM.ingredient("processing-unit", 2),
+  PM.ingredient("processing-unit", 1),
   PM.ingredient("pm-heavy-lubricant", 5, "fluid")
 }
 data.raw["recipe"]["express-underground-belt"].ingredients =
 {
   PM.ingredient("pm-advanced-underground-belt", 2),
   PM.ingredient("low-density-structure", 2),
-  PM.ingredient("processing-unit", 1),
-  PM.ingredient("pm-heavy-lubricant", 10, "fluid")
+  PM.ingredient("processing-unit", 2),
+  PM.ingredient("pm-heavy-lubricant", 7.5, "fluid")
 }
 data.raw["recipe"]["express-underground-belt"].energy_required = 3
 data.raw["recipe"]["express-splitter"].ingredients =

@@ -61,6 +61,8 @@ Date: 2025-12-07
     - Changed mixed bastanite to take 16 TM ore per craft, instead of 20.
     - Changed rubidium recipes to take coolant, and output hot coolant.
     - Let all octane fluids be voided in the burn-inator.
+    - Lowered the amount of processing units express belts take from 2 to 1.
+    - Lowered the amount of heavy lube express undergrounds take from 10 to 7.5, but increased its circuit count from 1 to 2.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.
