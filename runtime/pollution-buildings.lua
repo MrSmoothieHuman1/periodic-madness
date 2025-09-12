@@ -1,5 +1,3 @@
-local flasher = require("runtime.alert-flashing")
-
 ---@type event_handler
 local handler = {on_nth_tick = {}, events = {}}
 
@@ -69,8 +67,8 @@ end
 ---@param object PollutionBuilding
 ---@param diode defines.entity_status_diode
 ---@param status LocalisedString
----@param signal SignalID
----@param alert LocalisedString
+---@param signal? SignalID
+---@param alert? LocalisedString
 ---@param sprite LuaRendering.draw_sprite_param
 local function disable_building(entity, object, diode, status, signal, alert, sprite)
 if signal and alert then
@@ -82,7 +80,6 @@ end
     entity.disabled_by_script = true
     entity.custom_status = { diode = diode, label = status }
     object.alert = rendering.draw_sprite(sprite)
-    flasher.add_render(object.alert)
   else
     alert.time_to_live = sprite.time_to_live
   end
@@ -117,6 +114,7 @@ local function check_pollution(entity, pollution_object)
         target = entity,
         forces = entity.force,
         time_to_live = 120,
+        blink_interval = 30,
       }
     )
 
@@ -134,6 +132,7 @@ local function check_pollution(entity, pollution_object)
         target = entity,
         forces = entity.force,
         time_to_live = 120,
+        blink_interval = 30,
       }
     )
 

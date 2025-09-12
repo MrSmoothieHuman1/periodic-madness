@@ -1,4 +1,3 @@
-local flasher = require("runtime.alert-flashing")
 ---@type event_handler
 local event_handler = {events={}}
 local events = event_handler.events
@@ -138,8 +137,8 @@ script_triggers["pm-cooled-reactor-hurt"] = function (event)
 			target = furnace,
 			forces = force,
 			time_to_live = 60,
+			blink_interval = 30,
 		}
-		flasher.add_render(reactor_info.alert)
 	else
 		alert.time_to_live = 60
 	end
