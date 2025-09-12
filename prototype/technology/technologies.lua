@@ -4697,7 +4697,7 @@ data:extend({
     type = "technology",
     name = "pm-tantalum-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/tantalum-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-coltan"),
@@ -4728,7 +4728,7 @@ data:extend({
     type = "technology",
     name = "pm-niobium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/niobium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-niobite-oxide"),
