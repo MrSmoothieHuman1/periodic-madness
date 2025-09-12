@@ -1,10 +1,9 @@
---@type event_handler
+---@type event_handler
 local handler = {events = {}}
-handler.events[defines.events.on_research_finished] = function (event) end
-
-
-function on_research_finished(event)
-  if event.research.name == "pm-iridium-processing" then
-    game.print("hello nerd x2")
+handler.events[defines.events.on_research_finished] = function (event)
+  if event.research.name == "pm-osmium-processing" then
+    PM.compat_send(game, "AHHHHHHHH")
   end
 end
+
+return handler
