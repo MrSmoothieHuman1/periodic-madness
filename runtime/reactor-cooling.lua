@@ -70,27 +70,11 @@ end
 ---@type type<data.EntityID, true>
 local cooled_reactors = prototypes.mod_data["pm-cooled-reactors"].data
 
----@alias BuiltEventData
----| EventData.on_built_entity
----| EventData.on_robot_built_entity
----| EventData.on_space_platform_built_entity
----| EventData.script_raised_built
----| EventData.script_raised_revive
----@param event BuiltEventData
-local function built_event(event)
-	local entity = event.entity
+PM.compound_events.built_events(events, function (event)
+	local entity = event.entity or event.destination
 	if not cooled_reactors[entity.name] then return end
 	reactor_placed(entity)
-end
-
-for _, event_id in pairs{
-	defines.events.on_built_entity,
-	defines.events.on_robot_built_entity,
-	defines.events.on_space_platform_built_entity,
-	defines.events.script_raised_built
-} do
-	events[event_id] = built_event
-end
+end)
 
 --MARK: GUI
 

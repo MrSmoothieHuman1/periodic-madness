@@ -41,15 +41,8 @@ end
 
 ---MARK: Entity Tracking
 
----@alias EventData.BuiltEvents
----| EventData.on_built_entity
----| EventData.on_robot_built_entity
----| EventData.on_space_platform_built_entity
----| EventData.script_raised_built
----| EventData.script_raised_revive
----@param event EventData.BuiltEvents
-local function built_entity(event)
-  local entity = event.entity
+PM.compound_events.built_events(handler.events, function (event)
+  local entity = event.entity or event.destination
   local pollution_numbers = pollution_definition[entity.name]
   if not pollution_numbers then return end -- Not an entity we care about
 
@@ -59,18 +52,7 @@ local function built_entity(event)
     min_pollution = pollution_numbers.min_pollution,
     max_pollution = pollution_numbers.max_pollution,
   }
-end
-
-handler.events[defines.events.on_entity_cloned] = function (event)
-  ---@cast event +EventData.script_raised_built
-  event.entity = event.destination
-  built_entity(event--[[@as EventData.script_raised_built]])
-end
-handler.events[defines.events.on_built_entity] = built_entity
-handler.events[defines.events.on_robot_built_entity] = built_entity
-handler.events[defines.events.on_space_platform_built_entity] = built_entity
-handler.events[defines.events.script_raised_built] = built_entity
-handler.events[defines.events.script_raised_revive] = built_entity
+end)
 
 --MARK: Disabling
 
