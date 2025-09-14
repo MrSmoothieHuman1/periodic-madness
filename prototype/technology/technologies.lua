@@ -4665,7 +4665,7 @@ data:extend({
     type = "technology",
     name = "pm-iridium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/iridium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-anode-mud"),
