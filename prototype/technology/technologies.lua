@@ -4637,7 +4637,7 @@ data:extend({
     type = "technology",
     name = "pm-osmium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/osmium-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-osmium-filtered-anode-sludge"),
