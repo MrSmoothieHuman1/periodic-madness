@@ -107,11 +107,11 @@ data:extend({
         allow_productivity = true,
         ingredients = 
         {
-            PM.ingredient("pm-rhenium-ore", 1)
+            PM.ingredient("pm-rhodium-ore", 1)
         },
         results = 
         {
-            PM.product("pm-rhenium-plate", 1)
+            PM.product("pm-rhodium-plate", 1)
         }
     },
 })
