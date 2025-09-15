@@ -2517,7 +2517,7 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-east - all.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/circuit-megassembler/circuit-megassembler-east.png",
               priority = "high",
               width = 448,
               height = 448,

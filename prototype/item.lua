@@ -1616,7 +1616,12 @@ data:extend({
     type = "item",
     name = "pm-iridium-trichloride",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/iridium-trichloride.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/iridium-trichloride.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/iridium-trichloride-2.png", size = 64, scale = 0.5 },
+    },
     stack_size = 75
   },
   {
