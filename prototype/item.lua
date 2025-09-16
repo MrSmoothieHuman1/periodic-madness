@@ -1595,7 +1595,15 @@ data:extend({
     type = "item",
     name = "pm-phenylhydrazine",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/phenylhydrazine.png",
+    random_tint_color = {0.98, 0.976, 0.816, 0.5},
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/phenylhydrazine.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/phenylhydrazine-2.png", size = 64, scale = 0.5 },
+      --{ filename = "__periodic-madness__/graphics/icons/phenylhydrazine-3.png", size = 64, scale = 0.5 },
+      --{ filename = "__periodic-madness__/graphics/icons/phenylhydrazine-4.png", size = 64, scale = 0.5 },
+    },
     stack_size = 75
   },
   {
