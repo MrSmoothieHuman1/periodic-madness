@@ -4261,12 +4261,14 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tantalum-contacts",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 1,
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
-      PM.ingredient("pm-tantalum-plate", 2)
+      PM.ingredient("pm-tantalum-plate", 2),
+      PM.ingredient("pm-molten-osmiridium", 1, "fluid")
     },
     results =
     {
@@ -4276,12 +4278,14 @@ data:extend({
   {
     type = "recipe",
     name = "pm-niobium-contacts",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 1,
     allow_productivity = true,
     ingredients = 
     {
-      PM.ingredient("pm-niobium-plate", 2)
+      PM.ingredient("pm-niobium-plate", 2),
+      PM.ingredient("pm-molten-osmiridium", 1, "fluid")
     },
     results =
     {
