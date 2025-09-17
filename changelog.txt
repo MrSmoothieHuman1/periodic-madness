@@ -73,6 +73,7 @@ Date: 2025-12-07
     - Fixed heat exchanger 1 being worse then it should be.
     - Fixed heat exchanger 2 not producing the correct temp steam.
     - Fixed steam turbines not being able to take higher temp steam.
+    - Moved naptha fuel canisters into their own technology, and fixed them being uncraftable until you unlock a different fuel canister.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514

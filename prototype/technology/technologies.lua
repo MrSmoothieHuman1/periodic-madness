@@ -628,7 +628,6 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-butane-cracking"),
-      PM.unlock_recipe("pm-naptha-fuel-canister"),
       PM.unlock_recipe("pm-naptha-steam-cracking"),
     },
     prerequisites = {"oil-processing"},
@@ -1898,6 +1897,29 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      },
+      time = 30
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-naptha-fuel-canisters",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/naptha-fuel-canisters.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-empty-fuel-canister"),
+      PM.unlock_recipe("pm-naptha-fuel-canister")
+    },
+    prerequisites = {"advanced-oil-processing"},
+    unit =
+    {
+      count = 75,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 30
     }
@@ -3722,7 +3744,7 @@ data:extend({
       PM.unlock_recipe("pm-diesel-to-octane-fuel-canister"),
       PM.unlock_recipe("pm-petrol-to-octane-fuel-canister")
     },
-    prerequisites = {"pm-metalloid-pack-unlock", "pm-kerosene-fuel-canisters", "pm-diesel-fuel-canisters", "pm-naptha-recipes", "pm-petrol-fuel-canisters"},
+    prerequisites = {"pm-metalloid-pack-unlock", "pm-kerosene-fuel-canisters", "pm-diesel-fuel-canisters", "pm-naptha-fuel-canisters", "pm-petrol-fuel-canisters"},
     unit =
     {
       count = 400,
