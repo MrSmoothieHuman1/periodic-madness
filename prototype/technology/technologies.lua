@@ -5241,7 +5241,7 @@ data:extend({
     {
 
     },
-    prerequisites = {"pm-rhenium-platinum-catalyst"},
+    prerequisites = {"pm-rhenium-platinum-catalyst", "pm-octane-fuel-canisters"},
     unit =
     {
       count = 500,
