@@ -3973,13 +3973,13 @@ data:extend({
     name = "pm-incendiary-rocket",
     enabled = false,
     energy_required = 8,
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("explosive-rocket", 1),
       PM.ingredient("pm-magnesium-ore", 2),
       PM.ingredient("pm-gunpowder", 4)
     },
-    results = 
+    results =
     {
       PM.product("pm-incendiary-rocket", 1)
     }
@@ -4018,7 +4018,7 @@ data:extend({
       PM.ingredient("pm-nitric-oxide", 7.5, "fluid"),
       PM.ingredient("water", 15, "fluid"),
     },
-    results = 
+    results =
     {
       PM.product("pm-nitric-acid", 5, "fluid"),
       PM.product_range("pm-hydrogen-gas", 6, 15, "fluid")
@@ -4032,7 +4032,7 @@ data:extend({
     category = "oil-processing",
     allow_productivity = true,
     main_product = "pm-aqua-regia",
-    ingredients = 
+    ingredients =
     {
       PM.ingredient("pm-nitric-acid", 10, "fluid"),
       PM.ingredient("pm-hydrochloric-acid", 30, "fluid")

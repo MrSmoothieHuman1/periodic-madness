@@ -1846,10 +1846,10 @@ data:extend({
     type = "fluid",
     name = "pm-ethyl-acetate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/ethyl-acetate.png",
     default_temperature = 15,
-    base_color = {r = 0.3, g = 0.3, b = 0.2},
-    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    base_color = {r = 0.5, g = 0.4, b = 0.4},
+    flow_color = {r = 0.5, g = 0.4, b = 0.4},
   },
   {
     type = "fluid",
