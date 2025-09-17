@@ -126,6 +126,7 @@ data:extend({
         category = "pm-moltening",
         subgroup = "pm-osmium-tm",
         order = "d",
+        allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-osmium-ore", 2),
@@ -148,7 +149,7 @@ data:extend({
         order = "e",
         energy_required = 9,
         enabled = false,
-        allow_decomposition = false,
+        allow_productivity = true,        
         main_product = "pm-osmiridium-plate",
         ingredients =
         {
