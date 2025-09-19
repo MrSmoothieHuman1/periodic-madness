@@ -21,7 +21,13 @@ data:extend({
         type = "item",
         name = "pm-technectium-99",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/technectium-99.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/technectium-99.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/technectium-100.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/technectium-101.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-technectium-tm",
         order = "c",
         stack_size = 10
