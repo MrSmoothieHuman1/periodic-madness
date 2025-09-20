@@ -12,7 +12,12 @@ data:extend({
         type = "item",
         name = "pm-trace-technectium-99",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/trace-technectium-99.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/trace-technectium-99.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/trace-technectium-100.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-technectium-tm",
         order = "b",
         stack_size = 100
