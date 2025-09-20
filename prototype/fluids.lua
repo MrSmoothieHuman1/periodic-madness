@@ -1855,10 +1855,10 @@ data:extend({
     type = "fluid",
     name = "pm-ir-piq-3-acetate-solution",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/ir-piq-3-acetate-solution.png",
     default_temperature = 15,
-    base_color = {r = 0.3, g = 0.3, b = 0.2},
-    flow_color = {r = 0.3, g = 0.3, b = 0.2},
+    base_color = {r = 0.5, g = 0.33, b = 0.33},
+    flow_color = {r = 0.5, g = 0.33, b = 0.33},
   },
 
 	{
