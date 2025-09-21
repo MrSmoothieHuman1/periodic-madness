@@ -1760,8 +1760,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-syngas-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/syngas.png",
     effects =
     {
       PM.unlock_recipe("pm-syngas"),
