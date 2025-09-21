@@ -114,7 +114,7 @@ data:extend({
         name = "pm-baryte-ore",
         enabled = false,
         energy_required = 6,
-        category = "chemistry",
+        category = "pm-leaching",
         subgroup = "pm-barium-aem",
         order = "a",
         allow_productivity = true,
