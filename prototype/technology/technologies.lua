@@ -5231,9 +5231,9 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-advanced-rhenium-extraction",
+    name = "pm-acqua-molybdenum-porphyry-seperation",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/acqua-molybdenum-porphyry-seperation.png",
     effects =
     {
       PM.unlock_recipe("pm-acqua-molybdenum-porphyry-seperation")
