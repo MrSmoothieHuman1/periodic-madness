@@ -21,7 +21,12 @@ data:extend({
         type = "item",
         name = "pm-coltan-powder",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/coltan-powder.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/coltan-powder.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/coltan-powder-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-tantalum-tm",
         order = "b",
         stack_size = 400,
