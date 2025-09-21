@@ -12,7 +12,13 @@ data:extend({
         type = "item",
         name = "pm-usable-dubnium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/usable-dubnium.png",
+        pictures =
+        {
+            { filename = "__periodic-madness__/graphics/icons/ores/usable-dubnium.png",   size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/usable-dubnium-2.png", size = 64, scale = 0.5 },
+            { filename = "__periodic-madness__/graphics/icons/ores/usable-dubnium-3.png", size = 64, scale = 0.5 },
+        },
         subgroup = "pm-dubnium-tm",
         order = "b",
         stack_size = 10
