@@ -4193,7 +4193,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("coal", 9) --2:1 ratio, but turn into 1.5:1 with coal tar
+      PM.ingredient("coal", 9) --1.5:1 ratio with coal tar
     },
     results =
     {
@@ -4230,7 +4230,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("coal", 10) --2:1 ratio, but turn into 1.2:1 with coal tar + gas
+      PM.ingredient("coal", 10) --1.2:1 ratio with coal tar + gas
     },
     results =
     {
