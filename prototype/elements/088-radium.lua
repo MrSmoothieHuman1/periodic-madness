@@ -74,7 +74,7 @@ data:extend({
             {filename = "__periodic-madness__/graphics/icons/ores/radium-ore-3.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/radium-ore-4.png", size = 64, scale = 0.5},
         },
-        subgroup = "pm-barium-aem",
+        subgroup = "pm-radium-aem",
         order = "e",
         stack_size = 200
     },

@@ -78,6 +78,7 @@ Date: 2025-12-07
     - Moved naptha fuel canisters into their own technology, and fixed them being uncraftable until you unlock a different fuel canister.
     - Gave zinc vapour its own icon.
     - Gave barium vapour its own icon.
+    - Fixed radium ore being in the wrong subgroup.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514
