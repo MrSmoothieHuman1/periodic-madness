@@ -4949,7 +4949,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-osmium-pipes",
+    name = "pm-osmium-fluid-handling",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/osmium-fluid-handling.png",
     effects =
