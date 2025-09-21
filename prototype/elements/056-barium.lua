@@ -101,12 +101,12 @@ data:extend({
         type = "fluid",
         name = "pm-barium-vapour",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/barium-vapour.png",
         subgroup = "pm-barium-aem",
         order = "g",
         default_temperature = 15,
-        base_color = {r = 0.3, g = 0.3, b = 0.2},
-        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+        base_color = {r = 0.824, g = 0.918, b = 0.922},
+        flow_color = {r = 0.824, g = 0.918, b = 0.922},
     },
 
     {
