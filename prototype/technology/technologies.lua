@@ -5368,7 +5368,7 @@ data:extend({
     name = "pm-solar-panel-equipment-3",
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
-    "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
+    "__periodic-madness__/graphics/technology/solar-panel-equipment-3.png"),
     prerequisites = {"pm-solar-panel-equipment-2", "pm-magnesium-chloride", "low-density-structure"},
     effects =
     {
