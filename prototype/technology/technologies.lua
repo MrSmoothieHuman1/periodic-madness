@@ -5204,7 +5204,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-molybdenum-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-molybdenum-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-molybdenite-oxide"),
