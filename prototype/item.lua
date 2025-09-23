@@ -95,8 +95,8 @@ data:extend({
     name = "pm-solid-lubricant",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/solid-lubricant.png",
-    subgroup = "pm-intermediates",
-    order = "e",
+    subgroup = "pm-lubricant",
+    order = "b",
     stack_size = 50
   },
   {
