@@ -30,12 +30,12 @@ data:extend({
   {
     type = "item",
     name = "pm-molybdenum-ore",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/molybdenum-ore.png",
     pictures =
     {
-      {filename = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon.png", size = 128, scale = 0.25},
-      {filename = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon-1.png", size = 128, scale = 0.25}
+      {filename = "__periodic-madness__/graphics/icons/ores/molybdenum-ore.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/ores/molybdenum-ore-icon-1.png", size = 128, scale = 0.25}
     },
     subgroup = "pm-molybdenum-tm",
     order = "c",

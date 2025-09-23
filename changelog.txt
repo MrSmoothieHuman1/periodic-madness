@@ -65,6 +65,7 @@ Date: 2025-12-07
     - Lowered the amount of heavy lube express undergrounds take from 10 to 7.5, but increased its circuit count from 1 to 2.
     - Modelled vapour icons/"fluid icons that have are a little transparent at the bottom"
     - Changed baryte ore recipe to be made in the leaching field, instead of the chemical plant. This was to make the leaching field have more of a purpose, and should place nicely with some changes that will come Later.
+    - updated the molybdenum icon to be in my normal lighting and rendering. it'll be updated for real, but i aint got time for that!
 
   Fixes:
     - Fixed the tech icons of all battery equipment.
