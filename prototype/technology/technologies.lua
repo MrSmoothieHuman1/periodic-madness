@@ -5982,7 +5982,7 @@ data:extend({
     type = "technology",
     name = "pm-grouped-plastic-science-tier-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/plastic-science-tier-2.png",
+    icon = "__periodic-madness__/graphics/technology/plastic-science-tier-3.png",
     effects =
     {
       PM.unlock_recipe("pm-plastic-alkaline-earth-metal-science-pack"),
