@@ -82,6 +82,7 @@ Date: 2025-12-07
     - Fixed radium ore being in the wrong subgroup.
     - Gave copper powder its own icon.
     - Fixed solar panel equipment 3 technology using the tier 2 icon.
+    - Fixed molten kasethal being insanely cheap, like insanely on god cheap.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514

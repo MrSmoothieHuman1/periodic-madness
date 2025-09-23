@@ -1023,9 +1023,9 @@ data:extend({
     main_product = "pm-molten-kasethal",
     ingredients =
     {
-      PM.ingredient("iron-plate", 3),
-      PM.ingredient("pm-aluminium-plate", 3),
-      PM.ingredient("pm-chromium-ore", 4),
+      PM.ingredient("iron-plate", 15),
+      PM.ingredient("pm-aluminium-plate", 10),
+      PM.ingredient("pm-chromium-ore", 12),
       PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
