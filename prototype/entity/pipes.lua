@@ -43,7 +43,7 @@ data:extend({
                 { direction = defines.direction.north--[[@as int]], position = {0, 0} },
                 { direction = defines.direction.east--[[@as int]], position = {0, 0} },
                 { direction = defines.direction.south--[[@as int]], position = {0, 0} },
-                { direction = defines.direction.west--[[@as int]], position = {0, 0} }
+                { direction = defines.direction.west--[[@as int]], position = {0, 0} },
             },
             hide_connection_info = true
         },
@@ -402,12 +402,12 @@ data:extend({
             pipe_covers = pipecoverspictures(), -- in case a real pipe is connected to a ghost
             pipe_connections =
             {
-                { direction = defines.direction.north--[[@as int]], position = {0, 0} },
-                { direction = defines.direction.east--[[@as int]], position = {0, 0} },
-                { direction = defines.direction.south--[[@as int]], position = {0, 0} },
-                { direction = defines.direction.west--[[@as int]], position = {0, 0} }
+                { direction = defines.direction.north--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
+                { direction = defines.direction.east--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
+                { direction = defines.direction.south--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
+                { direction = defines.direction.west--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
             },
-            hide_connection_info = true
+            hide_connection_info = true,
         },
         impact_category = "metal",
         pictures =
