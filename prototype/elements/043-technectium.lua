@@ -74,9 +74,7 @@ data:extend({
         results =
         {
             PM.product("pm-trace-technectium-99", 5),
-            PM.product_range_chance("pm-trace-technectium-99", 0, 3, 0.75),
-            PM.product_chance("pm-trace-technectium-99", 1, 0.5),
-            PM.product_range_chance("pm-trace-technectium-99", 0, 1, 0.25)
+            PM.product_range("pm-trace-technectium-99", 0, 5),
         }
     },
     {
