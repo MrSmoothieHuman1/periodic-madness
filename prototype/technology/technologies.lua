@@ -5986,7 +5986,8 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-plastic-alkaline-earth-metal-science-pack"),
-      PM.unlock_recipe("pm-plastic-metalloid-science-pack"),
+      PM.unlock_recipe("pm-plastic-tantalum-advanced-advanced-advanced-transition-metal-science-pack"),
+      PM.unlock_recipe("pm-plastic-niobium-advanced-advanced-advanced-transition-metal-science-pack"),
     },
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
     unit =

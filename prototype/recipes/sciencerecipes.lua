@@ -117,6 +117,20 @@ data:extend({
 {
     type = "recipe",
     name = "pm-tantalum-advanced-advanced-advanced-transition-metal-science-pack",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/science/advanced-advanced-advanced-transition-metal-pack.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/tantalum-plate.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "i",
@@ -140,6 +154,20 @@ data:extend({
 {
     type = "recipe",
     name = "pm-niobium-advanced-advanced-advanced-transition-metal-science-pack",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/science/advanced-advanced-advanced-transition-metal-pack.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/niobium-plate.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "ia",
@@ -352,6 +380,52 @@ data:extend({
     results =
     {
         PM.product("pm-alkaline-earth-metal-science-pack", 2),
+    }
+},
+{
+    type = "recipe",
+    name = "pm-plastic-tantalum-advanced-advanced-advanced-transition-metal-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "science-pack",
+    order = "i",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-yttrium-ore", 5),
+        PM.ingredient("pm-molten-zinc", 5, "fluid"),
+        PM.ingredient("pm-osmiridium-plate", 3),
+        PM.ingredient("pm-tantalum-plate", 3),
+        PM.ingredient("pm-rhenium-plate", 2),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 2),
+    }
+},
+{
+    type = "recipe",
+    name = "pm-plastic-niobium-advanced-advanced-advanced-transition-metal-science-pack",
+    category = "crafting-with-fluid",
+    subgroup = "science-pack",
+    order = "ia",
+    energy_required = 6,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-yttrium-ore", 3),
+        PM.ingredient("pm-molten-zinc", 5, "fluid"),
+        PM.ingredient("pm-osmiridium-plate", 5),
+        PM.ingredient("pm-niobium-plate", 3),
+        PM.ingredient("pm-rhenium-plate", 2),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 2),
     }
 },
 
