@@ -385,6 +385,19 @@ data:extend({
 {
     type = "recipe",
     name = "pm-plastic-tantalum-advanced-advanced-advanced-transition-metal-science-pack",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/recipes/plastic-advanced-advanced-advanced-transition-metal-pack.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/tantalum-plate.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "i",
@@ -408,6 +421,19 @@ data:extend({
 {
     type = "recipe",
     name = "pm-plastic-niobium-advanced-advanced-advanced-transition-metal-science-pack",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/recipes/plastic-advanced-advanced-advanced-transition-metal-pack.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/niobium-plate.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     category = "crafting-with-fluid",
     subgroup = "science-pack",
     order = "ia",

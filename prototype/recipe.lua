@@ -4047,6 +4047,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tantalum-advanced-electric-engine-unit",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/advanced-electric-engine-unit.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/tantalum-contacts.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     enabled = false,
     energy_required = 10,
     category = "crafting-with-fluid",
@@ -4067,6 +4080,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-niobium-advanced-electric-engine-unit",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/advanced-electric-engine-unit.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/niobium-contacts.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     enabled = false,
     energy_required = 10,
     category = "crafting-with-fluid",
