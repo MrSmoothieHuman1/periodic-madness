@@ -908,6 +908,8 @@ data:extend({
     name = "pm-stone-coke-oven",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven.png",
+    subgroup = "smelting-machine",
+    order = "f",
     place_result = "pm-stone-coke-oven",
     stack_size = 75
   },
@@ -916,6 +918,8 @@ data:extend({
     name = "pm-stone-coke-oven-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-2.png",
+    subgroup = "smelting-machine",
+    order = "g",
     place_result = "pm-stone-coke-oven-2",
     stack_size = 75
   },
@@ -924,6 +928,8 @@ data:extend({
     name = "pm-stone-coke-oven-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/stone-coke-oven-3.png",
+    subgroup = "smelting-machine",
+    order = "h",
     place_result = "pm-stone-coke-oven-3",
     stack_size = 75
   },
