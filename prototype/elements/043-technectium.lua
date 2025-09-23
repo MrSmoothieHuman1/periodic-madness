@@ -3,7 +3,7 @@ data:extend({
         type = "item",
         name = "pm-molybdenum-99",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/molybdenum-99.png",
         subgroup = "pm-technectium-tm",
         order = "a",
         stack_size = 200
