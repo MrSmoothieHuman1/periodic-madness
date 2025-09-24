@@ -1796,7 +1796,8 @@ data.raw["item"]["explosives"].subgroup = "capsule"
 data.raw["item"]["explosives"].order = "c"
 data.raw["recipe"]["explosives"].subgroup = "capsule"
 data.raw["recipe"]["explosives"].order = "c"
-
+data.raw["item"]["barrel"].subgroup = "pm-intermediates"
+data.raw["recipe"]["barrel"].subgroup = "pm-intermediates"
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it
