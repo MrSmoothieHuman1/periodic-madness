@@ -30,6 +30,7 @@ Date: 2025-12-07
     - Reworked the coke system entirely, you now unlock coke at late orange science and is crafted in stone coke ovens. You unlock better buildings and better coke production throughout yellow and PTM science.
     - Added a way to more easily get rid of bitumen, by turning it into crude oil.
     - Made tier 4+ modules all take OLED's as part of their special lights. At least you didnt have to look through several research papers to add some fucking recipes to factorio!
+    - Gave a bunch of items inventory sounds, because otherwise penny will kill me
 
   Changes:
     - Slightly nerfed research productivity.

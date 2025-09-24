@@ -1,5 +1,5 @@
 --for all items related to circuits
-
+local item_sounds = require("__base__.prototypes.item_sounds")
 data:extend({
 
   {
@@ -26,6 +26,9 @@ data:extend({
     name = "pm-fluid-breadboard",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluid-circuit-breadboard.png",
+    inventory_move_sound = item_sounds.electric_small_inventory_move,
+    pick_sound = item_sounds.electric_small_inventory_pickup,
+    drop_sound = item_sounds.electric_small_inventory_move,
     subgroup = "pm-circuits",
     order = "d",
     stack_size = 100

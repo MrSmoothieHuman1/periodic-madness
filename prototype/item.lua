@@ -1,6 +1,6 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
-local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
+local tints = require("prototype.item-tints")
 data:extend({
   {
     type = "item",
@@ -456,6 +456,9 @@ data:extend({
     name = "pm-health-bio-module",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/health-bio-module.png",
+    inventory_move_sound = item_sounds.electric_small_inventory_move,
+    pick_sound = item_sounds.electric_small_inventory_pickup,
+    drop_sound = item_sounds.electric_small_inventory_move,
     subgroup = "pm-bio-modules-rnm",
     order = "b",
     stack_size = 10,
@@ -486,6 +489,9 @@ data:extend({
     name = "pm-strength-bio-module",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/strength-bio-module.png",
+    inventory_move_sound = item_sounds.electric_small_inventory_move,
+    pick_sound = item_sounds.electric_small_inventory_pickup,
+    drop_sound = item_sounds.electric_small_inventory_move,
     subgroup = "pm-bio-modules-rnm",
     order = "c",
     stack_size = 10,
@@ -516,6 +522,9 @@ data:extend({
     name = "pm-agility-bio-module",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/agility-bio-module.png",
+    inventory_move_sound = item_sounds.electric_small_inventory_move,
+    pick_sound = item_sounds.electric_small_inventory_pickup,
+    drop_sound = item_sounds.electric_small_inventory_move,
     subgroup = "pm-bio-modules-rnm",
     order = "d",
     stack_size = 10,
@@ -998,129 +1007,6 @@ data:extend({
     order = "A",
     stack_size = 150
   },
-
-  {
-    type = "module",
-    name = "pm-speed-module-4",
-    localised_description = {"item-description.speed-module"},
-    icon = "__periodic-madness__/graphics/icons/speed-module-4.png",
-    icon_size = 128,
-    subgroup = "pm-speed",
-    category = "speed",
-    tier = 4,
-    order = "d",
-    stack_size = 50,
-    effect = { speed = 0.7, consumption = 0.9 },
-    inventory_move_sound = item_sounds.module_inventory_move,
-    pick_sound = item_sounds.module_inventory_pickup,
-    drop_sound = item_sounds.module_inventory_move,
-    beacon_tint =
-    {
-      primary = { r = 0.441, g = 0.514, b = 1.000, a = 1.000 },     -- #70b6ffff
-      secondary = { r = 0.388, g = 0.766, b = 1.000, a = 1.000 },   -- #63f8ffff
-    },
-    art_style = "vanilla",
-    requires_beacon_alt_mode = false,
-    pictures =
-    {
-      layers =
-      {
-        {
-          size = 128,
-          filename = "__periodic-madness__/graphics/icons/speed-module-4.png",
-          scale = 0.25,
-        },
-        {
-          draw_as_light = true,
-          flags = { "light" },
-          size = 128,
-          filename = "__periodic-madness__/graphics/light/speed-module-4-glow.png",
-          scale = 0.25,
-        }
-      }
-    },
-  } --[[@as data.ModulePrototype]],
-  {
-    type = "module",
-    name = "pm-efficiency-module-4",
-    localised_description = { "item-description.effectivity-module" },
-    icon = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
-    icon_size = 128,
-    subgroup = "pm-efficiency",
-    category = "efficiency",
-    tier = 4,
-    order = "d",
-    stack_size = 50,
-    effect = { consumption = -0.6, speed = 0.25},
-    inventory_move_sound = item_sounds.module_inventory_move,
-    pick_sound = item_sounds.module_inventory_pickup,
-    drop_sound = item_sounds.module_inventory_move,
-    beacon_tint =
-    {
-      primary = { 0, 1, 0 },
-      secondary = { r = 0.370, g = 1.000, b = 0.370, a = 1.000 },   -- #5eff5eff
-    },
-    art_style = "vanilla",
-    requires_beacon_alt_mode = false,
-    pictures =
-    {
-      layers =
-      {
-        {
-          size = 128,
-          filename = "__periodic-madness__/graphics/icons/effectivity-module-4.png",
-          scale = 0.25,
-        },
-        {
-          draw_as_light = true,
-          flags = { "light" },
-          size = 128,
-          filename = "__periodic-madness__/graphics/light/effectivity-module-4-glow.png",
-          scale = 0.25,
-        }
-      }
-    },
-  } --[[@as data.ModulePrototype]],
-  {
-    type = "module",
-    name = "pm-productivity-module-4",
-    localised_description = { "item-description.productivity-module" },
-    icon = "__periodic-madness__/graphics/icons/productivity-module-4.png",
-    icon_size = 128,
-    subgroup = "pm-productivity",
-    category = "productivity",
-    tier = 4,
-    order = "d",
-    stack_size = 50,
-    inventory_move_sound = item_sounds.module_inventory_move,
-    pick_sound = item_sounds.module_inventory_pickup,
-    drop_sound = item_sounds.module_inventory_move,
-    effect =
-    {
-      productivity = 0.14,
-      consumption = 0.75,
-      pollution = 0.20,
-      speed = -0.25
-    },
-    pictures =
-    {
-      layers =
-      {
-        {
-          size = 128,
-          filename = "__periodic-madness__/graphics/icons/productivity-module-4.png",
-          scale = 0.25,
-        },
-        {
-          draw_as_light = true,
-          flags = { "light" },
-          size = 128,
-          filename = "__periodic-madness__/graphics/light/productivity-module-4-glow.png",
-          scale = 0.25,
-        }
-      }
-    },
-  } --[[@as data.ModulePrototype]],
   {
     type = "item",
     name = "pm-CRT",
