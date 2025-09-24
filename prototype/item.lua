@@ -1526,8 +1526,8 @@ data:extend({
     name = "pm-inconel-625-precursor-billet",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
-    subgroup = "pm-glassing",
-    order = "a",
+    subgroup = "pm-inconel-625",
+    order = "b",
     stack_size = 500
   },
   {

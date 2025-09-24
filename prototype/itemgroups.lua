@@ -370,7 +370,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-uhrlumin",
+    name = "pm-inconel-625",
     group = "intermediate-products",
     order = "cb",
   },

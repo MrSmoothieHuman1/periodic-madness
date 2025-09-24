@@ -291,6 +291,8 @@ data:extend({
     name = "pm-inconel-625-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/inconel-625-plate.png",
+    subgroup = "pm-inconel-625",
+    order = "d",
     stack_size = 100
   },
   {
