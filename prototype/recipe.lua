@@ -3209,7 +3209,7 @@ data:extend({
     show_amount_in_title = true,
     ingredients =
     {
-      PM.ingredient("pm-electronic-breadboard", 1),
+      PM.ingredient("pm-electronic-breadboard", 3),
       PM.ingredient("pm-germanium-ore", 2),
       PM.ingredient("pm-glass-fibers", 3),
       PM.ingredient("pm-vulcanised-rubber", 4)
@@ -3269,7 +3269,7 @@ data:extend({
       PM.ingredient("pm-germanium-ore", 3),
       PM.ingredient("pm-palladium-plate", 6),
       PM.ingredient("pm-glass-fibers", 4),
-      PM.ingredient("pm-fluid-breadboard", 1),
+      PM.ingredient("pm-fluid-breadboard", 3),
     },
     results = 
     {
@@ -3327,7 +3327,7 @@ data:extend({
       PM.ingredient("pm-ferric-chloride", 5, "fluid"),
       PM.ingredient("pm-boron", 5, "fluid"),
       PM.ingredient("pm-glass-fibers", 6),
-      PM.ingredient("pm-advanced-circuit-breadboard", 1),
+      PM.ingredient("pm-advanced-circuit-breadboard", 3),
       PM.ingredient("pm-cobalt-blue", 4)
     },
     results = 
