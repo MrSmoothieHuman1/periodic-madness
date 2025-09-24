@@ -709,8 +709,6 @@ data:extend({
     name = "pm-gallium-nitride",
     energy_required = (5 / 0.75) / 2,
     category = "chemistry",
-    subgroup = "pm-modules",
-    order = "b",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -728,8 +726,6 @@ data:extend({
     name = "pm-gallium-arsenide",
     energy_required = (5 / 0.75) / 2,
     category = "pm-coldening",
-    subgroup = "pm-modules",
-    order = "fa",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -747,8 +743,6 @@ data:extend({
     name = "pm-aluminium-gallium-indium-phosphide",
     energy_required = (5 / 0.75) / 2,
     category = "pm-crystallisation",
-    subgroup = "pm-modules",
-    order = "ka",
     enabled = false,
     main_product = "pm-aluminium-gallium-indium-phosphide",
     allow_productivity = true,
@@ -769,8 +763,6 @@ data:extend({
     type = "recipe",
     name = "pm-speed-module-light",
     energy_required = 5,
-    subgroup = "pm-modules",
-    order = "c",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -789,8 +781,6 @@ data:extend({
     name = "pm-efficiency-module-light",
     energy_required = 5,
     enabled = false,
-    subgroup = "pm-modules",
-    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -808,8 +798,6 @@ data:extend({
     name = "pm-productivity-module-light",
     energy_required = 5,
     enabled = false,
-    subgroup = "pm-modules",
-    order = "l",
     allow_productivity = true,
     ingredients =
     {
@@ -828,8 +816,7 @@ data:extend({
     energy_required = 5,
     enabled = false,
     category = "crafting-with-fluid",
-    subgroup = "pm-modules",
-    order = "a",
+    subgroup = "pm-intermediates",
     allow_productivity = true,
     ingredients =
     {
@@ -1188,135 +1175,6 @@ data:extend({
     results =
     {
       PM.product("pm-solar-panel-equipment-3", 1)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-speed-module-1-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/speed-module-1-crushing.png",
-    enabled = false,
-    energy_required = 15 / 2,
-    category = "pm-crushing",
-    subgroup = "pm-modules",
-    order = "d",
-    ingredients =
-    {
-      PM.ingredient("speed-module", 1)
-    },
-    results =
-    {
-      PM.product_chance("pm-module-case", 1, 0.9),
-      PM.product_chance("pm-speed-module-light", 1, 0.9),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.8)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-speed-module-2-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/speed-module-2-crushing.png",
-    enabled = false,
-    energy_required = 15 / 2,
-    category = "pm-crushing",
-    subgroup = "pm-modules",
-    order = "e",
-    ingredients =
-    {
-      PM.ingredient("speed-module", 1)
-    },
-    results =
-    {
-      PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-speed-module-light", 1, 0.8),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.7),
-      PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.7),
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-efficiency-module-1-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/efficiency-module-1-crushing.png",
-    enabled = false,
-    energy_required = 15 / 2,
-    category = "pm-crushing",
-    subgroup = "pm-modules",
-    order = "h",
-    ingredients =
-    {
-      PM.ingredient("efficiency-module", 1)
-    },
-    results =
-    {
-      PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-efficiency-module-light", 1, 0.8),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-efficiency-module-2-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/efficiency-module-2-crushing.png",
-    enabled = false,
-    energy_required = 15 / 2,
-    category = "pm-crushing",
-    subgroup = "pm-modules",
-    order = "i",
-    ingredients =
-    {
-      PM.ingredient("efficiency-module-2", 1)
-    },
-    results =
-    {
-      PM.product_chance("pm-module-case", 1, 0.7),
-      PM.product_chance("pm-efficiency-module-light", 1, 0.7),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.6),
-      PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.6),
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-productivity-module-1-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/productivity-module-1-crushing.png",
-    enabled = false,
-    energy_required = 15 / 2,
-    category = "pm-crushing",
-    subgroup = "pm-modules",
-    order = "m",
-    ingredients =
-    {
-      PM.ingredient("productivity-module", 1)
-    },
-    results =
-    {
-      PM.product_chance("pm-module-case", 1, 0.8),
-      PM.product_chance("pm-productivity-module-light", 1, 0.8),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.7)
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-productivity-module-2-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/productivity-module-2-crushing.png",
-    enabled = false,
-    energy_required = 15 / 2,
-    category = "pm-crushing",
-    subgroup = "pm-modules",
-    order = "n",
-    ingredients =
-    {
-      PM.ingredient("productivity-module-2", 1)
-    },
-    results =
-    {
-      PM.product_chance("pm-module-case", 1, 0.7),
-      PM.product_chance("pm-productivity-module-light", 1, 0.7),
-      PM.product_range_chance("electronic-circuit", 2, 4, 0.6),
-      PM.product_range_chance("pm-fluid-circuit", 2, 4, 0.6),
     }
   },
   {

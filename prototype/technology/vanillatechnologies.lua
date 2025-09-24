@@ -871,14 +871,12 @@ data.raw["technology"]["speed-module-2"].icon = "__periodic-madness__/graphics/t
 data.raw["technology"]["speed-module-2"].effects =
 {
   PM.unlock_recipe("speed-module-2"),
-  PM.unlock_recipe("pm-speed-module-1-crushing"),
 }
 data.raw["technology"]["speed-module-3"].icon_size = 256
 data.raw["technology"]["speed-module-3"].icon = "__periodic-madness__/graphics/technology/speed-module-3-tech.png"
 data.raw["technology"]["speed-module-3"].effects =
 {
   PM.unlock_recipe("speed-module-3"),
-  PM.unlock_recipe("pm-speed-module-2-crushing"),
 }
 data.raw["technology"]["speed-module-3"].prerequisites = {"speed-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 data.raw["module"]["productivity-module"].icon_size = 64
@@ -945,14 +943,12 @@ data.raw["technology"]["productivity-module-2"].icon = "__periodic-madness__/gra
 data.raw["technology"]["productivity-module-2"].effects =
 {
   PM.unlock_recipe("productivity-module-2"),
-  PM.unlock_recipe("pm-productivity-module-1-crushing"),
 }
 data.raw["technology"]["productivity-module-3"].icon_size = 256
 data.raw["technology"]["productivity-module-3"].icon = "__periodic-madness__/graphics/technology/productivity-module-3-tech.png"
 data.raw["technology"]["productivity-module-3"].effects =
 {
   PM.unlock_recipe("productivity-module-3"),
-  PM.unlock_recipe("pm-productivity-module-2-crushing"),
 }
 data.raw["technology"]["productivity-module-3"].prerequisites = {"productivity-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 data.raw["module"]["efficiency-module"].icon_size = 64
@@ -975,7 +971,6 @@ data.raw["technology"]["efficiency-module-2"].icon =
 data.raw["technology"]["efficiency-module-2"].effects =
 {
   PM.unlock_recipe("efficiency-module-2"),
-  PM.unlock_recipe("pm-efficiency-module-1-crushing"),
 }
 data.raw["technology"]["efficiency-module-3"].icon_size = 256
 data.raw["technology"]["efficiency-module-3"].icon =
@@ -983,7 +978,6 @@ data.raw["technology"]["efficiency-module-3"].icon =
 data.raw["technology"]["efficiency-module-3"].effects =
 {
   PM.unlock_recipe("efficiency-module-3"),
-  PM.unlock_recipe("pm-efficiency-module-2-crushing"),
 }
 data.raw["technology"]["efficiency-module-3"].prerequisites = {"efficiency-module-2", "pm-alkali-metal-pack-unlock", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["efficiency-module"].unit.ingredients =

@@ -430,9 +430,27 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-modules",
+    name = "pm-speed-module-parts",
     group = "intermediate-products",
     order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-efficiency-module-parts",
+    group = "intermediate-products",
+    order = "ka"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-productivity-module-parts",
+    group = "intermediate-products",
+    order = "kb"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-quality-module-parts",
+    group = "intermediate-products",
+    order = "kc"
   },
   {
     type = "item-subgroup",

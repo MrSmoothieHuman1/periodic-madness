@@ -414,7 +414,8 @@ data:extend({
     name = "pm-speed-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/speed-module-light.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-speed-module-parts",
+    order = "b",
     stack_size = 150
   },
   {
@@ -422,7 +423,8 @@ data:extend({
     name = "pm-productivity-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/productivity-module-light.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-productivity-module-parts",
+    order = "b",
     stack_size = 150
   },
   {
@@ -430,7 +432,8 @@ data:extend({
     name = "pm-efficiency-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/efficiency-module-light.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-efficiency-module-parts",
+    order = "b",
     stack_size = 150
   },
   {
@@ -645,7 +648,8 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/gallium-arsenide.png",   size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/gallium-arsenide-2.png", size = 64, scale = 0.5 },
     },
-    subgroup = "pm-intermediates",
+    subgroup = "pm-speed-module-parts",
+    order = "a",
     stack_size = 20
   },
   {
@@ -653,7 +657,8 @@ data:extend({
     name = "pm-gallium-nitride",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/gallium-nitride.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-efficiency-module-parts",
+    order = "a",
     stack_size = 20
   },
   {
@@ -661,7 +666,8 @@ data:extend({
     name = "pm-aluminium-gallium-indium-phosphide",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/AlGaIn.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-productivity-module-parts",
+    order = "a",
     stack_size = 40
   },
   {
@@ -1461,7 +1467,8 @@ data:extend({
     name = "pm-advanced-speed-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-speed-module-light.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-speed-module-parts",
+    order = "i",
     stack_size = 150
   },
   {
@@ -1469,7 +1476,8 @@ data:extend({
     name = "pm-advanced-productivity-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-productivity-module-light.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-productivity-module-parts",
+    order = "f",
     stack_size = 150
   },
   {
@@ -1477,7 +1485,8 @@ data:extend({
     name = "pm-advanced-efficiency-module-light",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-efficiency-module-light.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-efficiency-module-parts",
+    order = "h",
     stack_size = 150
   },
   {
@@ -1493,6 +1502,8 @@ data:extend({
       --{ filename = "__periodic-madness__/graphics/icons/phenylhydrazine-3.png", size = 64, scale = 0.5 },
       --{ filename = "__periodic-madness__/graphics/icons/phenylhydrazine-4.png", size = 64, scale = 0.5 },
     },
+    subgroup = "pm-speed-module-parts",
+    order = "g",
     stack_size = 75
   },
   {
@@ -1500,6 +1511,8 @@ data:extend({
     name = "pm-1-3-5-oxadiazine-NON-host",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/1,3,5-oxadiazine-NON-host.png",
+    subgroup = "pm-speed-module-parts",
+    order = "h",
     stack_size = 50
   },
   {
@@ -1512,6 +1525,8 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/phenyllithium.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/phenyllithium-2.png", size = 64, scale = 0.5 },
     },
+    subgroup = "pm-efficiency-module-parts",
+    order = "c",
     stack_size = 75
   },
   {
@@ -1524,6 +1539,8 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/iridium-trichloride.png", size = 64, scale = 0.5 },
       { filename = "__periodic-madness__/graphics/icons/iridium-trichloride-2.png", size = 64, scale = 0.5 },
     },
+    subgroup = "pm-efficiency-module-parts",
+    order = "f",
     stack_size = 75
   },
   {
@@ -1531,6 +1548,8 @@ data:extend({
     name = "pm-tris-2-phenylpyridine-iridium",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/tris(2-phenylpyridine)iridium.png",
+    subgroup = "pm-efficiency-module-parts",
+    order = "g",
     stack_size = 50
   },
   {
@@ -1538,6 +1557,8 @@ data:extend({
     name = "pm-ir-piq-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ir(piq)3.png",
+    subgroup = "pm-productivity-module-parts",
+    order = "e",
     stack_size = 50
   },
 
