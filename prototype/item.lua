@@ -1430,6 +1430,7 @@ data:extend({
     name = "pm-advanced-electric-engine-unit",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-electric-engine-unit.png",
+    subgroup = "pm-intermediates",
     stack_size = 50,
   },
   {

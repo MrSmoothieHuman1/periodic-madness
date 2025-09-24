@@ -455,7 +455,7 @@ data:extend({
   {
     type = "item-subgroup",
     name = "pm-rocket-parts",
-    group = "pm-intermediate-products",
+    group = "intermediate-products",
     order = "o"
   },
 
