@@ -1,5 +1,5 @@
 --ores.
-
+local item_sounds = require("__base__.prototypes.item_sounds")
 data:extend({
 
   {
@@ -14,6 +14,9 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-3.png", size = 64, scale = 0.5},
     },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-tm-tm",
     order = "a",
     stack_size = 200
@@ -38,6 +41,9 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon-3.png", size = 64, scale = 0.5},
     },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-ptm-ptm",
     order = "a",
     stack_size = 200
@@ -52,6 +58,9 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/alkali-metals-icon-2.png", size = 64, scale = 0.5},
     },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-am-am",
     order = "a",
     stack_size = 200
@@ -66,6 +75,9 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/metalloid-ore-icon-2.png", size = 64, scale = 0.5},
     },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-mt-mt",
     order = "a",
     stack_size = 200
@@ -80,6 +92,9 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon-2.png", size = 64, scale = 0.5},
     },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-aem-aem",
     order = "a",
     stack_size = 200

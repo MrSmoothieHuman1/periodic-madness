@@ -1,3 +1,4 @@
+local item_sounds = require("__base__.prototypes.item_sounds")
 data:extend({
   {
     type = "item",
@@ -37,6 +38,9 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/lithium-ore-icon.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/lithium-ore-icon-2.png", size = 64, scale = 0.5},
     },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-lithium-am",
     order = "b",
     stack_size = 200

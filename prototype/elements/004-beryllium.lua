@@ -1,3 +1,4 @@
+local item_sounds = require("__base__.prototypes.item_sounds")
 data:extend({
 
     {
@@ -70,6 +71,9 @@ data:extend({
             {filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon-2.png", size = 64, scale = 0.5},
             {filename = "__periodic-madness__/graphics/icons/ores/beryllium-ore-icon-3.png", size = 64, scale = 0.5},
         },
+        inventory_move_sound = item_sounds.resource_inventory_move,
+        pick_sound = item_sounds.resource_inventory_pickup,
+        drop_sound = item_sounds.resource_inventory_move,
         subgroup = "pm-germanium-mt",
         order = "e",
         stack_size = 200
