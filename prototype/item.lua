@@ -1444,6 +1444,7 @@ data:extend({
     name = "pm-tantalum-contacts",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/tantalum-contacts.png",
+    subgroup = "pm-intermediates",
     stack_size = 400,
   },
   {
@@ -1451,6 +1452,7 @@ data:extend({
     name = "pm-niobium-contacts",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/niobium-contacts.png",
+    subgroup = "pm-intermediates",
     stack_size = 400,
   },
   {
