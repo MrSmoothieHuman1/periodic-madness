@@ -452,6 +452,12 @@ data:extend({
     group = "intermediate-products",
     order = "n"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-rocket-parts",
+    group = "pm-intermediate-products",
+    order = "o"
+  },
 
   --MARK: Voiding
   {
