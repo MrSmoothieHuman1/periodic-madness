@@ -1030,6 +1030,8 @@ data:extend({
     enabled = false,
     energy_required = 6,
     category = "oil-processing",
+    subgroup = "pm-oil",
+    order = "z",
     ingredients = 
     {
       PM.ingredient("pm-bitumen", 10),
