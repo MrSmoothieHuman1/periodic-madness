@@ -112,69 +112,51 @@ end
 
 data.raw["item"]["plastic-bar"] = nil
 
---removes those darstardly military science packs
-for _, technology in pairs(data.raw["technology"]) do
-	local unit = technology.unit
-	if unit then
-	  local bad_indexes, bad_count = {}, 0
-	  for index, ingredient in pairs(unit.ingredients) do
-	    if ingredient[1] == "military-science-pack" then
-	      bad_count = 1 + bad_count
-	      bad_indexes[bad_count] = index
-	    end
-  end
-  for i = bad_count, 1, -1 do
-    table.remove(unit.ingredients, bad_indexes[i])
-  end
-end
-end
-data.raw["technology"]["military-science-pack"].hidden = true
-data.raw["recipe"]["military-science-pack"].hidden = true
-data.raw["recipe"]["military-science-pack"].hidden_in_factoriopedia = true
-data.raw["tool"]["military-science-pack"].hidden = true
-data.raw["tool"]["military-science-pack"].hidden_in_factoriopedia = true
+-- MARK: Science removal
 
---removed production/utility science
+local sciences_to_remove = {
+	["military-science-pack"] = true,
+	["utility-science-pack"] = true,
+	["production-science-pack"] = true,
+}
+
 for _, technology in pairs(data.raw["technology"]) do
 	local unit = technology.unit
-	if unit then
-	  local bad_indexes, bad_count = {}, 0
-	  for index, ingredient in pairs(unit.ingredients) do
-	    if ingredient[1] == "utility-science-pack" then
-	      bad_count = 1 + bad_count
-	      bad_indexes[bad_count] = index
-	    end
-  end
+	if not unit then goto continue end
+
+	local bad_indexes, bad_count = {}, 0
+	for index, ingredient in pairs(unit.ingredients) do
+		if sciences_to_remove[ingredient[1]] then
+			bad_count = 1 + bad_count
+			bad_indexes[bad_count] = index
+		end
+	end
+
   for i = bad_count, 1, -1 do
     table.remove(unit.ingredients, bad_indexes[i])
   end
+
+	::continue::
 end
+
+for name in pairs(sciences_to_remove) do
+	local tech = data.raw["technology"][name]
+	if tech then
+		tech.hidden = true
+	end
+
+	local recipe = data.raw["recipe"][name]
+	if recipe then
+		recipe.hidden = true
+		recipe.hidden_in_factoriopedia = true
+	end
+
+	local pack = data.raw["tool"][name]
+	if pack then
+		pack.hidden = true
+		pack.hidden_in_factoriopedia = true
+	end
 end
-for _, technology in pairs(data.raw["technology"]) do
-	local unit = technology.unit
-	if unit then
-	  local bad_indexes, bad_count = {}, 0
-	  for index, ingredient in pairs(unit.ingredients) do
-	    if ingredient[1] == "production-science-pack" then
-	      bad_count = 1 + bad_count
-	      bad_indexes[bad_count] = index
-	    end
-  end
-  for i = bad_count, 1, -1 do
-    table.remove(unit.ingredients, bad_indexes[i])
-  end
-end
-end
-data.raw["technology"]["utility-science-pack"].hidden = true
-data.raw["recipe"]["utility-science-pack"].hidden = true
-data.raw["recipe"]["utility-science-pack"].hidden_in_factoriopedia = true
-data.raw["tool"]["utility-science-pack"].hidden = true
-data.raw["tool"]["utility-science-pack"].hidden_in_factoriopedia = true
-data.raw["technology"]["production-science-pack"].hidden = true
-data.raw["recipe"]["production-science-pack"].hidden = true
-data.raw["recipe"]["production-science-pack"].hidden_in_factoriopedia = true
-data.raw["tool"]["production-science-pack"].hidden = true
-data.raw["tool"]["production-science-pack"].hidden_in_factoriopedia = true
 
 for _, recipe in pairs(data.raw.recipe) do
     recipe.maximum_productivity = 99999999 --insane number, if anyone reaches it just give them a medal
