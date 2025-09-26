@@ -112,8 +112,10 @@ for recipe_name, recipe in pairs(data.raw["recipe"]) do
 end
 
 for _, removal in pairs(removals) do
-	data.raw["recipe"][removal] = nil -- May want additional steps to ensure compatibility works
+	data.raw["recipe"][removal].hidden = true
+	data.raw["recipe"][removal].hidden_in_factoriopedia = true
 end
+
 for item in pairs(item_replacements) do
 	for item_type in pairs(defines.prototypes.item) do
 		local item_lookup = data.raw[item_type]
