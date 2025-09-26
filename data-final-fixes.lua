@@ -82,24 +82,28 @@ data:extend{
 
 --- Replace instances of plastic with pm plastic
 
+local item_replacements = {
+	["plastic-bar"] = "pm-polyethylene-plastic"
+}
+
 local removals = {}
-for _, recipe in pairs(data.raw["recipe"]) do
-	if recipe.main_product == "plastic-bar" then
-		table.insert(removals, recipe.name)
+for recipe_name, recipe in pairs(data.raw["recipe"]) do
+	if item_replacements[recipe.main_product] then
+		table.insert(removals, recipe_name)
 		goto continue --Go to next recipe because this one will be removed
 	end
 	if recipe.results then
 		for _, result in pairs(recipe.results) do
-			if result.name == "plastic-bar" then
-				table.insert(removals, recipe.name)
+			if item_replacements[result.name] then
+				table.insert(removals, recipe_name)
 				goto continue --Go to next recipe because this one will be removed
 			end
 		end
 	end
 	if recipe.ingredients then
 		for _, ingedient in pairs(recipe.ingredients) do
-			if ingedient.name == "plastic-bar" then
-				ingedient.name = "pm-polyethylene-plastic"
+			if item_replacements[ingedient.name] then
+				ingedient.name = item_replacements[ingedient.name]
 			end
 		end
 	end
@@ -109,8 +113,15 @@ end
 for _, removal in pairs(removals) do
 	data.raw["recipe"][removal] = nil -- May want additional steps to ensure compatibility works
 end
-
-data.raw["item"]["plastic-bar"] = nil
+for item in pairs(item_replacements) do
+	for item_type in pairs(defines.prototypes.item) do
+		local item_lookup = data.raw[item_type]
+		if item_lookup and item_lookup[item] then
+			item_lookup[item].hidden = true
+			item_lookup[item].hidden_in_factoriopedia = true
+		end
+	end
+end
 
 -- MARK: Science removal
 
