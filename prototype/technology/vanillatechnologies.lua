@@ -389,14 +389,6 @@ data.raw["technology"]["low-density-structure"].unit.time = 80
 table.insert(data.raw["technology"]["low-density-structure"].effects, {type = "unlock-recipe", recipe = "pm-aluminium-low-density-structure"})
 table.insert(data.raw["technology"]["low-density-structure"].effects, {type = "unlock-recipe", recipe = "pm-tin-low-density-structure"})
 
-data.raw["technology"]["laser"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1}
-}
-
 data.raw["technology"]["nuclear-power"].effects =
 {
   PM.unlock_recipe("nuclear-reactor"),
@@ -463,15 +455,6 @@ data.raw["technology"]["military-3"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
-}
-
-data.raw["technology"]["laser-turret"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"military-science-pack", 1}
 }
 
 data.raw["technology"]["electric-energy-distribution-2"].unit.ingredients =
