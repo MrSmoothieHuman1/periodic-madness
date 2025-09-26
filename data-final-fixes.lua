@@ -162,37 +162,33 @@ for _, recipe in pairs(data.raw.recipe) do
     recipe.maximum_productivity = 99999999 --insane number, if anyone reaches it just give them a medal
 end
 
+local ignored_entities = {
+	["pm-circuit-megassembler"] = true,
+	["pm-circuit-megassembler-MK2"] = true,
+	["pm-coil-heater"] = true,
+	["pm-electric-coke-oven"] = true,
+}
+
 for _, entity_type in pairs{
-  "beacon",
-  "lab",
-  "mining-drill",
-  "assembling-machine",
-  "rocket-silo",
+	"beacon",
+	"lab",
+	"mining-drill",
+	"assembling-machine",
+	"rocket-silo",
 } do
-
--- Inside the loop
-
-  for entity, prototype in pairs(data.raw[entity_type] or {}) do
-    prototype.allowed_module_categories = PM.remove_module_categories(prototype.allowed_module_categories,
-	{
-      "pm-heating-coils",
-      "pm-circuit-megassembler-module",
-	  "pm-circuit-megassembler-module-MK2"
-    })
-	if data.raw["assembling-machine"]["pm-circuit-megassembler"] then
-		data.raw["assembling-machine"]["pm-circuit-megassembler"].allowed_module_categories = {"pm-circuit-megassembler-module"}
-	end
-	if data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"] then
-		data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"].allowed_module_categories = {"pm-circuit-megassembler-module-MK2"}
-	end
-	if data.raw["beacon"]["pm-coil-heater"] then
-		data.raw["beacon"]["pm-coil-heater"].allowed_module_categories = {"pm-heating-coils"}
-	end
-	if data.raw["assembling-machine"]["pm-electric-coke-oven"] then
-		data.raw["assembling-machine"]["pm-electric-coke-oven"].allowed_module_categories = {"pm-heating-coils"}
-	end
+  for name, prototype in pairs(data.raw[entity_type] or {}) do
+		if not ignored_entities[name] then
+			prototype.allowed_module_categories = PM.remove_module_categories(prototype.allowed_module_categories,
+			{
+				"pm-heating-coils",
+				"pm-circuit-megassembler-module",
+				"pm-circuit-megassembler-module-MK2"
+			})
+		end
 	end
 end
+
+-- MARK: Module slot updating
 
 local excluded_machines =
 {
