@@ -192,21 +192,34 @@ end
 
 local excluded_machines =
 {
-	data.raw["furnace"]["electric-furnace"],
-	data.raw["furnace"]["pm-heat-furnace"],
-	data.raw["furnace"]["pm-electric-furnace-2"],
-	data.raw["furnace"]["pm-electric-boiler-1"],
-	data.raw["furnace"]["pm-electric-boiler-2"]
+	["electric-furnace"] = true,
+	["pm-heat-furnace"] = true,
+	["pm-electric-furnace-2"] = true,
+	["pm-electric-boiler-1"] = true,
+	["pm-electric-boiler-2"] = true,
 }
 
- for _, machine in pairs(data.raw["furnace"]) do
-        if not(machine.module_slots == nil) and machine.module_slots > 0 and not excluded_machines then
-            machine.module_slots = machine.module_slots + 8
-            machine.allowed_module_categories = {"hc-heating-coils"}
-            machine.icons_positioning =
-            {
-                {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
-            }
-        end
-    end
+for name, machine in pairs(data.raw["furnace"]) do
+	--FIXME: Get some actual criteria for what's a thematic furnace
+	if not machine.module_slots or machine.module_slots <= 0
+	or excluded_machines[name] then
+		goto continue
+	end
 
+	machine.module_slots = machine.module_slots + 8
+	machine.allowed_module_categories = {"hc-heating-coils"}
+	machine.icons_positioning =
+	{
+		{
+			inventory_index = defines.inventory.crafter_modules,
+			shift = {0, 1},
+			multi_row_initial_height_modifier = -0.3,
+			max_icons_per_row = 5,
+			scale = 0.42
+		}
+	}
+
+	::continue::
+end
+
+---@alias data.defines.inventory defines.inventory
