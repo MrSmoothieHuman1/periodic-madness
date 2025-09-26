@@ -80,6 +80,7 @@ data:extend{
 	}--[[@as data.SoundPrototype]]
 }
 
+--- MARK: Item removal
 --- Replace instances of plastic with pm plastic
 
 local item_replacements = {
@@ -169,9 +170,14 @@ for name in pairs(sciences_to_remove) do
 	end
 end
 
+
+-- MARK: No productivity limits
+
 for _, recipe in pairs(data.raw.recipe) do
     recipe.maximum_productivity = 99999999 --insane number, if anyone reaches it just give them a medal
 end
+
+-- MARK: Category updating
 
 local ignored_entities = {
 	["pm-circuit-megassembler"] = true,
