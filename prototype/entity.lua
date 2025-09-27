@@ -9677,8 +9677,8 @@ fluid_boxes =
       {
         filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven.png",
         priority = "high",
-        width = 230,
-        height = 230,
+        width = 256,
+        height = 273,
         scale = 0.5
       },
       {
