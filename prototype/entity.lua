@@ -9678,7 +9678,7 @@ fluid_boxes =
         filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven.png",
         priority = "high",
         width = 256,
-        height = 273,
+        height = 278,
         scale = 0.5
       },
       {
@@ -9698,13 +9698,13 @@ fluid_boxes =
       fadeout = true,
       animation =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-2/coke-oven-2-on.png",
-        width = 192,
-        height = 211,
-        frame_count = 24,
-        line_length = 6,
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-on.png",
+        width = 256,
+        height = 278,
+        frame_count = 32,
+        line_length = 8,
         scale = 0.5,
-        animation_speed = 0.45
+        animation_speed = 0.33
       }
     }
   }
