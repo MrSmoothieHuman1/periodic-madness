@@ -9675,17 +9675,30 @@ fluid_boxes =
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven.png",
-        priority = "high",
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-base.png",
         width = 256,
         height = 278,
+        frame_count = 1,
+        line_length = 1,
+        repeat_count = 32,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-fans.png",
+        width = 256,
+        height = 278,
+        frame_count = 32,
+        line_length = 8,
+        animation_speed = 0.5,
         scale = 0.5
       },
       {
         filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-3/coke-oven-3-shadow.png",
-        priority = "high",
         width = 192,
         height = 211,
+        frame_count = 1,
+        line_length = 1,
+        repeat_count = 32,
         draw_as_shadow = true,
         shift = util.by_pixel(48, 7),
         scale = 0.5
