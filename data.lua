@@ -131,7 +131,7 @@ require("prototype.virtual-signals")
 
 require("compatibility.icon-badges")
 --require("compatibility.DLC.belt-stacking")
---require("compatibility.DLC.quality")
+require("compatibility.DLC.quality")
 require("compatibility.DLC.elevated-rails")
 
 local resource_autoplace = require('resource-autoplace');

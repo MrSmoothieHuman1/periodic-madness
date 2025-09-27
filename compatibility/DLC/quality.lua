@@ -1,7 +1,7 @@
 if mods["quality"] then
 local PM = require("library")
 --MARK: Vanilla changes
-    data.raw["technology"]["modules"].icon_size = "__periodic-madness__/graphics/technology/modules-quality.png"
+    data.raw["technology"]["modules"].icon = "__periodic-madness__/graphics/technology/modules-quality.png"
     data.raw["module"]["quality-module"].icon_size = 64
     data.raw["module"]["quality-module"].icon = "__periodic-madness__/graphics/icons/modules/quality-module-1.png"
     data.raw["module"]["quality-module-2"].icon_size = 64
@@ -9,37 +9,42 @@ local PM = require("library")
     data.raw["module"]["quality-module-3"].icon_size = 64
     data.raw["module"]["quality-module-3"].icon = "__periodic-madness__/graphics/icons/modules/quality-module-3.png"
     data.raw["technology"]["quality-module"].icon_size = 256
-    data.raw["technology"]["quality-module"].icon = "__periodic-madness__/graphics/icons/technology/quality-module-1-tech.png"
+    data.raw["technology"]["quality-module"].icon = "__periodic-madness__/graphics/technology/quality-module-1-tech.png"
     data.raw["technology"]["quality-module-2"].icon_size = 256
     data.raw["technology"]["quality-module-2"].icon = "__periodic-madness__/graphics/technology/quality-module-2-tech.png"
     data.raw["technology"]["quality-module-3"].icon_size = 256
     data.raw["technology"]["quality-module-3"].icon = "__periodic-madness__/graphics/technology/quality-module-3-tech.png"
 
     table.insert(data.raw["module"]["pm-speed-module-4"].effect, {quality = -0.2})
-    table.insert(data.raw["module"]["pm-speed-module-5"].effect, {quality = -0.2})
-    table.insert(data.raw["module"]["pm-speed-module-6"].effect, {quality = -0.25})
+    --table.insert(data.raw["module"]["pm-speed-module-5"].effect, {quality = -0.2})
+    --table.insert(data.raw["module"]["pm-speed-module-6"].effect, {quality = -0.25})
 
-    table.insert(data.raw["technology"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-aluminium-gallium-arsenide"})
-    table.insert(data.raw["technology"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-module-quality-light"})
+    table.insert(data.raw["technology"]["modules"].effects, PM.unlock_recipe("pm-aluminium-gallium-arsenide"))
+    --table.insert(data.raw["technology"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-module-quality-light"})
+
+    data.raw["quality"]["uncommon"].tool_durability_multiplier = 2
+    data.raw["quality"]["rare"].tool_durability_multiplier = 4
+    data.raw["quality"]["epic"].tool_durability_multiplier = 6
+    data.raw["quality"]["legendary"].tool_durability_multiplier = 10
 
 
     data.raw["recipe"]["quality-module"].ingredients =
     {
         PM.ingredient("pm-module-case", 1),
-        PM.ingredient("pm-module-quality-light", 1),
+        --PM.ingredient("pm-module-quality-light", 1),
         PM.ingredient("electronic-circuit", 5),
     }
     data.raw["recipe"]["quality-module-2"].ingredients =
     {
         PM.ingredient("pm-module-case", 1),
-        PM.ingredient("pm-module-quality-light", 1),
+        --PM.ingredient("pm-module-quality-light", 1),
         PM.ingredient("electronic-circuit", 5),
         PM.ingredient("pm-fluid-circuit", 5)
     }
     data.raw["recipe"]["quality-module-3"].ingredients =
     {
         PM.ingredient("pm-module-case", 1),
-        PM.ingredient("pm-module-quality-light", 1),
+        --PM.ingredient("pm-module-quality-light", 1),
         PM.ingredient("pm-fluid-circuit", 5),
         PM.ingredient("advanced-circuit", 5),
     }
@@ -100,14 +105,14 @@ data:extend({
     
     {
         type = "technology",
-        name = "pm-speed-module-4",
+        name = "pm-quality-module-4",
         icon_size = 256,
-        icon = "__periodic-madness__/graphics/technology/speed-module-4-tech.png",
+        icon = "__periodic-madness__/graphics/technology/quality-module-4-tech.png",
         effects =
         {
-            PM.unlock_recipe("pm-speed-module-4")
+            PM.unlock_recipe("pm-quality-module-4")
         },
-        prerequisites = {"speed-module-3"},
+        prerequisites = {"quality-module-3"},
         unit =
         {
             count = 600,
@@ -173,7 +178,7 @@ data:extend({
         ingredients =
         {
             PM.ingredient("quality-module", 1),
-            PM.ingredient("pm-module-quality-light", 1),
+            --PM.ingredient("pm-module-quality-light", 1),
             PM.ingredient("pm-fluid-circuit", 10),
             PM.ingredient("processing-unit", 10)
         },
