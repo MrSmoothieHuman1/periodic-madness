@@ -5261,7 +5261,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-octane-processing.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-advanced-octane-processing")
     },
     prerequisites = {"pm-rhenium-platinum-catalyst", "pm-octane-fuel-canisters"},
     unit =
