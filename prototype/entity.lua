@@ -9647,7 +9647,7 @@ fluid_boxes =
   icon = "__periodic-madness__/graphics/icons/buildings/electric-coke-oven.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 0.5, result = "pm-stone-coke-oven-2" },
+  minable = { mining_time = 0.5, result = "pm-electric-coke-oven" },
   max_health = 800,
   corpse = "pm-electric-coke-oven",
   dying_explosion = "assembling-machine-1-explosion",

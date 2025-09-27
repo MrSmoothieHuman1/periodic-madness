@@ -933,6 +933,16 @@ data:extend({
     place_result = "pm-stone-coke-oven-3",
     stack_size = 75
   },
+{
+    type = "item",
+    name = "pm-electric-coke-oven",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/electric-coke.png",
+    subgroup = "smelting-machine",
+    order = "i",
+    place_result = "pm-electric-coke-oven",
+    stack_size = 50
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
