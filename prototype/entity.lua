@@ -9675,10 +9675,10 @@ fluid_boxes =
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-3/coke-oven-3.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven.png",
         priority = "high",
-        width = 192,
-        height = 211,
+        width = 230,
+        height = 230,
         scale = 0.5
       },
       {

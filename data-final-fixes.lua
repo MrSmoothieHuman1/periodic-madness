@@ -226,7 +226,7 @@ for name, machine in pairs(data.raw["furnace"]) do
 	end
 
 	machine.module_slots = machine.module_slots + 8
-	machine.allowed_module_categories = {"hc-heating-coils"}
+	machine.allowed_module_categories = {"pm-heating-coils"}
 	machine.icons_positioning =
 	{
 		{
