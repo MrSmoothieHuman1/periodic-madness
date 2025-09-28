@@ -3,6 +3,7 @@ data:extend({
   {
     type = "corpse",
     name = "pm-solar-panel-2-remnants",
+    localised_name = {"remnant-name", PM.locale_of("entity", "pm-solar-panel-2")},
     icon = "__base__/graphics/icons/solar-panel.png",
     icon_size = 64,
     flags = { "placeable-neutral", "not-on-map" },
@@ -35,6 +36,7 @@ data:extend({
   {
     type = "corpse",
     name = "pm-lithium-construction-robot-remnants",
+    localised_name = {"remnant-name", PM.locale_of("entity", "pm-lithium-construction-robot")},
     icon = "__base__/graphics/icons/construction-robot.png",
     icon_size = 64,
     flags = { "placeable-neutral", "not-on-map", "placeable-off-grid" },
@@ -67,6 +69,7 @@ data:extend({
   {
     type = "corpse",
     name = "pm-lithium-logistic-robot-remnants",
+    localised_name = {"remnant-name", PM.locale_of("entity", "pm-lithium-logistic-robot")},
     icon = "__base__/graphics/icons/logistic-robot.png",
     icon_size = 64,
     flags = { "placeable-neutral", "not-on-map", "placeable-off-grid" },
@@ -99,6 +102,7 @@ data:extend({
   {
     type = "corpse",
     name = "pm-concrete-wall-remnants",
+    localised_name = {"remnant-name", PM.locale_of("entity", "pm-concrete-wall")},
     icon = "__base__/graphics/icons/wall.png",
     hidden_in_factoriopedia = true,
     flags = {"placeable-neutral", "not-on-map"},
@@ -127,6 +131,7 @@ data:extend({
   {
     type = "corpse",
     name = "pm-bio-wall-remnants",
+    localised_name = {"remnant-name", PM.locale_of("entity", "pm-bio-wall")},
     icon = "__base__/graphics/icons/wall.png",
     hidden_in_factoriopedia = true,
     flags = {"placeable-neutral", "not-on-map"},
