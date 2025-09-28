@@ -322,8 +322,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-pheonlic-resin-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/pheonlic-resin-processing.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/pheonlic-resin.png",
     effects =
     {
       PM.unlock_recipe("pm-pheonlic-resin")
@@ -339,8 +339,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-resin-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/resin-processing.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/resin.png",
     effects =
     {
       PM.unlock_recipe("pm-resin"),
