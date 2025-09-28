@@ -24,12 +24,19 @@ local function add_default_category(fluidbox, new_category)
 end
 
 local additional_default_category = "pm-osmium-pipes"
+local ignored_entities = {
+	["pipe"] = true,
+	["pm-stainless-steel-pipe"] = true,
+	["pipe-to-ground"] = true,
+	["pm-stainless-steel-pipe-to-ground"] = true,
+}
 
 for type in pairs(defines.prototypes.entity) do
 	local type_lookup = data.raw[type]
 	if type_lookup then
 		for name, prototype in pairs(type_lookup) do
 			---@cast prototype -data.MapGenPresets, -data.GuiStyle
+			if ignored_entities[name] then goto continue end
 
 			if prototype.fluid_box then
 				add_default_category(prototype.fluid_box, additional_default_category)
@@ -57,20 +64,7 @@ for type in pairs(defines.prototypes.entity) do
 				add_default_category(prototype.energy_source.fluid_box, additional_default_category)
 			end
 
+			::continue::
 		end
 	end
 end
-
---FIXME: i hate this, penny will hate this, but it shall exist until penny (or i) fix the code above
-data.raw["pipe"]["pipe"].fluid_box.pipe_connections[1].connection_category = "default"
-data.raw["pipe"]["pipe"].fluid_box.pipe_connections[2].connection_category = "default"
-data.raw["pipe"]["pipe"].fluid_box.pipe_connections[3].connection_category = "default"
-data.raw["pipe"]["pipe"].fluid_box.pipe_connections[4].connection_category = "default"
-data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[1].connection_category = "default"
-data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[2].connection_category = "default"
-data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[3].connection_category = "default"
-data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[4].connection_category = "default"
-data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.pipe_connections[1].connection_category = "default"
-data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.pipe_connections[2].connection_category = "default"
-data.raw["pipe-to-ground"]["pm-stainless-steel-pipe-to-ground"].fluid_box.pipe_connections[1].connection_category = "default"
-data.raw["pipe-to-ground"]["pm-stainless-steel-pipe-to-ground"].fluid_box.pipe_connections[2].connection_category = "default"
