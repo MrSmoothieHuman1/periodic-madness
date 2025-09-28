@@ -848,7 +848,7 @@ data:extend({
     fluid_box =
     {
       volume = 50000,
-      pipe_covers = pipecoverspictures(),
+      pipe_covers = pm_stainlesspipecoverspictures(),
       pipe_connections =
       {
         { direction = defines.direction.north--[[@as int]], position = {-1, -1} },
