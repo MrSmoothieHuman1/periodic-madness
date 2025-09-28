@@ -4088,6 +4088,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-coal-tar-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/coal-tar-seperation.png",
     enabled = false,
     energy_required = 3,
     category = "pm-washing",
@@ -4126,6 +4128,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-coal-gas-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/coal-gas-seperation.png",
     enabled = false,
     energy_required = 3,
     category = "chemistry",
