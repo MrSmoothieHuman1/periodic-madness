@@ -86,6 +86,7 @@ Date: 2025-12-07
     - Fixed solar panel equipment 3 technology using the tier 2 icon.
     - Fixed molten kasethal being insanely cheap, like insanely on god cheap.
     - Fixed fission reactor equipment being in the wrong subgroup.
+    - Fixed worker robot storage 3 having the wrong prerequisites.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514

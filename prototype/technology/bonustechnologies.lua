@@ -383,7 +383,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.5)
     },
-    prerequisites = {"worker-robots-speed-5", "worker-robots-storage-3", "pm-robot-battery-capacity-5"},
+    prerequisites = {"worker-robots-speed-5", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-5"},
     upgrade = true,
     unit =
     {
@@ -424,7 +424,8 @@ data:extend({
         {"pm-post-transition-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1}
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 120
     }
@@ -452,7 +453,8 @@ data:extend({
         {"pm-post-transition-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1}
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 120
     }
@@ -484,6 +486,36 @@ data:extend({
       {"pm-alkaline-earth-metal-science-pack", 1}
     },
     time = 120
+  },
+  upgrade = true
+},
+
+--MARK: Robot storage
+{
+  type = "technology",
+  name = "pm-worker-robots-storage-4",
+  icons = util.technology_icon_constant_capacity("__base__/graphics/technology/worker-robots-storage.png"),
+  effects =
+  {
+    {
+      type = "worker-robot-storage",
+      modifier = 1
+    }
+  },
+  prerequisites = {"worker-robots-storage-3", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+  unit =
+  {
+    count = 600,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+    },
+    time = 80
   },
   upgrade = true
 },
@@ -1255,7 +1287,7 @@ data:extend({
     effects =
     {
       PM.modify_recipe_productivity("pm-alkaline-earth-metal-science-pack", 0.05),
-      --PM.modify_recipe_productivity("pm-plastic-alkaline-earth-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-alkaline-earth-metal-science-pack", 0.05),
       --PM.modify_recipe_productivity("pm-FUCK-alkaline-earth-metal-science-pack", 0.02)
     },
     prerequisites = {"pm-experimental-research-data", "pm-alkaline-earth-metal-pack-unlock"},
@@ -1278,9 +1310,10 @@ data:extend({
     max_level = "infinite",
     effects =
     {
-      PM.unlock_recipe("pm-tantalum-advanced-advanced-advanced-transition-metal-science-pack"),
-      PM.unlock_recipe("pm-niobium-advanced-advanced-advanced-transition-metal-science-pack")
-      --PM.modify_recipe_productivity("pm-plastic-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-tantalum-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-niobium-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-tantalum-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
+      PM.modify_recipe_productivity("pm-plastic-niobium-advanced-advanced-advanced-transition-metal-science-pack", 0.05),
       --PM.modify_recipe_productivity("pm-FUCK-advanced-advanced-advanced-transition-metal-science-pack", 0.02)
     },
     prerequisites = {"pm-experimental-research-data"},
@@ -1393,6 +1426,7 @@ data.raw["technology"]["worker-robots-storage-2"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["worker-robots-storage-3"].prerequisites = {"worker-robots-storage-2", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["worker-robots-storage-3"].unit.ingredients =
 {
   {"automation-science-pack", 1},
