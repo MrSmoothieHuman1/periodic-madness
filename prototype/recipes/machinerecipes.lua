@@ -1697,6 +1697,23 @@ data:extend({
     {
       PM.product("pm-stone-coke-oven-3", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-electric-coke-oven",
+    enabled = false,
+    energy_required = 3,
+    ingredients = 
+    {
+        PM.ingredient("advanced-circuit", 2),
+        PM.ingredient("pm-corrosion-resistant-tubing", 12),
+        PM.ingredient("pm-molten-framing", 4),
+        PM.ingredient("pm-heavyweight-framing", 8)
+    },
+    results = 
+    {
+        PM.product("pm-electric-coke-oven", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 
