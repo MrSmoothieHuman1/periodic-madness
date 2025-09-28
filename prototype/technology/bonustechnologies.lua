@@ -2398,3 +2398,73 @@ data.raw["technology"]["inserter-capacity-bonus-7"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+
+--MARK: V.Follower robot couont
+data.raw["technology"]["follower-robot-count-1"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-2"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-3"].prerequisites = {"follower-robot-count-2", "pm-post-transition-metal-pack-unlock"}
+data.raw["technology"]["follower-robot-count-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-3"].effects =
+{
+    {
+        type = "maximum-following-robots-count",
+        modifier = 10
+    },
+    {
+        type = "follower-robot-lifetime",
+        modifier = 0.25
+    }
+}
+data.raw["technology"]["follower-robot-count-4"].prerequisites = {"follower-robot-count-3", "pm-metalloid-pack-unlock"}
+data.raw["technology"]["follower-robot-count-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-4"].effects =
+{
+    {
+        type = "maximum-following-robots-count",
+        modifier = 15
+    }
+}
+data.raw["technology"]["follower-robot-count-5"].prerequisites = {"follower-robot-count-4", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"}
+data.raw["technology"]["follower-robot-count-5"].max_level = 5
+data.raw["technology"]["follower-robot-count-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1},
+  {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["follower-robot-count-5"].effects =
+{
+    {
+        type = "maximum-following-robots-count",
+        modifier = 15
+    },
+    {
+        type = "follower-robot-lifetime",
+        modifier = 0.25
+    }
+}

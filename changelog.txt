@@ -31,6 +31,7 @@ Date: 2025-12-07
     - Added a way to more easily get rid of bitumen, by turning it into crude oil.
     - Made tier 4+ modules all take OLED's as part of their special lights. At least you didnt have to look through several research papers to add some fucking recipes to factorio!
     - Gave a bunch of items inventory sounds, because otherwise penny will kill me
+    - Added robot lifetime modifiers in following robot bonus technologies, because i only just learnt it existed and its cool
 
   Changes:
     - Slightly nerfed research productivity.
@@ -68,6 +69,7 @@ Date: 2025-12-07
     - Changed baryte ore recipe to be made in the leaching field, instead of the chemical plant. This was to make the leaching field have more of a purpose, and should place nicely with some changes that will come Later.
     - updated the molybdenum icon to be in my normal lighting and rendering. it'll be updated for real, but i aint got time for that!
     - Made advanced breadboard recipes need 3 of the last tier's breadboard, instead of 1.
+    - Updated following robot bonus technologies to fit in with the PM tech tree.
 
   Fixes:
     - Fixed the tech icons of all battery equipment.

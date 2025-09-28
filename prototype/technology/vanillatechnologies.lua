@@ -581,32 +581,6 @@ data.raw["technology"]["destroyer"].unit.ingredients =
 }
 data.raw["technology"]["destroyer"].prerequisites = {"distractor", "pm-post-transition-metal-pack-unlock"}
 
-data.raw["technology"]["follower-robot-count-1"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1}
-}
-data.raw["technology"]["follower-robot-count-2"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1}
-}
-data.raw["technology"]["follower-robot-count-3"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1}
-}
-data.raw["technology"]["follower-robot-count-4"].unit.ingredients =
-{
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1}
-}
-
 data.raw["technology"]["effect-transmission"].unit.count = 375
 data.raw["technology"]["effect-transmission"].unit.time = 80
 data.raw["technology"]["effect-transmission"].prerequisites = {"pm-vacuum-tubes", "pm-polytetrafluoroethylene-plastic"}
