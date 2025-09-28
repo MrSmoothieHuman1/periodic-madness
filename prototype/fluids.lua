@@ -1785,6 +1785,8 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.38, g = 0.49, b = 0.74},
     flow_color = {r = 0.38, g = 0.49, b = 0.74},
+    auto_void = true,
+    auto_void_emissions = 1.75,
   },
   {
     type = "fluid",
