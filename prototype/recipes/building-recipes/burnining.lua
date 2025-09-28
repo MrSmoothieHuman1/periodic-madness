@@ -26,6 +26,7 @@ local function make_voiding(prototype)
 		{
 			type = "recipe",
 			name = prototype.name.."-voiding",
+			localised_name = {"recipe-name.-voiding", PM.locale_of(prototype)},
 			icons = icons,
 			subgroup = "pm-voiding",
 			category = "pm-burnining",
