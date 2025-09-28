@@ -32,6 +32,7 @@ Date: 2025-12-07
     - Made tier 4+ modules all take OLED's as part of their special lights. At least you didnt have to look through several research papers to add some fucking recipes to factorio!
     - Gave a bunch of items inventory sounds, because otherwise penny will kill me
     - Added robot lifetime modifiers in following robot bonus technologies, because i only just learnt it existed and its cool
+    - Gave all pipes the visualisations 2.0 added.
 
   Changes:
     - Slightly nerfed research productivity.

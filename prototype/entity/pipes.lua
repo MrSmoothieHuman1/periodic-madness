@@ -1,278 +1,559 @@
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
-data:extend({
+--- @param i integer
+local function make_visualization(i)
+  return
+  {
+    filename = "__base__/graphics/entity/pipe/visualization.png",
+    priority = "extra-high",
+    x = i * 64,
+    size = 64,
+    scale = 0.5,
+    flags = {"icon"},
+  }
+end
+--- @param i integer
+local function make_disabled_visualization(i)
+  return
+  {
+    filename = "__base__/graphics/entity/pipe/disabled-visualization.png",
+    priority = "extra-high",
+    x = i * 64,
+    size = 64,
+    scale = 0.5,
+    flags = {"icon"},
+  }
+end
 
+pm_stainlesspipepictures = function()
+  return
+  {
+    straight_vertical_single =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-single.png",
+      priority = "extra-high",
+      width = 160,
+      height = 160,
+      scale = 0.5
+    },
+    straight_vertical =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_vertical_window =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-window.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_horizontal_window =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal-window.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_horizontal =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_up_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_up_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_down_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_down_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_up =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-up.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_down =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-down.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    cross =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-cross.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_up =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-up.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_down =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-down.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_vertical_single_visualization = make_visualization(0),
+    straight_vertical_visualization = make_visualization(5),
+    straight_vertical_window_visualization = make_visualization(5),
+    straight_horizontal_window_visualization = make_visualization(10),
+    straight_horizontal_visualization = make_visualization(10),
+    corner_up_right_visualization = make_visualization(3),
+    corner_up_left_visualization = make_visualization(9),
+    corner_down_right_visualization = make_visualization(6),
+    corner_down_left_visualization = make_visualization(12),
+    t_up_visualization = make_visualization(11),
+    t_down_visualization = make_visualization(14),
+    t_right_visualization = make_visualization(7),
+    t_left_visualization = make_visualization(13),
+    cross_visualization = make_visualization(15),
+    ending_up_visualization = make_visualization(1),
+    ending_down_visualization = make_visualization(4),
+    ending_right_visualization = make_visualization(2),
+    ending_left_visualization = make_visualization(8),
+    straight_vertical_single_disabled_visualization = make_disabled_visualization(0),
+    straight_vertical_disabled_visualization = make_disabled_visualization(5),
+    straight_vertical_window_disabled_visualization = make_disabled_visualization(5),
+    straight_horizontal_window_disabled_visualization = make_disabled_visualization(10),
+    straight_horizontal_disabled_visualization = make_disabled_visualization(10),
+    corner_up_right_disabled_visualization = make_disabled_visualization(3),
+    corner_up_left_disabled_visualization = make_disabled_visualization(9),
+    corner_down_right_disabled_visualization = make_disabled_visualization(6),
+    corner_down_left_disabled_visualization = make_disabled_visualization(12),
+    t_up_disabled_visualization = make_disabled_visualization(11),
+    t_down_disabled_visualization = make_disabled_visualization(14),
+    t_right_disabled_visualization = make_disabled_visualization(7),
+    t_left_disabled_visualization = make_disabled_visualization(13),
+    cross_disabled_visualization = make_disabled_visualization(15),
+    ending_up_disabled_visualization = make_disabled_visualization(1),
+    ending_down_disabled_visualization = make_disabled_visualization(4),
+    ending_right_disabled_visualization = make_disabled_visualization(2),
+    ending_left_disabled_visualization = make_disabled_visualization(8),
+    horizontal_window_background =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-horizontal-window-background.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    vertical_window_background =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-vertical-window-background.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    fluid_background =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-background.png",
+      priority = "extra-high",
+      width = 64,
+      height = 40,
+      scale = 0.5
+    },
+    low_temperature_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",
+      priority = "extra-high",
+      width = 160,
+      height = 18
+    },
+    middle_temperature_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-flow-medium-temperature.png",
+      priority = "extra-high",
+      width = 160,
+      height = 18
+    },
+    high_temperature_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-flow-high-temperature.png",
+      priority = "extra-high",
+      width = 160,
+      height = 18
+    },
+    gas_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/steam.png",
+      priority = "extra-high",
+      line_length = 10,
+      width = 48,
+      height = 30,
+      frame_count = 60
+    }
+  }
+end
+pm_osmiumpipepictures = function()
+  return
+  {
+    straight_vertical_single =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-single.png",
+      priority = "extra-high",
+      width = 160,
+      height = 160,
+      scale = 0.5
+    },
+    straight_vertical =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_vertical_window =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-window.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_horizontal_window =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal-window.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_horizontal =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_up_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_up_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_down_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    corner_down_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_up =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-up.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_down =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-down.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    t_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    cross =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-cross.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_up =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-up.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_down =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-down.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_right =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-right.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    ending_left =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-left.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    straight_vertical_single_visualization = make_visualization(0),
+    straight_vertical_visualization = make_visualization(5),
+    straight_vertical_window_visualization = make_visualization(5),
+    straight_horizontal_window_visualization = make_visualization(10),
+    straight_horizontal_visualization = make_visualization(10),
+    corner_up_right_visualization = make_visualization(3),
+    corner_up_left_visualization = make_visualization(9),
+    corner_down_right_visualization = make_visualization(6),
+    corner_down_left_visualization = make_visualization(12),
+    t_up_visualization = make_visualization(11),
+    t_down_visualization = make_visualization(14),
+    t_right_visualization = make_visualization(7),
+    t_left_visualization = make_visualization(13),
+    cross_visualization = make_visualization(15),
+    ending_up_visualization = make_visualization(1),
+    ending_down_visualization = make_visualization(4),
+    ending_right_visualization = make_visualization(2),
+    ending_left_visualization = make_visualization(8),
+    straight_vertical_single_disabled_visualization = make_disabled_visualization(0),
+    straight_vertical_disabled_visualization = make_disabled_visualization(5),
+    straight_vertical_window_disabled_visualization = make_disabled_visualization(5),
+    straight_horizontal_window_disabled_visualization = make_disabled_visualization(10),
+    straight_horizontal_disabled_visualization = make_disabled_visualization(10),
+    corner_up_right_disabled_visualization = make_disabled_visualization(3),
+    corner_up_left_disabled_visualization = make_disabled_visualization(9),
+    corner_down_right_disabled_visualization = make_disabled_visualization(6),
+    corner_down_left_disabled_visualization = make_disabled_visualization(12),
+    t_up_disabled_visualization = make_disabled_visualization(11),
+    t_down_disabled_visualization = make_disabled_visualization(14),
+    t_right_disabled_visualization = make_disabled_visualization(7),
+    t_left_disabled_visualization = make_disabled_visualization(13),
+    cross_disabled_visualization = make_disabled_visualization(15),
+    ending_up_disabled_visualization = make_disabled_visualization(1),
+    ending_down_disabled_visualization = make_disabled_visualization(4),
+    ending_right_disabled_visualization = make_disabled_visualization(2),
+    ending_left_disabled_visualization = make_disabled_visualization(8),
+    horizontal_window_background =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-horizontal-window-background.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    vertical_window_background =
+    {
+      filename = "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-vertical-window-background.png",
+      priority = "extra-high",
+      width = 128,
+      height = 128,
+      scale = 0.5
+    },
+    fluid_background =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-background.png",
+      priority = "extra-high",
+      width = 64,
+      height = 40,
+      scale = 0.5
+    },
+    low_temperature_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",
+      priority = "extra-high",
+      width = 160,
+      height = 18
+    },
+    middle_temperature_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-flow-medium-temperature.png",
+      priority = "extra-high",
+      width = 160,
+      height = 18
+    },
+    high_temperature_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/fluid-flow-high-temperature.png",
+      priority = "extra-high",
+      width = 160,
+      height = 18
+    },
+    gas_flow =
+    {
+      filename = "__base__/graphics/entity/pipe/steam.png",
+      priority = "extra-high",
+      line_length = 10,
+      width = 48,
+      height = 30,
+      frame_count = 60
+    }
+  }
+end
+
+data:extend({
 --MARK: Pipes
     {
-        type = "pipe",
-        name = "pm-stainless-steel-pipe",
-        icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-pipe.png",
-        flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 0.2, result = "pm-stainless-steel-pipe" },
-        max_health = 800,
-        corpse = "pipe-remnants",
-        resistances =
-        {
-            {
-                type = "fire",
-                percent = 75,
-            },
-            {
-                type = "impact",
-                percent = 70,
-            },
-            {
-                type = "acid",
-                percent = 85,
-            }
-        },
-        hide_resistances = false,
-        fast_replaceable_group = "pipe",
-        collision_box = { { -0.29, -0.29 }, { 0.29, 0.29 } },
-        selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-        icon_draw_specification = {scale = 0.5},
-        fluid_box =
-        {
-            max_pipeline_extent = 320 * 1.75,
-            volume = 200,
-            pipe_covers = pm_stainlesspipecoverspictures(), -- in case a real pipe is connected to a ghost
-            pipe_connections =
-            {
-                { direction = defines.direction.north--[[@as int]], position = {0, 0} },
-                { direction = defines.direction.east--[[@as int]], position = {0, 0} },
-                { direction = defines.direction.south--[[@as int]], position = {0, 0} },
-                { direction = defines.direction.west--[[@as int]], position = {0, 0} },
-            },
-            hide_connection_info = true
-        },
-        impact_category = "metal",
-        pictures =
-        {
-            straight_vertical_single =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-single.png",
-                priority = "extra-high",
-                width = 160,
-                height = 160,
-                scale = 0.5,
-            },
-            straight_vertical =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            straight_vertical_window =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-vertical-window.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            straight_horizontal_window =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal-window.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            straight_horizontal =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-straight-horizontal.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_up_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_up_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-up-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_down_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_down_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-corner-down-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_up =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-up.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_down =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-down.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-t-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            cross =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-cross.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_up =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-up.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_down =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-down.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-ending-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            horizontal_window_background =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-horizontal-window-background.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            vertical_window_background =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe/stainless-steel-pipe-vertical-window-background.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            fluid_background =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-background.png",
-                priority = "extra-high",
-                width = 64,
-                height = 40,
-                scale = 0.5,
-            },
-            low_temperature_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",
-                priority = "extra-high",
-                width = 160,
-                height = 18,
-            },
-            middle_temperature_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-flow-medium-temperature.png",
-                priority = "extra-high",
-                width = 160,
-                height = 18,
-            },
-            high_temperature_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-flow-high-temperature.png",
-                priority = "extra-high",
-                width = 160,
-                height = 18,
-            },
-            gas_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/steam.png",
-                priority = "extra-high",
-                line_length = 10,
-                width = 48,
-                height = 30,
-                frame_count = 60,
-                axially_symmetrical = false,
-                direction_count = 1,
-            },
-        },
-        horizontal_window_bounding_box = { { -0.25, -0.28125 }, { 0.25, 0.15625 } },
-        vertical_window_bounding_box = { { -0.28125, -0.5 }, { 0.03125, 0.125 } },
+    type = "pipe",
+    name = "pm-stainless-steel-pipe",
+    icon = "__base__/graphics/icons/pipe.png",
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {mining_time = 0.15, result = "pm-stainless-steel-pipe"},
+    max_health = 250,
+    corpse = "pipe-remnants",
+    dying_explosion = "pipe-explosion",
+    icon_draw_specification = {scale = 0.5},
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 80
+      },
+      {
+        type = "impact",
+        percent = 30
+      }
+    },
+    fast_replaceable_group = "pipe",
+    collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    damaged_trigger_effect = hit_effects.entity(),
+    fluid_box =
+    {
+      max_pipeline_extent = 320 * 1.75,
+      volume = 200,
+      pipe_covers = pm_stainlesspipecoverspictures(), -- in case a real pipe is connected to a ghost
+      pipe_connections =
+      {
+        { direction = defines.direction.north, position = {0, 0} },
+        { direction = defines.direction.east, position = {0, 0} },
+        { direction = defines.direction.south, position = {0, 0} },
+        { direction = defines.direction.west, position = {0, 0} }
+      },
+      hide_connection_info = true
+    },
+    impact_category = "metal",
+    pictures = pm_stainlesspipepictures(),
+    working_sound = sounds.pipe,
+    open_sound = sounds.metal_small_open,
+    close_sound = sounds.metal_small_close,
+
+    horizontal_window_bounding_box = {{-0.25, -0.28125}, {0.25, 0.15625}},
+    vertical_window_bounding_box = {{-0.28125, -0.5}, {0.03125, 0.125}}
     },
     {
         type = "pipe-to-ground",
@@ -359,282 +640,53 @@ data:extend({
             },
         },
     },
-
     {
-        type = "pipe",
-        name = "pm-osmium-pipe",
-        icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe.png",
-        flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 0.35, result = "pm-osmium-pipe" },
-        max_health = 1200,
-        corpse = "pipe-remnants",
-        resistances =
-        {
-            {
-                type = "fire",
-                percent = 80,
-            },
-            {
-                type = "impact",
-                percent = 90,
-                decrease = 5
-            },
-            {
-                type = "acid",
-                percent = 95,
-            },
-            {
-                type = "physical",
-                percent = 85,
-                decrease = 2,
-            }
-        },
-        hide_resistances = false,
-        fast_replaceable_group = "pipe",
-        collision_box = { { -0.29, -0.29 }, { 0.29, 0.29 } },
-        selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-        icon_draw_specification = {scale = 0.5},
-        fluid_box =
-        {
-            max_pipeline_extent = 320 * 1.75,
-            volume = 200,
-            pipe_covers = pm_osmiumpipecoverspictures(), -- in case a real pipe is connected to a ghost
-            pipe_connections =
-            {
-                { direction = defines.direction.north--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
-                { direction = defines.direction.east--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
-                { direction = defines.direction.south--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
-                { direction = defines.direction.west--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
-            },
-            hide_connection_info = true,
-        },
-        impact_category = "metal",
-        pictures =
-        {
-            straight_vertical_single =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-single.png",
-                priority = "extra-high",
-                width = 160,
-                height = 160,
-                scale = 0.5,
-            },
-            straight_vertical =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            straight_vertical_window =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-vertical-window.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            straight_horizontal_window =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal-window.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            straight_horizontal =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-straight-horizontal.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_up_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_up_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-up-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_down_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            corner_down_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-corner-down-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_up =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-up.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_down =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-down.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            t_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-t-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            cross =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-cross.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_up =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-up.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_down =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-down.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_right =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-right.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            ending_left =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-ending-left.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            horizontal_window_background =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-horizontal-window-background.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            vertical_window_background =
-            {
-                filename =
-                "__periodic-madness__/graphics/entities/buildings/osmium-pipe/osmium-pipe-vertical-window-background.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                scale = 0.5,
-            },
-            fluid_background =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-background.png",
-                priority = "extra-high",
-                width = 64,
-                height = 40,
-                scale = 0.5,
-            },
-            low_temperature_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",
-                priority = "extra-high",
-                width = 160,
-                height = 18,
-            },
-            middle_temperature_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-flow-medium-temperature.png",
-                priority = "extra-high",
-                width = 160,
-                height = 18,
-            },
-            high_temperature_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/fluid-flow-high-temperature.png",
-                priority = "extra-high",
-                width = 160,
-                height = 18,
-            },
-            gas_flow =
-            {
-                filename = "__base__/graphics/entity/pipe/steam.png",
-                priority = "extra-high",
-                line_length = 10,
-                width = 48,
-                height = 30,
-                frame_count = 60,
-                axially_symmetrical = false,
-                direction_count = 1,
-            },
-        },
-        horizontal_window_bounding_box = { { -0.25, -0.28125 }, { 0.25, 0.15625 } },
-        vertical_window_bounding_box = { { -0.28125, -0.5 }, { 0.03125, 0.125 } },
+    type = "pipe",
+    name = "pm-osmium-pipe",
+    icon = "__base__/graphics/icons/pipe.png",
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {mining_time = 0.15, result = "pm-osmium-pipe"},
+    max_health = 1200,
+    corpse = "pipe-remnants",
+    dying_explosion = "pipe-explosion",
+    icon_draw_specification = {scale = 0.5},
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 80
+      },
+      {
+        type = "impact",
+        percent = 30
+      }
+    },
+    fast_replaceable_group = "pipe",
+    collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    damaged_trigger_effect = hit_effects.entity(),
+    fluid_box =
+    {
+      max_pipeline_extent = 320 * 1.75,
+      volume = 200,
+      pipe_covers = pm_stainlesspipecoverspictures(), -- in case a real pipe is connected to a ghost
+      pipe_connections =
+      {
+        { direction = defines.direction.north, position = {0, 0} },
+        { direction = defines.direction.east, position = {0, 0} },
+        { direction = defines.direction.south, position = {0, 0} },
+        { direction = defines.direction.west, position = {0, 0} }
+      },
+      hide_connection_info = true
+    },
+    impact_category = "metal",
+    pictures = pm_osmiumpipepictures(),
+    working_sound = sounds.pipe,
+    open_sound = sounds.metal_small_open,
+    close_sound = sounds.metal_small_close,
+
+    horizontal_window_bounding_box = {{-0.25, -0.28125}, {0.25, 0.15625}},
+    vertical_window_bounding_box = {{-0.28125, -0.5}, {0.03125, 0.125}}
     },
     {
         type = "pipe-to-ground",
