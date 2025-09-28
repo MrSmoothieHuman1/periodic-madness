@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.000
+Date: 2025-28-09
+  The ONE place that hasn't been corrupted by autism... SPACE! Update:
+
+  Additions:
+    - Added Hafnium.
+    - Added Neon.
+    - Added Krypton.
+    - Added Xenon.
+    - Added Radon.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.7.000
 Date: 2025-12-07
   The 2 months? you are insane Update:
