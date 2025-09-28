@@ -1086,6 +1086,36 @@ data:extend({
   upgrade = true
   },
 
+--MARK: Inserter bonus capacity
+  {
+    type = "technology",
+    name = "pm-inserter-capacity-bonus-8",
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/inserter-capacity.png"),
+    effects =
+    {
+      {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 2 -- 10 total
+      }
+    },
+    prerequisites = {"inserter-capacity-bonus-7"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    },
+    upgrade = true
+  },
+
 --MARK: Toolbelt
 {
     type = "technology",
@@ -2358,45 +2388,128 @@ data.raw["technology"]["inserter-capacity-bonus-2"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
-data.raw["technology"]["inserter-capacity-bonus-3"].unit.ingredients =
+data.raw["technology"]["inserter-capacity-bonus-2"].effects =
 {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
+    {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 1
+    }
+}
+data.raw["technology"]["inserter-capacity-bonus-3"].prerequisites = {"inserter-capacity-bonus-2", "pm-post-transition-metal-pack-unlock"}
+data.raw["technology"]["inserter-capacity-bonus-3"].unit =
+{
+  count = 350,
+  ingredients = 
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1}
+  },
+  time = 45
+}
+
+data.raw["technology"]["inserter-capacity-bonus-3"].effects =
+{
+    {
+        type = "inserter-stack-size-bonus",
+        modifier = 1
+    },
+    {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 1
+    }
 }
 data.raw["technology"]["inserter-capacity-bonus-4"].prerequisites = {"inserter-capacity-bonus-3"}
-data.raw["technology"]["inserter-capacity-bonus-4"].unit.ingredients =
+data.raw["technology"]["inserter-capacity-bonus-4"].unit =
 {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
+  count = 450,
+  ingredients = 
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1}
+  },
+  time = 60
 }
-data.raw["technology"]["inserter-capacity-bonus-5"].unit.ingredients =
+data.raw["technology"]["inserter-capacity-bonus-4"].effects =
 {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-  {"pm-metalloid-science-pack", 1}
+    {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 1
+    }
 }
-data.raw["technology"]["inserter-capacity-bonus-6"].unit.ingredients =
+data.raw["technology"]["inserter-capacity-bonus-5"].prerequisites = {"inserter-capacity-bonus-4", "pm-metalloid-pack-unlock"}
+data.raw["technology"]["inserter-capacity-bonus-5"].unit =
 {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-  {"pm-metalloid-science-pack", 1}
+  count = 500,
+  ingredients = 
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1}
+  },
+  time = 60
 }
-data.raw["technology"]["inserter-capacity-bonus-7"].prerequisites = {"inserter-capacity-bonus-6"}
-data.raw["technology"]["inserter-capacity-bonus-7"].unit.ingredients =
+data.raw["technology"]["inserter-capacity-bonus-5"].effects =
 {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"pm-post-transition-metal-science-pack", 1},
-  {"pm-metalloid-science-pack", 1}
+    {
+        type = "inserter-stack-size-bonus",
+        modifier = 1
+    },
+    {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 1
+    },
+}
+data.raw["technology"]["inserter-capacity-bonus-6"].unit =
+{
+  count = 650,
+  ingredients = 
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1}
+  },
+  time = 80
+}
+data.raw["technology"]["inserter-capacity-bonus-6"].effects =
+{
+    {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 1
+    }
+}
+data.raw["technology"]["inserter-capacity-bonus-7"].prerequisites = {"inserter-capacity-bonus-6", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"}
+data.raw["technology"]["inserter-capacity-bonus-7"].unit =
+{
+  count = 800,
+  ingredients = 
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1},
+    {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+  },
+  time = 80
+}
+data.raw["technology"]["inserter-capacity-bonus-7"].effects =
+{
+    {
+        type = "inserter-stack-size-bonus",
+        modifier = 1 --3 total
+    },
+    {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 1 --8 total
+    },
 }
 
 --MARK: V.Follower robot couont
