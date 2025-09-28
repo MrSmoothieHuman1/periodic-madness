@@ -7,7 +7,7 @@ require("prototype.recipes.building-recipes.burnining")
 local function add_default_category(fluidbox, new_category)
 	for _, connection in pairs(fluidbox.pipe_connections) do
 		if connection.connection_type == "underground" then goto continue end
-        if data.raw["pipe"] then goto continue end
+        --if data.raw["pipe"] then goto continue end
 
 		local categories = connection.connection_category
 
@@ -60,3 +60,22 @@ for type in pairs(defines.prototypes.entity) do
 		end
 	end
 end
+
+--FIXME: i hate this, penny will hate this, but it shall exist until penny (or i) fix the code above
+data.raw["pipe"]["pipe"].fluid_box.pipe_connections[1].connection_category = "default"
+data.raw["pipe"]["pipe"].fluid_box.pipe_connections[2].connection_category = "default"
+data.raw["pipe"]["pipe"].fluid_box.pipe_connections[3].connection_category = "default"
+data.raw["pipe"]["pipe"].fluid_box.pipe_connections[4].connection_category = "default"
+data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[1].connection_category = "default"
+data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[2].connection_category = "default"
+data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[3].connection_category = "default"
+data.raw["pipe"]["pm-stainless-steel-pipe"].fluid_box.pipe_connections[4].connection_category = "default"
+data.raw["pipeto-ground"]["pipe-to-ground"].fluid_box.pipe_connections[1].connection_category = "default"
+data.raw["pipeto-ground"]["pipe-to-ground"].fluid_box.pipe_connections[2].connection_category = "default"
+data.raw["pipeto-ground"]["pipe-to-ground"].fluid_box.pipe_connections[3].connection_category = "default"
+data.raw["pipeto-ground"]["pipe-to-ground"].fluid_box.pipe_connections[4].connection_category = "default"
+data.raw["pipeto-ground"]["pm-stainless-steel-pipe-to-ground"].fluid_box.pipe_connections[1].connection_category = "default"
+data.raw["pipeto-ground"]["pm-stainless-steel-pipe-to-ground"].fluid_box.pipe_connections[2].connection_category = "default"
+data.raw["pipeto-ground"]["pm-stainless-steel-pipe-to-ground"].fluid_box.pipe_connections[3].connection_category = "default"
+data.raw["pipeto-ground"]["pm-stainless-steel-pipe-to-ground"].fluid_box.pipe_connections[4].connection_category = "default"
+
