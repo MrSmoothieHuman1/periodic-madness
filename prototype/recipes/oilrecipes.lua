@@ -341,7 +341,19 @@ data:extend({
     type = "recipe",
     name = "pm-legendary-diesel-to-solid-fuel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/legendary-diesel-to-solid-fuel.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/legendary-diesel.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 2,
     enabled = false,
     category = "chemistry",
@@ -360,7 +372,19 @@ data:extend({
     type = "recipe",
     name = "pm-common-diesel-to-solid-fuel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/common-diesel-to-solid-fuel.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/common-diesel.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 4,
     enabled = false,
     category = "chemistry",
@@ -379,7 +403,19 @@ data:extend({
     type = "recipe",
     name = "pm-kerosene-to-solid-fuel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/kerosene-to-solid-fuel.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 2,
     enabled = false,
     category = "chemistry",
@@ -398,7 +434,19 @@ data:extend({
     type = "recipe",
     name = "pm-petrol-to-solid-fuel",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/petrol-to-solid-fuel.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 2,
     enabled = false,
     category = "chemistry",
@@ -859,6 +907,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-N-octane-solid-fuel",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/n-octane.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 3,
     category = "chemistry",
@@ -879,6 +940,19 @@ data:extend({
     {
     type = "recipe",
     name = "pm-iso-octane-solid-fuel",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/iso-octane.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 3,
     category = "chemistry",
@@ -899,6 +973,19 @@ data:extend({
     {
     type = "recipe",
     name = "pm-2-3-3-trimethylpentane-solid-fuel",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solid-fuel.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/2-3-3-trimethylpentane.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 3,
     category = "chemistry",
@@ -1504,9 +1591,12 @@ data.raw["recipe"]["lubricant"].results =
   PM.product("lubricant", 10, "fluid"),
 }
 
-data.raw["recipe"]["solid-fuel-from-heavy-oil"] = nil
-data.raw["recipe"]["solid-fuel-from-light-oil"] = nil
-data.raw["recipe"]["solid-fuel-from-petroleum"] = nil
+data.raw["recipe"]["solid-fuel-from-heavy-oil"].hidden = true
+data.raw["recipe"]["solid-fuel-from-light-oil"].hidden = true
+data.raw["recipe"]["solid-fuel-from-petroleum-gas"].hidden = true
+data.raw["recipe"]["solid-fuel-from-heavy-oil"].hidden_in_factoriopedia = true
+data.raw["recipe"]["solid-fuel-from-light-oil"].hidden_in_factoriopedia = true
+data.raw["recipe"]["solid-fuel-from-petroleum-gas"].hidden_in_factoriopedia = true
 
 data.raw["recipe"]["coal-liquefaction"].subgroup = "pm-oil"
 data.raw["recipe"]["coal-liquefaction"].order = "c"

@@ -89,6 +89,7 @@ Date: 2025-12-07
     - Fixed molten kasethal being insanely cheap, like insanely on god cheap.
     - Fixed fission reactor equipment being in the wrong subgroup.
     - Fixed worker robot storage 3 having the wrong prerequisites.
+    - Added distinct icons for octane solid fuel recipes.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514
