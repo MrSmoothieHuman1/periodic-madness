@@ -4083,13 +4083,26 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-coke",
+    icon_size = 64,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/coke.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/coal-tar.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 2.4,
     category = "pm-coking",
     subgroup = "pm-coke",
     order = "c",
     emissions_multiplier = 0.75,
-    main_product = "pm-coke",
     allow_productivity = true,
     ingredients =
     {
@@ -4125,13 +4138,26 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-advanced-coke",
+    icon_size = 64,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/coke.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/coal-gas.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 2.4,
     category = "pm-coking-with-fluid",
     subgroup = "pm-coke",
     order = "e",
     emissions_multiplier = 0.66,
-    main_product = "pm-coke",
     allow_productivity = true,
     ingredients =
     {
