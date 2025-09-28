@@ -1095,7 +1095,7 @@ data:extend({
     {
       {
         type = "bulk-inserter-capacity-bonus",
-        modifier = 2 -- 10 total
+        modifier = 1 -- 9 total, 10 with inserter
       }
     },
     prerequisites = {"inserter-capacity-bonus-7"},
