@@ -1933,7 +1933,8 @@ data:extend({
     {
         PM.unlock_recipe("pm-nitric-oxide"),
         PM.unlock_recipe("pm-nitric-acid"),
-        PM.unlock_recipe("pm-aqua-regia")
+        PM.unlock_recipe("pm-aqua-regia"),
+        PM.unlock_recipe("pm-nitrosyl-seperation")
     },
     prerequisites = {"pm-ammonium-chloride-processing"},
     unit = 

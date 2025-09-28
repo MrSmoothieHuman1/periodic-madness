@@ -3895,7 +3895,7 @@ data:extend({
     name = "pm-nitric-acid",
     enabled = false,
     energy_required = 6,
-    category = "chemistry",
+    category = "pm-acids",
     allow_productivity = true,
     main_product = "pm-nitric-acid",
     ingredients =
@@ -3927,6 +3927,26 @@ data:extend({
       PM.product("pm-aqua-regia", 10, "fluid"),
       PM.product("water", 7.5, "fluid"),
       PM.product_range("pm-nitrosyl-chloride", 3, 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitrosyl-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/nitrosyl-seperation.png",
+    enabled = false,
+    energy_required = 3,
+    category = "chemistry",
+    subgroup = "pm-nitric-acid-rnm",
+    order = "e",
+    ingredients = 
+    {
+        PM.ingredient("pm-nitrosyl-chloride", 10, "fluid"),
+    },
+    results = 
+    {
+        PM.product_range("pm-nitric-oxide", 0, 5, "fluid"),
+        PM.product_range("pm-chlorine", 0, 5, "fluid")
     }
   },
   {

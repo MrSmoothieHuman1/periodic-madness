@@ -628,11 +628,17 @@ data:extend({
     group = "pm-reactive-non-metals",
     order = "ja"
   },
+{
+    type = "item-subgroup",
+    name = "pm-nitric-acid-rnm",
+    group = "pm-reactive-non-metals",
+    order = "jb"
+  },
   {
     type = "item-subgroup",
     name = "pm-air-filters-rnm",
     group = "pm-reactive-non-metals",
-    order = "ja"
+    order = "jc"
   },
   {
     type = "item-subgroup",
