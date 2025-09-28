@@ -9693,14 +9693,14 @@ fluid_boxes =
         scale = 0.5
       },
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/stone-coke-oven-3/coke-oven-3-shadow.png",
-        width = 192,
-        height = 211,
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-shadow.png",
+        width = 256,
+        height = 278,
         frame_count = 1,
         line_length = 1,
         repeat_count = 32,
         draw_as_shadow = true,
-        shift = util.by_pixel(48, 7),
+        shift = util.by_pixel(110, 0),
         scale = 0.5
       }
     }

@@ -937,7 +937,7 @@ data:extend({
     type = "item",
     name = "pm-electric-coke-oven",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/electric-coke.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/electric-coke-oven.png",
     subgroup = "smelting-machine",
     order = "i",
     place_result = "pm-electric-coke-oven",
