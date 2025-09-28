@@ -2,7 +2,7 @@
 [![shield](https://img.shields.io/badge/dynamic/json?color=orange&label=Factorio&query=downloads_count&suffix=%20downloads&url=https%3A%2F%2Fmods.factorio.com%2Fapi%2Fmods%2Fperiodic-madness)](https://mods.factorio.com/mod/periodic-madness)
 
 
-**(WIP: 0.6.500 has been released! 0.7 is now in production, and should hopefully come out in the next 2 months or so.)**
+**(WIP: 0.7 is released! 0.8 will be out in the next few months.)**
 
 This overhaul aims to add all the elements of the periodic table to Factorio. Including new and complex production chains to refine and produce new ores and resources for your growing factory, and delving deeper into chemistry and production chains than a normal vanilla playthrough. If you arent a chemistry nerd going in, you'll become one going out.
 
@@ -61,7 +61,7 @@ You also have more then just science packs to put into labs, occasionally findin
 
 #***The Periodometer: 59/118***
 ![The Periodometer](gallery/periodometer.png)
-***Transition Metals: (19/34)***
+***Transition Metals: (28/34)***
 • Iron
 • Copper
 • Nickel
@@ -81,6 +81,15 @@ You also have more then just science packs to put into labs, occasionally findin
 • Cobalt
 • Molybdenum
 • Yttrium
+• Osmium
+• Iridium
+• Ruthenium
+• Rhodium
+• Rhenium
+• Tantalum
+• Niobium
+• Technectium
+• Dubnium
 
 ***Post Transition Metals: (9/9)***
 • Aluminium 
@@ -101,7 +110,7 @@ You also have more then just science packs to put into labs, occasionally findin
 • Tellurium
 • Germanium
 
-***Reactive Non-Metals: (10/10)***
+***Reactive Non-Metals: (11/11)***
 • Oxygen
 • Nitrogen
 • Chlorine
@@ -112,6 +121,7 @@ You also have more then just science packs to put into labs, occasionally findin
 • Fluorine
 • Bromine
 • Iodine
+• Selenium
 
 ***Alkali Metals: (6/6)***
 • Sodium
