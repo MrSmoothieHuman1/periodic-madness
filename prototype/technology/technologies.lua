@@ -3526,7 +3526,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-silicone-processing",
-    icon_size = 256,
+    icon_size = 128,
     icon = "__periodic-madness__/graphics/technology/silicone-processing.png",
     effects =
     {
