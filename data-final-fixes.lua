@@ -241,4 +241,26 @@ for name, machine in pairs(data.raw["furnace"]) do
 	::continue::
 end
 
+if false then
+	-- FIXME: this check doesn't filter for unopenable entities
+	-- for type_name in pairs(defines.prototypes.entity) do
+	-- 	for name, entity in pairs(data.raw[type_name] or {}) do
+	-- 		if not entity.open_sound then
+	-- 			error("data.raw['"..type_name.."']['"..name.."'].open_sound is missing")
+	-- 		end
+	-- 		if not entity.close_sound then
+	-- 			error("data.raw['"..type_name.."']['"..name.."'].close_sound is missing")
+	-- 		end
+	-- 	end
+	-- end
+
+	for type_name in pairs(defines.prototypes.item) do
+		for name, item in pairs(data.raw[type_name] or {}) do
+			if not item.inventory_move_sound then
+				error("data.raw['"..type_name.."']['"..name.."'].inventory_move_sound is missing")
+			end
+		end
+	end
+end
+
 ---@alias data.defines.inventory defines.inventory
