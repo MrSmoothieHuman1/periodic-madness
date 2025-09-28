@@ -2515,7 +2515,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-stone-coke-oven-3"),
-      PM.unlock_recipe("pm-electric-coke-oven")
+      PM.unlock_recipe("pm-electric-coke-oven"),
       PM.unlock_recipe("pm-advanced-advanced-coke"),
       PM.unlock_recipe("pm-coal-gas-seperation")
     },
