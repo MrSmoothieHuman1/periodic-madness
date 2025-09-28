@@ -7,6 +7,7 @@ require("prototype.recipes.building-recipes.burnining")
 local function add_default_category(fluidbox, new_category)
 	for _, connection in pairs(fluidbox.pipe_connections) do
 		if connection.connection_type == "underground" then goto continue end
+        if data.raw["pipe"] then goto continue end
 
 		local categories = connection.connection_category
 

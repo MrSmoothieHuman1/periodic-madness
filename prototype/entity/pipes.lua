@@ -636,6 +636,92 @@ data:extend({
         horizontal_window_bounding_box = { { -0.25, -0.28125 }, { 0.25, 0.15625 } },
         vertical_window_bounding_box = { { -0.28125, -0.5 }, { 0.03125, 0.125 } },
     },
+    {
+        type = "pipe-to-ground",
+        name = "pm-osmium-steel-pipe-to-ground",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe-to-ground.png",
+        flags = { "placeable-neutral", "player-creation" },
+        minable = { mining_time = 0.2, result = "pm-stainless-steel-pipe-to-ground" },
+        max_health = 700,
+        corpse = "pipe-remnants",
+        resistances = {
+            {
+                type = "fire",
+                percent = 75,
+            },
+            {
+                type = "impact",
+                percent = 60,
+            },
+            {
+                type = "acid",
+                percent = 85
+            }
+        },
+        fast_replaceable_group = "pipe",
+        collision_box = { { -0.29, -0.29 }, { 0.29, 0.2 } },
+        selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
+        icon_draw_specification = {scale = 0.5},
+        fluid_box =
+        {
+            max_pipeline_extent = 320 * 1.75,
+            volume = 200,
+            pipe_covers = pipecoverspictures(),
+            pipe_connections =
+            {
+                { direction = defines.direction.north--[[@as int]], position = {0, 0}, connection_category = "pm-osmium-pipes" },
+                {
+                    connection_type = "underground",
+                    direction = defines.direction.south--[[@as int]],
+                    position = {0, 0},
+                    max_underground_distance = 20,
+                    connection_category = "pm-osmium-pipes"
+                }
+            },
+            hide_connection_info = true
+        },
+        impact_category = "metal",
+        pictures =
+        {
+            north =
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-up.png",
+                priority = "extra-high",
+                width = 128,
+                height = 128,
+                scale = 0.5,
+            },
+            south =
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-down.png",
+                priority = "extra-high",
+                width = 128,
+                height = 128,
+                scale = 0.5,
+            },
+            west =
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-left.png",
+                priority = "extra-high",
+                width = 128,
+                height = 128,
+                scale = 0.5,
+            },
+            east =
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-right.png",
+                priority = "extra-high",
+                width = 128,
+                height = 128,
+                scale = 0.5,
+            },
+        },
+    },
     
 --MARK: Pumps
     {
