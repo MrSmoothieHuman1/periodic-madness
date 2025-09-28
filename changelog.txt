@@ -90,6 +90,7 @@ Date: 2025-12-07
     - Fixed fission reactor equipment being in the wrong subgroup.
     - Fixed worker robot storage 3 having the wrong prerequisites.
     - Added distinct icons for octane solid fuel recipes.
+    - Gave heavy lubricant solar cells their own icon.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514

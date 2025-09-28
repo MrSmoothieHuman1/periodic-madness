@@ -4905,7 +4905,8 @@ data:extend({
     {
       PM.unlock_recipe("pm-polydimethylsiloxane"),
       PM.unlock_recipe("pm-light-lubricant"),
-      PM.unlock_recipe("pm-light-lube-electric-engine-unit")
+      PM.unlock_recipe("pm-light-lube-electric-engine-unit"),
+      PM.unlock_recipe("pm-light-lube-solar-cell")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "lubricant", "pm-silicone-processing"},
     unit =

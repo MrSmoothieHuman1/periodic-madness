@@ -1563,7 +1563,7 @@ data:extend({
     name = "pm-light-lubricant",
     category = "chemistry",
     subgroup = "pm-lubricant",
-    order = "e",
+    order = "d",
     energy_required = 4,
     enabled = false,
     allow_productivity = true,

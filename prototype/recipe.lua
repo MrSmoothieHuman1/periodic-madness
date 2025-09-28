@@ -686,9 +686,23 @@ data:extend({
   {
     type = "recipe",
     name = "pm-heavy-lube-solar-cell",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solar-cell.png",
+        icon_size = 128,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/heavy-lubricant.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 4,
     category = "crafting-with-fluid",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-lubricant",
+    order = "e",
     show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
@@ -1038,11 +1052,24 @@ data:extend({
     type = "recipe",
     name = "pm-heavy-lube-electric-engine-unit",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/heavy-lube-electric-engine.png",
+    icons = 
+    {
+      {
+        icon = "__base__/graphics/icons/electric-engine-unit.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/heavy-lubricant.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 8,
     enabled = false,
     category = "crafting-with-fluid",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-lubricant",
+    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -3972,11 +3999,24 @@ data:extend({
     type = "recipe",
     name = "pm-light-lube-electric-engine-unit",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/heavy-lube-electric-engine.png",
+    icons = 
+    {
+      {
+        icon = "__base__/graphics/icons/electric-engine-unit.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/light-lubricant.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 5,
     enabled = false,
     category = "crafting-with-fluid",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-lubricant",
+    order = "h",
     allow_productivity = true,
     ingredients =
     {
@@ -4525,5 +4565,40 @@ data:extend({
       PM.product_chance("pm-vanadium-oxide-catalyst", 2, 0.75),
       PM.product("pm-ir-piq-3", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-light-lube-solar-cell",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/solar-cell.png",
+        icon_size = 128,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/light-lubricant.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    subgroup = "pm-lubricant",
+    order = "f",
+    show_amount_in_title = true,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-cadnium-plate", 2),
+      PM.ingredient("pm-glass-pane", 4),
+      PM.ingredient("pm-gold-wire", 3),
+      PM.ingredient("pm-light-lubricant", 1, "fluid"),
+    },
+    results =
+    {
+      PM.product("pm-solar-cell", 3)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
