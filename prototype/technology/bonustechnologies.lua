@@ -383,7 +383,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.5)
     },
-    prerequisites = {"worker-robots-speed-5", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-5"},
+    prerequisites = {"worker-robots-speed-5", "worker-robots-storage-3", "pm-robot-battery-capacity-5"},
     upgrade = true,
     unit =
     {
@@ -410,7 +410,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.65)
     },
-    prerequisites = {"worker-robots-speed-6", "worker-robots-storage-3", "pm-robot-battery-capacity-6", "pm-alkaline-earth-metal-pack-unlock"},
+    prerequisites = {"worker-robots-speed-6", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-6", "pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     upgrade = true,
     unit =
     {
@@ -439,7 +439,7 @@ data:extend({
     {
       PM.modify("worker-robot-battery", 0.8)
     },
-    prerequisites = {"worker-robots-speed-6", "worker-robots-storage-3", "pm-robot-battery-capacity-7"},
+    prerequisites = {"worker-robots-speed-6", "pm-worker-robots-storage-4", "pm-robot-battery-capacity-7"},
     upgrade = true,
     unit =
     {
