@@ -672,10 +672,10 @@ data:extend({
       pipe_covers = pm_stainlesspipecoverspictures(), -- in case a real pipe is connected to a ghost
       pipe_connections =
       {
-        { direction = defines.direction.north, position = {0, 0} },
-        { direction = defines.direction.east, position = {0, 0} },
-        { direction = defines.direction.south, position = {0, 0} },
-        { direction = defines.direction.west, position = {0, 0} }
+        { direction = defines.direction.north, position = {0, 0}, connection_category = "pm-osmium-pipes" },
+        { direction = defines.direction.east, position = {0, 0}, connection_category = "pm-osmium-pipes" },
+        { direction = defines.direction.south, position = {0, 0}, connection_category = "pm-osmium-pipes" },
+        { direction = defines.direction.west, position = {0, 0}, connection_category = "pm-osmium-pipes" }
       },
       hide_connection_info = true
     },
