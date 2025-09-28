@@ -142,6 +142,9 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 
   cooled_reactors[reactor.name] = true
 
+  local close_sound = reactor.close_sound
+  reactor.close_sound = nil
+
   --MARK: Reactor Furnace
   -- Make the furnace that'll burn resources at the cost of coolant
   data:extend{{
@@ -170,6 +173,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
         }
       },
     },
+    -- Audibly match the reactor
+    close_sound = close_sound,
 
     -- Heat output fluidbox
     fluid_boxes = {
