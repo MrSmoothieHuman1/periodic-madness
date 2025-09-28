@@ -728,7 +728,6 @@ data:extend({
                     direction = defines.direction.south--[[@as int]],
                     position = {0, 0},
                     max_underground_distance = 20,
-                    connection_category = "pm-osmium-pipes"
                 }
             },
             hide_connection_info = true
