@@ -4956,7 +4956,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/osmium-fluid-handling.png",
     effects =
     {
-      PM.unlock_recipe("pm-osmium-pipe")
+      PM.unlock_recipe("pm-osmium-pipe"),
+      PM.unlock_recipe("pm-osmium-pipe-to-ground")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "fluid-handling"},
     unit =

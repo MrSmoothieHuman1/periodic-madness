@@ -243,6 +243,7 @@ data:extend({
     type = "item-group",
     name = "pm-voiding",
     icon_size = 128,
+    hidden_in_factoriopedia = true,
     icon = "__periodic-madness__/graphics/icons/nuh uh.png",
   },
   {

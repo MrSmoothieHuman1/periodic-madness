@@ -1714,6 +1714,23 @@ data:extend({
     {
         PM.product("pm-electric-coke-oven", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-osmium-pipe-to-ground",
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 2,
+    ingredients = 
+    {
+        PM.ingredient("pm-corrosion-resistant-tubing", 15),
+        PM.ingredient("pm-osmiridium-plate", 6),
+        PM.ingredient("pm-liquid-silicone", 10, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-osmium-pipe-to-ground", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 

@@ -690,12 +690,12 @@ data:extend({
     },
     {
         type = "pipe-to-ground",
-        name = "pm-osmium-steel-pipe-to-ground",
+        name = "pm-osmium-pipe-to-ground",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe-to-ground.png",
         flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 0.2, result = "pm-stainless-steel-pipe-to-ground" },
-        max_health = 700,
+        minable = { mining_time = 0.2, result = "pm-osmium-pipe-to-ground" },
+        max_health = 1200,
         corpse = "pipe-remnants",
         resistances = {
             {
@@ -715,6 +715,7 @@ data:extend({
         collision_box = { { -0.29, -0.29 }, { 0.29, 0.2 } },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         icon_draw_specification = {scale = 0.5},
+        npt_compat = mods["no-pipe-touching"] and {mod_name = "periodic-madness", override = "pm-osmium-pipe"} or nil,
         fluid_box =
         {
             max_pipeline_extent = 320 * 1.75,

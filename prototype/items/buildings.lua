@@ -847,7 +847,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe-to-ground.png",
     subgroup = "energy-pipe-distribution",
     order = "j",
-    place_result = "pm-stainless-steel-pipe-to-ground",
+    place_result = "pm-osmium-pipe-to-ground",
     stack_size = 100
   },
   {
