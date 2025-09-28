@@ -344,17 +344,23 @@ data:extend({
     group = "intermediate-products",
     order = "b"
   },
-  {
+{
     type = "item-subgroup",
-    name = "pm-lubricant",
+    name = "pm-coke",
     group = "intermediate-products",
     order = "ba"
   },
   {
     type = "item-subgroup",
-    name = "pm-coolant",
+    name = "pm-lubricant",
     group = "intermediate-products",
     order = "bb"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-coolant",
+    group = "intermediate-products",
+    order = "bc"
   },
   {
     type = "item-subgroup",

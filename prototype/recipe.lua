@@ -454,8 +454,8 @@ data:extend({
     enabled = false,
     energy_required = 2.4,
     category = "pm-coking",
-    subgroup = "pm-greenhousing-rnm",
-    order = "db",
+    subgroup = "pm-coke",
+    order = "a",
     allow_productivity = true,
     ingredients =
     {
@@ -4050,11 +4050,25 @@ data:extend({
   {
     type = "recipe",
     name = "pm-wood-strip-coke",
+    icon_size = 64,
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/coke.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/wood-strips.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 2.4,
     category = "pm-coking",
-    subgroup = "pm-greenhousing-rnm",
-    order = "db",
+    subgroup = "pm-coke",
+    order = "b",
     allow_productivity = true,
     ingredients =
     {
@@ -4072,6 +4086,8 @@ data:extend({
     enabled = false,
     energy_required = 2.4,
     category = "pm-coking",
+    subgroup = "pm-coke",
+    order = "c",
     emissions_multiplier = 0.75,
     main_product = "pm-coke",
     allow_productivity = true,
@@ -4093,7 +4109,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "pm-washing",
-    main_product = "pm-coke",
+    subgroup = "pm-coke",
+    order = "d",
     ingredients =
     {
       PM.ingredient("pm-coal-tar", 2),
@@ -4111,6 +4128,8 @@ data:extend({
     enabled = false,
     energy_required = 2.4,
     category = "pm-coking-with-fluid",
+    subgroup = "pm-coke",
+    order = "e",
     emissions_multiplier = 0.66,
     main_product = "pm-coke",
     allow_productivity = true,
@@ -4133,6 +4152,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    subgroup = "pm-coke",
+    order = "f",
     main_product = "pm-coke",
     ingredients =
     {
