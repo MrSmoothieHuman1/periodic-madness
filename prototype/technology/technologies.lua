@@ -2519,7 +2519,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-advanced-coke"),
       PM.unlock_recipe("pm-coal-gas-seperation")
     },
-    prerequisites = {"advanced-material-processing", "pm-post-transition-metal-pack-unlock", "pm-advanced-coke-processing"},
+    prerequisites = {"advanced-material-processing-2", "pm-tempature-framing", "pm-advanced-coke-processing"},
     unit = 
     {
       count = 300,
