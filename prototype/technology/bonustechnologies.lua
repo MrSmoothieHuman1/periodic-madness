@@ -1053,6 +1053,10 @@ data:extend({
   upgrade = true
 },
 
+--MARK: Laser damage
+
+--MARK: Laser shooting speed
+
 --MARK: Stronger explosives
 {
   type = "technology",
@@ -1951,6 +1955,26 @@ data.raw["technology"]["laser-shooting-speed-5"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["laser-shooting-speed-6"].prerequisites = {"laser-shooting-speed-5", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"}
+data.raw["technology"]["laser-shooting-speed-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1},
+  {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["laser-shooting-speed-7"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1},
+  {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["laser-shooting-speed-7"].prerequisites = {"laser-shooting-speed-6"}
 
 --MARK:V.Laser damage
 data.raw["technology"]["laser-weapons-damage-1"].prerequisites = {"laser"}
@@ -1976,6 +2000,25 @@ data.raw["technology"]["laser-weapons-damage-3"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["laser-weapons-damage-3"].effects = 
+{
+    {
+        type = "ammo-damage",
+        ammo_category = "laser",
+        modifier = 0.3
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.2
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.2
+    }
+}
+data.raw["technology"]["laser-weapons-damage-6"].prerequisites = {"laser-weapons-damage-5", "pm-metalloid-pack-unlock"}
 data.raw["technology"]["laser-weapons-damage-4"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -1983,6 +2026,24 @@ data.raw["technology"]["laser-weapons-damage-4"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-4"].effects = 
+{
+    {
+        type = "ammo-damage",
+        ammo_category = "laser",
+        modifier = 0.3
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.2
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.2
+    }
 }
 data.raw["technology"]["laser-weapons-damage-5"].prerequisites = {"laser-weapons-damage-4"}
 data.raw["technology"]["laser-weapons-damage-5"].unit.ingredients =
@@ -1992,6 +2053,81 @@ data.raw["technology"]["laser-weapons-damage-5"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-5"].effects = 
+{
+    {
+        type = "ammo-damage",
+        ammo_category = "laser",
+        modifier = 0.4
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.3
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.3
+    }
+}
+data.raw["technology"]["laser-weapons-damage-6"].prerequisites = {"laser-weapons-damage-5", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"}
+data.raw["technology"]["laser-weapons-damage-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1},
+  {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-6"].effects =
+{
+    {
+        type = "ammo-damage",
+        ammo_category = "laser",
+        modifier = 0.4
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.3
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.3
+    }
+}
+data.raw["technology"]["laser-weapons-damage-7"].max_level = 7
+data.raw["technology"]["laser-weapons-damage-7"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"pm-post-transition-metal-science-pack", 1},
+  {"pm-metalloid-science-pack", 1},
+  {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+}
+data.raw["technology"]["laser-weapons-damage-7"].prerequisites = {"laser-weapons-damage-6"}
+data.raw["technology"]["laser-weapons-damage-7"].effects =
+{
+    {
+        type = "ammo-damage",
+        ammo_category = "laser",
+        modifier = 0.5
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.4
+    },
+    {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.4
+    }
 }
 
 --MARK: V.Braking force
