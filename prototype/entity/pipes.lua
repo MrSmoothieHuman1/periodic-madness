@@ -37,7 +37,7 @@ data:extend({
         {
             max_pipeline_extent = 320 * 1.75,
             volume = 200,
-            pipe_covers = pipecoverspictures(), -- in case a real pipe is connected to a ghost
+            pipe_covers = pm_stainlesspipecoverspictures(), -- in case a real pipe is connected to a ghost
             pipe_connections =
             {
                 { direction = defines.direction.north--[[@as int]], position = {0, 0} },
@@ -305,7 +305,7 @@ data:extend({
         {
             max_pipeline_extent = 320 * 1.75,
             volume = 200,
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = pm_stainlesspipecoverspictures(),
             pipe_connections =
             {
                 { direction = defines.direction.north--[[@as int]], position = {0, 0} },
@@ -399,7 +399,7 @@ data:extend({
         {
             max_pipeline_extent = 320 * 1.75,
             volume = 200,
-            pipe_covers = pipecoverspictures(), -- in case a real pipe is connected to a ghost
+            pipe_covers = pm_osmiumpipecoverspictures(), -- in case a real pipe is connected to a ghost
             pipe_connections =
             {
                 { direction = defines.direction.north--[[@as int]], position = {0, 0}, connection_category = {"pm-osmium-pipes"} },
@@ -667,7 +667,7 @@ data:extend({
         {
             max_pipeline_extent = 320 * 1.75,
             volume = 200,
-            pipe_covers = pipecoverspictures(),
+            pipe_covers = pm_osmiumpipecoverspictures(),
             pipe_connections =
             {
                 { direction = defines.direction.north--[[@as int]], position = {0, 0}, connection_category = "pm-osmium-pipes" },
@@ -687,7 +687,7 @@ data:extend({
             north =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-up.png",
+                "__periodic-madness__/graphics/entities/buildings/osmium-pipe-to-ground/osmium-pipe-to-ground-up.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -696,7 +696,7 @@ data:extend({
             south =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-down.png",
+                "__periodic-madness__/graphics/entities/buildings/osmium-pipe-to-ground/osmium-pipe-to-ground-down.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -705,7 +705,7 @@ data:extend({
             west =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-left.png",
+                "__periodic-madness__/graphics/entities/buildings/osmium-pipe-to-ground/osmium-pipe-to-ground-left.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
@@ -714,7 +714,7 @@ data:extend({
             east =
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/stainless-steel-pipe-to-ground/stainless-steel-pipe-to-ground-right.png",
+                "__periodic-madness__/graphics/entities/buildings/osmium-pipe-to-ground/osmium-pipe-to-ground-right.png",
                 priority = "extra-high",
                 width = 128,
                 height = 128,
