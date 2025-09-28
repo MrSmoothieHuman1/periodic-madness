@@ -1679,11 +1679,11 @@ data:extend({
   {
     type = "item",
     name = "pm-RTG-equipment",
-    icon = "__periodic-madness__/graphics/equipment/lithium-battery-mk2-equipment.png",
-    icon_size = 64,
+    icon = "__periodic-madness__/graphics/technology/RTG-equipment.png",
+    icon_size = 256,
     place_as_equipment_result = "pm-RTG-equipment",
-    subgroup = "pm-modular-storage",
-    order = "c",
+    subgroup = "pm-modular-power",
+    order = "e",
     stack_size = 20
   },
 
@@ -1820,6 +1820,10 @@ data.raw["recipe"]["explosives"].subgroup = "capsule"
 data.raw["recipe"]["explosives"].order = "c"
 data.raw["item"]["barrel"].subgroup = "pm-intermediates"
 data.raw["recipe"]["barrel"].subgroup = "pm-intermediates"
+data.raw["item"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
+data.raw["item"]["fission-reactor-equipment"].order = "d"
+data.raw["recipe"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
+data.raw["recipe"]["fission-reactor-equipment"].order = "d"
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it

@@ -4014,8 +4014,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-RTG-equipment",
-    subgroup = "pm-modular-storage",
-    order = "e",
     enabled = false,
     energy_required = 15,
     ingredients =

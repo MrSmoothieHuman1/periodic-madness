@@ -85,6 +85,7 @@ Date: 2025-12-07
     - Gave copper powder its own icon.
     - Fixed solar panel equipment 3 technology using the tier 2 icon.
     - Fixed molten kasethal being insanely cheap, like insanely on god cheap.
+    - Fixed fission reactor equipment being in the wrong subgroup.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.6.514
