@@ -1924,6 +1924,30 @@ data:extend({
       time = 30
     }
   },
+{
+    type = "technology",
+    name = "pm-nitric-acid-processing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nitric-acid.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-nitric-oxide"),
+        PM.unlock_recipe("pm-nitric-acid"),
+        PM.unlock_recipe("pm-aqua-regia")
+    },
+    prerequisites = {"pm-ammonium-chloride-processing"},
+    unit = 
+    {
+      count = 150,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      },
+      time = 45
+    }
+  },
 
 --MARK: PTM science
 {
@@ -4429,7 +4453,7 @@ data:extend({
       PM.unlock_recipe("pm-barium-vapour"),
       PM.unlock_recipe("pm-barium-ore")
     },
-    prerequisites = {"pm-alkali-metal-pack-unlock"},
+    prerequisites = {"pm-alkali-metal-pack-unlock", "pm-nitric-acid-processing"},
     unit =
     {
       count = 300,
@@ -4854,7 +4878,7 @@ data:extend({
       PM.unlock_recipe("pm-rhenium-ore"),
       PM.unlock_recipe("pm-rhenium-plate")
     },
-    prerequisites = {"pm-metalloid-pack-unlock"},
+    prerequisites = {"pm-metalloid-pack-unlock", "pm-nitric-acid-processing"},
     unit =
     {
       count = 350,
