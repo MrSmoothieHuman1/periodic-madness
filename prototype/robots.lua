@@ -268,6 +268,201 @@ robot_animations.pm_lithium_construction_robot =
     draw_as_shadow = true
   }
 }
+robot_animations.pm_selenium_logistic_robot =
+{
+  idle =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot.png",
+    priority = "high",
+    line_length = 16,
+    width = 80,
+    height = 84,
+    frame_count = 1,
+    shift = util.by_pixel(0, -3),
+    direction_count = 16,
+    y = 84,
+    scale = 0.5
+  },
+  idle_with_cargo =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot.png",
+    priority = "high",
+    line_length = 16,
+    width = 80,
+    height = 84,
+    frame_count = 1,
+    shift = util.by_pixel(0, -3),
+    direction_count = 16,
+    scale = 0.5
+  },
+  in_motion =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot.png",
+    priority = "high",
+    line_length = 16,
+    width = 80,
+    height = 84,
+    frame_count = 1,
+    shift = util.by_pixel(0, -3),
+    direction_count = 16,
+    y = 252,
+    scale = 0.5
+  },
+  in_motion_with_cargo =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot.png",
+    priority = "high",
+    line_length = 16,
+    width = 80,
+    height = 84,
+    frame_count = 1,
+    shift = util.by_pixel(0, -3),
+    direction_count = 16,
+    y = 168,
+    scale = 0.5
+  },
+  shadow_idle =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot-shadow.png",
+    priority = "high",
+    line_length = 16,
+    width = 115,
+    height = 57,
+    frame_count = 1,
+    shift = util.by_pixel(31.75, 19.75),
+    direction_count = 16,
+    y = 57,
+    scale = 0.5,
+    draw_as_shadow = true
+  },
+  shadow_idle_with_cargo =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot-shadow.png",
+    priority = "high",
+    line_length = 16,
+    width = 115,
+    height = 57,
+    frame_count = 1,
+    shift = util.by_pixel(31.75, 19.75),
+    direction_count = 16,
+    scale = 0.5,
+    draw_as_shadow = true
+  },
+  shadow_in_motion =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot-shadow.png",
+    priority = "high",
+    line_length = 16,
+    width = 115,
+    height = 57,
+    frame_count = 1,
+    shift = util.by_pixel(31.75, 19.75),
+    direction_count = 16,
+    y = 57 * 3,
+    scale = 0.5,
+    draw_as_shadow = true
+  },
+  shadow_in_motion_with_cargo =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-logistic-robots/logistic-robot-shadow.png",
+    priority = "high",
+    line_length = 16,
+    width = 115,
+    height = 57,
+    frame_count = 1,
+    shift = util.by_pixel(31.75, 19.75),
+    direction_count = 16,
+    y = 114,
+    scale = 0.5,
+    draw_as_shadow = true
+  }
+}
+
+robot_animations.pm_selenium_construction_robot =
+{
+  idle =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-construction-robots/construction-robot.png",
+    priority = "high",
+    line_length = 16,
+    width = 66,
+    height = 76,
+    frame_count = 1,
+    shift = util.by_pixel(0, -4.5),
+    direction_count = 16,
+    scale = 0.5
+  },
+  in_motion =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/selenium-construction-robots/construction-robot.png",
+    priority = "high",
+    line_length = 16,
+    width = 66,
+    height = 76,
+    frame_count = 1,
+    shift = util.by_pixel(0, -4.5),
+    direction_count = 16,
+    y = 76,
+    scale = 0.5
+  },
+  shadow_idle =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/selenium-construction-robots/construction-robot-shadow.png",
+    priority = "high",
+    line_length = 16,
+    width = 104,
+    height = 49,
+    frame_count = 1,
+    shift = util.by_pixel(33.5, 18.75),
+    direction_count = 16,
+    scale = 0.5,
+    draw_as_shadow = true
+  },
+  shadow_in_motion =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/selenium-construction-robots/construction-robot-shadow.png",
+    priority = "high",
+    line_length = 16,
+    width = 104,
+    height = 49,
+    frame_count = 1,
+    shift = util.by_pixel(33.5, 18.75),
+    direction_count = 16,
+    scale = 0.5,
+    draw_as_shadow = true
+  },
+  working =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/selenium-construction-robots/construction-robot-working.png",
+    priority = "high",
+    line_length = 2,
+    width = 57,
+    height = 74,
+    frame_count = 2,
+    shift = util.by_pixel(-0.25, -5),
+    direction_count = 16,
+    animation_speed = 0.3,
+    scale = 0.5
+  },
+  shadow_working =
+  {
+    filename =
+    "__periodic-madness__/graphics/entities/buildings/selenium-construction-robots/construction-robot-shadow.png",
+    priority = "high",
+    line_length = 16,
+    width = 104,
+    height = 49,
+    frame_count = 1,
+    repeat_count = 2,
+    shift = util.by_pixel(33.5, 18.75),
+    direction_count = 16,
+    scale = 0.5,
+    draw_as_shadow = true
+  }
+}
 
 local robots =
 {
@@ -378,7 +573,7 @@ local robots =
   {
     type = "construction-robot",
     name = "pm-selenium-construction-robot",
-    icon = "__periodic-madness__/graphics/icons/lithium-construction-robot.png",
+    icon = "__periodic-madness__/graphics/icons/selenium-construction-robot.png",
     icon_size = 64,
     flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
     minable = { mining_time = 0.1, result = "pm-lithium-construction-robot" },
@@ -430,17 +625,17 @@ local robots =
     cargo_centered = { 0.0, 0.2 },
     construction_vector = { 0.30, 0.22 },
     water_reflection = robot_reflection(1),
-    idle = robot_animations.pm_lithium_construction_robot.idle,
-    in_motion = robot_animations.pm_lithium_construction_robot.in_motion,
-    shadow_idle = robot_animations.pm_lithium_construction_robot.shadow_idle,
-    shadow_in_motion = robot_animations.pm_lithium_construction_robot.shadow_in_motion,
-    working = robot_animations.pm_lithium_construction_robot.working,
-    shadow_working = robot_animations.pm_lithium_construction_robot.shadow_working
+    idle = robot_animations.pm_selenium_construction_robot.idle,
+    in_motion = robot_animations.pm_selenium_construction_robot.in_motion,
+    shadow_idle = robot_animations.pm_selenium_construction_robot.shadow_idle,
+    shadow_in_motion = robot_animations.pm_selenium_construction_robot.shadow_in_motion,
+    working = robot_animations.pm_selenium_construction_robot.working,
+    shadow_working = robot_animations.pm_selenium_construction_robot.shadow_working
   },
   {
     type = "logistic-robot",
     name = "pm-selenium-logistic-robot",
-    icon = "__periodic-madness__/graphics/icons/lithium-logistic-robot.png",
+    icon = "__periodic-madness__/graphics/icons/selenium-logistic-robot.png",
     icon_size = 64,
     flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
     minable = { mining_time = 0.1, result = "pm-lithium-logistic-robot" },
@@ -470,14 +665,14 @@ local robots =
     working_sound = sounds.flying_robot(0.48),
     cargo_centered = { 0.0, 0.2 },
     water_reflection = robot_reflection(1),
-    idle = robot_animations.pm_lithium_logistic_robot.idle,
-    idle_with_cargo = robot_animations.pm_lithium_logistic_robot.idle_with_cargo,
-    in_motion = robot_animations.pm_lithium_logistic_robot.in_motion,
-    in_motion_with_cargo = robot_animations.pm_lithium_logistic_robot.in_motion_with_cargo,
-    shadow_idle = robot_animations.pm_lithium_logistic_robot.shadow_idle,
-    shadow_idle_with_cargo = robot_animations.pm_lithium_logistic_robot.shadow_idle_with_cargo,
-    shadow_in_motion = robot_animations.pm_lithium_logistic_robot.shadow_in_motion,
-    shadow_in_motion_with_cargo = robot_animations.pm_lithium_logistic_robot.shadow_in_motion_with_cargo
+    idle = robot_animations.pm_selenium_logistic_robot.idle,
+    idle_with_cargo = robot_animations.pm_selenium_logistic_robot.idle_with_cargo,
+    in_motion = robot_animations.pm_selenium_logistic_robot.in_motion,
+    in_motion_with_cargo = robot_animations.pm_selenium_logistic_robot.in_motion_with_cargo,
+    shadow_idle = robot_animations.pm_selenium_logistic_robot.shadow_idle,
+    shadow_idle_with_cargo = robot_animations.pm_selenium_logistic_robot.shadow_idle_with_cargo,
+    shadow_in_motion = robot_animations.pm_selenium_logistic_robot.shadow_in_motion,
+    shadow_in_motion_with_cargo = robot_animations.pm_selenium_logistic_robot.shadow_in_motion_with_cargo
   }
 }
 
