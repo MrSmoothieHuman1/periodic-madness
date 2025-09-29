@@ -1362,6 +1362,30 @@ data:extend({
       time = 120
     }
   },
+{
+    type = "technology",
+    name = "pm-noble-gas-science-pack-productivity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/noble-gas-productivity.png"),
+    max_level = "infinite",
+    effects =
+    {
+      --PM.modify_recipe_productivity("pm-alkaline-earth-metal-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-plastic-alkaline-earth-metal-science-pack", 0.05),
+      --PM.modify_recipe_productivity("pm-FUCK-alkaline-earth-metal-science-pack", 0.02)
+    },
+    prerequisites = {"pm-experimental-research-data", "pm-noble-gas-pack-unlock"},
+    order = "j",
+    unit =
+    {
+      count_formula = "2^L*1000",
+      ingredients = 
+      {
+       {"pm-experimental-research-data", 1}
+      },
+      time = 120
+    }
+  },
 })
 
 --MARK: V.Robot speed

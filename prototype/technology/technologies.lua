@@ -6063,7 +6063,7 @@ data:extend({
       time = 120
     }
   },
-    {
+  {
     type = "technology",
     name = "pm-noble-gas-pack-unlock",
     icon_size = 256,
