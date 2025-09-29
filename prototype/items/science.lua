@@ -101,7 +101,7 @@ data:extend({
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
-{
+  {
     type = "tool",
     name = "pm-noble-gas-science-pack",
     icon_size = 64,
