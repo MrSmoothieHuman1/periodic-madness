@@ -101,6 +101,21 @@ data:extend({
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
+{
+    type = "tool",
+    name = "pm-noble-gas-science-pack",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/science/noble-gas-pack.png",
+    inventory_move_sound = item_sounds.science_inventory_move,
+    pick_sound = item_sounds.science_inventory_pickup,
+    drop_sound = item_sounds.science_inventory_move,
+    subgroup = "science-pack",
+    order = "k",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
   {
     type = "tool",
     name = "pm-experimental-research-data",
