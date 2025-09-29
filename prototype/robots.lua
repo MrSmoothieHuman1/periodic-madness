@@ -73,7 +73,7 @@ robot_animations.sparks =
   }
 }
 
-robot_animations.logistic_robot =
+robot_animations.pm_lithium_logistic_robot =
 {
   idle =
   {
@@ -183,7 +183,7 @@ robot_animations.logistic_robot =
   }
 }
 
-robot_animations.construction_robot =
+robot_animations.pm_lithium_construction_robot =
 {
   idle =
   {
@@ -326,12 +326,12 @@ local robots =
     cargo_centered = { 0.0, 0.2 },
     construction_vector = { 0.30, 0.22 },
     water_reflection = robot_reflection(1),
-    idle = robot_animations.construction_robot.idle,
-    in_motion = robot_animations.construction_robot.in_motion,
-    shadow_idle = robot_animations.construction_robot.shadow_idle,
-    shadow_in_motion = robot_animations.construction_robot.shadow_in_motion,
-    working = robot_animations.construction_robot.working,
-    shadow_working = robot_animations.construction_robot.shadow_working
+    idle = robot_animations.pm_lithium_construction_robot.idle,
+    in_motion = robot_animations.pm_lithium_construction_robot.in_motion,
+    shadow_idle = robot_animations.pm_lithium_construction_robot.shadow_idle,
+    shadow_in_motion = robot_animations.pm_lithium_construction_robot.shadow_in_motion,
+    working = robot_animations.pm_lithium_construction_robot.working,
+    shadow_working = robot_animations.pm_lithium_construction_robot.shadow_working
   },
   {
     type = "logistic-robot",
@@ -366,14 +366,14 @@ local robots =
     working_sound = sounds.flying_robot(0.48),
     cargo_centered = { 0.0, 0.2 },
     water_reflection = robot_reflection(1),
-    idle = robot_animations.logistic_robot.idle,
-    idle_with_cargo = robot_animations.logistic_robot.idle_with_cargo,
-    in_motion = robot_animations.logistic_robot.in_motion,
-    in_motion_with_cargo = robot_animations.logistic_robot.in_motion_with_cargo,
-    shadow_idle = robot_animations.logistic_robot.shadow_idle,
-    shadow_idle_with_cargo = robot_animations.logistic_robot.shadow_idle_with_cargo,
-    shadow_in_motion = robot_animations.logistic_robot.shadow_in_motion,
-    shadow_in_motion_with_cargo = robot_animations.logistic_robot.shadow_in_motion_with_cargo
+    idle = robot_animations.pm_lithium_logistic_robot.idle,
+    idle_with_cargo = robot_animations.pm_lithium_logistic_robot.idle_with_cargo,
+    in_motion = robot_animations.pm_lithium_logistic_robot.in_motion,
+    in_motion_with_cargo = robot_animations.pm_lithium_logistic_robot.in_motion_with_cargo,
+    shadow_idle = robot_animations.pm_lithium_logistic_robot.shadow_idle,
+    shadow_idle_with_cargo = robot_animations.pm_lithium_logistic_robot.shadow_idle_with_cargo,
+    shadow_in_motion = robot_animations.pm_lithium_logistic_robot.shadow_in_motion,
+    shadow_in_motion_with_cargo = robot_animations.pm_lithium_logistic_robot.shadow_in_motion_with_cargo
   }
 }
 
