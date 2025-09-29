@@ -979,21 +979,35 @@ data:extend({
     stack_size = 200
   },
   {
-    type = "item",
+    type = "module",
     name = "pm-ruby-laser-head",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/ruby-laser-head.png",
     subgroup = "pm-ruby-ptm",
     order = "d",
+    category = "pm-laser-modules",
+    tier = 1,
+    effect = 
+    {
+        speed = 0.5,
+        consumption = 0.25,
+    },
     stack_size = 50
   },
   {
-    type = "item",
+    type = "module",
     name = "pm-sapphire-laser-head",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
     subgroup = "pm-sapphire-ptm",
     order = "e",
+    category = "pm-laser-modules",
+    tier = 2,
+    effect = 
+    {
+        speed = 1,
+        consumption = 0.66,
+    },
     stack_size = 50
   },
   {

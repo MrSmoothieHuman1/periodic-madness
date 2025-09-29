@@ -138,6 +138,10 @@ data:extend({
     type = "recipe-category",
     name = "pm-coking-with-fluid"
   },
+  {
+    type = "recipe-category",
+    name = "pm-circuit-boards"
+  },
   -- For the consumption of reactor coolant
 	{
 		type = "recipe-category",

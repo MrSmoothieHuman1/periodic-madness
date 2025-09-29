@@ -9771,6 +9771,135 @@ fluid_boxes =
     fade_out_ticks = 20
   },
 }--[[@as data.AssemblingMachinePrototype]],
+{
+  type = "assembling-machine",
+  name = "pm-electronic-laser-etcher",
+  icon = "__periodic-madness__/graphics/icons/buildings/electric-coke-oven.png",
+  icon_size = 64,
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 0.5, result = "pm-electric-coke-oven" },
+  max_health = 800,
+  corpse = "pm-electronic-laser-etcher",
+  dying_explosion = "assembling-machine-1-explosion",
+  resistances =
+  {
+    {
+      type = "impact",
+      percent = 65
+    },
+    {
+      type = "fire",
+      percent = 85
+    }
+  },
+  collision_box = { { -1.85, -1.85 }, { 1.85, 1.85 } },
+  selection_box = { { -2, -2 }, { 2, 2 } },
+  alert_icon_shift = util.by_pixel(0, -12),
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["assembling-machine"],
+  graphics_set =
+{
+  animation =
+  {
+    layers =
+    {
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-base.png",
+        width = 256,
+        height = 278,
+        frame_count = 1,
+        line_length = 1,
+        repeat_count = 32,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-fans.png",
+        width = 256,
+        height = 278,
+        frame_count = 32,
+        line_length = 8,
+        animation_speed = 0.5,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-shadow.png",
+        width = 256,
+        height = 278,
+        frame_count = 1,
+        line_length = 1,
+        repeat_count = 32,
+        draw_as_shadow = true,
+        shift = util.by_pixel(110, 0),
+        scale = 0.5
+      }
+    }
+  },
+  working_visualisations =
+  {
+    {
+      fadeout = true,
+      animation =
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-on.png",
+        width = 256,
+        height = 278,
+        frame_count = 32,
+        line_length = 8,
+        scale = 0.5,
+        animation_speed = 0.33
+      }
+    }
+  }
+},
+  crafting_categories = {"pm-circuit-boards"},
+  allowed_effects = PM.all_effects(),
+  module_slots = 4,
+  allowed_module_categories = {"pm-laser-modules"},
+  crafting_speed = 1,
+  energy_usage = "450kW",
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = {pollution = 4},
+  },
+  fluid_boxes =
+  {
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      pipe_connections = 
+      {
+        {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}}
+      },
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      pipe_connections = 
+      {
+        {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}}
+      },
+    },
+  },
+  working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/steel-furnace.ogg",
+          volume = 0.5
+        }
+      },
+    audible_distance_modifier = 0.5,
+    fade_in_ticks = 4,
+    fade_out_ticks = 20
+  },
+}--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions

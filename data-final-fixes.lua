@@ -201,7 +201,8 @@ for _, entity_type in pairs{
 			{
 				"pm-heating-coils",
 				"pm-circuit-megassembler-module",
-				"pm-circuit-megassembler-module-MK2"
+				"pm-circuit-megassembler-module-MK2",
+                "pm-laser-modules"
 			})
 		end
 	end

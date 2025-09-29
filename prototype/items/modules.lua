@@ -21,6 +21,12 @@ data:extend({
       hidden = true,
       hidden_in_factoriopedia = true,
     },
+    {
+      type = "module-category",
+      name = "pm-laser-modules",
+      hidden = true,
+      hidden_in_factoriopedia = true,
+    },
 
     --MARK: Normal modules
     {
