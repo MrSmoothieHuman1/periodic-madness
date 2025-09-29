@@ -9861,12 +9861,13 @@ fluid_boxes =
   {
     type = "electric",
     usage_priority = "secondary-input",
+    drain = "50kW",
     emissions_per_minute = {pollution = 4},
   },
   fluid_boxes =
   {
     {
-      production_type = "output",
+      production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 500,
       pipe_connections = 
@@ -9876,7 +9877,7 @@ fluid_boxes =
       },
     },
     {
-      production_type = "output",
+      production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 500,
       pipe_connections = 
