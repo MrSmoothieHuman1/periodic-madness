@@ -123,3 +123,14 @@ data:extend({
 
 --MARK: Rocket recipes
 })
+
+data.raw["recipe"]["rocket-part"].subgroup = "pm-rocket-recipes"
+data.raw["recipe"]["rocket-part"].order = "a"
+data.raw["recipe"]["rocket-part"].hide_from_player_crafting = false
+data.raw["recipe"]["rocket-part"].ingredients =
+{
+    PM.ingredient("rocket-fuel", 10),
+    PM.ingredient("pm-rocket-control-unit", 5),
+    --PM.ingredient("pm-rocket-cladding-parts", 8),
+    --PM.ingredient("pm-rocket-nozzle-parts", 8)
+}
