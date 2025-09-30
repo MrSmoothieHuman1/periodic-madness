@@ -815,6 +815,7 @@ data.raw["technology"]["flamethrower"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["rocket-silo"].prerequisites = {"rocket-fuel", "pm-rocket-nozzle-parts", "pm-rocket-cladding-parts", "pm-rocket-control-unit", "concrete"}
 data.raw["technology"]["rocket-silo"].unit =
 {
   count = 850,
@@ -833,7 +834,7 @@ data.raw["technology"]["rocket-silo"].unit =
   },
   time = 160
 }
-data.raw["technology"]["rocket-fuel"].effects = 
+data.raw["technology"]["rocket-fuel"].effects =
 {
     PM.unlock_recipe("pm-ammonium-nitrate"),
     PM.unlock_recipe("pm-ammonium-dinitramide-solution"),
