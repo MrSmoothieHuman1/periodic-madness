@@ -162,12 +162,6 @@ data:extend({
   },
   {
     type = "item-group",
-    name = "pm-molding",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/circuitboard-mold.png"
-  },
-  {
-    type = "item-group",
     name = "pm-multimetal-items",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/tempature-plating.png",
@@ -175,11 +169,11 @@ data:extend({
   },
   {
     type = "item-group",
-    name = "pm-circuitry",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/circuit-megassembler.png",
+    name = "pm-rockets",
+    icon_size = 256,
+    icon = "__base__/graphics/technology/rocket-silo.png",
+    order = "ca"
   },
-
   {
     type = "item-group",
     name = "pm-transition-metals",
@@ -254,7 +248,7 @@ data:extend({
     name = "pm-science",
     icon_size = 256,
     icon = "__base__/graphics/technology/research-speed.png",
-    order = "ca"
+    order = "cb"
   },
 
 
@@ -479,12 +473,6 @@ data:extend({
     name = "pm-molded-circuits",
     group = "intermediate-products",
     order = "n"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-rocket-parts",
-    group = "intermediate-products",
-    order = "o"
   },
 
   --MARK: Voiding
@@ -1487,4 +1475,30 @@ data:extend({
     group = "pm-science",
     order = "f"
   },
+
+--MARK: Rocket tab
+  {
+    type = "item-subgroup",
+    name = "pm-rocket-fuels",
+    group = "pm-rockets",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-rocket-parts",
+    group = "pm-rockets",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-rocket-recipes",
+    group = "pm-rockets",
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-rocket-launchables",
+    group = "pm-rockets",
+    order = "d"
+  }
 })

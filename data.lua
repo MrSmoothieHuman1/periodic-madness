@@ -34,6 +34,7 @@ require("prototype.recipes.oilrecipes")
 require("prototype.recipes.batteriesrecipes")
 require("prototype.recipes.multimetalrrecipes")
 require("prototype.recipes.sciencerecipes")
+require("prototype.recipes.rocketrecipes")
 
 require("prototype.recipes.building-recipes.electrolysisrecipes")
 require("prototype.recipes.building-recipes.atmo-condenserrecipes")

@@ -833,7 +833,16 @@ data.raw["technology"]["rocket-silo"].unit =
   },
   time = 160
 }
-data.raw["technology"]["rocket-fuel"].prerequisites = {"pm-noble-gas-pack-unlock"}
+data.raw["technology"]["rocket-fuel"].effects = 
+{
+    PM.unlock_recipe("pm-ammonium-nitrate"),
+    PM.unlock_recipe("pm-ammonium-dinitramide-solution"),
+    PM.unlock_recipe("pm-ammonium-dinitramide-ampule"),
+    PM.unlock_recipe("pm-hexamethyleneteramine"),
+    PM.unlock_recipe("pm-HMX"),
+    PM.unlock_recipe("rocket-fuel")
+}
+data.raw["technology"]["rocket-fuel"].prerequisites = {"pm-heat-shielding"}
 data.raw["technology"]["rocket-fuel"].unit =
 {
   count = 700,

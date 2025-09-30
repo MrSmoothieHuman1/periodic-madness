@@ -20,7 +20,8 @@ Date: 2025-28-09
     - Changed rocket fuel's top speed modifier to 500%.
     - Changed rocket fuels fuel value to 25MJ.
     - Changed ruby/sapphire laser heads into modules for the electronic laser etcher.
-    - Removed Jesus Marie, they're minerals! achievement
+    - Removed Jesus Marie, they're minerals! achievement.
+    - Changed rocket fuels recipe to match what it actually should be.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.000

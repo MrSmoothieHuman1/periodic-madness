@@ -1595,6 +1595,51 @@ data:extend({
     place_result = "pm-selenium-construction-robot",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-ammonium-nitrate",
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-fuels",
+    order = "a",
+    stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-ammonium-dinitramide-ampule",
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-fuels",
+    order = "c",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-hexamethyleneteramine",
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-fuels",
+    order = "d",
+    stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-HMX",
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-fuels",
+    order = "a",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-heat-shielding",
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-parts",
+    order = "a",
+    stack_size = 50
+  },
 
   {
     type = "item",

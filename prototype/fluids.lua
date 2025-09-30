@@ -1888,6 +1888,17 @@ data:extend({
     base_color = {r = 0.5, g = 0.33, b = 0.33},
     flow_color = {r = 0.5, g = 0.33, b = 0.33},
   },
+{
+    type = "fluid",
+    name = "pm-ammonium-dinitramide-solution",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/ir-piq-3-acetate-solution.png",
+    subgroup = "pm-rocket-fuels",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.5, g = 0.33, b = 0.33},
+    flow_color = {r = 0.5, g = 0.33, b = 0.33},
+  },
 
 	{
 		type = "fluid",

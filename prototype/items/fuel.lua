@@ -149,13 +149,25 @@ data:extend({
 
 data.raw["item"]["solid-fuel"].subgroup = "pm-fuels"
 data.raw["item"]["solid-fuel"].order = "aa"
-data.raw["item"]["rocket-fuel"].subgroup = "pm-fuels"
-data.raw["item"]["rocket-fuel"].order = "i"
+data.raw["item"]["rocket-fuel"].subgroup = "pm-rocket-fuels"
+data.raw["item"]["rocket-fuel"].order = "d"
 data.raw["item"]["rocket-fuel"].fuel_value = "25MJ"
 data.raw["item"]["rocket-fuel"].fuel_acceleration_multiplier = 2.5
 data.raw["item"]["rocket-fuel"].fuel_top_speed_multiplier = 5
-data.raw["recipe"]["rocket-fuel"].subgroup = "pm-fuels"
-data.raw["recipe"]["rocket-fuel"].order = "i"
+data.raw["recipe"]["rocket-fuel"].ingredients =
+{
+    PM.ingredient("pm-ammonium-dinitramide-ampule", 4),
+    PM.ingredient("pm-HMX", 8),
+    PM.ingredient("pm-beryllium-plate", 3),
+    PM.ingredient("pm-heat-shielding", 1),
+    PM.ingredient("pm-lightweight-panelling", 24)
+}
+data.raw["recipe"]["rocket-fuel"].results =
+{
+    PM.product("rocket-fuel", 1),
+    PM.catalyst_chance("pm-empty-glass-ampule", 4, 0.95, 4)
+}
+data.raw["recipe"]["rocket-fuel"].main_product = "rocket-fuel"
 
 table.insert(data.raw["inserter"]["burner-inserter"].energy_source.fuel_categories, "pm-fuel-canisters")
 table.insert(data.raw["car"]["car"].energy_source.fuel_categories, "pm-vehicle-fuel-canisters")

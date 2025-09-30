@@ -273,14 +273,6 @@ data.raw["recipe"]["low-density-structure"].icons =
     scale = 0.42,
   },
 }
-data.raw["recipe"]["rocket-fuel"].ingredients =
-{
-  PM.ingredient("solid-fuel", 10),
-  PM.ingredient("pm-stainless-steel-alloy", 4),
-  PM.ingredient("pm-fuel-oils", 50, "fluid")
-}
-data.raw["recipe"]["rocket-fuel"].category = "crafting-with-fluid"
-
 data.raw["recipe"]["burner-mining-drill"].ingredients =
 {
   PM.ingredient("pm-basic-framing", 2),
