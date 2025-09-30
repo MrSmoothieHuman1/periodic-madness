@@ -158,7 +158,7 @@ data.raw["item"]["rocket-fuel"].fuel_top_speed_multiplier = 5
 data.raw["recipe"]["rocket-fuel"].ingredients =
 {
     PM.ingredient("pm-ammonium-dinitramide-ampule", 4),
-    PM.ingredient("pm-HMX", 8),
+    PM.ingredient("pm-HMX", 4),
     PM.ingredient("pm-beryllium-plate", 3),
     PM.ingredient("pm-heat-shielding", 1),
     PM.ingredient("pm-lightweight-panelling", 24)
