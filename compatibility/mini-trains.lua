@@ -2,7 +2,7 @@ if not mods["Mini_Trains"] then return end
 
 data.raw["recipe"]["mini-locomotive"].ingredients =
 {
-    PM.ingredient("pm-mini-motor", 20),
+    PM.ingredient("pm-basic-motor", 20),
     PM.ingredient("steel-plate", 5),
     PM.ingredient("pm-fluid-circuit", 5),
     PM.ingredient("pm-basic-framing", 16)

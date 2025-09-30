@@ -6,7 +6,6 @@ data.raw["item"]["pm-fluid-circuit"].localised_name = { "OR-Aspected chip" }
 
 data.raw["technology"]["electronics"].effects =
 {
-  PM.unlock_recipe("pm-mini-motor"),
   PM.unlock_recipe("electronic-circuit"),
   PM.unlock_recipe("electronic-parts-1")
 }
