@@ -6326,7 +6326,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-noble-gas-pack-unlock", "low-density-structure"},
     unit =
     {
       count = 700,
@@ -6354,7 +6354,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-noble-gas-pack-unlock", "low-density-structure"},
     unit =
     {
       count = 700,
