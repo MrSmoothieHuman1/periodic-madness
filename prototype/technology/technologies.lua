@@ -6128,7 +6128,7 @@ data:extend({
     prerequisites = {"pm-YAG-laser"},
     unit =
     {
-      count = 700,
+      count = 650,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -6144,7 +6144,7 @@ data:extend({
       time = 120
     }
   },
-{
+  {
     type = "technology",
     name = "pm-advanced-processing-unit",
     icon_size = 256,
@@ -6156,6 +6156,87 @@ data:extend({
     unit =
     {
       count = 700,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 140
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-gyroscope",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-advanced-processing-unit", "pm-advanced-electric-engine-unit"},
+    unit =
+    {
+      count = 600,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-selenium-construction-robotics",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/selenium-construction-robotics.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-selenium-sulfur-battery", "pm-gyroscope", "pm-lithium-ion-construction-robotics"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 140
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-selenium-logistic-robotics",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/selenium-logistic-robotics.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-selenium-sulfur-battery", "pm-gyroscope", "pm-lithium-ion-logistic-robotics"},
+    unit =
+    {
+      count = 800,
       ingredients =
       {
         {"automation-science-pack", 1},
