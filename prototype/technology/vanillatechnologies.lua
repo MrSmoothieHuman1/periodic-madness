@@ -824,6 +824,7 @@ data.raw["technology"]["rocket-silo"].unit =
     {"logistic-science-pack", 1},
     {"pm-advanced-advanced-transition-metal-science-pack", 1},
     {"chemical-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
     {"pm-alkali-metal-science-pack", 1},
     {"pm-metalloid-science-pack", 1},
     {"pm-alkaline-earth-metal-science-pack", 1},
@@ -832,6 +833,7 @@ data.raw["technology"]["rocket-silo"].unit =
   },
   time = 160
 }
+data.raw["technology"]["rocket-fuel"].prerequisites = {"pm-noble-gas-pack-unlock"}
 data.raw["technology"]["rocket-fuel"].unit =
 {
   count = 700,
@@ -841,6 +843,7 @@ data.raw["technology"]["rocket-fuel"].unit =
     {"logistic-science-pack", 1},
     {"pm-advanced-advanced-transition-metal-science-pack", 1},
     {"chemical-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
     {"pm-alkali-metal-science-pack", 1},
     {"pm-metalloid-science-pack", 1},
     {"pm-alkaline-earth-metal-science-pack", 1},
