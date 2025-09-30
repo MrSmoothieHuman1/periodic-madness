@@ -22,6 +22,8 @@ Date: 2025-28-09
     - Changed ruby/sapphire laser heads into modules for the electronic laser etcher.
     - Removed Jesus Marie, they're minerals! achievement.
     - Changed rocket fuels recipe to match what it actually should be.
+    - Changed rocket fuel to have a stack size of 100.
+    - Moved rocket control units into their correct subgroup.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.000

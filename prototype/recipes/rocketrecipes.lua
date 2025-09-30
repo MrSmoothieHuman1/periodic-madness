@@ -131,6 +131,6 @@ data.raw["recipe"]["rocket-part"].ingredients =
 {
     PM.ingredient("rocket-fuel", 10),
     PM.ingredient("pm-rocket-control-unit", 5),
-    --PM.ingredient("pm-rocket-cladding-parts", 8),
-    --PM.ingredient("pm-rocket-nozzle-parts", 8)
+    PM.ingredient("pm-rocket-cladding-parts", 8),
+    PM.ingredient("pm-rocket-nozzle-parts", 8)
 }

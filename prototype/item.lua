@@ -1342,7 +1342,8 @@ data:extend({
     name = "pm-rocket-control-unit",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-rocket-parts",
+    order = "d",
     stack_size = 100
   },
   {
@@ -1639,6 +1640,24 @@ data:extend({
     subgroup = "pm-rocket-parts",
     order = "a",
     stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-rocket-cladding-parts",
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-parts",
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-rocket-nozzle-parts",
+    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-parts",
+    order = "c",
+    stack_size = 100
   },
 
   {
