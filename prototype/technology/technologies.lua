@@ -6144,6 +6144,33 @@ data:extend({
       time = 120
     }
   },
+{
+    type = "technology",
+    name = "pm-advanced-processing-unit",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-electronic-laser-etcher"},
+    unit =
+    {
+      count = 700,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 140
+    }
+  },
 --MARK: AC science
 --MARK: LA science
 

@@ -151,6 +151,9 @@ data.raw["item"]["solid-fuel"].subgroup = "pm-fuels"
 data.raw["item"]["solid-fuel"].order = "aa"
 data.raw["item"]["rocket-fuel"].subgroup = "pm-fuels"
 data.raw["item"]["rocket-fuel"].order = "i"
+data.raw["item"]["rocket-fuel"].fuel_value = "25MJ"
+data.raw["item"]["rocket-fuel"].fuel_acceleration_multiplier = 2.5
+data.raw["item"]["rocket-fuel"].fuel_top_speed_multiplier = 5
 data.raw["recipe"]["rocket-fuel"].subgroup = "pm-fuels"
 data.raw["recipe"]["rocket-fuel"].order = "i"
 

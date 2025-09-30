@@ -10,6 +10,12 @@ Date: 2025-28-09
     - Added Xenon.
     - Added Radon.
 
+  Changes:
+    - Changed vanilla rocket fuel into Solid rocket fuel.
+    - Changed rocket fuel's acceleration modifier to 250%.
+    - Changed rocket fuel's top speed modifier to 500%.
+    - Changed rocket fuels fuel value to 25MJ.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.000
 Date: 2025-12-07

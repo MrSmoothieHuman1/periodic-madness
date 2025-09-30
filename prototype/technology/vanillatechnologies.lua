@@ -815,6 +815,41 @@ data.raw["technology"]["flamethrower"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["rocket-silo"].unit =
+{
+  count = 850,
+  ingredients =
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1},
+    {"pm-alkaline-earth-metal-science-pack", 1},
+    {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-noble-gas-science-pack", 1}
+  },
+  time = 160
+}
+data.raw["technology"]["rocket-fuel"].unit =
+{
+  count = 700,
+  ingredients =
+  {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1},
+    {"pm-alkaline-earth-metal-science-pack", 1},
+    {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-noble-gas-science-pack", 1}
+  },
+  time = 140
+}
+
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
