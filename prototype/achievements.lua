@@ -1,14 +1,4 @@
 data:extend({
-
-  {
-    type = "produce-achievement",
-    name = "pm-jesus-marie-theyre-minerals",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/achievements/jesus-marie-they're-minerals.png",
-    amount = 1,
-    item_product = "pm-bismuth-ore",
-    limited_to_one_game = true,
-  },
   {
     type = "use-item-achievement",
     name = "pm-use-more-gun",
@@ -17,5 +7,13 @@ data:extend({
     to_use = "defender-capsule",
     limit_quality = "normal",
     amount = 1,
+  },
+  {
+    type = "dont-research-before-researching-achievement",
+    name = "pm-legacy-code",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/legacy-code.png",
+    dont_research = {"processing-unit"},
+    research_with = {"pm-noble-gas-science-pack"}
   }
 })

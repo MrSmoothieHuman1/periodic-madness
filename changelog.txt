@@ -12,6 +12,7 @@ Date: 2025-28-09
     - Added the final tier of circuits, which'll unlock the most powerful machines and recipes for you to use.
     - Added the Electronic laser etcher - which is required to make purple circuits and can produce all breadboard recipes.
     - Added the YAG (Yttrium Aluminium Garnet) laser, which is used in the electronic laser etcher.
+    - Added new achievements: Legacy code, 
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
@@ -19,6 +20,7 @@ Date: 2025-28-09
     - Changed rocket fuel's top speed modifier to 500%.
     - Changed rocket fuels fuel value to 25MJ.
     - Changed ruby/sapphire laser heads into modules for the electronic laser etcher.
+    - Removed Jesus Marie, they're minerals! achievement
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.000
