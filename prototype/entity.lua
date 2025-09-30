@@ -9805,21 +9805,12 @@ fluid_boxes =
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-base.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher.png",
         width = 256,
         height = 278,
         frame_count = 1,
         line_length = 1,
         repeat_count = 32,
-        scale = 0.5
-      },
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-fans.png",
-        width = 256,
-        height = 278,
-        frame_count = 32,
-        line_length = 8,
-        animation_speed = 0.5,
         scale = 0.5
       },
       {
@@ -9854,7 +9845,7 @@ fluid_boxes =
 },
   crafting_categories = {"pm-circuit-boards"},
   allowed_effects = PM.all_effects(),
-  module_slots = 4,
+  module_slots = 3,
   allowed_module_categories = {"pm-laser-modules"},
   crafting_speed = 1,
   energy_usage = "450kW",
