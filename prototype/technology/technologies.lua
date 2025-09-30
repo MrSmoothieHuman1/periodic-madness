@@ -6091,6 +6091,33 @@ data:extend({
       time = 140
     }
   },
+  {
+    type = "technology",
+    name = "pm-hafnium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 525,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
 --MARK: NB science
   {
     type = "technology",
