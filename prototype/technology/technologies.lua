@@ -6203,8 +6203,9 @@ data:extend({
     name = "pm-selenium-construction-robotics",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/selenium-construction-robotics.png",
-    effects = 
+    effects =
     {
+        PM.unlock_recipe("pm-selenium-construction-robot")
     },
     prerequisites = {"pm-selenium-sulfur-battery", "pm-gyroscope", "pm-lithium-ion-construction-robotics"},
     unit =
@@ -6232,6 +6233,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/selenium-logistic-robotics.png",
     effects = 
     {
+        PM.unlock_recipe("pm-selenium-logistic-robot")
     },
     prerequisites = {"pm-selenium-sulfur-battery", "pm-gyroscope", "pm-lithium-ion-logistic-robotics"},
     unit =

@@ -4635,4 +4635,38 @@ data:extend({
       PM.product("pm-solar-cell", 3)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-selenium-logistic-robot",
+    enabled = false,
+    main_product = "pm-selenium-logistic-robot",
+    ingredients =
+    {
+      PM.ingredient("pm-lithium-logistic-robot", 1),
+      --PM.ingredient("pm-gyroscope", 1),
+      PM.ingredient("pm-selenium-sulfur-battery", 2)
+    },
+    results =
+    {
+      PM.product("pm-selenium-logistic-robot", 1),
+      PM.product_range_chance("pm-lithium-ion-battery", 1, 2, 0.66)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-selenium-construction-robot",
+    enabled = false,
+    main_product = "pm-selenium-construction-robot",
+    ingredients =
+    {
+      PM.ingredient("pm-lithium-construction-robot", 1),
+      --PM.ingredient("pm-gyroscope", 1),
+      PM.ingredient("pm-selenium-sulfur-battery", 2)
+    },
+    results =
+    {
+      PM.product("pm-selenium-construction-robot", 1),
+      PM.product_range_chance("pm-lithium-ion-battery", 1, 2, 0.66)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
