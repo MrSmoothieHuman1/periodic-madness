@@ -1607,7 +1607,7 @@ data:extend({
   {
     type = "item",
     name = "pm-ammonium-dinitramide-ampule",
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/ammonium-dinitramide-ampule.png",
     icon_size = 64,
     subgroup = "pm-rocket-fuels",
     order = "c",
@@ -1628,7 +1628,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
     icon_size = 64,
     subgroup = "pm-rocket-fuels",
-    order = "a",
+    order = "e",
     stack_size = 50
   },
   {
