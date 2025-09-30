@@ -576,7 +576,7 @@ local robots =
     icon = "__periodic-madness__/graphics/icons/selenium-construction-robot.png",
     icon_size = 64,
     flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
-    minable = { mining_time = 0.1, result = "pm-lithium-construction-robot" },
+    minable = { mining_time = 0.1, result = "pm-selenium-construction-robot" },
     resistances =
     {
       {
@@ -638,7 +638,7 @@ local robots =
     icon = "__periodic-madness__/graphics/icons/selenium-logistic-robot.png",
     icon_size = 64,
     flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
-    minable = { mining_time = 0.1, result = "pm-lithium-logistic-robot" },
+    minable = { mining_time = 0.1, result = "pm-selenium-logistic-robot" },
     icon_draw_specification = {scale = 0.5},
     resistances =
     {

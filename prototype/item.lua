@@ -1575,6 +1575,26 @@ data:extend({
     order = "e",
     stack_size = 50
   },
+{
+    type = "item",
+    name = "pm-selenium-logistic-robot",
+    icon = "__periodic-madness__/graphics/icons/selenium-logistic-robot.png",
+    icon_size = 64,
+    subgroup = "logistic-network",
+    order = "a[robot]-a[logistic-robot]",
+    place_result = "pm-selenium-logistic-robot",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-selenium-construction-robot",
+    icon = "__periodic-madness__/graphics/icons/selenium-construction-robot.png",
+    icon_size = 64,
+    subgroup = "logistic-network",
+    order = "a[robot]-b[construction-robot]",
+    place_result = "pm-selenium-construction-robot",
+    stack_size = 50
+  },
 
   {
     type = "item",
