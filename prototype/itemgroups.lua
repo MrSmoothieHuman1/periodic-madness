@@ -1423,6 +1423,12 @@ data:extend({
     group = "logistics",
     order = "ca"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-sideserters",
+    group = "logistics",
+    order = "cb"
+  },
 
   --MARK: Fluid tab
   {

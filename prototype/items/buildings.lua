@@ -866,7 +866,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/sideserter.png",
     place_result = "pm-sideserter",
-    subgroup = "pm-express-inserters",
+    subgroup = "pm-sideserters",
     order = "a",
     stack_size = 50
   },
@@ -876,8 +876,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/long-handed-sideserter.png",
     place_result = "pm-long-handed-sideserter",
-    subgroup = "pm-express-inserters",
-    order = "a",
+    subgroup = "pm-sideserters",
+    order = "b",
     stack_size = 50
   },
   {
@@ -886,8 +886,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/bulk-sideserter.png",
     place_result = "pm-bulk-sideserter",
-    subgroup = "pm-express-inserters",
-    order = "a",
+    subgroup = "pm-sideserters",
+    order = "c",
     stack_size = 50
   },
   {
