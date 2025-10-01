@@ -815,6 +815,7 @@ data.raw["technology"]["flamethrower"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+table.remove(data.raw["technology"]["rocket-silo"].effects, 4)
 data.raw["technology"]["rocket-silo"].prerequisites = {"rocket-fuel", "pm-rocket-nozzle-parts", "pm-rocket-cladding-parts", "pm-rocket-control-unit", "concrete"}
 data.raw["technology"]["rocket-silo"].unit =
 {
@@ -862,6 +863,7 @@ data.raw["technology"]["rocket-fuel"].unit =
   },
   time = 140
 }
+data.raw["technology"]["space-science-pack"].prerequisites = {"pm-satellite"}
 
 
 data.raw["technology"]["speed-module"].icon_size = 256
