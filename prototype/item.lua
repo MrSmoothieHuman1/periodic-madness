@@ -1670,6 +1670,15 @@ data:extend({
     order = "b",
     stack_size = 500
   },
+  {
+    type = "item",
+    name = "pm-sterling-silver-wire",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sterling-silver-wire.png",
+    subgroup = "pm-wires",
+    order = "e",
+    stack_size = 100
+  },
 
   {
     type = "item",

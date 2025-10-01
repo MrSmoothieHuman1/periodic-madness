@@ -4669,4 +4669,20 @@ data:extend({
       PM.product_range_chance("pm-lithium-ion-battery", 1, 2, 0.66)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-sterling-silver-wire",
+    enabled = false,
+    subgroup = "pm-wires",
+    order = "e",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-sterling-silver-plate", 2)
+    },
+    results =
+    {
+      PM.product("pm-sterling-silver-wire", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
