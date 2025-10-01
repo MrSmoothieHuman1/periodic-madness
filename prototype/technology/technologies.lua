@@ -6411,9 +6411,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-        --PM.unlock_recipe("satellite")
+
     },
-    prerequisites = {"pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-insert-gas-metallurgy"},
     unit =
     {
       count = 700,
@@ -6449,6 +6449,35 @@ data:extend({
     unit =
     {
       count = 600,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-inert-gas-metallurgy",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 650,
       ingredients =
       {
         {"automation-science-pack", 1},
