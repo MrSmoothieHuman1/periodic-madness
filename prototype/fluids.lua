@@ -1888,7 +1888,7 @@ data:extend({
     base_color = {r = 0.5, g = 0.33, b = 0.33},
     flow_color = {r = 0.5, g = 0.33, b = 0.33},
   },
-{
+  {
     type = "fluid",
     name = "pm-ammonium-dinitramide-solution",
     icon_size = 64,
@@ -1898,6 +1898,30 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.5, g = 0.33, b = 0.33},
     flow_color = {r = 0.5, g = 0.33, b = 0.33},
+  },
+  {
+    type = "fluid",
+    name = "pm-molten-sterling-silver",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-inconel-625.png",
+    subgroup = "pm-sterling-silver",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.38, g = 0.49, b = 0.74},
+    flow_color = {r = 0.38, g = 0.49, b = 0.74},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-sterling-silver-precursor-alloy",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-inconel-625-precursor-alloy.png",
+    subgroup = "pm-sterling-silver",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.28, g = 0.39, b = 0.64},
+    flow_color = {r = 0.28, g = 0.39, b = 0.64},
+    auto_barrel = false,
   },
 
 	{

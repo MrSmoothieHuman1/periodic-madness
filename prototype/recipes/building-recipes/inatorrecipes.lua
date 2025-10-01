@@ -189,6 +189,78 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-sterling-silver-precursor-alloy",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-silver-plate", 7),
+      PM.ingredient("pm-molten-copper", 5, "fluid"),
+      PM.ingredient("pm-germanium-ore", 3)
+    },
+    results = 
+    {
+      PM.product("pm-sterling-silver-precursor-alloy", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sterling-silver-precursor-billet",
+    enabled = false,
+    energy_required = 13.5,
+    category = "pm-coldening",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-sterling-silver-precursor-alloy", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-sterling-silver-precursor-billet", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-sterling-silver",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-moltening",
+    ingredients =
+    {
+      PM.ingredient("pm-sterling-silver-precursor-billet", 5),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 5),
+      PM.ingredient("pm-molten-platinum", 2, "fluid"),
+      PM.ingredient("pm-boron", 2, "fluid"),
+      PM.ingredient("pm-filled-flux-container", 1)
+    },
+    results = 
+    {
+      PM.product("pm-molten-sterling-silver", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sterling-silver-plate",
+    enabled = false,
+    energy_required = 4.5,
+    category = "pm-coldening",
+    main_product = "pm-sterling-silver-plate",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-molten-sterling-silver", 10, "fluid"),
+      PM.ingredient("pm-crucible", 2)
+    },
+    results = 
+    {
+      PM.product("pm-sterling-silver-plate", 5),
+      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,

@@ -380,6 +380,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-sterling-silver",
+    group = "intermediate-products",
+    order = "cc",
+  },
+  {
+    type = "item-subgroup",
     name = "pm-glassing",
     group = "intermediate-products",
     order = "d",

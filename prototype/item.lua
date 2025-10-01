@@ -1661,6 +1661,15 @@ data:extend({
     order = "c",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-sterling-silver-precursor-billet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sterling-silver-precursor-billet.png",
+    subgroup = "pm-sterling-silver",
+    order = "b",
+    stack_size = 500
+  },
 
   {
     type = "item",

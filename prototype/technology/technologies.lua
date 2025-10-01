@@ -6183,7 +6183,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-electronic-laser-etcher", "pm-sterling-silver-processing"},
+    prerequisites = {"pm-electronic-laser-etcher", "pm-sterling-silver-processing", "processing-unit"},
     unit =
     {
       count = 700,
@@ -6412,7 +6412,7 @@ data:extend({
     {
         --PM.unlock_recipe("satellite")
     },
-    prerequisites = {"pm-noble-gas-science-pack"},
+    prerequisites = {"pm-noble-gas-pack-unlock"},
     unit =
     {
       count = 700,
@@ -6437,8 +6437,12 @@ data:extend({
     name = "pm-sterling-silver-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
+        PM.unlock_recipe("pm-molten-sterling-silver-precursor-alloy"),
+        PM.unlock_recipe("pm-sterling-silver-precursor-billet"),
+        PM.unlock_recipe("pm-molten-sterling-silver"),
+        PM.unlock_recipe("pm-sterling-silver-plate"),
     },
     prerequisites = {"pm-noble-gas-pack-unlock"},
     unit =
