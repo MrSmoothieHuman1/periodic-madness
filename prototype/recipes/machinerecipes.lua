@@ -103,7 +103,7 @@ data:extend({
       PM.ingredient("express-transport-belt", 1),
       PM.ingredient("pm-advanced-electric-engine-unit", 2),
       PM.ingredient("low-density-structure", 1),
-      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-advanced-processing-unit", 1),
       PM.ingredient("pm-light-lubricant", 5, "fluid")
     },
     results = {
@@ -138,7 +138,7 @@ data:extend({
       PM.ingredient("express-splitter", 1),
       PM.ingredient("pm-advanced-electric-engine-unit", 2),
       PM.ingredient("low-density-structure", 2),
-      PM.ingredient("processing-unit", 6),
+      PM.ingredient("pm-advanced-processing-unit", 3),
       PM.ingredient("pm-light-lubricant", 15, "fluid")
     },
     results = {
