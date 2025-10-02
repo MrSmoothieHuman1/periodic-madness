@@ -6360,7 +6360,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-noble-gas-pack-unlock", "low-density-structure", "pm-hafnium-processing"},
+    prerequisites = {"pm-inert-gas-metallurgy", "low-density-structure", "pm-hafnium-processing"},
     unit =
     {
       count = 700,
