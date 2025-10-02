@@ -91,7 +91,7 @@ data:extend({
         category = "pm-moltening",
         allow_productivity = true,
         main_product = "pm-impure-hafnium",
-        ingredient =
+        ingredients =
         {
             PM.ingredient("pm-hafnium-chloride", 3),
             PM.ingredient("pm-magnesium-plate", 3),
