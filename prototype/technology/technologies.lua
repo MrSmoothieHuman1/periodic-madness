@@ -6499,6 +6499,66 @@ data:extend({
       time = 120
     }
   },
+  {
+    type = "technology",
+    name = "pm-electric-mining-drill-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 140
+    }
+  },
+{
+    type = "technology",
+    name = "pm-logistics-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/logistics-5.png",
+    effects = 
+    {
+        PM.unlock_recipe("pm-high-density-transport-belt"),
+        PM.unlock_recipe("pm-high-density-underground-belt"),
+        PM.unlock_recipe("pm-high-density-splitter")
+    },
+    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-electric-engine-unit"},
+    unit =
+    {
+      count = 850,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 160
+    }
+  },
 --MARK: AC science
 --MARK: LA science
 
