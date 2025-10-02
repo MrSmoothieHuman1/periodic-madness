@@ -4262,7 +4262,7 @@ data:extend({
     {
       PM.product("pm-coke", 1),
       PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.9),
-      PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.1)
+      PM.product_chance("pm-catalyst-container", 1, 0.1)
     }
   },
   {
