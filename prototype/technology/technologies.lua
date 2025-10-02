@@ -6098,6 +6098,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-hafnium-chunks"),
+        PM.unlock_recipe("pm-hafnium-chloride"),
+        PM.unlock_recipe("pm-impure-hafnium"),
+        PM.unlock_recipe("pm-hafnium-iodide"),
+        PM.unlock_recipe("pm-hafnium-ore")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =

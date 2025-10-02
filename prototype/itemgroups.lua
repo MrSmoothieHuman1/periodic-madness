@@ -930,6 +930,12 @@ data:extend({
     group = "pm-transition-metals",
     order = "ze"
   },
+{
+    type = "item-subgroup",
+    name = "pm-hafnium-tm",
+    group = "pm-transition-metals",
+    order = "zf"
+  },
 
   --MARK: Post Transition
   {

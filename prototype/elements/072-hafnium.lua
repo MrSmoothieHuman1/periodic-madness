@@ -1,4 +1,49 @@
 data:extend({
+    {
+        type = "item",
+        name = "pm-hafnium-chunks",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-hafnium-tm",
+        order = "a",
+        stack_size = 200
+    },
+    {
+        type = "item",
+        name = "pm-hafnium-chloride",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-hafnium-tm",
+        order = "b",
+        stack_size = 100
+    },
+    {
+        type = "item",
+        name = "pm-impure-hafnium",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-hafnium-tm",
+        order = "c",
+        stack_size = 50
+    },
+    {
+        type = "item",
+        name = "pm-hafnium-iodide",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-hafnium-tm",
+        order = "d",
+        stack_size = 100
+    },
+    {
+        type = "item",
+        name = "pm-hafnium-ore",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-hafnium-tm",
+        order = "e",
+        stack_size = 200
+    },
 
     {
         type = "recipe",
@@ -6,8 +51,6 @@ data:extend({
         enabled = false,
         energy_required = 5,
         category = "pm-acids",
-        subgroup = "pm-hafnium-tm",
-        order = "a",
         allow_productivity = true,
         ingredients =
         {
@@ -27,8 +70,6 @@ data:extend({
         enabled = false,
         energy_required = 12,
         category = "pm-mixing",
-        subgroup = "pm-hafnium-tm",
-        order = "b",
         allow_productivity = true,
         ingredients = 
         {
@@ -48,8 +89,6 @@ data:extend({
         enabled = false,
         energy_required = 10,
         category = "pm-moltening",
-        subgroup = "pm-hafnium-tm",
-        order = "c",
         allow_productivity = true,
         main_product = "pm-impure-hafnium",
         ingredient =
@@ -70,15 +109,13 @@ data:extend({
         enabled = false,
         energy_required = 20,
         category = "chemistry",
-        subgroup = "pm-hafnium-tm",
-        order = "d",
         allow_productivity = true,
         main_product = "pm-hafnium-iodide",
         ingredients = 
         {
             PM.ingredient("pm-impure-hafnium", 4),
             PM.ingredient("pm-cobalt-catalyst", 3),
-            PM.ingredient("pm-iodine-ore", 4),
+            PM.ingredient("pm-iodine", 4),
             PM.ingredient("steam", 25, "fluid")
         },
         results = 
@@ -94,9 +131,8 @@ data:extend({
         enabled = false,
         energy_required = 20,
         category = "pm-electrolysis",
-        subgroup = "pm-hafnium-tm",
-        order = "e",
         allow_productivity = true,
+        main_product = "pm-hafnium-ore",
         ingredients = 
         {
             PM.ingredient("pm-hafnium-iodide", 6),
@@ -106,7 +142,7 @@ data:extend({
         results = 
         {
             PM.product("pm-hafnium-ore", 4),
-            PM.product_chance("pm-iodine-ore", 3, 0.5),
+            PM.product_chance("pm-iodine", 3, 0.5),
             PM.product_chance("pm-tungsten-plate", 4, 0.5)
         }
     }
