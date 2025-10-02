@@ -87,7 +87,7 @@ data:extend({
         type = "recipe",
         name = "pm-impure-hafnium",
         enabled = false,
-        energy_required = 10,
+        energy_required = 30,
         category = "pm-moltening",
         allow_productivity = true,
         main_product = "pm-impure-hafnium",
