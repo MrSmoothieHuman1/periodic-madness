@@ -6413,7 +6413,7 @@ data:extend({
     {
 
     },
-    prerequisites = {"pm-insert-gas-metallurgy"},
+    prerequisites = {"pm-inert-gas-metallurgy"},
     unit =
     {
       count = 700,
