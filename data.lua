@@ -146,6 +146,7 @@ require("compatibility.icon-badges")
 require("compatibility.DLC.quality")
 require("compatibility.DLC.elevated-rails")
 require("compatibility.DLC.belt-stacking")
+require("compatibility.black-silicon-seas")
 
 local resource_autoplace = require('resource-autoplace');
 data:extend({
