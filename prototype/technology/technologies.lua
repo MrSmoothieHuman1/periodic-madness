@@ -6421,7 +6421,7 @@ data:extend({
     prerequisites = {"pm-inert-gas-metallurgy"},
     unit =
     {
-      count = 700,
+      count = 650,
       ingredients =
       {
         {"automation-science-pack", 1},
