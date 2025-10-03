@@ -1135,7 +1135,13 @@ data:extend({
     order = "g"
   },
 
-  --MARK:Noble
+  --MARK:Noble gases
+  {
+    type = "item-subgroup",
+    name = "pm-nb-nb",
+    group = "pm-noble-gases",
+    order = "A"
+  },
   {
     type = "item-subgroup",
     name = "pm-helium-nb",
