@@ -6559,6 +6559,35 @@ data:extend({
       time = 160
     }
   },
+  {
+    type = "technology",
+    name = "pm-selenium-battery-mk2-equipment",
+    icon_size = 256,
+    icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/selenium-battery-mk2-equipment.png"),
+    effects =
+    {
+      --PM.unlock_recipe("pm-selenium-sulfur-battery-equipment")
+    },
+    prerequisites = {"pm-selenium-battery-equipment", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 750,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 140
+    }
+  },
 --MARK: AC science
 --MARK: LA science
 
