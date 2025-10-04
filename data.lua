@@ -512,7 +512,7 @@ data:extend({
   }--[[@as data.ResourceEntityPrototype]],
   {
     type = "autoplace-control",
-    name = "pm-noble-gas-deposit",
+    name = "pm-mixed-noble-gas",
     localised_name = {"", "[entity=crude-oil] ", {"entity-name.crude-oil"}},
     richness = true,
     order = "a-e",
@@ -520,7 +520,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "pm-noble-gas-deposit",
+    name = "pm-mixed-noble-gas",
     icon = "__base__/graphics/icons/crude-oil-resource.png",
     flags = {"placeable-neutral"},
     category = "basic-fluid",
@@ -541,7 +541,7 @@ data:extend({
       {
         {
           type = "fluid",
-          name = "crude-oil",
+          name = "pm-mixed-noble-gas",
           amount_min = 10,
           amount_max = 10,
           probability = 1
@@ -554,7 +554,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "pm-noble-gas-deposit",
+      name = "pm-mixed-noble-gas",
       order = "c", -- Other resources are "b"; oil won't get placed if something else is already there.
       base_density = 8.2,
       base_spots_per_km2 = 2.4,
@@ -695,8 +695,8 @@ data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkali-metals"] =
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkali-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkaline-earth-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkaline-earth-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-noble-gas-deposit"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-noble-gas-deposit"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-mixed-noble-gas"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-mixed-noble-gas"] = {}
 
 data.raw["resource"]["iron-ore"].icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png"
 data.raw["resource"]["copper-ore"].icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png"
