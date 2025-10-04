@@ -130,7 +130,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-oxygen-gas", 20, "fluid"),
+          PM.product("pm-oxygen-gas", 20, "fluid", 1),
           PM.product("pm-carbon", 10)
         }
     },
@@ -150,8 +150,8 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-oxygen-gas", 20, "fluid"),
-          PM.product("pm-carbon-dioxide-gas", 10, "fluid")
+          PM.product("pm-oxygen-gas", 20, "fluid", 1),
+          PM.product("pm-carbon-dioxide-gas", 10, "fluid", 2)
         }
     },
     {

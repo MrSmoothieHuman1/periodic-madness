@@ -2986,7 +2986,7 @@ data:extend({
         production_type = "input",
         pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
+        volume = 250,
         pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
@@ -2994,7 +2994,7 @@ data:extend({
         production_type = "output",
         pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
+        volume = 250,
         pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
@@ -3002,7 +3002,7 @@ data:extend({
         production_type = "output",
         pipe_picture = assembler3pipepictures(),
         pipe_covers = pipecoverspictures(),
-        volume = 1000,
+        volume = 250,
         pipe_connections = {{flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
         secondary_draw_orders = { north = -1 }
       },

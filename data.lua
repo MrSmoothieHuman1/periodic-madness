@@ -574,6 +574,7 @@ data:extend({
         scale = 0.5,
         variation_count = 1,
         frame_count = 4,
+        tint = {0, 0, 1}
       })
     },
     draw_stateless_visualisation_under_building = false,
@@ -602,7 +603,7 @@ data:extend({
           animation_speed = 0.3,
           shift = util.by_pixel(-2, 24 -152),
           scale = 1.5,
-          tint = util.multiply_color({r=0.3, g=0.3, b=0.3}, 0.2)
+          tint = util.multiply_color({r=0.3, g=0.3, b=0.4}, 0.2)
         }
       },
       {
@@ -617,7 +618,7 @@ data:extend({
           animation_speed = 0.3,
           shift = util.by_pixel(0, 24 -78),
           scale = 1.5,
-          tint = util.multiply_color({r=0.4, g=0.4, b=0.4}, 0.2)
+          tint = util.multiply_color({r=0.3, g=0.3, b=0.6}, 0.2)
         }
       }
     },
@@ -753,3 +754,5 @@ local layers = set.working_visualisations[2].animation.layers
 layers[1].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-C-light.png"
 layers[2].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-B-light.png"
 layers[3].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-A-light.png"
+
+data.raw["mining-drill"]["pumpjack"].resource_searching_radius = 4.99
