@@ -557,7 +557,7 @@ data:extend({
       name = "pm-mixed-noble-gas",
       order = "c", -- Other resources are "b"; oil won't get placed if something else is already there.
       base_density = 8.2,
-      base_spots_per_km2 = 2.4,
+      base_spots_per_km2 = 1.2,
       random_probability = 1/48,
       random_spot_size_minimum = 1,
       random_spot_size_maximum = 1, -- don't randomize spot size
