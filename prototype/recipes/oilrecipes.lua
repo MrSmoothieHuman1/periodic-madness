@@ -1075,7 +1075,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-octane-processing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/octane-processing.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-octane-processing.png",
     enabled = false,
     energy_required = 10,
     category = "oil-processing",
