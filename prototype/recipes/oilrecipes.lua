@@ -871,6 +871,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-N-octane-cracking",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/n-octane-cracking.png",
     enabled = false,
     energy_required = 5,
     category = "chemistry",
@@ -889,6 +891,8 @@ data:extend({
     {
     type = "recipe",
     name = "pm-2-3-3-trimethylpentane-cracking",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/2-3-3-trimethylpentane-cracking.png",
     enabled = false,
     energy_required = 5,
     category = "chemistry",
