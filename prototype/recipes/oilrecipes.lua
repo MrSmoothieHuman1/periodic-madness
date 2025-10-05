@@ -1028,7 +1028,7 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients = 
     {
-      PM.ingredient("pm-N-octane", 2, "fluid"),
+      PM.ingredient("pm-iso-octane", 2, "fluid"),
       PM.ingredient("pm-kerosene-fuel-canister", 1),
       PM.ingredient("solid-fuel", 2)
     },
@@ -1063,12 +1063,13 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-2-3-3-trimethylpentane", 2, "fluid"),
+      PM.ingredient("pm-empty-fuel-canister", 1),
       PM.ingredient("pm-petrol-fuel-canister", 1),
-      PM.ingredient("solid-fuel", 1)
+      PM.ingredient("solid-fuel", 2)
     },
     results = 
     {
-      PM.product("pm-vehicle-octane-fuel-canister", 1)
+      PM.product("pm-vehicle-octane-fuel-canister", 2)
     }
   },
   {
