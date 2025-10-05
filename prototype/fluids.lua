@@ -1958,6 +1958,17 @@ data:extend({
     flow_color = {r = 0.28, g = 0.39, b = 0.64},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-industrial-noble-gas",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/atmosphere.png",
+    subgroup = "pm-nb-nb",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.28, g = 0.39, b = 0.64},
+    flow_color = {r = 0.28, g = 0.39, b = 0.64},
+  },
 
 	{
 		type = "fluid",

@@ -6071,6 +6071,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/noble-gas-unlock.png",
     effects = 
     {
+        PM.unlock_recipe("pm-noble-gas-science-pack")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
     unit =

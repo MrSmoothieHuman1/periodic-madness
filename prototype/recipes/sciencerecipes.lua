@@ -188,6 +188,25 @@ data:extend({
         PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 1),
     }
 },
+{
+    type = "recipe",
+    name = "pm-noble-gas-science-pack",
+    enabled = false,
+    energy_required = 6,
+    category = "crafting-with-fluid",
+    subgroup = "science-pack",
+    order = "j",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-industrial-noble-gas", 120, "fluid"),
+        PM.ingredient("pm-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-noble-gas-science-pack", 1)
+    }
+},
 --MARK: Plastic Science
 {
     type = "recipe",
