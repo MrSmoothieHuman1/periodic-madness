@@ -6590,9 +6590,9 @@ data:extend({
     }
   },
   {
-    type = "recipe",
+    type = "technology",
     name = "pm-liquid-rocket-fuel",
-    icon_size = 64,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
