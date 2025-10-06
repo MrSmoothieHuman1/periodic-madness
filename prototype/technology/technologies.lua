@@ -6613,7 +6613,8 @@ data:extend({
         {"pm-metalloid-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-noble-gas-science-pack", 1}
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
       },
       time = 140
     }
