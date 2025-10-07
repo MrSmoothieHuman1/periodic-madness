@@ -6129,7 +6129,7 @@ data:extend({
     type = "technology",
     name = "pm-YAG-laser",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/YAG-laser.png",
     effects = 
     {
     },
