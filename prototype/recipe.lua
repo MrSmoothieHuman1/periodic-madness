@@ -4643,7 +4643,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-lithium-logistic-robot", 1),
-      --PM.ingredient("pm-gyroscope", 1),
+      PM.ingredient("pm-gyroscope", 1),
       PM.ingredient("pm-selenium-sulfur-battery", 2)
     },
     results =
@@ -4660,7 +4660,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-lithium-construction-robot", 1),
-      --PM.ingredient("pm-gyroscope", 1),
+      PM.ingredient("pm-gyroscope", 1),
       PM.ingredient("pm-selenium-sulfur-battery", 2)
     },
     results =

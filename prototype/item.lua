@@ -1695,6 +1695,14 @@ data:extend({
     },
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-gyroscope",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sterling-silver-wire.png",
+    subgroup = "pm-intermediates",
+    stack_size = 20
+  },
 
   {
     type = "item",
