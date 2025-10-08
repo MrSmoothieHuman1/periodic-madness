@@ -53,7 +53,7 @@ data:extend({
     name = "pm-water-extractor",
     subgroup = "pm-water-machine",
     order = "a",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-basic-panelling", 4),
@@ -82,7 +82,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-dirty-boiler",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-nickel-plate", 5),

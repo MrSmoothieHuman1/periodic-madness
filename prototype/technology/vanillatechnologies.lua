@@ -923,6 +923,7 @@ data.raw["technology"]["productivity-module-3"].unit.ingredients =
 }
 data.raw["technology"]["steam-power"].effects = 
 {
+  PM.unlock_recipe("pm-water-extractor"),
   PM.unlock_recipe("pm-dirty-boiler"),
   PM.unlock_recipe("steam-engine")
 }
