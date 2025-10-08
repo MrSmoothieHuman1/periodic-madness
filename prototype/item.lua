@@ -1703,6 +1703,15 @@ data:extend({
     subgroup = "pm-intermediates",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-cut-garnet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    subgroup = "pm-garnet-ptm",
+    order = "c",
+    stack_size = 200
+  },
 
   {
     type = "item",

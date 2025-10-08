@@ -4685,4 +4685,25 @@ data:extend({
       PM.product("pm-sterling-silver-wire", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-cut-garnet",
+    energy_required = 10,
+    main_product = "pm-cut-garnet",
+    subgroup = "pm-garnet-ptm",
+    order = "c",
+    enabled = false,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-saw", 1),
+      PM.ingredient("pm-garnet", 8)
+    },
+    results = 
+    {
+      PM.product_range("pm-cut-garnet", 0, 4),
+      PM.catalyst_range_chance("pm-garnet", 2, 6, 0.9, 6),
+      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
