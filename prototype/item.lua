@@ -1684,7 +1684,7 @@ data:extend({
     name = "pm-YAG-laser-head",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/YAG-laser-head.png",
-    subgroup = "pm-sapphire-ptm",
+    subgroup = "pm-garnet-ptm",
     order = "e",
     category = "pm-laser-modules",
     tier = 3,
@@ -1710,6 +1710,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
     subgroup = "pm-garnet-ptm",
     order = "c",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-YAG-laser",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
     stack_size = 200
   },
 

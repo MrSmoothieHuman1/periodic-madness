@@ -4706,4 +4706,45 @@ data:extend({
       PM.catalyst_chance("pm-saw", 1, 0.98, 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-YAG-laser",
+    energy_required = 10,
+    category = "pm-moltening",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-cut-garnet", 2),
+      PM.ingredient("pm-yttrium-ore", 5),
+      PM.ingredient("pm-molten-aluminium", 7.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-YAG-laser", 2),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-YAG-laser-head",
+    energy_required = 5,
+    subgroup = "pm-garnet-ptm",
+    order = "e",
+    enabled = false,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-YAG-laser", 1),
+      PM.ingredient("pm-borosilicate-glass", 6),
+      PM.ingredient("pm-indium-wire", 6),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-heavyweight-panelling", 8)
+    },
+    results = 
+    {
+      PM.product("pm-YAG-laser-head", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

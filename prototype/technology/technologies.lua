@@ -6132,7 +6132,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/YAG-laser.png",
     effects = 
     {
-        PM.unlock_recipe("pm-cut-garnet")
+        PM.unlock_recipe("pm-cut-garnet"),
+        PM.unlock_recipe("pm-YAG-laser"),
+        PM.unlock_recipe("pm-YAG-laser-head")
     },
     prerequisites = {"pm-noble-gas-pack-unlock"},
     unit =
