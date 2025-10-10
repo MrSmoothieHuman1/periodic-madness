@@ -6071,6 +6071,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/noble-gas-unlock.png",
     effects = 
     {
+        PM.unlock_recipe("pm-noble-gas-science-pack")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
@@ -6098,6 +6099,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-hafnium-chunks"),
+        PM.unlock_recipe("pm-hafnium-chloride"),
+        PM.unlock_recipe("pm-impure-hafnium"),
+        PM.unlock_recipe("pm-hafnium-iodide"),
+        PM.unlock_recipe("pm-hafnium-ore")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =
@@ -6123,9 +6129,12 @@ data:extend({
     type = "technology",
     name = "pm-YAG-laser",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/YAG-laser.png",
     effects = 
     {
+        PM.unlock_recipe("pm-cut-garnet"),
+        PM.unlock_recipe("pm-YAG-laser"),
+        PM.unlock_recipe("pm-YAG-laser-head")
     },
     prerequisites = {"pm-noble-gas-pack-unlock"},
     unit =
@@ -6355,7 +6364,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-noble-gas-pack-unlock", "low-density-structure", "pm-hafnium-processing"},
+    prerequisites = {"pm-inert-gas-metallurgy", "low-density-structure", "pm-hafnium-processing"},
     unit =
     {
       count = 700,
@@ -6411,12 +6420,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-        --PM.unlock_recipe("satellite")
+
     },
-    prerequisites = {"pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-inert-gas-metallurgy"},
     unit =
     {
-      count = 700,
+      count = 650,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -6456,6 +6465,238 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-inert-gas-metallurgy",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 650,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-electric-mining-drill-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 140
+    }
+  },
+{
+    type = "technology",
+    name = "pm-logistics-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/logistics-5.png",
+    effects = 
+    {
+        PM.unlock_recipe("pm-high-density-transport-belt"),
+        PM.unlock_recipe("pm-high-density-underground-belt"),
+        PM.unlock_recipe("pm-high-density-splitter")
+    },
+    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-electric-engine-unit"},
+    unit =
+    {
+      count = 850,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 160
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-selenium-battery-mk2-equipment",
+    icon_size = 256,
+    icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/selenium-battery-mk2-equipment.png"),
+    effects =
+    {
+      --PM.unlock_recipe("pm-selenium-sulfur-battery-equipment")
+    },
+    prerequisites = {"pm-selenium-battery-equipment", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 750,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 140
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-liquid-rocket-fuel",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"space-science-pack"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 140
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-speed-module-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/speed-module-5-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-speed-module-4", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-efficiency-module-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/efficiency-module-5-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-efficiency-module-4", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-productivity-module-5",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/productivity-module-5-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-productivity-module-4", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
         {"pm-metalloid-science-pack", 1},
         {"pm-alkaline-earth-metal-science-pack", 1},

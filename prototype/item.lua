@@ -981,7 +981,7 @@ data:extend({
   {
     type = "module",
     name = "pm-ruby-laser-head",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ruby-laser-head.png",
     subgroup = "pm-ruby-ptm",
     order = "d",
@@ -997,7 +997,7 @@ data:extend({
   {
     type = "module",
     name = "pm-sapphire-laser-head",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
     subgroup = "pm-sapphire-ptm",
     order = "e",
@@ -1678,6 +1678,48 @@ data:extend({
     subgroup = "pm-wires",
     order = "e",
     stack_size = 100
+  },
+  {
+    type = "module",
+    name = "pm-YAG-laser-head",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/YAG-laser-head.png",
+    subgroup = "pm-garnet-ptm",
+    order = "e",
+    category = "pm-laser-modules",
+    tier = 3,
+    effect = 
+    {
+        speed = 1.5,
+        consumption = 1.125,
+    },
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-gyroscope",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/sterling-silver-wire.png",
+    subgroup = "pm-intermediates",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "pm-cut-garnet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    subgroup = "pm-garnet-ptm",
+    order = "c",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-YAG-laser",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
+    stack_size = 200
   },
 
   {

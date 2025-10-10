@@ -261,6 +261,63 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-molten-C103-precursor",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-titanium-plate", 2),
+        PM.ingredient("steam", 50, "fluid"),
+        PM.ingredient("pm-yttrium-ore", 4),
+        PM.ingredient("pm-zinc-plate", 2)
+    },
+    results =
+    {
+        PM.product("pm-molten-C103-precursor", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-niobium-molten-C103",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-niobium-plate", 18),
+        PM.ingredient("pm-molten-C103-precursor", 10, "fluid"),
+        PM.ingredient("pm-hafnium-ore", 9),
+        PM.ingredient("pm-zirconia", 2)
+    },
+    results =
+    {
+        PM.product("pm-molten-C103", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-tantalum-molten-C103",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-tantalum-plate", 18),
+        PM.ingredient("pm-molten-C103-precursor", 10, "fluid"),
+        PM.ingredient("pm-hafnium-ore", 9),
+        PM.ingredient("pm-zirconia", 2)
+    },
+    results =
+    {
+        PM.product("pm-molten-C103", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,

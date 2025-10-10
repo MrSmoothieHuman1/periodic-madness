@@ -53,7 +53,7 @@ data:extend({
     name = "pm-water-extractor",
     subgroup = "pm-water-machine",
     order = "a",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-basic-panelling", 4),
@@ -82,7 +82,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-dirty-boiler",
-    enabled = true,
+    enabled = false,
     ingredients =
     {
       PM.ingredient("pm-nickel-plate", 5),
@@ -101,9 +101,10 @@ data:extend({
     ingredients =
     {
       PM.ingredient("express-transport-belt", 1),
+      PM.ingredient("pm-advanced-electric-engine-unit", 2),
       PM.ingredient("low-density-structure", 1),
-      PM.ingredient("processing-unit", 3),
-      PM.ingredient("pm-heavy-lubricant", 5, "fluid")
+      PM.ingredient("pm-advanced-processing-unit", 1),
+      PM.ingredient("pm-light-lubricant", 2.5, "fluid")
     },
     results = {
       PM.product("pm-high-density-transport-belt", 1)
@@ -120,7 +121,7 @@ data:extend({
     {
       PM.ingredient("express-underground-belt", 2),
       PM.ingredient("low-density-structure", 2),
-      PM.ingredient("pm-heavy-lubricant", 10, "fluid")
+      PM.ingredient("pm-light-lubricant", 5, "fluid")
     },
     results = {
       PM.product("pm-high-density-underground-belt", 2)
@@ -135,9 +136,10 @@ data:extend({
     ingredients =
     {
       PM.ingredient("express-splitter", 1),
+      PM.ingredient("pm-advanced-electric-engine-unit", 2),
       PM.ingredient("low-density-structure", 2),
-      PM.ingredient("processing-unit", 6),
-      PM.ingredient("pm-heavy-lubricant", 15, "fluid")
+      PM.ingredient("pm-advanced-processing-unit", 3),
+      PM.ingredient("pm-light-lubricant", 10, "fluid")
     },
     results = {
       PM.product("pm-high-density-splitter", 1)

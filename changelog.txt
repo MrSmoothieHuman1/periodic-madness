@@ -13,6 +13,7 @@ Date: 2025-28-09
     - Added the Electronic laser etcher - which is required to make purple circuits and can produce all breadboard recipes.
     - Added the YAG (Yttrium Aluminium Garnet) laser, which is used in the electronic laser etcher.
     - Added new achievements: Legacy code, 
+    - Added MK2 selenium battery equipment.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.

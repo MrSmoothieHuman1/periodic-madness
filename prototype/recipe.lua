@@ -4262,7 +4262,7 @@ data:extend({
     {
       PM.product("pm-coke", 1),
       PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.9),
-      PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.1)
+      PM.product_chance("pm-catalyst-container", 1, 0.1)
     }
   },
   {
@@ -4643,7 +4643,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-lithium-logistic-robot", 1),
-      --PM.ingredient("pm-gyroscope", 1),
+      PM.ingredient("pm-gyroscope", 1),
       PM.ingredient("pm-selenium-sulfur-battery", 2)
     },
     results =
@@ -4660,7 +4660,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-lithium-construction-robot", 1),
-      --PM.ingredient("pm-gyroscope", 1),
+      PM.ingredient("pm-gyroscope", 1),
       PM.ingredient("pm-selenium-sulfur-battery", 2)
     },
     results =
@@ -4683,6 +4683,68 @@ data:extend({
     results =
     {
       PM.product("pm-sterling-silver-wire", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cut-garnet",
+    energy_required = 10,
+    main_product = "pm-cut-garnet",
+    subgroup = "pm-garnet-ptm",
+    order = "c",
+    enabled = false,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-saw", 1),
+      PM.ingredient("pm-garnet", 8)
+    },
+    results = 
+    {
+      PM.product_range("pm-cut-garnet", 0, 4),
+      PM.catalyst_range_chance("pm-garnet", 2, 6, 0.9, 6),
+      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-YAG-laser",
+    energy_required = 10,
+    category = "pm-moltening",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-cut-garnet", 2),
+      PM.ingredient("pm-yttrium-ore", 5),
+      PM.ingredient("pm-molten-aluminium", 7.5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-YAG-laser", 2),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-YAG-laser-head",
+    energy_required = 5,
+    subgroup = "pm-garnet-ptm",
+    order = "e",
+    enabled = false,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-YAG-laser", 1),
+      PM.ingredient("pm-borosilicate-glass", 6),
+      PM.ingredient("pm-indium-wire", 6),
+      PM.ingredient("processing-unit", 3),
+      PM.ingredient("pm-heavyweight-panelling", 8)
+    },
+    results = 
+    {
+      PM.product("pm-YAG-laser-head", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

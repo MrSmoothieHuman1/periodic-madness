@@ -871,6 +871,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-N-octane-cracking",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/n-octane-cracking.png",
     enabled = false,
     energy_required = 5,
     category = "chemistry",
@@ -889,6 +891,8 @@ data:extend({
     {
     type = "recipe",
     name = "pm-2-3-3-trimethylpentane-cracking",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/2-3-3-trimethylpentane-cracking.png",
     enabled = false,
     energy_required = 5,
     category = "chemistry",
@@ -1028,7 +1032,7 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients = 
     {
-      PM.ingredient("pm-N-octane", 2, "fluid"),
+      PM.ingredient("pm-iso-octane", 2, "fluid"),
       PM.ingredient("pm-kerosene-fuel-canister", 1),
       PM.ingredient("solid-fuel", 2)
     },
@@ -1063,19 +1067,20 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-2-3-3-trimethylpentane", 2, "fluid"),
+      PM.ingredient("pm-empty-fuel-canister", 1),
       PM.ingredient("pm-petrol-fuel-canister", 1),
-      PM.ingredient("solid-fuel", 1)
+      PM.ingredient("solid-fuel", 2)
     },
     results = 
     {
-      PM.product("pm-vehicle-octane-fuel-canister", 1)
+      PM.product("pm-vehicle-octane-fuel-canister", 2)
     }
   },
   {
     type = "recipe",
     name = "pm-advanced-octane-processing",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/octane-processing.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-octane-processing.png",
     enabled = false,
     energy_required = 10,
     category = "oil-processing",
