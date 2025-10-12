@@ -834,6 +834,14 @@ data.raw["recipe"]["requester-chest"].ingredients =
   PM.ingredient("advanced-circuit", 1),
   PM.ingredient("pm-stainless-steel-chest", 1)
 }
+data.raw["recipe"]["satellite"].ingredients =
+{
+    PM.ingredient("pm-solar-panel-3", 20),
+    PM.ingredient("rocket-fuel", 25),
+    PM.ingredient("pm-gyroscope", 1),
+    PM.ingredient("pm-radiation-resistant-panelling", 36),
+    PM.ingredient("pm-gold-plate", 12)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
