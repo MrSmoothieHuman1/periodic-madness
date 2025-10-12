@@ -4747,4 +4747,22 @@ data:extend({
       PM.product("pm-YAG-laser-head", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-space-processing-unit",
+    enabled = false,
+    energy_required = 12,
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-advanced-processing-unit", 1),
+        PM.ingredient("pm-fluid-circuit", 1),
+        PM.ingredient("pm-aluminium-plate", 6),
+        PM.ingredient("pm-polyethylene-plastic", 12)
+    },
+    results = 
+    {
+        PM.product("pm-space-processing-unit", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

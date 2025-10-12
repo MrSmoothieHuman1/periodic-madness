@@ -6706,6 +6706,36 @@ data:extend({
       time = 120
     }
   },
+  {
+    type = "technology",
+    name = "pm-space-processing-units",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-space-processing-unit")
+    },
+    prerequisites = {"space-science-pack"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    }
+  },
 --MARK: AC science
 --MARK: LA science
 
