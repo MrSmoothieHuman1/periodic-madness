@@ -840,7 +840,8 @@ data.raw["recipe"]["satellite"].ingredients =
     PM.ingredient("rocket-fuel", 25),
     PM.ingredient("pm-gyroscope", 1),
     PM.ingredient("pm-radiation-resistant-panelling", 36),
-    PM.ingredient("pm-gold-plate", 12)
+    PM.ingredient("pm-gold-plate", 12),
+    PM.ingredient("pm-advanced-processing-unit", 10)
 }
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
