@@ -1707,7 +1707,7 @@ data:extend({
     type = "item",
     name = "pm-cut-garnet",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    icon = "__periodic-madness__/graphics/icons/cut-garnet-rod.png",
     subgroup = "pm-garnet-ptm",
     order = "c",
     stack_size = 200
@@ -1716,7 +1716,7 @@ data:extend({
     type = "item",
     name = "pm-YAG-laser",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/cut-ruby-rod.png",
+    icon = "__periodic-madness__/graphics/icons/YAG-laser.png",
     subgroup = "pm-garnet-ptm",
     order = "d",
     stack_size = 200
