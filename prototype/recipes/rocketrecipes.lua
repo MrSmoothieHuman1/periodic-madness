@@ -119,8 +119,29 @@ data:extend({
     {
         PM.product("pm-heat-shielding", 3)
     }
+  },
+--MARK: Rocket launchables
+  {
+    type = "recipe",
+    name = "pm-space-processing-unit-satellite",
+    enabled = false,
+    energy_required = 15,
+    subgroup = "pm-rocket-launchables",
+    order = "b",
+    ingredients =
+    {
+        PM.ingredient("pm-solar-panel-3", 20),
+        PM.ingredient("rocket-fuel", 25),
+        PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("pm-radiation-resistant-panelling", 24),
+        PM.ingredient("pm-gold-plate", 12),
+        PM.ingredient("pm-space-processing-unit", 5)
+    },
+    results =
+    {
+        PM.product("satellite", 1)
+    }
   }
-
 --MARK: Rocket recipes
 })
 

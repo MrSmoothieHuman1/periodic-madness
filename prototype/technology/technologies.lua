@@ -6713,7 +6713,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        PM.unlock_recipe("pm-space-processing-unit")
+        PM.unlock_recipe("pm-space-processing-unit"),
+        PM.unlock_recipe("pm-space-processing-unit-satellite")
     },
     prerequisites = {"space-science-pack"},
     unit =
