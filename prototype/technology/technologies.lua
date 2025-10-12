@@ -4812,6 +4812,7 @@ data:extend({
       PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
       PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
       PM.unlock_recipe("pm-filtered-anode-sludge"),
+      PM.unlock_recipe("pm-acetone"),
       PM.unlock_recipe("pm-ruthenium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-ammonium-ruthenium-chloride"),
       PM.unlock_recipe("pm-ruthenium-ore"),
@@ -5985,6 +5986,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/selenium-sulfur-battery.png",
     effects =
     {
+      PM.unlock_recipe("pm-lead-fluoride"),
       PM.unlock_recipe("pm-selenium-sulfur-battery")
     },
     prerequisites = {"pm-selenium-processing"},
