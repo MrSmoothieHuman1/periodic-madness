@@ -843,6 +843,7 @@ data.raw["recipe"]["satellite"].ingredients =
     PM.ingredient("pm-gold-plate", 12),
     PM.ingredient("pm-advanced-processing-unit", 10)
 }
+data.raw["recipe"]["satellite"].energy_required = 15
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
