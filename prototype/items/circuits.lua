@@ -222,6 +222,15 @@ data:extend({
     order = "j",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-space-processing-unit",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/advanced-processing-unit.png",
+    subgroup = "pm-circuits",
+    order = "j",
+    stack_size = 200
+  },
 })
 
 local GreenCircuitMove = data.raw["item"]["electronic-circuit"]
