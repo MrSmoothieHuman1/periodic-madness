@@ -9893,6 +9893,53 @@ fluid_boxes =
     fade_out_ticks = 20
   },
 }--[[@as data.AssemblingMachinePrototype]],
+{
+    type = "electric-energy-interface",
+    name = "pm-hydroelectric-plant",
+    icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
+    icon_size = 64,
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.3, result = "pm-solar-panel-2" },
+    max_health = 400 + 1,
+    corpse = "pm-solar-panel-2-remnants",
+    dying_explosion = "solar-panel-explosion",
+    collision_box = { { -1.4, -2.4 }, { 1.4, 1.4 } },
+    selection_box = { { -1.5, -2.5 }, { 1.5, 2.5 } },
+    tile_buildability_rules =
+    {
+      {area = {{-0.4, -0.4}, {0.4, 0.4}}, required_tiles = {layers={ground_tile=true}}, colliding_tiles = {layers={water_tile=true}}, remove_on_collision = true}, --part that checks for ground
+      {area = {{-2, -3}, {2, -1}}, required_tiles = {layers={water_tile=true}}, colliding_tiles = {layers={}}}, --part that checks for water
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-output",
+    },
+    picture =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-2/solar-panel.png",
+          priority = "high",
+          width = 230,
+          height = 224,
+          shift = util.by_pixel(-3, 3.5),
+          scale = 0.5
+        },
+        {
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
+          priority = "high",
+          width = 220,
+          height = 180,
+          shift = util.by_pixel(9.5, 6),
+          draw_as_shadow = true,
+          scale = 0.5
+        }
+      }
+    },
+    energy_production = "330kW"
+  },
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
