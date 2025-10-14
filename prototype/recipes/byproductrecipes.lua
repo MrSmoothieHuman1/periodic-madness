@@ -39,7 +39,7 @@ data:extend({
     results =
     {
       PM.product_chance("iron-ore", 2, 0.75),
-      PM.product_range("pm-acidic-water", 10, 12.5, "fluid"),
+      PM.product_range("pm-acidic-water", 5, 7.5, "fluid"),
     }
   },
   {
@@ -79,7 +79,7 @@ data:extend({
     results =
     {
       PM.product_chance("copper-ore", 2, 0.75),
-      PM.product_range("pm-acidic-water", 10, 12.5, "fluid"),
+      PM.product_range("pm-acidic-water", 5, 7.5, "fluid"),
     }
   },
   {
