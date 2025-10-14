@@ -1601,7 +1601,12 @@ data:extend({
   {
     type = "item",
     name = "pm-ammonium-nitrate",
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/ammonium-nitrate.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ammonium-nitrate.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ammonium-nitrate-2.png", size = 64, scale = 0.5 },
+    },
     icon_size = 64,
     subgroup = "pm-rocket-fuels",
     order = "a",
