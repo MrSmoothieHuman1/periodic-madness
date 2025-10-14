@@ -4768,6 +4768,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-advanced-processing-breadboard",
+    energy_required = 9,
+    category = "crafting-with-fluid", 
+    additional_categories = {"pm-circuit-boards"},
+    subgroup = "pm-circuits",
+    order = "k",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-ferric-chloride", 5, "fluid"),
+      PM.ingredient("pm-etched-silicon-wafer", 3),
+      PM.ingredient("pm-processing-breadboard", 1),
+    },
+    results = {
+      PM.product("pm-advanced-processing-breadboard", 1)
+    },
+  },
+  {
+    type = "recipe",
     name = "pm-advanced-processing-unit",
     enabled = false,
     energy_required = 12,
@@ -4775,7 +4795,12 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-sterling-silver-wire", 3)
+        PM.ingredient("pm-sterling-silver-wire", 3),
+        PM.ingredient("pm-advanced-processing-breadboard", 1),
+        PM.ingredient("pm-semiconductor", 3),
+        PM.ingredient("pm-solder", 4),
+        PM.ingredient("pm-transistors", 20),
+        PM.ingredient("pm-advanced-processing-integrated-circuits", 3)
     },
     results =
     {

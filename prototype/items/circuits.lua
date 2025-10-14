@@ -106,6 +106,44 @@ data:extend({
 
   {
     type = "item",
+    name = "pm-advanced-processing-breadboard",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/processing-breadboard.png",
+    subgroup = "pm-circuits",
+    order = "m",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-advanced-processing-integrated-circuits",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/processing-integrated-circuits.png",
+    subgroup = "pm-circuits",
+    order = "n",
+    stack_size = 250
+  },
+  {
+    type = "item",
+    name = "pm-advanced-processing-unit",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/advanced-processing-unit.png",
+    subgroup = "pm-circuits",
+    order = "j",
+    stack_size = 200
+  },
+  
+  {
+    type = "item",
+    name = "pm-space-processing-unit",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
+    subgroup = "pm-circuits",
+    order = "j",
+    stack_size = 200
+  },
+
+  {
+    type = "item",
     name = "pm-circuit-mold",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/circuitboard-mold.png",
@@ -211,25 +249,6 @@ data:extend({
     subgroup = "pm-circuits",
     order = "i",
     stack_size = 25,
-  },
-
-  {
-    type = "item",
-    name = "pm-advanced-processing-unit",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/advanced-processing-unit.png",
-    subgroup = "pm-circuits",
-    order = "j",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "pm-space-processing-unit",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
-    subgroup = "pm-circuits",
-    order = "j",
-    stack_size = 200
   },
 })
 

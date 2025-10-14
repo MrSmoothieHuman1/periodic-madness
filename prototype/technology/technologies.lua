@@ -6193,9 +6193,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        PM.unlock_recipe("pm-sterling-silver-wire")
+        PM.unlock_recipe("pm-sterling-silver-wire"),
+        PM.unlock_recipe("pm-advanced-processing-breadboard"),
+        PM.unlock_recipe("pm-advanced-processing-unit")
     },
-    prerequisites = {"pm-electronic-laser-etcher", "pm-sterling-silver-processing", "processing-unit"},
+    prerequisites = {"pm-electronic-laser-etcher", "pm-sterling-silver-processing", "processing-unit", "pm-silicon-processing"},
     unit =
     {
       count = 700,
