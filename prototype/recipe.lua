@@ -4770,7 +4770,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-processing-breadboard",
     energy_required = 9,
-    category = "crafting-with-fluid", 
+    category = "crafting-with-fluid",
     additional_categories = {"pm-circuit-boards"},
     subgroup = "pm-circuits",
     order = "k",
@@ -4805,6 +4805,26 @@ data:extend({
     results =
     {
         PM.product("pm-advanced-processing-unit", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-gyroscope",
+    enabled = false,
+    energy_required = 20,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("low-density-structure", 4),
+        PM.ingredient("pm-advanced-processing-unit", 2),
+        PM.ingredient("pm-rhodium-plate", 6),
+        PM.ingredient("pm-light-lubricant", 2.5, "fluid"),
+        PM.ingredient("pm-advanced-electric-engine-unit", 1)
+    },
+    results = 
+    {
+        PM.product("pm-gyroscope", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

@@ -6222,10 +6222,11 @@ data:extend({
     name = "pm-gyroscope",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
+        PM.unlock_recipe("pm-gyroscope")
     },
-    prerequisites = {"pm-advanced-processing-unit", "pm-advanced-electric-engine-unit"},
+    prerequisites = {"pm-advanced-processing-unit", "pm-advanced-electric-engine-unit", "low-density-structure"},
     unit =
     {
       count = 600,
