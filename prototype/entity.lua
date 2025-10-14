@@ -8975,7 +8975,7 @@ fluid_boxes =
         }
       }
     },
-    crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid"},
+    crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid", "pm-circuitry"},
     crafting_speed = 1.75,
     energy_source =
     {
