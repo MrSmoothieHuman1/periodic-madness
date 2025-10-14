@@ -9903,12 +9903,12 @@ fluid_boxes =
     max_health = 400 + 1,
     corpse = "pm-solar-panel-2-remnants",
     dying_explosion = "solar-panel-explosion",
-    collision_box = { { -1.4, -2.4 }, { 1.4, 2.4 } },
-    selection_box = { { -1.5, -2.5 }, { 1.5, 2.5 } },
+    collision_box = { { -1.4, -1.05 }, { 1.4, 0.3 } },
+    selection_box = { { -1.5, -2.49 }, { 1.5, 1.49 } },
     tile_buildability_rules =
     {
-      {area = {{-1.4, -1.4}, {1.4, 1.4}}, required_tiles = {layers={ground_tile=true}}, colliding_tiles = {layers={water_tile=true}}, remove_on_collision = true}, --part that checks for ground
-      {area = {{-2, -3}, {2, -2}}, required_tiles = {layers={water_tile=true}}, colliding_tiles = {layers={}}}, --part that checks for water
+      {area = {{-0.6, -0.6}, {0.6, 0.6}}, required_tiles = {layers={ground_tile=true}}, colliding_tiles = {layers={water_tile=true}}, remove_on_collision = true}, --checks for ground
+      {area = {{-1.5, -2}, {1.5, 1.5}}, required_tiles = {layers={water_tile=true}}, colliding_tiles = {layers={}}}, --checks for water {{-1 is west, -1 is north}, {1 is east, 1 is south}}
     },
     energy_source =
     {
