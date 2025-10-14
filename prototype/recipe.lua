@@ -4752,6 +4752,7 @@ data:extend({
     name = "pm-space-processing-unit",
     enabled = false,
     energy_required = 12,
+    category = "pm-circuitry",
     allow_productivity = true,
     ingredients = 
     {
