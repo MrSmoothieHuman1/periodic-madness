@@ -4765,5 +4765,21 @@ data:extend({
     {
         PM.product("pm-space-processing-unit", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-processing-unit",
+    enabled = false,
+    energy_required = 12,
+    category = "pm-circuitry",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-sterling-silver-wire", 3)
+    },
+    results =
+    {
+        PM.product("pm-advanced-processing-unit", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
