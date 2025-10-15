@@ -1624,7 +1624,12 @@ data:extend({
   {
     type = "item",
     name = "pm-hexamethyleneteramine",
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/hexamethyleneteramine.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/hexamethyleneteramine.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/hexamethyleneteramine-2.png", size = 64, scale = 0.5 },
+    },
     icon_size = 64,
     subgroup = "pm-rocket-fuels",
     order = "d",
