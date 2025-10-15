@@ -1633,7 +1633,7 @@ data:extend({
   {
     type = "item",
     name = "pm-HMX",
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/HMX.png",
     icon_size = 64,
     subgroup = "pm-rocket-fuels",
     order = "e",
