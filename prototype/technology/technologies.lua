@@ -6604,7 +6604,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-nitrogen-dioxide"),
+        PM.unlock_recipe("pm-dinitrogen-tetroxide")
     },
     prerequisites = {"space-science-pack"},
     unit =

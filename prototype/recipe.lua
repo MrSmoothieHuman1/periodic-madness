@@ -4836,7 +4836,7 @@ data:extend({
     allow_productivity = true,
     ingredients = 
     {
-        PM.ingredient("pm-nitrogen-oxide", 10, "fluid"),
+        PM.ingredient("pm-nitric-oxide", 10, "fluid"),
         PM.ingredient("steam", 25, "fluid")
     },
     results =

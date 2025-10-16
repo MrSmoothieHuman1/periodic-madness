@@ -1969,6 +1969,28 @@ data:extend({
     base_color = {r = 0.28, g = 0.39, b = 0.64},
     flow_color = {r = 0.28, g = 0.39, b = 0.64},
   },
+  {
+    type = "fluid",
+    name = "pm-nitrogen-dioxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nitric-oxide.png",
+    subgroup = "pm-nb-nb",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.28, g = 0.39, b = 0.64},
+    flow_color = {r = 0.28, g = 0.39, b = 0.64},
+  },
+  {
+    type = "fluid",
+    name = "pm-dinitrogen-tetroxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nitric-oxide.png",
+    subgroup = "pm-nb-nb",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 0.28, g = 0.39, b = 0.64},
+    flow_color = {r = 0.28, g = 0.39, b = 0.64},
+  },
 
 	{
 		type = "fluid",
