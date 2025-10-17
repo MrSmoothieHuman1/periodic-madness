@@ -150,7 +150,7 @@ data:extend({
     name = "pm-liquid-fuel-rocket-part",
     enabled = false,
     energy_required = 3,
-    category = "rocket-crafting",
+    category = "rocket-building",
     subgroup = "pm-rocket-recipes",
     order = "b",
     allow_productivity = true,
@@ -164,7 +164,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("rocker-part", 1)
+        PM.product("rocket-part", 1)
     }
   }
 })
