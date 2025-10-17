@@ -120,6 +120,7 @@ data:extend({
         PM.product("pm-heat-shielding", 3)
     }
   },
+
 --MARK: Rocket launchables
   {
     type = "recipe",
@@ -141,8 +142,31 @@ data:extend({
     {
         PM.product("satellite", 1)
     }
-  }
+  },
+
 --MARK: Rocket recipes
+  {
+    type = "recipe",
+    name = "pm-liquid-fuel-rocket-part",
+    enabled = false,
+    energy_required = 3,
+    category = "rocket-crafting",
+    subgroup = "pm-rocket-recipes",
+    order = "b",
+    allow_productivity = true,
+    ingredients = 
+    {
+        --PM.ingredient("pm-liquid-rocket-fuel", 5),
+        --PM.ingredient("pm-rocket-oxidisier", 5),
+        PM.ingredient("pm-rocket-control-unit", 5),
+        PM.ingredient("pm-rocket-cladding-parts", 8),
+        PM.ingredient("pm-rocket-nozzle-parts", 8)
+    },
+    results = 
+    {
+        PM.product("rocker-part", 1)
+    }
+  }
 })
 
 data.raw["recipe"]["rocket-part"].subgroup = "pm-rocket-recipes"

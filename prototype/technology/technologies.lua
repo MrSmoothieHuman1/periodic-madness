@@ -6605,7 +6605,8 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-nitrogen-dioxide"),
-        PM.unlock_recipe("pm-dinitrogen-tetroxide")
+        PM.unlock_recipe("pm-dinitrogen-tetroxide"),
+        PM.unlock_recipe("pm-liquid-fuel-rocket-part")
     },
     prerequisites = {"space-science-pack"},
     unit =
