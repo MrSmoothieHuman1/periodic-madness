@@ -17,3 +17,8 @@ data:extend({
     research_with = {"pm-noble-gas-science-pack"}
   }
 })
+
+data.raw["complete-objective-achievement"]["there-is-no-spoon"].within = 100 * hour
+data.raw["complete-objective-achievement"]["no-time-for-chitchat"].within = 150 * hour
+data.raw["complete-objective-achievement"]["there-is-no-spoon"].allowed_without_fight = true
+data.raw["complete-objective-achievement"]["no-time-for-chitchat"].allowed_without_fight = true
