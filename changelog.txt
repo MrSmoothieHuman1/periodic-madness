@@ -12,7 +12,7 @@ Date: 2025-28-09
     - Added the final tier of circuits, which'll unlock the most powerful machines and recipes for you to use.
     - Added the Electronic laser etcher - which is required to make purple circuits and can produce all breadboard recipes.
     - Added the YAG (Yttrium Aluminium Garnet) laser, which is used in the electronic laser etcher.
-    - Added new achievements: Legacy code, Nuclear power? no thanks,
+    - Added new achievements: Legacy code, Nuclear power? no thanks, and all the "Research with X" achievements.
     - Added MK2 selenium battery equipment.
 
   Changes:

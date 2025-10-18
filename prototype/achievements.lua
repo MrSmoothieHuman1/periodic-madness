@@ -16,7 +16,7 @@ data:extend({
     dont_research = {"processing-unit"},
     research_with = {"pm-noble-gas-science-pack"}
   },
-{
+  {
     type = "dont-use-entity-in-energy-production-achievement",
     name = "pm-nuclear-power-no-thanks",
     icon_size = 128,
@@ -24,6 +24,56 @@ data:extend({
     excluded = {"steam-engine", "steam-turbine", "solar-panel", "pm-solar-panel-2", "pm-solar-panel-3", "pm-hydroelectric-plant"},
     included = {"nuclear-reactor", "pm-polonium-reactor", "pm-RTG"},
     objective_condition = "rocket-launched",
+  },
+
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-advanced-advanced-transition-metals",
+    icon_size = 128,
+    icon = "__base__/graphics/achievement/research-with-utility.png",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+  },
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-post-transition-metals",
+    icon_size = 128,
+    icon = "__base__/graphics/achievement/research-with-chemicals.png",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+  },
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-metalloids",
+    icon_size = 128,
+    icon = "__base__/graphics/achievement/research-with-production.png",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+  },
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-alkali-metals",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/research-with-alkali-metals.png",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+  },
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-advanced-advanced-advanced-transition-metals",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/research-with-advanced-advanced-advanced-transition-metals.png",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+  },
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-alkaline-earth-metals",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/research-with-alkaline-earth-metals.png",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+  },
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-noble-gas",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/research-with-noble-gas.png",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
   },
 })
 
