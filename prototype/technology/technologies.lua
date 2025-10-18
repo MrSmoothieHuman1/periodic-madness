@@ -6398,7 +6398,7 @@ data:extend({
     {
         PM.unlock_recipe("satellite")
     },
-    prerequisites = {"rocket-silo", "pm-gyroscope"},
+    prerequisites = {"rocket-silo", "pm-gyroscope", "pm-selenium-sulfur-battery"},
     unit =
     {
       count = 800,

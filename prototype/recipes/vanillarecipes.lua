@@ -841,7 +841,9 @@ data.raw["recipe"]["satellite"].ingredients =
     PM.ingredient("pm-gyroscope", 1),
     PM.ingredient("pm-radiation-resistant-panelling", 36),
     PM.ingredient("pm-gold-plate", 12),
-    PM.ingredient("pm-advanced-processing-unit", 10)
+    PM.ingredient("pm-advanced-processing-unit", 10),
+    PM.ingredient("pm-selenium-sulfur-battery", 20),
+    PM.ingredient("pm-rocket-control-unit", 5)
 }
 data.raw["recipe"]["satellite"].energy_required = 15
 

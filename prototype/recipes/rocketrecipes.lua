@@ -136,7 +136,9 @@ data:extend({
         PM.ingredient("pm-gyroscope", 1),
         PM.ingredient("pm-radiation-resistant-panelling", 24),
         PM.ingredient("pm-gold-plate", 12),
-        PM.ingredient("pm-space-processing-unit", 5)
+        PM.ingredient("pm-space-processing-unit", 5),
+        PM.ingredient("pm-selenium-sulfur-battery", 20),
+        PM.ingredient("pm-rocket-control-unit", 5)
     },
     results =
     {
