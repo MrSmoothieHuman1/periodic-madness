@@ -25,6 +25,7 @@ Date: 2025-28-09
     - Changed rocket fuels recipe to match what it actually should be.
     - Changed rocket fuel to have a stack size of 100.
     - Moved rocket control units into their correct subgroup.
+    - Seperated circuit recipes into circuits (green, orange, red) and processing units (blue, purple, grey).
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.000

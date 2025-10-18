@@ -93,8 +93,6 @@ data:extend({
     energy_required = 2,
     category = "crafting", 
     additional_categories = {"pm-circuit-boards"},
-    subgroup = "pm-circuits",
-    order = "a",
     allow_productivity = true,
     enabled = false,
     ingredients =
@@ -110,8 +108,6 @@ data:extend({
     type = "recipe",
     name = "pm-electronic-integrated-circuits",
     energy_required = 0.25,
-    subgroup = "pm-circuits",
-    order = "b",
     show_amount_in_title = true,
     allow_productivity = true,
     enabled = false,
@@ -134,8 +130,6 @@ data:extend({
     energy_required = 3,
     category = "crafting", 
     additional_categories = {"pm-circuit-boards"},
-    subgroup = "pm-circuits",
-    order = "d",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -152,8 +146,6 @@ data:extend({
     type = "recipe",
     name = "pm-transistors",
     energy_required = 0.6,
-    subgroup = "pm-circuits",
-    order = "e",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -170,8 +162,6 @@ data:extend({
     type = "recipe",
     name = "pm-fluid-integrated-circuits",
     energy_required = 0.5,
-    subgroup = "pm-circuits",
-    order = "f",
     show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
@@ -196,8 +186,6 @@ data:extend({
     energy_required = 1.5,
     enabled = false,
     category = "pm-circuitry",
-    subgroup = "pm-circuits",
-    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -217,8 +205,6 @@ data:extend({
     energy_required = 6,
     category = "crafting", 
     additional_categories = {"pm-circuit-boards"},
-    subgroup = "pm-circuits",
-    order = "h",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -235,8 +221,6 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-integrated-circuits",
     energy_required = 0.5,
-    subgroup = "pm-circuits",
-    order = "i",
     show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
@@ -250,16 +234,12 @@ data:extend({
     }
   },
 
-  --red circuits are order "j" in pm-circuits
-
   {
     type = "recipe",
     name = "pm-processing-breadboard",
     energy_required = 9,
     category = "crafting-with-fluid", 
     additional_categories = {"pm-circuit-boards"},
-    subgroup = "pm-circuits",
-    order = "k",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -277,8 +257,6 @@ data:extend({
     type = "recipe",
     name = "pm-processing-integrated-circuits",
     energy_required = 1,
-    subgroup = "pm-circuits",
-    order = "l",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -298,8 +276,6 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "crafting-with-fluid",
-    subgroup = "pm-circuits",
-    order = "n",
     allow_productivity = true,
     ingredients =
     {
@@ -329,9 +305,6 @@ data:extend({
       PM.product("pm-indium-wire", 2)
     }
   },
-
-  --processing units are order "o"
-
   {
     type = "recipe",
     name = "pm-science-bottle",
@@ -1568,7 +1541,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "pm-acids",
-    subgroup = "pm-circuits",
+    subgroup = "pm-processing-units",
     ingredients =
     {
       PM.ingredient("pm-ferrum", 4),
@@ -1596,7 +1569,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "pm-acids",
-    subgroup = "pm-circuits",
+    subgroup = "pm-processing-units",
     ingredients =
     {
       PM.ingredient("iron-plate", 4),
@@ -1613,8 +1586,8 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/better-transistors.png",
     enabled = false,
-    subgroup = "pm-circuits",
-    order = "m",
+    subgroup = "pm-processing-units",
+    order = "ba",
     energy_required = 0.6,
     allow_productivity = true,
     ingredients =
@@ -4772,8 +4745,6 @@ data:extend({
     energy_required = 9,
     category = "crafting-with-fluid",
     additional_categories = {"pm-circuit-boards"},
-    subgroup = "pm-circuits",
-    order = "k",
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -4781,6 +4752,7 @@ data:extend({
       PM.ingredient("pm-ferric-chloride", 5, "fluid"),
       PM.ingredient("pm-etched-silicon-wafer", 3),
       PM.ingredient("pm-processing-breadboard", 1),
+      PM.ingredient("pm-cadmium-red", 6)
     },
     results = {
       PM.product("pm-advanced-processing-breadboard", 1)

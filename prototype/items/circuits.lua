@@ -20,6 +20,7 @@ data:extend({
     order = "b",
     stack_size = 250
   },
+  --green circuits are 'c'
 
   {
     type = "item",
@@ -39,7 +40,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluid-integrated-circuits.png",
     subgroup = "pm-circuits",
-    order = "f",
+    order = "e",
     stack_size = 250
   },
   {
@@ -53,7 +54,7 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/transistors-2.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-circuits",
-    order = "e",
+    order = "f",
     stack_size = 500
   },
   {
@@ -81,17 +82,27 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-integrated-circuits.png",
     subgroup = "pm-circuits",
-    order = "j",
+    order = "i",
     stack_size = 250
   },
+  {
+    type = "item",
+    name = "pm-solder",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/solder.png",
+    subgroup = "pm-circuits",
+    order = "j",
+    stack_size = 75,
+  },
+  --red circuits are 'k'
 
   {
     type = "item",
     name = "pm-processing-breadboard",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/processing-breadboard.png",
-    subgroup = "pm-circuits",
-    order = "m",
+    subgroup = "pm-processing-units",
+    order = "a",
     stack_size = 100
   },
   {
@@ -99,9 +110,18 @@ data:extend({
     name = "pm-processing-integrated-circuits",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/processing-integrated-circuits.png",
-    subgroup = "pm-circuits",
-    order = "n",
+    subgroup = "pm-processing-units",
+    order = "b",
     stack_size = 250
+  },
+  {
+    type = "item",
+    name = "pm-semiconductor",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/semiconfuctors.png",
+    subgroup = "pm-processing-units",
+    order = "c",
+    stack_size = 25,
   },
 
   {
@@ -109,8 +129,8 @@ data:extend({
     name = "pm-advanced-processing-breadboard",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/processing-breadboard.png",
-    subgroup = "pm-circuits",
-    order = "m",
+    subgroup = "pm-processing-units",
+    order = "e",
     stack_size = 100
   },
   {
@@ -118,8 +138,8 @@ data:extend({
     name = "pm-advanced-processing-integrated-circuits",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/processing-integrated-circuits.png",
-    subgroup = "pm-circuits",
-    order = "n",
+    subgroup = "pm-processing-units",
+    order = "f",
     stack_size = 250
   },
   {
@@ -127,8 +147,8 @@ data:extend({
     name = "pm-advanced-processing-unit",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/advanced-processing-unit.png",
-    subgroup = "pm-circuits",
-    order = "j",
+    subgroup = "pm-processing-units",
+    order = "h",
     stack_size = 200
   },
   
@@ -137,8 +157,8 @@ data:extend({
     name = "pm-space-processing-unit",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
-    subgroup = "pm-circuits",
-    order = "j",
+    subgroup = "pm-processing-units",
+    order = "i",
     stack_size = 200
   },
 
@@ -232,35 +252,11 @@ data:extend({
     order = "j",
     stack_size = 50,
   },
-  {
-    type = "item",
-    name = "pm-solder",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/solder.png",
-    subgroup = "pm-circuits",
-    order = "i",
-    stack_size = 75,
-  },
-  {
-    type = "item",
-    name = "pm-semiconductor",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/semiconfuctors.png",
-    subgroup = "pm-circuits",
-    order = "i",
-    stack_size = 25,
-  },
 })
+data.raw["item"]["electronic-circuit"].subgroup = "pm-circuits"
+data.raw["item"]["electronic-circuit"].order = "c"
+data.raw["item"]["advanced-circuit"].subgroup = "pm-circuits"
+data.raw["item"]["advanced-circuit"].order = "k"
 
-local GreenCircuitMove = data.raw["item"]["electronic-circuit"]
-
-GreenCircuitMove.subgroup = "pm-circuits"
-GreenCircuitMove.order = "c"
-
-local RedCircuitMove = data.raw["item"]["advanced-circuit"]
-
-RedCircuitMove.subgroup = "pm-circuits"
-RedCircuitMove.order = "k"
-
-data.raw["item"]["processing-unit"].subgroup = "pm-circuits"
-data.raw["item"]["processing-unit"].order = "o"
+data.raw["item"]["processing-unit"].subgroup = "pm-processing-units"
+data.raw["item"]["processing-unit"].order = "d"

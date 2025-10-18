@@ -470,15 +470,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-processing-units",
+    group = "intermediate-products",
+    order = "n"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-advanced-circuits",
     group = "intermediate-products",
-    order = "ma"
+    order = "o"
   },
   {
     type = "item-subgroup",
     name = "pm-molded-circuits",
     group = "intermediate-products",
-    order = "n"
+    order = "p"
   },
 
   --MARK: Voiding
