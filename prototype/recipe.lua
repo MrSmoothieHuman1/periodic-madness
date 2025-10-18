@@ -4752,7 +4752,7 @@ data:extend({
       PM.ingredient("pm-ferric-chloride", 5, "fluid"),
       PM.ingredient("pm-etched-silicon-wafer", 3),
       PM.ingredient("pm-processing-breadboard", 1),
-      PM.ingredient("pm-cadmium-red", 6)
+      PM.ingredient("pm-cadnium-red", 6)
     },
     results = {
       PM.product("pm-advanced-processing-breadboard", 1)
