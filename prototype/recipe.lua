@@ -1686,7 +1686,7 @@ data:extend({
       PM.ingredient("pm-cobalt-blue", 5),
       PM.ingredient("speed-module", 1),
       PM.ingredient("pm-advanced-speed-module-light", 1),
-      PM.ingredient("pm-fluid-circuit", 8),
+      PM.ingredient("advanced-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
     results =
@@ -1706,7 +1706,7 @@ data:extend({
       PM.ingredient("pm-chrome-green", 5),
       PM.ingredient("efficiency-module", 1),
       PM.ingredient("pm-advanced-efficiency-module-light", 1),
-      PM.ingredient("pm-fluid-circuit", 8),
+      PM.ingredient("advanced-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
     results =
@@ -1726,7 +1726,7 @@ data:extend({
       PM.ingredient("pm-cadnium-red", 5),
       PM.ingredient("productivity-module", 1),
       PM.ingredient("pm-advanced-productivity-module-light", 1),
-      PM.ingredient("pm-fluid-circuit", 8),
+      PM.ingredient("advanced-circuit", 8),
       PM.ingredient("processing-unit", 8)
     },
     results =
@@ -4853,6 +4853,66 @@ data:extend({
     results =
     {
       PM.product("pm-advanced-processing-integrated-circuits", 3)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-speed-module-5",
+    enabled = false,
+    energy_required = 30,
+    subgroup = "pm-speed",
+    order = "e",
+    ingredients =
+    {
+      PM.ingredient("pm-cobalt-blue", 5),
+      PM.ingredient("speed-module-2", 1),
+      PM.ingredient("pm-speed-module-light", 1),
+      PM.ingredient("pm-advanced-processing-unit", 9),
+      PM.ingredient("processing-unit", 9)
+    },
+    results =
+    {
+      PM.product("pm-speed-module-4", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-efficiency-module-5",
+    enabled = false,
+    energy_required = 30,
+    subgroup = "pm-efficiency",
+    order = "e",
+    ingredients =
+    {
+      PM.ingredient("pm-chrome-green", 5),
+      PM.ingredient("efficiency-module-2", 1),
+      PM.ingredient("pm-efficiency-module-light", 1),
+      PM.ingredient("pm-advanced-processing-unit", 9),
+      PM.ingredient("processing-unit", 9)
+    },
+    results =
+    {
+      PM.product("pm-efficiency-module-4", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-productivity-module-5",
+    enabled = false,
+    energy_required = 30,
+    subgroup = "pm-productivity",
+    order = "e",
+    ingredients =
+    {
+      PM.ingredient("pm-cadnium-red", 5),
+      PM.ingredient("productivity-module-2", 1),
+      PM.ingredient("pm-productivity-module-light", 1),
+      PM.ingredient("pm-advanced-processing-unit", 9),
+      PM.ingredient("processing-unit", 9)
+    },
+    results =
+    {
+      PM.product("pm-productivity-module-4", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

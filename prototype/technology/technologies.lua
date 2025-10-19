@@ -6637,8 +6637,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/speed-module-5-tech.png",
     effects = 
     {
+        PM.unlock_recipe("pm-speed-module-5")
     },
-    prerequisites = {"pm-speed-module-4", "pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-speed-module-4", "pm-advanced-processing-unit"},
     unit =
     {
       count = 800,
@@ -6665,8 +6666,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/efficiency-module-5-tech.png",
     effects = 
     {
+        PM.unlock_recipe("pm-efficiency-module-5")
     },
-    prerequisites = {"pm-efficiency-module-4", "pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-efficiency-module-4", "pm-advanced-processing-unit"},
     unit =
     {
       count = 800,
@@ -6693,8 +6695,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/productivity-module-5-tech.png",
     effects = 
     {
+        PM.unlock_recipe("pm-productivity-module-5")
     },
-    prerequisites = {"pm-productivity-module-4", "pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-productivity-module-4", "pm-advanced-processing-unit"},
     unit =
     {
       count = 800,
