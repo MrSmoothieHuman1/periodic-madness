@@ -137,7 +137,7 @@ data:extend({
     type = "item",
     name = "pm-advanced-processing-integrated-circuits",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/processing-integrated-circuits.png",
+    icon = "__periodic-madness__/graphics/icons/advanced-processing-integrated-circuits.png",
     subgroup = "pm-processing-units",
     order = "f",
     stack_size = 250
