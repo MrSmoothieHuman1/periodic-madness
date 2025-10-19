@@ -4836,4 +4836,23 @@ data:extend({
         PM.product_chance("copper-plate", 4, 0.85)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-advanced-processing-integrated-circuits",
+    energy_required = 1,
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-etched-silicon-wafer", 1),
+      PM.ingredient("pm-germanium-ore", 4),
+      PM.ingredient("pm-tungsten-plate", 2),
+      PM.ingredient("pm-gallium-arsenide", 3),
+      PM.ingredient("pm-sterling-silver-wire", 3),
+    },
+    results =
+    {
+      PM.product("pm-advanced-processing-integrated-circuits", 3)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
