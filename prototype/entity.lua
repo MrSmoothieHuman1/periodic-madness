@@ -9969,7 +9969,7 @@ fluid_boxes =
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
-      volume = 500,
+      volume = 250,
       filter = "water",
       pipe_connections = 
       {
@@ -9981,7 +9981,7 @@ fluid_boxes =
     {
       production_type = "output",
       pipe_covers = pipecoverspictures(),
-      volume = 500,
+      volume = 250,
       filter = "steam",
       pipe_connections = 
       {
