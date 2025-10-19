@@ -1904,6 +1904,10 @@ data:extend({
   {
     type = "fuel-category",
     name = "pm-strontium-fuel-rods"
+  },
+  {
+    type = "fuel-category",
+    name = "pm-geothermal-bore"
   }
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"

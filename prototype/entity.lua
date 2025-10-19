@@ -9940,6 +9940,81 @@ fluid_boxes =
     },
     energy_production = "330kW"
   },
+  {
+    type = "fusion-reactor",
+    name = "pm-geothermal-plant",
+    icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
+    icon_size = 64,
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "pm-solar-panel-2" },
+    max_health = 1000,
+    corpse = "pm-solar-panel-2-remnants",
+    dying_explosion = "solar-panel-explosion",
+    collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
+    selection_box = { { -3, -3 }, { 3, 3 } },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-output",
+    },
+    power_input = "500kW",
+    burner = 
+    {
+        type = "burner",
+        fuel_inventory_size = 1,
+        fuel_categories = {"pm-geothermal-bore"},
+        initial_fuel_percent = 0.01,
+    },
+    input_fluid_box = 
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      filter = "water",
+      pipe_connections = 
+      {
+        {flow_direction="input", direction = defines.direction.north --[[@as int]], position = {1.5, -2.5}}, --right input
+        {flow_direction="input", direction = defines.direction.north --[[@as int]], position = {-1.5, -2.5}} --left input
+      },
+    },
+    output_fluid_box = 
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      filter = "steam",
+      pipe_connections = 
+      {
+        {flow_direction="output", direction = defines.direction.south --[[@as int]], position = {-1.5, 2.5}}, --right input
+        {flow_direction="output", direction = defines.direction.south --[[@as int]], position = {1.5, 2.5}} --left input
+      },
+    },
+    max_fluid_usage = 1,
+    picture =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-2/solar-panel.png",
+          priority = "high",
+          width = 230,
+          height = 224,
+          shift = util.by_pixel(-3, 3.5),
+          scale = 0.5
+        },
+        {
+          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
+          priority = "high",
+          width = 220,
+          height = 180,
+          shift = util.by_pixel(9.5, 6),
+          draw_as_shadow = true,
+          scale = 0.5
+        }
+      }
+    },
+    energy_production = "330kW"
+  },
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
