@@ -41,15 +41,7 @@ data:extend({
     name = "pm-research-with-post-transition-metals",
     icon_size = 128,
     icon = "__base__/graphics/achievement/research-with-chemicals.png",
-    order = "e[research]-a[research-with]-d[PTM]",
-    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
-  },
-  {
-    type = "research-with-science-pack-achievement",
-    name = "pm-research-with-metalloids",
-    icon_size = 128,
-    icon = "__base__/graphics/achievement/research-with-production.png",
-    order = "e[research]-a[research-with]-f[MT]",
+    order = "e[research]-a[research-with]-e[PTM]",
     science_pack = "pm-advanced-advanced-transition-metal-science-pack"
   },
   {
@@ -57,15 +49,15 @@ data:extend({
     name = "pm-research-with-alkali-metals",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/achievements/research-with-alkali-metals.png",
-    order = "e[research]-a[research-with]-g[AM]",
+    order = "e[research]-a[research-with]-f[AM]",
     science_pack = "pm-advanced-advanced-transition-metal-science-pack"
   },
   {
     type = "research-with-science-pack-achievement",
-    name = "pm-research-with-advanced-advanced-advanced-transition-metals",
+    name = "pm-research-with-metalloids",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/achievements/research-with-advanced-advanced-advanced-transition-metals.png",
-    order = "e[research]-a[research-with]-h[AAATM]",
+    icon = "__base__/graphics/achievement/research-with-production.png",
+    order = "e[research]-a[research-with]-g[MT]",
     science_pack = "pm-advanced-advanced-transition-metal-science-pack"
   },
   {
@@ -73,7 +65,15 @@ data:extend({
     name = "pm-research-with-alkaline-earth-metals",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/achievements/research-with-alkaline-earth-metals.png",
-    order = "e[research]-a[research-with]-i[AEM]",
+    order = "e[research]-a[research-with]-h[AEM]",
+    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+  },
+  {
+    type = "research-with-science-pack-achievement",
+    name = "pm-research-with-advanced-advanced-advanced-transition-metals",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/research-with-advanced-advanced-advanced-transition-metals.png",
+    order = "e[research]-a[research-with]-i[AAATM]",
     science_pack = "pm-advanced-advanced-transition-metal-science-pack"
   },
   {
@@ -91,10 +91,10 @@ data.raw["complete-objective-achievement"]["no-time-for-chitchat"].within = 150 
 data.raw["complete-objective-achievement"]["there-is-no-spoon"].allowed_without_fight = true
 data.raw["complete-objective-achievement"]["no-time-for-chitchat"].allowed_without_fight = true
 
-data.raw["research-with-science-pack-achievement"]["research-with-production"].hidden = true
-data.raw["research-with-science-pack-achievement"]["research-with-utility"].hidden = true
-data.raw["research-with-science-pack-achievement"]["research-with-military"].hidden = true
+data.raw["research-with-science-pack-achievement"]["research-with-production"] = nil
+data.raw["research-with-science-pack-achievement"]["research-with-utility"] = nil
+data.raw["research-with-science-pack-achievement"]["research-with-military"] = nil
 
-data.raw["research-with-science-pack-achievement"]["research-with-chemicals"].order = "e[research]-a[research-with]-e[RNM]"
+data.raw["research-with-science-pack-achievement"]["research-with-chemicals"].order = "e[research]-a[research-with]-d[RNM]"
 data.raw["research-with-science-pack-achievement"]["research-with-chemicals"].icon = "__base__/graphics/achievement/research-with-logistics.png"
 data.raw["research-with-science-pack-achievement"]["research-with-logistics"].icon = "__periodic-madness__/graphics/achievements/research-with-advanced-transition-metals.png"
