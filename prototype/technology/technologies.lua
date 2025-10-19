@@ -571,6 +571,27 @@ data:extend({
       time = 15
     }
   },
+  {
+    type = "technology",
+    name = "pm-hydroelectric-power",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/water-distillation-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-water-distillation", "pm-fluid-circuit"},
+    unit =
+    {
+      count = 75,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 30
+    }
+  },
 
 --MARK: A-ATM science
   {
