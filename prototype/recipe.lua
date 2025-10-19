@@ -4771,7 +4771,7 @@ data:extend({
         PM.ingredient("pm-advanced-processing-breadboard", 1),
         PM.ingredient("pm-semiconductor", 3),
         PM.ingredient("pm-solder", 4),
-        PM.ingredient("pm-transistors", 20),
+        PM.ingredient("pm-transistors", 25),
         PM.ingredient("pm-advanced-processing-integrated-circuits", 3)
     },
     results =
