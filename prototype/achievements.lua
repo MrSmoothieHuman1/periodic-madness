@@ -81,3 +81,7 @@ data.raw["complete-objective-achievement"]["there-is-no-spoon"].within = 100 * h
 data.raw["complete-objective-achievement"]["no-time-for-chitchat"].within = 150 * hour
 data.raw["complete-objective-achievement"]["there-is-no-spoon"].allowed_without_fight = true
 data.raw["complete-objective-achievement"]["no-time-for-chitchat"].allowed_without_fight = true
+
+data.raw["research-with-science-pack-achievement"]["research-with-production"].hidden = true
+data.raw["research-with-science-pack-achievement"]["research-with-utility"].hidden = true
+data.raw["research-with-science-pack-achievement"]["research-with-military"].hidden = true
