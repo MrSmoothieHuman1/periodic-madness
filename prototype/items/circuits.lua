@@ -128,7 +128,7 @@ data:extend({
     type = "item",
     name = "pm-advanced-processing-breadboard",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/processing-breadboard.png",
+    icon = "__periodic-madness__/graphics/icons/advanced-processing-breadboard.png",
     subgroup = "pm-processing-units",
     order = "e",
     stack_size = 100
