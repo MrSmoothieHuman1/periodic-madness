@@ -151,6 +151,119 @@ data:extend({
           }
         },
     },
+    {
+        type = "module",
+        name = "pm-speed-module-5",
+        localised_description = {"item-description.speed-module"},
+        icon = "__periodic-madness__/graphics/icons/modules/speed-module-5.png",
+        icon_size = 64,
+        subgroup = "pm-speed",
+        category = "speed",
+        tier = 5,
+        order = "e",
+        stack_size = 50,
+        effect = {speed = 1, consumption = 1.25},
+        beacon_tint =
+        {
+          primary = {r = 0.441, g = 0.514, b = 1.000, a = 1.000}, -- #70b6ffff
+          secondary = {r = 0.388, g = 0.766, b = 1.000, a = 1.000}, -- #63f8ffff
+        },
+        art_style = "vanilla",
+        requires_beacon_alt_mode = false,
+        pictures =
+        {
+          layers =
+            {
+              {
+                size = 64,
+                filename = "__periodic-madness__/graphics/icons/modules/speed-module-5.png",
+                scale = 0.5
+              },
+              {
+                draw_as_light = true,
+                flags = {"light"},
+                size = 64,
+                filename = "__periodic-madness__/graphics/light/speed-module-5-light.png",
+                scale = 0.5
+              }
+            }
+          },
+      },
+      {
+        type = "module",
+        name = "pm-efficiency-module-5",
+        localised_description = {"item-description.effectivity-module"},
+        icon = "__periodic-madness__/graphics/icons/modules/efficiency-module-5.png",
+        icon_size = 64,
+        subgroup = "pm-efficiency",
+        category = "efficiency",
+        tier = 5,
+        order = "e",
+        stack_size = 50,
+        effect = { consumption = -0.7, speed = 0.35},
+        beacon_tint =
+        {
+          primary = { 0, 1, 0 },
+          secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+        },
+        art_style = "vanilla",
+        requires_beacon_alt_mode = false,
+        pictures =
+        {
+          layers =
+            {
+              {
+                size = 64,
+                filename = "__periodic-madness__/graphics/icons/modules/efficiency-module-5.png",
+                scale = 0.5
+              },
+              {
+                draw_as_light = true,
+                flags = {"light"},
+                size = 64,
+                filename = "__periodic-madness__/graphics/light/efficiency-module-5-light.png",
+                scale = 0.5
+              }
+            }
+          },
+      },
+      {
+        type = "module",
+        name = "pm-productivity-module-5",
+        localised_description = {"item-description.productivity-module"},
+        icon = "__periodic-madness__/graphics/icons/modules/productivity-module-5.png",
+        icon_size = 64,
+        subgroup = "pm-productivity",
+        category = "productivity",
+        tier = 5,
+        order = "e",
+        stack_size = 50,
+        effect =
+        {
+          productivity = 0.18,
+          consumption = 0.9,
+          pollution = 0.24,
+          speed = -0.30
+        },
+        pictures =
+        {
+          layers =
+            {
+              {
+                size = 64,
+                filename = "__periodic-madness__/graphics/icons/modules/productivity-module-5.png",
+                scale = 0.5
+              },
+              {
+                draw_as_light = true,
+                flags = {"light"},
+                size = 64,
+                filename = "__periodic-madness__/graphics/light/productivity-module-5-light.png",
+                scale = 0.5
+              }
+            }
+          },
+      },
     --MARK: Special modules
     {
       type = "module",

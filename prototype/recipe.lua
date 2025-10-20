@@ -4872,7 +4872,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-speed-module-4", 1)
+      PM.product("pm-speed-module-5", 1)
     }
   },
   {
@@ -4892,7 +4892,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-efficiency-module-4", 1)
+      PM.product("pm-efficiency-module-5", 1)
     }
   },
   {
@@ -4912,7 +4912,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-productivity-module-4", 1)
+      PM.product("pm-productivity-module-5", 1)
     }
   },
 } --[[@as data.RecipePrototype[] ]])
