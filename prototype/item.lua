@@ -1731,6 +1731,15 @@ data:extend({
     order = "d",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-graphene",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/YAG-laser.png",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
+    stack_size = 100
+  },
 
   {
     type = "item",

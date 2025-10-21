@@ -6217,6 +6217,7 @@ data:extend({
         PM.unlock_recipe("pm-sterling-silver-wire"),
         PM.unlock_recipe("pm-advanced-processing-breadboard"),
         PM.unlock_recipe("pm-advanced-processing-integrated-circuits"),
+        PM.unlock_recipe("pm-supercapacitor"),
         PM.unlock_recipe("pm-advanced-processing-unit")
     },
     prerequisites = {"pm-electronic-laser-etcher", "pm-sterling-silver-processing", "processing-unit", "pm-silicon-processing"},

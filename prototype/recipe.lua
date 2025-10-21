@@ -4915,4 +4915,25 @@ data:extend({
       PM.product("pm-productivity-module-5", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-supercapacitor",
+    enabled = false,
+    energy_required = 6,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-lithium-ion-battery", 1),
+        PM.ingredient("pm-polyethylene-plastic", 5),
+        PM.ingredient("pm-nickel-plate", 3),
+        PM.ingredient("pm-cobalt-plate", 3),
+        PM.ingredient("pm-graphene", 2),
+        PM.ingredient("pm-industrial-noble-gas", 15, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-supercapacitor", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
