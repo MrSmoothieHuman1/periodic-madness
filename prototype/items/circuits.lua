@@ -146,7 +146,7 @@ data:extend({
     type = "item",
     name = "pm-supercapacitor",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/semiconfuctors.png",
+    icon = "__periodic-madness__/graphics/icons/supercapacitor.png",
     subgroup = "pm-processing-units",
     order = "g",
     stack_size = 50,
