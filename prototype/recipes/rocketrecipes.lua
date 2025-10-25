@@ -120,6 +120,25 @@ data:extend({
         PM.product("pm-heat-shielding", 3)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-rocket-nozzle-parts",
+    enabled = false,
+    energy_required = 30,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("low-density-structure", 1),
+        PM.ingredient("pm-tungsten-plate", 8),
+        PM.ingredient("copper-plate", 8),
+        PM.ingredient("pm-vulcanised-rubber", 12),
+        PM.ingredient("pm-C103-plate", 4)
+    },
+    results = 
+    {
+        PM.product("pm-rocket-nozzle-parts", 1)
+    }
+  },
 
 --MARK: Rocket launchables
   {

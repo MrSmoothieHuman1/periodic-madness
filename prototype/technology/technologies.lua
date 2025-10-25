@@ -6391,6 +6391,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+        PM.unlock_recipe("pm-molten-C103-precursor"),
+        PM.unlock_recipe("pm-tantalum-molten-C103"),
+        PM.unlock_recipe("pm-niobium-molten-C103"),
+        PM.unlock_recipe("pm-C103-plate"),
+        PM.unlock_recipe("pm-rocket-nozzle-parts")
     },
     prerequisites = {"pm-inert-gas-metallurgy", "low-density-structure", "pm-hafnium-processing"},
     unit =

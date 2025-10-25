@@ -263,7 +263,7 @@ data:extend({
     type = "recipe",
     name = "pm-molten-C103-precursor",
     enabled = false,
-    energy_required = 18,
+    energy_required = 9,
     category = "pm-moltening",
     allow_productivity = true,
     ingredients =
@@ -314,6 +314,25 @@ data:extend({
     results =
     {
         PM.product("pm-molten-C103", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-C103-plate",
+    enabled = false,
+    energy_required = 36,
+    category = "pm-coldening",
+    allow_productivity = true,
+    main_product = "pm-C103-plate",
+    ingredients =
+    {
+        PM.ingredient("pm-molten-C103", 10, "fluid"),
+        PM.ingredient("pm-crucible", 2)
+    },
+    results = 
+    {
+      PM.product("pm-C103-plate", 5),
+      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
     }
   },
   {

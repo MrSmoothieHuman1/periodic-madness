@@ -4936,5 +4936,5 @@ data:extend({
     {
         PM.product("pm-supercapacitor", 1)
     }
-  }
+  },
 } --[[@as data.RecipePrototype[] ]])
