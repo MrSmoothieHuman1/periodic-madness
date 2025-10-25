@@ -124,19 +124,19 @@ data:extend({
     type = "recipe",
     name = "pm-rocket-nozzle-parts",
     enabled = false,
-    energy_required = 30,
+    energy_required = 15,
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("low-density-structure", 1),
+        PM.ingredient("low-density-structure", 2),
         PM.ingredient("pm-tungsten-plate", 8),
         PM.ingredient("copper-plate", 8),
-        PM.ingredient("pm-vulcanised-rubber", 12),
-        PM.ingredient("pm-C103-plate", 4)
+        PM.ingredient("pm-vulcanised-rubber", 10),
+        PM.ingredient("pm-C103-plate", 6)
     },
     results = 
     {
-        PM.product("pm-rocket-nozzle-parts", 1)
+        PM.product("pm-rocket-nozzle-parts", 2)
     }
   },
 
