@@ -6363,6 +6363,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+        PM.unlock_recipe("pm-rocket-cladding-parts")
     },
     prerequisites = {"pm-noble-gas-pack-unlock", "low-density-structure"},
     unit =

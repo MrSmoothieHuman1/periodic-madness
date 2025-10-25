@@ -139,6 +139,22 @@ data:extend({
         PM.product("pm-rocket-nozzle-parts", 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-rocket-cladding-parts",
+    enabled = false,
+    energy_required = 15,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("low-density-structure", 2),
+        PM.ingredient("pm-heat-shielding", 4)
+    },
+    results = 
+    {
+        PM.product("pm-rocket-cladding-parts", 2)
+    }
+  },
 
 --MARK: Rocket launchables
   {
