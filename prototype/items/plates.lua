@@ -391,7 +391,7 @@ data:extend({
     type = "item",
     name = "pm-C103-plate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/ruthenium-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/C103-plate.png",
     subgroup = "pm-sterling-silver",
     order = "d",
     stack_size = 100
