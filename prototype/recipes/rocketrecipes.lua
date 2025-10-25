@@ -132,7 +132,8 @@ data:extend({
         PM.ingredient("pm-tungsten-plate", 8),
         PM.ingredient("copper-plate", 8),
         PM.ingredient("pm-vulcanised-rubber", 10),
-        PM.ingredient("pm-C103-plate", 6)
+        PM.ingredient("pm-C103-plate", 6),
+        PM.ingredient("pm-inconel-625-plate", 3)
     },
     results = 
     {
@@ -148,9 +149,11 @@ data:extend({
     ingredients =
     {
         PM.ingredient("low-density-structure", 2),
-        PM.ingredient("pm-heat-shielding", 4)
+        PM.ingredient("pm-heat-shielding", 4),
+        PM.ingredient("pm-aluminium-plate", 10),
+        PM.ingredient("pm-lighweight-framing", 10),
     },
-    results = 
+    results =
     {
         PM.product("pm-rocket-cladding-parts", 2)
     }
