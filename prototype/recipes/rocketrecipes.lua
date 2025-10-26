@@ -109,11 +109,11 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-carbon", 50),
-        PM.ingredient("pm-gold-plate", 20),
+        PM.ingredient("pm-graphene", 10),
+        PM.ingredient("pm-gold-plate", 10),
         PM.ingredient("pm-pheonlic-resin", 50, "fluid"),
         PM.ingredient("pm-liquid-silicone", 15, "fluid"),
-        PM.ingredient("pm-aluminium-plate", 30)
+        PM.ingredient("pm-aluminium-plate", 15)
     },
     results =
     {
