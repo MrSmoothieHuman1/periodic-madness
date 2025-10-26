@@ -5023,5 +5023,62 @@ data:extend({
     {
         PM.product("pm-mylar", 4)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-silicon-carbide",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-carbon", 6),
+        PM.ingredient("pm-industrial-grade-silicon-ore", 3),
+        PM.ingredient("steam", 50, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-silicon-carbide", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-graphite",
+    enabled = false,
+    energy_required = 36,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-silicon-carbide", 3),
+        PM.ingredient("pm-molten-tungsten", 10, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-graphite", 4),
+        PM.product("pm-molten-tungsten", 10, "fluid"),
+        PM.catalyst_chance("pm-ferrosilicon", 2, 0.66, 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-graphene",
+    enabled = false,
+    energy_required = 9,
+    category = "pm-crystallisation",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-graphite", 2),
+        PM.ingredient("pm-lithium-chloride", 4),
+        PM.ingredient("pm-light-coolant", 15, "fluid", 1),
+        PM.ingredient("pm-molten-potassium-salts", 20, "fluid", 2)
+    },
+    results = 
+    {
+        PM.catalyst("pm-hot-light-coolant", 15, "fluid", 1, 15),
+        PM.product("pm-graphene", 3)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])

@@ -6214,6 +6214,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-silicon-carbide"),
+        PM.unlock_recipe("pm-graphite"),
+        PM.unlock_recipe("pm-graphene"),
         PM.unlock_recipe("pm-sterling-silver-wire"),
         PM.unlock_recipe("pm-advanced-processing-breadboard"),
         PM.unlock_recipe("pm-advanced-processing-integrated-circuits"),
@@ -6334,6 +6337,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+        PM.unlock_recipe("pm-silicon-carbide"),
+        PM.unlock_recipe("pm-graphite"),
+        PM.unlock_recipe("pm-graphene"),
         PM.unlock_recipe("pm-heat-shielding")
     },
     prerequisites = {"pm-mylar-processing"},
