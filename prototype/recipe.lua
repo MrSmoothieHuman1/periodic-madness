@@ -4960,7 +4960,7 @@ data:extend({
     main_product = "pm-terephthaltic-acid",
     ingredients =
     {
-        PM.ingredient("pm-p-xylene", 10, "fluid"),
+        PM.ingredient("pm-p-xylene", 7.5, "fluid"),
         PM.ingredient("pm-cobalt-manganese-bromide-catalyst", 2),
         PM.ingredient("pm-acetic-acid", 20, "fluid")
     },
@@ -4974,7 +4974,7 @@ data:extend({
     type = "recipe",
     name = "pm-dimethyl-terephthalate",
     enabled = false,
-    energy_required = 12,
+    energy_required = 6,
     category = "chemistry",
     allow_productivity = true,
     ingredients =
@@ -4991,7 +4991,7 @@ data:extend({
     type = "recipe",
     name = "pm-polyethylene-terephthalate",
     enabled = false,
-    energy_required = 12,
+    energy_required = 4.5,
     category = "chemistry",
     allow_productivity = true,
     main_product = "pm-polyethylene-terephthalate",
@@ -5010,7 +5010,7 @@ data:extend({
     type = "recipe",
     name = "pm-mylar",
     enabled = false,
-    energy_required = 6,
+    energy_required = 3,
     category = "pm-molding",
     allow_productivity = true,
     ingredients =
@@ -5021,7 +5021,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-mylar", 3)
+        PM.product("pm-mylar", 4)
     }
   }
 } --[[@as data.RecipePrototype[] ]])
