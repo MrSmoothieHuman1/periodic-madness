@@ -16,7 +16,7 @@ data:extend({
         {
           {
             name = {"pm-tooltips.max-temperature"},
-            value = {"pm-tooltips.temp-500"}
+            value = {"pm-tooltips.temp-600"}
           },
         },
         working_sound =
@@ -52,7 +52,7 @@ data:extend({
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         heat_buffer =
         {
-          max_temperature = 1000 / 2,
+          max_temperature = 600,
           specific_heat = "1MJ",
           max_transfer = "1GW",
           minimum_glow_temperature = 250,
@@ -136,7 +136,7 @@ data:extend({
         {
           {
             name = {"pm-tooltips.max-temperature"},
-            value = {"pm-tooltips.temp-1500"}
+            value = {"pm-tooltips.temp-1000"}
           },
         },
         working_sound =
@@ -172,10 +172,10 @@ data:extend({
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         heat_buffer =
         {
-          max_temperature = 1500,
+          max_temperature = 1000,
           specific_heat = "1MJ",
           max_transfer = "1GW",
-          minimum_glow_temperature = 500,
+          minimum_glow_temperature = 600,
           connections =
           {
             {
@@ -245,8 +245,8 @@ data.raw["heat-pipe"]["heat-pipe"].custom_tooltip_fields =
 {
   {
     name = {"pm-tooltips.max-temperature"},
-    value = {"pm-tooltips.temp-750"}
+    value = {"pm-tooltips.temp-800"}
   },
 }
-data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 750
+data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 800
 data.raw["heat-pipe"]["heat-pipe"].map_color = {r = 0.6, g = 0.506, b = 0.353}

@@ -109,7 +109,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-crushing",
+    category = "pm-washing",
     subgroup = "pm-palladium-tm",
     order = "Aa",
     ingredients =

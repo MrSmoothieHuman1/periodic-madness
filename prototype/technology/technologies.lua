@@ -6771,7 +6771,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-        PM.unlock_recipe("pm-cobalt-manganese-bromide"),
+        PM.unlock_recipe("pm-cobalt-manganese-bromide-catalyst"),
         PM.unlock_recipe("pm-xylene-naptha-cracking")
     },
     prerequisites = {"pm-noble-gas-pack-unlock", "pm-bromine-processing"},

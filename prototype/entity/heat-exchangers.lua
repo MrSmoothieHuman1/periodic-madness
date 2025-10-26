@@ -16,7 +16,7 @@ data:extend({
     {
       {
         name = {"pm-tooltips.max-temperature"},
-        value = {"pm-tooltips.temp-1250"}
+        value = {"pm-tooltips.temp-1000"}
       },
     },
     resistances =
@@ -64,7 +64,7 @@ data:extend({
     energy_source =
     {
       type = "heat",
-      max_temperature = 1250,
+      max_temperature = 1000,
       specific_heat = "1MJ",
       max_transfer = "2GW",
       min_working_temperature = 750,
