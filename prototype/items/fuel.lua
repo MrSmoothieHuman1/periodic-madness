@@ -160,8 +160,8 @@ data.raw["recipe"]["rocket-fuel"].ingredients =
     PM.ingredient("pm-ammonium-dinitramide-ampule", 4),
     PM.ingredient("pm-HMX", 4),
     PM.ingredient("pm-beryllium-plate", 3),
-    PM.ingredient("pm-heat-shielding", 1),
-    PM.ingredient("pm-lightweight-panelling", 24)
+    PM.ingredient("pm-molten-framing", 12),
+    PM.ingredient("pm-lightweight-panelling", 20)
 }
 data.raw["recipe"]["rocket-fuel"].results =
 {

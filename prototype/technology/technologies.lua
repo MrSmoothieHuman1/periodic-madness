@@ -6772,7 +6772,11 @@ data:extend({
     effects = 
     {
         PM.unlock_recipe("pm-cobalt-manganese-bromide-catalyst"),
-        PM.unlock_recipe("pm-xylene-naptha-cracking")
+        PM.unlock_recipe("pm-xylene-naptha-cracking"),
+        PM.unlock_recipe("pm-terephthaltic-acid"),
+        PM.unlock_recipe("pm-dimethyl-terephthalate"),
+        PM.unlock_recipe("pm-polyethylene-terephthalate"),
+        PM.unlock_recipe("pm-mylar")
     },
     prerequisites = {"pm-noble-gas-pack-unlock", "pm-bromine-processing"},
     unit =

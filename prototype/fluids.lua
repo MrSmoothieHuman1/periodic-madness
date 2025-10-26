@@ -2000,7 +2000,9 @@ data:extend({
     order = "p",
     default_temperature = 15,
     base_color = {r = 0.5, g = 0.5, b = 0.5},
-    flow_color = {r = 0.5, g = 0.5, b = 0.5}
+    flow_color = {r = 0.5, g = 0.5, b = 0.5},
+    auto_void = true,
+    auto_void_emissions = 1.75,
   },
   {
     type = "fluid",
@@ -2011,7 +2013,31 @@ data:extend({
     order = "p",
     default_temperature = 15,
     base_color = {r = 0.5, g = 0.5, b = 0.5},
-    flow_color = {r = 0.5, g = 0.5, b = 0.5}
+    flow_color = {r = 0.5, g = 0.5, b = 0.5},
+    auto_void = true,
+    auto_void_emissions = 1.75,
+  },
+  {
+    type = "fluid",
+    name = "pm-terephthaltic-acid",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
+    subgroup = "pm-oil-fluid",
+    order = "p",
+    default_temperature = 15,
+    base_color = {r = 0.5, g = 0.7, b = 0.7},
+    flow_color = {r = 0.5, g = 0.7, b = 0.7},
+  },
+  {
+    type = "fluid",
+    name = "pm-dimethyl-terephthalate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
+    subgroup = "pm-oil-fluid",
+    order = "p",
+    default_temperature = 15,
+    base_color = {r = 0.6, g = 0.8, b = 0.8},
+    flow_color = {r = 0.6, g = 0.8, b = 0.8},
   },
 
 	{

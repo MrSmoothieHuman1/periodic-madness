@@ -4949,5 +4949,79 @@ data:extend({
     {
         PM.product("pm-cobalt-manganese-bromide-catalyst", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-terephthaltic-acid",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-acids",
+    allow_productivity = true,
+    main_product = "pm-terephthaltic-acid",
+    ingredients =
+    {
+        PM.ingredient("pm-p-xylene", 10, "fluid"),
+        PM.ingredient("pm-cobalt-manganese-bromide-catalyst", 2),
+        PM.ingredient("pm-acetic-acid", 20, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-terephthaltic-acid", 10, "fluid"),
+        PM.catalyst("pm-cobalt-manganese-bromide-catalyst", 2, 2),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-dimethyl-terephthalate",
+    enabled = false,
+    energy_required = 12,
+    category = "chemistry",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-terephthaltic-acid", 10, "fluid"),
+        PM.ingredient("pm-methanol", 25, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-dimethyl-terephthalate", 15, "fluid"),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-polyethylene-terephthalate",
+    enabled = false,
+    energy_required = 12,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-polyethylene-terephthalate",
+    ingredients =
+    {
+        PM.ingredient("pm-dimethyl-terephthalate", 7.5, "fluid"),
+        PM.ingredient("pm-ethylene-glycol", 30, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-methanol", 10, "fluid"),
+        PM.product("pm-polyethylene-terephthalate", 5)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-mylar",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-molding",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-polyethylene-terephthalate", 5),
+        PM.ingredient("pm-o-xylene", 10, "fluid"),
+        PM.ingredient("pm-plastic-pellets", 5)
+    },
+    results = 
+    {
+        PM.product("pm-mylar", 3)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])

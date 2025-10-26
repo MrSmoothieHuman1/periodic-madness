@@ -104,16 +104,17 @@ data:extend({
     type = "recipe",
     name = "pm-heat-shielding",
     enabled = false,
-    energy_required = 8,
+    energy_required = 9,
     category = "pm-advanced-crafting-with-fluid",
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-graphene", 10),
-        PM.ingredient("pm-gold-plate", 10),
+        PM.ingredient("pm-graphene", 8),
+        PM.ingredient("pm-gold-wire", 12),
         PM.ingredient("pm-pheonlic-resin", 50, "fluid"),
         PM.ingredient("pm-liquid-silicone", 15, "fluid"),
-        PM.ingredient("pm-aluminium-plate", 15)
+        PM.ingredient("pm-aluminium-plate", 6),
+        PM.ingredient("pm-mylar", 9)
     },
     results =
     {
