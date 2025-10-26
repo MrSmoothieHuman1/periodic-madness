@@ -22,6 +22,16 @@ local function make_voiding(prototype)
 		icon_size = 64,
 	})
 
+    local burnable_tooltip = {
+        name = {"pm-tooltips.burnable-in"},
+        value = {"pm-tooltips.burninator"},
+    }
+    if prototype.custom_tooltip_fields then
+      table.insert(prototype.custom_tooltip_fields, burnable_tooltip)
+    else
+      prototype.custom_tooltip_fields = {burnable_tooltip}
+    end
+
 	data:extend{
 		{
 			type = "recipe",
