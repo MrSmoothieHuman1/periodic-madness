@@ -164,6 +164,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-cobalt-manganese-bromide-catalyst",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/rhenium-platinum-catalyst.png",
+    subgroup = "pm-catalysts",
+    order = "h",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "pm-sea-salt",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/sea-salt.png",

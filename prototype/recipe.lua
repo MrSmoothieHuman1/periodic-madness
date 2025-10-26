@@ -1249,9 +1249,6 @@ data:extend({
     name = "pm-copper-zinc-aluminium-catalyst",
     energy_required = 3,
     enabled = false,
-    subgroup = "pm-catalysts",
-    order = "ea",
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("copper-plate", 2),
@@ -4079,8 +4076,6 @@ data:extend({
     type = "recipe",
     name = "pm-rhenium-platinum-catalyst",
     energy_required = 3,
-    subgroup = "pm-catalysts",
-    order = "g",
     enabled = false,
     ingredients =
     {
@@ -4937,4 +4932,22 @@ data:extend({
         PM.product("pm-supercapacitor", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-cobalt-manganese-bromide-catalyst",
+    enabled = false,
+    energy_required = 3,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+        PM.ingredient("pm-catalyst-container", 1),
+        PM.ingredient("pm-cobalt-plate", 3),
+        PM.ingredient("pm-manganese-plate", 3),
+        PM.ingredient("pm-hydrogen-bromide", 7.5, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-cobalt-manganese-bromide-catalyst", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
