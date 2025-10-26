@@ -14,6 +14,8 @@ Date: 2025-28-09
     - Added the YAG (Yttrium Aluminium Garnet) laser, which is used in the electronic laser etcher.
     - Added new achievements: Legacy code, Nuclear power? no thanks, and all the "Research with X" achievements.
     - Added MK2 selenium battery equipment.
+    - Added the hydroelectric plant, which is unlocked in orange science and generates 330kW, forever. It requires to be partially submerged to function.
+    - Added the geothermal plant, which is unlocked in yellow science and requires a special fluid and fuel to function.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
