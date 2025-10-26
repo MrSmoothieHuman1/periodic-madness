@@ -1168,6 +1168,28 @@ data:extend({
       PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-xylene-naptha-cracking",
+    enabled = false,
+    energy_required = 8,
+    category = "oil-processing",
+    subgroup = "pm-oil",
+    order = "d",
+    allow_productivity = true,
+    main_product = "pm-p-xylene",
+    ingredients =
+    {
+        PM.ingredient("pm-benzene", 10, "fluid"),
+        PM.ingredient("pm-naptha", 30, "fluid")
+    },
+    results =
+    {
+        PM.product_range("pm-ethylene-gas", 0, 7.5, "fluid"),
+        PM.product_range("pm-p-xylene", 2.5, 10, "fluid"),
+        PM.product_range("pm-o-xylene", 2.5, 5, "fluid")
+    }
+  },
 
   -- Oil Cracking/Reforming
 
