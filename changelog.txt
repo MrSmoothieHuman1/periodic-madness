@@ -31,6 +31,7 @@ Date: 2025-28-09
     - Changed "There is no spoon" and "No time for chitchat" to be actually doable in PM, and let them be doable by changing world settings
     - Changed tier 4 module recipes to take red and blue circuits instead of orange and blue.
     - Increased the power demand of the rocket silo from 4MW to 8MW.
+    - Increased the amount of modules slots in a rocket silo from 4 to 5.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.000
