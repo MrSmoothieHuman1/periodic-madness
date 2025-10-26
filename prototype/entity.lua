@@ -10300,4 +10300,9 @@ data.raw["logistic-container"]["passive-provider-chest"].inventory_size = 64
 data.raw["logistic-container"]["storage-chest"].inventory_size = 64
 data.raw["logistic-container"]["buffer-chest"].inventory_size = 64
 data.raw["logistic-container"]["requester-chest"].inventory_size = 64
+
 data.raw["rocket-silo"]["rocket-silo"].to_be_inserted_to_rocket_inventory_size = 2
+data.raw["rocket-silo"]["rocket-silo"].module_slots = 5
+data.raw["rocket-silo"]["rocket-silo"].energy_usage = "8MW"
+data.raw["rocket-silo"]["rocket-silo"].active_energy_usage = "2MW"
+data.raw["rocket-silo"]["rocket-silo"].lamp_energy_usage = "250kW"

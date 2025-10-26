@@ -28,6 +28,7 @@ Date: 2025-28-09
     - Seperated circuit recipes into circuits (green, orange, red) and processing units (blue, purple, grey).
     - Changed "There is no spoon" and "No time for chitchat" to be actually doable in PM, and let them be doable by changing world settings
     - Changed tier 4 module recipes to take red and blue circuits instead of orange and blue.
+    - Increased the power demand of the rocket silo from 4MW to 8MW.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.000
