@@ -4396,7 +4396,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-hot-coolant", 10, "fluid", 1),
+      PM.catalyst("pm-hot-coolant", 10, 10, "fluid", 1),
       PM.product("pm-phenylhydrazine", 5),
       PM.product("pm-palladium-catalyst", 2),
       PM.product_chance("pm-cobalt-catalyst", 2, 0.8),
@@ -5049,6 +5049,7 @@ data:extend({
     energy_required = 36,
     category = "pm-moltening",
     allow_productivity = true,
+    main_product = "pm-graphite",
     ingredients = 
     {
         PM.ingredient("pm-silicon-carbide", 3),
@@ -5068,16 +5069,17 @@ data:extend({
     energy_required = 9,
     category = "pm-crystallisation",
     allow_productivity = true,
-    ingredients = 
+    main_product = "pm-graphene",
+    ingredients =
     {
         PM.ingredient("pm-graphite", 2),
         PM.ingredient("pm-lithium-chloride", 4),
         PM.ingredient("pm-light-coolant", 15, "fluid", 1),
         PM.ingredient("pm-molten-potassium-salts", 20, "fluid", 2)
     },
-    results = 
+    results =
     {
-        PM.catalyst("pm-hot-light-coolant", 15, "fluid", 1, 15),
+        PM.catalyst("pm-hot-light-coolant", 15, 15, "fluid", 1),
         PM.product("pm-graphene", 3)
     }
   }

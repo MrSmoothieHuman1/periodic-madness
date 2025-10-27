@@ -131,7 +131,7 @@ data:extend({
     {
       PM.product("pm-bismuth-ore", 8),
       PM.product_range("pm-mixed-ore-slag", 0, 3),
-      PM.product("pm-hot-coolant", 5, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 5, 5, "fluid", 1)
     }
   },
   {
@@ -154,7 +154,7 @@ data:extend({
     {
       PM.product("pm-bismuth-ore", 8),
       PM.product_range("pm-mixed-ore-slag", 0, 2),
-      PM.product("pm-hot-coolant", 2.5, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 2.5, 2.5, "fluid", 1)
     }
   },
 })

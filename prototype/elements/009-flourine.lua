@@ -132,7 +132,7 @@ data:extend({
     results =
     {
       PM.product("pm-flourite", 16),
-      PM.product("pm-hot-coolant", 7.5, "fluid", 2)
+      PM.product("pm-hot-coolant", 7.5, "fluid", 1)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -156,7 +156,7 @@ data:extend({
     results =
     {
       PM.product("pm-flourite", 16),
-      PM.product("pm-hot-coolant", 5, "fluid", 2)
+      PM.catalyst("pm-hot-coolant", 5, 5, "fluid", 1)
     }
   } --[[@as data.RecipePrototype]],
 })

@@ -3607,6 +3607,8 @@ data:extend({
       PM.unlock_recipe("pm-polydimethylsiloxane"),
       PM.unlock_recipe("pm-light-coolant"),
       PM.unlock_recipe("pm-hot-light-coolant-cooling"),
+      PM.unlock_recipe("pm-light-coolant-flourite-crystallisation"),
+      PM.unlock_recipe("pm-light-coolant-bismuth-ore"),
       PM.unlock_recipe("pm-molten-inator-3"),
       PM.unlock_recipe("pm-cold-inator-3"),
       PM.unlock_recipe("pm-ammonium-tetrafluoroberyllate")

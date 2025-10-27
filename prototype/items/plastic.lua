@@ -25,12 +25,12 @@ data:extend({
     name = "pm-polyethylene-plastic",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/polyethylene-plastic.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic-3.png", size = 64, scale = 0.5 },
-    },
+    --pictures =
+    --{
+    --  { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic.png", size = 64, scale = 0.5 },
+    --  { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic-2.png", size = 64, scale = 0.5 },
+    --  { filename = "__periodic-madness__/graphics/icons/polyethylene-plastic-3.png", size = 64, scale = 0.5 },
+    --},
     subgroup = "pm-plastics",
     order = "b",
     stack_size = 100

@@ -23,7 +23,7 @@ data:extend({
     {
       PM.product("pm-seed-crystal", 1),
       PM.product_range("pm-flourite", 40, 80),
-      PM.product("pm-hot-coolant", 20, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
   {
@@ -49,7 +49,7 @@ data:extend({
     {
       PM.product("pm-seed-crystal", 1),
       PM.product_range("pm-tungsten-crystals", 40, 80),
-      PM.product("pm-hot-coolant", 20, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
   {
@@ -75,7 +75,7 @@ data:extend({
     {
       PM.product("pm-seed-crystal", 1),
       PM.product_range("pm-scheelite", 40, 80),
-      PM.product("pm-hot-coolant", 20, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
   {
@@ -101,7 +101,7 @@ data:extend({
     {
       PM.product("pm-seed-crystal", 1),
       PM.product_range("pm-calcite", 40, 80),
-      PM.product("pm-hot-coolant", 20, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
   {
@@ -127,7 +127,7 @@ data:extend({
     {
       PM.product("pm-seed-crystal", 1),
       PM.product_range("pm-bismuth-ore", 40, 80),
-      PM.product("pm-hot-coolant", 20, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
   {
@@ -153,7 +153,7 @@ data:extend({
     {
       PM.product("pm-seed-crystal", 1),
       PM.product_range("pm-molybdenite", 40, 80),
-      PM.product("pm-hot-coolant", 20, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
 
@@ -180,7 +180,7 @@ data:extend({
       PM.product_range("pm-sapphire", 6, 10),
       PM.product_range("pm-lapis-lazuli", 6, 10),
       PM.product_range("pm-garnet", 6, 10),
-      PM.product("pm-hot-coolant", 10, "fluid", 1)
+      PM.catalyst("pm-hot-coolant", 10, 10, "fluid", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

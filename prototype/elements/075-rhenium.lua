@@ -202,14 +202,14 @@ data:extend({
         main_product = "pm-ammonium-perrhenate",
         ingredients =
         {
-            PM.ingredient("pm-perrhenic-acid", 10, "fluid"),
+            PM.ingredient("pm-perrhenic-acid", 10, "fluid", 2),
             PM.ingredient("pm-ammonium-chloride", 4),
-            PM.ingredient("pm-coolant", 5, "fluid")
+            PM.ingredient("pm-coolant", 5, "fluid", 1)
         },
         results =
         {
             PM.product("pm-ammonium-perrhenate", 5),
-            PM.product("pm-hot-coolant", 5, "fluid")
+            PM.catalyst("pm-hot-coolant", 5, 5, "fluid", 1)
         }
     },
     {

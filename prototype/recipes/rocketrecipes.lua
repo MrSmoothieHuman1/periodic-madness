@@ -56,7 +56,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-hot-light-coolant", 10, "fluid", 1),
+        PM.catalyst("pm-hot-light-coolant", 10, 10, "fluid", 1),
         PM.product("pm-ammonium-dinitramide-ampule", 8)
     }
   },

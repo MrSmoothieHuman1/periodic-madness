@@ -1749,6 +1749,33 @@ data:extend({
     order = "d",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-silicon-carbide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/YAG-laser.png",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
+    stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-graphite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/YAG-laser.png",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
+    stack_size = 150
+  },
+  {
+    type = "item",
+    name = "pm-graphene",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/YAG-laser.png",
+    subgroup = "pm-garnet-ptm",
+    order = "d",
+    stack_size = 250
+  },
 
   {
     type = "item",
