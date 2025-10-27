@@ -6346,7 +6346,7 @@ data:extend({
     research_trigger = 
     {
         type = "craft-item",
-        item = "pm-iron-fish",
+        item = "pm-mylar",
         count = 10
     }
   },
