@@ -34,6 +34,57 @@ Date: 2025-28-09
     - Increased the amount of modules slots in a rocket silo from 4 to 5.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.003
+Date: 2025-27-10
+  The out of sight, out of mind Update:
+
+  Additions:
+    - Added a tooltip on fluids that can be voided via the burn-inator.
+
+  Fixes:
+    - Fixed every crystallizer recipe not considering productivity, if it outputs hot coolant.
+    - Fixed some crystallizer recipes not lining up with the correct fluid box inputs/outputs.
+    - Fixed some light coolant recipes not being unlocked.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.002
+Date: 2025-26-10
+  The I CAN FINALLY UPLOAD ON THIS PORTAL Update:
+
+  Fixes:
+    - Fixed palladium hydride not being dealable with.
+    - Fixed locales for naphtha and gallium liquor.
+    - Fixed heat exchangers not being compatable with some heat pipes.
+    - Rebalanced maximum heat on pipes and exchangers.
+    - Fixed niobite oxide not outputting the right amount of catalysts.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.001
+Date: 2025-30-9
+  The 2 days? you are insane Update:
+
+  Changes:
+    - Changed octane processing recipe icons to be more legible.
+    - Made octane fractions have different pipe colours.
+    - Improved 2,3,3-trimethylpentane's look to be more distinct.
+    - Buffed 2,3,3 vehicle fuel canister recipe.
+
+  Fixes:
+    - Fixed mini train compatability.
+    - Fixed coal tar being in the unsorted subgroup.
+    - Fixed some sciences not using post-transition metal science.
+    - Fixed tier 3 plastic science prerequisiting the wrong science pack.
+    - Removed brimstuff from optional dependencies.
+    - Fixed changelogs.
+    - Fixed coal gas seperation recipe vanadium catalysts back twice.
+    - Increased stack size of empty fuel canisters.
+    - Forced oxygen from CO2 nullifiers to always come from the same fluidbox, so its at least a little more consistent.
+    - Added pollution warning to CO2 nullifier. These will be improved soon, but its better then nothing
+    - Fixed lead fluoride not being unlocked with selenium batteries.
+    - Fixed acetone not being unlocked with ruthenium processing.
+    - Fixed the change of ferrum/patina leeching losing acidic water getting overriden.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.7.000
 Date: 2025-12-07
   The 2 months? you are insane Update:
