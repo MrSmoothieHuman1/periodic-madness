@@ -40,11 +40,11 @@ data:extend({
     name = "pm-polymethyl-methacrylate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic-2.png", size = 64, scale = 0.5 },
-    },
+    --pictures =
+    --{
+    --  { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic.png", size = 64, scale = 0.5 },
+    --  { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic-2.png", size = 64, scale = 0.5 },
+    --},
     subgroup = "pm-plastics",
     order = "c",
     stack_size = 100
@@ -54,12 +54,12 @@ data:extend({
     name = "pm-polytetrafluoroethylene",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-3.png", size = 64, scale = 0.5 },
-    },
+    --pictures =
+    --{
+    --  { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic.png", size = 64, scale = 0.5 },
+    --  { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-2.png", size = 64, scale = 0.5 },
+    --  { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-3.png", size = 64, scale = 0.5 },
+    --},
     subgroup = "pm-plastics",
     order = "c",
     stack_size = 100
@@ -68,13 +68,7 @@ data:extend({
     type = "item",
     name = "pm-mylar",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-3.png", size = 64, scale = 0.5 },
-    },
+    icon = "__periodic-madness__/graphics/icons/mylar.png",
     subgroup = "pm-plastics",
     order = "c",
     stack_size = 100
