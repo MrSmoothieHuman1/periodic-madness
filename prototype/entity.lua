@@ -460,8 +460,8 @@ data:extend({
       {
         {
           name = "smoke",
-          frequency = 10,
-          position = {0.7, -1.2},
+          frequency = 1,
+          position = {0, -1},
           starting_vertical_speed = 0.08,
           starting_frame_deviation = 60
         }
@@ -474,12 +474,11 @@ data:extend({
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/welder/welder.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/welder/welder-base.png",
             priority = "high",
-            width = 171,
-            height = 174,
+            width = 128,
+            height = 136,
             frame_count = 1,
-            shift = util.by_pixel(-1.25, 2),
             scale = 0.5
           },
           {
@@ -497,92 +496,20 @@ data:extend({
       working_visualisations =
       {
         {
-          draw_as_light = true,
           fadeout = true,
-          effect = "flicker",
           animation =
           {
-            filename = "__base__/graphics/entity/steel-furnace/steel-furnace-fire.png",
-            priority = "high",
-            line_length = 8,
-            width = 57,
-            height = 81,
-            frame_count = 48,
-            direction_count = 1,
-            shift = util.by_pixel(-0.75, 5.75),
-            scale = 0.5
-          },
-        },
-        {
-          fadeout = true,
-          draw_as_light = true,
-          effect = "flicker",
-          animation =
-          {
-            filename = "__base__/graphics/entity/steel-furnace/steel-furnace-glow.png",
-            priority = "high",
-            width = 60,
-            height = 43,
-            frame_count = 1,
-            shift = { 0.03125, 0.640625 },
-            blend_mode = "additive"
-          }
-        },
-        {
-          fadeout = true,
-          draw_as_light = true,
-          effect = "flicker",
-          animation =
-          {
-            filename = "__base__/graphics/entity/steel-furnace/steel-furnace-working.png",
-            priority = "high",
-            line_length = 1,
+            filename = "__periodic-madness__/graphics/entities/buildings/welder/welder-on.png",
             width = 128,
-            height = 150,
-            frame_count = 1,
-            direction_count = 1,
-            shift = util.by_pixel(0, -5),
-            blend_mode = "additive",
+            height = 136,
+            frame_count = 24,
+            line_length = 6,
             scale = 0.5,
+            animation_speed = 0.33
           }
-        },
-        {
-          draw_as_light = true,
-          draw_as_sprite = false,
-          fadeout = true,
-          effect = "flicker",
-          animation =
-          {
-            filename = "__base__/graphics/entity/steel-furnace/steel-furnace-ground-light.png",
-            priority = "high",
-            line_length = 1,
-            draw_as_sprite = false,
-            width = 152,
-            height = 126,
-            frame_count = 1,
-            direction_count = 1,
-            shift = util.by_pixel(1, 48),
-            blend_mode = "additive",
-            scale = 0.5,
-          },
         },
       },
       fast_replaceable_group = "furnace",
-      water_reflection =
-      {
-        pictures =
-        {
-          filename = "__base__/graphics/entity/steel-furnace/steel-furnace-reflection.png",
-          priority = "extra-high",
-          width = 20,
-          height = 24,
-          shift = util.by_pixel(0, 45),
-          variation_count = 1,
-          scale = 5
-        },
-        rotate = false,
-        orientation_to_variation = false
-      }
     }
   }--[[@as data.AssemblingMachinePrototype]],
 

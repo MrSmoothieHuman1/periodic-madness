@@ -16,6 +16,7 @@ Date: 2025-28-09
     - Added MK2 selenium battery equipment.
     - Added the hydroelectric plant, which is unlocked in orange science and generates 330kW, forever. It requires to be partially submerged to function.
     - Added the geothermal plant, which is unlocked in yellow science and requires a special fluid and fuel to function.
+    - Added new graphics for the welder!
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
