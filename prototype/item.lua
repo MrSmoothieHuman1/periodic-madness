@@ -1751,15 +1751,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-silicon-carbide",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/silicon-carbide.png",
-    subgroup = "pm-garnet-ptm",
-    order = "d",
-    stack_size = 25
-  },
-  {
-    type = "item",
     name = "pm-graphite",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/YAG-laser.png",

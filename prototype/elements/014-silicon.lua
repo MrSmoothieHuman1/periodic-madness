@@ -111,6 +111,15 @@ data:extend({
         order = "g",
         stack_size = 10
     },
+    {
+    type = "item",
+    name = "pm-silicon-carbide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/silicon-carbide.png",
+    subgroup = "pm-silcion-mt",
+    order = "h",
+    stack_size = 25
+   },
 
     {
         type = "fluid",
