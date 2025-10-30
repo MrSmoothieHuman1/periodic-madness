@@ -4225,7 +4225,7 @@ data:extend({
     type = "technology",
     name = "pm-polytetrafluoroethylene-plastic",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/polytetrafluoroethylene-plastic.png",
+    icon = "__periodic-madness__/graphics/technology/polytetrafluoroethylene-plastic-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-methyl-chloride"),
