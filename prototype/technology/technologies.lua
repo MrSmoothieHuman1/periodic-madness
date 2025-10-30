@@ -6216,16 +6216,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        PM.unlock_recipe("pm-silicon-carbide"),
-        PM.unlock_recipe("pm-graphite"),
-        PM.unlock_recipe("pm-graphene"),
         PM.unlock_recipe("pm-sterling-silver-wire"),
         PM.unlock_recipe("pm-advanced-processing-breadboard"),
         PM.unlock_recipe("pm-advanced-processing-integrated-circuits"),
         PM.unlock_recipe("pm-supercapacitor"),
         PM.unlock_recipe("pm-advanced-processing-unit")
     },
-    prerequisites = {"pm-electronic-laser-etcher", "pm-sterling-silver-processing", "processing-unit", "pm-silicon-processing"},
+    prerequisites = {"pm-electronic-laser-etcher", "pm-sterling-silver-processing", "processing-unit", "pm-graphene-processing"},
     unit =
     {
       count = 700,
@@ -6339,12 +6336,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-        PM.unlock_recipe("pm-silicon-carbide"),
-        PM.unlock_recipe("pm-graphite"),
-        PM.unlock_recipe("pm-graphene"),
         PM.unlock_recipe("pm-heat-shielding")
     },
-    prerequisites = {"pm-mylar-processing"},
+    prerequisites = {"pm-mylar-processing", "pm-graphene-processing"},
     research_trigger = 
     {
         type = "craft-item",
@@ -6790,6 +6784,37 @@ data:extend({
     unit =
     {
       count = 625,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-graphene-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/graphene-processing.png",
+    effects = 
+    {
+        PM.unlock_recipe("pm-silicon-carbide"),
+        PM.unlock_recipe("pm-graphite"),
+        PM.unlock_recipe("pm-graphene"),
+    },
+    prerequisites = {"pm-noble-gas-pack-unlock", "pm-bromine-processing"},
+    unit =
+    {
+      count = 620,
       ingredients =
       {
         {"automation-science-pack", 1},
