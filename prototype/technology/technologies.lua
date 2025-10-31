@@ -2961,7 +2961,7 @@ data:extend({
     type = "technology",
     name = "pm-polymethyl-methacrylate",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/PMMA-tech.png",
+    icon = "__periodic-madness__/graphics/technology/polymethyl-methacrylate-plastic-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-copper-zinc-aluminium-catalyst"),

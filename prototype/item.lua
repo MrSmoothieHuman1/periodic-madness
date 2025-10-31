@@ -166,7 +166,7 @@ data:extend({
     type = "item",
     name = "pm-cobalt-manganese-bromide-catalyst",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/rhenium-platinum-catalyst.png",
+    icon = "__periodic-madness__/graphics/icons/cobalt-manganese-bromide-catalyst.png",
     subgroup = "pm-catalysts",
     order = "h",
     stack_size = 50
