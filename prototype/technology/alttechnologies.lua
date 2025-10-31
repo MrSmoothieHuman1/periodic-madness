@@ -292,7 +292,6 @@ data:extend({
         {"chemical-science-pack", 1},
         {"pm-post-transition-metal-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
-        
       },
       time = 30
     }
@@ -301,7 +300,7 @@ data:extend({
     type = "technology",
     name = "pm-bromide-PMMA",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/bromide-PMMA.png",
+    icon = "__periodic-madness__/graphics/technology/bromide-polymethyl-methacrylate-plastic.png",
     effects =
     {
       PM.unlock_recipe("pm-bromide-polymethyl-methacrylate-plastic")
@@ -316,7 +315,6 @@ data:extend({
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
-        
       },
       time = 45,
     }

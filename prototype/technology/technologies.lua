@@ -6770,7 +6770,7 @@ data:extend({
     type = "technology",
     name = "pm-mylar-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/mylar-plastic-processing.png",
     effects = 
     {
         PM.unlock_recipe("pm-cobalt-manganese-bromide-catalyst"),
