@@ -1709,9 +1709,9 @@ data:extend({
           filename =
           "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser.png",
           width = 320,
-          height = 316,
-          frame_count = 56,
-          line_length = 8,
+          height = 320,
+          --frame_count = 56,
+          --line_length = 8,
           scale = 0.5,
         },
         {
@@ -1719,8 +1719,8 @@ data:extend({
           "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
           width = 320,
           height = 316,
-          frame_count = 56,
-          line_length = 8,
+          --frame_count = 56,
+          --line_length = 8,
           scale = 0.5,
           shift = util.by_pixel(0, 2),
           draw_as_shadow = true,
