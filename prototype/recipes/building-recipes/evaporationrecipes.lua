@@ -24,6 +24,22 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-seawater-from-sea-salt",
+    enabled = false,
+    energy_required = 1,
+    category = "pm-evaporation",
+    ingredients = 
+    {
+        PM.ingredient("water", 10, "fluid"),
+        PM.ingredient("pm-sea-salt", 12)
+    },
+    results = 
+    {
+        PM.product("pm-seawater", 15, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-water-voiding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/water-voiding.png",

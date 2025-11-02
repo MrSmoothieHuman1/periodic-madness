@@ -264,6 +264,7 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-seawater-sulfide-evaporation"),
+        PM.unlock_recipe("pm-seawater-from-sea-salt"),
         PM.unlock_recipe("pm-acidic-water")
     },
     prerequisites = {"automation-science-pack"},
