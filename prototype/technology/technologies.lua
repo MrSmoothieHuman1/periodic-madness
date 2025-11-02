@@ -91,7 +91,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-refining.png",
     effects =
     {
-      PM.unlock_recipe("pm-acidic-water"),
       PM.unlock_recipe("pm-silver-chunks"),
       PM.unlock_recipe("pm-silver-ore"),
       PM.unlock_recipe("pm-silver-plate"),
@@ -99,7 +98,7 @@ data:extend({
       PM.unlock_recipe("pm-gold-ore"),
       PM.unlock_recipe("pm-gold-plate"),
     },
-    prerequisites = {"pm-mercury-processing", "pm-ezekiel-ore-purifying"},
+    prerequisites = {"pm-mercury-processing", "pm-chlorine-processing"},
     unit =
     {
       count = 30,
@@ -122,7 +121,7 @@ data:extend({
       PM.unlock_recipe("pm-liquid-mercury"),
       PM.unlock_recipe("pm-mercury-vapour-condensing")
     },
-    prerequisites = {"automation", "pm-ezekiel-ore-purifying"},
+    prerequisites = {"automation"},
     unit =
     {
       count = 50,
@@ -169,7 +168,7 @@ data:extend({
       PM.unlock_recipe("pm-zinc-powder"),
       PM.unlock_recipe("pm-zinc-powder-leeching"),
     },
-    prerequisites = {"automation", "pm-chlorine-processing"},
+    prerequisites = {"automation", "pm-acidic-water-processing"},
     unit =
     {
       count = 20,
@@ -177,7 +176,7 @@ data:extend({
       {
         {"automation-science-pack", 1}
       },
-      time = 10
+      time = 15
     }
   },
   {
@@ -221,12 +220,12 @@ data:extend({
     prerequisites = {"pm-brass-processing", "steel-processing"},
     unit =
     {
-      count = 50,
+      count = 20,
       ingredients =
       {
         {"automation-science-pack", 1}
       },
-      time = 15
+      time = 10
     }
   },
   {
@@ -246,8 +245,29 @@ data:extend({
       PM.unlock_recipe("pm-hydrogen-evaporation"),
       PM.unlock_recipe("pm-chlorine-evaporation"),
     },
+    prerequisites = {"steel-processing"},
+    unit =
+    {
+      count = 30,
+      ingredients =
+      {
+        {"automation-science-pack", 1}
+      },
+      time = 15
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-acidic-water-processing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-seawater-sulfide-evaporation"),
+        PM.unlock_recipe("pm-acidic-water")
+    },
     prerequisites = {"automation-science-pack"},
-    research_trigger = 
+    research_trigger =
     {
       type = "build-entity",
       entity = "pm-evaporator"

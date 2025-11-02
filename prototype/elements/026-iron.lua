@@ -137,7 +137,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-pig-iron", 2),
-      PM.ingredient("pm-hydrochloric-acid", 4, "fluid")
+      PM.ingredient("pm-acidic-water", 4, "fluid")
     },
     results =
     {
