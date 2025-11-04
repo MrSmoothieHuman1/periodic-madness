@@ -4652,7 +4652,7 @@ data:extend({
       PM.unlock_recipe("pm-advanced-advanced-circuit-breadboard"),
       PM.unlock_recipe("pm-advanced-advanced-integrated-circuits"),
       PM.unlock_recipe("pm-advanced-processing-circuit-breadboard"),
-      PM.unlock_recipe("pm-advanced-processing-integrated-circuits"),
+      PM.unlock_recipe("pm-better-processing-integrated-circuits"),
       PM.unlock_recipe("pm-advanced-semiconductor"),
     },
     prerequisites = {"pm-metalloid-pack-unlock"},

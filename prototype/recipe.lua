@@ -3206,7 +3206,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-advanced-processing-integrated-circuits",
+    name = "pm-better-processing-integrated-circuits",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/advanced-processing-integrated-circuits.png",
     energy_required = 1,

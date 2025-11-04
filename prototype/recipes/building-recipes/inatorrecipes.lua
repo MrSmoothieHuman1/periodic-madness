@@ -287,14 +287,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-niobium-plate", 18),
+        PM.ingredient("pm-niobium-plate", 9),
         PM.ingredient("pm-molten-C103-precursor", 10, "fluid"),
-        PM.ingredient("pm-hafnium-ore", 9),
-        PM.ingredient("pm-zirconia", 2)
+        PM.ingredient("pm-hafnium-ore", 6),
+        PM.ingredient("pm-zirconia", 3)
     },
     results =
     {
-        PM.product("pm-molten-C103", 10, "fluid")
+        PM.product("pm-molten-C103", 20, "fluid")
     }
   },
   {
@@ -306,14 +306,14 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-tantalum-plate", 18),
+        PM.ingredient("pm-tantalum-plate", 9),
         PM.ingredient("pm-molten-C103-precursor", 10, "fluid"),
-        PM.ingredient("pm-hafnium-ore", 9),
-        PM.ingredient("pm-zirconia", 2)
+        PM.ingredient("pm-hafnium-ore", 6),
+        PM.ingredient("pm-zirconia", 3)
     },
     results =
     {
-        PM.product("pm-molten-C103", 10, "fluid")
+        PM.product("pm-molten-C103", 20, "fluid")
     }
   },
   {
