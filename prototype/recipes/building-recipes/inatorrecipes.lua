@@ -268,10 +268,10 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-titanium-plate", 2),
+        PM.ingredient("pm-titanium-plate", 4),
         PM.ingredient("steam", 50, "fluid"),
-        PM.ingredient("pm-yttrium-ore", 4),
-        PM.ingredient("pm-zinc-plate", 2)
+        PM.ingredient("pm-yttrium-ore", 3),
+        PM.ingredient("pm-zinc-plate", 4)
     },
     results =
     {

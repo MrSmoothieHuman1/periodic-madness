@@ -65,7 +65,7 @@ data:extend({
     type = "recipe",
     name = "pm-zircon",
     enabled = false,
-    energy_required = 6,
+    energy_required = 4.5,
     category = "pm-evaporation",
     subgroup = "pm-zirconium-tm",
     order = "b",
