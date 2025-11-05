@@ -1232,7 +1232,6 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "pm-intermediates",
     order = "b",
-
     ingredients =
     {
       PM.ingredient("pm-aluminium-plate", 4),

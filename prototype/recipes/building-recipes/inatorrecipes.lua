@@ -270,7 +270,7 @@ data:extend({
     {
         PM.ingredient("pm-titanium-plate", 4),
         PM.ingredient("steam", 50, "fluid"),
-        PM.ingredient("pm-yttrium-ore", 3),
+        PM.ingredient("pm-yttrium-ore", 2),
         PM.ingredient("pm-zinc-plate", 4)
     },
     results =

@@ -152,7 +152,7 @@ data:extend({
         PM.ingredient("low-density-structure", 2),
         PM.ingredient("pm-heat-shielding", 4),
         PM.ingredient("pm-aluminium-plate", 10),
-        PM.ingredient("pm-lightweight-framing", 10),
+        PM.ingredient("pm-lightweight-framing", 8),
     },
     results =
     {
