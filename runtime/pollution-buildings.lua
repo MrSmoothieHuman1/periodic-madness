@@ -160,10 +160,13 @@ handler.events[defines.events.on_tick] = function (event)
       storage.pollution_buildings_count = storage.pollution_buildings_count - 1
     else
       check_pollution(entity, object)
+
+      -- Iteration
+      -- In the else chunk so it *has* to fetch a new index
+      -- if the entity wasn't valid
+      count = count + 1
     end
 
-    -- Iteration
-    count = count + 1
     if count >= max_count then break end
     index, object = next(buildings, index)
   end
@@ -178,6 +181,7 @@ local function reload_buildings()
   ---@type PollutionBuilding[]
   local new_list, count = {}, 0
   storage.pollution_buildings = new_list
+  storage.pollution_index = nil
 
   local building_list, build_count = {}, 0
   for building in pairs(pollution_definition) do
