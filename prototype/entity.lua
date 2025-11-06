@@ -4,10 +4,23 @@ local fireutil = require("__base__.prototypes.fire-util")
 local tile_collision_masks = require("collision-mask")
 require("entity.pipe-pictures")
 
-local red_belt = {r = 0.878, g = 0.169, b = 0.169}
-local orange_belt = {r = 1, g = 0.502, b = 0}
-local blue_belt = {r = 0.169, g = 0.608, b = 0.878}
-local purple_belt = {r = 0.616, g = 0.169, b = 0.878}
+function pm_diode_status_colors()
+    return
+    {
+        -- If no_power, idle, no_minable_resources, disabled, insufficient_input or full_output is used, always_draw of corresponding layer must be set to true to draw it in those states.
+
+        no_power = {0, 0, 0, 0},                  -- If no_power is not specified or is nil, it defaults to clear color {0,0,0,0}
+
+        idle = {1, 0, 0, 1},                      -- If idle is not specified or is nil, it defaults to white.
+        no_minable_resources = {1, 0, 0, 1},      -- If no_minable_resources, disabled, insufficient_input or full_output are not specified or are nil, they default to idle color.
+        insufficient_input = {1, 0, 0, 1},
+        full_output = {1, 1, 0, 1},
+        disabled = {1, 1, 0, 1},
+
+        working = {0, 1, 0, 1},                   -- If working is not specified or is nil, it defaults to white.
+        low_power = {1, 1, 0, 1},                 -- If low_power is not specified or is nil, it defaults to working color.
+    }
+end
 
 local pm_lab_inputs =
 {
@@ -1677,7 +1690,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "pm-atmospheric-condenser",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/atmospheric-condenser.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.4, result = "pm-atmospheric-condenser" },
@@ -1700,32 +1713,217 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 2,
     circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
-  {
+    {
+    status_colors = pm_diode_status_colors(),
     animation =
     {
-      layers =
+      north = 
       {
+        layers = 
         {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser.png",
-          width = 320,
-          height = 320,
-          --frame_count = 56,
-          --line_length = 8,
-          scale = 0.5,
-        },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-north-south-base.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                width = 320,
+                height = 320,
+                frame_count = 32,
+                line_length = 8,
+                animation_speed = 0.5,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+                shift = util.by_pixel(146, 0),
+                draw_as_shadow = true,
+            }
+        }
+      },
+    south = 
+      {
+        layers = 
         {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
-          width = 320,
-          height = 316,
-          --frame_count = 56,
-          --line_length = 8,
-          scale = 0.5,
-          shift = util.by_pixel(0, 2),
-          draw_as_shadow = true,
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-north-south-base.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                width = 320,
+                height = 320,
+                frame_count = 32,
+                line_length = 8,
+                animation_speed = 0.5,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+                shift = util.by_pixel(146, 0),
+                draw_as_shadow = true,
+            }
+        }
+      },
+      east = 
+      {
+        layers = 
+        {
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-west-base.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                width = 320,
+                height = 320,
+                frame_count = 32,
+                line_length = 8,
+                animation_speed = 0.5,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+                shift = util.by_pixel(146, 0),
+                draw_as_shadow = true,
+            }
+        }
+      },
+      west = 
+      {
+        layers = 
+        {
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-west-base.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                width = 320,
+                height = 320,
+                frame_count = 32,
+                line_length = 8,
+                animation_speed = 0.5,
+                scale = 0.5,
+            },
+            {
+                filename =
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-shadow.png",
+                width = 320,
+                height = 320,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 32,
+                scale = 0.5,
+                shift = util.by_pixel(146, 0),
+                draw_as_shadow = true,
+            }
         }
       }
+    },
+    working_visualisations =
+    {
+        {
+            apply_tint = "status",
+            always_draw = true,
+            north_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-diode.png",
+              width = 320,
+              height = 320,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+            south_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-diode.png",
+              width = 320,
+              height = 320,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+            east_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-diode.png",
+              width = 320,
+              height = 320,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+            west_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-diode.png",
+              width = 320,
+              height = 320,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+        }
     }
   },
     fluid_boxes =

@@ -155,7 +155,7 @@ data:extend({
   {
     type = "item",
     name = "pm-atmospheric-condenser",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/atmospheric-condenser.png",
     subgroup = "pm-atmospheric-machine",
     order = "a",
