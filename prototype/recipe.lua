@@ -151,7 +151,8 @@ data:extend({
     ingredients =
     {
       PM.ingredient("copper-cable", 2),
-      PM.ingredient("pm-carbon", 8),
+      PM.ingredient("pm-vulcanised-rubber", 1),
+      PM.ingredient("pm-carbon", 5),
     },
     results = 
     {
