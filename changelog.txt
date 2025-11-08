@@ -18,7 +18,6 @@ Date: 2025-28-09
     - Added the geothermal plant, which is unlocked in yellow science and requires a special fluid and fuel to function.
     - Added new graphics for the welder!
     - Remodelled the atmospheric condenser, and added diode lights to it!
-    - Also remodelled the air filterer.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
@@ -40,6 +39,19 @@ Date: 2025-28-09
     - Updated almost all of the technology icons to now have shadows.
     - Changed the atmospheric condenser to have more output fluidboxes, to match its new model.
     - Changed the recipe of transistors to take less carbon and use 1 rubber.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.004
+Date: 2025-08-11
+  The people giving you feedback? in this economy? Update:
+
+  Changes:
+    - Changed electric boilers to only take speed modules.
+
+  Fixes:
+    - Fixed gunpowder not being craftable in orange science.
+    - Fixed washing plant 2's not being behind red circuits in the tech tree.
+    - Included the new revamped air filterer from 0.8. This is not the only building thats been updated, so wait to see them apples
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.003

@@ -1205,7 +1205,7 @@ data:extend({
       PM.unlock_recipe("pm-washing-plant-2"),
       PM.unlock_recipe("pm-gas-water-electroylsis"),
     },
-    prerequisites = {"fluid-handling"},
+    prerequisites = {"advanced-circuit"},
     unit =
     {
       count = 100,

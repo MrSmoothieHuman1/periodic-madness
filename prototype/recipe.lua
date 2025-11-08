@@ -2900,6 +2900,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "chemistry",
+    additional_categories = {"pm-acids"},
     subgroup = "ammo",
     order = "A",
     allow_productivity = true,
