@@ -1703,6 +1703,7 @@ data:extend({
     module_slots = 3,
     allowed_effects = PM.all_effects_but("productivity"),
     crafting_speed = 1,
+    icon_draw_specification = {shift = {0, -0.36}},
     energy_source =
     {
       type = "electric",
