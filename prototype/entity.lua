@@ -3286,7 +3286,7 @@ data:extend({
   {
     type = "furnace",
     name = "pm-air-filterer",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/air-filterer.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation", },
     minable = { mining_time = 0.5, result = "pm-air-filterer" },
@@ -3325,7 +3325,8 @@ data:extend({
       emissions_per_minute = {pollution = -50}
     },
     graphics_set = 
-  {
+    {
+    status_colors = pm_diode_status_colors(),
     animation =
     {
       layers =
@@ -3333,26 +3334,45 @@ data:extend({
         {
           filename = "__periodic-madness__/graphics/entities/buildings/air-filterer/air-filterer.png",
           priority = "high",
-          width = 171,
-          height = 174,
-          frame_count = 34 + 1,
-          line_length = 7,
+          width = 128,
+          height = 128,
+          frame_count = 32,
+          line_length = 8,
+          animation_speed = 0.66,
           scale = 0.5,
-          shift = util.by_pixel(2, -10),
         },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/air-filterer/air-filterer-shadow.png",
           priority = "high",
-          width = 174,
-          height = 171,
+          width = 128,
+          height = 128,
           frame_count = 1,
           line_length = 1,
-          repeat_count = 34 + 1,
+          repeat_count = 32,
           draw_as_shadow = true,
-          shift = util.by_pixel(39.25, -2.25),
+          shift = util.by_pixel(42, 0),
           scale = 0.5
         }
       }
+    },
+    working_visualisations =
+    {
+        {
+            apply_tint = "status",
+            always_draw = true,
+            north_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/air-filterer/air-filterer-diode.png",
+              width = 128,
+              height = 128,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+        }
     }
   }
   }--[[@as data.FurnacePrototype]],

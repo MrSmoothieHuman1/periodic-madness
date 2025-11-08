@@ -18,6 +18,7 @@ Date: 2025-28-09
     - Added the geothermal plant, which is unlocked in yellow science and requires a special fluid and fuel to function.
     - Added new graphics for the welder!
     - Remodelled the atmospheric condenser, and added diode lights to it!
+    - Also remodelled the air filterer.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.

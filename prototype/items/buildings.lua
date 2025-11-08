@@ -328,7 +328,7 @@ data:extend({
   {
     type = "item",
     name = "pm-air-filterer",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/air-filterer.png",
     subgroup = "pm-atmospheric-machine",
     order = "c",
