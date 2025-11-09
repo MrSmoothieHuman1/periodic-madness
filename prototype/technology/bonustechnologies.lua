@@ -1499,6 +1499,7 @@ data.raw["technology"]["research-speed-1"].effects =
 {
     PM.modify("laboratory-speed", 0.1)
 }
+table.insert(data.raw["technology"]["research-speed-2"].prerequisites, "pm-advanced-advanced-transition-metal-pack-unlock")
 data.raw["technology"]["research-speed-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
