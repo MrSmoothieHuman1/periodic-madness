@@ -1665,7 +1665,7 @@ data:extend({
   {
     type = "item",
     name = "pm-rocket-cladding-parts",
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/rocket-cladding-parts.png",
     icon_size = 64,
     subgroup = "pm-rocket-parts",
     order = "b",
