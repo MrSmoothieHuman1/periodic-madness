@@ -6218,7 +6218,8 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-sterling-silver-wire"),
-        PM.unlock_recipe("pm-advanced-processing-breadboard"),
+        PM.unlock_recipe("pm-tantalum-advanced-processing-breadboard"),
+        PM.unlock_recipe("pm-niobium-advanced-processing-breadboard"),
         PM.unlock_recipe("pm-advanced-processing-integrated-circuits"),
         PM.unlock_recipe("pm-supercapacitor"),
         PM.unlock_recipe("pm-advanced-processing-unit")

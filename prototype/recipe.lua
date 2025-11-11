@@ -4737,7 +4737,20 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-advanced-processing-breadboard",
+    name = "pm-tantalum-advanced-processing-breadboard",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/advanced-processing-breadboard.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/tantalum-contacts.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     energy_required = 9,
     category = "crafting-with-fluid",
     additional_categories = {"pm-circuit-boards"},
@@ -4745,10 +4758,46 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
+      PM.ingredient("pm-phosphoric-acid", 7.5, "fluid"),
       PM.ingredient("pm-ferric-chloride", 5, "fluid"),
       PM.ingredient("pm-etched-silicon-wafer", 3),
       PM.ingredient("pm-processing-breadboard", 1),
-      PM.ingredient("pm-cadnium-red", 6)
+      PM.ingredient("pm-cadnium-red", 6),
+      PM.ingredient("pm-tantalum-contacts", 6)
+    },
+    results = {
+      PM.product("pm-advanced-processing-breadboard", 1)
+    },
+  },
+  {
+    type = "recipe",
+    name = "pm-niobium-advanced-processing-breadboard",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/advanced-processing-breadboard.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/niobium-contacts.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
+    energy_required = 9,
+    category = "crafting-with-fluid",
+    additional_categories = {"pm-circuit-boards"},
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-phosphoric-acid", 7.5, "fluid"),
+      PM.ingredient("pm-ferric-chloride", 5, "fluid"),
+      PM.ingredient("pm-etched-silicon-wafer", 3),
+      PM.ingredient("pm-processing-breadboard", 1),
+      PM.ingredient("pm-cadnium-red", 6),
+      PM.ingredient("pm-niobium-contacts", 6)
     },
     results = {
       PM.product("pm-advanced-processing-breadboard", 1)
