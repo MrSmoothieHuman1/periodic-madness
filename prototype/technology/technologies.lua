@@ -4537,7 +4537,8 @@ data:extend({
       PM.unlock_recipe("pm-beryllium-ore"),
       PM.unlock_recipe("pm-beryllium-plate"),
       PM.unlock_recipe("pm-molten-beryllium"),
-      PM.unlock_recipe("pm-beryllium-plate-cooling")
+      PM.unlock_recipe("pm-beryllium-plate-cooling"),
+      PM.unlock_recipe("pm-aluminium-sulfate-seperation")
     },
     prerequisites = {"pm-magnesium-processing"},
     unit =

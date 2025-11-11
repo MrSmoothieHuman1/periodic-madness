@@ -309,4 +309,25 @@ data:extend({
       PM.product_chance("pm-crucible", 1, 0.8)
     }
   },
+
+  {
+    type = "recipe",
+    name = "pm-aluminium-sulfate-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/aluminium-sulfate-seperation.png",
+    enabled = false,
+    energy_required = 5,
+    category = "pm-mixing",
+    allow_decomposition = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-aluminium-sulfate", 10),
+        PM.ingredient("water", 25, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-aluminium-hydroxide-slurry", 5, "fluid"),
+        PM.product("pm-acidic-water", 15, "fluid")
+    }
+  }
 })
