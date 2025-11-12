@@ -10427,7 +10427,13 @@ fluid_boxes =
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {0, -2} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {1, -2} }},
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {-1, -2} }},
       },
       {
         production_type = "output",
