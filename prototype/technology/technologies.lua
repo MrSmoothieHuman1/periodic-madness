@@ -6654,38 +6654,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-liquid-rocket-fuel",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects =
-    {
-        PM.unlock_recipe("pm-nitrogen-dioxide"),
-        PM.unlock_recipe("pm-dinitrogen-tetroxide"),
-        PM.unlock_recipe("pm-liquid-fuel-rocket-part")
-    },
-    prerequisites = {"space-science-pack"},
-    unit =
-    {
-      count = 800,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1},
-        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-noble-gas-science-pack", 1},
-        {"space-science-pack", 1}
-      },
-      time = 140
-    }
-  },
-  {
-    type = "technology",
     name = "pm-speed-module-5",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/speed-module-5-tech.png",
@@ -6769,37 +6737,6 @@ data:extend({
         {"pm-noble-gas-science-pack", 1}
       },
       time = 120
-    }
-  },
-  {
-    type = "technology",
-    name = "pm-space-processing-units",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects =
-    {
-        PM.unlock_recipe("pm-space-processing-unit"),
-        PM.unlock_recipe("pm-space-processing-unit-satellite")
-    },
-    prerequisites = {"space-science-pack"},
-    unit =
-    {
-      count = 800,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1},
-        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-noble-gas-science-pack", 1},
-        {"space-science-pack", 1}
-      },
-      time = 160
     }
   },
   {
@@ -6896,6 +6833,72 @@ data:extend({
       time = 140
     }
   },
+
+--MARK: Space science
+  {
+    type = "technology",
+    name = "pm-liquid-rocket-fuel",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-nitrogen-dioxide"),
+        PM.unlock_recipe("pm-dinitrogen-tetroxide"),
+        PM.unlock_recipe("pm-liquid-fuel-rocket-part")
+    },
+    prerequisites = {"space-science-pack"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 140
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-space-processing-units",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-space-processing-unit"),
+        PM.unlock_recipe("pm-space-processing-unit-satellite")
+    },
+    prerequisites = {"space-science-pack"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    }
+  },
+
 --MARK: AC science
 --MARK: LA science
 
