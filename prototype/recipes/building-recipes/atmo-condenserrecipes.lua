@@ -100,6 +100,31 @@ data:extend({
     }
 },
 
+{
+    type = "recipe",
+    name = "pm-mixed-noble-gas-seperation",
+    enabled = false,
+    energy_required = 12,
+    category = "pm-atmospheric-condensing",
+    subgroup = "pm-nb-nb",
+    order = "a",
+    main_product = "pm-helium-gas",
+    ingredients = 
+    {
+        PM.ingredient("pm-mixed-noble-gas", 50, "fluid"),
+        --PM.ingredient("pm-trace-gas", 25, "fluid") maybe include? does require another input fluidbox, but also gives more use to trace gasses
+    },
+    results = 
+    {
+        PM.product_range("pm-helium-gas", 10, 15, "fluid"),
+        PM.product_range("pm-neon-gas", 7.5, 12.5, "fluid"),
+        PM.product_range("pm-argon-gas", 5, 10, "fluid"),
+        PM.product_range("pm-krypton-gas", 2.5, 7.5, "fluid"),
+        PM.product_range("pm-radon-gas", 0, 5, "fluid")
+    }
+},
+
+
   --voding atmospheric gasses
 
   {

@@ -6099,7 +6099,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-noble-gas-science-pack")
     },
-    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-alkaline-earth-metal-pack-unlock"},
+    prerequisites = {"pm-noble-gas-processing"},
     unit =
     {
       count = 600,
@@ -6148,6 +6148,39 @@ data:extend({
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 100
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-noble-gas-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-mixed-noble-gas-seperation"),
+        PM.unlock_recipe("pm-helium-gas-into-industrial-noble-gas"),
+        PM.unlock_recipe("pm-neon-gas-into-industrial-noble-gas"),
+        PM.unlock_recipe("pm-argon-gas-into-industrial-noble-gas"),
+        PM.unlock_recipe("pm-krypton-gas-into-industrial-noble-gas"),
+        PM.unlock_recipe("pm-radon-gas-into-industrial-noble-gas"),
+    },
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
     }
   },
 --MARK: NB science

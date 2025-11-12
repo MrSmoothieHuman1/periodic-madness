@@ -114,6 +114,10 @@ require("prototype.elements.105-dubnium")
 require("prototype.elements.043-technectium")
 require("prototype.elements.045-rhodium")
 require("prototype.elements.072-hafnium")
+require("prototype.elements.010-neon")
+require("prototype.elements.036-krypton")
+require("prototype.elements.054-xenon")
+require("prototype.elements.086-radon")
 
 require("prototype.damagetypes")
 
