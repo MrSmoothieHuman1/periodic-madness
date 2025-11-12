@@ -457,6 +457,28 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-mixed-ore-slag-washing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/mixed-ore-slag-washing.png",
+    enabled = false,
+    energy_required = 4.5,
+    category = "pm-mixing",
+    subgroup = "pm-ptm-ptm",
+    ingredients =
+    {
+      PM.ingredient("pm-mixed-ore-slag", 9),
+      PM.ingredient("pm-sodium-hydroxide", 20, "fluid"),
+      PM.ingredient("pm-sodium-sulfite", 3)
+    },
+    results =
+    {
+      PM.product_range("pm-ferrous-waste-water", 4, 16, "fluid"),
+      PM.product_range("pm-cupric-waste-water", 6, 12, "fluid"),
+      PM.product_range("pm-sulfuric-waste-water", 4, 10, "fluid"),
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-calcium-chloride-seperation",
     enabled = false,
     category = "pm-washing",

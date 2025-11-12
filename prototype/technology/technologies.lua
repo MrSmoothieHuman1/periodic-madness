@@ -3316,6 +3316,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-mixed-ore-slag-crushing"),
       PM.unlock_recipe("pm-mixed-ore-slag-leeching"),
+      PM.unlock_recipe("pm-mixed-ore-slag-washing"),
       PM.unlock_recipe("pm-chromic-ferrum-leeching"),
       PM.unlock_recipe("pm-chromic-patina-leeching"),
       PM.unlock_recipe("pm-cobaltite-seperation"),
