@@ -504,6 +504,16 @@ pm_osmiumpipepictures = function()
     }
   }
 end
+circuit_connector_definitions["stainless-pump"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 24, main_offset = util.by_pixel(-15, -8.5), shadow_offset = util.by_pixel(0, -0.5), show_shadow = false },
+    { variation = 26, main_offset = util.by_pixel(-16, 3.5), shadow_offset = util.by_pixel(-14, 13.5), show_shadow = true },
+    { variation = 24, main_offset = util.by_pixel(-14.5, -8.5), shadow_offset = util.by_pixel(-12.5, 6), show_shadow = false },
+    { variation = 26, main_offset = util.by_pixel(13.5, 4.5), shadow_offset = util.by_pixel(-7, -12.5), show_shadow = true }
+  }
+)
 
 data:extend({
 --MARK: Pipes
@@ -959,8 +969,7 @@ data:extend({
                 shift = util.by_pixel(-16, 0)
             }
         },
-        circuit_wire_connection_points = circuit_connector_definitions["pump"].points,
-        circuit_connector_sprites = circuit_connector_definitions["pump"].sprites,
+        circuit_connector = circuit_connector_definitions["stainless-pump"],
         circuit_wire_max_distance = default_circuit_wire_max_distance
     }
     
