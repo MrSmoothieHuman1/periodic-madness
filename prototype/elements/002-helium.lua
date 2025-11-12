@@ -17,7 +17,7 @@ data:extend({
     type = "recipe",
     name = "pm-helium-gas-into-industrial-noble-gas",
     enabled = false,
-    energy_required = 6,
+    energy_required = 4,
     category = "pm-atmospheric-condensing",
     subgroup = "pm-helium-nb",
     order = "c",

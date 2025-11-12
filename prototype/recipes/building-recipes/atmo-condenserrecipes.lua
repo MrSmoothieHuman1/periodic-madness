@@ -104,7 +104,7 @@ data:extend({
     type = "recipe",
     name = "pm-mixed-noble-gas-seperation",
     enabled = false,
-    energy_required = 12,
+    energy_required = 6,
     category = "pm-atmospheric-condensing",
     subgroup = "pm-nb-nb",
     order = "a",
@@ -120,7 +120,8 @@ data:extend({
         PM.product_range("pm-neon-gas", 7.5, 12.5, "fluid"),
         PM.product_range("pm-argon-gas", 5, 10, "fluid"),
         PM.product_range("pm-krypton-gas", 2.5, 7.5, "fluid"),
-        PM.product_range("pm-radon-gas", 0, 5, "fluid")
+        PM.product_range("pm-xenon-gas", 0, 5, "fluid"),
+        PM.product_range("pm-radon-gas", 0, 2.5, "fluid")
     }
 },
 

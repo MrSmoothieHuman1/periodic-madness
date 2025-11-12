@@ -6162,6 +6162,7 @@ data:extend({
         PM.unlock_recipe("pm-neon-gas-into-industrial-noble-gas"),
         PM.unlock_recipe("pm-argon-gas-into-industrial-noble-gas"),
         PM.unlock_recipe("pm-krypton-gas-into-industrial-noble-gas"),
+        PM.unlock_recipe("pm-xenon-gas-into-industrial-noble-gas"),
         PM.unlock_recipe("pm-radon-gas-into-industrial-noble-gas"),
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},

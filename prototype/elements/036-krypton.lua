@@ -16,7 +16,7 @@ data:extend({
     type = "recipe",
     name = "pm-krypton-gas-into-industrial-noble-gas",
     enabled = false,
-    energy_required = 6,
+    energy_required = 4,
     category = "pm-atmospheric-condensing",
     subgroup = "pm-krypton-nb",
     order = "c",
@@ -24,12 +24,12 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-krypton-gas", 12.5, "fluid"),
-        PM.ingredient("pm-yttrium-catalyst", 2)
+        PM.ingredient("pm-nickel-tungsten-catalyst", 2)
     },
     results = 
     {
-        PM.product("pm-industrial-noble-gas", 7.5, "fluid"),
-        PM.product_chance("pm-yttrium-catalyst", 2, 0.85),
+        PM.product("pm-industrial-noble-gas", 5, "fluid"),
+        PM.product_chance("pm-nickel-tungsten-catalyst", 2, 0.85),
         PM.product_chance("pm-catalyst-container", 2, 0.15)
     }
 },

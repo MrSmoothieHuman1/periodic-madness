@@ -17,7 +17,7 @@ data:extend({
     type = "recipe",
     name = "pm-argon-gas-into-industrial-noble-gas",
     enabled = false,
-    energy_required = 6,
+    energy_required = 4,
     category = "pm-atmospheric-condensing",
     subgroup = "pm-argon-nb",
     order = "c",
@@ -29,7 +29,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-industrial-noble-gas", 7.5, "fluid"),
+        PM.product("pm-industrial-noble-gas", 5, "fluid"),
         PM.product_chance("pm-cobalt-catalyst", 2, 0.8),
         PM.product_chance("pm-catalyst-container", 2, 0.2)
     }
