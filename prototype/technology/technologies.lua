@@ -6898,6 +6898,46 @@ data:extend({
       time = 160
     }
   },
+  {
+    type = "technology",
+    name = "pm-atmospheric-composition-research",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        PM.modify_recipe_productivity("pm-oxygen-gas", 0.025),
+        PM.modify_recipe_productivity("pm-advanced-oxygen-atmosphere-filtering", 0.025),
+        PM.modify_recipe_productivity("pm-chlorine", 0.025),
+        PM.modify_recipe_productivity("pm-advanced-chlorine-atmosphere-filtering", 0.025),
+        PM.modify_recipe_productivity("pm-nitrogen-gas", 0.025),
+        PM.modify_recipe_productivity("pm-advanced-nitrogen-atmosphere-filtering", 0.025),
+        PM.modify_recipe_productivity("pm-carbon-dioxide-gas", 0.025),
+        PM.modify_recipe_productivity("pm-advanced-carbon-dioxide-atmosphere-filtering", 0.025),
+        PM.modify_recipe_productivity("pm-trace-gas", 0.025),
+        PM.modify_recipe_productivity("pm-advanced-trace-gas-atmosphere-filtering", 0.025),
+    },
+    prerequisites = {"space-science-pack"},
+    max_level = "infinite",
+    unit =
+    {
+      count_formula = "1.25^L*100",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    }
+  },
 
 --MARK: AC science
 --MARK: LA science
