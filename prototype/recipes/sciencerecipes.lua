@@ -199,7 +199,7 @@ data:extend({
     allow_productivity = true,
     ingredients = 
     {
-        PM.ingredient("pm-industrial-noble-gas", 120, "fluid"),
+        PM.ingredient("pm-industrial-noble-gas", 80, "fluid"),
         PM.ingredient("pm-science-bottle", 1)
     },
     results = 

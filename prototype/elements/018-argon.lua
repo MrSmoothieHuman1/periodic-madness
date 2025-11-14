@@ -27,25 +27,25 @@ data:extend({
     type = "recipe",
     name = "pm-argon-air-filter",
     enabled = false,
-    energy_required = 6,
+    energy_required = 4,
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-advanced-air-filter", 1),
-        --PM.ingredient("pm-", 6, "fluid"),
-        PM.ingredient("pm-iodine", 2),
-        PM.ingredient("pm-lightweight-framing", 3)
+        PM.ingredient("pm-advanced-air-filter", 2),
+        PM.ingredient("sulfur", 4),
+        PM.ingredient("pm-iodine", 4),
+        PM.ingredient("pm-lightweight-framing", 6)
     },
     results = 
     {
-        PM.product("pm-argon-air-filter", 1)
+        PM.product("pm-argon-air-filter", 2)
     }
   },
   {
     type = "recipe",
     name = "pm-argon-gas",
     enabled = false,
-    energy_required = 6,
+    energy_required = 2,
     category = "pm-atmospheric-condensing",
     main_product = "pm-argon-gas",
     ingredients =

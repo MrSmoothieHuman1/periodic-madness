@@ -26,25 +26,25 @@ data:extend({
     type = "recipe",
     name = "pm-krypton-air-filter",
     enabled = false,
-    energy_required = 6,
+    energy_required = 4,
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-advanced-air-filter", 1),
-        PM.ingredient("pm-potassium", 3),
-        PM.ingredient("pm-iodine", 2),
-        PM.ingredient("pm-lightweight-framing", 3)
+        PM.ingredient("pm-advanced-air-filter", 2),
+        PM.ingredient("pm-potassium", 4),
+        PM.ingredient("pm-iodine", 4),
+        PM.ingredient("pm-lightweight-framing", 6)
     },
     results = 
     {
-        PM.product("pm-krypton-air-filter", 1)
+        PM.product("pm-krypton-air-filter", 2)
     }
   },
   {
     type = "recipe",
     name = "pm-krypton-gas",
     enabled = false,
-    energy_required = 6,
+    energy_required = 2,
     category = "pm-atmospheric-condensing",
     main_product = "pm-krypton-gas",
     ingredients =
