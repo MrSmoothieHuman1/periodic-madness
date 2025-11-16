@@ -2071,6 +2071,7 @@ data:extend({
     max_health = 125,
     corpse = "pm-evaporator",
     dying_explosion = "assembling-machine-1-explosion",
+    forced_symmetry = "horizontal",
     resistances =
     {
       {
@@ -2161,6 +2162,7 @@ data:extend({
     next_upgrade = "pm-molten-inator-2",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
+    forced_symmetry = "horizontal",
     working_sound =
     {
       sound =
@@ -2260,6 +2262,7 @@ data:extend({
     next_upgrade = "pm-cold-inator-2",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
+    forced_symmetry = "horizontal",
     working_sound =
     {
       sound =
@@ -2361,6 +2364,7 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
     module_slots = 1,
+    forced_symmetry = "horizontal",
     working_sound =
     {
       sound =
@@ -2461,6 +2465,7 @@ data:extend({
     next_upgrade = "pm-cold-inator-3",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
+    forced_symmetry = "horizontal",
     working_sound =
     {
       sound =
@@ -5804,6 +5809,7 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     allowed_effects = PM.all_effects(),
     module_slots = 2,
+    forced_symmetry = "horizontal",
     resistances =
     {
       {
@@ -7966,6 +7972,7 @@ data:extend({
   fast_replaceable_group = "pm-molteninator",
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["-inator"],
+  forced_symmetry = "horizontal",
   working_sound =
   {
     sound =
@@ -8081,6 +8088,7 @@ data:extend({
   next_upgrade = "pm-cold-inator-3",
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["-inator"],
+  forced_symmetry = "horizontal",
   working_sound =
   {
     sound =
