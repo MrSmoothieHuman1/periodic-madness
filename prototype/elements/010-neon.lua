@@ -31,9 +31,9 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-advanced-air-filter", 2),
-        PM.ingredient("pm-carbon", 4),
+        PM.ingredient("pm-carbon", 3),
         PM.ingredient("pm-iodine", 4),
-        PM.ingredient("pm-lightweight-framing", 6)
+        PM.ingredient("pm-lightweight-framing", 5)
     },
     results = 
     {
