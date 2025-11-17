@@ -83,7 +83,7 @@ data:extend({
         type = "recipe",
         name = "pm-barium-radium-sulfate",
         enabled = false,
-        energy_required = 10,
+        energy_required = 8,
         category = "pm-acids",
         subgroup = "pm-radium-aem",
         order = "b",
@@ -96,7 +96,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-barium-radium-sulfate", 6)
+            PM.product("pm-barium-radium-sulfate", 8)
         }
     },
     {
@@ -110,14 +110,14 @@ data:extend({
         main_product = "pm-barium-radium-carbonate",
         ingredients =
         {
-            PM.ingredient("pm-barium-radium-sulfate", 2),
+            PM.ingredient("pm-barium-radium-sulfate", 4),
             PM.ingredient("pm-sodium-bicarbonate", 4),
             PM.ingredient("pm-cobalt-catalyst", 2)
         },
         results =
         {
-            PM.product("pm-barium-radium-carbonate", 1),
-            PM.product_chance("pm-barium-radium-carbonate", 1, 0.66),
+            PM.product("pm-barium-radium-carbonate", 2),
+            PM.product_chance("pm-barium-radium-carbonate", 1, 0.75),
             PM.product("pm-cobalt-catalyst", 2),
         }
     },
@@ -125,7 +125,7 @@ data:extend({
         type = "recipe",
         name = "pm-barium-radium-carbonate-seperation",
         enabled = false,
-        energy_required = 3.5,
+        energy_required = 3,
         category = "pm-mixing",
         subgroup = "pm-radium-aem",
         order = "d",
@@ -139,7 +139,7 @@ data:extend({
         results =
         {
             PM.product_chance("pm-barium-nitrate", 1, 0.33),
-            PM.product_chance("pm-radium-sulfate", 1, 0.33),
+            PM.product_chance("pm-radium-sulfate", 1, 0.34),
             PM.product_chance("pm-barium-radium-sulfate", 1, 0.33),
         }
     },
@@ -180,7 +180,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_chance("pm-radium-ore", 2, 0.5),
+            PM.product_chance("pm-radium-ore", 2),
             PM.product_chance("pm-radium-sulfate", 1, 0.5),
             PM.product("pm-hot-coolant", 1, "fluid"),
         }
