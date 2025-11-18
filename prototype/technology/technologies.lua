@@ -4804,6 +4804,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/niobium-processing.png",
     effects =
     {
+      PM.unlock_recipe("pm-coltan"),
+      PM.unlock_recipe("pm-coltan-powder"),
+      PM.unlock_recipe("pm-tantalite-niobite-tailings"),
       PM.unlock_recipe("pm-niobite-oxide"),
       PM.unlock_recipe("pm-niobium-ore"),
       PM.unlock_recipe("pm-niobium-plate"),
