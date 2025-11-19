@@ -137,6 +137,7 @@ require("prototype.entity.stickers")
 require("prototype.entity.enemies")
 require("prototype.entity.pollution-limits")
 require("prototype.entity.heat-exchangers")
+require("prototype.entity.mining-drills")
 
 require("prototype.achievements")
 require("prototype.robots")

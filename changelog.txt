@@ -20,6 +20,7 @@ Date: 2025-28-09
     - Remodelled the atmospheric condenser, and added diode lights to it!
     - Added a tier 2 atmospheric condenser. you'll need it.
     - Added new technologies and infinite bonus technologies to post-space science. Not all of them though, some gotta be saved for the post-game ;)
+    - Added mining drill 3's! they have a 75% drain rate, a larger radius and an extra module slot, totaling to 5.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
