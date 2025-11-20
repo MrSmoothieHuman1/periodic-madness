@@ -5361,6 +5361,30 @@ data:extend({
       time = 100
     }
   },
+  {
+    type = "technology",
+    name = "pm-mixing-material-processing-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/osmium-fluid-handling.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-mixing-material-processing-2"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
 
 
 --MARK: AEM science
