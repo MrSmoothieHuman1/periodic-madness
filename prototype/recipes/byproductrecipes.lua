@@ -266,6 +266,29 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-cobaltite-washing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/cobaltite-washing.png",
+    category = "pm-mixing",
+    enabled = false,
+    energy_required = 6,
+    subgroup = "pm-cobalt-tm",
+    order = "cc",
+    allow_decomposition = false,
+    ingredients =
+    {
+      PM.ingredient("pm-cobaltite", 6),
+      PM.ingredient("water", 25, "fluid"),
+      PM.ingredient("pm-sodium-hydroxide", 5, "fluid")
+    },
+    results =
+    {
+        PM.product_range("pm-ferrous-waste-water", 15, 22.5, "fluid"),
+        PM.product_range("pm-sulfuric-waste-water", 15, 22.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-ferrous-waste-water",
     category = "pm-mixing",
     subgroup = "pm-iron-tm",

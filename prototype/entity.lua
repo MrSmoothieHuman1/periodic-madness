@@ -4688,6 +4688,8 @@ data:extend({
     fast_replaceable_group = "pm-chemical-plant",
     module_slots = 4,
     allowed_effects = PM.all_effects(),
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["chemical-plant"],
     graphics_set = 
     {
     animation = make_4way_animation_from_spritesheet({

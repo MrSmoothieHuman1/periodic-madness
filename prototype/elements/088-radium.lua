@@ -182,7 +182,7 @@ data:extend({
         {
             PM.product_chance("pm-radium-ore", 2),
             PM.product_chance("pm-radium-sulfate", 1, 0.5),
-            PM.product("pm-hot-coolant", 1, "fluid"),
+            PM.catalyst("pm-hot-coolant", 1, 1, "fluid"),
         }
     },
     {

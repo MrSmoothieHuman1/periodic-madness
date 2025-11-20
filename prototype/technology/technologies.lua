@@ -1523,11 +1523,12 @@ data:extend({
       PM.unlock_recipe("pm-copper-froth-seperation"),
       PM.unlock_recipe("pm-cobalt-blue-seperation"),
       PM.unlock_recipe("pm-copper-tailings-looping"),
+      PM.unlock_recipe("pm-cobaltite-washing"),
       PM.unlock_recipe("pm-cobalt-plate"),
       PM.unlock_recipe("pm-molten-cobalt"),
       PM.unlock_recipe("pm-cobalt-plate-cooling")
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-tempature-inators"},
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-tempature-inators", "pm-waste-water-byproduct-handling"},
     unit =
     {
       count = 100,
