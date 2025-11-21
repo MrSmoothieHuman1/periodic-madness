@@ -3282,7 +3282,7 @@ data:extend({
           line_length = 1,
           repeat_count = 32,
           draw_as_shadow = true,
-          shift = util.by_pixel(42, 0),
+          shift = util.by_pixel(40, 0),
           scale = 0.5
         }
       }
