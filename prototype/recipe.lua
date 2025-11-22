@@ -4666,7 +4666,7 @@ data:extend({
     ingredients = 
     {
       PM.ingredient("pm-saw", 1),
-      PM.ingredient("pm-garnet", 8)
+      PM.ingredient("pm-garnet", 12)
     },
     results = 
     {
