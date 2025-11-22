@@ -140,6 +140,26 @@ circuit_connector_definitions["catalyst-cracker"] = circuit_connector_definition
     { variation = 25, main_offset = util.by_pixel(-39.75, -17), shadow_offset = util.by_pixel(-39.75, -17), show_shadow = true },
   }
 )
+circuit_connector_definitions["crystallizer"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation =  0, main_offset = util.by_pixel( 59.375,  36.25), shadow_offset = util.by_pixel( 59.375,  36.25), show_shadow = true },
+    { variation =  0, main_offset = util.by_pixel(-132.625,  36.25), shadow_offset = util.by_pixel(-132.625,  36.25), show_shadow = true },
+    { variation =  0, main_offset = util.by_pixel( 59.375, -123.75), shadow_offset = util.by_pixel( 59.375, -123.75), show_shadow = true },
+    { variation =  0, main_offset = util.by_pixel(-132.625, -123.75), shadow_offset = util.by_pixel(-132.625, -123.75), show_shadow = true },
+  }
+)
+circuit_connector_definitions["atmospheric-condenser"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 22, main_offset = util.by_pixel(-34.75,  34.375), shadow_offset = util.by_pixel(-34.75,  34.375), show_shadow = true },
+    { variation = 22, main_offset = util.by_pixel(-34.75,  34.375), shadow_offset = util.by_pixel(-34.75,  34.375), show_shadow = true },
+    { variation = 22, main_offset = util.by_pixel(-34.75,  34.375), shadow_offset = util.by_pixel(-34.75,  34.375), show_shadow = true },
+    { variation = 22, main_offset = util.by_pixel(-34.75,  34.375), shadow_offset = util.by_pixel(-34.75,  34.375), show_shadow = true },
+  }
+)
 
 
 function fireutil.create_magnesium_fire_pictures(opts)
@@ -1632,7 +1652,7 @@ data:extend({
     },
     energy_usage = "340kW",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 2,
-    circuit_connector = circuit_connector_definitions["assembling-machine"],
+    circuit_connector = circuit_connector_definitions["atmospheric-condenser"],
     graphics_set = 
     {
     status_colors = pm_diode_status_colors(),
@@ -3864,6 +3884,8 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "200kW",
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
+    circuit_connector = circuit_connector_definitions["crystallizer"],
     graphics_set = 
   {
     animation =
@@ -8668,7 +8690,7 @@ fluid_boxes =
     },
     energy_usage = "460kW",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 2,
-    circuit_connector = circuit_connector_definitions["assembling-machine"],
+    circuit_connector = circuit_connector_definitions["atmospheric-condenser"],
     graphics_set = 
     {
     status_colors = pm_diode_status_colors(),
