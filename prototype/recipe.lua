@@ -4728,9 +4728,10 @@ data:extend({
         PM.ingredient("pm-advanced-processing-unit", 1),
         PM.ingredient("pm-fluid-circuit", 2),
         PM.ingredient("pm-aluminium-plate", 6),
-        PM.ingredient("pm-polyethylene-plastic", 12)
+        PM.ingredient("pm-polyethylene-plastic", 6),
+        PM.ingredient("pm-space-hardened-shielding", 1)
     },
-    results = 
+    results =
     {
         PM.product("pm-space-processing-unit", 1)
     }
@@ -5132,5 +5133,46 @@ data:extend({
         PM.catalyst("pm-hot-light-coolant", 15, 15, "fluid", 1),
         PM.product("pm-graphene", 3)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-silicon-on-sapphire",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-crystallisation",
+    allow_productivity = true,
+    main_product = "pm-silicon-on-sapphire",
+    ingredients =
+    {
+        PM.ingredient("pm-silicon-wafer", 3),
+        PM.ingredient("pm-silane", 7.5, "fluid", 2),
+        PM.ingredient("pm-sapphire-dust", 10),
+        PM.ingredient("pm-aluminium-plate", 2),
+        PM.ingredient("pm-light-coolant", 15, "fluid", 1),
+    },
+    results =
+    {
+        PM.catalyst("pm-hot-light-coolant", 15, 15, "fluid", 1),
+        PM.product("pm-silicon-on-sapphire", 3)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-space-hardened-shielding",
+    enabled = false,
+    energy_required = 9,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-silicon-on-sapphire", 4),
+        PM.ingredient("pm-silicon-carbide", 3),
+        PM.ingredient("pm-radiation-resistant-panelling", 8),
+        PM.ingredient("pm-light-coolant", 15, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-space-hardened-shielding", 2)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

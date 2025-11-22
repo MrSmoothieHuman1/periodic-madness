@@ -6915,6 +6915,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-silicon-on-sapphire"),
+        PM.unlock_recipe("pm-space-hardened-shielding"),
         PM.unlock_recipe("pm-space-processing-unit"),
         PM.unlock_recipe("pm-space-processing-unit-satellite")
     },

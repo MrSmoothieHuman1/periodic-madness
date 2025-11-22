@@ -1767,6 +1767,22 @@ data:extend({
     order = "d",
     stack_size = 250
   },
+  {
+    type = "item",
+    name = "pm-silicon-on-sapphire",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/graphene.png",
+    subgroup = "pm-processing-units",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "pm-space-hardened-shielding",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/graphene.png",
+    subgroup = "pm-processing-units",
+    stack_size = 25
+  },
 
   {
     type = "item",
