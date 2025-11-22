@@ -45,6 +45,46 @@ Date: 2025-28-09
     - Changed the atmospheric condenser to have more output fluidboxes, to match its new model.
     - Changed the recipe of transistors to take less carbon and use 1 rubber.
     - Doubled amount of radium needed for AEM packs, which is still a better ratio then before.
+    
+---------------------------------------------------------------------------------------------------
+Version: 0.7.007
+Date: 2025-22-11
+  The god forbid a man(?) want to work on 0.8 Update:
+
+  Fixes:
+    - Fixed stainless steel tanks not merging in the factoriopedia.
+    - Fixed stainless steel tanks lowering the pipeline extent unintentionally.
+    - Fixed crystallizers not connecting to the circuit network.
+    - Fixed the stainless steel pump not having visible circuit connections.
+    - Fixed stainless steel tanks taking 11 framing.
+    - Fixed oil reforming recipes not appearing in the signal GUI. no im not fixing any other of these until i get an easy explanation for how these things work :sob:
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.006
+Date: 2025-20-11
+  The its geniunely uninhabitable in my room and these people have me hotfixing PM because of slow bots HELPPPPP Update:
+
+  Fixes:
+    - Made chemical plant 2's connectable to the circuit network.
+    - Buffed robot speed technologies, you now have 2 in AATM science (totalling to 50%) and get to 120% in RN-M science.
+    - Fixed radium ore not having a catalyst output for hot coolant.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.7.005
+Date: 2025-18-11
+  The 10 days for 1 line fixes, thats what i call mod dev Update:
+
+  Additions:
+    - Added a way to turn mixed ore slag into waste water.
+
+  Fixes:
+    - Made evaporators and temp-inators flippable.
+    - Fixed some locales being uncapatalised.
+    - Fixed magnetite being small.. again...
+    - Made copper-tin solder have zirconium processing as a prerequisite. This'll be fixed betterer whenever crucibles become their own technology.
+    - Fixed antimony sulfide not having correct catalysts.
+    - Fixed tantalite oxide not having correct catalysts.
+    - Fixed niobium processing not unlocking all of its recipes.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.004
