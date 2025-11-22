@@ -90,7 +90,7 @@ data.raw["technology"]["electric-energy-distribution-2"].prerequisites = {"chemi
 data.raw["technology"]["fluid-handling"].effects =
 {
   PM.unlock_recipe("barrel"),
-  PM.unlock_recipe("pm-stainless-steel-tank"),
+  PM.unlock_recipe("pm-stainless-steel-storage-tank"),
   PM.unlock_recipe("pm-stainless-steel-pipe"),
   PM.unlock_recipe("pm-stainless-steel-pipe-to-ground"),
   PM.unlock_recipe("pm-stainless-steel-pump"),

@@ -66,7 +66,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-stainless-steel-tank",
+    name = "pm-stainless-steel-storage-tank",
     enabled = false,
     ingredients =
     {
