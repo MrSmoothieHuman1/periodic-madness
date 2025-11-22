@@ -2375,7 +2375,7 @@ data:extend({
           {
             layers =
             {
-              pm_electric_mining_drill2_animation(),
+              pm_electric_mining_drill3_animation(),
               electric_mining_drill_shadow_animation()
             }
           },
@@ -2383,7 +2383,7 @@ data:extend({
           {
             layers =
             {
-              pm_electric_mining_drill_horizontal2_animation(),
+              pm_electric_mining_drill_horizontal3_animation(),
               electric_mining_drill_horizontal_shadow_animation()
             }
           },
@@ -2391,7 +2391,7 @@ data:extend({
           {
             layers =
             {
-              pm_electric_mining_drill2_animation(),
+              pm_electric_mining_drill3_animation(),
               electric_mining_drill_shadow_animation()
             }
           },
@@ -2399,7 +2399,7 @@ data:extend({
           {
             layers =
             {
-              pm_electric_mining_drill_horizontal2_animation(),
+              pm_electric_mining_drill_horizontal3_animation(),
               electric_mining_drill_horizontal_shadow_animation()
             }
           }
