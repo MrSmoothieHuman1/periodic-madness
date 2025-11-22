@@ -800,9 +800,7 @@ data:extend({
       audible_distance_modifier = 0.5,
       max_sounds_per_type = 3
     },
-
-    circuit_wire_connection_points = circuit_connector_definitions["storage-tank"].points,
-    circuit_connector_sprites = circuit_connector_definitions["storage-tank"].sprites,
+    circuit_connector = circuit_connector_definitions["storage-tank"],
     circuit_wire_max_distance = default_circuit_wire_max_distance,
     water_reflection =
     {
