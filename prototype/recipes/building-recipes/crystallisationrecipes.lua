@@ -182,7 +182,146 @@ data:extend({
       PM.product_range("pm-garnet", 6, 10),
       PM.catalyst("pm-hot-coolant", 10, 10, "fluid", 1)
     }
-  }
+  },
+
+  {
+    type = "recipe",
+    name = "pm-ruby",
+    energy_required = 120,
+    enabled = false,
+    category = "pm-crystallisation",
+    main_product = "pm-ruby",
+    ingredients =
+    {
+        PM.ingredient("pm-ruby", 25),
+        PM.ingredient("pm-chromium-ore", 12),
+        PM.ingredient("pm-crucible", 6),
+        PM.ingredient("pm-seed-crystal", 3),
+        PM.ingredient("pm-crystal-slurry", 40, "fluid", 2),
+        PM.ingredient("pm-light-coolant", 20, "fluid", 1)
+    },
+    results =
+    {
+        PM.product_range("pm-ruby", 50, 100),
+        PM.product("pm-hot-light-coolant", 20, "fluid", 1),
+        PM.product_range("pm-crucible", 0, 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-citrine",
+    energy_required = 120,
+    enabled = false,
+    category = "pm-crystallisation",
+    main_product = "pm-citrine",
+    ingredients =
+    {
+        PM.ingredient("pm-citrine", 25),
+        PM.ingredient("pm-industrial-grade-silicon-ore", 12),
+        PM.ingredient("pm-crucible", 6),
+        PM.ingredient("pm-seed-crystal", 3),
+        PM.ingredient("pm-crystal-slurry", 40, "fluid", 2),
+        PM.ingredient("pm-light-coolant", 20, "fluid", 1)
+    },
+    results =
+    {
+        PM.product_range("pm-citrine", 50, 100),
+        PM.product("pm-hot-light-coolant", 20, "fluid", 1),
+        PM.product_range("pm-crucible", 0, 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-emerald",
+    energy_required = 120,
+    enabled = false,
+    category = "pm-crystallisation",
+    main_product = "pm-emerald",
+    ingredients =
+    {
+        PM.ingredient("pm-emerald", 25),
+        PM.ingredient("pm-beryllium-ore", 12),
+        PM.ingredient("pm-crucible", 6),
+        PM.ingredient("pm-seed-crystal", 3),
+        PM.ingredient("pm-crystal-slurry", 40, "fluid", 2),
+        PM.ingredient("pm-light-coolant", 20, "fluid", 1)
+    },
+    results =
+    {
+        PM.product_range("pm-emerald", 50, 100),
+        PM.product("pm-hot-light-coolant", 20, "fluid", 1),
+        PM.product_range("pm-crucible", 0, 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-sapphire",
+    energy_required = 120,
+    enabled = false,
+    category = "pm-crystallisation",
+    main_product = "pm-sapphire",
+    ingredients =
+    {
+        PM.ingredient("pm-sapphire", 25),
+        PM.ingredient("pm-aluminium-ore", 12),
+        PM.ingredient("pm-crucible", 6),
+        PM.ingredient("pm-seed-crystal", 3),
+        PM.ingredient("pm-crystal-slurry", 40, "fluid", 2),
+        PM.ingredient("pm-light-coolant", 20, "fluid", 1)
+    },
+    results =
+    {
+        PM.product_range("pm-sapphire", 50, 100),
+        PM.product("pm-hot-light-coolant", 20, "fluid", 1),
+        PM.product_range("pm-crucible", 0, 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lapis-lazuli",
+    energy_required = 120,
+    enabled = false,
+    category = "pm-crystallisation",
+    main_product = "pm-lapis-lazuli",
+    ingredients =
+    {
+        PM.ingredient("pm-lapis-lazuli", 25),
+        PM.ingredient("sulfur", 12),
+        PM.ingredient("pm-crucible", 6),
+        PM.ingredient("pm-seed-crystal", 3),
+        PM.ingredient("pm-crystal-slurry", 40, "fluid", 2),
+        PM.ingredient("pm-light-coolant", 20, "fluid", 1)
+    },
+    results =
+    {
+        PM.product_range("pm-lapis-lazuli", 50, 100),
+        PM.product("pm-hot-light-coolant", 20, "fluid", 1),
+        PM.product_range("pm-crucible", 0, 6)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-garnet",
+    energy_required = 120,
+    enabled = false,
+    category = "pm-crystallisation",
+    main_product = "pm-garnet",
+    ingredients =
+    {
+        PM.ingredient("pm-garnet", 25),
+        PM.ingredient("pm-manganese-ore", 12),
+        PM.ingredient("pm-crucible", 6),
+        PM.ingredient("pm-seed-crystal", 3),
+        PM.ingredient("pm-crystal-slurry", 40, "fluid", 2),
+        PM.ingredient("pm-light-coolant", 20, "fluid", 1)
+    },
+    results =
+    {
+        PM.product_range("pm-garnet", 50, 100),
+        PM.product("pm-hot-light-coolant", 20, "fluid", 1),
+        PM.product_range("pm-crucible", 0, 6)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 
