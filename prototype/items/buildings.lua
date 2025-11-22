@@ -933,7 +933,7 @@ data:extend({
     place_result = "pm-stone-coke-oven-3",
     stack_size = 75
   },
-{
+  {
     type = "item",
     name = "pm-electric-coke-oven",
     icon_size = 64,
@@ -941,6 +941,16 @@ data:extend({
     subgroup = "smelting-machine",
     order = "i",
     place_result = "pm-electric-coke-oven",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-electric-mining-drill-3",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/electric-mining-drill-3.png",
+    subgroup = "extraction-machine",
+    order = "ba",
+    place_result = "pm-electric-mining-drill-3",
     stack_size = 50
   },
 })

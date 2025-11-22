@@ -1642,10 +1642,10 @@ data:extend({
   {
     type = "mining-drill",
     name = "pm-electric-mining-drill-3",
-    icon = "__periodic-madness__/graphics/icons/buildings/electric-mining-drill-2.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/electric-mining-drill-3.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 1, result = "pm-electric-mining-drill-2" },
+    minable = { mining_time = 1, result = "pm-electric-mining-drill-3" },
     max_health = 1000,
     resource_categories = { "basic-solid" },
     corpse = "electric-mining-drill-remnants",
