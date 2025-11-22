@@ -1334,6 +1334,7 @@ data:extend({
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
     order = "a",
+    hide_from_signal_gui = false,
     ingredients =
     {
       PM.ingredient("pm-refinery-gases", 100, "fluid"),
@@ -1366,6 +1367,7 @@ data:extend({
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
     order = "b",
+    hide_from_signal_gui = false,
     ingredients =
     {
       PM.ingredient("pm-petrol", 90, "fluid"),
@@ -1398,6 +1400,7 @@ data:extend({
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
     order = "c",
+    hide_from_signal_gui = false,
     ingredients =
     {
       PM.ingredient("pm-naptha", 80, "fluid"),
@@ -1430,6 +1433,7 @@ data:extend({
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
     order = "d",
+    hide_from_signal_gui = false,
     ingredients =
     {
       PM.ingredient("pm-kerosene", 70, "fluid"),
@@ -1462,6 +1466,7 @@ data:extend({
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
     order = "e",
+    hide_from_signal_gui = false,
     ingredients =
     {
       PM.ingredient("pm-diesel", 60, "fluid"),
@@ -1494,6 +1499,7 @@ data:extend({
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
     order = "f",
+    hide_from_signal_gui = false,
     ingredients =
     {
       PM.ingredient("pm-lubricating-oils", 50, "fluid"),
@@ -1526,6 +1532,7 @@ data:extend({
     category = "pm-cracking",
     subgroup = "pm-oil-reforming",
     order = "g",
+    hide_from_signal_gui = false,
     ingredients =
     {
       PM.ingredient("pm-fuel-oils", 40, "fluid"),
