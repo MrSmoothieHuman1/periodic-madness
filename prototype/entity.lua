@@ -712,6 +712,7 @@ data:extend({
     {
       volume = 50000,
       pipe_covers = pm_stainlesspipecoverspictures(),
+      max_pipeline_extent = 560,
       pipe_connections =
       {
         { direction = defines.direction.north--[[@as int]], position = {-1, -1} },
