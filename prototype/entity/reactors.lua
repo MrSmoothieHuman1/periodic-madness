@@ -232,7 +232,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
 	return reactor
 end
 
-coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
+--[[coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
   10, {"pm-reactor-coolant-burning-with-exhuast"},
     {
       production_type = "input",
@@ -240,22 +240,22 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
       pipe_connections = {
       {
         flow_direction = "input",
-        direction = defines.direction.north--[[@as int]],
+        direction = defines.direction.north
         position = {-2, -2},
       },
       {
         flow_direction = "input",
-        direction = defines.direction.west--[[@as int]],
+        direction = defines.direction.west
         position = {-2, 2},
       },
       {
         flow_direction = "output",
-        direction = defines.direction.south--[[@as int]],
+        direction = defines.direction.south
         position = {-2, 2},
       },
       {
         flow_direction = "output",
-        direction = defines.direction.east--[[@as int]],
+        direction = defines.direction.east
         position = {2, 2},
       },
     },
@@ -266,31 +266,32 @@ coolant_reactor(data.raw["reactor"]["nuclear-reactor"], --MARK: Nuclear Reactor
     pipe_connections = {
       {
         flow_direction = "input",
-        direction = defines.direction.north--[[@as int]],
+        direction = defines.direction.north
         position = {2, -2},
       },
       {
         flow_direction = "input",
-        direction = defines.direction.east--[[@as int]],
+        direction = defines.direction.east
         position = {2, -2},
       },
       {
         flow_direction = "output",
-        direction = defines.direction.south--[[@as int]],
+        direction = defines.direction.south
         position = {2, 2},
       },
       {
         flow_direction = "output",
-        direction = defines.direction.west--[[@as int]],
+        direction = defines.direction.west
         position = {-2, -2},
       },
     },
   }
-)
+)--]]
 data.raw["reactor"]["nuclear-reactor"].neighbour_bonus = 0.5
 
 data:extend({
-  coolant_reactor{ --MARK: Polonium Reactor
+  --coolant_reactor{ --MARK: Polonium Reactor
+  {
     type = "reactor",
     name = "pm-polonium-reactor",
     icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
@@ -351,7 +352,7 @@ data:extend({
       }
     },
     ---MARK: Polonium Coolant
-    coolant_life = 10,
+    --[[coolant_life = 10,
     coolant_categories = {"pm-reactor-coolant-burning-with-exhuast"},
     coolant_fluid_box =
     {
@@ -361,22 +362,22 @@ data:extend({
       {
         {
           flow_direction = "input",
-          direction = defines.direction.north--[[@as int]],
+          direction = defines.direction.north,
           position = {-2, -2},
         },
         {
           flow_direction = "input",
-          direction = defines.direction.west--[[@as int]],
+          direction = defines.direction.west,
           position = {-2, 2},
         },
         {
           flow_direction = "output",
-          direction = defines.direction.south--[[@as int]],
+          direction = defines.direction.south,
           position = {-2, 2},
         },
         {
           flow_direction = "output",
-          direction = defines.direction.east--[[@as int]],
+          direction = defines.direction.east,
           position = {2, 2},
         },
       },
@@ -387,26 +388,26 @@ data:extend({
       pipe_connections = {
         {
           flow_direction = "input",
-          direction = defines.direction.north--[[@as int]],
+          direction = defines.direction.north,
           position = {2, -2},
         },
         {
           flow_direction = "input",
-          direction = defines.direction.east--[[@as int]],
+          direction = defines.direction.east,
           position = {2, -2},
         },
         {
           flow_direction = "output",
-          direction = defines.direction.south--[[@as int]],
+          direction = defines.direction.south,
           position = {2, 2},
         },
         {
           flow_direction = "output",
-          direction = defines.direction.west--[[@as int]],
+          direction = defines.direction.west,
           position = {-2, -2},
         },
       }
-    },
+    }, --]]
     collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     --MARK: Polonium graphics

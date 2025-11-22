@@ -8,5 +8,5 @@ event_handler.add_libraries{
 	require("runtime.pollution-buildings"),
 	require("compatibility.automatic-underground-pipe-connectors"),
 	require("runtime.requester-chest-storage"),
-	require("runtime.reactor-cooling"),
+	--require("runtime.reactor-cooling"),
 }
