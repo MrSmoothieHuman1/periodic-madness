@@ -43,6 +43,7 @@ Date: 2025-28-09
     - Updated almost all of the technology icons to now have shadows.
     - Changed the atmospheric condenser to have more output fluidboxes, to match its new model.
     - Changed the recipe of transistors to take less carbon and use 1 rubber.
+    - Doubled amount of radium needed for AEM packs, which is still a better ratio then before.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.004

@@ -105,7 +105,7 @@ data:extend({
         PM.ingredient("pm-beryllium-plate", 6),
         PM.ingredient("pm-magnesium-plate", 4),
         PM.ingredient("pm-barium-ore", 4),
-        PM.ingredient("pm-radium-ore", 2),
+        PM.ingredient("pm-radium-ore", 4),
         PM.ingredient("pm-science-bottle", 1)
     },
     enabled = false,
@@ -392,7 +392,7 @@ data:extend({
         PM.ingredient("pm-beryllium-plate", 6),
         PM.ingredient("pm-magnesium-plate", 4),
         PM.ingredient("pm-barium-ore", 4),
-        PM.ingredient("pm-radium-ore", 2),
+        PM.ingredient("pm-radium-ore", 4),
         PM.ingredient("pm-plastic-science-bottle", 1)
     },
     enabled = false,
