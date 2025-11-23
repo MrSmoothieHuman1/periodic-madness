@@ -98,6 +98,61 @@ data:extend({
         PM.catalyst_chance("pm-catalyst-container", 3, 0.25, 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-rocket-control-unit",
+    enabled = false,
+    energy_required = 35,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+      {
+        PM.ingredient("pm-CRT", 1),
+        PM.ingredient("pm-fluid-circuit", 3),
+        PM.ingredient("processing-unit", 3),
+        PM.ingredient("pm-heavy-lubricant", 8, "fluid"),
+        PM.ingredient("pm-polyethylene-plastic", 6),
+      },
+    results = 
+    {
+      PM.product("pm-rocket-control-unit", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-space-processing-unit-rocket-control-unit",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
+    enabled = false,
+    energy_required = 28,
+    category = "crafting-with-fluid",
+    subgroup = "pm-rocket-parts",
+    order = "da",
+    allow_productivity = true,
+    ingredients =
+      {
+        PM.ingredient("pm-CRT", 1),
+        PM.ingredient("pm-space-processing-unit", 3),
+        PM.ingredient("pm-light-lubricant", 6, "fluid"),
+        PM.ingredient("pm-polyethylene-plastic", 2),
+        PM.ingredient("pm-mylar", 2)
+      },
+    results = 
+    {
+      PM.product("pm-rocket-control-unit", 1)
+    }
+  },
 
 --MARK: Rocket parts
   {
@@ -164,6 +219,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-space-processing-unit-satellite",
+    icons =
+    {
+      {
+        icon = "__base__/graphics/icons/satellite.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     enabled = false,
     energy_required = 15,
     subgroup = "pm-rocket-launchables",

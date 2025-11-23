@@ -2248,26 +2248,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-rocket-control-unit",
-    enabled = false,
-    energy_required = 35,
-    category = "crafting-with-fluid",
-    allow_productivity = true,
-    ingredients =
-      {
-        PM.ingredient("pm-CRT", 1),
-        PM.ingredient("pm-fluid-circuit", 3),
-        PM.ingredient("processing-unit", 3),
-        PM.ingredient("pm-heavy-lubricant", 8, "fluid"),
-        PM.ingredient("pm-polyethylene-plastic", 6),
-      },
-    results = 
-    {
-      PM.product("pm-rocket-control-unit", 1)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-ruby-dust",
     energy_required = 5,
     category = "pm-crushing",
@@ -5213,5 +5193,5 @@ data:extend({
         PM.product_chance("pm-isogrid-crucible", 2, 0.85),
         PM.product("pm-industrial-noble-gas", 15, "fluid")
     }
-  }
+  },
 } --[[@as data.RecipePrototype[] ]])
