@@ -1783,6 +1783,14 @@ data:extend({
     subgroup = "pm-processing-units",
     stack_size = 25
   },
+  {
+    type = "item",
+    name = "pm-high-density-structure",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/graphene.png",
+    subgroup = "pm-processing-units",
+    stack_size = 25
+  },
 
   {
     type = "item",

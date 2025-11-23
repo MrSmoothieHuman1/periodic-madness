@@ -846,6 +846,24 @@ data.raw["recipe"]["satellite"].ingredients =
     PM.ingredient("pm-rocket-control-unit", 5)
 }
 data.raw["recipe"]["satellite"].energy_required = 15
+data.raw["recipe"]["rocket-silo"].ingredients =
+{
+    PM.ingredient("refined-concrete", 250),
+    PM.ingredient("pm-advanced-processing-unit", 50),
+    PM.ingredient("pm-heavyweight-framing", 100),
+    PM.ingredient("pm-high-density-structure", 20),
+    PM.ingredient("pm-fluid-circuit", 75),
+    PM.ingredient("pm-advanced-electric-engine-unit", 25),
+    PM.ingredient("pm-corrosion-resistant-tubing", 50)
+}
+data.raw["recipe"]["cargo-landing-pad"].ingredients =
+{
+    PM.ingredient("refined-concrete", 75),
+    PM.ingredient("pm-heavyweight-panelling", 25),
+    PM.ingredient("pm-advanced-electric-engine", 10),
+    PM.ingredient("pm-advanced-processing-unit", 15),
+    PM.ingredient("pm-high-density-structure", 5)
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
