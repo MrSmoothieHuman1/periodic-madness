@@ -6554,7 +6554,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-
+        PM.unlock_recipe("pm-molten-yellow-high-density-structure-alloy"),
+        PM.unlock_recipe("pm-molten-blue-high-density-structure-alloy"),
+        PM.unlock_recipe("pm-molten-high-density-structure-mixture"),
+        PM.unlock_recipe("pm-isogrid-crucible"),
+        PM.unlock_recipe("pm-high-density-structure")
     },
     prerequisites = {"pm-inert-gas-metallurgy"},
     unit =

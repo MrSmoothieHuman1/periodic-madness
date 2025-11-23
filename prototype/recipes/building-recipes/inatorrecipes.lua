@@ -345,7 +345,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-osmiridium-plate", 6),
-        PM.ingredient("pm-molten-platinum", 15, "fluid"),
+        PM.ingredient("pm-molten-platinum", 10, "fluid"),
         PM.ingredient("pm-molten-steel", 2.5, "fluid"),
         PM.ingredient("pm-gold-plate", 8),
         PM.ingredient("pm-carbon", 24)
@@ -365,7 +365,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-rhenium-plate", 6),
-        PM.ingredient("pm-molten-tungsten", 15, "fluid"),
+        PM.ingredient("pm-molten-tungsten", 10, "fluid"),
         PM.ingredient("pm-molten-steel", 2.5, "fluid"),
         PM.ingredient("pm-rhodium-plate", 8),
         PM.ingredient("pm-chromium-ore", 12)
@@ -380,13 +380,13 @@ data:extend({
     name = "pm-molten-high-density-structure-mixture",
     enabled = false,
     energy_required = 48,
-    category = "pm-coldening",
+    category = "pm-moltening", --should be in blast furnace
     ingredients =
     {
         PM.ingredient("pm-molten-yellow-high-density-structure-alloy", 10, "fluid"),
         PM.ingredient("pm-molten-blue-high-density-structure-alloy", 10, "fluid")
     },
-    results = 
+    results =
     {
         PM.product("pm-molten-high-density-structure-mixture", 20, "fluid")
     }

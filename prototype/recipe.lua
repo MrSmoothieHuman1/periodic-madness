@@ -5175,4 +5175,43 @@ data:extend({
         PM.product("pm-space-hardened-shielding", 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-isogrid-crucible",
+    enabled = false,
+    energy_required = 7.5,
+    ingredients =
+    {
+        PM.ingredient("pm-crucible", 2),
+        PM.ingredient("pm-arsenic-ore", 3),
+        PM.ingredient("pm-antimony-ore", 3),
+        PM.ingredient("copper-plate", 6),
+        PM.ingredient("pm-magnesium-oxide", 4)
+    },
+    results =
+    {
+        PM.product("pm-isogrid-crucible", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-high-density-structure",
+    enabled = false,
+    energy_required = 15,
+    category = "pm-advanced-crafting-with-fluid",
+    allow_productivity = true,
+    main_product = "pm-high-density-structure",
+    ingredients =
+    {
+        PM.ingredient("pm-isogrid-crucible", 2),
+        PM.ingredient("pm-molten-high-density-structure-mixture", 15, "fluid"),
+        PM.ingredient("pm-industrial-noble-gas", 30, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-high-density-structure", 2),
+        PM.product_chance("pm-isogrid-crucible", 2, 0.85),
+        PM.product("pm-industrial-noble-gas", 15, "fluid")
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
