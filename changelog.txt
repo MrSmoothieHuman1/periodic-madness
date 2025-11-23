@@ -47,6 +47,9 @@ Date: 2025-28-09
     - Doubled amount of radium needed for AEM packs, which is still a better ratio then before.
     - Slightly lowered the profile growth of the coil heater.
 
+  Fixes:
+    - Updated the advanced mining drill 1 technology icon.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.007
 Date: 2025-22-11

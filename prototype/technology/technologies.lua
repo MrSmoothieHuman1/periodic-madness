@@ -1398,7 +1398,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-advanced-mining-drill-1",
-    icon_size = 128,
+    icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/mining-drill-1.png",
     effects =
     {
@@ -6645,7 +6645,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-mining-drill-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/mining-drill-2.png",
     effects =
     {
         PM.unlock_recipe("pm-electric-mining-drill-3")
