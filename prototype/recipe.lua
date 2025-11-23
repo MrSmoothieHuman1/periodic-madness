@@ -4992,8 +4992,8 @@ data:extend({
     ingredients = 
     {
         PM.ingredient("pm-catalyst-container", 1),
-        PM.ingredient("pm-cobalt-plate", 3),
-        PM.ingredient("pm-manganese-plate", 3),
+        PM.ingredient("pm-cobalt-plate", 4),
+        PM.ingredient("pm-manganese-plate", 4),
         PM.ingredient("pm-hydrogen-bromide", 7.5, "fluid")
     },
     results = 
@@ -5084,7 +5084,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-carbon", 6),
+        PM.ingredient("pm-carbon", 12),
         PM.ingredient("pm-industrial-grade-silicon-ore", 3),
         PM.ingredient("steam", 50, "fluid")
     },
@@ -5146,7 +5146,7 @@ data:extend({
     {
         PM.ingredient("pm-silicon-wafer", 3),
         PM.ingredient("pm-silane", 7.5, "fluid", 2),
-        PM.ingredient("pm-sapphire-dust", 10),
+        PM.ingredient("pm-sapphire-dust", 12),
         PM.ingredient("pm-aluminium-plate", 2),
         PM.ingredient("pm-light-coolant", 15, "fluid", 1),
     },
