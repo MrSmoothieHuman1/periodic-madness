@@ -1674,7 +1674,7 @@ data:extend({
   {
     type = "item",
     name = "pm-rocket-nozzle-parts",
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/rocket-nozzle-parts.png",
     icon_size = 64,
     subgroup = "pm-rocket-parts",
     order = "c",
