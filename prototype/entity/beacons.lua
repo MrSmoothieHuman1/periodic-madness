@@ -366,10 +366,6 @@ data:extend({
         energy_usage = "1kW",
         profile = 
         {
-          -- a(b^x) + c, where a = 1, b = 1.1 and c = 0
-          1, 
-          1.1, 1.21, 1.331, 1.4641, 1.6105, 1.7715, 1.9487, 2.1435, 2.3579, 2.5937, 2.8531, 3.1384, 3.4522, 3.7974, 4.1772,
-          4.5949, 5.0544, 5.5599, 6.1159, 6.7274, 7.4002, 8.1402, 8.9543, 9.8497
         },
         beacon_counter = "same_type",
         module_slots = 1,
@@ -388,3 +384,9 @@ data.raw["beacon"]["beacon"].icons_positioning =
   {
     {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 3}
   }
+
+local coil_profile = {}
+for i = 1, 50 do
+    table.insert(coil_profile, 1.05^i)
+end
+data.raw["beacon"]["pm-coil-heater"].profile = coil_profile
