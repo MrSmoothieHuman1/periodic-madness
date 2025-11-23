@@ -244,19 +244,21 @@ data:extend({
     type = "recipe",
     name = "pm-sterling-silver-plate",
     enabled = false,
-    energy_required = 4.5,
-    category = "pm-coldening",
+    energy_required = 9,
+    category = "crafting-with-fluid",
     main_product = "pm-sterling-silver-plate",
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-molten-sterling-silver", 10, "fluid"),
+      PM.ingredient("pm-industrial-noble-gas", 15, "fluid"),
       PM.ingredient("pm-crucible", 2)
     },
     results = 
     {
       PM.product("pm-sterling-silver-plate", 5),
-      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+      PM.catalyst_chance("pm-crucible", 2, 0.75, 2),
+      PM.product("pm-industrial-noble-gas", 7.5, "fluid")
     }
   },
   {
