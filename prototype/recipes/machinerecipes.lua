@@ -1733,7 +1733,26 @@ data:extend({
     {
         PM.product("pm-osmium-pipe-to-ground", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-electric-mining-drill-3",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients =
+    {
+      PM.ingredient("pm-electric-mining-drill-2", 1),
+      PM.ingredient("pm-high-density-structure", 3),
+      PM.ingredient("pm-fluid-circuit", 4),
+      PM.ingredient("pm-advanced-processing-unit", 2),
+      PM.ingredient("pm-light-lubricant", 5, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-electric-mining-drill-3", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

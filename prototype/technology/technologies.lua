@@ -6648,9 +6648,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-electric-mining-drill-3")
     },
-    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-mining-drill-2"},
+    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-mining-drill-1"},
     unit =
     {
       count = 800,
