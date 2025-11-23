@@ -337,6 +337,62 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-molten-yellow-high-density-structure-alloy",
+    enabled = false,
+    energy_required = 36,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-osmiridium-plate", 6),
+        PM.ingredient("pm-molten-platinum", 15, "fluid"),
+        PM.ingredient("pm-molten-steel", 2.5, "fluid"),
+        PM.ingredient("pm-gold-plate", 8),
+        PM.ingredient("pm-carbon", 24)
+    },
+    results =
+    {
+        PM.product("pm-molten-yellow-high-density-structure-alloy", 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-blue-high-density-structure-alloy",
+    enabled = false,
+    energy_required = 36,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-rhenium-plate", 6),
+        PM.ingredient("pm-molten-tungsten", 15, "fluid"),
+        PM.ingredient("pm-molten-steel", 2.5, "fluid"),
+        PM.ingredient("pm-rhodium-plate", 8),
+        PM.ingredient("pm-chromium-ore", 12)
+    },
+    results =
+    {
+        PM.product("pm-molten-blue-high-density-structure-alloy", 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-high-density-structure-mixture",
+    enabled = false,
+    energy_required = 48,
+    category = "pm-coldening",
+    ingredients =
+    {
+        PM.ingredient("pm-molten-yellow-high-density-structure-alloy", 10, "fluid"),
+        PM.ingredient("pm-molten-blue-high-density-structure-alloy", 10, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-molten-high-density-structure-mixture", 20, "fluid")
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,
