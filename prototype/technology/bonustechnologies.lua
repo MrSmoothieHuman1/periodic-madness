@@ -188,6 +188,35 @@ data:extend({
     },
     upgrade = true
   },
+  {
+    type = "technology",
+    name = "pm-research-productivity-7",
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      PM.modify("laboratory-productivity", 0.15)
+    },
+    prerequisites = {"pm-research-productivity-6", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 2250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 160
+    },
+    upgrade = true
+  },
 
 --MARK:Lab speed
 {
@@ -244,6 +273,38 @@ data:extend({
       {"pm-alkaline-earth-metal-science-pack", 1}
     },
     time = 120
+  },
+},
+{
+  type = "technology",
+  name = "pm-research-speed-9",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/research-speed.png"),
+  effects =
+  {
+    {
+      type = "laboratory-speed",
+      modifier = 0.8
+    }
+  },
+  prerequisites = {"pm-research-speed-8", "pm-noble-gas-pack-unlock"},
+  upgrade = true,
+  unit =
+  {
+    count = 2000,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1},
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-noble-gas-science-pack", 1}
+    },
+    time = 160
   },
 },
 
@@ -443,7 +504,7 @@ data:extend({
     upgrade = true,
     unit =
     {
-      count = 1000,
+      count = 1800,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -459,6 +520,36 @@ data:extend({
       time = 120
     }
   },
+  {
+    type = "technology",
+    name = "pm-robot-battery-capacity-9",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/robot-battery-4.png",
+    effects =
+    {
+      PM.modify("worker-robot-battery", 0.9)
+    },
+    prerequisites = {"pm-worker-robots-speed-9", "pm-worker-robots-storage-5", "pm-robot-battery-capacity-8"},
+    upgrade = true,
+    unit =
+    {
+      count = 2250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 160
+    }
+  },
 
 --MARK: Robot speed
 {
@@ -469,7 +560,7 @@ data:extend({
   {
     {
       type = "worker-robot-speed",
-      modifier = 0.40 --230%
+      modifier = 0.40 --220%
     }
   },
   prerequisites = {"worker-robots-speed-6", "pm-alkaline-earth-metal-pack-unlock"},
@@ -497,7 +588,7 @@ data:extend({
   {
     {
       type = "worker-robot-speed",
-      modifier = 0.40 --270%
+      modifier = 0.40 --260%
     }
   },
   prerequisites = {"pm-worker-robots-speed-7"},
@@ -525,7 +616,7 @@ data:extend({
   {
     {
       type = "worker-robot-speed",
-      modifier = 0.50 --310%
+      modifier = 0.60 --320%
     }
   },
   prerequisites = {"pm-worker-robots-speed-8", "pm-noble-gas-pack-unlock"},
@@ -573,6 +664,38 @@ data:extend({
       {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
     },
     time = 80
+  },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "pm-worker-robots-storage-5",
+  icons = util.technology_icon_constant_capacity("__base__/graphics/technology/worker-robots-storage.png"),
+  effects =
+  {
+    {
+      type = "worker-robot-storage",
+      modifier = 1
+    }
+  },
+  prerequisites = {"pm-worker-robots-storage-4", "pm-noble-gas-pack-unlock"},
+  unit =
+  {
+    count = 1000,
+    ingredients =
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+    },
+    time = 160
   },
   upgrade = true
 },
@@ -689,6 +812,38 @@ data:extend({
     },
   upgrade = true
 },
+{
+  type = "technology",
+  name = "pm-mining-productivity-9",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+  effects =
+  {
+    {
+      type = "mining-drill-productivity-bonus",
+      modifier = 0.5
+    }
+  },
+  prerequisites = {"pm-mining-productivity-8", "pm-noble-gas-pack-unlock"},
+  unit =
+    {
+      count = 3500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 160
+    },
+  upgrade = true
+},
 
 --MARK: Beacon distribution
 {
@@ -783,6 +938,34 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1}
       },
       time = 120
+    }
+},
+{
+  type = "technology",
+  name = "pm-stronger-beacon-distribution-5",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
+  effects = 
+  {
+    PM.modify("beacon-distribution", 0.125)
+  },
+  prerequisites = {"pm-stronger-beacon-distribution-4", "pm-noble-gas-pack-unlock"},
+  unit =
+    {
+      count = 2000,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 160
     }
 },
 
@@ -928,6 +1111,59 @@ data:extend({
       {"pm-post-transition-metal-science-pack", 1},
       {"pm-metalloid-science-pack", 1},
       {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+    },
+    time = 120
+  },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "pm-physical-projectile-damage-11",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+  effects =
+  {
+    {
+      type = "ammo-damage",
+      ammo_category = "bullet",
+      modifier = 0.75
+    },
+    {
+      type = "turret-attack",
+      turret_id = "gun-turret",
+      modifier = 0.75
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "shotgun-shell",
+      modifier = 0.75
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.30
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "rocket",
+      modifier = 0.45
+    }
+  },
+  prerequisites = {"pm-physical-projectile-damage-10", "pm-noble-gas-pack-unlock"},
+  unit =
+  {
+    count = 2000,
+    ingredients =
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
     },
     time = 120
   },
@@ -1109,6 +1345,54 @@ data:extend({
   },
   upgrade = true
 },
+{
+  type = "technology",
+  name = "pm-weapon-shooting-speed-11",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+  effects =
+  {
+    {
+      type = "gun-speed",
+      ammo_category = "bullet",
+      modifier = 0.5
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "shotgun-shell",
+      modifier = 0.5
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.25
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "rocket",
+      modifier = 0.45
+    }
+  },
+  prerequisites = {"pm-weapon-shooting-speed-10", "pm-noble-gas-pack-unlock"},
+  unit =
+  {
+    count = 1500,
+    ingredients =
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+    },
+    time = 160
+  },
+  upgrade = true
+},
 
 --MARK: Laser damage
 
@@ -1121,9 +1405,9 @@ data:extend({
   icons = util.technology_icon_constant_damage("__base__/graphics/technology/stronger-explosives-3.png"),
   effects =
   {
-  PM.modify_ammo("ammo-damage", "grenade", 0.4),
-  PM.modify_ammo("ammo-damage", "rocket", 0.35),
-  PM.modify_ammo("ammo-damage", "landmine", 0.35)
+    PM.modify_ammo("ammo-damage", "grenade", 0.4),
+    PM.modify_ammo("ammo-damage", "rocket", 0.35),
+    PM.modify_ammo("ammo-damage", "landmine", 0.35)
   },
   prerequisites = {"stronger-explosives-7"},
   unit =
@@ -1140,7 +1424,34 @@ data:extend({
     },
     time = 120
   },
-  upgrade = true
+    upgrade = true
+  },
+  {
+  type = "technology",
+  name = "pm-stronger-explosives-8",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/stronger-explosives-3.png"),
+  effects =
+  {
+    PM.modify_ammo("ammo-damage", "grenade", 0.4),
+    PM.modify_ammo("ammo-damage", "rocket", 0.35),
+    PM.modify_ammo("ammo-damage", "landmine", 0.35)
+  },
+  prerequisites = {"stronger-explosives-7"},
+  unit =
+  {
+    count = 100 * 8,
+    ingredients =
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+    },
+    time = 120
+  },
+    upgrade = true
   },
 
 --MARK: Inserter bonus capacity
@@ -1482,7 +1793,7 @@ data.raw["technology"]["worker-robots-speed-3"].unit.ingredients =
 data.raw["technology"]["worker-robots-speed-4"].prerequisites = {"worker-robots-speed-3"}
 data.raw["technology"]["worker-robots-speed-4"].effects =
 {
-  PM.modify("worker-robot-speed", 0.30) --120%
+  PM.modify("worker-robot-speed", 0.30) --110%
 }
 data.raw["technology"]["worker-robots-speed-4"].unit.ingredients =
 {
@@ -1494,7 +1805,7 @@ data.raw["technology"]["worker-robots-speed-4"].unit.ingredients =
 data.raw["technology"]["worker-robots-speed-5"].prerequisites = {"worker-robots-speed-4", "pm-alkali-metal-pack-unlock"}
 data.raw["technology"]["worker-robots-speed-5"].effects =
 {
-  PM.modify("worker-robot-speed", 0.35) --155%
+  PM.modify("worker-robot-speed", 0.35) --145%
 }
 data.raw["technology"]["worker-robots-speed-5"].unit.ingredients =
 {
@@ -1510,7 +1821,7 @@ data.raw["technology"]["worker-robots-speed-6"].unit.count_formula = "700"
 data.raw["technology"]["worker-robots-speed-6"].unit.time = 120
 data.raw["technology"]["worker-robots-speed-6"].effects =
 {
-  PM.modify("worker-robot-speed", 0.35) --190%
+  PM.modify("worker-robot-speed", 0.35) --180%
 }
 data.raw["technology"]["worker-robots-speed-6"].unit.ingredients =
 {
