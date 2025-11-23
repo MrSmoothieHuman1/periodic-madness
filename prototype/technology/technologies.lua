@@ -6643,14 +6643,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-electric-mining-drill-3",
+    name = "pm-advanced-mining-drill-2",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
 
     },
-    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit"},
+    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-mining-drill-2"},
     unit =
     {
       count = 800,
