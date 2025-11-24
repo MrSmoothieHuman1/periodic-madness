@@ -227,17 +227,19 @@ data:extend({
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
+    main_product = "pm-molten-sterling-silver",
     ingredients =
     {
       PM.ingredient("pm-sterling-silver-precursor-billet", 5),
       PM.ingredient("pm-industrial-grade-silicon-ore", 5),
       PM.ingredient("pm-molten-platinum", 2, "fluid"),
       PM.ingredient("pm-boron", 2, "fluid"),
-      PM.ingredient("pm-filled-flux-container", 1)
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results = 
     {
-      PM.product("pm-molten-sterling-silver", 10, "fluid")
+      PM.product("pm-molten-sterling-silver", 10, "fluid"),
+      PM.product_chance("pm-flux-container", 2, 0.66)
     }
   },
   {
@@ -383,14 +385,17 @@ data:extend({
     enabled = false,
     energy_required = 48,
     category = "pm-moltening", --should be in blast furnace
+    main_product = "pm-molten-high-density-structure-mixture",
     ingredients =
     {
         PM.ingredient("pm-molten-yellow-high-density-structure-alloy", 10, "fluid"),
-        PM.ingredient("pm-molten-blue-high-density-structure-alloy", 10, "fluid")
+        PM.ingredient("pm-molten-blue-high-density-structure-alloy", 10, "fluid"),
+        PM.ingredient("pm-filled-flux-container", 3),
     },
     results =
     {
-        PM.product("pm-molten-high-density-structure-mixture", 20, "fluid")
+        PM.product("pm-molten-high-density-structure-mixture", 20, "fluid"),
+        PM.product_chance("pm-flux-container", 3, 0.66)
     }
   },
   {
