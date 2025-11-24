@@ -382,7 +382,7 @@ data:extend({
     type = "item",
     name = "pm-sterling-silver-plate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/ruthenium-plate.png",
+    icon = "__periodic-madness__/graphics/icons/plates/sterling-silver-plate.png",
     subgroup = "pm-sterling-silver",
     order = "d",
     stack_size = 100
