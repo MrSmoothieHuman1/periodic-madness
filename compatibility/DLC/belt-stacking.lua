@@ -64,7 +64,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-stack-inserter", 1),
-        PM.ingredient("pm-advanced-engine-unit", 1),
+        PM.ingredient("pm-advanced-electric-engine-unit", 1),
         PM.ingredient("pm-light-lubricant", 2.5, "fluid"),
         PM.ingredient("pm-light-coolant", 2.5, "fluid")
     },
@@ -486,6 +486,34 @@ data:extend({
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-transport-belt-capacity-3",
+    icons = util.technology_icon_constant_stack_size("__periodic-madness__/graphics/technology/transport-belt-capacity.png"),
+    icon_size = 256,
+    effects =
+    {
+      PM.modify("belt-stack-size-bonus", 1)
+    },
+    prerequisites = {"pm-transport-belt-capacity-2", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 2400,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 160
     }
   },
 })
