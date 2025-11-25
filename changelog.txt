@@ -51,6 +51,20 @@ Date: 2025-28-09
     - Updated the advanced mining drill 1 technology icon.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.008
+Date: 2025-25-11
+  The 0.8 soon!! maybe!! we'll see! Update:
+
+  Fixes:
+    - Fixed Enable all feature flags belt stacking and xorimuths belt stacking mod stacking (get it) in PM, to give you 7 levels of belt stacking.
+    - Fixed heat pipes not being upgrade plannerable.
+    - Fixed stainless steel chests having the wrong icon scaling.
+    - Fixed stainless steel chests not having circuit connecter graphics.
+
+  Changes:
+    - Removed reactor cooling from PM, from whence it probably wont return. This will not affect your reactors, apart from removing the fuel cells inside of them.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.7.007
 Date: 2025-22-11
   The god forbid a man(?) want to work on 0.8 Update:

@@ -12,6 +12,8 @@ data:extend({
         dying_explosion = "heat-pipe-explosion",
         random_corpse_variation = true,
         map_color = {r = 0.6, g = 0.353, b = 0.353},
+        fast_replaceable_group = "pm-heat-pipes",
+        next_upgrade = "heat-pipe",
         custom_tooltip_fields = 
         {
           {
@@ -132,6 +134,7 @@ data:extend({
         dying_explosion = "heat-pipe-explosion",
         random_corpse_variation = true,
         map_color = {r = 0.6, g = 0.58, b = 0.353},
+        fast_replaceable_group = "pm-heat-pipes",
         custom_tooltip_fields = 
         {
           {
@@ -250,3 +253,5 @@ data.raw["heat-pipe"]["heat-pipe"].custom_tooltip_fields =
 }
 data.raw["heat-pipe"]["heat-pipe"].heat_buffer.max_temperature = 800
 data.raw["heat-pipe"]["heat-pipe"].map_color = {r = 0.6, g = 0.506, b = 0.353}
+data.raw["heat-pipe"]["heat-pipe"].fast_replaceable_group = "pm-heat-pipes"
+data.raw["heat-pipe"]["heat-pipe"].next_upgrade = "pm-heat-pipe-3"
