@@ -6708,9 +6708,9 @@ data:extend({
     icons = util.technology_icon_constant_equipment("__periodic-madness__/graphics/technology/selenium-battery-mk2-equipment.png"),
     effects =
     {
-      --PM.unlock_recipe("pm-selenium-sulfur-battery-equipment")
+      PM.unlock_recipe("pm-selenium-sulfur-battery-mk2-equipment")
     },
-    prerequisites = {"pm-selenium-battery-equipment", "pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-selenium-battery-equipment", "pm-advanced-processing-unit", "pm-advanced-modules"},
     unit =
     {
       count = 750,

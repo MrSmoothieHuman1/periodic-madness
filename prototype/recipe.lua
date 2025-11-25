@@ -5194,4 +5194,22 @@ data:extend({
         PM.product("pm-industrial-noble-gas", 15, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-selenium-sulfur-battery-mk2-equipment",
+    enabled = false,
+    energy_required = 15,
+    ingredients =
+    {
+      PM.ingredient("pm-selenium-sulfur-battery-equipment", 4),
+      PM.ingredient("pm-advanced-productivity-module-light", 1),
+      PM.ingredient("low-density-structure", 3),
+      PM.ingredient("pm-advanced-processing-unit", 4),
+      PM.ingredient("advanced-circuit", 2)
+    },
+    results =
+    {
+      PM.product("pm-selenium-sulfur-battery-mk2-equipment", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
