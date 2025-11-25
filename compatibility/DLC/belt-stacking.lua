@@ -8,7 +8,7 @@ if not data.raw.tile["empty-space"] then
     empty_space.name = "empty-space"
     data:extend{empty_space}
 end
-if feature_flags["space_travel"] then
+if feature_flags["space_travel"] and not mods["stack-inserters"] then
 data:extend({
 
 {
@@ -52,6 +52,25 @@ data:extend({
     results = 
     {
         PM.product("pm-stack-inserter", 1)
+    }
+},
+{
+    type = "recipe",
+    name = "pm-express-stack-inserter",
+    enabled = false,
+    energy_required = 2,
+    category = "crafting-with-fluid",
+    subgroup = "inserter",
+    ingredients =
+    {
+        PM.ingredient("pm-stack-inserter", 1),
+        PM.ingredient("pm-advanced-engine-unit", 1),
+        PM.ingredient("pm-light-lubricant", 2.5, "fluid"),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-express-stack-inserter", 1)
     }
 },
 
@@ -389,6 +408,34 @@ data:extend({
   },
   {
     type = "technology",
+    name = "pm-express-stack-inserter",
+    icon = "__periodic-madness__/graphics/technology/stack-inserter.png",
+    icon_size = 256,
+    effects =
+    {
+      PM.unlock_recipe("pm-express-stack-inserter"),
+    },
+    prerequisites = {"pm-stack-inserter", "pm-advanced-electric-engine-unit", "pm-express-inserters", "pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
     name = "pm-transport-belt-capacity-1",
     icons = util.technology_icon_constant_stack_size("__periodic-madness__/graphics/technology/transport-belt-capacity.png"),
     icon_size = 256,
@@ -453,4 +500,5 @@ data.raw["technology"]["pm-advanced-mining-drill-1"].unit.ingredients =
   {"chemical-science-pack", 1}
 }
 data.raw["mining-drill"]["pm-electric-mining-drill-2"].drops_full_belt_stacks = true
+data.raw["mining-drill"]["pm-electric-mining-drill-3"].drops_full_belt_stacks = true
 end
