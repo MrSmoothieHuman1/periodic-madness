@@ -8497,13 +8497,13 @@ fluid_boxes =
   allowed_effects = PM.all_effects(),
   module_slots = 3,
   allowed_module_categories = {"pm-laser-modules"},
-  crafting_speed = 1,
-  energy_usage = "450kW",
+  crafting_speed = 2,
+  energy_usage = "650kW",
   energy_source =
   {
     type = "electric",
     usage_priority = "secondary-input",
-    drain = "50kW",
+    drain = "100kW",
     emissions_per_minute = {pollution = 4},
   },
   fluid_boxes =
