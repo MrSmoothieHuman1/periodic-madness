@@ -365,6 +365,31 @@ data:extend({
     categories = {"armor"}
   },
   {
+    type = "battery-equipment",
+    name = "pm-selenium-sulfur-battery-mk2-equipment",
+    sprite =
+    {
+      filename = "__periodic-madness__/graphics/equipment/selenium-battery-mk2-equipment-icon.png",
+      width = 64,
+      height = 128,
+      priority = "medium",
+      scale = 0.5
+    },
+    shape =
+    {
+      width = 1,
+      height = 2,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "electric",
+      buffer_capacity = "250MJ",
+      usage_priority = "tertiary"
+    },
+    categories = {"armor"}
+  },
+  {
     type = "generator-equipment",
     name = "pm-RTG-equipment",
     sprite =

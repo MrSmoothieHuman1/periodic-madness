@@ -1922,6 +1922,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-selenium-sulfur-battery-mk2-equipment",
+    icon = "__periodic-madness__/graphics/equipment/selenium-battery-mk2-equipment.png",
+    icon_size = 64,
+    place_as_equipment_result = "pm-selenium-sulfur-battery-mk2-equipment",
+    subgroup = "pm-modular-storage",
+    order = "ca",
+    stack_size = 20
+  },
+  {
+    type = "item",
     name = "pm-RTG-equipment",
     icon = "__periodic-madness__/graphics/technology/RTG-equipment.png",
     icon_size = 256,
