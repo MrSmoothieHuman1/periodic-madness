@@ -359,7 +359,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "75MJ",
+      buffer_capacity = "150MJ",
       usage_priority = "tertiary"
     },
     categories = {"armor"}

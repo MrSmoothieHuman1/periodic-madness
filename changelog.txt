@@ -46,6 +46,7 @@ Date: 2025-28-09
     - Changed the recipe of transistors to take less carbon and use 1 rubber.
     - Doubled amount of radium needed for AEM packs, which is still a better ratio then before.
     - Slightly lowered the profile growth of the coil heater.
+    - Buffed MK1 selenium battery equipment to 150MJ from 75MJ.
 
   Fixes:
     - Updated the advanced mining drill 1 technology icon.
