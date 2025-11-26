@@ -8450,17 +8450,18 @@ fluid_boxes =
   circuit_connector = circuit_connector_definitions["assembling-machine"],
   graphics_set =
 {
+  status_colors = pm_diode_status_colors(),
   animation =
   {
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-base.png",
         width = 256,
         height = 278,
         frame_count = 1,
         line_length = 1,
-        repeat_count = 32,
+        repeat_count = 48,
         scale = 0.5
       },
       {
@@ -8469,30 +8470,69 @@ fluid_boxes =
         height = 278,
         frame_count = 1,
         line_length = 1,
-        repeat_count = 32,
+        repeat_count = 48,
         draw_as_shadow = true,
         shift = util.by_pixel(110, 0),
         scale = 0.5
       }
     }
   },
-  working_visualisations =
-  {
+    working_visualisations =
     {
-      fadeout = true,
-      animation =
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-on.png",
-        width = 256,
-        height = 278,
-        frame_count = 32,
-        line_length = 8,
-        scale = 0.5,
-        animation_speed = 0.33
-      }
+        {
+            apply_tint = "status",
+            always_draw = true,
+            north_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-diode.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+            south_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-diode.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+            east_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-diode.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+            west_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-diode.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              blend_mode = "additive",
+              draw_as_glow = true,
+              scale = 0.5,
+            },
+        }
     }
-  }
-},
+  },
   crafting_categories = {"pm-circuit-boards"},
   allowed_effects = PM.all_effects(),
   module_slots = 3,
