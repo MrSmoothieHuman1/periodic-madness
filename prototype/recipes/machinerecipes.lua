@@ -1753,6 +1753,24 @@ data:extend({
       PM.product("pm-electric-mining-drill-3", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-electronic-laser-etcher",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+        PM.ingredient("pm-YAG-laser-head", 2),
+        PM.ingredient("processing-unit", 3),
+        PM.ingredient("pm-corrosion-resistant-tubing", 12),
+        PM.ingredient("refined-concrete", 6),
+        PM.ingredient("pm-heavyweight-framing", 8)
+    },
+    results = 
+    {
+        PM.product("pm-electronic-laser-etcher", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

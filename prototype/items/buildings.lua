@@ -953,6 +953,14 @@ data:extend({
     place_result = "pm-electric-mining-drill-3",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-electronic-laser-etcher",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/electric-coke-oven.png",
+    place_result = "pm-electronic-laser-etcher",
+    stack_size = 25
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
