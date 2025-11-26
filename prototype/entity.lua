@@ -8475,6 +8475,15 @@ fluid_boxes =
         scale = 0.5
       },
       {
+        filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-fans.png",
+        width = 256,
+        height = 278,
+        frame_count = 48,
+        line_length = 8,
+        animation_speed = 0.5,
+        scale = 0.5
+      },
+      {
         filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-shadow.png",
         width = 256,
         height = 278,
