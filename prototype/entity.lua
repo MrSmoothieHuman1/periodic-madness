@@ -8462,6 +8462,15 @@ fluid_boxes =
         frame_count = 1,
         line_length = 1,
         repeat_count = 48,
+        animation_speed = 0.5,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-south-laser.png",
+        width = 256,
+        height = 278,
+        frame_count = 48,
+        line_length = 8,
         scale = 0.5
       },
       {
@@ -8480,7 +8489,6 @@ fluid_boxes =
         height = 278,
         frame_count = 48,
         line_length = 8,
-        animation_speed = 0.5,
         scale = 0.5
       },
       {
