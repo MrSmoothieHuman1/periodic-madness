@@ -8480,6 +8480,94 @@ fluid_boxes =
     working_visualisations =
     {
         {
+            apply_recipe_tint = "tertiary",
+            always_draw = true,
+            north_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-left-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+            south_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-left-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+            east_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-left-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+            west_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-left-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+        },
+        {
+            apply_recipe_tint = "quaternary",
+            always_draw = true,
+            north_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-right-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+            south_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-right-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+            east_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-right-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+            west_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-right-tint.png",
+              width = 256,
+              height = 278,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 48,
+              scale = 0.5,
+            },
+        },
+        {
             apply_tint = "status",
             always_draw = true,
             north_animation =
@@ -8530,7 +8618,7 @@ fluid_boxes =
               draw_as_glow = true,
               scale = 0.5,
             },
-        }
+        },
     }
   },
   crafting_categories = {"pm-circuit-boards"},

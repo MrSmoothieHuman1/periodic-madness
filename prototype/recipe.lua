@@ -4732,6 +4732,13 @@ data:extend({
         scale = 0.23
       },
     },
+    crafting_machine_tint =
+    {
+        primary = {0,0,0}, --south breadboard
+        secondary ={0,0,0}, --north breadboard
+        tertiary = tints.phosphoric_acid, --left pipe/container
+        quaternary = tints.ferric_chloride --right pipe/container
+    },
     energy_required = 9,
     category = "crafting-with-fluid",
     additional_categories = {"pm-circuit-boards"},
