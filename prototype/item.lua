@@ -1787,7 +1787,7 @@ data:extend({
     type = "item",
     name = "pm-high-density-structure",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/graphene.png",
+    icon = "__periodic-madness__/graphics/icons/high-density-structure.png",
     subgroup = "pm-processing-units",
     stack_size = 25
   },

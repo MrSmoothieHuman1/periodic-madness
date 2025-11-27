@@ -4914,7 +4914,7 @@ data:extend({
     {
       PM.ingredient("pm-cobalt-blue", 5),
       PM.ingredient("speed-module-2", 1),
-      PM.ingredient("pm-speed-module-light", 1),
+      PM.ingredient("pm-advanced-speed-module-light", 1),
       PM.ingredient("pm-advanced-processing-unit", 9),
       PM.ingredient("processing-unit", 9)
     },
@@ -4934,7 +4934,7 @@ data:extend({
     {
       PM.ingredient("pm-chrome-green", 5),
       PM.ingredient("efficiency-module-2", 1),
-      PM.ingredient("pm-efficiency-module-light", 1),
+      PM.ingredient("pm-advanced-efficiency-module-light", 1),
       PM.ingredient("pm-advanced-processing-unit", 9),
       PM.ingredient("processing-unit", 9)
     },
@@ -4954,7 +4954,7 @@ data:extend({
     {
       PM.ingredient("pm-cadnium-red", 5),
       PM.ingredient("productivity-module-2", 1),
-      PM.ingredient("pm-productivity-module-light", 1),
+      PM.ingredient("pm-advanced-productivity-module-light", 1),
       PM.ingredient("pm-advanced-processing-unit", 9),
       PM.ingredient("processing-unit", 9)
     },
