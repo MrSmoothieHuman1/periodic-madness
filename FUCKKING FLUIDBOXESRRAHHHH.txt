@@ -531,3 +531,65 @@ end
       time = 100
     }
   },
+
+{
+    type = "recipe",
+    name = "pm-liquid-transition-metal-science-pack",
+    enabled = false,
+    energy_required = 12,
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("iron-plate", 6),
+        PM.ingredient("pm-nickel-plate", 6),
+        PM.ingredient("pm-zinc-plate", 6),
+        PM.ingredient("copper-plate", 6),
+        PM.ingredient("pm-manganese-plate", 5),
+        PM.ingredient("pm-gold-plate", 4),
+        PM.ingredient("pm-silver-plate", 4),
+        PM.ingredient("pm-molybdenum-ore", 6)
+    },
+    results = 
+    {
+        PM.product("pm-liquid-transition-metal-science-pack", 100, "fluid")
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-transition-metal-science-pack",
+    enabled = false,
+    energy_required = 12,
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-chromium-ore", 8),
+        PM.ingredient("pm-vanadium-ore", 8),
+        PM.ingredient("pm-tungsten-plate", 6),
+        PM.ingredient("pm-titanium-plate", 6),
+        PM.ingredient("pm-yttrium-ore", 5),
+        PM.ingredient("pm-cobalt-plate", 4),
+        PM.ingredient("pm-tantalum-plate", 5)
+    },
+    results = 
+    {
+        PM.product("pm-liquid-advanced-transition-metal-science-pack", 100, "fluid")
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-advanced-transition-metal-science-pack",
+    enabled = false,
+    energy_required = 12,
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-niobium-plate", 5),
+        PM.ingredient("pm-platinum-plate", 7),
+        PM.ingredient("pm-palladium-plate", 7),
+        PM.ingredient("pm-zirconium-ore", 10)
+    },
+    results = 
+    {
+        PM.product("pm-liquid-advanced-advanced-transition-metal-science-pack", 100, "fluid")
+    }
+},
