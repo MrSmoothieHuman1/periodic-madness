@@ -1670,6 +1670,7 @@ data:extend({
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.66,
                 scale = 0.5,
             },
             {
@@ -1679,7 +1680,6 @@ data:extend({
                 height = 320,
                 frame_count = 32,
                 line_length = 8,
-                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
@@ -1708,6 +1708,7 @@ data:extend({
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.66,
                 scale = 0.5,
             },
             {
@@ -1717,7 +1718,6 @@ data:extend({
                 height = 320,
                 frame_count = 32,
                 line_length = 8,
-                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
@@ -1746,6 +1746,7 @@ data:extend({
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.66,
                 scale = 0.5,
             },
             {
@@ -1755,7 +1756,6 @@ data:extend({
                 height = 320,
                 frame_count = 32,
                 line_length = 8,
-                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
@@ -1784,6 +1784,7 @@ data:extend({
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.66,
                 scale = 0.5,
             },
             {
@@ -1793,7 +1794,6 @@ data:extend({
                 height = 320,
                 frame_count = 32,
                 line_length = 8,
-                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
@@ -8857,22 +8857,22 @@ fluid_boxes =
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-2-north-south-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-north-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-fans.png",
                 width = 320,
                 height = 320,
                 frame_count = 32,
                 line_length = 8,
-                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
@@ -8895,22 +8895,22 @@ fluid_boxes =
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-2-north-south-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-south-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-fans.png",
                 width = 320,
                 height = 320,
                 frame_count = 32,
                 line_length = 8,
-                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
@@ -8933,17 +8933,18 @@ fluid_boxes =
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-east-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-fans.png",
                 width = 320,
                 height = 320,
                 frame_count = 32,
@@ -8971,17 +8972,18 @@ fluid_boxes =
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-west-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
                 line_length = 1,
                 repeat_count = 32,
+                animation_speed = 0.5,
                 scale = 0.5,
             },
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-fans.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser-2/atmospheric-condenser-fans.png",
                 width = 320,
                 height = 320,
                 frame_count = 32,
