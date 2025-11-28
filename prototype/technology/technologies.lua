@@ -6522,8 +6522,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-satellite",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/satellite.png",
     effects = 
     {
         PM.unlock_recipe("satellite")
