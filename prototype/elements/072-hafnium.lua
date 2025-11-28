@@ -12,7 +12,13 @@ data:extend({
         type = "item",
         name = "pm-hafnium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/hafnium-chloride.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-chloride.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-chloride-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-chloride-3.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-hafnium-tm",
         order = "b",
         stack_size = 100
