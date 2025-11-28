@@ -6654,7 +6654,7 @@ data:extend({
     prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-mining-drill-1"},
     unit =
     {
-      count = 800,
+      count = 850,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -6685,7 +6685,7 @@ data:extend({
     prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-electric-engine-unit", "pm-mylar-processing"},
     unit =
     {
-      count = 850,
+      count = 800,
       ingredients =
       {
         {"automation-science-pack", 1},
