@@ -844,6 +844,40 @@ data:extend({
     },
   upgrade = true
 },
+{
+  type = "technology",
+  name = "pm-mining-productivity-10",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+  effects =
+  {
+    {
+      type = "mining-drill-productivity-bonus",
+      modifier = 0.2
+    }
+  },
+  max_level = "infinite",
+  upgrade = true,
+  prerequisites = {"pm-mining-productivity-9", "space-science-pack"},
+  unit =
+    {
+      count_formula = "3500 * (1.1^(L - 10))",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    },
+},
 
 --MARK: Beacon distribution
 {
