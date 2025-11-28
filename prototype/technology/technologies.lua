@@ -6887,7 +6887,7 @@ data:extend({
     type = "technology",
     name = "pm-atmospheric-condenser-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/atmospheric-condenser-2.png",
     effects = 
     {
 
