@@ -124,7 +124,7 @@ data:extend({
     inventory_move_sound = item_sounds.electric_small_inventory_move,
     pick_sound = item_sounds.electric_small_inventory_pickup,
     drop_sound = item_sounds.electric_small_inventory_move,
-    subgroup = "pm-technectium-science",
+    subgroup = "pm-research-data",
     order = "a",
     stack_size = 100,
     durability = 1,
@@ -152,3 +152,5 @@ data.raw["tool"]["chemical-science-pack"].icon ="__periodic-madness__/graphics/i
 
 data.raw["tool"]["production-science-pack"].order = "x"
 data.raw["tool"]["utility-science-pack"].order = "xa"
+
+data.raw["tool"]["space-science-pack"].subgroup = "pm-research-data"

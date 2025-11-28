@@ -1495,7 +1495,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-technectium-science",
+    name = "pm-research-data",
     group = "pm-science",
     order = "e"
   },

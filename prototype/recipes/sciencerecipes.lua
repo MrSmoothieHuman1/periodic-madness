@@ -655,8 +655,6 @@ data:extend({
 {
     type = "recipe",
     name = "pm-experimental-research-data",
-    subgroup = "pm-technectium-science",
-    order = "a",
     energy_required = 60,
     allow_productivity = true,
     main_product = "pm-experimental-research-data",
