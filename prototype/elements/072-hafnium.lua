@@ -31,6 +31,12 @@ data:extend({
         name = "pm-hafnium-iodide",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/ores/hafnium-iodide.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-iodide.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-iodide-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-iodide-3.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-hafnium-tm",
         order = "d",
         stack_size = 100
