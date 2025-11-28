@@ -47,7 +47,7 @@ data:extend({
         type = "recipe",
         name = "pm-niobite-oxide",
         enabled = false,
-        energy_required = 4,
+        energy_required = 6,
         category = "chemistry",
         subgroup = "pm-niobium-tm",
         order = "a",
@@ -69,14 +69,14 @@ data:extend({
         type = "recipe",
         name = "pm-niobium-ore",
         enabled = false,
-        energy_required = 6,
+        energy_required = 18,
         category = "pm-moltening",
         subgroup = "pm-niobium-tm",
         order = "b",
         main_product = "pm-niobium-ore",
         ingredients = 
         {
-            PM.ingredient("pm-niobite-oxide", 5),
+            PM.ingredient("pm-niobite-oxide", 8),
             PM.ingredient("pm-aluminium-ore", 3),
             PM.ingredient("pm-ferrum", 6),
             PM.ingredient("steam", 25, "fluid")

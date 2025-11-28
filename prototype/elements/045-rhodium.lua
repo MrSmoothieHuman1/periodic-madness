@@ -73,7 +73,7 @@ data:extend({
         main_product = "pm-rhodium-chunks",
         ingredients =
         {
-            PM.ingredient("pm-rhodium-filtered-anode-sludge", 6, "fluid"),
+            PM.ingredient("pm-rhodium-filtered-anode-sludge", 12, "fluid"),
             PM.ingredient("pm-borax", 3),
             PM.ingredient("pm-platinum-plate", 2)
         },

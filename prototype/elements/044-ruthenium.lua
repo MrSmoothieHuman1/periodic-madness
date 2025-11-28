@@ -71,7 +71,7 @@ data:extend({
         order = "b",
         ingredients =
         {
-            PM.ingredient("pm-ruthenium-filtered-anode-sludge", 6, "fluid"),
+            PM.ingredient("pm-ruthenium-filtered-anode-sludge", 12, "fluid"),
             PM.ingredient("pm-ammonium-chloride", 3),
             PM.ingredient("pm-acetone", 5, "fluid")
         },

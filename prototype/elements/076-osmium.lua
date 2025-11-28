@@ -75,7 +75,7 @@ data:extend({
         main_product = "pm-osmium-oxide",
         ingredients = 
         {
-            PM.ingredient("pm-osmium-filtered-anode-sludge", 8, "fluid"),
+            PM.ingredient("pm-osmium-filtered-anode-sludge", 12, "fluid"),
             PM.ingredient("pm-ammonium-chloride", 5)
         },
         results =

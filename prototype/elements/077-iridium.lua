@@ -101,7 +101,7 @@ data:extend({
         type = "recipe",
         name = "pm-anode-mud",
         enabled = false,
-        energy_required = 7,
+        energy_required = 14,
         category = "pm-electrolysis",
         subgroup = "pm-osmium-tm",
         order = "a",
@@ -123,7 +123,7 @@ data:extend({
         type = "recipe",
         name = "pm-anode-sludge-seperation",
         enabled = false,
-        energy_required = 7.5,
+        energy_required = 7,
         category = "pm-mixing",
         subgroup = "pm-osmium-tm",
         order = "b",
@@ -145,7 +145,7 @@ data:extend({
         type = "recipe",
         name = "pm-lightly-seperated-anode-mud",
         enabled = false,
-        energy_required = 4.5,
+        energy_required = 3.5,
         category = "pm-mixing",
         order = "c",
         main_product = "pm-lightly-seperated-anode-mud",
@@ -232,7 +232,7 @@ data:extend({
         main_product = "pm-iridium-sponge",
         ingredients =
         {
-            PM.ingredient("pm-iridium-filtered-anode-sludge", 6, "fluid"),
+            PM.ingredient("pm-iridium-filtered-anode-sludge", 12, "fluid"),
             PM.ingredient("water", 24, "fluid"),
             PM.ingredient("pm-benzene", 6, "fluid")
         },
