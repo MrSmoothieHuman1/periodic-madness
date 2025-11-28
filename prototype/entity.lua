@@ -1664,7 +1664,7 @@ data:extend({
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-north-south-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-north-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
@@ -1702,7 +1702,7 @@ data:extend({
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-north-south-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-south-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
@@ -1740,7 +1740,7 @@ data:extend({
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-west-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
@@ -1778,7 +1778,7 @@ data:extend({
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-west-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-west-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
@@ -8933,7 +8933,7 @@ fluid_boxes =
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-west-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
@@ -8971,7 +8971,7 @@ fluid_boxes =
         {
             {
                 filename =
-                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-west-base.png",
+                "__periodic-madness__/graphics/entities/buildings/atmospheric-condenser/atmospheric-condenser-east-base.png",
                 width = 320,
                 height = 320,
                 frame_count = 1,
