@@ -6682,7 +6682,7 @@ data:extend({
         PM.unlock_recipe("pm-high-density-underground-belt"),
         PM.unlock_recipe("pm-high-density-splitter")
     },
-    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-electric-engine-unit"},
+    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-electric-engine-unit", "pm-mylar-processing"},
     unit =
     {
       count = 850,
