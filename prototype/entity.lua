@@ -8465,14 +8465,14 @@ fluid_boxes =
         animation_speed = 0.5,
         scale = 0.5
       },
-      {
+      --[[{
         filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-south-laser.png",
         width = 256,
         height = 278,
         frame_count = 48,
         line_length = 8,
         scale = 0.5
-      },
+      },--]]
       {
         filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-glass.png",
         width = 256,
@@ -8516,7 +8516,6 @@ fluid_boxes =
     {
         {
             apply_recipe_tint = "primary",
-            always_draw = true,
             north_animation =
             {
               filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-north-board.png",
@@ -8530,7 +8529,6 @@ fluid_boxes =
         },
         {
             apply_recipe_tint = "secondary",
-            always_draw = true,
             north_animation =
             {
               filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-south-board.png",
