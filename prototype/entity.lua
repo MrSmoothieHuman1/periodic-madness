@@ -8758,7 +8758,7 @@ fluid_boxes =
       usage_priority = "secondary-output",
     },
     power_input = "500kW",
-    burner = 
+    burner =
     {
         type = "burner",
         fuel_inventory_size = 1,
@@ -8769,9 +8769,9 @@ fluid_boxes =
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
-      volume = 250,
-      filter = "water",
-      pipe_connections = 
+      volume = 500,
+      filter = "pm-geothermal-drilling-fluid",
+      pipe_connections =
       {
         {flow_direction="input", direction = defines.direction.north --[[@as int]], position = {1.5, -2.5}}, --right input
         {flow_direction="input", direction = defines.direction.north --[[@as int]], position = {-1.5, -2.5}} --left input
@@ -8782,7 +8782,7 @@ fluid_boxes =
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 250,
-      filter = "steam",
+      filter = "pm-geothermally-heated-steam",
       pipe_connections = 
       {
         {flow_direction="output", direction = defines.direction.south --[[@as int]], position = {-1.5, 2.5}}, --right input
@@ -8813,7 +8813,6 @@ fluid_boxes =
         }
       }
     },
-    energy_production = "330kW"
   },
   {
     type = "assembling-machine",

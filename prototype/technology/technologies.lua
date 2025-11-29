@@ -1971,6 +1971,29 @@ data:extend({
       time = 45
     }
   },
+  {
+    type = "technology",
+    name = "pm-geothermal-power",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+        PM.unlock_recipe("pm-geothermal-drilling-fluid")
+    },
+    prerequisites = {"advanced-circuit", "pm-mixing-material-processing-1"},
+    unit = 
+    {
+      count = 200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      },
+      time = 45
+    }
+  },
+
 
 --MARK: PTM science
 {

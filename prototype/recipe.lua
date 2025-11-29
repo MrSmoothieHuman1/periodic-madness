@@ -4798,7 +4798,7 @@ data:extend({
     energy_required = 9,
     category = "pm-circuit-boards",
     enabled = false,
-    allow_productivity = trued,
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-phosphoric-acid", 7.5, "fluid"),
@@ -5280,4 +5280,22 @@ data:extend({
       PM.product("pm-selenium-sulfur-battery-mk2-equipment", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-geothermal-drilling-fluid",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-mixing",
+    ingredients =
+    {
+        PM.ingredient("water", 50, "fluid"),
+        PM.ingredient("pm-kerosene", 20, "fluid"),
+        PM.ingredient("pm-bauxite", 4),
+        PM.ingredient("pm-calcium-ore", 4)
+    },
+    results =
+    {
+        PM.product("pm-geothermal-drilling-fluid", 25, "fluid")
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

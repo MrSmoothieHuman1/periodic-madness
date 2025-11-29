@@ -2068,6 +2068,26 @@ data:extend({
     base_color = {0.373, 0.357, 0.38},
     flow_color = {0.373, 0.357, 0.38},
     auto_barrel = false,
+  },  
+  {
+    type = "fluid",
+    name = "pm-geothermal-drilling-fluid",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/industrial-noble-gas.png",
+    default_temperature = 15,
+    base_color = {0.761, 0.91, 0.902},
+    flow_color = {0.761, 0.91, 0.902},
+  },
+  {
+    type = "fluid",
+    name = "pm-geothermally-heated-steam",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/industrial-noble-gas.png",
+    default_temperature = 250,
+    minimum_temperature = 250,
+    maximum_temperature = 1500,
+    base_color = {0.761, 0.91, 0.902},
+    flow_color = {0.761, 0.91, 0.902},
   },
 
 	{
