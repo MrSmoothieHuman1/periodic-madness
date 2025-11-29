@@ -5303,7 +5303,6 @@ data:extend({
     name = "pm-geothermal-bore-mk1",
     enabled = false,
     energy_required = 3,
-    category = "crafting-with-fluid",
     ingredients = 
     {
         PM.ingredient("pm-heavyweight-framing", 6),
@@ -5314,5 +5313,23 @@ data:extend({
     {
         PM.product("pm-geothermal-bore-mk1", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-geothermal-bore-mk2",
+    enabled = false,
+    energy_required = 3,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+        PM.ingredient("pm-geothermal-bore-mk1", 1),
+        PM.ingredient("pm-aluminium-plate", 2),
+        PM.ingredient("pm-brass-plate", 3),
+        PM.ingredient("pm-heavy-lubricant", 2.5, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-geothermal-bore-mk2", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

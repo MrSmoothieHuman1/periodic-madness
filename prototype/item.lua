@@ -1814,6 +1814,15 @@ data:extend({
     fuel_category = "pm-geothermal-bore",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-geothermal-bore-mk2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/high-density-structure.png",
+    fuel_value = "60MJ",
+    fuel_category = "pm-geothermal-bore",
+    stack_size = 100
+  },
 
   {
     type = "item",
