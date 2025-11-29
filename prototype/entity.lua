@@ -8755,7 +8755,7 @@ fluid_boxes =
     energy_source =
     {
       type = "electric",
-      usage_priority = "secondary-output",
+      usage_priority = "secondary-input",
     },
     power_input = "500kW",
     burner =
@@ -8783,13 +8783,13 @@ fluid_boxes =
       pipe_covers = pipecoverspictures(),
       volume = 250,
       filter = "pm-geothermally-heated-steam",
-      pipe_connections = 
+      pipe_connections =
       {
         {flow_direction="output", direction = defines.direction.south --[[@as int]], position = {-1.5, 2.5}}, --right input
         {flow_direction="output", direction = defines.direction.south --[[@as int]], position = {1.5, 2.5}} --left input
       },
     },
-    max_fluid_usage = 1,
+    max_fluid_usage = 0.5,
     picture =
     {
       layers =

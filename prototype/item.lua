@@ -1810,7 +1810,7 @@ data:extend({
     name = "pm-geothermal-bore-mk1",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/high-density-structure.png",
-    fuel_value = "20MJ",
+    fuel_value = "30MJ",
     fuel_category = "pm-geothermal-bore",
     stack_size = 100
   },
