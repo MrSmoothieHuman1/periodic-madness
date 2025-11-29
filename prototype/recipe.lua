@@ -5297,5 +5297,22 @@ data:extend({
     {
         PM.product("pm-geothermal-drilling-fluid", 25, "fluid")
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-geothermal-bore-mk1",
+    enabled = false,
+    energy_required = 3,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+        PM.ingredient("pm-heavyweight-framing", 6),
+        PM.ingredient("pm-heating-plating", 4),
+        PM.ingredient("pm-solid-lubricant", 3)
+    },
+    results = 
+    {
+        PM.product("pm-geothermal-bore-mk1", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])

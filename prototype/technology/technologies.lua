@@ -1978,7 +1978,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
-        PM.unlock_recipe("pm-geothermal-drilling-fluid")
+        PM.unlock_recipe("pm-geothermal-drilling-fluid"),
+        PM.unlock_recipe("pm-geothermal-bore-mk1"),
+        PM.unlock_recipe("pm-geothermal-plant")
     },
     prerequisites = {"electric-engine"},
     unit = 

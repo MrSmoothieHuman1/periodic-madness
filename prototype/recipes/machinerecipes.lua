@@ -1794,6 +1794,23 @@ data:extend({
       PM.product("pm-atmospheric-condenser-2", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-geothermal-plant",
+    enabled = false,
+    energy_required = 8,
+    ingredients = 
+    {
+        PM.ingredient("electric-mining-drill", 1),
+        PM.ingredient("pm-heavyweight-framing", 12),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("electric-engine-unit", 3)
+    },
+    results = 
+    {
+        PM.product("pm-atmospheric-condenser", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
