@@ -1980,7 +1980,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-geothermal-drilling-fluid")
     },
-    prerequisites = {"advanced-circuit", "pm-mixing-material-processing-1"},
+    prerequisites = {"electric-engine"},
     unit = 
     {
       count = 200,

@@ -5290,7 +5290,7 @@ data:extend({
     {
         PM.ingredient("water", 50, "fluid"),
         PM.ingredient("pm-kerosene", 20, "fluid"),
-        PM.ingredient("pm-bauxite", 4),
+        PM.ingredient("pm-bauxite-powder", 8),
         PM.ingredient("pm-calcium-ore", 4)
     },
     results =
