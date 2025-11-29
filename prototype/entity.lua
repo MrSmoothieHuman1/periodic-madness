@@ -8449,7 +8449,7 @@ fluid_boxes =
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
   graphics_set =
-{
+  {
   status_colors = pm_diode_status_colors(),
   animation =
   {
@@ -8462,17 +8462,9 @@ fluid_boxes =
         frame_count = 1,
         line_length = 1,
         repeat_count = 48,
-        animation_speed = 0.5,
+        animation_speed = 0.4,
         scale = 0.5
       },
-      --[[{
-        filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-south-laser.png",
-        width = 256,
-        height = 278,
-        frame_count = 48,
-        line_length = 8,
-        scale = 0.5
-      },--]]
       {
         filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-glass.png",
         width = 256,
@@ -8493,6 +8485,14 @@ fluid_boxes =
       },
       {
         filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-platform.png",
+        width = 256,
+        height = 278,
+        frame_count = 48,
+        line_length = 8,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-lasers.png",
         width = 256,
         height = 278,
         frame_count = 48,
@@ -8523,7 +8523,34 @@ fluid_boxes =
               height = 278,
               line_length = 8,
               frame_count = 48,
-              animation_speed = 0.5,
+              animation_speed = 0.4,
+              scale = 0.5,
+            },
+            south_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-north-board.png",
+              width = 256,
+              height = 278,
+              line_length = 8,
+              frame_count = 48,
+              scale = 0.5,
+            },
+            east_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-north-board.png",
+              width = 256,
+              height = 278,
+              line_length = 8,
+              frame_count = 48,
+              scale = 0.5,
+            },
+            west_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-north-board.png",
+              width = 256,
+              height = 278,
+              line_length = 8,
+              frame_count = 48,
               scale = 0.5,
             },
         },
@@ -8536,7 +8563,37 @@ fluid_boxes =
               height = 278,
               line_length = 8,
               frame_count = 48,
-              animation_speed = 0.5,
+              animation_speed = 0.4,
+              scale = 0.5,
+            },
+            south_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-south-board.png",
+              width = 256,
+              height = 278,
+              line_length = 8,
+              frame_count = 48,
+              animation_speed = 0.4,
+              scale = 0.5,
+            },
+            east_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-south-board.png",
+              width = 256,
+              height = 278,
+              line_length = 8,
+              frame_count = 48,
+              animation_speed = 0.4,
+              scale = 0.5,
+            },
+            west_animation =
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-south-board.png",
+              width = 256,
+              height = 278,
+              line_length = 8,
+              frame_count = 48,
+              animation_speed = 0.4,
               scale = 0.5,
             },
         },
