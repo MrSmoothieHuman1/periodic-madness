@@ -6294,7 +6294,7 @@ data:extend({
     type = "technology",
     name = "pm-electronic-laser-etcher",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/electronic-laser-etcher.png",
     effects = 
     {
         PM.unlock_recipe("pm-electronic-laser-etcher")
