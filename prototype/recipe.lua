@@ -90,6 +90,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-electronic-breadboard",
+    crafting_machine_tint =
+    {
+        primary = tints.electronic_breadboard,
+        secondary = tints.electronic_breadboard,
+        tertiary = tints.empty,
+        quaternary = tints.empty
+    },
     energy_required = 2,
     category = "crafting", 
     additional_categories = {"pm-circuit-boards"},
@@ -127,6 +134,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-fluid-circuit-breadboard",
+    crafting_machine_tint = 
+    {
+        primary = tints.fluid_resistant_breadboard,
+        secondary = tints.fluid_resistant_breadboard,
+        tertiary = tints.empty,
+        quaternary = tints.empty
+    },
     energy_required = 3,
     category = "crafting", 
     additional_categories = {"pm-circuit-boards"},
@@ -179,9 +193,9 @@ data:extend({
   {
     type = "recipe",
     name = "pm-fluid-circuit",
-    crafting_machine_tint = 
+    crafting_machine_tint =
     {
-      primary = {r = 1, g = 0.5, b = 0},
+      primary = tints.fluid_resistant_breadboard,
       secondary = {r = 0.5, g = 0.2, b = 0}
     },
     energy_required = 1.5,
@@ -203,6 +217,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-circuit-breadboard",
+    crafting_machine_tint = 
+    {
+        primary = tints.advanced_breadboard,
+        secondary = tints.advanced_breadboard,
+        tertiary = tints.empty,
+        quaternary = tints.empty
+    },
     energy_required = 6,
     category = "crafting", 
     additional_categories = {"pm-circuit-boards"},
@@ -238,6 +259,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-processing-breadboard",
+    crafting_machine_tint = 
+    {
+        primary = tints.processing_breadboard,
+        secondary = tints.processing_breadboard,
+        tertiary = tints.ferric_chloride,
+        quaternary = tints.ferric_chloride
+    },
     energy_required = 9,
     category = "crafting-with-fluid", 
     additional_categories = {"pm-circuit-boards"},
@@ -2990,6 +3018,13 @@ data:extend({
         scale = 0.4
       },
     },
+    crafting_machine_tint =
+    {
+        primary = tints.electronic_breadboard, --north breadboard
+        secondary = tints.electronic_breadboard, --south breadboard
+        tertiary = tints.empty, --left pipe/container
+        quaternary = tints.empty --right pipe/container
+    },
     enabled = false,
     energy_required = 1,
     category = "crafting", 
@@ -3045,6 +3080,13 @@ data:extend({
         icon_size = 64,
         scale = 0.4
       },
+    },
+    crafting_machine_tint =
+    {
+        primary = tints.fluid_resistant_breadboard, --north breadboard
+        secondary = tints.fluid_resistant_breadboard, --south breadboard
+        tertiary = tints.empty, --left pipe/container
+        quaternary = tints.empty --right pipe/container
     },
     energy_required = 1.5,
     category = "crafting", 
@@ -3104,6 +3146,13 @@ data:extend({
         icon_size = 64,
         scale = 0.4
       },
+    },
+    crafting_machine_tint =
+    {
+        primary = tints.advanced_breadboard, --north breadboard
+        secondary = tints.advanced_breadboard, --south breadboard
+        tertiary = tints.empty, --left pipe/container
+        quaternary = tints.empty --right pipe/container
     },
     energy_required = 3,
     category = "crafting", 
@@ -3166,8 +3215,8 @@ data:extend({
     },
     crafting_machine_tint =
     {
-        primary = {0,0,0}, --south breadboard
-        secondary = {0,0,0}, --north breadboard
+        primary = tints.processing_breadboard, --north breadboard
+        secondary = tints.processing_breadboard, --south breadboard
         tertiary = tints.boron, --left pipe/container
         quaternary = tints.ferric_chloride --right pipe/container
     },
@@ -4741,16 +4790,15 @@ data:extend({
     },
     crafting_machine_tint =
     {
-        primary = {0,0,0}, --south breadboard
-        secondary = {0,0,0}, --north breadboard
+        primary = tints.advanced_processing_breadboard, --south breadboard
+        secondary = tints.advanced_processing_breadboard, --north breadboard
         tertiary = tints.phosphoric_acid, --left pipe/container
         quaternary = tints.ferric_chloride --right pipe/container
     },
     energy_required = 9,
-    category = "crafting-with-fluid",
-    additional_categories = {"pm-circuit-boards"},
+    category = "pm-circuit-boards",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = trued,
     ingredients =
     {
       PM.ingredient("pm-phosphoric-acid", 7.5, "fluid"),
@@ -4782,14 +4830,13 @@ data:extend({
     },
     crafting_machine_tint =
     {
-        primary = {0,0,0}, --south breadboard
-        secondary = {0,0,0}, --north breadboard
+        primary = tints.advanced_processing_breadboard, --south breadboard
+        secondary = tints.advanced_processing_breadboard, --north breadboard
         tertiary = tints.phosphoric_acid, --left pipe/container
         quaternary = tints.ferric_chloride --right pipe/container
     },
     energy_required = 9,
-    category = "crafting-with-fluid",
-    additional_categories = {"pm-circuit-boards"},
+    category = "pm-circuit-boards",
     enabled = false,
     allow_productivity = true,
     ingredients =

@@ -7,7 +7,7 @@ data.raw["recipe"]["electronic-circuit"].ingredients =
 }
 data.raw["recipe"]["electronic-circuit"].crafting_machine_tint =
 {
-  primary = {r = 0, g = 1, b = 0},
+  primary = tints.electronic_breadboard,
   secondary = {r = 0, g = 0.5, b = 0}
 }
 data.raw["recipe"]["automation-science-pack"].ingredients =
@@ -83,7 +83,7 @@ data.raw["recipe"]["advanced-circuit"].ingredients =
 }
 data.raw["recipe"]["advanced-circuit"].crafting_machine_tint =
 {
-  primary = {r = 1, g = 0, b = 0},
+  primary = tints.advanced_breadboard,
   secondary = {r = 0.5, g = 0, b = 0}
 }
 data.raw["recipe"]["small-lamp"].ingredients =
@@ -511,7 +511,7 @@ data.raw["recipe"]["processing-unit"].ingredients =
 }
 data.raw["recipe"]["processing-unit"].crafting_machine_tint =
 {
-  primary = {r = 0, g = 0, b = 1},
+  primary = tints.processing_breadboard,
   secondary = {r = 0, g = 0, b = 0.5}
 }
 data.raw["recipe"]["cannon-shell"].ingredients =
