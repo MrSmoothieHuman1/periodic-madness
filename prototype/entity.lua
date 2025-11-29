@@ -8765,6 +8765,7 @@ fluid_boxes =
         fuel_categories = {"pm-geothermal-bore"},
         initial_fuel_percent = 0.01,
     },
+    neighbour_bonus = 25,
     input_fluid_box = 
     {
       production_type = "input",
