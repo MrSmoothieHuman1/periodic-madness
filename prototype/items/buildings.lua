@@ -957,7 +957,7 @@ data:extend({
     type = "item",
     name = "pm-electronic-laser-etcher",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/electric-coke-oven.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
     place_result = "pm-electronic-laser-etcher",
     stack_size = 25
   },

@@ -8425,10 +8425,10 @@ fluid_boxes =
 {
   type = "assembling-machine",
   name = "pm-electronic-laser-etcher",
-  icon = "__periodic-madness__/graphics/icons/buildings/electric-coke-oven.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 0.5, result = "pm-electric-coke-oven" },
+  minable = { mining_time = 0.5, result = "pm-electronic-laser-etcher" },
   max_health = 800,
   corpse = "pm-electronic-laser-etcher",
   dying_explosion = "assembling-machine-1-explosion",
