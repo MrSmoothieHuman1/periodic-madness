@@ -1774,7 +1774,26 @@ data:extend({
     {
         PM.product("pm-electronic-laser-etcher", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-atmospheric-condenser-2",
+    subgroup = "pm-atmospheric-machine",
+    order = "aa",
+    enabled = false,
+    energy_required = 5,
+    ingredients =
+    {
+      PM.ingredient("pm-corrosion-resistant-tubing", 12),
+      PM.ingredient("pm-atmospheric-condenser", 1),
+      PM.ingredient("pm-air-filter", 4),
+      PM.ingredient("pm-advanced-processing-unit", 2),
+      PM.ingredient("pm-high-density-structure", 3)
+    },
+    results = {
+      PM.product("pm-atmospheric-condenser-2", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

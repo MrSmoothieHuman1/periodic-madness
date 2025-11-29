@@ -6890,7 +6890,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/atmospheric-condenser-2.png",
     effects = 
     {
-
+        PM.unlock_recipe("pm-atmospheric-condenser-2")
     },
     prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit"},
     unit =

@@ -961,6 +961,16 @@ data:extend({
     place_result = "pm-electronic-laser-etcher",
     stack_size = 25
   },
+  {
+    type = "item",
+    name = "pm-atmospheric-condenser-2",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/atmospheric-condenser-2.png",
+    subgroup = "pm-atmospheric-machine",
+    order = "aa",
+    place_result = "pm-atmospheric-condenser-2",
+    stack_size = 20
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

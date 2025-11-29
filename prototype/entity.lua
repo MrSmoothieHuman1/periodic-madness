@@ -8821,7 +8821,7 @@ fluid_boxes =
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/atmospheric-condenser-2.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.5, result = "pm-atmospheric-condenser" },
+    minable = { mining_time = 0.5, result = "pm-atmospheric-condenser-2" },
     max_health = 700,
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
