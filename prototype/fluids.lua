@@ -2082,7 +2082,7 @@ data:extend({
     type = "fluid",
     name = "pm-geothermally-heated-steam",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/industrial-noble-gas.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/geothermally-heated-steam.png",
     default_temperature = 250,
     minimum_temperature = 250,
     maximum_temperature = 1500,

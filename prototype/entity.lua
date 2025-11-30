@@ -8768,7 +8768,7 @@ fluid_boxes =
     neighbour_bonus = 25,
     input_fluid_box = 
     {
-      production_type = "input",
+      production_type = "input-output",
       pipe_covers = pipecoverspictures(),
       volume = 500,
       filter = "pm-geothermal-drilling-fluid",
@@ -8780,7 +8780,7 @@ fluid_boxes =
     },
     output_fluid_box = 
     {
-      production_type = "output",
+      production_type = "input-output",
       pipe_covers = pipecoverspictures(),
       volume = 250,
       filter = "pm-geothermally-heated-steam",
