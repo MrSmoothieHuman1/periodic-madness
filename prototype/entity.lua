@@ -8797,28 +8797,44 @@ fluid_boxes =
       },
     },
     max_fluid_usage = 0.5,
-    picture =
+    graphics_set =
     {
-      layers =
+      plasma_category = "pm-geothermal-steam",
+      structure =
       {
+        north =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-2/solar-panel.png",
-          priority = "high",
-          width = 230,
-          height = 224,
-          shift = util.by_pixel(-3, 3.5),
-          scale = 0.5
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            priority = "high",
+            width = 384,
+            height = 384,
+            scale = 0.5
         },
+        south =
         {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
-          priority = "high",
-          width = 220,
-          height = 180,
-          shift = util.by_pixel(9.5, 6),
-          draw_as_shadow = true,
-          scale = 0.5
-        }
-      }
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            priority = "high",
+            width = 384,
+            height = 384,
+            scale = 0.5
+        },
+        east =
+        {
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            priority = "high",
+            width = 384,
+            height = 384,
+            scale = 0.5
+        },
+        west =
+        {
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            priority = "high",
+            width = 384,
+            height = 384,
+            scale = 0.5
+        },
+      },
     },
   },
   {
