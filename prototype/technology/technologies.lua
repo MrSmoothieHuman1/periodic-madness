@@ -6491,7 +6491,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-rocket-cladding-parts")
     },
-    prerequisites = {"pm-heat-shielding", "low-density-structure"},
+    prerequisites = {"pm-heat-shielding", "low-density-structure", "pm-urhlumin-processing"},
     unit =
     {
       count = 700,
@@ -6524,7 +6524,7 @@ data:extend({
         PM.unlock_recipe("pm-C103-plate"),
         PM.unlock_recipe("pm-rocket-nozzle-parts")
     },
-    prerequisites = {"pm-inert-gas-metallurgy", "low-density-structure", "pm-hafnium-processing"},
+    prerequisites = {"pm-inert-gas-metallurgy", "low-density-structure", "pm-hafnium-processing", "pm-inconel-625-processing"},
     unit =
     {
       count = 700,
@@ -6935,35 +6935,6 @@ data:extend({
         {"pm-noble-gas-science-pack", 1}
       },
       time = 140
-    }
-  },
-  {
-    type = "technology",
-    name = "pm-advanced-science-production",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
-    {
-
-    },
-    prerequisites = {"pm-high-density-structure", "pm-advanced-processing-unit", "pm-advanced-electric-engine-unit"},
-    unit =
-    {
-      count = 850,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1},
-        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-noble-gas-science-pack", 1}
-      },
-      time = 160
     }
   },
 
