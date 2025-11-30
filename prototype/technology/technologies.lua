@@ -6254,7 +6254,7 @@ data:extend({
     type = "technology",
     name = "pm-specialised-crystal-growing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/specialised-crystal-growing.png",
     effects =
     {
         PM.unlock_recipe("pm-ruby"),
