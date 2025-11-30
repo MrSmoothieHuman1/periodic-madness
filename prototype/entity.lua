@@ -6696,11 +6696,11 @@ data:extend({
     {
       {
         filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank.png",
+        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-plant.png",
         width = 320,
         height = 320,
-        frame_count = 16,
-        line_length = 4,
+        repeat_count = 16,
+        line_length = 1,
         animation_speed = 0.45,
         scale = 0.5,
       },

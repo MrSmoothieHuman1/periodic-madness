@@ -48,9 +48,11 @@ Date: 2025-28-09
     - Slightly lowered the profile growth of the coil heater.
     - Buffed MK1 selenium battery equipment to 150MJ from 75MJ.
     - Changed evaporator 2's to be unlocked in R-NM science, instead of P-TM. This was to give R-NM more rewards and to look more appealling when deciding which path to go down.
+    - Updated the mixing plant graphics.
 
   Fixes:
     - Updated the advanced mining drill 1 technology icon.
+    - Fixed the mixing plant icons being identical.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.008
