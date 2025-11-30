@@ -1795,12 +1795,7 @@ data:extend({
     type = "item",
     name = "pm-isogrid-crucible",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/crucible.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/crucible.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/crucible-2.png", size = 64, scale = 0.5 },
-    },
+    icon = "__periodic-madness__/graphics/icons/isogrid-crucible.png",
     subgroup = "pm-alloys",
     order = "A",
     stack_size = 150
