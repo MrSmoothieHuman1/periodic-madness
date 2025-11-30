@@ -285,6 +285,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-niobium-molten-C103",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-C103.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/niobium-plate.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     enabled = false,
     energy_required = 18,
     category = "pm-moltening",
@@ -304,6 +317,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tantalum-molten-C103",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-C103.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/tantalum-plate.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
     enabled = false,
     energy_required = 18,
     category = "pm-moltening",
