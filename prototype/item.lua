@@ -1771,7 +1771,7 @@ data:extend({
     type = "item",
     name = "pm-silicon-on-sapphire",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/graphene.png",
+    icon = "__periodic-madness__/graphics/icons/silicon-on-sapphire.png",
     subgroup = "pm-processing-units",
     stack_size = 10
   },
