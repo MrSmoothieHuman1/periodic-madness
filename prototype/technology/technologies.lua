@@ -2212,7 +2212,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-evaporator-2")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 200,
@@ -2221,7 +2221,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
       },
       time = 45
     }
@@ -6491,7 +6491,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-rocket-cladding-parts")
     },
-    prerequisites = {"pm-heat-shielding", "low-density-structure", "pm-urhlumin-processing"},
+    prerequisites = {"pm-heat-shielding", "low-density-structure", "pm-uhrlumin-processing"},
     unit =
     {
       count = 700,

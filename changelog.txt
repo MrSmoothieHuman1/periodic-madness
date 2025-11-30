@@ -47,6 +47,7 @@ Date: 2025-28-09
     - Doubled amount of radium needed for AEM packs, which is still a better ratio then before.
     - Slightly lowered the profile growth of the coil heater.
     - Buffed MK1 selenium battery equipment to 150MJ from 75MJ.
+    - Changed evaporator 2's to be unlocked in R-NM science, instead of P-TM. This was to give R-NM more rewards and to look more appealling when deciding which path to go down.
 
   Fixes:
     - Updated the advanced mining drill 1 technology icon.
