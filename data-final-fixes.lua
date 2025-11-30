@@ -266,3 +266,34 @@ if false then
 end
 
 ---@alias data.defines.inventory defines.inventory
+
+--[[for _, item in pairs(data.raw["item"]) do
+    if item.icon ~= nil then
+        item.icon = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png"
+        item.icon_size = 49
+    end
+end
+for _, item in pairs(data.raw["fluid"]) do
+    if item.icon ~= nil then
+        item.icon = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png"
+        item.icon_size = 49
+    end
+end
+for _, item in pairs(data.raw["tool"]) do
+    if item.icon ~= nil then
+        item.icon = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png"
+        item.icon_size = 49
+    end
+end
+for _, item in pairs(data.raw["module"]) do
+    if item.icon ~= nil then
+        item.icon = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png"
+        item.icon_size = 49
+    end
+end
+for _, item in pairs(data.raw["technology"]) do
+    if item.icon ~= nil then
+        item.icon = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png"
+        item.icon_size = 49
+    end
+end--]]

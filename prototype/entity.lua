@@ -8765,8 +8765,8 @@ fluid_boxes =
         fuel_categories = {"pm-geothermal-bore"},
         initial_fuel_percent = 0.01,
     },
-    neighbour_bonus = 25,
-    input_fluid_box = 
+    neighbour_bonus = 0.25,
+    input_fluid_box =
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
@@ -8796,7 +8796,7 @@ fluid_boxes =
         {flow_direction="input-output", direction = defines.direction.east --[[@as int]], position = {2.5, -2.5}} --east top
       },
     },
-    max_fluid_usage = 0.5,
+    max_fluid_usage = 0.5/second,
     graphics_set =
     {
       plasma_category = "pm-geothermal-steam",
@@ -8837,6 +8837,62 @@ fluid_boxes =
       },
     },
   },
+--[[{
+    type = "fusion-generator",
+    name = "pm-geothermal-generator",
+    icon = "__periodic-madness__/graphics/icons/buildings/solar-panel.png",
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {mining_time = 0.2, result = "pm-solar-panel-2"},
+    max_health = 350,
+    impact_category = "metal",
+    corpse = "pm-geothermal-generator",
+    dying_explosion = "assembling-machine-1-explosion",
+    -- alert_icon_shift = util.by_pixel(0, -12),
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 70
+      }
+    },
+    collision_box = {{-0.9, -1.9}, {0.9, 1.9}},
+    selection_box = {{-1, -2}, {1, 2}},
+    damaged_trigger_effect = hit_effects.entity(),
+    fast_replaceable_group = "fusion-generator",
+    perceived_performance = {minimum = 0.25, performance_to_activity_rate = 2.0},
+    vehicle_impact_sound = sounds.generic_impact,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-output",
+      output_flow_limit = "1MW", -- This is used to define max power output.
+    },
+    max_fluid_usage = 0.25/second, --geothermal outputs 30/s, this eats 15/s
+
+    input_fluid_box =
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 125,
+      filter = "pm-geothermally-heated-steam",
+      volume_reservation_fraction = 0.5,
+      pipe_connections =
+      {
+        { flow_direction="input",  direction = defines.direction.south, position = {0, -1} },
+      },
+    },
+    output_fluid_box =
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 250,
+      filter = "pm-acidic-water",
+      pipe_connections =
+      {
+        { flow_direction="output", direction = defines.direction.north, position = {0, 1} },
+      }
+    }
+  },--]]
   {
     type = "assembling-machine",
     name = "pm-atmospheric-condenser-2",
