@@ -520,7 +520,7 @@ data:extend({
     {
     type = "pipe",
     name = "pm-stainless-steel-pipe",
-    icon = "__base__/graphics/icons/pipe.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/stainless-steel-pipe.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.15, result = "pm-stainless-steel-pipe"},
     max_health = 250,
@@ -653,7 +653,7 @@ data:extend({
     {
     type = "pipe",
     name = "pm-osmium-pipe",
-    icon = "__base__/graphics/icons/pipe.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/osmium-pipe.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.15, result = "pm-osmium-pipe"},
     max_health = 1200,
