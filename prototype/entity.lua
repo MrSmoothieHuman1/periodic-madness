@@ -6734,7 +6734,7 @@ data:extend({
             repeat_count = 32,
             line_length = 1,
             scale = 0.5,
-            shift = util.by_pixel(0, 2),
+            shift = util.by_pixel(118, 0),
             draw_as_shadow = true,
           }
         }
@@ -6780,7 +6780,7 @@ data:extend({
             repeat_count = 32,
             line_length = 1,
             scale = 0.5,
-            shift = util.by_pixel(0, 2),
+            shift = util.by_pixel(118, 0),
             draw_as_shadow = true,
           }
         }
@@ -6826,7 +6826,7 @@ data:extend({
             repeat_count = 32,
             line_length = 1,
             scale = 0.5,
-            shift = util.by_pixel(0, 2),
+            shift = util.by_pixel(118, 0),
             draw_as_shadow = true,
           }
         }
@@ -6872,7 +6872,7 @@ data:extend({
             repeat_count = 32,
             line_length = 1,
             scale = 0.5,
-            shift = util.by_pixel(0, 2),
+            shift = util.by_pixel(118, 0),
             draw_as_shadow = true,
           }
         }
@@ -7105,36 +7105,357 @@ fluid_boxes =
     emissions_per_minute = {pollution = 4}
   },
   energy_usage = "475kW",
-  graphics_set =
-{
+graphics_set =
+  {
+  status_colors = pm_diode_status_colors(),
   animation =
   {
-    layers =
+    north =
     {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank-north-south-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+    south =
+    {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank-north-south-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+    east =
+    {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank-east-west-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+    west =
+    {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank-east-west-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+  },
+  working_visualisations =
       {
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank.png",
-        width = 320,
-        height = 320,
-        frame_count = 16,
-        line_length = 4,
-        animation_speed = 0.45,
-        scale = 0.5,
-      },
-      {
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
-        width = 320,
-        height = 320,
-        frame_count = 1,
-        repeat_count = 16,
-        line_length = 1,
-        scale = 0.5,
-        shift = util.by_pixel(0, 2),
-        draw_as_shadow = true,
-      }
+        {
+          default_recipe_tint =
+          {
+            primary = {1, 1, 0},
+            secondary = tints.empty,
+            tertiary = tints.empty,
+            quaternary = tints.empty,
+          },
+          recipe_not_set_tint =
+          {
+            primary = {0.592, 0.733, 0.82},
+            secondary = tints.empty,
+            tertiary = tints.empty,
+            quaternary = tints.empty,
+          },
+          always_draw = true,
+          apply_recipe_tint = "primary",
+          north_animation =
+          {
+            layers =
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+          south_animation =
+          {
+            layers = 
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+          east_animation =
+          {
+            layers = 
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+          west_animation =
+          {
+            layers = 
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+        },
+        {
+            always_draw = true,
+            apply_tint = "status",
+            north_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            },
+            south_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            },
+            east_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            },
+            west_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            }
+        }
     }
-  }
 },
 fluid_boxes =
 {
@@ -9527,36 +9848,357 @@ fluid_boxes =
     emissions_per_minute = {pollution = 3}
   },
   energy_usage = "550kW",
-  graphics_set =
-{
+graphics_set =
+  {
+  status_colors = pm_diode_status_colors(),
   animation =
   {
-    layers =
+    north =
     {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-north-south-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+    south =
+    {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-north-south-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+    east =
+    {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-east-west-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+    west =
+    {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-east-west-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-spinnys.png",
+            width = 320,
+            height = 320,
+            frame_count = 32,
+            line_length = 8,
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-glass.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            --tint = {0, 0, 0, 0.8},
+            scale = 0.5,
+          },
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            scale = 0.5,
+            shift = util.by_pixel(118, 0),
+            draw_as_shadow = true,
+          }
+        }
+    },
+  },
+  working_visualisations =
       {
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank.png",
-        width = 320,
-        height = 320,
-        frame_count = 16,
-        line_length = 4,
-        animation_speed = 0.45,
-        scale = 0.5,
-      },
-      {
-        filename =
-        "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-shadow.png",
-        width = 320,
-        height = 320,
-        frame_count = 1,
-        repeat_count = 16,
-        line_length = 1,
-        scale = 0.5,
-        shift = util.by_pixel(0, 2),
-        draw_as_shadow = true,
-      }
+        {
+          default_recipe_tint =
+          {
+            primary = {1, 1, 0},
+            secondary = tints.empty,
+            tertiary = tints.empty,
+            quaternary = tints.empty,
+          },
+          recipe_not_set_tint =
+          {
+            primary = {0.592, 0.733, 0.82},
+            secondary = tints.empty,
+            tertiary = tints.empty,
+            quaternary = tints.empty,
+          },
+          always_draw = true,
+          apply_recipe_tint = "primary",
+          north_animation =
+          {
+            layers =
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+          south_animation =
+          {
+            layers = 
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+          east_animation =
+          {
+            layers = 
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+          west_animation =
+          {
+            layers = 
+            {
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-3/mixing-tank-fluid.png",
+                    width = 320,
+                    height = 320,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.85,
+                    scale = 0.5,
+                },
+                {
+                    filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-tanks.png",
+                    width = 320,
+                    height = 320,
+                    repeat_count = 32,
+                    line_length = 1,
+                    scale = 0.5,
+                },
+            },
+          },
+        },
+        {
+            always_draw = true,
+            apply_tint = "status",
+            north_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            },
+            south_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            },
+            east_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            },
+            west_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/mixing-tank-1/mixing-tank-diode.png",
+                width = 320,
+                height = 320,
+                repeat_count = 32,
+                line_length = 1,
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5,
+            }
+        }
     }
-  }
 },
 fluid_boxes =
 {
