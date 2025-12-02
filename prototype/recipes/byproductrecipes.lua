@@ -290,6 +290,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ferrous-waste-water",
+    crafting_machine_tint =
+    {
+        primary = {0.659, 0.839, 0.788}
+    },
     category = "pm-mixing",
     subgroup = "pm-iron-tm",
     order = "i",
@@ -349,6 +353,10 @@ data:extend({
     name = "pm-ferrous-waste-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-seperation.png",
+    crafting_machine_tint =
+    {
+        primary = {0, 0, 0, 0}
+    },
     category = "chemistry",
     subgroup = "pm-iron-tm",
     order = "j",
@@ -420,6 +428,10 @@ data:extend({
     name = "pm-ferrous-waste-looping",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
+    crafting_machine_tint =
+    {
+        primary = {0.659, 0.839, 0.788}
+    },
     category = "pm-mixing",
     subgroup = "pm-iron-tm",
     order = "k",
