@@ -113,6 +113,10 @@ data:extend({
     name = "pm-copper-tailings-looping",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/copper-tailings-looping.png",
+    crafting_machine_tint = 
+    {
+        primary = {0.91, 0.62, 0.322}
+    },
     category = "pm-mixing",
     subgroup = "pm-cobalt-tm",
     order = "ca",

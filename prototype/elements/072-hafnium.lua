@@ -85,6 +85,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-hafnium-chloride",
+        crafting_machine_tint =
+        {
+            primary = {0.588, 0.788, 0.588}
+        },
         enabled = false,
         energy_required = 12,
         category = "pm-mixing",

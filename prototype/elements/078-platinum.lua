@@ -112,6 +112,10 @@ data:extend({
     name = "pm-nickel-tailings-looping",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/nickel-tailings-looping.png",
+    crafting_machine_tint = 
+    {
+        primary = {0.584, 0.769, 0.753}
+    },
     category = "pm-mixing",
     subgroup = "pm-platinum-tm",
     order = "c",

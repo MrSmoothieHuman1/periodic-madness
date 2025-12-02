@@ -107,6 +107,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-strontium-black-ash",
+        crafting_machine_tint = 
+        {
+            primary = {0.251, 0.31, 0.302}
+        },
         enabled = false,
         energy_required = 12,
         category = "pm-mixing",

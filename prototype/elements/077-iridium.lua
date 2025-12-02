@@ -122,6 +122,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-anode-sludge-seperation",
+        crafting_machine_tint = 
+        {
+            primary = {0.4, 0.259, 0.071}
+        },
         enabled = false,
         energy_required = 7,
         category = "pm-mixing",
@@ -144,6 +148,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-lightly-seperated-anode-mud",
+        crafting_machine_tint = 
+        {
+            primary = {0.561, 0.38, 0.145}
+        },
         enabled = false,
         energy_required = 3.5,
         category = "pm-mixing",
@@ -224,6 +232,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-iridium-sponge",
+        crafting_machine_tint =
+        {
+            primary = {0.584, 0.424, 0.659}
+        },
         enabled = false,
         energy_required = 10,
         category = "pm-mixing",

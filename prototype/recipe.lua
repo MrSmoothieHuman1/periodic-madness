@@ -2511,6 +2511,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ruby-voiding",
+    crafting_machine_tint =
+    {
+        primary = {0.902, 0.718, 0.718}
+    },
     category = "pm-mixing",
     subgroup = "pm-ruby-ptm",
     order = "ba",
@@ -2532,6 +2536,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-citrine-voiding",
+    crafting_machine_tint =
+    {
+        primary = {0.902, 0.812, 0.718}
+    },
     category = "pm-mixing",
     subgroup = "pm-citrine-ptm",
     order = "ba",
@@ -2553,6 +2561,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-emerald-voiding",
+    crafting_machine_tint =
+    {
+        primary = {0.718, 0.902, 0.718}
+    },
     category = "pm-mixing",
     subgroup = "pm-emerald-ptm",
     order = "ba",
@@ -2574,6 +2586,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lapis-lazuli-voiding",
+    crafting_machine_tint =
+    {
+        primary = {0.718, 0.808, 0.902}
+    },
     category = "pm-mixing",
     subgroup = "pm-lapis-lazuli-ptm",
     order = "ba",
@@ -2595,6 +2611,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sapphire-voiding",
+    crafting_machine_tint =
+    {
+        primary = {0.718, 0.902, 0.878}
+    },
     category = "pm-mixing",
     subgroup = "pm-sapphire-ptm",
     order = "ba",
@@ -2616,6 +2636,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-garnet-voiding",
+    crafting_machine_tint =
+    {
+        primary = {0.89, 0.718, 0.902}
+    },
     category = "pm-mixing",
     subgroup = "pm-garnet-ptm",
     order = "ba",
@@ -2785,6 +2809,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ruby-crystal-slurry",
+    crafting_machine_tint =
+    {
+        primary = {0.902, 0.518, 0.518}
+    },
     enabled = false,
     energy_required = 6,
     category = "pm-mixing",
@@ -2805,6 +2833,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-citrine-crystal-slurry",
+    crafting_machine_tint =
+    {
+        primary = {0.902, 0.812, 0.518}
+    },
     enabled = false,
     energy_required = 6,
     category = "pm-mixing",
@@ -2825,6 +2857,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-emerald-crystal-slurry",
+    crafting_machine_tint =
+    {
+        primary = {0.518, 0.902, 0.518}
+    },
     enabled = false,
     energy_required = 6,
     category = "pm-mixing",
@@ -2845,6 +2881,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sapphire-crystal-slurry",
+    crafting_machine_tint =
+    {
+        primary = {0.518, 0.902, 0.878}
+    },
     enabled = false,
     energy_required = 6,
     category = "pm-mixing",
@@ -2865,6 +2905,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lapis-lazuli-crystal-slurry",
+    crafting_machine_tint =
+    {
+        primary = {0.518, 0.608, 0.902}
+    },
     enabled = false,
     energy_required = 6,
     category = "pm-mixing",
@@ -2885,6 +2929,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-garnet-crystal-slurry",
+    crafting_machine_tint =
+    {
+        primary = {0.89, 0.518, 0.902}
+    },
     enabled = false,
     energy_required = 6,
     category = "pm-mixing",
@@ -3369,6 +3417,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-concrete-slurry",
+    crafting_machine_tint = 
+    {
+        primary = {0.686, 0.71, 0.729}
+    },
     enabled = false,
     energy_required = 10,
     category = "pm-mixing",
@@ -4400,6 +4452,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-phenylhydrazine-solution",
+    crafting_machine_tint = 
+    {
+        primary = {0.882, 0.929, 0.941}
+    },
     enabled = false,
     energy_required = 2,
     category = "pm-mixing",

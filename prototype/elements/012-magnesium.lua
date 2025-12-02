@@ -108,6 +108,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-magnesium-hydroxide",
+        crafting_machine_tint = 
+        {
+            primary = {0.929, 0.831, 0.851}
+        },
         enabled = false,
         energy_required = 20,
         category = "pm-mixing",
@@ -267,6 +271,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-magnesium-carbonate",
+        crafting_machine_tint = 
+        {
+            primary = {0.89, 0.863, 0.867}
+        },
         enabled = false,
         energy_required = 6,
         category = "pm-mixing",

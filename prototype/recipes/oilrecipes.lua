@@ -321,6 +321,10 @@ data:extend({
     name = "pm-diesel-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/diesel-cracking.png",
+    crafting_machine_tint = 
+    {
+        primary = {0.35, 0.35, 0.25}
+    },
     energy_required = 2,
     enabled = false,
     category = "pm-mixing",

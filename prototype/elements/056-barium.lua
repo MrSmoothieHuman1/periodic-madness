@@ -179,6 +179,10 @@ data:extend({
         name = "pm-barium-tailings-looping",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/barium-tailings-looping.png",
+        crafting_machine_tint = 
+        {
+            primary = {0.788, 0.725, 0.588}
+        },
         category = "pm-mixing",
         subgroup = "pm-barium-aem",
         order = "d",

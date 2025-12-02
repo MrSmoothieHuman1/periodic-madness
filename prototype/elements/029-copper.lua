@@ -325,6 +325,10 @@ data:extend({
 {
   type = "recipe",
   name = "pm-powdered-copper-frothing",
+  crafting_machine_tint = 
+  {
+    primary = {0.761, 0.624, 0.506}
+  },
   enabled = false,
   energy_required = 2,
   category = "pm-mixing",

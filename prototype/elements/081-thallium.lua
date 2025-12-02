@@ -77,6 +77,10 @@ data:extend({
     name = "pm-thallium-mixing",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/thallium-mixing.png",
+    crafting_machine_tint = 
+    {
+        primary = {0.576, 0.761, 0.718}
+    },
     enabled = false,
     energy_required = 6,
     category = "pm-mixing",

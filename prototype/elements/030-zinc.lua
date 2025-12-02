@@ -306,6 +306,10 @@ data:extend({
   name = "pm-powdered-zinc-frothing",
   icon_size = 64,
   icon = "__periodic-madness__/graphics/icons/recipes/nickel-chunk-frothing.png",
+  crafting_machine_tint = 
+  {
+    primary = {0.749, 0.655, 0.694}
+  },
   category = "pm-mixing",
   subgroup = "pm-advanced-zinc-tm",
   order = "a",
@@ -408,6 +412,10 @@ data:extend({
   name = "pm-zinc-tailings-cleaning",
   icon_size = 64,
   icon = "__periodic-madness__/graphics/icons/recipes/zinc-tailings-looping.png",
+  crafting_machine_tint = 
+  {
+    primary = {0.788, 0.745, 0.765}
+  },
   category = "pm-mixing",
   subgroup = "pm-advanced-zinc-tm",
   order = "f",

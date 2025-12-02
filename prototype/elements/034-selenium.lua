@@ -97,6 +97,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-selenous-acid",
+        crafting_machine_tint = 
+        {
+            primary = {0.941, 0.498, 0.69}
+        },
         enabled = false,
         energy_required = 12.5,
         category = "pm-mixing",

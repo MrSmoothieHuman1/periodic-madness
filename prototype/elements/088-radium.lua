@@ -124,6 +124,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-barium-radium-carbonate-seperation",
+        crafting_machine_tint =
+        {
+            primary = {0.671, 0.82, 0.58}
+        },
         enabled = false,
         energy_required = 3,
         category = "pm-mixing",
@@ -190,6 +194,10 @@ data:extend({
         name = "pm-sulfur-dichloride-seperation",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/sulfur-dichloride-seperation.png",
+        crafting_machine_tint = 
+        {
+            primary = {0.82, 0.851, 0.635}
+        },
         enabled = false,
         energy_required = 2,
         category = "pm-mixing",
@@ -211,6 +219,10 @@ data:extend({
         name = "pm-sulfur-dichloride-to-hydrogen-sulfide",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/sulfur-dichloride-to-hydrogen-sulfide.png",
+        crafting_machine_tint = 
+        {
+            primary = {0.851, 0.788, 0.635}
+        },
         enabled = false,
         energy_required = 2,
         category = "pm-mixing",

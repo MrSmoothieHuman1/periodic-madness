@@ -300,6 +300,10 @@ data:extend({
 {
   type = "recipe",
   name = "pm-powdered-nickel-frothing",
+  crating_machine_tint = 
+  {
+    primary = {0.714, 0.855, 0.859}
+  },
   enabled = false,
   energy_required = 2,
   category = "pm-mixing",
@@ -383,6 +387,10 @@ data:extend({
 {
   type = "recipe",
   name = "pm-nickel-sulfate",
+  crafting_machine_tint =
+  {
+    primary = {0.369, 0.714, 0.922}
+  },
   enabled = false,
   energy_required = 12,
   category = "pm-mixing",

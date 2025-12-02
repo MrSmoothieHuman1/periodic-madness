@@ -107,6 +107,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-aluminium-hydroxide-slurry",
+    crafting_machine_tint = 
+    {
+        primary = {0.75, 0.75, 0.75}
+    },
     enabled = false,
     energy_required = 4,
     category = "pm-mixing",

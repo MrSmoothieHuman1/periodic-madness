@@ -157,6 +157,10 @@ data:extend({
     {
       type = "recipe",
       name = "pm-carbon-to-carbon-dioxide",
+    crafting_machine_tint =
+    {
+        primary = {0.33, 0.33, 0.33}
+    },
       category = "pm-mixing",
       subgroup = "pm-carbon-rnm",
       order = "h",

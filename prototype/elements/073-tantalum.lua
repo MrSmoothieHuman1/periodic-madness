@@ -125,6 +125,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-tantalite-niobite-tailings",
+        crafting_machine_tint = 
+        {
+            primary = {0.58, 0.573, 0.388}
+        },
         enabled = false,
         energy_required = 12,
         category = "pm-mixing",
@@ -211,6 +215,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-niobite-waste-water",
+        crafting_machine_tint = 
+        {
+            primary = {0.733, 0.922, 0.949}
+        },
         enabled = false,
         energy_required = 5,
         category = "pm-mixing",
@@ -233,6 +241,10 @@ data:extend({
         name = "pm-niobite-waste-looping",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/ferrous-waste-water-looping.png",
+        crafting_machine_tint = 
+        {
+            primary = {0.761, 0.847, 0.859}
+        },
         category = "pm-mixing",
         subgroup = "pm-tantalum-tm",
         order = "h",

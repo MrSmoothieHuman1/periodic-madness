@@ -315,6 +315,10 @@ data:extend({
     name = "pm-aluminium-sulfate-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/aluminium-sulfate-seperation.png",
+    crafting_machine_tint = 
+    {
+        primary = {0.969, 0.847, 0.914}
+    },
     enabled = false,
     energy_required = 5,
     category = "pm-mixing",

@@ -172,6 +172,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-perrhenic-acid",
+        crafting_machine_tint = 
+        {
+            primary = {0.969, 0.898, 0.333}
+        },
         enabled = false,
         energy_required = 12,
         category = "pm-mixing",

@@ -219,6 +219,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-calcium-hydroxide-slurry",
+    crafting_machine_tint = 
+    {
+        primary = {0.941, 0.922, 0.922}
+    },
     subgroup = "pm-calcium-aem",
     category = "pm-mixing",
     order = "d",
@@ -301,6 +305,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-calcium-sulfate-slurry",
+    crafting_machine_tint = 
+    {
+        primary = {0.99, 0.85, 0.85}
+    },
     enabled = false,
     energy_required = 24,
     category = "pm-mixing",

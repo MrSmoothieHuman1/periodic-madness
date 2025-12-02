@@ -262,6 +262,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ammonium-dimolybdate",
+    crafting_machine_tint = 
+    {
+        primary = {0.463, 0.471, 0.424}
+    },
     enabled = false,
     energy_required = 4,
     category = "pm-mixing",

@@ -1014,7 +1014,6 @@ data:extend({
     fuel_value = "1MJ",
     base_color = {r = 0.247, g = 0.82, b = 1 },
     flow_color = {r = 0.247, g = 0.82, b = 1 },
-    auto_barrel = false,
   },
   {
     type = "fluid",
@@ -1463,7 +1462,6 @@ data:extend({
     fuel_value = "2MJ",
     base_color = {r = 0.447, g = 0.92, b = 1 },
     flow_color = {r = 0.447, g = 0.92, b = 1 },
-    auto_barrel = false,
   },
   {
     type = "fluid",
@@ -1665,7 +1663,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.647, g = 0.82, b = 0.8 },
     flow_color = {r = 0.647, g = 0.82, b = 0.8 },
-    auto_barrel = false,
   },
   {
     type = "fluid",
@@ -1677,7 +1674,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.547, g = 0.9, b = 0.8 },
     flow_color = {r = 0.547, g = 0.9, b = 0.8 },
-    auto_barrel = false,
   },
   {
     type = "fluid",
