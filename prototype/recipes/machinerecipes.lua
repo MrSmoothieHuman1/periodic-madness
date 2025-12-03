@@ -1750,6 +1750,7 @@ data:extend({
       PM.ingredient("pm-high-density-structure", 3),
       PM.ingredient("pm-fluid-circuit", 4),
       PM.ingredient("pm-advanced-processing-unit", 2),
+      PM.ingredient("pm-advanced-electric-engine-unit", 1),
       PM.ingredient("pm-light-lubricant", 5, "fluid")
     },
     results =
@@ -1809,6 +1810,24 @@ data:extend({
     results = 
     {
         PM.product("pm-atmospheric-condenser", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-mixing-tank-3",
+    enabled = false,
+    energy_required = 6,
+    ingredients =
+    {
+        PM.ingredient("pm-mixing-tank-2", 1),
+        PM.ingredient("refined-concrete", 6),
+        PM.ingredient("pm-fluid-circuit", 2),
+        PM.ingredient("processing-unit", 2),
+        PM.ingredient("pm-advanced-electric-engine-unit", 1)
+    },
+    results =
+    {
+        PM.product("pm-mixing-tank-3", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

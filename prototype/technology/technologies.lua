@@ -5394,8 +5394,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/mixing-material-processing-3.png",
     effects =
     {
+        PM.unlock_recipe("pm-mixing-tank-3")
     },
-    prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-mixing-material-processing-2"},
+    prerequisites = {"pm-advanced-electric-engine-unit", "pm-mixing-material-processing-2"},
     unit =
     {
       count = 500,

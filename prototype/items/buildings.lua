@@ -971,6 +971,16 @@ data:extend({
     place_result = "pm-atmospheric-condenser-2",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-mixing-tank-3",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-3.png",
+    subgroup = "pm-water-machine",
+    order = "da",
+    place_result = "pm-mixing-tank-3",
+    stack_size = 50,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
