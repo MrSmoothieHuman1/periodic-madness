@@ -1779,7 +1779,7 @@ data:extend({
     type = "item",
     name = "pm-space-hardened-shielding",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/graphene.png",
+    icon = "__periodic-madness__/graphics/icons/space-hardened-shielding.png",
     subgroup = "pm-processing-units",
     stack_size = 25
   },
