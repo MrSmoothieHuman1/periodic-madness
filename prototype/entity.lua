@@ -9438,7 +9438,7 @@ fluid_boxes =
         {flow_direction="input-output", direction = defines.direction.east --[[@as int]], position = {2.5, -2.5}} --east top
       },
     },
-    max_fluid_usage = 0.5/second,
+    max_fluid_usage = 0.5,
     graphics_set =
     {
       plasma_category = "pm-geothermal-steam",
@@ -9479,16 +9479,17 @@ fluid_boxes =
       },
     },
   },
---[[{
+{
     type = "fusion-generator",
     name = "pm-geothermal-generator",
-    icon = "__periodic-madness__/graphics/icons/buildings/solar-panel.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "pm-solar-panel-2"},
     max_health = 350,
     impact_category = "metal",
     corpse = "pm-geothermal-generator",
     dying_explosion = "assembling-machine-1-explosion",
+    forced_symmetry = "horizontal",
     -- alert_icon_shift = util.by_pixel(0, -12),
     resistances =
     {
@@ -9497,8 +9498,8 @@ fluid_boxes =
         percent = 70
       }
     },
-    collision_box = {{-0.9, -1.9}, {0.9, 1.9}},
-    selection_box = {{-1, -2}, {1, 2}},
+    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+    selection_box = {{-1, -1}, {1, 1}},
     damaged_trigger_effect = hit_effects.entity(),
     fast_replaceable_group = "fusion-generator",
     perceived_performance = {minimum = 0.25, performance_to_activity_rate = 2.0},
@@ -9509,8 +9510,66 @@ fluid_boxes =
       usage_priority = "secondary-output",
       output_flow_limit = "1MW", -- This is used to define max power output.
     },
-    max_fluid_usage = 0.25/second, --geothermal outputs 30/s, this eats 15/s
-
+    max_fluid_usage = 0.25, --geothermal outputs 30/s, this eats 15/s
+    graphics_set =
+    {
+        north_graphics_set =
+        {
+            fluid_input_graphics =
+            {
+                {
+                    sprite =
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png",
+                        width = 49,
+                        height = 49,
+                    }
+                }
+            }
+        },
+        south_graphics_set =
+        {
+            fluid_input_graphics =
+            {
+                {
+                    sprite =
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png",
+                        width = 49,
+                        height = 49,
+                    }
+                }
+            }
+        },
+        east_graphics_set =
+        {
+            fluid_input_graphics =
+            {
+                {
+                    sprite =
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png",
+                        width = 49,
+                        height = 49,
+                    }
+                }
+            }
+        },
+        west_graphics_set =
+        {
+            fluid_input_graphics =
+            {
+                {
+                    sprite =
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png",
+                        width = 49,
+                        height = 49,
+                    }
+                }
+            }
+        },
+    },
     input_fluid_box =
     {
       production_type = "input",
@@ -9520,7 +9579,7 @@ fluid_boxes =
       volume_reservation_fraction = 0.5,
       pipe_connections =
       {
-        { flow_direction="input",  direction = defines.direction.south, position = {0, -1} },
+        {flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}
       },
     },
     output_fluid_box =
@@ -9531,10 +9590,10 @@ fluid_boxes =
       filter = "pm-acidic-water",
       pipe_connections =
       {
-        { flow_direction="output", direction = defines.direction.north, position = {0, 1} },
+        {flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}},
       }
     }
-  },--]]
+  },
   {
     type = "assembling-machine",
     name = "pm-atmospheric-condenser-2",
