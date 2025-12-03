@@ -32,7 +32,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-advanced-air-filter", 2),
-        PM.ingredient("sulfur", 4),
+        PM.ingredient("sulfur", 5),
         PM.ingredient("pm-iodine", 4),
         PM.ingredient("pm-lightweight-framing", 6)
     },
@@ -56,7 +56,8 @@ data:extend({
     results = 
     {
         PM.product("pm-argon-gas", 12.5, "fluid"),
-        PM.product_chance("pm-trace-gas", 15, 0.5, "fluid")
+        PM.product_chance("pm-trace-gas", 15, 0.5, "fluid"),
+        PM.catalyst_chance("pm-argon-air-filter", 1, 0.5, 1)
     }
   },
 {

@@ -31,8 +31,8 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-advanced-air-filter", 2),
-        PM.ingredient("pm-potassium", 3),
-        PM.ingredient("pm-iodine", 4),
+        PM.ingredient("pm-potassium", 4),
+        PM.ingredient("pm-iodine", 3),
         PM.ingredient("pm-lightweight-framing", 5)
     },
     results = 
@@ -55,7 +55,8 @@ data:extend({
     results = 
     {
         PM.product("pm-krypton-gas", 10, "fluid"),
-        PM.product_chance("pm-trace-gas", 15, 0.5, "fluid")
+        PM.product_chance("pm-trace-gas", 15, 0.5, "fluid"),
+        PM.catalyst_chance("pm-krypton-air-filter", 1, 0.5, 1)
     }
   },
 {
