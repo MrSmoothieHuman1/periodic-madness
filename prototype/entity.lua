@@ -9827,7 +9827,7 @@ fluid_boxes =
   type = "assembling-machine",
   name = "pm-mixing-tank-3",
   icon_size = 64,
-  icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-2.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-3.png",
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
   minable = { mining_time = 1, result = "pm-mixing-tank-2" },
   max_health = 1250,

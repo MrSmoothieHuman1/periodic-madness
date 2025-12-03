@@ -1641,7 +1641,7 @@ data:extend({
     type = "technology",
     name = "pm-mixing-material-processing-1",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/mixing-tank-1.png",
+    icon = "__periodic-madness__/graphics/technology/mixing-material-processing-1.png",
     effects =
     {
       PM.unlock_recipe("pm-mixing-tank-1")
@@ -2489,7 +2489,7 @@ data:extend({
     type = "technology",
     name = "pm-mixing-material-processing-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/mixing-tank-2.png",
+    icon = "__periodic-madness__/graphics/technology/mixing-material-processing-2.png",
     effects =
     {
       PM.unlock_recipe("pm-mixing-tank-2")
@@ -5391,7 +5391,7 @@ data:extend({
     type = "technology",
     name = "pm-mixing-material-processing-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/osmium-fluid-handling.png",
+    icon = "__periodic-madness__/graphics/technology/mixing-material-processing-3.png",
     effects =
     {
     },
