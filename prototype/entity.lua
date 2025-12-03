@@ -9864,7 +9864,7 @@ graphics_set =
             height = 320,
             repeat_count = 32,
             line_length = 1,
-            animation_speed = 0.85,
+            animation_speed = 0.5,
             scale = 0.5,
           },
           {
@@ -9910,7 +9910,7 @@ graphics_set =
             height = 320,
             repeat_count = 32,
             line_length = 1,
-            animation_speed = 0.85,
+            animation_speed = 0.5,
             scale = 0.5,
           },
           {
@@ -9956,7 +9956,7 @@ graphics_set =
             height = 320,
             repeat_count = 32,
             line_length = 1,
-            animation_speed = 0.85,
+            animation_speed = 0.5,
             scale = 0.5,
           },
           {
@@ -10002,7 +10002,7 @@ graphics_set =
             height = 320,
             repeat_count = 32,
             line_length = 1,
-            animation_speed = 0.85,
+            animation_speed = 0.5,
             scale = 0.5,
           },
           {
@@ -10531,3 +10531,11 @@ data.raw["rocket-silo"]["rocket-silo"].module_slots = 5
 data.raw["rocket-silo"]["rocket-silo"].energy_usage = "8MW"
 data.raw["rocket-silo"]["rocket-silo"].active_energy_usage = "2MW"
 data.raw["rocket-silo"]["rocket-silo"].lamp_energy_usage = "250kW"
+data.raw["rocket-silo"]["rocket-silo"].tile_buildability_rules = {{area = {{-4.2, -4.2}, {4.2, 4.2}}, required_tiles = {layers = {pm_concrete = true, pm_refined_concrete = true}}, remove_on_collision = true}}
+data.raw["rocket-silo"]["rocket-silo"].custom_tooltip_fields =
+{
+  {
+    name = {"pm-tooltips.placeable-on"},
+    value = {"pm-tooltips.concrete-refined-concrete"}
+  }
+}
