@@ -3,7 +3,7 @@ data:extend({
     type = "item",
     name = "pm-xenon-air-filter",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/chlorine-air-filter-2.png",
+    icon = "__periodic-madness__/graphics/icons/xenon-air-filter.png",
     subgroup = "pm-xenon-nb",
     order = "a",
     stack_size = 100
