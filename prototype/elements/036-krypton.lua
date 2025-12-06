@@ -3,7 +3,7 @@ data:extend({
     type = "item",
     name = "pm-krypton-air-filter",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/chlorine-air-filter-2.png",
+    icon = "__periodic-madness__/graphics/icons/krypton-air-filter.png",
     subgroup = "pm-krypton-nb",
     order = "a",
     stack_size = 100
