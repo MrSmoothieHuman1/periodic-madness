@@ -162,8 +162,9 @@ data:extend({
     name = "pm-high-sulfur-refined-kerosene",
     enabled = false,
     energy_required = 6,
-    category = "oil-refining",
+    category = "oil-processing",
     allow_productivity = true,
+    main_product = "pm-high-sulfur-refined-kerosene",
     ingredients =
     {
         PM.ingredient("pm-kerosene", 100, "fluid"),
@@ -173,7 +174,7 @@ data:extend({
     {
         PM.product("pm-high-sulfur-refined-kerosene", 75, "fluid"),
         PM.product_chance("pm-oil-residuals", 10, 0.25, "fluid"),
-        PM.product_range("sulfur", 3, 4)
+        PM.product_range("sulfur", 2, 3)
     }
   },
   {
@@ -181,8 +182,9 @@ data:extend({
     name = "pm-medium-sulfur-refined-kerosene",
     enabled = false,
     energy_required = 8,
-    category = "oil-refining",
+    category = "oil-processing",
     allow_productivity = true,
+    main_product = "pm-medium-sulfur-refined-kerosene",
     ingredients =
     {
         PM.ingredient("pm-high-sulfur-refined-kerosene", 75, "fluid"),
@@ -193,17 +195,18 @@ data:extend({
     {
         PM.product("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
         PM.product_chance("pm-fuel-oils", 10, 0.15, "fluid"),
-        PM.product_range("sulfur", 1, 2),
+        PM.product_range("sulfur", 0, 1),
         PM.product("pm-vanadium-oxide-catalyst", 2)
     }
   },
   {
     type = "recipe",
-    name = "pm-low-sulfur-refined-concrete",
+    name = "pm-low-sulfur-refined-kerosene",
     enabled = false,
     energy_required = 10,
-    category = "oil-refining",
+    category = "oil-processing",
     allow_productivity = true,
+    main_product = "pm-low-sulfur-refined-kerosene",
     ingredients =
     {
         PM.ingredient("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
@@ -213,8 +216,8 @@ data:extend({
     results = 
     {
         PM.product("pm-low-sulfur-refined-kerosene", 25, "fluid"),
-        PM.product_chance("pm-lubricating-oils", 10, 0.5, "fluid"),
-        PM.product_chance("sulfur", 1, 0.75),
+        PM.product_chance("pm-lubricating-oils", 10, 0.05, "fluid"),
+        PM.product_chance("sulfur", 1, 0.5),
         PM.product("pm-cobalt-catalyst", 3)
     }
   },
@@ -226,11 +229,11 @@ data:extend({
     energy_required = 12,
     category = "chemistry",
     allow_productivity = true,
+    main_product = "pm-RP-1",
     ingredients =
     {
         PM.ingredient("pm-low-sulfur-refined-kerosene", 25, "fluid"),
-        PM.ingredient("pm-vanadium-oxide-catalyst", 3),
-        PM.ingredient("pm-cobalt-catalyst", 4),
+        PM.ingredient("pm-ruthenium-sulfide", 4),
         PM.ingredient("pm-nickel-tungsten-catalyst", 3)
     },
     results =
@@ -298,6 +301,49 @@ data:extend({
     results =
     {
         PM.product("pm-rocket-cladding-parts", 2)
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "pm-liquid-rocket-fuel-tank",
+    enabled = false,
+    energy_required = 15,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-RP-1", 12.5, "fluid"),
+        PM.ingredient("pm-lightweight-panelling", 16),
+        PM.ingredient("pm-corrosion-resistant-tubing", 24),
+        PM.ingredient("pm-advanced-electric-engine-unit", 2),
+        PM.ingredient("pm-heavyweight-framing", 8),
+        PM.ingredient("pm-fluid-circuit", 4)
+    },
+    results =
+    {
+        PM.product("pm-liquid-rocket-fuel-tank", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-liquid-rocket-oxidiser-tank",
+    enabled = false,
+    energy_required = 15,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-dinitrogen-tetroxide", 12.5, "fluid"),
+        PM.ingredient("pm-lightweight-panelling", 16),
+        PM.ingredient("pm-corrosion-resistant-tubing", 24),
+        PM.ingredient("pm-advanced-electric-engine-unit", 2),
+        PM.ingredient("pm-heavyweight-framing", 8),
+        PM.ingredient("pm-fluid-circuit", 4)
+    },
+    results =
+    {
+        PM.product("pm-liquid-rocket-oxidiser-tank", 2)
     }
   },
 
@@ -386,8 +432,8 @@ data:extend({
     allow_productivity = true,
     ingredients = 
     {
-        --PM.ingredient("pm-liquid-rocket-fuel", 5),
-        --PM.ingredient("pm-rocket-oxidisier", 5),
+        PM.ingredient("pm-liquid-rocket-fuel-tank", 5),
+        PM.ingredient("pm-liquid-rocket-oxidiser-tank", 5),
         PM.ingredient("pm-rocket-control-unit", 5),
         PM.ingredient("pm-rocket-cladding-parts", 8),
         PM.ingredient("pm-rocket-nozzle-parts", 8)

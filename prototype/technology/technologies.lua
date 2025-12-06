@@ -6947,8 +6947,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-ruthenium-sulfide"),
+        PM.unlock_recipe("pm-high-sulfur-refined-kerosene"),
+        PM.unlock_recipe("pm-medium-sulfur-refined-kerosene"),
+        PM.unlock_recipe("pm-low-sulfur-refined-kerosene"),
+        PM.unlock_recipe("pm-RP-1"),
+        PM.unlock_recipe("pm-liquid-rocket-fuel-tank"),
         PM.unlock_recipe("pm-nitrogen-dioxide"),
         PM.unlock_recipe("pm-dinitrogen-tetroxide"),
+        PM.unlock_recipe("pm-liquid-rocket-oxidiser-tank"),
         PM.unlock_recipe("pm-liquid-fuel-rocket-part")
     },
     prerequisites = {"space-science-pack"},

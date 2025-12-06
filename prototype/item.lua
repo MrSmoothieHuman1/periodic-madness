@@ -1818,6 +1818,24 @@ data:extend({
     fuel_category = "pm-geothermal-bore",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-liquid-rocket-fuel-tank",
+    icon = "__periodic-madness__/graphics/icons/rocket-cladding-parts.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-parts",
+    order = "b",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-liquid-rocket-oxidiser-tank",
+    icon = "__periodic-madness__/graphics/icons/rocket-cladding-parts.png",
+    icon_size = 64,
+    subgroup = "pm-rocket-parts",
+    order = "b",
+    stack_size = 100
+  },
 
   {
     type = "item",

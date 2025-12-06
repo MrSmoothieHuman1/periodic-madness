@@ -29,6 +29,21 @@ data:extend({
         order = "c",
         stack_size = 200
     },
+    {
+        type = "item",
+        name = "pm-ruthenium-sulfide",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/ruthenium-ore.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore-3.png", size = 64, scale = 0.5},
+        },
+        subgroup = "pm-ruthenium-tm",
+        order = "e",
+        stack_size = 200
+    },
 
     {
         type = "fluid",
@@ -121,4 +136,21 @@ data:extend({
             PM.product("pm-ruthenium-plate", 1)
         }
     },
+
+    {
+        type = "recipe",
+        name = "pm-ruthenium-sulfide",
+        enabled = false,
+        energy_required = 12,
+        category = "chemistry",
+        ingredients = 
+        {
+            PM.ingredient("pm-ruthenium-plate", 4),
+            PM.ingredient("sulfur", 8)
+        },
+        results = 
+        {
+            PM.product("pm-ruthenium-sulfide", 3)
+        }
+    }
 })
