@@ -118,39 +118,124 @@ data:extend({
       PM.product("pm-rocket-control-unit", 1)
     }
   },
+
+    {
+    type = "recipe",
+    name = "pm-nitrogen-dioxide",
+    enabled = false,
+    energy_required = 12,
+    category = "chemistry",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-nitric-oxide", 10, "fluid"),
+        PM.ingredient("steam", 25, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-nitrogen-dioxide", 10, "fluid")
+    }
+  },
   {
     type = "recipe",
-    name = "pm-space-processing-unit-rocket-control-unit",
-    icons =
-    {
-      {
-        icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
-        icon_size = 64,
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
-        icon_size = 64,
-        shift = {8, -8},
-        scale = 0.23
-      },
-    },
+    name = "pm-dinitrogen-tetroxide",
     enabled = false,
-    energy_required = 28,
-    category = "crafting-with-fluid",
-    subgroup = "pm-rocket-parts",
-    order = "da",
+    energy_required = 6,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-dinitrogen-tetroxide",
+    ingredients =
+    {
+        PM.ingredient("pm-nitrogen-dioxide", 10, "fluid"),
+        PM.ingredient("copper-plate", 4)
+    },
+    results =
+    {
+        PM.product("pm-dinitrogen-tetroxide", 5, "fluid"),
+        PM.product_chance("pm-nitric-acid", 5, 0.5,"fluid"),
+        PM.product_chance("copper-plate", 4, 0.85)
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "pm-high-sulfur-refined-kerosene",
+    enabled = false,
+    energy_required = 6,
+    category = "oil-refining",
     allow_productivity = true,
     ingredients =
-      {
-        PM.ingredient("pm-CRT", 1),
-        PM.ingredient("pm-space-processing-unit", 3),
-        PM.ingredient("pm-light-lubricant", 6, "fluid"),
-        PM.ingredient("pm-polyethylene-plastic", 2),
-        PM.ingredient("pm-mylar", 2)
-      },
+    {
+        PM.ingredient("pm-kerosene", 100, "fluid"),
+        PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-high-sulfur-refined-kerosene", 75, "fluid"),
+        PM.product_chance("pm-oil-residuals", 10, 0.25, "fluid"),
+        PM.product_range("sulfur", 3, 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-medium-sulfur-refined-kerosene",
+    enabled = false,
+    energy_required = 8,
+    category = "oil-refining",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-high-sulfur-refined-kerosene", 75, "fluid"),
+        PM.ingredient("steam", 33, "fluid"),
+        PM.ingredient("pm-vanadium-oxide-catalyst", 2)
+    },
     results = 
     {
-      PM.product("pm-rocket-control-unit", 1)
+        PM.product("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
+        PM.product_chance("pm-fuel-oils", 10, 0.15, "fluid"),
+        PM.product_range("sulfur", 1, 2),
+        PM.product("pm-vanadium-oxide-catalyst", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-low-sulfur-refined-concrete",
+    enabled = false,
+    energy_required = 10,
+    category = "oil-refining",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
+        PM.ingredient("steam", 25, "fluid"),
+        PM.ingredient("pm-cobalt-catalyst", 3)
+    },
+    results = 
+    {
+        PM.product("pm-low-sulfur-refined-kerosene", 25, "fluid"),
+        PM.product_chance("pm-lubricating-oils", 10, 0.5, "fluid"),
+        PM.product_chance("sulfur", 1, 0.75),
+        PM.product("pm-cobalt-catalyst", 3)
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "pm-RP-1",
+    enabled = false,
+    energy_required = 12,
+    category = "chemistry",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-low-sulfur-refined-kerosene", 25, "fluid"),
+        PM.ingredient("pm-vanadium-oxide-catalyst", 3),
+        PM.ingredient("pm-cobalt-catalyst", 4),
+        PM.ingredient("pm-nickel-tungsten-catalyst", 3)
+    },
+    results =
+    {
+        PM.product("pm-RP-1", 12.5, "fluid")
     }
   },
 
@@ -216,6 +301,41 @@ data:extend({
     }
   },
 
+  {
+    type = "recipe",
+    name = "pm-space-processing-unit-rocket-control-unit",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.23
+      },
+    },
+    enabled = false,
+    energy_required = 28,
+    category = "crafting-with-fluid",
+    subgroup = "pm-rocket-parts",
+    order = "da",
+    allow_productivity = true,
+    ingredients =
+      {
+        PM.ingredient("pm-CRT", 1),
+        PM.ingredient("pm-space-processing-unit", 3),
+        PM.ingredient("pm-light-lubricant", 6, "fluid"),
+        PM.ingredient("pm-polyethylene-plastic", 2),
+        PM.ingredient("pm-mylar", 2)
+      },
+    results = 
+    {
+      PM.product("pm-rocket-control-unit", 1)
+    }
+  },
 --MARK: Rocket launchables
   {
     type = "recipe",

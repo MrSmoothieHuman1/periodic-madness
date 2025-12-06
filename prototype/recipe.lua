@@ -4952,43 +4952,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-nitrogen-dioxide",
-    enabled = false,
-    energy_required = 12,
-    category = "chemistry",
-    allow_productivity = true,
-    ingredients = 
-    {
-        PM.ingredient("pm-nitric-oxide", 10, "fluid"),
-        PM.ingredient("steam", 25, "fluid")
-    },
-    results =
-    {
-        PM.product("pm-nitrogen-dioxide", 10, "fluid")
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-dinitrogen-tetroxide",
-    enabled = false,
-    energy_required = 6,
-    category = "chemistry",
-    allow_productivity = true,
-    main_product = "pm-dinitrogen-tetroxide",
-    ingredients =
-    {
-        PM.ingredient("pm-nitrogen-dioxide", 10, "fluid"),
-        PM.ingredient("copper-plate", 4)
-    },
-    results =
-    {
-        PM.product("pm-dinitrogen-tetroxide", 5, "fluid"),
-        PM.product_chance("pm-nitric-acid", 5, 0.5,"fluid"),
-        PM.product_chance("copper-plate", 4, 0.85)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-advanced-processing-integrated-circuits",
     energy_required = 1,
     enabled = false,
