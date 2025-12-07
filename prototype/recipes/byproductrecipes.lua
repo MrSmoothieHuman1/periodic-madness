@@ -536,7 +536,7 @@ data:extend({
     results =
     {
       PM.product_range("pm-ferrous-waste-water", 4, 16, "fluid"),
-      PM.product_range("pm-cupric-waste-water", 6, 12, "fluid"),
+      PM.product_range("pm-patina", 3, 6),
       PM.product_range("pm-sulfuric-waste-water", 4, 10, "fluid"),
     }
   },
