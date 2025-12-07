@@ -27,7 +27,13 @@ data:extend({
         type = "item",
         name = "pm-impure-hafnium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/impure-hafnium.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/impure-hafnium.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/impure-hafnium-2.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/impure-hafnium-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-hafnium-tm",
         order = "c",
         stack_size = 50
