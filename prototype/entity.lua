@@ -10126,7 +10126,7 @@ graphics_set =
                     height = 320,
                     frame_count = 32,
                     line_length = 8,
-                    animation_speed = 0.85,
+                    animation_speed = 0.5,
                     scale = 0.5,
                 },
                 {
@@ -10149,7 +10149,7 @@ graphics_set =
                     height = 320,
                     frame_count = 32,
                     line_length = 8,
-                    animation_speed = 0.85,
+                    animation_speed = 0.5,
                     scale = 0.5,
                 },
                 {
@@ -10195,7 +10195,7 @@ graphics_set =
                     height = 320,
                     frame_count = 32,
                     line_length = 8,
-                    animation_speed = 0.85,
+                    animation_speed = 0.5,
                     scale = 0.5,
                 },
                 {
