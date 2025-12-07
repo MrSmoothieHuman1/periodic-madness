@@ -233,6 +233,8 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-low-sulfur-refined-kerosene", 25, "fluid"),
+        PM.ingredient("pm-2-3-3-trimethylpentane", 5, "fluid"),
+        PM.ingredient("solid-fuel", 10),
         PM.ingredient("pm-ruthenium-sulfide", 4),
         PM.ingredient("pm-nickel-tungsten-catalyst", 3)
     },
