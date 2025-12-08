@@ -264,7 +264,6 @@ data:extend({
     {
       PM.unlock_recipe("offshore-pump"),
       PM.unlock_recipe("pm-seawater-desaltination"),
-      PM.unlock_recipe("pump")
     },
     prerequisites = {"automation-2", "pm-cleaner-power-generation"},
     unit =

@@ -3,6 +3,7 @@ data.raw["technology"]["automation"].effects =
 {
   PM.unlock_recipe("assembling-machine-1"),
   PM.unlock_recipe("storage-tank"),
+  PM.unlock_recipe("pump"),
   PM.unlock_recipe("long-handed-inserter"),
 }
 

@@ -662,7 +662,6 @@ data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 data.raw["recipe"]["pump"].ingredients = 
 {
   PM.ingredient("pm-basic-tubing", 10),
-  PM.ingredient("steel-plate", 4),
   PM.ingredient("pm-basic-motor", 4),
   PM.ingredient("pm-basic-panelling", 8),
 }
