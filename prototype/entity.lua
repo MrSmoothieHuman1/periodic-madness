@@ -5346,15 +5346,14 @@ data:extend({
   }--[[@as data.FurnacePrototype]],
   { --MARK: Fluid Burner
     type = "reactor",
-    name = "pm-fluid-burner",
+    name = "pm-fluid-turbine",
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.4, result = "pm-fluid-burner" },
-    max_health = 300,
+    max_health = 500,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
-    allowed_effects = PM.all_effects(),
     map_color = {r = 0.659, g = 0.106, b = 0.106},
     working_sound =
     {
@@ -5377,29 +5376,38 @@ data:extend({
         percent = 100
       }
     },
-    collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
-    selection_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
-    consumption = "500kW",
+    collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    consumption = "5MW",
+    neighbour_bonus = 0.2,
     energy_source =
     {
-      type = "burner",
-      fuel_categories = {"pm-fuel-canisters"},
-      effectivity = 1,
-      fuel_inventory_size = 1,
-      burnt_inventory_size = 1,
-      light_flicker =
+      type = "fluid",
+      burns_fluid = true,
+      scale_fluid_usage = true,
+      fluid_box =
       {
-        color = { 0, 0, 0 },
-        minimum_intensity = 0.7,
-        maximum_intensity = 0.95
+        production_type = "input",
+        pipe_picture = assembler2pipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        filter = "pm-burning-oil",
+        pipe_connections = 
+        {
+            {flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}},
+            {flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {0, 1}},
+            {flow_direction="input-output", direction = defines.direction.east--[[@as int]], position = {1, 0}},
+            {flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}},
+        },
+        secondary_draw_orders = { north = -1 }
       }
     },
     heat_buffer =
     {
-      max_temperature = 1500,
+      max_temperature = 750,
       specific_heat = "10MJ",
       max_transfer = "500MW",
-      minimum_glow_temperature = 500,
+      minimum_glow_temperature = 330,
       connections =
       {
         {

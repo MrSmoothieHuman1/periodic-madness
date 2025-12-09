@@ -2133,6 +2133,19 @@ data:extend({
     flow_color = {r = 0.666, g = 0.666, b = 0.666},
     auto_void = true,
   },
+  {
+    type = "fluid",
+    name = "pm-burning-oil",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/burning-oil.png",
+    subgroup = "pm-oil-fluid",
+    order = "j",
+    default_temperature = 15,
+    fuel_value = "1MJ",
+    base_color = {r = 1, g = 1, b = 1 },
+    flow_color = {r = 1, g = 1, b = 1 },
+    auto_void = true,
+  },
 
 	{
 		type = "fluid",
