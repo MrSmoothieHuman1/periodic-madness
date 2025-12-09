@@ -2604,6 +2604,29 @@ data:extend({
       time = 60
     }
   },
+  {
+    type = "technology",
+    name = "pm-geothermal-bore-MK2",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/geothermal-bore-mk2.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-geothermal-bore-mk2"),
+    },
+    prerequisites = {"lubricant", "pm-geothermal-power"},
+    unit =
+    {
+      count = 250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1}
+      },
+      time = 60,
+    }
+  },
 
 --MARK: R-NM science
   {
