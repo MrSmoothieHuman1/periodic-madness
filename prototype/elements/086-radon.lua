@@ -4,7 +4,7 @@ data:extend({
     type = "item",
     name = "pm-radon-air-filter",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/chlorine-air-filter-2.png",
+    icon = "__periodic-madness__/graphics/icons/radon-air-filter.png",
     subgroup = "pm-radon-nb",
     order = "a",
     stack_size = 100
