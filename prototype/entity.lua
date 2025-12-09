@@ -8193,7 +8193,7 @@ fluid_boxes =
       pipe_picture = pm_assembler4pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+      pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
@@ -8209,7 +8209,7 @@ fluid_boxes =
       pipe_picture = pm_assembler4pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+      pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
       secondary_draw_orders = { north = -1 }
     },
     {
@@ -10366,7 +10366,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes =
     pipe_picture = assembler2pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -10382,7 +10382,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes =
     pipe_picture = assembler2pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
 }
@@ -10396,7 +10396,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
     pipe_picture = assembler3pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -10412,7 +10412,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
     pipe_picture = assembler3pipepictures(),
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
   {
