@@ -19,7 +19,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.7, g = 1, b = 0.7},
     flow_color = {r = 0.7, g = 1, b = 0.7},
-    auto_barrel = false,
   },
 
   {
@@ -62,12 +61,24 @@ data:extend({
   {
     type = "recipe",
     name = "pm-helium-gas-into-industrial-noble-gas",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/industrial-noble-gas.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/helium-gas.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 4,
     category = "pm-atmospheric-condensing",
     subgroup = "pm-helium-nb",
     order = "c",
-    main_product = "pm-industrial-noble-gas",
     ingredients =
     {
         PM.ingredient("pm-helium-gas", 20, "fluid"),
