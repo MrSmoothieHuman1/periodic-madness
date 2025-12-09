@@ -1030,11 +1030,6 @@ data:extend({
       ammo_category = "pm-shotgun-slug",
       modifier = 0.2
     },
-    {
-      type = "ammo-damage",
-      ammo_category = "rocket",
-      modifier = 0.25
-    }
   },
   prerequisites = {"physical-projectile-damage-7"},
   unit =
@@ -1078,11 +1073,6 @@ data:extend({
       ammo_category = "pm-shotgun-slug",
       modifier = 0.25
     },
-    {
-      type = "ammo-damage",
-      ammo_category = "rocket",
-      modifier = 0.3
-    }
   },
   prerequisites = {"pm-physical-projectile-damage-8", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
   unit =
@@ -1127,11 +1117,6 @@ data:extend({
       ammo_category = "pm-shotgun-slug",
       modifier = 0.25
     },
-    {
-      type = "ammo-damage",
-      ammo_category = "rocket",
-      modifier = 0.3
-    }
   },
   prerequisites = {"pm-physical-projectile-damage-9"},
   unit =
@@ -1176,11 +1161,6 @@ data:extend({
       ammo_category = "pm-shotgun-slug",
       modifier = 0.30
     },
-    {
-      type = "ammo-damage",
-      ammo_category = "rocket",
-      modifier = 0.45
-    }
   },
   prerequisites = {"pm-physical-projectile-damage-10", "pm-noble-gas-pack-unlock"},
   unit =
@@ -1440,7 +1420,7 @@ data:extend({
   effects =
   {
     PM.modify_ammo("ammo-damage", "grenade", 0.4),
-    PM.modify_ammo("ammo-damage", "rocket", 0.35),
+    PM.modify_ammo("ammo-damage", "rocket", 0.5),
     PM.modify_ammo("ammo-damage", "landmine", 0.35)
   },
   prerequisites = {"stronger-explosives-7"},
@@ -1462,32 +1442,68 @@ data:extend({
   },
   {
   type = "technology",
-  name = "pm-stronger-explosives-8",
+  name = "pm-stronger-explosives-9",
   icons = util.technology_icon_constant_damage("__base__/graphics/technology/stronger-explosives-3.png"),
   effects =
   {
     PM.modify_ammo("ammo-damage", "grenade", 0.4),
-    PM.modify_ammo("ammo-damage", "rocket", 0.35),
+    PM.modify_ammo("ammo-damage", "rocket", 0.6),
     PM.modify_ammo("ammo-damage", "landmine", 0.35)
   },
-  prerequisites = {"stronger-explosives-7"},
+  prerequisites = {"pm-stronger-explosives-8"},
   unit =
   {
-    count = 100 * 8,
+    count = 1200,
     ingredients =
     {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
         {"pm-alkali-metal-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1}
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
     },
     time = 120
   },
     upgrade = true
   },
-
+  {
+  type = "technology",
+  name = "pm-stronger-explosives-10",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/stronger-explosives-3.png"),
+  max_level = "infinite",
+  effects =
+  {
+    PM.modify_ammo("ammo-damage", "grenade", 0.2),
+    PM.modify_ammo("ammo-damage", "rocket", 0.25),
+    PM.modify_ammo("ammo-damage", "landmine", 0.25)
+  },
+  prerequisites = {"pm-stronger-explosives-9", "space-science-pack"},
+  unit =
+  {
+    count_formula = "1000 + ((L - 9) * 500)",
+    ingredients =
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+    },
+    time = 180
+  },
+    upgrade = true
+  },
 --MARK: Inserter bonus capacity
   {
     type = "technology",
@@ -2102,11 +2118,6 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.1
   },
-  {
-    type = "ammo-damage",
-    ammo_category = "rocket",
-    modifier = 0.15
-  }
 }
 data.raw["technology"]["physical-projectile-damage-5"].unit.count = 550
 data.raw["technology"]["physical-projectile-damage-5"].prerequisites = {"physical-projectile-damage-4", "pm-post-transition-metal-pack-unlock"}
@@ -2139,11 +2150,6 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.15
   },
-  {
-    type = "ammo-damage",
-    ammo_category = "rocket",
-    modifier = 0.15
-  }
 }
 data.raw["technology"]["physical-projectile-damage-6"].unit.count = 700
 data.raw["technology"]["physical-projectile-damage-6"].prerequisites = {"physical-projectile-damage-5"}
@@ -2176,11 +2182,6 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.15
   },
-  {
-    type = "ammo-damage",
-    ammo_category = "rocket",
-    modifier = 0.2
-  }
 }
 data.raw["technology"]["physical-projectile-damage-7"].unit.count_formula = "850"
 data.raw["technology"]["physical-projectile-damage-7"].prerequisites = {"physical-projectile-damage-6", "pm-metalloid-pack-unlock"}
@@ -2214,11 +2215,6 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
     ammo_category = "pm-shotgun-slug",
     modifier = 0.2
   },
-  {
-    type = "ammo-damage",
-    ammo_category = "rocket",
-    modifier = 0.2
-  }
 }
 data.raw["technology"]["physical-projectile-damage-7"].max_level = 7
 
@@ -2610,7 +2606,7 @@ data.raw["technology"]["stronger-explosives-2"].icon = "__base__/graphics/techno
 data.raw["technology"]["stronger-explosives-2"].effects =
 {
   PM.modify_ammo("ammo-damage", "grenade", 0.25),
-  PM.modify_ammo("ammo-damage", "rocket", 0.2),
+  PM.modify_ammo("ammo-damage", "rocket", 0.25),
   PM.modify_ammo("ammo-damage", "landmine", 0.2)
 }
 data.raw["technology"]["stronger-explosives-2"].unit.ingredients =
@@ -2635,7 +2631,7 @@ data.raw["technology"]["stronger-explosives-3"].unit.ingredients =
 data.raw["technology"]["stronger-explosives-4"].effects =
 {
   PM.modify_ammo("ammo-damage", "grenade", 0.3),
-  PM.modify_ammo("ammo-damage", "rocket", 0.25),
+  PM.modify_ammo("ammo-damage", "rocket", 0.3),
   PM.modify_ammo("ammo-damage", "landmine", 0.25)
 }
 data.raw["technology"]["stronger-explosives-4"].prerequisites = {"stronger-explosives-3"}
@@ -2664,7 +2660,7 @@ data.raw["technology"]["stronger-explosives-5"].unit.ingredients =
 data.raw["technology"]["stronger-explosives-6"].effects =
 {
   PM.modify_ammo("ammo-damage", "grenade", 0.35),
-  PM.modify_ammo("ammo-damage", "rocket", 0.3),
+  PM.modify_ammo("ammo-damage", "rocket", 0.4),
   PM.modify_ammo("ammo-damage", "landmine", 0.3)
 }
 data.raw["technology"]["stronger-explosives-6"].unit.time = 80
@@ -2679,7 +2675,7 @@ data.raw["technology"]["stronger-explosives-6"].unit.ingredients =
 data.raw["technology"]["stronger-explosives-7"].effects =
 {
   PM.modify_ammo("ammo-damage", "grenade", 0.35),
-  PM.modify_ammo("ammo-damage", "rocket", 0.35),
+  PM.modify_ammo("ammo-damage", "rocket", 0.4),
   PM.modify_ammo("ammo-damage", "landmine", 0.35)
 }
 data.raw["technology"]["stronger-explosives-7"].max_level = 7

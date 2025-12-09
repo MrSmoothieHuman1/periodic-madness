@@ -54,6 +54,8 @@ Date: 2025-28-09
   Fixes:
     - Updated the advanced mining drill 1 technology icon.
     - Fixed the mixing plant icons being identical.
+    - Fixed physical damage and stronger explosives buffing rocket damage.
+    - Buffed stronger explosives to not be half of what its value would be due to the last change.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.7.008
