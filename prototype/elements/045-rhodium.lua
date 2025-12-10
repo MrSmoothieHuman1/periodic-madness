@@ -94,7 +94,7 @@ data:extend({
         allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-rhenium-chunks", 4),
+            PM.ingredient("pm-rhodium-chunks", 4),
         },
         results = 
         {
