@@ -255,6 +255,12 @@ data:extend({
   --MARK: Production
   {
     type = "item-subgroup",
+    name = "pm-solar-energy",
+    group = "production",
+    order = "ba"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-chemistry-machine",
     group = "production",
     order = "ea"

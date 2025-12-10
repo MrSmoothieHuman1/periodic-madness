@@ -420,8 +420,8 @@ data:extend({
     name = "pm-solar-panel-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
-    subgroup = "energy",
-    order = "e",
+    subgroup = "pm-solar-energy",
+    order = "b",
     place_result = "pm-solar-panel-2",
     stack_size = 50,
   },
@@ -430,8 +430,8 @@ data:extend({
     name = "pm-solar-panel-3",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-3.png",
-    subgroup = "energy",
-    order = "e",
+    subgroup = "pm-solar-energy",
+    order = "c",
     place_result = "pm-solar-panel-3",
     stack_size = 50,
   },
@@ -1038,3 +1038,6 @@ data.raw["item"]["pipe-to-ground"].stack_size = 100
 
 data.raw["item"]["centrifuge"].subgroup = "pm-chemistry-machine"
 data.raw["item"]["centrifuge"].order = "g"
+
+data.raw["item"]["solar-panel"].subgroup = "pm-solar-energy"
+data.raw["item"]["solar-panel"].order = "a"
