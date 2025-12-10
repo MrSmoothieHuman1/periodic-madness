@@ -2013,6 +2013,8 @@ data:extend({
     corpse = "pm-evaporator",
     dying_explosion = "assembling-machine-1-explosion",
     forced_symmetry = "horizontal",
+    fast_replaceable_group = "pm-evaporators",
+    next_upgrade = "pm-evaporator-2",
     resistances =
     {
       {
@@ -4290,6 +4292,8 @@ data:extend({
     allowed_effects = PM.all_effects(),
     module_slots = 2,
     forced_symmetry = "horizontal",
+    fast_replaceable_group = "pm-evaporators",
+    next_upgrade = "pm-evaporator-2",
     resistances =
     {
       {
