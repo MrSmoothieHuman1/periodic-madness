@@ -1122,7 +1122,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-fluid-burner",
+    name = "pm-fluid-turbine",
     subgroup = "pm-heat-machines",
     order = "A",
     enabled = false,
@@ -1134,7 +1134,7 @@ data:extend({
       PM.ingredient("pm-heavyweight-framing", 6)
     },
     results = {
-      PM.product("pm-fluid-burner", 1)
+      PM.product("pm-fluid-turbine", 1)
     }
   },
   {

@@ -5350,7 +5350,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.4, result = "pm-fluid-burner" },
+    minable = { mining_time = 0.4, result = "pm-fluid-turbine" },
     max_health = 500,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
