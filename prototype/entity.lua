@@ -3770,6 +3770,8 @@ data:extend({
     max_health = 350,
     corpse = "pm-electrolysis-plant",
     dying_explosion = "assembling-machine-1-explosion",
+    fast_replaceable_group = "pm-electrolysis",
+    next_upgrade = "pm-electrolysis-plant-2",
     resistances =
     {
       {
@@ -4488,6 +4490,7 @@ data:extend({
     max_health = 700,
     corpse = "pm-electrolysis-plant-2",
     dying_explosion = "assembling-machine-1-explosion",
+    fast_replaceable_group = "pm-electrolysis",
     resistances =
     {
       {
