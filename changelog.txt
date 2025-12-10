@@ -50,6 +50,7 @@ Date: 2025-28-09
     - Changed evaporator 2's to be unlocked in R-NM science, instead of P-TM. This was to give R-NM more rewards and to look more appealling when deciding which path to go down.
     - Updated the mixing plant graphics.
     - Made all input fluidboxes on assembling machine 2 and above passthrough.
+    - Made a seperate tab for "chemistry" machines, which includes: electrolysis plants, acid/chem plants, centrifuge, cyclotron and crystallizer.
 
   Fixes:
     - Updated the advanced mining drill 1 technology icon.

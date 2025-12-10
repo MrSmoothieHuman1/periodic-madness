@@ -253,7 +253,12 @@ data:extend({
 
 
   --MARK: Production
-
+  {
+    type = "item-subgroup",
+    name = "pm-chemistry-machine",
+    group = "production",
+    order = "ea"
+  },
   {
     type = "item-subgroup",
     name = "pm-coils",

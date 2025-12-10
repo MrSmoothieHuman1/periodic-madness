@@ -17,8 +17,8 @@ data:extend({
     name = "pm-acid-plant",
     icon = "__periodic-madness__/graphics/icons/buildings/acid-plant.png",
     icon_size = 64,
-    subgroup = "production-machine",
-    order = "a",
+    subgroup = "pm-chemistry-machine",
+    order = "c",
     place_result = "pm-acid-plant",
     stack_size = 75
   },
@@ -251,7 +251,7 @@ data:extend({
     tier = 1,
     effect = {speed = 1, consumption = 1, pollution = 0.75},
     subgroup = "production-machine",
-    order = "h",
+    order = "g",
     place_result = "pm-circuit-megassembler",
     stack_size = 10
   },
@@ -400,8 +400,8 @@ data:extend({
     name = "pm-electrolysis-plant",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant.png",
-    subgroup = "pm-water-machine",
-    order = "f",
+    subgroup = "pm-chemistry-machine",
+    order = "a",
     place_result = "pm-electrolysis-plant",
     stack_size = 50,
   },
@@ -410,7 +410,8 @@ data:extend({
     name = "pm-crystallizer",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/buildings/crystallizer.png",
-    subgroup = "production-machine",
+    subgroup = "pm-chemistry-machine",
+    order = "e",
     place_result = "pm-crystallizer",
     stack_size = 50,
   },
@@ -439,7 +440,8 @@ data:extend({
     name = "pm-cyclotron",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cyclotron.png",
-    subgroup = "production-machine",
+    subgroup = "pm-chemistry-machine",
+    order = "f",
     place_result = "pm-cyclotron",
     stack_size = 121,
   },
@@ -507,8 +509,8 @@ data:extend({
     name = "pm-electrolysis-plant-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant-2.png",
-    subgroup = "pm-water-machine",
-    order = "fa",
+    subgroup = "pm-chemistry-machine",
+    order = "b",
     place_result = "pm-electrolysis-plant-2",
     stack_size = 50,
   },
@@ -557,8 +559,8 @@ data:extend({
     name = "pm-chemical-plant-2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/chemical-plant-2.png",
-    subgroup = "pm-oil-machine",
-    order = "ca",
+    subgroup = "pm-chemistry-machine",
+    order = "e",
     place_result = "pm-chemical-plant-2",
     stack_size = 75
   },
@@ -758,6 +760,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cooling-plant.png",
     subgroup = "production-machine",
+    order = "f",
     place_result = "pm-cooling-plant",
     stack_size = 50,
   },
@@ -986,8 +989,8 @@ data:extend({
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
 data.raw["item"]["oil-refinery"].order = "b"
 
-data.raw["item"]["chemical-plant"].subgroup = "pm-oil-machine"
-data.raw["item"]["chemical-plant"].order = "c"
+data.raw["item"]["chemical-plant"].subgroup = "pm-chemistry-machine"
+data.raw["item"]["chemical-plant"].order = "d"
 data.raw["item"]["chemical-plant"].stack_size = 75
 
 data.raw["item"]["lab"].subgroup = "pm-science-machine"
@@ -1032,3 +1035,6 @@ data.raw["recipe"]["heat-exchanger"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-exchanger"].order = "Aa"
 
 data.raw["item"]["pipe-to-ground"].stack_size = 100
+
+data.raw["item"]["centrifuge"].subgroup = "pm-chemistry-machine"
+data.raw["item"]["centrifuge"].order = "g"

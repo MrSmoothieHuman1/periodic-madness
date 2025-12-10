@@ -5,8 +5,6 @@ data:extend({
     type = "recipe",
     name = "pm-acid-plant",
     energy_required = 1,
-    subgroup = "production-machine",
-    order = "a",
     ingredients =
     {
       PM.ingredient("pm-air-filter", 1),
@@ -705,8 +703,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-electrolysis-plant",
-    subgroup = "pm-water-machine",
-    order = "f",
     energy_required = 1,
     enabled = false,
     ingredients =
@@ -724,7 +720,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-crystallizer",
-    subgroup = "production-machine",
     enabled = false,
     energy_required = 3,
     ingredients =
@@ -900,8 +895,6 @@ data:extend({
     type = "recipe",
     name = "pm-electrolysis-plant-2",
     enabled = false,
-    subgroup = "pm-water-machine",
-    order = "fa",
     energy_required = 3,
     ingredients =
     {
@@ -994,8 +987,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-chemical-plant-2",
-    subgroup = "pm-oil-machine",
-    order = "e",
     enabled = false,
     energy_required = 2.5,
     ingredients = 
@@ -1835,7 +1826,6 @@ data:extend({
 data.raw["recipe"]["pipe-to-ground"].enabled = true
 data.raw["recipe"]["pipe"].enabled = true
 
-data.raw["recipe"]["centrifuge"].order = "x"
 
 data.raw["recipe"]["transport-belt"].subgroup = "pm-belts"
 data.raw["recipe"]["transport-belt"].order = "a"
