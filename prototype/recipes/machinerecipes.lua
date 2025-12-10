@@ -832,8 +832,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-polonium-reactor",
-    subgroup = "energy",
-    order = "f",
     energy_required = 15,
     enabled = false,
     ingredients =

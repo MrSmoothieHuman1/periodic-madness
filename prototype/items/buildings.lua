@@ -479,8 +479,8 @@ data:extend({
     name = "pm-polonium-reactor",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
-    subgroup = "energy",
-    order = "f",
+    subgroup = "pm-nuclear-energy",
+    order = "a",
     place_result = "pm-polonium-reactor",
     stack_size = 20
   },
@@ -769,7 +769,8 @@ data:extend({
     name = "pm-RTG",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/RTG.png",
-    subgroup = "production-machine",
+    subgroup = "pm-nuclear-energy",
+    order = "b",
     place_result = "pm-RTG",
     stack_size = 50,
   },
@@ -1041,3 +1042,6 @@ data.raw["item"]["centrifuge"].order = "g"
 
 data.raw["item"]["solar-panel"].subgroup = "pm-solar-energy"
 data.raw["item"]["solar-panel"].order = "a"
+
+data.raw["item"]["nuclear-reactor"].subgroup = "pm-nuclear-energy"
+data.raw["item"]["nuclear-reactor"].order = "c"

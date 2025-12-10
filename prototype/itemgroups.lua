@@ -251,45 +251,6 @@ data:extend({
     order = "cb"
   },
 
-
-  --MARK: Production
-  {
-    type = "item-subgroup",
-    name = "pm-solar-energy",
-    group = "production",
-    order = "ba"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-chemistry-machine",
-    group = "production",
-    order = "ea"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-coils",
-    group = "production",
-    order = "f"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-speed",
-    group = "production",
-    order = "g",
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-efficiency",
-    group = "production",
-    order = "g"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-productivity",
-    group = "production",
-    order = "g"
-  },
-
   --MARK: Acids
   {
     type = "item-subgroup",
@@ -510,22 +471,33 @@ data:extend({
   --MARK: Production
   {
     type = "item-subgroup",
+    name = "pm-solar-energy",
+    group = "production",
+    order = "ba"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-nuclear-energy",
+    group = "production",
+    order = "bb"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-battery-machine",
     group = "production",
-    order = "b"
+    order = "bc"
   },
   {
     type = "item-subgroup",
     name = "pm-heat-machines",
     group = "production",
-    order = "b"
+    order = "bd"
   },
-
   {
     type = "item-subgroup",
     name = "pm-water-machine",
     group = "production",
-    order = "b"
+    order = "da"
   },
   {
     type = "item-subgroup",
@@ -557,6 +529,37 @@ data:extend({
     group = "production",
     order = "e",
   },
+  {
+    type = "item-subgroup",
+    name = "pm-chemistry-machine",
+    group = "production",
+    order = "ea"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-coils",
+    group = "production",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-speed",
+    group = "production",
+    order = "g",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-efficiency",
+    group = "production",
+    order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-productivity",
+    group = "production",
+    order = "g"
+  },
+
 
   --MARK: Reactive Non-Metal
   {
