@@ -5344,7 +5344,7 @@ data:extend({
       }
     }
   }--[[@as data.FurnacePrototype]],
-  { --MARK: Fluid Burner
+  {
     type = "reactor",
     name = "pm-fluid-turbine",
     icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
@@ -5451,6 +5451,72 @@ data:extend({
 			}
 		}
 	}--[[@as data.ReactorPrototype]],
+  {
+    type = "generator",
+    name = "pm-fluid-generator",
+    icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
+    icon_size = 64,
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 0.4, result = "pm-fluid-turbine" },
+    max_health = 500,
+    corpse = "steel-furnace-remnants",
+    dying_explosion = "steel-furnace-explosion",
+    map_color = {r = 0.659, g = 0.106, b = 0.106},
+    working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/steel-furnace.ogg",
+          volume = 0.5
+        }
+      },
+      max_sounds_per_type = 4,
+      audible_distance_modifier = 0.37,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 100
+      }
+    },
+    collision_box = { { -1.9, -1.9 }, { 1.9, 1.9 } },
+    selection_box = { { -2, -2 }, { 2, 2 } },
+    energy_source =
+    {
+        type = "electric",
+        usage_priority = "secondary-output",
+        emissions_per_minute = {pollution = 4}
+    },
+    max_power_output = "1MW",
+    burns_fluid = true,
+    scale_fluid_usage = true,
+    fluid_usage_per_tick = 2.5 / 60,
+    maximum_temperature = 15,
+    fluid_box =
+    {
+      production_type = "input",
+      pipe_picture = assembler2pipepictures(),
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      filter = "pm-burning-oil",
+      pipe_connections = 
+      {
+        {flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {-1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {1.5, -1.5}},
+
+        {flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {-1.5, 1.5}},
+        {flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {1.5, 1.5}},
+
+        {flow_direction="input-output", direction = defines.direction.east--[[@as int]], position = {1.5, 1.5}},
+        {flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1.5, -1.5}},
+      },
+      secondary_draw_orders = { north = -1 }
+    }
+},
 {
   type = "wall",
   name = "pm-concrete-wall",
