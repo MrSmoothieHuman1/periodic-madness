@@ -1167,8 +1167,6 @@ data:extend({
     type = "recipe",
     name = "pm-solar-panel-3",
     category = "crafting-with-fluid",
-    subgroup = "energy",
-    order = "e",
     enabled = false,
     energy_required = 15,
     ingredients =
