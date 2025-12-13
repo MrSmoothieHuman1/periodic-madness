@@ -102,8 +102,9 @@ data:extend({
       PM.ingredient("pm-advanced-electric-engine-unit", 2),
       PM.ingredient("pm-high-density-structure", 1),
       PM.ingredient("pm-advanced-processing-unit", 1),
-      PM.ingredient("pm-mylar", 4),
-      PM.ingredient("pm-light-lubricant", 2.5, "fluid")
+      PM.ingredient("pm-mylar", 3),
+      PM.ingredient("pm-light-lubricant", 2.5, "fluid"),
+      PM.ingredient("pm-liquid-silicone", 1, "fluid")
     },
     results = {
       PM.product("pm-high-density-transport-belt", 1)
@@ -122,7 +123,8 @@ data:extend({
       PM.ingredient("pm-high-density-structure", 2),
       PM.ingredient("pm-advanced-processing-unit", 1),
       PM.ingredient("pm-mylar", 2),
-      PM.ingredient("pm-light-lubricant", 5, "fluid")
+      PM.ingredient("pm-light-lubricant", 5, "fluid"),
+      PM.ingredient("pm-liquid-silicone", 2, "fluid")
     },
     results = {
       PM.product("pm-high-density-underground-belt", 2)
@@ -141,7 +143,8 @@ data:extend({
       PM.ingredient("pm-high-density-structure", 2),
       PM.ingredient("pm-advanced-processing-unit", 2),
       PM.ingredient("pm-mylar", 2),
-      PM.ingredient("pm-light-lubricant", 10, "fluid")
+      PM.ingredient("pm-light-lubricant", 7.5, "fluid"),
+      PM.ingredient("pm-liquid-silicone", 2.5, "fluid")
     },
     results = {
       PM.product("pm-high-density-splitter", 1)
