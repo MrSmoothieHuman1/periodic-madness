@@ -1656,7 +1656,7 @@ data:extend({
   {
     type = "item",
     name = "pm-heat-shielding",
-    icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+    icon = "__periodic-madness__/graphics/icons/heat-shielding.png",
     icon_size = 64,
     subgroup = "pm-rocket-parts",
     order = "a",
