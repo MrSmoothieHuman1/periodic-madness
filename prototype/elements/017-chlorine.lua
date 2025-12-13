@@ -279,6 +279,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-methyl-chloride",
+    crafting_machine_tint =
+    {
+        primary = {0.75, 0.6, 0.5},
+        secondary = {0.349, 0.89, 0.345},
+        tertiary = {0.349, 0.89, 0.345},
+        quarternary = {0.649, 0.89, 0.645}
+    },
     enabled = false,
     energy_required = 3,
     category = "chemistry",
@@ -299,6 +306,13 @@ data:extend({
     name = "pm-carbon-tetrachloride-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/carbon-tetrachloride-seperation.png",
+    crafting_machine_tint = 
+    {
+        primary = {0.4, 0.6, 0.4},
+        secondary = {0.3, 0.3, 0.3},
+        tertiary = {0.5, 0.7, 0.5},
+        quaternary = {0.5, 0.7, 0.5}
+    },
     enabled = false,
     category = "chemistry",
     subgroup = "pm-chlorine-rnm",

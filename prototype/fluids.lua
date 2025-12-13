@@ -917,8 +917,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-flouride.png",
     default_temperature = 15,
-    base_color = {r = 0.2, g = 1, b = 1 },
-    flow_color = {r = 0.2, g = 1, b = 1 },
+    base_color = {0.098, 0.922, 0.835},
+    flow_color = {0.098, 0.922, 0.835},
     auto_barrel = false
   },
   {
@@ -929,8 +929,8 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/hydroflouric-acid.png",
     default_temperature = 15,
-    base_color = {r = 0.2, g = 1, b = 1 },
-    flow_color = {r = 0.2, g = 1, b = 1 },
+    base_color = {0.369, 0.78, 0.922},
+    flow_color = {0.369, 0.78, 0.922},
     auto_barrel = false
   },
   {
@@ -1563,8 +1563,8 @@ data:extend({
     subgroup = "pm-oil",
     order = "y",
     default_temperature = 15,
-    base_color = {r = 0.3, g = 0.1, b = 0.1},
-    flow_color = {r = 0.3, g = 0.1, b = 0.1},
+    base_color = {0.671, 0.439, 0.2},
+    flow_color = {0.671, 0.439, 0.2},
     auto_void = true,
     auto_void_emissions = 1.5,
   },

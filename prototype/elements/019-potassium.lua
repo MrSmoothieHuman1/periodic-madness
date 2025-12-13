@@ -125,6 +125,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-potash-potassium",
+    crafting_machine_tint =
+    {
+        primary = {0.871, 0.663, 0.863},
+        secondary = {0.75, 0.75, 0.75},
+        tertiary = {0.871, 0.663, 0.863, 0.5},
+        quarternary = {0.871, 0.863, 0.863}
+    },
     enabled = false,
     energy_required = 2.5,
     category = "chemistry",

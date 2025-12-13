@@ -136,6 +136,13 @@ data:extend({
     {
       type = "recipe",
       name = "pm-haber-bosch-ammonia",
+      crafting_machine_tint = 
+      {
+        primary = {0.9, 0.9, 1},
+        secondary = {0.251, 0.596, 1},
+        tertiary = tints.ammonia,
+        quaternary = tints.ammonia,
+      },
       energy_required = 3,
       enabled = false,
       category = "chemistry",

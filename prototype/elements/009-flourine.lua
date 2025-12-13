@@ -52,9 +52,16 @@ data:extend({
   {
     type = "recipe",
     name = "pm-hydrogen-flouride",
+    crafting_machine_tint =
+    {
+        primary = {0.098, 0.922, 0.835},
+        secondary = {0.949, 0.918, 0.176},
+        tertiary = {0.098, 0.922, 0.835, 0.5},
+        quaternary = {0.949, 0.918, 0.176}
+    },
     enabled = false,
     energy_required = 3,
-    category = "pm-acids", "crafting-with-fluid",
+    category = "pm-acids",
     subgroup = "pm-flourine-rnm",
     order = "c",
     main_product = "pm-hydrogen-flouride",
@@ -72,6 +79,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-hydroflouric-acid",
+    crafting_machine_tint =
+    {
+        primary = {0.098, 0.922, 0.835},
+        secondary = {0.740, 0.918, 0.376},
+        tertiary = {0.098, 0.922, 0.835, 0.5},
+        quaternary = {0.740, 0.918, 0.376}
+    },
     enabled = false,
     energy_required = 3,
     category = "chemistry",
@@ -94,6 +108,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-hydroflouric-acid-filtering",
+    crafting_machine_tint =
+    {
+        primary = {0.098, 0.922, 0.835},
+        secondary = {0.247, 0.463, 0.671},
+        tertiary = {0.933, 0.949, 0.765, 0.5},
+        quaternary = {0.247, 0.463, 0.671}
+    },
     enabled = false,
     energy_required = 6,
     category = "chemistry",

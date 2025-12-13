@@ -107,6 +107,13 @@ data:extend({
     name = "pm-sulfur-dioxide-cracking",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/sulfur-dioxide-cracking.png",
+    crafting_machine_tint = 
+    {
+        primary = {0.902, 0.78, 0.353},
+        secondary = {0.522, 0.475, 0.306},
+        tertiary = {0.902, 0.78, 0.353, 0.5},
+        quaternary = {0.902, 0.78, 0.353}
+    },
     energy_required = 2,
     category = "chemistry",
     subgroup = "pm-sulfuric-acid-rnm",
@@ -217,6 +224,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-hydrogen-sulfide",
+    crafting_machine_tint = 
+    {
+        primary = {0.671, 0.439, 0.2},
+        secondary = {r = 0.56, g = 0.422, b = 0.22},
+        tertiary = {r = 0.56, g = 0.422, b = 0.22, 0.5},
+        quaternary = {0.671, 0.439, 0.2}
+    },
     energy_required = 2,
     category = "chemistry",
     subgroup = "pm-sulfur-rnm",
@@ -238,6 +252,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sulfur",
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.995, 0.089},
+        secondary = {1, 0.974, 0.69},
+        tertiary = {0.723, 0.638, 0.714},
+        quaternary = {0.954, 1, 0.35}
+    },
     energy_required = 4,
     enabled = false,
     category = "chemistry",

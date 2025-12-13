@@ -55,8 +55,8 @@ data:extend({
     subgroup = "pm-boron-mt",
     order = "d",
     default_temperature = 15,
-    base_color = {r = 0.67, g = 0.36, b = 0},
-    flow_color = {r = 0.67, g = 0.36, b = 0},
+    base_color = {0.871, 0.686, 0.349},
+    flow_color = {0.871, 0.686, 0.349},
   },
   {
     type = "fluid",
@@ -66,8 +66,8 @@ data:extend({
     subgroup = "pm-boron-mt",
     order = "c",
     default_temperature = 15,
-    base_color = {r = 0.67, g = 0.36, b = 0},
-    flow_color = {r = 0.67, g = 0.36, b = 0},
+    base_color = {0.631, 0.576, 0.369},
+    flow_color = {0.631, 0.576, 0.369},
     auto_barrel = false
   },
 
@@ -95,6 +95,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-diluted-boric-acid",
+    crafting_machine_tint = 
+    {
+        primary = {0.349, 0.871, 0.769},
+        secondary = {0.871, 0.686, 0.349},
+        tertiary = {0.349, 0.871, 0.769, 0.5},
+        quaternary = {0.871, 0.686, 0.349}
+    },
     enabled = false,
     energy_required = 5,
     category = "chemistry",
@@ -117,6 +124,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ethylolamine",
+    crafting_machine_tint = 
+    {
+        primary = {0.95, 0.8, 0.8},
+        secondary = tints.ammonia,
+        tertiary = {0.95, 0.8, 0.8, 0.5},
+        quaternary = tints.ammonia,
+    },
     enabled = false,
     energy_required = 2,
     category = "chemistry",
@@ -159,6 +173,11 @@ data:extend({
   {
     type = "recipe",
     name = "pm-borax",
+    crafting_machine_tint =
+    {
+        secondary = tints.boron,
+        tertiary = tints.boron
+    },
     enabled = false,
     energy_required = 3,
     category = "chemistry",
@@ -179,6 +198,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-boric-oxide",
+    crafting_machine_tint = 
+    {
+        primary = tints.boron,
+        secondary = {0.851, 0.82, 0.298},
+        tertiary = {0.812, 0.651, 0.651, 0.5},
+        quaternary = tints.boron
+    },
     enabled = false,
     energy_required = 3,
     category = "pm-acids",

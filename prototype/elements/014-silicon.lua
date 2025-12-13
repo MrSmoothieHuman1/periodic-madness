@@ -129,8 +129,8 @@ data:extend({
         subgroup = "pm-silicon-mt",
         order = "d",
         default_temperature = 15,
-        base_color = {r = 0.968, g = 0.68, b = 1},
-        flow_color = {r = 0.968, g = 0.68, b = 1}
+        base_color = {0.761, 0.694, 0.769},
+        flow_color = {0.761, 0.694, 0.769}
     },
     {
         type = "fluid",
@@ -141,8 +141,8 @@ data:extend({
         order = "c",
         default_temperature = 15,
         auto_barrel = false,
-        base_color = {r = 0.968, g = 0.68, b = 1},
-        flow_color = {r = 0.968, g = 0.68, b = 1}
+        base_color = {0.012, 0.639, 0},
+        flow_color = {0.012, 0.639, 0}
     },
     {
         type = "fluid",
@@ -153,8 +153,8 @@ data:extend({
         order = "a",
         default_temperature = 15,
         auto_barrel = false,
-        base_color = {r = 0.968, g = 0.68, b = 1},
-        flow_color = {r = 0.968, g = 0.68, b = 1}
+        base_color = {0.263, 0.871, 0.459},
+        flow_color = {0.263, 0.871, 0.459}
     },
     {
         type = "fluid",
@@ -165,8 +165,8 @@ data:extend({
         order = "b",
         default_temperature = 15,
         auto_barrel = false,
-        base_color = {r = 0.968, g = 0.68, b = 1},
-        flow_color = {r = 0.968, g = 0.68, b = 1}
+        base_color = {0.584, 0.812, 0.659},
+        flow_color = {0.584, 0.812, 0.659}
     },
     {
         type = "fluid",
@@ -177,8 +177,8 @@ data:extend({
         order = "ba",
         default_temperature = 15,
         auto_barrel = false,
-        base_color = {r = 0.968, g = 0.68, b = 1},
-        flow_color = {r = 0.968, g = 0.68, b = 1}
+        base_color = {0.694, 0.769, 0.718},
+        flow_color = {0.694, 0.769, 0.718}
     },
     {
         type = "fluid",
@@ -219,6 +219,13 @@ data:extend({
         name = "pm-ferrosilicon",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/high-quartzite-seperation.png",
+        crafting_machine_tint =
+        {
+            primary = tints.ferrosilicon,
+            secondary = {0.502, 0.329, 0.129},
+            tertiary = tints.ferrosilicon,
+            quaternary = {0.3, 0.3, 0.3}
+        },
         enabled = false,
         energy_required = 6,
         category = "chemistry",
@@ -265,6 +272,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-trichlorosilane",
+        crafting_machine_tint = 
+        {
+            primary = tints.ferrosilicon,
+            secondary = {0.259, 0.471, 0.255},
+            tertiary = {0.263, 0.871, 0.459, 0.5},
+            quaternary = {0.012, 0.639, 0}
+        },
         enabled = false,
         energy_required = 6,
         category = "chemistry",
@@ -287,6 +301,12 @@ data:extend({
         name = "pm-silicon-tetrachloride-handling",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/silicon-tetrachloride-handling.png",
+        crafting_machine_tint = 
+        {
+            primary = {00.012, 0.639, 0},
+            tertiary = {0.263, 0.871, 0.459, 0.5},
+            quaternary = {0.584, 0.812, 0.659}
+        },
         enabled = false,
         energy_required = 9,
         category = "chemistry",
@@ -311,7 +331,7 @@ data:extend({
         name = "pm-silane",
         enabled = false,
         energy_required = 3,
-        category = "chemistry",
+        category = "pm-electrolysis",
         subgroup = "pm-silicon-mt",
         order = "e",
         main_product = "pm-silane",
@@ -331,6 +351,13 @@ data:extend({
         name = "pm-industrial-grade-silicon-ore",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/recipes/industrial-grade-silicon.png",
+        crafting_machine_tint = 
+        {
+            primary = {0.733, 0.682, 0.741},
+            secondary = {0.761, 0.694, 0.769},
+            tertiary = {0.902, 0.855, 0.894, 0.5},
+            quaternary = {0.4, 0.161, 0.161}
+        },
         enabled = false,
         energy_required = 3,
         category = "chemistry",
@@ -353,6 +380,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-low-quality-polysilicon",
+        crafting_machine_tint = 
+        {
+            primary = {0.36, 0.36, 0.36},
+            secondary = {0.247, 0.298, 0.38},
+            tertiary = {0.902, 0.855, 0.894, 0.5},
+            quaternary = {0.902, 0.855, 0.894}
+        },
         enabled = false,
         energy_required = 5,
         category = "chemistry",
@@ -375,6 +409,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-medium-quality-polysilicon",
+        crafting_machine_tint = 
+        {
+            primary = {0.58, 0.58, 0.58},
+            secondary = {0.427, 0.494, 0.6},
+            tertiary = {0.902, 0.855, 0.894, 0.5},
+            quaternary = {0.902, 0.855, 0.894}
+        },
         enabled = false,
         energy_required = 10,
         category = "chemistry",
@@ -397,6 +438,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-high-quality-polysilicon",
+        crafting_machine_tint = 
+        {
+            primary = {0.83, 0.83, 0.83},
+            secondary = {0.592, 0.682, 0.831},
+            tertiary = {0.902, 0.855, 0.894, 0.5},
+            quaternary = {0.902, 0.855, 0.894}
+        },
         enabled = false,
         energy_required = 15,
         category = "chemistry",

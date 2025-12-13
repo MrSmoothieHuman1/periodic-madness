@@ -211,6 +211,13 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-bromide",
+    crafting_machine_tint =
+    {
+        primary = {0.725, 0.925, 0.949},
+        secondary = {0.82, 0.698, 0.529},
+        tertiary = {0.82, 0.698, 0.529, 0.5},
+        quartenary = {0.725, 0.925, 0.949}
+    },
     category = "chemistry",
     subgroup = "pm-lithium-am",
     order = "h",

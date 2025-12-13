@@ -156,6 +156,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-magnesium-ore",
+        crafting_machine_tint = 
+        {
+            primary = {0.89, 0.796, 0.886},
+            secondary = {0.612, 0.369, 0.204},
+            tertiary = {0.89, 0.796, 0.886, 0.5},
+            quaternary = {0.89, 0.86, 0.886}
+        },
         enabled = false,
         energy_required = 10,
         category = "chemistry",
@@ -177,6 +184,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-silicon-based-magnesium-ore",
+        crafting_machine_tint = 
+        {
+            primary = {0.89, 0.796, 0.886},
+            secondary = {0.839, 0.839, 0.722},
+            tertiary = {0.89, 0.796, 0.886, 0.5},
+            quaternary = {0.89, 0.86, 0.886}
+        },
         enabled = false,
         energy_required = 8,
         category = "chemistry",
@@ -198,6 +212,12 @@ data:extend({
     {
         type = "recipe",
         name = "pm-calcium-silicate-seperation",
+        crafting_machine_tint = 
+        {
+            primary = {0.839, 0.839, 0.722},
+            secondary = {0.314, 0.282, 0.322},
+            quaternary = {0.839, 0.839, 0.722}
+        },
         enabled = false,
         energy_required = 4,
         category = "pm-acids",
@@ -296,6 +316,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-magnesium-chloride",
+        crafting_machine_tint = 
+        {
+            primary = {0.929, 0.82, 0.902},
+            secondary = {0.565, 0.929, 0.545},
+            tertiary = {0.929, 0.82, 0.902, 0.5},
+            quaternary = {0.565, 0.929, 0.545}
+        },
         enabled = false,
         energy_required = 6,
         category = "chemistry",

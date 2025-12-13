@@ -23,6 +23,7 @@ Date: 2025-28-09
     - Added mining drill 3's! they have a 75% drain rate, a larger radius and an extra module slot, totaling to 5.
     - Added mixing tank 3's as well, unlocked in AA-ATM science. They are double the speed of mixing tank 2's.
     - Added a way to only grow a certain type of gem, unlocked in both A-AATM and AEM science.
+    - Added a lot of recipe tints to recipes that are in chem/acid plants.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
@@ -51,6 +52,8 @@ Date: 2025-28-09
     - Updated the mixing plant graphics.
     - Made all input fluidboxes on assembling machine 2 and above passthrough.
     - Made a seperate tab for "chemistry" machines, which includes: electrolysis plants, acid/chem plants, centrifuge, cyclotron and crystallizer.
+    - Updated a handul of fluids to have unique fluid colours.
+    - Changed industrial silcion ore to be done in an electrolysis plant.
 
   Fixes:
     - Updated the advanced mining drill 1 technology icon.

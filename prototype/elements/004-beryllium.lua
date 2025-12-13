@@ -87,8 +87,8 @@ data:extend({
         subgroup = "pm-beryllium-aem",
         order = "e",
         default_temperature = 15,
-        base_color = {r = 0.3, g = 0.3, b = 0.2},
-        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+        base_color = {0.851, 0.851, 0.569},
+        flow_color = {0.851, 0.851, 0.569},
     },
     {
         type = "fluid",
@@ -98,8 +98,8 @@ data:extend({
         subgroup = "pm-beryllium-aem",
         order = "f",
         default_temperature = 15,
-        base_color = {r = 0.3, g = 0.3, b = 0.2},
-        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+        base_color = {0.592, 0.902, 0.749},
+        flow_color = {0.592, 0.902, 0.749},
     },
 
     {
@@ -162,6 +162,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-beryllium-hydroxide",
+        crafting_machine_tint =
+        {
+            primary = {0.851, 0.851, 0.569},
+            secondary = tints.ammonia,
+            tertiary = {0.851, 0.851, 0.569, 0.5},
+            quaternary = tints.ammonia
+        },
         enabled = false,
         energy_required = 12,
         category = "chemistry",
@@ -181,6 +188,13 @@ data:extend({
     {
         type = "recipe",
         name = "pm-cold-ammonium-tetrafluoroberyllate",
+        crafting_machine_tint = 
+        {
+            primary = {0.592, 0.902, 0.749},
+            secondary = {0.851, 0.851, 0.569},
+            tertiary = {0.592, 0.902, 0.749, 0.5},
+            quaternary = {0.851, 0.851, 0.569}
+        },
         enabled = false,
         energy_required = 18,
         category = "pm-acids",
