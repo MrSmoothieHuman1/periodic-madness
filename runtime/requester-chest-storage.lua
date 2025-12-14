@@ -14,10 +14,30 @@ local function get_current_size(technologies)
     return size
 end
 
+---@param entity LuaEntity
+---@param override int
+local function set_override(entity, override)
+    --NOTE: consider additional logic to spill any that doesn't fit into the trash on the ground
+    entity.set_inventory_size_override(
+        defines.inventory.chest,
+        override,
+        storage.logistic_scratch_inventory
+    )
+
+    --TODO: Shove as much of it into the trash slots as I can when 2.1 adds that api
+
+    entity.surface.spill_inventory{
+        position = entity.position,
+        inventory = storage.logistic_scratch_inventory,
+        allow_belts = false, -- EW
+        -- drop_full_stack = true, -- There can just be too many items
+    }
+end
+
 local function update_overrides(chests, override)
     for unit_number, entity in pairs(chests) do
         if entity.valid then
-            entity.set_inventory_size_override(defines.inventory.chest, override)
+            set_override(entity, override)
         else
             chests[unit_number] = nil
         end
@@ -50,6 +70,10 @@ local function setup_logistic_storage()
                 chests[entity.force_index][entity.unit_number] = entity
             end
         end
+    end
+
+    if not storage.logistic_scratch_inventory or storage.logistic_scratch_inventory.valid then
+        storage.logistic_scratch_inventory = game.create_inventory(100)
     end
 
     -- The bonus modifiers might've changed, just recalc it
@@ -89,9 +113,7 @@ handler.events[defines.events.on_forces_merged] = function (event)
     for unit_number, entity in pairs(migrated_entities) do
         if entity.valid then
             destination_chests[unit_number] = entity
-            entity.set_inventory_size_override(defines.inventory.chest, destination_override)
-            --FIXME: Spill items instead of deleting them
-            -- Probably wrap *all* calls with logic to do that
+            set_override(entity, destination_override)
         end
     end
 end
@@ -103,7 +125,7 @@ PM.compound_events.built_events(handler.events, function (event)
 
     script.register_on_object_destroyed(tracked_entity)
     storage.logistic_chests[force][tracked_entity.unit_number] = tracked_entity
-    tracked_entity.set_inventory_size_override(defines.inventory.chest, storage.logistic_chest_overrides[force])
+    set_override(tracked_entity, storage.logistic_chest_overrides[force])
 end)
 
 handler.events[defines.events.on_object_destroyed] = function (event)
