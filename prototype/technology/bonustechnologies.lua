@@ -42,6 +42,7 @@
   -- Robot battery capacity
   -- belt stacking
 
+PM.define_modifier("pm-requester-chest-inventory-size", {{icon = "__base__/graphics/icons/requester-chest.png", icon_size = 64}})
 data:extend({
 --MARK:Lab Prod
 {
@@ -1806,15 +1807,14 @@ data:extend({
   },
 
 --MARK: Requester chest size
-PM.define_modifier("pm-logistic-chest-size", util.technology_icon_constant_stack_size("__base__/graphics/icons/requester-chest.png")),
   {
     type = "technology",
     name = "pm-requester-chest-inventory-bonus-capacity-1",
     icon_size = 256,
-    icons = util.technology_icon_constant_stack_size("__periodic-madness__/graphics/technology/noble-gas-productivity.png"),
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
     effects =
     {
-        PM.custom_modifier("pm-logistic-chest-size", 1)
+        PM.custom_modifier("pm-requester-chest-inventory-size", 1)
     },
     prerequisites = {"logistic-system"},
     unit =
@@ -1832,7 +1832,7 @@ PM.define_modifier("pm-logistic-chest-size", util.technology_icon_constant_stack
         },
         time = 160
     },
-  }
+  },
 })
 
 --MARK: V.Robot speed

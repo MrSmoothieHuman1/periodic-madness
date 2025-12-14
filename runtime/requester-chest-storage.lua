@@ -8,7 +8,7 @@ local function get_current_size(technologies)
     local size = 1 -- NOTE: This is the default size
     for _, tech in pairs(technologies) do
         if tech.researched then
-            size = size + PM.get_custom_modification("logistic-chest-size", tech)
+            size = size + PM.get_custom_modification("pm-requester-chest-inventory-size", tech)
         end
     end
     return size
@@ -114,12 +114,12 @@ handler.events[defines.events.on_object_destroyed] = function (event)
 end
 
 handler.events[defines.events.on_research_finished] = function (event)
-    local increase = PM.get_custom_modification("logistic-chest-size", event.research)
+    local increase = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if increase == 0 then return end
     update_all_chests(increase, event.research.force.index)
 end
 handler.events[defines.events.on_research_reversed] = function (event)
-    local decrease = PM.get_custom_modification("logistic-chest-size", event.research)
+    local decrease = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if decrease == 0 then return end
     update_all_chests(-decrease, event.research.force.index)
 end
