@@ -6509,7 +6509,7 @@ data:extend({
     type = "technology",
     name = "pm-rocket-cladding-parts",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/rocket-cladding-parts.png",
     effects = 
     {
         PM.unlock_recipe("pm-rocket-cladding-parts")
