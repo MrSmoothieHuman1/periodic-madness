@@ -4765,7 +4765,8 @@ data:extend({
       PM.unlock_recipe("pm-osmium-oxide"),
       PM.unlock_recipe("pm-osmium-ore"),
       PM.unlock_recipe("pm-molten-osmiridium"),
-      PM.unlock_recipe("pm-osmiridium-plate")
+      PM.unlock_recipe("pm-osmiridium-plate"),
+      PM.custom_modifier("logistic-chest-size", 1),
     },
     prerequisites = {"pm-iridium-processing", "pm-ruthenium-processing"},
     unit =
