@@ -1819,7 +1819,7 @@ data:extend({
     prerequisites = {"logistic-system"},
     unit =
     {
-        count = 1500,
+        count = 500,
         ingredients =
         {
             {"automation-science-pack", 1},
@@ -1829,6 +1829,62 @@ data:extend({
             {"pm-post-transition-metal-science-pack", 1},
             {"pm-metalloid-science-pack", 1},
             {"pm-alkali-metal-science-pack", 1},
+        },
+        time = 80
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-requester-chest-inventory-bonus-capacity-2",
+    icon_size = 256,
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
+    effects =
+    {
+        PM.custom_modifier("pm-requester-chest-inventory-size", 1)
+    },
+    prerequisites = {"pm-requester-chest-inventory-bonus-capacity-1", "pm-alkaline-earth-metal-pack-unlock"},
+    unit =
+    {
+        count = 750,
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1}
+        },
+        time = 120
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-requester-chest-inventory-bonus-capacity-3",
+    icon_size = 256,
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
+    effects =
+    {
+        PM.custom_modifier("pm-requester-chest-inventory-size", 2)
+    },
+    prerequisites = {"pm-requester-chest-inventory-bonus-capacity-2", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+        count = 1000,
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-noble-gas-science-pack", 1}
         },
         time = 160
     },
