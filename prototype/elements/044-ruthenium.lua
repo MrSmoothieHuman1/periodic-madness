@@ -33,12 +33,11 @@ data:extend({
         type = "item",
         name = "pm-ruthenium-sulfide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/ruthenium-ore.png",
+        icon = "__periodic-madness__/graphics/icons/ruthenium-sulfide.png",
         pictures =
         {
-          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore.png", size = 64, scale = 0.5},
-          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore-2.png", size = 64, scale = 0.5},
-          {filename = "__periodic-madness__/graphics/icons/ores/ruthenium-ore-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ruthenium-sulfide.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ruthenium-sulfide-2.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-ruthenium-tm",
         order = "e",

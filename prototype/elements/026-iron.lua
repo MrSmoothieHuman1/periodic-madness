@@ -34,13 +34,11 @@ data:extend({
     type = "item",
     name = "pm-wrought-iron",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/pig-iron.png",
+    icon = "__periodic-madness__/graphics/icons/ores/wrought-iron.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-3.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pig-iron-4.png", size = 64, scale = 0.5 }
+      { filename = "__periodic-madness__/graphics/icons/ores/wrought-iron.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/wrought-iron-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-advanced-iron-tm",
     order = "c",
