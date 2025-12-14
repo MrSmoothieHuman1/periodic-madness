@@ -1804,6 +1804,35 @@ data:extend({
       time = 120
     }
   },
+
+--MARK: Requester chest size
+PM.define_modifier("pm-logistic-chest-size", util.technology_icon_constant_stack_size("__base__/graphics/icons/requester-chest.png")),
+  {
+    type = "technology",
+    name = "pm-requester-chest-inventory-bonus-capacity-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_stack_size("__periodic-madness__/graphics/technology/noble-gas-productivity.png"),
+    effects =
+    {
+        PM.custom_modifier("pm-logistic-chest-size", 1)
+    },
+    prerequisites = {"logistic-system"},
+    unit =
+    {
+        count = 1500,
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+        },
+        time = 160
+    },
+  }
 })
 
 --MARK: V.Robot speed
