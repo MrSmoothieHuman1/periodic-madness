@@ -91,6 +91,19 @@ data:extend({
     {
         type = "recipe",
         name = "pm-hafnium-chloride",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/ores/hafnium-chloride.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
         crafting_machine_tint =
         {
             primary = {0.588, 0.788, 0.588}
@@ -99,12 +112,48 @@ data:extend({
         energy_required = 12,
         category = "pm-mixing",
         allow_productivity = true,
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-hafnium-chunks", 4),
             PM.ingredient("pm-patina", 6),
             PM.ingredient("water", 50, "fluid"),
             PM.ingredient("pm-benzene", 25, "fluid"),
+        },
+        results =
+        {
+            PM.product("pm-hafnium-chloride", 3)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-acetone-hafnium-chloride",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/ores/hafnium-chloride.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
+        crafting_machine_tint =
+        {
+            primary = {0.588, 0.788, 0.588}
+        },
+        enabled = false,
+        energy_required = 10,
+        category = "pm-mixing",
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-hafnium-chunks", 4),
+            PM.ingredient("pm-patina", 6),
+            PM.ingredient("water", 50, "fluid"),
+            PM.ingredient("pm-zcetone", 12.5, "fluid"),
         },
         results =
         {

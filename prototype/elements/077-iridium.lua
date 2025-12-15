@@ -256,6 +256,44 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "pm-acetone-iridium-sponge",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/iridium-sponge.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
+        crafting_machine_tint =
+        {
+            primary = {0.584, 0.424, 0.659}
+        },
+        enabled = false,
+        energy_required = 7.5,
+        category = "pm-mixing",
+        subgroup = "pm-iridium-tm",
+        order = "ga",
+        main_product = "pm-iridium-sponge",
+        ingredients =
+        {
+            PM.ingredient("pm-iridium-filtered-anode-sludge", 12, "fluid"),
+            PM.ingredient("water", 24, "fluid"),
+            PM.ingredient("pm-acetone", 3, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-iridium-sponge", 4),
+            PM.product_range("pm-acidic-water", 6, 12, "fluid")
+        }
+    },
+    {
+        type = "recipe",
         name = "pm-iridium-ore",
         enabled = false,
         energy_required = 10,

@@ -107,6 +107,40 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "pm-acetone-osmium-ore",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/ores/osmium-ore.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
+        enabled = false,
+        energy_required = 2.5,
+        category = "chemistry",
+        subgroup = "pm-osmium-tm",
+        order = "c",
+        main_product = "pm-osmium-ore",
+        ingredients = 
+        {
+            PM.ingredient("pm-osmium-oxide", 4),
+            PM.ingredient("pm-benzene", 5, "fluid"),
+            PM.ingredient("pm-acidic-water", 24, "fluid")
+        },
+        results = 
+        {
+            PM.product("pm-osmium-ore", 3),
+            PM.product_range("pm-oxygen-gas", 6, 9, "fluid")
+        }
+    },
+    {
+        type = "recipe",
         name = "pm-molten-osmiridium",
         icons =
         {

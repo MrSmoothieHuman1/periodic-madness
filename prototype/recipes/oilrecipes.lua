@@ -564,7 +564,7 @@ data:extend({
     {
       PM.ingredient("pm-petrol", 45, "fluid"),
       PM.ingredient("pm-benzene", 10, "fluid"),
-      PM.ingredient("pm-hydrogen-fuel", 5)
+      PM.ingredient("pm-potassium-permanganate", 5)
     },
     results =
     {

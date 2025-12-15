@@ -78,11 +78,56 @@ data:extend({
     {
         type = "recipe",
         name = "pm-ammonium-ruthenium-chloride",
+        --[[icons = 
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/ammonium-ruthenium-chloride.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/benzene.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },--]]
+        enabled = false,
+        energy_required = 15,
+        category = "chemistry",
+        subgroup = "pm-ruthenium-tm",
+        order = "b",
+        ingredients =
+        {
+            PM.ingredient("pm-ruthenium-filtered-anode-sludge", 12, "fluid"),
+            PM.ingredient("pm-ammonium-chloride", 3),
+            PM.ingredient("pm-benzene", 10, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-ammonium-ruthenium-chloride", 4),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-acetone-ammonium-ruthenium-chloride",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/ammonium-ruthenium-chloride.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
         enabled = false,
         energy_required = 10,
         category = "chemistry",
         subgroup = "pm-ruthenium-tm",
-        order = "b",
+        order = "ba",
         ingredients =
         {
             PM.ingredient("pm-ruthenium-filtered-anode-sludge", 12, "fluid"),

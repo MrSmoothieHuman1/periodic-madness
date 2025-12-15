@@ -59,6 +59,22 @@ data:extend({
     order = "d",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-potassium-permanganate",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-potassium-am",
+    order = "d",
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -148,5 +164,44 @@ data:extend({
       PM.product("pm-sea-salt", 6),
       PM.product("pm-potassium", 6)
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-potassium-hydroxide",
+    enabled = false,
+    energy_required = 5,
+    category = "chemistry",
+    allow_productivity = true,
+    main_product = "pm-potassium-hydroxide",
+    ingredients =
+    {
+        PM.ingredient("pm-potassium", 3),
+        PM.ingredient("water", 10, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-potassium-hydroxide", 5, "fluid"),
+        PM.product_range("pm-hydrogen-gas", 0, 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-potassium-permanganate",
+    enabled = false,
+    energy_required = 2.5,
+    category = "pm-electrolysis",
+    allow_productivity = true,
+    main_product = "pm-potassium-permanganate",
+    ingredients =
+    {
+        PM.ingredient("pm-potassium-hydroxide", 15, "fluid"),
+        PM.ingredient("pm-manganese-plate", 4),
+        PM.ingredient("water", 20, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-potassium-permanganate", 5),
+        PM.product("pm-potassium-hydroxide", 5, "fluid")
+    }
+  }
 })

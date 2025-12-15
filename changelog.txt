@@ -25,6 +25,7 @@ Date: 2025-28-09
     - Added a way to only grow a certain type of gem, unlocked in both A-AATM and AEM science.
     - Added a lot of recipe tints to recipes that are in chem/acid plants.
     - Finally added the requester chest rework, which starts requester chests off at 1 slot and allows you to gain more slots via research (up to a max of 5 currently, but will increase over time)
+    - Added acetone (better versions) of every recipe that used benzene in A-AATM.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
@@ -55,6 +56,7 @@ Date: 2025-28-09
     - Made a seperate tab for "chemistry" machines, which includes: electrolysis plants, acid/chem plants, centrifuge, cyclotron and crystallizer.
     - Updated a handul of fluids to have unique fluid colours.
     - Changed industrial silcion ore to be done in an electrolysis plant.
+    - Changed acetone to now use potassium permanganate, instead of 'oxidiser'. Any recipe that used acetone that wasnt connected to the R-NM side of the tech tree now has a benzene and a better acetone recipe.
 
   Fixes:
     - Updated the advanced mining drill 1 technology icon.

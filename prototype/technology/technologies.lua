@@ -2720,11 +2720,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/chemical-based-resin.png",
     effects =
     {
+      PM.unlock_recipe("pm-potassium-hydroxide"),
+      PM.unlock_recipe("pm-potassium-permanganate"),
       PM.unlock_recipe("pm-acetone"),
       PM.unlock_recipe("pm-bisphenol-A"),
       PM.unlock_recipe("pm-chemical-resin")
     },
-    prerequisites = {"pm-bromine-processing"},
+    prerequisites = {"pm-bromine-processing", "pm-potassium-processing"},
     unit =
     {
       count = 200,
@@ -4764,6 +4766,7 @@ data:extend({
       PM.unlock_recipe("pm-osmium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-osmium-oxide"),
       PM.unlock_recipe("pm-osmium-ore"),
+      PM.unlock_recipe("pm-acetone-osmium-ore"),
       PM.unlock_recipe("pm-molten-osmiridium"),
       PM.unlock_recipe("pm-osmiridium-plate"),
     },
@@ -4796,6 +4799,7 @@ data:extend({
       PM.unlock_recipe("pm-filtered-anode-sludge"),
       PM.unlock_recipe("pm-iridium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-iridium-sponge"),
+      PM.unlock_recipe("pm-acetone-iridium-sponge"),
       PM.unlock_recipe("pm-iridium-ore"),
       PM.unlock_recipe("pm-iridium-plate")
     },
@@ -4888,9 +4892,9 @@ data:extend({
       PM.unlock_recipe("pm-lightly-seperated-anode-mud"),
       PM.unlock_recipe("pm-heavily-seperated-anode-mud"),
       PM.unlock_recipe("pm-filtered-anode-sludge"),
-      PM.unlock_recipe("pm-acetone"),
       PM.unlock_recipe("pm-ruthenium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-ammonium-ruthenium-chloride"),
+      PM.unlock_recipe("pm-acetone-ammonium-ruthenium-chloride"),
       PM.unlock_recipe("pm-ruthenium-ore"),
       PM.unlock_recipe("pm-ruthenium-plate")
     },
