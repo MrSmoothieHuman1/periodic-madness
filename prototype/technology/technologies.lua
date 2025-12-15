@@ -6971,7 +6971,7 @@ data:extend({
     type = "technology",
     name = "pm-liquid-rocket-fuel",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/liquid-rocket-fuel.png",
     effects =
     {
         PM.unlock_recipe("pm-ruthenium-sulfide"),

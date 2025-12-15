@@ -1821,7 +1821,7 @@ data:extend({
   {
     type = "item",
     name = "pm-liquid-rocket-fuel-tank",
-    icon = "__periodic-madness__/graphics/icons/rocket-cladding-parts.png",
+    icon = "__periodic-madness__/graphics/icons/liquid-rocket-fuel-tank.png",
     icon_size = 64,
     subgroup = "pm-rocket-parts",
     order = "b",
@@ -1830,7 +1830,7 @@ data:extend({
   {
     type = "item",
     name = "pm-liquid-rocket-oxidiser-tank",
-    icon = "__periodic-madness__/graphics/icons/rocket-cladding-parts.png",
+    icon = "__periodic-madness__/graphics/icons/liquid-rocket-oxidiser-tank.png",
     icon_size = 64,
     subgroup = "pm-rocket-parts",
     order = "b",
