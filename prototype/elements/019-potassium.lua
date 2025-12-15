@@ -72,8 +72,21 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/potassium-ore-icon-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-potassium-am",
-    order = "d",
+    order = "f",
     stack_size = 200
+  },
+
+  {
+    type = "fluid",
+    name = "pm-potassium-hydroxide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/sodium-hydroxide.png",
+    subgroup = "pm-potassium-am",
+    order = "e",
+    default_temperature = 15,
+    base_color = {r = 1, g = 0.842, b = 0.862},
+    flow_color = {r = 1, g = 0.842, b = 0.862},
+    auto_barrel = false,
   },
 
   {

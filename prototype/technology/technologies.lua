@@ -6208,6 +6208,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-hafnium-chunks"),
         PM.unlock_recipe("pm-hafnium-chloride"),
+        PM.unlock_recipe("pm-acetone-hafnium-chloride"),
         PM.unlock_recipe("pm-impure-hafnium"),
         PM.unlock_recipe("pm-hafnium-iodide"),
         PM.unlock_recipe("pm-hafnium-ore")

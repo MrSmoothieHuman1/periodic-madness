@@ -118,19 +118,20 @@ data:extend({
             icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
             icon_size = 64,
             shift = {8, -8},
-            scale = 0.33
+            draw_background = true,
+            scale = 0.4
           },
         },
         enabled = false,
         energy_required = 2.5,
         category = "chemistry",
         subgroup = "pm-osmium-tm",
-        order = "c",
+        order = "ca",
         main_product = "pm-osmium-ore",
         ingredients = 
         {
             PM.ingredient("pm-osmium-oxide", 4),
-            PM.ingredient("pm-benzene", 5, "fluid"),
+            PM.ingredient("pm-acetone", 5, "fluid"),
             PM.ingredient("pm-acidic-water", 24, "fluid")
         },
         results = 

@@ -267,7 +267,8 @@ data:extend({
             icon = "__periodic-madness__/graphics/icons/fluids/acetone.png",
             icon_size = 64,
             shift = {8, -8},
-            scale = 0.33
+            draw_background = true,
+            scale = 0.4
           },
         },
         crafting_machine_tint =
