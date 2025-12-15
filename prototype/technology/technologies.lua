@@ -7044,7 +7044,7 @@ data:extend({
     type = "technology",
     name = "pm-atmospheric-composition-research",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/atmospheric-condensation.png"),
     effects =
     {
         PM.modify_recipe_productivity("pm-oxygen-gas", 0.02),
