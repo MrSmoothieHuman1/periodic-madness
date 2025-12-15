@@ -451,7 +451,7 @@ data:extend({
     type = "technology",
     name = "pm-fluid-circuit",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/fluid-technology.png",
+    icon = "__periodic-madness__/graphics/technology/fluid-resistant-circuit.png",
     effects =
     {
       PM.unlock_recipe("pm-fluid-circuit-breadboard"),
@@ -6376,7 +6376,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-processing-unit",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-processing-unit.png",
     effects =
     {
         PM.unlock_recipe("pm-sterling-silver-wire"),
@@ -7010,7 +7010,7 @@ data:extend({
     type = "technology",
     name = "pm-space-processing-units",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/space-processing-unit.png",
     effects =
     {
         PM.unlock_recipe("pm-silicon-on-sapphire"),
