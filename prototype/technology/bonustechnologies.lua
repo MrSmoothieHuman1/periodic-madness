@@ -1889,6 +1889,116 @@ data:extend({
         time = 160
     },
   },
+--MARK: Artillery damage
+  {
+    type = "technology",
+    name = "pm-artillery-damage-1",
+    icon_size = 256,
+    icons = util.technology_icon_constant_damage("__periodic-madness__/graphics/technology/artillery-damage.png"),
+    effects = 
+    {
+        PM.modify_ammo("ammo-damage", "artillery-shell", 0.25)
+    },
+    prerequisites = {"artillery"},
+    unit = 
+    {
+        count = 500,
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+        },
+        time = 80
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-artillery-damage-2",
+    icon_size = 256,
+    icons = util.technology_icon_constant_damage("__periodic-madness__/graphics/technology/artillery-damage.png"),
+    effects = 
+    {
+        PM.modify_ammo("ammo-damage", "artillery-shell", 0.25)
+    },
+    prerequisites = {"pm-artillery-damage-1", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    unit = 
+    {
+        count = 700,
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+        },
+        time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-artillery-damage-3",
+    icon_size = 256,
+    icons = util.technology_icon_constant_damage("__periodic-madness__/graphics/technology/artillery-damage.png"),
+    effects = 
+    {
+        PM.modify_ammo("ammo-damage", "artillery-shell", 0.5)
+    },
+    prerequisites = {"pm-artillery-damage-2", "pm-noble-gas-pack-unlock"},
+    unit = 
+    {
+        count = 900,
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-noble-gas-science-pack", 1}
+        },
+        time = 160
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-artillery-damage-4",
+    icon_size = 256,
+    icons = util.technology_icon_constant_damage("__periodic-madness__/graphics/technology/artillery-damage.png"),
+    effects = 
+    {
+        PM.modify_ammo("ammo-damage", "artillery-shell", 0.2)
+    },
+    prerequisites = {"pm-artillery-damage-3", "space-science-pack"},
+    max_level = "infinite",
+    unit = 
+    {
+        count_formula = "2^(L-3)*1000",
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-noble-gas-science-pack", 1},
+            {"space-science-pack", 1}
+        },
+        time = 160
+    }
+  },
 })
 
 --MARK: V.Robot speed
@@ -3085,4 +3195,38 @@ data.raw["technology"]["follower-robot-count-5"].effects =
         type = "follower-robot-lifetime",
         modifier = 0.25
     }
+}
+
+--MARK: V. Artillery speed
+data.raw["technology"]["artillery-shell-speed-1"].unit.time = 160
+data.raw["technology"]["artillery-shell-speed-1"].unit.ingredients =
+{
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1},
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-alkaline-earth-metal-science-pack", 1},
+    {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-noble-gas-science-pack", 1},
+    {"space-science-pack", 1}
+}
+
+--MARK: V. Artillery range
+data.raw["technology"]["artillery-shell-range-1"].unit.time = 160
+data.raw["technology"]["artillery-shell-range-1"].unit.ingredients =
+{
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1},
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-alkaline-earth-metal-science-pack", 1},
+    {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-noble-gas-science-pack", 1},
+    {"space-science-pack", 1}
 }
