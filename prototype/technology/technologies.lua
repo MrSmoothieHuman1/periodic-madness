@@ -6543,7 +6543,7 @@ data:extend({
     type = "technology",
     name = "pm-rocket-nozzle-parts",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/rocket-nozzle-parts.png",
     effects = 
     {
         PM.unlock_recipe("pm-molten-C103-precursor"),
