@@ -3,7 +3,12 @@ data:extend({
         type = "item",
         name = "pm-hafnium-chunks",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/hafnium-chunks.png",
+        pictures =
+        {
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-chunks.png", size = 64, scale = 0.5},
+            {filename = "__periodic-madness__/graphics/icons/ores/hafnium-chunks-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-hafnium-tm",
         order = "a",
         stack_size = 200
