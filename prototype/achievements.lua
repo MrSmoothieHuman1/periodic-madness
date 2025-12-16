@@ -22,7 +22,7 @@ data:extend({
     type = "dont-use-entity-in-energy-production-achievement",
     name = "pm-nuclear-power-no-thanks",
     icon_size = 128,
-    icon = "__periodic-madness__/graphics/achievements/legacy-code.png",
+    icon = "__periodic-madness__/graphics/achievements/nuclear-power-no-thanks.png",
     order = "h[limitation]-f[nuclear-power-no-thanks]",
     excluded = {"steam-engine", "steam-turbine", "solar-panel", "pm-solar-panel-2", "pm-solar-panel-3", "pm-hydroelectric-plant"},
     included = {"nuclear-reactor", "pm-polonium-reactor", "pm-RTG"},
