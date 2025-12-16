@@ -60,6 +60,7 @@ Date: 2025-28-09
     - Changed industrial silcion ore to be done in an electrolysis plant.
     - Changed acetone to now use potassium permanganate, instead of 'oxidiser'. Any recipe that used acetone that wasnt connected to the R-NM side of the tech tree now has a benzene and a better acetone recipe.
     - Changed buffer chests to only have 1 logistic slot, so that you cant cheese the requester rework ;)
+    - Buffed the better transistor recipe to output 25 instead of 12.
 
   Fixes:
     - Updated the advanced mining drill 1 technology icon.

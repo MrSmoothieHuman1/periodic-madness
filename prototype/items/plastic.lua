@@ -15,7 +15,7 @@ data:extend({
     type = "item",
     name = "pm-polyethylene-terephthalate",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plastic-pellets.png",
+    icon = "__periodic-madness__/graphics/icons/polyethylene-terephthalate.png",
     subgroup = "pm-plastics",
     order = "a",
     stack_size = 400,
