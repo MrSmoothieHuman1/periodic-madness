@@ -25,7 +25,17 @@ data:extend({
     type = "item",
     name = "pm-bitumen",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/bitumen.png",
+    icon = "__periodic-madness__/graphics/icons/bitumen.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/bitumen.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/bitumen-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/bitumen-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/bitumen-4.png", size = 64, scale = 0.5},
+    },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-oil",
     stack_size = 200
   },

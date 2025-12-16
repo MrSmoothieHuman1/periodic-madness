@@ -1103,7 +1103,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/ores/bitumen.png",
+        icon = "__periodic-madness__/graphics/icons/bitumen.png",
         icon_size = 64,
       },
       {

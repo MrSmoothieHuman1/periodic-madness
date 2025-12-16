@@ -27,6 +27,7 @@ Date: 2025-28-09
     - Finally added the requester chest rework, which starts requester chests off at 1 slot and allows you to gain more slots via research (up to a max of 5 currently, but will increase over time)
     - Added acetone (better versions) of every recipe that used benzene in A-AATM.
     - Added artillery damage research bonus.
+    - Added new graphics and variations for bitumen.
 
   Changes:
     - Changed vanilla rocket fuel into Solid rocket fuel.
