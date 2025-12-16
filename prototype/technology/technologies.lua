@@ -1614,11 +1614,12 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-oil-fractions-burning",
+    name = "pm-fluid-burning-energy",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/oil-fractions-burning.png",
+    icon = "__periodic-madness__/graphics/technology/fluid-turbine.png",
     effects = 
     {
+      PM.unlock_recipe("pm-fluid-turbine"),
       PM.unlock_recipe("pm-heat-pipe-1"),
       PM.unlock_recipe("heat-exchanger"),
       PM.unlock_recipe("steam-turbine")
@@ -2188,7 +2189,7 @@ data:extend({
       PM.unlock_recipe("pm-polonium-fuel-cell"),
       PM.unlock_recipe("pm-polonium-cell-reprocessing"),
     },
-    prerequisites = {"pm-radiation-resistant-multimetals", "pm-oil-fractions-burning"},
+    prerequisites = {"pm-radiation-resistant-multimetals", "pm-fluid-burning-energy"},
     unit =
     {
       count = 250,
@@ -3605,7 +3606,7 @@ data:extend({
       PM.unlock_recipe("heat-pipe"),
       PM.unlock_recipe("pm-heat-pipe-3"),
     },
-    prerequisites = {"pm-silicone-processing", "advanced-material-processing-2", "pm-oil-fractions-burning"},
+    prerequisites = {"pm-silicone-processing", "advanced-material-processing-2", "pm-fluid-burning-energy"},
     unit =
       {
         count = 325,

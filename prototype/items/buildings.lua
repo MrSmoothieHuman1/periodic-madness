@@ -628,7 +628,7 @@ data:extend({
     type = "item",
     name = "pm-fluid-turbine",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/fluid-turbine.png",
     subgroup = "pm-heat-machines",
     order = "A",
     place_result = "pm-fluid-turbine",

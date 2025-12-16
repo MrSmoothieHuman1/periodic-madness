@@ -1817,6 +1817,23 @@ data:extend({
     {
         PM.product("pm-mixing-tank-3", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-fluid-turbine",
+    enabled = false,
+    energy_required = 4,
+    ingredients = 
+    {
+        PM.ingredient("pm-heating-plating", 6),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("engine-unit", 2),
+        PM.ingredient("pm-heavyweight-framing", 12)
+    },
+    results = 
+    {
+        PM.product("pm-fluid-turbine", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 

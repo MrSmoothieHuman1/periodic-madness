@@ -5371,7 +5371,7 @@ data:extend({
   {
     type = "reactor",
     name = "pm-fluid-turbine",
-    icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/fluid-turbine.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.4, result = "pm-fluid-turbine" },
