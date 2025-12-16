@@ -5080,7 +5080,7 @@ data:extend({
     {
         PM.ingredient("pm-p-xylene", 7.5, "fluid"),
         PM.ingredient("pm-cobalt-manganese-bromide-catalyst", 2),
-        PM.ingredient("pm-acetic-acid", 20, "fluid")
+        PM.ingredient("pm-nitric-acid", 15, "fluid")
     },
     results = 
     {
@@ -5095,14 +5095,16 @@ data:extend({
     energy_required = 6,
     category = "chemistry",
     allow_productivity = true,
+    main_product = "pm-dimethyl-terephthalate",
     ingredients =
     {
         PM.ingredient("pm-terephthaltic-acid", 10, "fluid"),
-        PM.ingredient("pm-methanol", 25, "fluid"),
+        PM.ingredient("pm-methanol", 30, "fluid"),
     },
     results =
     {
         PM.product("pm-dimethyl-terephthalate", 15, "fluid"),
+        PM.product("pm-methanol", 15, "fluid")
     }
   },
   {
