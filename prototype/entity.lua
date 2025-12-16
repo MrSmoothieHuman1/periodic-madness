@@ -40,6 +40,23 @@ local pm_lab_inputs =
   "pm-experimental-research-data"
 }
 
+local heated_pipes_tint = {0.5, 0.4, 0.3, 0.5}
+local heat_glow_tint = {1, 1, 1, 1}
+apply_heat_pipe_glow = function(layer)
+  layer.tint = heated_pipes_tint
+  local light_layer = util.copy(layer)
+  light_layer.draw_as_light = true
+  light_layer.tint = heat_glow_tint
+  return
+  {
+    layers =
+    {
+      layer,
+      light_layer
+    }
+  }
+end
+
 circuit_connector_definitions["evaporator"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
@@ -5387,15 +5404,50 @@ data:extend({
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     consumption = "5MW",
     neighbour_bonus = 0.2,
+    default_temperature_signal = {type = "virtual", name = "signal-T"},
+    picture =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-turbine/fluid-turbine-base.png",
+                width = 192,
+                height = 192,
+                scale = 0.5
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-turbine/fluid-turbine-shadow.png",
+                width = 192,
+                height = 192,
+                shift = util.by_pixel(53, 0),
+                draw_as_shadow = true,
+                scale = 0.5
+            },
+        }
+    },
+    working_light_picture =
+    {
+        filename = "__periodic-madness__/graphics/entities/buildings/fluid-turbine/fluid-turbine-glow.png",
+        width = 192,
+        height = 192,
+        draw_as_glow = true,
+        blend_mode = "additive",
+        scale = 0.5
+    },
     energy_source =
     {
       type = "fluid",
       burns_fluid = true,
       scale_fluid_usage = true,
+      light_flicker =
+      {
+        color = {0,0,0},
+        minimum_intensity = 0.7,
+        maximum_intensity = 0.95
+      },
       fluid_box =
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 500,
         filter = "pm-burning-oil",
@@ -5414,7 +5466,8 @@ data:extend({
       max_temperature = 750,
       specific_heat = "10MJ",
       max_transfer = "500MW",
-      minimum_glow_temperature = 330,
+      min_working_temperature = 150,
+      minimum_glow_temperature = 350,
       connections =
       {
         {
@@ -5422,7 +5475,7 @@ data:extend({
           direction = defines.direction.north--[[@as int]] --[[@as int]]
         },
         {
-          position = { 0, -1 },
+          position = { 0, 1 },
           direction = defines.direction.south--[[@as int]] --[[@as int]]
         },
         {
@@ -5434,29 +5487,15 @@ data:extend({
           direction = defines.direction.east--[[@as int]] --[[@as int]]
         },
       },
-			picture =
-			{
-				layers =
-				{
-					{
-						filename = "__periodic-madness__/graphics/entities/buildings/fluid-burner/molteninator.png",
-						priority = "high",
-						width = 171,
-						height = 174,
-						scale = 0.5
-					},
-					{
-						filename = "__periodic-madness__/graphics/entities/buildings/fluid-burner/molteninator-shadow.png",
-						priority = "high",
-						width = 174,
-						height = 171,
-						draw_as_shadow = true,
-						shift = util.by_pixel(39.25, 5),
-						scale = 0.5
-					}
-				}
-			}
-		}
+
+      heat_picture = apply_heat_pipe_glow
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/fluid-turbine/fluid-turbine-heated.png",
+        width = 192,
+        height = 192,
+        scale = 0.5
+      },
+	}
 	}--[[@as data.ReactorPrototype]],
   {
     type = "generator",
