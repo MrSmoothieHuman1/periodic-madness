@@ -1184,6 +1184,56 @@ data:extend({
   },
   upgrade = true
 },
+{
+  type = "technology",
+  name = "pm-physical-projectile-damage-12",
+  icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+  effects =
+  {
+    {
+      type = "ammo-damage",
+      ammo_category = "bullet",
+      modifier = 0.25
+    },
+    {
+      type = "turret-attack",
+      turret_id = "gun-turret",
+      modifier = 0.25
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "shotgun-shell",
+      modifier = 0.25
+    },
+    {
+      type = "ammo-damage",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.20
+    },
+  },
+  prerequisites = {"pm-physical-projectile-damage-11", "space-science-pack"},
+  max_level = "infinite",
+  unit =
+  {
+    count_formula = "1.5^(L-11)*1000",
+    ingredients =
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+    },
+    time = 160
+  },
+  upgrade = true
+},
 
 --MARK: Shooting speed
 {
@@ -1410,8 +1460,128 @@ data:extend({
 },
 
 --MARK: Laser damage
+  {
+    type = "technology",
+    name = "pm-laser-weapons-damage-8",
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/laser-weapons-damage.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "laser",
+        modifier = 0.25
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.2
+      }
+    },
+    prerequisites = {"laser-weapons-damage-7", "pm-noble-gas-pack-unlock"},
+    upgrade = true,
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 60
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-laser-weapons-damage-9",
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/laser-weapons-damage.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "laser",
+        modifier = 0.25
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "electric",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "beam",
+        modifier = 0.2
+      }
+    },
+    prerequisites = {"pm-laser-weapons-damage-8", "space-science-pack"},
+    max_level = "infinite",
+    unit =
+    {
+      count_formula = "1.5^(L-9)*1000",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    },
+  },
 
 --MARK: Laser shooting speed
+  {
+    type = "technology",
+    name = "pm-laser-shooting-speed-8",
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/laser-shooting-speed.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "laser",
+        modifier = 0.80
+      }
+    },
+    prerequisites = {"laser-shooting-speed-7", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 1250,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+      },
+      time = 120
+    },
+    upgrade = true
+  },
 
 --MARK: Stronger explosives
 {
@@ -1531,6 +1701,42 @@ data:extend({
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
       },
       time = 120
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-inserter-capacity-bonus-9",
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/inserter-capacity.png"),
+    effects =
+    {
+      {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 2 -- 11 total, 12 with inserter
+      },
+      {
+        type = "inserter-stack-size-bonus",
+        modifier = 1 --4 total, 5 with inserter
+      },
+    },
+    prerequisites = {"pm-inserter-capacity-bonus-8", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 1200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+      },
+      time = 140
     },
     upgrade = true
   },
@@ -1789,9 +1995,7 @@ data:extend({
     max_level = "infinite",
     effects =
     {
-      --PM.modify_recipe_productivity("pm-alkaline-earth-metal-science-pack", 0.05),
-      --PM.modify_recipe_productivity("pm-plastic-alkaline-earth-metal-science-pack", 0.05),
-      --PM.modify_recipe_productivity("pm-FUCK-alkaline-earth-metal-science-pack", 0.02)
+      PM.modify_recipe_productivity("pm-noble-gas-science-pack", 0.05),
     },
     prerequisites = {"pm-experimental-research-data", "pm-noble-gas-pack-unlock"},
     order = "j",
@@ -1998,6 +2202,154 @@ data:extend({
         },
         time = 160
     }
+  },
+
+--MARK: Follower robot count
+  {
+    type = "technology",
+    name = "pm-follower-robot-count-6",
+    icons = util.technology_icon_constant_followers("__base__/graphics/technology/follower-robots.png"),
+    effects =
+    {
+      {
+        type = "maximum-following-robots-count",
+        modifier = 25
+      }
+    },
+    prerequisites = {"follower-robot-count-5", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 800,
+      ingredients = 
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+      },
+      time = 120
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-follower-robot-count-7",
+    icons = util.technology_icon_constant_followers("__base__/graphics/technology/follower-robots.png"),
+    effects =
+    {
+      {
+        type = "maximum-following-robots-count",
+        modifier = 10
+      }
+    },
+    prerequisites = {"pm-follower-robot-count-6", "space-science-pack"},
+    max_level = "infinite",
+    unit =
+    {
+      count_formula = "1.5^(L-6)*500",
+      ingredients = 
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    },
+    upgrade = true
+  },
+
+--MARK: Refined flammables
+  {
+    type = "technology",
+    name = "pm-refined-flammables-8",
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/refined-flammables.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "flamethrower",
+        modifier = 0.35
+      },
+      {
+        type = "turret-attack",
+        turret_id = "flamethrower-turret",
+        modifier = 0.25
+      }
+    },
+    prerequisites = {"refined-flammables-7", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 1300,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+      },
+      time = 120
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-refined-flammables-9",
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/refined-flammables.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "flamethrower",
+        modifier = 0.2
+      },
+      {
+        type = "turret-attack",
+        turret_id = "flamethrower-turret",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {"pm-refined-flammables-8", "space-science-pack"},
+    max_level = "infinite",
+    unit =
+    {
+      count_formula = "2^(L-8)*1000",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    },
+    upgrade = true
   },
 })
 
@@ -2561,6 +2913,7 @@ data.raw["technology"]["weapon-shooting-speed-6"].effects =
 
 --MARK: V.Laser shooting
 data.raw["technology"]["laser-shooting-speed-1"].prerequisites = {"laser"}
+data.raw["technology"]["laser-shooting-speed-1"].unit.count = 150
 data.raw["technology"]["laser-shooting-speed-1"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -2568,6 +2921,7 @@ data.raw["technology"]["laser-shooting-speed-1"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["laser-shooting-speed-2"].unit.count = 300
 data.raw["technology"]["laser-shooting-speed-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -2583,6 +2937,7 @@ data.raw["technology"]["laser-shooting-speed-3"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["laser-shooting-speed-4"].unit.count = 450
 data.raw["technology"]["laser-shooting-speed-4"].unit.ingredients =
 {
   {"automation-science-pack", 1},
@@ -2591,6 +2946,7 @@ data.raw["technology"]["laser-shooting-speed-4"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["laser-shooting-speed-5"].unit.count = 600
 data.raw["technology"]["laser-shooting-speed-5"].prerequisites = {"laser-shooting-speed-4"}
 data.raw["technology"]["laser-shooting-speed-5"].unit.ingredients =
 {
@@ -2600,6 +2956,7 @@ data.raw["technology"]["laser-shooting-speed-5"].unit.ingredients =
   {"pm-post-transition-metal-science-pack", 1},
   {"pm-metalloid-science-pack", 1}
 }
+data.raw["technology"]["laser-shooting-speed-6"].unit.count = 750
 data.raw["technology"]["laser-shooting-speed-6"].prerequisites = {"laser-shooting-speed-5", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"}
 data.raw["technology"]["laser-shooting-speed-6"].unit.ingredients =
 {
@@ -2610,6 +2967,7 @@ data.raw["technology"]["laser-shooting-speed-6"].unit.ingredients =
   {"pm-metalloid-science-pack", 1},
   {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
 }
+data.raw["technology"]["laser-shooting-speed-1"].unit.count = 1000
 data.raw["technology"]["laser-shooting-speed-7"].unit.ingredients =
 {
   {"automation-science-pack", 1},

@@ -572,7 +572,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-hydroelectric-power",
+    name = "pm-tidal-energy",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/water-distillation-tech.png",
     effects =
@@ -1972,7 +1972,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-geothermal-power",
+    name = "pm-geothermal-energy",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
@@ -2613,7 +2613,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-geothermal-bore-mk2"),
     },
-    prerequisites = {"lubricant", "pm-geothermal-power"},
+    prerequisites = {"lubricant", "pm-geothermal-energy"},
     unit =
     {
       count = 250,
