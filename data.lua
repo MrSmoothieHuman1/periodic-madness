@@ -579,23 +579,12 @@ data:extend({
         scale = 0.5,
         variation_count = 1,
         frame_count = 4,
-        tint = {0, 0, 1}
+        tint = {0.8, 0.8, 1}
       })
     },
     draw_stateless_visualisation_under_building = false,
     stateless_visualisation =
     {
-      {
-        count = 1,
-        render_layer = "decorative",
-        animation = util.sprite_load("__base__/graphics/entity/crude-oil/crude-oil-animation",
-        {
-          priority = "extra-high",
-          scale = 0.5,
-          frame_count = 32,
-          animation_speed = 0.2,
-        })
-      },
       {
         count = 1,
         render_layer = "smoke",
@@ -608,7 +597,7 @@ data:extend({
           animation_speed = 0.3,
           shift = util.by_pixel(-2, 24 -152),
           scale = 1.5,
-          tint = util.multiply_color({r=0.3, g=0.3, b=0.4}, 0.2)
+          tint = util.multiply_color({r=0.55, g=0.5, b=0.6}, 0.2)
         }
       },
       {
@@ -623,7 +612,7 @@ data:extend({
           animation_speed = 0.3,
           shift = util.by_pixel(0, 24 -78),
           scale = 1.5,
-          tint = util.multiply_color({r=0.3, g=0.3, b=0.6}, 0.2)
+          tint = util.multiply_color({r=0.7, g=0.7, b=0.9}, 0.35)
         }
       }
     },
