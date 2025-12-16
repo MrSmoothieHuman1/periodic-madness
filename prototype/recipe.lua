@@ -1613,17 +1613,17 @@ data:extend({
     enabled = false,
     subgroup = "pm-processing-units",
     order = "ba",
-    energy_required = 0.6,
+    energy_required = 3,
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-gallium-arsenide", 2),
-      PM.ingredient("pm-polyethylene-plastic", 3),
-      PM.ingredient("pm-indium-wire", 4)
+      PM.ingredient("pm-gallium-arsenide", 4),
+      PM.ingredient("pm-polyethylene-plastic", 6),
+      PM.ingredient("pm-indium-wire", 8)
     },
     results =
     {
-      PM.product("pm-transistors", 8)
+      PM.product("pm-transistors", 25)
     }
   },
   {
