@@ -1753,7 +1753,12 @@ data:extend({
     type = "item",
     name = "pm-graphite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/YAG-laser.png",
+    icon = "__periodic-madness__/graphics/icons/graphite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/graphite.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/graphite-2.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-garnet-ptm",
     order = "d",
     stack_size = 150
