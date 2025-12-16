@@ -5531,6 +5531,30 @@ data:extend({
     },
     collision_box = { { -1.9, -1.9 }, { 1.9, 1.9 } },
     selection_box = { { -2, -2 }, { 2, 2 } },
+    horizontal_animation =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator.png",
+                width = 256,
+                height = 256,
+                scale = 0.5,
+            },
+        }
+    },
+    vertical_animation =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator.png",
+                width = 256,
+                height = 256,
+                scale = 0.5,
+            },
+        }
+    },
     energy_source =
     {
         type = "electric",
@@ -5545,7 +5569,6 @@ data:extend({
     fluid_box =
     {
       production_type = "input",
-      pipe_picture = assembler2pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 500,
       filter = "pm-burning-oil",
