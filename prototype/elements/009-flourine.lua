@@ -135,6 +135,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-better-flourite-crystallisation",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/fluorite.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/coolant.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 12,
     category = "pm-crystallisation",
@@ -159,6 +172,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-light-coolant-flourite-crystallisation",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/fluorite.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/light-coolant.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 8,
     category = "pm-crystallisation",

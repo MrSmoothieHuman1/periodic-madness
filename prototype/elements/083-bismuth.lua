@@ -137,6 +137,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-light-coolant-bismuth-ore",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/bismuth-icon.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/light-coolant.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 10,
     category = "pm-crystallisation",
