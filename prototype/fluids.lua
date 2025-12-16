@@ -1923,7 +1923,7 @@ data:extend({
     type = "fluid",
     name = "pm-mixed-noble-gas",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/atmosphere.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-noble-gas.png",
     subgroup = "pm-nb-nb",
     order = "a",
     default_temperature = 15,

@@ -518,7 +518,7 @@ data:extend({
   {
     type = "autoplace-control",
     name = "pm-mixed-noble-gas",
-    localised_name = {"", "[entity=crude-oil] ", {"entity-name.crude-oil"}},
+    localised_name = {"", "[entity=pm-mixed-noble-gas] ", {"entity-name.pm-mixed-noble-gas"}},
     richness = true,
     order = "a-e",
     category = "resource"
@@ -526,7 +526,7 @@ data:extend({
   {
     type = "resource",
     name = "pm-mixed-noble-gas",
-    icon = "__base__/graphics/icons/crude-oil-resource.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/mixed-noble-gas.png",
     flags = {"placeable-neutral"},
     category = "basic-fluid",
     subgroup = "mineable-fluids",
@@ -631,7 +631,7 @@ data:extend({
     map_grid = false
   },
 })
-data.raw["resource"]["iron-ore"].minable = 
+data.raw["resource"]["iron-ore"].minable =
 {
   hardness = 1,
   mining_particle = "iron-ore-particle",
