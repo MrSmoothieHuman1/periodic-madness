@@ -52,9 +52,44 @@ data:extend({
       PM.ingredient("pm-molten-copper", 5, "fluid"),
       PM.ingredient("pm-magnesium-plate", 2)
     },
-    results = 
+    results =
     {
       PM.product("pm-molten-uhrlumin-precursor-alloy", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inert-molten-uhrlumin-precursor-alloy",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-uhrlumin-precursor-alloy.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/industrial-noble-gas.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening", --should be in one of the new furnaces
+    subgroup = "pm-uhrlumin",
+    order = "aa",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-aluminium-plate", 12),
+      PM.ingredient("pm-molten-copper", 7.5, "fluid"),
+      PM.ingredient("pm-magnesium-plate", 3),
+      PM.ingredient("pm-industrial-noble-gas", 15, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-uhrlumin-precursor-alloy", 10, "fluid"),
+      PM.catalyst("pm-industrial-noble-gas", 7.5, 7.5, "fluid")
     }
   },
   {
@@ -132,6 +167,41 @@ data:extend({
     results = 
     {
       PM.product("pm-inconel-625-precursor-alloy", 5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inert-inconel-625-precursor-alloy",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-inconel-625-precursor-alloy.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/industrial-noble-gas.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening",
+    subgroup = "pm-inconel-625",
+    order = "aa",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-nickel-plate", 12),
+      PM.ingredient("pm-molten-cobalt", 7.5, "fluid"),
+      PM.ingredient("pm-industrial-noble-gas", 15, "fluid"),
+      PM.ingredient("pm-molybdenum-ore", 5)
+    },
+    results = 
+    {
+      PM.product("pm-inconel-625-precursor-alloy", 10, "fluid"),
+      PM.catalyst("pm-industrial-noble-gas", 7.5, 7.5, "fluid")
     }
   },
   {
@@ -260,7 +330,7 @@ data:extend({
     {
       PM.product("pm-sterling-silver-plate", 5),
       PM.catalyst_chance("pm-crucible", 2, 0.75, 2),
-      PM.product("pm-industrial-noble-gas", 7.5, "fluid")
+      PM.catalyst("pm-industrial-noble-gas", 7.5, 7.5, "fluid")
     }
   },
   {

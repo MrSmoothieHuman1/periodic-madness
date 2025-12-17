@@ -6672,10 +6672,11 @@ data:extend({
     type = "technology",
     name = "pm-inert-gas-metallurgy",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/inert-gas-metallurgy.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-inert-molten-uhrlumin-precursor-alloy"),
+        PM.unlock_recipe("pm-inert-inconel-625-precursor-alloy")
     },
     prerequisites = {"pm-noble-gas-pack-unlock"},
     unit =
