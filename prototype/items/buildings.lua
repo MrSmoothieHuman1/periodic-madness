@@ -1087,3 +1087,6 @@ data.raw["item"]["solar-panel"].order = "a"
 
 data.raw["item"]["nuclear-reactor"].subgroup = "pm-nuclear-energy"
 data.raw["item"]["nuclear-reactor"].order = "c"
+
+data.raw["item"]["accumulator"].subgroup = "pm-battery-machine"
+data.raw["item"]["accumulator"].order = "e"

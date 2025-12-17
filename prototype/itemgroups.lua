@@ -364,6 +364,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-high-density-structure",
+    group = "intermediate-products",
+    order = "ce",
+  },
+  {
+    type = "item-subgroup",
     name = "pm-glassing",
     group = "intermediate-products",
     order = "d",

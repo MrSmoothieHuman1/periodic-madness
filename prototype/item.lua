@@ -1793,7 +1793,8 @@ data:extend({
     name = "pm-high-density-structure",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/high-density-structure.png",
-    subgroup = "pm-processing-units",
+    subgroup = "pm-high-density-structure",
+    order = "e",
     stack_size = 25
   },
   {
@@ -1801,8 +1802,8 @@ data:extend({
     name = "pm-isogrid-crucible",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/isogrid-crucible.png",
-    subgroup = "pm-alloys",
-    order = "A",
+    subgroup = "pm-high-density-structure",
+    order = "d",
     stack_size = 150
   },
   {
