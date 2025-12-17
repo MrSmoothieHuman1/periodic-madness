@@ -6676,7 +6676,8 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-inert-molten-uhrlumin-precursor-alloy"),
-        PM.unlock_recipe("pm-inert-inconel-625-precursor-alloy")
+        PM.unlock_recipe("pm-inert-inconel-625-precursor-alloy"),
+        PM.unlock_recipe("pm-inert-industrial-grade-silicon-ore")
     },
     prerequisites = {"pm-noble-gas-pack-unlock"},
     unit =

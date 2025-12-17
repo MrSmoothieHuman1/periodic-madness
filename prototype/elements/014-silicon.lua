@@ -376,6 +376,48 @@ data:extend({
             PM.product_range("pm-hydrogen-gas", 4, 8, "fluid")
         }
     },
+    {
+        type = "recipe",
+        name = "pm-inert-industrial-grade-silicon-ore",
+        icon_size = 64,
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/industrial-noble-gas.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
+        crafting_machine_tint = 
+        {
+            primary = {0.733, 0.682, 0.741},
+            secondary = {0.761, 0.694, 0.869},
+            tertiary = {0.902, 0.855, 0.894, 0.5},
+            quaternary = {0.8, 0.8, 1}
+        },
+        enabled = false,
+        energy_required = 3,
+        category = "chemistry",
+        subgroup = "pm-silicon-mt",
+        order = "f",
+        main_product = "pm-industrial-grade-silicon-ore",
+        ingredients =
+        {
+            PM.ingredient("pm-silane", 10, "fluid"),
+            PM.ingredient("pm-industrial-noble-gas", 15, "fluid")
+        },
+        results =
+        {
+            PM.product_range("pm-industrial-grade-silicon-ore", 6, 10),
+            PM.product("pm-industrial-noble-gas", 7.5, "fluid"),
+            PM.product_range("pm-hydrogen-gas", 8, 16, "fluid")
+        }
+    },
 
     {
         type = "recipe",
