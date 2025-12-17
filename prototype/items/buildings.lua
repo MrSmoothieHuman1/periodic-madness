@@ -962,6 +962,8 @@ data:extend({
     name = "pm-electronic-laser-etcher",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
+    subgroup = "production-machine",
+    order = "z",
     place_result = "pm-electronic-laser-etcher",
     stack_size = 25
   },

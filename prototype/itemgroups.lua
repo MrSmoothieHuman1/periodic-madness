@@ -358,6 +358,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-c103",
+    group = "intermediate-products",
+    order = "cd",
+  },
+  {
+    type = "item-subgroup",
     name = "pm-glassing",
     group = "intermediate-products",
     order = "d",

@@ -392,7 +392,7 @@ data:extend({
     name = "pm-C103-plate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/plates/C103-plate.png",
-    subgroup = "pm-sterling-silver",
+    subgroup = "pm-c103",
     order = "d",
     stack_size = 100
   },

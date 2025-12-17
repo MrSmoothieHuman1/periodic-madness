@@ -301,17 +301,21 @@ data:extend({
     enabled = false,
     energy_required = 18,
     category = "pm-moltening",
+    subgroup = "pm-c103",
+    order = "ba",
     allow_productivity = true,
     ingredients =
     {
         PM.ingredient("pm-niobium-plate", 9),
         PM.ingredient("pm-molten-C103-precursor", 10, "fluid"),
+        PM.ingredient("pm-industrial-noble-gas", 20, "fluid"),
         PM.ingredient("pm-hafnium-ore", 6),
         PM.ingredient("pm-zirconia", 3)
     },
     results =
     {
-        PM.product("pm-molten-C103", 20, "fluid")
+        PM.product("pm-molten-C103", 20, "fluid"),
+        PM.ingredient("pm-industrial-noble-gas", 10, "fluid"),
     }
   },
   {
@@ -333,17 +337,21 @@ data:extend({
     enabled = false,
     energy_required = 18,
     category = "pm-moltening",
+    subgroup = "pm-c103",
+    order = "bb",
     allow_productivity = true,
     ingredients =
     {
         PM.ingredient("pm-tantalum-plate", 9),
         PM.ingredient("pm-molten-C103-precursor", 10, "fluid"),
+        PM.ingredient("pm-industrial-noble-gas", 20, "fluid"),
         PM.ingredient("pm-hafnium-ore", 6),
         PM.ingredient("pm-zirconia", 3)
     },
     results =
     {
-        PM.product("pm-molten-C103", 20, "fluid")
+        PM.product("pm-molten-C103", 20, "fluid"),
+        PM.ingredient("pm-industrial-noble-gas", 10, "fluid"),
     }
   },
   {
