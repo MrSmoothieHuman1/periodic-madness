@@ -5500,7 +5500,7 @@ data:extend({
   {
     type = "generator",
     name = "pm-fluid-generator",
-    icon = "__periodic-madness__/graphics/icons/buildings/molten-inator.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/fluid-generator.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.4, result = "pm-fluid-turbine" },
@@ -5536,9 +5536,30 @@ data:extend({
         layers =
         {
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-base.png",
                 width = 256,
                 height = 256,
+                frame_count = 1,
+                repeat_count = 48,
+                animation_speed = 0.5,
+                scale = 0.5,
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
+                width = 256,
+                height = 256,
+                frame_count = 48,
+                line_length = 8,
+                scale = 0.5,
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
+                width = 256,
+                height = 256,
+                frame_count = 1,
+                repeat_count = 48,
+                draw_as_shadow = true,
+                shift = util.by_pixel(104, 0),
                 scale = 0.5,
             },
         }
@@ -5548,9 +5569,30 @@ data:extend({
         layers =
         {
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-base.png",
                 width = 256,
                 height = 256,
+                frame_count = 1,
+                repeat_count = 48,
+                animation_speed = 0.5,
+                scale = 0.5,
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
+                width = 256,
+                height = 256,
+                frame_count = 48,
+                line_length = 8,
+                scale = 0.5,
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
+                width = 256,
+                height = 256,
+                frame_count = 1,
+                repeat_count = 48,
+                draw_as_shadow = true,
+                shift = util.by_pixel(104, 0),
                 scale = 0.5,
             },
         }
