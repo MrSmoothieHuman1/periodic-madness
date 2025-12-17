@@ -3458,8 +3458,8 @@ data:extend({
     results = 
     {
       PM.product("pm-polydimethylsiloxane", 8, "fluid"),
-      PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.8, 2),
-      PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 2),
+      PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.8, 3),
+      PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3),
       PM.product_range("pm-hydrochloric-acid", 8, 12, "fluid")
     }
   },
@@ -4491,9 +4491,9 @@ data:extend({
     {
       PM.catalyst("pm-hot-coolant", 10, 10, "fluid", 1),
       PM.product("pm-phenylhydrazine", 5),
-      PM.product("pm-palladium-catalyst", 2),
-      PM.product_chance("pm-cobalt-catalyst", 2, 0.8),
-      PM.product_chance("pm-catalyst-container", 2, 0.2)
+      PM.catalyst("pm-palladium-catalyst", 2, 2),
+      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.8, 2),
+      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2)
     }
   },
   {
@@ -4657,7 +4657,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-vanadium-oxide-catalyst", 2, 0.75),
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.75, 2),
+      PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 2),
       PM.product("pm-ir-piq-3", 1)
     }
   },

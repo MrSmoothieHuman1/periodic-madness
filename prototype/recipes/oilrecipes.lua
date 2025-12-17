@@ -266,7 +266,7 @@ data:extend({
     {
       PM.product("pm-plastic-pellets", 12),
       PM.catalyst_chance("pm-yttrium-catalyst", 1, 0.95, 1),
-      PM.product_chance("pm-catalyst-container", 1, 0.05)
+      PM.catalyst_chance("pm-catalyst-container", 1, 0.05, 1)
     }
   },
 
@@ -1092,8 +1092,8 @@ data:extend({
       PM.product("pm-N-octane", 4.5 * 2, "fluid"),
       PM.product("pm-iso-octane", 5.5 * 2, "fluid"),
       PM.product("pm-2-3-3-trimethylpentane", 2.5 * 2, "fluid"),
-      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 2),
-      PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
+      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 3),
+      PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 3)
     }
   },
   {
@@ -1157,7 +1157,7 @@ data:extend({
       PM.product("pm-naptha", 50, "fluid"),
       PM.product("pm-petrol", 50, "fluid"),
       PM.product("pm-refinery-gases", 50, "fluid"),
-      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 2),
+      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 3),
       PM.catalyst_chance("pm-ruthenium-plate", 2, 0.66, 2),
       PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
     }

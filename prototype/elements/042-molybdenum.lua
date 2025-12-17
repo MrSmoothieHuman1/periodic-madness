@@ -254,8 +254,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_chance("pm-rhenium-platinum-catalyst", 2, 0.8),
-      PM.product_chance("pm-catalyst-container", 2, 0.2),
+      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 2, 0.8, 2),
+      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2),
       PM.product("pm-ammonium-molybdate", 4)
     }
   },
