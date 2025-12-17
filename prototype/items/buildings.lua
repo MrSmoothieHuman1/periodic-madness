@@ -629,8 +629,8 @@ data:extend({
     name = "pm-fluid-turbine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/fluid-turbine.png",
-    subgroup = "pm-heat-machines",
-    order = "A",
+    subgroup = "energy",
+    order = "i",
     place_result = "pm-fluid-turbine",
     stack_size = 100
   },
@@ -990,8 +990,8 @@ data:extend({
     name = "pm-fluid-generator",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/fluid-generator.png",
-    subgroup = "pm-heat-machines",
-    order = "A",
+    subgroup = "energy",
+    order = "h",
     place_result = "pm-fluid-generator",
     stack_size = 100
   },
@@ -1000,10 +1000,30 @@ data:extend({
     name = "pm-tidal-power-plant",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/tidal-power-plant.png",
-    subgroup = "pm-heat-machines",
-    order = "A",
+    subgroup = "energy",
+    order = "g",
     place_result = "pm-tidal-power-plant",
-    stack_size = 100
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-geothermal-plant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/tidal-power-plant.png",
+    subgroup = "energy",
+    order = "j",
+    place_result = "pm-geothermal-plant",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "pm-geothermal-generator",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/tidal-power-plant.png",
+    subgroup = "energy",
+    order = "j",
+    place_result = "pm-geothermal-generator",
+    stack_size = 50
   },
 })
 

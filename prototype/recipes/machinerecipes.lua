@@ -1797,7 +1797,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-atmospheric-condenser", 1)
+        PM.product("pm-geothermal-plant", 1)
     }
   },
   {
