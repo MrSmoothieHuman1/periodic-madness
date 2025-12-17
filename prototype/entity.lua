@@ -5536,7 +5536,7 @@ data:extend({
         layers =
         {
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-base.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
                 width = 256,
                 height = 256,
                 frame_count = 1,
@@ -5569,7 +5569,7 @@ data:extend({
         layers =
         {
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-base.png",
+                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
                 width = 256,
                 height = 256,
                 frame_count = 1,
@@ -5601,7 +5601,7 @@ data:extend({
     {
         type = "electric",
         usage_priority = "secondary-output",
-        emissions_per_minute = {pollution = 4}
+        emissions_per_minute = {pollution = 10}
     },
     max_power_output = "1MW",
     burns_fluid = true,
