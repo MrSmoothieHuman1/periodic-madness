@@ -5503,7 +5503,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/fluid-generator.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.4, result = "pm-fluid-turbine" },
+    minable = { mining_time = 0.4, result = "pm-fluid-generator" },
     max_health = 500,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
@@ -9521,51 +9521,59 @@ fluid_boxes =
   },
 }--[[@as data.AssemblingMachinePrototype]],
 {
-    type = "electric-energy-interface",
-    name = "pm-hydroelectric-plant",
-    icon = "__periodic-madness__/graphics/icons/buildings/solar-panel-2.png",
+    type = "solar-panel",
+    name = "pm-tidal-power-plant",
+    icon = "__periodic-madness__/graphics/icons/buildings/tidal-power-plant.png",
     icon_size = 64,
     flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 0.3, result = "pm-solar-panel-2" },
-    max_health = 400 + 1,
+    minable = { mining_time = 0.25, result = "pm-tidal-power-plant" },
+    max_health = 250,
     corpse = "pm-solar-panel-2-remnants",
     dying_explosion = "solar-panel-explosion",
-    collision_box = { { -1.4, -1.05 }, { 1.4, 0.3 } },
-    selection_box = { { -1.5, -2.49 }, { 1.5, 1.49 } },
-    --[[tile_buildability_rules =
+    collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+    collision_mask = {layers = {object = true, train = true, is_object = true, is_lower_object = true}},
+    tile_buildability_rules =
     {
-      {area = {{-0.6, -0.6}, {0.6, 0.6}}, required_tiles = {layers={ground_tile=true}}, colliding_tiles = {layers={water_tile=true}}, remove_on_collision = true}, --checks for ground
-      {area = {{-1.5, -2}, {1.5, 1.5}}, required_tiles = {layers={water_tile=true}}, colliding_tiles = {layers={}}}, --checks for water {{-1 is west, -1 is north}, {1 is east, 1 is south}}
-    }, --]]
+        {area = {{-1.4, -1.4}, {1.4, 1.4}},  required_tiles = {layers = {water_tile = true}},  colliding_tiles = {layers = {ground_tile = true}}, remove_on_collision = true},
+    },
+    production = "330kW",
+    performance_at_day = 1,
+    performance_at_night = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-output",
     },
-    picture =
+    stateless_visualisation =
     {
-      layers =
-      {
+        animation =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/solar-panel-2/solar-panel.png",
-          priority = "high",
-          width = 230,
-          height = 224,
-          shift = util.by_pixel(-3, 3.5),
-          scale = 0.5
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/tidal-power-plant/tidal-power-plant.png",
+                width = 192,
+                height = 192,
+                frame_count = 32,
+                line_length = 8,
+                animation_speed = 0.2,
+                scale = 0.5,
+            }
         },
+        shadow =
         {
-          filename = "__base__/graphics/entity/solar-panel/solar-panel-shadow.png",
-          priority = "high",
-          width = 220,
-          height = 180,
-          shift = util.by_pixel(9.5, 6),
-          draw_as_shadow = true,
-          scale = 0.5
-        }
-      }
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/tidal-power-plant/tidal-power-plant-shadow.png",
+                width = 192,
+                height = 192,
+                frame_count = 32,
+                line_length = 8,
+                animation_speed = 0.2,
+                draw_as_shadow = true,
+                shift = util.by_pixel(20, 0),
+                scale = 0.5,
+            }
+        },
     },
-    energy_production = "330kW"
   },
   {
     type = "fusion-reactor",

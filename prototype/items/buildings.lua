@@ -985,6 +985,26 @@ data:extend({
     place_result = "pm-mixing-tank-3",
     stack_size = 50,
   },
+  {
+    type = "item",
+    name = "pm-fluid-generator",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/fluid-generator.png",
+    subgroup = "pm-heat-machines",
+    order = "A",
+    place_result = "pm-fluid-generator",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-tidal-power-plant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/tidal-power-plant.png",
+    subgroup = "pm-heat-machines",
+    order = "A",
+    place_result = "pm-tidal-power-plant",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

@@ -1825,14 +1825,47 @@ data:extend({
     energy_required = 4,
     ingredients = 
     {
-        PM.ingredient("pm-heating-plating", 6),
+        PM.ingredient("pm-heating-plating", 4),
         PM.ingredient("pm-corrosion-resistant-tubing", 8),
         PM.ingredient("engine-unit", 2),
         PM.ingredient("pm-heavyweight-framing", 12)
     },
-    results = 
+    results =
     {
         PM.product("pm-fluid-turbine", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-fluid-generator",
+    enabled = false,
+    energy_required = 4,
+    ingredients = 
+    {
+        PM.ingredient("pm-heating-plating", 6),
+        PM.ingredient("pm-corrosion-resistant-tubing", 12),
+        PM.ingredient("engine-unit", 3),
+        PM.ingredient("pm-heavyweight-framing", 16)
+    },
+    results =
+    {
+        PM.product("pm-fluid-generator", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-tidal-power-plant",
+    enabled = false,
+    energy_required = 3,
+    ingredients = 
+    {
+        PM.ingredient("pm-fluid-circuit", 2),
+        PM.ingredient("pm-vulcanised-rubber", 4),
+        PM.ingredient("pm-basic-panelling", 8)
+    },
+    results = 
+    {
+        PM.product("pm-tidal-power-plant", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

@@ -574,12 +574,12 @@ data:extend({
     type = "technology",
     name = "pm-tidal-energy",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/water-distillation-tech.png",
+    icon = "__periodic-madness__/graphics/technology/tidal-energy.png",
     effects =
     {
-        
+       PM.unlock_recipe("pm-tidal-power-plant") 
     },
-    prerequisites = {"pm-water-distillation", "pm-fluid-circuit"},
+    prerequisites = {"pm-water-distillation", "pm-fluid-circuit", "landfill"},
     unit =
     {
       count = 75,
@@ -1620,6 +1620,7 @@ data:extend({
     effects = 
     {
       PM.unlock_recipe("pm-fluid-turbine"),
+      PM.unlock_recipe("pm-fluid-generator"),
       PM.unlock_recipe("pm-heat-pipe-1"),
       PM.unlock_recipe("heat-exchanger"),
       PM.unlock_recipe("steam-turbine")
