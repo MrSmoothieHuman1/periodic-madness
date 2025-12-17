@@ -829,6 +829,7 @@ data:extend({
     enabled = false,
     subgroup = "pm-catalysts",
     order = "a",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-vulcanised-rubber", 4),
