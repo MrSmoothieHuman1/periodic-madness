@@ -296,17 +296,23 @@ data:extend({
     group = "intermediate-products",
     order = "ab"
   },
-    {
+  {
+    type = "item-subgroup",
+    name = "pm-burning-oil",
+    group = "intermediate-products",
+    order = "ac"
+  },
+  {
     type = "item-subgroup",
     name = "pm-octane-processing",
     group = "intermediate-products",
-    order = "ac"
+    order = "ad"
   },
     {
     type = "item-subgroup",
     name = "pm-solid-fuel",
     group = "intermediate-products",
-    order = "ad"
+    order = "ae"
   },
   {
     type = "item-subgroup",

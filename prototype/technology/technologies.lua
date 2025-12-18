@@ -1619,6 +1619,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/fluid-turbine.png",
     effects = 
     {
+      PM.unlock_recipe("pm-petrol-to-burning-oil"),
+      PM.unlock_recipe("pm-naptha-to-burning-oil"),
+      PM.unlock_recipe("pm-kerosene-to-burning-oil"),
+      PM.unlock_recipe("pm-diesel-to-burning-oil"),
       PM.unlock_recipe("pm-fluid-turbine"),
       PM.unlock_recipe("pm-fluid-generator"),
       PM.unlock_recipe("pm-heat-pipe-1"),

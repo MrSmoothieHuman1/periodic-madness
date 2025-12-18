@@ -9569,7 +9569,7 @@ fluid_boxes =
                 line_length = 8,
                 animation_speed = 0.2,
                 draw_as_shadow = true,
-                shift = util.by_pixel(20, 0),
+                shift = util.by_pixel(19, -2),
                 scale = 0.5,
             }
         },

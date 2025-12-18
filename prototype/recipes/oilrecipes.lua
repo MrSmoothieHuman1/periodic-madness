@@ -1549,6 +1549,162 @@ data:extend({
     }
   },
 
+--MARK: Burning oil
+  {
+    type = "recipe",
+    name = "pm-petrol-to-burning-oil",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/burning-oil.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    crafting_machine_tint =
+    {
+        primary = {0.91, 0.502, 0.224},
+        secondary = {0.5, 0, 0},
+        tertiary = {0.91, 0.502, 0.224, 0.5},
+        quaternary = {0.5, 0, 0}
+    },
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-burning-oil",
+    order = "b",
+    ingredients =
+    {
+        PM.ingredient("pm-petrol", 15, "fluid"),
+        PM.ingredient("solid-fuel", 2)
+    },
+    results =
+    {
+        PM.product("pm-burning-oil", 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-naptha-to-burning-oil",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/burning-oil.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    crafting_machine_tint =
+    {
+        primary = {0.91, 0.502, 0.224},
+        secondary = {0, 0, 0.4},
+        tertiary = {0.91, 0.502, 0.224, 0.5},
+        quaternary = {0, 0, 0.4}
+    },
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-burning-oil",
+    order = "c",
+    ingredients =
+    {
+        PM.ingredient("pm-naptha", 15, "fluid"),
+        PM.ingredient("solid-fuel", 2)
+    },
+    results =
+    {
+        PM.product("pm-burning-oil", 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-kerosene-to-burning-oil",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/burning-oil.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    crafting_machine_tint =
+    {
+        primary = {0.91, 0.502, 0.224},
+        secondary = {0.541, 0.522, 0.424},
+        tertiary = {0.91, 0.502, 0.224, 0.5},
+        quaternary = {0.541, 0.522, 0.424}
+    },
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-burning-oil",
+    order = "d",
+    ingredients =
+    {
+        PM.ingredient("pm-kerosene", 15, "fluid"),
+        PM.ingredient("solid-fuel", 2)
+    },
+    results =
+    {
+        PM.product("pm-burning-oil", 7.5, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-diesel-to-burning-oil",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/burning-oil.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    crafting_machine_tint =
+    {
+        primary = {0.91, 0.502, 0.224},
+        secondary =  {0.333, 0.333, 0.332},
+        tertiary = {0.91, 0.502, 0.224, 0.5},
+        quaternary = {0.333, 0.333, 0.332}
+    },
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-burning-oil",
+    order = "e",
+    ingredients =
+    {
+        PM.ingredient("pm-diesel", 15, "fluid"),
+        PM.ingredient("solid-fuel", 2)
+    },
+    results =
+    {
+        PM.product("pm-burning-oil", 7.5, "fluid")
+    }
+  },
+
+
+
   {
     type = "recipe",
     name = "pm-syngas",
