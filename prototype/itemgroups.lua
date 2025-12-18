@@ -513,6 +513,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-geothermal-intermediates",
+    group = "production",
+    order = "be"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-water-machine",
     group = "production",
     order = "da"

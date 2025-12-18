@@ -1811,6 +1811,8 @@ data:extend({
     name = "pm-geothermal-bore-mk1",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk1.png",
+    subgroup = "pm-geothermal-intermediates",
+    order = "c",
     fuel_value = "30MJ",
     fuel_category = "pm-geothermal-bore",
     stack_size = 100
@@ -1820,6 +1822,8 @@ data:extend({
     name = "pm-geothermal-bore-mk2",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-geothermal-intermediates",
+    order = "d",
     fuel_value = "60MJ",
     fuel_category = "pm-geothermal-bore",
     stack_size = 100
