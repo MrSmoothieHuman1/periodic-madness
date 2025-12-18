@@ -37,6 +37,24 @@ data:extend({
       count = 1
     }
   },
+  {
+    type = "technology",
+    name = "pm-acidic-water-processing",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-seawater-sulfide-evaporation"),
+        PM.unlock_recipe("pm-seawater-from-seasalt"),
+        PM.unlock_recipe("pm-acidic-water")
+    },
+    prerequisites = {"automation-science-pack"},
+    research_trigger =
+    {
+      type = "build-entity",
+      entity = "pm-evaporator"
+    }
+  },
 
 --MARK: TM science
   {
