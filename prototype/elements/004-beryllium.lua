@@ -336,6 +336,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     category = "pm-mixing",
+    subgroup = "pm-beryllium-aem",
+    order = "j",
     allow_decomposition = true,
     ingredients = 
     {

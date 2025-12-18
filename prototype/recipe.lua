@@ -5057,7 +5057,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     category = "crafting-with-fluid",
-    ingredients = 
+    ingredients =
     {
         PM.ingredient("pm-catalyst-container", 1),
         PM.ingredient("pm-cobalt-plate", 4),
@@ -5119,12 +5119,15 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-dimethyl-terephthalate", 7.5, "fluid"),
-        PM.ingredient("pm-ethylene-glycol", 30, "fluid")
+        PM.ingredient("pm-ethylene-glycol", 30, "fluid"),
+        PM.ingredient("pm-yttrium-catalyst", 2)
     },
     results =
     {
         PM.product("pm-methanol", 10, "fluid"),
-        PM.product("pm-polyethylene-terephthalate", 5)
+        PM.product("pm-polyethylene-terephthalate", 5),
+        PM.catalyst_range("pm-yttrium-catalyst", 2, 0.9, 2),
+        PM.catalyst_range("pm-catalyst-container", 2, 0.1, 2)
     }
   },
   {
