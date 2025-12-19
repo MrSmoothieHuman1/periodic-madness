@@ -1861,6 +1861,22 @@ data:extend({
     order = "a",
     stack_size = 100
   },
+  {
+    type = "module",
+    name = "pm-ce-YAG-laser-head",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/YAG-laser-head.png",
+    subgroup = "pm-garnet-ptm",
+    order = "f",
+    category = "pm-laser-modules",
+    tier = 3,
+    effect = 
+    {
+        productivity = 0.25,
+        consumption = 2,
+    },
+    stack_size = 50
+  },
 
   {
     type = "item",
