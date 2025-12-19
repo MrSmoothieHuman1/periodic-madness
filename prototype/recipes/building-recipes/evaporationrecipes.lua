@@ -4,9 +4,9 @@ data:extend({
     name = "pm-seawater-sulfide-evaporation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/seawater-sulfide-evaporation.png",
-    subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
-    hide_from_player_crafting = true,
+    subgroup = "pm-acidic-water",
+    order = "a",
     enabled = true,
     energy_required = 2,
     ingredients =
@@ -28,7 +28,8 @@ data:extend({
     enabled = false,
     energy_required = 4,
     category = "pm-evaporation",
-    subgroup = "pm-acid-crafting",
+    subgroup = "pm-acidic-water",
+    order = "b",
     ingredients =
     {
         PM.ingredient("water", 10, "fluid"),
@@ -44,10 +45,9 @@ data:extend({
     name = "pm-water-voiding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/water-voiding.png",
-    subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
-    hide_from_player_crafting = true,
-    energy_required = 0.5,
+    subgroup = "pm-acidic-water",
+    order = "e",
     ingredients =
     {
       PM.ingredient("water", 25, "fluid")
@@ -70,11 +70,10 @@ data:extend({
         icon_size = 64,
       },
     },
-    subgroup = "pm-acid-crafting",
+    subgroup = "pm-oxygen-rnm",
+    order = "ea",
     category = "pm-evaporation",
-    hide_from_player_crafting = true,
     enabled = false,
-    energy_required = 0.5,
     ingredients =
     {
       PM.ingredient("pm-oxygen-gas", 10, "fluid"),
@@ -97,11 +96,10 @@ data:extend({
         icon_size = 64,
       },
     },
-    subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
-    hide_from_player_crafting = true,
+    subgroup = "pm-chlorine-rnm",
+    order = "ea",
     enabled = false,
-    energy_required = 0.5,
     ingredients =
     {
       PM.ingredient("pm-chlorine", 10, "fluid"),
@@ -124,9 +122,9 @@ data:extend({
         icon_size = 64,
       },
     },
-    subgroup = "pm-acid-crafting",
     category = "pm-evaporation",
-    hide_from_player_crafting = true,
+    subgroup = "pm-hydrogen-rnm",
+    order = "a",
     enabled = false,
     energy_required = 0.5,
     ingredients =
@@ -140,15 +138,15 @@ data:extend({
     name = "pm-steam-condensation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/steam-condensation.png",
-    subgroup = "pm-acid-crafting",
+    subgroup = "pm-acidic-water",
+    order = "f",
     category = "pm-evaporation",
-    hide_from_player_crafting = true,
     energy_required = 1,
     ingredients =
     {
       PM.ingredient("steam", 10, "fluid"),
     },
-    results = 
+    results =
     {
       PM.product("water", 1, "fluid")
     }

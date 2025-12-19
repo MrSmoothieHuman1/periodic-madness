@@ -419,7 +419,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-acidic-water",
-    subgroup = "pm-acid-crafting",
     category = "pm-acids",
     enabled = false,
     crafting_machine_tint =
@@ -435,7 +434,6 @@ data:extend({
       PM.ingredient("sulfur", 2),
       PM.ingredient("water", 10, "fluid"),
     },
-    hide_from_player_crafting = true,
     results =
     {
       PM.product("pm-acidic-water", 10, "fluid")
@@ -856,10 +854,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-water-vapour-condensing",
-    subgroup = "pm-acid-crafting",
     category = "pm-acids",
+    subgroup = "pm-acidic-water",
+    order = "g",
     allow_decomposition = false,
-    hide_from_player_crafting = true,
     enabled = false,
     energy_required = 4,
     ingredients =

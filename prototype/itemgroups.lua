@@ -156,12 +156,6 @@ data:extend({
   --MARK: Groups
   {
     type = "item-group",
-    name = "pm-acids",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png"
-  },
-  {
-    type = "item-group",
     name = "pm-multimetal-items",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/tempature-plating.png",
@@ -320,23 +314,29 @@ data:extend({
     group = "intermediate-products",
     order = "b"
   },
-{
+  {
     type = "item-subgroup",
-    name = "pm-coke",
+    name = "pm-acidic-water",
     group = "intermediate-products",
     order = "ba"
   },
   {
     type = "item-subgroup",
-    name = "pm-lubricant",
+    name = "pm-coke",
     group = "intermediate-products",
     order = "bb"
   },
   {
     type = "item-subgroup",
-    name = "pm-coolant",
+    name = "pm-lubricant",
     group = "intermediate-products",
     order = "bc"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-coolant",
+    group = "intermediate-products",
+    order = "bd"
   },
   {
     type = "item-subgroup",
