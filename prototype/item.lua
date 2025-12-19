@@ -1833,8 +1833,8 @@ data:extend({
     name = "pm-liquid-rocket-fuel-tank",
     icon = "__periodic-madness__/graphics/icons/liquid-rocket-fuel-tank.png",
     icon_size = 64,
-    subgroup = "pm-rocket-parts",
-    order = "b",
+    subgroup = "pm-liquid-rocket-fuels",
+    order = "f",
     stack_size = 100
   },
   {
@@ -1842,8 +1842,8 @@ data:extend({
     name = "pm-liquid-rocket-oxidiser-tank",
     icon = "__periodic-madness__/graphics/icons/liquid-rocket-oxidiser-tank.png",
     icon_size = 64,
-    subgroup = "pm-rocket-parts",
-    order = "b",
+    subgroup = "pm-liquid-rocket-fuels",
+    order = "i",
     stack_size = 100
   },
   {

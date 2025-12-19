@@ -39,8 +39,8 @@ data:extend({
           {filename = "__periodic-madness__/graphics/icons/ruthenium-sulfide.png", size = 64, scale = 0.5},
           {filename = "__periodic-madness__/graphics/icons/ruthenium-sulfide-2.png", size = 64, scale = 0.5},
         },
-        subgroup = "pm-ruthenium-tm",
-        order = "e",
+        subgroup = "pm-liquid-rocket-fuels",
+        order = "a",
         stack_size = 200
     },
 

@@ -1553,6 +1553,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-liquid-rocket-fuels",
+    group = "pm-rockets",
+    order = "aa"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-rocket-parts",
     group = "pm-rockets",
     order = "b"
