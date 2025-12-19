@@ -175,7 +175,7 @@ data:extend({
     type = "technology",
     name = "pm-ezekiel-ore-purifying",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/ezekiel-purifying.png",
+    icon = "__periodic-madness__/graphics/technology/ezekiel-ore-purifying.png",
     effects =
     {
       PM.unlock_recipe("pm-basic-pig-iron"),
