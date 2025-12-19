@@ -1649,7 +1649,7 @@ data:extend({
       PM.unlock_recipe("heat-exchanger"),
       PM.unlock_recipe("steam-turbine")
     },
-    prerequisites = {"advanced-oil-processing"},
+    prerequisites = {"engine"},
     unit =
     {
       count = 100,
