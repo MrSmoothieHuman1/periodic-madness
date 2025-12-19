@@ -56,7 +56,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
         scale = 0.45
       },

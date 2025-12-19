@@ -64,12 +64,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/brass-processing.png",
     effects =
     {
+      PM.unlock_recipe("pm-solid-sodium-hydroxide-mixing"),
+      PM.unlock_recipe("pm-oxygen-evaporation"),
       PM.unlock_recipe("pm-welder"),
       PM.unlock_recipe("pm-hydrogen-fuel"),
       PM.unlock_recipe("pm-brass-plate"),
       PM.unlock_recipe("pm-brass-cog")
     },
-    prerequisites = {"automation-science-pack"},
+    prerequisites = {"pm-chlorine-processing"},
     unit =
     {
       count = 25,
@@ -253,11 +255,11 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-electrolysis-plant"),
-      PM.unlock_recipe("pm-seawater-desaltination"),
-      PM.unlock_recipe("pm-seawater-electroylsis"),
-      PM.unlock_recipe("pm-solid-sodium-hydroxide-mixing"),
+      PM.unlock_recipe("pm-seawater-evaporation"),
+      PM.unlock_recipe("pm-seawater-electrolysis"),
+      PM.unlock_recipe("pm-solid-sodium-hydroxide-seawater"),
+      PM.unlock_recipe("pm-sodium-to-solid-sodium-hydroxide"),
       PM.unlock_recipe("pm-hydrochloric-acid"),
-      PM.unlock_recipe("pm-oxygen-evaporation"),
       PM.unlock_recipe("pm-hydrogen-evaporation"),
       PM.unlock_recipe("pm-chlorine-evaporation"),
     },
@@ -282,7 +284,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("offshore-pump"),
-      PM.unlock_recipe("pm-seawater-desaltination"),
+      PM.unlock_recipe("pm-water-mercury-electrolysis"),
     },
     prerequisites = {"automation-2", "pm-cleaner-power-generation"},
     unit =
@@ -1221,7 +1223,6 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-washing-plant-2"),
-      PM.unlock_recipe("pm-gas-water-electroylsis"),
     },
     prerequisites = {"advanced-circuit"},
     unit =

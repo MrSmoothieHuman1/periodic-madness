@@ -23,9 +23,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-seawater-from-sea-salt",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/sea-salt-seawater.png",
     enabled = false,
     energy_required = 4,
     category = "pm-evaporation",
+    subgroup = "pm-acid-crafting",
     ingredients =
     {
         PM.ingredient("water", 10, "fluid"),

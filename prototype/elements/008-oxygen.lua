@@ -101,14 +101,19 @@ data:extend({
     {
         type = "recipe",
         name = "pm-solid-sodium-hydroxide-mixing",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/solid-sodium-hydroxide-mixing.png",
         enabled = false,
         energy_required = 2,
-        category = "pm-evaporation",
+        category = "pm-acids",
+        subgroup = "pm-oxygen-rnm",
+        order = "f",
         main_product = "pm-oxygen-gas",
         ingredients =
         {
             PM.ingredient("pm-solid-sodium-hydroxide", 5),
-            PM.ingredient("water", 20, "fluid")
+            PM.ingredient("water", 20, "fluid"),
+            PM.ingredient("pm-nickel-plate", 1)
         },
         results =
         {

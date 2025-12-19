@@ -1850,12 +1850,12 @@ data:extend({
     type = "item",
     name = "pm-solid-sodium-hydroxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/sodium-1.png",
+    icon = "__periodic-madness__/graphics/icons/solid-sodium-hydroxide.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/sodium-1.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/sodium-2.png", size = 64, scale = 0.48 },
-      { filename = "__periodic-madness__/graphics/icons/ores/sodium-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/solid-sodium-hydroxide.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/solid-sodium-hydroxide-2.png", size = 64, scale = 0.48 },
+      { filename = "__periodic-madness__/graphics/icons/solid-sodium-hydroxide-3.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-sodium-am",
     order = "a",

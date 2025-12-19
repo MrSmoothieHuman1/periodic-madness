@@ -80,7 +80,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
         icon_size = 64,
       },
     },
@@ -99,7 +99,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-post-transition-metals-ore", 12),
-      PM.ingredient("pm-acidic-water", 25, "fluid"),
+      PM.ingredient("pm-hydrochloric-acid", 20, "fluid"),
     },
     enabled = false,
     results =

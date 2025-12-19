@@ -169,11 +169,31 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-seawater-electroylsis",
+    name = "pm-seawater-evaporation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-electroylsis.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/seawater-refining.png",
     subgroup = "pm-chlorine-rnm",
-    order = "f",
+    order = "fa",
+    category = "pm-evaporation",
+    enabled = false,
+    energy_required = 2,
+    ingredients =
+    {
+      PM.ingredient("pm-seawater", 75, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-sea-salt", 4),
+      PM.product("water", 25, "fluid")
+    }
+  } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-seawater-electrolysis",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/seawater-electrolysis.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "fb",
     category = "pm-electrolysis",
     energy_required = 2,
     enabled = false,
@@ -190,46 +210,48 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-seawater-evaporation",
+    name = "pm-solid-sodium-hydroxide-seawater",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/seawater-refining.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "f",
-    category = "pm-evaporation",
+    icon = "__periodic-madness__/graphics/icons/recipes/sodium-hydroxide-seawater.png",
     enabled = false,
-    energy_required = 0.75,
+    energy_required = 1,
+    category = "pm-acids",
+    subgroup = "pm-chlorine-rnm",
+    order = "fc",
+    main_product = "pm-seawater",
     ingredients =
     {
-      PM.ingredient("pm-seawater", 50, "fluid")
+        PM.ingredient("pm-solid-sodium-hydroxide", 4),
+        PM.ingredient("water", 10, "fluid"),
+        PM.ingredient("iron-plate", 2)
     },
-    results =
+    results = 
     {
-      PM.product("pm-sea-salt",  3),
-      PM.product("water", 25, "fluid")
+        PM.product("pm-seawater", 12.5, "fluid"),
+        PM.product_range("pm-sodium", 1, 3)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
-    name = "pm-seawater-desaltination",
+    name = "pm-sodium-to-solid-sodium-hydroxide",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-desaltination.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "g",
-    category = "pm-evaporation",
-    hide_from_player_crafting = true,
+    icon = "__periodic-madness__/graphics/icons/recipes/sodium-to-solid-sodium-hydroxide.png",
     enabled = false,
-    energy_required = 0.75,
-    allow_productivity = true,
+    category = "pm-evaporation",
+    subgroup = "pm-chlorine-rnm",
+    order = "fd",
+    main_product = "pm-solid-sodium-hydroxide",
     ingredients =
     {
-      PM.ingredient("pm-seawater", 75, "fluid")
+        PM.ingredient("pm-sodium", 4),
+        PM.ingredient("water", 10, "fluid")
     },
     results =
     {
-      PM.product("water", 50, "fluid"),
-      PM.product("pm-sea-salt", 10)
+        PM.product("pm-chlorine", 5, "fluid"),
+        PM.product("pm-solid-sodium-hydroxide", 2)
     }
-  } --[[@as data.RecipePrototype]],
+  },
   {
     type = "recipe",
     name = "pm-hydrochloric-acid",

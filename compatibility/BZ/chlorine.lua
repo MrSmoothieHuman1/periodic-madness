@@ -9,15 +9,6 @@ data.raw["recipe"]["pm-seawater-evaporation"].results =
   PM.product("salt", 5),
   PM.product("water", 25, "fluid"),
 }
-data.raw["recipe"]["pm-seawater-desaltination"].ingredients =
-{
-  PM.ingredient("pm-seawater", 100, "fluid")
-}
-data.raw["recipe"]["pm-seawater-desaltination"].results =
-{
-  PM.product("water", 50, "fluid"),
-  PM.product("salt", 10),
-}
 
 data.raw["technology"]["chlorine-processing"].effects =
 {
