@@ -465,6 +465,59 @@ data:extend({
       }
     },
   }--[[@as data.ResourceEntityPrototype]],
+  {
+    type = "autoplace-control",
+    category = "resource",
+    name = "pm-lanthanum",
+    localised_name = {"","[entity=pm-post-transition-metals] ", {"entity-name.pm-post-transition-metals"}},
+    richness = true,
+    order = "h"
+	}--[[@as data.AutoplaceControl]],
+	{
+    type = "resource",
+    icon_size = 64,
+    name = "pm-lanthanum",
+    icon = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",
+    flags = {"placeable-neutral"},
+    order= "c",
+    map_color = {r=0.5, g=0.84, b=1},
+    minable =
+    {
+      hardness = 1,
+      mining_particle = "copper-ore-particle",
+      mining_time = 1,
+      result = "pm-post-transition-metals-ore"
+    },
+    collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+
+    autoplace = resource_autoplace.resource_autoplace_settings
+    {
+      name = "pm-lanthanum",
+      order = "c",
+      base_density = 12,
+      base_spots_per_km2 = 1,
+      regular_rq_factor_multiplier = 1.2,
+      starting_rq_factor_multiplier = 1.7,
+      has_starting_area_placement = false,
+      additional_richness = 1500
+    },
+
+    stage_counts = {1000000, 40000, 24000, 20000, 12000, 10000, 7000, 3000},
+
+    stages =
+    {
+      sheet =
+      {
+        filename = "__periodic-madness__/graphics/entities/ores/post-transition-metals-ore.png",
+        priority = "extra-high",
+        size = 128,
+        frame_count = 8,
+        variation_count = 8,
+        scale = 0.5
+      }
+    },
+  }--[[@as data.ResourceEntityPrototype]],
 
   {
     type = "autoplace-control",
@@ -692,6 +745,8 @@ data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkaline-earth-me
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkaline-earth-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-mixed-noble-gas"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-mixed-noble-gas"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-lanthanum"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-lanthanum"] = {}
 
 data.raw["resource"]["iron-ore"].icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png"
 data.raw["resource"]["copper-ore"].icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png"
