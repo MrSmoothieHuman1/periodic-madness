@@ -45,7 +45,7 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-seawater-sulfide-evaporation"),
-        PM.unlock_recipe("pm-seawater-from-seasalt"),
+        PM.unlock_recipe("pm-seawater-from-sea-salt"),
         PM.unlock_recipe("pm-acidic-water")
     },
     prerequisites = {"automation-science-pack"},
@@ -87,7 +87,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/byproduct-handling.png",
     effects =
     {
-      PM.unlock_recipe("pm-acidic-water"),
       PM.unlock_recipe("pm-ferrum-leeching"),
       PM.unlock_recipe("pm-patina-leeching"),
     },
@@ -109,7 +108,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-refining.png",
     effects =
     {
-      PM.unlock_recipe("pm-acidic-water"),
       PM.unlock_recipe("pm-silver-chunks"),
       PM.unlock_recipe("pm-silver-ore"),
       PM.unlock_recipe("pm-silver-plate"),
@@ -117,7 +115,7 @@ data:extend({
       PM.unlock_recipe("pm-gold-ore"),
       PM.unlock_recipe("pm-gold-plate"),
     },
-    prerequisites = {"pm-mercury-processing", "pm-ezekiel-ore-purifying"},
+    prerequisites = {"pm-mercury-processing", "pm-chlorine-processing"},
     unit =
     {
       count = 30,
@@ -187,7 +185,7 @@ data:extend({
       PM.unlock_recipe("pm-zinc-powder"),
       PM.unlock_recipe("pm-zinc-powder-leeching"),
     },
-    prerequisites = {"automation", "pm-chlorine-processing"},
+    prerequisites = {"automation", "pm-acidic-water-processing"},
     unit =
     {
       count = 20,
@@ -255,20 +253,23 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-electrolysis-plant"),
-      PM.unlock_recipe("pm-water-electroylsis"),
-      PM.unlock_recipe("pm-seawater-evaporation"),
-      PM.unlock_recipe("pm-salt-electroylsis"),
-      PM.unlock_recipe("pm-sodium-looping"),
+      PM.unlock_recipe("pm-seawater-desaltination"),
+      PM.unlock_recipe("pm-seawater-electroylsis"),
+      PM.unlock_recipe("pm-solid-sodium-hydroxide-mixing"),
       PM.unlock_recipe("pm-hydrochloric-acid"),
       PM.unlock_recipe("pm-oxygen-evaporation"),
       PM.unlock_recipe("pm-hydrogen-evaporation"),
       PM.unlock_recipe("pm-chlorine-evaporation"),
     },
-    prerequisites = {"automation-science-pack"},
-    research_trigger = 
+    prerequisites = {"automation"},
+    unit =
     {
-      type = "build-entity",
-      entity = "pm-evaporator"
+      count = 20,
+      ingredients =
+      {
+        {"automation-science-pack", 1}
+      },
+      time = 15
     }
   },
 

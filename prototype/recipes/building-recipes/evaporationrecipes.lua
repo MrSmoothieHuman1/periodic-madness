@@ -1,6 +1,4 @@
 data:extend({
-
-
   {
     type = "recipe",
     name = "pm-seawater-sulfide-evaporation",
@@ -13,13 +11,29 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      PM.ingredient("pm-seawater", 150, "fluid"),
+      PM.ingredient("pm-seawater", 100, "fluid"),
     },
     results =
     {
       PM.product_range("sulfur", 1, 2),
       PM.product("water", 25, "fluid"),
       PM.product("pm-sea-salt", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-seawater-from-sea-salt",
+    enabled = false,
+    energy_required = 4,
+    category = "pm-evaporation",
+    ingredients =
+    {
+        PM.ingredient("water", 10, "fluid"),
+        PM.ingredient("pm-sea-salt", 12)
+    },
+    results =
+    {
+        PM.product("pm-seawater", 15, "fluid")
     }
   },
   {

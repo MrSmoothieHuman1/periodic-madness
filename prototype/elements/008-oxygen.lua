@@ -96,5 +96,24 @@ data:extend({
           PM.ingredient("pm-oxygen-gas", 25, "fluid")
         },
         results = {}
-      },
+    },
+
+    {
+        type = "recipe",
+        name = "pm-solid-sodium-hydroxide-mixing",
+        enabled = false,
+        energy_required = 2,
+        category = "pm-evaporation",
+        main_product = "pm-oxygen-gas",
+        ingredients =
+        {
+            PM.ingredient("pm-solid-sodium-hydroxide", 5),
+            PM.ingredient("water", 20, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-seawater", 12.5, "fluid"),
+            PM.product("pm-oxygen-gas", 10, "fluid")
+        }
+    }
 })

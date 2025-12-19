@@ -1,25 +1,5 @@
 data:extend({
 
-  {
-    type = "recipe",
-    name = "pm-water-electroylsis",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-electroylsis.png",
-    subgroup = "pm-hydrogen-rnm",
-    order = "a",
-    category = "pm-electrolysis",
-    energy_required = 1,
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-seawater", 50 , "fluid"),
-    },
-    results =
-    {
-      PM.product("pm-oxygen-gas",   10 , "fluid"),
-      PM.product("pm-hydrogen-gas", 20 , "fluid"),
-    }
-  },
   -- a relic, from a kinder past
 
   {
@@ -59,7 +39,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-oxygen-gas",   20, "fluid"),
+      PM.product("pm-oxygen-gas", 20, "fluid"),
       PM.product("pm-hydrogen-gas", 40, "fluid"),
     },
   },
@@ -105,4 +85,39 @@ data:extend({
       PM.product("pm-oxygen-gas", 10, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-sea-salt-electrolysis",
+    enabled = false,
+    energy_required = 3,
+    category = "pm-electrolysis",
+    main_product = "pm-chlorine",
+    ingredients =
+    {
+        PM.ingredient("pm-sea-salt", 8),
+    },
+    results =
+    {
+        PM.product("pm-chlorine", 6, "fluid"),
+        PM.product("pm-solid-sodium-hydroxide", 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-water-mercury-electrolysis",
+    enabled = false,
+    energy_required = 1,
+    category = "pm-electrolysis",
+    main_product = "pm-oxygen-gas",
+    ingredients =
+    {
+        PM.ingredient("water", 25, "fluid"),
+        PM.ingredient("pm-liquid-mercury", 10, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-oxygen-gas", 20, "fluid"),
+        PM.product("pm-hydrogen-gas", 30, "fluid")
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

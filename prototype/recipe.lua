@@ -432,13 +432,13 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      PM.ingredient("sulfur", 5),
-      PM.ingredient("water", 50, "fluid"),
+      PM.ingredient("sulfur", 2),
+      PM.ingredient("water", 10, "fluid"),
     },
     hide_from_player_crafting = true,
     results =
     {
-      PM.product("pm-acidic-water", 50, "fluid")
+      PM.product("pm-acidic-water", 10, "fluid")
     }
   },
   {

@@ -166,6 +166,28 @@ data:extend({
     },
     results = {}
   },
+
+  {
+    type = "recipe",
+    name = "pm-seawater-electroylsis",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/water-electroylsis.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "f",
+    category = "pm-electrolysis",
+    energy_required = 2,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-seawater", 25, "fluid"),
+    },
+    results =
+    {
+      PM.product("pm-chlorine", 5, "fluid"),
+      PM.product("pm-hydrogen-gas", 10, "fluid"),
+      PM.product_range("pm-solid-sodium-hydroxide", 0, 2)
+    }
+  },
   {
     type = "recipe",
     name = "pm-seawater-evaporation",
@@ -206,25 +228,6 @@ data:extend({
     {
       PM.product("water", 50, "fluid"),
       PM.product("pm-sea-salt", 10)
-    }
-  } --[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-sodium-looping",
-    subgroup = "pm-chlorine-rnm",
-    order = "i",
-    category = "pm-evaporation",
-    main_product = "pm-chlorine",
-    energy_required = 1,
-    enabled = false,
-    ingredients =
-    {
-      PM.ingredient("pm-sodium", 4)
-    },
-    results =
-    {
-      PM.product_range_chance("pm-chlorine", 2, 5, 0.2, "fluid"),
-      PM.product_range("pm-sodium", 0, 2)
     }
   } --[[@as data.RecipePrototype]],
   {

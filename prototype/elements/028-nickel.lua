@@ -126,7 +126,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/hydrochloric-acid.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/acidic-water.png",
         icon_size = 64,
       },
     },
@@ -145,7 +145,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-nickel-powder", 4),
-      PM.ingredient("pm-hydrochloric-acid", 4, "fluid"),
+      PM.ingredient("pm-acidic-water", 4, "fluid"),
     },
     allow_decomposition = false,
     enabled = false,
