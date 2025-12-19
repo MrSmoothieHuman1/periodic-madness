@@ -8391,7 +8391,6 @@ fluid_boxes =
     },
     fluid_boxes =
     {
-    max_pipeline_extent = 560,
     {
       production_type = "input",
       pipe_picture = pm_assembler4pipepictures(),
@@ -10628,7 +10627,6 @@ table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_cat
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "pm-circuitry")
 data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes =
 {
-  max_pipeline_extent = 560,
   {
     production_type = "input",
     pipe_picture = assembler2pipepictures(),
@@ -10651,7 +10649,6 @@ data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes_off_when_no_f
 table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories, "pm-circuitry")
 data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes = 
 {
-  max_pipeline_extent = 560,
   {
     production_type = "input",
     pipe_picture = assembler2pipepictures(),
@@ -10682,7 +10679,6 @@ table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_cat
 table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories, "pm-circuitry")
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
 {
-  max_pipeline_extent = 560,
   {
     production_type = "input",
     pipe_picture = assembler3pipepictures(),
