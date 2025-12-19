@@ -195,7 +195,7 @@ data:extend({
     subgroup = "pm-chlorine-rnm",
     order = "fb",
     category = "pm-electrolysis",
-    energy_required = 2,
+    energy_required = 1,
     enabled = false,
     ingredients =
     {
@@ -223,7 +223,7 @@ data:extend({
     {
         PM.ingredient("pm-solid-sodium-hydroxide", 4),
         PM.ingredient("water", 10, "fluid"),
-        PM.ingredient("iron-plate", 2)
+        PM.ingredient("pm-nickel-plate", 1)
     },
     results = 
     {
