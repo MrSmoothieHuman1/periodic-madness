@@ -245,32 +245,6 @@ data:extend({
     order = "cb"
   },
 
-  --MARK: Acids
-  {
-    type = "item-subgroup",
-    name = "pm-acids", --the acids themselves (eg. acidic water, HCl)
-    group = "pm-acids",
-    order = "a"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-acid-crafting", --acid production chains, how to make them
-    group = "pm-acids",
-    order = "b"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-ezekiel-purifying", --ore chunk puryifying
-    group = "pm-acids",
-    order = "c"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-advanced-ore-decomposition", --advanced TM leeching
-    group = "pm-acids",
-    order = "e"
-  },
-
   --MARK: Intermediates
   {
     type = "item-subgroup",
