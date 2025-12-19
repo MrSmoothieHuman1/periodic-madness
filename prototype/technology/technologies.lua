@@ -7207,7 +7207,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/speed-module-6-tech.png",
     effects = 
     {
-        PM.unlock_recipe("pm-speed-module-5")
+        PM.unlock_recipe("pm-speed-module-6")
     },
     prerequisites = {"pm-speed-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
     unit =
@@ -7237,7 +7237,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/efficiency-module-6-tech.png",
     effects = 
     {
-        PM.unlock_recipe("pm-efficiency-module-5")
+        PM.unlock_recipe("pm-efficiency-module-6")
     },
     prerequisites = {"pm-efficiency-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
     unit =
@@ -7267,7 +7267,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/productivity-module-6-tech.png",
     effects = 
     {
-        PM.unlock_recipe("pm-productivity-module-5")
+        PM.unlock_recipe("pm-productivity-module-6")
     },
     prerequisites = {"pm-productivity-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
     unit =

@@ -5357,4 +5357,61 @@ data:extend({
         PM.product("pm-geothermal-bore-mk2", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-speed-module-6",
+    enabled = false,
+    energy_required = 60,
+    subgroup = "pm-speed",
+    order = "f",
+    ingredients =
+    {
+      PM.ingredient("pm-cobalt-blue", 5),
+      PM.ingredient("speed-module-3", 1),
+      PM.ingredient("pm-advanced-speed-module-light", 1),
+      PM.ingredient("pm-space-processing-unit", 10),
+    },
+    results =
+    {
+      PM.product("pm-speed-module-6", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-efficiency-module-6",
+    enabled = false,
+    energy_required = 60,
+    subgroup = "pm-efficiency",
+    order = "f",
+    ingredients =
+    {
+      PM.ingredient("pm-chrome-green", 5),
+      PM.ingredient("efficiency-module-3", 1),
+      PM.ingredient("pm-advanced-efficiency-module-light", 1),
+      PM.ingredient("pm-space-processing-unit", 10),
+    },
+    results =
+    {
+      PM.product("pm-efficiency-module-6", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-productivity-module-6",
+    enabled = false,
+    energy_required = 60,
+    subgroup = "pm-productivity",
+    order = "f",
+    ingredients =
+    {
+      PM.ingredient("pm-cadnium-red", 5),
+      PM.ingredient("productivity-module-3", 1),
+      PM.ingredient("pm-advanced-productivity-module-light", 1),
+      PM.ingredient("pm-space-processing-unit", 10),
+    },
+    results =
+    {
+      PM.product("pm-productivity-module-6", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
