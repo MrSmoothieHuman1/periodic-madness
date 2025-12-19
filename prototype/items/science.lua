@@ -154,3 +154,4 @@ data.raw["tool"]["production-science-pack"].order = "x"
 data.raw["tool"]["utility-science-pack"].order = "xa"
 
 data.raw["tool"]["space-science-pack"].subgroup = "pm-research-data"
+data.raw["tool"]["space-science-pack"].icon = "__periodic-madness__/graphics/icons/science/space-research-data.png"
