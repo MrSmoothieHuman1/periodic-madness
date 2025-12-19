@@ -10099,7 +10099,7 @@ fluid_boxes =
   icon_size = 64,
   icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-3.png",
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 1, result = "pm-mixing-tank-2" },
+  minable = { mining_time = 1, result = "pm-mixing-tank-3" },
   max_health = 1250,
   collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
   selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
