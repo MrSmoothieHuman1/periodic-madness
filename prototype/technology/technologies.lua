@@ -7168,7 +7168,8 @@ data:extend({
       time = 160
     }
   },
-
+  
+--anything behind this line should take double of TM/ATM/AATM science
 --MARK: LA science
   {
     type = "technology",
@@ -7258,6 +7259,35 @@ data:extend({
         {"pm-lathanide-science-pack", 1}
       },
       time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-YAG-lasers",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/productivity-module-6-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-lathanide-science-pack"},
+    unit =
+    {
+      count = 900,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lathanide-science-pack", 1}
+      },
+      time = 180
     }
   },
 
