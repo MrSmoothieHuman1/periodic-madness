@@ -7169,8 +7169,99 @@ data:extend({
     }
   },
 
---MARK: AC science
 --MARK: LA science
+  {
+    type = "technology",
+    name = "pm-speed-module-6",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/speed-module-6-tech.png",
+    effects = 
+    {
+        PM.unlock_recipe("pm-speed-module-5")
+    },
+    prerequisites = {"pm-speed-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lathanide-science-pack", 1}
+      },
+      time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-efficiency-module-6",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/efficiency-module-6-tech.png",
+    effects = 
+    {
+        PM.unlock_recipe("pm-efficiency-module-5")
+    },
+    prerequisites = {"pm-efficiency-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lathanide-science-pack", 1}
+      },
+      time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-productivity-module-6",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/productivity-module-6-tech.png",
+    effects = 
+    {
+        PM.unlock_recipe("pm-productivity-module-5")
+    },
+    prerequisites = {"pm-productivity-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lathanide-science-pack", 1}
+      },
+      time = 240
+    }
+  },
+
+--MARK: AC science
 
   {
     type = "technology",

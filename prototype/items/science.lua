@@ -118,6 +118,21 @@ data:extend({
   },
   {
     type = "tool",
+    name = "pm-lathanide-science-pack",
+    icon_size = 64,
+    icon = "__base__/graphics/icons/space-science-pack.png",
+    inventory_move_sound = item_sounds.science_inventory_move,
+    pick_sound = item_sounds.science_inventory_pickup,
+    drop_sound = item_sounds.science_inventory_move,
+    subgroup = "science-pack",
+    order = "l",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
     name = "pm-experimental-research-data",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/science/experimental-research-data.png",

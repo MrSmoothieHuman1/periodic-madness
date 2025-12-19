@@ -39,6 +39,24 @@ local pm_lab_inputs =
   "space-science-pack",
   "pm-experimental-research-data"
 }
+local pm_advanced_lab_inputs =
+{
+  "automation-science-pack",
+  "logistic-science-pack",
+  "pm-advanced-advanced-transition-metal-science-pack",
+  "chemical-science-pack",
+  "pm-post-transition-metal-science-pack",
+  "pm-alkali-metal-science-pack",
+  "pm-metalloid-science-pack",
+  "pm-alkaline-earth-metal-science-pack",
+  "pm-advanced-advanced-advanced-transition-metal-science-pack",
+  "pm-noble-gas-science-pack",
+  "pm-lathanide-science-pack",
+  "production-science-pack",
+  "utility-science-pack",
+  "space-science-pack",
+  "pm-experimental-research-data"
+}
 
 local heated_pipes_tint = {0.5, 0.4, 0.3, 0.5}
 local heat_glow_tint = {1, 1, 1, 1}
@@ -10492,6 +10510,83 @@ fluid_boxes =
   },
 },
 }--[[@as data.AssemblingMachinePrototype]],
+  {
+    type = "lab",
+    name = "pm-betterer-lab",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/buildings/science-center.png",
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 0.75, result = "pm-science-center" },
+    collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
+    selection_box = { { -3, -3 }, { 3, 3 } },
+    module_slots = 4,
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+    },
+    energy_usage = "1MW",
+    researching_speed = 2,
+    allowed_module_categories = {"speed", "productivity", "efficiency"},
+    inputs = pm_advanced_lab_inputs,
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.lab_modules, shift = {0, 1}},
+      {inventory_index = defines.inventory.lab_input, shift = {0, 0.0}, max_icons_per_row = 6, separation_multiplier = 0.9}
+    },
+    on_animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center.png",
+          width = 320,
+          height = 320,
+          frame_count = 54,
+          line_length = 7,
+          animation_speed = 0.2,
+          scale = 0.625,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
+          width = 320,
+          height = 320,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 54,
+          draw_as_shadow = true,
+          shift = util.by_pixel(10, 0),
+          scale = 0.625,
+        },
+      }
+    },
+    off_animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-off.png",
+          width = 320,
+          height = 320,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 54,
+          scale = 0.625,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
+          width = 320,
+          height = 320,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 54,
+          shift = util.by_pixel(10, 0),
+          draw_as_shadow = true,
+          scale = 0.5,
+        }
+      }
+    }
+  }--[[@as data.LabPrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
