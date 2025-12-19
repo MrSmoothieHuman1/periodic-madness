@@ -1,4 +1,27 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.000
+Date: 2025-19-12
+  The  Update:
+
+  Additions:
+    - Added Scandium.
+    - Added Lanthanum.
+    - Added Cerium.
+    - Added Praseodymium.
+    - Added Neodymium.
+    - Added Promethium.
+    - Added Samarium.
+    - Added Europium.
+    - Added Gadolinium.
+    - Added Terbium.
+    - Added Dysprosium.
+    - Added Holmium.
+    - Added Erbium.
+    - Added Thulium.
+    - Added Ytterbium.
+    - Added Lutetium.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.000
 Date: 2025-19-12
   The ONE place that hasn't been corrupted by autism... SPACE! Update:
