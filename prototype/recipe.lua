@@ -5414,4 +5414,28 @@ data:extend({
       PM.product("pm-productivity-module-6", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-drilling-fluid",
+    enabled = false,
+    energy_required = 10,
+    category = "pm-mixing",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-light-lubricant", 12.5, "fluid"),
+        PM.ingredient("pm-acetone", 25, "fluid"),
+        PM.ingredient("pm-diesel", 50, "fluid"),
+        PM.ingredient("pm-acidic-water", 100, "fluid"),
+        PM.ingredient("pm-potassium-permanganate", 6),
+        PM.ingredient("pm-barium-ore", 5),
+        PM.ingredient("pm-graphene", 3),
+        PM.ingredient("pm-calcium-ore", 8),
+        PM.ingredient("pm-bauxite-powder", 6)
+    },
+    results = 
+    {
+        PM.product("pm-drilling-fluid", 50, "fluid")
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

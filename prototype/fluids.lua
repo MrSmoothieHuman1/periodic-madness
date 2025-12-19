@@ -2156,6 +2156,17 @@ data:extend({
     flow_color = {0.91, 0.502, 0.224},
     auto_void = true,
   },
+  {
+    type = "fluid",
+    name = "pm-drilling-fluid",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/drilling-fluid.png",
+    subgroup = "pm-geothermal-intermediates",
+    order = "a",
+    default_temperature = 15,
+    base_color = {0.831, 0.81, 0.802},
+    flow_color = {0.831, 0.81, 0.802},
+  },
 
 	{
 		type = "fluid",
