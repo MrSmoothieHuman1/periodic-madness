@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.000
-Date: 2025-28-09
+Date: 2025-19-12
   The ONE place that hasn't been corrupted by autism... SPACE! Update:
 
   Additions:
@@ -15,7 +15,7 @@ Date: 2025-28-09
     - Added new achievements: Legacy code, Nuclear power? no thanks, and all the "Research with X" achievements.
     - Added MK2 selenium battery equipment.
     - Added the hydroelectric plant, which is unlocked in orange science and generates 330kW, forever. It requires to be partially submerged to function.
-    - Added the geothermal plant, which is unlocked in yellow science and requires a special fluid and fuel to function.
+    - Finally added fluid burners, and fluid turbines. They take burning oil which can be made from certain oil fractions.
     - Added new graphics for the welder!
     - Remodelled the atmospheric condenser, and added diode lights to it!
     - Added a tier 2 atmospheric condenser. you'll need it.

@@ -2008,6 +2008,7 @@ data:extend({
         PM.unlock_recipe("pm-geothermal-plant")
     },
     prerequisites = {"electric-engine"},
+    hidden = true,
     unit = 
     {
       count = 200,
@@ -2640,6 +2641,7 @@ data:extend({
       PM.unlock_recipe("pm-geothermal-bore-mk2"),
     },
     prerequisites = {"lubricant", "pm-geothermal-energy"},
+    hidden = true,
     unit =
     {
       count = 250,

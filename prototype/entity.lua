@@ -5378,7 +5378,7 @@ data:extend({
     max_health = 500,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
-    map_color = {r = 0.659, g = 0.106, b = 0.106},
+    map_color = {0.871, 0.514, 0.161},
     working_sound =
     {
       sound =
@@ -5507,7 +5507,7 @@ data:extend({
     max_health = 500,
     corpse = "steel-furnace-remnants",
     dying_explosion = "steel-furnace-explosion",
-    map_color = {r = 0.659, g = 0.106, b = 0.106},
+    map_color = {0.871, 0.514, 0.161},
     working_sound =
     {
       sound =

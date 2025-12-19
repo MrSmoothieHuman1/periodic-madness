@@ -1015,6 +1015,8 @@ data:extend({
     subgroup = "energy",
     order = "j",
     place_result = "pm-geothermal-plant",
+    hidden = true,
+    hidden_in_factoriopedia = true,
     stack_size = 20
   },
   {
@@ -1025,6 +1027,8 @@ data:extend({
     subgroup = "energy",
     order = "j",
     place_result = "pm-geothermal-generator",
+    hidden = true,
+    hidden_in_factoriopedia = true,
     stack_size = 50
   },
 })
