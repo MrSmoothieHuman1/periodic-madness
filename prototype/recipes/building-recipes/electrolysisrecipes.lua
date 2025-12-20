@@ -47,7 +47,7 @@ data:extend({
     type = "recipe",
     name = "pm-water-mercury-electrolysis",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-mercury-electroylsis.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/water-mercury-electrolysis.png",
     enabled = false,
     energy_required = 1,
     category = "pm-electrolysis",
@@ -67,20 +67,20 @@ data:extend({
     type = "recipe",
     name = "pm-water-platinum-electrolysis",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/water-platinum-electroylsis.png",
+    icon = "__periodic-madness__/graphics/icons/recipes/water-platinum-electrolysis.png",
     enabled = false,
     energy_required = 1,
     category = "pm-electrolysis",
     main_product = "pm-oxygen-gas",
     ingredients =
     {
-        PM.ingredient("water", 25, "fluid"),
+        PM.ingredient("water", 30, "fluid"),
         PM.ingredient("pm-platinum-plate", 4),
     },
     results = 
     {
-        PM.product("pm-oxygen-gas", 20, "fluid"),
-        PM.product("pm-hydrogen-gas", 30, "fluid"),
+        PM.product("pm-oxygen-gas", 25, "fluid"),
+        PM.product("pm-hydrogen-gas", 35, "fluid"),
         PM.product_range("pm-platinum-plate", 2, 4)
     }
   }
