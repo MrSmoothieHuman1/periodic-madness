@@ -5532,9 +5532,167 @@ data:extend({
         PM.ingredient("pm-molten-manganese", 1, "fluid"),
         PM.ingredient("pm-carbon", 6)
     },
-    results = 
+    results =
     {
         PM.product("pm-ferrite-magnet", 1)
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-monazite-chunks",
+    enabled = false,
+    energy_required = 5,
+    category = "pm-acids",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-lanthanum-ore", 20),
+        PM.ingredient("pm-chromic-acid", 50, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-monazite-chunks", 12)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-crushed-monazite",
+    enabled = false,
+    energy_required = 10,
+    category = "pm-crushing",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-monazite-chunks", 6)
+    },
+    results =
+    {
+        PM.product("pm-crushed-monazite", 12)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-low-seperated-monazite",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 12,
+    category = "centrifuging",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-monazite-chunks", 12),
+        PM.ingredient("pm-ferrite-magnet", 1)
+    },
+    results = 
+    {
+        PM.product("pm-low-seperated-monazite", 10),
+        PM.product_range("stone", 2, 6),
+        PM.catalyst_chance("pm-ferrite-magnet", 1, 0.6, 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-medium-seperated-monazite",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 14,
+    category = "centrifuging",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-low-seperated-monazite", 10),
+        PM.ingredient("pm-ferrite-magnet", 2)
+    },
+    results =
+    {
+        PM.product("pm-medium-seperated-monazite", 8),
+        PM.catalyst_chance("pm-ferrite-magnet", 2, 0.7, 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-high-seperated-monazite",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 16,
+    category = "centrifuging",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-medium-seperated-monazite", 8),
+        PM.ingredient("pm-ferrite-magnet", 3)
+    },
+    results =
+    {
+        PM.product("pm-high-seperated-monazite", 6),
+        PM.catalyst_chance("pm-ferrite-magnet", 3, 0.8, 3)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-pure-monazite",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 18,
+    category = "centrifuging",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-high-seperated-monazite", 6),
+        PM.ingredient("pm-ferrite-magnet", 4)
+    },
+    results =
+    {
+        PM.product("pm-pure-monazite", 6),
+        PM.catalyst_chance("pm-ferrite-magnet", 4, 0.9, 4)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

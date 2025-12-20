@@ -468,7 +468,7 @@ data:extend({
   {
     type = "autoplace-control",
     category = "resource",
-    name = "pm-lanthanum",
+    name = "pm-lanthanum-ore",
     localised_name = {"","[entity=pm-post-transition-metals] ", {"entity-name.pm-post-transition-metals"}},
     richness = true,
     order = "h"
@@ -476,7 +476,7 @@ data:extend({
 	{
     type = "resource",
     icon_size = 64,
-    name = "pm-lanthanum",
+    name = "pm-lanthanum-ore",
     icon = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",
     flags = {"placeable-neutral"},
     order= "c",
@@ -486,14 +486,14 @@ data:extend({
       hardness = 1,
       mining_particle = "copper-ore-particle",
       mining_time = 1,
-      result = "pm-post-transition-metals-ore"
+      result = "pm-lanthanum-ore"
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
 
     autoplace = resource_autoplace.resource_autoplace_settings
     {
-      name = "pm-lanthanum",
+      name = "pm-lanthanum-ore",
       order = "c",
       base_density = 12,
       base_spots_per_km2 = 1,
@@ -745,8 +745,8 @@ data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkaline-earth-me
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkaline-earth-metals"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-mixed-noble-gas"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-mixed-noble-gas"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-lanthanum"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-lanthanum"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-lanthanum-ore"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-lanthanum-ore"] = {}
 
 data.raw["resource"]["iron-ore"].icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png"
 data.raw["resource"]["copper-ore"].icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png"

@@ -109,6 +109,25 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-lanthanum-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/transition-metals-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-1.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-3.png", size = 64, scale = 0.5},
+    },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
+    subgroup = "pm-la-la",
+    order = "a",
+    stack_size = 200
+  },
 })
 
 data.raw["item"]["iron-ore"].stack_size = 200

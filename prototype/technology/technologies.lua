@@ -7149,9 +7149,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        PM.ingredient("pm-ferrite-magnet"),
+        PM.unlock_recipe("pm-ferrite-magnet"),
+        PM.unlock_recipe("pm-monazite-chunks"),
+        PM.unlock_recipe("pm-crushed-monazite"),
+        PM.unlock_recipe("pm-low-seperated-monazite"),
+        PM.unlock_recipe("pm-medium-seperated-monazite"),
+        PM.unlock_recipe("pm-high-seperated-monazite"),
+        PM.unlock_recipe("pm-pure-monazite"),
     },
-    prerequisites = {"pm-drilling-fluid"},
+    prerequisites = {"pm-drilling-fluid",},
     unit =
     {
       count = 850,

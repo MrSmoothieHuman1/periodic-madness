@@ -1882,9 +1882,63 @@ data:extend({
     name = "pm-ferrite-magnet",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
-    subgroup = "pm-monazite",
+    subgroup = "pm-monazite-la",
     order = "a",
     stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-monazite-chunks",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite-la",
+    order = "b",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-crushed-monazite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite-la",
+    order = "c",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-low-seperated-monazite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite-la",
+    order = "b",
+    stack_size = 150
+  },
+  {
+    type = "item",
+    name = "pm-medium-seperated-monazite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite-la",
+    order = "d",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-high-seperated-monazite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite-la",
+    order = "e",
+    stack_size = 250
+  },
+  {
+    type = "item",
+    name = "pm-pure-monazite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite-la",
+    order = "f",
+    stack_size = 300
   },
 
   {
