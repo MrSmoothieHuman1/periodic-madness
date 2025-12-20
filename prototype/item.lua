@@ -1877,6 +1877,15 @@ data:extend({
     },
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-ferrite-magnet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite",
+    order = "a",
+    stack_size = 50
+  },
 
   {
     type = "item",

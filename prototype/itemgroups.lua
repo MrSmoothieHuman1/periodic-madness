@@ -1202,8 +1202,111 @@ data:extend({
     group = "pm-noble-gases",
     order = "g"
   },
+  --MARK: Lathanides
+  {
+    type = "item-subgroup",
+    name = "pm-la-la",
+    group = "pm-lathanides",
+    order = "a",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-bastanite-la",
+    group = "pm-lathanides",
+    order = "b",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-monazite-la",
+    group = "pm-lathanides",
+    order = "c",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-cerium-la",
+    group = "pm-lathanides",
+    order = "d",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-praseodymium-la",
+    group = "pm-lathanides",
+    order = "e",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-neodymium-la",
+    group = "pm-lathanides",
+    order = "f",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-promethium-la",
+    group = "pm-lathanides",
+    order = "g",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-samarium-la",
+    group = "pm-lathanides",
+    order = "h",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-europium-la",
+    group = "pm-lathanides",
+    order = "i",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-gadolinium-la",
+    group = "pm-lathanides",
+    order = "j",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-terbium-la",
+    group = "pm-lathanides",
+    order = "k",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-dsyprosium-la",
+    group = "pm-lathanides",
+    order = "l",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-holmium-la",
+    group = "pm-lathanides",
+    order = "m",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-erbium-la",
+    group = "pm-lathanides",
+    order = "n",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-thulium-la",
+    group = "pm-lathanides",
+    order = "o",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-ytterbium-la",
+    group = "pm-lathanides",
+    order = "p",
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-lutetium-la",
+    group = "pm-lathanides",
+    order = "q",
+  },
 
-  --MARK: Subgroups: Actinides
+  --MARK: Actinides
   {
     type = "item-subgroup",
     name = "pm-actinium-ac",

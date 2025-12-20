@@ -5517,5 +5517,24 @@ data:extend({
     {
         PM.product("pm-burning-oil", 7.5, "fluid")
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-ferrite-magnet",
+    enabled = false,
+    energy_required = 5,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("iron-plate", 3),
+        PM.ingredient("pm-strontium-ore", 2),
+        PM.ingredient("pm-molten-manganese", 1, "fluid"),
+        PM.ingredient("pm-carbon", 6)
+    },
+    results = 
+    {
+        PM.product("pm-ferrite-magnet", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])

@@ -20,6 +20,7 @@ Date: 2025-19-12
     - Added Thulium.
     - Added Ytterbium.
     - Added Lutetium.
+    - Added Thorium.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.000

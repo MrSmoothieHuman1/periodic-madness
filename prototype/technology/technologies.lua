@@ -7113,7 +7113,7 @@ data:extend({
     type = "technology",
     name = "pm-drilling-fluid",
     icon_size = 256,
-    icon = "__base__/graphics/technology/space-science-pack.png",
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
         {
@@ -7123,6 +7123,35 @@ data:extend({
         PM.unlock_recipe("pm-drilling-fluid")
     },
     prerequisites = {"pm-graphene-processing"},
+    unit =
+    {
+      count = 850,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 180
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-monazite-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        PM.ingredient("pm-ferrite-magnet"),
+    },
+    prerequisites = {"pm-drilling-fluid"},
     unit =
     {
       count = 850,
