@@ -6267,7 +6267,7 @@ data:extend({
         PM.unlock_recipe("pm-hafnium-iodide"),
         PM.unlock_recipe("pm-hafnium-ore")
     },
-    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-advanced-advanced-advanced-transition-metal-pack-unlock", "pm-iodine-processing"},
     unit =
     {
       count = 525,
