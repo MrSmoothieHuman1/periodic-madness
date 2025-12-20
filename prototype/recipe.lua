@@ -5470,12 +5470,12 @@ data:extend({
     {
         PM.ingredient("pm-nitrobenzene-mixed-acid", 10, "fluid"),
         PM.ingredient("pm-benzene", 10, "fluid"),
-        PM.ingredient("pm-nitric-acid", 7.5, "fluid"),
+        PM.ingredient("pm-nitric-acid", 5, "fluid"),
         PM.ingredient("pm-iodine", 3)
     },
     results =
     {
-        PM.product("pm-nitrobenzene", 30, "fluid"),
+        PM.product("pm-nitrobenzene", 40, "fluid"),
         PM.catalyst_range("pm-iodine", 1, 3, 3)
     }
   },
@@ -5489,7 +5489,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
@@ -5503,19 +5503,19 @@ data:extend({
         quaternary = {0.7, 0.7, 0.85}
     },
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     category = "chemistry",
     subgroup = "pm-burning-oil",
     order = "h",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
-        PM.ingredient("pm-nitrobenzene", 15, "fluid"),
+        PM.ingredient("pm-nitrobenzene", 10, "fluid"),
         PM.ingredient("solid-fuel", 2)
     },
     results = 
     {
-        PM.product("pm-burning-oil", 10, "fluid")
+        PM.product("pm-burning-oil", 7.5, "fluid")
     }
   }
 } --[[@as data.RecipePrototype[] ]])
