@@ -32,7 +32,7 @@ data:extend({
     {
         PM.ingredient("pm-advanced-air-filter", 2),
         PM.ingredient("sulfur", 5),
-        PM.ingredient("pm-iodine", 4),
+        PM.ingredient("pm-iodine", 3),
         PM.ingredient("pm-lightweight-framing", 6)
     },
     results = 
