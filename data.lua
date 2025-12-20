@@ -689,6 +689,14 @@ data.raw["resource"]["copper-ore"].minable =
   mining_time = 1,
   result = "pm-copper-chunk"
 }
+data.raw["resource"]["stone"].autoplace = resource_autoplace.resource_autoplace_settings
+{
+    name = "stone",
+    base_density = 6,
+    has_starting_area_placement = true,
+    regular_rq_factor_multiplier = 1.0,
+    starting_rq_factor_multiplier = 1.15
+}
 
 local AcidPlant = table.deepcopy(data.raw["assembling-machine"]["chemical-plant"])
 

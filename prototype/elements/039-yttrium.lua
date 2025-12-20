@@ -162,8 +162,8 @@ data:extend({
     results =
     {
       PM.product_range("pm-yttrium-oxide", 0, 1),
-      PM.catalyst_chance("pm-cobalt-catalyst", 4, 0.75, 2),
-      PM.catalyst_chance("pm-catalyst-container", 4, 0.25, 2),
+      PM.catalyst_chance("pm-cobalt-catalyst", 4, 0.75, 4),
+      PM.catalyst_chance("pm-catalyst-container", 4, 0.25, 4),
       PM.product_range("pm-carbon-trioxide", 8, 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
