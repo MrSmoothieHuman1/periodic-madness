@@ -46,6 +46,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-water-mercury-electrolysis",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/water-mercury-electroylsis.png",
     enabled = false,
     energy_required = 1,
     category = "pm-electrolysis",
@@ -64,6 +66,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-water-platinum-electrolysis",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/water-platinum-electroylsis.png",
     enabled = false,
     energy_required = 1,
     category = "pm-electrolysis",
