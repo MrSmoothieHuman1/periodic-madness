@@ -3,7 +3,12 @@ data:extend({
     type = "item",
     name = "pm-iodine",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/silicon-ore-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/iodine.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/iodine.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/iodine-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-iodine-rnm",
     order = "d",
     stack_size = 200

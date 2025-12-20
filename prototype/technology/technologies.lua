@@ -4660,6 +4660,32 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-nitrobenzene-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/nitrobenzene-processing.png",
+    effects = 
+    {
+      PM.unlock_recipe("pm-nitrobenzene-mixed-acid"),
+      PM.unlock_recipe("pm-nitrobenzene"),
+      PM.unlock_recipe("pm-nitrobenzene-to-burning-oil")
+    },
+    prerequisites = {"pm-iodine-processing"},
+    unit =
+    {
+      count = 400,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 80
+    }
+  },
 
 --MARK: Tier 2 science
   {

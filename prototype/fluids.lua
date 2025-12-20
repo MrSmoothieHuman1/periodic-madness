@@ -2167,6 +2167,28 @@ data:extend({
     base_color = {0.831, 0.81, 0.802},
     flow_color = {0.831, 0.81, 0.802},
   },
+  {
+    type = "fluid",
+    name = "pm-nitrobenzene-mixed-acid",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene-mixed-acid.png",
+    subgroup = "pm-burning-oil",
+    order = "f",
+    default_temperature = 15,
+    base_color = {r = 0.7, g = 0.85, b = 0.75},
+    flow_color = {r = 0.7, g = 0.85, b = 0.75}
+  },
+  {
+    type = "fluid",
+    name = "pm-nitrobenzene",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
+    subgroup = "pm-burning-oil",
+    order = "g",
+    default_temperature = 15,
+    base_color = {r = 0.7, g = 0.7, b = 0.85},
+    flow_color = {r = 0.7, g = 0.7, b = 0.85}
+  },
 
 	{
 		type = "fluid",

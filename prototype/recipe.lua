@@ -5435,5 +5435,87 @@ data:extend({
     {
         PM.product("pm-drilling-fluid", 50, "fluid")
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitrobenzene-mixed-acid",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-mixing",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("sulfuric-acid", 8, "fluid"),
+        PM.ingredient("pm-burning-oil", 10, "fluid"),
+        PM.ingredient("water", 20, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-nitrobenzene-mixed-acid", 20, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitrobenzene",
+    crafting_machine_tint =
+    {
+        primary = {0.7, 0.7, 0.85},
+    },
+    enabled = false,
+    energy_required = 4,
+    category = "pm-mixing",
+    allow_productivity = true,
+    main_product = "pm-nitrobenzene",
+    ingredients =
+    {
+        PM.ingredient("pm-nitrobenzene-mixed-acid", 10, "fluid"),
+        PM.ingredient("pm-benzene", 10, "fluid"),
+        PM.ingredient("pm-nitric-acid", 7.5, "fluid"),
+        PM.ingredient("pm-iodine", 3)
+    },
+    results =
+    {
+        PM.product("pm-nitrobenzene", 30, "fluid"),
+        PM.catalyst_range("pm-iodine", 1, 3, 3)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-nitrobenzene-to-burning-oil",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/burning-oil.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    crafting_machine_tint =
+    {
+        primary = {0.91, 0.502, 0.224},
+        secondary =  {0.7, 0.7, 0.85},
+        tertiary = {0.91, 0.502, 0.224, 0.5},
+        quaternary = {0.7, 0.7, 0.85}
+    },
+    enabled = false,
+    energy_required = 4,
+    category = "chemistry",
+    subgroup = "pm-burning-oil",
+    order = "h",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-nitrobenzene", 15, "fluid"),
+        PM.ingredient("solid-fuel", 2)
+    },
+    results = 
+    {
+        PM.product("pm-burning-oil", 10, "fluid")
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
