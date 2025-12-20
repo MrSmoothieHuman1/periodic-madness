@@ -2187,7 +2187,8 @@ data:extend({
     order = "g",
     default_temperature = 15,
     base_color = {r = 0.7, g = 0.7, b = 0.85},
-    flow_color = {r = 0.7, g = 0.7, b = 0.85}
+    flow_color = {r = 0.7, g = 0.7, b = 0.85},
+    auto_void = true,
   },
 
 	{
