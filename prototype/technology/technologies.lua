@@ -1514,6 +1514,7 @@ data:extend({
       PM.unlock_recipe("pm-platinum-nickel-froth-seperation"),
       PM.unlock_recipe("pm-platinum-powder-seperation"),
       PM.unlock_recipe("pm-platinum-plate"),
+      PM.unlock_recipe("pm-water-platinum-electrolysis"),
       PM.unlock_recipe("pm-better-air-filter"),
       PM.unlock_recipe("pm-molten-platinum"),
       PM.unlock_recipe("pm-platinum-plate-cooling")

@@ -53,12 +53,31 @@ data:extend({
     ingredients =
     {
         PM.ingredient("water", 25, "fluid"),
-        PM.ingredient("pm-liquid-mercury", 10, "fluid")
+        PM.ingredient("pm-liquid-mercury", 7.5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-oxygen-gas", 20, "fluid"),
+        PM.product("pm-hydrogen-gas", 30, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-water-platinum-electrolysis",
+    enabled = false,
+    energy_required = 1,
+    category = "pm-electrolysis",
+    main_product = "pm-oxygen-gas",
+    ingredients =
+    {
+        PM.ingredient("water", 25, "fluid"),
+        PM.ingredient("pm-platinum-plate", 4),
     },
     results = 
     {
         PM.product("pm-oxygen-gas", 20, "fluid"),
-        PM.product("pm-hydrogen-gas", 30, "fluid")
+        PM.product("pm-hydrogen-gas", 30, "fluid"),
+        PM.product_range("pm-platinum-plate", 2, 4)
     }
   }
 } --[[@as data.RecipePrototype[] ]])
