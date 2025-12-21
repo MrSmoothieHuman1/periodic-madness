@@ -43,7 +43,7 @@ data:extend({
     icon_size = 128,
     icon = "__base__/graphics/achievement/research-with-chemicals.png",
     order = "e[research]-a[research-with]-e[PTM]",
-    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+    science_pack = "pm-post-transition-metal-science-pack"
   },
   {
     type = "research-with-science-pack-achievement",
@@ -51,7 +51,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/achievements/research-with-alkali-metals.png",
     order = "e[research]-a[research-with]-f[AM]",
-    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+    science_pack = "pm-alkali-metal-science-pack"
   },
   {
     type = "research-with-science-pack-achievement",
@@ -59,7 +59,7 @@ data:extend({
     icon_size = 128,
     icon = "__base__/graphics/achievement/research-with-production.png",
     order = "e[research]-a[research-with]-g[MT]",
-    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+    science_pack = "pm-metalloid-science-pack"
   },
   {
     type = "research-with-science-pack-achievement",
@@ -67,7 +67,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/achievements/research-with-alkaline-earth-metals.png",
     order = "e[research]-a[research-with]-h[AEM]",
-    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+    science_pack = "pm-alkaline-earth-metal-science-pack"
   },
   {
     type = "research-with-science-pack-achievement",
@@ -75,7 +75,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/achievements/research-with-advanced-advanced-advanced-transition-metals.png",
     order = "e[research]-a[research-with]-i[AAATM]",
-    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+    science_pack = "pm-advanced-advanced-advanced-transition-metal-science-pack"
   },
   {
     type = "research-with-science-pack-achievement",
@@ -83,7 +83,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/achievements/research-with-noble-gas.png",
     order = "e[research]-a[research-with]-j[NB]",
-    science_pack = "pm-advanced-advanced-transition-metal-science-pack"
+    science_pack = "pm-advanced-advanced-advanced-transition-metal-science-pack"
   },
 })
 

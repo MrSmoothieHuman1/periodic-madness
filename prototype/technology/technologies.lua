@@ -284,6 +284,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("offshore-pump"),
+      PM.unlock_recipe("pm-water-electrolysis"),
       PM.unlock_recipe("pm-water-mercury-electrolysis"),
     },
     prerequisites = {"automation-2", "pm-cleaner-power-generation"},
