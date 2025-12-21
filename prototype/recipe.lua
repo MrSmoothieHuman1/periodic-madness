@@ -5715,7 +5715,7 @@ data:extend({
     energy_required = 10,
     category = "centrifuging",
     subgroup = "pm-monazite-la",
-    order = "h",
+    order = "ha",
     allow_productivity = true,
     ingredients = 
     {
@@ -5749,7 +5749,7 @@ data:extend({
     energy_required = 12,
     category = "centrifuging",
     subgroup = "pm-monazite-la",
-    order = "i",
+    order = "hb",
     allow_productivity = true,
     ingredients =
     {
@@ -5782,7 +5782,7 @@ data:extend({
     energy_required = 14,
     category = "centrifuging",
     subgroup = "pm-monazite-la",
-    order = "j",
+    order = "hc",
     allow_productivity = true,
     ingredients =
     {

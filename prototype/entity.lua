@@ -9657,7 +9657,7 @@ fluid_boxes =
       {
         north =
         {
-            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/north-south-geothermal-plant.png",
             priority = "high",
             width = 384,
             height = 384,
@@ -9665,7 +9665,7 @@ fluid_boxes =
         },
         south =
         {
-            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/north-south-geothermal-plant.png",
             priority = "high",
             width = 384,
             height = 384,
@@ -9673,7 +9673,7 @@ fluid_boxes =
         },
         east =
         {
-            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/east-west-geothermal-plant.png",
             priority = "high",
             width = 384,
             height = 384,
@@ -9681,7 +9681,7 @@ fluid_boxes =
         },
         west =
         {
-            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/geothermal-plant.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/east-west-geothermal-plant.png",
             priority = "high",
             width = 384,
             height = 384,

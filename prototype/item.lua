@@ -1910,7 +1910,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
     subgroup = "pm-monazite-la",
-    order = "b",
+    order = "d",
     stack_size = 150
   },
   {
@@ -1919,7 +1919,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
     subgroup = "pm-monazite-la",
-    order = "d",
+    order = "e",
     stack_size = 200
   },
   {
@@ -1928,7 +1928,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
     subgroup = "pm-monazite-la",
-    order = "e",
+    order = "f",
     stack_size = 250
   },
   {
@@ -1937,7 +1937,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
     subgroup = "pm-monazite-la",
-    order = "f",
+    order = "g",
     stack_size = 300
   },
   {
@@ -1946,7 +1946,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/neodymium-magnet.png",
     subgroup = "pm-monazite-la",
-    order = "g",
+    order = "h",
     stack_size = 50
   },
 
