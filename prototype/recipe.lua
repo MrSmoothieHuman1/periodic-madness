@@ -5527,9 +5527,9 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("iron-plate", 3),
+        PM.ingredient("iron-plate", 4),
         PM.ingredient("pm-strontium-ore", 2),
-        PM.ingredient("pm-molten-manganese", 1, "fluid"),
+        PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
         PM.ingredient("pm-carbon", 6)
     },
     results =
@@ -5580,7 +5580,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ferrite-magnet.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
@@ -5612,7 +5612,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ferrite-magnet.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
@@ -5643,7 +5643,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ferrite-magnet.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
@@ -5674,7 +5674,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ferrite-magnet.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
@@ -5705,7 +5705,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/neodymium-magnet.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
@@ -5739,7 +5739,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/neodymium-magnet.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
@@ -5772,7 +5772,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/neodymium-magnet.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33

@@ -1881,7 +1881,7 @@ data:extend({
     type = "item",
     name = "pm-ferrite-magnet",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ferrite-magnet.png",
     subgroup = "pm-monazite-la",
     order = "a",
     stack_size = 50
@@ -1944,7 +1944,7 @@ data:extend({
     type = "item",
     name = "pm-neodymium-magnet",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/neodymium-magnet.png",
     subgroup = "pm-monazite-la",
     order = "g",
     stack_size = 50
