@@ -5592,7 +5592,7 @@ data:extend({
     allow_productivity = true,
     ingredients = 
     {
-        PM.ingredient("pm-monazite-chunks", 12),
+        PM.ingredient("pm-crushed-monazite", 12),
         PM.ingredient("pm-ferrite-magnet", 1)
     },
     results = 
@@ -5693,6 +5693,106 @@ data:extend({
     {
         PM.product("pm-pure-monazite", 6),
         PM.catalyst_chance("pm-ferrite-magnet", 4, 0.9, 4)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-neodymium-low-seperated-monazite",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 10,
+    category = "centrifuging",
+    subgroup = "pm-monazite-la",
+    order = "h",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-crushed-monazite", 12),
+        PM.ingredient("pm-neodymium-magnet", 1)
+    },
+    results = 
+    {
+        PM.product("pm-low-seperated-monazite", 10),
+        PM.product_range("stone", 2, 6),
+        PM.catalyst_chance("pm-neodymium-magnet", 1, 0.93, 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-neodymium-high-seperated-monazite",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 12,
+    category = "centrifuging",
+    subgroup = "pm-monazite-la",
+    order = "i",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-low-seperated-monazite", 10),
+        PM.ingredient("pm-neodymium-magnet", 2)
+    },
+    results =
+    {
+        PM.product("pm-high-seperated-monazite", 8),
+        PM.catalyst_chance("pm-neodymium-magnet", 2, 0.96, 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-neodymium-pure-monazite",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 14,
+    category = "centrifuging",
+    subgroup = "pm-monazite-la",
+    order = "j",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-high-seperated-monazite", 8),
+        PM.ingredient("pm-neodymium-magnet", 3)
+    },
+    results =
+    {
+        PM.product("pm-pure-monazite", 6),
+        PM.catalyst_chance("pm-neodymium-magnet", 3, 0.99, 3)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

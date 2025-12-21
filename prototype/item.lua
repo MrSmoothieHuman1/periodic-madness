@@ -1940,6 +1940,15 @@ data:extend({
     order = "f",
     stack_size = 300
   },
+  {
+    type = "item",
+    name = "pm-neodymium-magnet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-monazite-la",
+    order = "g",
+    stack_size = 50
+  },
 
   {
     type = "item",
