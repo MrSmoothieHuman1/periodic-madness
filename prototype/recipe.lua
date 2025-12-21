@@ -5792,6 +5792,7 @@ data:extend({
     results =
     {
         PM.product("pm-pure-monazite", 6),
+        PM.product_range_chance("pm-trace-thorium", 1, 2, 0.75),
         PM.catalyst_chance("pm-neodymium-magnet", 3, 0.99, 3)
     }
   },
