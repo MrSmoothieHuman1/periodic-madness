@@ -10539,21 +10539,16 @@ fluid_boxes =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center.png",
-          width = 320,
-          height = 320,
-          frame_count = 54,
-          line_length = 7,
+          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
+          width = 384,
+          height = 384,
           animation_speed = 0.2,
-          scale = 0.625,
+          scale = 0.5,
         },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
           width = 320,
           height = 320,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 54,
           draw_as_shadow = true,
           shift = util.by_pixel(10, 0),
           scale = 0.625,
@@ -10565,21 +10560,15 @@ fluid_boxes =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-off.png",
-          width = 320,
-          height = 320,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 54,
-          scale = 0.625,
+          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
+          width = 384,
+          height = 384,
+          scale = 0.5,
         },
         {
           filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
           width = 320,
           height = 320,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 54,
           shift = util.by_pixel(10, 0),
           draw_as_shadow = true,
           scale = 0.5,
