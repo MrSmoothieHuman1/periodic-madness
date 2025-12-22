@@ -9561,7 +9561,7 @@ fluid_boxes =
     energy_source =
     {
       type = "electric",
-      usage_priority = "secondary-output",
+      usage_priority = "solar",
     },
     stateless_visualisation =
     {
