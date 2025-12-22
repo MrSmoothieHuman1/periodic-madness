@@ -618,8 +618,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-stainless-steel-processing",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/stainless-steel-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-stainless-steel-alloy"),

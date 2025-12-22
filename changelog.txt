@@ -22,6 +22,9 @@ Date: 2025-19-12
     - Added Lutetium.
     - Added Thorium.
 
+  Changes:
+    - Updated the two steel items graphics and their technology icons.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.000
 Date: 2025-19-12

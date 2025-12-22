@@ -410,5 +410,4 @@ data.raw["item"]["steel-plate"].pictures =
 {
   {filename = "__periodic-madness__/graphics/icons/plates/steel-plate.png", size = 64, scale = 0.5},
   {filename = "__periodic-madness__/graphics/icons/plates/steel-plate-2.png", size = 64, scale = 0.5},
-  {filename = "__periodic-madness__/graphics/icons/plates/steel-plate-3.png", size = 64, scale = 0.5},
 }
