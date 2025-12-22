@@ -9712,7 +9712,7 @@ fluid_boxes =
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},
     damaged_trigger_effect = hit_effects.entity(),
-    fast_replaceable_group = "fusion-generator",
+    fast_replaceable_group = "pm-geothermal-generator",
     perceived_performance = {minimum = 0.25, performance_to_activity_rate = 2.0},
     vehicle_impact_sound = sounds.generic_impact,
     energy_source =
