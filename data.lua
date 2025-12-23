@@ -120,6 +120,7 @@ require("prototype.elements.054-xenon")
 require("prototype.elements.086-radon")
 require("prototype.elements.090-thorium")
 require("prototype.elements.058-cerium")
+require("prototype.elements.059-praseodymium")
 
 require("prototype.damagetypes")
 

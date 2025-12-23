@@ -5824,7 +5824,7 @@ data:extend({
     {
         PM.ingredient("pm-pure-bastnasite", 6),
         PM.ingredient("pm-hydrochloric-acid", 25, "fluid"),
-        PM.ingredient("water", 30, "fluid"),
+        PM.ingredient("pm-carbon-dioxide-gas", 30, "fluid"),
         PM.ingredient("sulfuric-acid", 12.5, "fluid")
     },
     results =

@@ -7248,7 +7248,12 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-ammonium-nitrate"),
-        
+        PM.unlock_recipe("pm-mixed-praseodymium-deposit"),
+        PM.unlock_recipe("pm-mixed-praseodymium-deposit-seperation"),
+        PM.unlock_recipe("pm-75-to-pure-praseodymium-deposit"),
+        PM.unlock_recipe("pm-50-to-75-praseodymium-deposit"),
+        PM.unlock_recipe("pm-25-to-50-praseodymium-deposit"),
+        PM.unlock_recipe("pm-praseodymium"),
     },
     prerequisites = {"pm-bastnasite-processing"},
     unit =
