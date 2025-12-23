@@ -5805,7 +5805,8 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-lanthanum-ore", 16),
-        PM.ingredient("pm-chromic-acid", 50, "fluid")
+        PM.ingredient("pm-chromic-acid", 50, "fluid"),
+        PM.ingredient("pm-hydrogen-fluoride", 2.5, "fluid")
     },
     results =
     {
@@ -5836,17 +5837,19 @@ data:extend({
    type = "recipe",
    name = "pm-roasted-bastnasite",
    energy_required = 16,
-   category = "smelting", --should be in one the new furnaces
+   category = "pm-moltening", --should be in one the new furnaces
    allow_productivity = true,
    main_product = "pm-roasted-bastnasite",
    ingredients =
    {
-       PM.ingredient("pm-leached-bastnasite", 4)
+       PM.ingredient("pm-leached-bastnasite", 4),
+       PM.ingredient("pm-trichlorosilane", 7.5, "fluid")
    },
    results =
    {
        PM.product("pm-roasted-bastnasite", 3),
-       PM.product_range("pm-patina", 2, 4)
+       PM.product_range("pm-patina", 2, 4),
+       PM.product_chance("pm-ferrosilicon", 1, 0.66)
    }
   },
 } --[[@as data.RecipePrototype[] ]])
