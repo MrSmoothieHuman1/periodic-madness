@@ -21,9 +21,18 @@ Date: 2025-19-12
     - Added Ytterbium.
     - Added Lutetium.
     - Added Thorium.
+    - Added the lanthanide science pack, which requires an entirely new lab and any research past lanthanides now requires double of TM/ATM/AATM science!
+    - Speaking about what i just spoke, added the final tier of labs!
+    - Added thorium power.
+    - Added the advanced recipe for yttrium. Yes it took this long to get to where you unlock it!
+    - Added YAG:Ce lasers, which act as productivity modules in electronic laser etchers, with an even bigger energy cost.
+    - Finally PM-ified the spidertron.
+    - Added advanced LDS recipes.
+    - Added the final tier of science recipes, which makes use of a lot more elements ;)
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
+    - Moved noble gas producitvity research to be behind lathanides.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.005
