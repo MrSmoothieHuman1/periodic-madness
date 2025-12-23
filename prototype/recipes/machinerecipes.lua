@@ -785,8 +785,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      PM.ingredient("pm-heating-plating", 40),
-      PM.ingredient("pm-gold-plate", 50),
+      PM.ingredient("pm-heating-plating", 25),
+      PM.ingredient("pm-gold-plate", 5),
+      PM.ingredient("pm-fluid-circuit", 2),
       PM.ingredient("heat-exchanger", 1)
     },
     results =

@@ -26,6 +26,68 @@ Date: 2025-19-12
     - Updated the two steel items graphics and their technology icons.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.005
+Date: 2025-23-12
+  The christmas eve eve miracle! bugfixes! Update:
+
+  Changes:
+    - PM-ified the recipes for heat exchanger 1's and steam turbines.
+    - Lowered the cost of heat exchanger 2's.
+    - Lowered the amount of power tidal plants make from 330kW to 250kW.
+
+  Fixes:
+    - Fixed ethylolamine not outputting the right amount of catalyst containers.
+    - Fixed yttrium not removing all catalyst containers from productivity.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.004
+Date: 2025-22-12
+  The i forgot i made them solars then EEI's then solars Update:
+
+  Fixes:
+    - Fixed tidal power plants not actually producing power.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.003
+Date: 2025-21-12
+  The old chlorine ways but not really Update:
+
+  Additons:
+    - Added a water electrolysis recipe that only takes water as an input, but has solid byproducts.
+
+  Fixes:
+    - Fixed "Research with" achivements all checking for advanced-advanced TM.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.002
+Date: 2025-19-12
+  The boulder has already begun rolling to 0.9 Update:
+
+  Additons:
+    - Added back the platinum water electrolysis recipe, unlocked at platinum processing. It now also outputs platinum.
+    - Added nitrobenzene processing, as an allegory to octane fuels! its unlocked at alkali metals and is the advanced way to make burning oil.
+
+  Changes:
+    - Removed the acidic group and moved all of its recipes into the existing groups.
+    - Stopped hiding the acidic group recipes.
+    - Added a recipe icon for water-mercury electrolysis.
+    - Lowered amount of mercury needed for water-mercury electrolysis.
+    - Made mixing tanks fast-replaceable and upgradeable.
+
+  Fixes:
+    - Fixed the mixing tank 3 turning into the mixing tank 2 when picked up.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.001
+Date: 2025-19-12
+  The "improve it! no not like that!" Update:
+
+  Changes:
+    - Changed solid sodium hydroxide seawater to take 1 plate instead of 2, and to use nickel.
+    - Changed crafting time of seawater electrolysis from 2s to 1s.
+    - Updated the space science pack graphics.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.000
 Date: 2025-19-12
   The ONE place that hasn't been corrupted by autism... SPACE! Update:

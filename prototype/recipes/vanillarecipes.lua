@@ -863,6 +863,20 @@ data.raw["recipe"]["cargo-landing-pad"].ingredients =
     PM.ingredient("pm-advanced-processing-unit", 15),
     PM.ingredient("pm-high-density-structure", 5)
 }
+data.raw["recipe"]["heat-exchanger"].ingredients =
+{
+    PM.ingredient("pm-heavyweight-panelling", 12),
+    PM.ingredient("pm-heating-plating", 6),
+    PM.ingredient("pm-corrosion-resistant-tubing", 8),
+    PM.ingredient("pm-fluid-circuit", 1)
+}
+data.raw["recipe"]["steam-turbine"].ingredients =
+{
+    PM.ingredient("engine-unit", 2),
+    PM.ingredient("pm-brass-cog", 4),
+    PM.ingredient("pm-air-filter", 2),
+    PM.ingredient("pm-corrosion-resistant-tubing", 6),
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15

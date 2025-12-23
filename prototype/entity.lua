@@ -9555,7 +9555,7 @@ fluid_boxes =
     {
         {area = {{-1.4, -1.4}, {1.4, 1.4}},  required_tiles = {layers = {water_tile = true}},  colliding_tiles = {layers = {ground_tile = true}}, remove_on_collision = true},
     },
-    production = "330kW",
+    production = "250kW",
     performance_at_day = 1,
     performance_at_night = 1,
     energy_source =

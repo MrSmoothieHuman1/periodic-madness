@@ -101,8 +101,8 @@ data:extend({
     results =
     {
       PM.product("pm-hydroflouric-acid", 20, "fluid"),
-      PM.catalyst_chance("pm-palladium-catalyst", 2, 0.8, 1),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 1)
+      PM.catalyst_chance("pm-palladium-catalyst", 2, 0.8, 2),
+      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2)
     }
   } --[[@as data.RecipePrototype]],
   {
