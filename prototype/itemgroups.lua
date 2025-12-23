@@ -1211,7 +1211,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-bastanite-la",
+    name = "pm-bastnasite-la",
     group = "pm-lathanides",
     order = "b",
   },

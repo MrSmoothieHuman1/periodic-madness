@@ -5818,6 +5818,7 @@ data:extend({
     energy_required = 12,
     category = "pm-mixing",
     allow_productivity = true,
+    main_product = "pm-leached-bastnasite",
     ingredients =
     {
         PM.ingredient("pm-pure-bastnasite", 6),
@@ -5837,14 +5838,15 @@ data:extend({
    energy_required = 16,
    category = "smelting", --should be in one the new furnaces
    allow_productivity = true,
+   main_product = "pm-roasted-bastnasite",
    ingredients =
    {
        PM.ingredient("pm-leached-bastnasite", 4)
    },
-   results = 
+   results =
    {
        PM.product("pm-roasted-bastnasite", 3),
-       PM.product_chance("pm-patina", 2, 4)
+       PM.product_range("pm-patina", 2, 4)
    }
   },
 } --[[@as data.RecipePrototype[] ]])

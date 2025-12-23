@@ -137,8 +137,8 @@ data:extend({
     results =
     {
       PM.product_range("pm-yttrium-oxide", 1, 3),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 4, 0.85, 2),
-      PM.catalyst_chance("pm-catalyst-container", 4, 0.15, 2),
+      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 4, 0.85, 4),
+      PM.catalyst_chance("pm-catalyst-container", 4, 0.15, 4),
       PM.product_chance("pm-flourine", 5, 0.456)
     }
   } --[[@as data.RecipePrototype]],

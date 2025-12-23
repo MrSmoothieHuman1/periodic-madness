@@ -7185,9 +7185,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        PM.unlock_recipe("pm-pure-bastasnite"),
+        PM.unlock_recipe("pm-pure-bastnasite"),
         PM.unlock_recipe("pm-leached-bastnasite"),
-        PM.unlock_recipe("pm-roasted-bastansite")
+        PM.unlock_recipe("pm-roasted-bastnasite")
     },
     prerequisites = {"pm-drilling-fluid"},
     unit =
@@ -7216,8 +7216,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-bastnasite-ce"),
+        PM.unlock_recipe("pm-cerium-dioxide"),
+        PM.unlock_recipe("pm-cerium")
     },
-    prerequisites = {"pm-bastansite-processing"},
+    prerequisites = {"pm-bastnasite-processing"},
     unit =
     {
       count = 600,
@@ -7245,7 +7248,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-bastansite-processing"},
+    prerequisites = {"pm-bastnasite-processing"},
     unit =
     {
       count = 600,
@@ -7273,7 +7276,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-bastansite-processing"},
+    prerequisites = {"pm-bastnasite-processing"},
     unit =
     {
       count = 600,
@@ -7301,7 +7304,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-bastansite-processing"},
+    prerequisites = {"pm-bastnasite-processing"},
     unit =
     {
       count = 600,
@@ -7329,7 +7332,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-bastansite-processing"},
+    prerequisites = {"pm-bastnasite-processing"},
     unit =
     {
       count = 600,
@@ -7357,7 +7360,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-bastansite-processing"},
+    prerequisites = {"pm-bastnasite-processing"},
     unit =
     {
       count = 600,
@@ -7913,6 +7916,35 @@ data:extend({
         type = "craft-item",
         item = "pm-trace-thorium",
         amount = 20
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-advanced-yttrium-extraction",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-lathanide-science-pack"},
+    unit =
+    {
+      count = 850,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lathanide-science-pack", 1}
+      },
+      time = 180
     }
   },
 

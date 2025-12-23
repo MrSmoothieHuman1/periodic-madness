@@ -9649,7 +9649,7 @@ fluid_boxes =
         {flow_direction="input-output", direction = defines.direction.east --[[@as int]], position = {2.5, -2.5}} --east top
       },
     },
-    max_fluid_usage = 0.5,
+    max_fluid_usage = 0.25,
     graphics_set =
     {
       plasma_category = "pm-geothermal-steam",
@@ -9721,7 +9721,7 @@ fluid_boxes =
       usage_priority = "secondary-output",
       output_flow_limit = "1MW", -- This is used to define max power output.
     },
-    max_fluid_usage = 0.25, --geothermal outputs 30/s, this eats 15/s
+    max_fluid_usage = 0.125, --geothermal outputs 15/s, this eats 7.5/s
     graphics_set =
     {
         north_graphics_set =

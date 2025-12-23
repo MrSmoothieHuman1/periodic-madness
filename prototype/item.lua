@@ -1949,6 +1949,33 @@ data:extend({
     order = "h",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-pure-bastnasite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-bastnasite-la",
+    order = "a",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-leached-bastnasite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-bastnasite-la",
+    order = "b",
+    stack_size = 250
+  },
+  {
+    type = "item",
+    name = "pm-roasted-bastnasite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    subgroup = "pm-bastnasite-la",
+    order = "c",
+    stack_size = 300
+  },
 
   {
     type = "item",
