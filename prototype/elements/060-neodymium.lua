@@ -135,7 +135,7 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-neodymium-oxide", 4),
-            PM.ingredient("pm-lithium-ore", 4),
+            PM.ingredient("pm-lithium-ore", 2),
         },
         results =
         {
