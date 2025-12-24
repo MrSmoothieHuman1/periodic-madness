@@ -197,7 +197,7 @@ data:extend({
         results =
         {
             PM.product_range("pm-barium-tailings", 1, 8, "fluid"),
-            PM.product_chance("pm-barium-froth", 5, 0.94, "fluid")
+            PM.product_chance("pm-barium-froth", 5, 0.95, "fluid")
         }
     },
     {

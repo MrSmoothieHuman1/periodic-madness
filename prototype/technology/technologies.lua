@@ -7282,6 +7282,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-neodymium-frothing"),
+        PM.unlock_recipe("pm-neodymium-concentrate"),
+        PM.unlock_recipe("pm-neodymium-oxide"),
+        PM.unlock_recipe("pm-molten-neodymium"),
+        PM.unlock_recipe("pm-neodymium-plate"),
+        PM.unlock_recipe("pm-neodymium-tailings-looping")
     },
     prerequisites = {"pm-bastnasite-processing"},
     unit =

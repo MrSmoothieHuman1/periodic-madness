@@ -78,7 +78,7 @@ data:extend({
         type = "recipe",
         name = "pm-mixed-praseodymium-deposit",
         enabled = false,
-        energy_required = 15,
+        energy_required = 10,
         category = "pm-leaching",
         ingredients =
         {
@@ -109,14 +109,15 @@ data:extend({
             PM.product_chance("pm-pure-praseodymium-deposit", 1, 0.25),
             PM.product_chance("pm-75-praseodymium-deposit", 1, 0.5),
             PM.product("pm-50-praseodymium-deposit", 1),
-            PM.product("pm-25-praseodymium-deposit", 2)
+            PM.product("pm-25-praseodymium-deposit", 2),
+            PM.product_chance("pm-neodymium-oxide", 1, 0.75)
         }
     },
     {
         type = "recipe",
         name = "pm-75-to-pure-praseodymium-deposit",
         enabled = false,
-        energy_required = 8,
+        energy_required = 5,
         category = "pm-crystallisation",
         subgroup = "pm-praseodymium-la",
         order = "c",
@@ -141,7 +142,7 @@ data:extend({
         type = "recipe",
         name = "pm-50-to-75-praseodymium-deposit",
         enabled = false,
-        energy_required = 8,
+        energy_required = 5,
         category = "pm-crystallisation",
         subgroup = "pm-praseodymium-la",
         order = "d",
@@ -166,7 +167,7 @@ data:extend({
         type = "recipe",
         name = "pm-25-to-50-praseodymium-deposit",
         enabled = false,
-        energy_required = 8,
+        energy_required = 5,
         category = "pm-crystallisation",
         subgroup = "pm-praseodymium-la",
         order = "e",
@@ -191,7 +192,7 @@ data:extend({
         type = "recipe",
         name = "pm-praseodymium",
         enabled = false,
-        energy_required = 4,
+        energy_required = 2.5,
         category = "chemistry",
         main_product = "pm-praseodymium",
         ingredients =
