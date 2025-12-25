@@ -36,12 +36,12 @@ data:extend({
         main_product = "pm-neodymium-146",
         ingredients =
         {
-            PM.ingredient("pm-roasted-bastnasite", 14),
+            PM.ingredient("pm-roasted-bastnasite", 8),
             PM.ingredient("pm-ion-exchange-beads", 4)
         },
         results =
         {
-            PM.product_range("pm-roasted-bastnasite", 8, 12),
+            PM.product_range("pm-roasted-bastnasite", 4, 6),
             PM.catalyst("pm-ion-exchange-beads", 3, 3),
             PM.catalyst_chance("pm-mixed-praseodymium-deposit", 2, 0.25, 1),
             PM.product_chance("pm-neodymium-146", 2, 0.032)
