@@ -7316,6 +7316,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-neodymium-146"),
+        PM.unlock_recipe("pm-neodymium-147"),
+        PM.unlock_recipe("pm-promethium-147")
     },
     prerequisites = {"pm-bastnasite-processing"},
     unit =

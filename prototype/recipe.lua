@@ -5848,7 +5848,7 @@ data:extend({
    results =
    {
        PM.product("pm-roasted-bastnasite", 3),
-       PM.product_range("pm-patina", 2, 4),
+       PM.product_range("pm-patina", 1, 4),
        PM.product_chance("pm-ferrosilicon", 1, 0.66)
    }
   },
