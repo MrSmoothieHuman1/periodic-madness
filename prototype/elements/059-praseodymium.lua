@@ -61,7 +61,7 @@ data:extend({
         {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
       },
       subgroup = "pm-praseodymium-la",
-      order = "d",
+      order = "e",
       stack_size = 100
     },
     {
@@ -70,7 +70,7 @@ data:extend({
       icon_size = 64,
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
       subgroup = "pm-praseodymium-la",
-      order = "e",
+      order = "f",
       stack_size = 200
     },
 

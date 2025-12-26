@@ -123,6 +123,7 @@ require("prototype.elements.058-cerium")
 require("prototype.elements.059-praseodymium")
 require("prototype.elements.060-neodymium")
 require("prototype.elements.061-promethium")
+require("prototype.elements.062-samarium")
 
 require("prototype.damagetypes")
 

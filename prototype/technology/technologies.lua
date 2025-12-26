@@ -7347,6 +7347,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-mixed-samarium-deposit"),
+        PM.unlock_recipe("pm-mixed-samarium-deposit-seperation"),
+        PM.unlock_recipe("pm-medium-seperated-samarium-deposit"),
+        PM.unlock_recipe("pm-highly-seperated-samarium-deposit"),
+        PM.unlock_recipe("pm-samarium-oxide"),
+        PM.unlock_recipe("pm-samarium"),
     },
     prerequisites = {"pm-bastnasite-processing"},
     unit =
