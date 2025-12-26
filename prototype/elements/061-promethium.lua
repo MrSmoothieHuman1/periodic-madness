@@ -68,7 +68,7 @@ data:extend({
         name = "pm-promethium-147",
         enabled = false,
         energy_required = 10,
-        category = "centrifuging", --should be in beta-inator
+        category = "pm-beta-decay",
         ingredients =
         {
             PM.ingredient("pm-neodymium-147", 4)
@@ -77,5 +77,5 @@ data:extend({
         {
             PM.product("pm-promethium-147", 2),
         }
-    }
+    },
 })
