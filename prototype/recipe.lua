@@ -5810,7 +5810,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-pure-bastnasite", 8)
+        PM.product("pm-pure-bastnasite", 10)
     }
   },
   {
@@ -5822,15 +5822,15 @@ data:extend({
     main_product = "pm-leached-bastnasite",
     ingredients =
     {
-        PM.ingredient("pm-pure-bastnasite", 6),
+        PM.ingredient("pm-pure-bastnasite", 10),
         PM.ingredient("pm-hydrochloric-acid", 25, "fluid"),
         PM.ingredient("pm-carbon-dioxide-gas", 30, "fluid"),
         PM.ingredient("sulfuric-acid", 12.5, "fluid")
     },
     results =
     {
-        PM.product("pm-leached-bastnasite", 4),
-        PM.product_range("pm-calcium-chloride", 1, 5),
+        PM.product("pm-leached-bastnasite", 8),
+        PM.product_range("pm-calcium-chloride", 0, 4),
     }
   },
   {
@@ -5842,12 +5842,12 @@ data:extend({
    main_product = "pm-roasted-bastnasite",
    ingredients =
    {
-       PM.ingredient("pm-leached-bastnasite", 4),
+       PM.ingredient("pm-leached-bastnasite", 8),
        PM.ingredient("pm-trichlorosilane", 7.5, "fluid")
    },
    results =
    {
-       PM.product("pm-roasted-bastnasite", 3),
+       PM.product("pm-roasted-bastnasite", 6),
        PM.product_range("pm-patina", 1, 3),
        PM.product_chance("pm-ferrosilicon", 1, 0.66)
    }
