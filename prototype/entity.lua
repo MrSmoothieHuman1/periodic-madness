@@ -10669,10 +10669,11 @@ fluid_boxes =
     },
     crafting_categories = {"pm-alpha-decay"},
     allowed_effects = PM.all_effects(),
+    allowed_module_categories = {"speed", "efficiency"},
     module_slots = 2,
     crafting_speed = 1,
     result_inventory_size = 2,
-    source_inventory_size = 1,
+    source_inventory_size = 0,
     energy_usage = "450kW",
     energy_source =
     {
@@ -10683,23 +10684,23 @@ fluid_boxes =
     fluid_boxes =
     {
       {
-        production_type = "input",
+        production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 500,
-        pipe_connections = 
+        pipe_connections =
         {
           {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
-          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}}
+          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}}
         },
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 500,
-        pipe_connections = 
+        pipe_connections =
         {
-          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}},
-          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}}
+          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}},
+          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}},
         },
       },
     },
@@ -10810,10 +10811,11 @@ fluid_boxes =
     },
     crafting_categories = {"pm-beta-decay"},
     allowed_effects = PM.all_effects(),
+    allowed_module_categories = {"speed", "efficiency"},
     module_slots = 2,
     crafting_speed = 1,
     result_inventory_size = 2,
-    source_inventory_size = 1,
+    source_inventory_size = 0,
     energy_usage = "450kW",
     energy_source =
     {
@@ -10824,23 +10826,23 @@ fluid_boxes =
     fluid_boxes =
     {
       {
-        production_type = "input",
+        production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 500,
-        pipe_connections = 
+        pipe_connections =
         {
           {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
-          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}}
+          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}}
         },
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 500,
-        pipe_connections = 
+        pipe_connections =
         {
-          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}},
-          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}}
+          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}},
+          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}},
         },
       },
     },

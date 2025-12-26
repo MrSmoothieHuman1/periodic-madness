@@ -218,6 +218,8 @@ local excluded_machines =
 	["pm-electric-furnace-2"] = true,
 	["pm-electric-boiler-1"] = true,
 	["pm-electric-boiler-2"] = true,
+    ["pm-alpha-inator"] = true,
+    ["pm-beta-inator"] = true,
 }
 
 for name, machine in pairs(data.raw["furnace"]) do
