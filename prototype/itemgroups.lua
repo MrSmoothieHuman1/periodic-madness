@@ -252,6 +252,13 @@ data:extend({
     icon = "__base__/graphics/technology/research-speed.png",
     order = "cb"
   },
+  {
+    type = "item-group",
+    name = "pm-decay-chains",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    order = "x"
+  },
 
   --MARK: Intermediates
   {

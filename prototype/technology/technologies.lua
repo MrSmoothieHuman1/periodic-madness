@@ -7381,6 +7381,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-europium-trioxide-concentrate"),
+        PM.unlock_recipe("pm-europium-trioxide"),
+        PM.unlock_recipe("pm-zinc-amalgam"),
+        PM.unlock_recipe("pm-molten-europium-chloride"),
+        PM.unlock_recipe("pm-europium")
     },
     prerequisites = {"pm-bastnasite-processing"},
     unit =

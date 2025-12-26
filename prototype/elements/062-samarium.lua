@@ -21,7 +21,7 @@ data:extend({
       subgroup = "pm-samarium-la",
       order = "b",
       stack_size = 175
-    }, --sounds like a skill issue ngl
+    },
     {
       type = "item",
       name = "pm-medium-seperated-samarium-deposit",
