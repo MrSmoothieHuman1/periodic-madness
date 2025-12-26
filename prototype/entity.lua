@@ -10673,7 +10673,7 @@ fluid_boxes =
     module_slots = 2,
     crafting_speed = 1,
     result_inventory_size = 2,
-    source_inventory_size = 0,
+    source_inventory_size = 1,
     energy_usage = "450kW",
     energy_source =
     {
@@ -10815,7 +10815,7 @@ fluid_boxes =
     module_slots = 2,
     crafting_speed = 1,
     result_inventory_size = 2,
-    source_inventory_size = 0,
+    source_inventory_size = 1,
     energy_usage = "450kW",
     energy_source =
     {

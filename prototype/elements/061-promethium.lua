@@ -41,7 +41,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-roasted-bastnasite", 4, 6),
+            PM.product("pm-roasted-bastnasite", 7),
             PM.catalyst("pm-ion-exchange-beads", 3, 3),
             PM.catalyst_chance("pm-mixed-praseodymium-deposit", 2, 0.25, 1),
             PM.product_chance("pm-neodymium-146", 2, 0.032)
@@ -69,6 +69,7 @@ data:extend({
         enabled = false,
         energy_required = 10,
         category = "pm-beta-decay",
+        main_product = "pm-promethium-147",
         ingredients =
         {
             PM.ingredient("pm-neodymium-147", 4)
@@ -76,6 +77,7 @@ data:extend({
         results =
         {
             PM.product("pm-promethium-147", 2),
+            PM.product("pm-neodymium-147", 2)
         }
     },
 })
