@@ -5804,7 +5804,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-lanthanum-ore", 16),
+        PM.ingredient("pm-lanthanum-ore", 14),
         PM.ingredient("pm-chromic-acid", 50, "fluid"),
         PM.ingredient("pm-hydrogen-flouride", 2.5, "fluid")
     },

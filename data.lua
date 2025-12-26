@@ -492,7 +492,9 @@ data:extend({
     {
       hardness = 1,
       mining_particle = "copper-ore-particle",
-      mining_time = 1,
+      mining_time = 2,
+      fluid_amount = 25,
+      required_fluid = "pm-drilling-fluid",
       result = "pm-lanthanum-ore"
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
