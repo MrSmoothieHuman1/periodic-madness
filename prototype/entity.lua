@@ -10576,6 +10576,288 @@ fluid_boxes =
       }
     }
   }--[[@as data.LabPrototype]],
+  {
+    type = "furnace",
+    name = "pm-alpha-inator",
+    icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
+    icon_size = 64,
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 0.33, result = "pm-electronic-laser-etcher" },
+    max_health = 800,
+    corpse = "pm-electronic-laser-etcher",
+    dying_explosion = "assembling-machine-1-explosion",
+    resistances =
+    {
+      {
+        type = "impact",
+        percent = 85
+      },
+      {
+        type = "fire",
+        percent = 85
+      }
+    },
+    collision_box = { { -1.85, -1.85 }, { 1.85, 1.85 } },
+    selection_box = { { -2, -2 }, { 2, 2 } },
+    alert_icon_shift = util.by_pixel(0, -12),
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
+    graphics_set =
+    {
+    status_colors = pm_diode_status_colors(),
+    animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-base.png",
+          width = 256,
+          height = 278,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 48,
+          animation_speed = 0.4,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-glass.png",
+          width = 256,
+          height = 278,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 48,
+          tint = {0, 0, 0, 0.45},
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-fans.png",
+          width = 256,
+          height = 278,
+          frame_count = 48,
+          line_length = 8,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-platform.png",
+          width = 256,
+          height = 278,
+          frame_count = 48,
+          line_length = 8,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-lasers.png",
+          width = 256,
+          height = 278,
+          frame_count = 48,
+          line_length = 8,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-shadow.png",
+          width = 256,
+          height = 278,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 48,
+          draw_as_shadow = true,
+          shift = util.by_pixel(110, 0),
+          scale = 0.5
+        }
+      }
+    },
+    },
+    crafting_categories = {"pm-alpha-decay"},
+    allowed_effects = PM.all_effects(),
+    module_slots = 2,
+    crafting_speed = 1,
+    result_inventory_size = 2,
+    source_inventory_size = 1,
+    energy_usage = "450kW",
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = {pollution = 1},
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections = 
+        {
+          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
+          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}}
+        },
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections = 
+        {
+          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}},
+          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}}
+        },
+      },
+    },
+    working_sound =
+      {
+        sound =
+        {
+          {
+            filename = "__base__/sound/steel-furnace.ogg",
+            volume = 0.5
+          }
+        },
+      audible_distance_modifier = 0.5,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+  }--[[@as data.AssemblingMachinePrototype]],
+  {
+    type = "furnace",
+    name = "pm-beta-inator",
+    icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
+    icon_size = 64,
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 0.33, result = "pm-electronic-laser-etcher" },
+    max_health = 800,
+    corpse = "pm-electronic-laser-etcher",
+    dying_explosion = "assembling-machine-1-explosion",
+    resistances =
+    {
+      {
+        type = "impact",
+        percent = 85
+      },
+      {
+        type = "fire",
+        percent = 85
+      }
+    },
+    collision_box = { { -1.85, -1.85 }, { 1.85, 1.85 } },
+    selection_box = { { -2, -2 }, { 2, 2 } },
+    alert_icon_shift = util.by_pixel(0, -12),
+    circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["assembling-machine"],
+    graphics_set =
+    {
+    status_colors = pm_diode_status_colors(),
+    animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-base.png",
+          width = 256,
+          height = 278,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 48,
+          animation_speed = 0.4,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-glass.png",
+          width = 256,
+          height = 278,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 48,
+          tint = {0, 0, 0, 0.45},
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-fans.png",
+          width = 256,
+          height = 278,
+          frame_count = 48,
+          line_length = 8,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-platform.png",
+          width = 256,
+          height = 278,
+          frame_count = 48,
+          line_length = 8,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-lasers.png",
+          width = 256,
+          height = 278,
+          frame_count = 48,
+          line_length = 8,
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-shadow.png",
+          width = 256,
+          height = 278,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 48,
+          draw_as_shadow = true,
+          shift = util.by_pixel(110, 0),
+          scale = 0.5
+        }
+      }
+    },
+    },
+    crafting_categories = {"pm-beta-decay"},
+    allowed_effects = PM.all_effects(),
+    module_slots = 2,
+    crafting_speed = 1,
+    result_inventory_size = 2,
+    source_inventory_size = 1,
+    energy_usage = "450kW",
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = {pollution = 1},
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections = 
+        {
+          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
+          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}}
+        },
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections = 
+        {
+          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}},
+          {flow_direction="input-output", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}}
+        },
+      },
+    },
+    working_sound =
+      {
+        sound =
+        {
+          {
+            filename = "__base__/sound/steel-furnace.ogg",
+            volume = 0.5
+          }
+        },
+      audible_distance_modifier = 0.5,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+  }--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions

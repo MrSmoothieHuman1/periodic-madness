@@ -142,6 +142,14 @@ data:extend({
     type = "recipe-category",
     name = "pm-circuit-boards"
   },
+  {
+    type = "recipe-category",
+    name = "pm-alpha-decay"
+  },
+  {
+    type = "recipe-category",
+    name = "pm-beta-decay"
+  },
   -- For the consumption of reactor coolant
 	{
 		type = "recipe-category",
