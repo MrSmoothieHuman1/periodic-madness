@@ -2190,6 +2190,26 @@ data:extend({
     flow_color = {r = 0.7, g = 0.7, b = 0.85},
     auto_void = true,
   },
+  {
+    type = "fluid",
+    name = "pm-o-phenylenediamine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
+    default_temperature = 15,
+    base_color = {r = 0.7, g = 0.7, b = 0.85},
+    flow_color = {r = 0.7, g = 0.7, b = 0.85},
+    auto_void = true,
+  },
+  {
+    type = "fluid",
+    name = "pm-1-10-phenanthroline",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
+    default_temperature = 15,
+    base_color = {r = 0.7, g = 0.7, b = 0.85},
+    flow_color = {r = 0.7, g = 0.7, b = 0.85},
+    auto_void = true,
+  },
 
 	{
 		type = "fluid",

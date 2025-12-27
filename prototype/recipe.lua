@@ -5726,6 +5726,7 @@ data:extend({
     {
         PM.product("pm-low-seperated-monazite", 10),
         PM.product_range("stone", 2, 6),
+        PM.product_range_chance("pm-yttrium-ore", 1, 3, 0.45),
         PM.catalyst_chance("pm-neodymium-magnet", 1, 0.93, 1)
     }
   },
@@ -5852,4 +5853,44 @@ data:extend({
        PM.product_chance("pm-ferrosilicon", 1, 0.66)
    }
   },
+  {
+    type = "recipe",
+    name = "pm-o-phenylenediamine",
+    enabled = false,
+    energy_required = 6,
+    category = "oil-processing",
+    allow_productivity = true,
+    main_product = "pm-o-phenylenediamine",
+    ingredients = 
+    {
+        PM.ingredient("pm-nitrobenzene", 15, "fluid"),
+        PM.ingredient("pm-ammonia-gas", 30, "fluid"),
+        PM.ingredient("pm-yttrium-catalyst", 2)
+    },
+    results = 
+    {
+        PM.product("pm-o-phenylenediamine", 20, "fluid"),
+        PM.catalyst("pm-ammonia-gas", 15, 15, "fluid"),
+        PM.catalyst_chance("pm-yttrium-catalyst", 2, 0.75, 2),
+        PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-1-10-phenanthroline",
+    enabled = false,
+    energy_required = 24,
+    category = "chemistry",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-o-phenylenediamine", 20, "fluid"),
+        PM.ingredient("pm-ethylene-glycol", 40, "fluid"),
+        PM.ingredient("pm-arsenic-ore", 3)
+    },
+    results =
+    {
+        PM.product("pm-1-10-phenanthroline", 30, "fluid")
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

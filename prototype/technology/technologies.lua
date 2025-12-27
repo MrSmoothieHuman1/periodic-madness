@@ -7446,6 +7446,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-o-phenylenediamine"),
+        PM.unlock_recipe("pm-1-10-phenanthroline")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =
