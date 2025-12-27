@@ -7414,6 +7414,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-gadolinium-nitrate"),
+        PM.unlock_recipe("pm-molten-gadolinium-chloride"),
+        PM.unlock_recipe("pm-gadolinium-sponge"),
+        PM.unlock_recipe("pm-gadolinium")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =

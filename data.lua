@@ -125,6 +125,7 @@ require("prototype.elements.060-neodymium")
 require("prototype.elements.061-promethium")
 require("prototype.elements.062-samarium")
 require("prototype.elements.063-europium")
+require("prototype.elements.064-gadolinium")
 
 require("prototype.damagetypes")
 
