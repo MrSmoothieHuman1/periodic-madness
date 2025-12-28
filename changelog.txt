@@ -29,6 +29,7 @@ Date: 2025-19-12
     - Finally PM-ified the spidertron.
     - Added advanced LDS recipes.
     - Added the final tier of science recipes, which makes use of a lot more elements ;)
+    - Added asteriod mining, which has been planned since forever and lanthanides needed more unlocks! you send up a specialised drill that drops down elemental asteriod chunks, which turns into bibilical amounts of that group ore.
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
