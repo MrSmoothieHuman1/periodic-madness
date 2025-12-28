@@ -7881,6 +7881,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects = 
     {
+        PM.unlock_recipe("pm-thortveitite"),
+        PM.unlock_recipe("pm-scandium-trioxide"),
+        PM.unlock_recipe("pm-scandium-fluoride"),
+        PM.unlock_recipe("pm-scandium"),
+        PM.unlock_recipe("pm-scandium-oxide")
     },
     prerequisites = {"pm-lathanide-science-pack"},
     unit =
