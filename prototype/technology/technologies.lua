@@ -7447,7 +7447,15 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-o-phenylenediamine"),
-        PM.unlock_recipe("pm-1-10-phenanthroline")
+        PM.unlock_recipe("pm-1-10-phenanthroline"),
+        PM.unlock_recipe("pm-terbium-salts"),
+        PM.unlock_recipe("pm-terbium-salt-seperation"),
+        PM.unlock_recipe("pm-terbium-chloride-to-impure-terbium"),
+        PM.unlock_recipe("pm-terbium-bromide-to-impure-terbium"),
+        PM.unlock_recipe("pm-terbium-hydride-to-impure-terbium"),
+        PM.unlock_recipe("pm-terbium-sulfate-to-impure-terbium"),
+        PM.unlock_recipe("pm-terbium-fluoride"),
+        PM.unlock_recipe("pm-terbium"),
     },
     prerequisites = {"pm-monazite-processing"},
     unit =

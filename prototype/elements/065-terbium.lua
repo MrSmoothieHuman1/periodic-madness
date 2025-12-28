@@ -1,4 +1,76 @@
 data:extend({
+    {
+      type = "item",
+      name = "pm-terbium-salts",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "a",
+      stack_size = 100
+    },
+    {
+      type = "item",
+      name = "pm-terbium-chloride",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "b",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = "pm-terbium-bromide",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "c",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = "pm-terbium-hydride",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "d",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = "pm-terbium-sulfate",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "e",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = "pm-impure-terbium",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "f",
+      stack_size = 100
+    },
+    {
+      type = "item",
+      name = "pm-terbium-fluoride",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "g",
+      stack_size = 150
+    },
+    {
+      type = "item",
+      name = "pm-terbium",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      subgroup = "pm-terbium-la",
+      order = "h",
+      stack_size = 200
+    },
 
     {
         type = "recipe",
@@ -22,10 +94,11 @@ data:extend({
         type = "recipe",
         name = "pm-terbium-salt-seperation",
         enabled = false,
-        energy_required = 10,
+        energy_required = 8,
         category = "centrifuging",
         subgroup = "pm-terbium-la",
         order = "b",
+        main_product = "pm-terbium-chloride",
         ingredients =
         {
             PM.product("pm-terbium-salts", 8),
@@ -42,7 +115,7 @@ data:extend({
         type = "recipe",
         name = "pm-terbium-chloride-to-impure-terbium",
         enabled = false,
-        energy_required = 5,
+        energy_required = 10,
         category = "chemistry",
         subgroup = "pm-terbium-la",
         order = "c",
@@ -63,7 +136,7 @@ data:extend({
         type = "recipe",
         name = "pm-terbium-bromide-to-impure-terbium",
         enabled = false,
-        energy_required = 5,
+        energy_required = 10,
         category = "chemistry",
         subgroup = "pm-terbium-la",
         order = "d",
@@ -84,7 +157,7 @@ data:extend({
         type = "recipe",
         name = "pm-terbium-hydride-to-impure-terbium",
         enabled = false,
-        energy_required = 5,
+        energy_required = 10,
         category = "chemistry",
         subgroup = "pm-terbium-la",
         order = "e",
@@ -105,7 +178,7 @@ data:extend({
         type = "recipe",
         name = "pm-terbium-sulfate-to-impure-terbium",
         enabled = false,
-        energy_required = 5,
+        energy_required = 10,
         category = "chemistry",
         subgroup = "pm-terbium-la",
         order = "d",
@@ -113,7 +186,7 @@ data:extend({
         main_product = "pm-impure-terbium",
         ingredients =
         {
-            PM.ingredient("pm-terbium-sulfat", 4),
+            PM.ingredient("pm-terbium-sulfate", 4),
             PM.ingredient("pm-1-10-phenanthroline", 2.5, "fluid")
         },
         results =
@@ -145,6 +218,7 @@ data:extend({
         enabled = false,
         energy_required = 15,
         category = "pm-moltening",
+        main_product = "pm-terbium",
         ingredients =
         {
             PM.ingredient("pm-terbium-fluoride", 12),
@@ -153,7 +227,7 @@ data:extend({
         results = 
         {
             PM.product("pm-terbium", 12),
-            PM.catalyst_range("pm-fluorine", 6, 8, 7)
+            PM.catalyst_range("pm-flourine", 6, 8, 7)
         }
     }
 })
