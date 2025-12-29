@@ -1292,7 +1292,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-dsyprosium-la",
+    name = "pm-dysprosium-la",
     group = "pm-lathanides",
     order = "l",
   },

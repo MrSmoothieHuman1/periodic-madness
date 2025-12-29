@@ -7484,6 +7484,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-tantalum-dysprosium-crucible"),
+        PM.unlock_recipe("pm-xenotime"),
+        PM.unlock_recipe("pm-dysprosium-concentrate"),
+        PM.unlock_recipe("pm-dysprosium-fluoride"),
+        PM.unlock_recipe("pm-unprocessed-dysprosium"),
+        PM.unlock_recipe("pm-molten-dysprosium"),
+        PM.unlock_recipe("pm-cooled-dysprosium"),
+        PM.unlock_recipe("pm-dysprosium-plate")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =
