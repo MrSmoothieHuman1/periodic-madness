@@ -67,13 +67,13 @@ data:extend({
         type = "recipe",
         name = "pm-monazite-sand",
         enabled = false,
-        energy_required = 6,
+        energy_required = 4,
         category = "pm-crushing",
         ingredients =
         {
             PM.ingredient("pm-pure-monazite", 4),
-            PM.ingredient("pm-sand", 3),
-            PM.ingredient("pm-lanthanum-ore", 2),
+            PM.ingredient("pm-sand", 2),
+            PM.ingredient("pm-lanthanum-ore", 1),
         },
         results =
         {
@@ -108,7 +108,7 @@ data:extend({
         type = "recipe",
         name = "pm-washed-monazite-sand",
         enabled = false,
-        energy_required = 12,
+        energy_required = 8,
         category = "pm-washing",
         ingredients =
         {
@@ -139,8 +139,8 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-holmium-fluoride", 2, 0.075),
-            PM.product_chance("pm-holmium-chloride", 2, 0.075),
+            PM.product_chance("pm-holmium-fluoride", 2, 0.1),
+            PM.product_chance("pm-holmium-chloride", 2, 0.1),
             PM.catalyst("pm-flourine", 1, 1),
             PM.catalyst("pm-chlorine", 7.5, 7.5, "fluid")
         }
@@ -149,13 +149,13 @@ data:extend({
         type = "recipe",
         name = "pm-holmium-enriched-monazite-sand",
         enabled = false,
-        energy_required = 24,
+        energy_required = 16,
         category = "pm-mixing",
         ingredients =
         {
             PM.ingredient("pm-washed-monazite-sand", 8),
-            PM.ingredient("pm-lanthanum-ore", 3),
-            PM.ingredient("pm-zinc-plate", 2)
+            PM.ingredient("pm-lanthanum-ore", 2),
+            PM.ingredient("pm-zinc-plate", 1)
         },
         results =
         {
@@ -180,8 +180,8 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-holmium-fluoride", 2, 0.1),
-            PM.product_chance("pm-holmium-chloride", 2, 0.1),
+            PM.product_chance("pm-holmium-fluoride", 2, 0.2),
+            PM.product_chance("pm-holmium-chloride", 2, 0.2),
             PM.catalyst("pm-flourine", 1, 1),
             PM.catalyst("pm-chlorine", 15, 15, "fluid")
         }

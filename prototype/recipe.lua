@@ -5544,14 +5544,17 @@ data:extend({
     energy_required = 5,
     category = "pm-acids",
     allow_productivity = true,
-    ingredients = 
+    main_product = "pm-monazite-chunks",
+    ingredients =
     {
-        PM.ingredient("pm-lanthanum-ore", 20),
+        PM.ingredient("pm-lanthanum-ore", 16),
         PM.ingredient("pm-chromic-acid", 50, "fluid")
     },
     results =
     {
-        PM.product("pm-monazite-chunks", 12)
+        PM.product("pm-monazite-chunks", 12),
+        PM.product_chance("pm-holmium-fluoride", 1, 0.1),
+        PM.product_chance("pm-holmium-chloride", 1, 0.1)
     }
   },
   {
