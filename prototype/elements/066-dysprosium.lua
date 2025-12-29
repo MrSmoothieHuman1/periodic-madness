@@ -106,12 +106,12 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-pure-monazite", 4),
-            PM.ingredient("pm-ferrum", 6),
+            PM.ingredient("pm-ferrum", 5),
             PM.ingredient("pm-ion-exchange-beads", 6)
         },
         results =
         {
-            PM.product("pm-xenotime", 5),
+            PM.product("pm-xenotime", 6),
         }
     },
     {

@@ -7557,6 +7557,17 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-o-phenylenediamine"),
+        PM.unlock_recipe("pm-1-10-phenanthroline"),
+        PM.unlock_recipe("pm-euxenite"),
+        PM.unlock_recipe("pm-erbium-salts"),
+        PM.unlock_recipe("pm-erbium-salt-seperation"),
+        PM.unlock_recipe("pm-erbium-oxide-to-impure-erbium"),
+        PM.unlock_recipe("pm-erbium-bromide-to-impure-erbium"),
+        PM.unlock_recipe("pm-erbium-iodide-to-impure-erbium"),
+        PM.unlock_recipe("pm-erbium-fluoride"),
+        PM.unlock_recipe("pm-molten-erbium"),
+        PM.unlock_recipe("pm-erbium-plate")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =

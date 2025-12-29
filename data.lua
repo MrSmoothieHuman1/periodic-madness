@@ -130,6 +130,7 @@ require("prototype.elements.065-terbium")
 require("prototype.elements.021-scandium")
 require("prototype.elements.066-dysprosium")
 require("prototype.elements.067-holmium")
+require("prototype.elements.068-erbium")
 
 require("prototype.damagetypes")
 
