@@ -7596,6 +7596,11 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-monazite-sand"),
+        PM.unlock_recipe("pm-rhenium-platinum-thulium-centrifuging"),
+        PM.unlock_recipe("pm-yttrium-thulium-centrifuging"),
+        PM.unlock_recipe("pm-cobalt-thulium-centrifuging"),
+        PM.unlock_recipe("pm-vanadium-thulium-centrifuging"),
     },
     prerequisites = {"pm-monazite-processing"},
     unit =
