@@ -121,6 +121,7 @@ data:extend({
         energy_required = 12,
         category = "pm-mixing",
         allow_productivity = true,
+        main_product = "pm-dysprosium-concentrate",
         ingredients =
         {
             PM.ingredient("pm-xenotime", 4),
@@ -129,7 +130,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-dysprosium-concentrate", 12.5, "fluid")
+            PM.product("pm-dysprosium-concentrate", 12.5, "fluid"),
+            PM.product_chance("pm-holmium-fluoride", 1, 0.15),
+            PM.product_chance("pm-holmium-fluoride", 1, 0.15),
         }
     },
     {

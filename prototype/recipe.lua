@@ -5861,7 +5861,7 @@ data:extend({
     category = "oil-processing",
     allow_productivity = true,
     main_product = "pm-o-phenylenediamine",
-    ingredients = 
+    ingredients =
     {
         PM.ingredient("pm-nitrobenzene", 15, "fluid"),
         PM.ingredient("pm-ammonia-gas", 30, "fluid"),

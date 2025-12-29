@@ -7520,6 +7520,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-monazite-sand"),
+        PM.unlock_recipe("pm-monazite-sand-seperation"),
+        PM.unlock_recipe("pm-washed-monazite-sand"),
+        PM.unlock_recipe("pm-washed-monazite-sand-seperation"),
+        PM.unlock_recipe("pm-holmium-enriched-monazite-sand"),
+        PM.unlock_recipe("pm-holmium-enriched-monazite-sand-seperation"),
+        PM.unlock_recipe("pm-holmium-from-holmium-fluoride"),
+        PM.unlock_recipe("pm-holmium-from-holmium-chloride"),
+        PM.unlock_recipe("pm-holmium-plate")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =

@@ -11160,3 +11160,39 @@ data.raw["rocket-silo"]["rocket-silo"].custom_tooltip_fields =
     value = {"pm-tooltips.concrete-refined-concrete"}
   }
 }
+data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
+{
+  {
+    production_type = "input",
+    pipe_picture = assembler3pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 250,
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "output",
+    pipe_picture = assembler3pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 250,
+    pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "input",
+    pipe_picture = assembler3pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 250,
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+    secondary_draw_orders = { north = -1 }
+  },
+  {
+    production_type = "output",
+    pipe_picture = assembler3pipepictures(),
+    pipe_covers = pipecoverspictures(),
+    volume = 250,
+    pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+    secondary_draw_orders = { north = -1 }
+  },
+}
+data.raw["assembling-machine"]["centrifuge"].fluid_boxes_off_when_no_fluid_recipe = true
