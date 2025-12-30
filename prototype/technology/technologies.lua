@@ -7083,14 +7083,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-lathanide-science-pack",
+    name = "pm-lanthanide-science-pack",
     icon_size = 256,
     icon = "__base__/graphics/technology/space-science-pack.png",
     effects = 
     {
 
     },
-    prerequisites = {"pm-advanced-science-production", "pm-betterer-lab"},
+    prerequisites = {"pm-advanced-science-production", "pm-betterer-lab", "pm-cerium-processing", "pm-praseodymium-processing", "pm-neodymium-processing", "pm-promethium-processing", "pm-samarium-processing", "pm-europium-processing", "pm-gadolinium-processing", "pm-terbium-processing", "pm-dysprosium-processing", "pm-holmium-processing", "pm-erbium-processing", "pm-thulium-processing", "pm-ytterbium-processing", "pm-lutetium-processing"},
     unit =
     {
       count = 850,
@@ -7817,7 +7817,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
         {"space-science-pack", 1}
       },
       time = 240
@@ -7835,7 +7835,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-speed-module-6")
     },
-    prerequisites = {"pm-speed-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
+    prerequisites = {"pm-speed-module-5", "pm-space-processing-units", "pm-lanthanide-science-pack"},
     unit =
     {
       count = 1000,
@@ -7851,7 +7851,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 240
     }
@@ -7865,7 +7865,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-efficiency-module-6")
     },
-    prerequisites = {"pm-efficiency-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
+    prerequisites = {"pm-efficiency-module-5", "pm-space-processing-units", "pm-lanthanide-science-pack"},
     unit =
     {
       count = 1000,
@@ -7881,7 +7881,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 240
     }
@@ -7895,7 +7895,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-productivity-module-6")
     },
-    prerequisites = {"pm-productivity-module-5", "pm-space-processing-units", "pm-lathanide-science-pack"},
+    prerequisites = {"pm-productivity-module-5", "pm-space-processing-units", "pm-lanthanide-science-pack"},
     unit =
     {
       count = 1000,
@@ -7911,7 +7911,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 240
     }
@@ -7924,7 +7924,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-lathanide-science-pack"},
+    prerequisites = {"pm-lanthanide-science-pack"},
     unit =
     {
       count = 900,
@@ -7940,7 +7940,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 200
     }
@@ -7958,7 +7958,7 @@ data:extend({
         PM.unlock_recipe("pm-scandium"),
         PM.unlock_recipe("pm-scandium-oxide")
     },
-    prerequisites = {"pm-lathanide-science-pack"},
+    prerequisites = {"pm-lanthanide-science-pack"},
     unit =
     {
       count = 850,
@@ -7974,7 +7974,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 180
     }
@@ -7990,7 +7990,7 @@ data:extend({
         PM.unlock_recipe("pm-neodymium-high-seperated-monazite"),
         PM.unlock_recipe("pm-neodymium-pure-monazite")
     },
-    prerequisites = {"pm-lathanide-science-pack"},
+    prerequisites = {"pm-lanthanide-science-pack"},
     unit =
     {
       count = 850,
@@ -8006,7 +8006,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 180
     }
@@ -8035,7 +8035,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-lathanide-science-pack"},
+    prerequisites = {"pm-lanthanide-science-pack"},
     unit =
     {
       count = 850,
@@ -8051,7 +8051,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 180
     }
@@ -8080,7 +8080,7 @@ data:extend({
         {"pm-alkaline-earth-metal-science-pack", 1},
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
-        {"pm-lathanide-science-pack", 1}
+        {"pm-lanthanide-science-pack", 1}
       },
       time = 200
     }

@@ -51,7 +51,7 @@ local pm_advanced_lab_inputs =
   "pm-alkaline-earth-metal-science-pack",
   "pm-advanced-advanced-advanced-transition-metal-science-pack",
   "pm-noble-gas-science-pack",
-  "pm-lathanide-science-pack",
+  "pm-lanthanide-science-pack",
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",

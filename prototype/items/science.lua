@@ -118,7 +118,7 @@ data:extend({
   },
   {
     type = "tool",
-    name = "pm-lathanide-science-pack",
+    name = "pm-lanthanide-science-pack",
     icon_size = 64,
     icon = "__base__/graphics/icons/space-science-pack.png",
     inventory_move_sound = item_sounds.science_inventory_move,

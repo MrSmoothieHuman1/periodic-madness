@@ -33,7 +33,7 @@ Date: 2025-19-12
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
-    - Moved noble gas producitvity research to be behind lathanides.
+    - Moved noble gas producitvity research to be behind lanthanides.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.005
