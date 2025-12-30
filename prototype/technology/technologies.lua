@@ -7665,6 +7665,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-trace-lutetium"),
+        PM.unlock_recipe("pm-lutetium-powder"),
+        PM.unlock_recipe("pm-lutetium-salts"),
+        PM.unlock_recipe("pm-lutetium-salt-seperation"),
+        PM.unlock_recipe("pm-low-lutetium-mixture-seperation"),
+        PM.unlock_recipe("pm-high-lutetium-mixture-seperation"),
+        PM.unlock_recipe("pm-lutetium")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =
