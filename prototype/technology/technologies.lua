@@ -8108,7 +8108,7 @@ data:extend({
     effects = 
     {
     },
-    prerequisites = {"pm-lanthanide-science-pack"},
+    prerequisites = {"pm-lanthanide-science-pack", "pm-astatine-processing"},
     research_trigger =
     {
         type = "craft-item",

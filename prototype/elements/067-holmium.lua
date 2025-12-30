@@ -57,7 +57,7 @@ data:extend({
         type = "item",
         name = "pm-holmium-plate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/plates/holmium-plate.png",
         subgroup = "pm-holmium-la",
         order = "h",
         stack_size = 200

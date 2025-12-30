@@ -49,7 +49,7 @@ data:extend({
         type = "item",
         name = "pm-dysprosium-plate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/plates/dysprosium-plate.png",
         subgroup = "pm-dysprosium-la",
         order = "h",
         stack_size = 200
