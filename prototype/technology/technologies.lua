@@ -8100,6 +8100,39 @@ data:extend({
       time = 200
     }
   },
+  {
+    type = "technology",
+    name = "pm-pennyjim-neodymium-146-enrichment-process",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+    },
+    prerequisites = {"pm-lanthanide-science-pack"},
+    research_trigger =
+    {
+        type = "craft-item",
+        item = "pm-neodymium-146",
+        amount = 50
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-akip-neodymium-147-enrichment-process",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects = 
+    {
+
+    },
+    prerequisites = {"pm-pennyjim-neodymium-146-enrichment-process"},
+    research_trigger =
+    {
+        type = "craft-item",
+        item = "pm-neodymium-147",
+        amount = 50
+    }
+  },
 
 --MARK: AC science
 
