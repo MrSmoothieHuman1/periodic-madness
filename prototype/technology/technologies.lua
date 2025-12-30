@@ -7629,6 +7629,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-o-phenylenediamine"),
+        PM.unlock_recipe("pm-1-10-phenanthroline"),
+        PM.unlock_recipe("pm-ytterbium-solution"),
+        PM.unlock_recipe("pm-ytterbium-solution-seperation"),
+        PM.unlock_recipe("pm-low-ytterbium-mixture-seperation"),
+        PM.unlock_recipe("pm-high-ytterbium-mixture-seperation"),
+        PM.unlock_recipe("pm-ytterbium-vapour"),
+        PM.unlock_recipe("pm-ytterbium-plate")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =

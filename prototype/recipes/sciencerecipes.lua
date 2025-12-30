@@ -229,7 +229,7 @@ data:extend({
         PM.ingredient("pm-holmium-plate", 15),
         PM.ingredient("pm-erbium-plate", 50),
         PM.ingredient("pm-thulium", 10),
-        --PM.ingredient("pm-ytterbium", 10),
+        PM.ingredient("pm-ytterbium-plate", 40),
         --PM.ingredient("pm-lutetium", 10),
         PM.ingredient("pm-science-bottle", 1)
     },

@@ -24,7 +24,7 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
       subgroup = "pm-europium-la",
       order = "e",
-      stack_size = 25
+      stack_size = 200
     },
 
     {
@@ -60,7 +60,7 @@ data:extend({
         main_product = "pm-europium-trioxide-concentrate",
         ingredients =
         {
-            PM.ingredient("pm-roasted-bastnasite", 6),
+            PM.ingredient("pm-roasted-bastnasite", 5),
             PM.ingredient("pm-sodium-hydroxide", 25, "fluid"),
             PM.ingredient("pm-acidic-water", 25, "fluid")
         },
@@ -84,7 +84,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-europium-trioxide", 4),
+            PM.product_range("pm-europium-trioxide", 3, 4),
             PM.catalyst("pm-acidic-water", 12.5, 12.5, "fluid")
         }
     },
@@ -109,7 +109,7 @@ data:extend({
         type = "recipe",
         name = "pm-molten-europium-chloride",
         enabled = false,
-        energy_required = 18,
+        energy_required = 27,
         category = "pm-moltening",
         allow_productivity = true,
         ingredients =
