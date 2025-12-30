@@ -207,6 +207,37 @@ data:extend({
         PM.product("pm-noble-gas-science-pack", 1)
     }
 },
+{
+    type = "recipe",
+    name = "pm-lanthanide-science-pack",
+    enabled = false,
+    energy_required = 6,
+    subgroup = "science-pack",
+    order = "j",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-cerium", 20),
+        PM.ingredient("pm-praseodymium", 25),
+        PM.ingredient("pm-neodymium-plate", 30),
+        PM.ingredient("pm-promethium-147", 10),
+        PM.ingredient("pm-samarium", 25),
+        PM.ingredient("pm-europium", 50),
+        PM.ingredient("pm-gadolinium", 32),
+        PM.ingredient("pm-terbium", 24),
+        PM.ingredient("pm-dysprosium-plate", 15),
+        PM.ingredient("pm-holmium-plate", 15),
+        PM.ingredient("pm-erbium-plate", 50),
+        PM.ingredient("pm-thulium", 10),
+        --PM.ingredient("pm-ytterbium", 10),
+        --PM.ingredient("pm-lutetium", 10),
+        PM.ingredient("pm-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-lanthanide-science-pack", 10)
+    }
+},
 --MARK: Plastic Science
 {
     type = "recipe",

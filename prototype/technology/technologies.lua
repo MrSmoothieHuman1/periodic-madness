@@ -7088,7 +7088,7 @@ data:extend({
     icon = "__base__/graphics/technology/space-science-pack.png",
     effects = 
     {
-
+        PM.unlock_recipe("pm-lanthanide-science-pack")
     },
     prerequisites = {"pm-advanced-science-production", "pm-betterer-lab", "pm-cerium-processing", "pm-praseodymium-processing", "pm-neodymium-processing", "pm-promethium-processing", "pm-samarium-processing", "pm-europium-processing", "pm-gadolinium-processing", "pm-terbium-processing", "pm-dysprosium-processing", "pm-holmium-processing", "pm-erbium-processing", "pm-thulium-processing", "pm-ytterbium-processing", "pm-lutetium-processing"},
     unit =
