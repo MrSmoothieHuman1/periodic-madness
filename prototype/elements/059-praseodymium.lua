@@ -102,7 +102,7 @@ data:extend({
         main_product = "pm-pure-praseodymium-deposit",
         ingredients =
         {
-            PM.ingredient("pm-mixed-praseodymium-deposit", 6)
+            PM.ingredient("pm-mixed-praseodymium-deposit", 4)
         },
         results =
         {
@@ -202,7 +202,7 @@ data:extend({
         results =
         {
             PM.product_chance("stone", 2, 0.33),
-            PM.product("pm-praseodymium", 2)
+            PM.product_range("pm-praseodymium", 2, 3)
         }
     }
 })

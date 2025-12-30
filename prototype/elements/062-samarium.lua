@@ -95,7 +95,7 @@ data:extend({
         type = "recipe",
         name = "pm-mixed-samarium-deposit-seperation",
         enabled = false,
-        energy_required = 10,
+        energy_required = 15,
         category = "pm-crushing",
         subgroup = "pm-praseodymium-la",
         order = "b",
@@ -103,7 +103,7 @@ data:extend({
         main_product = "pm-samarium-oxide",
         ingredients =
         {
-            PM.ingredient("pm-mixed-samarium-deposit", 4)
+            PM.ingredient("pm-mixed-samarium-deposit", 3)
         },
         results =
         {

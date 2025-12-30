@@ -67,17 +67,17 @@ data:extend({
     {
         type = "recipe",
         name = "pm-cerium-dioxide",
-        energy_required = 8,
+        energy_required = 24,
         category = "pm-mixing",
         main_product = "pm-cerium-dioxide",
         ingredients =
         {
-            PM.ingredient("pm-bastnasite-ce", 6),
+            PM.ingredient("pm-bastnasite-ce", 4),
             PM.ingredient("pm-hydrochloric-acid", 25, "fluid"),
         },
         results =
         {
-            PM.product("pm-cerium-dioxide", 2),
+            PM.product("pm-cerium-dioxide", 3),
             PM.product_range("pm-chlorine", 5, 10, "fluid"),
             PM.product_range("pm-hydrogen-gas", 5, 10, "fluid"),
             PM.product_range("pm-calcium-chloride", 0, 2),
@@ -86,18 +86,18 @@ data:extend({
     {
         type = "recipe",
         name = "pm-cerium",
-        energy_required = 4,
+        energy_required = 24,
         category = "chemistry",
         main_product = "pm-cerium",
         allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-cerium-dioxide", 3),
+            PM.ingredient("pm-cerium-dioxide", 4),
             PM.ingredient("pm-rhenium-platinum-catalyst", 2)
         },
         results =
         {
-            PM.product("pm-cerium", 2),
+            PM.product("pm-cerium", 4),
             PM.catalyst_chance("pm-rhenium-platinum-catalyst", 2, 0.9, 2),
             PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2)
         }

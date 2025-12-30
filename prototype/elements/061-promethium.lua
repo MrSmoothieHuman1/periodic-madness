@@ -30,20 +30,20 @@ data:extend({
         type = "recipe",
         name = "pm-neodymium-146",
         enabled = false,
-        energy_required = 6,
+        energy_required = 4,
         category = "centrifuging",
         allow_productivity = true,
         main_product = "pm-neodymium-146",
         ingredients =
         {
-            PM.ingredient("pm-roasted-bastnasite", 8),
+            PM.ingredient("pm-roasted-bastnasite", 3),
             PM.ingredient("pm-ion-exchange-beads", 4)
         },
         results =
         {
-            PM.product("pm-roasted-bastnasite", 7),
+            PM.catalyst("pm-roasted-bastnasite", 2, 2),
             PM.catalyst("pm-ion-exchange-beads", 3, 3),
-            PM.catalyst_chance("pm-mixed-praseodymium-deposit", 2, 0.25, 1),
+            PM.catalyst_chance("pm-mixed-praseodymium-deposit", 2, 0.1, 2),
             PM.product_chance("pm-neodymium-146", 2, 0.032)
         }
     },

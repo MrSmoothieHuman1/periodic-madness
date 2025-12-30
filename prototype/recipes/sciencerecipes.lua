@@ -220,7 +220,7 @@ data:extend({
         PM.ingredient("pm-cerium", 20),
         PM.ingredient("pm-praseodymium", 25),
         PM.ingredient("pm-neodymium-plate", 30),
-        PM.ingredient("pm-promethium-147", 10),
+        PM.ingredient("pm-promethium-147", 8),
         PM.ingredient("pm-samarium", 25),
         PM.ingredient("pm-europium", 50),
         PM.ingredient("pm-gadolinium", 32),

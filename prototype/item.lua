@@ -1935,7 +1935,7 @@ data:extend({
     type = "item",
     name = "pm-pure-monazite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk1.png",
     subgroup = "pm-monazite-la",
     order = "g",
     stack_size = 300

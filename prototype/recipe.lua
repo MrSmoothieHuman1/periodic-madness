@@ -5541,13 +5541,13 @@ data:extend({
     type = "recipe",
     name = "pm-monazite-chunks",
     enabled = false,
-    energy_required = 5,
+    energy_required = 6,
     category = "pm-acids",
     allow_productivity = true,
     main_product = "pm-monazite-chunks",
     ingredients =
     {
-        PM.ingredient("pm-lanthanum-ore", 16),
+        PM.ingredient("pm-lanthanum-ore", 14),
         PM.ingredient("pm-chromic-acid", 50, "fluid")
     },
     results =
@@ -5561,16 +5561,16 @@ data:extend({
     type = "recipe",
     name = "pm-crushed-monazite",
     enabled = false,
-    energy_required = 10,
+    energy_required = 4,
     category = "pm-crushing",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
         PM.ingredient("pm-monazite-chunks", 6)
     },
     results =
     {
-        PM.product("pm-crushed-monazite", 12)
+        PM.product_range("pm-crushed-monazite", 12, 18)
     }
   },
   {
@@ -5590,17 +5590,17 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 12,
+    energy_required = 6,
     category = "centrifuging",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
-        PM.ingredient("pm-crushed-monazite", 12),
+        PM.ingredient("pm-crushed-monazite", 16),
         PM.ingredient("pm-ferrite-magnet", 1)
     },
-    results = 
+    results =
     {
-        PM.product("pm-low-seperated-monazite", 10),
+        PM.product("pm-low-seperated-monazite", 15),
         PM.product_range("stone", 2, 6),
         PM.catalyst_chance("pm-ferrite-magnet", 1, 0.6, 1)
     }
@@ -5622,17 +5622,17 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 14,
+    energy_required = 8,
     category = "centrifuging",
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-low-seperated-monazite", 10),
+        PM.ingredient("pm-low-seperated-monazite", 15),
         PM.ingredient("pm-ferrite-magnet", 2)
     },
     results =
     {
-        PM.product("pm-medium-seperated-monazite", 8),
+        PM.product("pm-medium-seperated-monazite", 14),
         PM.catalyst_chance("pm-ferrite-magnet", 2, 0.7, 2)
     }
   },
@@ -5653,17 +5653,17 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 16,
+    energy_required = 10,
     category = "centrifuging",
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-medium-seperated-monazite", 8),
+        PM.ingredient("pm-medium-seperated-monazite", 14),
         PM.ingredient("pm-ferrite-magnet", 3)
     },
     results =
     {
-        PM.product("pm-high-seperated-monazite", 6),
+        PM.product("pm-high-seperated-monazite", 12),
         PM.catalyst_chance("pm-ferrite-magnet", 3, 0.8, 3)
     }
   },
@@ -5684,17 +5684,17 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 18,
+    energy_required = 12,
     category = "centrifuging",
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-high-seperated-monazite", 6),
+        PM.ingredient("pm-high-seperated-monazite", 12),
         PM.ingredient("pm-ferrite-magnet", 4)
     },
     results =
     {
-        PM.product("pm-pure-monazite", 6),
+        PM.product("pm-pure-monazite", 10),
         PM.catalyst_chance("pm-ferrite-magnet", 4, 0.9, 4)
     }
   },
@@ -5715,19 +5715,19 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 10,
+    energy_required = 6,
     category = "centrifuging",
     subgroup = "pm-monazite-la",
     order = "ha",
     allow_productivity = true,
     ingredients = 
     {
-        PM.ingredient("pm-crushed-monazite", 12),
+        PM.ingredient("pm-crushed-monazite", 16),
         PM.ingredient("pm-neodymium-magnet", 1)
     },
     results = 
     {
-        PM.product("pm-low-seperated-monazite", 10),
+        PM.product("pm-low-seperated-monazite", 15),
         PM.product_range("stone", 2, 6),
         PM.product_range_chance("pm-yttrium-ore", 1, 3, 0.45),
         PM.catalyst_chance("pm-neodymium-magnet", 1, 0.93, 1)
@@ -5750,19 +5750,19 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 12,
+    energy_required = 8,
     category = "centrifuging",
     subgroup = "pm-monazite-la",
     order = "hb",
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-low-seperated-monazite", 10),
+        PM.ingredient("pm-low-seperated-monazite", 15),
         PM.ingredient("pm-neodymium-magnet", 2)
     },
     results =
     {
-        PM.product("pm-high-seperated-monazite", 8),
+        PM.product("pm-high-seperated-monazite", 14),
         PM.catalyst_chance("pm-neodymium-magnet", 2, 0.96, 2)
     }
   },
@@ -5783,19 +5783,19 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 14,
+    energy_required = 10,
     category = "centrifuging",
     subgroup = "pm-monazite-la",
     order = "hc",
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-high-seperated-monazite", 8),
+        PM.ingredient("pm-high-seperated-monazite", 14),
         PM.ingredient("pm-neodymium-magnet", 3)
     },
     results =
     {
-        PM.product("pm-pure-monazite", 6),
+        PM.product("pm-pure-monazite", 12),
         PM.product_range_chance("pm-trace-thorium", 1, 2, 0.75),
         PM.catalyst_chance("pm-neodymium-magnet", 3, 0.99, 3)
     }
@@ -5814,7 +5814,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-pure-bastnasite", 10)
+        PM.product("pm-pure-bastnasite", 12)
     }
   },
   {
@@ -5826,14 +5826,14 @@ data:extend({
     main_product = "pm-leached-bastnasite",
     ingredients =
     {
-        PM.ingredient("pm-pure-bastnasite", 10),
+        PM.ingredient("pm-pure-bastnasite", 12),
         PM.ingredient("pm-hydrochloric-acid", 25, "fluid"),
         PM.ingredient("pm-carbon-dioxide-gas", 30, "fluid"),
         PM.ingredient("sulfuric-acid", 12.5, "fluid")
     },
     results =
     {
-        PM.product("pm-leached-bastnasite", 8),
+        PM.product("pm-leached-bastnasite", 10),
         PM.product_range("pm-calcium-chloride", 0, 4),
     }
   },
@@ -5846,12 +5846,12 @@ data:extend({
    main_product = "pm-roasted-bastnasite",
    ingredients =
    {
-       PM.ingredient("pm-leached-bastnasite", 8),
+       PM.ingredient("pm-leached-bastnasite", 10),
        PM.ingredient("pm-trichlorosilane", 7.5, "fluid")
    },
    results =
    {
-       PM.product("pm-roasted-bastnasite", 6),
+       PM.product("pm-roasted-bastnasite", 8),
        PM.product_range("pm-patina", 1, 3),
        PM.product_chance("pm-ferrosilicon", 1, 0.66)
    }

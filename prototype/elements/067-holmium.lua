@@ -71,13 +71,13 @@ data:extend({
         category = "pm-crushing",
         ingredients =
         {
-            PM.ingredient("pm-pure-monazite", 4),
+            PM.ingredient("pm-pure-monazite", 3),
             PM.ingredient("pm-sand", 2),
             PM.ingredient("pm-lanthanum-ore", 1),
         },
         results =
         {
-            PM.product("pm-monazite-sand", 12)
+            PM.product_range("pm-monazite-sand", 12, 15)
         }
     },
     {
@@ -134,14 +134,14 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-washed-monazite-sand", 4),
-            PM.ingredient("pm-flourine", 2),
+            PM.ingredient("pm-flourine", 3),
             PM.ingredient("pm-chlorine", 10, "fluid")
         },
         results =
         {
             PM.product_chance("pm-holmium-fluoride", 2, 0.1),
             PM.product_chance("pm-holmium-chloride", 2, 0.1),
-            PM.catalyst("pm-flourine", 1, 1),
+            PM.catalyst("pm-flourine", 2, 2),
             PM.catalyst("pm-chlorine", 7.5, 7.5, "fluid")
         }
     },
@@ -175,14 +175,14 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-holmium-enriched-monazite-sand", 3),
-            PM.ingredient("pm-flourine", 2),
+            PM.ingredient("pm-flourine", 4),
             PM.ingredient("pm-chlorine", 20, "fluid")
         },
         results =
         {
             PM.product_chance("pm-holmium-fluoride", 2, 0.2),
             PM.product_chance("pm-holmium-chloride", 2, 0.2),
-            PM.catalyst("pm-flourine", 1, 1),
+            PM.catalyst("pm-flourine", 3, 3),
             PM.catalyst("pm-chlorine", 15, 15, "fluid")
         }
     },
@@ -204,7 +204,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-holmium", 3),
+            PM.product_range("pm-holmium", 3, 4),
             PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3),
             PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3)
         }
@@ -227,7 +227,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-holmium", 3),
+            PM.product_range("pm-holmium", 3, 4),
             PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3),
             PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3)
         }
@@ -239,11 +239,11 @@ data:extend({
         energy_required = 6.4,
         category = "smelting",
         allow_productivity = true,
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-holmium", 1)
         },
-        results = 
+        results =
         {
             PM.product("pm-holmium-plate", 1)
         }
