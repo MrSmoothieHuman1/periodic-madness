@@ -61,7 +61,7 @@ data:extend({
             PM.product("pm-bastnasite-ce", 4),
             PM.catalyst_chance("pm-palladium-catalyst", 4, 0.85, 4),
             PM.catalyst_chance("pm-catalyst-container", 4, 0.15, 4),
-            --PM.product_chance("pm-samarium", 1, 0.2)
+            PM.product_chance("pm-samarium-oxide", 2, 0.2)
         }
     },
     {

@@ -3,7 +3,7 @@ local lib = {events={}}
 
 local player_messages = {
     -- youtuber people
-    ["Zyllius"] = "To get you a little closer to that potato haiku. Also, suffer",
+    ["Zyllius"] = "To get you a little closer to that potato haiku",
     ["DocJade"] = "theres no greel here, but its certaintly Fun",
     ["Martincitopants"] = "lettuce.. begin a chemistry class",
     ["Venzer"] = "i found your channel randomly and absolutely loved your EI video, have fun with PM <3",

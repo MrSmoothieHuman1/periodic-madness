@@ -3,7 +3,14 @@ data:extend({
         type = "item",
         name = "pm-thulium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/thulium.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/thulium.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/thulium-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/thulium-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/thulium-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-thulium-la",
         order = "e",
         stack_size = 200
