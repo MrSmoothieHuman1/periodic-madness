@@ -31,7 +31,12 @@ data:extend({
         type = "item",
         name = "pm-unprocessed-dysprosium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/unprocessed-dysprosium.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/unprocessed-dysprosium.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/unprocessed-dysprosium-2.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-dysprosium-la",
         order = "e",
         stack_size = 100
