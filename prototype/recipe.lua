@@ -5895,5 +5895,5 @@ data:extend({
     {
         PM.product("pm-1-10-phenanthroline", 30, "fluid")
     }
-  }
+  },
 } --[[@as data.RecipePrototype[] ]])
