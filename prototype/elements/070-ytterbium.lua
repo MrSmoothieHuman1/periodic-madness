@@ -51,12 +51,12 @@ data:extend({
         type = "fluid",
         name = "pm-ytterbium-vapour",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/ytterbium-vapour.png",
         subgroup = "pm-ytterbium-la",
         order = "a",
         default_temperature = 15,
-        base_color = {r = 0.3, g = 0.3, b = 0.2},
-        flow_color = {r = 0.3, g = 0.3, b = 0.2},
+        base_color = {r = 0.4, g = 0.4, b = 0.4},
+        flow_color = {r = 0.4, g = 0.4, b = 0.4},
     },
 
     {
