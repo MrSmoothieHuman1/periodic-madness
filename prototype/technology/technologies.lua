@@ -5,12 +5,12 @@ data:extend({
     name = "pm-laboratory",
     icon_size = 256,
     icon = "__base__/graphics/technology/research-speed.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("lab"),
     },
     prerequisites = {"pm-crushing", "electronics"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-item",
       item = "pm-glass-pane",
@@ -22,7 +22,7 @@ data:extend({
     name = "pm-crushing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/glass-pane.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-carbon"),
       PM.unlock_recipe("pm-gravel"),
@@ -30,7 +30,7 @@ data:extend({
       PM.unlock_recipe("pm-evaporator")
     },
     prerequisites = {},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-item",
       item = "pm-burner-crusher",
@@ -333,7 +333,7 @@ data:extend({
       PM.unlock_recipe("pm-vulcanised-rubber")
     },
     prerequisites = {"pm-resin-processing"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-fluid",
       fluid = "pm-resin",
@@ -350,7 +350,7 @@ data:extend({
       PM.unlock_recipe("pm-pheonlic-resin")
     },
     prerequisites = {"pm-resin-processing"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-fluid",
       fluid = "pm-resin",
@@ -599,7 +599,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/tidal-energy.png",
     effects =
     {
-       PM.unlock_recipe("pm-tidal-power-plant") 
+       PM.unlock_recipe("pm-tidal-power-plant")
     },
     prerequisites = {"pm-water-distillation", "pm-fluid-circuit", "landfill"},
     unit =
@@ -655,7 +655,7 @@ data:extend({
       PM.unlock_recipe("pm-bitumen-creosote")
     },
     prerequisites = {"oil-processing"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-fluid",
       fluid = "pm-oil-residuals",
@@ -673,7 +673,7 @@ data:extend({
       PM.unlock_recipe("pm-naptha-steam-cracking"),
     },
     prerequisites = {"oil-processing"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-fluid",
       fluid = "pm-naptha",
@@ -690,7 +690,7 @@ data:extend({
       PM.unlock_recipe("pm-refinery-gases-refining")
     },
     prerequisites = {"oil-processing"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-fluid",
       fluid = "pm-refinery-gases",
@@ -1639,7 +1639,7 @@ data:extend({
     name = "pm-fluid-burning-energy",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/fluid-turbine.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-petrol-to-burning-oil"),
       PM.unlock_recipe("pm-naptha-to-burning-oil"),
@@ -1691,7 +1691,7 @@ data:extend({
     name = "pm-waste-water-byproduct-handling",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/waste-water-byproduct-handling.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-sodium-hydroxide"),
       PM.unlock_recipe("pm-carbon-to-carbon-dioxide"),
@@ -1723,7 +1723,7 @@ data:extend({
     name = "pm-aluminium-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/aluminium-processing.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-sodium-hydroxide"),
       PM.unlock_recipe("pm-transition-aluminium-leeching"),
@@ -1757,7 +1757,7 @@ data:extend({
       PM.unlock_recipe("pm-ammonium-chloride"),
     },
     prerequisites = {"pm-platinum-processing"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-item",
       item = "pm-ammonium-chloride",
@@ -1769,7 +1769,7 @@ data:extend({
     name = "pm-heating-coils",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/heating-coils.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-aluminium-heating-coil"),
       PM.unlock_recipe("pm-tungsten-heating-coil"),
@@ -1789,7 +1789,7 @@ data:extend({
     name = "pm-electric-boiler",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/electric-boiler.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-electric-boiler-1")
     },
@@ -1856,7 +1856,7 @@ data:extend({
     name = "pm-basic-sulfuric-acid",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/basic-sulfuric-acid.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("sulfuric-acid")
     },
@@ -1938,10 +1938,10 @@ data:extend({
       PM.unlock_recipe("pm-coal-tar-seperation")
     },
     prerequisites = {"pm-multimetal-multiproperty"},
-    unit = 
+    unit =
     {
       count = 100,
-      ingredients = 
+      ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -1986,7 +1986,7 @@ data:extend({
         PM.unlock_recipe("pm-nitrosyl-seperation")
     },
     prerequisites = {"pm-ammonium-chloride-processing"},
-    unit = 
+    unit =
     {
       count = 150,
       ingredients =
@@ -2003,7 +2003,7 @@ data:extend({
     name = "pm-geothermal-energy",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-geothermal-drilling-fluid"),
         PM.unlock_recipe("pm-geothermal-bore-mk1"),
@@ -2011,7 +2011,7 @@ data:extend({
     },
     prerequisites = {"electric-engine"},
     hidden = true,
-    unit = 
+    unit =
     {
       count = 200,
       ingredients =
@@ -2455,7 +2455,7 @@ data:extend({
     name = "pm-gemstone-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/gemstone-processing.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-gem-sorting"),
       PM.unlock_recipe("pm-ruby-dust"),
@@ -2480,7 +2480,7 @@ data:extend({
     unit =
       {
         count = 250,
-        ingredients = 
+        ingredients =
         {
           {"automation-science-pack", 1},
           {"logistic-science-pack", 1},
@@ -2495,7 +2495,7 @@ data:extend({
     name = "pm-concrete-walls",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/concrete-wall.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-concrete-wall"),
     },
@@ -2541,7 +2541,7 @@ data:extend({
     name = "pm-express-inserters",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/express-inserters.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-express-inserter"),
       PM.unlock_recipe("pm-express-long-handed-inserter"),
@@ -2566,7 +2566,7 @@ data:extend({
     name = "pm-kasethal-heating-coils",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/kanthal-heating-coils.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-kasethal-heating-coil"),
     },
@@ -2589,7 +2589,7 @@ data:extend({
     name = "pm-longer-handed-inserter",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/longer-handed-inserter.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-longer-handed-inserter")
     },
@@ -2620,7 +2620,7 @@ data:extend({
       PM.unlock_recipe("pm-coal-gas-seperation")
     },
     prerequisites = {"advanced-material-processing-2", "pm-tempature-framing", "pm-advanced-coke-processing"},
-    unit = 
+    unit =
     {
       count = 300,
       ingredients =
@@ -2917,7 +2917,7 @@ data:extend({
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1}
       },
-      time = 60  
+      time = 60
     }
   },
   {
@@ -3263,7 +3263,7 @@ data:extend({
     name = "pm-bio-walls",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/bio-wall.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-bio-wall"),
     },
@@ -3311,7 +3311,7 @@ data:extend({
     name = "pm-glass-ampules",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/glass-ampules.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-empty-glass-ampule")
     },
@@ -3319,7 +3319,7 @@ data:extend({
     unit =
     {
       count = 200,
-      ingredients = 
+      ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -3600,7 +3600,7 @@ data:extend({
     name = "pm-intermediate-casting",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/intermediate-casting.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-copper-wire-casting"),
       PM.unlock_recipe("pm-gold-wire-casting"),
@@ -3612,7 +3612,7 @@ data:extend({
     unit =
       {
         count = 350,
-        ingredients = 
+        ingredients =
         {
           {"automation-science-pack", 1},
           {"logistic-science-pack", 1},
@@ -3628,7 +3628,7 @@ data:extend({
     name = "pm-advanced-material-processing-3",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-material-processing-3.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-heat-furnace"),
       PM.unlock_recipe("pm-electric-furnace-2"),
@@ -3639,7 +3639,7 @@ data:extend({
     unit =
       {
         count = 325,
-        ingredients = 
+        ingredients =
         {
           {"automation-science-pack", 1},
           {"logistic-science-pack", 1},
@@ -3861,7 +3861,7 @@ data:extend({
     name = "pm-octane-fuel-canisters",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/octane-fuel-canisters.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-octane-processing"),
       PM.unlock_recipe("pm-N-octane-cracking"),
@@ -3918,7 +3918,7 @@ data:extend({
     name = "pm-cadmium-telluride",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/cadmium-telluride.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-molten-cadmium-telluride"),
       PM.unlock_recipe("pm-cadmium-telluride")
@@ -3969,7 +3969,7 @@ data:extend({
     name = "pm-electric-boiler-2",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/electric-boiler.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-electric-boiler-2")
     },
@@ -4464,7 +4464,7 @@ data:extend({
     name = "pm-alkaline-earth-metal-pack-unlock",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/alkaline-earth-metal-unlock.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-alkaline-earth-metal-science-pack")
     },
@@ -4641,7 +4641,7 @@ data:extend({
     name = "pm-agar-offgassing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-bacteriaed-agar-methyl-chloride-offgassing"),
       PM.unlock_recipe("pm-bacteriaed-agar-hydrogen-sulfide-offgassing"),
@@ -4667,7 +4667,7 @@ data:extend({
     name = "pm-nitrobenzene-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/nitrobenzene-processing.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-nitrobenzene-mixed-acid"),
       PM.unlock_recipe("pm-nitrobenzene"),
@@ -4747,7 +4747,7 @@ data:extend({
     name = "pm-advanced-electronic-components",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-electronic-components.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-garnet-saw"),
       PM.unlock_recipe("pm-silicon-wafer"),
@@ -4767,7 +4767,7 @@ data:extend({
     unit =
       {
         count = 450,
-        ingredients = 
+        ingredients =
         {
           {"automation-science-pack", 1},
           {"logistic-science-pack", 1},
@@ -4785,7 +4785,7 @@ data:extend({
     name = "pm-astatine-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/astatine-processing.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("centrifuge"),
       PM.unlock_recipe("pm-mixed-trace-astatine"),
@@ -5036,7 +5036,7 @@ data:extend({
     name = "pm-advanced-advanced-advanced-transition-metal-pack-unlock",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-advanced-advanced-transition-metal-unlock.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-tantalum-advanced-advanced-advanced-transition-metal-science-pack"),
       PM.unlock_recipe("pm-niobium-advanced-advanced-advanced-transition-metal-science-pack")
@@ -5353,12 +5353,12 @@ data:extend({
     name = "pm-rhenium-platinum-catalyst",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/rhenium-platinum-catalysts.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-rhenium-platinum-catalyst")
     },
     prerequisites = {"pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
-    research_trigger = 
+    research_trigger =
     {
       type = "craft-item",
       item = "pm-rhenium-plate",
@@ -5502,7 +5502,7 @@ data:extend({
     name = "pm-rocket-control-unit",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/rocket-control-unit.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-molten-strontium-glass"),
       PM.unlock_recipe("pm-strontium-glass"),
@@ -5515,7 +5515,7 @@ data:extend({
     unit =
       {
         count = 450,
-        ingredients = 
+        ingredients =
         {
           {"automation-science-pack", 1},
           {"logistic-science-pack", 1},
@@ -5586,7 +5586,7 @@ data:extend({
     name = "pm-better-calcium-extraction",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/calcium-processing.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-mixed-calcium-rock"),
       PM.unlock_recipe("pm-calcium-hydroxide-slurry"),
@@ -5615,7 +5615,7 @@ data:extend({
     name = "pm-calcium-sulfate-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/calcium-sulfate-processing.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-calcium-sulfate-slurry"),
       PM.unlock_recipe("pm-calcium-sulfate-chunks"),
@@ -5644,7 +5644,7 @@ data:extend({
     name = "pm-RTG",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/RTG.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-RTG")
     },
@@ -5669,7 +5669,7 @@ data:extend({
     name = "pm-effect-transmission-2",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/technology/effect-transmission.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-beacon-2"),
       PM.unlock_recipe("pm-hub-beacon"),
@@ -5696,7 +5696,7 @@ data:extend({
     name = "pm-magnesium-chloride",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/magnesium-chloride.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-magnesium-carbonate"),
       PM.unlock_recipe("pm-magnesium-chloride")
@@ -5722,12 +5722,12 @@ data:extend({
     name = "pm-spiderling-ISSY",
     icon_size = 256,
     icon = "__base__/graphics/technology/spidertron.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-spiderling-issy")
     },
     prerequisites = {"pm-RTG"},
-    unit = 
+    unit =
     {
       count = 600,
       ingredients =
@@ -5747,7 +5747,7 @@ data:extend({
     name = "pm-strontium-fuel-rods",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/strontium-fuel-rods.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-strontium-fuel-rod")
     },
@@ -5774,7 +5774,7 @@ data:extend({
     name = "pm-roboport-repeaters",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/roboport-repeaters.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-construction-repeater"),
       PM.unlock_recipe("pm-logistic-repeater")
@@ -5800,7 +5800,7 @@ data:extend({
     name = "pm-advanced-roboports",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-roboport-2")
     },
@@ -5875,7 +5875,7 @@ data:extend({
     name = "pm-uhrlumin-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/uhrlumin-processing.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-molten-uhrlumin-precursor-alloy"),
       PM.unlock_recipe("pm-uhrlumin-precursor-billet"),
@@ -5957,7 +5957,7 @@ data:extend({
     name = "pm-RTG-equipment",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/RTG-equipment.png",
-    effects = 
+    effects =
     {
       PM.unlock_recipe("pm-RTG-equipment")
     },
@@ -5986,7 +5986,7 @@ data:extend({
   name = "pm-advanced-modules",
   icon_size = 256,
   icon = "__periodic-madness__/graphics/technology/advanced-modules.png",
-  effects = 
+  effects =
   {
     PM.unlock_recipe("pm-cyclohexane-carboxaldehyde-solution"),
     PM.unlock_recipe("pm-cyclohexane-carboxaldehyde"),
@@ -6232,7 +6232,7 @@ data:extend({
     name = "pm-noble-gas-pack-unlock",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/noble-gas-unlock.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-noble-gas-science-pack")
     },
@@ -6373,7 +6373,7 @@ data:extend({
     name = "pm-YAG-laser",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/YAG-laser.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-cut-garnet"),
         PM.unlock_recipe("pm-YAG-laser"),
@@ -6404,7 +6404,7 @@ data:extend({
     name = "pm-electronic-laser-etcher",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/electronic-laser-etcher.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-electronic-laser-etcher")
     },
@@ -6525,7 +6525,7 @@ data:extend({
     name = "pm-selenium-logistic-robotics",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/selenium-logistic-robotics.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-selenium-logistic-robot")
     },
@@ -6554,12 +6554,12 @@ data:extend({
     name = "pm-heat-shielding",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/heat-shielding.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-heat-shielding")
     },
     prerequisites = {"pm-mylar-processing", "pm-graphene-processing"},
-    research_trigger = 
+    research_trigger =
     {
         type = "craft-item",
         item = "pm-mylar",
@@ -6571,7 +6571,7 @@ data:extend({
     name = "pm-rocket-cladding-parts",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/rocket-cladding-parts.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-rocket-cladding-parts")
     },
@@ -6600,7 +6600,7 @@ data:extend({
     name = "pm-rocket-nozzle-parts",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/rocket-nozzle-parts.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-molten-C103-precursor"),
         PM.unlock_recipe("pm-tantalum-molten-C103"),
@@ -6633,7 +6633,7 @@ data:extend({
     name = "pm-satellite",
     icon_size = 64,
     icon = "__base__/graphics/icons/satellite.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("satellite")
     },
@@ -6662,7 +6662,7 @@ data:extend({
     name = "pm-high-density-structure",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/high-density-structure.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-molten-yellow-high-density-structure-alloy"),
         PM.unlock_recipe("pm-molten-blue-high-density-structure-alloy"),
@@ -6787,7 +6787,7 @@ data:extend({
     name = "pm-logistics-5",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/logistics-5.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-high-density-transport-belt"),
         PM.unlock_recipe("pm-high-density-underground-belt"),
@@ -6847,7 +6847,7 @@ data:extend({
     name = "pm-speed-module-5",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/speed-module-5-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-speed-module-5")
     },
@@ -6876,7 +6876,7 @@ data:extend({
     name = "pm-efficiency-module-5",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/efficiency-module-5-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-efficiency-module-5")
     },
@@ -6905,7 +6905,7 @@ data:extend({
     name = "pm-productivity-module-5",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/productivity-module-5-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-productivity-module-5")
     },
@@ -6934,7 +6934,7 @@ data:extend({
     name = "pm-mylar-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/mylar-plastic-processing.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-cobalt-manganese-bromide-catalyst"),
         PM.unlock_recipe("pm-xylene-naptha-cracking"),
@@ -6968,7 +6968,7 @@ data:extend({
     name = "pm-graphene-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/graphene-processing.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-silicon-carbide"),
         PM.unlock_recipe("pm-graphite"),
@@ -6999,7 +6999,7 @@ data:extend({
     name = "pm-atmospheric-condenser-2",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/atmospheric-condenser-2.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-atmospheric-condenser-2")
     },
@@ -7028,7 +7028,7 @@ data:extend({
     name = "pm-advanced-science-production",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects =  
+    effects =
     {
 
     },
@@ -7057,7 +7057,7 @@ data:extend({
     name = "pm-betterer-lab",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects =  
+    effects =
     {
 
     },
@@ -7086,7 +7086,7 @@ data:extend({
     name = "pm-lanthanide-science-pack",
     icon_size = 256,
     icon = "__base__/graphics/technology/space-science-pack.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-lanthanide-science-pack")
     },
@@ -7115,7 +7115,7 @@ data:extend({
     name = "pm-drilling-fluid",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
         {
             type = "mining-with-fluid",
@@ -7875,8 +7875,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-reusable-rocket-guidance-unit"),
+        PM.unlock_recipe("pm-reusable-rocket-part-unpacking"),
     },
-    prerequisites = {"pm-advanced-LDS-production", "pm-space-processing-units"},
+    prerequisites = {"pm-advanced-LDS-production", "space-science-pack"},
     unit =
     {
       count = 900,
@@ -7898,6 +7900,38 @@ data:extend({
       time = 200
     }
   },
+  {
+    type = "technology",
+    name = "pm-reusable-rocket-part-unpacking-productivity",
+    icon_size = 64,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/icons/reusable-rocket-part.png"),
+    effects =
+    {
+        PM.modify_recipe_productivity("pm-reusable-rocket-part-unpacking", 0.04),
+    },
+    prerequisites = {"pm-reusable-rocket-parts"},
+    max_level = 50,
+    unit =
+    {
+      count_formula = "1.25^L*500",
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    }
+  },
 
 --anything behind this line should take double of TM/ATM/AATM science
 --MARK: LA science
@@ -7906,7 +7940,7 @@ data:extend({
     name = "pm-speed-module-6",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/speed-module-6-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-speed-module-6")
     },
@@ -7936,7 +7970,7 @@ data:extend({
     name = "pm-efficiency-module-6",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/efficiency-module-6-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-efficiency-module-6")
     },
@@ -7966,7 +8000,7 @@ data:extend({
     name = "pm-productivity-module-6",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/productivity-module-6-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-productivity-module-6")
     },
@@ -7996,7 +8030,7 @@ data:extend({
     name = "pm-advanced-YAG-lasers",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
     },
     prerequisites = {"pm-lanthanide-science-pack"},
@@ -8025,7 +8059,7 @@ data:extend({
     name = "pm-scandium-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-thortveitite"),
         PM.unlock_recipe("pm-scandium-trioxide"),
@@ -8059,7 +8093,7 @@ data:extend({
     name = "pm-advanced-magnets",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
         PM.unlock_recipe("pm-neodymium-low-seperated-monazite"),
         PM.unlock_recipe("pm-neodymium-high-seperated-monazite"),
@@ -8107,7 +8141,7 @@ data:extend({
     name = "pm-advanced-yttrium-extraction",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
     },
     prerequisites = {"pm-lanthanide-science-pack"},
@@ -8136,7 +8170,7 @@ data:extend({
     name = "pm-advanced-LDS-production",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
     },
     prerequisites = {"pm-scandium-processing"},
@@ -8165,7 +8199,7 @@ data:extend({
     name = "pm-pennyjim-neodymium-146-enrichment-process",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
     },
     prerequisites = {"pm-lanthanide-science-pack", "pm-astatine-processing"},
@@ -8181,7 +8215,7 @@ data:extend({
     name = "pm-akip-neodymium-147-enrichment-process",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects = 
+    effects =
     {
 
     },

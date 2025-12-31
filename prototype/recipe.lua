@@ -5885,7 +5885,7 @@ data:extend({
     energy_required = 24,
     category = "chemistry",
     allow_productivity = true,
-    ingredients = 
+    ingredients =
     {
         PM.ingredient("pm-o-phenylenediamine", 20, "fluid"),
         PM.ingredient("pm-ethylene-glycol", 40, "fluid"),

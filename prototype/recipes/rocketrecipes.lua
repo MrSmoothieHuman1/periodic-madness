@@ -421,6 +421,43 @@ data:extend({
         PM.product("satellite", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-reusable-rocket-guidance-unit",
+    enabled = false,
+    energy_required = 30,
+    ingredients =
+    {
+        PM.ingredient("pm-rocket-control-unit", 2),
+        PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("pm-advanced-processing-unit", 5),
+        PM.ingredient("pm-travelling-wave-amplifier-tube", 4),
+        PM.ingredient("pm-mylar", 10)
+    },
+    results =
+    {
+        PM.product("pm-reusable-rocket-guidance-unit", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-reusable-rocket-part-unpacking",
+    enabled = false,
+    energy_required = 15,
+    maximum_productivity = 2,
+    main_product = "pm-rocket-control-unit",
+    ingredients =
+    {
+        PM.ingredient("pm-reusable-rocket-part", 1)
+    },
+    results =
+    {
+        PM.product_chance("pm-reusable-rocket-guidance-unit", 1, 0.2),
+        PM.product_chance("pm-rocket-control-unit", 1, 0.5),
+        PM.product_chance("pm-rocket-cladding-parts", 2, 0.5),
+        PM.product_chance("pm-rocket-nozzle-parts", 2, 0.5),
+    }
+  },
 
 --MARK: Rocket recipes
   {

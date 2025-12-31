@@ -30,6 +30,7 @@ Date: 2025-19-12
     - Added advanced LDS recipes.
     - Added the final tier of science recipes, which makes use of a lot more elements ;)
     - Added asteriod mining, which has been planned since forever and lanthanides needed more unlocks! you send up a specialised drill that drops down elemental asteriod chunks, which turns into bibilical amounts of that group ore.
+    - Added reusable rocket parts which are unlocked in lanthanide science. When launched in a rocket, they bring back down 'reusable rocket parts' which can be unpacked to get a return on your items.
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
