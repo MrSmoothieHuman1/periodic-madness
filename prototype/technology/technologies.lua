@@ -7902,7 +7902,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-reusable-rocket-part-unpacking-productivity",
+    name = "pm-improved-reusable-rocket-part-unpacking",
     icon_size = 64,
     icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/icons/reusable-rocket-part.png"),
     effects =
