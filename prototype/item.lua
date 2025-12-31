@@ -1981,7 +1981,7 @@ data:extend({
     name = "pm-reusable-rocket-guidance-unit",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
-    rocket_launch_mode = "manual",
+    send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
         PM.product("pm-reusable-rocket-part", 1)
