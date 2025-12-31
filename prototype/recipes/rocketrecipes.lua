@@ -432,7 +432,7 @@ data:extend({
         PM.ingredient("pm-gyroscope", 1),
         PM.ingredient("pm-advanced-processing-unit", 5),
         PM.ingredient("pm-travelling-wave-amplifier-tube", 4),
-        PM.ingredient("pm-mylar", 10)
+        PM.ingredient("pm-heat-shielding", 6)
     },
     results =
     {

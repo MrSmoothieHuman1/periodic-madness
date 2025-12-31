@@ -27,6 +27,18 @@ data:extend({
       hidden = true,
       hidden_in_factoriopedia = true,
     },
+    {
+        type = "module-category",
+        name = "pm-beamcon-speed",
+        hidden = true,
+        hidden_in_factoriopedia = true,
+    },
+    {
+        type = "module-category",
+        name = "pm-beamcon-efficiency",
+        hidden = true,
+        hidden_in_factoriopedia = true,
+    },
 
     --MARK: Normal modules
     {

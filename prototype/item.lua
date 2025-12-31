@@ -1984,7 +1984,7 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-reusable-rocket-part", 1)
+        PM.product("pm-reusable-rocket-part", 3)
     },
     subgroup = "pm-rocket-launchables",
     order = "b",
@@ -1992,7 +1992,7 @@ data:extend({
     pick_sound = item_sounds.mechanical_inventory_pickup,
     drop_sound = item_sounds.mechanical_inventory_move,
     weight = 250 * kg,
-    stack_size = 2
+    stack_size = 1
   },
   {
     type = "item",
@@ -2014,14 +2014,15 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-reusable-rocket-part", 1)
+        PM.product("pm-speed-beamcon-platform", 1),
+        PM.product("pm-speed-beamcon-reciever", 1)
     },
     subgroup = "pm-rocket-launchables",
     order = "c",
     inventory_move_sound = item_sounds.mechanical_inventory_move,
     pick_sound = item_sounds.mechanical_inventory_pickup,
     drop_sound = item_sounds.mechanical_inventory_move,
-    weight = 500 * kg,
+    weight = 750 * kg,
     stack_size = 1
   },
   {
@@ -2032,17 +2033,59 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-reusable-rocket-part", 1)
+        PM.product("pm-efficiency-beamcon-platform", 1),
+        PM.product("pm-efficiency-beamcon-reciever", 1)
     },
     subgroup = "pm-rocket-launchables",
     order = "d",
     inventory_move_sound = item_sounds.mechanical_inventory_move,
     pick_sound = item_sounds.mechanical_inventory_pickup,
     drop_sound = item_sounds.mechanical_inventory_move,
-    weight = 500 * kg,
+    weight = 750 * kg,
     stack_size = 1
   },
-
+  {
+    type = "item",
+    name = "pm-speed-beamcon-platform",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
+    subgroup = "module",
+    order = "e",
+    stack_size = 5,
+  },
+  {
+    type = "item",
+    name = "pm-efficiency-beamcon-platform",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
+    subgroup = "module",
+    order = "f",
+    stack_size = 5,
+  },
+  {
+    type = "module",
+    name = "pm-speed-beamcon-reciever",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
+    effect = { speed = 1, consumption = 1.5 },
+    tier = 1,
+    category = "pm-beamcon-speed",
+    subgroup = "pm-speed",
+    order = "g",
+    stack_size = 5,
+  },
+  {
+    type = "module",
+    name = "pm-efficiency-beamcon-reciever",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
+    effect = {consumption = -1, speed = 0.5},
+    tier = 1,
+    category = "pm-beamcon-efficiency",
+    subgroup = "pm-efficiency",
+    order = "g",
+    stack_size = 5,
+  },
   {
     type = "item",
     name = "pm-solar-panel-equipment-2",
