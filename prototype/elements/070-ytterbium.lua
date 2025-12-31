@@ -4,7 +4,7 @@ data:extend({
       name = "pm-low-ytterbium-mixture",
       icon_size = 64,
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
-      subgroup = "pm-europium-la",
+      subgroup = "pm-ytterbium-la",
       order = "ca",
       stack_size = 250
     },
@@ -13,7 +13,7 @@ data:extend({
       name = "pm-high-ytterbium-mixture",
       icon_size = 64,
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
-      subgroup = "pm-europium-la",
+      subgroup = "pm-ytterbium-la",
       order = "da",
       stack_size = 250
     },
@@ -22,7 +22,7 @@ data:extend({
         name = "pm-impure-ytterbium",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
-        subgroup = "pm-europium-la",
+        subgroup = "pm-ytterbium-la",
         order = "e",
         stack_size = 100
     },
@@ -31,7 +31,7 @@ data:extend({
       name = "pm-ytterbium-plate",
       icon_size = 64,
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
-      subgroup = "pm-europium-la",
+      subgroup = "pm-ytterbium-la",
       order = "g",
       stack_size = 200
     },
@@ -41,7 +41,7 @@ data:extend({
         name = "pm-ytterbium-solution",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
-        subgroup = "pm-europium-la",
+        subgroup = "pm-ytterbium-la",
         order = "a",
         default_temperature = 15,
         base_color = {r = 0.3, g = 0.3, b = 0.2},
@@ -52,7 +52,7 @@ data:extend({
         name = "pm-ytterbium-vapour",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
-        subgroup = "pm-europium-la",
+        subgroup = "pm-ytterbium-la",
         order = "a",
         default_temperature = 15,
         base_color = {r = 0.3, g = 0.3, b = 0.2},

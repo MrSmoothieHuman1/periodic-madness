@@ -32,7 +32,7 @@ data:extend({
         name = "pm-molten-gadolinium-chloride",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
-        subgroup = "pm-europium-la",
+        subgroup = "pm-gadolinium-la",
         order = "d",
         default_temperature = 15,
         base_color = {r = 0.3, g = 0.3, b = 0.2},
