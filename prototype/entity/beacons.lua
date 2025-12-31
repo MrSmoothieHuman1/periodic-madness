@@ -374,7 +374,149 @@ data:extend({
           {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 1}
         },
       },
-      
+--MARK: Beamcon
+    {
+        type = "beacon",
+        name = "pm-speed-beamcon-platform",
+        icon = "__base__/graphics/icons/beacon.png",
+        flags = {"placeable-player", "player-creation"},
+        minable = {mining_time = 0.45, result = "pm-proximity-beacon"},
+        fast_replaceable_group = "beacon",
+        max_health = 150,
+        corpse = "beacon-remnants",
+        dying_explosion = "beacon-explosion",
+        collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
+        selection_box = {{-1, -1}, {1, 1}},
+        damaged_trigger_effect = hit_effects.entity(),
+        drawing_box_vertical_extension = 0.7,
+        allowed_module_categories = {"pm-beamcon-speed"},
+        allowed_effects = {"speed", "consumption"},
+        graphics_set = require("prototype.entity.beacon-graphics.proximity-beacon-graphics"),
+        radius_visualisation_picture =
+        {
+          filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
+          priority = "extra-high-no-scale",
+          width = 10,
+          height = 10
+        },
+        supply_area_distance = 64,
+        energy_source =
+        {
+          type = "electric",
+          usage_priority = "secondary-input"
+        },
+        impact_category = "metal",
+        open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
+        close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
+        working_sound =
+        {
+          sound =
+          {
+            variations = sound_variations("__base__/sound/beacon", 2, 0.3),
+            audible_distance_modifier = 0.33,
+          },
+          max_sounds_per_prototype = 3
+        },
+        energy_usage = "1MW",
+        distribution_effectivity = 0.25,
+        distribution_effectivity_bonus_per_quality_level = 0.2,
+        profile =
+        {
+            0.25, 0.5, 0.75, 1, 1, 1, 1, 0.75, 0.5, 0.25, 0
+        },
+        beacon_counter = "same_type",
+        module_slots = 1,
+        icons_positioning =
+        {
+          {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 2}
+        },
+        water_reflection =
+        {
+          pictures =
+          {
+            filename = "__base__/graphics/entity/beacon/beacon-reflection.png",
+            priority = "extra-high",
+            width = 18,
+            height = 29,
+            shift = util.by_pixel(0, 55),
+            variation_count = 1,
+            scale = 5
+          },
+          rotate = false,
+          orientation_to_variation = false
+        }
+      },
+      {
+        type = "beacon",
+        name = "pm-efficiency-beamcon-platform",
+        icon = "__base__/graphics/icons/beacon.png",
+        flags = {"placeable-player", "player-creation"},
+        minable = {mining_time = 0.45, result = "pm-proximity-beacon"},
+        fast_replaceable_group = "beacon",
+        max_health = 150,
+        corpse = "beacon-remnants",
+        dying_explosion = "beacon-explosion",
+        collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
+        selection_box = {{-1, -1}, {1, 1}},
+        damaged_trigger_effect = hit_effects.entity(),
+        drawing_box_vertical_extension = 0.7,
+        allowed_module_categories = {"pm-beamcon-efficiency"},
+        allowed_effects = {"speed", "consumption"},
+        graphics_set = require("prototype.entity.beacon-graphics.proximity-beacon-graphics"),
+        radius_visualisation_picture =
+        {
+          filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
+          priority = "extra-high-no-scale",
+          width = 10,
+          height = 10
+        },
+        supply_area_distance = 64,
+        energy_source =
+        {
+          type = "electric",
+          usage_priority = "secondary-input"
+        },
+        impact_category = "metal",
+        open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
+        close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
+        working_sound =
+        {
+          sound =
+          {
+            variations = sound_variations("__base__/sound/beacon", 2, 0.3),
+            audible_distance_modifier = 0.33,
+          },
+          max_sounds_per_prototype = 3
+        },
+        energy_usage = "1MW",
+        distribution_effectivity = 0.25,
+        distribution_effectivity_bonus_per_quality_level = 0.2,
+        profile =
+        {
+            0.25, 0.5, 0.75, 1, 1, 1, 1, 0.75, 0.5, 0.25, 0
+        },
+        beacon_counter = "same_type",
+        module_slots = 1,
+        icons_positioning =
+        {
+          {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 2}
+        },
+        water_reflection =
+        {
+          pictures =
+          {
+            filename = "__base__/graphics/entity/beacon/beacon-reflection.png",
+            priority = "extra-high",
+            width = 18,
+            height = 29,
+            shift = util.by_pixel(0, 55),
+            variation_count = 1,
+            scale = 5
+          },
+          rotate = false,
+          orientation_to_variation = false
+        }
+      },    
 })
 
 data.raw["beacon"]["beacon"].distribution_effectivity = 1
