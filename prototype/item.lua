@@ -1992,7 +1992,7 @@ data:extend({
     pick_sound = item_sounds.mechanical_inventory_pickup,
     drop_sound = item_sounds.mechanical_inventory_move,
     weight = 250 * kg,
-    stack_size = 10
+    stack_size = 2
   },
   {
     type = "item",
@@ -2005,6 +2005,42 @@ data:extend({
     pick_sound = item_sounds.mechanical_inventory_pickup,
     drop_sound = item_sounds.mechanical_inventory_move,
     stack_size = 20
+  },
+  {
+    type = "item",
+    name = "pm-speed-beamcon-satellite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+    send_to_orbit_mode = "automated",
+    rocket_launch_products =
+    {
+        PM.product("pm-reusable-rocket-part", 1)
+    },
+    subgroup = "pm-rocket-launchables",
+    order = "c",
+    inventory_move_sound = item_sounds.mechanical_inventory_move,
+    pick_sound = item_sounds.mechanical_inventory_pickup,
+    drop_sound = item_sounds.mechanical_inventory_move,
+    weight = 500 * kg,
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "pm-efficiency-beamcon-satellite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+    send_to_orbit_mode = "automated",
+    rocket_launch_products =
+    {
+        PM.product("pm-reusable-rocket-part", 1)
+    },
+    subgroup = "pm-rocket-launchables",
+    order = "d",
+    inventory_move_sound = item_sounds.mechanical_inventory_move,
+    pick_sound = item_sounds.mechanical_inventory_pickup,
+    drop_sound = item_sounds.mechanical_inventory_move,
+    weight = 500 * kg,
+    stack_size = 1
   },
 
   {
