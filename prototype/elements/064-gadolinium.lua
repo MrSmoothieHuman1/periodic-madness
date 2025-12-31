@@ -12,7 +12,12 @@ data:extend({
       type = "item",
       name = "pm-gadolinium-sponge",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/gadolinium-sponge.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/gadolinium-sponge.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/gadolinium-sponge-2.png", size = 64, scale = 0.45}
+      },
       subgroup = "pm-gadolinium-la",
       order = "c",
       stack_size = 250
