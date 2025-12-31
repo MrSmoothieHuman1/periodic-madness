@@ -204,5 +204,29 @@ data:extend({
     {
       PM.product("pm-yttrium-ore", 5)
     }
-  } --[[@as data.RecipePrototype]]
+  } --[[@as data.RecipePrototype]],
+
+  {
+    type = "recipe",
+    name = "pm-pure-bastnasite-crushing",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/recipes/bastnasite-seperation.png",
+    enabled = false,
+    energy_required = 6,
+    category = "pm-crushing",
+    subgroup = "pm-yttrium-tm",
+    order = "ba",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-pure-bastnasite", 8),
+      PM.ingredient("pm-ion-exchange-beads", 6)
+    },
+    results =
+    {
+      PM.product_range("pm-bastnasite-Y", 3, 6),
+      PM.product_range("pm-bastnasite-C", 3, 6),
+      PM.product_range_chance("pm-bastnasite-ce", 0, 3, 0.75)
+    }
+  } --[[@as data.RecipePrototype]],
 })

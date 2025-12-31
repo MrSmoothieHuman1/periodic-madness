@@ -8143,6 +8143,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-pure-bastnasite-crushing")
     },
     prerequisites = {"pm-lanthanide-science-pack"},
     unit =
@@ -8207,7 +8208,7 @@ data:extend({
     {
         type = "craft-item",
         item = "pm-neodymium-146",
-        amount = 50
+        count = 50
     }
   },
   {
@@ -8224,7 +8225,7 @@ data:extend({
     {
         type = "craft-item",
         item = "pm-neodymium-147",
-        amount = 50
+        count = 50
     }
   },
 
