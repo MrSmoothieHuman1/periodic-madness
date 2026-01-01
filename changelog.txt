@@ -36,6 +36,9 @@ Date: 2025-19-12
     - Updated the two steel items graphics and their technology icons.
     - Moved noble gas producitvity research to be behind lanthanides.
 
+  Fixes:
+    - Fixed bismuth chunk leeching icon being old.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.005
 Date: 2025-23-12

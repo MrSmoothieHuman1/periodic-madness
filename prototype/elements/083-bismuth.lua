@@ -47,8 +47,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-bismuth-leeching",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/bismuth-leeching.png",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/bismuth-chunks.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon_size = 64,
+        scale = 0.45,
+      }
+    },
     enabled = false,
     energy_required = 8,
     category = "pm-acids",
