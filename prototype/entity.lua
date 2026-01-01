@@ -4034,6 +4034,7 @@ data:extend({
     collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     fast_replaceable_group = "solar-panel",
+    next_upgrade = "pm-solar-panel-3",
     map_color = {r = 0.341, g = 0.353, b = 0.63},
     energy_source =
     {
