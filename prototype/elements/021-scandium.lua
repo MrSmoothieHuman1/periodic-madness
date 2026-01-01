@@ -30,7 +30,12 @@ data:extend({
         type = "item",
         name = "pm-scandium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/scandium.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-scandium-tm",
         order = "d",
         stack_size = 200
