@@ -30,7 +30,7 @@ data:extend({
       type = "item",
       name = "pm-ytterbium-plate",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/plates/ytterbium-plate.png",
       subgroup = "pm-ytterbium-la",
       order = "g",
       stack_size = 200
