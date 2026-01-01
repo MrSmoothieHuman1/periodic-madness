@@ -867,6 +867,7 @@ data.raw["technology"]["rocket-fuel"].unit =
 data.raw["technology"]["space-science-pack"].prerequisites = {"pm-satellite"}
 data.raw["technology"]["space-science-pack"].icon = "__periodic-madness__/graphics/technology/space-research-data.png"
 data.raw["technology"]["uranium-mining"].hidden = true
+data.raw["technology"]["spidertron"].prerequisites = {"pm-thorium-processing"}
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
