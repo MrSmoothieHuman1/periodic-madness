@@ -385,8 +385,8 @@ data:extend({
         max_health = 150,
         corpse = "beacon-remnants",
         dying_explosion = "beacon-explosion",
-        collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
-        selection_box = {{-1, -1}, {1, 1}},
+        collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_module_categories = {"pm-beamcon-speed"},
@@ -422,7 +422,8 @@ data:extend({
         distribution_effectivity_bonus_per_quality_level = 0.2,
         profile =
         {
-            0.25, 0.5, 0.75, 1, 1, 1, 1, 0.75, 0.5, 0.25, 0
+            1, 1, 1, 1, 1, 1, 1, 1, 8/9, 8/10, 8/11, 8/12, 8/13, 8/14, 8/15, 8/16, 8/17, 8/18, 8/19, 8/20
+            -- 8 is gotten from 200/0.25, because 200% effetivity is the end goal
         },
         beacon_counter = "same_type",
         module_slots = 1,
@@ -456,8 +457,8 @@ data:extend({
         max_health = 150,
         corpse = "beacon-remnants",
         dying_explosion = "beacon-explosion",
-        collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
-        selection_box = {{-1, -1}, {1, 1}},
+        collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_module_categories = {"pm-beamcon-efficiency"},
@@ -493,7 +494,8 @@ data:extend({
         distribution_effectivity_bonus_per_quality_level = 0.2,
         profile =
         {
-            0.25, 0.5, 0.75, 1, 1, 1, 1, 0.75, 0.5, 0.25, 0
+            1, 1, 1, 1, 1, 1, 1, 1, 8/9, 8/10, 8/11, 8/12, 8/13, 8/14, 8/15, 8/16, 8/17, 8/18, 8/19, 8/20
+            -- 8 is gotten from 200/0.25, because 200% effetivity is the end goal
         },
         beacon_counter = "same_type",
         module_slots = 1,
