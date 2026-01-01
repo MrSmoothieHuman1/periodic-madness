@@ -7845,6 +7845,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-speed-beamcon-satellite"),
+        PM.unlock_recipe("pm-efficiency-beamcon-satellite")
     },
     prerequisites = {"pm-speed-module-6", "pm-efficiency-module-6", "pm-advanced-LDS-production"},
     unit =

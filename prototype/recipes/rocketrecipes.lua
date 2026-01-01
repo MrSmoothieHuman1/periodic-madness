@@ -458,6 +458,48 @@ data:extend({
         PM.product_chance("pm-rocket-nozzle-parts", 2, 0.5),
     }
   },
+  {
+    type = "recipe",
+    name = "pm-speed-beamcon-satellite",
+    enabled = false,
+    energy_required = 45,
+    ingredients = 
+    {
+        PM.ingredient("pm-speed-module-6", 10),
+        PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("rocket-fuel", 25),
+        PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
+        PM.ingredient("pm-heat-shielding", 10),
+        PM.ingredient("pm-selenium-sulfur-battery", 15),
+        PM.ingredient("pm-RTG", 1),
+        PM.ingredient("pm-solar-panel-3", 12)
+    },
+    results = 
+    {
+        PM.product("pm-speed-beamcon-satellite", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-efficiency-beamcon-satellite",
+    enabled = false,
+    energy_required = 45,
+    ingredients = 
+    {
+        PM.ingredient("pm-efficiency-module-6", 10),
+        PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("rocket-fuel", 25),
+        PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
+        PM.ingredient("pm-heat-shielding", 10),
+        PM.ingredient("pm-selenium-sulfur-battery", 15),
+        PM.ingredient("pm-RTG", 1),
+        PM.ingredient("pm-solar-panel-3", 12)
+    },
+    results = 
+    {
+        PM.product("pm-efficiency-beamcon-satellite", 1)
+    }
+  },
 
 --MARK: Rocket recipes
   {
