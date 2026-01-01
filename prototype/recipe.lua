@@ -5896,4 +5896,152 @@ data:extend({
         PM.product("pm-1-10-phenanthroline", 30, "fluid")
     }
   },
+  {
+    type = "recipe",
+    name = "pm-promethium-advanced-speed-module-light",
+    enabled = false,
+    energy_required = 30,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-speed-module-light", 2),
+      PM.ingredient("pm-1-3-5-oxadiazine-NON-host", 6),
+      PM.ingredient("pm-promethium-147", 4),
+      PM.ingredient("pm-borosilicate-glass", 5),
+    },
+    results = 
+    {
+      PM.product("pm-advanced-speed-module-light", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-promethium-advanced-efficiency-module-light",
+    enabled = false,
+    energy_required = 30,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-efficiency-module-light", 2),
+      PM.ingredient("pm-tris-2-phenylpyridine-iridium", 6),
+      PM.ingredient("pm-promethium-147", 4),
+      PM.ingredient("pm-borosilicate-glass", 5),
+    },
+    results = 
+    {
+      PM.product("pm-advanced-efficiency-module-light", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-promethium-advanced-productivity-module-light",
+    enabled = false,
+    energy_required = 30,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-productivity-module-light", 2),
+      PM.ingredient("pm-ir-piq-3", 6),
+      PM.ingredient("pm-promethium-147", 4),
+      PM.ingredient("pm-borosilicate-glass", 5),
+    },
+    results = 
+    {
+      PM.product("pm-advanced-productivity-module-light", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-promethium-module-speed-light",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/speed-module-light.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 5,
+    subgroup = "pm-borosilicate-glassing",
+    order = "ia",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass", 8),
+      PM.ingredient("pm-indium-wire", 8),
+      PM.ingredient("pm-promethium-147", 2),
+      PM.ingredient("pm-gallium-nitride", 6),
+    },
+    results =
+    {
+      PM.product("pm-speed-module-light", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-promethium-module-efficiency-light",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/efficiency-module-light.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 5,
+    enabled = false,
+    subgroup = "pm-borosilicate-glassing",
+    order = "ja",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass", 8),
+      PM.ingredient("pm-indium-wire", 8),
+      PM.ingredient("pm-promethium-147", 2),
+      PM.ingredient("pm-gallium-arsenide", 6),
+    },
+    results =
+    {
+      PM.product("pm-efficiency-module-light", 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-promethium-module-productivity-light",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/borosilicate-glass-pane.png",
+        icon_size = 64
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/productivity-module-light.png",
+        icon_size = 64
+      },
+    },
+    energy_required = 5,
+    enabled = false,
+    subgroup = "pm-borosilicate-glassing",
+    order = "ka",
+    allow_productivity = true,
+    ingredients =
+    {
+      PM.ingredient("pm-borosilicate-glass", 8),
+      PM.ingredient("pm-indium-wire", 8),
+      PM.ingredient("pm-promethium-147", 2),
+      PM.ingredient("pm-aluminium-gallium-indium-phosphide", 6),
+    },
+    results =
+    {
+      PM.product("pm-productivity-module-light", 2)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

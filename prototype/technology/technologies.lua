@@ -8237,8 +8237,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-promethium-module-speed-light"),
+        PM.unlock_recipe("pm-promethium-module-efficiency-light"),
+        PM.unlock_recipe("pm-promethium-module-productivity-light"),
+        PM.unlock_recipe("pm-promethium-advanced-speed-module-light"),
+        PM.unlock_recipe("pm-promethium-advanced-efficiency-module-light"),
+        PM.unlock_recipe("pm-promethium-advanced-productivity-module-light"),
     },
-    prerequisites = {"pm-lanthanide-science-pack"},
+    prerequisites = {"pm-lanthanide-science-pack", "pm-advanced-modules"},
     unit =
     {
       count = 850,
