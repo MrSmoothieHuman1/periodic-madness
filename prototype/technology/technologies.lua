@@ -4050,7 +4050,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-sodium-bicarbonate"),
-      PM.unlock_recipe("pm-sodium-bicarbonate-heating"),
+      PM.unlock_recipe("pm-sodium-carbonate"),
       PM.unlock_recipe("pm-sodium-carbonate-seperation"),
     },
     prerequisites = {"pm-alkali-metal-pack-unlock"},

@@ -48,13 +48,12 @@ data:extend({
   {
     type = "recipe",
     name = "pm-sodium-bicarbonate",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/sodium-bicarbonate-mixing.png",
     enabled = false,
     category = "pm-washing",
     subgroup = "pm-sodium-am",
     order = "a",
     energy_required = 8,
+    main_product = "pm-sodium-bicarbonate",
     ingredients =
     {
       PM.ingredient("pm-sea-salt", 10),
@@ -91,7 +90,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-sodium-bicarbonate-heating",
+    name = "pm-sodium-carbonate",
     enabled = false,
     category = "pm-moltening",
     subgroup = "pm-sodium-am",
