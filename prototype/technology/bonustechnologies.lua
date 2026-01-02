@@ -218,7 +218,36 @@ data:extend({
     },
     upgrade = true
   },
-
+  {
+    type = "technology",
+    name = "pm-research-productivity-8",
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      PM.modify("laboratory-productivity", 0.15)
+    },
+    prerequisites = {"pm-research-productivity-7", "pm-lanthanide-science-pack"},
+    unit =
+    {
+      count = 3000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 240
+    },
+    upgrade = true
+  },
 --MARK:Lab speed
 {
     type = "technology",
@@ -308,7 +337,39 @@ data:extend({
     time = 160
   },
 },
-
+{
+  type = "technology",
+  name = "pm-research-speed-10",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/research-speed.png"),
+  effects =
+  {
+    {
+      type = "laboratory-speed",
+      modifier = 1
+    }
+  },
+  prerequisites = {"pm-research-speed-9", "pm-lanthanide-science-pack"},
+  upgrade = true,
+  unit =
+  {
+    count = 2500,
+    ingredients =
+    {
+      {"automation-science-pack", 2},
+      {"logistic-science-pack", 2},
+      {"pm-advanced-advanced-transition-metal-science-pack", 2},
+      {"chemical-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1},
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-noble-gas-science-pack", 1},
+      {"pm-lanthanide-science-pack", 1}
+    },
+    time = 240
+  },
+},
 
 --MARK: Robot battery
 {
@@ -551,6 +612,37 @@ data:extend({
       time = 160
     }
   },
+  {
+    type = "technology",
+    name = "pm-robot-battery-capacity-10",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/robot-battery-4.png",
+    effects =
+    {
+      PM.modify("worker-robot-battery", 1)
+    },
+    prerequisites = {"pm-worker-robots-speed-10", "pm-worker-robots-storage-5", "pm-robot-battery-capacity-9"},
+    upgrade = true,
+    unit =
+    {
+      count = 3000,
+    ingredients =
+    {
+      {"automation-science-pack", 2},
+      {"logistic-science-pack", 2},
+      {"pm-advanced-advanced-transition-metal-science-pack", 2},
+      {"chemical-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1},
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-noble-gas-science-pack", 1},
+      {"pm-lanthanide-science-pack", 1}
+    },
+      time = 240
+    }
+  },
 
 --MARK: Robot speed
 {
@@ -638,7 +730,39 @@ data:extend({
   },
   upgrade = true
 },
-
+{
+  type = "technology",
+  name = "pm-worker-robots-speed-10",
+  icons = util.technology_icon_constant_movement_speed("__base__/graphics/technology/worker-robots-speed.png"),
+  effects =
+  {
+    {
+      type = "worker-robot-speed",
+      modifier = 0.80 --400%
+    }
+  },
+  prerequisites = {"pm-worker-robots-speed-9", "pm-lanthanide-science-pack"},
+  unit =
+  {
+    count = 2200,
+    ingredients =
+    {
+      {"automation-science-pack", 2},
+      {"logistic-science-pack", 2},
+      {"pm-advanced-advanced-transition-metal-science-pack", 2},
+      {"chemical-science-pack", 1},
+      {"pm-post-transition-metal-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1},
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-noble-gas-science-pack", 1},
+      {"pm-lanthanide-science-pack", 1}
+    },
+    time = 220
+  },
+  upgrade = true
+},
 --MARK: Robot storage
 {
   type = "technology",
@@ -1001,6 +1125,35 @@ data:extend({
         {"pm-noble-gas-science-pack", 1}
       },
       time = 160
+    }
+},
+{
+  type = "technology",
+  name = "pm-stronger-beacon-distribution-6",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
+  effects = 
+  {
+    PM.modify("beacon-distribution", 0.125)
+  },
+  prerequisites = {"pm-stronger-beacon-distribution-5", "pm-lanthanide-science-pack"},
+  unit =
+    {
+      count = 2500,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 240
     }
 },
 
@@ -1458,6 +1611,55 @@ data:extend({
   },
   upgrade = true
 },
+{
+  type = "technology",
+  name = "pm-weapon-shooting-speed-12",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+  effects =
+  {
+    {
+      type = "gun-speed",
+      ammo_category = "bullet",
+      modifier = 0.5
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "shotgun-shell",
+      modifier = 0.5
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "pm-shotgun-slug",
+      modifier = 0.5
+    },
+    {
+      type = "gun-speed",
+      ammo_category = "rocket",
+      modifier = 0.70
+    }
+  },
+  prerequisites = {"pm-weapon-shooting-speed-11", "pm-lanthanide-science-pack"},
+  unit =
+  {
+    count = 2000,
+    ingredients =
+    {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+    },
+    time = 220
+  },
+  upgrade = true
+},
 
 --MARK: Laser damage
   {
@@ -1579,6 +1781,40 @@ data:extend({
         {"pm-noble-gas-science-pack", 1},
       },
       time = 120
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-laser-shooting-speed-9",
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/laser-shooting-speed.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "laser",
+        modifier = 1
+      }
+    },
+    prerequisites = {"pm-laser-shooting-speed-8", "pm-lanthanide-science-pack"},
+    unit =
+    {
+      count = 1750,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 180
     },
     upgrade = true
   },
