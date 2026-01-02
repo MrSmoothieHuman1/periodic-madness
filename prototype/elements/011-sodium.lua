@@ -3,8 +3,13 @@ data:extend({
   {
     type = "item",
     name = "pm-sodium-bicarbonate",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sodium-bicarbonate.png",
+    pictures =
+    {
+        {filename = "__periodic-madness__/graphics/icons/sodium-bicarbonate.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/sodium-bicarbonate-2.png", size = 64, scale = 0.5},
+    },
     subgroup = "pm-sodium-am",
     order = "a",
     stack_size = 50
@@ -12,8 +17,15 @@ data:extend({
   {
     type = "item",
     name = "pm-sodium-carbonate",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sodium-carbonate.png",
+    pictures =
+    {
+        {filename = "__periodic-madness__/graphics/icons/sodium-carbonate.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/sodium-carbonate-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/sodium-carbonate.png", size = 64, scale = 0.42},
+        {filename = "__periodic-madness__/graphics/icons/sodium-carbonate-2.png", size = 64, scale = 0.45},
+    },
     subgroup = "pm-sodium-am",
     order = "b",
     stack_size = 200
@@ -23,7 +35,7 @@ data:extend({
     name = "pm-sodium-sulfite",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/sodium-sulfite.png",
-    pictures = 
+    pictures =
     {
         {filename = "__periodic-madness__/graphics/icons/sodium-sulfite.png", size = 64, scale = 0.5},
         {filename = "__periodic-madness__/graphics/icons/sodium-sulfite-2.png", size = 64, scale = 0.5},

@@ -35,6 +35,7 @@ Date: 2025-19-12
   Changes:
     - Updated the two steel items graphics and their technology icons.
     - Moved noble gas producitvity research to be behind lanthanides.
+    - Updated sodium carbonate/bicarbonate icons, and gave them variations.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
