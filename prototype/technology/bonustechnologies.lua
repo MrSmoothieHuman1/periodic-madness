@@ -1558,7 +1558,7 @@ data:extend({
       {
         type = "gun-speed",
         ammo_category = "laser",
-        modifier = 0.80
+        modifier = 0.8
       }
     },
     prerequisites = {"laser-shooting-speed-7", "pm-noble-gas-pack-unlock"},
@@ -1737,6 +1737,39 @@ data:extend({
         {"pm-noble-gas-science-pack", 1},
       },
       time = 140
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "pm-inserter-capacity-bonus-10",
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/inserter-capacity.png"),
+    effects =
+    {
+      {
+        type = "bulk-inserter-capacity-bonus",
+        modifier = 2 -- 13 total, 14 with inserter
+      },
+    },
+    prerequisites = {"pm-inserter-capacity-bonus-9", "pm-lanthanide-science-pack"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 180
     },
     upgrade = true
   },
@@ -2018,7 +2051,7 @@ data:extend({
     icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
     effects =
     {
-        PM.custom_modifier("pm-requester-chest-inventory-size", 1)
+        PM.custom_modifier("pm-requester-chest-inventory-size", 1) -- 2 total
     },
     prerequisites = {"logistic-system"},
     unit =
@@ -2044,7 +2077,7 @@ data:extend({
     icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
     effects =
     {
-        PM.custom_modifier("pm-requester-chest-inventory-size", 1)
+        PM.custom_modifier("pm-requester-chest-inventory-size", 1) -- 3 total
     },
     prerequisites = {"pm-requester-chest-inventory-bonus-capacity-1", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
@@ -2071,7 +2104,7 @@ data:extend({
     icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
     effects =
     {
-        PM.custom_modifier("pm-requester-chest-inventory-size", 2)
+        PM.custom_modifier("pm-requester-chest-inventory-size", 2) -- 5 total
     },
     prerequisites = {"pm-requester-chest-inventory-bonus-capacity-2", "pm-noble-gas-pack-unlock"},
     unit =
@@ -2091,6 +2124,36 @@ data:extend({
             {"pm-noble-gas-science-pack", 1}
         },
         time = 160
+    },
+  },
+  {
+    type = "technology",
+    name = "pm-requester-chest-inventory-bonus-capacity-4",
+    icon_size = 256,
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
+    effects =
+    {
+        PM.custom_modifier("pm-requester-chest-inventory-size", 4) --9 total
+    },
+    prerequisites = {"pm-requester-chest-inventory-bonus-capacity-3", "pm-lanthanide-science-pack"},
+    unit =
+    {
+        count = 1500,
+        ingredients =
+        {
+            {"automation-science-pack", 2},
+            {"logistic-science-pack", 2},
+            {"pm-advanced-advanced-transition-metal-science-pack", 2},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-noble-gas-science-pack", 1},
+            {"pm-lanthanide-science-pack", 1}
+        },
+        time = 220
     },
   },
 --MARK: Artillery damage
