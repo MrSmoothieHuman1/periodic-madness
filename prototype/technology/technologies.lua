@@ -8332,6 +8332,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.modify_recipe_productivity("pm-coolant", 0.25),
+        PM.modify_recipe_productivity("pm-light-coolant", 0.25)
     },
     prerequisites = {"pm-lanthanide-science-pack"},
     unit =
