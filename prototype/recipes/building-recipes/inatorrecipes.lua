@@ -118,6 +118,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-uhrlumin",
     order = "c",
+    main_product = "pm-molten-uhrlumin",
     ingredients =
     {
       PM.ingredient("pm-uhrlumin-precursor-billet", 5),
@@ -127,7 +128,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-molten-uhrlumin", 10, "fluid")
+      PM.product("pm-molten-uhrlumin", 10, "fluid"),
+      PM.product("pm-flux-container", 1)
     }
   },
   {
