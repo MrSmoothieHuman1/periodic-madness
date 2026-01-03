@@ -3956,7 +3956,7 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-platinum-plate", 2, 0.85),
+      PM.catalyst_chance("pm-platinum-plate", 2, 0.85, 2),
       PM.product("pm-nitric-oxide", 5, "fluid"),
       PM.product("water", 7.5, "fluid")
     }
