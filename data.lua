@@ -711,8 +711,8 @@ data.raw["resource"]["stone"].autoplace = resource_autoplace.resource_autoplace_
     name = "stone",
     base_density = 6,
     has_starting_area_placement = true,
-    regular_rq_factor_multiplier = 1.0,
-    starting_rq_factor_multiplier = 1.15
+    regular_rq_factor_multiplier = 1.05,
+    starting_rq_factor_multiplier = 1.25
 }
 
 local AcidPlant = table.deepcopy(data.raw["assembling-machine"]["chemical-plant"])
