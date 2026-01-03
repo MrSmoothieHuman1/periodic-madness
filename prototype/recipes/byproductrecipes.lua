@@ -146,7 +146,18 @@ data:extend({
     type = "recipe",
     name = "pm-mixed-ore-slag-leeching",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/mixed-ore-slag-leeching.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/mixed-ore-slag.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/chromic-acid.png",
+        icon_size = 64,
+        scale = 0.45,
+      }
+    },
     enabled = false,
     energy_required = 4.5,
     category = "pm-acids",
