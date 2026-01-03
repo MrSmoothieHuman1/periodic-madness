@@ -47,7 +47,7 @@ end
 
 for item_type in pairs(defines.prototypes.item) do
   for name, item in pairs(data.raw[item_type] or {}) do
-    if item.electrons ~= 0 then
+    if item.electrons ~= nil then
         make_matter_recipe(item)
     end
   end
