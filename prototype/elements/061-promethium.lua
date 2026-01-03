@@ -23,7 +23,7 @@ data:extend({
        icon_size = 64,
        icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
        subgroup = "pm-promethium-la",
-       order = "a",
+       order = "c",
        stack_size = 200
     },
     {
@@ -78,6 +78,52 @@ data:extend({
         {
             PM.product("pm-promethium-147", 2),
             PM.product("pm-neodymium-147", 2)
+        }
+    },
+
+    {
+        type = "recipe",
+        name = "pm-pennyjim-neodymium-146-enrichment-process",
+        enabled = false,
+        energy_required = 30,
+        category = "centrifuging",
+        subgroup = "pm-promethium-la",
+        order = "d",
+        allow_productivity = true,
+        main_product = "pm-neodymium-146",
+        ingredients =
+        {
+            PM.ingredient("pm-neodymium-146", 20),
+            PM.ingredient("pm-roasted-bastnasite", 1),
+            PM.ingredient("pm-trace-astatine-211", 2)
+        },
+        results =
+        {
+            PM.catalyst("pm-neodymium-146", 24, 20),
+            PM.catalyst("pm-trace-astatine-211", 1, 1)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-akip-neodymium-147-enrichment-process",
+        enabled = false,
+        energy_required = 30,
+        category = "centrifuging",
+        subgroup = "pm-promethium-la",
+        order = "e",
+        allow_productivity = true,
+        main_product = "pm-neodymium-147",
+        ingredients =
+        {
+            PM.ingredient("pm-neodymium-147", 20),
+            PM.ingredient("pm-neodymium-146", 5),
+            PM.ingredient("pm-trace-astatine-211", 2)
+        },
+        results =
+        {
+            PM.catalyst("pm-neodymium-147", 24, 20),
+            PM.catalyst("pm-neodymium-146", 1),
+            PM.catalyst("pm-trace-astatine-211", 1, 1)
         }
     },
 })

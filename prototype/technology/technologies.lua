@@ -8204,13 +8204,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-pennyjim-neodymium-146-enrichment-process")
     },
     prerequisites = {"pm-lanthanide-science-pack", "pm-astatine-processing"},
     research_trigger =
     {
         type = "craft-item",
         item = "pm-neodymium-146",
-        count = 50
+        count = 100
     }
   },
   {
@@ -8220,14 +8221,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-akip-neodymium-147-enrichment-process")
     },
     prerequisites = {"pm-pennyjim-neodymium-146-enrichment-process"},
     research_trigger =
     {
         type = "craft-item",
         item = "pm-neodymium-147",
-        count = 50
+        count = 200
     }
   },
   {
