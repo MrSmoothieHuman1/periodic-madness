@@ -1,5 +1,4 @@
 local function make_matter_recipe(item)
-    if item.electrons ~= 0 then return end
 
     data:extend{
 		{
@@ -10,16 +9,16 @@ local function make_matter_recipe(item)
 			category = "pm-burnining",
             order = "x",
 			energy_required = 10,
-            main_product = "pm-electrons",
+            main_product = "pm-electron-gas",
 			ingredients =
 			{
 				PM.ingredient(item.name, 1, item.type),
 			},
 			results =
             {
-                PM.product("pm-electrons", item.electrons, "fluid"),
-                PM.product("pm-neutrons", item.neutrons, "fluid"),
-                PM.product("pm-protons", item.protons, "fluid"),
+                PM.product("pm-electron-gas", item.electrons, "fluid"),
+                PM.product("pm-neutron-gas", item.neutrons, "fluid"),
+                PM.product("pm-proton-gas", item.protons, "fluid"),
             }
 		},
 		{
