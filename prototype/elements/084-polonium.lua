@@ -68,7 +68,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-210-decay.png",
     enabled = false,
     energy_required = 15,
-    category = "chemistry",
+    category = "pm-beta-decay",
     subgroup = "pm-polonium-ptm",
     order = "b",
     allow_productivity = true,
@@ -78,7 +78,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-polonium-210", 3, 4),
+      PM.catalyst_range("pm-polonium-210", 2, 3, 2),
+      PM.catalyst_range("pm-bismuth-210", 2, 3, 2),
     }
   },
   {
@@ -130,7 +131,7 @@ data:extend({
     subgroup = "pm-polonium-ptm",
     order = "e",
     enabled = false,
-    energy_required = 45,
+    energy_required = 20,
     allow_productivity = true,
     ingredients =
     {
@@ -138,10 +139,10 @@ data:extend({
       PM.ingredient("pm-bismuth-210", 2),
       PM.ingredient("pm-trace-astatine-211", 2)
     },
-    results = 
+    results =
     {
-      PM.catalyst("pm-polonium-210", 22, 20),
-      PM.product_range_chance("pm-bismuth-210", 1, 2, 0.85),
+      PM.catalyst("pm-polonium-210", 24, 20),
+      PM.catalyst("pm-bismuth-210", 1, 1),
       PM.catalyst("pm-trace-astatine-211", 1, 1)
     }
   },

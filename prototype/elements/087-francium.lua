@@ -101,7 +101,7 @@ data:extend({
     type = "recipe",
     name = "pm-francium-forming",
     enabled = false,
-    energy_required = 18,
+    energy_required = 16,
     category = "pm-cyclotroning",
     subgroup = "pm-francium-am",
     order = "a",
@@ -109,11 +109,11 @@ data:extend({
     {
       PM.ingredient("pm-gold-plate", 25),
       PM.ingredient("pm-oxygen-gas", 50, "fluid"),
-      PM.ingredient("pm-magneto-orbital-trap", 1)
+      PM.ingredient("pm-magneto-orbital-trap", 2)
     },
     results =
     {
-      PM.product("pm-francium-magneto-orbital-trap", 1)
+      PM.product("pm-francium-magneto-orbital-trap", 2)
     }
   },
   {
@@ -132,9 +132,9 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-francium-209", 2, 0.5),
-      PM.product_chance("pm-francium-210", 2, 0.5),
-      PM.product_chance("pm-francium-211", 2, 0.5),
+      PM.product_chance("pm-francium-209", 2, 0.66),
+      PM.product_chance("pm-francium-210", 2, 0.66),
+      PM.product_chance("pm-francium-211", 2, 0.66),
       PM.catalyst("pm-magneto-orbital-trap", 2, 2)
     }
   },
@@ -176,20 +176,20 @@ data:extend({
     subgroup = "pm-francium-am",
     order = "d",
     enabled = false,
-    energy_required = 30,
+    energy_required = 20,
     allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-francium-209", 10),
       PM.ingredient("pm-francium-210", 10),
       PM.ingredient("pm-francium-211", 10),
-      PM.ingredient("pm-trace-astatine-211", 4)
+      PM.ingredient("pm-trace-astatine-211", 2)
     },
     results =
     {
-      PM.catalyst("pm-francium-209", 11, 10),
-      PM.catalyst("pm-francium-210", 11, 10),
-      PM.catalyst("pm-francium-211", 11, 10),
+      PM.catalyst("pm-francium-209", 15, 10),
+      PM.catalyst("pm-francium-210", 15, 10),
+      PM.catalyst("pm-francium-211", 15, 10),
       PM.catalyst("pm-trace-astatine-211", 1, 1)
     }
   },

@@ -68,14 +68,14 @@ data:extend({
         allow_productivty = true,
         ingredients =
         {
-          PM.ingredient("pm-bismuth-ore", 20),
+          PM.ingredient("pm-bismuth-ore", 15),
           PM.ingredient("copper-plate", 10),
           PM.ingredient("pm-aluminium-plate", 10),
           PM.ingredient("pm-gold-plate", 10), --all need to be catalysts for hard mode
         },
         results =
         {
-          PM.product_range_chance("pm-mixed-trace-astatine", 1, 3, 0.6)
+          PM.product_range_chance("pm-mixed-trace-astatine", 1, 3)
         }
     },
     {
@@ -85,12 +85,12 @@ data:extend({
         order = "b",
         enabled = false,
         energy_required = 10,
-        ingredients = 
+        ingredients =
         {
           PM.ingredient("pm-magneto-orbital-trap", 1),
           PM.ingredient("pm-mixed-trace-astatine", 3)
         },
-        results = 
+        results =
         {
           PM.product("pm-mixed-astatine-magneto-orbital-trap", 1)
         }
@@ -114,10 +114,10 @@ data:extend({
         },
         results = 
         {
-          PM.product_range_chance("pm-trace-astatine-209", 1, 2, 0.5),
-          PM.product_range_chance("pm-trace-astatine-210", 1, 2, 0.5),
-          PM.product_range_chance("pm-trace-astatine-211", 1, 2, 0.5),
-          PM.product_chance("pm-magneto-orbital-trap", 1, 0.9)
+          PM.product_range_chance("pm-trace-astatine-209", 1, 2, 0.75),
+          PM.product_range_chance("pm-trace-astatine-210", 1, 2, 0.75),
+          PM.product_range_chance("pm-trace-astatine-211", 1, 2, 0.75),
+          PM.catalyst_chance("pm-magneto-orbital-trap", 1, 0.9, 1)
         }
     },
     {
@@ -139,9 +139,9 @@ data:extend({
         },
         results = 
         {
-          PM.product_range_chance("pm-trace-astatine-209", 2, 6, 0.5),
-          PM.product_range_chance("pm-trace-astatine-210", 2, 6, 0.5),
-          PM.product_range_chance("pm-trace-astatine-211", 3, 6, 0.8),
+          PM.product_range_chance("pm-trace-astatine-209", 2, 6, 0.6),
+          PM.product_range_chance("pm-trace-astatine-210", 2, 6, 0.6),
+          PM.product_range_chance("pm-trace-astatine-211", 3, 6, 0.9),
         }
     }
 })
