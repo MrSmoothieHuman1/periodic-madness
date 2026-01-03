@@ -7848,7 +7848,7 @@ data:extend({
         PM.unlock_recipe("pm-speed-beamcon-satellite"),
         PM.unlock_recipe("pm-efficiency-beamcon-satellite")
     },
-    prerequisites = {"pm-speed-module-6", "pm-efficiency-module-6", "pm-advanced-LDS-production"},
+    prerequisites = {"pm-speed-module-6", "pm-efficiency-module-6", "pm-advanced-LDS-production", "pm-travelling-wave-erbium-amplifier-tubes"},
     unit =
     {
       count = 1000,
@@ -7880,7 +7880,7 @@ data:extend({
         PM.unlock_recipe("pm-reusable-rocket-guidance-unit"),
         PM.unlock_recipe("pm-reusable-rocket-part-unpacking"),
     },
-    prerequisites = {"pm-advanced-LDS-production", "space-science-pack"},
+    prerequisites = {"pm-advanced-LDS-production", "space-science-pack", "pm-travelling-wave-erbium-amplifier-tubes"},
     unit =
     {
       count = 900,
@@ -8263,6 +8263,64 @@ data:extend({
         {"pm-lanthanide-science-pack", 1}
       },
       time = 180
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-travelling-wave-erbium-amplifier-tubes",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-lanthanide-science-pack", "effect-transmission"},
+    unit =
+    {
+      count = 850,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 180
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-cryocooling",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-lanthanide-science-pack"},
+    unit =
+    {
+      count = 900,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 200
     }
   },
 --MARK: AC science
