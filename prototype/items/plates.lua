@@ -56,6 +56,9 @@ data:extend({
     },
     subgroup = "pm-gold-tm",
     order = "c",
+    protons = 79,
+    neutrons = 118,
+    electrons = 79,
     stack_size = 100
   },
   {

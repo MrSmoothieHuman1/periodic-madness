@@ -1609,6 +1609,12 @@ data:extend({
     group = "fluids",
     order = "c"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-subatomic-particles",
+    group = "fluids",
+    order = "d",
+  },
 
   --MARK: Science tab
   {
