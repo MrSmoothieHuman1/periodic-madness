@@ -72,6 +72,8 @@ data:extend({
     },
     subgroup = "pm-rubidium-am",
     order = "e",
+    protons = 37,
+    neutrons = 46,
     stack_size = 200
   },
 

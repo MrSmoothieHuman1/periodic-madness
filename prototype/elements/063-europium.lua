@@ -24,6 +24,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
       subgroup = "pm-europium-la",
       order = "e",
+      protons = 63,
+      neutrons = 89,
       stack_size = 200
     },
 

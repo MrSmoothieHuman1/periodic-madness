@@ -39,6 +39,8 @@ data:extend({
     },
     subgroup = "pm-calcium-aem",
     order = "c",
+    protons = 20,
+    neutrons = 20,
     stack_size = 200
   },
   {

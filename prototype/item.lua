@@ -230,37 +230,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-carbon",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/carbon.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/carbon.png",   size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/carbon-2.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/carbon-3.png", size = 64, scale = 0.5 },
-    },
-    subgroup = "pm-carbon-rnm",
-    category = "pm-nonassembling-gases",
-    order = "a",
-    stack_size = 100
-  } --[[@as data.ItemPrototype]],
-  {
-    type = "item",
-    name = "pm-sodium",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/ores/sodium-1.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/ores/sodium-1.png", size = 64, scale = 0.5 },
-      { filename = "__periodic-madness__/graphics/icons/ores/sodium-2.png", size = 64, scale = 0.48 },
-      { filename = "__periodic-madness__/graphics/icons/ores/sodium-3.png", size = 64, scale = 0.5 },
-    },
-    subgroup = "pm-sodium-am",
-    order = "a",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "pm-air-filter",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/air-filter.png",

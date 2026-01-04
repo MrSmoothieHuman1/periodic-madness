@@ -7218,7 +7218,8 @@ data:extend({
     {
         PM.unlock_recipe("pm-bastnasite-ce"),
         PM.unlock_recipe("pm-cerium-dioxide"),
-        PM.unlock_recipe("pm-cerium")
+        PM.unlock_recipe("pm-cerium"),
+        PM.unlock_recipe("pm-cerium-plate")
     },
     prerequisites = {"pm-bastnasite-processing"},
     unit =

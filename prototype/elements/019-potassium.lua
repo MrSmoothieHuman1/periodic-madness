@@ -57,6 +57,8 @@ data:extend({
     },
     subgroup = "pm-potassium-am",
     order = "d",
+    protons = 19,
+    neutrons = 20,
     stack_size = 200
   },
   {

@@ -61,6 +61,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-lutetium-la",
         order = "b",
+        protons = 71,
+        neutrons = 104,
         stack_size = 200,
     },
 

@@ -60,6 +60,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/plates/holmium-plate.png",
         subgroup = "pm-holmium-la",
         order = "h",
+        protons = 67,
+        neutrons = 98,
         stack_size = 200
     },
 

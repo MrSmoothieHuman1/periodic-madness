@@ -13,6 +13,8 @@ data:extend({
         },
         subgroup = "pm-thulium-la",
         order = "e",
+        protons = 69,
+        neutrons = 136,
         stack_size = 200
     },
 

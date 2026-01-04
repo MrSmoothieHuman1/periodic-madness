@@ -69,6 +69,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
       subgroup = "pm-erbium-la",
       order = "i",
+      protons = 68,
+      neutrons = 9,
       stack_size = 200
     },
 

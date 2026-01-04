@@ -76,6 +76,8 @@ data:extend({
         },
         subgroup = "pm-radium-aem",
         order = "e",
+        protons = 88,
+        neutrons = 138,
         stack_size = 200
     },
 

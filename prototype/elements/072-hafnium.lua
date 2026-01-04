@@ -71,6 +71,8 @@ data:extend({
         },
         subgroup = "pm-hafnium-tm",
         order = "e",
+        protons = 72,
+        neutrons = 106,
         stack_size = 200
     },
 

@@ -35,6 +35,8 @@ data:extend({
         },
         subgroup = "pm-technectium-tm",
         order = "c",
+        protons = 43,
+        neutrons = 56,
         stack_size = 10
     },
 

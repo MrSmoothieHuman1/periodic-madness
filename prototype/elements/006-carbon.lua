@@ -1,4 +1,22 @@
 data:extend({
+    {
+      type = "item",
+      name = "pm-carbon",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/carbon.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/carbon.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/carbon-2.png", size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/carbon-3.png", size = 64, scale = 0.5 },
+      },
+      subgroup = "pm-carbon-rnm",
+      category = "pm-nonassembling-gases",
+      protons = 6,
+      neutrons = 6,
+      order = "a",
+      stack_size = 100
+    } --[[@as data.ItemPrototype]],
 
     {
         type = "recipe",

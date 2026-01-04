@@ -16,6 +16,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/xenon-gas.png",
     subgroup = "pm-xenon-nb",
     order = "b",
+    protons = 54,
+    neutrons = 77,
     default_temperature = 15,
     base_color = {r = 0.7, g = 1, b = 0.7},
     flow_color = {r = 0.7, g = 1, b = 0.7},

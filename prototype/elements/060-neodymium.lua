@@ -15,6 +15,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-neodymium-la",
         order = "g",
+        protons = 60,
+        neutrons = 84,
         stack_size = 100
     },
     {

@@ -16,6 +16,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/neon-gas.png",
     subgroup = "pm-neon-nb",
     order = "b",
+    protons = 10,
+    neutrons = 10,
     default_temperature = 15,
     base_color = {r = 0.7, g = 1, b = 0.7},
     flow_color = {r = 0.7, g = 1, b = 0.7},

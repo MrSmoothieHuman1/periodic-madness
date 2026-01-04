@@ -38,6 +38,8 @@ data:extend({
         },
         subgroup = "pm-scandium-tm",
         order = "d",
+        protons = 21,
+        neutrons = 24,
         stack_size = 200
     },
     {

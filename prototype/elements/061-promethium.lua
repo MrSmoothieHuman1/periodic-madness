@@ -24,6 +24,8 @@ data:extend({
        icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
        subgroup = "pm-promethium-la",
        order = "c",
+       protons = 61,
+       neutrons = 86,
        stack_size = 200
     },
     {

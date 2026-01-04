@@ -27,6 +27,8 @@ data:extend({
         },
         subgroup = "pm-dubnium-tm",
         order = "b",
+        protons = 105,
+        neutrons = 57,
         stack_size = 10
     },
 

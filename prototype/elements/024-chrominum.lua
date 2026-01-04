@@ -44,6 +44,8 @@ data:extend({
     },
     subgroup = "pm-chrominum-tm",
     order = "c",
+    protons = 24,
+    neutrons = 28,
     stack_size = 200,
   },
   {

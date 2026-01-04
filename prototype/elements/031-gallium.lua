@@ -31,6 +31,32 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-gallium-liqour",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/fluids/gallium-liqour.png",
+    subgroup = "pm-gallium-ptm",
+    order = "b",
+    default_temperature = 15,
+    base_color = {r = 1, g = 0.842, b = 0.862},
+    flow_color = {r = 1, g = 0.842, b = 0.862},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-liquid-gallium",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/liquid-gallium.png",
+    subgroup = "pm-gallium-ptm",
+    order = "c",
+    protons = 31,
+    neutrons = 39,
+    default_temperature = 15,
+    base_color = {r = 0.6, g = 0.6, b = 0.7},
+    flow_color = {r = 0.6, g = 0.6, b = 0.7}
+  },
+
+  {
     type = "recipe",
     name = "pm-sodium-hydroxide",
     enabled = false,

@@ -43,6 +43,8 @@ data:extend({
     },
     subgroup = "pm-vanadium-tm",
     order = "b",
+    protons = 23,
+    neutrons = 28,
     stack_size = 200
   },
   {

@@ -14,6 +14,8 @@ data:extend({
     },
     subgroup = "pm-nickel-tm",
     order = "c",
+    protons = 28,
+    neutrons = 31,
     stack_size = 100
   },
   {
@@ -28,6 +30,8 @@ data:extend({
     },
     subgroup = "pm-manganese-tm",
     order = "b",
+    protons = 25,
+    neutrons = 31,
     stack_size = 100
   },
   {
@@ -42,6 +46,8 @@ data:extend({
     },
     subgroup = "pm-zinc-tm",
     order = "c",
+    protons = 30,
+    neutrons = 35,
     stack_size = 100
   },
   {
@@ -58,7 +64,6 @@ data:extend({
     order = "c",
     protons = 79,
     neutrons = 118,
-    electrons = 79,
     stack_size = 100
   },
   {
@@ -73,6 +78,8 @@ data:extend({
     },
     subgroup = "pm-silver-tm",
     order = "c",
+    protons = 47,
+    neutrons = 61,
     stack_size = 100
   },
   {
@@ -87,6 +94,8 @@ data:extend({
     },
     subgroup = "pm-titanium-tm",
     order = "e",
+    protons = 22,
+    neutrons = 26,
     stack_size = 100
   },
   {
@@ -101,6 +110,8 @@ data:extend({
     },
     subgroup = "pm-tungsten-tm",
     order = "f",
+    protons = 74,
+    neutrons = 110,
     stack_size = 100
   },
   {
@@ -115,6 +126,8 @@ data:extend({
     },
     subgroup = "pm-tin-ptm",
     order = "g",
+    protons = 50,
+    neutrons = 69,
     stack_size = 100
   },
   {
@@ -124,6 +137,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
     subgroup = "pm-aluminium-ptm",
     order = "c",
+    protons = 13,
+    neutrons = 14,
     stack_size = 100
   },
   {
@@ -133,6 +148,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/cadmium-plate.png",
     subgroup = "pm-cadmium-tm",
     order = "b",
+    protons = 48,
+    neutrons = 64,
     stack_size = 100
   },
   {
@@ -147,6 +164,8 @@ data:extend({
     },
     subgroup = "pm-palladium-tm",
     order = "b",
+    protons = 46,
+    neutrons = 60,
     stack_size = 100
   },
   {
@@ -156,6 +175,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/lead-plate.png",
     subgroup = "pm-lead-ptm",
     order = "e",
+    protons = 82,
+    neutrons = 125,
     stack_size = 100
   },
   {
@@ -165,6 +186,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/thallium-plate.png",
     subgroup = "pm-thallium-ptm",
     order = "d",
+    protons = 81,
+    neutrons = 123,
     stack_size = 100
   },
   {
@@ -174,6 +197,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/indium-plate.png",
     subgroup = "pm-indium-ptm",
     order = "c",
+    protons = 49,
+    neutrons = 66,
     stack_size = 100
   },
   {
@@ -183,6 +208,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/platinum-plate.png",
     subgroup = "pm-platinum-tm",
     order = "c",
+    protons = 78,
+    neutrons = 117,
     stack_size = 100
   },
   {
@@ -192,6 +219,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/cobalt-plate.png",
     subgroup = "pm-cobalt-tm",
     order = "d",
+    protons = 27,
+    neutrons = 32,
     stack_size = 100
   },
   {
@@ -201,6 +230,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/tellurium-plate.png",
     subgroup = "pm-tellurium-mt",
     order = "d",
+    protons = 52,
+    neutrons = 76,
     stack_size = 100
   },
   {
@@ -216,6 +247,8 @@ data:extend({
     },
     subgroup = "pm-beryllium-aem",
     order = "f",
+    protons = 4,
+    neutrons = 5,
     stack_size = 100
   },
 
@@ -273,6 +306,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/magnesium-plate.png",
     subgroup = "pm-magnesium-aem",
     order = "d",
+    protons = 12,
+    neutrons = 12,
     stack_size = 100
   },
   {
@@ -310,6 +345,8 @@ data:extend({
     },
     subgroup = "pm-iridium-tm",
     order = "i",
+    protons = 77,
+    neutrons = 115,
     stack_size = 100
   },
   {
@@ -334,6 +371,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/tantalum-plate.png",
     subgroup = "pm-tantalum-tm",
     order = "f",
+    protons = 73,
+    neutrons = 108,
     stack_size = 100
   },
   {
@@ -343,6 +382,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/niobium-plate.png",
     subgroup = "pm-niobium-tm",
     order = "c",
+    protons = 41,
+    neutrons = 52,
     stack_size = 100
   },
   {
@@ -352,6 +393,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/selenium-plate.png",
     subgroup = "pm-selenium-rnm",
     order = "e",
+    protons = 34,
+    neutrons = 45,
     stack_size = 100
   },
   {
@@ -361,6 +404,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/rhenium-plate.png",
     subgroup = "pm-rhenium-tm",
     order = "g",
+    protons = 75,
+    neutrons = 111,
     stack_size = 100
   },
   {
@@ -370,6 +415,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/rhodium-plate.png",
     subgroup = "pm-rhodium-tm",
     order = "d",
+    protons = 45,
+    neutrons = 58,
     stack_size = 100
   },
   {
@@ -379,6 +426,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/plates/ruthenium-plate.png",
     subgroup = "pm-ruthenium-tm",
     order = "d",
+    protons = 44,
+    neutrons = 57,
     stack_size = 100
   },
   {

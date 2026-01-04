@@ -92,6 +92,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/caesium-glass-ampule.png",
     subgroup = "pm-caesium-am",
     order = "f",
+    protons = 55,
+    neutrons = 78,
     stack_size = 25
   },
 

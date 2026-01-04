@@ -23,6 +23,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/flourine.png",
     subgroup = "pm-flourine-rnm",
     order = "b",
+    protons = 9,
+    neutrons = 10,
     stack_size = 200
   },
 

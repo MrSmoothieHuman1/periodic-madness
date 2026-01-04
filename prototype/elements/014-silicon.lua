@@ -109,6 +109,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/polysilicon-rod.png",
         subgroup = "pm-silicon-mt",
         order = "g",
+        protons = 14,
+        neutrons = 14,
         stack_size = 10
     },
     {

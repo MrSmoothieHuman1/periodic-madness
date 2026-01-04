@@ -75,6 +75,8 @@ data:extend({
     },
     subgroup = "pm-antimony-mt",
     order = "e",
+    protons = 51,
+    neutrons = 71,
     stack_size = 200
     },
 

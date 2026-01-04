@@ -65,6 +65,8 @@ data:extend({
     },
     subgroup = "pm-germanium-mt",
     order = "e",
+    protons = 32,
+    neutrons = 41,
     stack_size = 200
     },
 

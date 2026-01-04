@@ -29,6 +29,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
       subgroup = "pm-gadolinium-la",
       order = "d",
+      protons = 64,
+      neutrons = 93,
       stack_size = 200
     },
 

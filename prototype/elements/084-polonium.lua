@@ -21,6 +21,8 @@ data:extend({
     },
     subgroup = "pm-polonium-ptm",
     order = "b",
+    protons = 84,
+    neutrons = 126,
     stack_size = 200
   },
 

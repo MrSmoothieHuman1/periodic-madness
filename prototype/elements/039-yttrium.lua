@@ -73,6 +73,8 @@ data:extend({
     },
     subgroup = "pm-yttrium-tm",
     order = "g",
+    protons = 39,
+    neutrons = 50,
     stack_size = 200
   },
 

@@ -43,6 +43,8 @@ data:extend({
     drop_sound = item_sounds.resource_inventory_move,
     subgroup = "pm-lithium-am",
     order = "b",
+    protons = 3,
+    neutrons = 4,
     stack_size = 200
   },
 

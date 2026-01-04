@@ -283,6 +283,8 @@ data:extend({
 
 data.raw["item"]["sulfur"].subgroup = "pm-sulfur-rnm"
 data.raw["item"]["sulfur"].order = "b"
+data.raw["item"]["sulfur"].protons = 16
+data.raw["item"]["sulfur"].neutrons = 16
 
 data.raw["recipe"]["sulfuric-acid"].energy_required = 4
 data.raw["recipe"]["sulfuric-acid"].category = "pm-mixing"

@@ -57,6 +57,8 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/plates/dysprosium-plate.png",
         subgroup = "pm-dysprosium-la",
         order = "h",
+        protons = 66,
+        neutrons = 97,
         stack_size = 200
     },
 

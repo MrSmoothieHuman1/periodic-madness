@@ -44,6 +44,7 @@ data:extend({
     order = "c",
     stack_size = 200
   },
+
   {
     type = "recipe",
     name = "pm-copper-sludge",

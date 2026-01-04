@@ -44,6 +44,20 @@ data:extend({
     stack_size = 100
   },
 
+  {
+    type = "fluid",
+    name = "pm-liquid-mercury",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/liquid-mercury.png",
+    subgroup = "pm-mercury-tm",
+    order = "d",
+    protons = 80,
+    neutrons = 121,
+    default_temperature = 15,
+    base_color = {r = 0.6, g = 0.6, b = 0.6},
+    flow_color = {r = 0.6, g = 0.6, b = 0.6}
+  },
+
 
   {
     type = "recipe",

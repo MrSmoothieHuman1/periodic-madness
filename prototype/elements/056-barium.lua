@@ -72,6 +72,8 @@ data:extend({
         },
         subgroup = "pm-barium-aem",
         order = "e",
+        protons = 56,
+        neutrons = 81,
         stack_size = 200
     },
 

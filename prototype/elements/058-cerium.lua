@@ -42,6 +42,22 @@ data:extend({
       order = "c",
       stack_size = 200
     },
+    {
+      type = "item",
+      name = "pm-cerium-plate",
+      icon_size = 128,
+      icon = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png", size = 128, scale = 0.25},
+        { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y-2.png", size = 128, scale = 0.25},
+      },
+      subgroup = "pm-cerium-la",
+      order = "c",
+      protons = 59,
+      neutrons = 82,
+      stack_size = 100
+    },
     
     {
         type = "recipe",
@@ -102,4 +118,19 @@ data:extend({
             PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2)
         }
     },
+    {
+        type = "recipe",
+        name = "pm-cerium-plate",
+        energy_required = 6.4,
+        category = "smelting",
+        allow_productivity = true,
+        ingredients = 
+        {
+            PM.ingredient("pm-cerium-plate", 1)
+        },
+        results = 
+        {
+            PM.product("pm-cerium-plate", 1)
+        }
+    }
 })

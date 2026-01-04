@@ -52,6 +52,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/francium-glass-ampule.png",
     subgroup = "pm-francium-am",
     order = "d",
+    protons = 87,
+    neutrons = 136,
     stack_size = 25
   },
 

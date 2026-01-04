@@ -217,7 +217,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-cerium", 20),
+        PM.ingredient("pm-cerium-plate", 20),
         PM.ingredient("pm-praseodymium", 25),
         PM.ingredient("pm-neodymium-plate", 30),
         PM.ingredient("pm-promethium-147", 8),

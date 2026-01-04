@@ -16,6 +16,21 @@ data:extend({
     },
 
     {
+        type = "fluid",
+        name = "pm-nitrogen-gas",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/nitrogen-gas.png",
+        subgroup = "pm-nitrogen-rnm",
+        order = "a",
+        protons = 7,
+        neutrons = 7,
+        default_temperature = 15,
+        auto_barrel = false,
+        base_color = {r = 0, g = 0, b = 1 },
+        flow_color = {r = 0, g = 0, b = 1 }
+    },
+
+    {
         type = "recipe",
         name = "pm-nitrogen-air-filter",
         category = "advanced-crafting",

@@ -134,6 +134,7 @@ require("prototype.elements.068-erbium")
 require("prototype.elements.069-thulium")
 require("prototype.elements.070-ytterbium")
 require("prototype.elements.071-lutetium")
+require("prototype.elements.001-hydrogen")
 
 require("prototype.damagetypes")
 

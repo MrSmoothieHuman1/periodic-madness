@@ -11,6 +11,8 @@ data:extend({
     },
     subgroup = "pm-iodine-rnm",
     order = "d",
+    protons = 53,
+    neutrons = 74,
     stack_size = 200
   },
 

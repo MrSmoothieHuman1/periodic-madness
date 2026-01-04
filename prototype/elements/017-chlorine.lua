@@ -18,6 +18,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/chlorine.png",
     subgroup = "pm-chlorine-rnm",
     order = "c",
+    protons = 17,
+    neutrons = 18,
     default_temperature = 15,
     base_color = {r = 0, g = 1, b = 0},
     flow_color = {r = 0, g = 1, b = 0}

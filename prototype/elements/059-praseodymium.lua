@@ -71,6 +71,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
       subgroup = "pm-praseodymium-la",
       order = "f",
+      protons = 59,
+      neutrons = 82,
       stack_size = 200
     },
 

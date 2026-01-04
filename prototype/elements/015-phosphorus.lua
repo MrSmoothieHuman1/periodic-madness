@@ -25,6 +25,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/red-phosphorous.png",
     subgroup = "pm-phosphorus-rnm",
     order = "c",
+    protons = 15,
+    neutrons = 15,
     stack_size = 100
   },
   {

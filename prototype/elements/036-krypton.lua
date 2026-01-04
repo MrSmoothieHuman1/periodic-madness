@@ -16,6 +16,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/krypton-gas.png",
     subgroup = "pm-krypton-nb",
     order = "b",
+    protons = 36,
+    neutrons = 48,
     default_temperature = 15,
     base_color = {r = 0.7, g = 1, b = 0.7},
     flow_color = {r = 0.7, g = 1, b = 0.7},

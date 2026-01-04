@@ -41,6 +41,8 @@ data:extend({
     },
     subgroup = "pm-bismuth-ptm",
     order = "c",
+    protons = 83,
+    neutrons = 126,
     stack_size = 200
   },
 

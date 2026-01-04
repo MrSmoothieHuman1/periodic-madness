@@ -1,21 +1,21 @@
 data:extend({
     {
-      type = "item",
-      name = "pm-low-ytterbium-mixture",
-      icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
-      subgroup = "pm-ytterbium-la",
-      order = "ca",
-      stack_size = 250
+        type = "item",
+        name = "pm-low-ytterbium-mixture",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+        subgroup = "pm-ytterbium-la",
+        order = "ca",
+        stack_size = 250
     },
     {
-      type = "item",
-      name = "pm-high-ytterbium-mixture",
-      icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
-      subgroup = "pm-ytterbium-la",
-      order = "da",
-      stack_size = 250
+        type = "item",
+        name = "pm-high-ytterbium-mixture",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+        subgroup = "pm-ytterbium-la",
+        order = "da",
+        stack_size = 250
     },
     {
         type = "item",
@@ -27,13 +27,15 @@ data:extend({
         stack_size = 100
     },
     {
-      type = "item",
-      name = "pm-ytterbium-plate",
-      icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/plates/ytterbium-plate.png",
-      subgroup = "pm-ytterbium-la",
-      order = "g",
-      stack_size = 200
+        type = "item",
+        name = "pm-ytterbium-plate",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/plates/ytterbium-plate.png",
+        subgroup = "pm-ytterbium-la",
+        order = "g",
+        protons = 70,
+        neutrons = 103,
+        stack_size = 200
     },
 
     {

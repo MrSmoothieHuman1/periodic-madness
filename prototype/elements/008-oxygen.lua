@@ -1,4 +1,17 @@
 data:extend({
+    {
+      type = "fluid",
+      name = "pm-oxygen-gas",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/fluids/oxygen-gas.png",
+      subgroup = "pm-oxygen-rnm",
+      order = "a",
+      protons = 8,
+      neutrons = 8,
+      default_temperature = 15,
+      base_color = {r = 1, g = 0, b = 0},
+      flow_color = {r = 1, g = 0, b = 0}
+    },
 
     {
         type = "recipe",

@@ -71,6 +71,8 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
       subgroup = "pm-samarium-la",
       order = "f",
+      protons = 62,
+      neutrons = 88,
       stack_size = 200
     },
 

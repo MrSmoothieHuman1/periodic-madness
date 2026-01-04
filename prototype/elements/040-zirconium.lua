@@ -36,6 +36,8 @@ data:extend({
     },
     subgroup = "pm-zirconium-tm",
     order = "c",
+    protons = 40,
+    neutrons = 51,
     stack_size = 200
   },
 

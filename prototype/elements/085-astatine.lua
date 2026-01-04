@@ -54,6 +54,8 @@ data:extend({
         },
         subgroup = "pm-astatine-ptm",
         order = "d",
+        protons = 85,
+        neutrons = 126,
         stack_size = 200
       },
 

@@ -39,6 +39,8 @@ data:extend({
     },
     subgroup = "pm-molybdenum-tm",
     order = "c",
+    protons = 42,
+    neutrons = 54,
     stack_size = 200,
   },
   {

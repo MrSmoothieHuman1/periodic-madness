@@ -51,6 +51,8 @@ data:extend({
     },
     subgroup = "pm-lead-ptm",
     order = "d",
+    protons = 33,
+    neutrons = 42,
     stack_size = 200
   },
 

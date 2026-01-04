@@ -54,6 +54,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/boron.png",
     subgroup = "pm-boron-mt",
     order = "d",
+    protons = 5,
+    neutrons = 6,
     default_temperature = 15,
     base_color = {0.871, 0.686, 0.349},
     flow_color = {0.871, 0.686, 0.349},

@@ -16,6 +16,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/argon-gas.png",
     subgroup = "pm-argon-nb",
     order = "b",
+    protons = 18,
+    neutrons = 22,
     default_temperature = 15,
     base_color = {r = 0.6, g = 0, b = 0},
     flow_color = {r = 0.6, g = 0, b = 0},
