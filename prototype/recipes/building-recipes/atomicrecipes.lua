@@ -103,6 +103,37 @@ if not liquid.protons then return end
     end
 end
 
+--[[local function add_atomic_recipes_to_tech(seperation_recipe, combination_recipe, technology)
+  local unlock_key = "unlock-recipe"
+  local technology = "pm-element-decomposition"
+  local effects = technology.effects
+
+  if not effects then
+    technology.effects = {}
+    effects = technology.effects
+  end
+
+  local add_fill_recipe = true
+  local add_empty_recipe = true
+
+  for k,v in pairs(effects) do
+    if k == unlock_key then
+      local recipe = v.recipe
+      if recipe == fill_recipe.name then
+        add_fill_recipe = false
+      elseif recipe == empty_recipe.name then
+        add_empty_recipe = false
+      end
+    end
+  end
+
+  if add_fill_recipe then
+    table.insert(effects, {type = unlock_key, recipe = fill_recipe.name})
+  end
+  if add_empty_recipe then
+    table.insert(effects, {type = unlock_key, recipe = empty_recipe.name})
+  end
+end--]]
 
 for item_type in pairs(defines.prototypes.item) do
   for name, item in pairs(data.raw[item_type] or {}) do

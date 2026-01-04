@@ -213,7 +213,7 @@ data:extend({
     enabled = false,
     energy_required = 6,
     subgroup = "science-pack",
-    order = "j",
+    order = "k",
     allow_productivity = true,
     ingredients =
     {
