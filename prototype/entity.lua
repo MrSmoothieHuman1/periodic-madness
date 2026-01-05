@@ -10861,6 +10861,84 @@ fluid_boxes =
       fade_out_ticks = 20
     },
   }--[[@as data.AssemblingMachinePrototype]],
+  {
+    type = "assembling-machine",
+    name = "pm-cryogenic-plant",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/buildings/FUCK.png",
+    minable = { mining_time = 1, result = "pm-francium-ultracool-centrifugal-kabbalism" },
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    max_health = 1000,
+    corpse = "assembling-machine-1-remnants",
+    dying_explosion = "assembling-machine-1-explosion",
+    collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
+    selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+    alert_icon_shift = util.by_pixel(-3, -12),
+    crafting_speed = 1,
+    crafting_categories = { "pm-cryogenics" },
+    module_slots = 0.5,
+    allowed_effects = PM.all_effects(),
+    allowed_module_categories = {"pm-heat-pumps"},
+    energy_usage = "850kW",
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = {pollution = 6},
+    },
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 2}}},
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south--[[@as int]], position = {-1, 2}}},
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {1, -2}}},
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -2}}},
+      },
+
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.east--[[@as int]], position = {2, 1}}},
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, -1}}},
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 1}}},
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 100,
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-2, -1}}},
+      },
+    },
+  }--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions

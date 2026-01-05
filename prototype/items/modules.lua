@@ -39,6 +39,12 @@ data:extend({
         hidden = true,
         hidden_in_factoriopedia = true,
     },
+    {
+        type = "module-category",
+        name = "pm-heat-pumps",
+        hidden = true,
+        hidden_in_factoriopedia = true,
+    },
 
     --MARK: Normal modules
     {

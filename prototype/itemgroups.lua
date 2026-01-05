@@ -150,6 +150,11 @@ data:extend({
     type = "recipe-category",
     name = "pm-beta-decay"
   },
+  {
+    type = "recipe-category",
+    name = "pm-cryogenics"
+  },
+
   -- For the consumption of reactor coolant
 	{
 		type = "recipe-category",
