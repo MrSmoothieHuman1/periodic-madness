@@ -121,6 +121,21 @@ data:extend({
         },
         results = {}
     },
+    {
+        type = "recipe",
+        name = "pm-liquid-oxygen",
+        enabled = false,
+        energy_required = 10,
+        category = "pm-cryogenics",
+        ingredients =
+        {
+            PM.ingredient("pm-oxygen-gas", 10, "fluid")
+        },
+        results = 
+        {
+            PM.product("pm-liquid-oxygen", 1, "fluid")
+        }
+    },
 
     {
         type = "recipe",
