@@ -29,6 +29,17 @@ data:extend({
         base_color = {r = 0, g = 0, b = 1 },
         flow_color = {r = 0, g = 0, b = 1 }
     },
+    {
+      type = "fluid",
+      name = "pm-liquid-nitrogen",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/fluids/liquid-nitrogen.png",
+      subgroup = "pm-nitrogen-rnm",
+      order = "g",
+      default_temperature = 15,
+      base_color = {r = 0.25, g = 0.25, b = 1},
+      flow_color = {r = 0.25, g = 0.25, b = 1}
+    },
 
     {
         type = "recipe",

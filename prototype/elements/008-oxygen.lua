@@ -12,6 +12,17 @@ data:extend({
       base_color = {r = 1, g = 0, b = 0},
       flow_color = {r = 1, g = 0, b = 0}
     },
+    {
+      type = "fluid",
+      name = "pm-liquid-oxygen",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/fluids/liquid-oxygen.png",
+      subgroup = "pm-oxygen-rnm",
+      order = "g",
+      default_temperature = 15,
+      base_color = {r = 1, g = 0.25, b = 0.25},
+      flow_color = {r = 1, g = 0.25, b = 0.25}
+    },
 
     {
         type = "recipe",

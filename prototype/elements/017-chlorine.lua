@@ -70,6 +70,17 @@ data:extend({
     flow_color = {r = 0.66, g = 0.99, b = 0.66},
     auto_barrel = false
   },
+  {
+    type = "fluid",
+    name = "pm-liquid-chlorine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/liquid-chlorine.png",
+    subgroup = "pm-chlorine-rnm",
+    order = "g",
+    default_temperature = 15,
+    base_color = {r = 0.25, g = 1, b = 0.25},
+    flow_color = {r = 0.25, g = 1, b = 0.25}
+  },
 
   {
     type = "recipe",
