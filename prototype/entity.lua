@@ -10886,6 +10886,22 @@ fluid_boxes =
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 6},
     },
+    graphics_set =
+    {
+        status_colors = pm_diode_status_colors(),
+        animation = 
+        {
+            layers =
+            {
+                {
+                  filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant.png",
+                  width = 320,
+                  height =320,
+                  scale = 0.5
+                },
+            }
+        }
+    },
     fluid_boxes =
     {
       {
