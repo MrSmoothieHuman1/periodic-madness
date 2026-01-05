@@ -1,6 +1,6 @@
 PM = require("pennyisms.library")
 require("prototype.recipes.building-recipes.burnining")
-require("prototype.recipes.building-recipes.atomicrecipes")
+--require("prototype.recipes.building-recipes.atomicrecipes")
 
 
 ---@param fluidbox data.FluidBox

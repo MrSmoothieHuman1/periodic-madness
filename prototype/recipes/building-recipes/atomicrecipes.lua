@@ -43,7 +43,6 @@ if not item.protons then return end
             }
 		},
 	}
-    table.insert(data.raw["technology"]["pm-element-decomposition"].effects, {PM.unlock_recipe()})
 end
 local function make_liquid_atomic_recipe(liquid)
 if not liquid.protons then return end
