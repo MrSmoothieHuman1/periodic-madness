@@ -10874,12 +10874,12 @@ fluid_boxes =
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
-    crafting_speed = 1,
+    crafting_speed = 0.5,
     crafting_categories = { "pm-cryogenics" },
-    module_slots = 0.5,
+    module_slots = 8,
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heat-pumps"},
-    energy_usage = "850kW",
+    energy_usage = "100kW",
     energy_source =
     {
       type = "electric",
@@ -10896,7 +10896,7 @@ fluid_boxes =
                 {
                   filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant.png",
                   width = 320,
-                  height =320,
+                  height = 320,
                   scale = 0.5
                 },
             }
