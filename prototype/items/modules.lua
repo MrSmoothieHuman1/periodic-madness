@@ -575,6 +575,26 @@ data:extend({
         productivity = 0.05,
       },
     }, --productivity coil, low speed, high pollution + energy
+    {
+      type = "module",
+      name = "pm-copper-heat-pump",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/copper-heating-coil.png",
+      tier = 1,
+      category = "pm-heat-pumps",
+      subgroup = "pm-coils",
+      order = "a",
+      stack_size = 50,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.5,
+        consumption = 1,
+        pollution = 0.25,
+      },
+    }, --basic coil module, should be a alright starter
 })
 
 --#MARK: Vanilla modules

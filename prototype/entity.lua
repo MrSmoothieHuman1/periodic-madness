@@ -10873,18 +10873,22 @@ fluid_boxes =
     dying_explosion = "assembling-machine-1-explosion",
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
-    alert_icon_shift = util.by_pixel(-3, -12),
+    alert_icon_shift = util.by_pixel(0, -12),
     crafting_speed = 0.5,
     crafting_categories = { "pm-cryogenics" },
     module_slots = 8,
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heat-pumps"},
+    icons_positioning = 
+    {
+      {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
+    },
     energy_usage = "100kW",
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 6},
+      emissions_per_minute = {pollution = 2},
     },
     graphics_set =
     {
@@ -11221,7 +11225,7 @@ data.raw["furnace"]["electric-furnace"].allowed_module_categories = {"pm-heating
 data.raw["furnace"]["electric-furnace"].module_slots = 6
 data.raw["furnace"]["electric-furnace"].icons_positioning =
 {
-  {inventory_index = defines.inventory.furnace_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 6, scale = 0.42}
+  {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 6, scale = 0.42}
 }
 data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
