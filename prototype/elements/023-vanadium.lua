@@ -260,6 +260,7 @@ data:extend({
     category = "pm-moltening",
     subgroup = "pm-vanadium-tm",
     order = "g",
+    main_product = "pm-vanadium-oxide",
     ingredients = 
     {
       PM.ingredient("pm-red-cake-precipitate", 8, "fluid"),
