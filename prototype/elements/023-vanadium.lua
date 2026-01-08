@@ -267,7 +267,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-vanadium-oxide", 3)
+      PM.product("pm-vanadium-oxide", 3),
+      PM.product_range("pm-flux-container", 1, 2),
     }
   }
 })
