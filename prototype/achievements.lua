@@ -99,3 +99,4 @@ data.raw["research-with-science-pack-achievement"]["research-with-military"] = n
 data.raw["research-with-science-pack-achievement"]["research-with-chemicals"].order = "e[research]-a[research-with]-d[RNM]"
 data.raw["research-with-science-pack-achievement"]["research-with-chemicals"].icon = "__base__/graphics/achievement/research-with-logistics.png"
 data.raw["research-with-science-pack-achievement"]["research-with-logistics"].icon = "__periodic-madness__/graphics/achievements/research-with-advanced-transition-metals.png"
+data.raw["research-with-science-pack-achievement"]["research-with-space"].order = "e[research]-a[research-with]-k[RNM]"
