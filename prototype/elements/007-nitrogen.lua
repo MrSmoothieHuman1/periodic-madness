@@ -25,9 +25,9 @@ data:extend({
         protons = 7,
         neutrons = 7,
         default_temperature = 15,
-        auto_barrel = false,
+        gas_temperature = 15,
         base_color = {r = 0, g = 0, b = 1 },
-        flow_color = {r = 0, g = 0, b = 1 }
+        flow_color = {r = 0, g = 0, b = 0.75 }
     },
     {
       type = "fluid",

@@ -9,6 +9,7 @@ data:extend({
     order = "a",
     protons = 1,
     neutrons = 0,
+    gas_temperature = 15,
     default_temperature = 15,
     base_color = {r = 1, g = 1, b = 1 },
     flow_color = {r = 1, g = 1, b = 1 },

@@ -9,8 +9,9 @@ data:extend({
       protons = 8,
       neutrons = 8,
       default_temperature = 15,
+      gas_temperature = 15,
       base_color = {r = 1, g = 0, b = 0},
-      flow_color = {r = 1, g = 0, b = 0}
+      flow_color = {r = 0.75, g = 0, b = 0}
     },
     {
       type = "fluid",
@@ -21,7 +22,7 @@ data:extend({
       order = "g",
       default_temperature = 15,
       base_color = {r = 1, g = 0.25, b = 0.25},
-      flow_color = {r = 1, g = 0.25, b = 0.25}
+      flow_color = {r = 0.75, g = 0.25, b = 0.25}
     },
 
     {

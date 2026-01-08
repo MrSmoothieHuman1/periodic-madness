@@ -19,6 +19,7 @@ data:extend({
     protons = 2,
     neutrons = 2,
     default_temperature = 15,
+    gas_temperature = 15,
     base_color = {r = 0.7, g = 1, b = 0.7},
     flow_color = {r = 0.7, g = 1, b = 0.7},
   },

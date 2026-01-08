@@ -57,6 +57,7 @@ data:extend({
     protons = 5,
     neutrons = 6,
     default_temperature = 15,
+    gas_temperature = 15,
     base_color = {0.871, 0.686, 0.349},
     flow_color = {0.871, 0.686, 0.349},
   },
@@ -69,7 +70,7 @@ data:extend({
     order = "c",
     default_temperature = 15,
     base_color = {0.631, 0.576, 0.369},
-    flow_color = {0.631, 0.576, 0.369},
+    flow_color = {0.431, 0.476, 0.569},
     auto_barrel = false
   },
 
