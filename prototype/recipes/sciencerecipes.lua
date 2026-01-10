@@ -65,7 +65,7 @@ data:extend({
     results =
     {
         PM.product("pm-alkali-metal-science-pack", 1),
-        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 0)
+        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 2)
     }
 },
 {
@@ -380,7 +380,7 @@ data:extend({
     results =
     {
         PM.product("pm-alkali-metal-science-pack", 2),
-        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 0)
+        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 2)
     }
 },
 {
@@ -702,7 +702,7 @@ data:extend({
     results =
     {
         PM.product("pm-experimental-research-data", 5),
-        PM.product("pm-empty-glass-ampule", 5)
+        PM.catalyst("pm-empty-glass-ampule", 5, 5)
     }
 },
 

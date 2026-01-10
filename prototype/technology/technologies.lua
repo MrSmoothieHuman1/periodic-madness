@@ -2286,7 +2286,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-metalloid-science-pack")
     },
-    prerequisites = {"pm-boron-processing", "pm-tellurium-processing", "pm-arsenic-antimony-processing", "pm-silicon-processing"},
+    prerequisites = {"pm-boron-processing", "pm-tellurium-processing", "pm-arsenic-antimony-processing", "pm-silicon-processing", "pm-germanium-processing"},
     unit =
     {
       count = 350,

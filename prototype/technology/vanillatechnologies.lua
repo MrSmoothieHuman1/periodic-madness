@@ -58,7 +58,7 @@ data.raw["technology"]["advanced-circuit"].effects =
   PM.unlock_recipe("pm-advanced-integrated-circuits"),
   PM.unlock_recipe("advanced-circuit")
 }
-data.raw["technology"]["advanced-circuit"].prerequisites = {"pm-fluid-circuit", "pm-basic-polyethylene-plastic", "pm-copper-tin-solder"}
+data.raw["technology"]["advanced-circuit"].prerequisites = {"pm-fluid-circuit", "pm-basic-polyethylene-plastic", "pm-copper-tin-solder", "pm-palladium-processing"}
 data.raw["technology"]["advanced-circuit"].unit.ingredients =
 {
   {"automation-science-pack", 1},

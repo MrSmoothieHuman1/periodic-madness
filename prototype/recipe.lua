@@ -1814,7 +1814,7 @@ data:extend({
     results =
     {
       PM.product("pm-vacuum-tube-getter", 1),
-      PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 0)
+      PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 1)
     }
   },
   {
@@ -4425,7 +4425,7 @@ data:extend({
     results =
     {
       PM.product("pm-cyclohexane-carboxaldehyde-solution", 10, "fluid"),
-      PM.product_chance("pm-rhodium-plate", 2, 0.85)
+      PM.catalyst_chance("pm-rhodium-plate", 2, 0.85, 2)
     }
   },
   {
@@ -4511,7 +4511,7 @@ data:extend({
     results =
     {
       PM.product("pm-acetic-acid", 7.5, "fluid"),
-      PM.product_chance("pm-rhodium-plate", 2, 0.85)
+      PM.catalyst_chance("pm-rhodium-plate", 2, 0.85, 2)
     }
   },
   {
@@ -4531,7 +4531,7 @@ data:extend({
     results =
     {
       PM.product("pm-1-3-5-oxadiazine-NON-host", 1),
-      PM.product_range("pm-acetic-acid", 0, 10, "fluid")
+      PM.catalyst_range("pm-acetic-acid", 0, 10, 10, "fluid")
     }
   },
   {
@@ -5103,7 +5103,7 @@ data:extend({
     results =
     {
         PM.product("pm-dimethyl-terephthalate", 15, "fluid"),
-        PM.product("pm-methanol", 15, "fluid")
+        PM.catalyst("pm-methanol", 15, 15, "fluid")
     }
   },
   {
@@ -5124,8 +5124,8 @@ data:extend({
     {
         PM.product("pm-methanol", 10, "fluid"),
         PM.product("pm-polyethylene-terephthalate", 5),
-        PM.catalyst_range("pm-yttrium-catalyst", 2, 0.9, 2),
-        PM.catalyst_range("pm-catalyst-container", 2, 0.1, 2)
+        PM.catalyst_chance("pm-yttrium-catalyst", 2, 0.9, 2),
+        PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2)
     }
   },
   {
@@ -5180,7 +5180,7 @@ data:extend({
     results = 
     {
         PM.product("pm-graphite", 4),
-        PM.product("pm-molten-tungsten", 10, "fluid"),
+        PM.catalyst("pm-molten-tungsten", 10, 10, "fluid"),
         PM.catalyst_chance("pm-ferrosilicon", 2, 0.66, 1)
     }
   },

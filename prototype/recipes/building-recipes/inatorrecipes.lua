@@ -228,6 +228,7 @@ data:extend({
     enabled = false,
     energy_required = 9,
     category = "pm-moltening",
+    main_product = "pm-molten-inconel-625",
     ingredients =
     {
       PM.ingredient("pm-inconel-625-precursor-billet", 5),
@@ -235,9 +236,10 @@ data:extend({
       PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
       PM.ingredient("pm-filled-flux-container", 1)
     },
-    results = 
+    results =
     {
-      PM.product("pm-molten-inconel-625", 10, "fluid")
+      PM.product("pm-molten-inconel-625", 10, "fluid"),
+      PM.catalyst("pm-flux-container", 1, 1)
     }
   },
   {

@@ -1008,7 +1008,9 @@ data:extend({
     default_temperature = 15,
     auto_barrel = false,
     base_color = {r = 0.1, g = 0.1, b = 0.1 },
-    flow_color = {r = 0.1, g = 0.1, b = 0.1 }
+    flow_color = {r = 0.1, g = 0.1, b = 0.1 },
+    auto_void = true,
+    auto_void_emissions = 1.25
   },
   {
     type = "fluid",

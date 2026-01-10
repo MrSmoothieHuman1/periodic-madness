@@ -17,8 +17,8 @@ data:extend({
     results =
     {
         PM.product("pm-ammonium-nitrate", 10),
-        PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 2),
-        PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 2)
+        PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3),
+        PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3)
     }
   },
   {
@@ -196,7 +196,7 @@ data:extend({
         PM.product("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
         PM.product_chance("pm-fuel-oils", 10, 0.15, "fluid"),
         PM.product_range("sulfur", 0, 1),
-        PM.product("pm-vanadium-oxide-catalyst", 2)
+        PM.catalyst("pm-vanadium-oxide-catalyst", 2, 2)
     }
   },
   {
@@ -218,7 +218,7 @@ data:extend({
         PM.product("pm-low-sulfur-refined-kerosene", 25, "fluid"),
         PM.product_chance("pm-lubricating-oils", 10, 0.05, "fluid"),
         PM.product_chance("sulfur", 1, 0.5),
-        PM.product("pm-cobalt-catalyst", 3)
+        PM.catalyst("pm-cobalt-catalyst", 3, 3)
     }
   },
 
@@ -236,11 +236,12 @@ data:extend({
         PM.ingredient("pm-2-3-3-trimethylpentane", 5, "fluid"),
         PM.ingredient("solid-fuel", 10),
         PM.ingredient("pm-ruthenium-sulfide", 4),
-        PM.ingredient("pm-nickel-tungsten-catalyst", 3)
+        PM.ingredient("pm-nickel-tungsten-catalyst", 4)
     },
     results =
     {
-        PM.product("pm-RP-1", 12.5, "fluid")
+        PM.product("pm-RP-1", 12.5, "fluid"),
+        PM.catalyst("pm-nickel-tungsten-catalyst", 4, 4)
     }
   },
 

@@ -133,7 +133,7 @@ data:extend({
     subgroup = "pm-polonium-ptm",
     order = "e",
     enabled = false,
-    energy_required = 20,
+    energy_required = 15,
     allow_productivity = true,
     ingredients =
     {

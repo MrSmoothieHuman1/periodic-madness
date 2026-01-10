@@ -6885,6 +6885,8 @@ data:extend({
   crafting_speed = 0.75,
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["mixing-tank"],
+  fast_replaceable_group = "pm-mixing-tanks",
+  next_upgrade = "pm-mixing-tank-2",
   energy_source =
   {
     type = "electric",
@@ -7302,6 +7304,8 @@ fluid_boxes =
   crafting_speed = 1.5,
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["mixing-tank"],
+  fast_replaceable_group = "pm-mixing-tanks",
+  next_upgrade = "pm-mixing-tank-3",
   energy_source =
   {
     type = "electric",
@@ -7309,7 +7313,7 @@ fluid_boxes =
     emissions_per_minute = {pollution = 4}
   },
   energy_usage = "475kW",
-graphics_set =
+  graphics_set =
   {
   status_colors = pm_diode_status_colors(),
   animation =
@@ -10112,6 +10116,7 @@ fluid_boxes =
   crafting_speed = 3,
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["mixing-tank"],
+  fast_replaceable_group = "pm-mixing-tanks",
   energy_source =
   {
     type = "electric",

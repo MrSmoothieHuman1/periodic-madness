@@ -146,7 +146,7 @@ data:extend({
             PM.product_chance("pm-rhenium-chunks", 3, 0.2),
             PM.product_chance("pm-molybdenite-powder", 3, 0.54),
             PM.product_chance("stone", 3, 0.46),
-            PM.product("pm-rhenium-platinum-catalyst", 4)
+            PM.catalyst("pm-rhenium-platinum-catalyst", 4, 4)
         }
     },
     {
