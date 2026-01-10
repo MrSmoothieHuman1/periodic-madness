@@ -41,6 +41,52 @@ Date: 2025-19-12
     - Fixed bismuth chunk leeching icon being old.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.008
+Date: 2026-10-01
+  The i was ill :( Update:
+
+  Changes:
+    - Made polonium sassxolotl enrichment 5s faster (20s > 15s).
+    - Made CO be able to be put inside a burn-inator.
+
+  Fixes:
+    - Fixed all fluorine typos in the locales.
+    - Fixed a bunch of recipes producing stuff unintentionally when prodded.
+    - Fixed the dinitrogen tetroxide typo.
+    - Fixed palladium processing not being a prerequisite of advanced circuits.
+    - Fixed germanium processing not bieng a preqrequisite of metalloids.
+    - Fixed molten inconel not outputting a flux container.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.007
+Date: 2026-03-01
+  The oh boy! bug reports being fixed! Update:
+
+  Changes:
+    - Made francium slightly cheaper.
+
+  Fixes:
+    - Fixed molten uhrlumin not outputting a flux container.
+    - Fixed prodded nitric oxide outputting platinum.
+    - Fixed prodded FUCK recipes outputting ampules.
+    - Fixed prodded astatine MOT empting outputting MOT's.
+    - Made astatine kova (polonium + francium) recipes actually worth it.
+    - Updated mixed ore slag leeching icon.
+    - Fixed RP-1 not outputting Ni-W catalysts.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.006
+Date: 2026-03-01
+  The for those who mine stone after... and happy new year i guess Update:
+
+  Changes:
+    - made stone generate 1.5x richer then before, and have a larger starting patch/general richness multiplier. (made more stone per stone patch)
+
+  Fixes:
+    - Fixed solar panel 2's not being upgradeable.
+    - Updated bismuth leeching icon.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.8.005
 Date: 2025-23-12
   The christmas eve eve miracle! bugfixes! Update:
