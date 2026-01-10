@@ -7816,6 +7816,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        --PM.unlock_recipe("pm-asteriod-piledriver")
     },
     prerequisites = {"pm-space-processing-units", "pm-high-density-structure", "pm-advanced-LDS-production"},
     unit =

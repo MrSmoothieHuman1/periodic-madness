@@ -6044,4 +6044,21 @@ data:extend({
       PM.product("pm-productivity-module-light", 2)
     }
   },
+  --[[{
+    type = "recipe",
+    name = "pm-asteroid-piledriver",
+    enabled = false,
+    energy_reqiured = 7.5,
+    category = "crafting-with-fluid",
+    ingredients =
+    {
+        PM.ingredient("pm-high-density-structure", 5),
+        PM.ingredient("pm-brass-plate", 10),
+        PM.ingredient("pm-light-lubricant", 25, "fluid"),
+    },
+    results =
+    {
+
+    }
+  }--]]
 } --[[@as data.RecipePrototype[] ]])
