@@ -596,6 +596,7 @@ data:extend({
     max_health = 150,
     corpse = "offshore-pump-remnants",
     dying_explosion = "offshore-pump-explosion",
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
     resistances =
     {
       {

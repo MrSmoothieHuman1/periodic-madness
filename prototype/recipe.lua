@@ -6058,7 +6058,7 @@ data:extend({
     },
     results =
     {
-
+        PM.product("pm-asteroid-piledriver", 1)
     }
   }
 } --[[@as data.RecipePrototype[] ]])
