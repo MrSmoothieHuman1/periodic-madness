@@ -2057,6 +2057,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "pm-asteroid-piledriver",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
+    subgroup = "module",
+    order = "f",
+    stack_size = 5,
+  },
+
+  {
+    type = "item",
     name = "pm-solar-panel-equipment-2",
     icon = "__periodic-madness__/graphics/equipment/solar-panel-equipment-2-icon.png",
     icon_size = 64,

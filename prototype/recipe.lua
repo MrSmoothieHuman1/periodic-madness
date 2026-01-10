@@ -6044,7 +6044,7 @@ data:extend({
       PM.product("pm-productivity-module-light", 2)
     }
   },
-  --[[{
+  {
     type = "recipe",
     name = "pm-asteroid-piledriver",
     enabled = false,
@@ -6060,5 +6060,5 @@ data:extend({
     {
 
     }
-  }--]]
+  }
 } --[[@as data.RecipePrototype[] ]])
