@@ -7818,7 +7818,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-asteroid-piledriver")
     },
-    prerequisites = {"pm-space-processing-units", "pm-high-density-structure", "pm-advanced-LDS-production"},
+    prerequisites = {"pm-space-processing-units", "pm-high-density-structure", "pm-advanced-LDS-production", "pm-advanced-YAG-lasers"},
     unit =
     {
       count = 1000,
@@ -7850,7 +7850,7 @@ data:extend({
         PM.unlock_recipe("pm-speed-beamcon-satellite"),
         PM.unlock_recipe("pm-efficiency-beamcon-satellite")
     },
-    prerequisites = {"pm-speed-module-6", "pm-efficiency-module-6", "pm-advanced-LDS-production", "pm-travelling-wave-erbium-amplifier-tubes"},
+    prerequisites = {"pm-speed-module-6", "pm-efficiency-module-6", "pm-advanced-LDS-production", "pm-travelling-wave-erbium-amplifier-tubes", "pm-advanced-YAG-lasers"},
     unit =
     {
       count = 1000,

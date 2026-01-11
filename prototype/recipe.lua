@@ -6074,6 +6074,7 @@ data:extend({
         PM.ingredient("pm-liquid-rocket-fuel-tank", 5),
         PM.ingredient("pm-liquid-rocket-oxidiser-tank", 5),
         PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("pm-advanced-YAG-laser", 1),
         PM.ingredient("pm-heat-shielding", 6),
         PM.ingredient("pm-selenium-sulfur-battery", 10),
         PM.ingredient("pm-RTG", 1),
