@@ -12,7 +12,7 @@ data:extend({
         type = "item",
         name = "pm-neodymium-plate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/plates/neodymium-plate.png",
         subgroup = "pm-neodymium-la",
         order = "g",
         protons = 60,
