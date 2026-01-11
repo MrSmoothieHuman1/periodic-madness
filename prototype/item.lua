@@ -1831,12 +1831,21 @@ data:extend({
     stack_size = 100
   },
   {
+    type = "item",
+    name = "pm-advanced-YAG-laser",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/cut-garnet-rod.png",
+    subgroup = "pm-garnet-ptm",
+    order = "f",
+    stack_size = 200
+  },
+  {
     type = "module",
-    name = "pm-ce-YAG-laser-head",
+    name = "pm-advanced-YAG-laser-head",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/YAG-laser-head.png",
     subgroup = "pm-garnet-ptm",
-    order = "f",
+    order = "g",
     category = "pm-laser-modules",
     tier = 3,
     effect = 

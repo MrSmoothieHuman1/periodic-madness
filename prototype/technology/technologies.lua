@@ -8066,6 +8066,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-advanced-YAG-laser"),
+        PM.unlock_recipe("pm-advanced-YAG-laser-head")
     },
     prerequisites = {"pm-lanthanide-science-pack"},
     unit =

@@ -6101,4 +6101,45 @@ data:extend({
         PM.product("pm-transition-metal-asteroid-miner", 1)
     }
   }--]]
+  {
+    type = "recipe",
+    name = "pm-advanced-YAG-laser",
+    energy_required = 20,
+    category = "pm-moltening",
+    enabled = false,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-YAG-laser", 4),
+        PM.ingredient("pm-holmium-plate", 8),
+        PM.ingredient("pm-thulium", 4),
+        PM.ingredient("pm-dysprosium-plate", 3)
+    },
+    results =
+    {
+      PM.product("pm-advanced-YAG-laser", 4),
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-YAG-laser-head",
+    energy_required = 5,
+    category = "crafting-with-fluid",
+    enabled = false,
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-advanced-YAG-laser", 1),
+      PM.ingredient("pm-borosilicate-glass", 6),
+      PM.ingredient("pm-sterling-silver-wire", 4),
+      PM.ingredient("pm-advanced-processing-unit", 2),
+      PM.ingredient("pm-heavyweight-panelling", 8),
+      PM.ingredient("pm-industrial-noble-gas", 15, "fluid"),
+      PM.ingredient("pm-liquid-silicone", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-advanced-YAG-laser-head", 1)
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
