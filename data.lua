@@ -830,5 +830,3 @@ local layers = set.working_visualisations[2].animation.layers
 layers[1].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-C-light.png"
 layers[2].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-B-light.png"
 layers[3].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-A-light.png"
-
-data.raw["mining-drill"]["pumpjack"].resource_searching_radius = 4.99
