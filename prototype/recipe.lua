@@ -6055,10 +6055,49 @@ data:extend({
         PM.ingredient("pm-high-density-structure", 5),
         PM.ingredient("pm-brass-plate", 10),
         PM.ingredient("pm-light-lubricant", 25, "fluid"),
+        PM.ingredient("rocket-fuel", 4)
     },
     results =
     {
         PM.product("pm-asteroid-piledriver", 1)
     }
-  }
+  },
+--[[  {
+    type = "recipe",
+    name = "pm-undifferentiated-asteroid-miner",
+    enabled = false,
+    energy_required = 15,
+    ingredients =
+    {
+        PM.ingredient("pm-asteroid-piledriver", 1),
+        PM.ingredient("pm-solar-panel-3", 20),
+        PM.ingredient("pm-liquid-rocket-fuel-tank", 5),
+        PM.ingredient("pm-liquid-rocket-oxidiser-tank", 5),
+        PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("pm-heat-shielding", 6),
+        PM.ingredient("pm-selenium-sulfur-battery", 10),
+        PM.ingredient("pm-RTG", 1),
+        PM.ingredient("pm-rocket-control-unit", 5)
+    },
+    results =
+    {
+        PM.ingredient("pm-undifferentiated-asteroid-miner", 1)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-transition-metal-asteroid-miner",
+    enabled = false,
+    energy_required = 15,
+    ingredients =
+    {
+        PM.ingredient("pm-undifferentiated-asteroid-miner", 1),
+        PM.ingredient("pm-space-processing-unit", 6),
+        PM.ingredient("pm-transition-metal-ore", 15)
+    },
+    results = 
+    {
+        PM.product("pm-transition-metal-asteroid-miner", 1)
+    }
+  }--]]
 } --[[@as data.RecipePrototype[] ]])
