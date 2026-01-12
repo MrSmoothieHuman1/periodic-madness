@@ -1539,12 +1539,12 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-science-bottle", 1),
-      PM.ingredient("pm-filled-plastic-science-mold", 1)
+      PM.catalyst_ingredient("pm-filled-plastic-science-mold", 1, 1)
     },
     results =
     {
       PM.product("pm-plastic-science-bottle", 1),
-      PM.product_chance("pm-plastic-science-mold", 1, 0.66)
+      PM.catalyst_chance("pm-plastic-science-mold", 1, 0.66, 1)
     }
   },
   {
@@ -4420,7 +4420,7 @@ data:extend({
     {
       PM.ingredient("pm-benzene", 20, "fluid"),
       PM.ingredient("pm-carbon-monoxide", 40, "fluid"),
-      PM.ingredient("pm-rhodium-plate", 2)
+      PM.catalyst_ingredient("pm-rhodium-plate", 2, 2)
     },
     results =
     {

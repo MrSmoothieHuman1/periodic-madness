@@ -34,7 +34,7 @@ data:extend({
       PM.unlock_recipe("pm-orange-circuit-molding"),
       PM.unlock_recipe("pm-orange-breadboard-molding")
     },
-    prerequisites = {"pm-electronic-circuit-molding"},
+    prerequisites = {"pm-electronic-circuit-molding", "pm-fluid-circuit"},
     unit =
     {
       count = 100,

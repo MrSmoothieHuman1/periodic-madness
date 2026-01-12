@@ -12,13 +12,13 @@ data:extend({
     {
         PM.ingredient("pm-ammonia-gas", 10, "fluid"),
         PM.ingredient("pm-nitric-acid", 10, "fluid"),
-        PM.ingredient("pm-yttrium-catalyst", 2)
+        PM.catalyst_ingredient("pm-yttrium-catalyst", 2, 2)
     },
     results =
     {
         PM.product("pm-ammonium-nitrate", 10),
-        PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3),
-        PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3)
+        PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2),
+        PM.catalyst_chance("pm-yttrium-catalyst", 2, 0.8, 2)
     }
   },
   {
@@ -89,13 +89,13 @@ data:extend({
     {
         PM.ingredient("pm-hexamethyleneteramine", 2),
         PM.ingredient("pm-acetic-acid", 8, "fluid"),
-        PM.ingredient("pm-palladium-catalyst", 3)
+        PM.catalyst_ingredient("pm-palladium-catalyst", 3, 3)
     },
     results =
     {
         PM.product("pm-HMX", 2),
-        PM.catalyst_chance("pm-palladium-catalyst", 3, 0.75, 2),
-        PM.catalyst_chance("pm-catalyst-container", 3, 0.25, 2)
+        PM.catalyst_chance("pm-palladium-catalyst", 3, 0.75, 3),
+        PM.catalyst_chance("pm-catalyst-container", 3, 0.25, 3)
     }
   },
   {
@@ -147,7 +147,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-nitrogen-dioxide", 10, "fluid"),
-        PM.ingredient("copper-plate", 4)
+        PM.catalyst_ingredient("copper-plate", 4, 4)
     },
     results =
     {
@@ -189,7 +189,7 @@ data:extend({
     {
         PM.ingredient("pm-high-sulfur-refined-kerosene", 75, "fluid"),
         PM.ingredient("steam", 33, "fluid"),
-        PM.ingredient("pm-vanadium-oxide-catalyst", 2)
+        PM.catalyst_ingredient("pm-vanadium-oxide-catalyst", 2, 2)
     },
     results = 
     {
@@ -211,7 +211,7 @@ data:extend({
     {
         PM.ingredient("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
         PM.ingredient("steam", 25, "fluid"),
-        PM.ingredient("pm-cobalt-catalyst", 3)
+        PM.catalyst_ingredient("pm-cobalt-catalyst", 3, 3)
     },
     results = 
     {
@@ -236,7 +236,7 @@ data:extend({
         PM.ingredient("pm-2-3-3-trimethylpentane", 5, "fluid"),
         PM.ingredient("solid-fuel", 10),
         PM.ingredient("pm-ruthenium-sulfide", 4),
-        PM.ingredient("pm-nickel-tungsten-catalyst", 4)
+        PM.catalyst_ingredient("pm-nickel-tungsten-catalyst", 4, 4)
     },
     results =
     {
