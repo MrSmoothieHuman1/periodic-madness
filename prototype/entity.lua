@@ -9656,7 +9656,7 @@ fluid_boxes =
         {flow_direction="input-output", direction = defines.direction.east --[[@as int]], position = {2.5, -2.5}} --east top
       },
     },
-    max_fluid_usage = 0.25,
+    max_fluid_usage = 0.5,
     graphics_set =
     {
       plasma_category = "pm-geothermal-steam",

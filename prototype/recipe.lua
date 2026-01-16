@@ -5312,13 +5312,13 @@ data:extend({
     ingredients =
     {
         PM.ingredient("water", 50, "fluid"),
-        PM.ingredient("pm-diesel", 20, "fluid"),
+        PM.ingredient("pm-diesel", 30, "fluid"),
         PM.ingredient("pm-bauxite-powder", 8),
         PM.ingredient("pm-calcium-ore", 4)
     },
     results =
     {
-        PM.product("pm-geothermal-drilling-fluid", 25, "fluid")
+        PM.product("pm-geothermal-drilling-fluid", 45, "fluid")
     }
   },
   {
