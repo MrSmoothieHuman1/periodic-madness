@@ -132,7 +132,7 @@ data:extend({
         {
             PM.ingredient("pm-oxygen-gas", 10, "fluid")
         },
-        results = 
+        results =
         {
             PM.product("pm-liquid-oxygen", 1, "fluid")
         }

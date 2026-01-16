@@ -7943,6 +7943,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-liquid-oxygen-rocket-oxidiser-tank")
     },
     prerequisites = {"pm-liquid-rocket-fuel", "pm-liquid-gasses"},
     unit =

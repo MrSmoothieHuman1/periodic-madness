@@ -349,6 +349,43 @@ data:extend({
         PM.product("pm-liquid-rocket-oxidiser-tank", 2)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-liquid-oxygen-rocket-oxidiser-tank",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/liquid-rocket-oxidiser-tank.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/liquid-oxygen.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
+    enabled = false,
+    energy_required = 15,
+    category = "crafting-with-fluid",
+    order = "ia",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-liquid-oxygen", 15, "fluid"),
+        PM.ingredient("pm-light-coolant", 30, "fluid"),
+        PM.ingredient("pm-lightweight-panelling", 12),
+        PM.ingredient("pm-cooling-plating", 12),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-advanced-electric-engine-unit", 2),
+        PM.ingredient("pm-lightweight-framing", 8),
+        PM.ingredient("pm-fluid-circuit", 4)
+    },
+    results =
+    {
+        PM.product("pm-liquid-rocket-oxidiser-tank", 2)
+    }
+  },
 
   {
     type = "recipe",
