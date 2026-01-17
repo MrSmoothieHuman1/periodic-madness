@@ -97,8 +97,18 @@ data:extend({
 {
   type = "recipe",
   name = "pm-helium-gas-atmospheric-voiding",
-  icon_size = 128,
-  icon = "__periodic-madness__/graphics/icons/recipes/helium-gas-voiding.png",
+  icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/helium-gas.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
+        scale = 0.4
+      },
+    },
   category = "pm-atmospheric-condensing",
   subgroup = "pm-helium-nb",
   order = "x",

@@ -103,6 +103,8 @@ data:extend({
 {
     type = "recipe",
     name = "pm-mixed-noble-gas-seperation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/mixed-noble-gas-seperation.png",
     enabled = false,
     energy_required = 6,
     category = "pm-atmospheric-condensing",

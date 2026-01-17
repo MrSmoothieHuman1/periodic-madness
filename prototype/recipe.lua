@@ -6142,4 +6142,40 @@ data:extend({
       PM.product("pm-advanced-YAG-laser-head", 1)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-light-noble-gas-mixture",
+    energy_required = 12,
+    enabled = false,
+    category = "pm-mixing",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-helium-gas", 30, "fluid"),
+        PM.ingredient("pm-neon-gas", 25, "fluid"),
+        PM.ingredient("pm-argon-gas", 20, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-light-noble-gas-mixture", 40, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-heavy-noble-gas-mixture",
+    energy_required = 12,
+    enabled = false,
+    category = "pm-mixing",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-krypton-gas", 15, "fluid"),
+        PM.ingredient("pm-xenon-gas", 10, "fluid"),
+        PM.ingredient("pm-radon-gas", 5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-heavy-noble-gas-mixture", 40, "fluid")
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

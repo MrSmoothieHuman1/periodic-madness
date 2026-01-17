@@ -6234,6 +6234,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/noble-gas-unlock.png",
     effects =
     {
+        PM.unlock_recipe("pm-light-noble-gas-mixture"),
+        PM.unlock_recipe("pm-heavy-noble-gas-mixture"),
         PM.unlock_recipe("pm-noble-gas-science-pack")
     },
     prerequisites = {"pm-noble-gas-processing"},
@@ -6302,6 +6304,7 @@ data:extend({
         PM.unlock_recipe("pm-krypton-gas-into-industrial-noble-gas"),
         PM.unlock_recipe("pm-xenon-gas-into-industrial-noble-gas"),
         PM.unlock_recipe("pm-radon-gas-into-industrial-noble-gas"),
+        PM.unlock_recipe("pm-neon-gas-atmospheric-voiding"),
         PM.unlock_recipe("pm-helium-air-filter"),
         PM.unlock_recipe("pm-helium-gas"),
         PM.unlock_recipe("pm-neon-air-filter"),

@@ -20,6 +20,7 @@ local function make_voiding(prototype)
 	table.insert(icons, {
 		icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
 		icon_size = 64,
+        scale = 0.45,
 	})
 
     local burnable_tooltip = {

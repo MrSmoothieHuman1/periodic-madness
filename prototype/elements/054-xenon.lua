@@ -95,4 +95,32 @@ data:extend({
         PM.product_chance("pm-catalyst-container", 2, 0.1)
     }
 },
+{
+  type = "recipe",
+  name = "pm-xenon-gas-atmospheric-voiding",
+  icon_size = 64,
+  icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/xenon-gas.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/nuh-uh-64.png",
+        icon_size = 64,
+        scale = 0.4
+      },
+    },
+  category = "pm-atmospheric-condensing",
+  subgroup = "pm-xenon-nb",
+  order = "x",
+  enabled = false,
+  energy_required = 6,
+  emissions_multiplier = 0.5,
+  ingredients =
+  {
+    PM.ingredient("pm-xenon-gas", 25, "fluid")
+  },
+  results = {}
+},
 })
