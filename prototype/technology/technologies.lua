@@ -7030,7 +7030,16 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-liquid-transition-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-advanced-transition-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-advanced-advanced-transition-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-post-transition-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-reactive-non-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-metalloid-science-pack"),
+        PM.unlock_recipe("pm-liquid-alkali-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-advanced-advanced-advanced-transition-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-alkaline-earth-metal-science-pack"),
+        PM.unlock_recipe("pm-liquid-noble-gas-science-pack"),
     },
     prerequisites = {"pm-advanced-processing-unit", "pm-high-density-structure"},
     unit =

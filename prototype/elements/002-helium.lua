@@ -87,11 +87,11 @@ data:extend({
         PM.ingredient("pm-helium-gas", 20, "fluid"),
         PM.ingredient("pm-vanadium-oxide-catalyst", 2)
     },
-    results = 
+    results =
     {
         PM.product("pm-industrial-noble-gas", 5, "fluid"),
         PM.product_chance("pm-vanadium-oxide-catalyst", 2, 0.66),
-        PM.product_chance("pm-catalyst-container", 2, 0.33)
+        PM.product_chance("pm-catalyst-container", 2, 0.34)
     }
 },
 {

@@ -506,7 +506,222 @@ data:extend({
 },
 
 --MARK: Liquid Science
-
+{
+    type = "recipe",
+    name = "pm-liquid-transition-metal-science",
+    enabled = false,
+    energy_required = 12,
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("iron-plate", 15),
+        PM.ingredient("pm-nickel-plate", 15),
+        PM.ingredient("pm-cobalt-plate", 10),
+        PM.ingredient("pm-vanadium-ore", 16),
+        PM.ingredient("pm-molybdenum-ore", 20),
+        PM.ingredient("pm-osmium-ore", 12),
+       -- PM.ingredient("pm-rutherfordium", 10)
+    },
+    results = 
+    {
+        PM.product("automation-science-pack", 10)
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-transition-metal-science",
+    enabled = false,
+    energy_required = 12,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-gold-plate", 35),
+        PM.ingredient("pm-manganese-plate", 35),
+        PM.ingredient("pm-liquid-mercury", 200, "fluid"),
+        PM.ingredient("pm-chromium-ore", 30),
+        PM.ingredient("pm-zirconia", 10),
+        PM.ingredient("pm-hafnium-ore", 20),
+        PM.ingredient("pm-iridium-plate", 12)
+    },
+    results =
+    {
+        PM.product("logistic-science-pack", 10)
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-advanced-transition-metal-science",
+    enabled = false,
+    energy_required = 12,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-titanium-plate", 60),
+        PM.ingredient("pm-tungsten-plate", 60),
+        PM.ingredient("copper-plate", 100),
+        PM.ingredient("pm-silver-plate", 100),
+        PM.ingredient("pm-palladium-plate", 30),
+        PM.ingredient("pm-platinum-plate", 30),
+        PM.ingredient("pm-cadnium-plate", 15),
+    },
+    results =
+    {
+        PM.product("pm-advanced-advanced-transition-metal-science-pack", 10)
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-reactive-non-metal-science",
+    enabled = false,
+    energy_required = 12,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("sulfur", 80),
+        PM.ingredient("pm-chlorine", 100, "fluid"),
+        PM.ingredient("pm-nitrogen-gas", 100, "fluid"),
+        PM.ingredient("pm-oxygen-gas", 100, "fluid"),
+        PM.ingredient("pm-carbon", 200),
+        PM.ingredient("pm-selenium-plate", 20),
+        PM.ingredient("pm-red-phosphorus", 30),
+        PM.ingredient("pm-flourine", 15),
+        PM.ingredient("pm-bromine", 50, "fluid"),
+        PM.ingredient("pm-iodine", 15)
+    },
+    results =
+    {
+        PM.product("chemical-science-pack", 10)
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-post-transition-metal-science",
+    enabled = false,
+    energy_required = 12,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-liquid-gallium", 50, "fluid"),
+        PM.ingredient("pm-thallium-plate", 15),
+        PM.ingredient("pm-lead-plate", 45),
+        PM.ingredient("pm-bismuth-ore", 15),
+        PM.ingredient("pm-tin-plate", 30),
+        PM.ingredient("pm-aluminium-plate", 30),
+        PM.ingredient("pm-indium-plate", 20),
+        PM.ingredient("pm-polonium-210", 10),
+        PM.ingredient("pm-trace-astatine-211", 10)
+    },
+    results =
+    {
+        PM.product("pm-post-transition-metal-science-pack", 10)
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-alkali-metal-science",
+    enabled = false,
+    energy_required = 12,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    main_product = "pm-alkali-metal-science-pack",
+    ingredients =
+    {
+        PM.ingredient("pm-sodium", 150),
+        PM.ingredient("pm-lithium-ore", 50),
+        PM.ingredient("pm-potassium", 60),
+        PM.ingredient("pm-rubidium", 12),
+        PM.ingredient("pm-caesium-glass-ampule", 10),
+        PM.ingredient("pm-francium-glass-ampule", 10)
+    },
+    results =
+    {
+        PM.product("pm-alkali-metal-science-pack", 10),
+        PM.catalyst_chance("pm-empty-glass-ampule", 20, 0.95, 20)
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-metalloid-science",
+    enabled = false,
+    energy_required = 12,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-arsenic-ore", 45),
+        PM.ingredient("pm-antimony-ore", 45),
+        PM.ingredient("pm-industrial-grade-silicon-ore", 30),
+        PM.ingredient("pm-germanium-ore", 30),
+        PM.ingredient("pm-tellurium-plate", 60),
+        PM.ingredient("pm-boron", 140, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-metalloid-science-pack", 10),
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-alkaline-earth-metal-science",
+    enabled = false,
+    energy_required = 12,
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-calcium-ore", 160),
+        PM.ingredient("pm-beryllium-plate", 30),
+        PM.ingredient("pm-magnesium-plate", 30),
+        PM.ingredient("pm-strontium-ore", 15),
+        PM.ingredient("pm-barium-ore", 25),
+        PM.ingredient("pm-radium-ore", 25)
+    },
+    results =
+    {
+        PM.product("pm-alkaline-earth-metal-science-pack", 10),
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-advanced-advanced-transition-metal-science",
+    enabled = false,
+    energy_required = 12,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-yttrium-ore", 30),
+        PM.ingredient("pm-osmiridium-plate", 30),
+        PM.ingredient("pm-rhenium-plate", 12),
+        PM.ingredient("pm-tantalum-plate", 20),
+        PM.ingredient("pm-niobium-plate", 20),
+        PM.ingredient("pm-molten-zinc", 35, "fluid"),
+        PM.ingredient("pm-ruthenium-plate", 10),
+        PM.ingredient("pm-rhodium-plate", 15),
+    },
+    results =
+    {
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 10),
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-noble-gas-science",
+    enabled = false,
+    energy_required = 12,
+    category = "crafting-with-fluid",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-industrial-noble-gas", 600, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-noble-gas-science-pack", 10),
+    }
+},
 
 --MARK: Francium Science
 
