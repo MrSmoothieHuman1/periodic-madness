@@ -110,7 +110,6 @@ data:extend({
     category = "pm-atmospheric-condensing",
     subgroup = "pm-nb-nb",
     order = "a",
-    main_product = "pm-helium-gas",
     ingredients = 
     {
         PM.ingredient("pm-mixed-noble-gas", 50, "fluid"),

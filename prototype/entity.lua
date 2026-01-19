@@ -9499,7 +9499,7 @@ fluid_boxes =
   allowed_effects = PM.all_effects(),
   module_slots = 3,
   allowed_module_categories = {"pm-laser-modules"},
-  crafting_speed = 2,
+  crafting_speed = 2.5,
   energy_usage = "650kW",
   energy_source =
   {

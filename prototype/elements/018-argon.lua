@@ -99,7 +99,7 @@ data:extend({
 {
    type = "recipe",
    name = "pm-argon-gas-atmospheric-voiding",
-  icons = 
+   icons = 
     {
       {
         icon = "__periodic-madness__/graphics/icons/fluids/argon-gas.png",

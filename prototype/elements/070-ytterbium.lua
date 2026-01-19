@@ -122,9 +122,8 @@ data:extend({
         results =
         {
             PM.product_range("pm-impure-ytterbium", 1, 3),
-            PM.product_range_chance("pm-thulium", 1, 2, 0.5),
             PM.product_range("pm-erbium-salts", 0, 2),
-            PM.product_range("pm-mixed-praseodymium-deposit", 0, 3),
+            PM.product_range("pm-mixed-praseodymium-deposit", 0, 2),
             PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.9, 2),
             PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2),
             PM.catalyst("pm-cobalt-catalyst", 2, 2),

@@ -126,7 +126,7 @@ data:extend({
         allow_productivity = true,
         ingredients = 
         {
-            PM.ingredient("pm-cerium-plate", 1)
+            PM.ingredient("pm-cerium", 1)
         },
         results = 
         {
