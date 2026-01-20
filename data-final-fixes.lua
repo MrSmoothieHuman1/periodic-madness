@@ -203,7 +203,10 @@ for _, entity_type in pairs{
 				"pm-heating-coils",
 				"pm-circuit-megassembler-module",
 				"pm-circuit-megassembler-module-MK2",
-                "pm-laser-modules"
+                "pm-laser-modules",
+                "pm-heat-pumps",
+                "pm-beamcon-speed",
+                "pm-beamcon-efficiency"
 			})
 		end
 	end

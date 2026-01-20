@@ -62,7 +62,7 @@ data:extend({
             -- loses 0.25 for every extra beacon, every time it goes down a 0.X, it loses +0.01
             -- the final number before it goes down a 'level' is just the 0.X number, with the same rules as before
         },
-        beacon_counter = "same_type",
+        beacon_counter = "total",
         module_slots = 6,
         icons_positioning =
         {
