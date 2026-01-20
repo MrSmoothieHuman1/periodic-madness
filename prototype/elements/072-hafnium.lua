@@ -194,7 +194,7 @@ data:extend({
         {
             PM.product("pm-hafnium-iodide", 6),
             PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.8, 2),
-            PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 2),
+            PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3),
         }
     },
     {
@@ -214,7 +214,7 @@ data:extend({
         results = 
         {
             PM.product("pm-hafnium-ore", 4),
-            PM.product_chance("pm-iodine", 3, 0.5),
+            PM.catalyst_chance("pm-iodine", 3, 0.5, 3),
             PM.product_chance("pm-tungsten-plate", 4, 0.5)
         }
     }

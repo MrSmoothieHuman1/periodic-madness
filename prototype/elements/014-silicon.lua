@@ -395,7 +395,7 @@ data:extend({
             scale = 0.33
           },
         },
-        crafting_machine_tint = 
+        crafting_machine_tint =
         {
             primary = {0.733, 0.682, 0.741},
             secondary = {0.761, 0.694, 0.869},
@@ -424,7 +424,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-low-quality-polysilicon",
-        crafting_machine_tint = 
+        crafting_machine_tint =
         {
             primary = {0.36, 0.36, 0.36},
             secondary = {0.247, 0.298, 0.38},
@@ -447,13 +447,13 @@ data:extend({
         results =
         {
             PM.product_chance("pm-low-quality-polysilicon", 2, 0.95),
-            PM.product_range("pm-industrial-grade-silicon-ore", 0, 5)
+            PM.catalyst_range("pm-industrial-grade-silicon-ore", 0, 5, 3)
         }
     },
     {
         type = "recipe",
         name = "pm-medium-quality-polysilicon",
-        crafting_machine_tint = 
+        crafting_machine_tint =
         {
             primary = {0.58, 0.58, 0.58},
             secondary = {0.427, 0.494, 0.6},
@@ -476,13 +476,13 @@ data:extend({
         results =
         {
             PM.product_chance("pm-medium-quality-polysilicon", 2, 0.85),
-            PM.product_range("pm-low-quality-polysilicon", 0, 5)
+            PM.catalyst_range("pm-low-quality-polysilicon", 0, 5, 3)
         }
     },
     {
         type = "recipe",
         name = "pm-high-quality-polysilicon",
-        crafting_machine_tint = 
+        crafting_machine_tint =
         {
             primary = {0.83, 0.83, 0.83},
             secondary = {0.592, 0.682, 0.831},
@@ -505,7 +505,7 @@ data:extend({
         results =
         {
             PM.product_chance("pm-high-quality-polysilicon", 2, 0.75),
-            PM.product_range("pm-medium-quality-polysilicon", 0, 5)
+            PM.catalyst_range("pm-medium-quality-polysilicon", 0, 5, 3)
         }
     },
     {

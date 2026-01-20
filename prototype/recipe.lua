@@ -5281,7 +5281,7 @@ data:extend({
     results =
     {
         PM.product("pm-high-density-structure", 2),
-        PM.product_chance("pm-isogrid-crucible", 2, 0.85),
+        PM.catalyst_chance("pm-isogrid-crucible", 2, 0.85, 2),
         PM.catalyst("pm-industrial-noble-gas", 15, 15, "fluid")
     }
   },
