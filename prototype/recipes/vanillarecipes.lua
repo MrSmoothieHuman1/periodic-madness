@@ -877,6 +877,17 @@ data.raw["recipe"]["steam-turbine"].ingredients =
     PM.ingredient("pm-air-filter", 2),
     PM.ingredient("pm-corrosion-resistant-tubing", 6),
 }
+data.raw["recipe"]["spidertron"].category = "crafting-with-fluid"
+data.raw["recipe"]["spidertron"].ingredients =
+{
+    PM.ingredient("pm-spiderling-issy", 1),
+    PM.ingredient("pm-advanced-processing-unit", 20),
+    PM.ingredient("pm-lightweight-panelling", 48),
+    PM.ingredient("pm-radiation-resistant-panelling", 36),
+    PM.ingredient("pm-gyroscope", 2),
+    PM.ingredient("pm-light-lubricant", 25, "fluid"),
+    PM.ingredient("pm-light-coolant", 25, "fluid"),
+}
 
 data.raw["recipe"]["speed-module-2"].energy_required = 15
 data.raw["recipe"]["efficiency-module-2"].energy_required = 15
