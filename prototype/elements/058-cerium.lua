@@ -45,13 +45,8 @@ data:extend({
     {
       type = "item",
       name = "pm-cerium-plate",
-      icon_size = 128,
-      icon = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png",
-      pictures =
-      {
-        { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png", size = 128, scale = 0.25},
-        { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y-2.png", size = 128, scale = 0.25},
-      },
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/plates/cerium-plate.png",
       subgroup = "pm-cerium-la",
       order = "c",
       protons = 59,
