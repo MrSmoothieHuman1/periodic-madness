@@ -5364,7 +5364,7 @@ data:extend({
     order = "f",
     ingredients =
     {
-      PM.ingredient("pm-cobalt-blue", 5),
+      PM.ingredient("pm-YInMn-blue", 5),
       PM.ingredient("speed-module-3", 1),
       PM.ingredient("pm-advanced-speed-module-light", 1),
       PM.ingredient("pm-space-processing-unit", 10),
@@ -5383,7 +5383,7 @@ data:extend({
     order = "f",
     ingredients =
     {
-      PM.ingredient("pm-chrome-green", 5),
+      PM.ingredient("pm-phthalo-green", 5),
       PM.ingredient("efficiency-module-3", 1),
       PM.ingredient("pm-advanced-efficiency-module-light", 1),
       PM.ingredient("pm-space-processing-unit", 10),
@@ -5402,7 +5402,7 @@ data:extend({
     order = "f",
     ingredients =
     {
-      PM.ingredient("pm-cadnium-red", 5),
+      PM.ingredient("pm-cerium-sulfide-red", 5),
       PM.ingredient("productivity-module-3", 1),
       PM.ingredient("pm-advanced-productivity-module-light", 1),
       PM.ingredient("pm-space-processing-unit", 10),
@@ -6176,6 +6176,60 @@ data:extend({
     results =
     {
         PM.product("pm-heavy-noble-gas-mixture", 40, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cerium-sulfide-red",
+    energy_required = 6,
+    enabled = false,
+    category = "crafting-with-fluid",
+    ingredients =
+    {
+        PM.ingredient("pm-cadnium-red", 6),
+        PM.ingredient("pm-cerium-plate", 9),
+        PM.ingredient("sulfur", 18),
+        PM.ingredient("pm-carbon-dioxide-gas", 20, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-cerium-sulfide-red", 8)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-phthalo-green",
+    energy_required = 6,
+    enabled = false,
+    category = "crafting-with-fluid",
+    ingredients =
+    {
+        PM.ingredient("pm-chrome-green", 6),
+        PM.ingredient("copper-plate", 18),
+        PM.ingredient("pm-hydrogen-gas", 15, "fluid"),
+        PM.ingredient("pm-nitrogen-gas", 15, "fluid"),
+        PM.ingredient("pm-carbon", 12)
+    },
+    results =
+    {
+        PM.product("pm-phthalo-green", 8)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-YInMn-blue",
+    energy_required = 6,
+    enabled = false,
+    ingredients =
+    {
+        PM.ingredient("pm-cobalt-blue", 6),
+        PM.ingredient("pm-manganese-plate", 12),
+        PM.ingredient("pm-yttrium-ore", 10),
+        PM.ingredient("pm-indium-plate", 8),
+    },
+    results =
+    {
+        PM.product("pm-YInMn-blue", 8)
     }
   },
 } --[[@as data.RecipePrototype[] ]])

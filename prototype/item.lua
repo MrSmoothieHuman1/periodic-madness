@@ -2073,6 +2073,27 @@ data:extend({
     order = "f",
     stack_size = 5,
   },
+  {
+    type = "item",
+    name = "pm-cerium-sulfide-red",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/chrome-green.png",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-phthalo-green",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/chrome-green.png",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-YInMn-blue",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/chrome-green.png",
+    stack_size = 50
+  },
 
   {
     type = "item",

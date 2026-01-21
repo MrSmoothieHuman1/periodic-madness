@@ -7989,6 +7989,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/speed-module-6-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-YInMn-blue"),
         PM.unlock_recipe("pm-speed-module-6")
     },
     prerequisites = {"pm-speed-module-5", "pm-space-processing-units", "pm-lanthanide-science-pack"},
@@ -8019,6 +8020,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/efficiency-module-6-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-phthalo-green"),
         PM.unlock_recipe("pm-efficiency-module-6")
     },
     prerequisites = {"pm-efficiency-module-5", "pm-space-processing-units", "pm-lanthanide-science-pack"},
@@ -8049,6 +8051,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/productivity-module-6-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-cerium-sulfide-red"),
         PM.unlock_recipe("pm-productivity-module-6")
     },
     prerequisites = {"pm-productivity-module-5", "pm-space-processing-units", "pm-lanthanide-science-pack"},
