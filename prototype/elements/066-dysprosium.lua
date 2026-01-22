@@ -45,7 +45,7 @@ data:extend({
         type = "item",
         name = "pm-cooled-dysprosium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/cooled-dysprosium.png",
         subgroup = "pm-dysprosium-la",
         order = "g",
         stack_size = 50
