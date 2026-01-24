@@ -66,7 +66,12 @@ data:extend({
       type = "item",
       name = "pm-erbium-plate",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/plates/erbium-plate.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/plates/erbium-plate.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/plates/erbium-plate-2.png", size = 64, scale = 0.5 },
+      },
       subgroup = "pm-erbium-la",
       order = "i",
       protons = 68,
