@@ -8179,6 +8179,15 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-thorium-cast-iron-vessel"),
+        PM.unlock_recipe("pm-phosphoryl-chloride"),
+        PM.unlock_recipe("pm-tributyl-phosphate"),
+        PM.unlock_recipe("pm-fine-monazite-sand"),
+        PM.unlock_recipe("pm-thorium-filtered-concentrate"),
+        PM.unlock_recipe("pm-thorium-filter-cake"),
+        PM.unlock_recipe("pm-thorium-filter-cake-seperation"),
+        PM.unlock_recipe("pm-trace-thorium"),
+        PM.unlock_recipe("pm-thorium-232")
     },
     prerequisites = {"pm-advanced-magnets"},
     research_trigger =
