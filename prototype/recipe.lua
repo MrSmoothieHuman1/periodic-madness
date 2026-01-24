@@ -2037,27 +2037,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
-    enabled = false,
-    energy_required = 60,
-    category = "crafting-with-fluid",
-    subgroup = "pm-catalysts",
-    order = "ha",
-    ingredients =
-    {
-      PM.ingredient("pm-molybdenum-ore", 20),
-      PM.ingredient("pm-nitrogen-gas", 15, "fluid"),
-      PM.ingredient("pm-nickel-plate", 12),
-      PM.ingredient("pm-red-phosphorus", 6),
-      PM.ingredient("pm-lightweight-panelling", 16)
-    },
-    results =
-    {
-      PM.product_chance("pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst", 1, 0.7)
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-sodium-grenade",
     enabled = false,
     energy_required = 2,

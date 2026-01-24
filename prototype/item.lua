@@ -1308,15 +1308,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-nitrogen-doped-nickel-molybdenum-phosphide-catalyst",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/NiMoP.png",
-    subgroup = "pm-catalysts",
-    order = "h",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "pm-rocket-control-unit",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
