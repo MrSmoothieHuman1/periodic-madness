@@ -126,7 +126,7 @@ data:extend({
             PM.ingredient("pm-molten-iron", 15, "fluid"),
             PM.ingredient("pm-boron", 30, "fluid"),
             PM.ingredient("pm-crucible", 3),
-            PM.ingredient("pm-graphite", 6)
+            PM.ingredient("pm-graphite", 5)
         },
         results =
         {
