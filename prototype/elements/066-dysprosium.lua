@@ -22,7 +22,13 @@ data:extend({
         type = "item",
         name = "pm-dysprosium-fluoride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/dysprosium-fluoride.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/dysprosium-fluoride.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/dysprosium-fluoride-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/dysprosium-fluoride-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-dysprosium-la",
         order = "d",
         stack_size = 100
