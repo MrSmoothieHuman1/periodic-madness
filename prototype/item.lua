@@ -709,46 +709,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-polonium-fuel-cell",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/polonium-fuel-cell.png",
-    pictures =
-    {
-      layers =
-      {
-        {
-          size = 64,
-          filename = "__periodic-madness__/graphics/icons/polonium-fuel-cell.png",
-          scale = 0.5,
-        },
-        {
-          draw_as_light = true,
-          flags = { "light" },
-          size = 64,
-          filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
-          scale = 0.5,
-          mipmap_count = 4
-        }
-      }
-    },
-    subgroup = "pm-polonium-ptm",
-    burnt_result = "pm-used-up-polonium-fuel-cell",
-    fuel_category = "pm-polonium",
-    fuel_value = "10GJ",
-    order = "e",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "pm-used-up-polonium-fuel-cell",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/used-up-polonium-fuel-cell.png",
-    subgroup = "pm-polonium-ptm",
-    order = "f",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "pm-indium-wire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/indium-wire.png",

@@ -44,7 +44,55 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-thorium-ac",
         order = "i",
-        stack_size = 400
+        stack_size = 100
+    },
+    {
+        type = "item",
+        name = "pm-thorium-233",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        subgroup = "pm-thorium-ac",
+        order = "j",
+        stack_size = 100
+    },
+    {
+      type = "item",
+      name = "pm-liquid-thorium-fluoride-fuel-cell",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/polonium-fuel-cell.png",
+      pictures =
+      {
+        layers =
+        {
+          {
+            size = 64,
+            filename = "__periodic-madness__/graphics/icons/polonium-fuel-cell.png",
+            scale = 0.5,
+          },
+          {
+            draw_as_light = true,
+            flags = { "light" },
+            size = 64,
+            filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
+            scale = 0.5,
+          }
+        }
+      },
+      subgroup = "pm-thorium-ac",
+      burnt_result = "pm-liquid-thorium-fluoride-residue",
+      fuel_category = "pm-polonium",
+      fuel_value = "20GJ",
+      order = "l",
+      stack_size = 50
+    },
+    {
+      type = "item",
+      name = "pm-liquid-thorium-fluoride-residue",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/used-up-polonium-fuel-cell.png",
+      subgroup = "pm-thorium-ac",
+      order = "m",
+      stack_size = 50
     },
 
     {
@@ -109,6 +157,18 @@ data:extend({
       icon = "__periodic-madness__/graphics/icons/fluids/heavy-noble-gas-mixture.png",
       subgroup = "pm-thorium-ac",
       order = "g",
+      default_temperature = 15,
+      gas_temperature = 15,
+      base_color = {0.82, 0.91, 0.733},
+      flow_color = {0.72, 0.81, 0.633},
+    },
+    {
+      type = "fluid",
+      name = "pm-liquid-thorium-fluoride",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/fluids/heavy-noble-gas-mixture.png",
+      subgroup = "pm-thorium-ac",
+      order = "k",
       default_temperature = 15,
       gas_temperature = 15,
       base_color = {0.82, 0.91, 0.733},
@@ -216,7 +276,7 @@ data:extend({
         type = "recipe",
         name = "pm-thorium-filter-cake",
         enabled = false,
-        energy_required = 24,
+        energy_required = 36,
         category = "pm-washing",
         main_product = "pm-thorium-filter-cake",
         ingredients =
@@ -235,7 +295,7 @@ data:extend({
         type = "recipe",
         name = "pm-thorium-filter-cake-seperation",
         enabled = false,
-        energy_required = 32,
+        energy_required = 24,
         category = "centrifuging",
         allow_productivity = true,
         main_product = "pm-thorium-precipitate",
@@ -284,6 +344,59 @@ data:extend({
         results =
         {
             PM.product_range("pm-thorium-232", 1, 2)
+        }
+    },
+
+    {
+        type = "recipe",
+        name = "pm-thorium-233",
+        enabled = false,
+        energy_required = 24,
+        category = "pm-cyclotroning",
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-thorium-232", 10)
+        },
+        results =
+        {
+            PM.product("pm-thorium-233", 10)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-liquid-thorium-fluoride",
+        enabled = false,
+        energy_required = 12,
+        category = "chemistry",
+        main_product = "pm-liquid-thorium-fluoride",
+        ingredients =
+        {
+            PM.ingredient("pm-thorium-233", 5),
+            PM.ingredient("pm-molten-potassium-salts", 25, "fluid"),
+            PM.catalyst_ingredient("pm-molten-gold", 20, 20, "fluid"),
+            PM.ingredient("pm-flourine", 10),
+        },
+        results =
+        {
+            PM.product("pm-liquid-thorium-fluoride", 30, "fluid"),
+            PM.catalyst("pm-molten-gold", 20, 20, "fluid")
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-liquid-thorium-fluoride-fuel-cell",
+        enabled = false,
+        energy_required = 32,
+        category = "crafting-with-fluid",
+        ingredients =
+        {
+            PM.ingredient("pm-liquid-thorium-fluoride", 15, "fluid"),
+            PM.ingredient("pm-empty-reactor-cell", 5)
+        },
+        results =
+        {
+            PM.product("pm-liquid-thorium-fluoride-fuel-cell", 5)
         }
     }
 })
