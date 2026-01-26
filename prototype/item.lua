@@ -2232,6 +2232,14 @@ data:extend({
   {
     type = "fuel-category",
     name = "pm-geothermal-bore"
+  },
+  {
+    type = "fuel-category",
+    name = "pm-thorium"
+  },
+  {
+    type = "fuel-category",
+    name = "pm-uranium-233"
   }
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"

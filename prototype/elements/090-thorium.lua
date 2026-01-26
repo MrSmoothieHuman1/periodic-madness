@@ -80,7 +80,7 @@ data:extend({
       },
       subgroup = "pm-thorium-ac",
       burnt_result = "pm-liquid-thorium-fluoride-residue",
-      fuel_category = "pm-polonium",
+      fuel_category = "pm-thorium",
       fuel_value = "20GJ",
       order = "l",
       stack_size = 50
