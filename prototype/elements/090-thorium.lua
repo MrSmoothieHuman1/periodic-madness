@@ -59,7 +59,7 @@ data:extend({
       type = "item",
       name = "pm-liquid-thorium-fluoride-fuel-cell",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/polonium-fuel-cell.png",
+      icon = "__periodic-madness__/graphics/icons/liquid-thorium-fluoride-fuel-cell.png",
       pictures =
       {
         layers =
