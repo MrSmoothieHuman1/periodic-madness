@@ -305,18 +305,19 @@ data:extend({
     {
       PM.unlock_recipe("pm-bromide-polymethyl-methacrylate-plastic")
     },
-    prerequisites = { "pm-bromine-processing", "pm-polymethyl-methacrylate"},
+    prerequisites = {"pm-bromine-processing", "pm-polymethyl-methacrylate", "pm-alkali-metal-pack-unlock"},
     unit =
     {
-      count = 200,
+      count = 300,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"pm-advanced-advanced-transition-metal-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1}
       },
-      time = 45,
+      time = 60,
     }
   }
 
