@@ -300,7 +300,7 @@ data.raw["recipe"]["sulfuric-acid"].ingredients =
 }
 data.raw["recipe"]["sulfuric-acid"].results =
 {
-  PM.product_chance("pm-ferrum", 3, 0.5),
-  PM.product_chance("pm-patina", 3, 0.5),
+  PM.catalyst_chance("pm-ferrum", 3, 0.5, 3),
+  PM.catalyst_chance("pm-patina", 3, 0.5, 3),
   PM.product("sulfuric-acid", 10, "fluid")
 }
