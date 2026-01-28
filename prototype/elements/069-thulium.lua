@@ -30,13 +30,13 @@ data:extend({
         main_product = "pm-thulium",
         ingredients =
         {
-            PM.ingredient("pm-monazite-sand", 2),
+            PM.catalyst_ingredient("pm-monazite-sand", 2, 1),
             PM.ingredient("pm-rhenium-platinum-catalyst", 2),
             PM.ingredient("pm-iodine", 3)
         },
         results =
         {
-            PM.product("pm-monazite-sand", 1),
+            PM.catalyst("pm-monazite-sand", 1, 1),
             PM.product_range_chance("pm-thulium", 1, 2, 0.07),
             PM.catalyst("pm-rhenium-platinum-catalyst", 2, 2),
             PM.catalyst_chance("pm-iodine", 3, 0.95, 3)
@@ -54,13 +54,13 @@ data:extend({
         main_product = "pm-thulium",
         ingredients =
         {
-            PM.ingredient("pm-monazite-sand", 2),
+            PM.catalyst_ingredient("pm-monazite-sand", 2, 1),
             PM.ingredient("pm-yttrium-catalyst", 2),
             PM.ingredient("pm-bromine", 3, "fluid")
         },
         results =
         {
-            PM.product("pm-monazite-sand", 1),
+            PM.catalyst("pm-monazite-sand", 1, 1),
             PM.product_range_chance("pm-thulium", 1, 2, 0.07),
             PM.catalyst("pm-yttrium-catalyst", 2, 2),
             PM.catalyst_chance("pm-bromine", 3, 0.95, 3, "fluid")
@@ -78,13 +78,13 @@ data:extend({
         main_product = "pm-thulium",
         ingredients =
         {
-            PM.ingredient("pm-monazite-sand", 2),
+            PM.catalyst_ingredient("pm-monazite-sand", 2, 1),
             PM.ingredient("pm-cobalt-catalyst", 4),
             PM.ingredient("pm-chlorine", 3, "fluid")
         },
         results =
         {
-            PM.product("pm-monazite-sand", 1),
+            PM.catalyst("pm-monazite-sand", 1, 1),
             PM.product_range_chance("pm-thulium", 1, 2, 0.07),
             PM.catalyst("pm-yttrium-catalyst", 4, 4),
             PM.catalyst_chance("pm-chlorine", 3, 0.95, 3, "fluid")
@@ -102,13 +102,13 @@ data:extend({
         main_product = "pm-thulium",
         ingredients =
         {
-            PM.ingredient("pm-monazite-sand", 2),
+            PM.catalyst_ingredient("pm-monazite-sand", 2, 1),
             PM.ingredient("pm-vanadium-oxide-catalyst", 4),
             PM.ingredient("pm-flourine", 3)
         },
         results =
         {
-            PM.product("pm-monazite-sand", 1),
+            PM.catalyst("pm-monazite-sand", 1, 1),
             PM.product_range_chance("pm-thulium", 1, 2, 0.07),
             PM.catalyst("pm-vanadium-oxide-catalyst", 4, 4),
             PM.catalyst_chance("pm-flourine", 3, 0.95, 3)
