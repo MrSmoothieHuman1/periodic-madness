@@ -6211,4 +6211,38 @@ data:extend({
         PM.product("pm-YInMn-blue", 8)
     }
   },
+  {
+    type = "recipe",
+    name = "pm-ReBCO-mixture",
+    enabled = false,
+    energy_required = 15,
+    category = "pm-crushing",
+    allow_productivity = true,
+    ingredients = 
+    {
+        PM.ingredient("pm-copper-powder", 12),
+        PM.ingredient("pm-barium-ore", 6),
+        PM.ingredient("pm-yttrium-ore", 3)
+    },
+    results = 
+    {
+        PM.product("pm-ReBCO-mixture", 15)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-superconducting-ReBCO",
+    enabled = false,
+    energy_requored = 15,
+    category = "crafting-with-fluid",
+    ingredients = 
+    {
+        PM.ingredient("pm-ReBCO", 2),
+        PM.ingredient("pm-liquid-nitrogen", 30, "fluid")
+    },
+    results = 
+    {
+        PM.product("pm-superconducting-ReBCO", 1)
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

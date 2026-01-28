@@ -8420,13 +8420,19 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-plasma-generation",
+    name = "pm-superconductors",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-ReBCO-mixture"),
+        PM.unlock_recipe("pm-molten-ReBCO-precursor-alloy"),
+        PM.unlock_recipe("pm-ReBCO-precursor-billet"),
+        PM.unlock_recipe("pm-molten-ReBCO"),
+        PM.unlock_recipe("pm-ReBCO"),
+        PM.unlock_recipe("pm-superconducting-ReBCO")
     },
-    prerequisites = {"pm-cryocooling"},
+    prerequisites = {"pm-liquid-gasses"},
     unit =
     {
       count = 900,

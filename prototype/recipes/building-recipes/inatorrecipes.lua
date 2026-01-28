@@ -508,6 +508,79 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-molten-ReBCO-precursor-alloy",
+    enabled = false,
+    energy_required = 30,
+    category = "pm-moltening",
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-ReBCO-mixture", 10),
+        PM.ingredient("pm-molten-copper", 7.5, "fluid"),
+        PM.ingredient("pm-samarium", 3)
+    },
+    results = 
+    {
+        PM.product("pm-molten-ReBCO-precursor-alloy", 10, "fluid")
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ReBCO-precursor-billet",
+    enabled = false,
+    energy_required = 30,
+    category = "pm-coldening",
+    ingredients =
+    {
+        PM.ingredient("pm-molten-ReBCO-precursor-alloy", 10, "fluid"),
+        PM.ingredient("pm-neodymium-plate", 3)
+    },
+    results =
+    {
+        PM.product("pm-ReBCO-precursor-billet", 10)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-ReBCO",
+    enabled = false,
+    energy_required = 45,
+    category = "pm-moltening",
+    main_product = "pm-molten-ReBCO",
+    ingredients = 
+    {
+        PM.ingredient("pm-ReBCO-precursor-billet", 5),
+        PM.ingredient("pm-filled-flux-container", 2),
+        PM.ingredient("pm-gadolinium", 3),
+        PM.ingredient("pm-europium", 3)
+    },
+    results = 
+    {
+        PM.product("pm-molten-ReBCO", 10, "fluid"),
+        PM.catalyst("pm-flux-container", 2, 2)
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ReBCO",
+    enabled = false,
+    energy_required = 45,
+    category = "pm-coldening",
+    allow_productivity = true,
+    main_product = "pm-ReBCO",
+    ingredients = 
+    {
+        PM.ingredient("pm-molten-ReBCO", 5, "fluid"),
+        PM.ingredient("pm-crucible", 2)
+    },
+    results = 
+    {
+        PM.product("pm-ReBCO", 2),
+        PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,

@@ -2045,6 +2045,42 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/chrome-green.png",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-ReBCO-mixture",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    subgroup = "pm-inconel-625",
+    order = "b",
+    stack_size = 250
+  },
+  {
+    type = "item",
+    name = "pm-ReBCO-precursor-billet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    subgroup = "pm-inconel-625",
+    order = "b",
+    stack_size = 500
+  },
+  {
+    type = "item",
+    name = "pm-ReBCO",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    subgroup = "pm-inconel-625",
+    order = "b",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "pm-superconducting-ReBCO",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    subgroup = "pm-inconel-625",
+    order = "b",
+    stack_size = 20
+  },
 
   {
     type = "item",
