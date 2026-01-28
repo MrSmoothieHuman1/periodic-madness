@@ -8461,7 +8461,7 @@ data:extend({
     effects =
     {
     },
-    prerequisites = {"pm-superconductors", "substation"},
+    prerequisites = {"pm-superconductors", "electric-energy-distribution-2"},
     unit =
     {
       count = 1000,
