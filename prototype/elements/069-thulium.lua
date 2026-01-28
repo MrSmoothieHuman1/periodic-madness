@@ -63,7 +63,7 @@ data:extend({
             PM.product("pm-monazite-sand", 1),
             PM.product_range_chance("pm-thulium", 1, 2, 0.07),
             PM.catalyst("pm-yttrium-catalyst", 2, 2),
-            PM.catalyst_chance("pm-bromine", 3, 3, 0.95, "fluid")
+            PM.catalyst_chance("pm-bromine", 3, 0.95, 3, "fluid")
         }
     },
     {
@@ -87,7 +87,7 @@ data:extend({
             PM.product("pm-monazite-sand", 1),
             PM.product_range_chance("pm-thulium", 1, 2, 0.07),
             PM.catalyst("pm-yttrium-catalyst", 4, 4),
-            PM.catalyst_chance("pm-chlorine", 3, 3, 0.95, "fluid")
+            PM.catalyst_chance("pm-chlorine", 3, 0.95, 3, "fluid")
         }
     },
     {
