@@ -6233,7 +6233,7 @@ data:extend({
     type = "recipe",
     name = "pm-superconducting-ReBCO",
     enabled = false,
-    energy_requored = 15,
+    energy_required = 15,
     category = "crafting-with-fluid",
     ingredients =
     {
@@ -6242,7 +6242,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-superconducting-ReBCO", 1)
+        PM.product("pm-superconducting-ReBCO", 2)
     }
   }
 } --[[@as data.RecipePrototype[] ]])

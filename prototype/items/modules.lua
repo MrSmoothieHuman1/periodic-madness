@@ -575,6 +575,7 @@ data:extend({
         productivity = 0.05,
       },
     }, --productivity coil, low speed, high pollution + energy
+
     {
       type = "module",
       name = "pm-copper-heat-pump",
