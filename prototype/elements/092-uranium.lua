@@ -1,3 +1,17 @@
+data:extend({
+    {
+        type = "item",
+        name = "pm-uranium-233",
+        icon_size = 64,
+        icon = "__base__/graphics/icons/uranium-238.png",
+        fuel_value = "5GJ",
+        fuel_category = "pm-uranium-233",
+        subgroup = "pm-uranium-ac",
+        order = "ca",
+        stack_size = 100,
+    }
+})
+
 data.raw["item"]["uranium-ore"].subgroup = "pm-uranium-ac"
 data.raw["item"]["uranium-ore"].order = "a"
 data.raw["item"]["uranium-235"].subgroup = "pm-uranium-ac"
