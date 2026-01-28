@@ -212,6 +212,21 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "pm-liquid-nitrogen",
+        enabled = false,
+        energy_required = 10,
+        category = "pm-cryogenics",
+        ingredients =
+        {
+            PM.ingredient("pm-nitrogen-gas", 10, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-liquid-nitrogen", 1, "fluid")
+        }
+    },
+    {
+        type = "recipe",
         name = "pm-ammonia-atmospheric-voiding",
         icon_size = 128,
         icon = "__periodic-madness__/graphics/icons/recipes/ammonia-voiding.png",

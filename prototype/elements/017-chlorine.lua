@@ -368,5 +368,20 @@ data:extend({
       PM.product_range("pm-chloroform", 6, 12, "fluid")
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-liquid-chlorine",
+    enabled = false,
+    energy_required = 10,
+    category = "pm-cryogenics",
+    ingredients =
+    {
+        PM.ingredient("pm-chlorine", 10, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-liquid-chlorine", 1, "fluid")
+    }
+  },
   
 })

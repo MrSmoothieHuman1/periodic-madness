@@ -8395,7 +8395,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        PM.unlock_recipe("pm-liquid-oxygen")
+        PM.unlock_recipe("pm-liquid-oxygen"),
+        PM.unlock_recipe("pm-liquid-nitrogen"),
+        PM.unlock_recipe("pm-liquid-chlorine"),
     },
     prerequisites = {"pm-cryocooling"},
     unit =
