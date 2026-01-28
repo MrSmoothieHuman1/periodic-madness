@@ -8455,13 +8455,13 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-superconductive-substations",
+    name = "pm-superconductive-substation",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
     },
-    prerequisites = {"pm-superconductors"},
+    prerequisites = {"pm-superconductors", "substation"},
     unit =
     {
       count = 1000,

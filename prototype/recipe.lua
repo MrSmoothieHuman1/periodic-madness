@@ -6235,12 +6235,12 @@ data:extend({
     enabled = false,
     energy_requored = 15,
     category = "crafting-with-fluid",
-    ingredients = 
+    ingredients =
     {
         PM.ingredient("pm-ReBCO", 2),
         PM.ingredient("pm-liquid-nitrogen", 30, "fluid")
     },
-    results = 
+    results =
     {
         PM.product("pm-superconducting-ReBCO", 1)
     }
