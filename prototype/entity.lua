@@ -10895,7 +10895,7 @@ fluid_boxes =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 2},
+      emissions_per_minute = {pollution = 1},
     },
     graphics_set =
     {
