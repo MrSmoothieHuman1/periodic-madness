@@ -69,7 +69,8 @@ data:extend({
       PM.unlock_recipe("pm-welder"),
       PM.unlock_recipe("pm-hydrogen-fuel"),
       PM.unlock_recipe("pm-brass-plate"),
-      PM.unlock_recipe("pm-brass-cog")
+      PM.unlock_recipe("pm-brass-cog"),
+      PM.unlock_recipe("pm-brass-basic-framing")
     },
     prerequisites = {"pm-chlorine-processing"},
     unit =
