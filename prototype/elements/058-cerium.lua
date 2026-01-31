@@ -31,12 +31,14 @@ data:extend({
     {
       type = "item",
       name = "pm-cerium",
-      icon_size = 128,
-      icon = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/ores/cerium.png",
       pictures =
       {
-        { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y.png", size = 128, scale = 0.25},
-        { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-Y-2.png", size = 128, scale = 0.25},
+        { filename = "__periodic-madness__/graphics/icons/ores/cerium.png", size = 64, scale = 0.5},
+        { filename = "__periodic-madness__/graphics/icons/ores/cerium-2.png", size = 64, scale = 0.5},
+        { filename = "__periodic-madness__/graphics/icons/ores/cerium-3.png", size = 64, scale = 0.5},
+        { filename = "__periodic-madness__/graphics/icons/ores/cerium-4.png", size = 64, scale = 0.5},
       },
       subgroup = "pm-cerium-la",
       order = "c",
