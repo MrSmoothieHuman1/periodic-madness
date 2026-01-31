@@ -69,8 +69,7 @@ data:extend({
       PM.unlock_recipe("pm-welder"),
       PM.unlock_recipe("pm-hydrogen-fuel"),
       PM.unlock_recipe("pm-brass-plate"),
-      PM.unlock_recipe("pm-brass-cog"),
-      PM.unlock_recipe("pm-brass-basic-framing")
+      PM.unlock_recipe("pm-brass-cog")
     },
     prerequisites = {"pm-chlorine-processing"},
     unit =
@@ -235,7 +234,8 @@ data:extend({
       PM.unlock_recipe("pm-brass-basic-tubing"),
       PM.unlock_recipe("pm-steel-basic-tubing"),
       PM.unlock_recipe("pm-steel-basic-framing"),
-      PM.unlock_recipe("pm-steel-panelling")
+      PM.unlock_recipe("pm-steel-panelling"),
+      PM.unlock_recipe("pm-brass-basic-framing")
     },
     prerequisites = {"pm-brass-processing", "steel-processing"},
     unit =
