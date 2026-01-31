@@ -68,7 +68,13 @@ data:extend({
       type = "item",
       name = "pm-praseodymium",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/praseodymium.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/ores/praseodymium.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/praseodymium-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/praseodymium-3.png", size = 64, scale = 0.5},
+      },
       subgroup = "pm-praseodymium-la",
       order = "f",
       protons = 59,
