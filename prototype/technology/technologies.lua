@@ -234,7 +234,8 @@ data:extend({
       PM.unlock_recipe("pm-brass-basic-tubing"),
       PM.unlock_recipe("pm-steel-basic-tubing"),
       PM.unlock_recipe("pm-steel-basic-framing"),
-      PM.unlock_recipe("pm-steel-panelling")
+      PM.unlock_recipe("pm-steel-panelling"),
+      PM.unlock_recipe("pm-brass-basic-framing")
     },
     prerequisites = {"pm-brass-processing", "steel-processing"},
     unit =
