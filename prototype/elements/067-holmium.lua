@@ -3,7 +3,14 @@ data:extend({
         type = "item",
         name = "pm-monazite-sand",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/monazite-sand.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/monazite-sand.png", size = 64, scale = 0.5},
+          { filename = "__periodic-madness__/graphics/icons/monazite-sand-2.png", size = 64, scale = 0.5},
+          { filename = "__periodic-madness__/graphics/icons/monazite-sand.png", size = 64, scale = 0.52},
+          { filename = "__periodic-madness__/graphics/icons/monazite-sand-2.png", size = 64, scale = 0.43},
+        },
         subgroup = "pm-holmium-la",
         order = "a",
         stack_size = 400
@@ -12,7 +19,14 @@ data:extend({
         type = "item",
         name = "pm-washed-monazite-sand",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/washed-monazite-sand.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/washed-monazite-sand.png", size = 64, scale = 0.5},
+          { filename = "__periodic-madness__/graphics/icons/washed-monazite-sand-2.png", size = 64, scale = 0.5},
+          { filename = "__periodic-madness__/graphics/icons/washed-monazite-sand.png", size = 64, scale = 0.52},
+          { filename = "__periodic-madness__/graphics/icons/washed-monazite-sand-2.png", size = 64, scale = 0.45},
+        },
         subgroup = "pm-holmium-la",
         order = "c",
         stack_size = 300
@@ -21,7 +35,14 @@ data:extend({
         type = "item",
         name = "pm-holmium-enriched-monazite-sand",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/holmium-enriched-monazite-sand.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/holmium-enriched-monazite-sand.png", size = 64, scale = 0.5},
+          { filename = "__periodic-madness__/graphics/icons/holmium-enriched-monazite-sand-2.png", size = 64, scale = 0.5},
+          { filename = "__periodic-madness__/graphics/icons/holmium-enriched-monazite-sand-3.png", size = 64, scale = 0.5},
+          { filename = "__periodic-madness__/graphics/icons/holmium-enriched-monazite-sand-2.png", size = 64, scale = 0.45},
+        },
         subgroup = "pm-holmium-la",
         order = "d",
         stack_size = 200
