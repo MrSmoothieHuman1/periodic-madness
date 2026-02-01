@@ -53,7 +53,7 @@ data:extend({
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
         subgroup = "pm-gadolinium-la",
-        order = "d",
+        order = "b",
         default_temperature = 15,
         base_color = {r = 0.3, g = 0.3, b = 0.2},
         flow_color = {r = 0.3, g = 0.3, b = 0.2},
