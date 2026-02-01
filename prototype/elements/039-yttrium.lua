@@ -34,12 +34,14 @@ data:extend({
   {
     type = "item",
     name = "pm-bastnasite-C",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/bastnasite-C.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C.png", size = 128, scale = 0.25},
-      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C-2.png", size = 128, scale = 0.25},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C.png", size = 64, scale = 0.5},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C-2.png", size = 64, scale = 0.5},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C-3.png", size = 64, scale = 0.5},
+      { filename = "__periodic-madness__/graphics/icons/ores/bastnasite-C-4.png", size = 64, scale = 0.5},
     },
     subgroup = "pm-yttrium-tm",
     order = "c",
