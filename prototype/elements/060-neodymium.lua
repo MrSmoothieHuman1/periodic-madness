@@ -3,7 +3,14 @@ data:extend({
         type = "item",
         name = "pm-neodymium-oxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/neodymium-oxide.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/neodymium-oxide.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/neodymium-oxide-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/neodymium-oxide.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/neodymium-oxide-2.png", size = 64, scale = 0.52},
+        },
         subgroup = "pm-neodymium-la",
         order = "e",
         stack_size = 100
