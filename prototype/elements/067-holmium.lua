@@ -69,7 +69,14 @@ data:extend({
         type = "item",
         name = "pm-holmium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/holmium.png",
+        pictures =
+        {
+          { filename = "__periodic-madness__/graphics/icons/ores/holmium.png",   size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/holmium-2.png", size = 64, scale = 0.5 },
+          { filename = "__periodic-madness__/graphics/icons/ores/holmium-3.png", size = 64, scale = 0.46 },
+          { filename = "__periodic-madness__/graphics/icons/ores/holmium-4.png", size = 64, scale = 0.5 },
+        },
         subgroup = "pm-holmium-la",
         order = "g",
         stack_size = 100
