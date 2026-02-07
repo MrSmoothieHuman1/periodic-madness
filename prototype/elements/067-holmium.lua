@@ -51,7 +51,7 @@ data:extend({
         type = "item",
         name = "pm-holmium-fluoride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/holmium-fluoride.png",
         subgroup = "pm-holmium-la",
         order = "ea",
         stack_size = 100
@@ -60,7 +60,7 @@ data:extend({
         type = "item",
         name = "pm-holmium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/holmium-chloride.png",
         subgroup = "pm-holmium-la",
         order = "eb",
         stack_size = 100
