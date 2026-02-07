@@ -48,7 +48,14 @@ data:extend({
       type = "item",
       name = "pm-impure-erbium",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/impure-erbium.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/impure-erbium.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/impure-erbium-2.png", size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/impure-erbium-3.png", size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/impure-erbium-4.png", size = 64, scale = 0.48 },
+      },
       subgroup = "pm-erbium-la",
       order = "f",
       stack_size = 100
