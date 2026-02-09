@@ -11254,6 +11254,7 @@ local buffer_chest = data.raw["logistic-container"]["buffer-chest"]
 PM.set_flag(buffer_chest, "no-automated-item-insertion")
 PM.set_flag(buffer_chest, "no-automated-item-removal")
 data.raw["logistic-container"]["requester-chest"].inventory_size = 1
+data.raw["logistic-container"]["requester-chest"].use_exact_mode = true
 
 data.raw["rocket-silo"]["rocket-silo"].to_be_inserted_to_rocket_inventory_size = 2
 data.raw["rocket-silo"]["rocket-silo"].module_slots = 5
