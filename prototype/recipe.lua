@@ -6244,5 +6244,24 @@ data:extend({
     {
         PM.product("pm-superconducting-ReBCO", 2)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-neodymium-magnet-alloy",
+    enabled = false,
+    energy_required = 18,
+    category = "pm-moltening", --should be in new furnace
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-neodymium-plate", 6),
+        PM.ingredient("pm-iron-plate", 18),
+        PM.ingredient("pm-samarium", 4),
+        PM.ingredient("pm-molten-cobalt", 7.5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-molten-neodymium-magnet-alloy", 10, "fluid")
+    }
   }
 } --[[@as data.RecipePrototype[] ]])

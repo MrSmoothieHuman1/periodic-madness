@@ -8148,6 +8148,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-molten-neodymium-magnet-alloy"),
         PM.unlock_recipe("pm-neodymium-low-seperated-monazite"),
         PM.unlock_recipe("pm-neodymium-high-seperated-monazite"),
         PM.unlock_recipe("pm-neodymium-pure-monazite")
