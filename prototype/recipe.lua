@@ -6263,5 +6263,59 @@ data:extend({
     {
         PM.product("pm-molten-neodymium-magnet-alloy", 10, "fluid")
     }
-  }
+  },
+    {
+        type = "recipe",
+        name = "pm-cooled-neodymium-magnet-block",
+        enabled = false,
+        energy_required = 18,
+        category = "pm-coldening",
+        ingredients =
+        {
+            PM.ingredient("pm-crucible", 2),
+            PM.ingredient("pm-molten-neodymium-magnet-alloy", 10, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-cooled-neodymium-magnet-block", 2)
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-neodymium-magnet-block",
+        enabled = false,
+        energy_required = 27,
+        category = "crafting-with-fluid",
+        main_product = "pm-neodymium-magnet-blocks",
+        ingredients =
+        {
+            PM.ingredient("pm-cooled-dysprosium", 4),
+            PM.ingredient("pm-boron", 45, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-neodymium-magnet-block", 4),
+            PM.product_chance("pm-tcrucible", 4, 0.75),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-neodymium-magnet",
+        enabled = false,
+        energy_required = 27,
+        main_product = "pm-neodymium-magnet",
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-neodymium-magnet-block", 2),
+            PM.ingredient("pm-ferrite-magnet", 4),
+            PM.ingredient("pm-saw", 2)
+        },
+        results =
+        {
+            PM.product("pm-neodymium-magnet", 4),
+            PM.catalyst_chance("pm-saw", 2, 0.9),
+            PM.catalyst("pm-ferrite-magnet", 4, 4)
+        }
+    }
 } --[[@as data.RecipePrototype[] ]])

@@ -239,5 +239,5 @@ data:extend({
             PM.product_chance("pm-tantalum-dysprosium-crucible", 1, 0.5),
             PM.product_range("pm-combined-ore-slab", 0, 2)
         }
-    }
+    },
 })

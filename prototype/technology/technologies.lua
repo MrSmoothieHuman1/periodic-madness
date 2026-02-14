@@ -8149,6 +8149,9 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-molten-neodymium-magnet-alloy"),
+        PM.unlock_recipe("pm-cooled-neodymium-magnet-block"),
+        PM.unlock_recipe("pm-neodymium-magnet-block"),
+        PM.unlock_recipe("pm-neodymium-magnet"),
         PM.unlock_recipe("pm-neodymium-low-seperated-monazite"),
         PM.unlock_recipe("pm-neodymium-high-seperated-monazite"),
         PM.unlock_recipe("pm-neodymium-pure-monazite")
