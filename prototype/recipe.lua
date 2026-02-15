@@ -6255,7 +6255,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-neodymium-plate", 6),
-        PM.ingredient("pm-iron-plate", 18),
+        PM.ingredient("iron-plate", 18),
         PM.ingredient("pm-samarium", 4),
         PM.ingredient("pm-molten-cobalt", 7.5, "fluid")
     },
@@ -6286,7 +6286,7 @@ data:extend({
         enabled = false,
         energy_required = 27,
         category = "crafting-with-fluid",
-        main_product = "pm-neodymium-magnet-blocks",
+        main_product = "pm-neodymium-magnet-block",
         ingredients =
         {
             PM.ingredient("pm-cooled-dysprosium", 4),
@@ -6295,7 +6295,7 @@ data:extend({
         results =
         {
             PM.product("pm-neodymium-magnet-block", 4),
-            PM.product_chance("pm-tcrucible", 4, 0.75),
+            PM.product_chance("pm-crucible", 4, 0.75),
         }
     },
     {

@@ -2081,6 +2081,24 @@ data:extend({
     order = "b",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-cooled-neodymium-magnet-block",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    subgroup = "pm-inconel-625",
+    order = "b",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "pm-neodymium-magnet-block",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    subgroup = "pm-inconel-625",
+    order = "b",
+    stack_size = 20
+  },
 
   {
     type = "item",

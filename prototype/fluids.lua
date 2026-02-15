@@ -2185,6 +2185,18 @@ data:extend({
     flow_color = {r = 0.4, g = 0.2, b = 0.3},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-molten-neodymium-magnet-alloy",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-uhrlumin-precursor-alloy.png",
+    subgroup = "pm-uhrlumin",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.4, g = 0.2, b = 0.3},
+    flow_color = {r = 0.4, g = 0.2, b = 0.3},
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",
