@@ -6263,7 +6263,7 @@ data:extend({
     {
         PM.product("pm-molten-neodymium-magnet-alloy", 10, "fluid")
     }
-  },
+    },
     {
         type = "recipe",
         name = "pm-cooled-neodymium-magnet-block",
@@ -6289,7 +6289,7 @@ data:extend({
         main_product = "pm-neodymium-magnet-block",
         ingredients =
         {
-            PM.ingredient("pm-cooled-dysprosium", 4),
+            PM.ingredient("pm-cooled-neodymium-magnet-block", 4),
             PM.ingredient("pm-boron", 45, "fluid")
         },
         results =
