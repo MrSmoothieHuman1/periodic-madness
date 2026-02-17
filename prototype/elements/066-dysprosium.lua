@@ -72,7 +72,7 @@ data:extend({
         type = "fluid",
         name = "pm-dysprosium-concentrate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/dysprosium-concentrate.png",
         subgroup = "pm-dysprosium-la",
         order = "c",
         default_temperature = 15,
@@ -83,7 +83,7 @@ data:extend({
         type = "fluid",
         name = "pm-molten-dysprosium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-dysprosium.png",
         subgroup = "pm-dysprosium-la",
         order = "f",
         default_temperature = 15,
@@ -145,7 +145,7 @@ data:extend({
         {
             PM.product("pm-dysprosium-concentrate", 12.5, "fluid"),
             PM.product_chance("pm-holmium-fluoride", 1, 0.15),
-            PM.product_chance("pm-holmium-fluoride", 1, 0.15),
+            PM.product_chance("pm-holmium-chloride", 1, 0.15),
         }
     },
     {
