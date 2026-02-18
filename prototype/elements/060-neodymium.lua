@@ -52,7 +52,7 @@ data:extend({
         type = "fluid",
         name = "pm-neodymium-concentrate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-tailings.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/neodymium-concentrate.png",
         subgroup = "pm-neodymium-la",
         order = "d",
         default_temperature = 15,
