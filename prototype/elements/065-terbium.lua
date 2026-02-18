@@ -48,7 +48,14 @@ data:extend({
       type = "item",
       name = "pm-impure-terbium",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/impure-terbium.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/ores/impure-terbium.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/impure-terbium-2.png", size = 64, scale = 0.46},
+        {filename = "__periodic-madness__/graphics/icons/ores/impure-terbium-3.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/impure-terbium-4.png", size = 64, scale = 0.51},
+      },
       subgroup = "pm-terbium-la",
       order = "f",
       stack_size = 100
