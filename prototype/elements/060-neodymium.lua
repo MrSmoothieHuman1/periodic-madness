@@ -63,7 +63,7 @@ data:extend({
         type = "fluid",
         name = "pm-molten-neodymium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-tailings.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-neodymium.png",
         subgroup = "pm-neodymium-la",
         order = "f",
         default_temperature = 15,

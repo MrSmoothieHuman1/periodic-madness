@@ -57,7 +57,7 @@ data:extend({
       type = "item",
       name = "pm-terbium-fluoride",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/terbium-fluoride.png",
       subgroup = "pm-terbium-la",
       order = "g",
       stack_size = 150
@@ -66,7 +66,13 @@ data:extend({
       type = "item",
       name = "pm-terbium",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/terbium.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/ores/terbium.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/terbium-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/terbium-3.png", size = 64, scale = 0.5},
+      },
       subgroup = "pm-terbium-la",
       order = "h",
       protons = 65,
