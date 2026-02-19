@@ -3,7 +3,14 @@ data:extend({
       type = "item",
       name = "pm-terbium-salts",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/terbium-salts.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/ores/terbium-salts.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/terbium-salts-2.png", size = 64, scale = 0.46},
+        {filename = "__periodic-madness__/graphics/icons/ores/terbium-salts-3.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/terbium-salts-4.png", size = 64, scale = 0.51},
+      },
       subgroup = "pm-terbium-la",
       order = "a",
       stack_size = 100
@@ -12,7 +19,7 @@ data:extend({
       type = "item",
       name = "pm-terbium-chloride",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/terbium-chloride.png",
       subgroup = "pm-terbium-la",
       order = "b",
       stack_size = 200
@@ -21,7 +28,7 @@ data:extend({
       type = "item",
       name = "pm-terbium-bromide",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/terbium-bromide.png",
       subgroup = "pm-terbium-la",
       order = "c",
       stack_size = 200
@@ -30,7 +37,7 @@ data:extend({
       type = "item",
       name = "pm-terbium-hydride",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/terbium-hydride.png",
       subgroup = "pm-terbium-la",
       order = "d",
       stack_size = 200
@@ -39,7 +46,7 @@ data:extend({
       type = "item",
       name = "pm-terbium-sulfate",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/terbium-sulfate.png",
       subgroup = "pm-terbium-la",
       order = "e",
       stack_size = 200
