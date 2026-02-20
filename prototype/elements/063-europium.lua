@@ -3,7 +3,14 @@ data:extend({
       type = "item",
       name = "pm-europium-trioxide",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/europium-trioxide.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/ores/europium-trioxide.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/europium-trioxide-2.png", size = 64, scale = 0.46},
+        {filename = "__periodic-madness__/graphics/icons/ores/europium-trioxide-3.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/europium-trioxide-4.png", size = 64, scale = 0.52},
+      },
       subgroup = "pm-europium-la",
       order = "b",
       stack_size = 100
@@ -40,7 +47,7 @@ data:extend({
         type = "fluid",
         name = "pm-europium-trioxide-concentrate",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/europium-trioxide-concentrate.png",
         subgroup = "pm-europium-la",
         order = "a",
         default_temperature = 15,
