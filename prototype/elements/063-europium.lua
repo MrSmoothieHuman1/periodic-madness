@@ -19,7 +19,16 @@ data:extend({
       type = "item",
       name = "pm-zinc-amalgam",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/zinc-amalgam.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/zinc-amalgam.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/zinc-amalgam-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/zinc-amalgam-3.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/zinc-amalgam-4.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/zinc-amalgam-5.png", size = 64, scale = 0.46},
+        {filename = "__periodic-madness__/graphics/icons/zinc-amalgam-6.png", size = 64, scale = 0.46},
+      },
       subgroup = "pm-europium-la",
       order = "c",
       stack_size = 25
