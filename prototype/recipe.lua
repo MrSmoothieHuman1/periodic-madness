@@ -5501,7 +5501,7 @@ data:extend({
     type = "recipe",
     name = "pm-ferrite-magnet",
     enabled = false,
-    energy_required = 5,
+    energy_required = 4,
     category = "crafting-with-fluid",
     allow_productivity = true,
     ingredients =
