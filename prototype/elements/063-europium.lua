@@ -21,7 +21,14 @@ data:extend({
       type = "item",
       name = "pm-europium",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/europium.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/ores/europium.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/europium-2.png", size = 64, scale = 0.46},
+        {filename = "__periodic-madness__/graphics/icons/ores/europium-3.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/europium-4.png", size = 64, scale = 0.52},
+      },
       subgroup = "pm-europium-la",
       order = "e",
       protons = 63,
