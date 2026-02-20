@@ -3,7 +3,14 @@ data:extend({
         type = "item",
         name = "pm-low-ytterbium-mixture",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+        icon = "__periodic-madness__/graphics/icons/ores/low-ytterbium-mixture.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/low-ytterbium-mixture.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/low-ytterbium-mixture-2.png", size = 64, scale = 0.44},
+          {filename = "__periodic-madness__/graphics/icons/ores/low-ytterbium-mixture-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/low-ytterbium-mixture-4.png", size = 64, scale = 0.46}
+        },
         subgroup = "pm-ytterbium-la",
         order = "ca",
         stack_size = 250
@@ -12,7 +19,14 @@ data:extend({
         type = "item",
         name = "pm-high-ytterbium-mixture",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+        icon = "__periodic-madness__/graphics/icons/ores/high-ytterbium-mixture.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/high-ytterbium-mixture.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/high-ytterbium-mixture-2.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/ores/high-ytterbium-mixture-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/high-ytterbium-mixture-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-ytterbium-la",
         order = "da",
         stack_size = 250
