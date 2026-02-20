@@ -44,7 +44,7 @@ data:extend({
         type = "fluid",
         name = "pm-molten-europium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-europium-chloride.png",
         subgroup = "pm-europium-la",
         order = "d",
         default_temperature = 15,

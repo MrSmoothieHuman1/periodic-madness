@@ -51,7 +51,7 @@ data:extend({
         type = "fluid",
         name = "pm-molten-gadolinium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-gadolinium-chloride.png",
         subgroup = "pm-gadolinium-la",
         order = "b",
         default_temperature = 15,
