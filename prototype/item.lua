@@ -2028,21 +2028,21 @@ data:extend({
     type = "item",
     name = "pm-cerium-sulfide-red",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/chrome-green.png",
+    icon = "__periodic-madness__/graphics/icons/cerium-sulfide-red.png",
     stack_size = 50
   },
   {
     type = "item",
     name = "pm-phthalo-green",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/chrome-green.png",
+    icon = "__periodic-madness__/graphics/icons/phthalo-green.png",
     stack_size = 50
   },
   {
     type = "item",
     name = "pm-YInMn-blue",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/chrome-green.png",
+    icon = "__periodic-madness__/graphics/icons/YInMn-blue.png",
     stack_size = 50
   },
   {
