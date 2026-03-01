@@ -73,7 +73,13 @@ data:extend({
         type = "item",
         name = "pm-lutetium-chloride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/lutetium-chloride.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/lutetium-chloride.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/lutetium-chloride-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/lutetium-chloride-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-lutetium-la",
         order = "f",
         stack_size = 100,
