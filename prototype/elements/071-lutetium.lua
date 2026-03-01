@@ -43,7 +43,13 @@ data:extend({
         type = "item",
         name = "pm-low-lutetium-mixture",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/low-lutetium-mixture.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/low-lutetium-mixture.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/low-lutetium-mixture-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/low-lutetium-mixture-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-lutetium-la",
         order = "da",
         stack_size = 250,
@@ -52,7 +58,13 @@ data:extend({
         type = "item",
         name = "pm-high-lutetium-mixture",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/high-lutetium-mixture.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/high-lutetium-mixture.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/high-lutetium-mixture-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/high-lutetium-mixture-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-lutetium-la",
         order = "ea",
         stack_size = 250,
