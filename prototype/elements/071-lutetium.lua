@@ -4,7 +4,13 @@ data:extend({
         type = "item",
         name = "pm-trace-lutetium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/trace-lutetium.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/trace-lutetium.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/trace-lutetium-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/trace-lutetium-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-lutetium-la",
         order = "a",
         stack_size = 10,
