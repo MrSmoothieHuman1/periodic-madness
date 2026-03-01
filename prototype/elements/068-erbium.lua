@@ -60,7 +60,14 @@ data:extend({
       type = "item",
       name = "pm-erbium-iodide",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/erbium-iodide.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-iodide.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-iodide-2.png", size = 64, scale = 0.43 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-iodide-3.png", size = 64, scale = 0.5 },
+        --{ filename = "__periodic-madness__/graphics/icons/ores/erbium-iodide-4.png", size = 64, scale = 0.5 },
+      },
       subgroup = "pm-erbium-la",
       order = "e",
       stack_size = 200
