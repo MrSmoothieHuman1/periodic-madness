@@ -28,7 +28,14 @@ data:extend({
       type = "item",
       name = "pm-erbium-oxide",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/erbium-oxide.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-oxide.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-oxide-2.png", size = 64, scale = 0.43 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-oxide-3.png", size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-oxide-4.png", size = 64, scale = 0.5 },
+      },
       subgroup = "pm-erbium-la",
       order = "c",
       stack_size = 200
@@ -37,7 +44,14 @@ data:extend({
       type = "item",
       name = "pm-erbium-bromide",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/erbium-bromide.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-bromide.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-bromide-2.png", size = 64, scale = 0.43 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-bromide-3.png", size = 64, scale = 0.5 },
+        --{ filename = "__periodic-madness__/graphics/icons/ores/erbium-bromide-4.png", size = 64, scale = 0.5 },
+      },
       subgroup = "pm-erbium-la",
       order = "d",
       stack_size = 200
