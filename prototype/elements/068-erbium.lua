@@ -12,7 +12,14 @@ data:extend({
       type = "item",
       name = "pm-erbium-salts",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/erbium-salts.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-salts.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-salts-2.png", size = 64, scale = 0.43 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-salts-3.png", size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-salts-4.png", size = 64, scale = 0.44 },
+      },
       subgroup = "pm-erbium-la",
       order = "b",
       stack_size = 100
