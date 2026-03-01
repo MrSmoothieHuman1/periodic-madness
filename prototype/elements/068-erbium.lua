@@ -64,7 +64,13 @@ data:extend({
       type = "item",
       name = "pm-erbium-fluoride",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/erbium-fluoride.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-fluoride.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-fluoride-2.png", size = 64, scale = 0.45 },
+        { filename = "__periodic-madness__/graphics/icons/ores/erbium-fluoride-3.png",   size = 64, scale = 0.5 },
+      },
       subgroup = "pm-erbium-la",
       order = "g",
       stack_size = 150
