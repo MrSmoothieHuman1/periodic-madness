@@ -34,7 +34,14 @@ data:extend({
         type = "item",
         name = "pm-lutetium-salts",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/lutetium-salts.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/lutetium-salts.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/lutetium-salts-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/lutetium-salts-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/lutetium-salts-4.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-lutetium-la",
         order = "c",
         stack_size = 200,
