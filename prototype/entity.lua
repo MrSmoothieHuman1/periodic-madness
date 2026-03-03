@@ -10549,7 +10549,7 @@ fluid_boxes =
         {
           filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
           width = 384,
-          height = 384,
+          height = 416,
           animation_speed = 0.2,
           scale = 0.5,
         },
@@ -10570,7 +10570,7 @@ fluid_boxes =
         {
           filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
           width = 384,
-          height = 384,
+          height = 416,
           scale = 0.5,
         },
         {

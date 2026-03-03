@@ -339,12 +339,12 @@ data:extend({
         main_product = "pm-silane",
         ingredients =
         {
-            PM.ingredient("pm-trichlorosilane", 10, "fluid"),
-            PM.ingredient("pm-aluminium-plate", 10) --catalyst for hard mode
+            PM.ingredient("pm-trichlorosilane", 15, "fluid"),
+            PM.ingredient("pm-aluminium-plate", 5) --catalyst for hard mode
         },
         results =
         {
-            PM.product("pm-silane", 10, "fluid"),
+            PM.product("pm-silane", 15, "fluid"),
             PM.product_range("pm-silicon-tetrachloride", 2.5, 5, "fluid")
         }
     },
