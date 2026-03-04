@@ -10976,8 +10976,8 @@ fluid_boxes =
     max_health = 500,
     corpse = "assembling-machine-1-remnants",
     dying_explosion = "assembling-machine-1-explosion",
-    collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
-    selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
+    collision_box = { { -0.45, -0.45 }, { 0.45, 0.45 } },
+    selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     alert_icon_shift = util.by_pixel(-3, -12),
     crafting_speed = 1,
     crafting_categories = { "pm-franciuming" },
@@ -10990,156 +10990,41 @@ fluid_boxes =
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 4},
     },
-    graphics_set = 
+    graphics_set =
     {
       animation =
       {
-        north =
+        layers =
         {
-          layers = 
           {
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-north.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              scale = 0.5
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-fans.png",
-              width = 320,
-              height = 320,
-              frame_count = 32,
-              line_length = 8,
-              scale = 0.5,
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-shadow.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              draw_as_shadow = true,
-              shift = util.by_pixel(42, 0),
-              scale = 0.5
-            },
+            filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/nuclear-block-base.png",
+            width = 64,
+            height = 67,
+            frame_count = 1,
+            line_length = 1,
+            scale = 0.5
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/nuclear-block-tint.png",
+            width = 64,
+            height = 67,
+            frame_count = 1,
+            line_length = 1,
+            tint = {r = 1, b = 1, g = 0},
+            scale = 0.5
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/nuclear-block-shadow.png",
+            width = 64,
+            height = 67,
+            frame_count = 1,
+            line_length = 1,
+            draw_as_shadow = true,
+            shift = util.by_pixel(16, 8),
+            scale = 0.5
           },
         },
-        south =
-        {
-          layers = 
-          {
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-south.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              scale = 0.5
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-fans.png",
-              width = 320,
-              height = 320,
-              frame_count = 32,
-              line_length = 8,
-              scale = 0.5,
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-shadow.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              draw_as_shadow = true,
-              shift = util.by_pixel(42, 0),
-              scale = 0.5
-            },
-          },
-        },
-        east =
-        {
-          layers = 
-          {
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-east.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              scale = 0.5
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-fans.png",
-              width = 320,
-              height = 320,
-              frame_count = 32,
-              line_length = 8,
-              scale = 0.5,
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-shadow.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              draw_as_shadow = true,
-              shift = util.by_pixel(42, 0),
-              scale = 0.5
-            },
-          },
-        },
-        west =
-        {
-          layers = 
-          {
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-west.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              scale = 0.5
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-fans.png",
-              width = 320,
-              height = 320,
-              frame_count = 32,
-              line_length = 8,
-              scale = 0.5,
-            },
-            {
-              filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/chicken-coop-shadow.png",
-              width = 320,
-              height = 320,
-              frame_count = 1,
-              line_length = 1,
-              repeat_count = 32,
-              draw_as_shadow = true,
-              shift = util.by_pixel(42, 0),
-              scale = 0.5
-            },
-          },
-        },
-      },
-    },
-    fluid_boxes =
-    {
-      {
-        production_type = "input",
-        pipe_covers = pipecoverspictures(),
-        volume = 500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 2}}},
-      },
+      }
     },
   }--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
