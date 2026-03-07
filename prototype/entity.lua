@@ -11153,6 +11153,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   },
 }
 data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes_off_when_no_fluid_recipe = true
+data.raw["assembling-machine"]["assembling-machine-3"].next_upgrade = "pm-assembling-machine-4"
 
 data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids =
 {

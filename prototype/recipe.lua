@@ -476,8 +476,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-resin",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-forming.png",
     energy_required = 2,
     subgroup = "pm-resin",
     category = "crafting-with-fluid",
@@ -496,8 +494,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-rubber-resin",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-rubber-resin.png",
     energy_required = 1,
     subgroup = "pm-resin",
     category = "pm-acids",
@@ -516,8 +512,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-pheonlic-resin",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-to-pheonlic-resin.png",
     energy_required = 1,
     subgroup = "pm-resin",
     category = "pm-acids",
@@ -536,8 +530,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-rubber",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/rubber/resin-cooling.png",
     energy_required = 2,
     subgroup = "pm-resin",
     category = "pm-molding",

@@ -4,8 +4,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-circuit-mold",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/circuitboard-molding.png",
     energy_required = 3,
     category = "pm-molding",
     subgroup = "pm-molded-circuits",

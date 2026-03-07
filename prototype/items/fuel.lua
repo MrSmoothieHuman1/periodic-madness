@@ -19,7 +19,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/empty-fuel-canister.png",
     subgroup = "pm-fuels",
     order = "b",
-    stack_size = 150
+    stack_size = 200
   },
   {
     type = "item",
