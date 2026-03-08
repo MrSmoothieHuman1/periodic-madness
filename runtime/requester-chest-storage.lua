@@ -17,7 +17,6 @@ end
 ---@param entity LuaEntity
 ---@param override int
 local function set_override(entity, override)
-    --NOTE: consider additional logic to spill any that doesn't fit into the trash on the ground
     entity.set_inventory_size_override(
         defines.inventory.chest,
         override,
@@ -145,5 +144,14 @@ handler.events[defines.events.on_research_reversed] = function (event)
     if decrease == 0 then return end
     update_all_chests(-decrease, event.research.force.index)
 end
+handler.events[defines.events.on_technology_effects_reset] = function (event)
+    local override = get_current_size(event.force.technologies)
+    local force_index = event.force.index
+
+    storage.logistic_chest_overrides[force_index] = override
+    update_overrides(storage.logistic_chests[force_index], override)
+end
+
+--TODO: Add a cheat command to change the overrides of chests
 
 return handler
