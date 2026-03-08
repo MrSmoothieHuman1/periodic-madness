@@ -1819,7 +1819,14 @@ data:extend({
     type = "item",
     name = "pm-monazite-chunks",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/monazite-chunks.png",  
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/monazite-chunks.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/monazite-chunks-2.png", size = 64, scale = 0.43 },
+      { filename = "__periodic-madness__/graphics/icons/ores/monazite-chunks-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/monazite-chunks-4.png", size = 64, scale = 0.45 }
+    },
     subgroup = "pm-monazite-la",
     order = "b",
     stack_size = 50
