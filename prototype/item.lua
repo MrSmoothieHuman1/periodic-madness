@@ -1835,7 +1835,13 @@ data:extend({
     type = "item",
     name = "pm-crushed-monazite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/crushed-monazite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/crushed-monazite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/crushed-monazite-2.png", size = 64, scale = 0.43 },
+      { filename = "__periodic-madness__/graphics/icons/ores/crushed-monazite-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-monazite-la",
     order = "c",
     stack_size = 100
