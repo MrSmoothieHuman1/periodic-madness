@@ -14,7 +14,8 @@
     "? Mini_Trains >= 2.0.0",
     "? elevated-rails",
     "? stack-inserters",
-    "? enable-all-feature-flags"
+    "? enable-all-feature-flags",
+    "? DiscoScience >= 2.0.1"
   ],
   "description": "This mod aims to add every element in the periodic table to Factorio.",
   "package": {

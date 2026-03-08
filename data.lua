@@ -169,6 +169,7 @@ require("compatibility.DLC.quality")
 require("compatibility.DLC.elevated-rails")
 require("compatibility.DLC.belt-stacking")
 require("compatibility.black-silicon-seas")
+require("compatibility.DiscoScience")
 
 local resource_autoplace = require('resource-autoplace');
 local tile_sounds = require("__base__.prototypes.tile.tile-sounds")

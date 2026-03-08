@@ -6,7 +6,9 @@ event_handler.add_libraries{
 	require("runtime.freeplay-interface"),
 	require("runtime.periodic-fun"),
 	require("runtime.pollution-buildings"),
-	require("compatibility.automatic-underground-pipe-connectors"),
 	require("runtime.requester-chest-storage"),
 	--require("runtime.reactor-cooling"),
+
+	require("compatibility.automatic-underground-pipe-connectors"),
+	require("compatibility.DiscoScience-old-version"),
 }
