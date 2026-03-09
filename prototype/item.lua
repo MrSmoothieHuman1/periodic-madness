@@ -1850,7 +1850,13 @@ data:extend({
     type = "item",
     name = "pm-low-seperated-monazite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/lightly-seperated-monazite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/lightly-seperated-monazite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/lightly-seperated-monazite-2.png", size = 64, scale = 0.43 },
+      --{ filename = "__periodic-madness__/graphics/icons/ores/lightly-seperated-monazite-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-monazite-la",
     order = "d",
     stack_size = 150
@@ -1859,7 +1865,13 @@ data:extend({
     type = "item",
     name = "pm-medium-seperated-monazite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/medium-seperated-monazite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/medium-seperated-monazite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/medium-seperated-monazite-2.png", size = 64, scale = 0.43 },
+      { filename = "__periodic-madness__/graphics/icons/ores/medium-seperated-monazite-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-monazite-la",
     order = "e",
     stack_size = 200
@@ -1868,7 +1880,13 @@ data:extend({
     type = "item",
     name = "pm-high-seperated-monazite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/highly-seperated-monazite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/highly-seperated-monazite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/highly-seperated-monazite-2.png", size = 64, scale = 0.43 },
+      { filename = "__periodic-madness__/graphics/icons/ores/highly-seperated-monazite-3.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-monazite-la",
     order = "f",
     stack_size = 250
