@@ -1919,7 +1919,14 @@ data:extend({
     type = "item",
     name = "pm-pure-bastnasite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/pure-bastnasite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/pure-bastnasite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pure-bastnasite-2.png", size = 64, scale = 0.45 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pure-bastnasite-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pure-bastnasite-4.png", size = 64, scale = 0.46 },
+    },
     subgroup = "pm-bastnasite-la",
     order = "a",
     stack_size = 200

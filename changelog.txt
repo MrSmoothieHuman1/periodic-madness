@@ -38,6 +38,7 @@ Date: 2025-12-19
     - Moved noble gas producitvity research to be behind lanthanides.
     - Updated sodium carbonate/bicarbonate icons, and gave them variations.
     - Moved vinyl bromide PMMA to be behind alkali science.
+    - Updated mixed bastnasite icons.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
