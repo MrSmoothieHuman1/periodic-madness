@@ -1967,7 +1967,7 @@ data:extend({
     type = "item",
     name = "pm-reusable-rocket-guidance-unit",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+    icon = "__periodic-madness__/graphics/icons/reusable-rocket-guidance-unit.png",
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
