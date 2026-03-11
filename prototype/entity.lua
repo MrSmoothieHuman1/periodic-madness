@@ -195,6 +195,17 @@ circuit_connector_definitions["atmospheric-condenser"] = circuit_connector_defin
     { variation = 22, main_offset = util.by_pixel(-34.75,  34.375), shadow_offset = util.by_pixel(-34.75,  34.375), show_shadow = true },
   }
 )
+circuit_connector_definitions["rocket-silo"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation =  3, main_offset = util.by_pixel( 109.5, -133.375), shadow_offset = util.by_pixel( 109.5, -133.375), show_shadow = true },
+    { variation =  3, main_offset = util.by_pixel( 109.5, -133.375), shadow_offset = util.by_pixel( 109.5, -133.375), show_shadow = true },
+    { variation =  3, main_offset = util.by_pixel( 109.5, -133.375), shadow_offset = util.by_pixel( 109.5, -133.375), show_shadow = true },
+    { variation =  3, main_offset = util.by_pixel( 109.5, -133.375), shadow_offset = util.by_pixel( 109.5, -133.375), show_shadow = true },
+  }
+)
+
 
 
 function fireutil.create_magnesium_fire_pictures(opts)
@@ -11367,3 +11378,5 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
   },
 }
 data.raw["assembling-machine"]["centrifuge"].fluid_boxes_off_when_no_fluid_recipe = true
+data.raw["rocket-silo"]["rocket-silo"].circuit_wire_max_distance = default_circuit_wire_max_distance * 3
+data.raw["rocket-silo"]["rocket-silo"].circuit_connector = circuit_connector_definitions["rocket-silo"]
