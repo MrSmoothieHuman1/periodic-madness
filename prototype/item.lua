@@ -1935,7 +1935,14 @@ data:extend({
     type = "item",
     name = "pm-leached-bastnasite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/leached-bastnasite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/leached-bastnasite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/leached-bastnasite-2.png", size = 64, scale = 0.45 },
+      { filename = "__periodic-madness__/graphics/icons/ores/leached-bastnasite-3.png", size = 64, scale = 0.43 },
+      { filename = "__periodic-madness__/graphics/icons/ores/leached-bastnasite-4.png", size = 64, scale = 0.5 },
+    },
     subgroup = "pm-bastnasite-la",
     order = "b",
     stack_size = 250
@@ -1944,7 +1951,14 @@ data:extend({
     type = "item",
     name = "pm-roasted-bastnasite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/geothermal-bore-mk2.png",
+    icon = "__periodic-madness__/graphics/icons/ores/roasted-bastnasite.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ores/roasted-bastnasite.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/roasted-bastnasite-2.png", size = 64, scale = 0.45 },
+      { filename = "__periodic-madness__/graphics/icons/ores/roasted-bastnasite-3.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/roasted-bastnasite-4.png", size = 64, scale = 0.47 },
+    },
     subgroup = "pm-bastnasite-la",
     order = "c",
     stack_size = 300
