@@ -5547,10 +5547,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-low-seperated-monazite",
-    icons = 
+    icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/lightly-seperated-monazite.png",
         icon_size = 64,
       },
       {
@@ -5582,7 +5582,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/medium-seperated-monazite.png",
         icon_size = 64,
       },
       {
@@ -5613,7 +5613,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/highly-seperated-monazite.png",
         icon_size = 64,
       },
       {
@@ -5644,7 +5644,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/pure-monazite.png",
         icon_size = 64,
       },
       {
@@ -5672,10 +5672,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-neodymium-low-seperated-monazite",
-    icons = 
+    icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/lightly-seperated-monazite.png",
         icon_size = 64,
       },
       {
@@ -5710,7 +5710,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/highly-seperated-monazite.png",
         icon_size = 64,
       },
       {
@@ -5743,7 +5743,7 @@ data:extend({
     icons =
     {
       {
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/pure-monazite.png",
         icon_size = 64,
       },
       {
