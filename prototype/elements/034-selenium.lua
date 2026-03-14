@@ -147,6 +147,7 @@ data:extend({
         category = "smelting",
         subgroup = "pm-selenium-rnm",
         order = "e",
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-selenium-ore", 1)

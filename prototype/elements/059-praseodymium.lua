@@ -3,7 +3,7 @@ data:extend({
       type = "item",
       name = "pm-mixed-praseodymium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/mixed-praseodymium-deposit.png",
       subgroup = "pm-praseodymium-la",
       order = "a",
       stack_size = 200
