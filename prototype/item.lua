@@ -2116,7 +2116,7 @@ data:extend({
     type = "item",
     name = "pm-ReBCO-precursor-billet",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    icon = "__periodic-madness__/graphics/icons/ReBCO-precursor-billet.png",
     subgroup = "pm-inconel-625",
     order = "b",
     stack_size = 500
