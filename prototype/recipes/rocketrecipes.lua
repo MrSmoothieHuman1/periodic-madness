@@ -404,22 +404,22 @@ data:extend({
       },
     },
     enabled = false,
-    energy_required = 28,
+    energy_required = 35,
     category = "crafting-with-fluid",
     subgroup = "pm-rocket-parts",
     order = "da",
     allow_productivity = true,
     ingredients =
       {
-        PM.ingredient("pm-CRT", 1),
+        PM.ingredient("pm-CRT", 2),
         PM.ingredient("pm-space-processing-unit", 3),
-        PM.ingredient("pm-light-lubricant", 6, "fluid"),
-        PM.ingredient("pm-polyethylene-plastic", 2),
+        PM.ingredient("pm-light-lubricant", 8, "fluid"),
+        PM.ingredient("pm-polyethylene-plastic", 4),
         PM.ingredient("pm-mylar", 2)
       },
     results = 
     {
-      PM.product("pm-rocket-control-unit", 1)
+      PM.product("pm-rocket-control-unit", 2)
     }
   },
 --MARK: Rocket launchables
