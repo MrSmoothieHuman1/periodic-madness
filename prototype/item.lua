@@ -2107,7 +2107,12 @@ data:extend({
     type = "item",
     name = "pm-ReBCO-mixture",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    icon = "__periodic-madness__/graphics/icons/ReBCO-mixture.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/ReBCO-mixture.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ReBCO-mixture-2.png", size = 64, scale = 0.45 },
+    },
     subgroup = "pm-inconel-625",
     order = "b",
     stack_size = 250
