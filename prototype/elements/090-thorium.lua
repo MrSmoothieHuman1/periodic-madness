@@ -14,7 +14,14 @@ data:extend({
         type = "item",
         name = "pm-fine-monazite-sand",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/fine-monazite-sand.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/fine-monazite-sand.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/fine-monazite-sand-2.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/ores/fine-monazite-sand-3.png", size = 64, scale = 0.5},
+          --{filename = "__periodic-madness__/graphics/icons/ores/fine-monazite-sand-4.png", size = 64, scale = 0.5}
+        },
         subgroup = "pm-thorium-ac",
         order = "d",
         stack_size = 600
