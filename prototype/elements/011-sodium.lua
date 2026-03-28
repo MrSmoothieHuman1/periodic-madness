@@ -85,7 +85,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ammonium-chloride-seperation",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ammonium-chloride-seperation.png",
     enabled = false,
     category = "pm-acids",
