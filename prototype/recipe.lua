@@ -1129,7 +1129,6 @@ data:extend({
     enabled = false,
     subgroup = "pm-catalysts",
     order = "ga",
-    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-flux-container", 1),
