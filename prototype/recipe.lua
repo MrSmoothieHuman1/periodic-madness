@@ -6264,11 +6264,13 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-crucible", 2),
+            PM.ingredient("pm-filled-flux-container", 3),
             PM.ingredient("pm-molten-neodymium-magnet-alloy", 10, "fluid")
         },
         results =
         {
-            PM.product("pm-cooled-neodymium-magnet-block", 2)
+            PM.product("pm-cooled-neodymium-magnet-block", 2),
+            PM.catalyst("pm-flux-container", 3, 0.66, 3)
         }
     },
     {

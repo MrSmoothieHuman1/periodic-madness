@@ -124,12 +124,12 @@ data:extend({
       PM.ingredient("pm-uhrlumin-precursor-billet", 5),
       PM.ingredient("pm-zinc-plate", 5),
       PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
-      PM.ingredient("pm-filled-flux-container", 1)
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results = 
     {
       PM.product("pm-molten-uhrlumin", 10, "fluid"),
-      PM.product("pm-flux-container", 1)
+      PM.catalyst("pm-flux-container", 2, 2)
     }
   },
   {
@@ -234,12 +234,12 @@ data:extend({
       PM.ingredient("pm-inconel-625-precursor-billet", 5),
       PM.ingredient("pm-chromium-ore", 5),
       PM.ingredient("pm-molten-manganese", 2.5, "fluid"),
-      PM.ingredient("pm-filled-flux-container", 1)
+      PM.ingredient("pm-filled-flux-container", 2)
     },
     results =
     {
       PM.product("pm-molten-inconel-625", 10, "fluid"),
-      PM.catalyst("pm-flux-container", 1, 1)
+      PM.catalyst("pm-flux-container", 2, 2)
     }
   },
   {
@@ -310,7 +310,7 @@ data:extend({
       PM.ingredient("pm-boron", 2, "fluid"),
       PM.ingredient("pm-filled-flux-container", 2)
     },
-    results = 
+    results =
     {
       PM.product("pm-molten-sterling-silver", 10, "fluid"),
       PM.product_chance("pm-flux-container", 2, 0.66)
@@ -498,12 +498,12 @@ data:extend({
     {
         PM.ingredient("pm-molten-yellow-high-density-structure-alloy", 10, "fluid"),
         PM.ingredient("pm-molten-blue-high-density-structure-alloy", 10, "fluid"),
-        PM.ingredient("pm-filled-flux-container", 3),
+        PM.ingredient("pm-filled-flux-container", 2),
     },
     results =
     {
         PM.product("pm-molten-high-density-structure-mixture", 20, "fluid"),
-        PM.product_chance("pm-flux-container", 3, 0.66)
+        PM.product_chance("pm-flux-container", 2, 0.66)
     }
   },
   {
@@ -550,7 +550,7 @@ data:extend({
     ingredients = 
     {
         PM.ingredient("pm-ReBCO-precursor-billet", 5),
-        PM.ingredient("pm-filled-flux-container", 2),
+        PM.ingredient("pm-filled-flux-container", 3),
         PM.ingredient("pm-gadolinium", 3),
         PM.ingredient("pm-europium", 3)
     },
@@ -1242,7 +1242,7 @@ data:extend({
       PM.ingredient("iron-plate", 8),
       PM.ingredient("pm-manganese-plate", 8),
       PM.ingredient("pm-vanadium-oxide", 4),
-      PM.ingredient("pm-filled-flux-container", 2)
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
@@ -1301,7 +1301,7 @@ data:extend({
       PM.ingredient("pm-zinc-plate", 8),
       PM.ingredient("pm-lead-plate", 2),
       PM.ingredient("pm-arsenic-ore", 2),
-      PM.ingredient("pm-filled-flux-container", 2)
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
@@ -1360,7 +1360,7 @@ data:extend({
       PM.ingredient("pm-manganese-plate", 6),
       PM.ingredient("pm-chromium-ore", 4),
       PM.ingredient("pm-molybdenum-ore", 4),
-      PM.ingredient("pm-filled-flux-container", 2)
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
@@ -1418,7 +1418,7 @@ data:extend({
       PM.ingredient("iron-plate", 15),
       PM.ingredient("pm-aluminium-plate", 10),
       PM.ingredient("pm-chromium-ore", 12),
-      PM.ingredient("pm-filled-flux-container", 2)
+      PM.ingredient("pm-filled-flux-container", 1)
     },
     results =
     {
