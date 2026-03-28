@@ -33,6 +33,7 @@ Date: 2025-12-19
     - Added reusable rocket parts which are unlocked in lanthanide science. When launched in a rocket, they bring back down 'reusable rocket parts' which can be unpacked to get a return on your items.
     - Added superconductive substations, which take, you guessed it, superconductors! and are upgraded versions of substations.
     - Gave the rocket silo circuit connections.
+    - Added an advanced steam turbine, with 150% efficiency thats unlocked at advanced advanced advanced transition metals.
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
@@ -45,6 +46,7 @@ Date: 2025-12-19
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
+    - Fixed ammonium chloride seperation icon being old and weird-looking.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.008
