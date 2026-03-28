@@ -10977,6 +10977,152 @@ fluid_boxes =
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
+    {
+    type = "generator",
+    name = "pm-advanced-steam-turbine",
+    icon = "__base__/graphics/icons/steam-turbine.png",
+    flags = {"placeable-neutral","player-creation"},
+    minable = {mining_time = 0.66, result = "steam-turbine"},
+    max_health = 750,
+    corpse = "steam-turbine-remnants",
+    dying_explosion = "steam-turbine-explosion",
+    alert_icon_shift = util.by_pixel(0, -12),
+    effectivity = 1.5,
+    fluid_usage_per_tick = 1,
+    maximum_temperature = 750,
+    burns_fluid = false,
+    resistances =
+    {
+      {
+        type = "fire",
+        percent = 70
+      }
+    },
+    fast_replaceable_group = "steam-engine",
+    collision_box = {{-1.25, -2.35}, {1.25, 2.35}},
+    selection_box = {{-1.5, -2.5}, {1.5, 2.5}},
+    damaged_trigger_effect = hit_effects.entity(),
+    fluid_box =
+    {
+      volume = 250,
+      pipe_covers = pipecoverspictures(),
+      pipe_connections =
+      {
+        { flow_direction = "input-output", direction = defines.direction.south, position = {0, 2} },
+        { flow_direction = "input-output", direction = defines.direction.north, position = {0, -2} }
+      },
+      production_type = "input",
+      filter = "steam",
+      minimum_temperature = 100.0
+    },
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-output"
+    },
+    horizontal_animation =
+    {
+      layers =
+      {
+        {
+          filename = "__base__/graphics/entity/steam-turbine/steam-turbine-H.png",
+          width = 320,
+          height = 245,
+          frame_count = 8,
+          line_length = 4,
+          shift = util.by_pixel(0, -2.75),
+          run_mode = "backward",
+          scale = 0.5
+        },
+        {
+          filename = "__base__/graphics/entity/steam-turbine/steam-turbine-H-shadow.png",
+          width = 435,
+          height = 150,
+          repeat_count = 8,
+          line_length = 1,
+          draw_as_shadow = true,
+          shift = util.by_pixel(28.5, 18),
+          run_mode = "backward",
+          scale = 0.5
+        }
+      }
+    },
+    vertical_animation =
+    {
+     layers =
+     {
+        {
+          filename = "__base__/graphics/entity/steam-turbine/steam-turbine-V.png",
+          width = 217,
+          height = 374,
+          frame_count = 8,
+          line_length = 4,
+          shift = util.by_pixel(4.75, 0.0),
+          run_mode = "backward",
+          scale = 0.5
+        },
+        {
+          filename = "__base__/graphics/entity/steam-turbine/steam-turbine-V-shadow.png",
+          width = 302,
+          height = 260,
+          repeat_count = 8,
+          line_length = 1,
+          draw_as_shadow = true,
+          shift = util.by_pixel(39.5, 24.5),
+          run_mode = "backward",
+          scale = 0.5
+        }
+      }
+    },
+    smoke =
+    {
+      {
+        name = "turbine-smoke",
+        north_position = {0.0, -1.0},
+        east_position = {0.75, -0.75},
+        frequency = 10 / 32,
+        starting_vertical_speed = 0.08,
+        starting_frame_deviation = 60
+      }
+    },
+    impact_category = "metal-large",
+    open_sound = sounds.machine_open,
+    close_sound = sounds.machine_close,
+    working_sound =
+    {
+      sound =
+      {
+        filename = "__base__/sound/steam-turbine.ogg",
+        volume = 0.49,
+        modifiers = volume_multiplier("main-menu", 0.7),
+        speed_smoothing_window_size = 60,
+        advanced_volume_control = {attenuation = "exponential"},
+        audible_distance_modifier = 0.8,
+      },
+      match_speed_to_activity = true,
+      max_sounds_per_prototype = 3,
+      fade_in_ticks = 4,
+      fade_out_ticks = 20
+    },
+    perceived_performance = {minimum = 0.25, performance_to_activity_rate = 2.0},
+    water_reflection =
+    {
+      pictures =
+      {
+        filename = "__base__/graphics/entity/steam-turbine/steam-turbine-reflection.png",
+        priority = "extra-high",
+        width = 40,
+        height = 36,
+        shift = util.by_pixel(0, 50),
+        variation_count = 2,
+        repeat_count = 2,
+        scale = 5
+      },
+      rotate = false,
+      orientation_to_variation = true
+    }
+  },
+
   {
     type = "assembling-machine",
     name = "pm-chicken-coop",

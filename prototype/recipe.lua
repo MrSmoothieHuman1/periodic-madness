@@ -6261,6 +6261,7 @@ data:extend({
         enabled = false,
         energy_required = 18,
         category = "pm-coldening",
+        main_product = "pm-cooled-neodymium-magnet-block",
         ingredients =
         {
             PM.ingredient("pm-crucible", 2),
@@ -6270,7 +6271,7 @@ data:extend({
         results =
         {
             PM.product("pm-cooled-neodymium-magnet-block", 2),
-            PM.catalyst("pm-flux-container", 3, 0.66, 3)
+            PM.catalyst_chance("pm-flux-container", 3, 0.66, 3)
         }
     },
     {
