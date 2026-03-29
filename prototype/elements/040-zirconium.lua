@@ -5,9 +5,14 @@ data:extend({
     name = "pm-zirconium-sand",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/zirconium-sand.png",
+    pictures =
+    {
+      { filename = "__periodic-madness__/graphics/icons/zirconium-sand.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/zirconium-sand-2.png", size = 64, scale = 0.47 },
+    },
     subgroup = "pm-zirconium-tm",
     order = "a",
-    stack_size = 100 / 2
+    stack_size = 250
   },
   {
     type = "item",

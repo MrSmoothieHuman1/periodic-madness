@@ -43,6 +43,7 @@ Date: 2025-12-19
     - Updated mixed bastnasite icons.
     - Made space circuit RCU recipe be 35s, but made it craft 2 at once.
     - Rebalanced flux requirements for alloys/molten metal chains: starter alloys (up to kasethal/stainless steel) takes 1 flux, uhrlumin/inconel/HDS take 2 flux, and any alloys past this take 3.
+    - Changed zirconium sand icon to fit with newer graphics.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
