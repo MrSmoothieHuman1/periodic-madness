@@ -273,6 +273,10 @@ end
 
 ---@alias data.defines.inventory defines.inventory
 
+--MARK: Barrel subgroup moving
+data.raw["item-subgroup"]["fill-barrel"].group = "fluids"
+data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
+
 --[[for _, item in pairs(data.raw["item"]) do
     if item.icon ~= nil then
         item.icon = "__periodic-madness__/graphics/entities/buildings/geothermal-plant/true.png"
