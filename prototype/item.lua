@@ -1794,7 +1794,7 @@ data:extend({
     type = "module",
     name = "pm-advanced-YAG-laser-head",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/YAG-laser-head.png",
+    icon = "__periodic-madness__/graphics/icons/advanced-YAG-laser-head.png",
     subgroup = "pm-garnet-ptm",
     order = "g",
     category = "pm-laser-modules",
