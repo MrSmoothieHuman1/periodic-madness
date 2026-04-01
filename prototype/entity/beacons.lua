@@ -44,7 +44,7 @@ data:extend({
           max_sounds_per_prototype = 3
         },
         energy_usage = "500kW",
-        distribution_effectivity = 0.75,
+        distribution_effectivity = 0.5,
         distribution_effectivity_bonus_per_quality_level = 0.2,
         profile = 
         {
