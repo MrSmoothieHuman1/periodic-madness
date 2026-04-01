@@ -11175,7 +11175,6 @@ fluid_boxes =
   {
     type = "fluid",
     usage_priority = "secondary-input",
-    drain = "100kW",
     emissions_per_minute = {pollution = 4},
     fluid_box =
     {
