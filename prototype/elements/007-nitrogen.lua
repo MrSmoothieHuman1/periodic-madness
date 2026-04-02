@@ -162,7 +162,7 @@ data:extend({
     {
       type = "recipe",
       name = "pm-haber-bosch-ammonia",
-      crafting_machine_tint = 
+      crafting_machine_tint =
       {
         primary = {0.9, 0.9, 1},
         secondary = {0.251, 0.596, 1},
@@ -185,7 +185,7 @@ data:extend({
       {
         PM.product_range("pm-hydrogen-gas", 0, 15, "fluid"),
         PM.product_range("pm-ammonia-gas", 15, 20, "fluid"),
-        PM.catalyst_chance("pm-nitrous-iron", 1, 0.5, 1)
+        PM.catalyst_chance("pm-nitrous-iron", 1, 0.75, 1)
       }
     },
     {
