@@ -11176,13 +11176,14 @@ fluid_boxes =
   },
   allowed_module_categories = {"pm-heating-coils"},
   crafting_speed = 1.5,
-  energy_usage = "1kW",
+  energy_usage = "1MW",
   energy_source =
   {
     type = "fluid",
     emissions_per_minute = {pollution = 4},
     burns_fluid = true,
-    fluid_usage_per_tick = 2/60,
+    scale_fluid_usage = true,
+    fluid_usage_per_tick = 5/60,
     fluid_box =
     {
       production_type = "input",
