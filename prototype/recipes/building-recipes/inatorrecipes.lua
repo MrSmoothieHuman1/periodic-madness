@@ -452,7 +452,7 @@ data:extend({
     name = "pm-molten-yellow-high-density-structure-alloy",
     enabled = false,
     energy_required = 36,
-    category = "pm-moltening",
+    category = "pm-blast-smelting",
     allow_productivity = true,
     ingredients =
     {
@@ -472,7 +472,7 @@ data:extend({
     name = "pm-molten-blue-high-density-structure-alloy",
     enabled = false,
     energy_required = 36,
-    category = "pm-moltening",
+    category = "pm-blast-smelting",
     allow_productivity = true,
     ingredients =
     {
@@ -492,7 +492,7 @@ data:extend({
     name = "pm-molten-high-density-structure-mixture",
     enabled = false,
     energy_required = 48,
-    category = "pm-moltening", --should be in blast furnace
+    category = "pm-moltening",
     main_product = "pm-molten-high-density-structure-mixture",
     ingredients =
     {

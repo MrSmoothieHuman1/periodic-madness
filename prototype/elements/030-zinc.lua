@@ -334,7 +334,7 @@ data:extend({
   name = "pm-zinc-sulfide-concentrate",
   enabled = false,
   energy_required = 9,
-  category = "pm-moltening", --should be in reverbatory furnace
+  category = "pm-reverberatory-smelting",
   subgroup = "pm-advanced-zinc-tm",
   order = "b",
   main_product = "pm-zinc-sulfide-concentrate",
@@ -354,7 +354,7 @@ data:extend({
   name = "pm-zinc-oxide",
   enabled = false,
   energy_required = 16,
-  category = "chemistry", --should be blast furnace
+  category = "pm-blast-smelting",
   subgroup = "pm-advanced-zinc-tm",
   order = "c",
   main_product = "pm-zinc-oxide",

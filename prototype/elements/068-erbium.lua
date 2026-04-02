@@ -259,7 +259,7 @@ data:extend({
         name = "pm-erbium-fluoride",
         enabled = false,
         energy_required = 5,
-        category = "pm-moltening", --should be in blast/reverb furnace
+        category = "pm-reverberatory-smelting",
         ingredients =
         {
             PM.ingredient("pm-impure-erbium", 6),

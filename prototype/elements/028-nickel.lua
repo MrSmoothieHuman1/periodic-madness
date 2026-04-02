@@ -327,7 +327,7 @@ data:extend({
   name = "pm-matte-nickel",
   enabled = false,
   energy_required = 8,
-  category = "pm-moltening", --should be in reverbatory furnace
+  category = "pm-reverberatory-smelting",
   subgroup = "pm-advanced-nickel-tm",
   order = "b",
   main_product = "pm-matte-nickel",

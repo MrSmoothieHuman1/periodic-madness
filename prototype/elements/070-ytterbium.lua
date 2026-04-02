@@ -194,7 +194,7 @@ data:extend({
         name = "pm-ytterbium-plate",
         enabled = false,
         energy_required = 9,
-        category = "pm-coldening", --should be in one new furnace
+        category = "pm-blast-smelting",
         allow_productivity = true,
         main_product = "pm-ytterbium-plate",
         ingredients =

@@ -178,7 +178,7 @@ data:extend({
         name = "pm-samarium",
         enabled = false,
         energy_required = 16,
-        category = "pm-moltening", --shoudl be in cool furnace
+        category = "pm-blast-smelting",
         allow_productivity = true,
         main_product = "pm-samarium",
         ingredients =

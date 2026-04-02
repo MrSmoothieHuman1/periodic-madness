@@ -316,7 +316,7 @@ data:extend({
     type = "recipe",
     name = "pm-mixed-molten-iron",
     enabled = false,
-    category = "pm-moltening", --should be in blast/reverbatory furnace
+    category = "pm-blast-smelting",
     subgroup = "pm-advanced-iron-tm",
     order = "b",
     energy_required = 3,

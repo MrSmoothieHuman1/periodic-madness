@@ -154,7 +154,7 @@ data:extend({
         name = "pm-rhenium-oxide",
         enabled = false,
         energy_required = 6.4,
-        category = "smelting", --should be (also?) in reverbatory furnace
+        category = "pm-reverberatory-smelting",
         subgroup = "pm-rhenium-tm",
         order = "c",
         main_product = "pm-rhenium-oxide",

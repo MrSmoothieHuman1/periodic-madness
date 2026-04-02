@@ -352,7 +352,7 @@ data:extend({
   name = "pm-matte-copper",
   enabled = false,
   energy_required = 8,
-  category = "pm-moltening", --should be in reverbatory furnace
+  category = "pm-reverberatory-smelting",
   subgroup = "pm-advanced-copper-tm",
   order = "c",
   main_product = "pm-matte-copper",

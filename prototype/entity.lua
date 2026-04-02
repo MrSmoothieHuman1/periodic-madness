@@ -11158,24 +11158,26 @@ fluid_boxes =
       {
         filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace.png",
         width = 256,
-        height = 320,
+        height = 360,
         shift = util.by_pixel(0, -32),
         scale = 0.5
       },
     }
   }
   },
-  crafting_categories = {"pm-circuit-boards"},
+  crafting_categories = {"pm-blast-smelting"},
   allowed_effects = PM.all_effects(),
-  module_slots = 3,
-  allowed_module_categories = {"pm-laser-modules"},
-  crafting_speed = 2.5,
-  energy_usage = "650kW",
+  module_slots = 5,
+  allowed_module_categories = {"pm-heating-coils"},
+  crafting_speed = 1.5,
+  energy_usage = "1kW",
   energy_source =
   {
     type = "fluid",
     usage_priority = "secondary-input",
     emissions_per_minute = {pollution = 4},
+    burns_fluid = true,
+    fluid_usage_per_tick = 2/60,
     fluid_box =
     {
       production_type = "input",
@@ -11193,12 +11195,39 @@ fluid_boxes =
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
-      volume = 500,
+      volume = 250,
       pipe_connections =
       {
         {flow_direction="input", direction = defines.direction.north --[[@as int]], position = {0.5, -1.5}},
       },
-    }
+    },
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 250,
+      pipe_connections =
+      {
+        {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {-0.5, 1.5}},
+      },
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      pipe_connections =
+      {
+        {flow_direction="output", direction = defines.direction.west --[[@as int]], position = {-1.5, 0.5}},
+      },
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 500,
+      pipe_connections =
+      {
+        {flow_direction="output", direction = defines.direction.west --[[@as int]], position = {-1.5, -0.5}},
+      },
+    },
   },
   working_sound =
     {

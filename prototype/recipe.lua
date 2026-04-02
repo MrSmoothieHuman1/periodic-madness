@@ -6241,7 +6241,7 @@ data:extend({
     name = "pm-molten-neodymium-magnet-alloy",
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening", --should be in new furnace
+    category = "pm-blast-smelting",
     allow_productivity = true,
     ingredients =
     {

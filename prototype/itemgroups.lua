@@ -154,6 +154,14 @@ data:extend({
     type = "recipe-category",
     name = "pm-cryogenics"
   },
+  {
+    type = "recipe-category",
+    name = "pm-blast-smelting"
+  },
+  {
+    type = "recipe-category",
+    name = "pm-reverberatory-smelting"
+  },
 
   -- For the consumption of reactor coolant
 	{

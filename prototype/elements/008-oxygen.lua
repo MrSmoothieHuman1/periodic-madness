@@ -10,6 +10,7 @@ data:extend({
       neutrons = 8,
       default_temperature = 15,
       gas_temperature = 15,
+      fuel_value = "1MJ",
       base_color = {r = 1, g = 0, b = 0},
       flow_color = {r = 0.75, g = 0, b = 0}
     },
