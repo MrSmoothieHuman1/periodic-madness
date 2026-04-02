@@ -11146,6 +11146,8 @@ fluid_boxes =
   collision_box = { { -1.85, -1.85 }, { 1.85, 1.85 } },
   selection_box = { { -2, -2 }, { 2, 2 } },
   alert_icon_shift = util.by_pixel(0, -12),
+  icon_draw_specification = {shift = {0, -0.5}, scale = 1, scale_for_many = 0.5, render_layer = "entity-info-icon"},
+  forced_symmetry = "horizontal",
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
   graphics_set =
@@ -11168,13 +11170,16 @@ fluid_boxes =
   crafting_categories = {"pm-blast-smelting"},
   allowed_effects = PM.all_effects(),
   module_slots = 5,
+  icons_positioning = 
+  {
+    {inventory_index = defines.inventory.crafter_modules, shift = {0, 0.5}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.4}
+  },
   allowed_module_categories = {"pm-heating-coils"},
   crafting_speed = 1.5,
   energy_usage = "1kW",
   energy_source =
   {
     type = "fluid",
-    usage_priority = "secondary-input",
     emissions_per_minute = {pollution = 4},
     burns_fluid = true,
     fluid_usage_per_tick = 2/60,
