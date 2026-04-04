@@ -270,8 +270,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-silver-plate", 7),
-      PM.ingredient("pm-molten-copper", 5, "fluid"),
+      PM.ingredient("pm-silver-plate", 8),
+      PM.ingredient("pm-molten-copper", 3, "fluid"),
       PM.ingredient("pm-germanium-ore", 3)
     },
     results = 
@@ -305,7 +305,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-sterling-silver-precursor-billet", 5),
-      PM.ingredient("pm-industrial-grade-silicon-ore", 5),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 4),
       PM.ingredient("pm-molten-platinum", 2, "fluid"),
       PM.ingredient("pm-boron", 2, "fluid"),
       PM.ingredient("pm-filled-flux-container", 2)

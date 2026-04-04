@@ -86,7 +86,7 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-transition-metals-ore", 16),
-            PM.ingredient("pm-titanium-oxide", 6),
+            PM.ingredient("pm-titanium-ore", 6),
             PM.ingredient("pm-zirconia", 6),
             PM.ingredient("pm-chromic-acid", 50, "fluid")
         },

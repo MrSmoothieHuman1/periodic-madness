@@ -7126,8 +7126,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-drilling-fluid",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/drilling-fluid.png",
     effects =
     {
         {

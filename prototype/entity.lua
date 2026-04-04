@@ -11180,10 +11180,10 @@ fluid_boxes =
   energy_source =
   {
     type = "fluid",
-    emissions_per_minute = {pollution = 4},
+    emissions_per_minute = {pollution = 2},
     burns_fluid = true,
     scale_fluid_usage = true,
-    fluid_usage_per_tick = 5/60,
+    fluid_usage_per_tick = 6/60,
     fluid_box =
     {
       production_type = "input",

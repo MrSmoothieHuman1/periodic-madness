@@ -595,7 +595,7 @@ data:extend({
         consumption = 1,
         pollution = 0.25,
       },
-    }, --basic coil module, should be a alright starter
+    }, --basic heat-pump
 })
 
 --#MARK: Vanilla modules
