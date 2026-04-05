@@ -194,6 +194,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-erbium-oxide-to-impure-erbium",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-erbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/erbium-oxide.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 10,
         category = "chemistry",
@@ -215,6 +230,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-erbium-bromide-to-impure-erbium",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-erbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/erbium-bromide.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 10,
         category = "chemistry",
@@ -236,6 +266,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-erbium-iodide-to-impure-erbium",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-erbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/erbium-iodide.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 10,
         category = "chemistry",
