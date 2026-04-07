@@ -11125,12 +11125,12 @@ fluid_boxes =
 {
   type = "assembling-machine",
   name = "pm-blast-furnace",
-  icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/blast-furnace.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
   minable = { mining_time = 0.5, result = "pm-electronic-laser-etcher" },
   max_health = 800,
-  corpse = "pm-electronic-laser-etcher",
+  corpse = "pm-blast-furnace",
   dying_explosion = "assembling-machine-1-explosion",
   resistances =
   {
@@ -11140,7 +11140,7 @@ fluid_boxes =
     },
     {
       type = "fire",
-      percent = 85
+      percent = 95
     }
   },
   collision_box = { { -1.85, -1.85 }, { 1.85, 1.85 } },
@@ -11148,7 +11148,7 @@ fluid_boxes =
   alert_icon_shift = util.by_pixel(0, -12),
   icon_draw_specification = {shift = {0, -0.5}, scale = 1, scale_for_many = 0.5, render_layer = "entity-info-icon"},
   forced_symmetry = "horizontal",
-  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
   graphics_set =
   {
@@ -11158,14 +11158,163 @@ fluid_boxes =
     layers =
     {
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace.png",
+        filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-base.png",
         width = 256,
         height = 360,
+        frame_count = 1,
+        repeat_count = 64,
+        shift = util.by_pixel(0, -32),
+        animation_speed = 0.43,
+        scale = 0.5
+      },
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-tray.png",
+        width = 256,
+        height = 360,
+        frame_count = 64,
+        line_length = 8,
         shift = util.by_pixel(0, -32),
         scale = 0.5
       },
+    },
+  },
+  working_visualisations =
+  {
+    {
+      default_recipe_tint =
+      {
+        primary = {1, 1, 1},
+        secondary = tints.empty,
+        tertiary = tints.empty,
+        quaternary = tints.empty,
+      },
+      recipe_not_set_tint =
+      {
+        primary = {0.592, 0.563, 0.56},
+        secondary = tints.empty,
+        tertiary = tints.empty,
+        quaternary = tints.empty,
+      },
+      always_draw = true,
+      apply_recipe_tint = "primary",
+      north_animation =
+      {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-rocks.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                animation_speed = 0.43,
+                scale = 0.5,
+            },
+        },
+      },
+      south_animation =
+      {
+        layers = 
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-rocks.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                animation_speed = 0.43,
+                scale = 0.5,
+            },
+        },
+      },
+      east_animation =
+      {
+        layers = 
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-rocks.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                animation_speed = 0.43,
+                scale = 0.5,
+            },
+        },
+      },
+      west_animation =
+      {
+        layers = 
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-rocks.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                animation_speed = 0.43,
+                scale = 0.5,
+            },
+        },
+      },
+    },
+    {
+        always_draw = true,
+        apply_tint = "status",
+        north_animation =
+        {
+            filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-diode.png",
+            width = 256,
+            height = 360,
+            repeat_count = 64,
+            line_length = 1,
+            shift = util.by_pixel(0, -32),
+            draw_as_glow = true,
+            blend_mode = "additive",
+            scale = 0.5,
+        },
+        south_animation =
+        {
+            filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-diode.png",
+            width = 256,
+            height = 360,
+            repeat_count = 64,
+            line_length = 1,
+            shift = util.by_pixel(0, -32),
+            draw_as_glow = true,
+            blend_mode = "additive",
+            scale = 0.5,
+        },
+        east_animation =
+        {
+            filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-diode.png",
+            width = 256,
+            height = 360,
+            repeat_count = 64,
+            line_length = 1,
+            shift = util.by_pixel(0, -32),
+            draw_as_glow = true,
+            blend_mode = "additive",
+            scale = 0.5,
+        },
+        west_animation =
+        {
+            filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-diode.png",
+            width = 256,
+            height = 360,
+            repeat_count = 64,
+            line_length = 1,
+            shift = util.by_pixel(0, -32),
+            draw_as_glow = true,
+            blend_mode = "additive",
+            scale = 0.5,
+        }
     }
-  }
+    }
   },
   crafting_categories = {"pm-blast-smelting"},
   allowed_effects = PM.all_effects(),

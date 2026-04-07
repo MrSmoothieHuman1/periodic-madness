@@ -450,6 +450,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-molten-yellow-high-density-structure-alloy",
+    crafting_machine_tint = 
+    {
+        primary = {0.49, 0.42, 0.122}
+    },
     enabled = false,
     energy_required = 36,
     category = "pm-blast-smelting",
@@ -470,6 +474,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-molten-blue-high-density-structure-alloy",
+    crafting_machine_tint =
+    {
+        primary = {0.122, 0.412, 0.49}
+    },
     enabled = false,
     energy_required = 36,
     category = "pm-blast-smelting",

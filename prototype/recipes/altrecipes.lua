@@ -454,7 +454,7 @@ data:extend({
     name = "pm-bismuth-carbon-dioxide-electrolysis",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-CO2-electroylsis.png",
-    energy_required = 2,
+    energy_required = 3,
     enabled = false,
     category = "pm-electrolysis",
     main_product = "pm-carbon-monoxide",
@@ -467,6 +467,8 @@ data:extend({
     results =
     {
       PM.product("pm-carbon-monoxide", 40, "fluid"),
+      PM.catalyst("pm-zirconia", 2, 2),
+      PM.catalyst("pm-bismuth-ore", 2, 2), 
       PM.product("pm-oxygen-gas", 20, "fluid")
     }
   },

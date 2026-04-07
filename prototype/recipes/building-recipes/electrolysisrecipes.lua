@@ -13,11 +13,12 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-carbon-dioxide-gas", 20, "fluid"),
-      PM.ingredient("pm-zirconia", 12)
+      PM.ingredient("pm-zirconia", 8)
     },
     results =
     {
       PM.product("pm-carbon-monoxide", 20, "fluid"),
+      PM.catalyst("pm-zirconia", 4, 4),
       PM.product("pm-oxygen-gas", 10, "fluid")
     }
   },

@@ -84,7 +84,7 @@ data:extend({
     results =
     {
       PM.product("pm-copper-chunk", 2),
-      PM.product_range_chance("pm-cobaltite", 0, 3, 0.69),
+      PM.product_range_chance("pm-cobaltite", 0, 2, 0.69),
       PM.product("pm-cobalt-blue", 4)
     }
   } --[[@as data.RecipePrototype]],
@@ -153,7 +153,7 @@ data:extend({
     results =
     {
       PM.product("pm-copper-chunk", 1),
-      PM.product_chance("pm-cobaltite", 1, 0.69),
+      PM.product_chance("pm-cobaltite", 1, 0.34),
       PM.product("pm-cobalt-blue", 4),
       PM.product_chance("pm-flux-container", 1, 0.66),
     }

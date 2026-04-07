@@ -176,6 +176,10 @@ data:extend({
     {
         type = "recipe",
         name = "pm-samarium",
+        crafting_machine_tint = 
+        {
+            primary = {0.659, 0.4, 0.4}
+        },
         enabled = false,
         energy_required = 16,
         category = "pm-blast-smelting",

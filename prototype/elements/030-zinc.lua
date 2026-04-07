@@ -352,6 +352,10 @@ data:extend({
 {
   type = "recipe",
   name = "pm-zinc-oxide",
+  crafting_machine_tint = 
+  {
+    primary = {0.89, 0.686, 0.816}
+  },
   enabled = false,
   energy_required = 16,
   category = "pm-blast-smelting",

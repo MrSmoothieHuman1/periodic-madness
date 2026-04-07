@@ -6239,6 +6239,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-molten-neodymium-magnet-alloy",
+    crafting_machine_tint =
+    {
+        primary = {0.616, 0.757, 0.839},
+    },
     enabled = false,
     energy_required = 18,
     category = "pm-blast-smelting",

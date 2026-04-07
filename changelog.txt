@@ -46,6 +46,8 @@ Date: 2025-12-19
     - Changed zirconium sand icon to fit with newer graphics.
     - Lowered hub beacon distribution efficiency from 0.75 to 0.5.
     - Changed nitrous iron to be produced 75% of the time instead of 50%.
+    - Lowered amount of cobaltite from 0-3 69%, to 0-2 69% chance, with the fluxed recipe being 1 34%.
+    - Lowered amount of arsenic from cobaltite from 3-6 to 2-5.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

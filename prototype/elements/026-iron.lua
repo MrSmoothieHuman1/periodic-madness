@@ -315,6 +315,10 @@ data:extend({
   {
     type = "recipe",
     name = "pm-mixed-molten-iron",
+    crafting_machine_tint = 
+    {
+        primary = {0.627, 0.761, 0.757}
+    },
     enabled = false,
     category = "pm-blast-smelting",
     subgroup = "pm-advanced-iron-tm",
