@@ -1031,6 +1031,16 @@ data:extend({
     hidden_in_factoriopedia = true,
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-blast-furnace",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/blast-furnace.png",
+    subgroup = "smelting-machine",
+    order = "g",
+    place_result = "pm-blast-furnace",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

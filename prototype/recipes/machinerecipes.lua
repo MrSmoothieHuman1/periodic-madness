@@ -1868,6 +1868,26 @@ data:extend({
     {
         PM.product("pm-tidal-power-plant", 1)
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-blast-furnace",
+    enabled = false,
+    energy_required = 4,
+    category = "crafting-with-fluid",
+    ingredients =
+    {
+        PM.ingredient("electric-furnace", 1),
+        PM.ingredient("pm-corrosion-resistant-tubing", 12),
+        PM.ingredient("pm-heavyweight-framing", 16),
+        PM.ingredient("processing-unit", 2),
+        PM.ingredient("pm-heavy-lubricant", 2.5, "fluid"),
+        PM.ingredient("pm-liquid-silicone", 2.5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-blast-furnace", 1)
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 

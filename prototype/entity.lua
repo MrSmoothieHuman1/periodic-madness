@@ -11128,7 +11128,7 @@ fluid_boxes =
   icon = "__periodic-madness__/graphics/icons/buildings/blast-furnace.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 0.5, result = "pm-electronic-laser-etcher" },
+  minable = { mining_time = 0.5, result = "pm-blast-furnace" },
   max_health = 800,
   corpse = "pm-blast-furnace",
   dying_explosion = "assembling-machine-1-explosion",
