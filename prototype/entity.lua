@@ -11147,7 +11147,7 @@ fluid_boxes =
   selection_box = { { -2, -2 }, { 2, 2 } },
   alert_icon_shift = util.by_pixel(0, -12),
   icon_draw_specification = {shift = {0, -0.5}, scale = 1, scale_for_many = 0.5, render_layer = "entity-info-icon"},
-  forced_symmetry = "horizontal",
+  --forced_symmetry = "horizontal", graphics break, not sure what to do about it
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
   graphics_set =
@@ -11155,27 +11155,106 @@ fluid_boxes =
   status_colors = pm_diode_status_colors(),
   animation =
   {
-    layers =
+    north =
     {
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-base.png",
-        width = 256,
-        height = 360,
-        frame_count = 1,
-        repeat_count = 64,
-        shift = util.by_pixel(0, -32),
-        animation_speed = 0.43,
-        scale = 0.5
-      },
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-tray.png",
-        width = 256,
-        height = 360,
-        frame_count = 64,
-        line_length = 8,
-        shift = util.by_pixel(0, -32),
-        scale = 0.5
-      },
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-north.png",
+                width = 256,
+                height = 360,
+                frame_count = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -32),
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-tray.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                scale = 0.5
+            },
+        }
+    },
+    south =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-south.png",
+                width = 256,
+                height = 360,
+                frame_count = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -32),
+
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-tray.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                scale = 0.5
+            },
+        }
+    },
+    east =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-east.png",
+                width = 256,
+                height = 360,
+                frame_count = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -32),
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-tray.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                scale = 0.5
+            },
+        }
+    },
+    west =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-west.png",
+                width = 256,
+                height = 360,
+                frame_count = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -32),
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/blast-furnace/blast-furnace-tray.png",
+                width = 256,
+                height = 360,
+                frame_count = 64,
+                line_length = 8,
+                shift = util.by_pixel(0, -32),
+                scale = 0.5
+            },
+        }
     },
   },
   working_visualisations =
