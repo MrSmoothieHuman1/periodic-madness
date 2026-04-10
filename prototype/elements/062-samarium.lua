@@ -93,7 +93,8 @@ data:extend({
         {
             PM.ingredient("pm-roasted-bastnasite", 8),
             PM.ingredient("pm-acidic-water", 10, "fluid"),
-            PM.ingredient("pm-hydrochloric-acid", 20, "fluid")
+            PM.ingredient("pm-hydrochloric-acid", 20, "fluid"),
+            PM.ingredient("pm-oxygen-gas", 12, "fluid"),
         },
         results =
         {

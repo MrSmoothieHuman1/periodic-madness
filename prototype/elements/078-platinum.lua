@@ -3,8 +3,13 @@ data:extend({
   {
     type = "item",
     name = "pm-platinum-powder",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/platinum-powder.png",
+    pictures = 
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/platinum-powder.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ores/platinum-powder-2.png", size = 64, scale = 0.45 },
+    },
     subgroup = "pm-platinum-tm",
     order = "a",
     stack_size = 400
@@ -17,7 +22,7 @@ data:extend({
     pictures = 
     {
       {filename = "__periodic-madness__/graphics/icons/ammonium-chloride.png", size = 64, scale = 0.5 },
-      {filename = "__periodic-madness__/graphics/icons/ammonium-chloride-2.png", size = 64, scale = 0.5 },
+      {filename = "__periodic-madness__/graphics/icons/ammonium-chloride-2.png", size = 64, scale = 0.46 },
     },
     subgroup = "pm-platinum-tm",
     order = "x",

@@ -8398,7 +8398,7 @@ data:extend({
     type = "technology",
     name = "pm-liquid-gasses",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/liquid-gasses.png",
     effects =
     {
         PM.unlock_recipe("pm-liquid-oxygen"),
