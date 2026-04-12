@@ -7426,7 +7426,7 @@ data:extend({
     type = "technology",
     name = "pm-gadolinium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/gadolinium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-gadolinium-nitrate"),
@@ -7532,7 +7532,7 @@ data:extend({
     type = "technology",
     name = "pm-holmium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/holmium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-monazite-sand"),
@@ -7805,7 +7805,7 @@ data:extend({
     max_level = "infinite",
     unit =
     {
-      count_formula = "1.25^L*200",
+      count_formula = "1000 -100*L",
       ingredients =
       {
         {"automation-science-pack", 1},
