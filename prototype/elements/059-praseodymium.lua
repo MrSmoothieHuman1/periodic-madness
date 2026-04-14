@@ -140,7 +140,7 @@ data:extend({
         results =
         {
             PM.product("pm-pure-praseodymium-deposit", 1), --turns into 1 pure
-            PM.product("pm-ammonium-nitrate", 1),
+            PM.catalyst("pm-ammonium-nitrate", 1, 1),
             PM.catalyst("pm-hot-light-coolant", 2.5, 2.5, "fluid", 1),
             PM.catalyst_chance("pm-50-praseodymium-deposit", 1, 0.5, 1),
             PM.catalyst_chance("pm-25-praseodymium-deposit", 1, 0.75, 1)
@@ -165,7 +165,7 @@ data:extend({
         results =
         {
             PM.product("pm-75-praseodymium-deposit", 1), --turns into 1 75% pras
-            PM.product_range("pm-ammonium-nitrate", 1, 2),
+            PM.catalyst_range("pm-ammonium-nitrate", 1, 2, 2),
             PM.catalyst("pm-hot-light-coolant", 5, 5, "fluid", 1),
             PM.catalyst_chance("pm-pure-praseodymium-deposit", 1, 0.5, 1),
             PM.catalyst_chance("pm-25-praseodymium-deposit", 1, 0.75, 1)
@@ -190,7 +190,7 @@ data:extend({
         results =
         {
             PM.product("pm-50-praseodymium-deposit", 1), --turns into 1 50% pras
-            PM.product("pm-ammonium-nitrate", 2),
+            PM.catalyst("pm-ammonium-nitrate", 2, 2),
             PM.catalyst("pm-hot-light-coolant", 7.5, 7.5, "fluid", 1),
             PM.catalyst_chance("pm-pure-praseodymium-deposit", 1, 0.5, 1),
             PM.catalyst_chance("pm-75-praseodymium-deposit", 1, 0.75, 1)
