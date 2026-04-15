@@ -330,14 +330,14 @@ data:extend({
     {
       PM.ingredient("pm-magnetite", 3),
       PM.ingredient("pm-pig-iron", 6),
-      PM.ingredient("pm-filled-flux-container", 3),
+      PM.ingredient("pm-filled-flux-container", 2),
       PM.ingredient("pm-oxygen-gas", 20, "fluid")
     },
     results =
     {
-      PM.product_range("pm-flux-container", 1, 3),
+      PM.catalyst_range("pm-flux-container", 1, 2, 2),
       PM.product("pm-mixed-molten-iron", 20, "fluid"),
-      PM.product_range_chance("pm-carbon-monoxide", 2, 8, 0.75, "fluid")
+      PM.catalyst_range_chance("pm-carbon-monoxide", 2, 8, 0.75, "fluid", 4)
     }
   },
   {
@@ -374,7 +374,7 @@ data:extend({
     {
       PM.ingredient("pm-wrought-iron", 6)
     },
-    results = 
+    results =
     {
       PM.product("iron-ore", 6),
       PM.product_chance("pm-low-quality-quartzite", 1, 0.45)
