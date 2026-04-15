@@ -2189,7 +2189,7 @@ data:extend({
     type = "fluid",
     name = "pm-molten-neodymium-magnet-alloy",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-uhrlumin-precursor-alloy.png",
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-neodymium-magnet-alloy.png",
     subgroup = "pm-uhrlumin",
     order = "a",
     default_temperature = 15,
