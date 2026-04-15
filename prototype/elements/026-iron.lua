@@ -337,7 +337,7 @@ data:extend({
     {
       PM.catalyst_range("pm-flux-container", 1, 2, 2),
       PM.product("pm-mixed-molten-iron", 20, "fluid"),
-      PM.catalyst_range_chance("pm-carbon-monoxide", 2, 8, 0.75, "fluid", 4)
+      PM.catalyst_range_chance("pm-carbon-monoxide", 2, 8, 0.75, 4, "fluid")
     }
   },
   {
