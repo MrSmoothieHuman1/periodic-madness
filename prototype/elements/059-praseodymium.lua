@@ -12,11 +12,11 @@ data:extend({
       type = "item",
       name = "pm-25-praseodymium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/25-praseodymium-deposit.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/31-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/25-praseodymium-deposit.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/26-praseodymium-deposit.png", size = 64, scale = 0.43}
       },
       subgroup = "pm-praseodymium-la",
       order = "b",
@@ -26,11 +26,11 @@ data:extend({
       type = "item",
       name = "pm-50-praseodymium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/50-praseodymium-deposit.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/51-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/50-praseodymium-deposit.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/51-praseodymium-deposit.png", size = 64, scale = 0.45}
       },
       subgroup = "pm-praseodymium-la",
       order = "c",
@@ -40,11 +40,11 @@ data:extend({
       type = "item",
       name = "pm-75-praseodymium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/75-praseodymium-deposit.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/75-praseodymium-deposit.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/76-praseodymium-deposit.png", size = 64, scale = 0.44}
       },
       subgroup = "pm-praseodymium-la",
       order = "d",
@@ -54,11 +54,11 @@ data:extend({
       type = "item",
       name = "pm-pure-praseodymium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/pure-praseodymium-deposit.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/pure-praseodymium-deposit.png", size = 64, scale = 0.5},
+        --{filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
       },
       subgroup = "pm-praseodymium-la",
       order = "e",

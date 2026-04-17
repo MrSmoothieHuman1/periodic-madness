@@ -7196,7 +7196,7 @@ data:extend({
     type = "technology",
     name = "pm-bastnasite-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/bastnasite-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-pure-bastnasite"),
@@ -7227,7 +7227,7 @@ data:extend({
     type = "technology",
     name = "pm-cerium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/cerium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-bastnasite-ce"),
@@ -7294,7 +7294,7 @@ data:extend({
     type = "technology",
     name = "pm-neodymium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/neodymium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-neodymium-frothing"),
@@ -7393,7 +7393,7 @@ data:extend({
     type = "technology",
     name = "pm-europium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/europium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-europium-trioxide-concentrate"),
