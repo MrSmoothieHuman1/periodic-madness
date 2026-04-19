@@ -54,11 +54,12 @@ data:extend({
       type = "item",
       name = "pm-samarium-oxide",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/samarium-oxide.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/samarium-oxide.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/samarium-oxide-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/samarium-oxide-3.png", size = 64, scale = 0.5},
       },
       subgroup = "pm-samarium-la",
       order = "e",
@@ -72,9 +73,9 @@ data:extend({
       pictures =
       {
         {filename = "__periodic-madness__/graphics/icons/ores/samarium.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/samarium-2.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/samarium-2.png", size = 64, scale = 0.45},
         {filename = "__periodic-madness__/graphics/icons/ores/samarium-3.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/samarium-4.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/samarium-4.png", size = 64, scale = 0.42}
       },
       subgroup = "pm-samarium-la",
       order = "f",
