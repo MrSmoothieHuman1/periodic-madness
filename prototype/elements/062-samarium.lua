@@ -3,7 +3,13 @@ data:extend({
       type = "item",
       name = "pm-mixed-samarium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/mixed-samarium-deposit.png",
+      pictures =
+      {
+        {filename = "__periodic-madness__/graphics/icons/ores/mixed-samarium-deposit.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/mixed-samarium-deposit-2.png", size = 64, scale = 0.45},
+        {filename = "__periodic-madness__/graphics/icons/ores/mixed-samarium-deposit-3.png", size = 64, scale = 0.5},
+      },
       subgroup = "pm-samarium-la",
       order = "a",
       stack_size = 200
@@ -12,11 +18,12 @@ data:extend({
       type = "item",
       name = "pm-lightly-seperated-samarium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/lightly-separated-samarium-deposit.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/30-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/31-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/lightly-separated-samarium-deposit.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/lightly-separated-samarium-deposit-2.png", size = 64, scale = 0.43},
+        {filename = "__periodic-madness__/graphics/icons/ores/lightly-separated-samarium-deposit-3.png", size = 64, scale = 0.5},
       },
       subgroup = "pm-samarium-la",
       order = "b",
@@ -26,11 +33,12 @@ data:extend({
       type = "item",
       name = "pm-medium-seperated-samarium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/medium-separated-samarium-deposit.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/50-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/51-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/medium-separated-samarium-deposit.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/medium-separated-samarium-deposit-2.png", size = 64, scale = 0.45},
+        {filename = "__periodic-madness__/graphics/icons/ores/medium-separated-samarium-deposit-3.png", size = 64, scale = 0.5},
       },
       subgroup = "pm-samarium-la",
       order = "c",
@@ -40,11 +48,11 @@ data:extend({
       type = "item",
       name = "pm-highly-seperated-samarium-deposit",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/heavily-separated-samarium-deposit.png",
       pictures =
       {
-        {filename = "__periodic-madness__/graphics/icons/ores/70-rubidium-alum.png", size = 64, scale = 0.5},
-        {filename = "__periodic-madness__/graphics/icons/ores/71-rubidium-alum.png", size = 64, scale = 0.5}
+        {filename = "__periodic-madness__/graphics/icons/ores/heavily-separated-samarium-deposit.png", size = 64, scale = 0.5},
+        {filename = "__periodic-madness__/graphics/icons/ores/heavily-separated-samarium-deposit-2.png", size = 64, scale = 0.46}
       },
       subgroup = "pm-samarium-la",
       order = "d",
