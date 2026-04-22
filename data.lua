@@ -529,7 +529,7 @@ data:extend({
     {
       sheet =
       {
-        filename = "__periodic-madness__/graphics/entities/ores/post-transition-metals-ore.png",
+        filename = "__periodic-madness__/graphics/entities/ores/lanthanum-ore.png",
         priority = "extra-high",
         size = 128,
         frame_count = 8,
