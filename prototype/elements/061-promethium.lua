@@ -21,7 +21,13 @@ data:extend({
        type = "item",
        name = "pm-promethium-147",
        icon_size = 64,
-       icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
+       icon = "__periodic-madness__/graphics/icons/ores/promethium-147.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/promethium-147.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/promethium-147-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/promethium-147-3.png", size = 64, scale = 0.5},
+        },
        subgroup = "pm-promethium-la",
        order = "c",
        protons = 61,
