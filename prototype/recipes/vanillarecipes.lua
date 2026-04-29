@@ -67,11 +67,11 @@ data.raw["recipe"]["lab"].ingredients =
 }
 data.raw["recipe"]["solar-panel"].ingredients =
 {
-  PM.ingredient("advanced-circuit", 3),
+  PM.ingredient("advanced-circuit", 2),
   PM.ingredient("pm-lightweight-panelling", 8),
   PM.ingredient("pm-heavyweight-framing", 4),
   PM.ingredient("pm-solar-cell", 4),
-  PM.ingredient("pm-silver-plate", 5)
+  PM.ingredient("pm-silver-plate", 4)
 }
 data.raw["recipe"]["advanced-circuit"].ingredients =
 {

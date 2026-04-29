@@ -749,7 +749,7 @@ data:extend({
       PM.ingredient("solar-panel", 1),
       PM.ingredient("pm-solar-cell", 4),
       PM.ingredient("pm-indium-plate", 4),
-      PM.ingredient("processing-unit", 2),
+      PM.ingredient("processing-unit", 1),
       PM.ingredient("pm-liquid-gallium", 8, "fluid")
     },
     results =

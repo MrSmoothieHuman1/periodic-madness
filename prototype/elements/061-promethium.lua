@@ -3,7 +3,7 @@ data:extend({
        type = "item",
        name = "pm-neodymium-146",
        icon_size = 64,
-       icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
+       icon = "__periodic-madness__/graphics/icons/ores/neodymium-146.png",
        subgroup = "pm-promethium-la",
        order = "a",
        stack_size = 200
