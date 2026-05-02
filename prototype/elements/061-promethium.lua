@@ -4,6 +4,12 @@ data:extend({
        name = "pm-neodymium-146",
        icon_size = 64,
        icon = "__periodic-madness__/graphics/icons/ores/neodymium-146.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/neodymium-146.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/neodymium-146-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/neodymium-146-3.png", size = 64, scale = 0.5},
+        },
        subgroup = "pm-promethium-la",
        order = "a",
        stack_size = 200
@@ -12,7 +18,13 @@ data:extend({
        type = "item",
        name = "pm-neodymium-147",
        icon_size = 64,
-       icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
+       icon = "__periodic-madness__/graphics/icons/ores/neodymium-147.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/neodymium-147.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/neodymium-147-2.png", size = 64, scale = 0.43},
+          --{filename = "__periodic-madness__/graphics/icons/ores/neodymium-147-3.png", size = 64, scale = 0.5},
+        },
        subgroup = "pm-promethium-la",
        order = "b",
        stack_size = 200
