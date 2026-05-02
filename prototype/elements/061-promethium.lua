@@ -23,7 +23,7 @@ data:extend({
         {
           {filename = "__periodic-madness__/graphics/icons/ores/neodymium-147.png", size = 64, scale = 0.5},
           {filename = "__periodic-madness__/graphics/icons/ores/neodymium-147-2.png", size = 64, scale = 0.43},
-          --{filename = "__periodic-madness__/graphics/icons/ores/neodymium-147-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/neodymium-147-3.png", size = 64, scale = 0.5},
         },
        subgroup = "pm-promethium-la",
        order = "b",
