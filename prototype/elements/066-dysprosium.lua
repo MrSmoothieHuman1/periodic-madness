@@ -13,7 +13,14 @@ data:extend({
         type = "item",
         name = "pm-xenotime",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/xenotime.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/xenotime.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/xenotime-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/xenotime-3.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/ores/xenotime-4.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-dysprosium-la",
         order = "b",
         stack_size = 200

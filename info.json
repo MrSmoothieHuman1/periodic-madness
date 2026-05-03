@@ -8,7 +8,6 @@
   "dependencies": [
     "base >= 2.0.59",
     "! space-age >= 2.0",
-    "! quality",
     "? icon-badges >= 1.1.9",
     "? Milestones >= 1.4.2",
     "? Mini_Trains >= 2.0.0",
