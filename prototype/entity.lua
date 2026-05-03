@@ -5250,6 +5250,8 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 10,
+    ----quality_affects_module_slots = true,
+    ----module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4},
     icon_draw_specification = {shift = {0, -0.1}},
     icons_positioning =
     {
@@ -11812,6 +11814,8 @@ data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
 data.raw["furnace"]["electric-furnace"].energy_source.drain = "0kW"
 data.raw["furnace"]["electric-furnace"].energy_source.emissions_per_minute = {pollution = 0.5}
+--data.raw["furnace"]["electric-furnace"].quality_affects_module_slots = true
+--data.raw["furnace"]["electric-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
 
 data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
 data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 10
