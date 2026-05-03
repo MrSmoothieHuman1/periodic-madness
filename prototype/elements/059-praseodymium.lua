@@ -154,7 +154,6 @@ data:extend({
         category = "pm-crystallisation",
         subgroup = "pm-praseodymium-la",
         order = "d",
-        allow_productivity = true,
         main_product = "pm-75-praseodymium-deposit",
         ingredients =
         {
@@ -164,7 +163,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-75-praseodymium-deposit", 1), --turns into 1 75% pras
+            PM.catalyst("pm-75-praseodymium-deposit", 1, 1), --turns into 1 75% pras
             PM.catalyst_range("pm-ammonium-nitrate", 1, 2, 2),
             PM.catalyst("pm-hot-light-coolant", 5, 5, "fluid", 1),
             PM.catalyst_chance("pm-pure-praseodymium-deposit", 1, 0.5, 1),
@@ -179,7 +178,6 @@ data:extend({
         category = "pm-crystallisation",
         subgroup = "pm-praseodymium-la",
         order = "e",
-        allow_productivity = true,
         main_product = "pm-50-praseodymium-deposit",
         ingredients =
         {
@@ -189,7 +187,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-50-praseodymium-deposit", 1), --turns into 1 50% pras
+            PM.catalyst("pm-50-praseodymium-deposit", 1, 1), --turns into 1 50% pras
             PM.catalyst("pm-ammonium-nitrate", 2, 2),
             PM.catalyst("pm-hot-light-coolant", 7.5, 7.5, "fluid", 1),
             PM.catalyst_chance("pm-pure-praseodymium-deposit", 1, 0.5, 1),
@@ -209,7 +207,7 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("stone", 2, 0.33),
+            PM.catalyst_chance("stone", 2, 0.33, 2),
             PM.product_range("pm-praseodymium", 2, 3)
         }
     }
