@@ -6312,7 +6312,7 @@ data:extend({
         results =
         {
             PM.product("pm-neodymium-magnet", 4),
-            PM.catalyst_chance("pm-saw", 2, 0.9),
+            PM.catalyst_chance("pm-saw", 2, 0.9, 2),
             PM.catalyst("pm-ferrite-magnet", 4, 4)
         }
     }
