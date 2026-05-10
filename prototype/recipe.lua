@@ -769,7 +769,7 @@ data:extend({
     results =
     {
       PM.product("pm-aluminium-gallium-indium-phosphide", 6),
-      PM.product_chance("pm-gallium-arsenide", 1, 0.6)
+      PM.catalyst_chance("pm-gallium-arsenide", 1, 0.6, 1)
     }
   },
   {
