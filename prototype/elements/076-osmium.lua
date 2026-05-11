@@ -194,7 +194,7 @@ data:extend({
         results =
         {
           PM.product("pm-osmiridium-plate", 5),
-          PM.product_chance("pm-crucible", 1, 0.75)
+          PM.catalyst_chance("pm-crucible", 1, 0.75, 1)
         }
     },
 
