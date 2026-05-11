@@ -235,7 +235,7 @@ data:extend({
     results =
     {
       PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
-      PM.catalyst_range("pm-hydrochloric-acid", 7.5, 10, 10, "fluid"),
+      PM.product_range("pm-hydrochloric-acid", 7.5, 10, "fluid"),
     }
   },
   {
