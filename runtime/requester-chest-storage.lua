@@ -1,11 +1,12 @@
 ---@type event_handler
 local handler = {events = {}}
 
+local DEFAULT_SIZE = 1
 
 
 ---@param technologies LuaCustomTable<string,LuaTechnology>
 local function get_current_size(technologies)
-    local size = 1 -- NOTE: This is the default size
+    local size = DEFAULT_SIZE
     for _, tech in pairs(technologies) do
         if tech.researched then
             size = size + PM.get_custom_modification("pm-requester-chest-inventory-size", tech)
@@ -92,12 +93,12 @@ handler.on_configuration_changed = setup_logistic_storage
 
 handler.events[defines.events.on_force_created] = function (event)
     local new_force = event.force.index
-    storage.logistic_chest_overrides[new_force] = get_current_size{} -- HACK: To use the same default as before
+    storage.logistic_chest_overrides[new_force] = DEFAULT_SIZE
     storage.logistic_chests[new_force] = {}
 end
 handler.events[defines.events.on_force_reset] = function (event)
     local reset_force = event.force.index
-    storage.logistic_chest_overrides[reset_force] = get_current_size{}
+    storage.logistic_chest_overrides[reset_force] = DEFAULT_SIZE
     update_overrides(storage.logistic_chests[reset_force], storage.logistic_chest_overrides[reset_force])
 end
 
