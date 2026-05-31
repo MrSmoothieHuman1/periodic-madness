@@ -34,7 +34,16 @@ local function set_override(entity, override)
     }
 end
 
-local function update_overrides(chests, override)
+---@param force_index uint
+---@param override uint
+---@param cumulative? boolean Whether or not the override is added to pre-existing override
+local function update_overrides(force_index, override, cumulative)
+    if cumulative then
+        override = override + storage.logistic_chest_overrides[force_index]
+    end
+    storage.logistic_chest_overrides[force_index] = override
+
+    local chests = storage.logistic_chests[force_index]
     for unit_number, entity in pairs(chests) do
         if entity.valid then
             set_override(entity, override)
@@ -42,14 +51,6 @@ local function update_overrides(chests, override)
             chests[unit_number] = nil
         end
     end
-end
-
----@param change int
----@param force uint
-local function update_all_chests(change, force)
-    local cur_overide = storage.logistic_chest_overrides[force] + change
-    storage.logistic_chest_overrides[force] = cur_overide
-    update_overrides(storage.logistic_chests[force], cur_overide)
 end
 
 local function setup_logistic_storage()
@@ -82,9 +83,7 @@ local function setup_logistic_storage()
     local overrides = {}
     storage.logistic_chest_overrides = overrides
     for _, force in pairs(game.forces) do
-        local force_index = force.index
-        overrides[force_index] = get_current_size(force.technologies)
-        update_overrides(storage.logistic_chests[force_index], overrides[force_index])
+        update_overrides(force.index, get_current_size(force.technologies))
     end
 end
 
@@ -97,9 +96,7 @@ handler.events[defines.events.on_force_created] = function (event)
     storage.logistic_chests[new_force] = {}
 end
 handler.events[defines.events.on_force_reset] = function (event)
-    local reset_force = event.force.index
-    storage.logistic_chest_overrides[reset_force] = DEFAULT_SIZE
-    update_overrides(storage.logistic_chests[reset_force], storage.logistic_chest_overrides[reset_force])
+    update_overrides(event.force.index, DEFAULT_SIZE)
 end
 
 handler.events[defines.events.on_forces_merged] = function (event)
@@ -138,19 +135,15 @@ end
 handler.events[defines.events.on_research_finished] = function (event)
     local increase = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if increase == 0 then return end
-    update_all_chests(increase, event.research.force.index)
+    update_overrides(event.research.force.index, increase, true)
 end
 handler.events[defines.events.on_research_reversed] = function (event)
     local decrease = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if decrease == 0 then return end
-    update_all_chests(-decrease, event.research.force.index)
+    update_overrides(event.research.force.index, -decrease, true)
 end
 handler.events[defines.events.on_technology_effects_reset] = function (event)
-    local override = get_current_size(event.force.technologies)
-    local force_index = event.force.index
-
-    storage.logistic_chest_overrides[force_index] = override
-    update_overrides(storage.logistic_chests[force_index], override)
+    update_overrides(event.force.index, get_current_size(event.force.technologies))
 end
 
 --TODO: Add a cheat command to change the overrides of chests
