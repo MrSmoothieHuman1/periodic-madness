@@ -147,7 +147,7 @@ data:extend({
     {
       PM.modify("laboratory-productivity", 0.1)
     },
-    prerequisites = {"pm-research-productivity-3", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    prerequisites = {"pm-research-productivity-4", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =
     {
       count = 1250,

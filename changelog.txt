@@ -52,6 +52,7 @@ Date: 2025-12-19
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
     - Fixed ammonium chloride seperation icon being old and weird-looking.
+    - Fixed research productivity 5 depending on level 3.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.008
