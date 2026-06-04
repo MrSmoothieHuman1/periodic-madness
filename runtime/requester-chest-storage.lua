@@ -3,6 +3,16 @@ local handler = {events = {}}
 
 local DEFAULT_SIZE = 1
 
+---@param pos1 MapPosition
+---@param pos2 MapPosition
+---@return boolean
+local function position_equal(pos1, pos2)
+    if pos1 == pos2 then return true end
+    return (
+        (pos1.x or pos1[1]) == (pos2.x or pos2[1]) and
+        (pos1.y or pos1[2]) == (pos2.y or pos2[2])
+    )
+end
 
 ---@param technologies LuaCustomTable<string,LuaTechnology>
 local function get_current_size(technologies)
@@ -16,7 +26,7 @@ local function get_current_size(technologies)
 end
 
 ---@param entity LuaEntity
----@param override int
+---@param override int?
 local function set_override(entity, override)
     entity.set_inventory_size_override(
         defines.inventory.chest,
@@ -85,6 +95,9 @@ local function setup_logistic_storage()
     for _, force in pairs(game.forces) do
         update_overrides(force.index, get_current_size(force.technologies))
     end
+
+    -- ---@type table<uint, {unit_number:uint, surface:LuaSurface, position:MapPosition}>
+    -- storage.logistic_chest_pre_replace = storage.logistic_chest_pre_replace or {}
 end
 
 handler.on_init = setup_logistic_storage
@@ -115,10 +128,45 @@ handler.events[defines.events.on_forces_merged] = function (event)
     end
 end
 
+-- handler.events[defines.events.on_pre_build] = function (event)
+--     local player = game.get_player(event.player_index)
+--     ---@cast player -?
+--     local surface = player.surface
+--     -- FIX ME: This does not support quality
+--     local old_entity = surface.find_entity("requester-chest", event.position)
+--     if not old_entity then return end
+--     script.register_on_object_destroyed(old_entity) -- Just in case
+
+--     storage.logistic_chest_pre_replace[old_entity.unit_number] = {
+--         surface = surface,
+--         unit_number = old_entity.unit_number,
+--         position = event.position,
+--         player_index = event.player_index,
+--     }
+-- end
+
+local container_types = {
+    ["container"] = true,
+    ["logistic-container"] = true,
+}
+
 PM.compound_events.built_events(handler.events, function (event)
     local tracked_entity = event.entity or event.destination
-    if tracked_entity.name ~= "requester-chest" then return end
     local force = tracked_entity.force_index
+
+    if tracked_entity.name ~= "requester-chest" then
+        if not container_types[tracked_entity.type] then return end
+        -- local pre_info = storage.logistic_chest_pre_replace[tracked_entity.unit_number]
+        -- if not pre_info then return end
+        -- -- Sanity check
+        -- if not position_equal(tracked_entity.position, pre_info.position) then return end
+
+        local overide = tracked_entity.get_inventory_size_override(defines.inventory.chest)
+        if overide ~= storage.logistic_chest_overrides[force] then return end
+        -- FIXME: This can break on another mod coincidentally using the same override as us.
+        set_override(tracked_entity, nil)
+        return
+    end
 
     script.register_on_object_destroyed(tracked_entity)
     storage.logistic_chests[force][tracked_entity.unit_number] = tracked_entity
@@ -130,6 +178,7 @@ handler.events[defines.events.on_object_destroyed] = function (event)
     for _, chests in pairs(storage.logistic_chests) do
         chests[event.useful_id] = nil
     end
+    -- storage.logistic_chest_pre_replace[event.useful_id] = nil
 end
 
 handler.events[defines.events.on_research_finished] = function (event)
