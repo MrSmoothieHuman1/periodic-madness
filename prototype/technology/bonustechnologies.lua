@@ -2289,6 +2289,7 @@ data:extend({
     {
         PM.custom_modifier("pm-requester-chest-inventory-size", 1) -- 2 total
     },
+    upgrade = true,
     prerequisites = {"logistic-system"},
     unit =
     {
@@ -2315,6 +2316,7 @@ data:extend({
     {
         PM.custom_modifier("pm-requester-chest-inventory-size", 1) -- 3 total
     },
+    upgrade = true,
     prerequisites = {"pm-requester-chest-inventory-bonus-capacity-1", "pm-alkaline-earth-metal-pack-unlock"},
     unit =
     {
@@ -2342,6 +2344,7 @@ data:extend({
     {
         PM.custom_modifier("pm-requester-chest-inventory-size", 2) -- 5 total
     },
+    upgrade = true,
     prerequisites = {"pm-requester-chest-inventory-bonus-capacity-2", "pm-noble-gas-pack-unlock"},
     unit =
     {
@@ -2371,6 +2374,7 @@ data:extend({
     {
         PM.custom_modifier("pm-requester-chest-inventory-size", 4) --9 total
     },
+    upgrade = true,
     prerequisites = {"pm-requester-chest-inventory-bonus-capacity-3", "pm-lanthanide-science-pack"},
     unit =
     {
