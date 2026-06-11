@@ -3,7 +3,14 @@ data:extend({
       type = "item",
       name = "pm-euxenite",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/rubidium-alum.png",
+      icon = "__periodic-madness__/graphics/icons/ores/euxenite.png",
+      pictures =
+      {
+        { filename = "__periodic-madness__/graphics/icons/ores/euxenite.png",   size = 64, scale = 0.5 },
+        { filename = "__periodic-madness__/graphics/icons/ores/euxenite-2.png", size = 64, scale = 0.45 },
+        { filename = "__periodic-madness__/graphics/icons/ores/euxenite-3.png", size = 64, scale = 0.5 },
+        --{ filename = "__periodic-madness__/graphics/icons/ores/euxenite-4.png", size = 64, scale = 0.44 },
+      },
       subgroup = "pm-erbium-la",
       order = "a",
       stack_size = 100
