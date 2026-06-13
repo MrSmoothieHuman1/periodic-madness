@@ -61,6 +61,28 @@ local function update_overrides(force_index, override, cumulative)
             chests[unit_number] = nil
         end
     end
+
+    local force = game.forces[force_index]
+    if not force then error("Overrides updated for a force that doesn't exist?") end
+
+    -- Only do this if it becomes a bonus (per multiple requester types) instead of a flat value
+    -- Otherwise, maybe only show it when requester chests are unlocked?
+    -- if override == DEFAULT_SIZE then
+    --     remote.call("custom-bonus-gui", "remove", force, "pm-requester-chest-inventory-size")
+    --     return
+    -- end
+
+    remote.call("custom-bonus-gui", "set", force, {
+        name = "pm-requester-chest-inventory-size",
+        mod_name = script.mod_name,
+        order = "a", -- TODO: Actually choose this I guess
+        icons = {
+            {type = "entity", name = "requester-chest"},
+        },
+        texts = {
+            {"", {"gui-bonus.pm-requester-chest-inventory-size"}, ": "..override}
+        }
+    })
 end
 
 local function setup_logistic_storage()
