@@ -204,7 +204,7 @@ data:extend({
       PM.product("pm-rubidium", 1),
       PM.product_chance("pm-rubidium", 1, 0.5),
       PM.product_range("pm-sulfur-dioxide", 2, 6, "fluid"),
-      PM.product_range("pm-aluminium-plate", 0, 5),
+      PM.catalyst_range("pm-aluminium-plate", 0, 5, 5),
     }
   } --[[@as data.RecipePrototype]]
 })
