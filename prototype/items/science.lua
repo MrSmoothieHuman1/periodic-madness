@@ -151,6 +151,8 @@ data:extend({
 
  data.raw["recipe"]["automation-science-pack"].energy_required = 6
 
+data.raw["item"]["logistic-science-pack"].icon = "__periodic-madness__/graphics/icons/science/advanced-transition-metal-pack.png"
+data.raw["item"]["logistic-science-pack"].icon_size = 64
 data.raw["recipe"]["logistic-science-pack"].energy_required = 6
 data.raw["recipe"]["logistic-science-pack"].results =
 {
@@ -162,11 +164,11 @@ data.raw["recipe"]["chemical-science-pack"].results =
 {
   PM.product("chemical-science-pack", 1)
 }
-data.raw["tool"]["chemical-science-pack"].order = "e"
-data.raw["tool"]["chemical-science-pack"].icon ="__periodic-madness__/graphics/icons/science/reactive-non-metals-pack.png"
+data.raw["item"]["chemical-science-pack"].order = "e"
+data.raw["item"]["chemical-science-pack"].icon ="__periodic-madness__/graphics/icons/science/reactive-non-metals-pack.png"
 
-data.raw["tool"]["production-science-pack"].order = "x"
-data.raw["tool"]["utility-science-pack"].order = "xa"
+data.raw["item"]["production-science-pack"].order = "x"
+data.raw["item"]["utility-science-pack"].order = "xa"
 
-data.raw["tool"]["space-science-pack"].subgroup = "pm-research-data"
-data.raw["tool"]["space-science-pack"].icon = "__periodic-madness__/graphics/icons/science/space-research-data.png"
+data.raw["item"]["space-science-pack"].subgroup = "pm-research-data"
+data.raw["item"]["space-science-pack"].icon = "__periodic-madness__/graphics/icons/science/space-research-data.png"

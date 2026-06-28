@@ -4,7 +4,7 @@ data:extend({
     name = "pm-seawater-sulfide-evaporation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/seawater-sulfide-evaporation.png",
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     subgroup = "pm-acidic-water",
     order = "a",
     enabled = true,
@@ -27,7 +27,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/sea-salt-seawater.png",
     enabled = false,
     energy_required = 4,
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     subgroup = "pm-acidic-water",
     order = "b",
     ingredients =
@@ -45,7 +45,7 @@ data:extend({
     name = "pm-water-voiding",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/water-voiding.png",
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     subgroup = "pm-acidic-water",
     order = "e",
     ingredients =
@@ -72,7 +72,7 @@ data:extend({
     },
     subgroup = "pm-oxygen-rnm",
     order = "ea",
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     enabled = false,
     ingredients =
     {
@@ -96,7 +96,7 @@ data:extend({
         icon_size = 64,
       },
     },
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     subgroup = "pm-chlorine-rnm",
     order = "ea",
     enabled = false,
@@ -122,7 +122,7 @@ data:extend({
         icon_size = 64,
       },
     },
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     subgroup = "pm-hydrogen-rnm",
     order = "a",
     enabled = false,
@@ -140,7 +140,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/steam-condensation.png",
     subgroup = "pm-acidic-water",
     order = "f",
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     energy_required = 1,
     ingredients =
     {

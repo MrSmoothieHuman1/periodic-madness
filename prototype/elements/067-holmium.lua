@@ -98,7 +98,7 @@ data:extend({
         name = "pm-monazite-sand",
         enabled = false,
         energy_required = 4,
-        category = "pm-crushing",
+        categories = {"pm-crushing"},
         ingredients =
         {
             PM.ingredient("pm-pure-monazite", 3),
@@ -115,7 +115,7 @@ data:extend({
         name = "pm-monazite-sand-seperation",
         enabled = false,
         energy_required = 12,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         subgroup = "pm-holmium-la",
         order = "b",
         main_product = "pm-holmium-fluoride",
@@ -139,7 +139,7 @@ data:extend({
         name = "pm-washed-monazite-sand",
         enabled = false,
         energy_required = 8,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         ingredients =
         {
             PM.ingredient("pm-monazite-sand", 12),
@@ -156,7 +156,7 @@ data:extend({
         name = "pm-washed-monazite-sand-seperation",
         enabled = false,
         energy_required = 6,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         subgroup = "pm-holmium-la",
         order = "d",
         main_product = "pm-holmium-fluoride",
@@ -180,7 +180,7 @@ data:extend({
         name = "pm-holmium-enriched-monazite-sand",
         enabled = false,
         energy_required = 16,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         ingredients =
         {
             PM.ingredient("pm-washed-monazite-sand", 8),
@@ -197,7 +197,7 @@ data:extend({
         name = "pm-holmium-enriched-monazite-sand-seperation",
         enabled = false,
         energy_required = 3,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         subgroup = "pm-holmium-la",
         order = "f",
         main_product = "pm-holmium-fluoride",
@@ -221,7 +221,7 @@ data:extend({
         name = "pm-holmium-from-holmium-fluoride",
         enabled = false,
         energy_required = 6,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-holmium-la",
         order = "g",
         allow_productivity = true,
@@ -244,7 +244,7 @@ data:extend({
         name = "pm-holmium-from-holmium-chloride",
         enabled = false,
         energy_required = 6,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-holmium-la",
         order = "ga",
         allow_productivity = true,
@@ -267,7 +267,7 @@ data:extend({
         name = "pm-holmium-plate",
         enabled = false,
         energy_required = 6.4,
-        category = "smelting",
+        categories = {"smelting"},
         allow_productivity = true,
         ingredients =
         {

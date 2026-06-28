@@ -90,7 +90,7 @@ data:extend({
     name = "pm-basic-pig-iron",
     enabled = false,
     energy_required = 2,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-iron-tm",
     order = "a",
     main_product = "pm-pig-iron",
@@ -122,7 +122,7 @@ data:extend({
     },
     subgroup = "pm-iron-tm",
     order = "b",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     enabled = false,
     energy_required = 2,
     crafting_machine_tint =
@@ -161,7 +161,7 @@ data:extend({
     },
     subgroup = "pm-iron-tm",
     order = "c",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },     --main visible colour
@@ -201,7 +201,7 @@ data:extend({
     },
     subgroup = "pm-iron-tm",
     order = "d",
-    category = "smelting",
+    categories = {"smelting"},
     enabled = true,
     energy_required = 3.2,
     ingredients =
@@ -233,7 +233,7 @@ data:extend({
     },
     subgroup = "pm-iron-tm",
     order = "f",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -252,7 +252,7 @@ data:extend({
     name = "pm-iron-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/iron-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-iron-tm",
     order = "g",
     energy_required = 9,
@@ -276,7 +276,7 @@ data:extend({
     energy_required = 18,
     subgroup = "pm-iron-tm",
     order = "h",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     ingredients =
     {
       PM.ingredient("pm-oxygen-gas", 30, "fluid"),
@@ -295,7 +295,7 @@ data:extend({
     type = "recipe",
     name = "pm-pig-iron",
     enabled = false,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-advanced-iron-tm",
     order = "a",
     energy_required = 3,
@@ -320,7 +320,7 @@ data:extend({
         primary = {0.627, 0.761, 0.757}
     },
     enabled = false,
-    category = "pm-blast-smelting",
+    categories = {"pm-blast-smelting"},
     subgroup = "pm-advanced-iron-tm",
     order = "b",
     energy_required = 3,
@@ -344,7 +344,7 @@ data:extend({
     type = "recipe",
     name = "pm-wrought-iron",
     enabled = false,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-advanced-iron-tm",
     order = "c",
     energy_required = 6,
@@ -365,7 +365,7 @@ data:extend({
     type = "recipe",
     name = "pm-wrought-iron-seperation",
     enabled = false,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-advanced-iron-tm",
     order = "d",
     energy_required = 12,

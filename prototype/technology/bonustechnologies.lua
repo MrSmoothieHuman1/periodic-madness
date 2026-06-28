@@ -1166,7 +1166,7 @@ data:extend({
   {
     {
       type = "ammo-damage",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.50
     },
     {
@@ -1176,12 +1176,12 @@ data:extend({
     },
     {
       type = "ammo-damage",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.50
     },
     {
       type = "ammo-damage",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.2
     },
   },
@@ -1209,7 +1209,7 @@ data:extend({
   {
     {
       type = "ammo-damage",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.50
     },
     {
@@ -1219,12 +1219,12 @@ data:extend({
     },
     {
       type = "ammo-damage",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.50
     },
     {
       type = "ammo-damage",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.25
     },
   },
@@ -1253,7 +1253,7 @@ data:extend({
   {
     {
       type = "ammo-damage",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.6
     },
     {
@@ -1263,12 +1263,12 @@ data:extend({
     },
     {
       type = "ammo-damage",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.6
     },
     {
       type = "ammo-damage",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.25
     },
   },
@@ -1297,7 +1297,7 @@ data:extend({
   {
     {
       type = "ammo-damage",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.75
     },
     {
@@ -1307,12 +1307,12 @@ data:extend({
     },
     {
       type = "ammo-damage",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.75
     },
     {
       type = "ammo-damage",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.30
     },
   },
@@ -1345,7 +1345,7 @@ data:extend({
   {
     {
       type = "ammo-damage",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.25
     },
     {
@@ -1355,12 +1355,12 @@ data:extend({
     },
     {
       type = "ammo-damage",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.25
     },
     {
       type = "ammo-damage",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.20
     },
   },
@@ -1397,22 +1397,22 @@ data:extend({
   {
     {
       type = "gun-speed",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.25
     },
     {
       type = "gun-speed",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.25
     },
     {
       type = "gun-speed",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.15
     },
     {
       type = "gun-speed",
-      ammo_category = "rocket",
+      ammo_categories = {"rocket"},
       modifier = 0.25
     }
   },
@@ -1440,22 +1440,22 @@ data:extend({
   {
     {
       type = "gun-speed",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.25
     },
     {
       type = "gun-speed",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.25
     },
     {
       type = "gun-speed",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.2
     },
     {
       type = "gun-speed",
-      ammo_category = "rocket",
+      ammo_categories = {"rocket"},
       modifier = 0.3
     }
   },
@@ -1483,22 +1483,22 @@ data:extend({
   {
     {
       type = "gun-speed",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.3
     },
     {
       type = "gun-speed",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.3
     },
     {
       type = "gun-speed",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.2
     },
     {
       type = "gun-speed",
-      ammo_category = "rocket",
+      ammo_categories = {"rocket"},
       modifier = 0.3
     }
   },
@@ -1527,22 +1527,22 @@ data:extend({
   {
     {
       type = "gun-speed",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.3
     },
     {
       type = "gun-speed",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.3
     },
     {
       type = "gun-speed",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.2
     },
     {
       type = "gun-speed",
-      ammo_category = "rocket",
+      ammo_categories = {"rocket"},
       modifier = 0.35
     }
   },
@@ -1571,22 +1571,22 @@ data:extend({
   {
     {
       type = "gun-speed",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.5
     },
     {
       type = "gun-speed",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.5
     },
     {
       type = "gun-speed",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.25
     },
     {
       type = "gun-speed",
-      ammo_category = "rocket",
+      ammo_categories = {"rocket"},
       modifier = 0.45
     }
   },
@@ -1619,22 +1619,22 @@ data:extend({
   {
     {
       type = "gun-speed",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       modifier = 0.5
     },
     {
       type = "gun-speed",
-      ammo_category = "shotgun-shell",
+      ammo_categories = {"shotgun-shell"},
       modifier = 0.5
     },
     {
       type = "gun-speed",
-      ammo_category = "pm-shotgun-slug",
+      ammo_categories = {"pm-shotgun-slug"},
       modifier = 0.5
     },
     {
       type = "gun-speed",
-      ammo_category = "rocket",
+      ammo_categories = {"rocket"},
       modifier = 0.70
     }
   },
@@ -1670,17 +1670,17 @@ data:extend({
     {
       {
         type = "ammo-damage",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.25
       },
       {
         type = "ammo-damage",
-        ammo_category = "electric",
+        ammo_categories = {"electric"},
         modifier = 0.2
       },
       {
         type = "ammo-damage",
-        ammo_category = "beam",
+        ammo_categories = {"beam"},
         modifier = 0.2
       }
     },
@@ -1713,17 +1713,17 @@ data:extend({
     {
       {
         type = "ammo-damage",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.25
       },
       {
         type = "ammo-damage",
-        ammo_category = "electric",
+        ammo_categories = {"electric"},
         modifier = 0.2
       },
       {
         type = "ammo-damage",
-        ammo_category = "beam",
+        ammo_categories = {"beam"},
         modifier = 0.2
       }
     },
@@ -1759,7 +1759,7 @@ data:extend({
     {
       {
         type = "gun-speed",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.8
       }
     },
@@ -1792,7 +1792,7 @@ data:extend({
     {
       {
         type = "gun-speed",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 1
       }
     },
@@ -2584,7 +2584,7 @@ data:extend({
     {
       {
         type = "ammo-damage",
-        ammo_category = "flamethrower",
+        ammo_categories = {"flamethrower"},
         modifier = 0.35
       },
       {
@@ -2622,7 +2622,7 @@ data:extend({
     {
       {
         type = "ammo-damage",
-        ammo_category = "flamethrower",
+        ammo_categories = {"flamethrower"},
         modifier = 0.2
       },
       {
@@ -2877,7 +2877,7 @@ data.raw["technology"]["physical-projectile-damage-1"].effects =
 {
   {
     type = "ammo-damage",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.1
   },
   {
@@ -2887,7 +2887,7 @@ data.raw["technology"]["physical-projectile-damage-1"].effects =
   },
   {
     type = "ammo-damage",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.1
   },
 }
@@ -2895,7 +2895,7 @@ data.raw["technology"]["physical-projectile-damage-2"].effects =
 {
   {
     type = "ammo-damage",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.2
   },
   {
@@ -2905,7 +2905,7 @@ data.raw["technology"]["physical-projectile-damage-2"].effects =
   },
   {
     type = "ammo-damage",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.2
   },
 }
@@ -2920,7 +2920,7 @@ data.raw["technology"]["physical-projectile-damage-3"].effects =
 {
   {
     type = "ammo-damage",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.2
   },
   {
@@ -2930,12 +2930,12 @@ data.raw["technology"]["physical-projectile-damage-3"].effects =
   },
   {
     type = "ammo-damage",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.2
   },
   {
     type = "ammo-damage",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.1
   },
 }
@@ -2950,7 +2950,7 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
 {
   {
     type = "ammo-damage",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.3
   },
   {
@@ -2960,12 +2960,12 @@ data.raw["technology"]["physical-projectile-damage-4"].effects =
   },
   {
     type = "ammo-damage",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.3
   },
   {
     type = "ammo-damage",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.1
   },
 }
@@ -2982,7 +2982,7 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
 {
   {
     type = "ammo-damage",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.3
   },
   {
@@ -2992,12 +2992,12 @@ data.raw["technology"]["physical-projectile-damage-5"].effects =
   },
   {
     type = "ammo-damage",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.3
   },
   {
     type = "ammo-damage",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.15
   },
 }
@@ -3014,7 +3014,7 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
 {
   {
     type = "ammo-damage",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.4
   },
   {
@@ -3024,12 +3024,12 @@ data.raw["technology"]["physical-projectile-damage-6"].effects =
   },
   {
     type = "ammo-damage",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.4
   },
   {
     type = "ammo-damage",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.15
   },
 }
@@ -3047,7 +3047,7 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
 {
   {
     type = "ammo-damage",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.4
   },
   {
@@ -3057,12 +3057,12 @@ data.raw["technology"]["physical-projectile-damage-7"].effects =
   },
   {
     type = "ammo-damage",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.4
   },
   {
     type = "ammo-damage",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.2
   },
 }
@@ -3073,12 +3073,12 @@ data.raw["technology"]["weapon-shooting-speed-1"].effects =
 {
   {
     type = "gun-speed",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.1
   },
   {
     type = "gun-speed",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.1
   },
 }
@@ -3086,12 +3086,12 @@ data.raw["technology"]["weapon-shooting-speed-2"].effects =
 {
   {
     type = "gun-speed",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.1
   },
   {
     type = "gun-speed",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.1
   },
 }
@@ -3106,17 +3106,17 @@ data.raw["technology"]["weapon-shooting-speed-3"].effects =
 {
   {
     type = "gun-speed",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.15
   },
   {
     type = "gun-speed",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.15
   },
   {
     type = "gun-speed",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.05
   },
 }
@@ -3131,22 +3131,22 @@ data.raw["technology"]["weapon-shooting-speed-4"].effects =
 {
   {
     type = "gun-speed",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.15
   },
   {
     type = "gun-speed",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.15
   },
   {
     type = "gun-speed",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.1
   },
   {
     type = "gun-speed",
-    ammo_category = "rocket",
+    ammo_categories = {"rocket"},
     modifier = 0.2
   }
 }
@@ -3162,22 +3162,22 @@ data.raw["technology"]["weapon-shooting-speed-5"].effects =
 {
   {
     type = "gun-speed",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.2
   },
   {
     type = "gun-speed",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.2
   },
   {
     type = "gun-speed",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.1
   },
   {
     type = "gun-speed",
-    ammo_category = "rocket",
+    ammo_categories = {"rocket"},
     modifier = 0.2
   }
 }
@@ -3194,22 +3194,22 @@ data.raw["technology"]["weapon-shooting-speed-6"].effects =
 {
   {
     type = "gun-speed",
-    ammo_category = "bullet",
+    ammo_categories = {"bullet"},
     modifier = 0.2
   },
   {
     type = "gun-speed",
-    ammo_category = "shotgun-shell",
+    ammo_categories = {"shotgun-shell"},
     modifier = 0.2
   },
   {
     type = "gun-speed",
-    ammo_category = "pm-shotgun-slug",
+    ammo_categories = {"pm-shotgun-slug"},
     modifier = 0.15
   },
   {
     type = "gun-speed",
-    ammo_category = "rocket",
+    ammo_categories = {"rocket"},
     modifier = 0.25
   }
 }
@@ -3310,17 +3310,17 @@ data.raw["technology"]["laser-weapons-damage-3"].effects =
 {
     {
         type = "ammo-damage",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.3
     },
     {
         type = "ammo-damage",
-        ammo_category = "electric",
+        ammo_categories = {"electric"},
         modifier = 0.2
     },
     {
         type = "ammo-damage",
-        ammo_category = "beam",
+        ammo_categories = {"beam"},
         modifier = 0.2
     }
 }
@@ -3337,17 +3337,17 @@ data.raw["technology"]["laser-weapons-damage-4"].effects =
 {
     {
         type = "ammo-damage",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.3
     },
     {
         type = "ammo-damage",
-        ammo_category = "electric",
+        ammo_categories = {"electric"},
         modifier = 0.2
     },
     {
         type = "ammo-damage",
-        ammo_category = "beam",
+        ammo_categories = {"beam"},
         modifier = 0.2
     }
 }
@@ -3364,17 +3364,17 @@ data.raw["technology"]["laser-weapons-damage-5"].effects =
 {
     {
         type = "ammo-damage",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.4
     },
     {
         type = "ammo-damage",
-        ammo_category = "electric",
+        ammo_categories = {"electric"},
         modifier = 0.3
     },
     {
         type = "ammo-damage",
-        ammo_category = "beam",
+        ammo_categories = {"beam"},
         modifier = 0.3
     }
 }
@@ -3392,17 +3392,17 @@ data.raw["technology"]["laser-weapons-damage-6"].effects =
 {
     {
         type = "ammo-damage",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.4
     },
     {
         type = "ammo-damage",
-        ammo_category = "electric",
+        ammo_categories = {"electric"},
         modifier = 0.3
     },
     {
         type = "ammo-damage",
-        ammo_category = "beam",
+        ammo_categories = {"beam"},
         modifier = 0.3
     }
 }
@@ -3421,17 +3421,17 @@ data.raw["technology"]["laser-weapons-damage-7"].effects =
 {
     {
         type = "ammo-damage",
-        ammo_category = "laser",
+        ammo_categories = {"laser"},
         modifier = 0.5
     },
     {
         type = "ammo-damage",
-        ammo_category = "electric",
+        ammo_categories = {"electric"},
         modifier = 0.4
     },
     {
         type = "ammo-damage",
-        ammo_category = "beam",
+        ammo_categories = {"beam"},
         modifier = 0.4
     }
 }

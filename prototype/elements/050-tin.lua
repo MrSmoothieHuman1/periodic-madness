@@ -86,7 +86,7 @@ data:extend({
     },
     subgroup = "pm-tin-ptm",
     order = "a",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },         --main visible colour
@@ -112,7 +112,7 @@ data:extend({
     name = "pm-tin-chunks",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/tin-chunks.png",
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-tin-ptm",
     order = "c",
     energy_required = 8,
@@ -142,7 +142,7 @@ data:extend({
         icon_size = 64,
       },
     },
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-tin-ptm",
     order = "d",
     energy_required = 6,
@@ -164,7 +164,7 @@ data:extend({
     name = "pm-tin-ore",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/tin-combining.png",
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-tin-ptm",
     order = "e",
     main_product = "pm-tin-ore",
@@ -200,7 +200,7 @@ data:extend({
     },
     subgroup = "pm-tin-ptm",
     order = "b",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },      --main visible colour
@@ -226,7 +226,7 @@ data:extend({
     name = "pm-tin-plate",
     subgroup = "pm-tin-ptm",
     order = "f",
-    category = "smelting",
+    categories = {"smelting"},
     energy_required = 3.2,
     enabled = false,
     allow_productivity = true,
@@ -255,7 +255,7 @@ data:extend({
     },
     subgroup = "pm-tin-ptm",
     order = "g",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -274,7 +274,7 @@ data:extend({
     name = "pm-tin-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/tin-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-tin-ptm",
     order = "h",
     energy_required = 9,

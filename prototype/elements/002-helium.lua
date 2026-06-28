@@ -47,7 +47,7 @@ data:extend({
     name = "pm-helium-gas",
     enabled = false,
     energy_required = 2,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     main_product = "pm-helium-gas",
     ingredients =
     {
@@ -79,7 +79,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 4,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-helium-nb",
     order = "c",
     ingredients =
@@ -109,7 +109,7 @@ data:extend({
         scale = 0.4
       },
     },
-  category = "pm-atmospheric-condensing",
+  categories = {"pm-atmospheric-condensing"},
   subgroup = "pm-helium-nb",
   order = "x",
   enabled = false,

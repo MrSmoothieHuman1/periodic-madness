@@ -25,7 +25,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/charged-voltatic-pile.png",
     subgroup = "pm-batteries",
     order = "g",
-    category = "pm-voltatic-charging",
+    categories = {"pm-voltatic-charging"},
     enabled = false,
     energy_required = 1,
     ingredients =
@@ -60,7 +60,7 @@ data:extend({
     name = "pm-copper-disk-anodization",
     enabled = false,
     energy_required = 3.2,
-    category = "smelting",
+    categories = {"smelting"},
     subgroup = "pm-batteries",
     order = "c",
     ingredients =
@@ -111,7 +111,7 @@ data:extend({
     name = "pm-zinc-disk-cathodization",
     enabled = false,
     energy_required = 3.2,
-    category = "smelting",
+    categories = {"smelting"},
     subgroup = "pm-batteries",
     order = "d",
     ingredients =
@@ -128,7 +128,7 @@ data:extend({
     name = "pm-vanadium-oxide",
     enabled = false,
     energy_required = 2,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-batteries",
     order = "i",
     allow_productivity = true,
@@ -147,7 +147,7 @@ data:extend({
     name = "pm-vanadium-oxide-positive-solution",
     enabled = false,
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-batteries",
     order = "j",
     ingredients =
@@ -165,7 +165,7 @@ data:extend({
     name = "pm-vanadium-oxide-negative-solution",
     enabled = false,
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-batteries",
     order = "k",
     ingredients =
@@ -200,7 +200,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-vanadium-redox-battery",
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-batteries",
     order = "l",
     energy_required = 6,
@@ -224,7 +224,7 @@ data:extend({
     name = "pm-ethylene-carbonate",
     enabled = false,
     energy_required = 4,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-batteries",
     order = "m",
     allow_productivity = true,
@@ -241,7 +241,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-ion-battery",
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-batteries",
     order = "n",
     energy_required = 6,
@@ -262,7 +262,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-sulfur-battery",
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-batteries",
     order = "o",
     energy_required = 6,
@@ -285,7 +285,7 @@ data:extend({
     name = "pm-lead-fluoride",
     enabled = false,
     energy_required = 3,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-batteries",
     order = "p",
     allow_productivity = true,
@@ -302,7 +302,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-selenium-sulfur-battery",
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-batteries",
     order = "q",
     energy_required = 6,
@@ -325,7 +325,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-charged-vanadium-redox-battery",
-    category = "pm-battery-charging",
+    categories = {"pm-battery-charging"},
     subgroup = "pm-batteries",
     order = "la",
     energy_required = 5,
@@ -344,7 +344,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-charged-lithium-sulfur-battery",
-    category = "pm-battery-charging",
+    categories = {"pm-battery-charging"},
     subgroup = "pm-batteries",
     order = "oa",
     energy_required = 2.5,
@@ -363,7 +363,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-vanadium-redox-battery-fixing",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-batteries",
     order = "lb",
     energy_required = 5,
@@ -382,7 +382,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-sulfur-battery-fixing",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-batteries",
     order = "ob",
     energy_required = 5,

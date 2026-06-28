@@ -17,7 +17,7 @@ data:extend({
         shift = { 0, -3 }
       },
     },
-    category = "smelting",
+    categories = {"smelting"},
     subgroup = "pm-glassing",
     order = "b",
     energy_required = 4.8,
@@ -31,7 +31,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-glass-pane",
-    category = "smelting",
+    categories = {"smelting"},
     subgroup = "pm-glassing",
     order = "b",
     energy_required = 3.2,
@@ -46,7 +46,7 @@ data:extend({
     type = "recipe",
     name = "pm-brass-plate",
     energy_required = 8,
-    category = "pm-alloying",
+    categories = {"pm-alloying"},
     subgroup = "pm-alloys",
     order = "c",
     enabled = false,
@@ -63,7 +63,7 @@ data:extend({
     type = "recipe",
     name = "pm-better-brass-plate",
     energy_required = 12,
-    category = "pm-alloying",
+    categories = {"pm-alloying"},
     subgroup = "pm-alloys",
     order = "ca",
     enabled = false,
@@ -83,7 +83,7 @@ data:extend({
     type = "recipe",
     name = "pm-stainless-steel-alloy",
     energy_required = 16,
-    category = "pm-alloying",
+    categories = {"pm-alloying"},
     subgroup = "pm-alloys",
     order = "d",
     enabled = false,
@@ -102,7 +102,7 @@ data:extend({
     type = "recipe",
     name = "pm-better-stainless-steel-alloy",
     energy_required = 16,
-    category = "pm-alloying",
+    categories = {"pm-alloying"},
     subgroup = "pm-alloys",
     order = "e",
     enabled = false,
@@ -122,7 +122,7 @@ data:extend({
     type = "recipe",
     name = "pm-better-steel-plate",
     energy_required = 8,
-    category = "pm-alloying",
+    categories = {"pm-alloying"},
     subgroup = "pm-alloys",
     order = "b",
     enabled = false,
@@ -141,7 +141,7 @@ data:extend({
     type = "recipe",
     name = "pm-kasethal-plate",
     energy_required = 24,
-    category = "pm-alloying",
+    categories = {"pm-alloying"},
     subgroup = "pm-alloys",
     order = "f",
     enabled = false,
@@ -160,7 +160,7 @@ data:extend({
 
 data.raw["recipe"]["copper-plate"].subgroup = "pm-copper-tm"
 data.raw["recipe"]["copper-plate"].order = "e"
-data.raw["recipe"]["steel-plate"].category = "pm-alloying"
+data.raw["recipe"]["steel-plate"].categories = {"pm-alloying"}
 data.raw["recipe"]["steel-plate"].subgroup = "pm-alloys"
 data.raw["recipe"]["steel-plate"].order = "a"
 data.raw["recipe"]["steel-plate"].energy_required = 8

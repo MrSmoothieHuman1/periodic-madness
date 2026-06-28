@@ -144,7 +144,7 @@ data:extend({
         name = "pm-euxenite",
         enabled = false,
         energy_required = 8,
-        category = "pm-acids",
+        categories = {"pm-acids"},
         allow_productivity = true,
         ingredients =
         {
@@ -162,7 +162,7 @@ data:extend({
         name = "pm-erbium-salts",
         enabled = false,
         energy_required = 4,
-        category = "pm-crystallisation",
+        categories = {"pm-crystallisation"},
         main_product = "pm-erbium-salts",
         ingredients =
         {
@@ -182,7 +182,7 @@ data:extend({
         name = "pm-erbium-salt-seperation",
         enabled = false,
         energy_required = 8,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         subgroup = "pm-erbium-la",
         order = "b",
         main_product = "pm-erbium-oxide",
@@ -218,7 +218,7 @@ data:extend({
         },
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-erbium-la",
         order = "c",
         allow_productivity = true,
@@ -254,7 +254,7 @@ data:extend({
         },
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-erbium-la",
         order = "d",
         allow_productivity = true,
@@ -290,7 +290,7 @@ data:extend({
         },
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-erbium-la",
         order = "e",
         allow_productivity = true,
@@ -311,7 +311,7 @@ data:extend({
         name = "pm-erbium-fluoride",
         enabled = false,
         energy_required = 5,
-        category = "pm-reverberatory-smelting",
+        categories = {"pm-reverberatory-smelting"},
         ingredients =
         {
             PM.ingredient("pm-impure-erbium", 6),
@@ -328,7 +328,7 @@ data:extend({
         name = "pm-molten-erbium",
         enabled = false,
         energy_required = 15,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         ingredients =
         {
             PM.ingredient("pm-erbium-fluoride", 5),
@@ -344,7 +344,7 @@ data:extend({
         name = "pm-erbium-plate",
         enabled = false,
         energy_required = 15,
-        category = "pm-coldening",
+        categories = {"pm-coldening"},
         main_product = "pm-erbium-plate",
         ingredients =
         {

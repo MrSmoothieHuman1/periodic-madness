@@ -105,8 +105,8 @@ data.raw["recipe"]["hydrogen-chloride-salt"].ingredients =
   PM.ingredient("pm-hydrogen", 10),
   PM.ingredient("sulfuric-acid", 5, "fluid")
 }
-data.raw["recipe"]["ferric-chloride"].category = "pm-acids"
-data.raw["recipe"]["ferric-chloride-hcl"].category = "pm-acids"
+data.raw["recipe"]["ferric-chloride"].categories = {"pm-acids"}
+data.raw["recipe"]["ferric-chloride-hcl"].categories = {"pm-acids"}
 data.raw["recipe"]["hydrogen-chloride-salt"].results =
 {
   PM.product("pm-hydrochloric-acid", 10, "fluid"),

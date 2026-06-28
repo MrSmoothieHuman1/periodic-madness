@@ -50,7 +50,7 @@ if mods["stack-inserters"] then
     }
     
     --MARK: Recipe changes
-    data.raw["recipe"]["stack-inserter"].category = "crafting-with-fluid"
+    data.raw["recipe"]["stack-inserter"].categories = {"crafting-with-fluid"}
     data.raw["recipe"]["stack-inserter"].ingredients =
     {
         PM.ingredient("bulk-inserter", 1),

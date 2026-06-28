@@ -7,7 +7,7 @@ data:extend({
     name = "pm-molten-cadmium-telluride",
     enabled = false,
     energy_required = 9,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     ingredients = 
     {
@@ -24,7 +24,7 @@ data:extend({
     name = "pm-cadmium-telluride",
     enabled = false,
     energy_required = 9,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     allow_productivity = true,
     main_product = "pm-cadmium-telluride",
     ingredients = 
@@ -42,7 +42,7 @@ data:extend({
     name = "pm-molten-uhrlumin-precursor-alloy",
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-uhrlumin",
     order = "a",
     allow_productivity = true,
@@ -75,7 +75,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening", --should be in one of the new furnaces
+    categories = {"pm-moltening"}, --should be in one of the new furnaces
     subgroup = "pm-uhrlumin",
     order = "aa",
     allow_productivity = true,
@@ -97,7 +97,7 @@ data:extend({
     name = "pm-uhrlumin-precursor-billet",
     enabled = false,
     energy_required = 13.5,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-uhrlumin",
     order = "b",
     allow_productivity = true,
@@ -115,7 +115,7 @@ data:extend({
     name = "pm-molten-uhrlumin",
     enabled = false,
     energy_required = 9,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-uhrlumin",
     order = "c",
     main_product = "pm-molten-uhrlumin",
@@ -137,7 +137,7 @@ data:extend({
     name = "pm-uhrlumin-plate",
     enabled = false,
     energy_required = 4.5,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-uhrlumin",
     order = "d",
     main_product = "pm-uhrlumin-plate",
@@ -158,7 +158,7 @@ data:extend({
     name = "pm-inconel-625-precursor-alloy",
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     ingredients =
     {
@@ -189,7 +189,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-inconel-625",
     order = "aa",
     allow_productivity = true,
@@ -211,7 +211,7 @@ data:extend({
     name = "pm-inconel-625-precursor-billet",
     enabled = false,
     energy_required = 13.5,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     allow_productivity = true,
     ingredients =
     {
@@ -227,7 +227,7 @@ data:extend({
     name = "pm-molten-inconel-625",
     enabled = false,
     energy_required = 9,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     main_product = "pm-molten-inconel-625",
     ingredients =
     {
@@ -247,7 +247,7 @@ data:extend({
     name = "pm-inconel-625-plate",
     enabled = false,
     energy_required = 4.5,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     main_product = "pm-inconel-625-plate",
     allow_productivity = true,
     ingredients =
@@ -266,7 +266,7 @@ data:extend({
     name = "pm-sterling-silver-precursor-alloy",
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     ingredients =
     {
@@ -284,7 +284,7 @@ data:extend({
     name = "pm-sterling-silver-precursor-billet",
     enabled = false,
     energy_required = 13.5,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     allow_productivity = true,
     ingredients =
     {
@@ -300,7 +300,7 @@ data:extend({
     name = "pm-molten-sterling-silver",
     enabled = false,
     energy_required = 9,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     main_product = "pm-molten-sterling-silver",
     ingredients =
     {
@@ -321,7 +321,7 @@ data:extend({
     name = "pm-sterling-silver-plate",
     enabled = false,
     energy_required = 9,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     main_product = "pm-sterling-silver-plate",
     allow_productivity = true,
     ingredients =
@@ -342,7 +342,7 @@ data:extend({
     name = "pm-molten-C103-precursor",
     enabled = false,
     energy_required = 9,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     ingredients =
     {
@@ -374,7 +374,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-c103",
     order = "ba",
     allow_productivity = true,
@@ -410,7 +410,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-c103",
     order = "bb",
     allow_productivity = true,
@@ -433,7 +433,7 @@ data:extend({
     name = "pm-C103-plate",
     enabled = false,
     energy_required = 36,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     allow_productivity = true,
     main_product = "pm-C103-plate",
     ingredients =
@@ -456,7 +456,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 36,
-    category = "pm-blast-smelting",
+    categories = {"pm-blast-smelting"},
     allow_productivity = true,
     ingredients =
     {
@@ -480,7 +480,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 36,
-    category = "pm-blast-smelting",
+    categories = {"pm-blast-smelting"},
     allow_productivity = true,
     ingredients =
     {
@@ -500,7 +500,7 @@ data:extend({
     name = "pm-molten-high-density-structure-mixture",
     enabled = false,
     energy_required = 48,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     main_product = "pm-molten-high-density-structure-mixture",
     ingredients =
     {
@@ -519,7 +519,7 @@ data:extend({
     name = "pm-molten-ReBCO-precursor-alloy",
     enabled = false,
     energy_required = 30,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     ingredients =
     {
@@ -537,7 +537,7 @@ data:extend({
     name = "pm-ReBCO-precursor-billet",
     enabled = false,
     energy_required = 30,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     ingredients =
     {
         PM.ingredient("pm-molten-ReBCO-precursor-alloy", 10, "fluid"),
@@ -553,7 +553,7 @@ data:extend({
     name = "pm-molten-ReBCO",
     enabled = false,
     energy_required = 45,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     main_product = "pm-molten-ReBCO",
     ingredients = 
     {
@@ -573,7 +573,7 @@ data:extend({
     name = "pm-ReBCO",
     enabled = false,
     energy_required = 45,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     allow_productivity = true,
     main_product = "pm-ReBCO",
     ingredients = 
@@ -592,7 +592,7 @@ data:extend({
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-glassing",
     order = "aa",
     ingredients =
@@ -622,7 +622,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 3,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-glassing",
     order = "ba",
     ingredients =
@@ -655,7 +655,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 9,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-borosilicate-glassing",
     order = "a",
     ingredients =
@@ -678,7 +678,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/borosillicate-glass-cooling.png",
     enabled = false,
     energy_required = 9,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-borosilicate-glassing",
     order = "b",
     ingredients =
@@ -708,7 +708,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 1,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-borosilicate-glassing",
     order = "d",
     ingredients =
@@ -727,7 +727,7 @@ data:extend({
     name = "pm-titanium-sapphire",
     enabled = false,
     energy_required = 10,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-sapphire-ptm",
     order = "d",
     ingredients = 
@@ -745,7 +745,7 @@ data:extend({
     name = "pm-molten-strontium-glass",
     enabled = false,
     energy_required = 9,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-intermediates",
     ingredients =
     {
@@ -763,7 +763,7 @@ data:extend({
     name = "pm-strontium-glass",
     enabled = false,
     energy_required = 9,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-intermediates",
     ingredients =
     {
@@ -779,7 +779,7 @@ data:extend({
     name = "pm-solid-mercury",
     enabled = false,
     energy_required = 3,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     ingredients = 
     {
       PM.ingredient("pm-liquid-mercury", 10, "fluid")
@@ -796,7 +796,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/solid-mercury-melting.png",
     enabled = false,
     energy_required = 3,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     ingredients =
     {
       PM.ingredient("pm-solid-mercury", 1)
@@ -826,7 +826,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-wires",
     order = "ab",
     allow_productivity = true,
@@ -860,7 +860,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-wires",
     order = "bb",
     allow_productivity = true,
@@ -895,7 +895,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-wires",
     order = "db",
     allow_productivity = true,
@@ -929,7 +929,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-gears",
     order = "ab",
     allow_productivity = true,
@@ -964,7 +964,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-gears",
     order = "bb",
     allow_productivity = true,
@@ -1000,7 +1000,7 @@ data:extend({
     },
     subgroup = "pm-glassing",
     order = "h",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -1036,7 +1036,7 @@ data:extend({
     },
     subgroup = "pm-glassing",
     order = "ha",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -1062,7 +1062,7 @@ data:extend({
     name = "pm-glass-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/glass-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-glassing",
     order = "i",
     energy_required = 9,
@@ -1100,7 +1100,7 @@ data:extend({
     },
     subgroup = "pm-alloys",
     order = "g",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     main_product = "pm-molten-solder",
@@ -1135,7 +1135,7 @@ data:extend({
     },
     subgroup = "pm-alloys",
     order = "g",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     ingredients =
@@ -1159,7 +1159,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/lead-solder-melting.png",
     subgroup = "pm-alloys",
     order = "ga",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     emissions_multiplier = 2.5,
@@ -1183,7 +1183,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-solder-melting.png",
     subgroup = "pm-alloys",
     order = "gb",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     ingredients =
@@ -1204,7 +1204,7 @@ data:extend({
     name = "pm-solder-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/solder-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-alloys",
     order = "h",
     energy_required = 9,
@@ -1240,7 +1240,7 @@ data:extend({
     },
     subgroup = "pm-alloys",
     order = "ba",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -1263,7 +1263,7 @@ data:extend({
     name = "pm-steel-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/steel-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-alloys",
     order = "bb",
     energy_required = 9,
@@ -1298,7 +1298,7 @@ data:extend({
     },
     subgroup = "pm-alloys",
     order = "cb",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -1322,7 +1322,7 @@ data:extend({
     name = "pm-brass-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/brass-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-alloys",
     order = "cc",
     energy_required = 9,
@@ -1357,7 +1357,7 @@ data:extend({
     },
     subgroup = "pm-alloys",
     order = "ea",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -1381,7 +1381,7 @@ data:extend({
     name = "pm-stainless-steel-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/stainless-steel-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-alloys",
     order = "eb",
     energy_required = 9,
@@ -1416,7 +1416,7 @@ data:extend({
     },
     subgroup = "pm-alloys",
     order = "fa",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -1439,7 +1439,7 @@ data:extend({
     name = "pm-kasethal-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/kasethal-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-alloys",
     order = "fb",
     energy_required = 9,

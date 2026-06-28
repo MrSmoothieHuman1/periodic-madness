@@ -40,7 +40,7 @@ data:extend({
     name = "pm-stack-inserter",
     enabled = false,
     energy_required = 1,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "inserter",
     ingredients =
     {
@@ -59,7 +59,7 @@ data:extend({
     name = "pm-express-stack-inserter",
     enabled = false,
     energy_required = 2,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "inserter",
     ingredients =
     {

@@ -51,7 +51,7 @@ data:extend({
     },
     subgroup = "pm-gold-tm",
     order = "a",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },         --main visible colour
@@ -89,7 +89,7 @@ data:extend({
     },
     subgroup = "pm-gold-tm",
     order = "c",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     energy_required = 2,
     main_product = "pm-gold-ore",
     ingredients =
@@ -122,7 +122,7 @@ data:extend({
     },
     subgroup = "pm-gold-tm",
     order = "b",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },      --main visible colour
@@ -148,7 +148,7 @@ data:extend({
     name = "pm-gold-plate",
     subgroup = "pm-gold-tm",
     order = "d",
-    category = "smelting",
+    categories = {"smelting"},
     energy_required = 3.2,
     enabled = false,
     allow_productivity = true,
@@ -177,7 +177,7 @@ data:extend({
     },
     subgroup = "pm-gold-tm",
     order = "e",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -196,7 +196,7 @@ data:extend({
     name = "pm-gold-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/gold-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-gold-tm",
     order = "f",
     energy_required = 9,

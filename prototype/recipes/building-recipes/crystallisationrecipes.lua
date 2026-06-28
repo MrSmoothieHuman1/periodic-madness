@@ -6,7 +6,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/flourite-growing.png",
     energy_required = 80,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     subgroup = "pm-flourine-rnm",
     order = "f",
     enabled = false,
@@ -32,7 +32,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/tungsten-crystal-growing.png",
     energy_required = 80,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     subgroup = "pm-tungsten-tm",
     order = "ea",
     enabled = false,
@@ -58,7 +58,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/scheelite-growing.png",
     energy_required = 80,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     subgroup = "pm-tungsten-tm",
     order = "eb",
     enabled = false,
@@ -84,7 +84,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/calcite-growing.png",
     energy_required = 80,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     subgroup = "pm-calcium-aem",
     order = "d",
     allow_decomposition = false,
@@ -110,7 +110,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/bismuth-growing.png",
     energy_required = 80,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     subgroup = "pm-bismuth-ptm",
     order = "d",
     allow_decomposition = false,
@@ -136,7 +136,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/molybdenite-growing.png",
     energy_required = 80,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     subgroup = "pm-molybdenum-tm",
     order = "e",
     allow_decomposition = false,
@@ -162,7 +162,7 @@ data:extend({
     name = "pm-gem-sorting",
     energy_required = 20,
     enabled = false,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     main_product = "pm-ruby",
     ingredients = 
     {
@@ -189,7 +189,7 @@ data:extend({
     name = "pm-ruby",
     energy_required = 120,
     enabled = false,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     main_product = "pm-ruby",
     ingredients =
     {
@@ -212,7 +212,7 @@ data:extend({
     name = "pm-citrine",
     energy_required = 120,
     enabled = false,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     main_product = "pm-citrine",
     ingredients =
     {
@@ -235,7 +235,7 @@ data:extend({
     name = "pm-emerald",
     energy_required = 120,
     enabled = false,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     main_product = "pm-emerald",
     ingredients =
     {
@@ -258,7 +258,7 @@ data:extend({
     name = "pm-sapphire",
     energy_required = 120,
     enabled = false,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     main_product = "pm-sapphire",
     ingredients =
     {
@@ -281,7 +281,7 @@ data:extend({
     name = "pm-lapis-lazuli",
     energy_required = 120,
     enabled = false,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     main_product = "pm-lapis-lazuli",
     ingredients =
     {
@@ -304,7 +304,7 @@ data:extend({
     name = "pm-garnet",
     energy_required = 120,
     enabled = false,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     main_product = "pm-garnet",
     ingredients =
     {

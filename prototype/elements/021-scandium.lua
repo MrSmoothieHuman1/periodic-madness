@@ -57,7 +57,7 @@ data:extend({
         name = "pm-thortveitite",
         enabled = false,
         energy_required = 12,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         allow_producivity = true,
         main_product = "pm-thortveitite",
         ingredients =
@@ -81,7 +81,7 @@ data:extend({
         name = "pm-scandium-trioxide",
         enabled = false,
         energy_required = 18,
-        category = "pm-crushing",
+        categories = {"pm-crushing"},
         main_product = "pm-scandium-trioxide",
         ingredients =
         {
@@ -98,7 +98,7 @@ data:extend({
         name = "pm-scandium-fluoride",
         enabled = false,
         energy_required = 16,
-        category = "chemistry",
+        categories = {"chemistry"},
         main_product = "pm-scandium-fluoride",
         ingredients =
         {
@@ -118,7 +118,7 @@ data:extend({
         name = "pm-scandium",
         enabled = false,
         energy_required = 18,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         ingredients =
         {
@@ -136,7 +136,7 @@ data:extend({
         name = "pm-scandium-oxide",
         enabled = false,
         energy_required = 18,
-        category = "pm-coldening",
+        categories = {"pm-coldening"},
         allow_producitvity = true,
         ingredients =
         {

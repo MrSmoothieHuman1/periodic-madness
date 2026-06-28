@@ -278,7 +278,7 @@ data:extend({
     subgroup = "pm-biostuff-rnm",
     order = "a",
     fuel_value = "2MJ",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     stack_size = 200
   },
   {
@@ -295,7 +295,7 @@ data:extend({
     },
     subgroup = "raw-resource",
     order = "d",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "6MJ",
     stack_size = 100
   },
@@ -545,7 +545,7 @@ data:extend({
     },
     subgroup = "pm-biostuff-rnm",
     order = "A",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "18MJ",
     fuel_acceleration_multiplier = 0.8,
     fuel_top_speed_multiplier = 0.4,
@@ -923,7 +923,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ruby-laser-head.png",
     subgroup = "pm-ruby-ptm",
     order = "d",
-    category = "pm-laser-modules",
+    categories = {"pm-laser-modules"},
     tier = 1,
     effect = 
     {
@@ -939,7 +939,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/sapphire-laser-head.png",
     subgroup = "pm-sapphire-ptm",
     order = "e",
-    category = "pm-laser-modules",
+    categories = {"pm-laser-modules"},
     tier = 2,
     effect = 
     {
@@ -1220,13 +1220,13 @@ data:extend({
       {
         type = "projectile",
         activation_type = "throw",
-        ammo_category = "grenade",
+        ammo_categories = {"grenade"},
         cooldown = 25,
         projectile_creation_distance = 0.6,
         range = 15,
         ammo_type =
         {
-          category = "grenade",
+          categories = {"grenade"},
           target_type = "position",
           action =
           {
@@ -1625,7 +1625,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/YAG-laser-head.png",
     subgroup = "pm-garnet-ptm",
     order = "e",
-    category = "pm-laser-modules",
+    categories = {"pm-laser-modules"},
     tier = 3,
     effect = 
     {
@@ -1734,7 +1734,7 @@ data:extend({
     subgroup = "pm-geothermal-intermediates",
     order = "c",
     fuel_value = "30MJ",
-    fuel_category = "pm-geothermal-bore",
+    fuel_categories = {"pm-geothermal-bore"},
     stack_size = 100
   },
   {
@@ -1745,7 +1745,7 @@ data:extend({
     subgroup = "pm-geothermal-intermediates",
     order = "d",
     fuel_value = "60MJ",
-    fuel_category = "pm-geothermal-bore",
+    fuel_categories = {"pm-geothermal-bore"},
     stack_size = 100
   },
   {
@@ -1797,7 +1797,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/advanced-YAG-laser-head.png",
     subgroup = "pm-garnet-ptm",
     order = "g",
-    category = "pm-laser-modules",
+    categories = {"pm-laser-modules"},
     tier = 3,
     effect = 
     {
@@ -2056,7 +2056,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
     effect = { speed = 1, consumption = 1.5 },
     tier = 1,
-    category = "pm-beamcon-speed",
+    categories = {"pm-beamcon-speed"},
     subgroup = "pm-speed",
     order = "g",
     stack_size = 5,
@@ -2068,7 +2068,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
     effect = {consumption = -1, speed = 0.5},
     tier = 1,
-    category = "pm-beamcon-efficiency",
+    categories = {"pm-beamcon-efficiency"},
     subgroup = "pm-efficiency",
     order = "g",
     stack_size = 5,

@@ -61,7 +61,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/fuel-oil-hydrosulfurisation.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "b",
     ingredients =
@@ -85,7 +85,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/kerosene-hydrosulfurisation.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "c",
     ingredients =
@@ -115,7 +115,7 @@ data:extend({
         quaternary = {0.902, 0.78, 0.353}
     },
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "d",
     enabled = false,
@@ -137,7 +137,7 @@ data:extend({
     name = "pm-sulfur-dioxide",
     enabled = false,
     energy_required = 2,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "e",
     main_product = "pm-sulfur-dioxide",
@@ -161,7 +161,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/sulfur-trioxide.png",
     enabled = false,
     energy_required = 3,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "f",
     ingredients =
@@ -184,7 +184,7 @@ data:extend({
     name = "pm-oleum",
     enabled = false,
     energy_required = 6,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "g",
     allow_productivity = true,
@@ -203,7 +203,7 @@ data:extend({
     name = "pm-better-sulfuric-acid",
     enabled = false,
     energy_required = 6,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "h",
     allow_productivity = true,
@@ -232,7 +232,7 @@ data:extend({
         quaternary = {0.671, 0.439, 0.2}
     },
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-sulfur-rnm",
     order = "a",
     allow_productivity = true,
@@ -261,7 +261,7 @@ data:extend({
     },
     energy_required = 4,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-sulfur-rnm",
     order = "b",
     allow_productivity = true,
@@ -287,7 +287,7 @@ data.raw["item"]["sulfur"].protons = 16
 data.raw["item"]["sulfur"].neutrons = 16
 
 data.raw["recipe"]["sulfuric-acid"].energy_required = 4
-data.raw["recipe"]["sulfuric-acid"].category = "pm-mixing"
+data.raw["recipe"]["sulfuric-acid"].categories = {"pm-mixing"}
 data.raw["recipe"]["sulfuric-acid"].subgroup = "pm-sulfuric-acid-rnm"
 data.raw["recipe"]["sulfuric-acid"].order = "a"
 data.raw["recipe"]["sulfuric-acid"].main_product = "sulfuric-acid"

@@ -64,7 +64,7 @@ data:extend({
         name = "pm-gadolinium-nitrate",
         enabled = false,
         energy_required = 12,
-        category = "pm-acids",
+        categories = {"pm-acids"},
         ingredients =
         {
             PM.ingredient("pm-ammonia-gas", 15, "fluid"),
@@ -81,7 +81,7 @@ data:extend({
         name = "pm-molten-gadolinium-chloride",
         enabled = false,
         energy_required = 18,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         ingredients =
         {
@@ -98,7 +98,7 @@ data:extend({
         name = "pm-gadolinium-sponge",
         enabled = false,
         energy_required = 9,
-        category = "pm-electrolysis",
+        categories = {"pm-electrolysis"},
         main_product = "pm-gadolinium-sponge",
         ingredients =
         {
@@ -118,7 +118,7 @@ data:extend({
         name = "pm-gadolinium",
         enabled = false,
         energy_required = 18,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         main_product = "pm-gadolinium",
         ingredients =

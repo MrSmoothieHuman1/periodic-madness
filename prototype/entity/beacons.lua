@@ -31,7 +31,7 @@ data:extend({
           type = "electric",
           usage_priority = "secondary-input"
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
         close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
         working_sound =
@@ -113,7 +113,7 @@ data:extend({
           type = "electric",
           usage_priority = "secondary-input"
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
         close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
         working_sound =
@@ -190,7 +190,7 @@ data:extend({
           type = "electric",
           usage_priority = "secondary-input"
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
         close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
         working_sound =
@@ -349,7 +349,7 @@ data:extend({
         {
           type = "void",
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/steam-open.ogg", volume = 0.4},
         close_sound = {filename = "__base__/sound/open-close/steam-close.ogg", volume = 0.4},
         working_sound =
@@ -405,7 +405,7 @@ data:extend({
           type = "electric",
           usage_priority = "secondary-input"
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
         close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
         working_sound =
@@ -477,7 +477,7 @@ data:extend({
           type = "electric",
           usage_priority = "secondary-input"
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
         close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
         working_sound =
@@ -550,7 +550,7 @@ data:extend({
           type = "electric",
           usage_priority = "secondary-input"
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/beacon-open.ogg", volume = 0.4},
         close_sound = {filename = "__base__/sound/open-close/beacon-close.ogg", volume = 0.4},
         working_sound =

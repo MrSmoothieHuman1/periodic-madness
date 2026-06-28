@@ -40,7 +40,7 @@ local function make_voiding(prototype)
 			localised_name = {"recipe-name.-voiding", PM.locale_of(prototype)},
 			icons = icons,
 			subgroup = "pm-voiding",
-			category = "pm-burnining",
+			categories = {"pm-burnining"},
 			emissions_multiplier = prototype.auto_void_emissions,
 			energy_required = 3,
 			hide_from_player_crafting = true,

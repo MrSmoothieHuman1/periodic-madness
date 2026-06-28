@@ -112,7 +112,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
         index = index + 1
         input_connections[index] = connection
         
-        connection.connection_category = "null-category-fuck-off" -- Don't *actually* connect to anything
+        connection.connection_categories = {"null-category-fuck-off"} -- Don't *actually* connect to anything
       end
     end
   end

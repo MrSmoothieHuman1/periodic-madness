@@ -387,8 +387,8 @@ function fireutil.add_magnesium_fire_graphics_and_effects_definitions(fire)
   fire.light_size_modifier_maximum = 3
   fire.working_sound = fire.working_sound or
   {
-    sound = {category = "weapon", variations = sound_variations("__base__/sound/fire", 2, 0.7)},
-    activate_sound = {category = "weapon", variations = sound_variations("__base__/sound/fight/fire-impact", 5, 0.9)},
+    sound = {categories = {"weapon"}, variations = sound_variations("__base__/sound/fire", 2, 0.7)},
+    activate_sound = {categories = {"weapon"}, variations = sound_variations("__base__/sound/fight/fire-impact", 5, 0.9)},
   }
   return fire
 end
@@ -1220,7 +1220,7 @@ data:extend({
       {
         volume = 1000,
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         pipe_connections = 
         {
@@ -3120,7 +3120,7 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
@@ -3128,7 +3128,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = assembler3pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
@@ -3136,7 +3136,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = assembler3pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = {{flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
@@ -3213,7 +3213,7 @@ data:extend({
       {
         volume = 2000,
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         pipe_connections =
         {
@@ -3535,28 +3535,28 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0, 2} }},
       },
       {
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -2} }},
       },
       {
         production_type = "input",
-        pipe_picture = assembler3pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         pipe_connections = {{ flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
       },
       {
         production_type = "output",
-        pipe_picture = assembler3pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, 0} }},
@@ -3965,7 +3965,7 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 500,
         pipe_connections =
@@ -3976,7 +3976,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 500,
         pipe_connections = 
@@ -3987,7 +3987,7 @@ data:extend({
       },
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections =
@@ -3997,7 +3997,7 @@ data:extend({
       },
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = 
@@ -4007,7 +4007,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = 
@@ -4017,7 +4017,7 @@ data:extend({
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = 
@@ -4473,56 +4473,56 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "input", direction = defines.direction.east--[[@as int]], position = {2.5, -0.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "output", direction = defines.direction.east--[[@as int]], position = {2.5, 0.5}}},
       },
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "input", direction = defines.direction.west--[[@as int]], position = {-2.5, -0.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2.5, 0.5}}},
       },
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -2.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "output", direction = defines.direction.north--[[@as int]], position = {0.5, -2.5}}},
       },
       {
         production_type = "input",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {-0.5, 2.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = assembler2pipepictures(),
+        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
         pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 2.5}}},
@@ -4925,7 +4925,7 @@ data:extend({
       }
     },
   },
-    impact_category = "metal-large",
+    impact_categories = {"metal-large"},
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     working_sound =
@@ -5093,7 +5093,7 @@ data:extend({
         },
       },
     },
-    impact_category = "metal",
+    impact_categories = {"metal"},
     open_sound = sounds.electric_large_open,
     close_sound = sounds.electric_large_close,
     working_sound =
@@ -5271,7 +5271,7 @@ data:extend({
       emissions_per_minute = {pollution = 0.5},
       drain = "20kW",
     },
-    impact_category = "metal",
+    impact_categories = {"metal"},
     open_sound = sounds.electric_large_open,
     close_sound = sounds.electric_large_close,
     working_sound =
@@ -5680,7 +5680,7 @@ data:extend({
   mined_sound = sounds.deconstruct_bricks(0.8),
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
-  impact_category = "stone",
+  impact_categories = {"stone"},
   hide_resistances = false,
   connected_gate_visualization =
   {
@@ -6104,7 +6104,7 @@ data:extend({
   mined_sound = sounds.deconstruct_bricks(0.8),
   open_sound = sounds.machine_open,
   close_sound = sounds.machine_close,
-  impact_category = "stone",
+  impact_categories = {"stone"},
   healing_per_tick = 0.01,
   hide_resistances = false,
   connected_gate_visualization =
@@ -8447,7 +8447,7 @@ fluid_boxes =
     fluid_boxes_off_when_no_fluid_recipe = true,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
-    impact_category = "metal",
+    impact_categories = {"metal"},
     working_sound =
     {
       sound = {filename = "__base__/sound/assembling-machine-t3-1.ogg", volume = 0.45, audible_distance_modifier = 0.5},
@@ -8540,7 +8540,7 @@ fluid_boxes =
       fluid_box =
       {
         production_type = "input",
-        --pipe_picture = assembler2pipepictures(),
+        --pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1750,
         filter = "pm-light-lubricant",
@@ -9672,7 +9672,7 @@ fluid_boxes =
     max_fluid_usage = 0.5,
     graphics_set =
     {
-      plasma_category = "pm-geothermal-steam",
+      plasma_categories = {"pm-geothermal-steam"},
       structure =
       {
         north =
@@ -9717,7 +9717,7 @@ fluid_boxes =
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "pm-solar-panel-2"},
     max_health = 350,
-    impact_category = "metal",
+    impact_categories = {"metal"},
     corpse = "pm-geothermal-generator",
     dying_explosion = "assembling-machine-1-explosion",
     forced_symmetry = "horizontal",
@@ -11087,7 +11087,7 @@ fluid_boxes =
         starting_frame_deviation = 60
       }
     },
-    impact_category = "metal-large",
+    impact_categories = {"metal-large"},
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     working_sound =
@@ -11479,68 +11479,209 @@ fluid_boxes =
     fade_out_ticks = 20
   },
 }--[[@as data.AssemblingMachinePrototype]],
-
+{
+  type = "assembling-machine",
+  name = "pm-reverberatory-furnace",
+  icon = "__periodic-madness__/graphics/icons/buildings/blast-furnace.png",
+  icon_size = 64,
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 0.5, result = "pm-blast-furnace" },
+  max_health = 800,
+  corpse = "pm-blast-furnace",
+  dying_explosion = "assembling-machine-1-explosion",
+  resistances =
   {
-    type = "assembling-machine",
-    name = "pm-chicken-coop",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/FUCK.png",
-    minable = { mining_time = 0.9, result = "pm-francium-ultracool-centrifugal-kabbalism" },
-    flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    max_health = 500,
-    corpse = "assembling-machine-1-remnants",
-    dying_explosion = "assembling-machine-1-explosion",
-    collision_box = { { -0.45, -0.45 }, { 0.45, 0.45 } },
-    selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-    alert_icon_shift = util.by_pixel(-3, -12),
-    crafting_speed = 1,
-    crafting_categories = { "pm-franciuming" },
-    module_slots = 6,
-    allowed_effects = PM.all_effects(),
-    energy_usage = "1.17MW",
-    energy_source =
     {
-      type = "electric",
-      usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 4},
+      type = "impact",
+      percent = 65
     },
-    graphics_set =
     {
-      animation =
-      {
+      type = "fire",
+      percent = 95
+    }
+  },
+  collision_box = { { -1.85, -1.85 }, { 1.85, 1.85 } },
+  selection_box = { { -2, -2 }, { 2, 2 } },
+  alert_icon_shift = util.by_pixel(0, -12),
+  icon_draw_specification = {shift = {0, -0.5}, scale = 1, scale_for_many = 0.5, render_layer = "entity-info-icon"},
+  --forced_symmetry = "horizontal", graphics break, not sure what to do about it
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
+  circuit_connector = circuit_connector_definitions["assembling-machine"],
+  graphics_set =
+  {
+  status_colors = pm_diode_status_colors(),
+  animation =
+  {
+    north =
+    {
         layers =
         {
-          {
-            filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/nuclear-block-base.png",
-            width = 64,
-            height = 67,
-            frame_count = 1,
-            line_length = 1,
-            scale = 0.5
-          },
-          {
-            filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/nuclear-block-tint.png",
-            width = 64,
-            height = 67,
-            frame_count = 1,
-            line_length = 1,
-            tint = {r = 1, b = 1, g = 0},
-            scale = 0.5
-          },
-          {
-            filename = "__periodic-madness__/graphics/entities/buildings/chicken-coop/nuclear-block-shadow.png",
-            width = 64,
-            height = 67,
-            frame_count = 1,
-            line_length = 1,
-            draw_as_shadow = true,
-            shift = util.by_pixel(16, 8),
-            scale = 0.5
-          },
-        },
-      }
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/reverberatory-furnace/reverberatory-furnace.png",
+                width = 256,
+                height = 256,
+                frame_count = 1,
+                repeat_count = 64,
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+        }
     },
-  }--[[@as data.AssemblingMachinePrototype]],
+    south =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/reverberatory-furnace/reverberatory-furnace.png",
+                width = 256,
+                height = 256,
+                frame_count = 1,
+                repeat_count = 64,
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+        }
+    },
+    east =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/reverberatory-furnace/reverberatory-furnace.png",
+                width = 256,
+                height = 256,
+                frame_count = 1,
+                repeat_count = 64,
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+        }
+    },
+    west =
+    {
+        layers =
+        {
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/reverberatory-furnace/reverberatory-furnace.png",
+                width = 256,
+                height = 256,
+                frame_count = 1,
+                repeat_count = 64,
+                animation_speed = 0.43,
+                scale = 0.5
+            },
+        }
+    },
+  },
+  },
+  crafting_categories = {"pm-reverberatory-smelting"},
+  allowed_effects = PM.all_effects(),
+  module_slots = 5,
+  icons_positioning = 
+  {
+    {inventory_index = defines.inventory.crafter_modules, shift = {0, 0.5}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.4}
+  },
+  allowed_module_categories = {"pm-heating-coils"},
+  crafting_speed = 1.5,
+  energy_usage = "1MW",
+  energy_source =
+  {
+    type = "heat",
+    emissions_per_minute = {pollution = 2},
+    max_temperature = 1000,
+    min_working_temperature = 750,
+    specific_heat = "1MJ",
+    max_transfer = "10MJ",
+    connections =
+    {
+      {
+        position = {-1.5, 1.5},
+        direction = defines.direction.south--[[@as int]] --[[@as int]]
+      },
+      {
+        position = {-1.5, 1.5},
+        direction = defines.direction.west--[[@as int]] --[[@as int]]
+      },
+      {
+        position = {-1.5, -1.5},
+        direction = defines.direction.north--[[@as int]] --[[@as int]]
+      },
+      {
+        position = {-1.5, -1.5},
+        direction = defines.direction.west--[[@as int]] --[[@as int]]
+      },
+
+      {
+        position = {1.5, 1.5},
+        direction = defines.direction.south--[[@as int]] --[[@as int]]
+      },
+      {
+        position = {1.5, 1.5},
+        direction = defines.direction.east--[[@as int]] --[[@as int]]
+      },
+      {
+        position = {1.5, -1.5},
+        direction = defines.direction.north--[[@as int]] --[[@as int]]
+      },
+      {
+        position = {1.5, -1.5},
+        direction = defines.direction.east--[[@as int]] --[[@as int]]
+      },
+    },
+  },
+  fluid_boxes =
+  {
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 250,
+      pipe_connections =
+      {
+        {flow_direction="input-output", direction = defines.direction.north, position = {0.5, -1.5}},
+      },
+    },
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 250,
+      pipe_connections =
+      {
+        {flow_direction="input-output", direction = defines.direction.south, position = {0-.5, 1.5}}, --hope this annoys penny
+      },
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 250,
+      pipe_connections =
+      {
+        {flow_direction="input-output", direction = defines.direction.east, position = {1.5, 0.5}},
+      },
+    },
+    {
+      production_type = "output",
+      pipe_covers = pipecoverspictures(),
+      volume = 250,
+      pipe_connections =
+      {
+        {flow_direction="input-output", direction = defines.direction.west, position = {-1.5, -0.5}},
+      },
+    },
+  },
+  working_sound =
+    {
+      sound =
+      {
+        {
+          filename = "__base__/sound/steel-furnace.ogg",
+          volume = 0.5
+        }
+      },
+    audible_distance_modifier = 0.5,
+    fade_in_ticks = 4,
+    fade_out_ticks = 20
+  },
+}--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
@@ -11583,7 +11724,7 @@ data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes =
 {
   {
     production_type = "input",
-    pipe_picture = assembler2pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 500,
     pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
@@ -11591,7 +11732,7 @@ data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes =
   },
   {
     production_type = "output",
-    pipe_picture = assembler2pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 500,
     pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
@@ -11605,7 +11746,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes =
 {
   {
     production_type = "input",
-    pipe_picture = assembler2pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
@@ -11613,7 +11754,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes =
   },
   {
     production_type = "output",
-    pipe_picture = assembler2pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
@@ -11621,7 +11762,7 @@ data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes =
   },
   {
     production_type = "input",
-    pipe_picture = assembler2pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
@@ -11635,7 +11776,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
 {
   {
     production_type = "input",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
@@ -11643,7 +11784,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   },
   {
     production_type = "output",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
@@ -11651,7 +11792,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   },
   {
     production_type = "input",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
@@ -11659,7 +11800,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
   },
   {
     production_type = "output",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
     pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
@@ -11851,7 +11992,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
 {
   {
     production_type = "input",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
     pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
@@ -11859,7 +12000,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
   },
   {
     production_type = "input",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
     pipe_connections = {{flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
@@ -11867,7 +12008,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
   },
   {
     production_type = "output",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
     pipe_connections = {{flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
@@ -11875,7 +12016,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
   },
   {
     production_type = "output",
-    pipe_picture = assembler3pipepictures(),
+    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
     pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},

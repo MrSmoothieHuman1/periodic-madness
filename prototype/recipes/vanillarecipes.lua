@@ -170,7 +170,7 @@ data.raw["recipe"]["substation"].ingredients =
   PM.ingredient("pm-aluminium-plate", 6),
   PM.ingredient("concrete", 10)
 }
-data.raw["recipe"]["assembling-machine-3"].category = "crafting-with-fluid"
+data.raw["recipe"]["assembling-machine-3"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["assembling-machine-3"].ingredients =
 {
   PM.ingredient("assembling-machine-2", 1),
@@ -527,7 +527,7 @@ data.raw["recipe"]["explosive-cannon-shell"].ingredients =
   PM.ingredient("pm-stainless-steel-alloy", 4),
   PM.ingredient("pm-tungsten-plate", 4),
 }
-data.raw["recipe"]["slowdown-capsule"].category = "crafting-with-fluid"
+data.raw["recipe"]["slowdown-capsule"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["slowdown-capsule"].results = { PM.product("slowdown-capsule", 2) }
 data.raw["recipe"]["slowdown-capsule"].ingredients =
 {
@@ -536,7 +536,7 @@ data.raw["recipe"]["slowdown-capsule"].ingredients =
   PM.ingredient("pm-lightweight-framing", 4),
   PM.ingredient("pm-fluid-circuit", 3)
 }
-data.raw["recipe"]["poison-capsule"].category = "crafting-with-fluid"
+data.raw["recipe"]["poison-capsule"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["poison-capsule"].results = { PM.product("poison-capsule", 2) }
 data.raw["recipe"]["poison-capsule"].ingredients =
 {
@@ -653,7 +653,7 @@ data.raw["recipe"]["fission-reactor-equipment"].ingredients =
   PM.ingredient("pm-radiation-resistant-tubing", 20),
   PM.ingredient("pm-heavyweight-framing", 15)
 }
-data.raw["recipe"]["energy-shield-equipment"].category = "crafting-with-fluid"
+data.raw["recipe"]["energy-shield-equipment"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 {
   PM.product_range("pm-empty-reactor-cell", 3, 5),
@@ -665,7 +665,7 @@ data.raw["recipe"]["pump"].ingredients =
   PM.ingredient("pm-basic-motor", 4),
   PM.ingredient("pm-basic-panelling", 8),
 }
-data.raw["recipe"]["laser-turret"].category = "crafting-with-fluid"
+data.raw["recipe"]["laser-turret"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["laser-turret"].ingredients = 
 {
   PM.ingredient("pm-ruby-laser-head", 1),
@@ -691,14 +691,14 @@ data.raw["recipe"]["personal-roboport-mk2-equipment"].ingredients =
   PM.ingredient("pm-heavyweight-framing", 16),
   PM.ingredient("pm-indium-wire", 10)
 }
-data.raw["recipe"]["rocket"].category = "crafting-with-fluid"
+data.raw["recipe"]["rocket"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["rocket"].ingredients = 
 {
   PM.ingredient("pm-hydrogen-peroxide", 5, "fluid"),
   PM.ingredient("steel-plate", 2),
   PM.ingredient("explosives", 1)
 }
-data.raw["recipe"]["explosive-rocket"].category = "crafting-with-fluid"
+data.raw["recipe"]["explosive-rocket"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["explosive-rocket"].ingredients =
 {
   PM.ingredient("pm-kerosene", 10, "fluid"),
@@ -713,7 +713,7 @@ data.raw["recipe"]["explosives"].ingredients =
   PM.ingredient("pm-vulcanised-rubber", 3)
 }
 data.raw["recipe"]["centrifuge"].energy_required = 6
-data.raw["recipe"]["centrifuge"].category = "crafting-with-fluid"
+data.raw["recipe"]["centrifuge"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["centrifuge"].ingredients = 
 {
   PM.ingredient("concrete", 20),
@@ -724,7 +724,7 @@ data.raw["recipe"]["centrifuge"].ingredients =
   PM.ingredient("pm-heavyweight-framing", 12)
 }
 data.raw["recipe"]["concrete"].energy_required = 2.5
-data.raw["recipe"]["concrete"].category = "crafting-with-fluid"
+data.raw["recipe"]["concrete"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["concrete"].ingredients = 
 {
   PM.ingredient("pm-concrete-slurry", 5, "fluid"),
@@ -736,7 +736,7 @@ data.raw["recipe"]["concrete"].results =
   PM.product("concrete", 2)
 }
 data.raw["recipe"]["refined-concrete"].energy_required = 5
-data.raw["recipe"]["refined-concrete"].category = "crafting-with-fluid"
+data.raw["recipe"]["refined-concrete"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["refined-concrete"].ingredients = 
 {
   PM.ingredient("pm-concrete-slurry", 10, "fluid"),
@@ -766,7 +766,7 @@ data.raw["recipe"]["refined-hazard-concrete"].results =
 {
   PM.product("refined-hazard-concrete", 5)
 }
-data.raw["recipe"]["cliff-explosives"].category = "crafting-with-fluid"
+data.raw["recipe"]["cliff-explosives"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["cliff-explosives"].ingredients =
 {
   PM.ingredient("explosives", 8),
@@ -781,7 +781,7 @@ data.raw["recipe"]["bulk-inserter"].ingredients =
   PM.ingredient("fast-inserter", 1),
   PM.ingredient("pm-polyethylene-plastic", 2)
 }
-data.raw["recipe"]["artillery-turret"].category = "crafting-with-fluid"
+data.raw["recipe"]["artillery-turret"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["artillery-turret"].ingredients =
 {
   PM.ingredient("pm-heavyweight-framing", 32),
@@ -877,7 +877,7 @@ data.raw["recipe"]["steam-turbine"].ingredients =
     PM.ingredient("pm-air-filter", 2),
     PM.ingredient("pm-corrosion-resistant-tubing", 6),
 }
-data.raw["recipe"]["spidertron"].category = "crafting-with-fluid"
+data.raw["recipe"]["spidertron"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["spidertron"].ingredients =
 {
     PM.ingredient("pm-spiderling-issy", 1),
@@ -897,17 +897,17 @@ data.raw["recipe"]["efficiency-module-3"].energy_required = 30
 data.raw["recipe"]["productivity-module-3"].energy_required = 30
 
 data.raw["recipe"]["processing-unit"].energy_required = 6
-data.raw["recipe"]["processing-unit"].category = "pm-circuitry"
-data.raw["recipe"]["advanced-circuit"].category = "pm-circuitry"
+data.raw["recipe"]["processing-unit"].categories = {"pm-circuitry"}
+data.raw["recipe"]["advanced-circuit"].categories = {"pm-circuitry"}
 data.raw["recipe"]["advanced-circuit"].energy_required = 3
-data.raw["recipe"]["electronic-circuit"].category = "pm-circuitry"
+data.raw["recipe"]["electronic-circuit"].categories = {"pm-circuitry"}
 
 data.raw["recipe"]["express-transport-belt"].energy_required = 2
 data.raw["recipe"]["express-splitter"].energy_required = 3
 data.raw["recipe"]["express-underground-belt"].energy_required = 2
 
-data.raw["recipe"]["chemical-science-pack"].category = "crafting-with-fluid"
-data.raw["recipe"]["logistic-science-pack"].category = "crafting-with-fluid"
+data.raw["recipe"]["chemical-science-pack"].categories = {"crafting-with-fluid"}
+data.raw["recipe"]["logistic-science-pack"].categories = {"crafting-with-fluid"}
 
 data.raw["recipe"]["coal-liquefaction"].ingredients =
 {

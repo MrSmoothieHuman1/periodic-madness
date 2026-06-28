@@ -821,7 +821,7 @@ if settings.startup["pm-circuit-colourblind-friendly-icons"].value == true then
   data.raw["item"]["processing-unit"].icon = "__periodic-madness__/graphics/icons/new-processing-unit.png"
 end
 
---changes centrifuge to be tintable - credit to NullPointerExempt's mod for this
+--[[changes centrifuge to be tintable - credit to NullPointerExempt's mod for this
 local set = data.raw["assembling-machine"]["centrifuge"].graphics_set
 set.default_recipe_tint = {primary = {0.2, 0.2, 0.2}}
 
@@ -831,4 +831,4 @@ set.working_visualisations[2].apply_recipe_tint = "primary"
 local layers = set.working_visualisations[2].animation.layers
 layers[1].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-C-light.png"
 layers[2].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-B-light.png"
-layers[3].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-A-light.png"
+layers[3].filename = "__periodic-madness__/graphics/entities/buildings/centrifuge/centrifuge-A-light.png"--]]

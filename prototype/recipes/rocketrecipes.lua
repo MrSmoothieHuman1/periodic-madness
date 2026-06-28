@@ -5,7 +5,7 @@ data:extend({
     name = "pm-ammonium-nitrate",
     enabled = false,
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-ammonium-nitrate",
     ingredients = 
@@ -26,7 +26,7 @@ data:extend({
     name = "pm-ammonium-dinitramide-solution",
     enabled = false,
     energy_required = 10,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     ingredients =
     {
@@ -44,7 +44,7 @@ data:extend({
     name = "pm-ammonium-dinitramide-ampule",
     enabled = false,
     energy_required = 10,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     allow_productivity = true,
     main_product = "pm-ammonium-dinitramide-ampule",
     ingredients =
@@ -65,7 +65,7 @@ data:extend({
     name = "pm-hexamethyleneteramine",
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     ingredients =
     {
@@ -82,7 +82,7 @@ data:extend({
     name = "pm-HMX",
     enabled = false,
     energy_required = 12,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-HMX",
     ingredients =
@@ -103,7 +103,7 @@ data:extend({
     name = "pm-rocket-control-unit",
     enabled = false,
     energy_required = 35,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
       {
@@ -124,7 +124,7 @@ data:extend({
     name = "pm-nitrogen-dioxide",
     enabled = false,
     energy_required = 12,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     ingredients = 
     {
@@ -141,7 +141,7 @@ data:extend({
     name = "pm-dinitrogen-tetroxide",
     enabled = false,
     energy_required = 6,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-dinitrogen-tetroxide",
     ingredients =
@@ -162,7 +162,7 @@ data:extend({
     name = "pm-high-sulfur-refined-kerosene",
     enabled = false,
     energy_required = 4,
-    category = "oil-processing",
+    categories = {"oil-processing"},
     allow_productivity = true,
     main_product = "pm-high-sulfur-refined-kerosene",
     ingredients =
@@ -182,7 +182,7 @@ data:extend({
     name = "pm-medium-sulfur-refined-kerosene",
     enabled = false,
     energy_required = 6,
-    category = "oil-processing",
+    categories = {"oil-processing"},
     allow_productivity = true,
     main_product = "pm-medium-sulfur-refined-kerosene",
     ingredients =
@@ -204,7 +204,7 @@ data:extend({
     name = "pm-low-sulfur-refined-kerosene",
     enabled = false,
     energy_required = 8,
-    category = "oil-processing",
+    categories = {"oil-processing"},
     allow_productivity = true,
     main_product = "pm-low-sulfur-refined-kerosene",
     ingredients =
@@ -227,7 +227,7 @@ data:extend({
     name = "pm-RP-1",
     enabled = false,
     energy_required = 12,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-RP-1",
     ingredients =
@@ -251,7 +251,7 @@ data:extend({
     name = "pm-heat-shielding",
     enabled = false,
     energy_required = 9,
-    category = "pm-advanced-crafting-with-fluid",
+    categories = {"pm-advanced-crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -312,7 +312,7 @@ data:extend({
     name = "pm-liquid-rocket-fuel-tank",
     enabled = false,
     energy_required = 15,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -333,7 +333,7 @@ data:extend({
     name = "pm-liquid-rocket-oxidiser-tank",
     enabled = false,
     energy_required = 15,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -367,7 +367,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 15,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     order = "ia",
     allow_productivity = true,
     ingredients =
@@ -405,7 +405,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 35,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-rocket-parts",
     order = "da",
     allow_productivity = true,
@@ -545,7 +545,7 @@ data:extend({
     name = "pm-liquid-fuel-rocket-part",
     enabled = false,
     energy_required = 3,
-    category = "rocket-building",
+    categories = {"rocket-building"},
     subgroup = "pm-rocket-recipes",
     order = "b",
     allow_productivity = true,

@@ -46,7 +46,7 @@ data:extend({
     name = "pm-neon-gas",
     enabled = false,
     energy_required = 2,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     main_product = "pm-neon-gas",
     ingredients =
     {
@@ -78,7 +78,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 4,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-neon-nb",
     order = "c",
     main_product = "pm-industrial-noble-gas",
@@ -110,7 +110,7 @@ data:extend({
         scale = 0.4
       },
     },
-  category = "pm-atmospheric-condensing",
+  categories = {"pm-atmospheric-condensing"},
   subgroup = "pm-neon-nb",
   order = "x",
   enabled = false,

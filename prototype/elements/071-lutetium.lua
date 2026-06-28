@@ -114,7 +114,7 @@ data:extend({
         name = "pm-trace-lutetium",
         enabled = false,
         energy_required = 8,
-        category = "pm-acids",
+        categories = {"pm-acids"},
         allow_productivity = true,
         ingredients =
         {
@@ -147,7 +147,7 @@ data:extend({
         name = "pm-lutetium-salts",
         enabled = false,
         energy_required = 16,
-        category = "pm-electrolysis",
+        categories = {"pm-electrolysis"},
         ingredients =
         {
             PM.ingredient("pm-lutetium-powder", 2),
@@ -164,7 +164,7 @@ data:extend({
         name = "pm-lutetium-salt-seperation",
         enabled = false,
         energy_required = 12,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-lutetium-la",
         order = "c",
         main_product = "pm-low-lutetium-mixture",
@@ -185,7 +185,7 @@ data:extend({
         name = "pm-low-lutetium-mixture-seperation",
         enabled = false,
         energy_required = 12,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         subgrouo = "pm-lutetium-la",
         order = "d",
         allow_productivity = true,
@@ -209,7 +209,7 @@ data:extend({
         name = "pm-high-lutetium-mixture-seperation",
         enabled = false,
         energy_required = 12,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         subgrouo = "pm-lutetium-la",
         order = "da",
         allow_productivity = true,
@@ -233,7 +233,7 @@ data:extend({
         name = "pm-lutetium",
         enabled = false,
         energy_required = 24,
-        category = "pm-electrolysis",
+        categories = {"pm-electrolysis"},
         allow_productivity = true,
         main_product = "pm-lutetium",
         ingredients =

@@ -4,7 +4,7 @@ data:extend({
     type = "recipe",
     name = "pm-hydrogen-fuel",
     energy_required = 1,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients =
     {
@@ -19,7 +19,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-carbon",
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     enabled = false,
     allow_productivity = true,
     ingredients = {PM.ingredient("coal", 2)},
@@ -39,7 +39,7 @@ data:extend({
     { 
       PM.ingredient("stone", 4)
     },
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-glassing",
     order = "a",
     results =
@@ -59,7 +59,7 @@ data:extend({
     { 
       PM.ingredient("stone", 4)
     },
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-glassing",
     order = "a",
     main_product = "pm-sand",
@@ -76,7 +76,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/gravel-to-sand.png",
     energy_required = 2,
     enabled = false,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     ingredients = 
     {
       PM.ingredient("pm-gravel", 2)
@@ -98,8 +98,7 @@ data:extend({
         quaternary = tints.empty
     },
     energy_required = 2,
-    category = "crafting", 
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"crafting", "pm-circuit-boards"},
     allow_productivity = true,
     enabled = false,
     ingredients =
@@ -142,8 +141,7 @@ data:extend({
         quaternary = tints.empty
     },
     energy_required = 3,
-    category = "crafting", 
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"crafting", "pm-circuit-boards"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -200,7 +198,7 @@ data:extend({
     },
     energy_required = 1.5,
     enabled = false,
-    category = "pm-circuitry",
+    categories = {"pm-circuitry"},
     allow_productivity = true,
     ingredients =
     {
@@ -225,8 +223,7 @@ data:extend({
         quaternary = tints.empty
     },
     energy_required = 6,
-    category = "crafting", 
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"crafting", "pm-circuit-boards"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -267,8 +264,7 @@ data:extend({
         quaternary = tints.ferric_chloride
     },
     energy_required = 9,
-    category = "crafting-with-fluid", 
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"crafting-with-fluid", "pm-circuit-boards"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -304,7 +300,7 @@ data:extend({
     name = "pm-semiconductor",
     enabled = false,
     energy_required = 3,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -419,7 +415,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-acidic-water",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     enabled = false,
     crafting_machine_tint =
     {
@@ -460,7 +456,7 @@ data:extend({
     name = "pm-coke",
     enabled = false,
     energy_required = 2.4,
-    category = "pm-coking",
+    categories = {"pm-coking"},
     subgroup = "pm-coke",
     order = "a",
     allow_productivity = true,
@@ -478,7 +474,7 @@ data:extend({
     name = "pm-resin",
     energy_required = 2,
     subgroup = "pm-resin",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     order = "b",
     enabled = false,
     ingredients =
@@ -496,7 +492,7 @@ data:extend({
     name = "pm-rubber-resin",
     energy_required = 1,
     subgroup = "pm-resin",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     enabled = false,
     ingredients =
     {
@@ -514,7 +510,7 @@ data:extend({
     name = "pm-pheonlic-resin",
     energy_required = 1,
     subgroup = "pm-resin",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     enabled = false,
     ingredients =
     {
@@ -532,7 +528,7 @@ data:extend({
     name = "pm-rubber",
     energy_required = 2,
     subgroup = "pm-resin",
-    category = "pm-molding",
+    categories = {"pm-molding"},
     order = "e",
     enabled = false,
     always_show_products = true,
@@ -551,7 +547,7 @@ data:extend({
     energy_required = 3,
     enabled = false,
     subgroup = "pm-resin",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     order = "f",
     main_product = "pm-vulcanised-rubber",
     ingredients =
@@ -633,7 +629,7 @@ data:extend({
     name = "pm-fiberoptic-cable",
     enabled = false,
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-wires",
     order = "ca",
     allow_productivity = true,
@@ -699,7 +695,7 @@ data:extend({
       },
     },
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-lubricant",
     order = "e",
     show_amount_in_title = true,
@@ -721,7 +717,7 @@ data:extend({
     type = "recipe",
     name = "pm-gallium-nitride",
     energy_required = (5 / 0.75) / 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -738,7 +734,7 @@ data:extend({
     type = "recipe",
     name = "pm-gallium-arsenide",
     energy_required = (5 / 0.75) / 2,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -755,7 +751,7 @@ data:extend({
     type = "recipe",
     name = "pm-aluminium-gallium-indium-phosphide",
     energy_required = (5 / 0.75) / 2,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     enabled = false,
     main_product = "pm-aluminium-gallium-indium-phosphide",
     allow_productivity = true,
@@ -828,7 +824,7 @@ data:extend({
     name = "pm-module-case",
     energy_required = 5,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-intermediates",
     allow_productivity = true,
     ingredients =
@@ -846,7 +842,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-water-vapour-condensing",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-acidic-water",
     order = "g",
     allow_decomposition = false,
@@ -867,7 +863,7 @@ data:extend({
     name = "pm-trace-acetonitrile",
     energy_required = 8,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-acetonitrile-rnm",
     order = "a",
     main_product = "pm-trace-acetonitrile",
@@ -889,7 +885,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/trace-acetonitrile-looping.png",
     energy_required = 24,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-acetonitrile-rnm",
     order = "b",
     enabled = false,
@@ -908,7 +904,7 @@ data:extend({
     name = "pm-acetonitrile-to-phosphoramidite",
     energy_required = 4,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-acetonitrile-rnm",
     order = "c",
     main_product = "pm-phosphoramidite",
@@ -930,7 +926,7 @@ data:extend({
     name = "pm-myostatin-structuring",
     energy_required = 12,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-myostatin-rnm",
     order = "a",
     main_product = "pm-common-myostatin",
@@ -951,7 +947,7 @@ data:extend({
     name = "pm-myostatin-fixing",
     energy_required = 4,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-myostatin-rnm",
     order = "b",
     ingredients =
@@ -970,7 +966,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/myostatin-oxygenation.png",
     energy_required = 6,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-myostatin-rnm",
     order = "c",
     ingredients =
@@ -991,7 +987,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/myostatin-nitrogenation.png",
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-myostatin-rnm",
     order = "d",
     ingredients =
@@ -1010,7 +1006,7 @@ data:extend({
     name = "pm-iron-sulfur-cluster",
     enabled = false,
     energy_required = 12,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-CISD2-rnm",
     order = "a",
     main_product = "pm-iron-sulfur-cluster",
@@ -1029,7 +1025,7 @@ data:extend({
     type = "recipe",
     name = "pm-CISD2",
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     energy_required = 4,
     subgroup = "pm-CISD2-rnm",
     order = "b",
@@ -1066,7 +1062,7 @@ data:extend({
     },
     energy_required = 8,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-lubricant",
     order = "g",
     allow_productivity = true,
@@ -1090,7 +1086,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/green-circuit-dipping.png",
     enabled = false,
     energy_required = 2.25,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-circuits",
     order = "fa",
     ingredients =
@@ -1146,7 +1142,7 @@ data:extend({
     name = "pm-ethylene-glycol",
     enabled = false,
     energy_required = 4,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-coolant",
     order = "a",
     main_product = "pm-ethylene-glycol",
@@ -1207,7 +1203,7 @@ data:extend({
     name = "pm-sand-creosote",
     enabled = false,
     energy_required = 2,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-zirconium-tm",
     order = "e",
     allow_productivity = true,
@@ -1226,7 +1222,7 @@ data:extend({
     type = "recipe",
     name = "pm-bitumen-creosote",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-zirconium-tm",
     order = "f",
     energy_required = 1,
@@ -1247,7 +1243,7 @@ data:extend({
     name = "pm-crucible",
     enabled = false,
     energy_required = 2.25,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-intermediates",
     order = "b",
     ingredients =
@@ -1283,7 +1279,7 @@ data:extend({
     name = "pm-methanol",
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-plastics",
     order = "g",
     main_product = "pm-methanol",
@@ -1307,7 +1303,7 @@ data:extend({
     name = "pm-methyl-methacrylate",
     energy_required = 6,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-plastics",
     order = "h",
     main_product = "pm-methyl-methacrylate",
@@ -1330,7 +1326,7 @@ data:extend({
     name = "pm-polymethyl-methacrylate",
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-plastics",
     order = "i",
     allow_productivity = true,
@@ -1363,7 +1359,7 @@ data:extend({
     },
     energy_required = 3,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-plastics",
     order = "ia",
     main_product = "pm-polymethyl-methacrylate",
@@ -1386,7 +1382,7 @@ data:extend({
     name = "pm-chloronated-solution",
     enabled = false,
     energy_reqiured = 1,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-plastics",
     order = "j",
     main_product = "pm-chloronated-solution",
@@ -1408,7 +1404,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/chloronated-solution-seperation.png",
     enabled = false,
     energy_required = 2,
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     subgroup = "pm-plastics",
     order = "k",
     ingredients =
@@ -1429,7 +1425,7 @@ data:extend({
     name = "pm-tetrafluoroethylene",
     energy_required = 6,
     enabled = false,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-plastics",
     order = "k",
     main_product = "pm-tetrafluoroethylene",
@@ -1448,7 +1444,7 @@ data:extend({
     name = "pm-polytetrafluoroethylene",
     energy_required = 9,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-plastics",
     order = "l",
     ingredients =
@@ -1467,7 +1463,7 @@ data:extend({
     name = "pm-plaster-of-nauvis",
     enabled = false,
     energy_required = 4,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-plastic-science-process",
     order = "a",
     allow_productivity = true,
@@ -1486,7 +1482,7 @@ data:extend({
     type = "recipe",
     name = "pm-plastic-science-mold",
     energy_required = 2,
-    category = "pm-molding",
+    categories = {"pm-molding"},
     subgroup = "pm-plastic-science-process",
     order = "b",
     enabled = false,
@@ -1505,7 +1501,7 @@ data:extend({
     name = "pm-filled-plastic-science-mold",
     energy_required = 1,
     enabled = false,
-    category = "pm-advanced-molding",
+    categories = {"pm-advanced-molding"},
     subgroup = "pm-plastic-science-process",
     order = "c",
     ingredients =
@@ -1554,7 +1550,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 3,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-processing-units",
     ingredients =
     {
@@ -1582,7 +1578,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 3,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-processing-units",
     ingredients =
     {
@@ -1620,7 +1616,7 @@ data:extend({
     name = "pm-ammonium-chloride",
     enabled = false,
     energy_required = 3,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-platinum-tm",
     order = "ca",
     ingredients =
@@ -1656,7 +1652,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-seed-crystal",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 20,
     allow_productivity = true,
@@ -1790,7 +1786,7 @@ data:extend({
     type = "recipe",
     name = "pm-vacuum-tube-getter",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-intermediates",
     energy_required = 7,
     allow_productivity = true,
@@ -1866,7 +1862,7 @@ data:extend({
     type = "recipe",
     name = "pm-genevas-neglection-magazine",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "ammo",
     order = "a[basic-clips]-ca",
     energy_required = 2,
@@ -1888,7 +1884,7 @@ data:extend({
     name = "pm-phosgene",
     enabled = false,
     energy_required = 1,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-chlorine-rnm",
     order = "x",
     allow_productivity = true,
@@ -1940,7 +1936,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-air-filter",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     subgroup = "pm-air-filters-rnm",
     order = "c",
     enabled = false,
@@ -1961,7 +1957,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-trace-gas-air-filter",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     subgroup = "pm-trace-gas-rnm",
     order = "b",
     energy_required = 4,
@@ -2031,7 +2027,7 @@ data:extend({
     name = "pm-sodium-grenade",
     enabled = false,
     energy_required = 2,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients = 
     {
       PM.ingredient("pm-sodium", 6),
@@ -2067,7 +2063,7 @@ data:extend({
     type = "recipe",
     name = "pm-genevas-neglection-shotgun-shell",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-shotgun-ammo",
     order = "d",
     energy_required = 2,
@@ -2143,7 +2139,7 @@ data:extend({
     type = "recipe",
     name = "pm-genevas-neglection-shotgun-slug",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-shotgun-ammo",
     order = "da",
     energy_required = 7,
@@ -2164,7 +2160,7 @@ data:extend({
     type = "recipe",
     name = "pm-empty-fuel-rod",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-fuel-rods",
     order = "a",
     energy_required = 10,
@@ -2188,7 +2184,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/spent-fuel-rod-reprocessing.png",
     enabled = false,
     energy_required = 10,
-    category = "pm-advanced-crafting-with-fluid",
+    categories = {"pm-advanced-crafting-with-fluid"},
     subgroup = "pm-fuel-rods",
     order = "b",
     ingredients =
@@ -2246,7 +2242,7 @@ data:extend({
     type = "recipe",
     name = "pm-ruby-dust",
     energy_required = 5,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-ruby-ptm",
     order = "a",
     enabled = false,
@@ -2263,7 +2259,7 @@ data:extend({
     type = "recipe",
     name = "pm-citrine-dust",
     energy_required = 5,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-citrine-ptm",
     order = "a",
     enabled = false,
@@ -2280,7 +2276,7 @@ data:extend({
     type = "recipe",
     name = "pm-emerald-dust",
     energy_required = 5,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-emerald-ptm",
     order = "a",
     enabled = false,
@@ -2297,7 +2293,7 @@ data:extend({
     type = "recipe",
     name = "pm-sapphire-dust",
     energy_required = 5,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-sapphire-ptm",
     order = "a",
     enabled = false,
@@ -2314,7 +2310,7 @@ data:extend({
     type = "recipe",
     name = "pm-lapis-lazuli-dust",
     energy_required = 5,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-lapis-lazuli-ptm",
     order = "a",
     enabled = false,
@@ -2331,7 +2327,7 @@ data:extend({
     type = "recipe",
     name = "pm-garnet-dust",
     energy_required = 5,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-garnet-ptm",
     order = "a",
     enabled = false,
@@ -2351,7 +2347,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/ruby-leeching.png",
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-ruby-ptm",
     order = "b",
     enabled = false,
@@ -2372,7 +2368,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/citrine-leeching.png",
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-citrine-ptm",
     order = "b",
     enabled = false,
@@ -2394,7 +2390,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/emerald-leeching.png",
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-emerald-ptm",
     order = "b",
     enabled = false,
@@ -2416,7 +2412,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/sapphire-leeching.png",
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-sapphire-ptm",
     order = "b",
     enabled = false,
@@ -2438,7 +2434,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/lapis-lazuli-leeching.png",
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-lapis-lazuli-ptm",
     order = "b",
     enabled = false,
@@ -2460,7 +2456,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/garnet-leeching.png",
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-garnet-ptm",
     order = "b",
     enabled = false,
@@ -2483,7 +2479,7 @@ data:extend({
     {
         primary = {0.902, 0.718, 0.718}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-ruby-ptm",
     order = "ba",
     enabled = false,
@@ -2508,7 +2504,7 @@ data:extend({
     {
         primary = {0.902, 0.812, 0.718}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-citrine-ptm",
     order = "ba",
     enabled = false,
@@ -2533,7 +2529,7 @@ data:extend({
     {
         primary = {0.718, 0.902, 0.718}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-emerald-ptm",
     order = "ba",
     enabled = false,
@@ -2558,7 +2554,7 @@ data:extend({
     {
         primary = {0.718, 0.808, 0.902}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-lapis-lazuli-ptm",
     order = "ba",
     enabled = false,
@@ -2583,7 +2579,7 @@ data:extend({
     {
         primary = {0.718, 0.902, 0.878}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-sapphire-ptm",
     order = "ba",
     enabled = false,
@@ -2608,7 +2604,7 @@ data:extend({
     {
         primary = {0.89, 0.718, 0.902}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-garnet-ptm",
     order = "ba",
     enabled = false,
@@ -2630,7 +2626,7 @@ data:extend({
     type = "recipe",
     name = "pm-garnet-saw",
     energy_required = 5,
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     subgroup = "pm-garnet-ptm",
     order = "d",
     enabled = false,
@@ -2734,7 +2730,7 @@ data:extend({
     type = "recipe",
     name = "pm-lapis-lazuli-dye",
     energy_required = 12,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-lapis-lazuli-ptm",
     order = "c",
     enabled = false,
@@ -2757,7 +2753,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/water-desaltination.png",
     subgroup = "pm-garnet-ptm",
     order = "c",
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     hide_from_player_crafting = true,
     enabled = false,
     energy_required = 1.25,
@@ -2783,7 +2779,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-ruby-ptm",
     order = "x",
     allow_productivity = true,
@@ -2807,7 +2803,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-citrine-ptm",
     order = "x",
     allow_productivity = true,
@@ -2831,7 +2827,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-emerald-ptm",
     order = "x",
     allow_productivity = true,
@@ -2855,7 +2851,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-sapphire-ptm",
     order = "x",
     allow_productivity = true,
@@ -2879,7 +2875,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-lapis-lazuli-ptm",
     order = "x",
     allow_productivity = true,
@@ -2903,7 +2899,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-garnet-ptm",
     order = "x",
     allow_productivity = true,
@@ -2923,8 +2919,7 @@ data:extend({
     name = "pm-gunpowder",
     enabled = false,
     energy_required = 3,
-    category = "chemistry",
-    additional_categories = {"pm-acids"},
+    categories = {"chemistry", "pm-acids"},
     subgroup = "ammo",
     order = "A",
     allow_productivity = true,
@@ -2946,7 +2941,7 @@ data:extend({
     name = "pm-water-hydrogen-peroxide",
     enabled = false,
     energy_required = 10,
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     subgroup = "pm-rockets",
     order = "a",
     allow_productivity = true,
@@ -2987,7 +2982,7 @@ data:extend({
     name = "pm-barely-etched-silicon-wafer",
     enabled = false,
     energy_required = 7.5,
-    category = "pm-advanced-crafting-with-fluid",
+    categories = {"pm-advanced-crafting-with-fluid"},
     subgroup = "pm-silicon-mt",
     order = "l",
     ingredients = 
@@ -3005,7 +3000,7 @@ data:extend({
     name = "pm-etched-silicon-wafer",
     enabled = false,
     energy_required = 7.5,
-    category = "pm-advanced-crafting-with-fluid",
+    categories = {"pm-advanced-crafting-with-fluid"},
     subgroup = "pm-silicon-mt",
     order = "la",
     ingredients = 
@@ -3043,8 +3038,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 1,
-    category = "crafting", 
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"crafitng", "pm-circuit-boards"},
     subgroup = "pm-advanced-circuits",
     order = "a",
     allow_productivity = true,
@@ -3105,8 +3099,7 @@ data:extend({
         quaternary = tints.empty --right pipe/container
     },
     energy_required = 1.5,
-    category = "crafting", 
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"crafting", "pm-circuit-boards"},
     subgroup = "pm-advanced-circuits",
     order = "c",
     enabled = false,
@@ -3171,8 +3164,7 @@ data:extend({
         quaternary = tints.empty --right pipe/container
     },
     energy_required = 3,
-    category = "crafting", 
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"crafting", "pm-circuit-boards"},
     subgroup = "pm-advanced-circuits",
     order = "e",
     enabled = false,
@@ -3237,8 +3229,7 @@ data:extend({
         quaternary = tints.ferric_chloride --right pipe/container
     },
     energy_required = 4.5,
-    category = "pm-advanced-crafting-with-fluid",
-    additional_categories = {"pm-circuit-boards"},
+    categories = {"pm-advanced-crafting-with-fluid", "pm-circuit-boards"},
     subgroup = "pm-advanced-circuits",
     order = "g",
     enabled = false,
@@ -3286,7 +3277,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/advanced-semiconfuctor.png",
     enabled = false,
     energy_required = 3,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-advanced-circuits",
     order = "i",
     allow_productivity = true,
@@ -3308,7 +3299,7 @@ data:extend({
     name = "pm-dimethyldichlorosilane",
     enabled = false,
     energy_required = 6,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-silicon-mt",
     order = "db",
     main_product = "pm-dimethyldichlorosilane",
@@ -3331,7 +3322,7 @@ data:extend({
     name = "pm-liquid-silicone",
     enabled = false,
     energy_required = 3,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     allow_productivity = true,
     ingredients = 
     {
@@ -3350,7 +3341,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/tri-to-dichlorosilane.png",
     energy_required = 2,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     main_product = "pm-dichlorosilane",
     ingredients = 
     {
@@ -3370,7 +3361,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/di-to-trichlorosilane.png",
     energy_required = 2,
     enabled = false,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     main_product = "pm-trichlorosilane",
     ingredients = 
     {
@@ -3391,7 +3382,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 10,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "terrain",
     order = "A",
     allow_productivity = true,
@@ -3412,7 +3403,7 @@ data:extend({
     name = "pm-polydimethylsiloxane",
     energy_required = 8,
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-coolant",
     order = "d",
     allow_productivity = true,
@@ -3613,7 +3604,7 @@ data:extend({
     name = "pm-calcium-sulfate-concrete",
     energy_required = 2.5,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       PM.ingredient("pm-concrete-slurry", 10, "fluid"),
@@ -3631,7 +3622,7 @@ data:extend({
     name = "pm-calcium-sulfate-refined-concrete",
     energy_required = 5,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       PM.ingredient("pm-concrete-slurry", 20, "fluid"),
@@ -3648,7 +3639,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-spiderling-issy",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     energy_required = 45,
     enabled = false,
     ingredients =
@@ -3759,7 +3750,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-empty-glass-ampule",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     energy_required = 10,
     enabled = false,
     allow_productivity = true,
@@ -3790,7 +3781,7 @@ data:extend({
     energy_required = 10,
     enabled = false,
     allow_productivity = true,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-borosilicate-glassing",
     order = "d",
     ingredients =
@@ -3915,7 +3906,7 @@ data:extend({
     name = "pm-nitric-oxide",
     enabled = false,
     energy_required = 3,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-nitric-oxide",
     ingredients =
@@ -3936,7 +3927,7 @@ data:extend({
     name = "pm-nitric-acid",
     enabled = false,
     energy_required = 6,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     allow_productivity = true,
     main_product = "pm-nitric-acid",
     ingredients =
@@ -3955,7 +3946,7 @@ data:extend({
     name = "pm-aqua-regia",
     enabled = false,
     energy_required = 6,
-    category = "oil-processing",
+    categories = {"oil-processing"},
     allow_productivity = true,
     main_product = "pm-aqua-regia",
     ingredients =
@@ -3977,7 +3968,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/nitrosyl-seperation.png",
     enabled = false,
     energy_required = 3,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-nitric-acid-rnm",
     order = "e",
     ingredients = 
@@ -4008,7 +3999,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients = 
     {
       PM.ingredient("electric-engine-unit", 1),
@@ -4041,7 +4032,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients = 
     {
       PM.ingredient("electric-engine-unit", 1),
@@ -4075,7 +4066,7 @@ data:extend({
     },
     energy_required = 5,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-lubricant",
     order = "h",
     allow_productivity = true,
@@ -4163,7 +4154,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 2.4,
-    category = "pm-coking",
+    categories = {"pm-coking"},
     subgroup = "pm-coke",
     order = "b",
     allow_productivity = true,
@@ -4196,7 +4187,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 2.4,
-    category = "pm-coking",
+    categories = {"pm-coking"},
     subgroup = "pm-coke",
     order = "c",
     emissions_multiplier = 0.75,
@@ -4218,7 +4209,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/coal-tar-seperation.png",
     enabled = false,
     energy_required = 3,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-coke",
     order = "d",
     ingredients =
@@ -4251,7 +4242,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 2.4,
-    category = "pm-coking-with-fluid",
+    categories = {"pm-coking-with-fluid"},
     subgroup = "pm-coke",
     order = "e",
     emissions_multiplier = 0.66,
@@ -4274,7 +4265,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/coal-gas-seperation.png",
     enabled = false,
     energy_required = 3,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-coke",
     order = "f",
     main_product = "pm-coke",
@@ -4293,7 +4284,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-tantalum-contacts",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 1,
     allow_productivity = true,
@@ -4310,7 +4301,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-niobium-contacts",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 1,
     allow_productivity = true,
@@ -4383,7 +4374,7 @@ data:extend({
     name = "pm-cyclohexane-carboxaldehyde-solution",
     enabled = false,
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-cyclohexane-carboxaldehyde-solution",
     ingredients =
@@ -4403,7 +4394,7 @@ data:extend({
     name = "pm-cyclohexane-carboxaldehyde",
     enabled = false,
     energy_required = 4,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-cyclohexane-carboxaldehyde",
     ingredients =
@@ -4426,7 +4417,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 2,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     ingredients =
     {
@@ -4445,7 +4436,7 @@ data:extend({
     name = "pm-phenylhydrazine",
     enabled = false,
     energy_required = 4,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     allow_productivity = true,
     main_product = "pm-phenylhydrazine",
     ingredients =
@@ -4469,7 +4460,7 @@ data:extend({
     name = "pm-acetic-acid",
     enabled = false,
     energy_required = 5,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-acetic-acid",
     ingredients =
@@ -4489,7 +4480,7 @@ data:extend({
     name = "pm-1-3-5-oxadiazine-NON-host",
     enabled = false,
     energy_required = 30,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     main_product = "pm-1-3-5-oxadiazine-NON-host",
     ingredients =
@@ -4509,7 +4500,7 @@ data:extend({
     name = "pm-phenyllithium",
     enabled = false,
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     ingredients =
     {
@@ -4527,7 +4518,7 @@ data:extend({
     name = "pm-2-phenylpyridine",
     enabled = false,
     energy_required = 4,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     ingredients =
     {
@@ -4545,7 +4536,7 @@ data:extend({
     name = "pm-iridium-trichloride",
     enabled = false,
     energy_required = 5,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     allow_productivity = true,
     ingredients =
     {
@@ -4562,7 +4553,7 @@ data:extend({
     name = "pm-tris-2-phenylpyridine-iridium",
     enabled = false,
     energy_required = 30,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -4579,7 +4570,7 @@ data:extend({
     name = "pm-ethyl-acetate",
     enabled = false,
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     ingredients =
     {
@@ -4597,7 +4588,7 @@ data:extend({
     name = "pm-ir-piq-3-acetate-solution",
     enabled = false,
     energy_required = 4,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     ingredients =
     {
@@ -4614,7 +4605,7 @@ data:extend({
     name = "pm-ir-piq-3",
     enabled = false,
     energy_required = 30,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     main_product = "pm-ir-piq-3",
     ingredients =
@@ -4647,7 +4638,7 @@ data:extend({
       },
     },
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-lubricant",
     order = "f",
     show_amount_in_title = true,
@@ -4740,7 +4731,7 @@ data:extend({
     type = "recipe",
     name = "pm-YAG-laser",
     energy_required = 10,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     subgroup = "pm-garnet-ptm",
     order = "d",
     enabled = false,
@@ -4782,7 +4773,7 @@ data:extend({
     name = "pm-space-processing-unit",
     enabled = false,
     energy_required = 12,
-    category = "pm-circuitry",
+    categories = {"pm-circuitry"},
     allow_productivity = true,
     ingredients = 
     {
@@ -4821,7 +4812,7 @@ data:extend({
         quaternary = tints.ferric_chloride --right pipe/container
     },
     energy_required = 9,
-    category = "pm-circuit-boards",
+    categories = {"pm-circuit-boards"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -4861,7 +4852,7 @@ data:extend({
         quaternary = tints.ferric_chloride --right pipe/container
     },
     energy_required = 9,
-    category = "pm-circuit-boards",
+    categories = {"pm-circuit-boards"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -4882,7 +4873,7 @@ data:extend({
     name = "pm-advanced-processing-unit",
     enabled = false,
     energy_required = 12,
-    category = "pm-circuitry",
+    categories = {"pm-circuitry"},
     allow_productivity = true,
     ingredients =
     {
@@ -4904,7 +4895,7 @@ data:extend({
     name = "pm-gyroscope",
     enabled = false,
     energy_required = 20,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients = 
     {
@@ -5003,7 +4994,7 @@ data:extend({
     name = "pm-supercapacitor",
     enabled = false,
     energy_required = 6,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients = 
     {
@@ -5024,7 +5015,7 @@ data:extend({
     name = "pm-cobalt-manganese-bromide-catalyst",
     enabled = false,
     energy_required = 3,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
         PM.ingredient("pm-catalyst-container", 1),
@@ -5042,7 +5033,7 @@ data:extend({
     name = "pm-terephthaltic-acid",
     enabled = false,
     energy_required = 6,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     allow_productivity = true,
     main_product = "pm-terephthaltic-acid",
     ingredients =
@@ -5062,7 +5053,7 @@ data:extend({
     name = "pm-dimethyl-terephthalate",
     enabled = false,
     energy_required = 6,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-dimethyl-terephthalate",
     ingredients =
@@ -5081,7 +5072,7 @@ data:extend({
     name = "pm-polyethylene-terephthalate",
     enabled = false,
     energy_required = 4.5,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     main_product = "pm-polyethylene-terephthalate",
     ingredients =
@@ -5103,7 +5094,7 @@ data:extend({
     name = "pm-mylar",
     enabled = false,
     energy_required = 3,
-    category = "pm-molding",
+    categories = {"pm-molding"},
     allow_productivity = true,
     ingredients =
     {
@@ -5121,7 +5112,7 @@ data:extend({
     name = "pm-silicon-carbide",
     enabled = false,
     energy_required = 18,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     ingredients =
     {
@@ -5139,7 +5130,7 @@ data:extend({
     name = "pm-graphite",
     enabled = false,
     energy_required = 36,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     allow_productivity = true,
     main_product = "pm-graphite",
     ingredients = 
@@ -5159,7 +5150,7 @@ data:extend({
     name = "pm-graphene",
     enabled = false,
     energy_required = 9,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     allow_productivity = true,
     main_product = "pm-graphene",
     ingredients =
@@ -5180,7 +5171,7 @@ data:extend({
     name = "pm-silicon-on-sapphire",
     enabled = false,
     energy_required = 6,
-    category = "pm-crystallisation",
+    categories = {"pm-crystallisation"},
     allow_productivity = true,
     main_product = "pm-silicon-on-sapphire",
     ingredients =
@@ -5202,7 +5193,7 @@ data:extend({
     name = "pm-space-hardened-shielding",
     enabled = false,
     energy_required = 9,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -5239,7 +5230,7 @@ data:extend({
     name = "pm-high-density-structure",
     enabled = false,
     energy_required = 15,
-    category = "pm-advanced-crafting-with-fluid",
+    categories = {"pm-advanced-crafting-with-fluid"},
     allow_productivity = true,
     main_product = "pm-high-density-structure",
     ingredients =
@@ -5278,7 +5269,7 @@ data:extend({
     name = "pm-geothermal-drilling-fluid",
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     ingredients =
     {
         PM.ingredient("water", 50, "fluid"),
@@ -5312,7 +5303,7 @@ data:extend({
     name = "pm-geothermal-bore-mk2",
     enabled = false,
     energy_required = 3,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients = 
     {
         PM.ingredient("pm-geothermal-bore-mk1", 1),
@@ -5387,7 +5378,7 @@ data:extend({
     name = "pm-drilling-fluid",
     enabled = false,
     energy_required = 10,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     ingredients = 
     {
@@ -5411,7 +5402,7 @@ data:extend({
     name = "pm-nitrobenzene-mixed-acid",
     enabled = false,
     energy_required = 6,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     ingredients =
     {
@@ -5433,7 +5424,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 4,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     main_product = "pm-nitrobenzene",
     ingredients =
@@ -5474,7 +5465,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 2,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-burning-oil",
     order = "h",
     allow_productivity = true,
@@ -5493,7 +5484,7 @@ data:extend({
     name = "pm-ferrite-magnet",
     enabled = false,
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -5512,7 +5503,7 @@ data:extend({
     name = "pm-monazite-chunks",
     enabled = false,
     energy_required = 6,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     allow_productivity = true,
     main_product = "pm-monazite-chunks",
     ingredients =
@@ -5532,7 +5523,7 @@ data:extend({
     name = "pm-crushed-monazite",
     enabled = false,
     energy_required = 4,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     allow_productivity = true,
     ingredients =
     {
@@ -5561,7 +5552,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     allow_productivity = true,
     ingredients =
     {
@@ -5593,7 +5584,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 8,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     allow_productivity = true,
     ingredients =
     {
@@ -5624,7 +5615,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 10,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     allow_productivity = true,
     ingredients =
     {
@@ -5655,7 +5646,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 12,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     allow_productivity = true,
     ingredients =
     {
@@ -5686,7 +5677,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     subgroup = "pm-monazite-la",
     order = "ha",
     allow_productivity = true,
@@ -5721,7 +5712,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 8,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     subgroup = "pm-monazite-la",
     order = "hb",
     allow_productivity = true,
@@ -5754,7 +5745,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 10,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     subgroup = "pm-monazite-la",
     order = "hc",
     allow_productivity = true,
@@ -5774,7 +5765,7 @@ data:extend({
     type = "recipe",
     name = "pm-pure-bastnasite",
     energy_required = 6,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     allow_productivity = true,
     ingredients =
     {
@@ -5791,7 +5782,7 @@ data:extend({
     type = "recipe",
     name = "pm-leached-bastnasite",
     energy_required = 12,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     main_product = "pm-leached-bastnasite",
     ingredients =
@@ -5811,7 +5802,7 @@ data:extend({
    type = "recipe",
    name = "pm-roasted-bastnasite",
    energy_required = 16,
-   category = "pm-moltening", --should be in one the new furnaces
+   categories = {"pm-moltening"}, --should be in one the new furnaces
    allow_productivity = true,
    main_product = "pm-roasted-bastnasite",
    ingredients =
@@ -5831,7 +5822,7 @@ data:extend({
     name = "pm-o-phenylenediamine",
     enabled = false,
     energy_required = 6,
-    category = "oil-processing",
+    categories = {"oil-processing"},
     allow_productivity = true,
     main_product = "pm-o-phenylenediamine",
     ingredients =
@@ -5853,7 +5844,7 @@ data:extend({
     name = "pm-1-10-phenanthroline",
     enabled = false,
     energy_required = 24,
-    category = "chemistry",
+    categories = {"chemistry"},
     allow_productivity = true,
     ingredients =
     {
@@ -6019,7 +6010,7 @@ data:extend({
     name = "pm-asteroid-piledriver",
     enabled = false,
     energy_reqiured = 7.5,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
         PM.ingredient("pm-high-density-structure", 5),
@@ -6075,7 +6066,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-YAG-laser",
     energy_required = 20,
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -6094,7 +6085,7 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-YAG-laser-head",
     energy_required = 5,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     allow_productivity = true,
     ingredients = 
@@ -6117,7 +6108,7 @@ data:extend({
     name = "pm-light-noble-gas-mixture",
     energy_required = 12,
     enabled = false,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     ingredients =
     {
@@ -6135,7 +6126,7 @@ data:extend({
     name = "pm-heavy-noble-gas-mixture",
     energy_required = 12,
     enabled = false,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     allow_productivity = true,
     ingredients =
     {
@@ -6153,7 +6144,7 @@ data:extend({
     name = "pm-cerium-sulfide-red",
     energy_required = 6,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
         PM.ingredient("pm-cadnium-red", 6),
@@ -6171,7 +6162,7 @@ data:extend({
     name = "pm-phthalo-green",
     energy_required = 6,
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
         PM.ingredient("pm-chrome-green", 6),
@@ -6207,7 +6198,7 @@ data:extend({
     name = "pm-ReBCO-mixture",
     enabled = false,
     energy_required = 15,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     allow_productivity = true,
     ingredients = 
     {
@@ -6225,7 +6216,7 @@ data:extend({
     name = "pm-superconducting-ReBCO",
     enabled = false,
     energy_required = 15,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
         PM.ingredient("pm-ReBCO", 2),
@@ -6245,7 +6236,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 18,
-    category = "pm-blast-smelting",
+    categories = {"pm-blast-smelting"},
     allow_productivity = true,
     ingredients =
     {
@@ -6264,7 +6255,7 @@ data:extend({
         name = "pm-cooled-neodymium-magnet-block",
         enabled = false,
         energy_required = 18,
-        category = "pm-coldening",
+        categories = {"pm-coldening"},
         main_product = "pm-cooled-neodymium-magnet-block",
         ingredients =
         {
@@ -6283,7 +6274,7 @@ data:extend({
         name = "pm-neodymium-magnet-block",
         enabled = false,
         energy_required = 27,
-        category = "crafting-with-fluid",
+        categories = {"crafting-with-fluid"},
         main_product = "pm-neodymium-magnet-block",
         ingredients =
         {

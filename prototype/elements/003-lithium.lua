@@ -54,7 +54,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/calcium-brine.png",
     energy_required = 3,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-lithium-am",
     order = "A",
     enabled = false,
@@ -75,7 +75,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/sodium-brine.png",
     energy_required = 4,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-lithium-am",
     order = "a",
     enabled = false,
@@ -92,7 +92,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-low-concentration-lithium-leeching",
-    category = "pm-leaching",
+    categories = {"pm-leaching"},
     subgroup = "pm-lithium-am",
     order = "b",
     enabled = false,
@@ -112,7 +112,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-medium-concentration-lithium-leeching",
-    category = "pm-leaching",
+    categories = {"pm-leaching"},
     subgroup = "pm-lithium-am",
     order = "c",
     enabled = false,
@@ -132,7 +132,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-high-concentration-lithium-leeching",
-    category = "pm-leaching",
+    categories = {"pm-leaching"},
     subgroup = "pm-lithium-am",
     order = "d",
     enabled = false,
@@ -152,7 +152,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-oversaturated-concentration-lithium-leeching",
-    category = "pm-leaching",
+    categories = {"pm-leaching"},
     subgroup = "pm-lithium-am",
     order = "e",
     enabled = false,
@@ -171,7 +171,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-chloride-electrolysis",
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     subgroup = "pm-lithium-am",
     order = "f",
     enabled = false,
@@ -191,7 +191,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lithium-hydroxide",
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     subgroup = "pm-lithium-am",
     order = "g",
     enabled = false,
@@ -220,7 +220,7 @@ data:extend({
         tertiary = {0.82, 0.698, 0.529, 0.5},
         quartenary = {0.725, 0.925, 0.949}
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-lithium-am",
     order = "h",
     enabled = false,

@@ -29,7 +29,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-oxygen-air-filter",
-        category = "advanced-crafting",
+        categories = {"advanced-crafting"},
         subgroup = "pm-oxygen-rnm",
         order = "a",
         energy_required = 4,
@@ -48,7 +48,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-advanced-oxygen-air-filter",
-        category = "advanced-crafting",
+        categories = {"advanced-crafting"},
         subgroup = "pm-oxygen-rnm",
         order = "b",
         energy_required = 4,
@@ -69,7 +69,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-oxygen-gas",
-        category = "pm-atmospheric-condensing",
+        categories = {"pm-atmospheric-condensing"},
         subgroup = "pm-oxygen-rnm",
         order = "c",
         enabled = false,
@@ -90,7 +90,7 @@ data:extend({
         name = "pm-advanced-oxygen-atmosphere-filtering",
         icon_size = 128,
         icon = "__periodic-madness__/graphics/icons/recipes/oxygen-condensation.png",
-        category = "pm-atmospheric-condensing",
+        categories = {"pm-atmospheric-condensing"},
         subgroup = "pm-oxygen-rnm",
         order = "d",
         enabled = false,
@@ -111,7 +111,7 @@ data:extend({
         name = "pm-oxygen-atmospheric-voiding",
         icon_size = 128,
         icon = "__periodic-madness__/graphics/icons/recipes/oxygen-voiding.png",
-        category = "pm-atmospheric-condensing",
+        categories = {"pm-atmospheric-condensing"},
         subgroup = "pm-oxygen-rnm",
         order = "e",
         enabled = false,
@@ -128,7 +128,7 @@ data:extend({
         name = "pm-liquid-oxygen",
         enabled = false,
         energy_required = 10,
-        category = "pm-cryogenics",
+        categories = {"pm-cryogenics"},
         ingredients =
         {
             PM.ingredient("pm-oxygen-gas", 10, "fluid")
@@ -146,7 +146,7 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/recipes/solid-sodium-hydroxide-mixing.png",
         enabled = false,
         energy_required = 2,
-        category = "pm-acids",
+        categories = {"pm-acids"},
         subgroup = "pm-oxygen-rnm",
         order = "f",
         main_product = "pm-oxygen-gas",

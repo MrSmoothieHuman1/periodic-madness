@@ -62,7 +62,7 @@ data:extend({
     name = "pm-magneto-orbital-trap",
     enabled = false,
     energy_required = 12,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -83,7 +83,7 @@ data:extend({
     name = "pm-borosilicate-magneto-orbital-trap",
     enabled = false,
     energy_required = 12,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     ingredients =
     {
@@ -104,7 +104,7 @@ data:extend({
     name = "pm-francium-forming",
     enabled = false,
     energy_required = 16,
-    category = "pm-cyclotroning",
+    categories = {"pm-cyclotroning"},
     subgroup = "pm-francium-am",
     order = "a",
     ingredients =
@@ -145,7 +145,7 @@ data:extend({
     name = "pm-francium-glass-ampule",
     enabled = false,
     energy_required = 6,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-francium-am",
     order = "c",
     allow_productivity = true,
@@ -167,7 +167,7 @@ data:extend({
     name = "pm-francium-PTx86-enrichment",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/francium-ptx86-enrichment.png",
-    category = "centrifuging",
+    categories = {"centrifuging"},
     crafting_machine_tint =
     {
       primary = {r = 0.5, g = 0.3, b = 0.3},

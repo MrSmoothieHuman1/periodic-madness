@@ -9,7 +9,7 @@ data:extend({
     enabled = true,
     hidden = true,
     hidden_in_factoriopedia = true,
-    category = "pm-steamed-hams",
+    categories = {"pm-steamed-hams"},
     allow_productivity = true,
     ingredients =
     {

@@ -46,7 +46,7 @@ data:extend({
     subgroup = "pm-batteries",
     order = "h",
     fuel_value = "1MJ",
-    fuel_category = "pm-voltatic-piles",
+    fuel_categories = {"pm-voltatic-piles"},
     burnt_result = "pm-uncharged-voltatic-pile",
     stack_size = 50
   },
@@ -112,7 +112,7 @@ data:extend({
     subgroup = "pm-batteries",
     order = "ja",
     burnt_result = "pm-vanadium-redox-battery",
-    fuel_category = "pm-charged-batteries",
+    fuel_categories = {"pm-charged-batteries"},
     fuel_value = "50MJ",
     stack_size = 15
   },
@@ -160,7 +160,7 @@ data:extend({
     subgroup = "pm-batteries",
     order = "la",
     burnt_result = "pm-lithium-sulfur-battery",
-    fuel_category = "pm-charged-batteries",
+    fuel_categories = {"pm-charged-batteries"},
     fuel_value = "25MJ",
     stack_size = 25
   },

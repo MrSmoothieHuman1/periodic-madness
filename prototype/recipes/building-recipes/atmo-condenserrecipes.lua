@@ -5,7 +5,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-atmosphere",
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-atmosphere-rnm",
     order = "a",
     enabled = false,
@@ -19,7 +19,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-trace-gas",
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-trace-gas-rnm",
     order = "b",
     enabled = false,
@@ -41,7 +41,7 @@ data:extend({
     name = "pm-advanced-trace-gas-atmosphere-filtering",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/trace-gas-condensation.png",
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-trace-gas-rnm",
     order = "c",
     enabled = false,
@@ -61,7 +61,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-trace-gas-air-filter",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     subgroup = "pm-trace-gas-rnm",
     order = "a",
     energy_required = 4,
@@ -84,7 +84,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/trace-gas-refining.png",
     energy_required = 3,
     enabled = false,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-trace-gas-rnm",
     order = "e",
     main_product = "pm-helium-gas",
@@ -107,7 +107,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/mixed-noble-gas-seperation.png",
     enabled = false,
     energy_required = 6,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-nb-nb",
     order = "a",
     ingredients = 
@@ -134,7 +134,7 @@ data:extend({
     name = "pm-trace-gas-atmospheric-voiding",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/trace-gas-voiding.png",
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-trace-gas-rnm",
     order = "d",
     enabled = false,
@@ -152,7 +152,7 @@ data:extend({
     type = "recipe",
     name = "pm-air-filterering",
     energy_required = 240,
-    category = "pm-air-filtering",
+    categories = {"pm-air-filtering"},
     hide_from_player_crafting = true,
     ingredients =
     {
@@ -167,7 +167,7 @@ data:extend({
     type = "recipe",
     name = "pm-better-air-filterering",
     energy_required = 360,
-    category = "pm-air-filtering",
+    categories = {"pm-air-filtering"},
     hide_from_player_crafting = true,
     emissions_multiplier = 2,
     ingredients =
@@ -186,7 +186,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/dirty-air-filter-washing.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "c",
     ingredients =
@@ -208,7 +208,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/lithium-dirty-air-filter-cleaning.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "d",
     ingredients =
@@ -230,7 +230,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/sodium-dirty-air-filter-1-cleaning.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "ca",
     ingredients =
@@ -253,7 +253,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/sodium-dirty-air-filter-cleaning.png",
     energy_required = 2,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "da",
     ingredients =

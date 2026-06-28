@@ -61,7 +61,7 @@ data:extend({
         name = "pm-ruthenium-filtered-anode-sludge",
         enabled = false,
         energy_required = 15,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         subgroup = "pm-ruthenium-tm",
         order = "a",
         ingredients =
@@ -93,7 +93,7 @@ data:extend({
         },--]]
         enabled = false,
         energy_required = 15,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-ruthenium-tm",
         order = "b",
         ingredients =
@@ -126,7 +126,7 @@ data:extend({
         },
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-ruthenium-tm",
         order = "ba",
         ingredients =
@@ -145,7 +145,7 @@ data:extend({
         name = "pm-ruthenium-ore",
         enabled = false,
         energy_required = 7.5,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-ruthenium-tm",
         order = "c",
         main_product = "pm-ruthenium-ore",
@@ -168,7 +168,7 @@ data:extend({
         name = "pm-ruthenium-plate",
         enabled = false,
         energy_required = 6.4,
-        category = "smelting",
+        categories = {"smelting"},
         subgroup = "pm-ruthenium-tm",
         order = "d",
         allow_productivity = true,
@@ -187,7 +187,7 @@ data:extend({
         name = "pm-ruthenium-sulfide",
         enabled = false,
         energy_required = 12,
-        category = "chemistry",
+        categories = {"chemistry"},
         ingredients = 
         {
             PM.ingredient("pm-ruthenium-plate", 4),

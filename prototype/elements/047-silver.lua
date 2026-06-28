@@ -51,7 +51,7 @@ data:extend({
     },
     subgroup = "pm-silver-tm",
     order = "a",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },         --main visible colour
@@ -90,7 +90,7 @@ data:extend({
     },
     subgroup = "pm-silver-tm",
     order = "c",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },         --main visible colour
@@ -131,7 +131,7 @@ data:extend({
     },
     subgroup = "pm-silver-tm",
     order = "b",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },      --main visible colour
@@ -157,7 +157,7 @@ data:extend({
     name = "pm-silver-plate",
     subgroup = "pm-silver-tm",
     order = "d",
-    category = "smelting",
+    categories = {"smelting"},
     energy_required = 3.2,
     enabled = false,
     allow_productivity = true,
@@ -186,7 +186,7 @@ data:extend({
     },
     subgroup = "pm-silver-tm",
     order = "e",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -205,7 +205,7 @@ data:extend({
     name = "pm-silver-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/silver-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-silver-tm",
     order = "f",
     energy_required = 9,

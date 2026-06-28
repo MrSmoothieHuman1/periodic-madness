@@ -65,7 +65,7 @@ data:extend({
     },
     subgroup = "pm-aluminium-ptm",
     order = "aa",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0.3, g = 0.3, b = 0.3, a = 1 },    --main visible colour
@@ -92,7 +92,7 @@ data:extend({
     name = "pm-bauxite-powder",
     enabled = false,
     energy_required = 2.5,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-aluminium-ptm",
     order = "b",
     allow_productivity = true,
@@ -114,7 +114,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 4,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-aluminium-ptm",
     order = "c",
     allow_productivity = true,
@@ -135,7 +135,7 @@ data:extend({
     name = "pm-aluminium-ore",
     enabled = false,
     energy_required = 8,
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     subgroup = "pm-aluminium-ptm",
     order = "d",
     ingredients = 
@@ -166,7 +166,7 @@ data:extend({
     },
     subgroup = "pm-aluminium-ptm",
     order = "ab",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0.3, g = 0.3, b = 0.3, a = 1 },    --main visible colour
@@ -193,7 +193,7 @@ data:extend({
     name = "pm-aluminium-plate",
     subgroup = "pm-aluminium-ptm",
     order = "e",
-    category = "smelting",
+    categories = {"smelting"},
     energy_required = 3.2,
     enabled = false,
     allow_productivity = true,
@@ -222,7 +222,7 @@ data:extend({
     },
     subgroup = "pm-aluminium-ptm",
     order = "f",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -241,7 +241,7 @@ data:extend({
     name = "pm-aluminium-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/aluminium-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-aluminium-ptm",
     order = "g",
     energy_required = 9,

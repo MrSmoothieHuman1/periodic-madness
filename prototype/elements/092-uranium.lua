@@ -5,7 +5,7 @@ data:extend({
         icon_size = 64,
         icon = "__base__/graphics/icons/uranium-238.png",
         fuel_value = "5GJ",
-        fuel_category = "pm-uranium-233",
+        fuel_categories = {"pm-uranium-233"},
         subgroup = "pm-uranium-ac",
         order = "ca",
         stack_size = 100,

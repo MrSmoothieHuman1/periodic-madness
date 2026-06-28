@@ -95,7 +95,7 @@ data:extend({
     name = "pm-high-density-transport-belt",
     enabled = false,
     energy_required = 2,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       PM.ingredient("express-transport-belt", 1),
@@ -116,7 +116,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     show_amount_in_title = true,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       PM.ingredient("express-underground-belt", 2),
@@ -135,7 +135,7 @@ data:extend({
     name = "pm-high-density-splitter",
     enabled = false,
     energy_required = 5,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       PM.ingredient("express-splitter", 1),
@@ -366,7 +366,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-cold-inator-3",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-molten-machine",
     order = "e",
     enabled = false,
@@ -386,7 +386,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-molten-inator-3",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-molten-machine",
     order = "d",
     enabled = false,
@@ -741,7 +741,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solar-panel-2",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 10,
     ingredients =
@@ -1072,7 +1072,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-heat-furnace",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "smelting-machine",
     order = "e",
     energy_required = 5,
@@ -1093,7 +1093,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-electric-furnace-2",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "smelting-machine",
     order = "e",
     energy_required = 5,
@@ -1133,7 +1133,7 @@ data:extend({
     name = "pm-concrete-wall",
     enabled = false,
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "defensive-structure",
     order = "aa",
     ingredients =
@@ -1152,7 +1152,7 @@ data:extend({
     name = "pm-bio-wall",
     enabled = false,
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "defensive-structure",
     order = "ab",
     ingredients =
@@ -1170,7 +1170,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-solar-panel-3",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 15,
     ingredients =
@@ -1228,7 +1228,7 @@ data:extend({
     name = "pm-express-inserter",
     enabled = false,
     energy_required = 1,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-express-inserters",
     order = "a",
     ingredients = 
@@ -1247,7 +1247,7 @@ data:extend({
     type = "recipe",
     name = "pm-express-long-handed-inserter",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-express-inserters",
     order = "b",
     energy_required = 1,
@@ -1268,7 +1268,7 @@ data:extend({
     type = "recipe",
     name = "pm-express-bulk-inserter",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-express-inserters",
     order = "c",
     energy_required = 1,
@@ -1290,7 +1290,7 @@ data:extend({
     name = "pm-beacon-2",
     enabled = false,
     energy_required = 15,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "module",
     order = "b",
     ingredients = 
@@ -1311,7 +1311,7 @@ data:extend({
     name = "pm-hub-beacon",
     enabled = false,
     energy_required = 20,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "module",
     order = "c",
     ingredients = 
@@ -1333,7 +1333,7 @@ data:extend({
     name = "pm-proximity-beacon",
     enabled = false,
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "module",
     order = "d",
     ingredients = 
@@ -1372,7 +1372,7 @@ data:extend({
     name = "pm-electric-boiler-2",
     enabled = false,
     energy_required = 6,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients = 
     {
       PM.ingredient("pm-electric-boiler-1", 1),
@@ -1405,7 +1405,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-washing-plant-3",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-water-machine",
     order = "da",
     enabled = false,
@@ -1484,7 +1484,7 @@ data:extend({
     type = "recipe",
     name = "pm-longer-handed-inserter",
     enabled = false,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     subgroup = "inserter",
     order = "da",
     energy_required = 1,
@@ -1541,7 +1541,7 @@ data:extend({
     name = "pm-osmium-pipe",
     enabled = false,
     energy_required = 2,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients = 
     {
       PM.ingredient("pm-osmiridium-plate", 2),
@@ -1558,7 +1558,7 @@ data:extend({
     name = "pm-assembling-machine-4",
     enabled = false,
     energy_required = 2,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients = 
     {
       PM.ingredient("assembling-machine-3", 1),
@@ -1713,7 +1713,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-osmium-pipe-to-ground",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 2,
     ingredients = 
@@ -1732,7 +1732,7 @@ data:extend({
     name = "pm-electric-mining-drill-3",
     enabled = false,
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
       PM.ingredient("pm-electric-mining-drill-2", 1),
@@ -1874,7 +1874,7 @@ data:extend({
     name = "pm-blast-furnace",
     enabled = false,
     energy_required = 4,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     ingredients =
     {
         PM.ingredient("electric-furnace", 1),

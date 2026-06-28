@@ -118,7 +118,7 @@ data:extend({
           scale = 1.5,
           animation_speed = 0.5,
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/roboport-open.ogg", volume = 0.5},
         close_sound = {filename = "__base__/sound/open-close/roboport-close.ogg", volume = 0.4},
         working_sound =
@@ -222,7 +222,7 @@ data:extend({
               }
             }
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/roboport-open.ogg", volume = 0.5},
         close_sound = {filename = "__base__/sound/open-close/roboport-close.ogg", volume = 0.4},
         working_sound =
@@ -307,7 +307,7 @@ data:extend({
               }
             }
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         open_sound = {filename = "__base__/sound/open-close/roboport-open.ogg", volume = 0.5},
         close_sound = {filename = "__base__/sound/open-close/roboport-close.ogg", volume = 0.4},
         working_sound =

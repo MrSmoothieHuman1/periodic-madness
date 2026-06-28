@@ -32,8 +32,6 @@ data.raw["technology"]["automation-3"].unit.ingredients =
 data.raw["technology"]["logistic-science-pack"].icon_size = 256
 data.raw["technology"]["logistic-science-pack"].icon = "__periodic-madness__/graphics/technology/advanced-transition-metal-unlock.png"
 data.raw["technology"]["logistic-science-pack"].prerequisites = {"pm-mercury-processing", "steel-processing", "pm-advanced-transition-metal-refining"}
-data.raw["tool"]["logistic-science-pack"].icon = "__periodic-madness__/graphics/icons/science/advanced-transition-metal-pack.png"
-data.raw["tool"]["logistic-science-pack"].icon_size = 64
 data.raw["technology"]["sulfur-processing"].effects =
 {
   PM.unlock_recipe("pm-vanadium-oxide"),

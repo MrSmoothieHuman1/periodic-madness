@@ -81,7 +81,7 @@ data:extend({
         name = "pm-hafnium-chunks",
         enabled = false,
         energy_required = 5,
-        category = "pm-acids",
+        categories = {"pm-acids"},
         allow_productivity = true,
         ingredients =
         {
@@ -104,7 +104,7 @@ data:extend({
         },
         enabled = false,
         energy_required = 12,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         allow_productivity = true,
         ingredients =
         {
@@ -141,7 +141,7 @@ data:extend({
         },
         enabled = false,
         energy_required = 10,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         allow_productivity = true,
         ingredients =
         {
@@ -160,7 +160,7 @@ data:extend({
         name = "pm-impure-hafnium",
         enabled = false,
         energy_required = 30,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         main_product = "pm-impure-hafnium",
         ingredients =
@@ -180,7 +180,7 @@ data:extend({
         name = "pm-hafnium-iodide",
         enabled = false,
         energy_required = 20,
-        category = "chemistry",
+        categories = {"chemistry"},
         allow_productivity = true,
         main_product = "pm-hafnium-iodide",
         ingredients = 
@@ -202,7 +202,7 @@ data:extend({
         name = "pm-hafnium-ore",
         enabled = false,
         energy_required = 20,
-        category = "pm-electrolysis",
+        categories = {"pm-electrolysis"},
         allow_productivity = true,
         main_product = "pm-hafnium-ore",
         ingredients = 

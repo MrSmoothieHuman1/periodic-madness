@@ -77,7 +77,7 @@ data:extend({
         name = "pm-neodymium-frothing",
         enabled = false,
         energy_required = 12,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         subgroup = "pm-neodymium-la",
         order = "a",
         allow_productivity = true,
@@ -100,7 +100,7 @@ data:extend({
         name = "pm-neodymium-concentrate",
         enabled = false,
         energy_required = 24,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         allow_productivity = true,
         main_product = "pm-neodymium-concentrate",
         ingredients =
@@ -121,7 +121,7 @@ data:extend({
         name = "pm-neodymium-oxide",
         enabled = false,
         energy_required = 9,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         main_product = "pm-neodymium-oxide",
         ingredients =
         {
@@ -139,7 +139,7 @@ data:extend({
         name = "pm-molten-neodymium",
         enabled = false,
         energy_required = 18,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         ingredients =
         {
@@ -156,7 +156,7 @@ data:extend({
         name = "pm-neodymium-plate",
         enabled = false,
         energy_required = 18,
-        category = "pm-coldening",
+        categories = {"pm-coldening"},
         allow_productivity = true,
         main_product = "pm-neodymium-plate",
         ingredients =
@@ -177,7 +177,7 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/recipes/neodymium-tailings-looping.png",
         enabled = false,
         energy_required = 6,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         subgroup = "pm-neodymium-la",
         order = "h",
         main_product = "pm-neodymium-froth",

@@ -8,7 +8,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/zirconia-CO2-electroylsis.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     main_product = "pm-carbon-monoxide",
     ingredients =
     {
@@ -29,7 +29,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/water-electrolysis.png",
     enabled = false,
     energy_required = 1,
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     main_product = "pm-oxygen-gas",
     ingredients =
     {
@@ -50,7 +50,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/water-mercury-electrolysis.png",
     enabled = false,
     energy_required = 1,
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     main_product = "pm-oxygen-gas",
     ingredients =
     {
@@ -70,7 +70,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/water-platinum-electrolysis.png",
     enabled = false,
     energy_required = 1,
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     main_product = "pm-oxygen-gas",
     ingredients =
     {

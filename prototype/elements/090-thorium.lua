@@ -87,7 +87,7 @@ data:extend({
       },
       subgroup = "pm-thorium-ac",
       burnt_result = "pm-liquid-thorium-fluoride-residue",
-      fuel_category = "pm-thorium",
+      fuel_categories = {"pm-thorium"},
       fuel_value = "20GJ",
       order = "l",
       stack_size = 50
@@ -187,7 +187,7 @@ data:extend({
         name = "pm-thorium-cast-iron-vessel",
         enabled = false,
         energy_required = 27,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         ingredients =
         {
             PM.ingredient("pm-molten-iron", 15, "fluid"),
@@ -205,7 +205,7 @@ data:extend({
         name = "pm-phosphoryl-chloride",
         enabled = false,
         energy_required = 9,
-        category = "chemistry",
+        categories = {"chemistry"},
         main_product = "pm-phosphoryl-chloride",
         ingredients =
         {
@@ -225,7 +225,7 @@ data:extend({
         name = "pm-tributyl-phosphate",
         enabled = false,
         energy_required = 18,
-        category = "chemistry",
+        categories = {"chemistry"},
         allow_productivity = true,
         ingredients =
         {
@@ -243,7 +243,7 @@ data:extend({
         name = "pm-fine-monazite-sand",
         enabled = false,
         energy_required = 8,
-        category = "pm-crushing",
+        categories = {"pm-crushing"},
         allow_productivity = true,
         main_product = "pm-fine-monazite-sand",
         ingredients =
@@ -261,7 +261,7 @@ data:extend({
         name = "pm-thorium-filtered-concentrate",
         enabled = false,
         energy_required = 16,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         allow_productivity = true,
         main_product = "pm-thorium-filtered-concentrate",
         ingredients =
@@ -284,7 +284,7 @@ data:extend({
         name = "pm-thorium-filter-cake",
         enabled = false,
         energy_required = 36,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         main_product = "pm-thorium-filter-cake",
         ingredients =
         {
@@ -303,7 +303,7 @@ data:extend({
         name = "pm-thorium-filter-cake-seperation",
         enabled = false,
         energy_required = 24,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         allow_productivity = true,
         main_product = "pm-thorium-precipitate",
         ingredients =
@@ -324,7 +324,7 @@ data:extend({
         name = "pm-trace-thorium",
         enabled = false,
         energy_required = 16,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         allow_productivity = true,
         ingredients =
         {
@@ -341,7 +341,7 @@ data:extend({
         name = "pm-thorium-232",
         enabled = false,
         energy_required = 12,
-        category = "chemistry",
+        categories = {"chemistry"},
         ingredients =
         {
             PM.ingredient("pm-trace-thorium", 10),
@@ -359,7 +359,7 @@ data:extend({
         name = "pm-thorium-233",
         enabled = false,
         energy_required = 24,
-        category = "pm-cyclotroning",
+        categories = {"pm-cyclotroning"},
         allow_productivity = true,
         ingredients =
         {
@@ -375,7 +375,7 @@ data:extend({
         name = "pm-liquid-thorium-fluoride",
         enabled = false,
         energy_required = 12,
-        category = "chemistry",
+        categories = {"chemistry"},
         main_product = "pm-liquid-thorium-fluoride",
         ingredients =
         {
@@ -395,7 +395,7 @@ data:extend({
         name = "pm-liquid-thorium-fluoride-fuel-cell",
         enabled = false,
         energy_required = 32,
-        category = "crafting-with-fluid",
+        categories = {"crafting-with-fluid"},
         ingredients =
         {
             PM.ingredient("pm-liquid-thorium-fluoride", 15, "fluid"),

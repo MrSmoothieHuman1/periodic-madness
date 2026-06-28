@@ -51,7 +51,7 @@ data:extend({
         name = "pm-neodymium-146",
         enabled = false,
         energy_required = 4,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         allow_productivity = true,
         main_product = "pm-neodymium-146",
         ingredients =
@@ -72,7 +72,7 @@ data:extend({
         name = "pm-neodymium-147",
         enabled = false,
         energy_required = 12,
-        category = "pm-cyclotroning",
+        categories = {"pm-cyclotroning"},
         allow_productivity = true,
         ingredients =
         {
@@ -88,7 +88,7 @@ data:extend({
         name = "pm-promethium-147",
         enabled = false,
         energy_required = 10,
-        category = "pm-beta-decay",
+        categories = {"pm-beta-decay"},
         main_product = "pm-promethium-147",
         ingredients =
         {
@@ -106,7 +106,7 @@ data:extend({
         name = "pm-pennyjim-neodymium-146-enrichment-process",
         enabled = false,
         energy_required = 30,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         subgroup = "pm-promethium-la",
         order = "d",
         allow_productivity = true,
@@ -128,7 +128,7 @@ data:extend({
         name = "pm-akip-neodymium-147-enrichment-process",
         enabled = false,
         energy_required = 30,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         subgroup = "pm-promethium-la",
         order = "e",
         allow_productivity = true,

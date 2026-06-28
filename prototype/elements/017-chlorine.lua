@@ -86,7 +86,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-chlorine-air-filter",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     subgroup = "pm-chlorine-rnm",
     order = "a",
     energy_required = 4,
@@ -105,7 +105,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-chlorine-air-filter",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     subgroup = "pm-chlorine-rnm",
     order = "b",
     energy_required = 4,
@@ -126,7 +126,7 @@ data:extend({
   {
     type = "recipe",
     name = "pm-chlorine",
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-chlorine-rnm",
     order = "c",
     enabled = false,
@@ -147,7 +147,7 @@ data:extend({
     name = "pm-advanced-chlorine-atmosphere-filtering",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/chlorine-condensation.png",
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-chlorine-rnm",
     order = "d",
     enabled = false,
@@ -168,7 +168,7 @@ data:extend({
     name = "pm-chlorine-atmospheric-voiding",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/chlorine-voiding.png",
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-chlorine-rnm",
     order = "e",
     enabled = false,
@@ -188,7 +188,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/seawater-refining.png",
     subgroup = "pm-chlorine-rnm",
     order = "fa",
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     enabled = false,
     energy_required = 2,
     ingredients =
@@ -208,7 +208,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/seawater-electrolysis.png",
     subgroup = "pm-chlorine-rnm",
     order = "fb",
-    category = "pm-electrolysis",
+    categories = {"pm-electrolysis"},
     energy_required = 1,
     enabled = false,
     ingredients =
@@ -229,7 +229,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/sodium-hydroxide-seawater.png",
     enabled = false,
     energy_required = 1,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-chlorine-rnm",
     order = "fc",
     main_product = "pm-seawater",
@@ -251,7 +251,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/sodium-to-solid-sodium-hydroxide.png",
     enabled = false,
-    category = "pm-evaporation",
+    categories = {"pm-evaporation"},
     subgroup = "pm-chlorine-rnm",
     order = "fd",
     main_product = "pm-solid-sodium-hydroxide",
@@ -271,7 +271,7 @@ data:extend({
     name = "pm-hydrochloric-acid",
     subgroup = "pm-chlorine-rnm",
     order = "j",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     enabled = false,
     crafting_machine_tint =
     {
@@ -299,7 +299,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/HCl-neutralisation.png",
     energy_required = 1,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-chlorine-rnm",
     order = "ja",
     ingredients = 
@@ -327,7 +327,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 3,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-chlorine-rnm",
     order = "k",
     ingredients =
@@ -353,7 +353,7 @@ data:extend({
         quaternary = {0.5, 0.7, 0.5}
     },
     enabled = false,
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-chlorine-rnm",
     order = "l",
     ingredients =
@@ -373,7 +373,7 @@ data:extend({
     name = "pm-liquid-chlorine",
     enabled = false,
     energy_required = 10,
-    category = "pm-cryogenics",
+    categories = {"pm-cryogenics"},
     ingredients =
     {
         PM.ingredient("pm-chlorine", 10, "fluid")

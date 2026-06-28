@@ -38,7 +38,7 @@ data:extend({
     attack_parameters =
     {
       type = "projectile",
-      ammo_category = "bullet",
+      ammo_categories = {"bullet"},
       cooldown = 5,
       movement_slow_down_factor = 0.5,
       shell_particle =

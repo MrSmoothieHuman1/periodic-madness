@@ -37,7 +37,7 @@ data:extend({
         name = "pm-trace-dubnium",
         enabled = false,
         energy_required = 40,
-        category = "pm-cyclotroning",
+        categories = {"pm-cyclotroning"},
         subgroup = "pm-dubnium-tm",
         order = "a",
         main_product = "pm-trace-dubnium",

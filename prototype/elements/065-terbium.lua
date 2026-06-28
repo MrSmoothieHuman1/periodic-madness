@@ -99,7 +99,7 @@ data:extend({
         name = "pm-terbium-salts",
         enabled = false,
         energy_required = 12,
-        category = "pm-acids",
+        categories = {"pm-acids"},
         allow_productivity = true,
         ingredients =
         {
@@ -117,7 +117,7 @@ data:extend({
         name = "pm-terbium-salt-seperation",
         enabled = false,
         energy_required = 8,
-        category = "centrifuging",
+        categories = {"centrifuging"},
         subgroup = "pm-terbium-la",
         order = "b",
         main_product = "pm-terbium-chloride",
@@ -138,7 +138,7 @@ data:extend({
         name = "pm-terbium-chloride-to-impure-terbium",
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-terbium-la",
         order = "c",
         allow_productivity = true,
@@ -159,7 +159,7 @@ data:extend({
         name = "pm-terbium-bromide-to-impure-terbium",
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-terbium-la",
         order = "d",
         allow_productivity = true,
@@ -180,7 +180,7 @@ data:extend({
         name = "pm-terbium-hydride-to-impure-terbium",
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-terbium-la",
         order = "e",
         allow_productivity = true,
@@ -201,7 +201,7 @@ data:extend({
         name = "pm-terbium-sulfate-to-impure-terbium",
         enabled = false,
         energy_required = 10,
-        category = "chemistry",
+        categories = {"chemistry"},
         subgroup = "pm-terbium-la",
         order = "d",
         allow_productivity = true,
@@ -222,7 +222,7 @@ data:extend({
         name = "pm-terbium-fluoride",
         enabled = false,
         energy_required = 7.5,
-        category = "pm-washing",
+        categories = {"pm-washing"},
         ingredients =
         {
             PM.ingredient("pm-impure-terbium", 4),
@@ -239,7 +239,7 @@ data:extend({
         name = "pm-terbium",
         enabled = false,
         energy_required = 15,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         main_product = "pm-terbium",
         ingredients =
         {

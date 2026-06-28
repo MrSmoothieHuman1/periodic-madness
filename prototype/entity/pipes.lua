@@ -556,7 +556,7 @@ data:extend({
       },
       hide_connection_info = true
     },
-    impact_category = "metal",
+    impact_categories = {"metal"},
     pictures = pm_stainlesspipepictures(),
     working_sound = sounds.pipe,
     open_sound = sounds.metal_small_open,
@@ -609,7 +609,7 @@ data:extend({
             },
             hide_connection_info = true
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         pictures =
         {
             north =
@@ -682,14 +682,14 @@ data:extend({
       pipe_covers = pm_stainlesspipecoverspictures(), -- in case a real pipe is connected to a ghost
       pipe_connections =
       {
-        { direction = defines.direction.north, position = {0, 0}, connection_category = "pm-osmium-pipes" },
-        { direction = defines.direction.east, position = {0, 0}, connection_category = "pm-osmium-pipes" },
-        { direction = defines.direction.south, position = {0, 0}, connection_category = "pm-osmium-pipes" },
-        { direction = defines.direction.west, position = {0, 0}, connection_category = "pm-osmium-pipes" }
+        { direction = defines.direction.north, position = {0, 0}, connection_categories = {"pm-osmium-pipes"} },
+        { direction = defines.direction.east, position = {0, 0}, connection_categories = {"pm-osmium-pipes"} },
+        { direction = defines.direction.south, position = {0, 0}, connection_categories = {"pm-osmium-pipes"} },
+        { direction = defines.direction.west, position = {0, 0}, connection_categories = {"pm-osmium-pipes"} }
       },
       hide_connection_info = true
     },
-    impact_category = "metal",
+    impact_categories = {"metal"},
     pictures = pm_osmiumpipepictures(),
     working_sound = sounds.pipe,
     open_sound = sounds.metal_small_open,
@@ -733,7 +733,7 @@ data:extend({
             pipe_covers = pm_osmiumpipecoverspictures(),
             pipe_connections =
             {
-                { direction = defines.direction.north--[[@as int]], position = {0, 0}, connection_category = "pm-osmium-pipes" },
+                { direction = defines.direction.north--[[@as int]], position = {0, 0}, connection_categories = {"pm-osmium-pipes"} },
                 {
                     connection_type = "underground",
                     direction = defines.direction.south--[[@as int]],
@@ -743,7 +743,7 @@ data:extend({
             },
             hide_connection_info = true
         },
-        impact_category = "metal",
+        impact_categories = {"metal"},
         pictures =
         {
             north =
@@ -840,7 +840,7 @@ data:extend({
         },
         energy_usage = "35kW",
         pumping_speed = 400,
-        impact_category = "metal-large",
+        impact_categories = {"metal-large"},
         open_sound = sounds.machine_open,
         close_sound = sounds.machine_close,
         animations =
@@ -891,8 +891,7 @@ data:extend({
             }
         },
         fluid_wagon_connector_frame_count = 35,
-        fluid_wagon_connector_alignment_tolerance = 2.0 / 32.0,
-        fluid_wagon_connector_graphics = require("__base__.prototypes.entity.pump-connector"),
+        fluid_wagon_connector_graphics = require("__base__.prototypes.entity.pump-wagon-connector-graphics"),
         fluid_animation =
         {
             north =

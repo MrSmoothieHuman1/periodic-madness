@@ -47,7 +47,7 @@ data:extend({
     name = "pm-krypton-gas",
     enabled = false,
     energy_required = 2,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     main_product = "pm-krypton-gas",
     ingredients =
     {
@@ -79,7 +79,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 4,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-krypton-nb",
     order = "c",
     main_product = "pm-industrial-noble-gas",
@@ -111,7 +111,7 @@ data:extend({
         scale = 0.4
       },
     },
-  category = "pm-atmospheric-condensing",
+  categories = {"pm-atmospheric-condensing"},
   subgroup = "pm-krypton-nb",
   order = "x",
   enabled = false,

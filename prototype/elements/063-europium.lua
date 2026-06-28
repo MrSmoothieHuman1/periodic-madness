@@ -80,7 +80,7 @@ data:extend({
         name = "pm-europium-trioxide-concentrate",
         enabled = false,
         energy_required = 8,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         allow_productivity = true,
         main_product = "pm-europium-trioxide-concentrate",
         ingredients =
@@ -100,7 +100,7 @@ data:extend({
         name = "pm-europium-trioxide",
         enabled = false,
         energy_required = 16,
-        category = "chemistry",
+        categories = {"chemistry"},
         allow_productivity = true,
         main_product = "pm-europium-trioxide",
         ingredients =
@@ -118,7 +118,7 @@ data:extend({
         name = "pm-zinc-amalgam",
         enabled = false,
         energy_required = 9,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         ingredients =
         {
@@ -135,7 +135,7 @@ data:extend({
         name = "pm-molten-europium-chloride",
         enabled = false,
         energy_required = 27,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         ingredients =
         {
@@ -154,7 +154,7 @@ data:extend({
         name = "pm-europium",
         enabled = false,
         energy_required = 9,
-        category = "pm-electrolysis",
+        categories = {"pm-electrolysis"},
         main_product = "pm-europium",
         ingredients =
         {

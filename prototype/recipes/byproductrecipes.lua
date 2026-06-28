@@ -19,7 +19,7 @@ data:extend({
         shift = { 0, -3 }
       },
     },
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-tm-tm",
     order = "b",
     enabled = false,
@@ -59,7 +59,7 @@ data:extend({
         shift = { 0, -3 }
       },
     },
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-tm-tm",
     order = "d",
     enabled = false,
@@ -91,7 +91,7 @@ data:extend({
     enabled = false,
     allow_decomposition = false,
     subgroup = "pm-glassing",
-    category = "smelting",
+    categories = {"smelting"},
     order = "da",
     ingredients =
     {
@@ -109,7 +109,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",
     energy_required = 4,
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     subgroup = "pm-palladium-tm",
     order = "Aa",
     ingredients =
@@ -129,7 +129,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/mixed-ore-slag-crushing.png",
     enabled = false,
     energy_required = 9,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-ptm-ptm",
     ingredients =
     {
@@ -160,7 +160,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 4.5,
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-ptm-ptm",
     ingredients =
     {
@@ -191,7 +191,7 @@ data:extend({
         shift = { 0, -3 }
       },
     },
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-tm-tm",
     order = "c",
     enabled = false,
@@ -230,7 +230,7 @@ data:extend({
         shift = { 0, -3 }
       },
     },
-    category = "pm-acids",
+    categories = {"pm-acids"},
     subgroup = "pm-tm-tm",
     order = "e",
     enabled = false,
@@ -257,7 +257,7 @@ data:extend({
     name = "pm-cobaltite-seperation",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/cobaltite-seperation.png",
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     enabled = false,
     energy_required = 4,
     subgroup = "pm-cobalt-tm",
@@ -284,7 +284,7 @@ data:extend({
     {
         primary = {0.812, 0.553, 0.38}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     enabled = false,
     energy_required = 6,
     subgroup = "pm-cobalt-tm",
@@ -309,7 +309,7 @@ data:extend({
     {
         primary = {0.612, 0.8, 0.949}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-iron-tm",
     order = "i",
     enabled = false,
@@ -332,7 +332,7 @@ data:extend({
     {
         primary = {0.922, 0.706, 0.498}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-copper-tm",
     order = "i",
     enabled = false,
@@ -357,7 +357,7 @@ data:extend({
     },
     subgroup = "pm-sulfur-rnm",
     order = "ea",
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     enabled = false,
     energy_required = 5,
     ingredients = 
@@ -380,7 +380,7 @@ data:extend({
     {
         primary = {0.725, 0.831, 0.922}
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-iron-tm",
     order = "j",
     enabled = false,
@@ -408,7 +408,7 @@ data:extend({
     {
         primary = {0.922, 0.82, 0.725}
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-copper-tm",
     order = "j",
     enabled = false,
@@ -436,7 +436,7 @@ data:extend({
     {
         primary = {0.898, 0.902, 0.69}
     },
-    category = "chemistry",
+    categories = {"chemistry"},
     subgroup = "pm-sulfur-rnm",
     order = "eb",
     enabled = false,
@@ -463,7 +463,7 @@ data:extend({
     {
         primary = {0.725, 0.831, 0.922}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-iron-tm",
     order = "k",
     enabled = false,
@@ -488,7 +488,7 @@ data:extend({
     {
         primary = {0.922, 0.82, 0.725}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-copper-tm",
     order = "k",
     enabled = false,
@@ -513,7 +513,7 @@ data:extend({
     {
         primary = {0.898, 0.902, 0.69}
     },
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-sulfur-rnm",
     order = "ec",
     enabled = false,
@@ -536,7 +536,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/mixed-ore-slag-washing.png",
     enabled = false,
     energy_required = 4.5,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-ptm-ptm",
     ingredients =
     {
@@ -555,7 +555,7 @@ data:extend({
     type = "recipe",
     name = "pm-calcium-chloride-seperation",
     enabled = false,
-    category = "pm-washing",
+    categories = {"pm-washing"},
     energy_required = 5,
     main_product = "pm-calcium-ore",
     ingredients = 
@@ -573,7 +573,7 @@ data:extend({
     type = "recipe",
     name = "pm-calcium-sulfate-seperation",
     enabled = false,
-    category = "pm-mixing",
+    categories = {"pm-mixing"},
     subgroup = "pm-calcium-sulfate-aem",
     energy_required = 5,
     main_product = "pm-calcium-chloride",
@@ -592,7 +592,7 @@ data:extend({
     type = "recipe",
     name = "pm-combined-ore-slab",
     enabled = false,
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-tm-tm",
     order = "c",
     energy_required = 5,
@@ -616,7 +616,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/combined-ore-slab-seperation.png",
     enabled = false,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-tm-tm",
     order = "d",
     energy_required = 8,

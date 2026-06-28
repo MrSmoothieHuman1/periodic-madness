@@ -48,7 +48,7 @@ data:extend({
     name = "pm-argon-gas",
     enabled = false,
     energy_required = 2,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     main_product = "pm-argon-gas",
     ingredients =
     {
@@ -80,7 +80,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 4,
-    category = "pm-atmospheric-condensing",
+    categories = {"pm-atmospheric-condensing"},
     subgroup = "pm-argon-nb",
     order = "c",
     main_product = "pm-industrial-noble-gas",
@@ -111,7 +111,7 @@ data:extend({
         scale = 0.4
       },
     },
-   category = "pm-atmospheric-condensing",
+   categories = {"pm-atmospheric-condensing"},
    subgroup = "pm-argon-nb",
    order = "x",
    enabled = false,

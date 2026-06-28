@@ -3,7 +3,7 @@ data:extend({
 {
     type = "recipe",
     name = "pm-coolant",
-    category = "pm-cooling",
+    categories = {"pm-cooling"},
     subgroup = "pm-coolant",
     order = "b",
     energy_required = 4,
@@ -22,7 +22,7 @@ data:extend({
 {
     type = "recipe",
     name = "pm-light-coolant",
-    category = "pm-cooling",
+    categories = {"pm-cooling"},
     subgroup = "pm-coolant",
     order = "e",
     energy_required = 4,
@@ -42,7 +42,7 @@ data:extend({
 {
     type = "recipe",
     name = "pm-hot-coolant-cooling",
-    category = "pm-cooling",
+    categories = {"pm-cooling"},
     subgroup = "pm-coolant",
     order = "c",
     energy_required = 8,
@@ -59,7 +59,7 @@ data:extend({
 {
     type = "recipe",
     name = "pm-hot-light-coolant-cooling",
-    category = "pm-cooling",
+    categories = {"pm-cooling"},
     subgroup = "pm-coolant",
     order = "f",
     energy_required = 8,

@@ -64,7 +64,7 @@ data:extend({
         type = "recipe",
         name = "pm-bastnasite-ce",
         energy_required = 12,
-        category = "chemistry",
+        categories = {"chemistry"},
         main_product = "pm-bastnasite-ce",
         allow_productivity = true,
         ingredients =
@@ -85,7 +85,7 @@ data:extend({
         type = "recipe",
         name = "pm-cerium-dioxide",
         energy_required = 24,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         main_product = "pm-cerium-dioxide",
         ingredients =
         {
@@ -104,7 +104,7 @@ data:extend({
         type = "recipe",
         name = "pm-cerium",
         energy_required = 24,
-        category = "chemistry",
+        categories = {"chemistry"},
         main_product = "pm-cerium",
         allow_productivity = true,
         ingredients =
@@ -123,7 +123,7 @@ data:extend({
         type = "recipe",
         name = "pm-cerium-plate",
         energy_required = 6.4,
-        category = "smelting",
+        categories = {"smelting"},
         allow_productivity = true,
         ingredients = 
         {

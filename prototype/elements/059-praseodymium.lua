@@ -87,7 +87,7 @@ data:extend({
         name = "pm-mixed-praseodymium-deposit",
         enabled = false,
         energy_required = 10,
-        category = "pm-leaching",
+        categories = {"pm-leaching"},
         ingredients =
         {
             PM.ingredient("pm-roasted-bastnasite", 8),
@@ -103,7 +103,7 @@ data:extend({
         name = "pm-mixed-praseodymium-deposit-seperation",
         enabled = false,
         energy_required = 10,
-        category = "pm-crushing",
+        categories = {"pm-crushing"},
         subgroup = "pm-praseodymium-la",
         order = "b",
         allow_productivity = true,
@@ -126,7 +126,7 @@ data:extend({
         name = "pm-75-to-pure-praseodymium-deposit",
         enabled = false,
         energy_required = 5,
-        category = "pm-crystallisation",
+        categories = {"pm-crystallisation"},
         subgroup = "pm-praseodymium-la",
         order = "c",
         allow_productivity = true,
@@ -151,7 +151,7 @@ data:extend({
         name = "pm-50-to-75-praseodymium-deposit",
         enabled = false,
         energy_required = 5,
-        category = "pm-crystallisation",
+        categories = {"pm-crystallisation"},
         subgroup = "pm-praseodymium-la",
         order = "d",
         main_product = "pm-75-praseodymium-deposit",
@@ -175,7 +175,7 @@ data:extend({
         name = "pm-25-to-50-praseodymium-deposit",
         enabled = false,
         energy_required = 5,
-        category = "pm-crystallisation",
+        categories = {"pm-crystallisation"},
         subgroup = "pm-praseodymium-la",
         order = "e",
         main_product = "pm-50-praseodymium-deposit",
@@ -199,7 +199,7 @@ data:extend({
         name = "pm-praseodymium",
         enabled = false,
         energy_required = 2.5,
-        category = "chemistry",
+        categories = {"chemistry"},
         main_product = "pm-praseodymium",
         ingredients =
         {

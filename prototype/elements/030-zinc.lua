@@ -102,7 +102,7 @@ data:extend({
     name = "pm-zinc-powder",
     enabled = false,
     energy_required = 2,
-    category = "pm-crushing",
+    categories = {"pm-crushing"},
     subgroup = "pm-zinc-tm",
     order = "a",
     main_product = "pm-zinc-powder",
@@ -133,7 +133,7 @@ data:extend({
     },
     subgroup = "pm-zinc-tm",
     order = "b",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },        --main visible colour
@@ -174,7 +174,7 @@ data:extend({
     },
     subgroup = "pm-zinc-tm",
     order = "b",
-    category = "pm-acids",
+    categories = {"pm-acids"},
     crafting_machine_tint =
     {
       primary = { r = 0, g = 0.6, b = 0.1, a = 1 },      --main visible colour
@@ -214,7 +214,7 @@ data:extend({
     },
     subgroup = "pm-zinc-tm",
     order = "d",
-    category = "smelting",
+    categories = {"smelting"},
     enabled = true,
     allow_decomposition = false,
     energy_required = 3.2,
@@ -231,7 +231,7 @@ data:extend({
     name = "pm-zinc-plate",
     subgroup = "pm-zinc-tm",
     order = "e",
-    category = "smelting",
+    categories = {"smelting"},
     energy_required = 3.2,
     allow_productivity = true,
     ingredients =
@@ -263,7 +263,7 @@ data:extend({
     },
     subgroup = "pm-zinc-tm",
     order = "f",
-    category = "pm-moltening",
+    categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -282,7 +282,7 @@ data:extend({
     name = "pm-zinc-plate-cooling",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/zinc-cooling.png",
-    category = "pm-coldening",
+    categories = {"pm-coldening"},
     subgroup = "pm-zinc-tm",
     order = "g",
     energy_required = 9,
@@ -310,7 +310,7 @@ data:extend({
   {
     primary = {0.749, 0.655, 0.694}
   },
-  category = "pm-mixing",
+  categories = {"pm-mixing"},
   subgroup = "pm-advanced-zinc-tm",
   order = "a",
   enabled = false,
@@ -334,7 +334,7 @@ data:extend({
   name = "pm-zinc-sulfide-concentrate",
   enabled = false,
   energy_required = 9,
-  category = "pm-reverberatory-smelting",
+  categories = {"pm-reverberatory-smelting"},
   subgroup = "pm-advanced-zinc-tm",
   order = "b",
   main_product = "pm-zinc-sulfide-concentrate",
@@ -358,7 +358,7 @@ data:extend({
   },
   enabled = false,
   energy_required = 16,
-  category = "pm-blast-smelting",
+  categories = {"pm-blast-smelting"},
   subgroup = "pm-advanced-zinc-tm",
   order = "c",
   main_product = "pm-zinc-oxide",
@@ -379,7 +379,7 @@ data:extend({
   name = "pm-zinc-vapour",
   enabled = false,
   energy_required = 4,
-  category = "pm-moltening",
+  categories = {"pm-moltening"},
   subgroup = "pm-advanced-zinc-tm",
   order = "d",
   main_product = "pm-zinc-vapour",
@@ -399,7 +399,7 @@ data:extend({
   name = "pm-zinc-vapour-condensing",
   enabled = false,
   energy_required = 2,
-  category = "pm-washing",
+  categories = {"pm-washing"},
   subgroup = "pm-advanced-zinc-tm",
   order = "e",
   ingredients =
@@ -420,7 +420,7 @@ data:extend({
   {
     primary = {0.788, 0.745, 0.765}
   },
-  category = "pm-mixing",
+  categories = {"pm-mixing"},
   subgroup = "pm-advanced-zinc-tm",
   order = "f",
   enabled = false,

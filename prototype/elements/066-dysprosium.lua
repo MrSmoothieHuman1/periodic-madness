@@ -103,7 +103,7 @@ data:extend({
         name = "pm-tantalum-dysprosium-crucible",
         enabled = false,
         energy_required = 9,
-        category = "pm-moltening", --should be in other furnaces? maybe?
+        categories = {"pm-moltening"}, --should be in other furnaces? maybe?
         allow_productivity = true,
         ingredients =
         {
@@ -121,7 +121,7 @@ data:extend({
         name = "pm-xenotime",
         enabled = false,
         energy_required = 8,
-        category = "pm-acids",
+        categories = {"pm-acids"},
         allow_productivity = true,
         ingredients =
         {
@@ -139,7 +139,7 @@ data:extend({
         name = "pm-dysprosium-concentrate",
         enabled = false,
         energy_required = 12,
-        category = "pm-mixing",
+        categories = {"pm-mixing"},
         allow_productivity = true,
         main_product = "pm-dysprosium-concentrate",
         ingredients =
@@ -160,7 +160,7 @@ data:extend({
         name = "pm-dysprosium-fluoride",
         enabled = false,
         energy_required = 6,
-        category = "pm-electrolysis",
+        categories = {"pm-electrolysis"},
         main_product = "pm-dysprosium-fluoride",
         ingredients = 
         {
@@ -178,7 +178,7 @@ data:extend({
         name = "pm-unprocessed-dysprosium",
         enabled = false,
         energy_required = 3,
-        category = "chemistry",
+        categories = {"chemistry"},
         main_product = "pm-unprocessed-dysprosium",
         ingredients =
         {
@@ -198,7 +198,7 @@ data:extend({
         name = "pm-molten-dysprosium",
         enabled = false,
         energy_required = 15,
-        category = "pm-moltening",
+        categories = {"pm-moltening"},
         allow_productivity = true,
         main_product = "pm-molten-dysprosium",
         ingredients =
@@ -217,7 +217,7 @@ data:extend({
         name = "pm-cooled-dysprosium",
         enabled = false,
         energy_required = 15,
-        category = "pm-coldening",
+        categories = {"pm-coldening"},
         allow_productivity = true,
         ingredients =
         {
