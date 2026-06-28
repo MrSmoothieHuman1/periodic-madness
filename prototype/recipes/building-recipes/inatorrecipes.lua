@@ -689,7 +689,7 @@ data:extend({
     results =
     {
       PM.product("pm-borosilicate-glass", 5),
-      PM.product_range("pm-crucible", 1, 2)
+      PM.product_range("pm-crucible", {1, 2})
     }
   },
   {
@@ -1012,8 +1012,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-molten-glass", 3, 5, "fluid"),
-      PM.product_range("pm-glass-shards", 4, 6)
+      PM.product_range("pm-molten-glass", {3, 5}, "fluid"),
+      PM.product_range("pm-glass-shards", {4, 6})
     }
   },
   {
@@ -1173,7 +1173,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-solder", 10, "fluid"),
-      PM.product_range_chance("pm-polonium-210", 0, 2, 0.25)
+      PM.product_range_chance("pm-polonium-210", {0, 2}, 0.25)
     }
   },
   {
@@ -1196,7 +1196,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-solder", 10, "fluid"),
-      PM.product_range("pm-flux-container", 1, 2),
+      PM.product_range("pm-flux-container", {1, 2}),
     }
   },
   {
@@ -1255,7 +1255,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-steel", 10, "fluid"),
-      PM.product_range("pm-flux-container", 1, 2),
+      PM.product_range("pm-flux-container", {1, 2}),
     }
   },
   {
@@ -1314,7 +1314,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-brass", 10, "fluid"),
-      PM.product_range("pm-flux-container", 1, 2),
+      PM.product_range("pm-flux-container", {1, 2}),
     }
   },
   {
@@ -1373,7 +1373,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-stainless-steel", 10, "fluid"),
-      PM.product_range("pm-flux-container", 1, 2),
+      PM.product_range("pm-flux-container", {1, 2}),
     }
   },
   {
@@ -1431,7 +1431,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-kasethal", 10, "fluid"),
-      PM.product_range("pm-flux-container", 1, 2),
+      PM.product_range("pm-flux-container", {1, 2}),
     }
   },
   {

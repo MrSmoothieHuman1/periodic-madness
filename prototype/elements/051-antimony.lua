@@ -100,8 +100,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-low-quality-crude-antimony-sulfide", 3, 6),
-            PM.product_range("pm-high-quality-crude-antimony-sulfide", 3, 6),
+            PM.product_range("pm-low-quality-crude-antimony-sulfide", {3, 6}),
+            PM.product_range("pm-high-quality-crude-antimony-sulfide", {3, 6}),
         }
     },
     {
@@ -121,8 +121,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-crude-antimony-sulfide", 2, 5),
-            PM.product_range_chance("pm-lead-powder", 0, 4, 0.56),
+            PM.product_range("pm-crude-antimony-sulfide", {2, 5}),
+            PM.product_range_chance("pm-lead-powder", {0, 4}, 0.56),
             PM.product_chance("pm-patina", 3, 0.66)
         }
     },
@@ -143,9 +143,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-stibnite", 2, 5),
-            PM.product_range("pm-cobalt-plate", 2, 6),
-            PM.product_range_chance("pm-cobaltite", 0, 4, 0.77)
+            PM.product_range("pm-stibnite", {2, 5}),
+            PM.product_range("pm-cobalt-plate", {2, 6}),
+            PM.product_range_chance("pm-cobaltite", {0, 4}, 0.77)
         }
     },
     {
@@ -188,7 +188,7 @@ data:extend({
         results = 
         {
             PM.product("pm-antimony-ore", 6),
-            PM.product_range("pm-ferrum", 1, 4)
+            PM.product_range("pm-ferrum", {1, 4})
         }
     }
 })

@@ -73,7 +73,7 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
-      PM.product_range("water", 1.2, 2, "fluid"),
+      PM.product_range("water", {1.2, 2}, "fluid"),
       PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 1),
       PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 1)
     }
@@ -97,7 +97,7 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", 10, "fluid"),
-      PM.product_range("water", 1.2, 2, "fluid"),
+      PM.product_range("water", {1.2, 2}, "fluid"),
       PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.75, 1),
       PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 1)
     }
@@ -174,7 +174,7 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-trioxide", 10, "fluid"),
-      PM.product_range_chance("pm-oxygen-gas", 5, 10, 0.5, "fluid"),
+      PM.product_range_chance("pm-oxygen-gas", {5, 10}, 0.5, "fluid"),
       PM.catalyst_chance("pm-vanadium-oxide-catalyst", 3, 0.8, 2),
       PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 2)
     }
@@ -195,7 +195,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-oleum", 10, 15, "fluid")
+      PM.product_range("pm-oleum", {10, 15}, "fluid")
     }
   },
   {
@@ -246,7 +246,7 @@ data:extend({
     results =
     {
       PM.product("pm-hydrogen-sulfide", 15, "fluid"),
-      PM.product_range("pm-carbon-dioxide-gas", 0, 5, "fluid")
+      PM.product_range("pm-carbon-dioxide-gas", {0, 5}, "fluid")
     }
   },
   {
@@ -273,8 +273,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("sulfur", 4, 10),
-      PM.product_range("water", 0, 5, "fluid"),
+      PM.product_range("sulfur", {4, 10}),
+      PM.product_range("water", {0, 5}, "fluid"),
       PM.catalyst_chance("pm-nickel-tungsten-catalyst", 1, 0.85, 1),
       PM.catalyst_chance("pm-catalyst-container", 1, 0.15, 1)
     }

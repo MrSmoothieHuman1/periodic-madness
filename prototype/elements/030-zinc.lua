@@ -152,7 +152,7 @@ data:extend({
     results =
     {
       PM.product("pm-zinc-ore", 2),
-      PM.product_range_chance("sulfur", 1, 2, 0.33),
+      PM.product_range_chance("sulfur", {1, 2}, 0.33),
     }
   },
 
@@ -346,7 +346,7 @@ data:extend({
   results =
   {
     PM.product("pm-zinc-sulfide-concentrate", 15, "fluid"),
-    PM.product_range("pm-molten-ore-slag", 0, 2, "fluid")
+    PM.product_range("pm-molten-ore-slag", {0, 2}, "fluid")
   }
 },
 {
@@ -369,8 +369,8 @@ data:extend({
   },
   results =
   {
-    PM.product_range("pm-sulfur-dioxide", 0, 0.5, "fluid"),
-    PM.product_range("pm-hydrogen-sulfide", 0, 0.75, "fluid"),
+    PM.product_range("pm-sulfur-dioxide", {0, 0.5}, "fluid"),
+    PM.product_range("pm-hydrogen-sulfide", {0, 0.75}, "fluid"),
     PM.product("pm-zinc-oxide", 30)
   }
 },
@@ -391,7 +391,7 @@ data:extend({
   results = 
   {
     PM.product("pm-zinc-vapour", 5, "fluid"),
-    PM.product_range("pm-carbon-dioxide-gas", 8, 10, "fluid")
+    PM.product_range("pm-carbon-dioxide-gas", {8, 10}, "fluid")
   }
 },
 {
@@ -433,9 +433,9 @@ data:extend({
   },
   results =
   {
-    PM.product_range("pm-cupric-waste-water", 0, 5, "fluid"),
-    PM.product_range("sulfur", 0, 1),
-    PM.product_range("pm-ferrum", 0, 3)
+    PM.product_range("pm-cupric-waste-water", {0, 5}, "fluid"),
+    PM.product_range("sulfur", {0, 1}),
+    PM.product_range("pm-ferrum", {0, 3})
   }
 },
 

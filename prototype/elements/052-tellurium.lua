@@ -81,9 +81,9 @@ data:extend({
     results =
     {
       PM.product("pm-sodium-tellurite", 4),
-      PM.product_range("pm-carbon-trioxide", 4, 8, "fluid"),
-      PM.product_range_chance("copper-ore", 2, 5, 0.3),
-      PM.product_range_chance("pm-silver-ore", 2, 5, 0.6),
+      PM.product_range("pm-carbon-trioxide", {4, 8}, "fluid"),
+      PM.product_range_chance("copper-ore", {2, 5}, 0.3),
+      PM.product_range_chance("pm-silver-ore", {2, 5}, 0.6),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -104,8 +104,8 @@ data:extend({
     {
       PM.product("pm-sodium-tellurite", 6),
       PM.product("pm-carbon-dioxide-gas", 6, "fluid"),
-      PM.product_range_chance("copper-ore", 2, 5, 0.7),
-      PM.product_range_chance("pm-gold-ore", 2, 5, 0.2),
+      PM.product_range_chance("copper-ore", {2, 5}, 0.7),
+      PM.product_range_chance("pm-gold-ore", {2, 5}, 0.2),
     }
   } --[[@as data.RecipePrototype]],
   {

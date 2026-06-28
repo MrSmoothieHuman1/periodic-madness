@@ -222,7 +222,7 @@ data:extend({
     results =
     {
       PM.product("pm-acidic-water", 50, "fluid"),
-      PM.product_range("sulfur", 2, 5)
+      PM.product_range("sulfur", {2, 5})
     }
   },
   {
@@ -249,7 +249,7 @@ data:extend({
     results =
     {
       PM.product("water", 50, "fluid"),
-      PM.product_range("sulfur", 2, 5)
+      PM.product_range("sulfur", {2, 5})
     }
   },
 
@@ -292,7 +292,7 @@ data:extend({
     results =
     {
       PM.product("pm-electronic-integrated-circuit-mold", 3),
-      PM.product_range("pm-electronic-integrated-circuits", 2, 3)
+      PM.product_range("pm-electronic-integrated-circuits", {2, 3})
     }
   },
   {
@@ -336,7 +336,7 @@ data:extend({
     results =
     {
       PM.product("pm-fluid-integrated-circuit-mold", 3),
-      PM.product_range("pm-fluid-integrated-circuits", 2, 3)
+      PM.product_range("pm-fluid-integrated-circuits", {2, 3})
     }
   },
   {
@@ -380,7 +380,7 @@ data:extend({
     results =
     {
       PM.product("pm-advanced-integrated-circuit-mold", 3),
-      PM.product_range("pm-advanced-integrated-circuits", 2, 3)
+      PM.product_range("pm-advanced-integrated-circuits", {2, 3})
     }
   },
   {
@@ -424,7 +424,7 @@ data:extend({
     results =
     {
       PM.product("pm-processing-integrated-circuit-mold", 3),
-      PM.product_range("pm-processing-integrated-circuits", 2, 3)
+      PM.product_range("pm-processing-integrated-circuits", {2, 3})
     }
   },
   {

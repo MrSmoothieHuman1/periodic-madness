@@ -758,7 +758,7 @@ data:extend({
     results =
     {
         PM.product("automation-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 3)
+        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
     }
 },
 {
@@ -792,7 +792,7 @@ data:extend({
     results =
     {
         PM.product("logistic-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 3)
+        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
     }
 },
 {
@@ -826,7 +826,7 @@ data:extend({
     results =
     {
         PM.product("pm-advanced-advanced-transition-metal-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 3)
+        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
     }
 },
 {
@@ -861,7 +861,7 @@ data:extend({
     results =
     {
         PM.product("chemical-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 3)
+        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
     }
 },
 {
@@ -895,7 +895,7 @@ data:extend({
     results =
     {
         PM.product("pm-post-transition-metal-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", 1, 3, 0.95, 3)
+        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
     }
 },
 

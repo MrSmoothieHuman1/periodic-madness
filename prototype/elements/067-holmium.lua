@@ -107,7 +107,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-monazite-sand", 12, 15)
+            PM.product_range("pm-monazite-sand", {12, 15})
         }
     },
     {
@@ -234,7 +234,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-holmium", 3, 4),
+            PM.product_range("pm-holmium", {3, 4}),
             PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3),
             PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3)
         }
@@ -257,7 +257,7 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-holmium", 3, 4),
+            PM.product_range("pm-holmium", {3, 4}),
             PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3),
             PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3)
         }

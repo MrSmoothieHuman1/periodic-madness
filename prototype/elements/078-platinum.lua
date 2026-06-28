@@ -86,9 +86,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-nickel-chunk", 2, 4),
+      PM.product_range("pm-nickel-chunk", {2, 4}),
       PM.product("pm-platinum-powder", 8),
-      PM.product_range_chance("pm-ferrum", 2, 5, 0.5)
+      PM.product_range_chance("pm-ferrum", {2, 5}, 0.5)
     }
   },
   {
@@ -108,8 +108,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-platinum-ore", 1, 3),
-      PM.product_range_chance("pm-ammonium-chloride", 1, 2, 0.6)
+      PM.product_range("pm-platinum-ore", {1, 3}),
+      PM.product_range_chance("pm-ammonium-chloride", {1, 2}, 0.6)
     }
   },
   {
@@ -133,7 +133,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-nickel-tailings", 2, 8, "fluid"),
+      PM.product_range("pm-nickel-tailings", {2, 8}, "fluid"),
       PM.product_chance("pm-nickel-froth", 5, 0.9, "fluid")
     }
   },
@@ -156,7 +156,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-nickel-chunk", 0, 2),
+      PM.product_range("pm-nickel-chunk", {0, 2}),
       PM.product("pm-platinum-powder", 8),
       PM.product_chance("pm-flux-container", 1, 0.66)
     }

@@ -45,7 +45,7 @@ data:extend({
     {
       PM.product("pm-high-sulfur-residuals", 12, "fluid"),
       PM.product("pm-low-sulfur-residuals", 12, "fluid"),
-      PM.catalyst_range("pm-glass-fibers", 3, 5, 5)
+      PM.catalyst_range("pm-glass-fibers", {3, 5}, 5)
     }
   },
   {
@@ -65,10 +65,10 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bitumen", 0, 2),
-      PM.product_range("sulfur", 5, 10),
-      PM.product_range("pm-chromium-ore", 1, 4),
-      PM.product_range("pm-hydrogen-sulfide", 2.5, 8, "fluid")
+      PM.product_range("pm-bitumen", {0, 2}),
+      PM.product_range("sulfur", {5, 10}),
+      PM.product_range("pm-chromium-ore", {1, 4}),
+      PM.product_range("pm-hydrogen-sulfide", {2.5, 8}, "fluid")
     }
   },
   {
@@ -88,10 +88,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-bitumen", 2, 4),
-      PM.product_range("sulfur", 3, 4),
-      PM.product_range("pm-vanadium-ore", 1, 4),
-      PM.product_range("pm-syngas", 0.5, 5, "fluid")
+      PM.product_range("pm-bitumen", {2, 4}),
+      PM.product_range("sulfur", {3, 4}),
+      PM.product_range("pm-vanadium-ore", {1, 4}),
+      PM.product_range("pm-syngas", {0.5, 5}, "fluid")
     }
   },
   {
@@ -112,9 +112,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-acidic-water", 5, 12.5, "fluid"),
-      PM.product_range("pm-naptha", 0, 5, "fluid"),
-      PM.product_range("pm-coke", 2, 6)
+      PM.product_range("pm-acidic-water", {5, 12.5}, "fluid"),
+      PM.product_range("pm-naptha", {0, 5}, "fluid"),
+      PM.product_range("pm-coke", {2, 6})
     }
   },
   {
@@ -159,8 +159,8 @@ data:extend({
       PM.catalyst_chance("pm-palladium-catalyst", 1, 0.8, 1),
       PM.catalyst_chance("pm-catalyst-container", 1, 0.2, 1),
       PM.product_chance("pm-butane-gas", 20, 0.75, "fluid"),
-      PM.product_range_chance("pm-syngas", 5, 10, 0.35, "fluid"),
-      PM.catalyst_range("pm-palladium-hydride", 0, 2, 1)
+      PM.product_range_chance("pm-syngas", {5, 10}, 0.35, "fluid"),
+      PM.catalyst_range("pm-palladium-hydride", {0, 2}, 1)
     }
   },
   {
@@ -180,7 +180,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-ethylene-gas", 4, 8, "fluid"),
+      PM.product_range("pm-ethylene-gas", {4, 8}, "fluid"),
     }
   },
   {
@@ -201,7 +201,7 @@ data:extend({
     results =
     {
       PM.product("pm-ethylene-gas", 18, "fluid"),
-      PM.product_range("pm-hydrogen-gas", 3, 6, "fluid")
+      PM.product_range("pm-hydrogen-gas", {3, 6}, "fluid")
     }
   },
   {
@@ -337,8 +337,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-legendary-diesel", 8, 10, "fluid"),
-      PM.product_range("pm-common-diesel", 10, 12, "fluid")
+      PM.product_range("pm-legendary-diesel", {8, 10}, "fluid"),
+      PM.product_range("pm-common-diesel", {10, 12}, "fluid")
     }
   },
   {
@@ -502,10 +502,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-palladium-ore", 2, 4),
+      PM.product_range("pm-palladium-ore", {2, 4}),
       PM.product_chance("pm-bitumen", 2, 0.75),
-      PM.product_range("pm-syngas", 0, 5, "fluid"),
-      PM.product_range("water", 1.8, 2, "fluid")
+      PM.product_range("pm-syngas", {0, 5}, "fluid"),
+      PM.product_range("water", {1.8, 2}, "fluid")
     }
   },
   {
@@ -547,7 +547,7 @@ data:extend({
     results =
     {
       PM.product("pm-benzene", 10, "fluid"),
-      PM.product_range("pm-ethylene-gas", 2, 6, "fluid"),
+      PM.product_range("pm-ethylene-gas", {2, 6}, "fluid"),
       PM.product("sulfur", 4)
     }
   },
@@ -1127,7 +1127,7 @@ data:extend({
     results = 
     {
       PM.product("crude-oil", 35, "fluid"),
-      PM.product_range("pm-oil-residuals", 0.5, 5, "fluid")
+      PM.product_range("pm-oil-residuals", {0.5, 5}, "fluid")
     }
   },
   {
@@ -1180,9 +1180,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-ethylene-gas", 0, 5, "fluid"),
-        PM.product_range("pm-p-xylene", 5, 15, "fluid"),
-        PM.product_range("pm-o-xylene", 5, 10, "fluid")
+        PM.product_range("pm-ethylene-gas", {0, 5}, "fluid"),
+        PM.product_range("pm-p-xylene", {5, 15}, "fluid"),
+        PM.product_range("pm-o-xylene", {5, 10}, "fluid")
     }
   },
 
@@ -1722,7 +1722,7 @@ data:extend({
     results =
     {
       PM.product("pm-syngas", 20, "fluid"),
-      PM.product_range("pm-oxygen-gas", 0, 2, "fluid")
+      PM.product_range("pm-oxygen-gas", {0, 2}, "fluid")
     }
   },
   {
@@ -1738,9 +1738,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-carbon-monoxide", 6, 10, "fluid"),
-      PM.product_range("pm-sulfur-dioxide", 0, 2, "fluid"), --hydrogen sulfide in hard mode
-      --PM.product_range("pm-methane", 1, 4, "fluid")
+      PM.product_range("pm-carbon-monoxide", {6, 10}, "fluid"),
+      PM.product_range("pm-sulfur-dioxide", {0, 2}, "fluid"), --hydrogen sulfide in hard mode
+      --PM.product_range("pm-methane", {1, 4}, "fluid")
     }
   },
   {

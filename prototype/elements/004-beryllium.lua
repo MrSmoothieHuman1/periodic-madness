@@ -135,8 +135,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-beryl-powder", 7, 12),
-            PM.product_range("pm-bauxite-powder", 0, 3)
+            PM.product_range("pm-beryl-powder", {7, 12}),
+            PM.product_range("pm-bauxite-powder", {0, 3})
         }
     },
     {
@@ -155,8 +155,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-beryllium-sulfate", 2, 4, 0.8),
-            PM.product_range_chance("pm-aluminium-sulfate", 2, 4, 0.2)
+            PM.product_range_chance("pm-beryllium-sulfate", {2, 4}, 0.8),
+            PM.product_range_chance("pm-aluminium-sulfate", {2, 4}, 0.2)
         }
     },
     {
@@ -248,8 +248,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-beryllium-ore", 2, 5),
-            PM.product_range_chance("pm-hydrogen-flouride", 0, 4, 0.75, "fluid")
+            PM.product_range("pm-beryllium-ore", {2, 5}),
+            PM.product_range_chance("pm-hydrogen-flouride", {0, 4}, 0.75, "fluid")
         }
     },
     {

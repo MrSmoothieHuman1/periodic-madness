@@ -99,8 +99,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-bismuth-ore", 4, 15, 0.25),
-      PM.product_range_chance("pm-bismuth-210", 6, 15, 0.75)
+      PM.product_range_chance("pm-bismuth-ore", {4, 15}, 0.25),
+      PM.product_range_chance("pm-bismuth-210", {6, 15}, 0.75)
     }
   },
   {
@@ -120,8 +120,8 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-polonium-210", 2, 3, 2),
-      PM.catalyst_range("pm-bismuth-210", 2, 3, 2),
+      PM.catalyst_range("pm-polonium-210", {2, 3}, 2),
+      PM.catalyst_range("pm-bismuth-210", {2, 3}, 2),
     }
   },
   {
@@ -158,9 +158,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-empty-reactor-cell", 3, 5),
-      PM.product_range("pm-lead-ore", 1, 5),
-      PM.product_range("pm-helium-gas", 2, 5, "fluid"),
+      PM.product_range("pm-empty-reactor-cell", {3, 5}),
+      PM.product_range("pm-lead-ore", {1, 5}),
+      PM.product_range("pm-helium-gas", {2, 5}, "fluid"),
       PM.product_chance("pm-bismuth-210", 4, 0.75)
     }
   },

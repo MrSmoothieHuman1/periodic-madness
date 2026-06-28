@@ -69,7 +69,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-hydrogen-bromide", 14, 28, "fluid"),
+      PM.product_range("pm-hydrogen-bromide", {14, 28}, "fluid"),
       PM.product("pm-trace-gas", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]],
@@ -150,7 +150,7 @@ data:extend({
     results =
     {
       PM.product("pm-vinyl-bromide", 10, "fluid"),
-      PM.product_range("pm-hydrogen-bromide", 1, 3, "fluid")
+      PM.product_range("pm-hydrogen-bromide", {1, 3}, "fluid")
     }
   } --[[@as data.RecipePrototype]],
 
@@ -170,7 +170,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-bromine-ions", 20, 40, "fluid")
+      PM.product_range("pm-bromine-ions", {20, 40}, "fluid")
     }
   } --[[@as data.RecipePrototype]]
 })

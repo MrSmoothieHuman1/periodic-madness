@@ -172,7 +172,7 @@ data:extend({
         results = 
         {
             PM.product("pm-impure-hafnium", 2),
-            PM.catalyst_range("pm-magnesium-oxide", 1, 3, 2)
+            PM.catalyst_range("pm-magnesium-oxide", {1, 3}, 2)
         }
     },
     {

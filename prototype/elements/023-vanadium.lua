@@ -123,7 +123,7 @@ data:extend({
     results =
     {
       PM.product("pm-ferrovanadium", 4),
-      PM.product_range("iron-ore", 0, 2)
+      PM.product_range("iron-ore", {0, 2})
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -163,7 +163,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-vanadium-ore", 6, 10)
+      PM.product_range("pm-vanadium-ore", {6, 10})
     }
   } --[[@as data.RecipePrototype]],
 
@@ -206,7 +206,7 @@ data:extend({
     results =
     {
       PM.product("pm-vanadium-ore", 10),
-      PM.product_range("pm-vanadium-ore", 0, 4)
+      PM.product_range("pm-vanadium-ore", {0, 4})
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -229,7 +229,7 @@ data:extend({
     results = 
     {
       PM.product("pm-sodium-metavanadate", 4),
-      PM.product_range("pm-high-sulfur-residuals", 1, 3, "fluid")
+      PM.product_range("pm-high-sulfur-residuals", {1, 3}, "fluid")
     }
   },
   {
@@ -269,7 +269,7 @@ data:extend({
     results = 
     {
       PM.product("pm-vanadium-oxide", 3),
-      PM.product_range("pm-flux-container", 1, 2),
+      PM.product_range("pm-flux-container", {1, 2}),
     }
   }
 })

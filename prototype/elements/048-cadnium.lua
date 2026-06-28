@@ -90,8 +90,8 @@ data:extend({
     results =
     {
       PM.product("pm-cadnium-sulfate", 2),
-      PM.product_range("pm-zinc-chunk", 0, 2),
-      PM.product_range_chance("pm-patina", 1, 3, 0.5),
+      PM.product_range("pm-zinc-chunk", {0, 2}),
+      PM.product_range_chance("pm-patina", {1, 3}, 0.5),
     }
   },
   {
@@ -111,8 +111,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cadnium-ore", 3, 4),
-      PM.product_range("sulfur", 1, 4)
+      PM.product_range("pm-cadnium-ore", {3, 4}),
+      PM.product_range("sulfur", {1, 4})
     }
   },
   {

@@ -112,7 +112,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-chromium-ore", 2, 4),
+      PM.product_range("pm-chromium-ore", {2, 4}),
       PM.product_chance("pm-ferrum", 2, 0.75)
     }
   } --[[@as data.RecipePrototype]],
@@ -207,9 +207,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-chromium-ore", 4, 6),
-      PM.product_range("pm-sulfur-dioxide", 8, 15, "fluid"),
-      PM.product_range_chance("pm-carbon-dioxide-gas", 6, 15, 0.65, "fluid")
+      PM.product_range("pm-chromium-ore", {4, 6}),
+      PM.product_range("pm-sulfur-dioxide", {8, 15}, "fluid"),
+      PM.product_range_chance("pm-carbon-dioxide-gas", {6, 15}, 0.65, "fluid")
     }
   }
 })

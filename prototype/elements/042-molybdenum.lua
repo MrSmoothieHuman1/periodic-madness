@@ -281,7 +281,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-patina", 2, 5),
+      PM.product_range("pm-patina", {2, 5}),
       PM.product("pm-ammonium-dimolybdate", 16, "fluid"),
     }
   },
@@ -323,7 +323,7 @@ data:extend({
     results =
     {
       PM.product("pm-molybdenum-ore", 8),
-      PM.product_range("water", 5, 12, "fluid")
+      PM.product_range("water", {5, 12}, "fluid")
     }
   }
 })

@@ -166,7 +166,7 @@ data:extend({
         results =
         {
             PM.product("pm-rhenium-oxide", 2),
-            PM.product_range("pm-ferrum", 1, 2)
+            PM.product_range("pm-ferrum", {1, 2})
         }
     },
     {

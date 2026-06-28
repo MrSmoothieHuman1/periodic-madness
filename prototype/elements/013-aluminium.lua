@@ -102,7 +102,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bauxite-powder", 10, 14)
+      PM.product_range("pm-bauxite-powder", {10, 14})
     }
   },
   {
@@ -127,7 +127,7 @@ data:extend({
     results = 
     {
       PM.product("pm-aluminium-hydroxide-slurry", 12, "fluid"),
-      PM.product_range("steam", 10, 20, "fluid")
+      PM.product_range("steam", {10, 20}, "fluid")
     }
   },
   {
@@ -145,7 +145,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-aluminium-ore", 4, 6)
+      PM.product_range("pm-aluminium-ore", {4, 6})
     }
   },
 

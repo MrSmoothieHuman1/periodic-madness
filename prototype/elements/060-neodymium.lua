@@ -112,8 +112,8 @@ data:extend({
         results =
         {
             PM.product("pm-neodymium-concentrate", 7.5, "fluid"),
-            PM.product_range("pm-hydrogen-sulfide", 0, 2.5, "fluid"),
-            PM.product_range("pm-ion-exchange-beads", 4, 6)
+            PM.product_range("pm-hydrogen-sulfide", {0, 2.5}, "fluid"),
+            PM.product_range("pm-ion-exchange-beads", {4, 6})
         }
     },
     {
@@ -188,8 +188,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-neodymium-tailings", 5, 10, "fluid"),
-            PM.product_range("pm-neodymium-froth", 2.5, 7.5, "fluid")
+            PM.product_range("pm-neodymium-tailings", {5, 10}, "fluid"),
+            PM.product_range("pm-neodymium-froth", {2.5, 7.5}, "fluid")
         }
     },
 })

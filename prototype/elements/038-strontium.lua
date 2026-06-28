@@ -127,9 +127,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-strontium-black-ash", 4, 12),
-            PM.product_range_chance("pm-celestine", 0, 4, 0.45),
-            PM.catalyst_range_chance("pm-sodium-hydroxide", 0, 5, 0.45, 2.5, "fluid"),
+            PM.product_range("pm-strontium-black-ash", {4, 12}),
+            PM.product_range_chance("pm-celestine", {0, 4}, 0.45),
+            PM.catalyst_range_chance("pm-sodium-hydroxide", {0, 5}, 0.45, 2.5, "fluid"),
         }
     },
     {
@@ -149,9 +149,9 @@ data:extend({
         },
         results =
         {
-            PM.catalyst_range("pm-ion-exchange-beads", 2, 8, 2),
-            PM.product_range("pm-strontium-sulfide-solution", 10, 12.5, "fluid"),
-            PM.product_range_chance("pm-acidic-water", 0, 25, 0.5, "fluid")
+            PM.catalyst_range("pm-ion-exchange-beads", {2, 8}, 2),
+            PM.product_range("pm-strontium-sulfide-solution", {10, 12.5}, "fluid"),
+            PM.product_range_chance("pm-acidic-water", {0, 25}, 0.5, "fluid")
         }
     },
     {
@@ -172,7 +172,7 @@ data:extend({
         {
             PM.product_chance("pm-strontium-sulfide", 3, 0.75),
             PM.product_chance("pm-strontium-carbonate", 1, 0.25),
-            PM.product_range("pm-carbon-monoxide", 10, 30, "fluid"),
+            PM.product_range("pm-carbon-monoxide", {10, 30}, "fluid"),
         }
     },
     {
@@ -192,7 +192,7 @@ data:extend({
         results =
         {
             PM.product("pm-strontium-carbonate", 2),
-            PM.product_range("pm-carbon-dioxide-gas", 5, 12, "fluid")
+            PM.product_range("pm-carbon-dioxide-gas", {5, 12}, "fluid")
         }
     },
     {
@@ -211,9 +211,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-strontium-ore", 1, 4),
-            PM.product_range_chance("pm-bauxite", 0, 3, 0.55),
-            PM.product_range_chance("pm-patina", 0, 2, 0.45),
+            PM.product_range("pm-strontium-ore", {1, 4}),
+            PM.product_range_chance("pm-bauxite", {0, 3}, 0.55),
+            PM.product_range_chance("pm-patina", {0, 2}, 0.45),
         }
     },
     {

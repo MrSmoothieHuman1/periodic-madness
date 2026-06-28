@@ -294,8 +294,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-thorium-filter-cake", 4, 6),
-            PM.catalyst_range("pm-thorium-cast-iron-vessel", 1, 2, 2)
+            PM.product_range("pm-thorium-filter-cake", {4, 6}),
+            PM.catalyst_range("pm-thorium-cast-iron-vessel", {1, 2}, 2)
         }
     },
     {
@@ -315,7 +315,7 @@ data:extend({
         results =
         {
             PM.product_chance("pm-sodium-diuranate", 1, 0.01),
-            PM.product_range("pm-trisodium-phosphate", 0, 2),
+            PM.product_range("pm-trisodium-phosphate", {0, 2}),
             PM.product("pm-thorium-precipitate", 2, "fluid")
         }
     },
@@ -333,7 +333,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-trace-thorium", 2, 8)
+            PM.product_range("pm-trace-thorium", {2, 8})
         }
     },
     {
@@ -350,7 +350,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-thorium-232", 1, 2)
+            PM.product_range("pm-thorium-232", {1, 2})
         }
     },
 

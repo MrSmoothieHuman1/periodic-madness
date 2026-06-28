@@ -183,8 +183,8 @@ data:extend({
       },
       results = 
       {
-        PM.product_range("pm-hydrogen-gas", 0, 15, "fluid"),
-        PM.product_range("pm-ammonia-gas", 15, 20, "fluid"),
+        PM.product_range("pm-hydrogen-gas", {0, 15}, "fluid"),
+        PM.product_range("pm-ammonia-gas", {15, 20}, "fluid"),
         PM.catalyst_chance("pm-nitrous-iron", 1, 0.75, 1)
       }
     },
@@ -204,8 +204,8 @@ data:extend({
       },
       results =
       {
-        PM.product_range("pm-nitrogen-gas", 0, 5, "fluid"),
-        PM.product_range("iron-plate", 5, 10),
+        PM.product_range("pm-nitrogen-gas", {0, 5}, "fluid"),
+        PM.product_range("iron-plate", {5, 10}),
         PM.product_chance("pm-yttrium-catalyst", 1, 0.9),
         PM.product_chance("pm-catalyst-container", 1, 0.1)
       }

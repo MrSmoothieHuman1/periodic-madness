@@ -91,8 +91,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-sassolite", 2, 5),
-      PM.product_range("pm-calcite", 1, 6),
+      PM.product_range("pm-sassolite", {2, 5}),
+      PM.product_range("pm-calcite", {1, 6}),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -121,7 +121,7 @@ data:extend({
     {
       PM.product("pm-diluted-boric-acid", 20, "fluid"),
       PM.product("sulfur", 4),
-      PM.product_range("pm-patina", 2, 6)
+      PM.product_range("pm-patina", {2, 6})
     }
   } --[[@as data.RecipePrototype]],
   {

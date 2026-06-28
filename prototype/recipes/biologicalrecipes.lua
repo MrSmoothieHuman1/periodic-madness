@@ -19,7 +19,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("wood", 5, 10),
+      PM.product_range("wood", {5, 10}),
       PM.product_chance("wood", 1, 0.5)
     }
   },
@@ -40,7 +40,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("wood", 50, 60)
+      PM.product_range("wood", {50, 60})
     }
   },
   {
@@ -63,7 +63,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("wood", 50, 65)
+      PM.product_range("wood", {50, 65})
     }
   },
 
@@ -107,7 +107,7 @@ data:extend({
     results =
     {
       PM.product("pm-cellouse-pulp", 5, "fluid"),
-      PM.product_range("pm-wood-strips", 2, 4)
+      PM.product_range("pm-wood-strips", {2, 4})
     }
   },
   {
@@ -377,8 +377,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bacteriaed-agar-solution", 39, 40, "fluid"),
-      PM.product_range("pm-methyl-chloride", 2, 6, "fluid")
+      PM.product_range("pm-bacteriaed-agar-solution", {39, 40}, "fluid"),
+      PM.product_range("pm-methyl-chloride", {2, 6}, "fluid")
     }
   },
   {
@@ -397,8 +397,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bacteriaed-agar-solution", 39, 40, "fluid"),
-      PM.product_range("pm-hydrogen-sulfide", 2, 8, "fluid")
+      PM.product_range("pm-bacteriaed-agar-solution", {39, 40}, "fluid"),
+      PM.product_range("pm-hydrogen-sulfide", {2, 8}, "fluid")
     }
   },
   {
@@ -417,8 +417,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cyanobacteriaed-agar-solution", 38, 40, "fluid"),
-      PM.product_range("pm-ammonia-gas", 3, 9, "fluid")
+      PM.product_range("pm-cyanobacteriaed-agar-solution", {38, 40}, "fluid"),
+      PM.product_range("pm-ammonia-gas", {3, 9}, "fluid")
     }
   },
 } --[[@as data.RecipePrototype[] ]])

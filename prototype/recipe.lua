@@ -558,7 +558,7 @@ data:extend({
     results =
     {
       PM.product("pm-vulcanised-rubber", 5),
-      PM.product_range("pm-acidic-water", 5, 8, "fluid")
+      PM.product_range("pm-acidic-water", {5, 8}, "fluid")
     }
   },
   {
@@ -918,7 +918,7 @@ data:extend({
     results =
     {
       PM.product("pm-phosphoramidite", 2.4, "fluid"),
-      PM.product_range("pm-trace-acetonitrile", 2, 8, "fluid")
+      PM.product_range("pm-trace-acetonitrile", {2, 8}, "fluid")
     }
   },
   {
@@ -1018,7 +1018,7 @@ data:extend({
     results =
     {
       PM.product("pm-iron-sulfur-cluster", 1),
-      PM.product_range_chance("sulfur", 1, 3, 0.24)
+      PM.product_range_chance("sulfur", {1, 3}, 0.24)
     }
   },
   {
@@ -1039,7 +1039,7 @@ data:extend({
     results =
     {
       PM.product("pm-CISD2", 4, "fluid"),
-      PM.product_range_chance("pm-zinc-plate", 2, 4, 0.45),
+      PM.product_range_chance("pm-zinc-plate", {2, 4}, 0.45),
       PM.product_chance("pm-ferrum", 3, 0.4)
     }
   },
@@ -1097,8 +1097,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-fluid-circuit", 1, 3, 0.4),
-      PM.product_range_chance("electronic-circuit", 1, 3, 0.7),
+      PM.product_range_chance("pm-fluid-circuit", {1, 3}, 0.4),
+      PM.product_range_chance("electronic-circuit", {1, 3}, 0.7),
       PM.product_chance("copper-cable", 2, 0.2)
     }
   },
@@ -1393,7 +1393,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-hydrochloric-acid", 2, 5, "fluid"),
+      PM.product_range("pm-hydrochloric-acid", {2, 5}, "fluid"),
       PM.product("pm-chloronated-solution", 12, "fluid")
     }
   },
@@ -1414,8 +1414,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-chloroform", 7.5, 10, "fluid"),
-      PM.product_range("pm-carbon-tetrachloride", 3, 8, "fluid"),
+      PM.product_range("pm-chloroform", {7.5, 10}, "fluid"),
+      PM.product_range("pm-carbon-tetrachloride", {3, 8}, "fluid"),
       PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.85, 1),
       PM.catalyst_chance("pm-catalyst-container", 1, 0.15, 1)
     }
@@ -1913,7 +1913,7 @@ data:extend({
     results =
     {
       PM.product("pm-lithium-logistic-robot", 1),
-      PM.product_range_chance("pm-vanadium-redox-battery", 1, 2, 0.66)
+      PM.product_range_chance("pm-vanadium-redox-battery", {1, 2}, 0.66)
     }
   },
   {
@@ -1930,7 +1930,7 @@ data:extend({
     results =
     {
       PM.product("pm-lithium-construction-robot", 1),
-      PM.product_range_chance("pm-vanadium-redox-battery", 1, 2, 0.66)
+      PM.product_range_chance("pm-vanadium-redox-battery", {1, 2}, 0.66)
     }
   },
   {
@@ -2194,9 +2194,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-empty-fuel-rod", 1, 2),
-      PM.product_range("pm-helium-gas", 3, 6, "fluid"),
-      PM.product_range_chance("pm-carbon-dioxide-gas", 5, 9, 0.67, "fluid")
+      PM.product_range("pm-empty-fuel-rod", {1, 2}),
+      PM.product_range("pm-helium-gas", {3, 6}, "fluid"),
+      PM.product_range_chance("pm-carbon-dioxide-gas", {5, 9}, 0.67, "fluid")
     }
   },
   {
@@ -2358,8 +2358,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-aluminium-ore", 6, 14),
-      PM.product_range("pm-oxygen-gas", 10, 22, "fluid"),
+      PM.product_range("pm-aluminium-ore", {6, 14}),
+      PM.product_range("pm-oxygen-gas", {10, 22}, "fluid"),
     }
   },
   {
@@ -2379,9 +2379,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 5, 0.75),
-      PM.product_range("pm-oxygen-gas", 5, 11, "fluid"),
-      PM.product_range_chance("iron-ore", 0, 3, 0.65)
+      PM.product_range_chance("pm-industrial-grade-silicon-ore", {1, 5}, 0.75),
+      PM.product_range("pm-oxygen-gas", {5, 11}, "fluid"),
+      PM.product_range_chance("iron-ore", {0, 3}, 0.65)
     }
   },
   {
@@ -2401,9 +2401,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-chromium-ore", 2, 8, 0.7),
-      PM.product_range("pm-beryl", 0, 6),
-      PM.product_range("pm-oxygen-gas", 10, 22, "fluid"),
+      PM.product_range_chance("pm-chromium-ore", {2, 8}, 0.7),
+      PM.product_range("pm-beryl", {0, 6}),
+      PM.product_range("pm-oxygen-gas", {10, 22}, "fluid"),
     }
   },
   {
@@ -2423,9 +2423,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-aluminium-ore", 5, 12),
-      PM.product_range("pm-oxygen-gas", 12, 18, "fluid"),
-      PM.product_range_chance("pm-boron", 0, 2, 0.12, "fluid")
+      PM.product_range("pm-aluminium-ore", {5, 12}),
+      PM.product_range("pm-oxygen-gas", {12, 18}, "fluid"),
+      PM.product_range_chance("pm-boron", {0, 2}, 0.12, "fluid")
     }
   },
   {
@@ -2445,9 +2445,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-sodium", 4, 8),
-      PM.product_range("sulfur", 2, 7),
-      PM.product_range_chance("pm-calcite", 0, 3, 0.6),
+      PM.product_range("pm-sodium", {4, 8}),
+      PM.product_range("sulfur", {2, 7}),
+      PM.product_range_chance("pm-calcite", {0, 3}, 0.6),
     }
   },
   {
@@ -2467,9 +2467,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-manganese-ore", 6, 14),
-      PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 5, 0.55),
-      PM.product_range("pm-calcium-ore", 4, 8),
+      PM.product_range("pm-manganese-ore", {6, 14}),
+      PM.product_range_chance("pm-industrial-grade-silicon-ore", {1, 5}, 0.55),
+      PM.product_range("pm-calcium-ore", {4, 8}),
     }
   },
   {
@@ -2493,8 +2493,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-ruby-dust", 0, 4, 4),
-      PM.product_range("water", 10, 45, "fluid")
+      PM.ignored_range("pm-ruby-dust", {0, 4}, 4),
+      PM.product_range("water", {10, 45}, "fluid")
     }
   },
   {
@@ -2518,8 +2518,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-citrine-dust", 0, 4, 4),
-      PM.product_range("water", 10, 45, "fluid")
+      PM.ignored_range("pm-citrine-dust", {0, 4}, 4),
+      PM.product_range("water", {10, 45}, "fluid")
     }
   },
   {
@@ -2543,8 +2543,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-emerald-dust", 0, 4, 4),
-      PM.product_range("water", 10, 45, "fluid")
+      PM.ignored_range("pm-emerald-dust", {0, 4}, 4),
+      PM.product_range("water", {10, 45}, "fluid")
     }
   },
   {
@@ -2568,8 +2568,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-lapis-lazuli-dust", 0, 4, 4),
-      PM.product_range("water", 10, 45, "fluid")
+      PM.ignored_range("pm-lapis-lazuli-dust", {0, 4}, 4),
+      PM.product_range("water", {10, 45}, "fluid")
     }
   },
   {
@@ -2593,8 +2593,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-sapphire-dust", 0, 4, 4),
-      PM.product_range("water", 10, 45, "fluid")
+      PM.ignored_range("pm-sapphire-dust", {0, 4}, 4),
+      PM.product_range("water", {10, 45}, "fluid")
     }
   },
   {
@@ -2618,8 +2618,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-garnet-dust", 0, 4, 4),
-      PM.product_range("water", 10, 45, "fluid")
+      PM.ignored_range("pm-garnet-dust", {0, 4}, 4),
+      PM.product_range("water", {10, 45}, "fluid")
     }
   },
   {
@@ -2658,8 +2658,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cut-ruby", 0, 4),
-      PM.catalyst_range_chance("pm-ruby", 2, 6, 0.9, 6),
+      PM.product_range("pm-cut-ruby", {0, 4}),
+      PM.catalyst_range_chance("pm-ruby", {2, 6}, 0.9, 6),
       PM.catalyst_chance("pm-saw", 1, 0.98, 1)
     }
   },
@@ -2679,8 +2679,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cut-sapphire", 0, 4),
-      PM.catalyst_range_chance("pm-sapphire", 2, 6, 0.9, 6),
+      PM.product_range("pm-cut-sapphire", {0, 4}),
+      PM.catalyst_range_chance("pm-sapphire", {2, 6}, 0.9, 6),
       PM.catalyst_chance("pm-saw", 1, 0.98, 1)
     }
   },
@@ -2742,8 +2742,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cobalt-blue", 4, 10),
-      PM.product_range_chance("pm-sulfur-dioxide", 4, 8, 0.25, "fluid")
+      PM.product_range("pm-cobalt-blue", {4, 10}),
+      PM.product_range_chance("pm-sulfur-dioxide", {4, 8}, 0.25, "fluid")
     }
   },
   {
@@ -2765,9 +2765,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("water", 100, 120, "fluid"),
-      PM.product_range("pm-sea-salt", 50, 95),
-      PM.catalyst_range("pm-garnet-dust", 1, 5, 5)
+      PM.product_range("water", {100, 120}, "fluid"),
+      PM.product_range("pm-sea-salt", {50, 95}),
+      PM.catalyst_range("pm-garnet-dust", {1, 5}, 5)
     }
   },
   {
@@ -2933,7 +2933,7 @@ data:extend({
     results = 
     {
       PM.product("pm-gunpowder", 2),
-      PM.product_range_chance("pm-acidic-water", 10, 15, 0.8, "fluid")
+      PM.product_range_chance("pm-acidic-water", {10, 15}, 0.8, "fluid")
     }
   },
   {
@@ -2953,8 +2953,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-hydrogen-peroxide", 12, 25, 0.5, "fluid"),
-      PM.product_range_chance("water", 12, 25, 0.5, "fluid"),
+      PM.product_range_chance("pm-hydrogen-peroxide", {12, 25}, 0.5, "fluid"),
+      PM.product_range_chance("water", {12, 25}, 0.5, "fluid"),
     }
   },
   {
@@ -3314,7 +3314,7 @@ data:extend({
     results = 
     {
       PM.product("pm-dimethyldichlorosilane", 4, "fluid"),
-      PM.product_range("pm-hydrochloric-acid", 2, 4, "fluid")
+      PM.product_range("pm-hydrochloric-acid", {2, 4}, "fluid")
     }
   },
   {
@@ -3350,8 +3350,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-dichlorosilane", 2, 8, "fluid"),
-      PM.product_range("pm-hydrochloric-acid", 4, 10, "fluid")
+      PM.product_range("pm-dichlorosilane", {2, 8}, "fluid"),
+      PM.product_range("pm-hydrochloric-acid", {4, 10}, "fluid")
     }
   },
   {
@@ -3370,7 +3370,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-trichlorosilane", 2, 8, "fluid"),
+      PM.product_range("pm-trichlorosilane", {2, 8}, "fluid"),
     }
   },
   {
@@ -3419,7 +3419,7 @@ data:extend({
       PM.product("pm-polydimethylsiloxane", 8, "fluid"),
       PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.8, 3),
       PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3),
-      PM.product_range("pm-hydrochloric-acid", 8, 12, "fluid")
+      PM.product_range("pm-hydrochloric-acid", {8, 12}, "fluid")
     }
   },
   {
@@ -3938,7 +3938,7 @@ data:extend({
     results =
     {
       PM.product("pm-nitric-acid", 5, "fluid"),
-      PM.product_range("pm-hydrogen-gas", 6, 15, "fluid")
+      PM.product_range("pm-hydrogen-gas", {6, 15}, "fluid")
     }
   },
   {
@@ -3958,7 +3958,7 @@ data:extend({
     {
       PM.product("pm-aqua-regia", 10, "fluid"),
       PM.product("water", 7.5, "fluid"),
-      PM.product_range("pm-nitrosyl-chloride", 3, 5, "fluid")
+      PM.product_range("pm-nitrosyl-chloride", {3, 5}, "fluid")
     }
   },
   {
@@ -3977,8 +3977,8 @@ data:extend({
     },
     results = 
     {
-        PM.product_range("pm-nitric-oxide", 0, 5, "fluid"),
-        PM.product_range("pm-chlorine", 0, 5, "fluid")
+        PM.product_range("pm-nitric-oxide", {0, 5}, "fluid"),
+        PM.product_range("pm-chlorine", {0, 5}, "fluid")
     }
   },
   {
@@ -4404,7 +4404,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-syngas", 5, 12.5, "fluid"),
+      PM.product_range("pm-syngas", {5, 12.5}, "fluid"),
       PM.product("pm-cyclohexane-carboxaldehyde", 5, "fluid")
     }
   },
@@ -4492,7 +4492,7 @@ data:extend({
     results =
     {
       PM.product("pm-1-3-5-oxadiazine-NON-host", 1),
-      PM.catalyst_range("pm-acetic-acid", 0, 10, 10, "fluid")
+      PM.catalyst_range("pm-acetic-acid", {0, 10}, 10, "fluid")
     }
   },
   {
@@ -4670,7 +4670,7 @@ data:extend({
     results =
     {
       PM.product("pm-selenium-logistic-robot", 1),
-      PM.product_range_chance("pm-lithium-ion-battery", 1, 2, 0.66)
+      PM.product_range_chance("pm-lithium-ion-battery", {1, 2}, 0.66)
     }
   },
   {
@@ -4687,7 +4687,7 @@ data:extend({
     results =
     {
       PM.product("pm-selenium-construction-robot", 1),
-      PM.product_range_chance("pm-lithium-ion-battery", 1, 2, 0.66)
+      PM.product_range_chance("pm-lithium-ion-battery", {1, 2}, 0.66)
     }
   },
   {
@@ -4722,8 +4722,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cut-garnet", 0, 4),
-      PM.catalyst_range_chance("pm-garnet", 2, 6, 0.9, 6),
+      PM.product_range("pm-cut-garnet", {0, 4}),
+      PM.catalyst_range_chance("pm-garnet", {2, 6}, 0.9, 6),
       PM.catalyst_chance("pm-saw", 1, 0.98, 1)
     }
   },
@@ -5437,7 +5437,7 @@ data:extend({
     results =
     {
         PM.product("pm-nitrobenzene", 40, "fluid"),
-        PM.catalyst_range("pm-iodine", 1, 3, 3)
+        PM.catalyst_range("pm-iodine", {1, 3}, 3)
     }
   },
   {
@@ -5531,7 +5531,7 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-crushed-monazite", 12, 18)
+        PM.product_range("pm-crushed-monazite", {12, 18})
     }
   },
   {
@@ -5562,7 +5562,7 @@ data:extend({
     results =
     {
         PM.product("pm-low-seperated-monazite", 15),
-        PM.product_range("stone", 2, 6),
+        PM.product_range("stone", {2, 6}),
         PM.catalyst_chance("pm-ferrite-magnet", 1, 0.6, 1)
     }
   },
@@ -5689,8 +5689,8 @@ data:extend({
     results = 
     {
         PM.product("pm-low-seperated-monazite", 15),
-        PM.product_range("stone", 2, 6),
-        PM.product_range_chance("pm-yttrium-ore", 1, 3, 0.45),
+        PM.product_range("stone", {2, 6}),
+        PM.product_range_chance("pm-yttrium-ore", {1, 3}, 0.45),
         PM.catalyst_chance("pm-neodymium-magnet", 1, 0.93, 1)
     }
   },
@@ -5757,7 +5757,7 @@ data:extend({
     results =
     {
         PM.product("pm-pure-monazite", 12),
-        PM.product_range_chance("pm-trace-thorium", 1, 2, 0.75),
+        PM.product_range_chance("pm-trace-thorium", {1, 2}, 0.75),
         PM.catalyst_chance("pm-neodymium-magnet", 3, 0.99, 3)
     }
   },
@@ -5795,7 +5795,7 @@ data:extend({
     results =
     {
         PM.product("pm-leached-bastnasite", 10),
-        PM.product_range("pm-calcium-chloride", 0, 4),
+        PM.product_range("pm-calcium-chloride", {0, 4}),
     }
   },
   {
@@ -5813,7 +5813,7 @@ data:extend({
    results =
    {
        PM.product("pm-roasted-bastnasite", 8),
-       PM.product_range("pm-patina", 1, 3),
+       PM.product_range("pm-patina", {1, 3}),
        PM.product_chance("pm-ferrosilicon", 1, 0.66)
    }
   },

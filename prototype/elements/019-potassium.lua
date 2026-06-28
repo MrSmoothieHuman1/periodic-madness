@@ -107,9 +107,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-calcite", 0, 4),
-      PM.product_range("pm-anhydrite", 3, 6),
-      PM.product_range("pm-sylvite", 4, 8)
+      PM.product_range("pm-calcite", {0, 4}),
+      PM.product_range("pm-anhydrite", {3, 6}),
+      PM.product_range("pm-sylvite", {4, 8})
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -128,7 +128,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-potash", 2, 4),
+      PM.product_range("pm-potash", {2, 4}),
       PM.product_chance("stone", 5, 0.85)
     }
   } --[[@as data.RecipePrototype]],
@@ -148,9 +148,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-calcium-sulfate", 1, 5, 0.75),
+      PM.product_range_chance("pm-calcium-sulfate", {1, 5}, 0.75),
       PM.product("pm-potash", 3),
-      PM.product_range_chance("pm-sodium", 0, 3, 0.15)
+      PM.product_range_chance("pm-sodium", {0, 3}, 0.15)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -196,7 +196,7 @@ data:extend({
     results = 
     {
         PM.product("pm-potassium-hydroxide", 5, "fluid"),
-        PM.product_range("pm-hydrogen-gas", 0, 7.5, "fluid")
+        PM.product_range("pm-hydrogen-gas", {0, 7.5}, "fluid")
     }
   },
   {

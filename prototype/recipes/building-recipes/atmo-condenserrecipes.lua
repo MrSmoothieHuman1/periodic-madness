@@ -117,12 +117,12 @@ data:extend({
     },
     results = 
     {
-        PM.product_range("pm-helium-gas", 10, 15, "fluid"),
-        PM.product_range("pm-neon-gas", 7.5, 12.5, "fluid"),
-        PM.product_range("pm-argon-gas", 5, 10, "fluid"),
-        PM.product_range("pm-krypton-gas", 2.5, 7.5, "fluid"),
-        PM.product_range("pm-xenon-gas", 0, 5, "fluid"),
-        PM.product_range("pm-radon-gas", 0, 2.5, "fluid")
+        PM.product_range("pm-helium-gas", {10, 15}, "fluid"),
+        PM.product_range("pm-neon-gas", {7.5, 12.5}, "fluid"),
+        PM.product_range("pm-argon-gas", {5, 10}, "fluid"),
+        PM.product_range("pm-krypton-gas", {2.5, 7.5}, "fluid"),
+        PM.product_range("pm-xenon-gas", {0, 5}, "fluid"),
+        PM.product_range("pm-radon-gas", {0, 2.5}, "fluid")
     }
 },
 
@@ -243,7 +243,7 @@ data:extend({
       PM.product("pm-carbon-dioxide-gas", 20, "fluid"),
       PM.product_chance("pm-carbon-monoxide", 10, 0.2, "fluid"),
       PM.product_chance("pm-carbon-dioxide-air-filter", 1, 0.9),
-      PM.product_range("pm-sodium-bicarbonate", 2, 5)
+      PM.product_range("pm-sodium-bicarbonate", {2, 5})
     }
   },
   {
@@ -266,7 +266,7 @@ data:extend({
       PM.product("pm-carbon-dioxide-gas", 40, "fluid"),
       PM.product_chance("pm-carbon-monoxide", 25, 0.8, "fluid"),
       PM.product_chance("pm-advanced-carbon-dioxide-air-filter", 1, 0.99),
-      PM.product_range("pm-sodium-bicarbonate", 2, 5)
+      PM.product_range("pm-sodium-bicarbonate", {2, 5})
     }
   },
 

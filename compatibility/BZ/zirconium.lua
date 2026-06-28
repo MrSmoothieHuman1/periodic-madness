@@ -107,8 +107,8 @@ data.raw["recipe"]["pm-electrolysis-plant-2"].ingredients =
 
 data.raw["simple-entity"]["rock-huge"].minable.results =
 {
-  PM.product_range("stone", 24, 50),
-  PM.product_range("coal",  24, 50)
+  PM.product_range("stone", {24, 50}),
+  PM.product_range("coal",  {24, 50})
 }
 data.raw["simple-entity"]["rock-big"].minable.results =
 {
@@ -120,7 +120,7 @@ data.raw["simple-entity"]["rock-big"].loot =
 }
 data.raw["simple-entity"]["sand-rock-big"].minable.results =
 {
-  PM.product_range("stone", 19, 25)
+  PM.product_range("stone", {19, 25})
 }
 data.raw["simple-entity"]["sand-rock-big"].loot =
 {
@@ -130,8 +130,8 @@ data.raw["simple-entity"]["sand-rock-big"].loot =
 -- for _, entity in pairs(data.raw["simple-entity"]) do
 --   entity.minable.results =
 --   {
---     PM.product_range("stone", 24, 50),
---     PM.product_range("coal",  24, 50)
+--     PM.product_range("stone", {24, 50}),
+--     PM.product_range("coal",  {24, 50})
 --   }
 -- end
 

@@ -129,9 +129,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-baryte-ore", 3, 6, 0.75),
-            PM.product_range_chance("pm-anhydrite", 1, 4, 0.66),
-            PM.product_range_chance("pm-sodium", 0, 3, 0.5)
+            PM.product_range_chance("pm-baryte-ore", {3, 6}, 0.75),
+            PM.product_range_chance("pm-anhydrite", {1, 4}, 0.66),
+            PM.product_range_chance("pm-sodium", {0, 3}, 0.5)
         }
     },
     {
@@ -152,8 +152,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-mixed-baryte", 2, 5, 0.75),
-            PM.product_range_chance("pm-pure-baryte", 1, 4, 0.25)
+            PM.product_range_chance("pm-mixed-baryte", {2, 5}, 0.75),
+            PM.product_range_chance("pm-pure-baryte", {1, 4}, 0.25)
         }
     },
     {
@@ -198,7 +198,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-barium-tailings", 1, 8, "fluid"),
+            PM.product_range("pm-barium-tailings", {1, 8}, "fluid"),
             PM.product_chance("pm-barium-froth", 5, 0.95, "fluid")
         }
     },
@@ -218,11 +218,11 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-pure-baryte", 3, 7),
-            PM.product_range_chance("pm-iron-chunk", 0, 4, 0.33),
-            PM.product_range_chance("pm-zinc-chunk", 0, 4, 0.33),
-            PM.product_range_chance("pm-lead-chunks", 0, 4, 0.33),
-            PM.product_range("pm-flux-container", 1, 2)
+            PM.product_range("pm-pure-baryte", {3, 7}),
+            PM.product_range_chance("pm-iron-chunk", {0, 4}, 0.33),
+            PM.product_range_chance("pm-zinc-chunk", {0, 4}, 0.33),
+            PM.product_range_chance("pm-lead-chunks", {0, 4}, 0.33),
+            PM.product_range("pm-flux-container", {1, 2})
         }
     },
     {
@@ -265,9 +265,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-aluminium-plate", 1, 5),
-            PM.product_range("pm-barium-vapour", 2.5, 7.5, "fluid"),
-            PM.product_range_chance("pm-barium-nitrate", 0, 3, 0.4)
+            PM.product_range("pm-aluminium-plate", {1, 5}),
+            PM.product_range("pm-barium-vapour", {2.5, 7.5}, "fluid"),
+            PM.product_range_chance("pm-barium-nitrate", {0, 3}, 0.4)
         }
     },
     {

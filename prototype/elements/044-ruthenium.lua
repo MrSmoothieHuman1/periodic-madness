@@ -158,7 +158,7 @@ data:extend({
         results = 
         {
             PM.product("pm-ruthenium-ore", 3),
-            PM.product_range("pm-ammonia-gas", 1.5, 2, "fluid"),
+            PM.product_range("pm-ammonia-gas", {1.5, 2}, "fluid"),
             PM.product_chance("pm-cobalt-catalyst", 2, 0.85),
             PM.product_chance("pm-catalyst-container", 2, 0.15)
         }

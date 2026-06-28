@@ -94,8 +94,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-caesium-rubidium-alum", 3, 6),
-      PM.product_range_chance("pm-pollucite", 2, 3, 0.6),
+      PM.product_range("pm-caesium-rubidium-alum", {3, 6}),
+      PM.product_range_chance("pm-pollucite", {2, 3}, 0.6),
       PM.product_chance("pm-empty-glass-ampule", 1, 0.85)
     }
   } --[[@as data.RecipePrototype]],
@@ -115,9 +115,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-30-rubidium-alum", 0, 4),
-      PM.product_range("pm-50-rubidium-alum", 0, 3),
-      PM.product_range("pm-70-rubidium-alum", 0, 2),
+      PM.product_range("pm-30-rubidium-alum", {0, 4}),
+      PM.product_range("pm-50-rubidium-alum", {0, 3}),
+      PM.product_range("pm-70-rubidium-alum", {0, 2}),
       PM.product_chance("pm-rubidium-alum", 1, 0.5),
     }
   } --[[@as data.RecipePrototype]],
@@ -203,8 +203,8 @@ data:extend({
     {
       PM.product("pm-rubidium", 1),
       PM.product_chance("pm-rubidium", 1, 0.5),
-      PM.product_range("pm-sulfur-dioxide", 2, 6, "fluid"),
-      PM.product_range("pm-aluminium-plate", 0, 5),
+      PM.product_range("pm-sulfur-dioxide", {2, 6}, "fluid"),
+      PM.product_range("pm-aluminium-plate", {0, 5}),
     }
   } --[[@as data.RecipePrototype]]
 })

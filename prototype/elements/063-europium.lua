@@ -92,7 +92,7 @@ data:extend({
         results =
         {
             PM.product("pm-europium-trioxide-concentrate", 20, "fluid"),
-            PM.catalyst_range("pm-sodium", 6, 12, 8)
+            PM.catalyst_range("pm-sodium", {6, 12}, 8)
         }
     },
     {
@@ -109,7 +109,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-europium-trioxide", 3, 4),
+            PM.product_range("pm-europium-trioxide", {3, 4}),
             PM.catalyst("pm-acidic-water", 12.5, 12.5, "fluid")
         }
     },

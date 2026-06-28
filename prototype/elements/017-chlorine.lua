@@ -219,7 +219,7 @@ data:extend({
     {
       PM.product("pm-chlorine", 5, "fluid"),
       PM.product("pm-hydrogen-gas", 10, "fluid"),
-      PM.product_range("pm-solid-sodium-hydroxide", 0, 2)
+      PM.product_range("pm-solid-sodium-hydroxide", {0, 2})
     }
   },
   {
@@ -242,7 +242,7 @@ data:extend({
     results = 
     {
         PM.product("pm-seawater", 12.5, "fluid"),
-        PM.product_range("pm-sodium", 1, 3)
+        PM.product_range("pm-sodium", {1, 3})
     }
   },
   {
@@ -309,9 +309,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-calcium-chloride", 0, 3, 0.5),
-      PM.product_range("pm-hydrogen-gas", 14, 20, "fluid"),
-      PM.product_range("pm-chlorine", 8, 16, "fluid")
+      PM.product_range_chance("pm-calcium-chloride", {0, 3}, 0.5),
+      PM.product_range("pm-hydrogen-gas", {14, 20}, "fluid"),
+      PM.product_range("pm-chlorine", {8, 16}, "fluid")
     }
   },
   
@@ -364,8 +364,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-chlorine", 8, 12, "fluid"),
-      PM.product_range("pm-chloroform", 6, 12, "fluid")
+      PM.product_range("pm-chlorine", {8, 12}, "fluid"),
+      PM.product_range("pm-chloroform", {6, 12}, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {

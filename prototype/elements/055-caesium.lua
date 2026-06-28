@@ -126,7 +126,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-pollucite", 6, 12)
+      PM.product_range("pm-pollucite", {6, 12})
     }
   },
   {
@@ -145,7 +145,7 @@ data:extend({
     results =
     {
       PM.product("pm-fine-pollucite-powder", 14),
-      PM.product_range_chance("pm-alkali-metals-ore", 0, 4, 0.5)
+      PM.product_range_chance("pm-alkali-metals-ore", {0, 4}, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -165,9 +165,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-caesium-hexachlorocerate", 2, 6),
-      PM.product_range("pm-caesium-iodine-chloride", 2, 6),
-      PM.product_range("pm-caesium-antimony-chloride", 2, 6),
+      PM.product_range("pm-caesium-hexachlorocerate", {2, 6}),
+      PM.product_range("pm-caesium-iodine-chloride", {2, 6}),
+      PM.product_range("pm-caesium-antimony-chloride", {2, 6}),
     }
   },
   {
@@ -188,9 +188,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
-      PM.product_range("pm-chlorine", 2.5, 5, "fluid"),
-      PM.product_range("pm-iodine", 0, 3)
+      PM.product_range_chance("pm-caesium-chloride", {2, 5}, 0.75),
+      PM.product_range("pm-chlorine", {2.5, 5}, "fluid"),
+      PM.product_range("pm-iodine", {0, 3})
     }
   },
   {
@@ -211,9 +211,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
-      PM.product_range("pm-hydrogen-gas", 2.5, 5, "fluid"),
-      PM.product_range("pm-antimony-ore", 0, 2)
+      PM.product_range_chance("pm-caesium-chloride", {2, 5}, 0.75),
+      PM.product_range("pm-hydrogen-gas", {2.5, 5}, "fluid"),
+      PM.product_range("pm-antimony-ore", {0, 2})
     }
   },
   {
@@ -234,8 +234,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-caesium-chloride", 2, 5, 0.75),
-      PM.product_range("pm-hydrochloric-acid", 7.5, 10, "fluid"),
+      PM.product_range_chance("pm-caesium-chloride", {2, 5}, 0.75),
+      PM.product_range("pm-hydrochloric-acid", {7.5, 10}, "fluid"),
     }
   },
   {

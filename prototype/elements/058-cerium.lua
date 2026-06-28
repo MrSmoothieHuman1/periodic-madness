@@ -95,9 +95,9 @@ data:extend({
         results =
         {
             PM.product("pm-cerium-dioxide", 3),
-            PM.product_range("pm-chlorine", 5, 10, "fluid"),
-            PM.product_range("pm-hydrogen-gas", 5, 10, "fluid"),
-            PM.product_range("pm-calcium-chloride", 0, 2),
+            PM.product_range("pm-chlorine", {5, 10}, "fluid"),
+            PM.product_range("pm-hydrogen-gas", {5, 10}, "fluid"),
+            PM.product_range("pm-calcium-chloride", {0, 2}),
         }
     },
     {

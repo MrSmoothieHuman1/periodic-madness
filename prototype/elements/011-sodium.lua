@@ -78,7 +78,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-sodium-bicarbonate", 10, 15),
+      PM.product_range("pm-sodium-bicarbonate", {10, 15}),
       PM.product("pm-ammonium-chloride", 10)
     }
   } --[[@as data.RecipePrototype]],
@@ -101,7 +101,7 @@ data:extend({
     {
       PM.product("pm-ammonia-gas", 10, "fluid"),
       PM.product("pm-chlorine", 20 , "fluid"),
-      PM.product_range("pm-calcium-chloride", 2, 5)
+      PM.product_range("pm-calcium-chloride", {2, 5})
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -122,7 +122,7 @@ data:extend({
     results =
     {
       PM.product("pm-sodium-carbonate", 20),
-      PM.product_range("pm-carbon-dioxide-gas", 4, 10, "fluid"),
+      PM.product_range("pm-carbon-dioxide-gas", {4, 10}, "fluid"),
     }
   } --[[@as data.RecipePrototype]],
   {

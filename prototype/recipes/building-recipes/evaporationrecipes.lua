@@ -15,7 +15,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("sulfur", 1, 2),
+      PM.product_range("sulfur", {1, 2}),
       PM.product("water", 25, "fluid"),
       PM.product("pm-sea-salt", 2)
     }

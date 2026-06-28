@@ -142,7 +142,7 @@ data:extend({
         results =
         {
             PM.product("pm-anode-mud", 4),
-            PM.product_range("pm-acidic-water", 5, 12, "fluid")
+            PM.product_range("pm-acidic-water", {5, 12}, "fluid")
         }
     },
     {
@@ -251,7 +251,7 @@ data:extend({
         results =
         {
             PM.product("pm-iridium-sponge", 4),
-            PM.product_range("pm-acidic-water", 6, 12, "fluid")
+            PM.product_range("pm-acidic-water", {6, 12}, "fluid")
         }
     },
     {
@@ -290,7 +290,7 @@ data:extend({
         results =
         {
             PM.product("pm-iridium-sponge", 4),
-            PM.product_range("pm-acidic-water", 6, 12, "fluid")
+            PM.product_range("pm-acidic-water", {6, 12}, "fluid")
         }
     },
     {

@@ -154,7 +154,7 @@ data:extend({
     results =
     {
       PM.product("pm-calcite", 4),
-      PM.product_range_chance("pm-sea-salt", 0, 6, 0.75),
+      PM.product_range_chance("pm-sea-salt", {0, 6}, 0.75),
       PM.product("water", 10, "fluid")
     }
   } --[[@as data.RecipePrototype]],
@@ -214,8 +214,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-mixed-calcium-rock", 4, 6),
-      PM.product_range_chance("pm-calcium-sulfate", 1, 2, 0.15)
+      PM.product_range("pm-mixed-calcium-rock", {4, 6}),
+      PM.product_range_chance("pm-calcium-sulfate", {1, 2}, 0.15)
     }
   },
   {
@@ -279,8 +279,8 @@ data:extend({
     results = 
     {
       PM.product("pm-calcium-oxide", 4),
-      PM.product_range("pm-carbon-dioxide-gas", 8, 20, "fluid"),
-      PM.product_range("pm-flux-container", 1, 2)
+      PM.product_range("pm-carbon-dioxide-gas", {8, 20}, "fluid"),
+      PM.product_range("pm-flux-container", {1, 2})
     }
   },
   {
@@ -301,7 +301,7 @@ data:extend({
     results = 
     {
       PM.product("pm-aluminium-plate", 10),
-      PM.product_range("pm-calcium-ore", 3, 8)
+      PM.product_range("pm-calcium-ore", {3, 8})
     }
   },
   {
@@ -344,9 +344,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-calcium-sulfate-chunks", 5, 10),
+      PM.product_range("pm-calcium-sulfate-chunks", {5, 10}),
       PM.product("pm-hot-coolant", 5, "fluid"),
-      PM.product_range_chance("sulfur", 0, 8, 0.75)
+      PM.product_range_chance("sulfur", {0, 8}, 0.75)
     }
   },
   {
@@ -380,7 +380,7 @@ data:extend({
     {
       PM.product("pm-calcium-sulfate-chunks", 10),
       PM.product("pm-hot-coolant", 2.5, "fluid"),
-      PM.product_range_chance("sulfur", 0, 4, 0.75)
+      PM.product_range_chance("sulfur", {0, 4}, 0.75)
     }
   },
   {
@@ -399,9 +399,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-calcium-sulfate", 5, 10),
-      PM.product_range("stone", 0, 8),
-      PM.product_range_chance("pm-calcium-dust", 0, 8, 0.75)
+      PM.product_range("pm-calcium-sulfate", {5, 10}),
+      PM.product_range("stone", {0, 8}),
+      PM.product_range_chance("pm-calcium-dust", {0, 8}, 0.75)
     }
   },
   {
@@ -421,8 +421,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("water", 25, 30, "fluid"),
-      PM.product_range("pm-seawater", 0, 5, "fluid")
+      PM.product_range("water", {25, 30}, "fluid"),
+      PM.product_range("pm-seawater", {0, 5}, "fluid")
     }
   }
 

@@ -656,7 +656,7 @@ data.raw["recipe"]["fission-reactor-equipment"].ingredients =
 data.raw["recipe"]["energy-shield-equipment"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 {
-  PM.product_range("pm-empty-reactor-cell", 3, 5),
+  PM.product_range("pm-empty-reactor-cell", {3, 5}),
   PM.product("uranium-238", 3)
 }
 data.raw["recipe"]["pump"].ingredients = 

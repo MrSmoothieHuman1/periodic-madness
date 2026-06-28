@@ -192,7 +192,7 @@ data:extend({
       },
       results = 
       {
-        PM.product_range("pm-carbon-dioxide-gas", 8, 10, "fluid"),
+        PM.product_range("pm-carbon-dioxide-gas", {8, 10}, "fluid"),
       }
     }
 })

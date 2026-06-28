@@ -35,9 +35,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-nickel-chunk", 2, 4, 3),
+      PM.catalyst_range("pm-nickel-chunk", {2, 4}, 3),
       PM.product("pm-palladium-ore", 4),
-      PM.product_range_chance("pm-patina", 2, 5, 0.5)
+      PM.product_range_chance("pm-patina", {2, 5}, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -58,7 +58,7 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-nickel-chunk", 0, 2, 1),
+      PM.catalyst_range("pm-nickel-chunk", {0, 2}, 1),
       PM.product("pm-palladium-ore", 4),
       PM.product_chance("pm-flux-container", 1, 0.66)
     }

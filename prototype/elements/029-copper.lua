@@ -115,7 +115,7 @@ data:extend({
     results = 
     {
       PM.product("pm-crude-matte-copper", 1),
-      PM.product_range_chance("stone", 1, 2, 0.25)
+      PM.product_range_chance("stone", {1, 2}, 0.25)
     }
   },
   {
@@ -152,7 +152,7 @@ data:extend({
     results =
     {
       PM.product("copper-ore", 2),
-      PM.product_range_chance("pm-patina", 1, 2, 0.75)
+      PM.product_range_chance("pm-patina", {1, 2}, 0.75)
     }
   },
 
@@ -363,8 +363,8 @@ data:extend({
   results =
   {
     PM.product("pm-matte-copper", 15, "fluid"),
-    PM.product_range("sulfur", 0, 4),
-    PM.product_range_chance("pm-gold-chunks", 0, 2, 0.66)
+    PM.product_range("sulfur", {0, 4}),
+    PM.product_range_chance("pm-gold-chunks", {0, 2}, 0.66)
   }
 },
 {
@@ -386,7 +386,7 @@ data:extend({
     PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.85, 2),
     PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2),
     PM.product("pm-blister-copper", 14),
-    PM.product_range("pm-combined-ore-slab", 0, 3)
+    PM.product_range("pm-combined-ore-slab", {0, 3})
   }
 },
 {
@@ -424,7 +424,7 @@ data:extend({
   results =
   {
     PM.product("copper-ore", 12),
-    PM.product_range_chance("pm-platinum-powder", 0, 2, 0.33)
+    PM.product_range_chance("pm-platinum-powder", {0, 2}, 0.33)
   }
 }
 })

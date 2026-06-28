@@ -84,7 +84,7 @@ data:extend({
     results =
     {
       PM.product("pm-zircon", 2),
-      PM.product_range("pm-sand", 1, 4),
+      PM.product_range("pm-sand", {1, 4}),
       PM.product_chance("pm-titanium-ore", 2, 0.22)
     }
   } --[[@as data.RecipePrototype]],

@@ -92,7 +92,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-impure-arsenic", 2, 6),
+      PM.product_range("pm-impure-arsenic", {2, 6}),
       PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.8, 1),
       PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 1),
     }
@@ -114,8 +114,8 @@ data:extend({
     results =
     {
       PM.product("pm-arsenic-oxide", 6),
-      PM.product_range("pm-ferrum", 1, 4),
-      PM.product_range("pm-impure-lead", 1, 5),
+      PM.product_range("pm-ferrum", {1, 4}),
+      PM.product_range("pm-impure-lead", {1, 5}),
 
     }
   } --[[@as data.RecipePrototype]],
@@ -156,7 +156,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-arsenic-ore", 6, 10),
+      PM.product_range("pm-arsenic-ore", {6, 10}),
       PM.product("water", 10, "fluid"),
     }
   } --[[@as data.RecipePrototype]]

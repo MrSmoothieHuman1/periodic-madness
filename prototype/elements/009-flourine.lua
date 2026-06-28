@@ -48,7 +48,7 @@ data:extend({
     results =
     {
       PM.product("pm-flourite", 8),
-      PM.product_range_chance("stone", 10, 15, 0.8),
+      PM.product_range_chance("stone", {10, 15}, 0.8),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -74,7 +74,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-calcium-sulfate", 2, 5),
+      PM.product_range("pm-calcium-sulfate", {2, 5}),
       PM.product("pm-hydrogen-flouride", 8, "fluid")
     }
   } --[[@as data.RecipePrototype]],
@@ -130,7 +130,7 @@ data:extend({
     results =
     {
       PM.product("pm-flourine", 3),
-      PM.product_range("pm-sulfur-dioxide", 2, 5, "fluid")
+      PM.product_range("pm-sulfur-dioxide", {2, 5}, "fluid")
     },
   } --[[@as data.RecipePrototype]],
 

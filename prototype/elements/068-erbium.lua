@@ -192,10 +192,10 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-erbium-oxide", 1, 3),
-            PM.product_range("pm-erbium-bromide", 1, 3),
-            PM.product_range("pm-erbium-iodide", 1, 3),
-            PM.product_range("pm-ion-exchange-beads", 3, 4)
+            PM.product_range("pm-erbium-oxide", {1, 3}),
+            PM.product_range("pm-erbium-bromide", {1, 3}),
+            PM.product_range("pm-erbium-iodide", {1, 3}),
+            PM.product_range("pm-ion-exchange-beads", {3, 4})
         }
     },
     {
@@ -231,7 +231,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-erbium", 3),
-            PM.product_range("pm-oxygen-gas", 2.5, 5, "fluid")
+            PM.product_range("pm-oxygen-gas", {2.5, 5}, "fluid")
         }
     },
     {
@@ -267,7 +267,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-erbium", 3),
-            PM.product_range("pm-boron", 2.5, 5, "fluid")
+            PM.product_range("pm-boron", {2.5, 5}, "fluid")
         }
     },
     {
@@ -303,7 +303,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-erbium", 3),
-            PM.product_range("pm-iodine", 1, 3)
+            PM.product_range("pm-iodine", {1, 3})
         }
     },
     {

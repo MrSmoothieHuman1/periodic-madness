@@ -80,7 +80,7 @@ data:extend({
         results = 
         {
             PM.product("pm-rhodium-chunks", 4),
-            PM.product_range_chance("pm-platinum-plate", 1, 2, 0.45)
+            PM.product_range_chance("pm-platinum-plate", {1, 2}, 0.45)
         }
     },
     {

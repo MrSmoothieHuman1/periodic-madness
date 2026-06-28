@@ -40,7 +40,7 @@ data:extend({
         PM.product("pm-oxygen-gas", 15, "fluid"),
         PM.product("pm-hydrogen-gas", 20, "fluid"),
         PM.product_chance("sulfur", 1, 0.66),
-        PM.product_range("stone", 1, 2)
+        PM.product_range("stone", {1, 2})
     }
   },
   {
@@ -81,7 +81,7 @@ data:extend({
     {
         PM.product("pm-oxygen-gas", 25, "fluid"),
         PM.product("pm-hydrogen-gas", 35, "fluid"),
-        PM.product_range("pm-platinum-plate", 2, 4)
+        PM.product_range("pm-platinum-plate", {2, 4})
     }
   }
 } --[[@as data.RecipePrototype[] ]])

@@ -100,7 +100,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-lead-powder", 6, 8),
+      PM.product_range("pm-lead-powder", {6, 8}),
       PM.product_chance("pm-mixed-ore-slag", 2, 0.5)
     }
   },
@@ -122,7 +122,7 @@ data:extend({
     results =
     {
       PM.product("pm-lead-froth", 30, "fluid"),
-      PM.product_range("pm-acidic-water", 10, 20, "fluid"),
+      PM.product_range("pm-acidic-water", {10, 20}, "fluid"),
     }
   },
   {
@@ -183,8 +183,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-molten-lead", 4.5, 5, "fluid"),
-      PM.product_range_chance("pm-mixed-ore-slag", 0, 3, 0.5)
+      PM.product_range("pm-molten-lead", {4.5, 5}, "fluid"),
+      PM.product_range_chance("pm-mixed-ore-slag", {0, 3}, 0.5)
     }
   },
   {

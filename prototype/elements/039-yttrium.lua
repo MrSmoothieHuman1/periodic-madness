@@ -98,7 +98,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-mixed-bastnasite", 3, 8)
+      PM.product_range("pm-mixed-bastnasite", {3, 8})
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -119,8 +119,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-bastnasite-Y", 2, 4, 0.5),
-      PM.product_range_chance("pm-bastnasite-C", 2, 4, 0.5)
+      PM.product_range_chance("pm-bastnasite-Y", {2, 4}, 0.5),
+      PM.product_range_chance("pm-bastnasite-C", {2, 4}, 0.5)
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -142,7 +142,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-yttrium-oxide", 1, 3),
+      PM.product_range("pm-yttrium-oxide", {1, 3}),
       PM.catalyst_chance("pm-vanadium-oxide-catalyst", 4, 0.85, 4),
       PM.catalyst_chance("pm-catalyst-container", 4, 0.15, 4),
       PM.product_chance("pm-flourine", 5, 0.456)
@@ -167,10 +167,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-yttrium-oxide", 0, 1),
+      PM.product_range("pm-yttrium-oxide", {0, 1}),
       PM.catalyst_chance("pm-cobalt-catalyst", 4, 0.75, 4),
       PM.catalyst_chance("pm-catalyst-container", 4, 0.25, 4),
-      PM.product_range("pm-carbon-trioxide", 8, 10, "fluid")
+      PM.product_range("pm-carbon-trioxide", {8, 10}, "fluid")
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -230,9 +230,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-bastnasite-Y", 3, 6),
-      PM.product_range("pm-bastnasite-C", 3, 6),
-      PM.product_range_chance("pm-bastnasite-ce", 0, 3, 0.75)
+      PM.product_range("pm-bastnasite-Y", {3, 6}),
+      PM.product_range("pm-bastnasite-C", {3, 6}),
+      PM.product_range_chance("pm-bastnasite-ce", {0, 3}, 0.75)
     }
   } --[[@as data.RecipePrototype]],
 })

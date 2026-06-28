@@ -127,10 +127,10 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-terbium-chloride", 1, 3),
-            PM.product_range("pm-terbium-bromide", 1, 3),
-            PM.product_range("pm-terbium-hydride", 1, 3),
-            PM.product_range("pm-terbium-sulfate", 1, 3)
+            PM.product_range("pm-terbium-chloride", {1, 3}),
+            PM.product_range("pm-terbium-bromide", {1, 3}),
+            PM.product_range("pm-terbium-hydride", {1, 3}),
+            PM.product_range("pm-terbium-sulfate", {1, 3})
         }
     },
     {
@@ -151,7 +151,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-chlorine", 2.5, 5, "fluid")
+            PM.product_range("pm-chlorine", {2.5, 5}, "fluid")
         }
     },
     {
@@ -172,7 +172,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-boron", 2.5, 5, "fluid")
+            PM.product_range("pm-boron", {2.5, 5}, "fluid")
         }
     },
     {
@@ -193,7 +193,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-hydrogen-gas", 2.5, 5, "fluid")
+            PM.product_range("pm-hydrogen-gas", {2.5, 5}, "fluid")
         }
     },
     {
@@ -214,7 +214,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-sulfur-dioxide", 2.5, 5, "fluid")
+            PM.product_range("pm-sulfur-dioxide", {2.5, 5}, "fluid")
         }
     },
     {
@@ -249,7 +249,7 @@ data:extend({
         results = 
         {
             PM.product("pm-terbium", 12),
-            PM.catalyst_range("pm-flourine", 6, 8, 7)
+            PM.catalyst_range("pm-flourine", {6, 8}, 7)
         }
     }
 })

@@ -71,9 +71,9 @@ data:extend({
         results =
         {
             PM.product("pm-thortveitite", 12),
-            PM.product_range("pm-cadnium-sulfate", 0, 1),
-            PM.product_range("pm-tantalite-oxide", 0, 2),
-            PM.product_range("pm-niobite-oxide", 0, 2)
+            PM.product_range("pm-cadnium-sulfate", {0, 1}),
+            PM.product_range("pm-tantalite-oxide", {0, 2}),
+            PM.product_range("pm-niobite-oxide", {0, 2})
         }
     },
     {

@@ -84,7 +84,7 @@ data:extend({
     results =
     {
       PM.product("pm-copper-chunk", 2),
-      PM.product_range_chance("pm-cobaltite", 0, 2, 0.69),
+      PM.product_range_chance("pm-cobaltite", {0, 2}, 0.69),
       PM.product("pm-cobalt-blue", 4)
     }
   } --[[@as data.RecipePrototype]],
@@ -105,7 +105,7 @@ data:extend({
     results =
     {
       PM.product("pm-cobalt-ore", 2),
-      PM.product_range("pm-aluminium-ore", 0, 2)
+      PM.product_range("pm-aluminium-ore", {0, 2})
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -129,7 +129,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-copper-tailings", 2, 8, "fluid"),
+      PM.product_range("pm-copper-tailings", {2, 8}, "fluid"),
       PM.product_chance("pm-copper-froth", 5, 0.7, "fluid")
     }
   } --[[@as data.RecipePrototype]],

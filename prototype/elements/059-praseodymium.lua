@@ -164,7 +164,7 @@ data:extend({
         results =
         {
             PM.catalyst("pm-75-praseodymium-deposit", 1, 1), --turns into 1 75% pras
-            PM.catalyst_range("pm-ammonium-nitrate", 1, 2, 2),
+            PM.catalyst_range("pm-ammonium-nitrate", {1, 2}, 2),
             PM.catalyst("pm-hot-light-coolant", 5, 5, "fluid", 1),
             PM.catalyst_chance("pm-pure-praseodymium-deposit", 1, 0.5, 1),
             PM.catalyst_chance("pm-25-praseodymium-deposit", 1, 0.75, 1)
@@ -208,7 +208,7 @@ data:extend({
         results =
         {
             PM.catalyst_chance("stone", 2, 0.33, 2),
-            PM.product_range("pm-praseodymium", 2, 3)
+            PM.product_range("pm-praseodymium", {2, 3})
         }
     }
 })

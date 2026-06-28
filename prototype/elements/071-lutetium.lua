@@ -124,7 +124,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-trace-lutetium", 2, 5)
+            PM.product_range("pm-trace-lutetium", {2, 5})
         }
     },
     {
@@ -177,7 +177,7 @@ data:extend({
         results =
         {
             PM.product("pm-low-lutetium-mixture", 3),
-            PM.product_range("pm-high-lutetium-mixture", 1, 2)
+            PM.product_range("pm-high-lutetium-mixture", {1, 2})
         }
     },
     {

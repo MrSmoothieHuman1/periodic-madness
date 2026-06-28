@@ -81,7 +81,7 @@ data:extend({
         results =
         {
             PM.product("pm-osmium-oxide", 4),
-            PM.product_range("pm-ammonia-gas", 3, 5, "fluid")
+            PM.product_range("pm-ammonia-gas", {3, 5}, "fluid")
         }
     },
     {
@@ -102,7 +102,7 @@ data:extend({
         results = 
         {
             PM.product("pm-osmium-ore", 3),
-            PM.product_range("pm-oxygen-gas", 6, 9, "fluid")
+            PM.product_range("pm-oxygen-gas", {6, 9}, "fluid")
         }
     },
     {
@@ -137,7 +137,7 @@ data:extend({
         results = 
         {
             PM.product("pm-osmium-ore", 3),
-            PM.product_range("pm-oxygen-gas", 6, 9, "fluid")
+            PM.product_range("pm-oxygen-gas", {6, 9}, "fluid")
         }
     },
     {

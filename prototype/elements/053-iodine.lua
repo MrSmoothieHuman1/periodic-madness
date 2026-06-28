@@ -92,7 +92,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-iodine", 5, 8),
+      PM.product_range("pm-iodine", {5, 8}),
       PM.product("pm-hydrochloric-acid", 5, "fluid")
     }
   } --[[@as data.RecipePrototype]]

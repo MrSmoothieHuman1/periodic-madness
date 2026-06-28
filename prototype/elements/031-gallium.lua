@@ -105,7 +105,7 @@ data:extend({
     results =
     {
       PM.product("pm-sodium-hydroxide", 6, "fluid"),
-      PM.product_range("pm-hydrogen-gas", 14, 20, "fluid")
+      PM.product_range("pm-hydrogen-gas", {14, 20}, "fluid")
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -125,7 +125,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-gallium-chunks", 6, 12),
+      PM.product_range("pm-gallium-chunks", {6, 12}),
       PM.product("pm-aluminium-ore", 3)
     }
   }--[[@as data.RecipePrototype]],
@@ -187,7 +187,7 @@ data:extend({
     results =
     {
       PM.product("pm-liquid-gallium", 5, "fluid"),
-      PM.catalyst_range("pm-ion-exchange-beads", 2, 5, 2)
+      PM.catalyst_range("pm-ion-exchange-beads", {2, 5}, 2)
     }
   }--[[@as data.RecipePrototype]]
 })

@@ -174,7 +174,7 @@ data:extend({
     {
         PM.product("pm-high-sulfur-refined-kerosene", 75, "fluid"),
         PM.product_chance("pm-oil-residuals", 10, 0.25, "fluid"),
-        PM.product_range("sulfur", 2, 3)
+        PM.product_range("sulfur", {2, 3})
     }
   },
   {
@@ -195,7 +195,7 @@ data:extend({
     {
         PM.product("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
         PM.product_chance("pm-fuel-oils", 10, 0.15, "fluid"),
-        PM.product_range("sulfur", 0, 1),
+        PM.product_range("sulfur", {0, 1}),
         PM.catalyst("pm-vanadium-oxide-catalyst", 2, 2)
     }
   },

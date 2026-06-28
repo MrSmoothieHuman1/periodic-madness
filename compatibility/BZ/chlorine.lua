@@ -110,7 +110,7 @@ data.raw["recipe"]["ferric-chloride-hcl"].categories = {"pm-acids"}
 data.raw["recipe"]["hydrogen-chloride-salt"].results =
 {
   PM.product("pm-hydrochloric-acid", 10, "fluid"),
-  PM.product_range("pm-oxygen", 2, 5, "item")
+  PM.product_range("pm-oxygen", {2, 5}, "item")
 }
 data.raw["recipe"]["hydrogen-chloride-salt"].icon_size = 64
 data.raw["recipe"]["hydrogen-chloride-salt"].icon =

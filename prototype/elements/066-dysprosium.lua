@@ -244,7 +244,7 @@ data:extend({
             PM.product("pm-dysprosium-plate", 3),
             PM.product("pm-unprocessed-dysprosium", 2),
             PM.product_chance("pm-tantalum-dysprosium-crucible", 1, 0.5),
-            PM.product_range("pm-combined-ore-slab", 0, 2)
+            PM.product_range("pm-combined-ore-slab", {0, 2})
         }
     },
 })

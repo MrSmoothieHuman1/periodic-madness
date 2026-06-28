@@ -212,8 +212,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-high-quality-quartzite", 2, 6),
-            PM.product_range("pm-low-quality-quartzite", 2, 6),
+            PM.product_range("pm-high-quality-quartzite", {2, 6}),
+            PM.product_range("pm-low-quality-quartzite", {2, 6}),
         }
     },
     {
@@ -245,9 +245,9 @@ data:extend({
         results =
         {
             PM.product("pm-ferrosilicon", 3),
-            PM.product_range("pm-carbon-monoxide", 5, 8, "fluid"),
-            PM.catalyst_range("pm-filled-flux-container", 0, 2, 2),
-            PM.catalyst_range("pm-flux-container", 0, 1, 1)
+            PM.product_range("pm-carbon-monoxide", {5, 8}, "fluid"),
+            PM.catalyst_range("pm-filled-flux-container", {0, 2}, 2),
+            PM.catalyst_range("pm-flux-container", {0, 1}, 1)
         }
     },
     {
@@ -266,9 +266,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range_chance("pm-industrial-grade-silicon-ore", 1, 4, 0.5),
-            PM.product_range("pm-ferrum", 1, 3),
-            PM.product_range("pm-patina", 2, 4),
+            PM.product_range_chance("pm-industrial-grade-silicon-ore", {1, 4}, 0.5),
+            PM.product_range("pm-ferrum", {1, 3}),
+            PM.product_range("pm-patina", {2, 4}),
         }
     },
     {
@@ -295,7 +295,7 @@ data:extend({
         results =
         {
             PM.product("pm-trichlorosilane", 10, "fluid"),
-            PM.product_range("pm-silicon-tetrachloride", 5, 10, "fluid")
+            PM.product_range("pm-silicon-tetrachloride", {5, 10}, "fluid")
         }
     },
     {
@@ -322,8 +322,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-trichlorosilane", 4, 8, "fluid"),
-            PM.product_range("pm-dichlorosilane", 2, 4, "fluid"),
+            PM.product_range("pm-trichlorosilane", {4, 8}, "fluid"),
+            PM.product_range("pm-dichlorosilane", {2, 4}, "fluid"),
             PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.85, 1),
             PM.catalyst_chance("pm-catalyst-container", 2, 0.15, 1)
         }
@@ -345,7 +345,7 @@ data:extend({
         results =
         {
             PM.product("pm-silane", 15, "fluid"),
-            PM.product_range("pm-silicon-tetrachloride", 2.5, 5, "fluid")
+            PM.product_range("pm-silicon-tetrachloride", {2.5, 5}, "fluid")
         }
     },
     {
@@ -373,9 +373,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-industrial-grade-silicon-ore", 3, 5),
-            PM.product_range_chance("pm-argon-gas", 2, 8, 0.65, "fluid"),
-            PM.product_range("pm-hydrogen-gas", 4, 8, "fluid")
+            PM.product_range("pm-industrial-grade-silicon-ore", {3, 5}),
+            PM.product_range_chance("pm-argon-gas", {2, 8}, 0.65, "fluid"),
+            PM.product_range("pm-hydrogen-gas", {4, 8}, "fluid")
         }
     },
     {
@@ -415,9 +415,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-industrial-grade-silicon-ore", 6, 10),
+            PM.product_range("pm-industrial-grade-silicon-ore", {6, 10}),
             PM.product("pm-industrial-noble-gas", 7.5, "fluid"),
-            PM.product_range("pm-hydrogen-gas", 8, 16, "fluid")
+            PM.product_range("pm-hydrogen-gas", {8, 16}, "fluid")
         }
     },
 
@@ -447,7 +447,7 @@ data:extend({
         results =
         {
             PM.product_chance("pm-low-quality-polysilicon", 2, 0.95),
-            PM.catalyst_range("pm-industrial-grade-silicon-ore", 0, 5, 3)
+            PM.catalyst_range("pm-industrial-grade-silicon-ore", {0, 5}, 3)
         }
     },
     {
@@ -476,7 +476,7 @@ data:extend({
         results =
         {
             PM.product_chance("pm-medium-quality-polysilicon", 2, 0.85),
-            PM.catalyst_range("pm-low-quality-polysilicon", 0, 5, 3)
+            PM.catalyst_range("pm-low-quality-polysilicon", {0, 5}, 3)
         }
     },
     {
@@ -505,7 +505,7 @@ data:extend({
         results =
         {
             PM.product_chance("pm-high-quality-polysilicon", 2, 0.75),
-            PM.catalyst_range("pm-medium-quality-polysilicon", 0, 5, 3)
+            PM.catalyst_range("pm-medium-quality-polysilicon", {0, 5}, 3)
         }
     },
     {

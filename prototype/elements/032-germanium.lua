@@ -89,9 +89,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-germanium-ore-concentrate", 4, 10, 0.85),
-            PM.product_range("pm-lead-powder", 0, 6),
-            PM.product_range_chance("pm-copper-chunk", 0, 4, 0.45)
+            PM.product_range_chance("pm-germanium-ore-concentrate", {4, 10}, 0.85),
+            PM.product_range("pm-lead-powder", {0, 6}),
+            PM.product_range_chance("pm-copper-chunk", {0, 4}, 0.45)
         }
     },
     {
@@ -111,7 +111,7 @@ data:extend({
         results = 
         {
             PM.product("pm-germanium-sulfide", 8),
-            PM.product_range_chance("pm-zinc-chunk", 0, 4, 0.45)
+            PM.product_range_chance("pm-zinc-chunk", {0, 4}, 0.45)
         }
     },
     {
@@ -132,7 +132,7 @@ data:extend({
         results = 
         {
             PM.product("pm-germanium-oxide", 6),
-            PM.product_range_chance("sulfur", 2, 4, 0.66)
+            PM.product_range_chance("sulfur", {2, 4}, 0.66)
         }
     },
     {
@@ -153,7 +153,7 @@ data:extend({
         results = 
         {
             PM.product("pm-germanium-tetrachloride", 4),
-            PM.product_range("pm-oxygen-gas", 5, 8, "fluid")
+            PM.product_range("pm-oxygen-gas", {5, 8}, "fluid")
         }
     },
     {
@@ -173,8 +173,8 @@ data:extend({
         results = 
         {
             PM.product("pm-germanium-ore", 2),
-            PM.product_range("pm-hydrochloric-acid", 5, 10, "fluid"),
-            PM.product_range("pm-chlorine", 6, 8, "fluid")
+            PM.product_range("pm-hydrochloric-acid", {5, 10}, "fluid"),
+            PM.product_range("pm-chlorine", {6, 8}, "fluid")
         }
     }
 })

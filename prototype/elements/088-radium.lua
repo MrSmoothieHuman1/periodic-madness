@@ -166,7 +166,7 @@ data:extend({
         results = 
         {
             PM.product("pm-radium-chloride", 2),
-            PM.product_range("pm-sulfur-dichloride", 0, 4, "fluid")
+            PM.product_range("pm-sulfur-dichloride", {0, 4}, "fluid")
         }
     },
     {
@@ -212,8 +212,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-sulfur-dioxide", 0, 5, "fluid"),
-            PM.product_range("pm-chlorine", 2, 8, "fluid"),
+            PM.product_range("pm-sulfur-dioxide", {0, 5}, "fluid"),
+            PM.product_range("pm-chlorine", {2, 8}, "fluid"),
         }
     },
     {

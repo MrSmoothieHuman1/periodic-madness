@@ -22,7 +22,7 @@ data:extend({
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-flourite", 40, 80),
+      PM.product_range("pm-flourite", {40, 80}),
       PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
@@ -48,7 +48,7 @@ data:extend({
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-tungsten-crystals", 40, 80),
+      PM.product_range("pm-tungsten-crystals", {40, 80}),
       PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
@@ -74,7 +74,7 @@ data:extend({
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-scheelite", 40, 80),
+      PM.product_range("pm-scheelite", {40, 80}),
       PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
@@ -100,7 +100,7 @@ data:extend({
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-calcite", 40, 80),
+      PM.product_range("pm-calcite", {40, 80}),
       PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
@@ -126,7 +126,7 @@ data:extend({
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-bismuth-ore", 40, 80),
+      PM.product_range("pm-bismuth-ore", {40, 80}),
       PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
@@ -152,7 +152,7 @@ data:extend({
     results =
     {
       PM.product("pm-seed-crystal", 1),
-      PM.product_range("pm-molybdenite", 40, 80),
+      PM.product_range("pm-molybdenite", {40, 80}),
       PM.catalyst("pm-hot-coolant", 20, 20, "fluid", 1)
     }
   },
@@ -174,12 +174,12 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-ruby", 6, 10),
-      PM.product_range("pm-citrine", 6, 10),
-      PM.product_range("pm-emerald", 6, 10),
-      PM.product_range("pm-sapphire", 6, 10),
-      PM.product_range("pm-lapis-lazuli", 6, 10),
-      PM.product_range("pm-garnet", 6, 10),
+      PM.product_range("pm-ruby", {6, 10}),
+      PM.product_range("pm-citrine", {6, 10}),
+      PM.product_range("pm-emerald", {6, 10}),
+      PM.product_range("pm-sapphire", {6, 10}),
+      PM.product_range("pm-lapis-lazuli", {6, 10}),
+      PM.product_range("pm-garnet", {6, 10}),
       PM.catalyst("pm-hot-coolant", 10, 10, "fluid", 1)
     }
   },
@@ -202,9 +202,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-ruby", 50, 100),
+        PM.product_range("pm-ruby", {50, 100}),
         PM.product("pm-hot-light-coolant", 20, "fluid", 1),
-        PM.product_range("pm-crucible", 0, 6)
+        PM.product_range("pm-crucible", {0, 6})
     }
   },
   {
@@ -225,9 +225,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-citrine", 50, 100),
+        PM.product_range("pm-citrine", {50, 100}),
         PM.product("pm-hot-light-coolant", 20, "fluid", 1),
-        PM.product_range("pm-crucible", 0, 6)
+        PM.product_range("pm-crucible", {0, 6})
     }
   },
   {
@@ -248,9 +248,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-emerald", 50, 100),
+        PM.product_range("pm-emerald", {50, 100}),
         PM.product("pm-hot-light-coolant", 20, "fluid", 1),
-        PM.product_range("pm-crucible", 0, 6)
+        PM.product_range("pm-crucible", {0, 6})
     }
   },
   {
@@ -271,9 +271,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-sapphire", 50, 100),
+        PM.product_range("pm-sapphire", {50, 100}),
         PM.product("pm-hot-light-coolant", 20, "fluid", 1),
-        PM.product_range("pm-crucible", 0, 6)
+        PM.product_range("pm-crucible", {0, 6})
     }
   },
   {
@@ -294,9 +294,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-lapis-lazuli", 50, 100),
+        PM.product_range("pm-lapis-lazuli", {50, 100}),
         PM.product("pm-hot-light-coolant", 20, "fluid", 1),
-        PM.product_range("pm-crucible", 0, 6)
+        PM.product_range("pm-crucible", {0, 6})
     }
   },
   {
@@ -317,9 +317,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-garnet", 50, 100),
+        PM.product_range("pm-garnet", {50, 100}),
         PM.product("pm-hot-light-coolant", 20, "fluid", 1),
-        PM.product_range("pm-crucible", 0, 6)
+        PM.product_range("pm-crucible", {0, 6})
     }
   },
 } --[[@as data.RecipePrototype[] ]])

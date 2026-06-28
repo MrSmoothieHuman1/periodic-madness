@@ -102,7 +102,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-dolomite", 4, 10)
+            PM.product_range("pm-dolomite", {4, 10})
         }
     },
     {
@@ -126,9 +126,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-magnesium-hydroxide", 20, 24, "fluid"),
-            PM.product_range_chance("pm-calcium-hydroxide-slurry", 2, 10, 0.65, "fluid"),
-            PM.product_range("pm-calcite", 0, 6)
+            PM.product_range("pm-magnesium-hydroxide", {20, 24}, "fluid"),
+            PM.product_range_chance("pm-calcium-hydroxide-slurry", {2, 10}, 0.65, "fluid"),
+            PM.product_range("pm-calcite", {0, 6})
         }
     },
     {
@@ -150,7 +150,7 @@ data:extend({
         results =
         {
             PM.product("pm-magnesium-oxide", 4),
-            PM.product_range("pm-carbon-trioxide", 16, 20, "fluid")
+            PM.product_range("pm-carbon-trioxide", {16, 20}, "fluid")
         }
     },
     {
@@ -176,9 +176,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-magnesium-ore", 4, 6),
+            PM.product_range("pm-magnesium-ore", {4, 6}),
             PM.product_chance("pm-ferrum", 5, 0.85),
-            PM.product_range("pm-calcium-silicate", 4, 10),
+            PM.product_range("pm-calcium-silicate", {4, 10}),
         }
     },
     {
@@ -205,8 +205,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-magnesium-ore", 4, 8),
-            PM.product_range_chance("pm-calcium-silicate", 4, 6, 0.9),
+            PM.product_range("pm-magnesium-ore", {4, 8}),
+            PM.product_range_chance("pm-calcium-silicate", {4, 6}, 0.9),
         }
     },
     {
@@ -231,8 +231,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range_chance("pm-ferrosilicon", 1, 4, 0.5),
-            PM.product_range_chance("pm-calcite", 2, 5, 0.66)
+            PM.product_range_chance("pm-ferrosilicon", {1, 4}, 0.5),
+            PM.product_range_chance("pm-calcite", {2, 5}, 0.66)
         }
     },
     {
@@ -309,8 +309,8 @@ data:extend({
         results =
         {
             PM.product("pm-magnesium-carbonate", 2),
-            PM.product_range("pm-carbon-dioxide-gas", 2, 6, "fluid"),
-            PM.product_range("water", 0, 4, "fluid")
+            PM.product_range("pm-carbon-dioxide-gas", {2, 6}, "fluid"),
+            PM.product_range("water", {0, 4}, "fluid")
         }
     },
     {
