@@ -306,7 +306,7 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_categories = {"pm-polonium"},
+      fuel_category = "pm-polonium",
       effectivity = 1,
       fuel_inventory_size = 1,
       burnt_inventory_size = 1,

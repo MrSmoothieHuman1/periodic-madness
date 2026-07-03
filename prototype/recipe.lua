@@ -3038,7 +3038,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 1,
-    categories = {"crafitng", "pm-circuit-boards"},
+    categories = {"crafting", "pm-circuit-boards"},
     subgroup = "pm-advanced-circuits",
     order = "a",
     allow_productivity = true,

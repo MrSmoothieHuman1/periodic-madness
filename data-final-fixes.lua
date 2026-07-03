@@ -25,7 +25,7 @@ data:extend{
 		hidden = true,
 		hidden_in_factoriopedia = true,
 		auto_recycle = false,
-		category = "pm-reactor-coolant-burning-with-exhuast",
+		categories = {"pm-reactor-coolant-burning-with-exhuast"},
 		energy_required = 10,
 		ingredients = {
 			PM.ingredient("water", 0.2, "fluid")
@@ -43,7 +43,7 @@ data:extend{
 		hidden = true,
 		hidden_in_factoriopedia = true,
 		auto_recycle = false,
-		category = "pm-reactor-coolant-burning-with-exhuast",
+		categories = {"pm-reactor-coolant-burning-with-exhuast"},
 		energy_required = 10,
 		ingredients = {
 			PM.ingredient("pm-coolant", 0.1, "fluid")
@@ -61,7 +61,7 @@ data:extend{
 		hidden = true,
 		hidden_in_factoriopedia = true,
 		auto_recycle = false,
-		category = "pm-reactor-coolant-burning-with-exhuast",
+		categories = {"pm-reactor-coolant-burning-with-exhuast"},
 		energy_required = 10,
 		ingredients = {
 			PM.ingredient("pm-light-coolant", 0.1, "fluid")

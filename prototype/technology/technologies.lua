@@ -131,7 +131,7 @@ data:extend({
   {
     type = "technology",
     name = "pm-mercury-processing",
-    icon_size = 256,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/liquid-mercury.png",
     effects =
     {

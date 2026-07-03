@@ -68,7 +68,7 @@ data:extend({
         },
         subgroup = "pm-strontium-aem",
         fuel_value = "10MJ",
-        fuel_categories = {"pm-strontium"},
+        fuel_category = "pm-strontium",
         order = "e",
         protons = 38,
         neutrons = 50,

@@ -529,38 +529,8 @@ data:extend({
     fast_replaceable_group = "assembling-machine",
     next_upgrade = "assembling-machine-1",
     alert_icon_shift = util.by_pixel(-3, -12),
-    graphics_set = 
-  {
-    animation =
-    {
-      layers =
-      {
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/ass-machine-0/assembling-machine-0.png",
-          priority = "high",
-          width = 214,
-          height = 226,
-          frame_count = 32,
-          line_length = 8,
-          shift = util.by_pixel(0, 2),
-          scale = 0.5
-        },
-        {
-          filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
-          priority = "high",
-          width = 190,
-          height = 165,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 32,
-          draw_as_shadow = true,
-          shift = util.by_pixel(8.5, 5),
-          scale = 0.5
-        }
-      }
-    }
-  },
-    crafting_categories = {"crafting", "basic-crafting", "pm-circuitry"},
+    graphics_set = require("__base__.prototypes.entity.assembler-pictures").assembler1_graphics_set,
+    crafting_categories = {"crafting", "pm-circuitry"},
     crafting_speed = 0.25,
     energy_usage = "75kW",
     energy_source =
@@ -4044,7 +4014,7 @@ data:extend({
     max_health = 400 + 1,
     corpse = "pm-solar-panel-2-remnants",
     dying_explosion = "solar-panel-explosion",
-    collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+    collision_box = {{-1.35, -1.35}, {1.35, 1.35}},
     selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     fast_replaceable_group = "solar-panel",
     next_upgrade = "pm-solar-panel-3",
@@ -5255,7 +5225,7 @@ data:extend({
     icon_draw_specification = {shift = {0, -0.1}},
     icons_positioning =
     {
-      {inventory_index = defines.inventory.furnace_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
+      {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 5, scale = 0.42}
     },
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heating-coils"},
@@ -6609,7 +6579,7 @@ data:extend({
   max_health = 400 + 2,
   corpse = "pm-solar-panel-2-remnants",
   dying_explosion = "solar-panel-explosion",
-  collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+  collision_box = {{-1.35, -1.35}, {1.35, 1.35}},
   selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
   fast_replaceable_group = "solar-panel",
   map_color = {r = 0.537, g = 0.341, b = 0.63},
@@ -8459,8 +8429,8 @@ fluid_boxes =
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box_vertical_extension = 0.2,
     fast_replaceable_group = "assembling-machine",
-    graphics_set =
-    {
+    graphics_set = require("__base__.prototypes.entity.assembler-pictures").assembler3_graphics_set,
+   --[[ {
       animation_progress = 0.5,
       animation =
       {
@@ -8489,8 +8459,8 @@ fluid_boxes =
           }
         }
       }
-    },
-    crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid", "pm-circuitry"},
+    },--]]
+    crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid", "pm-advanced-crafting-with-fluid", "pm-circuitry"},
     crafting_speed = 1.75,
     energy_source =
     {
@@ -9672,7 +9642,7 @@ fluid_boxes =
     max_fluid_usage = 0.5,
     graphics_set =
     {
-      plasma_categories = {"pm-geothermal-steam"},
+      plasma_category = "pm-geothermal-steam",
       structure =
       {
         north =
