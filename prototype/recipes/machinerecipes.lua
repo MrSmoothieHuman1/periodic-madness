@@ -913,8 +913,6 @@ data:extend({
     type = "recipe",
     name = "pm-leaching-field",
     enabled = false,
-    subgroup = "pm-water-machine",
-    order = "g",
     ingredients =
     {
       PM.ingredient("pm-corrosion-resistant-tubing", 24),
