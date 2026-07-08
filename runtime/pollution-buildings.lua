@@ -1,7 +1,15 @@
 ---@type event_handler
-local handler = {on_nth_tick = {}, events = {}}
+local handler = {}
+handler.on_nth_tick = {}
+handler.events = {}
 
----@type table<data.EntityID, PollutionData.data>
+---@class (partial) PeriodicStorage
+---@field pollution_buildings_count int
+---@field pollution_buildings Mapping<uint,PollutionBuilding>
+---@field pollution_index? uint
+storage = storage
+
+---@type {[data.EntityID]?:PollutionData.data}
 local pollution_definition = {}
 for data_name, mod_data in pairs(prototypes.mod_data) do
   if mod_data.data_type == "pm-pollution-limit" then
@@ -41,11 +49,12 @@ end
 
 PM.compound_events.built_events(handler.events, function (event)
   local entity = event.entity or event.destination
+  ---@cast entity -?
   local pollution_numbers = pollution_definition[entity.name]
   if not pollution_numbers then return end -- Not an entity we care about
 
   storage.pollution_buildings_count = storage.pollution_buildings_count + 1
-  storage.pollution_buildings[entity.unit_number--[[@as number]]] = {
+  storage.pollution_buildings[entity.unit_number--[[@cast -?]]] = {
     entity = entity,
     min_pollution = pollution_numbers.min_pollution,
     max_pollution = pollution_numbers.max_pollution,
@@ -58,7 +67,7 @@ end)
 ---@param signal SignalID
 ---@param alert LocalisedString
 local function alert_force(entity, signal, alert)
-  for _, player in pairs(entity.force.players) do
+  for _, player in pairs(entity.force--[[@cast -string]]--[[@cast -uint8]].players) do
     player.add_custom_alert(entity, signal, alert, true)
   end
 end
@@ -150,13 +159,12 @@ handler.events[defines.events.on_tick] = function (event)
 
   -- Loop start
   local index, object = next(buildings, storage.pollution_index)
-  while index do
-    ---@cast object -?
+  while object do
 
     -- Loop body
     local entity = object.entity
     if not entity.valid then
-      buildings[index] = nil
+      buildings[index--[[@cast -?]]] = nil
       storage.pollution_buildings_count = storage.pollution_buildings_count - 1
     else
       check_pollution(entity, object)
@@ -178,7 +186,7 @@ end
 
 local function reload_buildings()
   local old_list = storage.pollution_buildings or {}
-  ---@type PollutionBuilding[]
+  ---@type Mapping<uint,PollutionBuilding>
   local new_list, count = {}, 0
   storage.pollution_buildings = new_list
   storage.pollution_index = nil
@@ -197,6 +205,7 @@ local function reload_buildings()
       local unit_id = entity.unit_number
       ---@cast unit_id -?
       local pollution_numbers = pollution_definition[entity.name]
+      ---@cast pollution_numbers -?
 
       local old_object = old_list[unit_id] or {}
       -- HACK: Because Black released an update that *didn't* include the fix for this >:(

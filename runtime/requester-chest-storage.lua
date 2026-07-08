@@ -1,7 +1,14 @@
 ---@type event_handler
-local handler = {events = {}}
+local handler = {}
+handler.events = {}
 
 local DEFAULT_SIZE = 1
+
+---@class (partial) PeriodicStorage
+---@field logistic_scratch_inventory LuaInventory
+---@field logistic_chests PerForce<Mapping<uint32,LuaEntity>>
+---@field logistic_chest_overrides PerForce<int>
+storage = storage
 
 ---@param pos1 MapPosition
 ---@param pos2 MapPosition
@@ -15,12 +22,17 @@ local function position_equal(pos1, pos2)
 end
 
 ---@param technologies LuaCustomTable<string,LuaTechnology>
+---@return integer
 local function get_current_size(technologies)
+    ---@type number
     local size = DEFAULT_SIZE
     for _, tech in pairs(technologies) do
         if tech.researched then
             size = size + PM.get_custom_modification("pm-requester-chest-inventory-size", tech)
         end
+    end
+    if not PM.validate.integer(size) then
+        error("Requester chest bonus is a non-integer")
     end
     return size
 end
@@ -45,7 +57,7 @@ local function set_override(entity, override)
 end
 
 ---@param force_index uint
----@param override uint
+---@param override int
 ---@param cumulative? boolean Whether or not the override is added to pre-existing override
 local function update_overrides(force_index, override, cumulative)
     if cumulative then
@@ -67,7 +79,7 @@ local function setup_logistic_storage()
     if not storage.logistic_chests then
         -- Gather all the chests if not previously collected
 
-        ---@type table<uint,table<uint,LuaEntity>>
+        ---@type PerForce<Mapping<uint32,LuaEntity>>
         local chests = {}
         storage.logistic_chests = chests
         for _, force in pairs(game.forces) do
@@ -78,18 +90,18 @@ local function setup_logistic_storage()
             for _, entity in pairs(surface.find_entities_filtered{
                 name = "requester-chest",
             }) do
-                chests[entity.force_index][entity.unit_number] = entity
+                chests[entity.force_index][entity.unit_number--[[@cast -?]]] = entity
             end
         end
     end
 
-    if not storage.logistic_scratch_inventory or storage.logistic_scratch_inventory.valid then
+    if not storage.logistic_scratch_inventory or not storage.logistic_scratch_inventory.valid then
         storage.logistic_scratch_inventory = game.create_inventory(100)
     end
 
     -- The bonus modifiers might've changed, just recalc it
 
-    ---@type table<uint, uint>
+    ---@type PerForce<int>
     local overrides = {}
     storage.logistic_chest_overrides = overrides
     for _, force in pairs(game.forces) do
@@ -152,6 +164,7 @@ local container_types = {
 
 PM.compound_events.built_events(handler.events, function (event)
     local tracked_entity = event.entity or event.destination
+    ---@cast tracked_entity -?
     local force = tracked_entity.force_index
 
     if tracked_entity.name ~= "requester-chest" then
@@ -169,7 +182,7 @@ PM.compound_events.built_events(handler.events, function (event)
     end
 
     script.register_on_object_destroyed(tracked_entity)
-    storage.logistic_chests[force][tracked_entity.unit_number] = tracked_entity
+    storage.logistic_chests[force][tracked_entity.unit_number--[[@cast -?]]] = tracked_entity
     set_override(tracked_entity, storage.logistic_chest_overrides[force])
 end)
 
@@ -184,11 +197,17 @@ end
 handler.events[defines.events.on_research_finished] = function (event)
     local increase = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if increase == 0 then return end
+    if not PM.validate.integer(increase) then
+        error("Requester chest bonus is a non-integer")
+    end
     update_overrides(event.research.force.index, increase, true)
 end
 handler.events[defines.events.on_research_reversed] = function (event)
     local decrease = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if decrease == 0 then return end
+    if not PM.validate.integer(decrease) then
+        error("Requester chest bonus is a non-integer")
+    end
     update_overrides(event.research.force.index, -decrease, true)
 end
 handler.events[defines.events.on_technology_effects_reset] = function (event)

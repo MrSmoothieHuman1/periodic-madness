@@ -1,7 +1,7 @@
 --THIS IS HOW YOU SPELL PERIODIC = periodic
 --since i have to write rules for myself, since im a bit of an idiot, some rules:
 --2 chunks of an ore = 1 "pure" ore
-PM = require("pennyisms.library")
+PM = require("pennyisms.library")--[[@as Pennyisms]]
 
 require("prototype.item")
 require("prototype.fluids")
@@ -727,7 +727,7 @@ AcidPlant.crafting_categories = {"pm-acids"}
 AcidPlant.minable = {mining_time = 0.1, result = "pm-acid-plant"}
 AcidPlant.module_slots = 3
 AcidPlant.icon = "__periodic-madness__/graphics/icons/buildings/acid-plant.png"
-AcidPlant.graphics_set.animation = make_4way_animation_from_spritesheet({ layers =
+AcidPlant.graphics_set--[[@cast -?]].animation = make_4way_animation_from_spritesheet({ layers =
 {
   {
     filename = "__periodic-madness__/graphics/entities/buildings/acid-plant/acid-plant.png",
@@ -748,7 +748,7 @@ AcidPlant.graphics_set.animation = make_4way_animation_from_spritesheet({ layers
     draw_as_shadow = true,
     scale = 0.5
   }
-}})
+}})--[[@as data.Animation4Way]]
 
 data:extend{(AcidPlant)}
 
@@ -757,24 +757,31 @@ if data.raw["utility-constants"].default.select_slot_row_count == 10 then
   data.raw["utility-constants"].default.select_group_row_count = 7
 end
 
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-nickel-chunks"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-nickel-chunks"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-zinc-chunks"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-zinc-chunks"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-transition-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-transition-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-post-transition-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-post-transition-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-metalloids"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-metalloids"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkali-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkali-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-alkaline-earth-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-alkaline-earth-metals"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-mixed-noble-gas"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-mixed-noble-gas"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["pm-lanthanum-ore"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["pm-lanthanum-ore"] = {}
+local map_gen_setting = data.raw["planet"]["nauvis"].map_gen_settings
+---@cast map_gen_setting -?
+local nauvis_controls = map_gen_setting.autoplace_controls
+local nauvis_entity_settings = map_gen_setting.autoplace_settings--[[@cast -?]].entity.settings
+---@cast nauvis_controls -?
+---@cast nauvis_entity_settings -?
+
+nauvis_controls["pm-nickel-chunks"] = {}
+nauvis_entity_settings["pm-nickel-chunks"] = {}
+nauvis_controls["pm-zinc-chunks"] = {}
+nauvis_entity_settings["pm-zinc-chunks"] = {}
+nauvis_controls["pm-transition-metals"] = {}
+nauvis_entity_settings["pm-transition-metals"] = {}
+nauvis_controls["pm-post-transition-metals"] = {}
+nauvis_entity_settings["pm-post-transition-metals"] = {}
+nauvis_controls["pm-metalloids"] = {}
+nauvis_entity_settings["pm-metalloids"] = {}
+nauvis_controls["pm-alkali-metals"] = {}
+nauvis_entity_settings["pm-alkali-metals"] = {}
+nauvis_controls["pm-alkaline-earth-metals"] = {}
+nauvis_entity_settings["pm-alkaline-earth-metals"] = {}
+nauvis_controls["pm-mixed-noble-gas"] = {}
+nauvis_entity_settings["pm-mixed-noble-gas"] = {}
+nauvis_controls["pm-lanthanum-ore"] = {}
+nauvis_entity_settings["pm-lanthanum-ore"] = {}
 
 data.raw["resource"]["iron-ore"].icon = "__periodic-madness__/graphics/icons/ores/iron-chunks.png"
 data.raw["resource"]["copper-ore"].icon = "__periodic-madness__/graphics/icons/ores/copper-chunks.png"
@@ -809,10 +816,10 @@ data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_
 data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
 
 --MARK: Building modules
-data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots = data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots + settings.startup["pm-building-module-extra-slots"].value
-data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"].module_slots = data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"].module_slots + settings.startup["pm-building-module-extra-slots"].value
+data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots = data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots--[[@cast -?]] + settings.startup["pm-building-module-extra-slots"].value
+data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"].module_slots = data.raw["assembling-machine"]["pm-circuit-megassembler-MK2"].module_slots--[[@cast -?]] + settings.startup["pm-building-module-extra-slots"].value
 
-table.insert(data.raw["character"]["character"].crafting_categories, "pm-circuitry")
+table.insert(data.raw["character"]["character"].crafting_categories--[[@cast -?]], "pm-circuitry")
 
 --MARK: Colourblind circuits
 if settings.startup["pm-circuit-colourblind-friendly-icons"].value == true then

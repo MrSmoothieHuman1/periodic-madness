@@ -1,4 +1,4 @@
-PM = require("pennyisms.library")
+PM = require("pennyisms.library")--[[@as Pennyisms]]
 
 require("compatibility.K2")
 require("compatibility.BZ.foundry")

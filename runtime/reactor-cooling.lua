@@ -1,8 +1,12 @@
 ---@type event_handler
-local event_handler = {events={}}
+local event_handler = {}
+event_handler.events = {}
 local events = event_handler.events
 
-storage = storage or {}
+---@class (partial) PeriodicStorage
+---@field reactors {[uint]?:reactor_info}
+storage = storage
+
 ---@class reactor_info
 ---@field reactor LuaEntity
 ---@field furnace LuaEntity
@@ -53,7 +57,7 @@ function reactor_placed(reactor)
 
 	-- Link fluidboxes
 	for i = 1, 10, 1 do
-		reactor.fluidbox.add_linked_connection(i, furnace, i)
+		reactor.add_fluid_box_linked_connection(i, furnace, i)
 	end
 
 	-- Create info tables
@@ -71,6 +75,7 @@ local cooled_reactors = prototypes.mod_data["pm-cooled-reactors"].data
 
 PM.compound_events.built_events(events, function (event)
 	local entity = event.entity or event.destination
+	---@cast entity -?
 	if not cooled_reactors[entity.name] then return end
 	reactor_placed(entity)
 end)
@@ -103,7 +108,8 @@ script_triggers["pm-cooled-reactor-died"] = function (event)
 	-- game.print("Whoops... ".. event.source_entity.gps_tag)
 	local furnace = event.source_entity
 	if not furnace then error("The source entity for 'pm-cooled-reactor-died' was somehow nil") end
-	local reactor_info = storage.reactors[furnace.unit_number--[[@as int]]]
+	local reactor_info = storage.reactors[furnace.unit_number--[[@cast -?]]]
+	if not reactor_info then return end -- Reactor died without being setup?
 	reactor_info.reactor.die()
 
 	-- Alert people of the reactor meltdown
@@ -125,7 +131,8 @@ script_triggers["pm-cooled-reactor-hurt"] = function (event)
 	end
 
 	-- Otherwise, alert
-	local reactor_info = storage.reactors[furnace.unit_number --[[@as int]]]
+	local reactor_info = storage.reactors[furnace.unit_number --[[@cast -?]]]
+	if not reactor_info then return end -- Reactor got hurt without being setup?
 	local force = furnace.force
 	local alert = reactor_info.alert
 

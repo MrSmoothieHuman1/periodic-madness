@@ -1,4 +1,4 @@
-PM = require("pennyisms.library")
+PM = require("pennyisms.library")--[[@as Pennyisms]]
 data:extend({
     {
         type = "string-setting",

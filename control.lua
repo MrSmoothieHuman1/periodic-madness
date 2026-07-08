@@ -1,5 +1,13 @@
-PM = require("pennyisms.library")
+PM = require("pennyisms.library")--[[@as Pennyisms]]
 local event_handler = require("event_handler")--[[@as event_handler_lib]]
+
+
+---@alias PerForce<V> {[uint32]:V}
+---@alias PerPlayer<V> {[uint32]:V}
+---@alias Mapping<K,V> {[K]?:V}
+
+---@class (partial) PeriodicStorage
+storage = storage
 
 event_handler.add_libraries{
 	require("runtime.remote-interface"),

@@ -1,5 +1,6 @@
 ---@type event_handler
-local lib = {events={}}
+local lib = {}
+lib.events = {}
 
 local player_messages = {
     -- youtuber people
@@ -28,6 +29,10 @@ local player_messages = {
     ["Mr.SmoothieHuman"] = "hey nerd"
 }
 
+---@class (partial) PeriodicStorage
+---@field player_message_sent Mapping<string,true>
+storage = storage
+
 ---@param player LuaPlayer
 local function play_message(player)
     local player_message = player_messages[player.name]
@@ -37,7 +42,6 @@ local function play_message(player)
 end
 
 function lib.on_init()
-    ---@type table<string,true>
     storage.player_message_sent = {}
     local player_message_sent = storage.player_message_sent
     for _, player in pairs(game.players) do

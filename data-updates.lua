@@ -1,4 +1,4 @@
-PM = require("pennyisms.library")
+PM = require("pennyisms.library")--[[@as Pennyisms]]
 require("prototype.recipes.building-recipes.burnining")
 --require("prototype.recipes.building-recipes.atomicrecipes")
 
