@@ -57,6 +57,7 @@ do return end
 ---@class LabData
 ---@field scale? double
 ---@field animation string Name of an animation prototype
+
 DiscoScience = {
 	---@param lab data.LabPrototype
 	---@param data? LabData

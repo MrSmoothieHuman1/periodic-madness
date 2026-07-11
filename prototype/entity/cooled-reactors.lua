@@ -40,7 +40,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
   -- Get the fluidbox definition for the coolant
   coolant_fluidbox = coolant_fluidbox or reactor.coolant_fluid_box
   reactor.coolant_fluid_box = nil
-  if not coolant_life then error("Not given a coolant_fluid_box for the reactor '"..reactor.name.."'") end
+  if not coolant_fluidbox then error("Not given a coolant_fluid_box for the reactor '"..reactor.name.."'") end
 
   -- Get the fluidbox definition for the coolant exhuast
   coolant_exhuast_fluidbox = coolant_exhuast_fluidbox or reactor.coolant_exhuast_fluidbox
@@ -66,16 +66,18 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     if not reactor_sprite.layers then
       reactor_sprite = {layers = {reactor_sprite}}
     end
+    ---@cast reactor_sprite.layers -?
 
     -- Add the sprite layers
-    for _, layer in pairs(reactor_sprite--[[@as data.Animation]].layers) do
+    for _, layer in pairs(reactor_sprite.layers) do
       if not layer.draw_as_shadow then
         index = index + 1
         layer = util.copy(layer)
+        ---@diagnostic disable-next-line: cast-type-mismatch
+        ---@cast layer data.Animation
         if layer.frame_count and layer.frame_count ~= 1
         or layer.repeat_count and layer.repeat_count ~= 1 then
           log("The '"..reactor.name.."' had an animation for it's picture (a sprite)")
-          ---@cast layer data.Animation
         end
         layer.frame_count = nil
         layer.repeat_count = nil
@@ -112,7 +114,7 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
         index = index + 1
         input_connections[index] = connection
         
-        connection.connection_categories = {"null-category-fuck-off"} -- Don't *actually* connect to anything
+        connection.connection_category = {"null-category-fuck-off"} -- Don't *actually* connect to anything
       end
     end
   end

@@ -2,6 +2,7 @@ local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 local fireutil = require("__base__.prototypes.fire-util")
 local tile_collision_masks = require("collision-mask")
+local asm2_pipe_pictures = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures
 require("entity.pipe-pictures")
 
 function pm_diode_status_colors()
@@ -599,7 +600,7 @@ data:extend({
       {
         {
           position = {0, 0},
-          direction = defines.direction.south--[[@as int]],
+          direction = defines.direction.south,
           flow_direction = "output"
         }
       }
@@ -753,10 +754,10 @@ data:extend({
       max_pipeline_extent = 560,
       pipe_connections =
       {
-        { direction = defines.direction.north--[[@as int]], position = {-1, -1} },
-        { direction = defines.direction.east--[[@as int]], position = {1, 1} },
-        { direction = defines.direction.south--[[@as int]], position = {1, 1} },
-        { direction = defines.direction.west--[[@as int]], position = {-1, -1} }
+        { direction = defines.direction.north, position = {-1, -1} },
+        { direction = defines.direction.east, position = {1, 1} },
+        { direction = defines.direction.south, position = {1, 1} },
+        { direction = defines.direction.west, position = {-1, -1} }
       },
       hide_connection_info = true
     },
@@ -891,8 +892,8 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0.5}},
-        {flow_direction = "input-output", direction = defines.direction.east--[[@as int]], position = {1, 0.5}}
+        {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0.5}},
+        {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
       production_type = "input",
       filter = "pm-seawater"
@@ -903,7 +904,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "output", direction = defines.direction.north--[[@as int]], position = {0, -0.5}}
+        {flow_direction = "output", direction = defines.direction.north, position = {0, -0.5}}
       },
       production_type = "output",
       filter = "steam"
@@ -1190,11 +1191,11 @@ data:extend({
       {
         volume = 1000,
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         pipe_connections = 
         {
-          {flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {0, 1}}
+          {flow_direction = "input", direction = defines.direction.south, position = {0, 1}}
         }
       },
     },
@@ -1328,28 +1329,28 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
     },
@@ -1464,64 +1465,64 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 5000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0.5, 1.5}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0.5, 1.5}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {-0.5, 1.5}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-0.5, 1.5}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1.5, 1.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-1.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = { { flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1.5, 0.5}}},
+        pipe_connections = { { flow_direction="output", direction = defines.direction.west, position = {-1.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1.5, -0.5}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {-1.5, -0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1.5, -1.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-1.5, -1.5}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1.5, 1.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1.5, 0.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1.5, -0.5}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, -0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1.5, -1.5}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1.5, -1.5}}},
       },
     },
     -- if ANYONE reads this, i hope you know i hate this. I hate fluid boxes and you should too.
@@ -1891,43 +1892,43 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 200,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0, 2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {1, -2} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {1, -2} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {-1, -2} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, -2} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 1} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, -1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, -1} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, 1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 1} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, -1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, -1} }},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -1988,7 +1989,7 @@ data:extend({
         volume = 1000,
         pipe_connections =
         {
-          {flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-1, -1}}
+          {flow_direction = "input", direction = defines.direction.north, position = {-1, -1}}
         }
       },
       {
@@ -1997,7 +1998,7 @@ data:extend({
         volume = 1000,
         pipe_connections =
         {
-          {flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {1, -1}}
+          {flow_direction = "input", direction = defines.direction.north, position = {1, -1}}
         }
       },
       {
@@ -2006,7 +2007,7 @@ data:extend({
         volume = 1000,
         pipe_connections =
         {
-          {flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {-1, 1}}
+          {flow_direction = "output", direction = defines.direction.south, position = {-1, 1}}
         }
       },
       {
@@ -2015,7 +2016,7 @@ data:extend({
         volume = 1000,
         pipe_connections =
         {
-          {flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {1, 1}}
+          {flow_direction = "output", direction = defines.direction.south, position = {1, 1}}
         }
       }
     },
@@ -2077,7 +2078,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 200,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
       {
 
@@ -2085,7 +2086,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 200,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
     },
     crafting_categories = {"pm-evaporation"},
@@ -2195,7 +2196,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 2000,
-      pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+      pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
     },
     {
 
@@ -2203,7 +2204,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 2000,
-      pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}}},
+      pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
     },
   },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -2283,7 +2284,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 1000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
     },
     collision_box = {{-0.9, -0.9 }, { 0.9, 0.9 }},
@@ -2304,7 +2305,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "water",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0.5, -0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0.5, -0.5}}},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -2397,7 +2398,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 2000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
       {
 
@@ -2405,7 +2406,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 2000,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -2486,7 +2487,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 2000,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
     },
     collision_box = {{-0.9, -0.9 }, { 0.9, 0.9 }},
@@ -2507,7 +2508,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 2000,
         filter = "pm-coolant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0.5, -0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0.5, -0.5}}},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -2552,7 +2553,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1500,
         filter = "pm-heavy-lubricant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0, -3}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -3}}},
       },
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
@@ -3093,7 +3094,7 @@ data:extend({
         pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
@@ -3101,7 +3102,7 @@ data:extend({
         pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
@@ -3109,7 +3110,7 @@ data:extend({
         pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {-1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
     },
@@ -3125,7 +3126,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 500,
         filter = "water",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {1, 0}}},
       },
     },
     energy_usage = "400kW",
@@ -3183,11 +3184,11 @@ data:extend({
       {
         volume = 2000,
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         pipe_connections =
         {
-          {flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {0, 1}}
+          {flow_direction = "input", direction = defines.direction.south, position = {0, 1}}
         }
       }
     },
@@ -3237,7 +3238,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "pm-argon-gas",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = { 0, -1 } } },
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = { 0, -1 } } },
       },
     },
     working_sound =
@@ -3426,28 +3427,28 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
     },
@@ -3508,28 +3509,28 @@ data:extend({
         pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0, 2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
       },
       {
         production_type = "input",
         pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -2} }},
       },
       {
         production_type = "input",
         pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.west, position = {-2, 0} }},
       },
       {
         production_type = "output",
         pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, 0} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 0} }},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -3561,7 +3562,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 500,
         filter = "pm-agar-solution",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.east--[[@as int]], position = {2, 0}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {2, 0}}},
       },
     },
     energy_usage = "500kW",
@@ -3597,43 +3598,43 @@ data:extend({
           production_type = "input",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {1, -2}}},
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {1, -2}}},
         },
         {
           production_type = "input",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-1, -2}}},
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-1, -2}}},
         },
         {
           production_type = "input",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {1, 2}}},
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {1, 2}}},
         },
         {
           production_type = "input",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {-1, 2}}},
+          pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {-1, 2}}},
         },
         {
           production_type = "output",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2, 2}}},
+          pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {-2, 2}}},
         },
         {
           production_type = "output",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2, 0}}},
+          pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {-2, 0}}},
         },
         {
           production_type = "output",
           pipe_covers = pipecoverspictures(),
           volume = 100,
-          pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2, -2}}},
+          pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {-2, -2}}},
         },
       }
   }--[[@as data.FurnacePrototype]],
@@ -3863,28 +3864,28 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
     },
@@ -3935,64 +3936,64 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 500,
         pipe_connections =
         {
-          { flow_direction = "input-output", direction = defines.direction.east--[[@as int]], position = { 2, 0 }}, --correct
-          { flow_direction = "input-output", direction = defines.direction.west--[[@as int]], position = { -2, 0 }} --correct
+          { flow_direction = "input-output", direction = defines.direction.east, position = { 2, 0 }}, --correct
+          { flow_direction = "input-output", direction = defines.direction.west, position = { -2, 0 }} --correct
         },
       },
       {
         production_type = "output",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 500,
         pipe_connections = 
         {
-          { flow_direction = "input-output", direction = defines.direction.south--[[@as int]], position = { 0, 2 }}, --correct
-          { flow_direction = "input-output", direction = defines.direction.north--[[@as int]], position = { 0, -2 }} --correct
+          { flow_direction = "input-output", direction = defines.direction.south, position = { 0, 2 }}, --correct
+          { flow_direction = "input-output", direction = defines.direction.north, position = { 0, -2 }} --correct
         },
       },
       {
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections =
         {
-          { flow_direction = "input", direction = defines.direction.west--[[@as int]], position = { -2, 1 }} --correct
+          { flow_direction = "input", direction = defines.direction.west, position = { -2, 1 }} --correct
         },
       },
       {
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = 
         {
-          { flow_direction = "input", direction = defines.direction.west--[[@as int]], position = { -2, -1 }} --correct
+          { flow_direction = "input", direction = defines.direction.west, position = { -2, -1 }} --correct
         },
       },
       {
         production_type = "output",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = 
         {
-          { flow_direction = "output", direction = defines.direction.east--[[@as int]], position = { 2, 1 }} --correct
+          { flow_direction = "output", direction = defines.direction.east, position = { 2, 1 }} --correct
         },
       },
       {
         production_type = "output",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 250,
         pipe_connections = 
         {
-          { flow_direction = "output", direction = defines.direction.east--[[@as int]], position = { 2, -1 }} --correct
+          { flow_direction = "output", direction = defines.direction.east, position = { 2, -1 }} --correct
         },
       },
     },
@@ -4116,19 +4117,19 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0, 3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 3}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -3}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {0, -3}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-3, 0}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-3, 0}}},
       },
     },
     energy_source =
@@ -4144,7 +4145,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         filter = "pm-proton-beam",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.east--[[@as int]], position = {3, 0}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.east, position = {3, 0}}},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -4212,21 +4213,21 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 2000,
         pipe_connections = 
-        {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+        {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
     },
@@ -4290,13 +4291,13 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2500,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0, 2}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2500,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 0}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0}}},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -4359,7 +4360,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 200,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
       },
       {
 
@@ -4367,7 +4368,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         priority = "medium",
         volume = 200,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
       },
     },
     crafting_categories = {"pm-evaporation"},
@@ -4443,59 +4444,59 @@ data:extend({
     {
       {
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.east--[[@as int]], position = {2.5, -0.5}}}
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.east, position = {2.5, -0.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.east--[[@as int]], position = {2.5, 0.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.east, position = {2.5, 0.5}}},
       },
       {
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.west--[[@as int]], position = {-2.5, -0.5}}}
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.west, position = {-2.5, -0.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.west--[[@as int]], position = {-2.5, 0.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.west, position = {-2.5, 0.5}}},
       },
       {
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -2.5}}}
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -2.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.north--[[@as int]], position = {0.5, -2.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.north, position = {0.5, -2.5}}},
       },
       {
         production_type = "input",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.south--[[@as int]], position = {-0.5, 2.5}}}
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.south, position = {-0.5, 2.5}}}
       },
       {
         production_type = "output",
-        pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 750,
-        pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 2.5}}},
+        pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 2.5}}},
       },
     }
   }--[[@as data.AssemblingMachinePrototype]],
@@ -4583,28 +4584,28 @@ data:extend({
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
     },
@@ -4940,7 +4941,7 @@ data:extend({
         {
           {
             flow_direction="input",
-            direction = defines.direction.north--[[@as int]],
+            direction = defines.direction.north,
             position = {-1, -1}
           }
         }
@@ -4953,7 +4954,7 @@ data:extend({
         {
           {
             flow_direction="input",
-            direction = defines.direction.north--[[@as int]],
+            direction = defines.direction.north,
             position = {1, -1}
           }
         }
@@ -4966,7 +4967,7 @@ data:extend({
         {
           {
             flow_direction = "output",
-            direction = defines.direction.south--[[@as int]],
+            direction = defines.direction.south,
             position = {-1, 1}
           }
         }
@@ -4979,7 +4980,7 @@ data:extend({
         {
           {
             flow_direction = "output",
-            direction = defines.direction.south--[[@as int]],
+            direction = defines.direction.south,
             position = {1, 1}
           }
         }
@@ -5025,7 +5026,7 @@ data:extend({
     module_slots = 8,
     icon_draw_specification = {shift = {0, -0.1}},
     {
-      {inventory_index = defines.inventory.furnace_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 4, scale = 0.42}
+      {inventory_index = defines.inventory.crafter_modules, shift = {0, 1.1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 4, scale = 0.42}
     },
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heating-coils"},
@@ -5047,19 +5048,19 @@ data:extend({
       {
         {
           position = {0, 1},
-          direction = defines.direction.south--[[@as int]] --[[@as int]]
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = {0, -1},
-          direction = defines.direction.north--[[@as int]] --[[@as int]]
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = {1, 0},
-          direction = defines.direction.east--[[@as int]] --[[@as int]]
+          direction = defines.direction.east --[[@as int]]
         },
         {
           position = {-1, 0},
-          direction = defines.direction.west--[[@as int]] --[[@as int]]
+          direction = defines.direction.west --[[@as int]]
         },
       },
     },
@@ -5457,10 +5458,10 @@ data:extend({
         filter = "pm-burning-oil",
         pipe_connections = 
         {
-            {flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}},
-            {flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {0, 1}},
-            {flow_direction="input-output", direction = defines.direction.east--[[@as int]], position = {1, 0}},
-            {flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}},
+            {flow_direction="input-output", direction = defines.direction.north, position = {0, -1}},
+            {flow_direction="input-output", direction = defines.direction.south, position = {0, 1}},
+            {flow_direction="input-output", direction = defines.direction.east, position = {1, 0}},
+            {flow_direction="input-output", direction = defines.direction.west, position = {-1, 0}},
         },
         secondary_draw_orders = { north = -1 }
       }
@@ -5476,19 +5477,19 @@ data:extend({
       {
         {
           position = {0, -1},
-          direction = defines.direction.north--[[@as int]] --[[@as int]]
+          direction = defines.direction.north --[[@as int]]
         },
         {
           position = { 0, 1 },
-          direction = defines.direction.south--[[@as int]] --[[@as int]]
+          direction = defines.direction.south --[[@as int]]
         },
         {
           position = { -1, 0 },
-          direction = defines.direction.west--[[@as int]] --[[@as int]]
+          direction = defines.direction.west --[[@as int]]
         },
         {
           position = { 1, 0 },
-          direction = defines.direction.east--[[@as int]] --[[@as int]]
+          direction = defines.direction.east --[[@as int]]
         },
       },
 
@@ -5620,14 +5621,14 @@ data:extend({
       filter = "pm-burning-oil",
       pipe_connections = 
       {
-        {flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {-1.5, -1.5}},
-        {flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.north, position = {-1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.north, position = {1.5, -1.5}},
 
-        {flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {-1.5, 1.5}},
-        {flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {1.5, 1.5}},
+        {flow_direction="input-output", direction = defines.direction.south, position = {-1.5, 1.5}},
+        {flow_direction="input-output", direction = defines.direction.south, position = {1.5, 1.5}},
 
-        {flow_direction="input-output", direction = defines.direction.east--[[@as int]], position = {1.5, 1.5}},
-        {flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1.5, -1.5}},
+        {flow_direction="input-output", direction = defines.direction.east, position = {1.5, 1.5}},
+        {flow_direction="input-output", direction = defines.direction.west, position = {-1.5, -1.5}},
       },
       secondary_draw_orders = { north = -1 }
     }
@@ -6715,7 +6716,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 3500,
-      pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+      pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
     },
     {
 
@@ -6723,7 +6724,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 3500,
-      pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}}},
+      pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
     },
 
     {
@@ -6731,14 +6732,14 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 3500,
-      pipe_connections = {{flow_direction = "output", direction = defines.direction.east--[[@as int]], position = {0.5, -0.5}}},
+      pipe_connections = {{flow_direction = "output", direction = defines.direction.east, position = {0.5, -0.5}}},
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 3500,
-      pipe_connections = {{flow_direction = "input", direction = defines.direction.west--[[@as int]], position = {-0.5, 0.5}}},
+      pipe_connections = {{flow_direction = "input", direction = defines.direction.west, position = {-0.5, 0.5}}},
     },
   },
 }--[[@as data.AssemblingMachinePrototype]],
@@ -6819,7 +6820,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 3500,
-      pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}},
+      pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}},
     },
 
     {
@@ -6827,7 +6828,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       priority = "medium",
       volume = 3500,
-      pipe_connections = {{flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}}},
+      pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}}},
     },
   },
   collision_box = {{-0.9, -0.9 }, { 0.9, 0.9 }},
@@ -6848,7 +6849,7 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       volume = 2000,
       filter = "pm-light-coolant",
-      pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0.5, -0.5}}},
+      pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0.5, -0.5}}},
     },
   },
 }--[[@as data.AssemblingMachinePrototype]],
@@ -7237,37 +7238,37 @@ fluid_boxes =
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {1, 2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {-1, 2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-1, 2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {1, -2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, -2} }},
   },
   {
     production_type = "output",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
   },
   {
     production_type = "output",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, 0} }},
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 0} }},
   },
 },
 }--[[@as data.AssemblingMachinePrototype]],
@@ -7656,37 +7657,37 @@ fluid_boxes =
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {1, 2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {-1, 2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-1, 2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {1, -2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, -2} }},
   },
   {
     production_type = "output",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
   },
   {
     production_type = "output",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, 0} }},
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 0} }},
   },
 },
 }--[[@as data.AssemblingMachinePrototype]],
@@ -7735,8 +7736,8 @@ fluid_boxes =
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0.5}},
-        {flow_direction = "input-output", direction = defines.direction.east--[[@as int]], position = {1, 0.5}}
+        {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0.5}},
+        {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
       production_type = "input",
     },
@@ -7745,7 +7746,7 @@ fluid_boxes =
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "output", direction = defines.direction.north--[[@as int]], position = {0, -0.5}}
+        {flow_direction = "output", direction = defines.direction.north, position = {0, -0.5}}
       },
       production_type = "output",
       filter = "steam"
@@ -7924,8 +7925,8 @@ fluid_boxes =
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0.5}},
-        {flow_direction = "input-output", direction = defines.direction.east--[[@as int]], position = {1, 0.5}}
+        {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0.5}},
+        {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
       production_type = "input",
     },
@@ -7934,7 +7935,7 @@ fluid_boxes =
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "output", direction = defines.direction.north--[[@as int]], position = {0, -0.5}}
+        {flow_direction = "output", direction = defines.direction.north, position = {0, -0.5}}
       },
       production_type = "output",
       filter = "steam"
@@ -8235,21 +8236,21 @@ fluid_boxes =
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+      pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -1}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {-1, -1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 1000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {1, -1}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {1, -1}}},
       secondary_draw_orders = { north = -1 }
     },
   },
@@ -8333,28 +8334,28 @@ fluid_boxes =
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+      pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "input",
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+      pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
       secondary_draw_orders = { north = -1 }
     },
     {
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+      pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
       secondary_draw_orders = { north = -1 }
     },
   },
@@ -8386,7 +8387,7 @@ fluid_boxes =
       pipe_picture = pm_assembler4pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+      pipe_connections = {{flow_direction="input-output", direction = defines.direction.north, position = {0, -1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
@@ -8394,7 +8395,7 @@ fluid_boxes =
       pipe_picture = pm_assembler4pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+      pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
       secondary_draw_orders = { north = -1 }
     },
     {
@@ -8402,7 +8403,7 @@ fluid_boxes =
       pipe_picture = pm_assembler4pipepictures(),
       pipe_covers = pipecoverspictures(),
       volume = 2000,
-      pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+      pipe_connections = {{flow_direction="input-output", direction = defines.direction.west, position = {-1, 0}}},
       secondary_draw_orders = { north = -1 }
     },
     {
@@ -8410,7 +8411,7 @@ fluid_boxes =
         pipe_picture = pm_assembler4pipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 2000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
         secondary_draw_orders = { north = -1 }
     },
     },
@@ -8510,11 +8511,11 @@ fluid_boxes =
       fluid_box =
       {
         production_type = "input",
-        --pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+        --pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 1750,
         filter = "pm-light-lubricant",
-        pipe_connections = {{flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {0, -3}}},
+        pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -3}}},
       },
       --TODO: ask factorio server why you cant have multiple fluid boxes for this.
     },
@@ -9704,7 +9705,7 @@ fluid_boxes =
     damaged_trigger_effect = hit_effects.entity(),
     fast_replaceable_group = "pm-geothermal-generator",
     perceived_performance = {minimum = 0.25, performance_to_activity_rate = 2.0},
-    vehicle_impact_sound = sounds.generic_impact,
+    impact_category = "metal-large",
     energy_source =
     {
       type = "electric",
@@ -9780,7 +9781,7 @@ fluid_boxes =
       volume_reservation_fraction = 0.5,
       pipe_connections =
       {
-        {flow_direction = "input", direction = defines.direction.north--[[@as int]], position = {-0.5, -0.5}}
+        {flow_direction = "input", direction = defines.direction.north, position = {-0.5, -0.5}}
       },
     },
     output_fluid_box =
@@ -9791,7 +9792,7 @@ fluid_boxes =
       filter = "pm-acidic-water",
       pipe_connections =
       {
-        {flow_direction = "output", direction = defines.direction.south--[[@as int]], position = {0.5, 0.5}},
+        {flow_direction = "output", direction = defines.direction.south, position = {0.5, 0.5}},
       }
     }
   },
@@ -10043,43 +10044,43 @@ fluid_boxes =
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 200,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {0, 2} }},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0, 2} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {1, -2} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {1, -2} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {-1, -2} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-1, -2} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 1} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, -1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, -1} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, 1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 1} }},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, -1} }},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, -1} }},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -10467,37 +10468,37 @@ fluid_boxes =
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {1, 2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {-1, 2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-1, 2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {1, -2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -2} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -2} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, -2} }},
   },
   {
     production_type = "output",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 0} }},
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0} }},
   },
   {
     production_type = "output",
     pipe_covers = pipecoverspictures(),
     volume = 1500,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, 0} }},
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, 0} }},
   },
 },
 }--[[@as data.AssemblingMachinePrototype]],
@@ -10902,50 +10903,50 @@ fluid_boxes =
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south--[[@as int]], position = {1, 2}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {1, 2}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.south--[[@as int]], position = {-1, 2}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {-1, 2}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.north--[[@as int]], position = {1, -2}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {1, -2}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.north--[[@as int]], position = {-1, -2}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1, -2}}},
       },
 
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.east--[[@as int]], position = {2, 1}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.east, position = {2, 1}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east--[[@as int]], position = {2, -1}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2, -1}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-2, 1}}},
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 1}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         volume = 100,
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.west--[[@as int]], position = {-2, -1}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.west, position = {-2, -1}}},
       },
     },
   }--[[@as data.AssemblingMachinePrototype]],
@@ -11566,36 +11567,36 @@ fluid_boxes =
     {
       {
         position = {-1.5, 1.5},
-        direction = defines.direction.south--[[@as int]] --[[@as int]]
+        direction = defines.direction.south --[[@as int]]
       },
       {
         position = {-1.5, 1.5},
-        direction = defines.direction.west--[[@as int]] --[[@as int]]
+        direction = defines.direction.west --[[@as int]]
       },
       {
         position = {-1.5, -1.5},
-        direction = defines.direction.north--[[@as int]] --[[@as int]]
+        direction = defines.direction.north --[[@as int]]
       },
       {
         position = {-1.5, -1.5},
-        direction = defines.direction.west--[[@as int]] --[[@as int]]
+        direction = defines.direction.west --[[@as int]]
       },
 
       {
         position = {1.5, 1.5},
-        direction = defines.direction.south--[[@as int]] --[[@as int]]
+        direction = defines.direction.south --[[@as int]]
       },
       {
         position = {1.5, 1.5},
-        direction = defines.direction.east--[[@as int]] --[[@as int]]
+        direction = defines.direction.east --[[@as int]]
       },
       {
         position = {1.5, -1.5},
-        direction = defines.direction.north--[[@as int]] --[[@as int]]
+        direction = defines.direction.north --[[@as int]]
       },
       {
         position = {1.5, -1.5},
-        direction = defines.direction.east--[[@as int]] --[[@as int]]
+        direction = defines.direction.east --[[@as int]]
       },
     },
   },
@@ -11690,52 +11691,63 @@ ShorePumpBanishment.order = "b"
 
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "crafting-with-fluid")
 table.insert(data.raw["assembling-machine"]["assembling-machine-1"].crafting_categories, "pm-circuitry")
+
 data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes =
 {
   {
     production_type = "input",
-    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+    pipe_picture = asm2_pipe_pictures,
     pipe_covers = pipecoverspictures(),
     volume = 500,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+    pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
     production_type = "output",
-    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+    pipe_picture = asm2_pipe_pictures,
     pipe_covers = pipecoverspictures(),
     volume = 500,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+    pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
     secondary_draw_orders = { north = -1 }
   },
 }
 data.raw["assembling-machine"]["assembling-machine-1"].fluid_boxes_off_when_no_fluid_recipe = true
+
+---@type data.FluidBox
+local tmp = {
+    production_type = "input",
+    pipe_picture = asm2_pipe_pictures,
+    pipe_covers = pipecoverspictures(),
+    volume = 2000,
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north, position = {0, -1}}},
+    secondary_draw_orders = { north = -1 }
+  }
 
 table.insert(data.raw["assembling-machine"]["assembling-machine-2"].crafting_categories, "pm-circuitry")
 data.raw["assembling-machine"]["assembling-machine-2"].fluid_boxes = 
 {
   {
     production_type = "input",
-    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+    pipe_picture = asm2_pipe_pictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north, position = {0, -1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
     production_type = "output",
-    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+    pipe_picture = asm2_pipe_pictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+    pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
     production_type = "input",
-    pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler2pipepictures,
+    pipe_picture = asm2_pipe_pictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.west, position = {-1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
 }
@@ -11749,7 +11761,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north, position = {0, -1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -11757,7 +11769,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+    pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -11765,7 +11777,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.west, position = {-1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -11773,7 +11785,7 @@ data.raw["assembling-machine"]["assembling-machine-3"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 2000,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+    pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
 }
@@ -11793,7 +11805,7 @@ data.raw["fluid-turret"]["flamethrower-turret"].attacking_speed = 0.75
 data.raw["fluid-turret"]["flamethrower-turret"].max_health = 1000
 data.raw["fluid-turret"]["flamethrower-turret"].prepare_range = 30
 data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.range = 25
-data.raw["stream"]["flamethrower-fire-stream"].action.radius = 2
+-- data.raw["stream"]["flamethrower-fire-stream"].action.radius = 2
 data.raw["stream"]["flamethrower-fire-stream"].action =
 {
   {
@@ -11965,7 +11977,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
-    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north--[[@as int]], position = {0, -1}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.north, position = {0, -1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -11973,7 +11985,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
-    pipe_connections = {{flow_direction="input-output", direction = defines.direction.south--[[@as int]], position = {0, 1}}},
+    pipe_connections = {{flow_direction="input-output", direction = defines.direction.south, position = {0, 1}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -11981,7 +11993,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.west--[[@as int]], position = {-1, 0}}},
+    pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {-1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
   {
@@ -11989,7 +12001,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
     pipe_picture = require("__base__.prototypes.entity.assembler-pictures").assembler3pipepictures,
     pipe_covers = pipecoverspictures(),
     volume = 250,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.east--[[@as int]], position = {1, 0}}},
+    pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
     secondary_draw_orders = { north = -1 }
   },
 }

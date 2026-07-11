@@ -155,8 +155,7 @@ data:extend({
         fast_replaceable_group = "transport-belt",
         speed = 0.1875,
         connector_frame_sprites = transport_belt_connector_frame_sprites,
-        circuit_wire_connection_points = circuit_connector_definitions["belt"].points,
-        circuit_connector_sprites = circuit_connector_definitions["belt"].sprites,
+        circuit_connector = circuit_connector_definitions["belt"],
         circuit_wire_max_distance = transport_belt_circuit_wire_max_distance
     }--[[@as data.TransportBeltPrototype]],
     {
@@ -851,8 +850,7 @@ data.raw["underground-belt"]["fast-underground-belt"].map_color = orange_belt
 data.raw["splitter"]["fast-splitter"].map_color = orange_belt
 data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
 data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
-data.raw["underground-belt"]["express-underground-belt"].max_distance = 12 --TODO: Confirm this is what you wanted
---yes, yes it is what i wanted
+data.raw["underground-belt"]["express-underground-belt"].max_distance = 12
 data.raw["splitter"]["express-splitter"].speed = 0.125
 data.raw["splitter"]["fast-splitter"].next_upgrade = "pm-advanced-splitter"
 data.raw["transport-belt"]["fast-transport-belt"].next_upgrade = "pm-advanced-transport-belt"

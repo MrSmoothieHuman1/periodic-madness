@@ -46,7 +46,10 @@ local function set_override(entity, override)
         storage.logistic_scratch_inventory
     )
 
-    --TODO: Shove as much of it into the trash slots as I can when 2.1 adds that api
+    local trash = entity.get_inventory(defines.inventory.logistic_container_trash)
+    if trash then
+        trash.transfer_from_inventory(storage.logistic_scratch_inventory)
+    end
 
     entity.surface.spill_inventory{
         position = entity.position,

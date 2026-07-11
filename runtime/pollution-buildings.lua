@@ -9,11 +9,11 @@ handler.events = {}
 ---@field pollution_index? uint
 storage = storage
 
----@type {[data.EntityID]?:PollutionData.data}
+---@type {[data.EntityID]?:PMPollutionLimitsModData}
 local pollution_definition = {}
 for data_name, mod_data in pairs(prototypes.mod_data) do
   if mod_data.data_type == "pm-pollution-limit" then
-    ---@cast mod_data LuaPollutionData
+    ---@cast mod_data LuaModData<PMPollutionLimitsModData>
     local data = mod_data.data
     -- Data validation
     if type(data.entity) ~= "string" or not prototypes.entity[data.entity] then error("The `pm-pollution-limit` of "..data_name.." expects an entity ID") end
@@ -64,15 +64,6 @@ end)
 --MARK: Disabling
 
 ---@param entity LuaEntity
----@param signal SignalID
----@param alert LocalisedString
-local function alert_force(entity, signal, alert)
-  for _, player in pairs(entity.force--[[@cast -string]]--[[@cast -uint8]].players) do
-    player.add_custom_alert(entity, signal, alert, true)
-  end
-end
-
----@param entity LuaEntity
 ---@param object PollutionBuilding
 ---@param diode defines.entity_status_diode
 ---@param status LocalisedString
@@ -80,9 +71,11 @@ end
 ---@param alert? LocalisedString
 ---@param sprite LuaRendering.draw_sprite_param
 local function disable_building(entity, object, diode, status, signal, alert, sprite)
-if signal and alert then
-  alert_force(entity, signal, alert)
-end
+  if signal and alert then
+    entity.force--[[@cast -string]]--[[@cast -uint8]].add_custom_alert(
+      entity, signal, alert, true
+    )
+  end
 
   local alert = object.alert
   if not alert or not alert.valid then

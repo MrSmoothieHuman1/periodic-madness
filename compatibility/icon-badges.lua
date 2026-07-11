@@ -284,3 +284,10 @@ for _,i in ipairs(my_data) do
     end
 end
 Ib_global.badge_vanilla = false
+
+-- It *Does* exist as a global, I promise.
+do return end
+---@type function
+Build_badge = function()end
+---@type {badge_vanilla:boolean}
+Ib_global = {badge_vanilla = true}

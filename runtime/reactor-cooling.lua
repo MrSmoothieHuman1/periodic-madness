@@ -113,7 +113,7 @@ script_triggers["pm-cooled-reactor-died"] = function (event)
 	reactor_info.reactor.die()
 
 	-- Alert people of the reactor meltdown
-	for _, player in pairs(furnace.force.players) do -- TODO: Get a better icon than signal-skull
+	for _, player in pairs(furnace.force.players) do
 		player.add_custom_alert(furnace, {type="virtual", name="pm-reactor-meltdown"}, {"pm-alerts.reactor-meltdown"}, true)
 	end
 end
@@ -161,7 +161,7 @@ script_triggers["pm-cooled-reactor-hurt"] = function (event)
 	end
 
 	-- Show alert
-	for _, player in pairs(furnace.force.players) do -- TODO: Get a better icon than signal-skull
+	for _, player in pairs(furnace.force.players) do
 		player.add_custom_alert(furnace, {type="virtual", name="pm-reactor-melting-down"}, {"pm-alerts.reactor-melting-down"}, true)
 	end
 end

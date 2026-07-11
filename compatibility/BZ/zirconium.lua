@@ -31,9 +31,9 @@ data.raw["item"]["zirconium-plate"].order = "g"
 data.raw["technology"]["pm-zirconium-processing"] = nil
 data.raw["technology"]["cermet"].unit.ingredients =
 {
-  PM.ingredient("automation-science-pack", 1),
-  PM.ingredient("logistic-science-pack", 1),
-  PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 data.raw["technology"]["zirconia-processing"].icon_size = 256
 data.raw["technology"]["zirconia-processing"].icon = "__periodic-madness__/graphics/technology/zirconium-processing.png"
@@ -142,8 +142,8 @@ end
 if mods["bzaluminum"] then
   data.raw["technology"]["aerospace-alloys"].unit.ingredients =
   {
-    PM.ingredient("automation-science-pack", 1),
-    PM.ingredient("logistic-science-pack", 1),
-    PM.ingredient("pm-advanced-advanced-transition-metal-science-pack", 1),
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"pm-advanced-advanced-transition-metal-science-pack", 1},
   }
 end

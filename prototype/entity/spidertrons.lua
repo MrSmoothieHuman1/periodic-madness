@@ -155,15 +155,15 @@ data:extend({
         ground_position = {-3 * leg_scale, 1 * leg_scale},
         walking_group = 1,
         leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-      },
-      { -- 8
-        leg = arguments.name .. "-leg-8",
-        mount_position = util.by_pixel(-15 * scale, 17 * scale),
-        ground_position = {-2.25 * leg_scale, 2.5 * leg_scale},
-        walking_group = 2,
-        leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
-      }
-    },
+        },
+        { -- 8
+          leg = arguments.name .. "-leg-8",
+          mount_position = util.by_pixel(-15 * scale, 17 * scale),
+          ground_position = {-2.25 * leg_scale, 2.5 * leg_scale},
+          walking_group = 2,
+          leg_hit_the_ground_trigger = get_leg_hit_the_ground_trigger()
+        }
+      }--[[@as data.SpiderLegSpecification[] ]],
     },
     is_military_target = true,
     allow_remote_driving = true,
@@ -173,8 +173,8 @@ data:extend({
   make_spidertron_leg(arguments.name, leg_scale, arguments.leg_thickness, arguments.leg_movement_speed, 3, spiderling_leg_resistances),
   make_spidertron_leg(arguments.name, leg_scale, arguments.leg_thickness, arguments.leg_movement_speed, 4, spiderling_leg_resistances),
   make_spidertron_leg(arguments.name, leg_scale, arguments.leg_thickness, arguments.leg_movement_speed, 6, spiderling_leg_resistances),
-  make_spidertron_leg(arguments.name, leg_scale, arguments.leg_thickness, arguments.leg_movement_speed, 7, spidertron_leg_resistances),
-  make_spidertron_leg(arguments.name, leg_scale, arguments.leg_thickness, arguments.leg_movement_speed, 8, spidertron_leg_resistances),
+  make_spidertron_leg(arguments.name, leg_scale, arguments.leg_thickness, arguments.leg_movement_speed, 7, spiderling_leg_resistances),
+  make_spidertron_leg(arguments.name, leg_scale, arguments.leg_thickness, arguments.leg_movement_speed, 8, spiderling_leg_resistances),
 
 })
 end

@@ -21,7 +21,7 @@ data.raw["technology"]["chlorine-processing"].unit =
   count = 10,
   ingredients =
   {
-    PM.ingredient("automation-science-pack", 1)
+    {"automation-science-pack", 1}
   },
   time = 5
 }

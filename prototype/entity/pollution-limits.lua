@@ -1,12 +1,8 @@
 ---@class PollutionData : data.ModData
 ---@field data_type "pm-pollution-limit"
----@field data PollutionData.data
+---@field data PMPollutionLimitsModData
 
----@class LuaPollutionData : LuaModData
----@field data_type "pm-pollution-limit"
----@field data PollutionData.data
-
----@class PollutionData.data
+---@class PMPollutionLimitsModData
 ---@field entity data.EntityID
 ---@field min_pollution number The amount of pollution it needs to work
 ---@field max_pollution number The amount of pollution where it stops working

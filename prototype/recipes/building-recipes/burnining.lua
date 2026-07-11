@@ -1,4 +1,5 @@
 ---@class data.FluidPrototype
+---@field type "fluid"
 ---If present, indicates the emission multiplier of the void recipe
 ---@field auto_void? boolean
 ---The emission multiplier of the void recipe
@@ -13,7 +14,7 @@ local function make_voiding(prototype)
 		icons = util.copy(icons)
 	else
 		icons = {
-			{icon = prototype.icon, icon_size = prototype.icon_size}
+			{icon = prototype.icon--[[@as data.FileName]], icon_size = prototype.icon_size}
 		}
 	end
 
