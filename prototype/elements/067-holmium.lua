@@ -107,7 +107,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-monazite-sand", {12, 15})
+            PM.product("pm-monazite-sand"):amount(12, 15):done()
         }
     },
     {
@@ -128,10 +128,10 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-holmium-fluoride", 2, 0.05),
-            PM.product_chance("pm-holmium-chloride", 2, 0.05),
-            PM.catalyst("pm-flourine", 1, 1),
-            PM.catalyst("pm-chlorine", 4, 4, "fluid")
+            PM.product("pm-holmium-fluoride"):amount(2):chance(0.05):done(),
+            PM.product("pm-holmium-chloride"):amount(2):chance(0.05):done(),
+            PM.product("pm-flourine"):amount(1):catalyst(1):done(),
+            PM.product("pm-chlorine", "fluid"):amount(4):catalyst(4):done()
         }
     },
     {
@@ -148,7 +148,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-washed-monazite-sand", 8)
+            PM.product("pm-washed-monazite-sand"):amount(8):done()
         }
     },
     {
@@ -169,10 +169,10 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-holmium-fluoride", 2, 0.1),
-            PM.product_chance("pm-holmium-chloride", 2, 0.1),
-            PM.catalyst("pm-flourine", 2, 2),
-            PM.catalyst("pm-chlorine", 7.5, 7.5, "fluid")
+            PM.product("pm-holmium-fluoride"):amount(2):chance(0.1):done(),
+            PM.product("pm-holmium-chloride"):amount(2):chance(0.1):done(),
+            PM.product("pm-flourine"):amount(2):catalyst(2):done(),
+            PM.product("pm-chlorine", "fluid"):amount(7.5):catalyst(7.5):done()
         }
     },
     {
@@ -189,7 +189,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-holmium-enriched-monazite-sand", 6)
+            PM.product("pm-holmium-enriched-monazite-sand"):amount(6):done()
         }
     },
     {
@@ -210,10 +210,10 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-holmium-fluoride", 2, 0.2),
-            PM.product_chance("pm-holmium-chloride", 2, 0.2),
-            PM.catalyst("pm-flourine", 3, 3),
-            PM.catalyst("pm-chlorine", 15, 15, "fluid")
+            PM.product("pm-holmium-fluoride"):amount(2):chance(0.2):done(),
+            PM.product("pm-holmium-chloride"):amount(2):chance(0.2):done(),
+            PM.product("pm-flourine"):amount(3):catalyst(3):done(),
+            PM.product("pm-chlorine", "fluid"):amount(15):catalyst(15):done()
         }
     },
     {
@@ -234,9 +234,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-holmium", {3, 4}),
-            PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3),
-            PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3)
+            PM.product("pm-holmium"):amount(3, 4):done(),
+            PM.product("pm-yttrium-catalyst"):amount(3):chance(0.8):catalyst(3):done(),
+            PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(3):done()
         }
     },
     {
@@ -257,9 +257,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-holmium", {3, 4}),
-            PM.catalyst_chance("pm-yttrium-catalyst", 3, 0.8, 3),
-            PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3)
+            PM.product("pm-holmium"):amount(3, 4):done(),
+            PM.product("pm-yttrium-catalyst"):amount(3):chance(0.8):catalyst(3):done(),
+            PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(3):done()
         }
     },
     {
@@ -275,7 +275,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-holmium-plate", 1)
+            PM.product("pm-holmium-plate"):amount(1):done()
         }
     },
 })

@@ -60,8 +60,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-froth", 5, "fluid"),
-      PM.product("pm-copper-tailings", 10, "fluid")
+      PM.product("pm-copper-froth", "fluid"):amount(5):done(),
+      PM.product("pm-copper-tailings", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -83,9 +83,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-chunk", 2),
-      PM.product_range_chance("pm-cobaltite", {0, 2}, 0.69),
-      PM.product("pm-cobalt-blue", 4)
+      PM.product("pm-copper-chunk"):amount(2):done(),
+      PM.product("pm-cobaltite"):amount(0, 2):chance(0.69):done(),
+      PM.product("pm-cobalt-blue"):amount(4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -104,8 +104,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cobalt-ore", 2),
-      PM.product_range("pm-aluminium-ore", {0, 2})
+      PM.product("pm-cobalt-ore"):amount(2):done(),
+      PM.product("pm-aluminium-ore"):amount(0, 2):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -129,8 +129,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-copper-tailings", {2, 8}, "fluid"),
-      PM.product_chance("pm-copper-froth", 5, 0.7, "fluid")
+      PM.product("pm-copper-tailings", "fluid"):amount(2, 8):done(),
+      PM.product("pm-copper-froth", "fluid"):amount(5):chance(0.7):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -152,10 +152,10 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-chunk", 1),
-      PM.product_chance("pm-cobaltite", 1, 0.34),
-      PM.product("pm-cobalt-blue", 4),
-      PM.product_chance("pm-flux-container", 1, 0.66),
+      PM.product("pm-copper-chunk"):amount(1):done(),
+      PM.product("pm-cobaltite"):amount(1):chance(0.34):done(),
+      PM.product("pm-cobalt-blue"):amount(4):done(),
+      PM.product("pm-flux-container"):amount(1):chance(0.66):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -175,7 +175,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cobalt-blue", 6)
+      PM.product("pm-cobalt-blue"):amount(6):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -189,7 +189,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-cobalt-ore", 1) },
     results = {
-      PM.product("pm-cobalt-plate", 1)
+      PM.product("pm-cobalt-plate"):amount(1):done()
     }
   },
   {
@@ -223,7 +223,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-cobalt", 5, "fluid")
+      PM.product("pm-molten-cobalt", "fluid"):amount(5):done()
     }
   },
   {
@@ -244,8 +244,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cobalt-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-cobalt-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

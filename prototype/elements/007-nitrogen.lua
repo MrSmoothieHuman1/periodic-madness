@@ -57,7 +57,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-nitrogen-air-filter", 1)
+          PM.product("pm-nitrogen-air-filter"):amount(1):done()
         }
     },
     {
@@ -78,7 +78,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-advanced-nitrogen-air-filter", 1)
+          PM.product("pm-advanced-nitrogen-air-filter"):amount(1):done()
         }
     },
     {
@@ -97,7 +97,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-nitrogen-gas", 25, "fluid")
+          PM.product("pm-nitrogen-gas", "fluid"):amount(25):done()
         }
     },
     {
@@ -118,7 +118,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-nitrogen-gas", 50, "fluid")
+          PM.product("pm-nitrogen-gas", "fluid"):amount(50):done()
         }
     },
     {
@@ -154,9 +154,9 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-ammonia-gas", 15, "fluid"),
-          PM.product("pm-water-vapour", 5, "fluid"),
-          PM.product_chance("pm-nitrogen-gas", 5, 0.6, "fluid")
+          PM.product("pm-ammonia-gas", "fluid"):amount(15):done(),
+          PM.product("pm-water-vapour", "fluid"):amount(5):done(),
+          PM.product("pm-nitrogen-gas", "fluid"):amount(5):chance(0.6):done()
         }
     },
     {
@@ -183,9 +183,9 @@ data:extend({
       },
       results = 
       {
-        PM.product_range("pm-hydrogen-gas", {0, 15}, "fluid"),
-        PM.product_range("pm-ammonia-gas", {15, 20}, "fluid"),
-        PM.catalyst_chance("pm-nitrous-iron", 1, 0.75, 1)
+        PM.product("pm-hydrogen-gas", "fluid"):amount(0, 15):done(),
+        PM.product("pm-ammonia-gas", "fluid"):amount(15, 20):done(),
+        PM.product("pm-nitrous-iron"):amount(1):chance(0.75):catalyst(1):done()
       }
     },
     {
@@ -204,10 +204,10 @@ data:extend({
       },
       results =
       {
-        PM.product_range("pm-nitrogen-gas", {0, 5}, "fluid"),
-        PM.product_range("iron-plate", {5, 10}),
-        PM.product_chance("pm-yttrium-catalyst", 1, 0.9),
-        PM.product_chance("pm-catalyst-container", 1, 0.1)
+        PM.product("pm-nitrogen-gas", "fluid"):amount(0, 5):done(),
+        PM.product("iron-plate"):amount(5, 10):done(),
+        PM.product("pm-yttrium-catalyst"):amount(1):chance(0.9):done(),
+        PM.product("pm-catalyst-container"):amount(1):chance(0.1):done()
       }
     },
     {
@@ -222,7 +222,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-liquid-nitrogen", 1, "fluid")
+            PM.product("pm-liquid-nitrogen", "fluid"):amount(1):done()
         }
     },
     {

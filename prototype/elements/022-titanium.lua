@@ -76,7 +76,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-chunks", 8)
+      PM.product("pm-titanium-chunks"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -94,7 +94,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-oxide", 6)
+      PM.product("pm-titanium-oxide"):amount(6):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -123,8 +123,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-oxide", 6),
-      PM.product_chance("pm-flux-container", 1, 0.66),
+      PM.product("pm-titanium-oxide"):amount(6):done(),
+      PM.product("pm-flux-container"):amount(1):chance(0.66):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -156,8 +156,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-chloride", 2, "fluid"),
-      PM.product_range("pm-coke", {0, 1})
+      PM.product("pm-titanium-chloride", "fluid"):amount(2):done(),
+      PM.product("pm-coke"):amount(0, 1):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -177,9 +177,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-ore", 4),
-      PM.product("pm-chlorine", 5, "fluid"),
-      PM.product_range("pm-ferrum", {0, 3})
+      PM.product("pm-titanium-ore"):amount(4):done(),
+      PM.product("pm-chlorine", "fluid"):amount(5):done(),
+      PM.product("pm-ferrum"):amount(0, 3):done()
     }
   } --[[@as data.RecipePrototype]],
   --titanium plate is order f
@@ -200,7 +200,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-titanium", 5, "fluid")
+      PM.product("pm-molten-titanium", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -232,7 +232,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-chunks", 8)
+      PM.product("pm-titanium-chunks"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -246,7 +246,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-titanium-ore", 1) },
     results = {
-      PM.product("pm-titanium-plate", 1)
+      PM.product("pm-titanium-plate"):amount(1):done()
     }
   },
   {
@@ -280,7 +280,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-titanium", 5, "fluid")
+      PM.product("pm-molten-titanium", "fluid"):amount(5):done()
     }
   },
   {
@@ -301,8 +301,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-titanium-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

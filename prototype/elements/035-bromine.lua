@@ -69,8 +69,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-hydrogen-bromide", {14, 28}, "fluid"),
-      PM.product("pm-trace-gas", 5, "fluid")
+      PM.product("pm-hydrogen-bromide", "fluid"):amount(14, 28):done(),
+      PM.product("pm-trace-gas", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -91,10 +91,10 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bromine-ions", 8, "fluid"),
-      PM.product("pm-hydrogen-gas", 8, "fluid"),
-      PM.catalyst_chance("pm-palladium-catalyst", 2, 0.85, 1),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.15, 1)
+      PM.product("pm-bromine-ions", "fluid"):amount(8):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(8):done(),
+      PM.product("pm-palladium-catalyst"):amount(2):chance(0.85):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0.15):catalyst(1):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -113,7 +113,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-trace-bromine", 8, "fluid")
+      PM.product("pm-trace-bromine", "fluid"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -130,7 +130,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bromine", 4, "fluid")
+      PM.product("pm-bromine", "fluid"):amount(4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -149,8 +149,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vinyl-bromide", 10, "fluid"),
-      PM.product_range("pm-hydrogen-bromide", {1, 3}, "fluid")
+      PM.product("pm-vinyl-bromide", "fluid"):amount(10):done(),
+      PM.product("pm-hydrogen-bromide", "fluid"):amount(1, 3):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -170,7 +170,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-bromine-ions", {20, 40}, "fluid")
+      PM.product("pm-bromine-ions", "fluid"):amount(20, 40):done()
     }
   } --[[@as data.RecipePrototype]]
 })

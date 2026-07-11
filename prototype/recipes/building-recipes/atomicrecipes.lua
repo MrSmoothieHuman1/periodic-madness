@@ -18,9 +18,9 @@ if not item.protons then return end
 			},
 			results =
             {
-                PM.product("pm-electron-gas", item.electrons or item.protons, "fluid"),
-                PM.product("pm-neutron-gas", item.neutrons, "fluid"),
-                PM.product("pm-proton-gas", item.protons, "fluid"),
+                PM.product("pm-electron-gas", "fluid"):amount(item.electrons or item.protons):done(),
+                PM.product("pm-neutron-gas", "fluid"):amount(item.neutrons):done(),
+                PM.product("pm-proton-gas", "fluid"):amount(item.protons):done(),
             }
 		},
 		{
@@ -33,13 +33,13 @@ if not item.protons then return end
 			energy_required = 10,
 			ingredients =
 			{
-                PM.product("pm-electron-gas", item.electrons or item.protons, "fluid"),
-                PM.product("pm-neutron-gas", item.neutrons, "fluid"),
-                PM.product("pm-proton-gas", item.protons, "fluid"),
+                PM.product("pm-electron-gas", "fluid"):amount(item.electrons or item.protons):done(),
+                PM.product("pm-neutron-gas", "fluid"):amount(item.neutrons):done(),
+                PM.product("pm-proton-gas", "fluid"):amount(item.protons):done(),
 			},
 			results =
             {
-                PM.product(item.name, 1, item.type)
+                PM.product(item.name, item.type):amount(1):done()
             }
 		},
 	}
@@ -63,9 +63,9 @@ if not liquid.protons then return end
 			},
 			results =
             {
-                PM.product("pm-electron-gas", liquid.electrons or liquid.protons, "fluid"),
-                PM.product("pm-neutron-gas", liquid.neutrons, "fluid"),
-                PM.product("pm-proton-gas", liquid.protons, "fluid"),
+                PM.product("pm-electron-gas", "fluid"):amount(liquid.electrons or liquid.protons):done(),
+                PM.product("pm-neutron-gas", "fluid"):amount(liquid.neutrons):done(),
+                PM.product("pm-proton-gas", "fluid"):amount(liquid.protons):done(),
             }
 		},
 		{
@@ -84,7 +84,7 @@ if not liquid.protons then return end
 			},
 			results =
             {
-                PM.product(liquid.name, 10, liquid.type)
+                PM.product(liquid.name, liquid.type):amount(10):done()
             }
 		},
 	}
@@ -97,8 +97,8 @@ if not liquid.protons then return end
         }
         data.raw["recipe"]["pm-hydrogen-gas-atomic-seperation"].results =
         {
-            PM.product("pm-electron-gas", liquid.electrons or liquid.protons, "fluid"),
-            PM.product("pm-proton-gas", liquid.protons, "fluid")
+            PM.product("pm-electron-gas", "fluid"):amount(liquid.electrons or liquid.protons):done(),
+            PM.product("pm-proton-gas", "fluid"):amount(liquid.protons):done()
         }
     end
 end

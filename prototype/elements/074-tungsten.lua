@@ -92,7 +92,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tungsten-chunks", 8)
+      PM.product("pm-tungsten-chunks"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -109,7 +109,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-wolframite", 6)
+      PM.product("pm-wolframite"):amount(6):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -129,8 +129,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tungsten-crystals", 3),
-      PM.product("pm-scheelite", 2)
+      PM.product("pm-tungsten-crystals"):amount(3):done(),
+      PM.product("pm-scheelite"):amount(2):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -151,7 +151,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tungsten-ore", 4),
+      PM.product("pm-tungsten-ore"):amount(4):done(),
     }
   } --[[@as data.RecipePrototype]],
 
@@ -172,7 +172,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-tungsten", 5, "fluid")
+      PM.product("pm-molten-tungsten", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -204,7 +204,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tungsten-chunks", 8)
+      PM.product("pm-tungsten-chunks"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -226,9 +226,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tungsten-crystals", 15),
-      PM.product("pm-scheelite", 10),
-      PM.catalyst("pm-hot-coolant", 2.5, 2.5, "fluid", 1),
+      PM.product("pm-tungsten-crystals"):amount(15):done(),
+      PM.product("pm-scheelite"):amount(10):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(2.5):catalyst(2.5):index(1):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -242,7 +242,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-tungsten-ore", 1) },
     results = {
-      PM.product("pm-tungsten-plate", 1)
+      PM.product("pm-tungsten-plate"):amount(1):done()
     }
   },
   {
@@ -276,7 +276,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-tungsten", 5, "fluid")
+      PM.product("pm-molten-tungsten", "fluid"):amount(5):done()
     }
   },
   {
@@ -297,8 +297,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tungsten-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-tungsten-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

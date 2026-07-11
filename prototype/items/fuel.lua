@@ -165,8 +165,8 @@ data.raw["recipe"]["rocket-fuel"].ingredients =
 }
 data.raw["recipe"]["rocket-fuel"].results =
 {
-    PM.product("rocket-fuel", 1),
-    PM.catalyst_chance("pm-empty-glass-ampule", 4, 0.95, 4)
+    PM.product("rocket-fuel"):amount(1):done(),
+    PM.product("pm-empty-glass-ampule"):amount(4):catalyst(4):chance(0.95):done()
 }
 data.raw["recipe"]["rocket-fuel"].main_product = "rocket-fuel"
 

@@ -103,7 +103,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-celestine", 6)
+            PM.product("pm-celestine"):amount(6):done()
         }
     },
     {
@@ -127,9 +127,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-strontium-black-ash", {4, 12}),
-            PM.product_range_chance("pm-celestine", {0, 4}, 0.45),
-            PM.catalyst_range_chance("pm-sodium-hydroxide", {0, 5}, 0.45, 2.5, "fluid"),
+            PM.product("pm-strontium-black-ash"):amount(4, 12):done(),
+            PM.product("pm-celestine"):amount(0, 4):chance(0.45):done(),
+            PM.product("pm-sodium-hydroxide", "fluid"):amount(0, 5):chance(0.45):catalyst(2.5):done(),
         }
     },
     {
@@ -149,9 +149,9 @@ data:extend({
         },
         results =
         {
-            PM.catalyst_range("pm-ion-exchange-beads", {2, 8}, 2),
-            PM.product_range("pm-strontium-sulfide-solution", {10, 12.5}, "fluid"),
-            PM.product_range_chance("pm-acidic-water", {0, 25}, 0.5, "fluid")
+            PM.product("pm-ion-exchange-beads"):amount(2, 8):catalyst(2):done(),
+            PM.product("pm-strontium-sulfide-solution", "fluid"):amount(10, 12.5):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(0, 25):chance(0.5):done()
         }
     },
     {
@@ -170,9 +170,9 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-strontium-sulfide", 3, 0.75),
-            PM.product_chance("pm-strontium-carbonate", 1, 0.25),
-            PM.product_range("pm-carbon-monoxide", {10, 30}, "fluid"),
+            PM.product("pm-strontium-sulfide"):amount(3):chance(0.75):done(),
+            PM.product("pm-strontium-carbonate"):amount(1):chance(0.25):done(),
+            PM.product("pm-carbon-monoxide", "fluid"):amount(10, 30):done(),
         }
     },
     {
@@ -191,8 +191,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-strontium-carbonate", 2),
-            PM.product_range("pm-carbon-dioxide-gas", {5, 12}, "fluid")
+            PM.product("pm-strontium-carbonate"):amount(2):done(),
+            PM.product("pm-carbon-dioxide-gas", "fluid"):amount(5, 12):done()
         }
     },
     {
@@ -211,9 +211,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-strontium-ore", {1, 4}),
-            PM.product_range_chance("pm-bauxite", {0, 3}, 0.55),
-            PM.product_range_chance("pm-patina", {0, 2}, 0.45),
+            PM.product("pm-strontium-ore"):amount(1, 4):done(),
+            PM.product("pm-bauxite"):amount(0, 3):chance(0.55):done(),
+            PM.product("pm-patina"):amount(0, 2):chance(0.45):done(),
         }
     },
     {
@@ -231,7 +231,7 @@ data:extend({
         },
         results = 
         {
-          PM.product("pm-strontium-fuel-rod", 5)
+          PM.product("pm-strontium-fuel-rod"):amount(5):done()
         }
       },
 })

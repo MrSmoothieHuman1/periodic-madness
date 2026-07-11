@@ -154,7 +154,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-euxenite", 6),
+            PM.product("pm-euxenite"):amount(6):done(),
         }
     },
     {
@@ -172,8 +172,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-erbium-salts", 8),
-            PM.product("pm-magnesium-oxide", 4),
+            PM.product("pm-erbium-salts"):amount(8):done(),
+            PM.product("pm-magnesium-oxide"):amount(4):done(),
             PM.ingredient("pm-hot-light-coolant", 10, "fluid", 1)
         }
     },
@@ -188,14 +188,14 @@ data:extend({
         main_product = "pm-erbium-oxide",
         ingredients =
         {
-            PM.product("pm-erbium-salts", 8),
+            PM.product("pm-erbium-salts"):amount(8):done(),
         },
         results =
         {
-            PM.product_range("pm-erbium-oxide", {1, 3}),
-            PM.product_range("pm-erbium-bromide", {1, 3}),
-            PM.product_range("pm-erbium-iodide", {1, 3}),
-            PM.product_range("pm-ion-exchange-beads", {3, 4})
+            PM.product("pm-erbium-oxide"):amount(1, 3):done(),
+            PM.product("pm-erbium-bromide"):amount(1, 3):done(),
+            PM.product("pm-erbium-iodide"):amount(1, 3):done(),
+            PM.product("pm-ion-exchange-beads"):amount(3, 4):done()
         }
     },
     {
@@ -230,8 +230,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-impure-erbium", 3),
-            PM.product_range("pm-oxygen-gas", {2.5, 5}, "fluid")
+            PM.product("pm-impure-erbium"):amount(3):done(),
+            PM.product("pm-oxygen-gas", "fluid"):amount(2.5, 5):done()
         }
     },
     {
@@ -266,8 +266,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-impure-erbium", 3),
-            PM.product_range("pm-boron", {2.5, 5}, "fluid")
+            PM.product("pm-impure-erbium"):amount(3):done(),
+            PM.product("pm-boron", "fluid"):amount(2.5, 5):done()
         }
     },
     {
@@ -302,8 +302,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-impure-erbium", 3),
-            PM.product_range("pm-iodine", {1, 3})
+            PM.product("pm-impure-erbium"):amount(3):done(),
+            PM.product("pm-iodine"):amount(1, 3):done()
         }
     },
     {
@@ -336,7 +336,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-molten-erbium", 2.5, "fluid")
+            PM.product("pm-molten-erbium", "fluid"):amount(2.5):done()
         }
     },
     {
@@ -353,8 +353,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-erbium-plate", 10),
-            PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+            PM.product("pm-erbium-plate"):amount(10):done(),
+            PM.product("pm-crucible"):amount(2):chance(0.75):catalyst(2):done()
         }
     }
 })

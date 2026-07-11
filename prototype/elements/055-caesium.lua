@@ -126,7 +126,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-pollucite", {6, 12})
+      PM.product("pm-pollucite"):amount(6, 12):done()
     }
   },
   {
@@ -144,8 +144,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fine-pollucite-powder", 14),
-      PM.product_range_chance("pm-alkali-metals-ore", {0, 4}, 0.5)
+      PM.product("pm-fine-pollucite-powder"):amount(14):done(),
+      PM.product("pm-alkali-metals-ore"):amount(0, 4):chance(0.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -165,9 +165,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-caesium-hexachlorocerate", {2, 6}),
-      PM.product_range("pm-caesium-iodine-chloride", {2, 6}),
-      PM.product_range("pm-caesium-antimony-chloride", {2, 6}),
+      PM.product("pm-caesium-hexachlorocerate"):amount(2, 6):done(),
+      PM.product("pm-caesium-iodine-chloride"):amount(2, 6):done(),
+      PM.product("pm-caesium-antimony-chloride"):amount(2, 6):done(),
     }
   },
   {
@@ -188,9 +188,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-caesium-chloride", {2, 5}, 0.75),
-      PM.product_range("pm-chlorine", {2.5, 5}, "fluid"),
-      PM.product_range("pm-iodine", {0, 3})
+      PM.product("pm-caesium-chloride"):amount(2, 5):chance(0.75):done(),
+      PM.product("pm-chlorine", "fluid"):amount(2.5, 5):done(),
+      PM.product("pm-iodine"):amount(0, 3):done()
     }
   },
   {
@@ -211,9 +211,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-caesium-chloride", {2, 5}, 0.75),
-      PM.product_range("pm-hydrogen-gas", {2.5, 5}, "fluid"),
-      PM.product_range("pm-antimony-ore", {0, 2})
+      PM.product("pm-caesium-chloride"):amount(2, 5):chance(0.75):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(2.5, 5):done(),
+      PM.product("pm-antimony-ore"):amount(0, 2):done()
     }
   },
   {
@@ -234,8 +234,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-caesium-chloride", {2, 5}, 0.75),
-      PM.product_range("pm-hydrochloric-acid", {7.5, 10}, "fluid"),
+      PM.product("pm-caesium-chloride"):amount(2, 5):chance(0.75):done(),
+      PM.product("pm-hydrochloric-acid", "fluid"):amount(7.5, 10):done(),
     }
   },
   {
@@ -255,7 +255,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-caesium-glass-ampule", 2),
+      PM.product("pm-caesium-glass-ampule"):amount(2):done(),
     }
   },
 })

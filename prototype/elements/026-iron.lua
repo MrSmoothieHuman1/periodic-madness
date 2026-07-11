@@ -100,8 +100,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-pig-iron", 1),
-      PM.product_range_chance("stone", {1, 2}, 0.25)
+      PM.product("pm-pig-iron"):amount(1):done(),
+      PM.product("stone"):amount(1, 2):chance(0.25):done()
     }
   },
   {
@@ -139,8 +139,8 @@ data:extend({
     },
     results =
     {
-      PM.product("iron-ore", 2),
-      PM.product_range_chance("pm-ferrum", {1, 2}, 0.75)
+      PM.product("iron-ore"):amount(2):done(),
+      PM.product("pm-ferrum"):amount(1, 2):chance(0.75):done()
     }
   },
   {
@@ -179,7 +179,7 @@ data:extend({
     },
     results =
     {
-      PM.product("iron-ore", 4),
+      PM.product("iron-ore"):amount(4):done(),
     }
   },
   {
@@ -210,7 +210,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("iron-plate", 1)
+      PM.product("iron-plate"):amount(1):done()
     }
   },
   {
@@ -244,7 +244,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-iron", 5, "fluid")
+      PM.product("pm-molten-iron", "fluid"):amount(5):done()
     }
   },
   {
@@ -265,8 +265,8 @@ data:extend({
     },
     results =
     {
-      PM.product("iron-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("iron-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
   {
@@ -285,7 +285,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ferrum", 10)
+      PM.product("pm-ferrum"):amount(10):done()
     }
   },
 
@@ -308,8 +308,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-pig-iron", 6),
-      PM.product_range("pm-calcite", {0, 4})
+      PM.product("pm-pig-iron"):amount(6):done(),
+      PM.product("pm-calcite"):amount(0, 4):done()
     }
   },
   {
@@ -335,9 +335,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-flux-container", {1, 2}, 2),
-      PM.product("pm-mixed-molten-iron", 20, "fluid"),
-      PM.catalyst_range_chance("pm-carbon-monoxide", {2, 8}, 0.75, 4, "fluid")
+      PM.product("pm-flux-container"):amount(1, 2):catalyst(2):done(),
+      PM.product("pm-mixed-molten-iron", "fluid"):amount(20):done(),
+      PM.product("pm-carbon-monoxide", "fluid"):amount(2, 8):chance(0.75):catalyst(4):done()
     }
   },
   {
@@ -356,9 +356,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-molten-ore-slag", {0.5, 3}, "fluid"),
-      PM.product_range("pm-crucible", {1, 3}),
-      PM.product("pm-wrought-iron", 12)
+      PM.product("pm-molten-ore-slag", "fluid"):amount(0.5, 3):done(),
+      PM.product("pm-crucible"):amount(1, 3):done(),
+      PM.product("pm-wrought-iron"):amount(12):done()
     }
   },
   {
@@ -376,8 +376,8 @@ data:extend({
     },
     results =
     {
-      PM.product("iron-ore", 6),
-      PM.product_chance("pm-low-quality-quartzite", 1, 0.45)
+      PM.product("iron-ore"):amount(6):done(),
+      PM.product("pm-low-quality-quartzite"):amount(1):chance(0.45):done()
     }
   },
 })

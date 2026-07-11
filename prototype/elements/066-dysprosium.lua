@@ -113,7 +113,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-tantalum-dysprosium-crucible", 1)
+            PM.product("pm-tantalum-dysprosium-crucible"):amount(1):done()
         }
     },
     {
@@ -131,7 +131,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-xenotime", 6),
+            PM.product("pm-xenotime"):amount(6):done(),
         }
     },
     {
@@ -150,9 +150,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-dysprosium-concentrate", 12.5, "fluid"),
-            PM.product_chance("pm-holmium-fluoride", 1, 0.15),
-            PM.product_chance("pm-holmium-chloride", 1, 0.15),
+            PM.product("pm-dysprosium-concentrate", "fluid"):amount(12.5):done(),
+            PM.product("pm-holmium-fluoride"):amount(1):chance(0.15):done(),
+            PM.product("pm-holmium-chloride"):amount(1):chance(0.15):done(),
         }
     },
     {
@@ -169,8 +169,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-dysprosium-fluoride", 4),
-            PM.catalyst("pm-dysprosium-concentrate", 6, 5, "fluid")
+            PM.product("pm-dysprosium-fluoride"):amount(4):done(),
+            PM.product("pm-dysprosium-concentrate", "fluid"):amount(6):catalyst(5):done()
         }
     },
     {
@@ -188,9 +188,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-unprocessed-dysprosium", 4),
-            PM.product_chance("pm-lithium-ore", 1, 0.5),
-            PM.product_chance("pm-calcium-ore", 1, 0.5)
+            PM.product("pm-unprocessed-dysprosium"):amount(4):done(),
+            PM.product("pm-lithium-ore"):amount(1):chance(0.5):done(),
+            PM.product("pm-calcium-ore"):amount(1):chance(0.5):done()
         }
     },
     {
@@ -208,8 +208,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-molten-dysprosium", 5, "fluid"),
-            PM.catalyst("pm-industrial-noble-gas", 25, 25, "fluid")
+            PM.product("pm-molten-dysprosium", "fluid"):amount(5):done(),
+            PM.product("pm-industrial-noble-gas", "fluid"):amount(25):catalyst(25):done()
         }
     },
     {
@@ -226,7 +226,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-cooled-dysprosium", 1)
+            PM.product("pm-cooled-dysprosium"):amount(1):done()
         }
     },
     {
@@ -241,10 +241,10 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-dysprosium-plate", 3),
-            PM.product("pm-unprocessed-dysprosium", 2),
-            PM.product_chance("pm-tantalum-dysprosium-crucible", 1, 0.5),
-            PM.product_range("pm-combined-ore-slab", {0, 2})
+            PM.product("pm-dysprosium-plate"):amount(3):done(),
+            PM.product("pm-unprocessed-dysprosium"):amount(2):done(),
+            PM.product("pm-tantalum-dysprosium-crucible"):amount(1):chance(0.5):done(),
+            PM.product("pm-combined-ore-slab"):amount(0, 2):done()
         }
     },
 })

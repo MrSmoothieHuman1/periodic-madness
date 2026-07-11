@@ -17,7 +17,7 @@ data:extend({
     },
     results =
     {
-      PM.product("steam", 60, "fluid")
+      PM.product("steam", "fluid"):amount(60):done()
     }
   },
 })

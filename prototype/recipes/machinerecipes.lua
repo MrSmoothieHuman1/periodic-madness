@@ -12,7 +12,7 @@ data:extend({
       PM.ingredient("pm-basic-tubing", 4),
     },
     results = {
-      PM.product("pm-acid-plant", 1)
+      PM.product("pm-acid-plant"):amount(1):done()
     }
   },
   {
@@ -28,7 +28,7 @@ data:extend({
       PM.ingredient("stone-furnace", 1)
     },
     results = {
-      PM.product("pm-assembling-machine-0", 1)
+      PM.product("pm-assembling-machine-0"):amount(1):done()
     }
   },
   {
@@ -43,7 +43,7 @@ data:extend({
       PM.ingredient("pm-basic-framing", 4)
     },
     results = {
-      PM.product("pm-welder", 1)
+      PM.product("pm-welder"):amount(1):done()
     },
   },
   {
@@ -59,7 +59,7 @@ data:extend({
       PM.ingredient("iron-gear-wheel", 2)
     },
     results = {
-      PM.product("pm-water-extractor", 1)
+      PM.product("pm-water-extractor"):amount(1):done()
     },
   },
   {
@@ -74,7 +74,7 @@ data:extend({
       PM.ingredient("pm-stainless-steel-alloy", 6)
     },
     results = {
-      PM.product("pm-stainless-steel-storage-tank", 1)
+      PM.product("pm-stainless-steel-storage-tank"):amount(1):done()
     }
   },
   {
@@ -87,7 +87,7 @@ data:extend({
       PM.ingredient("pm-basic-tubing", 4)
     },
     results = {
-      PM.product("pm-dirty-boiler", 1)
+      PM.product("pm-dirty-boiler"):amount(1):done()
     },
   },
   {
@@ -107,7 +107,7 @@ data:extend({
       PM.ingredient("pm-liquid-silicone", 1, "fluid")
     },
     results = {
-      PM.product("pm-high-density-transport-belt", 1)
+      PM.product("pm-high-density-transport-belt"):amount(1):done()
     }
   },
   {
@@ -127,7 +127,7 @@ data:extend({
       PM.ingredient("pm-liquid-silicone", 2, "fluid")
     },
     results = {
-      PM.product("pm-high-density-underground-belt", 2)
+      PM.product("pm-high-density-underground-belt"):amount(2):done()
     }
   },
   {
@@ -147,7 +147,7 @@ data:extend({
       PM.ingredient("pm-liquid-silicone", 2.5, "fluid")
     },
     results = {
-      PM.product("pm-high-density-splitter", 1)
+      PM.product("pm-high-density-splitter"):amount(1):done()
     }
   },
   {
@@ -165,7 +165,7 @@ data:extend({
       PM.ingredient("pm-brass-cog", 2)
     },
     results = {
-      PM.product("pm-vacuum-former-1", 1)
+      PM.product("pm-vacuum-former-1"):amount(1):done()
     }
   },
   {
@@ -182,7 +182,7 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 3)
     },
     results = {
-      PM.product("pm-washing-plant-1", 1)
+      PM.product("pm-washing-plant-1"):amount(1):done()
     }
   },
   {
@@ -198,7 +198,7 @@ data:extend({
       PM.ingredient("pm-nickel-plate", 1)
     },
     results = {
-      PM.product("pm-burner-crusher", 1)
+      PM.product("pm-burner-crusher"):amount(1):done()
     }
   },
   {
@@ -217,7 +217,7 @@ data:extend({
       PM.ingredient("pm-polyethylene-plastic", 4)
     },
     results = {
-      PM.product("pm-fractional-distillator", 1)
+      PM.product("pm-fractional-distillator"):amount(1):done()
     }
   },
   {
@@ -235,7 +235,7 @@ data:extend({
       PM.ingredient("electronic-circuit", 3)
     },
     results = {
-      PM.product("pm-crusher-1", 1)
+      PM.product("pm-crusher-1"):amount(1):done()
     }
   },
   {
@@ -254,7 +254,7 @@ data:extend({
       PM.ingredient("processing-unit", 3)
     },
     results = {
-      PM.product("pm-crusher-2", 1)
+      PM.product("pm-crusher-2"):amount(1):done()
     }
   },
   {
@@ -273,7 +273,7 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 2)
     },
     results = {
-      PM.product("pm-fluid-catalyst-cracker", 1)
+      PM.product("pm-fluid-catalyst-cracker"):amount(1):done()
     }
   },
   {
@@ -290,7 +290,7 @@ data:extend({
       PM.ingredient("pm-basic-tubing", 4),
     },
     results = {
-      PM.product("pm-evaporator", 1)
+      PM.product("pm-evaporator"):amount(1):done()
     }
   },
   {
@@ -307,7 +307,7 @@ data:extend({
       PM.ingredient("pm-gold-plate", 6)
     },
     results = {
-      PM.product("pm-molten-inator", 1)
+      PM.product("pm-molten-inator"):amount(1):done()
     }
   },
   {
@@ -324,7 +324,7 @@ data:extend({
       PM.ingredient("pm-silver-plate", 6)
     },
     results = {
-      PM.product("pm-cold-inator", 1)
+      PM.product("pm-cold-inator"):amount(1):done()
     }
   },
   {
@@ -342,7 +342,7 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 3)
     },
     results = {
-      PM.product("pm-cold-inator-2", 1)
+      PM.product("pm-cold-inator-2"):amount(1):done()
     }
   },
   {
@@ -360,7 +360,7 @@ data:extend({
       PM.ingredient("pm-fluid-circuit", 3)
     },
     results = {
-      PM.product("pm-molten-inator-2", 1)
+      PM.product("pm-molten-inator-2"):amount(1):done()
     }
   },
   {
@@ -380,7 +380,7 @@ data:extend({
       PM.ingredient("processing-unit", 3)
     },
     results = {
-      PM.product("pm-cold-inator-3", 1)
+      PM.product("pm-cold-inator-3"):amount(1):done()
     }
   },
   {
@@ -400,7 +400,7 @@ data:extend({
       PM.ingredient("processing-unit", 3)
     },
     results = {
-      PM.product("pm-molten-inator-3", 1)
+      PM.product("pm-molten-inator-3"):amount(1):done()
     }
   },
   {
@@ -421,7 +421,7 @@ data:extend({
       PM.ingredient("electric-engine-unit", 9)
     },
     results = {
-      PM.product("pm-circuit-megassembler", 1)
+      PM.product("pm-circuit-megassembler"):amount(1):done()
     }
   },
   {
@@ -439,7 +439,7 @@ data:extend({
       PM.ingredient("advanced-circuit", 5),
     },
     results = {
-      PM.product("pm-atmospheric-condenser", 1)
+      PM.product("pm-atmospheric-condenser"):amount(1):done()
     }
   },
   {
@@ -456,7 +456,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-pipe", 1)
+      PM.product("pm-stainless-steel-pipe"):amount(1):done()
     }
   },
   {
@@ -473,7 +473,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-pipe-to-ground", 2)
+      PM.product("pm-stainless-steel-pipe-to-ground"):amount(2):done()
     }
   },
   {
@@ -493,7 +493,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-science-center", 1)
+      PM.product("pm-science-center"):amount(1):done()
     }
   },
   {
@@ -512,7 +512,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-voltatic-charger", 1)
+      PM.product("pm-voltatic-charger"):amount(1):done()
     }
   },
   {
@@ -531,7 +531,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-voltatic-discharger", 1)
+      PM.product("pm-voltatic-discharger"):amount(1):done()
     }
   },
   {
@@ -552,7 +552,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-CO2-nullifer", 1)
+      PM.product("pm-CO2-nullifer"):amount(1):done()
     }
   },
   {
@@ -571,7 +571,7 @@ data:extend({
       PM.ingredient("pm-heavyweight-panelling", 4)
     },
     results = {
-      PM.product("pm-vacuum-former-2", 1)
+      PM.product("pm-vacuum-former-2"):amount(1):done()
     }
   },
   {
@@ -589,7 +589,7 @@ data:extend({
       PM.ingredient("pm-platinum-plate", 6),
     },
     results = {
-      PM.product("pm-air-filterer", 1)
+      PM.product("pm-air-filterer"):amount(1):done()
     }
   },
   {
@@ -607,7 +607,7 @@ data:extend({
       PM.ingredient("pm-heavyweight-panelling", 12)
     },
     results = {
-      PM.product("pm-washing-plant-2", 1)
+      PM.product("pm-washing-plant-2"):amount(1):done()
     }
   },
   {
@@ -626,7 +626,7 @@ data:extend({
       PM.ingredient("landfill", 4)
     },
     results = {
-      PM.product("pm-greenhouse", 1)
+      PM.product("pm-greenhouse"):amount(1):done()
     }
   },
   {
@@ -645,7 +645,7 @@ data:extend({
       PM.ingredient("advanced-circuit", 4)
     },
     results = {
-      PM.product("pm-factorian-bacteria-greenhouse", 1)
+      PM.product("pm-factorian-bacteria-greenhouse"):amount(1):done()
     }
   },
   {
@@ -665,7 +665,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bio-lab", 1)
+      PM.product("pm-bio-lab"):amount(1):done()
     }
   },
   {
@@ -680,7 +680,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-chest", 1)
+      PM.product("pm-stainless-steel-chest"):amount(1):done()
     }
   },
   {
@@ -700,7 +700,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-electric-mining-drill-2", 1)
+      PM.product("pm-electric-mining-drill-2"):amount(1):done()
     }
   },
   {
@@ -717,7 +717,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-electrolysis-plant", 1)
+      PM.product("pm-electrolysis-plant"):amount(1):done()
     }
   },
   {
@@ -735,7 +735,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-crystallizer", 1)
+      PM.product("pm-crystallizer"):amount(1):done()
     }
   },
   {
@@ -754,7 +754,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-panel-2", 1)
+      PM.product("pm-solar-panel-2"):amount(1):done()
     }
   },
   {
@@ -773,7 +773,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cyclotron", 1)
+      PM.product("pm-cyclotron"):amount(1):done()
     }
   },
   {
@@ -792,7 +792,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heat-exchanger-2", 1)
+      PM.product("pm-heat-exchanger-2"):amount(1):done()
     }
   },
   {
@@ -812,7 +812,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-burn-inator", 1)
+      PM.product("pm-burn-inator"):amount(1):done()
     }
   },
   {
@@ -830,7 +830,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heat-pipe-1", 1)
+      PM.product("pm-heat-pipe-1"):amount(1):done()
     }
   },
   {
@@ -849,7 +849,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-polonium-reactor", 1)
+      PM.product("pm-polonium-reactor"):amount(1):done()
     }
   },
   {
@@ -869,7 +869,7 @@ data:extend({
     },
     results =         --hi smelloy
     {
-      PM.product("pm-francium-ultracool-centrifugal-kabbalism", 1)
+      PM.product("pm-francium-ultracool-centrifugal-kabbalism"):amount(1):done()
     }
   },
   {
@@ -888,7 +888,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-evaporator-2", 1)
+      PM.product("pm-evaporator-2"):amount(1):done()
     }
   },
   {
@@ -906,7 +906,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-electrolysis-plant-2", 1)
+      PM.product("pm-electrolysis-plant-2"):amount(1):done()
     }
   },
   {
@@ -922,7 +922,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-leaching-field", 1)
+      PM.product("pm-leaching-field"):amount(1):done()
     }
   },
   {
@@ -941,7 +941,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-battery-charger", 1)
+      PM.product("pm-battery-charger"):amount(1):done()
     }
   },
   {
@@ -960,7 +960,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-battery-discharger", 1)
+      PM.product("pm-battery-discharger"):amount(1):done()
     }
   },
   {
@@ -979,7 +979,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-pump", 1)
+      PM.product("pm-stainless-steel-pump"):amount(1):done()
     }
   },
   {
@@ -998,7 +998,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-chemical-plant-2", 1)
+      PM.product("pm-chemical-plant-2"):amount(1):done()
     }
   },
   {
@@ -1014,7 +1014,7 @@ data:extend({
       PM.ingredient("fast-transport-belt", 1),
     },
     results = {
-      PM.product("pm-advanced-transport-belt", 1)
+      PM.product("pm-advanced-transport-belt"):amount(1):done()
     }
   },
   {
@@ -1030,7 +1030,7 @@ data:extend({
       PM.ingredient("pm-stainless-steel-alloy", 2),
     },
     results = {
-      PM.product("pm-advanced-underground-belt", 2)
+      PM.product("pm-advanced-underground-belt"):amount(2):done()
     }
   },
   {
@@ -1046,7 +1046,7 @@ data:extend({
       PM.ingredient("pm-basic-motor", 2)
     },
     results = {
-      PM.product("pm-advanced-splitter", 1)
+      PM.product("pm-advanced-splitter"):amount(1):done()
     }
   },
   {
@@ -1064,7 +1064,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heat-pipe-3", 2)
+      PM.product("pm-heat-pipe-3"):amount(2):done()
     }
   },
   {
@@ -1085,7 +1085,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-heat-furnace", 1)
+      PM.product("pm-heat-furnace"):amount(1):done()
     }
   },
   {
@@ -1106,7 +1106,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-electric-furnace-2", 1)
+      PM.product("pm-electric-furnace-2"):amount(1):done()
     }
   },
   {
@@ -1123,7 +1123,7 @@ data:extend({
       PM.ingredient("pm-heavyweight-framing", 6)
     },
     results = {
-      PM.product("pm-fluid-turbine", 1)
+      PM.product("pm-fluid-turbine"):amount(1):done()
     }
   },
   {
@@ -1142,7 +1142,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-concrete-wall", 1)
+      PM.product("pm-concrete-wall"):amount(1):done()
     }
   },
   {
@@ -1162,7 +1162,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bio-wall", 1)
+      PM.product("pm-bio-wall"):amount(1):done()
     }
   },
   {
@@ -1180,7 +1180,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-panel-3", 1)
+      PM.product("pm-solar-panel-3"):amount(1):done()
     }
   },
   {
@@ -1199,7 +1199,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-mixing-tank-1", 1)
+      PM.product("pm-mixing-tank-1"):amount(1):done()
     }
   },
   {
@@ -1218,7 +1218,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-mixing-tank-2", 1)
+      PM.product("pm-mixing-tank-2"):amount(1):done()
     }
   },
   {
@@ -1238,7 +1238,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-express-inserter", 1)
+      PM.product("pm-express-inserter"):amount(1):done()
     }
   },
   {
@@ -1259,7 +1259,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-express-long-handed-inserter", 1)
+      PM.product("pm-express-long-handed-inserter"):amount(1):done()
     }
   },
   {
@@ -1280,7 +1280,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-express-bulk-inserter", 1)
+      PM.product("pm-express-bulk-inserter"):amount(1):done()
     }
   },
   {
@@ -1301,7 +1301,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-beacon-2", 1)
+      PM.product("pm-beacon-2"):amount(1):done()
     }
   },
   {
@@ -1323,7 +1323,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-hub-beacon", 1)
+      PM.product("pm-hub-beacon"):amount(1):done()
     }
   },
   {
@@ -1345,7 +1345,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-proximity-beacon", 1)
+      PM.product("pm-proximity-beacon"):amount(1):done()
     }
   },
   {
@@ -1362,7 +1362,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-electric-boiler-1", 1)
+      PM.product("pm-electric-boiler-1"):amount(1):done()
     }
   },
   {
@@ -1380,7 +1380,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-electric-boiler-2", 1)
+      PM.product("pm-electric-boiler-2"):amount(1):done()
     }
   },
   {
@@ -1397,7 +1397,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-cooling-plant", 1)
+      PM.product("pm-cooling-plant"):amount(1):done()
     }
   },
   {
@@ -1417,7 +1417,7 @@ data:extend({
       PM.ingredient("pm-polyethylene-plastic", 4)
     },
     results = {
-      PM.product("pm-washing-plant-3", 1)
+      PM.product("pm-washing-plant-3"):amount(1):done()
     }
   },
   {
@@ -1437,7 +1437,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-roboport-2", 1)
+      PM.product("pm-roboport-2"):amount(1):done()
     }
   },
   {
@@ -1456,7 +1456,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-construction-repeater", 1)
+      PM.product("pm-construction-repeater"):amount(1):done()
     }
   },
   {
@@ -1475,7 +1475,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-logistic-repeater", 1)
+      PM.product("pm-logistic-repeater"):amount(1):done()
     }
   },
     {
@@ -1495,7 +1495,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-longer-handed-inserter", 1)
+      PM.product("pm-longer-handed-inserter"):amount(1):done()
     }
   },
   {
@@ -1512,7 +1512,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-RTG", 1)
+      PM.product("pm-RTG"):amount(1):done()
     }
   },
   {
@@ -1531,7 +1531,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-coil-heater", 1)
+      PM.product("pm-coil-heater"):amount(1):done()
     }
   },
   {
@@ -1548,7 +1548,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-osmium-pipe", 1)
+      PM.product("pm-osmium-pipe"):amount(1):done()
     }
   },
   {
@@ -1566,7 +1566,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-assembling-machine-4", 1)
+      PM.product("pm-assembling-machine-4"):amount(1):done()
     }
   },
   {
@@ -1583,7 +1583,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sideserter", 1)
+      PM.product("pm-sideserter"):amount(1):done()
     }
   },
   {
@@ -1600,7 +1600,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-long-handed-sideserter", 1)
+      PM.product("pm-long-handed-sideserter"):amount(1):done()
     }
   },
   {
@@ -1617,7 +1617,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-bulk-sideserter", 1)
+      PM.product("pm-bulk-sideserter"):amount(1):done()
     }
   },
   {
@@ -1639,7 +1639,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-circuit-megassembler-MK2", 1)
+      PM.product("pm-circuit-megassembler-MK2"):amount(1):done()
     }
   },
   {
@@ -1655,7 +1655,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-stone-coke-oven", 1)
+      PM.product("pm-stone-coke-oven"):amount(1):done()
     }
   },
   {
@@ -1671,7 +1671,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-stone-coke-oven-2", 1)
+      PM.product("pm-stone-coke-oven-2"):amount(1):done()
     }
   },
   {
@@ -1688,7 +1688,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stone-coke-oven-3", 1)
+      PM.product("pm-stone-coke-oven-3"):amount(1):done()
     }
   },
   {
@@ -1705,7 +1705,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-electric-coke-oven", 1)
+        PM.product("pm-electric-coke-oven"):amount(1):done()
     }
   },
   {
@@ -1722,7 +1722,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-osmium-pipe-to-ground", 1)
+        PM.product("pm-osmium-pipe-to-ground"):amount(1):done()
     }
   },
   {
@@ -1742,7 +1742,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-electric-mining-drill-3", 1)
+      PM.product("pm-electric-mining-drill-3"):amount(1):done()
     }
   },
   {
@@ -1760,7 +1760,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-electronic-laser-etcher", 1)
+        PM.product("pm-electronic-laser-etcher"):amount(1):done()
     }
   },
   {
@@ -1779,7 +1779,7 @@ data:extend({
       PM.ingredient("pm-high-density-structure", 3)
     },
     results = {
-      PM.product("pm-atmospheric-condenser-2", 1)
+      PM.product("pm-atmospheric-condenser-2"):amount(1):done()
     }
   },
   {
@@ -1796,7 +1796,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-geothermal-plant", 1)
+        PM.product("pm-geothermal-plant"):amount(1):done()
     }
   },
   {
@@ -1814,7 +1814,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-mixing-tank-3", 1)
+        PM.product("pm-mixing-tank-3"):amount(1):done()
     }
   },
   {
@@ -1831,7 +1831,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-fluid-turbine", 1)
+        PM.product("pm-fluid-turbine"):amount(1):done()
     }
   },
   {
@@ -1848,7 +1848,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-fluid-generator", 1)
+        PM.product("pm-fluid-generator"):amount(1):done()
     }
   },
   {
@@ -1864,7 +1864,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-tidal-power-plant", 1)
+        PM.product("pm-tidal-power-plant"):amount(1):done()
     }
   },
   {
@@ -1884,7 +1884,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-blast-furnace", 1)
+        PM.product("pm-blast-furnace"):amount(1):done()
     }
   }
 } --[[@as data.RecipePrototype[] ]])

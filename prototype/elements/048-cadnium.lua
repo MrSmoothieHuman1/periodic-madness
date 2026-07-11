@@ -69,7 +69,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zinc-tailings", 10, "fluid")
+      PM.product("pm-zinc-tailings", "fluid"):amount(10):done()
     }
   },
   {
@@ -89,9 +89,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cadnium-sulfate", 2),
-      PM.product_range("pm-zinc-chunk", {0, 2}),
-      PM.product_range_chance("pm-patina", {1, 3}, 0.5),
+      PM.product("pm-cadnium-sulfate"):amount(2):done(),
+      PM.product("pm-zinc-chunk"):amount(0, 2):done(),
+      PM.product("pm-patina"):amount(1, 3):chance(0.5):done(),
     }
   },
   {
@@ -111,8 +111,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cadnium-ore", {3, 4}),
-      PM.product_range("sulfur", {1, 4})
+      PM.product("pm-cadnium-ore"):amount(3, 4):done(),
+      PM.product("sulfur"):amount(1, 4):done()
     }
   },
   {
@@ -131,7 +131,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cadnium-red", 6)
+      PM.product("pm-cadnium-red"):amount(6):done()
     }
   },
   {
@@ -145,7 +145,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-cadnium-ore", 1) },
     results = {
-      PM.product("pm-cadnium-plate", 1)
+      PM.product("pm-cadnium-plate"):amount(1):done()
     }
   },
   {
@@ -179,7 +179,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-cadnium", 5, "fluid")
+      PM.product("pm-molten-cadnium", "fluid"):amount(5):done()
     }
   },
   {
@@ -200,8 +200,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cadnium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-cadnium-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

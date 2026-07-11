@@ -129,9 +129,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-baryte-ore", {3, 6}, 0.75),
-            PM.product_range_chance("pm-anhydrite", {1, 4}, 0.66),
-            PM.product_range_chance("pm-sodium", {0, 3}, 0.5)
+            PM.product("pm-baryte-ore"):amount(3, 6):chance(0.75):done(),
+            PM.product("pm-anhydrite"):amount(1, 4):chance(0.66):done(),
+            PM.product("pm-sodium"):amount(0, 3):chance(0.5):done()
         }
     },
     {
@@ -152,8 +152,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-mixed-baryte", {2, 5}, 0.75),
-            PM.product_range_chance("pm-pure-baryte", {1, 4}, 0.25)
+            PM.product("pm-mixed-baryte"):amount(2, 5):chance(0.75):done(),
+            PM.product("pm-pure-baryte"):amount(1, 4):chance(0.25):done()
         }
     },
     {
@@ -172,8 +172,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-barium-froth", 5, "fluid"),
-            PM.product("pm-barium-tailings", 10, "fluid")
+            PM.product("pm-barium-froth", "fluid"):amount(5):done(),
+            PM.product("pm-barium-tailings", "fluid"):amount(10):done()
         }
     },
     {
@@ -198,8 +198,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-barium-tailings", {1, 8}, "fluid"),
-            PM.product_chance("pm-barium-froth", 5, 0.95, "fluid")
+            PM.product("pm-barium-tailings", "fluid"):amount(1, 8):done(),
+            PM.product("pm-barium-froth", "fluid"):amount(5):chance(0.95):done()
         }
     },
     {
@@ -218,11 +218,11 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-pure-baryte", {3, 7}),
-            PM.product_range_chance("pm-iron-chunk", {0, 4}, 0.33),
-            PM.product_range_chance("pm-zinc-chunk", {0, 4}, 0.33),
-            PM.product_range_chance("pm-lead-chunks", {0, 4}, 0.33),
-            PM.product_range("pm-flux-container", {1, 2})
+            PM.product("pm-pure-baryte"):amount(3, 7):done(),
+            PM.product("pm-iron-chunk"):amount(0, 4):chance(0.33):done(),
+            PM.product("pm-zinc-chunk"):amount(0, 4):chance(0.33):done(),
+            PM.product("pm-lead-chunks"):amount(0, 4):chance(0.33):done(),
+            PM.product("pm-flux-container"):amount(1, 2):done()
         }
     },
     {
@@ -243,9 +243,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-barium-nitrate", 5),
-            PM.catalyst_chance("pm-palladium-catalyst", 2, 0.9, 2),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2)
+            PM.product("pm-barium-nitrate"):amount(5):done(),
+            PM.product("pm-palladium-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done()
         }
     },
     {
@@ -265,9 +265,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-aluminium-plate", {1, 5}),
-            PM.product_range("pm-barium-vapour", {2.5, 7.5}, "fluid"),
-            PM.product_range_chance("pm-barium-nitrate", {0, 3}, 0.4)
+            PM.product("pm-aluminium-plate"):amount(1, 5):done(),
+            PM.product("pm-barium-vapour", "fluid"):amount(2.5, 7.5):done(),
+            PM.product("pm-barium-nitrate"):amount(0, 3):chance(0.4):done()
         }
     },
     {
@@ -286,7 +286,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-barium-ore", 4)
+            PM.product("pm-barium-ore"):amount(4):done()
         }
     }
 

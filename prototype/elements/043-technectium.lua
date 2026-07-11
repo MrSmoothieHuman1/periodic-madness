@@ -55,7 +55,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-molybdenum-99", {9, 14})
+            PM.product("pm-molybdenum-99"):amount(9, 14):done()
         }
     },
     {
@@ -75,8 +75,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-trace-technectium-99", 5),
-            PM.product_range("pm-trace-technectium-99", {0, 5}),
+            PM.product("pm-trace-technectium-99"):amount(5):done(),
+            PM.product("pm-trace-technectium-99"):amount(0, 5):done(),
         }
     },
     {
@@ -92,7 +92,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-technectium-99", 1)
+            PM.product("pm-technectium-99"):amount(1):done()
         }
     }
 })

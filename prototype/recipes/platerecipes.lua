@@ -25,7 +25,7 @@ data:extend({
     enabled = false,
     ingredients = { PM.ingredient("pm-gravel", 4) },
     results = {
-      PM.product("pm-glass-pane", 1)
+      PM.product("pm-glass-pane"):amount(1):done()
     }
   },
   {
@@ -39,7 +39,7 @@ data:extend({
     enabled = false,
     ingredients = { PM.ingredient("pm-sand", 4) },
     results = {
-      PM.product("pm-glass-pane", 1)
+      PM.product("pm-glass-pane"):amount(1):done()
     }
   },
   {
@@ -56,7 +56,7 @@ data:extend({
       PM.ingredient("pm-zinc-plate", 1),
     },
     results = {
-      PM.product("pm-brass-plate", 1)
+      PM.product("pm-brass-plate"):amount(1):done()
     },
   },
   {
@@ -76,7 +76,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-brass-plate", 4)
+      PM.product("pm-brass-plate"):amount(4):done()
     }
   },
   {
@@ -95,7 +95,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-alloy", 2)
+      PM.product("pm-stainless-steel-alloy"):amount(2):done()
     }
   },
   {
@@ -115,7 +115,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-alloy", 6)
+      PM.product("pm-stainless-steel-alloy"):amount(6):done()
     }
   },
   {
@@ -134,7 +134,7 @@ data:extend({
     },
     results =
     {
-      PM.product("steel-plate", 4)
+      PM.product("steel-plate"):amount(4):done()
     }
   },
   {
@@ -153,7 +153,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-kasethal-plate", 3)
+      PM.product("pm-kasethal-plate"):amount(3):done()
     }
   }
 } --[[@as data.RecipePrototype[] ]])

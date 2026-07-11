@@ -36,10 +36,10 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-monazite-sand", 1, 1),
-            PM.product_range_chance("pm-thulium", {1, 2}, 0.07),
-            PM.catalyst("pm-rhenium-platinum-catalyst", 2, 2),
-            PM.catalyst_chance("pm-iodine", 3, 0.95, 3)
+            PM.product("pm-monazite-sand"):amount(1):catalyst(1):done(),
+            PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
+            PM.product("pm-rhenium-platinum-catalyst"):amount(2):catalyst(2):done(),
+            PM.product("pm-iodine"):amount(3):chance(0.95):catalyst(3):done()
         }
     },
     {
@@ -60,10 +60,10 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-monazite-sand", 1, 1),
-            PM.product_range_chance("pm-thulium", {1, 2}, 0.07),
-            PM.catalyst("pm-yttrium-catalyst", 2, 2),
-            PM.catalyst_chance("pm-bromine", 3, 0.95, 3, "fluid")
+            PM.product("pm-monazite-sand"):amount(1):catalyst(1):done(),
+            PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
+            PM.product("pm-yttrium-catalyst"):amount(2):catalyst(2):done(),
+            PM.product("pm-bromine", "fluid"):amount(3):chance(0.95):catalyst(3):done()
         }
     },
     {
@@ -84,10 +84,10 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-monazite-sand", 1, 1),
-            PM.product_range_chance("pm-thulium", {1, 2}, 0.07),
-            PM.catalyst("pm-yttrium-catalyst", 4, 4),
-            PM.catalyst_chance("pm-chlorine", 3, 0.95, 3, "fluid")
+            PM.product("pm-monazite-sand"):amount(1):catalyst(1):done(),
+            PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
+            PM.product("pm-yttrium-catalyst"):amount(4):catalyst(4):done(),
+            PM.product("pm-chlorine", "fluid"):amount(3):chance(0.95):catalyst(3):done()
         }
     },
     {
@@ -108,10 +108,10 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-monazite-sand", 1, 1),
-            PM.product_range_chance("pm-thulium", {1, 2}, 0.07),
-            PM.catalyst("pm-vanadium-oxide-catalyst", 4, 4),
-            PM.catalyst_chance("pm-flourine", 3, 0.95, 3)
+            PM.product("pm-monazite-sand"):amount(1):catalyst(1):done(),
+            PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
+            PM.product("pm-vanadium-oxide-catalyst"):amount(4):catalyst(4):done(),
+            PM.product("pm-flourine"):amount(3):chance(0.95):catalyst(3):done()
         }
     },
 })

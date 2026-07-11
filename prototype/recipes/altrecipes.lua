@@ -16,7 +16,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-circuit-mold", 2)
+      PM.product("pm-circuit-mold"):amount(2):done()
     }
   },
   {
@@ -38,8 +38,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-electronic-breadboard-mold", 1),
-      PM.product("pm-electronic-breadboard", 1)
+      PM.product("pm-electronic-breadboard-mold"):amount(1):done(),
+      PM.product("pm-electronic-breadboard"):amount(1):done()
     }
   },
   {
@@ -60,8 +60,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-electronic-breadboard-mold", 1, 0.7),
-      PM.product("pm-electronic-breadboard", 2)
+      PM.product("pm-electronic-breadboard-mold"):amount(1):chance(0.7):done(),
+      PM.product("pm-electronic-breadboard"):amount(2):done()
     },
   },
   {
@@ -83,8 +83,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fluid-breadboard-mold", 1),
-      PM.product("pm-fluid-breadboard", 1)
+      PM.product("pm-fluid-breadboard-mold"):amount(1):done(),
+      PM.product("pm-fluid-breadboard"):amount(1):done()
     }
   },
   {
@@ -105,8 +105,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-fluid-breadboard-mold", 1, 0.6),
-      PM.product("pm-fluid-breadboard", 2)
+      PM.product("pm-fluid-breadboard-mold"):amount(1):chance(0.6):done(),
+      PM.product("pm-fluid-breadboard"):amount(2):done()
     },
   },
   {
@@ -128,8 +128,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-breadboard-mold", 1),
-      PM.product("pm-advanced-circuit-breadboard", 1)
+      PM.product("pm-advanced-breadboard-mold"):amount(1):done(),
+      PM.product("pm-advanced-circuit-breadboard"):amount(1):done()
     }
   },
   {
@@ -151,8 +151,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-advanced-breadboard-mold", 1, 0.5),
-      PM.product("pm-advanced-circuit-breadboard", 2)
+      PM.product("pm-advanced-breadboard-mold"):amount(1):chance(0.5):done(),
+      PM.product("pm-advanced-circuit-breadboard"):amount(2):done()
     },
   },
   {
@@ -174,8 +174,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-processing-breadboard-mold", 1),
-      PM.product("pm-processing-breadboard", 1)
+      PM.product("pm-processing-breadboard-mold"):amount(1):done(),
+      PM.product("pm-processing-breadboard"):amount(1):done()
     }
   },
   {
@@ -199,8 +199,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-processing-breadboard-mold", 1, 0.4),
-      PM.product("pm-processing-breadboard", 2)
+      PM.product("pm-processing-breadboard-mold"):amount(1):chance(0.4):done(),
+      PM.product("pm-processing-breadboard"):amount(2):done()
     },
   },
   
@@ -221,8 +221,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-acidic-water", 50, "fluid"),
-      PM.product_range("sulfur", {2, 5})
+      PM.product("pm-acidic-water", "fluid"):amount(50):done(),
+      PM.product("sulfur"):amount(2, 5):done()
     }
   },
   {
@@ -248,8 +248,8 @@ data:extend({
     },
     results =
     {
-      PM.product("water", 50, "fluid"),
-      PM.product_range("sulfur", {2, 5})
+      PM.product("water", "fluid"):amount(50):done(),
+      PM.product("sulfur"):amount(2, 5):done()
     }
   },
 
@@ -270,7 +270,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-integrated-circuit-mold", 3)
+      PM.product("pm-integrated-circuit-mold"):amount(3):done()
     }
   },
   {
@@ -291,8 +291,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-electronic-integrated-circuit-mold", 3),
-      PM.product_range("pm-electronic-integrated-circuits", {2, 3})
+      PM.product("pm-electronic-integrated-circuit-mold"):amount(3):done(),
+      PM.product("pm-electronic-integrated-circuits"):amount(2, 3):done()
     }
   },
   {
@@ -313,8 +313,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-electronic-integrated-circuit-mold", 3, 0.6),
-      PM.product("pm-electronic-integrated-circuits", 3)
+      PM.product("pm-electronic-integrated-circuit-mold"):amount(3):chance(0.6):done(),
+      PM.product("pm-electronic-integrated-circuits"):amount(3):done()
     },
   },
   {
@@ -335,8 +335,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fluid-integrated-circuit-mold", 3),
-      PM.product_range("pm-fluid-integrated-circuits", {2, 3})
+      PM.product("pm-fluid-integrated-circuit-mold"):amount(3):done(),
+      PM.product("pm-fluid-integrated-circuits"):amount(2, 3):done()
     }
   },
   {
@@ -357,8 +357,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-fluid-integrated-circuit-mold", 3, 0.5),
-      PM.product("pm-fluid-integrated-circuits", 3)
+      PM.product("pm-fluid-integrated-circuit-mold"):amount(3):chance(0.5):done(),
+      PM.product("pm-fluid-integrated-circuits"):amount(3):done()
     },
   },
   {
@@ -379,8 +379,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-integrated-circuit-mold", 3),
-      PM.product_range("pm-advanced-integrated-circuits", {2, 3})
+      PM.product("pm-advanced-integrated-circuit-mold"):amount(3):done(),
+      PM.product("pm-advanced-integrated-circuits"):amount(2, 3):done()
     }
   },
   {
@@ -401,8 +401,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-advanced-integrated-circuit-mold", 3, 0.4),
-      PM.product("pm-advanced-integrated-circuits", 3)
+      PM.product("pm-advanced-integrated-circuit-mold"):amount(3):chance(0.4):done(),
+      PM.product("pm-advanced-integrated-circuits"):amount(3):done()
     },
   },
   {
@@ -423,8 +423,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-processing-integrated-circuit-mold", 3),
-      PM.product_range("pm-processing-integrated-circuits", {2, 3})
+      PM.product("pm-processing-integrated-circuit-mold"):amount(3):done(),
+      PM.product("pm-processing-integrated-circuits"):amount(2, 3):done()
     }
   },
   {
@@ -445,8 +445,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-processing-integrated-circuit-mold", 3, 0.3),
-      PM.product("pm-processing-integrated-circuits", 3)
+      PM.product("pm-processing-integrated-circuit-mold"):amount(3):chance(0.3):done(),
+      PM.product("pm-processing-integrated-circuits"):amount(3):done()
     },
   },
   {
@@ -466,10 +466,10 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-carbon-monoxide", 40, "fluid"),
-      PM.catalyst("pm-zirconia", 2, 2),
-      PM.catalyst("pm-bismuth-ore", 2, 2), 
-      PM.product("pm-oxygen-gas", 20, "fluid")
+      PM.product("pm-carbon-monoxide", "fluid"):amount(40):done(),
+      PM.product("pm-zirconia"):amount(2):catalyst(2):done(),
+      PM.product("pm-bismuth-ore"):amount(2):catalyst(2):done(), 
+      PM.product("pm-oxygen-gas", "fluid"):amount(20):done()
     }
   },
 } --[[@as data.RecipePrototype[] ]])

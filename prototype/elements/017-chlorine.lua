@@ -99,7 +99,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chlorine-air-filter", 1)
+      PM.product("pm-chlorine-air-filter"):amount(1):done()
     }
   },
   {
@@ -120,7 +120,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-chlorine-air-filter", 1)
+      PM.product("pm-advanced-chlorine-air-filter"):amount(1):done()
     }
   },
   {
@@ -139,7 +139,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chlorine", 25, "fluid")
+      PM.product("pm-chlorine", "fluid"):amount(25):done()
     }
   },
   {
@@ -160,7 +160,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chlorine", 50, "fluid")
+      PM.product("pm-chlorine", "fluid"):amount(50):done()
     }
   },
   {
@@ -197,8 +197,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sea-salt", 4),
-      PM.product("water", 25, "fluid")
+      PM.product("pm-sea-salt"):amount(4):done(),
+      PM.product("water", "fluid"):amount(25):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -217,9 +217,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chlorine", 5, "fluid"),
-      PM.product("pm-hydrogen-gas", 10, "fluid"),
-      PM.product_range("pm-solid-sodium-hydroxide", {0, 2})
+      PM.product("pm-chlorine", "fluid"):amount(5):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(10):done(),
+      PM.product("pm-solid-sodium-hydroxide"):amount(0, 2):done()
     }
   },
   {
@@ -241,8 +241,8 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-seawater", 12.5, "fluid"),
-        PM.product_range("pm-sodium", {1, 3})
+        PM.product("pm-seawater", "fluid"):amount(12.5):done(),
+        PM.product("pm-sodium"):amount(1, 3):done()
     }
   },
   {
@@ -262,8 +262,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-chlorine", 5, "fluid"),
-        PM.product("pm-solid-sodium-hydroxide", 2)
+        PM.product("pm-chlorine", "fluid"):amount(5):done(),
+        PM.product("pm-solid-sodium-hydroxide"):amount(2):done()
     }
   },
   {
@@ -289,7 +289,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-hydrochloric-acid", 5, "fluid")
+      PM.product("pm-hydrochloric-acid", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -309,9 +309,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-calcium-chloride", {0, 3}, 0.5),
-      PM.product_range("pm-hydrogen-gas", {14, 20}, "fluid"),
-      PM.product_range("pm-chlorine", {8, 16}, "fluid")
+      PM.product("pm-calcium-chloride"):amount(0, 3):chance(0.5):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(14, 20):done(),
+      PM.product("pm-chlorine", "fluid"):amount(8, 16):done()
     }
   },
   
@@ -337,7 +337,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-methyl-chloride", 10, "fluid")
+      PM.product("pm-methyl-chloride", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -364,8 +364,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-chlorine", {8, 12}, "fluid"),
-      PM.product_range("pm-chloroform", {6, 12}, "fluid")
+      PM.product("pm-chlorine", "fluid"):amount(8, 12):done(),
+      PM.product("pm-chloroform", "fluid"):amount(6, 12):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -380,7 +380,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-liquid-chlorine", 1, "fluid")
+        PM.product("pm-liquid-chlorine", "fluid"):amount(1):done()
     }
   },
   

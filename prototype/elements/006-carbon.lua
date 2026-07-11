@@ -34,7 +34,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-carbon-dioxide-air-filter", 1)
+          PM.product("pm-carbon-dioxide-air-filter"):amount(1):done()
         }
     },
     {
@@ -55,7 +55,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-advanced-carbon-dioxide-air-filter", 1)
+          PM.product("pm-advanced-carbon-dioxide-air-filter"):amount(1):done()
         }
       },
     {
@@ -74,7 +74,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-carbon-dioxide-gas", 25, "fluid")
+          PM.product("pm-carbon-dioxide-gas", "fluid"):amount(25):done()
         }
     },
     {
@@ -95,7 +95,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-carbon-dioxide-gas", 50, "fluid")
+          PM.product("pm-carbon-dioxide-gas", "fluid"):amount(50):done()
         }
     },
     {
@@ -148,8 +148,8 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-oxygen-gas", 20, "fluid", 1),
-          PM.product("pm-carbon", 10)
+          PM.product("pm-oxygen-gas", "fluid"):amount(20):index(1):done(),
+          PM.product("pm-carbon"):amount(10):done()
         }
     },
     {
@@ -168,8 +168,8 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-oxygen-gas", 20, "fluid", 1),
-          PM.product("pm-carbon-dioxide-gas", 10, "fluid", 2)
+          PM.product("pm-oxygen-gas", "fluid"):amount(20):index(1):done(),
+          PM.product("pm-carbon-dioxide-gas", "fluid"):amount(10):index(2):done()
         }
     },
     {
@@ -192,7 +192,7 @@ data:extend({
       },
       results = 
       {
-        PM.product_range("pm-carbon-dioxide-gas", {8, 10}, "fluid"),
+        PM.product("pm-carbon-dioxide-gas", "fluid"):amount(8, 10):done(),
       }
     }
 })

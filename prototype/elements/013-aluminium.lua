@@ -84,7 +84,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-bauxite", 6),
+      PM.product("pm-bauxite"):amount(6):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -102,7 +102,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bauxite-powder", {10, 14})
+      PM.product("pm-bauxite-powder"):amount(10, 14):done()
     }
   },
   {
@@ -126,8 +126,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-aluminium-hydroxide-slurry", 12, "fluid"),
-      PM.product_range("steam", {10, 20}, "fluid")
+      PM.product("pm-aluminium-hydroxide-slurry", "fluid"):amount(12):done(),
+      PM.product("steam", "fluid"):amount(10, 20):done()
     }
   },
   {
@@ -145,7 +145,7 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-aluminium-ore", {4, 6})
+      PM.product("pm-aluminium-ore"):amount(4, 6):done()
     }
   },
 
@@ -185,7 +185,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-bauxite", 8),
+      PM.product("pm-bauxite"):amount(8):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -199,7 +199,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-aluminium-ore", 1) },
     results = {
-      PM.product("pm-aluminium-plate", 1)
+      PM.product("pm-aluminium-plate"):amount(1):done()
     }
   },
   {
@@ -233,7 +233,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-aluminium", 5, "fluid")
+      PM.product("pm-molten-aluminium", "fluid"):amount(5):done()
     }
   },
   {
@@ -254,8 +254,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-aluminium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-aluminium-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

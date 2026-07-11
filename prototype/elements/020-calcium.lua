@@ -153,9 +153,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-calcite", 4),
-      PM.product_range_chance("pm-sea-salt", {0, 6}, 0.75),
-      PM.product("water", 10, "fluid")
+      PM.product("pm-calcite"):amount(4):done(),
+      PM.product("pm-sea-salt"):amount(0, 6):chance(0.75):done(),
+      PM.product("water", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -173,7 +173,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-calcium-dust", 8)
+      PM.product("pm-calcium-dust"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -193,8 +193,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-calcium-ore", 2),
-      PM.product_chance("pm-carbon", 1, 0.5)
+      PM.product("pm-calcium-ore"):amount(2):done(),
+      PM.product("pm-carbon"):amount(1):chance(0.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -214,8 +214,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-mixed-calcium-rock", {4, 6}),
-      PM.product_range_chance("pm-calcium-sulfate", {1, 2}, 0.15)
+      PM.product("pm-mixed-calcium-rock"):amount(4, 6):done(),
+      PM.product("pm-calcium-sulfate"):amount(1, 2):chance(0.15):done()
     }
   },
   {
@@ -239,7 +239,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-calcium-hydroxide-slurry", 20, "fluid")
+      PM.product("pm-calcium-hydroxide-slurry", "fluid"):amount(20):done()
     }
   },
   {
@@ -258,7 +258,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-calcite", 6)
+      PM.product("pm-calcite"):amount(6):done()
     }
   },
   {
@@ -278,9 +278,9 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-calcium-oxide", 4),
-      PM.product_range("pm-carbon-dioxide-gas", {8, 20}, "fluid"),
-      PM.product_range("pm-flux-container", {1, 2})
+      PM.product("pm-calcium-oxide"):amount(4):done(),
+      PM.product("pm-carbon-dioxide-gas", "fluid"):amount(8, 20):done(),
+      PM.product("pm-flux-container"):amount(1, 2):done()
     }
   },
   {
@@ -300,8 +300,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-aluminium-plate", 10),
-      PM.product_range("pm-calcium-ore", {3, 8})
+      PM.product("pm-aluminium-plate"):amount(10):done(),
+      PM.product("pm-calcium-ore"):amount(3, 8):done()
     }
   },
   {
@@ -325,7 +325,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-calcium-sulfate-slurry", 20, "fluid")
+      PM.product("pm-calcium-sulfate-slurry", "fluid"):amount(20):done()
     }
   },
   {
@@ -344,9 +344,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-calcium-sulfate-chunks", {5, 10}),
-      PM.product("pm-hot-coolant", 5, "fluid"),
-      PM.product_range_chance("sulfur", {0, 8}, 0.75)
+      PM.product("pm-calcium-sulfate-chunks"):amount(5, 10):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(5):done(),
+      PM.product("sulfur"):amount(0, 8):chance(0.75):done()
     }
   },
   {
@@ -378,9 +378,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-calcium-sulfate-chunks", 10),
-      PM.product("pm-hot-coolant", 2.5, "fluid"),
-      PM.product_range_chance("sulfur", {0, 4}, 0.75)
+      PM.product("pm-calcium-sulfate-chunks"):amount(10):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(2.5):done(),
+      PM.product("sulfur"):amount(0, 4):chance(0.75):done()
     }
   },
   {
@@ -399,9 +399,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-calcium-sulfate", {5, 10}),
-      PM.product_range("stone", {0, 8}),
-      PM.product_range_chance("pm-calcium-dust", {0, 8}, 0.75)
+      PM.product("pm-calcium-sulfate"):amount(5, 10):done(),
+      PM.product("stone"):amount(0, 8):done(),
+      PM.product("pm-calcium-dust"):amount(0, 8):chance(0.75):done()
     }
   },
   {
@@ -421,8 +421,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("water", {25, 30}, "fluid"),
-      PM.product_range("pm-seawater", {0, 5}, "fluid")
+      PM.product("water", "fluid"):amount(25, 30):done(),
+      PM.product("pm-seawater", "fluid"):amount(0, 5):done()
     }
   }
 

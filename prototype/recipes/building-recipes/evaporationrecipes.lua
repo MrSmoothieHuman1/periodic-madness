@@ -15,9 +15,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("sulfur", {1, 2}),
-      PM.product("water", 25, "fluid"),
-      PM.product("pm-sea-salt", 2)
+      PM.product("sulfur"):amount(1, 2):done(),
+      PM.product("water", "fluid"):amount(25):done(),
+      PM.product("pm-sea-salt"):amount(2):done()
     }
   },
   {
@@ -37,7 +37,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-seawater", 15, "fluid")
+        PM.product("pm-seawater", "fluid"):amount(15):done()
     }
   },
   {
@@ -148,7 +148,7 @@ data:extend({
     },
     results =
     {
-      PM.product("water", 1, "fluid")
+      PM.product("water", "fluid"):amount(1):done()
     }
   },
 } --[[@as data.RecipePrototype[] ]])

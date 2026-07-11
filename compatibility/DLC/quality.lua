@@ -139,7 +139,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-aluminium-gallium-arsenide", 6)
+            PM.product("pm-aluminium-gallium-arsenide"):amount(6):done()
         }
     },
     {
@@ -158,7 +158,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-module-quality-light", 1)
+            PM.product("pm-module-quality-light"):amount(1):done()
         }
     },
 
@@ -178,7 +178,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-quality-module-4", 1)
+            PM.product("pm-quality-module-4"):amount(1):done()
         }
     }
 })

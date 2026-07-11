@@ -39,7 +39,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-xenon-air-filter", 2)
+        PM.product("pm-xenon-air-filter"):amount(2):done()
     }
   },
   {
@@ -56,9 +56,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-xenon-gas", 7.5, "fluid"),
-        PM.product_chance("pm-trace-gas", 15, 0.5, "fluid"),
-        PM.catalyst_chance("pm-xenon-air-filter", 1, 0.5, 1)
+        PM.product("pm-xenon-gas", "fluid"):amount(7.5):done(),
+        PM.product("pm-trace-gas", "fluid"):amount(15):chance(0.5):done(),
+        PM.product("pm-xenon-air-filter"):amount(1):chance(0.5):catalyst(1):done()
     }
   },
 {
@@ -90,9 +90,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-industrial-noble-gas", 5, "fluid"),
-        PM.product_chance("pm-yttrium-catalyst", 2, 0.9),
-        PM.product_chance("pm-catalyst-container", 2, 0.1)
+        PM.product("pm-industrial-noble-gas", "fluid"):amount(5):done(),
+        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.9):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0.1):done()
     }
 },
 {

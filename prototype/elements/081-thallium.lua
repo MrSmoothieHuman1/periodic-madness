@@ -68,8 +68,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lorandite", 6),
-      PM.product_chance("sulfur", 2, 0.75)
+      PM.product("pm-lorandite"):amount(6):done(),
+      PM.product("sulfur"):amount(2):chance(0.75):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -97,9 +97,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-thallium-sulfate", 8),
-      PM.product_range_chance("pm-arsenic-ore", {0, 3}, 0.66),
-      PM.catalyst_range("copper-ore", {4, 6}, 3)
+      PM.product("pm-thallium-sulfate"):amount(8):done(),
+      PM.product("pm-arsenic-ore"):amount(0, 3):chance(0.66):done(),
+      PM.product("copper-ore"):amount(4, 6):catalyst(3):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -119,8 +119,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-thallium-ore", 2),
-      PM.product_range("sulfur", {1, 2})
+      PM.product("pm-thallium-ore"):amount(2):done(),
+      PM.product("sulfur"):amount(1, 2):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -134,7 +134,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-thallium-ore", 1) },
     results = {
-      PM.product("pm-thallium-plate", 1)
+      PM.product("pm-thallium-plate"):amount(1):done()
     }
   },
   {
@@ -168,7 +168,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-thallium", 5, "fluid")
+      PM.product("pm-molten-thallium", "fluid"):amount(5):done()
     }
   },
   {
@@ -189,8 +189,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-thallium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-thallium-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

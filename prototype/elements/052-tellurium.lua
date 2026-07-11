@@ -61,7 +61,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-sludge", 8, "fluid")
+      PM.product("pm-copper-sludge", "fluid"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -80,10 +80,10 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium-tellurite", 4),
-      PM.product_range("pm-carbon-trioxide", {4, 8}, "fluid"),
-      PM.product_range_chance("copper-ore", {2, 5}, 0.3),
-      PM.product_range_chance("pm-silver-ore", {2, 5}, 0.6),
+      PM.product("pm-sodium-tellurite"):amount(4):done(),
+      PM.product("pm-carbon-trioxide", "fluid"):amount(4, 8):done(),
+      PM.product("copper-ore"):amount(2, 5):chance(0.3):done(),
+      PM.product("pm-silver-ore"):amount(2, 5):chance(0.6):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -102,10 +102,10 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium-tellurite", 6),
-      PM.product("pm-carbon-dioxide-gas", 6, "fluid"),
-      PM.product_range_chance("copper-ore", {2, 5}, 0.7),
-      PM.product_range_chance("pm-gold-ore", {2, 5}, 0.2),
+      PM.product("pm-sodium-tellurite"):amount(6):done(),
+      PM.product("pm-carbon-dioxide-gas", "fluid"):amount(6):done(),
+      PM.product("copper-ore"):amount(2, 5):chance(0.7):done(),
+      PM.product("pm-gold-ore"):amount(2, 5):chance(0.2):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -124,8 +124,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tellurium-oxide", 6),
-      PM.product("pm-sulfur-dioxide", 15, "fluid")
+      PM.product("pm-tellurium-oxide"):amount(6):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(15):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -146,8 +146,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tellurium-ore", 6),
-      PM.product("sulfuric-acid", 7.5, "fluid")
+      PM.product("pm-tellurium-ore"):amount(6):done(),
+      PM.product("sulfuric-acid", "fluid"):amount(7.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -161,7 +161,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-tellurium-ore", 1) },
     results = {
-      PM.product("pm-tellurium-plate", 1)
+      PM.product("pm-tellurium-plate"):amount(1):done()
     }
   },
 })

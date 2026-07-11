@@ -33,8 +33,8 @@ data:extend{
 		icons = {util.empty_icon()},
 		-- main_product = "pm-liquid-heat",
 		results = {
-			PM.product("pm-liquid-heat", 10, "fluid", 2),
-			PM.product("steam", 1, "fluid", 3),
+			PM.product("pm-liquid-heat", "fluid"):amount(10):index(2):done(),
+			PM.product("steam", "fluid"):amount(1):index(3):done(),
 		}
 	}--[[@as data.RecipePrototype]],
 	{
@@ -51,8 +51,8 @@ data:extend{
 		icons = {util.empty_icon()},
 		-- main_product = "pm-liquid-heat",
 		results = {
-			PM.product("pm-liquid-heat", 10, "fluid", 2),
-			PM.product("pm-hot-coolant", 0.1, "fluid", 3),
+			PM.product("pm-liquid-heat", "fluid"):amount(10):index(2):done(),
+			PM.product("pm-hot-coolant", "fluid"):amount(0.1):index(3):done(),
 		}
 	}--[[@as data.RecipePrototype]],
 		{
@@ -69,8 +69,8 @@ data:extend{
 		icons = {util.empty_icon()},
 		-- main_product = "pm-liquid-heat",
 		results = {
-			PM.product("pm-liquid-heat", 10, "fluid", 2),
-			PM.product("pm-hot-light-coolant", 0.1, "fluid", 3),
+			PM.product("pm-liquid-heat", "fluid"):amount(10):index(2):done(),
+			PM.product("pm-hot-light-coolant", "fluid"):amount(0.1):index(3):done(),
 		}
 	}--[[@as data.RecipePrototype]],
 	{

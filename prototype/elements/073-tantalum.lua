@@ -101,7 +101,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-coltan", 4)
+            PM.product("pm-coltan"):amount(4):done()
         }
     },
     {
@@ -119,7 +119,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-coltan-powder", 10)
+            PM.product("pm-coltan-powder"):amount(10):done()
         }
     },
     {
@@ -143,7 +143,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-tantalite-niobite-tailings", 15, "fluid")
+            PM.product("pm-tantalite-niobite-tailings", "fluid"):amount(15):done()
         }
     },
 
@@ -166,9 +166,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-tantalite-oxide", 5),
-            PM.product_chance("pm-catalyst-container", 2, 0.2),
-            PM.product_chance("pm-cobalt-catalyst", 2, 0.8)
+            PM.product("pm-tantalite-oxide"):amount(5):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.2):done(),
+            PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8):done()
         }
     },
     {
@@ -189,8 +189,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-tantalum-ore", 3),
-            PM.product_chance("pm-niobium-ore", 3, 0.5)
+            PM.product("pm-tantalum-ore"):amount(3):done(),
+            PM.product("pm-niobium-ore"):amount(3):chance(0.5):done()
         }
     },
     {
@@ -208,7 +208,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-tantalum-plate", 1)
+            PM.product("pm-tantalum-plate"):amount(1):done()
         }
     },
 
@@ -233,7 +233,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-niobite-waste-water", 7.5, "fluid")
+          PM.product("pm-niobite-waste-water", "fluid"):amount(7.5):done()
         }
     },
     {
@@ -257,8 +257,8 @@ data:extend({
         },
         results =
         {
-          PM.product_chance("pm-niobite-waste-water", 7.5, 0.75,"fluid"),
-          PM.product_chance("water", 10, 0.25, "fluid")
+          PM.product("pm-niobite-waste-water", "fluid"):amount(7.5):chance(0.75):done(),
+          PM.product("water", "fluid"):amount(10):chance(0.25):done()
         }
     },
 })

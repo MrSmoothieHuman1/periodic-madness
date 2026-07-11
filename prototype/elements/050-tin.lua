@@ -104,7 +104,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-cassiterite", 2),
+      PM.product("pm-cassiterite"):amount(2):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -124,7 +124,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tin-chunks", 4),
+      PM.product("pm-tin-chunks"):amount(4):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -155,8 +155,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-black-tin", 4),
-      PM.product("pm-white-tin", 4),
+      PM.product("pm-black-tin"):amount(4):done(),
+      PM.product("pm-white-tin"):amount(4):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -177,8 +177,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tin-ore", 6),
-      PM.product("pm-cassiterite", 1)
+      PM.product("pm-tin-ore"):amount(6):done(),
+      PM.product("pm-cassiterite"):amount(1):done()
     }
   } --[[@as data.RecipePrototype]],
   -- tin plate is order f
@@ -218,7 +218,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-cassiterite", 4),
+      PM.product("pm-cassiterite"):amount(4):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -232,7 +232,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-tin-ore", 1) },
     results = {
-      PM.product("pm-tin-plate", 1)
+      PM.product("pm-tin-plate"):amount(1):done()
     }
   },
   {
@@ -266,7 +266,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-tin", 5, "fluid")
+      PM.product("pm-molten-tin", "fluid"):amount(5):done()
     }
   },
   {
@@ -287,8 +287,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tin-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-tin-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

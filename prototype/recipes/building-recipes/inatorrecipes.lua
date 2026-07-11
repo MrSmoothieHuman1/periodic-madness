@@ -16,7 +16,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-molten-cadmium-telluride", 2, "fluid")
+      PM.product("pm-molten-cadmium-telluride", "fluid"):amount(2):done()
     }
   },
   {
@@ -33,8 +33,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-cadmium-telluride", 1),
-      PM.product_chance("pm-cadmium-telluride", 1, 0.5),
+      PM.product("pm-cadmium-telluride"):amount(1):done(),
+      PM.product("pm-cadmium-telluride"):amount(1):chance(0.5):done(),
     }
   },
   {
@@ -54,7 +54,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-uhrlumin-precursor-alloy", 5, "fluid")
+      PM.product("pm-molten-uhrlumin-precursor-alloy", "fluid"):amount(5):done()
     }
   },
   {
@@ -88,8 +88,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-uhrlumin-precursor-alloy", 10, "fluid"),
-      PM.catalyst("pm-industrial-noble-gas", 7.5, 7.5, "fluid")
+      PM.product("pm-molten-uhrlumin-precursor-alloy", "fluid"):amount(10):done(),
+      PM.product("pm-industrial-noble-gas", "fluid"):amount(7.5):catalyst(7.5):done()
     }
   },
   {
@@ -107,7 +107,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-uhrlumin-precursor-billet", 5)
+      PM.product("pm-uhrlumin-precursor-billet"):amount(5):done()
     }
   },
   {
@@ -128,8 +128,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-molten-uhrlumin", 10, "fluid"),
-      PM.catalyst("pm-flux-container", 2, 2)
+      PM.product("pm-molten-uhrlumin", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(2):catalyst(2):done()
     }
   },
   {
@@ -149,8 +149,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-uhrlumin-plate", 5),
-      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+      PM.product("pm-uhrlumin-plate"):amount(5):done(),
+      PM.product("pm-crucible"):amount(2):chance(0.75):catalyst(2):done()
     }
   },
   {
@@ -168,7 +168,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-inconel-625-precursor-alloy", 5, "fluid")
+      PM.product("pm-inconel-625-precursor-alloy", "fluid"):amount(5):done()
     }
   },
   {
@@ -202,8 +202,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-inconel-625-precursor-alloy", 10, "fluid"),
-      PM.catalyst("pm-industrial-noble-gas", 7.5, 7.5, "fluid")
+      PM.product("pm-inconel-625-precursor-alloy", "fluid"):amount(10):done(),
+      PM.product("pm-industrial-noble-gas", "fluid"):amount(7.5):catalyst(7.5):done()
     }
   },
   {
@@ -219,7 +219,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-inconel-625-precursor-billet", 5)
+      PM.product("pm-inconel-625-precursor-billet"):amount(5):done()
     }
   },
   {
@@ -238,8 +238,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-inconel-625", 10, "fluid"),
-      PM.catalyst("pm-flux-container", 2, 2)
+      PM.product("pm-molten-inconel-625", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(2):catalyst(2):done()
     }
   },
   {
@@ -257,8 +257,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-inconel-625-plate", 5),
-      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+      PM.product("pm-inconel-625-plate"):amount(5):done(),
+      PM.product("pm-crucible"):amount(2):chance(0.75):catalyst(2):done()
     }
   },
   {
@@ -276,7 +276,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sterling-silver-precursor-alloy", 5, "fluid")
+      PM.product("pm-sterling-silver-precursor-alloy", "fluid"):amount(5):done()
     }
   },
   {
@@ -292,7 +292,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sterling-silver-precursor-billet", 5)
+      PM.product("pm-sterling-silver-precursor-billet"):amount(5):done()
     }
   },
   {
@@ -312,8 +312,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-sterling-silver", 10, "fluid"),
-      PM.product_chance("pm-flux-container", 2, 0.66)
+      PM.product("pm-molten-sterling-silver", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(2):chance(0.66):done()
     }
   },
   {
@@ -332,9 +332,9 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sterling-silver-plate", 5),
-      PM.catalyst_chance("pm-crucible", 2, 0.75, 2),
-      PM.catalyst("pm-industrial-noble-gas", 7.5, 7.5, "fluid")
+      PM.product("pm-sterling-silver-plate"):amount(5):done(),
+      PM.product("pm-crucible"):amount(2):chance(0.75):catalyst(2):done(),
+      PM.product("pm-industrial-noble-gas", "fluid"):amount(7.5):catalyst(7.5):done()
     }
   },
   {
@@ -353,7 +353,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-C103-precursor", 5, "fluid")
+        PM.product("pm-molten-C103-precursor", "fluid"):amount(5):done()
     }
   },
   {
@@ -388,7 +388,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-C103", 20, "fluid"),
+        PM.product("pm-molten-C103", "fluid"):amount(20):done(),
         PM.ingredient("pm-industrial-noble-gas", 10, "fluid"),
     }
   },
@@ -424,7 +424,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-C103", 20, "fluid"),
+        PM.product("pm-molten-C103", "fluid"):amount(20):done(),
         PM.ingredient("pm-industrial-noble-gas", 10, "fluid"),
     }
   },
@@ -443,8 +443,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-C103-plate", 5),
-      PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+      PM.product("pm-C103-plate"):amount(5):done(),
+      PM.product("pm-crucible"):amount(2):chance(0.75):catalyst(2):done()
     }
   },
   {
@@ -468,7 +468,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-yellow-high-density-structure-alloy", 7.5, "fluid")
+        PM.product("pm-molten-yellow-high-density-structure-alloy", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -492,7 +492,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-blue-high-density-structure-alloy", 7.5, "fluid")
+        PM.product("pm-molten-blue-high-density-structure-alloy", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -510,8 +510,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-high-density-structure-mixture", 20, "fluid"),
-        PM.product_chance("pm-flux-container", 2, 0.66)
+        PM.product("pm-molten-high-density-structure-mixture", "fluid"):amount(20):done(),
+        PM.product("pm-flux-container"):amount(2):chance(0.66):done()
     }
   },
   {
@@ -529,7 +529,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-molten-ReBCO-precursor-alloy", 10, "fluid")
+        PM.product("pm-molten-ReBCO-precursor-alloy", "fluid"):amount(10):done()
     }
   },
   {
@@ -545,7 +545,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-ReBCO-precursor-billet", 10)
+        PM.product("pm-ReBCO-precursor-billet"):amount(10):done()
     }
   },
   {
@@ -564,8 +564,8 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-molten-ReBCO", 10, "fluid"),
-        PM.catalyst("pm-flux-container", 2, 2)
+        PM.product("pm-molten-ReBCO", "fluid"):amount(10):done(),
+        PM.product("pm-flux-container"):amount(2):catalyst(2):done()
     }
   },
   {
@@ -583,8 +583,8 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-ReBCO", 2),
-        PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+        PM.product("pm-ReBCO"):amount(2):done(),
+        PM.product("pm-crucible"):amount(2):chance(0.75):catalyst(2):done()
     }
   },
   {
@@ -603,7 +603,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-potassium-salts", 12, "fluid")
+      PM.product("pm-molten-potassium-salts", "fluid"):amount(12):done()
     }
   },
   {
@@ -632,7 +632,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-glass-pane", 4)
+      PM.product("pm-glass-pane"):amount(4):done()
     }
   },
   {
@@ -668,7 +668,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-borosilicate-glass", 7.5, "fluid")
+      PM.product("pm-molten-borosilicate-glass", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -688,8 +688,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-borosilicate-glass", 5),
-      PM.product_range("pm-crucible", {1, 2})
+      PM.product("pm-borosilicate-glass"):amount(5):done(),
+      PM.product("pm-crucible"):amount(1, 2):done()
     }
   },
   {
@@ -718,8 +718,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-glass-fibers", 15),
-      PM.product_chance("pm-flux-container", 1, 0.9),
+      PM.product("pm-glass-fibers"):amount(15):done(),
+      PM.product("pm-flux-container"):amount(1):chance(0.9):done(),
     }
   },
   {
@@ -737,7 +737,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-titanium-sapphire", 2)
+      PM.product("pm-titanium-sapphire"):amount(2):done()
     }
   },
   {
@@ -755,7 +755,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-strontium-glass", 5, "fluid")
+      PM.product("pm-molten-strontium-glass", "fluid"):amount(5):done()
     }
   },
   {
@@ -771,7 +771,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-strontium-glass", 3)
+      PM.product("pm-strontium-glass"):amount(3):done()
     }
   },
   {
@@ -786,7 +786,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-solid-mercury", 1)
+      PM.product("pm-solid-mercury"):amount(1):done()
     }
   },
   {
@@ -803,7 +803,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-liquid-mercury", 10, "fluid")
+      PM.product("pm-liquid-mercury", "fluid"):amount(10):done()
     }
   },
 
@@ -838,7 +838,7 @@ data:extend({
     },
     results =
     {
-      PM.product("copper-cable", 15)
+      PM.product("copper-cable"):amount(15):done()
     }
   },
   {
@@ -873,7 +873,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-gold-wire", 15)
+      PM.product("pm-gold-wire"):amount(15):done()
     }
   },
   {
@@ -907,7 +907,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-indium-wire", 15)
+      PM.product("pm-indium-wire"):amount(15):done()
     }
   },
   {
@@ -942,7 +942,7 @@ data:extend({
     },
     results =
     {
-      PM.product("iron-gear-wheel", 5)
+      PM.product("iron-gear-wheel"):amount(5):done()
     }
   },
   {
@@ -977,7 +977,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-brass-cog", 5)
+      PM.product("pm-brass-cog"):amount(5):done()
     }
   },
   {
@@ -1012,8 +1012,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-molten-glass", {3, 5}, "fluid"),
-      PM.product_range("pm-glass-shards", {4, 6})
+      PM.product("pm-molten-glass", "fluid"):amount(3, 5):done(),
+      PM.product("pm-glass-shards"):amount(4, 6):done()
     }
   },
   {
@@ -1047,12 +1047,12 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-glass", 5, "fluid"),     --im sweating tf out URGHHH literally
+      PM.product("pm-molten-glass", "fluid"):amount(5):done(),     --im sweating tf out URGHHH literally
       --the amount o time i spent staring at my code in disgust is TOO damn long
       -- fr!! comments, who needs those? i just Dont Stop.
       --tbf when i worked on my first game in unity the ariable for ground detection was called "GroundDontHurtMeNoMo"
       --least its memorable
-      PM.product("pm-tin-plate", 20)
+      PM.product("pm-tin-plate"):amount(20):done()
     }
   },
 
@@ -1075,8 +1075,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-glass-pane", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-glass-pane"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 
@@ -1113,7 +1113,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-solder", 10, "fluid")
+      PM.product("pm-molten-solder", "fluid"):amount(10):done()
     }
   },
   {
@@ -1149,7 +1149,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-solder", 20, "fluid")
+      PM.product("pm-molten-solder", "fluid"):amount(20):done()
     }
   },
   {
@@ -1172,8 +1172,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-solder", 10, "fluid"),
-      PM.product_range_chance("pm-polonium-210", {0, 2}, 0.25)
+      PM.product("pm-molten-solder", "fluid"):amount(10):done(),
+      PM.product("pm-polonium-210"):amount(0, 2):chance(0.25):done()
     }
   },
   {
@@ -1195,8 +1195,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-solder", 10, "fluid"),
-      PM.product_range("pm-flux-container", {1, 2}),
+      PM.product("pm-molten-solder", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(1, 2):done(),
     }
   },
   {
@@ -1218,8 +1218,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solder-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-solder-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
   {
@@ -1254,8 +1254,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-steel", 10, "fluid"),
-      PM.product_range("pm-flux-container", {1, 2}),
+      PM.product("pm-molten-steel", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(1, 2):done(),
     }
   },
   {
@@ -1276,8 +1276,8 @@ data:extend({
     },
     results =
     {
-      PM.product("steel-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("steel-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
   {
@@ -1313,8 +1313,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-brass", 10, "fluid"),
-      PM.product_range("pm-flux-container", {1, 2}),
+      PM.product("pm-molten-brass", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(1, 2):done(),
     }
   },
   {
@@ -1335,8 +1335,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-brass-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-brass-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
   {
@@ -1372,8 +1372,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-stainless-steel", 10, "fluid"),
-      PM.product_range("pm-flux-container", {1, 2}),
+      PM.product("pm-molten-stainless-steel", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(1, 2):done(),
     }
   },
   {
@@ -1394,8 +1394,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-stainless-steel-alloy", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-stainless-steel-alloy"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
   {
@@ -1430,8 +1430,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-kasethal", 10, "fluid"),
-      PM.product_range("pm-flux-container", {1, 2}),
+      PM.product("pm-molten-kasethal", "fluid"):amount(10):done(),
+      PM.product("pm-flux-container"):amount(1, 2):done(),
     }
   },
   {
@@ -1452,8 +1452,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-kasethal-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-kasethal-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 } --[[@as data.RecipePrototype[] ]])

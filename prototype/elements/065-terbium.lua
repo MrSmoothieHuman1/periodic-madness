@@ -109,7 +109,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-terbium-salts", 8)
+            PM.product("pm-terbium-salts"):amount(8):done()
         }
     },
     {
@@ -123,14 +123,14 @@ data:extend({
         main_product = "pm-terbium-chloride",
         ingredients =
         {
-            PM.product("pm-terbium-salts", 8),
+            PM.product("pm-terbium-salts"):amount(8):done(),
         },
         results =
         {
-            PM.product_range("pm-terbium-chloride", {1, 3}),
-            PM.product_range("pm-terbium-bromide", {1, 3}),
-            PM.product_range("pm-terbium-hydride", {1, 3}),
-            PM.product_range("pm-terbium-sulfate", {1, 3})
+            PM.product("pm-terbium-chloride"):amount(1, 3):done(),
+            PM.product("pm-terbium-bromide"):amount(1, 3):done(),
+            PM.product("pm-terbium-hydride"):amount(1, 3):done(),
+            PM.product("pm-terbium-sulfate"):amount(1, 3):done()
         }
     },
     {
@@ -150,8 +150,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-chlorine", {2.5, 5}, "fluid")
+            PM.product("pm-impure-terbium"):amount(3):done(),
+            PM.product("pm-chlorine", "fluid"):amount(2.5, 5):done()
         }
     },
     {
@@ -171,8 +171,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-boron", {2.5, 5}, "fluid")
+            PM.product("pm-impure-terbium"):amount(3):done(),
+            PM.product("pm-boron", "fluid"):amount(2.5, 5):done()
         }
     },
     {
@@ -192,8 +192,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-hydrogen-gas", {2.5, 5}, "fluid")
+            PM.product("pm-impure-terbium"):amount(3):done(),
+            PM.product("pm-hydrogen-gas", "fluid"):amount(2.5, 5):done()
         }
     },
     {
@@ -213,8 +213,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-impure-terbium", 3),
-            PM.product_range("pm-sulfur-dioxide", {2.5, 5}, "fluid")
+            PM.product("pm-impure-terbium"):amount(3):done(),
+            PM.product("pm-sulfur-dioxide", "fluid"):amount(2.5, 5):done()
         }
     },
     {
@@ -231,7 +231,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-terbium-fluoride", 6),
+            PM.product("pm-terbium-fluoride"):amount(6):done(),
         }
     },
     {
@@ -248,8 +248,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-terbium", 12),
-            PM.catalyst_range("pm-flourine", {6, 8}, 7)
+            PM.product("pm-terbium"):amount(12):done(),
+            PM.product("pm-flourine"):amount(6, 8):catalyst(7):done()
         }
     }
 })

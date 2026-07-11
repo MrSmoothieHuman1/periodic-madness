@@ -13,7 +13,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-hydrogen-fuel", 1)
+      PM.product("pm-hydrogen-fuel"):amount(1):done()
     },
   },
   {
@@ -26,7 +26,7 @@ data:extend({
     energy_required = 2,
     results = 
     {
-      PM.product("pm-carbon", 10)
+      PM.product("pm-carbon"):amount(10):done()
     }
   },
   {
@@ -44,7 +44,7 @@ data:extend({
     order = "a",
     results =
     {
-      PM.product("pm-gravel", 6),
+      PM.product("pm-gravel"):amount(6):done(),
     }
   },
   {
@@ -65,8 +65,8 @@ data:extend({
     main_product = "pm-sand",
     results =
     {
-      PM.product("pm-sand", 8),
-      PM.product("pm-gravel", 2)
+      PM.product("pm-sand"):amount(8):done(),
+      PM.product("pm-gravel"):amount(2):done()
     }
   },
   {
@@ -83,7 +83,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sand", 4)
+      PM.product("pm-sand"):amount(4):done()
     }
   },
 
@@ -107,7 +107,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-electronic-breadboard", 2)
+      PM.product("pm-electronic-breadboard"):amount(2):done()
     }
   },
   {
@@ -124,7 +124,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-electronic-integrated-circuits", 3)
+      PM.product("pm-electronic-integrated-circuits"):amount(3):done()
     }
   },
 
@@ -151,7 +151,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fluid-breadboard", 1)
+      PM.product("pm-fluid-breadboard"):amount(1):done()
     }
   },
   {
@@ -168,7 +168,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-transistors", 2)
+      PM.product("pm-transistors"):amount(2):done()
     }
   },
   {
@@ -185,7 +185,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fluid-integrated-circuits", 3)
+      PM.product("pm-fluid-integrated-circuits"):amount(3):done()
     }
   },
   {
@@ -209,7 +209,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fluid-circuit", 1)
+      PM.product("pm-fluid-circuit"):amount(1):done()
     }
   },
   {
@@ -233,7 +233,7 @@ data:extend({
       PM.ingredient("pm-fluid-breadboard", 1),
     },
     results = {
-      PM.product("pm-advanced-circuit-breadboard", 1)
+      PM.product("pm-advanced-circuit-breadboard"):amount(1):done()
     },
   },
   {
@@ -249,7 +249,7 @@ data:extend({
       PM.ingredient("pm-gold-wire", 2),
     },
     results = {
-      PM.product("pm-advanced-integrated-circuits", 3)
+      PM.product("pm-advanced-integrated-circuits"):amount(3):done()
     }
   },
 
@@ -275,7 +275,7 @@ data:extend({
       PM.ingredient("pm-cobalt-blue", 6)
     },
     results = {
-      PM.product("pm-processing-breadboard", 1)
+      PM.product("pm-processing-breadboard"):amount(1):done()
     },
   },
   {
@@ -292,7 +292,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-processing-integrated-circuits", 3)
+      PM.product("pm-processing-integrated-circuits"):amount(3):done()
     }
   },
   {
@@ -311,7 +311,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-semiconductor", 2)
+      PM.product("pm-semiconductor"):amount(2):done()
     }
   },
   {
@@ -327,7 +327,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-indium-wire", 2)
+      PM.product("pm-indium-wire"):amount(2):done()
     }
   },
   {
@@ -339,7 +339,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-glass-pane", 4) },
     results = {
-      PM.product("pm-science-bottle", 1)
+      PM.product("pm-science-bottle"):amount(1):done()
     }
   },
   {
@@ -357,7 +357,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-air-filter", 2)
+      PM.product("pm-air-filter"):amount(2):done()
     }
   },
   {
@@ -377,7 +377,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-air-filter", 4)
+      PM.product("pm-air-filter"):amount(4):done()
     }
   },
   {
@@ -393,7 +393,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solder", 1)
+      PM.product("pm-solder"):amount(1):done()
     }
   },
   {
@@ -409,7 +409,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solder-case", 2)
+      PM.product("pm-solder-case"):amount(2):done()
     }
   },
   {
@@ -432,7 +432,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-acidic-water", 10, "fluid")
+      PM.product("pm-acidic-water", "fluid"):amount(10):done()
     }
   },
   {
@@ -448,7 +448,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-wood-strips", 5)
+      PM.product("pm-wood-strips"):amount(5):done()
     }
   },
   {
@@ -466,7 +466,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-coke", 4)
+      PM.product("pm-coke"):amount(4):done()
     }
   },
   {
@@ -484,7 +484,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-resin", 25, "fluid")
+      PM.product("pm-resin", "fluid"):amount(25):done()
     }
   },
   {
@@ -501,7 +501,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-rubber-resin", 50, "fluid")
+      PM.product("pm-rubber-resin", "fluid"):amount(50):done()
     }
 
   },
@@ -519,7 +519,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-pheonlic-resin", 50, "fluid")
+      PM.product("pm-pheonlic-resin", "fluid"):amount(50):done()
     }
 
   },
@@ -538,7 +538,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-rubber", 10)
+      PM.product("pm-rubber"):amount(10):done()
     }
   },
   {
@@ -557,8 +557,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vulcanised-rubber", 5),
-      PM.product_range("pm-acidic-water", {5, 8}, "fluid")
+      PM.product("pm-vulcanised-rubber"):amount(5):done(),
+      PM.product("pm-acidic-water", "fluid"):amount(5, 8):done()
     }
   },
   {
@@ -572,7 +572,7 @@ data:extend({
       PM.ingredient("pm-nickel-plate", 2)
     },
     results = {
-      PM.product("pm-basic-motor", 1)
+      PM.product("pm-basic-motor"):amount(1):done()
     }
   },
   {
@@ -585,7 +585,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-brass-plate", 2) },
     results = {
-      PM.product("pm-brass-cog", 1)
+      PM.product("pm-brass-cog"):amount(1):done()
     }
   },
   {
@@ -600,7 +600,7 @@ data:extend({
     ingredients = { PM.ingredient("pm-gold-plate", 1) },
     results =
     {
-      PM.product("pm-gold-wire", 2)
+      PM.product("pm-gold-wire"):amount(2):done()
     }
   },
 
@@ -620,8 +620,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-glass-fibers", 5),
-      PM.product_chance("pm-glass-shards", 2, 0.5),
+      PM.product("pm-glass-fibers"):amount(5):done(),
+      PM.product("pm-glass-shards"):amount(2):chance(0.5):done(),
     }
   },
   {
@@ -641,7 +641,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fiberoptic-cable", 2)
+      PM.product("pm-fiberoptic-cable"):amount(2):done()
     }
   },
   {
@@ -656,7 +656,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solder-wire", 2)
+      PM.product("pm-solder-wire"):amount(2):done()
     }
   },
   {
@@ -675,7 +675,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-cell", 2)
+      PM.product("pm-solar-cell"):amount(2):done()
     }
   },
   {
@@ -710,7 +710,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-cell", 3)
+      PM.product("pm-solar-cell"):amount(3):done()
     }
   },
   {
@@ -727,7 +727,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-gallium-nitride", 6)
+      PM.product("pm-gallium-nitride"):amount(6):done()
     }
   },
   {
@@ -744,7 +744,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-gallium-arsenide", 6)
+      PM.product("pm-gallium-arsenide"):amount(6):done()
     }
   },
   {
@@ -764,8 +764,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-aluminium-gallium-indium-phosphide", 6),
-      PM.product_chance("pm-gallium-arsenide", 1, 0.6)
+      PM.product("pm-aluminium-gallium-indium-phosphide"):amount(6):done(),
+      PM.product("pm-gallium-arsenide"):amount(1):chance(0.6):done()
     }
   },
   {
@@ -782,7 +782,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-speed-module-light", 1)
+      PM.product("pm-speed-module-light"):amount(1):done()
     }
   },
   {
@@ -799,7 +799,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-efficiency-module-light", 1)
+      PM.product("pm-efficiency-module-light"):amount(1):done()
     }
   },
   {
@@ -816,7 +816,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-productivity-module-light", 1)
+      PM.product("pm-productivity-module-light"):amount(1):done()
     }
   },
   {
@@ -836,7 +836,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-module-case", 1)
+      PM.product("pm-module-case"):amount(1):done()
     }
   },
   {
@@ -854,7 +854,7 @@ data:extend({
     },
     results =
     {
-      PM.product("water", 10, "fluid")
+      PM.product("water", "fluid"):amount(10):done()
     }
   },
 
@@ -874,9 +874,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.9, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.1, 1),
-      PM.product("pm-trace-acetonitrile", 10, "fluid"),
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.9):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.1):catalyst(1):done(),
+      PM.product("pm-trace-acetonitrile", "fluid"):amount(10):done(),
     }
   },
   {
@@ -895,8 +895,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-acetonitrile", 10, "fluid"),
-      PM.product("pm-trace-acetonitrile", 20, "fluid")
+      PM.product("pm-acetonitrile", "fluid"):amount(10):done(),
+      PM.product("pm-trace-acetonitrile", "fluid"):amount(20):done()
     }
   },
   {
@@ -917,8 +917,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phosphoramidite", 2.4, "fluid"),
-      PM.product_range("pm-trace-acetonitrile", {2, 8}, "fluid")
+      PM.product("pm-phosphoramidite", "fluid"):amount(2.4):done(),
+      PM.product("pm-trace-acetonitrile", "fluid"):amount(2, 8):done()
     }
   },
   {
@@ -937,9 +937,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-common-myostatin", 10, "fluid"),
-      PM.product_chance("pm-vanadium-oxide-catalyst", 5, 0.8),
-      PM.product_chance("pm-catalyst-container", 5, 0.2)
+      PM.product("pm-common-myostatin", "fluid"):amount(10):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(5):chance(0.8):done(),
+      PM.product("pm-catalyst-container"):amount(5):chance(0.2):done()
     }
   },
   {
@@ -956,7 +956,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-benzene", 40, "fluid")
+      PM.product("pm-benzene", "fluid"):amount(40):done()
     }
   },
   {
@@ -976,8 +976,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-rare-myostatin", 10, 0.4, "fluid"),
-      PM.product_chance("pm-broken-myostatin", 4, 0.4, "fluid")
+      PM.product("pm-rare-myostatin", "fluid"):amount(10):chance(0.4):done(),
+      PM.product("pm-broken-myostatin", "fluid"):amount(4):chance(0.4):done()
     }
   },
   {
@@ -997,8 +997,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-legendary-myostatin", 10, 0.4, "fluid"),
-      PM.product_chance("pm-broken-myostatin", 4, 0.4, "fluid")
+      PM.product("pm-legendary-myostatin", "fluid"):amount(10):chance(0.4):done(),
+      PM.product("pm-broken-myostatin", "fluid"):amount(4):chance(0.4):done()
     }
   },
   {
@@ -1017,8 +1017,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-iron-sulfur-cluster", 1),
-      PM.product_range_chance("sulfur", {1, 3}, 0.24)
+      PM.product("pm-iron-sulfur-cluster"):amount(1):done(),
+      PM.product("sulfur"):amount(1, 3):chance(0.24):done()
     }
   },
   {
@@ -1038,9 +1038,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-CISD2", 4, "fluid"),
-      PM.product_range_chance("pm-zinc-plate", {2, 4}, 0.45),
-      PM.product_chance("pm-ferrum", 3, 0.4)
+      PM.product("pm-CISD2", "fluid"):amount(4):done(),
+      PM.product("pm-zinc-plate"):amount(2, 4):chance(0.45):done(),
+      PM.product("pm-ferrum"):amount(3):chance(0.4):done()
     }
   },
   {
@@ -1076,7 +1076,7 @@ data:extend({
     },
     results =
     {
-      PM.product("electric-engine-unit", 1)
+      PM.product("electric-engine-unit"):amount(1):done()
     }
   },
   {
@@ -1097,9 +1097,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-fluid-circuit", {1, 3}, 0.4),
-      PM.product_range_chance("electronic-circuit", {1, 3}, 0.7),
-      PM.product_chance("copper-cable", 2, 0.2)
+      PM.product("pm-fluid-circuit"):amount(1, 3):chance(0.4):done(),
+      PM.product("electronic-circuit"):amount(1, 3):chance(0.7):done(),
+      PM.product("copper-cable"):amount(2):chance(0.2):done()
     }
   },
   {
@@ -1115,7 +1115,7 @@ data:extend({
       PM.ingredient("pm-polyethylene-plastic", 4),
     },
     results = {
-      PM.product("pm-flux-container", 1)
+      PM.product("pm-flux-container"):amount(1):done()
     }
   },
   {
@@ -1134,7 +1134,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-filled-flux-container", 1)
+      PM.product("pm-filled-flux-container"):amount(1):done()
     }
   },
   {
@@ -1155,9 +1155,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.85, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.15, 1),
-      PM.product("pm-ethylene-glycol", 10, "fluid"),
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.85):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.15):catalyst(1):done(),
+      PM.product("pm-ethylene-glycol", "fluid"):amount(10):done(),
     }
   },
   {
@@ -1176,7 +1176,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-panel-equipment-2", 1)
+      PM.product("pm-solar-panel-equipment-2"):amount(1):done()
     }
   },
   {
@@ -1195,7 +1195,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-panel-equipment-3", 1)
+      PM.product("pm-solar-panel-equipment-3"):amount(1):done()
     }
   },
   {
@@ -1215,7 +1215,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-creosote", 40, "fluid")
+      PM.product("pm-creosote", "fluid"):amount(40):done()
     }
   },
   {
@@ -1235,7 +1235,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-creosote", 40, "fluid")
+      PM.product("pm-creosote", "fluid"):amount(40):done()
     }
   },
   {
@@ -1254,7 +1254,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-crucible", 2)
+      PM.product("pm-crucible"):amount(2):done()
     }
   },
   {
@@ -1271,7 +1271,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-zinc-aluminium-catalyst", 2)
+      PM.product("pm-copper-zinc-aluminium-catalyst"):amount(2):done()
     }
   },
   {
@@ -1292,10 +1292,10 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-methanol", 10, "fluid"),
-      PM.product("water", 10, "fluid"),
-      PM.catalyst_chance("pm-copper-zinc-aluminium-catalyst", 1, 0.95, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.05, 1)
+      PM.product("pm-methanol", "fluid"):amount(10):done(),
+      PM.product("water", "fluid"):amount(10):done(),
+      PM.product("pm-copper-zinc-aluminium-catalyst"):amount(1):chance(0.95):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.05):catalyst(1):done()
     }
   },
   {
@@ -1316,9 +1316,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-methyl-methacrylate", 15, "fluid"),
-      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.8, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.2, 1)
+      PM.product("pm-methyl-methacrylate", "fluid"):amount(15):done(),
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.8):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.2):catalyst(1):done()
     }
   },
   {
@@ -1337,7 +1337,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-polymethyl-methacrylate", 2)
+      PM.product("pm-polymethyl-methacrylate"):amount(2):done()
     }
   },
   {
@@ -1372,8 +1372,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-polymethyl-methacrylate", 4),
-      PM.product_chance("pm-hydrogen-gas", 5, 0.5, "fluid")
+      PM.product("pm-polymethyl-methacrylate"):amount(4):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(5):chance(0.5):done()
     }
   },
 
@@ -1393,8 +1393,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-hydrochloric-acid", {2, 5}, "fluid"),
-      PM.product("pm-chloronated-solution", 12, "fluid")
+      PM.product("pm-hydrochloric-acid", "fluid"):amount(2, 5):done(),
+      PM.product("pm-chloronated-solution", "fluid"):amount(12):done()
     }
   },
   {
@@ -1414,10 +1414,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-chloroform", {7.5, 10}, "fluid"),
-      PM.product_range("pm-carbon-tetrachloride", {3, 8}, "fluid"),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 1, 0.85, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.15, 1)
+      PM.product("pm-chloroform", "fluid"):amount(7.5, 10):done(),
+      PM.product("pm-carbon-tetrachloride", "fluid"):amount(3, 8):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.85):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.15):catalyst(1):done()
     }
   },
   {
@@ -1436,7 +1436,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tetrafluoroethylene", 5, "fluid")
+      PM.product("pm-tetrafluoroethylene", "fluid"):amount(5):done()
     }
   },
   {
@@ -1454,7 +1454,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-polytetrafluoroethylene", 2)
+      PM.product("pm-polytetrafluoroethylene"):amount(2):done()
     }
   },
 
@@ -1475,7 +1475,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-plaster-of-nauvis", 20, "fluid")
+      PM.product("pm-plaster-of-nauvis", "fluid"):amount(20):done()
     }
   },
   {
@@ -1493,7 +1493,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-plastic-science-mold", 2)
+      PM.product("pm-plastic-science-mold"):amount(2):done()
     }
   },
   {
@@ -1511,7 +1511,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-filled-plastic-science-mold", 1)
+      PM.product("pm-filled-plastic-science-mold"):amount(1):done()
     }
   },
   {
@@ -1530,8 +1530,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-plastic-science-bottle", 1),
-      PM.catalyst_chance("pm-plastic-science-mold", 1, 0.66, 1)
+      PM.product("pm-plastic-science-bottle"):amount(1):done(),
+      PM.product("pm-plastic-science-mold"):amount(1):chance(0.66):catalyst(1):done()
     }
   },
   {
@@ -1559,7 +1559,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ferric-chloride", 20, "fluid")
+      PM.product("pm-ferric-chloride", "fluid"):amount(20):done()
     }
   },
   {
@@ -1587,7 +1587,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ferric-chloride", 10, "fluid")
+      PM.product("pm-ferric-chloride", "fluid"):amount(10):done()
     }
   },
   {
@@ -1608,7 +1608,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-transistors", 25)
+      PM.product("pm-transistors"):amount(25):done()
     }
   },
   {
@@ -1626,7 +1626,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ammonium-chloride", 10)
+      PM.product("pm-ammonium-chloride"):amount(10):done()
     }
   },
   {
@@ -1646,7 +1646,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-air-filter", 8)
+      PM.product("pm-air-filter"):amount(8):done()
     }
   },
   {
@@ -1664,7 +1664,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-seed-crystal", 2)
+      PM.product("pm-seed-crystal"):amount(2):done()
     }
   },
   {
@@ -1681,7 +1681,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-empty-reactor-cell", 10)
+      PM.product("pm-empty-reactor-cell"):amount(10):done()
     }
   },
   {
@@ -1701,7 +1701,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-speed-module-4", 1)
+      PM.product("pm-speed-module-4"):amount(1):done()
     }
   },
   {
@@ -1721,7 +1721,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-efficiency-module-4", 1)
+      PM.product("pm-efficiency-module-4"):amount(1):done()
     }
   },
   {
@@ -1741,7 +1741,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-productivity-module-4", 1)
+      PM.product("pm-productivity-module-4"):amount(1):done()
     }
   },
   {
@@ -1760,7 +1760,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-high-density-magazine", 1)
+      PM.product("pm-high-density-magazine"):amount(1):done()
     }
   },
   {
@@ -1779,7 +1779,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vacuum-tube", 1)
+      PM.product("pm-vacuum-tube"):amount(1):done()
     }
   },
   {
@@ -1800,8 +1800,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vacuum-tube-getter", 1),
-      PM.catalyst_chance("pm-empty-glass-ampule", 1, 0.8, 1)
+      PM.product("pm-vacuum-tube-getter"):amount(1):done(),
+      PM.product("pm-empty-glass-ampule"):amount(1):chance(0.8):catalyst(1):done()
     }
   },
   {
@@ -1819,7 +1819,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-CRT", 1)
+      PM.product("pm-CRT"):amount(1):done()
     }
   },
   {
@@ -1838,7 +1838,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-CRT-framing", 1)
+      PM.product("pm-CRT-framing"):amount(1):done()
     }
   },
   {
@@ -1855,7 +1855,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-CRT-screen", 1)
+      PM.product("pm-CRT-screen"):amount(1):done()
     }
   },
   {
@@ -1876,7 +1876,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-genevas-neglection-magazine", 2)
+      PM.product("pm-genevas-neglection-magazine"):amount(2):done()
     }
   },
   {
@@ -1896,7 +1896,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phosgene", 20, "fluid")
+      PM.product("pm-phosgene", "fluid"):amount(20):done()
     }
   },
   {
@@ -1912,8 +1912,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-logistic-robot", 1),
-      PM.product_range_chance("pm-vanadium-redox-battery", {1, 2}, 0.66)
+      PM.product("pm-lithium-logistic-robot"):amount(1):done(),
+      PM.product("pm-vanadium-redox-battery"):amount(1, 2):chance(0.66):done()
     }
   },
   {
@@ -1929,8 +1929,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-construction-robot", 1),
-      PM.product_range_chance("pm-vanadium-redox-battery", {1, 2}, 0.66)
+      PM.product("pm-lithium-construction-robot"):amount(1):done(),
+      PM.product("pm-vanadium-redox-battery"):amount(1, 2):chance(0.66):done()
     }
   },
   {
@@ -1951,7 +1951,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-air-filter", 2)
+      PM.product("pm-advanced-air-filter"):amount(2):done()
     }
   },
   {
@@ -1972,7 +1972,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-trace-gas-air-filter", 1)
+      PM.product("pm-advanced-trace-gas-air-filter"):amount(1):done()
     }
   },
   {
@@ -1990,7 +1990,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-travelling-wave-amplifier-tube", 1)
+      PM.product("pm-travelling-wave-amplifier-tube"):amount(1):done()
     }
   },
   {
@@ -2019,7 +2019,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-science-bottle", 4)
+      PM.product("pm-science-bottle"):amount(4):done()
     }
   },
   {
@@ -2036,7 +2036,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sodium-grenade", 1)
+      PM.product("pm-sodium-grenade"):amount(1):done()
     }
   },
   {
@@ -2056,7 +2056,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-high-density-shotgun-shell", 2)
+      PM.product("pm-high-density-shotgun-shell"):amount(2):done()
     }
   },
   {
@@ -2077,7 +2077,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-genevas-neglection-shotgun-shell", 2)
+      PM.product("pm-genevas-neglection-shotgun-shell"):amount(2):done()
     }
   },
   {
@@ -2094,7 +2094,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-shotgun-slug", 1)
+      PM.product("pm-shotgun-slug"):amount(1):done()
     }
   },
   {
@@ -2112,7 +2112,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-heavy-piercing-shotgun-slug", 2)
+      PM.product("pm-heavy-piercing-shotgun-slug"):amount(2):done()
     }
   },
   {
@@ -2132,7 +2132,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-high-density-shotgun-slug", 1)
+      PM.product("pm-high-density-shotgun-slug"):amount(1):done()
     }
   },
   {
@@ -2153,7 +2153,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-genevas-neglection-shotgun-slug", 1)
+      PM.product("pm-genevas-neglection-shotgun-slug"):amount(1):done()
     }
   },
   {
@@ -2174,7 +2174,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-empty-fuel-rod", 5)
+      PM.product("pm-empty-fuel-rod"):amount(5):done()
     }
   },
   {
@@ -2194,9 +2194,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-empty-fuel-rod", {1, 2}),
-      PM.product_range("pm-helium-gas", {3, 6}, "fluid"),
-      PM.product_range_chance("pm-carbon-dioxide-gas", {5, 9}, 0.67, "fluid")
+      PM.product("pm-empty-fuel-rod"):amount(1, 2):done(),
+      PM.product("pm-helium-gas", "fluid"):amount(3, 6):done(),
+      PM.product("pm-carbon-dioxide-gas", "fluid"):amount(5, 9):chance(0.67):done()
     }
   },
   {
@@ -2216,7 +2216,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-lithium-sulfur-battery-equipment", 1)
+      PM.product("pm-lithium-sulfur-battery-equipment"):amount(1):done()
     }
   },
   {
@@ -2235,7 +2235,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-lithium-sulfur-battery-mk2-equipment", 1)
+      PM.product("pm-lithium-sulfur-battery-mk2-equipment"):amount(1):done()
     }
   },
   {
@@ -2252,7 +2252,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-ruby-dust", 10)
+      PM.product("pm-ruby-dust"):amount(10):done()
     }
   },
   {
@@ -2269,7 +2269,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-citrine-dust", 10)
+      PM.product("pm-citrine-dust"):amount(10):done()
     }
   },
   {
@@ -2286,7 +2286,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-emerald-dust", 10)
+      PM.product("pm-emerald-dust"):amount(10):done()
     }
   },
   {
@@ -2303,7 +2303,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sapphire-dust", 10)
+      PM.product("pm-sapphire-dust"):amount(10):done()
     }
   },
   {
@@ -2320,7 +2320,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-lapis-lazuli-dust", 10)
+      PM.product("pm-lapis-lazuli-dust"):amount(10):done()
     }
   },
   {
@@ -2337,7 +2337,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-garnet-dust", 10)
+      PM.product("pm-garnet-dust"):amount(10):done()
     }
   },
 
@@ -2358,8 +2358,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-aluminium-ore", {6, 14}),
-      PM.product_range("pm-oxygen-gas", {10, 22}, "fluid"),
+      PM.product("pm-aluminium-ore"):amount(6, 14):done(),
+      PM.product("pm-oxygen-gas", "fluid"):amount(10, 22):done(),
     }
   },
   {
@@ -2379,9 +2379,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-industrial-grade-silicon-ore", {1, 5}, 0.75),
-      PM.product_range("pm-oxygen-gas", {5, 11}, "fluid"),
-      PM.product_range_chance("iron-ore", {0, 3}, 0.65)
+      PM.product("pm-industrial-grade-silicon-ore"):amount(1, 5):chance(0.75):done(),
+      PM.product("pm-oxygen-gas", "fluid"):amount(5, 11):done(),
+      PM.product("iron-ore"):amount(0, 3):chance(0.65):done()
     }
   },
   {
@@ -2401,9 +2401,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-chromium-ore", {2, 8}, 0.7),
-      PM.product_range("pm-beryl", {0, 6}),
-      PM.product_range("pm-oxygen-gas", {10, 22}, "fluid"),
+      PM.product("pm-chromium-ore"):amount(2, 8):chance(0.7):done(),
+      PM.product("pm-beryl"):amount(0, 6):done(),
+      PM.product("pm-oxygen-gas", "fluid"):amount(10, 22):done(),
     }
   },
   {
@@ -2423,9 +2423,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-aluminium-ore", {5, 12}),
-      PM.product_range("pm-oxygen-gas", {12, 18}, "fluid"),
-      PM.product_range_chance("pm-boron", {0, 2}, 0.12, "fluid")
+      PM.product("pm-aluminium-ore"):amount(5, 12):done(),
+      PM.product("pm-oxygen-gas", "fluid"):amount(12, 18):done(),
+      PM.product("pm-boron", "fluid"):amount(0, 2):chance(0.12):done()
     }
   },
   {
@@ -2445,9 +2445,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-sodium", {4, 8}),
-      PM.product_range("sulfur", {2, 7}),
-      PM.product_range_chance("pm-calcite", {0, 3}, 0.6),
+      PM.product("pm-sodium"):amount(4, 8):done(),
+      PM.product("sulfur"):amount(2, 7):done(),
+      PM.product("pm-calcite"):amount(0, 3):chance(0.6):done(),
     }
   },
   {
@@ -2467,9 +2467,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-manganese-ore", {6, 14}),
-      PM.product_range_chance("pm-industrial-grade-silicon-ore", {1, 5}, 0.55),
-      PM.product_range("pm-calcium-ore", {4, 8}),
+      PM.product("pm-manganese-ore"):amount(6, 14):done(),
+      PM.product("pm-industrial-grade-silicon-ore"):amount(1, 5):chance(0.55):done(),
+      PM.product("pm-calcium-ore"):amount(4, 8):done(),
     }
   },
   {
@@ -2493,8 +2493,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-ruby-dust", {0, 4}, 4),
-      PM.product_range("water", {10, 45}, "fluid")
+      PM.product("pm-ruby-dust"):amount(0, 4):ignored(4):done(),
+      PM.product("water", "fluid"):amount(10, 45):done()
     }
   },
   {
@@ -2518,8 +2518,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-citrine-dust", {0, 4}, 4),
-      PM.product_range("water", {10, 45}, "fluid")
+      PM.product("pm-citrine-dust"):amount(0, 4):ignored(4):done(),
+      PM.product("water", "fluid"):amount(10, 45):done()
     }
   },
   {
@@ -2543,8 +2543,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-emerald-dust", {0, 4}, 4),
-      PM.product_range("water", {10, 45}, "fluid")
+      PM.product("pm-emerald-dust"):amount(0, 4):ignored(4):done(),
+      PM.product("water", "fluid"):amount(10, 45):done()
     }
   },
   {
@@ -2568,8 +2568,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-lapis-lazuli-dust", {0, 4}, 4),
-      PM.product_range("water", {10, 45}, "fluid")
+      PM.product("pm-lapis-lazuli-dust"):amount(0, 4):ignored(4):done(),
+      PM.product("water", "fluid"):amount(10, 45):done()
     }
   },
   {
@@ -2593,8 +2593,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-sapphire-dust", {0, 4}, 4),
-      PM.product_range("water", {10, 45}, "fluid")
+      PM.product("pm-sapphire-dust"):amount(0, 4):ignored(4):done(),
+      PM.product("water", "fluid"):amount(10, 45):done()
     }
   },
   {
@@ -2618,8 +2618,8 @@ data:extend({
     },
     results = 
     {
-      PM.ignored_range("pm-garnet-dust", {0, 4}, 4),
-      PM.product_range("water", {10, 45}, "fluid")
+      PM.product("pm-garnet-dust"):amount(0, 4):ignored(4):done(),
+      PM.product("water", "fluid"):amount(10, 45):done()
     }
   },
   {
@@ -2639,7 +2639,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-saw", 1)
+      PM.product("pm-saw"):amount(1):done()
     }
   },
   {
@@ -2658,9 +2658,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cut-ruby", {0, 4}),
-      PM.catalyst_range_chance("pm-ruby", {2, 6}, 0.9, 6),
-      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+      PM.product("pm-cut-ruby"):amount(0, 4):done(),
+      PM.product("pm-ruby"):amount(2, 6):chance(0.9):catalyst(6):done(),
+      PM.product("pm-saw"):amount(1):chance(0.98):catalyst(1):done()
     }
   },
   {
@@ -2679,9 +2679,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cut-sapphire", {0, 4}),
-      PM.catalyst_range_chance("pm-sapphire", {2, 6}, 0.9, 6),
-      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+      PM.product("pm-cut-sapphire"):amount(0, 4):done(),
+      PM.product("pm-sapphire"):amount(2, 6):chance(0.9):catalyst(6):done(),
+      PM.product("pm-saw"):amount(1):chance(0.98):catalyst(1):done()
     }
   },
   {
@@ -2702,7 +2702,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-ruby-laser-head", 1)
+      PM.product("pm-ruby-laser-head"):amount(1):done()
     }
   },
   {
@@ -2723,7 +2723,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sapphire-laser-head", 1)
+      PM.product("pm-sapphire-laser-head"):amount(1):done()
     }
   },
   {
@@ -2742,8 +2742,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cobalt-blue", {4, 10}),
-      PM.product_range_chance("pm-sulfur-dioxide", {4, 8}, 0.25, "fluid")
+      PM.product("pm-cobalt-blue"):amount(4, 10):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(4, 8):chance(0.25):done()
     }
   },
   {
@@ -2765,9 +2765,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("water", {100, 120}, "fluid"),
-      PM.product_range("pm-sea-salt", {50, 95}),
-      PM.catalyst_range("pm-garnet-dust", {1, 5}, 5)
+      PM.product("water", "fluid"):amount(100, 120):done(),
+      PM.product("pm-sea-salt"):amount(50, 95):done(),
+      PM.product("pm-garnet-dust"):amount(1, 5):catalyst(5):done()
     }
   },
   {
@@ -2791,7 +2791,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-crystal-slurry", 10, "fluid")
+      PM.product("pm-crystal-slurry", "fluid"):amount(10):done()
     }
   },
   {
@@ -2815,7 +2815,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-crystal-slurry", 10, "fluid")
+      PM.product("pm-crystal-slurry", "fluid"):amount(10):done()
     }
   },
   {
@@ -2839,7 +2839,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-crystal-slurry", 10, "fluid")
+      PM.product("pm-crystal-slurry", "fluid"):amount(10):done()
     }
   },
   {
@@ -2863,7 +2863,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-crystal-slurry", 10, "fluid")
+      PM.product("pm-crystal-slurry", "fluid"):amount(10):done()
     }
   },
   {
@@ -2887,7 +2887,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-crystal-slurry", 10, "fluid")
+      PM.product("pm-crystal-slurry", "fluid"):amount(10):done()
     }
   },
   {
@@ -2911,7 +2911,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-crystal-slurry", 10, "fluid")
+      PM.product("pm-crystal-slurry", "fluid"):amount(10):done()
     }
   },
   {
@@ -2932,8 +2932,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-gunpowder", 2),
-      PM.product_range_chance("pm-acidic-water", {10, 15}, 0.8, "fluid")
+      PM.product("pm-gunpowder"):amount(2):done(),
+      PM.product("pm-acidic-water", "fluid"):amount(10, 15):chance(0.8):done()
     }
   },
   {
@@ -2953,8 +2953,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-hydrogen-peroxide", {12, 25}, 0.5, "fluid"),
-      PM.product_range_chance("water", {12, 25}, 0.5, "fluid"),
+      PM.product("pm-hydrogen-peroxide", "fluid"):amount(12, 25):chance(0.5):done(),
+      PM.product("water", "fluid"):amount(12, 25):chance(0.5):done(),
     }
   },
   {
@@ -2973,8 +2973,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-silicon-wafer", 10),
-      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+      PM.product("pm-silicon-wafer"):amount(10):done(),
+      PM.product("pm-saw"):amount(1):chance(0.98):catalyst(1):done()
     }
   },
   {
@@ -2992,7 +2992,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-barely-etched-silicon-wafer", 1),
+      PM.product("pm-barely-etched-silicon-wafer"):amount(1):done(),
     }
   },
   {
@@ -3010,7 +3010,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-etched-silicon-wafer", 1),
+      PM.product("pm-etched-silicon-wafer"):amount(1):done(),
     }
   },
   {
@@ -3051,7 +3051,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-electronic-breadboard", 6)
+      PM.product("pm-electronic-breadboard"):amount(6):done()
     }
   },
   {
@@ -3072,7 +3072,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-electronic-integrated-circuits", 9)
+      PM.product("pm-electronic-integrated-circuits"):amount(9):done()
     }
   },
   {
@@ -3114,7 +3114,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fluid-breadboard", 6)
+      PM.product("pm-fluid-breadboard"):amount(6):done()
     }
   },
   {
@@ -3137,7 +3137,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fluid-integrated-circuits", 9)
+      PM.product("pm-fluid-integrated-circuits"):amount(9):done()
     }
   },
   {
@@ -3179,7 +3179,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-circuit-breadboard", 6)
+      PM.product("pm-advanced-circuit-breadboard"):amount(6):done()
     },
   },
   {
@@ -3202,7 +3202,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-integrated-circuits", 9)
+      PM.product("pm-advanced-integrated-circuits"):amount(9):done()
     }
   },
   {
@@ -3245,7 +3245,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-processing-breadboard", 6)
+      PM.product("pm-processing-breadboard"):amount(6):done()
     },
   },
   {
@@ -3267,7 +3267,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-processing-integrated-circuits", 9)
+      PM.product("pm-processing-integrated-circuits"):amount(9):done()
     }
   },
   {
@@ -3291,7 +3291,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-semiconductor", 6)
+      PM.product("pm-semiconductor"):amount(6):done()
     }
   },
   {
@@ -3313,8 +3313,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-dimethyldichlorosilane", 4, "fluid"),
-      PM.product_range("pm-hydrochloric-acid", {2, 4}, "fluid")
+      PM.product("pm-dimethyldichlorosilane", "fluid"):amount(4):done(),
+      PM.product("pm-hydrochloric-acid", "fluid"):amount(2, 4):done()
     }
   },
   {
@@ -3331,7 +3331,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-liquid-silicone", 2, "fluid")
+      PM.product("pm-liquid-silicone", "fluid"):amount(2):done()
     }
   },
   {
@@ -3350,8 +3350,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-dichlorosilane", {2, 8}, "fluid"),
-      PM.product_range("pm-hydrochloric-acid", {4, 10}, "fluid")
+      PM.product("pm-dichlorosilane", "fluid"):amount(2, 8):done(),
+      PM.product("pm-hydrochloric-acid", "fluid"):amount(4, 10):done()
     }
   },
   {
@@ -3370,7 +3370,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-trichlorosilane", {2, 8}, "fluid"),
+      PM.product("pm-trichlorosilane", "fluid"):amount(2, 8):done(),
     }
   },
   {
@@ -3395,7 +3395,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-concrete-slurry", 50, "fluid")
+      PM.product("pm-concrete-slurry", "fluid"):amount(50):done()
     }
   },
   {
@@ -3416,10 +3416,10 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-polydimethylsiloxane", 8, "fluid"),
-      PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.8, 3),
-      PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3),
-      PM.product_range("pm-hydrochloric-acid", {8, 12}, "fluid")
+      PM.product("pm-polydimethylsiloxane", "fluid"):amount(8):done(),
+      PM.product("pm-cobalt-catalyst"):amount(3):chance(0.8):catalyst(3):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(3):done(),
+      PM.product("pm-hydrochloric-acid", "fluid"):amount(8, 12):done()
     }
   },
   {
@@ -3448,7 +3448,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("low-density-structure", 1)
+      PM.product("low-density-structure"):amount(1):done()
     }
   },
   {
@@ -3477,7 +3477,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("low-density-structure", 1)
+      PM.product("low-density-structure"):amount(1):done()
     }
   },
   {
@@ -3494,7 +3494,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-copper-heating-coil", 1)
+      PM.product("pm-copper-heating-coil"):amount(1):done()
     }
   },
   {
@@ -3511,7 +3511,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-aluminium-heating-coil", 1)
+      PM.product("pm-aluminium-heating-coil"):amount(1):done()
     }
   },
   {
@@ -3528,7 +3528,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-tungsten-heating-coil", 1)
+      PM.product("pm-tungsten-heating-coil"):amount(1):done()
     }
   },
   {
@@ -3545,7 +3545,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molybdenum-heating-coil", 1)
+      PM.product("pm-molybdenum-heating-coil"):amount(1):done()
     }
   },
   {
@@ -3562,7 +3562,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-gold-heating-coil", 1)
+      PM.product("pm-gold-heating-coil"):amount(1):done()
     }
   },
   {
@@ -3579,7 +3579,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-kasethal-heating-coil", 1)
+      PM.product("pm-kasethal-heating-coil"):amount(1):done()
     }
   },
   {
@@ -3596,7 +3596,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-inconel-625-heating-coil", 1)
+      PM.product("pm-inconel-625-heating-coil"):amount(1):done()
     }
   },
   {
@@ -3614,7 +3614,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("concrete", 5)
+      PM.product("concrete"):amount(5):done()
     }
   },
   {
@@ -3633,7 +3633,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("refined-concrete", 5)
+      PM.product("refined-concrete"):amount(5):done()
     }
   },
   {
@@ -3653,7 +3653,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-spiderling-issy", 1)
+      PM.product("pm-spiderling-issy"):amount(1):done()
     }
   },
   {
@@ -3684,7 +3684,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-speed-module-light", 1)
+      PM.product("pm-speed-module-light"):amount(1):done()
     }
   },
   {
@@ -3714,7 +3714,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-efficiency-module-light", 1)
+      PM.product("pm-efficiency-module-light"):amount(1):done()
     }
   },
   {
@@ -3744,7 +3744,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-productivity-module-light", 1)
+      PM.product("pm-productivity-module-light"):amount(1):done()
     }
   },
   {
@@ -3761,7 +3761,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-empty-glass-ampule", 1)
+      PM.product("pm-empty-glass-ampule"):amount(1):done()
     }
   },
   {
@@ -3791,7 +3791,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-empty-glass-ampule", 2)
+      PM.product("pm-empty-glass-ampule"):amount(2):done()
     }
   },
   {
@@ -3821,7 +3821,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-travelling-wave-amplifier-tube", 1)
+      PM.product("pm-travelling-wave-amplifier-tube"):amount(1):done()
     }
   },
   {
@@ -3851,7 +3851,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-empty-reactor-cell", 10)
+      PM.product("pm-empty-reactor-cell"):amount(10):done()
     }
   },
   {
@@ -3882,7 +3882,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vacuum-tube", 1)
+      PM.product("pm-vacuum-tube"):amount(1):done()
     }
   },
   {
@@ -3898,7 +3898,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-incendiary-rocket", 1)
+      PM.product("pm-incendiary-rocket"):amount(1):done()
     }
   },
   {
@@ -3917,9 +3917,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_chance("pm-platinum-plate", 2, 0.85, 2),
-      PM.product("pm-nitric-oxide", 5, "fluid"),
-      PM.product("water", 7.5, "fluid")
+      PM.product("pm-platinum-plate"):amount(2):chance(0.85):catalyst(2):done(),
+      PM.product("pm-nitric-oxide", "fluid"):amount(5):done(),
+      PM.product("water", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -3937,8 +3937,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nitric-acid", 5, "fluid"),
-      PM.product_range("pm-hydrogen-gas", {6, 15}, "fluid")
+      PM.product("pm-nitric-acid", "fluid"):amount(5):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(6, 15):done()
     }
   },
   {
@@ -3956,9 +3956,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-aqua-regia", 10, "fluid"),
-      PM.product("water", 7.5, "fluid"),
-      PM.product_range("pm-nitrosyl-chloride", {3, 5}, "fluid")
+      PM.product("pm-aqua-regia", "fluid"):amount(10):done(),
+      PM.product("water", "fluid"):amount(7.5):done(),
+      PM.product("pm-nitrosyl-chloride", "fluid"):amount(3, 5):done()
     }
   },
   {
@@ -3977,8 +3977,8 @@ data:extend({
     },
     results = 
     {
-        PM.product_range("pm-nitric-oxide", {0, 5}, "fluid"),
-        PM.product_range("pm-chlorine", {0, 5}, "fluid")
+        PM.product("pm-nitric-oxide", "fluid"):amount(0, 5):done(),
+        PM.product("pm-chlorine", "fluid"):amount(0, 5):done()
     }
   },
   {
@@ -4011,7 +4011,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-electric-engine-unit", 1)
+      PM.product("pm-advanced-electric-engine-unit"):amount(1):done()
     }
   },
   {
@@ -4044,7 +4044,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-electric-engine-unit", 1)
+      PM.product("pm-advanced-electric-engine-unit"):amount(1):done()
     }
   },
   {
@@ -4080,7 +4080,7 @@ data:extend({
     },
     results =
     {
-      PM.product("electric-engine-unit", 1)
+      PM.product("electric-engine-unit"):amount(1):done()
     }
   },
   {
@@ -4100,7 +4100,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-selenium-sulfur-battery-equipment", 1)
+      PM.product("pm-selenium-sulfur-battery-equipment"):amount(1):done()
     }
   },
   {
@@ -4117,7 +4117,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-RTG-equipment", 1)
+      PM.product("pm-RTG-equipment"):amount(1):done()
     }
   },
   {
@@ -4132,7 +4132,7 @@ data:extend({
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {
-      PM.product("pm-rhenium-platinum-catalyst", 1)
+      PM.product("pm-rhenium-platinum-catalyst"):amount(1):done()
     }
   },
   {
@@ -4165,7 +4165,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-coke", 4)
+      PM.product("pm-coke"):amount(4):done()
     }
   },
   {
@@ -4198,8 +4198,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-coke", 4),
-      PM.product("pm-coal-tar", 2)
+      PM.product("pm-coke"):amount(4):done(),
+      PM.product("pm-coal-tar"):amount(2):done()
     }
   },
   {
@@ -4219,8 +4219,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-coke", 2),
-      PM.product_chance("sulfur", 1, 0.66)
+      PM.product("pm-coke"):amount(2):done(),
+      PM.product("sulfur"):amount(1):chance(0.66):done()
     }
   },
   {
@@ -4253,9 +4253,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-coke", 4),
-      PM.product("pm-coal-tar", 2),
-      PM.product("pm-coal-gas", 5, "fluid")
+      PM.product("pm-coke"):amount(4):done(),
+      PM.product("pm-coal-tar"):amount(2):done(),
+      PM.product("pm-coal-gas", "fluid"):amount(5):done()
     }
   },
   {
@@ -4276,9 +4276,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-coke", 1),
-      PM.product_chance("pm-vanadium-oxide-catalyst", 1, 0.9),
-      PM.product_chance("pm-catalyst-container", 1, 0.1)
+      PM.product("pm-coke"):amount(1):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.9):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.1):done()
     }
   },
   {
@@ -4295,7 +4295,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tantalum-contacts", 4)
+      PM.product("pm-tantalum-contacts"):amount(4):done()
     }
   },
   {
@@ -4312,7 +4312,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-niobium-contacts", 4)
+      PM.product("pm-niobium-contacts"):amount(4):done()
     }
   },
   {
@@ -4330,7 +4330,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-speed-module-light", 1)
+      PM.product("pm-advanced-speed-module-light"):amount(1):done()
     }
   },
   {
@@ -4348,7 +4348,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-efficiency-module-light", 1)
+      PM.product("pm-advanced-efficiency-module-light"):amount(1):done()
     }
   },
   {
@@ -4366,7 +4366,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-productivity-module-light", 1)
+      PM.product("pm-advanced-productivity-module-light"):amount(1):done()
     }
   },
   {
@@ -4385,8 +4385,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cyclohexane-carboxaldehyde-solution", 10, "fluid"),
-      PM.catalyst_chance("pm-rhodium-plate", 2, 0.85, 2)
+      PM.product("pm-cyclohexane-carboxaldehyde-solution", "fluid"):amount(10):done(),
+      PM.product("pm-rhodium-plate"):amount(2):chance(0.85):catalyst(2):done()
     }
   },
   {
@@ -4404,8 +4404,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-syngas", {5, 12.5}, "fluid"),
-      PM.product("pm-cyclohexane-carboxaldehyde", 5, "fluid")
+      PM.product("pm-syngas", "fluid"):amount(5, 12.5):done(),
+      PM.product("pm-cyclohexane-carboxaldehyde", "fluid"):amount(5):done()
     }
   },
   {
@@ -4428,7 +4428,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phenylhydrazine-solution", 10, "fluid")
+      PM.product("pm-phenylhydrazine-solution", "fluid"):amount(10):done()
     }
   },
   {
@@ -4448,11 +4448,11 @@ data:extend({
     },
     results =
     {
-      PM.catalyst("pm-hot-coolant", 10, 10, "fluid", 1),
-      PM.product("pm-phenylhydrazine", 5),
-      PM.catalyst("pm-palladium-catalyst", 2, 2),
-      PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.8, 2),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2)
+      PM.product("pm-hot-coolant", "fluid"):amount(10):catalyst(10):index(1):done(),
+      PM.product("pm-phenylhydrazine"):amount(5):done(),
+      PM.product("pm-palladium-catalyst"):amount(2):catalyst(2):done(),
+      PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(2):done()
     }
   },
   {
@@ -4471,8 +4471,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-acetic-acid", 7.5, "fluid"),
-      PM.catalyst_chance("pm-rhodium-plate", 2, 0.85, 2)
+      PM.product("pm-acetic-acid", "fluid"):amount(7.5):done(),
+      PM.product("pm-rhodium-plate"):amount(2):chance(0.85):catalyst(2):done()
     }
   },
   {
@@ -4491,8 +4491,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-1-3-5-oxadiazine-NON-host", 1),
-      PM.catalyst_range("pm-acetic-acid", {0, 10}, 10, "fluid")
+      PM.product("pm-1-3-5-oxadiazine-NON-host"):amount(1):done(),
+      PM.product("pm-acetic-acid", "fluid"):amount(0, 10):catalyst(10):done()
     }
   },
   {
@@ -4510,7 +4510,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phenyllithium", 5)
+      PM.product("pm-phenyllithium"):amount(5):done()
     }
   },
   {
@@ -4528,7 +4528,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-2-phenylpyridine", 10, "fluid"),
+      PM.product("pm-2-phenylpyridine", "fluid"):amount(10):done(),
     }
   },
   {
@@ -4545,7 +4545,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-iridium-trichloride", 6)
+      PM.product("pm-iridium-trichloride"):amount(6):done()
     }
   },
   {
@@ -4562,7 +4562,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-tris-2-phenylpyridine-iridium", 1)
+      PM.product("pm-tris-2-phenylpyridine-iridium"):amount(1):done()
     }
   },
   {
@@ -4580,7 +4580,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ethyl-acetate", 10, "fluid")
+      PM.product("pm-ethyl-acetate", "fluid"):amount(10):done()
     }
   },
   {
@@ -4597,7 +4597,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ir-piq-3-acetate-solution", 12.5, "fluid")
+      PM.product("pm-ir-piq-3-acetate-solution", "fluid"):amount(12.5):done()
     }
   },
   {
@@ -4616,9 +4616,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.75, 2),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 2),
-      PM.product("pm-ir-piq-3", 1)
+      PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.75):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(2):done(),
+      PM.product("pm-ir-piq-3"):amount(1):done()
     }
   },
   {
@@ -4653,7 +4653,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-solar-cell", 3)
+      PM.product("pm-solar-cell"):amount(3):done()
     }
   },
   {
@@ -4669,8 +4669,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-selenium-logistic-robot", 1),
-      PM.product_range_chance("pm-lithium-ion-battery", {1, 2}, 0.66)
+      PM.product("pm-selenium-logistic-robot"):amount(1):done(),
+      PM.product("pm-lithium-ion-battery"):amount(1, 2):chance(0.66):done()
     }
   },
   {
@@ -4686,8 +4686,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-selenium-construction-robot", 1),
-      PM.product_range_chance("pm-lithium-ion-battery", {1, 2}, 0.66)
+      PM.product("pm-selenium-construction-robot"):amount(1):done(),
+      PM.product("pm-lithium-ion-battery"):amount(1, 2):chance(0.66):done()
     }
   },
   {
@@ -4703,7 +4703,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sterling-silver-wire", 1)
+      PM.product("pm-sterling-silver-wire"):amount(1):done()
     }
   },
   {
@@ -4722,9 +4722,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cut-garnet", {0, 4}),
-      PM.catalyst_range_chance("pm-garnet", {2, 6}, 0.9, 6),
-      PM.catalyst_chance("pm-saw", 1, 0.98, 1)
+      PM.product("pm-cut-garnet"):amount(0, 4):done(),
+      PM.product("pm-garnet"):amount(2, 6):chance(0.9):catalyst(6):done(),
+      PM.product("pm-saw"):amount(1):chance(0.98):catalyst(1):done()
     }
   },
   {
@@ -4744,7 +4744,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-YAG-laser", 2),
+      PM.product("pm-YAG-laser"):amount(2):done(),
     }
   },
   {
@@ -4765,7 +4765,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-YAG-laser-head", 1)
+      PM.product("pm-YAG-laser-head"):amount(1):done()
     }
   },
   {
@@ -4785,7 +4785,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-space-processing-unit", 1)
+        PM.product("pm-space-processing-unit"):amount(1):done()
     }
   },
   {
@@ -4825,7 +4825,7 @@ data:extend({
       PM.ingredient("pm-tantalum-contacts", 6)
     },
     results = {
-      PM.product("pm-advanced-processing-breadboard", 1)
+      PM.product("pm-advanced-processing-breadboard"):amount(1):done()
     },
   },
   {
@@ -4865,7 +4865,7 @@ data:extend({
       PM.ingredient("pm-niobium-contacts", 6)
     },
     results = {
-      PM.product("pm-advanced-processing-breadboard", 1)
+      PM.product("pm-advanced-processing-breadboard"):amount(1):done()
     },
   },
   {
@@ -4887,7 +4887,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-advanced-processing-unit", 1)
+        PM.product("pm-advanced-processing-unit"):amount(1):done()
     }
   },
   {
@@ -4907,7 +4907,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-gyroscope", 1)
+        PM.product("pm-gyroscope"):amount(1):done()
     }
   },
   {
@@ -4926,7 +4926,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-processing-integrated-circuits", 3)
+      PM.product("pm-advanced-processing-integrated-circuits"):amount(3):done()
     }
   },
   {
@@ -4946,7 +4946,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-speed-module-5", 1)
+      PM.product("pm-speed-module-5"):amount(1):done()
     }
   },
   {
@@ -4966,7 +4966,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-efficiency-module-5", 1)
+      PM.product("pm-efficiency-module-5"):amount(1):done()
     }
   },
   {
@@ -4986,7 +4986,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-productivity-module-5", 1)
+      PM.product("pm-productivity-module-5"):amount(1):done()
     }
   },
   {
@@ -5007,7 +5007,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-supercapacitor", 1)
+        PM.product("pm-supercapacitor"):amount(1):done()
     }
   },
   {
@@ -5025,7 +5025,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-cobalt-manganese-bromide-catalyst", 1)
+        PM.product("pm-cobalt-manganese-bromide-catalyst"):amount(1):done()
     }
   },
   {
@@ -5044,8 +5044,8 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-terephthaltic-acid", 10, "fluid"),
-        PM.catalyst("pm-cobalt-manganese-bromide-catalyst", 2, 2),
+        PM.product("pm-terephthaltic-acid", "fluid"):amount(10):done(),
+        PM.product("pm-cobalt-manganese-bromide-catalyst"):amount(2):catalyst(2):done(),
     }
   },
   {
@@ -5063,8 +5063,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-dimethyl-terephthalate", 15, "fluid"),
-        PM.catalyst("pm-methanol", 15, 15, "fluid")
+        PM.product("pm-dimethyl-terephthalate", "fluid"):amount(15):done(),
+        PM.product("pm-methanol", "fluid"):amount(15):catalyst(15):done()
     }
   },
   {
@@ -5083,10 +5083,10 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-methanol", 10, "fluid"),
-        PM.product("pm-polyethylene-terephthalate", 5),
-        PM.catalyst_chance("pm-yttrium-catalyst", 2, 0.9, 2),
-        PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2)
+        PM.product("pm-methanol", "fluid"):amount(10):done(),
+        PM.product("pm-polyethylene-terephthalate"):amount(5):done(),
+        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done()
     }
   },
   {
@@ -5104,7 +5104,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-mylar", 4)
+        PM.product("pm-mylar"):amount(4):done()
     }
   },
   {
@@ -5122,7 +5122,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-silicon-carbide", 2)
+        PM.product("pm-silicon-carbide"):amount(2):done()
     }
   },
   {
@@ -5140,9 +5140,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-graphite", 4),
-        PM.catalyst("pm-molten-tungsten", 10, 10, "fluid"),
-        PM.catalyst_chance("pm-ferrosilicon", 2, 0.66, 1)
+        PM.product("pm-graphite"):amount(4):done(),
+        PM.product("pm-molten-tungsten", "fluid"):amount(10):catalyst(10):done(),
+        PM.product("pm-ferrosilicon"):amount(2):chance(0.66):catalyst(1):done()
     }
   },
   {
@@ -5162,8 +5162,8 @@ data:extend({
     },
     results =
     {
-        PM.catalyst("pm-hot-light-coolant", 15, 15, "fluid", 1),
-        PM.product("pm-graphene", 3)
+        PM.product("pm-hot-light-coolant", "fluid"):amount(15):catalyst(15):index(1):done(),
+        PM.product("pm-graphene"):amount(3):done()
     }
   },
   {
@@ -5184,8 +5184,8 @@ data:extend({
     },
     results =
     {
-        PM.catalyst("pm-hot-light-coolant", 15, 15, "fluid", 1),
-        PM.product("pm-silicon-on-sapphire", 3)
+        PM.product("pm-hot-light-coolant", "fluid"):amount(15):catalyst(15):index(1):done(),
+        PM.product("pm-silicon-on-sapphire"):amount(3):done()
     }
   },
   {
@@ -5204,7 +5204,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-space-hardened-shielding", 2)
+        PM.product("pm-space-hardened-shielding"):amount(2):done()
     }
   },
   {
@@ -5222,7 +5222,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-isogrid-crucible", 1)
+        PM.product("pm-isogrid-crucible"):amount(1):done()
     }
   },
   {
@@ -5241,9 +5241,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-high-density-structure", 2),
-        PM.catalyst_chance("pm-isogrid-crucible", 2, 0.85, 2),
-        PM.catalyst("pm-industrial-noble-gas", 15, 15, "fluid")
+        PM.product("pm-high-density-structure"):amount(2):done(),
+        PM.product("pm-isogrid-crucible"):amount(2):chance(0.85):catalyst(2):done(),
+        PM.product("pm-industrial-noble-gas", "fluid"):amount(15):catalyst(15):done()
     }
   },
   {
@@ -5261,7 +5261,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-selenium-sulfur-battery-mk2-equipment", 1)
+      PM.product("pm-selenium-sulfur-battery-mk2-equipment"):amount(1):done()
     }
   },
   {
@@ -5279,7 +5279,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-geothermal-drilling-fluid", 45, "fluid")
+        PM.product("pm-geothermal-drilling-fluid", "fluid"):amount(45):done()
     }
   },
   {
@@ -5295,7 +5295,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-geothermal-bore-mk1", 1)
+        PM.product("pm-geothermal-bore-mk1"):amount(1):done()
     }
   },
   {
@@ -5313,7 +5313,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-geothermal-bore-mk2", 1)
+        PM.product("pm-geothermal-bore-mk2"):amount(1):done()
     }
   },
   {
@@ -5332,7 +5332,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-speed-module-6", 1)
+      PM.product("pm-speed-module-6"):amount(1):done()
     }
   },
   {
@@ -5351,7 +5351,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-efficiency-module-6", 1)
+      PM.product("pm-efficiency-module-6"):amount(1):done()
     }
   },
   {
@@ -5370,7 +5370,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-productivity-module-6", 1)
+      PM.product("pm-productivity-module-6"):amount(1):done()
     }
   },
   {
@@ -5394,7 +5394,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-drilling-fluid", 50, "fluid")
+        PM.product("pm-drilling-fluid", "fluid"):amount(50):done()
     }
   },
   {
@@ -5412,7 +5412,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-nitrobenzene-mixed-acid", 20, "fluid")
+        PM.product("pm-nitrobenzene-mixed-acid", "fluid"):amount(20):done()
     }
   },
   {
@@ -5436,8 +5436,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-nitrobenzene", 40, "fluid"),
-        PM.catalyst_range("pm-iodine", {1, 3}, 3)
+        PM.product("pm-nitrobenzene", "fluid"):amount(40):done(),
+        PM.product("pm-iodine"):amount(1, 3):catalyst(3):done()
     }
   },
   {
@@ -5476,7 +5476,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-burning-oil", 7.5, "fluid")
+        PM.product("pm-burning-oil", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -5495,7 +5495,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-ferrite-magnet", 1)
+        PM.product("pm-ferrite-magnet"):amount(1):done()
     }
   },
   {
@@ -5513,9 +5513,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-monazite-chunks", 12),
-        PM.product_chance("pm-holmium-fluoride", 1, 0.1),
-        PM.product_chance("pm-holmium-chloride", 1, 0.1)
+        PM.product("pm-monazite-chunks"):amount(12):done(),
+        PM.product("pm-holmium-fluoride"):amount(1):chance(0.1):done(),
+        PM.product("pm-holmium-chloride"):amount(1):chance(0.1):done()
     }
   },
   {
@@ -5531,7 +5531,7 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-crushed-monazite", {12, 18})
+        PM.product("pm-crushed-monazite"):amount(12, 18):done()
     }
   },
   {
@@ -5561,9 +5561,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-low-seperated-monazite", 15),
-        PM.product_range("stone", {2, 6}),
-        PM.catalyst_chance("pm-ferrite-magnet", 1, 0.6, 1)
+        PM.product("pm-low-seperated-monazite"):amount(15):done(),
+        PM.product("stone"):amount(2, 6):done(),
+        PM.product("pm-ferrite-magnet"):amount(1):chance(0.6):catalyst(1):done()
     }
   },
   {
@@ -5593,8 +5593,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-medium-seperated-monazite", 14),
-        PM.catalyst_chance("pm-ferrite-magnet", 2, 0.7, 2)
+        PM.product("pm-medium-seperated-monazite"):amount(14):done(),
+        PM.product("pm-ferrite-magnet"):amount(2):chance(0.7):catalyst(2):done()
     }
   },
   {
@@ -5624,8 +5624,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-high-seperated-monazite", 12),
-        PM.catalyst_chance("pm-ferrite-magnet", 3, 0.8, 3)
+        PM.product("pm-high-seperated-monazite"):amount(12):done(),
+        PM.product("pm-ferrite-magnet"):amount(3):chance(0.8):catalyst(3):done()
     }
   },
   {
@@ -5655,8 +5655,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-pure-monazite", 10),
-        PM.catalyst_chance("pm-ferrite-magnet", 4, 0.9, 4)
+        PM.product("pm-pure-monazite"):amount(10):done(),
+        PM.product("pm-ferrite-magnet"):amount(4):chance(0.9):catalyst(4):done()
     }
   },
   {
@@ -5688,10 +5688,10 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-low-seperated-monazite", 15),
-        PM.product_range("stone", {2, 6}),
-        PM.product_range_chance("pm-yttrium-ore", {1, 3}, 0.45),
-        PM.catalyst_chance("pm-neodymium-magnet", 1, 0.93, 1)
+        PM.product("pm-low-seperated-monazite"):amount(15):done(),
+        PM.product("stone"):amount(2, 6):done(),
+        PM.product("pm-yttrium-ore"):amount(1, 3):chance(0.45):done(),
+        PM.product("pm-neodymium-magnet"):amount(1):chance(0.93):catalyst(1):done()
     }
   },
   {
@@ -5723,8 +5723,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-high-seperated-monazite", 14),
-        PM.catalyst_chance("pm-neodymium-magnet", 2, 0.96, 2)
+        PM.product("pm-high-seperated-monazite"):amount(14):done(),
+        PM.product("pm-neodymium-magnet"):amount(2):chance(0.96):catalyst(2):done()
     }
   },
   {
@@ -5756,9 +5756,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-pure-monazite", 12),
-        PM.product_range_chance("pm-trace-thorium", {1, 2}, 0.75),
-        PM.catalyst_chance("pm-neodymium-magnet", 3, 0.99, 3)
+        PM.product("pm-pure-monazite"):amount(12):done(),
+        PM.product("pm-trace-thorium"):amount(1, 2):chance(0.75):done(),
+        PM.product("pm-neodymium-magnet"):amount(3):chance(0.99):catalyst(3):done()
     }
   },
   {
@@ -5775,7 +5775,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-pure-bastnasite", 12)
+        PM.product("pm-pure-bastnasite"):amount(12):done()
     }
   },
   {
@@ -5794,8 +5794,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-leached-bastnasite", 10),
-        PM.product_range("pm-calcium-chloride", {0, 4}),
+        PM.product("pm-leached-bastnasite"):amount(10):done(),
+        PM.product("pm-calcium-chloride"):amount(0, 4):done(),
     }
   },
   {
@@ -5812,9 +5812,9 @@ data:extend({
    },
    results =
    {
-       PM.product("pm-roasted-bastnasite", 8),
-       PM.product_range("pm-patina", {1, 3}),
-       PM.product_chance("pm-ferrosilicon", 1, 0.66)
+       PM.product("pm-roasted-bastnasite"):amount(8):done(),
+       PM.product("pm-patina"):amount(1, 3):done(),
+       PM.product("pm-ferrosilicon"):amount(1):chance(0.66):done()
    }
   },
   {
@@ -5833,10 +5833,10 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-o-phenylenediamine", 20, "fluid"),
-        PM.catalyst("pm-ammonia-gas", 15, 15, "fluid"),
-        PM.catalyst_chance("pm-yttrium-catalyst", 2, 0.75, 2),
-        PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 2)
+        PM.product("pm-o-phenylenediamine", "fluid"):amount(20):done(),
+        PM.product("pm-ammonia-gas", "fluid"):amount(15):catalyst(15):done(),
+        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.75):catalyst(2):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(2):done()
     }
   },
   {
@@ -5854,7 +5854,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-1-10-phenanthroline", 30, "fluid")
+        PM.product("pm-1-10-phenanthroline", "fluid"):amount(30):done()
     }
   },
   {
@@ -5872,7 +5872,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-speed-module-light", 2)
+      PM.product("pm-advanced-speed-module-light"):amount(2):done()
     }
   },
   {
@@ -5890,7 +5890,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-efficiency-module-light", 2)
+      PM.product("pm-advanced-efficiency-module-light"):amount(2):done()
     }
   },
   {
@@ -5908,7 +5908,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-productivity-module-light", 2)
+      PM.product("pm-advanced-productivity-module-light"):amount(2):done()
     }
   },
   {
@@ -5940,7 +5940,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-speed-module-light", 2)
+      PM.product("pm-speed-module-light"):amount(2):done()
     }
   },
   {
@@ -5971,7 +5971,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-efficiency-module-light", 2)
+      PM.product("pm-efficiency-module-light"):amount(2):done()
     }
   },
   {
@@ -6002,7 +6002,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-productivity-module-light", 2)
+      PM.product("pm-productivity-module-light"):amount(2):done()
     }
   },
   {
@@ -6020,7 +6020,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-asteroid-piledriver", 1)
+        PM.product("pm-asteroid-piledriver"):amount(1):done()
     }
   },
 --[[  {
@@ -6059,7 +6059,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-transition-metal-asteroid-miner", 1)
+        PM.product("pm-transition-metal-asteroid-miner"):amount(1):done()
     }
   }--]]
   {
@@ -6078,7 +6078,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-advanced-YAG-laser", 4),
+      PM.product("pm-advanced-YAG-laser"):amount(4):done(),
     }
   },
   {
@@ -6100,7 +6100,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-advanced-YAG-laser-head", 1)
+      PM.product("pm-advanced-YAG-laser-head"):amount(1):done()
     }
   },
   {
@@ -6118,7 +6118,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-light-noble-gas-mixture", 40, "fluid")
+        PM.product("pm-light-noble-gas-mixture", "fluid"):amount(40):done()
     }
   },
   {
@@ -6136,7 +6136,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-heavy-noble-gas-mixture", 40, "fluid")
+        PM.product("pm-heavy-noble-gas-mixture", "fluid"):amount(40):done()
     }
   },
   {
@@ -6154,7 +6154,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-cerium-sulfide-red", 8)
+        PM.product("pm-cerium-sulfide-red"):amount(8):done()
     }
   },
   {
@@ -6173,7 +6173,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-phthalo-green", 8)
+        PM.product("pm-phthalo-green"):amount(8):done()
     }
   },
   {
@@ -6190,7 +6190,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-YInMn-blue", 8)
+        PM.product("pm-YInMn-blue"):amount(8):done()
     }
   },
   {
@@ -6208,7 +6208,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-ReBCO-mixture", 15)
+        PM.product("pm-ReBCO-mixture"):amount(15):done()
     }
   },
   {
@@ -6224,7 +6224,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-superconducting-ReBCO", 2)
+        PM.product("pm-superconducting-ReBCO"):amount(2):done()
     }
   },
   {
@@ -6247,7 +6247,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-neodymium-magnet-alloy", 10, "fluid")
+        PM.product("pm-molten-neodymium-magnet-alloy", "fluid"):amount(10):done()
     }
     },
     {
@@ -6265,8 +6265,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-cooled-neodymium-magnet-block", 2),
-            PM.catalyst_chance("pm-flux-container", 3, 0.66, 3)
+            PM.product("pm-cooled-neodymium-magnet-block"):amount(2):done(),
+            PM.product("pm-flux-container"):amount(3):chance(0.66):catalyst(3):done()
         }
     },
     {
@@ -6283,8 +6283,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-neodymium-magnet-block", 4),
-            PM.product_chance("pm-crucible", 4, 0.75),
+            PM.product("pm-neodymium-magnet-block"):amount(4):done(),
+            PM.product("pm-crucible"):amount(4):chance(0.75):done(),
         }
     },
     {
@@ -6302,9 +6302,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-neodymium-magnet", 4),
-            PM.catalyst_chance("pm-saw", 2, 0.9),
-            PM.catalyst("pm-ferrite-magnet", 4, 4)
+            PM.product("pm-neodymium-magnet"):amount(4):done(),
+            PM.product("pm-saw"):amount(2):catalyst():chance(0.9):done(),
+            PM.product("pm-ferrite-magnet"):amount(4):catalyst(4):done()
         }
     }
 } --[[@as data.RecipePrototype[] ]])

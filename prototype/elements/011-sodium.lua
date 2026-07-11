@@ -78,8 +78,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-sodium-bicarbonate", {10, 15}),
-      PM.product("pm-ammonium-chloride", 10)
+      PM.product("pm-sodium-bicarbonate"):amount(10, 15):done(),
+      PM.product("pm-ammonium-chloride"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -99,9 +99,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ammonia-gas", 10, "fluid"),
-      PM.product("pm-chlorine", 20 , "fluid"),
-      PM.product_range("pm-calcium-chloride", {2, 5})
+      PM.product("pm-ammonia-gas", "fluid"):amount(10):done(),
+      PM.product("pm-chlorine", "fluid"):amount(20 ):done(),
+      PM.product("pm-calcium-chloride"):amount(2, 5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -121,8 +121,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium-carbonate", 20),
-      PM.product_range("pm-carbon-dioxide-gas", {4, 10}, "fluid"),
+      PM.product("pm-sodium-carbonate"):amount(20):done(),
+      PM.product("pm-carbon-dioxide-gas", "fluid"):amount(4, 10):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -143,8 +143,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium", 30),
-      PM.product("pm-carbon-monoxide", 30, "fluid")
+      PM.product("pm-sodium"):amount(30):done(),
+      PM.product("pm-carbon-monoxide", "fluid"):amount(30):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -163,7 +163,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sodium-sulfite", 5)
+      PM.product("pm-sodium-sulfite"):amount(5):done()
     }
   }
 })

@@ -75,10 +75,10 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-bastnasite-ce", 4),
-            PM.catalyst_chance("pm-palladium-catalyst", 4, 0.85, 4),
-            PM.catalyst_chance("pm-catalyst-container", 4, 0.15, 4),
-            PM.product_chance("pm-samarium-oxide", 2, 0.2)
+            PM.product("pm-bastnasite-ce"):amount(4):done(),
+            PM.product("pm-palladium-catalyst"):amount(4):chance(0.85):catalyst(4):done(),
+            PM.product("pm-catalyst-container"):amount(4):chance(0.15):catalyst(4):done(),
+            PM.product("pm-samarium-oxide"):amount(2):chance(0.2):done()
         }
     },
     {
@@ -94,10 +94,10 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-cerium-dioxide", 3),
-            PM.product_range("pm-chlorine", {5, 10}, "fluid"),
-            PM.product_range("pm-hydrogen-gas", {5, 10}, "fluid"),
-            PM.product_range("pm-calcium-chloride", {0, 2}),
+            PM.product("pm-cerium-dioxide"):amount(3):done(),
+            PM.product("pm-chlorine", "fluid"):amount(5, 10):done(),
+            PM.product("pm-hydrogen-gas", "fluid"):amount(5, 10):done(),
+            PM.product("pm-calcium-chloride"):amount(0, 2):done(),
         }
     },
     {
@@ -114,9 +114,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-cerium", 4),
-            PM.catalyst_chance("pm-rhenium-platinum-catalyst", 2, 0.9, 2),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2)
+            PM.product("pm-cerium"):amount(4):done(),
+            PM.product("pm-rhenium-platinum-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done()
         }
     },
     {
@@ -131,7 +131,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-cerium-plate", 1)
+            PM.product("pm-cerium-plate"):amount(1):done()
         }
     }
 })

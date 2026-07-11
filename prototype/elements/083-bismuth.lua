@@ -75,7 +75,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bismuth-chunks", 4)
+      PM.product("pm-bismuth-chunks"):amount(4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -96,8 +96,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bismite", 4),
-      PM.catalyst_range("pm-tin-ore", {1, 3}, 2)
+      PM.product("pm-bismite"):amount(4):done(),
+      PM.product("pm-tin-ore"):amount(1, 3):catalyst(2):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -119,9 +119,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-bismite", {4, 6}),
-      PM.catalyst("pm-flux-container", 1, 1),
-      PM.catalyst_range("pm-tin-ore", {1, 4}, 3)
+      PM.product("pm-bismite"):amount(4, 6):done(),
+      PM.product("pm-flux-container"):amount(1):catalyst(1):done(),
+      PM.product("pm-tin-ore"):amount(1, 4):catalyst(3):done()
     }
   },
   {
@@ -142,9 +142,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bismuth-ore", 8),
-      PM.product_range("pm-mixed-ore-slag", {0, 3}),
-      PM.catalyst("pm-hot-coolant", 5, 5, "fluid", 1)
+      PM.product("pm-bismuth-ore"):amount(8):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 3):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(5):catalyst(5):index(1):done()
     }
   },
   {
@@ -178,9 +178,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bismuth-ore", 8),
-      PM.product_range("pm-mixed-ore-slag", {0, 2}),
-      PM.catalyst("pm-hot-coolant", 2.5, 2.5, "fluid", 1)
+      PM.product("pm-bismuth-ore"):amount(8):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 2):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(2.5):catalyst(2.5):index(1):done()
     }
   },
 })

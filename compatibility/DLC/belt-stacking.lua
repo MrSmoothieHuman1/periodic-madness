@@ -51,7 +51,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-stack-inserter", 1)
+        PM.product("pm-stack-inserter"):amount(1):done()
     }
 },
 {
@@ -70,7 +70,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-express-stack-inserter", 1)
+        PM.product("pm-express-stack-inserter"):amount(1):done()
     }
 },
 

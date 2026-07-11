@@ -107,9 +107,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-calcite", {0, 4}),
-      PM.product_range("pm-anhydrite", {3, 6}),
-      PM.product_range("pm-sylvite", {4, 8})
+      PM.product("pm-calcite"):amount(0, 4):done(),
+      PM.product("pm-anhydrite"):amount(3, 6):done(),
+      PM.product("pm-sylvite"):amount(4, 8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -128,8 +128,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-potash", {2, 4}),
-      PM.product_chance("stone", 5, 0.85)
+      PM.product("pm-potash"):amount(2, 4):done(),
+      PM.product("stone"):amount(5):chance(0.85):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -148,9 +148,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-calcium-sulfate", {1, 5}, 0.75),
-      PM.product("pm-potash", 3),
-      PM.product_range_chance("pm-sodium", {0, 3}, 0.15)
+      PM.product("pm-calcium-sulfate"):amount(1, 5):chance(0.75):done(),
+      PM.product("pm-potash"):amount(3):done(),
+      PM.product("pm-sodium"):amount(0, 3):chance(0.15):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -176,8 +176,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sea-salt", 6),
-      PM.product("pm-potassium", 6)
+      PM.product("pm-sea-salt"):amount(6):done(),
+      PM.product("pm-potassium"):amount(6):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -195,8 +195,8 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-potassium-hydroxide", 5, "fluid"),
-        PM.product_range("pm-hydrogen-gas", {0, 7.5}, "fluid")
+        PM.product("pm-potassium-hydroxide", "fluid"):amount(5):done(),
+        PM.product("pm-hydrogen-gas", "fluid"):amount(0, 7.5):done()
     }
   },
   {
@@ -215,8 +215,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-potassium-permanganate", 5),
-        PM.product("pm-potassium-hydroxide", 5, "fluid")
+        PM.product("pm-potassium-permanganate"):amount(5):done(),
+        PM.product("pm-potassium-hydroxide", "fluid"):amount(5):done()
     }
   }
 })

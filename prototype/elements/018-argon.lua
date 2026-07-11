@@ -40,7 +40,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-argon-air-filter", 2)
+        PM.product("pm-argon-air-filter"):amount(2):done()
     }
   },
   {
@@ -57,9 +57,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-argon-gas", 12.5, "fluid"),
-        PM.product_chance("pm-trace-gas", 15, 0.5, "fluid"),
-        PM.catalyst_chance("pm-argon-air-filter", 1, 0.5, 1)
+        PM.product("pm-argon-gas", "fluid"):amount(12.5):done(),
+        PM.product("pm-trace-gas", "fluid"):amount(15):chance(0.5):done(),
+        PM.product("pm-argon-air-filter"):amount(1):chance(0.5):catalyst(1):done()
     }
   },
 {
@@ -91,9 +91,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-industrial-noble-gas", 5, "fluid"),
-        PM.product_chance("pm-cobalt-catalyst", 2, 0.8),
-        PM.product_chance("pm-catalyst-container", 2, 0.2)
+        PM.product("pm-industrial-noble-gas", "fluid"):amount(5):done(),
+        PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0.2):done()
     }
 },
 {

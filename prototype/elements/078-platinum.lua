@@ -63,8 +63,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-froth", 5, "fluid"),
-      PM.product("pm-nickel-tailings", 10, "fluid")
+      PM.product("pm-nickel-froth", "fluid"):amount(5):done(),
+      PM.product("pm-nickel-tailings", "fluid"):amount(10):done()
     }
   },
   {
@@ -86,9 +86,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-nickel-chunk", {2, 4}),
-      PM.product("pm-platinum-powder", 8),
-      PM.product_range_chance("pm-ferrum", {2, 5}, 0.5)
+      PM.product("pm-nickel-chunk"):amount(2, 4):done(),
+      PM.product("pm-platinum-powder"):amount(8):done(),
+      PM.product("pm-ferrum"):amount(2, 5):chance(0.5):done()
     }
   },
   {
@@ -108,8 +108,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-platinum-ore", {1, 3}),
-      PM.product_range_chance("pm-ammonium-chloride", {1, 2}, 0.6)
+      PM.product("pm-platinum-ore"):amount(1, 3):done(),
+      PM.product("pm-ammonium-chloride"):amount(1, 2):chance(0.6):done()
     }
   },
   {
@@ -133,8 +133,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-nickel-tailings", {2, 8}, "fluid"),
-      PM.product_chance("pm-nickel-froth", 5, 0.9, "fluid")
+      PM.product("pm-nickel-tailings", "fluid"):amount(2, 8):done(),
+      PM.product("pm-nickel-froth", "fluid"):amount(5):chance(0.9):done()
     }
   },
 
@@ -156,9 +156,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-nickel-chunk", {0, 2}),
-      PM.product("pm-platinum-powder", 8),
-      PM.product_chance("pm-flux-container", 1, 0.66)
+      PM.product("pm-nickel-chunk"):amount(0, 2):done(),
+      PM.product("pm-platinum-powder"):amount(8):done(),
+      PM.product("pm-flux-container"):amount(1):chance(0.66):done()
     }
   },
   {
@@ -172,7 +172,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-platinum-ore", 1) },
     results = {
-      PM.product("pm-platinum-plate", 1)
+      PM.product("pm-platinum-plate"):amount(1):done()
     }
   },
   {
@@ -206,7 +206,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-platinum", 5, "fluid")
+      PM.product("pm-molten-platinum", "fluid"):amount(5):done()
     }
   },
   {
@@ -227,8 +227,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-platinum-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-platinum-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

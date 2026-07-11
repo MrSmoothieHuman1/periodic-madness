@@ -91,8 +91,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-sassolite", {2, 5}),
-      PM.product_range("pm-calcite", {1, 6}),
+      PM.product("pm-sassolite"):amount(2, 5):done(),
+      PM.product("pm-calcite"):amount(1, 6):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -119,9 +119,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-diluted-boric-acid", 20, "fluid"),
-      PM.product("sulfur", 4),
-      PM.product_range("pm-patina", {2, 6})
+      PM.product("pm-diluted-boric-acid", "fluid"):amount(20):done(),
+      PM.product("sulfur"):amount(4):done(),
+      PM.product("pm-patina"):amount(2, 6):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -150,9 +150,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ethylolamine", 10, "fluid"),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.75, 2),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 2)
+      PM.product("pm-ethylolamine", "fluid"):amount(10):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.75):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(2):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -170,7 +170,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-boron", 20, "fluid"),
+      PM.product("pm-boron", "fluid"):amount(20):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -195,7 +195,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-borax", 5)
+      PM.product("pm-borax"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -221,7 +221,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-boric-oxide", 5)
+      PM.product("pm-boric-oxide"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]]
 })

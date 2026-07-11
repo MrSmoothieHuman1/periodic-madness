@@ -102,7 +102,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-molybdenum-porphyry-deposit", 14)
+            PM.product("pm-molybdenum-porphyry-deposit"):amount(14):done()
         }
     },
     {
@@ -121,9 +121,9 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-rhenium-chunks", 1, 0.05),
-            PM.product_chance("pm-molybdenite-powder", 3, 0.458),
-            PM.product_chance("stone", 5, 0.525)
+            PM.product("pm-rhenium-chunks"):amount(1):chance(0.05):done(),
+            PM.product("pm-molybdenite-powder"):amount(3):chance(0.458):done(),
+            PM.product("stone"):amount(5):chance(0.525):done()
         }
     },
     {
@@ -143,10 +143,10 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-rhenium-chunks", 3, 0.2),
-            PM.product_chance("pm-molybdenite-powder", 3, 0.54),
-            PM.product_chance("stone", 3, 0.46),
-            PM.catalyst("pm-rhenium-platinum-catalyst", 4, 4)
+            PM.product("pm-rhenium-chunks"):amount(3):chance(0.2):done(),
+            PM.product("pm-molybdenite-powder"):amount(3):chance(0.54):done(),
+            PM.product("stone"):amount(3):chance(0.46):done(),
+            PM.product("pm-rhenium-platinum-catalyst"):amount(4):catalyst(4):done()
         }
     },
     {
@@ -165,8 +165,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-rhenium-oxide", 2),
-            PM.product_range("pm-ferrum", {1, 2})
+            PM.product("pm-rhenium-oxide"):amount(2):done(),
+            PM.product("pm-ferrum"):amount(1, 2):done()
         }
     },
     {
@@ -191,8 +191,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-perrhenic-acid", 20, "fluid"),
-            PM.product("pm-ammonia-gas", 2, "fluid")
+            PM.product("pm-perrhenic-acid", "fluid"):amount(20):done(),
+            PM.product("pm-ammonia-gas", "fluid"):amount(2):done()
         }
     },
     {
@@ -212,8 +212,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-ammonium-perrhenate", 5),
-            PM.catalyst("pm-hot-coolant", 5, 5, "fluid", 1)
+            PM.product("pm-ammonium-perrhenate"):amount(5):done(),
+            PM.product("pm-hot-coolant", "fluid"):amount(5):catalyst(5):index(1):done()
         }
     },
     {
@@ -232,7 +232,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-rhenium-ore", 5),
+            PM.product("pm-rhenium-ore"):amount(5):done(),
         }
     },
     {
@@ -250,7 +250,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-rhenium-plate", 1)
+            PM.product("pm-rhenium-plate"):amount(1):done()
         }
     }
 })

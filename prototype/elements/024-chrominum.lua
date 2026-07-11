@@ -74,7 +74,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chromite", 8)
+      PM.product("pm-chromite"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -93,7 +93,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ferrochromium", 4),
+      PM.product("pm-ferrochromium"):amount(4):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -112,8 +112,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-chromium-ore", {2, 4}),
-      PM.product_chance("pm-ferrum", 2, 0.75)
+      PM.product("pm-chromium-ore"):amount(2, 4):done(),
+      PM.product("pm-ferrum"):amount(2):chance(0.75):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -133,7 +133,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chromic-acid", 100, "fluid")
+      PM.product("pm-chromic-acid", "fluid"):amount(100):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -166,7 +166,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chromite", 8)
+      PM.product("pm-chromite"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -186,7 +186,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-chrome-green", 6)
+      PM.product("pm-chrome-green"):amount(6):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -207,9 +207,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-chromium-ore", {4, 6}),
-      PM.product_range("pm-sulfur-dioxide", {8, 15}, "fluid"),
-      PM.product_range_chance("pm-carbon-dioxide-gas", {6, 15}, 0.65, "fluid")
+      PM.product("pm-chromium-ore"):amount(4, 6):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(8, 15):done(),
+      PM.product("pm-carbon-dioxide-gas", "fluid"):amount(6, 15):chance(0.65):done()
     }
   }
 })

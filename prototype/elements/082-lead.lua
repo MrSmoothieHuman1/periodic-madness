@@ -81,7 +81,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lead-chunks", 4)
+      PM.product("pm-lead-chunks"):amount(4):done()
     }
   },  
   {
@@ -100,8 +100,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-lead-powder", {6, 8}),
-      PM.product_chance("pm-mixed-ore-slag", 2, 0.5)
+      PM.product("pm-lead-powder"):amount(6, 8):done(),
+      PM.product("pm-mixed-ore-slag"):amount(2):chance(0.5):done()
     }
   },
   {
@@ -121,8 +121,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lead-froth", 30, "fluid"),
-      PM.product_range("pm-acidic-water", {10, 20}, "fluid"),
+      PM.product("pm-lead-froth", "fluid"):amount(30):done(),
+      PM.product("pm-acidic-water", "fluid"):amount(10, 20):done(),
     }
   },
   {
@@ -141,8 +141,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-thallium-ore", 2, 0.2),
-      PM.product("pm-impure-lead", 2)
+      PM.product("pm-thallium-ore"):amount(2):chance(0.2):done(),
+      PM.product("pm-impure-lead"):amount(2):done()
     }
   },
   {
@@ -162,7 +162,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lead-ore", 4)
+      PM.product("pm-lead-ore"):amount(4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -183,8 +183,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-molten-lead", {4.5, 5}, "fluid"),
-      PM.product_range_chance("pm-mixed-ore-slag", {0, 3}, 0.5)
+      PM.product("pm-molten-lead", "fluid"):amount(4.5, 5):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 3):chance(0.5):done()
     }
   },
   {
@@ -198,7 +198,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-lead-ore", 1) },
     results = {
-      PM.product("pm-lead-plate", 1)
+      PM.product("pm-lead-plate"):amount(1):done()
     }
   },
   {
@@ -232,7 +232,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-lead", 5, "fluid")
+      PM.product("pm-molten-lead", "fluid"):amount(5):done()
     }
   },
   {
@@ -253,8 +253,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lead-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-lead-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

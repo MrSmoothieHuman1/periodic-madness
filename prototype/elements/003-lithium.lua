@@ -66,7 +66,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-brine", 25, "fluid")
+      PM.product("pm-brine", "fluid"):amount(25):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -86,7 +86,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-brine", 25, "fluid")
+      PM.product("pm-brine", "fluid"):amount(25):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -105,8 +105,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-low-brine", 150, "fluid"),
-      PM.product_range("pm-lithium-chloride", {2, 4})
+      PM.product("pm-low-brine", "fluid"):amount(150):done(),
+      PM.product("pm-lithium-chloride"):amount(2, 4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -125,8 +125,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-med-brine", 150, "fluid"),
-      PM.product_range("pm-lithium-chloride", {4, 8})
+      PM.product("pm-med-brine", "fluid"):amount(150):done(),
+      PM.product("pm-lithium-chloride"):amount(4, 8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -145,8 +145,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-high-brine", 100, "fluid"),
-      PM.product_range("pm-lithium-chloride", {8, 12})
+      PM.product("pm-high-brine", "fluid"):amount(100):done(),
+      PM.product("pm-lithium-chloride"):amount(8, 12):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -165,7 +165,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-chloride", 12)
+      PM.product("pm-lithium-chloride"):amount(12):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -184,8 +184,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-ore", 5),
-      PM.product_range("pm-chlorine", {3, 5}, "fluid")
+      PM.product("pm-lithium-ore"):amount(5):done(),
+      PM.product("pm-chlorine", "fluid"):amount(3, 5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -206,8 +206,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-hydroxide", 10, "fluid"),
-      PM.product_range_chance("pm-calcium-sulfate", {1, 3}, 0.5)
+      PM.product("pm-lithium-hydroxide", "fluid"):amount(10):done(),
+      PM.product("pm-calcium-sulfate"):amount(1, 3):chance(0.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -232,7 +232,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-bromide", 5)
+      PM.product("pm-lithium-bromide"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]]
 })

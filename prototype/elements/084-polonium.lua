@@ -81,7 +81,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-proton-beam", 20, "fluid")
+      PM.product("pm-proton-beam", "fluid"):amount(20):done()
     }
   },
   {
@@ -99,8 +99,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-bismuth-ore", {4, 15}, 0.25),
-      PM.product_range_chance("pm-bismuth-210", {6, 15}, 0.75)
+      PM.product("pm-bismuth-ore"):amount(4, 15):chance(0.25):done(),
+      PM.product("pm-bismuth-210"):amount(6, 15):chance(0.75):done()
     }
   },
   {
@@ -120,8 +120,8 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-polonium-210", {2, 3}, 2),
-      PM.catalyst_range("pm-bismuth-210", {2, 3}, 2),
+      PM.product("pm-polonium-210"):amount(2, 3):catalyst(2):done(),
+      PM.product("pm-bismuth-210"):amount(2, 3):catalyst(2):done(),
     }
   },
   {
@@ -139,7 +139,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-polonium-fuel-cell", 2)
+      PM.product("pm-polonium-fuel-cell"):amount(2):done()
     }
   },
   {
@@ -158,10 +158,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-empty-reactor-cell", {3, 5}),
-      PM.product_range("pm-lead-ore", {1, 5}),
-      PM.product_range("pm-helium-gas", {2, 5}, "fluid"),
-      PM.product_chance("pm-bismuth-210", 4, 0.75)
+      PM.product("pm-empty-reactor-cell"):amount(3, 5):done(),
+      PM.product("pm-lead-ore"):amount(1, 5):done(),
+      PM.product("pm-helium-gas", "fluid"):amount(2, 5):done(),
+      PM.product("pm-bismuth-210"):amount(4):chance(0.75):done()
     }
   },
   {
@@ -183,9 +183,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst("pm-polonium-210", 24, 20),
-      PM.catalyst("pm-bismuth-210", 1, 1),
-      PM.catalyst("pm-trace-astatine-211", 1, 1)
+      PM.product("pm-polonium-210"):amount(24):catalyst(20):done(),
+      PM.product("pm-bismuth-210"):amount(1):catalyst(1):done(),
+      PM.product("pm-trace-astatine-211"):amount(1):catalyst(1):done()
     }
   },
 
@@ -204,7 +204,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-polonium-fuel-rod", 5)
+      PM.product("pm-polonium-fuel-rod"):amount(5):done()
     }
   },
 })

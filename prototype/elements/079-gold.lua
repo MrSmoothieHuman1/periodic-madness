@@ -69,7 +69,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-gold-chunks", 5),
+      PM.product("pm-gold-chunks"):amount(5):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -100,8 +100,8 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-gold-ore", 10),
-      PM.product("pm-mercury-vapour", 5, "fluid")
+      PM.product("pm-gold-ore"):amount(10):done(),
+      PM.product("pm-mercury-vapour", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -140,7 +140,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-gold-chunks", 5),
+      PM.product("pm-gold-chunks"):amount(5):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -154,7 +154,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-gold-ore", 1) },
     results = {
-      PM.product("pm-gold-plate", 1)
+      PM.product("pm-gold-plate"):amount(1):done()
     }
   },
   {
@@ -188,7 +188,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-gold", 5, "fluid")
+      PM.product("pm-molten-gold", "fluid"):amount(5):done()
     }
   },
   {
@@ -209,8 +209,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-gold-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-gold-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

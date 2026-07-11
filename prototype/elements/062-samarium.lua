@@ -107,7 +107,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-mixed-samarium-deposit", 6)
+            PM.product("pm-mixed-samarium-deposit"):amount(6):done()
         }
     },
     {
@@ -126,10 +126,10 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-lightly-seperated-samarium-deposit", 3),
-            PM.product("pm-medium-seperated-samarium-deposit", 2),
-            PM.product("pm-highly-seperated-samarium-deposit", 1),
-            PM.product_chance("pm-samarium-oxide", 1, 0.5)
+            PM.product("pm-lightly-seperated-samarium-deposit"):amount(3):done(),
+            PM.product("pm-medium-seperated-samarium-deposit"):amount(2):done(),
+            PM.product("pm-highly-seperated-samarium-deposit"):amount(1):done(),
+            PM.product("pm-samarium-oxide"):amount(1):chance(0.5):done()
         }
     },
     {
@@ -146,7 +146,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-medium-seperated-samarium-deposit", 3)
+            PM.product("pm-medium-seperated-samarium-deposit"):amount(3):done()
         }
     },
     {
@@ -163,7 +163,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-highly-seperated-samarium-deposit", 3)
+            PM.product("pm-highly-seperated-samarium-deposit"):amount(3):done()
         }
     },
     {
@@ -180,7 +180,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-samarium-oxide", 3)
+            PM.product("pm-samarium-oxide"):amount(3):done()
         }
     },
     {
@@ -202,9 +202,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-samarium", 5),
-            PM.product_chance("pm-radium-ore", 3, 0.5),
-            PM.product("pm-oxygen-gas", 36, "fluid")
+            PM.product("pm-samarium"):amount(5):done(),
+            PM.product("pm-radium-ore"):amount(3):chance(0.5):done(),
+            PM.product("pm-oxygen-gas", "fluid"):amount(36):done()
         }
     },
 })

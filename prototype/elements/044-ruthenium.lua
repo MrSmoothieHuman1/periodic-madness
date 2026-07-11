@@ -72,7 +72,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-ruthenium-filtered-anode-sludge", 12, "fluid")
+            PM.product("pm-ruthenium-filtered-anode-sludge", "fluid"):amount(12):done()
         }
     },
     {
@@ -104,7 +104,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-ammonium-ruthenium-chloride", 4),
+            PM.product("pm-ammonium-ruthenium-chloride"):amount(4):done(),
         }
     },
     {
@@ -137,7 +137,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-ammonium-ruthenium-chloride", 4),
+            PM.product("pm-ammonium-ruthenium-chloride"):amount(4):done(),
         }
     },
     {
@@ -157,10 +157,10 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-ruthenium-ore", 3),
-            PM.product_range("pm-ammonia-gas", {1.5, 2}, "fluid"),
-            PM.product_chance("pm-cobalt-catalyst", 2, 0.85),
-            PM.product_chance("pm-catalyst-container", 2, 0.15)
+            PM.product("pm-ruthenium-ore"):amount(3):done(),
+            PM.product("pm-ammonia-gas", "fluid"):amount(1.5, 2):done(),
+            PM.product("pm-cobalt-catalyst"):amount(2):chance(0.85):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.15):done()
         }
     },
     {
@@ -178,7 +178,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-ruthenium-plate", 1)
+            PM.product("pm-ruthenium-plate"):amount(1):done()
         }
     },
 
@@ -195,7 +195,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-ruthenium-sulfide", 3)
+            PM.product("pm-ruthenium-sulfide"):amount(3):done()
         }
     }
 })

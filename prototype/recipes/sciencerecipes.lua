@@ -17,7 +17,7 @@ data:extend({
     enabled = false,
     results =   
     {
-        PM.product("pm-advanced-advanced-transition-metal-science-pack", 1),
+        PM.product("pm-advanced-advanced-transition-metal-science-pack"):amount(1):done(),
     }
 },
 {
@@ -41,7 +41,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-post-transition-metal-science-pack", 1),
+        PM.product("pm-post-transition-metal-science-pack"):amount(1):done(),
     }
 },
 {
@@ -64,8 +64,8 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-alkali-metal-science-pack", 1),
-        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 2)
+        PM.product("pm-alkali-metal-science-pack"):amount(1):done(),
+        PM.product("pm-empty-glass-ampule"):amount(2):chance(0.8):catalyst(2):done()
     }
 },
 {
@@ -89,7 +89,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-metalloid-science-pack", 1),
+        PM.product("pm-metalloid-science-pack"):amount(1):done(),
     }
 },
 {
@@ -111,7 +111,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-alkaline-earth-metal-science-pack", 1),
+        PM.product("pm-alkaline-earth-metal-science-pack"):amount(1):done(),
     }
 },
 {
@@ -148,7 +148,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 1),
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack"):amount(1):done(),
     }
 },
 {
@@ -185,7 +185,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 1),
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack"):amount(1):done(),
     }
 },
 {
@@ -205,7 +205,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-noble-gas-science-pack", 1)
+        PM.product("pm-noble-gas-science-pack"):amount(1):done()
     }
 },
 {
@@ -236,7 +236,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-lanthanide-science-pack", 10)
+        PM.product("pm-lanthanide-science-pack"):amount(10):done()
     }
 },
 --MARK: Plastic Science
@@ -258,7 +258,7 @@ data:extend({
     },
     results =
     {
-        PM.product("automation-science-pack", 2)
+        PM.product("automation-science-pack"):amount(2):done()
     }
 },
 {
@@ -281,7 +281,7 @@ data:extend({
     },
     results =
     {
-        PM.product("logistic-science-pack", 2)
+        PM.product("logistic-science-pack"):amount(2):done()
     }
 },
 {
@@ -304,7 +304,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-advanced-advanced-transition-metal-science-pack", 2),
+        PM.product("pm-advanced-advanced-transition-metal-science-pack"):amount(2):done(),
     }
 },
 {
@@ -329,7 +329,7 @@ data:extend({
     },
     results =
     {
-        PM.product("chemical-science-pack", 2)
+        PM.product("chemical-science-pack"):amount(2):done()
     }
 },
 {
@@ -355,7 +355,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-post-transition-metal-science-pack", 2),
+        PM.product("pm-post-transition-metal-science-pack"):amount(2):done(),
     }
 },
 {
@@ -380,8 +380,8 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-alkali-metal-science-pack", 2),
-        PM.catalyst_chance("pm-empty-glass-ampule", 2, 0.8, 2)
+        PM.product("pm-alkali-metal-science-pack"):amount(2):done(),
+        PM.product("pm-empty-glass-ampule"):amount(2):chance(0.8):catalyst(2):done()
     }
 },
 {
@@ -407,7 +407,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-metalloid-science-pack", 2),
+        PM.product("pm-metalloid-science-pack"):amount(2):done(),
     }
 },
 {
@@ -431,7 +431,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-alkaline-earth-metal-science-pack", 2),
+        PM.product("pm-alkaline-earth-metal-science-pack"):amount(2):done(),
     }
 },
 {
@@ -467,7 +467,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 2),
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack"):amount(2):done(),
     }
 },
 {
@@ -503,7 +503,7 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 2),
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack"):amount(2):done(),
     }
 },
 
@@ -526,7 +526,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("automation-science-pack", 10)
+        PM.product("automation-science-pack"):amount(10):done()
     }
 },
 {
@@ -548,7 +548,7 @@ data:extend({
     },
     results =
     {
-        PM.product("logistic-science-pack", 10)
+        PM.product("logistic-science-pack"):amount(10):done()
     }
 },
 {
@@ -569,7 +569,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-advanced-advanced-transition-metal-science-pack", 10)
+        PM.product("pm-advanced-advanced-transition-metal-science-pack"):amount(10):done()
     }
 },
 {
@@ -594,7 +594,7 @@ data:extend({
     },
     results =
     {
-        PM.product("chemical-science-pack", 10)
+        PM.product("chemical-science-pack"):amount(10):done()
     }
 },
 {
@@ -618,7 +618,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-post-transition-metal-science-pack", 10)
+        PM.product("pm-post-transition-metal-science-pack"):amount(10):done()
     }
 },
 {
@@ -640,8 +640,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-alkali-metal-science-pack", 10),
-        PM.catalyst_chance("pm-empty-glass-ampule", 20, 0.95, 20)
+        PM.product("pm-alkali-metal-science-pack"):amount(10):done(),
+        PM.product("pm-empty-glass-ampule"):amount(20):chance(0.95):catalyst(20):done()
     }
 },
 {
@@ -662,7 +662,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-metalloid-science-pack", 10),
+        PM.product("pm-metalloid-science-pack"):amount(10):done(),
     }
 },
 {
@@ -682,7 +682,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-alkaline-earth-metal-science-pack", 10),
+        PM.product("pm-alkaline-earth-metal-science-pack"):amount(10):done(),
     }
 },
 {
@@ -705,7 +705,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack", 10),
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack"):amount(10):done(),
     }
 },
 {
@@ -721,7 +721,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-noble-gas-science-pack", 10),
+        PM.product("pm-noble-gas-science-pack"):amount(10):done(),
     }
 },
 
@@ -757,8 +757,8 @@ data:extend({
     },
     results =
     {
-        PM.product("automation-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
+        PM.product("automation-science-pack"):amount(5):done(),
+        PM.product("pm-empty-glass-ampule"):amount(1, 3):chance(0.95):catalyst(3):done()
     }
 },
 {
@@ -791,8 +791,8 @@ data:extend({
     },
     results =
     {
-        PM.product("logistic-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
+        PM.product("logistic-science-pack"):amount(5):done(),
+        PM.product("pm-empty-glass-ampule"):amount(1, 3):chance(0.95):catalyst(3):done()
     }
 },
 {
@@ -825,8 +825,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-advanced-advanced-transition-metal-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
+        PM.product("pm-advanced-advanced-transition-metal-science-pack"):amount(5):done(),
+        PM.product("pm-empty-glass-ampule"):amount(1, 3):chance(0.95):catalyst(3):done()
     }
 },
 {
@@ -860,8 +860,8 @@ data:extend({
     },
     results =
     {
-        PM.product("chemical-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
+        PM.product("chemical-science-pack"):amount(5):done(),
+        PM.product("pm-empty-glass-ampule"):amount(1, 3):chance(0.95):catalyst(3):done()
     }
 },
 {
@@ -894,8 +894,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-post-transition-metal-science-pack", 5),
-        PM.catalyst_range_chance("pm-empty-glass-ampule", {1, 3}, 0.95, 3)
+        PM.product("pm-post-transition-metal-science-pack"):amount(5):done(),
+        PM.product("pm-empty-glass-ampule"):amount(1, 3):chance(0.95):catalyst(3):done()
     }
 },
 
@@ -918,8 +918,8 @@ data:extend({
     enabled = false,
     results =
     {
-        PM.product("pm-experimental-research-data", 5),
-        PM.catalyst("pm-empty-glass-ampule", 5, 5)
+        PM.product("pm-experimental-research-data"):amount(5):done(),
+        PM.product("pm-empty-glass-ampule"):amount(5):catalyst(5):done()
     }
 },
 
@@ -940,7 +940,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-blank-bio-module", 1)
+      PM.product("pm-blank-bio-module"):amount(1):done()
     }
 },
 {
@@ -959,7 +959,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-agility-bio-module", 1)
+      PM.product("pm-agility-bio-module"):amount(1):done()
     }
 },
 {
@@ -978,7 +978,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-health-bio-module", 1)
+      PM.product("pm-health-bio-module"):amount(1):done()
     }
 },
 {
@@ -997,7 +997,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-strength-bio-module", 1)
+      PM.product("pm-strength-bio-module"):amount(1):done()
     }
 },
 })

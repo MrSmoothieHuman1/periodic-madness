@@ -33,7 +33,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-acidic-brine", 10, "fluid")
+      PM.product("pm-acidic-brine", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -53,7 +53,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-iodine-solution", 10, "fluid")
+      PM.product("pm-iodine-solution", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -71,7 +71,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-hydrogen-iodide", 20, "fluid")
+      PM.product("pm-hydrogen-iodide", "fluid"):amount(20):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -92,8 +92,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-iodine", {5, 8}),
-      PM.product("pm-hydrochloric-acid", 5, "fluid")
+      PM.product("pm-iodine"):amount(5, 8):done(),
+      PM.product("pm-hydrochloric-acid", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]]
 })

@@ -17,9 +17,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-carbon-monoxide", 20, "fluid"),
-      PM.catalyst("pm-zirconia", 4, 4),
-      PM.product("pm-oxygen-gas", 10, "fluid")
+      PM.product("pm-carbon-monoxide", "fluid"):amount(20):done(),
+      PM.product("pm-zirconia"):amount(4):catalyst(4):done(),
+      PM.product("pm-oxygen-gas", "fluid"):amount(10):done()
     }
   },
   {
@@ -37,10 +37,10 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-oxygen-gas", 15, "fluid"),
-        PM.product("pm-hydrogen-gas", 20, "fluid"),
-        PM.product_chance("sulfur", 1, 0.66),
-        PM.product_range("stone", {1, 2})
+        PM.product("pm-oxygen-gas", "fluid"):amount(15):done(),
+        PM.product("pm-hydrogen-gas", "fluid"):amount(20):done(),
+        PM.product("sulfur"):amount(1):chance(0.66):done(),
+        PM.product("stone"):amount(1, 2):done()
     }
   },
   {
@@ -59,8 +59,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-oxygen-gas", 20, "fluid"),
-        PM.product("pm-hydrogen-gas", 30, "fluid")
+        PM.product("pm-oxygen-gas", "fluid"):amount(20):done(),
+        PM.product("pm-hydrogen-gas", "fluid"):amount(30):done()
     }
   },
   {
@@ -79,9 +79,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-oxygen-gas", 25, "fluid"),
-        PM.product("pm-hydrogen-gas", 35, "fluid"),
-        PM.product_range("pm-platinum-plate", {2, 4})
+        PM.product("pm-oxygen-gas", "fluid"):amount(25):done(),
+        PM.product("pm-hydrogen-gas", "fluid"):amount(35):done(),
+        PM.product("pm-platinum-plate"):amount(2, 4):done()
     }
   }
 } --[[@as data.RecipePrototype[] ]])

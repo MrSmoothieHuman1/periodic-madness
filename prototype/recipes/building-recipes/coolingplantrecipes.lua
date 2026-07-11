@@ -16,7 +16,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-coolant", 10, "fluid")
+        PM.product("pm-coolant", "fluid"):amount(10):done()
     }
 },
 {
@@ -35,7 +35,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-light-coolant", 10, "fluid")
+        PM.product("pm-light-coolant", "fluid"):amount(10):done()
     }
 },
 
@@ -53,7 +53,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-coolant", 9.5, "fluid")
+        PM.product("pm-coolant", "fluid"):amount(9.5):done()
     }
 },
 {
@@ -70,7 +70,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-light-coolant", 9.75, "fluid")
+        PM.product("pm-light-coolant", "fluid"):amount(9.75):done()
     }
 },
 })

@@ -30,7 +30,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heating-plating", 2)
+      PM.product("pm-heating-plating"):amount(2):done()
     }
   },
   {
@@ -61,7 +61,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heating-plating", 2)
+      PM.product("pm-heating-plating"):amount(2):done()
     }
   },
   {
@@ -92,7 +92,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heating-plating", 2)
+      PM.product("pm-heating-plating"):amount(2):done()
     }
   },
   {
@@ -123,7 +123,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heating-plating", 4)
+      PM.product("pm-heating-plating"):amount(4):done()
     }
   },
 
@@ -144,7 +144,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cooling-plating", 2)
+      PM.product("pm-cooling-plating"):amount(2):done()
     }
   },
   {
@@ -164,7 +164,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cooling-plating", 2)
+      PM.product("pm-cooling-plating"):amount(2):done()
     }
   },
   {
@@ -184,7 +184,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cooling-plating", 2)
+      PM.product("pm-cooling-plating"):amount(2):done()
     }
   },
   {
@@ -204,7 +204,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cooling-plating", 2)
+      PM.product("pm-cooling-plating"):amount(2):done()
     }
   },
 
@@ -237,7 +237,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-tubing", 2)
+      PM.product("pm-basic-tubing"):amount(2):done()
     }
   },
   {
@@ -267,7 +267,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-tubing", 2)
+      PM.product("pm-basic-tubing"):amount(2):done()
     }
   },
   {
@@ -297,7 +297,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-tubing", 2)
+      PM.product("pm-basic-tubing"):amount(2):done()
     }
   },
   {
@@ -328,7 +328,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-tubing", 4)
+      PM.product("pm-basic-tubing"):amount(4):done()
     }
   },
   {
@@ -359,7 +359,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-tubing", 4)
+      PM.product("pm-basic-tubing"):amount(4):done()
     }
   },
   {
@@ -391,7 +391,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-corrosion-resistant-tubing", 4)
+      PM.product("pm-corrosion-resistant-tubing"):amount(4):done()
     }
   },
   {
@@ -423,7 +423,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-corrosion-resistant-tubing", 2)
+      PM.product("pm-corrosion-resistant-tubing"):amount(2):done()
     }
   },
   {
@@ -455,7 +455,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-corrosion-resistant-tubing", 2)
+      PM.product("pm-corrosion-resistant-tubing"):amount(2):done()
     }
   },
   {
@@ -487,7 +487,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-corrosion-resistant-tubing", 6)
+      PM.product("pm-corrosion-resistant-tubing"):amount(6):done()
     }
   },
 
@@ -519,7 +519,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-tubing", 4)
+      PM.product("pm-anti-bacterial-tubing"):amount(4):done()
     }
   },
   {
@@ -550,7 +550,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-tubing", 2)
+      PM.product("pm-anti-bacterial-tubing"):amount(2):done()
     }
   },
   {
@@ -581,7 +581,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-tubing", 4)
+      PM.product("pm-anti-bacterial-tubing"):amount(4):done()
     }
   },
   {
@@ -612,7 +612,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-radiation-resistant-tubing", 4)
+      PM.product("pm-radiation-resistant-tubing"):amount(4):done()
     }
   },
 
@@ -645,7 +645,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-framing", 2)
+      PM.product("pm-basic-framing"):amount(2):done()
     }
   },
   {
@@ -675,7 +675,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-framing", 4)
+      PM.product("pm-basic-framing"):amount(4):done()
     }
   },
   {
@@ -705,7 +705,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-framing", 4)
+      PM.product("pm-basic-framing"):amount(4):done()
     }
   },
   {
@@ -735,7 +735,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-framing", 6)
+      PM.product("pm-basic-framing"):amount(6):done()
     }
   },
   {
@@ -766,7 +766,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heavyweight-framing", 2)
+      PM.product("pm-heavyweight-framing"):amount(2):done()
     }
   },
   {
@@ -797,7 +797,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heavyweight-framing", 2)
+      PM.product("pm-heavyweight-framing"):amount(2):done()
     }
   },
   {
@@ -828,7 +828,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lightweight-framing", 4)
+      PM.product("pm-lightweight-framing"):amount(4):done()
     }
   },
   {
@@ -859,7 +859,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lightweight-framing", 2)
+      PM.product("pm-lightweight-framing"):amount(2):done()
     }
   },
   {
@@ -890,7 +890,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lightweight-framing", 4)
+      PM.product("pm-lightweight-framing"):amount(4):done()
     }
   },
 
@@ -909,7 +909,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-framing", 2)
+      PM.product("pm-molten-framing"):amount(2):done()
     }
   },
   {
@@ -927,7 +927,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cooling-framing", 2)
+      PM.product("pm-cooling-framing"):amount(2):done()
     }
   },
 
@@ -959,7 +959,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-panelling", 2)
+      PM.product("pm-basic-panelling"):amount(2):done()
     }
   },
   {
@@ -989,7 +989,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-panelling", 4)
+      PM.product("pm-basic-panelling"):amount(4):done()
     }
   },
   {
@@ -1019,7 +1019,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-panelling", 6)
+      PM.product("pm-basic-panelling"):amount(6):done()
     }
   },
   {
@@ -1048,7 +1048,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-basic-panelling", 2)
+      PM.product("pm-basic-panelling"):amount(2):done()
     }
   },
   {
@@ -1079,7 +1079,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lightweight-panelling", 4)
+      PM.product("pm-lightweight-panelling"):amount(4):done()
     }
   },
   {
@@ -1110,7 +1110,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lightweight-panelling", 2)
+      PM.product("pm-lightweight-panelling"):amount(2):done()
     }
   },
   {
@@ -1141,7 +1141,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lightweight-panelling", 4)
+      PM.product("pm-lightweight-panelling"):amount(4):done()
     }
   },
   {
@@ -1172,7 +1172,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heavyweight-panelling", 2)
+      PM.product("pm-heavyweight-panelling"):amount(2):done()
     }
   },
   {
@@ -1203,7 +1203,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heavyweight-panelling", 2)
+      PM.product("pm-heavyweight-panelling"):amount(2):done()
     }
   },
   {
@@ -1233,7 +1233,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-panelling", 4)
+      PM.product("pm-anti-bacterial-panelling"):amount(4):done()
     }
   },
   {
@@ -1263,7 +1263,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-panelling", 2)
+      PM.product("pm-anti-bacterial-panelling"):amount(2):done()
     }
   },
   {
@@ -1293,7 +1293,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-anti-bacterial-panelling", 4)
+      PM.product("pm-anti-bacterial-panelling"):amount(4):done()
     }
   },
   {
@@ -1323,7 +1323,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-radiation-resistant-panelling", 2)
+      PM.product("pm-radiation-resistant-panelling"):amount(2):done()
     }
   },
 

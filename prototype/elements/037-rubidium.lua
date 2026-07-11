@@ -94,9 +94,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-caesium-rubidium-alum", {3, 6}),
-      PM.product_range_chance("pm-pollucite", {2, 3}, 0.6),
-      PM.product_chance("pm-empty-glass-ampule", 1, 0.85)
+      PM.product("pm-caesium-rubidium-alum"):amount(3, 6):done(),
+      PM.product("pm-pollucite"):amount(2, 3):chance(0.6):done(),
+      PM.product("pm-empty-glass-ampule"):amount(1):chance(0.85):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -115,10 +115,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-30-rubidium-alum", {0, 4}),
-      PM.product_range("pm-50-rubidium-alum", {0, 3}),
-      PM.product_range("pm-70-rubidium-alum", {0, 2}),
-      PM.product_chance("pm-rubidium-alum", 1, 0.5),
+      PM.product("pm-30-rubidium-alum"):amount(0, 4):done(),
+      PM.product("pm-50-rubidium-alum"):amount(0, 3):done(),
+      PM.product("pm-70-rubidium-alum"):amount(0, 2):done(),
+      PM.product("pm-rubidium-alum"):amount(1):chance(0.5):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -138,8 +138,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-rubidium-alum", 2),
-      PM.product("pm-hot-coolant", 2.5, "fluid")
+      PM.product("pm-rubidium-alum"):amount(2):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(2.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -159,8 +159,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-70-rubidium-alum", 2),
-      PM.product("pm-hot-coolant", 5, "fluid")
+      PM.product("pm-70-rubidium-alum"):amount(2):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -180,8 +180,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-50-rubidium-alum", 2),
-      PM.product("pm-hot-coolant", 7.5, "fluid")
+      PM.product("pm-50-rubidium-alum"):amount(2):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(7.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -201,10 +201,10 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-rubidium", 1),
-      PM.product_chance("pm-rubidium", 1, 0.5),
-      PM.product_range("pm-sulfur-dioxide", {2, 6}, "fluid"),
-      PM.product_range("pm-aluminium-plate", {0, 5}),
+      PM.product("pm-rubidium"):amount(1):done(),
+      PM.product("pm-rubidium"):amount(1):chance(0.5):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(2, 6):done(),
+      PM.product("pm-aluminium-plate"):amount(0, 5):done(),
     }
   } --[[@as data.RecipePrototype]]
 })

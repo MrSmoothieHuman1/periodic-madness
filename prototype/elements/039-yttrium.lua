@@ -98,7 +98,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-mixed-bastnasite", {3, 8})
+      PM.product("pm-mixed-bastnasite"):amount(3, 8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -119,8 +119,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-bastnasite-Y", {2, 4}, 0.5),
-      PM.product_range_chance("pm-bastnasite-C", {2, 4}, 0.5)
+      PM.product("pm-bastnasite-Y"):amount(2, 4):chance(0.5):done(),
+      PM.product("pm-bastnasite-C"):amount(2, 4):chance(0.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -142,10 +142,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-yttrium-oxide", {1, 3}),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 4, 0.85, 4),
-      PM.catalyst_chance("pm-catalyst-container", 4, 0.15, 4),
-      PM.product_chance("pm-flourine", 5, 0.456)
+      PM.product("pm-yttrium-oxide"):amount(1, 3):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(4):chance(0.85):catalyst(4):done(),
+      PM.product("pm-catalyst-container"):amount(4):chance(0.15):catalyst(4):done(),
+      PM.product("pm-flourine"):amount(5):chance(0.456):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -167,10 +167,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-yttrium-oxide", {0, 1}),
-      PM.catalyst_chance("pm-cobalt-catalyst", 4, 0.75, 4),
-      PM.catalyst_chance("pm-catalyst-container", 4, 0.25, 4),
-      PM.product_range("pm-carbon-trioxide", {8, 10}, "fluid")
+      PM.product("pm-yttrium-oxide"):amount(0, 1):done(),
+      PM.product("pm-cobalt-catalyst"):amount(4):chance(0.75):catalyst(4):done(),
+      PM.product("pm-catalyst-container"):amount(4):chance(0.25):catalyst(4):done(),
+      PM.product("pm-carbon-trioxide", "fluid"):amount(8, 10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -189,8 +189,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-aqueous-yttrium-fluoride", 5, "fluid"),
-      PM.product("water", 10, "fluid")
+      PM.product("pm-aqueous-yttrium-fluoride", "fluid"):amount(5):done(),
+      PM.product("water", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -208,7 +208,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-yttrium-ore", 5)
+      PM.product("pm-yttrium-ore"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -230,9 +230,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-bastnasite-Y", {3, 6}),
-      PM.product_range("pm-bastnasite-C", {3, 6}),
-      PM.product_range_chance("pm-bastnasite-ce", {0, 3}, 0.75)
+      PM.product("pm-bastnasite-Y"):amount(3, 6):done(),
+      PM.product("pm-bastnasite-C"):amount(3, 6):done(),
+      PM.product("pm-bastnasite-ce"):amount(0, 3):chance(0.75):done()
     }
   } --[[@as data.RecipePrototype]],
 })

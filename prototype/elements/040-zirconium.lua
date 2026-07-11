@@ -64,8 +64,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zirconium-sand", 8),
-      PM.product_chance("water", 10, 0.7, "fluid")
+      PM.product("pm-zirconium-sand"):amount(8):done(),
+      PM.product("water", "fluid"):amount(10):chance(0.7):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -83,9 +83,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zircon", 2),
-      PM.product_range("pm-sand", {1, 4}),
-      PM.product_chance("pm-titanium-ore", 2, 0.22)
+      PM.product("pm-zircon"):amount(2):done(),
+      PM.product("pm-sand"):amount(1, 4):done(),
+      PM.product("pm-titanium-ore"):amount(2):chance(0.22):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -103,7 +103,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zirconia", 6)
+      PM.product("pm-zirconia"):amount(6):done()
     }
   },
 

@@ -49,9 +49,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-indium-chunks", 4),
-      PM.product_chance("pm-zinc-tailings", 5, 0.5, "fluid"),
-      PM.product_chance("pm-lead-froth", 5, 0.5, "fluid"),
+      PM.product("pm-indium-chunks"):amount(4):done(),
+      PM.product("pm-zinc-tailings", "fluid"):amount(5):chance(0.5):done(),
+      PM.product("pm-lead-froth", "fluid"):amount(5):chance(0.5):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -72,9 +72,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-indium-ore", 6),
-      PM.product_chance("pm-lead-powder", 2, 0.5),
-      PM.product_chance("pm-zinc-chunk", 2, 0.5),
+      PM.product("pm-indium-ore"):amount(6):done(),
+      PM.product("pm-lead-powder"):amount(2):chance(0.5):done(),
+      PM.product("pm-zinc-chunk"):amount(2):chance(0.5):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -88,7 +88,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-indium-ore", 1) },
     results = {
-      PM.product("pm-indium-plate", 1)
+      PM.product("pm-indium-plate"):amount(1):done()
     }
   },
   {
@@ -122,7 +122,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-indium", 5, "fluid")
+      PM.product("pm-molten-indium", "fluid"):amount(5):done()
     }
   },
   {
@@ -143,8 +143,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-indium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-indium-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 

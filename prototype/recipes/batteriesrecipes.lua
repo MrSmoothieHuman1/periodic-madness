@@ -15,7 +15,7 @@ data:extend({
       PM.ingredient("pm-zinc-disc", 8),
     },
     results = {
-      PM.product("pm-uncharged-voltatic-pile", 1)
+      PM.product("pm-uncharged-voltatic-pile"):amount(1):done()
     }
   },
   {
@@ -34,8 +34,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-charged-voltatic-pile", 1, 0.66),
-      PM.product_chance("pm-broken-voltatic-pile", 1, 0.33)
+      PM.product("pm-charged-voltatic-pile"):amount(1):chance(0.66):done(),
+      PM.product("pm-broken-voltatic-pile"):amount(1):chance(0.33):done()
     }
   },
   {
@@ -52,7 +52,7 @@ data:extend({
       PM.ingredient("pm-zinc-disc", 4),
     },
     results = {
-      PM.product("pm-uncharged-voltatic-pile", 1)
+      PM.product("pm-uncharged-voltatic-pile"):amount(1):done()
     }
   },
   {
@@ -69,7 +69,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-anode", 1)
+      PM.product("pm-copper-anode"):amount(1):done()
     }
   },
   {
@@ -86,7 +86,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-copper-disc", 4)
+      PM.product("pm-copper-disc"):amount(4):done()
     }
   },
   {
@@ -103,7 +103,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zinc-disc", 4)
+      PM.product("pm-zinc-disc"):amount(4):done()
     }
   },
   {
@@ -120,7 +120,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zinc-cathode", 1)
+      PM.product("pm-zinc-cathode"):amount(1):done()
     }
   },
   {
@@ -139,7 +139,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadium-oxide", 2)
+      PM.product("pm-vanadium-oxide"):amount(2):done()
     }
   },
   {
@@ -157,7 +157,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadium-oxide-positive-solution", 60, "fluid")
+      PM.product("pm-vanadium-oxide-positive-solution", "fluid"):amount(60):done()
     }
   },
   {
@@ -175,7 +175,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadium-oxide-negative-solution", 60, "fluid")
+      PM.product("pm-vanadium-oxide-negative-solution", "fluid"):amount(60):done()
     }
   },
   {
@@ -194,7 +194,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-battery-casing", 1)
+      PM.product("pm-battery-casing"):amount(1):done()
     }
   },
   {
@@ -216,7 +216,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadium-redox-battery", 1)
+      PM.product("pm-vanadium-redox-battery"):amount(1):done()
     }
   },
   {
@@ -235,7 +235,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ethylene-carbonate", 10, "fluid")
+      PM.product("pm-ethylene-carbonate", "fluid"):amount(10):done()
     }
   },
   {
@@ -256,7 +256,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-ion-battery", 1)
+      PM.product("pm-lithium-ion-battery"):amount(1):done()
     }
   },
   {
@@ -277,7 +277,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lithium-sulfur-battery", 1)
+      PM.product("pm-lithium-sulfur-battery"):amount(1):done()
     }
   },
   {
@@ -296,7 +296,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lead-fluoride", 1)
+      PM.product("pm-lead-fluoride"):amount(1):done()
     }
   },
   {
@@ -318,7 +318,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-selenium-sulfur-battery", 1)
+      PM.product("pm-selenium-sulfur-battery"):amount(1):done()
     }
   },
 
@@ -337,8 +337,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-charged-vanadium-redox-battery", 1, 0.8),
-      PM.product_chance("pm-broken-vanadium-redox-battery", 1, 0.2)
+      PM.product("pm-charged-vanadium-redox-battery"):amount(1):chance(0.8):done(),
+      PM.product("pm-broken-vanadium-redox-battery"):amount(1):chance(0.2):done()
     }
   },
   {
@@ -356,8 +356,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-charged-lithium-sulfur-battery", 1, 0.9),
-      PM.product_chance("pm-broken-lithium-sulfur-battery", 1, 0.1)
+      PM.product("pm-charged-lithium-sulfur-battery"):amount(1):chance(0.9):done(),
+      PM.product("pm-broken-lithium-sulfur-battery"):amount(1):chance(0.1):done()
     }
   },
   {
@@ -376,7 +376,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-vanadium-redox-battery", 2)
+      PM.product("pm-vanadium-redox-battery"):amount(2):done()
     }
   },
   {
@@ -395,7 +395,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-lithium-sulfur-battery", 2)
+      PM.product("pm-lithium-sulfur-battery"):amount(2):done()
     }
   },
 } --[[@as data.RecipePrototype[] ]])

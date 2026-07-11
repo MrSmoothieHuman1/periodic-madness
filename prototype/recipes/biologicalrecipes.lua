@@ -19,8 +19,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("wood", {5, 10}),
-      PM.product_chance("wood", 1, 0.5)
+      PM.product("wood"):amount(5, 10):done(),
+      PM.product("wood"):amount(1):chance(0.5):done()
     }
   },
   {
@@ -40,7 +40,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("wood", {50, 60})
+      PM.product("wood"):amount(50, 60):done()
     }
   },
   {
@@ -63,7 +63,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("wood", {50, 65})
+      PM.product("wood"):amount(50, 65):done()
     }
   },
 
@@ -87,7 +87,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fertiliser", 1)
+      PM.product("pm-fertiliser"):amount(1):done()
     }
   },
   {
@@ -106,8 +106,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cellouse-pulp", 5, "fluid"),
-      PM.product_range("pm-wood-strips", {2, 4})
+      PM.product("pm-cellouse-pulp", "fluid"):amount(5):done(),
+      PM.product("pm-wood-strips"):amount(2, 4):done()
     }
   },
   {
@@ -126,7 +126,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-biomass", 2)
+      PM.product("pm-biomass"):amount(2):done()
     }
   },
   {
@@ -147,7 +147,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-agar-solution", 30, "fluid")
+      PM.product("pm-agar-solution", "fluid"):amount(30):done()
     }
   },
   {
@@ -165,7 +165,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bacteriaed-agar-solution", 10, "fluid")
+      PM.product("pm-bacteriaed-agar-solution", "fluid"):amount(10):done()
     }
   },
   {
@@ -183,7 +183,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cyanobacteriaed-agar-solution", 10, "fluid")
+      PM.product("pm-cyanobacteriaed-agar-solution", "fluid"):amount(10):done()
     }
   },
 
@@ -202,7 +202,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-empty-petri-dish", 1)
+      PM.product("pm-empty-petri-dish"):amount(1):done()
     }
   },
   {
@@ -220,7 +220,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-agar-petri-dish", 1)
+      PM.product("pm-agar-petri-dish"):amount(1):done()
     }
   },
   {
@@ -238,7 +238,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bacteriaed-petri-dish", 1)
+      PM.product("pm-bacteriaed-petri-dish"):amount(1):done()
     }
   },
   {
@@ -256,7 +256,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cyanobacteriaed-petri-dish", 1)
+      PM.product("pm-cyanobacteriaed-petri-dish"):amount(1):done()
     }
   },
   {
@@ -274,8 +274,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-agar-solution", 25, "fluid"),
-      PM.product("pm-empty-petri-dish", 1)
+      PM.product("pm-agar-solution", "fluid"):amount(25):done(),
+      PM.product("pm-empty-petri-dish"):amount(1):done()
     }
   },
   {
@@ -293,8 +293,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bacteriaed-agar-solution", 25, "fluid"),
-      PM.product("pm-empty-petri-dish", 1)
+      PM.product("pm-bacteriaed-agar-solution", "fluid"):amount(25):done(),
+      PM.product("pm-empty-petri-dish"):amount(1):done()
     }
   },
   {
@@ -312,8 +312,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-cyanobacteriaed-agar-solution", 25, "fluid"),
-      PM.product("pm-empty-petri-dish", 1)
+      PM.product("pm-cyanobacteriaed-agar-solution", "fluid"):amount(25):done(),
+      PM.product("pm-empty-petri-dish"):amount(1):done()
     }
   },
   {
@@ -334,8 +334,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-gene-base", 10, "fluid"),
-      --PM.product_chance("pm-dead-bacteriaed-biomass", 2, 0.6)
+      PM.product("pm-gene-base", "fluid"):amount(10):done(),
+      --PM.product("pm-dead-bacteriaed-biomass"):amount(2):chance(0.6):done()
     }
   },
   {
@@ -356,8 +356,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-melatonin", 10, "fluid"),
-      PM.product_chance("pm-bacteriaed-agar-solution", 2, 0.2, "fluid")
+      PM.product("pm-melatonin", "fluid"):amount(10):done(),
+      PM.product("pm-bacteriaed-agar-solution", "fluid"):amount(2):chance(0.2):done()
 
     }
   },
@@ -377,8 +377,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bacteriaed-agar-solution", {39, 40}, "fluid"),
-      PM.product_range("pm-methyl-chloride", {2, 6}, "fluid")
+      PM.product("pm-bacteriaed-agar-solution", "fluid"):amount(39, 40):done(),
+      PM.product("pm-methyl-chloride", "fluid"):amount(2, 6):done()
     }
   },
   {
@@ -397,8 +397,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bacteriaed-agar-solution", {39, 40}, "fluid"),
-      PM.product_range("pm-hydrogen-sulfide", {2, 8}, "fluid")
+      PM.product("pm-bacteriaed-agar-solution", "fluid"):amount(39, 40):done(),
+      PM.product("pm-hydrogen-sulfide", "fluid"):amount(2, 8):done()
     }
   },
   {
@@ -417,8 +417,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-cyanobacteriaed-agar-solution", {38, 40}, "fluid"),
-      PM.product_range("pm-ammonia-gas", {3, 9}, "fluid")
+      PM.product("pm-cyanobacteriaed-agar-solution", "fluid"):amount(38, 40):done(),
+      PM.product("pm-ammonia-gas", "fluid"):amount(3, 9):done()
     }
   },
 } --[[@as data.RecipePrototype[] ]])

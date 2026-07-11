@@ -98,7 +98,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-barium-radium-sulfate", 8)
+            PM.product("pm-barium-radium-sulfate"):amount(8):done()
         }
     },
     {
@@ -118,9 +118,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-barium-radium-carbonate", 2),
-            PM.product_chance("pm-barium-radium-carbonate", 1, 0.75),
-            PM.product("pm-cobalt-catalyst", 2),
+            PM.product("pm-barium-radium-carbonate"):amount(2):done(),
+            PM.product("pm-barium-radium-carbonate"):amount(1):chance(0.75):done(),
+            PM.product("pm-cobalt-catalyst"):amount(2):done(),
         }
     },
     {
@@ -144,9 +144,9 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-barium-nitrate", 1, 0.33),
-            PM.product_chance("pm-radium-sulfate", 1, 0.34),
-            PM.product_chance("pm-barium-radium-sulfate", 1, 0.33),
+            PM.product("pm-barium-nitrate"):amount(1):chance(0.33):done(),
+            PM.product("pm-radium-sulfate"):amount(1):chance(0.34):done(),
+            PM.product("pm-barium-radium-sulfate"):amount(1):chance(0.33):done(),
         }
     },
     {
@@ -165,8 +165,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-radium-chloride", 2),
-            PM.product_range("pm-sulfur-dichloride", {0, 4}, "fluid")
+            PM.product("pm-radium-chloride"):amount(2):done(),
+            PM.product("pm-sulfur-dichloride", "fluid"):amount(0, 4):done()
         }
     },
     {
@@ -186,9 +186,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_chance("pm-radium-ore", 2),
-            PM.product_chance("pm-radium-sulfate", 1, 0.5),
-            PM.catalyst("pm-hot-coolant", 1, 1, "fluid"),
+            PM.product("pm-radium-ore"):amount(2):done(),
+            PM.product("pm-radium-sulfate"):amount(1):chance(0.5):done(),
+            PM.product("pm-hot-coolant", "fluid"):amount(1):catalyst(1):done(),
         }
     },
     {
@@ -212,8 +212,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-sulfur-dioxide", {0, 5}, "fluid"),
-            PM.product_range("pm-chlorine", {2, 8}, "fluid"),
+            PM.product("pm-sulfur-dioxide", "fluid"):amount(0, 5):done(),
+            PM.product("pm-chlorine", "fluid"):amount(2, 8):done(),
         }
     },
     {
@@ -241,8 +241,8 @@ data:extend({
         {
             PM.ingredient("pm-hydrogen-sulfide", 10, "fluid"),
             PM.ingredient("pm-hydrochloric-acid", 10, "fluid"),
-            PM.catalyst_chance("pm-cobalt-catalyst", 1, 0.8, 1),
-            PM.catalyst_chance("pm-catalyst-container", 1, 0.2, 1)
+            PM.product("pm-cobalt-catalyst"):amount(1):chance(0.8):catalyst(1):done(),
+            PM.product("pm-catalyst-container"):amount(1):chance(0.2):catalyst(1):done()
         }
     }
 })

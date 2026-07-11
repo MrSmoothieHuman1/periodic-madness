@@ -53,8 +53,8 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-manganese-ore", 8),
-      PM.product_range("pm-ferrum", {2, 4})
+      PM.product("pm-manganese-ore"):amount(8):done(),
+      PM.product("pm-ferrum"):amount(2, 4):done()
     }
   },
   {
@@ -94,8 +94,8 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-manganese-ore", 8),
-      PM.product_range_chance("pm-ferrum", {1, 2}, 0.75)
+      PM.product("pm-manganese-ore"):amount(8):done(),
+      PM.product("pm-ferrum"):amount(1, 2):chance(0.75):done()
     }
   },
   {
@@ -113,7 +113,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-manganese-plate", 1)
+      PM.product("pm-manganese-plate"):amount(1):done()
     }
   },
   {
@@ -147,7 +147,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-manganese", 5, "fluid")
+      PM.product("pm-molten-manganese", "fluid"):amount(5):done()
     }
   },
   {
@@ -168,8 +168,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-manganese-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-manganese-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

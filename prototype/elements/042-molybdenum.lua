@@ -130,7 +130,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-molybdenite", 8),
+      PM.product("pm-molybdenite"):amount(8):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -149,8 +149,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molybdenite-powder", 4),
-      PM.product_chance("stone", 2, 0.75)
+      PM.product("pm-molybdenite-powder"):amount(4):done(),
+      PM.product("stone"):amount(2):chance(0.75):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -171,8 +171,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molybdenum-ore", 2),
-      PM.product_chance("pm-molybdenum-disulfide", 1, 0.1)
+      PM.product("pm-molybdenum-ore"):amount(2):done(),
+      PM.product("pm-molybdenum-disulfide"):amount(1):chance(0.1):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -213,7 +213,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-molybdenite", 8),
+      PM.product("pm-molybdenite"):amount(8):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -233,8 +233,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-molybdenite-oxide", 8),
-      PM.product("pm-sulfur-dioxide", 16, "fluid")
+      PM.product("pm-molybdenite-oxide"):amount(8):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(16):done()
     }
   },
   {
@@ -256,9 +256,9 @@ data:extend({
     },
     results = 
     {
-      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 2, 0.8, 2),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2),
-      PM.product("pm-ammonium-molybdate", 4)
+      PM.product("pm-rhenium-platinum-catalyst"):amount(2):chance(0.8):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(2):done(),
+      PM.product("pm-ammonium-molybdate"):amount(4):done()
     }
   },
   {
@@ -281,8 +281,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-patina", {2, 5}),
-      PM.product("pm-ammonium-dimolybdate", 16, "fluid"),
+      PM.product("pm-patina"):amount(2, 5):done(),
+      PM.product("pm-ammonium-dimolybdate", "fluid"):amount(16):done(),
     }
   },
   {
@@ -301,8 +301,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-molybdenum-trioxide", 32, "fluid"),
-      PM.product_chance("pm-ammonia-gas", 6, 0.5, "fluid")
+      PM.product("pm-molybdenum-trioxide", "fluid"):amount(32):done(),
+      PM.product("pm-ammonia-gas", "fluid"):amount(6):chance(0.5):done()
     }
   },
   {
@@ -322,8 +322,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molybdenum-ore", 8),
-      PM.product_range("water", {5, 12}, "fluid")
+      PM.product("pm-molybdenum-ore"):amount(8):done(),
+      PM.product("water", "fluid"):amount(5, 12):done()
     }
   }
 })

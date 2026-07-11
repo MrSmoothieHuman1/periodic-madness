@@ -112,7 +112,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-nickel-powder", 4)
+      PM.product("pm-nickel-powder"):amount(4):done()
     }
   },
   {
@@ -151,8 +151,8 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-nickel-ore", 2),
-      PM.product_range_chance("sulfur", {1, 2}, 0.33),
+      PM.product("pm-nickel-ore"):amount(2):done(),
+      PM.product("sulfur"):amount(1, 2):chance(0.33):done(),
     }
   },
   {
@@ -191,7 +191,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-nickel-ore", 2),
+      PM.product("pm-nickel-ore"):amount(2):done(),
     }
   },
   {
@@ -222,7 +222,7 @@ data:extend({
       PM.ingredient("pm-nickel-chunk", 2)
     },
     results = {
-      PM.product("pm-nickel-plate", 1)
+      PM.product("pm-nickel-plate"):amount(1):done()
     }
   },
   {
@@ -235,7 +235,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-nickel-ore", 1) },
     results = {
-      PM.product("pm-nickel-plate", 1)
+      PM.product("pm-nickel-plate"):amount(1):done()
     }
   },
   {
@@ -269,7 +269,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-nickel", 5, "fluid")
+      PM.product("pm-molten-nickel", "fluid"):amount(5):done()
     }
   },
   {
@@ -290,8 +290,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-nickel-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-nickel-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 
@@ -318,8 +318,8 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-nickel-froth", 10, "fluid"),
-    PM.product("pm-nickel-tailings", 15, "fluid")
+    PM.product("pm-nickel-froth", "fluid"):amount(10):done(),
+    PM.product("pm-nickel-tailings", "fluid"):amount(15):done()
   }
 },
 {
@@ -338,9 +338,9 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-matte-nickel", 15, "fluid"),
-    PM.product_range("sulfur", {0, 4}),
-    PM.product_range_chance("pm-patina", {0, 2}, 0.33)
+    PM.product("pm-matte-nickel", "fluid"):amount(15):done(),
+    PM.product("sulfur"):amount(0, 4):done(),
+    PM.product("pm-patina"):amount(0, 2):chance(0.33):done()
   }
 },
 {
@@ -359,8 +359,8 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-mixed-nickel-concentrate", 10, "fluid"),
-    PM.product_range("pm-ammonium-chloride", {5, 7})
+    PM.product("pm-mixed-nickel-concentrate", "fluid"):amount(10):done(),
+    PM.product("pm-ammonium-chloride"):amount(5, 7):done()
   }
 },
 {
@@ -380,8 +380,8 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-high-purity-nickel-powder", 6),
-    PM.catalyst_range("pm-combined-ore-slab", {0, 2}, 1)
+    PM.product("pm-high-purity-nickel-powder"):amount(6):done(),
+    PM.product("pm-combined-ore-slab"):amount(0, 2):catalyst(1):done()
   }
 },
 {
@@ -405,8 +405,8 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-nickel-sulfate", 8),
-    PM.product("pm-cobalt-blue", 6),
+    PM.product("pm-nickel-sulfate"):amount(8):done(),
+    PM.product("pm-cobalt-blue"):amount(6):done(),
   }
 },
 {
@@ -426,10 +426,10 @@ data:extend({
   },
   results = 
   {
-    PM.catalyst_chance("pm-cobalt-catalyst", 2, 0.8, 1),
-    PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 1),
-    PM.product("pm-nickel-ore", 12),
-    PM.product_range("pm-sulfur-dioxide", {2, 12}, "fluid")
+    PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8):catalyst(1):done(),
+    PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(1):done(),
+    PM.product("pm-nickel-ore"):amount(12):done(),
+    PM.product("pm-sulfur-dioxide", "fluid"):amount(2, 12):done()
   }
 }
 })

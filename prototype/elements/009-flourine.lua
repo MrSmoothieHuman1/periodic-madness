@@ -47,8 +47,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-flourite", 8),
-      PM.product_range_chance("stone", {10, 15}, 0.8),
+      PM.product("pm-flourite"):amount(8):done(),
+      PM.product("stone"):amount(10, 15):chance(0.8):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -74,8 +74,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-calcium-sulfate", {2, 5}),
-      PM.product("pm-hydrogen-flouride", 8, "fluid")
+      PM.product("pm-calcium-sulfate"):amount(2, 5):done(),
+      PM.product("pm-hydrogen-flouride", "fluid"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -102,9 +102,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-hydroflouric-acid", 20, "fluid"),
-      PM.catalyst_chance("pm-palladium-catalyst", 2, 0.8, 2),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2)
+      PM.product("pm-hydroflouric-acid", "fluid"):amount(20):done(),
+      PM.product("pm-palladium-catalyst"):amount(2):chance(0.8):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(2):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -129,8 +129,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-flourine", 3),
-      PM.product_range("pm-sulfur-dioxide", {2, 5}, "fluid")
+      PM.product("pm-flourine"):amount(3):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(2, 5):done()
     },
   } --[[@as data.RecipePrototype]],
 
@@ -167,8 +167,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-flourite", 16),
-      PM.product("pm-hot-coolant", 7.5, "fluid", 1)
+      PM.product("pm-flourite"):amount(16):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(7.5):index(1):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -204,8 +204,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-flourite", 16),
-      PM.catalyst("pm-hot-coolant", 5, 5, "fluid", 1)
+      PM.product("pm-flourite"):amount(16):done(),
+      PM.product("pm-hot-coolant", "fluid"):amount(5):catalyst(5):index(1):done()
     }
   } --[[@as data.RecipePrototype]],
 })

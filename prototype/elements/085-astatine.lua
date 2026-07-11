@@ -77,7 +77,7 @@ data:extend({
         },
         results =
         {
-          PM.product_range_chance("pm-mixed-trace-astatine", {1, 3})
+          PM.product("pm-mixed-trace-astatine"):amount(1, 3):done()
         }
     },
     {
@@ -94,7 +94,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-mixed-astatine-magneto-orbital-trap", 1)
+          PM.product("pm-mixed-astatine-magneto-orbital-trap"):amount(1):done()
         }
     },
     {
@@ -116,10 +116,10 @@ data:extend({
         },
         results = 
         {
-          PM.product_range_chance("pm-trace-astatine-209", {1, 2}, 0.75),
-          PM.product_range_chance("pm-trace-astatine-210", {1, 2}, 0.75),
-          PM.product_range_chance("pm-trace-astatine-211", {1, 2}, 0.75),
-          PM.catalyst_chance("pm-magneto-orbital-trap", 1, 0.9, 1)
+          PM.product("pm-trace-astatine-209"):amount(1, 2):chance(0.75):done(),
+          PM.product("pm-trace-astatine-210"):amount(1, 2):chance(0.75):done(),
+          PM.product("pm-trace-astatine-211"):amount(1, 2):chance(0.75):done(),
+          PM.product("pm-magneto-orbital-trap"):amount(1):chance(0.9):catalyst(1):done()
         }
     },
     {
@@ -141,9 +141,9 @@ data:extend({
         },
         results = 
         {
-          PM.product_range_chance("pm-trace-astatine-209", {2, 6}, 0.6),
-          PM.product_range_chance("pm-trace-astatine-210", {2, 6}, 0.6),
-          PM.product_range_chance("pm-trace-astatine-211", {3, 6}, 0.9),
+          PM.product("pm-trace-astatine-209"):amount(2, 6):chance(0.6):done(),
+          PM.product("pm-trace-astatine-210"):amount(2, 6):chance(0.6):done(),
+          PM.product("pm-trace-astatine-211"):amount(3, 6):chance(0.9):done(),
         }
     }
 })

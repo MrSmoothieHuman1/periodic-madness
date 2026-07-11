@@ -89,9 +89,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-germanium-ore-concentrate", {4, 10}, 0.85),
-            PM.product_range("pm-lead-powder", {0, 6}),
-            PM.product_range_chance("pm-copper-chunk", {0, 4}, 0.45)
+            PM.product("pm-germanium-ore-concentrate"):amount(4, 10):chance(0.85):done(),
+            PM.product("pm-lead-powder"):amount(0, 6):done(),
+            PM.product("pm-copper-chunk"):amount(0, 4):chance(0.45):done()
         }
     },
     {
@@ -110,8 +110,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-germanium-sulfide", 8),
-            PM.product_range_chance("pm-zinc-chunk", {0, 4}, 0.45)
+            PM.product("pm-germanium-sulfide"):amount(8):done(),
+            PM.product("pm-zinc-chunk"):amount(0, 4):chance(0.45):done()
         }
     },
     {
@@ -131,8 +131,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-germanium-oxide", 6),
-            PM.product_range_chance("sulfur", {2, 4}, 0.66)
+            PM.product("pm-germanium-oxide"):amount(6):done(),
+            PM.product("sulfur"):amount(2, 4):chance(0.66):done()
         }
     },
     {
@@ -152,8 +152,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-germanium-tetrachloride", 4),
-            PM.product_range("pm-oxygen-gas", {5, 8}, "fluid")
+            PM.product("pm-germanium-tetrachloride"):amount(4):done(),
+            PM.product("pm-oxygen-gas", "fluid"):amount(5, 8):done()
         }
     },
     {
@@ -172,9 +172,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-germanium-ore", 2),
-            PM.product_range("pm-hydrochloric-acid", {5, 10}, "fluid"),
-            PM.product_range("pm-chlorine", {6, 8}, "fluid")
+            PM.product("pm-germanium-ore"):amount(2):done(),
+            PM.product("pm-hydrochloric-acid", "fluid"):amount(5, 10):done(),
+            PM.product("pm-chlorine", "fluid"):amount(6, 8):done()
         }
     }
 })

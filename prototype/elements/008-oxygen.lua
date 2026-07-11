@@ -42,7 +42,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-oxygen-air-filter", 1)
+          PM.product("pm-oxygen-air-filter"):amount(1):done()
         }
     },
     {
@@ -63,7 +63,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-advanced-oxygen-air-filter", 1)
+          PM.product("pm-advanced-oxygen-air-filter"):amount(1):done()
         }
       },
     {
@@ -82,7 +82,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-oxygen-gas", 25, "fluid")
+          PM.product("pm-oxygen-gas", "fluid"):amount(25):done()
         }
     },
     {
@@ -103,7 +103,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-oxygen-gas", 50, "fluid")
+          PM.product("pm-oxygen-gas", "fluid"):amount(50):done()
         }
       },
     {
@@ -135,7 +135,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-liquid-oxygen", 1, "fluid")
+            PM.product("pm-liquid-oxygen", "fluid"):amount(1):done()
         }
     },
 
@@ -158,8 +158,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-seawater", 12.5, "fluid"),
-            PM.product("pm-oxygen-gas", 10, "fluid")
+            PM.product("pm-seawater", "fluid"):amount(12.5):done(),
+            PM.product("pm-oxygen-gas", "fluid"):amount(10):done()
         }
     }
 })

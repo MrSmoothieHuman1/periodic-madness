@@ -103,7 +103,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-magnetite", 4)
+      PM.product("pm-magnetite"):amount(4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -122,8 +122,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ferrovanadium", 4),
-      PM.product_range("iron-ore", {0, 2})
+      PM.product("pm-ferrovanadium"):amount(4):done(),
+      PM.product("iron-ore"):amount(0, 2):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -143,7 +143,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadate-solution", 5, "fluid")
+      PM.product("pm-vanadate-solution", "fluid"):amount(5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -163,7 +163,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-vanadium-ore", {6, 10})
+      PM.product("pm-vanadium-ore"):amount(6, 10):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -184,7 +184,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadate-solution", 10, "fluid")
+      PM.product("pm-vanadate-solution", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -205,8 +205,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadium-ore", 10),
-      PM.product_range("pm-vanadium-ore", {0, 4})
+      PM.product("pm-vanadium-ore"):amount(10):done(),
+      PM.product("pm-vanadium-ore"):amount(0, 4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -228,8 +228,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sodium-metavanadate", 4),
-      PM.product_range("pm-high-sulfur-residuals", {1, 3}, "fluid")
+      PM.product("pm-sodium-metavanadate"):amount(4):done(),
+      PM.product("pm-high-sulfur-residuals", "fluid"):amount(1, 3):done()
     }
   },
   {
@@ -248,7 +248,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-red-cake-precipitate", 8, "fluid"),
+      PM.product("pm-red-cake-precipitate", "fluid"):amount(8):done(),
     }
   },
   {
@@ -268,8 +268,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-vanadium-oxide", 3),
-      PM.product_range("pm-flux-container", {1, 2}),
+      PM.product("pm-vanadium-oxide"):amount(3):done(),
+      PM.product("pm-flux-container"):amount(1, 2):done(),
     }
   }
 })

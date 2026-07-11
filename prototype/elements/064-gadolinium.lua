@@ -73,7 +73,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-gadolinium-nitrate", 8)
+            PM.product("pm-gadolinium-nitrate"):amount(8):done()
         }
     },
     {
@@ -90,7 +90,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-molten-gadolinium-chloride", 7.5, "fluid"),
+            PM.product("pm-molten-gadolinium-chloride", "fluid"):amount(7.5):done(),
         }
     },
     {
@@ -107,10 +107,10 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-gadolinium-sponge", 5),
-            PM.product("pm-chlorine", 10, "fluid"),
-            PM.catalyst_chance("pm-rhenium-platinum-catalyst", 2, 0.8, 2),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2)
+            PM.product("pm-gadolinium-sponge"):amount(5):done(),
+            PM.product("pm-chlorine", "fluid"):amount(10):done(),
+            PM.product("pm-rhenium-platinum-catalyst"):amount(2):chance(0.8):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(2):done()
         }
     },
     {
@@ -129,8 +129,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-gadolinium", 4),
-            PM.catalyst("pm-industrial-noble-gas", 12.5, 12.5, "fluid")
+            PM.product("pm-gadolinium"):amount(4):done(),
+            PM.product("pm-industrial-noble-gas", "fluid"):amount(12.5):catalyst(12.5):done()
         }
     },
 })

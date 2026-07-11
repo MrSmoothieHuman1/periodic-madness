@@ -75,7 +75,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-magneto-orbital-trap", 1)
+      PM.product("pm-magneto-orbital-trap"):amount(1):done()
     }
   },
   {
@@ -96,7 +96,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-magneto-orbital-trap", 1)
+      PM.product("pm-magneto-orbital-trap"):amount(1):done()
     }
   },
   {
@@ -115,7 +115,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-francium-magneto-orbital-trap", 2)
+      PM.product("pm-francium-magneto-orbital-trap"):amount(2):done()
     }
   },
   {
@@ -134,10 +134,10 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-francium-209", 2, 0.66),
-      PM.product_chance("pm-francium-210", 2, 0.66),
-      PM.product_chance("pm-francium-211", 2, 0.66),
-      PM.catalyst("pm-magneto-orbital-trap", 2, 2)
+      PM.product("pm-francium-209"):amount(2):chance(0.66):done(),
+      PM.product("pm-francium-210"):amount(2):chance(0.66):done(),
+      PM.product("pm-francium-211"):amount(2):chance(0.66):done(),
+      PM.product("pm-magneto-orbital-trap"):amount(2):catalyst(2):done()
     }
   },
   {
@@ -159,7 +159,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-francium-glass-ampule", 1)
+      PM.product("pm-francium-glass-ampule"):amount(1):done()
     }
   },
   {
@@ -189,10 +189,10 @@ data:extend({
     },
     results =
     {
-      PM.catalyst("pm-francium-209", 15, 10),
-      PM.catalyst("pm-francium-210", 15, 10),
-      PM.catalyst("pm-francium-211", 15, 10),
-      PM.catalyst("pm-trace-astatine-211", 1, 1)
+      PM.product("pm-francium-209"):amount(15):catalyst(10):done(),
+      PM.product("pm-francium-210"):amount(15):catalyst(10):done(),
+      PM.product("pm-francium-211"):amount(15):catalyst(10):done(),
+      PM.product("pm-trace-astatine-211"):amount(1):catalyst(1):done()
     }
   },
 })

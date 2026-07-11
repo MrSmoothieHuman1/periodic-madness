@@ -61,7 +61,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-osmium-filtered-anode-sludge", 12, "fluid")
+            PM.product("pm-osmium-filtered-anode-sludge", "fluid"):amount(12):done()
         }
     },
     {
@@ -80,8 +80,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-osmium-oxide", 4),
-            PM.product_range("pm-ammonia-gas", {3, 5}, "fluid")
+            PM.product("pm-osmium-oxide"):amount(4):done(),
+            PM.product("pm-ammonia-gas", "fluid"):amount(3, 5):done()
         }
     },
     {
@@ -101,8 +101,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-osmium-ore", 3),
-            PM.product_range("pm-oxygen-gas", {6, 9}, "fluid")
+            PM.product("pm-osmium-ore"):amount(3):done(),
+            PM.product("pm-oxygen-gas", "fluid"):amount(6, 9):done()
         }
     },
     {
@@ -136,8 +136,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-osmium-ore", 3),
-            PM.product_range("pm-oxygen-gas", {6, 9}, "fluid")
+            PM.product("pm-osmium-ore"):amount(3):done(),
+            PM.product("pm-oxygen-gas", "fluid"):amount(6, 9):done()
         }
     },
     {
@@ -171,7 +171,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-molten-osmiridium", 5, "fluid")
+            PM.product("pm-molten-osmiridium", "fluid"):amount(5):done()
         }
     },
     {
@@ -193,8 +193,8 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-osmiridium-plate", 5),
-          PM.product_chance("pm-crucible", 1, 0.75)
+          PM.product("pm-osmiridium-plate"):amount(5):done(),
+          PM.product("pm-crucible"):amount(1):chance(0.75):done()
         }
     },
 

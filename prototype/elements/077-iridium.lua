@@ -115,8 +115,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-anode-mud", 8),
-            PM.product("pm-anode-sludge", 12, "fluid")
+            PM.product("pm-anode-mud"):amount(8):done(),
+            PM.product("pm-anode-sludge", "fluid"):amount(12):done()
         }
     },
     {
@@ -141,8 +141,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-anode-mud", 4),
-            PM.product_range("pm-acidic-water", {5, 12}, "fluid")
+            PM.product("pm-anode-mud"):amount(4):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(5, 12):done()
         }
     },
     {
@@ -165,8 +165,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-lightly-seperated-anode-mud", 6),
-            PM.product_chance("pm-gold-chunks", 1, 0.12)
+            PM.product("pm-lightly-seperated-anode-mud"):amount(6):done(),
+            PM.product("pm-gold-chunks"):amount(1):chance(0.12):done()
         }
     },
     {
@@ -185,8 +185,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-heavily-seperated-anode-mud", 4),
-            PM.product_chance("pm-platinum-powder", 1, 0.15)
+            PM.product("pm-heavily-seperated-anode-mud"):amount(4):done(),
+            PM.product("pm-platinum-powder"):amount(1):chance(0.15):done()
         }
     },
     {
@@ -205,7 +205,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-filtered-anode-sludge", 10, "fluid")
+            PM.product("pm-filtered-anode-sludge", "fluid"):amount(10):done()
         }
     },
 
@@ -226,7 +226,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-iridium-filtered-anode-sludge", 12, "fluid")
+            PM.product("pm-iridium-filtered-anode-sludge", "fluid"):amount(12):done()
         }
     },
     {
@@ -250,8 +250,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-iridium-sponge", 4),
-            PM.product_range("pm-acidic-water", {6, 12}, "fluid")
+            PM.product("pm-iridium-sponge"):amount(4):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(6, 12):done()
         }
     },
     {
@@ -289,8 +289,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-iridium-sponge", 4),
-            PM.product_range("pm-acidic-water", {6, 12}, "fluid")
+            PM.product("pm-iridium-sponge"):amount(4):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(6, 12):done()
         }
     },
     {
@@ -307,7 +307,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-iridium-ore", 3)
+            PM.product("pm-iridium-ore"):amount(3):done()
         }
     },
     {
@@ -325,7 +325,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-iridium-plate", 1)
+            PM.product("pm-iridium-plate"):amount(1):done()
         }
     }
 })

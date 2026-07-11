@@ -117,7 +117,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-beryl", 6)
+            PM.product("pm-beryl"):amount(6):done()
         }
     },
     {
@@ -135,8 +135,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-beryl-powder", {7, 12}),
-            PM.product_range("pm-bauxite-powder", {0, 3})
+            PM.product("pm-beryl-powder"):amount(7, 12):done(),
+            PM.product("pm-bauxite-powder"):amount(0, 3):done()
         }
     },
     {
@@ -155,8 +155,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range_chance("pm-beryllium-sulfate", {2, 4}, 0.8),
-            PM.product_range_chance("pm-aluminium-sulfate", {2, 4}, 0.2)
+            PM.product("pm-beryllium-sulfate"):amount(2, 4):chance(0.8):done(),
+            PM.product("pm-aluminium-sulfate"):amount(2, 4):chance(0.2):done()
         }
     },
     {
@@ -182,7 +182,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-beryllium-hydroxide", 10, "fluid")
+            PM.product("pm-beryllium-hydroxide", "fluid"):amount(10):done()
         }
     },
     {
@@ -209,9 +209,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-ammonium-tetrafluoroberyllate", 7.5, "fluid"),
-            PM.product_chance("pm-palladium-catalyst", 2, 0.85),
-            PM.product_chance("pm-catalyst-container", 2, 0.15)
+            PM.product("pm-ammonium-tetrafluoroberyllate", "fluid"):amount(7.5):done(),
+            PM.product("pm-palladium-catalyst"):amount(2):chance(0.85):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.15):done()
         }
     },
     {
@@ -229,7 +229,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-ammonium-tetrafluoroberyllate", 10, "fluid"),
+            PM.product("pm-ammonium-tetrafluoroberyllate", "fluid"):amount(10):done(),
         }
     },
     {
@@ -248,8 +248,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-beryllium-ore", {2, 5}),
-            PM.product_range_chance("pm-hydrogen-flouride", {0, 4}, 0.75, "fluid")
+            PM.product("pm-beryllium-ore"):amount(2, 5):done(),
+            PM.product("pm-hydrogen-flouride", "fluid"):amount(0, 4):chance(0.75):done()
         }
     },
     {
@@ -264,7 +264,7 @@ data:extend({
     ingredients = { PM.ingredient("pm-beryllium-ore", 1) },
     results = 
         {
-            PM.product("pm-beryllium-plate", 1)
+            PM.product("pm-beryllium-plate"):amount(1):done()
         }
     },
     {
@@ -298,7 +298,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-beryllium", 5, "fluid")
+      PM.product("pm-molten-beryllium", "fluid"):amount(5):done()
     }
   },
   {
@@ -319,8 +319,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-beryllium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-beryllium-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 
@@ -346,8 +346,8 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-aluminium-hydroxide-slurry", 5, "fluid"),
-        PM.product("pm-acidic-water", 15, "fluid")
+        PM.product("pm-aluminium-hydroxide-slurry", "fluid"):amount(5):done(),
+        PM.product("pm-acidic-water", "fluid"):amount(15):done()
     }
   }
 })

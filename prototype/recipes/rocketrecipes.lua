@@ -16,9 +16,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-ammonium-nitrate", 10),
-        PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 2),
-        PM.catalyst_chance("pm-yttrium-catalyst", 2, 0.8, 2)
+        PM.product("pm-ammonium-nitrate"):amount(10):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(2):done(),
+        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.8):catalyst(2):done()
     }
   },
   {
@@ -36,7 +36,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-ammonium-dinitramide-solution", 20, "fluid")
+        PM.product("pm-ammonium-dinitramide-solution", "fluid"):amount(20):done()
     }
   },
   {
@@ -56,8 +56,8 @@ data:extend({
     },
     results =
     {
-        PM.catalyst("pm-hot-light-coolant", 10, 10, "fluid", 1),
-        PM.catalyst("pm-ammonium-dinitramide-ampule", 8, 8)
+        PM.product("pm-hot-light-coolant", "fluid"):amount(10):catalyst(10):index(1):done(),
+        PM.product("pm-ammonium-dinitramide-ampule"):amount(8):catalyst(8):done()
     }
   },
   {
@@ -74,7 +74,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-hexamethyleneteramine", 4)
+        PM.product("pm-hexamethyleneteramine"):amount(4):done()
     }
   },
   {
@@ -93,9 +93,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-HMX", 2),
-        PM.catalyst_chance("pm-palladium-catalyst", 3, 0.75, 3),
-        PM.catalyst_chance("pm-catalyst-container", 3, 0.25, 3)
+        PM.product("pm-HMX"):amount(2):done(),
+        PM.product("pm-palladium-catalyst"):amount(3):chance(0.75):catalyst(3):done(),
+        PM.product("pm-catalyst-container"):amount(3):chance(0.25):catalyst(3):done()
     }
   },
   {
@@ -115,7 +115,7 @@ data:extend({
       },
     results = 
     {
-      PM.product("pm-rocket-control-unit", 1)
+      PM.product("pm-rocket-control-unit"):amount(1):done()
     }
   },
 
@@ -133,7 +133,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-nitrogen-dioxide", 10, "fluid")
+        PM.product("pm-nitrogen-dioxide", "fluid"):amount(10):done()
     }
   },
   {
@@ -151,9 +151,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-dinitrogen-tetroxide", 5, "fluid"),
-        PM.product_chance("pm-nitric-acid", 5, 0.5,"fluid"),
-        PM.product_chance("copper-plate", 4, 0.85)
+        PM.product("pm-dinitrogen-tetroxide", "fluid"):amount(5):done(),
+        PM.product("pm-nitric-acid", "fluid"):amount(5):chance(0.5):done(),
+        PM.product("copper-plate"):amount(4):chance(0.85):done()
     }
   },
 
@@ -172,9 +172,9 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-high-sulfur-refined-kerosene", 75, "fluid"),
-        PM.product_chance("pm-oil-residuals", 10, 0.25, "fluid"),
-        PM.product_range("sulfur", {2, 3})
+        PM.product("pm-high-sulfur-refined-kerosene", "fluid"):amount(75):done(),
+        PM.product("pm-oil-residuals", "fluid"):amount(10):chance(0.25):done(),
+        PM.product("sulfur"):amount(2, 3):done()
     }
   },
   {
@@ -193,10 +193,10 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-medium-sulfur-refined-kerosene", 50, "fluid"),
-        PM.product_chance("pm-fuel-oils", 10, 0.15, "fluid"),
-        PM.product_range("sulfur", {0, 1}),
-        PM.catalyst("pm-vanadium-oxide-catalyst", 2, 2)
+        PM.product("pm-medium-sulfur-refined-kerosene", "fluid"):amount(50):done(),
+        PM.product("pm-fuel-oils", "fluid"):amount(10):chance(0.15):done(),
+        PM.product("sulfur"):amount(0, 1):done(),
+        PM.product("pm-vanadium-oxide-catalyst"):amount(2):catalyst(2):done()
     }
   },
   {
@@ -215,10 +215,10 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-low-sulfur-refined-kerosene", 25, "fluid"),
-        PM.product_chance("pm-lubricating-oils", 10, 0.05, "fluid"),
-        PM.product_chance("sulfur", 1, 0.5),
-        PM.catalyst("pm-cobalt-catalyst", 3, 3)
+        PM.product("pm-low-sulfur-refined-kerosene", "fluid"):amount(25):done(),
+        PM.product("pm-lubricating-oils", "fluid"):amount(10):chance(0.05):done(),
+        PM.product("sulfur"):amount(1):chance(0.5):done(),
+        PM.product("pm-cobalt-catalyst"):amount(3):catalyst(3):done()
     }
   },
 
@@ -240,8 +240,8 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-RP-1", 12.5, "fluid"),
-        PM.catalyst("pm-nickel-tungsten-catalyst", 4, 4)
+        PM.product("pm-RP-1", "fluid"):amount(12.5):done(),
+        PM.product("pm-nickel-tungsten-catalyst"):amount(4):catalyst(4):done()
     }
   },
 
@@ -264,7 +264,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-heat-shielding", 3)
+        PM.product("pm-heat-shielding"):amount(3):done()
     }
   },
   {
@@ -284,7 +284,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-rocket-nozzle-parts", 2)
+        PM.product("pm-rocket-nozzle-parts"):amount(2):done()
     }
   },
   {
@@ -303,7 +303,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-rocket-cladding-parts", 2)
+        PM.product("pm-rocket-cladding-parts"):amount(2):done()
     }
   },
 
@@ -325,7 +325,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-liquid-rocket-fuel-tank", 2)
+        PM.product("pm-liquid-rocket-fuel-tank"):amount(2):done()
     }
   },
   {
@@ -346,7 +346,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-liquid-rocket-oxidiser-tank", 2)
+        PM.product("pm-liquid-rocket-oxidiser-tank"):amount(2):done()
     }
   },
   {
@@ -383,7 +383,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-liquid-rocket-oxidiser-tank", 2)
+        PM.product("pm-liquid-rocket-oxidiser-tank"):amount(2):done()
     }
   },
 
@@ -419,7 +419,7 @@ data:extend({
       },
     results = 
     {
-      PM.product("pm-rocket-control-unit", 2)
+      PM.product("pm-rocket-control-unit"):amount(2):done()
     }
   },
 --MARK: Rocket launchables
@@ -456,7 +456,7 @@ data:extend({
     },
     results =
     {
-        PM.product("satellite", 1)
+        PM.product("satellite"):amount(1):done()
     }
   },
   {
@@ -474,7 +474,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-reusable-rocket-guidance-unit", 1)
+        PM.product("pm-reusable-rocket-guidance-unit"):amount(1):done()
     }
   },
   {
@@ -490,10 +490,10 @@ data:extend({
     },
     results =
     {
-        PM.product_chance("pm-reusable-rocket-guidance-unit", 1, 0.2),
-        PM.product_chance("pm-rocket-control-unit", 1, 0.5),
-        PM.product_chance("pm-rocket-cladding-parts", 2, 0.5),
-        PM.product_chance("pm-rocket-nozzle-parts", 2, 0.5),
+        PM.product("pm-reusable-rocket-guidance-unit"):amount(1):chance(0.2):done(),
+        PM.product("pm-rocket-control-unit"):amount(1):chance(0.5):done(),
+        PM.product("pm-rocket-cladding-parts"):amount(2):chance(0.5):done(),
+        PM.product("pm-rocket-nozzle-parts"):amount(2):chance(0.5):done(),
     }
   },
   {
@@ -514,7 +514,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-speed-beamcon-satellite", 1)
+        PM.product("pm-speed-beamcon-satellite"):amount(1):done()
     }
   },
   {
@@ -535,7 +535,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-efficiency-beamcon-satellite", 1)
+        PM.product("pm-efficiency-beamcon-satellite"):amount(1):done()
     }
   },
 
@@ -559,7 +559,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("rocket-part", 1)
+        PM.product("rocket-part"):amount(1):done()
     }
   }
 })

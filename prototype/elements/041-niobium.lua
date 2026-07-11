@@ -60,9 +60,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-niobite-oxide", 5),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 1),
-            PM.catalyst_chance("pm-palladium-catalyst", 2, 0.8, 1)
+            PM.product("pm-niobite-oxide"):amount(5):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(1):done(),
+            PM.product("pm-palladium-catalyst"):amount(2):chance(0.8):catalyst(1):done()
         }
     },
     {
@@ -83,8 +83,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-niobium-ore", 3),
-            PM.product_chance("pm-tantalum-ore", 3, 0.5)
+            PM.product("pm-niobium-ore"):amount(3):done(),
+            PM.product("pm-tantalum-ore"):amount(3):chance(0.5):done()
         }
     },
     {
@@ -102,7 +102,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-niobium-plate", 1)
+            PM.product("pm-niobium-plate"):amount(1):done()
         }
     },
 
@@ -127,7 +127,7 @@ data:extend({
         },
         results =
         {
-          PM.product("pm-tantalite-waste-water", 7.5, "fluid")
+          PM.product("pm-tantalite-waste-water", "fluid"):amount(7.5):done()
         }
     },
     {
@@ -151,8 +151,8 @@ data:extend({
         },
         results =
         {
-          PM.product_chance("pm-tantalite-waste-water", 7.5, 0.75,"fluid"),
-          PM.product_chance("water", 10, 0.25, "fluid")
+          PM.product("pm-tantalite-waste-water", "fluid"):amount(7.5):chance(0.75):done(),
+          PM.product("water", "fluid"):amount(10):chance(0.25):done()
         }
     },
 })

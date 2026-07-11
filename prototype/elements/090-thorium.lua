@@ -197,7 +197,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-thorium-cast-iron-vessel", 3)
+            PM.product("pm-thorium-cast-iron-vessel"):amount(3):done()
         }
     },
     {
@@ -216,8 +216,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-phosphoryl-chloride", 30, "fluid"),
-            PM.catalyst("pm-potassium", 3, 3)
+            PM.product("pm-phosphoryl-chloride", "fluid"):amount(30):done(),
+            PM.product("pm-potassium"):amount(3):catalyst(3):done()
         }
     },
     {
@@ -234,7 +234,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-tributyl-phosphate", 20, "fluid")
+            PM.product("pm-tributyl-phosphate", "fluid"):amount(20):done()
         }
     },
 
@@ -252,8 +252,8 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-monazite-sand", 6, 5),
-            PM.product("pm-fine-monazite-sand", 16)
+            PM.product("pm-monazite-sand"):amount(6):catalyst(5):done(),
+            PM.product("pm-fine-monazite-sand"):amount(16):done()
         }
     },
     {
@@ -273,10 +273,10 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-thorium-filtered-concentrate", 10, "fluid"),
-            PM.catalyst("pm-acidic-water", 30, 30, "fluid"),
-            PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.8, 3),
-            PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3)
+            PM.product("pm-thorium-filtered-concentrate", "fluid"):amount(10):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(30):catalyst(30):done(),
+            PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.8):catalyst(3):done(),
+            PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(3):done()
         }
     },
     {
@@ -294,8 +294,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-thorium-filter-cake", {4, 6}),
-            PM.catalyst_range("pm-thorium-cast-iron-vessel", {1, 2}, 2)
+            PM.product("pm-thorium-filter-cake"):amount(4, 6):done(),
+            PM.product("pm-thorium-cast-iron-vessel"):amount(1, 2):catalyst(2):done()
         }
     },
     {
@@ -314,9 +314,9 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-sodium-diuranate", 1, 0.01),
-            PM.product_range("pm-trisodium-phosphate", {0, 2}),
-            PM.product("pm-thorium-precipitate", 2, "fluid")
+            PM.product("pm-sodium-diuranate"):amount(1):chance(0.01):done(),
+            PM.product("pm-trisodium-phosphate"):amount(0, 2):done(),
+            PM.product("pm-thorium-precipitate", "fluid"):amount(2):done()
         }
     },
     {
@@ -333,7 +333,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-trace-thorium", {2, 8})
+            PM.product("pm-trace-thorium"):amount(2, 8):done()
         }
     },
     {
@@ -350,7 +350,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-thorium-232", {1, 2})
+            PM.product("pm-thorium-232"):amount(1, 2):done()
         }
     },
 
@@ -367,7 +367,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-thorium-233", 10)
+            PM.product("pm-thorium-233"):amount(10):done()
         }
     },
     {
@@ -386,8 +386,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-liquid-thorium-fluoride", 30, "fluid"),
-            PM.catalyst("pm-molten-gold", 20, 20, "fluid")
+            PM.product("pm-liquid-thorium-fluoride", "fluid"):amount(30):done(),
+            PM.product("pm-molten-gold", "fluid"):amount(20):catalyst(20):done()
         }
     },
     {
@@ -403,7 +403,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-liquid-thorium-fluoride-fuel-cell", 5)
+            PM.product("pm-liquid-thorium-fluoride-fuel-cell"):amount(5):done()
         }
     }
 })

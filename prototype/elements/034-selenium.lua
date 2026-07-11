@@ -69,7 +69,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-selenium-filtered-anode-sludge", 12, "fluid")
+            PM.product("pm-selenium-filtered-anode-sludge", "fluid"):amount(12):done()
         }
     },
     {
@@ -89,9 +89,9 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-yttrium-catalyst", 1, 0.9),
-            PM.product_chance("pm-catalyst-container", 1, 0.1),
-            PM.product("pm-selenium-dioxide", 8)
+            PM.product("pm-yttrium-catalyst"):amount(1):chance(0.9):done(),
+            PM.product("pm-catalyst-container"):amount(1):chance(0.1):done(),
+            PM.product("pm-selenium-dioxide"):amount(8):done()
         }
     },
     {
@@ -115,8 +115,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-selenous-acid", 25, "fluid"),
-            PM.product("pm-acidic-water", 12.5, "fluid")
+            PM.product("pm-selenous-acid", "fluid"):amount(25):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(12.5):done()
         }
     },
     {
@@ -135,8 +135,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-selenium-ore", 6),
-            PM.product("pm-oxygen-gas", 10, "fluid")
+            PM.product("pm-selenium-ore"):amount(6):done(),
+            PM.product("pm-oxygen-gas", "fluid"):amount(10):done()
         }
     },
     {
@@ -154,7 +154,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-selenium-plate", 1)
+            PM.product("pm-selenium-plate"):amount(1):done()
         }
     }
 })

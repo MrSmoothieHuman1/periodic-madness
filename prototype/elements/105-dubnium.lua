@@ -48,9 +48,9 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-polonium-210", 5, 0.33),
-            PM.product_chance("iron-plate", 20, 0.33),
-            PM.product_chance("pm-trace-dubnium", 5, 0.34)
+            PM.product("pm-polonium-210"):amount(5):chance(0.33):done(),
+            PM.product("iron-plate"):amount(20):chance(0.33):done(),
+            PM.product("pm-trace-dubnium"):amount(5):chance(0.34):done()
         }
     },
     {
@@ -66,7 +66,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-usable-dubnium", 1)
+            PM.product("pm-usable-dubnium"):amount(1):done()
         }
     }
 })

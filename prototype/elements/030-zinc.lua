@@ -112,7 +112,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-zinc-powder", 4),
+      PM.product("pm-zinc-powder"):amount(4):done(),
     }
   },
   {
@@ -151,8 +151,8 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-zinc-ore", 2),
-      PM.product_range_chance("sulfur", {1, 2}, 0.33),
+      PM.product("pm-zinc-ore"):amount(2):done(),
+      PM.product("sulfur"):amount(1, 2):chance(0.33):done(),
     }
   },
 
@@ -192,7 +192,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-zinc-ore", 2),
+      PM.product("pm-zinc-ore"):amount(2):done(),
     }
   },
   {
@@ -223,7 +223,7 @@ data:extend({
       PM.ingredient("pm-zinc-chunk", 2)
     },
     results = {
-      PM.product("pm-zinc-plate", 1)
+      PM.product("pm-zinc-plate"):amount(1):done()
     }
   },
   {
@@ -240,7 +240,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-zinc-plate", 1)
+      PM.product("pm-zinc-plate"):amount(1):done()
     }
   },
   {
@@ -274,7 +274,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-zinc", 5, "fluid")
+      PM.product("pm-molten-zinc", "fluid"):amount(5):done()
     }
   },
   {
@@ -295,8 +295,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-zinc-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-zinc-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 
@@ -325,8 +325,8 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-zinc-froth", 20, "fluid"),
-    PM.product("pm-zinc-tailings", 10, "fluid")
+    PM.product("pm-zinc-froth", "fluid"):amount(20):done(),
+    PM.product("pm-zinc-tailings", "fluid"):amount(10):done()
   }
 },
 {
@@ -345,8 +345,8 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-zinc-sulfide-concentrate", 15, "fluid"),
-    PM.product_range("pm-molten-ore-slag", {0, 2}, "fluid")
+    PM.product("pm-zinc-sulfide-concentrate", "fluid"):amount(15):done(),
+    PM.product("pm-molten-ore-slag", "fluid"):amount(0, 2):done()
   }
 },
 {
@@ -369,9 +369,9 @@ data:extend({
   },
   results =
   {
-    PM.product_range("pm-sulfur-dioxide", {0, 0.5}, "fluid"),
-    PM.product_range("pm-hydrogen-sulfide", {0, 0.75}, "fluid"),
-    PM.product("pm-zinc-oxide", 30)
+    PM.product("pm-sulfur-dioxide", "fluid"):amount(0, 0.5):done(),
+    PM.product("pm-hydrogen-sulfide", "fluid"):amount(0, 0.75):done(),
+    PM.product("pm-zinc-oxide"):amount(30):done()
   }
 },
 {
@@ -390,8 +390,8 @@ data:extend({
   },
   results = 
   {
-    PM.product("pm-zinc-vapour", 5, "fluid"),
-    PM.product_range("pm-carbon-dioxide-gas", {8, 10}, "fluid")
+    PM.product("pm-zinc-vapour", "fluid"):amount(5):done(),
+    PM.product("pm-carbon-dioxide-gas", "fluid"):amount(8, 10):done()
   }
 },
 {
@@ -408,7 +408,7 @@ data:extend({
   },
   results =
   {
-    PM.product("pm-zinc-ore", 8)
+    PM.product("pm-zinc-ore"):amount(8):done()
   }
 },
 {
@@ -433,9 +433,9 @@ data:extend({
   },
   results =
   {
-    PM.product_range("pm-cupric-waste-water", {0, 5}, "fluid"),
-    PM.product_range("sulfur", {0, 1}),
-    PM.product_range("pm-ferrum", {0, 3})
+    PM.product("pm-cupric-waste-water", "fluid"):amount(0, 5):done(),
+    PM.product("sulfur"):amount(0, 1):done(),
+    PM.product("pm-ferrum"):amount(0, 3):done()
   }
 },
 

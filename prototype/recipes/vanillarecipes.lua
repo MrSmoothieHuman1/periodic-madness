@@ -528,7 +528,7 @@ data.raw["recipe"]["explosive-cannon-shell"].ingredients =
   PM.ingredient("pm-tungsten-plate", 4),
 }
 data.raw["recipe"]["slowdown-capsule"].categories = {"crafting-with-fluid"}
-data.raw["recipe"]["slowdown-capsule"].results = { PM.product("slowdown-capsule", 2) }
+data.raw["recipe"]["slowdown-capsule"].results = { PM.product("slowdown-capsule"):amount(2):done() }
 data.raw["recipe"]["slowdown-capsule"].ingredients =
 {
   PM.ingredient("pm-melatonin", 4, "fluid"),
@@ -537,7 +537,7 @@ data.raw["recipe"]["slowdown-capsule"].ingredients =
   PM.ingredient("pm-fluid-circuit", 3)
 }
 data.raw["recipe"]["poison-capsule"].categories = {"crafting-with-fluid"}
-data.raw["recipe"]["poison-capsule"].results = { PM.product("poison-capsule", 2) }
+data.raw["recipe"]["poison-capsule"].results = { PM.product("poison-capsule"):amount(2):done() }
 data.raw["recipe"]["poison-capsule"].ingredients =
 {
   PM.ingredient("pm-phosgene", 4, "fluid"),
@@ -547,7 +547,7 @@ data.raw["recipe"]["poison-capsule"].ingredients =
 }
 data.raw["recipe"]["heat-pipe"].subgroup = "pm-heat-machines"
 data.raw["recipe"]["heat-pipe"].order = "b"
-data.raw["recipe"]["heat-pipe"].results = {PM.product("heat-pipe", 2)}
+data.raw["recipe"]["heat-pipe"].results = {PM.product("heat-pipe"):amount(2):done()}
 data.raw["recipe"]["heat-pipe"].ingredients =
 {
   PM.ingredient("pm-heat-pipe-1", 1),
@@ -656,8 +656,8 @@ data.raw["recipe"]["fission-reactor-equipment"].ingredients =
 data.raw["recipe"]["energy-shield-equipment"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["nuclear-fuel-reprocessing"].results =
 {
-  PM.product_range("pm-empty-reactor-cell", {3, 5}),
-  PM.product("uranium-238", 3)
+  PM.product("pm-empty-reactor-cell"):amount(3, 5):done(),
+  PM.product("uranium-238"):amount(3):done()
 }
 data.raw["recipe"]["pump"].ingredients = 
 {
@@ -733,7 +733,7 @@ data.raw["recipe"]["concrete"].ingredients =
 }
 data.raw["recipe"]["concrete"].results = 
 {
-  PM.product("concrete", 2)
+  PM.product("concrete"):amount(2):done()
 }
 data.raw["recipe"]["refined-concrete"].energy_required = 5
 data.raw["recipe"]["refined-concrete"].categories = {"crafting-with-fluid"}
@@ -746,7 +746,7 @@ data.raw["recipe"]["refined-concrete"].ingredients =
 }
 data.raw["recipe"]["refined-concrete"].results = 
 {
-  PM.product("refined-concrete", 2)
+  PM.product("refined-concrete"):amount(2):done()
 }
 data.raw["recipe"]["hazard-concrete"].ingredients =
 {
@@ -755,7 +755,7 @@ data.raw["recipe"]["hazard-concrete"].ingredients =
 }
 data.raw["recipe"]["hazard-concrete"].results =
 {
-  PM.product("hazard-concrete", 5)
+  PM.product("hazard-concrete"):amount(5):done()
 }
 data.raw["recipe"]["refined-hazard-concrete"].ingredients =
 {
@@ -764,7 +764,7 @@ data.raw["recipe"]["refined-hazard-concrete"].ingredients =
 }
 data.raw["recipe"]["refined-hazard-concrete"].results =
 {
-  PM.product("refined-hazard-concrete", 5)
+  PM.product("refined-hazard-concrete"):amount(5):done()
 }
 data.raw["recipe"]["cliff-explosives"].categories = {"crafting-with-fluid"}
 data.raw["recipe"]["cliff-explosives"].ingredients =
@@ -917,7 +917,7 @@ data.raw["recipe"]["coal-liquefaction"].ingredients =
 }
 data.raw["recipe"]["coal-liquefaction"].results =
 {
-  PM.product("pm-oil-residuals", 90, "fluid"),
-  PM.product("pm-refinery-gases", 20, "fluid"),
-  PM.product("crude-oil", 10, "fluid")
+  PM.product("pm-oil-residuals", "fluid"):amount(90):done(),
+  PM.product("pm-refinery-gases", "fluid"):amount(20):done(),
+  PM.product("crude-oil", "fluid"):amount(10):done()
 }

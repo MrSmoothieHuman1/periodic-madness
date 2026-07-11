@@ -58,7 +58,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-rhodium-filtered-anode-sludge", 12, "fluid")
+            PM.product("pm-rhodium-filtered-anode-sludge", "fluid"):amount(12):done()
         }
     },
     {
@@ -79,8 +79,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-rhodium-chunks", 4),
-            PM.product_range_chance("pm-platinum-plate", {1, 2}, 0.45)
+            PM.product("pm-rhodium-chunks"):amount(4):done(),
+            PM.product("pm-platinum-plate"):amount(1, 2):chance(0.45):done()
         }
     },
     {
@@ -98,7 +98,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-rhodium-ore", 3)
+            PM.product("pm-rhodium-ore"):amount(3):done()
         }
     },
     {
@@ -116,7 +116,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-rhodium-plate", 1)
+            PM.product("pm-rhodium-plate"):amount(1):done()
         }
     },
 })

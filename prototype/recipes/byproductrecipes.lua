@@ -38,8 +38,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("iron-ore", 2, 0.75),
-      PM.product_range("pm-acidic-water", {5, 7.5}, "fluid"),
+      PM.product("iron-ore"):amount(2):chance(0.75):done(),
+      PM.product("pm-acidic-water", "fluid"):amount(5, 7.5):done(),
     }
   },
   {
@@ -78,8 +78,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("copper-ore", 2, 0.75),
-      PM.product_range("pm-acidic-water", {5, 7.5}, "fluid"),
+      PM.product("copper-ore"):amount(2):chance(0.75):done(),
+      PM.product("pm-acidic-water", "fluid"):amount(5, 7.5):done(),
     }
   },
   {
@@ -99,7 +99,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-glass-pane", 1)
+      PM.product("pm-glass-pane"):amount(1):done()
     }
   },
   {
@@ -118,8 +118,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-palladium-ore", 4),
-      PM.product_range("pm-hydrogen-gas", {2, 4}, "fluid")
+      PM.product("pm-palladium-ore"):amount(4):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(2, 4):done()
     }
   },
   {
@@ -137,9 +137,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-ferrum", {3, 9}, 0.5),
-      PM.product_range_chance("pm-patina", {3, 9}, 0.5),
-      PM.product_range_chance("pm-post-transition-metals-ore", {3, 9}, 0.5),
+      PM.product("pm-ferrum"):amount(3, 9):chance(0.5):done(),
+      PM.product("pm-patina"):amount(3, 9):chance(0.5):done(),
+      PM.product("pm-post-transition-metals-ore"):amount(3, 9):chance(0.5):done(),
     }
   },
   {
@@ -169,9 +169,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range_chance("pm-arsenic-ore", {2, 8}, 0.4),
-      PM.product_range_chance("pm-lead-ore", {3, 5}, 0.5),
-      PM.product_range_chance("pm-bismuth-ore", {3, 5}, 0.5),
+      PM.product("pm-arsenic-ore"):amount(2, 8):chance(0.4):done(),
+      PM.product("pm-lead-ore"):amount(3, 5):chance(0.5):done(),
+      PM.product("pm-bismuth-ore"):amount(3, 5):chance(0.5):done(),
     }
   },
   {
@@ -210,7 +210,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("iron-ore", {2, 4})
+      PM.product("iron-ore"):amount(2, 4):done()
     }
   },
   {
@@ -249,7 +249,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("copper-ore", {2, 4})
+      PM.product("copper-ore"):amount(2, 4):done()
     }
   },
   {
@@ -269,10 +269,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-cobalt-ore", {6, 10}),
-      PM.product_range("pm-arsenic-ore", {2, 5}),
-      PM.product_range("sulfur", {7, 12}),
-      PM.product_range_chance("pm-ferrum", {2, 4}, 0.12)
+      PM.product("pm-cobalt-ore"):amount(6, 10):done(),
+      PM.product("pm-arsenic-ore"):amount(2, 5):done(),
+      PM.product("sulfur"):amount(7, 12):done(),
+      PM.product("pm-ferrum"):amount(2, 4):chance(0.12):done()
     }
   },
   {
@@ -298,8 +298,8 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-ferrous-waste-water", {15, 22.5}, "fluid"),
-        PM.product_range("pm-sulfuric-waste-water", {15, 22.5}, "fluid")
+        PM.product("pm-ferrous-waste-water", "fluid"):amount(15, 22.5):done(),
+        PM.product("pm-sulfuric-waste-water", "fluid"):amount(15, 22.5):done()
     }
   },
   {
@@ -322,7 +322,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-ferrous-waste-water", 15, "fluid")
+      PM.product("pm-ferrous-waste-water", "fluid"):amount(15):done()
     }
   },
   {
@@ -345,7 +345,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-cupric-waste-water", 15, "fluid")
+      PM.product("pm-cupric-waste-water", "fluid"):amount(15):done()
     }
   },
   {
@@ -368,7 +368,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-sulfuric-waste-water", 15, "fluid")
+      PM.product("pm-sulfuric-waste-water", "fluid"):amount(15):done()
     }
   },
   {
@@ -392,11 +392,11 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-manganese-ore", {0, 3}, 0.75),
-      PM.product_range_chance("iron-ore", {0, 5}, 0.8),
-      PM.product_range_chance("pm-titanium-ore", {0, 3}, 0.66),
-      PM.product_range_chance("pm-lead-ore", {0, 2}, 0.35),
-      PM.product_range_chance("pm-silver-ore", {0, 4}, 0.6)
+      PM.product("pm-manganese-ore"):amount(0, 3):chance(0.75):done(),
+      PM.product("iron-ore"):amount(0, 5):chance(0.8):done(),
+      PM.product("pm-titanium-ore"):amount(0, 3):chance(0.66):done(),
+      PM.product("pm-lead-ore"):amount(0, 2):chance(0.35):done(),
+      PM.product("pm-silver-ore"):amount(0, 4):chance(0.6):done()
     }
   },
   {
@@ -420,11 +420,11 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("pm-gold-ore", {0, 3}, 0.75),
-      PM.product_range_chance("copper-ore", {0, 5}, 0.8),
-      PM.product_range_chance("pm-palladium-ore", {0, 3}, 0.5),
-      PM.product_range_chance("pm-platinum-ore", {0, 4}, 0.4),
-      PM.product_range_chance("pm-indium-ore", {0, 2}, 0.35)
+      PM.product("pm-gold-ore"):amount(0, 3):chance(0.75):done(),
+      PM.product("copper-ore"):amount(0, 5):chance(0.8):done(),
+      PM.product("pm-palladium-ore"):amount(0, 3):chance(0.5):done(),
+      PM.product("pm-platinum-ore"):amount(0, 4):chance(0.4):done(),
+      PM.product("pm-indium-ore"):amount(0, 2):chance(0.35):done()
     }
   },
   {
@@ -448,10 +448,10 @@ data:extend({
     },
     results = 
     {
-      PM.product_range_chance("iron-ore", {0, 3}, 0.66),
-      PM.product_range_chance("pm-zinc-ore", {0, 2}, 0.5),
-      PM.product_range_chance("pm-mercury-ore", {0, 3}, 0.45),
-      PM.product_range_chance("pm-hydrogen-sulfide", {0, 4}, 0.6, "fluid"),
+      PM.product("iron-ore"):amount(0, 3):chance(0.66):done(),
+      PM.product("pm-zinc-ore"):amount(0, 2):chance(0.5):done(),
+      PM.product("pm-mercury-ore"):amount(0, 3):chance(0.45):done(),
+      PM.product("pm-hydrogen-sulfide", "fluid"):amount(0, 4):chance(0.6):done(),
     }
   },
   {
@@ -475,8 +475,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("water", {15, 20}, "fluid"),
-      PM.product_range_chance("pm-ferrum", {0, 4}, 0.25)
+      PM.product("water", "fluid"):amount(15, 20):done(),
+      PM.product("pm-ferrum"):amount(0, 4):chance(0.25):done()
     }
   },
   {
@@ -500,8 +500,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("water", {15, 20}, "fluid"),
-      PM.product_range_chance("pm-patina", {0, 4}, 0.25)
+      PM.product("water", "fluid"):amount(15, 20):done(),
+      PM.product("pm-patina"):amount(0, 4):chance(0.25):done()
     }
   },
   {
@@ -525,8 +525,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("water", {15, 20}, "fluid"),
-      PM.product_range_chance("pm-acidic-water", {0, 8}, 0.33, "fluid")
+      PM.product("water", "fluid"):amount(15, 20):done(),
+      PM.product("pm-acidic-water", "fluid"):amount(0, 8):chance(0.33):done()
     }
   },
   {
@@ -546,9 +546,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-ferrous-waste-water", {4, 16}, "fluid"),
-      PM.product_range("pm-patina", {3, 6}),
-      PM.product_range("pm-sulfuric-waste-water", {4, 10}, "fluid"),
+      PM.product("pm-ferrous-waste-water", "fluid"):amount(4, 16):done(),
+      PM.product("pm-patina"):amount(3, 6):done(),
+      PM.product("pm-sulfuric-waste-water", "fluid"):amount(4, 10):done(),
     }
   },
   {
@@ -565,8 +565,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-calcium-ore", {0, 6}),
-      PM.product_range("pm-chlorine", {0, 12}, "fluid"),
+      PM.product("pm-calcium-ore"):amount(0, 6):done(),
+      PM.product("pm-chlorine", "fluid"):amount(0, 12):done(),
     }
   },
   {
@@ -584,8 +584,8 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-calcium-chloride", {4, 6}),
-      PM.product_range("pm-sulfur-dioxide", {0, 4}, "fluid")
+      PM.product("pm-calcium-chloride"):amount(4, 6):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(0, 4):done()
     }
   },
   {
@@ -605,9 +605,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-combined-ore-slab", {2, 4}),
-      PM.product_chance("pm-palladium-catalyst", 3, 0.75),
-      PM.product_chance("pm-catalyst-container", 3, 0.25)
+      PM.product("pm-combined-ore-slab"):amount(2, 4):done(),
+      PM.product("pm-palladium-catalyst"):amount(3):chance(0.75):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0.25):done()
     }
   },
   {
@@ -627,10 +627,10 @@ data:extend({
     },
     results =
     {
-      --PM.product_range("pm-rutile", {0, 3})
-      PM.product_range("pm-ferrum", {0, 3}),
-      PM.product_range("pm-patina", {0, 3}),
-      PM.product_range("pm-mixed-ore-slag", {0, 2})
+      --PM.product("pm-rutile"):amount(0, 3):done()
+      PM.product("pm-ferrum"):amount(0, 3):done(),
+      PM.product("pm-patina"):amount(0, 3):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 2):done()
     }
   }
 } --[[@as data.RecipePrototype[] ]])

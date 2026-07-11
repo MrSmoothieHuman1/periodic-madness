@@ -14,7 +14,7 @@ data.raw["recipe"]["coke"].icon = "__periodic-madness__/graphics/icons/coke.png"
 data.raw["recipe"]["coke"].subgroup = "pm-alloys"
 data.raw["recipe"]["coke"].results =
 {
-  PM.product("pm-coke", 1)
+  PM.product("pm-coke"):amount(1):done()
 }
 data.raw["recipe"]["foundry"].ingredients =
 {

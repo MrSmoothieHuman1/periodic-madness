@@ -91,8 +91,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-europium-trioxide-concentrate", 20, "fluid"),
-            PM.catalyst_range("pm-sodium", {6, 12}, 8)
+            PM.product("pm-europium-trioxide-concentrate", "fluid"):amount(20):done(),
+            PM.product("pm-sodium"):amount(6, 12):catalyst(8):done()
         }
     },
     {
@@ -109,8 +109,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-europium-trioxide", {3, 4}),
-            PM.catalyst("pm-acidic-water", 12.5, 12.5, "fluid")
+            PM.product("pm-europium-trioxide"):amount(3, 4):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(12.5):catalyst(12.5):done()
         }
     },
     {
@@ -127,7 +127,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-zinc-amalgam", 4)
+            PM.product("pm-zinc-amalgam"):amount(4):done()
         }
     },
     {
@@ -146,7 +146,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-molten-europium-chloride", 7.5, "fluid"),
+            PM.product("pm-molten-europium-chloride", "fluid"):amount(7.5):done(),
         }
     },
     {
@@ -163,8 +163,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-europium", 5),
-            PM.product("pm-chlorine", 10, "fluid"),
+            PM.product("pm-europium"):amount(5):done(),
+            PM.product("pm-chlorine", "fluid"):amount(10):done(),
         }
     }
 })

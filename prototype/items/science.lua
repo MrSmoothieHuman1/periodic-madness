@@ -156,13 +156,13 @@ data.raw["item"]["logistic-science-pack"].icon_size = 64
 data.raw["recipe"]["logistic-science-pack"].energy_required = 6
 data.raw["recipe"]["logistic-science-pack"].results =
 {
-  PM.product("logistic-science-pack", 1)
+  PM.product("logistic-science-pack"):amount(1):done()
 }
 
 data.raw["recipe"]["chemical-science-pack"].energy_required = 6
 data.raw["recipe"]["chemical-science-pack"].results =
 {
-  PM.product("chemical-science-pack", 1)
+  PM.product("chemical-science-pack"):amount(1):done()
 }
 data.raw["item"]["chemical-science-pack"].order = "e"
 data.raw["item"]["chemical-science-pack"].icon ="__periodic-madness__/graphics/icons/science/reactive-non-metals-pack.png"

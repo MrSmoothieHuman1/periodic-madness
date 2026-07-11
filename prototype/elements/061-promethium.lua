@@ -61,10 +61,10 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-roasted-bastnasite", 2, 2),
-            PM.catalyst("pm-ion-exchange-beads", 3, 3),
-            PM.catalyst_chance("pm-mixed-praseodymium-deposit", 2, 0.1, 2),
-            PM.product_chance("pm-neodymium-146", 2, 0.032)
+            PM.product("pm-roasted-bastnasite"):amount(2):catalyst(2):done(),
+            PM.product("pm-ion-exchange-beads"):amount(3):catalyst(3):done(),
+            PM.product("pm-mixed-praseodymium-deposit"):amount(2):chance(0.1):catalyst(2):done(),
+            PM.product("pm-neodymium-146"):amount(2):chance(0.032):done()
         }
     },
     {
@@ -80,7 +80,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-neodymium-147", 2)
+            PM.product("pm-neodymium-147"):amount(2):done()
         }
     },
     {
@@ -96,8 +96,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-promethium-147", 2),
-            PM.product("pm-neodymium-147", 2)
+            PM.product("pm-promethium-147"):amount(2):done(),
+            PM.product("pm-neodymium-147"):amount(2):done()
         }
     },
 
@@ -119,8 +119,8 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-neodymium-146", 24, 20),
-            PM.catalyst("pm-trace-astatine-211", 1, 1)
+            PM.product("pm-neodymium-146"):amount(24):catalyst(20):done(),
+            PM.product("pm-trace-astatine-211"):amount(1):catalyst(1):done()
         }
     },
     {
@@ -141,9 +141,9 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-neodymium-147", 24, 20),
-            PM.catalyst("pm-neodymium-146", 1),
-            PM.catalyst("pm-trace-astatine-211", 1, 1)
+            PM.product("pm-neodymium-147"):amount(24):catalyst(20):done(),
+            PM.product("pm-neodymium-146"):amount(1):catalyst(1):done(),
+            PM.product("pm-trace-astatine-211"):amount(1):catalyst(1):done()
         }
     },
 })

@@ -6,8 +6,8 @@ data.raw["recipe"]["pm-seawater-evaporation"].ingredients =
 }
 data.raw["recipe"]["pm-seawater-evaporation"].results =
 {
-  PM.product("salt", 5),
-  PM.product("water", 25, "fluid"),
+  PM.product("salt"):amount(5):done(),
+  PM.product("water", "fluid"):amount(25):done(),
 }
 
 data.raw["technology"]["chlorine-processing"].effects =
@@ -109,8 +109,8 @@ data.raw["recipe"]["ferric-chloride"].categories = {"pm-acids"}
 data.raw["recipe"]["ferric-chloride-hcl"].categories = {"pm-acids"}
 data.raw["recipe"]["hydrogen-chloride-salt"].results =
 {
-  PM.product("pm-hydrochloric-acid", 10, "fluid"),
-  PM.product_range("pm-oxygen", {2, 5}, "item")
+  PM.product("pm-hydrochloric-acid", "fluid"):amount(10):done(),
+  PM.product("pm-oxygen"):amount(2, 5):done()
 }
 data.raw["recipe"]["hydrogen-chloride-salt"].icon_size = 64
 data.raw["recipe"]["hydrogen-chloride-salt"].icon =

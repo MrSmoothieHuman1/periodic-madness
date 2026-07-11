@@ -19,9 +19,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-refinery-gases", 30, "fluid"),
-      PM.product("pm-naptha", 30, "fluid"),
-      PM.product("pm-oil-residuals", 30, "fluid")
+      PM.product("pm-refinery-gases", "fluid"):amount(30):done(),
+      PM.product("pm-naptha", "fluid"):amount(30):done(),
+      PM.product("pm-oil-residuals", "fluid"):amount(30):done()
     }
   },
   {
@@ -43,9 +43,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-high-sulfur-residuals", 12, "fluid"),
-      PM.product("pm-low-sulfur-residuals", 12, "fluid"),
-      PM.catalyst_range("pm-glass-fibers", {3, 5}, 5)
+      PM.product("pm-high-sulfur-residuals", "fluid"):amount(12):done(),
+      PM.product("pm-low-sulfur-residuals", "fluid"):amount(12):done(),
+      PM.product("pm-glass-fibers"):amount(3, 5):catalyst(5):done()
     }
   },
   {
@@ -65,10 +65,10 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-bitumen", {0, 2}),
-      PM.product_range("sulfur", {5, 10}),
-      PM.product_range("pm-chromium-ore", {1, 4}),
-      PM.product_range("pm-hydrogen-sulfide", {2.5, 8}, "fluid")
+      PM.product("pm-bitumen"):amount(0, 2):done(),
+      PM.product("sulfur"):amount(5, 10):done(),
+      PM.product("pm-chromium-ore"):amount(1, 4):done(),
+      PM.product("pm-hydrogen-sulfide", "fluid"):amount(2.5, 8):done()
     }
   },
   {
@@ -88,10 +88,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-bitumen", {2, 4}),
-      PM.product_range("sulfur", {3, 4}),
-      PM.product_range("pm-vanadium-ore", {1, 4}),
-      PM.product_range("pm-syngas", {0.5, 5}, "fluid")
+      PM.product("pm-bitumen"):amount(2, 4):done(),
+      PM.product("sulfur"):amount(3, 4):done(),
+      PM.product("pm-vanadium-ore"):amount(1, 4):done(),
+      PM.product("pm-syngas", "fluid"):amount(0.5, 5):done()
     }
   },
   {
@@ -112,9 +112,9 @@ data:extend({
     },
     results = 
     {
-      PM.product_range("pm-acidic-water", {5, 12.5}, "fluid"),
-      PM.product_range("pm-naptha", {0, 5}, "fluid"),
-      PM.product_range("pm-coke", {2, 6})
+      PM.product("pm-acidic-water", "fluid"):amount(5, 12.5):done(),
+      PM.product("pm-naptha", "fluid"):amount(0, 5):done(),
+      PM.product("pm-coke"):amount(2, 6):done()
     }
   },
   {
@@ -134,8 +134,8 @@ data:extend({
     },
     results =
     {
-      PM.product_chance("pm-butane-gas", 15, 0.5, "fluid"),
-      PM.product_chance("pm-butene-gas", 15, 0.5, "fluid")
+      PM.product("pm-butane-gas", "fluid"):amount(15):chance(0.5):done(),
+      PM.product("pm-butene-gas", "fluid"):amount(15):chance(0.5):done()
     }
   },
   {
@@ -156,11 +156,11 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_chance("pm-palladium-catalyst", 1, 0.8, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.2, 1),
-      PM.product_chance("pm-butane-gas", 20, 0.75, "fluid"),
-      PM.product_range_chance("pm-syngas", {5, 10}, 0.35, "fluid"),
-      PM.catalyst_range("pm-palladium-hydride", {0, 2}, 1)
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.8):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.2):catalyst(1):done(),
+      PM.product("pm-butane-gas", "fluid"):amount(20):chance(0.75):done(),
+      PM.product("pm-syngas", "fluid"):amount(5, 10):chance(0.35):done(),
+      PM.product("pm-palladium-hydride"):amount(0, 2):catalyst(1):done()
     }
   },
   {
@@ -180,7 +180,7 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-ethylene-gas", {4, 8}, "fluid"),
+      PM.product("pm-ethylene-gas", "fluid"):amount(4, 8):done(),
     }
   },
   {
@@ -200,8 +200,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ethylene-gas", 18, "fluid"),
-      PM.product_range("pm-hydrogen-gas", {3, 6}, "fluid")
+      PM.product("pm-ethylene-gas", "fluid"):amount(18):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(3, 6):done()
     }
   },
   {
@@ -219,7 +219,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-butane-gas", 15, "fluid")
+      PM.product("pm-butane-gas", "fluid"):amount(15):done()
     }
   },
   {
@@ -241,7 +241,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-plastic-pellets", 2)
+      PM.product("pm-plastic-pellets"):amount(2):done()
     }
   },
   {
@@ -264,9 +264,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-plastic-pellets", 12),
-      PM.catalyst_chance("pm-yttrium-catalyst", 1, 0.95, 1),
-      PM.catalyst_chance("pm-catalyst-container", 1, 0.05, 1)
+      PM.product("pm-plastic-pellets"):amount(12):done(),
+      PM.product("pm-yttrium-catalyst"):amount(1):chance(0.95):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.05):catalyst(1):done()
     }
   },
 
@@ -286,7 +286,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molybdenum-disulfide", 1)
+      PM.product("pm-molybdenum-disulfide"):amount(1):done()
     }
   },
   {
@@ -306,14 +306,14 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-oil-residuals", 50, "fluid"),
-      PM.product("pm-fuel-oils", 50, "fluid"),
-      PM.product("pm-lubricating-oils", 50, "fluid"),
-      PM.product("pm-diesel", 50, "fluid"),
-      PM.product("pm-kerosene", 50, "fluid"),
-      PM.product("pm-naptha", 50, "fluid"),
-      PM.product("pm-petrol", 50, "fluid"),
-      PM.product("pm-refinery-gases", 50, "fluid")
+      PM.product("pm-oil-residuals", "fluid"):amount(50):done(),
+      PM.product("pm-fuel-oils", "fluid"):amount(50):done(),
+      PM.product("pm-lubricating-oils", "fluid"):amount(50):done(),
+      PM.product("pm-diesel", "fluid"):amount(50):done(),
+      PM.product("pm-kerosene", "fluid"):amount(50):done(),
+      PM.product("pm-naptha", "fluid"):amount(50):done(),
+      PM.product("pm-petrol", "fluid"):amount(50):done(),
+      PM.product("pm-refinery-gases", "fluid"):amount(50):done()
     }
   },
   {
@@ -337,8 +337,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-legendary-diesel", {8, 10}, "fluid"),
-      PM.product_range("pm-common-diesel", {10, 12}, "fluid")
+      PM.product("pm-legendary-diesel", "fluid"):amount(8, 10):done(),
+      PM.product("pm-common-diesel", "fluid"):amount(10, 12):done()
     }
   },
   {
@@ -369,7 +369,7 @@ data:extend({
     },
     results =
     {
-      PM.product("solid-fuel", 2)
+      PM.product("solid-fuel"):amount(2):done()
     }
   },
   {
@@ -400,7 +400,7 @@ data:extend({
     },
     results =
     {
-      PM.product("solid-fuel", 2)
+      PM.product("solid-fuel"):amount(2):done()
     }
   },
   {
@@ -431,7 +431,7 @@ data:extend({
     },
     results =
     {
-      PM.product("solid-fuel", 2)
+      PM.product("solid-fuel"):amount(2):done()
     }
   },
   {
@@ -462,7 +462,7 @@ data:extend({
     },
     results =
     {
-      PM.product("solid-fuel", 2)
+      PM.product("solid-fuel"):amount(2):done()
     }
   },
   {
@@ -481,7 +481,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-solid-lubricant", 2)
+      PM.product("pm-solid-lubricant"):amount(2):done()
     }
   },
 
@@ -502,10 +502,10 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-palladium-ore", {2, 4}),
-      PM.product_chance("pm-bitumen", 2, 0.75),
-      PM.product_range("pm-syngas", {0, 5}, "fluid"),
-      PM.product_range("water", {1.8, 2}, "fluid")
+      PM.product("pm-palladium-ore"):amount(2, 4):done(),
+      PM.product("pm-bitumen"):amount(2):chance(0.75):done(),
+      PM.product("pm-syngas", "fluid"):amount(0, 5):done(),
+      PM.product("water", "fluid"):amount(1.8, 2):done()
     }
   },
   {
@@ -525,7 +525,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-heavy-lubricant", 10, "fluid")
+      PM.product("pm-heavy-lubricant", "fluid"):amount(10):done()
     }
   },
   {
@@ -546,9 +546,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-benzene", 10, "fluid"),
-      PM.product_range("pm-ethylene-gas", {2, 6}, "fluid"),
-      PM.product("sulfur", 4)
+      PM.product("pm-benzene", "fluid"):amount(10):done(),
+      PM.product("pm-ethylene-gas", "fluid"):amount(2, 6):done(),
+      PM.product("sulfur"):amount(4):done()
     }
   },
   {
@@ -568,7 +568,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-acetone", 20, "fluid"),
+      PM.product("pm-acetone", "fluid"):amount(20):done(),
     }
   },
   {
@@ -588,8 +588,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-bisphenol-A", 20, "fluid"),
-      PM.product("pm-chlorine", 5, "fluid")
+      PM.product("pm-bisphenol-A", "fluid"):amount(20):done(),
+      PM.product("pm-chlorine", "fluid"):amount(5):done()
     }
   },
   {
@@ -608,7 +608,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-resin", 100, "fluid")
+      PM.product("pm-resin", "fluid"):amount(100):done()
     }
   },
   {
@@ -627,7 +627,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-polyethylene-plastic", 1)
+      PM.product("pm-polyethylene-plastic"):amount(1):done()
     }
   },
   {
@@ -659,7 +659,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-polyethylene-plastic", 5)
+      PM.product("pm-polyethylene-plastic"):amount(5):done()
     }
   },
 
@@ -676,7 +676,7 @@ data:extend({
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {
-      PM.product("pm-vanadium-oxide-catalyst", 1)
+      PM.product("pm-vanadium-oxide-catalyst"):amount(1):done()
     }
   },
   {
@@ -691,7 +691,7 @@ data:extend({
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {
-      PM.product("pm-palladium-catalyst", 1)
+      PM.product("pm-palladium-catalyst"):amount(1):done()
     }
   },
   {
@@ -705,7 +705,7 @@ data:extend({
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {
-      PM.product("pm-cobalt-catalyst", 1)
+      PM.product("pm-cobalt-catalyst"):amount(1):done()
     }
   },
   {
@@ -721,7 +721,7 @@ data:extend({
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {
-      PM.product("pm-yttrium-catalyst", 1)
+      PM.product("pm-yttrium-catalyst"):amount(1):done()
     }
   },
   {
@@ -736,7 +736,7 @@ data:extend({
       PM.ingredient("pm-catalyst-container", 1)
     },
     results = {
-      PM.product("pm-nickel-tungsten-catalyst", 1)
+      PM.product("pm-nickel-tungsten-catalyst"):amount(1):done()
     }
   },
   {
@@ -751,7 +751,7 @@ data:extend({
       PM.ingredient("pm-polyethylene-plastic", 2)
     },
     results = {
-      PM.product("pm-empty-fuel-canister", 1)
+      PM.product("pm-empty-fuel-canister"):amount(1):done()
     }
   },
   {
@@ -768,7 +768,7 @@ data:extend({
       PM.ingredient("pm-diesel", 40, "fluid")
     },
     results = {
-      PM.product("pm-diesel-fuel-canister", 1)
+      PM.product("pm-diesel-fuel-canister"):amount(1):done()
     }
   },
   {
@@ -785,7 +785,7 @@ data:extend({
       PM.ingredient("pm-kerosene", 40, "fluid")
     },
     results = {
-      PM.product("pm-kerosene-fuel-canister", 1)
+      PM.product("pm-kerosene-fuel-canister"):amount(1):done()
     }
   },
   {
@@ -802,7 +802,7 @@ data:extend({
       PM.ingredient("pm-petrol", 40, "fluid")
     },
     results = {
-      PM.product("pm-petrol-fuel-canister", 1)
+      PM.product("pm-petrol-fuel-canister"):amount(1):done()
     }
   },
   {
@@ -819,7 +819,7 @@ data:extend({
       PM.ingredient("pm-naptha", 40, "fluid")
     },
     results = {
-      PM.product("pm-naptha-fuel-canister", 1)
+      PM.product("pm-naptha-fuel-canister"):amount(1):done()
     }
   },
   {
@@ -835,7 +835,7 @@ data:extend({
       PM.ingredient("pm-vulcanised-rubber", 4),
     },
     results = {
-      PM.product("pm-catalyst-container", 1)
+      PM.product("pm-catalyst-container"):amount(1):done()
     }
   },
 
@@ -858,9 +858,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-N-octane", 4.5, "fluid"),
-      PM.product("pm-iso-octane", 5.5, "fluid"),
-      PM.product("pm-2-3-3-trimethylpentane", 2.5, "fluid")
+      PM.product("pm-N-octane", "fluid"):amount(4.5):done(),
+      PM.product("pm-iso-octane", "fluid"):amount(5.5):done(),
+      PM.product("pm-2-3-3-trimethylpentane", "fluid"):amount(2.5):done()
     }
   },
   {
@@ -880,7 +880,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-iso-octane", 2, "fluid")
+      PM.product("pm-iso-octane", "fluid"):amount(2):done()
     }
   },
     {
@@ -900,7 +900,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-iso-octane", 3, "fluid")
+      PM.product("pm-iso-octane", "fluid"):amount(3):done()
     }
   },
   {
@@ -933,7 +933,7 @@ data:extend({
     },
     results =
     {
-      PM.catalyst("solid-fuel", 6, 4)
+      PM.product("solid-fuel"):amount(6):catalyst(4):done()
     }
   },
     {
@@ -966,7 +966,7 @@ data:extend({
     },
     results =
     {
-      PM.catalyst("solid-fuel", 6, 4)
+      PM.product("solid-fuel"):amount(6):catalyst(4):done()
     }
   },
     {
@@ -999,7 +999,7 @@ data:extend({
     },
     results =
     {
-      PM.catalyst("solid-fuel", 6, 3)
+      PM.product("solid-fuel"):amount(6):catalyst(3):done()
     }
   },
   {
@@ -1016,7 +1016,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-industrial-octane-fuel-canister", 1)
+      PM.product("pm-industrial-octane-fuel-canister"):amount(1):done()
     }
   },
     {
@@ -1033,7 +1033,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-industrial-octane-fuel-canister", 1)
+      PM.product("pm-industrial-octane-fuel-canister"):amount(1):done()
     }
   },
     {
@@ -1050,7 +1050,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-vehicle-octane-fuel-canister", 1)
+      PM.product("pm-vehicle-octane-fuel-canister"):amount(1):done()
     }
   },
     {
@@ -1068,7 +1068,7 @@ data:extend({
     },
     results = 
     {
-      PM.product("pm-vehicle-octane-fuel-canister", 2)
+      PM.product("pm-vehicle-octane-fuel-canister"):amount(2):done()
     }
   },
   {
@@ -1090,11 +1090,11 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-N-octane", 4.5 * 2, "fluid"),
-      PM.product("pm-iso-octane", 5.5 * 2, "fluid"),
-      PM.product("pm-2-3-3-trimethylpentane", 2.5 * 2, "fluid"),
-      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 3),
-      PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 3)
+      PM.product("pm-N-octane", "fluid"):amount(4.5 * 2):done(),
+      PM.product("pm-iso-octane", "fluid"):amount(5.5 * 2):done(),
+      PM.product("pm-2-3-3-trimethylpentane", "fluid"):amount(2.5 * 2):done(),
+      PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.85):catalyst(3):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0.15):catalyst(3):done()
     }
   },
   {
@@ -1126,8 +1126,8 @@ data:extend({
     },
     results = 
     {
-      PM.product("crude-oil", 35, "fluid"),
-      PM.product_range("pm-oil-residuals", {0.5, 5}, "fluid")
+      PM.product("crude-oil", "fluid"):amount(35):done(),
+      PM.product("pm-oil-residuals", "fluid"):amount(0.5, 5):done()
     }
   },
   {
@@ -1150,17 +1150,17 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-oil-residuals", 50, "fluid"),
-      PM.product("pm-fuel-oils", 50, "fluid"),
-      PM.product("pm-lubricating-oils", 50, "fluid"),
-      PM.product("pm-diesel", 50, "fluid"),
-      PM.product("pm-kerosene", 50, "fluid"),
-      PM.product("pm-naptha", 50, "fluid"),
-      PM.product("pm-petrol", 50, "fluid"),
-      PM.product("pm-refinery-gases", 50, "fluid"),
-      PM.catalyst_chance("pm-rhenium-platinum-catalyst", 3, 0.85, 3),
-      PM.catalyst_chance("pm-ruthenium-plate", 2, 0.66, 2),
-      PM.catalyst_chance("pm-catalyst-container", 3, 0.15, 2)
+      PM.product("pm-oil-residuals", "fluid"):amount(50):done(),
+      PM.product("pm-fuel-oils", "fluid"):amount(50):done(),
+      PM.product("pm-lubricating-oils", "fluid"):amount(50):done(),
+      PM.product("pm-diesel", "fluid"):amount(50):done(),
+      PM.product("pm-kerosene", "fluid"):amount(50):done(),
+      PM.product("pm-naptha", "fluid"):amount(50):done(),
+      PM.product("pm-petrol", "fluid"):amount(50):done(),
+      PM.product("pm-refinery-gases", "fluid"):amount(50):done(),
+      PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.85):catalyst(3):done(),
+      PM.product("pm-ruthenium-plate"):amount(2):chance(0.66):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0.15):catalyst(2):done()
     }
   },
   {
@@ -1180,9 +1180,9 @@ data:extend({
     },
     results =
     {
-        PM.product_range("pm-ethylene-gas", {0, 5}, "fluid"),
-        PM.product_range("pm-p-xylene", {5, 15}, "fluid"),
-        PM.product_range("pm-o-xylene", {5, 10}, "fluid")
+        PM.product("pm-ethylene-gas", "fluid"):amount(0, 5):done(),
+        PM.product("pm-p-xylene", "fluid"):amount(5, 15):done(),
+        PM.product("pm-o-xylene", "fluid"):amount(5, 10):done()
     }
   },
 
@@ -1205,7 +1205,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fuel-oils", 30, "fluid")
+      PM.product("pm-fuel-oils", "fluid"):amount(30):done()
     }
   },
   {
@@ -1225,7 +1225,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lubricating-oils", 40, "fluid")
+      PM.product("pm-lubricating-oils", "fluid"):amount(40):done()
     }
   },
   {
@@ -1245,7 +1245,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-diesel", 50, "fluid")
+      PM.product("pm-diesel", "fluid"):amount(50):done()
     }
   },
   {
@@ -1265,7 +1265,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-kerosene", 60, "fluid")
+      PM.product("pm-kerosene", "fluid"):amount(60):done()
     }
   },
   {
@@ -1285,7 +1285,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-naptha", 70, "fluid")
+      PM.product("pm-naptha", "fluid"):amount(70):done()
     }
   },
   {
@@ -1305,7 +1305,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-petrol", 80, "fluid")
+      PM.product("pm-petrol", "fluid"):amount(80):done()
     }
   },
   {
@@ -1325,7 +1325,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-refinery-gases", 90, "fluid")
+      PM.product("pm-refinery-gases", "fluid"):amount(90):done()
     }
   },
 
@@ -1347,7 +1347,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-petrol", 90, "fluid")
+      PM.product("pm-petrol", "fluid"):amount(90):done()
     }
   },
   {
@@ -1380,7 +1380,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-naptha", 80, "fluid")
+      PM.product("pm-naptha", "fluid"):amount(80):done()
     }
   },
   {
@@ -1413,7 +1413,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-kerosene", 70, "fluid")
+      PM.product("pm-kerosene", "fluid"):amount(70):done()
     }
   },
   {
@@ -1446,7 +1446,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-diesel", 60, "fluid")
+      PM.product("pm-diesel", "fluid"):amount(60):done()
     }
   },
   {
@@ -1479,7 +1479,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-lubricating-oils", 50, "fluid")
+      PM.product("pm-lubricating-oils", "fluid"):amount(50):done()
     }
   },
   {
@@ -1512,7 +1512,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-fuel-oils", 40, "fluid")
+      PM.product("pm-fuel-oils", "fluid"):amount(40):done()
     }
   },
   {
@@ -1545,7 +1545,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-oil-residuals", 30, "fluid")
+      PM.product("pm-oil-residuals", "fluid"):amount(30):done()
     }
   },
 
@@ -1585,7 +1585,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-burning-oil", 7.5, "fluid")
+        PM.product("pm-burning-oil", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -1623,7 +1623,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-burning-oil", 7.5, "fluid")
+        PM.product("pm-burning-oil", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -1661,7 +1661,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-burning-oil", 7.5, "fluid")
+        PM.product("pm-burning-oil", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -1699,7 +1699,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-burning-oil", 7.5, "fluid")
+        PM.product("pm-burning-oil", "fluid"):amount(7.5):done()
     }
   },
 
@@ -1721,8 +1721,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-syngas", 20, "fluid"),
-      PM.product_range("pm-oxygen-gas", {0, 2}, "fluid")
+      PM.product("pm-syngas", "fluid"):amount(20):done(),
+      PM.product("pm-oxygen-gas", "fluid"):amount(0, 2):done()
     }
   },
   {
@@ -1738,9 +1738,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-carbon-monoxide", {6, 10}, "fluid"),
-      PM.product_range("pm-sulfur-dioxide", {0, 2}, "fluid"), --hydrogen sulfide in hard mode
-      --PM.product_range("pm-methane", {1, 4}, "fluid")
+      PM.product("pm-carbon-monoxide", "fluid"):amount(6, 10):done(),
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(0, 2):done(), --hydrogen sulfide in hard mode
+      --PM.product("pm-methane", "fluid"):amount(1, 4):done()
     }
   },
   {
@@ -1759,7 +1759,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-light-lubricant", 10, "fluid")
+        PM.product("pm-light-lubricant", "fluid"):amount(10):done()
     }
 },
 } --[[@as data.RecipePrototype[] ]])
@@ -1773,7 +1773,7 @@ data.raw["recipe"]["lubricant"].ingredients =
 }
 data.raw["recipe"]["lubricant"].results =
 {
-  PM.product("lubricant", 10, "fluid"),
+  PM.product("lubricant", "fluid"):amount(10):done(),
 }
 
 data.raw["recipe"]["solid-fuel-from-heavy-oil"].hidden = true

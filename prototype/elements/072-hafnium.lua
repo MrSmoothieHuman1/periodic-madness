@@ -92,7 +92,7 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-hafnium-chunks", 8)
+            PM.product("pm-hafnium-chunks"):amount(8):done()
         }
     },
     {
@@ -115,7 +115,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-hafnium-chloride", 3)
+            PM.product("pm-hafnium-chloride"):amount(3):done()
         }
     },
     {
@@ -152,7 +152,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-hafnium-chloride", 3)
+            PM.product("pm-hafnium-chloride"):amount(3):done()
         }
     },
     {
@@ -171,8 +171,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-impure-hafnium", 2),
-            PM.catalyst_range("pm-magnesium-oxide", {1, 3}, 2)
+            PM.product("pm-impure-hafnium"):amount(2):done(),
+            PM.product("pm-magnesium-oxide"):amount(1, 3):catalyst(2):done()
         }
     },
     {
@@ -192,9 +192,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-hafnium-iodide", 6),
-            PM.catalyst_chance("pm-cobalt-catalyst", 3, 0.8, 2),
-            PM.catalyst_chance("pm-catalyst-container", 3, 0.2, 3),
+            PM.product("pm-hafnium-iodide"):amount(6):done(),
+            PM.product("pm-cobalt-catalyst"):amount(3):chance(0.8):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(3):done(),
         }
     },
     {
@@ -213,9 +213,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-hafnium-ore", 4),
-            PM.catalyst_chance("pm-iodine", 3, 0.5, 3),
-            PM.product_chance("pm-tungsten-plate", 4, 0.5)
+            PM.product("pm-hafnium-ore"):amount(4):done(),
+            PM.product("pm-iodine"):amount(3):chance(0.5):catalyst(3):done(),
+            PM.product("pm-tungsten-plate"):amount(4):chance(0.5):done()
         }
     }
 })

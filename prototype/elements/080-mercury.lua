@@ -88,7 +88,7 @@ data:extend({
     allow_productivity = true,
     results =
     {
-      PM.product("pm-mercury-ore", 8)
+      PM.product("pm-mercury-ore"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -107,8 +107,8 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-mercury-powder", 4),
-      PM.product("pm-red-mercury", 4),
+      PM.product("pm-mercury-powder"):amount(4):done(),
+      PM.product("pm-red-mercury"):amount(4):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -150,7 +150,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-liquid-mercury", 10, "fluid")
+      PM.product("pm-liquid-mercury", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -183,7 +183,7 @@ data:extend({
     enabled = false,
     results =
     {
-      PM.product("pm-mercury-ore", 8)
+      PM.product("pm-mercury-ore"):amount(8):done()
     }
   } --[[@as data.RecipePrototype]],
 })

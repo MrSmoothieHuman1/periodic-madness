@@ -70,10 +70,10 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-thortveitite", 12),
-            PM.product_range("pm-cadnium-sulfate", {0, 1}),
-            PM.product_range("pm-tantalite-oxide", {0, 2}),
-            PM.product_range("pm-niobite-oxide", {0, 2})
+            PM.product("pm-thortveitite"):amount(12):done(),
+            PM.product("pm-cadnium-sulfate"):amount(0, 1):done(),
+            PM.product("pm-tantalite-oxide"):amount(0, 2):done(),
+            PM.product("pm-niobite-oxide"):amount(0, 2):done()
         }
     },
     {
@@ -89,8 +89,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-scandium-trioxide", 8),
-            PM.product_chance("pm-ferrosilicon", 1, 0.25)
+            PM.product("pm-scandium-trioxide"):amount(8):done(),
+            PM.product("pm-ferrosilicon"):amount(1):chance(0.25):done()
         }
     },
     {
@@ -108,9 +108,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-scandium-fluoride", 6),
-            PM.product("water", 10, "fluid"),
-            PM.product("pm-acidic-water", 10, "fluid")
+            PM.product("pm-scandium-fluoride"):amount(6):done(),
+            PM.product("water", "fluid"):amount(10):done(),
+            PM.product("pm-acidic-water", "fluid"):amount(10):done()
         }
     },
     {
@@ -128,7 +128,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-scandium", 6),
+            PM.product("pm-scandium"):amount(6):done(),
         }
     },
     {
@@ -145,7 +145,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-scandium-oxide", 8),
+            PM.product("pm-scandium-oxide"):amount(8):done(),
         }
     },
 })

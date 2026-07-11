@@ -38,7 +38,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-neon-air-filter", 2)
+        PM.product("pm-neon-air-filter"):amount(2):done()
     }
   },
   {
@@ -55,9 +55,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-neon-gas", 15, "fluid"),
-        PM.product_chance("pm-trace-gas", 15, 0.5, "fluid"),
-        PM.catalyst_chance("pm-neon-air-filter", 1, 0.5, 1)
+        PM.product("pm-neon-gas", "fluid"):amount(15):done(),
+        PM.product("pm-trace-gas", "fluid"):amount(15):chance(0.5):done(),
+        PM.product("pm-neon-air-filter"):amount(1):chance(0.5):catalyst(1):done()
     }
   },
 {
@@ -89,9 +89,9 @@ data:extend({
     },
     results = 
     {
-        PM.product("pm-industrial-noble-gas", 5, "fluid"),
-        PM.product_chance("pm-palladium-catalyst", 2, 0.75),
-        PM.product_chance("pm-catalyst-container", 2, 0.25)
+        PM.product("pm-industrial-noble-gas", "fluid"):amount(5):done(),
+        PM.product("pm-palladium-catalyst"):amount(2):chance(0.75):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0.25):done()
     }
 },
 {

@@ -72,7 +72,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-arsenopyrite", 4)
+      PM.product("pm-arsenopyrite"):amount(4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -92,9 +92,9 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-impure-arsenic", {2, 6}),
-      PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.8, 1),
-      PM.catalyst_chance("pm-catalyst-container", 2, 0.2, 1),
+      PM.product("pm-impure-arsenic"):amount(2, 6):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.8):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(1):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -113,9 +113,9 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-arsenic-oxide", 6),
-      PM.product_range("pm-ferrum", {1, 4}),
-      PM.product_range("pm-impure-lead", {1, 5}),
+      PM.product("pm-arsenic-oxide"):amount(6):done(),
+      PM.product("pm-ferrum"):amount(1, 4):done(),
+      PM.product("pm-impure-lead"):amount(1, 5):done(),
 
     }
   } --[[@as data.RecipePrototype]],
@@ -136,7 +136,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-arsine", 5, "fluid"),
+      PM.product("pm-arsine", "fluid"):amount(5):done(),
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -156,8 +156,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-arsenic-ore", {6, 10}),
-      PM.product("water", 10, "fluid"),
+      PM.product("pm-arsenic-ore"):amount(6, 10):done(),
+      PM.product("water", "fluid"):amount(10):done(),
     }
   } --[[@as data.RecipePrototype]]
 

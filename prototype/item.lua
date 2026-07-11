@@ -1971,7 +1971,7 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-reusable-rocket-part", 3)
+        PM.product("pm-reusable-rocket-part"):amount(3):done()
     },
     subgroup = "pm-rocket-launchables",
     order = "b",
@@ -2001,8 +2001,8 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-speed-beamcon-platform", 1),
-        PM.product("pm-speed-beamcon-reciever", 1)
+        PM.product("pm-speed-beamcon-platform"):amount(1):done(),
+        PM.product("pm-speed-beamcon-reciever"):amount(1):done()
     },
     subgroup = "pm-rocket-launchables",
     order = "c",
@@ -2020,8 +2020,8 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-efficiency-beamcon-platform", 1),
-        PM.product("pm-efficiency-beamcon-reciever", 1)
+        PM.product("pm-efficiency-beamcon-platform"):amount(1):done(),
+        PM.product("pm-efficiency-beamcon-reciever"):amount(1):done()
     },
     subgroup = "pm-rocket-launchables",
     order = "d",

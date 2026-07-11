@@ -45,8 +45,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phosphate-rock", 4),
-      PM.product_range("pm-sand", {2, 4})
+      PM.product("pm-phosphate-rock"):amount(4):done(),
+      PM.product("pm-sand"):amount(2, 4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -66,7 +66,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phosphor-vapour", 10, "fluid")
+      PM.product("pm-phosphor-vapour", "fluid"):amount(10):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -85,8 +85,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phosphoric-acid", 10, "fluid"),
-      PM.product_range_chance("pm-oxygen-gas", {2, 4}, 0.4, "fluid")
+      PM.product("pm-phosphoric-acid", "fluid"):amount(10):done(),
+      PM.product("pm-oxygen-gas", "fluid"):amount(2, 4):chance(0.4):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -106,8 +106,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-white-phosphorus", 4),
-      PM.product_range_chance("pm-red-phosphorus", {2, 4}, 0.25)
+      PM.product("pm-white-phosphorus"):amount(4):done(),
+      PM.product("pm-red-phosphorus"):amount(2, 4):chance(0.25):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -126,7 +126,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-red-phosphorus", 2)
+      PM.product("pm-red-phosphorus"):amount(2):done()
     }
   } --[[@as data.RecipePrototype]],
 
@@ -148,8 +148,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-phosphor-vapour", 20, "fluid"),
-      PM.product_chance("pm-flux-container", 1, 0.66)
+      PM.product("pm-phosphor-vapour", "fluid"):amount(20):done(),
+      PM.product("pm-flux-container"):amount(1):chance(0.66):done()
     }
   } --[[@as data.RecipePrototype]],
 })

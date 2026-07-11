@@ -212,8 +212,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-high-quality-quartzite", {2, 6}),
-            PM.product_range("pm-low-quality-quartzite", {2, 6}),
+            PM.product("pm-high-quality-quartzite"):amount(2, 6):done(),
+            PM.product("pm-low-quality-quartzite"):amount(2, 6):done(),
         }
     },
     {
@@ -244,10 +244,10 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-ferrosilicon", 3),
-            PM.product_range("pm-carbon-monoxide", {5, 8}, "fluid"),
-            PM.catalyst_range("pm-filled-flux-container", {0, 2}, 2),
-            PM.catalyst_range("pm-flux-container", {0, 1}, 1)
+            PM.product("pm-ferrosilicon"):amount(3):done(),
+            PM.product("pm-carbon-monoxide", "fluid"):amount(5, 8):done(),
+            PM.product("pm-filled-flux-container"):amount(0, 2):catalyst(2):done(),
+            PM.product("pm-flux-container"):amount(0, 1):catalyst(1):done()
         }
     },
     {
@@ -266,9 +266,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range_chance("pm-industrial-grade-silicon-ore", {1, 4}, 0.5),
-            PM.product_range("pm-ferrum", {1, 3}),
-            PM.product_range("pm-patina", {2, 4}),
+            PM.product("pm-industrial-grade-silicon-ore"):amount(1, 4):chance(0.5):done(),
+            PM.product("pm-ferrum"):amount(1, 3):done(),
+            PM.product("pm-patina"):amount(2, 4):done(),
         }
     },
     {
@@ -294,8 +294,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-trichlorosilane", 10, "fluid"),
-            PM.product_range("pm-silicon-tetrachloride", {5, 10}, "fluid")
+            PM.product("pm-trichlorosilane", "fluid"):amount(10):done(),
+            PM.product("pm-silicon-tetrachloride", "fluid"):amount(5, 10):done()
         }
     },
     {
@@ -322,10 +322,10 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-trichlorosilane", {4, 8}, "fluid"),
-            PM.product_range("pm-dichlorosilane", {2, 4}, "fluid"),
-            PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.85, 1),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.15, 1)
+            PM.product("pm-trichlorosilane", "fluid"):amount(4, 8):done(),
+            PM.product("pm-dichlorosilane", "fluid"):amount(2, 4):done(),
+            PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.85):catalyst(1):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.15):catalyst(1):done()
         }
     },
     {
@@ -344,8 +344,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-silane", 15, "fluid"),
-            PM.product_range("pm-silicon-tetrachloride", {2.5, 5}, "fluid")
+            PM.product("pm-silane", "fluid"):amount(15):done(),
+            PM.product("pm-silicon-tetrachloride", "fluid"):amount(2.5, 5):done()
         }
     },
     {
@@ -373,9 +373,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-industrial-grade-silicon-ore", {3, 5}),
-            PM.product_range_chance("pm-argon-gas", {2, 8}, 0.65, "fluid"),
-            PM.product_range("pm-hydrogen-gas", {4, 8}, "fluid")
+            PM.product("pm-industrial-grade-silicon-ore"):amount(3, 5):done(),
+            PM.product("pm-argon-gas", "fluid"):amount(2, 8):chance(0.65):done(),
+            PM.product("pm-hydrogen-gas", "fluid"):amount(4, 8):done()
         }
     },
     {
@@ -415,9 +415,9 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-industrial-grade-silicon-ore", {6, 10}),
-            PM.product("pm-industrial-noble-gas", 7.5, "fluid"),
-            PM.product_range("pm-hydrogen-gas", {8, 16}, "fluid")
+            PM.product("pm-industrial-grade-silicon-ore"):amount(6, 10):done(),
+            PM.product("pm-industrial-noble-gas", "fluid"):amount(7.5):done(),
+            PM.product("pm-hydrogen-gas", "fluid"):amount(8, 16):done()
         }
     },
 
@@ -446,8 +446,8 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-low-quality-polysilicon", 2, 0.95),
-            PM.catalyst_range("pm-industrial-grade-silicon-ore", {0, 5}, 3)
+            PM.product("pm-low-quality-polysilicon"):amount(2):chance(0.95):done(),
+            PM.product("pm-industrial-grade-silicon-ore"):amount(0, 5):catalyst(3):done()
         }
     },
     {
@@ -475,8 +475,8 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-medium-quality-polysilicon", 2, 0.85),
-            PM.catalyst_range("pm-low-quality-polysilicon", {0, 5}, 3)
+            PM.product("pm-medium-quality-polysilicon"):amount(2):chance(0.85):done(),
+            PM.product("pm-low-quality-polysilicon"):amount(0, 5):catalyst(3):done()
         }
     },
     {
@@ -504,8 +504,8 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-high-quality-polysilicon", 2, 0.75),
-            PM.catalyst_range("pm-medium-quality-polysilicon", {0, 5}, 3)
+            PM.product("pm-high-quality-polysilicon"):amount(2):chance(0.75):done(),
+            PM.product("pm-medium-quality-polysilicon"):amount(0, 5):catalyst(3):done()
         }
     },
     {
@@ -523,7 +523,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-polysilicon-rod", 1)
+            PM.product("pm-polysilicon-rod"):amount(1):done()
         }
     }
 })

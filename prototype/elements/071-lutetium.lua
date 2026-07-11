@@ -124,7 +124,7 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-trace-lutetium", {2, 5})
+            PM.product("pm-trace-lutetium"):amount(2, 5):done()
         }
     },
     {
@@ -139,7 +139,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-lutetium-powder", 1)
+            PM.product("pm-lutetium-powder"):amount(1):done()
         }
     },
     {
@@ -156,7 +156,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-lutetium-salts", 4),
+            PM.product("pm-lutetium-salts"):amount(4):done(),
         }
     },
     {
@@ -176,8 +176,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-low-lutetium-mixture", 3),
-            PM.product_range("pm-high-lutetium-mixture", {1, 2})
+            PM.product("pm-low-lutetium-mixture"):amount(3):done(),
+            PM.product("pm-high-lutetium-mixture"):amount(1, 2):done()
         }
     },
     {
@@ -198,10 +198,10 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-beryllium-plate", 2, 2),
-            PM.product("pm-lutetium-chloride", 2),
-            PM.catalyst("pm-rubber-resin", 12.5, 12.5, "fluid"),
-            PM.catalyst("pm-pheonlic-resin", 12.5, 12.5, "fluid")
+            PM.product("pm-beryllium-plate"):amount(2):catalyst(2):done(),
+            PM.product("pm-lutetium-chloride"):amount(2):done(),
+            PM.product("pm-rubber-resin", "fluid"):amount(12.5):catalyst(12.5):done(),
+            PM.product("pm-pheonlic-resin", "fluid"):amount(12.5):catalyst(12.5):done()
         }
     },
     {
@@ -222,10 +222,10 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-magnesium-plate", 2, 2),
-            PM.product("pm-lutetium-chloride", 3),
-            PM.catalyst("pm-rubber-resin", 12.5, 12.5, "fluid"),
-            PM.catalyst("pm-pheonlic-resin", 12.5, 12.5, "fluid")
+            PM.product("pm-magnesium-plate"):amount(2):catalyst(2):done(),
+            PM.product("pm-lutetium-chloride"):amount(3):done(),
+            PM.product("pm-rubber-resin", "fluid"):amount(12.5):catalyst(12.5):done(),
+            PM.product("pm-pheonlic-resin", "fluid"):amount(12.5):catalyst(12.5):done()
         }
     },
     {
@@ -243,8 +243,8 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-calcium-ore", 2, 2),
-            PM.product("pm-lutetium", 2)
+            PM.product("pm-calcium-ore"):amount(2):catalyst(2):done(),
+            PM.product("pm-lutetium"):amount(2):done()
         }
     }
 })

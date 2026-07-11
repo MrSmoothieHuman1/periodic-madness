@@ -35,9 +35,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-nickel-chunk", {2, 4}, 3),
-      PM.product("pm-palladium-ore", 4),
-      PM.product_range_chance("pm-patina", {2, 5}, 0.5)
+      PM.product("pm-nickel-chunk"):amount(2, 4):catalyst(3):done(),
+      PM.product("pm-palladium-ore"):amount(4):done(),
+      PM.product("pm-patina"):amount(2, 5):chance(0.5):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -58,9 +58,9 @@ data:extend({
     },
     results =
     {
-      PM.catalyst_range("pm-nickel-chunk", {0, 2}, 1),
-      PM.product("pm-palladium-ore", 4),
-      PM.product_chance("pm-flux-container", 1, 0.66)
+      PM.product("pm-nickel-chunk"):amount(0, 2):catalyst(1):done(),
+      PM.product("pm-palladium-ore"):amount(4):done(),
+      PM.product("pm-flux-container"):amount(1):chance(0.66):done()
     }
   } --[[@as data.RecipePrototype]],
   {
@@ -74,7 +74,7 @@ data:extend({
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-palladium-ore", 1) },
     results = {
-      PM.product("pm-palladium-plate", 1)
+      PM.product("pm-palladium-plate"):amount(1):done()
     }
   },
   {
@@ -108,7 +108,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-molten-palladium", 5, "fluid")
+      PM.product("pm-molten-palladium", "fluid"):amount(5):done()
     }
   },
   {
@@ -129,8 +129,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-palladium-plate", 10),
-      PM.product_chance("pm-crucible", 1, 0.8)
+      PM.product("pm-palladium-plate"):amount(10):done(),
+      PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
 })

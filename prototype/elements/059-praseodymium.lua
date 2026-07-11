@@ -95,7 +95,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-mixed-praseodymium-deposit", 6)
+            PM.product("pm-mixed-praseodymium-deposit"):amount(6):done()
         }
     },
     {
@@ -114,11 +114,11 @@ data:extend({
         },
         results =
         {
-            PM.product_chance("pm-pure-praseodymium-deposit", 1, 0.25),
-            PM.product_chance("pm-75-praseodymium-deposit", 1, 0.5),
-            PM.product("pm-50-praseodymium-deposit", 1),
-            PM.product("pm-25-praseodymium-deposit", 2),
-            PM.product_chance("pm-neodymium-oxide", 1, 0.75)
+            PM.product("pm-pure-praseodymium-deposit"):amount(1):chance(0.25):done(),
+            PM.product("pm-75-praseodymium-deposit"):amount(1):chance(0.5):done(),
+            PM.product("pm-50-praseodymium-deposit"):amount(1):done(),
+            PM.product("pm-25-praseodymium-deposit"):amount(2):done(),
+            PM.product("pm-neodymium-oxide"):amount(1):chance(0.75):done()
         }
     },
     {
@@ -139,11 +139,11 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-pure-praseodymium-deposit", 1), --turns into 1 pure
-            PM.catalyst("pm-ammonium-nitrate", 1, 1),
-            PM.catalyst("pm-hot-light-coolant", 2.5, 2.5, "fluid", 1),
-            PM.catalyst_chance("pm-50-praseodymium-deposit", 1, 0.5, 1),
-            PM.catalyst_chance("pm-25-praseodymium-deposit", 1, 0.75, 1)
+            PM.product("pm-pure-praseodymium-deposit"):amount(1):done(), --turns into 1 pure
+            PM.product("pm-ammonium-nitrate"):amount(1):catalyst(1):done(),
+            PM.product("pm-hot-light-coolant", "fluid"):amount(2.5):catalyst(2.5):index(1):done(),
+            PM.product("pm-50-praseodymium-deposit"):amount(1):chance(0.5):catalyst(1):done(),
+            PM.product("pm-25-praseodymium-deposit"):amount(1):chance(0.75):catalyst(1):done()
         }
     },
     {
@@ -163,11 +163,11 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-75-praseodymium-deposit", 1, 1), --turns into 1 75% pras
-            PM.catalyst_range("pm-ammonium-nitrate", {1, 2}, 2),
-            PM.catalyst("pm-hot-light-coolant", 5, 5, "fluid", 1),
-            PM.catalyst_chance("pm-pure-praseodymium-deposit", 1, 0.5, 1),
-            PM.catalyst_chance("pm-25-praseodymium-deposit", 1, 0.75, 1)
+            PM.product("pm-75-praseodymium-deposit"):amount(1):catalyst(1):done(), --turns into 1 75% pras
+            PM.product("pm-ammonium-nitrate"):amount(1, 2):catalyst(2):done(),
+            PM.product("pm-hot-light-coolant", "fluid"):amount(5):catalyst(5):index(1):done(),
+            PM.product("pm-pure-praseodymium-deposit"):amount(1):chance(0.5):catalyst(1):done(),
+            PM.product("pm-25-praseodymium-deposit"):amount(1):chance(0.75):catalyst(1):done()
         }
     },
     {
@@ -187,11 +187,11 @@ data:extend({
         },
         results =
         {
-            PM.catalyst("pm-50-praseodymium-deposit", 1, 1), --turns into 1 50% pras
-            PM.catalyst("pm-ammonium-nitrate", 2, 2),
-            PM.catalyst("pm-hot-light-coolant", 7.5, 7.5, "fluid", 1),
-            PM.catalyst_chance("pm-pure-praseodymium-deposit", 1, 0.5, 1),
-            PM.catalyst_chance("pm-75-praseodymium-deposit", 1, 0.75, 1)
+            PM.product("pm-50-praseodymium-deposit"):amount(1):catalyst(1):done(), --turns into 1 50% pras
+            PM.product("pm-ammonium-nitrate"):amount(2):catalyst(2):done(),
+            PM.product("pm-hot-light-coolant", "fluid"):amount(7.5):catalyst(7.5):index(1):done(),
+            PM.product("pm-pure-praseodymium-deposit"):amount(1):chance(0.5):catalyst(1):done(),
+            PM.product("pm-75-praseodymium-deposit"):amount(1):chance(0.75):catalyst(1):done()
         }
     },
     {
@@ -207,8 +207,8 @@ data:extend({
         },
         results =
         {
-            PM.catalyst_chance("stone", 2, 0.33, 2),
-            PM.product_range("pm-praseodymium", {2, 3})
+            PM.product("stone"):amount(2):chance(0.33):catalyst(2):done(),
+            PM.product("pm-praseodymium"):amount(2, 3):done()
         }
     }
 })

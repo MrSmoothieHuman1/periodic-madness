@@ -100,8 +100,8 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-low-quality-crude-antimony-sulfide", {3, 6}),
-            PM.product_range("pm-high-quality-crude-antimony-sulfide", {3, 6}),
+            PM.product("pm-low-quality-crude-antimony-sulfide"):amount(3, 6):done(),
+            PM.product("pm-high-quality-crude-antimony-sulfide"):amount(3, 6):done(),
         }
     },
     {
@@ -121,9 +121,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-crude-antimony-sulfide", {2, 5}),
-            PM.product_range_chance("pm-lead-powder", {0, 4}, 0.56),
-            PM.product_chance("pm-patina", 3, 0.66)
+            PM.product("pm-crude-antimony-sulfide"):amount(2, 5):done(),
+            PM.product("pm-lead-powder"):amount(0, 4):chance(0.56):done(),
+            PM.product("pm-patina"):amount(3):chance(0.66):done()
         }
     },
     {
@@ -143,9 +143,9 @@ data:extend({
         },
         results = 
         {
-            PM.product_range("pm-stibnite", {2, 5}),
-            PM.product_range("pm-cobalt-plate", {2, 6}),
-            PM.product_range_chance("pm-cobaltite", {0, 4}, 0.77)
+            PM.product("pm-stibnite"):amount(2, 5):done(),
+            PM.product("pm-cobalt-plate"):amount(2, 6):done(),
+            PM.product("pm-cobaltite"):amount(0, 4):chance(0.77):done()
         }
     },
     {
@@ -165,9 +165,9 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-antimony-sulfide", 8),
-            PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.75, 1),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.25, 1)
+            PM.product("pm-antimony-sulfide"):amount(8):done(),
+            PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.75):catalyst(1):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(1):done()
         }
     },
     {
@@ -187,8 +187,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-antimony-ore", 6),
-            PM.product_range("pm-ferrum", {1, 4})
+            PM.product("pm-antimony-ore"):amount(6):done(),
+            PM.product("pm-ferrum"):amount(1, 4):done()
         }
     }
 })

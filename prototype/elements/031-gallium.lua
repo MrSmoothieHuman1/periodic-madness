@@ -72,8 +72,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium-hydroxide", 10, "fluid"),
-      PM.product_chance("pm-chlorine", 10, 0.8, "fluid")
+      PM.product("pm-sodium-hydroxide", "fluid"):amount(10):done(),
+      PM.product("pm-chlorine", "fluid"):amount(10):chance(0.8):done()
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -104,8 +104,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-sodium-hydroxide", 6, "fluid"),
-      PM.product_range("pm-hydrogen-gas", {14, 20}, "fluid")
+      PM.product("pm-sodium-hydroxide", "fluid"):amount(6):done(),
+      PM.product("pm-hydrogen-gas", "fluid"):amount(14, 20):done()
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -125,8 +125,8 @@ data:extend({
     },
     results =
     {
-      PM.product_range("pm-gallium-chunks", {6, 12}),
-      PM.product("pm-aluminium-ore", 3)
+      PM.product("pm-gallium-chunks"):amount(6, 12):done(),
+      PM.product("pm-aluminium-ore"):amount(3):done()
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -145,8 +145,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-gallium-liqour", 6, "fluid"),
-      PM.product("pm-sodium", 2)
+      PM.product("pm-gallium-liqour", "fluid"):amount(6):done(),
+      PM.product("pm-sodium"):amount(2):done()
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -166,7 +166,7 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-ion-exchange-beads", 15)
+      PM.product("pm-ion-exchange-beads"):amount(15):done()
     }
   }--[[@as data.RecipePrototype]],
   {
@@ -186,8 +186,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-liquid-gallium", 5, "fluid"),
-      PM.catalyst_range("pm-ion-exchange-beads", {2, 5}, 2)
+      PM.product("pm-liquid-gallium", "fluid"):amount(5):done(),
+      PM.product("pm-ion-exchange-beads"):amount(2, 5):catalyst(2):done()
     }
   }--[[@as data.RecipePrototype]]
 })

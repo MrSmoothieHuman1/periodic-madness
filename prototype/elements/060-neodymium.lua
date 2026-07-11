@@ -91,8 +91,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-neodymium-froth", 15, "fluid"),
-            PM.product("pm-neodymium-tailings", 30, "fluid")
+            PM.product("pm-neodymium-froth", "fluid"):amount(15):done(),
+            PM.product("pm-neodymium-tailings", "fluid"):amount(30):done()
         }
     },
     {
@@ -111,9 +111,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-neodymium-concentrate", 7.5, "fluid"),
-            PM.product_range("pm-hydrogen-sulfide", {0, 2.5}, "fluid"),
-            PM.product_range("pm-ion-exchange-beads", {4, 6})
+            PM.product("pm-neodymium-concentrate", "fluid"):amount(7.5):done(),
+            PM.product("pm-hydrogen-sulfide", "fluid"):amount(0, 2.5):done(),
+            PM.product("pm-ion-exchange-beads"):amount(4, 6):done()
         }
     },
     {
@@ -130,8 +130,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-neodymium-oxide", 4),
-            PM.product("pm-yttrium-catalyst", 2),
+            PM.product("pm-neodymium-oxide"):amount(4):done(),
+            PM.product("pm-yttrium-catalyst"):amount(2):done(),
         }
     },
     {
@@ -148,7 +148,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-molten-neodymium", 5, "fluid"),
+            PM.product("pm-molten-neodymium", "fluid"):amount(5):done(),
         }
     },
     {
@@ -166,8 +166,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-neodymium-plate", 3),
-            PM.catalyst_chance("pm-crucible", 2, 0.75, 2)
+            PM.product("pm-neodymium-plate"):amount(3):done(),
+            PM.product("pm-crucible"):amount(2):chance(0.75):catalyst(2):done()
         }
     },
     {
@@ -188,8 +188,8 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-neodymium-tailings", {5, 10}, "fluid"),
-            PM.product_range("pm-neodymium-froth", {2.5, 7.5}, "fluid")
+            PM.product("pm-neodymium-tailings", "fluid"):amount(5, 10):done(),
+            PM.product("pm-neodymium-froth", "fluid"):amount(2.5, 7.5):done()
         }
     },
 })

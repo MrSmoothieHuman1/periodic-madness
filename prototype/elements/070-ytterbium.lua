@@ -91,8 +91,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-ytterbium-solution", 25, "fluid"),
-            PM.catalyst("pm-ion-exchange-beads", 8, 8),
+            PM.product("pm-ytterbium-solution", "fluid"):amount(25):done(),
+            PM.product("pm-ion-exchange-beads"):amount(8):catalyst(8):done(),
         }
     },
     {
@@ -113,8 +113,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-low-ytterbium-mixture", 6),
-            PM.product("pm-high-ytterbium-mixture", 3)
+            PM.product("pm-low-ytterbium-mixture"):amount(6):done(),
+            PM.product("pm-high-ytterbium-mixture"):amount(3):done()
         }
     },
     {
@@ -135,12 +135,12 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-impure-ytterbium", {1, 3}),
-            PM.product_range("pm-erbium-salts", {0, 2}),
-            PM.product_range("pm-mixed-praseodymium-deposit", {0, 2}),
-            PM.catalyst_chance("pm-vanadium-oxide-catalyst", 2, 0.9, 2),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2),
-            PM.catalyst("pm-cobalt-catalyst", 2, 2),
+            PM.product("pm-impure-ytterbium"):amount(1, 3):done(),
+            PM.product("pm-erbium-salts"):amount(0, 2):done(),
+            PM.product("pm-mixed-praseodymium-deposit"):amount(0, 2):done(),
+            PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done(),
+            PM.product("pm-cobalt-catalyst"):amount(2):catalyst(2):done(),
         }
     },
     {
@@ -161,11 +161,11 @@ data:extend({
         },
         results =
         {
-            PM.product_range("pm-impure-ytterbium", {2, 6}),
-            PM.product_chance("pm-europium-trioxide", 1, 0.33),
-            PM.catalyst_chance("pm-palladium-catalyst", 2, 0.9, 2),
-            PM.catalyst_chance("pm-catalyst-container", 2, 0.1, 2),
-            PM.catalyst("pm-yttrium-catalyst", 2, 2),
+            PM.product("pm-impure-ytterbium"):amount(2, 6):done(),
+            PM.product("pm-europium-trioxide"):amount(1):chance(0.33):done(),
+            PM.product("pm-palladium-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done(),
+            PM.product("pm-yttrium-catalyst"):amount(2):catalyst(2):done(),
         }
     },
     {
@@ -184,9 +184,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-ytterbium-vapour", 20, "fluid"),
-            PM.catalyst("pm-zirconia", 3, 3),
-            PM.catalyst("pm-molten-zinc", 10, 10, "fluid")
+            PM.product("pm-ytterbium-vapour", "fluid"):amount(20):done(),
+            PM.product("pm-zirconia"):amount(3):catalyst(3):done(),
+            PM.product("pm-molten-zinc", "fluid"):amount(10):catalyst(10):done()
         }
     },
     {
@@ -204,8 +204,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-ytterbium-plate", 5),
-            PM.product("pm-crucible", 2)
+            PM.product("pm-ytterbium-plate"):amount(5):done(),
+            PM.product("pm-crucible"):amount(2):done()
         }
     }
 })
