@@ -6306,5 +6306,28 @@ data:extend({
             PM.product("pm-saw"):amount(2):catalyst():chance(0.9):done(),
             PM.product("pm-ferrite-magnet"):amount(4):catalyst(4):done()
         }
+    },
+    {
+    type = "recipe",
+    name = "pm-molten-low-density-structure",
+    enabled = false,
+    energy_required = 15,
+    categories = {"pm-advanced-crafting-with-fluid"},
+    allow_productivity = true,
+    main_product = "low-density-structure",
+    ingredients =
+    {
+        PM.ingredient("pm-isogrid-crucible", 2),
+        PM.ingredient("pm-molten-high-density-structure-mixture", 15, "fluid"),
+        PM.ingredient("pm-arsenic-ore", 6),
+        PM.ingredient("pm-polytetrafluoroethylene", 8),
+        PM.ingredient("pm-industrial-noble-gas", 30, "fluid")
+    },
+    results =
+    {
+        PM.product("low-density-structure"):amount(2):done(),
+        PM.product("pm-isogrid-crucible"):amount(2):chance(0.85):catalyst(2):done(),
+        PM.product("pm-industrial-noble-gas", "fluid"):amount(15):catalyst(15):done()
     }
+  },
 } --[[@as data.RecipePrototype[] ]])
