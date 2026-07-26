@@ -6319,7 +6319,7 @@ data:extend({
     {
         PM.ingredient("pm-isogrid-crucible", 2),
         PM.ingredient("pm-molten-high-density-structure-mixture", 15, "fluid"),
-        PM.ingredient("pm-arsenic-ore", 6),
+        PM.ingredient("pm-antimony-ore", 9),
         PM.ingredient("pm-polytetrafluoroethylene", 8),
         PM.ingredient("pm-industrial-noble-gas", 30, "fluid")
     },

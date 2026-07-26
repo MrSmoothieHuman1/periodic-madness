@@ -8245,6 +8245,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-molten-red-low-density-structure-alloy"),
         PM.unlock_recipe("pm-molten-green-low-density-structure-alloy"),
+        PM.unlock_recipe("pm-molten-low-density-structure-mixture"),
         PM.unlock_recipe("pm-molten-low-density-structure")
     },
     prerequisites = {"pm-scandium-processing"},

@@ -600,15 +600,15 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-zirconia", 12),
+        PM.ingredient("pm-zirconia", 6),
         PM.ingredient("pm-molten-titanium", 5, "fluid"),
-        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 7.5, "fluid"),
         PM.ingredient("pm-scandium-oxide", 8),
         PM.ingredient("copper-plate", 24)
     },
     results =
     {
-        PM.product("pm-molten-yellow-high-density-structure-alloy", "fluid"):amount(7.5):done()
+        PM.product("pm-molten-red-low-density-structure-alloy", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -626,13 +626,13 @@ data:extend({
     {
         PM.ingredient("pm-erbium-plate", 4),
         PM.ingredient("pm-molten-tin", 5, "fluid"),
-        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 7.5, "fluid"),
         PM.ingredient("pm-lithium-ore", 8),
         PM.ingredient("pm-vanadium-oxide", 12)
     },
     results =
     {
-        PM.product("pm-molten-blue-high-density-structure-alloy", "fluid"):amount(7.5):done()
+        PM.product("pm-molten-green-low-density-structure-alloy", "fluid"):amount(7.5):done()
     }
   },
   {
@@ -644,8 +644,8 @@ data:extend({
     main_product = "pm-molten-high-density-structure-mixture",
     ingredients =
     {
-        PM.ingredient("pm-molten-yellow-high-density-structure-alloy", 10, "fluid"),
-        PM.ingredient("pm-molten-blue-high-density-structure-alloy", 10, "fluid"),
+        PM.ingredient("pm-molten-red-low-density-structure-alloy", 10, "fluid"),
+        PM.ingredient("pm-molten-green-low-density-structure-alloy", 10, "fluid"),
         PM.ingredient("pm-filled-flux-container", 3),
     },
     results =
