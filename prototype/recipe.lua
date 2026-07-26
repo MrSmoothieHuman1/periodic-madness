@@ -6318,7 +6318,7 @@ data:extend({
     ingredients =
     {
         PM.ingredient("pm-isogrid-crucible", 2),
-        PM.ingredient("pm-molten-high-density-structure-mixture", 15, "fluid"),
+        PM.ingredient("pm-molten-low-density-structure-mixture", 15, "fluid"),
         PM.ingredient("pm-antimony-ore", 9),
         PM.ingredient("pm-polytetrafluoroethylene", 8),
         PM.ingredient("pm-industrial-noble-gas", 30, "fluid")

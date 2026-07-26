@@ -641,7 +641,7 @@ data:extend({
     enabled = false,
     energy_required = 48,
     categories = {"pm-moltening"},
-    main_product = "pm-molten-high-density-structure-mixture",
+    main_product = "pm-molten-low-density-structure-mixture",
     ingredients =
     {
         PM.ingredient("pm-molten-red-low-density-structure-alloy", 10, "fluid"),
@@ -650,7 +650,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-molten-high-density-structure-mixture", "fluid"):amount(20):done(),
+        PM.product("pm-molten-low-density-structure-mixture", "fluid"):amount(20):done(),
         PM.product("pm-flux-container"):amount(3):chance(0.66):done()
     }
   },

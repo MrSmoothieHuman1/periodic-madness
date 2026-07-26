@@ -2221,6 +2221,18 @@ data:extend({
     flow_color = {0.537, 0.667, 0.71},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-molten-low-density-structure-mixture",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-low-density-structure-mixture.png",
+    subgroup = "pm-high-density-structure",
+    order = "b",
+    default_temperature = 15,
+    base_color = {0.537, 0.667, 0.71},
+    flow_color = {0.537, 0.667, 0.71},
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",
