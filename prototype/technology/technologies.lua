@@ -8243,6 +8243,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-molten-red-low-density-structure-alloy"),
+        PM.unlock_recipe("pm-molten-green-low-density-structure-alloy")
     },
     prerequisites = {"pm-scandium-processing"},
     unit =

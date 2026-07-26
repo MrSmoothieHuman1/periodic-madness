@@ -589,6 +589,73 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-molten-red-low-density-structure-alloy",
+    crafting_machine_tint = 
+    {
+        primary = {0.49, 0.42, 0.122}
+    },
+    enabled = false,
+    energy_required = 36,
+    categories = {"pm-blast-smelting"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-zirconia", 12),
+        PM.ingredient("pm-molten-titanium", 5, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-scandium-oxide", 8),
+        PM.ingredient("copper-plate", 24)
+    },
+    results =
+    {
+        PM.product("pm-molten-yellow-high-density-structure-alloy", "fluid"):amount(7.5):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-green-low-density-structure-alloy",
+    crafting_machine_tint =
+    {
+        primary = {0.122, 0.412, 0.49}
+    },
+    enabled = false,
+    energy_required = 36,
+    categories = {"pm-blast-smelting"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-erbium-plate", 4),
+        PM.ingredient("pm-molten-tin", 5, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-lithium-ore", 8),
+        PM.ingredient("pm-vanadium-oxide", 12)
+    },
+    results =
+    {
+        PM.product("pm-molten-blue-high-density-structure-alloy", "fluid"):amount(7.5):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-low-density-structure-mixture",
+    enabled = false,
+    energy_required = 48,
+    categories = {"pm-moltening"},
+    main_product = "pm-molten-high-density-structure-mixture",
+    ingredients =
+    {
+        PM.ingredient("pm-molten-yellow-high-density-structure-alloy", 10, "fluid"),
+        PM.ingredient("pm-molten-blue-high-density-structure-alloy", 10, "fluid"),
+        PM.ingredient("pm-filled-flux-container", 3),
+    },
+    results =
+    {
+        PM.product("pm-molten-high-density-structure-mixture", "fluid"):amount(20):done(),
+        PM.product("pm-flux-container"):amount(3):chance(0.66):done()
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,
