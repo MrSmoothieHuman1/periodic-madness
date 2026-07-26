@@ -2139,7 +2139,7 @@ data:extend({
     type = "item",
     name = "pm-superconducting-ReBCO",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/inconel-625-precursor-billet.png",
+    icon = "__periodic-madness__/graphics/icons/superconducting-ReBCO.png",
     subgroup = "pm-inconel-625",
     order = "b",
     stack_size = 20
