@@ -717,7 +717,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-industrial-noble-gas", 600, "fluid")
+        PM.ingredient("pm-light-noble-gas-mixture", 600, "fluid"),
+        PM.ingredient("pm-heavy-noble-gas-mixture", 600, "fluid"),
     },
     results =
     {
