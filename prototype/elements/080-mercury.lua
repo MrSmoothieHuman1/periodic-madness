@@ -114,8 +114,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-liquid-mercury",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/mercury-liquifying.png",
     energy_required = 2,
     subgroup = "pm-mercury-tm",
     categories = {"crafting-with-fluid"},
