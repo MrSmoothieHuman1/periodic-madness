@@ -3433,7 +3433,7 @@ data:extend({
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/aluminium-plate.png",
-        scale = 0.42,
+        scale = 0.38,
       },
     },
     energy_required = 15,
@@ -3462,7 +3462,7 @@ data:extend({
       },
       {
         icon = "__periodic-madness__/graphics/icons/plates/tin-plate.png",
-        scale = 0.42,
+        scale = 0.38,
       },
     },
     energy_required = 15,

@@ -12,6 +12,16 @@ data:extend({
         dying_explosion  = "nuclear-reactor-explosion",
         consumption = "50MW",
         neighbour_bonus = 0.25,
+        neighbour_connectable =
+            {
+              connections =
+              {
+                { location = { position = {  0,   -2.5 }, direction = defines.direction.north }, category = "pm-polonium-reactor", neighbour_category = {"pm-polonium-reactor"} },
+                { location = { position = {  2.5,  0   }, direction = defines.direction.east  }, category = "pm-polonium-reactor", neighbour_category = {"pm-polonium-reactor"} },
+                { location = { position = {  0,    2.5 }, direction = defines.direction.south }, category = "pm-polonium-reactor", neighbour_category = {"pm-polonium-reactor"} },
+                { location = { position = { -2.5,  0   }, direction = defines.direction.west  }, category = "pm-polonium-reactor", neighbour_category = {"pm-polonium-reactor"} },
+              }
+            },
         energy_source =
         {
           type = "burner",

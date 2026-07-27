@@ -5466,6 +5466,16 @@ data:extend({
         secondary_draw_orders = { north = -1 }
       }
     },
+    neighbour_connectable= 
+    {
+        connections = 
+        {
+            {location = {position = {0, -1}, direction = defines.direction.north}, category = "pm-fluid-turbine", neighbour_category = {"pm-fluid-turbine"}},
+            {location = {position = {0, 1}, direction = defines.direction.south}, category = "pm-fluid-turbine", neighbour_category = {"pm-fluid-turbine"}},
+            {location = {position = {1, 0}, direction = defines.direction.east}, category = "pm-fluid-turbine", neighbour_category = {"pm-fluid-turbine"}},
+            {location = {position = {-1, 0}, direction = defines.direction.west}, category = "pm-fluid-turbine", neighbour_category = {"pm-fluid-turbine"}},
+        }
+    },
     heat_buffer =
     {
       max_temperature = 750,
