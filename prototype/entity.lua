@@ -10880,6 +10880,7 @@ fluid_boxes =
     module_slots = 8,
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heat-pumps"},
+    forced_symmetry = "horizontal",
     icons_positioning = 
     {
       {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
@@ -10899,12 +10900,256 @@ fluid_boxes =
             layers =
             {
                 {
-                  filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant.png",
+                  filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-base.png",
                   width = 320,
-                  height = 320,
+                  height = 325,
+                  scale = 0.5
+                },
+                {
+                  filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-glass.png",
+                  width = 320,
+                  height = 325,
                   scale = 0.5
                 },
             }
+        },
+        working_visualisations =
+        {
+            {
+              always_draw = true,
+              apply_recipe_tint = "primary",
+              north_animation =
+              {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-primary-tint.png",                
+                        width = 320,
+                        height = 325,
+                        --frame_count = 32,
+                        --line_length = 8,
+                        animation_speed = 0.5,
+                        scale = 0.5,
+                    },
+                },
+              },
+              south_animation =
+              {
+                layers = 
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-primary-tint.png",
+                        width = 320,
+                        height = 325,
+                        --frame_count = 32,
+                        --line_length = 8,
+                        animation_speed = 0.5,
+                        scale = 0.5,
+                    },
+                },
+              },
+              east_animation =
+              {
+                layers = 
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-primary-tint.png",
+                        width = 320,
+                        height = 325,
+                        --frame_count = 32,
+                        --line_length = 8,
+                        animation_speed = 0.85,
+                        scale = 0.5,
+                    },
+                },
+              },
+              west_animation =
+              {
+                layers = 
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-primary-tint.png",
+                        width = 320,
+                        height = 325,
+                        --frame_count = 32,
+                        --line_length = 8,
+                        animation_speed = 0.5,
+                        scale = 0.5,
+                    },
+                },
+              },
+            },
+            {
+                apply_recipe_tint = "secondary",
+                north_animation =
+                {
+                  layers =
+                  {
+                      {
+                          filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-secondary-tint.png",
+                          width = 320,
+                          height = 325,
+                          --frame_count = 32,
+                          --line_length = 8,
+                          animation_speed = 0.5,
+                          scale = 0.5,
+                      },
+                  },
+                },
+                south_animation =
+                {
+                  layers = 
+                  {
+                      {
+                          filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-secondary-tint.png",
+                          width = 320,
+                          height = 325,
+                          --frame_count = 32,
+                          --line_length = 8,
+                          animation_speed = 0.5,
+                          scale = 0.5,
+                      },
+                  },
+                },
+                east_animation =
+                {
+                  layers = 
+                  {
+                      {
+                          filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-secondary-tint.png",
+                          width = 320,
+                          height = 325,
+                          --frame_count = 32,
+                          --line_length = 8,
+                          animation_speed = 0.85,
+                          scale = 0.5,
+                      },
+                  },
+                },
+                west_animation =
+                {
+                  layers = 
+                  {
+                      {
+                          filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-secondary-tint.png",
+                          width = 320,
+                          height = 325,
+                          --frame_count = 32,
+                          --line_length = 8,
+                          animation_speed = 0.5,
+                          scale = 0.5,
+                      },
+                  },
+                },
+            },
+            {
+                always_draw = true,
+                apply_tint = "status",
+                north_animation =
+                {
+                    layers = 
+                    {
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_glow = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode-light.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_light = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                    },
+                },
+                south_animation =
+                {
+                    layers = 
+                    {
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_glow = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode-light.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_light = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                    },
+                },
+                east_animation =
+                {
+                    layers = 
+                    {
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_glow = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode-light.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_light = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                    },
+                },
+                west_animation =
+                {
+                    layers = 
+                    {
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_glow = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/cryogenic-plant/cryogenic-plant-diode-light.png",
+                            width = 320,
+                            height = 325,
+                            --repeat_count = 64,
+                            --line_length = 1,
+                            draw_as_light = true,
+                            blend_mode = "additive",
+                            scale = 0.5,
+                        },
+                    },
+                },
+            },
         }
     },
     fluid_boxes =

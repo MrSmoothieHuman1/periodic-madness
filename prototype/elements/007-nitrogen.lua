@@ -216,6 +216,11 @@ data:extend({
         enabled = false,
         energy_required = 10,
         categories = {"pm-cryogenics"},
+        crafting_machine_tint = 
+        {
+            primary = {0.173, 0.467, 0.929},
+            secondary = {0.216, 0.8, 1}
+        },
         ingredients =
         {
             PM.ingredient("pm-nitrogen-gas", 10, "fluid")

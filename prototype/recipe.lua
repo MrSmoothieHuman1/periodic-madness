@@ -6202,7 +6202,7 @@ data:extend({
     allow_productivity = true,
     ingredients = 
     {
-        PM.ingredient("pm-copper-powder", 12),
+        PM.ingredient("pm-copper-powder", 16),
         PM.ingredient("pm-barium-ore", 6),
         PM.ingredient("pm-yttrium-ore", 3)
     },
