@@ -49,7 +49,7 @@ function reactor_placed(reactor)
 		direction = reactor.direction,
 		position = reactor.position,
 		quality = reactor.quality,
-		force = reactor.force,
+		force = reactor.force--[[@as LuaForce]],
 		create_build_effect_smoke = false,
 	}
 	if not furnace then error("The internal furnace for the cooled reactor wasn't placed") end
