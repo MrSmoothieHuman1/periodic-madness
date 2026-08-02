@@ -11,8 +11,8 @@ function freeplay_interface.on_init()
 	local init_ran = remote.call("freeplay", "get_init_ran")--[[@as boolean]]
 	if not init_ran then -- Don't update crash site stuff after it was already made
 
-		local ship_items = remote.call("freeplay", "get_ship_items")--[[@as item_dictionary]]
-		local debris_items = remote.call("freeplay", "get_debris_items")--[[@as item_dictionary]]
+		local ship_items = remote.call("freeplay", "get_ship_items")
+		local debris_items = remote.call("freeplay", "get_debris_items")
 
 		--- Add or remove items from the crash site here
 		--- IF YOU OVERWRITE, OTHER MODS WILL LOSE THEIR CHANGES
@@ -24,8 +24,8 @@ function freeplay_interface.on_init()
 		remote.call("freeplay", "set_debris_items", debris_items)
 	end
 
-	local initial_items = remote.call("freeplay", "get_created_items")--[[@as item_dictionary]]
-	local respawn_items = remote.call("freeplay", "get_respawn_items")--[[@as item_dictionary]]
+	local initial_items = remote.call("freeplay", "get_created_items")
+	local respawn_items = remote.call("freeplay", "get_respawn_items")
 
 	--- Add or remove items from players spawning here
 	--- IF YOU OVERWRITE, OTHER MODS WILL LOSE THEIR CHANGES

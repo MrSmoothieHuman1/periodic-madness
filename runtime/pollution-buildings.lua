@@ -71,8 +71,9 @@ end)
 ---@param alert? LocalisedString
 ---@param sprite LuaRendering.draw_sprite_param
 local function disable_building(entity, object, diode, status, signal, alert, sprite)
+  ---@cast entity.force LuaForce
   if signal and alert then
-    entity.force--[[@cast -string]]--[[@cast -uint8]].add_custom_alert(
+    entity.force.add_custom_alert(
       entity, signal, alert, true
     )
   end
