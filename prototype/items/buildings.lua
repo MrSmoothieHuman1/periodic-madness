@@ -1041,6 +1041,14 @@ data:extend({
     place_result = "pm-blast-furnace",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-cryogenic-plant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
+    place_result = "pm-cryogenic-plant",
+    stack_size = 25
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

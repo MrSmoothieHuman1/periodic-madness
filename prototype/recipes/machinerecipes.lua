@@ -1886,6 +1886,26 @@ data:extend({
     {
         PM.product("pm-blast-furnace"):amount(1):done()
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-cryogenic-plant",
+    enabled = false,
+    energy_required = 8,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-cooling-plating", 24),
+        PM.ingredient("pm-light-coolant", 7.5, "fluid"),
+        PM.ingredient("pm-light-lubricant", 5, "fluid"),
+        PM.ingredient("pm-corrosion-resistant-tubing", 18),
+        PM.ingredient("low-density-structure", 4),
+        PM.ingredient("pm-inconel-625-plate", 4)
+    },
+    results =
+    {
+        PM.product("pm-cryogenic-plant"): amount(1):done()
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 

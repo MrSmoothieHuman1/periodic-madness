@@ -10867,7 +10867,7 @@ fluid_boxes =
     name = "pm-cryogenic-plant",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
-    minable = { mining_time = 1, result = "pm-francium-ultracool-centrifugal-kabbalism" },
+    minable = { mining_time = 1, result = "pm-cryogenic-plant" },
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     max_health = 1000,
     corpse = "assembling-machine-1-remnants",
