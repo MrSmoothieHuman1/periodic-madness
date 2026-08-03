@@ -8371,7 +8371,7 @@ data:extend({
     type = "technology",
     name = "pm-cryocooling",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/cryocooling.png",
     effects =
     {
         PM.modify_recipe_productivity("pm-coolant", 0.25),
