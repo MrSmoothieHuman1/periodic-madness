@@ -569,6 +569,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-heat-pumps",
+    group = "production",
+    order = "fa"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-speed",
     group = "production",
     order = "g",
