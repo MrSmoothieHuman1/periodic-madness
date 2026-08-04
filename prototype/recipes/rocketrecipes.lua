@@ -372,8 +372,8 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-liquid-oxygen", 15, "fluid"),
-        PM.ingredient("pm-light-coolant", 30, "fluid"),
+        PM.ingredient("pm-liquid-oxygen", 10, "fluid"),
+        PM.ingredient("pm-light-coolant", 20, "fluid"),
         PM.ingredient("pm-lightweight-panelling", 12),
         PM.ingredient("pm-cooling-plating", 12),
         PM.ingredient("pm-corrosion-resistant-tubing", 8),

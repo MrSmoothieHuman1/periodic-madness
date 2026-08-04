@@ -577,9 +577,9 @@ data:extend({
 
     {
       type = "module",
-      name = "pm-kasethal-heat-pump",
+      name = "pm-copper-heat-pump",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/modules/kanthal-heating-coil.png",
+      icon = "__periodic-madness__/graphics/icons/modules/copper-heating-coil.png",
       tier = 1,
       category = "pm-heat-pumps",
       subgroup = "pm-coils",
