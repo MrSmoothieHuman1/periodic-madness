@@ -8376,7 +8376,13 @@ data:extend({
     {
         PM.modify_recipe_productivity("pm-coolant", 0.25),
         PM.modify_recipe_productivity("pm-light-coolant", 0.25),
-        PM.unlock_recipe("pm-cryogenic-plant")
+        PM.unlock_recipe("pm-cryogenic-plant"),
+        PM.unlock_recipe("pm-kasethal-heat-pump"),
+        PM.unlock_recipe("pm-aluminium-heat-pump"),
+        PM.unlock_recipe("pm-tungsten-heat-pump"),
+        PM.unlock_recipe("pm-molybdenum-heat-pump"),
+        PM.unlock_recipe("pm-gold-heat-pump"),
+        PM.unlock_recipe("pm-inconel-625-heat-pump"),
     },
     prerequisites = {"pm-lanthanide-science-pack"},
     unit =

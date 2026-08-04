@@ -6330,4 +6330,124 @@ data:extend({
         PM.product("pm-industrial-noble-gas", "fluid"):amount(15):catalyst(15):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-aluminium-heat-pump",
+    enabled = false,
+    energy_required = 15,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-aluminium-heating-coil", 1),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid"),
+        PM.ingredient("pm-helium-gas", 5, "fluid"),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-stainless-steel-alloy", 3),
+        PM.ingredient("pm-polyethylene-plastic", 5)
+    },
+    results = 
+    {
+        PM.product("pm-aluminium-heat-pump"):amount(1):done();
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-tungsten-heat-pump",
+    enabled = false,
+    energy_required = 15,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-tungsten-heating-coil", 1),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid"),
+        PM.ingredient("pm-helium-gas", 5, "fluid"),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-stainless-steel-alloy", 3),
+        PM.ingredient("pm-polyethylene-plastic", 5)
+    },
+    results = 
+    {
+        PM.product("pm-tungsten-heat-pump"):amount(1):done();
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molybdenum-heat-pump",
+    enabled = false,
+    energy_required = 15,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-molybdenum-heating-coil", 1),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid"),
+        PM.ingredient("pm-helium-gas", 5, "fluid"),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-stainless-steel-alloy", 3),
+        PM.ingredient("pm-polyethylene-plastic", 5)
+    },
+    results = 
+    {
+        PM.product("pm-molybdenum-heat-pump"):amount(1):done();
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-gold-heat-pump",
+    enabled = false,
+    energy_required = 15,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-gold-heating-coil", 1),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid"),
+        PM.ingredient("pm-helium-gas", 5, "fluid"),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-stainless-steel-alloy", 3),
+        PM.ingredient("pm-polyethylene-plastic", 5)
+    },
+    results = 
+    {
+        PM.product("pm-gold-heat-pump"):amount(1):done();
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-kasethal-heat-pump",
+    enabled = false,
+    energy_required = 15,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-kasethal-heating-coil", 1),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid"),
+        PM.ingredient("pm-helium-gas", 5, "fluid"),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-stainless-steel-alloy", 3),
+        PM.ingredient("pm-polyethylene-plastic", 5)
+    },
+    results = 
+    {
+        PM.product("pm-kasethal-heat-pump"):amount(1):done();
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-inconel-625-heat-pump",
+    enabled = false,
+    energy_required = 15,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-inconel-625-heating-coil", 1),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid"),
+        PM.ingredient("pm-helium-gas", 5, "fluid"),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-stainless-steel-alloy", 3),
+        PM.ingredient("pm-polyethylene-plastic", 5)
+    },
+    results = 
+    {
+        PM.product("pm-inconel-625-heat-pump"):amount(1):done();
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])

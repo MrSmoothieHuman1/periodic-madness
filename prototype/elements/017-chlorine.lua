@@ -374,6 +374,7 @@ data:extend({
     enabled = false,
     energy_required = 10,
     categories = {"pm-cryogenics"},
+    allow_productivity = true,
     ingredients =
     {
         PM.ingredient("pm-chlorine", 10, "fluid")

@@ -471,7 +471,6 @@ data:extend({
         consumption = 0.55,
         pollution = 0.75,
       },
-
     }, -- high heat capacity, less pollution
     {
       type = "module",
@@ -578,9 +577,9 @@ data:extend({
 
     {
       type = "module",
-      name = "pm-copper-heat-pump",
+      name = "pm-kasethal-heat-pump",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/modules/copper-heating-coil.png",
+      icon = "__periodic-madness__/graphics/icons/modules/kanthal-heating-coil.png",
       tier = 1,
       category = "pm-heat-pumps",
       subgroup = "pm-coils",
@@ -596,6 +595,108 @@ data:extend({
         pollution = 0.25,
       },
     }, --basic heat-pump
+    {
+      type = "module",
+      name = "pm-aluminium-heat-pump",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/aluminium-heating-coil.png",
+      tier = 1,
+      category = "pm-heat-pumps",
+      subgroup = "pm-coils",
+      order = "a",
+      stack_size = 50,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.35,
+        consumption = 0.5,
+        pollution = 0.0625,
+      },
+    }, --worse copper, but better speed/consumption ratio
+    {
+      type = "module",
+      name = "pm-tungsten-heat-pump",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/tungsten-heating-coil.png",
+      tier = 1,
+      category = "pm-heat-pumps",
+      subgroup = "pm-coils",
+      order = "c",
+      stack_size = 50,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 1.5,
+        consumption = 1.5,
+        pollution = 0.15,
+      },
+    }, -- high heat capacity, less pollution
+    {
+      type = "module",
+      name = "pm-molybdenum-heat-pump",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/molybdenum-heating-coil.png",
+      tier = 1,
+      category = "pm-heat-pumps",
+      subgroup = "pm-coils",
+      order = "a",
+      stack_size = 50,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.5,
+        consumption = 0.5,
+        pollution = 0.25,
+        productivity = -0.05,
+      },
+    }, --lowest consumption, -prod for balance
+    {
+      type = "module",
+      name = "pm-gold-heat-pump",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/gold-heating-coil.png",
+      tier = 1,
+      category = "pm-heat-pumps",
+      subgroup = "pm-coils",
+      order = "a",
+      stack_size = 50,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.25,
+        consumption = -0.25,
+        pollution = 0.1,
+      },
+    }, --efficiency module for heat pumps
+    {
+      type = "module",
+      name = "pm-inconel-625-heat-pump",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/modules/inconel-625-heating-coil.png",
+      tier = 1,
+      category = "pm-heat-pumps",
+      subgroup = "pm-coils",
+      order = "a",
+      stack_size = 50,
+      inventory_move_sound = item_sounds.metal_small_inventory_move,
+      pick_sound = item_sounds.metal_small_inventory_pickup,
+      drop_sound = item_sounds.metal_small_inventory_move,
+      effect =
+      {
+        speed = 0.45,
+        consumption = 2,
+        pollution = 0.75,
+        productivity = 0.05
+      },
+    }, --productivity heat pump
 })
 
 --#MARK: Vanilla modules
