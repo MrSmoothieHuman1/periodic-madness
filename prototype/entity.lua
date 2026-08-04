@@ -11908,6 +11908,51 @@ fluid_boxes =
     fade_out_ticks = 20
   },
 }--[[@as data.AssemblingMachinePrototype]],
+  {
+    type = "assembling-machine",
+    name = "pm-30-particle-accelerator",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
+    minable = { mining_time = 1, result = "pm-cryogenic-plant" },
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    max_health = 1000,
+    corpse = "assembling-machine-1-remnants",
+    dying_explosion = "assembling-machine-1-explosion",
+    collision_box = { { -14.9, -14.9 }, { 14.9, 14.9 } },
+    selection_box = { { -15, -15 }, {15, 15} },
+    alert_icon_shift = util.by_pixel(0, -12),
+    crafting_speed = 1,
+    crafting_categories = { "pm-cryogenics" },
+    module_slots = 6,
+    allowed_effects = PM.all_effects(),
+    icons_positioning = 
+    {
+      {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
+    },
+    energy_usage = "150kW",
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = {pollution = 1},
+    },
+    graphics_set =
+    {
+        status_colors = pm_diode_status_colors(),
+        animation = 
+        {
+            layers =
+            {
+                {
+                  filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/30-particle-accelerator.png",
+                  width = 1920,
+                  height = 1920,
+                  scale = 0.5
+                },
+            }
+        },
+    },
+  }--[[@as data.AssemblingMachinePrototype]],
 }--[[@as data.EntityPrototype[] ]])
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions
