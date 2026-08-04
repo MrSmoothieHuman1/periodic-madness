@@ -571,7 +571,7 @@ data:extend({
     type = "item-subgroup",
     name = "pm-heat-pumps",
     group = "production",
-    order = "fa"
+    order = "f"
   },
   {
     type = "item-subgroup",
