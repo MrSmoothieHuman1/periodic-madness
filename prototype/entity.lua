@@ -10875,7 +10875,7 @@ fluid_boxes =
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     alert_icon_shift = util.by_pixel(0, -12),
-    crafting_speed = 0.5,
+    crafting_speed = 0.75,
     crafting_categories = { "pm-cryogenics" },
     module_slots = 8,
     allowed_effects = PM.all_effects(),
@@ -10885,7 +10885,7 @@ fluid_boxes =
     {
       {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
     },
-    energy_usage = "100kW",
+    energy_usage = "150kW",
     energy_source =
     {
       type = "electric",

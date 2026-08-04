@@ -6217,10 +6217,12 @@ data:extend({
     enabled = false,
     energy_required = 15,
     categories = {"crafting-with-fluid"},
+    allow_productivity = true,
     ingredients =
     {
         PM.ingredient("pm-ReBCO", 2),
-        PM.ingredient("pm-liquid-nitrogen", 30, "fluid")
+        PM.ingredient("pm-liquid-nitrogen", 15, "fluid"),
+        PM.ingredient("pm-polyethylene-plastic", 4)
     },
     results =
     {

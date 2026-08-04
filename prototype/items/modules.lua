@@ -691,7 +691,7 @@ data:extend({
       drop_sound = item_sounds.metal_small_inventory_move,
       effect =
       {
-        speed = 0.45,
+        speed = 0.4,
         consumption = 2,
         pollution = 0.75,
         productivity = 0.05
