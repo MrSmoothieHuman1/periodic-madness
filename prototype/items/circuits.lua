@@ -267,5 +267,6 @@ data.raw["item"]["electronic-circuit"].order = "c"
 data.raw["item"]["advanced-circuit"].subgroup = "pm-circuits"
 data.raw["item"]["advanced-circuit"].order = "k"
 
+data.raw["item"]["processing-unit"].icon = "__periodic-madness__/graphics/icons/processing-unit.png"
 data.raw["item"]["processing-unit"].subgroup = "pm-processing-units"
 data.raw["item"]["processing-unit"].order = "d"

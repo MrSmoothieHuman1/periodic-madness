@@ -34,6 +34,7 @@ Date: 2025-12-19
     - Added superconductive substations, which take, you guessed it, superconductors! and are upgraded versions of substations.
     - Gave the rocket silo circuit connections.
     - Added an advanced steam turbine, with 150% efficiency thats unlocked at advanced advanced advanced transition metals.
+    - Updated the colourblind friendly circuit icons.
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
@@ -48,6 +49,7 @@ Date: 2025-12-19
     - Changed nitrous iron to be produced 75% of the time instead of 50%.
     - Lowered amount of cobaltite from 0-3 69%, to 0-2 69% chance, with the fluxed recipe being 1 34%.
     - Lowered amount of arsenic from cobaltite from 3-6 to 2-5.
+    - Made all processing units visually distinct from circuits.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

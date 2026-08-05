@@ -823,9 +823,12 @@ table.insert(data.raw["character"]["character"].crafting_categories--[[@cast -?]
 
 --MARK: Colourblind circuits
 if settings.startup["pm-circuit-colourblind-friendly-icons"].value == true then
-  data.raw["item"]["electronic-circuit"].icon = "__periodic-madness__/graphics/icons/new-electronic-circuit.png"
-  data.raw["item"]["pm-fluid-circuit"].icon = "__periodic-madness__/graphics/icons/new-fluid-circuit.png"
-  data.raw["item"]["processing-unit"].icon = "__periodic-madness__/graphics/icons/new-processing-unit.png"
+  data.raw["item"]["pm-electronic-breadboard"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-electronic-circuit-breadboard.png"
+  data.raw["item"]["electronic-circuit"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-electronic-circuit.png"
+  data.raw["item"]["pm-fluid-breadboard"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-fluid-circuit-breadboard.png"
+  data.raw["item"]["pm-fluid-circuit"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-fluid-circuit.png"
+  data.raw["item"]["pm-advanced-processing-breadboard"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-advanced-processing-unit-breadboard.png"
+  data.raw["item"]["pm-advanced-processing-unit"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-advanced-processing-unit.png"
 end
 
 --[[changes centrifuge to be tintable - credit to NullPointerExempt's mod for this
