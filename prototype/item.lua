@@ -1307,7 +1307,8 @@ data:extend({
     name = "pm-strontium-glass",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/strontium-glass-pane.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-glassing",
+    order = "k",
     stack_size = 75
   },
   {

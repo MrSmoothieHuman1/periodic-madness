@@ -1464,7 +1464,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/molten-strontium-glass.png",
     subgroup = "pm-glassing",
-    order = "a",
+    order = "j",
     default_temperature = 15,
     base_color = {r = 0.8, g = 0.6, b = 0.6},
     flow_color = {r = 0.8, g = 0.6, b = 0.6},

@@ -813,7 +813,7 @@ data:extend({
     enabled = false,
     energy_required = 9,
     categories = {"pm-moltening"},
-    subgroup = "pm-intermediates",
+
     ingredients =
     {
       PM.ingredient("pm-molten-glass", 10, "fluid"),
@@ -831,7 +831,6 @@ data:extend({
     enabled = false,
     energy_required = 9,
     categories = {"pm-coldening"},
-    subgroup = "pm-intermediates",
     ingredients =
     {
       PM.ingredient("pm-molten-strontium-glass", 5, "fluid"),
