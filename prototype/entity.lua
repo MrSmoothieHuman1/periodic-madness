@@ -11920,6 +11920,7 @@ fluid_boxes =
     dying_explosion = "assembling-machine-1-explosion",
     collision_box = { { -14.9, -14.9 }, { 14.9, 14.9 } },
     selection_box = { { -15, -15 }, {15, 15} },
+    map_color = {0.655, 0.655, 0.655},
     alert_icon_shift = util.by_pixel(0, -12),
     crafting_speed = 1,
     crafting_categories = { "crafting" },
