@@ -209,8 +209,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
       producing = 1/600, -- Punish you for not cooling your reactor :)
     },
 
-    dying_trigger_effect = PM.script_trigger_effect("pm-cooled-reactor-died"),
-    damaged_trigger_effect = PM.script_trigger_effect("pm-cooled-reactor-hurt"),
+    dying_trigger_effect = PM.script_trigger_effect("pm_on_cooled_reactor_died"),
+    damaged_trigger_effect = PM.script_trigger_effect("pm_on_cooled_reactor_hurt"),
   }--[[@as data.FurnacePrototype]]}
 
   --MARK: Reactor modifications
@@ -226,8 +226,8 @@ local function coolant_reactor(reactor, coolant_life, coolant_categories, coolan
     }
   }--[[@as data.FluidEnergySource]]
 
-  -- Get an event for when the reactor is created :: This is at risk of being lost D:
-  -- reactor.created_effect = PM.script_trigger("pm-cooled-reactor-placed", reactor.created_effect)
+  -- Get an event for when the reactor is created
+  reactor.created_effect = PM.script_trigger("pm_on_cooled_reactor_created", reactor.created_effect)
   -- Hide the burning of liquid heat until hovered on
   PM.set_flag(reactor, "hide-alt-info")
 

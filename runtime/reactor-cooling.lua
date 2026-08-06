@@ -27,15 +27,6 @@ event_handler.on_configuration_changed = function (data)
 	setup_cooling_storage()
 end
 
----@type table<string,fun(event:EventData.on_script_trigger_effect)>
-local script_triggers = {}
----@param event EventData.on_script_trigger_effect
-events[defines.events.on_script_trigger_effect] = function (event)
-	local func = script_triggers[event.effect_id]
-	if not func then return end
-	func(event)
-end
-
 --MARK: placement
 
 ---@param reactor LuaEntity
@@ -70,15 +61,23 @@ function reactor_placed(reactor)
 	storage.reactors[furnace.unit_number--[[@as int]]] = reactor_info
 end
 
----@type type<data.EntityID, true>
-local cooled_reactors = prototypes.mod_data["pm-cooled-reactors"].data
+---@type table<data.EntityID, true>
+local cooled_reactors = prototypes.mod_data["pm-cooled-reactors"].data--[[@as table<data.EntityID,true>]]
 
-PM.compound_events.built_events(events, function (event)
-	local entity = event.entity or event.destination
-	---@cast entity -?
+-- PM.compound_events.built_events(events, function (event)
+-- 	local entity = event.entity or event.destination
+-- 	---@cast entity -?
+-- 	if not cooled_reactors[entity.name] then return end
+-- 	reactor_placed(entity)
+-- end)
+
+---@param event EventData.on_script_trigger_effect
+events.pm_on_cooled_reactor_created = function (event)
+	local entity = event.cause_entity
+	if not entity then return end
 	if not cooled_reactors[entity.name] then return end
 	reactor_placed(entity)
-end)
+end
 
 --MARK: GUI
 
@@ -104,10 +103,12 @@ end
 
 --MARK: non-cooling
 
-script_triggers["pm-cooled-reactor-died"] = function (event)
+---@param event EventData.on_script_trigger_effect
+events.pm_on_cooled_reactor_died = function (event)
 	-- game.print("Whoops... ".. event.source_entity.gps_tag)
 	local furnace = event.source_entity
 	if not furnace then error("The source entity for 'pm-cooled-reactor-died' was somehow nil") end
+	---@cast furnace.force LuaForce
 	local reactor_info = storage.reactors[furnace.unit_number--[[@cast -?]]]
 	if not reactor_info then return end -- Reactor died without being setup?
 	reactor_info.reactor.die()
@@ -118,9 +119,13 @@ script_triggers["pm-cooled-reactor-died"] = function (event)
 	end
 end
 
-script_triggers["pm-cooled-reactor-hurt"] = function (event)
+---@param event EventData.on_script_trigger_effect
+events.pm_on_cooled_reactor_hurt = function (event)
 	local furnace = event.source_entity
 	if not furnace then error("The source entity for 'pm-cooled-reactor-hurt' was somehow nil") end
+	---@cast furnace.force LuaForce
+	---@cast furnace.burner -?
+	---@cast furnace.health -?
 
 	-- If there's coolant or a lack of heat, then it shouldn't be dying right now
 	local has_coolant = function() return furnace.get_fluid(1) end -- Index 1 is always the coolant input
