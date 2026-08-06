@@ -155,6 +155,7 @@ require("prototype.entity.enemies")
 require("prototype.entity.pollution-limits")
 require("prototype.entity.heat-exchangers")
 require("prototype.entity.mining-drills")
+require('prototype.entity.multi-energy-source')
 
 require("prototype.achievements")
 require("prototype.robots")
