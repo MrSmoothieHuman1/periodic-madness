@@ -469,7 +469,7 @@ data:extend({
         PM.ingredient("pm-rocket-control-unit", 2),
         PM.ingredient("pm-gyroscope", 1),
         PM.ingredient("pm-advanced-processing-unit", 5),
-        PM.ingredient("pm-travelling-wave-amplifier-tube", 4),
+        PM.ingredient("pm-travelling-wave-erbium-amplifier-tube", 4),
         PM.ingredient("pm-heat-shielding", 6)
     },
     results =
@@ -506,7 +506,7 @@ data:extend({
         PM.ingredient("pm-speed-module-6", 10),
         PM.ingredient("pm-gyroscope", 1),
         PM.ingredient("rocket-fuel", 25),
-        PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
+        PM.ingredient("pm-travelling-wave-erbium-amplifier-tube", 2),
         PM.ingredient("pm-heat-shielding", 10),
         PM.ingredient("pm-selenium-sulfur-battery", 15),
         PM.ingredient("pm-RTG", 1),
@@ -527,7 +527,7 @@ data:extend({
         PM.ingredient("pm-efficiency-module-6", 10),
         PM.ingredient("pm-gyroscope", 1),
         PM.ingredient("rocket-fuel", 25),
-        PM.ingredient("pm-travelling-wave-amplifier-tube", 2),
+        PM.ingredient("pm-travelling-wave-erbium-amplifier-tube", 2),
         PM.ingredient("pm-heat-shielding", 10),
         PM.ingredient("pm-selenium-sulfur-battery", 15),
         PM.ingredient("pm-RTG", 1),
