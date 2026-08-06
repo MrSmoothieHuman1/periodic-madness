@@ -2176,7 +2176,7 @@ data:extend({
     type = "item",
     name = "pm-travelling-wave-erbium-amplifier-tube",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/TWAT.png",
+    icon = "__periodic-madness__/graphics/icons/TWEAT.png",
     subgroup = "pm-intermediates",
     stack_size = 25,
   },
