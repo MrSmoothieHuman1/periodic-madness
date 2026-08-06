@@ -8345,6 +8345,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-erbium-doped-fiberglass"),
+        PM.unlock_recipe("pm-travelling-wave-erbium-amplifier-tube")
     },
     prerequisites = {"pm-lanthanide-science-pack", "effect-transmission"},
     unit =

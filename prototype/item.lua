@@ -2163,6 +2163,23 @@ data:extend({
     order = "b",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-erbium-doped-fiberglass",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/erbium-doped-fiberglass.png",
+    subgroup = "pm-glassing",
+    order = "l",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-travelling-wave-erbium-amplifier-tube",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/TWAT.png",
+    subgroup = "pm-intermediates",
+    stack_size = 25,
+  },
 
   {
     type = "item",

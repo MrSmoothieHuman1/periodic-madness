@@ -6458,4 +6458,22 @@ data:extend({
         PM.product("pm-inconel-625-heat-pump"):amount(1):done();
     }
   },
+  {
+    type = "recipe",
+    name = "pm-travelling-wave-erbium-amplifier-tube",
+    enabled = false,
+    energy_required = 20,
+    categories = {"crafting-with-fluid"},
+    ingredients = 
+    {
+        PM.ingredient("pm-travelling-wave-amplifier-tube", 1),
+        PM.ingredient("pm-erbium-doped-fiberglass", 15),
+        PM.ingredient("pm-industrial-noble-gas", 15, "fluid"),
+        PM.ingredient("pm-fluid-circuit", 3)
+    },
+    results = 
+    {
+        PM.product("pm-travelling-wave-erbium-amplifier-tube"):amount(1):done()
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])

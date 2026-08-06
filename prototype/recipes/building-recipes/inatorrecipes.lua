@@ -842,6 +842,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-erbium-doped-fiberglass",
+    enabled = false,
+    energy_required = 9,
+    categories = {"pm-moltening"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-glass-fibers", 30),
+        PM.ingredient("pm-erbium-plate", 5),
+        PM.ingredient("pm-red-phosphorus", 15),
+        PM.ingredient("pm-yttrium-ore", 8),
+        PM.ingredient("pm-molten-aluminium", 7.5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-erbium-doped-fiberglass"):amount(20):done()
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-solid-mercury",
     enabled = false,
     energy_required = 3,
