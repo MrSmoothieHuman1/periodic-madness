@@ -29,7 +29,7 @@ data:extend{
 	---@type data.CustomEventPrototype
 	{
 		type = "custom-event",
-		name = "on_multi_energy_entity_created",
+		name = "pm_on_multi_energy_entity_created",
 	}
 }
 	
