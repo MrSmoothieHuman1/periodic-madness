@@ -1558,34 +1558,57 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
-  {
-    animation =
     {
-      layers =
-      {
+    status_colors = pm_diode_status_colors(),
+        animation =
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-base.png",
-          width = 192,
-          height = 210,
-          --frame_count = 32,
-          --line_length = 8,
-          --shift = util.by_pixel(0, 2),
-          animation_speed = 0.5,
-          scale = 0.5
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-base.png",
+              width = 192,
+              height = 205,
+              frame_count = 1,
+              line_length = 1,
+              repeat_count = 32,
+              animation_speed = 0.33,
+              scale = 0.5
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-gears.png",
+              width = 192,
+              height = 205,
+              frame_count = 32,
+              line_length = 8,
+              animation_speed = 0.33,
+              scale = 0.5
+            },
+          }
         },
+        working_visualisations = 
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-1-shadow.png",
-          width = 226,
-          height = 214,
-          --frame_count = 32,
-          --line_length = 4,
-          shift = util.by_pixel(20, 5),
-          animation_speed = 0.5,
-          draw_as_shadow = true,
-          scale = 0.5
+            {
+                always_draw = true,
+                apply_tint = "status",
+                animation =
+                {
+                    layers =
+                    {
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/crusher-1/crusher-diode.png",
+                            width = 192,
+                            height = 205,
+                            frame_count = 1,
+                            line_length = 1,
+                            repeat_count = 32,
+                            draw_as_glow = true,
+                            blend_mode = "additive",
+                            scale = 0.5
+                        }
+                    }
+                }
+            }
         }
-      }
-    }
   }
 }--[[@as data.AssemblingMachinePrototype]],
 
