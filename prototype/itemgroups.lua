@@ -372,7 +372,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-high-density-structure",
+    name = "pm-density-structures",
     group = "intermediate-products",
     order = "ce",
   },

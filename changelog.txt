@@ -52,6 +52,7 @@ Date: 2025-12-19
     - Made all processing units visually distinct from circuits.
     - Moved strontium glass/molten strontium glass into the glass subgroup.
     - Gave the crushers 1 and 2 a complete remodel.
+    - Move LDS and HDS into a combined subgroup.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

@@ -273,6 +273,8 @@ data.raw["recipe"]["low-density-structure"].icons =
     scale = 0.42,
   },
 }
+data.raw["recipe"]["low-density-structure"].subgroup = "pm-density-structures" 
+data.raw["recipe"]["low-density-structure"].order = "b"
 data.raw["recipe"]["burner-mining-drill"].ingredients =
 {
   PM.ingredient("pm-basic-framing", 2),

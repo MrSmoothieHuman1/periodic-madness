@@ -1714,8 +1714,8 @@ data:extend({
     name = "pm-high-density-structure",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/high-density-structure.png",
-    subgroup = "pm-high-density-structure",
-    order = "e",
+    subgroup = "pm-density-structures",
+    order = "l",
     stack_size = 25
   },
   {
@@ -1723,8 +1723,8 @@ data:extend({
     name = "pm-isogrid-crucible",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/isogrid-crucible.png",
-    subgroup = "pm-high-density-structure",
-    order = "d",
+    subgroup = "pm-density-structures",
+    order = "m",
     stack_size = 150
   },
   {
@@ -2450,8 +2450,8 @@ data.raw["item"]["electric-engine-unit"].subgroup = "pm-intermediates"
 data.raw["recipe"]["electric-engine-unit"].subgroup = "pm-intermediates"
 data.raw["item"]["engine-unit"].subgroup = "pm-intermediates"
 data.raw["recipe"]["engine-unit"].subgroup = "pm-intermediates"
-data.raw["item"]["low-density-structure"].subgroup = "pm-intermediates"
-data.raw["recipe"]["low-density-structure"].subgroup = "pm-intermediates"
+data.raw["item"]["low-density-structure"].subgroup = "pm-density-structures"
+data.raw["item"]["low-density-structure"].order = "a"
 data.raw["item"]["flying-robot-frame"].subgroup = "pm-intermediates"
 data.raw["recipe"]["flying-robot-frame"].subgroup = "pm-intermediates"
 data.raw["item"]["sulfur"].subgroup = "pm-sulfur-rnm"

@@ -3438,6 +3438,8 @@ data:extend({
     },
     energy_required = 15,
     enabled = false,
+    subgroup = "pm-density-structures", 
+    order = "c",
     allow_productivity = true,
     ingredients = 
     {
@@ -3467,6 +3469,8 @@ data:extend({
     },
     energy_required = 15,
     enabled = false,
+    subgroup = "pm-density-structures", 
+    order = "d",
     allow_productivity = true,
     ingredients = 
     {
@@ -6315,6 +6319,8 @@ data:extend({
     enabled = false,
     energy_required = 15,
     categories = {"pm-advanced-crafting-with-fluid"},
+    subgroup = "pm-density-structures", 
+    order = "h",
     allow_productivity = true,
     main_product = "low-density-structure",
     ingredients =
