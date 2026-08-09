@@ -122,7 +122,7 @@ data:extend({
         allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-molten-zinc", 20, "fluid"),
+            PM.ingredient("pm-molten-zinc", 17.5, "fluid"),
             PM.ingredient("pm-liquid-mercury", 50, "fluid")
         },
         results =
