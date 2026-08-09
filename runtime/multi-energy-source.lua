@@ -17,33 +17,112 @@ handler.on_nth_tick = {}
 ---@field multi_energy_loaders table<uint64, MultiEnergyLoader>
 storage = storage
 
+local belt_type_types = {
+	["linked-belt"] = true,
+	["loader"] = true,
+	["loader-1x1"] = true,
+	["underground-belt"] = true,
+}
+
+local true_or_nil = {
+	["boolean"] = true,
+	["nil"] = true,
+}
+
+---@type table<defines.inventory,true>
+local valid_inventory_index = {}
+for _, inv in pairs(defines.inventory) do
+	valid_inventory_index[inv] = true
+end
+
+---@param msg string
+---@param entity data.EntityName
+---@param index integer
+---@param placement MultiEnergySourcePlacementData
+---@return never
+local function placement_error_v(msg, entity, index, placement)
+	error(msg..": "..entity.." ["..index.."]-> "..serpent.block(placement), 2)
+end
+
 local compound_map = prototypes.mod_data["pm-multi-energy-source-data"]--[[@as LuaModData<PMMultiEnergySourceModData>]].data
-for entity_name, compound_data in pairs(compound_map) do
+for entity_name, placement_array in pairs(compound_map) do
 	if not prototypes.entity[entity_name] then
 		log("PMMultiEnergySourceModData contained an entry for a non-existent entity: "..entity_name)
 		compound_map[entity_name] = nil
 		goto continue
 	end
 
-	if not PM.validate.uint8(compound_data.energy_steps) then
-		error("The energy_steps for "..entity_name.."'s compound data are not a uint8.")
-	end
-	for i = 1, compound_data.energy_steps do
-		if not prototypes.entity[entity_name.."-energy-source-"..i] then
-			error("The energy step '"..i.."' does not exist for the entity '"..entity_name.."' despite the compound data saying it should.")
-		end
-	end
-
-	local unprocessed_loader_data = compound_data.loader_data
-	compound_data.loader_data = {}
-	for index_str, data in pairs(unprocessed_loader_data) do
-		local index_num = tonumber(index_str)
-		if not index_num or not PM.validate.uint8(index_num) then
-			error("The keys for the loader_data map should all be uint8, found '"..index_str.."'")
+	---@type defines.inventory?
+	local proxy_target
+	---@type int?
+	local proxy_source_index
+	---@type MultiEnergySourcePlacementData?
+	local proxy_source_placement
+	for index, placement in pairs(placement_array) do
+		local placement_error = function (msg)
+			return placement_error_v(msg, entity_name, index, placement)
 		end
 
-		--TODO: validate the loader_data
-		compound_data.loader_data[index_num] = data
+		if not PM.validate.mapposition(placement.position) then
+			placement_error("A valid placement position must be defined")
+		end
+		if not PM.validate.int_range(placement.orientation, 0, defines.direction.south * 2 - 1) then
+			placement_error("A valid placement direction must be defined")
+		end
+
+		local placed_entity = prototypes.entity[placement.entity_name]
+		if not placed_entity then
+			placement_error("The placement entry was for an entity that does not exist")
+		end
+
+		if placement.belt_type and not belt_type_types[placed_entity.type] then
+			placement_error("The placement entry had a belt type for an entity type that doesn't support it")
+		elseif placement.belt_type and not placement.belt_type == "input" and placement.belt_type == "output" then
+			placement_error("Invalid value for belt_type")
+		end
+
+		if placement.proxy_target then
+			if placed_entity.type ~= "proxy-container" then
+				placement_error("Non-proxy containers cannot have a proxy target")
+			end
+			if proxy_target then
+				placement_error("Proxy containers cannot be chained")
+			end
+			if not valid_inventory_index[placement.proxy_target] then
+				placement_error("Proxy target must be a valid inventory index")
+			end
+			proxy_target = placement.proxy_target
+			proxy_source_index = index
+			proxy_source_placement = placement
+		elseif proxy_target then
+			assert(proxy_source_index)
+			assert(proxy_source_placement)
+
+			local is_inv = placed_entity.get_inventory_size(proxy_target, "normal")
+			if not is_inv then
+				placement_error_v("Proxy target must be for a valid inventory index on the next placed entity, '"..placement.entity_name.."'",
+					entity_name, proxy_source_index, proxy_source_placement
+				)
+			end
+
+			proxy_target = nil
+			proxy_source_index = nil
+			proxy_source_placement = nil
+		end
+
+		if not true_or_nil[type(placement.is_fluid)] then
+			placement_error("is_fluid needs to be a boolean")
+		elseif not true_or_nil[type(placement.is_linked_belt)] then
+			placement_error("is_linked_belt needs to be a boolean")
+		elseif not true_or_nil[type(placement.is_hidden_surface)] then
+			placement_error("is_hidden_surface needs to be a boolean")
+		end
+
+		if placed_entity.type == "linked-belt" or placement.is_linked_belt then
+			if placed_entity.type ~= "linked-belt" or not placement.is_linked_belt then
+				placement_error("A placed entity of type 'linked-belt' must set is_linked_belt to true")
+			end
+		end
 	end
 
 	::continue::
