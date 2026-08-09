@@ -63,10 +63,16 @@ for entity_name, placement_array in pairs(compound_map) do
 			return placement_error_v(msg, entity_name, index, placement)
 		end
 
+		if not PM.validate.uint(index - 1) then
+			placement_error("The array of placement data had a non-integer key")
+		elseif not type(placement) == "table" then
+			placement_error("A non-table entry was found within the array of placement data")
+		end
+
 		if not PM.validate.mapposition(placement.position) then
 			placement_error("A valid placement position must be defined")
 		end
-		if not PM.validate.int_range(placement.direction, 0, defines.direction.south * 2 - 1) then
+		if not PM.validate.int_range(placement.direction, defines.direction.north, defines.direction.south * 2 - 1) then
 			placement_error("A valid placement direction must be defined")
 		end
 

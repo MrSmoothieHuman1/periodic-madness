@@ -31,7 +31,7 @@ local function get_current_size(technologies)
             size = size + PM.get_custom_modification("pm-requester-chest-inventory-size", tech)
         end
     end
-    if not PM.validate.integer(size) then
+    if not PM.validate.int(size) then
         error("Requester chest bonus is a non-integer")
     end
     return size
