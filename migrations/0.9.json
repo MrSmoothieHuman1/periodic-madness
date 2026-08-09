@@ -1,6 +1,7 @@
 {
     "recipe":
     [
-        ["pm-sodium-bicarbonate-heating", "pm-sodium-carbonate"]
+        ["pm-sodium-bicarbonate-heating", "pm-sodium-carbonate"],
+        ["pm-fluid-circuit-breadboard", "pm-fluid-breadboard"]
     ]
 }

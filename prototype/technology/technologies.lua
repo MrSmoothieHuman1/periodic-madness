@@ -477,7 +477,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/fluid-resistant-circuit.png",
     effects =
     {
-      PM.unlock_recipe("pm-fluid-circuit-breadboard"),
+      PM.unlock_recipe("pm-fluid-breadboard"),
       PM.unlock_recipe("pm-transistors"),
       PM.unlock_recipe("pm-fluid-integrated-circuits"),
       PM.unlock_recipe("pm-fluid-circuit")

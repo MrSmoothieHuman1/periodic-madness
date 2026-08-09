@@ -132,7 +132,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "pm-fluid-circuit-breadboard",
+    name = "pm-fluid-breadboard",
     crafting_machine_tint = 
     {
         primary = tints.fluid_resistant_breadboard,
