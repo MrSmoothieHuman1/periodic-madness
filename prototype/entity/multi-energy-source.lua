@@ -1,12 +1,49 @@
----@class MultiEnergySourceData
----@field energy_steps uint8 The uint8 limitation is arbitrary, but I do not feel like more makes any sense
----@field loader_data table<uint,{position:Vector,orientation:defines.direction}>
+local collision_mask_util = require("collision-mask-util")
+
+
+---@class MultiEnergySourcePlacementData
+---@field entity_name data.EntityName
+---@field position Vector
+---@field direction defines.direction
+---@field is_fluid? true
+---@field is_hidden_surface? true
+---@field is_linked_belt? true Every two linked belts will automatically be connected
+---@field belt_type? BeltConnectionType
+---@field proxy_target? defines.inventory The inventory index of the next entity in the placement array
 
 ---@class PMMultiEnergySourceModData
----@field [data.EntityName] MultiEnergySourceData
+---@field [data.EntityName] MultiEnergySourcePlacementData[]
 
 ---@type PMMultiEnergySourceModData
 local multi_energy_source_data = {}
+	
+---@type data.FluidPrototype
+local fake_energy_fluid = {
+	type = "fluid",
+	name = "pm-fake-compound-energy-fluid",
+	icons = {util.empty_icon()},
+	base_color = {0.5, 0.5, 0.5},
+	flow_color = {0.5, 0.5, 0.5},
+	default_temperature = 1,
+	max_temperature = 1e20,
+	auto_barrel = false,
+	heat_capacity = "1J",
+}
+
+---@return data.EntityPrototypeFlags
+local function hidden_entity_flags()
+	return {
+		"placeable-player",
+		"player-creation",
+		"not-rotatable",
+		"not-on-map",
+		"not-deconstructable",
+		"not-blueprintable",
+		"not-in-made-in",
+		"not-in-bonus-gui",
+		"not-in-mined-by",
+	}
+end
 
 data:extend{
 	---@type data.ModData
@@ -15,49 +52,69 @@ data:extend{
 		name = "pm-multi-energy-source-data",
 		data_type = "PMMultiEnergySourceModData",
 		data = multi_energy_source_data,
-	}, 
-	---@type data.Loader1x1Prototype
-	{
-		type = "loader-1x1",
-		name = "pm-multi-energy-source-loader",
-		filter_count = 5,
-		speed = 1000,
-		collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
-		-- collision_mask = {layers={loader = true}},
-		container_distance = 1.0,
 	},
 	---@type data.CustomEventPrototype
 	{
 		type = "custom-event",
 		name = "pm_on_multi_energy_entity_created",
-	}
+	},
+	fake_energy_fluid,
+	---@type data.Loader1x1Prototype
+	{
+		type = "loader-1x1",
+		name = "pm-multi-energy-source-loader",
+		icons = {util.empty_icon()},
+		flags = hidden_entity_flags(),
+		selectable_in_game = false,
+		filter_count = 5,
+    animation_speed_coefficient = 32/2,
+    speed = 0.03125*2,
+		collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
+		-- collision_mask = {layers={loader = true}},
+		container_distance = 1.0,
+		belt_animation_set = data.raw["transport-belt"]["transport-belt"].belt_animation_set,
+	},
+	---@type data.ProxyContainerPrototype
+	{
+		type = "proxy-container",
+		name = "pm-multi-energy-source-proxy",
+		icons = {util.empty_icon()},
+		flags = hidden_entity_flags(),
+		selectable_in_game = false,
+		collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
+		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+	},
+	---@type data.LinkedBeltPrototype
+	{
+		type = "linked-belt",
+		name = "pm-multi-energy-source-linked-belt",
+		icons = {util.empty_icon()},
+		flags = hidden_entity_flags(),
+		selectable_in_game = false,
+		collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
+    animation_speed_coefficient = 32/2,
+    speed = 0.03125*2,
+		structure = {
+			direction_in = util.empty_sprite(),
+			direction_out = util.empty_sprite(),
+			back_patch = util.empty_sprite(),
+			front_patch = util.empty_sprite(),
+			direction_in_side_loading = util.empty_sprite(),
+			direction_out_side_loading = util.empty_sprite(),
+		},
+		belt_animation_set = data.raw["transport-belt"]["transport-belt"].belt_animation_set,
+	},
 }
-	
----@type data.FluidPrototype
-local initial_fluid = {
-	type = "fluid",
-	name = "pm-initial-fake-energy-fluid",
-	icons = {util.empty_icon()},
-	base_color = {0.5, 0.5, 0.5},
-	flow_color = {0.5, 0.5, 0.5},
-	default_temperature = 1,
-	max_temperature = 1e20,
-	auto_barrel = false,
-	-- fuel_value = "1MJ",
-	heat_capacity = "1J",
-}
 
-local final_fluid = util.copy(initial_fluid)
-final_fluid.name = "pm-final-fake-energy-fluid"
-
-data:extend{initial_fluid, final_fluid}
-
-local made_intermediate_fluids = 0
-local function make_intermediate_fluid()
-	made_intermediate_fluids = made_intermediate_fluids + 1
-	local new_fluid = util.copy(initial_fluid)
-	new_fluid.name = "pm-intermediate-fake-energy-fluid-"..made_intermediate_fluids
+---@param name string
+---@param default_temperature float
+---@return data.FluidName
+local function make_initial_fluid(name, default_temperature)
+	local new_fluid = util.copy(fake_energy_fluid)
+	new_fluid.name = name
+	new_fluid.default_temperature = default_temperature
 	data:extend{new_fluid}
+	return name
 end
 
 ---@param filter data.FluidID?
@@ -77,21 +134,67 @@ local function make_fluidbox(filter, direction)
 	}
 end
 
----@param energy_source data.CompoundEnergySource
----@param data MultiEnergySourceData
----@param index uint
----@return data.EnergySource
-local function update_compound_data(energy_source, data, index)
+---@param entity SingleEnergySourceEntity
+---@param placement_data MultiEnergySourcePlacementData[]
+local function add_placement(entity, placement_data)
+	---@type data.CompoundEnergySource
+	local energy_source = entity.energy_source
+	---@type Vector
+	local placement_position = {0,0}
+
 	if energy_source.type == "burner" then
-		data.loader_data[index] = {
-			position = energy_source.loader_position or error("Loader position must be defined for burner energy source"),
-			orientation = energy_source.loader_rotation or error("Loader rotation must be defined for burner energy source"),
-		}
+		local loader_position = energy_source.loader_position
 		energy_source.loader_position = nil
-		energy_source.loader_rotation = nil
+		if not loader_position then error("Loader position must be defiend for burner energy source") end
+
+		local output_direction = energy_source.loader_direction
+		energy_source.loader_direction = nil
+		if not output_direction then error("Loader rotation must be defined for burner energy source") end
+		local input_direction = PM.rotate_direction(output_direction, defines.direction.south)
+
+		-- Update entity
+		entity.collision_box = {{-0.4, -0.4}, {0.4, 0.4}}
+		entity.selection_box = {{-0.5, -0.5}, {0.5, 0.5}}
+		placement_position = PM.shift_direction(loader_position, input_direction, 1)
+
+		placement_data[#placement_data + 1] = {
+			entity_name = "pm-multi-energy-source-linked-belt",
+			position = loader_position,
+			direction = input_direction,
+			belt_type = "input",
+			is_linked_belt = true,
+		}
+		placement_data[#placement_data + 1] = {
+			entity_name = "pm-multi-energy-source-linked-belt",
+			position = PM.shift_direction(loader_position, output_direction, 1),
+			direction = input_direction,
+			belt_type = "output",
+			is_hidden_surface = true,
+			is_linked_belt = true,
+		}
+		placement_data[#placement_data + 1] = {
+			entity_name = "pm-multi-energy-source-loader",
+			position = loader_position,
+			direction = input_direction,
+			is_hidden_surface = true,
+			belt_type = "input"
+		}
+		placement_data[#placement_data + 1] = {
+			entity_name = "pm-multi-energy-source-proxy",
+			position = placement_position,
+			direction = defines.direction.north,
+			is_hidden_surface = true,
+			proxy_target = defines.inventory.fuel
+		}
 	end
 
-	return energy_source
+
+	placement_data[#placement_data + 1] = {
+		entity_name = entity.name,
+		is_fluid = true,
+		position = placement_position,
+		direction = defines.direction.north,
+	}
 end
 
 ---@class data.CompoundElectricEnergySource : data.ElectricEnergySource
@@ -103,7 +206,7 @@ end
 ---@class data.CompoundBurnerEnergySource : data.BurnerEnergySource
 ---@field usage_ratio number
 ---@field loader_position Vector
----@field loader_rotation defines.direction
+---@field loader_direction defines.direction
 
 ---@alias data.CompoundEnergySource
 ---| data.CompoundElectricEnergySource
@@ -113,10 +216,11 @@ end
 
 
 ---@alias Omit<T, K extends keyof T> Pick<T, Exclude<keyof T, K>>
----@alias SingleEnergySourceEntity data.EntityWithOwnerPrototype & {energy_source:data.BaseEnergySource, energy_usage:data.Energy}
----@alias MultiEnergySourced<T extends SingleEnergySourceEntity> Omit<T,'energy_source'> & {energy_source:data.CompoundEnergySource[]}
+---@alias SingleEnergySourceEntity data.EntityWithOwnerPrototype & {energy_source:data.BaseEnergySource}
+---@alias SingleEnergySourceEntityWithUsage data.EntityWithOwnerPrototype & {energy_source:data.BaseEnergySource, energy_usage:data.Energy}
+---@alias MultiEnergySourced<T extends SingleEnergySourceEntityWithUsage> Omit<T,'energy_source'> & {energy_source:data.CompoundEnergySource[]}
 
----@generic T extends SingleEnergySourceEntity
+---@generic T extends SingleEnergySourceEntityWithUsage
 ---@param proto MultiEnergySourced<T>
 ---@return T
 local function multi_energy_source(proto)
@@ -128,7 +232,8 @@ local function multi_energy_source(proto)
 	proto.energy_source = {
 		type = "fluid",
 		scale_fluid_usage = true,
-		fluid_box = make_fluidbox(nil, "input")
+		fluid_box = make_fluidbox(fake_energy_fluid.name, "input"),
+		render_no_power_icon = false, -- Other energy sources should cover it
 	}
 
 	proto.created_effect = PM.script_trigger("pm_on_multi_energy_entity_created", proto.created_effect)
@@ -149,63 +254,67 @@ local function multi_energy_source(proto)
 	local target_temperature = {}
 	for i = 1, #energy_sources do
 		local ratio = energy_sources[i].usage_ratio / ratio_total
+		energy_sources[i].usage_ratio = nil -- cleanup
 		energy_use[i] = (ratio * total_energy_use).."J"
 		target_temperature[i] = (target_temperature[i-1] or 1) + (ratio * total_energy_use)
-		-- if i > 1 then
-		-- else
-		-- 	target_temperature[i] = 1
-		-- end
 	end
+	-- These are only for emmylua's sake
+	assert(#energy_use > 1)
+	assert(#target_temperature > 1)
 
-	---@type MultiEnergySourceData
-	local compound_data = {
-		energy_steps = #energy_sources,
-		loader_data = {}
-	}
-	multi_energy_source_data[proto.name] = compound_data
+	---@type MultiEnergySourcePlacementData[]
+	local placement_info = {}
+	multi_energy_source_data[proto.name] = placement_info
+	local fluid = make_initial_fluid(proto.name.."-initial-energy-fluid", target_temperature[1])
 
-	local last_fluid = "pm-initial-fake-energy-fluid"
-
-	-- HACK: for testing
-	initial_fluid.default_temperature = target_temperature[1]
-
-	data:extend{{
+	---@type data.OffshorePumpPrototype
+	local offshore_pump = {
 		type = "offshore-pump",
 		name = proto.name.."-energy-source-1",
-		energy_source = update_compound_data(energy_sources[1], compound_data, 1),
+		icon = proto.icon,
+		icon_size = proto.icon_size,
+		icons = proto.icons,
+		flags = hidden_entity_flags(),
+		energy_source = energy_sources[1],
 		energy_usage = energy_use[1],
 		pumping_speed = 1,
 		fluid_source_offset = {0,0},
-		fluid_box = make_fluidbox(last_fluid, "output"),
-		-- selectable_in_game = false,
-		collision_mask = {layers = {}},
+		fluid_box = make_fluidbox(fluid, "output"),
+		collision_mask = collision_mask_util.get_mask(proto),
 		collision_box = proto.collision_box,
-	}--[[@type data.OffshorePumpPrototype]]}
+		selection_box = proto.collision_box,
+		-- selectable_in_game = false,
+		selection_priority = 65,
+	}
+	add_placement(offshore_pump, placement_info)
+	data:extend{offshore_pump}
+
 
 
 	for i = 2, #energy_sources do
-		local next_fluid = "pm-final-fake-energy-fluid"
-		if energy_sources[i+1] then
-			next_fluid = "pm-intermediate-fake-energy-fluid-"..(i-1)
-			if made_intermediate_fluids < i-1 then
-				make_intermediate_fluid()
-			end
-		end
-
-		data:extend{{
+		---@type data.BoilerPrototype
+		local boiler = {
 			type = "boiler",
 			name = proto.name.."-energy-source-"..i,
+			icon = proto.icon,
+			icon_size = proto.icon_size,
+			icons = proto.icons,
+			flags = hidden_entity_flags(),
 			burning_cooldown = 0,
-			energy_consumption = energy_use[i],
+			energy_consumption = energy_use[i]--[[@as data.Energy]],
 			target_temperature = target_temperature[i],
 			mode = "output-to-separate-pipe",
-			fluid_box = make_fluidbox(last_fluid, "input"),
-			output_fluid_box = make_fluidbox(next_fluid, "output"),
-			energy_source = update_compound_data(energy_sources[i], compound_data, i),
-			collision_mask = {layers = {}},
+			fluid_box = make_fluidbox(nil, "input"),
+			output_fluid_box = make_fluidbox(fake_energy_fluid.name, "output"),
+			energy_source = energy_sources[i],
+			collision_mask = collision_mask_util.get_mask(proto),
 			collision_box = proto.collision_box,
-			-- selectable_in_game = false,
-		}--[[@type data.BoilerPrototype]]}
+			selection_box = proto.collision_box,
+			selectable_in_game = false,
+			selection_priority = 60,
+		}
+		add_placement(boiler, placement_info)
+		data:extend{boiler}
 	end
 
 	---@diagnostic disable-next-line: return-type-mismatch
@@ -246,7 +355,7 @@ local accelerator = {
 			initial_fuel_percent = 1,
 			--TODO: Get a custom fuel category and burner usage,
 			loader_position = {14.5, 0},
-			loader_rotation = defines.direction.west,
+			loader_direction = defines.direction.east,
 			usage_ratio = 1,
 		},
 		---@type data.CompoundElectricEnergySource

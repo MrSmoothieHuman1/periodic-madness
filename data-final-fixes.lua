@@ -272,8 +272,6 @@ if false then
 	end
 end
 
----@alias data.defines.inventory defines.inventory
-
 --MARK: Barrel subgroup moving
 data.raw["item-subgroup"]["fill-barrel"].group = "fluids"
 data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
