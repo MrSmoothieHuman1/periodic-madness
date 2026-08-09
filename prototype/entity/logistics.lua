@@ -8,104 +8,37 @@ local blue_belt = {r = 0.169, g = 0.608, b = 0.878}
 local purple_belt = {r = 0.616, g = 0.169, b = 0.878}
 
 local red_belt_animation_set = {
-    animation_set =
-    {
-      filename = "__base__/graphics/entity/fast-transport-belt/fast-transport-belt.png",
-      priority = "extra-high",
-      size = 128,
-      scale = 0.5,
-      frame_count = 32,
-      direction_count = 20
-    }
-  }
-  local orange_belt_animation_set = {
-    animation_set =
-    {
-      filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
-      priority = "extra-high",
-      size = 128,
-      scale = 0.5,
-      frame_count = 32,
-      direction_count = 20
-    }
-  }
-  local purple_belt_animation_set = {
-    animation_set =
-    {
-      filename = "__periodic-madness__/graphics/entities/buildings/high-density-transport-belts/high-density-transport-belt.png",
-      priority = "extra-high",
-      size = 128,
-      scale = 0.5,
-      frame_count = 16,
-      direction_count = 20,
-      animation_speed = 0.8
-    }
-  }
-belt_reader_gfx = -- not local
-{
-  belt_reader =
+  animation_set =
   {
-    {
-      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-top",
-      {
-        priority = "low",
-        scale = 0.5,
-        frame_count = 4,
-        direction_count = 4
-      }),
-      render_layer = "object"
-    },
-    {
-      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-base",
-      {
-        priority = "low",
-        scale = 0.5,
-        frame_count = 4,
-        direction_count = 4
-      }),
-      render_layer = "transport-belt-reader"
-    },
-    {
-      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-middle",
-      {
-        priority = "low",
-        scale = 0.5,
-        frame_count = 4,
-        direction_count = 4
-      }),
-      render_layer = "floor-mechanics"
-    },
-    {
-      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-under-middle",
-      {
-        priority = "low",
-        scale = 0.5,
-        frame_count = 4,
-        direction_count = 4
-      }),
-      render_layer = "transport-belt-endings"
-    },
-    {
-      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-bottom",
-      {
-        priority = "low",
-        scale = 0.5,
-        frame_count = 4,
-        direction_count = 4
-      }),
-      render_layer = "floor"
-    },
-    {
-      sprites = util.sprite_load("__base__/graphics/entity/transport-belt/belt-reader-shadow",
-      {
-        priority = "low",
-        scale = 0.5,
-        frame_count = 4,
-        direction_count = 4,
-      }),
-      render_layer = "floor"
-    },
-    -- More belt reader layers (with possibly different render layer) should go here
+    filename = "__base__/graphics/entity/fast-transport-belt/fast-transport-belt.png",
+    priority = "extra-high",
+    size = 128,
+    scale = 0.5,
+    frame_count = 32,
+    direction_count = 20
+  }
+}
+local orange_belt_animation_set = {
+  animation_set =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/fast-transport-belt/fast-transport-belt.png",
+    priority = "extra-high",
+    size = 128,
+    scale = 0.5,
+    frame_count = 32,
+    direction_count = 20
+  }
+}
+local purple_belt_animation_set = {
+  animation_set =
+  {
+    filename = "__periodic-madness__/graphics/entities/buildings/high-density-transport-belts/high-density-transport-belt.png",
+    priority = "extra-high",
+    size = 128,
+    scale = 0.5,
+    frame_count = 16,
+    direction_count = 20,
+    animation_speed = 0.8
   }
 }
 
