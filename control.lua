@@ -15,7 +15,7 @@ event_handler.add_libraries{
 	require("runtime.periodic-fun"),
 	require("runtime.pollution-buildings"),
 	require("runtime.requester-chest-storage"),
-	--require("runtime.multi-energy-source"),
+	require("runtime.multi-energy-source"),
 	--require("runtime.reactor-cooling"),
 	require("runtime.world-size-limit"),
 
