@@ -4,7 +4,7 @@ local collision_mask_util = require("collision-mask-util")
 ---@class MultiEnergySourcePlacementData
 ---@field entity_name data.EntityName
 ---@field position Vector
----@field orientation defines.direction
+---@field direction defines.direction
 ---@field is_fluid? true
 ---@field is_hidden_surface? true
 ---@field is_linked_belt? true Every two linked belts will automatically be connected
@@ -160,14 +160,14 @@ local function add_placement(entity, placement_data)
 		placement_data[#placement_data + 1] = {
 			entity_name = "pm-multi-energy-source-linked-belt",
 			position = loader_position,
-			orientation = input_direction,
+			direction = input_direction,
 			belt_type = "input",
 			is_linked_belt = true,
 		}
 		placement_data[#placement_data + 1] = {
 			entity_name = "pm-multi-energy-source-linked-belt",
 			position = PM.shift_direction(loader_position, output_direction, 1),
-			orientation = input_direction,
+			direction = input_direction,
 			belt_type = "output",
 			is_hidden_surface = true,
 			is_linked_belt = true,
@@ -175,14 +175,14 @@ local function add_placement(entity, placement_data)
 		placement_data[#placement_data + 1] = {
 			entity_name = "pm-multi-energy-source-loader",
 			position = loader_position,
-			orientation = input_direction,
+			direction = input_direction,
 			is_hidden_surface = true,
 			belt_type = "input"
 		}
 		placement_data[#placement_data + 1] = {
 			entity_name = "pm-multi-energy-source-proxy",
 			position = placement_position,
-			orientation = defines.direction.north,
+			direction = defines.direction.north,
 			is_hidden_surface = true,
 			proxy_target = defines.inventory.fuel
 		}
@@ -193,7 +193,7 @@ local function add_placement(entity, placement_data)
 		entity_name = entity.name,
 		is_fluid = true,
 		position = placement_position,
-		orientation = defines.direction.north,
+		direction = defines.direction.north,
 	}
 end
 

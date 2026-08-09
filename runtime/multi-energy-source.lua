@@ -66,7 +66,7 @@ for entity_name, placement_array in pairs(compound_map) do
 		if not PM.validate.mapposition(placement.position) then
 			placement_error("A valid placement position must be defined")
 		end
-		if not PM.validate.int_range(placement.orientation, 0, defines.direction.south * 2 - 1) then
+		if not PM.validate.int_range(placement.direction, 0, defines.direction.south * 2 - 1) then
 			placement_error("A valid placement direction must be defined")
 		end
 
@@ -176,7 +176,7 @@ function handler.events.pm_on_multi_energy_entity_created(event)
 		local cur_entity = cur_surface.create_entity({
 			name = placement_info.entity_name,
 			position = cur_position,
-			direction = placement_info.orientation,
+			direction = placement_info.direction,
 			quality = quality,
 			force = force,
 			cause = entity,
