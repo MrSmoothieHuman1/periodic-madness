@@ -306,6 +306,9 @@ local function create_hidden_surface()
 		default_enable_all_autoplace_controls = false,
 	})
 	surface.generate_with_lab_tiles = true
+	for _, force in pairs(game.forces) do
+		force.set_surface_hidden(surface, true)
+	end
 	return surface
 end
 
@@ -320,5 +323,9 @@ end
 
 handler.on_init = setup_storage
 handler.on_configuration_changed = setup_storage
+
+function handler.events.on_force_created(event)
+	event.force.set_surface_hidden("pm-multi-energy-source-hidden-surface", true)
+end
 
 return handler
