@@ -59,22 +59,6 @@ data:extend{
 		name = "pm_on_multi_energy_entity_created",
 	},
 	fake_energy_fluid,
-	---@type data.Loader1x1Prototype
-	{
-		type = "loader-1x1",
-		name = "pm-multi-energy-source-loader",
-		icons = {util.empty_icon()},
-		hidden = true,
-		flags = hidden_entity_flags(),
-		selectable_in_game = false,
-		filter_count = 5,
-    animation_speed_coefficient = 32/2,
-    speed = 0.03125*2,
-		collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
-		-- collision_mask = {layers={loader = true}},
-		container_distance = 1.0,
-		belt_animation_set = data.raw["transport-belt"]["transport-belt"].belt_animation_set,
-	},
 }
 
 ---@param name string
@@ -85,6 +69,35 @@ local function make_initial_fluid(name, default_temperature)
 	new_fluid.name = name
 	new_fluid.default_temperature = default_temperature
 	data:extend{new_fluid}
+	return name
+end
+
+---@param name string
+---@param base_belt_name data.TransportBeltName
+---@param structure data.LoaderStructure?
+local function make_loader(name, base_belt_name, structure)
+	local base_belt = data.raw["transport-belt"][base_belt_name]
+
+	data:extend{
+		---@type data.Loader1x1Prototype
+		{
+			type = "loader-1x1",
+			name = name,
+			icons = {util.empty_icon()},
+			hidden = true,
+			flags = hidden_entity_flags(),
+			selectable_in_game = false,
+			filter_count = 0,
+			collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
+			collision_mask = {layers={transport_belt = true}},
+			container_distance = 1.0,
+			animation_speed_coefficient = base_belt.animation_speed_coefficient,
+			speed = base_belt.speed,
+			belt_animation_set = base_belt.belt_animation_set,
+			structure = structure
+		},
+	}
+
 	return name
 end
 
@@ -123,6 +136,13 @@ local function add_placement(entity, placement_data)
 		if not output_direction then error("Loader rotation must be defined for burner energy source") end
 		local input_direction = PM.rotate_direction(output_direction, defines.direction.south)
 
+		local loader_belt = energy_source.loader_belt
+		energy_source.loader_belt = nil
+		if not loader_belt then error("Loader belt must be defined for burner energy source") end
+
+		local loader_structure = energy_source.loader_structure
+		energy_source.loader_structure = nil
+
 		-- Update entity
 		entity.collision_box = {{-0.4, -0.4}, {0.4, 0.4}}
 		entity.selection_box = {{-0.5, -0.5}, {0.5, 0.5}}
@@ -131,7 +151,10 @@ local function add_placement(entity, placement_data)
 		placement_position = PM.shift_direction(loader_position, input_direction, 1)
 
 		placement_data[#placement_data + 1] = {
-			entity_name = "pm-multi-energy-source-loader",
+			entity_name = make_loader(
+				entity.name.."-loader",
+				loader_belt, loader_structure
+			),
 			position = loader_position,
 			direction = input_direction,
 			belt_type = "input"
@@ -157,6 +180,8 @@ end
 ---@field usage_ratio number
 ---@field loader_position Vector
 ---@field loader_direction defines.direction
+---@field loader_belt data.TransportBeltName
+---@field loader_structure? data.LoaderStructure
 
 ---@alias data.CompoundEnergySource
 ---| data.CompoundElectricEnergySource
@@ -306,6 +331,7 @@ local accelerator = {
 			--TODO: Get a custom fuel category and burner usage,
 			loader_position = {14.5, 0},
 			loader_direction = defines.direction.east,
+			loader_belt = "pm-high-density-transport-belt",
 			usage_ratio = 1,
 		},
 		---@type data.CompoundElectricEnergySource
