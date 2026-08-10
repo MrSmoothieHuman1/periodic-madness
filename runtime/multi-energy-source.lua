@@ -17,6 +17,8 @@ handler.on_nth_tick = {}
 ---@field multi_energy_loaders table<uint64, MultiEnergyLoader>
 storage = storage
 
+--MARK: Validation
+
 local belt_type_types = {
 	["linked-belt"] = true,
 	["loader"] = true,
@@ -58,13 +60,20 @@ for entity_name, placement_array in pairs(compound_map) do
 	local proxy_source_index
 	---@type MultiEnergySourcePlacementData?
 	local proxy_source_placement
+
+	---@type BeltConnectionType?
+	local linked_type
+	---@type int?
+	local linked_source_index
+	---@type MultiEnergySourcePlacementData?
+	local linked_source_placement
 	for index, placement in pairs(placement_array) do
 		local placement_error = function (msg)
 			return placement_error_v(msg, entity_name, index, placement)
 		end
 
 		if not PM.validate.uint(index - 1) then
-			placement_error("The array of placement data had a non-integer key")
+			placement_error("The array of placement data had an invalid key")
 		elseif not type(placement) == "table" then
 			placement_error("A non-table entry was found within the array of placement data")
 		end
@@ -83,7 +92,7 @@ for entity_name, placement_array in pairs(compound_map) do
 
 		if placement.belt_type and not belt_type_types[placed_entity.type] then
 			placement_error("The placement entry had a belt type for an entity type that doesn't support it")
-		elseif placement.belt_type and not placement.belt_type == "input" and placement.belt_type == "output" then
+		elseif placement.belt_type and placement.belt_type ~= "input" and placement.belt_type ~= "output" then
 			placement_error("Invalid value for belt_type")
 		end
 
@@ -101,8 +110,7 @@ for entity_name, placement_array in pairs(compound_map) do
 			proxy_source_index = index
 			proxy_source_placement = placement
 		elseif proxy_target then
-			assert(proxy_source_index)
-			assert(proxy_source_placement)
+			assert(proxy_source_index and proxy_source_placement)
 
 			local is_inv = placed_entity.get_inventory_size(proxy_target, "normal")
 			if not is_inv then
@@ -129,6 +137,38 @@ for entity_name, placement_array in pairs(compound_map) do
 				placement_error("A placed entity of type 'linked-belt' must set is_linked_belt to true")
 			end
 		end
+
+		if placement.is_linked_belt then
+			if not placement.belt_type then
+				placement_error("A linked belt must define the belt type")
+			end
+			if linked_type then
+				if linked_type == placement.belt_type then
+					placement_error("Two linked belts must of different belt types to connect")
+				end
+				linked_type = nil
+				linked_source_index = nil
+				linked_source_placement = nil
+			else
+				linked_type = placement.belt_type
+				linked_source_index = index
+				linked_source_placement = placement
+			end
+		end
+	end
+
+	if proxy_target then
+		assert(proxy_source_index and proxy_source_placement)
+		placement_error_v("The last placed entity cannot a proxy container",
+			entity_name, proxy_source_index, proxy_source_placement
+		)
+	end
+
+	if linked_type then
+		assert(linked_source_index and linked_source_placement)
+		placement_error_v("There must be an even number of linked belts so they can all be connected", 
+			entity_name, linked_source_index, linked_source_placement
+		)
 	end
 
 	::continue::
@@ -237,6 +277,8 @@ function handler.events.pm_on_multi_energy_entity_created(event)
 	last_fluid_entity.add_fluid_box_linked_connection(2, entity, 1)
 end
 
+--MARK: Belt spilling
+
 ---@param loader MultiEnergyLoader
 ---@param target LuaEntity
 ---@param line LuaTransportLine
@@ -287,6 +329,8 @@ handler.on_nth_tick[30] = function()
 		::continue::
 	end
 end
+
+--MARK: Basic plumbing
 
 function handler.events.on_object_destroyed(event)
 	local data = storage.multi_energy_entities[event.registration_number]
