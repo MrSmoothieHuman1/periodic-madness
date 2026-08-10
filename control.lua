@@ -10,6 +10,8 @@ local event_handler = require("event_handler")--[[@as event_handler_lib]]
 storage = storage
 
 event_handler.add_libraries{
+	require("runtime.compound-entity-util"),
+
 	require("runtime.remote-interface"),
 	require("runtime.freeplay-interface"),
 	require("runtime.periodic-fun"),

@@ -1,21 +1,21 @@
 local collision_mask_util = require("collision-mask-util")
 
 
----@class MultiEnergySourcePlacementData
+---@class PlacementData
 ---@field entity_name data.EntityName
 ---@field position Vector
 ---@field direction defines.direction
 ---@field is_fluid? true
--- -@field is_hidden_surface? true
 ---@field is_linked_belt? true Every two linked belts will automatically be connected
 ---@field belt_type? BeltConnectionType
 ---@field proxy_target? defines.inventory The inventory index of the next entity in the placement array
+-- -@field is_hidden_surface? true
 
----@class PMMultiEnergySourceModData
----@field [data.EntityName] MultiEnergySourcePlacementData[]
+---@class PMCompoundEntityPlacementData
+---@field [data.EntityName] PlacementData[]
 
----@type PMMultiEnergySourceModData
-local multi_energy_source_data = {}
+---@type PMCompoundEntityPlacementData
+local compount_placement_data = {}
 	
 ---@type data.FluidPrototype
 local fake_energy_fluid = {
@@ -49,9 +49,9 @@ data:extend{
 	---@type data.ModData
 	{
 		type = "mod-data",
-		name = "pm-multi-energy-source-data",
-		data_type = "PMMultiEnergySourceModData",
-		data = multi_energy_source_data,
+		name = "pm-compound-entity-placement",
+		data_type = "PMCompoundEntityPlacementData",
+		data = compount_placement_data,
 	},
 	---@type data.CustomEventPrototype
 	{
@@ -64,6 +64,7 @@ data:extend{
 		type = "loader-1x1",
 		name = "pm-multi-energy-source-loader",
 		icons = {util.empty_icon()},
+		hidden = true,
 		flags = hidden_entity_flags(),
 		selectable_in_game = false,
 		filter_count = 5,
@@ -105,7 +106,7 @@ local function make_fluidbox(filter, direction)
 end
 
 ---@param entity SingleEnergySourceEntity
----@param placement_data MultiEnergySourcePlacementData[]
+---@param placement_data PlacementData[]
 local function add_placement(entity, placement_data)
 	---@type data.CompoundEnergySource
 	local energy_source = entity.energy_source
@@ -211,9 +212,9 @@ local function multi_energy_source(proto)
 	assert(#energy_use > 1)
 	assert(#target_temperature > 1)
 
-	---@type MultiEnergySourcePlacementData[]
+	---@type PlacementData[]
 	local placement_info = {}
-	multi_energy_source_data[proto.name] = placement_info
+	compount_placement_data[proto.name] = placement_info
 	local fluid = make_initial_fluid(proto.name.."-initial-energy-fluid", target_temperature[1])
 
 	---@type data.OffshorePumpPrototype
@@ -223,6 +224,7 @@ local function multi_energy_source(proto)
 		icon = proto.icon,
 		icon_size = proto.icon_size,
 		icons = proto.icons,
+		hidden = true,
 		flags = hidden_entity_flags(),
 		energy_source = energy_sources[1],
 		energy_usage = energy_use[1],
@@ -247,6 +249,7 @@ local function multi_energy_source(proto)
 			icon = proto.icon,
 			icon_size = proto.icon_size,
 			icons = proto.icons,
+			hidden = true,
 			flags = hidden_entity_flags(),
 			burning_cooldown = 0,
 			energy_consumption = energy_use[i]--[[@as data.Energy]],
