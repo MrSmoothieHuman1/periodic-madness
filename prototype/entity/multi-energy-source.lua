@@ -6,7 +6,7 @@ local collision_mask_util = require("collision-mask-util")
 ---@field position Vector
 ---@field direction defines.direction
 ---@field is_fluid? true
----@field is_hidden_surface? true
+-- -@field is_hidden_surface? true
 ---@field is_linked_belt? true Every two linked belts will automatically be connected
 ---@field belt_type? BeltConnectionType
 ---@field proxy_target? defines.inventory The inventory index of the next entity in the placement array
@@ -74,36 +74,6 @@ data:extend{
 		container_distance = 1.0,
 		belt_animation_set = data.raw["transport-belt"]["transport-belt"].belt_animation_set,
 	},
-	---@type data.ProxyContainerPrototype
-	{
-		type = "proxy-container",
-		name = "pm-multi-energy-source-proxy",
-		icons = {util.empty_icon()},
-		flags = hidden_entity_flags(),
-		selectable_in_game = false,
-		collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
-		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-	},
-	---@type data.LinkedBeltPrototype
-	{
-		type = "linked-belt",
-		name = "pm-multi-energy-source-linked-belt",
-		icons = {util.empty_icon()},
-		flags = hidden_entity_flags(),
-		selectable_in_game = false,
-		collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
-    animation_speed_coefficient = 32/2,
-    speed = 0.03125*2,
-		structure = {
-			direction_in = util.empty_sprite(),
-			direction_out = util.empty_sprite(),
-			back_patch = util.empty_sprite(),
-			front_patch = util.empty_sprite(),
-			direction_in_side_loading = util.empty_sprite(),
-			direction_out_side_loading = util.empty_sprite(),
-		},
-		belt_animation_set = data.raw["transport-belt"]["transport-belt"].belt_animation_set,
-	},
 }
 
 ---@param name string
@@ -155,36 +125,15 @@ local function add_placement(entity, placement_data)
 		-- Update entity
 		entity.collision_box = {{-0.4, -0.4}, {0.4, 0.4}}
 		entity.selection_box = {{-0.5, -0.5}, {0.5, 0.5}}
+		entity.selection_priority = 65
+		entity.selectable_in_game = true -- TODO: Remove the need for this by faking the UI :D
 		placement_position = PM.shift_direction(loader_position, input_direction, 1)
 
-		placement_data[#placement_data + 1] = {
-			entity_name = "pm-multi-energy-source-linked-belt",
-			position = loader_position,
-			direction = input_direction,
-			belt_type = "input",
-			is_linked_belt = true,
-		}
-		placement_data[#placement_data + 1] = {
-			entity_name = "pm-multi-energy-source-linked-belt",
-			position = PM.shift_direction(loader_position, output_direction, 1),
-			direction = input_direction,
-			belt_type = "output",
-			is_hidden_surface = true,
-			is_linked_belt = true,
-		}
 		placement_data[#placement_data + 1] = {
 			entity_name = "pm-multi-energy-source-loader",
 			position = loader_position,
 			direction = input_direction,
-			is_hidden_surface = true,
 			belt_type = "input"
-		}
-		placement_data[#placement_data + 1] = {
-			entity_name = "pm-multi-energy-source-proxy",
-			position = placement_position,
-			direction = defines.direction.north,
-			is_hidden_surface = true,
-			proxy_target = defines.inventory.fuel
 		}
 	end
 
@@ -283,8 +232,7 @@ local function multi_energy_source(proto)
 		collision_mask = collision_mask_util.get_mask(proto),
 		collision_box = proto.collision_box,
 		selection_box = proto.collision_box,
-		-- selectable_in_game = false,
-		selection_priority = 65,
+		selectable_in_game = false,
 	}
 	add_placement(offshore_pump, placement_info)
 	data:extend{offshore_pump}
@@ -309,9 +257,7 @@ local function multi_energy_source(proto)
 			energy_source = energy_sources[i],
 			collision_mask = collision_mask_util.get_mask(proto),
 			collision_box = proto.collision_box,
-			selection_box = proto.collision_box,
 			selectable_in_game = false,
-			selection_priority = 60,
 		}
 		add_placement(boiler, placement_info)
 		data:extend{boiler}

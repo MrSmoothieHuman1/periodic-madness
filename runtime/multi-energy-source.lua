@@ -5,16 +5,9 @@ handler.on_nth_tick = {}
 
 ---@class MultiEnergyEntity
 ---@field entities table<uint64,LuaEntity>
----@class MultiEnergyLoader
----@field data MultiEnergyEntity
----@field loader LuaEntity
----@field spill_position MapPosition
----@field spill_surface LuaSurface
 
 ---@class (partial) PeriodicStorage
----@field multi_energy_source_surface LuaSurface
 ---@field multi_energy_entities table<uint64, MultiEnergyEntity>
----@field multi_energy_loaders table<uint64, MultiEnergyLoader>
 storage = storage
 
 --MARK: Validation
@@ -128,8 +121,8 @@ for entity_name, placement_array in pairs(compound_map) do
 			placement_error("is_fluid needs to be a boolean")
 		elseif not true_or_nil[type(placement.is_linked_belt)] then
 			placement_error("is_linked_belt needs to be a boolean")
-		elseif not true_or_nil[type(placement.is_hidden_surface)] then
-			placement_error("is_hidden_surface needs to be a boolean")
+		-- elseif not true_or_nil[type(placement.is_hidden_surface)] then
+		-- 	placement_error("is_hidden_surface needs to be a boolean")
 		end
 
 		if placed_entity.type == "linked-belt" or placement.is_linked_belt then
@@ -211,12 +204,7 @@ function handler.events.pm_on_multi_energy_entity_created(event)
 	local proxy_inventory
 
 	for _, placement_info in pairs(placement_list) do
-		local cur_surface
-		if placement_info.is_hidden_surface then
-			cur_surface = storage.multi_energy_source_surface
-		else
-			cur_surface = surface
-		end
+		local cur_surface = surface
 
 		local cur_position = PM.add_vector(position, placement_info.position)
 		local cur_entity = cur_surface.create_entity({
@@ -259,75 +247,12 @@ function handler.events.pm_on_multi_energy_entity_created(event)
 			last_fluid_entity = cur_entity
 		end
 
-		if cur_entity.type == "loader-1x1" then
-			storage.multi_energy_loaders[reg_id] = {
-				data = data,
-				loader = cur_entity,
-				-- target = next_entity.loader_container,
-				spill_position = cur_position,
-				spill_surface = surface,
-			}
-		end
-
 		entities[reg_id] = cur_entity
 		storage.multi_energy_entities[reg_id] = data
 	end
 	---@cast last_fluid_entity -?
 
 	last_fluid_entity.add_fluid_box_linked_connection(2, entity, 1)
-end
-
---MARK: Belt spilling
-
----@param loader MultiEnergyLoader
----@param target LuaEntity
----@param line LuaTransportLine
----@return boolean did_spill
-local function attempt_spill(loader, target, line)
-	-- Can't spill an empty line
-	if #line == 0 then return false end
-	local item = line[1]
-	-- Can't spill if it'll already fill
-	if target.can_insert(item) then return false end
-	local inv = target.get_inventory(defines.inventory.proxy_main)
-	-- It should always be a proxy pointing at another entity. *Always*
-	if not inv then error("Proxy container had no inventory?") end
-	local empty_stacks = inv.count_empty_stacks(true, true)
-	-- If it's full, ignore it.
-	if empty_stacks == 0 then return false end
-
-	-- Finally, it's backed up on something.
-	loader.spill_surface.spill_item_stack{
-		position = loader.spill_position,
-		stack = item,
-		allow_belts = false,
-	}
-	line.remove_item(item)
-	return true
-end
-
-handler.on_nth_tick[30] = function()
-	for index, loader in pairs(storage.multi_energy_loaders) do
-		local loader_entity = loader.loader
-		if not loader_entity.valid then
-			storage.multi_energy_loaders[index] = nil
-			goto continue
-		end
-
-		local line_1 = loader_entity.get_transport_line(defines.transport_line.right_line)
-		local line_2 = loader_entity.get_transport_line(defines.transport_line.left_line)
-		local target = loader_entity.loader_container
-		-- This happens when placed on a 30th tick
-		if not target then goto continue end
-
-		local did_spill = attempt_spill(loader, target, line_1)
-									and attempt_spill(loader, target, line_2)
-		if did_spill then
-			-- TODO: Alert
-		end
-
-		::continue::
-	end
 end
 
 --MARK: Basic plumbing
@@ -338,38 +263,24 @@ function handler.events.on_object_destroyed(event)
 
 	for reg_id, entity in pairs(data.entities) do
 		storage.multi_energy_entities[reg_id] = nil
-		storage.multi_energy_loaders[reg_id] = nil
 		--FIXME: Don't void items
 		entity.destroy()
 	end
 end
 
----@return LuaSurface
-local function create_hidden_surface()
-	local surface = game.create_surface("pm-multi-energy-source-hidden-surface", {
-		default_enable_all_autoplace_controls = false,
-	})
-	surface.generate_with_lab_tiles = true
-	for _, force in pairs(game.forces) do
-		force.set_surface_hidden(surface, true)
-	end
-	return surface
-end
-
 local function setup_storage()
-	if not storage.multi_energy_source_surface or not storage.multi_energy_source_surface.valid then
-		storage.multi_energy_source_surface = create_hidden_surface()
+	---@diagnostic disable-next-line: undefined-field
+	if storage.multi_energy_source_surface and storage.multi_energy_source_surface.valid then
+		---@diagnostic disable-next-line: undefined-field
+		game.delete_surface(storage.multi_energy_source_surface)
 	end
 
 	storage.multi_energy_entities = storage.multi_energy_entities or {}
-	storage.multi_energy_loaders = storage.multi_energy_loaders or {}
+	---@diagnostic disable-next-line: inject-field
+	storage.multi_energy_loaders = nil
 end
 
 handler.on_init = setup_storage
 handler.on_configuration_changed = setup_storage
-
-function handler.events.on_force_created(event)
-	event.force.set_surface_hidden("pm-multi-energy-source-hidden-surface", true)
-end
 
 return handler
