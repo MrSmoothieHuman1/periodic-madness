@@ -351,6 +351,7 @@ local accelerator = {
 		---@type data.CompoundBurnerEnergySource
 		{
 			type = "burner",
+            burner_usage = "pm-particle-accelerator-maintenance",
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
 			--TODO: Get a custom fuel category and burner usage,

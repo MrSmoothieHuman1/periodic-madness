@@ -215,8 +215,8 @@ data:extend({
   {
     type = "recipe",
     name = "pm-pure-bastnasite-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/bastnasite-seperation.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/pure-bastnasite-separation.png",
     enabled = false,
     energy_required = 6,
     categories = {"pm-crushing"},

@@ -136,10 +136,6 @@ require("prototype.elements.070-ytterbium")
 require("prototype.elements.071-lutetium")
 require("prototype.elements.001-hydrogen")
 
-require("prototype.damagetypes")
-
-require("prototype.collision-layer")
-
 require("prototype.entity")
 require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files
 require("prototype.entity.heat-pipes")
@@ -164,6 +160,10 @@ require("prototype.equipment")
 require("prototype.equipment-grid")
 require("prototype.virtual-signals")
 require("prototype.remnants")
+require("prototype.burnerusage")
+require("prototype.damagetypes")
+require("prototype.collision-layer")
+
 
 require("compatibility.icon-badges")
 --require("compatibility.DLC.quality")
