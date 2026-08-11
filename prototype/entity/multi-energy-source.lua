@@ -341,13 +341,15 @@ local accelerator = {
 		---@type data.CompoundBurnerEnergySource
 		{
 			type = "burner",
-            burner_usage = "pm-particle-accelerator-maintenance",
+			--TODO: Get a custom fuel category and burner usage,
+			burner_usage = "pm-particle-accelerator-maintenance",
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
-			--TODO: Get a custom fuel category and burner usage,
+			initial_fuel = nil, -- TODO: Fill in an initial item
 			loader_position = {14.5, 0},
 			loader_direction = defines.direction.east,
 			loader_belt = "pm-high-density-transport-belt",
+			loader_structure = nil, -- TODO: Integrate the loader into the entity
 			usage_ratio = 1,
 		},
 		---@type data.CompoundElectricEnergySource
