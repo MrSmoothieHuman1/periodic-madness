@@ -58,7 +58,17 @@ data:extend({
     type = "recipe",
     name = "pm-indium-electrolysis",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/indium-electrolysis.png",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/indium-chunks.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+        scale = 0.38,
+      },
+    },
     categories = {"pm-electrolysis"},
     subgroup = "pm-indium-ptm",
     order = "b",
@@ -68,7 +78,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-indium-chunks", 12),
-      PM.ingredient("pm-stainless-steel-alloy", 4)
+      PM.ingredient("pm-stainless-steel-alloy", 3)
     },
     results =
     {

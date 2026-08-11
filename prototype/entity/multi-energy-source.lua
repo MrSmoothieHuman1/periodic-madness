@@ -331,7 +331,7 @@ local accelerator = {
 	crafting_categories = { "crafting" },
 	module_slots = 6,
 	allowed_effects = PM.all_effects(),
-	icons_positioning = 
+	icons_positioning =
 	{
 		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
 	},
@@ -363,7 +363,7 @@ local accelerator = {
 	graphics_set =
 	{
 		status_colors = pm_diode_status_colors(),
-		animation = 
+		animation =
 		{
 			layers =
 			{

@@ -53,6 +53,9 @@ Date: 2025-12-19
     - Moved strontium glass/molten strontium glass into the glass subgroup.
     - Gave the crushers 1 and 2 a complete remodel.
     - Move LDS and HDS into a combined subgroup.
+    - Updated indium electrolysis/thallium's recipe icon.
+    - Lowered the amount of stainless needed for indium electrolysis from 4 > 3.
+    - Lowered the amount of stainless needed for thallium from 6 > 5.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

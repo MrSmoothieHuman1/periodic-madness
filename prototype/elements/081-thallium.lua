@@ -105,8 +105,17 @@ data:extend({
   {
     type = "recipe",
     name = "pm-thallium-sulfate-electrolysis",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/thallium-electrolysis.png",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/thallium-sulfate.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/stainless-steel-plate.png",
+        scale = 0.38,
+      },
+    },
     enabled = false,
     energy_required = 3,
     categories = {"pm-electrolysis"},
@@ -115,7 +124,7 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-thallium-sulfate", 4),
-      PM.ingredient("pm-stainless-steel-alloy", 6)
+      PM.ingredient("pm-stainless-steel-alloy", 5)
     },
     results =
     {
