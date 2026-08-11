@@ -14,6 +14,8 @@ local collision_mask_util = require("collision-mask-util")
 ---@class PMCompoundEntityPlacementData
 ---@field [data.EntityName] PlacementData[]
 
+--MARK: Initial Prototype Stuff
+
 ---@type PMCompoundEntityPlacementData
 local compount_placement_data = {}
 	
@@ -60,6 +62,8 @@ data:extend{
 	},
 	fake_energy_fluid,
 }
+
+--MARK: Helper functions
 
 ---@param name string
 ---@param default_temperature float
@@ -117,6 +121,8 @@ local function make_fluidbox(filter, direction)
 		}}
 	}
 end
+
+--MARK: Placement
 
 ---@param entity SingleEnergySourceEntity
 ---@param placement_data PlacementData[]
@@ -217,6 +223,8 @@ local function multi_energy_source(proto)
 		error("You need to provde two or more energy sources if you want it to be MultiEnergySourced. Provided:\n"..serpent.block(energy_sources))
 	end
 
+	-- MARK: Energy use
+
 	local total_energy_use = util.parse_energy(proto.energy_usage)
 	local ratio_total = 0.0
 	for i = 1, #energy_sources do
@@ -242,6 +250,8 @@ local function multi_energy_source(proto)
 	compount_placement_data[proto.name] = placement_info
 	local fluid = make_initial_fluid(proto.name.."-initial-energy-fluid", target_temperature[1])
 
+	--MARK: Entity generation
+
 	---@type data.OffshorePumpPrototype
 	local offshore_pump = {
 		type = "offshore-pump",
@@ -263,7 +273,6 @@ local function multi_energy_source(proto)
 	}
 	add_placement(offshore_pump, placement_info)
 	data:extend{offshore_pump}
-
 
 
 	for i = 2, #energy_sources do
@@ -295,6 +304,7 @@ local function multi_energy_source(proto)
 	return proto
 end
 
+--MARK: Definitions
 
 ---@type MultiEnergySourced<data.AssemblingMachinePrototype>
 local accelerator = {
