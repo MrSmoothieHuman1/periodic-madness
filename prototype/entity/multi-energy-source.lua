@@ -23,7 +23,7 @@ local compount_placement_data = {}
 local fake_energy_fluid = {
 	type = "fluid",
 	name = "pm-fake-compound-energy-fluid",
-	icons = {util.empty_icon()},
+	icons = {util.empty_icon()}, -- FIXME: Get a proper icon (and colors)
 	base_color = {0.5, 0.5, 0.5},
 	flow_color = {0.5, 0.5, 0.5},
 	default_temperature = 1,
@@ -71,6 +71,7 @@ data:extend{
 local function make_initial_fluid(name, default_temperature)
 	local new_fluid = util.copy(fake_energy_fluid)
 	new_fluid.name = name
+	new_fluid.localised_name = {"fluid-name.pm-initial-fake-compound-energy-fluid"}
 	new_fluid.default_temperature = default_temperature
 	data:extend{new_fluid}
 	return name
@@ -87,7 +88,10 @@ local function make_loader(name, base_belt_name, structure)
 		{
 			type = "loader-1x1",
 			name = name,
-			icons = {util.empty_icon()},
+			localised_name = {"entity-name.pm-compound-entity-loader", PM.locale_of(base_belt)},
+			icon = base_belt.icon,
+			icon_size = base_belt.icon_size,
+			icons = base_belt.icons,
 			hidden = true,
 			flags = hidden_entity_flags(),
 			selectable_in_game = false,
@@ -256,6 +260,7 @@ local function multi_energy_source(proto)
 	local offshore_pump = {
 		type = "offshore-pump",
 		name = proto.name.."-energy-source-1",
+		localised_name = {"entity-name.pm-multi-energy-source", PM.locale_of(proto), "1"},
 		icon = proto.icon,
 		icon_size = proto.icon_size,
 		icons = proto.icons,
@@ -280,6 +285,7 @@ local function multi_energy_source(proto)
 		local boiler = {
 			type = "boiler",
 			name = proto.name.."-energy-source-"..i,
+			localised_name = {"entity-name.pm-multi-energy-source", PM.locale_of(proto), tostring(i)},
 			icon = proto.icon,
 			icon_size = proto.icon_size,
 			icons = proto.icons,
