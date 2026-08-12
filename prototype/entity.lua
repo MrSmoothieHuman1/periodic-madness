@@ -9693,7 +9693,7 @@ fluid_boxes =
     {
         {area = {{-1.4, -1.4}, {1.4, 1.4}},  required_tiles = {layers = {water_tile = true}},  colliding_tiles = {layers = {ground_tile = true}}, remove_on_collision = true},
     },
-    production = "250kW",
+    production = "150kW",
     performance_at_day = 1,
     performance_at_night = 1,
     energy_source =
@@ -10780,21 +10780,19 @@ fluid_boxes =
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 500,
+        volume = 250,
         pipe_connections =
         {
-          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
-          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}}
+          {flow_direction="output", direction = defines.direction.east --[[@as int]], position = {1.5, 0.5}},
         },
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 500,
+        volume = 250,
         pipe_connections =
         {
-          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}},
-          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}},
+          {flow_direction="input", direction = defines.direction.west --[[@as int]], position = {-1.5, -0.5}},
         },
       },
     },

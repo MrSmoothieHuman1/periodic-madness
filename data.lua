@@ -163,6 +163,7 @@ require("prototype.remnants")
 require("prototype.burnerusage")
 require("prototype.damagetypes")
 require("prototype.collision-layer")
+require("prototype.surfaceproperty")
 
 
 require("compatibility.icon-badges")
