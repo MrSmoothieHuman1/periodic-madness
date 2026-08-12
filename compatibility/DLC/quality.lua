@@ -7,6 +7,11 @@ if mods["quality"] then
     data.raw["module"]["quality-module-2"].icon = "__periodic-madness__/graphics/icons/modules/quality-module-2.png"
     data.raw["module"]["quality-module-3"].icon_size = 64
     data.raw["module"]["quality-module-3"].icon = "__periodic-madness__/graphics/icons/modules/quality-module-3.png"
+    data.raw["module"]["quality-module"].effect = 
+    {
+        speed = -0.05,
+        quality = 0.03
+    }
     data.raw["technology"]["quality-module"].icon_size = 256
     data.raw["technology"]["quality-module"].icon = "__periodic-madness__/graphics/icons/technology/quality-module-1-tech.png"
     data.raw["technology"]["quality-module-2"].icon_size = 256
@@ -14,9 +19,9 @@ if mods["quality"] then
     data.raw["technology"]["quality-module-3"].icon_size = 256
     data.raw["technology"]["quality-module-3"].icon = "__periodic-madness__/graphics/technology/quality-module-3-tech.png"
 
-    table.insert(data.raw["module"]["pm-speed-module-4"].effect, {quality = -0.2})
-    table.insert(data.raw["module"]["pm-speed-module-5"].effect, {quality = -0.2})
-    table.insert(data.raw["module"]["pm-speed-module-6"].effect, {quality = -0.25})
+    table.insert(data.raw["module"]["pm-speed-module-4"].effect, {quality = -0.02})
+    table.insert(data.raw["module"]["pm-speed-module-5"].effect, {quality = -0.02})
+    table.insert(data.raw["module"]["pm-speed-module-6"].effect, {quality = -0.025})
 
     table.insert(data.raw["technology"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-aluminium-gallium-arsenide"})
     table.insert(data.raw["technology"]["modules"].effects, {type = "unlock_recipe", recipe = "pm-module-quality-light"})
