@@ -6481,5 +6481,29 @@ data:extend({
     {
         PM.product("pm-travelling-wave-erbium-amplifier-tube"):amount(1):done()
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-biomechanical-cortex",
+    enabled = false,
+    energy_required = 60,
+    categories = {"crafting-with-fluid"},
+    ingredients = 
+    {
+        PM.ingredient("pm-advanced-processing-unit", 3),
+        PM.ingredient("pm-agility-bio-module", 1),
+        PM.ingredient("pm-strength-bio-module", 1),
+        PM.ingredient("pm-health-bio-module", 1),
+        PM.ingredient("pm-anti-bacterial-tubing", 25),
+        PM.ingredient("pm-polytetrafluoroethylene", 8),
+        PM.ingredient("pm-polymethyl-methacrylate", 6),
+        PM.ingredient("pm-lightweight-panelling", 20),
+        PM.ingredient("pm-light-lubricant", 15, "fluid"),
+        PM.ingredient("pm-agar-solution", 60, "fluid"),
+    },
+    results = 
+    {
+        PM.product("pm-biomechanical-cortex"):amount(1):done()
+    }
   }
 } --[[@as data.RecipePrototype[] ]])

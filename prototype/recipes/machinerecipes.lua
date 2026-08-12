@@ -1895,7 +1895,7 @@ data:extend({
     categories = {"crafting-with-fluid"},
     ingredients =
     {
-        PM.ingredient("pm-cooling-plating", 24),
+        PM.ingredient("pm-cooling-framing", 20),
         PM.ingredient("pm-light-coolant", 7.5, "fluid"),
         PM.ingredient("pm-light-lubricant", 5, "fluid"),
         PM.ingredient("pm-corrosion-resistant-tubing", 18),

@@ -2180,6 +2180,16 @@ data:extend({
     subgroup = "pm-intermediates",
     stack_size = 25,
   },
+  {
+    type = "item",
+    name = "pm-biomechanical-cortex",
+    icon_size = 64,
+    fuel_value = "50MJ",
+    fuel_category = "pm-betterer-lab",
+    icon = "__periodic-madness__/graphics/icons/TWEAT.png",
+    subgroup = "pm-intermediates",
+    stack_size = 25,
+  },
 
   {
     type = "item",
@@ -2375,7 +2385,15 @@ data:extend({
   {
     type = "fuel-category",
     name = "pm-uranium-233"
-  }
+  },
+  {
+    type = "fuel-category",
+    name = "pm-betterer-lab"
+  },
+  {
+    type = "fuel-category",
+    name = "pm-particle-accelerator-maintnance"
+  },
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"
 data.raw["item"]["iron-gear-wheel"].order = "a"
