@@ -2186,9 +2186,9 @@ data:extend({
     icon_size = 64,
     fuel_value = "50MJ",
     fuel_category = "pm-betterer-lab",
-    icon = "__periodic-madness__/graphics/icons/TWEAT.png",
+    icon = "__periodic-madness__/graphics/icons/biomechanical-cortex.png",
     subgroup = "pm-intermediates",
-    stack_size = 25,
+    stack_size = 10,
   },
 
   {
