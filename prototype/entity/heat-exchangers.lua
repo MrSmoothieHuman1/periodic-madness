@@ -1,5 +1,7 @@
-data:extend({
+local hit_effects = require("__base__.prototypes.entity.hit-effects")
+local sounds = require("__base__.prototypes.entity.sounds")
 
+data:extend({
   {
     type = "boiler",
     name = "pm-heat-exchanger-2",
@@ -12,7 +14,8 @@ data:extend({
     dying_explosion = "heat-exchanger-explosion",
     mode = "output-to-separate-pipe",
     fast_replaceable_group = "pm-heat-exchangers",
-    custom_tooltip_fields = 
+    impact_category = "metal",
+    custom_tooltip_fields =
     {
       {
         name = {"pm-tooltips.max-temperature"},
@@ -27,23 +30,25 @@ data:extend({
       },
       {
         type = "explosion",
-        percent = 60
+        percent = 30
       },
       {
         type = "impact",
-        percent = 40
+        percent = 30
       }
     },
-    collision_box = { { -1.29, -0.79 }, { 1.29, 0.79 } },
-    selection_box = { { -1.5, -1 }, { 1.5, 1 } },
+    collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
+    selection_box = {{-1.5, -1}, {1.5, 1}},
+    damaged_trigger_effect = hit_effects.entity(),
+    target_temperature = 750,
     fluid_box =
     {
       volume = 200,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "input-output", direction = defines.direction.west--[[@as int]], position = {-1, 0.5}},
-        {flow_direction = "input-output", direction = defines.direction.east--[[@as int]], position = {1, 0.5}}
+        {flow_direction = "input-output", direction = defines.direction.west, position = {-1, 0.5}},
+        {flow_direction = "input-output", direction = defines.direction.east, position = {1, 0.5}}
       },
       production_type = "input",
       filter = "water"
@@ -54,12 +59,11 @@ data:extend({
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
-        {flow_direction = "output", direction = defines.direction.north--[[@as int]], position = {0, -0.5}}
+        {flow_direction = "output", direction = defines.direction.north, position = {0, -0.5}}
       },
       production_type = "output",
       filter = "steam"
     },
-    target_temperature = 750,
     energy_consumption = "15MW",
     energy_source =
     {
@@ -68,35 +72,39 @@ data:extend({
       specific_heat = "1MJ",
       max_transfer = "2GW",
       min_working_temperature = 750,
-      minimum_glow_temperature = 600,
+      minimum_glow_temperature = 500,
       connections =
       {
         {
-          position = { 0, 0.5 },
-          direction = defines.direction.south--[[@as int]] --[[@as int]]
+          position = {0, 0.5},
+          direction = defines.direction.south
         }
       },
       pipe_covers =
-          make_4way_animation_from_spritesheet(
-            {
-              filename = "__base__/graphics/entity/heat-exchanger/heatex-endings.png",
-              width = 64,
-              height = 64,
-              direction_count = 4,
-              scale = 0.5
-            })--[[@as data.Sprite4Way]],
+        make_4way_animation_from_spritesheet(
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-endings.png",
+          width = 64,
+          height = 64,
+          direction_count = 4,
+          scale = 0.5
+        }),
       heat_pipe_covers =
-          make_4way_animation_from_spritesheet(
-            apply_heat_pipe_glow {
-              filename = "__base__/graphics/entity/heat-exchanger/heatex-endings-heated.png",
-              width = 64,
-              height = 64,
-              direction_count = 4,
-              scale = 0.5
-            })--[[@as data.Sprite4Way]],
+        make_4way_animation_from_spritesheet(
+        apply_heat_pipe_glow{
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-endings-heated.png",
+          width = 64,
+          height = 64,
+          direction_count = 4,
+          scale = 0.5
+        }),
       heat_picture =
       {
-        north = apply_heat_pipe_glow
+        north =
+        {
+          layers =
+          {
+            apply_heat_pipe_glow
             {
               filename = "__base__/graphics/entity/heat-exchanger/heatex-N-heated.png",
               priority = "extra-high",
@@ -105,7 +113,21 @@ data:extend({
               shift = util.by_pixel(-0.5, 8.5),
               scale = 0.5
             },
-        east = apply_heat_pipe_glow
+            apply_heat_pipe_glow(util.sprite_load( "__base__/graphics/entity/heat-exchanger/heatex-N-glow",
+              {
+                priority = "extra-high",
+                blend_mode = "additive",
+                scale = 0.5
+              }
+            ))
+          }
+
+        },
+        east =
+        {
+          layers =
+          {
+            apply_heat_pipe_glow
             {
               filename = "__base__/graphics/entity/heat-exchanger/heatex-E-heated.png",
               priority = "extra-high",
@@ -114,7 +136,20 @@ data:extend({
               shift = util.by_pixel(-21, -13),
               scale = 0.5
             },
-        south = apply_heat_pipe_glow
+            apply_heat_pipe_glow(util.sprite_load( "__base__/graphics/entity/heat-exchanger/heatex-E-glow",
+              {
+                priority = "extra-high",
+                blend_mode = "additive",
+                scale = 0.5
+              }
+            ))
+          }
+        },
+        south =
+        {
+          layers =
+          {
+            apply_heat_pipe_glow
             {
               filename = "__base__/graphics/entity/heat-exchanger/heatex-S-heated.png",
               priority = "extra-high",
@@ -123,7 +158,20 @@ data:extend({
               shift = util.by_pixel(-1, -30),
               scale = 0.5
             },
-        west = apply_heat_pipe_glow
+            apply_heat_pipe_glow(util.sprite_load( "__base__/graphics/entity/heat-exchanger/heatex-S-glow",
+              {
+                priority = "extra-high",
+                blend_mode = "additive",
+                scale = 0.5
+              }
+            ))
+          }
+        },
+        west =
+        {
+          layers =
+          {
+            apply_heat_pipe_glow
             {
               filename = "__base__/graphics/entity/heat-exchanger/heatex-W-heated.png",
               priority = "extra-high",
@@ -131,21 +179,35 @@ data:extend({
               height = 76,
               shift = util.by_pixel(23, -13),
               scale = 0.5
-            }
+            },
+             apply_heat_pipe_glow(util.sprite_load( "__base__/graphics/entity/heat-exchanger/heatex-W-glow",
+              {
+                priority = "extra-high",
+                blend_mode = "additive",
+                scale = 0.5
+              }
+            ))
+          }
+        }
       }
     },
+    circuit_connector = circuit_connector_definitions["boiler"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
     working_sound =
     {
       sound =
       {
         filename = "__base__/sound/heat-exchanger.ogg",
-        volume = 0.65
+        volume = 0.65,
+        modifiers = volume_multiplier("main-menu", 0.7),
+        audible_distance_modifier = 0.5,
       },
-      --max_sounds_per_type = 3,
-      audible_distance_modifier = 0.5,
       fade_in_ticks = 4,
       fade_out_ticks = 20
     },
+    open_sound = sounds.steam_open,
+    close_sound = sounds.steam_close,
+
     pictures =
     {
       north =
@@ -154,25 +216,28 @@ data:extend({
         {
           layers =
           {
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-N-idle",
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-N-idle.png",
               priority = "extra-high",
-              width = 269,
-              height = 221,
-              shift = util.by_pixel(-1.25, 5.25),
               scale = 0.5
-            },
+            }),
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-N-shadow",
             {
-              filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
               priority = "extra-high",
-              width = 274,
-              height = 164,
               scale = 0.5,
-              shift = util.by_pixel(20.5, 9),
               draw_as_shadow = true
-            }
+            })
           }
-        }
+        },
+       fire = util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-N-fluid",
+        {
+          draw_as_glow = true,
+          priority = "extra-high",
+          frame_count = 32,
+          animation_speed = 0.5,
+          blend_mode = "additive",
+          scale = 0.5,
+        })
       },
       east =
       {
@@ -180,25 +245,28 @@ data:extend({
         {
           layers =
           {
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-E-idle",
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-E-idle.png",
               priority = "extra-high",
-              width = 211,
-              height = 301,
-              shift = util.by_pixel(-1.75, 1.25),
               scale = 0.5
-            },
+            }),
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-E-shadow",
             {
-              filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
               priority = "extra-high",
-              width = 184,
-              height = 194,
               scale = 0.5,
-              shift = util.by_pixel(30, 9.5),
               draw_as_shadow = true
-            }
+            })
           }
-        }
+        },
+        fire = util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-E-fluid",
+        {
+          draw_as_glow = true,
+          priority = "extra-high",
+          frame_count = 32,
+          animation_speed = 0.5,
+          blend_mode = "additive",
+          scale = 0.5,
+        })
       },
       south =
       {
@@ -206,25 +274,28 @@ data:extend({
         {
           layers =
           {
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-S-idle",
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-S-idle.png",
               priority = "extra-high",
-              width = 260,
-              height = 201,
-              shift = util.by_pixel(4, 10.75),
               scale = 0.5
-            },
+            }),
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-S-shadow",
             {
-              filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
               priority = "extra-high",
-              width = 311,
-              height = 131,
               scale = 0.5,
-              shift = util.by_pixel(29.75, 15.75),
               draw_as_shadow = true
-            }
+            })
           }
-        }
+        },
+        fire = util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-S-fluid",
+          {
+            draw_as_glow = true,
+            priority = "extra-high",
+            frame_count = 32,
+            animation_speed = 0.5,
+            blend_mode = "additive",
+            scale = 0.5
+          })
       },
       west =
       {
@@ -232,32 +303,35 @@ data:extend({
         {
           layers =
           {
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-W-idle",
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/heat-exchanger-2/heatex-W-idle.png",
               priority = "extra-high",
-              width = 196,
-              height = 273,
-              shift = util.by_pixel(1.5, 7.75),
               scale = 0.5
-            },
+            }),
+            util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-W-shadow",
             {
-              filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
               priority = "extra-high",
-              width = 206,
-              height = 218,
               scale = 0.5,
-              shift = util.by_pixel(19.5, 6.5),
               draw_as_shadow = true
-            }
+            })
           }
-        }
+        },
+        fire = util.sprite_load("__base__/graphics/entity/heat-exchanger/heatex-W-fluid",
+          {
+            draw_as_glow = true,
+            priority = "extra-high",
+            frame_count = 32,
+            animation_speed = 0.5,
+            blend_mode = "additive",
+            scale = 0.5
+          })
       },
     },
-    fire = {},
-    fire_glow = {},
+    fire_flicker_enabled = true,
+    fire_glow_flicker_enabled = true,
     burning_cooldown = 20,
     water_reflection = boiler_reflection()
-  }--[[@as data.BoilerPrototype]],
+  },
 })
 data.raw["boiler"]["heat-exchanger"].fast_replaceable_group = "pm-heat-exchangers"
 data.raw["boiler"]["heat-exchanger"].next_upgrade = "pm-heat-exchanger-2"
