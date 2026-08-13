@@ -866,6 +866,22 @@ data.raw["technology"]["space-science-pack"].prerequisites = {"pm-satellite"}
 data.raw["technology"]["space-science-pack"].icon = "__periodic-madness__/graphics/technology/space-research-data.png"
 data.raw["technology"]["uranium-mining"].hidden = true
 data.raw["technology"]["spidertron"].prerequisites = {"pm-thorium-processing"}
+data.raw["technology"]["spidertron"].unit.count = 1500
+data.raw["technology"]["spidertron"].unit.time = 240
+data.raw["technology"]["spidertron"].unit.ingredients = 
+{
+    {"automation-science-pack", 2},
+    {"logistic-science-pack", 2},
+    {"pm-advanced-advanced-transition-metal-science-pack", 2},
+    {"chemical-science-pack", 1},
+    {"pm-post-transition-metal-science-pack", 1},
+    {"pm-alkali-metal-science-pack", 1},
+    {"pm-metalloid-science-pack", 1},
+    {"pm-alkaline-earth-metal-science-pack", 1},
+    {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+    {"pm-noble-gas-science-pack", 1},
+    {"pm-lanthanide-science-pack", 1}
+}
 
 data.raw["technology"]["speed-module"].icon_size = 256
 data.raw["technology"]["speed-module"].icon = "__periodic-madness__/graphics/technology/speed-module-1-tech.png"
