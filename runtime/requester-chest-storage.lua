@@ -200,7 +200,7 @@ end
 handler.events[defines.events.on_research_finished] = function (event)
     local increase = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if increase == 0 then return end
-    if not PM.validate.integer(increase) then
+    if not PM.validate.int(increase) then
         error("Requester chest bonus is a non-integer")
     end
     update_overrides(event.research.force.index, increase, true)
@@ -208,7 +208,7 @@ end
 handler.events[defines.events.on_research_reversed] = function (event)
     local decrease = PM.get_custom_modification("pm-requester-chest-inventory-size", event.research)
     if decrease == 0 then return end
-    if not PM.validate.integer(decrease) then
+    if not PM.validate.int(decrease) then
         error("Requester chest bonus is a non-integer")
     end
     update_overrides(event.research.force.index, -decrease, true)
