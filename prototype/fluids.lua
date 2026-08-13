@@ -2271,3 +2271,5 @@ data.raw["fluid"]["crude-oil"].subgroup = "pm-oil-fluid"
 data.raw["fluid"]["crude-oil"].order = "a"
 data.raw["fluid"]["lubricant"].subgroup = "pm-lubricant"
 data.raw["fluid"]["lubricant"].order = "b"
+
+data.raw["fluid"]["steam"].max_temperature = 1000

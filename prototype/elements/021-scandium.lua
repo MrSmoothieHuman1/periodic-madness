@@ -35,6 +35,7 @@ data:extend({
         {
           {filename = "__periodic-madness__/graphics/icons/ores/scandium.png", size = 64, scale = 0.5},
           {filename = "__periodic-madness__/graphics/icons/ores/scandium-2.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-3.png", size = 64, scale = 0.5},
         },
         subgroup = "pm-scandium-tm",
         order = "d",

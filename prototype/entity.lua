@@ -4087,7 +4087,7 @@ data:extend({
         pipe_picture = asm2_pipe_pictures,
         pipe_covers = pipecoverspictures(),
         volume = 500,
-        pipe_connections = 
+        pipe_connections =
         {
           { flow_direction = "input-output", direction = defines.direction.south, position = { 0, 2 }}, --correct
           { flow_direction = "input-output", direction = defines.direction.north, position = { 0, -2 }} --correct
