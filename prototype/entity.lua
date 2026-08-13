@@ -40,24 +40,6 @@ local pm_lab_inputs =
   "space-science-pack",
   "pm-experimental-research-data"
 }
-local pm_advanced_lab_inputs =
-{
-  "automation-science-pack",
-  "logistic-science-pack",
-  "pm-advanced-advanced-transition-metal-science-pack",
-  "chemical-science-pack",
-  "pm-post-transition-metal-science-pack",
-  "pm-alkali-metal-science-pack",
-  "pm-metalloid-science-pack",
-  "pm-alkaline-earth-metal-science-pack",
-  "pm-advanced-advanced-advanced-transition-metal-science-pack",
-  "pm-noble-gas-science-pack",
-  "pm-lanthanide-science-pack",
-  "production-science-pack",
-  "utility-science-pack",
-  "space-science-pack",
-  "pm-experimental-research-data"
-}
 
 local heated_pipes_tint = {0.5, 0.4, 0.3, 0.5}
 local heat_glow_tint = {1, 1, 1, 1}
@@ -10649,7 +10631,7 @@ fluid_boxes =
   },
 },
 }--[[@as data.AssemblingMachinePrototype]],
-  {
+{
     type = "lab",
     name = "pm-betterer-lab",
     icon_size = 128,

@@ -15,6 +15,24 @@ local collision_mask_util = require("collision-mask-util")
 ---@field [data.EntityName] PlacementData[]
 
 --MARK: Initial Prototype Stuff
+local pm_advanced_lab_inputs =
+{
+  "automation-science-pack",
+  "logistic-science-pack",
+  "pm-advanced-advanced-transition-metal-science-pack",
+  "chemical-science-pack",
+  "pm-post-transition-metal-science-pack",
+  "pm-alkali-metal-science-pack",
+  "pm-metalloid-science-pack",
+  "pm-alkaline-earth-metal-science-pack",
+  "pm-advanced-advanced-advanced-transition-metal-science-pack",
+  "pm-noble-gas-science-pack",
+  "pm-lanthanide-science-pack",
+  "production-science-pack",
+  "utility-science-pack",
+  "space-science-pack",
+  "pm-experimental-research-data"
+}
 
 ---@type PMCompoundEntityPlacementData
 local compount_placement_data = {}
@@ -378,7 +396,95 @@ local accelerator = {
 	},
 }
 
+---@type MultiEnergySourced<data.LabPrototype>
+local betterer_lab =
+{
+    type = "lab",
+    name = "pm-betterer-lab",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/icons/buildings/science-center.png",
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 0.75, result = "pm-science-center" },
+    collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
+    selection_box = { { -3, -3 }, { 3, 3 } },
+    module_slots = 4,
+    energy_source =
+    {
+		---@type data.CompoundBurnerEnergySource
+		{
+			type = "burner",
+			fuel_categories = {"pm-betterer-lab"},
+			burner_usage = "pm-betterer-lab",
+			fuel_inventory_size = 1,
+			initial_fuel_percent = 1,
+			initial_fuel = nil,
+			loader_position = {-3, 0},
+			loader_direction = defines.direction.west,
+			loader_belt = "pm-high-density-transport-belt",
+			loader_structure = nil, -- TODO: Integrate the loader into the entity
+			usage_ratio = 1,
+		},
+		---@type data.CompoundElectricEnergySource
+        {
+          type = "electric",
+          usage_priority = "secondary-input",
+          usage_ratio = 5
+        },
+    },
+    energy_usage = "1MW",
+    researching_speed = 2,
+    allowed_module_categories = {"speed", "productivity", "efficiency"},
+    inputs = pm_advanced_lab_inputs,
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.lab_modules, shift = {0, 1}},
+      {inventory_index = defines.inventory.lab_input, shift = {0, 0.0}, max_icons_per_row = 6, separation_multiplier = 0.9}
+    },
+    on_animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
+          width = 384,
+          height = 416,
+          animation_speed = 0.2,
+          scale = 0.5,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
+          width = 320,
+          height = 320,
+          draw_as_shadow = true,
+          shift = util.by_pixel(10, 0),
+          scale = 0.625,
+        },
+      }
+    },
+    off_animation =
+    {
+      layers =
+      {
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
+          width = 384,
+          height = 416,
+          scale = 0.5,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
+          width = 320,
+          height = 320,
+          shift = util.by_pixel(10, 0),
+          draw_as_shadow = true,
+          scale = 0.5,
+        }
+      }
+    }
+  }
+
 
 data:extend{
 	multi_energy_source(accelerator), -- I don't know how to type a table literal parameter for this function call.
+    multi_energy_source(betterer_lab)
 }
