@@ -7,7 +7,7 @@ if mods["quality"] then
     data.raw["module"]["quality-module-2"].icon = "__periodic-madness__/graphics/icons/modules/quality-module-2.png"
     data.raw["module"]["quality-module-3"].icon_size = 64
     data.raw["module"]["quality-module-3"].icon = "__periodic-madness__/graphics/icons/modules/quality-module-3.png"
-    data.raw["module"]["quality-module"].effect = 
+    data.raw["module"]["quality-module"].effect =
     {
         speed = -0.05,
         quality = 0.03
@@ -50,9 +50,10 @@ if mods["quality"] then
 
     table.insert(data.raw["technology"]["pm-advanced-modules"].prerequisites, "quality-module-3")
 
-    table.insert(data.raw["module"]["pm-speed-module-4"].effect, {quality = -0.02})
-    table.insert(data.raw["module"]["pm-speed-module-5"].effect, {quality = -0.02})
-    table.insert(data.raw["module"]["pm-speed-module-6"].effect, {quality = -0.025})
+    table.insert(data.raw["module"]["pm-speed-module-4"].effect, {quality = -0.025})
+    table.insert(data.raw["module"]["pm-speed-module-5"].effect, {quality = -0.025})
+    table.insert(data.raw["module"]["pm-speed-module-6"].effect, {quality = -0.03})
+    table.insert(data.raw["module"]["pm-speed-beamcon-reciever"].effect, {quality = -0.25})
 
     table.insert(data.raw["technology"]["modules"].effects, {type = "unlock-recipe", recipe = "pm-aluminium-gallium-arsenide"})
     table.insert(data.raw["technology"]["modules"].effects, {type = "unlock-recipe", recipe = "pm-module-quality-light"})

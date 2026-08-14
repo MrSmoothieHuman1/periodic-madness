@@ -51,17 +51,103 @@ Date: 2025-12-19
     - Lowered amount of arsenic from cobaltite from 3-6 to 2-5.
     - Made all processing units visually distinct from circuits.
     - Moved strontium glass/molten strontium glass into the glass subgroup.
-    - Gave the crushers 1 and 2 a complete remodel.
     - Move LDS and HDS into a combined subgroup.
-    - Updated indium electrolysis/thallium's recipe icon.
-    - Lowered the amount of stainless needed for indium electrolysis from 4 > 3.
-    - Lowered the amount of stainless needed for thallium from 6 > 5.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
     - Fixed ammonium chloride seperation icon being old and weird-looking.
     - Fixed research productivity 5 depending on level 3.
     - Fixed ordering of mixing tanks and washing plants in their own subgroup.
+---------------------------------------------------------------------------------------------------
+Version: 0.8.015
+Date: 2026-08-14
+  The pity update for 0.9 taking 8 FUCKING MONTHS AUGHHHHHH Update:
+
+  Changes:
+    - Updated the crusher 1 and 2's design and icons. This was a 0.9 thing, but 8 months with no major update make dev a dull boy (questioning)
+
+  Fixes:
+    - Updated indium electrolysis/thallium's recipe icon.
+    - Lowered the amount of stainless needed for indium electrolysis from 4 > 3.
+    - Lowered the amount of stainless needed for thallium from 6 > 5.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.014
+Date: 2026-03-07
+  The god i'd so like 0.9 to be done right now Update:
+
+  Changes:
+    - Lowered the amount of aluminium needed for silicon (and by extension, purple boards).
+
+  Fixes:
+    - Fixed selenium plate not accepted productivity.
+    - Fixed 'andoe' mud locale.
+    - Fixed logistics 5 not prerequisiting logistics 4.
+    - Gave the voiding group a locale.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.013
+Date: 2026-03-07
+  The look man i was rushing to college and SOMEONE wanted an update Update:
+
+  Changes:
+    - Reverted potassium output change. I did think about it, and wether the change would work, but i trusted the intuition of other people. never again.
+    - Removed the outdated rubber/resin recipe icons.
+    - Removed outdated circuit board mold recipe icon.
+
+  Fixes:
+    - Fixed plastic metalloid science again.
+    - Fixed empty fuel canisters not stacking to the highest fuel types stack size.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.012
+Date: 2026-03-06
+  The y'know, i wanted 0.9 out last month, lmao Update:
+
+  Changes:
+    - Changed potassium output from sea salt to sodium bicarbonate. (also lowered the bicarb output from 6 to 2, to not have fucky numbers)
+
+  Fixes:
+    - Fixed plastic metalloid science being incorrect.
+    - Fixed light coolant fluorite outputting hot coolant.
+    - Fixed light coolant bismuth outputing hot coolant.
+    - Fixed bacteria'd methyl chloride producing more agar then its input.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.011
+Date: 2026-12-01
+  The 1 thing a day is 1 thing done Update:
+
+  Fixes:
+    - Fixed HDS producing isogrid crucibles when prodded.
+    - Fixed polysilicon prod causing wacky stuff.
+    - Fixed hafnium producing iodine when prodded.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.010
+Date: 2026-12-01
+  The noble gas? how'd a gas get to be king? Update:
+
+  Changes:
+    - Reworked noble gas science packs to require all 6 noble gasses to be made - industrial noble gas is still the same, but is no longer the science ingredient.
+
+  Fixes:
+    - Fixed helium to industrial noble gas eating catalyst containers.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.8.009
+Date: 2026-12-01
+  The requester? I barely even know her! Update:
+
+  Changes:
+    - Let buffer chests have the vanilla amount of request slots, but made it so you cannot use inserters or loaders to insert or remove items from them. (PennyJim's idea)
+
+  Fixes:
+    - Fixed fluid resistant molding not requiring fluid resistant electronics as a prerequisite.
+    - Fixed HMX producing catalysts when prodded.
+    - Fixed plastic science bottles producing molds when prodded.
+    - Fixed ammonium nitrate producing more catalysts then go into it.
+    - Let seawater extractors have circuit connections.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.008
