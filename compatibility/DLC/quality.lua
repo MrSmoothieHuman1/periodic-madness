@@ -79,6 +79,19 @@ if mods["quality"] then
         PM.ingredient("advanced-circuit", 5),
     }
 
+--#MARK: Entity Changes
+data.raw["furnace"]["electric-furnace"].quality_affects_module_slots = true
+data.raw["furnace"]["electric-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
+data.raw["furnace"]["pm-electric-furnace-2"].quality_affects_module_slots = true
+data.raw["furnace"]["electric-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 5}
+data.raw["furnace"]["pm-heat-furnace"].quality_affects_module_slots = true
+data.raw["furnace"]["pm-heat-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
+
+data.raw["assembling-machine"]["pm-reverberatory-furnace"].quality_affects_module_slots = true
+data.raw["assembling-machine"]["pm-reverberatory-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
+data.raw["assembling-machine"]["pm-blast-furnace"].quality_affects_module_slots = true
+data.raw["assembling-machine"]["pm-blast-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
+
 
 --#MARK: New stuff
 data:extend({

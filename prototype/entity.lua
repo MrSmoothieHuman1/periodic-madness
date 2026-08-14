@@ -5340,8 +5340,6 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 10,
-    ----quality_affects_module_slots = true,
-    ----module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4},
     icon_draw_specification = {shift = {0, -0.1}},
     icons_positioning =
     {
@@ -10631,72 +10629,6 @@ fluid_boxes =
   },
 },
 }--[[@as data.AssemblingMachinePrototype]],
-{
-    type = "lab",
-    name = "pm-betterer-lab",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/buildings/science-center.png",
-    flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.75, result = "pm-science-center" },
-    collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
-    selection_box = { { -3, -3 }, { 3, 3 } },
-    module_slots = 4,
-    energy_source =
-    {
-      type = "electric",
-      usage_priority = "secondary-input",
-    },
-    energy_usage = "1MW",
-    researching_speed = 2,
-    allowed_module_categories = {"speed", "productivity", "efficiency"},
-    inputs = pm_advanced_lab_inputs,
-    icons_positioning =
-    {
-      {inventory_index = defines.inventory.lab_modules, shift = {0, 1}},
-      {inventory_index = defines.inventory.lab_input, shift = {0, 0.0}, max_icons_per_row = 6, separation_multiplier = 0.9}
-    },
-    on_animation =
-    {
-      layers =
-      {
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
-          width = 384,
-          height = 416,
-          animation_speed = 0.2,
-          scale = 0.5,
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
-          width = 320,
-          height = 320,
-          draw_as_shadow = true,
-          shift = util.by_pixel(10, 0),
-          scale = 0.625,
-        },
-      }
-    },
-    off_animation =
-    {
-      layers =
-      {
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
-          width = 384,
-          height = 416,
-          scale = 0.5,
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
-          width = 320,
-          height = 320,
-          shift = util.by_pixel(10, 0),
-          draw_as_shadow = true,
-          scale = 0.5,
-        }
-      }
-    }
-  }--[[@as data.LabPrototype]],
   {
     type = "furnace",
     name = "pm-alpha-inator",
@@ -12264,8 +12196,6 @@ data.raw["furnace"]["electric-furnace"].crafting_speed = 1
 data.raw["furnace"]["electric-furnace"].energy_usage = "100kW"
 data.raw["furnace"]["electric-furnace"].energy_source.drain = "0kW"
 data.raw["furnace"]["electric-furnace"].energy_source.emissions_per_minute = {pollution = 0.5}
---data.raw["furnace"]["electric-furnace"].quality_affects_module_slots = true
---data.raw["furnace"]["electric-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
 
 data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 4.5
 data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 10

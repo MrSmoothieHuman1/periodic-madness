@@ -45,7 +45,7 @@ data:extend({
           flags = {"gui-icon"},
         },
         empty_slot_caption = {"entity-name.pm-cryogenic-plant"},
-        empty_slot_description = {"entity-name.pm-crusher-1"},
+        empty_slot_description = {"item-name-pm-biomechanical-cortex"},
         accepted_fuel_key = "pm-burner-usage.pm-particle-accelerator-accepted-fuel",
         burned_in_key = "pm-burner-usage.pm-paricle-accelerator-burned-in", -- factoriopedia
         no_fuel_status = {"pm-burner-usage.pm-particle-accelerator-no-fuel"}
