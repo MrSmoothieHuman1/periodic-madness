@@ -92,6 +92,12 @@ data.raw["assembling-machine"]["pm-reverberatory-furnace"].module_slots_quality_
 data.raw["assembling-machine"]["pm-blast-furnace"].quality_affects_module_slots = true
 data.raw["assembling-machine"]["pm-blast-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
 
+--MARK: Science changes
+data.raw["quality"]["uncommon"].tool_durability_multiplier = 3 --300%
+data.raw["quality"]["rare"].tool_durability_multiplier = 5 --500%
+data.raw["quality"]["epic"].tool_durability_multiplier = 7 --700%
+data.raw["quality"]["legendary"].tool_durability_multiplier = 12 --1200%
+
 
 --#MARK: New stuff
 data:extend({
