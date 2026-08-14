@@ -481,7 +481,7 @@ data:extend({
     type = "recipe",
     name = "pm-reusable-rocket-part-unpacking",
     enabled = false,
-    energy_required = 15,
+    energy_required = 90,
     maximum_productivity = 2,
     main_product = "pm-rocket-control-unit",
     ingredients =
