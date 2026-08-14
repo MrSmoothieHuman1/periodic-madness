@@ -12,7 +12,14 @@ data:extend({
         type = "item",
         name = "pm-scandium-trioxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/scandium-trioxide.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-trioxide.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-trioxide-2.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-trioxide-3.png", size = 64, scale = 0.5},
+          --{filename = "__periodic-madness__/graphics/icons/ores/scandium-trioxide-4.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-scandium-tm",
         order = "b",
         stack_size = 75
@@ -21,7 +28,14 @@ data:extend({
         type = "item",
         name = "pm-scandium-fluoride",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/scandium-fluoride.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-fluoride.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-fluoride-2.png", size = 64, scale = 0.43},
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-fluoride-3.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/scandium-fluoride-4.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-scandium-tm",
         order = "c",
         stack_size = 100
@@ -47,7 +61,12 @@ data:extend({
         type = "item",
         name = "pm-scandium-oxide",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/scandium-oxide.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/scandium-oxide.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/scandium-oxide-2.png", size = 64, scale = 0.45},
+        },
         subgroup = "pm-scandium-tm",
         order = "e",
         stack_size = 200
