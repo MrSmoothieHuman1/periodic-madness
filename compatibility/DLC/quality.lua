@@ -142,7 +142,47 @@ data:extend({
         tier = 4,
         order = "d",
         stack_size = 50,
-        effect = {quality = 0.04, speed = -0.1},
+        effect = {quality = 0.045, speed = -0.1},
+        beacon_tint =
+        {
+            primary = { 0, 1, 0 },
+            secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+        },
+        art_style = "vanilla",
+        requires_beacon_alt_mode = false,
+    },
+    {
+        type = "module",
+        name = "pm-quality-module-5",
+        localised_description = {"item-description.quality-module"},
+        icon = "__periodic-madness__/graphics/icons/modules/quality-module-5.png",
+        icon_size = 64,
+        subgroup = "pm-quality",
+        category = "quality",
+        tier = 5,
+        order = "d",
+        stack_size = 50,
+        effect = {quality = 0.06, speed = -0.1},
+        beacon_tint =
+        {
+            primary = { 0, 1, 0 },
+            secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+        },
+        art_style = "vanilla",
+        requires_beacon_alt_mode = false,
+    },
+    {
+        type = "module",
+        name = "pm-quality-module-6",
+        localised_description = {"item-description.quality-module"},
+        icon = "__periodic-madness__/graphics/icons/modules/quality-module-6.png",
+        icon_size = 64,
+        subgroup = "pm-quality",
+        category = "quality",
+        tier = 6,
+        order = "d",
+        stack_size = 50,
+        effect = {quality = 0.075, speed = -0.15},
         beacon_tint =
         {
             primary = { 0, 1, 0 },
@@ -176,6 +216,65 @@ data:extend({
                 {"pm-metalloid-science-pack", 1}
             },
             time = 60
+        }
+    },
+    {
+        type = "technology",
+        name = "pm-quality-module-5",
+        icon_size = 256,
+        icon = "__periodic-madness__/graphics/technology/quality-module-5-tech.png",
+        effects =
+        {
+            PM.unlock_recipe("pm-quality-module-5")
+        },
+        prerequisites = {"pm-quality-module-4"},
+        unit =
+        {
+          count = 800,
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-noble-gas-science-pack", 1}
+          },
+          time = 120
+        }
+    },
+    {
+        type = "technology",
+        name = "pm-quality-module-6",
+        icon_size = 256,
+        icon = "__periodic-madness__/graphics/technology/quality-module-6-tech.png",
+        effects =
+        {
+            PM.unlock_recipe("pm-quality-module-6")
+        },
+        prerequisites = {"pm-quality-module-5"},
+        unit =
+        {
+          count = 1000,
+          ingredients =
+          {
+            {"automation-science-pack", 2},
+            {"logistic-science-pack", 2},
+            {"pm-advanced-advanced-transition-metal-science-pack", 2},
+            {"chemical-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-noble-gas-science-pack", 1},
+            {"pm-lanthanide-science-pack", 1}
+          },
+          time = 240
         }
     },
 
@@ -235,6 +334,43 @@ data:extend({
         {
             PM.product("pm-quality-module-4"):amount(1):done()
         }
-    }
+    },
+    {
+      type = "recipe",
+      name = "pm-quality-module-5",
+      enabled = false,
+      energy_required = 30,
+      subgroup = "pm-quality",
+      order = "e",
+      ingredients =
+      {
+        PM.ingredient("quality-module-2", 1),
+        PM.ingredient("pm-module-quality-light", 1),
+        PM.ingredient("pm-advanced-processing-unit", 9),
+        PM.ingredient("processing-unit", 9)
+      },
+      results =
+      {
+        PM.product("pm-quality-module-5"):amount(1):done()
+      }
+    },
+    {
+      type = "recipe",
+      name = "pm-quality-module-6",
+      enabled = false,
+      energy_required = 60,
+      subgroup = "pm-quality",
+      order = "f",
+      ingredients =
+      {
+        PM.ingredient("quality-module-3", 1),
+        PM.ingredient("pm-module-quality-light", 1),
+        PM.ingredient("pm-space-processing-unit", 10),
+      },
+      results =
+      {
+        PM.product("pm-quality-module-6"):amount(1):done()
+      }
+    },
 })
 end
