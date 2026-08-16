@@ -3012,6 +3012,7 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/buildings/science-center.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    max_health = 500,
     minable = { mining_time = 0.4, result = "pm-science-center" },
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },

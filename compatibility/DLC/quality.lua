@@ -58,6 +58,8 @@ if mods["quality"] then
     table.insert(data.raw["technology"]["modules"].effects, {type = "unlock-recipe", recipe = "pm-aluminium-gallium-arsenide"})
     table.insert(data.raw["technology"]["modules"].effects, {type = "unlock-recipe", recipe = "pm-module-quality-light"})
 
+    table.insert(data.raw["technology"]["pm-advanced-modules"].effects, {type = "unlock-recipe", recipe = "pm-o-phenylenediamine"})
+
 
     data.raw["recipe"]["quality-module"].ingredients =
     {
