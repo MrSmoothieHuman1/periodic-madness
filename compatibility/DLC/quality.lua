@@ -375,5 +375,121 @@ data:extend({
         PM.product("pm-quality-module-6"):amount(1):done()
       }
     },
+
+    {
+        type = "fluid",
+        name = "pm-benzonitrile",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
+        default_temperature = 15,
+        base_color = {r = 0.7, g = 0.7, b = 0.85},
+        flow_color = {r = 0.7, g = 0.7, b = 0.85},
+        auto_void = true,
+    },
+    {
+        type = "fluid",
+        name = "pm-1-2-3-triazole",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
+        default_temperature = 15,
+        base_color = {r = 0.7, g = 0.7, b = 0.85},
+        flow_color = {r = 0.7, g = 0.7, b = 0.85},
+        auto_void = true,
+    },
+    {
+        type = "fluid",
+        name = "pm-undiffereniated-carbazole",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
+        default_temperature = 15,
+        base_color = {r = 0.7, g = 0.7, b = 0.85},
+        flow_color = {r = 0.7, g = 0.7, b = 0.85},
+        auto_void = true,
+    },
+    {
+        type = "fluid",
+        name = "pm-N-propyl-carbazole",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/nitrobenzene.png",
+        default_temperature = 15,
+        base_color = {r = 0.7, g = 0.7, b = 0.85},
+        flow_color = {r = 0.7, g = 0.7, b = 0.85},
+        auto_void = true,
+    },
+    {
+      type = "recipe",
+      name = "pm-benzonitrile",
+      enabled = false,
+      energy_required = 12,
+      categories = {"chemistry"},
+      ingredients =
+      {
+        PM.ingredient("pm-benzene", 30, "fluid"),
+        PM.ingredient("pm-ammonia-gas", 30, "fluid")
+      },
+      results =
+      {
+        PM.product("pm-benzonitrile", "fluid"):amount(40):done()
+      }
+    },
+    {
+        type = "recipe",
+        name = "pm-1-2-3-triazole",
+        enabled = false,
+        energy_required = 24,
+        categories = {"pm-acids"},
+        ingredients =
+        {
+            PM.ingredient("pm-o-phenylenediamine", 20, "fluid"),
+            PM.ingredient("pm-nitric-acid", 20, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-1-2-3-triazole", "fluid"):amount(20):done()
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-undiffereniated-carbazole",
+        enabled = false,
+        energy_required = 4,
+        categories = {"oil-processing"},
+        main_product = "pm-undiffereniated-carbazole",
+        ingredients =
+        {
+            PM.ingredient("pm-1-2-3-triazole", 10, "fluid"),
+            PM.ingredient("steam", 20, "fluid"),
+            PM.ingredient("pm-palladium-catalyst", 4),
+            PM.ingredient("copper-plate", 6)
+        },
+        results =
+        {
+            PM.product("pm-undiffereniated-carbazole", "fluid"):amount(7.5):done(),
+            PM.product("pm-palladium-catalyst"):amount(4):chance(0.8):catalyst(4):done(),
+            PM.product("pm-catalyst-container"):amount(4):chance(0.2):catalyst(4):done(),
+            PM.product("copper-plate"):amount(3):catalyst(3):done(), --should be its own catalyst in hard mode
+            PM.product("water", "fluid"):amount(1, 2):catalyst(2):done()
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-N-propyl-carbazole",
+        enabled = false,
+        energy_required = 12,
+        categories = {"pm-mixing"},
+        main_product = "pm-N-propyl-carbazole",
+        ingredients =
+        {
+            PM.ingredient("pm-undiffereniated-carbazole", 15, "fluid"),
+            PM.ingredient("pm-bromine", 30, "fluid"),
+            PM.ingredient("pm-nickel-plate", 6)
+        },
+        results =
+        {
+            PM.product("pm-N-propyl-carbazole", "fluid"):amount(15):chance(0.55, 1):done(),
+            PM.product("pm-undiffereniated-carbazole", "fluid"):amount(15):chance(0.45, 1):done(),
+            PM.product("pm-nickel-plate"):amount(3):catalyst(3):done(), --this too should be its own catalyst in hard mode
+        }
+    }
 })
 end

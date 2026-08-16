@@ -6506,20 +6506,4 @@ data:extend({
         PM.product("pm-biomechanical-cortex"):amount(1):done()
     }
   },
-  --[[{
-    type = "recipe",
-    name = "pm-benzonitrile",
-    enabled = false,
-    energy_required = 12,
-    categories = {"chemistry"},
-    ingredients = 
-    {
-        PM.ingredient("pm-bezene", 30, "fluid"),
-        PM.ingredient("pm-ammonia-gas", 30, "fluid")
-    },
-    results = 
-    {
-        PM.product("pm-benzonitrile", "fluid"):amount(40):done()
-    }
-  },--]]
 } --[[@as data.RecipePrototype[] ]])
