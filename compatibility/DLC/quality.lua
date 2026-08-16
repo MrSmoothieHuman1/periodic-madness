@@ -486,7 +486,7 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-N-propyl-carbazole", "fluid"):amount(15):chance(0.55, 1):done(),
+            PM.product("pm-N-propyl-carbazole", "fluid"):amount(15):chance(0, 0.45):done(),
             PM.product("pm-undiffereniated-carbazole", "fluid"):amount(15):chance(0.45, 1):done(),
             PM.product("pm-nickel-plate"):amount(3):catalyst(3):done(), --this too should be its own catalyst in hard mode
         }
