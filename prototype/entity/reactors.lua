@@ -253,12 +253,14 @@ data:extend({
         max_health = 1500,
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
-        consumption = "80MW",
+        consumption = "60MW",
         neighbour_bonus = 0.375,
         energy_source =
         {
           type = "fluid",
           fluid_usage_per_tick = 1/60,
+          scale_fluid_usage = true,
+          burns_fluid = true,
           fluid_box =
           {
             volume = 250,
@@ -271,9 +273,9 @@ data:extend({
             production_type = "input",
             filter = "pm-liquid-thorium-fluoride"
           },
-          spent_fluid =
+          spent_fluid = 
           {
-            name = "water",
+            name = "pm-liquid-thorium-fluoride-waste",
             amount = 0.25,
           },
           output_fluid_box =
@@ -286,7 +288,7 @@ data:extend({
               {flow_direction = "input-output", direction = defines.direction.east, position = {2.5, 1.5}}
             },
             production_type = "output",
-            filter = "water"
+            filter = "pm-liquid-thorium-fluoride-waste"
           },
           emissions_per_minute = {pollution = 1},
         },
@@ -443,51 +445,51 @@ data:extend({
           connections =
           {
             {
-              position = { -3, -3 },
+              position = { -2.5, -3 },
               direction = defines.direction.north --[[@as int]]
             },
             {
-              position = { 0, -3 },
+              position = { 2.5, -3 },
               direction = defines.direction.north --[[@as int]]
             },
             {
-              position = { 3, -3 },
-              direction = defines.direction.north --[[@as int]]
-            },
-            {
-              position = { 3, -3 },
+              position = { 2.5, -3 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 3, 0 },
+              position = { 3, 0.5 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 3, 3 },
+              position = { 3, -0.5 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 3, 3 },
+              position = { 3, 2.5 },
+              direction = defines.direction.east --[[@as int]]
+            },
+            {
+              position = { 2.5, 3 },
               direction = defines.direction.south --[[@as int]]
             },
             {
-              position = { 0, 3 },
+              position = { -2.5, 3 },
               direction = defines.direction.south --[[@as int]]
             },
             {
-              position = { -3, 3 },
-              direction = defines.direction.south --[[@as int]]
-            },
-            {
-              position = { -3, 3 },
+              position = { -3, 2.5 },
               direction = defines.direction.west --[[@as int]]
             },
             {
-              position = { -3, 0 },
+              position = { -3, 0.5 },
               direction = defines.direction.west --[[@as int]]
             },
             {
-              position = { -3, -3 },
+              position = { -3, -0.5 },
+              direction = defines.direction.west --[[@as int]]
+            },
+            {
+              position = { -3, -2.5 },
               direction = defines.direction.west --[[@as int]]
             }
           },

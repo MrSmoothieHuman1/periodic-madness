@@ -8196,6 +8196,7 @@ data:extend({
         PM.unlock_recipe("pm-thorium-232"),
         PM.unlock_recipe("pm-thorium-233"),
         PM.unlock_recipe("pm-liquid-thorium-fluoride"),
+        PM.unlock_recipe("pm-liquid-thorium-fluoride-waste-seperation")
     },
     prerequisites = {"pm-advanced-magnets"},
     research_trigger =

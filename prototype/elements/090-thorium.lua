@@ -90,7 +90,6 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "b",
       default_temperature = 15,
-      gas_temperature = 15,
       base_color = {0.82, 0.91, 0.733},
       flow_color = {0.72, 0.81, 0.633},
     },
@@ -102,7 +101,6 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "c",
       default_temperature = 15,
-      gas_temperature = 15,
       base_color = {0.82, 0.91, 0.733},
       flow_color = {0.72, 0.81, 0.633},
     },
@@ -114,7 +112,6 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "e",
       default_temperature = 15,
-      gas_temperature = 15,
       base_color = {0.82, 0.91, 0.733},
       flow_color = {0.72, 0.81, 0.633},
     },
@@ -126,7 +123,6 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "g",
       default_temperature = 15,
-      gas_temperature = 15,
       base_color = {0.82, 0.91, 0.733},
       flow_color = {0.72, 0.81, 0.633},
     },
@@ -138,7 +134,12 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "k",
       default_temperature = 15,
-      gas_temperature = 15,
+      fuel_value = "600MW", --fuel value of 10MJ
+      spent_fluid =
+      {
+        name = "pm-liquid-thorium-fluoride-waste",
+        amount = 0.25,
+      },
       base_color = {0.82, 0.91, 0.733},
       flow_color = {0.72, 0.81, 0.633},
     },
@@ -150,7 +151,6 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "l",
       default_temperature = 15,
-      gas_temperature = 15,
       base_color = {0.82, 0.91, 0.733},
       flow_color = {0.72, 0.81, 0.633},
     },
@@ -363,4 +363,24 @@ data:extend({
             PM.product("pm-molten-gold", "fluid"):amount(20):catalyst(20):done()
         }
     },
+    {
+        type = "recipe",
+        name = "pm-liquid-thorium-fluoride-waste-seperation",
+        enabled = false,
+        energy_required = 24,
+        categories = {"centrifuging"},
+        main_product = "pm-uranium-233",
+        ingredients =
+        {
+            PM.ingredient("pm-liquid-thorium-fluoride-waste", 10, "fluid"),
+            
+        },
+        results =
+        {
+            PM.product("pm-uranium-233"):amount(0, 2):chance(0.96):done(),
+            PM.product("pm-liquid-thorium-fluoride", "fluid"):amount(1, 4):chance(0.99):done(),
+            PM.product("pm-neodymium-oxide"):amount(0, 1):chance(0.14):done(),
+            PM.product("pm-xenon-gas", "fluid"):amount(0.5, 2.5):chance(0.26):done()
+        }
+    }
 })
