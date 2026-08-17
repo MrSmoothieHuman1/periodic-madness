@@ -257,18 +257,38 @@ data:extend({
         neighbour_bonus = 0.375,
         energy_source =
         {
-          type = "burner",
-          fuel_categories = {"pm-thorium", "pm-uranium-233"},
-          effectivity = 1,
-          fuel_inventory_size = 1,
-          burnt_inventory_size = 1,
-          emissions_per_minute = {pollution = 1},
-          light_flicker =
+          type = "fluid",
+          fluid_usage_per_tick = 1/60,
+          fluid_box =
           {
-            color = { 0, 0, 0 },
-            minimum_intensity = 0.7,
-            maximum_intensity = 0.95
-          }
+            volume = 250,
+            pipe_covers = pipecoverspictures(),
+            pipe_connections =
+            {
+              {flow_direction = "input-output", direction = defines.direction.west, position = {-2.5, 1.5}},
+              {flow_direction = "input-output", direction = defines.direction.east, position = {2.5, -1.5}}
+            },
+            production_type = "input",
+            filter = "pm-liquid-thorium-fluoride"
+          },
+          spent_fluid =
+          {
+            name = "water",
+            amount = 0.25,
+          },
+          output_fluid_box =
+          {
+            volume = 500,
+            pipe_covers = pipecoverspictures(),
+            pipe_connections =
+            {
+              {flow_direction = "input-output", direction = defines.direction.west, position = {-2.5, -1.5}},
+              {flow_direction = "input-output", direction = defines.direction.east, position = {2.5, 1.5}}
+            },
+            production_type = "output",
+            filter = "water"
+          },
+          emissions_per_minute = {pollution = 1},
         },
         working_sound =
         {
@@ -319,12 +339,12 @@ data:extend({
 	    		scale = 0.5,
 	    		shift = util.by_pixel(-0.5, -4.5)
 	    	}--[[@as data.Sprite]],
-        working_light_picture =
+        --[[working_light_picture =
         {
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
               width = 320,
               height = 320,
               line_length = 6,
@@ -345,18 +365,17 @@ data:extend({
               draw_as_shadow = true
             }
           }
-        },
+        },--]]
         picture =
         {
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor.png",
-              width = 320,
-              height = 320,
+              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
+              width = 384,
+              height = 400,
               frame_count = 1,
               scale = 0.5,
-              shift = util.by_pixel(-5, -7)
             },
             {
               filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
@@ -424,51 +443,51 @@ data:extend({
           connections =
           {
             {
-              position = { -2, -2 },
+              position = { -3, -3 },
               direction = defines.direction.north --[[@as int]]
             },
             {
-              position = { 0, -2 },
+              position = { 0, -3 },
               direction = defines.direction.north --[[@as int]]
             },
             {
-              position = { 2, -2 },
+              position = { 3, -3 },
               direction = defines.direction.north --[[@as int]]
             },
             {
-              position = { 2, -2 },
+              position = { 3, -3 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 2, 0 },
+              position = { 3, 0 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 2, 2 },
+              position = { 3, 3 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 2, 2 },
+              position = { 3, 3 },
               direction = defines.direction.south --[[@as int]]
             },
             {
-              position = { 0, 2 },
+              position = { 0, 3 },
               direction = defines.direction.south --[[@as int]]
             },
             {
-              position = { -2, 2 },
+              position = { -3, 3 },
               direction = defines.direction.south --[[@as int]]
             },
             {
-              position = { -2, 2 },
+              position = { -3, 3 },
               direction = defines.direction.west --[[@as int]]
             },
             {
-              position = { -2, 0 },
+              position = { -3, 0 },
               direction = defines.direction.west --[[@as int]]
             },
             {
-              position = { -2, -2 },
+              position = { -3, -3 },
               direction = defines.direction.west --[[@as int]]
             }
           },
