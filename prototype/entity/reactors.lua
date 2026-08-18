@@ -515,7 +515,7 @@ data:extend({
 --MARK: Uranium-233 reactor
     {
         type = "reactor",
-        name = "pm-thorium-233-reactor",
+        name = "pm-uranium-233-reactor",
         icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
         icon_size = 128,
         flags = { "placeable-neutral", "player-creation" },
@@ -681,16 +681,18 @@ data:extend({
         {
             connections =
             {
-                {location = {position = {-1.5, -1.5}, direction = defines.direction.north}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {1.5, -1.5}, direction = defines.direction.north}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {1.5, -1.5}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {1.5, 0}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {1.5, 1.5}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {1.5, 1.5}, direction = defines.direction.south}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {-1.5, -1.5}, direction = defines.direction.south}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {-1.5, 1.5}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {-1.5, 0}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
-                {location = {position = {-1.5, -1.5}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {-1, -1.5}, direction = defines.direction.north}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {0, -1.5}, direction = defines.direction.north}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {1, -1.5}, direction = defines.direction.north}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {1.5, -1}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {1.5, 0}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {1.5, 1}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {1, 1.5}, direction = defines.direction.south}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {0, 1.5}, direction = defines.direction.south}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {-1, -1.5}, direction = defines.direction.south}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {-1.5, 1}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {-1.5, 0}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {-1.5, -1}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
             }
         },
         heat_buffer =
