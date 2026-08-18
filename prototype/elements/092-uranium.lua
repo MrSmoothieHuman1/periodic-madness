@@ -3,7 +3,7 @@ data:extend({
         type = "item",
         name = "pm-uranium-233",
         icon_size = 64,
-        icon = "__base__/graphics/icons/uranium-238.png",
+        icon = "__periodic-madness__/graphics/icons/ores/uranium-233.png",
         fuel_value = "5GJ",
         fuel_category = "pm-uranium-233",
         subgroup = "pm-uranium-ac",
