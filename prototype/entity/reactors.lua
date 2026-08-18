@@ -10,7 +10,7 @@ data:extend({
         max_health = 250,
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
-        consumption = "50MW",
+        consumption = "40MW",
         neighbour_bonus = 0.25,
         neighbour_connectable =
         {
@@ -253,7 +253,7 @@ data:extend({
         max_health = 1500,
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
-        consumption = "60MW",
+        consumption = "50MW",
         neighbour_bonus = 0.25,
         energy_source =
         {
@@ -523,7 +523,7 @@ data:extend({
         max_health = 1500,
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
-        consumption = "20MW",
+        consumption = "15MW",
         neighbour_bonus = 0.1,
         energy_source =
         {

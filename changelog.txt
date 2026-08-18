@@ -45,19 +45,21 @@ Date: 2025-12-19
     - Made space circuit RCU recipe be 35s, but made it craft 2 at once.
     - Rebalanced flux requirements for alloys/molten metal chains: starter alloys (up to kasethal/stainless steel) takes 1 flux, uhrlumin/inconel/HDS take 2 flux, and any alloys past this take 3.
     - Changed zirconium sand icon to fit with newer graphics.
-    - Lowered hub beacon distribution efficiency from 0.75 to 0.5.
+    - Lowered hub beacon distribution efficiency from 0.75 to 0.5. This is part of a larger change towards beacon strength, as the three types of beacons should all have their own pros and cons.
     - Changed nitrous iron to be produced 75% of the time instead of 50%.
     - Lowered amount of cobaltite from 0-3 69%, to 0-2 69% chance, with the fluxed recipe being 1 34%.
     - Lowered amount of arsenic from cobaltite from 3-6 to 2-5.
-    - Made all processing units visually distinct from circuits.
+    - Made all processing units visually distinct from circuits. They were already separated via subgroups plus have different suffixes and making them visually distinct helps further sell that idea.
     - Moved strontium glass/molten strontium glass into the glass subgroup.
     - Move LDS and HDS into a combined subgroup.
+    - Lowered polonium reactors power output from 50MW to 40MW. This is done to make reactor tiers feel more significant, and to make power more of a concern when building (esp with modules).
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
     - Fixed ammonium chloride seperation icon being old and weird-looking.
     - Fixed research productivity 5 depending on level 3.
     - Fixed ordering of mixing tanks and washing plants in their own subgroup.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.015
 Date: 2026-08-14
