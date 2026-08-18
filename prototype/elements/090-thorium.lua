@@ -4,7 +4,26 @@ data:extend({
         type = "item",
         name = "pm-thorium-cast-iron-vessel",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png",
+        pictures = 
+        {
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/thorium-cast-iron-vessel-2.png", size = 64, scale = 0.5}, --thought it'd be funny to only have 1 thats tipped over
+        },
         subgroup = "pm-thorium-ac",
         order = "a",
         stack_size = 250
