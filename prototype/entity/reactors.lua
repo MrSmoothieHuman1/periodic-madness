@@ -512,4 +512,244 @@ data:extend({
           },
         },
     },
+--MARK: Uranium-233 reactor
+    {
+        type = "reactor",
+        name = "pm-thorium-233-reactor",
+        icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+        icon_size = 128,
+        flags = { "placeable-neutral", "player-creation" },
+        minable = { mining_time = 1.5, result = "pm-polonium-reactor" },
+        max_health = 1500,
+        corpse = "nuclear-reactor-remnants",
+        dying_explosion  = "nuclear-reactor-explosion",
+        consumption = "20MW",
+        neighbour_bonus = 0.1,
+        energy_source =
+        {
+          type = "burner",
+          fuel_inventory_size = 1,
+          burnt_inventory_size = 0,
+          fuel_categories = {"pm-uranium-233"},
+          effectivity = 1,
+          emissions_per_minute = {pollution = 2.5},
+        },
+        working_sound =
+        {
+          sound =
+          {
+            {
+              filename = "__base__/sound/nuclear-reactor-1.ogg",
+              volume = 0.55
+            },
+            {
+              filename = "__base__/sound/nuclear-reactor-2.ogg",
+              volume = 0.55
+            }
+          },
+          max_sounds_per_type = 3,
+          fade_in_ticks = 4,
+          fade_out_ticks = 20
+        },
+        meltdown_action =
+        {
+          type = "direct",
+          action_delivery =
+          {
+            type = "instant",
+            target_effects =
+            {
+              {
+                type = "create-entity",
+                entity_name = "atomic-rocket"
+              }
+            }
+          }
+        },
+        collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+        selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+        lower_layer_picture =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
+          width = 320,
+          height = 316,
+          scale = 0.5,
+          shift = util.by_pixel(-1, -5)
+        },
+        heat_lower_layer_picture = apply_heat_pipe_glow{
+	    		filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png",
+	    		width = 320,
+	    		height = 316,
+	    		scale = 0.5,
+	    		shift = util.by_pixel(-0.5, -4.5)
+	    	}--[[@as data.Sprite]],
+        --[[working_light_picture =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
+              width = 320,
+              height = 320,
+              line_length = 6,
+              frame_count = 24,
+              animation_speed = 0.5,
+              scale = 0.5,
+              shift = util.by_pixel(-5, -7)
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+              width = 320,
+              height = 320,
+              line_length = 1,
+              frame_count = 1,
+              repeat_count = 24,
+              scale = 0.5,
+              shift = { 1.625, 0 },
+              draw_as_shadow = true
+            }
+          }
+        },--]]
+        picture =
+        {
+          layers =
+          {
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
+              width = 384,
+              height = 400,
+              frame_count = 1,
+              scale = 0.2,
+            },
+            {
+              filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
+              width = 320,
+              height = 320,
+              scale = 0.5,
+              shift = { 1.625, 0 },
+              draw_as_shadow = true
+            }
+          }
+        },
+        connection_patches_connected =
+        {
+          sheet =
+          {
+            filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+            width = 64,
+            height = 64,
+            variation_count = 12,
+            scale = 0.5
+          }
+        },
+
+        connection_patches_disconnected =
+        {
+          sheet =
+          {
+            filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+            width = 64,
+            height = 64,
+            variation_count = 12,
+            y = 64,
+            scale = 0.5
+          }
+        },
+
+        heat_connection_patches_connected =
+        {
+          sheet = apply_heat_pipe_glow{
+            filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+            width = 64,
+            height = 64,
+            variation_count = 12,
+            scale = 0.5
+          }--[[@as data.SpriteSheet]]
+        },
+        heat_connection_patches_disconnected =
+        {
+          sheet = apply_heat_pipe_glow{
+            filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+            width = 64,
+            height = 64,
+            variation_count = 12,
+            y = 64,
+            scale = 0.5
+          }--[[@as data.SpriteSheet]]
+        },
+        neighbour_connectable =
+        {
+            connections =
+            {
+                {location = {position = {-1.5, -1.5}, direction = defines.direction.north}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {1.5, -1.5}, direction = defines.direction.north}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {1.5, -1.5}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {1.5, 0}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {1.5, 1.5}, direction = defines.direction.east}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {1.5, 1.5}, direction = defines.direction.south}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {-1.5, -1.5}, direction = defines.direction.south}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {-1.5, 1.5}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {-1.5, 0}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {-1.5, -1.5}, direction = defines.direction.west}, category = "pm-uranium-233-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+            }
+        },
+        heat_buffer =
+        {
+          max_temperature = 1500,
+          specific_heat = "10MJ",
+          max_transfer = "10GW",
+          minimum_glow_temperature = 750,
+          connections =
+          {
+            {
+              position = { -1, -1 },
+              direction = defines.direction.north --[[@as int]]
+            },
+            {
+              position = { 0, -1 },
+              direction = defines.direction.north --[[@as int]]
+            },
+            {
+              position = { 1, -1 },
+              direction = defines.direction.north --[[@as int]]
+            },
+            {
+              position = { 1, -1 },
+              direction = defines.direction.east --[[@as int]]
+            },
+            {
+              position = { 1, 0 },
+              direction = defines.direction.east --[[@as int]]
+            },
+            {
+              position = { 1, 1 },
+              direction = defines.direction.east --[[@as int]]
+            },
+            {
+              position = { 1, 1 },
+              direction = defines.direction.south --[[@as int]]
+            },
+            {
+              position = { -1, 1 },
+              direction = defines.direction.south --[[@as int]]
+            },
+            {
+              position = { 0, 1 },
+              direction = defines.direction.south --[[@as int]]
+            },
+            {
+              position = { -1, 1 },
+              direction = defines.direction.west --[[@as int]]
+            },
+            {
+              position = { -1, 0 },
+              direction = defines.direction.west --[[@as int]]
+            },
+            {
+              position = { -1, -1 },
+              direction = defines.direction.west --[[@as int]]
+            }
+          },
+        },
+    },
 })
