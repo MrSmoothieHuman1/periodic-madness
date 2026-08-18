@@ -49,7 +49,82 @@ data:extend({
         type = "item",
         name = "pm-thorium-filter-cake",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/thorium-filter-cake.png",
+        pictures =
+        {
+            {
+                layers =
+                {
+                  {
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/icons/thorium-filter-cake.png",
+                    scale = 0.5,
+                  },
+                  {
+                    draw_as_light = true,
+                    flags = { "light" },
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/light/thorium-filter-cake-light.png",
+                    scale = 0.5,
+                    mipmap_count = 4
+                  },
+                },
+            },
+            {
+                layers =
+                {
+                  {
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/icons/thorium-filter-cake-2.png",
+                    scale = 0.5,
+                  },
+                  {
+                    draw_as_light = true,
+                    flags = { "light" },
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/light/thorium-filter-cake-light-2.png",
+                    scale = 0.5,
+                    mipmap_count = 4
+                  },
+                },
+            },
+            {
+                layers =
+                {
+                  {
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/icons/thorium-filter-cake-3.png",
+                    scale = 0.5,
+                  },
+                  {
+                    draw_as_light = true,
+                    flags = { "light" },
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/light/thorium-filter-cake-light-3.png",
+                    scale = 0.5,
+                    mipmap_count = 4
+                  },
+                },
+            },
+            {
+                layers =
+                {
+                  {
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/icons/thorium-filter-cake-4.png",
+                    scale = 0.5,
+                  },
+                  {
+                    draw_as_light = true,
+                    flags = { "light" },
+                    size = 64,
+                    filename = "__periodic-madness__/graphics/light/thorium-filter-cake-light-4.png",
+                    scale = 0.5,
+                    mipmap_count = 4
+                  },
+                },
+            },
+        },
         subgroup = "pm-thorium-ac",
         order = "f",
         stack_size = 100
