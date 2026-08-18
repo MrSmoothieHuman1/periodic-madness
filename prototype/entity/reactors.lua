@@ -254,11 +254,11 @@ data:extend({
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
         consumption = "60MW",
-        neighbour_bonus = 0.375,
+        neighbour_bonus = 0.25,
         energy_source =
         {
           type = "fluid",
-          fluid_usage_per_tick = 1/60,
+          fluid_usage_per_tick = 5/60,
           scale_fluid_usage = true,
           burns_fluid = true,
           fluid_box =
@@ -424,7 +424,6 @@ data:extend({
             scale = 0.5
           }--[[@as data.SpriteSheet]]
         },
-
         heat_connection_patches_disconnected =
         {
           sheet = apply_heat_pipe_glow{
@@ -436,6 +435,24 @@ data:extend({
             scale = 0.5
           }--[[@as data.SpriteSheet]]
         },
+        neighbour_connectable =
+        {
+            connections =
+            {
+                {location = {position = {-2.5, -3}, direction = defines.direction.north}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {2.5, -3}, direction = defines.direction.north}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {3, -2.5}, direction = defines.direction.east}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {3, 0.5}, direction = defines.direction.east}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {3, -0.5}, direction = defines.direction.east}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {3, 2.5}, direction = defines.direction.east}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {2.5, 3}, direction = defines.direction.south}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {-2.5, -3}, direction = defines.direction.south}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {-3, 2.5}, direction = defines.direction.west}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+                {location = {position = {-3, 0.5}, direction = defines.direction.west}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {-3, -0.5}, direction = defines.direction.west}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-uranium-233-reactor"}},
+                {location = {position = {-3, -2.5}, direction = defines.direction.west}, category = "pm-molten-thorium-salt-reactor", neighbour_category = {"pm-molten-thorium-salt-reactor", "pm-uranium-233-reactor"}},
+            }
+        },
         heat_buffer =
         {
           max_temperature = 1500,
@@ -445,51 +462,51 @@ data:extend({
           connections =
           {
             {
-              position = { -2.5, -3 },
+              position = { -2.5, -2.5 },
               direction = defines.direction.north --[[@as int]]
             },
             {
-              position = { 2.5, -3 },
+              position = { 2.5, -2.5 },
               direction = defines.direction.north --[[@as int]]
             },
             {
-              position = { 2.5, -3 },
+              position = { 2.5, -2.5 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 3, 0.5 },
+              position = { 2.5, 0.5 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 3, -0.5 },
+              position = { 2.5, -0.5 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 3, 2.5 },
+              position = { 2.5, 2.5 },
               direction = defines.direction.east --[[@as int]]
             },
             {
-              position = { 2.5, 3 },
+              position = { 2.5, 2.5 },
               direction = defines.direction.south --[[@as int]]
             },
             {
-              position = { -2.5, 3 },
+              position = { -2.5, 2.5 },
               direction = defines.direction.south --[[@as int]]
             },
             {
-              position = { -3, 2.5 },
+              position = { -2.5, 2.5 },
               direction = defines.direction.west --[[@as int]]
             },
             {
-              position = { -3, 0.5 },
+              position = { -2.5, 0.5 },
               direction = defines.direction.west --[[@as int]]
             },
             {
-              position = { -3, -0.5 },
+              position = { -2.5, -0.5 },
               direction = defines.direction.west --[[@as int]]
             },
             {
-              position = { -3, -2.5 },
+              position = { -2.5, -2.5 },
               direction = defines.direction.west --[[@as int]]
             }
           },
