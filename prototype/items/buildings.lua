@@ -1,4 +1,5 @@
 --for all items of builidngs
+local item_sounds = require("__base__.prototypes.item_sounds")
 
 data:extend({
 
@@ -1048,6 +1049,19 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
     place_result = "pm-cryogenic-plant",
     stack_size = 25
+  },
+  {
+    type = "item",
+    name = "pm-advanced-steam-turbine",
+    icon = "__base__/graphics/icons/steam-turbine.png",
+    subgroup = "energy",
+    order = "f[nuclear-energy]-d[steam-turbine]",
+    inventory_move_sound = item_sounds.steam_inventory_move,
+    pick_sound = item_sounds.steam_inventory_pickup,
+    drop_sound = item_sounds.steam_inventory_move,
+    place_result = "pm-advanced-steam-turbine",
+    stack_size = 10,
+    random_tint_color = item_tints.iron_rust
   },
 })
 

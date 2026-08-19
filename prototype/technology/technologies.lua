@@ -5496,6 +5496,31 @@ data:extend({
       time = 100
     }
   },
+  {
+    type = "technology",
+    name = "pm-advanced-steam-turbine",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/automation-4.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-advanced-steam-turbine")
+    },
+    prerequisites = {"pm-advanced-electric-engine-unit",},
+    unit =
+    {
+      count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
 
 
 --MARK: AEM science

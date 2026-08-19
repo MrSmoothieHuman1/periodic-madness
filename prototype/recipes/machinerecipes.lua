@@ -1906,6 +1906,25 @@ data:extend({
     {
         PM.product("pm-cryogenic-plant"): amount(1):done()
     }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-steam-turbine",
+    enabled = false,
+    energy_required = 6,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("steam-turbine", 1),
+        PM.ingredient("pm-advanced-electric-engine-unit", 2),
+        PM.ingredient("pm-molten-framing", 8),
+        PM.ingredient("pm-light-lubricant", 3, "fluid"),
+        PM.ingredient("pm-heavyweight-panelling", 12)
+    },
+    results = 
+    {
+        PM.product("pm-advanced-steam-turbine"):amount(1):done()
+    }
   }
 } --[[@as data.RecipePrototype[] ]])
 

@@ -11215,7 +11215,7 @@ fluid_boxes =
     name = "pm-advanced-steam-turbine",
     icon = "__base__/graphics/icons/steam-turbine.png",
     flags = {"placeable-neutral","player-creation"},
-    minable = {mining_time = 0.66, result = "steam-turbine"},
+    minable = {mining_time = 0.66, result = "pm-advanced-steam-turbine"},
     max_health = 750,
     corpse = "steam-turbine-remnants",
     dying_explosion = "steam-turbine-explosion",
