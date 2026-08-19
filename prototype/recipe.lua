@@ -6249,6 +6249,7 @@ data:extend({
         PM.ingredient("pm-neodymium-plate", 6),
         PM.ingredient("iron-plate", 18),
         PM.ingredient("pm-samarium", 4),
+        PM.ingredient("pm-praseodymium", 4)
         PM.ingredient("pm-molten-cobalt", 7.5, "fluid")
     },
     results =
