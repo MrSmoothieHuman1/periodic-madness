@@ -7920,38 +7920,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-improved-reusable-rocket-part-unpacking",
-    icon_size = 64,
-    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/improved-reusable-rocket-part-unpacking.png"),
-    effects =
-    {
-        PM.modify_recipe_productivity("pm-reusable-rocket-part-unpacking", 0.04),
-    },
-    prerequisites = {"pm-reusable-rocket-parts"},
-    max_level = 50,
-    unit =
-    {
-      count_formula = "1.25^L*500",
-      ingredients =
-      {
-        {"automation-science-pack", 2},
-        {"logistic-science-pack", 2},
-        {"pm-advanced-advanced-transition-metal-science-pack", 2},
-        {"chemical-science-pack", 1},
-        {"pm-post-transition-metal-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1},
-        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-noble-gas-science-pack", 1},
-        {"pm-lanthanide-science-pack", 1},
-        {"space-science-pack", 1}
-      },
-      time = 160
-    }
-  },
-  {
-    type = "technology",
     name = "pm-liquid-oxygen-oxidiser",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",

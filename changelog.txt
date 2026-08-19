@@ -53,6 +53,7 @@ Date: 2025-12-19
     - Moved strontium glass/molten strontium glass into the glass subgroup.
     - Move LDS and HDS into a combined subgroup.
     - Lowered polonium reactors power output from 50MW to 40MW. This is done to make reactor tiers feel more significant, and to make power more of a concern when building (esp with modules).
+    - Removed the beacon distribution bonus technologies. This is in tandem with the hub beacon change, as i feel like the want for more bonuses didnt justify having them (too preoccupied with whether you could, to consider if you should)
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

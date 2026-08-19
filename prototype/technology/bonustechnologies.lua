@@ -1005,7 +1005,7 @@ data:extend({
 },
 
 --MARK: Beacon distribution
-{
+--[[{
   type = "technology",
   name = "pm-stronger-beacon-distribution-1",
   icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
@@ -1155,6 +1155,36 @@ data:extend({
       },
       time = 240
     }
+},--]]
+{
+  type = "technology",
+  name = "pm-stronger-beacon-distribution",
+  icons = util.technology_icon_constant_productivity("__base__/graphics/technology/effect-transmission.png"),
+  effects = 
+  {
+    PM.modify("beacon-distribution", 0.02)
+  },
+  prerequisites = {"space-science-pack"},
+  max_level = 25,
+  unit =
+  {
+    count_formula = "1.25^L*250",
+    ingredients = 
+    {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+    },
+    time = 160,
+  },
 },
 
 --MARK: Shooting damage
@@ -2036,6 +2066,38 @@ data:extend({
   },
 
   --MARK: Productivity
+  {
+    type = "technology",
+    name = "pm-improved-reusable-rocket-part-unpacking",
+    icon_size = 64,
+    icons = util.technology_icon_constant_productivity("__periodic-madness__/graphics/technology/improved-reusable-rocket-part-unpacking.png"),
+    effects =
+    {
+        PM.modify_recipe_productivity("pm-reusable-rocket-part-unpacking", 0.04),
+    },
+    prerequisites = {"pm-reusable-rocket-parts"},
+    max_level = 50,
+    unit =
+    {
+      count_formula = "1.25^L*500",
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 160
+    }
+  },
 
   --MARK: Science prod
   {
