@@ -121,7 +121,7 @@ data:extend({
     results =
     {
       PM.product("pm-polonium-210"):amount(2, 3):catalyst(2):done(),
-      PM.product("pm-bismuth-210"):amount(2, 3):catalyst(2):done(),
+      PM.product("pm-bismuth-210"):amount(2, 3):catalyst(3):done(),
     }
   },
   {

@@ -21,6 +21,7 @@ Date: 2025-12-19
     - Added Ytterbium.
     - Added Lutetium.
     - Added Thorium.
+    - Added Protactinium.
     - Added the lanthanide science pack, which requires an entirely new lab and any research past lanthanides now requires double of TM/ATM/AATM science!
     - Speaking about what i just spoke, added the final tier of labs!
     - Added thorium power.

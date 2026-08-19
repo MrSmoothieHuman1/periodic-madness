@@ -135,6 +135,7 @@ require("prototype.elements.069-thulium")
 require("prototype.elements.070-ytterbium")
 require("prototype.elements.071-lutetium")
 require("prototype.elements.001-hydrogen")
+require("prototype.elements.091-protactinium")
 
 require("prototype.entity")
 require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files

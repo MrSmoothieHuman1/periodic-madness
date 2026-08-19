@@ -9,7 +9,26 @@ data:extend({
         subgroup = "pm-uranium-ac",
         order = "ca",
         stack_size = 100,
-    }
+    },
+
+    {
+        type = "recipe",
+        name = "pm-uranium-233",
+        enabled = false,
+        energy_required = 12,
+        categories = {"pm-beta-decay"},
+        main_product = "pm-uranium-233",
+        allow_productivity = true,
+        ingredients = 
+        {
+            PM.ingredient("pm-protactinium-233", 6),
+        },
+        results =
+        {
+            PM.product("pm-uranium-233"):amount(3):chance(0, 0.5):done(),
+            PM.product("pm-protactinium-233"):amount(3):chance(0.5, 1):catalyst(3):done()
+        }
+    },
 })
 
 data.raw["item"]["uranium-ore"].subgroup = "pm-uranium-ac"
