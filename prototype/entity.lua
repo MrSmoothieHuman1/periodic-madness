@@ -11237,7 +11237,7 @@ fluid_boxes =
     damaged_trigger_effect = hit_effects.entity(),
     fluid_box =
     {
-      volume = 250,
+      volume = 300,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
@@ -11263,7 +11263,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__base__/graphics/entity/steam-turbine/steam-turbine-V.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/advanced-steam-turbine/advanced-steam-turbine-V.png",
               width = 217,
               height = 374,
               frame_count = 8,
@@ -11293,7 +11293,7 @@ fluid_boxes =
           layers =
           {
             {
-              filename = "__base__/graphics/entity/steam-turbine/steam-turbine-H.png",
+              filename = "__periodic-madness__/graphics/entities/buildings/advanced-steam-turbine/advanced-steam-turbine-H.png",
               width = 320,
               height = 245,
               frame_count = 8,
