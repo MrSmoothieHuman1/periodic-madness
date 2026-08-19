@@ -9,6 +9,7 @@ data:extend({
     limit_quality = "normal",
     amount = 1,
   },
+
   {
     type = "dont-research-before-researching-achievement",
     name = "pm-legacy-code",
@@ -27,6 +28,16 @@ data:extend({
     excluded = {"steam-engine", "steam-turbine", "solar-panel", "pm-solar-panel-2", "pm-solar-panel-3", "pm-tidal-power-plant", "pm-fluid-turbine", "pm-fluid-generator"},
     included = {"nuclear-reactor", "pm-polonium-reactor", "pm-RTG"},
     objective_condition = "rocket-launched",
+  },
+  {
+    type = "dont-research-before-researching-achievement",
+    name = "pm-i-might-need-them-later",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/legacy-code.png",
+    order = "h[limitation]-g[i-might-need-it-later]",
+    dont_research = {"speed-module", "efficiency-module", "productivity-module"},
+    research_with = {"space-science-pack"},
+
   },
 
   {
