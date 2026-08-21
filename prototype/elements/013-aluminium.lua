@@ -127,7 +127,7 @@ data:extend({
     results = 
     {
       PM.product("pm-aluminium-hydroxide-slurry", "fluid"):amount(12):done(),
-      PM.product("steam", "fluid"):amount(10, 20):done()
+      PM.product("steam", "fluid"):amount(10, 20):temperature(165):done()
     }
   },
   {

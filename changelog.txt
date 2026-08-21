@@ -56,6 +56,7 @@ Date: 2025-12-19
     - Lowered polonium reactors power output from 50MW to 40MW. This is done to make reactor tiers feel more significant, and to make power more of a concern when building (esp with modules).
     - Removed the beacon distribution bonus technologies. This is in tandem with the hub beacon change, as i feel like the want for more bonuses didnt justify having them (too preoccupied with whether you could, to consider if you should)
     - Added a couple more entity/item descriptions, and touched up some other descriptions.
+    - Made the steam from aluminium come out at 165 degrees.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
