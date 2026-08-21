@@ -10759,60 +10759,12 @@ fluid_boxes =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-base.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/beta-inator/beta-inator.png",
           width = 256,
-          height = 278,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 48,
+          height = 256,
           animation_speed = 0.4,
           scale = 0.5
         },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-glass.png",
-          width = 256,
-          height = 278,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 48,
-          tint = {0, 0, 0, 0.45},
-          scale = 0.5
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-fans.png",
-          width = 256,
-          height = 278,
-          frame_count = 48,
-          line_length = 8,
-          scale = 0.5
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-platform.png",
-          width = 256,
-          height = 278,
-          frame_count = 48,
-          line_length = 8,
-          scale = 0.5
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/electronic-laser-etcher/electronic-laser-etcher-lasers.png",
-          width = 256,
-          height = 278,
-          frame_count = 48,
-          line_length = 8,
-          scale = 0.5
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/electric-coke-oven/electric-coke-oven-shadow.png",
-          width = 256,
-          height = 278,
-          frame_count = 1,
-          line_length = 1,
-          repeat_count = 48,
-          draw_as_shadow = true,
-          shift = util.by_pixel(110, 0),
-          scale = 0.5
-        }
       }
     },
     },
@@ -10835,21 +10787,19 @@ fluid_boxes =
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 500,
+        volume = 250,
         pipe_connections =
         {
-          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {1.5, -1.5}},
-          {flow_direction="input-output", direction = defines.direction.north --[[@as int]], position = {-1.5, -1.5}}
+          {flow_direction="output", direction = defines.direction.east --[[@as int]], position = {1.5, 0.5}},
         },
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 500,
+        volume = 250,
         pipe_connections =
         {
-          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {1.5, 1.5}},
-          {flow_direction="input", direction = defines.direction.south --[[@as int]], position = {-1.5, 1.5}},
+          {flow_direction="input", direction = defines.direction.west --[[@as int]], position = {-1.5, -0.5}},
         },
       },
     },
