@@ -12,6 +12,13 @@ data:extend({
         },
        subgroup = "pm-promethium-la",
        order = "a",
+        custom_tooltip_fields =
+        {
+            {
+              name = {"pm-tooltips.beta-decay"},
+              value = {"", "[img=item.pm-neodymium-147]", "item-name.neodymium-147"}
+            },
+        },
        stack_size = 200
     },
     {
@@ -27,6 +34,13 @@ data:extend({
         },
        subgroup = "pm-promethium-la",
        order = "b",
+        custom_tooltip_fields =
+        {
+            {
+              name = {"pm-tooltips.beta-decay"},
+              value = {"", "[img=item.pm-promethium-147] ", {"item-name.pm-promethium-147"}}
+            },
+        },
        stack_size = 200
     },
     {

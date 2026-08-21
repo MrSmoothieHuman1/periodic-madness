@@ -10633,7 +10633,7 @@ fluid_boxes =
   {
     type = "furnace",
     name = "pm-alpha-inator",
-    icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/alpha-inator.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.33, result = "pm-electronic-laser-etcher" },
@@ -10728,7 +10728,7 @@ fluid_boxes =
   {
     type = "furnace",
     name = "pm-beta-inator",
-    icon = "__periodic-madness__/graphics/icons/buildings/electronic-laser-etcher.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/beta-inator.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.33, result = "pm-electronic-laser-etcher" },

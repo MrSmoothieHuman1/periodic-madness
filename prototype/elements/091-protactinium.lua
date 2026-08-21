@@ -7,6 +7,13 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/ores/uranium-233.png",
         subgroup = "pm-protactinium-ac",
         order = "a",
+        custom_tooltip_fields =
+        {
+            {
+              name = {"pm-tooltips.beta-decay"},
+              value = {"", "[img=item.pm-uranium-233]", {"item-name.pm-uranium-233"}}
+            },
+        },
         stack_size = 100,
     },
 

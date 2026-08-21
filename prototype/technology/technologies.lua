@@ -2218,7 +2218,7 @@ data:extend({
       PM.unlock_recipe("pm-polonium-fuel-cell"),
       PM.unlock_recipe("pm-polonium-cell-reprocessing"),
     },
-    prerequisites = {"pm-radiation-resistant-multimetals", "pm-fluid-burning-energy"},
+    prerequisites = {"pm-decay-inators", "pm-fluid-burning-energy"},
     unit =
     {
       count = 250,
@@ -2656,6 +2656,30 @@ data:extend({
         {"pm-post-transition-metal-science-pack", 1}
       },
       time = 60,
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-decay-inators",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/decay-inators.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-alpha-inator"),
+      PM.unlock_recipe("pm-beta-inator")
+    },
+    prerequisites = {"pm-radiation-resistant-multimetals"},
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1}
+      },
+      time = 45
     }
   },
 
@@ -7360,7 +7384,7 @@ data:extend({
         PM.unlock_recipe("pm-neodymium-147"),
         PM.unlock_recipe("pm-promethium-147")
     },
-    prerequisites = {"pm-bastnasite-processing"},
+    prerequisites = {"pm-bastnasite-processing", "pm-decay-inators"},
     unit =
     {
       count = 600,
@@ -8193,7 +8217,7 @@ data:extend({
         PM.unlock_recipe("pm-protactinium-233"),
         PM.unlock_recipe("pm-uranium-233")
     },
-    prerequisites = {"pm-advanced-magnets"},
+    prerequisites = {"pm-advanced-magnets", "pm-decay-inators"},
     research_trigger =
     {
         type = "craft-item",

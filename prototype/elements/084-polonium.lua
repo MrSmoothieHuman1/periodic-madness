@@ -7,6 +7,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/bismuth-210-icon.png",
     subgroup = "pm-polonium-ptm",
     order = "a",
+        custom_tooltip_fields =
+        {
+            {
+              name = {"pm-tooltips.beta-decay"},
+              value = {"item-name.pm-polonium-210"}
+            },
+        },
     stack_size = 200
   },
   {

@@ -154,6 +154,13 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
         subgroup = "pm-thorium-ac",
         order = "j",
+        custom_tooltip_fields =
+        {
+            {
+              name = {"pm-tooltips.beta-decay"},
+              value = {"", "[img=item.pm-protactinium-233]", {"item-name.pm-protactinium-233"}}
+            },
+        },
         stack_size = 100
     },
 
