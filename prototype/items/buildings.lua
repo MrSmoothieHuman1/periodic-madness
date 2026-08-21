@@ -1063,6 +1063,26 @@ data:extend({
     stack_size = 10,
     random_tint_color = item_tints.iron_rust
   },
+  {
+    type = "item",
+    name = "pm-alpha-inator",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant.png",
+    subgroup = "pm-chemistry-machine",
+    order = "g",
+    place_result = "pm-alpha-inator",
+    stack_size = 20,
+  },
+  {
+    type = "item",
+    name = "pm-beta-inator",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/electrolysis-plant.png",
+    subgroup = "pm-chemistry-machine",
+    order = "h",
+    place_result = "pm-beta-inator",
+    stack_size = 20,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

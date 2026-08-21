@@ -87,7 +87,7 @@ data:extend({
             PM.ingredient("pm-roasted-bastnasite", 3),
             PM.ingredient("water", 25, "fluid"),
             PM.ingredient("sulfuric-acid", 15, "fluid"),
-            PM.ingredient("pm-potassium", 1)
+            PM.ingredient("pm-potassium", 2)
         },
         results =
         {

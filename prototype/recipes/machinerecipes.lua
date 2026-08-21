@@ -1925,7 +1925,43 @@ data:extend({
     {
         PM.product("pm-advanced-steam-turbine"):amount(1):done()
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-alpha-inator",
+    energy_required = 4,
+    enabled = false,
+    ingredients =
+    {
+        PM.ingredient("pm-radiation-resistant-panelling", 10),
+        PM.ingredient("pm-glass-pane", 6),
+        PM.ingredient("concrete", 8),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-fluid-circuit", 2)
+    },
+    results =
+    {
+      PM.product("pm-alpha-inator"):amount(1):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-beta-inator",
+    energy_required = 4,
+    enabled = false,
+    ingredients =
+    {
+        PM.ingredient("pm-radiation-resistant-panelling", 12),
+        PM.ingredient("pm-glass-pane", 6),
+        PM.ingredient("concrete", 10),
+        PM.ingredient("pm-corrosion-resistant-tubing", 8),
+        PM.ingredient("pm-fluid-circuit", 2)
+    },
+    results =
+    {
+      PM.product("pm-beta-inator"):amount(1):done()
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

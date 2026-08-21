@@ -490,6 +490,6 @@ data:extend({
             PM.product("pm-undiffereniated-carbazole", "fluid"):amount(15):chance(0.45, 1):done(),
             PM.product("pm-nickel-plate"):amount(3):catalyst(3):done(), --this too should be its own catalyst in hard mode
         }
-    }
+    },
 })
 end
