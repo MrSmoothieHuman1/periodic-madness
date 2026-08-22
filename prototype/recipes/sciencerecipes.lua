@@ -6,6 +6,7 @@ data:extend({
     order = "c",
     energy_required = 6,
     allow_productivity = true,
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-titanium-plate", 8),
@@ -28,6 +29,7 @@ data:extend({
     order = "e",
     energy_required = 6,
     allow_productivity = true,
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-aluminium-plate", 5),
@@ -52,6 +54,7 @@ data:extend({
     energy_required = 6,
     allow_productivity = true,
     main_product = "pm-alkali-metal-science-pack",
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-caesium-glass-ampule", 2),
@@ -76,6 +79,7 @@ data:extend({
     order = "g",
     energy_required = 6,
     allow_productivity = true,
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-antimony-ore", 6),
@@ -99,6 +103,7 @@ data:extend({
     order = "h",
     energy_required = 6,
     allow_productivity = true,
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-calcium-ore", 24),
@@ -136,6 +141,7 @@ data:extend({
     order = "i",
     energy_required = 6,
     allow_productivity = true,
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-yttrium-ore", 5),
@@ -173,6 +179,7 @@ data:extend({
     order = "ia",
     energy_required = 6,
     allow_productivity = true,
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-yttrium-ore", 3),
@@ -197,6 +204,7 @@ data:extend({
     subgroup = "science-pack",
     order = "j",
     allow_productivity = true,
+    auto_recycle = true,
     ingredients = 
     {
         PM.ingredient("pm-light-noble-gas-mixture", 80, "fluid"),
@@ -216,6 +224,7 @@ data:extend({
     subgroup = "science-pack",
     order = "k",
     allow_productivity = true,
+    auto_recycle = true,
     ingredients =
     {
         PM.ingredient("pm-cerium-plate", 20),
@@ -514,6 +523,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     allow_productivity = true,
+    auto_recycle = false,
     ingredients = 
     {
         PM.ingredient("iron-plate", 15),
@@ -536,6 +546,7 @@ data:extend({
     energy_required = 12,
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("pm-gold-plate", 35),
@@ -557,6 +568,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("pm-titanium-plate", 60),
@@ -579,6 +591,7 @@ data:extend({
     energy_required = 12,
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("sulfur", 80),
@@ -604,6 +617,7 @@ data:extend({
     energy_required = 12,
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("pm-liquid-gallium", 50, "fluid"),
@@ -628,6 +642,7 @@ data:extend({
     energy_required = 12,
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
+    auto_recycle = false,
     main_product = "pm-alkali-metal-science-pack",
     ingredients =
     {
@@ -651,6 +666,7 @@ data:extend({
     energy_required = 12,
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("pm-arsenic-ore", 45),
@@ -671,6 +687,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("pm-calcium-ore", 160),
@@ -692,6 +709,7 @@ data:extend({
     energy_required = 12,
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("pm-yttrium-ore", 30),
@@ -715,6 +733,7 @@ data:extend({
     energy_required = 12,
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
+    auto_recycle = false,
     ingredients =
     {
         PM.ingredient("pm-light-noble-gas-mixture", 600, "fluid"),

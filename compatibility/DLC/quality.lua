@@ -136,6 +136,16 @@ if mods["quality"] then
         PM.ingredient("advanced-circuit", 5),
     }
 
+    data.raw["recipe"]["recycler"].categories = {"crafting-with-fluid"}
+    data.raw["recipe"]["recycler"].ingredients =
+    {
+        PM.ingredient("concrete", 6),
+        PM.ingredient("advanced-circuit", 3),
+        PM.ingredient("pm-brass-cog", 4),
+        PM.ingredient("pm-heavyweight-panelling", 8),
+        PM.ingredient("pm-heavy-lubricant", 5, "fluid")
+    }
+
 --#MARK: Entity Changes
 data.raw["furnace"]["electric-furnace"].quality_affects_module_slots = true
 data.raw["furnace"]["electric-furnace"].module_slots_quality_bonus =  {["uncommon"] = 1, ["rare"] = 2, ["epic"] = 3, ["legendary"] = 4}
@@ -154,6 +164,43 @@ data.raw["quality"]["uncommon"].tool_durability_multiplier = 3 --300%
 data.raw["quality"]["rare"].tool_durability_multiplier = 5 --500%
 data.raw["quality"]["epic"].tool_durability_multiplier = 7 --700%
 data.raw["quality"]["legendary"].tool_durability_multiplier = 12 --1200%
+
+--#MARK: Item changes
+
+data.raw["item"]["pm-ferrum"].auto_recycle = false
+data.raw["item"]["pm-patina"].auto_recycle = false
+data.raw["item"]["pm-mixed-ore-slag"].auto_recycle = false
+data.raw["item"]["pm-combined-ore-slab"].auto_recycle = false
+
+data.raw["item"]["automation-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-transition-metal-science"].auto_recycle = false
+data.raw["item"]["logistic-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-advanced-transition-metal-science"].auto_recycle = false
+data.raw["tool"]["pm-advanced-advanced-transition-metal-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-advanced-advanced-transition-metal-science"].auto_recycle = false
+data.raw["item"]["chemical-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-reactive-non-metal-science"].auto_recycle = false
+data.raw["tool"]["pm-post-transition-metal-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-post-transition-metal-science"].auto_recycle = false
+data.raw["tool"]["pm-alkali-metal-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-alkali-metal-science"].auto_recycle = false
+data.raw["tool"]["pm-metalloid-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-metalloid-science"].auto_recycle = false
+data.raw["tool"]["pm-advanced-advanced-advanced-transition-metal-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-advanced-advanced-advanced-transition-metal-science"].auto_recycle = false
+data.raw["tool"]["pm-alkaline-earth-metal-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-alkaline-earth-metal-science"].auto_recycle = false
+data.raw["tool"]["pm-noble-gas-science-pack"].auto_recycle = true
+data.raw["recipe"]["pm-liquid-noble-gas-science"].auto_recycle = false
+data.raw["tool"]["pm-lanthanide-science-pack"].auto_recycle = true
+
+data.raw["tool"]["pm-experimental-research-data"].auto_recycle = true
+data.raw["item"]["space-science-pack"].auto_recycle = true
+
+data.raw["tool"]["pm-health-bio-module"].auto_recycle = false
+data.raw["tool"]["pm-agility-bio-module"].auto_recycle = false
+data.raw["tool"]["pm-strength-bio-module"].auto_recycle = false
+
 
 
 --#MARK: New stuff

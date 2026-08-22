@@ -92,8 +92,8 @@ data:extend({
         {
             PM.product("pm-thortveitite"):amount(12):done(),
             PM.product("pm-cadnium-sulfate"):amount(0, 1):done(),
-            PM.product("pm-tantalite-oxide"):amount(0, 2):done(),
-            PM.product("pm-niobite-oxide"):amount(0, 2):done()
+            PM.product("pm-tantalite-oxide"):amount(1, 2):chance(0, 0.5):done(),
+            PM.product("pm-niobite-oxide"):amount(1, 2):chance(0.5, 1):done()
         }
     },
     {
