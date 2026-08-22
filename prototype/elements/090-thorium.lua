@@ -390,7 +390,7 @@ data:extend({
         {
             PM.product("pm-sodium-diuranate"):amount(1):chance(0.01):done(),
             PM.product("pm-trisodium-phosphate"):amount(0, 2):done(),
-            PM.product("pm-thorium-precipitate", "fluid"):amount(2):done()
+            PM.product("pm-thorium-precipitate", "fluid"):amount(2.5):done()
         }
     },
     {

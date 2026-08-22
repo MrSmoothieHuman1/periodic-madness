@@ -46,7 +46,7 @@ Date: 2025-12-19
     - Made space circuit RCU recipe be 35s, but made it craft 2 at once.
     - Rebalanced flux requirements for alloys/molten metal chains: starter alloys (up to kasethal/stainless steel) takes 1 flux, uhrlumin/inconel/HDS take 2 flux, and any alloys past this take 3.
     - Changed zirconium sand icon to fit with newer graphics.
-    - Lowered hub beacon distribution efficiency from 0.75 to 0.5. This is part of a larger change towards beacon strength, as the three types of beacons should all have their own pros and cons.
+    - Lowered hub beacon distribution efficiency from 0.75 to 0.5. This is part of a larger change towards beacon balance, as the three types of beacons should all have their own pros and cons.
     - Changed nitrous iron to be produced 75% of the time instead of 50%.
     - Lowered amount of cobaltite from 0-3 69%, to 0-2 69% chance, with the fluxed recipe being 1 34%.
     - Lowered amount of arsenic from cobaltite from 3-6 to 2-5.
@@ -58,6 +58,10 @@ Date: 2025-12-19
     - Added a couple more entity/item descriptions, and touched up some other descriptions.
     - Made the steam from aluminium come out at 165 degrees.
     - Gave all reactors unique map colours.
+    - Reworked hub beacons to work more similarily to WAB's from Space Exploration. having 1 or 2 hub beacons stays at their base strength, but anymore and their strength starts dropping.
+    - Hub beacons now only lose transmission strength from other hub beacons.
+    - Proximity beacons now lose transmission strength from all beacons.
+    - Proximity beacons now have 2 distribution efficiency instead of 2.25.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

@@ -45,24 +45,23 @@ data:extend({
         },
         energy_usage = "500kW",
         distribution_effectivity = 0.5,
-        distribution_effectivity_bonus_per_quality_level = 0.2,
-        profile = 
+        distribution_effectivity_bonus_per_quality_level = 0.1,
+        profile =
         {
-            1,
-            0.975, 0.95, 0.925, 0.9,
-            0.874, 0.849, 0.824, 0.799,
-            0.773, 0.748, 0.723, 0.698,
-            0.672, 0.647, 0.622, 0.597,
-            0.571, 0.546, 0.521, 0.496,
-            0.470, 0.445, 0.420, 0.395,
-            0.369, 0.344, 0.319, 0.294,
-            0.268, 0.243, 0.218, 0.193,
-            0.167, 0.142, 0.117, 0.092,
-            0.066, 0.041, 0.016
-            -- loses 0.25 for every extra beacon, every time it goes down a 0.X, it loses +0.01
-            -- the final number before it goes down a 'level' is just the 0.X number, with the same rules as before
+            1, --1 beacon
+            0.5, --2 beacoon
+            0.25, --3 beacooon
+            0.125, --4 beacoooon
+            0.125 / 2, --5 beacoooon
+            0.125 / 4, --6 beacoooooon
+            0.125 / 8, --7 beacooooooon
+            0.125 / 16, --8 beacoooooooon
+            0.125 / 32, --9 beacooooooooon
+            0.125 / 64, --10 beacoooooooooon
+            0.125 / 128, --11 beacooooooooooon
+            0.125 / 256 --12 beacoooooooooooon
         },
-        beacon_counter = "total",
+        beacon_counter = "same_type",
         module_slots = 6,
         icons_positioning =
         {
@@ -126,9 +125,9 @@ data:extend({
           max_sounds_per_prototype = 3
         },
         energy_usage = "1MW",
-        distribution_effectivity = 2.25,
-        distribution_effectivity_bonus_per_quality_level = 0.2,
-        profile = 
+        distribution_effectivity = 2,
+        distribution_effectivity_bonus_per_quality_level = 0.25,
+        profile =
         {
             1,
             0.7071, 0.5, 0.4082, 0.3535, 0.3162, 0.2886, 0.2672, 0.25, 0.2357,
@@ -139,7 +138,7 @@ data:extend({
             0.1
             -- normal beacon distribution but with every other number cut out
         },
-        beacon_counter = "same_type",
+        beacon_counter = "total",
         module_slots = 2,
         icons_positioning =
         {
