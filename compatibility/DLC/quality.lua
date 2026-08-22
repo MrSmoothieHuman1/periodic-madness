@@ -48,6 +48,60 @@ if mods["quality"] then
         {"pm-metalloid-science-pack", 1}
     }
 
+    data.raw["technology"]["epic-quality"].prerequisites = {"pm-advanced-modules"}
+    data.raw["technology"]["epic-quality"].unit =
+    {
+      count = 750,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+      },
+      time = 100
+    }
+
+    data.raw["technology"]["legendary-quality"].prerequisites = {"space-science-pack"}
+    data.raw["technology"]["legendary-quality"].unit =
+    {
+      count = 800,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 140
+    }
+
+    data.raw["technology"]["recycling"].prerequisites = {"modules", "concrete"}
+    data.raw["technology"]["recycling"].unit = 
+    {
+      count = 300,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+      },
+      time = 60
+    }
+
     table.insert(data.raw["technology"]["pm-advanced-modules"].prerequisites, "quality-module-3")
 
     table.insert(data.raw["module"]["pm-speed-module-4"].effect, {quality = -0.025})
