@@ -1,8 +1,5 @@
----@class PollutionData : data.ModData
----@field data_type "pm-pollution-limit"
----@field data PMPollutionLimitsModData
 
----@class PMPollutionLimitsModData
+---@class pm-pollution-limit
 ---@field entity data.EntityID
 ---@field min_pollution number The amount of pollution it needs to work
 ---@field max_pollution number The amount of pollution where it stops working
@@ -10,18 +7,19 @@
 ---@param entity data.EntityID
 ---@param min number
 ---@param max number
----@return PollutionData
+---@return data.ModData
 local function limit_pollution(entity, min, max)
 	return {
 		type = "mod-data",
 		name = entity.."-pollution-data",
 		data_type = "pm-pollution-limit",
+		---@type pm-pollution-limit
 		data = {
 			entity = entity,
 			min_pollution = min,
 			max_pollution = max,
 		}
-	}--[[@as PollutionData]]
+	}
 end
 
 --   15 pollution in a til is the min. amount needed to have it spread

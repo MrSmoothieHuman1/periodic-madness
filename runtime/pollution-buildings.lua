@@ -5,23 +5,23 @@ handler.events = {}
 
 ---@class (partial) PeriodicStorage
 ---@field pollution_buildings_count int
----@field pollution_buildings Mapping<uint,PollutionBuilding>
+---@field pollution_buildings Mapping<uint,PollutionLimitTracking>
 ---@field pollution_index? uint
 storage = storage
 
----@type {[data.EntityID]?:PMPollutionLimitsModData}
-local pollution_definition = {}
+---@type {[data.EntityID]?:pm-pollution-limit}
+local pollution_definition_map = {}
 for data_name, mod_data in pairs(prototypes.mod_data) do
   if mod_data.data_type == "pm-pollution-limit" then
-    ---@cast mod_data LuaModData<PMPollutionLimitsModData>
+    ---@cast mod_data LuaModData<pm-pollution-limit>
     local data = mod_data.data
     -- Data validation
     if type(data.entity) ~= "string" or not prototypes.entity[data.entity] then error("The `pm-pollution-limit` of "..data_name.." expects an entity ID") end
-    if pollution_definition[data.entity] then error("There's two defined pollution limits for '"..data.entity.."'") end
+    if pollution_definition_map[data.entity] then error("There's two defined pollution limits for '"..data.entity.."'") end
     if type(data.max_pollution) ~= "number" then error("The `pm-pollution-limit` of "..data_name.." expects a number for the `max_pollution`") end
     if type(data.min_pollution) ~= "number" then error("The `pm-pollution-limit` of "..data_name.." expects a number for the `min_pollution`") end
 
-    pollution_definition[data.entity] = data
+    pollution_definition_map[data.entity] = data
   end
 end
 
@@ -39,10 +39,9 @@ end
 --135-145: Tenth colour
 --145-150+: Eleventh colour (max)
 
----@class PollutionBuilding
+---@class PollutionLimitTracking : pm-pollution-limit
 ---@field entity LuaEntity
----@field min_pollution number The amount of pollution it needs to work
----@field max_pollution number The amount of pollution where it stops working
+---@field tooltip RuntimeTooltipField
 ---@field alert? LuaRenderObject
 
 ---MARK: Entity Tracking
@@ -50,27 +49,27 @@ end
 PM.compound_events.built_events(handler.events, function (event)
   local entity = event.entity or event.destination
   ---@cast entity -?
-  local pollution_numbers = pollution_definition[entity.name]
-  if not pollution_numbers then return end -- Not an entity we care about
+  local pollution_definition = pollution_definition_map[entity.name]
+  if not pollution_definition then return end -- Not an entity we care about
 
   storage.pollution_buildings_count = storage.pollution_buildings_count + 1
   storage.pollution_buildings[entity.unit_number--[[@cast -?]]] = {
     entity = entity,
-    min_pollution = pollution_numbers.min_pollution,
-    max_pollution = pollution_numbers.max_pollution,
+    min_pollution = pollution_definition.min_pollution,
+    max_pollution = pollution_definition.max_pollution,
   }
 end)
 
 --MARK: Disabling
 
 ---@param entity LuaEntity
----@param object PollutionBuilding
+---@param tracker PollutionLimitTracking
 ---@param diode defines.entity_status_diode
 ---@param status LocalisedString
 ---@param signal? SignalID
 ---@param alert? LocalisedString
 ---@param sprite LuaRendering.draw_sprite_param
-local function disable_building(entity, object, diode, status, signal, alert, sprite)
+local function disable_building(entity, tracker, diode, status, signal, alert, sprite)
   ---@cast entity.force LuaForce
   if signal and alert then
     entity.force.add_custom_alert(
@@ -78,32 +77,32 @@ local function disable_building(entity, object, diode, status, signal, alert, sp
     )
   end
 
-  local alert = object.alert
+  local alert = tracker.alert
   if not alert or not alert.valid then
     entity.disabled_by_script = true
     entity.custom_status = { diode = diode, label = status }
-    object.alert = rendering.draw_sprite(sprite)
+    tracker.alert = rendering.draw_sprite(sprite)
   else
     alert.time_to_live = sprite.time_to_live
   end
 end
 
-local function enable_building(entity, object)
+local function enable_building(entity, tracker)
   entity.disabled_by_script = false
   entity.custom_status = nil
-  object.alert.destroy()
-  object.alert = nil
+  tracker.alert.destroy()
+  tracker.alert = nil
 end
 
 --MARK: Pollution checking
 
 ---@param entity LuaEntity
----@param pollution_object PollutionBuilding
-local function check_pollution(entity, pollution_object)
+---@param tracker PollutionLimitTracking
+local function check_pollution(entity, tracker)
   local pollution = entity.surface.get_pollution(entity.position)
 
-  if pollution > pollution_object.max_pollution then
-    disable_building(entity, pollution_object,
+  if pollution > tracker.max_pollution then
+    disable_building(entity, tracker,
       -- Custom Status
       defines.entity_status_diode.red,
       {"entity-status.pm-too-much-pollution"},
@@ -121,8 +120,8 @@ local function check_pollution(entity, pollution_object)
       }
     )
 
-  elseif pollution < pollution_object.min_pollution then
-    disable_building(entity, pollution_object,
+  elseif pollution < tracker.min_pollution then
+    disable_building(entity, tracker,
       -- Custom Status
       defines.entity_status_diode.red,
       {"entity-status.pm-too-little-pollution"},
@@ -139,8 +138,8 @@ local function check_pollution(entity, pollution_object)
       }
     )
 
-  elseif pollution_object.alert then
-    enable_building(entity, pollution_object)
+  elseif tracker.alert then
+    enable_building(entity, tracker)
   end
 end
 
@@ -152,16 +151,16 @@ handler.events[defines.events.on_tick] = function (event)
   local count = 0
 
   -- Loop start
-  local index, object = next(buildings, storage.pollution_index)
-  while object do
+  local index, tracker = next(buildings, storage.pollution_index)
+  while tracker do
 
     -- Loop body
-    local entity = object.entity
+    local entity = tracker.entity
     if not entity.valid then
       buildings[index--[[@cast -?]]] = nil
       storage.pollution_buildings_count = storage.pollution_buildings_count - 1
     else
-      check_pollution(entity, object)
+      check_pollution(entity, tracker)
 
       -- Iteration
       -- In the else chunk so it *has* to fetch a new index
@@ -170,7 +169,7 @@ handler.events[defines.events.on_tick] = function (event)
     end
 
     if count >= max_count then break end
-    index, object = next(buildings, index)
+    index, tracker = next(buildings, index)
   end
   -- Save progress on the loop
   storage.pollution_index = index
@@ -180,13 +179,13 @@ end
 
 local function reload_buildings()
   local old_list = storage.pollution_buildings or {}
-  ---@type Mapping<uint,PollutionBuilding>
+  ---@type Mapping<uint,PollutionLimitTracking>
   local new_list, count = {}, 0
   storage.pollution_buildings = new_list
   storage.pollution_index = nil
 
   local building_list, build_count = {}, 0
-  for building in pairs(pollution_definition) do
+  for building in pairs(pollution_definition_map) do
     build_count = build_count + 1
     building_list[build_count] = building
   end
@@ -198,23 +197,23 @@ local function reload_buildings()
       count = count + 1
       local unit_id = entity.unit_number
       ---@cast unit_id -?
-      local pollution_numbers = pollution_definition[entity.name]
-      ---@cast pollution_numbers -?
+      local definition = pollution_definition_map[entity.name]
+      ---@cast definition -?
 
-      local old_object = old_list[unit_id] or {}
+      local old_tracker = old_list[unit_id] or {}--[[@as PollutionLimitTracking]]
       -- HACK: Because Black released an update that *didn't* include the fix for this >:(
-      if not old_object.alert and entity.disabled_by_script then
----@diagnostic disable-next-line: missing-fields
-        old_object.alert = {destroy = function()end} -- Will get 'destroyed' so doesn't matter
-        enable_building(entity, old_object) -- If it's meant to be disabled, it will be re-disabled :shrug:
+      if not old_tracker.alert and entity.disabled_by_script then
+---@diagnostic disable-next-line: assign-type-mismatch
+        old_tracker.alert = {destroy = function()end} -- Will get 'destroyed' so doesn't matter
+        enable_building(entity, old_tracker) -- If it's meant to be disabled, it will be re-disabled :shrug:
       end
 
       ---@type PollutionBuilding
       local pollution_object = {
         entity = entity,
-        min_pollution = pollution_numbers.min_pollution,
-        max_pollution = pollution_numbers.max_pollution,
-        alert = old_object.alert -- Migrate the disabled status so it can properly enable if values expanded
+        min_pollution = definition.min_pollution,
+        max_pollution = definition.max_pollution,
+        alert = old_tracker.alert -- Migrate the disabled status so it can properly enable if values expanded
       }
       new_list[unit_id] = pollution_object
       old_list[unit_id] = nil
@@ -224,9 +223,9 @@ local function reload_buildings()
   storage.pollution_buildings_count = count
 
   -- Go over all entities no longer watched, and make sure they're enabled.
-  for _, object in pairs(old_list) do
-    if object.alert then
-      enable_building(object.entity, object)
+  for _, tracker in pairs(old_list) do
+    if tracker.alert then
+      enable_building(tracker.entity, tracker)
     end
   end
 end
