@@ -11873,6 +11873,131 @@ fluid_boxes =
     fade_out_ticks = 20
   },
 },
+{
+  type = "assembling-machine",
+  name = "pm-liquid-science-plant",
+  icon_size = 64,
+  icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-2.png",
+  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  minable = { mining_time = 1.25, result = "pm-mixing-tank-2" },
+  max_health = 750,
+  collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
+  selection_box = { { -3, -3 }, { 3, 3 } },
+  corpse = "assembling-machine-1-remnants",
+  dying_explosion = "assembling-machine-1-explosion",
+  crafting_categories = { "pm-liquid-science" },
+  module_slots = 2,
+  allowed_effects = PM.all_effects(),
+  crafting_speed = 1,
+  circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+  circuit_connector = circuit_connector_definitions["mixing-tank"],
+  energy_source =
+  {
+    type = "electric",
+    usage_priority = "secondary-input",
+    emissions_per_minute = {pollution = 2}
+  },
+  energy_usage = "750kW",
+  graphics_set =
+  {
+  status_colors = pm_diode_status_colors(),
+  animation =
+  {
+    north =
+    {
+        layers =
+        {
+          {
+            filename =
+            "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank-north-south-base.png",
+            width = 320,
+            height = 320,
+            repeat_count = 32,
+            line_length = 1,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+        }
+    },
+  }
+},
+fluid_boxes =
+{
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-2.5, 2.5} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-1.5, 2.5} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {1.5, 2.5} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {2.5, 2.5} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {2.5, -2.5} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1.5, -2.5} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1.5, -2.5} }},
+  },
+  {
+    production_type = "input",
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-2.5, -2.5} }},
+  },
+
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 500,
+    pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-2.5, 0.5} }},
+  },
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 500,
+    pipe_connections = {{ flow_direction="input-output", direction = defines.direction.west, position = {-2.5, -0.5} }},
+  },
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 500,
+    pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {2.5, 0.5} }},
+  },
+  {
+    production_type = "output",
+    pipe_covers = pipecoverspictures(),
+    volume = 500,
+    pipe_connections = {{ flow_direction="input-output", direction = defines.direction.east, position = {2.5, -0.5} }},
+  },
+},
+}--[[@as data.AssemblingMachinePrototype]],
 })
 data:extend({
 fireutil.add_magnesium_fire_graphics_and_effects_definitions

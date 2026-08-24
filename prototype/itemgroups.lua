@@ -162,6 +162,10 @@ data:extend({
     type = "recipe-category",
     name = "pm-reverberatory-smelting"
   },
+  {
+    type = "recipe-category",
+    name = "pm-liquid-science"
+  },
 
   -- For the consumption of reactor coolant
 	{

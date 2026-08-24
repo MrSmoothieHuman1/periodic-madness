@@ -490,7 +490,7 @@ data:extend({
     name = "pm-liquid-transition-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients = 
@@ -513,7 +513,7 @@ data:extend({
     name = "pm-liquid-advanced-transition-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -536,7 +536,7 @@ data:extend({
     name = "pm-liquid-advanced-advanced-transition-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -559,7 +559,7 @@ data:extend({
     name = "pm-liquid-reactive-non-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -585,7 +585,7 @@ data:extend({
     name = "pm-liquid-post-transition-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -610,7 +610,7 @@ data:extend({
     name = "pm-liquid-alkali-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     main_product = "pm-liquid-alkali-metal-science",
@@ -634,7 +634,7 @@ data:extend({
     name = "pm-liquid-metalloid-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -656,7 +656,7 @@ data:extend({
     name = "pm-liquid-alkaline-earth-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -678,7 +678,7 @@ data:extend({
     name = "pm-liquid-advanced-advanced-advanced-transition-metal-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -702,7 +702,7 @@ data:extend({
     name = "pm-liquid-noble-gas-science",
     enabled = false,
     energy_required = 12,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -720,7 +720,7 @@ data:extend({
     name = "pm-liquid-lanthanide-science",
     enabled = false,
     energy_required = 6,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = true,
     ingredients =
