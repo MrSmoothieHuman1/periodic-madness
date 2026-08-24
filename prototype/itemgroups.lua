@@ -1656,15 +1656,27 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-research-data",
+    name = "pm-liquid-science",
     group = "pm-science",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "pm-bio-modules-rnm",
+    name = "pm-liquid-science-bottling",
     group = "pm-science",
     order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-research-data",
+    group = "pm-science",
+    order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-bio-modules-rnm",
+    group = "pm-science",
+    order = "h"
   },
 
 --MARK: Rocket tab

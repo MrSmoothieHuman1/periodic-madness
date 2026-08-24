@@ -522,6 +522,7 @@ data:extend({
     name = "pm-liquid-transition-metal-science",
     enabled = false,
     energy_required = 12,
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients = 
@@ -536,7 +537,7 @@ data:extend({
     },
     results = 
     {
-        PM.product("automation-science-pack"):amount(10):done()
+        PM.product("pm-liquid-transition-metal-science", "fluid"):amount(100):done()
     }
 },
 {
@@ -559,7 +560,7 @@ data:extend({
     },
     results =
     {
-        PM.product("logistic-science-pack"):amount(10):done()
+        PM.product("pm-liquid-advanced-transition-metal-science", "fluid"):amount(100):done()
     }
 },
 {
@@ -567,6 +568,7 @@ data:extend({
     name = "pm-liquid-advanced-advanced-transition-metal-science",
     enabled = false,
     energy_required = 12,
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -581,7 +583,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-advanced-advanced-transition-metal-science-pack"):amount(10):done()
+        PM.product("pm-liquid-advanced-advanced-transition-metal-science", "fluid"):amount(10):done()
     }
 },
 {
@@ -607,7 +609,7 @@ data:extend({
     },
     results =
     {
-        PM.product("chemical-science-pack"):amount(10):done()
+        PM.product("pm-liquid-reactive-non-metal-science", "fluid"):amount(100):done()
     }
 },
 {
@@ -632,7 +634,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-post-transition-metal-science-pack"):amount(10):done()
+        PM.product("pm-liquid-post-transition-metal-science", "fluid"):amount(100):done()
     }
 },
 {
@@ -643,7 +645,7 @@ data:extend({
     categories = {"crafting-with-fluid"},
     allow_productivity = true,
     auto_recycle = false,
-    main_product = "pm-alkali-metal-science-pack",
+    main_product = "pm-liquid-alkali-metal-science",
     ingredients =
     {
         PM.ingredient("pm-sodium", 150),
@@ -655,7 +657,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-alkali-metal-science-pack"):amount(10):done(),
+        PM.product("pm-liquid-alkali-metal-science", "fluid"):amount(100):done(),
         PM.product("pm-empty-glass-ampule"):amount(20):chance(0.95):catalyst(20):done()
     }
 },
@@ -678,7 +680,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-metalloid-science-pack"):amount(10):done(),
+        PM.product("pm-liquid-metalloid-science", "fluid"):amount(100):done(),
     }
 },
 {
@@ -686,6 +688,7 @@ data:extend({
     name = "pm-liquid-alkaline-earth-metal-science",
     enabled = false,
     energy_required = 12,
+    categories = {"crafting-with-fluid"},
     allow_productivity = true,
     auto_recycle = false,
     ingredients =
@@ -699,7 +702,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-alkaline-earth-metal-science-pack"):amount(10):done(),
+        PM.product("pm-liquid-alkaline-earth-metal-science", "fluid"):amount(100):done(),
     }
 },
 {
@@ -723,7 +726,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack"):amount(10):done(),
+        PM.product("pm-liquid-advanced-advanced-advanced-transition-metal-science", "fluid"):amount(100):done(),
     }
 },
 {
@@ -741,7 +744,268 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-noble-gas-science-pack"):amount(10):done(),
+        PM.product("pm-liquid-noble-gas-science", "fluid"):amount(100):done(),
+    }
+},
+
+{
+    type = "recipe",
+    name = "pm-liquid-transition-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "a",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-transition-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("automation-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-transition-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "b",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-advanced-transition-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("logistic-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-advanced-transition-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "c",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients =
+    {
+        PM.ingredient("pm-liquid-advanced-advanced-transition-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results =
+    {
+        PM.product("pm-advanced-advanced-transition-metal-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-reactive-non-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "d",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients =
+    {
+        PM.ingredient("pm-liquid-reactive-non-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results =
+    {
+        PM.product("chemical-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-transition-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "b",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients =
+    {
+        PM.ingredient("pm-liquid-advanced-transition-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results =
+    {
+        PM.product("logistic-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-advanced-transition-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "c",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients =
+    {
+        PM.ingredient("pm-liquid-advanced-advanced-transition-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results =
+    {
+        PM.product("pm-advanced-advanced-transition-metal-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-reactive-non-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "d",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients =
+    {
+        PM.ingredient("pm-liquid-reactive-non-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results =
+    {
+        PM.product("chemical-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-post-transition-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "e",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-post-transition-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-post-transition-metal-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-alkali-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "f",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-alkali-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-alkali-metal-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-metalloid-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "g",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-metalloid-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-metalloid-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-alkaline-earth-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "h",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-alkaline-earth-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-alkaline-earth-metal-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-advanced-advanced-advanced-transition-metal-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "i",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-advanced-advanced-advanced-transition-metal-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-advanced-advanced-advanced-transition-metal-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-noble-gas-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "j",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-noble-gas-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-noble-gas-science-pack"):amount(1):done()
     }
 },
 
