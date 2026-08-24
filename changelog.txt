@@ -36,6 +36,7 @@ Date: 2025-12-19
     - Gave the rocket silo circuit connections.
     - Added an advanced steam turbine, with 150% efficiency thats unlocked at advanced advanced advanced transition metals.
     - Updated the colourblind friendly circuit icons.
+    - Buildings that cannot work in certain pollution values now show their max pollutant value, and the amount of pollutant in the chunk they currently exist in.
 
   Changes:
     - Updated the two steel items graphics and their technology icons.

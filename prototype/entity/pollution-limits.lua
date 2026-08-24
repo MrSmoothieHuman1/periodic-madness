@@ -14,7 +14,7 @@
 ---@return data.ModData
 local function limit_pollution(entity, pollutant, min, max)
 	local has_min = min >= 0.05
-	local has_max = max < 1/0
+	local has_max = max <= 1/0
 
 	local pollutant_prototype = PM.get_prototype("airborne-pollutant", pollutant)
 	local pollutant_amount_key = pollutant_prototype.localised_name_with_amount or "airborne-pollutant-name-with-amount."..pollutant
