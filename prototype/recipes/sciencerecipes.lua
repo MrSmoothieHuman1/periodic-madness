@@ -216,38 +216,6 @@ data:extend({
         PM.product("pm-noble-gas-science-pack"):amount(1):done()
     }
 },
-{
-    type = "recipe",
-    name = "pm-lanthanide-science-pack",
-    enabled = false,
-    energy_required = 6,
-    subgroup = "science-pack",
-    order = "k",
-    allow_productivity = true,
-    auto_recycle = true,
-    ingredients =
-    {
-        PM.ingredient("pm-cerium-plate", 20),
-        PM.ingredient("pm-praseodymium", 25),
-        PM.ingredient("pm-neodymium-plate", 30),
-        PM.ingredient("pm-promethium-147", 8),
-        PM.ingredient("pm-samarium", 25),
-        PM.ingredient("pm-europium", 50),
-        PM.ingredient("pm-gadolinium", 32),
-        PM.ingredient("pm-terbium", 24),
-        PM.ingredient("pm-dysprosium-plate", 15),
-        PM.ingredient("pm-holmium-plate", 15),
-        PM.ingredient("pm-erbium-plate", 50),
-        PM.ingredient("pm-thulium", 10),
-        PM.ingredient("pm-ytterbium-plate", 40),
-        PM.ingredient("pm-lutetium", 15),
-        PM.ingredient("pm-science-bottle", 1)
-    },
-    results = 
-    {
-        PM.product("pm-lanthanide-science-pack"):amount(10):done()
-    }
-},
 --MARK: Plastic Science
 {
     type = "recipe",
@@ -747,6 +715,36 @@ data:extend({
         PM.product("pm-liquid-noble-gas-science", "fluid"):amount(100):done(),
     }
 },
+{
+    type = "recipe",
+    name = "pm-liquid-lanthanide-science",
+    enabled = false,
+    energy_required = 6,
+    categories = {"crafting-with-fluid"},
+    allow_productivity = true,
+    auto_recycle = true,
+    ingredients =
+    {
+        PM.ingredient("pm-cerium-plate", 20),
+        PM.ingredient("pm-praseodymium", 25),
+        PM.ingredient("pm-neodymium-plate", 30),
+        PM.ingredient("pm-promethium-147", 8),
+        PM.ingredient("pm-samarium", 25),
+        PM.ingredient("pm-europium", 50),
+        PM.ingredient("pm-gadolinium", 32),
+        PM.ingredient("pm-terbium", 24),
+        PM.ingredient("pm-dysprosium-plate", 15),
+        PM.ingredient("pm-holmium-plate", 15),
+        PM.ingredient("pm-erbium-plate", 50),
+        PM.ingredient("pm-thulium", 10),
+        PM.ingredient("pm-ytterbium-plate", 40),
+        PM.ingredient("pm-lutetium", 15),
+    },
+    results = 
+    {
+        PM.product("pm-liquid-lanthanide-science", "fluid"):amount(100):done()
+    }
+},
 
 {
     type = "recipe",
@@ -1006,6 +1004,26 @@ data:extend({
     results = 
     {
         PM.product("pm-noble-gas-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-lanthanide-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "k",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-lanthanide-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-lanthanide-science-pack"):amount(1):done()
     }
 },
 
