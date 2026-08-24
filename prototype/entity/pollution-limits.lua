@@ -14,7 +14,7 @@
 ---@return data.ModData
 local function limit_pollution(entity, pollutant, min, max)
 	local has_min = min >= 0.05
-	local has_max = max <= 1/0
+	local has_max = max < 1/0
 
 	local pollutant_prototype = PM.get_prototype("airborne-pollutant", pollutant)
 	local pollutant_amount_key = pollutant_prototype.localised_name_with_amount or "airborne-pollutant-name-with-amount."..pollutant
@@ -41,12 +41,18 @@ local function limit_pollution(entity, pollutant, min, max)
 		}
 	end
 
+	if #tooltips == 0 then
+		entity_prototype.custom_tooltip_fields = nil
+	end
+
 	return {
 		type = "mod-data",
 		name = entity.."-pollution-data",
 		data_type = "pm-pollution-limit",
 		---@type pm-pollution-limit
 		data = {
+			-- TODO: Change this to a dict of pollutant to min and max
+			-- TODO: Change this to a singleton mod data that's a map of entity name to pollution limit?
 			entity = entity,
 			pollutant_type = pollutant,
 			min_pollution = min,
