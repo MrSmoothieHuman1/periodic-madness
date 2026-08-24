@@ -9,7 +9,10 @@ handler.events = {}
 ---@field pollution_index? uint
 storage = storage
 
----@type {[data.EntityID]?:pm-pollution-limit}
+---@class PMPollutionLimit : pm-pollution-limit
+---@field pollutant_type LuaAirbornePollutantPrototype
+
+---@type {[data.EntityID]?:PMPollutionLimit}
 local pollution_definition_map = {}
 for data_name, mod_data in pairs(prototypes.mod_data) do
   if mod_data.data_type == "pm-pollution-limit" then
@@ -18,8 +21,27 @@ for data_name, mod_data in pairs(prototypes.mod_data) do
     -- Data validation
     if type(data.entity) ~= "string" or not prototypes.entity[data.entity] then error("The `pm-pollution-limit` of "..data_name.." expects an entity ID") end
     if pollution_definition_map[data.entity] then error("There's two defined pollution limits for '"..data.entity.."'") end
+    if type(data.pollutant_type) ~= "string" or not prototypes.airborne_pollutant[data.pollutant_type] then
+      error("The `pm-pollution-limit` of "..data_name.." expects an airborne pollutant ID")
+    else
+      data--[[@as PMPollutionLimit]].pollutant_type = prototypes.airborne_pollutant[data.pollutant_type]
+    end
     if type(data.max_pollution) ~= "number" then error("The `pm-pollution-limit` of "..data_name.." expects a number for the `max_pollution`") end
     if type(data.min_pollution) ~= "number" then error("The `pm-pollution-limit` of "..data_name.." expects a number for the `min_pollution`") end
+    if type(data.max_alert) ~= "boolean" then
+      if data.max_alert then
+        error("The `max_alert` of "..data_name.." must be a boolean")
+      else
+        data.max_alert = false
+      end
+    end
+    if type(data.min_alert) ~= "boolean" then
+      if data.min_alert then
+        error("The `min_alert` of "..data_name.." must be a boolean")
+      else
+        data.min_alert = false
+      end
+    end
 
     pollution_definition_map[data.entity] = data
   end
@@ -41,10 +63,54 @@ end
 
 ---@class PollutionLimitTracking : pm-pollution-limit
 ---@field entity LuaEntity
+---@field surface LuaSurface
 ---@field tooltip RuntimeTooltipField
+---@field wrong_pollutant true?
 ---@field alert? LuaRenderObject
 
 ---MARK: Entity Tracking
+
+---@param entity LuaEntity
+---@param definition PMPollutionLimit
+---@param old_tracker? PollutionLimitTracking
+---@return PollutionLimitTracking
+local function create_tracker(entity, definition, old_tracker)
+  ---@type PollutionLimitTracking
+  local tracker = old_tracker or {
+    entity = entity,
+    surface = entity.surface
+  }--[[@as PollutionLimitTracking]]
+
+  if not tracker.surface then
+    tracker.surface = entity.surface
+  end
+
+  tracker.max_pollution = definition.max_pollution
+  tracker.min_pollution = definition.min_pollution
+  tracker.max_alert = definition.max_alert
+  tracker.min_alert = definition.min_alert
+
+  local surface_pollutant = tracker.surface.pollutant_type
+  local current_pollution
+  if surface_pollutant ~= definition.pollutant_type then
+    current_pollution = 0
+    tracker.wrong_pollutant = true
+  else
+    current_pollution = tracker.surface.get_pollution(entity.position)
+    tracker.wrong_pollutant = nil
+  end
+
+  if not tracker.tooltip then
+    tracker.tooltip = {
+      name = {"pm-tooltips.current-pollution"},
+      value = {definition.pollutant_type.localised_name_with_amount_key, current_pollution},
+      order = 103,
+    }
+    tracker.tooltip.id = entity.set_tooltip_field(tracker.tooltip)
+  end
+
+  return tracker
+end
 
 PM.compound_events.built_events(handler.events, function (event)
   local entity = event.entity or event.destination
@@ -53,11 +119,7 @@ PM.compound_events.built_events(handler.events, function (event)
   if not pollution_definition then return end -- Not an entity we care about
 
   storage.pollution_buildings_count = storage.pollution_buildings_count + 1
-  storage.pollution_buildings[entity.unit_number--[[@cast -?]]] = {
-    entity = entity,
-    min_pollution = pollution_definition.min_pollution,
-    max_pollution = pollution_definition.max_pollution,
-  }
+  storage.pollution_buildings[entity.unit_number--[[@cast -?]]] = create_tracker(entity, pollution_definition)
 end)
 
 --MARK: Disabling
@@ -66,12 +128,12 @@ end)
 ---@param tracker PollutionLimitTracking
 ---@param diode defines.entity_status_diode
 ---@param status LocalisedString
----@param signal? SignalID
----@param alert? LocalisedString
+---@param signal SignalID
+---@param alert LocalisedString
 ---@param sprite LuaRendering.draw_sprite_param
-local function disable_building(entity, tracker, diode, status, signal, alert, sprite)
+local function disable_building(entity, tracker, diode, status, do_alert, signal, alert, sprite)
   ---@cast entity.force LuaForce
-  if signal and alert then
+  if do_alert then
     entity.force.add_custom_alert(
       entity, signal, alert, true
     )
@@ -87,7 +149,10 @@ local function disable_building(entity, tracker, diode, status, signal, alert, s
   end
 end
 
+---@param entity LuaEntity
+---@param tracker PollutionLimitTracking
 local function enable_building(entity, tracker)
+  ---@cast tracker.alert -?
   entity.disabled_by_script = false
   entity.custom_status = nil
   tracker.alert.destroy()
@@ -99,7 +164,14 @@ end
 ---@param entity LuaEntity
 ---@param tracker PollutionLimitTracking
 local function check_pollution(entity, tracker)
-  local pollution = entity.surface.get_pollution(entity.position)
+  local pollution
+  if tracker.wrong_pollutant then
+    pollution = 0 -- FIXME: Currently does not check pollutant changes (https://forums.factorio.com/135837)
+  else
+    pollution = tracker.surface.get_pollution(entity.position)
+    tracker.tooltip.value[2] = pollution
+  end
+  entity.set_tooltip_field(tracker.tooltip)
 
   if pollution > tracker.max_pollution then
     disable_building(entity, tracker,
@@ -107,6 +179,7 @@ local function check_pollution(entity, tracker)
       defines.entity_status_diode.red,
       {"entity-status.pm-too-much-pollution"},
       -- Custom Alert
+      tracker.max_alert,
       {type="virtual", name="pm-too-much-pollution"},
       {"pm-alerts.pm-too-much-pollution"},
       -- Alert Sprite
@@ -126,7 +199,9 @@ local function check_pollution(entity, tracker)
       defines.entity_status_diode.red,
       {"entity-status.pm-too-little-pollution"},
       -- Custom Alert
-      nil, nil,
+      tracker.min_alert,
+      {type="virtual", name="pm-too-little-pollution"},
+      {"pm-alerts.pm-too-little-pollution"},
       -- Alert Sprite
       {
         sprite = "virtual-signal/pm-too-little-pollution",
@@ -208,14 +283,7 @@ local function reload_buildings()
         enable_building(entity, old_tracker) -- If it's meant to be disabled, it will be re-disabled :shrug:
       end
 
-      ---@type PollutionBuilding
-      local pollution_object = {
-        entity = entity,
-        min_pollution = definition.min_pollution,
-        max_pollution = definition.max_pollution,
-        alert = old_tracker.alert -- Migrate the disabled status so it can properly enable if values expanded
-      }
-      new_list[unit_id] = pollution_object
+      new_list[unit_id] = create_tracker(entity, definition, old_tracker)
       old_list[unit_id] = nil
     end
   end
@@ -226,6 +294,9 @@ local function reload_buildings()
   for _, tracker in pairs(old_list) do
     if tracker.alert then
       enable_building(tracker.entity, tracker)
+    end
+    if tracker.tooltip then
+      tracker.entity.clear_tooltip_field(tracker.tooltip.id--[[@cast -?]])
     end
   end
 end
