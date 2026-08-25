@@ -3,6 +3,8 @@
 --2 chunks of an ore = 1 "pure" ore
 PM = require("pennyisms.library")--[[@as Pennyisms]]
 
+require("space-age-load")
+
 require("prototype.item")
 require("prototype.fluids")
 require("prototype.items.circuits")
@@ -173,6 +175,7 @@ require("compatibility.DLC.elevated-rails")
 require("compatibility.DLC.belt-stacking")
 require("compatibility.black-silicon-seas")
 require("compatibility.DiscoScience")
+
 
 local resource_autoplace = require('resource-autoplace');
 local tile_sounds = require("__base__.prototypes.tile.tile-sounds")

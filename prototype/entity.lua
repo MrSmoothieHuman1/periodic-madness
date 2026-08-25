@@ -11879,7 +11879,7 @@ fluid_boxes =
   icon_size = 64,
   icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-2.png",
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
-  minable = { mining_time = 1.25, result = "pm-mixing-tank-2" },
+  minable = { mining_time = 1.5, result = "pm-mixing-tank-2" },
   max_health = 750,
   collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
   selection_box = { { -3, -3 }, { 3, 3 } },
@@ -11908,12 +11908,9 @@ fluid_boxes =
         layers =
         {
           {
-            filename =
-            "__periodic-madness__/graphics/entities/buildings/mixing-tank-2/mixing-tank-north-south-base.png",
-            width = 320,
-            height = 320,
-            repeat_count = 32,
-            line_length = 1,
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant.png",
+            width = 384,
+            height = 384,
             animation_speed = 0.85,
             scale = 0.5,
           },
@@ -11957,13 +11954,13 @@ fluid_boxes =
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1000,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1.5, -2.5} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1.5, -2.5} }},
   },
   {
     production_type = "input",
     pipe_covers = pipecoverspictures(),
     volume = 1000,
-    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1.5, -2.5} }},
+    pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {-1.5, -2.5} }},
   },
   {
     production_type = "input",

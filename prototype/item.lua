@@ -2337,6 +2337,7 @@ data:extend({
     stack_size = 999
   },
 
+
   --fuel categories
   {
     type = "fuel-category",
@@ -2483,7 +2484,7 @@ data.raw["item"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
 data.raw["item"]["fission-reactor-equipment"].order = "d"
 data.raw["recipe"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
 data.raw["recipe"]["fission-reactor-equipment"].order = "d"
-data.raw["item"]["satellite"].weight = 500 * kg
+--data.raw["item"]["satellite"].weight = 500 * kg
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it

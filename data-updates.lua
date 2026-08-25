@@ -2,6 +2,7 @@ PM = require("pennyisms.library")--[[@as Pennyisms]]
 require("prototype.recipes.building-recipes.burnining")
 --require("prototype.recipes.building-recipes.atomicrecipes")
 
+require("space-age-load-updates")
 
 ---@param fluidbox data.FluidBox
 ---@param new_category string
