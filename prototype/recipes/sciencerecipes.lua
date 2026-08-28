@@ -707,8 +707,12 @@ data:extend({
     auto_recycle = false,
     ingredients =
     {
-        PM.ingredient("pm-light-noble-gas-mixture", 600, "fluid"),
-        PM.ingredient("pm-heavy-noble-gas-mixture", 600, "fluid"),
+        PM.ingredient("pm-helium-gas", 550, "fluid"),
+        PM.ingredient("pm-neon-gas", 440, "fluid"),
+        PM.ingredient("pm-argon-gas", 330, "fluid"),
+        PM.ingredient("pm-krypton-gas", 220, "fluid"),
+        PM.ingredient("pm-xenon-gas", 110, "fluid"),
+        PM.ingredient("pm-radon-gas", 50, "fluid"),
     },
     results =
     {
