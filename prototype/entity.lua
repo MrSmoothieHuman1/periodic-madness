@@ -11877,7 +11877,7 @@ fluid_boxes =
   type = "assembling-machine",
   name = "pm-liquid-science-plant",
   icon_size = 64,
-  icon = "__periodic-madness__/graphics/icons/buildings/mixing-tank-2.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/liquid-science-plant.png",
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
   minable = { mining_time = 1.5, result = "pm-mixing-tank-2" },
   max_health = 750,
@@ -11888,7 +11888,7 @@ fluid_boxes =
   crafting_categories = { "pm-liquid-science" },
   module_slots = 2,
   allowed_effects = PM.all_effects(),
-  crafting_speed = 1,
+  crafting_speed = 0.5,
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["mixing-tank"],
   energy_source =
@@ -11908,7 +11908,46 @@ fluid_boxes =
         layers =
         {
           {
-            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant.png",
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-north-south.png",
+            width = 384,
+            height = 384,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+        }
+    },
+    south =
+    {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-north-south.png",
+            width = 384,
+            height = 384,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+        }
+    },
+    east =
+    {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-east-west.png",
+            width = 384,
+            height = 384,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+        }
+    },
+    west =
+    {
+        layers =
+        {
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-east-west.png",
             width = 384,
             height = 384,
             animation_speed = 0.85,

@@ -7104,6 +7104,7 @@ data:extend({
         PM.unlock_recipe("pm-liquid-alkaline-earth-metal-science-bottling"),
         PM.unlock_recipe("pm-liquid-advanced-advanced-advanced-transition-metal-science-bottling"),
         PM.unlock_recipe("pm-liquid-noble-gas-science-bottling"),
+        PM.unlock_recipe("pm-liquid-science-plant")
     },
     prerequisites = {"pm-advanced-processing-unit", "pm-high-density-structure"},
     unit =

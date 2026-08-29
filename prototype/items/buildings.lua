@@ -1083,6 +1083,16 @@ data:extend({
     place_result = "pm-beta-inator",
     stack_size = 20,
   },
+  {
+    type = "item",
+    name = "pm-liquid-science-plant",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/liquid-science-plant.png",
+    subgroup = "pm-science-machine",
+    order = "e",
+    place_result = "pm-liquid-science-plant",
+    stack_size = 20,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

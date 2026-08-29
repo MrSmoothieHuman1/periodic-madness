@@ -1962,6 +1962,27 @@ data:extend({
       PM.product("pm-beta-inator"):amount(1):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-liquid-science-plant",
+    energy_required = 4,
+    enabled = false,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-advanced-processing-unit", 4),
+        PM.ingredient("pm-borosilicate-glass", 8),
+        PM.ingredient("pm-corrosion-resistant-tubing", 24),
+        PM.ingredient("pm-high-density-structure", 3),
+        PM.ingredient("pm-lightweight-panelling", 16),
+        PM.ingredient("pm-light-coolant", 5, "fluid"),
+        PM.ingredient("pm-light-lubricant", 5, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-liquid-science-plant"):amount(1):done()
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
