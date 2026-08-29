@@ -11955,6 +11955,61 @@ fluid_boxes =
           },
         }
     },
+  },
+  working_visualisations =
+  {
+      {
+          apply_tint = "status",
+          always_draw = true,
+          north_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-diode.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            --repeat_count = 32,
+            blend_mode = "additive",
+            draw_as_glow = true,
+            scale = 0.5,
+          },
+          south_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-diode.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            --repeat_count = 32,
+            blend_mode = "additive",
+            draw_as_glow = true,
+            scale = 0.5,
+          },
+          east_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-diode.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            --repeat_count = 32,
+            blend_mode = "additive",
+            draw_as_glow = true,
+            scale = 0.5,
+          },
+          west_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-diode.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            --repeat_count = 32,
+            blend_mode = "additive",
+            draw_as_glow = true,
+            scale = 0.5,
+          },
+      }
   }
 },
 fluid_boxes =
