@@ -142,7 +142,13 @@ data:extend({
         type = "item",
         name = "pm-thorium-232",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/thorium-232.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/thorium-232.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/thorium-232-2.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/ores/thorium-232-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-thorium-ac",
         order = "i",
         stack_size = 100
@@ -151,7 +157,13 @@ data:extend({
         type = "item",
         name = "pm-thorium-233",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/thorium-233.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/thorium-233.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/thorium-233-2.png", size = 64, scale = 0.46},
+          {filename = "__periodic-madness__/graphics/icons/ores/thorium-233-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-thorium-ac",
         order = "j",
         custom_tooltip_fields =
