@@ -6220,7 +6220,7 @@ data:extend({
     name = "pm-superconducting-ReBCO",
     enabled = false,
     energy_required = 15,
-    categories = {"crafting-with-fluid"},
+    categories = {"pm-cryogenics"},
     allow_productivity = true,
     ingredients =
     {
