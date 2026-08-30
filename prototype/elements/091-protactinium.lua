@@ -4,7 +4,12 @@ data:extend({
         type = "item",
         name = "pm-protactinium-233",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/uranium-233.png",
+        icon = "__periodic-madness__/graphics/icons/ores/protactinium-233.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/protactinium-233.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/protactinium-233-2.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-protactinium-ac",
         order = "a",
         custom_tooltip_fields =
