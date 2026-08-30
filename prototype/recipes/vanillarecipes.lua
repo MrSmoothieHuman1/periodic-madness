@@ -835,7 +835,7 @@ data.raw["recipe"]["requester-chest"].ingredients =
   PM.ingredient("advanced-circuit", 1),
   PM.ingredient("pm-stainless-steel-chest", 1)
 }
---[[data.raw["recipe"]["satellite"].ingredients =
+data.raw["recipe"]["satellite"].ingredients =
 {
     PM.ingredient("pm-solar-panel-3", 20),
     PM.ingredient("rocket-fuel", 25),
@@ -846,7 +846,7 @@ data.raw["recipe"]["requester-chest"].ingredients =
     PM.ingredient("pm-selenium-sulfur-battery", 20),
     PM.ingredient("pm-rocket-control-unit", 5)
 }
-data.raw["recipe"]["satellite"].energy_required = 15--]]
+data.raw["recipe"]["satellite"].energy_required = 15
 data.raw["recipe"]["rocket-silo"].ingredients =
 {
     PM.ingredient("refined-concrete", 250),

@@ -1266,9 +1266,9 @@ data:extend({
         {
           filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant.png",
           priority = "high",
-          width = 214,
-          height = 226,
-          shift = util.by_pixel(0, -4),
+          width = 192,
+          height = 210,
+          shift = util.by_pixel(0, -6),
           scale = 0.5
         },
         {
