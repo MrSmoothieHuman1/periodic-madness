@@ -1258,30 +1258,91 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
-  {
+    {
+    status_colors = pm_diode_status_colors(),
     animation =
     {
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-1-base.png",
           priority = "high",
           width = 192,
-          height = 210,
-          shift = util.by_pixel(0, -6),
+          height = 216,
+          line_count = 1,
+          frame_count = 1,
+          repeat_count = 64,
+          shift = util.by_pixel(0, -10),
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-fins.png",
           priority = "high",
-          width = 226,
-          height = 214,
+          width = 192,
+          height = 216,
+          line_length = 8,
+          frame_count = 64,
+          shift = util.by_pixel(0, -10),
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-1-shadow.png",
+          priority = "high",
+          width = 192,
+          height = 216,
+          line_count = 1,
+          frame_count = 1,
+          repeat_count = 64,
           draw_as_shadow = true,
-          shift = util.by_pixel(40 - 10, -4),
+          shift = util.by_pixel(40, -10),
           scale = 0.5
         }
       }
     },
+    working_visualisations = 
+    {
+        {
+            always_draw = true,
+            apply_tint = "status",
+            animation =
+            {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-diode.png",
+                        width = 192,
+                        height = 216,
+                        frame_count = 1,
+                        line_length = 1,
+                        repeat_count = 64,
+                        shift = util.by_pixel(0, -10),
+                        draw_as_glow = true,
+                        blend_mode = "additive",
+                        scale = 0.5
+                    },
+                }
+            }
+        },
+        {
+            always_draw = true,
+            apply_recipe_tint = "primary",
+            animation =
+            {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-tint.png",
+                        width = 192,
+                        height = 216,
+                        frame_count = 64,
+                        line_length = 8,
+                        shift = util.by_pixel(0, -10),
+                        scale = 0.5
+                    },
+                }
+            }
+        }
+    }
   },
     crafting_categories = { "pm-washing" },
     crafting_speed = 0.5,
@@ -3492,29 +3553,90 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["assembling-machine"],
     graphics_set = 
-  {
+    {
+    status_colors = pm_diode_status_colors(),
     animation =
     {
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant-2-base.png",
           priority = "high",
-          width = 214,
-          height = 226,
-          shift = util.by_pixel(0, -4),
+          width = 192,
+          height = 216,
+          line_count = 1,
+          frame_count = 1,
+          repeat_count = 64,
+          shift = util.by_pixel(0, -10),
           scale = 0.5
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant-fins.png",
           priority = "high",
-          width = 226,
-          height = 214,
+          width = 192,
+          height = 216,
+          line_length = 8,
+          frame_count = 64,
+          shift = util.by_pixel(0, -10),
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant-2-shadow.png",
+          priority = "high",
+          width = 192,
+          height = 216,
+          line_count = 1,
+          frame_count = 1,
+          repeat_count = 64,
           draw_as_shadow = true,
-          shift = util.by_pixel(40 - 10, -4),
+          shift = util.by_pixel(40, -10),
           scale = 0.5
         }
       }
+    },
+    working_visualisations = 
+    {
+        {
+            always_draw = true,
+            apply_tint = "status",
+            animation =
+            {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-diode.png",
+                        width = 192,
+                        height = 216,
+                        frame_count = 1,
+                        line_length = 1,
+                        repeat_count = 64,
+                        shift = util.by_pixel(0, -10),
+                        draw_as_glow = true,
+                        blend_mode = "additive",
+                        scale = 0.5
+                    },
+                }
+            }
+        },
+        {
+            always_draw = true,
+            apply_recipe_tint = "primary",
+            animation =
+            {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant-tint.png",
+                        width = 192,
+                        height = 216,
+                        frame_count = 64,
+                        line_length = 8,
+                        shift = util.by_pixel(0, -10),
+                        scale = 0.5
+                    },
+                }
+            }
+        }
     }
   },
     crafting_categories = { "pm-washing" },
@@ -3546,28 +3668,28 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 2000,
+        volume = 500,
         pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 2000,
+        volume = 500,
         pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 2000,
+        volume = 500,
         pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 2000,
+        volume = 500,
         pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}},
         secondary_draw_orders = { north = -1 }
       },
@@ -8406,32 +8528,93 @@ fluid_boxes =
   alert_icon_shift = util.by_pixel(-3, -12),
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
-  graphics_set = 
-{
-  animation =
-  {
-    layers =
+    graphics_set = 
     {
+    status_colors = pm_diode_status_colors(),
+    animation =
+    {
+      layers =
       {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-3/washing-plant.png",
-        priority = "high",
-        width = 214,
-        height = 226,
-        shift = util.by_pixel(0, -4),
-        scale = 0.5
-      },
-      {
-        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-shadow.png",
-        priority = "high",
-        width = 226,
-        height = 214,
-        draw_as_shadow = true,
-        shift = util.by_pixel(40 - 10, -4),
-        scale = 0.5
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-3/washing-plant-3-base.png",
+          priority = "high",
+          width = 192,
+          height = 216,
+          line_count = 1,
+          frame_count = 1,
+          repeat_count = 64,
+          shift = util.by_pixel(0, -10),
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant-fins.png",
+          priority = "high",
+          width = 192,
+          height = 216,
+          line_length = 8,
+          frame_count = 64,
+          shift = util.by_pixel(0, -10),
+          scale = 0.5
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-3/washing-plant-3-shadow.png",
+          priority = "high",
+          width = 192,
+          height = 216,
+          line_count = 1,
+          frame_count = 1,
+          repeat_count = 64,
+          draw_as_shadow = true,
+          shift = util.by_pixel(40, -10),
+          scale = 0.5
+        }
       }
+    },
+    working_visualisations = 
+    {
+        {
+            always_draw = true,
+            apply_tint = "status",
+            animation =
+            {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-1/washing-plant-diode.png",
+                        width = 192,
+                        height = 216,
+                        frame_count = 1,
+                        line_length = 1,
+                        repeat_count = 64,
+                        shift = util.by_pixel(0, -10),
+                        draw_as_glow = true,
+                        blend_mode = "additive",
+                        scale = 0.5
+                    },
+                }
+            }
+        },
+        {
+            always_draw = true,
+            apply_recipe_tint = "primary",
+            animation =
+            {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/washing-plant-2/washing-plant-tint.png",
+                        width = 192,
+                        height = 216,
+                        frame_count = 64,
+                        line_length = 8,
+                        shift = util.by_pixel(0, -10),
+                        scale = 0.5
+                    },
+                }
+            }
+        }
     }
-  }
-},
+  },
   crafting_categories = { "pm-washing" },
   crafting_speed = 2,
   energy_usage = "360kW",

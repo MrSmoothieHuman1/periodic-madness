@@ -1221,7 +1221,7 @@ data:extend({
     type = "technology",
     name = "pm-washing-plant-2",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/washing-plant-tech.png",
+    icon = "__periodic-madness__/graphics/technology/washing-plant-2-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-washing-plant-2"),
@@ -3919,7 +3919,7 @@ data:extend({
     type = "technology",
     name = "pm-washing-plant-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/washing-plant-3.png",
+    icon = "__periodic-madness__/graphics/technology/washing-plant-3-tech.png",
     effects =
     {
       PM.unlock_recipe("pm-washing-plant-3"),
