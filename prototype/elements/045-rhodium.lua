@@ -38,8 +38,8 @@ data:extend({
         subgroup = "pm-rhodium-tm",
         order = "a",
         default_temperature = 15,
-        base_color = {r = 0, g = 0, b = 0},
-        flow_color = {r = 0, g = 0, b = 0}
+        base_color = {r = 0.353, b = 0.478, g = 0.522},
+        flow_color = {r = 0.251, g = 0.378, b = 0.421}
     },
 
     {
@@ -50,6 +50,10 @@ data:extend({
         categories = {"pm-washing"},
         subgroup = "pm-rhodium-tm",
         order = "a",
+        crafting_machine_tint =
+        {
+            primary = {r = 0.353, b = 0.478, g = 0.522}
+        },
         ingredients =
         {
             PM.ingredient("pm-filtered-anode-sludge", 10, "fluid"),

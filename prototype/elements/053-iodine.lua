@@ -17,6 +17,19 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-hydrogen-iodide",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-iodine.png",
+    subgroup = "pm-iodine-rnm",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.96, g = 0.85, b = 1 },
+    flow_color = {r = 0.96, g = 0.85, b = 1 },
+    auto_barrel = false
+  },
+
+  {
     type = "recipe",
     name = "pm-acidic-brine",
     enabled = false,
@@ -64,6 +77,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-iodine-rnm",
     order = "c",
+    crafting_machine_tint = 
+    {
+        primary = {r = 0.96, g = 0.85, b = 1}
+    },
     ingredients =
     {
       PM.ingredient("pm-iodine-solution", 10, "fluid"),

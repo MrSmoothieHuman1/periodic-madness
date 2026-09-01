@@ -42,6 +42,10 @@ data:extend({
     energy_required = 2,
     enabled = false,
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {0.388, 0.592, 0.659}
+    },
     ingredients =
     {
       PM.ingredient("pm-zinc-tailings", 10, "fluid"),

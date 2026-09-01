@@ -46,6 +46,19 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-copper-sludge",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/copper-sludge.png",
+    subgroup = "pm-tellurium-mt",
+    order = "a",
+    default_temperature = 15,
+    auto_barrel = false,
+    base_color = {r = 0.56, g = 0.422, b = 0.22},
+    flow_color = {r = 0.36, g = 0.222, b = 0.12}
+  },
+
+  {
     type = "recipe",
     name = "pm-copper-sludge",
     enabled = false,
@@ -54,6 +67,10 @@ data:extend({
     subgroup = "pm-tellurium-mt",
     order = "a",
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {r = 0.56, g = 0.422, b = 0.22}
+    },
     ingredients =
     {
       PM.ingredient("pm-copper-tailings", 5, "fluid"),

@@ -38,6 +38,10 @@ data:extend({
     order = "a",
     main_product = "pm-flourite",
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {r = 0.267, g = 0.624, b = 0.839}
+    },
     ingredients =
     {
       PM.ingredient("stone", 20),

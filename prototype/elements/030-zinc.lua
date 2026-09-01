@@ -92,8 +92,9 @@ data:extend({
     subgroup = "pm-advanced-zinc-tm",
     order = "d",
     default_temperature = 15,
+    gas_temperature = 15,
     base_color = {r = 0.922, g = 0.741, b = 0.898},
-    flow_color = {r = 0.922, g = 0.741, b = 0.898},
+    flow_color = {r = 1, g = 0.841, b = 0.908},
     auto_barrel = false
   },
 
@@ -402,6 +403,10 @@ data:extend({
   categories = {"pm-washing"},
   subgroup = "pm-advanced-zinc-tm",
   order = "e",
+  crafting_machine_tint = 
+  {
+    primary = {r = 0.922, g = 0.741, b = 0.898, a = 0.75}
+  },
   ingredients =
   {
     PM.ingredient("pm-zinc-vapour", 5, "fluid")

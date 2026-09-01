@@ -243,7 +243,7 @@ data:extend({
     name = "pm-caesium-glass-ampule",
     enabled = false,
     energy_required = 8,
-    categories = {"pm-washing"},
+    categories = {"crafting-with-fluid"},
     subgroup = "pm-caesium-am",
     main_product = "pm-caesium-glass-ampule",
     order = "g",

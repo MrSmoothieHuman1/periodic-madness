@@ -83,6 +83,10 @@ data:extend({
         categories = {"pm-washing"},
         allow_productivity = true,
         main_product = "pm-ytterbium-solution",
+        crafting_machine_tint = 
+        {
+            primary = {r = 0.3, g = 0.3, b = 0.2}
+        },
         ingredients =
         {
             PM.ingredient("pm-pure-monazite", 4),

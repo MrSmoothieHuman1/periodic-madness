@@ -8,7 +8,7 @@ data:extend({
     order = "a",
     default_temperature = 15,
     base_color = {r = 1, g = 0.675, b = 0.2},
-    flow_color = {r = 1, g = 0.675, b = 0.2},
+    flow_color = {r = 0.8, g = 0.475, b = 0.05},
     auto_barrel = false,
   },
   {
@@ -62,6 +62,10 @@ data:extend({
     order = "a",
     allow_productivity = true,
     main_product = "pm-hydrogen-bromide",
+    crafting_machine_tint = 
+    {
+        primary = {r = 1, g = 0.675, b = 0.2}
+    },
     ingredients =
     {
       PM.ingredient("pm-seawater", 100, "fluid"),

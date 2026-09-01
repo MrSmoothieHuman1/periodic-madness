@@ -179,6 +179,10 @@ data:extend({
         order = "f",
         main_product = "pm-radium-ore",
         allow_productivity = true,
+        crafting_machine_tint = 
+        {
+            primary = {0.325, 0.8, 0.737}
+        },
         ingredients = 
         {
             PM.ingredient("pm-radium-chloride", 2),

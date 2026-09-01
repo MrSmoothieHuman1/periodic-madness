@@ -112,6 +112,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-palladium-tm",
     order = "Aa",
+    crafting_machine_tint = 
+    {
+        primary = {0.878, 0.835, 0.663}
+    },
     ingredients =
     {
       PM.ingredient("pm-palladium-hydride", 8)
@@ -558,6 +562,10 @@ data:extend({
     categories = {"pm-washing"},
     energy_required = 5,
     main_product = "pm-calcium-ore",
+    crafting_machine_tint = 
+    {
+        primary = {0.663, 0.878, 0.694}
+    },
     ingredients = 
     {
       PM.ingredient("pm-calcium-chloride", 6),

@@ -186,6 +186,10 @@ data:extend({
     order = "c",
     energy_required = 2,
     main_product = "pm-calcium-ore",
+    crafting_machine_tint = 
+    {
+        primary = {0.761, 0.906, 0.929}
+    },
     ingredients =
     {
       PM.ingredient("pm-calcium-dust", 4),

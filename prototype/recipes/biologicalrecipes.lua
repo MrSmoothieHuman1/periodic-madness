@@ -10,6 +10,10 @@ data:extend({
     order = "A",
     energy_required = 30,
     enabled = false,
+    crafting_machine_tint =
+    {
+        primary = {0, 0.45, 0.7}
+    },
     ingredients =
     {
       PM.ingredient("wood", 5),
@@ -99,6 +103,10 @@ data:extend({
     subgroup = "pm-greenhousing-rnm",
     order = "e",
     main_product = "pm-cellouse-pulp",
+    crafting_machine_tint =
+    {
+        primary = {0.902, 0.894, 0.345}
+    },
     ingredients =
     {
       PM.ingredient("pm-wood-strips", 5),

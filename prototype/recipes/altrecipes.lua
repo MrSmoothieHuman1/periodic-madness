@@ -214,6 +214,10 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "ia",
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.859, 0.922, 0.365}
+    },
     ingredients =
     {
       PM.ingredient("sulfuric-acid", 10, "fluid"),

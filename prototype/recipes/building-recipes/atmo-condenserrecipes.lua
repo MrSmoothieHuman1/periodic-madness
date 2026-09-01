@@ -189,6 +189,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "c",
+    crafting_machine_tint = 
+    {
+        primary = {0.32, 0.42, 0.388}
+    },
     ingredients =
     {
       PM.ingredient("pm-dirty-carbon-dioxide-air-filter", 1),
@@ -211,6 +215,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "d",
+    crafting_machine_tint = 
+    {
+        primary = {0.32, 0.42, 0.388}
+    },
     ingredients =
     {
       PM.ingredient("pm-dirty-advanced-air-filter", 1),
@@ -233,6 +241,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "ca",
+    crafting_machine_tint = 
+    {
+        primary = {0.369, 0.522, 0.471}
+    },
     ingredients =
     {
       PM.ingredient("pm-dirty-carbon-dioxide-air-filter", 1),
@@ -256,6 +268,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-air-filters-rnm",
     order = "da",
+    crafting_machine_tint = 
+    {
+        primary = {0.369, 0.522, 0.471}
+    },
     ingredients =
     {
       PM.ingredient("pm-dirty-advanced-air-filter", 1),

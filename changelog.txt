@@ -64,6 +64,7 @@ Date: 2025-12-19
     - Proximity beacons now lose transmission strength from all beacons.
     - Proximity beacons now have 2 distribution efficiency instead of 2.25.
     - Redesigned all the washing plants up to my current standard of modelling, instead of working on new content.
+    - Moved caesium glass ampules into the assembling machine.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

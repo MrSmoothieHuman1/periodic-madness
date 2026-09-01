@@ -35,7 +35,7 @@ data:extend({
     order = "b",
     default_temperature = 15,
     base_color = {r = 0.99, g = 0.98, b = 0.94},
-    flow_color = {r = 0.99, g = 0.98, b = 0.94}
+    flow_color = {r = 0.79, g = 0.85, b = 0.84}
   },
   {
     type = "fluid",
@@ -690,26 +690,14 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-nickel-froth",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/nickel-froth.png",
-    subgroup = "pm-cadmium-tm",
-    order = "a",
-    default_temperature = 15,
-    base_color = {r = 0.32, g = 0.49, b = 0.87},
-    flow_color = {r = 0.32, g = 0.49, b = 0.87},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-cellouse-pulp",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/cellouse-pulp.png",
     subgroup = "pm-greenhousing-rnm",
     order = "e",
     default_temperature = 15,
-    base_color = {r = 0.32, g = 0.49, b = 0.87},
-    flow_color = {r = 0.32, g = 0.49, b = 0.87},
+    base_color = {0.902, 0.894, 0.345},
+    flow_color = {0.788, 0.71, 0.396},
     auto_barrel = false
   },
   {
@@ -876,8 +864,9 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/phosphor-vapour.png",
     default_temperature = 15,
+    gas_temperature = 15,
     base_color = {r = 1, g = 0.6, b = 0.6},
-    flow_color = {r = 1, g = 0.6, b = 0.6},
+    flow_color = {r = 0.85, g = 0.4, b = 0.4},
     auto_barrel = false
   },
   {
@@ -914,30 +903,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 1, g = 0.7, b = 0.7},
     flow_color = {r = 1, g = 0.7, b = 0.7}
-  },
-  {
-    type = "fluid",
-    name = "pm-molten-lead",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-lead.png",
-    subgroup = "pm-lead-ptm",
-    order = "e",
-    default_temperature = 15,
-    base_color = {r = 0.278, g = 0.143, b = 0},
-    flow_color = {r = 0.278, g = 0.143, b = 0},
-    auto_barrel = false,
-  },
-  {
-    type = "fluid",
-    name = "pm-lead-froth",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/lead-froth.png",
-    subgroup = "pm-lead-ptm",
-    order = "e",
-    default_temperature = 15,
-    base_color = {r = 0.478, g = 0.343, b = 0},
-    flow_color = {r = 0.478, g = 0.343, b = 0},
-    auto_barrel = false,
   },
   {
     type = "fluid",
@@ -1225,18 +1190,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-hydrogen-iodide",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-iodine.png",
-    subgroup = "pm-iodine-rnm",
-    order = "c",
-    default_temperature = 15,
-    base_color = {r = 0.96, g = 0.85, b = 1 },
-    flow_color = {r = 0.96, g = 0.85, b = 1 },
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-ethylolamine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/ethylene-glycol.png",
@@ -1282,30 +1235,6 @@ data:extend({
     base_color = {r = 1, g = 0.52, b = 0.79},
     flow_color = {r = 1, g = 0.52, b = 0.79},
     auto_barrel = false,
-  },
-  {
-    type = "fluid",
-    name = "pm-copper-sludge",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/copper-sludge.png",
-    subgroup = "pm-tellurium-mt",
-    order = "a",
-    default_temperature = 15,
-    auto_barrel = false,
-    base_color = {r = 0.56, g = 0.422, b = 0.22},
-    flow_color = {r = 0.56, g = 0.422, b = 0.22}
-  },
-  {
-    type = "fluid",
-    name = "pm-arsine",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/arsine.png",
-    subgroup = "pm-arsenic-mt",
-    order = "a",
-    default_temperature = 15,
-    auto_barrel = false,
-    base_color = {r = 1, g = 0.68, b = 0.88},
-    flow_color = {r = 1, g = 0.68, b = 0.88}
   },
   {
     type = "fluid",

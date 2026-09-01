@@ -131,13 +131,17 @@ data:extend({
   }--[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-gallium-liqouring",
+    name = "pm-gallium-liqour",
     enabled = false,
     energy_required = 1,
     categories = {"pm-washing"},
     subgroup = "pm-gallium-ptm",
     order = "c",
     main_product = "pm-gallium-liqour",
+    crafting_machine_tint = 
+    {
+        primary = {r = 1, g = 0.842, b = 0.862}
+    },
     ingredients =
     {
       PM.ingredient("pm-sodium-hydroxide", 2, "fluid"),

@@ -218,6 +218,10 @@ data:extend({
         categories = {"pm-washing"},
         subgroup = "pm-iridium-tm",
         order = "f",
+        crafting_machine_tint =
+        {
+            primary = {r = 0.443, g = 0.34, b = 0.451}
+        },
         ingredients = 
         {
             PM.ingredient("pm-filtered-anode-sludge", 10, "fluid"),

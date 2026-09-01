@@ -7,8 +7,8 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "f",
     default_temperature = 15,
-    base_color = {r = 1, g = 1, b = 0},
-    flow_color = {r = 1, g = 1, b = 0},
+    base_color = {r = 1, g = 0.89, b = 0},
+    flow_color = {r = 0.9, g = 0.79, b = 0},
     auto_barrel = false,
     auto_void = true,
     auto_void_emissions = 1.5,
@@ -21,8 +21,8 @@ data:extend({
     subgroup = "pm-sulfur-rnm",
     order = "g",
     default_temperature = 15,
-    base_color = {r = 1, g = 0.8, b = 0},
-    flow_color = {r = 1, g = 0.8, b = 0},
+    base_color = {r = 1, g = 0.7, b = 0},
+    flow_color = {r = 0.9, g = 0.7, b = 0},
     auto_barrel = false,
     auto_void = true,
     auto_void_emissions = 1.75,
@@ -64,6 +64,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "b",
+    crafting_machine_tint = 
+    {
+        primary = {0.58, 0.443, 0}
+    },
     ingredients =
     {
       PM.ingredient("pm-fuel-oils", 20, "fluid"),
@@ -88,6 +92,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-sulfuric-acid-rnm",
     order = "c",
+    crafting_machine_tint = 
+    {
+        primary = {0.839, 0.78, 0.337}
+    },
     ingredients =
     {
       PM.ingredient("pm-kerosene", 20, "fluid"),
@@ -208,6 +216,10 @@ data:extend({
     order = "h",
     allow_productivity = true,
     main_product = "sulfuric-acid",
+    crafting_machine_tint =
+    {
+        primary = {0.75, 0.65, 0}
+    },
     ingredients =
     {
       PM.ingredient("pm-oleum", 5, "fluid"),

@@ -104,6 +104,10 @@ data:extend({
     order = "xa",
     enabled = false,
     energy_required = 4,
+    crafting_machine_tint = 
+    {
+        primary = {0.141, 0.118, 0.004}
+    },
     ingredients = 
     {
       PM.ingredient("pm-bitumen", 6),
@@ -599,6 +603,10 @@ data:extend({
     enabled = false,
     energy_required = 6,
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {r = 0.99, g = 0.98, b = 0.94}
+    },
     ingredients =
     {
       PM.ingredient("pm-bisphenol-A", 30, "fluid"),

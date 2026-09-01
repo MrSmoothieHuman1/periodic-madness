@@ -61,7 +61,11 @@ data:extend({
         categories = {"pm-washing"},
         subgroup = "pm-selenium-rnm",
         order = "a",
-        ingredients = 
+        crafting_machine_tint =
+        {
+            primary = {r = 0.6, g = 0.3, b = 0.34}
+        },
+        ingredients =
         {
             PM.ingredient("pm-filtered-anode-sludge", 10, "fluid"),
             PM.ingredient("copper-ore", 6),

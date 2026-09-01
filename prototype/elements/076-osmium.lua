@@ -41,8 +41,8 @@ data:extend({
         subgroup = "pm-osmium-tm",
         order = "f",
         default_temperature = 15,
-        base_color = {r = 0, g = 0, b = 0},
-        flow_color = {r = 0, g = 0, b = 0}
+        base_color = {r = 0.4, g = 0.4, b = 0.4},
+        flow_color = {r = 0.25, g = 0.25, b = 0.25}
     },
 
     {
@@ -53,6 +53,10 @@ data:extend({
         categories = {"pm-washing"},
         subgroup = "pm-osmium-tm",
         order = "a",
+       crafting_machine_tint =
+        {
+            primary = {r = 0.4, g = 0.4, b = 0.4}
+        },
         ingredients = 
         {
             PM.ingredient("pm-filtered-anode-sludge", 10, "fluid"),

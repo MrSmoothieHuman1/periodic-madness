@@ -70,6 +70,10 @@ data:extend({
     order = "a",
     energy_required = 8,
     main_product = "pm-sodium-bicarbonate",
+    crafting_machine_tint = 
+    {
+        primary = {r = 0.58, g = 0.91, b = 0.902}
+    },
     ingredients =
     {
       PM.ingredient("pm-sea-salt", 10),

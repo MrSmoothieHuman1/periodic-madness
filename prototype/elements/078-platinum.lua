@@ -46,6 +46,19 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-nickel-froth",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/nickel-froth.png",
+    subgroup = "pm-cadmium-tm",
+    order = "a",
+    default_temperature = 15,
+    base_color = {r = 0.32, g = 0.49, b = 0.87},
+    flow_color = {r = 0.32, g = 0.49, b = 0.87},
+    auto_barrel = false
+  },
+
+  {
     type = "recipe",
     name = "pm-nickel-chunk-frothing",
     icon_size = 64,
@@ -55,6 +68,10 @@ data:extend({
     order = "a",
     enabled = false,
     energy_required = 2,
+    crafting_machine_tint =
+    {
+        primary = {r = 0.62, g = 0.79, b = 0.9, a = 0.8}
+    },
     ingredients =
     {
       PM.ingredient("pm-nickel-powder", 12),

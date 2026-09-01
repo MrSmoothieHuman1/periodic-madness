@@ -57,6 +57,19 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-arsine",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/arsine.png",
+    subgroup = "pm-arsenic-mt",
+    order = "a",
+    default_temperature = 15,
+    auto_barrel = false,
+    base_color = {r = 1, g = 0.68, b = 0.88},
+    flow_color = {r = 1, g = 0.68, b = 0.88}
+  },
+
+  {
     type = "recipe",
     name = "pm-arsenopyrite",
     enabled = false,
@@ -128,6 +141,10 @@ data:extend({
     subgroup = "pm-arsenic-mt",
     order = "d",
     main_product = "pm-arsine",
+    crafting_machine_tint = 
+    {
+        primary = {r = 1, g = 0.68, b = 0.88}
+    },
     ingredients =
     {
       PM.ingredient("pm-arsenic-oxide", 3),

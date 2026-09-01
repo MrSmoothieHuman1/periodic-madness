@@ -2,6 +2,7 @@
     "recipe":
     [
         ["pm-sodium-bicarbonate-heating", "pm-sodium-carbonate"],
-        ["pm-fluid-circuit-breadboard", "pm-fluid-breadboard"]
+        ["pm-fluid-circuit-breadboard", "pm-fluid-breadboard"],
+        ["pm-gallium-liqouring", "pm-gallium-liqour"]
     ]
 }

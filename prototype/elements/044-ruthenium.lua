@@ -64,6 +64,10 @@ data:extend({
         categories = {"pm-washing"},
         subgroup = "pm-ruthenium-tm",
         order = "a",
+        crafting_machine_tint =
+        {
+            primary = {r = 0.36, g = 0.3, b = 0.55}
+        },
         ingredients =
         {
             PM.ingredient("pm-filtered-anode-sludge", 10, "fluid"),

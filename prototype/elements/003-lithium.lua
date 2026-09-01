@@ -58,6 +58,10 @@ data:extend({
     subgroup = "pm-lithium-am",
     order = "A",
     enabled = false,
+    crafting_recipe_tint = 
+    {
+        primary = {r = 0.16, g = 0.89, b = 0.79}
+    },
     ingredients =
     {
       PM.ingredient("pm-seawater", 20, "fluid"),
@@ -79,6 +83,10 @@ data:extend({
     subgroup = "pm-lithium-am",
     order = "a",
     enabled = false,
+    crafting_recipe_tint = 
+    {
+        primary = {r = 0.26, g = 0.91, b = 0.83}
+    },
     ingredients =
     {
       PM.ingredient("pm-seawater", 20, "fluid"),

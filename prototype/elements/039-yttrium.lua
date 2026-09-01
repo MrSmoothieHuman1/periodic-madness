@@ -201,6 +201,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-yttrium-tm",
     order = "g",
+    crafting_machine_tint = 
+    {
+        primary = {0.8, 0.937, 0.961}
+    },
     ingredients =
     {
       PM.ingredient("pm-aqueous-yttrium-fluoride", 5, "fluid"),

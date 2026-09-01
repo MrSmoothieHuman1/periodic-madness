@@ -59,7 +59,7 @@ data:extend({
     default_temperature = 15,
     gas_temperature = 15,
     base_color = {0.871, 0.686, 0.349},
-    flow_color = {0.871, 0.686, 0.349},
+    flow_color = {0.751, 0.556, 0.249},
   },
   {
     type = "fluid",
@@ -163,6 +163,10 @@ data:extend({
     categories = {"pm-washing"},
     subgroup = "pm-boron-mt",
     order = "d",
+    crafting_machine_tint = 
+    {
+        primary = {0.871, 0.686, 0.349}
+    },
     ingredients =
     {
       PM.ingredient("pm-diluted-boric-acid", 10, "fluid"),

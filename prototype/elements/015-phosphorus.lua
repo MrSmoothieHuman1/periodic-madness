@@ -78,6 +78,10 @@ data:extend({
     subgroup = "pm-phosphorus-rnm",
     order = "c",
     main_product = "pm-phosphoric-acid",
+    crafting_machine_tint =
+    {
+        primary = {r = 1, g = 0.6, b = 0.6}
+    },
     ingredients =
     {
       PM.ingredient("pm-phosphor-vapour", 5, "fluid"),

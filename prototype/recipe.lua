@@ -3324,6 +3324,10 @@ data:extend({
     energy_required = 3,
     categories = {"pm-washing"},
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {r = 0.8, g = 0.7, b = 0.7}
+    },
     ingredients = 
     {
       PM.ingredient("pm-dimethyldichlorosilane", 4, "fluid"),

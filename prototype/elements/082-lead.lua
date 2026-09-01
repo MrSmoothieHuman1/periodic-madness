@@ -53,6 +53,32 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-molten-lead",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-lead.png",
+    subgroup = "pm-lead-ptm",
+    order = "e",
+    default_temperature = 15,
+    base_color = {r = 0.278, g = 0.143, b = 0},
+    flow_color = {r = 0.278, g = 0.143, b = 0},
+    auto_barrel = false,
+  },
+  {
+    type = "fluid",
+    name = "pm-lead-froth",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/lead-froth.png",
+    subgroup = "pm-lead-ptm",
+    order = "e",
+    default_temperature = 15,
+    gas_temperature = 15,
+    base_color = {r = 0.478, g = 0.343, b = 0},
+    flow_color = {r = 0.378, g = 0.143, b = 0},
+    auto_barrel = false,
+  },
+
+  {
     type = "recipe",
     name = "pm-lead-leeching",
     icon_size = 64,
@@ -114,6 +140,10 @@ data:extend({
     order = "c",
     main_product = "pm-lead-froth",
     allow_productivity = true,
+    crafting_machine_tint =
+    {
+        primary = {r = 0.478, g = 0.343, b = 0, a = 0.75}
+    },
     ingredients =
     {
       PM.ingredient("pm-lead-powder", 4),
@@ -135,6 +165,10 @@ data:extend({
     order = "d",
     main_product = "pm-impure-lead",
     allow_productivty = true,
+    crafting_machine_tint = 
+    {
+        primary = {r = 0.678, g = 0.543, b = 0.1}
+    },
     ingredients =
     {
       PM.ingredient("pm-lead-froth", 10, "fluid"),

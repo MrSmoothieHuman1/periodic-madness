@@ -72,7 +72,7 @@ data:extend({
     order = "c",
     default_temperature = 15,
     base_color = {r = 0.529, g = 0.43, b = 0.35},
-    flow_color = {r = 0.529, g = 0.43, b = 0.35},
+    flow_color = {r = 0.329, g = 0.13, b = 0.15},
     auto_barrel = false
   },
   {
@@ -135,6 +135,10 @@ data:extend({
     subgroup = "pm-vanadium-tm",
     order = "c",
     allow_productivity = true,
+    crafting_machine_tint =
+    {
+        primary = {r = 0.529, g = 0.43, b = 0.35}
+    },
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
@@ -176,6 +180,10 @@ data:extend({
     subgroup = "pm-vanadium-tm",
     order = "ca",
     allow_productivity = true,
+    crafting_machine_tint =
+    {
+        primary = {r = 0.7, b = 0.584, g = 0.435}
+    },
     ingredients =
     {
       PM.ingredient("pm-ferrovanadium", 2),
