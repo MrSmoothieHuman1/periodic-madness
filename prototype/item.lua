@@ -2345,19 +2345,19 @@ data:extend({
   {
     type = "item",
     name = "pm-ion-thruster-fuel-tank",
-    icon = "__periodic-madness__/graphics/icons/liquid-rocket-oxidiser-tank.png",
+    icon = "__periodic-madness__/graphics/icons/ion-thruster-fuel-tank.png",
     icon_size = 64,
-    subgroup = "pm-liquid-rocket-fuels",
-    order = "i",
+    subgroup = "pm-ion-rocket-fuels",
+    order = "a",
     stack_size = 100
   },
   {
     type = "item",
     name = "pm-ion-thruster",
-    icon = "__periodic-madness__/graphics/icons/liquid-rocket-oxidiser-tank.png",
+    icon = "__periodic-madness__/graphics/icons/ion-thruster.png",
     icon_size = 64,
-    subgroup = "pm-liquid-rocket-fuels",
-    order = "i",
+    subgroup = "pm-ion-rocket-fuels",
+    order = "b",
     stack_size = 100
   },
 
@@ -2520,6 +2520,8 @@ data.raw["item"]["fission-reactor-equipment"].order = "d"
 data.raw["recipe"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
 data.raw["recipe"]["fission-reactor-equipment"].order = "d"
 data.raw["item"]["satellite"].weight = 500 * kg
+data.raw["item"]["satellite"].subgroup = "pm-rocket-launchables"
+data.raw["item"]["satellite"].order = "a"
 data.raw["item"]["satellite"].rocket_launch_products = 
 {
     PM.product("space-science-pack"):amount(500):done()
