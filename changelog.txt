@@ -37,6 +37,7 @@ Date: 2025-12-19
     - Added an advanced steam turbine, with 150% efficiency thats unlocked at advanced advanced advanced transition metals.
     - Updated the colourblind friendly circuit icons.
     - Buildings that cannot work in certain pollution values now show their max pollutant value, and the amount of pollutant in the chunk they currently exist in.
+    - Added the next tier of satellite, the interplanetary satellite! I'm a massive space nerd and want to explore more space concepts within PM, and having progressivly more advanced satellites fits that perfectly.
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
@@ -65,6 +66,7 @@ Date: 2025-12-19
     - Proximity beacons now have 2 distribution efficiency instead of 2.25.
     - Redesigned all the washing plants up to my current standard of modelling, instead of working on new content.
     - Moved caesium glass ampules into the assembling machine.
+    - The normal satellite now makes 500 space research data per launch, down from 1000.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
