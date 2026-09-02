@@ -1272,7 +1272,7 @@ data:extend({
           line_count = 1,
           frame_count = 1,
           repeat_count = 64,
-          shift = util.by_pixel(0, -10),
+          shift = util.by_pixel(0, -8),
           scale = 0.5
         },
         {
@@ -1282,7 +1282,7 @@ data:extend({
           height = 216,
           line_length = 8,
           frame_count = 64,
-          shift = util.by_pixel(0, -10),
+          shift = util.by_pixel(0, -8),
           scale = 0.5
         },
         {
@@ -1294,7 +1294,7 @@ data:extend({
           frame_count = 1,
           repeat_count = 64,
           draw_as_shadow = true,
-          shift = util.by_pixel(40, -10),
+          shift = util.by_pixel(40, -8),
           scale = 0.5
         }
       }
@@ -1315,7 +1315,7 @@ data:extend({
                         frame_count = 1,
                         line_length = 1,
                         repeat_count = 64,
-                        shift = util.by_pixel(0, -10),
+                        shift = util.by_pixel(0, -8),
                         draw_as_glow = true,
                         blend_mode = "additive",
                         scale = 0.5
@@ -1336,7 +1336,7 @@ data:extend({
                         height = 216,
                         frame_count = 64,
                         line_length = 8,
-                        shift = util.by_pixel(0, -10),
+                        shift = util.by_pixel(0, -8),
                         scale = 0.5
                     },
                 }
@@ -3567,7 +3567,7 @@ data:extend({
           line_count = 1,
           frame_count = 1,
           repeat_count = 64,
-          shift = util.by_pixel(0, -10),
+          shift = util.by_pixel(0, -8),
           scale = 0.5
         },
         {
@@ -3577,7 +3577,7 @@ data:extend({
           height = 216,
           line_length = 8,
           frame_count = 64,
-          shift = util.by_pixel(0, -10),
+          shift = util.by_pixel(0, -8),
           scale = 0.5
         },
         {
@@ -3589,7 +3589,7 @@ data:extend({
           frame_count = 1,
           repeat_count = 64,
           draw_as_shadow = true,
-          shift = util.by_pixel(40, -10),
+          shift = util.by_pixel(40, -8),
           scale = 0.5
         }
       }
@@ -3610,7 +3610,7 @@ data:extend({
                         frame_count = 1,
                         line_length = 1,
                         repeat_count = 64,
-                        shift = util.by_pixel(0, -10),
+                        shift = util.by_pixel(0, -8),
                         draw_as_glow = true,
                         blend_mode = "additive",
                         scale = 0.5
@@ -3631,7 +3631,7 @@ data:extend({
                         height = 216,
                         frame_count = 64,
                         line_length = 8,
-                        shift = util.by_pixel(0, -10),
+                        shift = util.by_pixel(0, -8),
                         scale = 0.5
                     },
                 }
@@ -8543,7 +8543,7 @@ fluid_boxes =
           line_count = 1,
           frame_count = 1,
           repeat_count = 64,
-          shift = util.by_pixel(0, -10),
+          shift = util.by_pixel(0, -8),
           scale = 0.5
         },
         {
@@ -8553,7 +8553,7 @@ fluid_boxes =
           height = 216,
           line_length = 8,
           frame_count = 64,
-          shift = util.by_pixel(0, -10),
+          shift = util.by_pixel(0, -8),
           scale = 0.5
         },
         {
@@ -8565,7 +8565,7 @@ fluid_boxes =
           frame_count = 1,
           repeat_count = 64,
           draw_as_shadow = true,
-          shift = util.by_pixel(40, -10),
+          shift = util.by_pixel(40, -8),
           scale = 0.5
         }
       }
@@ -8586,7 +8586,7 @@ fluid_boxes =
                         frame_count = 1,
                         line_length = 1,
                         repeat_count = 64,
-                        shift = util.by_pixel(0, -10),
+                        shift = util.by_pixel(0, -8),
                         draw_as_glow = true,
                         blend_mode = "additive",
                         scale = 0.5
@@ -8607,7 +8607,7 @@ fluid_boxes =
                         height = 216,
                         frame_count = 64,
                         line_length = 8,
-                        shift = util.by_pixel(0, -10),
+                        shift = util.by_pixel(0, -8),
                         scale = 0.5
                     },
                 }
@@ -12579,6 +12579,7 @@ data.raw["rocket-silo"]["rocket-silo"].module_slots = 5
 data.raw["rocket-silo"]["rocket-silo"].energy_usage = "8MW"
 data.raw["rocket-silo"]["rocket-silo"].active_energy_usage = "2MW"
 data.raw["rocket-silo"]["rocket-silo"].lamp_energy_usage = "250kW"
+data.raw["rocket-silo"]["rocket-silo"].fixed_recipe = nil
 data.raw["rocket-silo"]["rocket-silo"].tile_buildability_rules = {{area = {{-4.2, -4.2}, {4.2, 4.2}}, required_tiles = {layers = {pm_concrete = true, pm_refined_concrete = true}}, remove_on_collision = true}}
 data.raw["rocket-silo"]["rocket-silo"].custom_tooltip_fields =
 {

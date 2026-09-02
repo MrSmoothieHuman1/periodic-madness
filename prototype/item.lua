@@ -2325,6 +2325,41 @@ data:extend({
     order = "e",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-interplanetary-satellite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/reusable-rocket-part.png",
+    subgroup = "pm-rocket-launchables",
+    order = "e",
+    rocket_launch_products = 
+    {
+        PM.product("space-science-pack"):amount(1000):done()
+    },
+    inventory_move_sound = item_sounds.mechanical_inventory_move,
+    pick_sound = item_sounds.mechanical_inventory_pickup,
+    drop_sound = item_sounds.mechanical_inventory_move,
+    weight = 500 * kg,
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "pm-ion-thruster-fuel-tank",
+    icon = "__periodic-madness__/graphics/icons/liquid-rocket-oxidiser-tank.png",
+    icon_size = 64,
+    subgroup = "pm-liquid-rocket-fuels",
+    order = "i",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-ion-thruster",
+    icon = "__periodic-madness__/graphics/icons/liquid-rocket-oxidiser-tank.png",
+    icon_size = 64,
+    subgroup = "pm-liquid-rocket-fuels",
+    order = "i",
+    stack_size = 100
+  },
 
   {
     type = "item",
@@ -2485,6 +2520,10 @@ data.raw["item"]["fission-reactor-equipment"].order = "d"
 data.raw["recipe"]["fission-reactor-equipment"].subgroup = "pm-modular-power"
 data.raw["recipe"]["fission-reactor-equipment"].order = "d"
 data.raw["item"]["satellite"].weight = 500 * kg
+data.raw["item"]["satellite"].rocket_launch_products = 
+{
+    PM.product("space-science-pack"):amount(500):done()
+}
 --im so happy i deleted tiktok but at the same time some of the shitposts were aamziong
 --same (COUGH) rice
 --it'll be some of the most mind-rotting thing ever and i love it

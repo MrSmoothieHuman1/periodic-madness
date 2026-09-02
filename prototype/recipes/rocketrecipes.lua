@@ -386,6 +386,46 @@ data:extend({
         PM.product("pm-liquid-rocket-oxidiser-tank"):amount(2):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-ion-thruster-fuel-tank",
+    enabled = false,
+    energy_required = 20,
+    categories = {"crafting-with-fluid"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-xenon-gas", 50, "fluid"),
+        PM.ingredient("pm-lightweight-panelling", 8),
+        PM.ingredient("pm-cooling-plating", 10),
+        PM.ingredient("pm-fluid-circuit", 2),
+        PM.ingredient("pm-iodine", 6),
+        PM.ingredient("pm-caesium-glass-ampule", 2)
+    },
+    results = 
+    {
+        PM.product("pm-ion-thruster-fuel-tank"):amount(2):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-ion-thruster",
+    enabled = false,
+    energy_required = 30,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("pm-neodymium-magnet", 6),
+        PM.ingredient("pm-boron", 25, "fluid"),
+        PM.ingredient("pm-travelling-wave-erbium-amplifier-tube", 8),
+        PM.ingredient("pm-lightweight-panelling", 12),
+        PM.ingredient("pm-advanced-electric-engine-unit", 1)
+    },
+    results = 
+    {
+        PM.product("pm-ion-thruster"):amount(1):done()
+    }
+  },
 
   {
     type = "recipe",
@@ -423,42 +463,6 @@ data:extend({
     }
   },
 --MARK: Rocket launchables
-  {
-    type = "recipe",
-    name = "pm-space-processing-unit-satellite",
-    icons =
-    {
-      {
-        icon = "__base__/graphics/icons/satellite.png",
-        icon_size = 64,
-      },
-      {
-        icon = "__periodic-madness__/graphics/icons/space-processing-unit.png",
-        icon_size = 64,
-        shift = {8, -8},
-        scale = 0.23
-      },
-    },
-    enabled = false,
-    energy_required = 15,
-    subgroup = "pm-rocket-launchables",
-    order = "b",
-    ingredients =
-    {
-        PM.ingredient("pm-solar-panel-3", 20),
-        PM.ingredient("rocket-fuel", 25),
-        PM.ingredient("pm-gyroscope", 1),
-        PM.ingredient("pm-radiation-resistant-panelling", 24),
-        PM.ingredient("pm-gold-plate", 12),
-        PM.ingredient("pm-space-processing-unit", 5),
-        PM.ingredient("pm-selenium-sulfur-battery", 20),
-        PM.ingredient("pm-rocket-control-unit", 5)
-    },
-    results =
-    {
-        PM.product("satellite"):amount(1):done()
-    }
-  },
   {
     type = "recipe",
     name = "pm-reusable-rocket-guidance-unit",
@@ -536,6 +540,29 @@ data:extend({
     results = 
     {
         PM.product("pm-efficiency-beamcon-satellite"):amount(1):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-interplanetary-satellite",
+    enabled = false,
+    energy_required = 45,
+    ingredients = 
+    {
+        PM.ingredient("pm-solar-panel-3", 20),
+        PM.ingredient("rocket-fuel", 10),
+        PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("pm-radiation-resistant-panelling", 36),
+        PM.ingredient("pm-mylar", 8),
+        PM.ingredient("pm-space-processing-unit", 15),
+        PM.ingredient("pm-selenium-sulfur-battery", 20),
+        PM.ingredient("pm-rocket-control-unit", 5),
+        PM.ingredient("pm-ion-thruster-fuel-tank", 5),
+        PM.ingredient("pm-ion-thruster", 1)
+    },
+    results = 
+    {
+        PM.product("pm-interplanetary-satellite"):amount(1):done()
     }
   },
 

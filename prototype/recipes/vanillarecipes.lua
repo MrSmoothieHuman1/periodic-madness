@@ -837,16 +837,16 @@ data.raw["recipe"]["requester-chest"].ingredients =
 }
 data.raw["recipe"]["satellite"].ingredients =
 {
-    PM.ingredient("pm-solar-panel-3", 20),
-    PM.ingredient("rocket-fuel", 25),
+    PM.ingredient("pm-solar-panel-3", 18),
+    PM.ingredient("rocket-fuel", 20),
     PM.ingredient("pm-gyroscope", 1),
     PM.ingredient("pm-radiation-resistant-panelling", 36),
-    PM.ingredient("pm-gold-plate", 12),
-    PM.ingredient("pm-advanced-processing-unit", 10),
+    PM.ingredient("pm-mylar", 8),
+    PM.ingredient("pm-advanced-processing-unit", 20),
     PM.ingredient("pm-selenium-sulfur-battery", 20),
     PM.ingredient("pm-rocket-control-unit", 5)
 }
-data.raw["recipe"]["satellite"].energy_required = 15
+data.raw["recipe"]["satellite"].energy_required = 30
 data.raw["recipe"]["rocket-silo"].ingredients =
 {
     PM.ingredient("refined-concrete", 250),

@@ -7820,7 +7820,6 @@ data:extend({
         PM.unlock_recipe("pm-silicon-on-sapphire"),
         PM.unlock_recipe("pm-space-hardened-shielding"),
         PM.unlock_recipe("pm-space-processing-unit"),
-        PM.unlock_recipe("pm-space-processing-unit-satellite"),
         PM.unlock_recipe("pm-space-processing-unit-rocket-control-unit")
     },
     prerequisites = {"space-science-pack"},
@@ -7884,6 +7883,8 @@ data:extend({
       time = 160
     }
   },
+
+--anything behind this line should take double of TM/ATM/AATM science
   {
     type = "technology",
     name = "pm-asteroid-mining",
@@ -8010,8 +8011,40 @@ data:extend({
       time = 220
     }
   },
+  {
+    type = "technology",
+    name = "pm-interplanetary-satellite",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-ion-thruster-fuel-tank"),
+        PM.unlock_recipe("pm-ion-thruster"),
+        PM.unlock_recipe("pm-interplanetary-satellite")
+    },
+    prerequisites = {"pm-travelling-wave-erbium-amplifier-tubes", "pm-space-processing-units"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 240
+    }
+  },
 
---anything behind this line should take double of TM/ATM/AATM science
 --MARK: LA science
   {
     type = "technology",

@@ -131,7 +131,7 @@ data:extend({
         type = "fluid",
         name = "pm-molten-erbium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/molten-erbium.png",
         subgroup = "pm-erbium-la",
         order = "g",
         default_temperature = 15,

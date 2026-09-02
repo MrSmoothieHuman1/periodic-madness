@@ -6355,7 +6355,7 @@ data:extend({
         PM.ingredient("pm-light-coolant", 2.5, "fluid"),
         PM.ingredient("pm-helium-gas", 5, "fluid"),
         PM.ingredient("pm-corrosion-resistant-tubing", 8),
-        PM.ingredient("pm-stainless-steel-4lloy", 3),
+        PM.ingredient("pm-stainless-steel-alloy", 4),
         PM.ingredient("pm-erbium-plate", 3),
         PM.ingredient("pm-advanced-electric-engine-unit", 1)
     },
