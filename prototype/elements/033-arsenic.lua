@@ -49,7 +49,7 @@ data:extend({
       {filename = "__periodic-madness__/graphics/icons/ores/arsenic-ore-icon-2.png", size = 64, scale = 0.5},
       {filename = "__periodic-madness__/graphics/icons/ores/arsenic-ore-icon-3.png", size = 64, scale = 0.5},
     },
-    subgroup = "pm-lead-ptm",
+    subgroup = "pm-arsenic-mt",
     order = "d",
     protons = 33,
     neutrons = 42,
