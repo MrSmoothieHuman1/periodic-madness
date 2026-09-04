@@ -2002,7 +2002,7 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-speed-beamcon-platform"):amount(1):done(),
+        PM.product("pm-beamcon-platform"):amount(1):done(),
         PM.product("pm-speed-beamcon-reciever"):amount(1):done()
     },
     subgroup = "pm-rocket-launchables",
@@ -2021,7 +2021,7 @@ data:extend({
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
-        PM.product("pm-efficiency-beamcon-platform"):amount(1):done(),
+        PM.product("pm-beamcon-platform"):amount(1):done(),
         PM.product("pm-efficiency-beamcon-reciever"):amount(1):done()
     },
     subgroup = "pm-rocket-launchables",
