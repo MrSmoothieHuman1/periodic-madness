@@ -379,7 +379,7 @@ data:extend({
         name = "pm-beamcon-platform",
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.45, result = "pm-proximity-beacon"},
+        minable = {mining_time = 0.45, result = "pm-beamcon-platform"},
         fast_replaceable_group = "beacon",
         max_health = 150,
         corpse = "beacon-remnants",
@@ -418,7 +418,7 @@ data:extend({
         },
         energy_usage = "1MW",
         distribution_effectivity = 0.25,
-        distribution_effectivity_bonus_per_quality_level = 0.2,
+        distribution_effectivity_bonus_per_quality_level = 0.25,
         profile =
         {
             1, 1, 1, 1, 1, 1, 1, 1, 8/9, 8/10, 8/11, 8/12, 8/13, 8/14, 8/15, 8/16, 8/17, 8/18, 8/19, 8/20

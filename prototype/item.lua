@@ -2034,20 +2034,11 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-speed-beamcon-platform",
+    name = "pm-beamcon-platform",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
     subgroup = "module",
     order = "e",
-    stack_size = 5,
-  },
-  {
-    type = "item",
-    name = "pm-efficiency-beamcon-platform",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
-    subgroup = "module",
-    order = "f",
     stack_size = 5,
   },
   {

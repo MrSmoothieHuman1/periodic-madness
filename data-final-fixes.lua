@@ -306,5 +306,3 @@ for _, item in pairs(data.raw["technology"]) do
         item.icon_size = 49
     end
 end--]]
-
-data.raw["furnace"]["recycler"].allowed_module_categories = {"quality"}
