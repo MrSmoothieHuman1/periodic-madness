@@ -99,6 +99,15 @@ local function create_tracker(entity, definition, old_tracker)
     current_pollution = tracker.surface.get_pollution(entity.position)
     tracker.wrong_pollutant = nil
   end
+  
+  if not tracker.tooltip then
+    for _, tooltip in pairs(entity.get_tooltip_fields()) do
+      if tooltip.name[1] == "pm-tooltips.current-pollution" then
+        tracker.tooltip = tooltip
+        break;
+      end
+    end
+  end
 
   if not tracker.tooltip then
     tracker.tooltip = {
