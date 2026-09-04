@@ -239,7 +239,7 @@ Version: 0.8.003
 Date: 2025-12-21
   The old chlorine ways but not really Update:
 
-  Additons:
+  Additions:
     - Added a water electrolysis recipe that only takes water as an input, but has solid byproducts.
 
   Fixes:
@@ -250,7 +250,7 @@ Version: 0.8.002
 Date: 2025-12-19
   The boulder has already begun rolling to 0.9 Update:
 
-  Additons:
+  Additions:
     - Added back the platinum water electrolysis recipe, unlocked at platinum processing. It now also outputs platinum.
     - Added nitrobenzene processing, as an allegory to octane fuels! its unlocked at alkali metals and is the advanced way to make burning oil.
 
