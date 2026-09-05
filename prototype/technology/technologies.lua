@@ -8014,8 +8014,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-interplanetary-satellite",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/interplanetary-satellite.png",
     effects =
     {
         PM.unlock_recipe("pm-ion-thruster-fuel-tank"),

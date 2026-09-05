@@ -2320,7 +2320,7 @@ data:extend({
     type = "item",
     name = "pm-interplanetary-satellite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/reusable-rocket-part.png",
+    icon = "__periodic-madness__/graphics/icons/interplanetary-satellite.png",
     subgroup = "pm-rocket-launchables",
     order = "e",
     rocket_launch_products = 
