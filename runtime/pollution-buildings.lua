@@ -284,7 +284,7 @@ local function reload_buildings()
       local definition = pollution_definition_map[entity.name]
       ---@cast definition -?
 
-      local old_tracker = old_list[unit_id] or {}--[[@as PollutionLimitTracking]]
+      local old_tracker = old_list[unit_id] or {entity = entity}--[[@as PollutionLimitTracking]]
       -- HACK: Because Black released an update that *didn't* include the fix for this >:(
       if not old_tracker.alert and entity.disabled_by_script then
 ---@diagnostic disable-next-line: assign-type-mismatch
