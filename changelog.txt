@@ -67,6 +67,7 @@ Date: 2025-12-19
     - Redesigned all the washing plants up to my current standard of modelling, instead of working on new content.
     - Moved caesium glass ampules into the assembling machine.
     - The normal satellite now makes 500 space research data per launch, down from 1000.
+    - Lowered the amount of PE plastic needed for space circuits from 6 to 5.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

@@ -4788,7 +4788,7 @@ data:extend({
         PM.ingredient("pm-advanced-processing-unit", 1),
         PM.ingredient("pm-fluid-circuit", 2),
         PM.ingredient("pm-aluminium-plate", 6),
-        PM.ingredient("pm-polyethylene-plastic", 6),
+        PM.ingredient("pm-polyethylene-plastic", 5),
         PM.ingredient("pm-space-hardened-shielding", 1)
     },
     results =
