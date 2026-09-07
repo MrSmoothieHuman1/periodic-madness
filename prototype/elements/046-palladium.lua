@@ -60,7 +60,7 @@ data:extend({
     {
       PM.product("pm-nickel-chunk"):amount(0, 2):catalyst(1):done(),
       PM.product("pm-palladium-ore"):amount(4):done(),
-      PM.product("pm-flux-container"):amount(1):chance(0.66):done()
+      PM.product("pm-used-flux-container"):amount(1):catalyst(1):done()
     }
   } --[[@as data.RecipePrototype]],
   {

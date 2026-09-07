@@ -3039,14 +3039,16 @@ data:extend({
       PM.unlock_recipe("pm-flourite-crystallisation"),
       PM.unlock_recipe("pm-hydrogen-flouride"),
       PM.unlock_recipe("pm-hydroflouric-acid"),
-      PM.unlock_recipe("pm-hydroflouric-acid-filtering"),
+      PM.unlock_recipe("pm-flourine"),
       PM.unlock_recipe("pm-calcium-sulfate-seperation"),
       PM.unlock_recipe("pm-flux-container"),
       PM.unlock_recipe("pm-filled-flux-container"),
+      PM.unlock_recipe("pm-used-flux-container-filling"),
       PM.unlock_recipe("pm-fluxed-palladium-nickel-froth-seperation"),
       PM.unlock_recipe("pm-fluxed-platinum-nickel-froth-seperation"),
       PM.unlock_recipe("pm-fluxed-copper-froth-seperation"),
-      PM.unlock_recipe("pm-fluxed-phosphor-vapour")
+      PM.unlock_recipe("pm-fluxed-phosphor-vapour"),
+      PM.unlock_recipe("pm-fluxed-titanium-oxide")
     },
     prerequisites = {"chemical-science-pack"},
     unit =
@@ -5750,7 +5752,9 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-magnesium-carbonate"),
-      PM.unlock_recipe("pm-magnesium-chloride")
+      PM.unlock_recipe("pm-magnesium-chloride"),
+      PM.unlock_recipe("pm-advanced-filled-flux-container"),
+      PM.unlock_recipe("pm-advanced-used-flux-container-filling")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
     unit =

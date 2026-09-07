@@ -226,7 +226,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/crystallisation-tech.png",
     effects =
     {
-      PM.unlock_recipe("pm-better-flourite-crystallisation"),
+      PM.unlock_recipe("pm-coolant-flourite-crystallisation"),
       PM.unlock_recipe("pm-wolframite-crystallisation")
     },
     prerequisites = { "pm-flourine-processing", "pm-post-transition-metal-pack-unlock"},

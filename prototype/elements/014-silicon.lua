@@ -238,7 +238,7 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-high-quality-quartzite", 6),
-            PM.ingredient("pm-filled-flux-container", 3),
+            PM.ingredient("pm-filled-flux-container", 2),
             PM.ingredient("pm-carbon", 4),
             PM.ingredient("pm-ferrum", 9)
         },
@@ -246,8 +246,7 @@ data:extend({
         {
             PM.product("pm-ferrosilicon"):amount(3):done(),
             PM.product("pm-carbon-monoxide", "fluid"):amount(5, 8):done(),
-            PM.product("pm-filled-flux-container"):amount(0, 2):catalyst(2):done(),
-            PM.product("pm-flux-container"):amount(0, 1):catalyst(1):done()
+            PM.product("pm-used-flux-container"):amount(2):done()
         }
     },
     {

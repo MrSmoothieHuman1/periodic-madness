@@ -113,7 +113,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-hydroflouric-acid-filtering",
+    name = "pm-flourine",
     crafting_machine_tint =
     {
         primary = {0.098, 0.922, 0.835},
@@ -127,6 +127,7 @@ data:extend({
     subgroup = "pm-flourine-rnm",
     order = "e",
     main_product = "pm-flourine",
+    allow_productivity = true,
     ingredients =
     {
       PM.ingredient("pm-hydroflouric-acid", 10, "fluid"),
@@ -134,13 +135,13 @@ data:extend({
     results =
     {
       PM.product("pm-flourine"):amount(3):done(),
-      PM.product("pm-sulfur-dioxide", "fluid"):amount(2, 5):done()
+      PM.product("pm-sulfur-dioxide", "fluid"):amount(2, 5):catalyst(3):done()
     },
   } --[[@as data.RecipePrototype]],
 
   {
     type = "recipe",
-    name = "pm-better-flourite-crystallisation",
+    name = "pm-coolant-flourite-crystallisation",
     icons = 
     {
       {

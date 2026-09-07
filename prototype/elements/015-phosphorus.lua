@@ -153,7 +153,7 @@ data:extend({
     results =
     {
       PM.product("pm-phosphor-vapour", "fluid"):amount(20):done(),
-      PM.product("pm-flux-container"):amount(1):chance(0.66):done()
+      PM.product("pm-used-flux-container"):amount(1):catalyst(1):done()
     }
   } --[[@as data.RecipePrototype]],
 })

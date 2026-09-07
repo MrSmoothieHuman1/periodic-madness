@@ -175,7 +175,7 @@ data:extend({
     {
       PM.product("pm-nickel-chunk"):amount(0, 2):done(),
       PM.product("pm-platinum-powder"):amount(8):done(),
-      PM.product("pm-flux-container"):amount(1):chance(0.66):done()
+      PM.product("pm-used-flux-container"):amount(1):catalyst(1):done()
     }
   },
   {

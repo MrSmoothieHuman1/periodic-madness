@@ -120,7 +120,7 @@ data:extend({
     results =
     {
       PM.product("pm-bismite"):amount(4, 6):done(),
-      PM.product("pm-flux-container"):amount(1):catalyst(1):done(),
+      PM.product("pm-used-flux-container"):amount(1):catalyst(1):done(),
       PM.product("pm-tin-ore"):amount(1, 4):catalyst(3):done()
     }
   },

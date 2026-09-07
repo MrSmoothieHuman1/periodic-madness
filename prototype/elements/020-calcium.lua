@@ -284,7 +284,7 @@ data:extend({
     {
       PM.product("pm-calcium-oxide"):amount(4):done(),
       PM.product("pm-carbon-dioxide-gas", "fluid"):amount(8, 20):done(),
-      PM.product("pm-flux-container"):amount(1, 2):done()
+      PM.product("pm-used-flux-container"):amount(2):catalyst(1):done()
     }
   },
   {

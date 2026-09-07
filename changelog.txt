@@ -38,6 +38,8 @@ Date: 2025-12-19
     - Updated the colourblind friendly circuit icons.
     - Buildings that cannot work in certain pollution values now show their max pollutant value, and the amount of pollutant in the chunk they currently exist in.
     - Added the next tier of satellite, the interplanetary satellite! I'm a massive space nerd and want to explore more space concepts within PM, and having progressivly more advanced satellites fits that perfectly.
+    - Added 'Used flux container', an intemeditary stage between a filled and empty flux container. If outputted by a recipe, it requires half the input of a filled flux container to be made usable again.
+    - Added a better recipe for flux, unlocked in AEM and uses magnesium carbonate.
 
   Changes:
     - Updated the two steel items graphics and their technology icons.
@@ -68,6 +70,9 @@ Date: 2025-12-19
     - Moved caesium glass ampules into the assembling machine.
     - The normal satellite now makes 500 space research data per launch, down from 1000.
     - Lowered the amount of PE plastic needed for space circuits from 6 to 5.
+    - Made the fluorine recipe accept productivity.
+    - Rebalanced personal batteries, to make them all act the same. It made the numbers scale way too hard, especially with selenium.
+    - Fluxed titanium oxide, fluxed froth recipes, fluxed bismite, ferrosilicon, fluxed phosphor vapour, calcium oxide and pure baryte now output a fixed amount of used flux containers.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

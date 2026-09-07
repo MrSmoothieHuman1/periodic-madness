@@ -1107,8 +1107,6 @@ data:extend({
     name = "pm-flux-container",
     energy_required = 1.5,
     enabled = false,
-    subgroup = "pm-catalysts",
-    order = "g",
     allow_productivity = true,
     ingredients =
     {
@@ -1123,8 +1121,6 @@ data:extend({
     name = "pm-filled-flux-container",
     energy_required = 3,
     enabled = false,
-    subgroup = "pm-catalysts",
-    order = "ga",
     ingredients =
     {
       PM.ingredient("pm-flux-container", 1),
@@ -6509,6 +6505,63 @@ data:extend({
     results = 
     {
         PM.product("pm-biomechanical-cortex"):amount(1):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-used-flux-container-filling",
+    energy_required = 1.5,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-used-flux-container", 1),
+      PM.ingredient("pm-sand", 2),
+      PM.ingredient("pm-coke", 1),
+      PM.ingredient("pm-flourine", 1)
+    },
+    results = 
+    {
+      PM.product("pm-filled-flux-container"):amount(1):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-filled-flux-container",
+    energy_required = 3,
+    enabled = false,
+    subgroup = "pm-catalysts",
+    order = "gc",
+    ingredients =
+    {
+      PM.ingredient("pm-flux-container", 2),
+      PM.ingredient("pm-sand", 6),
+      PM.ingredient("pm-coke", 4),
+      PM.ingredient("pm-flourine", 3),
+      PM.ingredient("pm-magnesium-carbonate", 2)
+    },
+    results = 
+    {
+      PM.product("pm-filled-flux-container"):amount(2):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-advanced-used-flux-container-filling",
+    energy_required = 1.5,
+    enabled = false,
+    subgroup = "pm-catalysts",
+    order = "gd",
+    ingredients =
+    {
+      PM.ingredient("pm-used-flux-container", 2),
+      PM.ingredient("pm-sand", 3),
+      PM.ingredient("pm-coke", 2),
+      PM.ingredient("pm-flourine", 2),
+      PM.ingredient("pm-magnesium-carbonate", 1)
+    },
+    results = 
+    {
+      PM.product("pm-filled-flux-container"):amount(2):done()
     }
   },
 } --[[@as data.RecipePrototype[] ]])

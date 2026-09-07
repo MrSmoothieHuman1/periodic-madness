@@ -2351,6 +2351,15 @@ data:extend({
     order = "b",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-used-flux-container",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/used-flux-container.png",
+    subgroup = "pm-catalysts",
+    order = "gb",
+    stack_size = 50
+  },
 
   {
     type = "item",

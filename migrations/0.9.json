@@ -3,6 +3,8 @@
     [
         ["pm-sodium-bicarbonate-heating", "pm-sodium-carbonate"],
         ["pm-fluid-circuit-breadboard", "pm-fluid-breadboard"],
-        ["pm-gallium-liqouring", "pm-gallium-liqour"]
+        ["pm-gallium-liqouring", "pm-gallium-liqour"],
+        ["pm-hydroflouric-acid-filtering", "pm-flourine"],
+        ["pm-better-flourite-crystallisation", "pm-coolant-flourite-crystallisation"]
     ]
 }

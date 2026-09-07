@@ -155,7 +155,7 @@ data:extend({
       PM.product("pm-copper-chunk"):amount(1):done(),
       PM.product("pm-cobaltite"):amount(1):chance(0.34):done(),
       PM.product("pm-cobalt-blue"):amount(4):done(),
-      PM.product("pm-flux-container"):amount(1):chance(0.66):done(),
+      PM.product("pm-used-flux-container"):amount(1):catalyst(1):done(),
     }
   } --[[@as data.RecipePrototype]],
   {

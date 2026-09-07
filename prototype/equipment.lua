@@ -308,7 +308,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "30MJ",
+      buffer_capacity = "40MJ",
       usage_priority = "tertiary"
     },
     categories = {"armor"}
@@ -333,7 +333,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "120MJ",
+      buffer_capacity = "100MJ",
       usage_priority = "tertiary"
     },
     categories = {"armor"}
@@ -359,7 +359,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "150MJ",
+      buffer_capacity = "50MJ",
       usage_priority = "tertiary"
     },
     categories = {"armor"}
@@ -384,7 +384,7 @@ data:extend({
     energy_source =
     {
       type = "electric",
-      buffer_capacity = "250MJ",
+      buffer_capacity = "200MJ",
       usage_priority = "tertiary"
     },
     categories = {"armor"}
@@ -427,22 +427,8 @@ data.raw["item"]["battery-equipment"].icon = "__periodic-madness__/graphics/equi
 data.raw["item"]["battery-mk2-equipment"].icon = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment.png"
 data.raw["battery-equipment"]["battery-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-equipment-icon.png"
 data.raw["battery-equipment"]["battery-mk2-equipment"].sprite.filename = "__periodic-madness__/graphics/equipment/vanadium-battery-mk2-equipment-icon.png"
-data.raw["battery-equipment"]["battery-equipment"].shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    }
-data.raw["battery-equipment"]["battery-mk2-equipment"].shape =
-    {
-      width = 2,
-      height = 2,
-      type = "full"
-    }
-data.raw["battery-equipment"]["battery-equipment"].energy_source.buffer_capacity = "50MJ"
-data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.buffer_capacity = "200MJ"
-data.raw["battery-equipment"]["battery-equipment"].energy_source.output_flow_limit = "500kW"
-data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.output_flow_limit = "1000kW"
+data.raw["battery-equipment"]["battery-equipment"].energy_source.buffer_capacity = "25MJ"
+data.raw["battery-equipment"]["battery-mk2-equipment"].energy_source.buffer_capacity = "75MJ"
 data.raw["item"]["battery-equipment"].subgroup = "pm-modular-storage"
 data.raw["item"]["battery-equipment"].order = "a"
 data.raw["item"]["battery-mk2-equipment"].subgroup = "pm-modular-storage"

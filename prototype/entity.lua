@@ -2211,7 +2211,7 @@ data:extend({
     max_health = 125,
     corpse = "pm-evaporator",
     dying_explosion = "assembling-machine-1-explosion",
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     fast_replaceable_group = "pm-evaporators",
     next_upgrade = "pm-evaporator-2",
     resistances =
@@ -2304,7 +2304,7 @@ data:extend({
     next_upgrade = "pm-molten-inator-2",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     working_sound =
     {
       sound =
@@ -2404,7 +2404,7 @@ data:extend({
     next_upgrade = "pm-cold-inator-2",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     working_sound =
     {
       sound =
@@ -2506,7 +2506,7 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
     module_slots = 1,
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     working_sound =
     {
       sound =
@@ -2607,7 +2607,7 @@ data:extend({
     next_upgrade = "pm-cold-inator-3",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     working_sound =
     {
       sound =
@@ -4555,7 +4555,7 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     allowed_effects = PM.all_effects(),
     module_slots = 2,
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     fast_replaceable_group = "pm-evaporators",
     next_upgrade = "pm-evaporator-2",
     resistances =
@@ -6894,7 +6894,7 @@ data:extend({
   fast_replaceable_group = "pm-molteninator",
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["-inator"],
-  forced_symmetry = "horizontal",
+  uses_mirroring = true,
   working_sound =
   {
     sound =
@@ -7010,7 +7010,7 @@ data:extend({
   next_upgrade = "pm-cold-inator-3",
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["-inator"],
-  forced_symmetry = "horizontal",
+  uses_mirroring = true,
   working_sound =
   {
     sound =
@@ -10002,7 +10002,7 @@ fluid_boxes =
     impact_categories = {"metal"},
     corpse = "pm-geothermal-generator",
     dying_explosion = "assembling-machine-1-explosion",
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     -- alert_icon_shift = util.by_pixel(0, -12),
     resistances =
     {
@@ -11018,7 +11018,7 @@ fluid_boxes =
     module_slots = 8,
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heat-pumps"},
-    forced_symmetry = "horizontal",
+    uses_mirroring = true,
     icons_positioning = 
     {
       {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
@@ -11858,7 +11858,7 @@ fluid_boxes =
   name = "pm-reverberatory-furnace",
   icon = "__periodic-madness__/graphics/icons/buildings/blast-furnace.png",
   icon_size = 64,
-  flags = { "placeable-neutral", "placeable-player", "player-creation" },
+  flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable"},
   minable = { mining_time = 0.5, result = "pm-blast-furnace" },
   max_health = 800,
   corpse = "pm-blast-furnace",
@@ -11878,9 +11878,9 @@ fluid_boxes =
   selection_box = { { -2, -2 }, { 2, 2 } },
   alert_icon_shift = util.by_pixel(0, -12),
   icon_draw_specification = {shift = {0, -0.5}, scale = 1, scale_for_many = 0.5, render_layer = "entity-info-icon"},
-  --forced_symmetry = "horizontal", graphics break, not sure what to do about it
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
+  uses_mirroring = true,
   graphics_set =
   {
   status_colors = pm_diode_status_colors(),
@@ -12006,24 +12006,6 @@ fluid_boxes =
   fluid_boxes =
   {
     {
-      production_type = "input",
-      pipe_covers = pipecoverspictures(),
-      volume = 250,
-      pipe_connections =
-      {
-        {flow_direction="input-output", direction = defines.direction.north, position = {0.5, -1.5}},
-      },
-    },
-    {
-      production_type = "input",
-      pipe_covers = pipecoverspictures(),
-      volume = 250,
-      pipe_connections =
-      {
-        {flow_direction="input-output", direction = defines.direction.south, position = {0-.5, 1.5}}, --hope this annoys penny
-      },
-    },
-    {
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 250,
@@ -12033,12 +12015,30 @@ fluid_boxes =
       },
     },
     {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 300,
+      pipe_connections =
+      {
+        {flow_direction="input-output", direction = defines.direction.east, position = {1.5, -0.5}},
+      },
+    },
+    {
       production_type = "output",
       pipe_covers = pipecoverspictures(),
       volume = 250,
       pipe_connections =
       {
-        {flow_direction="input-output", direction = defines.direction.west, position = {-1.5, -0.5}},
+        {flow_direction="input-output", direction = defines.direction.west, position = {-1.5, 0-.5}},
+      },
+    },
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      volume = 300,
+      pipe_connections =
+      {
+        {flow_direction="input-output", direction = defines.direction.west, position = {-1.5, 0.5}},
       },
     },
   },

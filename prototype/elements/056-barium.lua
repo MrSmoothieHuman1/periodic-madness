@@ -222,7 +222,7 @@ data:extend({
             PM.product("pm-iron-chunk"):amount(0, 4):chance(0.33):done(),
             PM.product("pm-zinc-chunk"):amount(0, 4):chance(0.33):done(),
             PM.product("pm-lead-chunks"):amount(0, 4):chance(0.33):done(),
-            PM.product("pm-flux-container"):amount(1, 2):done()
+            PM.product("pm-used-flux-container"):amount(2):catalyst(2):done()
         }
     },
     {
