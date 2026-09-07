@@ -8278,7 +8278,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-yttrium-extraction",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-yttrium-extraction.png",
     effects =
     {
         PM.unlock_recipe("pm-pure-bastnasite-crushing")

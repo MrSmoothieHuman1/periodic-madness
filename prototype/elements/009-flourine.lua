@@ -123,7 +123,7 @@ data:extend({
     },
     enabled = false,
     energy_required = 6,
-    categories = {"chemistry"},
+    categories = {"pm-electrolysis"},
     subgroup = "pm-flourine-rnm",
     order = "e",
     main_product = "pm-flourine",
