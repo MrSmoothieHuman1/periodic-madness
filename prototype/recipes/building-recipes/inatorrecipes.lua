@@ -565,7 +565,7 @@ data:extend({
     results = 
     {
         PM.product("pm-molten-ReBCO", "fluid"):amount(10):done(),
-        PM.product("pm-flux-container"):amount(2):catalyst(2):done()
+        PM.product("pm-flux-container"):amount(3):catalyst(3):done()
     }
   },
   {
@@ -1341,7 +1341,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-steel", "fluid"):amount(10):done(),
-      PM.product("pm-flux-container"):amount(1, 2):done(),
+      PM.product("pm-flux-container"):amount(1):catalyst(1):done(),
     }
   },
   {
@@ -1400,7 +1400,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-brass", "fluid"):amount(10):done(),
-      PM.product("pm-flux-container"):amount(1, 2):done(),
+      PM.product("pm-flux-container"):amount(1):catalyst(1):done(),
     }
   },
   {
@@ -1459,7 +1459,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-stainless-steel", "fluid"):amount(10):done(),
-      PM.product("pm-flux-container"):amount(1, 2):done(),
+      PM.product("pm-flux-container"):amount(1):catalyst(1):done(),
     }
   },
   {
@@ -1517,7 +1517,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-kasethal", "fluid"):amount(10):done(),
-      PM.product("pm-flux-container"):amount(1, 2):done(),
+      PM.product("pm-flux-container"):amount(1):catalyst(1):done(),
     }
   },
   {
