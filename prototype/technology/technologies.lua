@@ -7988,7 +7988,7 @@ data:extend({
     type = "technology",
     name = "pm-liquid-oxygen-oxidiser",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/liquid-oxygen-oxidiser.png",
     effects =
     {
         PM.unlock_recipe("pm-liquid-oxygen-rocket-oxidiser-tank")
