@@ -74,6 +74,8 @@ Date: 2025-12-19
     - Rebalanced personal batteries, to make them all act the same. It made the numbers scale way too hard, especially with selenium.
     - Fluxed titanium oxide, fluxed froth recipes, fluxed bismite, ferrosilicon, fluxed phosphor vapour, calcium oxide and pure baryte now output a fixed amount of used flux containers.
     - Moved fluorine recipe into the electrolyser, to diversify the buildings needed and for some 1.0 changes.
+    - Changed magesnium chloride technology into a trigger technology.
+    - Made the satellite tech have solar energy 3 as a prerequisite.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

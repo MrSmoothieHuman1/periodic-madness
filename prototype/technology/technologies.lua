@@ -5757,20 +5757,12 @@ data:extend({
       PM.unlock_recipe("pm-advanced-used-flux-container-filling")
     },
     prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
-    unit =
+    research_trigger = 
     {
-      count = 450,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1}
-      },
-      time = 80
-    },
+        type = "craft-item",
+        item = "pm-magnesium-plate",
+        count = 20,
+    }
   },
   {
     type = "technology",
@@ -6695,7 +6687,7 @@ data:extend({
     {
         PM.unlock_recipe("satellite")
     },
-    prerequisites = {"rocket-silo", "pm-gyroscope", "pm-selenium-sulfur-battery"},
+    prerequisites = {"rocket-silo", "pm-gyroscope", "pm-selenium-sulfur-battery", "pm-solar-energy-3"},
     unit =
     {
       count = 800,
