@@ -76,6 +76,7 @@ Date: 2025-12-19
     - Moved fluorine recipe into the electrolyser, to diversify the buildings needed and for some 1.0 changes.
     - Changed magesnium chloride technology into a trigger technology.
     - Made the satellite tech have solar energy 3 as a prerequisite.
+    - Updated advanced sodium extraction technology icon.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

@@ -6,5 +6,13 @@
         ["pm-gallium-liqouring", "pm-gallium-liqour"],
         ["pm-hydroflouric-acid-filtering", "pm-flourine"],
         ["pm-better-flourite-crystallisation", "pm-coolant-flourite-crystallisation"]
+    ],
+    "technology": 
+    [
+        ["pm-better-sodium-extraction", "pm-advanced-sodium-extraction"],
+        ["pm-better-vanadium-oxide", "pm-advanced-sodium-oxide"],
+        ["pm-better-calcium-extraction", "pm-advanced-calcium-extraction"],
+        ["pm-better-module-lights", "pm-promethium-module-lights"],
+        ["pm-better-sulfur-extraction", "pm-advanced-sulfur-extraction"]
     ]
 }

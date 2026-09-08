@@ -3968,7 +3968,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-better-vanadium-oxide",
+    name = "pm-advanced-vanadium-oxide",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/advanced-vanadium-oxide.png",
     effects =
@@ -4072,9 +4072,9 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-better-sodium-extraction",
+    name = "pm-advanced-sodium-extraction",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/sodium-processing.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-sodium-extraction.png",
     effects =
     {
       PM.unlock_recipe("pm-sodium-bicarbonate"),
@@ -4361,7 +4361,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-better-sulfur-extraction",
+    name = "pm-advanced-sulfur-extraction",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/better-sulfur-extraction.png",
     effects =
@@ -5636,7 +5636,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-better-calcium-extraction",
+    name = "pm-advanced-calcium-extraction",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/calcium-processing.png",
     effects =
@@ -5676,7 +5676,7 @@ data:extend({
       PM.unlock_recipe("pm-calcium-sulfate-concrete"),
       PM.unlock_recipe("pm-calcium-sulfate-refined-concrete"),
     },
-    prerequisites = {"pm-better-calcium-extraction", "pm-better-sulfur-extraction"},
+    prerequisites = {"pm-advanced-calcium-extraction", "pm-advanced-sulfur-extraction"},
     unit =
     {
       count = 500,
@@ -8365,7 +8365,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-better-module-lights",
+    name = "pm-promethium-module-lights",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
