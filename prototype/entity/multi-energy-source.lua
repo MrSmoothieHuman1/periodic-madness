@@ -421,7 +421,44 @@ local betterer_lab =
 			loader_position = {-3, 0},
 			loader_direction = defines.direction.west,
 			loader_belt = "pm-high-density-transport-belt",
-			loader_structure = nil, -- TODO: Integrate the loader into the entity
+			loader_structure = 
+            {
+                direction_in = 
+                {
+                    north = 
+                    {
+                      filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab-loader-structure.png",
+                      width = 384,
+                      height = 416,
+                      animation_speed = 0.2,
+                      scale = 0.5,
+                    },
+                    south = 
+                    {
+                      filename = "__periodic-madness__/graphics/icons/empty.png",
+                      width = 64,
+                      height = 64,
+                      animation_speed = 0.2,
+                      scale = 0.5,
+                    },
+                    east = 
+                    {
+                      filename = "__periodic-madness__/graphics/icons/empty.png",
+                      width = 64,
+                      height = 64,
+                      animation_speed = 0.2,
+                      scale = 0.5,
+                    },
+                    west = 
+                    {
+                      filename = "__periodic-madness__/graphics/icons/empty.png",
+                      width = 64,
+                      height = 64,
+                      animation_speed = 0.2,
+                      scale = 0.5,
+                    },
+                }
+            },
 			usage_ratio = 1,
 		},
 		---@type data.CompoundElectricEnergySource
