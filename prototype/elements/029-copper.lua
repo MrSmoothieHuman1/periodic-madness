@@ -383,8 +383,8 @@ data:extend({
   },
   results = 
   {
-    PM.product("pm-cobalt-catalyst"):amount(3):chance(0.85):catalyst(2):done(),
-    PM.product("pm-catalyst-container"):amount(3):chance(0.15):catalyst(2):done(),
+    PM.product("pm-cobalt-catalyst"):amount(3):chance(0.85, 1):catalyst(2):done(),
+    PM.product("pm-catalyst-container"):amount(3):chance(0, 0.15):catalyst(2):done(),
     PM.product("pm-blister-copper"):amount(14):done(),
     PM.product("pm-combined-ore-slab"):amount(0, 3):done()
   }

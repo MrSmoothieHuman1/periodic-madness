@@ -874,8 +874,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-palladium-catalyst"):amount(1):chance(0.9):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.1):catalyst(1):done(),
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.9, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0.1, 0.9):catalyst(1):done(),
       PM.product("pm-trace-acetonitrile", "fluid"):amount(10):done(),
     }
   },
@@ -938,8 +938,8 @@ data:extend({
     results =
     {
       PM.product("pm-common-myostatin", "fluid"):amount(10):done(),
-      PM.product("pm-vanadium-oxide-catalyst"):amount(5):chance(0.8):done(),
-      PM.product("pm-catalyst-container"):amount(5):chance(0.2):done()
+      PM.product("pm-vanadium-oxide-catalyst"):amount(5):chance(0.8, 1):done(),
+      PM.product("pm-catalyst-container"):amount(5):chance(0, 0.2):done()
     }
   },
   {
@@ -1151,8 +1151,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-palladium-catalyst"):amount(1):chance(0.85):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.15):catalyst(1):done(),
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.85, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.15):catalyst(1):done(),
       PM.product("pm-ethylene-glycol", "fluid"):amount(10):done(),
     }
   },
@@ -1290,8 +1290,8 @@ data:extend({
     {
       PM.product("pm-methanol", "fluid"):amount(10):done(),
       PM.product("water", "fluid"):amount(10):done(),
-      PM.product("pm-copper-zinc-aluminium-catalyst"):amount(1):chance(0.95):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.05):catalyst(1):done()
+      PM.product("pm-copper-zinc-aluminium-catalyst"):amount(1):chance(0.95, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.05):catalyst(1):done()
     }
   },
   {
@@ -1313,8 +1313,8 @@ data:extend({
     results =
     {
       PM.product("pm-methyl-methacrylate", "fluid"):amount(15):done(),
-      PM.product("pm-palladium-catalyst"):amount(1):chance(0.8):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.2):catalyst(1):done()
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.8, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.2):catalyst(1):done()
     }
   },
   {
@@ -1412,8 +1412,8 @@ data:extend({
     {
       PM.product("pm-chloroform", "fluid"):amount(7.5, 10):done(),
       PM.product("pm-carbon-tetrachloride", "fluid"):amount(3, 8):done(),
-      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.85):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.15):catalyst(1):done()
+      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.85, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.15):catalyst(1):done()
     }
   },
   {
@@ -3417,8 +3417,8 @@ data:extend({
     results = 
     {
       PM.product("pm-polydimethylsiloxane", "fluid"):amount(8):done(),
-      PM.product("pm-cobalt-catalyst"):amount(3):chance(0.8):catalyst(3):done(),
-      PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(3):done(),
+      PM.product("pm-cobalt-catalyst"):amount(3):chance(0.8, 1):catalyst(3):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0, 0.2):catalyst(3):done(),
       PM.product("pm-hydrochloric-acid", "fluid"):amount(8, 12):done()
     }
   },
@@ -4281,8 +4281,8 @@ data:extend({
     results =
     {
       PM.product("pm-coke"):amount(1):done(),
-      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.9):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.1):done()
+      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.9, 1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.1):done()
     }
   },
   {
@@ -4455,8 +4455,8 @@ data:extend({
       PM.product("pm-hot-coolant", "fluid"):amount(10):catalyst(10):index(1):done(),
       PM.product("pm-phenylhydrazine"):amount(5):done(),
       PM.product("pm-palladium-catalyst"):amount(2):catalyst(2):done(),
-      PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8):catalyst(2):done(),
-      PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(2):done()
+      PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8, 1):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0, 0.2):catalyst(2):done()
     }
   },
   {
@@ -4620,8 +4620,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.75):catalyst(2):done(),
-      PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(2):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.75, 1):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0, 0.25):catalyst(2):done(),
       PM.product("pm-ir-piq-3"):amount(1):done()
     }
   },
@@ -5089,8 +5089,8 @@ data:extend({
     {
         PM.product("pm-methanol", "fluid"):amount(10):done(),
         PM.product("pm-polyethylene-terephthalate"):amount(5):done(),
-        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
-        PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done()
+        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.9, 1):catalyst(2):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0, 0.1):catalyst(2):done()
     }
   },
   {
@@ -5839,8 +5839,8 @@ data:extend({
     {
         PM.product("pm-o-phenylenediamine", "fluid"):amount(20):done(),
         PM.product("pm-ammonia-gas", "fluid"):amount(15):catalyst(15):done(),
-        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.75):catalyst(2):done(),
-        PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(2):done()
+        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.75, 1):catalyst(2):done(),
+        PM.product("pm-catalyst-container"):amount(2):chance(0, 0.25):catalyst(2):done()
     }
   },
   {

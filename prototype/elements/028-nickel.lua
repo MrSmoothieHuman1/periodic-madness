@@ -426,8 +426,8 @@ data:extend({
   },
   results = 
   {
-    PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8):catalyst(1):done(),
-    PM.product("pm-catalyst-container"):amount(2):chance(0.2):catalyst(1):done(),
+    PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8, 1):catalyst(1):done(),
+    PM.product("pm-catalyst-container"):amount(2):chance(0, 0.2):catalyst(1):done(),
     PM.product("pm-nickel-ore"):amount(12):done(),
     PM.product("pm-sulfur-dioxide", "fluid"):amount(2, 12):done()
   }

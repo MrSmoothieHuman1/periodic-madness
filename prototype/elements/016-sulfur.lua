@@ -78,8 +78,8 @@ data:extend({
     {
       PM.product("pm-sulfur-dioxide", "fluid"):amount(10):done(),
       PM.product("water", "fluid"):amount(1.2, 2):done(),
-      PM.product("pm-cobalt-catalyst"):amount(2):chance(0.75):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(1):done()
+      PM.product("pm-cobalt-catalyst"):amount(2):chance(0.75, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0, 0.25):catalyst(1):done()
     }
   },
   {
@@ -106,8 +106,8 @@ data:extend({
     {
       PM.product("pm-sulfur-dioxide", "fluid"):amount(10):done(),
       PM.product("water", "fluid"):amount(1.2, 2):done(),
-      PM.product("pm-cobalt-catalyst"):amount(2):chance(0.75):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(2):chance(0.25):catalyst(1):done()
+      PM.product("pm-cobalt-catalyst"):amount(2):chance(0.75, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(2):chance(0, 0.25):catalyst(1):done()
     }
   },
   {
@@ -136,8 +136,8 @@ data:extend({
     results =
     {
       PM.product("sulfuric-acid", "fluid"):amount(20):done(),
-      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.75):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.25):catalyst(1):done()
+      PM.product("pm-vanadium-oxide-catalyst"):amount(1):chance(0.75, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.25):catalyst(1):done()
     }
   },
     {
@@ -158,8 +158,8 @@ data:extend({
     results =
     {
       PM.product("pm-sulfur-dioxide", "fluid"):amount(20):done(),
-      PM.product("pm-cobalt-catalyst"):amount(3):chance(0.85):catalyst(2):done(),
-      PM.product("pm-catalyst-container"):amount(3):chance(0.15):catalyst(2):done()
+      PM.product("pm-cobalt-catalyst"):amount(3):chance(0.85, 1):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0, 0.15):catalyst(2):done()
     }
   },
   {
@@ -183,8 +183,8 @@ data:extend({
     {
       PM.product("pm-sulfur-trioxide", "fluid"):amount(10):done(),
       PM.product("pm-oxygen-gas", "fluid"):amount(5, 10):chance(0.5):done(),
-      PM.product("pm-vanadium-oxide-catalyst"):amount(3):chance(0.8):catalyst(2):done(),
-      PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(2):done()
+      PM.product("pm-vanadium-oxide-catalyst"):amount(3):chance(0.8, 1):catalyst(2):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0, 0.2):catalyst(2):done()
     }
   },
   {
@@ -287,8 +287,8 @@ data:extend({
     {
       PM.product("sulfur"):amount(4, 10):done(),
       PM.product("water", "fluid"):amount(0, 5):done(),
-      PM.product("pm-nickel-tungsten-catalyst"):amount(1):chance(0.85):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.15):catalyst(1):done()
+      PM.product("pm-nickel-tungsten-catalyst"):amount(1):chance(0.85, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.15):catalyst(1):done()
     }
   },
 })

@@ -372,8 +372,8 @@ data:extend({
         {
             PM.product("pm-thorium-filtered-concentrate", "fluid"):amount(10):done(),
             PM.product("pm-acidic-water", "fluid"):amount(30):catalyst(30):done(),
-            PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.8):catalyst(3):done(),
-            PM.product("pm-catalyst-container"):amount(3):chance(0.2):catalyst(3):done()
+            PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.8, 1):catalyst(3):done(),
+            PM.product("pm-catalyst-container"):amount(3):chance(0, 0.2):catalyst(3):done()
         }
     },
     {

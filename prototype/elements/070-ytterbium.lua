@@ -142,8 +142,8 @@ data:extend({
             PM.product("pm-impure-ytterbium"):amount(1, 3):done(),
             PM.product("pm-erbium-salts"):amount(0, 2):done(),
             PM.product("pm-mixed-praseodymium-deposit"):amount(0, 2):done(),
-            PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
-            PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done(),
+            PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.9, 1):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0, 0.1):catalyst(2):done(),
             PM.product("pm-cobalt-catalyst"):amount(2):catalyst(2):done(),
         }
     },
@@ -167,8 +167,8 @@ data:extend({
         {
             PM.product("pm-impure-ytterbium"):amount(2, 6):done(),
             PM.product("pm-europium-trioxide"):amount(1):chance(0.33):done(),
-            PM.product("pm-palladium-catalyst"):amount(2):chance(0.9):catalyst(2):done(),
-            PM.product("pm-catalyst-container"):amount(2):chance(0.1):catalyst(2):done(),
+            PM.product("pm-palladium-catalyst"):amount(2):chance(0.9, 1):catalyst(2):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0, 0.1):catalyst(2):done(),
             PM.product("pm-yttrium-catalyst"):amount(2):catalyst(2):done(),
         }
     },

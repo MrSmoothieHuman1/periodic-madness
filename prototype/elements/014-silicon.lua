@@ -323,8 +323,8 @@ data:extend({
         {
             PM.product("pm-trichlorosilane", "fluid"):amount(4, 8):done(),
             PM.product("pm-dichlorosilane", "fluid"):amount(2, 4):done(),
-            PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.85):catalyst(1):done(),
-            PM.product("pm-catalyst-container"):amount(2):chance(0.15):catalyst(1):done()
+            PM.product("pm-vanadium-oxide-catalyst"):amount(2):chance(0.85, 1):catalyst(1):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0, 0.15):catalyst(1):done()
         }
     },
     {

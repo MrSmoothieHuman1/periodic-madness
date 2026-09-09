@@ -566,8 +566,8 @@ data:extend({
         results =
         {
             PM.product("pm-undiffereniated-carbazole", "fluid"):amount(7.5):done(),
-            PM.product("pm-palladium-catalyst"):amount(4):chance(0.8):catalyst(4):done(),
-            PM.product("pm-catalyst-container"):amount(4):chance(0.2):catalyst(4):done(),
+            PM.product("pm-palladium-catalyst"):amount(4):chance(0.8, 1):catalyst(4):done(),
+            PM.product("pm-catalyst-container"):amount(4):chance(0, 0.2):catalyst(4):done(),
             PM.product("copper-plate"):amount(3):catalyst(3):done(), --should be its own catalyst in hard mode
             PM.product("water", "fluid"):amount(1, 2):catalyst(2):done()
         }

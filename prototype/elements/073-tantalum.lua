@@ -167,8 +167,8 @@ data:extend({
         results = 
         {
             PM.product("pm-tantalite-oxide"):amount(5):done(),
-            PM.product("pm-catalyst-container"):amount(2):chance(0.2):done(),
-            PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8):done()
+            PM.product("pm-catalyst-container"):amount(2):chance(0, 0.2):done(),
+            PM.product("pm-cobalt-catalyst"):amount(2):chance(0.8, 1):done()
         }
     },
     {

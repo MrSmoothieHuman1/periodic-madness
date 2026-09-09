@@ -143,8 +143,8 @@ data:extend({
     results =
     {
       PM.product("pm-yttrium-oxide"):amount(1, 3):done(),
-      PM.product("pm-vanadium-oxide-catalyst"):amount(4):chance(0.85):catalyst(4):done(),
-      PM.product("pm-catalyst-container"):amount(4):chance(0.15):catalyst(4):done(),
+      PM.product("pm-vanadium-oxide-catalyst"):amount(4):chance(0.85, 1):catalyst(4):done(),
+      PM.product("pm-catalyst-container"):amount(4):chance(0, 0.15):catalyst(4):done(),
       PM.product("pm-flourine"):amount(5):chance(0.456):done()
     }
   } --[[@as data.RecipePrototype]],
@@ -168,8 +168,8 @@ data:extend({
     results =
     {
       PM.product("pm-yttrium-oxide"):amount(0, 1):done(),
-      PM.product("pm-cobalt-catalyst"):amount(4):chance(0.75):catalyst(4):done(),
-      PM.product("pm-catalyst-container"):amount(4):chance(0.25):catalyst(4):done(),
+      PM.product("pm-cobalt-catalyst"):amount(4):chance(0.75, 1):catalyst(4):done(),
+      PM.product("pm-catalyst-container"):amount(4):chance(0, 0.25):catalyst(4):done(),
       PM.product("pm-carbon-trioxide", "fluid"):amount(8, 10):done()
     }
   } --[[@as data.RecipePrototype]],

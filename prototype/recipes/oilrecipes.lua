@@ -160,8 +160,8 @@ data:extend({
     },
     results =
     {
-      PM.product("pm-palladium-catalyst"):amount(1):chance(0.8):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.2):catalyst(1):done(),
+      PM.product("pm-palladium-catalyst"):amount(1):chance(0.8, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.2):catalyst(1):done(),
       PM.product("pm-butane-gas", "fluid"):amount(20):chance(0.75):done(),
       PM.product("pm-syngas", "fluid"):amount(5, 10):chance(0.35):done(),
       PM.product("pm-palladium-hydride"):amount(0, 2):catalyst(1):done()
@@ -269,8 +269,8 @@ data:extend({
     results =
     {
       PM.product("pm-plastic-pellets"):amount(12):done(),
-      PM.product("pm-yttrium-catalyst"):amount(1):chance(0.95):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0.05):catalyst(1):done()
+      PM.product("pm-yttrium-catalyst"):amount(1):chance(0.95, 1):catalyst(1):done(),
+      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.05):catalyst(1):done()
     }
   },
 
@@ -1101,8 +1101,8 @@ data:extend({
       PM.product("pm-N-octane", "fluid"):amount(4.5 * 2):done(),
       PM.product("pm-iso-octane", "fluid"):amount(5.5 * 2):done(),
       PM.product("pm-2-3-3-trimethylpentane", "fluid"):amount(2.5 * 2):done(),
-      PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.85):catalyst(3):done(),
-      PM.product("pm-catalyst-container"):amount(3):chance(0.15):catalyst(3):done()
+      PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.85, 1):catalyst(3):done(),
+      PM.product("pm-catalyst-container"):amount(3):chance(0, 0.15):catalyst(3):done()
     }
   },
   {
@@ -1166,9 +1166,9 @@ data:extend({
       PM.product("pm-naptha", "fluid"):amount(50):done(),
       PM.product("pm-petrol", "fluid"):amount(50):done(),
       PM.product("pm-refinery-gases", "fluid"):amount(50):done(),
-      PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.85):catalyst(3):done(),
+      PM.product("pm-rhenium-platinum-catalyst"):amount(3):chance(0.85, 1):catalyst(3):done(),
       PM.product("pm-ruthenium-plate"):amount(2):chance(0.66):catalyst(2):done(),
-      PM.product("pm-catalyst-container"):amount(3):chance(0.15):catalyst(2):done()
+      PM.product("pm-catalyst-container"):amount(3):chance(0, 0.15):catalyst(2):done()
     }
   },
   {

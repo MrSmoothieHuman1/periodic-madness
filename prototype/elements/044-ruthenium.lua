@@ -163,8 +163,8 @@ data:extend({
         {
             PM.product("pm-ruthenium-ore"):amount(3):done(),
             PM.product("pm-ammonia-gas", "fluid"):amount(1.5, 2):done(),
-            PM.product("pm-cobalt-catalyst"):amount(2):chance(0.85):done(),
-            PM.product("pm-catalyst-container"):amount(2):chance(0.15):done()
+            PM.product("pm-cobalt-catalyst"):amount(2):chance(0.85, 1):done(),
+            PM.product("pm-catalyst-container"):amount(2):chance(0, 0.15):done()
         }
     },
     {

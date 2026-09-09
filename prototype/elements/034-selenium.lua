@@ -93,8 +93,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-yttrium-catalyst"):amount(1):chance(0.9):done(),
-            PM.product("pm-catalyst-container"):amount(1):chance(0.1):done(),
+            PM.product("pm-yttrium-catalyst"):amount(1):chance(0.9, 1):done(),
+            PM.product("pm-catalyst-container"):amount(1):chance(0, 0.1):done(),
             PM.product("pm-selenium-dioxide"):amount(8):done()
         }
     },
