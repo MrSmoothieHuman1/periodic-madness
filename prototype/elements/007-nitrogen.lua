@@ -206,7 +206,7 @@ data:extend({
       {
         PM.product("pm-nitrogen-gas", "fluid"):amount(0, 5):done(),
         PM.product("iron-plate"):amount(5, 10):done(),
-        PM.product("pm-yttrium-catalyst"):amount(1):chance(0.9, 1):done(),
+        PM.product("pm-yttrium-catalyst"):amount(1):chance(0.1, 1):done(),
         PM.product("pm-catalyst-container"):amount(1):chance(0, 0.1):done()
       }
     },

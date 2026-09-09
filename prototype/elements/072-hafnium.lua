@@ -193,7 +193,7 @@ data:extend({
         results = 
         {
             PM.product("pm-hafnium-iodide"):amount(6):done(),
-            PM.product("pm-cobalt-catalyst"):amount(3):chance(0.8, 1):catalyst(2):done(),
+            PM.product("pm-cobalt-catalyst"):amount(3):chance(0.2, 1):catalyst(2):done(),
             PM.product("pm-catalyst-container"):amount(3):chance(0, 0.2):catalyst(3):done(),
         }
     },

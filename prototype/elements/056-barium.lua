@@ -244,7 +244,7 @@ data:extend({
         results = 
         {
             PM.product("pm-barium-nitrate"):amount(5):done(),
-            PM.product("pm-palladium-catalyst"):amount(2):chance(0.9, 1):catalyst(2):done(),
+            PM.product("pm-palladium-catalyst"):amount(2):chance(0.1, 1):catalyst(2):done(),
             PM.product("pm-catalyst-container"):amount(2):chance(0, 0.1):catalyst(2):done()
         }
     },

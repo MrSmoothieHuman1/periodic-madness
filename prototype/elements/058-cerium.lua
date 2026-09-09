@@ -76,7 +76,7 @@ data:extend({
         results =
         {
             PM.product("pm-bastnasite-ce"):amount(4):done(),
-            PM.product("pm-palladium-catalyst"):amount(4):chance(0.85, 1):catalyst(4):done(),
+            PM.product("pm-palladium-catalyst"):amount(4):chance(0.15, 1):catalyst(4):done(),
             PM.product("pm-catalyst-container"):amount(4):chance(0, 0.15):catalyst(4):done(),
             PM.product("pm-samarium-oxide"):amount(2):chance(0.2):done()
         }

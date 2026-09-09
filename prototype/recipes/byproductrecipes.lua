@@ -614,7 +614,7 @@ data:extend({
     results =
     {
       PM.product("pm-combined-ore-slab"):amount(2, 4):done(),
-      PM.product("pm-palladium-catalyst"):amount(3):chance(0.75, 1):done(),
+      PM.product("pm-palladium-catalyst"):amount(3):chance(0.25, 1):done(),
       PM.product("pm-catalyst-container"):amount(3):chance(0, 0.25):done()
     }
   },

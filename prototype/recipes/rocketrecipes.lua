@@ -18,7 +18,7 @@ data:extend({
     {
         PM.product("pm-ammonium-nitrate"):amount(10):done(),
         PM.product("pm-catalyst-container"):amount(2):chance(0, 0.2):catalyst(2):done(),
-        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.8, 1):catalyst(2):done()
+        PM.product("pm-yttrium-catalyst"):amount(2):chance(0.2, 1):catalyst(2):done()
     }
   },
   {
@@ -94,7 +94,7 @@ data:extend({
     results =
     {
         PM.product("pm-HMX"):amount(2):done(),
-        PM.product("pm-palladium-catalyst"):amount(3):chance(0.75, 1):catalyst(3):done(),
+        PM.product("pm-palladium-catalyst"):amount(3):chance(0.25, 1):catalyst(3):done(),
         PM.product("pm-catalyst-container"):amount(3):chance(0, 0.25):catalyst(3):done()
     }
   },

@@ -97,7 +97,7 @@ data:extend({
     {
       PM.product("pm-bromine-ions", "fluid"):amount(8):done(),
       PM.product("pm-hydrogen-gas", "fluid"):amount(8):done(),
-      PM.product("pm-palladium-catalyst"):amount(2):chance(0.85, 1):catalyst(1):done(),
+      PM.product("pm-palladium-catalyst"):amount(2):chance(0.15, 1):catalyst(1):done(),
       PM.product("pm-catalyst-container"):amount(2):chance(0, 0.15):catalyst(1):done()
     }
   } --[[@as data.RecipePrototype]],

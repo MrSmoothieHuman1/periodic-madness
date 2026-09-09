@@ -235,7 +235,7 @@ data:extend({
         results = 
         {
             PM.product("pm-holmium"):amount(3, 4):done(),
-            PM.product("pm-yttrium-catalyst"):amount(3):chance(0.8, 1):catalyst(3):done(),
+            PM.product("pm-yttrium-catalyst"):amount(3):chance(0.2, 1):catalyst(3):done(),
             PM.product("pm-catalyst-container"):amount(3):chance(0, 0.2):catalyst(3):done()
         }
     },
@@ -258,7 +258,7 @@ data:extend({
         results = 
         {
             PM.product("pm-holmium"):amount(3, 4):done(),
-            PM.product("pm-yttrium-catalyst"):amount(3):chance(0.8, 1):catalyst(3):done(),
+            PM.product("pm-yttrium-catalyst"):amount(3):chance(0.2, 1):catalyst(3):done(),
             PM.product("pm-catalyst-container"):amount(3):chance(0, 0.2):catalyst(3):done()
         }
     },

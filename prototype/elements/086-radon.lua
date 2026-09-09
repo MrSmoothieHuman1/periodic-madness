@@ -92,7 +92,7 @@ data:extend({
     results = 
     {
         PM.product("pm-industrial-noble-gas", "fluid"):amount(5):done(),
-        PM.product("pm-rhenium-platinum-catalyst"):amount(2):chance(0.95, 1):done(),
+        PM.product("pm-rhenium-platinum-catalyst"):amount(2):chance(0.05, 1):done(),
         PM.product("pm-catalyst-container"):amount(2):chance(0, 0.05):done()
     }
   },
