@@ -7515,7 +7515,7 @@ data:extend({
     type = "technology",
     name = "pm-terbium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/erbium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-o-phenylenediamine"),
@@ -8300,7 +8300,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-LDS-production",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-low-density-structure-production.png",
     effects =
     {
         PM.unlock_recipe("pm-molten-red-low-density-structure-alloy"),
@@ -8367,7 +8367,7 @@ data:extend({
     type = "technology",
     name = "pm-promethium-module-lights",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/promethium-module-lights.png",
     effects =
     {
         PM.unlock_recipe("pm-promethium-module-speed-light"),

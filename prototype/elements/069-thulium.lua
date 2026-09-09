@@ -30,13 +30,13 @@ data:extend({
         main_product = "pm-thulium",
         ingredients =
         {
-            PM.catalyst_ingredient("pm-monazite-sand", 2, 1),
+            PM.catalyst_ingredient("pm-monazite-sand", 3, 2),
             PM.ingredient("pm-rhenium-platinum-catalyst", 2),
             PM.ingredient("pm-iodine", 3)
         },
         results =
         {
-            PM.product("pm-monazite-sand"):amount(1):catalyst(1):done(),
+            PM.product("pm-monazite-sand"):amount(1, 2):catalyst(2):done(),
             PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
             PM.product("pm-rhenium-platinum-catalyst"):amount(2):catalyst(2):done(),
             PM.product("pm-iodine"):amount(3):chance(0.95):catalyst(3):done()
@@ -54,13 +54,13 @@ data:extend({
         main_product = "pm-thulium",
         ingredients =
         {
-            PM.catalyst_ingredient("pm-monazite-sand", 2, 1),
+            PM.catalyst_ingredient("pm-monazite-sand", 3, 2),
             PM.ingredient("pm-yttrium-catalyst", 2),
             PM.ingredient("pm-bromine", 3, "fluid")
         },
         results =
         {
-            PM.product("pm-monazite-sand"):amount(1):catalyst(1):done(),
+            PM.product("pm-monazite-sand"):amount(1, 2):catalyst(2):done(),
             PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
             PM.product("pm-yttrium-catalyst"):amount(2):catalyst(2):done(),
             PM.product("pm-bromine", "fluid"):amount(3):chance(0.95):catalyst(3):done()
@@ -78,13 +78,13 @@ data:extend({
         main_product = "pm-thulium",
         ingredients =
         {
-            PM.catalyst_ingredient("pm-monazite-sand", 2, 1),
+            PM.catalyst_ingredient("pm-monazite-sand", 3, 2),
             PM.ingredient("pm-cobalt-catalyst", 4),
             PM.ingredient("pm-chlorine", 3, "fluid")
         },
         results =
         {
-            PM.product("pm-monazite-sand"):amount(1):catalyst(1):done(),
+            PM.product("pm-monazite-sand"):amount(1, 2):catalyst(2):done(),
             PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
             PM.product("pm-yttrium-catalyst"):amount(4):catalyst(4):done(),
             PM.product("pm-chlorine", "fluid"):amount(3):chance(0.95):catalyst(3):done()
