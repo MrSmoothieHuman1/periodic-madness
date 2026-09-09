@@ -56,7 +56,7 @@ data:extend({
         type = "fluid",
         name = "pm-ytterbium-solution",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/ytterbium-solution.png",
         subgroup = "pm-ytterbium-la",
         order = "a",
         default_temperature = 15,
