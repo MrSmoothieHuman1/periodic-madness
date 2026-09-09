@@ -77,6 +77,9 @@ Date: 2025-12-19
     - Changed magesnium chloride technology into a trigger technology.
     - Made the satellite tech have solar energy 3 as a prerequisite.
     - Updated advanced sodium extraction technology icon.
+    - Changed semiconductors from using phosphoric acid to nitric acid, so that the split path technology tree is more doable.
+    - Added gallium arsenide unlock to processing unit technology.
+    - Fixed a large handful of missing or otherwise erroneous prerequisites.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

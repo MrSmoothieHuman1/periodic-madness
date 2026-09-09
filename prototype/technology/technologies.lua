@@ -2158,7 +2158,7 @@ data:extend({
     icon_size = 256,
     icons = util.technology_icon_constant_equipment(
     "__periodic-madness__/graphics/technology/solar-panel-equipment-2.png"),
-    prerequisites = {"solar-panel-equipment", "pm-post-transition-metal-pack-unlock"},
+    prerequisites = {"solar-panel-equipment", "processing-unit"},
     effects =
     {
       PM.unlock_recipe("pm-solar-panel-equipment-2")
@@ -2264,7 +2264,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-electrolysis-plant-2")
     },
-    prerequisites = {"pm-post-transition-metal-pack-unlock"},
+    prerequisites = {"processing-unit"},
     unit =
     {
       count = 250,
@@ -2668,7 +2668,7 @@ data:extend({
       PM.unlock_recipe("pm-alpha-inator"),
       PM.unlock_recipe("pm-beta-inator")
     },
-    prerequisites = {"pm-radiation-resistant-multimetals"},
+    prerequisites = {"pm-radiation-resistant-multimetals", "concrete"},
     unit =
     {
       count = 200,
@@ -2853,7 +2853,7 @@ data:extend({
       PM.unlock_recipe("pm-greenhouse"),
       PM.unlock_recipe("pm-basic-wood-growth")
     },
-    prerequisites = {"chemical-science-pack", "pm-anti-bacterial-multiproperty-multimetals", "pm-wood-processing"},
+    prerequisites = {"chemical-science-pack", "pm-anti-bacterial-multiproperty-multimetals", "pm-wood-processing", "landfill"},
     unit =
     {
       count = 200,
@@ -2957,7 +2957,7 @@ data:extend({
       PM.unlock_recipe("pm-bacteriaed-agar-solution"),
       PM.unlock_recipe("pm-gene-base"),
     },
-    prerequisites = {"pm-greenhouse"},
+    prerequisites = {"pm-greenhouse", "pm-biomass-processing"},
     unit =
     {
       count = 200,
@@ -3663,7 +3663,7 @@ data:extend({
       PM.unlock_recipe("heat-pipe"),
       PM.unlock_recipe("pm-heat-pipe-3"),
     },
-    prerequisites = {"pm-silicone-processing", "advanced-material-processing-2", "pm-fluid-burning-energy"},
+    prerequisites = {"pm-silicone-processing", "advanced-material-processing-2", "pm-fluid-burning-energy", "processing-unit"},
     unit =
       {
         count = 325,
@@ -3722,7 +3722,7 @@ data:extend({
       PM.unlock_recipe("pm-cold-inator-3"),
       PM.unlock_recipe("pm-ammonium-tetrafluoroberyllate")
     },
-    prerequisites = {"pm-silicone-processing", "pm-tempature-inators-2"},
+    prerequisites = {"pm-silicone-processing", "pm-tempature-inators-2", "processing-unit"},
     unit =
     {
       count = 350,
@@ -3926,7 +3926,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-washing-plant-3"),
     },
-    prerequisites = {"pm-washing-plant-2", "pm-silicone-processing"},
+    prerequisites = {"pm-washing-plant-2", "pm-silicone-processing", "processing-unit"},
     unit =
     {
       count = 400,
@@ -4001,7 +4001,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-electric-boiler-2")
     },
-    prerequisites = {"pm-electric-boiler", "pm-silicone-processing"},
+    prerequisites = {"pm-electric-boiler", "pm-silicone-processing", "processing-unit"},
     unit =
     {
       count = 400,
@@ -4472,7 +4472,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-lithium-sulfur-battery-equipment")
     },
-    prerequisites = {"pm-lithium-sulfur-battery"},
+    prerequisites = {"pm-lithium-sulfur-battery", "processing-unit"},
     unit =
     {
       count = 350,
@@ -5204,7 +5204,7 @@ data:extend({
       PM.unlock_recipe("pm-long-handed-sideserter"),
       PM.unlock_recipe("pm-bulk-sideserter")
     },
-    prerequisites = {"pm-advanced-electric-engine-unit"},
+    prerequisites = {"pm-advanced-electric-engine-unit", "processing-unit"},
     unit =
     {
       count = 500,
@@ -6255,7 +6255,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-selenium-sulfur-battery-equipment")
     },
-    prerequisites = {"pm-selenium-sulfur-battery"},
+    prerequisites = {"pm-selenium-sulfur-battery", "processing-unit"},
     unit =
     {
       count = 600,
@@ -6458,7 +6458,7 @@ data:extend({
     {
         PM.unlock_recipe("pm-electronic-laser-etcher")
     },
-    prerequisites = {"pm-YAG-laser"},
+    prerequisites = {"pm-YAG-laser", "concrete"},
     unit =
     {
       count = 650,

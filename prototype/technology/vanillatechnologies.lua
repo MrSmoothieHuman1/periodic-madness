@@ -404,6 +404,7 @@ data.raw["technology"]["nuclear-power"].unit.ingredients =
 data.raw["technology"]["processing-unit"].effects =
 {
   PM.unlock_recipe("pm-cobalt-blue"),
+  PM.unlock_recipe("pm-gallium-arsenide"),
   PM.unlock_recipe("pm-indium-wire"),
   PM.unlock_recipe("pm-ferrum-ferric-chloride"),
   PM.unlock_recipe("pm-metal-ferric-chloride"),
@@ -463,7 +464,7 @@ data.raw["technology"]["electric-energy-distribution-2"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
-data.raw["technology"]["electric-energy-distribution-2"].prerequisites = {"pm-post-transition-metal-pack-unlock"}
+data.raw["technology"]["electric-energy-distribution-2"].prerequisites = {"pm-post-transition-metal-pack-unlock", "concrete"}
 
 data.raw["technology"]["electric-energy-accumulators"].unit.ingredients =
 {
@@ -651,7 +652,7 @@ data.raw["technology"]["energy-shield-equipment"].unit.ingredients =
 }
 data.raw["technology"]["energy-shield-equipment"].unit.count = 250
 
-data.raw["technology"]["fission-reactor-equipment"].effects = 
+data.raw["technology"]["fission-reactor-equipment"].effects =
 {
   PM.unlock_recipe("pm-empty-fuel-rod"),
   PM.unlock_recipe("pm-polonium-fuel-rod"),
@@ -665,7 +666,7 @@ data.raw["technology"]["fission-reactor-equipment"].research_trigger =
   count = 10
 }
 data.raw["technology"]["fission-reactor-equipment"].unit = nil
-data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock"}
+data.raw["technology"]["fission-reactor-equipment"].prerequisites = {"pm-metalloid-pack-unlock", "processing-unit"}
 data.raw["technology"]["logistics-2"].icon = "__periodic-madness__/graphics/technology/logistics-2.png"
 data.raw["technology"]["rocketry"].unit.time = 30
 data.raw["technology"]["rocketry"].unit.count = 75
@@ -815,7 +816,7 @@ data.raw["technology"]["flamethrower"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
 table.remove(data.raw["technology"]["rocket-silo"].effects, 4)
-data.raw["technology"]["rocket-silo"].prerequisites = {"rocket-fuel", "pm-rocket-nozzle-parts", "pm-rocket-cladding-parts", "pm-rocket-control-unit", "concrete"}
+data.raw["technology"]["rocket-silo"].prerequisites = {"rocket-fuel", "pm-rocket-nozzle-parts", "pm-rocket-cladding-parts", "pm-rocket-control-unit", "concrete", "pm-advanced-processing-unit"}
 data.raw["technology"]["rocket-silo"].unit =
 {
   count = 850,
@@ -944,7 +945,7 @@ data.raw["technology"]["steam-power"].effects =
   PM.unlock_recipe("pm-dirty-boiler"),
   PM.unlock_recipe("steam-engine")
 }
-data.raw["technology"]["artillery"].prerequisites = {"pm-metalloid-pack-unlock"}
+data.raw["technology"]["artillery"].prerequisites = {"pm-metalloid-pack-unlock", "processing-unit"}
 data.raw["technology"]["artillery"].unit.ingredients =
 {
   {"automation-science-pack", 1},
