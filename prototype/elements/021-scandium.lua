@@ -3,7 +3,13 @@ data:extend({
         type = "item",
         name = "pm-thortveitite",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/placeholder-item.png",
+        icon = "__periodic-madness__/graphics/icons/ores/thortveitite.png",
+        pictures = 
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/thortveitite.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/thortveitite-2.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/ores/thortveitite-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-scandium-tm",
         order = "a",
         stack_size = 50
