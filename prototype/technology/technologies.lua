@@ -7515,7 +7515,7 @@ data:extend({
     type = "technology",
     name = "pm-terbium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/erbium-processing.png",
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
         PM.unlock_recipe("pm-o-phenylenediamine"),
@@ -7626,7 +7626,7 @@ data:extend({
     type = "technology",
     name = "pm-erbium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/erbium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-o-phenylenediamine"),

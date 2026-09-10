@@ -390,7 +390,69 @@ data:extend({
         drawing_box_vertical_extension = 0.7,
         allowed_module_categories = {"pm-beamcon-speed", "pm-beamcon-efficiency"},
         allowed_effects = {"speed", "consumption"},
-        graphics_set = require("prototype.entity.beacon-graphics.proximity-beacon-graphics"),
+        graphics_set =
+        {
+          module_icons_suppressed = false,
+          animation_progress = 1,
+          module_tint_mode = "mix", -- "single-module"
+          no_modules_tint = {0.66, 0, 0},
+          random_animation_offset = false,
+          apply_module_tint = "secondary",
+          -- light = { shift = {0, 0}, color = {1, 1, 1}, intensity = 1, size = 3 },
+          animation_list =
+            {
+              {
+                render_layer = "object",
+                secondary_draw_order = 0,
+                always_draw = true,
+                animation =
+                {
+                  filename = "__periodic-madness__/graphics/entities/buildings/beamcon-platform/beamcon-platform.png",
+                  width = 256,
+                  height = 256,
+                  scale = 0.5,
+                }
+              },
+            },
+            module_visualisations =
+            {
+              {
+              art_style = "pm-heat-coil",
+              use_for_empty_slots = false,
+              slots =
+              {
+                {
+                  {
+                    has_empty_slot = false,
+                    render_layer = "object",
+                    secondary_draw_order = -1,
+                    pictures =
+                    {
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil.png",
+                      width = 64,
+                      height = 101,
+                      scale = 0.5,
+                      shift = util.by_pixel(0, -12)
+                    }
+                  },
+                  {
+                    apply_module_tint = "primary",
+                    render_layer = "object",
+                    secondary_draw_order = -1,
+                    pictures =
+                    {
+                      filename = "__periodic-madness__/graphics/entities/buildings/coil-heater/coil-heater-coil-mask.png",
+                      width = 64,
+                      height = 101,
+                      scale = 0.5,
+                      shift = util.by_pixel(0, -12)
+                    }
+                  },
+                }
+              }
+            }
+          }
+        },
         radius_visualisation_picture =
         {
           filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
