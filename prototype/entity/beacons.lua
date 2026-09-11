@@ -409,7 +409,8 @@ data:extend({
                 {
                   filename = "__periodic-madness__/graphics/entities/buildings/beamcon-platform/beamcon-platform.png",
                   width = 256,
-                  height = 256,
+                  height = 275,
+                  shift = util.by_pixel(0, -6),
                   scale = 0.5,
                 }
               },
