@@ -5177,7 +5177,7 @@ data:extend({
       PM.unlock_recipe("pm-tantalum-advanced-electric-engine-unit"),
       PM.unlock_recipe("pm-niobium-advanced-electric-engine-unit")
     },
-    prerequisites = {"pm-light-lubricant"},
+    prerequisites = {"pm-light-lubricant", "processing-unit"},
     unit =
     {
       count = 475,
@@ -5335,7 +5335,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-experimental-research-data")
     },
-    prerequisites = {"pm-technectium-processing", "pm-dubnium-processing"},
+    prerequisites = {"pm-technectium-processing", "pm-dubnium-processing", "processing-unit"},
     unit =
     {
       count = 600,
@@ -5564,7 +5564,7 @@ data:extend({
       PM.unlock_recipe("pm-CRT"),
       PM.unlock_recipe("pm-rocket-control-unit")
     },
-    prerequisites = {"pm-vacuum-tubes", "pm-alkaline-earth-metal-pack-unlock"},
+    prerequisites = {"pm-vacuum-tubes", "pm-alkaline-earth-metal-pack-unlock", "processing-unit"},
     unit =
       {
         count = 450,
@@ -6429,7 +6429,7 @@ data:extend({
         PM.unlock_recipe("pm-YAG-laser"),
         PM.unlock_recipe("pm-YAG-laser-head")
     },
-    prerequisites = {"pm-noble-gas-pack-unlock"},
+    prerequisites = {"pm-noble-gas-pack-unlock", "processing-unit"},
     unit =
     {
       count = 600,

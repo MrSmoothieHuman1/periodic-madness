@@ -632,7 +632,7 @@ data.raw["technology"]["military-2"].effects =
   PM.unlock_recipe("pm-heavy-piercing-shotgun-slug")
 }
 data.raw["technology"]["military-2"].unit.count = 50
-data.raw["technology"]["power-armor-mk2"].prerequisites = {"pm-metalloid-pack-unlock"}
+data.raw["technology"]["power-armor-mk2"].prerequisites = {"pm-metalloid-pack-unlock", "processing-unit"}
 data.raw["technology"]["power-armor-mk2"].unit.ingredients =
 {
   {"automation-science-pack", 1},

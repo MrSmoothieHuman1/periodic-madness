@@ -81,6 +81,7 @@ Date: 2025-12-19
     - Added gallium arsenide unlock to processing unit technology.
     - Fixed a large handful of missing or otherwise erroneous prerequisites.
     - Made all catalyst/catalyst containers use exclusive probability, the one that was added in 2.1.
+    - Removed chromic acid neutralisation.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

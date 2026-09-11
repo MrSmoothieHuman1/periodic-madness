@@ -189,27 +189,4 @@ data:extend({
       PM.product("pm-chrome-green"):amount(6):done()
     }
   } --[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-chromic-acid-neutralisation",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/chromic-acid-neutralisation.png",
-    energy_required = 2,
-    categories = {"chemistry"},
-    subgroup = "pm-chrominum-tm",
-    order = "ea",
-    enabled = false,
-    ingredients = 
-    {
-      PM.ingredient("pm-sodium-sulfite", 6),
-      PM.ingredient("pm-chromic-acid", 20, "fluid"),
-      PM.ingredient("water", 25, "fluid")
-    },
-    results = 
-    {
-      PM.product("pm-chromium-ore"):amount(4, 6):done(),
-      PM.product("pm-sulfur-dioxide", "fluid"):amount(8, 15):done(),
-      PM.product("pm-carbon-dioxide-gas", "fluid"):amount(6, 15):chance(0.65):done()
-    }
-  }
 })
