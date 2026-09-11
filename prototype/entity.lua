@@ -12321,7 +12321,6 @@ fluid_boxes =
         }
       }
     },
-
     impact_category = "metal",
     open_sound = sounds.electric_network_open,
     close_sound = sounds.electric_network_close,
