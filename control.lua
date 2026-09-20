@@ -4,6 +4,7 @@ local event_handler = require("event_handler")--[[@as event_handler_lib]]
 
 ---@alias PerForce<V> {[uint32]:V}
 ---@alias PerPlayer<V> {[uint32]:V}
+---@alias PerSurface<V> {[uint32]:V}
 ---@alias Mapping<K,V> {[K]?:V}
 
 ---@class (partial) PeriodicStorage
@@ -20,6 +21,7 @@ event_handler.add_libraries{
 	require("runtime.multi-energy-source"),
 	--require("runtime.reactor-cooling"),
 	require("runtime.world-size-limit"),
+	require('runtime.solar-collection'),
 
 	require("compatibility.automatic-underground-pipe-connectors"),
 	require("compatibility.DiscoScience-old-version"),
