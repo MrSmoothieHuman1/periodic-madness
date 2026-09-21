@@ -8402,7 +8402,7 @@ data:extend({
     type = "technology",
     name = "pm-travelling-wave-erbium-amplifier-tubes",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/travelling-wave-erbium-amplifier-tubes.png",
     effects =
     {
         PM.unlock_recipe("pm-erbium-doped-fiberglass"),
