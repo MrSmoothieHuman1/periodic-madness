@@ -6,7 +6,7 @@
   "homepage": "https://discord.gg/64GKrqpyJ2",
   "factorio_version": "2.1",
   "dependencies": [
-    "base >= 2.0.59",
+    "base >= 2.1.20",
     "! space-age",
     "? icon-badges >= 1.1.9",
     "+ Milestones >= 1.4.2",

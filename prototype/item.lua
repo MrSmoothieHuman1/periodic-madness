@@ -278,7 +278,7 @@ data:extend({
     subgroup = "pm-biostuff-rnm",
     order = "a",
     fuel_value = "2MJ",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     stack_size = 200
   },
   {
@@ -295,7 +295,7 @@ data:extend({
     },
     subgroup = "raw-resource",
     order = "d",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "6MJ",
     stack_size = 100
   },
@@ -545,7 +545,7 @@ data:extend({
     },
     subgroup = "pm-biostuff-rnm",
     order = "A",
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "18MJ",
     fuel_acceleration_multiplier = 0.8,
     fuel_top_speed_multiplier = 0.4,
@@ -1735,7 +1735,7 @@ data:extend({
     subgroup = "pm-geothermal-intermediates",
     order = "c",
     fuel_value = "30MJ",
-    fuel_category = "pm-geothermal-bore",
+    fuel_categories = {"pm-geothermal-bore"},
     stack_size = 100
   },
   {
@@ -1746,7 +1746,7 @@ data:extend({
     subgroup = "pm-geothermal-intermediates",
     order = "d",
     fuel_value = "60MJ",
-    fuel_category = "pm-geothermal-bore",
+    fuel_categories = {"pm-geothermal-bore"},
     stack_size = 100
   },
   {
@@ -2176,7 +2176,7 @@ data:extend({
     name = "pm-biomechanical-cortex",
     icon_size = 64,
     fuel_value = "50MJ",
-    fuel_category = "pm-betterer-lab",
+    fuel_categories = {"pm-betterer-lab"},
     icon = "__periodic-madness__/graphics/icons/biomechanical-cortex.png",
     subgroup = "pm-intermediates",
     stack_size = 10,

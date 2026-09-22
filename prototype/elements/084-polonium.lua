@@ -58,7 +58,7 @@ data:extend({
     },
     subgroup = "pm-polonium-ptm",
     burnt_result = "pm-used-up-polonium-fuel-cell",
-    fuel_category = "pm-polonium",
+    fuel_categories = {"pm-polonium"},
     fuel_value = "10GJ",
     order = "e",
     stack_size = 50
