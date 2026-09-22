@@ -493,7 +493,18 @@ data:extend({
     type = "recipe",
     name = "pm-common-diesel-cracking",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/common-diesel-cracking.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/palladium-ore-icon.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/common-diesel.png",
+        icon_size = 64,
+        scale = 0.45,
+      },
+    },
     enabled = false,
     energy_required = 2,
     categories = {"pm-washing"},

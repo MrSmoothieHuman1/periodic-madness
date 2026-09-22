@@ -464,7 +464,6 @@ data.raw["technology"]["electric-energy-distribution-2"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"pm-post-transition-metal-science-pack", 1}
 }
-data.raw["technology"]["electric-energy-distribution-2"].prerequisites = {"pm-post-transition-metal-pack-unlock", "concrete"}
 
 data.raw["technology"]["electric-energy-accumulators"].unit.ingredients =
 {

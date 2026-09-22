@@ -644,8 +644,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-oil-residual-recipes",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/oil-residuals.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/oil-residual-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-oil-residuals-splitting"),
@@ -666,8 +666,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-naptha-recipes",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/naptha.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/naptha-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-butane-cracking"),
@@ -701,8 +701,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-fuel-oils-recipes",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/fuel-oils.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/fuel-oils-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-catalyst-container"),
@@ -725,8 +725,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-lubricating-oils-recipes",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/lubricating-oils.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/lubricating-oils-processing.png",
     effects =
     {
       PM.unlock_recipe("lubricant"),
@@ -748,8 +748,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-diesel-recipes",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/diesel.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/diesel-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-diesel-seperation"),
@@ -773,8 +773,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-kerosene-recipes",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/kerosene.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/kerosene-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-catalyst-container"),
@@ -798,8 +798,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-petrol-recipes",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/petrol.png",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/petrol-processing.png",
     effects =
     {
       PM.unlock_recipe("pm-petrol-to-solid-fuel")
@@ -8536,7 +8536,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-superconductive-substation",
+    name = "pm-electric-energy-distribution-3",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
