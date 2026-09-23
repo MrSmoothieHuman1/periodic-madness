@@ -6527,6 +6527,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-advanced-filled-flux-container",
+    icons = 
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/filled-flux-container.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/magnesium-carbonate.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     energy_required = 3,
     enabled = false,
     subgroup = "pm-catalysts",
