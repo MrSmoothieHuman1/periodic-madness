@@ -6534,7 +6534,7 @@ data:extend({
         icon_size = 64,
       },
       {
-        icon = "__periodic-madness__/graphics/icons/magnesium-carbonate.png",
+        icon = "__periodic-madness__/graphics/icons/magnesium-oxide.png",
         icon_size = 64,
         shift = {8, -8},
         scale = 0.33
