@@ -104,30 +104,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-palladium-hydride-crushing",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",
-    energy_required = 4,
-    enabled = false,
-    categories = {"pm-washing"},
-    subgroup = "pm-palladium-tm",
-    order = "Aa",
-    crafting_machine_tint = 
-    {
-        primary = {0.878, 0.835, 0.663}
-    },
-    ingredients =
-    {
-      PM.ingredient("pm-palladium-hydride", 8)
-    },
-    results =
-    {
-      PM.product("pm-palladium-ore"):amount(4):done(),
-      PM.product("pm-hydrogen-gas", "fluid"):amount(2, 4):done()
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-mixed-ore-slag-crushing",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/mixed-ore-slag-crushing.png",

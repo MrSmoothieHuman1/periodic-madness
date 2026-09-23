@@ -190,21 +190,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "pm-palladium-hydride",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",
-    pictures =
-    {
-      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride-1.png", size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/palladium-hydride-2.png", size = 128, scale = 0.25 }
-    },
-    subgroup = "pm-palladium-tm",
-    order = "x",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "pm-solder-wire",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/tin-wire.png",

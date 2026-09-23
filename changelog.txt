@@ -85,6 +85,9 @@ Date: 2025-12-19
     - Added unique technology icons for all oil fractions, apart from refinery gas.
     - Modernised PE plastic technology icons.
     - Updated cobalt processing technology icon.
+    - Removed the palladium refinery gas technology, palladium hydride and the palladium catalyst refinery gas recipe. This was to simplify and modernise the ATM tech tree, especially around oil. Also, the recipe was pretty jank and out of place.
+    - Made butene > butane output half its nickel at an 85% chance, to make it match every other similar recipe.
+    - Increased the amount of nickel needed from butene > butane from 3 to 4.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

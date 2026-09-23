@@ -144,31 +144,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-palladium-catalyst-refinery-gas-cracking",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/palladium-catalyst-refinery-gas-cracking.png",
-    enabled = false,
-    energy_required = 4,
-    categories = {"chemistry"},
-    subgroup = "pm-plastics",
-    order = "a",
-    allow_productivity = true,
-    ingredients =
-    {
-      PM.ingredient("pm-refinery-gases", 25, "fluid"),
-      PM.ingredient("pm-palladium-catalyst", 1)
-    },
-    results =
-    {
-      PM.product("pm-palladium-catalyst"):amount(1):chance(0.2, 1):catalyst(1):done(),
-      PM.product("pm-catalyst-container"):amount(1):chance(0, 0.2):catalyst(1):done(),
-      PM.product("pm-butane-gas", "fluid"):amount(20):chance(0.75):done(),
-      PM.product("pm-syngas", "fluid"):amount(5, 10):chance(0.35):done(),
-      PM.product("pm-palladium-hydride"):amount(0, 2):catalyst(1):done()
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-butene-cracking",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/recipes/butene-cracking.png",
@@ -216,14 +191,16 @@ data:extend({
     subgroup = "pm-plastics",
     order = "b",
     enabled = false,
+    main_product = "pm-butane-gas",
     ingredients =
     {
       PM.ingredient("pm-butene-gas", 15, "fluid"),
-      PM.ingredient("pm-nickel-plate", 3)
+      PM.ingredient("pm-nickel-plate", 4)
     },
     results =
     {
-      PM.product("pm-butane-gas", "fluid"):amount(15):done()
+      PM.product("pm-butane-gas", "fluid"):amount(15):done(),
+      PM.product("pm-nickel-plate"):amount(2):chance(0.85):done()
     }
   },
   {

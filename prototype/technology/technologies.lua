@@ -912,33 +912,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-advanced-refinery-gas-recipes",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/advanced-refinery-gases.png",
-    effects =
-    {
-      PM.unlock_recipe("pm-catalyst-container"),
-      PM.unlock_recipe("pm-palladium-catalyst"),
-      PM.unlock_recipe("pm-palladium-catalyst-refinery-gas-cracking"),
-      PM.unlock_recipe("pm-palladium-hydride-crushing"),
-      PM.unlock_recipe("pm-palladium-plate"),
-      PM.unlock_recipe("pm-butene-to-butane")
-    },
-    prerequisites = {"pm-diesel-recipes", "pm-refinery-gases-recipes"},
-    unit =
-    {
-      count = 100,
-      ingredients =
-      {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1}
-      },
-      time = 45
-    }
-  },
-  {
-    type = "technology",
     name = "pm-oil-cracking-and-reforming",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/oil-fraction-cracking.png",
@@ -1308,9 +1281,12 @@ data:extend({
     {
       PM.unlock_recipe("pm-nickel-chunk-frothing"),
       PM.unlock_recipe("pm-palladium-nickel-froth-seperation"),
-      PM.unlock_recipe("pm-nickel-tailings-looping")
+      PM.unlock_recipe("pm-nickel-tailings-looping"),
+      PM.unlock_recipe("pm-palladium-plate"),
+      PM.unlock_recipe("pm-catalyst-container"),
+      PM.unlock_recipe("pm-palladium-catalyst"),
     },
-    prerequisites = {"pm-diesel-recipes", "pm-advanced-refinery-gas-recipes"},
+    prerequisites = {"pm-diesel-recipes"},
     unit =
     {
       count = 150,
