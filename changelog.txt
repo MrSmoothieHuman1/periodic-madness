@@ -84,6 +84,7 @@ Date: 2025-12-19
     - Removed chromic acid neutralisation.
     - Added unique technology icons for all oil fractions, apart from refinery gas.
     - Modernised PE plastic technology icons.
+    - Updated cobalt processing technology icon.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
