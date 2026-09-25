@@ -88,6 +88,7 @@ Date: 2025-12-19
     - Removed the palladium refinery gas technology, palladium hydride and the palladium catalyst refinery gas recipe. This was to simplify and modernise the ATM tech tree, especially around oil. Also, the recipe was pretty jank and out of place.
     - Made butene > butane output half its nickel at an 85% chance, to make it match every other similar recipe.
     - Increased the amount of nickel needed from butene > butane from 3 to 4.
+    - Modernised vanadium processing technology icon and vanadium recipe icons.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
@@ -95,6 +96,7 @@ Date: 2025-12-19
     - Fixed research productivity 5 depending on level 3.
     - Fixed ordering of mixing tanks and washing plants in their own subgroup.
     - Fixed arsenic being in the lead subgroup.
+    - Fixed vanadium ore factoriopedia merging.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.015

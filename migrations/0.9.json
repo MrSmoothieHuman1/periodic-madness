@@ -5,7 +5,8 @@
         ["pm-fluid-circuit-breadboard", "pm-fluid-breadboard"],
         ["pm-gallium-liqouring", "pm-gallium-liqour"],
         ["pm-hydroflouric-acid-filtering", "pm-flourine"],
-        ["pm-better-flourite-crystallisation", "pm-coolant-flourite-crystallisation"]
+        ["pm-better-flourite-crystallisation", "pm-coolant-flourite-crystallisation"],
+        ["pm-vanadate-solution-seperation", "pm-vanadium-ore"]
     ],
     "technology": 
     [

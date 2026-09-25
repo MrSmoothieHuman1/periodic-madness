@@ -152,9 +152,7 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-vanadate-solution-seperation",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/vanadate-solution-seperation.png",
+    name = "pm-vanadium-ore",
     enabled = false,
     energy_required = 9,
     categories = {"pm-coldening"},
@@ -174,6 +172,20 @@ data:extend({
   {
     type = "recipe",
     name = "pm-ammonium-vanadate-solution",
+    icon_size = 64,
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/fluids/vanadate-solution.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ammonium-chloride.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 3,
     categories = {"pm-washing"},
@@ -199,7 +211,19 @@ data:extend({
     type = "recipe",
     name = "pm-iodine-vanadate-solution-seperation",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/iodine-vanadate-solution-seperation.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/vanadium-ore-icon.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/ores/iodine.png",
+        icon_size = 64,
+        shift = {8, -8},
+        scale = 0.33
+      },
+    },
     enabled = false,
     energy_required = 9,
     categories = {"pm-coldening"},

@@ -1309,7 +1309,7 @@ data:extend({
       PM.unlock_recipe("pm-magnetite-forming"),
       PM.unlock_recipe("pm-ferrovanadium"),
       PM.unlock_recipe("pm-vanadate-solution"),
-      PM.unlock_recipe("pm-vanadate-solution-seperation")
+      PM.unlock_recipe("pm-vanadium-ore")
     },
     prerequisites = {"pm-oil-residual-recipes", "sulfur-processing"},
     unit =
