@@ -1282,7 +1282,7 @@ data:extend({
     results =
     {
       PM.product("pm-molten-solder", "fluid"):amount(10):done(),
-      PM.product("pm-flux-container"):amount(1, 2):done(),
+      PM.product("pm-used-flux-container"):amount(2):done(),
     }
   },
   {
