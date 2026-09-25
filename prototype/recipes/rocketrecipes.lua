@@ -474,6 +474,7 @@ data:extend({
         PM.ingredient("pm-gyroscope", 1),
         PM.ingredient("pm-advanced-processing-unit", 5),
         PM.ingredient("pm-travelling-wave-erbium-amplifier-tube", 4),
+        PM.ingredient("low-densitry-structure", 2),
         PM.ingredient("pm-heat-shielding", 6)
     },
     results =
@@ -514,7 +515,8 @@ data:extend({
         PM.ingredient("pm-heat-shielding", 10),
         PM.ingredient("pm-selenium-sulfur-battery", 15),
         PM.ingredient("pm-RTG", 1),
-        PM.ingredient("pm-solar-panel-3", 12)
+        PM.ingredient("pm-solar-panel-3", 12),
+        PM.ingredient("low-density-structure", 8)
     },
     results = 
     {
@@ -535,7 +537,8 @@ data:extend({
         PM.ingredient("pm-heat-shielding", 10),
         PM.ingredient("pm-selenium-sulfur-battery", 15),
         PM.ingredient("pm-RTG", 1),
-        PM.ingredient("pm-solar-panel-3", 12)
+        PM.ingredient("pm-solar-panel-3", 12),
+        PM.ingredient("low-density-structure", 8)
     },
     results = 
     {
