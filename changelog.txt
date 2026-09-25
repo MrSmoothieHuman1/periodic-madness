@@ -91,6 +91,7 @@ Date: 2025-12-19
     - Modernised vanadium processing technology icon and vanadium recipe icons.
     - Updated solder wire icon.
     - Updated vacuum tubes technology icon.
+    - Updated all solder technology icons
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
