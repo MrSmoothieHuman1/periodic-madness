@@ -191,8 +191,8 @@ data:extend({
   {
     type = "item",
     name = "pm-solder-wire",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/tin-wire.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/solder-wire.png",
     subgroup = "pm-intermediates",
     stack_size = 250
   },

@@ -89,6 +89,7 @@ Date: 2025-12-19
     - Made butene > butane output half its nickel at an 85% chance, to make it match every other similar recipe.
     - Increased the amount of nickel needed from butene > butane from 3 to 4.
     - Modernised vanadium processing technology icon and vanadium recipe icons.
+    - Updated solder wire icon.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
