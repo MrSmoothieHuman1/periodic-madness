@@ -836,6 +836,9 @@ if settings.startup["pm-circuit-colourblind-friendly-icons"].value == true then
   data.raw["item"]["pm-fluid-circuit"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-fluid-circuit.png"
   data.raw["item"]["pm-advanced-processing-breadboard"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-advanced-processing-unit-breadboard.png"
   data.raw["item"]["pm-advanced-processing-unit"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-advanced-processing-unit.png"
+  data.raw["item"]["pm-electronic-integrated-circuits"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-basic-integrated-circuits.png"
+  data.raw["item"]["pm-fluid-integrated-circuits"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-fluid-integrated-circuits.png"
+  data.raw["item"]["pm-advanced-processing-integrated-circuits"].icon = "__periodic-madness__/graphics/icons/settings/colourblind-advanced-processing-integrated-circuits.png"
 end
 
 --[[changes centrifuge to be tintable - credit to NullPointerExempt's mod for this
