@@ -93,6 +93,7 @@ Date: 2025-12-19
     - Updated vacuum tubes technology icon.
     - Updated all solder technology icons.
     - Updated chemical-based resin technology icon.
+    - Modelled all integrated circuits and IC molds, and made them more differentiable from eachother.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.
