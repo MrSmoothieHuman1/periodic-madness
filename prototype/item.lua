@@ -193,7 +193,8 @@ data:extend({
     name = "pm-solder-wire",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/solder-wire.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-wires",
+    order = "ca",
     stack_size = 250
   },
   {
