@@ -11,7 +11,7 @@ data:extend({
         {
             {
               name = {"pm-tooltips.beta-decay"},
-              value = {"item-name.pm-polonium-210"}
+              value = {"", "[img=item.pm-polonium-210]", {"item-name.pm-polonium-210"}}
             },
         },
     stack_size = 200

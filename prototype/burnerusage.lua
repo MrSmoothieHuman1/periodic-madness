@@ -27,7 +27,7 @@ data:extend({
     },
     {
         type = "burner-usage",
-        name = "pm-betterer-lab",
+        name = "pm-research-supercluster",
         icon = 
         {
             filename = "__core__/graphics/icons/alerts/food-icon-red.png",

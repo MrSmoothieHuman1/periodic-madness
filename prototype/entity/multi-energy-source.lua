@@ -400,7 +400,7 @@ local accelerator = {
 local betterer_lab =
 {
     type = "lab",
-    name = "pm-betterer-lab",
+    name = "pm-research-supercluster",
     icon_size = 128,
     icon = "__periodic-madness__/graphics/icons/buildings/science-center.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
@@ -413,8 +413,8 @@ local betterer_lab =
 		---@type data.CompoundBurnerEnergySource
 		{
 			type = "burner",
-			fuel_categories = {"pm-betterer-lab"},
-			burner_usage = "pm-betterer-lab",
+			fuel_categories = {"pm-research-supercluster"},
+			burner_usage = "pm-research-supercluster",
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
 			initial_fuel = nil,
@@ -427,7 +427,7 @@ local betterer_lab =
                 {
                     north = 
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab-loader-structure.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/big-fucking-lab-loader-structure.png",
                       width = 384,
                       height = 416,
                       animation_speed = 0.2,
@@ -482,7 +482,7 @@ local betterer_lab =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster.png",
           width = 384,
           height = 416,
           animation_speed = 0.2,
@@ -503,7 +503,7 @@ local betterer_lab =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster.png",
           width = 384,
           height = 416,
           scale = 0.5,

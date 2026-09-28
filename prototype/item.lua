@@ -2162,7 +2162,7 @@ data:extend({
     name = "pm-biomechanical-cortex",
     icon_size = 64,
     fuel_value = "50MJ",
-    fuel_categories = {"pm-betterer-lab"},
+    fuel_categories = {"pm-research-supercluster"},
     icon = "__periodic-madness__/graphics/icons/biomechanical-cortex.png",
     subgroup = "pm-intermediates",
     stack_size = 10,
@@ -2410,7 +2410,7 @@ data:extend({
   },
   {
     type = "fuel-category",
-    name = "pm-betterer-lab"
+    name = "pm-research-supercluster"
   },
   {
     type = "fuel-category",

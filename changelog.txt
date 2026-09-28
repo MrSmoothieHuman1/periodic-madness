@@ -94,6 +94,7 @@ Date: 2025-12-19
     - Updated all solder technology icons.
     - Updated chemical-based resin technology icon.
     - Modelled all integrated circuits and IC molds, and made them more differentiable from eachother.
+    - Renamed Lab to Research lab and Science center to Research center, for a more consistent naming scheme.
 
   Fixes:
     - Fixed bismuth chunk leeching icon being old.

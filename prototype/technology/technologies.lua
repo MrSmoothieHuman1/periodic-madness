@@ -1149,7 +1149,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-science-center",
+    name = "pm-research-center",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/science-center-tech.png",
     effects =
@@ -1379,7 +1379,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-post-transition-metal-science-pack")
     },
-    prerequisites = {"pm-science-center", "pm-crystallisation", "pm-lead-processing"},
+    prerequisites = {"pm-research-center", "pm-crystallisation", "pm-lead-processing"},
     unit =
     {
       count = 200,
@@ -1864,7 +1864,7 @@ data:extend({
       PM.unlock_recipe("pm-lead-ore"),
       PM.unlock_recipe("pm-lead-plate"),
     },
-    prerequisites = {"pm-science-center"},
+    prerequisites = {"pm-research-center"},
     unit =
     {
       count = 150,
@@ -1890,7 +1890,7 @@ data:extend({
       PM.unlock_recipe("pm-phosphoric-acid-filtering"),
       PM.unlock_recipe("pm-white-to-red-phosphorus")
     },
-    prerequisites = {"pm-science-center"},
+    prerequisites = {"pm-research-center"},
     unit =
     {
       count = 150,
@@ -2884,7 +2884,7 @@ data:extend({
       PM.unlock_recipe("pm-phosphoric-acid-filtering"),
       PM.unlock_recipe("pm-white-to-red-phosphorus")
     },
-    prerequisites = {"pm-science-center"},
+    prerequisites = {"pm-research-center"},
     unit =
     {
       count = 150,
@@ -7100,7 +7100,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-betterer-lab",
+    name = "pm-research-supercluster",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
@@ -7137,7 +7137,7 @@ data:extend({
         PM.unlock_recipe("pm-liquid-lanthanide-science"),
         PM.unlock_recipe("pm-liquid-lanthanide-science-bottling")
     },
-    prerequisites = {"pm-advanced-science-production", "pm-betterer-lab", "pm-cerium-processing", "pm-praseodymium-processing", "pm-neodymium-processing", "pm-promethium-processing", "pm-samarium-processing", "pm-europium-processing", "pm-gadolinium-processing", "pm-terbium-processing", "pm-dysprosium-processing", "pm-holmium-processing", "pm-erbium-processing", "pm-thulium-processing", "pm-ytterbium-processing", "pm-lutetium-processing"},
+    prerequisites = {"pm-advanced-science-production", "pm-research-supercluster", "pm-cerium-processing", "pm-praseodymium-processing", "pm-neodymium-processing", "pm-promethium-processing", "pm-samarium-processing", "pm-europium-processing", "pm-gadolinium-processing", "pm-terbium-processing", "pm-dysprosium-processing", "pm-holmium-processing", "pm-erbium-processing", "pm-thulium-processing", "pm-ytterbium-processing", "pm-lutetium-processing"},
     unit =
     {
       count = 850,

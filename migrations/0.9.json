@@ -14,6 +14,7 @@
         ["pm-better-vanadium-oxide", "pm-advanced-sodium-oxide"],
         ["pm-better-calcium-extraction", "pm-advanced-calcium-extraction"],
         ["pm-better-module-lights", "pm-promethium-module-lights"],
-        ["pm-better-sulfur-extraction", "pm-advanced-sulfur-extraction"]
+        ["pm-better-sulfur-extraction", "pm-advanced-sulfur-extraction"],
+        ["pm-science-center", "pm-research-center"]
     ]
 }

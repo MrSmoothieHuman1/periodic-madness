@@ -28,15 +28,15 @@ end
 if DiscoScience then
 	-- TODO: Get a glow for  the science center
 	-- DiscoScience.prepareLab(data.raw["lab"]["pm-science-center"])
-	DiscoScience.prepareLab(data.raw["lab"]["pm-betterer-lab"], {
-		animation = "pm-betterer-lab-glow",
+	DiscoScience.prepareLab(data.raw["lab"]["pm-research-supercluster"], {
+		animation = "pm-research-supercluster-glow",
 	})
 
 	data:extend{
 		{
 			type = "animation",
-			name = "pm-betterer-lab-glow",
-			filename = "__periodic-madness__/graphics/entities/buildings/betterer-lab/big-fucking-lab-glow.png",
+			name = "pm-research-supercluster-glow",
+			filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/big-fucking-lab-glow.png",
 			blend_mode = "additive",
 			draw_as_glow = true,
 			width = 384,
