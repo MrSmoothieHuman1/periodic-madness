@@ -248,6 +248,11 @@ local function multi_energy_source(proto)
 	-- MARK: Energy use
 
 	local total_energy_use = util.parse_energy(proto.energy_usage)
+        if proto.effect_receiver then
+        local consumption_limit = proto.effect_receiver.consumption_limits
+        local highest_consumption = consumption_limit and consumption_limit.high or 1000
+        total_energy_use = total_energy_use * highest_consumption
+    end
 	local ratio_total = 0.0
 	for i = 1, #energy_sources do
 		ratio_total = ratio_total + energy_sources[i].usage_ratio
@@ -408,6 +413,7 @@ local betterer_lab =
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
     module_slots = 4,
+    effect_receiver = {}, --needed to make modules not break the consumption
     energy_source =
     {
 		---@type data.CompoundBurnerEnergySource
