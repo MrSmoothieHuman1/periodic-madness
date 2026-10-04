@@ -324,6 +324,8 @@ local function multi_energy_source(proto)
 			collision_mask = collision_mask_util.get_mask(proto),
 			collision_box = proto.collision_box,
 			selectable_in_game = false,
+            fire_flicker_enabled = true,
+            fire_glow_flicker_enabled = true,
 		}
 		add_placement(boiler, placement_info)
 		data:extend{boiler}
@@ -369,6 +371,7 @@ local accelerator = {
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
 			initial_fuel = nil, -- TODO: Fill in an initial item
+            light_flicker = nil,
 			loader_position = {14.5, 0},
 			loader_direction = defines.direction.east,
 			loader_belt = "pm-high-density-transport-belt",
@@ -424,11 +427,15 @@ local betterer_lab =
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
 			initial_fuel = nil,
+            light_flicker =
+            {
+                color = {0, 0, 0}
+            },
 			loader_position = {-3, 0},
 			loader_direction = defines.direction.west,
 			loader_belt = "pm-high-density-transport-belt",
 			loader_structure = nil,
-			usage_ratio = 1,
+			usage_ratio = 2,
 		},
 		---@type data.CompoundElectricEnergySource
         {
@@ -468,17 +475,8 @@ local betterer_lab =
           line_length = 8,
           frame_count = 64,
           shift = util.by_pixel(0, -12),
+          draw_as_glow = true,
           scale = 0.5,
-        },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
-          width = 320,
-          height = 320,
-          draw_as_shadow = true,
-          shift = util.by_pixel(10, 0),
-          line_length = 1,
-          repeat_count = 64,
-          scale = 0.625,
         },
       }
     },
@@ -493,14 +491,6 @@ local betterer_lab =
           shift = util.by_pixel(0, -12),
           scale = 0.5,
         },
-        {
-          filename = "__periodic-madness__/graphics/entities/buildings/science-center/science-center-shadow.png",
-          width = 320,
-          height = 320,
-          shift = util.by_pixel(10, 0),
-          draw_as_shadow = true,
-          scale = 0.5,
-        }
       }
     }
   }
