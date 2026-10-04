@@ -401,8 +401,8 @@ local betterer_lab =
 {
     type = "lab",
     name = "pm-research-supercluster",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/buildings/science-center.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/research-supercluster.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.75, result = "pm-science-center" },
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
@@ -418,7 +418,7 @@ local betterer_lab =
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
 			initial_fuel = nil,
-			loader_position = {-3, 0},
+			loader_position = {-3, -3},
 			loader_direction = defines.direction.west,
 			loader_belt = "pm-high-density-transport-belt",
 			loader_structure = 
@@ -427,7 +427,7 @@ local betterer_lab =
                 {
                     north = 
                     {
-                      filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/big-fucking-lab-loader-structure.png",
+                      filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster-loader-structure.png",
                       width = 384,
                       height = 416,
                       animation_speed = 0.2,
@@ -506,6 +506,7 @@ local betterer_lab =
           filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster.png",
           width = 384,
           height = 416,
+          shift = util.by_pixel(0, -12),
           scale = 0.5,
         },
         {

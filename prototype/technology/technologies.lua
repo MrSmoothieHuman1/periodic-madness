@@ -7102,7 +7102,7 @@ data:extend({
     type = "technology",
     name = "pm-research-supercluster",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/research-supercluster.png",
     effects =
     {
         PM.unlock_recipe("pm-biomechanical-cortex")
