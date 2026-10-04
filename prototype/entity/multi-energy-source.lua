@@ -418,47 +418,10 @@ local betterer_lab =
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
 			initial_fuel = nil,
-			loader_position = {-3, -3},
+			loader_position = {-3, 0},
 			loader_direction = defines.direction.west,
 			loader_belt = "pm-high-density-transport-belt",
-			loader_structure = 
-            {
-                direction_in = 
-                {
-                    north = 
-                    {
-                      filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster-loader-structure.png",
-                      width = 384,
-                      height = 416,
-                      animation_speed = 0.2,
-                      scale = 0.5,
-                    },
-                    south = 
-                    {
-                      filename = "__periodic-madness__/graphics/icons/empty.png",
-                      width = 64,
-                      height = 64,
-                      animation_speed = 0.2,
-                      scale = 0.5,
-                    },
-                    east = 
-                    {
-                      filename = "__periodic-madness__/graphics/icons/empty.png",
-                      width = 64,
-                      height = 64,
-                      animation_speed = 0.2,
-                      scale = 0.5,
-                    },
-                    west = 
-                    {
-                      filename = "__periodic-madness__/graphics/icons/empty.png",
-                      width = 64,
-                      height = 64,
-                      animation_speed = 0.2,
-                      scale = 0.5,
-                    },
-                }
-            },
+			loader_structure = nil,
 			usage_ratio = 1,
 		},
 		---@type data.CompoundElectricEnergySource
@@ -482,10 +445,23 @@ local betterer_lab =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster-on-base.png",
           width = 384,
           height = 416,
-          animation_speed = 0.2,
+          animation_speed = 0.4,
+          line_length = 1,
+          repeat_count = 64,
+          shift = util.by_pixel(0, -12),
+          scale = 0.5,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster-on-lights.png",
+          width = 384,
+          height = 416,
+          animation_speed = 0.4,
+          line_length = 8,
+          frame_count = 64,
+          shift = util.by_pixel(0, -12),
           scale = 0.5,
         },
         {
@@ -494,6 +470,8 @@ local betterer_lab =
           height = 320,
           draw_as_shadow = true,
           shift = util.by_pixel(10, 0),
+          line_length = 1,
+          repeat_count = 64,
           scale = 0.625,
         },
       }
@@ -503,7 +481,7 @@ local betterer_lab =
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster.png",
+          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster-off.png",
           width = 384,
           height = 416,
           shift = util.by_pixel(0, -12),
