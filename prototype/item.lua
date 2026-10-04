@@ -2164,7 +2164,8 @@ data:extend({
     fuel_value = "25MJ",
     fuel_categories = {"pm-research-supercluster"},
     icon = "__periodic-madness__/graphics/icons/biomechanical-cortex.png",
-    subgroup = "pm-intermediates",
+    subgroup = "pm-science-machine",
+    order = "d",
     stack_size = 10,
   },
 

@@ -1093,6 +1093,16 @@ data:extend({
     place_result = "pm-liquid-science-plant",
     stack_size = 20,
   },
+  {
+    type = "item",
+    name = "pm-research-supercluster",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/research-supercluster.png",
+    subgroup = "pm-science-machine",
+    order = "e",
+    place_result = "pm-research-supercluster",
+    stack_size = 20,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

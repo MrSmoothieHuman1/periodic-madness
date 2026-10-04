@@ -7105,7 +7105,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/research-supercluster.png",
     effects =
     {
-        PM.unlock_recipe("pm-biomechanical-cortex")
+        PM.unlock_recipe("pm-biomechanical-cortex"),
+        PM.unlock_recipe("pm-research-supercluster")
     },
     prerequisites = {"pm-advanced-processing-unit"},
     unit =

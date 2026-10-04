@@ -412,7 +412,7 @@ local betterer_lab =
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/research-supercluster.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.75, result = "pm-science-center" },
+    minable = { mining_time = 0.75, result = "pm-research-supercluster" },
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
     module_slots = 4,

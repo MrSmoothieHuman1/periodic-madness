@@ -1983,6 +1983,29 @@ data:extend({
       PM.product("pm-liquid-science-plant"):amount(1):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-research-supercluster",
+    energy_required = 8,
+    enabled = false,
+    categories = {"crafting-with-fluid"},
+    ingredients = 
+    {
+        PM.ingredient("low-density-structure", 12),
+        PM.ingredient("pm-high-density-structure", 24),
+        PM.ingredient("pm-advanced-processing-unit", 25),
+        PM.ingredient("pm-science-center", 1),
+        PM.ingredient("pm-high-density-transport-belt", 1),
+        PM.ingredient("pm-heavyweight-panelling", 64),
+        PM.ingredient("pm-corrosion-resistant-tubing", 48),
+        PM.ingredient("pm-anti-bacterial-tubing", 24),
+        PM.ingredient("pm-liquid-silicone", 30, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-research-supercluster"):amount(1):done()
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true
