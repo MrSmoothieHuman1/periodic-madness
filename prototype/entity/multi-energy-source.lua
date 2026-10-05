@@ -415,6 +415,7 @@ local betterer_lab =
     minable = { mining_time = 0.75, result = "pm-research-supercluster" },
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
+    max_health = 2000,
     module_slots = 4,
     effect_receiver = {}, --needed to make modules not break the consumption
     energy_source =

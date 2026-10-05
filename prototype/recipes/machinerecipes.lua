@@ -1999,6 +1999,7 @@ data:extend({
         PM.ingredient("pm-heavyweight-panelling", 64),
         PM.ingredient("pm-corrosion-resistant-tubing", 48),
         PM.ingredient("pm-anti-bacterial-tubing", 24),
+        PM.ingredient("refined-concrete", 32),
         PM.ingredient("pm-liquid-silicone", 30, "fluid")
     },
     results =
