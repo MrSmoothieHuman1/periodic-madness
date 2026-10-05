@@ -451,8 +451,8 @@ local betterer_lab =
     inputs = pm_advanced_lab_inputs,
     icons_positioning =
     {
-      {inventory_index = defines.inventory.lab_modules, shift = {0, 1}},
-      {inventory_index = defines.inventory.lab_input, shift = {0, 0.0}, max_icons_per_row = 6, separation_multiplier = 0.9}
+      {inventory_index = defines.inventory.lab_modules, shift = {0, 1}, scale = 0.45},
+      {inventory_index = defines.inventory.lab_input, shift = {0, -0.5}, max_icons_per_row = 6, separation_multiplier = 0.9, scale = 0.45}
     },
     on_animation =
     {
