@@ -479,6 +479,17 @@ local betterer_lab =
           draw_as_glow = true,
           scale = 0.5,
         },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/research-supercluster/research-supercluster-on-fans.png",
+          width = 384,
+          height = 416,
+          animation_speed = 0.4,
+          line_length = 8,
+          frame_count = 64,
+          shift = util.by_pixel(0, -12),
+          draw_as_glow = true,
+          scale = 0.5,
+        },
       }
     },
     off_animation =
