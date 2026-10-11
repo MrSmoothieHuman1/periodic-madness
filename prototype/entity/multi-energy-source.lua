@@ -31,7 +31,10 @@ local pm_advanced_lab_inputs =
   "production-science-pack",
   "utility-science-pack",
   "space-science-pack",
-  "pm-experimental-research-data"
+  "pm-experimental-research-data",
+  "pm-agility-bio-module", 
+  "pm-health-bio-module", 
+  "pm-strength-bio-module"
 }
 
 ---@type PMCompoundEntityPlacementData

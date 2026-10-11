@@ -1995,6 +1995,7 @@ data:extend({
         PM.ingredient("pm-high-density-structure", 24),
         PM.ingredient("pm-advanced-processing-unit", 25),
         PM.ingredient("pm-science-center", 1),
+        PM.ingredient("pm-bio-lab", 1),
         PM.ingredient("pm-high-density-transport-belt", 1),
         PM.ingredient("pm-heavyweight-panelling", 64),
         PM.ingredient("pm-corrosion-resistant-tubing", 48),
