@@ -178,15 +178,49 @@ data:extend({
         order = "d",
         main_product = "pm-heavily-seperated-anode-mud",
         allow_productivity = true,
-        ingredients = 
+        ingredients =
         {
             PM.ingredient("pm-lightly-seperated-anode-mud", 6),
             PM.ingredient("pm-chlorine", 20, "fluid")
         },
-        results = 
+        results =
         {
             PM.product("pm-heavily-seperated-anode-mud"):amount(4):done(),
             PM.product("pm-platinum-powder"):amount(1):chance(0.15):done()
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-liquid-chlorine-heavily-seperated-anode-mud",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/heavily-seperated-anode-mud.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/liquid-chlorine.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
+        enabled = false,
+        energy_required = 6,
+        categories = {"pm-acids"},
+        order = "da",
+        main_product = "pm-heavily-seperated-anode-mud",
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-lightly-seperated-anode-mud", 6),
+            PM.ingredient("pm-liquid-chlorine", 1.5, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-heavily-seperated-anode-mud"):amount(4):done(),
+            PM.product("pm-heavily-seperated-anode-mud"):amount(2):chance(0.75):done(),
+            PM.product("pm-platinum-powder"):amount(1):chance(0.2):done()
         }
     },
     {

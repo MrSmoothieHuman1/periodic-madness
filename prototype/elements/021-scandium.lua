@@ -161,7 +161,7 @@ data:extend({
         type = "recipe",
         name = "pm-scandium-oxide",
         enabled = false,
-        energy_required = 18,
+        energy_required = 27,
         categories = {"pm-coldening"},
         allow_producitvity = true,
         ingredients =
@@ -172,6 +172,36 @@ data:extend({
         results =
         {
             PM.product("pm-scandium-oxide"):amount(8):done(),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-liquid-oxygen-scandium-oxide",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/scandium-oxide.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/liquid-oxygen.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
+        enabled = false,
+        energy_required = 18,
+        categories = {"pm-coldening"},
+        allow_producitvity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-scandium", 8),
+            PM.ingredient("pm-liquid-oxygen", 4, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-scandium-oxide"):amount(12):done(),
         }
     },
 })

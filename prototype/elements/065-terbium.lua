@@ -114,6 +114,41 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "pm-liquid-nitrogen-terbium-salts",
+        icons =
+        {
+          {
+            icon = "__periodic-madness__/graphics/icons/ores/terbium-salts.png",
+            icon_size = 64,
+          },
+          {
+            icon = "__periodic-madness__/graphics/icons/fluids/liquid-nitrogen.png",
+            icon_size = 64,
+            shift = {8, -8},
+            scale = 0.33
+          },
+        },
+        enabled = false,
+        energy_required = 8,
+        categories = {"pm-acids"},
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-pure-monazite", 4),
+            PM.ingredient("pm-ammonium-chloride", 3),
+            PM.ingredient("pm-liquid-nitrogen", 1.5, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-terbium-salts"):amount(8):done(),
+            PM.product("pm-terbium-chloride"):amount(1):chance(0, 0.25):done(),
+            PM.product("pm-terbium-bromide"):amount(1):chance(0.25, 0.5):done(),
+            PM.product("pm-terbium-hydride"):amount(1):chance(0.5, 0.75):done(),
+            PM.product("pm-terbium-sulfate"):amount(1):chance(0.75, 1):done()
+        }
+    },
+    {
+        type = "recipe",
         name = "pm-terbium-salt-seperation",
         enabled = false,
         energy_required = 8,

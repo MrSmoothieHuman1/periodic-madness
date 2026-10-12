@@ -8452,8 +8452,11 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-liquid-oxygen"),
+        PM.unlock_recipe("pm-liquid-oxygen-scandium-oxide"),
         PM.unlock_recipe("pm-liquid-nitrogen"),
+        PM.unlock_recipe("pm-liquid-nitrogen-terbium-salts"),
         PM.unlock_recipe("pm-liquid-chlorine"),
+        PM.unlock_recipe("pm-liquid-chloride-heavily-seperated-anode-mud")
     },
     prerequisites = {"pm-cryocooling"},
     unit =
