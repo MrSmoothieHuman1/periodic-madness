@@ -8310,7 +8310,7 @@ data:extend({
     type = "technology",
     name = "pm-pennyjim-neodymium-146-enrichment-process",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/pennyjim-neodymium-146-enrichment-process.png",
     effects =
     {
         PM.unlock_recipe("pm-pennyjim-neodymium-146-enrichment-process")
@@ -8327,7 +8327,7 @@ data:extend({
     type = "technology",
     name = "pm-akip-neodymium-147-enrichment-process",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/akip-neodymium-147-enrichment-process.png",
     effects =
     {
         PM.unlock_recipe("pm-akip-neodymium-147-enrichment-process")
