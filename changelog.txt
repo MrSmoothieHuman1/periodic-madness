@@ -104,6 +104,7 @@ Date: 2025-12-19
     - Fixed arsenic being in the lead subgroup.
     - Fixed vanadium ore factoriopedia merging.
     - Moved solder wire to the wire subgroup.
+    - Fixed electric boilers outputting 15 degree steam. This might caused issues with factory planner, if you were in the middle of planning out a recipe that used steam.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.8.015

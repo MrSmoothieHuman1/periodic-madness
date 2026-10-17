@@ -11013,7 +11013,7 @@ fluid_boxes =
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     alert_icon_shift = util.by_pixel(0, -12),
-    crafting_speed = 0.75,
+    crafting_speed = 1,
     crafting_categories = { "pm-cryogenics" },
     module_slots = 8,
     allowed_effects = PM.all_effects(),
@@ -11356,6 +11356,7 @@ fluid_boxes =
     effectivity = 1.5,
     fluid_usage_per_tick = 1,
     maximum_temperature = 750,
+    minimum_input_temperature = 165,
     burns_fluid = false,
     resistances =
     {
@@ -11379,7 +11380,6 @@ fluid_boxes =
       },
       production_type = "input",
       filter = "steam",
-      minimum_temperature = 100.0
     },
     energy_source =
     {
