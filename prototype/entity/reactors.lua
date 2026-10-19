@@ -621,20 +621,21 @@ data:extend({
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
-              width = 384,
-              height = 400,
+              filename = "__periodic-madness__/graphics/entities/buildings/uranium-233-reactor/uranium-233-reactor.png",
+              width = 192,
+              height = 210,
               frame_count = 1,
-              scale = 0.2,
+              shift = util.by_pixel(0, -8),
+              scale = 0.5,
             },
-            {
+            --[[{
               filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
               width = 320,
               height = 320,
               scale = 0.5,
               shift = { 1.625, 0 },
               draw_as_shadow = true
-            }
+            }--]]
           }
         },
         connection_patches_connected =
