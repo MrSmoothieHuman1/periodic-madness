@@ -1047,6 +1047,8 @@ data:extend({
     name = "pm-cryogenic-plant",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
+    subgroup = "pm-chemistry-machine",
+    order = "i",
     place_result = "pm-cryogenic-plant",
     stack_size = 25
   },
