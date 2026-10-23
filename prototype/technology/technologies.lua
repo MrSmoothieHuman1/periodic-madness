@@ -8227,7 +8227,7 @@ data:extend({
         PM.unlock_recipe("pm-fine-monazite-sand"),
         PM.unlock_recipe("pm-thorium-filtered-concentrate"),
         PM.unlock_recipe("pm-thorium-filter-cake"),
-        PM.unlock_recipe("pm-thorium-filter-cake-seperation"),
+        PM.unlock_recipe("pm-thorium-precipitate"),
         PM.unlock_recipe("pm-trace-thorium"),
         PM.unlock_recipe("pm-thorium-232"),
         PM.unlock_recipe("pm-thorium-233"),

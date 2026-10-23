@@ -402,7 +402,7 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "pm-thorium-filter-cake-seperation",
+        name = "pm-thorium-precipitate",
         enabled = false,
         energy_required = 24,
         categories = {"centrifuging"},
