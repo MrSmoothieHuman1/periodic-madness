@@ -130,8 +130,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-silver-cooling-plating",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/silver-cooling-plating.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/cooling-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/silver-plate.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -150,8 +161,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-copper-cooling-plating",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/copper-cooling-plating.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/cooling-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__base__/graphics/icons/copper-cable.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -170,8 +192,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-steel-cooling-plating",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/steel-cooling-plating.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/cooling-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/steel-plate.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",
@@ -190,8 +223,19 @@ data:extend({
   {
     type = "recipe",
     name = "pm-manganese-cooling-plating",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/recipes/manganese-cooling-plating.png",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/cooling-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/manganese-plate.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
     energy_required = 1,
     show_amount_in_title = true,
     subgroup = "pm-multimetal-temp-plates",

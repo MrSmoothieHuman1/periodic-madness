@@ -14,7 +14,7 @@ data:extend({
   {
     type = "item",
     name = "pm-cooling-plating",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cooling-plating.png",
     subgroup = "pm-multimetal-temp-plates",
     order = "b",
