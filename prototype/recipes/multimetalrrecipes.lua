@@ -251,6 +251,37 @@ data:extend({
       PM.product("pm-cooling-plating"):amount(2):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-erbium-cooling-plating",
+    icons =
+    {
+      {
+        icon = "__periodic-madness__/graphics/icons/cooling-plating.png",
+        icon_size = 64,
+      },
+      {
+        icon = "__periodic-madness__/graphics/icons/plates/erbium-plate.png",
+        icon_size = 64,
+        scale = 0.28,
+        shift = {10, -6}
+      },
+    },
+    energy_required = 1,
+    show_amount_in_title = true,
+    subgroup = "pm-multimetal-temp-plates",
+    order = "b[pm-cooling-plating]",
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-basic-panelling", 2),
+      PM.ingredient("pm-erbium-plate", 2)
+    },
+    results =
+    {
+      PM.product("pm-cooling-plating"):amount(6):done()
+    }
+  },
 
   --Tubing
 

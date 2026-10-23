@@ -7616,7 +7616,8 @@ data:extend({
         PM.unlock_recipe("pm-erbium-iodide-to-impure-erbium"),
         PM.unlock_recipe("pm-erbium-fluoride"),
         PM.unlock_recipe("pm-molten-erbium"),
-        PM.unlock_recipe("pm-erbium-plate")
+        PM.unlock_recipe("pm-erbium-plate"),
+        PM.unlock_recipe("pm-erbium-cooling-plating")
     },
     prerequisites = {"pm-monazite-processing"},
     unit =
