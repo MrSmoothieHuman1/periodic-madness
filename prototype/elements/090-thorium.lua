@@ -219,8 +219,8 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "b",
       default_temperature = 15,
-      base_color = {0.82, 0.91, 0.733},
-      flow_color = {0.72, 0.81, 0.633},
+      base_color = {0.82, 0.922, 0.886},
+      flow_color = {0.82, 0.922, 0.886},
     },
     {
       type = "fluid",
@@ -230,8 +230,8 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "c",
       default_temperature = 15,
-      base_color = {0.82, 0.91, 0.733},
-      flow_color = {0.72, 0.81, 0.633},
+      base_color = {0.922, 0.922, 0.922},
+      flow_color = {0.922, 0.922, 0.922},
     },
     {
       type = "fluid",
@@ -241,8 +241,8 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "e",
       default_temperature = 15,
-      base_color = {0.82, 0.91, 0.733},
-      flow_color = {0.72, 0.81, 0.633},
+      base_color = {0.318, 0.588, 0.769},
+      flow_color = {0.318, 0.588, 0.769},
     },
     {
       type = "fluid",
@@ -252,8 +252,8 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "g",
       default_temperature = 15,
-      base_color = {0.82, 0.91, 0.733},
-      flow_color = {0.72, 0.81, 0.633},
+      base_color = {0.365, 0.792, 0.871},
+      flow_color = {0.318, 0.698, 0.769},
     },
     {
       type = "fluid",
@@ -269,8 +269,8 @@ data:extend({
         name = "pm-liquid-thorium-fluoride-waste",
         amount = 0.25,
       },
-      base_color = {0.82, 0.91, 0.733},
-      flow_color = {0.72, 0.81, 0.633},
+      base_color = {0.482, 0.988, 1},
+      flow_color = {0.816, 0.996, 1},
     },
     {
       type = "fluid",
@@ -280,8 +280,8 @@ data:extend({
       subgroup = "pm-thorium-ac",
       order = "l",
       default_temperature = 15,
-      base_color = {0.82, 0.91, 0.733},
-      flow_color = {0.72, 0.81, 0.633},
+      base_color = {0.455, 0.871, 0.741},
+      flow_color = {0.396, 0.78, 0.588},
     },
 
     {
