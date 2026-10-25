@@ -574,7 +574,7 @@ data:extend({
         },
         collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
         selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
-        lower_layer_picture =
+        --[[lower_layer_picture =
         {
           filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
           width = 320,
@@ -588,7 +588,7 @@ data:extend({
 	    		height = 316,
 	    		scale = 0.5,
 	    		shift = util.by_pixel(-0.5, -4.5)
-	    	}--[[@as data.Sprite]],
+	    	}--[[@as data.Sprite]]--]]
         --[[working_light_picture =
         {
           layers =
