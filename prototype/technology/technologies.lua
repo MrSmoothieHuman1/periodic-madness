@@ -8519,7 +8519,7 @@ data:extend({
     type = "technology",
     name = "pm-electric-energy-distribution-3",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__base__/graphics/technology/electric-energy-distribution-2.png",
     effects =
     {
     },
