@@ -377,8 +377,9 @@ data:extend({
             {
               filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
               width = 384,
-              height = 400,
+              height = 424,
               frame_count = 1,
+              shift = util.by_pixel(0, -6),
               scale = 0.5,
             },
             {
