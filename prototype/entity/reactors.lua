@@ -250,19 +250,24 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
         icon_size = 128,
         flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 1.5, result = "pm-polonium-reactor" },
+        minable = { mining_time = 2, result = "pm-molten-salt-thorium-reactor" },
         max_health = 1500,
         map_color = {0.243, 0.557, 0.639},
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
         consumption = "50MW",
         neighbour_bonus = 0.2,
+        default_fuel_glow_color = {0.659, 0.965, 1},
         energy_source =
         {
           type = "fluid",
           fluid_usage_per_tick = 5/60,
           scale_fluid_usage = true,
           burns_fluid = true,
+          light_flicker =
+          {
+            color = {0, 0, 0}
+          },
           fluid_box =
           {
             volume = 250,
@@ -328,7 +333,7 @@ data:extend({
         },
         collision_box = { { -2.8, -2.8 }, { 2.8, 2.8 } },
         selection_box = { { -3, -3 }, { 3, 3 } },
-        lower_layer_picture =
+        --[[lower_layer_picture =
         {
           filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
           width = 320,
@@ -342,34 +347,35 @@ data:extend({
 	    		height = 316,
 	    		scale = 0.25,
 	    		shift = util.by_pixel(-0.5, -4.5)
-	    	}--[[@as data.Sprite]],
-        --[[working_light_picture =
+	    	}--[[@as data.Sprite]]--]]
+        working_light_picture =
         {
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
-              width = 320,
-              height = 320,
-              line_length = 6,
-              frame_count = 24,
+              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor-working-glow.png",
+              width = 384,
+              height = 424,
+              --line_length = 6,
+              --frame_count = 24,
               animation_speed = 0.5,
               scale = 0.5,
-              shift = util.by_pixel(-5, -7)
+              draw_as_glow = true,
+              shift = util.by_pixel(0, -6),
             },
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-              width = 320,
-              height = 320,
-              line_length = 1,
-              frame_count = 1,
-              repeat_count = 24,
+              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor-working-light.png",
+              width = 384,
+              height = 424,
+              --line_length = 6,
+              --frame_count = 24,
+              animation_speed = 0.5,
               scale = 0.5,
-              shift = { 1.625, 0 },
-              draw_as_shadow = true
-            }
+              draw_as_light = true,
+              shift = util.by_pixel(0, -6),
+            },
           }
-        },--]]
+        },
         picture =
         {
           layers =
@@ -525,7 +531,7 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
         icon_size = 128,
         flags = { "placeable-neutral", "player-creation" },
-        minable = { mining_time = 1.5, result = "pm-polonium-reactor" },
+        minable = { mining_time = 1.5, result = "pm-uranium-233-reactor" },
         map_color = {0.376, 0.639, 0.243},
         max_health = 1000,
         corpse = "nuclear-reactor-remnants",

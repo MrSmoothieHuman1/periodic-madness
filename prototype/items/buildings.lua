@@ -1105,6 +1105,26 @@ data:extend({
     place_result = "pm-research-supercluster",
     stack_size = 20,
   },
+  {
+    type = "item",
+    name = "pm-molten-salt-thorium-reactor",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/thorium-salt-reactor.png",
+    subgroup = "pm-nuclear-energy",
+    order = "d",
+    place_result = "pm-molten-salt-thorium-reactor",
+    stack_size = 5,
+  },
+  {
+    type = "item",
+    name = "pm-uranium-233-reactor",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/thorium-salt-reactor.png",
+    subgroup = "pm-nuclear-energy",
+    order = "e",
+    place_result = "pm-uranium-233-reactor",
+    stack_size = 5,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
