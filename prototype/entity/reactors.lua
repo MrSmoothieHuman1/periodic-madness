@@ -247,8 +247,8 @@ data:extend({
     {
         type = "reactor",
         name = "pm-molten-salt-thorium-reactor",
-        icon = "__periodic-madness__/graphics/icons/buildings/molten-salt-thorium-reactor.png",
-        icon_size = 128,
+        icon = "__periodic-madness__/graphics/icons/buildings/thorium-salt-reactor.png",
+        icon_size = 64,
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 2, result = "pm-molten-salt-thorium-reactor" },
         max_health = 1500,
@@ -529,7 +529,7 @@ data:extend({
         type = "reactor",
         name = "pm-uranium-233-reactor",
         icon = "__periodic-madness__/graphics/icons/buildings/uranium-233-reactor.png",
-        icon_size = 128,
+        icon_size = 64,
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 1.5, result = "pm-uranium-233-reactor" },
         map_color = {0.376, 0.639, 0.243},
@@ -538,6 +538,7 @@ data:extend({
         dying_explosion  = "nuclear-reactor-explosion",
         consumption = "15MW",
         neighbour_bonus = 0.1,
+        default_fuel_glow_color = {0.431, 1, 0.494},
         energy_source =
         {
           type = "burner",
@@ -545,6 +546,10 @@ data:extend({
           burnt_inventory_size = 0,
           fuel_categories = {"pm-uranium-233"},
           effectivity = 1,
+          light_flicker = 
+          {
+            color = {0, 0, 0}
+          },
           emissions_per_minute = {pollution = 2.5},
         },
         working_sound =
@@ -596,33 +601,30 @@ data:extend({
 	    		scale = 0.5,
 	    		shift = util.by_pixel(-0.5, -4.5)
 	    	}--[[@as data.Sprite]]--]]
-        --[[working_light_picture =
+        working_light_picture =
         {
           layers =
           {
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor.png",
-              width = 320,
-              height = 320,
-              line_length = 6,
-              frame_count = 24,
+              filename = "__periodic-madness__/graphics/entities/buildings/uranium-233-reactor/uranium-233-reactor-working-glow.png",
+              width = 192,
+              height = 210,
               animation_speed = 0.5,
               scale = 0.5,
-              shift = util.by_pixel(-5, -7)
+              draw_as_glow = true,
+              shift = util.by_pixel(-0, -8)
             },
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-              width = 320,
-              height = 320,
-              line_length = 1,
-              frame_count = 1,
-              repeat_count = 24,
+              filename = "__periodic-madness__/graphics/entities/buildings/uranium-233-reactor/uranium-233-reactor-working-light.png",
+              width = 192,
+              height = 210,
+              animation_speed = 0.5,
               scale = 0.5,
-              shift = { 1.625, 0 },
-              draw_as_shadow = true
-            }
+              draw_as_light = true,
+              shift = util.by_pixel(-0, -8)
+            },
           }
-        },--]]
+        },
         picture =
         {
           layers =
