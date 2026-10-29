@@ -247,7 +247,7 @@ data:extend({
     {
         type = "reactor",
         name = "pm-molten-salt-thorium-reactor",
-        icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/molten-salt-thorium-reactor.png",
         icon_size = 128,
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 2, result = "pm-molten-salt-thorium-reactor" },
@@ -528,7 +528,7 @@ data:extend({
     {
         type = "reactor",
         name = "pm-uranium-233-reactor",
-        icon = "__periodic-madness__/graphics/icons/buildings/polonium-reactor.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/uranium-233-reactor.png",
         icon_size = 128,
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 1.5, result = "pm-uranium-233-reactor" },

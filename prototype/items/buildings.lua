@@ -1119,7 +1119,7 @@ data:extend({
     type = "item",
     name = "pm-uranium-233-reactor",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/thorium-salt-reactor.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/uranium-233-reactor.png",
     subgroup = "pm-nuclear-energy",
     order = "e",
     place_result = "pm-uranium-233-reactor",
