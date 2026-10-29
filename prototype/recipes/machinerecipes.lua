@@ -2007,7 +2007,51 @@ data:extend({
     {
         PM.product("pm-research-supercluster"):amount(1):done()
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-salt-thorium-reactor",
+    energy_required = 12,
+    enabled = false,
+    categories = {"crafting-with-fluid"},
+    ingredients = 
+    {
+        PM.ingredient("pm-molten-framing", 36),
+        PM.ingredient("pm-radiation-resistant-panelling", 64),
+        PM.ingredient("refined-concrete", 50),
+        PM.ingredient("pm-radiation-resistant-tubing", 40),
+        PM.ingredient("pm-advanced-processing-unit", 20),
+        PM.ingredient("pm-advanced-electric-engine-unit", 10),
+        PM.ingredient("pm-high-density-structure", 8),
+        PM.ingredient("pm-light-lubricant", 25, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-molten-salt-thorium-reactor"):amount(1):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-uranium-233-reactor",
+    energy_required = 8,
+    enabled = false,
+    categories = {"crafting-with-fluid"},
+    ingredients = 
+    {
+        PM.ingredient("pm-molten-framing", 12),
+        PM.ingredient("pm-radiation-resistant-panelling", 32),
+        PM.ingredient("refined-concrete", 25),
+        PM.ingredient("pm-radiation-resistant-tubing", 40),
+        PM.ingredient("pm-advanced-processing-unit", 10),
+        PM.ingredient("pm-advanced-electric-engine-unit", 6),
+        PM.ingredient("low-density-structure", 12),
+        PM.ingredient("pm-light-lubricant", 15, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-uranium-233-reactor"):amount(1):done()
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

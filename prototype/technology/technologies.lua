@@ -8234,7 +8234,9 @@ data:extend({
         PM.unlock_recipe("pm-liquid-thorium-fluoride"),
         PM.unlock_recipe("pm-liquid-thorium-fluoride-waste-seperation"),
         PM.unlock_recipe("pm-protactinium-233"),
-        PM.unlock_recipe("pm-uranium-233")
+        PM.unlock_recipe("pm-uranium-233"),
+        PM.unlock_recipe("pm-molten-salt-thorium-reactor"),
+        PM.unlock_recipe("pm-uranium-233-reactor")
     },
     prerequisites = {"pm-advanced-magnets", "pm-decay-inators"},
     research_trigger =
