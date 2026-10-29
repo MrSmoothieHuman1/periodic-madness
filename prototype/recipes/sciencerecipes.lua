@@ -493,6 +493,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.103, 0.103}
+    },
     ingredients = 
     {
         PM.ingredient("iron-plate", 15),
@@ -516,6 +520,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.506, 0.102}
+    },
     ingredients =
     {
         PM.ingredient("pm-gold-plate", 35),
@@ -539,6 +547,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.949, 0.102}
+    },
     ingredients =
     {
         PM.ingredient("pm-titanium-plate", 60),
@@ -562,6 +574,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.161, 1, 0.102}
+    },
     ingredients =
     {
         PM.ingredient("sulfur", 80),
@@ -588,6 +604,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.102, 0.933, 1}
+    },
     ingredients =
     {
         PM.ingredient("pm-liquid-gallium", 50, "fluid"),
@@ -613,6 +633,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.102, 0.651, 1}
+    },
     main_product = "pm-liquid-alkali-metal-science",
     ingredients =
     {
@@ -637,6 +661,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.525, 0.102, 1}
+    },
     ingredients =
     {
         PM.ingredient("pm-arsenic-ore", 45),
@@ -659,6 +687,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.902, 0.102, 1}
+    },
     ingredients =
     {
         PM.ingredient("pm-calcium-ore", 160),
@@ -681,6 +713,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.102, 0.71}
+    },
     ingredients =
     {
         PM.ingredient("pm-yttrium-ore", 30),
@@ -705,6 +741,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = false,
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.729, 0.914}
+    },
     ingredients =
     {
         PM.ingredient("pm-helium-gas", 550, "fluid"),
@@ -727,6 +767,10 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = true,
+    crafting_machine_tint = 
+    {
+        primary = {1, 1, 1}
+    },
     ingredients =
     {
         PM.ingredient("pm-cerium-plate", 20),

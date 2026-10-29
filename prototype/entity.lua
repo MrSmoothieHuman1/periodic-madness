@@ -12096,7 +12096,16 @@ fluid_boxes =
             height = 384,
             line_length = 1,
             repeat_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-glass.png",
+            width = 384,
+            height = 384,
+            line_length = 1,
+            repeat_count = 64,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12105,7 +12114,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12114,7 +12123,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
         }
@@ -12129,7 +12138,16 @@ fluid_boxes =
             height = 384,
             line_length = 1,
             repeat_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-glass.png",
+            width = 384,
+            height = 384,
+            line_length = 1,
+            repeat_count = 64,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12138,7 +12156,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12147,7 +12165,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
         }
@@ -12162,7 +12180,16 @@ fluid_boxes =
             height = 384,
             line_length = 1,
             repeat_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-glass.png",
+            width = 384,
+            height = 384,
+            line_length = 1,
+            repeat_count = 64,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12171,7 +12198,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12180,7 +12207,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
         }
@@ -12195,7 +12222,16 @@ fluid_boxes =
             height = 384,
             line_length = 1,
             repeat_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
+            scale = 0.5,
+          },
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-glass.png",
+            width = 384,
+            height = 384,
+            line_length = 1,
+            repeat_count = 64,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12204,7 +12240,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
           {
@@ -12213,7 +12249,7 @@ fluid_boxes =
             height = 384,
             line_length = 8,
             frame_count = 64,
-            animation_speed = 0.65,
+            animation_speed = 0.85,
             scale = 0.5,
           },
         }
@@ -12221,7 +12257,7 @@ fluid_boxes =
   },
   working_visualisations =
   {
-      {
+       {
           apply_tint = "status",
           always_draw = true,
           north_animation =
@@ -12272,7 +12308,50 @@ fluid_boxes =
             draw_as_glow = true,
             scale = 0.5,
           },
-      }
+       },
+       {
+          apply_recipe_tint = "primary",
+          north_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-liquid.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 64,
+            scale = 0.5,
+          },
+          south_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-liquid.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 64,
+            scale = 0.5,
+          },
+          east_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-liquid.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 64,
+            scale = 0.5,
+          },
+          west_animation =
+          {
+            filename = "__periodic-madness__/graphics/entities/buildings/liquid-science-plant/liquid-science-plant-liquid.png",
+            width = 384,
+            height = 384,
+            frame_count = 1,
+            line_length = 1,
+            repeat_count = 64,
+            scale = 0.5,
+          },
+       }
   }
 },
 fluid_boxes =
