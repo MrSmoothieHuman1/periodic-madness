@@ -35,7 +35,13 @@ data:extend({
         type = "item",
         name = "pm-impure-ytterbium",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/fluids/barium-froth.png",
+        icon = "__periodic-madness__/graphics/icons/ores/impure-ytterbium.png",
+        pictures =
+        {
+          {filename = "__periodic-madness__/graphics/icons/ores/impure-ytterbium.png", size = 64, scale = 0.5},
+          {filename = "__periodic-madness__/graphics/icons/ores/impure-ytterbium-2.png", size = 64, scale = 0.45},
+          {filename = "__periodic-madness__/graphics/icons/ores/impure-ytterbium-3.png", size = 64, scale = 0.5},
+        },
         subgroup = "pm-ytterbium-la",
         order = "e",
         stack_size = 100

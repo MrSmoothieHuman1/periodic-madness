@@ -7859,7 +7859,7 @@ data:extend({
   },
 
 --anything behind this line should take double of TM/ATM/AATM science
-  {
+  --[[{
     type = "technology",
     name = "pm-asteroid-mining",
     icon_size = 256,
@@ -7889,7 +7889,7 @@ data:extend({
       },
       time = 240
     }
-  },
+  },--]]
   {
     type = "technology",
     name = "pm-beamcons",
