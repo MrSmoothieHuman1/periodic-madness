@@ -130,6 +130,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-low-ytterbium-mixture-seperation",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-ytterbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/low-ytterbium-mixture.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 8,
         categories = {"chemistry"},
@@ -156,6 +171,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-high-ytterbium-mixture-seperation",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-ytterbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/high-ytterbium-mixture.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 8,
         categories = {"chemistry"},
