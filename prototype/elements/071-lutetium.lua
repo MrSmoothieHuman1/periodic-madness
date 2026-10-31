@@ -183,6 +183,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-low-lutetium-mixture-seperation",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/lutetium-chloride.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/low-lutetium-mixture.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 12,
         categories = {"pm-washing"},
@@ -207,6 +222,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-high-lutetium-mixture-seperation",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/lutetium-chloride.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/high-lutetium-mixture.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 12,
         categories = {"pm-washing"},
