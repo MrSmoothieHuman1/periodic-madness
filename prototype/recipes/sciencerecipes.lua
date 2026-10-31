@@ -618,7 +618,6 @@ data:extend({
         PM.ingredient("pm-aluminium-plate", 30),
         PM.ingredient("pm-indium-plate", 20),
         PM.ingredient("pm-polonium-210", 10),
-        PM.ingredient("pm-trace-astatine-211", 10)
     },
     results =
     {
@@ -672,6 +671,7 @@ data:extend({
         PM.ingredient("pm-industrial-grade-silicon-ore", 30),
         PM.ingredient("pm-germanium-ore", 30),
         PM.ingredient("pm-tellurium-plate", 60),
+        PM.ingredient("pm-trace-astatine-211", 10),
         PM.ingredient("pm-boron", 140, "fluid")
     },
     results =
