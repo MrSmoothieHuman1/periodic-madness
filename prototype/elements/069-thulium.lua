@@ -21,6 +21,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-rhenium-platinum-thulium-centrifuging",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/rhenium-platinum-thulium.png",
         enabled = false,
         energy_required = 3,
         categories = {"centrifuging"},
@@ -45,6 +47,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-yttrium-thulium-centrifuging",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/yttrium-thulium.png",
         enabled = false,
         energy_required = 3,
         categories = {"centrifuging"},
@@ -69,6 +73,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-cobalt-thulium-centrifuging",
+            icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/cobalt-thulium.png",
         enabled = false,
         energy_required = 3,
         categories = {"centrifuging"},
@@ -93,6 +99,8 @@ data:extend({
     {
         type = "recipe",
         name = "pm-vanadium-thulium-centrifuging",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/recipes/vanadium-thulium.png",
         enabled = false,
         energy_required = 3,
         categories = {"centrifuging"},
