@@ -219,6 +219,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-holmium-from-holmium-fluoride",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/holmium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/holmium-fluoride.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 6,
         categories = {"chemistry"},
@@ -242,6 +257,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-holmium-from-holmium-chloride",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/holmium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/holmium-chloride.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 6,
         categories = {"chemistry"},
