@@ -7492,7 +7492,7 @@ data:extend({
     type = "technology",
     name = "pm-terbium-processing",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/terbium-processing.png",
     effects =
     {
         PM.unlock_recipe("pm-o-phenylenediamine"),
