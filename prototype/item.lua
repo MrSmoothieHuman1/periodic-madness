@@ -1984,7 +1984,7 @@ data:extend({
     type = "item",
     name = "pm-speed-beamcon-satellite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+    icon = "__periodic-madness__/graphics/icons/speed-beamcon-satellite.png",
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
@@ -2003,7 +2003,7 @@ data:extend({
     type = "item",
     name = "pm-efficiency-beamcon-satellite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/rocket-control-unit.png",
+    icon = "__periodic-madness__/graphics/icons/efficiency-beamcon-satellite.png",
     send_to_orbit_mode = "automated",
     rocket_launch_products =
     {
