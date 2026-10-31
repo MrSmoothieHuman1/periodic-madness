@@ -171,6 +171,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-terbium-chloride-to-impure-terbium",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-terbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/terbium-chloride.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 10,
         categories = {"chemistry"},
@@ -192,6 +207,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-terbium-bromide-to-impure-terbium",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-terbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/terbium-bromide.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 10,
         categories = {"chemistry"},
@@ -213,6 +243,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-terbium-hydride-to-impure-terbium",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-terbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/terbium-hydride.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 10,
         categories = {"chemistry"},
@@ -234,6 +279,21 @@ data:extend({
     {
         type = "recipe",
         name = "pm-terbium-sulfate-to-impure-terbium",
+        icons = 
+        {
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/impure-terbium.png",
+                icon_size = 64,
+                scale = 0.5,
+            },
+            {
+                icon = "__periodic-madness__/graphics/icons/ores/terbium-sulfate.png",
+                icon_size = 64,
+                shift = {8, -8},
+                draw_background = true,
+                scale = 0.33
+            },
+        },
         enabled = false,
         energy_required = 10,
         categories = {"chemistry"},
