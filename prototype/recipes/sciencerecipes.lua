@@ -613,7 +613,7 @@ data:extend({
         PM.ingredient("pm-liquid-gallium", 50, "fluid"),
         PM.ingredient("pm-thallium-plate", 15),
         PM.ingredient("pm-lead-plate", 45),
-        PM.ingredient("pm-bismuth-ore", 15),
+        PM.ingredient("pm-bismuth-ore", 12),
         PM.ingredient("pm-tin-plate", 30),
         PM.ingredient("pm-aluminium-plate", 30),
         PM.ingredient("pm-indium-plate", 20),
