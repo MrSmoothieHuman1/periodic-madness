@@ -1836,6 +1836,7 @@ data:extend({
     max_health = 450,
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
+    map_color = {127, 193, 208},
     corpse = "pm-atmospheric-condenser",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = {"pm-atmospheric-condensing"},
@@ -3077,6 +3078,7 @@ data:extend({
     minable = { mining_time = 0.4, result = "pm-science-center" },
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3, -3 }, { 3, 3 } },
+    map_color = {0, 102, 191},
     module_slots = 4,
     energy_source =
     {
@@ -10117,6 +10119,7 @@ fluid_boxes =
     max_health = 700,
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
+    map_color = {127, 193, 208},
     corpse = "pm-atmospheric-condenser",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = {"pm-atmospheric-condensing"},
@@ -12781,6 +12784,7 @@ data.raw["storage-tank"]["storage-tank"].fast_replaceable_group = "pm-storage-ta
 data.raw["container"]["steel-chest"].next_upgrade = "pm-stainless-steel-chest"
 
 data.raw["lab"]["lab"].inputs = {"automation-science-pack", "logistic-science-pack", "pm-advanced-advanced-transition-metal-science-pack" }
+data.raw["lab"]["lab"].map_color = {0, 118, 176}
 
 data.raw["solar-panel"]["solar-panel"].production = "120kW"
 data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
