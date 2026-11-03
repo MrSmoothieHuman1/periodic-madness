@@ -10,6 +10,7 @@ data:extend({
         minable = {mining_time = 1, result = "pm-hub-beacon"},
         fast_replaceable_group = "beacon",
         max_health = 550,
+        map_color = {135, 163, 185},
         corpse = "beacon-remnants",
         dying_explosion = "beacon-explosion",
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
@@ -89,6 +90,7 @@ data:extend({
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.45, result = "pm-proximity-beacon"},
+        map_color = {119, 156, 178},
         fast_replaceable_group = "beacon",
         max_health = 150,
         corpse = "beacon-remnants",
@@ -167,6 +169,7 @@ data:extend({
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.75, result = "pm-beacon-2"},
         fast_replaceable_group = "beacon",
+        map_color = {123, 141, 156},
         max_health = 400,
         corpse = "beacon-remnants",
         dying_explosion = "beacon-explosion",
@@ -244,6 +247,7 @@ data:extend({
         icon = "__periodic-madness__/graphics/icons/buildings/coil-heater.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.25, result = "pm-coil-heater"},
+        map_color = {141, 96, 96},
         max_health = 400,
         corpse = "beacon-remnants",
         dying_explosion = "beacon-explosion",
@@ -380,6 +384,7 @@ data:extend({
         icon = "__base__/graphics/icons/beacon.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.45, result = "pm-beamcon-platform"},
+        map_color = {96, 121, 146},
         fast_replaceable_group = "beacon",
         max_health = 150,
         corpse = "beacon-remnants",
@@ -597,6 +602,7 @@ data:extend({
 
 data.raw["beacon"]["beacon"].distribution_effectivity = 1
 data.raw["beacon"]["beacon"].module_slots = 3
+data.raw["beacon"]["beacon"].map_color = {123, 141, 156}
 data.raw["beacon"]["beacon"].minable = {mining_time = 0.5, result = "beacon"}
 data.raw["beacon"]["beacon"].icons_positioning =
   {

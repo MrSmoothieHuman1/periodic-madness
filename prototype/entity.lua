@@ -11902,6 +11902,17 @@ fluid_boxes =
                 animation_speed = 0.43,
                 scale = 0.5
             },
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/reverberatory-furnace/reverberatory-furnace-shadow.png",
+                width = 256,
+                height = 256,
+                frame_count = 1,
+                repeat_count = 64,
+                animation_speed = 0.43,
+                draw_as_shadow = true,
+                shift = util.by_pixel(32, 0),
+                scale = 0.5
+            },
         }
     },
     south =
@@ -11948,6 +11959,22 @@ fluid_boxes =
                 scale = 0.5
             },
         }
+    },
+  },
+  working_visualisations =
+  {
+    {
+      fadeout = true,
+      animation =
+      {
+        filename = "__periodic-madness__/graphics/entities/buildings/reverberatory-furnace/reverberatory-furnace-on.png",
+        width = 256,
+        height = 256,
+        line_count = 8,
+        line_length = 64,
+        scale = 0.5,
+        animation_speed = 0.46
+      }
     },
   },
   },
