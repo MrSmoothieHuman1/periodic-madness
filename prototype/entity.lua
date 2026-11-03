@@ -5788,71 +5788,152 @@ data:extend({
     },
     collision_box = { { -1.9, -1.9 }, { 1.9, 1.9 } },
     selection_box = { { -2, -2 }, { 2, 2 } },
-    horizontal_animation =
+    pictures =
     {
-        layers =
+        north = 
         {
+            animation = 
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
-                width = 256,
-                height = 256,
-                frame_count = 1,
-                repeat_count = 48,
-                animation_speed = 0.5,
-                scale = 0.5,
-            },
-            {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
-                width = 256,
-                height = 256,
-                frame_count = 48,
-                line_length = 8,
-                scale = 0.5,
-            },
-            {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
-                width = 256,
-                height = 256,
-                frame_count = 1,
-                repeat_count = 48,
-                draw_as_shadow = true,
-                shift = util.by_pixel(104, 0),
-                scale = 0.5,
-            },
-        }
-    },
-    vertical_animation =
-    {
-        layers =
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        animation_speed = 0.5,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 48,
+                        line_length = 8,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        draw_as_shadow = true,
+                        shift = util.by_pixel(104, 0),
+                        scale = 0.5,
+                    },
+                }
+            }
+        },
+        south = 
         {
+            animation = 
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
-                width = 256,
-                height = 256,
-                frame_count = 1,
-                repeat_count = 48,
-                animation_speed = 0.5,
-                scale = 0.5,
-            },
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        animation_speed = 0.5,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 48,
+                        line_length = 8,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        draw_as_shadow = true,
+                        shift = util.by_pixel(104, 0),
+                        scale = 0.5,
+                    },
+                }
+            }
+        },
+        east = 
+        {
+            animation = 
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
-                width = 256,
-                height = 256,
-                frame_count = 48,
-                line_length = 8,
-                scale = 0.5,
-            },
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        animation_speed = 0.5,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 48,
+                        line_length = 8,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        draw_as_shadow = true,
+                        shift = util.by_pixel(104, 0),
+                        scale = 0.5,
+                    },
+                }
+            }
+        },
+        west = 
+        {
+            animation = 
             {
-                filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
-                width = 256,
-                height = 256,
-                frame_count = 1,
-                repeat_count = 48,
-                draw_as_shadow = true,
-                shift = util.by_pixel(104, 0),
-                scale = 0.5,
-            },
-        }
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        animation_speed = 0.5,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-spinnys.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 48,
+                        line_length = 8,
+                        scale = 0.5,
+                    },
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-shadow.png",
+                        width = 256,
+                        height = 256,
+                        frame_count = 1,
+                        repeat_count = 48,
+                        draw_as_shadow = true,
+                        shift = util.by_pixel(104, 0),
+                        scale = 0.5,
+                    },
+                }
+            }
+        },
     },
     energy_source =
     {
