@@ -407,15 +407,27 @@ data:extend({
                 always_draw = true,
                 animation =
                 {
-                  filename = "__periodic-madness__/graphics/entities/buildings/beamcon-platform/beamcon-platform.png",
-                  width = 256,
-                  height = 275,
-                  shift = util.by_pixel(0, -6),
-                  scale = 0.5,
+                    layers = 
+                    {
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/beamcon-platform/beamcon-platform.png",
+                            width = 256,
+                            height = 275,
+                            shift = util.by_pixel(0, -6),
+                            scale = 0.5,
+                        },
+                        {
+                            filename = "__periodic-madness__/graphics/entities/buildings/beamcon-platform/beamcon-platform-shadow.png",
+                            width = 256,
+                            height = 275,
+                            shift = util.by_pixel(19, -6),
+                            draw_as_shadow = true,
+                            scale = 0.5,
+                        },
+                    }
                 }
               },
-            },
-            module_visualisations =
+            --[[module_visualisations =
             {
               {
               art_style = "pm-heat-coil",
@@ -451,7 +463,7 @@ data:extend({
                   },
                 }
               }
-            }
+            }--]]
           }
         },
         radius_visualisation_picture =
