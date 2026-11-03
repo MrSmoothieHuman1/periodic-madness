@@ -7894,7 +7894,7 @@ data:extend({
     type = "technology",
     name = "pm-beamcons",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon = "__periodic-madness__/graphics/technology/beamcons.png",
     effects =
     {
         PM.unlock_recipe("pm-speed-beamcon-satellite"),
