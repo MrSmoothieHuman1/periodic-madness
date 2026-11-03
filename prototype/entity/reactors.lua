@@ -389,11 +389,12 @@ data:extend({
               scale = 0.5,
             },
             {
-              filename = "__periodic-madness__/graphics/entities/buildings/polonium-reactor/polonium-reactor-shadow.png",
-              width = 320,
-              height = 320,
+              filename = "__periodic-madness__/graphics/entities/buildings/thorium-salt-reactor/thorium-salt-reactor-shadow.png",
+              width = 384,
+              height = 424,
+              frame_count = 1,
               scale = 0.5,
-              shift = { 1.625, 0 },
+              shift = util.by_pixel(96, 0),
               draw_as_shadow = true
             }
           }
