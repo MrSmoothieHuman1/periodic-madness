@@ -121,6 +121,7 @@ data:extend({
     subgroup = "pm-polonium-ptm",
     order = "b",
     allow_productivity = true,
+    main_product = "pm-polonium-210",
     ingredients =
     {
       PM.ingredient("pm-bismuth-210", 5)

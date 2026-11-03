@@ -2025,6 +2025,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
     subgroup = "module",
     order = "e",
+    place_result = "pm-beamcon-platform",
     stack_size = 5,
   },
   {

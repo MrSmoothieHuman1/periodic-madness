@@ -5558,6 +5558,7 @@ data:extend({
     energy_required = 6,
     categories = {"centrifuging"},
     allow_productivity = true,
+    main_product = "pm-low-seperated-monazite",
     ingredients =
     {
         PM.ingredient("pm-crushed-monazite", 16),
@@ -5590,6 +5591,7 @@ data:extend({
     energy_required = 8,
     categories = {"centrifuging"},
     allow_productivity = true,
+    main_product = "pm-medium-seperated-monazite",
     ingredients =
     {
         PM.ingredient("pm-low-seperated-monazite", 15),
@@ -5621,6 +5623,7 @@ data:extend({
     energy_required = 10,
     categories = {"centrifuging"},
     allow_productivity = true,
+    main_product = "pm-high-seperated-monazite",
     ingredients =
     {
         PM.ingredient("pm-medium-seperated-monazite", 14),
@@ -5652,6 +5655,7 @@ data:extend({
     energy_required = 12,
     categories = {"centrifuging"},
     allow_productivity = true,
+    main_product = "pm-pure-monazite",
     ingredients =
     {
         PM.ingredient("pm-high-seperated-monazite", 12),
