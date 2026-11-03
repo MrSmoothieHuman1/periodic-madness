@@ -5797,7 +5797,7 @@ data:extend({
                 layers =
                 {
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
                         width = 256,
                         height = 256,
                         frame_count = 1,
@@ -5833,7 +5833,7 @@ data:extend({
                 layers =
                 {
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
                         width = 256,
                         height = 256,
                         frame_count = 1,
@@ -5869,7 +5869,7 @@ data:extend({
                 layers =
                 {
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
                         width = 256,
                         height = 256,
                         frame_count = 1,
@@ -5905,7 +5905,7 @@ data:extend({
                 layers =
                 {
                     {
-                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-vertical.png",
+                        filename = "__periodic-madness__/graphics/entities/buildings/fluid-generator/fluid-generator-horizontal.png",
                         width = 256,
                         height = 256,
                         frame_count = 1,
