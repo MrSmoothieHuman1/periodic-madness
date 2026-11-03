@@ -131,6 +131,8 @@ data:extend({
         enabled = false,
         energy_required = 8,
         categories = {"pm-acids"},
+        subgroup = "pm-terbium-la",
+        order = "ba",
         allow_productivity = true,
         ingredients =
         {

@@ -2066,6 +2066,8 @@ data:extend({
     name = "pm-cerium-sulfide-red",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/cerium-sulfide-red.png",
+    subgroup = "pm-cadmium-tm",
+    order = "da",
     stack_size = 50
   },
   {
@@ -2073,6 +2075,8 @@ data:extend({
     name = "pm-phthalo-green",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/phthalo-green.png",
+    subgroup = "pm-chrominum-tm",
+    order = "ca",
     stack_size = 50
   },
   {
@@ -2080,6 +2084,8 @@ data:extend({
     name = "pm-YInMn-blue",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/YInMn-blue.png",
+    subgroup = "pm-yttrium-tm",
+    order = "x",
     stack_size = 50
   },
   {

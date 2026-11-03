@@ -356,7 +356,7 @@ local accelerator = {
 	map_color = {0.655, 0.655, 0.655},
 	alert_icon_shift = util.by_pixel(0, -12),
 	crafting_speed = 1,
-	crafting_categories = { "crafting" },
+	--crafting_categories = { "crafting" },
 	module_slots = 6,
 	allowed_effects = PM.all_effects(),
 	icons_positioning =
@@ -397,9 +397,9 @@ local accelerator = {
 			layers =
 			{
 				{
-					filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/30-particle-accelerator.png",
-					width = 1920,
-					height = 1920,
+					filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/nothing-to-see-here.png",
+					width = 256,
+					height = 256,
 					scale = 0.5
 				},
 			}
