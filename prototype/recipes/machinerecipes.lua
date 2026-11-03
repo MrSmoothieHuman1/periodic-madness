@@ -2052,6 +2052,26 @@ data:extend({
         PM.product("pm-uranium-233-reactor"):amount(1):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-reverberatory-furnace",
+    enabled = false,
+    energy_required = 4,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("electric-furnace", 1),
+        PM.ingredient("pm-corrosion-resistant-tubing", 12),
+        PM.ingredient("pm-molten-framing", 16),
+        PM.ingredient("processing-unit", 2),
+        PM.ingredient("pm-heavy-lubricant", 2.5, "fluid"),
+        PM.ingredient("pm-liquid-silicone", 2.5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-reverberatory-furnace"):amount(1):done()
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

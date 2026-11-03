@@ -11859,7 +11859,7 @@ fluid_boxes =
 {
   type = "assembling-machine",
   name = "pm-reverberatory-furnace",
-  icon = "__periodic-madness__/graphics/icons/buildings/blast-furnace.png",
+  icon = "__periodic-madness__/graphics/icons/buildings/reverberatory-furnace.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable"},
   minable = { mining_time = 0.5, result = "pm-blast-furnace" },

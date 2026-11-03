@@ -1038,7 +1038,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/buildings/blast-furnace.png",
     subgroup = "smelting-machine",
-    order = "g",
+    order = "j",
     place_result = "pm-blast-furnace",
     stack_size = 100
   },
@@ -1124,6 +1124,16 @@ data:extend({
     order = "e",
     place_result = "pm-uranium-233-reactor",
     stack_size = 5,
+  },
+  {
+    type = "item",
+    name = "pm-reverberatory-furnace",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/reverberatory-furnace.png",
+    subgroup = "smelting-machine",
+    order = "k",
+    place_result = "pm-reverberatory-furnace",
+    stack_size = 100
   },
 })
 

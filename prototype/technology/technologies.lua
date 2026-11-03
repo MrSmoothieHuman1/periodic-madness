@@ -3636,6 +3636,7 @@ data:extend({
       PM.unlock_recipe("pm-heat-furnace"),
       PM.unlock_recipe("pm-electric-furnace-2"),
       PM.unlock_recipe("pm-blast-furnace"),
+      PM.unlock_recipe("pm-reverberatory-furnace"),
       PM.unlock_recipe("heat-pipe"),
       PM.unlock_recipe("pm-heat-pipe-3"),
     },
