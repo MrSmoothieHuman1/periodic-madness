@@ -8548,7 +8548,36 @@ data:extend({
       time = 240
     }
   },
+  {
+    type = "technology",
+    name = "pm-actinide-science-pack",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/actinide-science-pack.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-lanthanide-science-pack"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 240
+    }
+  },
 --MARK: AC science
+
 
   {
     type = "technology",
