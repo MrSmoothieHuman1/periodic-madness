@@ -12547,7 +12547,7 @@ fluid_boxes =
     name = "pm-superconductive-substation",
     icon = "__periodic-madness__/graphics/icons/buildings/superconductive-substation.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.2, result = "substation"},
+    minable = {mining_time = 0.2, result = "pm-superconductive-substation"},
     fast_replaceable_group = "substation",
     max_health = 800,
     corpse = "substation-remnants",

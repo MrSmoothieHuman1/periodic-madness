@@ -494,7 +494,7 @@ data:extend({
     type = "autoplace-control",
     category = "resource",
     name = "pm-lanthanum-ore",
-    localised_name = {"","[entity=pm-post-transition-metals] ", {"entity-name.pm-post-transition-metals"}},
+    localised_name = {"","[entity=pm-lanthanum-ore] ", {"entity-name.pm-lanthanum-ore"}},
     richness = true,
     order = "h"
 	}--[[@as data.AutoplaceControl]],
@@ -502,7 +502,7 @@ data:extend({
     type = "resource",
     icon_size = 64,
     name = "pm-lanthanum-ore",
-    icon = "__periodic-madness__/graphics/icons/ores/post-transition-metals-icon.png",
+    icon = "__periodic-madness__/graphics/icons/ores/lanthanum-ore.png",
     flags = {"placeable-neutral"},
     order= "c",
     map_color = {r=0.5, g=0.84, b=1},
