@@ -148,7 +148,7 @@ data:extend({
     type = "technology",
     name = "pm-fluid-integrated-circuit-molding",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/fluid-integrated-circuit-molding.png",
+    icon = "__periodic-madness__/graphics/technology/fluid-resistant-integrated-circuit-molding.png",
     effects =
     {
       PM.unlock_recipe("pm-fluid-integrated-circuit-pressing"),
