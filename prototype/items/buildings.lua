@@ -1055,7 +1055,7 @@ data:extend({
   {
     type = "item",
     name = "pm-advanced-steam-turbine",
-    icon = "__base__/graphics/icons/steam-turbine.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/advanced-steam-turbine.png",
     subgroup = "energy",
     order = "f[nuclear-energy]-d[steam-turbine]",
     inventory_move_sound = item_sounds.steam_inventory_move,

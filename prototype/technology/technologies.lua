@@ -5503,7 +5503,7 @@ data:extend({
     type = "technology",
     name = "pm-advanced-steam-turbine",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/automation-4.png",
+    icon = "__periodic-madness__/graphics/technology/advanced-steam-turbine.png",
     effects =
     {
       PM.unlock_recipe("pm-advanced-steam-turbine")
