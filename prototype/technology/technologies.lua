@@ -688,7 +688,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/refinery-gases-recipes.png",
     effects =
     {
-      PM.unlock_recipe("pm-refinery-gases-refining")
+      PM.unlock_recipe("pm-refinery-gases-refining"),
     },
     prerequisites = {"oil-processing"},
     research_trigger =
@@ -825,6 +825,7 @@ data:extend({
     effects =
     {
       PM.unlock_recipe("pm-butene-cracking"),
+      PM.unlock_recipe("pm-butene-to-butane"),
       PM.unlock_recipe("pm-ethylene-polymerisation"),
       PM.unlock_recipe("pm-polyethylene-plastic")
     },
