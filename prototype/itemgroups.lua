@@ -166,6 +166,10 @@ data:extend({
     type = "recipe-category",
     name = "pm-liquid-science"
   },
+  {
+    type = "recipe-category",
+    name = "ENOUGHISNEVER"
+  },
 
   -- For the consumption of reactor coolant
 	{
