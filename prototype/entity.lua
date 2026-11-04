@@ -8865,7 +8865,7 @@ fluid_boxes =
     },
     energy_usage = "450kW",
     module_slots = 6,
-    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"}
+    allowed_effects = {"consumption", "speed"}
   },
   {
     type = "assembling-machine",

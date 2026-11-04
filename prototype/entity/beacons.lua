@@ -18,6 +18,7 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_effects = {"consumption", "speed", "pollution"},
+        allowed_module_categories = {"speed", "productivity", "efficiency"},
         graphics_set = require("prototype.entity.beacon-graphics.hub-beacon-graphics"),
         radius_visualisation_picture =
         {
@@ -100,6 +101,7 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_effects = {"consumption", "speed", "pollution"},
+        allowed_module_categories = {"speed", "productivity", "efficiency"},
         graphics_set = require("prototype.entity.beacon-graphics.proximity-beacon-graphics"),
         radius_visualisation_picture =
         {
@@ -178,6 +180,7 @@ data:extend({
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.7,
         allowed_effects = {"consumption", "speed", "pollution"},
+        allowed_module_categories = {"speed", "productivity", "efficiency"},
         graphics_set = require("prototype.entity.beacon-graphics.beacon-2-graphics"),
         radius_visualisation_picture =
         {
@@ -496,8 +499,8 @@ data:extend({
           },
           max_sounds_per_prototype = 3
         },
-        energy_usage = "1MW",
-        distribution_effectivity = 0.25,
+        energy_usage = "2MW",
+        distribution_effectivity = 25,
         distribution_effectivity_bonus_per_quality_level = 0.25,
         profile =
         {
@@ -508,7 +511,7 @@ data:extend({
         module_slots = 1,
         icons_positioning =
         {
-          {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 2}
+          {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 2, scale = 0.75}
         },
         water_reflection =
         {
@@ -604,6 +607,7 @@ data.raw["beacon"]["beacon"].distribution_effectivity = 1
 data.raw["beacon"]["beacon"].module_slots = 3
 data.raw["beacon"]["beacon"].map_color = {123, 141, 156}
 data.raw["beacon"]["beacon"].minable = {mining_time = 0.5, result = "beacon"}
+data.raw["beacon"]["beacon"].allowed_module_categories = {"speed", "productivity", "efficiency"}
 data.raw["beacon"]["beacon"].icons_positioning =
   {
     {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 3}
