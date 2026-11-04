@@ -1135,6 +1135,16 @@ data:extend({
     place_result = "pm-reverberatory-furnace",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "pm-superconductive-substation",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/superconductive-substation.png",
+    subgroup = "energy-pipe-distribution",
+    order = "a[energy]-da[superconductive-substation]",
+    place_result = "pm-superconductive-substation",
+    stack_size = 50,
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

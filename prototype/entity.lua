@@ -11430,7 +11430,7 @@ fluid_boxes =
     {
     type = "generator",
     name = "pm-advanced-steam-turbine",
-    icon = "__base__/graphics/icons/steam-turbine.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/advanced-steam-turbine.png",
     flags = {"placeable-neutral","player-creation"},
     minable = {mining_time = 0.66, result = "pm-advanced-steam-turbine"},
     max_health = 750,
@@ -11943,7 +11943,7 @@ fluid_boxes =
   icon = "__periodic-madness__/graphics/icons/buildings/reverberatory-furnace.png",
   icon_size = 64,
   flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable"},
-  minable = { mining_time = 0.5, result = "pm-blast-furnace" },
+  minable = { mining_time = 0.5, result = "pm-reverberatory-furnace" },
   max_health = 800,
   corpse = "pm-blast-furnace",
   dying_explosion = "assembling-machine-1-explosion",
@@ -12545,7 +12545,7 @@ fluid_boxes =
   {
     type = "electric-pole",
     name = "pm-superconductive-substation",
-    icon = "__base__/graphics/icons/substation.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/superconductive-substation.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.2, result = "substation"},
     fast_replaceable_group = "substation",

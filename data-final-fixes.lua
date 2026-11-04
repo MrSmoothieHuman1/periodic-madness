@@ -188,7 +188,9 @@ local ignored_entities = {
 	["pm-electric-coke-oven"] = true,
     ["pm-electronic-laser-etcher"] = true,
     ["pm-cryogenic-plant"] = true,
-    ["pm-blast-furnace"] = true
+    ["pm-blast-furnace"] = true,
+    ["pm-reverberatory-furnace"] = true,
+    ["pm-beamcon-platform"] = true,
 }
 
 for _, entity_type in pairs{

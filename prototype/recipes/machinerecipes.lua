@@ -2072,6 +2072,25 @@ data:extend({
         PM.product("pm-reverberatory-furnace"):amount(1):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-superconductive-substation",
+    enabled = false,
+    energy_required = 1.5,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("substation", 1),
+        PM.ingredient("pm-superconducting-ReBCO", 2),
+        PM.ingredient("refined-concrete", 5),
+        PM.ingredient("pm-fluid-circuit", 3),
+        PM.ingredient("pm-light-coolant", 2.5, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-superconductive-substation"):amount(1):done()
+    }
+  }
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

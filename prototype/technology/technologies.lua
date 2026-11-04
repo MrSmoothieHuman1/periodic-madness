@@ -8522,9 +8522,10 @@ data:extend({
     type = "technology",
     name = "pm-electric-energy-distribution-3",
     icon_size = 256,
-    icon = "__base__/graphics/technology/electric-energy-distribution-2.png",
+    icon = "__periodic-madness__/graphics/technology/electric-energy-distribution-3.png",
     effects =
     {
+        PM.unlock_recipe("pm-superconductive-substation")
     },
     prerequisites = {"pm-superconductors", "electric-energy-distribution-2"},
     unit =

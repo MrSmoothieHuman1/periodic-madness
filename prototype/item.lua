@@ -2022,7 +2022,7 @@ data:extend({
     type = "item",
     name = "pm-beamcon-platform",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/buildings/hub-beacon.png",
+    icon = "__periodic-madness__/graphics/icons/buildings/beamcon-platform.png",
     subgroup = "module",
     order = "e",
     place_result = "pm-beamcon-platform",

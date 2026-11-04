@@ -381,7 +381,7 @@ data:extend({
     {
         type = "beacon",
         name = "pm-beamcon-platform",
-        icon = "__base__/graphics/icons/beacon.png",
+        icon = "__periodic-madness__/graphics/icons/buildings/beamcon-platform.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 0.45, result = "pm-beamcon-platform"},
         map_color = {96, 121, 146},
