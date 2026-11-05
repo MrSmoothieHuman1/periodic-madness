@@ -1,6 +1,40 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-11-05
+  The [placeholder] Update:
+
+  Additions:
+    - Added Actinium.
+    - Added Neptunium.
+    - Added Plutonium.
+    - Added Americium.
+    - Added Curium.
+    - Added Berkelium.
+    - Added Californium.
+    - Added Einsteinium.
+    - Added Ferminium.
+    - Added Mendelevium.
+    - Added Nobelium.
+    - Added Lawrencium.
+    - Added the final major science pack, the actinide pack.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.9.001
+Date: 2025-11-04
+  The GOOOOOOOOOD EVENING VIETNAMMMMM Update:
+
+  Changes:
+    - Began updating integrated circuit mold technology icons, since this is just a copy of a gitPM build they arent all done :P
+    - Changed methanol, carbon monoxide, both lubricants and hydrofluoric acid to be barrelable, courtesy of Acqua forcing my hand.
+
+  Fixes:
+    - Fixed beamcons not actually distributing their effects. Now they can be placed in both beamcon platforms and machine, but are functionally useless outside of the platform.
+    - Fixed the Liquid science plant returning a mixing tank 2 when picked up.
+    - Fixed decay-inators not taking prod modules.
+    - Fixed butene > butane recipe being locked. It's now unlocked in the basic PE plastic technology.
+---------------------------------------------------------------------------------------------------
 Version: 0.9.000
-Date: 2025-12-19
+Date: 2026-11-03
   The OH GOD OH CHRIST HOW IS PM NEARLY DONE Update:
 
   Additions:
