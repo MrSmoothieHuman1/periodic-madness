@@ -29,6 +29,29 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-hydrogen-flouride",
+    subgroup = "pm-flourine-rnm",
+    order = "a",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-flouride.png",
+    default_temperature = 15,
+    base_color = {0.098, 0.922, 0.835},
+    flow_color = {0.098, 0.922, 0.835},
+  },
+  {
+    type = "fluid",
+    name = "pm-hydroflouric-acid",
+    subgroup = "pm-flourine-rnm",
+    order = "b",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/hydroflouric-acid.png",
+    default_temperature = 15,
+    base_color = {0.369, 0.78, 0.922},
+    flow_color = {0.369, 0.78, 0.922},
+  },
+
+  {
     type = "recipe",
     name = "pm-flourite-crystallisation",
     enabled = false,

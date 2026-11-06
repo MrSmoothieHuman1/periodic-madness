@@ -1245,6 +1245,7 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     next_upgrade = "pm-washing-plant-2",
     fast_replaceable_group = "pm-washers",
+   use_mirroring = true,
     resistances =
     {
       {
@@ -1468,6 +1469,7 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_categories = { "pm-fractional-distillation" },
     crafting_speed = 1,
+    use_mirroring = true,
     energy_source =
     {
       type = "electric",
@@ -1844,6 +1846,7 @@ data:extend({
     allowed_effects = PM.all_effects_but("productivity"),
     crafting_speed = 1,
     icon_draw_specification = {shift = {0, -0.36}},
+    use_mirroring = true,
     energy_source =
     {
       type = "electric",
@@ -2131,6 +2134,7 @@ data:extend({
     allowed_effects = PM.all_effects(),
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 2,
     circuit_connector = circuit_connector_definitions["catalyst-cracker"],
+    use_mirroring = true,
     energy_source =
     {
       type = "electric",
@@ -2212,7 +2216,7 @@ data:extend({
     max_health = 125,
     corpse = "pm-evaporator",
     dying_explosion = "assembling-machine-1-explosion",
-    uses_mirroring = true,
+    use_mirroring = true,
     fast_replaceable_group = "pm-evaporators",
     next_upgrade = "pm-evaporator-2",
     resistances =
@@ -2305,7 +2309,7 @@ data:extend({
     next_upgrade = "pm-molten-inator-2",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
-    uses_mirroring = true,
+    use_mirroring = true,
     working_sound =
     {
       sound =
@@ -2405,7 +2409,7 @@ data:extend({
     next_upgrade = "pm-cold-inator-2",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
-    uses_mirroring = true,
+    use_mirroring = true,
     working_sound =
     {
       sound =
@@ -2507,7 +2511,7 @@ data:extend({
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
     module_slots = 1,
-    uses_mirroring = true,
+    use_mirroring = true,
     working_sound =
     {
       sound =
@@ -2608,7 +2612,7 @@ data:extend({
     next_upgrade = "pm-cold-inator-3",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["-inator"],
-    uses_mirroring = true,
+    use_mirroring = true,
     working_sound =
     {
       sound =
@@ -3270,6 +3274,7 @@ data:extend({
     crafting_categories = {"pm-CO2-nullifying"},
     source_inventory_size = 1,
     result_inventory_size = 1,
+    use_mirroring = true,
     fluid_boxes =
     {
       {
@@ -3542,6 +3547,7 @@ data:extend({
     corpse = "pm-washing-plant-2",
     dying_explosion = "assembling-machine-1-explosion",
     fast_replaceable_group = "pm-washers",
+    use_mirroring = true,
     resistances =
     {
       {
@@ -3714,6 +3720,7 @@ data:extend({
     allowed_effects = PM.all_effects(),
     crafting_speed = 1,
     energy_usage = "650kW",
+    use_mirroring = true,
     energy_source =
     {
       type = "electric",
@@ -3794,6 +3801,7 @@ data:extend({
     crafting_speed = 1.25,
     source_inventory_size = 1,
     result_inventory_size = 1,
+    use_mirroring = true,
     energy_source =
     {
       type = "fluid",
@@ -4035,6 +4043,7 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     fast_replaceable_group = "pm-electrolysis",
     next_upgrade = "pm-electrolysis-plant-2",
+    use_mirroring = true,
     resistances =
     {
       {
@@ -4153,6 +4162,7 @@ data:extend({
     energy_usage = "200kW",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
     circuit_connector = circuit_connector_definitions["crystallizer"],
+    use_mirroring = true,
     graphics_set = 
   {
     animation =
@@ -4327,6 +4337,7 @@ data:extend({
     energy_usage = "800kW",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["cyclotron"],
+    use_mirroring = true,
     graphics_set =
     {
       animation =
@@ -4415,6 +4426,7 @@ data:extend({
     energy_usage = "800kW",
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["burn-inator"],
+    use_mirroring = true,
     energy_source =
     {
       type = "electric",
@@ -4557,7 +4569,7 @@ data:extend({
     dying_explosion = "assembling-machine-1-explosion",
     allowed_effects = PM.all_effects(),
     module_slots = 2,
-    uses_mirroring = true,
+    use_mirroring = true,
     fast_replaceable_group = "pm-evaporators",
     next_upgrade = "pm-evaporator-2",
     resistances =
@@ -4658,6 +4670,7 @@ data:extend({
     selection_box = { { -3, -3 }, { 3, 3 } },
     allowed_effects = PM.all_effects(),
     module_slots = 2,
+    use_mirroring = true,
     graphics_set = 
   {
     animation =
@@ -4755,6 +4768,7 @@ data:extend({
     corpse = "pm-electrolysis-plant-2",
     dying_explosion = "assembling-machine-1-explosion",
     fast_replaceable_group = "pm-electrolysis",
+    use_mirroring = true,
     resistances =
     {
       {
@@ -4982,6 +4996,7 @@ data:extend({
     allowed_effects = PM.all_effects(),
     circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
     circuit_connector = circuit_connector_definitions["chemical-plant"],
+    use_mirroring = true,
     graphics_set = 
     {
     animation = make_4way_animation_from_spritesheet({
@@ -6977,7 +6992,7 @@ data:extend({
   fast_replaceable_group = "pm-molteninator",
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["-inator"],
-  uses_mirroring = true,
+  use_mirroring = true,
   working_sound =
   {
     sound =
@@ -7093,7 +7108,7 @@ data:extend({
   next_upgrade = "pm-cold-inator-3",
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["-inator"],
-  uses_mirroring = true,
+  use_mirroring = true,
   working_sound =
   {
     sound =
@@ -7206,6 +7221,7 @@ data:extend({
   circuit_connector = circuit_connector_definitions["mixing-tank"],
   fast_replaceable_group = "pm-mixing-tanks",
   next_upgrade = "pm-mixing-tank-2",
+ use_mirroring = true,
   energy_source =
   {
     type = "electric",
@@ -7625,6 +7641,7 @@ fluid_boxes =
   circuit_connector = circuit_connector_definitions["mixing-tank"],
   fast_replaceable_group = "pm-mixing-tanks",
   next_upgrade = "pm-mixing-tank-3",
+ use_mirroring = true,
   energy_source =
   {
     type = "electric",
@@ -8413,6 +8430,7 @@ fluid_boxes =
   corpse = "assembling-machine-1-remnants",
   dying_explosion = "assembling-machine-1-explosion",
   fast_replaceable_group = "pm-coolers",
+  use_mirroring = true,
   resistances =
   {
     {
@@ -8596,9 +8614,10 @@ fluid_boxes =
   flags = { "placeable-neutral", "placeable-player", "player-creation" },
   minable = { mining_time = 0.6, result = "pm-washing-plant-3" },
   max_health = 850,
-  corpse = "pm-washing-plant-2",
+  corpse = "pm-washing-plant-3",
   dying_explosion = "assembling-machine-1-explosion",
   fast_replaceable_group = "pm-washers",
+  use_mirroring = true,
   resistances =
   {
     {
@@ -9549,6 +9568,7 @@ fluid_boxes =
   alert_icon_shift = util.by_pixel(0, -12),
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
+ use_mirroring = true,
   graphics_set =
 {
   animation =
@@ -10085,7 +10105,7 @@ fluid_boxes =
     impact_categories = {"metal"},
     corpse = "pm-geothermal-generator",
     dying_explosion = "assembling-machine-1-explosion",
-    uses_mirroring = true,
+    use_mirroring = true,
     -- alert_icon_shift = util.by_pixel(0, -12),
     resistances =
     {
@@ -10201,13 +10221,14 @@ fluid_boxes =
     collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
     selection_box = { { -2.4 + -0.1, -2.4 + -0.1 }, { 2.4 + 0.1, 2.4 + 0.1 } },
     map_color = {127, 193, 208},
-    corpse = "pm-atmospheric-condenser",
+    corpse = "pm-atmospheric-condenser-2",
     dying_explosion = "assembling-machine-1-explosion",
     crafting_categories = {"pm-atmospheric-condensing"},
     module_slots = 4,
     allowed_effects = PM.all_effects_but("productivity"),
     crafting_speed = 2,
     icon_draw_specification = {shift = {0, -0.36}},
+    use_mirroring = true,
     energy_source =
     {
       type = "electric",
@@ -10498,6 +10519,7 @@ fluid_boxes =
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["mixing-tank"],
   fast_replaceable_group = "pm-mixing-tanks",
+ use_mirroring = true,
   energy_source =
   {
     type = "electric",
@@ -10905,8 +10927,9 @@ fluid_boxes =
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.33, result = "pm-alpha-inator" },
     max_health = 800,
-    corpse = "pm-electronic-laser-etcher",
+    corpse = "pm-alpha-inator",
     dying_explosion = "assembling-machine-1-explosion",
+    use_mirroring = true,
     resistances =
     {
       {
@@ -11000,8 +11023,9 @@ fluid_boxes =
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.33, result = "pm-beta-inator" },
     max_health = 800,
-    corpse = "pm-electronic-laser-etcher",
+    corpse = "pm-beta-inator",
     dying_explosion = "assembling-machine-1-explosion",
+    use_mirroring = true,
     resistances =
     {
       {
@@ -11102,7 +11126,7 @@ fluid_boxes =
     module_slots = 8,
     allowed_effects = PM.all_effects(),
     allowed_module_categories = {"pm-heat-pumps"},
-    uses_mirroring = true,
+    use_mirroring = true,
     icons_positioning = 
     {
       {inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
@@ -11607,7 +11631,7 @@ fluid_boxes =
   selection_box = { { -2, -2 }, { 2, 2 } },
   alert_icon_shift = util.by_pixel(0, -12),
   icon_draw_specification = {shift = {0, -0.5}, scale = 1, scale_for_many = 0.5, render_layer = "entity-info-icon"},
-  --forced_symmetry = "horizontal", graphics break, not sure what to do about it
+  --use_mirroring = true, needs new graphics
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
   graphics_set =
@@ -11964,7 +11988,7 @@ fluid_boxes =
   icon_draw_specification = {shift = {0, -0.5}, scale = 1, scale_for_many = 0.5, render_layer = "entity-info-icon"},
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance * 1.5,
   circuit_connector = circuit_connector_definitions["assembling-machine"],
-  uses_mirroring = true,
+  use_mirroring = true,
   graphics_set =
   {
   status_colors = pm_diode_status_colors(),
@@ -12185,6 +12209,7 @@ fluid_boxes =
   crafting_speed = 0.5,
   circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
   circuit_connector = circuit_connector_definitions["mixing-tank"],
+ use_mirroring = true,
   energy_source =
   {
     type = "electric",

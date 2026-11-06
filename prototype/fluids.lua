@@ -234,7 +234,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0, g = 0.3, b = 0},
     flow_color = {r = 0, g = 0.3, b = 0},
-    auto_barrel = false
   },
   {
     type = "fluid",
@@ -871,30 +870,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-hydrogen-flouride",
-    subgroup = "pm-flourine-rnm",
-    order = "a",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/hydrogen-flouride.png",
-    default_temperature = 15,
-    base_color = {0.098, 0.922, 0.835},
-    flow_color = {0.098, 0.922, 0.835},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-hydroflouric-acid",
-    subgroup = "pm-flourine-rnm",
-    order = "b",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/hydroflouric-acid.png",
-    default_temperature = 15,
-    base_color = {0.369, 0.78, 0.922},
-    flow_color = {0.369, 0.78, 0.922},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-plaster-of-nauvis",
     subgroup = "pm-plastic-science-process",
     order = "A",
@@ -971,7 +946,6 @@ data:extend({
     subgroup = "pm-carbon-rnm",
     order = "c",
     default_temperature = 15,
-    auto_barrel = false,
     base_color = {r = 0.1, g = 0.1, b = 0.1 },
     flow_color = {r = 0.1, g = 0.1, b = 0.1 },
     auto_void = true,
@@ -984,7 +958,6 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/fluids/methanol.png",
     subgroup = "pm-plastics",
     default_temperature = 15,
-    auto_barrel = false,
     base_color = {r = 0.4, g = 0.1, b = 0.1 },
     flow_color = {r = 0.4, g = 0.1, b = 0.1 },
     auto_void = true,
@@ -1553,7 +1526,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.1, g = 0.4, b = 0.14},
     flow_color = {r = 0.1, g = 0.4, b = 0.14},
-    auto_barrel = false
   },
   {
     type = "fluid",
