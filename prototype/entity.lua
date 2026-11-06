@@ -13069,3 +13069,5 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes =
 data.raw["assembling-machine"]["centrifuge"].fluid_boxes_off_when_no_fluid_recipe = true
 data.raw["rocket-silo"]["rocket-silo"].circuit_wire_max_distance = default_circuit_wire_max_distance * 3
 data.raw["rocket-silo"]["rocket-silo"].circuit_connector = circuit_connector_definitions["rocket-silo"]
+
+data.raw["generator"]["steam-turbine"].next_upgrade = "pm-advanced-steam-turbine"
