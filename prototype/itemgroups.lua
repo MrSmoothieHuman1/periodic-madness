@@ -1357,7 +1357,7 @@ data:extend({
   --MARK: Actinides
   {
     type = "item-subgroup",
-    name = "pm-actinium-ac",
+    name = "pm-ac-ac",
     group = "pm-actinides",
     order = "a"
   },

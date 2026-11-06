@@ -128,6 +128,25 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-actinium-ore",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/lanthanum-ore.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/lanthanum-ore.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/lanthanum-ore-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/lanthanum-ore-3.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/ores/transition-metals-icon-3.png", size = 64, scale = 0.5},
+    },
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
+    subgroup = "pm-ac-ac",
+    order = "a",
+    stack_size = 200
+  },
 })
 
 data.raw["item"]["iron-ore"].stack_size = 200
