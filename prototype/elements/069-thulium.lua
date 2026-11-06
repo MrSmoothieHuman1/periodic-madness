@@ -92,7 +92,7 @@ data:extend({
         {
             PM.product("pm-monazite-sand"):amount(1, 2):catalyst(2):done(),
             PM.product("pm-thulium"):amount(1, 2):chance(0.07):done(),
-            PM.product("pm-yttrium-catalyst"):amount(4):catalyst(4):done(),
+            PM.product("pm-cobalt-catalyst"):amount(4):catalyst(4):done(),
             PM.product("pm-chlorine", "fluid"):amount(3):chance(0.95):catalyst(3):done()
         }
     },
