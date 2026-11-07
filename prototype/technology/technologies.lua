@@ -8585,7 +8585,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-unsorted-actinium"),
+        PM.unlock_recipe("pm-fissile-actinium-deposit"),
+        PM.unlock_recipe("pm-light-actinium-deposit"),
+        PM.unlock_recipe("pm-heavy-actinium-deposit")
     },
     prerequisites = {"pm-lanthanide-science-pack"},
     unit =
