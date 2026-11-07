@@ -135,7 +135,7 @@ data:extend({
     type = "tool",
     name = "pm-actinide-science-pack",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/science/lanthanide-science-pack.png",
+    icon = "__periodic-madness__/graphics/icons/science/actinide-science-pack.png",
     inventory_move_sound = item_sounds.science_inventory_move,
     pick_sound = item_sounds.science_inventory_pickup,
     drop_sound = item_sounds.science_inventory_move,
