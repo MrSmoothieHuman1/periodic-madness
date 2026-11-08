@@ -2555,6 +2555,37 @@ data:extend({
         time = 220
     },
   },
+  {
+    type = "technology",
+    name = "pm-requester-chest-inventory-bonus-capacity-5",
+    icon_size = 256,
+    icons = util.technology_icon_constant_stack_size("__base__/graphics/technology/logistic-system.png"),
+    effects =
+    {
+        PM.custom_modifier("pm-requester-chest-inventory-size", 5) --12 total
+    },
+    upgrade = true,
+    prerequisites = {"pm-requester-chest-inventory-bonus-capacity-4", "pm-actinide-science-pack"},
+    unit =
+    {
+        count = 3000,
+        ingredients =
+        {
+            {"automation-science-pack", 2},
+            {"logistic-science-pack", 2},
+            {"pm-advanced-advanced-transition-metal-science-pack", 2},
+            {"chemical-science-pack", 2},
+            {"pm-post-transition-metal-science-pack", 2},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-alkali-metal-science-pack", 1},
+            {"pm-alkaline-earth-metal-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-noble-gas-science-pack", 1},
+            {"pm-lanthanide-science-pack", 1}
+        },
+        time = 300
+    },
+  },
 --MARK: Artillery damage
   {
     type = "technology",

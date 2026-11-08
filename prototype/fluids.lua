@@ -2270,6 +2270,18 @@ data:extend({
     flow_color = {0.7, 0.7, 0.7},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-liquid-actinide-science",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/liquid-actinide-science.png",
+    subgroup = "pm-liquid-science",
+    order = "l",
+    default_temperature = 15,
+    base_color = {0.3, 0.3, 0.3},
+    flow_color = {0, 0, 0},
+    auto_barrel = false,
+  },
 
 	{
 		type = "fluid",

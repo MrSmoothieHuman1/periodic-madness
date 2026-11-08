@@ -793,6 +793,27 @@ data:extend({
         PM.product("pm-liquid-lanthanide-science", "fluid"):amount(100):done()
     }
 },
+{
+    type = "recipe",
+    name = "pm-liquid-actinide-science",
+    enabled = false,
+    energy_required = 6,
+    categories = {"pm-liquid-science"},
+    allow_productivity = true,
+    auto_recycle = true,
+    crafting_machine_tint = 
+    {
+        primary = {0.3, 0.3, 0.3}
+    },
+    ingredients =
+    {
+        PM.ingredient("pm-thorium-233", 20),
+    },
+    results = 
+    {
+        PM.product("pm-liquid-actinide-science", "fluid"):amount(100):done()
+    }
+},
 
 {
     type = "recipe",
@@ -1072,6 +1093,26 @@ data:extend({
     results = 
     {
         PM.product("pm-lanthanide-science-pack"):amount(1):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-liquid-actinide-science-bottling",
+    enabled = false,
+    energy_required = 12,
+    categories = {"crafting-with-fluid"},
+    subgroup = "pm-liquid-science-bottling",
+    order = "l",
+    allow_productivity = true,
+    auto_recycle = false,
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-actinide-science", 10, "fluid"),
+        PM.ingredient("pm-plastic-science-bottle", 1)
+    },
+    results = 
+    {
+        PM.product("pm-actinide-science-pack"):amount(1):done()
     }
 },
 

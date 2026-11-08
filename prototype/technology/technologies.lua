@@ -8556,6 +8556,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/actinide-science-pack.png",
     effects =
     {
+        PM.unlock_recipe("pm-liquid-actinide-science"),
+        PM.unlock_recipe("pm-liquid-actinide-science-bottling")
     },
     prerequisites = {"pm-thorium-processing", "pm-protactinium-processing", "pm-uranium-processing", "pm-neptunium-processing", "pm-plutonium-processing", "pm-americium-processing", "pm-curium-processing", "pm-berkelium-processing", "pm-californium-processing", "pm-einsteinium-processing", "pm-fermium-processing", "pm-mendelevium-processing", "pm-nobelium-processing", "pm-lawrencium-processing"},
     unit = 

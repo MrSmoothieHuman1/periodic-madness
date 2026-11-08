@@ -2318,7 +2318,7 @@ data:extend({
     subgroup = "pm-rocket-launchables",
     order = "e",
     send_to_orbit_mode = "automated",
-    rocket_launch_products = 
+    rocket_launch_products =
     {
         PM.product("space-science-pack"):amount(1000):done()
     },
