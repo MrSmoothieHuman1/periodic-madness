@@ -248,6 +248,36 @@ data:extend({
     },
     upgrade = true
   },
+  {
+    type = "technology",
+    name = "pm-research-productivity-9",
+    icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
+    effects =
+    {
+      PM.modify("laboratory-productivity", 0.25)
+    },
+    prerequisites = {"pm-research-productivity-8", "pm-actinide-science-pack"},
+    unit =
+    {
+      count = 6000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 360
+    },
+    upgrade = true
+  },
 --MARK:Lab speed
 {
     type = "technology",
@@ -368,6 +398,39 @@ data:extend({
       {"pm-lanthanide-science-pack", 1}
     },
     time = 240
+  },
+},
+{
+  type = "technology",
+  name = "pm-research-speed-11",
+  icons = util.technology_icon_constant_speed("__base__/graphics/technology/research-speed.png"),
+  effects =
+  {
+    {
+      type = "laboratory-speed",
+      modifier = 1.2
+    }
+  },
+  prerequisites = {"pm-research-speed-10", "pm-actinide-science-pack"},
+  upgrade = true,
+  unit =
+  {
+    count = 4000,
+    ingredients =
+    {
+      {"automation-science-pack", 2},
+      {"logistic-science-pack", 2},
+      {"pm-advanced-advanced-transition-metal-science-pack", 2},
+      {"chemical-science-pack", 2},
+      {"pm-post-transition-metal-science-pack", 2},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1},
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-noble-gas-science-pack", 1},
+      {"pm-lanthanide-science-pack", 1}
+    },
+    time = 360
   },
 },
 
@@ -760,6 +823,40 @@ data:extend({
       {"pm-lanthanide-science-pack", 1}
     },
     time = 220
+  },
+  upgrade = true
+},
+{
+  type = "technology",
+  name = "pm-worker-robots-speed-11",
+  icons = util.technology_icon_constant_movement_speed("__base__/graphics/technology/worker-robots-speed.png"),
+  effects =
+  {
+    {
+      type = "worker-robot-speed",
+      modifier = 1 --400%
+    }
+  },
+  prerequisites = {"pm-worker-robots-speed-10", "pm-actinide-science-pack"},
+  unit =
+  {
+    count = 4500,
+    ingredients =
+    {
+      {"automation-science-pack", 2},
+      {"logistic-science-pack", 2},
+      {"pm-advanced-advanced-transition-metal-science-pack", 2},
+      {"chemical-science-pack", 2},
+      {"pm-post-transition-metal-science-pack", 2},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-metalloid-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1},
+      {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+      {"pm-noble-gas-science-pack", 1},
+      {"pm-lanthanide-science-pack", 1},
+      {"pm-actinide-science-pack", 1}
+    },
+    time = 300
   },
   upgrade = true
 },
