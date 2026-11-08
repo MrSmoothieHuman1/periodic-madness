@@ -2317,6 +2317,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/interplanetary-satellite.png",
     subgroup = "pm-rocket-launchables",
     order = "e",
+    send_to_orbit_mode = "automated",
     rocket_launch_products = 
     {
         PM.product("space-science-pack"):amount(1000):done()
