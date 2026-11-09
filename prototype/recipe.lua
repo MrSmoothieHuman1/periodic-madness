@@ -6619,4 +6619,28 @@ data:extend({
             PM.product("pm-neodymium-magnet"):amount(6):catalyst(6):done()
         }
     },
+    {
+        type = "recipe",
+        name = "pm-particle-accelerator-section",
+        enabled = false,
+        categories = {"crafting-with-fluid"},
+        energy_required = 90,
+        ingredients = 
+        {
+            PM.ingredient("pm-heullserloch-magnet", 4),
+            PM.ingredient("pm-indium-wire", 24),
+            PM.ingredient("pm-superconducting-ReBCO", 6),
+            PM.ingredient("low-density-structure", 8),
+            PM.ingredient("pm-high-density-structure", 8),
+            PM.ingredient("pm-advanced-electric-engine-unit", 3),
+            PM.ingredient("pm-advanced-processing-unit", 10),
+            PM.ingredient("pm-heat-shielding", 16),
+            PM.ingredient("pm-liquid-silicone", 15, "fluid"),
+            PM.ingredient("pm-light-lubricant", 30, "fluid")
+        },
+        results = 
+        {
+            PM.product("pm-particle-accelerator-section"):amount(1):done()
+        }
+    }
 } --[[@as data.RecipePrototype[] ]])

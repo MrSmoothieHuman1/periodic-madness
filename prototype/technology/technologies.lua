@@ -9047,12 +9047,12 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-particle-accelerator-part-production",
+    name = "pm-particle-accelerator-section-production",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-particle-accelerator-section")
     },
     prerequisites = {"pm-superconductors", "pm-heullserloch-alloy-processing"},
     unit =

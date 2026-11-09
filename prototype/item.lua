@@ -2391,6 +2391,15 @@ data:extend({
     order = "j",
     stack_size = 10
   },
+  {
+    type = "item",
+    name = "pm-particle-accelerator-section",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/particle-accelerator-part.png",
+    subgroup = "pm-intermediates",
+    order = "xx",
+    stack_size = 5
+  },
 
   {
     type = "item",
