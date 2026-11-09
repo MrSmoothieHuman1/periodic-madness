@@ -2355,6 +2355,15 @@ data:extend({
     order = "gb",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-heullserloch-alloy-precursor-scrap",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/mixed-ore-slag.png",
+    subgroup = "pm-heullserloch",
+    order = "g",
+    stack_size = 200
+  },
 
   {
     type = "item",

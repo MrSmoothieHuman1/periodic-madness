@@ -656,6 +656,163 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "pm-molten-cyan-heullserloch-alloy",
+    crafting_machine_tint = 
+    {
+        primary = {0.49, 0.42, 0.122}
+    },
+    enabled = false,
+    energy_required = 45,
+    categories = {"pm-blast-smelting"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-neodymium-plate", 8),
+        PM.ingredient("pm-molten-iron", 20, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-lutetium", 3),
+        PM.ingredient("pm-praseodymium", 6),
+        PM.ingredient("pm-chromium-ore", 24)
+    },
+    results =
+    {
+        PM.product("pm-molten-cyan-heullserloch-alloy", "fluid"):amount(10):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-yellow-heullserloch-alloy",
+    crafting_machine_tint = 
+    {
+        primary = {0.49, 0.42, 0.122}
+    },
+    enabled = false,
+    energy_required = 45,
+    categories = {"pm-blast-smelting"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-ytterbium-plate", 8),
+        PM.ingredient("pm-molten-cadnium", 20, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-strontium-ore", 3),
+        PM.ingredient("pm-gadolinium", 6),
+        PM.ingredient("pm-chromium-ore", 24)
+    },
+    results =
+    {
+        PM.product("pm-molten-yellow-heullserloch-alloy", "fluid"):amount(10):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-magenta-heullserloch-alloy",
+    crafting_machine_tint = 
+    {
+        primary = {0.49, 0.42, 0.122}
+    },
+    enabled = false,
+    energy_required = 45,
+    categories = {"pm-blast-smelting"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-dysprosium-plate", 8),
+        PM.ingredient("pm-molten-cobalt", 20, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-zirconia", 6),
+        PM.ingredient("pm-samarium", 6),
+        PM.ingredient("pm-magnesium-chloride", 12)
+    },
+    results =
+    {
+        PM.product("pm-molten-magenta-heullserloch-alloy", "fluid"):amount(10):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-black-heullserloch-alloy",
+    crafting_machine_tint = 
+    {
+        primary = {0.49, 0.42, 0.122}
+    },
+    enabled = false,
+    energy_required = 45,
+    categories = {"pm-blast-smelting"},
+    allow_productivity = true,
+    ingredients =
+    {
+        PM.ingredient("pm-platinum-plate", 8),
+        PM.ingredient("pm-molten-nickel", 20, "fluid"),
+        PM.ingredient("pm-molten-aluminium", 10, "fluid"),
+        PM.ingredient("pm-barium-ore", 6),
+        PM.ingredient("pm-terbium", 6),
+        PM.ingredient("pm-vanadium-oxide", 24)
+    },
+    results =
+    {
+        PM.product("pm-molten-black-heullserloch-alloy", "fluid"):amount(10):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-bright-heullserloch-mixture",
+    enabled = false,
+    energy_required = 45,
+    categories = {"pm-moltening"},
+    main_product = "pm-molten-bright-heullserloch-mixture",
+    ingredients = 
+    {
+        PM.ingredient("pm-filled-flux-container", 3),
+        PM.ingredient("pm-molten-cyan-heullserloch-alloy", 5, "fluid"),
+        PM.ingredient("pm-molten-yellow-heullserloch-alloy", 5, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-molten-bright-heullserloch-mixture", "fluid"):amount(10):done(),
+        PM.product("pm-used-flux-container"):amount(3):chance(0.66):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-dark-heullserloch-mixture",
+    enabled = false,
+    energy_required = 45,
+    categories = {"pm-moltening"},
+    main_product = "pm-molten-dark-heullserloch-mixture",
+    ingredients = 
+    {
+        PM.ingredient("pm-filled-flux-container", 3),
+        PM.ingredient("pm-molten-magenta-heullserloch-alloy", 5, "fluid"),
+        PM.ingredient("pm-molten-black-heullserloch-alloy", 5, "fluid"),
+    },
+    results =
+    {
+        PM.product("pm-molten-dark-heullserloch-mixture", "fluid"):amount(10):done(),
+        PM.product("pm-used-flux-container"):amount(3):chance(0.66):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-heullserloch-alloy-precursor",
+    enabled = false,
+    energy_required = 20,
+    categories = {"pm-reverberatory-smelting"},
+    main_product = "pm-molten-heullserloch-alloy-precursor",
+    ingredients = 
+    {
+        PM.ingredient("pm-molten-bright-heullserloch-mixture", 7.5, "fluid"),
+        PM.ingredient("pm-molten-dark-heullserloch-mixture", 7.5, "fluid"),
+    },
+    results = 
+    {
+        PM.product("pm-molten-heullserloch-alloy-precursor", "fluid"):amount(12.5):done(),
+        PM.product("pm-heullserloch-alloy-precursor-scrap"):amount(1, 4):chance(0.85):done()
+    }
+  },
+
+  {
+    type = "recipe",
     name = "pm-molten-potassium-salts",
     enabled = false,
     energy_required = 2.5,

@@ -9012,7 +9012,13 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-molten-cyan-heullserloch-alloy"),
+        PM.unlock_recipe("pm-molten-yellow-heullserloch-alloy"),
+        PM.unlock_recipe("pm-molten-magenta-heullserloch-alloy"),
+        PM.unlock_recipe("pm-molten-black-heullserloch-alloy"),
+        PM.unlock_recipe("pm-molten-bright-heullserloch-mixture"),
+        PM.unlock_recipe("pm-molten-dark-heullserloch-mixture"),
+        PM.unlock_recipe("pm-molten-heullserloch-alloy-precursor"),
     },
     prerequisites = {"pm-actinide-science-pack"},
     unit =

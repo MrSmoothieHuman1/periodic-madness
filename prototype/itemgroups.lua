@@ -386,6 +386,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-heullserloch",
+    group = "intermediate-products",
+    order = "cf",
+  },
+  {
+    type = "item-subgroup",
     name = "pm-glassing",
     group = "intermediate-products",
     order = "d",
