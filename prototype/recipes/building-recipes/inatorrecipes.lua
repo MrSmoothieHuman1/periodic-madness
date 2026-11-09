@@ -672,7 +672,7 @@ data:extend({
         PM.ingredient("pm-molten-aluminium", 10, "fluid"),
         PM.ingredient("pm-lutetium", 3),
         PM.ingredient("pm-praseodymium", 6),
-        PM.ingredient("pm-chromium-ore", 24)
+        PM.ingredient("pm-scandium-oxide", 24)
     },
     results =
     {
@@ -697,7 +697,7 @@ data:extend({
         PM.ingredient("pm-molten-aluminium", 10, "fluid"),
         PM.ingredient("pm-strontium-ore", 3),
         PM.ingredient("pm-gadolinium", 6),
-        PM.ingredient("pm-chromium-ore", 24)
+        PM.ingredient("pm-carbon", 24)
     },
     results =
     {
