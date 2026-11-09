@@ -2364,6 +2364,33 @@ data:extend({
     order = "g",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-cooled-heullserloch-magnet-block",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/mixed-ore-slag.png",
+    subgroup = "pm-heullserloch",
+    order = "h",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-heullserloch-magnet-block",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/mixed-ore-slag.png",
+    subgroup = "pm-heullserloch",
+    order = "i",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "pm-heullserloch-magnet",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/neodymium-magnet.png",
+    subgroup = "pm-heullserloch",
+    order = "j",
+    stack_size = 10
+  },
 
   {
     type = "item",

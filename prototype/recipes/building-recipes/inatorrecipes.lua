@@ -770,7 +770,7 @@ data:extend({
     results =
     {
         PM.product("pm-molten-bright-heullserloch-mixture", "fluid"):amount(10):done(),
-        PM.product("pm-used-flux-container"):amount(3):chance(0.66):done()
+        PM.product("pm-flux-container"):amount(3):chance(0.66):done()
     }
   },
   {
@@ -789,7 +789,7 @@ data:extend({
     results =
     {
         PM.product("pm-molten-dark-heullserloch-mixture", "fluid"):amount(10):done(),
-        PM.product("pm-used-flux-container"):amount(3):chance(0.66):done()
+        PM.product("pm-flux-container"):amount(3):chance(0.66):done()
     }
   },
   {
@@ -808,6 +808,23 @@ data:extend({
     {
         PM.product("pm-molten-heullserloch-alloy-precursor", "fluid"):amount(12.5):done(),
         PM.product("pm-heullserloch-alloy-precursor-scrap"):amount(1, 4):chance(0.85):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-cooled-heullserloch-magnet-block",
+    enabled = false,
+    energy_required = 27,
+    categories = {"pm-coldening"},
+    main_product = "pm-cooled-heullserloch-magnet-block",
+    ingredients =
+    {
+        PM.ingredient("pm-crucible", 4),
+        PM.ingredient("pm-molten-heullserloch-alloy-precursor", 10, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-cooled-heullserloch-magnet-block"):amount(2):done(),
     }
   },
 

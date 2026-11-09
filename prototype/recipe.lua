@@ -6581,4 +6581,42 @@ data:extend({
       PM.product("pm-filled-flux-container"):amount(2):done()
     }
   },
+    {
+        type = "recipe",
+        name = "pm-heullserloch-magnet-block",
+        enabled = false,
+        energy_required = 27,
+        categories = {"crafting-with-fluid"},
+        main_product = "pm-heullserloch-magnet-block",
+        ingredients =
+        {
+            PM.ingredient("pm-cooled-heullserloch-magnet-block", 4),
+            PM.ingredient("pm-boron", 45, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-heullserloch-magnet-block"):amount(4):done(),
+            PM.product("pm-crucible"):amount(4):chance(0.66):done(),
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-heullserloch-magnet",
+        enabled = false,
+        energy_required = 27,
+        main_product = "pm-heullserloch-magnet",
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-heullserloch-magnet-block", 2),
+            PM.ingredient("pm-neodymium-magnet", 6),
+            PM.ingredient("pm-saw", 2)
+        },
+        results =
+        {
+            PM.product("pm-heullserloch-magnet"):amount(4):done(),
+            PM.product("pm-saw"):amount(2):catalyst():chance(0.9):done(),
+            PM.product("pm-neodymium-magnet"):amount(6):catalyst(6):done()
+        }
+    },
 } --[[@as data.RecipePrototype[] ]])

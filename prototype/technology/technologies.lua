@@ -9019,6 +9019,9 @@ data:extend({
         PM.unlock_recipe("pm-molten-bright-heullserloch-mixture"),
         PM.unlock_recipe("pm-molten-dark-heullserloch-mixture"),
         PM.unlock_recipe("pm-molten-heullserloch-alloy-precursor"),
+        PM.unlock_recipe("pm-cooled-heullserloch-magnet-block"),
+        PM.unlock_recipe("pm-heullserloch-magnet-block"),
+        PM.unlock_recipe("pm-heullserloch-magnet")
     },
     prerequisites = {"pm-actinide-science-pack"},
     unit =
