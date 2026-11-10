@@ -6624,11 +6624,12 @@ data:extend({
         name = "pm-particle-accelerator-section",
         enabled = false,
         categories = {"crafting-with-fluid"},
-        energy_required = 90,
+        energy_required = 120,
         ingredients = 
         {
             PM.ingredient("pm-heullserloch-magnet", 4),
-            PM.ingredient("pm-indium-wire", 24),
+            PM.ingredient("pm-sterling-silver-wire", 24),
+            PM.ingredient("copper-cable", 48),
             PM.ingredient("pm-superconducting-ReBCO", 6),
             PM.ingredient("low-density-structure", 8),
             PM.ingredient("pm-high-density-structure", 8),
