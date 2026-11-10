@@ -758,10 +758,10 @@ data:extend({
     type = "recipe",
     name = "pm-molten-bright-heullserloch-mixture",
     enabled = false,
-    energy_required = 45,
+    energy_required = 60,
     categories = {"pm-moltening"},
     main_product = "pm-molten-bright-heullserloch-mixture",
-    ingredients = 
+    ingredients =
     {
         PM.ingredient("pm-filled-flux-container", 3),
         PM.ingredient("pm-molten-cyan-heullserloch-alloy", 5, "fluid"),
@@ -777,10 +777,10 @@ data:extend({
     type = "recipe",
     name = "pm-molten-dark-heullserloch-mixture",
     enabled = false,
-    energy_required = 45,
+    energy_required = 60,
     categories = {"pm-moltening"},
     main_product = "pm-molten-dark-heullserloch-mixture",
-    ingredients = 
+    ingredients =
     {
         PM.ingredient("pm-filled-flux-container", 3),
         PM.ingredient("pm-molten-magenta-heullserloch-alloy", 5, "fluid"),
