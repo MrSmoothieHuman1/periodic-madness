@@ -3547,6 +3547,7 @@ data:extend({
     corpse = "pm-washing-plant-2",
     dying_explosion = "assembling-machine-1-explosion",
     fast_replaceable_group = "pm-washers",
+    next_upgrade = "pm-washing-plant-3",
     use_mirroring = true,
     resistances =
     {
@@ -8884,7 +8885,7 @@ fluid_boxes =
     },
     energy_usage = "450kW",
     module_slots = 6,
-    allowed_effects = {"consumption", "speed"}
+    allowed_effects = {"consumption", "speed", "productivity"}
   },
   {
     type = "assembling-machine",

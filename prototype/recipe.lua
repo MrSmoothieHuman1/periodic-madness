@@ -6625,6 +6625,7 @@ data:extend({
         enabled = false,
         categories = {"crafting-with-fluid"},
         energy_required = 120,
+        allow_productivity = true,
         ingredients = 
         {
             PM.ingredient("pm-heullserloch-magnet", 4),
@@ -6636,7 +6637,7 @@ data:extend({
             PM.ingredient("pm-advanced-electric-engine-unit", 3),
             PM.ingredient("pm-advanced-processing-unit", 10),
             PM.ingredient("pm-heat-shielding", 16),
-            PM.ingredient("pm-liquid-silicone", 15, "fluid"),
+            PM.ingredient("pm-liquid-silicone", 10, "fluid"),
             PM.ingredient("pm-light-lubricant", 30, "fluid")
         },
         results = 

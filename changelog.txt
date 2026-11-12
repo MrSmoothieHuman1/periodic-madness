@@ -36,6 +36,15 @@ Date: 2025-11-05
     - Updated strontium fuel rods technology icon.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.002
+Date: 2025-11-12
+  The gyulp Update:
+
+  Fixes:
+    - Fixed prod modules not being allowed in assembling machine 4's. Whoops!
+    - Fixed washing plant 2's not being upgradeable via upgrade planners.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.001
 Date: 2025-11-04
   The GOOOOOOOOOD EVENING VIETNAMMMMM Update:

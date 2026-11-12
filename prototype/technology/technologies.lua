@@ -9138,6 +9138,37 @@ data:extend({
       time = 330
     }
   },
+  {
+    type = "technology",
+    name = "pm-actinide-fuel-rods",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/actinide-fuel-rods.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-omnireactor"},
+    unit =
+    {
+      count = 1750,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1}
+      },
+      time = 300
+    }
+  },
 
   --##MARK: Win condition
   {
@@ -9233,7 +9264,7 @@ data:extend({
     prerequisites = {"pm-hassium-processing"},
     unit =
     {
-      count = 5000,
+      count = 4000,
       ingredients =
       {
         {"automation-science-pack", 2},
@@ -9265,7 +9296,7 @@ data:extend({
     prerequisites = {"pm-meitnerium-processing"},
     unit =
     {
-      count = 6000,
+      count = 5000,
       ingredients =
       {
         {"automation-science-pack", 2},
