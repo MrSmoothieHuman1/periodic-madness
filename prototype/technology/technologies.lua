@@ -9140,6 +9140,37 @@ data:extend({
   },
   {
     type = "technology",
+    name = "pm-gamma-ray-effect-transmission",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+
+    },
+    prerequisites = {"pm-liquid-gasses", "pm-actinide-science-pack", "pm-effect-transmission-2"},
+    unit =
+    {
+      count = 2000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1}
+      },
+      time = 360
+    }
+  },
+  {
+    type = "technology",
     name = "pm-actinide-fuel-rods",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/technology/actinide-fuel-rods.png",
@@ -9147,7 +9178,7 @@ data:extend({
     {
 
     },
-    prerequisites = {"pm-omnireactor"},
+    prerequisites = {"pm-omnireactor", "pm-thorium-fuel-rods"},
     unit =
     {
       count = 1750,
