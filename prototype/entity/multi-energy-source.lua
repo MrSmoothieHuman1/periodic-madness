@@ -398,9 +398,9 @@ local accelerator = {
 			layers =
 			{
 				{
-					filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/nothing-to-see-here.png",
-					width = 256,
-					height = 256,
+					filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/30-particle-accelerator.png",
+					width = 1920,
+					height = 1920,
 					scale = 0.5
 				},
 			}

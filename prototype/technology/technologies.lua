@@ -9107,16 +9107,18 @@ data:extend({
       time = 330
     }
   },
+
+  --##MARK: Win condition
   {
     type = "technology",
-    name = "pm-gamma-wave-beacon-distribution",
+    name = "pm-8-particle-accelerator",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
         
     },
-    prerequisites = {"pm-liquid-gasses", "pm-actinide-science-pack"},
+    prerequisites = {"pm-particle-accelerator-section-production"},
     unit =
     {
       count = 2000,
@@ -9136,6 +9138,535 @@ data:extend({
         {"pm-actinide-science-pack", 1}
       },
       time = 360
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-bohrium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-8-particle-accelerator"},
+    research_trigger =
+    {
+        type = "craft-item",
+        item = "iron-plate",
+        amount = 10
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-hassium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-bohrium-processing"},
+    unit =
+    {
+      count = 3000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 1}
+      },
+      time = 360
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-hassium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-bohrium-processing"},
+    unit =
+    {
+      count = 4000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 1}
+      },
+      time = 360
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-meitnerium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-hassium-processing"},
+    unit =
+    {
+      count = 5000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 1}
+      },
+      time = 360
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-16-particle-accelerator",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-meitnerium-processing"},
+    unit =
+    {
+      count = 6000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 2}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-darmstadium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-meitnerium-processing"},
+    unit =
+    {
+      count = 6000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 2}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-roetgenium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-darmstadium-processing"},
+    unit =
+    {
+      count = 7000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 2}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-copernicium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-darmstadium-processing"},
+    unit =
+    {
+      count = 7000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 2}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-nihonium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-copernicium-processing"},
+    unit =
+    {
+      count = 8000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 2}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-flerovium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-nihonium-processing"},
+    unit =
+    {
+      count = 9000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 4}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-24-particle-accelerator",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-nihonium-processing"},
+    unit =
+    {
+      count = 9000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 4}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-moscovium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-flerovium-processing"},
+    unit =
+    {
+      count = 10000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 4}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-livermorium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-moscovium-processing"},
+    unit =
+    {
+      count = 11000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 4}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-tennessine-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-livermorium-processing"},
+    unit =
+    {
+      count = 12000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 4}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-oganesson-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-tennessine-processing"},
+    unit =
+    {
+      count = 13000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 8}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-30-particle-accelerator",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-tennessine-processing"},
+    unit =
+    {
+      count = 13000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 8}
+      },
+      time = 720
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-element-119",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-30-particle-accelerator", "pm-oganesson-processing"},
+    unit =
+    {
+      count = 15000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 8}
+      },
+      time = 720
     }
   },
 
