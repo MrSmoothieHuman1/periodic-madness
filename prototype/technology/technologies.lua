@@ -9118,7 +9118,7 @@ data:extend({
     {
         
     },
-    prerequisites = {"pm-particle-accelerator-section-production"},
+    prerequisites = {"pm-particle-accelerator-section-production", "pm-experimental-research-data"},
     unit =
     {
       count = 2000,
@@ -9135,7 +9135,8 @@ data:extend({
         {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
         {"pm-noble-gas-science-pack", 1},
         {"pm-lanthanide-science-pack", 1},
-        {"pm-actinide-science-pack", 1}
+        {"pm-actinide-science-pack", 1},
+        {"pm-experimental-research-data", 1}
       },
       time = 360
     }
