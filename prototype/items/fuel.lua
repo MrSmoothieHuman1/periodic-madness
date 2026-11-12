@@ -94,10 +94,22 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/strontium-fuel-rod.png",
     subgroup = "pm-fuel-rods",
-    order = "c",
+    order = "d",
     fuel_categories = {"pm-strontium-fuel-rods"},
     burnt_result = "pm-spent-fuel-rod",
     fuel_value = "25MJ",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "pm-thorium-fuel-rod",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/thorium-fuel-rod.png",
+    subgroup = "pm-fuel-rods",
+    order = "e",
+    fuel_categories = {"pm-thorium-fuel-rods"},
+    burnt_result = "pm-spent-fuel-rod",
+    fuel_value = "30MJ",
     stack_size = 10
   },
   {

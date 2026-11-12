@@ -2460,6 +2460,10 @@ data:extend({
   },
   {
     type = "fuel-category",
+    name = "pm-thorium-fuel-rods"
+  },
+  {
+    type = "fuel-category",
     name = "pm-uranium-233"
   },
   {

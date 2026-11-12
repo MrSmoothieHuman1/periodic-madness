@@ -30,6 +30,10 @@ Date: 2025-11-05
     - Added Tennessine.
     - Added Oganesson.
     - Added the final major science pack, the actinide pack.
+    - Added thorium fuel rods.
+
+  Changes:
+    - Updated strontium fuel rods technology icon.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.001

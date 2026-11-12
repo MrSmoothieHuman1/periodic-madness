@@ -511,5 +511,22 @@ data:extend({
             PM.product("pm-neodymium-oxide"):amount(0, 1):chance(0.14):done(),
             PM.product("pm-xenon-gas", "fluid"):amount(0.5, 2.5):chance(0.26):done()
         }
-    }
+    },
+    {
+      type = "recipe",
+      name = "pm-thorium-fuel-rod",
+      enabled = false,
+      categories = {"crafting-with-fluid"},
+      energy_required = 15,
+      allow_productivity = true,
+      ingredients = 
+      {
+        PM.ingredient("pm-liquid-thorium-fluoride", 10, "fluid"),
+        PM.ingredient("pm-empty-fuel-rod", 5)
+      },
+      results = 
+      {
+        PM.product("pm-thorium-fuel-rod"):amount(5):done()
+      }
+    },
 })

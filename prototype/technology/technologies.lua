@@ -9004,6 +9004,37 @@ data:extend({
       time = 200
     }
   },
+  {
+    type = "technology",
+    name = "pm-thorium-fuel-rods",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/thorium-fuel-rods.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-thorium-fuel-rod")
+    },
+    prerequisites = {"pm-thorium-processing", "pm-strontium-fuel-rods"},
+    unit =
+    {
+      count = 950,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1}
+      },
+      time = 220
+    }
+  },
+
 --MARK: AC science
   {
     type = "technology",

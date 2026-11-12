@@ -201,8 +201,6 @@ data:extend({
     type = "recipe",
     name = "pm-polonium-fuel-rod",
     enabled = false,
-    subgroup = "pm-fuel-rods",
-    order = "c",
     energy_required = 15,
     allow_productivity = true,
     ingredients = 
