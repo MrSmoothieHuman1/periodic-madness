@@ -16,6 +16,19 @@ Date: 2025-11-05
     - Added Mendelevium.
     - Added Nobelium.
     - Added Lawrencium.
+    - Added Seaborgium.
+    - Added Bohrium.
+    - Added Hassium.
+    - Added Meitnerium.
+    - Added Darmstadium.
+    - Added Roetgenium.
+    - Added Copernicium.
+    - Added Nihonium.
+    - Added Flevorium.
+    - Added Moscovium.
+    - Added Livermorium.
+    - Added Tennessine.
+    - Added Oganesson.
     - Added the final major science pack, the actinide pack.
 
 ---------------------------------------------------------------------------------------------------
