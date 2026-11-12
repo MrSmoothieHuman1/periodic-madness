@@ -9223,38 +9223,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-hassium-processing",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
-    effects =
-    {
-        
-    },
-    prerequisites = {"pm-bohrium-processing"},
-    unit =
-    {
-      count = 4000,
-      ingredients =
-      {
-        {"automation-science-pack", 2},
-        {"logistic-science-pack", 2},
-        {"pm-advanced-advanced-transition-metal-science-pack", 2},
-        {"chemical-science-pack", 2},
-        {"pm-post-transition-metal-science-pack", 2},
-        {"pm-alkali-metal-science-pack", 1},
-        {"pm-metalloid-science-pack", 1},
-        {"pm-alkaline-earth-metal-science-pack", 1},
-        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
-        {"pm-noble-gas-science-pack", 1},
-        {"pm-lanthanide-science-pack", 1},
-        {"pm-actinide-science-pack", 1},
-        {"pm-experimental-research-data", 1}
-      },
-      time = 360
-    }
-  },
-  {
-    type = "technology",
     name = "pm-meitnerium-processing",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
@@ -9390,7 +9358,7 @@ data:extend({
     {
         
     },
-    prerequisites = {"pm-darmstadium-processing"},
+    prerequisites = {"pm-roetgenium-processing"},
     unit =
     {
       count = 7000,
