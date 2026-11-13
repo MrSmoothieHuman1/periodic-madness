@@ -342,7 +342,7 @@ end
 --MARK: Definitions
 
 ---@type MultiEnergySourced<data.AssemblingMachinePrototype>
-local accelerator = {
+local biggest_accelerator = {
 	type = "assembling-machine",
 	name = "pm-30-particle-accelerator",
 	icon_size = 64,
@@ -370,11 +370,11 @@ local accelerator = {
 		---@type data.CompoundBurnerEnergySource
 		{
 			type = "burner",
-			--TODO: Get a custom fuel category and burner usage,
+			fuel_categories = {"pm-particle-accelerator-maintenance"},
 			burner_usage = "pm-particle-accelerator-maintenance",
 			fuel_inventory_size = 1,
 			initial_fuel_percent = 1,
-			initial_fuel = nil, -- TODO: Fill in an initial item
+			initial_fuel = "pm-particle-accelerator-section",
             light_flicker = nil,
 			loader_position = {14.5, 0},
 			loader_direction = defines.direction.east,
@@ -407,6 +407,205 @@ local accelerator = {
 		},
 	},
 }
+---@type MultiEnergySourced<data.AssemblingMachinePrototype>
+local bigger_accelerator = {
+	type = "assembling-machine",
+	name = "pm-24-particle-accelerator",
+	icon_size = 64,
+	icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
+	minable = { mining_time = 1, result = "pm-cryogenic-plant" },
+	flags = { "placeable-neutral", "placeable-player", "player-creation" },
+	max_health = 1000,
+	corpse = "assembling-machine-1-remnants",
+	dying_explosion = "assembling-machine-1-explosion",
+	collision_box = { { -11.9, -11.9 }, { 11.9, 11.9 } },
+	selection_box = { { -12, -12 }, {12, 12} },
+	map_color = {0.655, 0.655, 0.655},
+	alert_icon_shift = util.by_pixel(0, -12),
+	crafting_speed = 1,
+	crafting_categories = { "ENOUGHISNEVER" },
+	module_slots = 6,
+	allowed_effects = PM.all_effects(),
+	icons_positioning =
+	{
+		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
+	},
+	energy_usage = "500MW",
+	energy_source =
+	{
+		---@type data.CompoundBurnerEnergySource
+		{
+			type = "burner",
+			fuel_categories = {"pm-particle-accelerator-maintenance"},
+			burner_usage = "pm-particle-accelerator-maintenance",
+			fuel_inventory_size = 1,
+			initial_fuel_percent = 1,
+			initial_fuel = "pm-particle-accelerator-section",
+            light_flicker = nil,
+			loader_position = {14.5, 0},
+			loader_direction = defines.direction.east,
+			loader_belt = "pm-high-density-transport-belt",
+			loader_structure = nil, -- TODO: Integrate the loader into the entity
+			usage_ratio = 1,
+		},
+		---@type data.CompoundElectricEnergySource
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions_per_minute = {pollution = 1},
+			usage_ratio = 5,
+		},
+	},
+	graphics_set =
+	{
+		status_colors = pm_diode_status_colors(),
+		animation =
+		{
+			layers =
+			{
+				{
+					filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/30-particle-accelerator.png",
+					width = 1920,
+					height = 1920,
+					scale = 0.5 / 1.25
+				},
+			}
+		},
+	},
+}
+---@type MultiEnergySourced<data.AssemblingMachinePrototype>
+local big_accelerator = {
+	type = "assembling-machine",
+	name = "pm-12-particle-accelerator",
+	icon_size = 64,
+	icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
+	minable = { mining_time = 1, result = "pm-cryogenic-plant" },
+	flags = { "placeable-neutral", "placeable-player", "player-creation" },
+	max_health = 1000,
+	corpse = "assembling-machine-1-remnants",
+	dying_explosion = "assembling-machine-1-explosion",
+	collision_box = { { -5.9, -5.9 }, { 5.9, 5.9 } },
+	selection_box = { { -6, -6 }, {6, 6} },
+	map_color = {0.655, 0.655, 0.655},
+	alert_icon_shift = util.by_pixel(0, -12),
+	crafting_speed = 1,
+	crafting_categories = { "ENOUGHISNEVER" },
+	module_slots = 6,
+	allowed_effects = PM.all_effects(),
+	icons_positioning =
+	{
+		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
+	},
+	energy_usage = "250MW",
+	energy_source =
+	{
+		---@type data.CompoundBurnerEnergySource
+		{
+			type = "burner",
+			fuel_categories = {"pm-particle-accelerator-maintenance"},
+			burner_usage = "pm-particle-accelerator-maintenance",
+			fuel_inventory_size = 1,
+			initial_fuel_percent = 1,
+			initial_fuel = "pm-particle-accelerator-section",
+            light_flicker = nil,
+			loader_position = {14.5, 0},
+			loader_direction = defines.direction.east,
+			loader_belt = "pm-high-density-transport-belt",
+			loader_structure = nil, -- TODO: Integrate the loader into the entity
+			usage_ratio = 1,
+		},
+		---@type data.CompoundElectricEnergySource
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions_per_minute = {pollution = 1},
+			usage_ratio = 5,
+		},
+	},
+	graphics_set =
+	{
+		status_colors = pm_diode_status_colors(),
+		animation =
+		{
+			layers =
+			{
+				{
+					filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/30-particle-accelerator.png",
+					width = 1920,
+					height = 1920,
+					scale = 0.5 / 2.5
+				},
+			}
+		},
+	},
+}
+---@type MultiEnergySourced<data.AssemblingMachinePrototype>
+local small_accelerator = {
+	type = "assembling-machine",
+	name = "pm-8-particle-accelerator",
+	icon_size = 64,
+	icon = "__periodic-madness__/graphics/icons/buildings/cryogenic-plant.png",
+	minable = { mining_time = 1, result = "pm-cryogenic-plant" },
+	flags = { "placeable-neutral", "placeable-player", "player-creation" },
+	max_health = 1000,
+	corpse = "assembling-machine-1-remnants",
+	dying_explosion = "assembling-machine-1-explosion",
+	collision_box = { { -3.9, -3.9 }, { 3.9, 3.9 } },
+	selection_box = { { -4, -4 }, {4, 4} },
+	map_color = {0.655, 0.655, 0.655},
+	alert_icon_shift = util.by_pixel(0, -12),
+	crafting_speed = 1,
+	crafting_categories = { "ENOUGHISNEVER" },
+	module_slots = 6,
+	allowed_effects = PM.all_effects(),
+	icons_positioning =
+	{
+		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
+	},
+	energy_usage = "125MW",
+	energy_source =
+	{
+		---@type data.CompoundBurnerEnergySource
+		{
+			type = "burner",
+			fuel_categories = {"pm-particle-accelerator-maintenance"},
+			burner_usage = "pm-particle-accelerator-maintenance",
+			fuel_inventory_size = 1,
+			initial_fuel_percent = 1,
+			initial_fuel = "pm-particle-accelerator-section",
+            light_flicker = nil,
+			loader_position = {14.5, 0},
+			loader_direction = defines.direction.east,
+			loader_belt = "pm-high-density-transport-belt",
+			loader_structure = nil, -- TODO: Integrate the loader into the entity
+			usage_ratio = 1,
+		},
+		---@type data.CompoundElectricEnergySource
+		{
+			type = "electric",
+			usage_priority = "secondary-input",
+			emissions_per_minute = {pollution = 1},
+			usage_ratio = 5,
+		},
+	},
+	graphics_set =
+	{
+		status_colors = pm_diode_status_colors(),
+		animation =
+		{
+			layers =
+			{
+				{
+					filename = "__periodic-madness__/graphics/entities/buildings/30-particle-accelerator/30-particle-accelerator.png",
+					width = 1920,
+					height = 1920,
+					scale = 0.5 / 3.75
+				},
+			}
+		},
+	},
+}
+
 
 ---@type MultiEnergySourced<data.LabPrototype>
 local betterer_lab =
@@ -514,6 +713,9 @@ local betterer_lab =
 
 
 data:extend{
-	multi_energy_source(accelerator), -- I don't know how to type a table literal parameter for this function call.
+	multi_energy_source(biggest_accelerator), -- I don't know how to type a table literal parameter for this function call.
+	multi_energy_source(bigger_accelerator),
+	multi_energy_source(big_accelerator),
+	multi_energy_source(small_accelerator),
     multi_energy_source(betterer_lab)
 }

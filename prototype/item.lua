@@ -2408,6 +2408,8 @@ data:extend({
     name = "pm-particle-accelerator-section",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/particle-accelerator-part.png",
+    fuel_categories = {"pm-particle-accelerator-maintenance"},
+    fuel_value = "1GJ",
     subgroup = "pm-intermediates",
     order = "xx",
     stack_size = 5
@@ -2484,7 +2486,7 @@ data:extend({
   },
   {
     type = "fuel-category",
-    name = "pm-particle-accelerator-maintnance"
+    name = "pm-particle-accelerator-maintenance"
   },
 })
 data.raw["item"]["iron-gear-wheel"].subgroup = "pm-gears"

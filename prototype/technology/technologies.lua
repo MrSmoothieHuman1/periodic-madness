@@ -9228,7 +9228,7 @@ data:extend({
     {
 
     },
-    prerequisites = {"pm-liquid-gasses", "pm-actinide-science-pack", "pm-effect-transmission-2"},
+    prerequisites = {"pm-liquid-gasses", "pm-actinide-science-pack", "pm-effect-transmission-2", "pm-travelling-wave-erbium-amplifier-tubes"},
     unit =
     {
       count = 2000,
