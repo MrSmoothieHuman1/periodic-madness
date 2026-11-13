@@ -1488,9 +1488,8 @@ data:extend({
                         filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-rocks.png",
                         width = 128,
                         height = 128,
-                        frame_count = 1,
-                        line_length = 1,
-                        repeat_count = 64,
+                        frame_count = 64,
+                        line_length = 8,
                         scale = 0.5
                     },
                 }
