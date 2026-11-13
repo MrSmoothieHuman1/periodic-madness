@@ -2175,6 +2175,18 @@ data:extend({
     order = "d",
     stack_size = 10,
   },
+  {
+    type = "item-with-entity-data",
+    name = "pm-modular-locomotive",
+    icon = "__base__/graphics/icons/locomotive.png",
+    subgroup = "train-transport",
+    order = "c[rolling-stock]-b[pm-modular-locomotive]",
+    inventory_move_sound = item_sounds.locomotive_inventory_move,
+    pick_sound = item_sounds.locomotive_inventory_pickup,
+    drop_sound = item_sounds.locomotive_inventory_move,
+    place_result = "pm-modular-locomotive",
+    stack_size = 5
+  },
 
   {
     type = "item",

@@ -1145,6 +1145,26 @@ data:extend({
     place_result = "pm-superconductive-substation",
     stack_size = 50,
   },
+  {
+    type = "item",
+    name = "pm-lithium-sulfur-accumulator",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/reverberatory-furnace.png",
+    subgroup = "smelting-machine",
+    order = "k",
+    place_result = "pm-lithium-sulfur-accumulator",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "pm-selenium-sulfur-accumulator",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/reverberatory-furnace.png",
+    subgroup = "smelting-machine",
+    order = "k",
+    place_result = "pm-selenium-sulfur-accumulator",
+    stack_size = 20
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"

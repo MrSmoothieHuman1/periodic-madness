@@ -4694,6 +4694,30 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-lithium-sulfur-electric-energy-accumulators",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/lithium-sulfur-battery.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-lithium-sulfur-accumulator"),
+    },
+    prerequisites = {"pm-lithium-sulfur-battery", "electric-energy-accumulators"},
+    unit =
+    {
+      count = 350,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+      },
+      time = 60
+    }
+  },
 
 --MARK: Tier 2 science
   {
@@ -6380,6 +6404,62 @@ data:extend({
     unit =
     {
       count = 550,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 120
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-modular-locomotive",
+    icon_size = 256,
+    icon = "__base__/graphics/technology/railway.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-modular-locomotive")
+    },
+    prerequisites = {"pm-selenium-sulfur-battery", "pm-advanced-electric-engine-unit", "railway"},
+    unit =
+    {
+      count = 500,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+      },
+      time = 100
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-selenium-sulfur-electric-energy-accumulators",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/selenium-sulfur-battery.png",
+    effects =
+    {
+      PM.unlock_recipe("pm-selenium-sulfur-accumulator"),
+    },
+    prerequisites = {"pm-selenium-sulfur-battery", "pm-lithium-sulfur-electric-energy-accumulators"},
+    unit =
+    {
+      count = 500,
       ingredients =
       {
         {"automation-science-pack", 1},

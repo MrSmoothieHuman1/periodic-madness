@@ -2090,7 +2090,65 @@ data:extend({
     {
         PM.product("pm-superconductive-substation"):amount(1):done()
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "pm-modular-locomotive",
+    enabled = false,
+    energy_required = 6,
+    categories = {"crafting-with-fluid"},
+    ingredients =
+    {
+        PM.ingredient("locomotive", 1),
+        PM.ingredient("pm-advanced-electric-engine-unit", 2),
+        PM.ingredient("pm-heavyweight-panelling", 16),
+        PM.ingredient("pm-selenium-sulfur-battery", 4),
+        PM.ingredient("processing-unit", 2),
+        PM.ingredient("pm-liquid-silicone", 2, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-modular-locomotive"):amount(1):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lithium-sulfur-accumulator",
+    enabled = false,
+    energy_required = 15,
+    main_product = "pm-lithium-sulfur-accumulator",
+    ingredients =
+    {
+        PM.ingredient("accumulator", 1),
+        PM.ingredient("pm-lithium-sulfur-battery", 4),
+        PM.ingredient("pm-heavyweight-panelling", 12),
+        PM.ingredient("pm-gold-wire", 6)
+    },
+    results =
+    {
+        PM.product("pm-lithium-sulfur-accumulator"):amount(1):done(),
+        PM.product("pm-vanadium-redox-battery"):amount(4):chance(0.5):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-selenium-sulfur-accumulator",
+    enabled = false,
+    energy_required = 15,
+    main_product = "pm-selenium-sulfur-accumulator",
+    ingredients =
+    {
+        PM.ingredient("pm-lithium-sulfur-accumulator", 1),
+        PM.ingredient("pm-selenium-sulfur-battery", 4),
+        PM.ingredient("pm-heavyweight-panelling", 12),
+        PM.ingredient("pm-indium-wire", 6)
+    },
+    results =
+    {
+        PM.product("pm-selenium-sulfur-accumulator"):amount(1):done(),
+        PM.product("pm-lithium-sulfur-battery"):amount(4):chance(0.75):done()
+    }
+  },
 } --[[@as data.RecipePrototype[] ]])
 
 data.raw["recipe"]["pipe-to-ground"].enabled = true

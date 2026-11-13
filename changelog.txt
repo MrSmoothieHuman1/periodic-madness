@@ -31,6 +31,9 @@ Date: 2025-11-05
     - Added Oganesson.
     - Added the final major science pack, the actinide pack.
     - Added thorium fuel rods.
+    - Added fuel rods for all fissile actinides.
+    - Added a new tier of locomotives, the modular locomotive. It has 1.5x max speed, 120% efficiency and a 10x10 equipment grid.
+    - Added tiers of accumulators from the different battery tiers.
 
   Changes:
     - Updated strontium fuel rods technology icon.
