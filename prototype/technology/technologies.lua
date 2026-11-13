@@ -3551,7 +3551,8 @@ data:extend({
       PM.unlock_recipe("pm-borosilicate-module-speed-light"),
       PM.unlock_recipe("pm-borosilicate-module-efficiency-light"),
       PM.unlock_recipe("pm-borosilicate-module-productivity-light"),
-      PM.unlock_recipe("pm-borosilicate-empty-reactor-cell")
+      PM.unlock_recipe("pm-borosilicate-empty-reactor-cell"),
+      PM.unlock_recipe("pm-borosilicate-empty-glass-ampule")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =

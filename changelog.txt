@@ -40,6 +40,9 @@ Date: 2025-11-05
     - Updated fine pollucite powder icon and added more variations.
     - Updated advanced material processing 3 technology icon.
 
+  Fixes:
+    - Fixed borosilicate glass not unlocking borosilicate ampules.
+
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.002
 Date: 2025-11-12
