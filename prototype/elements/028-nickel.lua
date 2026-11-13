@@ -106,6 +106,10 @@ data:extend({
     categories = {"pm-crushing"},
     subgroup = "pm-nickel-tm",
     order = "a",
+    crafting_machine_tint =
+    {
+        primary = {0.584, 0.804, 0.82}
+    },
     ingredients = 
     {
       PM.ingredient("pm-nickel-chunk", 2),

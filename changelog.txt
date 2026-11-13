@@ -34,6 +34,7 @@ Date: 2025-11-05
     - Added fuel rods for all fissile actinides.
     - Added a new tier of locomotives, the modular locomotive. It has 1.5x max speed, 120% efficiency and a 10x10 equipment grid.
     - Added tiers of accumulators from the different battery tiers.
+    - Remodeled the burner crusher to fit in with my current skills, and gave it tinting.
 
   Changes:
     - Updated strontium fuel rods technology icon.

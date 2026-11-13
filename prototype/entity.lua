@@ -1423,32 +1423,79 @@ data:extend({
     },
     crafting_categories = { "pm-crushing" },
     crafting_speed = 1,
-    graphics_set = 
-  {
+    graphics_set =
+    {
     animation =
     {
       layers =
       {
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher.png",
-          width = 177,
-          height = 183,
-          frame_count = 56,
-          line_length = 8,
-          shift = util.by_pixel(2.5, 0.5),
+          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-tray.png",
+          width = 128,
+          height = 128,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 64,
+          secondary_draw_order = -1,
           scale = 0.5,
         },
         {
-          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-shadow.png",
-          width = 183,
-          height = 177,
-          frame_count = 56,
-          line_length = 7,
-          draw_as_shadow = true,
-          shift = util.by_pixel(14, 4),
+          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-base.png",
+          width = 128,
+          height = 128,
+          frame_count = 1,
+          line_length = 1,
+          repeat_count = 64,
+          animation_speed = 0.66,
           scale = 0.5,
-        }
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-generator.png",
+          width = 128,
+          height = 128,
+          frame_count = 64,
+          line_length = 8,
+          scale = 0.5,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-crusher.png",
+          width = 128,
+          height = 128,
+          frame_count = 64,
+          line_length = 8,
+          scale = 0.5,
+        },
+        {
+          filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-gears.png",
+          width = 128,
+          height = 128,
+          frame_count = 64,
+          line_length = 8,
+          scale = 0.5,
+        },
       }
+    },
+    working_visualisations = 
+    {
+        {
+            always_draw = true,
+            apply_recipe_tint = "primary",
+            animation =
+            {
+                layers =
+                {
+                    {
+                        filename = "__periodic-madness__/graphics/entities/buildings/burner-crusher/burner-crusher-rocks.png",
+                        width = 128,
+                        height = 128,
+                        frame_count = 1,
+                        line_length = 1,
+                        repeat_count = 64,
+                        scale = 0.5
+                    },
+                }
+            }
+        }
     }
   }
   }--[[@as data.AssemblingMachinePrototype]],
