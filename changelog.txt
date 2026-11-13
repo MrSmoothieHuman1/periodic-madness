@@ -38,6 +38,7 @@ Date: 2025-11-05
   Changes:
     - Updated strontium fuel rods technology icon.
     - Updated fine pollucite powder icon and added more variations.
+    - Updated advanced material processing 3 technology icon.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.002
