@@ -139,6 +139,10 @@ data:extend({
     subgroup = "pm-caesium-am",
     order = "b",
     main_product = "pm-fine-pollucite-powder",
+    crafting_machine_tint = 
+    {
+        primary = {0.878, 0.808, 0.878}
+    },
     ingredients =
     {
       PM.ingredient("pm-pollucite", 12),

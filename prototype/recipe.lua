@@ -22,6 +22,10 @@ data:extend({
     categories = {"pm-crushing"},
     enabled = false,
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {0.3, 0.3, 0.3}
+    },
     ingredients = {PM.ingredient("coal", 2)},
     energy_required = 2,
     results = 
@@ -35,6 +39,10 @@ data:extend({
     energy_required = 4,
     allow_productivity = true,
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.569, 0.565, 0.325}
+    },
     ingredients =
     { 
       PM.ingredient("stone", 4)
@@ -55,6 +63,10 @@ data:extend({
     energy_required = 4,
     allow_productivity = true,
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.831, 0.824, 0.337}
+    },
     ingredients = 
     { 
       PM.ingredient("stone", 4)
@@ -77,6 +89,10 @@ data:extend({
     energy_required = 2,
     enabled = false,
     categories = {"pm-crushing"},
+    crafting_machine_tint = 
+    {
+        primary = {0.71, 0.702, 0.337}
+    },
     ingredients = 
     {
       PM.ingredient("pm-gravel", 2)
@@ -2242,6 +2258,10 @@ data:extend({
     subgroup = "pm-ruby-ptm",
     order = "a",
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.082, 0.267, 0.8}
+    },
     ingredients = 
     {
       PM.ingredient("pm-ruby", 5),
@@ -2259,6 +2279,10 @@ data:extend({
     subgroup = "pm-citrine-ptm",
     order = "a",
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {1, 0.667, 0.082, 0.8}
+    },
     ingredients = 
     {
       PM.ingredient("pm-citrine", 5),
@@ -2276,6 +2300,10 @@ data:extend({
     subgroup = "pm-emerald-ptm",
     order = "a",
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.086, 0.8, 0.133, 0.8}
+    },
     ingredients = 
     {
       PM.ingredient("pm-emerald", 5),
@@ -2293,6 +2321,10 @@ data:extend({
     subgroup = "pm-sapphire-ptm",
     order = "a",
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.114, 0.902, 0.922, 0.8}
+    },
     ingredients = 
     {
       PM.ingredient("pm-sapphire", 5),
@@ -2310,6 +2342,10 @@ data:extend({
     subgroup = "pm-lapis-lazuli-ptm",
     order = "a",
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.114, 0.392, 0.922, 0.8}
+    },
     ingredients = 
     {
       PM.ingredient("pm-lapis-lazuli", 5),
@@ -2327,6 +2363,10 @@ data:extend({
     subgroup = "pm-garnet-ptm",
     order = "a",
     enabled = false,
+    crafting_machine_tint = 
+    {
+        primary = {0.863, 0.114, 0.922, 0.8}
+    },
     ingredients = 
     {
       PM.ingredient("pm-garnet", 5),
@@ -5529,6 +5569,10 @@ data:extend({
     energy_required = 4,
     categories = {"pm-crushing"},
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {0.78, 0.725, 0.533}
+    },
     ingredients =
     {
         PM.ingredient("pm-monazite-chunks", 6)
@@ -6208,6 +6252,10 @@ data:extend({
     energy_required = 15,
     categories = {"pm-crushing"},
     allow_productivity = true,
+    crafting_machine_tint = 
+    {
+        primary = {0.471, 0.212, 0.098}
+    },
     ingredients = 
     {
         PM.ingredient("pm-copper-powder", 16),

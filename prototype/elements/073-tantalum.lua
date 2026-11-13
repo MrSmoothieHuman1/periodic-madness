@@ -113,6 +113,10 @@ data:extend({
         subgroup = "pm-tantalum-tm",
         order = "b",
         allow_productivity = true,
+        crafting_machine_tint = 
+        {
+            primary = {0.267, 0.263, 0.349}
+        },
         ingredients =
         {
             PM.ingredient("pm-coltan", 4)
