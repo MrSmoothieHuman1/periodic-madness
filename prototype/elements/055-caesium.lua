@@ -17,12 +17,13 @@ data:extend({
   {
     type = "item",
     name = "pm-fine-pollucite-powder",
-    icon_size = 128,
+    icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/pollucite-powder.png",
     pictures =
     {
-      { filename = "__periodic-madness__/graphics/icons/ores/pollucite-powder.png",   size = 128, scale = 0.25 },
-      { filename = "__periodic-madness__/graphics/icons/ores/pollucite-powder-2.png", size = 128, scale = 0.25 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pollucite-powder.png",   size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pollucite-powder-2.png", size = 64, scale = 0.5 },
+      { filename = "__periodic-madness__/graphics/icons/ores/pollucite-powder-3.png", size = 64, scale = 0.45 },
     },
     subgroup = "pm-caesium-am",
     order = "a",
