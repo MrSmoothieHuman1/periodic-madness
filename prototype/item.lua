@@ -2414,6 +2414,24 @@ data:extend({
     order = "xx",
     stack_size = 5
   },
+  {
+    type = "item",
+    name = "pm-deep-space-satellite",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/interplanetary-satellite.png",
+    subgroup = "pm-rocket-launchables",
+    order = "f",
+    send_to_orbit_mode = "automated",
+    rocket_launch_products =
+    {
+        PM.product("space-science-pack"):amount(2500):done()
+    },
+    inventory_move_sound = item_sounds.mechanical_inventory_move,
+    pick_sound = item_sounds.mechanical_inventory_pickup,
+    drop_sound = item_sounds.mechanical_inventory_move,
+    weight = 500 * kg,
+    stack_size = 1
+  },
 
   {
     type = "item",
