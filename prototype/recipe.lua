@@ -6692,5 +6692,24 @@ data:extend({
         {
             PM.product("pm-particle-accelerator-section"):amount(1):done()
         }
+    },
+    {
+        type = "recipe",
+        name = "pm-heullserloch-alloy-precursor-scrap-seperation",
+        enabled = false,
+        categories = {"pm-reverberatory-smelting"},
+        energy_required = 40,
+        main_product = "pm-combined-ore-slab",
+        ingredients = 
+        {
+            PM.ingredient("pm-heullserloch-alloy-precursor-scrap", 5),
+            PM.ingredient("pm-chromic-acid", 50, "fluid")
+        },
+        results =
+        {
+            PM.product("pm-combined-ore-slab"):amount(1, 4):done(),
+            PM.product("pm-molten-bright-heullserloch-mixture", "fluid"):amount(0.5, 2):chance(0, 0.5):done(),
+            PM.product("pm-molten-dark-heullserloch-mixture", "fluid"):amount(0.5, 2):chance(0.5, 1):done(),
+        }
     }
 } --[[@as data.RecipePrototype[] ]])
