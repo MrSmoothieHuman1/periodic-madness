@@ -130,7 +130,6 @@ data:extend({
     type = "recipe",
     name = "pm-electronic-integrated-circuits",
     energy_required = 0.25,
-    show_amount_in_title = true,
     allow_productivity = true,
     enabled = false,
     ingredients =
@@ -191,7 +190,6 @@ data:extend({
     type = "recipe",
     name = "pm-fluid-integrated-circuits",
     energy_required = 0.5,
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -256,7 +254,6 @@ data:extend({
     type = "recipe",
     name = "pm-advanced-integrated-circuits",
     energy_required = 0.5,
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -364,7 +361,6 @@ data:extend({
     energy_required = 1.5,
     subgroup = "pm-air-filters-rnm",
     order = "a",
-    show_amount_in_title = true,
     allow_productivity = true,
     ingredients =
     {
@@ -382,7 +378,6 @@ data:extend({
     energy_required = 1,
     subgroup = "pm-air-filters-rnm",
     order = "ab",
-    show_amount_in_title = true,
     allow_productivity = true,
     enabled = false,
     ingredients =
@@ -610,7 +605,6 @@ data:extend({
     energy_required = 0.5,
     subgroup = "pm-wires",
     order = "ba",
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients = { PM.ingredient("pm-gold-plate", 1) },
@@ -627,7 +621,6 @@ data:extend({
     order = "d",
     enabled = false,
     energy_required = 1,
-    show_amount_in_title = true,
     main_product = "pm-glass-fibers",
     allow_productivity = true,
     ingredients =
@@ -679,7 +672,6 @@ data:extend({
     type = "recipe",
     name = "pm-solar-cell",
     energy_required = 5,
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -714,7 +706,6 @@ data:extend({
     categories = {"crafting-with-fluid"},
     subgroup = "pm-lubricant",
     order = "e",
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -1646,7 +1637,6 @@ data:extend({
     name = "pm-better-air-filter",
     subgroup = "pm-air-filters-rnm",
     order = "b",
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -3078,7 +3068,6 @@ data:extend({
     subgroup = "pm-advanced-circuits",
     order = "a",
     allow_productivity = true,
-    show_amount_in_title = true,
     ingredients =
     {
       PM.ingredient("pm-germanium-ore", 2),
@@ -3099,7 +3088,6 @@ data:extend({
     subgroup = "pm-advanced-circuits",
     order = "b",
     allow_productivity = true,
-    show_amount_in_title = true,
     ingredients =
     {
       PM.ingredient("pm-etched-silicon-wafer", 1),
@@ -3140,7 +3128,6 @@ data:extend({
     order = "c",
     enabled = false,
     allow_productivity = true,
-    show_amount_in_title = true,
     ingredients =
     {
       PM.ingredient("pm-electronic-breadboard", 3),
@@ -3161,7 +3148,6 @@ data:extend({
     energy_required = 1,
     subgroup = "pm-advanced-circuits",
     order = "d",
-    show_amount_in_title = true,
     enabled = false, 
     allow_productivity = true,
     ingredients =
@@ -3205,7 +3191,6 @@ data:extend({
     order = "e",
     enabled = false,
     allow_productivity = true,
-    show_amount_in_title = true,
     ingredients =
     {
       PM.ingredient("pm-germanium-ore", 3),
@@ -3226,7 +3211,6 @@ data:extend({
     energy_required = 1,
     subgroup = "pm-advanced-circuits",
     order = "f",
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients =
@@ -4685,7 +4669,6 @@ data:extend({
     categories = {"crafting-with-fluid"},
     subgroup = "pm-lubricant",
     order = "f",
-    show_amount_in_title = true,
     enabled = false,
     allow_productivity = true,
     ingredients =

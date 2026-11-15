@@ -77,7 +77,6 @@ data:extend({
     name = "pm-copper-disc",
     enabled = false,
     energy_required = 0.5,
-    show_amount_in_title = true,
     subgroup = "pm-batteries",
     order = "a",
     ingredients =
@@ -93,7 +92,6 @@ data:extend({
     type = "recipe",
     name = "pm-zinc-disc",
     energy_required = 0.5,
-    show_amount_in_title = true,
     enabled = false,
     subgroup = "pm-batteries",
     order = "b",

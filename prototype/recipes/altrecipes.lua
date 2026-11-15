@@ -353,7 +353,6 @@ data:extend({
     energy_required = 2,
     enabled = false,
     allow_decomposition = false,
-    always_show_made_in = true,
     ingredients =
     {
       PM.ingredient("pm-fluid-integrated-circuit-mold", 3),

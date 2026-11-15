@@ -115,7 +115,6 @@ data:extend({
     name = "pm-high-density-underground-belt",
     enabled = false,
     energy_required = 3,
-    show_amount_in_title = true,
     categories = {"crafting-with-fluid"},
     ingredients =
     {
@@ -1022,7 +1021,6 @@ data:extend({
     name = "pm-advanced-underground-belt",
     enabled = false,
     energy_required = 2,
-    show_amount_in_title = true,
     ingredients =
     {
       PM.ingredient("fast-underground-belt", 2),
