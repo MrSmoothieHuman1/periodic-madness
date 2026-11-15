@@ -41,6 +41,7 @@ Date: 2025-11-05
     - Updated strontium fuel rods technology icon.
     - Updated fine pollucite powder icon and added more variations.
     - Updated advanced material processing 3 technology icon.
+    - Changed all thrusters to stack to 10 instead of 100.
 
   Fixes:
     - Fixed borosilicate glass not unlocking borosilicate ampules.

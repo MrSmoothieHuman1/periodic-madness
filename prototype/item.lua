@@ -2356,7 +2356,7 @@ data:extend({
     icon_size = 64,
     subgroup = "pm-ion-rocket-fuels",
     order = "b",
-    stack_size = 100
+    stack_size = 10
   },
   {
     type = "item",
@@ -2440,6 +2440,15 @@ data:extend({
     subgroup = "pm-nuclear-rocket-fuels",
     order = "a",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "pm-nuclear-thruster",
+    icon = "__periodic-madness__/graphics/icons/nuclear-thruster-fuel-tank.png",
+    icon_size = 64,
+    subgroup = "pm-nuclear-rocket-fuels",
+    order = "b",
+    stack_size = 10
   },
 
   {

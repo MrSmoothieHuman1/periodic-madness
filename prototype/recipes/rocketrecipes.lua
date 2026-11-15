@@ -568,6 +568,31 @@ data:extend({
         PM.product("pm-interplanetary-satellite"):amount(1):done()
     }
   },
+  {
+    type = "recipe",
+    name = "pm-deep-space-satellite",
+    enabled = false,
+    energy_required = 60,
+    ingredients = 
+    {
+        PM.ingredient("pm-solar-panel-3", 15),
+        PM.ingredient("rocket-fuel", 8),
+        PM.ingredient("pm-gyroscope", 1),
+        PM.ingredient("pm-radiation-resistant-panelling", 36),
+        PM.ingredient("pm-mylar", 8),
+        PM.ingredient("pm-space-processing-unit", 12),
+        PM.ingredient("pm-selenium-sulfur-battery", 20),
+        PM.ingredient("pm-rocket-control-unit", 5),
+        PM.ingredient("pm-ion-thruster-fuel-tank", 3),
+        PM.ingredient("pm-ion-thruster", 1),
+        PM.ingredient("pm-nuclear-thruster-fuel-tank", 5),
+        PM.ingredient("pm-nuclear-thruster", 1)
+    },
+    results = 
+    {
+        PM.product("pm-deep-space-satellite"):amount(1):done()
+    }
+  },
 
 --MARK: Rocket recipes
   {

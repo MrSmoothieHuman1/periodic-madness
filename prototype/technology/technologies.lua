@@ -8109,6 +8109,7 @@ data:extend({
     effects =
     {
         PM.unlock_recipe("pm-liquid-hydrogen"),
+        PM.unlock_recipe("pm-deep-space-satellite")
     },
     prerequisites = {"pm-interplanetary-satellite", "pm-actinide-science-pack"},
     unit =
