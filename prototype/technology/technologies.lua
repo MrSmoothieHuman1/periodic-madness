@@ -8108,6 +8108,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
+        PM.unlock_recipe("pm-liquid-hydrogen"),
     },
     prerequisites = {"pm-interplanetary-satellite", "pm-actinide-science-pack"},
     unit =
