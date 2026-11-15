@@ -24,6 +24,42 @@ data:extend({
 
     {
         type = "recipe",
+        name = "pm-mixed-protactinium-salts",
+        enabled = false,
+        energy_required = 30,
+        categories = {"pm-washing"},
+        ingredients =
+        {
+            PM.ingredient("pm-light-actinium-deposit", 5),
+            PM.ingredient("pm-hydroflouric-acid", 10, "fluid"),
+            PM.ingredient("sulfuric-acid", 20, "fluid")
+        },
+        results = 
+        {
+            PM.product("pm-mixed-protactinium-salts"):amount(3, 8):done()
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-mixed-protactinium-salts-seperation",
+        enabled = false,
+        energy_required = 16,
+        categories = {"centrifuging"},
+        ingredients = 
+        {
+            PM.ingredient("pm-mixed-protactinium-salts", 5),
+        },
+        results = 
+        {
+            PM.product("pm-protactinium-oxide"):amount(2, 3):done(),
+            PM.product("pm-protactinium-fluoride"):amount(1, 2):done(),
+            PM.product("pm-protactinium-chloride"):amount(1, 3):done(),
+            PM.product("pm-protactinium-terbate"):amount(1, 3):done()
+        }
+    },
+
+    {
+        type = "recipe",
         name = "pm-protactinium-233",
         enabled = false,
         energy_required = 12,

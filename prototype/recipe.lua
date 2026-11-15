@@ -6711,5 +6711,5 @@ data:extend({
             PM.product("pm-molten-bright-heullserloch-mixture", "fluid"):amount(0.5, 2):chance(0, 0.5):done(),
             PM.product("pm-molten-dark-heullserloch-mixture", "fluid"):amount(0.5, 2):chance(0.5, 1):done(),
         }
-    }
+    },
 } --[[@as data.RecipePrototype[] ]])

@@ -533,7 +533,7 @@ data:extend({
 --MARK: Prod beacon
      {
         type = "beacon",
-        name = "pm-productivity-beacon",
+        name = "pm-gamma-beacon",
         icon = "__periodic-madness__/graphics/icons/buildings/beacon-2.png",
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "pm-beacon-2"},
