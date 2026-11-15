@@ -1714,6 +1714,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-nuclear-rocket-fuels",
+    group = "pm-rockets",
+    order = "ab"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-rocket-parts",
     group = "pm-rockets",
     order = "b"

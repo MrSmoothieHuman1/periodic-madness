@@ -2432,6 +2432,15 @@ data:extend({
     weight = 500 * kg,
     stack_size = 1
   },
+  {
+    type = "item",
+    name = "pm-nuclear-thruster-fuel-tank",
+    icon = "__periodic-madness__/graphics/icons/nuclear-thruster-fuel-tank.png",
+    icon_size = 64,
+    subgroup = "pm-nuclear-rocket-fuels",
+    order = "a",
+    stack_size = 100
+  },
 
   {
     type = "item",
