@@ -22,7 +22,7 @@ data:extend({
         stack_size = 100,
     },
 
-    {
+    --[[{
         type = "recipe",
         name = "pm-mixed-protactinium-salts",
         enabled = false,
@@ -56,7 +56,7 @@ data:extend({
             PM.product("pm-protactinium-chloride"):amount(1, 3):done(),
             PM.product("pm-protactinium-terbate"):amount(1, 3):done()
         }
-    },
+    },--]]
 
     {
         type = "recipe",

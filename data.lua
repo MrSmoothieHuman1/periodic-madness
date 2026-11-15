@@ -406,7 +406,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/alkaline-earth-metal-icon.png",
     flags = {"placeable-neutral"},
     order = "c",
-    map_color = {r=0.753, g=0.18, b=0.1},
+    map_color = {0.925, 0.412, 0.941},
     minable =
     {
       hardness = 1,
@@ -508,7 +508,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/lanthanum-ore.png",
     flags = {"placeable-neutral"},
     order= "c",
-    map_color = {r=0.5, g=0.84, b=1},
+    map_color = {r=0.95, g=0.95, b=0.95},
     minable =
     {
       hardness = 1,
@@ -563,7 +563,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/ores/lanthanum-ore.png",
     flags = {"placeable-neutral"},
     order= "c",
-    map_color = {r=0.5, g=0.84, b=1},
+    map_color = {r=0.15, g=0.15, b=0.15},
     minable =
     {
       hardness = 1,
