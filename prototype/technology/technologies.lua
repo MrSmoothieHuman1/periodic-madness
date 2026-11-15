@@ -8132,6 +8132,66 @@ data:extend({
       time = 360
     }
   },
+  {
+    type = "technology",
+    name = "pm-space-solar-energy",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-travelling-wave-erbium-amplifier-tubes", "pm-space-processing-units"},
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 240
+    }
+  },
+  {
+    type = "technology",
+    name = "pm-space-lunar-energy",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-actinide-science-pack", "pm-space-solar-energy"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"space-science-pack", 1}
+      },
+      time = 330
+    }
+  },
 
 --MARK: LA science
   {
