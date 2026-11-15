@@ -46,8 +46,22 @@ Date: 2025-11-05
     - Fixed borosilicate glass not unlocking borosilicate ampules.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.003
+Date: 2026-11-15
+  The when she map on my color Update:
+
+  Changes:
+    - Updated the molding recipe icons for integrated circuits, to use the new models.
+
+  Fixes:
+    - Fixed Alkaline earth metal ore map colour being a bright red, instead of matching the science pack color.
+    - Fixed lanthanum sharing a map colour with Post-transition metals, it's now white to match the science pack color.
+    - Fixed light coolant fluorite crystallisation outputting hot coolant and not hot light coolant.
+    - Fixed reusable rocket part unpacking producing more guidance units then you insert.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.002
-Date: 2025-11-12
+Date: 2026-11-12
   The gyulp Update:
 
   Fixes:
@@ -56,7 +70,7 @@ Date: 2025-11-12
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.001
-Date: 2025-11-04
+Date: 2026-11-04
   The GOOOOOOOOOD EVENING VIETNAMMMMM Update:
 
   Changes:

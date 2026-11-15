@@ -495,7 +495,7 @@ data:extend({
     },
     results =
     {
-        PM.product("pm-reusable-rocket-guidance-unit"):amount(1):chance(0.2):done(),
+        PM.product("pm-reusable-rocket-guidance-unit"):amount(1):chance(0.2):catalyst(1):done(),
         PM.product("pm-rocket-control-unit"):amount(1):chance(0.5):done(),
         PM.product("pm-rocket-cladding-parts"):amount(2):chance(0.5):done(),
         PM.product("pm-rocket-nozzle-parts"):amount(2):chance(0.5):done(),

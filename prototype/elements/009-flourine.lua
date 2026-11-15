@@ -233,7 +233,7 @@ data:extend({
     results =
     {
       PM.product("pm-flourite"):amount(16):done(),
-      PM.product("pm-hot-coolant", "fluid"):amount(5):catalyst(5):index(1):done()
+      PM.product("pm-hot-light-coolant", "fluid"):amount(5):catalyst(5):index(1):done()
     }
   } --[[@as data.RecipePrototype]],
 })
