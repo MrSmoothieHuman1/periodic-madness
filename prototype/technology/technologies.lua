@@ -9375,8 +9375,6 @@ data:extend({
       time = 300
     }
   },
-
-  --##MARK: Win condition
   {
     type = "technology",
     name = "pm-8-particle-accelerator",
@@ -9386,7 +9384,7 @@ data:extend({
     {
         
     },
-    prerequisites = {"pm-particle-accelerator-section-production", "pm-experimental-research-data"},
+    prerequisites = {"pm-particle-accelerator-section-production"},
     unit =
     {
       count = 2000,
@@ -9404,11 +9402,43 @@ data:extend({
         {"pm-noble-gas-science-pack", 1},
         {"pm-lanthanide-science-pack", 1},
         {"pm-actinide-science-pack", 1},
-        {"pm-experimental-research-data", 1}
       },
       time = 360
     }
   },
+  {
+    type = "technology",
+    name = "pm-particle-accelerator-nuclear-waste-recycling",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    effects =
+    {
+        
+    },
+    prerequisites = {"pm-8-particle-accelerator"},
+    unit =
+    {
+      count = 1500,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1},
+      },
+      time = 330
+    }
+  },
+
+  --##MARK: Win condition
   {
     type = "technology",
     name = "pm-bohrium-processing",
@@ -9435,7 +9465,7 @@ data:extend({
     {
         
     },
-    prerequisites = {"pm-bohrium-processing"},
+    prerequisites = {"pm-bohrium-processing", "pm-experimental-research-data"},
     unit =
     {
       count = 3000,
