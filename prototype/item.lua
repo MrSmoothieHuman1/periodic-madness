@@ -2418,7 +2418,7 @@ data:extend({
     type = "item",
     name = "pm-deep-space-satellite",
     icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/interplanetary-satellite.png",
+    icon = "__periodic-madness__/graphics/icons/deep-space-satellite.png",
     subgroup = "pm-rocket-launchables",
     order = "f",
     send_to_orbit_mode = "automated",

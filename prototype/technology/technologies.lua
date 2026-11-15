@@ -8104,8 +8104,8 @@ data:extend({
   {
     type = "technology",
     name = "pm-deep-space-satellite",
-    icon_size = 256,
-    icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/deep-space-satellite.png",
     effects =
     {
         PM.unlock_recipe("pm-liquid-hydrogen"),
