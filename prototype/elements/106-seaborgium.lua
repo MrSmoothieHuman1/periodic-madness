@@ -19,7 +19,7 @@ data:extend({
         type = "recipe",
         name = "pm-seaborgium-263",
         enabled = false,
-        energy_required = 5,
+        energy_required = 2.5,
         categories = {"ENOUGHISNEVER"},
         main_product = "pm-seaborgium-263",
         ingredients =

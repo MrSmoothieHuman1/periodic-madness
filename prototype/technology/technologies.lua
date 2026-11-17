@@ -9453,14 +9453,16 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-manganese-54"),
+        PM.unlock_recipe("pm-chromium-54"),
+        PM.unlock_recipe("pm-bohrium-262")
     },
     prerequisites = {"pm-8-particle-accelerator"},
     research_trigger =
     {
         type = "craft-item",
-        item = "iron-plate",
-        amount = 10
+        item = "pm-seaborgium-263",
+        amount = 5
     }
   },
   {

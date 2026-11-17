@@ -15,6 +15,29 @@ data:extend({
     order = "a",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-manganese-54",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-2.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/manganese-ore-icon-4.png", size = 64, scale = 0.5},
+    },
+    subgroup = "pm-manganese-tm",
+    order = "x",
+    custom_tooltip_fields =
+    {
+        {
+          name = {"pm-tooltips.beta-decay"},
+          value = {"", "[img=item.pm-polonium-210]", {"item-name.pm-chromium-54"}}
+        },
+    },
+    stack_size = 200
+  },
 
   {
     type = "recipe",
@@ -172,4 +195,19 @@ data:extend({
       PM.product("pm-crucible"):amount(1):chance(0.8):done()
     }
   },
+
+  {
+    type = "recipe",
+    name = "pm-manganese-54",
+    enabled = false,
+    categories = {"pm-cyclotroning"},
+    ingredients =
+    {
+        PM.ingredient("pm-manganese-plate", 5),
+    },
+    results = 
+    {
+        PM.product("pm-manganese-54"):amount(5):done()
+    }
+  }
 })

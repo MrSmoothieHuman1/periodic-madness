@@ -57,6 +57,22 @@ data:extend({
     order = "c",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "pm-chromium-54",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png",
+    pictures =
+    {
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon.png", size = 64, scale = 0.5},
+      --{filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-2.png", size = 64, scale = 0.5}, i forgot to commit it, whoops
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-3.png", size = 64, scale = 0.5},
+      {filename = "__periodic-madness__/graphics/icons/ores/chromium-ore-icon-4.png", size = 64, scale = 0.5}
+    },
+    subgroup = "pm-chrominum-tm",
+    order = "x",
+    stack_size = 200,
+  },
 
   {
     type = "recipe",
@@ -189,4 +205,23 @@ data:extend({
       PM.product("pm-chrome-green"):amount(6):done()
     }
   } --[[@as data.RecipePrototype]],
+
+  {
+    type = "recipe",
+    name = "pm-chromium-54",
+    enabled = false,
+    energy_required = 15,
+    categories = {"pm-beta-decay"},
+    allow_productivity = true,
+    main_product = "pm-chromium-54",
+    ingredients = 
+    {
+        PM.ingredient("pm-manganese-54", 4)
+    },
+    results =
+    {
+        PM.product("pm-manganese-54"):amount(2):chance(0, 0.5):catalyst(2):done(),
+        PM.product("pm-chromium-54"):amount(2):chance(0.5, 1):done()
+    }
+  }
 })
