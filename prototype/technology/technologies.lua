@@ -8795,7 +8795,12 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-
+        PM.unlock_recipe("pm-mixed-protactinium-salts"),
+        PM.unlock_recipe("pm-mixed-protactinium-salts-seperation"),
+        PM.unlock_recipe("pm-protactinium-chloride-to-fluoride"),
+        PM.unlock_recipe("pm-protactinium-terbate-to-oxide"),
+        PM.unlock_recipe("pm-protactinium-oxide-to-fluoride"),
+        PM.unlock_recipe("pm-protactinium-231"),
     },
     prerequisites = {"pm-actinium-processing"},
     unit =

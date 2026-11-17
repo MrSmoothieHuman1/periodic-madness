@@ -385,7 +385,7 @@ data:extend({
         type = "recipe",
         name = "pm-thorium-filter-cake",
         enabled = false,
-        energy_required = 36,
+        energy_required = 32,
         categories = {"pm-washing"},
         main_product = "pm-thorium-filter-cake",
         ingredients =
@@ -502,7 +502,6 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-liquid-thorium-fluoride-waste", 10, "fluid"),
-            
         },
         results =
         {

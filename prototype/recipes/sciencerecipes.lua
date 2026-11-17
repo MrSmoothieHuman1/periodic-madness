@@ -801,13 +801,14 @@ data:extend({
     categories = {"pm-liquid-science"},
     allow_productivity = true,
     auto_recycle = true,
-    crafting_machine_tint = 
+    crafting_machine_tint =
     {
         primary = {0.3, 0.3, 0.3}
     },
     ingredients =
     {
         PM.ingredient("pm-thorium-233", 20),
+        PM.ingredient("pm-protactinium-231", 25),
     },
     results = 
     {
