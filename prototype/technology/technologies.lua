@@ -9387,7 +9387,9 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-fluorine-18"),
+        PM.unlock_recipe("pm-oxygen-18"),
+        PM.unlock_recipe("pm-seaborgium-263")
     },
     prerequisites = {"pm-particle-accelerator-section-production"},
     unit =

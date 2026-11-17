@@ -25,6 +25,21 @@ data:extend({
       base_color = {r = 1, g = 0.25, b = 0.25},
       flow_color = {r = 0.75, g = 0.25, b = 0.25}
     },
+    {
+      type = "fluid",
+      name = "pm-oxygen-18",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/fluids/oxygen-gas.png",
+      subgroup = "pm-oxygen-rnm",
+      order = "h",
+      protons = 8,
+      neutrons = 8,
+      default_temperature = 15,
+      gas_temperature = 15,
+      fuel_value = "1MJ",
+      base_color = {r = 1, g = 0, b = 0},
+      flow_color = {r = 0.75, g = 0, b = 0}
+    },
 
     {
         type = "recipe",
@@ -137,6 +152,24 @@ data:extend({
         results =
         {
             PM.product("pm-liquid-oxygen", "fluid"):amount(1):done()
+        }
+    },
+    {
+        type = "recipe",
+        name = "pm-oxygen-18",
+        enabled = false,
+        energy_required = 15,
+        categories = {"pm-beta-decay"},
+        main_product = "pm-oxygen-18",
+        allow_productivity = true,
+        ingredients =
+        {
+            PM.ingredient("pm-fluorine-18", 4)
+        },
+        results =
+        {
+            PM.product("pm-fluorine-18"):amount(2):chance(0, 0.5):catalyst(2):done(),
+            PM.product("pm-oxygen-18", "fluid"):amount(2):chance(0.5, 1):done(),
         }
     },
 

@@ -27,6 +27,22 @@ data:extend({
     neutrons = 10,
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "pm-fluorine-18",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/ores/flourine.png",
+    subgroup = "pm-flourine-rnm",
+    order = "f",
+    custom_tooltip_fields =
+    {
+        {
+          name = {"pm-tooltips.beta-decay"},
+          value = {"", "[img=item.pm-polonium-210]", {"fluid-name.pm-oxygen-18"}}
+        },
+    },
+    stack_size = 200
+  },
 
   {
     type = "fluid",
@@ -236,4 +252,20 @@ data:extend({
       PM.product("pm-hot-light-coolant", "fluid"):amount(5):catalyst(5):index(1):done()
     }
   } --[[@as data.RecipePrototype]],
+  {
+    type = "recipe",
+    name = "pm-fluorine-18",
+    enabled = false,
+    energy_required = 15,
+    categories = {"pm-cyclotroning"},
+    ingredients = 
+    {
+        PM.ingredient("pm-liquid-nitrogen", 2, "fluid"),
+        PM.ingredient("pm-helium-gas", 20, "fluid")
+    },
+    results =
+    {
+        PM.product("pm-fluorine-18"):amount(10):done()
+    }
+  },
 })

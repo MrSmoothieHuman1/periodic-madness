@@ -1008,6 +1008,36 @@ data:extend({
     group = "pm-transition-metals",
     order = "zg"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-seaborgium-tm",
+    group = "pm-transition-metals",
+    order = "zh"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-bohrium-tm",
+    group = "pm-transition-metals",
+    order = "zi"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-hassium-tm",
+    group = "pm-transition-metals",
+    order = "zj"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-meitnerium-tm",
+    group = "pm-transition-metals",
+    order = "zk"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-darmstadium-tm",
+    group = "pm-transition-metals",
+    order = "zk"
+  },
 
   --MARK: Post Transition
   {
@@ -1074,43 +1104,67 @@ data:extend({
     type = "item-subgroup",
     name = "pm-astatine-ptm",
     group = "pm-post-transition-metals",
-    order = "ka"
-  },
-  {
-    type = "item-subgroup",
-    name = "pm-ruby-ptm",
-    group = "pm-post-transition-metals",
     order = "l"
   },
   {
     type = "item-subgroup",
-    name = "pm-citrine-ptm",
+    name = "pm-nihonium-ptm",
     group = "pm-post-transition-metals",
     order = "m"
   },
   {
     type = "item-subgroup",
-    name = "pm-emerald-ptm",
+    name = "pm-flevorium-ptm",
     group = "pm-post-transition-metals",
     order = "n"
   },
   {
     type = "item-subgroup",
-    name = "pm-sapphire-ptm",
+    name = "pm-nihonium-ptm",
     group = "pm-post-transition-metals",
     order = "o"
   },
   {
     type = "item-subgroup",
-    name = "pm-lapis-lazuli-ptm",
+    name = "pm-moscovium-ptm",
     group = "pm-post-transition-metals",
     order = "p"
   },
   {
     type = "item-subgroup",
+    name = "pm-ruby-ptm",
+    group = "pm-post-transition-metals",
+    order = "x"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-citrine-ptm",
+    group = "pm-post-transition-metals",
+    order = "xa"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-emerald-ptm",
+    group = "pm-post-transition-metals",
+    order = "xb"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-sapphire-ptm",
+    group = "pm-post-transition-metals",
+    order = "xc"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-lapis-lazuli-ptm",
+    group = "pm-post-transition-metals",
+    order = "xd"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-garnet-ptm",
     group = "pm-post-transition-metals",
-    order = "q"
+    order = "xe"
   },
 
   --MARK: Alkaline
