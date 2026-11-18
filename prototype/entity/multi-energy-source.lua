@@ -390,6 +390,36 @@ local biggest_accelerator = {
 			usage_ratio = 5,
 		},
 	},
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 0.5}},
+        },
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="output", direction = defines.direction.east --[[@as int]], position = {3.5, -0.5}},
+        },
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 1.5}},
+        },
+      },
+    },
 	graphics_set =
 	{
 		status_colors = pm_diode_status_colors(),
@@ -456,6 +486,36 @@ local bigger_accelerator = {
 			usage_ratio = 5,
 		},
 	},
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 0.5}},
+        },
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="output", direction = defines.direction.east --[[@as int]], position = {3.5, -0.5}},
+        },
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 1.5}},
+        },
+      },
+    },
 	graphics_set =
 	{
 		status_colors = pm_diode_status_colors(),
@@ -522,6 +582,36 @@ local big_accelerator = {
 			usage_ratio = 5,
 		},
 	},
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 0.5}},
+        },
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="output", direction = defines.direction.east --[[@as int]], position = {3.5, -0.5}},
+        },
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 1.5}},
+        },
+      },
+    },
 	graphics_set =
 	{
 		status_colors = pm_diode_status_colors(),
@@ -588,6 +678,36 @@ local small_accelerator = {
 			usage_ratio = 5,
 		},
 	},
+    fluid_boxes =
+    {
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 0.5}},
+        },
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="output", direction = defines.direction.east --[[@as int]], position = {3.5, -0.5}},
+        },
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        volume = 500,
+        pipe_connections =
+        {
+          {flow_direction="input", direction = defines.direction.east --[[@as int]], position = {3.5, 1.5}},
+        },
+      },
+    },
 	graphics_set =
 	{
 		status_colors = pm_diode_status_colors(),

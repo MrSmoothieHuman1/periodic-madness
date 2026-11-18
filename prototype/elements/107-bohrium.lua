@@ -31,7 +31,7 @@ data:extend({
         {
             PM.product("pm-chromium-54"):amount(4):chance(0, 0.15):done(),
             PM.product("pm-seaborgium-263"):amount(4):chance(0, 0.15):done(),
-            PM.product("pm-bohrium-262"):amount(2):chance(0.85, 1):done()
+            PM.product("pm-bohrium-262"):amount(2):chance(0.15, 1):done()
         }
     },
 
