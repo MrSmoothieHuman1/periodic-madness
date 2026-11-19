@@ -742,7 +742,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-platinum-plate", 8),
+        PM.ingredient("pm-holmium-plate", 8),
         PM.ingredient("pm-molten-nickel", 20, "fluid"),
         PM.ingredient("pm-molten-aluminium", 10, "fluid"),
         PM.ingredient("pm-barium-ore", 6),

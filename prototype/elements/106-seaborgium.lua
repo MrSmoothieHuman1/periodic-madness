@@ -31,7 +31,7 @@ data:extend({
         {
             PM.product("pm-oxygen-18", "fluid"):amount(4):chance(0, 0.1):done(),
             --PM.product("pm-calinforium-249"):amount(4):chance(0, 0.1):done(),
-            PM.product("pm-seaborgium-263"):amount(2):chance(0.9, 1):done()
+            PM.product("pm-seaborgium-263"):amount(2):chance(0.1, 1):done()
         }
     },
 })

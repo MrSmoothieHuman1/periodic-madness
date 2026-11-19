@@ -358,7 +358,7 @@ local biggest_accelerator = {
 	alert_icon_shift = util.by_pixel(0, -12),
 	crafting_speed = 1,
 	crafting_categories = { "ENOUGHISNEVER" },
-	module_slots = 6,
+	module_slots = 1,
 	allowed_effects = PM.all_effects(),
 	icons_positioning =
 	{
@@ -454,7 +454,7 @@ local bigger_accelerator = {
 	alert_icon_shift = util.by_pixel(0, -12),
 	crafting_speed = 0.5,
 	crafting_categories = { "ENOUGHISNEVER" },
-	module_slots = 6,
+	module_slots = 0,
 	allowed_effects = PM.all_effects(),
 	icons_positioning =
 	{
@@ -550,7 +550,7 @@ local big_accelerator = {
 	alert_icon_shift = util.by_pixel(0, -12),
 	crafting_speed = 0.25,
 	crafting_categories = { "ENOUGHISNEVER" },
-	module_slots = 6,
+	module_slots = 0,
 	allowed_effects = PM.all_effects(),
 	icons_positioning =
 	{
@@ -646,7 +646,7 @@ local small_accelerator = {
 	alert_icon_shift = util.by_pixel(0, -12),
 	crafting_speed = 0.125,
 	crafting_categories = { "ENOUGHISNEVER" },
-	module_slots = 6,
+	module_slots = 0,
 	allowed_effects = PM.all_effects(),
 	icons_positioning =
 	{
