@@ -7,7 +7,7 @@ data:extend({
     categories = {"pm-evaporation"},
     subgroup = "pm-acidic-water",
     order = "a",
-    enabled = true,
+    enabled = false,
     energy_required = 2,
     ingredients =
     {

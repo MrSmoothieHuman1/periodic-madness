@@ -85,6 +85,7 @@ data:extend({
         type = "recipe",
         name = "pm-cerium-dioxide",
         energy_required = 24,
+        enabled = false,
         categories = {"pm-mixing"},
         main_product = "pm-cerium-dioxide",
         ingredients =
@@ -104,6 +105,7 @@ data:extend({
         type = "recipe",
         name = "pm-cerium",
         energy_required = 24,
+        enabled = false,
         categories = {"chemistry"},
         main_product = "pm-cerium",
         allow_productivity = true,
@@ -122,6 +124,7 @@ data:extend({
     {
         type = "recipe",
         name = "pm-cerium-plate",
+        enabled = false,
         energy_required = 6.4,
         categories = {"smelting"},
         allow_productivity = true,

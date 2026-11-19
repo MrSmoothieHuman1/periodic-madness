@@ -200,64 +200,64 @@ data:extend({
   {
     type = "item-group",
     name = "pm-transition-metals",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/transition-metals.jpeg",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/groups/transition-metals.png",
     order = "e"
   },
   {
     type = "item-group",
-    name = "pm-post-transition-metals",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/post-transition-metals.jpeg",
+    name = "pm-reactive-non-metals",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/reactive-non-metal-unlock.png",
     order = "ea"
   },
   {
     type = "item-group",
-    name = "pm-reactive-non-metals",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/reactive-non-metals.jpeg",
-    order = "ec"
-  },
-  {
-    type = "item-group",
-    name = "pm-metalloids",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/metalloids.jpeg",
+    name = "pm-post-transition-metals",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/icons/groups/post-transition-metals.png",
     order = "eb"
   },
   {
     type = "item-group",
-    name = "pm-alkali-metals",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/alkali-metals.jpeg",
+    name = "pm-metalloids",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/metalloid-unlock.png",
     order = "ed"
   },
   {
     type = "item-group",
+    name = "pm-alkali-metals",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/alkali-metal-unlock.png",
+    order = "ec"
+  },
+  {
+    type = "item-group",
     name = "pm-alkaline-earth-metals",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/alkali-earth-metals.jpeg",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/alkaline-earth-metal-unlock.png",
     order = "ee"
   },
   {
     type = "item-group",
     name = "pm-noble-gases",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/noble-gases.jpeg",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/noble-gas-unlock.png",
     order = "ef"
   },
   {
     type = "item-group",
-    name = "pm-actinides",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/actinides.jpeg",
+    name = "pm-lanthanides",
+    icon_size = 256,
+    icon = "__base__/graphics/technology/space-science-pack.png",
     order = "eg"
   },
   {
     type = "item-group",
-    name = "pm-lanthanides",
-    icon_size = 128,
-    icon = "__periodic-madness__/graphics/icons/groups/lathanides.jpeg",
+    name = "pm-actinides",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/actinide-science-pack.png",
     order = "eh"
   },
   {

@@ -5800,6 +5800,7 @@ data:extend({
     type = "recipe",
     name = "pm-pure-bastnasite",
     energy_required = 6,
+    enabled = false,
     categories = {"pm-acids"},
     allow_productivity = true,
     ingredients =
@@ -5817,6 +5818,7 @@ data:extend({
     type = "recipe",
     name = "pm-leached-bastnasite",
     energy_required = 12,
+    enabled = false,
     categories = {"pm-mixing"},
     allow_productivity = true,
     main_product = "pm-leached-bastnasite",
@@ -5837,6 +5839,7 @@ data:extend({
    type = "recipe",
    name = "pm-roasted-bastnasite",
    energy_required = 16,
+   enabled = false,
    categories = {"pm-moltening"}, --should be in one the new furnaces
    allow_productivity = true,
    main_product = "pm-roasted-bastnasite",
