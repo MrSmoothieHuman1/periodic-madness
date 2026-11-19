@@ -42,6 +42,7 @@ Date: 2025-11-05
     - Updated fine pollucite powder icon and added more variations.
     - Updated advanced material processing 3 technology icon.
     - Changed all thrusters to stack to 10 instead of 100.
+    - Added variations to the molten metals design, to help with colour availability and readability.
 
   Fixes:
     - Fixed borosilicate glass not unlocking borosilicate ampules.
