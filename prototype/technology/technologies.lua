@@ -9472,7 +9472,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-neon-isotope-centrifuging"),
+        PM.unlock_recipe("pm-hassium-270")
     },
     prerequisites = {"pm-bohrium-processing", "pm-experimental-research-data"},
     unit =

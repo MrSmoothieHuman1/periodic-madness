@@ -1054,7 +1054,7 @@ data:extend({
     type = "item-subgroup",
     name = "pm-darmstadium-tm",
     group = "pm-transition-metals",
-    order = "zk"
+    order = "zl"
   },
 
   --MARK: Post Transition
