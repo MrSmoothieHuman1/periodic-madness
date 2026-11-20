@@ -60,9 +60,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-iron-58"):amount(4):chance(0, 0.25):done(),
-            PM.product("pm-hassium-270"):amount(4):chance(0, 0.25):done(),
-            PM.product("pm-meitnerium-266"):amount(2):chance(0.25, 1):done()
+            PM.product("pm-iron-58"):amount(4):chance(0, 0.15):done(),
+            PM.product("pm-hassium-270"):amount(4):chance(0, 0.15):done(),
+            PM.product("pm-meitnerium-266"):amount(2):chance(0.15, 1):done()
         }
     },
 })

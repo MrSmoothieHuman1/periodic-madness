@@ -1056,6 +1056,18 @@ data:extend({
     group = "pm-transition-metals",
     order = "zl"
   },
+  {
+    type = "item-subgroup",
+    name = "pm-roetgenium-tm",
+    group = "pm-transition-metals",
+    order = "zm"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-copernicium-tm",
+    group = "pm-transition-metals",
+    order = "zn"
+  },
 
   --MARK: Post Transition
   {

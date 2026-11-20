@@ -9570,7 +9570,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-nickel-isotope-centrifuging"),
+        PM.unlock_recipe("pm-darmstadium-269")
     },
     prerequisites = {"pm-meitnerium-processing"},
     unit =
@@ -9602,7 +9603,10 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-copper-64"),
+        PM.unlock_recipe("pm-copper-64-beta-decay"),
+        PM.unlock_recipe("pm-nickel-64"),
+        PM.unlock_recipe("pm-roetgenium-272")
     },
     prerequisites = {"pm-darmstadium-processing"},
     unit =

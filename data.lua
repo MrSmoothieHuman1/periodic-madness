@@ -143,6 +143,8 @@ require("prototype.elements.106-seaborgium")
 require("prototype.elements.107-bohrium")
 require("prototype.elements.108-hassium")
 require("prototype.elements.109-meitnerium")
+require("prototype.elements.110-darmstadium")
+require("prototype.elements.111-roetgenium")
 
 require("prototype.entity")
 require("prototype.entity.reactors") -- I hope someday that the entity file will be organized into different files

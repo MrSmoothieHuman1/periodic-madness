@@ -59,9 +59,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-neon-22", "fluid"):amount(4):chance(0, 0.2):done(),
-            PM.product("pm-bohrium-262"):amount(4):chance(0, 0.2):done(),
-            PM.product("pm-hassium-270"):amount(2):chance(0.2, 1):done()
+            PM.product("pm-neon-22", "fluid"):amount(4):chance(0, 0.1):done(),
+            PM.product("pm-bohrium-262"):amount(4):chance(0, 0.1):done(),
+            PM.product("pm-hassium-270"):amount(2):chance(0.1, 1):done()
         }
     },
 })
