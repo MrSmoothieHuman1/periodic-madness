@@ -36,6 +36,7 @@ Date: 2025-11-05
     - Added tiers of accumulators from the different battery tiers.
     - Remodeled the burner crusher to fit in with my current skills, and gave it tinting.
     - Added deep space satellites, the final tier of satellites. Gives 2500 space research data when launched.
+    - Finally designed the crafting tabs instead of using placeholder jpegs.
 
   Changes:
     - Updated strontium fuel rods technology icon.

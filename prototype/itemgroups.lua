@@ -243,14 +243,14 @@ data:extend({
     type = "item-group",
     name = "pm-noble-gases",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/noble-gas-unlock.png",
+    icon = "__periodic-madness__/graphics/icons/groups/noble-gasses.png",
     order = "ef"
   },
   {
     type = "item-group",
     name = "pm-lanthanides",
     icon_size = 256,
-    icon = "__base__/graphics/technology/space-science-pack.png",
+    icon = "__periodic-madness__/graphics/icons/groups/lanthanides.png",
     order = "eg"
   },
   {
