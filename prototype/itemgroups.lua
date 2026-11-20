@@ -208,7 +208,7 @@ data:extend({
     type = "item-group",
     name = "pm-reactive-non-metals",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/reactive-non-metal-unlock.png",
+    icon = "__periodic-madness__/graphics/icons/groups/reactive-non-metals.png",
     order = "ea"
   },
   {
@@ -222,21 +222,21 @@ data:extend({
     type = "item-group",
     name = "pm-metalloids",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/metalloid-unlock.png",
+    icon = "__periodic-madness__/graphics/icons/groups/metalloids.png",
     order = "ed"
   },
   {
     type = "item-group",
     name = "pm-alkali-metals",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/alkali-metal-unlock.png",
+    icon = "__periodic-madness__/graphics/icons/groups/alkali-metals.png",
     order = "ec"
   },
   {
     type = "item-group",
     name = "pm-alkaline-earth-metals",
     icon_size = 256,
-    icon = "__periodic-madness__/graphics/technology/alkaline-earth-metal-unlock.png",
+    icon = "__periodic-madness__/graphics/icons/groups/alkaline-earth-metals.png",
     order = "ee"
   },
   {

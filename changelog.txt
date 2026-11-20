@@ -43,6 +43,9 @@ Date: 2025-11-05
     - Updated advanced material processing 3 technology icon.
     - Changed all thrusters to stack to 10 instead of 100.
     - Added variations to the molten metals design, to help with colour availability and readability.
+    - Buffed stone brick move speed to 150%, up from 130%.
+    - Buffed concrete move speed to 175%.
+    - Buffed concrete move speed to 200%.
 
   Fixes:
     - Fixed borosilicate glass not unlocking borosilicate ampules.

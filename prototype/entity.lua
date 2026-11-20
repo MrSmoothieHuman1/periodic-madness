@@ -13027,9 +13027,13 @@ data.raw["wall"]["stone-wall"].resistances =
   }
 }
 
-data.raw["tile"]["refined-concrete"].walking_speed_modifier = 1.65
+--data.raw["tile"]["stone-brick"].walking_speed_modifier = 1.5
+
+data.raw["tile"]["concrete"].walking_speed_modifier = 1.75
+
+data.raw["tile"]["refined-concrete"].walking_speed_modifier = 2
 data.raw["tile"]["refined-concrete"].collision_mask = tile_collision_masks.pm_refined_concrete()
-data.raw["tile"]["concrete"].collision_mask = tile_collision_masks.pm_concrete()
+
 
 
 data.raw["locomotive"]["locomotive"].energy_source.burnt_inventory_size = 3
