@@ -27,52 +27,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-methyl-chloride",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/methyl-chloride.png",
-    subgroup = "pm-chlorine-rnm",
-    order = "k",
-    default_temperature = 15,
-    base_color = {r = 0.33, g = 0.66, b = 0.32},
-    flow_color = {r = 0.33, g = 0.66, b = 0.32},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-carbon-tetrachloride",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/carbon-tetrachloride.png",
-    subgroup = "fluid",
-    default_temperature = 15,
-    base_color = {r = 0.33, g = 0.99, b = 0.32},
-    flow_color = {r = 0.33, g = 0.99, b = 0.32},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-chloronated-solution",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/chloronated-solution.png",
-    subgroup = "pm-plastics",
-    order = "j",
-    default_temperature = 15,
-    base_color = {r = 0.66, g = 0.99, b = 0.66},
-    flow_color = {r = 0.66, g = 0.99, b = 0.66},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
-    name = "pm-chloroform",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/chloroform.png",
-    subgroup = "fluid",
-    default_temperature = 15,
-    base_color = {r = 0.66, g = 0.99, b = 0.66},
-    flow_color = {r = 0.66, g = 0.99, b = 0.66},
-    auto_barrel = false
-  },
-  {
-    type = "fluid",
     name = "pm-liquid-chlorine",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/liquid-chlorine.png",
@@ -315,59 +269,6 @@ data:extend({
     }
   },
   
-  {
-    type = "recipe",
-    name = "pm-methyl-chloride",
-    crafting_machine_tint =
-    {
-        primary = {0.75, 0.6, 0.5},
-        secondary = {0.349, 0.89, 0.345},
-        tertiary = {0.349, 0.89, 0.345},
-        quarternary = {0.649, 0.89, 0.645}
-    },
-    enabled = false,
-    energy_required = 3,
-    categories = {"chemistry"},
-    subgroup = "pm-chlorine-rnm",
-    order = "k",
-    ingredients =
-    {
-      PM.ingredient("pm-methanol", 5, "fluid"),
-      PM.ingredient("pm-hydrochloric-acid", 15, "fluid")
-    },
-    results =
-    {
-      PM.product("pm-methyl-chloride", "fluid"):amount(10):done()
-    }
-  } --[[@as data.RecipePrototype]],
-  {
-    type = "recipe",
-    name = "pm-carbon-tetrachloride-seperation",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/carbon-tetrachloride-seperation.png",
-    crafting_machine_tint = 
-    {
-        primary = {0.4, 0.6, 0.4},
-        secondary = {0.3, 0.3, 0.3},
-        tertiary = {0.5, 0.7, 0.5},
-        quaternary = {0.5, 0.7, 0.5}
-    },
-    enabled = false,
-    categories = {"chemistry"},
-    subgroup = "pm-chlorine-rnm",
-    order = "l",
-    ingredients =
-    {
-      PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
-      PM.ingredient("pm-carbon-tetrachloride", 20, "fluid"),
-      PM.ingredient("iron-plate", 6) --should be catalyst for hard mode
-    },
-    results =
-    {
-      PM.product("pm-chlorine", "fluid"):amount(8, 12):done(),
-      PM.product("pm-chloroform", "fluid"):amount(6, 12):done()
-    }
-  } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
     name = "pm-liquid-chlorine",

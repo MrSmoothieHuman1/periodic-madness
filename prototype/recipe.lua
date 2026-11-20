@@ -1330,8 +1330,6 @@ data:extend({
     energy_required = 3,
     enabled = false,
     categories = {"chemistry"},
-    subgroup = "pm-plastics",
-    order = "i",
     allow_productivity = true,
     ingredients =
     {
@@ -1386,8 +1384,6 @@ data:extend({
     enabled = false,
     energy_reqiured = 1,
     categories = {"chemistry"},
-    subgroup = "pm-plastics",
-    order = "j",
     main_product = "pm-chloronated-solution",
     ingredients =
     {
@@ -1408,8 +1404,8 @@ data:extend({
     enabled = false,
     energy_required = 2,
     categories = {"pm-electrolysis"},
-    subgroup = "pm-plastics",
-    order = "k",
+    subgroup = "pm-PTFE-plastic",
+    order = "c",
     ingredients =
     {
       PM.ingredient("pm-chloronated-solution", 12, "fluid"),
@@ -1429,8 +1425,6 @@ data:extend({
     energy_required = 6,
     enabled = false,
     categories = {"pm-acids"},
-    subgroup = "pm-plastics",
-    order = "k",
     main_product = "pm-tetrafluoroethylene",
     ingredients =
     {
@@ -1448,8 +1442,6 @@ data:extend({
     energy_required = 9,
     enabled = false,
     categories = {"chemistry"},
-    subgroup = "pm-plastics",
-    order = "l",
     ingredients =
     {
       PM.ingredient("pm-tetrafluoroethylene", 5, "fluid"),
@@ -6698,4 +6690,55 @@ data:extend({
             PM.product("pm-molten-dark-heullserloch-mixture", "fluid"):amount(0.5, 2):chance(0.5, 1):done(),
         }
     },
+    {
+      type = "recipe",
+      name = "pm-methyl-chloride",
+      crafting_machine_tint =
+      {
+        primary = {0.75, 0.6, 0.5},
+        secondary = {0.349, 0.89, 0.345},
+        tertiary = {0.349, 0.89, 0.345},
+        quarternary = {0.649, 0.89, 0.645}
+      },
+      enabled = false,
+      energy_required = 3,
+      categories = {"chemistry"},
+      ingredients =
+      {
+        PM.ingredient("pm-methanol", 5, "fluid"),
+        PM.ingredient("pm-hydrochloric-acid", 15, "fluid")
+      },
+      results =
+      {
+        PM.product("pm-methyl-chloride", "fluid"):amount(10):done()
+      }
+    } --[[@as data.RecipePrototype]],
+    {
+      type = "recipe",
+      name = "pm-carbon-tetrachloride-seperation",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/recipes/carbon-tetrachloride-seperation.png",
+      crafting_machine_tint = 
+      {
+        primary = {0.4, 0.6, 0.4},
+        secondary = {0.3, 0.3, 0.3},
+        tertiary = {0.5, 0.7, 0.5},
+        quaternary = {0.5, 0.7, 0.5}
+      },
+      enabled = false,
+      categories = {"chemistry"},
+      subgroup = "pm-PTFE-plastic",
+      order = "ca",
+      ingredients =
+      {
+        PM.ingredient("pm-hydrogen-gas", 10, "fluid"),
+        PM.ingredient("pm-carbon-tetrachloride", 20, "fluid"),
+        PM.ingredient("iron-plate", 6) --should be catalyst for hard mode
+      },
+      results =
+      {
+        PM.product("pm-chlorine", "fluid"):amount(8, 12):done(),
+        PM.product("pm-chloroform", "fluid"):amount(6, 12):done()
+      }
+    } --[[@as data.RecipePrototype]],
 } --[[@as data.RecipePrototype[] ]])

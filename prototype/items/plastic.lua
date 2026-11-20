@@ -16,8 +16,8 @@ data:extend({
     name = "pm-polyethylene-terephthalate",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/polyethylene-terephthalate.png",
-    subgroup = "pm-plastics",
-    order = "a",
+    subgroup = "pm-mylar-plastic",
+    order = "c",
     stack_size = 400,
   },
   {
@@ -45,7 +45,7 @@ data:extend({
     --  { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic.png", size = 64, scale = 0.5 },
     --  { filename = "__periodic-madness__/graphics/icons/polymethyl-methacrylate-plastic-2.png", size = 64, scale = 0.5 },
     --},
-    subgroup = "pm-plastics",
+    subgroup = "pm-PMMA-plastic",
     order = "c",
     stack_size = 100
   },
@@ -60,8 +60,8 @@ data:extend({
     --  { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-2.png", size = 64, scale = 0.5 },
     --  { filename = "__periodic-madness__/graphics/icons/polytetrafluoroethylene-plastic-3.png", size = 64, scale = 0.5 },
     --},
-    subgroup = "pm-plastics",
-    order = "c",
+    subgroup = "pm-PTFE-plastic",
+    order = "f",
     stack_size = 100
   },
   {
@@ -69,8 +69,8 @@ data:extend({
     name = "pm-mylar",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/mylar.png",
-    subgroup = "pm-plastics",
-    order = "c",
+    subgroup = "pm-mylar-plastic",
+    order = "d",
     stack_size = 100
   },
 })

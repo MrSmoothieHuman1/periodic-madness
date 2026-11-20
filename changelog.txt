@@ -47,6 +47,7 @@ Date: 2025-11-05
     - Buffed stone brick move speed to 150%, up from 130%.
     - Buffed concrete move speed to 175%.
     - Buffed concrete move speed to 200%.
+    - Seperated all 4 plastic into seperate subgroups.
 
   Fixes:
     - Fixed borosilicate glass not unlocking borosilicate ampules.

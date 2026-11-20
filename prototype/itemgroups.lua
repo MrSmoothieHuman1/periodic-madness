@@ -440,6 +440,24 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "pm-PMMA-plastic",
+    group = "intermediate-products",
+    order = "ia"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-PTFE-plastic",
+    group = "intermediate-products",
+    order = "ib"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-mylar-plastic",
+    group = "intermediate-products",
+    order = "ic"
+  },
+  {
+    type = "item-subgroup",
     name = "pm-resin",
     group = "intermediate-products",
     order = "j"
