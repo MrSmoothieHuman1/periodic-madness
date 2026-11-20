@@ -9638,7 +9638,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-zinc-isotope-centrifuging"),
+        PM.unlock_recipe("pm-copernicium-277")
     },
     prerequisites = {"pm-roetgenium-processing"},
     unit =
@@ -9670,7 +9671,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-calcium-isotope-centrifuging"),
+        PM.unlock_recipe("pm-nihonium-288")
     },
     prerequisites = {"pm-copernicium-processing"},
     unit =
@@ -9702,7 +9704,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-flevorium-292"),
+        PM.unlock_recipe("pm-flevorium-290")
     },
     prerequisites = {"pm-nihonium-processing"},
     unit =
