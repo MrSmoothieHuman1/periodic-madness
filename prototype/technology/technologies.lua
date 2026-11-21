@@ -1858,12 +1858,14 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/lead-processing.png",
     effects =
     {
-      PM.unlock_recipe("pm-lead-leeching"),
+      PM.unlock_recipe("pm-lead-chunks"),
       PM.unlock_recipe("pm-lead-powder"),
       PM.unlock_recipe("pm-lead-froth"),
       PM.unlock_recipe("pm-impure-lead"),
       PM.unlock_recipe("pm-lead-ore"),
       PM.unlock_recipe("pm-lead-plate"),
+      PM.unlock_recipe("pm-lead-waste-water"),
+      PM.unlock_recipe("pm-lead-waste-looping")
     },
     prerequisites = {"pm-research-center"},
     unit =

@@ -53,6 +53,28 @@ Date: 2025-11-05
     - Fixed borosilicate glass not unlocking borosilicate ampules.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.004
+Date: 2026-11-21
+  The nothing nothing SOMETHING nothing nothing Update:
+
+  Additions:
+    - Backported the new tab icons from 1.0 to public, because I really like them
+    - Added a lead waste water and a way to void lead froth, unlocked at lead processing.
+
+  Changes:
+    - Made germanium not have a chance output for its main product.
+    - Made rhenium oxide be made in either an electric furnace or a reverberatory furnace.
+    - Fixed advanced EEU's not being proddable.
+    - Lowered the amount of lead powder made by germanium from 0-6 to 1-3.
+    - Lowered the amount of sulfur made by germanium sulfide from 2-4 to 1-4.
+    - Made antimony and arsenic both take molten lead and output impure lead. This is part of the larger change to the lead requirements in metalloids.
+
+  Fixes:
+    - Fixed atmospheric condensers not being upgradeable.
+    - Fixed beacons not being upgradeable.
+    - Merged lead chunks in the Factoriopedia.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.003
 Date: 2026-11-15
   The when she map on my color Update:

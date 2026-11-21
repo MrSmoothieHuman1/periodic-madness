@@ -39,7 +39,7 @@ data:extend({
       { filename = "__periodic-madness__/graphics/icons/ores/impure-lead-ore-2.png", size = 64, scale = 0.5 },
     },
     subgroup = "pm-lead-ptm",
-    order = "c",
+    order = "d",
     stack_size = 80
   },
   {
@@ -48,7 +48,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/ores/lead-ore-icon.png",
     subgroup = "pm-lead-ptm",
-    order = "d",
+    order = "e",
     stack_size = 200
   },
 
@@ -58,7 +58,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/molten-lead.png",
     subgroup = "pm-lead-ptm",
-    order = "e",
+    order = "f",
     default_temperature = 15,
     base_color = {r = 0.278, g = 0.143, b = 0},
     flow_color = {r = 0.278, g = 0.143, b = 0},
@@ -70,17 +70,28 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/lead-froth.png",
     subgroup = "pm-lead-ptm",
-    order = "e",
+    order = "c",
     default_temperature = 15,
     gas_temperature = 15,
     base_color = {r = 0.478, g = 0.343, b = 0},
     flow_color = {r = 0.378, g = 0.143, b = 0},
     auto_barrel = false,
   },
+  {
+    type = "fluid",
+    name = "pm-lead-waste-water",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/lead-waste-water.png",
+    subgroup = "pm-lead-ptm",
+    order = "h",
+    default_temperature = 15,
+    base_color = {r = 0.6, g = 0.59, b = 0.24},
+    flow_color = {r = 0.5, g = 0.49, b = 0.04}
+  },
 
   {
     type = "recipe",
-    name = "pm-lead-leeching",
+    name = "pm-lead-chunks",
     icon_size = 64,
     icons =
     {
@@ -116,8 +127,6 @@ data:extend({
     enabled = false,
     energy_required = 3,
     categories = {"pm-crushing"},
-    subgroup = "pm-lead-ptm",
-    order = "b",
     main_product = "pm-lead-powder",
     allow_productivity = true,
     ingredients =
@@ -136,8 +145,6 @@ data:extend({
     enabled = false,
     energy_required = 6,
     categories = {"pm-washing"},
-    subgroup = "pm-lead-ptm",
-    order = "c",
     main_product = "pm-lead-froth",
     allow_productivity = true,
     crafting_machine_tint =
@@ -224,8 +231,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-lead-plate",
-    subgroup = "pm-lead-ptm",
-    order = "f",
     categories = {"smelting"},
     energy_required = 6.4,
     enabled = false,
@@ -253,8 +258,6 @@ data:extend({
         shift = {0, -7.5}
       },
     },
-    subgroup = "pm-lead-ptm",
-    order = "g",
     categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
@@ -276,7 +279,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/recipes/lead-cooling.png",
     categories = {"pm-coldening"},
     subgroup = "pm-lead-ptm",
-    order = "h",
+    order = "g",
     energy_required = 9,
     enabled = false,
     allow_decomposition = false,
@@ -289,6 +292,52 @@ data:extend({
     {
       PM.product("pm-lead-plate"):amount(10):done(),
       PM.product("pm-crucible"):amount(1):chance(0.8):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lead-waste-water",
+    crafting_machine_tint =
+    {
+        primary = {0.89, 0.725, 0.518}
+    },
+    categories = {"pm-mixing"},
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-lead-froth", 12, "fluid"),
+      PM.ingredient("pm-sodium-hydroxide", 4, "fluid"),
+      PM.ingredient("water", 20, "fluid"),
+    },
+    results = 
+    {
+      PM.product("pm-lead-waste-water", "fluid"):amount(15):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-lead-waste-looping",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/lead-waste-water-looping.png",
+    crafting_machine_tint =
+    {
+        primary = {0.761, 0.596, 0.392}
+    },
+    categories = {"pm-mixing"},
+    subgroup = "pm-lead-ptm",
+    order = "i",
+    enabled = false,
+    energy_required = 5,
+    ingredients = 
+    {
+      PM.ingredient("pm-lead-waste-water", 15, "fluid"),
+      PM.ingredient("water", 15, "fluid")
+    },
+    results = 
+    {
+      PM.product("water", "fluid"):amount(15, 20):done(),
+      PM.product("pm-lead-powder"):amount(0, 4):chance(0.25):done()
     }
   },
 })
