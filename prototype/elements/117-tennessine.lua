@@ -53,7 +53,7 @@ data:extend({
         type = "recipe",
         name = "pm-tennessine-294",
         enabled = false,
-        energy_required = 20,
+        energy_required = 25,
         categories = {"pm-alpha-decay"},
         main_product = "pm-tennessine-294",
         allow_productivity = true,

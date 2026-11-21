@@ -50,7 +50,7 @@ data:extend({
         type = "recipe",
         name = "pm-meitnerium-266",
         enabled = false,
-        energy_required = 10,
+        energy_required = 7.5,
         categories = {"ENOUGHISNEVER"},
         main_product = "pm-meitnerium-266",
         ingredients =

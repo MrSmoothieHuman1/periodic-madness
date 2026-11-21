@@ -19,7 +19,7 @@ data:extend({
         type = "recipe",
         name = "pm-moscovium-288",
         enabled = false,
-        energy_required = 40,
+        energy_required = 30,
         categories = {"ENOUGHISNEVER"},
         main_product = "pm-moscovium-288",
         ingredients =

@@ -34,7 +34,7 @@ data:extend({
         type = "recipe",
         name = "pm-livermorium-296",
         enabled = false,
-        energy_required = 60,
+        energy_required = 40,
         categories = {"ENOUGHISNEVER"},
         main_product = "pm-moscovium-288",
         ingredients =
