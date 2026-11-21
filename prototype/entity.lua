@@ -1509,8 +1509,8 @@ data:extend({
     max_health = 550,
     corpse = "pm-fractional-distillator",
     dying_explosion = "oil-refinery-explosion",
-    collision_box = {{ -1.9, -1.9 }, { 1.9, 1.9 }},
-    selection_box = {{ -2, -2 }, { 2, 2 }},
+    collision_box = {{ -2.9, -2.9 }, { 2.9, 2.9 }},
+    selection_box = {{ -3, -3 }, { 3, 3 }},
     module_slots = 3,
     allowed_effects = PM.all_effects(),
     crafting_categories = { "pm-fractional-distillation" },
@@ -1532,20 +1532,11 @@ data:extend({
         {
           filename =
           "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator.png",
-          width = 386,
-          height = 498,
-          shift = util.by_pixel(0, -30),
-          scale = 0.4
+          width = 384,
+          height = 550,
+          shift = util.by_pixel(0, -40),
+          scale = 0.5
         },
-        {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-shadow.png",
-          width = 338,
-          height = 249 + 7,
-          shift = util.by_pixel(70, 0),
-          draw_as_shadow = true,
-          scale = 0.56,
-        }
       }
     },
   },
@@ -1554,72 +1545,73 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
+        volume = 1000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0.5, 1.5}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {0.5, 2.5}}},
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
+        volume = 1000,
         filter = "crude-oil",
-        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-0.5, 1.5}}},
+        pipe_connections = {{ flow_direction="input", direction = defines.direction.south, position = {-0.5, 2.5}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-1.5, 1.5}}},
+        volume = 500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = { { flow_direction="output", direction = defines.direction.west, position = {-1.5, 0.5}}},
+        volume = 500,
+        pipe_connections = { { flow_direction="output", direction = defines.direction.west, position = {-2.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {-1.5, -0.5}}},
+        volume = 500,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.west, position = {-2.5, -0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-1.5, -1.5}}},
+        volume = 500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2.5, -1.5}}},
       },
 
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, 1.5}}},
+        volume = 500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2.5, 1.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, 0.5}}},
+        volume = 500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2.5, 0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, -0.5}}},
+        volume = 500,
+        pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {2.5, -0.5}}},
       },
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        volume = 5000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1.5, -1.5}}},
+        volume = 500,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {2.5, -1.5}}},
       },
     },
     -- if ANYONE reads this, i hope you know i hate this. I hate fluid boxes and you should too.
     -- (27/11/23) I HATE FLUID BOXES IT JUST *HAD* TO BE SOMETHING I ALREADY TRIED, but they work now.
     --(14 + 1/02/24) i just HADDD to finish the update, so i've spent... the entire day remaking this ONE entity? fuck fluidboxes, please fix them in 2.0 i beg
-  }--[[@as data.AssemblingMachinePrototype]],
+    --(21/11/26) i had to come back here to make it 6x6 and AUGHHGHGHHG
+  },
 
   {
     type = "assembling-machine",
