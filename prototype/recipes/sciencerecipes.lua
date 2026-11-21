@@ -1412,7 +1412,7 @@ data:extend({
         PM.ingredient("pm-moscovium-288", 3),
         PM.ingredient("pm-livermorium-293", 2),
         PM.ingredient("pm-tennessine-294", 1),
-        PM.ingredient("pm-oganesson-294", 1)
+        PM.ingredient("pm-oganesson-294", 1, "fluid")
 
     },
     enabled = false,

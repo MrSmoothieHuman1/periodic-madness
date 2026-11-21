@@ -17,7 +17,7 @@ data:extend({
         type = "fluid",
         name = "pm-copernicium-277",
         icon_size = 64,
-        icon = "__periodic-madness__/graphics/icons/ores/trace-dubnium.png",
+        icon = "__periodic-madness__/graphics/icons/fluids/copernicium-277.png",
         subgroup = "pm-copernicium-tm",
         order = "b",
         default_temperature = 15,

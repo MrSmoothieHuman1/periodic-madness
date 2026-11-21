@@ -45,10 +45,10 @@ data:extend({
     icon_size = 128,
     icon = "__periodic-madness__/graphics/achievements/use-more-gun.png",
     order = "a",
-    item_product = "pm-oganesson-294",
+    fluid_product = "pm-oganesson-294",
     amount = 1,
     limited_to_one_game = true,
-    --hidden = true,
+    hidden = true,
   },
 
 
