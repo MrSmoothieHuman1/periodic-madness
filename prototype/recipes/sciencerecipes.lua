@@ -1317,8 +1317,12 @@ data:extend({
 {
     type = "recipe",
     name = "pm-advanced-experimental-research-data",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-experimental-research-data.png",
     energy_required = 60,
     allow_productivity = true,
+    subgroup = "pm-research-data",
+    order = "b",
     main_product = "pm-experimental-research-data",
     ingredients =
     {
@@ -1343,9 +1347,13 @@ data:extend({
 {
     type = "recipe",
     name = "pm-advanced-advanced-experimental-research-data",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-advanced-experimental-research-data.png",
     energy_required = 60,
-    allow_productivity = true,
     categories = {"crafting-with-fluid"},
+    subgroup = "pm-research-data",
+    order = "c",
+    allow_productivity = true,
     main_product = "pm-experimental-research-data",
     ingredients =
     {
@@ -1375,8 +1383,12 @@ data:extend({
 {
     type = "recipe",
     name = "pm-advanced-advanced-advanced-experimental-research-data",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/recipes/advanced-advanced-advanced-experimental-research-data.png",
     energy_required = 60,
     categories = {"crafting-with-fluid"},
+    subgroup = "pm-research-data",
+    order = "d",
     allow_productivity = true,
     main_product = "pm-experimental-research-data",
     ingredients =
