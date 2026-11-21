@@ -685,7 +685,6 @@ data:extend({
     default_temperature = 15,
     base_color = {r = 0.82, g = 0, b = 0.87},
     flow_color = {r = 0.82, g = 0, b = 0.87},
-    auto_barrel = false
   },
   {
     type = "fluid",
@@ -971,7 +970,6 @@ data:extend({
     subgroup = "pm-PMMA-plastic",
     order = "b",
     default_temperature = 15,
-    auto_barrel = false,
     base_color = {r = 0.2, g = 0.1, b = 0.1 },
     flow_color = {r = 0.2, g = 0.1, b = 0.1 }
   },

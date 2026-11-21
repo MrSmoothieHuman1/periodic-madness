@@ -98,16 +98,16 @@ data:extend({
     categories = {"crafting-with-fluid"},
     ingredients =
     {
-      PM.ingredient("express-transport-belt", 1),
+      PM.ingredient("express-transport-belt", 2),
       PM.ingredient("pm-advanced-electric-engine-unit", 2),
-      PM.ingredient("pm-high-density-structure", 1),
+      PM.ingredient("pm-high-density-structure", 2),
       PM.ingredient("pm-advanced-processing-unit", 1),
-      PM.ingredient("pm-mylar", 3),
+      PM.ingredient("pm-mylar", 4),
       PM.ingredient("pm-light-lubricant", 2.5, "fluid"),
       PM.ingredient("pm-liquid-silicone", 1, "fluid")
     },
     results = {
-      PM.product("pm-high-density-transport-belt"):amount(1):done()
+      PM.product("pm-high-density-transport-belt"):amount(2):done()
     }
   },
   {
