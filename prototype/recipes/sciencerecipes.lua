@@ -1314,6 +1314,102 @@ data:extend({
         PM.product("pm-empty-glass-ampule"):amount(5):catalyst(5):done()
     }
 },
+{
+    type = "recipe",
+    name = "pm-advanced-experimental-research-data",
+    energy_required = 60,
+    allow_productivity = true,
+    main_product = "pm-experimental-research-data",
+    ingredients =
+    {
+        PM.ingredient("processing-unit", 8),
+        PM.ingredient("pm-polyethylene-plastic", 10),
+        PM.ingredient("pm-glass-fibers", 16),
+        PM.ingredient("pm-francium-glass-ampule", 9),
+        PM.ingredient("pm-technectium-99", 6),
+        PM.ingredient("pm-usable-dubnium", 4),
+        PM.ingredient("pm-seaborgium-263", 8),
+        PM.ingredient("pm-bohrium-262", 6),
+        PM.ingredient("pm-hassium-270", 4),
+        PM.ingredient("pm-meitnerium-266", 2)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-experimental-research-data"):amount(10):done(),
+        PM.product("pm-empty-glass-ampule"):amount(9):catalyst(9):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-advanced-advanced-experimental-research-data",
+    energy_required = 60,
+    allow_productivity = true,
+    categories = {"crafting-with-fluid"},
+    main_product = "pm-experimental-research-data",
+    ingredients =
+    {
+        PM.ingredient("processing-unit", 7),
+        PM.ingredient("pm-polyethylene-plastic", 20),
+        PM.ingredient("pm-glass-fibers", 24),
+        PM.ingredient("pm-francium-glass-ampule", 15),
+        PM.ingredient("pm-technectium-99", 8),
+        PM.ingredient("pm-usable-dubnium", 6),
+
+        PM.ingredient("pm-seaborgium-263", 10),
+        PM.ingredient("pm-bohrium-262", 8),
+        PM.ingredient("pm-hassium-270", 6),
+        PM.ingredient("pm-meitnerium-266", 4),
+        PM.ingredient("pm-darmstadium-269", 4),
+        PM.ingredient("pm-roetgenium-272", 3),
+        PM.ingredient("pm-copernicium-277", 2, "fluid"),
+        PM.ingredient("pm-nihonium-288", 1)
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-experimental-research-data"):amount(20):done(),
+        PM.product("pm-empty-glass-ampule"):amount(15):catalyst(15):done()
+    }
+},
+{
+    type = "recipe",
+    name = "pm-advanced-advanced-advanced-experimental-research-data",
+    energy_required = 60,
+    categories = {"crafting-with-fluid"},
+    allow_productivity = true,
+    main_product = "pm-experimental-research-data",
+    ingredients =
+    {
+        PM.ingredient("processing-unit", 6),
+        PM.ingredient("pm-polyethylene-plastic", 30),
+        PM.ingredient("pm-glass-fibers", 32),
+        PM.ingredient("pm-francium-glass-ampule", 20),
+        PM.ingredient("pm-technectium-99", 10),
+        PM.ingredient("pm-usable-dubnium", 8),
+
+        PM.ingredient("pm-seaborgium-263", 12),
+        PM.ingredient("pm-bohrium-262", 10),
+        PM.ingredient("pm-hassium-270", 8),
+        PM.ingredient("pm-meitnerium-266", 6),
+        PM.ingredient("pm-darmstadium-269", 6),
+        PM.ingredient("pm-roetgenium-272", 4),
+        PM.ingredient("pm-copernicium-277", 4, "fluid"),
+        PM.ingredient("pm-nihonium-288", 4),
+        PM.ingredient("pm-flevorium-290", 4),
+        PM.ingredient("pm-moscovium-288", 3),
+        PM.ingredient("pm-livermorium-293", 2),
+        PM.ingredient("pm-tennessine-294", 1),
+        PM.ingredient("pm-oganesson-294", 1)
+
+    },
+    enabled = false,
+    results =
+    {
+        PM.product("pm-experimental-research-data"):amount(40):done(),
+        PM.product("pm-empty-glass-ampule"):amount(20):catalyst(20):done()
+    }
+},
 
 --MARK: Bio-modules
 {

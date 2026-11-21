@@ -9533,12 +9533,12 @@ data:extend({
   },
   {
     type = "technology",
-    name = "pm-16-particle-accelerator",
+    name = "pm-12-particle-accelerator",
     icon_size = 256,
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-advanced-experimental-research-data")
     },
     prerequisites = {"pm-meitnerium-processing"},
     unit =
@@ -9737,7 +9737,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-advanced-advanced-experimental-research-data")
     },
     prerequisites = {"pm-nihonium-processing"},
     unit =
@@ -9899,7 +9899,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-advanced-advanced-advanced-experimental-research-data")
     },
     prerequisites = {"pm-tennessine-processing"},
     unit =
