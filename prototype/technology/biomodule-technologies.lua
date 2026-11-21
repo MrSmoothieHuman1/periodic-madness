@@ -28,7 +28,7 @@ data:extend({
       time = 45
     }
   },
-
+--MARK: Agility
   {
     type = "technology",
     name = "pm-bio-module-agility-1",
@@ -166,7 +166,7 @@ data:extend({
       time = 240
     }
   },
-
+--MARK: Strength
   {
     type = "technology",
     name = "pm-bio-module-strength-1",
@@ -176,7 +176,7 @@ data:extend({
     effects =
     {
       PM.modify("character-mining-speed", 0.1),
-      PM.modify("character-inventory-slots-bonus", 10)
+      PM.modify("character-inventory-slots-bonus", 5)
     },
     prerequisites = { "pm-bio-laboratory"},
     unit =
@@ -199,7 +199,7 @@ data:extend({
     effects =
     {
       PM.modify("character-mining-speed", 0.1),
-      PM.modify("character-inventory-slots-bonus", 10)
+      PM.modify("character-inventory-slots-bonus", 5)
     },
     prerequisites = { "pm-bio-module-strength-1"},
     unit =
@@ -222,7 +222,7 @@ data:extend({
     effects =
     {
       PM.modify("character-mining-speed", 0.2),
-      PM.modify("character-inventory-slots-bonus", 15)
+      PM.modify("character-inventory-slots-bonus", 10)
     },
     prerequisites = { "pm-bio-module-strength-2"},
     unit =
@@ -245,7 +245,7 @@ data:extend({
     effects =
     {
       PM.modify("character-mining-speed", 0.2),
-      PM.modify("character-inventory-slots-bonus", 15)
+      PM.modify("character-inventory-slots-bonus", 10)
     },
     prerequisites = { "pm-bio-module-strength-3"},
     unit =
@@ -304,7 +304,7 @@ data:extend({
       time = 360
     }
   },
-
+--MARK: Health
   {
     type = "technology",
     name = "pm-bio-module-health-1",

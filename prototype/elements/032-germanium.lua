@@ -89,8 +89,8 @@ data:extend({
         },
         results = 
         {
-            PM.product("pm-germanium-ore-concentrate"):amount(4, 10):chance(0.85):done(),
-            PM.product("pm-lead-powder"):amount(0, 6):done(),
+            PM.product("pm-germanium-ore-concentrate"):amount(4, 10):done(),
+            PM.product("pm-lead-powder"):amount(1, 3):done(),
             PM.product("pm-copper-chunk"):amount(0, 4):chance(0.45):done()
         }
     },
@@ -132,7 +132,7 @@ data:extend({
         results = 
         {
             PM.product("pm-germanium-oxide"):amount(6):done(),
-            PM.product("sulfur"):amount(2, 4):chance(0.66):done()
+            PM.product("sulfur"):amount(1, 4):chance(0.66):done()
         }
     },
     {

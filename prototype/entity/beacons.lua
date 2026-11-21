@@ -608,6 +608,7 @@ data.raw["beacon"]["beacon"].module_slots = 3
 data.raw["beacon"]["beacon"].map_color = {123, 141, 156}
 data.raw["beacon"]["beacon"].minable = {mining_time = 0.5, result = "beacon"}
 data.raw["beacon"]["beacon"].allowed_module_categories = {"speed", "productivity", "efficiency"}
+data.raw["beacon"]["beacon"].next_upgrade = "pm-beacon-2"
 data.raw["beacon"]["beacon"].icons_positioning =
   {
     {inventory_index = defines.inventory.beacon_modules, shift = {0, 0}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 3}

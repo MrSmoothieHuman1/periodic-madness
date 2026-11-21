@@ -128,8 +128,7 @@ data:extend({
     {
       PM.product("pm-arsenic-oxide"):amount(6):done(),
       PM.product("pm-ferrum"):amount(1, 4):done(),
-      PM.product("pm-impure-lead"):amount(1, 5):done(),
-
+      PM.product("pm-impure-lead"):amount(1, 5):catalyst(4):done(),
     }
   } --[[@as data.RecipePrototype]],
   {

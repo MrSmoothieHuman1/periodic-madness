@@ -1893,6 +1893,8 @@ data:extend({
     crafting_speed = 1,
     icon_draw_specification = {shift = {0, -0.36}},
     use_mirroring = true,
+    fast_replaceable_group = "pm-atmospheric-condenser",
+    next_upgrade = "pm-atmospheric-condenser-2",
     energy_source =
     {
       type = "electric",
@@ -10276,6 +10278,7 @@ fluid_boxes =
     crafting_speed = 2,
     icon_draw_specification = {shift = {0, -0.36}},
     use_mirroring = true,
+    fast_replaceable_group = "pm-atmospheric-condenser",
     energy_source =
     {
       type = "electric",

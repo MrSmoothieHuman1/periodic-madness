@@ -4020,6 +4020,7 @@ data:extend({
     enabled = false,
     energy_required = 10,
     categories = {"crafting-with-fluid"},
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("electric-engine-unit", 1),
@@ -4053,6 +4054,7 @@ data:extend({
     enabled = false,
     energy_required = 10,
     categories = {"crafting-with-fluid"},
+    allow_productivity = true,
     ingredients = 
     {
       PM.ingredient("electric-engine-unit", 1),

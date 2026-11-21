@@ -111,19 +111,19 @@ data:extend({
         energy_required = 8,
         categories = {"pm-washing"},
         subgroup = "pm-antimony-mt",
-        order = "b",    
+        order = "b",  
         main_product = "pm-crude-antimony-sulfide",
         allow_productivity = true,
         ingredients =
         {
             PM.ingredient("pm-low-quality-crude-antimony-sulfide", 6),
-            PM.ingredient("pm-lead-froth", 12, "fluid")
+            PM.ingredient("pm-molten-lead", 5, "fluid"),
         },
         results = 
         {
             PM.product("pm-crude-antimony-sulfide"):amount(2, 5):done(),
-            PM.product("pm-lead-powder"):amount(0, 4):chance(0.56):done(),
-            PM.product("pm-patina"):amount(3):chance(0.66):done()
+            PM.product("pm-impure-lead"):amount(1, 4):catalyst(3):done(),
+            PM.product("pm-patina"):amount(3):chance(0.66):catalyst(2):done()
         }
     },
     {
