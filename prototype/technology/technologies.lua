@@ -9769,7 +9769,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-moscovium-288")
     },
     prerequisites = {"pm-flerovium-processing"},
     unit =
@@ -9801,7 +9801,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-livermorium-296"),
+        PM.unlock_recipe("pm-livermorium-293")
     },
     prerequisites = {"pm-moscovium-processing"},
     unit =
@@ -9833,7 +9834,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-tennessine-297"),
+        PM.unlock_recipe("pm-tennessine-294")
     },
     prerequisites = {"pm-livermorium-processing"},
     unit =
@@ -9865,7 +9867,7 @@ data:extend({
     icon = "__periodic-madness__/graphics/icons/placeholder-tech.png",
     effects =
     {
-        
+        PM.unlock_recipe("pm-oganesson-294")
     },
     prerequisites = {"pm-tennessine-processing"},
     unit =

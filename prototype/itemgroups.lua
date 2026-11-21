@@ -708,49 +708,55 @@ data:extend({
     type = "item-subgroup",
     name = "pm-selenium-rnm",
     group = "pm-reactive-non-metals",
-    order = "ja"
+    order = "k"
   },
-{
+  {
+    type = "item-subgroup",
+    name = "pm-tennessine-rnm",
+    group = "pm-reactive-non-metals",
+    order = "l"
+  },
+  {
     type = "item-subgroup",
     name = "pm-nitric-acid-rnm",
     group = "pm-reactive-non-metals",
-    order = "jb"
+    order = "xa"
   },
   {
     type = "item-subgroup",
     name = "pm-air-filters-rnm",
     group = "pm-reactive-non-metals",
-    order = "jc"
+    order = "xb"
   },
   {
     type = "item-subgroup",
     name = "pm-biostuff-rnm",
     group = "pm-reactive-non-metals",
-    order = "k"
+    order = "xc"
   },
   {
     type = "item-subgroup",
     name = "pm-greenhousing-rnm",
     group = "pm-reactive-non-metals",
-    order = "m"
+    order = "xd"
   },
   {
     type  = "item-subgroup",
     name  = "pm-acetonitrile-rnm",
     group = "pm-reactive-non-metals",
-    order = "n",
+    order = "xe",
   },
   {
     type  = "item-subgroup",
     name  = "pm-myostatin-rnm",
     group = "pm-reactive-non-metals",
-    order = "o",
+    order = "xf",
   },
   {
     type  = "item-subgroup",
     name  = "pm-CISD2-rnm",
     group = "pm-reactive-non-metals",
-    order = "p",
+    order = "xg",
   },
 
   --MARK: Alkali Metals
@@ -1156,9 +1162,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-moscovium-ptm",
+    name = "pm-livermorium-ptm",
     group = "pm-post-transition-metals",
     order = "p"
+  },
+  {
+    type = "item-subgroup",
+    name = "pm-moscovium-ptm",
+    group = "pm-post-transition-metals",
+    order = "q"
   },
   {
     type = "item-subgroup",
@@ -1336,7 +1348,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "pm-oganneson-nb",
+    name = "pm-oganesson-nb",
     group = "pm-noble-gases",
     order = "g"
   },

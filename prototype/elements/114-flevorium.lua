@@ -34,7 +34,7 @@ data:extend({
         type = "recipe",
         name = "pm-flevorium-292",
         enabled = false,
-        energy_required = 25,
+        energy_required = 30,
         categories = {"ENOUGHISNEVER"},
         main_product = "pm-flevorium-292",
         ingredients =
@@ -44,9 +44,9 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-calcium-48"):amount(4):chance(0, 0.35):done(),
-            PM.product("pm-nihonium-288"):amount(4):chance(0, 0.35):done(),
-            PM.product("pm-flevourium-292"):amount(2):chance(0.35, 1):done()
+            PM.product("pm-calcium-48"):amount(4):chance(0, 0.4):done(),
+            PM.product("pm-nihonium-288"):amount(4):chance(0, 0.4):done(),
+            PM.product("pm-flevorium-292"):amount(2):chance(0.4, 1):done()
         }
     },
     {
@@ -59,7 +59,7 @@ data:extend({
         allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-flevorium-290", 4)
+            PM.ingredient("pm-flevorium-292", 4)
         },
         results =
         {

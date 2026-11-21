@@ -360,6 +360,7 @@ local biggest_accelerator = {
 	crafting_categories = { "ENOUGHISNEVER" },
 	module_slots = 1,
 	allowed_effects = PM.all_effects(),
+    effect_reciever = {},
 	icons_positioning =
 	{
 		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
@@ -456,6 +457,7 @@ local bigger_accelerator = {
 	crafting_categories = { "ENOUGHISNEVER" },
 	module_slots = 1,
 	allowed_effects = PM.all_effects(),
+    effect_reciever = {},
 	icons_positioning =
 	{
 		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
@@ -552,6 +554,7 @@ local big_accelerator = {
 	crafting_categories = { "ENOUGHISNEVER" },
 	module_slots = 0,
 	allowed_effects = PM.all_effects(),
+    effect_reciever = {},
 	icons_positioning =
 	{
 		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}
@@ -648,6 +651,7 @@ local small_accelerator = {
 	crafting_categories = { "ENOUGHISNEVER" },
 	module_slots = 0,
 	allowed_effects = PM.all_effects(),
+    effect_reciever = {},
 	icons_positioning =
 	{
 		{inventory_index = defines.inventory.crafter_modules, shift = {0, 1}, multi_row_initial_height_modifier = -0.3, max_icons_per_row = 8, scale = 0.35}

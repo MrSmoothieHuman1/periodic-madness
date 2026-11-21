@@ -49,7 +49,7 @@ data:extend({
         type = "recipe",
         name = "pm-hassium-270",
         enabled = false,
-        energy_required = 7,
+        energy_required = 7.5,
         categories = {"ENOUGHISNEVER"},
         main_product = "pm-hassium-270",
         ingredients =

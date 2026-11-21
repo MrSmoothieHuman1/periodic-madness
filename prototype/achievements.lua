@@ -37,8 +37,20 @@ data:extend({
     order = "h[limitation]-g[i-might-need-it-later]",
     dont_research = {"speed-module", "efficiency-module", "productivity-module"},
     research_with = {"space-science-pack"},
-
   },
+
+  {
+    type = "produce-achievement",
+    name = "pm-end-of-the-line",
+    icon_size = 128,
+    icon = "__periodic-madness__/graphics/achievements/use-more-gun.png",
+    order = "a",
+    item_product = "pm-oganesson-294",
+    amount = 1,
+    limited_to_one_game = true,
+    --hidden = true,
+  },
+
 
   {
     type = "research-with-science-pack-achievement",
@@ -98,7 +110,7 @@ data:extend({
   },
 })
 
-data.raw["complete-objective-achievement"]["there-is-no-spoon"].within = 100 * hour
+data.raw["complete-objective-achievement"]["there-is-no-spoon"].within = 80 * hour
 data.raw["complete-objective-achievement"]["no-time-for-chitchat"].within = 150 * hour
 data.raw["complete-objective-achievement"]["there-is-no-spoon"].allowed_without_fight = true
 data.raw["complete-objective-achievement"]["no-time-for-chitchat"].allowed_without_fight = true

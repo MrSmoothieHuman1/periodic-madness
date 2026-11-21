@@ -3,7 +3,7 @@ data:extend({
       type = "item",
       name = "pm-calcium-48",
       icon_size = 64,
-      icon = "__periodic-madness__/graphics/icons/ores/calcium-ore.png",
+      icon = "__periodic-madness__/graphics/icons/ores/calcium-ore-icon.png",
       pictures =
       {
         { filename = "__periodic-madness__/graphics/icons/ores/nickel-chunks.png",   size = 64, scale = 0.5 },
@@ -38,11 +38,11 @@ data:extend({
         main_product = "pm-calcium-48",
         ingredients =
         {
-            PM.ingredient("pm-calcium", 50)
+            PM.ingredient("pm-calcium-ore", 50)
         },
         results =
         {
-            PM.product("pm-calcium"):amount(50):chance(0, 0.902):done(),
+            PM.product("pm-calcium-ore"):amount(50):chance(0, 0.902):done(),
             PM.product("pm-calcium-48"):amount(5):chance(0.902, 0.911):done(),
         }
     },
@@ -56,12 +56,12 @@ data:extend({
         ingredients =
         {
             PM.ingredient("pm-calcium-48", 5),
-            PM.ingredient("pm-conpernicium-277", 5)
+            PM.ingredient("pm-copernicium-277", 5, "fluid")
         },
         results =
         {
             PM.product("pm-calcium-48"):amount(4):chance(0, 0.35):done(),
-            PM.product("pm-conpernicium-277"):amount(4):chance(0, 0.35):done(),
+            PM.product("pm-copernicium-277", "fluid"):amount(4):chance(0, 0.35):done(),
             PM.product("pm-nihonium-288"):amount(2):chance(0.35, 1):done()
         }
     },
