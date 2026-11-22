@@ -84,6 +84,17 @@ data:extend({
         base_color = {r = 0.71, g = 0.859, b = 0.84},
         flow_color = {r = 0.71, g = 0.859, b = 0.84},
     },
+    {
+        type = "fluid",
+        name = "pm-molten-tantalum",
+        icon_size = 64,
+        icon = "__periodic-madness__/graphics/icons/fluids/niobite-waste-water.png",
+        subgroup = "pm-tantalum-tm",
+        order = "g",
+        default_temperature = 15,
+        base_color = {r = 0.71, g = 0.859, b = 0.84},
+        flow_color = {r = 0.71, g = 0.859, b = 0.84},
+    },
 
     {
         type = "recipe",
@@ -215,6 +226,60 @@ data:extend({
             PM.product("pm-tantalum-plate"):amount(1):done()
         }
     },
+    {
+      type = "recipe",
+      name = "pm-molten-tantalum",
+      icon_size = 64,
+      icons =
+      {
+        {
+          icon = "__periodic-madness__/graphics/icons/fluids/molten-tin.png",
+          icon_size = 64,
+          shift = { 0, 1.5 }
+        },
+        {
+          icon = "__periodic-madness__/graphics/icons/plates/tantalum-plate.png",
+          icon_size = 64,
+          scale = 0.33,
+          shift = {0, -7.5}
+        },
+      },
+      categories = {"pm-moltening"},
+      energy_required = 9,
+      enabled = false,
+      allow_decomposition = false,
+      ingredients =
+      {
+        PM.ingredient("pm-tin-plate", 10),
+        PM.ingredient("steam", 50, "fluid")
+      },
+      results =
+      {
+        PM.product("pm-molten-tin", "fluid"):amount(5):done()
+      }
+    },
+    {
+      type = "recipe",
+      name = "pm-tantalum-plate-cooling",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/recipes/tin-cooling.png",
+      categories = {"pm-coldening"},
+      subgroup = "pm-tantalum-tm",
+      order = "h",
+      energy_required = 9,
+      enabled = false,
+      allow_decomposition = false,
+      ingredients =
+      {
+        PM.ingredient("pm-molten-tantalum", 5, "fluid"),
+        PM.ingredient("pm-crucible", 1),
+      },
+      results =
+      {
+        PM.product("pm-tantalum-plate"):amount(10):done(),
+        PM.product("pm-crucible"):amount(1):chance(0.8):done()
+      }
+    },
 
     {
         type = "recipe",
@@ -227,7 +292,7 @@ data:extend({
         energy_required = 5,
         categories = {"pm-mixing"},
         subgroup = "pm-tantalum-tm",
-        order = "g",
+        order = "x",
         ingredients =
         {
           PM.ingredient("pm-niobium-ore", 3),
@@ -251,7 +316,7 @@ data:extend({
         },
         categories = {"pm-mixing"},
         subgroup = "pm-tantalum-tm",
-        order = "h",
+        order = "xa",
         enabled = false,
         energy_required = 5,
         ingredients =

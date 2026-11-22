@@ -247,7 +247,7 @@ data:extend({
         shift = { 0, 1.5 }
       },
       {
-        icon = "__periodic-madness__/graphics/icons/plates/molybdenum-plate.png",
+        icon = "__periodic-madness__/graphics/icons/plates/tin-plate.png",
         icon_size = 64,
         scale = 0.33,
         shift = {0, -7.5}
