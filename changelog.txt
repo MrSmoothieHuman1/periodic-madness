@@ -37,6 +37,7 @@ Date: 2025-11-05
     - Remodeled the burner crusher to fit in with my current skills, and gave it tinting.
     - Added deep space satellites, the final tier of satellites. Gives 2500 space research data when launched.
     - Finally designed the crafting tabs instead of using placeholder jpegs.
+    - Remodelled the fractional distillator, finally, and made it 6x6 to make it easier to design around.
 
   Changes:
     - Updated strontium fuel rods technology icon.
