@@ -3997,6 +3997,33 @@ data:extend({
       time = 80
     }
   },
+  {
+    type = "technology",
+    name = "pm-molten-metal-mixing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/intermediate-casting.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-molten-arsenic-lead"),
+        PM.unlock_recipe("pm-molten-silicon-aluminium"),
+        PM.unlock_recipe("pm-molten-chromium-manganese"),
+        PM.unlock_recipe("pm-molten-platinum-gold"),
+    },
+    prerequisites = {"pm-tempature-inators-2", "pm-metalloid-pack-unlock"},
+    unit =
+      {
+        count = 350,
+        ingredients =
+        {
+          {"automation-science-pack", 1},
+          {"logistic-science-pack", 1},
+          {"pm-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+        },
+        time = 80,
+      }
+  },
 
 --MARK: AM science
  {

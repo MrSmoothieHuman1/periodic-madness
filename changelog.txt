@@ -38,6 +38,7 @@ Date: 2025-11-05
     - Added deep space satellites, the final tier of satellites. Gives 2500 space research data when launched.
     - Finally designed the crafting tabs instead of using placeholder jpegs.
     - Remodelled the fractional distillator, finally, and made it 6x6 to make it easier to design around.
+    - Added mixed-molten metal recipes. They're a set of recipes that give a 25% bonus on making molten metals by mixing in an additive, but output more pollution and byproducts.
 
   Changes:
     - Updated strontium fuel rods technology icon.
@@ -49,6 +50,7 @@ Date: 2025-11-05
     - Buffed concrete move speed to 175%.
     - Buffed concrete move speed to 200%.
     - Seperated all 4 plastic into seperate subgroups.
+    - Made express and high density belts craft 2 at a time, making them cheaper.
 
   Fixes:
     - Fixed borosilicate glass not unlocking borosilicate ampules.

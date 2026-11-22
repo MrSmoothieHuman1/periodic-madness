@@ -40,6 +40,19 @@ data:extend({
   },
 
   {
+    type = "fluid",
+    name = "pm-molten-manganese",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/fluids/molten-manganese.png",
+    subgroup = "pm-manganese-tm",
+    order = "c",
+    default_temperature = 15,
+    base_color = {r = 0.3, g = 0.3, b = 0.8},
+    flow_color = {r = 0.3, g = 0.3, b = 0.8},
+    auto_barrel = false,
+  },
+
+  {
     type = "recipe",
     name = "pm-transition-manganese-leeching",
     icon_size = 64,
@@ -171,6 +184,29 @@ data:extend({
     results =
     {
       PM.product("pm-molten-manganese", "fluid"):amount(5):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-chromium-manganese",
+    enabled = false,
+    energy_required = 9,
+    categories = {"pm-moltening"},
+    subgroup = "pm-manganese-tm",
+    order = "ca",
+    main_product = "pm-molten-manganese",
+    emission_multiplier = 1.5,
+    ingredients =
+    {
+      PM.ingredient("pm-manganese-ore", 5),
+      PM.ingredient("pm-chromium-ore", 2),
+      PM.ingredient("pm-borax", 2),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-molten-manganese", "fluid"):amount(7.5):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 3):done()
     }
   },
   {

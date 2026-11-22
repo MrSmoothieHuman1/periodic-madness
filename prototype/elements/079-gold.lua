@@ -175,8 +175,6 @@ data:extend({
         shift = {0, -7.5}
       },
     },
-    subgroup = "pm-gold-tm",
-    order = "e",
     categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
@@ -189,6 +187,29 @@ data:extend({
     results =
     {
       PM.product("pm-molten-gold", "fluid"):amount(5):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-platinum-gold",
+    enabled = false,
+    energy_required = 9,
+    categories = {"pm-moltening"},
+    subgroup = "pm-gold-tm",
+    order = "ea",
+    main_product = "pm-molten-gold",
+    emission_multiplier = 1.5,
+    ingredients =
+    {
+      PM.ingredient("pm-gold-ore", 5),
+      PM.ingredient("pm-platinum-ore", 2),
+      PM.ingredient("pm-borax", 2),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-molten-gold", "fluid"):amount(7.5):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 3):done()
     }
   },
   {

@@ -359,18 +359,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "pm-molten-manganese",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/fluids/molten-manganese.png",
-    subgroup = "pm-manganese-tm",
-    order = "c",
-    default_temperature = 15,
-    base_color = {r = 0.3, g = 0.3, b = 0.8},
-    flow_color = {r = 0.3, g = 0.3, b = 0.8},
-    auto_barrel = false,
-  },
-  {
-    type = "fluid",
     name = "pm-molten-gold",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/fluids/molten-gold.png",

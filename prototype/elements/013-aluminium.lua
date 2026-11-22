@@ -89,68 +89,6 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-bauxite-powder",
-    enabled = false,
-    energy_required = 2.5,
-    categories = {"pm-crushing"},
-    subgroup = "pm-aluminium-ptm",
-    order = "b",
-    allow_productivity = true,
-    ingredients = 
-    {
-      PM.ingredient("pm-bauxite", 6)
-    },
-    results = 
-    {
-      PM.product("pm-bauxite-powder"):amount(10, 14):done()
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-aluminium-hydroxide-slurry",
-    crafting_machine_tint = 
-    {
-        primary = {0.75, 0.75, 0.75}
-    },
-    enabled = false,
-    energy_required = 4,
-    categories = {"pm-mixing"},
-    subgroup = "pm-aluminium-ptm",
-    order = "c",
-    allow_productivity = true,
-    main_product = "pm-aluminium-hydroxide-slurry",
-    ingredients = 
-    {
-      PM.ingredient("pm-bauxite-powder", 8),
-      PM.ingredient("pm-sodium-hydroxide", 5, "fluid")
-    },
-    results = 
-    {
-      PM.product("pm-aluminium-hydroxide-slurry", "fluid"):amount(12):done(),
-      PM.product("steam", "fluid"):amount(10, 20):temperature(165):done()
-    }
-  },
-  {
-    type = "recipe",
-    name = "pm-aluminium-ore",
-    enabled = false,
-    energy_required = 8,
-    categories = {"pm-electrolysis"},
-    subgroup = "pm-aluminium-ptm",
-    order = "d",
-    ingredients = 
-    {
-      PM.ingredient("pm-aluminium-hydroxide-slurry", 10, "fluid"),
-      PM.ingredient("pm-calcium-ore", 3),
-    },
-    results = 
-    {
-      PM.product("pm-aluminium-ore"):amount(4, 6):done()
-    }
-  },
-
-  {
-    type = "recipe",
     name = "pm-chromic-transition-aluminium-leeching",
     icons =
     {
@@ -190,9 +128,62 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
+    name = "pm-bauxite-powder",
+    enabled = false,
+    energy_required = 2.5,
+    categories = {"pm-crushing"},
+    allow_productivity = true,
+    ingredients = 
+    {
+      PM.ingredient("pm-bauxite", 6)
+    },
+    results = 
+    {
+      PM.product("pm-bauxite-powder"):amount(10, 14):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-aluminium-hydroxide-slurry",
+    crafting_machine_tint = 
+    {
+        primary = {0.75, 0.75, 0.75}
+    },
+    enabled = false,
+    energy_required = 4,
+    categories = {"pm-mixing"},
+    allow_productivity = true,
+    main_product = "pm-aluminium-hydroxide-slurry",
+    ingredients = 
+    {
+      PM.ingredient("pm-bauxite-powder", 8),
+      PM.ingredient("pm-sodium-hydroxide", 5, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-aluminium-hydroxide-slurry", "fluid"):amount(12):done(),
+      PM.product("steam", "fluid"):amount(10, 20):temperature(165):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-aluminium-ore",
+    enabled = false,
+    energy_required = 8,
+    categories = {"pm-electrolysis"},
+    ingredients =
+    {
+      PM.ingredient("pm-aluminium-hydroxide-slurry", 10, "fluid"),
+      PM.ingredient("pm-calcium-ore", 3),
+    },
+    results = 
+    {
+      PM.product("pm-aluminium-ore"):amount(4, 6):done()
+    }
+  },
+  {
+    type = "recipe",
     name = "pm-aluminium-plate",
-    subgroup = "pm-aluminium-ptm",
-    order = "e",
     categories = {"smelting"},
     energy_required = 3.2,
     enabled = false,
@@ -220,8 +211,6 @@ data:extend({
         shift = {0, -7.5}
       },
     },
-    subgroup = "pm-aluminium-ptm",
-    order = "f",
     categories = {"pm-moltening"},
     energy_required = 9,
     enabled = false,
@@ -234,6 +223,29 @@ data:extend({
     results =
     {
       PM.product("pm-molten-aluminium", "fluid"):amount(5):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-silicon-aluminium",
+    enabled = false,
+    energy_required = 9,
+    categories = {"pm-moltening"},
+    subgroup = "pm-aluminium-ptm",
+    order = "fa",
+    main_product = "pm-molten-aluminium",
+    emission_multiplier = 1.5,
+    ingredients =
+    {
+      PM.ingredient("pm-aluminium-ore", 5),
+      PM.ingredient("pm-industrial-grade-silicon-ore", 2),
+      PM.ingredient("pm-borax", 2),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results = 
+    {
+      PM.product("pm-molten-aluminium", "fluid"):amount(7.5):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 3):done()
     }
   },
   {

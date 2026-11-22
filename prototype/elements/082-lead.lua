@@ -208,28 +208,6 @@ data:extend({
   } --[[@as data.RecipePrototype]],
   {
     type = "recipe",
-    name = "pm-molten-arsenic-lead",
-    enabled = false,
-    energy_required = 6,
-    categories = {"pm-moltening"},
-    subgroup = "pm-lead-ptm",
-    order = "ea",
-    main_product = "pm-molten-lead",
-    ingredients = 
-    {
-      PM.ingredient("pm-impure-lead", 5),
-      PM.ingredient("pm-arsenic-ore", 2),
-      PM.ingredient("pm-borax", 2),
-      PM.ingredient("steam", 50, "fluid")
-    },
-    results = 
-    {
-      PM.product("pm-molten-lead", "fluid"):amount(4.5, 5):done(),
-      PM.product("pm-mixed-ore-slag"):amount(0, 3):chance(0.5):done()
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-lead-plate",
     categories = {"smelting"},
     energy_required = 6.4,
@@ -270,6 +248,29 @@ data:extend({
     results =
     {
       PM.product("pm-molten-lead", "fluid"):amount(5):done()
+    }
+  },
+  {
+    type = "recipe",
+    name = "pm-molten-arsenic-lead",
+    enabled = false,
+    energy_required = 9,
+    categories = {"pm-moltening"},
+    subgroup = "pm-lead-ptm",
+    order = "ea",
+    main_product = "pm-molten-lead",
+    emission_multiplier = 1.5,
+    ingredients =
+    {
+      PM.ingredient("pm-lead-ore", 5),
+      PM.ingredient("pm-arsenic-ore", 2),
+      PM.ingredient("pm-borax", 2),
+      PM.ingredient("steam", 50, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-molten-lead", "fluid"):amount(7.5):done(),
+      PM.product("pm-mixed-ore-slag"):amount(0, 3):done()
     }
   },
   {
