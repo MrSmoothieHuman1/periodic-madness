@@ -1524,22 +1524,315 @@ data:extend({
     },
     energy_usage = "500kW",
     graphics_set = 
-  {
-    animation =
     {
-      layers =
-      {
+        animation =
         {
-          filename =
-          "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator.png",
-          width = 384,
-          height = 550,
-          shift = util.by_pixel(0, -40),
-          scale = 0.5
+            north =
+            {
+                layers =
+                {
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-base.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-spinny.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 64,
+                    line_length = 8,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-glass.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                }
+            },
+            south =
+            {
+                layers =
+                {
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-base.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-spinny.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 64,
+                    line_length = 8,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-glass.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                }
+            },
+            east =
+            {
+                layers =
+                {
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-base.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-spinny.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 64,
+                    line_length = 8,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-glass.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                }
+            },
+            west =
+            {
+                layers =
+                {
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-base.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-spinny.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 64,
+                    line_length = 8,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                  {
+                    filename =
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-glass.png",
+                    width = 384,
+                    height = 550,
+                    frame_count = 1,
+                    line_length = 1,
+                    repeat_count = 64,
+                    shift = util.by_pixel(0, -42),
+                    scale = 0.5
+                  },
+                }
+            },
         },
-      }
+    working_visualisations =
+    {
+        {
+            north_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-colours.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+            south_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-colours.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+            east_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-colours.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+            west_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-colours.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+        },
+        {
+            always_draw = true,
+            apply_tint = "status",
+            north_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-diode.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5
+            },
+            south_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-diode.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5
+            },
+            east_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-diode.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5
+            },
+            west_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-diode.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                draw_as_glow = true,
+                blend_mode = "additive",
+                scale = 0.5
+            },
+        },
+        {
+            fadeout = true,
+            north_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-fire.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+            south_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-fire.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+            east_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-fire.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+            west_animation =
+            {
+                filename = "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-fire.png",
+                width = 384,
+                height = 550,
+                frame_count = 1,
+                line_length = 1,
+                repeat_count = 64,
+                shift = util.by_pixel(0, -42),
+                scale = 0.5
+            },
+        },
+    }
     },
-  },
     fluid_boxes =
     {
       {
