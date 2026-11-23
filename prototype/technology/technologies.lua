@@ -4009,7 +4009,7 @@ data:extend({
         PM.unlock_recipe("pm-molten-chromium-manganese"),
         PM.unlock_recipe("pm-molten-platinum-gold"),
     },
-    prerequisites = {"pm-tempature-inators-2", "pm-metalloid-pack-unlock"},
+    prerequisites = {"pm-advanced-material-processing-3"},
     unit =
       {
         count = 350,
@@ -5578,6 +5578,30 @@ data:extend({
       },
       time = 100
     }
+  },
+  {
+    type = "technology",
+    name = "pm-molten-metal-mixing-2",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/intermediate-casting.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-molten-metal-mixing", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
+    unit =
+      {
+        count = 500,
+        ingredients =
+        {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"pm-advanced-advanced-transition-metal-science-pack", 1},
+            {"pm-post-transition-metal-science-pack", 1},
+            {"pm-metalloid-science-pack", 1},
+            {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1}
+        },
+        time = 80,
+      }
   },
 
 
@@ -9241,6 +9265,35 @@ data:extend({
       },
       time = 220
     }
+  },
+  {
+    type = "technology",
+    name = "pm-molten-metal-mixing-3",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/intermediate-casting.png",
+    effects =
+    {
+    },
+    prerequisites = {"pm-molten-metal-mixing-2", "pm-lanthanide-science-pack"},
+    unit =
+      {
+        count = 900,
+        ingredients =
+        {
+          {"automation-science-pack", 2},
+          {"logistic-science-pack", 2},
+          {"pm-advanced-advanced-transition-metal-science-pack", 2},
+          {"chemical-science-pack", 1},
+          {"pm-post-transition-metal-science-pack", 1},
+          {"pm-alkali-metal-science-pack", 1},
+          {"pm-metalloid-science-pack", 1},
+          {"pm-alkaline-earth-metal-science-pack", 1},
+          {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+          {"pm-noble-gas-science-pack", 1},
+          {"pm-lanthanide-science-pack", 1}
+        },
+        time = 180
+      }
   },
 
 --MARK: AC science
