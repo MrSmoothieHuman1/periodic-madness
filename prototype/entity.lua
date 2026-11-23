@@ -1533,7 +1533,7 @@ data:extend({
                 {
                   {
                     filename =
-                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-south-base.png",
+                    "__periodic-madness__/graphics/entities/buildings/fractional-distillator/fractional-distillator-north-base.png",
                     width = 384,
                     height = 550,
                     frame_count = 1,

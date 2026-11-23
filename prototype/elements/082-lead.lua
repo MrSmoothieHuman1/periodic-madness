@@ -255,7 +255,7 @@ data:extend({
     name = "pm-molten-arsenic-lead",
     enabled = false,
     energy_required = 9,
-    categories = {"pm-moltening"},
+    categories = {"pm-reverberatory-smelting"},
     subgroup = "pm-lead-ptm",
     order = "ea",
     main_product = "pm-molten-lead",

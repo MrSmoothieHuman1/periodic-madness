@@ -191,7 +191,7 @@ data:extend({
     name = "pm-molten-chromium-manganese",
     enabled = false,
     energy_required = 9,
-    categories = {"pm-moltening"},
+    categories = {"pm-blast-smelting"},
     subgroup = "pm-manganese-tm",
     order = "ca",
     main_product = "pm-molten-manganese",

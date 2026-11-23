@@ -230,7 +230,7 @@ data:extend({
     name = "pm-molten-silicon-aluminium",
     enabled = false,
     energy_required = 9,
-    categories = {"pm-moltening"},
+    categories = {"pm-blast-smelting"},
     subgroup = "pm-aluminium-ptm",
     order = "fa",
     main_product = "pm-molten-aluminium",

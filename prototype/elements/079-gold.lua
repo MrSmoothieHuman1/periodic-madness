@@ -194,7 +194,7 @@ data:extend({
     name = "pm-molten-platinum-gold",
     enabled = false,
     energy_required = 9,
-    categories = {"pm-moltening"},
+    categories = {"pm-blast-smelting"},
     subgroup = "pm-gold-tm",
     order = "ea",
     main_product = "pm-molten-gold",
