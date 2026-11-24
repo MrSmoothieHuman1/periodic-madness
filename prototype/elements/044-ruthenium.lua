@@ -49,11 +49,23 @@ data:extend({
         name = "pm-ruthenium-filtered-anode-sludge",
         icon_size = 64,
         icon = "__periodic-madness__/graphics/icons/fluids/ruthenium-filtered-anode-sludge.png",
-        subgroup = "pm-osmium-tm",
+        subgroup = "pm-ruthenium-tm",
         order = "a",
         default_temperature = 15,
         base_color = {r = 0.36, g = 0.3, b = 0.55},
         flow_color = {r = 0.36, g = 0.3, b = 0.55}
+    },
+    {
+      type = "fluid",
+      name = "pm-molten-ruthenium",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/fluids/molten-silver.png",
+      subgroup = "pm-ruthenium-tm",
+      order = "d",
+      default_temperature = 15,
+      base_color = {r = 0.92, g = 0.92, b = 0.92},
+      flow_color = {r = 0.92, g = 0.92, b = 0.92},
+      auto_barrel = false,
     },
 
     {
@@ -184,6 +196,83 @@ data:extend({
         {
             PM.product("pm-ruthenium-plate"):amount(1):done()
         }
+    },
+    {
+      type = "recipe",
+      name = "pm-molten-ruthenium",
+      icon_size = 64,
+      icons =
+      {
+        {
+          icon = "__periodic-madness__/graphics/icons/fluids/molten-silver.png",
+          icon_size = 64,
+          shift = { 0, 1.5 }
+        },
+        {
+          icon = "__periodic-madness__/graphics/icons/plates/ruthenium-plate.png",
+          icon_size = 64,
+          scale = 0.33,
+          shift = {0, -7.5}
+        },
+      },
+      categories = {"pm-moltening"},
+      energy_required = 9,
+      enabled = false,
+      allow_decomposition = false,
+      ingredients =
+      {
+        PM.ingredient("pm-ruthenium-plate", 10),
+        PM.ingredient("steam", 50, "fluid")
+      },
+      results =
+      {
+        PM.product("pm-molten-ruthenium", "fluid"):amount(5):done()
+      }
+    },
+    {
+      type = "recipe",
+      name = "pm-molten-titanium-ruthenium",
+      enabled = false,
+      energy_required = 9,
+      categories = {"pm-blast-smelting"},
+      subgroup = "pm-ruthenium-tm",
+      order = "da",
+      main_product = "pm-molten-ruthenium",
+      emission_multiplier = 1.5,
+      ingredients =
+      {
+        PM.ingredient("pm-ruthenium-ore", 5),
+        PM.ingredient("pm-titanium-ore", 2),
+        PM.ingredient("pm-borax", 2),
+        PM.ingredient("steam", 50, "fluid")
+      },
+      results = 
+      {
+        PM.product("pm-molten-ruthenium", "fluid"):amount(7.5):done(),
+        PM.product("pm-mixed-ore-slag"):amount(0, 3):done()
+      }
+    },
+    {
+      type = "recipe",
+      name = "pm-ruthenium-plate-cooling",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/recipes/silver-cooling.png",
+      categories = {"pm-coldening"},
+      subgroup = "pm-ruthenium-tm",
+      order = "e",
+      energy_required = 9,
+      enabled = false,
+      allow_decomposition = false,
+      ingredients =
+      {
+        PM.ingredient("pm-molten-ruthenium", 5, "fluid"),
+        PM.ingredient("pm-crucible", 1),
+      },
+      results =
+      {
+        PM.product("pm-ruthenium-plate"):amount(10):done(),
+        PM.product("pm-crucible"):amount(1):chance(0.8):done()
+      }
     },
 
     {

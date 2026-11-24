@@ -41,6 +41,18 @@ data:extend({
         base_color = {r = 0.353, b = 0.478, g = 0.522},
         flow_color = {r = 0.251, g = 0.378, b = 0.421}
     },
+    {
+      type = "fluid",
+      name = "pm-molten-rhodium",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/fluids/molten-silver.png",
+      subgroup = "pm-rhodium-tm",
+      order = "d",
+      default_temperature = 15,
+      base_color = {r = 0.92, g = 0.92, b = 0.92},
+      flow_color = {r = 0.92, g = 0.92, b = 0.92},
+      auto_barrel = false,
+    },
 
     {
         type = "recipe",
@@ -122,5 +134,83 @@ data:extend({
         {
             PM.product("pm-rhodium-plate"):amount(1):done()
         }
+    },
+
+    {
+      type = "recipe",
+      name = "pm-molten-rhodium",
+      icon_size = 64,
+      icons =
+      {
+        {
+          icon = "__periodic-madness__/graphics/icons/fluids/molten-silver.png",
+          icon_size = 64,
+          shift = { 0, 1.5 }
+        },
+        {
+          icon = "__periodic-madness__/graphics/icons/plates/rhodium-plate.png",
+          icon_size = 64,
+          scale = 0.33,
+          shift = {0, -7.5}
+        },
+      },
+      categories = {"pm-moltening"},
+      energy_required = 9,
+      enabled = false,
+      allow_decomposition = false,
+      ingredients =
+      {
+        PM.ingredient("pm-rhodium-plate", 10),
+        PM.ingredient("steam", 50, "fluid")
+      },
+      results =
+      {
+        PM.product("pm-molten-rhodium", "fluid"):amount(5):done()
+      }
+    },
+    {
+      type = "recipe",
+      name = "pm-molten-palladium-rhodium",
+      enabled = false,
+      energy_required = 9,
+      categories = {"pm-blast-smelting"},
+      subgroup = "pm-rhodium-tm",
+      order = "da",
+      main_product = "pm-molten-rhodium",
+      emission_multiplier = 1.5,
+      ingredients =
+      {
+        PM.ingredient("pm-rhodium-ore", 5),
+        PM.ingredient("pm-palladium-ore", 2),
+        PM.ingredient("pm-borax", 2),
+        PM.ingredient("steam", 50, "fluid")
+      },
+      results = 
+      {
+        PM.product("pm-molten-rhodium", "fluid"):amount(7.5):done(),
+        PM.product("pm-mixed-ore-slag"):amount(0, 3):done()
+      }
+    },
+    {
+      type = "recipe",
+      name = "pm-rhodium-plate-cooling",
+      icon_size = 64,
+      icon = "__periodic-madness__/graphics/icons/recipes/silver-cooling.png",
+      categories = {"pm-coldening"},
+      subgroup = "pm-rhodium-tm",
+      order = "e",
+      energy_required = 9,
+      enabled = false,
+      allow_decomposition = false,
+      ingredients =
+      {
+        PM.ingredient("pm-molten-rhodium", 5, "fluid"),
+        PM.ingredient("pm-crucible", 1),
+      },
+      results =
+      {
+        PM.product("pm-rhodium-plate"):amount(10):done(),
+        PM.product("pm-crucible"):amount(1):chance(0.8):done()
+      }
     },
 })

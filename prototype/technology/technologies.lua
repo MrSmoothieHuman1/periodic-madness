@@ -5012,7 +5012,9 @@ data:extend({
       PM.unlock_recipe("pm-ammonium-ruthenium-chloride"),
       PM.unlock_recipe("pm-acetone-ammonium-ruthenium-chloride"),
       PM.unlock_recipe("pm-ruthenium-ore"),
-      PM.unlock_recipe("pm-ruthenium-plate")
+      PM.unlock_recipe("pm-ruthenium-plate"),
+      PM.unlock_recipe("pm-molten-ruthenium"),
+      PM.unlock_recipe("pm-ruthenium-plate-cooling")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
@@ -5044,7 +5046,9 @@ data:extend({
       PM.unlock_recipe("pm-rhodium-filtered-anode-sludge"),
       PM.unlock_recipe("pm-rhodium-chunks"),
       PM.unlock_recipe("pm-rhodium-ore"),
-      PM.unlock_recipe("pm-rhodium-plate")
+      PM.unlock_recipe("pm-rhodium-plate"),
+      PM.unlock_recipe("pm-molten-rhodium"),
+      PM.unlock_recipe("pm-rhodium-plate-cooling")
     },
     prerequisites = {"pm-metalloid-pack-unlock"},
     unit =
@@ -5586,6 +5590,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/intermediate-casting.png",
     effects =
     {
+        PM.unlock_recipe("pm-molten-palladium-rhodium"),
+        PM.unlock_recipe("pm-molten-titanium-ruthenium")
     },
     prerequisites = {"pm-molten-metal-mixing", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =

@@ -206,7 +206,7 @@ data:extend({
     results = 
     {
       PM.product("pm-molten-manganese", "fluid"):amount(7.5):done(),
-      PM.product("pm-mixed-ore-slag"):amount(0, 3):done()
+      PM.product("pm-mixed-ore-slag"):amount(0, 2):done()
     }
   },
   {

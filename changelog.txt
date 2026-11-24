@@ -51,6 +51,7 @@ Date: 2025-11-05
     - Buffed concrete move speed to 200%.
     - Seperated all 4 plastic into seperate subgroups.
     - Made express and high density belts craft 2 at a time, making them cheaper.
+    - Increase dthe amount of ReBCO mixture needed for the precursor alloy from 10 to 15.
 
   Fixes:
     - Fixed borosilicate glass not unlocking borosilicate ampules.
