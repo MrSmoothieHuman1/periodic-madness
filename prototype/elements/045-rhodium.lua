@@ -173,11 +173,11 @@ data:extend({
       name = "pm-molten-palladium-rhodium",
       enabled = false,
       energy_required = 9,
-      categories = {"pm-blast-smelting"},
+      categories = {"pm-reverberatory-smelting"},
       subgroup = "pm-rhodium-tm",
       order = "da",
       main_product = "pm-molten-rhodium",
-      emission_multiplier = 1.5,
+      emissions_mutliplier = 1.5,
       ingredients =
       {
         PM.ingredient("pm-rhodium-ore", 5),

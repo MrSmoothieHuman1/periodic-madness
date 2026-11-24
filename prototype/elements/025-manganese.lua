@@ -191,11 +191,11 @@ data:extend({
     name = "pm-molten-chromium-manganese",
     enabled = false,
     energy_required = 9,
-    categories = {"pm-blast-smelting"},
+    categories = {"pm-reverberatory-smelting"},
     subgroup = "pm-manganese-tm",
     order = "ca",
     main_product = "pm-molten-manganese",
-    emission_multiplier = 1.5,
+    emissions_mutliplier = 1.5,
     ingredients =
     {
       PM.ingredient("pm-manganese-ore", 5),

@@ -234,11 +234,11 @@ data:extend({
       name = "pm-molten-titanium-ruthenium",
       enabled = false,
       energy_required = 9,
-      categories = {"pm-blast-smelting"},
+      categories = {"pm-reverberatory-smelting"},
       subgroup = "pm-ruthenium-tm",
       order = "da",
       main_product = "pm-molten-ruthenium",
-      emission_multiplier = 1.5,
+      emissions_mutliplier = 1.5,
       ingredients =
       {
         PM.ingredient("pm-ruthenium-ore", 5),

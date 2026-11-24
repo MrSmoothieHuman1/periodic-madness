@@ -259,7 +259,7 @@ data:extend({
     subgroup = "pm-lead-ptm",
     order = "ea",
     main_product = "pm-molten-lead",
-    emission_multiplier = 1.5,
+    emissions_mutliplier = 1.5,
     ingredients =
     {
       PM.ingredient("pm-lead-ore", 5),

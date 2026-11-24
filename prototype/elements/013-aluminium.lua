@@ -230,11 +230,11 @@ data:extend({
     name = "pm-molten-silicon-aluminium",
     enabled = false,
     energy_required = 9,
-    categories = {"pm-blast-smelting"},
+    categories = {"pm-reverberatory-smelting"},
     subgroup = "pm-aluminium-ptm",
     order = "fa",
     main_product = "pm-molten-aluminium",
-    emission_multiplier = 1.5,
+    emissions_mutliplier = 1.5,
     ingredients =
     {
       PM.ingredient("pm-aluminium-ore", 5),
