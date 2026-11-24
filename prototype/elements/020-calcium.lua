@@ -144,7 +144,7 @@ data:extend({
     subgroup = "pm-calcium-aem",
     order = "a",
     categories = {"pm-evaporation"},
-    enabled = true,
+    enabled = false,
     energy_required = 4,
     main_product = "pm-calcite",
     ingredients =
@@ -164,7 +164,7 @@ data:extend({
     subgroup = "pm-calcium-aem",
     order = "b",
     categories = {"pm-crushing"},
-    enabled = true,
+    enabled = false,
     energy_required = 2,
     allow_productivity = true,
     ingredients =
@@ -179,12 +179,11 @@ data:extend({
   {
     type = "recipe",
     name = "pm-calcium-ore",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/calcium-dust-washing.png",
+    emabled = false,
+    energy_required = 2,
     subgroup = "pm-calcium-aem",
     categories = {"pm-washing"},
     order = "c",
-    energy_required = 2,
     main_product = "pm-calcium-ore",
     crafting_machine_tint = 
     {

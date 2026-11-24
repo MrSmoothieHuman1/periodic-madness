@@ -614,6 +614,29 @@ data:extend({
       time = 30
     }
   },
+  {
+    type = "technology",
+    name = "pm-calcium-processing",
+    icon_size = 256,
+    icon = "__periodic-madness__/graphics/technology/coke-processing.png",
+    effects =
+    {
+        PM.unlock_recipe("pm-calcite"),
+        PM.unlock_recipe("pm-calcium-dust"),
+        PM.unlock_recipe("pm-calcium-ore")
+    },
+    prerequisites = {"pm-washing-plant-1"},
+    unit =
+    {
+      count = 50,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+      },
+      time = 15
+    }
+  },
 
 --MARK: A-ATM science
   {
@@ -655,7 +678,7 @@ data:extend({
       PM.unlock_recipe("pm-bitumen-to-crude-oil"),
       PM.unlock_recipe("pm-bitumen-creosote")
     },
-    prerequisites = {"oil-processing"},
+    prerequisites = {"oil-processing", "pm-calcium-processing"},
     research_trigger =
     {
       type = "craft-fluid",
@@ -5709,7 +5732,7 @@ data:extend({
       PM.unlock_recipe("pm-calcium-oxide"),
       PM.unlock_recipe("pm-alumnotheric-calcium")
     },
-    prerequisites = {"pm-alkaline-earth-metal-pack-unlock"},
+    prerequisites = {"pm-alkaline-earth-metal-pack-unlock", "pm-calcium-processing"},
     unit =
     {
       count = 450,
