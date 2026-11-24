@@ -523,7 +523,7 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-        PM.ingredient("pm-ReBCO-mixture", 10),
+        PM.ingredient("pm-ReBCO-mixture", 15),
         PM.ingredient("pm-molten-copper", 7.5, "fluid"),
         PM.ingredient("pm-samarium", 3)
     },
