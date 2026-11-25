@@ -131,7 +131,8 @@ data:extend({
         type = "recipe",
         name = "pm-lutetium-powder",
         enabled = false,
-        energy_required = 8,
+        energy_required = 12,
+        categories = {"pm-crushing"},
         allow_productivity = true,
         ingredients =
         {
@@ -150,7 +151,7 @@ data:extend({
         categories = {"pm-electrolysis"},
         ingredients =
         {
-            PM.ingredient("pm-lutetium-powder", 2),
+            PM.ingredient("pm-lutetium-powder", 3),
             PM.ingredient("pm-hydrogen-gas", 20, "fluid"),
             PM.ingredient("pm-patina", 6)
         },

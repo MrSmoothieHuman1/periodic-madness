@@ -193,7 +193,6 @@ data:extend({
         enabled = false,
         energy_required = 16,
         categories = {"pm-blast-smelting"},
-        allow_productivity = true,
         main_product = "pm-samarium",
         ingredients =
         {

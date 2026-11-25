@@ -95,7 +95,7 @@ data:extend({
         },
         ingredients =
         {
-            PM.ingredient("pm-pure-monazite", 4),
+            PM.ingredient("pm-pure-monazite", 6),
             PM.ingredient("pm-ion-exchange-beads", 8),
             PM.ingredient("sulfuric-acid", 20, "fluid")
         },
@@ -109,7 +109,7 @@ data:extend({
         type = "recipe",
         name = "pm-ytterbium-solution-seperation",
         enabled = false,
-        energy_required = 12,
+        energy_required = 16,
         categories = {"pm-mixing"},
         subgroup = "pm-ytterbium-la",
         order = "b",
@@ -119,7 +119,7 @@ data:extend({
         {
             PM.ingredient("pm-rubber-resin", 25, "fluid"),
             PM.ingredient("pm-pheonlic-resin", 25, "fluid"),
-            PM.ingredient("pm-ytterbium-solution", 10, "fluid")
+            PM.ingredient("pm-ytterbium-solution", 12.5, "fluid")
         },
         results =
         {
@@ -218,13 +218,13 @@ data:extend({
         main_product = "pm-ytterbium-vapour",
         ingredients =
         {
-            PM.ingredient("pm-impure-ytterbium", 5),
+            PM.ingredient("pm-impure-ytterbium", 6),
             PM.ingredient("pm-zirconia", 4),
             PM.ingredient("pm-molten-zinc", 10, "fluid")
         },
         results =
         {
-            PM.product("pm-ytterbium-vapour", "fluid"):amount(20):done(),
+            PM.product("pm-ytterbium-vapour", "fluid"):amount(25):done(),
             PM.product("pm-zirconia"):amount(3):catalyst(3):done(),
             PM.product("pm-molten-zinc", "fluid"):amount(10):catalyst(10):done()
         }

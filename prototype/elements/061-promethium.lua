@@ -69,8 +69,8 @@ data:extend({
         results =
         {
             PM.product("pm-roasted-bastnasite"):amount(2):catalyst(2):done(),
-            PM.product("pm-ion-exchange-beads"):amount(3):catalyst(3):done(),
-            PM.product("pm-mixed-praseodymium-deposit"):amount(2):chance(0.1):catalyst(2):done(),
+            PM.product("pm-ion-exchange-beads"):amount(3, 4):catalyst(4):done(),
+            PM.product("pm-mixed-praseodymium-deposit"):amount(1, 2):chance(0.08):catalyst(2):done(),
             PM.product("pm-neodymium-146"):amount(2):chance(0.032):done()
         }
     },

@@ -103,13 +103,13 @@ data:extend({
         allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-pure-monazite", 4),
+            PM.ingredient("pm-pure-monazite", 6),
             PM.ingredient("pm-ammonium-chloride", 3),
-            PM.ingredient("pm-nitrogen-gas", 20, "fluid")
+            PM.ingredient("pm-nitrogen-gas", 30, "fluid")
         },
         results =
         {
-            PM.product("pm-terbium-salts"):amount(8):done()
+            PM.product("pm-terbium-salts"):amount(10):done()
         }
     },
     {
@@ -136,13 +136,13 @@ data:extend({
         allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-pure-monazite", 4),
+            PM.ingredient("pm-pure-monazite", 6),
             PM.ingredient("pm-ammonium-chloride", 3),
-            PM.ingredient("pm-liquid-nitrogen", 1.5, "fluid")
+            PM.ingredient("pm-liquid-nitrogen", 1, "fluid")
         },
         results =
         {
-            PM.product("pm-terbium-salts"):amount(8):done(),
+            PM.product("pm-terbium-salts"):amount(10):done(),
             PM.product("pm-terbium-chloride"):amount(1):chance(0, 0.25):done(),
             PM.product("pm-terbium-bromide"):amount(1):chance(0.25, 0.5):done(),
             PM.product("pm-terbium-hydride"):amount(1):chance(0.5, 0.75):done(),
@@ -322,13 +322,13 @@ data:extend({
         categories = {"pm-washing"},
         ingredients =
         {
-            PM.ingredient("pm-impure-terbium", 4),
-            PM.ingredient("pm-ion-exchange-beads", 5),
-            PM.ingredient("pm-flourine", 4)
+            PM.ingredient("pm-impure-terbium", 5),
+            PM.ingredient("pm-ion-exchange-beads", 3),
+            PM.ingredient("pm-flourine", 5)
         },
         results =
         {
-            PM.product("pm-terbium-fluoride"):amount(6):done(),
+            PM.product("pm-terbium-fluoride"):amount(8):done(),
         }
     },
     {
@@ -340,7 +340,7 @@ data:extend({
         main_product = "pm-terbium",
         ingredients =
         {
-            PM.ingredient("pm-terbium-fluoride", 12),
+            PM.ingredient("pm-terbium-fluoride", 14),
             PM.ingredient("pm-calcium-ore", 3)
         },
         results = 

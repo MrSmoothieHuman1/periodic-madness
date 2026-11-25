@@ -125,13 +125,13 @@ data:extend({
         allow_productivity = true,
         ingredients =
         {
-            PM.ingredient("pm-pure-monazite", 4),
-            PM.ingredient("pm-ferrum", 5),
-            PM.ingredient("pm-ion-exchange-beads", 6)
+            PM.ingredient("pm-pure-monazite", 5),
+            PM.ingredient("pm-ferrum", 6),
+            PM.ingredient("pm-ion-exchange-beads", 4)
         },
         results =
         {
-            PM.product("pm-xenotime"):amount(6):done(),
+            PM.product("pm-xenotime"):amount(8):done(),
         }
     },
     {
@@ -144,7 +144,7 @@ data:extend({
         main_product = "pm-dysprosium-concentrate",
         ingredients =
         {
-            PM.ingredient("pm-xenotime", 4),
+            PM.ingredient("pm-xenotime", 6),
             PM.ingredient("pm-acidic-water", 25, "fluid"),
             PM.ingredient("sulfuric-acid", 5, "fluid")
         },
@@ -169,8 +169,8 @@ data:extend({
         },
         results =
         {
-            PM.product("pm-dysprosium-fluoride"):amount(4):done(),
-            PM.product("pm-dysprosium-concentrate", "fluid"):amount(6):catalyst(5):done()
+            PM.product("pm-dysprosium-fluoride"):amount(6):done(),
+            PM.product("pm-dysprosium-concentrate", "fluid"):amount(6):catalyst(6):done()
         }
     },
     {
@@ -182,13 +182,13 @@ data:extend({
         main_product = "pm-unprocessed-dysprosium",
         ingredients =
         {
-            PM.ingredient("pm-dysprosium-fluoride", 8),
+            PM.ingredient("pm-dysprosium-fluoride", 10),
             PM.ingredient("pm-lithium-ore", 2),
             PM.ingredient("pm-calcium-ore", 2)
         },
         results =
         {
-            PM.product("pm-unprocessed-dysprosium"):amount(4):done(),
+            PM.product("pm-unprocessed-dysprosium"):amount(5):done(),
             PM.product("pm-lithium-ore"):amount(1):chance(0.5):done(),
             PM.product("pm-calcium-ore"):amount(1):chance(0.5):done()
         }

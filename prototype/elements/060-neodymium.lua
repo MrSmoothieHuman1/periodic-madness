@@ -117,7 +117,7 @@ data:extend({
         {
             PM.product("pm-neodymium-concentrate", "fluid"):amount(7.5):done(),
             PM.product("pm-hydrogen-sulfide", "fluid"):amount(0, 2.5):done(),
-            PM.product("pm-ion-exchange-beads"):amount(4, 6):done()
+            PM.product("pm-ion-exchange-beads"):amount(5, 8):done()
         }
     },
     {

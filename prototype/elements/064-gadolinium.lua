@@ -117,19 +117,19 @@ data:extend({
         type = "recipe",
         name = "pm-gadolinium",
         enabled = false,
-        energy_required = 18,
+        energy_required = 36,
         categories = {"pm-moltening"},
         allow_productivity = true,
         main_product = "pm-gadolinium",
         ingredients =
         {
-            PM.ingredient("pm-gadolinium-sponge", 5),
-            PM.ingredient("pm-calcium-ore", 6),
+            PM.ingredient("pm-gadolinium-sponge", 10),
+            PM.ingredient("pm-calcium-ore", 5),
             PM.ingredient("pm-industrial-noble-gas", 25, "fluid")
         },
         results =
         {
-            PM.product("pm-gadolinium"):amount(4):done(),
+            PM.product("pm-gadolinium"):amount(6):done(),
             PM.product("pm-industrial-noble-gas", "fluid"):amount(12.5):catalyst(12.5):done()
         }
     },

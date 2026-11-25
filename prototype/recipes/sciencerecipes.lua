@@ -780,7 +780,7 @@ data:extend({
         PM.ingredient("pm-samarium", 25),
         PM.ingredient("pm-europium", 50),
         PM.ingredient("pm-gadolinium", 32),
-        PM.ingredient("pm-terbium", 24),
+        PM.ingredient("pm-terbium", 48),
         PM.ingredient("pm-dysprosium-plate", 15),
         PM.ingredient("pm-holmium-plate", 15),
         PM.ingredient("pm-erbium-plate", 50),

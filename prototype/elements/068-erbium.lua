@@ -146,6 +146,7 @@ data:extend({
         energy_required = 8,
         categories = {"pm-acids"},
         allow_productivity = true,
+        main_product = "pm-euxenite",
         ingredients =
         {
             PM.ingredient("pm-pure-monazite", 4),
@@ -155,6 +156,7 @@ data:extend({
         results =
         {
             PM.product("pm-euxenite"):amount(6):done(),
+            PM.product("pm-ion-exchange-beads"):amount(3, 4):catalyst(4):done()
         }
     },
     {
@@ -195,7 +197,6 @@ data:extend({
             PM.product("pm-erbium-oxide"):amount(1, 3):done(),
             PM.product("pm-erbium-bromide"):amount(1, 3):done(),
             PM.product("pm-erbium-iodide"):amount(1, 3):done(),
-            PM.product("pm-ion-exchange-beads"):amount(3, 4):done()
         }
     },
     {
@@ -267,7 +268,7 @@ data:extend({
         results =
         {
             PM.product("pm-impure-erbium"):amount(3):done(),
-            PM.product("pm-boron", "fluid"):amount(2.5, 5):done()
+            PM.product("pm-bromine", "fluid"):amount(2.5, 5):done()
         }
     },
     {
