@@ -1192,7 +1192,7 @@ data:extend({
       PM.ingredient("stone-brick", 8),
       PM.ingredient("pm-fluid-circuit", 3),
       PM.ingredient("pm-basic-framing", 16),
-      PM.ingredient("steel-plate", 6),
+      PM.ingredient("pm-stainless-steel-alloy", 3),
       PM.ingredient("pm-brass-cog", 4)
     },
     results = 

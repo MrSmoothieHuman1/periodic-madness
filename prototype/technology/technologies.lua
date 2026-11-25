@@ -637,8 +637,6 @@ data:extend({
       time = 15
     }
   },
-
---MARK: A-ATM science
   {
     type = "technology",
     name = "pm-stainless-steel-processing",
@@ -651,19 +649,20 @@ data:extend({
       PM.unlock_recipe("pm-stainless-steel-basic-framing"),
       PM.unlock_recipe("pm-stainless-steel-panelling"),
     },
-    prerequisites = {"steel-processing", "pm-advanced-advanced-transition-metal-pack-unlock", "pm-molybdenum-processing"},
+    prerequisites = {"steel-processing", "pm-molybdenum-processing"},
     unit =
     {
-      count = 125,
+      count = 100,
       ingredients =
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"pm-advanced-advanced-transition-metal-science-pack", 1},
       },
       time = 30
     }
   },
+
+--MARK: A-ATM science
   {
     type = "technology",
     name = "pm-oil-residual-recipes",
@@ -1158,7 +1157,7 @@ data:extend({
       PM.unlock_recipe("pm-silver-corrosion-tubing"),
       PM.unlock_recipe("pm-brass-corrosion-tubing"),
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-stainless-steel-processing"},
     unit =
     {
       count = 125,
@@ -1674,7 +1673,7 @@ data:extend({
     {
       PM.unlock_recipe("pm-mixing-tank-1")
     },
-    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock"},
+    prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-stainless-steel-processing"},
     unit =
     {
       count = 100,
