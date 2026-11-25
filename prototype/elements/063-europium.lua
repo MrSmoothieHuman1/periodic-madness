@@ -135,7 +135,6 @@ data:extend({
         enabled = false,
         energy_required = 27,
         categories = {"pm-moltening"},
-        allow_productivity = true,
         main_product = "pm-molten-europium-chloride",
         ingredients =
         {

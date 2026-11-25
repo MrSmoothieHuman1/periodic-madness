@@ -121,7 +121,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.1)
+      PM.modify("laboratory-productivity", 0.05)
     },
     prerequisites = {"pm-research-productivity-3"},
     unit =
@@ -145,7 +145,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.1)
+      PM.modify("laboratory-productivity", 0.05)
     },
     prerequisites = {"pm-research-productivity-4", "pm-advanced-advanced-advanced-transition-metal-pack-unlock"},
     unit =
@@ -170,7 +170,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.1)
+      PM.modify("laboratory-productivity", 0.05)
     },
     prerequisites = {"pm-research-productivity-5"},
     unit =
@@ -195,7 +195,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.15)
+      PM.modify("laboratory-productivity", 0.05)
     },
     prerequisites = {"pm-research-productivity-6", "pm-noble-gas-pack-unlock"},
     unit =
@@ -224,7 +224,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.15)
+      PM.modify("laboratory-productivity", 0.05)
     },
     prerequisites = {"pm-research-productivity-7", "pm-lanthanide-science-pack"},
     unit =
@@ -254,7 +254,7 @@ data:extend({
     icons = util.technology_icon_constant_productivity("__base__/graphics/technology/research-speed.png"),
     effects =
     {
-      PM.modify("laboratory-productivity", 0.25)
+      PM.modify("laboratory-productivity", 0.1)
     },
     prerequisites = {"pm-research-productivity-8", "pm-actinide-science-pack"},
     unit =
@@ -2844,6 +2844,7 @@ data:extend({
     },
     upgrade = true
   },
+--MARK: Braking force
 })
 
 --MARK: V.Robot speed
@@ -3634,12 +3635,73 @@ data.raw["technology"]["braking-force-1"].unit.ingredients =
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
 }
+data.raw["technology"]["braking-force-3"].effects = 
+{
+    {
+        type = "train-braking-force-bonus",
+        modifier = 0.1
+    },
+}
 data.raw["technology"]["braking-force-2"].unit.ingredients =
 {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
+}
+data.raw["technology"]["braking-force-3"].prerequisites = {"braking-force-2", "chemical-science-pack"}
+data.raw["technology"]["braking-force-3"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1}
+}
+data.raw["technology"]["braking-force-4"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1}
+}
+data.raw["technology"]["braking-force-5"].effects = 
+{
+    {
+        type = "train-braking-force-bonus",
+        modifier = 0.2
+    },
+}
+data.raw["technology"]["braking-force-5"].prerequisites = {"braking-force-4", "pm-alkali-metal-pack-unlock"}
+data.raw["technology"]["braking-force-5"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["braking-force-6"].prerequisites = {"braking-force-5"}
+data.raw["technology"]["braking-force-6"].effects = 
+{
+    {
+        type = "train-braking-force-bonus",
+        modifier = 0.2
+    },
+}
+data.raw["technology"]["braking-force-6"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
+}
+data.raw["technology"]["braking-force-7"].unit.ingredients =
+{
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"pm-advanced-advanced-transition-metal-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"pm-alkali-metal-science-pack", 1}
 }
 
 --MARK: V.Stronger explosives
