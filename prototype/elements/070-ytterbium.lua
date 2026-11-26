@@ -245,7 +245,7 @@ data:extend({
         results =
         {
             PM.product("pm-ytterbium-plate"):amount(5):done(),
-            PM.product("pm-crucible"):amount(2):done()
+            PM.product("pm-crucible"):amount(2):catalyst(2):done()
         }
     }
 })
