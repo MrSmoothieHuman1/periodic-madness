@@ -61,6 +61,22 @@ Date: 2025-11-05
     - Fixed borosilicate glass not unlocking borosilicate ampules.
 
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.005
+Date: 2026-11-25
+  The nap, pot noodle and a turbo patch Update:
+
+  Changes:
+    - Liquid science plants now have 1 module slot, down from 2. This is because the compounding productivity felt way too strong.
+    - Doubled the amount of terbium needed for lanthanide science, from 24 to 48.
+    - Generally rebalanced lanthanide ingredients, they are now usually made up more from monazite/bastnasite then their fill-ins (fluorine, zirconia, etc)
+    - Removed productivity from samarium recipe. Why all of samarium had productivity, i dont know
+    - Removed productivity from molten europium chloride.
+
+  Fixes:
+    - Fixed erbium bromide to impure erbium producing boron and not bromine.
+    - Fixed productivity causing issues with euxeniute and ion-exchange beads.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.004
 Date: 2026-11-21
   The nothing nothing SOMETHING nothing nothing Update:

@@ -2845,6 +2845,133 @@ data:extend({
     upgrade = true
   },
 --MARK: Braking force
+{
+    type = "technology",
+    name = "pm-braking-force-8",
+    icons = util.technology_icon_constant_braking_force("__base__/graphics/technology/braking-force.png"),
+    effects =
+    {
+      {
+        type = "train-braking-force-bonus",
+        modifier = 0.25
+      }
+    },
+    prerequisites = {"braking-force-7"},
+    unit =
+    {
+      count = 650,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1}
+      },
+      time = 80
+    },
+    upgrade = true
+},
+{
+    type = "technology",
+    name = "pm-braking-force-9",
+    icons = util.technology_icon_constant_braking_force("__base__/graphics/technology/braking-force.png"),
+    effects =
+    {
+      {
+        type = "train-braking-force-bonus",
+        modifier = 0.3
+      }
+    },
+    prerequisites = {"pm-braking-force-8", "pm-noble-gas-pack-unlock"},
+    unit =
+    {
+      count = 650,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"pm-advanced-advanced-transition-metal-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 80
+    },
+    upgrade = true
+},
+{
+    type = "technology",
+    name = "pm-braking-force-10",
+    icons = util.technology_icon_constant_braking_force("__base__/graphics/technology/braking-force.png"),
+    effects =
+    {
+      {
+        type = "train-braking-force-bonus",
+        modifier = 0.5
+      }
+    },
+    prerequisites = {"pm-braking-force-9", "pm-lanthanide-science-pack"},
+    unit =
+    {
+      count = 650,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 1},
+        {"pm-post-transition-metal-science-pack", 1},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1},
+        {"pm-lanthanide-science-pack", 1},
+        {"pm-actinide-science-pack", 1}
+      },
+      time = 80
+    },
+    upgrade = true
+},
+{
+    type = "technology",
+    name = "pm-braking-force-11",
+    icons = util.technology_icon_constant_braking_force("__base__/graphics/technology/braking-force.png"),
+    effects =
+    {
+      {
+        type = "train-braking-force-bonus",
+        modifier = 0.3
+      }
+    },
+    prerequisites = {"pm-braking-force-10", "pm-actinide-science-pack"},
+    unit =
+    {
+      count = 650,
+      ingredients =
+      {
+        {"automation-science-pack", 2},
+        {"logistic-science-pack", 2},
+        {"pm-advanced-advanced-transition-metal-science-pack", 2},
+        {"chemical-science-pack", 2},
+        {"pm-post-transition-metal-science-pack", 2},
+        {"pm-alkali-metal-science-pack", 1},
+        {"pm-metalloid-science-pack", 1},
+        {"pm-alkaline-earth-metal-science-pack", 1},
+        {"pm-advanced-advanced-advanced-transition-metal-science-pack", 1},
+        {"pm-noble-gas-science-pack", 1}
+      },
+      time = 80
+    },
+    upgrade = true
+},
 })
 
 --MARK: V.Robot speed
@@ -3695,13 +3822,27 @@ data.raw["technology"]["braking-force-6"].unit.ingredients =
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
 }
-data.raw["technology"]["braking-force-7"].unit.ingredients =
+data.raw["technology"]["braking-force-7"].prerequisites = {"braking-force-6", "pm-alkaline-earth-metal-pack-unlock"}
+data.raw["technology"]["braking-force-7"].effects = 
 {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"pm-advanced-advanced-transition-metal-science-pack", 1},
-  {"chemical-science-pack", 1},
-  {"pm-alkali-metal-science-pack", 1}
+    {
+        type = "train-braking-force-bonus",
+        modifier = 0.25
+    },
+}
+data.raw["technology"]["braking-force-7"].unit =
+{
+    count = 800,
+    ingredients =
+    {
+      {"automation-science-pack", 1},
+      {"logistic-science-pack", 1},
+      {"pm-advanced-advanced-transition-metal-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"pm-alkali-metal-science-pack", 1},
+      {"pm-alkaline-earth-metal-science-pack", 1}
+    },
+    time = 80
 }
 
 --MARK: V.Stronger explosives
