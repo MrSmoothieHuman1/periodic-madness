@@ -84,26 +84,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pm-glass-resmelting",
-    icon_size = 64,
-    icon = "__periodic-madness__/graphics/icons/recipes/glass-resmelting.png",
-    energy_required = 2,
-    enabled = false,
-    allow_decomposition = false,
-    subgroup = "pm-glassing",
-    categories = {"smelting"},
-    order = "da",
-    ingredients =
-    {
-      PM.ingredient("pm-glass-shards", 4)
-    },
-    results =
-    {
-      PM.product("pm-glass-pane"):amount(1):done()
-    }
-  },
-  {
-    type = "recipe",
     name = "pm-mixed-ore-slag-crushing",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/recipes/mixed-ore-slag-crushing.png",

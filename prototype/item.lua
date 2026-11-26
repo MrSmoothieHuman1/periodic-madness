@@ -76,8 +76,6 @@ data:extend({
     name = "pm-glass-shards",
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/glass-shards.png",
-    subgroup = "pm-glassing",
-    order = "c",
     stack_size = 100
   },
   {
@@ -86,7 +84,7 @@ data:extend({
     icon_size = 64,
     icon = "__periodic-madness__/graphics/icons/glass-fibers.png",
     subgroup = "pm-glassing",
-    order = "d",
+    order = "c",
     stack_size = 200
   },
 

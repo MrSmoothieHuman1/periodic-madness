@@ -585,7 +585,6 @@ data.raw["recipe"]["cluster-grenade"].ingredients =
   PM.ingredient("explosives", 4),
   PM.ingredient("pm-cadnium-plate", 2),
   PM.ingredient("pm-silver-plate", 2),
-  PM.ingredient("pm-glass-shards", 3),
   PM.ingredient("grenade", 1)
 }
 data.raw["recipe"]["defender-capsule"].ingredients =

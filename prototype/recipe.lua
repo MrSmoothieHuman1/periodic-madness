@@ -630,7 +630,6 @@ data:extend({
     results =
     {
       PM.product("pm-glass-fibers"):amount(5):done(),
-      PM.product("pm-glass-shards"):amount(2):chance(0.5):done(),
     }
   },
   {
