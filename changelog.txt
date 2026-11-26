@@ -56,6 +56,8 @@ Date: 2025-11-05
     - Moved stainless steel to Advanced transition metal science, just after molybdenum processing.
     - Changed mixing tank 1 to take 3 stainless steel to craft, rather then 6 steel plate.
     - Removed glass shards. I didn't want to remodel them and they were neat in concept, but felt more like an annoyance then anything
+    - Rebalanced research speed bonus technologies to go (0.1 * 2) > (0.15 * 2) > (0.25 * 2) > (0.5 * 2) > (0.75 * 2) > (1), which makes the total speed bonus 450%, down from 600%.
+    - Halved research prod bonus, from 100% to 50%. This in aid of increasing science requirements and in a general curbing to rampant bonuses.
 
   Fixes:
     - Fixed borosilicate glass not unlocking borosilicate ampules.

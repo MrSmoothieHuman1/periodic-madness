@@ -287,7 +287,7 @@ data:extend({
     {
       {
         type = "laboratory-speed",
-        modifier = 0.6
+        modifier = 0.5
       }
     },
     prerequisites = {"research-speed-6", "pm-alkaline-earth-metal-pack-unlock"},
@@ -315,7 +315,7 @@ data:extend({
   {
     {
       type = "laboratory-speed",
-      modifier = 0.8
+      modifier = 0.5
     }
   },
   prerequisites = {"pm-research-speed-7"},
@@ -343,7 +343,7 @@ data:extend({
   {
     {
       type = "laboratory-speed",
-      modifier = 0.8
+      modifier = 0.75
     }
   },
   prerequisites = {"pm-research-speed-8", "pm-noble-gas-pack-unlock"},
@@ -375,7 +375,7 @@ data:extend({
   {
     {
       type = "laboratory-speed",
-      modifier = 1
+      modifier = 0.75
     }
   },
   prerequisites = {"pm-research-speed-9", "pm-lanthanide-science-pack"},
@@ -408,7 +408,7 @@ data:extend({
   {
     {
       type = "laboratory-speed",
-      modifier = 1.2
+      modifier = 1
     }
   },
   prerequisites = {"pm-research-speed-10", "pm-actinide-science-pack"},
@@ -3096,17 +3096,17 @@ data.raw["technology"]["research-speed-2"].effects =
 data.raw["technology"]["research-speed-3"].unit.time = 60
 data.raw["technology"]["research-speed-3"].effects =
 {
-    PM.modify("laboratory-speed", 0.2)
+    PM.modify("laboratory-speed", 0.15)
 }
 data.raw["technology"]["research-speed-4"].unit.time = 60
 data.raw["technology"]["research-speed-4"].effects =
 {
-    PM.modify("laboratory-speed", 0.2)
+    PM.modify("laboratory-speed", 0.15)
 }
 data.raw["technology"]["research-speed-5"].prerequisites = {"research-speed-4", "pm-alkali-metal-pack-unlock"}
 data.raw["technology"]["research-speed-5"].effects =
 {
-    PM.modify("laboratory-speed", 0.4)
+    PM.modify("laboratory-speed", 0.25)
 }
 data.raw["technology"]["research-speed-5"].unit.ingredients =
 {
@@ -3115,10 +3115,6 @@ data.raw["technology"]["research-speed-5"].unit.ingredients =
   {"pm-advanced-advanced-transition-metal-science-pack", 1},
   {"chemical-science-pack", 1},
   {"pm-alkali-metal-science-pack", 1}
-}
-data.raw["technology"]["research-speed-5"].effects =
-{
-    PM.modify("laboratory-speed", 0.4)
 }
 data.raw["technology"]["research-speed-5"].unit.time = 80
 data.raw["technology"]["research-speed-5"].unit.count = 750
@@ -3135,7 +3131,7 @@ data.raw["technology"]["research-speed-6"].unit.count = 1000
 data.raw["technology"]["research-speed-6"].unit.time = 80
 data.raw["technology"]["research-speed-6"].effects =
 {
-    PM.modify("laboratory-speed", 0.6)
+    PM.modify("laboratory-speed", 0.25)
 }
 
 --MARK: V.Mining prod
