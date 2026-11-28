@@ -5634,7 +5634,7 @@ data:extend({
       type = "heat",
       default_temperature = 15,
       max_temperature = 1500,
-      min_working_temperature = 750,
+      min_working_temperature = 650,
       specific_heat = "1MJ",
       max_transfer = "10MJ",
       connections =
@@ -10297,6 +10297,7 @@ fluid_boxes =
     production = "150kW",
     performance_at_day = 1,
     performance_at_night = 1,
+    draw_stateless_visualisation_in_ghost = true,
     energy_source =
     {
       type = "electric",
@@ -11470,6 +11471,7 @@ fluid_boxes =
     energy_source =
     {
       type = "electric",
+      drain = "10kW",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 1},
     },
@@ -12432,8 +12434,8 @@ fluid_boxes =
   {
     type = "heat",
     emissions_per_minute = {pollution = 2},
-    max_temperature = 1000,
-    min_working_temperature = 750,
+    max_temperature = 1500,
+    min_working_temperature = 650,
     specific_heat = "1MJ",
     max_transfer = "10MJ",
     connections =
@@ -12551,7 +12553,7 @@ fluid_boxes =
     usage_priority = "secondary-input",
     emissions_per_minute = {pollution = 2}
   },
-  energy_usage = "750kW",
+  energy_usage = "900kW",
   graphics_set =
   {
   status_colors = pm_diode_status_colors(),

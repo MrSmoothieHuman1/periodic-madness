@@ -255,8 +255,8 @@ data:extend({
         map_color = {0.243, 0.557, 0.639},
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
-        consumption = "50MW",
-        neighbour_bonus = 0.2,
+        consumption = "60MW",
+        neighbour_bonus = 0.25,
         default_fuel_glow_color = {0.659, 0.965, 1},
         energy_source =
         {
@@ -538,7 +538,7 @@ data:extend({
         corpse = "nuclear-reactor-remnants",
         dying_explosion  = "nuclear-reactor-explosion",
         consumption = "15MW",
-        neighbour_bonus = 0.1,
+        neighbour_bonus = 0.15,
         default_fuel_glow_color = {0.431, 1, 0.494},
         energy_source =
         {
@@ -547,7 +547,7 @@ data:extend({
           burnt_inventory_size = 0,
           fuel_categories = {"pm-uranium-233"},
           effectivity = 1,
-          light_flicker = 
+          light_flicker =
           {
             color = {0, 0, 0}
           },

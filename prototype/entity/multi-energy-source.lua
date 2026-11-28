@@ -773,7 +773,7 @@ local betterer_lab =
           usage_ratio = 5
         },
     },
-    energy_usage = "1MW",
+    energy_usage = "2.16MW",
     researching_speed = 2,
     allowed_module_categories = {"speed", "productivity", "efficiency"},
     inputs = pm_advanced_lab_inputs,

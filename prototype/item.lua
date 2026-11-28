@@ -2166,7 +2166,7 @@ data:extend({
     type = "item",
     name = "pm-biomechanical-cortex",
     icon_size = 64,
-    fuel_value = "25MJ",
+    fuel_value = "30MJ",
     fuel_categories = {"pm-research-supercluster"},
     icon = "__periodic-madness__/graphics/icons/biomechanical-cortex.png",
     subgroup = "pm-science-machine",

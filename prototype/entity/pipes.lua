@@ -539,6 +539,8 @@ data:extend({
       }
     },
     fast_replaceable_group = "pipe",
+    circuit_connector = circuit_connector_definitions["pipe"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     damaged_trigger_effect = hit_effects.entity(),
@@ -672,6 +674,8 @@ data:extend({
       }
     },
     fast_replaceable_group = "pipe",
+    circuit_connector = circuit_connector_definitions["pipe"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     damaged_trigger_effect = hit_effects.entity(),

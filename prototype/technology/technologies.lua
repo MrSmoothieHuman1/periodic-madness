@@ -1670,7 +1670,8 @@ data:extend({
     icon = "__periodic-madness__/graphics/technology/mixing-material-processing-1.png",
     effects =
     {
-      PM.unlock_recipe("pm-mixing-tank-1")
+      PM.unlock_recipe("pm-mixing-tank-1"),
+      PM.unlock_recipe("pm-calcium-ore-voiding")
     },
     prerequisites = {"pm-advanced-advanced-transition-metal-pack-unlock", "pm-stainless-steel-processing"},
     unit =
@@ -3720,6 +3721,7 @@ data:extend({
       PM.unlock_recipe("pm-hot-light-coolant-cooling"),
       PM.unlock_recipe("pm-light-coolant-flourite-crystallisation"),
       PM.unlock_recipe("pm-light-coolant-bismuth-ore"),
+      PM.unlock_recipe("pm-light-coolant-calcium-sulfate-chunks"),
       PM.unlock_recipe("pm-molten-inator-3"),
       PM.unlock_recipe("pm-cold-inator-3"),
       PM.unlock_recipe("pm-ammonium-tetrafluoroberyllate")
@@ -6435,6 +6437,9 @@ data:extend({
         PM.unlock_recipe("pm-xenon-gas-into-industrial-noble-gas"),
         PM.unlock_recipe("pm-radon-gas-into-industrial-noble-gas"),
         PM.unlock_recipe("pm-neon-gas-atmospheric-voiding"),
+        PM.unlock_recipe("pm-krypton-gas-atmospheric-voiding"),
+        PM.unlock_recipe("pm-xenon-gas-atmospheric-voiding"),
+        PM.unlock_recipe("pm-radon-gas-atmospheric-voiding"),
         PM.unlock_recipe("pm-helium-air-filter"),
         PM.unlock_recipe("pm-helium-gas"),
         PM.unlock_recipe("pm-neon-air-filter"),
@@ -8492,7 +8497,8 @@ data:extend({
         PM.unlock_recipe("pm-protactinium-233"),
         PM.unlock_recipe("pm-uranium-233"),
         PM.unlock_recipe("pm-molten-salt-thorium-reactor"),
-        PM.unlock_recipe("pm-uranium-233-reactor")
+        PM.unlock_recipe("pm-uranium-233-reactor"),
+        PM.unlock_recipe("pm-heat-pipe-4"),
     },
     prerequisites = {"pm-advanced-magnets", "pm-decay-inators"},
     research_trigger =

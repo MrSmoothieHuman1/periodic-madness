@@ -1050,8 +1050,6 @@ data:extend({
   {
     type = "recipe",
     name = "pm-heat-pipe-3",
-    subgroup = "pm-heat-machines",
-    order = "c",
     energy_required = 2,
     enabled = false,
     ingredients =
@@ -2033,7 +2031,6 @@ data:extend({
     name = "pm-uranium-233-reactor",
     energy_required = 8,
     enabled = false,
-    categories = {"crafting-with-fluid"},
     ingredients = 
     {
         PM.ingredient("pm-molten-framing", 12),
@@ -2043,7 +2040,6 @@ data:extend({
         PM.ingredient("pm-advanced-processing-unit", 10),
         PM.ingredient("pm-advanced-electric-engine-unit", 6),
         PM.ingredient("low-density-structure", 12),
-        PM.ingredient("pm-light-lubricant", 15, "fluid"),
     },
     results =
     {
@@ -2145,6 +2141,24 @@ data:extend({
     {
         PM.product("pm-selenium-sulfur-accumulator"):amount(1):done(),
         PM.product("pm-lithium-sulfur-battery"):amount(4):chance(0.75):done()
+    }
+  },
+ {
+    type = "recipe",
+    name = "pm-heat-pipe-4",
+    categories = {"crafting-with-fluid"},
+    energy_required = 2,
+    enabled = false,
+    ingredients =
+    {
+      PM.ingredient("pm-heat-pipe-3", 1),
+      PM.ingredient("pm-gadolinium", 5),
+      PM.ingredient("pm-stainless-steel-alloy", 15),
+      PM.ingredient("pm-light-coolant", 2, "fluid")
+    },
+    results =
+    {
+      PM.product("pm-heat-pipe-4"):amount(2):done()
     }
   },
 } --[[@as data.RecipePrototype[] ]])

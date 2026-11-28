@@ -289,12 +289,12 @@ data:extend({
     allow_productivity = true,
     ingredients =
     {
-      PM.ingredient("pm-lead-plate", 3),
-      PM.ingredient("pm-hydroflouric-acid", 6, "fluid")
+      PM.ingredient("pm-lead-plate", 8),
+      PM.ingredient("pm-hydroflouric-acid", 18, "fluid")
     },
     results =
     {
-      PM.product("pm-lead-fluoride"):amount(1):done()
+      PM.product("pm-lead-fluoride"):amount(2):done()
     }
   },
   {
@@ -309,10 +309,10 @@ data:extend({
     ingredients =
     {
       PM.ingredient("pm-battery-casing", 1),
-      PM.ingredient("pm-lead-fluoride", 2),
+      PM.ingredient("pm-lead-fluoride", 4),
       PM.ingredient("pm-selenium-plate", 6),
       PM.ingredient("sulfur", 8),
-      PM.ingredient("pm-lithium-ore", 8)
+      PM.ingredient("pm-lithium-ore", 6)
     },
     results =
     {

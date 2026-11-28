@@ -892,6 +892,8 @@ local lithium_speed_setting = ({
 })[settings.startup["pm-lithium-robot-speed-multiplier"].value]
 data.raw["construction-robot"]["pm-lithium-construction-robot"].speed = lithium_speed_setting
 data.raw["logistic-robot"]["pm-lithium-logistic-robot"].speed = lithium_speed_setting
+data.raw["construction-robot"]["pm-selenium-construction-robot"].speed = 0.04 + lithium_speed_setting
+data.raw["logistic-robot"]["pm-selenium-logistic-robot"].speed = 0.04 + lithium_speed_setting
 
 --MARK: Building modules
 data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots = data.raw["assembling-machine"]["pm-circuit-megassembler"].module_slots--[[@cast -?]] + settings.startup["pm-building-module-extra-slots"].value

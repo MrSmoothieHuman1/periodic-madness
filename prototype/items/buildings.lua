@@ -1165,6 +1165,16 @@ data:extend({
     place_result = "pm-selenium-sulfur-accumulator",
     stack_size = 20
   },
+  {
+    type = "item",
+    name = "pm-heat-pipe-4",
+    icon_size = 64,
+    icon = "__periodic-madness__/graphics/icons/buildings/heat-pipe-4.png",
+    subgroup = "pm-heat-machines",
+    order = "d",
+    place_result = "pm-heat-pipe-4",
+    stack_size = 100
+  },
 })
 
 data.raw["item"]["oil-refinery"].subgroup = "pm-oil-machine"
